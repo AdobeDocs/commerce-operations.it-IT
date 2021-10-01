@@ -1,7 +1,7 @@
 ---
 title: Fornire Esperienze Su Scala
 description: Scopri come distribuire esperienze su larga scala con Adobe Commerce e Adobe Experience Manager.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -30,6 +30,6 @@ Un esempio dei diversi componenti di una pagina di dettagli prodotto in un esemp
 
 ## Rendering lato client
 
-Quando vengono visualizzati attributi più dinamici, ad esempio livelli di stock/disponibilità o prezzo, ad esempio nelle pagine dei dettagli prodotto (PDP), è possibile utilizzare i componenti lato client. Anche se la pagina modello può essere creata e memorizzata in cache sul dispatcher utilizzando l’approccio di rendering lato server di cui sopra, all’interno della pagina statica stessa possono essere presenti componenti web dinamici lato client. Questi componenti dinamici possono recuperare i dati direttamente nel browser del cliente da Adobe Commerce tramite API GraphQL per verificare, ad esempio, il prezzo o il livello di stock corrente in tempo reale sul PDP. In questo modo i contenuti di solito critici per essere visualizzati in tempo reale vengono sempre recuperati al caricamento della pagina. Esempi di questo sono mostrati nelle caselle gialle nell&#39;esempio precedente.
+Quando vengono visualizzati attributi più dinamici, ad esempio livelli di stock/disponibilità o prezzo, ad esempio nelle pagine dei dettagli prodotto (PDP), è possibile utilizzare i componenti lato client. Anche se la pagina modello può essere creata e memorizzata in cache sul dispatcher utilizzando l’approccio di rendering lato server di cui sopra, all’interno della pagina statica stessa possono essere presenti componenti web dinamici lato client. Questi componenti dinamici possono recuperare i dati direttamente nel browser del cliente da Adobe Commerce tramite API GraphQL per verificare, ad esempio, il prezzo o il livello di stock corrente in tempo reale sul PDP. In questo modo i contenuti di solito critici per essere visualizzati in tempo reale vengono sempre recuperati al caricamento della pagina. Esempi di questo sono mostrati nelle caselle rosse dell’esempio precedente.
 
 Durante il processo di pagamento è inoltre possibile utilizzare una combinazione di modelli AEM e rendering lato client: i componenti carrello lato client eseguono il rendering del carrello, del modulo di pagamento e dell’integrazione con il provider di servizi di pagamento. Questo approccio ibrido può essere utilizzato anche per le funzionalità di gestione degli account di Adobe Commerce, ad esempio crea account, accedi all’account e password dimenticate.

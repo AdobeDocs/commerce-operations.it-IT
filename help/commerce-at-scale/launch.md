@@ -1,15 +1,15 @@
 ---
-title: Preparare Launch
+title: Suggerimenti per il test delle prestazioni
 description: Scopri come impostare i KPI per l’avvio della soluzione Adobe Commerce e Adobe Experience Manager.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Preparare il lancio
+# Suggerimenti per il test delle prestazioni
 
 Per valutare l’efficacia di tutte le modifiche di cui sopra, è necessario eseguire un test completo delle prestazioni prima del lancio e prima di eventuali implementazioni principali future negli ambienti di produzione. Quando pianifichi il tuo test di carico, è importante simulare il più possibile il traffico dei consumatori a vita reale.
 

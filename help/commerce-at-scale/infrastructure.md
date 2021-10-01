@@ -1,7 +1,7 @@
 ---
 title: Allineamento dell'infrastruttura Adobe Commerce e Adobe Experience Manager
 description: Allinea la tua infrastruttura Adobe Commerce e Adobe Experience Manager per impostare timeout e limiti di connessione accettabili.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
@@ -25,11 +25,11 @@ Supponendo che nell’infrastruttura sia presente un load balancer dell’applic
 
 1. I controlli di integrità degli editori devono essere rivisti per evitare che i dispatcher abbandonino il servizio in modo inutilmente precoce a causa di ondate di carico. Le impostazioni di timeout del controllo di integrità del load balancer devono essere allineate con le impostazioni di timeout dell’editore.
 
-   ![Schermata che mostra i controlli di integrità del load balancer AEM](../assets/commerce-at-scale/health-checks.svg)
+   ![Schermata che mostra i controlli di integrità del load balancer AEM](../assets/commerce-at-scale/health-checks.png)
 
 1. È possibile disabilitare l’accostamento al gruppo di destinazione del Dispatcher e utilizzare l’algoritmo di bilanciamento del carico di Round Robin. Ciò presuppone che non vi siano funzionalità specifiche AEM o sessioni utente AEM utilizzate che richiederebbero l’impostazione dello stickiness delle sessioni. Si parte dal presupposto che la gestione dell’accesso e delle sessioni degli utenti sia disponibile solo su Adobe Commerce tramite GraphQL.
 
-   ![Schermata che mostra gli attributi di persistenza AEM sessione](../assets/commerce-at-scale/session-stickiness.svg)
+   ![Schermata che mostra gli attributi di persistenza AEM sessione](../assets/commerce-at-scale/session-stickiness.png)
 
 1. Nota che se abiliti l’accostamento della sessione, questo potrebbe causare la mancata memorizzazione in cache delle richieste in Flast, come per impostazione predefinita, Flast non memorizza in cache le pagine con l’intestazione Set-Cookies. Adobe Commerce imposta i cookie anche su pagine memorizzabili in cache (TTL > 0), ma il codice Flast VCL predefinito li elimina sulle pagine memorizzabili in cache per il corretto funzionamento della memorizzazione in cache. Se le pagine non vengono memorizzate nella cache, controlla eventuali cookie personalizzati che puoi utilizzare e carica anche Flast VCL e ricontrolla il sito.
 
@@ -49,8 +49,8 @@ Il timeout della connessione http e il timeout del socket http devono essere imp
 
 L’immagine seguente mostra il Magento CIF GraphQL Client Configuration Factory. Le impostazioni mostrate qui sono solo esempi e devono essere regolate caso per caso:
 
-![Schermata delle impostazioni di configurazione del framework di integrazione Commerce](../assets/commerce-at-scale/cif-config.svg)
+![Schermata delle impostazioni di configurazione del framework di integrazione Commerce](../assets/commerce-at-scale/cif-config.png)
 
 Le immagini seguenti mostrano le configurazioni di back-end Flast. Le impostazioni mostrate qui sono solo esempi e devono essere regolate caso per caso:
 
-![Schermata delle impostazioni di configurazione di Commerce Admin per Flast](../assets/commerce-at-scale/cif-config-advanced.svg)
+![Schermata delle impostazioni di configurazione di Commerce Admin per Flast](../assets/commerce-at-scale/cif-config-advanced.png)
