@@ -1,15 +1,15 @@
 ---
-title: Ottimizzazioni delle prestazioni AEM
+title: Ottimizzazione delle prestazioni AEM
 description: Ottimizza la configurazione predefinita di Adobe Experience Manager per supportare carichi elevati su Adobe Commerce.
-source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
+source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Ottimizzazioni delle prestazioni AEM sotto carico dalle configurazioni predefinite
+# Ottimizzazione delle prestazioni AEM
 
 Il dispatcher AEM è un proxy inverso, che aiuta a fornire un ambiente sia veloce che dinamico. Funziona come parte di un server HTML statico, come Apache HTTP Server, allo scopo di memorizzare (o &quot;memorizzare in cache&quot;) il maggior numero possibile di contenuti del sito, sotto forma di risorse statiche. Questo approccio mira a ridurre al minimo la necessità di accedere il più possibile alla funzionalità di rendering delle pagine di AEM e al servizio Commerce GraphQL di Adobe. Il risultato del serving di gran parte delle pagine come HTML statico, CSS e JS offre agli utenti vantaggi in termini di prestazioni e riduce i requisiti di infrastruttura nell’ambiente. Per la memorizzazione in cache deve essere considerata qualsiasi pagina o query che può essere ripetuta in modo identico da un utente all’altro.
 
@@ -54,7 +54,7 @@ Ogni livello di cartella avrebbe un &quot;livello stat&quot;, come mostrato nell
 
 | contenuto (docroot) | ecommerce | noi | en | products | product-page.tml |
 |-------------------|-----------|----|----|----------|------------------|
-| 0 | 1 | 2 | 3 | 4 | - |
+| 0 | 1 | 2 | 1 | 4 | - |
 
 In questo caso, se hai lasciato la proprietà statfilelevel impostata sul valore predefinito &quot;0&quot; e il modello product-page.html viene aggiornato e attivato attivando un’invalidazione, ogni file .stat da docroot al livello 4 verrà toccato e i file invalidati, causando un’ulteriore richiesta dalle istanze di pubblicazione AEM per tutte le pagine del sito (inclusi altri siti web, paesi e lingue) da tale singola modifica.
 
