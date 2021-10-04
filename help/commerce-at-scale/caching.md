@@ -1,17 +1,17 @@
 ---
 title: Pianificazione effettiva della cache
 description: Fai riferimento ai benchmark consigliati per la memorizzazione in cache per garantire il successo del sito sotto carico.
-source-git-commit: 41c0ba17b3d731a82ad6ecd8b16fac151a597e75
+exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
 
-
 # Pianificazione della memorizzazione in cache effettiva per il successo di e-commerce in fase di caricamento
 
-Per fornire un’esperienza di acquisto al di sotto del carico è necessaria una strategia di caching ben pianificata. Inizialmente, la richiesta da parte delle parti interessate aziendali potrebbe consistere nel presentare sempre ai clienti i dati sui prodotti in tempo reale, ma questo non è un utilizzo ottimale delle risorse di sistema, e gli impatti delle prestazioni del sito dell&#39;utente finale supererebbero notevolmente i vantaggi di mostrare in modo coerente le informazioni in tempo reale.
+Per ottenere un’esperienza di acquisto al di sotto del carico sarà necessaria una strategia di caching ben pianificata. Inizialmente, la richiesta da parte delle parti interessate aziendali potrebbe consistere nel presentare sempre ai clienti i dati sui prodotti in tempo reale, ma questo non è un utilizzo ottimale delle risorse di sistema, e gli impatti delle prestazioni del sito dell&#39;utente finale supererebbero notevolmente i vantaggi di mostrare in modo coerente le informazioni in tempo reale.
 
 La fase iniziale della strategia di caching dovrebbe pertanto consistere nel definire con le parti interessate una matrice di tempi di memorizzazione in cache accettabili per le diverse aree del sito, ad esempio:
 

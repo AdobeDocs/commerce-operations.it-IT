@@ -1,13 +1,13 @@
 ---
 title: Allineamento dell'infrastruttura Adobe Commerce e Adobe Experience Manager
 description: Allinea la tua infrastruttura Adobe Commerce e Adobe Experience Manager per impostare timeout e limiti di connessione accettabili.
-source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
+exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
 
 ---
-
 
 # Allineamenti dell&#39;infrastruttura (timeout e limiti di connessione)
 
