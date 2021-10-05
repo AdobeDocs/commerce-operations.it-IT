@@ -2,9 +2,9 @@
 title: Playbook di implementazione
 description: Obiettivo del manuale di istruzioni per l’implementazione Commerce
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 7bad54402e4698545f3436d4195170adb7b48c15
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Inoltre, questi processi e considerazioni si applicano a qualsiasi tipo di proge
 - Implementazione del mercato unico o multi-mercato
 - Integrazioni estese con o senza middleware
 
-Ci auguriamo che questo manuale fornisca informazioni e indicazioni a una varietà di soggetti interessati che in genere sarebbero coinvolti in un&#39;iniziativa di progetto e-commerce, come ad esempio:
+Ci auguriamo che questo manuale fornisca informazioni e indicazioni a una varietà di soggetti interessati che in genere sarebbero coinvolti in un&#39;iniziativa di progetto e-commerce, tra cui:
 
 - Amministratore Delegati e direzione generale, che dovrebbero avere una solida idea di ciò che un rollout di e-commerce comporta
 - CMO e manager digitali, che lavoreranno con gli utenti aziendali sulla piattaforma stessa
