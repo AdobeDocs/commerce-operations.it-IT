@@ -1,9 +1,9 @@
 ---
 user-guide-title: Distribuzione di esperienze e-commerce su larga scala
 user-guide-description: Scopri come distribuire esperienze su larga scala utilizzando Adobe Commerce con Adobe Experience Manager.
-source-git-commit: e75ee47ace11903326ba25a6e3c8007512fe42e6
+source-git-commit: b4a42bc51d283d75f4dcb7780db326f54416ee8e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '41'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,3 @@ ht-degree: 0%
 - [Ottimizzazione delle prestazioni di Adobe Commerce](default-settings.md)
 - [Suggerimenti per il test delle prestazioni](launch.md)
 - [Conclusione](conclusion.md)
-- [Il file nascosto di Bob](bob.md)
