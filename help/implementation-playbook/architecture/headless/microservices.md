@@ -1,28 +1,28 @@
 ---
-title: Adobe Commerce Microservices
-description: Essere in grado di differenziare tra i servizi sanitari e i microservizi in quanto si riferiscono al commercio Adobe.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: Microservizi Adobe Commerce
+description: Essere in grado di differenziare tra i servizi sanitari e i microservizi per quanto riguarda Adobe Commerce.
+exl-id: 078e0e8e-7acc-4913-8b78-585a950f3f5e
+source-git-commit: 4e8f6ce05c14195433e7c46e6090a93a76b8b5f9
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
 
-
 # Senza testa e microservizi
 
-It is important not to confuse headless with microservices. A lot of the time, we hear conversations about microservices in the same sentence as headless. They are completely different things. They can be used together, but they’re completely different concepts.
+E&#39; importante non confondere testa senza testa con microservizi. Molte volte, sentiamo conversazioni sui microservizi nella stessa frase come senza testa. Sono cose completamente diverse. Possono essere utilizzati insieme, ma sono concetti completamente diversi.
 
 Un&#39;architettura di microservizi è un termine utilizzato per descrivere la pratica di suddividere un&#39;applicazione in una raccolta di servizi più piccoli e liberamente accoppiati. I microservizi consentono ai singoli servizi di back-end di essere:
 
-- **Isolato l’uno dall’altro**: ad esempio, il servizio di determinazione dei prezzi non ha alcuna dipendenza dal servizio di catalogo.
+- **Isolati l&#39;uno dall&#39;altro**- Ad esempio, il servizio di determinazione dei prezzi non ha alcuna dipendenza dal servizio di catalogo.
 
-- **Distribuito a la carte**: i clienti distribuiscono solo le parti dell’applicazione di cui hanno bisogno.
+- **Distribuito a la carte**- I clienti distribuiscono solo le parti dell&#39;applicazione di cui hanno bisogno.
 
-- **Scala in modo indipendente**: le risorse possono essere assegnate a servizi ad alta domanda, ad esempio alla ricerca di scorte.
+- **Scalabilità indipendente**- Le risorse possono essere assegnate a servizi ad alta domanda, ad esempio alla ricerca di inventario.
 
-- **Autonomously developed**—Can be developed and deployed independently of one another.
+- **Sviluppato autonomamente**- Può essere sviluppato e distribuito indipendentemente l&#39;uno dall&#39;altro.
 
-Microservices have nothing to do with chopping the head off of the commerce stack or the APIs. Quando pensiamo ai servizi commerce nel codice core che si trovano nel back office di Adobe Commerce, si tratta di isolare questi servizi l’uno dall’altro. So, a microservices architecture is loosely breaking up all of those services like the pricing services, catalog service, and inventory service, and making each one isolated from another. This ensures that they are a la cart so that you don’t need to buy and deploy all of Adobe Commerce in one go.
+I microservizi non hanno nulla a che fare con l’eliminazione dell’intestazione dello stack di e-commerce o delle API. Quando pensiamo ai servizi commerce nel codice core che si trovano nel back office di Adobe Commerce, si tratta di isolare questi servizi l’uno dall’altro. Quindi, un&#39;architettura dei microservizi sta liberamente disgregando tutti quei servizi come i servizi di prezzo, il servizio di catalogo e il servizio di inventario, e sta rendendo ognuno isolato dall&#39;altro.
 
-I microservizi possono essere ridimensionati in modo indipendente e sviluppati autonomamente. I microservizi sono simili a un processo di sviluppo SaaS multi-tenant. A lot of modern multi-tenant SaaS products are developed using a multi-service approach. Even Adobe’s own SaaS products, like Order Management, the new AI-driven Product Recommendations tool, and other SaaS components of Adobe Commerce are being developed using a microservices approach. Per essere chiari, Adobe Commerce 2.4.x non è un’architettura microservizi, ma piuttosto un’architettura headless.
+I microservizi possono essere ridimensionati in modo indipendente e sviluppati autonomamente. I microservizi sono simili a un processo di sviluppo SaaS multi-tenant. Molti prodotti SaaS multi-tenant moderni sono sviluppati utilizzando un approccio multi-servizio. Anche i prodotti SaaS di Adobe, come Order Management, il nuovo strumento di Recommendations prodotto basato sull’intelligenza artificiale e altri componenti SaaS di Adobe Commerce, vengono sviluppati utilizzando un approccio basato sui microservizi. Per essere chiari, Adobe Commerce 2.4.x non è un&#39;architettura di microservizi, ma piuttosto un&#39;architettura headless.
