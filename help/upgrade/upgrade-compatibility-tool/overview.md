@@ -1,31 +1,31 @@
 ---
-title: Panoramica dello strumento di compatibilità per l’aggiornamento
-description: Scopri lo strumento di compatibilità per l’aggiornamento e come può esserti utile con il progetto Adobe Commerce.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: Panoramica [!DNL Upgrade Compatibility Tool]
+description: Scopri le [!DNL Upgrade Compatibility Tool] e come può aiutarti con il tuo progetto Adobe Commerce.
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
 
 
-# Panoramica dello strumento di compatibilità per l’aggiornamento
+# Panoramica [!DNL Upgrade Compatibility Tool]
 
 >[!NOTE]
 >
->Lo strumento di compatibilità per l’aggiornamento è disponibile solo per le istanze Adobe Commerce.
+>La [!DNL Upgrade Compatibility Tool] è disponibile solo per le istanze Adobe Commerce.
 
-Lo strumento di compatibilità per l’aggiornamento è uno strumento a riga di comando che controlla un’istanza personalizzata di Adobe Commerce rispetto a una versione specifica analizzando tutti i moduli e il codice di base installati al suo interno. Restituisce un elenco di problemi critici, errori e avvisi che devono essere risolti prima di eseguire l’aggiornamento alla versione più recente di Adobe Commerce. Identifica anche i potenziali problemi che devono essere risolti nel codice prima di tentare di eseguire l&#39;aggiornamento a una versione più recente di Adobe Commerce.
+La [!DNL Upgrade Compatibility Tool] è uno strumento a riga di comando che controlla un’istanza personalizzata di Adobe Commerce rispetto a una versione specifica analizzando tutti i moduli e il codice di base installati al suo interno. Restituisce un elenco di problemi critici, errori e avvisi che devono essere risolti prima di eseguire l’aggiornamento alla versione più recente di Adobe Commerce. Identifica anche i potenziali problemi che devono essere risolti nel codice prima di tentare di eseguire l&#39;aggiornamento a una versione più recente di Adobe Commerce.
 
-Lo strumento di compatibilità per l’aggiornamento consente di identificare quando sono state apportate modifiche al codice di base alle funzioni personalizzate. Consulta la sezione [Esegui lo strumento](../upgrade-compatibility-tool/run.md) per ulteriori informazioni.
+La [!DNL Upgrade Compatibility Tool] consente di identificare quando sono state apportate modifiche al codice di base alle funzionalità personalizzate. Consulta la sezione [Esegui lo strumento](../upgrade-compatibility-tool/run.md) per ulteriori informazioni.
 
 Viene distribuito come pacchetto Composer con ogni versione di una versione di Adobe Commerce. Consulta la sezione [Sviluppatore](../upgrade-compatibility-tool/developer.md) per ulteriori informazioni.
 
-Fai riferimento a [Installa](../upgrade-compatibility-tool/install.md) per i primi passaggi con lo strumento di compatibilità per l’aggiornamento.
+Fai riferimento a [Installa](../upgrade-compatibility-tool/install.md) per i primi passi con [!DNL Upgrade Compatibility Tool].
 
-## Migliorare lo strumento di compatibilità dell’aggiornamento
+## Aiutare a migliorare [!DNL Upgrade Compatibility Tool]
 
-Per collegarsi al team di Upgrade Compatibility Tool, contattateci sul canale di Slack Engineering [Strumento di compatibilità per l’aggiornamento](https://magentocommeng.slack.com/archives/C019Y143U9F).
+Per connettersi al [!DNL Upgrade Compatibility Tool] team, contattateci sul canale di Slack ingegneristico [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F).
 
 >[!NOTE]
 >

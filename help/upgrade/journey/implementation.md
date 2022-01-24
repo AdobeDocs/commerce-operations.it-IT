@@ -1,10 +1,10 @@
 ---
 title: Implementazione aggiornamento
 description: Scopri le diverse fasi dell’implementazione dell’aggiornamento per i progetti Adobe Commerce e Magenti Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '877'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ Di seguito sono riportati gli elementi da includere in un’analisi approfondita
 
 - **Ambito di rilascio di target**—Documentazione su [Commerce DevDocs](https://devdocs.magento.com) e le informazioni dei webinar sulle versioni dei partner forniscono tutti i dettagli che devi sapere sull’aggiornamento di target.
 
-- **Aggiornare i risultati dello strumento di compatibilità**: questo strumento rende qualsiasi aggiornamento più rapido e semplice confrontando il codice corrente con il codice della versione di destinazione e producendo un rapporto su tutti i problemi da risolvere. Consulta la sezione [Strumento di compatibilità per l’aggiornamento](../upgrade-compatibility-tool/overview.md). I principali dettagli del rapporto includono:
+- **[!DNL Upgrade Compatibility Tool]risultati**: questo strumento rende qualsiasi aggiornamento più rapido e semplice confrontando il codice corrente con il codice della versione di destinazione e producendo un rapporto su tutti i problemi da risolvere. Consulta la sezione [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). I principali dettagli del rapporto includono:
 
    - Versione installata corrente
    - Aggiorna la versione di destinazione

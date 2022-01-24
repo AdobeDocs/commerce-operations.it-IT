@@ -1,9 +1,9 @@
 ---
 title: Best practice
 description: Utilizza le best practice consigliate per Adobe per gestire il processo di aggiornamento dei progetti Adobe Commerce e Magenti Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Valutare il lavoro da eseguire per l’aggiornamento:
 
 - Consulta la sezione [note sulla versione](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) per comprendere l’ambito e l’impatto della nuova versione.
 
-- Utilizza la [Strumento di compatibilità per l’aggiornamento](../upgrade-compatibility-tool/overview.md) per identificare potenziali problemi che devono essere risolti nel codice personalizzato prima di tentare di eseguire l&#39;aggiornamento a una versione più recente.
+- Utilizza la [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) per identificare potenziali problemi che devono essere risolti nel codice personalizzato prima di tentare di eseguire l&#39;aggiornamento a una versione più recente.
 
 - Se utilizzi estensioni di terze parti, convalidane la compatibilità con la versione di destinazione in cui intendi eseguire l’aggiornamento.
 

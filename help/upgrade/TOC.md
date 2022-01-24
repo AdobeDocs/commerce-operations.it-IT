@@ -1,9 +1,9 @@
 ---
 user-guide-title: Guida all’aggiornamento
 user-guide-description: Scopri perché l’aggiornamento dell’applicazione Adobe Commerce o Magenti Open Source è così importante e come pianificare ed eseguire con successo un aggiornamento.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 - Patch {#patches}
    - [Funzionamento delle patch](patches/overview.md)
    - [Applica patch](patches/apply.md)
-- Strumento di compatibilità per l’aggiornamento {#upgrade-compatibility-tool}
+- [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [Panoramica](upgrade-compatibility-tool/overview.md)
    - [Prerequisiti](upgrade-compatibility-tool/prerequisites.md)
    - [Installa](upgrade-compatibility-tool/install.md)
@@ -46,5 +46,5 @@ ht-degree: 0%
    - [Opzioni della modalità di manutenzione per l&#39;aggiornamento](troubleshooting/maintenance-mode-options.md)
 - Risorse {#resources}
    - [Lettura consigliata](resources/recommended-reading.md)
-   - [Percorsi di aggiornamento consigliati per il 2022](resources/recommended-upgrade-paths-2022.md)
+   - [Modernizzazione della piattaforma con Adobe Commerce 2.4.4+](resources/recommended-upgrade-paths-2022.md)
    - [Elenco di controllo piano di aggiornamento](https://support.magento.com/hc/en-us/articles/360057968951)

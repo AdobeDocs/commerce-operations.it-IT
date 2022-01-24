@@ -1,9 +1,9 @@
 ---
 title: Lettura consigliata per gli aggiornamenti
 description: Rivedi la lettura consigliata per la pianificazione dell’aggiornamento di Adobe Commerce o Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ Continua a scoprire di più su Adobe Commerce e sugli aggiornamenti di Magento O
 - [Best practice per l’aggiornamento](../prepare/best-practices.md)
 - [Guida all’aggiornamento a Download 2.4.4](../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf)
 
-## Strumento di compatibilità per l’aggiornamento
+## [!DNL Upgrade Compatibility Tool]
 
-- [Preparati per il prossimo aggiornamento con lo strumento di compatibilità per l’aggiornamento di Adobe Commerce](https://community.magento.com/t5/Magento-DevBlog/Prepare-for-Your-Next-Upgrade-with-the-Adobe-Commerce-Upgrade/ba-p/483372)
+- [Preparare il prossimo aggiornamento con Adobe Commerce [!DNL Upgrade Compatibility Tool]](https://community.magento.com/t5/Magento-DevBlog/Prepare-for-Your-Next-Upgrade-with-the-Adobe-Commerce-Upgrade/ba-p/483372)
 - [Panoramica](../upgrade-compatibility-tool/overview.md)
-- [PHPStorm e lo strumento di compatibilità per l&#39;aggiornamento](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html)
+- [PHPStorm e [!DNL Upgrade Compatibility Tool]](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html)
 
 ## Sicurezza
 

@@ -1,9 +1,9 @@
 ---
 title: Panoramica del processo di aggiornamento
 description: Scopri come l’aggiornamento di Adobe Commerce e il progetto Magenti Open Source consente di proteggere la vetrina e di funzionare in modo efficiente.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 8f983e6791da852350fa061fd3119abcdaa03cbf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -59,9 +59,16 @@ Il ritardo o il differimento degli aggiornamenti della piattaforma spesso si rid
 
 Può sembrare controintuitivo, ma l&#39;esecuzione di regolari aggiornamenti della piattaforma richiede uno sforzo complessivo inferiore rispetto all&#39;esecuzione di aggiornamenti non frequenti a causa della quantità di debito tecnico accumulato che risulta dal ritardo. Recentemente abbiamo lavorato con un partner che ha un commerciante al dettaglio che ha condotto gli aggiornamenti in modo poco frequente e incoerente (ogni anno o più). Trasformando il modo in cui si approcciano agli aggiornamenti e seguendo un percorso di aggiornamento regolare consigliato in Adobe nel corso di 12 mesi, il partner è stato in grado di risparmiare al cliente quattro settimane di tempo di sviluppo cumulativo, impegno e costi associati, tutti reindirizzati a iniziative che guidano la crescita aziendale.
 
-![](../assets/upgrade-guide/waiting-is-not-a-winning-strategy.jpg)
-
 Quando gli aggiornamenti vengono eseguiti regolarmente, le modifiche sono incrementali e lo sforzo di aggiornamento corrispondente riflette questo aspetto. Quando gli aggiornamenti della piattaforma vengono differiti per un periodo prolungato, possono diventare un processo molto più complesso. Inoltre, le estensioni utilizzate dalla [Marketplace](https://marketplace.magento.com/) e possono essere interessate anche altre integrazioni di terze parti. Infine, il tempo necessario per indagare, pianificare ed eseguire un aggiornamento ritardato viene esteso, il che aggiunge sforzi e costi evitabili.
+
+Alcuni dei fattori generali che influiscono sul livello di impegno per l’aggiornamento del progetto includono, tra l’altro:
+
+| Complessità tecnica | Pianificazione e strategia |
+|-----------------------------------------------------------|--------------------------------------------------------------|
+| Ampiezza delle personalizzazioni | Chiarezza dei requisiti, decisioni vacillanti e ambiguità dell&#39;ambito |
+| Numero di estensioni | Frequenza di aggiornamento |
+| Numero di integrazioni con terzi (OMS, ERP) | Strategia di test |
+| Codifica delle best practice |  |
 
 La crescita continua dello spazio commerciale digitale ha esercitato una maggiore pressione sulle aziende affinché evolvano più rapidamente, più spesso e in modo imprevedibile. La mancata tenuta e anticipazione del comportamento di acquisto dei clienti ha livellato le condizioni di gioco anche per i marchi più grandi e consolidati. Devi essere in grado di fornire esperienze solide e personalizzate su tutti i punti di contatto, senza interruzioni nelle prestazioni e nei tempi di attività. Devi essere in grado di innovare più velocemente, senza limiti, per stare al passo con i concorrenti globali. Con l’aggiornamento, potrai eseguire in futuro le prove della tua attività e configurarti per soddisfare le esigenze dei clienti più dinamici.
 
@@ -69,11 +76,11 @@ La crescita continua dello spazio commerciale digitale ha esercitato una maggior
 
 Adobe pubblica un [programma di rilascio](https://devdocs.magento.com/release/) ogni anno per facilitare il processo di pianificazione dei commercianti e consiglia di aggiornare ogni ciclo di rilascio delle patch. Per mantenere la conformità PCI, i merchants devono trovarsi nella patch o nella patch di sicurezza più recente. La seguente cronologia mostra le versioni principali e gli eventi EOL del 2022.
 
-![](../assets/upgrade-guide/2022-release-timeline.svg)
+![](../assets/upgrade-guide/2022-release-timeline.jpg)
 
 Gli eventi importanti da notare includono:
 
-- Il supporto 2.3.x termina dopo aprile 2022
-- Da 2.4.0 a 2.4.3 (basato su PHP 7.4) raggiunge la fine del supporto qualità nel novembre 2022, quando PHP 7.4 raggiunge EOL
-- Sulla base di questi due eventi sopra, è importante effettuare l&#39;aggiornamento alla versione 2.4.4 o successiva entro il 22 novembre
-- In linea con Adobe Commerce [politica del ciclo di vita](https://devdocs.magento.com/release/lifecycle-policy.html), sono supportate le versioni 2.4.4 e 2.4.5 fino al 24 novembre
+- La linea 2.3.x raggiunge la fine del supporto (EOS) a settembre 2022
+- Da 2.4.0 a 2.4.3 (basato su PHP 7.4) raggiunge EOS nel novembre 2022, quando PHP 7.4 raggiunge la fine del ciclo di vita (EOL)
+- In base a questi due eventi EOS, **è importante effettuare l’aggiornamento alla versione 2.4.4 o successiva entro novembre 2022**
+- In linea con Adobe Commerce [politica del ciclo di vita](https://devdocs.magento.com/release/lifecycle-policy.html), le versioni 2.4.4 e 2.4.5 riceveranno supporto qualità e patch di sicurezza fino a novembre 2024

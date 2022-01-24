@@ -1,9 +1,9 @@
 ---
 title: Comprendere l'ambito dell'aggiornamento
 description: Scopri le modifiche incompatibili con le versioni precedenti in una versione che potrebbero avere un impatto sui moduli personalizzati Adobe Commerce o Magenti Open Source o sulle estensioni di terze parti.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,13 @@ La nuova politica di compatibilità di Adobe Commerce Marketplace assicura che _
 
 Tutti i moduli personalizzati devono essere verificati rispetto alla versione di destinazione a cui si desidera effettuare l’aggiornamento. Questo è il processo più lungo e laborioso di un aggiornamento, Durante la valutazione dei moduli personalizzati, è necessario cercare le modifiche incompatibili con le versioni precedenti e conoscere nuove pratiche, come la decomposizione del controller. Per ulteriori informazioni, consulta la sezione [note sulla versione](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Inoltre, assicurati di seguire [best practice](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) per lo sviluppo del modulo.
 
-## Strumento di compatibilità per l’aggiornamento
+## [!DNL Upgrade Compatibility Tool]
 
-Lo strumento di compatibilità per l’aggiornamento è uno strumento a riga di comando che analizza l’istanza per potenziali problemi di aggiornamento. Controlla i problemi tra la versione corrente installata e la versione a cui si sta tentando di eseguire l&#39;aggiornamento.
+La [!DNL Upgrade Compatibility Tool] è uno strumento a riga di comando che analizza la tua istanza per potenziali problemi di aggiornamento. Controlla i problemi tra la versione corrente installata e la versione a cui si sta tentando di eseguire l&#39;aggiornamento.
 
 L’utilizzo di questo strumento riduce lo sforzo richiesto al team per comprendere l’ambito e l’impatto di un aggiornamento. Consente di evitare problemi di codice comuni durante l&#39;aggiornamento e fornisce indicazioni chiare su come risolvere i problemi identificati. Inoltre, aiuta a dare la priorità ai problemi più critici necessari per garantire un aggiornamento di successo, risparmiando tempo e costi durante l&#39;aggiornamento.
 
-Per iniziare a utilizzare lo strumento di compatibilità per l’aggiornamento, consulta le sezioni seguenti. Consulta lo strumento di compatibilità per l’aggiornamento [guida](../upgrade-compatibility-tool/overview.md) per ulteriori dettagli tecnici e casi di utilizzo avanzati.
+Consulta le sezioni seguenti per iniziare a utilizzare [!DNL Upgrade Compatibility Tool]. Consulta la sezione [!DNL Upgrade Compatibility Tool] [guida](../upgrade-compatibility-tool/overview.md) per ulteriori dettagli tecnici e casi di utilizzo avanzati.
 
 ### Scarica lo strumento
 
@@ -78,7 +78,7 @@ Altre opzioni da utilizzare con questo comando sono:
 
 ### Analizzare l&#39;output
 
-Lo strumento di compatibilità per l’aggiornamento esporta un file JSON che identifica il codice o i moduli interessati, la gravità e una descrizione del problema per ogni problema riscontrato. Inoltre, genera un rapporto di riepilogo con un punteggio di complessità, che consente al tuo team di comprendere più o meno ciò che serve per eseguire l’aggiornamento alla versione più recente. Più basso è il punteggio di complessità, più facile sarà eseguire l&#39;aggiornamento.
+La [!DNL Upgrade Compatibility Tool] esporta un file JSON che identifica il codice o i moduli interessati, la gravità e una descrizione del problema per ogni problema riscontrato. Inoltre, genera un rapporto di riepilogo con un punteggio di complessità, che consente al tuo team di comprendere più o meno ciò che serve per eseguire l’aggiornamento alla versione più recente. Più basso è il punteggio di complessità, più facile sarà eseguire l&#39;aggiornamento.
 
 Il seguente output mostra un esempio di rapporto di riepilogo:
 
@@ -111,4 +111,4 @@ Utilizza il rapporto per stimare il tempo necessario per aggiornare il codice pe
 
 Inoltre, consigliamo di eseguire regolarmente lo strumento mentre lavori all’aggiornamento per avere una visibilità sull’avanzamento. Il numero di problemi dovrebbe diminuire man mano che li correggi. Questo aiuta anche il tuo team a decidere l&#39;approccio migliore per distribuire il lavoro.
 
-Le versioni future dello strumento incorporeranno test e autocorrezioni di compatibilità PHP 8.1 per aiutarti a risolvere i problemi il più rapidamente possibile.
+La [!DNL Upgrade Compatibility Tool] continua a essere migliorato con le versioni future e includerà funzioni come gli autofix per aiutarti a risolvere i problemi il più rapidamente possibile. Gli ultimi miglioramenti rilasciati nel gennaio 2022 includono test di compatibilità PHP 8.1 e funzionalità di visualizzazione HTML che consentono di identificare rapidamente le aree che potrebbero richiedere più tempo per effettuare l&#39;aggiornamento.
