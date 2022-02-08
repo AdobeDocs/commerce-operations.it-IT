@@ -1,67 +1,67 @@
 ---
 title: Managed Services
-description: Review the responsibilities of Adobe Managed Services, customers, and cloud service providers for your Adobe Commerce on cloud infrastructure implementaiton.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Esamina le responsabilità di Adobe Managed Services, clienti e fornitori di servizi cloud per l’implementazione di Adobe Commerce sull’infrastruttura cloud.
+exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
 
 ---
 
+# Servizi gestiti
 
-# Managed services
+Per impostazione predefinita, Adobe Commerce sui servizi gestiti dell’infrastruttura cloud è protetto.
 
-Per impostazione predefinita, Adobe Commerce sui servizi gestiti dall’infrastruttura cloud è protetto.
+![Diagramma che mostra i servizi gestiti di Adobe Commerce](../../../assets/playbooks/managed-services.svg)
 
-![Diagramma che mostra Adobe Commerce Managed Services](../../../assets/playbooks/managed-services.svg)
+## Responsabilità condivisa
 
-## Shared responsibility
-
-I piani di Adobe Commerce Pro si basano su un modello di sicurezza con responsabilità condivisa. In this model, different parties have different areas of responsibility for maintaining the security of the system. Questo approccio consente flessibilità e utilizzo delle migliori tecnologie cloud.
+I piani Adobe Commerce Pro si basano su un modello di sicurezza con responsabilità condivisa. In questo modello, le diverse parti hanno diversi ambiti di responsabilità per il mantenimento della sicurezza del sistema. Questo approccio consente flessibilità e utilizzo delle migliori tecnologie cloud.
 
 ![Diagramma che mostra il modello di responsabilità condivisa di Adobe Commerce](../../../assets/playbooks/shared-responsibility.svg)
 
-### Responsabilità dei servizi gestiti da Adobe
+### Responsabilità di Adobe Managed Services
 
-Adobe Managed Services is responsible for the security and availability of the Adobe Commerce Pro cloud environment, the core Adobe Commerce Pro application code, and internal commerce systems. This includes, but is not limited to:
+Adobe Managed Services è responsabile della sicurezza e della disponibilità dell’ambiente cloud Adobe Commerce Pro, del codice dell’applicazione Adobe Commerce Pro di base e dei sistemi di e-commerce interni. Ciò include, tra l&#39;altro:
 
 - Patch a livello di server
-- Funzionamento dei servizi necessari per la fornitura dei piani Adobe Commerce Pro
+- Funzionamento dei servizi necessari per fornire i piani Adobe Commerce Pro
 - Test di vulnerabilità
-- Security event logging and monitoring
+- Registrazione e monitoraggio degli eventi di sicurezza
 - Gestione degli incidenti
 - Monitoraggio operativo
 - Supporto 24/7
-- Ensuring that the customer infrastructure is available in accordance with SLAs
+- Garantire la disponibilità dell&#39;infrastruttura del cliente in conformità agli SLA
 
-Adobe Managed Services è inoltre responsabile della gestione delle configurazioni del firewall del server (iptables) e del firewall perimetrale (gruppi di sicurezza). Adobe may also release security updates to the core application on a periodic basis. È responsabilità dei clienti applicare queste patch. Queste aree sono tutte coperte dalla certificazione PCI del sistema di infrastruttura cloud Adobe Commerce.
+Adobe Managed Services è inoltre responsabile della gestione delle configurazioni del firewall del server (iptables) e del firewall perimetrale (gruppi di sicurezza). Adobe può anche rilasciare periodicamente aggiornamenti di sicurezza per l&#39;applicazione principale. È responsabilità dei clienti applicare queste patch. Queste aree sono tutte coperte dalla Certificazione PCI del sistema di infrastruttura cloud Adobe Commerce.
 
-### AWS responsibilities
+### Responsabilità di AWS
 
-Adobe Managed Services utilizza Amazon Web Services (AWS) per l’infrastruttura del server cloud. AWS è responsabile della sicurezza della rete, compresi routing, switching e sicurezza della rete perimetrale tramite sistemi firewall e sistemi di rilevamento intrusioni (IDS). AWS is responsible for physical security to the data centers managing the Adobe Commerce cloud environments, as well as environmental security to ensure proper power, cooling, and mechanism controls are in place.
+Adobe Managed Services utilizza Amazon Web Services (AWS) per l’infrastruttura del server cloud. AWS è responsabile della sicurezza della rete, inclusi routing, switching e protezione della rete perimetrale tramite sistemi firewall e sistemi di rilevamento intrusioni (IDS). AWS è responsabile della sicurezza fisica dei centri dati che gestiscono gli ambienti cloud Adobe Commerce, nonché della sicurezza ambientale per garantire che siano eseguiti i controlli di alimentazione, raffreddamento e meccanismo appropriati.
 
-Adobe Commerce Pro plans use:
+Adobe Commerce Pro prevede di utilizzare:
 
 - Amazon Elastic Compute Cloud (EC2)
-- Amazon Simple Storage Service (S3)
-- Amazon Elastic Block Store (EBS)
+- Servizio di archiviazione semplice Amazon (S3)
+- Archivio blocchi elastici Amazon (EBS)
 - Amazon Virtual Private Cloud (VPC)
 - Bilanciamento del carico elastico (ELB) di Amazon
 - Servizi cloud Trail di Amazon.
 
 Amazon dispone di un ampio programma di conformità, che include le certificazioni PCI DSS, SOC 2 e ISO 27001.
 
-### Solution partner/customer responsibilities
+### Responsabilità del partner/cliente della soluzione
 
-Il cliente è principalmente responsabile della sicurezza dell’implementazione personalizzata dell’applicazione Commerce di Adobe in esecuzione nell’ambiente cloud del piano Adobe Commerce Pro. Ciò include:
+Il cliente è principalmente responsabile della sicurezza dell’implementazione personalizzata dell’applicazione Adobe Commerce in esecuzione nell’ambiente cloud del piano Adobe Commerce Pro. Ciò include:
 
 - Garantire una configurazione e una codifica sicure delle attività di monitoraggio dell&#39;applicazione e della sicurezza, compresi test di penetrazione e analisi regolari della vulnerabilità.
 
-- The security of any customization, extensions, other applications, or integrations used in their system.
+- La sicurezza di personalizzazioni, estensioni, altre applicazioni o integrazioni utilizzate nel proprio sistema.
 
 - La sicurezza dei loro utenti e la concessione dell&#39;accesso alla loro configurazione e applicazione.
 
-- The customer controls all code deployments to their non-production environments. Questo controllo ha anche la responsabilità di applicare patch di sicurezza dell’applicazione all’applicazione Commerce di Adobe di base, alle estensioni o a qualsiasi codice personalizzato.
+- Il cliente controlla tutte le distribuzioni di codice nei propri ambienti non di produzione. Questo controllo ha anche la responsabilità di applicare patch di sicurezza dell’applicazione all’applicazione Adobe Commerce di base, alle estensioni o a qualsiasi codice personalizzato.
 
 - Il cliente deve eseguire test di penetrazione della propria applicazione personalizzata. Queste responsabilità possono essere affrontate tramite risorse tecniche da parte del cliente, dei partner di implementazione o dei servizi professionali Adobe Commerce.
 

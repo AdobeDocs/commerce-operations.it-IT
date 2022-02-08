@@ -1,19 +1,19 @@
 ---
-title: Architettura headless Adobe Commerce
-description: Learn about what makes Adobe Commerce's headless architecture approach unique.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: Architettura Adobe Commerce headless
+description: Scopri cosa rende unico l’approccio all’architettura headless di Adobe Commerce.
+exl-id: eac9d5b1-4917-4d2a-a8af-7f85c825fa0d
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
 
 ---
 
+# Architettura Adobe Commerce headless
 
-# Headless Adobe Commerce Architecture
+Il vantaggio dell’architettura di Adobe Commerce è che non si tratta di una proposta completa o nulla e un commerciante può trovare la giusta combinazione di soluzioni per la propria attività. Possono creare un PWA basato su PWA Studi per la loro esperienza di sito principale o utilizzare Adobe Experience Manager come livello in percorsi di clienti complessi, il tutto creando un front-end personalizzato per sperimentare nuovi punti di contatto. Nessun&#39;altra piattaforma può eguagliare i vantaggi in termini di time-to-market e la flessibilità offerta da Adobe Commerce con la sua architettura headless.
 
-The benefit of Adobe Commerce’s architecture is that it’s not an all-or-nothing proposition and a merchant can find the right mix of solutions for their business. Possono creare un PWA basato su PWA Studi per la loro esperienza di sito principale o utilizzare Adobe Experience Manager come livello in percorsi di clienti complessi, il tutto creando un front-end personalizzato per sperimentare nuovi punti di contatto. No other platform can match the time to market benefits and the flexibility that Adobe Commerce offers with its headless architecture.
-
-![Diagramma che mostra un’architettura headless Adobe Commerce storefront](../../../assets/playbooks/headless-storefront-architecture.svg)
+![Diagramma che mostra un’architettura Adobe Commerce storefront headless](../../../assets/playbooks/headless-storefront-architecture.svg)
 
 Ogni approccio non si escludono a vicenda. I clienti possono creare un proprio front-end (head), utilizzare PWA Studi per esperienze web/mobile e/o utilizzare Adobe Experience Manager per il vetro (in un’implementazione completa o ibrida).
 
@@ -21,32 +21,32 @@ Adobe Commerce ha sempre consentito distribuzioni headless con API REST. Sebbene
 
 GraphQL è uno standard di settore per le API performanti, utilizzato da molte delle principali piattaforme di e-commerce. È una buona cosa, perché significa che è una soluzione e un&#39;esperienza comprovate sul mercato.
 
-While Adobe Commerce does have a coupled storefront as an option, it is by no means required that a merchant use that Adobe Commerce legacy frontend. Un commerciante può sfruttare i servizi di e-commerce all’avanguardia di Adobe Commerce per gestire i processi aziendali di back-end e, utilizzando le nostre API storefront, integrare la propria vetrina disaccoppiata per guidare l’esperienza front-end.
+Sebbene Adobe Commerce disponga di una vetrina associata come opzione, non è assolutamente necessario che un commerciante utilizzi quella precedente Adobe Commerce. Un commerciante può sfruttare i servizi di e-commerce all’avanguardia di Adobe Commerce per gestire i processi aziendali back-end e, utilizzando le API storefront, integrare la propria vetrina disaccoppiata per promuovere l’esperienza front-end.
 
 Ora, diamo un&#39;occhiata alle varie opzioni headless.
 
 ## PWA Studi
 
-La prima è un&#39;applicazione web progressiva creata con PWA Studi. Part of this is enabled by the fact that a PWA is a headless storefront decoupled from the commerce backend. Con PWA Studi, i commercianti possono creare PWA dalle prestazioni elevate, affidabili ed economici, oltre ad Adobe Commerce, per fornire esperienze web all’avanguardia sia su dispositivi mobili che su desktop. Con il passare del tempo, l’opzione predefinita supererà la vetrina associata.
+La prima è un&#39;applicazione web progressiva creata con PWA Studi. Parte di questo è abilitata dal fatto che un PWA è una vetrina headless disaccoppiata dal back-end commerce. Con PWA Studi, i commercianti possono creare PWA ad alte prestazioni, affidabili e convenienti su Adobe Commerce per offrire esperienze web all’avanguardia, sia su dispositivi mobili che su desktop. Con il passare del tempo, l’opzione predefinita supererà la vetrina associata.
 
-Most merchants understand the direction that the industry is heading toward with regards to PWAs and many potential blockers are being removed rapidly.
+La maggior parte dei commercianti comprende la direzione verso cui l&#39;industria si sta dirigendo per quanto riguarda i PWA e molti potenziali blocchi vengono rimossi rapidamente.
 
-Week over week, the number of partners building expertise in PWA Studio grows and we have an accelerating number of customer launches. L’aggiornamento più recente di PWA Studi includeva l’estensibilità che consentiva di compiere progressi significativi nella compatibilità con le estensioni di Commerce Marketplace Adobe.
+Settimana dopo settimana, il numero di partner che sviluppano le proprie competenze in PWA Studi cresce e il numero di nuovi clienti è in aumento. L’aggiornamento più recente di PWA Studi includeva l’estensibilità che consentiva di compiere progressi significativi nella compatibilità con le estensioni Adobe Commerce Marketplace.
 
-Molti commercianti possono ritenere che non siano pronti per PWA e headless perché richiedono una forte dipendenza dagli sviluppatori. One of the huge benefits of having both the commerce application and the head developed by Adobe Commerce is that it helps ensure compatibility across commerce capabilities.
+Molti commercianti possono ritenere che non siano pronti per PWA e headless perché richiedono una forte dipendenza dagli sviluppatori. Uno dei grandi vantaggi di avere sia l&#39;applicazione commerce che la testa sviluppata da Adobe Commerce è che contribuisce a garantire la compatibilità tra le funzionalità commerce.
 
 Per rendere i PWA più accessibili e facili da gestire per i nostri merchants, offriamo agli utenti aziendali la possibilità di gestire le modifiche giornaliere dei contenuti, creare nuove pagine di destinazione e altro ancora utilizzando Page Builder. Queste due potenti funzionalità consentono insieme di velocizzare il mercato su tutti i dispositivi e le esperienze.
 
 ## Adobe Experience Manager
 
-A powerhouse combination for your content and digital asset management needs,Adobe Exeprience Manager helps merchants get personalized, content-led experiences into market faster, combining digital asset management with the power of machine learning, Adobe Sensei-powered content, and customer journey management.
+Una combinazione potente per le tue esigenze di gestione dei contenuti e delle risorse digitali, Adobe Experience Manager aiuta i commercianti a immettere sul mercato esperienze personalizzate basate su contenuti più rapidamente, combinando la gestione delle risorse digitali con la potenza dell’apprendimento automatico, dei contenuti basati su Adobe Sensei e della gestione dei percorsi dei clienti.
 
-Adobe Commerce plus Adobe Exeprience Manager is a powerful story in that the commerce engine allows businesses to enable commerce though customer interfaces that are powered by Adobe Experience Manager.
+Adobe Commerce plus Adobe Experience Manager è una storia importante in quanto il motore di e-commerce consente alle aziende di abilitare l’e-commerce tramite le interfacce cliente fornite da Adobe Experience Manager.
 
-## Custom Heads
+## Intestazioni personalizzate
 
 L&#39;opzione finale da discutere qui è la possibilità di costruire un fronte personalizzato. Questa opzione è destinata alle aziende che dispongono di competenze esistenti e agli sviluppatori interni qualificati in un particolare stack front-end, come React. Se non dispongono delle competenze necessarie per lo sviluppo front-end tradizionale di Adobe Commerce, possono decidere che è più conveniente creare un proprio fronte React personalizzato.
 
-Naturally, this model requires strong customer or systems integration frontend development skills and resources, and you don’t get the benefit of native compatibility with things like Page Builder that you get with PWA Studio. Ogni volta che un commerciante costruisce qualcosa di completamente personalizzato, può perdere tempo a vantaggio del mercato.
+Naturalmente, questo modello richiede una forte integrazione dei clienti o dei sistemi e richiede competenze e risorse di sviluppo superiori a quelle dei clienti e non si ottiene il vantaggio della compatibilità nativa con elementi come Page Builder forniti con PWA Studi. Ogni volta che un commerciante costruisce qualcosa di completamente personalizzato, può perdere tempo a vantaggio del mercato.
 
-Custom front ends also enable innovations and experimentation. Si parla molto di AR/VR o del commercio vocale, e un’architettura come quella di Adobe Commerce consente ai commercianti di esplorare queste opzioni senza influire sui loro negozi web esistenti.
+I front-end personalizzati consentono inoltre innovazioni e sperimentazione. Si parla molto di AR/VR o del commercio vocale, e un’architettura come quella di Adobe Commerce consente ai commercianti di esplorare queste opzioni senza influire sui loro negozi web esistenti.

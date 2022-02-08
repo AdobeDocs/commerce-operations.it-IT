@@ -2,9 +2,9 @@
 title: Recommendations di ottimizzazione delle prestazioni
 description: Ottimizza le prestazioni dell’implementazione Adobe Commerce seguendo questi consigli.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1289'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ A partire dalla versione 2.4 di Adobe Commerce è necessario un Elasticsearch, m
 
 ## Modelli operativi
 
-Oltre ai consigli di ottimizzazione dell&#39;infrastruttura comune precedentemente menzionati, esistono anche approcci per migliorare le prestazioni per modalità e scale aziendali specifiche. Questo documento non fornisce istruzioni di ottimizzazione approfondite per tutti gli scenari, poiché ogni scenario è diverso, ma possiamo fornire alcune opzioni di alto livello per il vostro riferimento.
+Oltre alle raccomandazioni di ottimizzazione comune dell&#39;infrastruttura precedentemente menzionate, esistono anche approcci per migliorare le prestazioni per modalità e scale aziendali specifiche. Questo documento non fornisce istruzioni di ottimizzazione approfondite per tutti gli scenari, poiché ogni scenario è diverso, ma possiamo fornire alcune opzioni di alto livello per il vostro riferimento.
 
 ### Architettura headless
 

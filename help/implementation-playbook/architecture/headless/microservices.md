@@ -1,8 +1,8 @@
 ---
 title: Microservizi Adobe Commerce
-description: Essere in grado di differenziare tra i servizi sanitari e i microservizi per quanto riguarda Adobe Commerce.
+description: Essere in grado di distinguere tra headless e microservizi per quanto riguarda Adobe Commerce.
 exl-id: 078e0e8e-7acc-4913-8b78-585a950f3f5e
-source-git-commit: 4e8f6ce05c14195433e7c46e6090a93a76b8b5f9
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -15,7 +15,7 @@ E&#39; importante non confondere testa senza testa con microservizi. Molte volte
 
 Un&#39;architettura di microservizi è un termine utilizzato per descrivere la pratica di suddividere un&#39;applicazione in una raccolta di servizi più piccoli e liberamente accoppiati. I microservizi consentono ai singoli servizi di back-end di essere:
 
-- **Isolati l&#39;uno dall&#39;altro**- Ad esempio, il servizio di determinazione dei prezzi non ha alcuna dipendenza dal servizio di catalogo.
+- **Isolati l&#39;uno dall&#39;altro**- Ad esempio, il servizio di determinazione prezzi non ha alcuna dipendenza dal servizio catalogo.
 
 - **Distribuito a la carte**- I clienti distribuiscono solo le parti dell&#39;applicazione di cui hanno bisogno.
 

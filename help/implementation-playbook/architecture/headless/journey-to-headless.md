@@ -1,14 +1,14 @@
 ---
 title: Percorso a senza testa
-description: Rivedi una cronologia del percorso di Adobe Commerce per supportare architetture headless.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Rivedi una timeline del percorso Adobe Commerce per supportare architetture headless.
+exl-id: 9286e6b3-3c29-4428-b353-f66eb4bc382d
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '28'
 ht-degree: 0%
 
 ---
 
+# Il Percorso di Adobe Commerce a Headless
 
-# Adobe Commerce’s Journey to Headless
-
-![Timeline of Adobe Commerce&#39;s hjourney to a headless architecture](../../../assets/playbooks/journey-to-headless.svg)
+![Timeline del percorso Adobe Commerce su un’architettura headless](../../../assets/playbooks/journey-to-headless.svg)

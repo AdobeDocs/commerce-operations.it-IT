@@ -1,34 +1,34 @@
 ---
-title: Principles of Platform Development
+title: Principi di sviluppo della piattaforma
 description: Comprendere i principi fondamentali di sviluppo delle piattaforme quando si lavora con Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
+# Principi dello sviluppo delle piattaforme
 
-# Principles of platform development
+In questo playbook approfondiamo alcuni dei principali standard di sviluppo Adobe Commerce, tra cui:
 
-In questo playbook approfondiamo alcuni dei principali standard di sviluppo del Commercio Adobe, tra cui:
-
-- Functional and technical scoping in line with the development process
-- Development best practices aligning with the MVC architecture
+- Ambito funzionale e tecnico in linea con il processo di sviluppo
+- Best practice di sviluppo in linea con l&#39;architettura MVC
 - Considerazioni architettoniche, tra cui GRA
 - Standard di sicurezza contro script e sfruttamento
-- Extension development best practices
+- Best practice per lo sviluppo di estensioni
 - Integrazioni API web con REST, SOAP e GraphQL
-- Performance improvements for coding and infrastructure
+- Miglioramenti delle prestazioni per la codifica e l&#39;infrastruttura
 - Strumenti, strategie e metodologie di test
 
 Anche se alcuni implementatori di soluzioni possono avere le proprie preferenze quando si tratta di metodologie, processi e strumenti utilizzati in un progetto di implementazione, questo playbook si concentra su best practice e metodologie generalmente accettate che possono essere condivise nella maggior parte delle implementazioni.
 
-Like any large IT project, Adobe Commerce is built on coding standards that leverage best practices and standardizations of the underlying technologies (for example, PHP/Zend,Symfony, JavaScript, jQuery, and HTML), as well as standards that have been established within the Adobe Commerce Coding Standard. Following these standards is an absolute must to eliminate bugs and improve the quality and maintainability of custom-built code.
+Come per qualsiasi progetto IT di grandi dimensioni, Adobe Commerce si basa su standard di codifica che sfruttano le best practice e le standardizzazioni delle tecnologie sottostanti (ad esempio, PHP/Zend, Symfony, JavaScript, jQuery e HTML), nonché sugli standard stabiliti all’interno di Adobe Commerce Coding Standard. Il rispetto di questi standard è assolutamente necessario per eliminare gli errori e migliorare la qualità e la manutenibilità del codice personalizzato.
 
-## Adobe Commerce on cloud infrastructure
+## Adobe Commerce su infrastruttura cloud
 
-Adobe Commerce on cloud Infrastructure è una piattaforma di hosting gestita e automatizzata per il software Adobe Commerce. Adobe Commerce on cloud infrastructure comes with a variety of additional features that sets it apart from on-premises Adobe Commerce and Magento Open Source implementations:
+Adobe Commerce sull’infrastruttura cloud è una piattaforma di hosting gestita e automatizzata per il software Adobe Commerce. L’infrastruttura Adobe Commerce su cloud include una serie di funzioni aggiuntive che la distinguono dalle implementazioni Adobe Commerce on-premise di Magento Open Source:
 
 ![Informazioni sui componenti di Adobe Commerce](../../assets/playbooks/commerce-cloud.svg)
 

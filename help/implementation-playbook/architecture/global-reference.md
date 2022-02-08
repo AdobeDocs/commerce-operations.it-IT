@@ -1,19 +1,19 @@
 ---
 title: Architettura di riferimento globale di Adobe Commerce
-description: Sfrutta al massimo l’implementazione Commerce di Adobe sfruttando un’architettura di riferimento globale.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Sfrutta al massimo l’implementazione Adobe Commerce sfruttando un’architettura di riferimento globale.
+exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-
 # Architettura di riferimento globale (GRA)
 
 Quando gestisci aziende che dispongono di più siti per più marchi in più mercati locali (con valute localizzate, lingue, media, cataloghi condivisi e carrelli univoci) e che desiderano evitare costi inutili per l’implementazione delle stesse funzionalità e integrazioni - Global Reference Architecture (GRA) è sempre una buona opzione.
 
-![Table explaining the cost of divergence in architecture](../../assets/playbooks/divergent-architecture.svg)
+![Tabella che illustra il costo della divergenza architettonica](../../assets/playbooks/divergent-architecture.svg)
 
 ![Tabella che illustra il costo del consolidamento in architettura](../../assets/playbooks/consolidated-architecture.svg)
 
@@ -21,13 +21,13 @@ GRA è:
 
 - Un approccio di implementazione
 - Una strategia di distribuzione
-- A process governance model
+- Un modello di governance dei processi
 
 GRA non è:
 
 - Una &quot;caratteristica&quot; del prodotto
 - Unico a qualsiasi piattaforma di e-commerce
-- Only for global business use cases
+- Solo per casi d’uso aziendali globali
 
 Effetti del GRA:
 
@@ -41,9 +41,8 @@ Effetti del GRA:
 
 - Modalità di sviluppo e manutenzione della personalizzazione
 
-   - Ensures customizations are centralized and domain-specific so that all customization effort is done from a holistic point of view for the business.
+   - Assicura che le personalizzazioni siano centralizzate e specifiche per il dominio, in modo che tutte le operazioni di personalizzazione vengano eseguite da un punto di vista olistico per l&#39;azienda.
 
 - Modalità di attivazione dei nuovi mercati
 
    - Semplifica la diffusione di più canali e mercati che altrimenti costerebbero molto più tempo e denaro.
-

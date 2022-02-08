@@ -1,25 +1,25 @@
 ---
-title: Strategia di integrazione di Adobe Commerce
-description: Esamina le strategie e le opzioni di integrazione per l’implementazione di Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: Strategia di integrazione Adobe Commerce
+description: Esamina le strategie e le opzioni di integrazione per l’implementazione Adobe Commerce.
+exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
 
 ---
 
-
-# Strategia di integrazione di Adobe Commerce
+# Strategia di integrazione Adobe Commerce
 
 La capacità di integrare la piattaforma è &quot;non negoziabile&quot;. Le aziende vogliono che le loro piattaforme di e-commerce siano accessibili da una varietà di punti di contatto e perfettamente integrate nei loro sistemi tecnologici, in particolare nell&#39;ERP. Personalizzazione, scalabilità globale e convenienza giocano un ruolo importante anche nell&#39;acquisto di piattaforme finali.
 
 Un approccio di integrazione olistica sia per i sistemi storefront che per quelli back-end è supportato dalle API GraphQL performanti, dalle API REST complete e dall’importazione di file batch tra Adobe Commerce e altri sistemi o servizi.
 
-L’API Adobe Commerce GraphQL fornisce una copertura completa della vetrina che puoi utilizzare per integrare con altri vetrine, tra cui:
+L’API GraphQL di Adobe Commerce fornisce una copertura completa per la vetrina che puoi utilizzare per l’integrazione con altri vetrini, tra cui:
 
 - Piattaforme di esperienza digitale (DXP) come Adobe Experience Manager e Bloomreach
 - Sistemi di gestione dei contenuti (CMS) come Drupal e WordPress
-- Applicazione Storefront personalizzata moderna come Adobe Commerce, PWA Studi e Vue Storefront
+- Applicazione storefront personalizzata moderna come Adobe Commerce, PWA Studi e Vue Storefront
 
 GraphQL fornisce una risposta efficiente e specifica per il canale, nessun overfetching di dati e una distribuzione agile di nuove funzioni per i punti di contatto. Spesso viene anche scelto di integrarsi con canali di vendita come app native per dispositivi mobili, POS, IoT, canali social e canali di e-commerce livestream come Facebook, Google, Instagram, WeChat e TikTok.
 
@@ -39,7 +39,7 @@ Le importazioni di file batch sono anche considerate una buona opzione per integ
 
 Adobe Commerce offre tre opzioni di integrazione flessibili:
 
-- Integrazione diretta tra sistemi con connettori predefiniti. Alcuni sistemi potrebbero già disporre di estensioni Commerce di Adobe nella Commerce Marketplace Adobe o nel proprio sito web.
+- Integrazione diretta tra sistemi con connettori predefiniti. Alcuni sistemi potrebbero già disporre di estensioni Adobe Commerce su Adobe Commerce Marketplace o sul proprio sito web.
 
 - Integrazione da sistema a sistema tramite middleware personalizzato. La soluzione middleware personalizzata distribuita verrà utilizzata per la mappatura, la traduzione e la gestione dei dati del processo.
 
@@ -47,4 +47,4 @@ Adobe Commerce offre tre opzioni di integrazione flessibili:
 
 ![Opzioni di integrazione di Adobe Commerce](../../assets/playbooks/integration-options.svg)
 
-Anche se di solito sono desiderate integrazioni in tempo reale, non è necessario in alcuni scenari. Adobe Commerce supporta in modo nativo RabbitMQ come bus dei messaggi per abilitare i processi asincroni, operazione consigliata per alcuni dati non necessari per lo scambio in tempo reale, ma per l’aggiornamento dell’API di processo di scambio di file batch o di dati batch REST in modo che vengano elaborati in modo asincrono.
+Anche se di solito sono desiderate integrazioni in tempo reale, non è necessario in alcuni scenari. Adobe Commerce supporta in modo nativo RabbitMQ come bus dei messaggi per abilitare i processi asincroni, il che è consigliato per alcuni dati che non sono necessari per lo scambio in tempo reale, ma piuttosto per l’aggiornamento con l’API di processo di scambio di file batch o di dati batch REST in modo che vengano elaborati in modo asincrono.
