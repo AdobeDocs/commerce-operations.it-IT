@@ -1,9 +1,9 @@
 ---
-title: '[!DNL Upgrade Compatibility Tool] Prerequisiti'
+title: '"[!DNL Upgrade Compatibility Tool] Prerequisiti"'
 description: 'Verifica che il sistema soddisfi i requisiti necessari per eseguire il [!DNL Upgrade Compatibility Tool] per il progetto Adobe Commerce. '
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: 97295df89fda393c8cf8675f8f4be92ac6f38a6a
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
