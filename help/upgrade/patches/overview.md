@@ -1,7 +1,7 @@
 ---
 title: Funzionamento delle patch
 description: Scopri i diversi tipi di patch per Adobe Commerce e Magenti Open Source e come funzionano.
-source-git-commit: 38b054bbae8ba116557ce367c8397c646c837558
+source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -91,8 +91,8 @@ index c8a6fef58d31..7d01c195791e 100644
 È possibile applicare le patch utilizzando uno dei seguenti metodi:
 
 - [Strumento Patch di qualità](https://devdocs.magento.com/quality-patches/tool.html)
-- [Riga di comando](../patches/apply.md#command-line)
-- [Compositore](../patches/apply.md#composer)
+- [Riga di comando](/help/upgrade/patches/apply.md#command-line)
+- [Compositore](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
