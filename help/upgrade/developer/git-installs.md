@@ -1,9 +1,9 @@
 ---
 title: Aggiornare un’installazione basata su Git
 description: Aggiorna un’installazione di Adobe Commerce o Magento Open Source clonata da un archivio Git.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,7 @@ Questo argomento illustra come uno sviluppatore contributore può aggiornare Ado
 
 Per eseguire l’aggiornamento se sei uno sviluppatore collaboratore:
 
-1. Accedi al tuo server.
-
-1. Passa alla [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-
-1. Passa alla directory in cui hai clonato l’applicazione. Ad esempio:
-
-   ```bash
-   cd /var/www/magento2
-   ```
+{{$include /help/_includes/server-login.md}}
 
 1. Salva le modifiche apportate al `composer.json` file perché i passaggi successivi lo sovrascrivono.
 

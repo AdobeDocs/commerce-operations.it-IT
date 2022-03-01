@@ -1,9 +1,9 @@
 ---
 title: Panoramica [!DNL Upgrade Compatibility Tool]
 description: Scopri le [!DNL Upgrade Compatibility Tool] e come può aiutarti con il tuo progetto Adobe Commerce.
-source-git-commit: e6b6c61aa3fc7c3f22e3a1450b43015f1a7ffed7
+source-git-commit: 708eb0bcbc9cff9332eade6377032d91f770644a
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,7 @@ ht-degree: 0%
 
 # Panoramica [!DNL Upgrade Compatibility Tool]
 
->[!NOTE]
->
->La [!DNL Upgrade Compatibility Tool] è disponibile solo per le istanze Adobe Commerce.
+{{commerce-only}}
 
 La [!DNL Upgrade Compatibility Tool] è uno strumento a riga di comando che controlla un’istanza personalizzata di Adobe Commerce rispetto a una versione specifica analizzando tutti i moduli e il codice di base installati al suo interno. Restituisce un elenco di problemi critici, errori e avvisi che devono essere risolti prima di eseguire l’aggiornamento alla versione più recente di Adobe Commerce. Identifica anche i potenziali problemi che devono essere risolti nel codice prima di tentare di eseguire l&#39;aggiornamento a una versione più recente di Adobe Commerce.
 
