@@ -1,7 +1,7 @@
 ---
 title: Modernizzazione della piattaforma con Adobe Commerce 2.4.4+
 description: Rivedi le raccomandazioni per la pianificazione dell’aggiornamento di Adobe Commerce o Magento Open Source nel 2022.
-source-git-commit: 8f983e6791da852350fa061fd3119abcdaa03cbf
+source-git-commit: ddad036c0f2ed5f790136c5c4d6faec38069dbda
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -26,17 +26,17 @@ Di seguito sono riportati i percorsi consigliati da Adobe Commerce alla versione
 
 ## Aggiornamento dalle versioni 2.3.6 e precedenti
 
-![](../../assets/upgrade-guide/2.3.6.jpg)
+![](../../assets/upgrade-guide/2.3.6.png)
 
 ## Aggiornamento da 2.3.7
 
-![](../../assets/upgrade-guide/2.3.7.jpg)
+![](../../assets/upgrade-guide/2.3.7.png)
 
 ## Aggiornamento da 2.4.0 a 2.4.3
 
-![](../../assets/upgrade-guide/2.4.0-2.4.3.jpg)
+![](../../assets/upgrade-guide/2.4.0-2.4.3.png)
 
 ## Aggiornamento da 2.4.3 (o aggiornato di recente)
 
-![](../../assets/upgrade-guide/2.4.3.jpg)
+![](../../assets/upgrade-guide/2.4.3.png)
 
