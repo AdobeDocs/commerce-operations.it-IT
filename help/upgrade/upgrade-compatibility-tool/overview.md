@@ -1,9 +1,9 @@
 ---
 title: Panoramica [!DNL Upgrade Compatibility Tool]
 description: Scopri le [!DNL Upgrade Compatibility Tool] e come può aiutarti con il tuo progetto Adobe Commerce.
-source-git-commit: 708eb0bcbc9cff9332eade6377032d91f770644a
+source-git-commit: 218b099caa883f66ddda48407fb789e51fedc203
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,37 @@ La [!DNL Upgrade Compatibility Tool] consente di identificare quando sono state 
 Viene distribuito come pacchetto Composer con ogni versione di una versione di Adobe Commerce. Consulta la sezione [Sviluppatore](../upgrade-compatibility-tool/developer.md) per ulteriori informazioni.
 
 Fai riferimento a [Installa](../upgrade-compatibility-tool/install.md) argomento per i primi passi con [!DNL Upgrade Compatibility Tool].
+
+## Flusso di lavoro
+
+Il diagramma seguente mostra il flusso di lavoro previsto durante l’esecuzione del [!DNL Upgrade Compatibility Tool]:
+
+![[!DNL Upgrade Compatibility Tool] Diagramma](../../assets/upgrade-guide/mvp-diagram-v3.png)
+
+## La [!DNL Upgrade Compatibility Tool] caso d&#39;uso
+
+Il seguente caso d’uso descrive il processo tipico di un partner Adobe Commerce per aggiornare l’istanza di un client:
+
+1. Scarica la [!DNL Upgrade Compatibility Tool] dal pacchetto [Archivio Adobe Commerce](https://repo.magento.com/). Consulta la sezione [Scarica la [!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) per ulteriori informazioni.
+1. Esegui il [!DNL Upgrade Compatibility Tool] durante il [beta](https://devdocs.magento.com/release/beta-program.html) fase più recente [Versione Adobe Commerce](https://devdocs.magento.com/release/).
+1. Il comando principale è `upgrade:check`. Questo comando analizza l’istanza e controlla la presenza di errori, avvisi e problemi critici nell’istanza. Per ottimizzare i risultati:
+
+   - Opzione Aggiungi `--ignore-current-version-compatibility-issues` per ignorare tutti i problemi critici noti, gli errori e gli avvisi relativi alla versione corrente di Adobe Commerce. Mostra solo i risultati della versione desiderata.
+   - Opzione Usa `--min-issue-level` per impostare il livello minimo di problema. Consente di assegnare priorità solo ai problemi più importanti con l’aggiornamento. Se si desidera analizzare solo un determinato fornitore, modulo o persino directory, è possibile specificare anche il percorso. Consulta la sezione [Esegui lo strumento](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/run.html?lang=en) per ulteriori dettagli.
+
+1. Genera un’istanza di vaniglia per la versione specifica di Adobe Commerce attualmente installata. Consulta la sezione [Guida collaboratore](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) per ulteriori informazioni sull&#39;utilizzo di `instance` comando per generare un&#39;installazione di vaniglia.
+
+   >[!NOTE]
+   >
+   >Un’istanza di vaniglia è un’installazione pulita di un tag di versione o di un ramo specifico per una versione specifica di rilascio.
+
+1. La [!DNL Upgrade Compatibility Tool] Identifica le aree interrotte personalizzate. Il tecnico del software è in grado di comprendere la complessità e stimare lo sforzo dell&#39;aggiornamento. Queste informazioni sono condivise con le parti interessate.
+1. Per l’aggiornamento verrà definito un budget e una timeline.
+1. Gli ingegneri software possono quindi lavorare sulle modifiche di codice richieste per correggere i moduli interrotti.
+1. La [!DNL Upgrade Compatibility Tool] può essere eseguito per tenere traccia dell’avanzamento dell’aggiornamento.
+1. Tutti i controlli e l’ingegneria possono ora inviare il codice a un ambiente di staging in cui i test di regressione confermano che tutti i test sono verdi, il che consente loro di rilasciare l’ultima versione di Adobe Commerce in produzione lo stesso giorno in cui viene rilasciato il pre-rilascio di Adobe Commerce.
+
+   ![[!DNL Upgrade Compatibility Tool] pubblico](../../assets/upgrade-guide/audience-uct-v3.png)
 
 ## Aiutare a migliorare [!DNL Upgrade Compatibility Tool]
 
