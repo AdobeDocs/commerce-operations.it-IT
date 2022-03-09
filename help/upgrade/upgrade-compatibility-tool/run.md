@@ -1,7 +1,7 @@
 ---
 title: Esegui il [!DNL Upgrade Compatibility Tool]
 description: Segui questi passaggi per eseguire il [!DNL Upgrade Compatibility Tool] sul progetto Adobe Commerce.
-source-git-commit: bcb8fced43c5d9972291f15a5039dbbc2a692a59
+source-git-commit: ee80753da5327ebf593e007e3b4316e2b01c5a61
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 0%
@@ -73,11 +73,11 @@ Disponibile `--help` opzioni per `upgrade:check` comando:
 
 - `-m, --module-path[=MODULE-PATH]`: Percorso dei moduli da analizzare
 - `-a, --current-version[=CURRENT-VERSION]`: La versione corrente di Adobe Commerce, la versione dell’installazione di Adobe Commerce, verrà utilizzata se omessa.
-- `-c, --coming-version[=COMING-VERSION]`: La versione Adobe Commerce di destinazione, la versione dell’installazione di Adobe Commerce, verrà utilizzata se omessa.
+- `-c, --coming-version[=COMING-VERSION]`: Se omessa, verrà utilizzata la versione Adobe Commerce di destinazione, l’ultima versione rilasciata di Adobe Commerce.
 - `--json-output-path[=JSON-OUTPUT-PATH]`: Percorso del file in cui verrà esportato l&#39;output in formato json.
 - `--html-output-path[=HTML-OUTPUT-PATH]`: Percorso del file in cui verrà esportato l’output in formato HTML.
 - `--min-issue-level`: Livello minimo di problema da visualizzare nel rapporto. Il valore predefinito è [AVVISO].
-- `--ignore-current-version-compatibility-issues`: Utilizza questa opzione quando non desideri includere problemi critici noti, errori e avvisi nel tuo [!DNL Upgrade Compatibility Tool] rapporto.
+- `-i, --ignore-current-version-compatibility-issues`: Utilizza questa opzione quando non desideri includere problemi critici noti, errori e avvisi nel tuo [!DNL Upgrade Compatibility Tool] rapporto.
 - `--context=CONTEXT`: Contesto di esecuzione. Questa opzione è a scopo di integrazione e non influisce sul risultato dell’esecuzione.
 - `-h, --help`: Visualizza la Guida per quel comando specifico. Se non viene fornito alcun comando, `list` è il risultato predefinito.
 - `-q, --quiet`: Non inviare messaggi durante l&#39;esecuzione del comando.
