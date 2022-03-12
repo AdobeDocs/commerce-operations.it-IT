@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;argomenti popolari
 title: Pagina principale
 description: Sfoglia un indice della documentazione del prodotto operativo Adobe Commerce.
-source-git-commit: 3637e81bf3951d0130941613d88488405073e7e1
+source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -12,18 +12,7 @@ ht-degree: 0%
 
 # Guide operative di Adobe Commerce
 
-Questa pagina fornisce collegamenti a tutte le guide operative per Adobe Commerce e Magenti Open Source.
-
-## Novità
-
-La tabella seguente include modifiche recenti che pensiamo desideri conoscere, come nuovi argomenti e aggiornamenti significativi agli argomenti esistenti:
-
-| Descrizione | Tipo |
-|------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Aggiunto [informazioni](../upgrade/upgrade-compatibility-tool/overview.md) informazioni sulla definizione delle regole per lo strumento di compatibilità per l’aggiornamento. | Aggiornamento principale |
-| Strumento di compatibilità per l’aggiornamento obsoleto rimosso [codici di errore](../upgrade/upgrade-compatibility-tool/error-messages.md). | Tecnico |
-
-## Guide
+Ottieni informazioni pratiche su concetti, processi, strumenti e best practice per sviluppare, implementare e gestire progetti commerce distribuiti su Adobe Commerce e piattaforme di Magento Open Source.
 
 <table>
 <tr>
@@ -63,7 +52,7 @@ La tabella seguente include modifiche recenti che pensiamo desideri conoscere, c
 <tr>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="Aggiornamento" src="../assets/icons/download-cloud.svg" width="40" height="40"/>
+      <img alt="Aggiornamento" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>Aggiornamento</strong></a>
@@ -129,3 +118,12 @@ La tabella seguente include modifiche recenti che pensiamo desideri conoscere, c
   </td>
 </tr>
 </table>
+
+## Novità
+
+Scopri la nuova documentazione e gli aggiornamenti significativi alla documentazione esistente.
+
+| Modifica | Tipo |
+|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Aggiunto [informazioni](../upgrade/upgrade-compatibility-tool/overview.md) informazioni sulla definizione delle regole per lo strumento di compatibilità per l’aggiornamento. | Aggiornamento principale |
+| Strumento di compatibilità per l’aggiornamento obsoleto rimosso [codici di errore](../upgrade/upgrade-compatibility-tool/error-messages.md). | Tecnico |
