@@ -1,9 +1,9 @@
 ---
 title: Lettura consigliata per gli aggiornamenti
 description: Rivedi la lettura consigliata per la pianificazione dell’aggiornamento di Adobe Commerce o Magento Open Source.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: 01ece828514da11459010f2633e370dd53e4e82e
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -13,39 +13,65 @@ ht-degree: 0%
 
 Continua a scoprire di più su Adobe Commerce e sugli aggiornamenti di Magento Open Source utilizzando le risorse presenti in questa pagina.
 
-## Strategia di rilascio
-
-- [Accelerare l&#39;innovazione attraverso una strategia di rilascio semplificata](https://magento.com/blog/accelerating-innovation-through-simplified-release-strategy)
-- [Criterio del ciclo di vita](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
-- [Pianificazione del rilascio](https://devdocs.magento.com/release/)
-- [Domande frequenti](https://support.magento.com/hc/en-us/articles/4409421516301-FAQ-for-New-Adobe-Commerce-Release-Strategy-and-Updated-Lifecycle-Policy)
-- [Tipi di rilascio](https://devdocs.magento.com/release/policy/)
-- [Abilitazione dei partner](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/Community_47/Webinar_Recording_Commerce_Q4_Product_Update.URL)
-
-## Pianificazione
-
-- [NOTIZIE INCORAGGIANTI: Le versioni beta 2.4.4 saranno presto disponibili](https://community.magento.com/t5/Magento-DevBlog/BREAKING-NEWS-2-4-4-beta-releases-are-coming-soon/ba-p/484310)
-- [2.4.4 Modifiche alla piattaforma](https://community.magento.com/t5/Magento-DevBlog/Technical-platform-changes-to-expect-in-Adobe-Commerce-2-4-4/ba-p/485506)
-- [Elenco di controllo piano di aggiornamento](https://support.magento.com/hc/en-us/articles/360057968951)
-- [Best practice per l’aggiornamento](../prepare/best-practices.md)
-- [Guida all’aggiornamento a Download 2.4.4](../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf)
-
-## [!DNL Upgrade Compatibility Tool]
-
-- [Preparare il prossimo aggiornamento con Adobe Commerce [!DNL Upgrade Compatibility Tool]](https://community.magento.com/t5/Magento-DevBlog/Prepare-for-Your-Next-Upgrade-with-the-Adobe-Commerce-Upgrade/ba-p/483372)
-- [Panoramica](../upgrade-compatibility-tool/overview.md)
-- [PHPStorm e [!DNL Upgrade Compatibility Tool]](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html)
-
-## Sicurezza
-
-- [Strumento di scansione della sicurezza](https://magento.com/blog/magento-news/secure-your-storefront-enhanced-magento-security-scan-tool)
-- [Introduzione alla nuova versione della patch di sicurezza](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287)
-
-## Tecnico
-
-- [Note sulla versione 2.4.x](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)
-- [Panoramica del processo di aggiornamento](../overview.md)
-- [Disponibilità software](https://devdocs.magento.com/release/availability.html)
-- [Sviluppo incompatibile con il passato](https://devdocs.magento.com/contributor-guide/backward-compatible-development/index.html)
-- [Accesso ai pre-release](https://support.magento.com/hc/en-us/articles/360034120932)
-- [Schema delle versioni](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/versioning/)
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Note sulla versione e annunci</strong>
+        <ul>
+            <li><a href="https://blog.adobe.com/">Blog di Adobe</a></li>
+            <li><a href="https://support.magento.com/hc/en-us">Adobe Help Center</a></li>
+            <li><a href="https://helpx.adobe.com/security/products/magento/apsb22-12.html">Bollettino sulla sicurezza di Adobe</a></li>
+            <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
+            <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">Note sulla versione</a></li>
+            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Portale dei partner di soluzioni</a> (per i partner con un login valido)</li>
+          </ul>
+        </td>
+      <td><strong>Strumenti</strong>
+        <ul>
+            <li><a href="https://magento.com/tech-resources/downloads">Download delle versioni di Adobe Commerce</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">Come utilizzare lo strumento di compatibilità per l'aggiornamento con il plugin PHPStorm</a> (video)</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en">Strumento di compatibilità per l’aggiornamento</a></li>
+            <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool canale di Slack</a></li>
+            <li><a href="https://devdocs.magento.com/quality-patches/usage.html">Strumento Patch di qualità</a></li>
+          </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Calendari e criteri</strong>
+        <ul>
+            <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace</a></li>
+            <li><a href="https://support.magento.com/hc/en-us/articles/4409421516301-FAQ-for-New-Adobe-Commerce-Release-Strategy-and-Updated-Lifecycle-Policy">Domande frequenti sulla nuova strategia di rilascio di Adobe Commerce, sui criteri del ciclo di vita aggiornati e sul supporto esteso</a></li>
+            <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">Criterio del ciclo di vita</a></li>
+            <li><a href="https://devdocs.magento.com/release/">Pianificazione del rilascio</a></li>
+            <li><a href="https://devdocs.magento.com/release/policy/">Tipi di rilascio</a></li>
+          </ul>
+        </td>
+      <td><strong>Funzionalità e servizi indipendenti</strong>
+        <ul>
+            <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
+            <li><a href="https://marketplace.magento.com/magento-live-search.html">Live Search</a></li>
+            <li><a href="https://marketplace.magento.com/magento-payment-services.html">Servizi di pagamento</a></li>
+            <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">Recommendations di prodotto</a></li>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">Aggiornamento di PWA Studi</a></li>
+          </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Risorse di aggiornamento</strong>
+        <ul>
+             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-upgrade-paths-2022.html?lang=en">Percorsi di aggiornamento consigliati 2022</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html">Guida all'aggiornamento 2.4</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Registrazione del workshop di aggiornamento tecnico</a></li>
+            <li><a href="https://support.magento.com/hc/en-us/articles/360034120932">Accesso ai pre-release</a></li>
+            <li><a href="https://devdocs.magento.com/release/beta-program.html">Panoramica del programma beta</a></li>
+            <li><a href="https://devdocs.magento.com/contributor-guide/backward-compatible-development/index.html">Sviluppo incompatibile con il passato</a></li>
+            <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html">Modifiche incompatibili con il passato</a></li>
+            <li><a href="https://support.magento.com/hc/en-us/articles/360057968951-Upgrade-plan-checklist-for-Adobe-Commerce">Elenco di controllo piano di aggiornamento</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/best-practices.html?lang=en">Best practice per l’aggiornamento</a></li>
+            <li><a href="https://devdocs.magento.com/release/availability.html">Disponibilità software</a></li>
+          </ul>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
