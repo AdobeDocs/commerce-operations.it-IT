@@ -1,13 +1,13 @@
 ---
 title: Obiettivi di Commerce
 description: Imposta obiettivi a breve e lungo termine per aiutare il tuo team ad allinearsi su obiettivi strategici e aumentare l'efficacia organizzativa.
-source-git-commit: 225ead587fb9f8fbb31442db6cc7ce1826ebb3e8
+exl-id: 749f6a9a-c06f-4f51-a19c-9e4181e002f7
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # Obiettivi
 

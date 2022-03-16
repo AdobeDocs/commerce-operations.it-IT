@@ -1,29 +1,29 @@
 ---
-title: Cloud Infrastructure Regions
-description: Esaminare i diagrammi che mostrano le aree AWS e Azure disponibili per Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: Aree dell'infrastruttura cloud
+description: Esaminare i diagrammi che mostrano le aree di AWS e Azure disponibili per Adobe Commerce.
+exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 0%
 
 ---
 
-
 # Aree cloud
 
 Le sezioni seguenti forniscono dettagli sulle diverse aree AWS e Azure disponibili per Adobe Commerce sull’infrastruttura cloud.
 
-## AWS
+## Aree geografiche AWS
 
-![Diagram showing AWS regions](../../../assets/playbooks/aws-regions.svg)
+![Diagramma che mostra le aree di AWS](../../../assets/playbooks/aws-regions.svg)
 
 >[!NOTE]
 >
-> Only on-premises in China and Russia.
+> Solo nei locali della Cina e della Russia.
 
 ## Zone di Azure
 
-![Diagram showing Azure regions](../../../assets/playbooks/azure-regions.svg)
+![Diagramma che mostra le aree di Azure](../../../assets/playbooks/azure-regions.svg)
 
 >[!NOTE]
 >

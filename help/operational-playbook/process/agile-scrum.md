@@ -1,13 +1,13 @@
 ---
 title: Metodologia Agile Scrum
 description: Scopri come combinare le metodologie Agile e Scrum per accelerare il progetto e-commerce.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 2c46acad-bff9-4a9f-acfb-622ffbf97288
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
 
 ---
-
 
 # Metodologia di Scrum per Agile
 
@@ -19,12 +19,12 @@ Scrum incoraggia i team auto-organizzati e cross-functional a risolvere i proble
 
 Nella metodologia Scrum, ci sono diverse riunioni che vengono utilizzate per promuovere la trasparenza e i progressi su un progetto di e-commerce:
 
-- **Pianificazione** Sprint (Sprint Planning) - Una riunione di pianificazione in cui i membri del team si riuniscono per decidere quanto lavoro può essere completato in uno sprint.
+- **Pianificazione della stampa**—Una riunione di pianificazione in cui i membri del team si riuniscono per decidere quanto lavoro può essere completato in uno sprint.
 
-- **Scacco** giornaliero: una riunione di 15 minuti che condivideva gli aggiornamenti su ciò su cui ogni membro del team sta lavorando.
+- **Scaglio giornaliero**- Un meeting di 15 minuti era solito condividere gli aggiornamenti su cosa stava lavorando ogni membro del team.
 
-- **Revisione** della stampa - Una riunione utilizzata per dimostrare l&#39;avanzamento dello sprint.
+- **Recensione Sprint**- Una riunione utilizzata per dimostrare i progressi compiuti dallo sprint.
 
-- **Sprint retrospettiva**: incontro utilizzato per riflettere sullo sprint precedente e per identificare le opportunità di miglioramento.
+- **Sprint retrospettivo**- Una riunione che ha riflettuto sulla corsa precedente e per individuare le opportunità di miglioramento.
 
 Alla fine di ogni corsa, un incremento di valore (ad esempio nuove funzioni, correzioni di bug, aggiornamenti o aggiornamenti generali del codice) deve essere consegnato e reso disponibile ai clienti.

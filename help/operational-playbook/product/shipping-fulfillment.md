@@ -1,13 +1,13 @@
 ---
 title: Spedizione e evasione
 description: Determina i metodi e i costi di spedizione prima di completare il progetto e-commerce.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 07d303ab-f229-4b6a-b35a-b6d2a3be89b3
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
 
 ---
-
 
 # Spedizione e realizzazione
 
@@ -19,27 +19,27 @@ Un sacco di sforzi va a fornire ai clienti la migliore esperienza online. Dal pu
 
 La spedizione e l&#39;adempimento hanno alcuni fattori fondamentali che agiscono come base, tra cui:
 
-- **Metodi di spedizione e costi**: le aziende devono analizzare e suddividere l&#39;intero costo di spedizione e determinare se assorbire i costi di spedizione, trasferire i costi ai clienti o condividere i costi? In che modo l&#39;azienda fornirà offerte di spedizione o spedizione gratuite? Come verranno spediti i prodotti? Ci saranno più di un metodo di spedizione e costi di spedizione?
+- **Metodi e costi di spedizione**- Le aziende devono analizzare e suddividere l&#39;intero costo di spedizione e determinare se assorbire i costi di spedizione, trasferire i costi ai clienti o condividere i costi? In che modo l&#39;azienda fornirà offerte di spedizione o spedizione gratuite? Come verranno spediti i prodotti? Ci saranno più di un metodo di spedizione e costi di spedizione?
 
-- **Prodotto** - Ogni prodotto è diverso in termini di numero di articoli, peso, destinazione e durata. Le aziende devono analizzare questi dettagli per comprendere il costo totale della spedizione in quanto i diversi prodotti hanno costi di spedizione diversi.
+- **Prodotto**- Ogni prodotto è diverso in termini di numero di articoli, peso, destinazione e durata. Le aziende devono analizzare questi dettagli per comprendere il costo totale della spedizione in quanto i diversi prodotti hanno costi di spedizione diversi.
 
-- **Imballaggio** - Anche l&#39;imballaggio svolge un ruolo importante nella comprensione del metodo e del costo di spedizione. Ad esempio, il prodotto è fragile o è imballato come regalo?
+- **Pacchetto**- L&#39;imballaggio svolge anche un ruolo importante nella comprensione del metodo di spedizione e del costo. Ad esempio, il prodotto è fragile o è imballato come regalo?
 
-- **Stagione** - Quali cambiamenti devono essere introdotti durante le stagioni di picco, come la frenesia dei clic e i festival.
+- **Stagione**—Quali cambiamenti dovrebbero essere introdotti durante le stagioni di picco, come la frenesia dei clic e i festival.
 
-- **Vettori**: quale società di spedizione di terze parti si adatta meglio all&#39;azienda? Quali sono i servizi forniti dalle compagnie di navigazione? Qual è il costo?
+- **Vettori**- Quale società di spedizione di terze parti si adatta meglio al business? Quali sono i servizi forniti dalle compagnie di navigazione? Qual è il costo?
 
 ## Metodi di spedizione
 
 Prima che un&#39;azienda spedisca il proprio prodotto, l&#39;azienda deve decidere i metodi e i costi di spedizione. Sono disponibili varie opzioni per i metodi di spedizione, tra cui:
 
-- **Spedizione** gratuita: la fornitura di servizi di spedizione gratuiti ai clienti potrebbe essere la migliore esperienza del cliente, ma potrebbe non essere adatta all&#39;azienda.
+- **Spedizione gratuita**- Fornire la spedizione gratuita ai clienti potrebbe essere la migliore esperienza del cliente, ma potrebbe non soddisfare il business.
 
-- **Tariffe** in tempo reale: la collaborazione con fornitori di spedizione terzi consente ai rivenditori di pubblicare il metodo di spedizione e i costi che la società di spedizione sta attualmente addebitando. Questo consente ai clienti di scegliere il metodo di spedizione preferito.
+- **Tassi in tempo reale**- La collaborazione con fornitori di spedizione terzi consente ai rivenditori di pubblicare il metodo di spedizione e i costi che la società di spedizione sta attualmente addebitando. Questo consente ai clienti di scegliere il metodo di spedizione preferito.
 
-- **Tariffa** piatta - Una delle opzioni di spedizione più popolari. Il trucco è garantire che i rivenditori non sovraccarichino o non sovraccarichino i clienti. Questo funziona anche se i rivenditori hanno un prodotto standard ma possono diventare complicati se i rivenditori hanno una varietà di prodotti.
+- **Tariffa forfettaria**- Una delle opzioni di spedizione più popolari. Il trucco è garantire che i rivenditori non sovraccarichino o non sovraccarichino i clienti. Questo funziona anche se i rivenditori hanno un prodotto standard ma possono diventare complicati se i rivenditori hanno una varietà di prodotti.
 
-- **Spedizione gratuita oltre un importo**: i rivenditori possono fornire la spedizione gratuita quando il cliente acquista oltre un certo importo. I rivenditori devono calcolare tale importo per fornire questo servizio.
+- **Spedizione gratuita per un importo**- I rivenditori possono fornire la spedizione gratuita quando il cliente acquista oltre un determinato importo. I rivenditori devono calcolare tale importo per fornire questo servizio.
 
 La spedizione e l&#39;esecuzione hanno richiesto il coordinamento del team sia internamente che esternamente. Una strategia di spedizione e realizzazione deve essere condivisa con l&#39;intera organizzazione in modo che siano allineate. Ad esempio, se il team Marketing vuole inviare una promozione che include la spedizione gratuita, deve allinearla con la strategia di spedizione e di evasione e con il team per eliminare qualsiasi esperienza negativa del cliente.
 

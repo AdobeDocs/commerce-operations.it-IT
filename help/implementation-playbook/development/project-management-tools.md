@@ -1,17 +1,17 @@
 ---
 title: Strumenti di gestione dei progetti
 description: Scegli gli strumenti consigliati per la gestione dei progetti per l’implementazione di Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # Strumenti di gestione dei progetti
 
-Uscire dall&#39;attuale ambiente Commerce Adobe, ma altrettanto importante, sono gli strumenti e le soluzioni che rendono la collaborazione e l&#39;intero processo di sviluppo il più semplice possibile.
+Il passaggio dall’ambiente Adobe Commerce attuale, ma ugualmente importante, sono gli strumenti e le soluzioni che rendono la collaborazione e l’intero processo di sviluppo il più semplice possibile.
 
 La tabella seguente include gli strumenti consigliati per la gestione dei progetti:
 

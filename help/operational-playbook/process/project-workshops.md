@@ -1,13 +1,13 @@
 ---
 title: Workshop sui progetti
 description: Scopri i diversi tipi di workshop di gestione comuni ai progetti e-commerce.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 72e465a0-b965-46a7-b0d0-0ed8a59a4bab
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 0%
 
 ---
-
 
 # Workshop comuni sui progetti
 
@@ -40,7 +40,7 @@ In questo passaggio, il project manager (e a volte alcuni membri del team) si me
 
 ### Partecipazione
 
-È essenziale delineare i partecipanti per il lancio del progetto. Avere un grande team che includa tutti gli sviluppatori e gli utenti complicherà solo il calcio d&#39;inizio. È importante chiamare i principali soggetti interessati dal lato client, come gli sponsor del progetto, livello C e project leader. Dal lato del team del progetto, includi il project manager, l’architetto funzionale, l’architetto tecnico e il lead di coinvolgimento.
+È essenziale delineare i partecipanti per il lancio del progetto. Avere un grande team che include tutti gli sviluppatori e gli utenti complicherà solo il calcio d&#39;inizio. È importante chiamare i principali soggetti interessati dal lato client, come gli sponsor del progetto, livello C e project leader. Dal lato del team del progetto, includi il project manager, l’architetto funzionale, l’architetto tecnico e il lead di coinvolgimento.
 
 ### Argomenti da includere
 

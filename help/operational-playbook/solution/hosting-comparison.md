@@ -1,13 +1,13 @@
 ---
 title: Confronto dell’hosting di Commerce
 description: Prendi la decisione migliore sull’hosting per il tuo progetto e-commerce esaminando questa tabella di confronto.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 8d1f0b85-2874-4a4b-9fae-1fb367a7f85e
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
 
 ---
-
 
 # Cloud vs on-premise
 
@@ -108,7 +108,7 @@ La tabella seguente illustra i vantaggi e gli svantaggi delle soluzioni cloud ri
             <td>Le competenze in materia di infrastrutture e applicazioni sono immediatamente disponibili</td>
             <td>È necessario un team IT dedicato, soprattutto quando le applicazioni sono personalizzate per soddisfare le esigenze specifiche di un'organizzazione.</td>
             <td>La cautela nella scalabilità inerente alle implementazioni cloud consente al supporto IT di gestire di più con meno tempo e fatica.</td>
-            <td>La curva di apprendimento per il cloud è significativa e il personale adeguatamente formato è costoso</td>
+            <td>La curva di apprendimento per il cloud è significativa e personale adeguatamente formato sono costosi</td>
         </tr>
     </tbody>
 </table>

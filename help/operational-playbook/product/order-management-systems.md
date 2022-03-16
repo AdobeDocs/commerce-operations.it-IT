@@ -1,13 +1,13 @@
 ---
 title: Sistemi di gestione degli ordini
 description: Completa il progetto e-commerce con un sistema per la creazione di pacchetti, la spedizione e i resi.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 2a5f19fa-e8fe-452b-9ab6-65428dda691d
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
 
 ---
-
 
 # Sistema di gestione degli ordini (OMS)
 
@@ -17,15 +17,15 @@ Un e-commerce OMS è il sistema di back-end responsabile della gestione degli or
 
 Un sistema OMS fornisce integrazione e automazione attraverso il percorso di ordini cliente nel back-end, che consente ai retailer di fornire esperienze cliente migliori. Un OMS aiuta i rivenditori a elaborare gli ordini provenienti da più canali e a facilitare l&#39;imballaggio e la spedizione in luoghi diversi, fornendo al contempo ai clienti aggiornamenti in tempo reale attraverso diversi supporti.
 
-Un OMS è importante per un sito di e-commerce perché aiuta i marchi a crescere. I clienti hanno aspettative elevate, il che non lascia spazio a errori. Alcuni dei motivi per cui un OMS è essenziale includono:
+Un OMS è importante per un sito di e-commerce perché aiuta le marche a crescere. I clienti hanno aspettative elevate, il che non lascia spazio a errori. Alcuni dei motivi per cui un OMS è essenziale includono:
 
-- **Consegna** più rapida: in un&#39;era di spedizione il giorno successivo o 2 giorni, le aziende devono cercare modi per spingere gli ordini fuori più velocemente, dato che la finestra per il completamento degli ordini sta diventando più stretta. Un OMS viene immediatamente notificato quando viene effettuato un ordine e l&#39;OMS può scegliere il deposito più vicino alla destinazione dell&#39;ordine per aiutare a velocizzare la consegna. L&#39;OMS invia al team magazzino le informazioni di ordine automatizzate per preparare e imballare l&#39;ordine da spedire utilizzando un metodo di spedizione conveniente.
+- **Fornisce una consegna più veloce**- In un&#39;era di spedizione il giorno successivo o 2 giorni, le aziende devono cercare modi per spingere i loro ordini fuori più velocemente, in quanto la finestra per completare gli ordini sta diventando più stretta. Un OMS viene immediatamente notificato quando viene effettuato un ordine e l&#39;OMS può scegliere il deposito più vicino alla destinazione dell&#39;ordine per aiutare a velocizzare la consegna. L&#39;OMS invia al team magazzino le informazioni di ordine automatizzate per preparare e imballare l&#39;ordine da spedire utilizzando un metodo di spedizione conveniente.
 
-- **Errori** limitati: Un OMS aiuta a ridurre gli errori umani. Questi errori possono richiedere molto tempo e essere costosi. Un OMS notifica al team quando i livelli di inventario sono bassi, quando un prodotto non vende, o quale prodotto ha il più alto tasso di rendimento. Questo aiuta l&#39;azienda a correggere gli errori di spedizione e analizzare il motivo dei resi.
+- **Errori limitati**: Un OMS aiuta a ridurre gli errori umani. Questi errori possono richiedere molto tempo e essere costosi. Un OMS notifica al team quando i livelli di inventario sono bassi, quando un prodotto non vende, o quale prodotto ha il più alto tasso di rendimento. Questo aiuta l&#39;azienda a correggere gli errori di spedizione e analizzare il motivo dei resi.
 
-- **Aumento della scalabilità**: un OMS si adatta in base alle esigenze dell&#39;azienda, a differenza dei vecchi sistemi manuali. Il software OMS offre alle imprese la possibilità di scalare con il mercato.
+- **Aumento della scalabilità**- Un OMS scala in base alle esigenze dell&#39;azienda, a differenza dei vecchi sistemi manuali. Il software OMS offre alle imprese la possibilità di scalare con il mercato.
 
-- **Possibilità** multi-canale: in un&#39;era di vendite multicanale su siti web, mercati o partnership (Facebook e Instagram), gli ordini di tracciamento possono essere complessi perché vengono spediti in più posizioni utilizzando uno o più metodi di spedizione. Un OMS lo unisce e aumenta la customer experience.
+- **Possibilità multi-canale**- In un’era di vendite multicanale su siti web, mercati o partnership (Facebook e Instagram), gli ordini di tracciamento possono essere complessi perché vengono spediti in più posizioni utilizzando uno o più metodi di spedizione. Un OMS lo unisce e aumenta la customer experience.
 
 ## Funzioni principali
 

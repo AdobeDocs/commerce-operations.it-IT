@@ -3,7 +3,7 @@ title: Applica patch
 description: Scopri i metodi per applicare patch a un progetto Adobe Commerce o Magenti Open Source.
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---

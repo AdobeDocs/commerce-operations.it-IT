@@ -3,7 +3,7 @@ title: Ripristino dopo un errore di aggiornamento del modulo
 description: Risolvere i problemi relativi all’aggiornamento di Adobe Commerce o Magento Open Source dopo un errore di aggiornamento del modulo.
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---

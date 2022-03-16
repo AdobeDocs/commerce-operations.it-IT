@@ -3,7 +3,7 @@ title: Moduli ed estensioni di aggiornamento
 description: Utilizza l’interfaccia a riga di comando e il Compositore per aggiornare i moduli e le estensioni Adobe Commerce e Magenti Open Source.
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '96'
 ht-degree: 0%
 
 ---

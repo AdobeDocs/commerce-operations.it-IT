@@ -1,13 +1,13 @@
 ---
 title: Servizio clienti
 description: Un buon servizio clienti può essere un vantaggio competitivo nello spazio e-commerce.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: ef798b1b-96d0-493e-b125-1d67aa7644a1
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
 
 ---
-
 
 # Servizio clienti
 
@@ -17,11 +17,11 @@ Ecommerce è basato su tecnologia digitale e l&#39;unico team che interagisce co
 
 I retailer devono essere proattivi in termini di servizio al cliente perché non solo è in gioco il marchio, ma soprattutto la sua fedeltà al cliente. Affinché i retailer possano offrire la migliore esperienza ai clienti, esistono alcune best practice che possono seguire:
 
-- **Canale** multi-supporto: la fornitura di servizi tramite e-mail o solo telefono non è sufficiente nell’era odierna. Il servizio clienti deve essere fornito su vari canali, come chat dal vivo, e-mail, chiamate telefoniche, social media e o messaggi di testo. Ognuno di questi ha i propri pro e contro che i retailer devono analizzare.
+- **Canale multi-supporto**- La fornitura di servizi solo tramite e-mail o telefono non è sufficiente nell’era odierna. Il servizio clienti deve essere fornito su vari canali, come chat dal vivo, e-mail, chiamate telefoniche, social media e o messaggi di testo. Ognuno di questi ha i propri pro e contro che i retailer devono analizzare.
 
-- **Servizio** personalizzato: tutte le attività dei clienti vengono eseguite online, che i rivenditori possono monitorare per comprendere il comportamento dei clienti. Ad esempio, quando un cliente si rivolge al team del Servizio clienti, il team disporrà in anticipo delle informazioni necessarie, quali nome, indirizzo e-mail, cronologia degli ordini e restituzioni. Questo aiuta il Servizio Clienti a fornire un servizio rapido e preciso e fornisce anche ai clienti un servizio personalizzato.
+- **Servizio personalizzato**- Tutte le attività dei clienti vengono svolte online, che i rivenditori possono monitorare per comprendere il comportamento dei clienti. Ad esempio, quando un cliente si rivolge al team del Servizio clienti, il team disporrà in anticipo delle informazioni necessarie, quali nome, indirizzo e-mail, cronologia degli ordini e restituzioni. Questo aiuta il Servizio Clienti a fornire un servizio rapido e preciso e fornisce anche ai clienti un servizio personalizzato.
 
-- **Self-service** (self-service) - È anche possibile fornire ai clienti self-service, ad esempio domande frequenti, informativa sulla privacy, termini e condizioni e forum.
+- **Self-service**- I clienti possono anche essere forniti di self-service, come domande frequenti, informativa sulla privacy, termini e condizioni e forum.
 
 I rivenditori devono mettersi nei panni del cliente per comprendere il loro problema e fornire la migliore esperienza del cliente. L’esperienza del cliente mantiene il cliente fedele e promuove il marchio.
 

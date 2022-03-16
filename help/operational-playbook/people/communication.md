@@ -1,13 +1,13 @@
 ---
 title: Processo di comunicazione e strumenti
 description: Utilizza i processi e gli strumenti di comunicazione che soddisfano le esigenze del tuo team e-commerce.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: e7eca8f1-aec0-4a45-8b57-2851b2df2de0
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 0%
 
 ---
-
 
 # Comunicazione
 

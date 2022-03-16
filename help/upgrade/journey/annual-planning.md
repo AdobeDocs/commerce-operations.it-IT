@@ -3,7 +3,7 @@ title: Pianificazione annuale degli aggiornamenti
 description: Rivedi i suggerimenti per la creazione di un piano di aggiornamento annuale per il tuo progetto Adobe Commerce o Magenti Open Source.
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---

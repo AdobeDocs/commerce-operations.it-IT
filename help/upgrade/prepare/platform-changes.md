@@ -3,7 +3,7 @@ title: Modifiche alla piattaforma di revisione
 description: Acquisisci familiarità con le principali modifiche apportate alla piattaforma in una versione durante la preparazione all’aggiornamento del progetto Adobe Commerce o Magenti Open Source.
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---

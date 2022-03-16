@@ -1,13 +1,13 @@
 ---
 title: Strategia dei contenuti
 description: Sfrutta i contenuti per creare campagne coinvolgenti che coinvolgano i tuoi clienti.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: fabfed9e-63ff-4be3-8bb7-192ccdb9dde6
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # Strategia dei contenuti
 
@@ -37,10 +37,10 @@ Che tu stia gestendo contenuti web di base o contenuti da rilasciare sui social 
 
 Adobe Experience Manager combina diverse funzioni a livello di infrastruttura e di applicazione in un unico pacchetto integrato. L&#39;offerta riguarda:
 
-- **Siti** - Crea e distribuisci rapidamente siti web e app mobili pertinenti e aggiorna i contenuti in qualsiasi momento senza sovraccaricare il reparto IT.
-- **Risorse** - Gestisci facilmente immagini, video e altre risorse su ogni canale digitale per fornire esperienze cliente personalizzate.
-- **Community** - Crea comunità fiorenti e conversazioni coinvolgenti in tutte le tue proprietà social in modo da ispirare nuovi livelli di apprendimento e fedeltà dei clienti.
-- **Forms** - Integra i moduli a livello aziendale nei tuoi siti web ed esperienze mobili e semplifica la creazione dei moduli e il completamento delle transazioni.
-- **App** - Crea e distribuisci app mobili con una soluzione che colma il divario tra gli addetti al marketing e l’IT in modo che gli addetti al marketing possano aggiornare facilmente i contenuti (anche dopo il lancio).
+- **Sites**- Crea e distribuisci rapidamente siti web e app mobili pertinenti e aggiorna i contenuti in qualsiasi momento senza sovraccaricare il reparto IT.
+- **Risorse**- Gestisci facilmente immagini, video e altre risorse su ogni canale digitale per fornire esperienze cliente personalizzate.
+- **Community**- Crea comunità fiorenti e conversazioni coinvolgenti in tutte le tue proprietà sociali in modo da ispirare nuovi livelli di apprendimento e fedeltà dei clienti.
+- **Forms**: è possibile integrare moduli a livello aziendale nei siti web e nelle esperienze mobile, semplificare la creazione dei moduli e il completamento delle transazioni.
+- **App**- Crea e distribuisci app mobili con una soluzione che colma il divario tra gli addetti al marketing e l’IT in modo che gli addetti al marketing possano aggiornare facilmente i contenuti (anche dopo il lancio).
 
 ![Diagramma del framework della strategia dei contenuti](../../assets/playbooks/content-strategy-framework2.png)

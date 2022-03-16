@@ -1,13 +1,13 @@
 ---
 title: Servizi software Commerce
-description: Scopri le differenze chiave tra le applicazioni SaaS e le altre opzioni di e-commerce open source (on-premise).
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+description: Scopri le differenze chiave tra le applicazioni SaaS e altre opzioni di e-commerce open source (on-premise) self-hosting.
+exl-id: 9be70e1e-76d5-4696-862e-f2b71eb1abb0
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
 
 ---
-
 
 # Software-as-a-service (SaaS)
 
@@ -49,5 +49,4 @@ Anche se le piattaforme di e-commerce sono al centro della maggior parte delle a
 
 Consigliamo ai retailer di utilizzare i migliori sistemi di riproduzione, il che significa che utilizzano il sistema migliore per ogni parte della loro attività. Nella maggior parte dei casi, la scelta di una piattaforma per eseguire tutti gli aspetti e le funzioni della tua attività non soddisfa le tue aspettative.
 
-Al contrario, le imprese dovrebbero essere in grado di utilizzare un numero qualsiasi di sistemi per
-i loro sistemi ERP, POS, 3PL ed e-commerce e integrarli per sincronizzare l&#39;inventario, gli ordini, i clienti, gli articoli e i dati di spedizione/tracking automatizzano i tuoi processi aziendali. Le piattaforme SaaS basate su cloud spesso soddisfano questi requisiti aziendali con flessibilità e facilità.
+Al contrario, le aziende dovrebbero essere in grado di utilizzare un numero qualsiasi di sistemi per i loro sistemi ERP, POS, 3PL ed e-commerce e integrare tali sistemi per sincronizzare inventario, ordini, clienti, articoli e dati di spedizione/tracking automatizzano i processi aziendali. Le piattaforme SaaS basate su cloud spesso soddisfano questi requisiti aziendali con flessibilità e facilità.

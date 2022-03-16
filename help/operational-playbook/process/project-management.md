@@ -1,13 +1,13 @@
 ---
 title: Gestione dei progetti
 description: Applica framework noti per gestire il progetto e-commerce.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 514e2317-f409-4079-bdee-1596f6635467
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
 
 ---
-
 
 # Gestione dei progetti
 
@@ -36,17 +36,17 @@ Scrum aiuta a gestire i cambiamenti durante il progetto, consente ai team di mos
 
 Un piano di base per la gestione del progetto e-commerce include:
 
-- **Analisi** (Analysis) - Nella fase iniziale di un progetto, l&#39;azienda deve condurre analisi, incluse analisi aziendali di mercato e concorrenti per comprendere i punti di forza e le debolezze dell&#39;organizzazione.
+- **Analisi**- Nella fase iniziale di un progetto, l&#39;azienda deve condurre analisi, anche di mercato e di business analysis per comprendere i punti di forza e le debolezze dell&#39;organizzazione.
 
-- **Requisiti** - Definisci i requisiti dettagliati di ciò che l&#39;organizzazione desidera al termine del progetto in termini di miglioramento delle competenze esistenti e/o implementazione di nuove funzionalità e/o integrazioni.
+- **Requisiti**- Definisci i requisiti dettagliati di ciò che l&#39;organizzazione desidera al termine del progetto in termini di miglioramento delle competenze esistenti e/o implementazione di nuove funzionalità e/o integrazioni.
 
-- **Provider** di terze parti: in questa fase, mappare le integrazioni di terze parti richieste (ad esempio, pagamento, spedizione, valutazioni e revisioni).
+- **Provider di terze parti**—In questa fase, mappa le integrazioni necessarie di terze parti (ad esempio, pagamento, spedizione, valutazioni e revisioni).
 
-- **Design** - Requisiti specifici di progettazione Brainstorm per i modelli e il brand book dell&#39;azienda.
+- **Progettazione**- Requisiti specifici di progettazione Brainstorm per i modelli e il brand book dell&#39;azienda.
 
-- **Migrazione** - Pianifica i passaggi per la migrazione di contenuto e dati.
+- **Migrazione**- Pianifica i passaggi per la migrazione di contenuto e dati.
 
-- **Piattaforma di e-commerce** - Analizza e finalizza la piattaforma necessaria all&#39;azienda per soddisfare i requisiti.
+- **Piattaforma di e-commerce**- Analizzare e finalizzare la piattaforma necessaria per soddisfare i requisiti aziendali.
 
 ## Best practice
 

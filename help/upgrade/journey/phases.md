@@ -3,7 +3,7 @@ title: Fasi Percorso di aggiornamento
 description: Scopri le diverse fasi del percorso di aggiornamento per i progetti Adobe Commerce e Magenti Open Source.
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '57'
 ht-degree: 0%
 
 ---

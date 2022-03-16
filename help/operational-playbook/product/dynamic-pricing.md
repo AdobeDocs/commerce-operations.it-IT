@@ -1,13 +1,13 @@
 ---
 title: Gestione dinamica dei prezzi
 description: Ottenere un vantaggio competitivo creando una strategia per modificare dinamicamente i prezzi dei prodotti in base alle condizioni di mercato.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 913dba96-d939-4e9a-b382-f22c6669fed1
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
 
 ---
-
 
 # Gestione dinamica dei prezzi
 
@@ -15,11 +15,11 @@ La dinamica dei prezzi è una strategia di prezzo reattiva in cui il prezzo camb
 
 Sono tre i fattori che determinano i prezzi dinamici, tra cui:
 
-- **Settore** - I rivenditori devono verificare quale sia il prezzo più base di un prodotto tra gli altri marchi.
+- **Industria**- I rivenditori devono verificare qual è il prezzo più base di un prodotto tra gli altri marchi.
 
-- **Mercato** - Qual è l&#39;attuale offerta e domanda? Qual è la domanda e l&#39;offerta previste?
+- **Mercato**- Qual è l&#39;attuale offerta e domanda? Qual è la domanda e l&#39;offerta previste?
 
-- **Clienti**: qual è il comportamento di acquisto del cliente? Qual è il prezzo che il cliente è disposto a pagare per un prodotto.
+- **Clienti**- Qual è il comportamento di acquisto del cliente? Qual è il prezzo che il cliente è disposto a pagare per un prodotto.
 
 Quando si lavora a una strategia di prezzi dinamica, è necessario considerare ogni aspetto.
 

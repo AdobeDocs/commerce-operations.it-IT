@@ -1,13 +1,13 @@
 ---
 title: Flussi di pagamento e processo
 description: Migliora i tassi di conversione offrendo ai tuoi clienti un’esperienza di checkout senza soluzione di continuità.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
 
 ---
-
 
 # Flussi di pagamento e processo
 
@@ -68,7 +68,7 @@ Non forzare un tipo di opzione per l&#39;utente.
 
 I rivenditori devono fornire diversi metodi di spedizione per soddisfare le esigenze dei diversi clienti.
 
-Oltre alle opzioni di pagamento, i rivenditori possono anche fornire opzioni come [cliccare e raccogliere](click-collect.md).
+Oltre alle opzioni di pagamento, i rivenditori possono anche fornire opzioni come [fare clic e raccogliere](click-collect.md).
 
 ## Dettagli di pagamento
 

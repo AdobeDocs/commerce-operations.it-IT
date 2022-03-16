@@ -1,13 +1,13 @@
 ---
 title: Gateway di pagamento
 description: Scegli un provider di gateway dei pagamenti per il progetto e-commerce in base alle esigenze della tua azienda.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: eab50191-0744-41da-99ba-2e06ea61da27
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # Gateway di pagamento
 
@@ -42,8 +42,7 @@ Quando un&#39;azienda decide di integrare un gateway di pagamento con la propria
 
 Le aziende B2B e B2C hanno sistemi di pagamento simili, ma le aziende B2B hanno più regole, regolamenti e processi. Le imprese B2B tendono a trattare in volumi maggiori rispetto alle imprese B2C.
 
-I clienti B2C acquistano prodotti o servizi per uso individuale. Di solito i clienti pagano lo stesso prezzo degli altri clienti e non vi è alcuna contrattazione in questione. I clienti B2B includono vari
-le parti interessate, il che rende l&#39;approvazione più complessa e costosa.
+I clienti B2C acquistano prodotti o servizi per uso individuale. Di solito i clienti pagano lo stesso prezzo degli altri clienti e non vi è alcuna contrattazione in questione. I clienti B2B includono vari soggetti interessati, il che rende l’approvazione più complessa e costosa.
 
 I clienti B2B hanno ordini e requisiti diversi, che devono essere elaborati e approvati dal rappresentante commerciale o un rappresentante commerciale deve essere coinvolto quando un cliente acquista online utilizzando una richiesta di offerta (RFP) o di ordine di acquisto (PO).
 

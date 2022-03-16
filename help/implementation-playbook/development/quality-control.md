@@ -1,15 +1,15 @@
 ---
 title: Controllo qualità
-description: Learn about Adobe Commerce quality control processes related to implementation projects.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Scopri i processi di controllo della qualità di Adobe Commerce relativi ai progetti di implementazione.
+exl-id: 0eb62b24-21f6-4cec-8ef9-eeaa1ee6ae52
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
 
 ---
 
-
-# Quality control process and tools
+# Processi e strumenti di controllo della qualità
 
 ![Diagramma del processo di controllo della qualità](../../assets/playbooks/quality-control-diagram.svg)
 
@@ -35,24 +35,24 @@ Il processo di controllo della qualità del diagramma precedente può essere des
     <td></td>
     <td></td>
     <td></td>
-    <td>Create test specifications (test cases/test scenarios)</td>
+    <td>Creare specifiche di test (casi di test/scenari di test)</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
     <td></td>
-    <td>Prepare and acquire test data</td>
+    <td>Preparare e acquisire i dati dei test</td>
   </tr>
   <tr>
     <td></td>
-    <td>Test Analysis and Design</td>
+    <td>Analisi e progettazione del test</td>
     <td>Rivedere e contribuire ai piani di prova</td>
     <td>Avviare la preparazione, le specifiche</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td>Create test specifications (test cases/test scenarios)</td>
+    <td>Creare specifiche di test (casi di test/scenari di test)</td>
     <td>Scrivere o rivedere una strategia di test per il progetto</td>
   </tr>
   <tr>
@@ -63,9 +63,9 @@ Il processo di controllo della qualità del diagramma precedente può essere des
   </tr>
   <tr>
     <td>Test interni</td>
-    <td>Test Implementation and Execution</td>
-    <td>Implements tests, execute and log the tests</td>
-    <td>Monitoring implementation and execution of the tests</td>
+    <td>Esecuzione del test</td>
+    <td>Implementa i test, esegue e registra i test</td>
+    <td>Monitoraggio dell’attuazione e dell’esecuzione dei test</td>
   </tr>
   <tr>
     <td></td>
@@ -82,7 +82,7 @@ Il processo di controllo della qualità del diagramma precedente può essere des
   <tr>
     <td></td>
     <td></td>
-    <td>Re-testing (confirmation testing) after bug fixing</td>
+    <td>Nuova verifica (test di conferma) dopo la correzione dei bug</td>
     <td></td>
   </tr>
   <tr>
@@ -95,18 +95,18 @@ Il processo di controllo della qualità del diagramma precedente può essere des
     <td></td>
     <td></td>
     <td></td>
-    <td>Write test summary reports based on the information gathered during the test</td>
+    <td>Scrivi rapporti di riepilogo delle prove in base alle informazioni raccolte durante il test</td>
   </tr>
   <tr>
     <td>UAT</td>
     <td>UAT</td>
-    <td>Verify Customer Feedbacks or Change Requests (CRs)</td>
-    <td>Follow-up</td>
+    <td>Verifica dei feedback dei clienti o delle richieste di modifica (CR)</td>
+    <td>Seguito</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td>Perform re-testing and regression testing after changing the source code</td>
+    <td>Esegui nuovi test e test di regressione dopo aver modificato il codice sorgente</td>
     <td>Controllo</td>
   </tr>
   <tr>
@@ -116,7 +116,7 @@ Il processo di controllo della qualità del diagramma precedente può essere des
     <td></td>
   </tr>
   <tr>
-    <td>Maintenance</td>
+    <td>Manutenzione</td>
     <td>Manutenzione</td>
     <td>Revisione e contributo alle attività</td>
     <td>Revisione e stima del tempo per le attività</td>
@@ -125,7 +125,7 @@ Il processo di controllo della qualità del diagramma precedente può essere des
     <td></td>
     <td></td>
     <td>Creare/aggiornare specifiche di test</td>
-    <td>Follow-up test progress</td>
+    <td>Avanzamento del test di follow-up</td>
   </tr>
   <tr>
     <td></td>
@@ -136,22 +136,22 @@ Il processo di controllo della qualità del diagramma precedente può essere des
   <tr>
     <td></td>
     <td></td>
-    <td>Perform regression testing</td>
+    <td>Eseguire test di regressione</td>
     <td></td>
   </tr>
 </tbody>
 </table>
 
-Analogamente agli [strumenti](project-management-tools.md) identificati per il processo di sviluppo, abbiamo selezionato una manciata di soluzioni e piattaforme di scelta che utilizziamo spesso per i test di controllo della qualità.
+Simile al [strumenti](project-management-tools.md) abbiamo identificato per il processo di sviluppo, abbiamo selezionato una manciata di soluzioni e piattaforme di scelta che spesso utilizziamo per i test di controllo della qualità.
 
 | Finalità | Strumento |
 |---------------------------|---------------------------------------------------|
-| Website performance index | Google PageSpeed, Webpagetest, JMeter |
-| Sicurezza | Adobe Commerce Security Scan Tool, SonarQube, ZAP |
-| Issue management system | JIRA |
+| Indice delle prestazioni del sito web | Google PageSpeed, Webpagetest, JMeter |
+| Sicurezza | Strumento di scansione della sicurezza Adobe Commerce, SonarQube, ZAP |
+| Sistema di gestione dei problemi | JIRA |
 | Test dell&#39;interfaccia utente | Pixel perfetti, BrowserStack |
 | Test API | Postman, SoapUI |
-| Automation testing | Selenium |
+| Test di automazione | Selenio |
 
 
 ## Indice delle prestazioni del sito web
@@ -170,9 +170,9 @@ SonarQube è utilizzato anche per l&#39;ispezione continua della qualità del co
 
 OWASPZAP (Zed Attack Proxy) è destinato ad essere utilizzato sia da coloro che sono nuovi per la sicurezza delle applicazioni, così come tester di penetrazione professionale. Alcune delle funzionalità integrate includono l&#39;intercettazione di server proxy, crawler web tradizionali e AJAX, scanner automatizzato, scanner passivo, navigazione forzata, Fuzzier, supporto WebSocket, linguaggi di script e supporto Plug-n-Hack.
 
-## UI testing
+## Test dell&#39;interfaccia utente
 
-Perfect Pixel consente agli sviluppatori e ai progettisti di markup di inserire una sovrapposizione immagine semitrasparente sopra l&#39;HTML sviluppato ed eseguire un confronto perfetto in pixel tra loro.
+Perfect Pixel consente agli sviluppatori e ai progettisti di markup di inserire una sovrapposizione immagine semitrasparente sopra il HTML sviluppato ed eseguire un confronto perfetto in pixel tra loro.
 
 BrowserStack è una piattaforma di test web e mobile cloud che consente agli sviluppatori di testare i propri siti web e applicazioni mobili su browser on-demand, sistemi operativi e dispositivi mobili reali.
 
@@ -180,8 +180,8 @@ BrowserStack è una piattaforma di test web e mobile cloud che consente agli svi
 
 Postman è la piattaforma di collaborazione per lo sviluppo delle API. Postman semplifica ogni fase della creazione di un’API e semplifica la collaborazione in modo da creare API migliori.
 
-SoapUI è un’applicazione di test del servizio Web open source per SOAP (Simple Object Access Protocol) e i trasferimenti dello stato di rappresentanza (REST). Its functionality covers web-service inspection; invoking, development, simulation, and mocking; functional testing; load and compliance testing.
+SoapUI è un’applicazione di test del servizio Web open source per SOAP (Simple Object Access Protocol) e i trasferimenti dello stato di rappresentanza (REST). La sua funzionalità riguarda l&#39;ispezione dei servizi web; invocare, sviluppare, simulare e deridere; prove funzionali; test di carico e conformità.
 
 ## Test di automazione
 
-Selenium is composed of several components (Selenium client API, Selenium WebDriver) with each taking on a specific role in aiding the development of web application test automation.
+Il selenio è composto da diversi componenti (API client Selenium, Selenium WebDriver), ciascuno dei quali assume un ruolo specifico nel contribuire allo sviluppo dell&#39;automazione dei test delle applicazioni web.

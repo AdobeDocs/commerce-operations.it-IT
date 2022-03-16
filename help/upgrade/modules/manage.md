@@ -3,7 +3,7 @@ title: Gestire moduli ed estensioni
 description: Utilizza l’interfaccia della riga di comando per abilitare, disabilitare e disinstallare Adobe Commerce e i moduli e le estensioni di Magento Open Source.
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---

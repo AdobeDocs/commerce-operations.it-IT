@@ -1,13 +1,13 @@
 ---
 title: Team di progetto
 description: Crea il team giusto per il tuo progetto e-commerce.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 57aee5ac-db27-4c2a-8e08-3e926d7658d3
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
 
 ---
-
 
 # Team di progetto
 
@@ -35,10 +35,10 @@ Ciascuno di questi ruoli è responsabile della pianificazione e dell’esecuzion
 
 Le organizzazioni tendono a trascurare le dipendenze esterne che svolgono direttamente o indirettamente un ruolo importante nel successo del progetto, tra cui:
 
-- **Magazzino team** - Se il sito web è attivo ma il personale del magazzino è limitato, ciò potrebbe ritardare l&#39;imballaggio e la spedizione. Ci potrebbe anche essere un problema di sistema nel magazzino che impedisce di tenere traccia degli ordini che potrebbe anche ritardare l&#39;imballaggio e la spedizione.
+- **Team magazzino**-Se il sito web è in funzione ma il personale nel magazzino è limitato, che potrebbe ritardare l&#39;imballaggio e la spedizione. Ci potrebbe anche essere un problema di sistema nel magazzino che impedisce di tenere traccia degli ordini che potrebbe anche ritardare l&#39;imballaggio e la spedizione.
 
-- **Team** del servizio clienti - Questo team è in contatto diretto con i clienti. Sono consapevoli dei punti critici per i clienti, ma in genere sono il team più sottovalutato di un&#39;organizzazione. Ad esempio, se esegui una nuova promozione sul tuo sito web e il team non lo sa, potrebbe non essere in grado di fornire ai clienti informazioni corrette o potrebbe non essere in grado di gestire il volume di chiamate se si tratta di un team ridotto. Questi esempi possono portare a un’esperienza negativa dei clienti.
+- **Team del servizio clienti**- Questo team è in contatto diretto con i clienti. Sono consapevoli dei punti critici per i clienti, ma in genere sono il team più sottovalutato di un&#39;organizzazione. Ad esempio, se esegui una nuova promozione sul tuo sito web e il team non lo sa, potrebbe non essere in grado di fornire ai clienti informazioni corrette o potrebbe non essere in grado di gestire il volume di chiamate se si tratta di un team ridotto. Questi esempi possono portare a un’esperienza negativa dei clienti.
 
-- **Marketing team** - I team di marketing gestiscono vendite, offerte, promozioni e campagne. Se inviano e-mail su un prodotto, ma non sono consapevoli che le azioni sono limitate, allora potrebbe creare una cattiva esperienza del cliente e ridurre il tasso di conversione.
+- **Team di marketing**: i team di marketing gestiscono vendite, offerte, promozioni e campagne. Se inviano e-mail su un prodotto, ma non sono consapevoli che le azioni sono limitate, allora potrebbe creare una cattiva esperienza del cliente e ridurre il tasso di conversione.
 
 Quando si configura il team di progetto, non solo è essenziale disporre delle persone corrette con le competenze necessarie, ma anche garantire che i team esterni siano informati e allineati per ottenere un risultato positivo.

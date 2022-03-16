@@ -1,13 +1,13 @@
 ---
 title: Ruoli e responsabilità
 description: Scopri i diversi ruoli e responsabilità coinvolti in un progetto e-commerce di successo.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 6e61dcce-ad71-4380-bae4-48be1a3d88b9
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 0%
 
 ---
-
 
 # Ruoli e responsabilità
 
@@ -130,12 +130,12 @@ Il team Contenuto si trova all’interno del team Marketing, del team E-commerce
 
 Il team dei contenuti è responsabile di:
 
-- **Organizzazione dei contenuti**: elementi, URL, navigazione e struttura delle pagine devono essere semplici e intuitivi. Se il sito è troppo complicato, allora i clienti si perdono.
+- **Organizzazione dei contenuti**—Gli elementi, gli URL, la navigazione e la struttura delle pagine devono essere semplici e intuitivi. Se il sito è troppo complicato, allora i clienti si perdono.
 
-- **Correzione di contenuti** interrotti: immagini interrotte, pagine, pagine mancanti, flusso di cassa interrotto e messaggi di errore fanno sì che i clienti abbandonino il sito e lasciino un’impressione negativa.
+- **Correzione di contenuti interrotti**- Immagini interrotte, pagine, pagine mancanti, flusso di cassa interrotto e messaggi di errore fanno sì che i clienti abbandonino il sito e lasciino un’impressione negativa.
 
-- **Aggiornamento del contenuto** - Il contenuto del sito web deve essere aggiornato. Se il sito è costituito da contenuto obsoleto, influisce sull’esperienza del cliente e aumenta il carico di lavoro per il team del Servizio clienti. Ad esempio, devono rispondere alle domande dei clienti alle quali i contenuti del sito web avrebbero dovuto dare risposta.
+- **Aggiornamento del contenuto**- Il contenuto del sito web deve essere aggiornato. Se il sito è costituito da contenuto obsoleto, influisce sull’esperienza del cliente e aumenta il carico di lavoro per il team del Servizio clienti. Ad esempio, devono rispondere alle domande dei clienti alle quali i contenuti del sito web avrebbero dovuto dare risposta.
 
-- **Semplificazione dei contenuti**: il team dei contenuti deve creare contenuti semplici e semplici da realizzare. Il linguaggio semplice funziona al meglio quando si interagisce con i clienti.
+- **Semplificazione del contenuto**- Il team dei contenuti deve creare contenuti semplici e semplici. Il linguaggio semplice funziona al meglio quando si interagisce con i clienti.
 
 Il team dei contenuti crea, testa, gestisce e ottimizza tutti i contenuti del sito web, il che porta al ROI.

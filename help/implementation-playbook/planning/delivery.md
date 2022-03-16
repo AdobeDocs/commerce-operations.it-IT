@@ -1,13 +1,13 @@
 ---
 title: Approccio di consegna e pianificazione
-description: Utilizza l’approccio consigliato per la pianificazione e la distribuzione dell’implementazione di Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Utilizza l’approccio consigliato per la pianificazione e la distribuzione dell’implementazione Adobe Commerce.
+exl-id: ee2918d6-0d97-4f02-8e8f-b88bc999cd22
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # Approccio di distribuzione e pianificazione
 
@@ -31,9 +31,9 @@ Questo approccio si articola nelle seguenti fasi:
 
 Il modello ibrido consente di sfruttare la potenza della metodologia Agile, mantenendo il target per la timeline, i costi e la qualità. L&#39;intero piano è suddiviso in due fasi distinte, seguite da attività di lancio, ottimizzazione e manutenzione.
 
-- **Ottenere l&#39;idea** corretta: questa è una fase di pre-implementazione per garantire che i requisiti, la progettazione e la soluzione tecnologica siano strategicamente, documentati e collaborino tra le parti interessate. Il backlog per l&#39;implementazione viene curato e costruito, vengono pianificati gli sprint di sviluppo e viene completata una strategia sequenziale per la creazione del prodotto.
+- **Ottenere l&#39;idea giusta**- Questa è una fase di pre-implementazione per garantire che i requisiti, la progettazione e la soluzione tecnologica siano strategicamente, documentati e collaborati tra le parti interessate. Il backlog per l&#39;implementazione viene curato e costruito, vengono pianificati gli sprint di sviluppo e viene completata una strategia sequenziale per la creazione del prodotto.
 
-- **Ottenere l&#39;idea corretta**: questa è la fase di implementazione per creare il prodotto in modo iterativo, testare accuratamente e rilasciarlo in modo appropriato. Il primo passo è quello di sviluppare il codice attraverso più sprint; ogni sprint contiene lo sviluppo e il test in-sprint, seguiti da test di integrazione del sistema, test di prestazioni e sicurezza, test di accettazione da parte dell&#39;utente e attività di rilascio.
+- **Ottenere l&#39;idea giusta**- Questa è la fase di implementazione per creare il prodotto in modo iterativo, testarlo accuratamente e rilasciarlo in modo appropriato. Il primo passo è quello di sviluppare il codice attraverso più sprint; ogni sprint contiene lo sviluppo e il test in-sprint, seguiti da test di integrazione del sistema, test di prestazioni e sicurezza, test di accettazione da parte dell&#39;utente e attività di rilascio.
 
 La pianificazione dei progetti è un&#39;attività critica. Inoltre, guida le parti interessate, i team, gli sponsor e i project manager su come monitorare, gestire e controllare le fasi del progetto. Aiuta inoltre a identificare gli obiettivi, evitare le scadenze mancanti, assegnare priorità alle attività essenziali, ridurre i rischi e fornire i risultati desiderati.
 

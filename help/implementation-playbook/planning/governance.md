@@ -1,69 +1,69 @@
 ---
 title: Governance dei progetti
-description: Apply our project governance recommendations to your Adobe Commerce implementation.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Applica i consigli sulla governance dei progetti all’implementazione di Adobe Commerce.
+exl-id: adf53a2a-1673-441a-84d3-4cdda47d6aa5
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
 
 ---
 
-
 # Governance dei progetti
 
 La governance dei progetti è una funzione di sorveglianza allineata alla struttura di governance dell’organizzazione e comprende il ciclo di vita del progetto. Fornisce al project manager e al team struttura, processi, modelli decisionali e strumenti per la gestione e il controllo del progetto, garantendo al contempo il successo della consegna del progetto. La governance dei progetti è un elemento cruciale, soprattutto per progetti complessi e strategici.
 
-Il modello di governance definisce, documenta e comunica pratiche personalizzate ed efficaci per fornire un metodo completo di controllo del progetto e fornire visibilità periodica a ogni livello per garantire il successo. Esso contiene un quadro decisionale; definisce ruoli, responsabilità e responsabilità per l&#39;esecuzione del progetto; e governa l&#39;efficacia. The governance structure rolls up from the execution team all the way to executive management, defining the activities, reporting, escalation, and information flow.
+Il modello di governance definisce, documenta e comunica pratiche personalizzate ed efficaci per fornire un metodo completo di controllo del progetto e fornire visibilità periodica a ogni livello per garantire il successo. Esso contiene un quadro decisionale; definisce ruoli, responsabilità e responsabilità per l&#39;esecuzione del progetto; e governa l&#39;efficacia. La struttura di governance si estende dal team di esecuzione fino alla gestione esecutiva, definendo le attività, il reporting, l’inoltro e il flusso di informazioni.
 
-![Project governance infographic](../../assets/playbooks/project-governance.svg)
+![Infografica della governance del progetto](../../assets/playbooks/project-governance.svg)
 
-A vari livelli, i team esaminano specifiche metriche di progetto e sprint per comprendere i progressi e intraprendere le azioni correttive necessarie. These sprint-level metrics can include the velocity and burndown of each sprint.
+A vari livelli, i team esaminano specifiche metriche di progetto e sprint per comprendere i progressi e intraprendere le azioni correttive necessarie. Queste metriche a livello di sprint possono includere la velocità e il raggruppamento di ogni sprint.
 
-## Regular meeting details
+## Dettagli delle riunioni regolari
 
 - Analisi trimestrale delle attività
 
    - Discutere le strategie per l&#39;aumento della crescita
 
-   - Highlight current success &amp; goals
+   - Evidenzia il successo e gli obiettivi attuali
 
-   - Align on desired outcomes for the coming quarters
+   - Allinea i risultati desiderati per i prossimi trimestri
 
 - Comitato direttivo mensile
 
    - Coordinare e rivedere lo stato di avanzamento del progetto
 
-   - Decision making on major impact items (if any)
+   - Decisioni sui principali elementi di impatto (se presenti)
 
-   - Dentsuen sures customer satisfaction and concerns are recorded and addressed
+   - Dentsusi assicura che la soddisfazione e i problemi dei clienti siano registrati e risolti
 
-- Weekly project committee
+- Comitato del progetto settimanale
 
-   - Decide on objectives, plan, organization for the week
+   - Decidere gli obiettivi, il piano, l&#39;organizzazione per la settimana
 
    - Decidere in base alle esigenze dell&#39;architettura
 
-   - Review &amp; act on project status reports
+   - Rivedi e agisci sui rapporti sullo stato del progetto
 
-   - Demos the platform and features
+   - Mostra la piattaforma e le funzioni
 
-   - Escalate requests/issues/suggestions
+   - Inoltrare richieste/problemi/suggerimenti
 
-- Daily meeting
+- Riunione giornaliera
 
-   - Discuss and follow up on action items, including current sprint/boards/outstanding tickets
+   - Discutere e dare seguito alle azioni, compresi gli sprint/bacheche/biglietti in sospeso
 
-   - Monitor project progress
+   - Monitorare l’avanzamento del progetto
 
-## Performance KPIs
+## KPI delle prestazioni
 
-Apart from the sprint metrics, it is also essential to measure project and quality performance KPIs. Not only does this help to ensure the level of quality throughout the plan, but it keeps the team on track and prevents the project from going off the rails.
+Oltre alle metriche di sprint, è anche essenziale misurare i KPI delle prestazioni del progetto e della qualità. Questo aiuta non solo a garantire il livello di qualità in tutto il piano, ma mantiene il team in pista e impedisce che il progetto scenda dalla rotaia.
 
 ## Storyboard e velocità
 
 ![Esempio di scheda Kanban](../../assets/playbooks/kanban-board-chart.svg)
 
-## Sprint and release burndown
+## Sprint e release burdown
 
 ![Esempio di grafico a discesa e rilascio](../../assets/playbooks/sprint-release-burndown.svg)
 
@@ -74,29 +74,29 @@ Le sfide o le modifiche si verificano per tutta la durata di un progetto. Dare l
   <tr>
     <th>Misurazione delle prestazioni chiave</th>
     <th>Unità di misura</th>
-    <th>Reported Metrics</th>
+    <th>Metriche segnalate</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Copertura del test</td>
     <td>%</td>
-    <td># of testable requirements covered by test cases VS Total of baselined testable requirements</td>
+    <td>Numero di requisiti testabili coperti dai casi di prova VS Totale dei requisiti testabili basati</td>
   </tr>
   <tr>
     <td>Densità del difetto</td>
     <td>%</td>
-    <td># of valid Defects found VS Total of Test cases executed</td>
+    <td>Numero di difetti validi trovati VS Totale dei casi di test eseguiti</td>
   </tr>
   <tr>
     <td>Dispersione di difetti a SIT/UAT/Produzione</td>
     <td>%</td>
-    <td>Defects reported in Production VS Defects reported in Production + Defects reported by QA+UAT</td>
+    <td>Difetti segnalati in Produzione VS Difetti segnalati in Produzione + Difetti segnalati da QA+UAT</td>
   </tr>
   <tr>
     <td>Efficacia del test</td>
     <td>%</td>
-    <td>Valid Defects raised/Valid Defects raised Rejected defects</td>
+    <td>Difetti validi sollevati/Difetti validi sollevati difetti rifiutati</td>
   </tr>
   <tr>
     <td>Qualità del codice</td>

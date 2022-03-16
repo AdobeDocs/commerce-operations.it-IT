@@ -1,13 +1,13 @@
 ---
 title: Risultati finali
 description: Scopri i diversi risultati finali associati a un’implementazione di Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
 
 ---
-
 
 # Risultati finali
 
@@ -19,7 +19,7 @@ Questo documento acquisisce le approvazioni dei requisiti aziendali per le speci
 
 ## Diagramma di sistema
 
-Un diagramma dei sistemi dovrebbe mostrare i dati (ad esempio, ordini, prodotti, integrazioni di terze parti) che scorrono da e verso i vari sistemi coinvolti (ad Adobe Commerce, OMS, ESP, fornitori di pagamenti).
+Un diagramma di sistema dovrebbe mostrare i dati (ad esempio, ordini, prodotti, integrazioni di terze parti) che scorrono da e verso i vari sistemi coinvolti (Adobe Commerce, OMS, ESP, fornitori di pagamenti).
 
 ## Specifiche tecniche
 
@@ -27,20 +27,20 @@ Questo documento definisce l’approccio di implementazione tecnica e i dettagli
 
 ## Mappatura dei dati
 
-Un documento di mappatura dei dati copre categorie, prodotti, raccomandazioni, dati di determinazione dei prezzi e inventario e include gli attributi necessari per mappare i prodotti e le categorie correnti nel catalogo di prodotti Commerce di Adobe.
+Un documento di mappatura dei dati copre categorie, prodotti, raccomandazioni, dati di determinazione dei prezzi e inventario e include gli attributi necessari per mappare i prodotti e le categorie correnti nel catalogo dei prodotti Adobe Commerce.
 
 ## Diagramma di flusso
 
-Mostra i flussi utente per i processi critici e/o unici, specialmente quando personalizzati in base al comportamento standard di Adobe Commerce.
+Mostra i flussi dell’utente per i processi critici e/o univoci, specialmente se personalizzati in base al comportamento standard di Adobe Commerce.
 
 ## Ambito di applicazione e fornitori
 
-Si tratta di un elenco completo di fornitori di terze parti con nome da integrare nella soluzione Commerce di Adobe.
+Si tratta di un elenco completo di fornitori di terze parti con nome da integrare nella soluzione Adobe Commerce.
 
 ## Dati del prodotto
 
-Revisione dei prodotti, dei prezzi e dei dati di inventario esistenti di un’organizzazione, nonché di un piano per mappare gli attributi di dati utilizzati per popolare Commerce di Adobe.
+Una revisione dei prodotti, dei prezzi e dei dati di inventario esistenti di un’organizzazione, nonché un piano per mappare gli attributi dei dati utilizzati per popolare Adobe Commerce.
 
 ## Piano di progetto
 
-Un piano di progetto descrive le attività e le tempistiche di alto livello associate all’iniziativa di implementazione, tra cui la sovrapposizione delle integrazioni e delle dipendenze di terze parti. Il piano può anche includere una matrice delle responsabilità, o [RACI](../planning/ownership.md), grafico che mostri chi è responsabile, responsabile, consultato e informato.
+Un piano di progetto descrive le attività e le tempistiche di alto livello associate all’iniziativa di implementazione, tra cui la sovrapposizione delle integrazioni e delle dipendenze di terze parti. Il piano può anche comprendere una matrice delle responsabilità, oppure [RACI](../planning/ownership.md), grafico che mostra chi è responsabile, responsabile, consultato e informato.

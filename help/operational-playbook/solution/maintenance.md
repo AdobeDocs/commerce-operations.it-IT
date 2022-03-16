@@ -1,13 +1,13 @@
 ---
 title: Manutenzione di un progetto Commerce
 description: Stabilire standard di alta qualità e istituire meccanismi per mantenere tali standard nel tempo.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 8f394ae0-02c4-4efc-a313-40b8c48aecbb
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
 
 ---
-
 
 # Aggiornamenti, backup e manutenzione
 
@@ -29,18 +29,17 @@ Effettuando l&#39;aggiornamento, sarai in grado di garantire il futuro della tua
 
 Ecco un rapido elenco di domande da porre durante la pianificazione dell’aggiornamento:
 
-- **Pulizia** del sito: cosa posso mantenere e cosa può cambiare? Quali nuove cose voglio implementare? Ad esempio, quali modifiche voglio apportare alla tassonomia e alla struttura del prodotto o al contenuto?
+- **Pulizia del sito**—Cosa posso tenere e cosa può cambiare? Quali nuove cose voglio implementare? Ad esempio, quali modifiche voglio apportare alla tassonomia e alla struttura del prodotto o al contenuto?
 
-- **Controllo** Analytics: quali sono i KPI correnti? Cosa mi dicono i miei dati su come migliorare il mio sito? Esistono nuovi KPI da implementare per il nuovo sito?
+- **Controllo di Analytics**- Quali sono i KPI correnti? Cosa mi dicono i miei dati su come migliorare il mio sito? Esistono nuovi KPI da implementare per il nuovo sito?
 
-- **Estensioni** - Sono ancora necessarie? Quali estensioni di terze parti soddisfano le mie esigenze?
+- **Estensioni**—Ne ho ancora bisogno? Quali estensioni di terze parti soddisfano le mie esigenze?
 
-- **Integrazioni** - Con quali sistemi di terze parti, come ERP e contabilità, devo integrare? Dispongono di connettori specifici o sono necessarie integrazioni personalizzate?
+- **Integrazioni**—Con quali sistemi di terze parti, come ERP e contabilità, devo integrare? Dispongono di connettori specifici o sono necessarie integrazioni personalizzate?
 
-- **Formazione**: il team di aggiornamento ha le conoscenze e la formazione necessarie? Cos&#39;è
-il mio piano di formare gli utenti finali su come utilizzare il nuovo amministratore prima che diventi attivo?
+- **Formazione**- Il team di aggiornamento ha le conoscenze e la formazione necessarie? Qual è il mio piano di formare gli utenti finali su come utilizzare il nuovo amministratore prima che diventi attivo?
 
-- **Team** di aggiornamento: chi è dedicato al progetto di aggiornamento (esperti interni ed esterni)? Hanno il sostegno necessario da parte della leadership e di altri team interni?
+- **Aggiorna team**- Chi è dedicato al progetto di aggiornamento (esperti interni ed esterni)? Hanno il sostegno necessario della leadership e di altre squadre interne?
 
 ## Domande comuni sull&#39;aggiornamento
 
@@ -55,7 +54,7 @@ R: Anche in questo caso, dipende dalla situazione attuale e dalle esigenze del n
 
 D: Sono disponibili le versioni Adobe Commerce 2 delle mie estensioni Adobe Commerce 1?
 
-R: Vengono coperte praticamente tutte le esigenze aziendali critiche. Dai contenuti e dalle personalizzazioni, dalla spedizione e dalla realizzazione all&#39;ottimizzazione del sito, abbiamo assistito a un notevole aumento del numero, e della diversità, delle estensioni nella Commerce Marketplace in quanto l&#39;adozione commerciale e la familiarità con i partner, Adobe Commerce è cresciuto.
+R: Vengono coperte praticamente tutte le esigenze aziendali critiche. Dai contenuti e dalle personalizzazioni, dalla spedizione e dalla realizzazione all’ottimizzazione del sito, abbiamo visto un aumento significativo del numero, e della diversità, delle estensioni nella Commerce Marketplace in quanto l’adozione commerciale di Adobe Commerce e la familiarità con i partner sono cresciute.
 
 Alcuni esempi di aziende leader a livello globale nel settore della tecnologia che hanno creato estensioni includono:
 
@@ -72,7 +71,7 @@ Alcuni esempi di aziende leader a livello globale nel settore della tecnologia c
 
 Inoltre, i controlli di qualità implementati per tutte le estensioni assicurano una qualità del prodotto costantemente elevata, quindi c&#39;è una probabilità molto elevata che l&#39;estensione o un&#39;alternativa di alta qualità all&#39;estensione sia già in Commerce Marketplace.
 
-Molti commercianti hanno scoperto che le funzionalità native di Adobe Commerce hanno ridotto la loro necessità e la loro dipendenza dalle estensioni, semplificando le operazioni di sviluppo e manutenzione e migliorando le prestazioni complessive. Se non lo hai già fatto, ti consigliamo di intraprendere una pianificazione completa degli aggiornamenti per scoprire questi tipi di opportunità.
+Molti commercianti hanno scoperto che le funzionalità native di Adobe Commerce hanno ridotto la loro necessità e dipendenza dalle estensioni, semplificando le operazioni di sviluppo e manutenzione e migliorando le prestazioni complessive. Se non lo hai già fatto, ti consigliamo di intraprendere una pianificazione completa degli aggiornamenti per scoprire questi tipi di opportunità.
 
 D: Cosa succede se le mie estensioni e integrazioni non sono compatibili con la piattaforma?
 

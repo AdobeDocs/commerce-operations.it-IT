@@ -3,7 +3,7 @@ title: Opzioni della modalità di manutenzione per l'aggiornamento
 description: 'Crea una pagina in modalità di manutenzione personalizzata che i clienti visualizzano sulla vetrina Adobe Commerce o Magenti Open Source durante l’esecuzione di un aggiornamento. '
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---

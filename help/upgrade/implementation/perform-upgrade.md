@@ -3,7 +3,7 @@ title: Eseguire un aggiornamento
 description: Segui questi passaggi per aggiornare un progetto Adobe Commerce o Magenti Open Source.
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Devi completare la [prerequisiti per l’aggiornamento](../prepare/prerequisites
 
    - `<product>` —(Obbligatorio) Il pacchetto da aggiornare. Per gli impianti locali, tale valore deve essere `product-community-edition` o `product-enterprise-edition`.
 
-   - `<version>` —(Obbligatorio) Versione di Adobe Commerce o Magento Open Source a cui si sta effettuando l&#39;aggiornamento. Ad esempio: `2.4.3`.
+   - `<version>` —(Obbligatorio) Versione di Adobe Commerce o Magento Open Source a cui si sta effettuando l&#39;aggiornamento. Ad esempio, `2.4.3`.
 
    - `--no-update` —(Obbligatorio) Disattiva l&#39;aggiornamento automatico delle dipendenze.
 

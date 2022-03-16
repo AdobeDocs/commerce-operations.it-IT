@@ -1,27 +1,27 @@
 ---
 title: Panoramica sulla manutenzione e sul supporto
-description: Properly maintain and support your newly launched Adobe Commerce implementation.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Mantieni e supporta correttamente la nuova implementazione Adobe Commerce avviata.
+exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
-
 # Panoramica sulla manutenzione e sul supporto
 
-Consumers already have more options than ever before at their fingertips. Senza alcuna carenza di marchi che richiedono attenzione, non puoi dare ai consumatori alcun motivo per guardare i tuoi concorrenti. Come abbiamo visto, lealtà e pazienza con i consumatori sono magre. It doesn’t take much for them to give up on your brand and having a poor ecommerce experience is an easy way for them to give up.
+I consumatori hanno già a disposizione più opzioni che mai. Senza alcuna carenza di marchi che richiedono attenzione, non puoi dare ai consumatori alcun motivo per guardare i tuoi concorrenti. Come abbiamo visto, lealtà e pazienza con i consumatori sono magre. Non ci vuole molto per loro per rinunciare al tuo marchio e avere una scarsa esperienza di e-commerce è un modo facile per loro di arrendersi.
 
-This leads to two complementary points. Il primo è che il lancio di un nuovo sito di e-commerce non significa che si debba poi andare avanti. Il tasso di cambiamento nel marketing e con le esigenze dei consumatori è troppo elevato e i marchi devono evolvere costantemente per tenere il passo. Il che ci porta al secondo punto. Se il tuo supporto per l’e-commerce è disponibile solo per correggere qualcosa quando si rompe, allora sarà impossibile soddisfare le crescenti aspettative dei consumatori. In breve, il supporto di e-commerce non dovrebbe solo mantenere il funzionamento del tuo sito, ma dovrebbe far avanzare il tuo marchio. Questa sezione ti aiuterà a far avanzare il brand dopo il lancio del sito.
+Ciò porta a due punti complementari. Il primo è che il lancio di un nuovo sito di e-commerce non significa che si debba poi procedere. Il tasso di cambiamento nel marketing e con le esigenze dei consumatori è troppo elevato e i marchi devono evolvere costantemente per tenere il passo. Il che ci porta al secondo punto. Se il tuo supporto per l’e-commerce è disponibile solo per correggere qualcosa quando si rompe, allora sarà impossibile soddisfare le crescenti aspettative dei consumatori. In breve, il supporto di e-commerce non dovrebbe solo mantenere il funzionamento del tuo sito, ma dovrebbe far avanzare il tuo marchio. Questa sezione ti aiuterà a far avanzare il brand dopo il lancio del sito.
 
 ## Fase di transizione
 
-L’impostazione del supporto di produzione durante la fase di transizione di un progetto è uno dei fattori di successo più critici per un’azienda di e-commerce. Una volta completata l&#39;implementazione e avviato il sito, il team di supporto di produzione deve essere pronto e attrezzato per assumere le attività di supporto. The usual practice is to ramp down the development team during transition phase and build a smaller team in place for support.
+L’impostazione del supporto di produzione durante la fase di transizione di un progetto è uno dei fattori di successo più critici per un’azienda di e-commerce. Una volta completata l&#39;implementazione e avviato il sito, il team di supporto di produzione deve essere pronto e attrezzato per assumere le attività di supporto. La pratica comune consiste nel ridurre il team di sviluppo durante la fase di transizione e creare un team più piccolo per il supporto.
 
 Il trasferimento delle conoscenze avviene nel corso dell’intero progetto e un approccio di transizione di successo avviene in parallelo con la consegna. Inoltre, le guide utente e un wiki tecnologico sono strumenti importanti che consentono al team di svolgere workshop durante le fasi del progetto.
 
-The following diagram shows the phases and activities that would be included in a successful transition outcome:
+Il diagramma seguente mostra le fasi e le attività che verrebbero incluse in un esito positivo della transizione:
 
 ![Diagramma che mostra le fasi del processo di transizione](../../assets/playbooks/transition-diagram.svg)
 

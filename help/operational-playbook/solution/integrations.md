@@ -1,13 +1,13 @@
 ---
 title: Integrazioni Commerce
 description: Fornisci al tuo team gli strumenti necessari per soddisfare le esigenze dei tuoi clienti e garantire operazioni quotidiane senza problemi.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 52bfa6c7-0687-45de-8889-c529cea7d01a
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
 
 ---
-
 
 # Integrazioni di terze parti
 
@@ -15,8 +15,7 @@ La maggior parte delle aziende comprende che molte strategie e processi unici de
 
 La maggior parte delle esigenze operative può essere soddisfatta utilizzando diverse piattaforme software, tra cui ERP, marketplace, strumenti di business intelligence, software contabile, suite di rapporti e molto altro ancora. Il software aggiuntivo viene selezionato per ridurre i tempi e lo sforzo dell&#39;organizzazione ottimizzando al tempo stesso l&#39;esperienza del cliente e le operazioni aziendali.
 
-Quando selezioni un provider di terze parti, le aziende devono utilizzare un
-un approccio efficace all&#39;integrazione che soddisfi le loro esigenze. Dopo aver compreso le esigenze dei clienti, decidi un piano dettagliato con l&#39;aiuto delle parti interessate. Dopo aver deciso il piano, impostare un documento di specifica che definisce come il sistema comunica e quale tipo di dati è richiesto e trasmesso a terzi.
+Quando selezioni un provider di terze parti, le aziende devono utilizzare un approccio semplice ed efficace per l&#39;integrazione che soddisfi le loro esigenze. Dopo aver compreso le esigenze dei clienti, decidi un piano dettagliato con l&#39;aiuto delle parti interessate. Dopo aver deciso il piano, impostare un documento di specifica che definisce come il sistema comunica e quale tipo di dati è richiesto e trasmesso a terzi.
 
 >[!NOTE]
 >

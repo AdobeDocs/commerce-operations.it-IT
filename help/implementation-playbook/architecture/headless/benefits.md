@@ -1,13 +1,13 @@
 ---
 title: Commercio headless
-description: Learn what headless commerce means and how Adobe Commerce supports headless architectures.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Scopri cosa significa e come Adobe Commerce supporta le architetture headless.
+exl-id: acf66714-c10e-4c8b-b7ca-04cb2ca2fcf9
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # Commercio headless
 
@@ -17,11 +17,11 @@ Per cominciare, il commercio aziendale legacy è costoso e difficile da scalare 
 
 I clienti si aspettano che un&#39;azienda interagisca con loro e interagisca con loro su tutti i canali. Le organizzazioni incentrate sui clienti stanno cercando di creare piattaforme scalabili in grado di adattarsi alle mutevoli aspettative dei clienti.
 
-Headless commerce is API-based commerce. It decouples business logic, as well as transactional and data aspects of commerce, from presentation. Headless is an integrated framework that provides full flexibility for all channels and touchpoints, with a frontend experience layer that is separated from the platform itself. Ciò consente ai marchi di offrire contenuti quali prodotti, dati e ordini a qualsiasi punto di contatto, sia attuale che futuro, e allo stesso tempo di visualizzarli in qualsiasi modo.
+L’e-commerce headless è un’attività commerciale basata su API. Separa la logica di business, così come gli aspetti transazionali e di dati del commercio, dalla presentazione. Headless è un framework integrato che offre la massima flessibilità per tutti i canali e i punti di contatto, con un livello di esperienza frontale separato dalla piattaforma stessa. Ciò consente ai marchi di offrire contenuti quali prodotti, dati e ordini a qualsiasi punto di contatto, sia attuale che futuro, e allo stesso tempo di visualizzarli in qualsiasi modo.
 
-Headless architecture is the technical separation of the head from the rest of the commerce application. Adobe Commerce is fully headless with a decoupled architecture that provides all commerce services and data through a GraphQL API layer. This architecture allows frontend teams to develop their frontends independently from Adobe Commerce, providing the agility to quickly build and test new touchpoints with emerging technologies.
+Architettura headless è la separazione tecnica della testa dal resto dell&#39;applicazione commerce. Adobe Commerce è completamente headless con un’architettura disaccoppiata che fornisce tutti i servizi e i dati commerce tramite un livello API GraphQL. Questa architettura consente ai team front-end di sviluppare i front-end in modo indipendente da Adobe Commerce, fornendo l’agilità di creare e testare rapidamente nuovi punti di contatto con le tecnologie emergenti.
 
-È inoltre possibile estendere le API di Adobe Commerce GraphQL con i microservizi distribuiti su Adobe I/O Runtime. Questo offre un’agilità senza precedenti per integrare, estendere e personalizzare processi aziendali omnicanale senza richiedere personalizzazioni del codice per il back-end, garantendo così un facile aggiornamento della piattaforma core senza alcun impatto sui punti di contatto frontend. Adobe Commerce GraphQL APIs are open sourced and part of our community engineering program with significant contributions and oversight coming from our community of developers.
+Le API GraphQL di Adobe Commerce possono essere estese anche con i microservizi distribuiti su I/O Runtime di Adobe. Questo offre un’agilità senza precedenti per integrare, estendere e personalizzare processi aziendali omnicanale senza richiedere personalizzazioni del codice per il back-end, garantendo così un facile aggiornamento della piattaforma core senza alcun impatto sui punti di contatto frontend. Le API GraphQL di Adobe Commerce sono open source e fanno parte del nostro programma di ingegneria della community con contributi e supervisione significativi provenienti dalla nostra community di sviluppatori.
 
 ![Diagramma dell&#39;architettura di e-commerce headless](../../../assets/playbooks/headless-diagram.svg)
 

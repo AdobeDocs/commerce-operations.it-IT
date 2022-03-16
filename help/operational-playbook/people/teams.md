@@ -1,13 +1,13 @@
 ---
 title: Team
 description: Scopri i diversi tipi di team che contribuiscono al successo dei progetti e-commerce.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: b1a007b2-49ff-475f-9ad7-5fa100cdfa3b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1224'
 ht-degree: 0%
 
 ---
-
 
 # Team
 
@@ -87,8 +87,8 @@ Quando avvii un progetto e-commerce, ricorda a livello C e aziendale. Sono princ
 
 Esistono altri team che fanno parte di un team esistente o che sono autonomi, tra cui:
 
-- **Team** dei contenuti: devono essere allineati con tutti i team per creare contenuti efficaci. Il contenuto del sito richiede aggiornamenti regolari. Il team Contenuto è responsabile della configurazione del contenuto della pagina di prodotto, delle pagine di categoria, del blog e del piè di pagina, che attrae il traffico del sito e aumenta il tasso di conversione.
+- **Gruppo di contenuti**: per creare contenuti efficaci, devono essere allineati con tutti i team. Il contenuto del sito richiede aggiornamenti regolari. Il team Contenuto è responsabile della configurazione del contenuto della pagina di prodotto, delle pagine di categoria, del blog e del piè di pagina, che attrae il traffico del sito e aumenta il tasso di conversione.
 
-- **Team dati**: i siti di e-commerce generano molti dati che è possibile raccogliere e analizzare, tra cui informazioni sui clienti, abitudini di spesa, prodotti popolari e il tempo in cui il sito ha il maggior traffico. Il team di dati elabora tutte queste informazioni per fornire informazioni sul funzionamento del sito e su dove il sito necessita di ulteriori miglioramenti. Il team dati può consigliare quali tendenze sono in arrivo e dove il business deve concentrarsi.
+- **Team dati**- I siti di e-commerce generano molti dati che è possibile raccogliere e analizzare, tra cui informazioni sui clienti, abitudini di spesa, prodotti popolari e il tempo in cui il sito ha il maggior traffico. Il team di dati elabora tutte queste informazioni per fornire informazioni sul funzionamento del sito e su dove il sito necessita di ulteriori miglioramenti. Il team dati può consigliare quali tendenze sono in arrivo e dove il business deve concentrarsi.
 
-- **Squadra** finanziaria e contabile: alcune aziende dispongono di un piccolo team di Finance e Accounting che può essere interno o esterno. Si concentrano sul budget, sulle previsioni e sulla gestione dell&#39;aspetto finanziario della creazione e della gestione di un sito di e-commerce.
+- **Squadra finanziaria e contabile**- Alcune aziende hanno un piccolo team di Finance and Accounting, che può essere interno o esterno. Si concentrano sul budget, sulle previsioni e sulla gestione dell&#39;aspetto finanziario della creazione e della gestione di un sito di e-commerce.

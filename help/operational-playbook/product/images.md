@@ -1,13 +1,13 @@
 ---
 title: Immagini del prodotto
 description: Fornisci ai tuoi clienti immagini di prodotti e video di alta qualità per aumentare i tassi di conversazione.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 080f177e-f668-4154-8a05-ea4724c29c5f
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
 
 ---
-
 
 # Immagini del prodotto
 
@@ -51,19 +51,19 @@ In realtà, i clienti possono sentire e provare il prodotto, ma quando acquistan
 
 ## Best practice
 
-- **Demo del prodotto** - Se il prodotto ha uno scopo definito, demo il prodotto per mostrarne le funzioni e le caratteristiche.
+- **Demo del prodotto**- Se il prodotto ha uno scopo definito, demo il prodotto per mostrare le sue funzioni e caratteristiche.
 
-- **Promozione di immagini** generate dagli utenti: gli utenti caricano le immagini con il prodotto come recensione, motivando altri acquirenti ad acquistare il prodotto.
+- **Promuovere immagini generate dall’utente**- Utenti che caricano le immagini con il prodotto come recensione, che motiva altri acquirenti ad acquistare il prodotto.
 
-- **Vista a 360 gradi del prodotto** - Il caricamento di un video a 360 gradi o GIF del prodotto può fornire una vista dettagliata al cliente e motivarlo ad acquistare il prodotto.
+- **Vista a 360 gradi del prodotto**- Il caricamento di un video o di un GIF a 360 gradi del prodotto può fornire una visualizzazione dettagliata al cliente e motivarlo ad acquistare il prodotto.
 
-- **Convenzione di denominazione**: imposta come regola seguire una convenzione di denominazione per l’immagine del prodotto, che aiuta a ridurre al minimo l’errore di caricamento di un’immagine errata per un prodotto e aiuta il team a gestire facilmente le immagini.
+- **Convenzione di denominazione**: rendi la regola di seguire una convenzione di denominazione per l’immagine del prodotto, che aiuta a ridurre al minimo l’errore di caricamento di un’immagine errata per un prodotto e aiuta il team a gestire facilmente le immagini.
 
-- **Caricamento pagina** - Non caricare immagini che aumenteranno il tempo di caricamento della pagina. Se un cliente deve attendere che l&#39;immagine venga visualizzata, potrebbe lasciare il sito.
+- **Caricamento pagina**- Non caricare immagini che aumenteranno il tempo di caricamento della pagina. Se un cliente deve attendere che l&#39;immagine venga visualizzata, potrebbe lasciare il sito.
 
-- **Contenuto** semplice - Non complicare eccessivamente il contenuto. Cercate di mantenere il contenuto semplice e attraente dove la messa a fuoco è il prodotto. Ad esempio, una best practice consiste nell’avere l’immagine del prodotto su uno sfondo bianco per migliorare l’immagine del prodotto.
+- **Contenuto semplice**- Non complicare eccessivamente il contenuto. Cercate di mantenere il contenuto semplice e attraente dove la messa a fuoco è il prodotto. Ad esempio, una best practice consiste nell’avere l’immagine del prodotto su uno sfondo bianco per migliorare l’immagine del prodotto.
 
-- **Immagine** del prodotto reale: quando un cliente acquista un prodotto online, si aspetta di vedere il prodotto così com’è sul sito web. Evita di applicare filtri o migliorare l’immagine per modificare l’aspetto del prodotto. È importante essere trasparenti con il cliente, altrimenti si potrebbe avere un alto tasso di rendimento.
+- **Immagine del prodotto reale**- Quando un cliente acquista un prodotto online, si aspetta di vedere il prodotto così come è sul sito web. Evita di applicare filtri o migliorare l’immagine per modificare l’aspetto del prodotto. È importante essere trasparenti con il cliente, altrimenti si potrebbe avere un alto tasso di rendimento.
 
 >[!TIP]
 >
