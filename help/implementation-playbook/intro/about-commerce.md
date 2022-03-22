@@ -2,9 +2,9 @@
 title: Informazioni su Adobe Commerce
 description: Descrizione di Adobe Commerce
 exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 219cbe839e40afa19b3754a9d5929074ed238920
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Per soddisfare le richieste dei clienti relative a interazioni impeccabili con i
 
 ## Condurre acquisti senza soluzione di continuità ovunque
 
-La crescita del commercio è alimentata dalle esigenze dei clienti ovunque si trovino. Espandi la tua portata e cresce in nuovi canali, aree geografiche e vendi online sia per le aziende che per i consumatori in un’unica piattaforma. Portate il commercio ai vostri clienti ovunque, quando e comunque preferiscono fare acquisti.
+La crescita del commercio è alimentata dalle esigenze dei clienti. Espandi la tua portata e cresce in nuovi canali, aree geografiche e vendi online sia per le aziende che per i consumatori in un’unica piattaforma. Portate il commercio ai vostri clienti ovunque, quando e comunque preferiscono fare acquisti.
 
 - Mobile commerce
 - E-commerce B2B
