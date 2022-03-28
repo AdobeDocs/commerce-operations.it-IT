@@ -1,9 +1,9 @@
 ---
 title: Esegui il [!DNL Upgrade Compatibility Tool]
 description: Segui questi passaggi per eseguire il [!DNL Upgrade Compatibility Tool] sul progetto Adobe Commerce.
-source-git-commit: ba077f5d5429f2971dfbca8edd8ebd5ea44922c8
+source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -206,7 +206,7 @@ bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 
 A _vaniglia_ installazione è un’installazione pulita di un tag di versione o di un ramo specifico per una versione specifica di rilascio.
 
-La `bin/uct core:code:changes` controlla se nel sistema è presente un&#39;istanza di vaniglia. Se questa è la prima volta che si utilizza un&#39;installazione di vaniglia, una domanda interattiva della riga di comando richiede di scaricare il progetto di vaniglia dal [Archivio Adobe Commerce](https://repo.magento.com/).
+La `bin/uct core:code:changes` controlla se nel sistema è presente un&#39;istanza di vaniglia. Se questa è la prima volta che si utilizza un&#39;installazione di vaniglia, una domanda interattiva della riga di comando richiede di scaricare il progetto di vaniglia dall&#39;archivio Adobe Commerce (`https://repo.magento.com/`).
 
 Puoi eseguire un [!DNL Upgrade Compatibility Tool] con il comando `--vanilla-dir` per specificare la directory di installazione di vaniglia di Adobe Commerce.
 
