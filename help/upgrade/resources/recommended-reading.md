@@ -1,10 +1,10 @@
 ---
 title: Lettura consigliata per gli aggiornamenti
-description: Rivedi la lettura consigliata per la pianificazione dell’aggiornamento di Adobe Commerce o Magento Open Source.
-source-git-commit: de3ab30a0831f6bbf92313c568ac624212868afe
+description: Consulta la documentazione consigliata per pianificare l’aggiornamento di Adobe Commerce o Magento Open Source.
+source-git-commit: 1cecdf89df9a870d57347468ce9220f74d46cd73
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 0%
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,6 @@ Continua a scoprire di più su Adobe Commerce e sugli aggiornamenti di Magento O
             <li><a href="https://marketplace.magento.com/magento-live-search.html">Live Search</a></li>
             <li><a href="https://marketplace.magento.com/magento-payment-services.html">Servizi di pagamento</a></li>
             <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">Recommendations di prodotto</a></li>
-            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">Aggiornamento di PWA Studi</a></li>
           </ul>
       </td>
     </tr>
@@ -77,7 +76,13 @@ Continua a scoprire di più su Adobe Commerce e sugli aggiornamenti di Magento O
             <li><a href="https://devdocs.magento.com/release/availability.html">Disponibilità software</a></li>
           </ul>
       </td>
-      <td></td>
+      <td><strong>Esperienza Storefront</strong>
+        <p>Scopri la più recente tecnologia di vetrina che puoi utilizzare per creare esperienze uniche per i tuoi clienti.</p>
+          <ul>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/">PWA Studi</a></li>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">Aggiornamento di PWA Studi</a></li>
+          </ul>
+      </td>
     </tr>
   </tbody>
 </table>
