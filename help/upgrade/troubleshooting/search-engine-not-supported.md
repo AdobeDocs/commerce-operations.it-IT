@@ -1,9 +1,9 @@
 ---
 title: Motore di ricerca corrente non supportato
 description: Risolvere i problemi relativi all’aggiornamento di Adobe Commerce o Magento Open Source dopo un errore relativo a un motore di ricerca non supportato.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 96534d5307062aa4fda8f6433630d2d39e2848e7
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Motore di ricerca corrente non supportato
 
-Il seguente messaggio di errore indica che la versione di Magento da cui si esegue l’aggiornamento è configurata per utilizzare un motore di ricerca del catalogo non supportato nella versione di Magento in cui si esegue l’aggiornamento:
+Il seguente messaggio di errore indica che la versione di Adobe Commerce o Magento Open Source da cui si esegue l’aggiornamento è configurata per l’utilizzo di un motore di ricerca del catalogo non supportato nella versione in cui si esegue l’aggiornamento:
 
 ```terminal
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
@@ -32,7 +32,7 @@ L&#39;errore si verifica se il valore restituito è `mysql` o `elasticsearch`.
 
 >[!WARNING]
 >
->Se hai ricevuto questo errore, il Magento è in uno stato incoerente e non puoi accedere all’amministratore. È consigliabile ripristinare la versione precedente durante la risoluzione dell’errore. A questo scopo, esegui uno dei seguenti comandi:
+>Se hai ricevuto questo errore, l&#39;installazione è in uno stato incoerente e non puoi accedere all&#39;amministratore. È consigliabile ripristinare la versione precedente durante la risoluzione dell’errore. A questo scopo, esegui uno dei seguenti comandi:
 >
 >
 ```bash
@@ -50,7 +50,7 @@ Seguire le linee guida descritte nelle sezioni seguenti per eseguire il ripristi
 
 ## Se il motore di ricerca è `mysql`
 
-Prima della versione 2.4, MySQL era il motore di ricerca del catalogo predefinito, ma MySQL non è più supportato in questa capacità. Ora devi installare e configurare Elasticsearch come motore di ricerca prima di eseguire l’aggiornamento alla versione 2.4.
+Prima della versione 2.4, MySQL era il motore di ricerca del catalogo predefinito, ma MySQL non è più supportato in questa capacità. Ora è necessario installare e configurare Elasticsearch o OpenSearch come motore di ricerca prima di eseguire l’aggiornamento alla versione 2.4.
 
 Utilizza le risorse seguenti per guidarti in questo processo:
 
@@ -59,7 +59,7 @@ Utilizza le risorse seguenti per guidarti in questo processo:
 - Configurare Elasticsearch con cui lavorare [nginx](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-nginx.html) o [Apache](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-apache.html)
 - [Configurare il Magento da utilizzare come Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html)
 
-Dopo aver configurato Elasticsearch e reindicizzazione, puoi effettuare l’aggiornamento alla versione 2.4.
+Dopo aver configurato il motore di ricerca e reindicizzato, è possibile effettuare l&#39;aggiornamento alla versione 2.4.
 
 ## Se il motore di ricerca è `elasticsearch`
 
@@ -67,7 +67,7 @@ Un valore di `elasticsearch` indica che la versione di Adobe Commerce o Magenti 
 
 Prima di eseguire l&#39;aggiornamento alla versione 2.4, è necessario eseguire le seguenti operazioni:
 
-1. Aggiorna l&#39;Elasticsearch. Si consiglia di eseguire l’aggiornamento ad Elasticsearch 7.x. Fai riferimento a [Aggiornamento dell’Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) per istruzioni complete su come eseguire il backup dei dati, rilevare potenziali problemi di migrazione e testare gli aggiornamenti prima dell’implementazione in produzione. A seconda della versione corrente dell&#39;Elasticsearch, potrebbe essere necessario o meno un riavvio completo del cluster.
+1. Aggiornamento a una versione di Elasticsearch supportata da Commerce. Fai riferimento a [Aggiornamento dell’Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) per istruzioni complete su come eseguire il backup dei dati, rilevare potenziali problemi di migrazione e testare gli aggiornamenti prima dell’implementazione in produzione. A seconda della versione corrente dell&#39;Elasticsearch, potrebbe essere necessario o meno un riavvio completo del cluster.
 
    >[!NOTE]
    >
@@ -75,4 +75,4 @@ Prima di eseguire l&#39;aggiornamento alla versione 2.4, è necessario eseguire 
 
 1. [Configurare il Magento da utilizzare come Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html) e reindicizzare.
 
-Dopo aver configurato Elasticsearch e reindicizzazione, puoi effettuare l’aggiornamento alla versione 2.4.
+Dopo aver configurato il motore di ricerca e reindicizzato, è possibile effettuare l&#39;aggiornamento alla versione 2.4.
