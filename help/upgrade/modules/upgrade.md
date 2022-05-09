@@ -1,9 +1,9 @@
 ---
 title: Moduli ed estensioni di aggiornamento
 description: Utilizza l’interfaccia a riga di comando e il Compositore per aggiornare i moduli e le estensioni Adobe Commerce e Magenti Open Source.
-source-git-commit: 70f1bda91023526fbc0024b6a6fef93c7633ecc2
+source-git-commit: c619bff9785d22298bc49e2ac9874480ff7a320b
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -50,3 +50,12 @@ Per aggiornare o aggiornare un modulo o un&#39;estensione:
 Adobe rimosso tutti [VBE](https://devdocs.magento.com/extensions/vendor/) in 2.4.4. I fornitori continuano a supportare queste estensioni su Adobe Commerce Marketplace.
 
 Se desideri continuare a utilizzare queste estensioni con Adobe Commerce e Magenti Open Source 2.4.4 e versioni successive, devi aggiornare le dipendenze dei pacchetti corrispondenti nella tua `composer.json` file _prima_ aggiornamento a 2.4.4. Contattare il fornitore per il nome e la versione del pacchetto da utilizzare.
+
+Per ulteriori informazioni, consulta i seguenti elenchi di Adobe Commerce Marketplace :
+
+- [Pagamento Amazon](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
+- [Dotdigitale](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
+- [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html)
+- [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
+- [Yotpo](https://marketplace.magento.com/yotpo-module-yotpo.html)
+
