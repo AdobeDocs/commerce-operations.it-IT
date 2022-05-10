@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Messaggi di errore"'
 description: Ulteriori informazioni sui messaggi di errore riscontrati durante l’utilizzo del [!DNL Upgrade Compatibility Tool] sul progetto Adobe Commerce.
-source-git-commit: 9bdf64177b4cecab5dd3562fef0bcc507a57ccf0
+source-git-commit: d62299d23d73b8566ed1c9b9739ca59fb0535d6f
 workflow-type: tm+mt
-source-wordcount: '3816'
+source-wordcount: '3756'
 ht-degree: 4%
 
 ---
@@ -141,16 +141,6 @@ Gli errori di codice personalizzato vengono generati quando il codice personaliz
 | 5026 | Non utilizzare `"text/javascript"` tipo di attributo | Utilizza solo membri pubblici. |
 | 5028 | Accesso ai membri protetti e privati `Block` Classe obsoleta nei modelli phtml | Utilizza solo membri pubblici. |
 | 5031 | Contiene un metodo obsoleto | Utilizzo `getConnection()` invece. |
-| 5032 | `loadLayout` metodo obsoleto | Utilizzo `\Magento\Framework\View\Layout\Builder::build` invece. |
-| 5033 | `renderLayout` metodo obsoleto | Utilizzo `\Magento\Framework\Controller\ResultInterface::renderResult` invece. |
-| 5034 | `_redirect` metodo obsoleto | Utilizzo `\Magento\Backend\Model\View\Result\Redirect::render` invece. |
-| 5035 | `_forward` metodo obsoleto | Utilizzo `\Magento\Backend\Model\View\Result\Forward::forward` invece. |
-| 5036 | `_setActiveMenu` metodo obsoleto | Utilizzo `\Magento\Backend\Model\View\Result\Page::setActiveMenu` invece. |
-| 5037 | `_addBreadcrumb` metodo obsoleto | Utilizzo `\Magento\Backend\Model\View\Result\Page::addBreadcrumb` invece. |
-| 5038 | `_addContent` metodo obsoleto | Utilizzo `\Magento\Backend\Model\View\Result\Page::addContent` invece. |
-| 5039 | `_addLeft` metodo obsoleto | Utilizzo `\Magento\Backend\Model\View\Result\Page::addLeft` invece. |
-| 5040 | `_addJs` metodo obsoleto | Utilizzo `\Magento\Backend\Model\View\Result\Page::addJs` invece. |
-| 5041 | `_moveBlockToContainer` metodo obsoleto | Utilizzo `\Magento\Backend\Model\View\Result\Page::moveBlockToContainer` invece. |
 | 5042 | Formato non corretto del riferimento di classe PHP | Verificare che venga fatto riferimento alla classe utilizzando solo lettere camelCased, numeri e nessuna barra iniziale. |
 | 5043 | Formato non corretto del riferimento del modulo | Verificare che al modulo venga fatto riferimento utilizzando solo lettere, numeri, caratteri di sottolineatura e nessuna barra iniziale. |
 | 5044 | Classe `Zend_Db_Select` è limitato | Sostituzione consigliata: `\Magento\Framework\DB\Select`. |
