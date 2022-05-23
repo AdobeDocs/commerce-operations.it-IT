@@ -1,9 +1,9 @@
 ---
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, i loro utilizzi, il processo di installazione e le modalità di accesso.
-source-git-commit: fd51f40ce8f0dfab5970414d4d243aee13ba9c0a
+source-git-commit: 07587717002b1aa9ab3102f5e6c078c43679a31e
 workflow-type: tm+mt
-source-wordcount: '34'
+source-wordcount: '36'
 ht-degree: 0%
 
 ---
@@ -17,3 +17,5 @@ ht-degree: 0%
    - [Installazione](site-wide-analysis-tool/installation.md)
    - [Come accedere](site-wide-analysis-tool/access.md)
    - [Attributi di stato](site-wide-analysis-tool/status.md)
+   - [Schede Funzioni](site-wide-analysis-tool/features-tabs.md)
+
