@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Prerequisiti"'
 description: 'Verifica che il sistema soddisfi i requisiti necessari per eseguire il [!DNL Upgrade Compatibility Tool] per il progetto Adobe Commerce. '
-source-git-commit: c4769b555df49ed2f0b2fffbeaf458c5a64816ba
+source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -12,8 +12,6 @@ ht-degree: 0%
 # [!DNL Upgrade Compatibility Tool] prerequisiti
 
 {{commerce-only}}
-
-Esecuzione del [!DNL Upgrade Compatibility Tool] consente di identificare le operazioni da eseguire **prima** aggiornamento della versione Adobe Commerce.
 
 Requisiti minimi per l&#39;esecuzione del [!DNL Upgrade Compatibility Tool] sono:
 
@@ -26,8 +24,17 @@ Requisiti minimi per l&#39;esecuzione del [!DNL Upgrade Compatibility Tool] sono
 | Chiavi di accesso di Adobe Commerce | nessuno |
 | Adobe Commerce | nessuno |
 
-Puoi eseguire il [!DNL Upgrade Compatibility Tool] in qualsiasi sistema operativo. Non è necessario eseguire il [!DNL Upgrade Compatibility Tool] dove si trova l’istanza Adobe Commerce.
+Puoi eseguire il [!DNL Upgrade Compatibility Tool] in diversi sistemi operativi (Windows non supportato). Non è necessario eseguire il [!DNL Upgrade Compatibility Tool] dove si trova l’istanza Adobe Commerce.
 
 È necessario per [!DNL Upgrade Compatibility Tool] per avere accesso al codice sorgente dell’istanza Adobe Commerce. Ad esempio, puoi installarlo su un server e puntarlo all&#39;installazione Adobe Commerce su un altro server. Fai riferimento a [installare](../upgrade-compatibility-tool/install.md) per ulteriori informazioni.
 
-Se esegui la [!DNL Upgrade Compatibility Tool] rispetto a un&#39;istanza Adobe Commerce con moduli e file di grandi dimensioni, lo strumento potrebbe richiedere una quantità elevata di RAM, almeno 2 GB di RAM.
+Se esegui la [!DNL Upgrade Compatibility Tool] rispetto a un&#39;istanza Adobe Commerce con moduli e file di grandi dimensioni, lo strumento potrebbe richiedere un&#39;elevata quantità di RAM (almeno 2 GB). È possibile utilizzare `[=MODULE-PATH]` nel comando per specificare la directory del percorso del modulo per evitare problemi dovuti a una limitazione della memoria insufficiente:
+
+```bash
+bin/uct upgrade:check <dir> -m[=MODULE-PATH]
+```
+
+Se gli argomenti sono i seguenti:
+
+- `<dir>`: Directory di installazione di Adobe Commerce.
+- `[=MODULE-PATH]`: Directory del percorso del modulo specifico.

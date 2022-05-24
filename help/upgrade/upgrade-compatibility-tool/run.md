@@ -1,9 +1,9 @@
 ---
 title: Esegui il [!DNL Upgrade Compatibility Tool]
 description: Segui questi passaggi per eseguire il [!DNL Upgrade Compatibility Tool] sul progetto Adobe Commerce.
-source-git-commit: d5811225d695c44cc8f67ae01cf688fe6382dc23
+source-git-commit: 64b061f3b2f93827bfdb904a6faddbd21f4da5e6
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2057'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Questo comando controlla le modifiche del codice di base per la specifica istanz
 
 Puoi eseguire il `core:code:changes` per analizzare solo le modifiche del codice di base per quella specifica istanza di Adobe Commerce. Vedi [Modifiche al codice core](../upgrade-compatibility-tool/run.md#use-the-core:code:changes-command) sezione .
 
-Quando è possibile utilizzare `graphql:compare` confrontare due schemi GraphQL per verificare la presenza di eventuali modifiche tra di essi. Vedi [Verifica della compatibilità dello schema GraphQL](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) sezione .
+È possibile utilizzare `graphql:compare` confrontare due schemi GraphQL per verificare la presenza di eventuali modifiche tra di essi. Consulta la sezione [Verifica della compatibilità dello schema GraphQL](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) sezione .
 
 ### Recommendations per utilizzare `upgrade:check` command
 
@@ -317,6 +317,10 @@ Esegui:
 bin/uct refactor <dir>
 ```
 
+Se gli argomenti sono i seguenti:
+
+- `<dir>`: Directory di installazione di Adobe Commerce.
+
 ## Verifica della compatibilità dello schema GraphQL
 
 La [!DNL Upgrade Compatibility Tool] fornisce inoltre l’opzione per introdurre due endpoint GraphQL e confrontare i rispettivi schemi in cerca di modifiche interrotte e pericolose tra di essi:
@@ -350,9 +354,10 @@ Disponibile `--help` opzioni per `graphql:compare` comando:
  *   [WARNING] OPTIONAL_INPUT_FIELD_ADDED: An optional field sku on input type ProductAttributeSortInput was added.
 ```
 
-Vedi [Informazioni per gli sviluppatori](../upgrade-compatibility-tool/developer.md) per ulteriori informazioni.
-
 Puoi eseguire il [!DNL Upgrade Compatibility Tool] con una configurazione di esecuzione tramite il plugin PhpStorm. Consulta la sezione [[!DNL Upgrade Compatibility Tool] Esegui configurazione](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) per ulteriori informazioni.
+
+Vedi questo [tutorial video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30) per scoprire come utilizzare il [!DNL Upgrade Compatibility Tool] con il plugin PHPStorm Magento.
+
 
 ## Azioni consigliate
 
