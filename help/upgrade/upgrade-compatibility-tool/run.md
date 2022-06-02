@@ -1,21 +1,50 @@
 ---
-title: Esegui il [!DNL Upgrade Compatibility Tool]
+title: '"Esegui il [!DNL Upgrade Compatibility Tool]"'
 description: Segui questi passaggi per eseguire il [!DNL Upgrade Compatibility Tool] sul progetto Adobe Commerce.
-source-git-commit: 64b061f3b2f93827bfdb904a6faddbd21f4da5e6
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
 
 
-# Esegui il [!DNL Upgrade Compatibility Tool]
+# Scarica la [!DNL Upgrade Compatibility Tool]
 
 {{commerce-only}}
 
-La [!DNL Upgrade Compatibility Tool] è uno strumento a riga di comando che controlla un’istanza personalizzata di Adobe Commerce rispetto a una versione specifica analizzando tutti i moduli installati al suo interno. Restituisce un elenco di problemi critici, errori e avvisi che devono essere risolti prima di eseguire l’aggiornamento alla versione più recente di Adobe Commerce.
+Per iniziare a utilizzare [!DNL Upgrade Compatibility Tool] in un&#39;interfaccia a riga di comando, scaricala eseguendo il seguente comando:
+
+```bash
+composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
+```
+
+>[!NOTE]
+>
+> Consulta la sezione [prerequisiti](../upgrade-compatibility-tool/prerequisites.md) per ulteriori informazioni sui requisiti minimi per utilizzare lo strumento.
+
+## Esegui il [!DNL Upgrade Compatibility Tool]
+
+La [!DNL Upgrade Compatibility Tool] è uno strumento che controlla un’istanza personalizzata di Adobe Commerce rispetto a una versione specifica analizzando tutti i moduli installati in essa. Restituisce un elenco di problemi critici, errori e avvisi che devono essere risolti prima di eseguire l’aggiornamento alla versione più recente di Adobe Commerce.
 
 La [!DNL Upgrade Compatibility Tool] identifica potenziali problemi che devono essere risolti nel codice prima di tentare di eseguire l&#39;aggiornamento a una versione più recente di Adobe Commerce.
+
+Vedi questo [tutorial video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02) per saperne di più sul [!DNL Upgrade Compatibility Tool].
+
+## Azioni consigliate
+
+### Ottimizzare i risultati
+
+La [!DNL Upgrade Compatibility Tool] fornisce un rapporto contenente i risultati per impostazione predefinita con tutti i problemi identificati nel progetto. Puoi ottimizzare i risultati per concentrarti sui problemi da risolvere per completare l&#39;aggiornamento:
+
+- Utilizza l’opzione `--ignore-current-version-compatibility-issues`, che sopprime tutti i problemi critici noti, gli errori e gli avvisi relativi alla versione corrente di Adobe Commerce. Fornisce solo errori rispetto alla versione a cui si sta tentando di eseguire l&#39;aggiornamento.
+- Aggiungi il `--min-issue-level` questa impostazione consente di impostare il livello minimo di problema, in modo da assegnare priorità solo ai problemi più importanti con l&#39;aggiornamento.
+- Se si desidera analizzare solo un determinato fornitore, modulo o persino directory, è possibile specificare anche il percorso come opzione. Esegui il `bin` con l&#39;opzione aggiunta `-m`. Ciò consente di [!DNL Upgrade Compatibility Tool] per analizzare un modulo specifico in modo indipendente e aiuta con i problemi di memoria che possono verificarsi durante l&#39;esecuzione [!DNL Upgrade Compatibility Tool].
+
+### Segui le best practice di Adobe Commerce
+
+- Evitare di avere due moduli con lo stesso nome.
+- Segui Adobe Commerce [norme di codifica](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
 
 ## Utilizza la `upgrade:check` command
 
@@ -85,130 +114,6 @@ Disponibile `--help` opzioni per `upgrade:check` comando:
 - `--ansi, --no-ansi`: Abilita uscita ANSI.
 - `-n, --no-interaction`: Non fare domande interattive durante l&#39;esecuzione del comando.
 - `-v, --vv, --vvv, --verbose`: Aumentare la verbosità delle comunicazioni in uscita. 1 per uscita normale, 2 per uscita dettagliata e 3 per uscita DEBUG.
-
-### Uscita
-
-A seguito dell&#39;analisi effettuata, il [!DNL Upgrade Compatibility Tool] esporta un rapporto che contiene un elenco di problemi per ogni file, specificando gravità, codice di errore e descrizione dell’errore.
-
-Vedi l&#39;esempio seguente:
-
-```terminal
-File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
-------------------------------------------------------------------
- * [WARNING][1131] Line 23: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.2'
- * [ERROR][1429] Line 103: Call method 'Magento\Framework\Api\SearchCriteriaBuilder::addFilters' that is non API on version '2.4.2'
- * [CRITICAL][1110] Line 60: Instantiating class/interface 'Magento\Catalog\Model\ProductRepository' that does not exist on version '2.4.2'
-```
-
-Controlla la [Riferimento al messaggio di errore](error-messages.md) per ulteriori informazioni.
-
-Il rapporto include anche un riepilogo dettagliato che mostra:
-
-- *Versione corrente*: versione attualmente installata.
-- *Versione di destinazione*: la versione a cui desideri eseguire l’aggiornamento.
-- *Tempo di esecuzione*: il tempo impiegato dall&#39;analisi per costruire il rapporto (mm:ss).
-- *Moduli che richiedono aggiornamento*: la percentuale di moduli che contengono problemi di compatibilità e richiedono l’aggiornamento.
-- *File che richiedono l’aggiornamento*: la percentuale di file che contengono problemi di compatibilità e richiedono l’aggiornamento.
-- *Errori critici totali*: numero di errori critici rilevati.
-- *Errori totali*: numero di errori rilevati.
-- *Avvisi totali*: numero di avvisi rilevati.
-
-Vedi l&#39;esempio seguente:
-
-```terminal
- ----------------------------- ------------------
-  Current version               2.4.2
-  Target version                2.4.3
-  Execution time                1m:10s
-  Modules that require update   78.33% (47/60)
-  Files that require update     21.62% (115/532)
-  Total critical issues         35
-  Total errors                  201
-  Total warnings                103
- ----------------------------- ------------------
-```
-
->[!NOTE]
->
->Per impostazione predefinita, la [!DNL Upgrade Compatibility Tool] esporta il rapporto in 2 formati diversi: `json` e `html`.
-
-#### JSON
-
-Il file JSON contiene esattamente le stesse informazioni mostrate nell’output:
-
-- Elenco dei problemi individuati.
-- Sintesi dell&#39;analisi.
-
-Per ogni problema riscontrato, il rapporto fornisce informazioni dettagliate, ad esempio la gravità e la descrizione del problema.
-
->[!NOTE]
->
->Il percorso predefinito per la cartella di output è `var/output/[TIME]-results.json`.
-
-Per esportare il rapporto in una cartella di output diversa, esegui:
-
-```bash
-bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
-```
-
-Se gli argomenti sono i seguenti:
-
-- `<dir>`: Directory di installazione di Adobe Commerce.
-- `[=JSON-OUTPUT-PATH]`: Directory del percorso per esportare `.json` file di output.
-
->[!NOTE]
->
->Il percorso predefinito per la cartella di output è `var/output/[TIME]-results.json`.
-
-#### HTML
-
-Il file HTML contiene anche il riepilogo delle analisi e l’elenco dei problemi identificati.
-
-![Rapporto HTML - Riepilogo](../../assets/upgrade-guide/uct-html-summary.png)
-
-Puoi navigare facilmente tra i problemi identificati durante il [!DNL Upgrade Compatibility Tool] analisi:
-
-![Rapporto HTML - Dettagli](../../assets/upgrade-guide/uct-html-details.png)
-
-Il rapporto HTML include anche quattro diversi grafici:
-
-- **Moduli per gravità del problema**: Mostra la distribuzione della gravità per moduli.
-- **File per gravità del problema**: Mostra la distribuzione della gravità per file.
-- **Moduli ordinati per numero totale di problemi**: Mostra i 10 moduli più compromessi tenendo conto di avvisi, errori ed errori critici.
-- **Moduli con dimensioni e problemi relativi**: Più file contiene un modulo, più grande è il suo cerchio. Più problemi ha un modulo, più rosso appare il suo cerchio.
-
-Questi grafici ti consentono di identificare, a colpo d&#39;occhio, le parti più compromesse e quelle che richiedono più lavoro per eseguire un aggiornamento.
-
-![Rapporto HTML - Diagrammi](../../assets/upgrade-guide/uct-html-diagrams.png)
-
-Potrai filtrare i problemi visualizzati nel rapporto in base al livello di problema minimo (per impostazione predefinita, [AVVISO]).
-
-Nell’angolo in alto a destra è disponibile un menu a discesa che consente di selezionarne uno diverso in base alle esigenze. L&#39;elenco dei problemi identificati sarà filtrato di conseguenza.
-
-![Rapporto HTML - Utilizzo a discesa](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
-
-Tieni presente che i problemi con il livello di problema inferiore vengono eliminati ma ottieni una notifica in modo da essere sempre a conoscenza dei problemi identificati per modulo.
-
-Anche i diagrammi vengono aggiornati di conseguenza, con l&#39;unica eccezione del `Modules with relative sizes and issues`, generato con il `min-issue-level` configurazione iniziale.
-
-Se si desidera visualizzare risultati diversi, è necessario eseguire nuovamente il comando fornendo un altro valore per `--min-issue-level` opzione .
-
-![Rapporto HTML - Diagramma a bolle](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
-
-Per esportare il rapporto in una cartella di output diversa, esegui:
-
-```bash
-bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
-```
-
-Se gli argomenti sono i seguenti:
-
-- `<dir>`: Directory di installazione di {{site.data.var.ee}}.
-- `[=HTML-OUTPUT-PATH]`: Directory del percorso per esportare `.html` file di output.
-
->[!NOTE]
->
->Il percorso predefinito per la cartella di output è `var/output/[TIME]-results.html`.
 
 ### Utilizza la `--ignore-current-version-compatibility-issues` opzione
 
@@ -353,26 +258,6 @@ Disponibile `--help` opzioni per `graphql:compare` comando:
  *   [WARNING] FIELD_CHANGED_KIND: ConfigurableProduct.gender changed type from Int to String.
  *   [WARNING] OPTIONAL_INPUT_FIELD_ADDED: An optional field sku on input type ProductAttributeSortInput was added.
 ```
-
-Puoi eseguire il [!DNL Upgrade Compatibility Tool] con una configurazione di esecuzione tramite il plugin PhpStorm. Consulta la sezione [[!DNL Upgrade Compatibility Tool] Esegui configurazione](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) per ulteriori informazioni.
-
-Vedi questo [tutorial video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30) per scoprire come utilizzare il [!DNL Upgrade Compatibility Tool] con il plugin PHPStorm Magento.
-
-
-## Azioni consigliate
-
-### Ottimizzare i risultati
-
-La [!DNL Upgrade Compatibility Tool] fornisce un rapporto contenente i risultati per impostazione predefinita con tutti i problemi identificati nel progetto. Puoi ottimizzare i risultati per concentrarti sui problemi da risolvere per completare l&#39;aggiornamento:
-
-- Utilizza l’opzione `--ignore-current-version-compatibility-issues`, che sopprime tutti i problemi critici noti, gli errori e gli avvisi relativi alla versione corrente di Adobe Commerce. Fornisce solo errori rispetto alla versione a cui si sta tentando di eseguire l&#39;aggiornamento.
-- Aggiungi il `--min-issue-level` questa impostazione consente di impostare il livello minimo di problema, in modo da assegnare priorità solo ai problemi più importanti con l&#39;aggiornamento.
-- Se si desidera analizzare solo un determinato fornitore, modulo o persino directory, è possibile specificare anche il percorso come opzione. Esegui il `bin` con l&#39;opzione aggiunta `-m`. Ciò consente di [!DNL Upgrade Compatibility Tool] per analizzare un modulo specifico in modo indipendente e aiuta con i problemi di memoria che possono verificarsi durante l&#39;esecuzione [!DNL Upgrade Compatibility Tool].
-
-### Segui le best practice di Adobe Commerce
-
-- Evitare di avere due moduli con lo stesso nome.
-- Segui Adobe Commerce [norme di codifica](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
 
 ## Risoluzione dei problemi
 
