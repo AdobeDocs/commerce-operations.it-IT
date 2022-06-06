@@ -1,7 +1,7 @@
 ---
 title: Attributi di stato
 description: Scopri le diverse informazioni sullo stato nel [!DNL Site-Wide Analysis Tool].
-source-git-commit: 1222d1c87de26ce95c4eefaa9d2a9c3731e1b3cf
+source-git-commit: 01d4e800c31615494e6e3f20adfbf3d35fabcce9
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -19,6 +19,3 @@ Le seguenti informazioni sullo stato vengono visualizzate nel livello superiore 
 **[!UICONTROL Health Index Bar]**: Misura la salute complessiva del sito da 0 a 100, dove zero è peggiore, e 100 è salute perfetta. Viene calcolato in base alla quantità e al coefficiente di peso prioritario delle raccomandazioni attive.
 
 **[!UICONTROL Download Recommendations Report]**: Report di Recommendations fornisce consigli personalizzati applicabili al tuo progetto. Per scaricare un rapporto di PDF, fai clic su questa sezione.
-
-
-

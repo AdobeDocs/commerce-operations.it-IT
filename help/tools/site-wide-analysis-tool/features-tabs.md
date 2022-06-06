@@ -1,14 +1,14 @@
 ---
-title: Schede Funzioni
+title: Schede delle funzioni
 description: Scopri le diverse schede delle funzioni in [!DNL Site-Wide Analysis Tool]
-source-git-commit: cd62420f4ccff5a47473e2232357125eef37af25
+source-git-commit: c4eca6568dc507a7ba746ac059b1959929815a5e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
 
-# Schede Funzioni
+# Schede delle funzioni
 
 Nella parte superiore delle schede vengono visualizzate le seguenti informazioni sulle funzioni [!DNL Site-Wide Analysis Tool] schermo.
 
