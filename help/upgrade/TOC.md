@@ -1,9 +1,9 @@
 ---
 user-guide-title: Guida all’aggiornamento
 user-guide-description: Scopri l’importanza di aggiornare l’applicazione Adobe Commerce o Magento Open Source e come pianificare ed eseguire con successo un aggiornamento.
-source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
+source-git-commit: fd624a97d74c7f6a9e29223227dae425bb6fa68c
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '146'
 ht-degree: 19%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 19%
    - [Applica patch](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [Panoramica](upgrade-compatibility-tool/overview.md)
-   - [Prerequisiti](upgrade-compatibility-tool/prerequisites.md)
+   - [Requisiti di sistema](upgrade-compatibility-tool/prerequisites.md)
    - Utilizza la [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
       - [Esegui lo strumento in un&#39;interfaccia a riga di comando](upgrade-compatibility-tool/run.md)
       - [Integra con il [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
