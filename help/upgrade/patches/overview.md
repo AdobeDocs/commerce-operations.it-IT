@@ -1,9 +1,9 @@
 ---
 title: Funzionamento delle patch
 description: Scopri i diversi tipi di patch per Adobe Commerce e Magenti Open Source e come funzionano.
-source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
+source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ I file di patch (o diff) sono file di testo che annotano:
 - Numero della riga per iniziare la modifica e numero di righe da modificare.
 - Il nuovo codice da scambiare.
 
-Quando il [patch](https://en.wikipedia.org/wiki/Patch_(Unix)) viene eseguito, il file viene letto e vengono apportate le modifiche specificate ai file.
+Quando viene eseguito il programma di patch, questo file viene letto in e le modifiche specificate vengono apportate ai file.
 
 Esistono tre tipi di patch:
 
