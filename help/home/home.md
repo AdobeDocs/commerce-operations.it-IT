@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;home;argomenti popolari
 title: Pagina principale
 description: Sfoglia un indice della documentazione del prodotto operativo Adobe Commerce.
-source-git-commit: e38d4f1c3e7618e77afb638f4a996cd7e5ebdbd5
+source-git-commit: 8b40946fc65d9089de752376abbd31e37f60c541
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '206'
+ht-degree: 1%
 
 ---
 
@@ -59,11 +59,11 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/extensions/">
-       <img alt="Estensioni" src="../assets/icons/extension.svg" width="40" height="40"/>
+    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
+       <img alt="Riferimento per gli strumenti della riga di comando" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/extensions/"><strong>Estensioni</strong></a>
+      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>Riferimento strumenti della riga di comando</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -84,14 +84,6 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
   </td>
 </tr>
 <tr>
-  <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
-       <img alt="Riferimento per gli strumenti della riga di comando" src="../assets/icons/page-rule.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>Riferimento strumenti della riga di comando</strong></a>
-    </div>
-  </td>
   <td valign="top">
     <a href="../implementation-playbook/overview.md">
       <img alt="Implementazione" src="../assets/icons/play.svg" width="40" height="40"/>
