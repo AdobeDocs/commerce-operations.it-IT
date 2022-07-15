@@ -1,9 +1,9 @@
 ---
 title: '"Esegui il [!DNL Upgrade Compatibility Tool]"'
 description: Segui questi passaggi per eseguire il [!DNL Upgrade Compatibility Tool] in un’interfaccia a riga di comando per il progetto Adobe Commerce.
-source-git-commit: 1dde98ab903f54aee0a094efd86dbf296065e92c
+source-git-commit: a0bb188eea38688c5bfe68e8c6bb7b3d040f5e0a
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,12 @@ Per iniziare a utilizzare [!DNL Upgrade Compatibility Tool] in un&#39;interfacci
 
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
+```
+
+Potrebbe essere necessario assegnare allo strumento le autorizzazioni eseguibili con `chmod` comando:
+
+```bash
+chmod +x ./uct/bin/uct
 ```
 
 ## La [!DNL Upgrade Compatibility Tool] in un&#39;interfaccia a riga di comando
