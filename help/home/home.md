@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;home;argomenti popolari
 title: Pagina principale
 description: Sfoglia un indice della documentazione del prodotto operativo Adobe Commerce.
-source-git-commit: 8b40946fc65d9089de752376abbd31e37f60c541
+source-git-commit: 6c462d615675615b317c6de529d1af5846d26e69
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,11 +33,11 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/config-guide/bk-config-guide.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html">
       <img alt="Configurazione" src="../assets/icons/settings.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/config-guide/bk-config-guide.html"><strong>Configurazione</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html"><strong>Configurazione</strong></a>
     </div>
   </td>
   <td valign="top">

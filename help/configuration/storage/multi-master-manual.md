@@ -1,7 +1,7 @@
 ---
 title: Configurare manualmente i database master
 description: Consulta le istruzioni sulla configurazione manuale della soluzione di database suddivisi.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
 workflow-type: tm+mt
 source-wordcount: '1402'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configurare manualmente i database master
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 
