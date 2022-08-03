@@ -3,7 +3,7 @@ title: Gestire moduli ed estensioni (sviluppatore)
 description: Gestisci i moduli e le estensioni Adobe Commerce e Magenti Open Source tramite l’interfaccia a riga di comando e il gestore dei pacchetti Composer.
 source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '139'
 ht-degree: 2%
 
 ---
