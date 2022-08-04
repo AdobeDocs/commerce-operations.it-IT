@@ -1,9 +1,9 @@
 ---
 title: Elaborazione dell'ordine ad alta velocità
 description: Ottimizza la posizione dell’ordine e l’esperienza di pagamento per la distribuzione Adobe Commerce o Magenti Open Source.
-source-git-commit: c4c52baa9e04a4e935ccc29fcce2ac2745a454ee
+source-git-commit: 4ce6f01ab6c3e0bb408657727b65bcb2f84dd954
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ Se questa opzione è disabilitata, il controllo dell’inventario non viene eseg
 [Install extensions]: https://devdocs.magento.com/extensions/install/
 [cloud-extensions]: https://devdocs.magento.com/cloud/howtos/install-components.html
 
-[mrg]: https://devdocs.magento.com/guides/v2.4//mrg/intro.html
+[mrg]: https://developer.adobe.com/commerce/php/module-reference/
 [AsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-async-order.html
 [CalcoloTotaleDifferito]: https://devdocs.magento.com/guides/v2.4/mrg/module-deferred-total-calculating.html
 [NegotiableQuoteAsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-negotiable-quote-async-order.html
