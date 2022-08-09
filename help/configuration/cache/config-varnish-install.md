@@ -1,9 +1,9 @@
 ---
 title: Installa Varnish
 description: Consulta i consigli sull'installazione di Varnish.
-source-git-commit: 688db9fcc9cd196d1560e49719b03ef32d13870d
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 L&#39;installazione del software Vernish va oltre lo scopo di questa guida. Per ulteriori informazioni sull&#39;installazione di Varnish, vedi:
 
-- [wiki di installazione](http://wiki.mikejung.biz/Varnish)
+- [guida all&#39;installazione](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
 - [Guide all&#39;installazione in vernice](https://www.varnish-cache.org/docs)
-- [Come installare Varnish (Tecmint)](http://www.tecmint.com/install-varnish-cache-web-accelerator)
+- [Come installare Varnish (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >

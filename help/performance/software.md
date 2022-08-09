@@ -1,7 +1,7 @@
 ---
 title: Recommendations software
 description: Rivedi un elenco di software consigliati relativi alle prestazioni ottimali delle distribuzioni Adobe Commerce e Magenti Open Source.
-source-git-commit: 1d5956ce22c1a159336e9e7d64064b618fc2e63f
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 0%
@@ -180,7 +180,7 @@ Il Magento supporta completamente i server web Nginx e Apache. [!DNL Commerce] f
 | Server web | Nome attributo | Posizione | Informazioni correlate |
 |--- | --- | --- | ---|
 | Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [Ottimizzazione di NGINX per le prestazioni](https://www.nginx.com/blog/tuning-nginx/) |
-| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Ottimizzazione delle prestazioni di Apache](http://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
+| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Ottimizzazione delle prestazioni di Apache](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
 | Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Direttive comuni Apache MPM](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]

@@ -1,7 +1,7 @@
 ---
 title: Avanzate [!DNL JavaScript] Bundle
 description: Scopri come il bundling JavaScript può ridurre le dimensioni e la frequenza delle richieste server.
-source-git-commit: 09c4d0e09354230c8779b930f085d8c7c131b85b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '2137'
 ht-degree: 0%
@@ -88,7 +88,7 @@ I passaggi seguenti richiedono l’installazione e la familiarità con i seguent
 
 - [nodejs](https://nodejs.org/en/download/)
 - [r.js](http://requirejs.org/docs/optimization.html#download)
-- [[!DNL PhantomJS]](http://phantomjs.org/) (facoltativo)
+- [[!DNL PhantomJS]](https://phantomjs.org/) (facoltativo)
 
 ### Codice di esempio
 

@@ -1,9 +1,9 @@
 ---
 title: Tipi di cache
 description: Associare i front-end della cache ai tipi di cache.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -67,10 +67,11 @@ Puoi specificare le opzioni di configurazione della cache front-end e backend in
 
 dove
 
-- `<frontend_type>` è il tipo di cache front-end a basso livello. Specificare il nome di una classe compatibile con [Zend\Cache\Core](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Core.html).
-
-   Se ometti `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) viene utilizzato.
+- `<frontend_type>` è il tipo di cache front-end a basso livello. Specificare il nome di una classe compatibile con `Zend\Cache\Core`.
+Se ometti `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) viene utilizzato.
 
 - `<frontend_option>`, `<frontend_option_value>` sono il nome e il valore delle opzioni che il framework Commerce passa come array associativo alla cache front-end al momento della creazione.
-- `<backend_type>` è il tipo di cache back-end di basso livello. Specificare il nome di una classe compatibile con [Zend_Cache_Backend](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend.html) e che attua [Interfaccia_Backend_Cache_Zend](https://framework.zend.com/apidoc/1.6/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend_Interface.html).
+- `<backend_type>` è il tipo di cache back-end di basso livello. Specificare il nome di una classe compatibile con `Zend_Cache_Backend` e che attua `Zend_Cache_Backend_Interface`.
 - `<backend_option>` e `<backend_option_value>` sono il nome e il valore delle opzioni che il framework Commerce passa come array associativo alla cache di backend al momento della creazione.
+
+Consulta la sezione [Documentazione di Laminas](https://docs.laminas.dev/) per informazioni aggiornate su Zend.

@@ -1,7 +1,7 @@
 ---
 title: Imposta il valore dei parametri di bootstrap
 description: Scopri come impostare i parametri di avvio per l’applicazione Commerce.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 1%
@@ -172,4 +172,4 @@ Le procedure seguenti mostrano come impostare la modalità applicazione in un ho
 [Apache versione 2.2]: http://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv
 [Apache versione 2.4]: http://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv
 [Nginx configurazione di esempio]: https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16
-[unix-stackx]: http://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables
+[unix-stackx]: https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables

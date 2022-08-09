@@ -1,9 +1,9 @@
 ---
 title: Strumento da riga di comando
 description: Utilizzare lo strumento della riga di comando Commerce per eseguire attività di installazione e configurazione.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Ulteriori vantaggi includono:
 - La CLI è estensibile in modo che gli sviluppatori di terze parti possano &quot;plug-in&quot; ad essa. Questo ha il vantaggio aggiuntivo di eliminare la curva di apprendimento degli utenti.
 - I comandi per i moduli disabilitati non vengono visualizzati.
 
-Questo argomento illustra la configurazione del software Adobe Commerce e Magenti Open Source tramite CLI. Per informazioni sull’installazione di Commerce, consulta [Panoramica dell’installazione](https://devdocs.magento.com/guides/2.4/install-gde/bk-install-guide.html) in _Guida all’installazione_.
+Questo argomento illustra la configurazione del software Adobe Commerce e Magenti Open Source tramite CLI. Per informazioni sull’installazione di Commerce, consulta [Flusso di installazione](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) in _Guida all’installazione_.
 
 ## Prerequisiti
 

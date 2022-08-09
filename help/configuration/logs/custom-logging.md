@@ -1,7 +1,7 @@
 ---
 title: Registrazione personalizzata
 description: Scopri come indagare gli errori utilizzando la registrazione personalizzata.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Altri canali possono avere un set diverso di gestori e logiche.
 <!-- link definitions -->
 
 [di]: https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9
-[fluido]: http://www.fluentd.org
+[fluido]: https://www.fluentd.org/
 [laminas]: https://docs.laminas.dev/laminas-log/
 [Logplex]: https://devcenter.heroku.com/articles/logplex
 [Logstash]: https://www.elastic.co/products/logstash

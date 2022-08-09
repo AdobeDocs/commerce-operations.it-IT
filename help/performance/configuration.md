@@ -1,7 +1,7 @@
 ---
 title: Tecniche consigliate per la configurazione
 description: Ottimizza il tempo di risposta della distribuzione Adobe Commerce o Magenti Open Source utilizzando queste best practice.
-source-git-commit: 20c4f55162b25be8906562c395abf4671437992b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Quando si attiva il pulsante **[!UICONTROL Enable [!DNL JavaScript] Bundling]** 
 
 ### Suggerimenti per il bundle
 
-* È consigliabile utilizzare strumenti di terze parti per la minimizzazione e il bundling (come [r.js](http://requirejs.org/)). [!DNL Commerce] i meccanismi incorporati non sono ottimali e vengono spediti come alternative di fallback.
+* È consigliabile utilizzare strumenti di terze parti per la minimizzazione e il bundling (come [r.js](https://requirejs.org/)). [!DNL Commerce] i meccanismi incorporati non sono ottimali e vengono spediti come alternative di fallback.
 * L&#39;attivazione del protocollo HTTP2 può essere una buona alternativa all&#39;utilizzo del bundling JS. Il protocollo offre più o meno gli stessi vantaggi.
 * Non consigliamo di utilizzare impostazioni obsolete come l’unione di file JS e CSS, in quanto sono stati progettati solo per JS caricato in modo sincrono nella sezione HEAD della pagina. L&#39;utilizzo di questa tecnica può causare il funzionamento errato del bundling e richiedere il funzionamento errato della logica JS.
 
