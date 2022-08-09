@@ -1,9 +1,9 @@
 ---
 title: Eseguire un aggiornamento
 description: Segui questi passaggi per aggiornare un progetto Adobe Commerce o Magenti Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3c3966a904b0568e0255020d8880d348c357ea95
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,28 @@ Devi completare la [prerequisiti per l’aggiornamento](../prepare/prerequisites
    ```
 
    Vedi [Attiva o disattiva la modalità di manutenzione](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) per ulteriori opzioni. Facoltativamente, puoi creare un [pagina della modalità di manutenzione personalizzata](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
+
+1. L’avvio del processo di aggiornamento mentre i processi asincroni, come i consumatori della coda dei messaggi, sono in esecuzione, può causare il danneggiamento dei dati. Per evitare il danneggiamento dei dati, disattiva tutti i lavori cron.
+
+   _Adobe Commerce sull’infrastruttura cloud:_
+
+   ```bash
+   ./vendor/bin/ece-tools cron:disable
+   ```
+
+   _Magento Open Source:_
+
+   ```bash
+   bin/magento cron:remove
+   ```
+
+1. Avvia manualmente tutti i consumatori della coda messaggi per assicurarsi che tutti i messaggi siano utilizzati.
+
+   ```bash
+   bin/magento cron:run --group=consumers
+   ```
+
+   Attendi il completamento del lavoro del cron. Puoi monitorare lo stato del processo con un visualizzatore di processi o eseguendo il `ps aux | grep 'bin/magento queue'` comando più volte fino al completamento di tutti i processi.
 
 1. Crea un backup del `composer.json` file.
 
