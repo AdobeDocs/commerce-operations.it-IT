@@ -1,9 +1,9 @@
 ---
 title: Gestire gli indici
 description: Vedi esempi su come visualizzare e gestire gli indici Commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: dd84039be22b6bd25d57912615d64bad91970926
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,6 @@ bin/magento indexer:status [indexer]
 ```
 
 Dove `[indexer]` è un elenco di indici separati da spazi. Ometti `[indexer]` per visualizzare lo stato di tutti gli indici.
-
 
 Risultato di esempio:
 
@@ -120,8 +119,9 @@ Puoi eseguire i seguenti indici in modalità parallela:
 - `Catalog Search Fulltext` può essere affiancato dalle viste del negozio.
 - `Category Product` può essere affiancato dalle viste del negozio.
 - `Catalog Price` può essere affiancato da siti web e gruppi di clienti.
+- `Catalog Permissions` può essere affiancato dai gruppi di clienti.
 
-Per utilizzare la parallelizzazione, è necessario impostare una delle modalità di dimensioni disponibili per l&#39;indicizzatore del prezzo del prodotto:
+Per utilizzare la parallelizzazione, impostare una delle modalità di dimensioni disponibili per l&#39;indicizzatore del prezzo del prodotto:
 
 - `none` (predefinito)
 - `website`
@@ -133,6 +133,11 @@ Ad esempio, per impostare la modalità per sito Web:
 ```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
+
+Per utilizzare la parallelizzazione per le autorizzazioni Catalogo, impostare una delle modalità di dimensioni disponibili per l&#39;indicizzatore Autorizzazioni catalogo:
+
+- `none` (predefinito)
+- `customer_group`
 
 Oppure per controllare la modalità corrente:
 

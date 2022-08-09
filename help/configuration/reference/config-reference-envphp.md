@@ -1,9 +1,9 @@
 ---
 title: riferimento env.php
 description: Vedi un elenco di valori per il file env.php.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 7ecd54b40690ec046e9a3d46a6ef9ad44ffaf4ab
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,7 @@ La `env.php` il file contiene le sezioni seguenti:
 | `cron` | Attiva o disattiva i lavori cron |
 | `crypt` | Chiave di crittografia per le funzioni di crittografia |
 | `db` | Impostazioni di connessione al database |
+| `default_connection` | Code messaggi connessione predefinita |
 | `directories` | Impostazioni di mappatura delle directory Commerce |
 | `downloadable_domains` | Elenco dei domini scaricabili |
 | `install` | Data di installazione |
@@ -168,6 +169,19 @@ Tutte le configurazioni del database sono disponibili in questo nodo.
   ]
 ]
 ```
+
+## default_connection
+
+Definisce la connessione predefinita per le code dei messaggi. Il valore può essere `db`, `amqp`o un sistema di coda personalizzato come `redismq`. Se specifichi un valore diverso da `db`, il software della coda messaggi deve essere installato e configurato per primo. In caso contrario, i messaggi non verranno elaborati correttamente.
+
+```conf
+'queue' => [
+    'default_connection' => 'amqp'
+]
+```
+
+Se `queue/default_connection` è specificato nel sistema `env.php` file, questa connessione viene utilizzata per tutte le code di messaggio attraverso il sistema, a meno che una connessione specifica non sia definita in un `queue_topology.xml`, `queue_publisher.xml` o `queue_consumer.xml` file.
+Ad esempio, se `queue/default_connection` è `amqp` in `env.php` ma `db` la connessione è specificata nei file XML di configurazione della coda di un modulo, il modulo utilizzerà MySQL come broker di messaggi.
 
 ## directory
 
