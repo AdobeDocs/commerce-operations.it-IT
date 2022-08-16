@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] requisiti"'
 description: 'Verifica che il sistema soddisfi i requisiti necessari per eseguire il [!DNL Upgrade Compatibility Tool] in un’interfaccia a riga di comando per il progetto Adobe Commerce. '
-source-git-commit: 7ec999f9122eb0707ac6c37b7b49f9c423945318
+source-git-commit: 167e0e7554e912aeef276a34daeaff29d7762009
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,31 @@ I requisiti minimi per l&#39;utilizzo del [!DNL Upgrade Compatibility Tool] in u
 | Compositore | nessun requisito noto. |
 | Node.js | Versioni di Node.js `^12.22.0`, `^14.17.0`oppure `>=16.0.0` (vedi [Installa Node.js](https://nodejs.dev/learn/how-to-install-nodejs)) |
 | Limiti di memoria | Almeno 2 GB di RAM. |
+
+[!DNL Upgrade Compatibility Tool] richiede [PCNTL](https://www.php.net/manual/en/book.pcntl.php) e altre estensioni PHP per l&#39;esecuzione. Controlla le estensioni PHP richieste utilizzando `composer check-platform-reqs` comando:
+
+```bash
+# Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
+
+$ composer check-platform-reqs
+Checking platform requirements for packages in the vendor dir
+ext-ctype     *         success provided by symfony/polyfill-ctype
+ext-dom       20031129  success
+ext-filter    7.4.30    success
+ext-json      7.4.30    success
+ext-libxml    7.4.30    success
+ext-mbstring  *         success provided by symfony/polyfill-mbstring
+ext-openssl   7.4.30    success
+ext-pcntl     7.4.30    success
+ext-pcre      7.4.30    success
+ext-phar      7.4.30    success
+ext-simplexml 7.4.30    success
+ext-tokenizer 7.4.30    success
+ext-xml       7.4.30    success
+ext-xmlwriter 7.4.30    success
+ext-zip       1.15.6    success
+php           7.4.30    success
+```
 
 Adobe Commerce è supportato solo sui sistemi operativi Linux. Puoi eseguire il [!DNL Upgrade Compatibility Tool] in un sistema operativo Linux. Non è necessario eseguire il [!DNL Upgrade Compatibility Tool] dove si trova l’istanza Adobe Commerce.
 
