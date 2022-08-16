@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Messaggi di errore"'
 description: Ulteriori informazioni sui messaggi di errore riscontrati durante l’utilizzo del [!DNL Upgrade Compatibility Tool] sul progetto Adobe Commerce.
-source-git-commit: a13b0ea5aa109ce2f5d33e0966b194d64bad5d0c
+source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
 workflow-type: tm+mt
-source-wordcount: '3781'
+source-wordcount: '4140'
 ht-degree: 4%
 
 ---
@@ -64,6 +64,17 @@ Gli errori critici vengono generati quando il codice personalizzato fa riferimen
 | 5072 | Possibile violazione del Magento 2. Rilevata una tipica costruzione di Magento 1.x | Aggiornare la costruzione agli standard del Magento 2. |
 | 5076 | Impossibile utilizzare nello spazio dei nomi perché è riservato da PHP 7 | Sostituisci la parola riservata nello spazio dei nomi con una parola chiave non riservata. |
 | 5077 | Impossibile utilizzare come nome di classe perché è riservato da PHP 7 | Sostituire il nome della classe riservata con un nome non riservato. |
+
+{style=&quot;table-layout:auto&quot;}
+
+### Schema del database
+
+I problemi critici dello schema di database vengono segnalati se le tabelle o le colonne principali rimosse sono referenziate da vincoli personalizzati.
+
+| Codice di errore | Descrizione errore | Azione consigliata |
+| --- | --- | --- |
+| 7009 | Il vincolo personalizzato fa riferimento a una tabella di base rimossa nella versione di destinazione | Rimuovi il vincolo o aggiorna gli attributi referenceTable e referenceColumn |
+| 7010 | Il vincolo personalizzato fa riferimento a una colonna core rimossa nella versione di destinazione | Rimuovere il vincolo o aggiornare l&#39;attributo referenceColumn |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -199,6 +210,23 @@ Gli errori di codice personalizzato vengono generati quando il codice personaliz
 | 6009 | `jQuery.isArray()` è obsoleto | Utilizzare invece il metodo nativo Array.isArray. |
 | 6009 | `jQuery.parseJSON()` è obsoleto | Per analizzare le stringhe JSON, utilizza invece il metodo nativo JSON.parse . |
 | 6010 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) è obsoleto | Utilizza invece jQuery.expr.pseudo. |
+
+{style=&quot;table-layout:auto&quot;}
+
+### Schema del database
+
+Gli errori dello schema di database vengono generati se le tabelle, le colonne, gli indici o i vincoli del database, aggiunti o rimossi nella versione Adobe Commerce di destinazione, possono causare conflitti con lo schema di database personalizzato.
+
+| Codice di errore | Descrizione errore | Azione consigliata |
+| --- | --- | --- |
+| 7001 | La versione di base di destinazione introduce una tabella con lo stesso nome di una tabella dichiarata da un modulo personalizzato | Utilizzare la nuova tabella di base (se appropriata) o rinominare la tabella personalizzata |
+| 7002 | La tabella principale estesa da un modulo personalizzato è stata rimossa nella versione di destinazione | Tutti i riferimenti della tabella di base rimossi devono essere rimossi dal codebase |
+| 7003 | La versione di base di destinazione introduce una colonna con lo stesso nome di una colonna dichiarata da un modulo personalizzato | Usa la nuova colonna di base (se appropriata) o rinomina la colonna personalizzata |
+| 7004 | La colonna core estesa da un modulo personalizzato è stata rimossa nella versione di destinazione | Tutti i riferimenti di colonna core rimossi devono essere rimossi dal codebase |
+| 7005 | La versione di base di destinazione introduce un indice con lo stesso referenceId di un indice dichiarato da un modulo personalizzato | Rimuovi (se duplicato dell&#39;indice di base introdotto) o rinomina l&#39;indice personalizzato |
+| 7006 | L&#39;indice di base esteso da un modulo personalizzato è stato rimosso nella versione di destinazione | Tutti i riferimenti dell&#39;indice di base rimossi devono essere rimossi dal codebase |
+| 7007 | La versione di base di destinazione introduce un vincolo con lo stesso nome di un vincolo dichiarato da un modulo personalizzato | Rimuovi (se duplicato del vincolo di base introdotto) o rinomina il vincolo personalizzato |
+| 7008 | Il vincolo di base esteso da un modulo personalizzato è stato rimosso nella versione di destinazione | Utilizza il nuovo vincolo di base (se appropriato) o rinomina il vincolo personalizzato |
 
 {style=&quot;table-layout:auto&quot;}
 
