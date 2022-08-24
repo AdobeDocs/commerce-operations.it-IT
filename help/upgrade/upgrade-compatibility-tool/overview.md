@@ -1,9 +1,9 @@
 ---
 title: '"Panoramica del [!DNL Upgrade Compatibility Tool]"'
 description: Scopri le [!DNL Upgrade Compatibility Tool] e come può aiutarti con il tuo progetto Adobe Commerce.
-source-git-commit: 9b0f97d36092d2a1057cdc905671cda8540881c9
+source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,12 @@ La [!DNL Upgrade Compatibility Tool] è uno strumento che controlla un’istanza
 Il diagramma seguente mostra i possibili flussi di lavoro durante l’esecuzione del [!DNL Upgrade Compatibility Tool]:
 
 ![[!DNL Upgrade Compatibility Tool] Diagramma](../../assets/upgrade-guide/uct-diagram-v5.png)
+
+## [!DNL Upgrade Compatibility Tool] demo
+
+Guarda questo video per saperne di più [!DNL Upgrade Compatibility Tool]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
 
 ## Aiutare a migliorare [!DNL Upgrade Compatibility Tool]
 
