@@ -63,7 +63,7 @@ La mappatura dei file viene discussa più dettagliatamente in [[!DNL Data Migrat
 ![Flusso di migrazione](../../assets/data-migration/migration_flow.png)
 
 <!-- Link definitions -->
-[[!DNL Data Migration Tool] Specifiche tecniche]: technical-Specification.md
+[[!DNL Data Migration Tool] Specifiche tecniche]: technical-specification.md
 
 [Migration Modes]: ../../assets/data-migration/MigrationModes2.png
 
