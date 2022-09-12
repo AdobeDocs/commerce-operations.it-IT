@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;home;argomenti popolari
 title: Pagina principale
 description: Sfoglia un indice della documentazione del prodotto operativo Adobe Commerce.
-source-git-commit: 6c462d615675615b317c6de529d1af5846d26e69
+source-git-commit: 64e697a357e10005d02abeca13bd09c8a823bc00
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '155'
+ht-degree: 2%
 
 ---
 
@@ -25,27 +25,27 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html">
+    <a href="../installation/overview.md">
       <img alt="Installazione" src="../assets/icons/servers.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html"><strong>Installazione</strong></a>
+      <a href="../installation/overview.md"><strong>Installazione</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html">
+    <a href="../configuration/overview.md">
       <img alt="Configurazione" src="../assets/icons/settings.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html"><strong>Configurazione</strong></a>
+      <a href="../configuration/overview.md"><strong>Configurazione</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html">
-      <img alt="Migrazione" src="../assets/icons/move-to.svg" width="40" height="40"/>
+    <a href="../tools/data-migration-tool/how-migration-works.md">
+      <img alt="Migrazione dei dati" src="../assets/icons/move-to.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html"><strong>Migrazione</strong></a>
+      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Migrazione dei dati</strong></a>
     </div>
   </td>
 </tr>
@@ -75,11 +75,11 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html">
+    <a href="../tools/overview.md">
        <img alt="Strumenti" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Strumenti</strong></a>
+      <a href="../tools/overview.md"><strong>Strumenti</strong></a>
     </div>
   </td>
 </tr>
@@ -117,6 +117,5 @@ Scopri la nuova documentazione e gli aggiornamenti significativi alla documentaz
 
 | Modifica | Tipo |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Aggiunto [informazioni](../upgrade/upgrade-compatibility-tool/overview.md) informazioni sulla definizione delle regole per lo strumento di compatibilità per l’aggiornamento. | Aggiornamento principale |
-| Strumento di compatibilità per l’aggiornamento obsoleto rimosso [codici di errore](../upgrade/upgrade-compatibility-tool/error-messages.md). | Tecnico |
-| Spostato [Guida all’analisi per tutto il sito](../tools/site-wide-analysis-tool/intro.md) da [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) all&#39;Experience League. | Nuovo |
+| È stato spostato il [Guida all&#39;installazione in locale](../installation/overview.md) da [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) all&#39;Experience League. | Nuovo |
+| È stato spostato il [Guida alla migrazione dei dati](../tools/data-migration-tool/how-migration-works.md) da [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) all&#39;Experience League. | Nuovo |
