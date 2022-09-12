@@ -1,9 +1,9 @@
 ---
 title: Verificare il database diviso
 description: Scopri come verificare il corretto funzionamento di una configurazione di database con suddivisione Commerce.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Dopo la configurazione, i database master sono configurati come segue:
 - Commerce [preventivo](https://glossary.magento.com/quote) database: 11 tabelle
 - Database vendite Commerce: 55 tabelle
 
-Per verificare che i database suddivisi funzionino correttamente, eseguire le operazioni seguenti e verificare che i dati vengano aggiunti alle tabelle del database utilizzando uno strumento di database come [phpmyadmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+Per verificare che i database suddivisi funzionino correttamente, eseguire le operazioni seguenti e verificare che i dati vengano aggiunti alle tabelle del database utilizzando uno strumento di database come [phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 | Cosa verificare | Come verificare |
 | -------------- | ------------- |
@@ -30,4 +30,4 @@ Per verificare che i database suddivisi funzionino correttamente, eseguire le op
 
 >[!WARNING]
 >
->È necessario eseguire manualmente il backup delle due istanze di database aggiuntive. Commerce esegue il backup solo dell’istanza di database principale. La [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) Le opzioni di comando e amministratore non consentono di eseguire il backup delle tabelle aggiuntive.
+>È necessario eseguire manualmente il backup delle due istanze di database aggiuntive. Commerce esegue il backup solo dell’istanza di database principale. La [`magento setup:backup --db`](../../installation/tutorials/backup.md) Le opzioni di comando e amministratore non consentono di eseguire il backup delle tabelle aggiuntive.

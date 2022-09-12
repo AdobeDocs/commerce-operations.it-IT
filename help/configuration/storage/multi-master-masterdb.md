@@ -1,9 +1,9 @@
 ---
 title: Configurazione automatica dei database master
 description: Consulta le indicazioni sulla configurazione automatica della soluzione di database suddiviso.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '358'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Questo argomento illustra come iniziare a utilizzare la soluzione di database su
 
 ## Installare il software Adobe Commerce
 
-È possibile abilitare i database suddivisi in qualsiasi momento dopo l&#39;installazione del software Adobe Commerce; in altre parole, puoi aggiungere database suddivisi a un sistema Adobe Commerce che dispone già di dati di pagamento e di ordine. Utilizza le istruzioni in Adobe Commerce README o [guida all&#39;installazione](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html) per installare il software Adobe Commerce utilizzando un singolo database master.
+È possibile abilitare i database suddivisi in qualsiasi momento dopo l&#39;installazione del software Adobe Commerce; in altre parole, puoi aggiungere database suddivisi a un sistema Adobe Commerce che dispone già di dati di pagamento e di ordine. Utilizza le istruzioni in Adobe Commerce README o [guida all&#39;installazione](../../installation/overview.md) per installare il software Adobe Commerce utilizzando un singolo database master.
 
 ## Configurare database master aggiuntivi
 

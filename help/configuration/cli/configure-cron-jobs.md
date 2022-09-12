@@ -1,9 +1,9 @@
 ---
 title: Configurare ed eseguire i lavori cron
 description: Scopri come gestire i lavori cron.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ L’applicazione Commerce utilizza attività cron che possono essere eseguite co
 
 >[!WARNING]
 >
->- Per evitare problemi durante l&#39;installazione e l&#39;aggiornamento, si consiglia vivamente di applicare le stesse impostazioni PHP sia alla configurazione della riga di comando PHP che alla configurazione del plug-in del server web PHP. Per ulteriori informazioni, consulta [Impostazioni PHP richieste](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+>- Per evitare problemi durante l&#39;installazione e l&#39;aggiornamento, si consiglia vivamente di applicare le stesse impostazioni PHP sia alla configurazione della riga di comando PHP che alla configurazione del plug-in del server web PHP. Per ulteriori informazioni, consulta [Impostazioni PHP richieste](../../installation/prerequisites/php-settings.md).
 >- In un sistema a più nodi, crontab può essere eseguito su un solo nodo. Ciò vale solo se si impostano più nodi Web per motivi legati a prestazioni o scalabilità.
 
 
@@ -58,7 +58,7 @@ La crontab Commerce si trova all’interno di `#~ MAGENTO START` e `#~ MAGENTO E
 
 Per creare la scheda comparativa Commerce:
 
-1. Accedi come o passa a [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Accedi come o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 1. Passa alla directory di installazione Commerce.
 1. Immetti il seguente comando:
 
@@ -100,7 +100,7 @@ Segue un esempio:
 
 Per rimuovere la scheda comparativa Commerce:
 
-1. Accedi come o passa al [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Accedi come o passa al [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 1. Passare alla directory di installazione Commerce.
 1. Immetti il seguente comando:
 

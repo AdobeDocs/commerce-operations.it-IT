@@ -1,9 +1,9 @@
 ---
 title: Strumento da riga di comando
 description: Utilizzare lo strumento della riga di comando Commerce per eseguire attività di installazione e configurazione.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,15 @@ Ulteriori vantaggi includono:
 - La CLI è estensibile in modo che gli sviluppatori di terze parti possano &quot;plug-in&quot; ad essa. Questo ha il vantaggio aggiuntivo di eliminare la curva di apprendimento degli utenti.
 - I comandi per i moduli disabilitati non vengono visualizzati.
 
-Questo argomento illustra la configurazione del software Adobe Commerce e Magenti Open Source tramite CLI. Per informazioni sull’installazione di Commerce, consulta [Flusso di installazione](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) in _Guida all’installazione_.
+Questo argomento illustra la configurazione del software Adobe Commerce e Magenti Open Source tramite CLI. Per informazioni sull’installazione di Commerce, consulta [Flusso di installazione](../../installation/overview.md) in _Guida all’installazione_.
 
 ## Prerequisiti
 
 Prima di iniziare a utilizzare CLI, assicurati che:
 
-1. Il sistema soddisfa i requisiti descritti in [Requisiti di sistema](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in _Guida all’installazione_.
-1. Hai completato tutte le attività preliminari descritte in [Prerequisiti](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/prereq-overview.html) in _Guida all’installazione_.
-1. Dopo aver effettuato l’accesso al server Commerce, passa a un utente con autorizzazioni di scrittura nel file system Commerce. Vedi [passa al proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html) in _Guida all’installazione_.
+1. Il sistema soddisfa i requisiti descritti in [Requisiti di sistema](../../installation/system-requirements.md) in _Guida all’installazione_.
+1. Hai completato tutte le attività preliminari descritte in [Prerequisiti](../../installation/prerequisites/overview.md) in _Guida all’installazione_.
+1. Dopo aver effettuato l’accesso al server Commerce, passa a un utente con autorizzazioni di scrittura nel file system Commerce. Vedi [passa al proprietario del file system](../../installation/prerequisites/file-system/overview.md) in _Guida all’installazione_.
 
 ## Esecuzione dei comandi
 

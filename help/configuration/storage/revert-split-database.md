@@ -1,9 +1,9 @@
 ---
 title: Ripristina database diviso
 description: Ripristino dell'implementazione di un database diviso obsoleta in un'unica implementazione di database.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ In questo esempio, effettuiamo l&#39;accesso a tutti e tre i database installati
 
 ## Verificare il lavoro
 
-Per verificare che l’implementazione del database singolo funzioni correttamente, esegui le seguenti attività e verifica che i dati vengano aggiunti al `magento_main` tabelle di database utilizzando uno strumento di database come [phpMyAdmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+Per verificare che l’implementazione del database singolo funzioni correttamente, esegui le seguenti attività e verifica che i dati vengano aggiunti al `magento_main` tabelle di database utilizzando uno strumento di database come [phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 1. Verifica che le chiavi esterne siano state ripristinate. Ad esempio, il `QUOTE_STORE_ID_STORE_STORE_ID` nella `quote` tabella del database.
 1. Verifica che i clienti possano effettuare ordini dalla vetrina.

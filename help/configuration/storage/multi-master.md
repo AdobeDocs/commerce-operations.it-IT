@@ -1,9 +1,9 @@
 ---
 title: Soluzione per le prestazioni del database diviso
 description: Scopri la soluzione di database suddiviso per Adobe Commerce e Magenti Open Source.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Ciò significa anche che è possibile:
 
    >[!WARNING]
    >
-   >È necessario eseguire manualmente il backup delle due istanze di database aggiuntive. Commerce esegue il backup solo dell’istanza di database principale. La [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) Le opzioni di comando e amministratore non consentono di eseguire il backup delle tabelle aggiuntive.
+   >È necessario eseguire manualmente il backup delle due istanze di database aggiuntive. Commerce esegue il backup solo dell’istanza di database principale. La [`magento setup:backup --db`](../../installation/tutorials/backup.md) Le opzioni di comando e amministratore non consentono di eseguire il backup delle tabelle aggiuntive.
 
 ## Prerequisiti
 

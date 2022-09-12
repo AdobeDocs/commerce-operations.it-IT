@@ -1,9 +1,9 @@
 ---
 title: Applica patch
 description: Scopri i metodi per applicare patch a un progetto Adobe Commerce o Magenti Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Per applicare una patch personalizzata utilizzando il Compositore:
 Per applicare le patch dalla riga di comando:
 
 1. Carica il file locale nel `<Magento_root>` sul server utilizzando FTP, SFTP, SSH o il normale metodo di trasporto.
-1. Accedi al server come [utente amministratore](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli.html#config-install-cli-first) e verifica che il file si trovi nella directory corretta.
+1. Accedi al server come [utente amministratore](../../configuration/cli/config-cli.md#prerequisites) e verifica che il file si trovi nella directory corretta.
 1. Nell&#39;interfaccia della riga di comando, esegui i seguenti comandi in base all&#39;estensione della patch:
 
    ```bash

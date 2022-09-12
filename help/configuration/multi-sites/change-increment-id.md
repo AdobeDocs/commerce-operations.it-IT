@@ -1,9 +1,9 @@
 ---
 title: Cambia ID incremento
 description: Modificare l’ID incrementale per un’entità di database Commerce.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Questo articolo illustra come modificare l’ID incrementale per un’entità di
 
 - Adobe Commerce (locale): 2.x.x
 - Adobe Commerce sull’infrastruttura cloud: 2.x.x
-- MySQL: [qualsiasi versione supportata]
+- MySQL: [qualsiasi versione supportata](../../installation/prerequisites/database/mysql.md)
 
 ## Quando è necessario modificare l&#39;ID incrementale
 
@@ -75,4 +75,4 @@ Prima di eseguire `ALTER TABLE` su un ambiente di produzione di Adobe Commerce s
 
 [Richiesta rifiutata dal gateway PayPal - problema di fattura duplicato]: https://support.magento.com/hc/en-us/articles/115002457473
 [Creare un backup del database]: https://support.magento.com/hc/en-us/articles/360003254334
-[qualsiasi versione supportata]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html
+[qualsiasi versione supportata]

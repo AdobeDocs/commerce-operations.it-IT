@@ -1,9 +1,9 @@
 ---
 title: Dizionari di traduzione e pacchetti di lingue
 description: Scopri come generare dizionari di traduzione e generare pacchetti di lingue.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -284,7 +284,7 @@ Simile all’esempio precedente, genera un file CSV, ma invece di specificare un
    ```php
    <?php
    /**
-    * Copyright © Magento, Inc. All rights reserved.
+    * Copyright &copy; Magento, Inc. All rights reserved.
     * See COPYING.txt for license details.
     */
    
@@ -302,7 +302,7 @@ Simile all’esempio precedente, genera un file CSV, ma invece di specificare un
    ```xml
    <?xml version="1.0"?>
    /**
-   * Copyright © Magento, Inc. All rights reserved.
+   * Copyright &copy; Magento, Inc. All rights reserved.
    * See COPYING.txt for license details.
    */
    
@@ -315,16 +315,14 @@ Simile all’esempio precedente, genera un file CSV, ma invece di specificare un
 
 <!-- link definitions -->
 
-[Translate theme strings]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translate_theory.html
-[Panoramica sulle traduzioni]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html
-[Community Engineering contributions]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#translations-project
-[dizionario di traduzione]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-dictionaries
+[Panoramica sulle traduzioni]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
+[dizionario di traduzione]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
 [configura le traduzioni]: https://docs.magento.com/user-guide/stores/store-language-add.html?Highlight=translation
-[Ulteriori informazioni sui pacchetti linguistici]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-languagepack
+[Ulteriori informazioni sui pacchetti linguistici]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html
-[registri]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html
+[registri]: https://developer.adobe.com/commerce/php/development/build/component-registration/
 [`de_de`]: https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php
-[`compositore.json`]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/composer-integration.html
-[`registration.php`]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html
+[`compositore.json`]: https://developer.adobe.com/commerce/php/development/build/composer-integration/
+[`registration.php`]: https://developer.adobe.com/commerce/php/development/build/component-registration/
 [Magento\Test\Integrity\App\Language\CircularDependencyTest]: https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php

@@ -1,9 +1,9 @@
 ---
 title: Gestire la cache
 description: Gestisci i tipi di cache e visualizza lo stato della cache.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Commerce 2 dispone dei seguenti tipi di cache:
 | Riflessione | riflessione | Rimuove una dipendenza tra il modulo Webapi e il modulo Customer. |
 | Traduzioni | tradurre | Dopo aver unito le traduzioni da tutti i moduli, la cache di fusione verrà pulita. |
 | Configurazione dell’integrazione | config_integration | Integrazioni compilate. Pulisci o svuota la cache dopo aver modificato o aggiunto integrazioni. |
-| Configurazione dell’API di integrazione | config_integration_api | Configurazione delle API di integrazione compilata delle integrazioni dello Store. |
+| Configurazione dell’API di integrazione | config_integration_api | Configurazione API di integrazione compilata delle integrazioni dello Store. |
 | Configurazione servizi web | config_webservice | Memorizzazione in cache della struttura API Web. |
 | Notifica al cliente | customer_notification | Notifiche temporanee visualizzate nell’interfaccia utente. |
 
@@ -71,7 +71,7 @@ Questo comando consente di abilitare o disabilitare tutti i tipi di cache o solo
 
 >[!INFO]
 >
->A partire dalla versione 2.2, è possibile abilitare o disabilitare i tipi di cache solo utilizzando la riga di comando durante l’esecuzione di Commerce in modalità di produzione. Se esegui Commerce in modalità sviluppatore, puoi abilitare o disabilitare i tipi di cache utilizzando la riga di comando o manualmente. Prima di eseguire questa operazione, devi effettuare manualmente `<magento_root>/app/etc/env.php` scrivibile da [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+>A partire dalla versione 2.2, è possibile abilitare o disabilitare i tipi di cache solo utilizzando la riga di comando durante l’esecuzione di Commerce in modalità di produzione. Se esegui Commerce in modalità sviluppatore, puoi abilitare o disabilitare i tipi di cache utilizzando la riga di comando o manualmente. Prima di eseguire questa operazione, devi effettuare manualmente `<magento_root>/app/etc/env.php` scrivibile da [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 
 È possibile pulire (indicato anche come _scaricatore_ o _aggiorna_) utilizzando la riga di comando o l’amministratore.
 

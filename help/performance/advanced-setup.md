@@ -1,9 +1,9 @@
 ---
 title: Configurazione avanzata
 description: Esamina le best practice e le raccomandazioni per i sistemi aziendali di grandi dimensioni progettati per elaborare grandi volumi di dati.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Ad esempio, se esegui un profilo simile a B2B Medium, puoi sovrascrivere il valo
 
 Un numero elevato di SKU di prodotto, siti web, gruppi di clienti o cataloghi condivisi influisce sul tempo di esecuzione degli indici del prezzo del prodotto e delle regole del catalogo. Questo perché, per impostazione predefinita, tutti i siti web vengono assegnati a tutti i gruppi di clienti (cataloghi condivisi).
 
-Per ridurre il tempo di indicizzazione, puoi [escludere alcuni siti web dai gruppi di clienti (cataloghi condivisi)](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexer-optimization.html#customer-group-limitations-by-websites).
+Per ridurre il tempo di indicizzazione, puoi [escludere alcuni siti web dai gruppi di clienti (cataloghi condivisi)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
 
 ## Imposta Redis
 
@@ -56,7 +56,7 @@ Magento Open Source e Adobe [!DNL Commerce] code di messaggi di supporto impleme
 
 >[!WARNING]
 >
->La funzionalità del database diviso era [obsoleto](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) nella versione 2.4.2 di Adobe Commerce. Vedi [Ripristino da un database diviso a un singolo database](https://devdocs.magento.com/guides/v2.4/config-guide/revert-split-database.html).
+>La funzionalità del database diviso era [obsoleto](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) nella versione 2.4.2 di Adobe Commerce. Vedi [Ripristino da un database diviso a un singolo database](../configuration/storage/revert-split-database.md).
 
 Adobe Commerce consente di configurare lo storage di database scalabile per soddisfare le esigenze di un&#39;azienda in crescita. Puoi impostare tre database master separati che distribuiscono domini specifici:
 
@@ -95,7 +95,7 @@ Questo comando esegue le modifiche di configurazione ma non configura la replica
 Dopo aver suddiviso il database principale e aver impostato i database slave, [!DNL Commerce] regola automaticamente le connessioni a un database specifico, prendendo decisioni in base al tipo di richiesta (POST, PUT, GET, ecc.) e alla risorsa dati. Se [!DNL Commerce] Per le sue estensioni esegue operazioni di scrittura su una richiesta GET, il sistema passa automaticamente la connessione dal database slave al database master. Funziona allo stesso modo con i database master: non appena si lavora con una tabella relativa al checkout, tutte le query vengono reindirizzate a un database specifico. Nel frattempo, tutte le query relative al catalogo andranno al database principale.
 
 Per ulteriori dettagli sulla configurazione e sui vantaggi di più configurazioni master/slave, vedi
-[Soluzione per le prestazioni del database diviso](https://devdocs.magento.com/guides/v2.4/config-guide/multi-master/multi-master.html).
+[Soluzione per le prestazioni del database diviso](../configuration/storage/multi-master.md).
 
 ## Distribuire contenuti multimediali
 
@@ -107,4 +107,4 @@ Per ambienti a carico medio e elevato, si consiglia di utilizzare i servizi CDN 
 
 ## Configurare l’archiviazione dei registri
 
-L&#39;archiviazione dei log e la loro influenza su altre operazioni su disco influiscono sulla disponibilità dei nodi web, soprattutto in situazioni di carico elevato. Se non hai bisogno di questa funzione, consigliamo di ridurre al minimo la registrazione. È inoltre possibile configurare la registrazione in modo che esegua la scrittura su un sistema di storage separato con elevate velocità di accesso. Tieni presente che qualsiasi collo di bottiglia sull’accesso all’archiviazione dei log può influenzare direttamente l’elaborazione delle richieste in arrivo che registrano le operazioni di scrittura o lettura come parte del loro flusso.
+L&#39;archiviazione dei log e la loro influenza su altre operazioni su disco influiscono sulla disponibilità dei nodi web, soprattutto in situazioni di carico elevato. Se non ti serve, consigliamo di ridurre al minimo la registrazione. È inoltre possibile configurare la registrazione in modo che esegua la scrittura su un sistema di storage separato con elevate velocità di accesso. Tieni presente che qualsiasi collo di bottiglia sull’accesso all’archiviazione dei log può influenzare direttamente l’elaborazione delle richieste in arrivo che registrano le operazioni di scrittura o lettura come parte del loro flusso.

@@ -1,0 +1,68 @@
+---
+user-guide-title: Guida all’installazione
+user-guide-description: Scopri come installare Adobe Commerce e Magenti Open Source per le distribuzioni locali.
+source-git-commit: 949ef8d2036ceeef3cc892a5063ddecc2586a6a9
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 0%
+
+---
+
+
+# Guida all’installazione {#installation-guide}
+
+- [Panoramica](overview.md)
+- [Requisiti di sistema](system-requirements.md)
+- Prerequisiti {#prerequisites}
+   - [Panoramica](prerequisites/overview.md)
+   - File system {#file-system}
+      - [Panoramica](prerequisites/file-system/overview.md)
+      - [Configurare le autorizzazioni](prerequisites/file-system/configure-permissions.md)
+   - Server web {#web-server}
+      - [Nginx](prerequisites/web-server/nginx.md)
+      - [Apache](prerequisites/web-server/apache.md)
+   - Server database {#database-server}
+      - [MySQL](prerequisites/database/mysql.md)
+      - [Connessioni remote](prerequisites/database/mysql-remote.md)
+   - Motore di ricerca {#search-engine}
+      - [Panoramica](prerequisites/search-engine/overview.md)
+      - [AWS OpenSearch](prerequisites/search-engine/aws-opensearch.md)
+      - [Configura input penna](prerequisites/search-engine/configure-nginx.md)
+      - [Configurare Apache](prerequisites/search-engine/configure-apache.md)
+   - [PHP](prerequisites/php-settings.md)
+   - [Gestore messaggi](prerequisites/rabbitmq.md)
+   - [Sicurezza](prerequisites/security.md)
+   - [Chiavi di autenticazione](prerequisites/authentication-keys.md)
+   - [Adobe Commerce](prerequisites/commerce.md)
+   - [Software opzionale](prerequisites/optional-software.md)
+- [Installazione rapida](composer.md)
+- [Installazione avanzata](advanced.md)
+- Passaggi successivi all’installazione {#next-steps}
+   - [Verificare l’installazione](next-steps/verify.md)
+   - [Configurare l’applicazione](next-steps/configuration.md)
+   - [Imposta una maschera (facoltativo)](next-steps/set-umask.md)
+   - Installa i dati di esempio (facoltativo) {#sample-data}
+      - [Panoramica](sample-data/overview.md)
+      - [Download dei pacchetti del Compositore](sample-data/composer-packages.md)
+      - [Archivi Git clonati](sample-data/git-repositories.md)
+      - [Rimuovere o aggiornare moduli](sample-data/remove-or-update.md)
+- Tutorial {#tutorials}
+   - [Backup e ripristino del file system, dei supporti e del database](tutorials/backup.md)
+   - [Controllare lo stato del database](tutorials/database-status.md)
+   - [Configurare il comportamento del consumatore dei messaggi](tutorials/message-consumers.md)
+   - [Configurare il provider di blocco](tutorials/lock-provider.md)
+   - [Configurare lo store](tutorials/store.md)
+   - [Creare, modificare o sbloccare account di amministrazione](tutorials/admin.md)
+   - [Creare o aggiornare la configurazione della distribuzione](tutorials/deployment.md)
+   - [Creare lo schema del database](tutorials/database.md)
+   - [Visualizza o modifica l’URI amministratore](tutorials/admin-uri.md)
+   - [Attiva o disattiva la modalità di manutenzione](tutorials/maintenance-mode.md)
+   - [Attivare o disattivare i moduli](tutorials/manage-modules.md)
+   - [Installare un’estensione](tutorials/extensions.md)
+   - [Installa Commerce](tutorials/install.md)
+   - [Modificare il docroot per migliorare la sicurezza](tutorials/docroot.md)
+   - [Disinstallare i pacchetti di lingua](tutorials/language-packages.md)
+   - [Disinstallare i moduli](tutorials/uninstall-modules.md)
+   - [Disinstallare o reinstallare Commerce](tutorials/uninstall.md)
+   - [Disinstallare i temi](tutorials/themes.md)
+   - [Aggiornare lo schema del database](tutorials/database-upgrade.md)

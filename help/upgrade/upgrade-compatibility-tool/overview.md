@@ -1,9 +1,9 @@
 ---
-title: '"Panoramica del [!DNL Upgrade Compatibility Tool]"'
+title: "Panoramica del [!DNL Upgrade Compatibility Tool]"
 description: Scopri le [!DNL Upgrade Compatibility Tool] e come può aiutarti con il tuo progetto Adobe Commerce.
-source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -45,15 +45,15 @@ Se hai bisogno di informazioni o hai domande che non sono incluse in questa guid
 
 Per connettersi al [!DNL Upgrade Compatibility Tool] team, contattateci sul canale di Slack ingegneristico [#upgrade-compatibilità-tool](https://magentocommeng.slack.com/archives/C019Y143U9F). Vogliamo sentire i tuoi feedback, problemi e suggerimenti per aiutarci a migliorare lo strumento.
 
-La [!DNL Upgrade Compatibility Tool] utilizza le regole definite nella [Standard di codifica](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) per garantire che il progetto segua le best practice di Adobe Commerce e per migliorare ed estendere la [!DNL Upgrade Compatibility Tool].
+La [!DNL Upgrade Compatibility Tool] utilizza le regole definite nella [Standard di codifica](https://developer.adobe.com/commerce/php/coding-standards/) per garantire che il progetto segua le best practice di Adobe Commerce e per migliorare ed estendere la [!DNL Upgrade Compatibility Tool].
 
-Fai riferimento a [Collaborare](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) argomento per ulteriori informazioni su come contribuire agli standard di codifica.
+Fai riferimento a [Collaborare](https://developer.adobe.com/commerce/php/coding-standards/contributing/) argomento per ulteriori informazioni su come contribuire agli standard di codifica.
 
 ## Risorse
 
 Consulta le seguenti risorse per comprendere meglio gli aggiornamenti di Adobe Commerce:
 
-- La [guida all&#39;aggiornamento](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) fornisce una panoramica del percorso di aggiornamento Adobe Commerce o Magento Open Source tipico e delle best practice da seguire lungo quel percorso.
+- La [guida all&#39;aggiornamento](../overview.md) fornisce una panoramica del percorso di aggiornamento Adobe Commerce o Magento Open Source tipico e delle best practice da seguire lungo quel percorso.
 - La [prossime versioni](https://devdocs.magento.com/release/) fornisce le date delle versioni pianificate e future.
 - La [risorse comunitarie](https://developer.adobe.com/commerce/contributor/community/) la pagina deve essere posizionata per avviare discussioni o trovare ulteriori informazioni.
 - Controlla la [strumenti correlati](../upgrade-compatibility-tool/related-tools.md) per strumenti utili nel tipico percorso di aggiornamento.

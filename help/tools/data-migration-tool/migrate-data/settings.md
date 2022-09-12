@@ -1,9 +1,9 @@
 ---
 title: Impostazioni di migrazione dei dati
 description: Scopri come avviare la migrazione delle impostazioni dal Magento 1 al Magento 2 con [!DNL Data Migration Tool].
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ La `Settings` la modalità esegue la migrazione di negozi, siti web e configuraz
 
 Prima di iniziare, procedi come segue per preparare:
 
-1. Accedi al server con la tua istanza di Magento 2 come [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Accedi al server delle applicazioni come [proprietario del file system](../../../installation/prerequisites/file-system/overview.md).
 
-1. Modifica al Magento 2 `/bin` o accertati che venga aggiunto al percorso del sistema.
+1. Cambia in `/bin` o assicurati che sia aggiunto al tuo sistema `PATH`.
 
 >[!NOTE]
 >
@@ -53,15 +53,15 @@ La `Migration completed` viene visualizzato un messaggio dopo il corretto trasfe
 
 È possibile ignorare, rinominare o modificare le configurazioni di sistema durante la migrazione delle impostazioni. A questo scopo, specifica le regole personalizzate nella `settings.xml` file.
 
-1. Accedi al server con la tua istanza di Magento 2 come, o passa a, il [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Accedi al server applicazioni come, o passa a, il [proprietario del file system](../../../installation/prerequisites/file-system/overview.md).
 
 1. Passa alla seguente directory:
 
    ```bash
-   cd <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
+   cd <your application 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
-   Ad esempio, se il Magento 2 è installato in `/var/www/html`, `settings.xml.dist` il file si trova in una delle seguenti directory:
+   Ad esempio, se l&#39;applicazione è installata in `/var/www/html`, `settings.xml.dist` il file si trova in una delle seguenti directory:
 
    * `/var/www/html/vendor/magento/data-migration-tool/etc/opensource-to-commerce`
 

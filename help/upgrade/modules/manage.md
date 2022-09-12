@@ -1,9 +1,9 @@
 ---
 title: Gestire moduli ed estensioni
 description: Utilizza l’interfaccia della riga di comando per abilitare, disabilitare e disinstallare Adobe Commerce e i moduli e le estensioni di Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '76'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Devi utilizzare la riga di comando per gestire moduli ed estensioni Adobe Commer
 
 ## Attivare o disattivare un modulo
 
-Per abilitare o disabilitare un modulo, vedi [Attivare o disattivare i moduli](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+Per abilitare o disabilitare un modulo, vedi [Attivare o disattivare i moduli](../../installation/tutorials/manage-modules.md).
 
 ## Disinstallare un modulo
 
-Per disinstallare un modulo, vedi [Disinstallare i moduli](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+Per disinstallare un modulo, vedi [Disinstallare i moduli](../../installation/tutorials/uninstall-modules.md).
 
-Per disinstallare un tema, utilizza [`theme:uninstall`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-theme-uninstall.html) comando.
+Per disinstallare un tema, utilizza [`theme:uninstall`](../../installation/tutorials/themes.md) comando.

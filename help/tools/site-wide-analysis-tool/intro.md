@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Site-Wide Analysis Tool]"'
+title: "[!DNL Site-Wide Analysis Tool]"
 description: Scopri le [!DNL Site-Wide Analysis] Strumento, usi, processo di installazione e modalità di accesso
-source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,13 @@ Visualizza tutte le informazioni importanti sul sito in un’unica posizione. [!
 
 - [**[!DNL Security Scan Tool]**](https://docs.magento.com/user-guide/magento/security-scan.html) - Fornisce ai clienti open-source Adobe Commerce e Magento informazioni in tempo reale sullo stato di sicurezza del loro negozio rilevando in modo proattivo il malware e avvisandoli se il loro negozio è compromesso.
 
-- [**[!DNL Upgrade Compatability Tool]**](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) - Esegue l&#39;istanza personalizzata di Adobe Commerce rispetto alla versione di aggiornamento di destinazione e restituisce un riepilogo dei problemi critici, degli errori e degli avvisi che devono essere risolti, rendendo il processo di analisi dell&#39;aggiornamento più semplice, più veloce e meno costoso.
+- [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md) - Esegue l&#39;istanza personalizzata di Adobe Commerce rispetto alla versione di aggiornamento di destinazione e restituisce un riepilogo dei problemi critici, degli errori e degli avvisi che devono essere risolti, rendendo il processo di analisi dell&#39;aggiornamento più semplice, più veloce e meno costoso.
 
 - [**[!DNL Managed Alerts]**](https://support.magento.com/hc/en-us/sections/360010758472-Managed-alerts-for-Adobe-Commerce) - Monitorare più metriche per monitorare in modo proattivo le prestazioni della piattaforma e fornire istruzioni specifiche su come risolvere i problemi, in modo che i commercianti possano evitare tempi di inattività critici e rimanere informati sulle loro CPU, prestazioni dell&#39;applicazione, disco, memoria e database.
 
 ## Per chi è questa guida?
 
-Commercianti e partner che desiderano avere una maggiore visibilità sui loro siti web Adobe Commerce. Permette ai commercianti di migliorare l’esperienza dei propri clienti e di allinearsi maggiormente sulle raccomandazioni relative alle best practice e sui problemi fondamentali.
+Commercianti e partner che desiderano avere una maggiore visibilità sui loro siti web Adobe Commerce. Consente ai commercianti di migliorare l&#39;esperienza dei propri clienti e di allinearsi maggiormente sui consigli relativi alle best practice e sui problemi fondamentali.
 
 ## [!DNL Site-Wide Analysis Tool] demo
 

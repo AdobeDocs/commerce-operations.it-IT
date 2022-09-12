@@ -1,9 +1,9 @@
 ---
 title: Comprendere l'ambito dell'aggiornamento
 description: Scopri le modifiche incompatibili con le versioni precedenti in una versione che potrebbero avere un impatto sui moduli personalizzati Adobe Commerce o Magenti Open Source o sulle estensioni di terze parti.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ La nuova politica di compatibilità di Adobe Commerce Marketplace assicura che _
 
 ## Moduli personalizzati
 
-Tutti i moduli personalizzati devono essere verificati rispetto alla versione di destinazione a cui si desidera effettuare l’aggiornamento. Questo è il processo più lungo e laborioso di un aggiornamento, Durante la valutazione dei moduli personalizzati, è necessario cercare le modifiche incompatibili con le versioni precedenti e conoscere nuove pratiche, come la decomposizione del controller. Per ulteriori informazioni, consulta la sezione [note sulla versione](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Inoltre, assicurati di seguire [best practice](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) per lo sviluppo del modulo.
+Tutti i moduli personalizzati devono essere verificati rispetto alla versione di destinazione a cui si desidera effettuare l’aggiornamento. Questo è il processo più lungo e laborioso di un aggiornamento, Durante la valutazione dei moduli personalizzati, è necessario cercare le modifiche incompatibili con le versioni precedenti e conoscere nuove pratiche, come la decomposizione del controller. Per ulteriori informazioni, consulta la sezione [note sulla versione](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Inoltre, assicurati di seguire [best practice](https://developer.adobe.com/commerce/php/best-practices/extensions/) per lo sviluppo del modulo.
 
 ## [!DNL Upgrade Compatibility Tool]
 
@@ -107,7 +107,7 @@ Tutti i problemi identificati dallo strumento sono elencati nel rapporto con cod
 
 Utilizza il rapporto per stimare il tempo necessario per aggiornare il codice per l&#39;aggiornamento. In base all’esperienza, puoi stimare lo sforzo necessario per effettuare l’aggiornamento in base al numero totale di problemi identificati e alla gravità dei problemi. Poiché si tratta di uno strumento a riga di comando, puoi incorporarlo nelle suite di test e di controllo del codice automatizzati e utilizzare l’output JSON per generare i rapporti.
 
-È consigliabile salvare i risultati di ogni progetto di aggiornamento in modo da poter confrontare i risultati futuri dell’aggiornamento con i risultati precedenti. Con un utilizzo continuo, inizierai a sviluppare un’idea del livello di impegno necessario per eseguire l’aggiornamento alla versione successiva, partendo dal rapporto di riepilogo fornito dallo strumento.
+È consigliabile salvare i risultati di ogni progetto di aggiornamento in modo da poter confrontare i risultati futuri dell’aggiornamento con i risultati precedenti. Con un utilizzo continuo, inizierai a sviluppare un buon senso del livello di impegno necessario per eseguire l’aggiornamento alla versione successiva, semplicemente dal rapporto di riepilogo fornito dallo strumento.
 
 Inoltre, consigliamo di eseguire regolarmente lo strumento mentre lavori all’aggiornamento per avere una visibilità sull’avanzamento. Il numero di problemi dovrebbe diminuire man mano che li correggi. Questo aiuta anche il tuo team a decidere l&#39;approccio migliore per distribuire il lavoro.
 

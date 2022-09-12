@@ -1,7 +1,7 @@
 ---
 title: Elaborazione dell'ordine ad alta velocità
 description: Ottimizza la posizione dell’ordine e l’esperienza di pagamento per la distribuzione Adobe Commerce o Magenti Open Source.
-source-git-commit: 6afdb941ce3753af02bde3dddd4e66414f488957
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 0%
@@ -184,13 +184,8 @@ stage:
 
 <!-- link definitions -->
 
-[Apply patches]: https://devdocs.magento.com/cloud/project/project-patch.html
 [global]: https://docs.magento.com/user-guide/catalog/inventory-options-global.html
 [inventory]: https://docs.magento.com/user-guide/configuration/catalog/inventory.html
-[Install extensions]: https://devdocs.magento.com/extensions/install/
-[cloud-extensions]: https://devdocs.magento.com/cloud/howtos/install-components.html
-
 [mrg]: https://developer.adobe.com/commerce/php/module-reference/
-[AsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-async-order.html
-[CalcoloTotaleDifferito]: https://devdocs.magento.com/guides/v2.4/mrg/module-deferred-total-calculating.html
-[NegotiableQuoteAsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-negotiable-quote-async-order.html
+[AsyncOrder]: https://developer.adobe.com/commerce/php/module-reference/module-async-order/
+[CalcoloTotaleDifferito]: https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/

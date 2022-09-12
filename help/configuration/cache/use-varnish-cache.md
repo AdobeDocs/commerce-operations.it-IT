@@ -1,9 +1,9 @@
 ---
 title: Cancellazione della cache con vernice
 description: Scopri come funziona la cancellazione della cache con Varnish e come utilizzarla come acceleratore di memorizzazione nella cache web per l’applicazione Adobe Commerce.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,4 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 
 Per aggiornare la cache utilizzando l’amministratore, fai clic su **[!UICONTROL SYSTEM]** > Strumenti > **Gestione cache**, quindi fai clic su **Svuotare la cache del Magento** nella parte superiore della pagina. È inoltre possibile aggiornare singoli tipi di cache.
 
-Per aggiornare la cache utilizzando la riga di comando, in genere si utilizza il [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) come comando [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+Per aggiornare la cache utilizzando la riga di comando, in genere si utilizza il [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) come comando [proprietario del file system](../../installation/prerequisites/file-system/overview.md).

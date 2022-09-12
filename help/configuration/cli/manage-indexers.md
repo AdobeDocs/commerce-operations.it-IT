@@ -1,9 +1,9 @@
 ---
 title: Gestire gli indici
 description: Vedi esempi su come visualizzare e gestire gli indici Commerce.
-source-git-commit: dd84039be22b6bd25d57912615d64bad91970926
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Catalog Search index has been rebuilt successfully in <time>
 
 ### Reindicizzazione in modalità parallela
 
-Gli indicizzatori sono delimitati e multithread per supportare la reindicizzazione in modalità parallela. Assegna un parallelismo in base alla dimensione dell’indicizzatore e viene eseguito su più thread, riducendo il tempo di elaborazione.
+Gli indicizzatori sono delimitati e multithread per supportare la reindicizzazione in modalità parallela. Assegna un parallelismo in base alla dimensione dell’indicizzatore ed esegue più thread, riducendo il tempo di elaborazione.
 
 In tale contesto, `dimension` è l&#39;ambito di applicazione della reindicizzazione, ad esempio a `website` o semplicemente `customer_group`.
 
@@ -220,7 +220,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->Prima di cambiare le modalità di indicizzazione, si consiglia di inserire il sito Web in [manutenzione](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) modalità e [disattivare cron jobs](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). In questo modo non si verificano blocchi del database.
+>Prima di cambiare le modalità di indicizzazione, si consiglia di inserire il sito Web in [manutenzione](../../installation/tutorials/maintenance-mode.md) modalità e [disattivare cron jobs](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). In questo modo non si verificano blocchi del database.
 
 Per specificare la configurazione dell&#39;indicizzatore:
 

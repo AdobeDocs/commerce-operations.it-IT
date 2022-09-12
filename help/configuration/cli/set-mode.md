@@ -1,9 +1,9 @@
 ---
 title: Impostare la modalità operativa
 description: Scopri come impostare le modalità operative di Adobe Commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Eccezioni:
 
 ## Visualizza la modalità corrente
 
-Il modo più semplice per farlo è eseguire questo comando come [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html). Se hai condiviso l&#39;hosting, questo è l&#39;utente che il provider ti dà per accedere al server. Se disponi di un server privato, in genere si tratta di un account utente locale sul server Commerce.
+Il modo più semplice per farlo è eseguire questo comando come [proprietario del file system](../../installation/prerequisites/file-system/overview.md). Se hai condiviso l&#39;hosting, questo è l&#39;utente che il provider ti dà per accedere al server. Se disponi di un server privato, in genere si tratta di un account utente locale sul server Commerce.
 
 Utilizzo comando:
 

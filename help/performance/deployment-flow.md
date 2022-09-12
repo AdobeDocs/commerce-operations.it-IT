@@ -1,9 +1,9 @@
 ---
 title: Flusso di distribuzione
-description: 'Scopri i passaggi necessari per distribuire Adobe Commerce o Magenti Open Source in un ambiente di produzione. '
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+description: Scopri i passaggi necessari per distribuire Adobe Commerce o Magenti Open Source in un ambiente di produzione.
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ bin/magento setup:di:compile
 
 ## Aggiornare il caricatore automatico
 
-Al termine della compilazione, confermare che [APCu abilitato](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html#php-settings) e aggiorna il caricatore automatico:
+Al termine della compilazione, confermare che [APCu abilitato](../performance/software.md#php-settings) e aggiorna il caricatore automatico:
 
 Per aggiornare il caricatore automatico:
 
@@ -82,7 +82,7 @@ Distribuzione di cause di contenuto statico [!DNL Commerce] per eseguire le azio
 
 Se il contenuto statico non viene distribuito, [!DNL Commerce] esegue al volo tutte le operazioni elencate, con conseguente significativo aumento del tempo di risposta.
 
-È possibile utilizzare una varietà di opzioni per personalizzare le operazioni di distribuzione in base alle dimensioni dello store e alle esigenze di conformità. La più comune è la strategia di implementazione compatta. Vedi [Strategie di distribuzione dei file statici](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html)
+È possibile utilizzare una varietà di opzioni per personalizzare le operazioni di distribuzione in base alle dimensioni dello store e alle esigenze di conformità. La più comune è la strategia di implementazione compatta. Vedi [Strategie di distribuzione dei file statici](../configuration/cli/static-view-file-strategy.md)
 
 Per distribuire contenuto statico:
 

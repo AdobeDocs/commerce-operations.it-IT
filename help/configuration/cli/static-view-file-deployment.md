@@ -1,9 +1,9 @@
 ---
 title: Distribuzione di file di visualizzazione statici
 description: Scopri come scrivere file statici nel file system Commerce durante la modalità di produzione.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ La distribuzione dei file di visualizzazione statica viene influenzata dalle mod
 
 >[!WARNING]
 >
->_Solo in modalità Sviluppatore_: Quando installi o attivi un nuovo modulo, potrebbe caricare nuovi JavaScript, CSS, layout e così via. Per evitare problemi con i file statici, è necessario pulire i file precedenti per assicurarsi di ottenere tutte le modifiche per il nuovo modulo. È possibile pulire i file di visualizzazione statica generati in diversi modi. Fai riferimento a [Pulisci argomento della cache dei file statici per i dettagli](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache) per ulteriori informazioni.
+>_Solo in modalità Sviluppatore_: Quando installi o attivi un nuovo modulo, potrebbe caricare nuovi JavaScript, CSS, layout e così via. Per evitare problemi con i file statici, è necessario pulire i file precedenti per assicurarsi di ottenere tutte le modifiche per il nuovo modulo. È possibile pulire i file di visualizzazione statica generati in diversi modi. Fai riferimento a [Pulisci argomento della cache dei file statici per i dettagli](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) per ulteriori informazioni.
 
 **Per distribuire file di visualizzazione statici**:
 
-1. Accedi al server Commerce come oppure [passa al proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Accedi al server Commerce come oppure [passa al proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 1. Elimina il contenuto di `<magento_root>/pub/static`, ad eccezione del `.htaccess` file. Non eliminare questo file.
 1. Esegui lo strumento di distribuzione dei file di visualizzazione statica `<magento_root>/bin/magento setup:static-content:deploy`.
 
@@ -158,7 +158,7 @@ A questo scopo, procedi come segue:
 
 ## Risoluzione dei problemi relativi allo strumento di distribuzione dei file di visualizzazione statica
 
-[Installare prima il software Commerce](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html); in caso contrario, non è possibile eseguire lo strumento di distribuzione dei file di visualizzazione statica.
+[Installare prima il software Commerce](../../installation/overview.md); in caso contrario, non è possibile eseguire lo strumento di distribuzione dei file di visualizzazione statica.
 
 **Sintomo**: Quando si esegue lo strumento di distribuzione dei file di visualizzazione statica, viene visualizzato il seguente errore:
 
@@ -170,9 +170,9 @@ ERROR: You need to install the Commerce application before running this utility.
 
 Segui i passaggi seguenti:
 
-1. Installare il software Commerce utilizzando [riga di comando](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli.html).
-1. Accedi al server Commerce come oppure [passa a](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html), il proprietario del file system.
-1. Elimina il contenuto di `<magento_root>/pub/static` ad eccezione della `.htaccess` file. Non eliminare questo file.
+1. Installare il software Commerce utilizzando [riga di comando](../../installation/composer.md).
+1. Accedi al server dell&#39;applicazione come, o [passa a](../../installation/prerequisites/file-system/overview.md), il proprietario del file system.
+1. Elimina il contenuto di `<app_root>/pub/static` ad eccezione della `.htaccess` file. Non eliminare questo file.
 1. Distribuire file di visualizzazione statici: `bin/magento setup:static-content:deploy`
 
 ## Suggerimento per gli sviluppatori per personalizzare lo strumento di distribuzione dei contenuti statici

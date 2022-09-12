@@ -1,9 +1,9 @@
 ---
 title: Configura le [!DNL Data Migration Tool]
 description: Scopri i due metodi per configurare il [!DNL Data Migration Tool] trasferire i dati tra il Magento 1 e il Magento 2.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Prima di eseguire la migrazione di qualsiasi dato, devi creare una `config.xml` 
 
 Per configurare le [!DNL Data Migration Tool] per la migrazione:
 
-1. Accedi al server di Magento come o passa a [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Accedi al server delle applicazioni come o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 
 1. Passa alla seguente directory:
 

@@ -1,9 +1,9 @@
 ---
 title: Migrare le modifiche
 description: Scopri come eseguire la migrazione solo dei dati modificati dall’ultima migrazione dei dati del Magento 1 con [!DNL Data Migration Tool].
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,8 @@ Lo strumento di migrazione incrementale installa le tabelle di catalogo (con pre
 
 Prima di iniziare, procedi come segue per preparare:
 
-1. Accedi al server di Magento come [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Modifica al Magento `/bin` o accertati che venga aggiunto al percorso del sistema.
+1. Accedi al server delle applicazioni come [proprietario del file system](../../../installation/prerequisites/file-system/overview.md).
+1. Cambia in `/bin` o assicurati che sia aggiunto al tuo sistema `PATH`.
 
 Consulta la sezione [primi passi](overview.md#first-steps) per ulteriori dettagli.
 

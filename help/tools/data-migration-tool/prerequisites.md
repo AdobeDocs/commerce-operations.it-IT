@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Data Migration Tool] prerequisiti"'
-description: '"Scopri cosa devi fare prima di iniziare a utilizzare i [!DNL Data Migration Tool] trasferire i dati tra il Magento 1 e il Magento 2."'
-source-git-commit: 87298a6dfd783fed264f275495a3ad72374eb9f6
+title: "[!DNL Data Migration Tool] prerequisiti"
+description: "Scopri cosa devi fare prima di iniziare a utilizzare i [!DNL Data Migration Tool] trasferire i dati tra il Magento 1 e il Magento 2."
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ Prima di avviare la migrazione, accertati che siano soddisfatti i seguenti requi
 
 ## Magento 2
 
-* Impostare il sistema di Magento 2 in modo che soddisfi i requisiti [requisiti di sistema](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+* Impostare il sistema di Magento 2 in modo che soddisfi i requisiti [requisiti di sistema](../../installation/system-requirements.md).
 
    Utilizzare una topologia e una progettazione che almeno corrispondano al sistema di Magento 1 esistente.
 
-* [Installa Magento 2](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html).
+* [Installa Magento 2](../../installation/overview.md).
 
 ## Cron
 

@@ -1,9 +1,9 @@
 ---
 title: Eseguire un aggiornamento
 description: Segui questi passaggi per aggiornare un progetto Adobe Commerce o Magenti Open Source.
-source-git-commit: 3c3966a904b0568e0255020d8880d348c357ea95
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 >
 >Non utilizzare questo metodo per l’aggiornamento se hai clonato l’archivio GitHub. Invece, vedi [Aggiornare un’installazione basata su Git](../developer/git-installs.md) per istruzioni sull’aggiornamento.
 
-Le istruzioni seguenti mostrano come effettuare l’aggiornamento utilizzando Composer. Adobe Commerce 2.4.2 ha introdotto il supporto per Composer 2. Se stai tentando di eseguire l&#39;aggiornamento da &lt;2.4.1, devi prima eseguire l&#39;aggiornamento a una versione compatibile con il Compositore 2 (ad esempio, 2.4.2) utilizzando il Compositore 1 _prima_ aggiornamento a Composer 2 per gli aggiornamenti a >2.4.2. Inoltre, devi eseguire un [versione supportata](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) di PHP.
+Le istruzioni seguenti mostrano come effettuare l’aggiornamento utilizzando Composer. Adobe Commerce 2.4.2 ha introdotto il supporto per Composer 2. Se stai tentando di eseguire l&#39;aggiornamento da &lt;2.4.1, devi prima eseguire l&#39;aggiornamento a una versione compatibile con il Compositore 2 (ad esempio, 2.4.2) utilizzando il Compositore 1 _prima_ aggiornamento a Composer 2 per gli aggiornamenti a >2.4.2. Inoltre, devi eseguire un [versione supportata](../../installation/system-requirements.md) di PHP.
 
 >[!WARNING]
 >
@@ -42,7 +42,7 @@ Devi completare la [prerequisiti per l’aggiornamento](../prepare/prerequisites
    bin/magento maintenance:enable
    ```
 
-   Vedi [Attiva o disattiva la modalità di manutenzione](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) per ulteriori opzioni. Facoltativamente, puoi creare un [pagina della modalità di manutenzione personalizzata](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
+   Vedi [Attiva o disattiva la modalità di manutenzione](../../installation/tutorials/maintenance-mode.md) per ulteriori opzioni. Facoltativamente, puoi creare un [pagina della modalità di manutenzione personalizzata](../troubleshooting/maintenance-mode-options.md).
 
 1. L’avvio del processo di aggiornamento mentre i processi asincroni, come i consumatori della coda dei messaggi, sono in esecuzione, può causare il danneggiamento dei dati. Per evitare il danneggiamento dei dati, disattiva tutti i lavori cron.
 
@@ -253,7 +253,7 @@ Apri l’URL della vetrina in un browser web per verificare se l’aggiornamento
 
 Se l’applicazione non riesce con un  `We're sorry, an error has occurred while generating this email.` errore:
 
-1. Reimposta [proprietà e autorizzazioni del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html) come utente con `root` privilegi.
+1. Reimposta [proprietà e autorizzazioni del file system](../../installation/prerequisites/file-system/configure-permissions.md) come utente con `root` privilegi.
 1. Cancella le seguenti directory:
    - `var/cache/`
    - `var/page_cache/`

@@ -1,9 +1,9 @@
 ---
 title: Configurare le parole chiave di ricerca
 description: Scopri come gestire le parole chiave per Adobe Commerce utilizzando i file CSV.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Durata predefinita del file di parole non arrivate a termine [cache](https://glo
 
 **Per modificare le parole rapide**:
 
-1. Accedi al server Commerce o passa a [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Accedi al server Commerce o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 1. Utilizza un editor di testo per aprire un file di interruzione nel `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory.
 
    I file CSV utilizzano la convenzione di denominazione `stopwords_<locale_code>.csv`. Ad esempio, il nome del file stopword tedesco `stopwords_de_DE.csv`.
@@ -60,7 +60,7 @@ Durata predefinita del file di parole non arrivate a termine [cache](https://glo
 
 **Per aggiungere parole rapide a un&#39;impostazione internazionale**:
 
-1. Accedi al server Commerce o passa a [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Accedi al server Commerce o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 
 1. Utilizzare un editor di testo per creare un file di interruzione denominato `stopwords_<locale_code>.csv` in `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory.
 
@@ -125,7 +125,7 @@ Il percorso dipende dalla modalità di installazione del software Commerce. Se h
 
 ## Per modificare la directory dal modulo
 
-1. [Creare un modulo](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html)
+1. [Creare un modulo](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. Nel modulo `etc/di.xml` aggiungi le istruzioni:
 
    ```xml

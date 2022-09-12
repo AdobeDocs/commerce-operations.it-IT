@@ -1,9 +1,9 @@
 ---
 title: Funzionamento delle patch
 description: Scopri i diversi tipi di patch per Adobe Commerce e Magenti Open Source e come funzionano.
-source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->È consigliabile testare tutte le patch in un ambiente di staging o di sviluppo prima di distribuirle in produzione. Si consiglia inoltre vivamente di eseguire il backup dei dati prima di applicare una patch. Vedi [Eseguire il backup e il rollback del file system](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>È consigliabile testare tutte le patch in un ambiente di staging o di sviluppo prima di distribuirle in produzione. Si consiglia inoltre vivamente di eseguire il backup dei dati prima di applicare una patch. Vedi [Eseguire il backup e il rollback del file system](../../installation/tutorials/backup.md).
 
 I file di patch (o diff) sono file di testo che annotano:
 

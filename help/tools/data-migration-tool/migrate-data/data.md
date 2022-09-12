@@ -1,9 +1,9 @@
 ---
 title: Eseguire la migrazione dei dati
 description: Scopri come avviare la migrazione dei dati dal Magento 1 al Magento 2 con [!DNL Data Migration Tool].
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Prima di iniziare, procedi come segue per preparare:
 
-1. Accedi al server delle applicazioni come [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Accedi al server delle applicazioni come [proprietario del file system](../../../installation/prerequisites/file-system/overview.md).
 1. Passa alla directory di installazione dell&#39;applicazione o accertati che venga aggiunta al sistema `PATH`.
 
 Consulta la sezione [primi passi](overview.md#first-steps) per ulteriori dettagli.

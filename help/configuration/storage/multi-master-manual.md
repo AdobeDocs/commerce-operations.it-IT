@@ -1,9 +1,9 @@
 ---
 title: Configurare manualmente i database master
 description: Consulta le istruzioni sulla configurazione manuale della soluzione di database suddivisi.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ L&#39;Adobe consiglia vivamente di eseguire il backup del database e del file sy
 
 **Per eseguire il backup del sistema**:
 
-1. Accedi al tuo server Commerce come o passa a [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Accedi al tuo server Commerce come o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 1. Immetti i seguenti comandi:
 
    ```bash
@@ -476,7 +476,7 @@ L’ultimo passaggio nella suddivisione manuale dei database consiste nell’agg
 
 Per aggiornare la configurazione della distribuzione:
 
-1. Accedi al tuo server Commerce come o passa a [proprietario del file system](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Accedi al tuo server Commerce come o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 1. Esegui il backup della configurazione di distribuzione:
 
    ```bash

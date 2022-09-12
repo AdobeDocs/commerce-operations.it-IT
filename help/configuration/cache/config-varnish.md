@@ -1,7 +1,7 @@
 ---
 title: Configurare e utilizzare Varnish
 description: Comprendere come Varnish memorizza i file e migliora il traffico HTTP.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
@@ -144,7 +144,7 @@ Se il contenuto cambia sul server, il client scarica la risorsa statica con un c
 
 <!-- Link Definitions -->
 
-[database]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/cache/partial-caching/database-caching.html
+[database]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [La grande immagine verniciata]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [Cache verniciata]: https://varnish-cache.org
 [Opzioni di avvio vernice]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options

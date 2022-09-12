@@ -1,9 +1,9 @@
 ---
-title: '"Esegui il [!DNL Upgrade Compatibility Tool]"'
+title: "Esegui il [!DNL Upgrade Compatibility Tool]"
 description: Segui questi passaggi per eseguire il [!DNL Upgrade Compatibility Tool] in un’interfaccia a riga di comando per il progetto Adobe Commerce.
-source-git-commit: c10afb6632fa4e77f46b540c2b89f54b9cab430c
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1072'
 ht-degree: 0%
 
 ---
@@ -156,7 +156,7 @@ La `bin/uct core:code:changes` controlla se nel sistema è presente un&#39;istan
 
 Puoi eseguire un [!DNL Upgrade Compatibility Tool] con il comando `--vanilla-dir` per specificare la directory di installazione di vaniglia di Adobe Commerce.
 
-Consulta la sezione [Distribuzione di un&#39;istanza di vaniglia](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) per ulteriori informazioni.
+Consulta la sezione [Distribuzione di un&#39;istanza di vaniglia](https://developer.adobe.com/commerce/contributor/guides/code-contributions/#deploy-vanilla-magento-open-source-instance) per ulteriori informazioni.
 
 ## Utilizza la `refactor` command
 
@@ -249,7 +249,7 @@ Questo restituisce opzioni specifiche che possono essere eseguite per `upgrade:c
 ## Segui le best practice di Adobe Commerce
 
 - Evitare di avere due moduli con lo stesso nome.
-- Segui Adobe Commerce [norme di codifica](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
+- Segui Adobe Commerce [norme di codifica](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [Guida all’aggiornamento](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) best practice.
 
 ## Ottimizzare i risultati

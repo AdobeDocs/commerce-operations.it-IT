@@ -1,9 +1,9 @@
 ---
 title: Recommendations software
 description: Rivedi un elenco di software consigliati relativi alle prestazioni ottimali delle distribuzioni Adobe Commerce e Magenti Open Source.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 È necessario il software seguente per le istanze di produzione di [!DNL Commerce]:
 
-* [PHP](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html)
+* [PHP](../installation/system-requirements.md)
 * Nginx e [PHP-FPM](https://php-fpm.org/)
-* [[!DNL MySQL]](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html)
-* [[!DNL Elasticsearch] o OpenSearch](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html)
+* [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
+* [[!DNL Elasticsearch] o OpenSearch](../installation/prerequisites/search-engine/overview.md)
 
 Per le implementazioni multi-server o per i commercianti che pianificano l’scalabilità della propria attività, si consiglia di:
 
-* [[!DNL Varnish] cache](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish.html)
-* [Redis](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-session.html) per le sessioni (da 2.0.6+)
-* Un&#39;istanza Redis separata come tua [cache predefinita](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-pg-cache.html) (non utilizzare questa istanza per la cache della pagina)
+* [[!DNL Varnish] cache](../configuration/cache/config-varnish.md)
+* [Redis](../configuration/cache/redis-session.md) per le sessioni (da 2.0.6+)
+* Un&#39;istanza Redis separata come tua [cache predefinita](../configuration/cache/redis-pg-cache.md) (non utilizzare questa istanza per la cache della pagina)
 
-Vedi [requisiti di sistema](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) per informazioni sulle versioni supportate di ciascun tipo di software.
+Vedi [requisiti di sistema](../installation/system-requirements.md) per informazioni sulle versioni supportate di ciascun tipo di software.
 
 ## Sistema operativo
 
@@ -146,7 +146,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-Quando ottimizza l’allocazione della memoria per opcache, prendi in considerazione le dimensioni della base di codice del Magento e tutte le tue estensioni. Il team delle prestazioni del Magento utilizza i valori nell’esempio precedente per il test, in quanto fornisce spazio sufficiente in opcache per il numero medio di estensioni installate.
+Quando ottimizza l’allocazione della memoria per opcache, prendi in considerazione le dimensioni della base del codice del Magento e tutte le tue estensioni. Il team delle prestazioni del Magento utilizza i valori nell&#39;esempio precedente per il test, perché fornisce spazio sufficiente in opcache per il numero medio di estensioni installate.
 
 Se si dispone di una macchina a memoria insufficiente e non sono installate molte estensioni o personalizzazioni, utilizzare le seguenti impostazioni per ottenere un risultato simile:
 
@@ -157,7 +157,7 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-Si consiglia di abilitare [Estensione PHP APCu](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) e [configurazione `composer` per sostenerlo](https://devdocs.magento.com/guides/v2.4/performance-best-practices/deployment-flow.html#preprocess-dependency-injection-instructions) per ottimizzare le massime prestazioni. Questa estensione memorizza in cache le posizioni dei file per i file aperti, il che aumenta le prestazioni per [!DNL Commerce] chiamate al server che includono pagine, chiamate Ajax e endpoint.
+Si consiglia di abilitare [Estensione PHP APCu](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) e [configurazione `composer` per sostenerlo](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) per ottimizzare le massime prestazioni. Questa estensione memorizza in cache le posizioni dei file per i file aperti, il che aumenta le prestazioni per [!DNL Commerce] chiamate al server che includono pagine, chiamate Ajax e endpoint.
 
 Modifica il `apcu.ini` per includere quanto segue:
 
@@ -205,10 +205,10 @@ Installa [!DNL Varnish] su un server separato di fronte al livello web. Deve acc
 [!DNL Commerce] distribuisce un file di configurazione di esempio per [!DNL Varnish] (versioni 4 e 5) che contiene tutte le impostazioni consigliate per le prestazioni. Tra questi, i più critici in termini di prestazioni sono:
 
 * **Verifica dello stato di salute del backend** sondaggi [!DNL Commerce] server per determinare se risponde in modo tempestivo.
-* **Modalità Grace** consente di istruire [!DNL Varnish] per mantenere un oggetto nella cache oltre il periodo TTL (Time to Live) e servire questo contenuto non aggiornato se [!DNL Commerce] non è corretto o se non è ancora stato recuperato contenuto fresco.
+* **Modalità Grace** consente di istruire [!DNL Varnish] per mantenere un oggetto nella cache oltre il periodo TTL (Time to Live) e servire questo contenuto non aggiornato se [!DNL Commerce] non è in buona salute o se non è ancora stato recuperato contenuto fresco.
 * **Modalità Saint** blacklist non integri [!DNL Commerce] server per un periodo di tempo configurabile. Di conseguenza, i backend non integri non possono servire il traffico quando si utilizza [!DNL Varnish] come load balancer.
 
-Vedi [Avanzate [!DNL Varnish] configurazione](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish-advanced.html) per ulteriori informazioni sull’implementazione di queste funzioni.
+Vedi [Avanzate [!DNL Varnish] configurazione](../configuration/cache/config-varnish-advanced.md) per ulteriori informazioni sull’implementazione di queste funzioni.
 
 ### Ottimizzare le prestazioni delle risorse
 

@@ -1,9 +1,9 @@
 ---
-title: '"Il [!UICONTROL Summary] scheda"'
+title: "Il [!UICONTROL Summary] scheda"
 description: Scopri le [!UICONTROL Summary] scheda di [!DNL Observation for Adobe Commerce].
-source-git-commit: 22df5b80262fbc98f3dd929ec8fdf6f697734c9b
+source-git-commit: 5bcb834bc563c52cd5b169b9f4f20dab31d404cd
 workflow-type: tm+mt
-source-wordcount: '2650'
+source-wordcount: '2637'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ La **[!UICONTROL Deployment State]** i facet frame definiscono particolari frasi
 
 ![Frequenza IP](../../assets/tools/ip-frequency.jpg)
 
-La **[!UICONTROL IP Frequency]** il frame conta gli stati (&quot;MISS&quot; e &quot;PASS&quot;) per ogni IP dal [!DNL Fastly] registri. Le richieste web con questi stati raggiungeranno il server di origine e aggiungeranno il caricamento al server. Mostra i venti indirizzi principali in frequenza. Questo frame può essere utilizzato per rilevare attacchi IP o fonti di carico pesante su un sito web.
+La **[!UICONTROL IP Frequency]** il frame conta gli stati (&quot;MISS&quot; e &quot;PASS&quot;) per ogni IP da [!DNL Fastly] registri. Le richieste web con questi stati raggiungeranno il server di origine e aggiungeranno il caricamento al server. Mostra i venti indirizzi principali in frequenza. Questo frame può essere utilizzato per rilevare attacchi IP o fonti di carico pesante su un sito web.
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
@@ -152,7 +152,7 @@ A volte è difficile dire quale indirizzo IP ha più richieste sugli altri frame
 
 ![robot potenziali](../../assets/tools/potential-bots.jpg)
 
-La **[!UICONTROL Potential Bots]** frame esamina le richieste con un nome request_user_agent come NULL o ‘%bot%’. In genere, request_user_agent ‘%bot%’ seguirà la configurazione dei criteri in `robots.txt` file.
+La **[!UICONTROL Potential Bots]** frame esamina le richieste con un nome request_user_agent come NULL o &#39;%bot%&#39;. In genere, il request_user_agent &#39;%bot%&#39; seguirà la configurazione dei criteri in `robots.txt` file.
 
 ## [!UICONTROL Transaction Errors]
 
@@ -181,7 +181,7 @@ La **[!UICONTROL Nginx access by node]** il frame guarda i conteggi dal `access.
 * &#39;%self-leave%&#39;) come &#39;sospeso_node&#39;
 * &#39;%Members = 3/3 (unito/totale)%&#39;) come &#39;3of3&#39;
 * &#39;%Members = 2/3 (unito/totale)%&#39;) come &#39;2of3&#39;
-* &#39;%Members = 2/2%&#39;) come &#39;2of2&#39; ・ &#39;%Members = 1/2%&#39;) come &#39;1of2&#39; ・ &#39;%Members = 1/3%&#39;) come &#39;1of3&#39;
+* &#39;%Members = 2/2%&#39;) come &#39;2of2&#39; * &#39;%Members = 1/2%&#39;) come &#39;1of2&#39; * &#39;%Members = 1/3%&#39;) come &#39;1of3&#39;
 * &#39;%Members = 1/1%&#39;) come &#39;1of1&#39;
 * &#39;%\[Nota\] /usr/sbin/mysqld (mysqld 10.%) come &#39;sql_riavvio&#39;
 * &#39;%Quorum: Nessun nodo con stato completo:%) come &#39;no_node_count&#39;
@@ -190,7 +190,7 @@ La **[!UICONTROL Nginx access by node]** il frame guarda i conteggi dal `access.
 * &#39;%WSREP: Membro 2%) come &quot;mem2&quot;
 * &#39;%WSREP: Sincronizzato con il gruppo, pronto per le connessioni%) come &#39;ready&#39;
 * &#39;%/usr/sbin/mysqld, versione:%&#39;) come &#39;mysql_riavvio_mysql.slow&#39;
-* ‘%\[Nota\] WSREP: Nuova vista cluster: stato globale:%) come &#39;galera_cluster_view_change&#39;
+* &#39;%\[Nota\] WSREP: Nuova vista cluster: stato globale:%) come &#39;galera_cluster_view_change&#39;
 
 Questi segnali possono indicare problemi di archiviazione, memoria o query se lo stato cambia frequentemente.
 
@@ -228,7 +228,7 @@ Questi segnali possono indicare problemi di archiviazione, memoria o query se lo
 * &#39;%1062 \[\ERROR\] InnoDB:%&#39;) come &#39;sql_1062_e&#39;
 * &#39;%\[Nota\] WSREP: Scaricamento della mappa di memoria sul disco in corso...%) come &#39;mem_map_flush&#39;
 * &#39;%Codice errore interno MariaDB: 1146%) come &#39;sql_1146&#39;
-* &#39;%Codice errore interno MariaDB: 1062%) come &#39;sql_1062&#39; ・ &#39;%1062 \[Warning\] InnoDB:%&#39;) come &#39;sql_1062_w&#39;
+* &#39;%Codice errore interno MariaDB: 1062%) come &#39;sql_1062&#39; * &#39;%1062 \[Warning\] InnoDB:%&#39;) come &#39;sql_1062_w&#39;
 * &#39;%Codice errore interno MariaDB: 1064%) come &#39;sql_1064&#39;
 * &#39;%InnoDB: Errore di asserzione nel file%) come &#39;assertion_err&#39;
 * &#39;%mysqld_safe Numero di processi in esecuzione: 0%) come &#39;mysql_oom&#39;
@@ -289,7 +289,7 @@ Il modo in cui si comportano i processi PHP dipende da [configurazione](https://
 
 ![errori php](../../assets/tools/php-errors.jpg)
 
-La **[!UICONTROL PHP errors]** frame mostra il numero di errori PHP con i lavoratori nell&#39;arco temporale selezionato. Per ulteriori informazioni, consulta [Impostazioni Adobe Commerce PHP](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+La **[!UICONTROL PHP errors]** frame mostra il numero di errori PHP con i lavoratori nell&#39;arco temporale selezionato. Per ulteriori informazioni, consulta [Impostazioni Adobe Commerce PHP](../../installation/prerequisites/php-settings.md).
 
 **Errori e messaggi PHP**
 
@@ -309,7 +309,7 @@ La **[!UICONTROL PHP errors]** frame mostra il numero di errori PHP con i lavora
 
 ![processi php](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), [!UICONTROL FastCGI Process Manager] utilizzato da [!DNL Nginx]. Per informazioni sui requisiti di sistema, consulta [Requisiti della versione PHP mappati alle versioni Adobe Commerce](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). La **[!UICONTROL PHP processes]** frame mostra il numero di processi PHP in esecuzione in un particolare momento nella timeline selezionata.
+[PHP-FPM](https://php-fpm.org/), [!UICONTROL FastCGI Process Manager] utilizzato da [!DNL Nginx]. Per informazioni sui requisiti di sistema, consulta [Requisiti della versione PHP mappati alle versioni Adobe Commerce](../../installation/system-requirements.md). La **[!UICONTROL PHP processes]** frame mostra il numero di processi PHP in esecuzione in un particolare momento nella timeline selezionata.
 
 ## [!UICONTROL Secondary processes]
 
@@ -402,7 +402,7 @@ La **[!UICONTROL Cron view]** frame esamina il log cron per trovare un equilibri
 * &#39;%Impossibile acquisire il blocco per cron job%&#39; come &#39;cron_lock&#39;
 * &#39;%Errore generale: 2006 MySQL server è andato via%&#39; come &#39;mysql_has_Go_away&#39;
 * &#39;%error%&#39; come &#39;error&#39;
-* &#39;%Errore generale: 1205 Timeout attesa blocco superato di%&quot; come sql_1205_cron
+* &#39;%Errore generale: 1205 Timeout attesa blocco superato di%&#39; come sql_1205_cron
 
 ## [!UICONTROL cron_schedule table updates]
 

@@ -1,9 +1,9 @@
 ---
 title: Best practice
 description: Utilizza le best practice consigliate per Adobe per gestire il processo di aggiornamento dei progetti Adobe Commerce e Magenti Open Source.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,10 @@ Se il progetto è attivo, ti consigliamo di eseguire un controllo di audit per d
 
 Dal momento in cui inizi a lavorare su un progetto, dovresti considerare in che modo gli aggiornamenti futuri saranno influenzati dal tuo lavoro attuale. Segui sempre le best practice di sviluppo Adobe Commerce come descritto qui:
 
-- [Best practice di sviluppo](https://devdocs.magento.com/guides/v2.4/ext-best-practices/bk-ext-best-practices.html)
-- [Standard di codifica](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html)
+- [Best practice di sviluppo](https://developer.adobe.com/commerce/php/best-practices/)
+- [Standard di codifica](https://developer.adobe.com/commerce/php/coding-standards/)
 
-Se non lo hai già fatto, inizia ad adottare la piattaforma di estensibilità di Adobe Commerce. La piattaforma consente di personalizzare in modo efficiente i processi, integrare i sistemi e implementare nuove funzionalità, mantenendo al tempo stesso la possibilità di aggiornare SaaS. Le sue caratteristiche includono:
+Se non lo hai già fatto, inizia ad adottare la piattaforma di estensibilità di Adobe Commerce. La piattaforma consente di personalizzare in modo efficiente i processi, integrare i sistemi e distribuire nuove funzionalità, mantenendo al tempo stesso la possibilità di aggiornare SaaS. Le sue caratteristiche includono:
 
 - **Estensibilità dell’interfaccia utente**. Estendi ed evolvi la vetrina indipendentemente dal backend e dal middleware che utilizzi [PWA Studi](https://developer.adobe.com/commerce/pwa-studio/).
 
@@ -80,7 +80,7 @@ Valutare il lavoro da eseguire per l’aggiornamento:
 
 ### Test post-aggiornamento
 
-Il test è la fase di un aggiornamento che richiede il maggior tempo. Di conseguenza, tale processo dovrebbe essere il più automatizzato possibile. Puoi sfruttare i vantaggi dell’utilizzo degli strumenti di test di base. La [Guida al test delle applicazioni](https://devdocs.magento.com/guides/v2.4/test/testing.html) fornisce dettagli.
+Il test è la fase di un aggiornamento che richiede il maggior tempo. Di conseguenza, tale processo dovrebbe essere il più automatizzato possibile. Puoi sfruttare i vantaggi dell’utilizzo degli strumenti di test di base. La [Guida al test delle applicazioni](https://developer.adobe.com/commerce/testing/guide/) fornisce dettagli.
 
 Utilizza un ambiente di staging per testare e convalidare l’aggiornamento prima di passare alla produzione.
 

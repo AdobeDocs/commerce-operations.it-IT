@@ -1,9 +1,9 @@
 ---
 title: Ambiente di sviluppo Recommendations
 description: Scopri i consigli sulle prestazioni per la configurazione dell’ambiente di sviluppo Adobe Commerce locale o Magento Open Source.
-source-git-commit: 87b353b408ecd7f55cea5b4775a0c8523952abc0
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -47,5 +47,5 @@ Se si sviluppa su una VM e il caricamento di una pagina di Magento richiede più
 
 <!-- Link definitions -->
 
-[pulire le cache]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean
-[disattivare le cache]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-en
+[pulire le cache]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
+[disattivare le cache]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types

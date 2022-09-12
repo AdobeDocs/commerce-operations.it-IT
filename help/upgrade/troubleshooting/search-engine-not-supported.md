@@ -1,9 +1,9 @@
 ---
 title: Motore di ricerca corrente non supportato
 description: Risolvere i problemi relativi all’aggiornamento di Adobe Commerce o Magento Open Source dopo un errore relativo a un motore di ricerca non supportato.
-source-git-commit: 96534d5307062aa4fda8f6433630d2d39e2848e7
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -54,10 +54,10 @@ Prima della versione 2.4, MySQL era il motore di ricerca del catalogo predefinit
 
 Utilizza le risorse seguenti per guidarti in questo processo:
 
-- [Installare e configurare Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html)
+- [Installare e configurare Elasticsearch](../../configuration/search/overview-search.md)
 - [Installazione di Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- Configurare Elasticsearch con cui lavorare [nginx](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-nginx.html) o [Apache](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-apache.html)
-- [Configurare il Magento da utilizzare come Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html)
+- Configurare Elasticsearch con cui lavorare [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) o [Apache](../../installation/prerequisites/search-engine/configure-apache.md)
+- [Configura Elasticsearch](../../configuration/search/configure-search-engine.md)
 
 Dopo aver configurato il motore di ricerca e reindicizzato, è possibile effettuare l&#39;aggiornamento alla versione 2.4.
 
@@ -71,8 +71,8 @@ Prima di eseguire l&#39;aggiornamento alla versione 2.4, è necessario eseguire 
 
    >[!NOTE]
    >
-   >Elasticsearch richiede JDK 1.8 o versione successiva. Vedi [Installare il Java Software Development Kit (JDK)](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) per verificare quale versione di JDK è installata.
+   >Elasticsearch richiede JDK 1.8 o versione successiva. Vedi [Installare il Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
 
-1. [Configurare il Magento da utilizzare come Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html) e reindicizzare.
+1. [Configura Elasticsearch](../../configuration/search/configure-search-engine.md) e reindicizzare.
 
 Dopo aver configurato il motore di ricerca e reindicizzato, è possibile effettuare l&#39;aggiornamento alla versione 2.4.

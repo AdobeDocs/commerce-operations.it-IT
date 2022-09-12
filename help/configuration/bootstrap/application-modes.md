@@ -1,9 +1,9 @@
 ---
 title: Modalità di applicazione
 description: L’applicazione Commerce può funzionare in modalità diverse a seconda delle tue esigenze. Visualizza un elenco dettagliato delle modalità di applicazione disponibili.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,6 @@ In modalità di produzione:
 
 Esegui l’applicazione Commerce in modalità di manutenzione per portare il sito offline mentre completi le attività di manutenzione, aggiornamento o configurazione. In modalità di manutenzione, il sito reindirizza i visitatori a un valore predefinito `Service Temporarily Unavailable` pagina.
 
-Puoi creare una [pagina di manutenzione personalizzata](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html), abilita e disabilita manualmente la modalità di manutenzione e configura la modalità di manutenzione per consentire ai visitatori degli indirizzi IP autorizzati di visualizzare lo store normalmente. Vedi [attiva e disattiva la modalità di manutenzione](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+Puoi creare una [pagina di manutenzione personalizzata](../../upgrade/troubleshooting/maintenance-mode-options.md), abilita e disabilita manualmente la modalità di manutenzione e configura la modalità di manutenzione per consentire ai visitatori degli indirizzi IP autorizzati di visualizzare lo store normalmente. Vedi [attiva e disattiva la modalità di manutenzione](../../installation/tutorials/maintenance-mode.md).
 
 Se utilizzi Commerce sull’infrastruttura cloud, l’applicazione Commerce viene eseguita in modalità di manutenzione durante la fase di implementazione. Al termine della distribuzione, l’applicazione Commerce torna all’esecuzione in modalità di produzione. Vedi [Hook di distribuzione](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) in _Guida alla Commerce Cloud_.
