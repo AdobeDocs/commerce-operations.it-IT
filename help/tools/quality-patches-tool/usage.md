@@ -1,16 +1,16 @@
 ---
 title: Utilizzo
 description: Scopri come utilizzare il [!DNL Quality Patches Tool].
-source-git-commit: 356ee307e0199d70c0e391e0d903e8f2e1600e63
+source-git-commit: 83fa1c77dd6105f4c97f697fd6636773d94fb5ee
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
 # Utilizzo
 
-La [Strumento Patch di qualità](https://github.com/magento/quality-patches) offre patch individuali sviluppate dall&#39;Adobe e la comunità del Magento Open Source. Consente di applicare, ripristinare e visualizzare informazioni generali su tutte le singole patch disponibili per la versione installata di Adobe Commerce o Magento Open Source. È possibile applicare patch ai progetti Adobe Commerce e Magenti Open Source indipendentemente da chi ha sviluppato la patch. Ad esempio, puoi applicare una patch sviluppata dalla community ai progetti Adobe Commerce.
+La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) offre patch individuali sviluppate dall&#39;Adobe e la comunità del Magento Open Source. Consente di applicare, ripristinare e visualizzare informazioni generali su tutte le singole patch disponibili per la versione installata di Adobe Commerce o Magento Open Source. È possibile applicare patch ai progetti Adobe Commerce e Magenti Open Source indipendentemente da chi ha sviluppato la patch. Ad esempio, puoi applicare una patch sviluppata dalla community ai progetti Adobe Commerce.
 
 
 >[!INFO]
@@ -25,7 +25,7 @@ La [Strumento Patch di qualità](https://github.com/magento/quality-patches) off
 
 >[!INFO]
 > 
->Se non è già installato, è necessario installare [Git](https://github.com/git-guides/install-git) o [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) prima di installare [!DNL Quality Patches Tool]. Aggiungi il `magento/quality-patches` Pacchetto Compositore per il tuo `composer.json` file:
+>Se non è già installato, è necessario installare [[!DNL Git]](https://github.com/git-guides/install-git) o [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) prima di installare [!DNL Quality Patches Tool]. Aggiungi il `magento/quality-patches` Pacchetto Compositore per il tuo `composer.json` file:
 
 ```bash
 composer require magento/quality-patches
