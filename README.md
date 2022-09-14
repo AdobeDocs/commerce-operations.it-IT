@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3fcc6d98509da4fcb8705ea69e708ad8e038b65c
+source-git-commit: 5a950079e8b445ef363217c085da92f0991a3a7f
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 0%
+source-wordcount: '548'
+ht-degree: 5%
 
 ---
 # Documentazione utente di Adobe Commerce
@@ -11,17 +11,17 @@ Accogliamo con favore i contributi della nostra community e di dipendenti di Ado
 
 ## Codice di condotta open source di Adobe
 
-Questo progetto ha adottato il [Codice di condotta open source Adobe](code-of-conduct.md) o il [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, consulta l’articolo [Contribuzione](contributing.md) .
+Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](code-of-conduct.md) o il [Codice di condotta di .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, consulta l’articolo [Contribuzione](contributing.md).
 
 ## Informazioni sui contributi al contenuto di Adobe
 
-Consulta la [Guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Consulta la sezione [Guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
 
 Il tuo contributo dipende da chi sei e dal tipo di modifiche che desideri apportare:
 
 ### Modifiche minori
 
-Se stai contribuendo piccoli aggiornamenti per la bontà del tuo cuore, visita l&#39;articolo e fai clic sul collegamento **Modifica** nell&#39;articolo che va alla sorgente GitHub per l&#39;articolo. Quindi, utilizza l’interfaccia utente GitHub per apportare i tuoi aggiornamenti. Per ulteriori informazioni, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) .
+Se stai contribuendo piccoli aggiornamenti per la bontà del tuo cuore, visita l&#39;articolo e fai clic sul **Modifica** nell’articolo che accede all’origine GitHub per l’articolo. Quindi, utilizza l’interfaccia utente GitHub per apportare i tuoi aggiornamenti. Vedi il generale [Guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) per ulteriori informazioni.
 
 Le correzioni minori o i chiarimenti inviati per la documentazione e gli esempi di codice in questo repository sono coperti dai termini di utilizzo Adobi.
 
@@ -35,7 +35,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Modifiche di rilievo apportate dai dipendenti Adobi
 
-Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione Adobe Experience Cloud ed è tuo compito contribuire a o creare articoli tecnici, devi utilizzare l’archivio privato all’indirizzo `https://git.corp.adobe.com/AdobeDocs`.
+Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione Adobe Experience Cloud ed è tuo compito creare o contribuire ad articoli tecnici, devi utilizzare l’archivio privato all’indirizzo `https://git.corp.adobe.com/AdobeDocs`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -43,7 +43,7 @@ Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del te
 
 I collaboratori della community possono utilizzare l’interfaccia utente GitHub per effettuare modifiche di base o creare un fork dell’archivio per apportare contributi importanti.
 
-Per ulteriori informazioni, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) .
+Consulta la sezione [Guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) per i dettagli.
 
 ## Come utilizzare markdown per formattare l’argomento
 
@@ -58,3 +58,29 @@ Nell’archivio pubblico, alle richieste di pull vengono assegnate etichette aut
 
 * **Modifica inviata all&#39;autore**: L&#39;autore è stato informato della richiesta di pull in sospeso.
 * **Ready-to-merge**: Pronto per la revisione da parte del team di revisione della richiesta di pull.
+
+## Modelli
+
+La `_jekyll` contiene argomenti templati e risorse richieste.
+I modelli che utilizzano il linguaggio di template Liquid risiedono nel `_jekyll` come file HTML.
+La `_jekyll/_data` contiene file con i dati utilizzati per eseguire il rendering dei modelli.
+
+Per eseguire il rendering di tutti i modelli:
+
+1. Passa a `_jekyll` directory.
+
+   cd_jekyll
+
+1. Esegui lo script di rendering.
+
+```
+_scripts/render
+```
+
+> **NOTA:** È necessario eseguire lo script dal `_jekyll` directory.
+> **NOTA:** Per eseguire questo script è necessario che Ruby sia installato.
+
+Lo script esegue il rendering, scrive i file di cui è stato eseguito il rendering nel `_jekyll/_rendered` come file HTML e li copia in `help/_includes` directory come `.md` file.
+
+
+Vedi la documentazione di Jekyll per maggiori dettagli su [File di dati](https://jekyllrb.com/docs/datafiles) [Filtri liquidi](https://jekyllrb.com/docs/liquid/filters/)e altre funzionalità.
