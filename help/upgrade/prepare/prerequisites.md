@@ -1,9 +1,9 @@
 ---
 title: Prerequisiti completi
 description: Prepara il progetto Adobe Commerce o Magenti Open Source per un aggiornamento completando questi passaggi preliminari.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -97,12 +97,8 @@ Per impostare l&#39;ultimo dalla riga di comando:
 1. Imposta l&#39;icona su `65536`.
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
-
-   >[!NOTE]
-   >
-   > La sintassi per l&#39;eliminazione dei file aperti dipende dalla shell UNIX utilizzata. L’impostazione precedente deve funzionare con CentOS e Ubuntu con la shell Bash. Tuttavia, per il sistema operativo Mac, l&#39;impostazione corretta è ulimit -S 65532. Per ulteriori informazioni, consultare una pagina man o un riferimento al sistema operativo.
 
 Per impostare il valore nella shell Bash:
 
@@ -111,7 +107,7 @@ Per impostare il valore nella shell Bash:
 1. Aggiungi la riga seguente:
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
 
 1. Salva le modifiche apportate al `.bashrc` e esci dall’editor di testo.
