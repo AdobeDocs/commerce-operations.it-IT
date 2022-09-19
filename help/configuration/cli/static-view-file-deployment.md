@@ -1,7 +1,7 @@
 ---
 title: Distribuzione di file di visualizzazione statici
 description: Scopri come scrivere file statici nel file system Commerce durante la modalità di produzione.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4fe6d6a76a5d4849d4f96b61b95a9a3dae7fc76a
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Nella tabella seguente sono illustrati i parametri e i valori di questo comando.
 | `<languages>` | Elenco separato da spazi di [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) codici di lingua per i quali inviare file di visualizzazione statici. (Il valore predefinito è `en_US`.)<br>Trova l&#39;elenco eseguendo: `bin/magento info:language:list` | No |
 | `--language (-l)` | Genera file solo per le lingue specificate. L&#39;impostazione predefinita, senza alcuna opzione specificata, consiste nel generare file per tutti i codici di lingua ISO-639. È possibile specificare il nome di un codice lingua alla volta. Il valore predefinito è **tutto**.<br>Ad esempio: `--language en_US --language es_ES` | No |
 | `--exclude-language` | Genera file per i codici di lingua specificati. L’impostazione predefinita, senza alcuna opzione specificata, consiste nell’escludere nulla. È possibile specificare il nome di un codice della lingua o di un elenco di codici della lingua separati da virgole. Il valore predefinito è **nessuno**. | No |
-| `--theme <theme>` | emes per cui distribuire contenuto statico. Il valore predefinito è **tutto**.<br>Ad esempio: `--theme Magento/blank --theme Magento/luma` | No |
+| `--theme <theme>` | Temi per i quali distribuire contenuto statico. Il valore predefinito è **tutto**.<br>Ad esempio: `--theme Magento/blank --theme Magento/luma` | No |
 | `--exclude-theme <theme>` | Temi da escludere durante la distribuzione di contenuto statico. Il valore predefinito è **nessuno**.<br>Ad esempio, `--exclude-theme Magento/blank` | No |
 | `--area (-a)` | Genera file solo per le aree specificate. L&#39;impostazione predefinita, senza alcuna opzione specificata, consiste nel generare file per tutte le aree. I valori validi sono `adminhtml` e `frontend`. Il valore predefinito è **tutto**.<br>Ad esempio: `--area adminhtml` | No |
 | `--exclude-area` | Non generare file per le aree specificate. L’impostazione predefinita, senza alcuna opzione specificata, consiste nell’escludere nulla. Il valore predefinito è **nessuno**. | No |
