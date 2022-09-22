@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5a950079e8b445ef363217c085da92f0991a3a7f
+source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '538'
 ht-degree: 5%
 
 ---
@@ -62,7 +62,7 @@ Nell’archivio pubblico, alle richieste di pull vengono assegnate etichette aut
 ## Modelli
 
 La `_jekyll` contiene argomenti templati e risorse richieste.
-I modelli che utilizzano il linguaggio di template Liquid risiedono nel `_jekyll` come file HTML.
+I modelli che utilizzano il linguaggio di template Liquid risiedono nel `_jekyll/templated` come file HTML.
 La `_jekyll/_data` contiene file con i dati utilizzati per eseguire il rendering dei modelli.
 
 Per eseguire il rendering di tutti i modelli:
@@ -80,7 +80,6 @@ _scripts/render
 > **NOTA:** È necessario eseguire lo script dal `_jekyll` directory.
 > **NOTA:** Per eseguire questo script è necessario che Ruby sia installato.
 
-Lo script esegue il rendering, scrive i file di cui è stato eseguito il rendering nel `_jekyll/_rendered` come file HTML e li copia in `help/_includes` directory come `.md` file.
-
+Lo script esegue il rendering e scrive i modelli di cui è stato eseguito il rendering nel `help/_includes/templated` directory.
 
 Vedi la documentazione di Jekyll per maggiori dettagli su [File di dati](https://jekyllrb.com/docs/datafiles) [Filtri liquidi](https://jekyllrb.com/docs/liquid/filters/)e altre funzionalità.
