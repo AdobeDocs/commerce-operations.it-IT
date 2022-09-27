@@ -1,7 +1,7 @@
 ---
 user-guide-title: Guida alla configurazione
 user-guide-description: Configura le funzioni e i servizi dell’applicazione Adobe Commerce o Magenti Open Source.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d451ea025a6f4fc8a4a9f15ca83896a63058a3a0
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
       - [Panoramica della vernice](cache/config-varnish.md)
       - [Installa Varnish](cache/config-varnish-install.md)
       - [Server web](cache/config-varnish-server.md)
-      - [Configurare l’applicazione Commerce](cache/config-varnish-magento.md)
+      - [Configurare l’applicazione Commerce](cache/configure-varnish-commerce.md)
       - [Configurazione avanzata della vernice](cache/config-varnish-advanced.md)
       - [Cancellazione della cache](cache/use-varnish-cache.md)
       - [Cancellazione della cache di più istanze verniciate](cache/use-multiple-varnish-cache.md)

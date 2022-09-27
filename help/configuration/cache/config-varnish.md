@@ -1,7 +1,7 @@
 ---
 title: Configurare e utilizzare Varnish
 description: Comprendere come Varnish memorizza i file e migliora il traffico HTTP.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
@@ -90,7 +90,7 @@ La memorizzazione in cache della vernice funziona con Commerce utilizzando:
 
 - [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) dall’archivio GitHub Magento 2
 - `.htaccess` file di configurazione distribuito per Apache fornito con Commerce
-- `default.vcl` configurazione per Varnish generata utilizzando [Amministratore](../cache/config-varnish-magento.md)
+- `default.vcl` configurazione per Varnish generata utilizzando [Amministratore](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 Questo argomento tratta solo le opzioni predefinite dell’elenco precedente. Esistono molti altri modi per configurare la memorizzazione in cache in scenari complessi (ad esempio, utilizzando una rete di distribuzione dei contenuti); tali metodi esulano dall’ambito di applicazione della presente guida.

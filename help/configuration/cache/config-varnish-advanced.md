@@ -1,7 +1,7 @@
 ---
 title: Configurazione avanzata della vernice
 description: Configura le funzioni avanzate della vernice, incluse le modalità di controllo dello stato, grazia e saint.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -48,7 +48,7 @@ La `vcl_hit` la subroutine definisce il modo in cui Varnish risponde a una richi
 
 ### Quando il back-end Commerce è sano
 
-Quando i controlli di integrità determinano che il backend Commerce è sano, Varnish controlla se il tempo rimane nel periodo di tolleranza. Il periodo di tolleranza predefinito è di 300 secondi, ma un esercente può impostare il valore dal [Amministratore](https://glossary.magento.com/admin) come descritto in [Configurare Commerce per utilizzare Varnish](config-varnish-magento.md). Se il periodo di tolleranza non è scaduto, Varnish consegna il contenuto non aggiornato e aggiorna l’oggetto in modo asincrono dal server Commerce. Se il periodo di tolleranza è scaduto, Varnish utilizza il contenuto non aggiornato e aggiorna in modo sincrono l’oggetto dal back-end Commerce.
+Quando i controlli di integrità determinano che il backend Commerce è sano, Varnish controlla se il tempo rimane nel periodo di tolleranza. Il periodo di tolleranza predefinito è di 300 secondi, ma un esercente può impostare il valore dal [Amministratore](https://glossary.magento.com/admin) come descritto in [Configurare Commerce per utilizzare Varnish](configure-varnish-commerce.md). Se il periodo di tolleranza non è scaduto, Varnish consegna il contenuto non aggiornato e aggiorna l’oggetto in modo asincrono dal server Commerce. Se il periodo di tolleranza è scaduto, Varnish utilizza il contenuto non aggiornato e aggiorna in modo sincrono l’oggetto dal back-end Commerce.
 
 La quantità massima di tempo utilizzata da Varnish per un oggetto obsoleto è la somma del periodo di tolleranza (300 secondi per impostazione predefinita) e del valore TTL (86400 secondi per impostazione predefinita).
 
