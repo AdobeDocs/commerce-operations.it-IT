@@ -1,9 +1,9 @@
 ---
 title: Configurazione della cache L2
 description: Scopri come configurare la cache L2.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: e5e4cf0b3979a457e706823dd16c88508ec4abd8
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -76,8 +76,81 @@ L&#39;Adobe raccomanda l&#39;uso del [`cache preload`](redis-pg-cache.md#redis-p
 
 ## Opzioni cache obsolete
 
-Inizia con [!DNL Commerce] 2.4 `stale_cache` in alcuni casi specifici, le prestazioni possono essere migliorate.
+Inizia con [!DNL Commerce] 2.4 `use_stale_cache` in alcuni casi specifici, le prestazioni possono essere migliorate.
 
 Generalmente, il compromesso con blocco in attesa è accettabile dal lato delle prestazioni, ma più grande è il numero di blocchi o cache che il commerciante ha, più tempo è speso in attesa di blocchi. In alcuni scenari, puoi aspettare un **numero di chiavi** \* **timeout ricerca** quantità di tempo per il processo. In alcuni rari casi, il commerciante può avere centinaia di chiavi `Block/Config` cache, quindi anche un piccolo timeout di ricerca per il blocco può costare secondi.
 
 La cache obsoleta funziona solo con una cache L2. Con una cache obsoleta, puoi inviare una cache obsoleta, mentre una nuova viene generata in un processo parallelo. Per abilitare la cache obsoleta, aggiungi `'use_stale_cache' => true` alla configurazione superiore della cache L2.
+
+L&#39;Adobe consiglia di abilitare il `use_stale_cache` solo per i tipi di cache che ne beneficiano di più, tra cui:
+
+- `block_html`
+- `config_integration_api`
+- `config_integration`
+- `full_page`
+- `layout`
+- `reflection`
+- `translate`
+
+Il codice seguente mostra una configurazione di esempio:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+            'backend_options' => [
+                'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                'remote_backend_options' => [
+                    'persistent' => 0,
+                    'server' => 'localhost',
+                    'database' => '0',
+                    'port' => '6379',
+                    'password' => '',
+                    'compress_data' => '1',
+                ],
+                'local_backend' => 'Cm_Cache_Backend_File',
+                'local_backend_options' => [
+                    'cache_dir' => '/dev/shm/'
+                ],
+                'use_stale_cache' => false,
+            ],
+            'frontend_options' => [
+                'write_control' => false,
+            ],
+        ],
+         'stale_cache_enabled' => [
+            'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+            'backend_options' => [
+                'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                'remote_backend_options' => [
+                    'persistent' => 0,
+                    'server' => 'localhost',
+                    'database' => '0',
+                    'port' => '6379',
+                    'password' => '',
+                    'compress_data' => '1',
+                ],
+                'local_backend' => 'Cm_Cache_Backend_File',
+                'local_backend_options' => [
+                    'cache_dir' => '/dev/shm/'
+                ],
+                'use_stale_cache' => true,
+            ],
+            'frontend_options' => [
+                'write_control' => false,
+            ],
+        ]
+    ],
+    'type' => [
+        'default' => ['frontend' => 'default'],
+        'layout' => ['frontend' => 'stale_cache_enabled'],
+        'block_html' => ['frontend' => 'stale_cache_enabled'],
+        'reflection' => ['frontend' => 'stale_cache_enabled'],
+        'config_integration' => ['frontend' => 'stale_cache_enabled'],
+        'config_integration_api' => ['frontend' => 'stale_cache_enabled'],
+        'full_page' => ['frontend' => 'stale_cache_enabled'],
+        'translate' => ['frontend' => 'stale_cache_enabled']
+    ],
+],
+```
