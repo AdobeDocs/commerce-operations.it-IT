@@ -1,9 +1,9 @@
 ---
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, i loro utilizzi, il processo di installazione e le modalità di accesso.
-source-git-commit: 5b623d713d8950b362a9fa66ad97e444811d23fa
+source-git-commit: 5edd2839a611fc20b1978b01923a692b21a8dd55
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 0%
    - [Patch](site-wide-analysis-tool/patches.md)
 - Strumento Patch di qualità {#quality-patches-tool}
    - [Utilizzo](quality-patches-tool/usage.md)
+   - [Note sulla versione](quality-patches-tool/release-notes.md)
 - Osservazione per Adobe Commerce {#observation-for-adobe-commerce}
    - [Introduzione](observation-for-adobe-commerce/intro.md)
    - [Come accedere](observation-for-adobe-commerce/access.md)
@@ -40,7 +41,6 @@ ht-degree: 0%
    - [Scheda Distribuzione](observation-for-adobe-commerce/deploy-tab.md)
    - [Scheda Avvisi](observation-for-adobe-commerce/alerts-tab.md)
    - [Scheda WAF](observation-for-adobe-commerce/waf-tab.md)
-   - [Scheda Bots](observation-for-adobe-commerce/bots.md)
    - [Scheda CDN](observation-for-adobe-commerce/cdn-tab.md)
    - [Scheda RabbitMQ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Scheda Cron](observation-for-adobe-commerce/cron-tab.md)
