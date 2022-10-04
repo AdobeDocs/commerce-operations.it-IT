@@ -1,7 +1,7 @@
 ---
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
-source-git-commit: ead062ac2f5dbf07293aef2a5a5d9f1f21255402
+source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
 workflow-type: tm+mt
 source-wordcount: '9233'
 ht-degree: 0%
@@ -14,7 +14,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 
 >[!INFO]
 >
->Vedi [Applica patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) per istruzioni su come applicare patch ai progetti Adobe Commerce o Magenti Open Source. Vedi [Patch disponibili](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) nella Guida all’aggiornamento del software per esaminare un elenco completo delle patch rilasciate.
+>Vedi [Applica patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) per istruzioni su come applicare patch ai progetti Adobe Commerce o Magenti Open Source. Vedi [Patch disponibili](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella Guida all’aggiornamento del software per esaminare un elenco completo delle patch rilasciate.
 
 >[!INFO]
 >
@@ -421,7 +421,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-13203** (*per Adobe Commerce >=2.3.0 &lt;2.4.2*) - Risolve il problema in cui la *Violazione del vincolo di integrità tabella search_tmp_* viene visualizzato un errore dopo una reindicizzazione completa.
 * **MDVA-23426** (*per Adobe Commerce >=2.3.3 &lt;2.3.5*): risolve il problema per cui le e-mail di notifica inviate da Adobe Commerce contengono un corpo vuoto con il contenuto aggiunto come allegato.
 * **MDVA-22150** (*per Adobe Commerce >=2.3.1 &lt;2.3.4*) - Corregge il problema per cui i clienti con un prodotto configurabile nel carrello e un coupon applicato non possono accedere se tale prodotto configurabile è disabilitato nell’amministratore.
-* **MDVA-32545** (*per Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corregge il problema per cui le fatture non vengono inviate automaticamente durante la creazione di ordini da parte dell&#39;amministratore.
+* **MDVA-32545** (*per Adobe Commerce >=2.3.0 &lt;2.4.2*): risolve il problema per cui le fatture non vengono inviate automaticamente durante la creazione di ordini da parte dell&#39;amministratore.
 * **MDVA-32714** (*per Adobe Commerce >=2.3.4 &lt;2.4.1*) - Corregge il problema per cui il prezzo del gruppo di clienti non funziona nella query del prodotto GraphQL.
 
 ## v1.0.12 {#v1-0-12}
@@ -542,4 +542,3 @@ Correzioni minori per le versioni delle patch
 * **MDVA-30052** (*per Adobe Commerce >=2.3.2-p2 &lt;2.3.5*): risolve il problema relativo al mancato popolamento corretto del contenuto privato (archiviazione locale), che causava problemi di prestazioni.
 * **MDVA-30131** (*per Adobe Commerce >=2.3.4 &lt;2.3.6 | 2.4.0*) - Risolve il problema della navigazione a livelli, dove il *No* il valore per gli attributi di prodotto di tipo booleano non è stato incluso nella navigazione a livelli se [!DNL Elasticsearch] è stato utilizzato come motore di ricerca.
 * **MDVA-35514** (*per Adobe Commerce >=2.4.0 &lt;2.4.1*): risolve il problema relativo alla creazione di un&#39;etichetta di spedizione e all&#39;aggiunta di prodotti ordinati a un pacchetto nella finestra modale Crea pacchetti.
-

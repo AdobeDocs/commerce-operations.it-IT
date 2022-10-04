@@ -1,7 +1,7 @@
 ---
 title: Utilizzo
 description: Scopri come utilizzare il [!DNL Quality Patches Tool].
-source-git-commit: 83fa1c77dd6105f4c97f697fd6636773d94fb5ee
+source-git-commit: 7ce26f10b92632c077d37ae03d68594ba2444098
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
@@ -14,8 +14,8 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 
 
 >[!INFO]
-> 
->Vedi [Applicare singole patch](#apply-individual-patches) per istruzioni su come applicare patch ai progetti Adobe Commerce o Magenti Open Source. Vedi [Patch disponibili](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) per rivedere un elenco completo delle patch rilasciate.
+>
+>Vedi [Applicare singole patch](#apply-individual-patches) per istruzioni su come applicare patch ai progetti Adobe Commerce o Magenti Open Source. Vedi [Patch disponibili](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) per rivedere un elenco completo delle patch rilasciate.
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 ## Installa
 
 >[!INFO]
-> 
+>
 >Se non è già installato, è necessario installare [[!DNL Git]](https://github.com/git-guides/install-git) o [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) prima di installare [!DNL Quality Patches Tool]. Aggiungi il `magento/quality-patches` Pacchetto Compositore per il tuo `composer.json` file:
 
 ```bash
@@ -72,7 +72,7 @@ La tabella di stato include:
    - `Recommended replacement` — La patch che rappresenta una sostituzione consigliata per una patch obsoleta.
 
 >[!INFO]
-> 
+>
 >Dopo l’aggiornamento a una nuova versione di Adobe Commerce o Magenti Open Source, è necessario riapplicare le patch se queste non sono incluse nella nuova versione. Vedi [Riapplicare le patch dopo un aggiornamento](#re-apply-patches-after-an-upgrade).
 
 ## Applicare singole patch {#apply-individual-patches}
