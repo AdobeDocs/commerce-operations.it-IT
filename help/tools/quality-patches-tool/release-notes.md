@@ -1,9 +1,9 @@
 ---
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
-source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
+source-git-commit: bb1cb17b75a799409336068967c9d0facefeaf41
 workflow-type: tm+mt
-source-wordcount: '9233'
+source-wordcount: '9467'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,21 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla Comunità per Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.21 {#v1-1-21}
+
+* **ACSD-46809** (per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.6) - Risolve il problema per cui un utente riceve un errore quando assegna un numero elevato di sorgenti di prodotto.
+* **ACSD-46856** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Migliora le prestazioni aggiornando i prezzi tramite Sistema > Configurazione > Importa > Prezzi avanzati.
+* **ACSD-46541** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.4) - Risolve il problema per cui un utente amministratore non può creare una nota di credito se un elemento dell&#39;ordine viene eliminato.
+* **ACSD-46581** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema per cui il totale fiscale stimato non viene aggiornato dopo aver selezionato un paese nel carrello.
+* **ACSD-46618** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Risolve il problema in cui il widget elenco prodotti mostra prezzi memorizzati nella cache errati per un cliente connesso.
+* **ACSD-46674** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Risolve il problema per cui le opzioni personalizzate di un tipo di immagine vengono visualizzate come HTML nelle e-mail dei clienti.
+* **ACSD-46988** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.6) - Corregge il problema in cui la richiesta API GraphQL &quot;currency&quot; restituisce valori NULL per una valuta personalizzata.
+* **ACSD-47076** (per Adobe Commerce e Magenti Open Source >=2.4.1 &lt;2.4.5) - Corregge il problema per cui i video Vimeo non possono essere riprodotti sulla vetrina.
+* **ACSD-45071** (per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.4) - Corregge il problema per cui l&#39;origine predefinita viene aggiunta al prodotto durante l&#39;importazione.
+* **AC-3023** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Aggiorna lo schema DHL alla versione più recente 10.0.
+* Patch aggiornate: MDVA-42584.
+* Patch sostituite: MDVA-36572, ACSD-45241.
 
 ## v1.1.20 {#v1-1-20}
 
