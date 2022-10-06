@@ -1,7 +1,7 @@
 ---
 title: Utilizzo
 description: Scopri come utilizzare il [!DNL Quality Patches Tool].
-source-git-commit: 9e719cdf888caa3fa34f6416650e62bbf1b81175
+source-git-commit: e35469adb1b3278cf787416e1bc829fae9979efc
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) offre patch individuali sviluppate dall&#39;Adobe e la comunità del Magento Open Source. Consente di applicare, ripristinare e visualizzare informazioni generali su tutte le singole patch disponibili per la versione installata di Adobe Commerce o Magento Open Source. È possibile applicare patch ai progetti Adobe Commerce e Magenti Open Source indipendentemente da chi ha sviluppato la patch. Ad esempio, puoi applicare una patch sviluppata dalla community ai progetti Adobe Commerce.
 
 
-Guarda questo [video tecnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) e scopri come utilizzare lo strumento Quality Patch per Adobe Commerce e Magenti Open Source.
+Guarda questo [video tecnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) e scopri come utilizzare lo strumento patch di qualità per Adobe Commerce e Magenti Open Source.
 
 >[!INFO]
 >
