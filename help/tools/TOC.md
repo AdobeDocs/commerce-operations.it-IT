@@ -1,9 +1,9 @@
 ---
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, i loro utilizzi, il processo di installazione e le modalità di accesso.
-source-git-commit: 3914a9bb185a18fa80497630f8a6e09b58bdec22
+source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
    - [Scheda Redis](observation-for-adobe-commerce/redis-tab.md)
    - [Scheda MySQL](observation-for-adobe-commerce/mysql-tab.md)
    - [Scheda PHP](observation-for-adobe-commerce/php-tab.md)
+   - [Scheda Bots](observation-for-adobe-commerce/bots.md)
    - [Scheda Distribuzione](observation-for-adobe-commerce/deploy-tab.md)
    - [Scheda Avvisi](observation-for-adobe-commerce/alerts-tab.md)
    - [Scheda WAF](observation-for-adobe-commerce/waf-tab.md)
