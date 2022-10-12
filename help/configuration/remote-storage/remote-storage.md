@@ -1,30 +1,30 @@
 ---
 title: Configura archiviazione remota
 description: Scopri come configurare il modulo Archiviazione remota per l’applicazione Commerce locale.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
 
 # Configura archiviazione remota
 
-Il modulo Archiviazione remota offre la possibilità di archiviare i file multimediali e pianificare le importazioni/esportazioni in un contenitore di storage remoto persistente utilizzando un servizio di archiviazione, ad esempio AWS S3. Per impostazione predefinita, la [!DNL Commerce] l&#39;applicazione memorizza i file multimediali nello stesso file system che contiene l&#39;applicazione. Ciò è inefficiente per configurazioni complesse e con più server e può causare prestazioni peggiorate durante la condivisione delle risorse. Il modulo Archiviazione remota consente di memorizzare i file multimediali nella `pub/media` e di importare/esportare i file nel `var` directory dell&#39;archivio oggetti remoti per sfruttare il ridimensionamento dell&#39;immagine lato server.
+Il modulo di archiviazione remota offre la possibilità di archiviare i file multimediali e pianificare le importazioni e le esportazioni in un contenitore di archiviazione remoto permanente utilizzando un servizio di archiviazione, ad esempio AWS S3. Per impostazione predefinita, l’applicazione Adobe Commerce memorizza i file multimediali nello stesso file system che contiene l’applicazione. Ciò è inefficiente per configurazioni complesse e con più server e può causare prestazioni peggiorate durante la condivisione delle risorse. Il modulo Archiviazione remota consente di memorizzare i file multimediali nella `pub/media` e di importare/esportare i file nel `var` directory dell&#39;archivio oggetti remoti per sfruttare il ridimensionamento dell&#39;immagine lato server.
 
 >[!INFO]
 >
->L’archiviazione remota è disponibile solo nelle versioni 2.4.2 e successive. Consulta la sezione [Note sulla versione 2.4.2](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>L’archiviazione remota è disponibile solo per Commerce versione 2.4.2 e successive. Consulta la sezione [Note sulla versione 2.4.2](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
 
 >[!INFO]
 >
->Il modulo di archiviazione remota ha _limitato_ supporto su Adobe Commerce sull’infrastruttura cloud. Impossibile risolvere completamente i problemi relativi al servizio dell&#39;adattatore di archiviazione di terze parti.
+>Il modulo di archiviazione remota ha _limitato_ supporto su Adobe Commerce sull’infrastruttura cloud. Impossibile risolvere completamente i problemi relativi al servizio dell&#39;adattatore di archiviazione di terze parti. Vedi [Configurare lo storage remoto per l’infrastruttura Commerce su Cloud](cloud-support.md) guida all&#39;implementazione dell&#39;archiviazione remota per progetti cloud.
 
 ![immagine schema](../../assets/configuration/remote-storage-schema.png)
 
 ## Opzioni di archiviazione remota
 
-È possibile configurare lo storage remoto utilizzando `remote-storage` con l&#39;opzione [`setup` Comando CLI][setup]. La `remote-storage` utilizza la sintassi seguente:
+È possibile configurare lo storage remoto utilizzando `remote-storage` con l&#39;opzione [`setup` Comando CLI](../../installation/tutorials/deployment.md). La `remote-storage` utilizza la sintassi seguente:
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
@@ -49,21 +49,23 @@ Il percorso di archiviazione predefinito si trova nel file system locale. A _sch
 
 ## Abilita archiviazione remota
 
-È possibile installare l&#39;archiviazione remota durante un nuovo [!DNL Commerce] installazione o aggiunta a un&#39;istanza Commerce esistente utilizzando `remote-storage` coppie nome-e-valore del parametro con `setup` Comandi CLI. Minimalmente, è necessario fornire lo storage `driver`, `bucket`e `region`.
+È possibile installare l’archiviazione remota durante un’installazione di Adobe Commerce o aggiungere l’archiviazione remota a un’istanza Commerce esistente. Gli esempi seguenti illustrano ogni metodo utilizzando un insieme di `remote-storage` parametri con Commerce `setup` Comandi CLI. Minimalmente, è necessario fornire lo storage `driver`, `bucket`e `region`.
 
-Gli esempi seguenti abilitano lo storage remoto con una scheda di storage AWS S3 negli Stati Uniti:
-
-- Installa nuovo [!DNL Commerce] con archiviazione remota
+- Esempio: Installare Commerce con archiviazione remota
 
    ```bash
    bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
    ```
 
-- Abilita archiviazione remota su esistente [!DNL Commerce]
+- Esempio: Abilita archiviazione remota su Commerce esistente
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
    ```
+
+>[!TIP]
+>
+>Per Adobe Commerce sull’infrastruttura cloud, consulta [Configurare lo storage remoto per l’infrastruttura Commerce su Cloud](cloud-support.md).
 
 ## Limitazioni
 
@@ -75,7 +77,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 L&#39;abilitazione dello storage remoto potrebbe influire sull&#39;esperienza di sviluppo stabilita. Ad esempio, alcune funzioni del file PHP potrebbero non funzionare come previsto. È necessario applicare l’utilizzo di Commerce Framework per le operazioni di file.
 
-L&#39;elenco delle funzioni native PHP vietate è disponibile in [Standard di codifica Magento] archivio.
+L&#39;elenco delle funzioni native PHP vietate è disponibile in [archivio magento-coding-standard][code-standard].
 
 ## Migra contenuto
 
@@ -92,5 +94,4 @@ Dopo aver abilitato lo storage remoto per un adattatore specifico, puoi utilizza
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[Standard di codifica Magento]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
-[setup]: ../../installation/tutorials/deployment.md
+[code-standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php

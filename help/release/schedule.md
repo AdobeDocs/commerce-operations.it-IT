@@ -1,9 +1,9 @@
 ---
 title: Pianificazione del rilascio
 description: Scopri quando sono pianificate versioni specifiche di Adobe Commerce per la versione beta, pre-release e la disponibilità generale.
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: 1c302d312eeeb7512d8b91063f06f8e7c9bf98bd
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,8 @@ Nella tabella seguente sono indicate le date dei rilasci pianificati (le date so
 | Giugno 2022<br>Versione in funzione | \-\- | \-\- | \-\- | 21 giugno 2022 |
 | Agosto 2022<br>Funzionalità + rilascio patch + rilascio patch di sicurezza | 2.4.5<br>2.4.4-p1<br>2.4.3-p3<br>2.3.7-p4<sup>1</sup> | \-\- | 26 luglio 2022 | 9 agosto 2022 |
 | Ottobre 2022<br>Funzione + rilascio patch di sicurezza | 2.4.5-p1<sup>2</sup><br>2.4.4-p2 | \-\- | 27 settembre 2022 | 11 ottobre 2022 |
+| Gennaio 2023<br>Versione in funzione | \-\- | \-\- | \-\- | 17 gennaio 2023 |
+| Marzo 2023<br>Funzionalità + rilascio patch + rilascio patch di sicurezza | 2.4.6<br>2.4.5-p2<br>2.4.4-p3 | Gennaio 2023 | 28 febbraio 2023 | 14 marzo 2023 |
 
 <sup>\-\- Indica gli elementi non applicabili a questa versione.</sup><br>
 <sup>1 Questa è l’ultima versione della patch per la linea di rilascio 2.3.x. La versione 2.3.x raggiunge la fine del supporto (EOS) a settembre 2022.</sup><br>

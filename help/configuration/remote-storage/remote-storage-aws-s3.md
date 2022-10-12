@@ -1,16 +1,16 @@
 ---
 title: Configurare il bucket AWS S3 per l’archiviazione remota
 description: Configura il progetto Commerce per utilizzare il servizio di archiviazione AWS S3 per l’archiviazione remota.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Configurare il bucket AWS S3 per l’archiviazione remota
 
-La [Servizio di archiviazione semplice Amazon (Amazon S3)][AWS S3] è un servizio di storage per oggetti che offre scalabilità, disponibilità, sicurezza e prestazioni leader del settore. Il servizio AWS S3 utilizza bucket o contenitori per l’archiviazione dei dati. Questa configurazione richiede la creazione di un _privato_ secchio.
+La [Servizio di archiviazione semplice Amazon (Amazon S3)][AWS S3] è un servizio di storage per oggetti che offre scalabilità, disponibilità, sicurezza e prestazioni leader del settore. Il servizio AWS S3 utilizza bucket o contenitori per l’archiviazione dei dati. Questa configurazione richiede la creazione di un _privato_ secchio. Per Adobe Commerce sull’infrastruttura cloud, consulta [Configurare lo storage remoto per l’infrastruttura Commerce su Cloud](cloud-support.md).
 
 >[!WARNING]
 >
@@ -36,7 +36,7 @@ La [Servizio di archiviazione semplice Amazon (Amazon S3)][AWS S3] è un servizi
 
 ## Configura input penna
 
-Nginx richiede una configurazione aggiuntiva per eseguire Authentication con il `proxy_pass` direttiva. Aggiungi le seguenti informazioni proxy al `nginx.conf` file:
+Nginx richiede una configurazione aggiuntiva per eseguire Authentication con `proxy_pass` direttiva. Aggiungi le seguenti informazioni proxy al `nginx.conf` file:
 
 >nginx.conf
 
@@ -63,15 +63,14 @@ Se utilizzi le chiavi di accesso e segrete anziché [AWS IAM] ruoli, devi includ
 
 ### Autorizzazioni
 
-L&#39;integrazione S3 si basa sulla capacità di generare e memorizzare immagini memorizzate nella cache sul file system locale; pertanto, le autorizzazioni per le cartelle per `pub/media` e directory simili sono le stesse per S3 quando si utilizza l&#39;archiviazione locale.
+L&#39;integrazione S3 si basa sulla capacità di generare e archiviare le immagini memorizzate nella cache sul file system locale. Pertanto, le autorizzazioni della cartella per `pub/media` e directory simili sono le stesse per S3 quando si utilizza l&#39;archiviazione locale.
 
 ### Operazioni sui file
 
-Si consiglia vivamente di utilizzare [!DNL Commerce] metodi dell&#39;adattatore file nello sviluppo della codifica o dell&#39;estensione, indipendentemente dal tipo di archiviazione dei file. Quando si utilizza S3 per lo storage, non utilizzare operazioni I/O native per i file PHP, ad esempio `copy`, `rename` o `file_put_contents`, poiché i file S3 non si trovano nel file system. Vedi [DriverInterface.php] per esempi di codice.
+Si consiglia vivamente di utilizzare [!DNL Commerce] metodi dell&#39;adattatore file nello sviluppo della codifica o dell&#39;estensione, indipendentemente dal tipo di archiviazione dei file. Quando si utilizza S3 per lo storage, non utilizzare operazioni I/O native per i file PHP, ad esempio `copy`, `rename`oppure `file_put_contents`, perché i file S3 non si trovano all&#39;interno del file system. Vedi [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) per esempi di codice.
 
 <!-- link definitions -->
 
 [AWS S3]: https://aws.amazon.com/s3
 [AWS IAM]: https://aws.amazon.com/iam/
 [ngx repo]: https://github.com/anomalizer/ngx_aws_auth
-[DriverInterface.php]: https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18

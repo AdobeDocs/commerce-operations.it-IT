@@ -1,24 +1,28 @@
 ---
 title: Configurare il ridimensionamento delle immagini per l'archiviazione remota
 description: Ottimizza le risorse del disco configurando il ridimensionamento delle immagini lato server.
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+source-git-commit: 7fc5d561baa3c2a4aab160a35a1c8a302a62a3b1
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '247'
 ht-degree: 1%
 
 ---
 
 # Configurare il ridimensionamento delle immagini per l&#39;archiviazione remota
 
-Per impostazione predefinita, [!DNL Commerce] supporta il ridimensionamento dell’immagine sul lato dell’applicazione. Tuttavia, abilitando il modulo Archiviazione remota, è possibile utilizzare Nginx per scaricare il ridimensionamento dell&#39;immagine sul lato server, dove è possibile salvare le risorse del disco e ottimizzare l&#39;utilizzo del disco.
+Per impostazione predefinita, Adobe Commerce supporta il ridimensionamento dell’immagine sul lato dell’applicazione. Tuttavia, abilitando il modulo Archiviazione remota, è possibile utilizzare Nginx per scaricare il ridimensionamento dell&#39;immagine sul lato server, dove è possibile salvare le risorse del disco e ottimizzare l&#39;utilizzo del disco.
 
 Il diagramma seguente mostra come Nginx recupera, ridimensiona e archivia le immagini nella cache. Il ridimensionamento è determinato dai parametri inclusi nell’URL, ad esempio altezza e larghezza.
 
 ![ridimensionamento immagine](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
-## Configura il formato URL in [!DNL Commerce]
+>[!TIP]
+>
+>Per Adobe Commerce sui progetti di infrastruttura cloud, consulta [Configurare lo storage remoto per l’infrastruttura Commerce su Cloud](cloud-support.md)
 
-Per ridimensionare le immagini sul lato server, è necessario configurare Commerce per fornire argomenti relativi all’altezza, alla larghezza e alla posizione (URL) dell’immagine.
+## Configurare il formato URL in Adobe Commerce
+
+Per ridimensionare le immagini sul lato server, è necessario configurare Adobe Commerce in modo da fornire argomenti relativi all’altezza, alla larghezza e alla posizione (URL) dell’immagine.
 
 **Per configurare Commerce per il ridimensionamento delle immagini lato server**:
 
