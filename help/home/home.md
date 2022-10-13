@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;argomenti popolari
 title: Pagina principale
 description: Sfoglia un indice della documentazione del prodotto operativo Adobe Commerce.
-source-git-commit: e247b0bd2765e425da033f32ab99f79cfe6cc0b2
+source-git-commit: 441bbcf15901b9ca547780eb6f3a20efc8025d91
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '148'
 ht-degree: 2%
 
 ---
@@ -108,6 +108,14 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
       <a href="../commerce-at-scale/overview.md"><strong>Commercio in scala</strong></a>
     </div>
   </td>
+  <td valign="top">
+    <a href="../security-and-compliance/overview.md">
+       <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="../security-and-compliance/overview.md"><strong>Sicurezza e conformità</strong></a>
+    </div>
+  </td>
 </tr>
 </table>
 
@@ -116,8 +124,6 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
 Scopri la nuova documentazione e gli aggiornamenti significativi alla documentazione esistente.
 
 | Modifica | Tipo |
-|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| È stato spostato il [Guida alle informazioni sulla versione](../release/roadmap.md) da [devdocs.magento.com](https://devdocs.magento.com/release/versions.html). | Nuovo |
-| È stato spostato il [Riferimento strumenti riga di comando](../reference/commerce.md) da [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | Nuovo |
-| È stato spostato il [Guida all&#39;installazione in locale](../installation/overview.md) da [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | Nuovo |
-| È stato spostato il [Guida alla migrazione dei dati](../tools/data-migration-tool/how-migration-works.md) da [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | Nuovo |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
+| È stato spostato il [Guida alla sicurezza e alla conformità](../security-and-compliance/overview.md) da [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | Nuovo |
+| È stato spostato il [Guida alle informazioni sulla versione](../release/roadmap.md) da [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Nuovo |

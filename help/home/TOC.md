@@ -1,10 +1,10 @@
 ---
 user-guide-title: Guide operative
 user-guide-description: Scopri gli aspetti operativi della manutenzione dell’applicazione Adobe Commerce o Magento Open Source.
-source-git-commit: 14379c68e319104336f3aa8c79255ea67a57c62b
+source-git-commit: 035c60de7234e15c0ace3ffbf60aa771587c432c
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 19%
+source-wordcount: '118'
+ht-degree: 17%
 
 ---
 
@@ -23,3 +23,4 @@ ht-degree: 19%
 - [Playbook di implementazione](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
 - [Playbook operativo](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
 - [Commercio in scala](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
+- [Sicurezza e conformità](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/overview.html)
