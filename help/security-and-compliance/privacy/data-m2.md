@@ -1,9 +1,9 @@
 ---
 title: Riferimento per le informazioni personali dei clienti (versione 2.x)
 description: Scopri i diagrammi del flusso di dati e le mappature delle entità del database per le informazioni personali dei clienti in Adobe Commerce e Magenti Open Source 2.x.
-source-git-commit: 0640b59cc529123911537475bbfc179c917ac258
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 >
 >Questo è uno degli argomenti trattati in una serie di argomenti che aiutano i commercianti e gli sviluppatori di Adobe Commerce e Magenti Open Source a prepararsi per la conformità alle normative sulla privacy. Rivolgiti al tuo consulente legale per determinare se e come la tua azienda debba rispettare eventuali obblighi legali.
 
-Utilizza i seguenti diagrammi di flusso di dati e mappature delle entità di database come riferimento durante lo sviluppo di programmi di conformità per le normative sulla privacy come:
+Utilizza i seguenti diagrammi del flusso di dati e le mappature delle entità del database come riferimento durante lo sviluppo di programmi di conformità per le normative sulla privacy come:
 
 - [RGPD](gdpr.md)
 - [CCPA](ccpa.md)
 
-## Diagrammi di flusso dei dati
+## Diagrammi di flusso di dati
 
 I diagrammi del flusso di dati mostrano i tipi di dati che clienti e amministratori possono immettere e recuperare dalla vetrina e dall’amministratore.
 
