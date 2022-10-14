@@ -1,7 +1,7 @@
 ---
 title: Politica del ciclo di vita del software
 description: Scopri le date chiave per la fine del supporto software per le versioni di Adobe Commerce.
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Per Adobe Commerce 2.4 e versioni successive:
 
-- Per semplificare meglio la nostra politica del ciclo di vita, Adobe fornisce correzioni di qualità alla linea di rilascio 2.4 fino alla data di fine del supporto della versione PHP su cui si basa. Un cliente può accedere alle correzioni di qualità contattando [Supporto Adobe Commerce](https://developer.adobe.com/commerce/contributor/community/support/) o attraverso il self-service [Strumento Patch di qualità](https://devdocs.magento.com/quality-patches/tool.html) se la loro versione è ancora idonea al supporto qualità. Fai riferimento alla tabella seguente per le date di fine del supporto software per le righe di rilascio di Adobe Commerce.
+- Per semplificare meglio la nostra politica del ciclo di vita, Adobe fornisce correzioni di qualità alla linea di rilascio 2.4 fino alla data di fine del supporto della versione PHP su cui si basa. Un cliente può accedere alle correzioni di qualità contattando [Supporto Adobe Commerce](https://developer.adobe.com/commerce/contributor/community/support/) o attraverso il self-service [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} se la loro versione è ancora idonea al supporto qualità. Fai riferimento alla tabella seguente per le date di fine del supporto software per le righe di rilascio di Adobe Commerce.
 
 - Adobe fornisce correzioni di sicurezza solo tramite la patch o la patch di sicurezza più recente, anche se la versione di un cliente è ancora idonea al supporto qualità. A differenza delle correzioni di qualità, le correzioni di sicurezza non possono essere sottoposte a backporting alle versioni minori precedenti o alle versioni precedenti delle patch nelle versioni secondarie supportate.
 
