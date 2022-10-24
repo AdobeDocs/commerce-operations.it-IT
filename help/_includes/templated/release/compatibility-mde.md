@@ -1,7 +1,7 @@
 ---
-source-git-commit: d36beb2e963a28d7a98d61dab94ddc67cb2f40ab
+source-git-commit: d1f1f08a6c42f9d1900d37b5cdeb11fbccd2b92e
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1899'
 ht-degree: 0%
 
 ---
@@ -815,6 +815,73 @@ ht-degree: 0%
       <td>Compatibile</span>
       </td>
       <td>Supportato</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="15">Channel Manager</th>
+    </tr>
+    <tr>
+      <td>Channel Manager 1.1.0</td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Channel Manager 1.0.0</td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
       </td>
     </tr>
   </tbody>
