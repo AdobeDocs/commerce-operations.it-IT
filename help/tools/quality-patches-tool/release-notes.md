@@ -1,9 +1,9 @@
 ---
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
-source-git-commit: bb1cb17b75a799409336068967c9d0facefeaf41
+source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
 workflow-type: tm+mt
-source-wordcount: '9467'
+source-wordcount: '9581'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,14 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla Comunità per Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.22 {#v1-1-22}
+
+* **ACSD-47444** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.3) - Corregge il _Tentativo di accedere all&#39;offset della matrice sul valore di tipo bool_ errore durante l&#39;accesso a determinati percorsi di categoria non esistenti per i prodotti noti su PHP 7.4.
+* **ACSD-47332** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema in cui il cron non riesce con un errore che viene segnalato solo quando è in esecuzione tra le 00:00 e le 00:59 UTC.
+* **ACSD-47280** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema che impedisce il corretto funzionamento della disattivazione della funzione di catalogo condiviso su un ambito specifico.
+* **ACSD-47106** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.6) - Corregge il problema per cui un valore non può essere salvato in un nuovo attributo personalizzato in una pagina di creazione di un&#39;azienda.
+* Patch aggiornata: ACSD-45143.
 
 ## v1.1.21 {#v1-1-21}
 
