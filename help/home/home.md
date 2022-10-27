@@ -2,7 +2,7 @@
 keywords: Adobe Commerce;home;argomenti popolari
 title: Pagina principale
 description: Sfoglia un indice della documentazione del prodotto operativo Adobe Commerce.
-source-git-commit: 441bbcf15901b9ca547780eb6f3a20efc8025d91
+source-git-commit: 80163ec1c40a19ea4eb138c3753b08daa231dc41
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 2%
@@ -126,4 +126,4 @@ Scopri la nuova documentazione e gli aggiornamenti significativi alla documentaz
 | Modifica | Tipo |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
 | È stato spostato il [Guida alla sicurezza e alla conformità](../security-and-compliance/overview.md) da [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | Nuovo |
-| È stato spostato il [Guida alle informazioni sulla versione](../release/roadmap.md) da [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Nuovo |
+| È stato spostato il [Guida alle informazioni sulla versione](../release/release-notes/overview.md) da [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Nuovo |

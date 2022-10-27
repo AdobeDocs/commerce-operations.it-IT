@@ -1,7 +1,7 @@
 ---
 title: Pianificazione del rilascio
 description: Scopri quando sono pianificate versioni specifiche di Adobe Commerce per la versione beta, pre-release e la disponibilità generale.
-source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
+source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Pianificazione del rilascio
 
-L&#39;Adobe si impegna continuamente per trovare il giusto equilibrio tra la semplicità e la prevedibilità degli aggiornamenti dei prodotti e la possibilità di apportare miglioramenti e nuove funzionalità ai primi sviluppatori. Nel corso dell&#39;ultimo anno, abbiamo perfezionato il modo in cui forniamo software per supportare questo equilibrio. Per ulteriori informazioni, consulta la nostra [criterio di rilascio](policy.md).
+L&#39;Adobe si impegna continuamente per trovare il giusto equilibrio tra la semplicità e la prevedibilità degli aggiornamenti dei prodotti e la possibilità di apportare miglioramenti e nuove funzionalità ai primi sviluppatori. Nel corso dell&#39;ultimo anno, abbiamo perfezionato il modo in cui forniamo software per supportare questo equilibrio. Per ulteriori informazioni, consulta la nostra [criterio di gestione delle versioni](versioning-policy.md).
 
 Adobe rilascia patch funzionali e di sicurezza per ogni linea di rilascio supportata di Adobe Commerce e Magenti Open Source.
 
