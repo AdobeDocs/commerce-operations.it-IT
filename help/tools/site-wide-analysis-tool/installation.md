@@ -1,9 +1,9 @@
 ---
 title: Guida all’installazione
 description: Usa questa guida per l’installazione [!DNL Site-Wide Analysis Tool] per il sito web
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 434fb9eb9570f183d9bf9d4b56b8e56a69e8005d
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Prima di installare l’agente, l’infrastruttura locale deve soddisfare i segu
 
 ## [!DNL Commerce Services Connector]
 
-L&#39;agente richiede l&#39; [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) estensione da installare nel sistema e [configurato](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) con le chiavi API. Per verificare che l&#39;estensione sia installata, esegui il comando seguente:
+L&#39;agente richiede l&#39; [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) estensione da installare nel sistema e [configurato](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) con le chiavi API. Per verificare che l&#39;estensione sia installata, esegui il comando seguente:
 
 ```bash
 bin/magento module:status Magento_ServicesConnector
@@ -83,7 +83,7 @@ Se hai installato l’estensione e l’hai configurata utilizzando una chiave AP
 
 1. Fai clic su **[!UICONTROL Delete]** accanto alla chiave API esistente.
 
-1. [Configura](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) una nuova chiave API.
+1. [Configura](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) una nuova chiave API.
 
 >[!IMPORTANT]
 >
@@ -109,7 +109,7 @@ Se l&#39;estensione non è installata, segui le istruzioni seguenti per installa
    bin/magento setup:upgrade
    ```
 
-1. [Configurare le chiavi API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) per collegare l&#39;estensione al sistema.
+1. [Configurare le chiavi API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) per collegare l&#39;estensione al sistema.
 
 ## Installare l’agente
 
