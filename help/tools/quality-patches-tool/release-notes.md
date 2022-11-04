@@ -1,9 +1,9 @@
 ---
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
-source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
+source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
 workflow-type: tm+mt
-source-wordcount: '9581'
+source-wordcount: '9752'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,18 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla Comunità per Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.23 {#v1-1-23}
+
+* **ACSD-47179** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Risolve il problema che impediva ad un amministratore con accesso limitato a un ambito specifico di eliminare le revisioni dei prodotti.
+* **ACSD-47107** (per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.5) - Corregge il problema in cui lo sconto Regola prezzo catalogo viene applicato alle opzioni di prodotto personalizzate.
+* **ACSD-47232** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema per cui i coupon con condizioni di peso totale non possono essere applicati nell’amministratore.
+* **ACSD-46519** (per Adobe Commerce e Magenti Open Source >=2.4.1 &lt;2.4.6) - Corregge il problema in cui la richiesta categoryList di GraphQL restituisce un product_count errato per una categoria di ancoraggio.
+* **ACSD-47027** (per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.6) - Corregge una richiesta lenta updateCompanyRole GraphQL .
+* **ACSD-47666** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Risolve il problema in cui la funzione di filtro non funziona in Amministratore > Sistema > Autorizzazioni > Ruoli utente > un ruolo > Griglia Utenti ruolo.
+* **ACSD-47497** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema a causa del quale la scheda Servizi non è visibile nella configurazione in Admin.
+* Patch aggiornata: ACSD-47743.
+* Patch sostituite: MDVA-42807.
 
 ## v1.1.22 {#v1-1-22}
 
