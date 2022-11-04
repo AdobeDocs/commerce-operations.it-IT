@@ -1,9 +1,9 @@
 ---
 title: Archiviazione Git dati di esempio clone
 description: Segui questi passaggi per installare Adobe Commerce e Magento Open Source dati di esempio clonando archivi Git.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,10 @@ Per clonare l’archivio GitHub dei dati di esempio utilizzando il protocollo SS
 
    Se hai utilizzato la `2.4-develop` ramo dell’archivio GitHub di Magento Open Source, il ramo Dati di esempio deve essere `2.4-develop`.
 
-   Se hai utilizzato la `2.4.3` ramo dell’archivio GitHub di Magento Open Source, il ramo Dati di esempio deve essere `2.4.3`.
-
-   Per estrarre il ramo corretto, esegui il seguente comando dalla directory principale dell’archivio dati di esempio (supponendo che sia necessario `2.4.3` filiale):
+   Per estrarre il ramo corretto, esegui il seguente comando dalla directory principale dell’archivio dati di esempio (supponendo che sia necessario `2.4-develop` filiale):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Cambia in `<app_root>`.
@@ -129,12 +127,10 @@ Per clonare l’archivio GitHub dei dati di esempio utilizzando il protocollo HT
 
    Se hai utilizzato la `2.4-develop` ramo dell’archivio GitHub di Magento Open Source, il ramo Dati di esempio deve essere `2.4-develop`.
 
-   Se hai utilizzato la `2.4.3` ramo dell’archivio GitHub di Magento Open Source, il ramo Dati di esempio deve essere `2.4.3`.
-
-   Per estrarre il ramo corretto, esegui il seguente comando dalla directory principale dell’archivio dati di esempio (supponendo che sia necessario `2.4.3` filiale):
+   Per estrarre il ramo corretto, esegui il seguente comando dalla directory principale dell’archivio dati di esempio (supponendo che sia necessario `2.4-develop` filiale):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Cambia in `<magento_root>`.
