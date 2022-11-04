@@ -1,9 +1,9 @@
 ---
 title: Elaborazione dell'ordine ad alta velocità
 description: Ottimizza la posizione dell’ordine e l’esperienza di pagamento per la distribuzione Adobe Commerce o Magenti Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 45ffa6487d94feba3d6c2a6d5d938108b1fef91d
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ La `set` scrive quanto segue nel `app/etc/env.php` file:
 AsyncOrder supporta un set limitato di [!DNL Commerce] funzionalità.
 
 | Categoria | Funzione supportata |
-|---------------- | -----------------------|
+|------------------|--------------------------------------------------------------------------|
 | Tipi di pagamento | Checkout di una pagina<br>Pagamento standard<br>Preventivo Negoziabile B2B |
 | Metodi di pagamento | Ordine di pagamento<br>Contanti sulla consegna<br>Braintree<br>PayPal PayFlow Pro |
 | Metodi di spedizione | Sono supportati tutti i metodi di spedizione. |
@@ -184,8 +184,8 @@ stage:
 
 <!-- link definitions -->
 
-[global]: https://docs.magento.com/user-guide/catalog/inventory-options-global.html
-[inventory]: https://docs.magento.com/user-guide/configuration/catalog/inventory.html
+[global]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/global-options.html
+[inventory]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html
 [mrg]: https://developer.adobe.com/commerce/php/module-reference/
 [AsyncOrder]: https://developer.adobe.com/commerce/php/module-reference/module-async-order/
 [CalcoloTotaleDifferito]: https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/

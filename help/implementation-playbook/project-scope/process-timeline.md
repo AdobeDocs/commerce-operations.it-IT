@@ -1,15 +1,16 @@
 ---
-title: Processo e Timeline
+title: Processo di implementazione e tempistica
 description: Vedi esempi di tipiche attività relative alle timeline dell’implementazione e alla timeline di Adobe Commerce.
 exl-id: 73e38098-db2b-4ad3-9f2d-ac8a377f2525
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 6e07f8c958adedd2a98d3fe0d174865a3b9ebead
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Processo e timeline tipici
+
+# Processo di implementazione e cronologia tipici
 
 Molte organizzazioni si preparano a una trasformazione commerciale creando una richiesta di proposta (RFP). Ciò include requisiti dettagliati, sistemi di registrazione correnti, un business case e obiettivi specifici (ad esempio, ricavi, conversione, valore medio dell’ordine) per definire il successo. Il marchio si avvicina quindi da due a tre diversi integratori di sistemi commerce o agenzie digitali per valutare, rivedere le stime e le proposte, selezionare un&#39;azienda e iniziare a lavorare per la tempistica prevista per il lancio.
 
