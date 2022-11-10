@@ -2,7 +2,7 @@
 user-guide-title: Playbook di implementazione
 user-guide-description: Scopri le strategie per la pianificazione e l’implementazione di un sito Adobe Commerce di successo.
 mini-toc-levels: 3
-source-git-commit: 1582431fed6978de23bd1b7f6d901ae343523a2e
+source-git-commit: 8c86688cd0c7127b6b39c0c605c668288dbe09dc
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -99,6 +99,7 @@ ht-degree: 0%
       - [Panoramica](best-practices/launch/overview.md)
       - [Servizio di notifica della sicurezza di Adobe](best-practices/launch/security-notification-service.md)
       - [Configurare il file robots.txt](best-practices/launch/robots-txt.md)
+      - [Prevenire e rispondere agli incidenti di sicurezza](best-practices/launch/prevent-respond-security-incident.md)
    - Manutenzione {#maintenance}
       - [Panoramica](best-practices/maintenance/overview.md)
       - [Prestazioni frontali di controllo](best-practices/maintenance/frontend-performance.md)
