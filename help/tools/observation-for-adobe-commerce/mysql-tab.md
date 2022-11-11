@@ -1,7 +1,7 @@
 ---
-title: '"Il [!UICONTROL MySQL] scheda"'
+title: "Il [!UICONTROL MySQL] scheda"
 description: Scopri le [!UICONTROL MySQL] scheda di [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 8c9753fe5b9038978859cc101d53f897267ecfe9
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ![Archiviazione gratuita di MySQL% per nodo](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
-Molti problemi sono causati dall&#39;esaurimento dello spazio di archiviazione di MySQL nell&#39;archivio assegnato a MySQL (`datadir` Impostazione di configurazione MySQL, il valore predefinito è `/data/mysql`) o `tmpdir` esaurimento dello spazio. Il valore predefinito `tmpdir` (Impostazione MySQL) è `/tmp`. Questo fotogramma esamina il `/, /tmp` (se definito come montaggio separato) e `/data/mysql` % dello stoccaggio libero. A partire da MySQL versione 5.7 (MariaDB versione 10.2), le tabelle tmp non compresse vengono scritte in una tablespace tmp nella `/data/mysql` nel file (ibtmp1). Questo file si espande automaticamente senza limiti per impostazione predefinita. Poiché si tratta di una tablespace, non diminuirà le dimensioni e verrà reimpostato a 12 MB al riavvio di MySQL.
+Molti problemi sono causati dall&#39;esaurimento dello spazio di archiviazione di MySQL nell&#39;archivio assegnato a MySQL (`datadir` Impostazione di configurazione MySQL, il valore predefinito è `/data/mysql`) o `tmpdir` esaurimento dello spazio. Il valore predefinito `tmpdir` (Impostazione MySQL) è `/tmp`. La **[!UICONTROL MySQL% free storage by node]** il telaio guarda `/, /tmp` (se definito come montaggio separato) e `/data/mysql` percentuale dello stoccaggio libero. A partire da MySQL versione 5.7 (MariaDB versione 10.2), non compressa `tmp` tabelle scritte in un `tmp` tablespace `/data/mysql` nel file (ibtmp1). Questo file si espande automaticamente senza limiti per impostazione predefinita. Poiché si tratta di una tablespace, non diminuirà le dimensioni e verrà reimpostato a 12 MB al riavvio di MySQL.
 
 ## [!UICONTROL MySQL Connections by Node]
 
@@ -38,13 +38,13 @@ La **[!UICONTROL Galera Number of Nodes in cluster]** frame visualizza informazi
 
 ![MySQL arresta e avvia](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
 
-La **[!UICONTROL MySQL shutdowns and starts]** viene rilevato quando si arresta un nodo. [!DNL Galera] i nodi verranno sfrattati e verranno eliminati automaticamente dal [!DNL Galera] nodo. In genere questo si tradurrà in un riavvio del servizio MySQL.
+La **[!UICONTROL MySQL shutdowns and starts]** viene rilevato quando si arresta un nodo. La [!DNL Galera] i nodi verranno sfrattati e verranno eliminati automaticamente dal [!DNL Galera] nodo. In genere questo si tradurrà in un riavvio del servizio MySQL.
 
 ## [!UICONTROL Galera log]
 
 ![Registro di Galera](../../assets/tools/observation-for-adobe-commerce/mysql-tab-6.jpg)
 
-La **[!UICONTROL Galera log]** il frame mostra il conteggio di segnali particolari provenienti dai log di MySQL relativi [!DNL Galera] nodi, i relativi stati e le modifiche dello stato [!DNL Galera] cluster.
+La **[!UICONTROL Galera log]** frame mostra il numero di segnali particolari provenienti dai log di MySQL riguardanti [!DNL Galera] nodi, i relativi stati e le modifiche dello stato [!DNL Galera] cluster.
 
 * &#39;%1047 WSREP non ha ancora preparato il nodo per l&#39;utilizzo dell&#39;applicazione%&#39;) come &#39;node_not_prep_for_use&#39;
 * &#39;%\[ERROR\] WSREP: Impossibile leggere da: wsrep_sst_xtrabackup-v2%) come &#39;xtrabackup_read_fail&#39;
@@ -55,8 +55,8 @@ La **[!UICONTROL Galera log]** il frame mostra il conteggio di segnali particola
 * &#39;%Members = 2/3 (unito/totale)%&#39;) come &#39;2of3&#39;
 * &#39;%Members = 2/2%&#39;) come &#39;2of2&#39;
 * &#39;%Members = 1/2%&#39;) come &#39;1of2&#39;
-* &quot;%Members = 1/3%&quot;) come &quot;1of3&quot;
-* ‘%Members = 1/1%&#39;) come &#39;1of1&#39;
+* &#39;%Members = 1/3%&#39;) come &#39;1of3&#39;
+* &#39;%Members = 1/1%&#39;) come &#39;1of1&#39;
 * &#39;%\[Nota\] /usr/sbin/mysqld (mysqld 10.%&#39;) come &#39;sql_riavvio&#39;
 * &#39;%Quorum: Nessun nodo con stato completo:%) come &#39;no_node_count&#39;
 * &#39;%WSREP: Membro 0%) come &#39;mem_0&#39;
@@ -102,7 +102,7 @@ La **[!UICONTROL Cron_schedule table updates]** frame visualizza la durata massi
 
 ![Tracce query lente](../../assets/tools/observation-for-adobe-commerce/mysql-tab-11.jpg)
 
-La **[!UICONTROL Slow Query Traces]** frame visualizza la tabella e il tipo di richiesta in cui esistono tracce di query lente. Viene creata una traccia lenta della query per le transazioni di query che richiedono più di 5 secondi. Per questo frame sono importanti le query di aggiornamento. Se una tabella viene aggiornata da `UPDATE`, `DELETE`e `INSERT` istruzioni, possono bloccare le tabelle per un periodo di tempo.
+La **[!UICONTROL Slow Query Traces]** frame visualizza la tabella e il tipo di richiesta in cui esistono tracce di query lente. Viene creata una traccia lenta della query per le transazioni di query che richiedono più di cinque secondi. Per questo frame sono importanti le query di aggiornamento. Se una tabella viene aggiornata da `UPDATE`, `DELETE`e `INSERT` istruzioni, possono bloccare le tabelle per un periodo di tempo.
 
 Pari `SELECT` le istruzioni possono bloccare le righe se utilizzate con FOR UPDATE.
 
@@ -114,13 +114,13 @@ Pari `SELECT` le istruzioni possono bloccare le righe se utilizzate con FOR UPDA
 
 ![Modifica della tabella Cron](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
 
-La **[!UICONTROL Cron table change]** frame è alla ricerca di messaggi di errore &quot;impossibile acquisire il blocco per cron job:&quot;, insieme a un errore di memoria PHP specifico e blocchi che coinvolgono `cron_schedule` tabella. Se la `cron_schedule` tabella bloccata (ad esempio da un `DELETE` query eseguita contro), impedirà l’esecuzione di altri cronisti.
+La **[!UICONTROL Cron table change]** frame cerca i messaggi di errore &quot;impossibile acquisire il blocco per cron job:&quot;, insieme ad un errore di memoria PHP specifico e i blocchi che coinvolgono `cron_schedule` tabella. Se la `cron_schedule` tabella bloccata (ad esempio da un `DELETE` query eseguita contro), impedirà l’esecuzione di altri cronisti.
 
 ## [!UICONTROL Deadlocks]
 
 ![Sconti](../../assets/tools/observation-for-adobe-commerce/mysql-tab-14.jpg)
 
-La **[!UICONTROL Deadlocks]** frame sta esaminando le seguenti stringhe analizzate dai log MySQL.
+La **[!UICONTROL Deadlocks]** frame esamina le seguenti stringhe analizzate dai log MySQL:
 
 * &#39;%Errore irreversibile PHP: Dimensione di memoria consentita pari a%&#39;) come php_mem_error
 * &#39;%get lock; prova a riavviare la transazione. query: DELETE DA \`cron_schedp%&#39;) come cron_sched_lock_del
@@ -198,7 +198,7 @@ La **[!UICONTROL DB Statistics]** frame visualizza eliminazioni, scritture, righ
 
 ![Errori del database](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
-La **[!UICONTROL Database Errors]** frame mostra una varietà di database [avvisi ed errori](https://mariadb.com/kb/en/mariadb-error-codes/).
+La **[!UICONTROL Database Errors]** frame mostra una varietà di database [avvisi ed errori](https://mariadb.com/kb/en/mariadb-error-codes/):
 
 * &#39;%La dimensione della memoria allocata per la tabella temporanea è superiore al 20% di innodb_buffer_pool_size%&#39; come &#39;temp_tbl_buff_pool&#39;
 * &#39;%\[ERROR\] WSREP: rbr write fail%&quot;) come &#39;rbr_write_fail&#39;
@@ -225,9 +225,9 @@ La **[!UICONTROL Database Errors]** frame mostra una varietà di database [avvis
 * &#39;%SQLSTATE[HY000]: Errore generale: 2014%) come &#39;sql_2014&#39;
 * &#39;%1927 Connessione interrotta%&#39;) come &#39;sql_1927&#39;
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) come &#39;sql_1062_e&#39;
-* &quot;&#39;%[Nota] WSREP: Scaricamento della mappa di memoria sul disco in corso...%) come &#39;mem_map_flush&#39;
+* &#39;&#39;%[Nota] WSREP: Scaricamento della mappa di memoria sul disco in corso...%) come &#39;mem_map_flush&#39;
 * &#39;%Codice errore interno MariaDB: 1146%) come &#39;sql_1146&#39;
-* &#39;%Codice errore interno MariaDB: 1062%) come &#39;sql_1062&#39; ・ &#39;%1062 [Avviso] InnoDB:%) come &#39;sql_1062_w&#39;
+* &#39;%Codice errore interno MariaDB: 1062%) come &#39;sql_1062&#39; * &#39;%1062&#39; [Avviso] InnoDB:%) come &#39;sql_1062_w&#39;
 * &#39;%Codice errore interno MariaDB: 1064%) come &#39;sql_1064&#39;
 * &#39;%InnoDB: Errore di asserzione nel file%) come &#39;assertion_err&#39;
 * &#39;%mysqld_safe Numero di processi in esecuzione: 0%) come &#39;mysql_oom&#39;

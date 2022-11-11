@@ -1,9 +1,9 @@
 ---
-title: '"Il [!UICONTROL PHP] scheda"'
-description: Scopri le [!UICONTROL PHP] scheda [!Osservazione DNS per Adobe Commerce].
-source-git-commit: f71fc3b2a66a4cc0b0d7865138184135e4a874e0
+title: "Il [!UICONTROL PHP] scheda"
+description: Scopri le [!UICONTROL PHP] scheda di [!DNL Observation for Adobe Commerce].
+source-git-commit: 28055eb09235912c66c637990e2081a70e1c7808
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ La **[!UICONTROL PHP active process details]** frame mostra i processi PHP, incl
 
 ![Carico di processo PHP](../../assets/tools/php-process-load.jpg)
 
-Questo fotogramma mostra il carico della CPU dai processi PHP-FPM nell&#39;arco temporale selezionato.
+La **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** frame mostra il carico della CPU dai processi PHP-FPM nell&#39;arco temporale selezionato.
 
 ## [!UICONTROL PHP Memory detail]
 
@@ -35,7 +35,7 @@ La **[!UICONTROL PHP Memory detail]** frame mostra l&#39;utilizzo della memoria 
 
 ![Utilizzo della CPU PHP](../../assets/tools/php-cpu-utilization.jpg)
 
-La **[!UICONTROL PHP CPU Utilization]** frame mostra l&#39;utilizzo della CPU % dei processi PHP nell&#39;arco temporale selezionato.
+La **[!UICONTROL PHP CPU Utilization]** frame mostra la percentuale di utilizzo della CPU dei processi PHP nell&#39;arco temporale selezionato.
 
 ## [!UICONTROL PHP Process states]
 
@@ -106,7 +106,7 @@ La **[!UICONTROL Database Errors]** frame mostra gli errori del database nell&#3
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) come &#39;sql_1062_e&#39;
 * &#39;%[Nota] WSREP: Scaricamento della mappa di memoria sul disco in corso...%) come &#39;mem_map_flush&#39;
 * &#39;%Codice errore interno MariaDB: 1146%) come &#39;sql_1146&#39;
-* &#39;%Codice errore interno MariaDB: 1062%) come &#39;sql_1062&#39; ・ &#39;%1062 [Avviso] InnoDB:%) come &#39;sql_1062_w&#39;
+* &#39;%Codice errore interno MariaDB: 1062%) come &#39;sql_1062&#39; * &#39;%1062&#39; [Avviso] InnoDB:%) come &#39;sql_1062_w&#39;
 * &#39;%Codice errore interno MariaDB: 1064%) come &#39;sql_1064&#39;
 * &#39;%InnoDB: Errore di asserzione nel file%) come &#39;assertion_err&#39;
 * &#39;%mysqld_safe Numero di processi in esecuzione: 0%) come &#39;mysql_oom&#39;

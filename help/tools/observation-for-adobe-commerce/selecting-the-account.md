@@ -1,9 +1,9 @@
 ---
-title: '"Inizia a usare: Selezione dell''account e del calendario"'
+title: "Inizia a usare: Selezione dell'account e del calendario"
 description: Scopri come iniziare a utilizzare i [!DNL Observation for Adobe Commerce] nerdlet selezionando l’account e l’intervallo di tempo.
-source-git-commit: 7058d114c31a45a3f66dcff265d1bafc4e01de41
+source-git-commit: 86e990e18955cce8ed0917c72ddbe99d8cb3f333
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 Quando fai clic sul pulsante [!UICONTROL Observation for Adobe Commerce] l&#39;icona [!DNL Observation for Adobe Commerce] il nerdlet si aprirà.
 
-1. Fai clic sul pulsante **Selezionare un account** a discesa. Se non visualizzi il **Selezionare un account** elenco a discesa, potresti non avere accesso. Richiedi [qui](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx):
+1. Fai clic sul pulsante **Selezionare un account** a discesa. Se non visualizzi il **Selezionare un account** elenco a discesa, potresti non avere accesso. Fai clic su [qui](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx) per richiedere l&#39;accesso.
 
    ![Selezionare un account](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
 
