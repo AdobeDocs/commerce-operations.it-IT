@@ -1,7 +1,7 @@
 ---
 title: "Il [!UICONTROL Summary] scheda"
 description: Scopri le [!UICONTROL Summary] scheda di [!DNL Observation for Adobe Commerce].
-source-git-commit: 5058441eb64d59b3e1aa329603a87f75c826996e
+source-git-commit: 808018aca0630f725eebdd279b9314e2ee80eccc
 workflow-type: tm+mt
 source-wordcount: '2655'
 ht-degree: 0%
@@ -363,7 +363,7 @@ La **[!UICONTROL Order transactions (default?)]** cerca transazioni `request.hea
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![informazioni sull&#39;indice elasticsearch](../../assets/tools/elasticsearch-Index-information.jpg)
+![informazioni sull&#39;indice elasticsearch](../../assets/tools/elasticsearch-index-information.jpg)
 
 **[Elasticsearch di stati:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
