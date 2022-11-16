@@ -4,9 +4,9 @@ description: Scopri le best practice di implementazione per la fase di pianifica
 role: Developer, Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 78308f9cb3d2ebe8af41c42f9bb146409367ab6c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -67,13 +67,14 @@ Gli argomenti seguenti descrivono le best practice per l’ottimizzazione delle 
 
 ## **Vendite e marketing**
 
-- [Best practice per il limite del carrello dei prodotti &#x200B;](product-cart.md)
+- [Best practice per il limite del carrello dei prodotti](product-cart.md)
 - [Best practice per la configurazione delle promozioni](product-cart-promotions.md)
 
 ## **Ambito del progetto**
 
 - [Aumento dei partner](partner-escalation.md)
+- [Elaborazione archiviazione pagamenti](payment-processing-storage.md)
 
 ## **Estensioni di acquisto**
 
-- [Tecniche consigliate per l’utilizzo di estensioni di terze parti in Adobe Commerce &#x200B;](extensions.md)
+- [Tecniche consigliate per l’utilizzo di estensioni di terze parti in Adobe Commerce](extensions.md)
