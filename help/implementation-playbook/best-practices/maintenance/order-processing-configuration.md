@@ -4,9 +4,9 @@ description: Scopri le best practice di configurazione per migliorare le prestaz
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: fbeaa486d32d77135ab97f4819ef4df9e64c6471
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Con l’aumento del volume degli ordini sui siti Commerce, puoi ottimizzare le p
 
 - **[!UICONTROL Asynchronous indexing]**- Abilita questa opzione per impedire i blocchi del database e l&#39;elaborazione rallentata che possono verificarsi quando un numero elevato di ordini viene inserito contemporaneamente.
 - **[!UICONTROL Asynchronous email notifications]**- Abilita questa opzione per velocizzare le prestazioni del checkout inviando notifiche e-mail per l’elaborazione degli ordini a intervalli definiti, anziché inviarle immediatamente.
-- **[!UICONTROL Enable Archiving]**- Abilita questa opzione per archiviare gli ordini e liberare spazio su disco del database per un&#39;elaborazione più rapida dell&#39;ordine. Vedi [Abilita archiviazione](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
+- **[!UICONTROL Enable Archiving]**- Abilita questa opzione per migliorare le prestazioni delle griglie Ordini, Fatture, Spedizioni e Note di credito e mantenere l&#39;area di lavoro priva di informazioni superflue, in modo da poterti concentrare sull&#39;attività corrente. Vedi [Abilita archiviazione](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
 
 ## Prodotti e versioni interessati
 
