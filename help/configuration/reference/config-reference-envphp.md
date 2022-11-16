@@ -1,7 +1,7 @@
 ---
 title: riferimento env.php
 description: Vedi un elenco di valori per il file env.php.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: fe5e16d44213d1864a62230029e9e206eecd1717
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -185,7 +185,7 @@ Ad esempio, se `queue/default_connection` è `amqp` in `env.php` ma `db` la conn
 
 ## directory
 
-Opzioni di mappatura della directory facoltative che devono essere impostate quando il server web è configurato per servire l’app Commerce da `/pub` directory per [maggiore sicurezza][change-docroot-to-pub].
+Opzioni di mappatura della directory facoltative che devono essere impostate quando il server web è configurato per servire l’app Commerce da `/pub` directory per [maggiore sicurezza](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -219,7 +219,7 @@ Data di installazione dell&#39;applicazione Commerce.
 
 Le impostazioni del provider di blocco sono configurate utilizzando `lock` nodo.
 
-Ulteriori informazioni [Blocca configurazione provider][lock-provider-config].
+Ulteriori informazioni [Blocca configurazione provider](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -299,6 +299,4 @@ Ulteriori informazioni in [env-php-config-set](../cli/set-configuration-values.m
 
 <!-- Link definitions -->
 
-[change-docroot-to-pub]: ../../installation/tutorials/docroot.md
-[lock-provider-config]: ../../installation/tutorials/lock-provider.md
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
