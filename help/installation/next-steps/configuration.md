@@ -1,9 +1,9 @@
 ---
 title: Configurare l’applicazione
 description: Scopri la configurazione post-installazione richiesta per le distribuzioni locali Adobe Commerce e Magenti Open Source.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Elasticsearch o OpenSearch è richiesto per tutte le installazioni a partire dal
 
 A partire dalla versione 2.3.0, Adobe Commerce e Magenti Open Source includono funzionalità di coda dei messaggi. Nelle versioni precedenti, è disponibile solo per Adobe Commerce.
 
-* [RabbitMQ](../../configuration/queues/message-queue-framework.md)
+* [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 
 ## Impostazioni solo per Adobe Commerce
 

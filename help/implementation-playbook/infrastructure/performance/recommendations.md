@@ -2,9 +2,9 @@
 title: Recommendations di ottimizzazione delle prestazioni
 description: Ottimizza le prestazioni dell’implementazione Adobe Commerce seguendo questi consigli.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Anche se l’annullamento della validità della memoria cache della pagina inter
 
 ### Code di messaggi
 
-MQF (Message Queue Framework) è un sistema che consente a un modulo di pubblicare messaggi nelle code. Definisce anche i consumatori che ricevono i messaggi in modo asincrono. Adobe Commerce supporta RabbitMQ come broker di messaggistica, che fornisce una piattaforma scalabile per l’invio e la ricezione di messaggi.
+MQF (Message Queue Framework) è un sistema che consente a un modulo di pubblicare messaggi nelle code. Definisce anche i consumatori che ricevono i messaggi in modo asincrono. Adobe Commerce supporta [!DNL RabbitMQ] come broker di messaggistica, che fornisce una piattaforma scalabile per l’invio e la ricezione di messaggi.
 
 ### Test e monitoraggio delle prestazioni
 

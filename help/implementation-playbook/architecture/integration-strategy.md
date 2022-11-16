@@ -2,9 +2,9 @@
 title: Strategia di integrazione Adobe Commerce
 description: Esamina le strategie e le opzioni di integrazione per l’implementazione Adobe Commerce.
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
-source-git-commit: 1e545d8d5554e73f522469e526ed098395db9075
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -47,4 +47,4 @@ Adobe Commerce offre tre opzioni di integrazione flessibili:
 
 ![Opzioni di integrazione di Adobe Commerce](../../assets/playbooks/integration-options.svg)
 
-Anche se di solito sono desiderate integrazioni in tempo reale, non è necessario in alcuni scenari. Adobe Commerce supporta in modo nativo RabbitMQ come bus dei messaggi per abilitare i processi asincroni, il che è consigliato per alcuni dati che non sono necessari per lo scambio in tempo reale, ma piuttosto per l’aggiornamento con l’API di processo di scambio di file batch o di dati batch REST in modo che vengano elaborati in modo asincrono.
+Anche se di solito sono desiderate integrazioni in tempo reale, non è necessario in alcuni scenari. Adobe Commerce supporta in modo nativo [!DNL RabbitMQ] come bus del messaggio per abilitare i processi asincroni, consigliato per alcuni dati che non sono necessari per lo scambio in tempo reale, ma piuttosto per aggiornare con lo scambio di file batch o REST batch data process API per l’elaborazione asincrona.

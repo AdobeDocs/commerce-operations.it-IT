@@ -1,9 +1,9 @@
 ---
 title: Configurare la coda messaggi di Amazon
 description: Scopri come configurare Commerce per l’utilizzo del servizio AWS MQ.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -65,20 +65,20 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-La configurazione predefinita per `InventoryCatalog` non pubblica messaggi su RabbitMQ; il comportamento predefinito consiste nell’eseguire l’azione nello stesso thread utente. Per dire `InventoryCatalog` per pubblicare i messaggi, abilita `cataloginventory/bulk_operations/async`. Dall’amministratore, vai a **Negozi** > Configurazione > **Catalogo** > **Inventario** > Operazioni in blocco dell&#39;amministratore e set  `Run asynchronously`a **Sì**.
+La configurazione predefinita per `InventoryCatalog` non pubblica messaggi in [!DNL RabbitMQ]; il comportamento predefinito consiste nell’eseguire l’azione nello stesso thread utente. Per dire `InventoryCatalog` per pubblicare i messaggi, abilita `cataloginventory/bulk_operations/async`. Dall’amministratore, vai a **Negozi** > Configurazione > **Catalogo** > **Inventario** > Operazioni in blocco dell&#39;amministratore e set  `Run asynchronously`a **Sì**.
 
 ## Verifica della coda dei messaggi
 
-Per testare l’invio di un messaggio da Commerce a RabbitMQ:
+Per testare l’invio di messaggi da Commerce a [!DNL RabbitMQ]:
 
-1. Accedi alla console web RabbitMQ in AWS per monitorare le code.
+1. Accedi a [!DNL RabbitMQ] console web in AWS per monitorare le code.
 1. In Amministratore, crea un prodotto.
 1. Crea un&#39;origine Inventory.
 1. Abilita **Negozi** > Configurazione > **Catalogo** > **Inventario** > Operazioni in blocco dell’amministratore > Esegui in modo asincrono.
 1. Vai a **Catalogo** > Prodotti. Dalla griglia, seleziona il prodotto creato sopra e fai clic su **Assegna origine magazzino**.
 1. Fai clic su **Salva e chiudi** per completare il processo.
 
-   Ora dovresti vedere i messaggi visualizzati nella console web RabbitMQ.
+   Ora dovresti visualizzare i messaggi nella [!DNL RabbitMQ] console web.
 
 1. Avvia la `async.operations.all` consumer della coda messaggi.
 
@@ -86,5 +86,5 @@ Per testare l’invio di un messaggio da Commerce a RabbitMQ:
    bin/magento queue:consumers:start async.operations.all
    ```
 
-Ora dovresti vedere il messaggio in coda che viene elaborato nella console web RabbitMQ.
+Ora dovresti vedere il messaggio in coda che viene elaborato nel [!DNL RabbitMQ] console web.
 Verifica che le origini di inventario siano cambiate nel prodotto in Admin.

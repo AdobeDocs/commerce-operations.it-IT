@@ -1,9 +1,9 @@
 ---
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, i loro utilizzi, il processo di installazione e le modalità di accesso.
-source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
    - [Scheda Avvisi](observation-for-adobe-commerce/alerts-tab.md)
    - [Scheda WAF](observation-for-adobe-commerce/waf-tab.md)
    - [Scheda CDN](observation-for-adobe-commerce/cdn-tab.md)
-   - [Scheda RabbitMQ](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [La [!DNL RabbitMQ] scheda](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Scheda Cron](observation-for-adobe-commerce/cron-tab.md)
    - [Scheda Indicizzazione](observation-for-adobe-commerce/indexing-tab.md)
    - [Scheda QuickView](observation-for-adobe-commerce/oac-quickview-tab.md)

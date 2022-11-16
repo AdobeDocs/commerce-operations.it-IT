@@ -2,9 +2,9 @@
 title: Strumenti della piattaforma
 description: Scegli gli strumenti di piattaforma consigliati per l’implementazione di Adobe Commerce.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ La tabella seguente include soluzioni consigliate e utilizzabili in Adobe Commer
 | Server web | Nginx, Apache |
 | Servizi di memorizzazione nella cache | Redis, Varnish |
 | Servizi di ricerca | Elasticsearch |
-| Servizi coda messaggi | RabbitMQ |
+| Servizi coda messaggi | [!DNL RabbitMQ] |
 | Strumento di scansione della sicurezza | SonarQube, ZAP |
 
 ## Database
@@ -61,7 +61,7 @@ Per Adobe Commerce versione 2.4 e successive, tutte le installazioni devono esse
 
 ## Servizi coda messaggi
 
-Le code dei messaggi forniscono un meccanismo di comunicazione asincrono in cui il mittente e il destinatario di un messaggio non si contattano a vicenda. RabbitMQ è un broker di messaggi open-source che offre un sistema di messaggistica affidabile, altamente disponibile, scalabile e portatile.
+Le code dei messaggi forniscono un meccanismo di comunicazione asincrono in cui il mittente e il destinatario di un messaggio non si contattano a vicenda. [!DNL RabbitMQ] è un broker di messaggi open-source che offre un sistema di messaggistica affidabile, altamente disponibile, scalabile e portatile.
 
 ## Strumenti di sicurezza
 
