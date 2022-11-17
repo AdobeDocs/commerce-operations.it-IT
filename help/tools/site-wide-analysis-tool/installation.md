@@ -1,7 +1,7 @@
 ---
 title: Guida all’installazione
 description: Usa questa guida per l’installazione [!DNL Site-Wide Analysis Tool] per il sito web
-source-git-commit: 434fb9eb9570f183d9bf9d4b56b8e56a69e8005d
+source-git-commit: 23ad424a913c5ee58f4092aae008a47fe37b5382
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -57,13 +57,17 @@ Prima di installare l’agente, l’infrastruttura locale deve soddisfare i segu
 
 - Utility Bash/shell
 
-   - `grep`
+   - `php`
+
+   - `wget`
 
    - `awk`
 
    - `nice`
 
    - `grep`
+
+   - `openssl`
 
 ## [!DNL Commerce Services Connector]
 
@@ -185,7 +189,7 @@ Se non desideri usare la nostra [script shell](https://github.com/magento-swat/i
       curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
-   1. Impacchetta l&#39;archivio del lanciatore.
+   1. Decomprimi l&#39;archivio del lanciatore.
 
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
