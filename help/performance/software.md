@@ -1,7 +1,7 @@
 ---
 title: Recommendations software
 description: Rivedi un elenco di software consigliati relativi alle prestazioni ottimali delle distribuzioni Adobe Commerce e Magenti Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8572cc8702d6f7e9c40b64110a9ba18aa5784f44
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -34,13 +34,15 @@ Le configurazioni e le ottimizzazioni del sistema operativo sono simili per [!DN
 >
 >L&#39;abilitazione di net.ipv4.tcp_tw_riutilizzo non ha alcun effetto sulle connessioni in ingresso.
 
-```terminal
+```text
 net.ipv4.tcp_tw_reuse = 1
 ```
 
 Parametro del kernel `net.core.somaxconn` controlla il numero massimo di prese aperte in attesa di connessioni. Questo valore può essere aumentato in modo sicuro a 1024, ma dovrebbe essere correlato alla capacità del server di gestire questa quantità. Per abilitare questo parametro del kernel, imposta il seguente valore in `/etc/sysctl.conf`:
 
-`net.core.somaxconn = 1024`
+```text
+net.core.somaxconn = 1024
+```
 
 ## PHP
 
@@ -121,7 +123,9 @@ L&#39;aggiunta di più estensioni aumenta i tempi di caricamento della libreria.
 
 Garantire il successo dell&#39;esecuzione di tutti [!DNL Commerce] istanze senza scaricare dati o codice su disco, impostare il limite di memoria come segue:
 
-`memory_limit=1G`
+```text
+memory_limit=1G
+```
 
 Per il debug, aumenta questo valore a 2G.
 
