@@ -1,9 +1,9 @@
 ---
 title: Fase di sviluppo dell'implementazione
 description: Scopri le best practice di implementazione per la fase di sviluppo dei progetti Adobe Commerce.
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: c717d45525c7893fa2c38183326534e0fa4ee0c6
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,4 @@ Le sezioni seguenti contengono informazioni sulle best practice per la fase di s
 - [Ottimizzare i file CSS e JS](optimize-css-js-files.md)
 - [Ottimizzare le immagini per un sito più reattivo](image-optimization.md)
 - [Tecniche consigliate per la risoluzione dei problemi relativi alle &#x200B; dell’infrastruttura cloud per Adobe Commerce](troubleshooting.md)
+- [Sapere quando e come modificare le tabelle del database &#x200B;](modifying-core-and-third-party-tables.md)
