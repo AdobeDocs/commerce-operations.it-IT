@@ -1,9 +1,9 @@
 ---
 title: Intestazione X-Frame-Options
 description: Utilizza le opzioni X-Frame per controllare i rendering delle pagine.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: db696b8ca501d128db655c5ebb161c654c6378a7
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,13 @@ La `X-Frame-Options` L’intestazione consente di specificare se un browser deve
 
 ## Implementare `X-Frame-Options`
 
-Imposta un valore per `X-Frame-Options` in `<magento_root>/app/etc/env.php`. Di seguito è riportato il valore predefinito:
+Imposta un valore per `X-Frame-Options` in `<project-root>/app/etc/env.php`. Il valore predefinito viene impostato come segue:
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',
 ```
+
+Ridistribuisci per eventuali modifiche al `env.php` per rendere effettivo il file.
 
 >[!TIP]
 >
@@ -44,10 +46,8 @@ Per verificare l’impostazione, visualizza le intestazioni HTTP su qualsiasi pa
 
 Nell&#39;esempio seguente viene utilizzato curl, eseguibile da qualsiasi computer in grado di connettersi al server Commerce tramite il protocollo HTTP.
 
-Utilizzare il comando seguente:
-
 ```bash
-curl -I -v --location-trusted '<your storefront URL>'
+curl -I -v --location-trusted '<storefront-URL>'
 ```
 
 Cerca la `X-Frame-Options` nelle intestazioni.
