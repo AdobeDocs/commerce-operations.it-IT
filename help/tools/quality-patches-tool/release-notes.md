@@ -1,9 +1,9 @@
 ---
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
-source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
+source-git-commit: aad242e3a458e40fb1977399649ffe3e31696cd3
 workflow-type: tm+mt
-source-wordcount: '9752'
+source-wordcount: '10066'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,22 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla Comunità per Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.24 {#v1-1-24}
+
+* **ACSD-45168** (per Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.6) - Risolve il problema per cui gli URL SEO-friendly non vengono generati per i prodotti che hanno *url_key* attributi ignorati a livello di visualizzazione archivio.
+* **ACSD-46865** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6) - Corregge il problema per cui la griglia Spedizione e Nota di credito non viene compilata quando l&#39;indicizzazione asincrona è abilitata.
+* **ACSD-47004** (per Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.6) - Corregge il problema in cui l&#39;IVA non viene applicata a un indirizzo di fatturazione senza un ID IVA.
+* **ACSD-47803** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Risolve il problema per cui i campioni di prodotto configurabili esauriti vengono visualizzati come disponibili.
+* **ACSD-47137** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.6) - Migliora la velocità di caricamento della raccolta immagini quando la cartella pub/media è molto grande.
+* **ACSD-46770** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema per cui le e-mail dell’ordine di amministrazione vengono inviate anche quando il *Conferma ordine e-mail* è deselezionato.
+* **ACSD-47955** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.6) - Corregge il problema per cui GraphQL non visualizza correttamente lo sconto del carrello.
+* **ACSD-46617** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema in cui la variabile *Procedi al pagamento* il pulsante è disabilitato anche se il subtotale è maggiore del *Importo minimo ordine*.
+* **ACSD-47079** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.5) - Risolve il problema per cui lo stato delle scorte dei prodotti compositi (bundle, raggruppati e configurabili) non viene aggiornato quando lo stato delle scorte dei sottoprodotti cambia tramite REST API POST /rest/V1/inventory/source-items.
+* **ACSD-47336** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Correzioni *Qualcosa è andato storto.* errore durante l’eliminazione delle notifiche nell’amministrazione Commerce.
+* **ACSD-47559** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Risolve il problema a causa del quale l’area Anteprima modello e-mail non è completamente visibile.
+* **ACSD-47920** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema per cui gli ordini possono essere inseriti tramite l’API Rest come utente ospite anche quando il *Consenti estrazione guest* è disattivato.
+* Patch sostituite: MDVA-39305, MDVA-42855.
 
 ## v1.1.23 {#v1-1-23}
 
@@ -81,7 +97,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **ACSD-46146** (*per Adobe Commerce e Magenti Open Source >=2.3.0 &lt;2.4.6*): risolve il problema per cui vengono inviate due e-mail di conferma dell’ordine dopo l’invio di un ordine dall’amministratore.
 * **ACSD-45255** (*per Adobe Commerce >=2.4.3 &lt;2.4.6*) - Corregge un&#39;eccezione nella pagina Rapporto Stock bassi per un utente amministratore con restrizioni.
 * **ACSD-45488** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.6*) - Corregge il problema per cui un prodotto configurabile con più origini non viene restituito automaticamente in In Stock .
-* **ACSD-45754** (*per Adobe Commerce e Magenti Open Source >=2.3.1 &lt;2.4.6*) - Corregge il problema per cui i punti premio non vengono aggiunti dopo l&#39;applicazione di un coupon al carrello.
+* **ACSD-45754** (*per Adobe Commerce e Magenti Open Source >=2.3.1 &lt;2.4.6*) - Corregge il problema per cui i punti premio non vengono aggiunti dopo aver applicato un coupon al carrello.
 * **ACSD-45849** (*per Adobe Commerce >=2.4.3 &lt;2.4.4*): risolve il problema della perdita dei metadati video dopo l&#39;applicazione di un aggiornamento di staging.
 * **ACSD-45257** (*per Adobe Commerce e Magenti Open Source >=2.3.4 &lt;2.4.4*) - Corregge il problema per cui GraphQL non visualizza correttamente uno sconto del carrello.
 * **ACSD-44938** (*per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.4*) - Risolve il problema in cui `VAT_ID` non può essere applicata in una richiesta GraphQL per un utente guest.
@@ -384,7 +400,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-34591** (*per Adobe Commerce >=2.3.0 &lt;2.4.3*) - Corregge il problema con un calcolo errato dello sconto della regola del carrello per *Sconto Qtà massimo applicato a* e *Fase di Qtà Sconto (Acquista X)*.
 * **MDVA-33704** (*per Adobe Commerce >=2.4.0 &lt;2.4.3*) - Risolve il problema in cui la *Ritiro in negozio* l&#39;opzione di spedizione non viene visualizzata, anche se configurata per essere disponibile.
 * **MDVA-34928** (*per Adobe Commerce >=2.3.5 &lt;2.3.5-p2*): risolve il problema di visualizzazione indefinita del caricatore di pagina dopo la rimozione del credito del negozio dal pagamento.
-* **MDVA-35254** (*per Adobe Commerce >=2.3.1 &lt;2.4.3*) - Corregge i problemi con CAPTCHA durante il pagamento.
+* **MDVA-35254** (*per Adobe Commerce >=2.3.1 &lt;2.4.3*) - Corregge i problemi con CAPTCHA durante l’estrazione.
 * **MDVA-35569** (*per Adobe Commerce >=2.3.4 &lt;2.4.2*) - Risolve il problema in cui la *imposte sul prodotto fisso* Il campo non viene compilato nella risposta GraphQL quando viene specificato lo stato .
 * **MDVA-35847** (*per Adobe Commerce >=2.4.1 &lt;2.4.3*) - Corregge il problema B2B a causa del quale il modulo Utenti società si interrompe se viene utilizzato un attributo cliente personalizzato.
 * **MDVA-31307** (*per Adobe Commerce >=2.4.0 &lt;2.4.2*): risolve il problema in cui sono presenti *Memoria esaurita* errori su alcune categorie a causa di problemi con la whitelist CSP dinamica per i blocchi memorizzati nella cache.
@@ -465,7 +481,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-31236** (*per Adobe Commerce >=2.4.0 &lt;2.4.2*): risolve il problema per cui gli amministratori con accesso alle risorse personalizzate non sono in grado di impostare 2FA o di effettuare l&#39;accesso.
 * **MDVA-30845** (*per Adobe Commerce >=2.3.5 &lt;2.3.7*) - Risolve il problema in cui la *Al momento non sono disponibili preventivi per questo ordine* viene visualizzato un errore quando non si riesce a connettersi a UPS XML/USPS/DHL e non è disponibile nessun altro metodo di spedizione.
 * **MDVA-32133** (*per Adobe Commerce >=2.4.0 &lt;2.4.1*) - Corregge il problema per cui in alcuni casi la raccolta multimediale non viene caricata da Page Builder.
-* **MDVA-12304** (*per Adobe Commerce >=2.3.0 &lt;2.4.2*) - Aumenta il numero massimo di cookie da 50 a 200.
+* **MDVA-12304** (*per Adobe Commerce >=2.3.0*) - Aumenta il numero massimo di cookie da 50 a 200.
 * **MDVA-32632** (*per Adobe Commerce >=2.3.2 &lt;2.3.5*) - Corregge il problema in cui gli ordini vengono visualizzati nel sistema di pagamento, ma non in Adobe Commerce.
 * **MDVA-32449** (*per Adobe Commerce >=2.3.0 &lt;2.3.6 | 2.4.0 || >=2.4.1 &lt;2.4.2 con estensione B2B*) - Corregge il problema per cui la cronologia degli ordini si carica molto lentamente o non viene caricata affatto.
 * **MDVA-32739** (*per Adobe Commerce >=2.3.0 &lt;2.4.2*): risolve il problema per cui l’abilitazione di Notifiche e-mail asincrone invia e-mail di vendita precedenti.
