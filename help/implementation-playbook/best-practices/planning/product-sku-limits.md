@@ -4,9 +4,9 @@ description: Scopri le best practice per configurare le unità SKU (Stock Keepin
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 3a187ae8c066e56df0d7f4981d26ffb934f64576
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,11 @@ ht-degree: 0%
 
 # Best practice per la configurazione SKU del prodotto
 
-Per massimizzare le prestazioni, il valore massimo consigliato per unità di conservazione dei prodotti (SKU) efficaci è di 10 milioni. Il valore massimo effettivo del prodotto è calcolato come segue:
+Per massimizzare le prestazioni, il valore massimo consigliato per unità di conservazione dei prodotti (SKU) efficaci è di 242 milioni. Il valore massimo effettivo del prodotto è calcolato come segue:
 
-`Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups`
+```text
+Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups
+```
 
 Una quantità superiore al numero massimo di SKU effettivi rallenta il recupero dei dati di prodotto e aumenta il tempo necessario per completare le operazioni di amministrazione.
 
