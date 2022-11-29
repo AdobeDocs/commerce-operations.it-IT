@@ -1,7 +1,7 @@
 ---
 title: "Il [!UICONTROL Deploy] scheda"
 description: Scopri le [!UICONTROL Deploy] scheda di [!DNL Observation for Adobe Commerce].
-source-git-commit: b95a35ee64cd8e844a51a9ff699eceb9c3a9266c
+source-git-commit: 27ebd472dc4e81e58b36bf5fac529461beae4be1
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -24,15 +24,15 @@ La **[!UICONTROL Deploy log Deployment Troubleshooter]** mostra un conteggio deg
 
 La **[!UICONTROL Deploy State]** mostra gli eventi di distribuzione che si sono verificati nell’arco temporale selezionato. Il parser per questo frame cerca questi segnali specifici:
 
-* &#39;%AVVISO: Avvio di generate command%) come &#39;start_gen&#39;
-* &#39;%git applica /app/vendor/magento/ece-tools/patch%&#39;) come &#39;apply_patches&#39;
-* &#39;%Imposta flag: .static_content_deploy%&#39;) come &#39;SCD&#39;
-* &#39;%AVVISO: Genera il comando completato%) come &#39;gen_compl&#39;
-* &#39;%AVVISO: Avvio della distribuzione in corso.%) come &#39;start_deploy&#39;
-* &#39;%AVVISO: Distribuzione completata%) come &#39;deploy_compl&#39;
-* &#39;%AVVISO: Avvio della post-distribuzione.%) come &#39;start_pdeploy&#39;
-* &#39;%AVVISO: Il post-distribuzione è completo%) come &quot;pdeploy&quot;
-* &#39;%deploy-complete%&#39;) come &#39;cl_deploy_compl&#39;
+* &#39;`%NOTICE: Starting generate command%`&quot;) come &quot;`start_gen`&#39;
+* &#39;`%git apply /app/vendor/magento/ece-tools/patches%`&quot;) come &quot;`apply_patches`&#39;
+* &#39;`%Set flag: .static_content_deploy%`&quot;) come &quot;`SCD`&#39;
+* &#39;`%NOTICE: Generate command completed%`&quot;) come &quot;`gen_compl`&#39;
+* &#39;`%NOTICE: Starting deploy.%`&quot;) come &quot;`start_deploy`&#39;
+* &#39;`%NOTICE: Deployment completed%`&quot;) come &quot;`deploy_compl`&#39;
+* &#39;`%NOTICE: Starting post-deploy.%`&quot;) come &quot;`start_pdeploy`&#39;
+* &#39;`%NOTICE: Post-deploy is complete%`&quot;) come &quot;`pdeploy`&#39;
+* &#39;`%deploy-complete%`&quot;) come &quot;`cl_deploy_compl`&#39;
 
 ## [!UICONTROL Deploy Log Detail]
 
@@ -40,40 +40,40 @@ La **[!UICONTROL Deploy State]** mostra gli eventi di distribuzione che si sono 
 
 La **[!UICONTROL Deploy Log Detail]** frame mostra i dettagli del riepilogo del messaggio del registro di distribuzione che si sono verificati nell’arco temporale selezionato. Il frame sta analizzando le seguenti stringhe nei log di distribuzione:
 
-* &#39;%AVVISO: Avvio della distribuzione in corso.%) come &#39;start_dply&#39;
-* &#39;%INFO: Scenari iniziali: scenario/deploy.xml%) come &#39;start_scenario&#39;
-* &#39;%AVVISO: Avvio di pre-deploy%) come &#39;start_predply&#39;
-* INFO &#39;%: Ripristino del file di log delle patch%) come &#39;rstr_ptch_log&#39;
-* &#39;%INFO: Aggiornamento della configurazione della cache.%) come &#39;update_cach_config&#39;
-* &#39;%INFO: Imposta la connessione slave Redis%) come &#39;redis_sec_conn_set&#39;
-* &#39;%INFO: La distribuzione del contenuto statico è stata eseguita durante il gancio di compilazione, pulendo il vecchio contenuto%&#39;) come &#39;scd_build_hk&#39;
-* &#39;%INFO: Cancellazione di pub/static%) come &#39;clr_pub_static&#39;
-* &#39;%NFO: Cancellazione della cache del disco rigido:%) come &#39;clr_redis_cache&#39;
-* &#39;%INFO: Cancellazione della directory var/cache%&#39;) come &#39;clr_var_cach&#39;
-* AVVISO &#39;%: Abilitazione della modalità di manutenzione%) come &#39;enable_maint_mode&#39;
-* &#39;%INFO: Disattiva cron%) come &#39;disable_cron&#39;
-* &#39;%INFO: Cercare di uccidere i lavori di cron in esecuzione e i processi dei consumatori%&#39;) come &#39;kill_cron_try&#39;
-* &#39;%INFO: Impossibile trovare i processi di Magento cron e consumer in esecuzione.%) come &#39;no_cron_fnd&#39;,
-* %AVVISO: Convalida della configurazione%) come &#39;validate_config&#39;
-* &#39;%I seguenti dati amministrativi sono necessari per creare un utente amministratore durante l&#39;installazione iniziale%&#39;) come &#39;no_admin&#39;
-* &#39;%versione PHP consigliata che soddisfa il vincolo%&#39;) come &#39;php_ver_Constré&#39;
-* &#39;%WARNING: Correggi la configurazione con i suggerimenti dati:%) come &#39;fix_config_sugg&#39;
-* &#39;%WARNING: [2003] Il valore del livello di nidificazione della directory per la segnalazione degli errori non è stato configurato.%&#39;) come &#39;nest_err_reporting&#39;
-* &#39;%AVVISO: Fine della convalida%) come &#39;end_validation&#39;
-* &#39;%AVVISO: Avvio dell&#39;aggiornamento in corso.%) come &#39;start_update&#39;
-* &#39;%INFO: Aggiornamento di env.php.%) come &#39;update_php_env&#39;
-* &#39;%INFO: Aggiornamento della configurazione della connessione env.php DB.%) come &#39;update_php_env_db&#39;
-* &#39;%INFO: Aggiornamento della configurazione env.php AMQP%&#39;) come &#39;update_php_env_amqp&#39;
-* &#39;%INFO: Imposta il motore di ricerca su: elasticsearch7%) come &#39;set_elastic7&#39;
-* &#39;%elasticsearch 6.5.4 ha superato EOL%&#39;) come &#39;elastic_ver_EOL&#39;
-* &#39;%INFO: Imposta il motore di ricerca su: elasticsearch6%) come &#39;set_elastic6&#39;
-* &#39;%INFO: Aggiornamento degli URL sicuri e non sicuri (%) come &#39;update_urls&#39;
-* &#39;%INFO: Esecuzione dell&#39;aggiornamento della configurazione.%) come &#39;setup_upgrade_run&#39;
-* &#39;%INFO: Gancio post-distribuzione abilitato. Abilitazione Cron, pulizia cache e pre-warmingoperation sono posticipati%) come &#39;post_hook_enabled&#39;
-* &#39;%AVVISO: La modalità di manutenzione è disabilitata.%) come &#39;maint_mode_disabled&#39;
-* &#39;%INFO: Scenario(i) finito(i)(i)(i)) come &#39;scenario_finito&#39;
-* &#39;%WARNING: Manutenzione dei comandi:attiva completata con un errore. Creazione di un file di flag di manutenzione%&#39;) come &#39;enable_maintenance_fail&#39;
-* &#39;%MySQL server è andato via%&#39;) come &#39;MySQL_has_Go_away&#39;
+* &#39;`%NOTICE: Starting deploy.%`&quot;) come &quot;`start_dply`&#39;
+* &#39;`%INFO: Starting scenario(s): scenario/deploy.xml%`&quot;) come &quot;`start_scenario`&#39;
+* &#39;`%NOTICE: Starting pre-deploy%`&quot;) come &quot;`strt_predply`&#39;
+* &#39;`%INFO: Restoring patch log file%`&quot;) come &quot;`rstr_ptch_log`&#39;
+* &#39;`%INFO: Updating cache configuration.%`&quot;) come &quot;`updt_cach_config`&#39;
+* &#39;`%INFO: Set Redis slave connection%`&quot;) come &quot;`redis_sec_conn_set`&#39;
+* &#39;`%INFO: Static content deployment was performed during build hook, cleaning old content%`&quot;) come &quot;`scd_build_hk`&#39;
+* &#39;`%INFO: Clearing pub/static%`&quot;) come &quot;`clr_pub_static`&#39;
+* &#39;`%NFO: Clearing redis cache:%`&quot;) come &quot;`clr_redis_cach`&#39;
+* &#39;`%INFO: Clearing var/cache directory%`&quot;) come &quot;`clr_var_cach`&#39;
+* &#39;`%NOTICE: Enabling Maintenance mode%`&quot;) come &quot;`enable_maint_mode`&#39;
+* &#39;`%INFO: Disable cron%`&quot;) come &quot;`disable_cron`&#39;
+* &#39;`%INFO: Trying to kill running cron jobs and consumers processes%`&quot;) come &quot;`kill_cron_try`&#39;
+* &#39;`%INFO: Running Adobe Commerce cron and consumers processes were not found.%`&quot;) come &quot;`no_cron_fnd`&#39;
+* &#39;`%NOTICE: Validating configuration%`&quot;) come &quot;`validate_config`&#39;
+* &#39;`%The following admin data is required to create an admin user during initial installation%`&quot;) come &quot;`no_admin`&#39;
+* &#39;`%recommended PHP version satisfying the constraint%`&quot;) come &quot;`php_ver_constraint`&#39;
+* &#39;`%WARNING: Fix configuration with given suggestions:%`&quot;) come &quot;`fix_config_sugg`&#39;
+* &#39;`%WARNING: [2003] The directory nesting level value for error reporting has not been configured.%`&quot;) come &quot;`nest_err_reporting`&#39;
+* &#39;`%NOTICE: End of validation%`&quot;) come &quot;`end_validation`&#39;
+* &#39;`%NOTICE: Starting update.%`&quot;) come &quot;`start_update`&#39;
+* &#39;`%INFO: Updating env.php.%`&quot;) come &quot;`update_php_env`&#39;
+* &#39;`%INFO: Updating env.php DB connection configuration.%`&quot;) come &quot;`update_php_env_db`&#39;
+* &#39;`%INFO: Updating env.php AMQP configuration%`&quot;) come &quot;`update_php_env_amqp`&#39;
+* &#39;`%INFO: Set search engine to: elasticsearch7%`&quot;) come &quot;`set_elastic7`&#39;
+* &#39;`%elasticsearch 6.5.4 has passed EOL%`&quot;) come &quot;`elastic_ver_EOL`&#39;
+* &#39;`%INFO: Set search engine to: elasticsearch6%`&quot;) come &quot;`set_elastic6`&#39;
+* &#39;`%INFO: Updating secure and unsecure URLs%`&quot;) come &quot;`update_urls`&#39;
+* &#39;`%INFO: Running setup upgrade.%`&quot;) come &quot;`setup_upgrade_run`&#39;
+* &#39;`%INFO: Post-deploy hook enabled. Cron enabling, cache cleaning, and pre-warming operations are postponed%`&quot;) come &quot;`post_hook_enabled`&#39;
+* &#39;`%NOTICE: Maintenance mode is disabled.%`&quot;) come &quot;`maint_mode_disabled`&#39;
+* &#39;`%INFO: Scenario(s) finished%`&quot;) come &quot;`scenario_finished`&#39;
+* &#39;`%WARNING: Command maintenance:enable finished with an error. Creating a maintenance flag file%`&quot;) come &quot;`enable_maintenance_fail`&#39;
+* &#39;`%MySQL server has gone away%`&quot;) come &quot;`MySQL_has_gone_away`&#39;
 
 ## [!UICONTROL Post Deploy Log Detail]
 
@@ -81,17 +81,17 @@ La **[!UICONTROL Deploy Log Detail]** frame mostra i dettagli del riepilogo del 
 
 La **[!UICONTROL Post Deploy Log Detail]** frame mostra i dettagli del registro post-distribuzione che si sono verificati nell’arco temporale selezionato. Questo frame è incentrato su particolari messaggi di log che contengono le seguenti stringhe:
 
-* &#39;%Disabilitato modalità manutenzione%&#39;) come &#39;disabled_maint_mode&#39;
-* &#39;%INFO: Scenari iniziali: scenario/post-deploy.xml%) come &#39;start_pstdply_scenario&#39;
-* AVVISO &#39;%: Convalida della configurazione%) come &#39;val_config&#39;
-* AVVISO &#39;%: Fine della convalida%) come &#39;end_val_config&#39;
-* &#39;%INFO: Attiva cron%) come &#39;cron_enabled&#39;
-* INFO &#39;%: Crea backup di file importanti.%) come &#39;file_backup&#39;
-* &#39;%INFO: Il backup%&quot; è stato creato come &#39;file_backup_success&#39;
-* &#39;%INFO: Inizio riscaldamento pagina%) come &#39;pg_calore_start&#39;
-* &#39;%INFO: Pagina riscaldata:%) come &#39;warmed_up_pg&#39;
-* &#39;%ERRORE: Riscaldamento non riuscito:%) come &#39;riscaldamento_up_pg_err&#39;
-* INFO &#39;%: Scenario(i) finito(i)(i)(i)) come &#39;scenario_finito&#39;
+* &#39;`%Disabled maintenance mode%`&quot;) come &quot;`disabled_maint_mode`&#39;
+* &#39;`%INFO: Starting scenario(s): scenario/post-deploy.xml%`&quot;) come &quot;`start_pstdply_scenario`&#39;
+* &#39;`%NOTICE: Validating configuration%`&quot;) come &quot;`val_config`&#39;
+* &#39;`%NOTICE: End of validation%`&quot;) come &quot;`end_val_config`&#39;
+* &#39;`%INFO: Enable cron%`&quot;) come &quot;`cron_enabled`&#39;
+* &#39;`%INFO: Create backup of important files.%`&quot;) come &quot;`file_backup`&#39;
+* &#39;`%INFO: Successfully created backup%`&quot;) come &quot;`file_backup_success`&#39;
+* &#39;`%INFO: Starting page warming up%`&quot;) come &quot;`pg_warmup_start`&#39;
+* &#39;`%INFO: Warmed up page:%`&quot;) come &quot;`warmed_up_pg`&#39;
+* &#39;`%ERROR: Warming up failed:%`&quot;) come &quot;`warm_up_pg_err`&#39;
+* &#39;`%INFO: Scenario(s) finished%`&quot;) come &quot;`scenario_finished`&#39;
 
 ## [!UICONTROL Cloud Log Detail]
 
@@ -99,53 +99,53 @@ La **[!UICONTROL Post Deploy Log Detail]** frame mostra i dettagli del registro 
 
 La **[!UICONTROL Cloud Log Detail]** frame mostra i dettagli del registro cloud che si sono verificati nell’arco temporale selezionato. Le seguenti stringhe vengono analizzate e restituite con l’etichetta &quot;AS&quot; riportata di seguito:
 
-* &#39;%DEBUG: /bin/bash -c &quot;set -o pipefail; php ./bin/magento setup:upgrade%) come &#39;start_update&#39;
-* &#39;%Creazione/aggiornamenti schema:%&#39;) come &#39;schema_Updates&#39;
-* &#39;%Niente da importare.%) come &#39;mod_import_finish&#39;
-* &#39;%AVVISO: Fine dell’aggiornamento.%) come &#39;update_completed&#39;
-* &#39;%DEBUG: Passaggio in esecuzione: deploy-static-content%) come &#39;scd_run&#39;
-* AVVISO &#39;%: Salta la distribuzione del contenuto statico. SCD on demand è abilitato.%) come &#39;scd_ondemand&#39;
-* &#39;%INFO: Cancellazione di%&#39;) come &#39;clr_dirs&#39;
-* &#39;%DEBUG: Passaggio &quot;deploy-static-content&quot; completato%) come &quot;scd_completed&quot;
-* &#39;%AVVISO: La compressione del contenuto statico viene ignorata. SCD on demand è abilitato.%) come &#39;scd_compressione_run&#39;,
-* &#39;%INFO: Cancellazione della directory var/cache%&#39;) come &#39;clr_var_cach&#39;
-* &#39;%DEBUG: Passo &quot;compress-static-content&quot; finito%&quot;) come &#39;scd_compressione_completed&#39;
-* &#39;%DEBUG: Passaggio in esecuzione: deploy-complete%) come &#39;deploy_completed&#39;
-* &#39;%INFO: Gancio post-distribuzione abilitato. Le operazioni di abilitazione Cron, pulizia della cache e pre-riscaldamento vengono rimandate alla fase di post-distribuzione.%) come &#39;Post_deploy_hook_enabled&#39;
-* &#39;%AVVISO: La modalità di manutenzione è disabilitata.%) come &#39;maint_mode_disabled&#39;
-* &#39;%INFO: Scenario(i) finito(i)(i)(i)) come &#39;scenario_finito&#39;
-* &#39;%post-deploy.xml%&#39;) come &#39;post_deploy_start&#39;
-* &#39;%AVVISO: Convalida della configurazione%) come &#39;validate_config&#39;
-* &#39;%WARNING: [2003] Il valore del livello di nidificazione della directory per la segnalazione degli errori non è stato configurato.%&#39;) come &#39;nest_err_reporting&#39;
-* &#39;%AVVISO: Fine della convalida%) come &#39;end_validation&#39;
-* &#39;%INFO: Attiva cron%) come &#39;enable_cron&#39;
-* &#39;%INFO: Crea backup di file importanti%) come &#39;create_backup&#39;
-* &#39;%DEBUG: Passaggio &quot;backup completato%&quot;) come &#39;backup_finito&#39;
-* &#39;%INFO: Inizio riscaldamento pagina%) come &#39;calore_start&#39;
-* &#39;%ERRORE: Riscaldamento non riuscito:%) come &#39;riscaldamento_up_fail&#39;
-* &#39;%DEBUG: Passo &quot;riscaldamento&quot; finito%&quot;) come &#39;calore_finito&#39;
-* &#39;% DEBUG: Passo &quot;time-to-first byte&quot; finito%&quot;) come &#39;ttfb_completed&#39;
-* &#39;%INFO: Scenario(i) completato(i)%) come &#39;post_deploy_completed&#39;
-* &#39;%DEBUG: Passaggio in esecuzione: pre-build%) come &#39;run_pre-build&#39;
-* &#39;%DEBUG: Il contrassegno .static_content_deploy è già stato eliminato%) come &#39;scd_flag_del&#39;
-* &#39;%DEBUG: Passaggio &quot;pre-build&quot; finito%&quot;) come &quot;pre-build_completed&quot;
-* &#39;%AVVISO: Applicazione delle patch%) come &#39;apply_patch&#39;
-* &#39;%è stato applicato%&#39;) come &#39;patch_apply&#39;
-* &#39;%DEBUG: Passo &quot;apply-patches&quot; finito%) come &#39;apply_patches_complete&#39;
-* &#39;%Distribuisci utilizzando strategia rapida%&#39;) come &#39;quick_strategy_deploy&#39;
-* AVVISO &#39;%: Esecuzione di DI compilation%) come &#39;di_compliation_start&#39;
-* &#39;%AVVISO: Fine dell&#39;esecuzione della compilazione DI%) come &#39;di_compliation_completed&#39;
-* &#39;%AVVISO: Generazione di contenuto statico fresco%) come &#39;gen_frsh_static_content&#39;
-* &#39;%magento setup:static-content:deploy%) come &#39;scd_execute&#39;
-* &#39;%AVVISO: Fine della generazione del nuovo contenuto statico%) come &#39;gen_frsh_static_cont_completed&#39;
-* &#39;%INFO: Scenari iniziali: scenario/build/transfer.xml%) come &#39;start_trasferxml&#39;
-* &#39;%INFO: Cercare di uccidere i lavori di cron in corso%&#39;) come &#39;kill_crons&#39;
-* &#39;%INFO: Cancellazione della cache del disco rigido:%) come &#39;clear_redis_cache&#39;
-* &#39;%INFO: Verifica dell&#39;esistenza di db e hastables%) come &#39;db_check&#39;
-* &#39;%WARNING: [2010] Il servizio di Elasticsearch è installato a livello di infrastruttura ma non viene utilizzato come motore di ricerca.%&#39;) come&#39;es_not_used&#39;
-* &#39;%AVVISO: Avvio dell&#39;aggiornamento in corso.%) come &#39;start_update&#39;
-* &#39;%INFO: Imposta il motore di ricerca su: mysql%) come &#39;mysql_search&#39;
-* &#39;%SQLSTATE[HY000] [2006] Il server MySQL è andato via%) come &#39;mysql_go&#39;
+* &#39;`%DEBUG: /bin/bash -c "set -o pipefail; php ./bin/magento setup:upgrade%`&quot;) come &quot;`start_update`&#39;
+* &#39;`%Schema creation/updates:%`&quot;) come &quot;`schema_updates`&#39;
+* &#39;`%Nothing to import.%`&quot;) come &quot;`mod_import_finish`&#39;
+* &#39;`%NOTICE: End of update.%`&quot;) come &quot;`update_finished`&#39;
+* &#39;`%DEBUG: Running step: deploy-static-content%`&quot;) come &quot;`scd_run`&#39;
+* &#39;`%NOTICE: Skipping static content deploy. SCD on demand is enabled.%`&quot;) come &quot;`scd_ondemand`&#39;
+* &#39;`%INFO: Clearing%`&quot;) come &quot;`clr_dirs`&#39;
+* &#39;`%DEBUG: Step "deploy-static-content" finished%`&quot;) come &quot;`scd_finished`&#39;
+* &#39;`%NOTICE: Skipping static content compression. SCD on demand is enabled.%`&quot;) come &quot;`scd_compression_run`&#39;
+* &#39;`%INFO: Clearing var/cache directory%`&quot;) come &quot;`clr_var_cach`&#39;
+* &#39;`%DEBUG: Step "compress-static-content" finished%`&quot;) come &quot;`scd_compression_finished`&#39;
+* &#39;`%DEBUG: Running step: deploy-complete%`&quot;) come &quot;`deploy_finished`&#39;
+* &#39;`%INFO: Post-deploy hook enabled. Cron enabling, cache cleaning, and pre-warming operations are postponed to post-deploy stage.%`&quot;) come &quot;`Post_deploy_hook_enabled`&#39;
+* &#39;`%NOTICE: Maintenance mode is disabled.%`&quot;) come &quot;`maint_mode_disabled`&#39;
+* &#39;`%INFO: Scenario(s) finished%`&quot;) come &quot;`scenario_finished`&#39;
+* &#39;`%post-deploy.xml%`&quot;) come &quot;`post_deploy_start`&#39;
+* &#39;`%NOTICE: Validating configuration%`&quot;) come &quot;`validate_config`&#39;
+* &#39;`%WARNING: [2003] The directory nesting level value for error reporting has not been configured.%`&quot;) come &quot;`nest_err_reporting`&#39;
+* &#39;`%NOTICE: End of validation%`&quot;) come &quot;`end_validation`&#39;
+* &#39;`%INFO: Enable cron%`&quot;) come &quot;`enable_cron`&#39;
+* &#39;`%INFO: Create backup of important files%`&quot;) come &quot;`create_backup`&#39;
+* &#39;`%DEBUG: Step "backup" finished%`&quot;) come &quot;`backup_finished`&#39;
+* &#39;`%INFO: Starting page warming up%`&quot;) come &quot;`warmup_start`&#39;
+* &#39;`%ERROR: Warming up failed:%`&quot;) come &quot;`warm_up_fail`&#39;
+* &#39;`%DEBUG: Step "warm-up" finished%`&quot;) come &quot;`warmup_finished`&#39;
+* &#39;`%DEBUG: Step "time-to-first-byte" finished%`&quot;) come &quot;`ttfb_finished`&#39;
+* &#39;`%INFO: Scenario(s) finished%`&quot;) come &quot;`post_deploy_finished`&#39;
+* &#39;`%DEBUG: Running step: pre-build%`&quot;) come &quot;`run_pre-build`&#39;
+* &#39;`%DEBUG: Flag .static_content_deploy has already been deleted%`&quot;) come &quot;`scd_flag_del`&#39;
+* &#39;`%DEBUG: Step "pre-build" finished%`&quot;) come &quot;`pre-build_completed`&#39;
+* &#39;`%NOTICE: Applying patches%`&quot;) come &quot;`apply_patches`&#39;
+* &#39;`%has been applied%`&quot;) come &quot;`patches_applied`&#39;
+* &#39;`%DEBUG: Step "apply-patches" finished%`&quot;) come &quot;`apply_patches_complete`&#39;
+* &#39;`%Deploy using quick strategy%`&quot;) come &quot;`quick_strategy_deploy`&#39;
+* &#39;`%NOTICE: Running DI compilation%`&quot;) come &quot;`di_compliation_start`&#39;
+* &#39;`%NOTICE: End of running DI compilation%`&quot;) come &quot;`di_compliation_finished`&#39;
+* &#39;`%NOTICE: Generating fresh static content%`&quot;) come &quot;`gen_frsh_static_content`&#39;
+* &#39;`%magento setup:static-content:deploy%`&quot;) come &quot;`scd_executing`&#39;
+* &#39;`%NOTICE: End of generating fresh static content%`&quot;) come &quot;`gen_frsh_static_cont_finished`&#39;
+* &#39;`%INFO: Starting scenario(s): scenario/build/transfer.xml%`&quot;) come &quot;`start_transferxml`&#39;
+* &#39;`%INFO: Trying to kill running cron jobs%`&quot;) come &quot;`kill_crons`&#39;
+* &#39;`%INFO: Clearing redis cache:%`&quot;) come &quot;`clear_redis_cache`&#39;
+* &#39;`%INFO: Checking if db exists and has tables%`&quot;) come &quot;`db_check`&#39;
+* &#39;`%WARNING: [2010] Elasticsearch service is installed at infrastructure layer, but is not used as a search engine.%`) come &#39;`es_not_used`&#39;
+* &#39;`%NOTICE: Starting update.%`&quot;) come &quot;`starting_update`&#39;
+* &#39;`%INFO: Set search engine to: mysql%`&quot;) come &quot;`mysql_search`&#39;
+* &#39;`%SQLSTATE[HY000] [2006] MySQL server has gone away%`&quot;) come &quot;`mysql_gone`&#39;
 
 ## [!UICONTROL Count of modules imported during deploy]
 
