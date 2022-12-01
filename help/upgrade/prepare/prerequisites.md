@@ -1,9 +1,9 @@
 ---
 title: Prerequisiti completi
 description: Prepara il progetto Adobe Commerce o Magenti Open Source per un aggiornamento completando questi passaggi preliminari.
-source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
+source-git-commit: 6782498985d4fd6540b0481e2567499f74d04d97
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,7 @@ Dopo aver esaminato i requisiti di sistema, è necessario completare i seguenti 
 
 - Aggiorna tutto il software
 - Verifica che sia installato un motore di ricerca supportato
+- Converti formato tabella database
 - Imposta il limite dei file aperti
 - Verifica che i lavori cron siano in esecuzione
 - Imposta `DATA_CONVERTER_BATCH_SIZE`
@@ -29,6 +30,10 @@ Dopo aver esaminato i requisiti di sistema, è necessario completare i seguenti 
 La [requisiti di sistema](../../installation/system-requirements.md) descrivere esattamente quali versioni di software di terze parti sono state testate con Adobe Commerce e versioni di Magento Open Source.
 
 Assicurati di aver aggiornato tutti i requisiti e le dipendenze di sistema nel tuo ambiente. Vedi PHP [7.4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php)e [impostazioni PHP richieste](../../installation/prerequisites/php-settings.md#php-settings).
+
+>[!NOTE]
+>
+>Per Adobe Commerce su progetti cloud Infrastructure Pro, è necessario creare un [Supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) ticket per installare o aggiornare i servizi in ambienti di staging e produzione. Indica le modifiche necessarie al servizio e includi le modifiche aggiornate `.magento.app.yaml` e `services.yaml` file e versione PHP nel ticket. L’aggiornamento del progetto può richiedere fino a 48 ore per il team dell’infrastruttura Cloud. Vedi [Software e servizi supportati](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## Verifica che sia installato un motore di ricerca supportato
 
@@ -63,13 +68,13 @@ Alcuni motori di ricerca di catalogo di terze parti vengono eseguiti sul motore 
 
 Fai riferimento a [Aggiornamento dell’Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) per istruzioni complete su come eseguire il backup dei dati, rilevare potenziali problemi di migrazione e testare gli aggiornamenti prima dell’implementazione in produzione. A seconda della versione corrente dell&#39;Elasticsearch, potrebbe essere necessario o meno un riavvio completo del cluster.
 
-Elasticsearch richiede JDK 1.8 o versione successiva. Vedi [Installare il Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
+Elasticsearch richiede Java Development Kit (JDK) 1.8 o versione successiva. Vedi [Installare il Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
 
 [Configura Elasticsearch](../../configuration/search/configure-search-engine.md) descrive le attività da eseguire dopo l’aggiornamento dell’Elasticsearch 2 a una versione supportata.
 
 ### OpenSearch
 
-OpenSearch è un fork open source di Elasticsearch 7.10.2, a seguito del cambiamento di licenza di Elasticsearch. Nelle seguenti versioni di Adobe Commerce e Magenti Open Source viene introdotto il supporto per OpenSearch:
+OpenSearch è un fork open-source di Elasticsearch 7.10.2, a seguito del cambiamento di licenza di Elasticsearch. Nelle seguenti versioni di Adobe Commerce e Magenti Open Source viene introdotto il supporto per OpenSearch:
 
 - 2.4.4
 - 2.4.3-p2
@@ -79,11 +84,15 @@ OpenSearch è un fork open source di Elasticsearch 7.10.2, a seguito del cambiam
 
 OpenSearch richiede JDK 1.8 o versione successiva. Vedi [Installare il Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
 
-[Configurare il Magento da utilizzare come Elasticsearch](../../configuration/search/configure-search-engine.md) descrive le attività da eseguire dopo la modifica dei motori di ricerca.
+[Configurazione del motore di ricerca](../../configuration/search/configure-search-engine.md) descrive le attività da eseguire dopo la modifica dei motori di ricerca.
 
 ### Estensioni di terze parti
 
 Contatta il fornitore del motore di ricerca per determinare se l’estensione è completamente compatibile con la versione 2.4.
+
+## Converti formato tabella database
+
+È necessario convertire il formato di tutte le tabelle del database da `COMPACT` a `DYNAMIC`. È inoltre necessario convertire il tipo di motore di archiviazione da `MyISAM` a `InnoDB`. Vedi [best practice](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
 
 ## Imposta il limite dei file aperti
 
@@ -118,7 +127,7 @@ Per impostare il valore nella shell Bash:
 
 ## Verifica che i lavori cron siano in esecuzione
 
-Utilità di pianificazione UNIX `cron` è fondamentale per le operazioni quotidiane Adobe Commerce e Magenti Open Source. Pianifica cose come reindicizzazione, newsletter, e-mail, mappe del sito e così via. Diverse funzionalità richiedono almeno un processo cron in esecuzione come proprietario del file system.
+Utilità di pianificazione UNIX `cron` è fondamentale per le operazioni quotidiane Adobe Commerce e Magenti Open Source. Pianifica cose come reindicizzazione, newsletter, e-mail e sitemap. Diverse funzionalità richiedono almeno un processo cron in esecuzione come proprietario del file system.
 
 Per verificare che il lavoro cron sia configurato correttamente, controlla la crontab immettendo il seguente comando come proprietario del file system:
 
