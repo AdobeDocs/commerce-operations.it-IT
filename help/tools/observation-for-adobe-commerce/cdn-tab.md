@@ -1,9 +1,9 @@
 ---
-title: '"Il [!UICONTROL CDN] scheda"'
+title: "Il [!UICONTROL CDN] scheda"
 description: Scopri le [!UICONTROL CDN] scheda di [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 424c832ba7580e5d766dea33e3b776eaca7a0d77
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ La **[!UICONTROL Error Percentage]** visualizza il valore della percentuale di E
 
 ![Risposta media della cache definitiva per il periodo di tempo selezionato in secondi](../../assets/tools/observation-for-adobe-commerce/cdn-tab-9.png)
 
-Questo fotogramma mostra la durata in secondi delle richieste memorizzabili nella cache, il che significa che se un `cache_response` è una MISS, visualizza la media delle risposte perse nella cache per il tempo selezionato.
+Questo fotogramma mostra la durata in secondi delle richieste memorizzabili nella cache, il che significa che se un `cache_response` è un [!UICONTROL MISS], visualizza la media delle risposte memorizzate nella cache perse per il tempo selezionato.
 
 ## [!UICONTROL Fastly Cache Average Response for selected time period in seconds, faceted by POP]
 
@@ -70,7 +70,7 @@ Questo fotogramma mostra la durata in secondi delle richieste memorizzabili nell
 
 ![Richieste: da un intervallo di tempo selezionato rispetto a una settimana fa](../../assets/tools/observation-for-adobe-commerce/cdn-tab-12.png)
 
-Questo frame è simile alla casella di riepilogo per Totale richieste nella parte superiore, ma mostra i conteggi delle richieste delle settimane precedenti. Si tratta di tutte le richieste, non solo di quelle memorizzabili nella cache (dove `is_cacheable` è vero).
+Questo frame è simile alla casella di riepilogo per [!UICONTROL Total Requests] nella parte superiore, ma mostra il conteggio delle richieste delle settimane precedenti. Si tratta di tutte le richieste, non solo di quelle memorizzabili nella cache (dove `is_cacheable` è vero).
 
 ## [!UICONTROL Response Count]
 
@@ -114,7 +114,7 @@ La **[!UICONTROL Duration by Response Status, top 25 non-200 status]** Il grafic
 
 ![Conteggio errori per timeline POP](../../assets/tools/observation-for-adobe-commerce/cdn-tab-20.png)
 
-La **[!UICONTROL Error Count by POP timeline]** Il grafico mostra il conteggio degli stati di errore lungo la timeline selezionata, facet dal codice di errore.
+La **[!UICONTROL Error Count by POP timeline]** Il grafico mostra il conteggio degli stati di errore nella timeline dell’intervallo temporale selezionato, in base al codice di errore.
 
 ## [!UICONTROL Duration by Response status, top 25 client IP, non-200 status]
 
@@ -126,4 +126,4 @@ La **[!UICONTROL Duration by Response status, top 25 client IP, non 200 status]*
 
 ![Frequenza IP](../../assets/tools/observation-for-adobe-commerce/cdn-tab-22.jpeg)
 
-La **[!UICONTROL IP Frequency]** il frame conta gli stati (&quot;MISS&quot; e &quot;PASS&quot;) per ogni IP dal [!DNL Fastly] registri. Le richieste web con questi stati raggiungeranno il server di origine e aggiungeranno il caricamento al server. Mostra i venti indirizzi principali in frequenza. Questo frame può essere utilizzato per rilevare attacchi IP o fonti di carico pesante su un sito web. Questo grafico è presente anche nella scheda di riepilogo e si trova qui per un semplice confronto con più dettagli sul [!DNL Fastly] informazioni di registro visualizzate in questa scheda.
+La **[!UICONTROL IP Frequency]** il frame conta gli stati (&quot;MISS&quot; e &quot;PASS&quot;) per ogni IP da [!DNL Fastly] registri. Le richieste web con questi stati raggiungeranno il server di origine e aggiungeranno il caricamento al server. Mostra i venti indirizzi principali in frequenza. Questo frame può essere utilizzato per rilevare attacchi IP o fonti di carico pesante su un sito web. Questo grafico è presente anche nella scheda di riepilogo e si trova qui per un semplice confronto con più dettagli sul [!DNL Fastly] informazioni di registro visualizzate in questa scheda.
