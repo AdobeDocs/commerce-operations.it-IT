@@ -1,9 +1,9 @@
 ---
 title: Archiviazione remota per Commerce su infrastruttura cloud
 description: Consulta le indicazioni su come configurare l’archiviazione remota per Adobe Commerce sull’infrastruttura cloud.
-source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Se scegli di utilizzare la soluzione di archiviazione remota con un progetto di infrastruttura cloud Adobe Commerce, utilizza la [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) guida _Favoloso_ per garantire il funzionamento di Flast Image Optimization con AWS S3.
 
-Preparati con il tuo [Credenziali definitive](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds). Nei progetti Pro, utilizza SSH per connetterti al server e ottenere le credenziali Flast dal `/mnt/shared/fastly_tokens.txt` file. Gli ambienti di staging e produzione dispongono di credenziali univoche. Devi ottenere le credenziali per ogni ambiente.
+Preparati con il tuo [Credenziali definitive](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials). Nei progetti Pro, utilizza SSH per connetterti al server e ottenere le credenziali Flast dal `/mnt/shared/fastly_tokens.txt` file. Gli ambienti di staging e produzione dispongono di credenziali univoche. Devi ottenere le credenziali per ogni ambiente.
 
 Continua a configurare l’archiviazione remota per i progetti cloud con le seguenti attività:
 

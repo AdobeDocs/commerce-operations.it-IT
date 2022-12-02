@@ -1,9 +1,9 @@
 ---
 title: Ignora impostazioni di configurazione
 description: Scopri come utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Questo argomento illustra come derivare un nome di variabile di ambiente conosce
 
 >[!TIP]
 >
->Consulta la sezione [Configurare gli ambienti](https://devdocs.magento.com/cloud/env/variables-intro.html) nell&#39;argomento _Guida alla Commerce Cloud_ per informazioni dettagliate sull’utilizzo delle variabili in Adobe Commerce sull’infrastruttura cloud.
+>Consulta la sezione [Configurare gli ambienti](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) nell&#39;argomento _Guida a Commerce on Cloud Infrastructure_.
 
 ## Variabili di ambiente
 
@@ -253,6 +253,6 @@ Un esempio dettagliato è mostrato in [Impostare i valori di configurazione util
 >
 >- Per utilizzare i valori impostati in `$_ENV` array, è necessario impostare `variables_order = "EGPCS"`(Ambiente, Get, Post, Cookie e Server) nel `php.ini` file. Per maggiori dettagli, vedi [Documentazione PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Per Adobe Commerce sull&#39;infrastruttura cloud, se tenti di ignorare le impostazioni di configurazione utilizzando [Interfaccia Web progetto](https://devdocs.magento.com/cloud/project/project-webint-basic.html#project-conf-env-var), devi anteporre il nome della variabile a `env:`. Ad esempio:
+>- Per Adobe Commerce sull&#39;infrastruttura cloud, se tenti di ignorare le impostazioni di configurazione utilizzando [Interfaccia Web progetto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), devi anteporre il nome della variabile a `env:`. Ad esempio:
 >
->![Esempio di variabile di ambiente](https://devdocs.magento.com/common/images/cloud/cloud_env_var_example.png)
+>![Esempio di variabile di ambiente](../../assets/configuration/cloud-console-envvariable.png)

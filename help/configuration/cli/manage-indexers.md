@@ -1,9 +1,9 @@
 ---
 title: Gestire gli indici
 description: Vedi esempi su come visualizzare e gestire gli indici Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -220,7 +220,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->Prima di cambiare le modalità di indicizzazione, si consiglia di inserire il sito Web in [manutenzione](../../installation/tutorials/maintenance-mode.md) modalità e [disattivare cron jobs](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). In questo modo non si verificano blocchi del database.
+>Prima di cambiare le modalità di indicizzazione, si consiglia di inserire il sito Web in [manutenzione](../../installation/tutorials/maintenance-mode.md) modalità e [disattivare cron jobs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). In questo modo non si verificano blocchi del database.
 
 Per specificare la configurazione dell&#39;indicizzatore:
 

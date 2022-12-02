@@ -1,9 +1,9 @@
 ---
 title: Modalità di applicazione
 description: L’applicazione Commerce può funzionare in modalità diverse a seconda delle tue esigenze. Visualizza un elenco dettagliato delle modalità di applicazione disponibili.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Puoi eseguire l’applicazione Commerce in uno dei seguenti modi _modalità_:
 
 >[!INFO]
 >
->[Adobe Commerce su infrastruttura cloud](https://devdocs.magento.com/cloud/bk-cloud.html) supporta solo le modalità di produzione e manutenzione.
+>[Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) supporta solo le modalità di produzione e manutenzione.
 
 ## Modalità predefinita
 
@@ -71,4 +71,4 @@ Esegui l’applicazione Commerce in modalità di manutenzione per portare il sit
 
 Puoi creare una [pagina di manutenzione personalizzata](../../upgrade/troubleshooting/maintenance-mode-options.md), abilita e disabilita manualmente la modalità di manutenzione e configura la modalità di manutenzione per consentire ai visitatori degli indirizzi IP autorizzati di visualizzare lo store normalmente. Vedi [attiva e disattiva la modalità di manutenzione](../../installation/tutorials/maintenance-mode.md).
 
-Se utilizzi Commerce sull’infrastruttura cloud, l’applicazione Commerce viene eseguita in modalità di manutenzione durante la fase di implementazione. Al termine della distribuzione, l’applicazione Commerce torna all’esecuzione in modalità di produzione. Vedi [Hook di distribuzione](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) in _Guida alla Commerce Cloud_.
+Se utilizzi Commerce sull’infrastruttura cloud, l’applicazione Commerce viene eseguita in modalità di manutenzione durante la fase di implementazione. Al termine della distribuzione, l’applicazione Commerce torna all’esecuzione in modalità di produzione. Vedi [Hook di distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) in _Guida a Commerce on Cloud Infrastructure_.

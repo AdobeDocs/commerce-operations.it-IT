@@ -1,9 +1,9 @@
 ---
 title: Gestire le code dei messaggi
 description: Scopri come gestire le code di messaggi dalla riga di comando per Adobe Commerce.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ L’esempio seguente mostra le `crontab` configurazione per utenti in esecuzione
 
 >[!INFO]
 >
->Se il tuo store Adobe Commerce è ospitato sulla piattaforma Cloud, utilizza [`CRON_CONSUMERS_RUNNER`](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) per configurare `consumers_runner` cron job.
+>Se il tuo store Adobe Commerce è ospitato sulla piattaforma Cloud, utilizza [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) per configurare `consumers_runner` cron job.
 
 ### Configurazione specifica
 
@@ -82,6 +82,6 @@ Modifica le `/app/etc/env.php` file per configurare il lavoro cron `consumers_ru
 
    >[!INFO]
    >
-   >Se il tuo store Adobe Commerce è ospitato sulla piattaforma Cloud, utilizza [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://devdocs.magento.com/cloud/env/variables-deploy.html#consumers_wait_for_max_messages) per configurare il modo in cui i consumatori elaborano i messaggi dalla coda dei messaggi.
+   >Se il tuo store Adobe Commerce è ospitato sulla piattaforma Cloud, utilizza [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) per configurare il modo in cui i consumatori elaborano i messaggi dalla coda dei messaggi.
 
 Vedi [Avvia i consumatori della coda dei messaggi](../cli/start-message-queues.md).

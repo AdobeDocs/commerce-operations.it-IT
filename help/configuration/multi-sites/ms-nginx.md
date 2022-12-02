@@ -1,9 +1,9 @@
 ---
 title: Configurazione di più siti web con Nginx
 description: Segui questa esercitazione per configurare più siti web con Node.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Presupponiamo che:
 
    Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente in hosting; per ulteriori informazioni, consulta il provider di hosting .
 
-   Sono necessarie ulteriori attività per configurare Adobe Commerce sull’infrastruttura cloud. Dopo aver completato le attività discusse in questo argomento, vedi [Configurazione di più siti web o negozi](https://devdocs.magento.com/cloud/project/project-multi-sites.html) in _Guida alla Commerce Cloud_.
+   Sono necessarie ulteriori attività per configurare Adobe Commerce sull’infrastruttura cloud. Dopo aver completato le attività discusse in questo argomento, vedi [Configurazione di più siti web o negozi](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in _Guida a Commerce on Cloud Infrastructure_.
 
 - Accetti più domini in un file host virtuale o utilizzi un host virtuale per sito web; i file di configurazione dell&#39;host virtuale si trovano in `/etc/nginx/sites-available`.
 - Utilizzi le `nginx.conf.sample` fornito da Commerce solo con le modifiche discusse in questa esercitazione.
@@ -265,8 +265,8 @@ A meno che il DNS non sia configurato per gli URL degli archivi, devi aggiungere
 1. Aggiungi il percorso statico nel formato:
 
    ```conf
-   <ip address> french.mysite.mg
-   <ip address> german.mysite.mg
+   <ip-address> french.mysite.mg
+   <ip-address> german.mysite.mg
    ```
 
 1. Vai a uno dei seguenti URL nel browser:
@@ -280,7 +280,7 @@ A meno che il DNS non sia configurato per gli URL degli archivi, devi aggiungere
 >[!INFO]
 >
 >- Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente in hosting; per ulteriori informazioni, consulta il provider di hosting .
->- Sono necessarie attività aggiuntive per configurare Adobe Commerce sull’infrastruttura cloud; vedere [Configurazione di più siti Web o negozi Cloud](https://devdocs.magento.com/cloud/project/project-multi-sites.html) in _Guida alla Commerce Cloud_.
+>- Sono necessarie attività aggiuntive per configurare Adobe Commerce sull’infrastruttura cloud; vedere [Configurazione di più siti Web o negozi Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) in _Guida a Commerce on Cloud Infrastructure_.
 
 
 ### Risoluzione dei problemi

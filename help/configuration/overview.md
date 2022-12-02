@@ -1,9 +1,9 @@
 ---
 title: Panoramica della guida alla configurazione
 description: Scopri tutte le funzioni e i servizi configurabili per l’applicazione Adobe Commerce o Magenti Open Source.
-source-git-commit: 573b407bf29fd4dea2c0e9a52593f65fa64ffa2d
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ Sono presenti argomenti corrispondenti nel [Guida utente di Commerce](https://do
 
 ## Configurazione cloud
 
-[!DNL Commerce on cloud infrastructure] utilizza [insieme di file di configurazione](https://devdocs.magento.com/cloud/env/environments.html) per aggiornare [!DNL Commerce] funzioni e servizi dell’applicazione negli ambienti in hosting. A causa della natura univoca degli ambienti ospitati nel cloud di Adobe, è sempre necessario rivedere il [Guida a Cloud](https://devdocs.magento.com/cloud/bk-cloud.html) per ulteriori requisiti di configurazione.
+[!DNL Commerce on cloud infrastructure] utilizza [insieme di file di configurazione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) per aggiornare le funzioni e i servizi dell’applicazione Commerce negli ambienti in hosting. A causa della natura univoca degli ambienti ospitati nel cloud di Adobe, è sempre necessario rivedere la [Guida a Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) per ulteriori requisiti di configurazione.
