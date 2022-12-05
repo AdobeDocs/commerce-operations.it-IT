@@ -1,7 +1,7 @@
 ---
 title: Impostare i valori di configurazione
 description: Scopri come impostare i valori di configurazione e modificare i valori bloccati nell’amministratore.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -133,8 +133,8 @@ Nella tabella seguente viene descritta la `set` parametri di comando:
 | --- | --- |
 | `--scope` | Ambito della configurazione. I valori possibili sono `default`, `website`oppure `store`. Il valore predefinito è `default`. |
 | `--scope-code` | Il codice di ambito di configurazione (codice del sito web o codice della visualizzazione del negozio) |
-| `-le or --lock-env` | Blocca il valore in modo che non possa essere modificato nell&#39;amministratore o modifica un&#39;impostazione già bloccata nell&#39;amministratore. Il comando scrive il valore nel `<Commerce base dir>/app/etc/env.php` file. |
-| `-lc or --lock-config` | Blocca il valore in modo che non possa essere modificato nell&#39;amministratore o modifica un&#39;impostazione già bloccata nell&#39;amministratore. Il comando scrive il valore nel `<Commerce base dir>/app/etc/config.php` file. La `--lock-config` sovrascrittura delle opzioni `--lock-env` se si specificano entrambe le opzioni. |
+| `-e or --lock-env` | Blocca il valore in modo che non possa essere modificato nell&#39;amministratore o modifica un&#39;impostazione già bloccata nell&#39;amministratore. Il comando scrive il valore nel `<Commerce base dir>/app/etc/env.php` file. |
+| `-c or --lock-config` | Blocca il valore in modo che non possa essere modificato nell&#39;amministratore o modifica un&#39;impostazione già bloccata nell&#39;amministratore. Il comando scrive il valore nel `<Commerce base dir>/app/etc/config.php` file. La `--lock-config` sovrascrittura delle opzioni `--lock-env` se si specificano entrambe le opzioni. |
 | `path` | _Obbligatorio_. Percorso di configurazione |
 | `value` | _Obbligatorio_. Valore della configurazione |
 
