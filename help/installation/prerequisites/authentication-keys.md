@@ -1,9 +1,9 @@
 ---
 title: Ottieni le chiavi di autenticazione
 description: Segui questi passaggi per recuperare le credenziali per accedere ai pacchetti Adobe Commerce e Magenti Open Source Composer su repo.magento.com.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: d209d3f7fde55f7495488f2cbeeebf21024875ed
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,15 @@ ht-degree: 0%
 
 La `repo.magento.com` archivio è il luogo in cui vengono archiviati i pacchetti Compositore Magento Open Source e di terze parti Adobe Commerce e richiede l’autenticazione. Utilizza il tuo account Commerce Marketplace per generare una coppia di 32 caratteri *chiavi di autenticazione* per accedere al repository.
 
->[!NOTE]
+Per poter accedere ai pacchetti Adobe Commerce e Magenti Open Source, devi utilizzare le chiavi associate a un MAGEID a cui è stato concesso l’accesso a tali pacchetti. Il MAGEID è in genere il contatto principale sull&#39;account Adobe Commerce e potrebbe non essere sempre il proprietario del progetto Adobe Commerce sul progetto di infrastruttura cloud.
+
+>[!TIP]
 >
->Per poter accedere ai pacchetti Adobe Commerce e Magenti Open Source, devi utilizzare le chiavi associate a un MAGEID a cui è stato concesso l’accesso a tali pacchetti. Il MAGEID è in genere il **Contatto di fatturazione** sull’account Adobe Commerce e potrebbe non essere sempre il **Proprietario progetto** del progetto Adobe Commerce on cloud Infrastructure. Se incontri [errori](https://support.magento.com/hc/en-us/articles/360040296392), è possibile che non si disponga dell&#39;autorizzazione per accedere al pacchetto o che il diritto di accesso sia scaduto a causa di una fattura in sospeso sul conto. Contatto [Supporto Adobe Commerce](https://support.magento.com/hc/en-us) per assistenza sul tuo MAGEID.
+>Se incontri [errori](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), è possibile che non si disponga dell&#39;autorizzazione per accedere al pacchetto o che il diritto di accesso sia scaduto a causa di una fattura in sospeso sul tuo account.
+>
+>* Se si è la persona di contatto principale sul conto, assicurarsi che non vi siano fatture in sospeso elencate sul conto.
+>* Se le chiavi fornite dal contatto primario non funzionano e non vi sono fatture in sospeso sul conto, contattare [Supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) per assistenza tramite il MAGEID del contatto principale.
+
 
 Per creare le chiavi di autenticazione:
 
