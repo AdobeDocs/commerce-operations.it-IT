@@ -1,15 +1,15 @@
 ---
-title: '"Il [!UICONTROL QuickView] scheda"'
-description: La scheda QuickView spiega i diversi tipi di avviso che è possibile visualizzare, inclusi quelli a basso ritmo del disco e l'utilizzo del server.
-source-git-commit: 4d700c04be5cd1ec2dc1c43c627feeed93f0fbee
+title: "Il [!DNL QuickView] scheda"
+description: La [!DNL QuickView] scheda spiega i diversi tipi di avviso che è possibile visualizzare, inclusi quelli a basso ritmo del disco e l'utilizzo del server.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 
-# La [!UICONTROL QuickView] scheda
+# La [!DNL QuickView] scheda
 
 La **[!UICONTROL QuickView]** scheda spiega i diversi tipi di avviso che è possibile visualizzare, inclusi quelli a basso ritmo del disco e l&#39;utilizzo del server. Vengono descritti più avanti i fotogrammi della scheda.
 

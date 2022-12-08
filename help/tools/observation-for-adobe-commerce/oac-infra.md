@@ -1,17 +1,17 @@
 ---
-title: '"Il [!UICONTROL Infra] scheda"'
-description: La [!UICONTROL Infra] La scheda isola i problemi e le cause dei problemi dell'infrastruttura.
-source-git-commit: b0d80d97f60b24bc801063dc484f3a495cf0a036
+title: "Il [!DNL Infra] scheda"
+description: La [!DNL Infra] La scheda isola i problemi e le cause dei problemi dell'infrastruttura.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
 
-# La [!UICONTROL Infra] scheda
+# La [!DNL Infra] scheda
 
-La **[!UICONTROL Infra]** La scheda isola i problemi e le cause dei problemi dell&#39;infrastruttura. Vengono inoltre descritti i fotogrammi che è possibile visualizzare nella scheda .
+La **[!DNL Infra]** La scheda isola i problemi e le cause dei problemi dell&#39;infrastruttura. Vengono inoltre descritti i fotogrammi che è possibile visualizzare nella scheda .
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
@@ -23,7 +23,7 @@ La **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]**
 
 ![Utilizzo nodo per montaggio](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
 
-La **[!UICONTROL Inode usage by mount]** il frame mostra l&#39;utilizzo dell&#39;inodo in base al montaggio nell&#39;arco temporale selezionato. Anche se ci può essere un sacco di spazio libero di archiviazione, se un nodo esaurisce gli inodi, mostrerà una mancanza di spazio di archiviazione disponibile. La rimozione dei file (soprattutto di quelli piccoli) libererà spazio e renderà disponibili i nodi.
+La **[!UICONTROL Inode usage by mount]** programmi [!DNL inode] utilizzo in base al tempo selezionato. Anche se ci può essere un sacco di spazio libero di archiviazione, se un nodo esaurisce [!DNL inodes], mostrerà una mancanza di spazio di archiviazione disponibile. La rimozione dei file (soprattutto quelli piccoli) libererà spazio e renderà [!DNL inodes] disponibile.
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 
