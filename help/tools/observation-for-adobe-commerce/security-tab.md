@@ -1,9 +1,9 @@
 ---
-title: '"Il [!UICONTROL Security] scheda"'
+title: "Il [!UICONTROL Security] scheda"
 description: Scopri le [!UICONTROL Security] scheda di [!DNL Observation for Adobe Commerce].
-source-git-commit: 5e4babd14bb918db7f894b7ca6a0344a4652704c
+source-git-commit: 297c3fed4c0f7ad1a3cb40addef1d33fa8d41525
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -33,24 +33,24 @@ La **[!UICONTROL Create Account access]** mostra il numero di nuove attività de
 
 ## [!UICONTROL POST activities]
 
-La **[!UICONTROL POST activities]** frame mostra le attività POST per il sito, sfaccettate su client_ip dal [!DNL Fastly] registri. Mostra anche l’URL a cui si accede dall’indirizzo IP.
+La **[!UICONTROL POST activities]** la cornice mostra `POST` attività per il sito, sfaccettate su `client_ip` dal [!DNL Fastly] registri. Mostra anche l’URL a cui si accede dall’indirizzo IP.
 
 ![Attività POST](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-La **Tabella di riepilogo delle attività di POST** frame mostra le attività POST riepilogate per il sito, su client_ip dal [!DNL Fastly] registri. Mostra anche il conteggio dell’URL a cui si accede dall’indirizzo IP. Il conteggio viene eseguito per l&#39;intervallo temporale selezionato.
+La **[!UICONTROL POST activities summary table]** il riquadro mostra il riepilogo `POST` attività per il sito, sfaccettate su `client_ip` dal [!DNL Fastly] registri. Mostra anche il conteggio dell’URL a cui si accede dall’indirizzo IP. Il conteggio viene eseguito per l&#39;intervallo temporale selezionato.
 
 ![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
-La **[!UICONTROL POST activities details table]** frame mostra le attività di POST per il sito dal [!DNL Fastly] registri. Mostra anche tutti i dettagli dal [!DNL Fastly] registra queste richieste. È limitato alle ultime 2000 richieste.
+La **[!UICONTROL POST activities details table]** la cornice mostra `POST` attività per il sito dal [!DNL Fastly] registri. Mostra anche tutti i dettagli dal [!DNL Fastly] registra queste richieste. È limitato alle ultime 2000 richieste.
 ![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 
-La **[!UICONTROL Guest Carts activities]** frame mostra il numero di attività del carrello guest in un arco temporale selezionato, facet per indirizzo IP e URL a cui si accede. I carrelli degli ospiti possono essere utilizzati in un attacco carding. Questo fotogramma mostra il numero totale di richieste in cui si accede agli URL dei carrelli guest.
+La **[!UICONTROL Guest Carts activities]** frame mostra il numero di attività del carrello guest in un arco temporale selezionato, facet per indirizzo IP e URL a cui si accede. I carrelli degli ospiti possono essere utilizzati in un attacco carding. Questo fotogramma mostra il numero totale di richieste in cui si accede agli URL dei carrelli ospite.
 
 ![guest-carts-activities](../../assets/tools/observation-for-adobe-commerce/guest-carts-activities.jpg)
 
