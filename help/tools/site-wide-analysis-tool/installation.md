@@ -1,9 +1,9 @@
 ---
 title: Guida all’installazione
 description: "Utilizzare questa guida per l'installazione [!DNL Site-Wide Analysis Tool] per il tuo sito web"
-source-git-commit: 5603d0feee6ec9dd5e8b534a0e64df274d7ab84d
+source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Prima di installare l’agente, l’infrastruttura locale deve soddisfare i segu
 L&#39;agente richiede l&#39; [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) estensione da installare nel sistema e [configurato](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) con le chiavi API. Per verificare che l&#39;estensione sia installata, esegui il comando seguente:
 
 ```bash
-bin/magento module:status Magento_ServicesConnector
+bin/magento module:status Magento_ServicesId
 ```
 
 Se hai installato l’estensione e l’hai configurata utilizzando una chiave API esistente per un servizio diverso, **DEVE generare la chiave API** e aggiornalo nell’amministratore di Adobe Commerce per l’agente.
@@ -102,19 +102,25 @@ Se l&#39;estensione non è installata, segui le istruzioni seguenti per installa
 1. Aggiungi l&#39;estensione al `composer.json` e installalo.
 
    ```bash
-   composer require magento/services-connector:1.*
+   composer require magento/services-id
    ```
 
 1. Abilita l&#39;estensione .
 
    ```bash
-   bin/magento module:enable Magento_ServicesConnector
+   bin/magento module:enable Magento_ServicesId
    ```
 
 1. Aggiornare lo schema del database.
 
    ```bash
    bin/magento setup:upgrade
+   ```
+
+1. Svuota la cache.
+
+   ```bash
+   bin/magento cache:clean
    ```
 
 1. [Configurare le chiavi API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) per collegare l&#39;estensione al sistema.
