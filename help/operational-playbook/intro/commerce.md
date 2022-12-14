@@ -2,9 +2,9 @@
 title: Adobe Commerce
 description: Descrizione di Adobe Commerce
 exl-id: 130bae23-8a22-4523-abe2-8dc97b3881d2
-source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
+source-git-commit: 1611a8cab95ec24a1420fac31958853e28033af6
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Adobe Commerce può essere ospitato in locale. È quindi possibile ospitare e sv
 Adobe Commerce è una soluzione e-commerce completa dotata delle seguenti funzionalità aggiuntive:
 
 - Funzionalità B2B, come la quotazione, i cataloghi personalizzati e gestire ruoli e autorizzazioni dell’acquirente
-- Dashboard Magento BI con visualizzazione e generatore di report personalizzati
+- Dashboard di Adobe Commerce Reporting con visualizzazione e generatore di report personalizzati
 - Chat Magento (alimentato da dotdigital)
 - Strumenti di marketing avanzati
 - [!DNL Product Recommendations] con tecnologia Adobe Sensei

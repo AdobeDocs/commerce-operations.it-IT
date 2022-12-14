@@ -2,9 +2,9 @@
 title: Sicurezza dell'infrastruttura cloud
 description: Scopri come proteggere Adobe Commerce dall’infrastruttura cloud.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 50882bebb4712e6cf095a81297684f37e15b1a6b
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Tutte le attività di AWS sono registrate in AWS Cloud Trail. I registri di Linu
 
 I dati sensibili possono riguardare sia le informazioni personali dei consumatori sia i dati riservati dei clienti Managed Services. La protezione di dati sensibili relativi a clienti e consumatori è un obbligo fondamentale per Adobe Commerce Managed Services. Sia Managed Services che i nostri clienti hanno obblighi legali in relazione a informazioni personali identificabili. Oltre alle funzioni di sicurezza dell’architettura, esistono altri controlli per limitare la distribuzione e l’accesso ai dati sensibili.
 
-I clienti possiedono i propri dati e hanno il controllo sulla posizione in cui tali dati saranno localizzati. Il cliente specifica la posizione in cui risiedono le istanze di produzione e sviluppo. Specifica inoltre quale posizione verrà utilizzata per l’ambiente Magenti Business Intelligence (MBI) in combinazione con Commerce e se tale applicazione MBI ha accesso o meno a informazioni personali identificabili. Le istanze di produzione possono essere situate nella maggior parte delle aree geografiche di AWS, mentre gli ambienti di sviluppo e MBI possono essere trovati attualmente negli Stati Uniti o nell’Unione europea.
+I clienti possiedono i propri dati e hanno il controllo sulla posizione in cui tali dati saranno localizzati. Il cliente specifica la posizione in cui risiedono le istanze di produzione e sviluppo. Specifica inoltre quale posizione verrà utilizzata per l’ambiente di reporting di Adobe Commerce insieme a Commerce e se tale applicazione di reporting di Adobe Commerce ha accesso o meno a informazioni personali identificabili. Le istanze di produzione possono trovarsi nella maggior parte delle aree geografiche di AWS, mentre gli ambienti di sviluppo e reporting di Adobe Commerce si trovano attualmente negli Stati Uniti o nell’Unione europea.
 
 I dati sensibili possono passare attraverso la rete del server Flast CDN ma non vengono memorizzati nella rete Flast. Tutti i partner inclusi nell’offerta Adobe Commerce Managed Services hanno l’obbligo contrattuale di garantire la protezione dei dati sensibili. Managed Services non sposterà i dati sensibili dei clienti o dei consumatori dalle posizioni specificate dal cliente.
 
