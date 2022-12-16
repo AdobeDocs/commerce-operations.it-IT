@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;home;argomenti popolari
 title: Pagina principale
 description: Sfoglia un indice della documentazione del prodotto operativo Adobe Commerce.
-source-git-commit: 80163ec1c40a19ea4eb138c3753b08daa231dc41
+source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '164'
 ht-degree: 2%
 
 ---
@@ -124,6 +124,7 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
 Scopri la nuova documentazione e gli aggiornamenti significativi alla documentazione esistente.
 
 | Modifica | Tipo |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
-| È stato spostato il [Guida alla sicurezza e alla conformità](../security-and-compliance/overview.md) da [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | Nuovo |
-| È stato spostato il [Guida alle informazioni sulla versione](../release/release-notes/overview.md) da [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Nuovo |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| È stato aggiunto un nuovo argomento che descrive tutti [consumatori della coda dei messaggi](../configuration/queues/consumers.md). | Nuovo |
+| Aggiunto [istruzioni](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) per la conversione del formato di archiviazione delle tabelle di database per Adobe Commerce su progetti cloud Infrastructure Pro. | Aggiornato |
+| Aggiunto [istruzioni](../configuration/remote-storage/cloud-support.md) per abilitare lo storage remoto per Adobe Commerce nei progetti di infrastruttura cloud. | Aggiornato |
