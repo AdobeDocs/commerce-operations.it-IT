@@ -1,7 +1,7 @@
 ---
 title: Avvia i consumatori della coda dei messaggi
-description: Scopri come avviare un consumer della coda di messaggi.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+description: Scopri come avviare un consumer di coda messaggi.
+source-git-commit: 3e3dac0c75622b210cf1168639b8804003f3c538
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Devi avviare un consumer della coda di messaggi per abilitare operazioni asincrone come azioni di massa di Inventory management e REST bulk e endpoint asincroni. Per abilitare la funzionalità B2B, devi avviare più consumatori. Nei moduli di terze parti potrebbe essere necessario avviare un consumatore personalizzato.
+Devi iniziare un [consumer della coda messaggi](../queues/consumers.md) per abilitare operazioni asincrone, come le azioni di massa di Inventory management e gli endpoint REST in blocco e asincroni. Per abilitare la funzionalità B2B, devi avviare più consumatori. Nei moduli di terze parti potrebbe essere necessario avviare un consumatore personalizzato.
 
 Per visualizzare un elenco di tutti i consumatori:
 

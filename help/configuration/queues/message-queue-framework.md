@@ -1,7 +1,7 @@
 ---
 title: Panoramica delle code di messaggi
 description: Scopri il framework della coda dei messaggi e come funziona con l’applicazione Adobe Commerce e Magenti Open Source.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 78ad565f051f254229424ddcdb8ce633d3a78ec6
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Panoramica delle code di messaggio
 
-MQF (Message Queue Framework) è un sistema che consente [modulo](https://glossary.magento.com/module) per pubblicare i messaggi nelle code. Definisce anche i consumatori che riceveranno i messaggi in modo asincrono. L&#39;MQF utilizza [[!DNL RabbitMQ]](https://www.rabbitmq.com) come broker di messaggistica, che fornisce una piattaforma scalabile per l’invio e la ricezione di messaggi. Include inoltre un meccanismo per memorizzare i messaggi non consegnati. [!DNL RabbitMQ] si basa sulla specifica AMQP (Advanced Message Queuing Protocol) 0.9.1.
+MQF (Message Queue Framework) è un sistema che consente [modulo](https://glossary.magento.com/module) per pubblicare i messaggi nelle code. Definisce anche la [consumatori](consumers.md) che riceverà i messaggi in modo asincrono. L&#39;MQF utilizza [[!DNL RabbitMQ]](https://www.rabbitmq.com) come broker di messaggistica, che fornisce una piattaforma scalabile per l’invio e la ricezione di messaggi. Include inoltre un meccanismo per memorizzare i messaggi non consegnati. [!DNL RabbitMQ] si basa sulla specifica AMQP (Advanced Message Queuing Protocol) 0.9.1.
 
 Il diagramma seguente illustra il Framework di coda messaggi:
 

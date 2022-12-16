@@ -1,9 +1,9 @@
 ---
 user-guide-title: Guida alla configurazione
 user-guide-description: Configura le funzioni e i servizi dell’applicazione Adobe Commerce o Magenti Open Source.
-source-git-commit: b872a61f74818990833ba6b48e061fa1ca69b7cb
+source-git-commit: 31f9ff21a848e248d2c3da7cfb3cfc8bfd5785be
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,7 @@ ht-degree: 0%
    + [Framework di coda messaggi](queues/message-queue-framework.md)
    + [Gestire le code dei messaggi](queues/manage-message-queues.md)
    + [Configurare Amazon MQ](queues/aws-mq.md)
+   + [Consumatori](queues/consumers.md)
 + Siti multipli {#multi-sites}
    + [Più siti e visualizzazioni](multi-sites/ms-overview.md)
    + [ID incremento entità database](multi-sites/change-increment-id.md)
