@@ -1,9 +1,9 @@
 ---
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
-source-git-commit: aad242e3a458e40fb1977399649ffe3e31696cd3
+source-git-commit: 2754ce0c8e27d51777924f4640b81628fbb2ea81
 workflow-type: tm+mt
-source-wordcount: '10066'
+source-wordcount: '10379'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,21 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla Comunità per Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.25 {#v1-1-25}
+
+* **ACSD-48058** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.6) - Risolve il problema di mancato funzionamento del reindice del prezzo del prodotto se il prodotto bundle non è assegnato ad alcun sito web.
+* **ACSD-48262** (per Adobe Commerce e Magenti Open Source >=2.4.5 &lt;2.4.6) - Risolve il problema a causa del quale i prodotti non sono visibili sul fronte quando l’impostazione &quot;Consenti tutti i prodotti per pagina&quot; è impostata su Sì.
+* **ACSD-48293** (per Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.4) - Corregge il problema per cui i prodotti compositi esauriscono le scorte quando i prodotti secondari venduti vengono restituiti alle scorte.
+* **ACSD-47520** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema per cui i clienti perdono punti di premio quando viene creata una nota di credito.
+* **ACSD-48044** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.4) - Risolve il problema che si verificava quando l’applicazione di più carte regalo a un singolo ordine con spedizione multipla impediva l’esecuzione di ordini.
+* **ACSD-48300** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema per cui non è possibile creare un ritorno se il prodotto configurabile viene rimosso.
+* **ACSD-47910** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.6) - Corregge il problema degli ordini mancanti, delle fatture, delle spedizioni e delle note di credito nelle rispettive griglie di entità.
+* **ACSD-47292** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.6) - Risolve il problema per cui i prodotti bundle esauriti non sono disponibili nella risposta di GraphQL se l&#39;opzione &quot;show out-of-stock products&quot; è impostata su Sì.
+* **ACSD-48234** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.6) - Corregge il problema in cui il risultato della ricerca nel catalogo mostra un conteggio errato degli articoli della categoria quando l&#39;opzione &quot;mostra esaurito&quot; è abilitata.
+* **ACSD-48313** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.5) - Risolve il problema in cui la colonna &quot;configurable_variation&quot; non viene analizzata se il valore dell&#39;attributo contiene una virgola. Lo stesso algoritmo di analisi viene utilizzato per &quot;add_attributes&quot;.
+* **ACSD-48627** (per Adobe Commerce e Magenti Open Source >=2.4.5 &lt;2.4.6) - Corregge il problema per cui il prodotto configurabile esaurito causa un errore durante l’invio di una richiesta GraphQL per ottenere i dettagli del carrello.
+* Patch aggiornata: MDVA-39384.
 
 ## v1.1.24 {#v1-1-24}
 
@@ -41,7 +56,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **ACSD-47179** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Risolve il problema che impediva ad un amministratore con accesso limitato a un ambito specifico di eliminare le revisioni dei prodotti.
 * **ACSD-47107** (per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.5) - Corregge il problema in cui lo sconto Regola prezzo catalogo viene applicato alle opzioni di prodotto personalizzate.
 * **ACSD-47232** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema per cui i coupon con condizioni di peso totale non possono essere applicati nell’amministratore.
-* **ACSD-46519** (per Adobe Commerce e Magenti Open Source >=2.4.1 &lt;2.4.6) - Corregge il problema in cui la richiesta categoryList di GraphQL restituisce un product_count errato per una categoria di ancoraggio.
+* **ACSD-46519** (per Adobe Commerce e Magenti Open Source >=2.4.1 &lt;2.4.6) - Risolve il problema in cui la richiesta categoryList di GraphQL restituisce un product_count errato per una categoria di ancoraggio.
 * **ACSD-47027** (per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.6) - Corregge una richiesta lenta updateCompanyRole GraphQL .
 * **ACSD-47666** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Risolve il problema in cui la funzione di filtro non funziona in Amministratore > Sistema > Autorizzazioni > Ruoli utente > un ruolo > Griglia Utenti ruolo.
 * **ACSD-47497** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema a causa del quale la scheda Servizi non è visibile nella configurazione in Admin.
@@ -64,7 +79,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **ACSD-46581** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema per cui il totale fiscale stimato non viene aggiornato dopo aver selezionato un paese nel carrello.
 * **ACSD-46618** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Risolve il problema in cui il widget elenco prodotti mostra prezzi memorizzati nella cache errati per un cliente connesso.
 * **ACSD-46674** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Risolve il problema per cui le opzioni personalizzate di un tipo di immagine vengono visualizzate come HTML nelle e-mail dei clienti.
-* **ACSD-46988** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.6) - Corregge il problema in cui la richiesta API GraphQL &quot;currency&quot; restituisce valori NULL per una valuta personalizzata.
+* **ACSD-46988** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.6) - Corregge il problema in cui la richiesta API &quot;currency&quot; di GraphQL restituisce valori NULL per una valuta personalizzata.
 * **ACSD-47076** (per Adobe Commerce e Magenti Open Source >=2.4.1 &lt;2.4.5) - Corregge il problema per cui i video Vimeo non possono essere riprodotti sulla vetrina.
 * **ACSD-45071** (per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.4) - Corregge il problema per cui l&#39;origine predefinita viene aggiunta al prodotto durante l&#39;importazione.
 * **AC-3023** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.6) - Aggiorna lo schema DHL alla versione più recente 10.0.
@@ -99,7 +114,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **ACSD-45488** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.6*) - Corregge il problema per cui un prodotto configurabile con più origini non viene restituito automaticamente in In Stock .
 * **ACSD-45754** (*per Adobe Commerce e Magenti Open Source >=2.3.1 &lt;2.4.6*) - Corregge il problema per cui i punti premio non vengono aggiunti dopo aver applicato un coupon al carrello.
 * **ACSD-45849** (*per Adobe Commerce >=2.4.3 &lt;2.4.4*): risolve il problema della perdita dei metadati video dopo l&#39;applicazione di un aggiornamento di staging.
-* **ACSD-45257** (*per Adobe Commerce e Magenti Open Source >=2.3.4 &lt;2.4.4*) - Corregge il problema per cui GraphQL non visualizza correttamente uno sconto del carrello.
+* **ACSD-45257** (*per Adobe Commerce e Magenti Open Source >=2.3.4 &lt;2.4.4*): risolve il problema per cui GraphQL non visualizza correttamente uno sconto del carrello.
 * **ACSD-44938** (*per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.4*) - Risolve il problema in cui `VAT_ID` non può essere applicata in una richiesta GraphQL per un utente guest.
 * Patch aggiornate: MDVA-43417.
 
@@ -119,7 +134,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 
 * **MDVA-44703** (*per Adobe Commerce e Magenti Open Source >=2.4.3 &lt;2.4.4*) - Corregge il problema per cui i totali degli ordini nel rapporto Ordini non vengono calcolati correttamente per l’utente con restrizioni di amministrazione.
 * **MDVA-44940** (*per Adobe Commerce e Magenti Open Source >=2.4.3 &lt;2.4.4*) - Corregge l&#39;errore SQL che si verifica durante il salvataggio della categoria dall&#39;amministratore.
-* **MDVA-44562** (*per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.2-p2*) - Corregge il problema per cui l&#39;ID store non predefinito per gli elementi del preventivo viene sostituito dall&#39;ID store predefinito, nonostante la richiesta GraphQL proveniente dalla vista store non predefinita.
+* **MDVA-44562** (*per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.2-p2*) - Corregge il problema per cui l&#39;ID store non predefinito per gli elementi del preventivo viene sostituito dall&#39;ID store predefinito, nonostante la richiesta GraphQL proveniente dalla visualizzazione store non predefinita.
 * **MDVA-43167** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.4*) - Corregge il problema per cui l&#39;azione di massa della griglia dell&#39;ordine di amministrazione non si applica per più pagine quando l&#39;utente amministratore seleziona tutti gli ordini.
 * **MDVA-44044** (*per Adobe Commerce e Magenti Open Source >=2.3.0 &lt;2.4.2-p2*): risolve il problema di mancata visualizzazione di un prodotto nella pagina della categoria dopo l’assegnazione a un nuovo sito web.
 * **MDVA-42509** (*per Adobe Commerce e Magenti Open Source >=2.3.3 &lt;2.4.4*) - Corregge il problema per cui non era possibile caricare un CSV per un ordine rapido con conseguente *Impossibile inviare il cookie* errore.
@@ -143,7 +158,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-44100** (*per Adobe Commerce e Magenti Open Source >=2.4.3 &lt;2.4.5*): risolve il problema in cui tutti i FPT vengono assegnati all&#39;ultimo prodotto nel carrello e reimpostati per altri prodotti.
 * **MDVA-43605** (*per Adobe Commerce e Magenti Open Source >=2.3.1 &lt;2.4.5*) - Corregge il problema per cui i dati dell&#39;ordine restituiscono valori negativi per i totali delle righe quando si utilizza l&#39;API Rest.
 * **MDVA-43102** (*per Adobe Commerce e Magenti Open Source >=2.3.1 &lt;2.4.5*) - Corregge il problema per cui la quantità vendibile non viene aggiornata correttamente quando un rimborso viene effettuato tramite API REST.
-* **MDVA-43178** (*per Adobe Commerce e Magenti Open Source >=2.4.3-p2 &lt;2.4.5*) - Corregge il problema per cui un token cliente per un archivio personalizzato non può essere recuperato in GraphQL.
+* **MDVA-43178** (*per Adobe Commerce e Magenti Open Source >=2.4.3-p2 &lt;2.4.5*) - Corregge il problema per cui non è possibile recuperare un token cliente per un archivio personalizzato in GraphQL.
 * **MDVA-43859** (*per Adobe Commerce e Magenti Open Source >=2.4.1 &lt;2.4.5*) - Corregge il problema in cui l&#39;errore *Nessuna entità con customerId =* viene registrato quando un cliente eliminato tenta di accedere.
 * **MDVA-44147** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.5*) - Corregge il problema per cui una richiesta GraphQL non restituisce gli elenchi di richieste di acquisto.
 * **MDVA-44505** (*per Adobe Commerce e Magenti Open Source >=2.4.1 &lt;2.4.3*) - Corregge i problemi in cui l&#39;applicazione dei punti premio GraphQL non aggiorna il totale complessivo e in cui il credito store viene applicato più volte durante il posizionamento dell&#39;ordine.
@@ -153,7 +168,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 
 * **MDVA-42969** (*per Adobe Commerce e Magenti Open Source >=2.4.1 &lt;2.4.3*): risolve il problema in cui la regola di prodotto correlata funziona solo quando il segmento del cliente è impostato su *Tutto*.
 * **MDVA-39605** (*per Adobe Commerce e Magenti Open Source >=2.3.4 &lt;2.4.5*) - Corregge il problema per cui il valore TTL della cache Redis (data di scadenza) è errato.
-* **MDVA-43862** (*per Adobe Commerce e Magenti Open Source >=2.3.3 &lt;2.4.5*) - Corregge il problema per cui il cliente non può aggiornare gli elementi del carrello a causa di un GraphQL *Modifica UpdateCartItems* errore.
+* **MDVA-43862** (*per Adobe Commerce e Magenti Open Source >=2.3.3 &lt;2.4.5*): risolve il problema per cui il cliente non può aggiornare gli articoli del carrello a causa di un GraphQL *Modifica UpdateCartItems* errore.
 * **MDVA-43824** (*per Adobe Commerce e Magenti Open Source >=2.3.6 &lt;=2.3.7-p3 | | >=2.4.1 &lt;2.4.5*): risolve il problema in cui viene visualizzato un errore in caso di annullamento di ordini con uno sconto.
 * **MDVA-43451** (*per Adobe Commerce e Magenti Open Source >=2.4.3 &lt;2.4.5*) - Corregge il problema in cui l&#39;errore *Impossibile trovare il negozio richiesto. Verifica lo store e riprova.* viene visualizzato durante la configurazione di un catalogo condiviso per un sito Web specifico.
 * **MDVA-43491** (*per Adobe Commerce e Magenti Open Source >=2.3.5 &lt;2.4.5*): risolve il problema per cui l&#39;etichetta dell&#39;immagine di base non viene aggiornata quando si importano prodotti per un sito web multi-store.
@@ -202,7 +217,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-38728** (*per Adobe Commerce e Magenti Open Source >=2.3.2 &lt;2.4.5*) - Corregge il problema per cui l&#39;aggiornamento dell&#39;attributo di massa crea una riscrittura URL per l&#39;archivio predefinito solo dopo la modifica *Visibilità del prodotto*.
 * **MDVA-43091** (*per Adobe Commerce e Magenti Open Source >=2.4.3 &lt;2.4.4*) - Corregge il problema per cui l&#39;ordine di un prodotto bundle dall&#39;amministratore nel back-end restituisce l&#39;errore *Impossibile utilizzare la quantità decimale per questo prodotto*.
 * **MDVA-40816** (*per Adobe Commerce e Magenti Open Source >=2.3.0 &lt;2.4.5*) - Corregge il problema per cui le regole del prodotto correlate mostrano prodotti provenienti da categorie non definite nelle condizioni della regola.
-* **MDVA-41305** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.5*) - Corregge il problema per cui la mutazione GraphQL non restituisce opzioni di prodotto configurabili dopo l&#39;aggiunta all&#39;elenco dei desideri.
+* **MDVA-41305** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.5*): risolve il problema per cui la mutazione GraphQL non restituisce opzioni di prodotto configurabili dopo l&#39;aggiunta all&#39;elenco dei desideri.
 * **MDVA-39181** (*per Adobe Commerce e Magenti Open Source >=2.4.1 &lt;2.4.5*) - Corregge il problema per cui le regole del prodotto correlate mostrano prodotti provenienti da categorie non definite nelle condizioni della regola.
 * **MDVA-42584** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.3*): risolve il problema per cui lo stato di stock configurabile nel backend non viene aggiornato dopo la modifica dello stato di quantità e stock tramite Importazione o API.
 * **MDVA-40175** (*per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.3*) - Risolve il problema in cui *Fare clic per modificare il metodo di spedizione* non mostra pulsanti di scelta per selezionare i metodi di spedizione nell&#39;amministratore durante il riordino.
@@ -229,7 +244,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-41215** (*per Adobe Commerce e Magenti Open Source >=2.3.0 &lt;2.4.4*) - Corregge il problema per cui gli utenti ottengono l&#39;errore 500 dopo aver impostato il *mage-messages* cookie se esiste già, ma non sono presenti nuovi messaggi.
 * **MDVA-41139** (*per Adobe Commerce e Magenti Open Source >=2.4.3 &lt;2.4.4*) - Corregge il problema per cui i prodotti configurabili non sono disponibili dopo l’importazione del prodotto quando qty=0 di un prodotto semplice per una delle sue sorgenti.
 * **MDVA-42326** (*per Adobe Commerce e Magenti Open Source >=2.3.6 &lt;=2.3.7-p2 | | >=2.4.1 &lt;2.4.4*): risolve il problema per cui i clienti ottengono un errore in caso di pagamento dopo un timeout di sessione anche se il carrello acquisti permanente è abilitato.
-* **MDVA-42341** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.4*) - Risolve il problema in cui la `categoryList` La query GraphQL non filtra i risultati se una richiesta ha l&#39;intestazione Store.
+* **MDVA-42341** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.4*) - Risolve il problema in cui la `categoryList` La query GraphQL non filtra i risultati se una richiesta ha l’intestazione Store.
 * **MDVA-38393** (*per Adobe Commerce e Magenti Open Source >=2.3.0 &lt;2.4.4*) - Corregge il problema per cui le regole del catalogo smettono di funzionare per un prodotto configurabile se il suo prodotto semplice viene rinominato.
 * **MDVA-39153** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.4*) - Corregge il problema per cui l&#39;importo di uno sconto viene calcolato in modo errato durante il riordino in Admin.
 * Patch aggiornate: MDVA-28993, MDVA-41061, MDVA-35984.
@@ -249,7 +264,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-41399** (*per Adobe Commerce e Magenti Open Source >=2.3.3 &lt;2.4.2*) - Corregge il problema per cui gli utenti amministratori non possono accedere al *Gestisci carrello acquisti* se un cliente aggiunge un prodotto all’elenco dei desideri.
 * **MDVA-40609** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.3*) - Corregge il problema dell&#39;assenza di dati sui prodotti disattivati nel `cataloginventory_stock_status` tabella indice, visualizzazione di quantità di prodotto disattivate non corrette.
 * **MDVA-39031** (*per Adobe Commerce e Magenti Open Source >=2.4.1 &lt;2.4.4*): risolve il problema per cui l’aggiunta di un prodotto al carrello tramite GraphQL è possibile anche se non viene assegnato al sito web di destinazione.
-* **MDVA-41597** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.4*) - Corregge il problema per cui gli utenti ottengono un errore quando aggiungono più di un prodotto configurabile al carrello utilizzando GraphQL.
+* **MDVA-41597** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.4*) - Corregge il problema per cui gli utenti ricevono un errore quando aggiungono più di un prodotto configurabile al carrello utilizzando GraphQL.
 * **MDVA-27456** (*per Adobe Commerce e Magenti Open Source >=2.3.5 &lt;2.3.7*) - Corregge il problema per cui gli utenti ottengono un errore durante il tentativo di caricamento [!DNL Swagger].
 * **MDVA-32776** (*per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.2*) - Corregge il problema per cui lo stato delle scorte non viene aggiornato quando un ordine viene effettuato ma non spedito.
 * **MDVA-30862** (*per Adobe Commerce e Magenti Open Source >=2.3.4 &lt;2.4.0*) - Corregge il problema relativo alla data di ordine errata nella fattura di PDF stampata.
@@ -276,7 +291,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-40537** (*per Adobe Commerce e Magenti Open Source >=2.3.4 &lt;=2.4.0-p1*) - Corregge il problema per cui gli utenti ottengono un errore durante la creazione di una visualizzazione store se esistono diverse pagine CMS con la stessa chiave URL.
 * **MDVA-37725** (*per Adobe Commerce e Magenti Open Source >=2.3.0 &lt;=2.4.3-p1*) - Corregge il problema per cui le e-mail di ordine asincrono inviate da siti web non predefiniti contengono URL di logo dal sito web predefinito.
 * **MDVA-39482** (*per Adobe Commerce e Magenti Open Source >=2.3.6 &lt;=2.3.7-p2 | | >=2.4.1 &lt;2.4.4*): risolve il problema per cui un prodotto esaurisce le scorte se importato con una quantità &quot;0&quot; quando gli ordini precedenti sono abilitati.
-* **MDVA-40435** (*per Adobe Commerce e Magenti Open Source >=2.3.4 &lt;2.4.4*) - Corregge il problema con uno sconto errato sui prodotti bundle con prezzi dinamici se applicati tramite GraphQL.
+* **MDVA-40435** (*per Adobe Commerce e Magenti Open Source >=2.3.4 &lt;2.4.4*): risolve il problema con uno sconto errato sui prodotti bundle con prezzi dinamici se applicati tramite GraphQL.
 * **MC-42528** (*per Adobe Commerce e Magenti Open Source >=2.4.3 &lt;=2.4.3-p1*) - Risolve il problema in cui la `categoryList` La query GraphQL restituisce categorie assegnate e non assegnate.
 * **MDVA-29400** (*per Adobe Commerce e Magenti Open Source >=2.3.0 &lt;=2.3.7-p1 || >=2.4.0 &lt;=2.4.0-p1*) - Corregge il problema degli ordini duplicati inseriti con [!DNL PayPal Express Checkout].
 * **MDVA-26005** (*per Adobe Commerce e Magenti Open Source >=2.3.4 &lt;=2.3.5-p2*) - Corregge il problema per cui è impossibile selezionare una categoria in un albero di categorie per le condizioni della regola di prezzo del carrello.
@@ -303,7 +318,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-39966** (*per Adobe Commerce e Magenti Open Source >=2.3.0 &lt;=2.3.5-p2 || >=2.4.0 &lt;=2.4.0-p1*) - Corregge il problema relativo alla distribuzione di impostazioni internazionali non corrette.
 * **MDVA-38852** (*per Adobe Commerce e Magenti Open Source >=2.3.0 &lt;=2.3.5-p2*) - Corregge il problema per cui l&#39;inventario del catalogo per progettazione blocca le tabelle per gli aggiornamenti che riducono notevolmente le prestazioni in casi con più ordini paralleli.
 * **MDVA-39986** (*per Adobe Commerce e Magenti Open Source >=2.4.1 &lt;2.4.3*): risolve il problema per cui l’utente non è in grado di effettuare un ordine in Admin on MacOS utilizzando il browser Safari.
-* **MDVA-38447** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.4*) - Risolve due problemi: se *Non visibile individualmente* i prodotti figlio configurabili vengono restituiti nella risposta GraphQL e ottimizzano la query MySQL per la query dei prodotti GraphQL con filtro categoria.
+* **MDVA-38447** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.4*) - Risolve due problemi: se *Non visibile individualmente* i prodotti figlio configurabili vengono restituiti nella risposta di GraphQL e ottimizzano la query MySQL per la query dei prodotti GraphQL con filtro categoria.
 * **MDVA-40134** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.3*): risolve il problema per cui GraphQL non restituisce prodotti correlati quando il Catalogo condiviso è abilitato.
 * **MDVA-39935** (*per Adobe Commerce e Magenti Open Source >=2.4.1 &lt;2.4.4*) - Corregge il problema per cui GraphQL restituisce prodotti figlio configurabili disabilitati a livello di sito web.
 
@@ -336,11 +351,11 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-37082** (*per Adobe Commerce >=2.3.0 &lt;2.4.3*): risolve il problema che si verifica quando si salvano le scorte personalizzate di prodotti raggruppati, causando la visualizzazione del prodotto come non disponibile sul fronte.
 * **MDVA-36572** (*per Adobe Commerce >=2.3.5 &lt;2.4.3*) - Corregge il problema che si verificava quando gli aggiornamenti di Nota di credito non causavano più aggiornamenti duplicati della prenotazione dei prodotti nel database.
 * **MDVA-38132** (*per Adobe Commerce >=2.3.3 &lt;2.4.3*): risolve il problema quando il pannello di amministrazione non è raggiungibile a causa di un *troppi reindirizzamenti* errore.
-* **MDVA-38270** (*per Adobe Commerce >=2.4.1 &lt;2.4.3*) - Corregge il problema con le informazioni mancanti sulla carta regalo nel totale dell&#39;ordine in GraphQL.
+* **MDVA-38270** (*per Adobe Commerce >=2.4.1 &lt;2.4.3*) - Corregge il problema relativo alle informazioni mancanti sulla carta regalo nel totale dell&#39;ordine in GraphQL.
 
 ## v1.0.24 {#v1-0-24}
 
-* **MDVA-37779** (*per Adobe Commerce >=2.4.2 &lt;=2.4.4*): risolve il problema relativo all’aggiunta di un prodotto configurabile al carrello tramite GraphQL quando l’ID del sito web non coincide con l’ID dello store.
+* **MDVA-37779** (*per Adobe Commerce >=2.4.2 &lt;=2.4.4*): risolve il problema relativo all&#39;aggiunta di un prodotto configurabile al carrello tramite GraphQL quando l&#39;ID sito Web non coincide con l&#39;ID store.
 * **MDVA-36832** (*per Adobe Commerce >=2.3.4 &lt;=2.4.2-p1*): risolve il problema della duplicazione delle immagini sulle pagine quando la larghezza di visualizzazione è di 768 px.
 * **MDVA-37874** (*per Adobe Commerce >=2.3.6 &lt;=2.3.7 || >=2.4.1 &lt;=2.4.2-p1*) - Risolve il problema in cui *Importo fisso dello sconto per il carrello intero* è applicato in modo errato a un prodotto bundle contenente più di un&#39;opzione.
 * **MDVA-37913** (*per Adobe Commerce >=2.3.0 &lt;=2.4.0-p1*): risolve il problema a causa del quale i collegamenti scaricabili spariscono se il prodotto scaricabile viene aggiornato tramite API.
@@ -350,11 +365,11 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 
 * **MDVA-37478** (*per Adobe Commerce >=2.3.0 &lt;=2.3.7*) - Corregge il problema per cui Adobe Commerce genera un errore durante la creazione di una fattura parziale per gli ordini inseriti con il *Pagamento in conto* metodo di pagamento tramite REST API.
 * **MDVA-37362** (*per Adobe Commerce >=2.3.4 &lt;=2.4.2-p1*) - Corregge il problema per cui i valori delle opzioni di prodotto configurabili e i valori degli attributi di variante erano vuoti nella risposta GraphQL.
-* **MDVA-37288** (*per Adobe Commerce 2.4.2*) - Corregge il problema per cui i prezzi di livello errati venivano restituiti dopo la richiesta GraphQL.
+* **MDVA-37288** (*per Adobe Commerce 2.4.2*) - Corregge il problema per cui i prezzi di livello errati venivano restituiti dopo la richiesta di GraphQL.
 * **MDVA-37225** (*per Adobe Commerce >=2.4.1 &lt;=2.4.2-p1*): risolve il problema di blocco del processo di caricamento durante la creazione di un ordine rapido in presenza di un valore intero negli SKU importati.
 * **MDVA-37224** (*per Adobe Commerce >=2.3.3 &lt;=2.4.2-p1*) - Corregge il problema per cui i clienti non possono pagare il preventivo negoziabile con [!DNL PayFlow Pro] con un altro prodotto nel carrello.
 * **MDVA-36286** (*per Adobe Commerce >=2.3.6 &lt;=2.4.2-p1*): risolve il problema dell’interruzione dell’anteprima dei widget dei prodotti Page Builder se lo stesso SKU ha una posizione diversa nelle sottocategorie.
-* **MDVA-30186** (*per Adobe Commerce >=2.3.4 &lt;=2.3.5-p2, >=2.4.0 &lt;=2.4.0-p1, >=2.4.2 &lt;=2.4.2-p1*) - Corregge il problema per cui le opzioni attributo vengono ordinate in base al valore dell&#39;opzione invece del conteggio degli elementi attributo nella risposta GraphQL.
+* **MDVA-30186** (*per Adobe Commerce >=2.3.4 &lt;=2.3.5-p2, >=2.4.0 &lt;=2.4.0-p1, >=2.4.2 &lt;=2.4.2-p1*) - Corregge il problema per cui le opzioni attributo vengono ordinate in base al valore dell&#39;opzione invece del conteggio degli elementi attributo nella risposta di GraphQL.
 
 ## v1.0.22 {#v1-0-22}
 
@@ -400,8 +415,8 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-34591** (*per Adobe Commerce >=2.3.0 &lt;2.4.3*) - Corregge il problema con un calcolo errato dello sconto della regola del carrello per *Sconto Qtà massimo applicato a* e *Fase di Qtà Sconto (Acquista X)*.
 * **MDVA-33704** (*per Adobe Commerce >=2.4.0 &lt;2.4.3*) - Risolve il problema in cui la *Ritiro in negozio* l&#39;opzione di spedizione non viene visualizzata, anche se configurata per essere disponibile.
 * **MDVA-34928** (*per Adobe Commerce >=2.3.5 &lt;2.3.5-p2*): risolve il problema di visualizzazione indefinita del caricatore di pagina dopo la rimozione del credito del negozio dal pagamento.
-* **MDVA-35254** (*per Adobe Commerce >=2.3.1 &lt;2.4.3*) - Corregge i problemi con CAPTCHA durante l’estrazione.
-* **MDVA-35569** (*per Adobe Commerce >=2.3.4 &lt;2.4.2*) - Risolve il problema in cui la *imposte sul prodotto fisso* Il campo non viene compilato nella risposta GraphQL quando viene specificato lo stato .
+* **MDVA-35254** (*per Adobe Commerce >=2.3.1 &lt;2.4.3*) - Corregge i problemi con CAPTCHA durante il pagamento.
+* **MDVA-35569** (*per Adobe Commerce >=2.3.4 &lt;2.4.2*) - Risolve il problema in cui la *imposte sul prodotto fisso* Il campo non viene popolato nella risposta GraphQL quando è specificato lo stato .
 * **MDVA-35847** (*per Adobe Commerce >=2.4.1 &lt;2.4.3*) - Corregge il problema B2B a causa del quale il modulo Utenti società si interrompe se viene utilizzato un attributo cliente personalizzato.
 * **MDVA-31307** (*per Adobe Commerce >=2.4.0 &lt;2.4.2*): risolve il problema in cui sono presenti *Memoria esaurita* errori su alcune categorie a causa di problemi con la whitelist CSP dinamica per i blocchi memorizzati nella cache.
 
@@ -419,7 +434,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-34012** (*per Adobe Commerce >=2.3.1 &lt;2.4.3*) - Risolve il problema in cui la *Usa valore predefinito* viene deselezionata dopo l’applicazione delle modifiche pianificate. Il problema viene visualizzato una volta che le modifiche pianificate non sono più attive.
 * **MDVA-35064** (*per Adobe Commerce >=2.3.3 &lt;2.4.3*) - Corregge il problema per cui le riscritture URL non vengono generate per i prodotti configurabili creati tramite API.
 * **MDVA-34943** (*per Adobe Commerce >=2.3.0 &lt;2.4.2*): risolve il problema per cui l’ordine rapido memorizza in cache gli SKU immessi in precedenza.
-* **MDVA-35197** (*per Adobe Commerce >=2.3.5 &lt;2.4.0*): risolve il problema in cui si verifica un errore durante l&#39;aggiunta al carrello utilizzando GraphQL se i prodotti aggiunti in precedenza non erano disponibili.
+* **MDVA-35197** (*per Adobe Commerce >=2.3.5 &lt;2.4.0*): risolve il problema in cui si verifica un errore durante l’aggiunta al carrello utilizzando GraphQL se i prodotti aggiunti in precedenza non erano disponibili.
 * **MDVA-34850** (*per Adobe Commerce >=2.3.1 &lt;2.4.0*) - Corregge il problema per cui le opzioni esaurite di un prodotto configurabile non vengono visualizzate invece di essere visualizzate come scelte positive.
 * **MDVA-34867** (*per Adobe Commerce >=2.3.0 &lt;2.4.3*) - Corregge il problema del mancato salvataggio dei valori per un campo condizione impostato per un aggiornamento pianificato.
 * **MDVA-35092** (*per Adobe Commerce >=2.3.5 &lt;2.4.3*) - Corregge il problema per cui gli utenti non possono aggiungere [!DNL Vimeo] video a causa di elementi obsoleti [!DNL Vimeo] API.
@@ -441,7 +456,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-33482** (*per Adobe Commerce ^2.3.5*) - Corregge il problema per cui la generazione di una nota di accredito in base a una fattura parziale determina l&#39;imposta per l&#39;ordine totale invece dell&#39;imposta per quella fattura parziale.
 * **MDVA-33393** (*per Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corregge l&#39;errore *Il valore countryId specificato non esiste*.
 * **MDVA-33632** (*per Adobe Commerce >=2.3.0 &lt;2.3.7*) - Fornisce una correzione in cui viene visualizzato il messaggio di eccezione *Questo prodotto è esaurito* viene ora visualizzato a un utente amministratore quando tenta di riordinare un prodotto non disponibile.
-* **MDVA-34469** (*per Adobe Commerce >=2.4.1 &lt;2.4.2*): risolve il problema di errore nelle mutazioni GraphQL sul carrello di un cliente quando si utilizzano più viste store.
+* **MDVA-34469** (*per Adobe Commerce >=2.4.1 &lt;2.4.2*): risolve il problema di errore nelle mutazioni GraphQL nel carrello di un cliente quando si utilizzano più viste store.
 * **MDVA-33976** (*per Adobe Commerce >=2.3.0 &lt;2.3.7*): risolve il problema per cui il prodotto del bundle viene mostrato Out Of Stock sulla vetrina dopo aver rimosso la seconda opzione dal prodotto del bundle.
 * **MDVA-33894** (*per Adobe Commerce >=2.4.0 &lt;2.4.1 con estensione B2B*) - Corregge diversi problemi relativi alla funzionalità Ordine rapido, tra cui l’aggiunta e la rimozione di più prodotti e la sensibilità alle maiuscole/minuscole degli SKU.
 * **MDVA-27664** (*per Adobe Commerce >=2.3.4 &lt;2.3.6*) - Risolve il problema nel modulo di registrazione del cliente che causava la visualizzazione di un errore: *ERRORE - La data di nascita non deve essere maggiore di quella odierna.*
@@ -473,7 +488,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **MDVA-23426** (*per Adobe Commerce >=2.3.3 &lt;2.3.5*): risolve il problema per cui le e-mail di notifica inviate da Adobe Commerce contengono un corpo vuoto con il contenuto aggiunto come allegato.
 * **MDVA-22150** (*per Adobe Commerce >=2.3.1 &lt;2.3.4*) - Corregge il problema per cui i clienti con un prodotto configurabile nel carrello e un coupon applicato non possono accedere se tale prodotto configurabile è disabilitato nell’amministratore.
 * **MDVA-32545** (*per Adobe Commerce >=2.3.0 &lt;2.4.2*): risolve il problema per cui le fatture non vengono inviate automaticamente durante la creazione di ordini da parte dell&#39;amministratore.
-* **MDVA-32714** (*per Adobe Commerce >=2.3.4 &lt;2.4.1*) - Corregge il problema per cui il prezzo del gruppo di clienti non funziona nella query del prodotto GraphQL.
+* **MDVA-32714** (*per Adobe Commerce >=2.3.4 &lt;2.4.1*) - Corregge il problema a causa del quale il prezzo del gruppo di clienti non funziona nella query del prodotto GraphQL.
 
 ## v1.0.12 {#v1-0-12}
 
@@ -498,7 +513,7 @@ Correzioni minori per le versioni delle patch
 
 ## v1.0.9 {#v1-0-9}
 
-* **MDVA-31363** (*per Adobe Commerce >=2.3.2 &lt;2.4.2*) - Corregge il problema per cui la regola del prezzo del carrello con coupon non si applica tramite GraphQL quando *Sconto fisso per intero carrello* viene utilizzata l&#39;azione .
+* **MDVA-31363** (*per Adobe Commerce >=2.3.2 &lt;2.4.2*) - Corregge il problema per cui la Regola del prezzo del carrello con coupon non si applica tramite GraphQL quando *Sconto fisso per intero carrello* viene utilizzata l&#39;azione .
 * **MDVA-30889** (*per Adobe Commerce >=2.3.0 &lt;2.4.2*): risolve il problema in cui si verifica un errore dopo la fatturazione di un bundle con prodotti virtuali e semplici come opzioni.
 * **MDVA-31791** (*per Adobe Commerce >=2.3.4 &lt;2.3.5*): migliora le prestazioni della pagina prodotto nei casi in cui vengono utilizzate regole di destinazione o prodotti collegati.
 * **MDVA-31168** (*per Adobe Commerce >=2.3.0 &lt;2.4.2*): risolve il problema in cui il file CSV di esportazione del prodotto non viene visualizzato e si verifica un errore di allocazione della memoria.
@@ -571,10 +586,10 @@ Correzioni minori per le versioni delle patch
 * **MDVA-30106** (*per Adobe Commerce ^2.3.0*) - Corregge un problema a causa del quale durante l&#39;estrazione i pagamenti non vengono caricati con *Impossibile leggere la proprietà &#39;length&#39; di null* errore nella console JS.
 * **MDVA-28656** (*per Adobe Commerce >=2.3.1 &lt;2.3.6 | | >=2.4.0 &lt;2.4.2*) - Corregge il problema per cui, se un ordine è stato effettuato senza informazioni di pagamento richieste (ad esempio, con uno sconto del 100%) e per l&#39;ordine è stata creata una fattura, lo stato dell&#39;ordine viene modificato in *Chiuso* anziché Completo.
 * **MDVA-30209** (*per Adobe Commerce 2.3.0 - 2.3.3-p1*): risolve il problema per cui il gruppo di clienti veniva modificato in predefinito se il cliente aggiornava le informazioni sul proprio account.
-* **MDVA-30123** (*per Adobe Commerce >=2.3.4 &lt;2.4.2*) - Corregge il problema per cui le etichette delle opzioni di attributo non vengono tradotte correttamente per le query GraphQL.
+* **MDVA-30123** (*per Adobe Commerce >=2.3.4 &lt;2.4.2*): risolve il problema per cui le etichette delle opzioni di attributo non vengono tradotte correttamente per le query GraphQL.
 * **MDVA-29996** (*per Adobe Commerce >=2.3.3 &lt;2.4.2*) - Corregge il problema per cui, dopo aver abilitato l’autorizzazione per categoria, la pagina della categoria non viene memorizzata nella cache da Full Page Cache.
 * **MDVA-30164** (*per Adobe Commerce >=2.3.1 &lt;2.4.2*): risolve il problema per cui i record cliente non possono essere esportati dalla griglia Clienti se esistono attributi cliente personalizzati.
-* **MDVA-30444** (*per Adobe Commerce >=2.3.0 &lt;2.4.1*) - Corregge il problema per cui non viene inviato alcun messaggio e-mail di conferma per gli ordini effettuati utilizzando GraphQL.
+* **MDVA-30444** (*per Adobe Commerce >=2.3.0 &lt;2.4.1*): risolve il problema per cui non viene inviato alcun messaggio e-mail di conferma per gli ordini effettuati utilizzando GraphQL.
 * **MDVA-30490** (*per Adobe Commerce 2.3.4 - 2.3.5-p2*): risolve il problema per cui il confronto dei prodotti genera la pagina di errore 500 se uno dei prodotti presenta una breve descrizione vuota.
 * **MDVA-30232** (*per Adobe Commerce >=2.3.1 &lt;2.4.1*): risolve il problema in cui non è possibile riordinare se l&#39;ordine originale contiene una carta regalo.
 * **MDVA-29965** (*per Adobe Commerce >=2.3.3 &lt;2.4.0*) - Corregge il problema per cui i clienti ottengono un errore di tipo Form Key non valido quando si aggiunge un prodotto al carrello.
