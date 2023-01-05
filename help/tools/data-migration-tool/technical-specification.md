@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Data Migration Tool] specifica tecnica"
 description: "Scopri i dettagli di implementazione del [!DNL Data Migration Tool] e come estendere il trasferimento dei dati tra il Magento 1 e il Magento 2."
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c56cc6d97f69770aa718333c02514ab3cfce774c
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -264,7 +264,7 @@ class StageClass implements StageInterface
 
 Se lo stadio dati supporta il rollback, deve implementare il `RollbackInterface` interfaccia.
 
-La visualizzazione del passaggio in esecuzione è fornita dal componente ProgressBar di Symfony (vedi [Barra di avanzamento](http://symfony.com/doc/current/components/console/helpers/progressbar.html)). Accedi a questo componente in un passaggio come LogLevelProcessor.
+La visualizzazione del passaggio in esecuzione è fornita dal componente ProgressBar di Symfony (vedi [Barra di avanzamento](https://symfony.com/doc/current/components/console/helpers/progressbar.html)). Accedi a questo componente in un passaggio come LogLevelProcessor.
 
 I principali metodi di utilizzo sono:
 

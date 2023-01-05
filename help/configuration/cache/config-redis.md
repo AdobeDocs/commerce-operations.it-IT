@@ -1,9 +1,9 @@
 ---
 title: Configura Redis
 description: Ottieni una panoramica delle funzioni di Redis e avvia la tua configurazione di Redis.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Puoi anche abilitare contemporaneamente sia le opzioni RDB che AOF. Per ulterior
 
 Per l’istanza di cache, imposta l’istanza in modo che sia sufficientemente grande per memorizzare l’intera cache Commerce. I requisiti di dimensione dipendono da fattori diversi, come il numero di prodotti e le visualizzazioni del negozio. Come punto di partenza, è possibile utilizzare la dimensione della cartella cache sul file system. Ad esempio, se `var/cache` la cartella sul tuo file system è di 5 GB, imposta l&#39;istanza Redis con almeno 5 GB per avviarla. La persistenza non è necessaria per l’istanza di cache perché è possibile ripristinare la cache Commerce. Vedi [Guida alla cache di Redis](https://redis.io/docs/manual/eviction/).
 
-Per ottimizzare le prestazioni, puoi anche abilitare le seguenti impostazioni per l’eliminazione asincrona. Queste impostazioni non modificano il comportamento di Redis. Vedi anche [redis news](http://antirez.com/news/93) per informazioni dettagliate sull’eliminazione asincrona.
+Per ottimizzare le prestazioni, puoi abilitare le seguenti impostazioni per l’eliminazione asincrona. Queste impostazioni non modificano il comportamento di Redis.
 
 ```ini
 lazyfree-lazy-eviction yes

@@ -1,9 +1,9 @@
 ---
 title: Gestire le code dei messaggi
 description: Scopri come gestire le code di messaggi dalla riga di comando per Adobe Commerce.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ L’esempio seguente mostra le `crontab` configurazione per utenti in esecuzione
 
 >[!INFO]
 >
->La frequenza con cui controlli le code dei messaggi dipende dalla logica di business e dalle risorse di sistema disponibili. In generale, potresti voler verificare la presenza di nuovi clienti e inviare e-mail di benvenuto con maggiore frequenza rispetto a un processo che richiede molte risorse, ad esempio l’aggiornamento del catalogo. È necessario definire `cron` programmazioni in base alle esigenze aziendali.
+>La frequenza con cui controlli le code dei messaggi può dipendere dalla logica di business e dalle risorse di sistema disponibili. In generale, potresti voler verificare la presenza di nuovi clienti e inviare e-mail di benvenuto con maggiore frequenza rispetto a un processo che richiede molte risorse, ad esempio l’aggiornamento del catalogo. È necessario definire `cron` programmazioni in base alle esigenze aziendali.
 >
 >Può essere configurato in Admin Store > Impostazioni > Configurazione > Avanzate > Sistema > Opzioni di configurazione Cron per il gruppo: consumatori.
 >

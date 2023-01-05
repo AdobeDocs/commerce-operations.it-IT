@@ -1,9 +1,9 @@
 ---
 title: Utilizzare la cache per l'archiviazione delle sessioni
 description: Scopri come utilizzare la cache per l’archiviazione delle sessioni Commerce.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Memcache è un sistema di memorizzazione in cache della memoria distribuita a scopo generale. Viene spesso utilizzato per velocizzare i siti web dinamici basati su database memorizzando nella cache dati e oggetti in RAM per ridurre il numero di volte in cui è necessario leggere un&#39;origine dati esterna (ad esempio un database o un&#39;API).
 
-Memcache fornisce una tabella hash di grandi dimensioni che può essere distribuita su più computer. Quando la tabella è piena, gli inserimenti successivi fanno sì che i dati meno recenti vengano eliminati nell’ordine meno recente utilizzato (LRU). La dimensione di questa tabella hash è spesso molto grande. (Origine: [memcached.org](http://memcached.org/))
+Memcache fornisce una tabella hash di grandi dimensioni che può essere distribuita su più computer. Quando la tabella è piena, gli inserimenti successivi fanno sì che i dati meno recenti vengano eliminati nell’ordine meno recente utilizzato (LRU). La dimensione di questa tabella hash è spesso molto grande. (Origine: [memcached.org](https://www.memcached.org/))
 
 Commerce utilizza memcache per l’archiviazione delle sessioni ma non per il caching delle pagine. Per la memorizzazione in cache delle pagine, si consiglia di [Redis](../cache/redis-pg-cache.md) o [Vernice](../cache/config-varnish.md).
 
@@ -39,7 +39,7 @@ Commerce utilizza memcache per l’archiviazione delle sessioni ma non per il ca
    ),
    ```
 
-   Memcache dispone di parametri di avvio facoltativi che esulano dall’ambito di questa guida. Puoi trovare ulteriori informazioni su di esse nella sezione [memorizzato](https://php.net/manual/en/memcached.sessions.php) documentazione, codice sorgente e registri delle modifiche.
+   Memcache dispone di parametri di avvio facoltativi che esulano dall’ambito di questa guida. Puoi trovare ulteriori informazioni su di esse nella sezione [memorizzato](https://www.php.net/manual/en/memcached.sessions.php) documentazione, codice sorgente e registri delle modifiche.
 
 1. Procedi alla sezione successiva.
 
@@ -80,5 +80,5 @@ Commerce utilizza memcache per l’archiviazione delle sessioni ma non per il ca
    STAT items:3:outofmemory 0
    STAT items:3:tailrepairs 0
    
-   [Look at the keys in more detail](http://www.darkcoding.net/software/memcached-list-all-keys/)
+   [Look at the keys in more detail](https://darkcoding.net/software/memcached-list-all-keys/)
    ```

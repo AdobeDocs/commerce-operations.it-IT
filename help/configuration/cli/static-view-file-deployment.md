@@ -1,9 +1,9 @@
 ---
 title: Distribuzione di file di visualizzazione statici
 description: Scopri come scrivere file statici nel file system Commerce durante la modalità di produzione.
-source-git-commit: 4fe6d6a76a5d4849d4f96b61b95a9a3dae7fc76a
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Nella tabella seguente sono illustrati i parametri e i valori di questo comando.
 
 | Opzione | Descrizione | Obbligatorio |
 | ------ | ----------- | --------- |
-| `<languages>` | Elenco separato da spazi di [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) codici di lingua per i quali inviare file di visualizzazione statici. (Il valore predefinito è `en_US`.)<br>Trova l&#39;elenco eseguendo: `bin/magento info:language:list` | No |
+| `<languages>` | Elenco separato da spazi di [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) codici di lingua per i quali inviare file di visualizzazione statici. (Il valore predefinito è `en_US`.)<br>Trova l&#39;elenco eseguendo: `bin/magento info:language:list` | No |
 | `--language (-l)` | Genera file solo per le lingue specificate. L&#39;impostazione predefinita, senza alcuna opzione specificata, consiste nel generare file per tutti i codici di lingua ISO-639. È possibile specificare il nome di un codice lingua alla volta. Il valore predefinito è **tutto**.<br>Ad esempio: `--language en_US --language es_ES` | No |
 | `--exclude-language` | Genera file per i codici di lingua specificati. L’impostazione predefinita, senza alcuna opzione specificata, consiste nell’escludere nulla. È possibile specificare il nome di un codice della lingua o di un elenco di codici della lingua separati da virgole. Il valore predefinito è **nessuno**. | No |
 | `--theme <theme>` | Temi per i quali distribuire contenuto statico. Il valore predefinito è **tutto**.<br>Ad esempio: `--theme Magento/blank --theme Magento/luma` | No |
