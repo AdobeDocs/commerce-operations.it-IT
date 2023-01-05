@@ -4,7 +4,7 @@ description: Scopri come configurare le impostazioni del database e delle applic
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -99,6 +99,6 @@ Vedi [Abilita archiviazione](https://experienceleague.adobe.com/docs/commerce-ad
 
 ## Informazioni aggiuntive
 
-- [Quali sono le principali differenze tra InnoDB e MYISAM](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
+- [Motori di archiviazione MySQL](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Prerequisiti per l’aggiornamento ad Adobe Commerce 2.3.5 per MariaDB](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Best practice per risolvere i problemi di prestazioni del database](../maintenance/resolve-database-performance-issues.md)

@@ -1,9 +1,9 @@
 ---
 title: Fase di manutenzione dell'implementazione
 description: Scopri le best practice di implementazione per la fase di manutenzione dei progetti Adobe Commerce.
-source-git-commit: 46c06a74f221877391196894abc1f5f217c5b073
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,7 @@ Le sezioni seguenti contengono informazioni sulle best practice relative alla fa
 - [Prestazioni frontali di controllo](frontend-performance.md)
 - [Pronti, impostati, mantieni](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [Utilizza lo strumento SWAT per garantire la sicurezza e l&#39;operabilità di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - Piano CTAG
-- Nuova relè
-- Registri
-- Spazio su disco
+- [Utilizza le notifiche New Relic e Health per monitorare le prestazioni, lo spazio su disco e i registri per i siti Adobe Commerce distribuiti sull’infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
 
 ## Gestione database
 
@@ -53,14 +51,15 @@ Le sezioni seguenti contengono informazioni sulle best practice relative alla fa
 - [Come reindicizzare](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [Best practice di configurazione per gli indici &#x200B;](indexer-configuration.md)
 - [Best practice di configurazione per l’elaborazione degli ordini](order-processing-configuration.md)
-- Piano CTAG
-- Pianifica l&#39;upsizing per gli aumenti di traffico pianificati durante promozioni o festività - Contenuto del deck CTAG
+
+<!-- Asset not yet integrated from CTAG deck:
+- Plan upsizing for planned traffic increases during promotions or holidays -->
 
 ## Configurazione
 
 - [Pianificazione degli aggiornamenti dell&#39;amministratore sui siti di produzione](scheduling-admin-updates-in-production.md)
 
-- Pianificazione della stagione di punta e dei periodi promozionali (upsizing) - Contenuto del deck CTAG
+<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)-->
 
 ## Correzioni di bug
 

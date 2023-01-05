@@ -4,7 +4,7 @@ description: Gestisci e ottimizza le prestazioni del sito seguendo le best pract
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -38,6 +38,10 @@ Per massimizzare le prestazioni del sito, segui queste best practice per l’ind
 - Rivedi la configurazione dell&#39;indice.
 - Imposta gli indici su _[!UICONTROL Update on Schedule]_per siti di grandi dimensioni e siti con aggiornamenti frequenti e traffico pesante. Vedi [Gestione dell&#39;indice](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 - Segui [best practice sulle prestazioni](../../../performance/configuration.md) per la gestione degli indici.
+
+>[!IMPORTANT]
+>
+>La [!DNL Customer Grid] può essere reindicizzato solo utilizzando [!UICONTROL Update on Save] opzione . Questo indice non supporta il `Update by Schedule` opzione .
 
 ## Informazioni aggiuntive
 

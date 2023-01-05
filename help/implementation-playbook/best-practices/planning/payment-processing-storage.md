@@ -4,9 +4,9 @@ description: Scopri come elaborare e archiviare in modo sicuro i dettagli di pag
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 124eaf6e7b465b320d3d7e6a3694130edb93f187
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Best practice per l&#39;elaborazione e lo storage dei pagamenti
 
-Uno dei principi fondamentali per mantenere [Conformità PCI](https://nam04.safelinks.protection.outlook.com/GetUrlReputation) sta adottando una strategia per elaborare e memorizzare correttamente i pagamenti con carta di credito.
+Uno dei principi fondamentali per mantenere [Conformità PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) sta adottando una strategia per elaborare e memorizzare correttamente i pagamenti con carta di credito.
 
 Archiviare i dati dei titolari di carte in Adobe Commerce è **severamente vietato** e fare ciò potrebbe essere una violazione dei tuoi obblighi come commerciante ai sensi dello standard PCI-DSS (Payment Card Industry Data Security Standard). Maggiori informazioni sul nostro modello di responsabilità condivisa e le linee guida per gli obblighi dei commercianti sono disponibili nella [guida alla responsabilità condivisa per Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) nell&#39;Adobe Trust Center.
 
@@ -31,7 +31,7 @@ Segui le best practice riportate di seguito per assicurarti di elaborare corrett
 
 Se è necessario archiviare i dati del titolare della carta, i dati del titolare della carta devono essere conservati al di fuori di Adobe Commerce con garanzie di archiviazione. L&#39;esistenza di garanzie di archiviazione per i dettagli di pagamento, come i dati dei titolari della carta di credito, aiuta a prevenire frodi e altri potenziali problemi di sicurezza. In linea con gli altri standard PCI, avere delle protezioni è la prima linea di difesa. Alcuni metodi preferiti per migliorare la protezione dei dati memorizzati includono crittografia, troncamento, tokenizzazione, hash unidirezionale e mascheramento.
 
-Le protezioni per le chiavi crittografiche sono vitali per le strategie di protezione dei dati. È fondamentale che i custodi competenti e affidabili controllino queste chiavi.
+Le protezioni per le chiavi crittografiche sono vitali per le strategie di protezione dei dati. È fondamentale avere custodi esperti e affidabili che sorvegliano queste chiavi.
 
 Infine, un numero di account primario (PAN) deve essere illeggibile durante l&#39;archiviazione (ad esempio, mascherato come XXX). Ciò include lo storage portatile e i supporti di backup come unità flash, unità USB e dischi rigidi esterni, e persino i registri di controllo.
 

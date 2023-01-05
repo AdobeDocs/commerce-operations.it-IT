@@ -4,7 +4,7 @@ description: Scopri come mantenere aggiornato lo stack di tecnologia dell’infr
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Aggiorna i servizi e i componenti utilizzati da Adobe Commerce prima che raggiun
 
 I clienti che utilizzano i piani Starter possono self-service su aggiornamenti di servizi. Fai riferimento a [Cambia versione del servizio](https://devdocs.magento.com/cloud/project/services.html#change-service-version) per informazioni dettagliate su come eseguire questa operazione.
 
-I clienti su piani Pro possono solo self-service su aggiornamenti di servizi nel loro [Ambiente di integrazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md). Per gli aggiornamenti dei servizi su Produzione, devi [inviare un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) richiesta dell&#39;aggiornamento.
+I clienti su piani Pro possono solo self-service su aggiornamenti di servizi nel loro [Ambiente di integrazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Per gli aggiornamenti dei servizi su Produzione, devi [inviare un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) richiesta dell&#39;aggiornamento.
 
 >[!WARNING]
 >
