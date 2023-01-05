@@ -1,9 +1,9 @@
 ---
 title: Guida all’installazione
 description: "Utilizzare questa guida per l'installazione [!DNL Site-Wide Analysis Tool] per il tuo sito web"
-source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
+source-git-commit: 0c27d4cf5854161e14a482912941cd144ca654f7
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
@@ -381,27 +381,27 @@ Se invece hai configurato l&#39;agente per l&#39;esecuzione con cron, utilizza l
    rm -rf swat-agent
    ```
 
-## Ignorare il file di configurazione
+## Risoluzione dei problemi
 
-È possibile sostituire i valori specificati nel file di configurazione durante l&#39;installazione utilizzando le variabili di ambiente. In questo modo viene mantenuta la compatibilità con le versioni precedenti dell’agente. Per i valori consigliati, consultare la tabella seguente:
+### Chiavi di accesso non analizzate correttamente
 
-| PROPRIETÀ | DESCRIZIONE |
-| --- | --- |
-| `SWAT_AGENT_APP_NAME` | Nome dell&#39;azienda o del sito fornito al momento dell&#39;installazione dell&#39;agente |
-| `SWAT_AGENT_APPLICATION_PHP_PATH` | Percorso dell’interprete CLI PHP (di solito `/usr/bin/php`) |
-| `SWAT_AGENT_APPLICATION_MAGENTO_PATH` | Directory principale in cui è installata l’applicazione Adobe Commerce (in genere `/var/www/html`) |
-| `SWAT_AGENT_APPLICATION_DB_USER` | Utente del database per l&#39;installazione di Adobe Commerce |
-| `SWAT_AGENT_APPLICATION_DB_PASSWORD` | Password del database per l&#39;utente specificato per l&#39;installazione di Adobe Commerce |
-| `SWAT_AGENT_APPLICATION_DB_HOST` | Host di database per l&#39;installazione di Adobe Commerce |
-| `SWAT_AGENT_APPLICATION_DB_NAME` | Nome del database per l&#39;installazione di Adobe Commerce |
-| `SWAT_AGENT_APPLICATION_DB_PORT` | Porta di database per l&#39;installazione di Adobe Commerce (in genere `3306`) |
-| `SWAT_AGENT_APPLICATION_DB_TABLE_PREFIX` | Prefisso tabella per l’installazione di Adobe Commerce (valore predefinito: `empty`) |
-| `SWAT_AGENT_APPLICATION_DB_REPLICATED` | Se l’installazione di Adobe Commerce dispone di un’istanza di database secondaria (in genere `false`) |
-| `SWAT_AGENT_APPLICATION_CHECK_REGISTRY_PATH` | Directory temporanea per l&#39;agente (in genere `/usr/local/swat-agent/tmp`) |
-| `SWAT_AGENT_RUN_CHECKS_ON_START` | Raccogliere dati sulla prima esecuzione (in genere `1`) |
-| `SWAT_AGENT_LOG_LEVEL` | Determina gli eventi registrati in base alla gravità (in genere `error`) |
-| `SWAT_AGENT_ENABLE_AUTO_UPGRADE` | Abilita l&#39;aggiornamento automatico (riavvio richiesto dopo un aggiornamento; l&#39;agente non controlla gli aggiornamenti se l&#39;opzione è disabilitata; `true` o `false`) |
-| `SWAT_AGENT_IS_SANDBOX=false` | Abilitazione della modalità sandbox per utilizzare l’agente nell’ambiente di gestione temporanea |
+Se le chiavi di accesso non vengono analizzate correttamente, potresti visualizzare il seguente errore:
+
+```terminal
+ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
+FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+```
+
+Per risolvere questo errore, prova i seguenti passaggi:
+
+1. Fai una [installazione scripting](#scripted), salva l&#39;output e controlla l&#39;output per eventuali errori.
+1. Esamina il generato `config.yaml` e verifica che il percorso della tua istanza Commerce e PHP sia corretto.
+1. Assicurati che l&#39;utente che esegue la pianificazione sia nel [proprietario del file system](../../installation/prerequisites/file-system/overview.md) Unix group o è lo stesso utente del proprietario del file system.
+1. Assicurati che il [Connettore Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) le chiavi sono installate correttamente e prova ad aggiornarle per collegare l&#39;estensione al sistema.
+1. [Disinstalla](#uninstall) l&#39;agente dopo aver aggiornato le chiavi e reinstallato utilizzando [installare uno script](#scripted).
+1. Esegui la pianificazione e controlla se ricevi ancora lo stesso errore.
+1. Se ricevi ancora lo stesso errore, aumenta il livello di log nel `config.yaml` per eseguire il debug e aprire un ticket di supporto.
+
 
 >[!INFO]
 >
