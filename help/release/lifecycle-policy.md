@@ -4,7 +4,7 @@ description: Scopri le date chiave per la fine del supporto software per le vers
 source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 

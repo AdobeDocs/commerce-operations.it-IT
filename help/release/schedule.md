@@ -1,10 +1,10 @@
 ---
 title: Pianificazione del rilascio
-description: Scopri quando sono pianificate versioni specifiche di Adobe Commerce per la versione beta, pre-release e la disponibilità generale.
+description: Scopri quando sono pianificate le versioni specifiche di Adobe Commerce per la versione beta, pre-release e la disponibilità generale.
 source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
