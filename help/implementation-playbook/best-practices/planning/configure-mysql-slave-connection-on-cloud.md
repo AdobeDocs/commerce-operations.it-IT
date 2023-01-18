@@ -4,15 +4,18 @@ description: Scopri come configurare la connessione slave MySQL per i siti Adobe
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: 0866272e02a7a223d35e14842bfb42a827e0468d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 
 # Procedure consigliate per configurare la connessione slave MySQL
+
+>!![NOTE]
+Siamo consapevoli che questo articolo contiene ancora termini software standard del settore che alcuni possono trovare razzisti, sessisti o oppressivi e che possono far sentire il lettore ferito, traumatizzato o non benvenuto. Adobe sta lavorando per rimuovere questi termini dal codice, dalla documentazione e dalle esperienze utente.
 
 Per i siti Adobe Commerce distribuiti sull&#39;architettura cloud Infrastructure Pro, Adobe consiglia di abilitare la connessione slave MYSQL per il database per impostazione predefinita.
 
@@ -24,7 +27,7 @@ Adobe Commerce su infrastruttura cloud, architettura Pro
 
 ## Configurare la connessione slave MySQL
 
-La configurazione per la connessione slave MYSQL è impostata dal [MYSQL_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) distribuire la variabile nel file di configurazione dell’ambiente dell’infrastruttura cloud di Adobe Commerce, `.magento.env.yaml`. Imposta questa variabile su `true` per abilitare la connessione.
+La configurazione per la connessione slave MYSQL è impostata dal [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) distribuire la variabile nel file di configurazione dell’ambiente dell’infrastruttura cloud di Adobe Commerce, `.magento.env.yaml`. Imposta questa variabile su `true` per abilitare la connessione.
 
 Per abilitare la connessione slave MySQL:
 
@@ -45,6 +48,3 @@ Per abilitare la connessione slave MySQL:
 - [Variabili di ambiente](https://devdocs.magento.com/cloud/env/variables-intro.html)
 - [Collo di bottiglia a carico elevato di MySQL in Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.html?lang=en)
 - [Best practice per il database per Adobe Commerce sull’infrastruttura cloud](database-on-cloud.md)
-
->!![NOTE]
-Siamo consapevoli che questo articolo può ancora contenere termini software standard del settore che alcuni possono trovare razzisti, sessisti o oppressivi e che possono far sentire il lettore ferito, traumatizzato o non benvenuto. Adobe sta lavorando per rimuovere questi termini dal codice, dalla documentazione e dalle esperienze utente.
