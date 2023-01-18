@@ -4,7 +4,7 @@ description: Scopri come configurare la connessione slave MySQL per i siti Adobe
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 0866272e02a7a223d35e14842bfb42a827e0468d
+source-git-commit: a5a6e25e3fd303e07a07110b85aa1d460f53cd54
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -14,8 +14,9 @@ ht-degree: 0%
 
 # Procedure consigliate per configurare la connessione slave MySQL
 
->!![NOTE]
-Siamo consapevoli che questo articolo contiene ancora termini software standard del settore che alcuni possono trovare razzisti, sessisti o oppressivi e che possono far sentire il lettore ferito, traumatizzato o non benvenuto. Adobe sta lavorando per rimuovere questi termini dal codice, dalla documentazione e dalle esperienze utente.
+>[!NOTE]
+>
+>Siamo consapevoli che questo articolo contiene ancora termini software standard del settore che alcuni possono trovare razzisti, sessisti o oppressivi e che possono far sentire il lettore ferito, traumatizzato o non benvenuto. Adobe sta lavorando per rimuovere questi termini dal codice, dalla documentazione e dalle esperienze utente.
 
 Per i siti Adobe Commerce distribuiti sull&#39;architettura cloud Infrastructure Pro, Adobe consiglia di abilitare la connessione slave MYSQL per il database per impostazione predefinita.
 
