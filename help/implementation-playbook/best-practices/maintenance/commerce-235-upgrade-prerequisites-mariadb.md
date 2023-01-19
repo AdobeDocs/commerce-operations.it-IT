@@ -4,7 +4,7 @@ description: Scopri come preparare il database Adobe Commerce per l’aggiorname
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 071e88c6a07df0f74b6d4b09cce858710c9332cc
+source-git-commit: 35efea20181b112e97bfae803c8d0168cfc88dfc
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Quando pianifichi e pianifichi la conversione, tieni presente le seguenti consid
 1. Identifica le tabelle da convertire dal formato compatto a quello dinamico.
 
    ```mysql
-   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
    ```
 
 1. Determina le dimensioni della tabella in modo da poter pianificare il lavoro di conversione.
