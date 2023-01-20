@@ -1,5 +1,5 @@
 ---
-source-git-commit: a2747c1d62c4a22179c1177e7c4e76e028f66cea
+source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 9%
@@ -54,7 +54,7 @@ Il supporto per la linea di rilascio 2.4.4-2.4.6 termina il 25 novembre 2024.
 
 ## 2.4.0-2.4.3
 
-Il supporto per la linea di rilascio 2.4.0-2.4.3 termina il 28 novembre 2022.
+Il supporto per la versione 2.4.0-2.4.3 è terminato il 28 novembre 2022.
 
 <table>
   <thead>
@@ -133,7 +133,7 @@ Il supporto per la linea di rilascio 2.4.0-2.4.3 termina il 28 novembre 2022.
   </tbody>
 </table>
 
-## 2.3.
+## 2.3
 
 Il supporto per la versione 2.3 è terminato l’8 settembre 2022.
 
@@ -256,7 +256,7 @@ Il supporto per la versione 2.3 è terminato l’8 settembre 2022.
   </tbody>
 </table>
 
-## 2.2.
+## 2.2
 
 Il supporto per la versione 2.2 è terminato il 1° dicembre 2019.
 
@@ -396,7 +396,7 @@ Il supporto per la linea di rilascio 2.1 è terminato il 30 giugno 2019.
         <td>14 settembre 2017</td>
     </tr>
     <tr>
-        <td>2.1.8.</td>
+        <td>2.1.8</td>
         <td>9 agosto 2017</td>
     </tr>
     <tr>
@@ -408,7 +408,7 @@ Il supporto per la linea di rilascio 2.1 è terminato il 30 giugno 2019.
         <td>11 aprile 2017</td>
     </tr>
     <tr>
-        <td>2.1.5.</td>
+        <td>2.1.5</td>
         <td>21 febbraio 2017</td>
     </tr>
     <tr>
@@ -416,15 +416,15 @@ Il supporto per la linea di rilascio 2.1 è terminato il 30 giugno 2019.
         <td>7 febbraio 2017</td>
     </tr>
     <tr>
-        <td>2.1.3.</td>
+        <td>2.1.3</td>
         <td>14 dicembre 2016</td>
     </tr>
     <tr>
-        <td>2.1.2.</td>
+        <td>2.1.2</td>
         <td>12 ottobre 2016</td>
     </tr>
     <tr>
-        <td>2.1.1.</td>
+        <td>2.1.1</td>
         <td>30 agosto 2016</td>
     </tr>
     <tr>
@@ -434,7 +434,7 @@ Il supporto per la linea di rilascio 2.1 è terminato il 30 giugno 2019.
   </tbody>
 </table>
 
-## 2,0
+## 2.0
 
 Il supporto per la versione 2.0 è terminato il 31 marzo 2018.
 
@@ -451,7 +451,7 @@ Il supporto per la versione 2.0 è terminato il 31 marzo 2018.
         <td>27 febbraio 2018</td>
     </tr>
     <tr>
-        <td>2,0,17</td>
+        <td>2.0.17</td>
         <td>7 novembre 2017</td>
     </tr>
     <tr>
@@ -483,15 +483,15 @@ Il supporto per la versione 2.0 è terminato il 31 marzo 2018.
         <td>12 ottobre 2016</td>
     </tr>
     <tr>
-        <td>2,0,9</td>
+        <td>2.0.9</td>
         <td>10 agosto 2016</td>
     </tr>
     <tr>
-        <td>2,0,8</td>
+        <td>2.0.8</td>
         <td>19 luglio 2016</td>
     </tr>
     <tr>
-        <td>2,0,7</td>
+        <td>2.0.7</td>
         <td>24 maggio 2016</td>
     </tr>
     <tr>
@@ -499,7 +499,7 @@ Il supporto per la versione 2.0 è terminato il 31 marzo 2018.
         <td>17 maggio 2016</td>
     </tr>
     <tr>
-        <td>2,0,5</td>
+        <td>2.0.5</td>
         <td>28 aprile 2016</td>
     </tr>
     <tr>
@@ -507,7 +507,7 @@ Il supporto per la versione 2.0 è terminato il 31 marzo 2018.
         <td>31 marzo 2016</td>
     </tr>
     <tr>
-        <td>2,0,3</td>
+        <td>2.0.3</td>
         <td>30 marzo 2016</td>
     </tr>
     <tr>
@@ -519,7 +519,7 @@ Il supporto per la versione 2.0 è terminato il 31 marzo 2018.
         <td>20 gennaio 2016</td>
     </tr>
     <tr>
-        <td>2,0,0</td>
+        <td>2.0.0</td>
         <td>17 novembre 2015</td>
     </tr><!-- patch_releases -->
   </tbody>
