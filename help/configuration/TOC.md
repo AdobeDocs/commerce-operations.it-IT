@@ -1,9 +1,9 @@
 ---
 user-guide-title: Guida alla configurazione
 user-guide-description: Configura le funzioni e i servizi dell’applicazione Adobe Commerce o Magenti Open Source.
-source-git-commit: 31f9ff21a848e248d2c3da7cfb3cfc8bfd5785be
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -145,3 +145,4 @@ ht-degree: 0%
       + [Verificare il database diviso](storage/multi-master-verify.md)
       + [Replica del database](storage/multi-master-replication.md)
       + [Ripristino del database singolo](storage/revert-split-database.md)
++ [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
