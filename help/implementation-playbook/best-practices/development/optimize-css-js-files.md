@@ -4,9 +4,9 @@ description: Scopri come unire e minimizzare i file CSS e JavaScript (JS) per i 
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 052aa61e2bb59ae11b90b5401ce6426dec9c6046
+source-git-commit: e6e8a2d7ef059265dbcbfcd6be117828a639f6d6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -93,3 +93,5 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 - [Impostazioni di ottimizzazione lato client](../../../performance/configuration.md#client-side-optimization-settings)
 - [Guida utente: Ottimizzazione dei file di risorse](https://docs.magento.com/user-guide/system/file-optimization.html)
 - [Guida per gli sviluppatori front-end: Unione CSS, minimizzazione e prestazioni del sito](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [Bundling JavaScript avanzato](../../../performance/advanced-js-bundling.md)
+
