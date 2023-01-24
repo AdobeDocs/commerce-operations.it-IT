@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;home;argomenti popolari
 title: Pagina principale
 description: Sfoglia un indice della documentazione del prodotto operativo Adobe Commerce.
-source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
+source-git-commit: a1e74edb232b818dea9a2723bf506fac49acbd9f
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 2%
+source-wordcount: '109'
+ht-degree: 3%
 
 ---
 
@@ -119,12 +119,4 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
 </tr>
 </table>
 
-## Novità
-
-Scopri la nuova documentazione e gli aggiornamenti significativi alla documentazione esistente.
-
-| Modifica | Tipo |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| È stato aggiunto un nuovo argomento che descrive tutti [consumatori della coda dei messaggi](../configuration/queues/consumers.md). | Nuovo |
-| Aggiunto [istruzioni](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) per la conversione del formato di archiviazione delle tabelle di database per Adobe Commerce su progetti cloud Infrastructure Pro. | Aggiornato |
-| Aggiunto [istruzioni](../configuration/remote-storage/cloud-support.md) per abilitare lo storage remoto per Adobe Commerce nei progetti di infrastruttura cloud. | Aggiornato |
+{{$include /help/_includes/templated/whats-new.md}}

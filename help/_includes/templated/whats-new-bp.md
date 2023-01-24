@@ -1,5 +1,5 @@
 ---
-source-git-commit: dc4d524769492ca43991d556647aceab1d8b7e26
+source-git-commit: a1e74edb232b818dea9a2723bf506fac49acbd9f
 workflow-type: tm+mt
 source-wordcount: '30'
 ht-degree: 0%
@@ -7,4 +7,4 @@ ht-degree: 0%
 ---
 # Novità nelle best practice
 
-Questa sezione contiene modifiche recenti che riteniamo desideri conoscere. Sono esclusi dall’elenco tutti gli aggiornamenti minori, ad esempio la modifica della copia.<!-- year_group -->
+Questa pagina contiene modifiche recenti che riteniamo desideri conoscere. Sono esclusi dall’elenco tutti gli aggiornamenti minori, ad esempio la modifica della copia.<!-- year_group -->

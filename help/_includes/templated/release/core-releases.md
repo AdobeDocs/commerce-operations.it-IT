@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0de0d58da491b3fac449c16a6a7328bbaffbcd38
+source-git-commit: b990a133f69191e8164ef1da16238938cd535183
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '559'
+ht-degree: 19%
 
 ---
 # Versioni rilasciate
@@ -121,7 +121,7 @@ Il supporto per la versione 2.4.0-2.4.3 è terminato il 28 novembre 2022.
     <tr>
         <td>2.4.3</td>
         <td>10 agosto 2021</td>
-          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/commerce-2-4-3.html">Note sulla versione di Adobe Commerce</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-3.html">Note sulla versione di Adobe Commerce</a><br>
           </td>
     </tr>
     <tr>
