@@ -4,9 +4,9 @@ description: Scopri come migliorare le prestazioni del caching utilizzando l’i
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 12de523cc7ea1486c894d54efe6944d92d87ded0
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,11 @@ Per maggiori dettagli, vedi [Distribuisci variabili > `REDIS_BACKEND`](https://d
 >[!NOTE]
 >
 > Controlla la versione di ece-tools installata nel tuo ambiente cloud locale dalla riga di comando utilizzando `composer show magento/ece-tools` comando. Se necessario, [aggiorna la versione di ece-tools](https://devdocs.magento.com/cloud/project/ece-tools-update.html).
+
+>[!WARNING]
+>
+>Do _not_ configurare una connessione slave Redis per progetti di infrastruttura cloud con un [architettura scalata](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Questo causa errori di connessione Redis. Vedi [guida alla configurazione di Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in _Commerce sull’infrastruttura cloud_ guida.
+
 
 ### Configurazione per le distribuzioni locali
 
