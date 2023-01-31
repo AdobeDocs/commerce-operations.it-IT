@@ -1,7 +1,7 @@
 ---
 title: Archiviazione remota per Commerce su infrastruttura cloud
 description: Consulta le indicazioni su come configurare l’archiviazione remota per Adobe Commerce sull’infrastruttura cloud.
-source-git-commit: 2080950852e3c4e6da556733e56f68e0e8005530
+source-git-commit: 4c89ef65ffb559ad4ad3f3fc45bd73079fbacd1b
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -78,7 +78,7 @@ In alternativa, è possibile utilizzare l&#39;interfaccia Web di Project per agg
 
 1. Fai clic su **Aggiungi variabile**.
 
-1. In _Nome_ campo, immettere `env:REMOTE_STORAGE`
+1. In _Nome_ campo, immettere `REMOTE_STORAGE`
 
 1. In _Valore_ aggiungi la configurazione JSON.
 
