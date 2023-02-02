@@ -1,10 +1,10 @@
 ---
 title: Distribuzione di singole macchine
 description: Scopri come distribuire gli aggiornamenti a Commerce su un server di produzione utilizzando la riga di comando.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ Questo argomento fornisce istruzioni per la distribuzione degli aggiornamenti a 
 
 ## Ipotesi
 
-- È stato installato Commerce utilizzando [Compositore].
+- È stato installato Commerce utilizzando [Compositore](../../installation/composer.md).
 - Stai applicando direttamente gli aggiornamenti al server.
 
 >[!WARNING]
@@ -24,7 +24,7 @@ Questo argomento fornisce istruzioni per la distribuzione degli aggiornamenti a 
 
 ## Passaggi di distribuzione
 
-1. Accedi al tuo server di produzione come, o passa a [proprietario del file system][file-owner].
+1. Accedi al tuo server di produzione come, o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 
 1. Cambia directory nella directory di base Commerce:
 
@@ -92,5 +92,3 @@ Questo argomento fornisce istruzioni per la distribuzione degli aggiornamenti a 
 <!-- link definitions -->
 
 [install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
-[composer]: ../../installation/composer.md
-[file-owner]: ../../installation/prerequisites/file-system/overview.md

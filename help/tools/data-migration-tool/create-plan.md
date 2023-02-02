@@ -1,9 +1,9 @@
 ---
 title: Creare un piano di migrazione dei dati
 description: Segui questi passaggi per creare un piano di migrazione dei dati per garantire il successo dell’aggiornamento dal Magento 1 al Magento 2.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ La migrazione è un momento perfetto per apportare cambiamenti seri e preparare 
 
 * Impostare un sistema hardware di Magento 2 utilizzando la topologia e il design che almeno corrispondono al sistema di Magento 1 esistente
 
-* Installa Magento 2.x (con tutti i moduli di questa versione) e [!DNL Data Migration Tool] su un sistema che soddisfa le [Requisiti di sistema Magenti]
+* Installa Magento 2.x (con tutti i moduli di questa versione) e [!DNL Data Migration Tool] su un sistema che soddisfa le [requisiti di sistema](../../installation/system-requirements.md)
 
 * Apporta le modifiche personalizzate al [!DNL Data Migration Tool] nel caso in cui non sia necessario migrare alcuni dati (come pagine CMS, regole di vendita) o si desideri convertire la personalizzazione del Magento durante la migrazione. Leggi la sezione [!DNL Data Migration Tool]s [Specifiche tecniche](technical-specification.md) per comprendere meglio come funziona la migrazione dall&#39;interno
 
@@ -73,7 +73,7 @@ In questo test di migrazione, segui questi passaggi:
 
    Se alcune delle estensioni dispongono di dati da migrare, potrebbe essere necessario installare queste estensioni adattate per il Magento 2. Nel caso in cui le estensioni abbiano una struttura diversa nel database di Magento 2, utilizza i file di mappatura forniti con [!DNL Data Migration Tool].
 
-1. Reindicizza tutti gli indici Magento 2.x. Per ulteriori informazioni, consulta la sezione [Guida alla configurazione].
+1. Reindicizza tutti gli indici Magento 2.x. Per ulteriori informazioni, consulta la sezione [Gestire gli indici](../../configuration/cli/manage-indexers.md) in _Guida alla configurazione_.
 
 ## Passaggio 5: Apporta modifiche ai dati migrati (se necessario)
 
@@ -116,6 +116,5 @@ Ora che il tuo sito Magento 2 è aggiornato con il Magento 1 e funziona normalme
 1. Lo store Magento 2 è ora pronto per l&#39;uso. Tu e i tuoi clienti potete riprendere tutte le attività.
 
 <!-- LINK ADDRESSES -->
-[Requisiti di sistema Magenti]: ../../installation/system-requirements.md
+
 [Commerce Marketplace]: https://marketplace.magento.com
-[Guida alla configurazione]: ../../configuration/cli/manage-indexers.md

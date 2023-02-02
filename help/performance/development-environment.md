@@ -1,9 +1,9 @@
 ---
 title: Ambiente di sviluppo Recommendations
 description: Scopri i consigli sulle prestazioni per la configurazione dell’ambiente di sviluppo Adobe Commerce locale o Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ Questa pagina fornisce consigli per gli ambienti di sviluppo Commerce.
 
 ## Pulisci le cache invece di disattivarle
 
-Molti sviluppatori tendono a disabilitare tutte le cache sulle loro istanze di sviluppatori. Si consiglia di pulire solo le cache, senza disabilitare tutte le cache. [!DNL Commerce] esegue in modo più efficiente quando [pulire le cache] invece di disattivarli completamente. La maggior parte dei tipi di cache viene raramente invalidata durante lo sviluppo.
+Molti sviluppatori tendono a disabilitare tutte le cache sulle loro istanze di sviluppatori. Si consiglia di pulire solo le cache, senza disabilitare tutte le cache. [!DNL Commerce] esegue in modo più efficiente quando [pulire le cache](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) invece di disattivarli completamente. La maggior parte dei tipi di cache viene raramente invalidata durante lo sviluppo.
 
-Se [disattivare le cache], consigliamo solo di disabilitare le cache di pagine e blocchi nelle istanze di sviluppo. Ricorda di abilitare tutte le cache durante il test.
+Se [disattivare le cache](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), consigliamo solo di disabilitare le cache di pagine e blocchi nelle istanze di sviluppo. Ricorda di abilitare tutte le cache durante il test.
 
 ## Comandi da evitare in modalità di sviluppo
 
@@ -44,8 +44,3 @@ In modalità di sviluppo, non eseguire comandi per la compilazione, la generazio
 ## Tempo di caricamento normale della pagina in una macchina virtuale
 
 Se si sviluppa su una VM e il caricamento di una pagina di Magento richiede più di 2 secondi, rivedere le impostazioni dell&#39;ambiente.
-
-<!-- Link definitions -->
-
-[pulire le cache]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
-[disattivare le cache]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types
