@@ -62,7 +62,7 @@ La mappatura dei file viene discussa più dettagliatamente in [[!DNL Data Migrat
 
 ![Flusso di migrazione](../../assets/data-migration/migration_flow.png)
 
-[[!DNL Data Migration Tool] Specifiche tecniche]: technical-Specification.md
+[[!DNL Data Migration Tool] Specifiche tecniche]: technical-specification.md
 
 Siamo lieti che tu stia considerando di passare dalla piattaforma commerciale #1 del mondo — Magento 1.x — alla piattaforma del futuro, Magento 2. Siamo entusiasti di condividere i dettagli di questo processo, che chiamiamo migrazione.
 
