@@ -1,11 +1,10 @@
 ---
 title: Security.txt
 description: Scopri come fornire informazioni per aiutare i ricercatori sulla sicurezza a segnalare le vulnerabilità.
-contributor_name: Kalpesh Mehta from Corra
-contributor_link: https://partners.magento.com/portal/details/partner/id/70/
-source-git-commit: 27c3914540a0574fa4ff58df50d5cd2c71fb6670
+badge: label="Contributo di Kalpesh Mehta da Corra" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="Kalpesh Mehta"
+source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

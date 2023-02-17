@@ -1,11 +1,10 @@
 ---
 title: riferimento system.xml
 description: Scopri come il file XML di sistema gestisce la configurazione dell’applicazione Commerce.
-contributor_name: David Lambauer
-contributor_link: https://github.com/DavidLambauer
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+badge: label="Contributo di David Lambauer" type="Informativo" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
+source-git-commit: d7f32690b25c61fa31a99e6d02f9f1025de2bb99
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2685'
 ht-degree: 0%
 
 ---
@@ -385,7 +384,7 @@ Sono disponibili le seguenti regole di convalida:
 | `integer` | Consente un numero non decimale positivo o negativo. |
 | `ipv4` | Consente un indirizzo IP v4 valido. |
 | `ipv6` | Consente un indirizzo IP v6 valido. |
-| `letters-only` | Consente solo le lettere. Ad esempio, `abcABC`. |
+| `letters-only` | Consente solo le lettere. Ad esempio: `abcABC`. |
 | `letters-with-basic-punc` | Consente solo lettere o punteggiatura.<br>Deve passare la seguente espressione: `/^[a-z\-.,()\u0027\u0022\s]+$/i`. |
 | `mobileUK` | Consente un numero di telefono cellulare (UK). |
 | `no-marginal-whitespace` | Disabilita gli spazi bianchi all&#39;inizio o alla fine del valore. |
@@ -394,7 +393,7 @@ Sono disponibili le seguenti regole di convalida:
 | `phoneUS` | Consente un numero di telefono (US). |
 | `required-entry` | Disattiva un valore vuoto (convalida equivalente come `validate-no-empty`).<br>Messaggio di errore convalida: &quot;Questo campo è obbligatorio.&quot; |
 | `time` | Consente un tempo valido in formato 24 ore, compreso tra 00:00 e 23:59. Esempio `15`, `15:05` o `15:05:48`. |
-| `time12h` | Consente un orario valido in formato 12 ore, tra le 12:00 e le 11:59:17:00. Ad esempio `3 am`, `11:30 pm`, `02:15:00 pm`. |
+| `time12h` | Consente un orario valido in formato 12 ore, tra le 12:00 e le 11:59:17:00. Esempio `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | Consente 7 o più caratteri, sia numerici che alfabetici. |
 | `validate-alphanum-with-spaces` | Consente l’uso solo di lettere (a-z o A-Z), numeri (0-9) o spazi. |
 | `validate-clean-url` | Consente un URL valido. Ad esempio: `https://www.example.com` o `www.example.com`. |
