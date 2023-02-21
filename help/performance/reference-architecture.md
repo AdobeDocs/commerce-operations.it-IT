@@ -1,7 +1,7 @@
 ---
 title: Architettura di riferimento
 description: Esaminare i diagrammi dell’architettura di riferimento consigliata per le distribuzioni Adobe Commerce e Magenti Open Source.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Le sezioni seguenti forniscono raccomandazioni e considerazioni per ogni sezione
 * Utilizzare un database slave per abilitare il ripristino rapido e i backup dei dati
 * I siti a traffico ridotto possono memorizzare le immagini nel database
 
-### Ricerca
+### Ricerca {#search-heading}
 
 * Ottimizza il numero di istanze in base al traffico di ricerca
 

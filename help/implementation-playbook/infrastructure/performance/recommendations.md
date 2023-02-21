@@ -2,7 +2,7 @@
 title: Recommendations di ottimizzazione delle prestazioni
 description: Ottimizza le prestazioni dell’implementazione Adobe Commerce seguendo questi consigli.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -105,7 +105,7 @@ Prima di ogni versione di produzione, si consiglia sempre di eseguire un test de
 >
 > Adobe Commerce sull&#39;infrastruttura cloud applica già tutte le ottimizzazioni dell&#39;infrastruttura e dell&#39;architettura di cui sopra, ad eccezione della ricerca DNS perché è fuori ambito.
 
-### Ricerca
+### Ricerca {#search-heading}
 
 A partire dalla versione 2.4 di Adobe Commerce è necessario un Elasticsearch, ma è anche consigliabile abilitarlo per le versioni precedenti alla versione 2.4.
 
