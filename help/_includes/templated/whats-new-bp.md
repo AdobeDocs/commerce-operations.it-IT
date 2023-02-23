@@ -1,7 +1,7 @@
 ---
-source-git-commit: fbd09a0e4bfe267bec36800ce0e7e4cccb5bd8f3
+source-git-commit: 449c6952a742b717c4dacb8bb6c89d8e6f12b5b0
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## Novità nelle best practice di implementazione
 
 Questa pagina contiene le modifiche recenti che riteniamo desideri visualizzare. Sono esclusi dall’elenco tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 10 febbraio 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Origine</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiornata la descrizione dei requisiti minimi per eseguire un <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html">aggiornamento del database</a> e aggiunto un’ulteriore risorsa correlata sull’aggiornamento di MariaDB.</p>
+</td>
+      <td>best practice</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0efeef6f3d5276f42e4a67fe55f6108a399f45fb">0efeef</a> (commettere)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 30 gennaio 2023
 
