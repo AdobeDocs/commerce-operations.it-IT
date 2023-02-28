@@ -1,10 +1,10 @@
 ---
 user-guide-title: Guide operative
-user-guide-description: Scopri gli aspetti operativi della manutenzione dell’applicazione Adobe Commerce o Magento Open Source.
+user-guide-description: Scopri gli aspetti operativi della manutenzione dell’applicazione Adobe Commerce o Magenti Open Source.
 source-git-commit: 035c60de7234e15c0ace3ffbf60aa771587c432c
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 17%
+ht-degree: 0%
 
 ---
 
