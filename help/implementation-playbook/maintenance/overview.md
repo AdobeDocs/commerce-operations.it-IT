@@ -1,36 +1,36 @@
 ---
 title: Panoramica sulla manutenzione e sul supporto
-description: Mantieni e supporta correttamente la nuova implementazione Adobe Commerce avviata.
+description: Manutenzione e supporto appropriati per l’implementazione di Adobe Commerce appena avviata.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
-source-git-commit: 514426d622ba47b8a7e517368132c86c9236b63a
+source-git-commit: 10d65d3453e260e105c1e90acbdfe678ca15c4e3
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
 # Panoramica sulla manutenzione e sul supporto
 
-I consumatori hanno già a disposizione più opzioni che mai. Senza la mancanza di marchi che competono per l&#39;attenzione, non puoi dare ai consumatori alcun motivo per guardare i tuoi concorrenti. Come abbiamo visto, lealtà e pazienza con i consumatori sono magre. Non ci vuole molto per loro per rinunciare al tuo marchio e avere una scarsa esperienza di e-commerce è un modo facile per loro di rinunciare.
+I consumatori hanno già a portata di mano più opzioni che mai. Senza una carenza di marchi in lizza per l&#39;attenzione, non puoi dare ai consumatori nessuna ragione per guardare i tuoi concorrenti. Come abbiamo visto, la lealtà e la pazienza con i consumatori sono magre. Non ci vuole molto perché abbandonino il tuo marchio e avere una scarsa esperienza di e-commerce è un modo semplice per loro di arrendersi.
 
-Ciò porta a due punti complementari. Il primo è che il lancio di un nuovo sito di e-commerce non significa che si debba poi procedere. Il tasso di cambiamento nel marketing e con le esigenze dei consumatori è troppo elevato per far evolvere costantemente i marchi per tenersi al passo. Il che ci porta al secondo punto. Se il tuo supporto e-commerce è disponibile solo per correggere qualcosa quando si rompe, allora sarà impossibile soddisfare le crescenti aspettative dei consumatori. In breve, il supporto di e-commerce non dovrebbe solo mantenere il tuo sito funzionante, ma dovrebbe portare avanti il tuo marchio. Questa sezione ti aiuterà a far avanzare il brand dopo il lancio del sito.
+Questo porta a due punti complementari. Il primo è che il lancio di un nuovo sito di e-commerce non significa che si arriva ad andare avanti. Il ritmo di cambiamento nel marketing e nelle esigenze dei consumatori è troppo elevato per consentire ai marchi di evolversi costantemente per tenere il passo. Il che ci porta al secondo punto. Se il supporto per l&#39;e-commerce è disponibile solo per correggere qualcosa quando si rompe, allora sarà impossibile soddisfare le crescenti aspettative dei consumatori. In breve, il supporto per l’e-commerce non dovrebbe solo mantenere il funzionamento del sito, ma dovrebbe far progredire il tuo marchio. Questa sezione ti aiuterà a iniziare a portare avanti il tuo marchio dopo il lancio del sito.
 
 ## Fase di transizione
 
-L’impostazione del supporto di produzione durante la fase di transizione di un progetto è uno dei fattori di successo più critici per un’azienda di e-commerce. Una volta completata l&#39;implementazione e avviato il sito, il team di supporto di produzione deve essere pronto e attrezzato per assumere le attività di supporto. La pratica comune consiste nel ridurre il team di sviluppo durante la fase di transizione e creare un team più piccolo per il supporto.
+L’impostazione del supporto alla produzione durante la fase di transizione di un progetto è uno dei fattori di successo più critici per un’impresa commerciale. Una volta completata l’implementazione e reso disponibile il sito, il team di supporto alla produzione deve essere pronto e attrezzato per assumere le attività di supporto. La pratica abituale è quella di organizzare il team di sviluppo durante la fase di transizione e di creare un team più piccolo per il supporto.
 
-Il trasferimento delle conoscenze avviene nel corso dell’intero progetto e un approccio di transizione di successo avviene in parallelo con la consegna. Inoltre, le guide utente e un wiki tecnologico sono strumenti importanti che consentono al team di svolgere workshop durante le fasi del progetto.
+Il trasferimento delle conoscenze avviene nel corso dell’intero progetto e un approccio di transizione di successo si verifica in parallelo alla consegna. Inoltre, le guide utente e un wiki sulla tecnologia sono strumenti importanti che consentono al team di partecipare a workshop durante le fasi del progetto.
 
-Il diagramma seguente mostra le fasi e le attività che verrebbero incluse in un esito positivo della transizione:
+Il diagramma seguente mostra le fasi e le attività da includere in un risultato di transizione di successo:
 
-![Diagramma che mostra le fasi del processo di transizione](../../assets/playbooks/transition-diagram.svg)
+![Schema delle fasi del processo di transizione](../../assets/playbooks/transition-diagram.svg)
 
 >[!NOTE]
 >
-> È importante creare una lista di controllo della transizione che aiuti i project manager a completare le attività necessarie per impostare con successo il team di supporto post-produzione. Questa transizione deve far parte del piano generale del progetto e le attività devono essere incluse nel programma.
+> È importante creare un elenco di controllo della transizione che aiuti i project manager a completare le attività necessarie per la corretta configurazione del team di supporto post-produzione. Questa transizione dovrebbe far parte del piano generale del progetto e le attività devono essere incluse nella programmazione.
 
-Identificare il giusto modello di supporto per la tua azienda per continuare a migliorare e ottimizzare la tua piattaforma, e la pratica commerciale nel suo complesso, è un passo fondamentale per mantenere tutto il lavoro duro che è stato fatto durante il processo di implementazione. Con un piano di supporto continuo completo in atto, il tuo sito di e-commerce è in grado di soddisfare le aspettative dei tuoi clienti e continuare a raggiungere i tuoi obiettivi.
+Identificare il modello di supporto appropriato per l’azienda al fine di continuare a migliorare e ottimizzare la piattaforma e le pratiche commerciali nel loro complesso è un passaggio fondamentale per mantenere tutto il duro lavoro svolto durante il processo di implementazione. Grazie a un piano di supporto continuo completo, il sito di e-commerce può soddisfare le aspettative dei clienti e continuare a raggiungere i tuoi obiettivi.
 
 Durante l’implementazione di Adobe Commerce, è fondamentale considerare cosa includere nella strategia di manutenzione e supporto.
-Il supporto degli esperti è incluso in una licenza Adobe Commerce. Per ulteriori informazioni sul supporto di esperti e sui piani di supporto di Adobe, consulta [Piani di supporto per Adobi](https://business.adobe.com/customers/consulting-services/premier-support.html).
-Oltre ai piani di supporto per Adobe, sono presenti termini di supporto Magento legacy. Per comprendere quali servizi di supporto sono applicabili al cliente, fai riferimento al contratto per vedere quale contratto di assistenza hai stipulato o parlare con il tuo Customer Success Manager (CSM).
+La licenza di Adobe Commerce prevede l’assistenza di esperti. Per ulteriori informazioni sul supporto di esperti e sui piani di supporto per Adobi, consulta [Piani di supporto Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
+Oltre ai piani di supporto Adobe, sono disponibili i precedenti termini di supporto del Magento. Per capire quali servizi di supporto sono applicabili al cliente, consulta il tuo contratto per vedere quale contratto di supporto hai o rivolgiti al team del tuo account di Adobe.
