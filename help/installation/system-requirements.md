@@ -1,9 +1,9 @@
 ---
 title: Requisiti di sistema
 description: Utilizza questo riferimento per identificare le dipendenze software richieste che sono state testate con Adobe Commerce e le versioni di Magento Open Source.
-source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
+source-git-commit: 61a477ec6118e4a228ddbb956e613fa3bec9c91c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -11,94 +11,94 @@ ht-degree: 0%
 
 # Requisiti di sistema
 
-Questa tabella mostra le versioni delle dipendenze software di terze parti testate da Adobe con specifiche versioni di Adobe Commerce e Magento Open Source. L&#39;Adobe supporta solo la combinazione dei requisiti di sistema descritti nella tabella seguente.
+Questa tabella mostra le versioni delle dipendenze software di terze parti testate da Adobe con specifiche versioni di Adobe Commerce e Magenti Open Source. Adobe supporta solo la combinazione di requisiti di sistema descritti nella tabella seguente.
 
-Ad esempio, 2.4.5 è completamente testato con MariaDB 10.4. L&#39;Adobe consiglia di eseguire l&#39;aggiornamento a MariaDB 10.4 prima di eseguire l&#39;aggiornamento alla versione 2.4.5.
+Ad esempio, 2.4.5 è completamente testato con MariaDB 10.4. L’Adobe consiglia di eseguire l’aggiornamento a MariaDB 10.4 prima di eseguire l’aggiornamento a 2.4.5.
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
 ## Varie
 
-Questa sezione descrive il supporto e la compatibilità per tutti gli altri tipi di software richiesti e opzionali.
+Questa sezione descrive il supporto e la compatibilità per tutti gli altri tipi di software richiesto e opzionale.
 
 >[!NOTE]
 >
->I seguenti requisiti si applicano all’ultima versione delle patch 2.4.x di Adobe Commerce e Magenti Open Source.
+>I seguenti requisiti si applicano alla versione più recente della patch 2.4.x di Adobe Commerce e Magenti Open Source.
 
 ### Server di posta
 
-Agente di trasferimento della posta (MTA) o server SMTP
+Mail Transfer Agent (MTA) o un server SMTP
 
 ### Sistemi operativi (Linux x86-64)
 
-Distribuzione Linux, come RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian e simili. Microsoft Windows e macOS non sono supportati.
+Distribuzioni Linux, come RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian e simili. Microsoft Windows e macOS non sono supportati.
 
 ### Estensioni PHP
 
 >[!NOTE]
 >
->La [Istruzioni per l&#39;installazione di PHP](prerequisites/php-settings.md) includi un passaggio per l’installazione di queste estensioni.
+>Il [Istruzioni di installazione PHP](prerequisites/php-settings.md) includi un passaggio per installare queste estensioni.
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
-Fai riferimento a [documentazione ufficiale PHP](https://php.net/manual/en/extensions.php) per informazioni sull&#39;installazione.
+Fai riferimento a [documentazione ufficiale PHP](https://php.net/manual/en/extensions.php) per informazioni dettagliate sull&#39;installazione.
 
 ### PHP OPcache
 
-Si consiglia vivamente di verificare [PHP OPcache](https://php.net/manual/en/intro.opcache.php) è abilitato per motivi di prestazioni. OPcache è abilitata in molte distribuzioni PHP. Per verificare se è installato, consulta la nostra [Documentazione PHP](prerequisites/php-settings.md).
+È consigliabile verificare che [PHP OPcache](https://php.net/manual/en/intro.opcache.php) è abilitato per motivi di prestazioni. OPcache è abilitata in molte distribuzioni PHP. Per verificare se è installato, consulta la [Documentazione PHP](prerequisites/php-settings.md).
 
-Se è necessario installarlo separatamente, consulta la [Documentazione PHP OPcache](https://php.net/manual/en/opcache.setup.php).
+Se è necessario installarlo separatamente, vedere [Documentazione di PHP OPcache](https://php.net/manual/en/opcache.setup.php).
 
 ### Impostazioni PHP
 
-Si consiglia di configurare le impostazioni PHP in modo particolare, ad esempio `memory_limit`, che può evitare problemi comuni quando si utilizzano Adobe Commerce e Magenti Open Source.
+Si consiglia di impostare particolari impostazioni di configurazione PHP, ad esempio `memory_limit`, che può evitare problemi comuni quando si utilizzano Adobe Commerce e Magenti Open Source.
 
 Per ulteriori informazioni, consulta [Impostazioni PHP richieste](prerequisites/php-settings.md).
 
 ### PHPUnit
 
-PHPUnit (come strumento a riga di comando) 9.0.0
+PHPUnit (come strumento da riga di comando) 9.0.0
 
 ### RAM
 
-L&#39;aggiornamento delle applicazioni e delle estensioni ottenute dalla Commerce Marketplace e da altre sorgenti può richiedere fino a 2 GB di RAM. Se utilizzi un sistema con meno di 2 GB di RAM, ti consigliamo di creare un [file di swap](https://support.magento.com/hc/en-us/articles/360032980432); in caso contrario, l&#39;aggiornamento potrebbe non riuscire.
+L&#39;aggiornamento delle applicazioni e delle estensioni ottenute dalla Commerce Marketplace e da altre origini può richiedere fino a 2 GB di RAM. Se si utilizza un sistema con meno di 2 GB di RAM, si consiglia di creare un [file di scambio](https://support.magento.com/hc/en-us/articles/360032980432); in caso contrario, l’aggiornamento potrebbe non riuscire.
 
-### Dipendenze del sistema
+### Dipendenze di sistema
 
-Adobe Commerce e Magenti Open Source richiedono i seguenti strumenti di sistema per alcune operazioni:
+Per alcune operazioni, Adobe Commerce e Magenti Open Source richiedono i seguenti strumenti di sistema:
 
-- [colpo](https://www.gnu.org/software/bash/)
-- [gzip](https://www.gzip.org/)
-- [lsof](https://linux.die.net/man/8/lsof)
-- [mysql](https://www.mysql.com/)
-- [mysqldump](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)
-- [carino](https://linux.die.net/man/1/nice)
-- [php](https://www.php.net/)
-- [usato](https://www.gnu.org/software/sed/manual/sed.html)
-- [catrame](https://linux.die.net/man/1/tar)
+- [[!DNL bash]](https://www.gnu.org/software/bash/)
+- [[!DNL gzip]](https://www.gzip.org/)
+- [[!DNL lsof]](https://linux.die.net/man/8/lsof)
+- [[!DNL mysql]](https://www.mysql.com/)
+- [[!DNL mysqldump]](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)
+- [[!DNL nice]](https://linux.die.net/man/1/nice)
+- [[!DNL php]](https://www.php.net/)
+- [[!DNL sed]](https://www.gnu.org/software/sed/manual/sed.html)
+- [[!DNL tar]](https://linux.die.net/man/1/tar)
 
 ### SSL
 
-- Una valida [certificato di sicurezza](https://glossary.magento.com/security-certificate) è richiesto per HTTPS.
+- Un valore valido [certificato di sicurezza](https://glossary.magento.com/security-certificate) è obbligatorio per HTTPS.
 - I certificati SSL autofirmati non sono supportati.
 - Requisito Transport Layer Security (TLS) - PayPal e `repo.magento.com` entrambi richiedono TLS 1.2 o versione successiva.
 
 ### Browser supportati
 
-Storefront e Admin:
+Storefront e amministratore:
 
 - Microsoft Edge (versione principale più recente e precedente)
 - Firefox (versione principale più recente e precedente; qualsiasi sistema operativo)
 - Chrome (versione principale più recente e precedente; qualsiasi sistema operativo)
-- Safari (versione principale più recente e precedente; Solo macOS)
-- Safari Mobile per iPad 2, iPad Mini, iPad con display Retina (iOS 12 o versioni successive), per la vetrina desktop
-- Safari Mobile per iPhone 6 o versione successiva; iOS 12 o versioni successive, per storefront mobile
-- Chrome per dispositivi mobili (versione principale più recente e precedente) [Android 4 o successivo] per vetrina mobile)
+- Safari (versione principale più recente e precedente; solo macOS)
+- Safari Mobile per iPad 2, iPad Mini, iPad con Retina Display (iOS 12 o versione successiva), per desktop storefront
+- Safari Mobile per iPhone 6 o versione successiva; iOS 12 o versione successiva, per mobile storefront
+- Chrome per dispositivi mobili (versione principale più recente e precedente) [Android 4 o versione successiva] per vetrina mobile)
 
 ### Xdebug
 
-[php_xdebug 2.5.x](https://xdebug.org/download) o versioni successive (solo ambienti di sviluppo; può avere un effetto negativo sulle prestazioni)
+[php_xdebug 2.5.x](https://xdebug.org/download) o versione successiva (solo per ambienti di sviluppo; può avere un effetto negativo sulle prestazioni)
 
 >[!NOTE]
 >
->Esiste un problema noto con `xdebug` che possono influenzare le installazioni di Adobe Commerce o Magento Open Source o l&#39;accesso alla vetrina o all&#39;amministratore dopo l&#39;installazione. Per maggiori dettagli, vedi [Problema noto con xdebug](https://support.magento.com/hc/en-us/articles/360034242212).
+>Si è verificato un problema noto con `xdebug` che possono influenzare le installazioni di Adobe Commerce o di Magento Open Source o l’accesso alla vetrina o all’amministratore dopo l’installazione. Per ulteriori informazioni, consulta [Problema noto con xdebug](https://support.magento.com/hc/en-us/articles/360034242212).
