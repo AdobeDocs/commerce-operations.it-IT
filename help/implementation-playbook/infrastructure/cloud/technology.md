@@ -1,23 +1,23 @@
 ---
-title: Tecnologie dell'infrastruttura cloud
+title: Tecnologie per infrastrutture cloud
 description: Scopri più da vicino la raccolta di tecnologie utilizzate per Adobe Commerce sull’infrastruttura cloud.
 exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 683ce0a72aca0319ade2e4ccfd7a8e541a228156
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
 
 # Tecnologie
 
-Come accennato, Adobe Commerce sfrutta una serie di soluzioni software per supportare la piattaforma. In particolare, per quanto riguarda la produzione, abbiamo suddiviso alcune delle soluzioni e funzionalità tecniche incluse in Adobe Commerce sull&#39;infrastruttura cloud che consentono di sfruttare al meglio l&#39;ambiente di produzione.
+Come già accennato, Adobe Commerce sfrutta una serie di soluzioni software per supportare la piattaforma. In particolare, per quanto riguarda la produzione, abbiamo suddiviso alcune delle soluzioni tecniche e delle funzionalità incluse in Adobe Commerce sull’infrastruttura cloud per trarre il massimo dall’ambiente di produzione.
 
-![Diagramma che mostra la tecnologia dell’infrastruttura cloud Adobe Commerce](../../../assets/playbooks/infrastructure-technology.svg)
+![Diagramma che mostra Adobe Commerce sulla tecnologia dell’infrastruttura cloud](../../../assets/playbooks/infrastructure-technology.svg)
 
 ## Soluzioni software
 
-- **Nginx**- Server web che utilizza PHP-FPM. C&#39;è un&#39;istanza con più lavoratori.
+- **Nginx**- Server Web che utilizza PHP-FPM. Esiste un’istanza con più processi di lavoro.
 
 - **GlusterFS**- File server per la gestione di tutte le distribuzioni di file statici e la sincronizzazione con quattro installazioni di directory:
    - `var`
@@ -25,16 +25,18 @@ Come accennato, Adobe Commerce sfrutta una serie di soluzioni software per suppo
    - `pub/static`
    - `app/etc`
 
-- **Redis**- Un server per VM con un solo server attivo e gli altri due come repliche.
+- **Redis**- Un server per ogni VM con un solo server attivo e gli altri due come repliche.
 
-- **Elasticsearch**—Cerca Adobe Commerce versione 2.2.x e successive.
+- **Elasticsearch**—Cercare Adobe Commerce versione 2.2.x e successive.
 
-- **Galera**- Cluster di database con un database MySQL MariaDB per nodo con un&#39;impostazione di incremento automatico di tre ID univoci per ogni database.
+- **OpenSearch**—Cercare Adobe Commerce versione 2.4.6 e successive.
+
+- **Galera**: cluster di database con un database MySQL MariaDB per nodo con un&#39;impostazione di incremento automatico di tre per ID univoci in ogni database.
 
 ## Caratteristiche e vantaggi
 
-- Con tre istanze dedicate in un VPC, esiste un bilanciamento del carico elastico su tre aree di disponibilità o centri dati separati.
+- Con tre istanze dedicate in un VPC, è disponibile un load balancer elastico su tre aree di disponibilità o centri dati separati.
 
-- Viene fornita una maggiore resilienza rispetto agli eventi che possono causare il mancato funzionamento di una singola istanza. Ad esempio, un’interruzione di un’intera zona di disponibilità AWS o di un centro dati.
+- È disponibile una resilienza più elevata per gli eventi che possono causare il mancato funzionamento di una singola istanza. Ad esempio, un’interruzione di un’intera area di disponibilità o di un centro dati di AWS.
 
-- Riduzione del downtime pari a zero per l&#39;intero stack, inclusi web, memorizzazione in cache, ricerca e database, in meno di 15 minuti.
+- Nessuna riduzione dei tempi di inattività sull&#39;intero stack, inclusi web, caching, ricerca e database, in meno di 15 minuti.

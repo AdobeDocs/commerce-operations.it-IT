@@ -1,9 +1,9 @@
 ---
 title: Configurazione del motore di ricerca
-description: Configura un motore di ricerca con Adobe Commerce e Magenti Open Source.
-source-git-commit: 66681f06c15907a5d25e71005c27785f0745ed63
+description: Configura un motore di ricerca per le distribuzioni locali di Adobe Commerce e Magenti Open Source.
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -11,29 +11,38 @@ ht-degree: 0%
 
 # Configurazione del motore di ricerca
 
-Questa sezione illustra le impostazioni minime che è necessario scegliere per testare Elasticsearch o OpenSearch con Adobe Commerce e Magento Open Source. A partire dalle versioni 2.4.4 e 2.4.3-p2, tutti i campi etichettati **Elasticsearch** si applica anche a OpenSearch.
+Questa sezione descrive le impostazioni minime che è necessario scegliere per testare Elasticsearch o OpenSearch con distribuzioni locali di Adobe Commerce e Magenti Open Source.
 
-Per ulteriori dettagli sulla configurazione del motore di ricerca, consulta la sezione [Guida utente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
+>[!TIP]
+>
+>Nelle versioni 2.4.4 e 2.4.3-p2, tutti i campi etichettati **Elasticsearch** applicabile anche a OpenSearch.
+>Quando nella versione 2.4.6 è stato introdotto il supporto per l’Elasticsearch 8.x, sono state create nuove etichette per distinguere tra le configurazioni di Elasticsearch e OpenSearch.
 
-## Configura il motore di ricerca dall’amministratore
+Per ulteriori dettagli sulla configurazione del motore di ricerca, vedi [Guida utente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
+
+## Configurare il motore di ricerca dall’amministratore
+
+>[!TIP]
+>
+>Per istruzioni sull’aggiornamento a una nuova versione del motore di ricerca, consulta [prerequisiti per l’aggiornamento](../../upgrade/prepare/prerequisites.md).
 
 Per configurare il sistema per l&#39;utilizzo di Elasticsearch o OpenSearch:
 
 1. Accedi all’amministratore come amministratore.
-1. Fai clic su **Negozi** > Impostazioni > **Configurazione** > **Catalogo** > **Catalogo** > **Ricerca nel catalogo**.
-1. Da **Motore di ricerca** selezionare la versione corrispondente del motore di ricerca Se si utilizza OpenSearch, è necessario selezionare Elasticsearch7.
+1. Clic **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
+1. Dalla sezione **[!UICONTROL Search Engine]** selezionare la versione corrispondente del motore di ricerca.
 
-   Nella tabella seguente sono elencate le opzioni di configurazione necessarie per configurare e verificare la connessione con Commerce.
-A meno che non siano state modificate le impostazioni del server del motore di ricerca, le impostazioni predefinite funzioneranno. Passa al passaggio successivo.
+   Nella tabella seguente sono elencate le opzioni necessarie per configurare e testare la connessione con Commerce. A meno che non siano state modificate le impostazioni del server del motore di ricerca, le impostazioni predefinite dovrebbero funzionare. Passa al passaggio successivo.
 
    | Opzione | Descrizione |
    |--- |--- |
-   | **Nome host del server Elasticsearch** | Immettere il nome host completo o l&#39;indirizzo IP del computer che esegue Elasticsearch o OpenSearch.<br>Adobe Commerce sull’infrastruttura cloud: Ottieni questo valore dal tuo sistema di integrazione. |
-   | **Porta server Elasticsearch** | Immettere la porta proxy del server Web. Il valore predefinito è 9200<br>Adobe Commerce sull’infrastruttura cloud: Ottieni questo valore dal tuo sistema di integrazione. |
-   | **Prefisso indice Elasticsearch** | Immettere il prefisso dell&#39;indice del motore di ricerca. Se utilizzi una singola istanza per più di un’installazione Commerce (ambienti di staging e produzione), devi specificare un prefisso univoco per ogni installazione. In caso contrario, è possibile utilizzare il prefisso predefinito magento2. |
-   | **Abilita autenticazione HTTP Elasticsearch** | Fai clic su **Sì** solo se hai abilitato l’autenticazione per il server del motore di ricerca. In tal caso, fornisci un nome utente e una password nei campi forniti. |
+   | **[!UICONTROL Server Hostname]** | Immettere il nome host completo o l&#39;indirizzo IP del computer che esegue Elasticsearch o OpenSearch.<br>Adobe Commerce su infrastruttura cloud: ottieni questo valore dal tuo sistema di integrazione. |
+   | **[!UICONTROL Server Port]** | Immettere la porta proxy del server Web. Il valore predefinito è 9200<br>Adobe Commerce su infrastruttura cloud: ottieni questo valore dal tuo sistema di integrazione. |
+   | **[!UICONTROL Index Prefix]** | Immetti il prefisso dell’indice del motore di ricerca. Se utilizzi una singola istanza per più installazioni di Commerce (ambienti di staging e produzione), devi specificare un prefisso univoco per ciascuna installazione. In caso contrario, è possibile utilizzare il prefisso predefinito magento2. |
+   | **[!UICONTROL Enable HTTP Auth]** | Clic **[!UICONTROL Yes]** solo se è stata abilitata l&#39;autenticazione per il server del motore di ricerca. In tal caso, fornisci un nome utente e una password nei campi forniti. |
+   | **[!UICONTROL Server Timeout]** | Immettere il tempo di attesa (in secondi) durante il tentativo di stabilire una connessione al server Elasticsearch o OpenSearch. |
 
-1. Fai clic su **Prova connessione**.
+1. Clic **[!UICONTROL Test Connection]**.
 
    Risposta di esempio:
 
@@ -42,20 +51,20 @@ A meno che non siano state modificate le impostazioni del server del motore di r
    Continua con:
 
    - [Configurare Apache per il motore di ricerca](../../installation/prerequisites/search-engine/configure-apache.md)
-   - [Configurare l’allegato per il motore di ricerca](../../installation/prerequisites/search-engine/configure-nginx.md)
+   - [Configurare nginx per il motore di ricerca](../../installation/prerequisites/search-engine/configure-nginx.md)
 
-   o vedi:
+   oppure vedi:
 
-   ![fallito](../../assets/configuration/elastic_test-fail.png)
+   ![non riuscito](../../assets/configuration/elastic_test-fail.png)
 
-In tal caso, prova quanto segue:
+In tal caso, provare a effettuare le seguenti operazioni:
 
-- Assicurati che il server del motore di ricerca sia in esecuzione.
-- Se il server si trova su un host diverso da Commerce, accedi al server Commerce ed effettua il ping dell’host del motore di ricerca. Risolvere i problemi di connettività di rete e testare nuovamente la connessione.
-- Esaminare la finestra del comando in cui è stato avviato Elasticsearch o OpenSearch per individuare tracce ed eccezioni di stack. Prima di continuare, è necessario risolverli. In particolare, assicurati di aver avviato il motore di ricerca come utente con `root` privilegi.
-- Assicurati che [Firewall UNIX e SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) sono entrambi disabilitati o impostano regole per consentire al motore di ricerca e a Commerce di comunicare tra loro.
-- Verifica il valore del **Nome host del server Elasticsearch** campo . Assicurati che il server sia disponibile. È invece possibile provare l&#39;indirizzo IP del server.
-- Utilizza la `netstat -an | grep <listen-port>` per verificare che la porta specificata nel **Porta server Elasticsearch** campo non utilizzato da un altro processo.
+- Verificare che il server del motore di ricerca sia in esecuzione.
+- Se il server si trova su un host diverso da Commerce, accedi al server Commerce ed esegui il ping dell’host del motore di ricerca. Risolvi i problemi di connettività di rete e verifica di nuovo la connessione.
+- Esaminare la finestra di comando in cui è stato avviato Elasticsearch o OpenSearch per individuare tracce ed eccezioni dello stack. È necessario risolverli prima di continuare. In particolare, assicurati di aver avviato il motore di ricerca come utente con `root` privilegi.
+- Assicurati che [Firewall UNIX e SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) sono entrambi disabilitati oppure imposta regole per consentire al motore di ricerca e a Commerce di comunicare tra loro.
+- Verifica il valore di **[!UICONTROL Server Hostname]** campo. Verificare che il server sia disponibile. È possibile provare l&#39;indirizzo IP del server.
+- Utilizza il `netstat -an | grep <listen-port>` per verificare che la porta specificata nella **[!UICONTROL Server Port]** non è utilizzato da un altro processo.
 
    Ad esempio, per verificare se il motore di ricerca è in esecuzione sulla porta predefinita, utilizzare il comando seguente:
 
@@ -63,21 +72,21 @@ In tal caso, prova quanto segue:
    netstat -an | grep 9200
    ```
 
-   Se è in esecuzione sulla porta 9200, viene visualizzato in modo simile al seguente:
+   Se è in esecuzione sulla porta 9200, viene visualizzato come segue:
 
    ```terminal
    `tcp        0      0 :::9200            :::-         LISTEN`
    ```
 
-## Reindicizzazione della ricerca nel catalogo e aggiornamento della cache a pagina intera
+## Reindicizza la ricerca nel catalogo e aggiorna la cache dell’intera pagina
 
-Dopo aver modificato la configurazione del motore di ricerca, è necessario reindicizzare l&#39;indice di ricerca del catalogo e aggiornare la cache della pagina intera utilizzando l&#39;amministratore o la riga di comando.
+Dopo aver modificato la configurazione del motore di ricerca, è necessario reindicizzare l’indice di ricerca del catalogo e aggiornare la cache dell’intera pagina utilizzando la riga di comando o di amministrazione.
 
-Per aggiornare la cache utilizzando l’amministratore:
+Per aggiornare la cache utilizzando l’Admin:
 
-1. In Admin, fai clic su **Sistema** > **Gestione cache**.
-1. Seleziona la casella di controllo accanto a **Cache pagina**.
-1. Da **Azioni** elenco in alto a destra, fai clic su **Aggiorna**.
+1. In Amministratore, fai clic su **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+1. Seleziona la casella di controllo accanto a **[!UICONTROL Page Cache]**.
+1. Dalla sezione **[!UICONTROL Actions]** in alto a destra, fai clic su **Aggiorna**.
 
    ![gestione cache](../../assets/configuration/refresh-cache.png)
 
@@ -85,24 +94,24 @@ Per pulire la cache utilizzando la riga di comando: [`bin/magento cache:clean`](
 
 Per reindicizzare utilizzando la riga di comando:
 
-1. Accedi al tuo server Commerce come o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
-1. Immettere uno dei seguenti comandi:
+1. Accedi al server Commerce come, o passa a, il [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+1. Immettete uno dei seguenti comandi:
 
-   Immettere il comando seguente per reindicizzare solo l&#39;indice di ricerca del catalogo:
+   Immetti il seguente comando per reindicizzare solo l’indice di ricerca del catalogo:
 
    ```bash
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
-   Immetti il seguente comando per reindicizzare tutti gli indici:
+   Immetti il comando seguente per reindicizzare tutti gli indicizzatori:
 
    ```bash
    bin/magento indexer:reindex
    ```
 
-1. Attendi il completamento della reindicizzazione.
+1. Attendere il completamento della reindicizzazione.
 
    >[!INFO]
    >
-   >A differenza della cache, gli indici vengono aggiornati da un lavoro cron. Assicurati [cron abilitato](../cli/configure-cron-jobs.md) prima di iniziare a utilizzare il motore di ricerca.
+   >A differenza della cache, gli indicizzatori vengono aggiornati da un processo cron. Assicurati che [cron abilitato](../cli/configure-cron-jobs.md) prima di iniziare a utilizzare il motore di ricerca.
 

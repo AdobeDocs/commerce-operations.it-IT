@@ -1,27 +1,27 @@
 ---
-title: Prerequisiti per l’installazione in locale
-description: Ulteriori informazioni sulle dipendenze software necessarie per le installazioni on-premise di Adobe Commerce e Magento Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+title: Prerequisiti per l'installazione locale
+description: Ulteriori informazioni sulle dipendenze software necessarie per le installazioni on-premise di Adobe Commerce e Magenti Open Source.
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 1%
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
 
 
-# Prerequisiti per l’installazione in locale
+# Prerequisiti per l&#39;installazione locale
 
 Prima di installare Adobe Commerce o Magenti Open Source, è necessario effettuare le seguenti operazioni:
 
-* Imposta uno o più host che soddisfano i requisiti [requisiti di sistema](../system-requirements.md).
-* Se si impostano più nodi Web con bilanciamento del carico, impostare e testare tale parte del sistema _prima_ installare l&#39;applicazione.
-* Assicurati di poter eseguire il backup dell&#39;intero sistema in vari punti durante l&#39;installazione, in modo da poterlo riportare in caso di problemi.
+* Configurare uno o più host che soddisfino i requisiti [requisiti di sistema](../system-requirements.md).
+* Se stai impostando più di un nodo web con bilanciamento del carico, imposta e verifica quella parte del sistema _prima di_ installare l&#39;applicazione.
+* Assicurarsi di poter eseguire il backup dell&#39;intero sistema in vari punti durante l&#39;installazione in modo da poterlo ripristinare in caso di problemi.
 
 >[!NOTE]
 >
->Presupponiamo che tu stia installando Adobe Commerce o il Magento Open Source in un **ambiente di sviluppo**, che l&#39;utente root abbia accesso al computer, **e** che la macchina non deve essere altamente sicura. Se si sta configurando un computer più sicuro, è consigliabile consultare un amministratore di rete per ulteriori informazioni.
+>Supponiamo che tu stia installando Adobe Commerce o il Magento Open Source in un **ambiente di sviluppo**, di disporre dell&#39;accesso utente root al computer, **e** che la macchina non deve essere altamente sicura. Se si sta configurando un computer più sicuro, si consiglia di consultare un amministratore di rete per ulteriore assistenza.
 
-Si consiglia vivamente di aggiornare e aggiornare il software del sistema operativo. Questi aggiornamenti possono fornire correzioni di sicurezza e software che potrebbero impedire problemi futuri. Non sa cosa significa tutto questo? Consulta il nostro [pagina di panoramica dell’installazione](../overview.md).
+Si consiglia vivamente di aggiornare e aggiornare il software del sistema operativo. Questi aggiornamenti possono fornire correzioni software e di sicurezza che potrebbero evitare problemi futuri. Non sapete cosa significa tutto questo? Consulta la nostra [pagina panoramica dell’installazione](../overview.md).
 
 Immetti i seguenti comandi come utente con `root` privilegi:
 
@@ -45,9 +45,9 @@ Immetti i seguenti comandi come utente con `root` privilegi:
    yum -y upgrade
    ```
 
-## Controllo prerequisito
+## Verifica prerequisiti
 
-Per verificare la presenza di prerequisiti nel sistema, immetti i seguenti comandi:
+Per verificare la presenza di prerequisiti nel sistema, immettete i seguenti comandi:
 
 ### Apache
 
@@ -55,7 +55,7 @@ CentOS: `httpd -v`
 
 Ubuntu: `apache2 -v`
 
-Adobe Commerce e Magenti Open Source supportano Apache versione 2.4 come indicato dal seguente risultato:
+Adobe Commerce e il Magento Open Source supportano Apache versione 2.4 come indica il seguente risultato:
 
 ```terminal
 Server version: Apache/2.4.0 (Unix)
@@ -66,7 +66,7 @@ Per installare o aggiornare Apache, vedi [Apache](web-server/apache.md).
 
 ### PHP
 
-Vedi [requisiti di sistema](../system-requirements.md) per le versioni supportate di PHP e [PHP] per i requisiti PHP.
+Consulta [requisiti di sistema](../system-requirements.md) per le versioni supportate di PHP e [PHP] per i requisiti PHP.
 
 ### MySQL
 
@@ -80,7 +80,7 @@ Ad esempio:
 mysql -u magento -p
 ```
 
-Verificare di disporre della versione corretta di MySQL per la versione di Adobe Commerce o del Magento Open Source che si sta installando ([controlla qui per le versioni supportate](../system-requirements.md). Il risultato seguente indica la versione in esecuzione.)
+Verificare di disporre della versione corretta di MySQL per la versione di Adobe Commerce o del Magento Open Source che si sta installando ([seleziona qui per versioni supportate](../system-requirements.md). Il risultato seguente indica la versione in esecuzione.)
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -94,13 +94,21 @@ affiliates. Other names may be trademarks of their respective
 owners.
 ```
 
-Tipo `help` o `\h` per aiuto. Tipo `\c` cancellare l’istruzione di input corrente.
+Tipo `help` o `\h` per assistenza. Tipo `\c` per cancellare l&#39;istruzione di input corrente.
 
-Invio `exit` a `mysql>` richiedi l&#39;uscita.
+Invio `exit` alla `mysql>` per uscire.
 
 Per installare o aggiornare MySQL, vedere [MySQL](database/mysql.md).
 
-### Elasticsearch o OpenSearch
+### Motore di ricerca
+
+Per verificare l&#39;installazione di OpenSearch:
+
+```bash
+curl -XGET '<opensearch-hostname>:<opensearch-port>'
+```
+
+Per verificare l&#39;installazione dell&#39;Elasticsearch:
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'

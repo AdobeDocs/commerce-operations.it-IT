@@ -1,52 +1,52 @@
 ---
-title: Comprendere l'ambito dell'aggiornamento
-description: Scopri le modifiche incompatibili con le versioni precedenti in una versione che potrebbero avere un impatto sui moduli personalizzati Adobe Commerce o Magenti Open Source o sulle estensioni di terze parti.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+title: Comprendere l’ambito dell’aggiornamento
+description: Scopri le modifiche non compatibili con le versioni precedenti di una versione che potrebbero influire sui moduli personalizzati di Adobe Commerce o di Magento Open Source o sulle estensioni di terze parti.
+source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
 
 
-# Comprendere l’ambito dell’aggiornamento
+# Comprendere l&#39;ambito dell&#39;aggiornamento
 
-Consulta la sezione [note sulla versione](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) per comprendere l’ambito di una versione, inclusi miglioramenti, correzioni di bug e problemi noti che potrebbero interessare moduli di terze parti e personalizzati.
+Rivedi [note sulla versione](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) comprendere l’ambito di una versione, inclusi miglioramenti, correzioni di bug e problemi noti che potrebbero interessare moduli personalizzati e di terze parti.
 
-## Modifiche incompatibili con le versioni precedenti
+## Modifiche non compatibili con le versioni precedenti
 
-Le versioni Adobe Commerce e Magenti Open Source possono contenere modifiche incompatibili con le versioni precedenti. Consulta la documentazione sulle modifiche non compatibili con le versioni precedenti, consulta quanto segue:
+Le versioni di Adobe Commerce e di Magento Open Source possono contenere modifiche non compatibili con le versioni precedenti. Consulta la documentazione sulle modifiche non compatibili con le versioni precedenti. Vedi quanto segue:
 
-- **[Elementi principali da modificare](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**- Modifiche che hanno un impatto rilevante e richiedono spiegazioni dettagliate e istruzioni speciali per garantire il funzionamento dei moduli di terze parti.
-- **[Riferimento per la modifica secondaria](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)**- Documentazione di riferimento generata dalla base di codice che descrive modifiche minori alle classi, appartenenza API, database, iniezione di dipendenza, interfacce, layout, sistema e XSD.
+- **[Elementi di rilievo della modifica principale](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**- Modifiche che hanno un impatto notevole e richiedono una spiegazione dettagliata e istruzioni speciali per garantire che i moduli di terze parti continuino a funzionare.
+- **[Riferimento modifica minore](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)**- Documentazione di riferimento generata dalla base di codice che descrive modifiche minori a classi, appartenenza API, database, iniezione di dipendenza, interfacce, layout, sistema e XSD.
 
 ## Estensioni di terze parti
 
-La nuova politica di compatibilità di Adobe Commerce Marketplace assicura che _tutto_ le estensioni elencate sono compatibili con l’ultima versione rilasciata entro 30 giorni dalla data GA. Per questo motivo, è importante ottenere estensioni di terze parti, quando possibile, tramite Marketplace.
+I nuovi criteri di compatibilità di Adobe Commerce Marketplace garantiscono che _tutto_ Le estensioni elencate sono compatibili con l’ultima versione rilasciata entro 30 giorni dalla data GA. Per questo motivo, è importante ottenere le estensioni di terze parti, quando possibile, tramite il Marketplace.
 
 ## Moduli personalizzati
 
-Tutti i moduli personalizzati devono essere verificati rispetto alla versione di destinazione a cui si desidera effettuare l’aggiornamento. Questo è il processo più lungo e laborioso di un aggiornamento, Durante la valutazione dei moduli personalizzati, è necessario cercare le modifiche incompatibili con le versioni precedenti e conoscere nuove pratiche, come la decomposizione del controller. Per ulteriori informazioni, consulta la sezione [note sulla versione](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Inoltre, assicurati di seguire [best practice](https://developer.adobe.com/commerce/php/best-practices/extensions/) per lo sviluppo del modulo.
+Tutti i moduli personalizzati devono essere verificati rispetto alla versione di destinazione a cui stai cercando di effettuare l’aggiornamento. Si tratta del processo di aggiornamento più dispendioso in termini di tempo e risorse. Durante la valutazione dei moduli personalizzati, è necessario cercare modifiche non compatibili con le versioni precedenti e tenere conto delle nuove pratiche, ad esempio la scomposizione del controller. Per ulteriori informazioni, consulta [note sulla versione](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Inoltre, assicurati di seguire [best practice](https://developer.adobe.com/commerce/php/best-practices/extensions/) per lo sviluppo di moduli.
 
 ## [!DNL Upgrade Compatibility Tool]
 
-La [!DNL Upgrade Compatibility Tool] è uno strumento a riga di comando che analizza la tua istanza per potenziali problemi di aggiornamento. Controlla i problemi tra la versione corrente installata e la versione a cui si sta tentando di eseguire l&#39;aggiornamento.
+Il [!DNL Upgrade Compatibility Tool] è uno strumento della riga di comando che analizza l’istanza per potenziali problemi di aggiornamento. Verifica la presenza di problemi tra la versione corrente installata e la versione a cui stai tentando di effettuare l’aggiornamento.
 
-L’utilizzo di questo strumento riduce lo sforzo richiesto al team per comprendere l’ambito e l’impatto di un aggiornamento. Consente di evitare problemi di codice comuni durante l&#39;aggiornamento e fornisce indicazioni chiare su come risolvere i problemi identificati. Inoltre, aiuta a dare la priorità ai problemi più critici necessari per garantire un aggiornamento di successo, risparmiando tempo e costi durante l&#39;aggiornamento.
+L’utilizzo di questo strumento riduce lo sforzo richiesto al team per comprendere l’ambito e l’impatto di un aggiornamento. Consente di evitare i problemi di codice comuni durante l&#39;aggiornamento e fornisce indicazioni chiare su come risolvere i problemi identificati. Consente inoltre di assegnare la priorità ai problemi più critici necessari per garantire il successo dell&#39;aggiornamento, risparmiando tempo e costi.
 
-Consulta le sezioni seguenti per iniziare a utilizzare [!DNL Upgrade Compatibility Tool]. Consulta la sezione [!DNL Upgrade Compatibility Tool] [guida](../upgrade-compatibility-tool/overview.md) per ulteriori dettagli tecnici e casi di utilizzo avanzati.
+Consulta le sezioni seguenti per iniziare a utilizzare [!DNL Upgrade Compatibility Tool]. Consulta la [!DNL Upgrade Compatibility Tool] [guida](../upgrade-compatibility-tool/overview.md) per ulteriori dettagli tecnici e casi d’uso avanzati.
 
 ### Scarica lo strumento
 
-Utilizza Compositore per scaricare lo strumento. Richiede PHP 7.3 o versione successiva, almeno 2 GB di RAM, Node.js (se stai controllando la compatibilità GraphQL) e una licenza Adobe Commerce.
+Utilizza Composer per scaricare lo strumento. Richiede PHP 7.3 o versione successiva, almeno 2 GB di RAM, Node.js (se stai verificando la compatibilità con GraphQL) e una licenza Adobe Commerce.
 
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
-### Esegui lo strumento
+### Eseguire lo strumento
 
-Per analizzare la tua istanza e verificare la presenza di errori, avvisi e problemi critici:
+Per analizzare l’istanza e verificare la presenza di errori, avvisi e problemi critici:
 
 ```bash
 bin/uct upgrade:check <dir> -c <coming version> 
@@ -54,9 +54,9 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 >[!NOTE]
 >
-> La `<dir>` argomento è la directory in cui viene memorizzata la base di codice. La `-c` confronta la base di codice con la versione specificata (ad esempio, 2.4.4).
+> Il `<dir>` è la directory in cui è memorizzata la base di codice. Il `-c` confronta la base di codice con la versione specificata.
 
-Per identificare i problemi più critici che il tuo team deve risolvere:
+Per identificare i problemi più critici che il team deve risolvere:
 
 ```bash
 bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues –min-issue-level critical --vanilla-dir /path/to/vanilla/code/ /path/to/magento/app/code/Vendor/
@@ -64,23 +64,23 @@ bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues �
 
 Altre opzioni da utilizzare con questo comando sono:
 
-- `--ignore-current-version-compatibility-issues`- Elimina tutti i problemi critici noti, gli errori e gli avvisi relativi alla versione corrente. Fornisce solo errori rispetto alla versione che si sta tentando di aggiornare.
+- `--ignore-current-version-compatibility-issues`- Elimina tutti i problemi critici, gli errori e gli avvisi noti relativi alla versione corrente. Vengono visualizzati solo errori relativi alla versione che si sta tentando di aggiornare.
 
-- `--min-issue-level`: ti consente di impostare il livello minimo di problema per dare priorità solo ai problemi più importanti con l’aggiornamento. Le opzioni sono avvisi, errori e critiche in ordine crescente di gravità.
+- `--min-issue-level`- Consente di impostare il livello di problema minimo per assegnare la priorità solo ai problemi più importanti con l&#39;aggiornamento. Le opzioni sono avvertenza, errore e critico in ordine crescente di gravità.
 
 - `-m | [=MODULE-PATH]`- Se si desidera analizzare solo un determinato fornitore, modulo o directory, è possibile specificare anche il percorso come opzione.
 
-- `--vanilla-dir`- Consente di controllare il codice di base per qualsiasi implementazione non standard di funzionalità o personalizzazioni. E&#39; importante che queste vengano ripulite in anticipo. Un&#39;istanza di vaniglia della tua versione viene scaricata automaticamente come riferimento.
+- `--vanilla-dir`- Consente di controllare il codice di base per qualsiasi implementazione non standard di funzioni o personalizzazioni. È importante che queste vengano pulite in anticipo. Un’istanza &quot;vanilla&quot; della tua versione viene scaricata automaticamente come riferimento.
 
    >[!NOTE]
    >
-   > Questo può essere fatto anche con il `core:code:changes` nello strumento).
+   > Questa operazione può essere eseguita anche con `core:code:changes` nello strumento).
 
-### Analizzare l&#39;output
+### Analizzare l’output
 
-La [!DNL Upgrade Compatibility Tool] esporta un file JSON che identifica il codice o i moduli interessati, la gravità e una descrizione del problema per ogni problema riscontrato. Inoltre, genera un rapporto di riepilogo con un punteggio di complessità, che consente al tuo team di comprendere più o meno ciò che serve per eseguire l’aggiornamento alla versione più recente. Più basso è il punteggio di complessità, più facile sarà eseguire l&#39;aggiornamento.
+Il [!DNL Upgrade Compatibility Tool] esporta un file JSON che identifica il codice o i moduli interessati, la gravità e una descrizione del problema per ogni problema riscontrato. Inoltre, genera un rapporto di riepilogo con un punteggio di complessità, che consente al team di comprendere approssimativamente ciò che serve per effettuare l’aggiornamento alla versione più recente. Più basso è il punteggio di complessità, più facile sarà eseguire l&#39;aggiornamento.
 
-Il seguente output mostra un esempio di rapporto di riepilogo:
+L’output seguente mostra un esempio di rapporto di riepilogo:
 
 ```console
  ------------------------ --------
@@ -101,14 +101,14 @@ Il seguente output mostra un esempio di rapporto di riepilogo:
  ------------------------ --------
 ```
 
-### Suggerimenti
+### Suggerimenti e consigli
 
-Tutti i problemi identificati dallo strumento sono elencati nel rapporto con codici di errore specifici. Utilizza la [riferimento a un messaggio di errore](../upgrade-compatibility-tool/error-messages.md) per ottenere ulteriori dettagli su ogni problema. In Adobe sono inoltre disponibili suggerimenti per correggere ogni tipo di problema in modo da poter pianificare i passaggi per l’aggiornamento.
+Tutti i problemi identificati dallo strumento sono elencati nel rapporto con codici di errore specifici. Utilizza il [riferimento messaggio di errore](../upgrade-compatibility-tool/error-messages.md) per ottenere ulteriori dettagli su ciascun problema. In Adobe vengono inoltre forniti suggerimenti per la risoluzione di ogni tipo di problema, in modo da poter pianificare i passaggi di correzione.
 
-Utilizza il rapporto per stimare il tempo necessario per aggiornare il codice per l&#39;aggiornamento. In base all’esperienza, puoi stimare lo sforzo necessario per effettuare l’aggiornamento in base al numero totale di problemi identificati e alla gravità dei problemi. Poiché si tratta di uno strumento a riga di comando, puoi incorporarlo nelle suite di test e di controllo del codice automatizzati e utilizzare l’output JSON per generare i rapporti.
+Utilizza il rapporto per stimare lo sforzo necessario per aggiornare il codice per l’aggiornamento. In base all’esperienza, puoi stimare lo sforzo necessario per eseguire l’aggiornamento in base al numero totale di problemi identificati e alla gravità dei problemi. Poiché si tratta di uno strumento da riga di comando, puoi incorporarlo nelle suite di test automatizzati e di controllo del codice e utilizzare l’output JSON per generare i rapporti.
 
-È consigliabile salvare i risultati di ogni progetto di aggiornamento in modo da poter confrontare i risultati futuri dell’aggiornamento con i risultati precedenti. Con un utilizzo continuo, inizierai a sviluppare un buon senso del livello di impegno necessario per eseguire l’aggiornamento alla versione successiva, semplicemente dal rapporto di riepilogo fornito dallo strumento.
+È consigliabile salvare i risultati di ogni progetto di aggiornamento in modo da poter confrontare i risultati futuri dell’aggiornamento con quelli precedenti. Con l’utilizzo continuo, inizierai a sviluppare una buona percezione del livello di impegno necessario per l’aggiornamento alla versione successiva solo dal rapporto di riepilogo fornito dallo strumento.
 
-Inoltre, consigliamo di eseguire regolarmente lo strumento mentre lavori all’aggiornamento per avere una visibilità sull’avanzamento. Il numero di problemi dovrebbe diminuire man mano che li correggi. Questo aiuta anche il tuo team a decidere l&#39;approccio migliore per distribuire il lavoro.
+È inoltre consigliabile eseguire regolarmente lo strumento durante l’aggiornamento per avere visibilità sull’avanzamento. Il numero di problemi dovrebbe diminuire man mano che vengono risolti. Questo aiuta anche il tuo team a decidere l’approccio migliore per distribuire il lavoro.
 
-La [!DNL Upgrade Compatibility Tool] continua a essere migliorato con le versioni future e includerà funzioni come gli autofix per aiutarti a risolvere i problemi il più rapidamente possibile. Gli ultimi miglioramenti rilasciati nel gennaio 2022 includono test di compatibilità PHP 8.1 e funzionalità di visualizzazione HTML che consentono di identificare rapidamente le aree che potrebbero richiedere più tempo per effettuare l&#39;aggiornamento.
+Il [!DNL Upgrade Compatibility Tool] continua a essere migliorato e le versioni future includeranno funzioni quali correzioni automatiche per aiutarti a risolvere i problemi il più rapidamente possibile. Gli ultimi miglioramenti rilasciati a gennaio 2022 includono test di compatibilità PHP 8.1 e funzionalità di visualizzazione HTML che consentono di identificare rapidamente le aree che potrebbero richiedere più lavoro per l’aggiornamento.

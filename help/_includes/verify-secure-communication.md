@@ -1,20 +1,20 @@
 ---
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 1%
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
-# Verifica la comunicazione protetta
+# Verificare che la comunicazione sia sicura
 
-Questa sezione illustra due modi per verificare il funzionamento dell’autenticazione HTTP Basic:
+In questa sezione vengono descritti due modi per verificare il funzionamento dell&#39;autenticazione HTTP Basic:
 
-* Utilizzo di un `curl` per ottenere lo stato del cluster, è necessario immettere un nome utente e una password
-* Configurazione dell’autenticazione HTTP Basic nell’amministratore
+* Utilizzo di un `curl` comando per verificare è necessario immettere un nome utente e una password per ottenere lo stato del cluster
+* Configurazione dell’autenticazione HTTP Basic in Admin
 
 ## Utilizza un `curl` comando per verificare lo stato del cluster
 
-Immetti il seguente comando:
+Immetti il comando seguente:
 
 ```bash
 curl -i http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
@@ -55,7 +55,7 @@ Ad esempio:
 curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/health
 ```
 
-Questa volta il comando ha esito positivo con un messaggio simile al seguente:
+Questa volta il comando ha esito positivo e viene visualizzato un messaggio simile al seguente:
 
 ```terminal
 HTTP/1.1 200 OK
@@ -66,10 +66,10 @@ Connection: keep-alive
 {"cluster_name":"elasticsearch","status":"yellow","timed_out":false,"number_of_nodes":1,"number_of_data_nodes":1,"active_primary_shards":5,"active_shards":5,"relocating_shards":0,"initializing_shards":0,"unassigned_shards":5,"delayed_unassigned_shards":0,"number_of_pending_tasks":0,"number_of_in_flight_fetch":0,"task_max_waiting_in_queue_millis":0,"active_shards_percent_as_number":50.0}
 ```
 
-## Configurare l’autenticazione HTTP Basic nell’amministratore
+## Configurare l’autenticazione HTTP Basic in Admin
 
-Esegui le stesse attività descritte in [Configurazione del motore di ricerca](../configuration/search/configure-search-engine.md) *eccetto* click **[!UICONTROL Yes]** dal **[!UICONTROL Enable Elasticsearch HTTP Auth]** inserisci nome utente e password nei campi forniti.
+Eseguire le stesse attività descritte in [Configurazione del motore di ricerca](../configuration/search/configure-search-engine.md) *eccetto* click **[!UICONTROL Yes]** dal **[!UICONTROL Enable HTTP Auth]** e inserisci il tuo nome utente e la tua password nei campi forniti.
 
-Fai clic su **[!UICONTROL Test Connection]** per assicurarsi che funzioni, quindi fai clic su **[!UICONTROL Save Config]**.
+Clic **[!UICONTROL Test Connection]** per verificare che funzioni, quindi fare clic su **[!UICONTROL Save Config]**.
 
-È necessario svuotare la cache del Magento e reindicizzarla prima di continuare.
+Prima di continuare, è necessario svuotare la cache e reindicizzare.

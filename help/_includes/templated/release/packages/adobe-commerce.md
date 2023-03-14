@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
+source-git-commit: 177f301802e1ab1d0560ee98594b8128440efa7c
 workflow-type: tm+mt
-source-wordcount: '2193'
+source-wordcount: '2378'
 ht-degree: 0%
 
 ---
@@ -19,23 +19,24 @@ ht-degree: 0%
 <!-- The edition variable contains `commerce` value from the _data/names.yml file
  -->
 
-Adobe Commerce utilizza il Compositore per gestire i pacchetti PHP.
+Adobe Commerce utilizza Composer per gestire i pacchetti PHP.
 
-La `composer.json` il file dichiara l&#39;elenco dei pacchetti, mentre il `composer.lock` memorizza un elenco completo dei pacchetti (una versione completa di ciascun pacchetto e delle relative dipendenze) utilizzati per creare un&#39;installazione di Adobe Commerce o Magento Open Source.
+Il `composer.json` file dichiara l&#39;elenco dei colli, mentre il `composer.lock` file memorizza un elenco completo dei pacchetti (una versione completa di ciascun pacchetto e delle relative dipendenze) utilizzati per creare un’installazione di Adobe Commerce o Magenti Open Source.
 
-La seguente documentazione di riferimento viene generata dal `composer.lock` e copre i pacchetti richiesti inclusi in Adobe Commerce 2.4.5.
+La seguente documentazione di riferimento è generata da `composer.lock` e riguarda i pacchetti richiesti inclusi in Adobe Commerce 2.4.6-beta2.
 
 ## Dipendenze
 
-`magento/product-enterprise-edition 2.4.5` ha le dipendenze seguenti:
+`magento/product-enterprise-edition 2.4.6-beta2` ha le seguenti dipendenze:
 
 ```config
-colinmollenhour/cache-backend-file: ~1.4.1
-colinmollenhour/cache-backend-redis: 1.14.2
-colinmollenhour/credis: 1.13.0
-colinmollenhour/php-redis-session-abstract: ~1.4.5
-composer/composer: ^1.9 || ^2.0, !=2.2.16
-elasticsearch/elasticsearch: ~7.17.0
+adobe-commerce/saas-metapackage: ~1.0
+colinmollenhour/cache-backend-file: ^1.4
+colinmollenhour/cache-backend-redis: ^1.14
+colinmollenhour/credis: ^1.13
+colinmollenhour/php-redis-session-abstract: ^1.5
+composer/composer: ^2.0, !=2.2.16
+elasticsearch/elasticsearch: ^7.17||^8.5
 ext-bcmath: *
 ext-ctype: *
 ext-curl: *
@@ -54,164 +55,175 @@ ext-spl: *
 ext-xsl: *
 ext-zip: *
 ezyang/htmlpurifier: ^4.14
-guzzlehttp/guzzle: ^7.4.2
+guzzlehttp/guzzle: ^7.5
 laminas/laminas-captcha: ^2.12
-laminas/laminas-code: ~4.5.0
-laminas/laminas-db: ^2.15.0
-laminas/laminas-dependency-plugin: ^2.2.0
-laminas/laminas-di: ^3.7.0
-laminas/laminas-escaper: ~2.10.0
-laminas/laminas-eventmanager: ^3.5.0
-laminas/laminas-feed: ^2.17.0
-laminas/laminas-http: ^2.15.0
-laminas/laminas-json: ^3.3.0
-laminas/laminas-mail: ^2.16.0
-laminas/laminas-mime: ^2.9.1
-laminas/laminas-modulemanager: ^2.11.0
-laminas/laminas-mvc: ^3.3.3
-laminas/laminas-server: ^2.11.1
-laminas/laminas-servicemanager: ^3.11.0
-laminas/laminas-soap: ^2.10.0
-laminas/laminas-stdlib: ^3.7.1
-laminas/laminas-uri: ^2.9.1
-laminas/laminas-validator: ^2.17.0
-league/flysystem: ~2.4.5
-league/flysystem-aws-s3-v3: ^2.4.3
+laminas/laminas-code: ^4.5
+laminas/laminas-db: ^2.15
+laminas/laminas-di: ^3.7
+laminas/laminas-escaper: ^2.10
+laminas/laminas-eventmanager: ^3.5
+laminas/laminas-feed: ^2.17
+laminas/laminas-file: ^2.11
+laminas/laminas-filter: ^2.17
+laminas/laminas-http: ^2.15
+laminas/laminas-i18n: ^2.17
+laminas/laminas-mail: ^2.16
+laminas/laminas-mime: ^2.9
+laminas/laminas-modulemanager: ^2.11
+laminas/laminas-mvc: ^3.3
+laminas/laminas-oauth: ^2.4
+laminas/laminas-permissions-acl: ^2.10
+laminas/laminas-server: ^2.11
+laminas/laminas-servicemanager: ^3.16
+laminas/laminas-soap: ^2.10
+laminas/laminas-stdlib: ^3.11
+laminas/laminas-uri: ^2.9
+laminas/laminas-validator: ^2.23
+league/flysystem: ^2.4
+league/flysystem-aws-s3-v3: ^2.4
 lib-libxml: *
-magento/composer: ~1.8.0
-magento/composer-dependency-version-audit-plugin: ~0.1
-magento/framework-foreign-key: 100.4.4
-magento/magento-composer-installer: >=0.3.0
-magento/magento2-ee-base: 2.4.5
-magento/module-admin-gws: 100.4.5
-magento/module-admin-gws-configurable-product: 100.4.2
-magento/module-admin-gws-staging: 100.4.2
-magento/module-advanced-catalog: 100.4.2
-magento/module-advanced-checkout: 100.4.5
-magento/module-advanced-rule: 100.4.2
-magento/module-advanced-sales-rule: 100.4.2
-magento/module-async-order: 100.4.1
-magento/module-async-order-graph-ql: 100.4.0
-magento/module-aws-s3-customer-custom-attributes: 100.4.2
-magento/module-aws-s3-gift-card-import-export: 100.4.2
-magento/module-aws-s3-scheduled-import-export: 100.4.2
-magento/module-banner: 101.2.5
-magento/module-banner-customer-segment: 100.4.3
-magento/module-banner-graph-ql: 100.4.1
-magento/module-bundle-import-export-staging: 100.4.2
-magento/module-bundle-staging: 100.4.5
-magento/module-catalog-event: 101.1.4
-magento/module-catalog-import-export-staging: 100.4.2
-magento/module-catalog-inventory-staging: 100.4.3
-magento/module-catalog-permissions: 100.4.5
-magento/module-catalog-permissions-graph-ql: 100.4.3
-magento/module-catalog-rule-staging: 100.4.5
-magento/module-catalog-staging: 100.4.5
-magento/module-catalog-staging-graph-ql: 100.4.4
-magento/module-catalog-url-rewrite-staging: 100.4.4
-magento/module-checkout-address-search: 100.4.4
-magento/module-checkout-address-search-gift-registry: 100.4.1
-magento/module-checkout-staging: 100.4.4
-magento/module-cms-staging: 100.4.5
-magento/module-configurable-product-staging: 100.4.4
-magento/module-custom-attribute-management: 100.4.4
-magento/module-customer-balance: 100.4.5
-magento/module-customer-balance-graph-ql: 100.4.2
-magento/module-customer-custom-attributes: 100.4.5
-magento/module-customer-finance: 100.4.2
-magento/module-customer-segment: 102.1.5
-magento/module-deferred-total-calculating: 100.4.0
-magento/module-downloadable-staging: 100.4.4
-magento/module-elasticsearch-catalog-permissions: 100.4.1
-magento/module-elasticsearch-catalog-permissions-graph-ql: 100.4.0
-magento/module-enterprise: 100.4.3
-magento/module-gift-card: 101.3.5
-magento/module-gift-card-account: 101.2.5
-magento/module-gift-card-account-graph-ql: 100.4.3
-magento/module-gift-card-graph-ql: 100.4.5
-magento/module-gift-card-import-export: 100.4.2
-magento/module-gift-card-staging: 100.4.2
-magento/module-gift-message-staging: 100.4.2
-magento/module-gift-registry: 101.2.5
-magento/module-gift-registry-graph-ql: 100.4.1
-magento/module-gift-wrapping: 101.2.4
-magento/module-gift-wrapping-graph-ql: 100.4.2
-magento/module-gift-wrapping-staging: 100.4.2
-magento/module-google-optimizer-staging: 100.4.2
-magento/module-google-tag-manager: 100.4.5
-magento/module-grouped-product-staging: 100.4.3
-magento/module-invitation: 100.4.4
-magento/module-layered-navigation-staging: 100.4.2
-magento/module-logging: 101.2.5
-magento/module-login-as-customer-logging: 100.4.5
-magento/module-login-as-customer-website-restriction: 100.4.3
-magento/module-media-content-catalog-staging: 100.4.2
-magento/module-msrp-staging: 100.4.3
-magento/module-multiple-wishlist: 100.4.5
-magento/module-multiple-wishlist-graph-ql: 100.4.1
-magento/module-payment-staging: 100.4.2
-magento/module-persistent-history: 100.4.2
-magento/module-price-permissions: 100.4.1
-magento/module-product-video-staging: 100.4.2
-magento/module-promotion-permissions: 100.4.2
-magento/module-quote-gift-card-options: 100.4.2
-magento/module-quote-staging: 100.4.2
-magento/module-reminder: 101.2.4
-magento/module-remote-storage-commerce: 100.4.1
-magento/module-resource-connections: 100.4.2
-magento/module-review-staging: 100.4.2
-magento/module-reward: 101.2.5
-magento/module-reward-graph-ql: 100.4.4
-magento/module-reward-staging: 100.4.2
-magento/module-rma: 101.2.5
-magento/module-rma-graph-ql: 100.4.4
-magento/module-rma-staging: 100.4.2
-magento/module-sales-archive: 101.0.3
-magento/module-sales-rule-staging: 100.4.4
-magento/module-scalable-checkout: 100.4.4
-magento/module-scalable-inventory: 100.4.3
-magento/module-scalable-oms: 100.4.3
-magento/module-scheduled-import-export: 101.2.5
-magento/module-search-staging: 100.4.3
-magento/module-staging: 101.2.5
-magento/module-staging-graph-ql: 100.4.2
-magento/module-support: 101.2.4
-magento/module-swat: 100.4.3
-magento/module-target-rule: 101.2.5
-magento/module-target-rule-graph-ql: 100.4.2
-magento/module-versions-cms: 101.2.5
-magento/module-versions-cms-page-cache: 100.4.1
-magento/module-versions-cms-url-rewrite: 100.4.3
-magento/module-versions-cms-url-rewrite-graph-ql: 100.4.1
-magento/module-visual-merchandiser: 100.4.5
-magento/module-website-restriction: 100.4.4
-magento/module-weee-staging: 100.4.2
-magento/module-wishlist-gift-card: 100.4.1
-magento/module-wishlist-gift-card-graph-ql: 100.4.1
-magento/page-builder-commerce: 1.7.2
-magento/product-community-edition: 2.4.5
-magento/security-package-ee: 1.0.0
-magento/theme-adminhtml-spectrum: 100.4.0
-magento/zendframework1: ~1.15.0
+magento/composer: ^1.9.0-beta2
+magento/composer-dependency-version-audit-plugin: ^0.1
+magento/framework-foreign-key: 100.4.5-beta2
+magento/magento-composer-installer: >=0.4.0-beta1
+magento/magento2-ee-base: 2.4.6-beta2
+magento/module-admin-gws: 100.4.6-beta2
+magento/module-admin-gws-configurable-product: 100.4.3-beta2
+magento/module-admin-gws-staging: 100.4.3-beta2
+magento/module-advanced-catalog: 100.4.3-beta2
+magento/module-advanced-checkout: 100.4.6-beta2
+magento/module-advanced-rule: 100.4.3-beta2
+magento/module-advanced-sales-rule: 100.4.3-beta2
+magento/module-async-order: 100.4.2-beta2
+magento/module-async-order-graph-ql: 100.4.1-beta2
+magento/module-aws-s3-customer-custom-attributes: 100.4.3-beta2
+magento/module-aws-s3-gift-card-import-export: 100.4.3-beta2
+magento/module-aws-s3-scheduled-import-export: 100.4.3-beta2
+magento/module-banner: 101.2.6-beta2
+magento/module-banner-customer-segment: 100.4.4-beta2
+magento/module-banner-graph-ql: 100.4.2-beta2
+magento/module-banner-staging: 100.4.0-beta2
+magento/module-bundle-import-export-staging: 100.4.3-beta2
+magento/module-bundle-staging: 100.4.6-beta2
+magento/module-catalog-event: 101.1.5-beta2
+magento/module-catalog-import-export-staging: 100.4.3-beta2
+magento/module-catalog-inventory-staging: 100.4.4-beta2
+magento/module-catalog-permissions: 100.4.6-beta2
+magento/module-catalog-permissions-graph-ql: 100.4.4-beta2
+magento/module-catalog-rule-staging: 100.4.6-beta2
+magento/module-catalog-staging: 100.4.6-beta2
+magento/module-catalog-staging-graph-ql: 100.4.5-beta2
+magento/module-catalog-url-rewrite-staging: 100.4.5-beta2
+magento/module-checkout-address-search: 100.4.5-beta2
+magento/module-checkout-address-search-gift-registry: 100.4.2-beta2
+magento/module-checkout-staging: 100.4.5-beta2
+magento/module-cms-staging: 100.4.6-beta2
+magento/module-configurable-product-staging: 100.4.5-beta2
+magento/module-custom-attribute-management: 100.4.5-beta2
+magento/module-customer-balance: 100.4.6-beta2
+magento/module-customer-balance-graph-ql: 100.4.3-beta2
+magento/module-customer-custom-attributes: 100.4.6-beta2
+magento/module-customer-finance: 100.4.3-beta2
+magento/module-customer-segment: 102.1.6-beta2
+magento/module-deferred-total-calculating: 100.4.1-beta2
+magento/module-downloadable-staging: 100.4.5-beta2
+magento/module-elasticsearch-catalog-permissions: 100.4.2-beta2
+magento/module-elasticsearch-catalog-permissions-graph-ql: 100.4.1-beta2
+magento/module-enterprise: 100.4.4-beta2
+magento/module-gift-card: 101.3.6-beta2
+magento/module-gift-card-account: 101.2.6-beta2
+magento/module-gift-card-account-graph-ql: 100.4.4-beta2
+magento/module-gift-card-graph-ql: 100.4.6-beta2
+magento/module-gift-card-import-export: 100.4.3-beta2
+magento/module-gift-card-staging: 100.4.3-beta2
+magento/module-gift-message-staging: 100.4.3-beta2
+magento/module-gift-registry: 101.2.6-beta2
+magento/module-gift-registry-graph-ql: 100.4.2-beta2
+magento/module-gift-wrapping: 101.2.5-beta2
+magento/module-gift-wrapping-graph-ql: 100.4.3-beta2
+magento/module-gift-wrapping-staging: 100.4.3-beta2
+magento/module-google-optimizer-staging: 100.4.3-beta2
+magento/module-google-tag-manager: 100.4.6-beta2
+magento/module-grouped-product-staging: 100.4.4-beta2
+magento/module-import-csv: 100.4.0-beta2
+magento/module-import-csv-api: 100.4.0-beta2
+magento/module-invitation: 100.4.5-beta2
+magento/module-layered-navigation-staging: 100.4.3-beta2
+magento/module-logging: 101.2.6-beta2
+magento/module-login-as-customer-logging: 100.4.6-beta2
+magento/module-login-as-customer-website-restriction: 100.4.4-beta2
+magento/module-media-content-catalog-staging: 100.4.3-beta2
+magento/module-msrp-staging: 100.4.4-beta2
+magento/module-multiple-wishlist: 100.4.6-beta2
+magento/module-multiple-wishlist-graph-ql: 100.4.2-beta2
+magento/module-payment-staging: 100.4.3-beta2
+magento/module-persistent-history: 100.4.3-beta2
+magento/module-price-permissions: 100.4.2-beta2
+magento/module-product-video-staging: 100.4.3-beta2
+magento/module-promotion-permissions: 100.4.3-beta2
+magento/module-quote-gift-card-options: 100.4.3-beta2
+magento/module-quote-staging: 100.4.3-beta2
+magento/module-reminder: 101.2.5-beta2
+magento/module-remote-storage-commerce: 100.4.2-beta2
+magento/module-resource-connections: 100.4.3-beta2
+magento/module-review-staging: 100.4.3-beta2
+magento/module-reward: 101.2.6-beta2
+magento/module-reward-graph-ql: 100.4.5-beta2
+magento/module-reward-staging: 100.4.3-beta2
+magento/module-rma: 101.2.6-beta2
+magento/module-rma-graph-ql: 100.4.5-beta2
+magento/module-rma-staging: 100.4.3-beta2
+magento/module-sales-archive: 101.0.4-beta2
+magento/module-sales-rule-staging: 100.4.5-beta2
+magento/module-scalable-checkout: 100.4.5-beta2
+magento/module-scalable-inventory: 100.4.4-beta2
+magento/module-scalable-oms: 100.4.4-beta2
+magento/module-scheduled-import-export: 101.2.6-beta2
+magento/module-search-staging: 100.4.4-beta2
+magento/module-staging: 101.2.6-beta2
+magento/module-staging-graph-ql: 100.4.3-beta2
+magento/module-support: 101.2.5-beta2
+magento/module-swat: 100.4.4-beta2
+magento/module-target-rule: 101.2.6-beta2
+magento/module-target-rule-graph-ql: 100.4.3-beta2
+magento/module-versions-cms: 101.2.6-beta2
+magento/module-versions-cms-page-cache: 100.4.2-beta2
+magento/module-versions-cms-url-rewrite: 100.4.4-beta2
+magento/module-versions-cms-url-rewrite-graph-ql: 100.4.2-beta2
+magento/module-visual-merchandiser: 100.4.6-beta2
+magento/module-website-restriction: 100.4.5-beta2
+magento/module-weee-staging: 100.4.3-beta2
+magento/module-wishlist-gift-card: 100.4.2-beta2
+magento/module-wishlist-gift-card-graph-ql: 100.4.2-beta2
+magento/page-builder-commerce: 1.7.3-beta2
+magento/product-community-edition: 2.4.6-beta2
+magento/security-package-ee: 1.0.1-beta2
+magento/theme-adminhtml-spectrum: 100.4.1-beta2
+magento/zend-cache: ^1.16
+magento/zend-db: ^1.16
+magento/zend-pdf: ^1.16
 monolog/monolog: ^2.7
-pelago/emogrifier: ^6.0.0
-php: ~7.4.0||~8.1.0
-php-amqplib/php-amqplib: ~3.2.0
-phpseclib/mcrypt_compat: ~2.0.2
-phpseclib/phpseclib: ~3.0.13
-ramsey/uuid: ~4.2.0
-symfony/console: ~4.4.0
-symfony/process: ~4.4.0
-tedivm/jshrink: ~1.4.0
-tubalmartin/cssmin: 4.1.1
-web-token/jwt-framework: ^v2.2.7
-webonyx/graphql-php: ~14.11.6
-wikimedia/less.php: ^3.0.0
+opensearch-project/opensearch-php: ^1.0 || ^2.0, <2.0.1
+pelago/emogrifier: ^7.0
+php: ~8.1.0||~8.2.0
+php-amqplib/php-amqplib: ^3.2
+phpseclib/mcrypt_compat: ^2.0
+phpseclib/phpseclib: ^3.0
+ramsey/uuid: ^4.2
+symfony/console: ^5.4
+symfony/intl: ^5.4
+symfony/process: ^5.4
+symfony/string: ^5.4
+tedivm/jshrink: ^1.4
+tubalmartin/cssmin: ^4.1
+web-token/jwt-framework: ^3.1
+webonyx/graphql-php: ^15.0
+wikimedia/less.php: ^3.2
 ```
 
-## Licenze di terzi
+## Licenze di terze parti
 
-### Apache-2.0, LGPL-2.1 solo
+### Apache-2.0, solo LGPL-2.1
 
 <table>
   <thead>
@@ -224,10 +236,17 @@ wikimedia/less.php: ^3.0.0
   <tbody>
   <tr>
     <td>
-      <a href="https://github.com/elastic/elasticsearch-php.git">elasticsearch/elasticsearch</a>
+      elasticsearch/elasticsearch
     </td>
     <td>libreria</td>
-    <td>Client PHP per Elasticsearch</td>
+    <td>Client PHP, ad Elasticsearch</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/opensearch-project/opensearch-php.git">opensearch-project/opensearch-php</a>
+    </td>
+    <td>libreria</td>
+    <td>Client PHP per OpenSearch</td>
   </tr>
   </tbody>
 </table>
@@ -255,28 +274,28 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/awslabs/aws-crt-php.git">aws/aws-crt-php</a>
     </td>
     <td>libreria</td>
-    <td>AWS Common Runtime per PHP</td>
+    <td>Common Runtime di AWS per PHP</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/aws/aws-sdk-php.git">aws/aws-sdk-php</a>
     </td>
     <td>libreria</td>
-    <td>AWS SDK per PHP - Utilizza Amazon Web Services nel tuo progetto PHP</td>
+    <td>SDK di AWS per PHP - Utilizzare Amazon Web Services nel progetto PHP</td>
   </tr>
   <tr>
     <td>
-      paypal/modulo-braintree
+      paypal/module-braintree
     </td>
-    <td>metapackage</td>
-    <td>Magento Braintree</td>
+    <td>metapacchetto</td>
+    <td>Braintree Magento</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/wikimedia/less.php.git">wikimedia/less.php</a>
     </td>
     <td>libreria</td>
-    <td>Porta PHP della versione Javascript di LESS http://lesscss.org (Originariamente mantenuta da Josh Schmidt)</td>
+    <td>Porta PHP del processore LESS</td>
   </tr>
   </tbody>
 </table>
@@ -297,7 +316,7 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/Bacon/BaconQrCode.git">bacon/bacon-qr-code</a>
     </td>
     <td>libreria</td>
-    <td>BaconQrCode è un generatore di codice QR per PHP.</td>
+    <td>BaconQrCode è un generatore di codici QR per PHP.</td>
   </tr>
   <tr>
     <td>
@@ -311,14 +330,14 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/DASPRiD/Enum.git">dasprid/enum</a>
     </td>
     <td>libreria</td>
-    <td>Implementazione enum PHP 7.1</td>
+    <td>Implementazione PHP 7.1 enum</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/webimpress/safe-writer.git">webimpress/safe-writer</a>
     </td>
     <td>libreria</td>
-    <td>Strumento per scrivere i file in modo sicuro, per evitare le condizioni di gara</td>
+    <td>Strumento per scrivere i file in modo sicuro, per evitare race condition</td>
   </tr>
   </tbody>
 </table>
@@ -339,63 +358,56 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/colinmollenhour/Cm_Cache_Backend_File.git">colinmollenhour/cache-backend-file</a>
     </td>
     <td>modulo magento</td>
-    <td>Il backend Zend_Cache_Backend_File stock ha prestazioni estremamente scarse per la pulizia tramite tag che lo rendono inutilizzabile con l'aumento del numero di elementi memorizzati nella cache. Questo backend apporta molte modifiche che si traducono in un enorme aumento delle prestazioni, soprattutto per la pulizia dei tag.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/colinmollenhour/Cm_Cache_Backend_Redis.git">colinmollenhour/cache-backend-redis</a>
-    </td>
-    <td>modulo magento</td>
-    <td>Backend_Cache tramite Redis con supporto completo per i tag.</td>
+    <td>Il backend Zend_Cache_Backend_File di magazzino ha prestazioni estremamente scadenti per la pulizia da parte dei tag, rendendolo inutilizzabile con l’aumento del numero di elementi memorizzati in cache. Questo back-end apporta molte modifiche che determinano un notevole miglioramento delle prestazioni, in particolare per la pulizia dei tag.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/colinmollenhour/php-redis-session-abstract.git">colinmollenhour/php-redis-session-abstract</a>
     </td>
     <td>libreria</td>
-    <td>Un handler di sessioni basato su Redis con blocco ottimistico</td>
+    <td>Un gestore di sessione basato su Redis con blocco ottimistico</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/google/recaptcha.git">google/ricontcha</a>
+      <a href="https://github.com/google/recaptcha.git">google/recaptcha</a>
     </td>
     <td>libreria</td>
-    <td>Libreria client per reCAPTCHA, un servizio gratuito che protegge i siti web dallo spam e dagli abusi.</td>
+    <td>Libreria client per reCAPTCHA, un servizio gratuito che protegge i siti web da spam e utilizzo non corretto.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-captcha.git">laminas/laminas-captcha</a>
     </td>
     <td>libreria</td>
-    <td>Generare e convalidare i CAPTCHA utilizzando Figlet, immagini, ReCaptcha e altro ancora</td>
+    <td>Generare e convalidare i CAPTCHA utilizzando figure, immagini, ReCaptcha e altro ancora</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-code.git">laminas/laminas-code</a>
+      <a href="https://github.com/laminas/laminas-code.git">Codice laminas/laminas</a>
     </td>
     <td>libreria</td>
-    <td>Estensioni dell’API di riflessione PHP, scansione del codice statico e generazione del codice</td>
+    <td>Estensioni dell'API PHP Reflection, scansione del codice statico e generazione del codice</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-config.git">laminas/laminas-config</a>
+      <a href="https://github.com/laminas/laminas-config.git">configurazione laminas/laminas</a>
     </td>
     <td>libreria</td>
-    <td>fornisce un'interfaccia utente basata su proprietà dell'oggetto nidificato per accedere a questi dati di configurazione all'interno del codice dell'applicazione</td>
+    <td>fornisce un'interfaccia utente basata su proprietà di oggetto nidificato per accedere ai dati di configurazione nel codice dell'applicazione</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-crypt.git">laminas/laminas-crypt</a>
+    </td>
+    <td>libreria</td>
+    <td>Potenti strumenti di crittografia e hashing delle password</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-db.git">laminas/laminas-db</a>
     </td>
     <td>libreria</td>
-    <td>Livello di astrazione del database, astrazione SQL, astrazione del set di risultati e implementazioni di RowDataGateway e TableDataGateway</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-dependency-plugin.git">laminas/laminas-dipendenza-plugin</a>
-    </td>
-    <td>compositore-plugin</td>
-    <td>Sostituire i pacchetti zendframework e zfcampus con i loro equivalenti del progetto Laminas.</td>
+    <td>Livello di astrazione del database, astrazione SQL, astrazione del set di risultati e implementazioni RowDataGateway e TableDataGateway</td>
   </tr>
   <tr>
     <td>
@@ -409,39 +421,60 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/laminas/laminas-escaper.git">laminas/laminas-escape</a>
     </td>
     <td>libreria</td>
-    <td>Esc in modo sicuro e sicuro di HTML, attributi di HTML, JavaScript, CSS e URL</td>
+    <td>Escape sicuro di HTML, attributi HTML, JavaScript, CSS e URL</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-eventmanager.git">laminas/laminas-eventmanager</a>
     </td>
     <td>libreria</td>
-    <td>Attivazione e ascolto di eventi all’interno di un’applicazione PHP</td>
+    <td>Attivare e ascoltare gli eventi all'interno di un'applicazione PHP</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-feed.git">Alimentazione laminas/laminas</a>
     </td>
     <td>libreria</td>
-    <td>fornisce funzionalità per la creazione e il consumo di feed RSS e Atom</td>
+    <td>fornisce funzionalità per creare e utilizzare feed RSS e Atom</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-file.git">File laminas/laminas</a>
+    </td>
+    <td>libreria</td>
+    <td>Individuazione dei file di classe PHP</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-filter.git">laminas/laminas-filter</a>
+    </td>
+    <td>libreria</td>
+    <td>Filtrare e normalizzare a livello di programmazione dati e file</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-http.git">laminas/laminas-http</a>
     </td>
     <td>libreria</td>
-    <td>Fornisce un'interfaccia semplice per l'esecuzione delle richieste HTTP (Hyper-Text Transfer Protocol)</td>
+    <td>Interfaccia semplice per l'esecuzione di richieste HTTP (Hyper-Text Transfer Protocol)</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-i18n.git">laminas/laminas-i18n</a>
+    </td>
+    <td>libreria</td>
+    <td>Fornisci le traduzioni per la tua applicazione, e filtra e convalida i valori internazionalizzati</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-json.git">laminas/laminas-json</a>
     </td>
     <td>libreria</td>
-    <td>fornisce metodi di convenienza per serializzare PHP nativo su JSON e decodificare JSON su PHP nativo</td>
+    <td>fornisce metodi di convenienza per serializzare da PHP nativo a JSON e decodificare da JSON a PHP nativo</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-loader.git">laminati/caricatori</a>
+      <a href="https://github.com/laminas/laminas-loader.git">laminas/laminas-loader</a>
     </td>
     <td>libreria</td>
     <td>Strategie di caricamento automatico e plug-in</td>
@@ -451,67 +484,88 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/laminas/laminas-mail.git">laminas/laminas-mail</a>
     </td>
     <td>libreria</td>
-    <td>Offre funzionalità generalizzate per la composizione e l’invio di messaggi di posta elettronica multiparte conformi a MIME e testo</td>
+    <td>Fornisce funzionalità generalizzate per la composizione e l'invio di messaggi di posta elettronica in più parti sia di testo che compatibili con MIME</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-math.git">laminas/laminas-math</a>
+    </td>
+    <td>libreria</td>
+    <td>Creazione di numeri pseudo-casuali protetti da crittografia e gestione di numeri interi di grandi dimensioni</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-mime.git">laminas/laminas-mime</a>
     </td>
     <td>libreria</td>
-    <td>Creare e analizzare messaggi e parti MIME</td>
+    <td>Creare e analizzare parti e messaggi MIME</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-modulemanager.git">laminas/laminas-modulemanager</a>
     </td>
     <td>libreria</td>
-    <td>Sistema di applicazione modulare per applicazioni laminas-mvc</td>
+    <td>Sistema modulare per applicazioni laminas-mvc</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-mvc.git">laminas/laminas-mvc</a>
     </td>
     <td>libreria</td>
-    <td>Livello MVC basato su eventi di Laminas, tra cui applicazioni MVC, controller e plug-in</td>
+    <td>Livello MVC basato su eventi di Laminas, incluse applicazioni MVC, controller e plug-in</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-recaptcha.git">laminas/laminas-ricontcha</a>
+      <a href="https://github.com/laminas/laminas-oauth.git">laminas/laminas-oauth</a>
     </td>
     <td>libreria</td>
-    <td>wrapper OOP per il servizio Web ReCaptcha</td>
+    <td></td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-router.git">router laminas/laminas</a>
+      <a href="https://github.com/laminas/laminas-permissions-acl.git">laminas/laminas-permissions-acl</a>
     </td>
     <td>libreria</td>
-    <td>Sistema di routing flessibile per le applicazioni HTTP e console</td>
+    <td>Implementazione di un elenco di controllo di accesso (ACL) leggero e flessibile per la gestione dei privilegi</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-recaptcha.git">laminas/laminas-recaptcha</a>
+    </td>
+    <td>libreria</td>
+    <td>Wrapper OOP per il servizio Web ReCaptcha</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-router.git">laminas/laminas-router</a>
+    </td>
+    <td>libreria</td>
+    <td>Sistema di routing flessibile per applicazioni HTTP e console</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-server.git">server laminas/laminas</a>
     </td>
     <td>libreria</td>
-    <td>Creare server RPC basati su riflessi</td>
+    <td>Creazione di server RPC basati su riflessioni</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-servicemanager.git">laminas/laminas-servicemanager</a>
     </td>
     <td>libreria</td>
-    <td>Contenitore di iniezione a dipendenza guidata dalla fabbrica</td>
+    <td>Contenitore Di Iniezione Di Dipendenza Basato Su Fabbrica</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-session.git">sessione laminas/laminas</a>
     </td>
     <td>libreria</td>
-    <td>Interfaccia orientata agli oggetti per le sessioni PHP e lo storage</td>
+    <td>Interfaccia orientata agli oggetti per sessioni PHP e storage</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-soap.git">Sapone laminas/laminas</a>
+      <a href="https://github.com/laminas/laminas-soap.git">Laminas/laminas-soap</a>
     </td>
     <td>libreria</td>
     <td></td>
@@ -521,14 +575,14 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/laminas/laminas-stdlib.git">laminas/laminas-stdlib</a>
     </td>
     <td>libreria</td>
-    <td>Estensioni SPL, utilità array, gestori di errori e altro ancora</td>
+    <td>Estensioni SPL, utility di array, gestori di errori e altro ancora</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-text.git">laminas/laminas-text</a>
     </td>
     <td>libreria</td>
-    <td>Creazione di FIGlets e tabelle basate su testo</td>
+    <td>Creare i file FIGlet e le tabelle basate su testo</td>
   </tr>
   <tr>
     <td>
@@ -542,21 +596,21 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/laminas/laminas-validator.git">laminas/laminas-validator</a>
     </td>
     <td>libreria</td>
-    <td>Classi di convalida per un'ampia gamma di domini e possibilità di catena di convalida per creare criteri di convalida complessi</td>
+    <td>Classi di convalida per un'ampia gamma di domini e possibilità di concatenare le convalide per creare criteri di convalida complessi</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-view.git">vista laminas/laminas</a>
+      <a href="https://github.com/laminas/laminas-view.git">Laminas/laminas</a>
     </td>
     <td>libreria</td>
-    <td>Livello di visualizzazione flessibile che supporta e fornisce più livelli di visualizzazione, aiutanti e altro ancora</td>
+    <td>Livello di vista flessibile che supporta e fornisce più livelli di vista, helper e altro ancora</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-zendframework-bridge.git">laminas/laminas-zendframework-bridge</a>
     </td>
     <td>libreria</td>
-    <td>Alias i nomi delle classi ZF legacy agli equivalenti del progetto Laminas.</td>
+    <td>Alias nomi di classe ZF legacy agli equivalenti di progetto Laminas.</td>
   </tr>
   <tr>
     <td>
@@ -570,19 +624,26 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/tedious/JShrink.git">tedivm/jshrink</a>
     </td>
     <td>libreria</td>
-    <td>Minificatore Javascript costruito in PHP</td>
+    <td>PHP integrato nel minifier JavaScript</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port.git">tubalmartin/cssmin</a>
     </td>
     <td>libreria</td>
-    <td>Una porta PHP del compressore CSS YUI</td>
+    <td>Porta PHP del compressore CSS YUI</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/twigphp/Twig.git">ramoscello</a>
+    </td>
+    <td>libreria</td>
+    <td>Twig, il linguaggio di modelli flessibile, veloce e sicuro per PHP</td>
   </tr>
   </tbody>
 </table>
 
-### LGPL-2.1-o successivo
+### Modifica clausola BSD-3
 
 <table>
   <thead>
@@ -595,7 +656,28 @@ wikimedia/less.php: ^3.0.0
   <tbody>
   <tr>
     <td>
-      <a href="https://github.com/ezyang/htmlpurifier.git">ezyang/htmlpurifier</a>
+      <a href="https://github.com/colinmollenhour/Cm_Cache_Backend_Redis.git">colinmollenhour/cache-backend-redis</a>
+    </td>
+    <td>modulo magento</td>
+    <td>Zend_Cache back-end che utilizza Redis con supporto completo per i tag.</td>
+  </tr>
+  </tbody>
+</table>
+
+### LGPL-2.1-or-later
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Tipo</th>
+      <th>Descrizione</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      <a href="https://github.com/ezyang/htmlpurifier.git">ezyang/htmlPurificer</a>
     </td>
     <td>libreria</td>
     <td>Filtro HTML conforme agli standard scritto in PHP</td>
@@ -605,7 +687,7 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/php-amqplib/php-amqplib.git">php-amqplib/php-amqplib</a>
     </td>
     <td>libreria</td>
-    <td>Precedentemente videlalvaro/php-amqplib.  Questa libreria è un'implementazione PHP pura del protocollo AMQP. È stato testato contro RabbitMQ.</td>
+    <td>Ex videlalvaro/php-amqplib.  Questa libreria è un’implementazione PHP pura del protocollo AMQP. È stato testato contro RabbitMQ.</td>
   </tr>
   </tbody>
 </table>
@@ -630,66 +712,73 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/brick/math.git">mattoni/matematica</a>
+      <a href="https://github.com/brick/math.git">mattone/matematica</a>
     </td>
     <td>libreria</td>
-    <td>Libreria arbitmetica di precisione</td>
+    <td>Libreria aritmetica di precisione arbitraria</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/brick/varexporter.git">mattoni/varesportatore</a>
+      <a href="https://github.com/brick/varexporter.git">brick/varexporter</a>
     </td>
     <td>libreria</td>
     <td>Una potente alternativa a var_export(), che può esportare chiusure e oggetti senza __set_state()</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/ChristianRiesen/base32.git">cristiano-riesen/base32</a>
+      <a href="https://github.com/ChristianRiesen/base32.git">christian-riesen/base32</a>
     </td>
     <td>libreria</td>
-    <td>Codificatore/decodificatore Base32 in base alla RFC 4648</td>
+    <td>Codificatore/decodificatore Base32 secondo RFC 4648</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/colinmollenhour/credis.git">colinmollenhour/credis</a>
     </td>
     <td>libreria</td>
-    <td>Credis è un'interfaccia leggera allo store a valore chiave Redis che avvolge la libreria phpredis quando disponibile per prestazioni migliori.</td>
+    <td>Credis è un’interfaccia leggera dell’archivio Redis di valori chiave che racchiude la libreria phpredis quando disponibile per prestazioni migliori.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/composer/ca-bundle.git">compositore/ca-bundle</a>
     </td>
     <td>libreria</td>
-    <td>Consente di trovare un percorso al bundle CA del sistema e include un fallback al bundle Mozilla CA.</td>
+    <td>Consente di trovare un percorso per il bundle CA di sistema e include un fallback al bundle CA di Mozilla.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/composer/class-map-generator.git">compositore/class-map-generator</a>
+    </td>
+    <td>libreria</td>
+    <td>Utilità per scansionare il codice PHP e generare mappe di classe.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/composer/composer.git">compositore/compositore</a>
     </td>
     <td>libreria</td>
-    <td>Il Compositore ti aiuta a dichiarare, gestire e installare le dipendenze dei progetti PHP. Ti assicura di avere la giusta pila ovunque.</td>
+    <td>Composer consente di dichiarare, gestire e installare le dipendenze dei progetti PHP. Ti garantisce di avere la giusta pila ovunque.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/metadata-minifier.git">compositore/minatore di metadati</a>
+      <a href="https://github.com/composer/metadata-minifier.git">compositore/minificatore metadati</a>
     </td>
     <td>libreria</td>
-    <td>Libreria di utilità piccola che gestisce la minimizzazione e l'espansione dei metadati.</td>
+    <td>Piccola libreria di utilità che gestisce la minimizzazione e l'espansione dei metadati.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/composer/pcre.git">compositore/pcre</a>
     </td>
     <td>libreria</td>
-    <td>Libreria di wrapping PCRE che offre sostituzioni tipo-safe preg_*.</td>
+    <td>Libreria di wrapping PCRE che offre sostituzioni preg_* di tipo sicuro.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/composer/semver.git">compositore/semver</a>
     </td>
     <td>libreria</td>
-    <td>Libreria di segmenti che offre utilità, analisi dei vincoli di versione e convalida.</td>
+    <td>Libreria semver che offre utility, analisi e convalida dei vincoli di versione.</td>
   </tr>
   <tr>
     <td>
@@ -714,24 +803,17 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/ezimuel/guzzlestreams.git">ezimuel/guzzlestreams</a>
+      <a href="https://github.com/ezimuel/guzzlestreams.git">ezimuel/guzzlestream</a>
     </td>
     <td>libreria</td>
-    <td>Forchetta di guzzle/ruscelli (abbandonati) da utilizzare con elasticsearch-php</td>
+    <td>Forcella di guzzle/ruscelli (abbandonati) da utilizzare con elasticsearch-php</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/ezimuel/ringphp.git">ezimuel/ringphp</a>
     </td>
     <td>libreria</td>
-    <td>Forchetta di guzzle/RingPHP (abbandonata) da utilizzare con elasticsearch-php</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/fgrosse/PHPASN1.git">fgrosse/phpans1</a>
-    </td>
-    <td>libreria</td>
-    <td>Framework PHP che consente di codificare e decodificare strutture ASN.1 arbitrarie utilizzando le regole di codifica ITU-T X.690.</td>
+    <td>Forchetta di guzzle/RingPHP (abbandonato) da utilizzare con elasticsearch-php</td>
   </tr>
   <tr>
     <td>
@@ -742,10 +824,10 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/guzzle/promises.git">guzzlehttp/promesse</a>
+      <a href="https://github.com/guzzle/promises.git">guzzlehttp/promise</a>
     </td>
     <td>libreria</td>
-    <td>Libreria promesse Guzzle</td>
+    <td>Guzzle promesse libreria</td>
   </tr>
   <tr>
     <td>
@@ -759,60 +841,60 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/justinrainbow/json-schema.git">justinrainbow/json-schema</a>
     </td>
     <td>libreria</td>
-    <td>Una libreria per convalidare uno schema json.</td>
+    <td>Libreria per convalidare uno schema JSON.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/thephpleague/flysystem.git">league/flysystem</a>
     </td>
     <td>libreria</td>
-    <td>astrazione archiviazione file per PHP</td>
+    <td>Estrazione archiviazione file per PHP</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/thephpleague/flysystem-aws-s3-v3.git">lega/flysystem-aws-s3-v3</a>
+      <a href="https://github.com/thephpleague/flysystem-aws-s3-v3.git">league/flysystem-aws-s3-v3</a>
     </td>
     <td>libreria</td>
-    <td>Adattatore di file system AWS S3 per Flysystem.</td>
+    <td>Scheda di file system AWS S3 per Flysystem.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/thephpleague/mime-type-detection.git">rilevamento a campionato/mime</a>
+      <a href="https://github.com/thephpleague/mime-type-detection.git">league/mime-type-detection</a>
     </td>
     <td>libreria</td>
-    <td>Rilevamento di tipo mime per il sistema a molla</td>
+    <td>Rilevamento del tipo MIME per Flysystem</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/Seldaek/monolog.git">monologo/monologo</a>
     </td>
     <td>libreria</td>
-    <td>Invia i log a file, socket, caselle in entrata, database e vari servizi Web</td>
+    <td>Invia i registri a file, socket, caselle in entrata, database e vari servizi web</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/jmespath/jmespath.php.git">mtdowling/jmespath.php</a>
     </td>
     <td>libreria</td>
-    <td>Specificare in modo dichiarativo come estrarre gli elementi da un documento JSON</td>
+    <td>Specificare in modo dichiarativo come estrarre elementi da un documento JSON</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/paragonie/constant_time_encoding.git">Codifica paragon/tempo_costante</a>
+      <a href="https://github.com/paragonie/constant_time_encoding.git">paragonie/constant_time_encoding</a>
     </td>
     <td>libreria</td>
-    <td>Implementazioni in tempo reale della codifica RFC 4648 (Base-64, Base-32, Base-16)</td>
+    <td>Implementazioni a tempo costante della codifica RFC 4648 (Base-64, Base-32, Base-16)</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/paragonie/random_compat.git">paragon e/random_compat</a>
+      <a href="https://github.com/paragonie/random_compat.git">paragonie/random_compat</a>
     </td>
     <td>libreria</td>
-    <td>polyfill PHP 5.x per random_byte() e random_int() da PHP 7</td>
+    <td>polyfill PHP 5.x per random_bytes() e random_int() da PHP 7</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/MyIntervals/emogrifier.git">pelago/emogfier</a>
+      <a href="https://github.com/MyIntervals/emogrifier.git">pelago/emoglificatore</a>
     </td>
     <td>libreria</td>
     <td>Converte gli stili CSS in attributi di stile in linea nel codice HTML</td>
@@ -829,28 +911,28 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/PhpGt/Dom.git">phpgt/dom</a>
     </td>
     <td>libreria</td>
-    <td>L’API DOM moderna per i progetti PHP.</td>
+    <td>La moderna API DOM per i progetti PHP.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/phpseclib/mcrypt_compat.git">phpseclib/mcrypt_compat</a>
     </td>
     <td>libreria</td>
-    <td>polyfill PHP 5.x-8.x per estensione mcrypt</td>
+    <td>Poliriempimento PHP 5.x-8.x per estensione mcrypt</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/phpseclib/phpseclib.git">phpseclib/phpseclib</a>
     </td>
     <td>libreria</td>
-    <td>Libreria di comunicazioni sicure PHP - Implementazioni Pure-PHP di RSA, AES, SSH2, SFTP, X.509, ecc.</td>
+    <td>Libreria PHP Secure Communications: implementazioni Pure-PHP di RSA, AES, SSH2, SFTP, X.509 ecc.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/php-fig/container.git">psr/container</a>
     </td>
     <td>libreria</td>
-    <td>Interfaccia contenitore comune (PHP FIG PSR-11)</td>
+    <td>Interfaccia comune dei contenitori (PHP FIG PSR-11)</td>
   </tr>
   <tr>
     <td>
@@ -871,7 +953,7 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/php-fig/http-factory.git">psr/http-factory</a>
     </td>
     <td>libreria</td>
-    <td>Interfacce comuni per le fabbriche di messaggi HTTP PSR-7</td>
+    <td>Interfacce comuni per i Message Factory HTTP PSR-7</td>
   </tr>
   <tr>
     <td>
@@ -885,7 +967,7 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/php-fig/log.git">psr/log</a>
     </td>
     <td>libreria</td>
-    <td>Interfaccia comune per le librerie di log</td>
+    <td>Interfaccia comune per le librerie di registrazione</td>
   </tr>
   <tr>
     <td>
@@ -896,17 +978,17 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/ramsey/collection.git">ramsey/collezione</a>
+      <a href="https://github.com/ramsey/collection.git">ramsey/collection</a>
     </td>
     <td>libreria</td>
-    <td>Una libreria PHP per rappresentare e manipolare le raccolte.</td>
+    <td>Libreria PHP per la rappresentazione e la manipolazione delle raccolte.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/ramsey/uuid.git">ramsey/uuid</a>
     </td>
     <td>libreria</td>
-    <td>Libreria PHP per la generazione e l’utilizzo di identificatori univoci universali (UUID).</td>
+    <td>Libreria PHP per la generazione e l’utilizzo di identificatori universalmente univoci (UUID).</td>
   </tr>
   <tr>
     <td>
@@ -917,7 +999,7 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/sabberworm/PHP-CSS-Parser.git">baco di sabbro/php-css-parser</a>
+      <a href="https://github.com/sabberworm/PHP-CSS-Parser.git">sabberworm/php-css-parser</a>
     </td>
     <td>libreria</td>
     <td>Parser per file CSS scritti in PHP</td>
@@ -934,42 +1016,49 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/Seldaek/phar-utils.git">seld/phar-utils</a>
     </td>
     <td>libreria</td>
-    <td>Utilità di formato file PHAR, per quando PHP ti fa phars up</td>
+    <td>PHAR formato file utilità, per quando PHP phars si up</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/Seldaek/signal-handler.git">seld/signal-handler</a>
+    </td>
+    <td>libreria</td>
+    <td>Semplice gestore di segnali unix che genera un errore silenzioso quando i segnali non sono supportati per un facile sviluppo su più piattaforme</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/Spomky-Labs/aes-key-wrap.git">spomky-labs/aes-key-wrap</a>
     </td>
     <td>libreria</td>
-    <td>AES Key Wrap per PHP.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/Spomky-Labs/base64url.git">spomky-labs/base64url</a>
-    </td>
-    <td>libreria</td>
-    <td>Libreria PHP di base per codifica e decodifica sicura URL 64</td>
+    <td>Key Wrap AES per PHP.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/Spomky-Labs/otphp.git">spomky-labs/otphp</a>
     </td>
     <td>libreria</td>
-    <td>Una libreria PHP per la generazione di password una tantum in base alla RFC 4226 (algoritmo HOTP) e alla RFC 6238 (algoritmo TOTP) e compatibile con Google Authenticator</td>
+    <td>Libreria PHP per la generazione di password monouso secondo l'RFC 4226 (HOTP Algorithm) e l'RFC 6238 (TOTP Algorithm) e compatibile con Google Authenticator</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/Spomky-Labs/pki-framework.git">spomky-labs/pki-framework</a>
+    </td>
+    <td>libreria</td>
+    <td>Un framework PHP per la gestione dell'infrastruttura a chiave pubblica. Comprende certificati a chiave pubblica X.509, certificati di attributi, richieste di certificazione e convalida del percorso di certificazione.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/config.git">symfony/config</a>
     </td>
     <td>libreria</td>
-    <td>Consente di trovare, caricare, combinare, compilare automaticamente e convalidare i valori di configurazione di qualsiasi tipo</td>
+    <td>Consente di trovare, caricare, combinare, riempire automaticamente e convalidare i valori di configurazione di qualsiasi tipo</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/console.git">symfony/console</a>
     </td>
     <td>libreria</td>
-    <td>Facilita la creazione di interfacce a riga di comando belle e testabili</td>
+    <td>Semplifica la creazione di interfacce per riga di comando belle e testabili</td>
   </tr>
   <tr>
     <td>
@@ -980,66 +1069,52 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/debug.git">symfony/debug</a>
+      <a href="https://github.com/symfony/dependency-injection.git">symfony/dependency-injection</a>
     </td>
     <td>libreria</td>
-    <td>Fornisce gli strumenti per facilitare il debug del codice PHP</td>
+    <td>Consente di standardizzare e centralizzare il modo in cui gli oggetti vengono costruiti nell'applicazione</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/dependency-injection.git">sinfonia/dipendenza-iniezione</a>
+      <a href="https://github.com/symfony/deprecation-contracts.git">symfony/deprecation-CONTRACTS</a>
     </td>
     <td>libreria</td>
-    <td>Consente di standardizzare e centralizzare il modo in cui gli oggetti vengono costruiti nell’applicazione</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/symfony/deprecation-contracts.git">symfony/deprecazione-contratti</a>
-    </td>
-    <td>libreria</td>
-    <td>Funzione e convenzione generiche per attivare avvisi di obsolescenza</td>
+    <td>Funzione e convenzione generiche per attivare gli avvisi di deprecazione</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/error-handler.git">symfony/error-handler</a>
     </td>
     <td>libreria</td>
-    <td>Fornisce gli strumenti per gestire gli errori e facilitare il debug del codice PHP</td>
+    <td>Fornisce strumenti per gestire gli errori e facilitare il debug del codice PHP</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/event-dispatcher.git">symfony/event-dispatcher</a>
     </td>
     <td>libreria</td>
-    <td>Fornisce strumenti che consentono ai componenti dell'applicazione di comunicare tra loro inviando eventi e ascoltando gli stessi</td>
+    <td>Fornisce strumenti che consentono ai componenti dell'applicazione di comunicare tra loro inviando eventi e ascoltandoli</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/event-dispatcher-contracts.git">symfony/event-dispatcher-contratti</a>
+      <a href="https://github.com/symfony/event-dispatcher-contracts.git">symfony/event-dispatcher-CONTRACTS</a>
     </td>
     <td>libreria</td>
-    <td>astrazioni generiche relative all’evento di invio</td>
+    <td>Astrazioni generiche correlate all’evento dispatching</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/filesystem.git">symfony/filesystem</a>
+      <a href="https://github.com/symfony/filesystem.git">symfony/file system</a>
     </td>
     <td>libreria</td>
-    <td>Fornisce utilità di base per il filesystem</td>
+    <td>Fornisce utilità di base per il file system</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/finder.git">symfony/finder</a>
     </td>
     <td>libreria</td>
-    <td>Trova file e directory tramite un’interfaccia intuitiva e fluente</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/symfony/http-client-contracts.git">symfony/http-client-Contract</a>
-    </td>
-    <td>libreria</td>
-    <td>astrazioni generiche relative ai client HTTP</td>
+    <td>Trova file e directory tramite un'interfaccia intuitiva</td>
   </tr>
   <tr>
     <td>
@@ -1053,112 +1128,140 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/symfony/http-kernel.git">symfony/http-kernel</a>
     </td>
     <td>libreria</td>
-    <td>Fornisce un processo strutturato per la conversione di una richiesta in una risposta</td>
+    <td>Fornisce un processo strutturato per convertire una richiesta in una risposta</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/intl.git">symfony/intl</a>
+    </td>
+    <td>libreria</td>
+    <td>Fornisce un livello di sostituzione PHP per l'estensione intl C che include dati aggiuntivi dalla libreria ICU</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/polyfill-ctype.git">symfony/polyfill-ctype</a>
     </td>
     <td>libreria</td>
-    <td>polyfill Symfony per funzioni di tipo</td>
+    <td>Symfony polyfill per funzioni di tipo</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/polyfill-intl-grapheme.git">symfony/polyfill-intl-grapheme</a>
+    </td>
+    <td>libreria</td>
+    <td>Symfony polyfill per le funzioni grapheme_* di intl</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/polyfill-intl-idn.git">symfony/polyfill-intl-idn</a>
     </td>
     <td>libreria</td>
-    <td>polyfill Symfony per le funzioni idn_to_ascii e idn_to_utf8 di intl</td>
+    <td>Symfony polyfill per le funzioni intl idn_to_ascii e idn_to_utf8</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/polyfill-intl-normalizer.git">symfony/polyfill-intl-normalizzatore</a>
+      <a href="https://github.com/symfony/polyfill-intl-normalizer.git">symfony/polyfill-intl-normalizer</a>
     </td>
     <td>libreria</td>
-    <td>polyfill Symfony per la classe Normalizer di intl e le relative funzioni</td>
+    <td>Symfony polyfill per la classe Normalizer di intl e funzioni correlate</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/polyfill-mbstring.git">symfony/polyfill-mbstring</a>
     </td>
     <td>libreria</td>
-    <td>polyfill Symfony per l'estensione Mbstring</td>
+    <td>Symfony polyfill per l’estensione Mbstring</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/polyfill-php72.git">symfony/polyfill-php72</a>
     </td>
     <td>libreria</td>
-    <td>Symfony polifill backporting alcune funzionalità PHP 7.2+ per abbassare le versioni PHP</td>
+    <td>Symfony polyfill supporta alcune funzioni PHP 7.2+ per ridurre le versioni PHP</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/polyfill-php73.git">symfony/polyfill-php73</a>
     </td>
     <td>libreria</td>
-    <td>Symfony polifill backporting alcune funzionalità PHP 7.3+ per abbassare le versioni PHP</td>
+    <td>Symfony polyfill supporta alcune funzioni PHP 7.3+ per ridurre le versioni PHP</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/polyfill-php80.git">symfony/polyfill-php80</a>
     </td>
     <td>libreria</td>
-    <td>Symfony polifill backporting alcune funzionalità PHP 8.0+ per abbassare le versioni PHP</td>
+    <td>Symfony polyfill supporta alcune funzioni PHP 8.0+ per ridurre le versioni PHP</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/polyfill-php81.git">symfony/polyfill-php81</a>
     </td>
     <td>libreria</td>
-    <td>Symfony polifill backporting alcune funzionalità PHP 8.1+ per abbassare le versioni PHP</td>
+    <td>Symfony polyfill supporta alcune funzioni PHP 8.1+ per ridurre le versioni PHP</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/process.git">sinfonia/processo</a>
+      <a href="https://github.com/symfony/process.git">symfony/process</a>
     </td>
     <td>libreria</td>
-    <td>Esegue i comandi nei sottoprocessi</td>
+    <td>Esegue comandi nei sottoprocessi</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/service-contracts.git">symfony/contratti di servizio</a>
+      <a href="https://github.com/symfony/service-contracts.git">symfony/service-contract</a>
     </td>
     <td>libreria</td>
-    <td>astrazioni generiche relative ai servizi di scrittura</td>
+    <td>Astrazioni generiche relative ai servizi di scrittura</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/string.git">symfony/string</a>
+    </td>
+    <td>libreria</td>
+    <td>Fornisce un’API orientata agli oggetti per stringhe e tratta byte, punti di codice UTF-8 e cluster di grafemi in modo unificato</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/var-dumper.git">symfony/var-dumper</a>
     </td>
     <td>libreria</td>
-    <td>Fornisce meccanismi per attraversare qualsiasi variabile PHP arbitraria</td>
+    <td>Fornisce meccanismi per passare attraverso qualsiasi variabile PHP arbitraria</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/thecodingmachine/safe.git">macchinario/cassaforte</a>
+      <a href="https://github.com/symfony/var-exporter.git">symfony/var-exporter</a>
     </td>
     <td>libreria</td>
-    <td>Funzioni di base PHP che generano eccezioni invece di restituire FALSE in caso di errore</td>
+    <td>Consente l'esportazione di qualsiasi struttura di dati PHP serializzabile nel codice PHP normale</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/thecodingmachine/safe.git">tecodingmachine/safe</a>
+    </td>
+    <td>libreria</td>
+    <td>Funzioni principali PHP che generano eccezioni invece di restituire FALSE in caso di errore</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/web-token/jwt-framework.git">web-token/jwt-framework</a>
     </td>
     <td>symfony-bundle</td>
-    <td>Libreria JSON Object Signing and Encryption per PHP e Symfony Bundle.</td>
+    <td>Libreria di firma di oggetti e crittografia JSON per PHP e Symfony Bundle.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/webmozarts/assert.git">webmozart/assert</a>
     </td>
     <td>libreria</td>
-    <td>Asserzioni per convalidare l'input/output del metodo con bei messaggi di errore.</td>
+    <td>Asserzioni per convalidare l’input/output del metodo con messaggi di errore validi.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/webonyx/graphql-php.git">webonyx/graphql-php</a>
     </td>
     <td>libreria</td>
-    <td>Una porta PHP per l'implementazione di riferimento di GraphQL</td>
+    <td>Una porta PHP dell'implementazione di riferimento GraphQL</td>
   </tr>
   </tbody>
 </table>
@@ -1176,17 +1279,17 @@ wikimedia/less.php: ^3.0.0
   <tbody>
   <tr>
     <td>
-      paypal/modulo-braintree-graph-ql
+      paypal/module-braintree-graph-ql
     </td>
     <td>modulo magento2</td>
     <td>N/D</td>
   </tr>
   <tr>
     <td>
-      temando/modulo-shipping-remover
+      temando/module-shipping-remover
     </td>
     <td>modulo magento2</td>
-    <td>Rimuove l’estensione di spedizione per più vettori Temando dal Magento 2</td>
+    <td>Rimuove l’estensione per la spedizione multi-vettore Temando dal Magento 2</td>
   </tr>
   </tbody>
 </table>
@@ -1204,10 +1307,10 @@ wikimedia/less.php: ^3.0.0
   <tbody>
   <tr>
     <td>
-      spedizione temporanea/modulo
+      temando/module-shipping
     </td>
-    <td>metapackage</td>
-    <td>Estensione della spedizione multi-carrier Temando per il Magento 2</td>
+    <td>metapacchetto</td>
+    <td>Temando multi-carrier shipping extension per il Magento 2</td>
   </tr>
   </tbody>
 </table>
@@ -1260,7 +1363,7 @@ wikimedia/less.php: ^3.0.0
   <tbody>
   <tr>
     <td>
-      paypal/modulo-braintree-core
+      paypal/module-braintree-core
     </td>
     <td>modulo magento2</td>
     <td>Fork dal modulo Magento Braintree 2.2.0 di Gene Commerce per PayPal.</td>
