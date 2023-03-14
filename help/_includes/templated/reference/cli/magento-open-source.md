@@ -1,7 +1,7 @@
 ---
-source-git-commit: 177f301802e1ab1d0560ee98594b8128440efa7c
+source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
 workflow-type: tm+mt
-source-wordcount: '17239'
+source-wordcount: '17238'
 ht-degree: 0%
 
 ---
@@ -10,7 +10,7 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Versione**: 2.4.6-beta2
+**Versione**: 2.4.6
 
 Questo riferimento contiene 114 comandi disponibili tramite `bin/magento` strumento da riga di comando.
 L’elenco iniziale viene generato automaticamente utilizzando `bin/magento list` nell&#39;edizione.
