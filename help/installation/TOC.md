@@ -46,7 +46,7 @@ ht-degree: 0%
       - [Download dei pacchetti del Compositore](sample-data/composer-packages.md)
       - [Archivi Git clonati](sample-data/git-repositories.md)
       - [Rimuovere o aggiornare moduli](sample-data/remove-or-update.md)
-- Tutorial {#tutorials}
+- Tutorials {#tutorials}
    - [Backup e ripristino del file system, dei supporti e del database](tutorials/backup.md)
    - [Controllare lo stato del database](tutorials/database-status.md)
    - [Configurare il comportamento del consumatore dei messaggi](tutorials/message-consumers.md)
