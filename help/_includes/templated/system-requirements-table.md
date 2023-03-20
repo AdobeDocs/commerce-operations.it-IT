@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1ca3d530051b0f59084bf370951f8f0b03dcfc28
+source-git-commit: 4117662e4b3686388d578ae3e620ee6478216a98
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 70%
@@ -15,7 +15,7 @@ ht-degree: 70%
       </th>
       <th>2.4.6</th>
       <th>2.4.5-p2</th>
-      <th>2,4,5-p1</th>
+      <th>2.4.5-p1</th>
       <th>2.4.5</th>
       <th>2.4.4-p3</th>
       <th>2.4.4-p2</th>
@@ -78,7 +78,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8.4
+            8.4, 7.17
       </td>
       <td>
             7.17
@@ -258,7 +258,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.1
+            8.1, 8.2
       </td>
       <td>
             8.1
@@ -800,7 +800,7 @@ ht-degree: 70%
 
 >[!IMPORTANT]
 >
->Il supporto per la versione del servizio e la compatibilità per l’infrastruttura cloud di Adobe Commerce è determinato dalle versioni distribuite nell’infrastruttura cloud e talvolta differisce dalle versioni supportate dalle distribuzioni locali di Adobe Commerce. Consulta [Software e servizi supportati](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) nel _Guida al cloud_.
+>Il supporto per la versione del servizio e la compatibilità per l’infrastruttura cloud di Adobe Commerce è determinato dalle versioni distribuite sull’infrastruttura cloud e talvolta differisce dalle versioni supportate dalle distribuzioni locali di Adobe Commerce. Vedi [Software e servizi supportati](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) in _Guida a Cloud_.
 
 >[!NOTE]
 >
