@@ -1,9 +1,9 @@
 ---
 title: Riferimento per i percorsi di configurazione del catalogo
 description: Consulta un elenco dei valori di configurazione del catalogo.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+source-git-commit: e4b7ea70b96143629b245409537459ad259393e0
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,7 @@ Questi valori di configurazione sono disponibili in Amministratore in **Negozi**
 | Conteggio Recommendations di ricerca | `catalog/search/search_recommendations_count` | ![Solo commercio](/help/assets/configuration/cloud-ee.png) |
 | Mostra il conteggio dei risultati per ogni raccomandazione | `catalog/search/search_recommendations_count_results_enabled` | ![Solo commercio](/help/assets/configuration/cloud-ee.png) |
 | Termini minimi da abbinare | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Genera riscritture URL &quot;categoria/prodotto&quot; | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Termini di ricerca popolari | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Suffisso URL prodotto | `catalog/seo/product_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Suffisso URL categoria | `catalog/seo/category_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -115,7 +116,7 @@ Questi valori di configurazione sono disponibili in Amministratore in **Negozi**
 | Mostra prodotti di upselling | `catalog/magento_targetrule/upsell_position_behavior` | ![Solo commercio](/help/assets/configuration/cloud-ee.png) |
 | Modalità di rotazione per i prodotti in Upselling Product List | `catalog/magento_targetrule/upsell_rotation_mode` | ![Solo commercio](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Percorsi inventario
 
@@ -145,7 +146,7 @@ Questi valori di configurazione sono disponibili in Amministratore in **Negozi**
 | Modalità di calcolo | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Valore | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Percorsi di Visual Merchandiser
 
@@ -158,7 +159,7 @@ Questi valori di configurazione sono disponibili in Amministratore in **Negozi**
 | Codice attributo colore | `visualmerchandiser/options/color_attribute_code` | ![Solo commercio](/help/assets/configuration/cloud-ee.png) |
 | Ordine del colore | `visualmerchandiser/options/color_order` | ![Solo commercio](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Percorsi mappa del sito XML
 
@@ -182,7 +183,7 @@ Questi valori di configurazione sono disponibili in Amministratore in **Negozi**
 | Dimensione massima del file | `sitemap/limit/max_file_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Abilita invio a Robots.txt | `sitemap/search_engines/submission_robots` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Percorsi feed RSS
 
@@ -198,7 +199,7 @@ Questi valori di configurazione sono disponibili in Amministratore in **Negozi**
 | Categoria di livello principale | `rss/catalog/category` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Notifica stato ordine cliente | `rss/order/status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Invia un&#39;e-mail a percorsi amici
 
@@ -213,4 +214,4 @@ Questi valori di configurazione sono disponibili in Amministratore in **Negozi**
 | Numero massimo di prodotti inviati in 1 ora | `sendfriend/email/max_per_hour` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Limita invio per | `sendfriend/email/check_by` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
