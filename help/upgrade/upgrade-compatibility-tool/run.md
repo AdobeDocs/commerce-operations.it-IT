@@ -1,9 +1,9 @@
 ---
 title: "Esegui il [!DNL Upgrade Compatibility Tool]"
 description: Segui questi passaggi per eseguire il [!DNL Upgrade Compatibility Tool] in un’interfaccia a riga di comando per il progetto Adobe Commerce.
-source-git-commit: e704748a7ceaa58a5a8d7004c81ac766dec4e7f1
+source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ Opzioni disponibili per `refactor` comando:
 
 ## Utilizza la `graphql:compare` command
 
-Questo comando fornisce l&#39;opzione per [!DNL Upgrade Compatibility Tool] per introdurre due endpoint GraphQL e confrontare i loro schemi cercando modifiche interrotte e pericolose tra di essi:
+Questo comando fornisce l&#39;opzione per [!DNL Upgrade Compatibility Tool] per introdurre due endpoint GraphQL e confrontare i loro schemi cercando modifiche interrotte e pericolose tra di loro:
 
 ```bash
 bin/uct graphql:compare <schema1> <schema2>
@@ -207,7 +207,7 @@ Per restituire un elenco di [!DNL Upgrade Compatibility Tool] comandi disponibil
 bin/uct list
 ```
 
-## Utilizza la `--help` command
+## Utilizza la `help` command
 
 Per visualizzare il [!DNL Upgrade Compatibility Tool] opzioni generali di comando e aiuto, eseguire:
 
@@ -260,6 +260,7 @@ Questo restituisce opzioni specifiche che possono essere eseguite per `upgrade:c
 - Evitare di avere due moduli con lo stesso nome.
 - Segui Adobe Commerce [norme di codifica](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [Guida all’aggiornamento](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) best practice.
+- Esegui il [!DNL Upgrade Compatibility Tool] dal [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) per [Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} progetti.
 
 ## Ottimizzare i risultati
 
