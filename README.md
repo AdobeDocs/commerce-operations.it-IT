@@ -1,17 +1,17 @@
 ---
-source-git-commit: d17847a7151c5e88f763b334e1ee659ca3ca6bcf
+source-git-commit: 4b767014f325bef7e07cea11d01089206bf44caf
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 5%
+source-wordcount: '475'
+ht-degree: 0%
 
 ---
-# Documentazione utente di Adobe Commerce
+# Documentazione tecnica di Adobe Commerce
 
 Accogliamo con favore i contributi della nostra community e di dipendenti di Adobi provenienti da team esterni alla documentazione.
 
 ## Codice di condotta open source di Adobe
 
-Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](code-of-conduct.md) o il [Codice di condotta di .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, consulta l’articolo [Contribuzione](contributing.md).
+Questo progetto ha adottato [Codice di condotta open source di Adobe](code-of-conduct.md) o [Codice di condotta di .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, consulta la sezione [Contributo](contributing.md) articolo.
 
 ## Informazioni sui contributi al contenuto di Adobe
 
@@ -33,7 +33,7 @@ Se fai parte della community Adobe e desideri creare un nuovo articolo o inviare
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
 -->
 
-### Modifiche di rilievo apportate dai dipendenti Adobi
+### Modifiche sostanziali apportate dai dipendenti di Adobe
 
 Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione Adobe Experience Cloud ed è tuo compito creare o contribuire ad articoli tecnici, devi utilizzare l’archivio privato all’indirizzo `https://git.corp.adobe.com/AdobeDocs`.
 
@@ -51,13 +51,6 @@ Tutti gli articoli in questo archivio utilizzano markdown GitHub. Se non conosci
 
 * [Nozioni di base su Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [Foglio di riferimento per markdown stampabile](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## Etichette
-
-Nell’archivio pubblico, alle richieste di pull vengono assegnate etichette automatizzate per aiutarci a gestire il flusso di lavoro delle richieste di pull e per consentirti di sapere cosa sta succedendo:
-
-* **Modifica inviata all&#39;autore**: L&#39;autore è stato informato della richiesta di pull in sospeso.
-* **Ready-to-merge**: Pronto per la revisione da parte del team di revisione della richiesta di pull.
 
 ## Modelli
 
