@@ -1,9 +1,9 @@
 ---
 title: Visualizza o modifica l’URI amministratore
 description: Segui questi passaggi per visualizzare e modificare l’URI dell’applicazione Adobe Commerce o Amministratore di Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Prima di eseguire questo comando, è necessario [Creare o aggiornare la configur
 
 ## Visualizza l&#39;URI amministratore
 
-Questa sezione illustra come utilizzare la riga di comando per visualizzare il [Amministratore](https://glossary.magento.com/admin) Identificatore risorsa uniforme ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
+In questa sezione viene illustrato come utilizzare la riga di comando per visualizzare l’identificatore di risorsa uniforme dell’amministratore ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
 
 Opzioni di comando:
 

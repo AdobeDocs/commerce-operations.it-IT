@@ -1,9 +1,9 @@
 ---
 title: Imposta la cache su Ubuntu
 description: Installa e configura la cache in memoria su Ubuntu.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Per verificare che la cache memorizzato sia riconosciuta dal server Web:
 
 ### Verifica che i dati della cache possano essere memorizzati nella cache
 
-Questo test utilizza uno script PHP per verificare che la cache possa archiviare e recuperare [cache](https://glossary.magento.com/cache) dati.
+Questo test utilizza uno script PHP per verificare che la cache possa archiviare e recuperare i dati della cache.
 
 Per ulteriori informazioni su questo test, vedi [Esercitazione su come installare e utilizzare Memcache su Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 
@@ -117,7 +117,7 @@ if ($result) {
 
 Dove `<memcached hostname or ip>` è `localhost`, `127.0.0.1`o il nome host o l&#39;indirizzo IP della cache memcache. La `<memcached port>` è la porta di ascolto; per impostazione predefinita, `11211`.
 
-Vai a quella pagina in un browser web. Ad esempio
+Vai a quella pagina in un browser web. Esempio
 
 ```http
 http://192.0.2.1/cache-test.php

@@ -1,9 +1,9 @@
 ---
 title: Configurazione di più siti web, negozi e viste store nell’Admin
 description: Configura altri siti web, store e viste store nell’amministrazione Commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Questa attività richiede la creazione di una categoria principale (e di altre c
 
 ## Passaggio 1: Creare categorie radice
 
-La creazione di una categoria principale è facoltativa, ma viene illustrato come eseguirla in questa esercitazione in [event](https://glossary.magento.com/event) desideri che ogni sito web abbia una categoria radice univoca. Puoi creare altre categorie, se lo desideri.
+La creazione di una categoria principale è facoltativa, ma in questa esercitazione viene mostrato come eseguire questa operazione nell’evento in cui si desidera che ogni sito web abbia una categoria principale univoca. Puoi creare altre categorie, se lo desideri.
 
 Per creare una categoria principale:
 

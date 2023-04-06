@@ -1,9 +1,9 @@
 ---
 title: Più siti web o negozi
 description: Scopri come avviare più siti web o implementare le viste store con diverse opzioni, domini e contenuti.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Una singola istanza del software Adobe Commerce consente di avviare più siti we
 - Prodotti
 - Valute
 
-Questa soluzione flessibile consente di creare una base di codice Commerce e [Amministratore](https://glossary.magento.com/magento-admin) per amministrare e visualizzare diversi negozi. Puoi configurare i siti web, gli archivi e le viste Store nell’amministratore. Utilizza alcune variabili negli host virtuali per avviare l’applicazione Commerce utilizzando questi siti web o le viste Store.
+Questa soluzione flessibile consente a una base di codice Commerce e all’amministratore di amministrare e visualizzare diversi store. Puoi configurare i siti web, gli archivi e le viste Store nell’amministratore. Utilizza alcune variabili negli host virtuali per avviare l’applicazione Commerce utilizzando questi siti web o le viste Store.
 
 Un utilizzo tipico consiste nell&#39;impostare archivi con opzioni diverse nei diversi domini. Ad esempio, puoi avere un set di categorie e prodotti su un dominio e un altro set di categorie e prodotti su un dominio separato in una lingua diversa.
 
-Puoi configurare i siti web, gli archivi e le viste Store in Commerce [Amministratore](https://glossary.magento.com/admin). Utilizza la `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` variabili negli host virtuali per avviare l’applicazione Commerce utilizzando questi siti web o le viste Store.
+Puoi configurare i siti web, gli archivi e le viste Store nell’amministratore Commerce. Utilizza la `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` variabili negli host virtuali per avviare l’applicazione Commerce utilizzando questi siti web o le viste Store.
 
 Considera i seguenti termini:
 

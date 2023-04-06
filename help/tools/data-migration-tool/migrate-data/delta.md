@@ -1,9 +1,9 @@
 ---
 title: Migrare le modifiche
 description: Scopri come eseguire la migrazione solo dei dati modificati dall’ultima migrazione dei dati del Magento 1 con [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Lo strumento di migrazione incrementale installa le tabelle di catalogo (con prefisso `m2_cl_*`) e trigger (per il tracciamento delle modifiche) nel database di Magento 1 durante il [migrazione dei dati](data.md). Queste tabelle e trigger di debug sono essenziali per garantire che esegua la migrazione solo delle modifiche apportate al Magento 1 dall’ultima migrazione dei dati. Queste modifiche sono:
 
-* Dati aggiunti dai clienti tramite [vetrina](https://glossary.magento.com/storefront) (ordini creati, revisioni e modifiche nei profili cliente)
+* Dati aggiunti dai clienti tramite vetrina (ordini creati, revisioni e modifiche nei profili dei clienti)
 
-* Tutte le operazioni con ordini, prodotti e categorie nel [Amministratore](https://glossary.magento.com/magento-admin) pannello
+* Tutte le operazioni con ordini, prodotti e categorie nel pannello Amministratore
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Dove:
 
 In `Delta` la modalità [!DNL Data Migration Tool] esegue la migrazione dei dati creati solo dai moduli propri del Magento e non è responsabile del codice o delle estensioni effettuate da sviluppatori di terze parti. Se queste estensioni hanno creato dati nel database di storefront e il commerciante vuole avere questi dati nel Magento 2 — file di configurazione del [!DNL Data Migration Tool] devono essere create e modificate di conseguenza.
 
-Se [estensione](https://glossary.magento.com/extension) dispone di proprie tabelle e devi tenere traccia delle relative modifiche per la migrazione delta, segui questi passaggi:
+Se un’estensione dispone di tabelle personalizzate e devi tenere traccia delle relative modifiche per la migrazione delta, segui questi passaggi:
 
 1. Aggiungi le tabelle da tracciare al `deltalog.xml` file
 1. Crea una classe delta aggiuntiva che estende il `Migration\App\Step\AbstractDelta`

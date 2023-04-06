@@ -1,9 +1,9 @@
 ---
 title: Cache del contenuto statico
 description: Comprendi la firma dei contenuti statici e come abilitare o disabilitare la funzione.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ Impostazione della `Expires` l’intestazione di una risorsa statica indica al b
 Questo è un comune [best practice](https://developer.yahoo.com/performance/rules.html#expires=) per la memorizzazione in cache di risorse statiche.
 
 Quando il browser memorizza in cache una risorsa statica e tale risorsa viene modificata sul server, devi cancellare la cache del browser in modo che possa scaricare la nuova versione.
-La cancellazione manuale della cache del browser funziona se sei un [sito web](https://glossary.magento.com/website) amministratore, ma questa non è una richiesta appropriata da fare agli utenti quando desideri che scaricino nuove versioni di una risorsa statica.
+La cancellazione manuale della cache del browser funziona se sei un amministratore del sito web, ma questa non è una richiesta appropriata da fare agli utenti quando desideri che scaricino nuove versioni di una risorsa statica.
 
 ## Firma del contenuto statico
 
-[Contenuto statico](https://glossary.magento.com/static-content) la firma è una funzione Commerce che ti consente di annullare la validità della cache del browser per le risorse statiche.
-A tal fine, Commerce aggiunge una versione di distribuzione all’URL di [file statici](https://glossary.magento.com/static-files).
+La firma dei contenuti statici è una funzione Commerce che consente di annullare la validità della cache del browser per le risorse statiche.
+Commerce esegue questa operazione aggiungendo una versione di distribuzione all’URL dei file statici.
 
 Di seguito è riportato un esempio di URL firmato con una versione:
 

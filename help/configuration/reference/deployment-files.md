@@ -1,9 +1,9 @@
 ---
 title: File di configurazione per la distribuzione
 description: Scopri come funzionano i file di configurazione per l’installazione dell’applicazione Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Al livello superiore di questo array sono _segmenti di configurazione_. Un segme
 
 [Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) fornisce semplicemente l’accesso a queste sezioni ma non consente di estenderle.
 
-Al livello gerarchico successivo, gli elementi di ciascun segmento vengono ordinati in base al [modulo](https://glossary.magento.com/module) definizione della sequenza, ottenuta unendo tutti i file di configurazione dei moduli, ad eccezione dei moduli disabilitati.
+A livello gerarchico successivo, gli elementi di ciascun segmento vengono ordinati in base alla definizione della sequenza del modulo, ottenuta unendo tutti i file di configurazione dei moduli, ad eccezione dei moduli disabilitati.
 
 Nelle sezioni seguenti vengono descritti la struttura e il contenuto della configurazione di distribuzione:
 
@@ -78,6 +78,6 @@ return array (
 
 Il valore `1` o `0` indica se un modulo è abilitato o disabilitato.
 
-I moduli disattivati non sono riconosciuti dall’applicazione Commerce; in altre parole, non partecipano all’unione della configurazione, all’iniezione di dipendenza, agli eventi, ai plug-in e così via. I moduli disattivati non modificano la [vetrina](https://glossary.magento.com/storefront) o [Amministratore](https://glossary.magento.com/admin) e non influenzano il ciclo di produzione.
+I moduli disattivati non sono riconosciuti dall’applicazione Commerce; in altre parole, non partecipano all’unione della configurazione, all’iniezione di dipendenza, agli eventi, ai plug-in e così via. I moduli disattivati non modificano la vetrina o l&#39;amministratore e non influiscono sul routing.
 
 L&#39;unica differenza pratica di un modulo disabilitato e di un modulo assente nella base di codice è che un modulo disabilitato viene trovato dall&#39;autoloader, e le sue classi e costanti sono disponibili per il riutilizzo in un altro codice.

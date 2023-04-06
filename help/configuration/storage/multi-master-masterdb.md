@@ -1,47 +1,47 @@
 ---
-title: Configura automaticamente i database master
-description: Consulta le linee guida per la configurazione automatica della soluzione di database diviso.
-source-git-commit: d029d1ac66bff2ac34b22b2d3b8aafbfc062e082
+title: Configurazione automatica dei database master
+description: Consulta le indicazioni sulla configurazione automatica della soluzione di database suddiviso.
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
 
 
-# Configura automaticamente i database master
+# Configurazione automatica dei database master
 
 {{ee-only}}
 
 {{deprecate-split-db}}
 
-In questo argomento viene illustrato come iniziare a utilizzare la soluzione di database suddiviso:
+Questo argomento illustra come iniziare a utilizzare la soluzione di database suddivisi:
 
-1. Installazione di Adobe Commerce con un singolo database principale (denominato `magento`)
-1. Creazione di due database master aggiuntivi per [pagamento](https://glossary.magento.com/checkout) e OMS (denominati `magento_quote` e `magento_sales`)
-1. Configurazione di Adobe Commerce per l&#39;utilizzo dei database di pagamento e di vendita
+1. Installazione di Adobe Commerce con un singolo database master (denominato `magento`)
+1. Creazione di due database master aggiuntivi per il checkout e l&#39;OMS (denominati `magento_quote` e `magento_sales`)
+1. Configurazione di Adobe Commerce per l’utilizzo dei database di pagamento e di vendita
 
 >[!INFO]
 >
->Questa guida presuppone che tutti e tre i database si trovino sullo stesso host dell’applicazione Commerce e che siano denominati `magento`, `magento_quote`, e `magento_sales`. Tuttavia, spetta a te scegliere dove individuare i database e il nome. Ci auguriamo che i nostri esempi rendano le istruzioni più facili da seguire.
+>Questa guida presuppone che tutti e tre i database si trovino sullo stesso host dell&#39;applicazione Commerce e che siano denominati `magento`, `magento_quote`e `magento_sales`. Tuttavia, spetta a te scegliere dove individuare i database e il loro nome. Speriamo che i nostri esempi rendano le istruzioni più facili da seguire.
 
 ## Installare il software Adobe Commerce
 
-È possibile abilitare i database suddivisi in qualsiasi momento dopo l&#39;installazione del software Adobe Commerce; in altre parole, è possibile aggiungere database suddivisi a un sistema Adobe Commerce che dispone già di dati di estrazione e ordine. Utilizzare le istruzioni contenute nel file README di Adobe Commerce o [guida all’installazione](../../installation/overview.md) per installare il software Adobe Commerce utilizzando un singolo database principale.
+È possibile abilitare i database suddivisi in qualsiasi momento dopo l&#39;installazione del software Adobe Commerce; in altre parole, puoi aggiungere database suddivisi a un sistema Adobe Commerce che dispone già di dati di pagamento e di ordine. Utilizza le istruzioni in Adobe Commerce README o [guida all&#39;installazione](../../installation/overview.md) per installare il software Adobe Commerce utilizzando un singolo database master.
 
-## Imposta database master aggiuntivi
+## Configurare database master aggiuntivi
 
-Creare i database master di estrazione e OMS nel modo seguente:
+Creare database master di checkout e OMS come segue:
 
-1. Accedere al server del database come qualsiasi utente.
-1. Immettere il comando seguente per accedere al prompt dei comandi MySQL:
+1. Accedi al server di database come qualsiasi utente.
+1. Immettere il comando seguente per accedere a un prompt dei comandi MySQL:
 
    ```bash
    mysql -u root -p
    ```
 
 1. Immettere MySQL `root` password dell&#39;utente quando richiesto.
-1. Immettere i seguenti comandi nell&#39;ordine indicato per creare istanze di database denominate `magento_quote` e `magento_sales` con gli stessi nomi utente e password:
+1. Immettere i seguenti comandi nell&#39;ordine mostrato per creare istanze di database denominate `magento_quote` e `magento_sales` con gli stessi nomi utente e password:
 
    ```shell
    create database magento_quote;
@@ -73,7 +73,7 @@ Creare i database master di estrazione e OMS nel modo seguente:
    exit
    ```
 
-   Database del sistema di gestione degli ordini:
+   Database del sistema di gestione ordini:
 
    ```bash
    mysql -u magento_sales -p
@@ -87,15 +87,15 @@ Creare i database master di estrazione e OMS nel modo seguente:
 
 ## Configurare Commerce per l’utilizzo dei database master
 
-Dopo aver impostato un totale di tre database master, utilizzare la riga di comando per configurare Commerce per l&#39;utilizzo. Il comando consente di impostare le connessioni al database e di distribuire le tabelle tra i database master.
+Dopo aver impostato un totale di tre database master, utilizzare la riga di comando per configurare Commerce per utilizzarli. Il comando imposta le connessioni al database e distribuisce le tabelle tra i database master.
 
-### Primi passaggi
+### Primi passi
 
-Consulta [Esecuzione dei comandi](../cli/config-cli.md#running-commands) per accedere ed eseguire i comandi CLI.
+Vedi [Esecuzione dei comandi](../cli/config-cli.md#running-commands) per accedere ed eseguire i comandi CLI.
 
 ### Configurare il database di estrazione
 
-Sintassi del comando:
+Sintassi di comando:
 
 ```bash
 bin/magento setup:db-schema:split-quote --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
@@ -107,7 +107,7 @@ Ad esempio:
 bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quote" --username="magento_quote" --password="magento_quote"
 ```
 
-Viene visualizzato il seguente messaggio per confermare la corretta configurazione:
+Viene visualizzato il seguente messaggio per confermare l&#39;esecuzione della configurazione:
 
 ```terminal
 Migration has been finished successfully!
@@ -115,7 +115,7 @@ Migration has been finished successfully!
 
 ### Configurare il database OMS
 
-Sintassi del comando:
+Sintassi di comando:
 
 ```bash
 bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
@@ -131,7 +131,7 @@ bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sal
 bin/magento setup:upgrade
 ```
 
-Viene visualizzato il seguente messaggio per confermare la corretta configurazione:
+Viene visualizzato il seguente messaggio per confermare l&#39;esecuzione della configurazione:
 
 ```terminal
 Migration has been finished successfully!

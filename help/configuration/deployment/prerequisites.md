@@ -1,9 +1,9 @@
 ---
 title: Prerequisiti per la distribuzione
 description: Visualizza un elenco di prerequisiti per la distribuzione di Commerce in un sistema di sviluppo, build o produzione.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Le autorizzazioni e la proprietà dei file devono essere coerenti tra i sistemi 
 
 - Tutti i seguenti elementi:
 
-   - Imposta lo stesso [proprietario del file system](https://glossary.magento.com/magento-file-system-owner) nome utente su tutti i sistemi
+   - Imposta lo stesso nome utente proprietario del file system su tutti i sistemi
    - Assicurati che il server web venga eseguito come lo stesso utente su tutti i sistemi
    - Assicurati che il proprietario del file system sia nel gruppo del server web su tutti i sistemi
 

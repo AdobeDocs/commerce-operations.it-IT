@@ -1,9 +1,9 @@
 ---
 title: Distribuzione di file di visualizzazione statici
 description: Scopri come scrivere file statici nel file system Commerce durante la modalità di produzione.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Il comando di distribuzione dei file di visualizzazione statica consente di scrivere [file statici](https://glossary.magento.com/static-files) al file system Commerce quando il software Commerce è impostato per [modalità di produzione](../bootstrap/application-modes.md#production-mode).
+Il comando di distribuzione dei file di visualizzazione statica consente di scrivere file statici nel file system Commerce quando il software Commerce è impostato per [modalità di produzione](../bootstrap/application-modes.md#production-mode).
 
 Il termine _file di visualizzazione statica_ fa riferimento a quanto segue:
 
@@ -57,7 +57,7 @@ Nella tabella seguente sono illustrati i parametri e i valori di questo comando.
 | `--language (-l)` | Genera file solo per le lingue specificate. L&#39;impostazione predefinita, senza alcuna opzione specificata, consiste nel generare file per tutti i codici di lingua ISO-639. È possibile specificare il nome di un codice lingua alla volta. Il valore predefinito è **tutto**.<br>Ad esempio: `--language en_US --language es_ES` | No |
 | `--exclude-language` | Genera file per i codici di lingua specificati. L’impostazione predefinita, senza alcuna opzione specificata, consiste nell’escludere nulla. È possibile specificare il nome di un codice della lingua o di un elenco di codici della lingua separati da virgole. Il valore predefinito è **nessuno**. | No |
 | `--theme <theme>` | Temi per i quali distribuire contenuto statico. Il valore predefinito è **tutto**.<br>Ad esempio: `--theme Magento/blank --theme Magento/luma` | No |
-| `--exclude-theme <theme>` | Temi da escludere durante la distribuzione di contenuto statico. Il valore predefinito è **nessuno**.<br>Ad esempio, `--exclude-theme Magento/blank` | No |
+| `--exclude-theme <theme>` | Temi da escludere durante la distribuzione di contenuto statico. Il valore predefinito è **nessuno**.<br>Ad esempio: `--exclude-theme Magento/blank` | No |
 | `--area (-a)` | Genera file solo per le aree specificate. L&#39;impostazione predefinita, senza alcuna opzione specificata, consiste nel generare file per tutte le aree. I valori validi sono `adminhtml` e `frontend`. Il valore predefinito è **tutto**.<br>Ad esempio: `--area adminhtml` | No |
 | `--exclude-area` | Non generare file per le aree specificate. L’impostazione predefinita, senza alcuna opzione specificata, consiste nell’escludere nulla. Il valore predefinito è **nessuno**. | No |
 | `--jobs (-j)` | Abilita l&#39;elaborazione parallela utilizzando il numero specificato di processi. Il valore predefinito è 0 (non eseguire processi paralleli). Il valore predefinito è **0**. | No |

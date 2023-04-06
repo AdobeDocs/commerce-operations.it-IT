@@ -1,9 +1,9 @@
 ---
 title: Passaggi per la migrazione dei post-dati
 description: Scopri quali passi intraprendere dopo l’utilizzo del [!DNL Data Migration Tool] migrare i dati dal Magento 1 al Magento 2.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '74'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Dopo aver completato la migrazione e aver verificato accuratamente il nuovo sito Magento 2, esegui le seguenti attività:
 
-* Mettere il Magento 1 in modalità di manutenzione e arrestare definitivamente tutti [Amministratore](https://glossary.magento.com/admin) attività
+* Metti il Magento 1 in modalità di manutenzione e interrompi definitivamente tutte le attività di amministrazione
 
 * Avvia lavori cron Magento 2
 

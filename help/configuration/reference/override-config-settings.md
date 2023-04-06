@@ -1,9 +1,9 @@
 ---
 title: Ignora impostazioni di configurazione
 description: Scopri come utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1225'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ Ad esempio, per trovare un valore dell’ambito di visualizzazione del sito web 
 
 Per ottenere questi valori dal database:
 
-1. Accedi al tuo sistema di sviluppo come [proprietario del file system](https://glossary.magento.com/magento-file-system-owner) se non lo hai già fatto.
+1. Accedi al tuo sistema di sviluppo come proprietario del file system, se non lo hai già fatto.
 1. Immetti il seguente comando:
 
    ```bash

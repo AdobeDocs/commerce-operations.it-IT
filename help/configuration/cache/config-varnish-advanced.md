@@ -1,9 +1,9 @@
 ---
 title: Configurazione avanzata della vernice
 description: Configura le funzioni avanzate della vernice, incluse le modalità di controllo dello stato, grazia e saint.
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Commerce definisce il seguente controllo di integrità predefinito:
     }
 ```
 
-Ogni 5 secondi, questo controllo dello stato di salute chiama il `pub/health_check.php` script. Questo script controlla la disponibilità del server, di ciascun database e di Redis (se installato). Lo script deve restituire una risposta entro 2 secondi. Se lo script determina che una di queste risorse è inattiva, restituisce un codice di errore HTTP 500. Se questo codice di errore viene ricevuto in sei tentativi su dieci, la [backend](https://glossary.magento.com/backend) è considerato malsano.
+Ogni 5 secondi, questo controllo dello stato di salute chiama il `pub/health_check.php` script. Questo script controlla la disponibilità del server, di ciascun database e di Redis (se installato). Lo script deve restituire una risposta entro 2 secondi. Se lo script determina che una di queste risorse è inattiva, restituisce un codice di errore HTTP 500. Se questo codice di errore viene ricevuto in sei tentativi su dieci, il backend viene considerato non integro.
 
 La `health_check.php` lo script si trova nel `pub` directory. Se la directory principale Commerce è `pub`, quindi assicurati di modificare il percorso nel `url` parametro da `/pub/health_check.php` a `health_check.php`.
 
@@ -39,7 +39,7 @@ Per ulteriori informazioni, consulta la sezione [Controlli sanitari in vernice](
 
 ## Modalità Grace
 
-La modalità Grace consente a Varnish di mantenere un oggetto [cache](https://glossary.magento.com/cache) oltre il valore TTL. Varnish può quindi servire il contenuto scaduto (obsoleto) mentre recupera una nuova versione. Ciò migliora il flusso di traffico e diminuisce i tempi di caricamento. Viene utilizzato nelle situazioni seguenti:
+La modalità Grace consente a Varnish di mantenere un oggetto nella cache oltre il valore TTL. Varnish può quindi servire il contenuto scaduto (obsoleto) mentre recupera una nuova versione. Ciò migliora il flusso di traffico e diminuisce i tempi di caricamento. Viene utilizzato nelle situazioni seguenti:
 
 - Quando il backend Commerce è integro, ma una richiesta richiede più tempo del normale
 - Quando il back-end Commerce non è integro.
@@ -48,7 +48,7 @@ La `vcl_hit` la subroutine definisce il modo in cui Varnish risponde a una richi
 
 ### Quando il back-end Commerce è sano
 
-Quando i controlli di integrità determinano che il backend Commerce è sano, Varnish controlla se il tempo rimane nel periodo di tolleranza. Il periodo di tolleranza predefinito è di 300 secondi, ma un esercente può impostare il valore dal [Amministratore](https://glossary.magento.com/admin) come descritto in [Configurare Commerce per utilizzare Varnish](configure-varnish-commerce.md). Se il periodo di tolleranza non è scaduto, Varnish consegna il contenuto non aggiornato e aggiorna l’oggetto in modo asincrono dal server Commerce. Se il periodo di tolleranza è scaduto, Varnish utilizza il contenuto non aggiornato e aggiorna in modo sincrono l’oggetto dal back-end Commerce.
+Quando i controlli di integrità determinano che il backend Commerce è sano, Varnish controlla se il tempo rimane nel periodo di tolleranza. Il periodo di tolleranza predefinito è di 300 secondi, ma un esercente può impostare il valore dall’amministratore come descritto in [Configurare Commerce per utilizzare Varnish](configure-varnish-commerce.md). Se il periodo di tolleranza non è scaduto, Varnish consegna il contenuto non aggiornato e aggiorna l’oggetto in modo asincrono dal server Commerce. Se il periodo di tolleranza è scaduto, Varnish utilizza il contenuto non aggiornato e aggiorna in modo sincrono l’oggetto dal back-end Commerce.
 
 La quantità massima di tempo utilizzata da Varnish per un oggetto obsoleto è la somma del periodo di tolleranza (300 secondi per impostazione predefinita) e del valore TTL (86400 secondi per impostazione predefinita).
 
@@ -74,7 +74,7 @@ Designare una macchina come installazione primaria. In questo computer, installa
 
 Su tutti gli altri computer, l&#39;istanza Commerce deve avere accesso al database mySQL del computer primario. I computer secondari devono avere accesso anche ai file dell&#39;istanza Commerce principale.
 
-In alternativa, [file statici](https://glossary.magento.com/static-files) il controllo delle versioni può essere disattivato su tutte le macchine. È accessibile dall’amministratore in **Negozi** > Impostazioni > **Configurazione** > **Avanzate** > **Sviluppatore** > **Impostazioni dei file statici** > **Firma di file statici** = **No**.
+In alternativa, il controllo delle versioni dei file statici può essere disattivato su tutti i computer. È accessibile dall’amministratore in **Negozi** > Impostazioni > **Configurazione** > **Avanzate** > **Sviluppatore** > **Impostazioni dei file statici** > **Firma di file statici** = **No**.
 
 Infine, tutte le istanze Commerce devono essere in modalità di produzione. Prima che Varnish inizi, cancella la cache su ogni istanza. Nell&#39;Admin, vai a **Sistema** > Strumenti > **Gestione cache** e fai clic su **Svuotare la cache del Magento**. Puoi anche eseguire il seguente comando per cancellare la cache:
 
@@ -89,7 +89,7 @@ La modalità Saint non fa parte del pacchetto principale Varnish. È una version
 - [Installazione di Varnish 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
 - [Installazione di Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
 
-Dopo la ricompilazione, è possibile installare la modalità Saint [modulo](https://glossary.magento.com/module). In generale, segui questi passaggi:
+Dopo la ricompilazione, è possibile installare il modulo Modalità Saint. In generale, segui questi passaggi:
 
 1. Ottieni il codice sorgente da [Moduli di vernice](https://github.com/varnish/varnish-modules). Clona la versione Git (versione master) poiché le versioni 0.9.x contengono un errore del codice sorgente.
 1. Crea il codice sorgente con gli strumenti automatici:

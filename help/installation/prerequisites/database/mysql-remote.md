@@ -1,9 +1,9 @@
 ---
 title: Impostare una connessione remota al database MySQL
 description: Segui questi passaggi per configurare una connessione al database remoto per le installazioni on-premise di Adobe Commerce e Magenti Open Source.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ Se il server web è in cluster, immetti il comando su ogni host del server web.
 
 Quando installi Adobe Commerce o Magenti Open Source, devi specificare quanto segue:
 
-* La base [URL](https://glossary.magento.com/url) (anche denominato *indirizzo del negozio*) specifica il nome host o l&#39;indirizzo IP del *nodo web*
+* L’URL di base (indicato anche come *indirizzo del negozio*) specifica il nome host o l&#39;indirizzo IP del *nodo web*
 * L&#39;host del database è *database server remoto* Indirizzo IP (o load balancer se il server di database è in cluster)
 * Il nome utente del database è *nodo web locale* utente del database a cui è stato concesso l&#39;accesso
 * Password database è la password dell&#39;utente del nodo Web locale

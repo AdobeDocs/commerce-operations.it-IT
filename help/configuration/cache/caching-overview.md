@@ -1,9 +1,9 @@
 ---
 title: Configurare la memorizzazione in cache
 description: Scopri la memorizzazione in cache e come configurare i meccanismi di cache per l’applicazione Adobe Commerce e Magenti Open Source.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 [!DNL Commerce] consente di configurare alternative al caching predefinito del file system. Questa guida illustra alcune di queste alternative; vale a dire:
 
-- Imposta quanto segue [cache](https://glossary.magento.com/cache) i meccanismi [!DNL Commerce] configurazione:
+- Imposta i seguenti meccanismi di cache nel [!DNL Commerce] configurazione:
 
    - [Database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
    - [Redis](config-redis.md)
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 - Modifica dei dati forniti `default` frontend cache
 
-   Modifichi solo il `<magento_root>/app/etc/di.xml` file, globale dell’applicazione Commerce [iniezione di dipendenza](https://glossary.magento.com/dependency-injection) configurazione.
+   Modifichi solo il `<magento_root>/app/etc/di.xml` file, la configurazione dell’iniezione di dipendenza globale dell’applicazione Commerce.
 
 - Configurazione del proprio frontend di cache personalizzato:
 

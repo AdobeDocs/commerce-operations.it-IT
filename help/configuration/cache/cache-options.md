@@ -1,16 +1,16 @@
 ---
 title: Opzioni cache
 description: Configura l'accesso allo storage cache di basso livello.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
 
 # Opzioni cache a basso livello
 
-L’applicazione Commerce utilizza un livello basso [cache](https://glossary.magento.com/cache) [frontale](https://glossary.magento.com/frontend) e [backend](https://glossary.magento.com/backend) per fornire l’accesso all’archiviazione cache.
+L’applicazione Commerce utilizza un front-end cache e un backend a basso livello per fornire accesso allo storage della cache.
 
 ## Cache front-end a basso livello
 

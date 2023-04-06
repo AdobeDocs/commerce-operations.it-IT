@@ -1,10 +1,10 @@
 ---
 title: Generare dati per il test delle prestazioni
 description: Scopri come generare una grande quantità di dati da utilizzare per il test delle prestazioni.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 9%
+source-wordcount: '749'
+ht-degree: 8%
 
 ---
 
@@ -32,18 +32,18 @@ La tabella seguente fornisce dettagli sui profili del generatore di dati: piccol
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
-| `simple_products` | 800 | 24.000 | 4.000 | 300.000 | 600.000 |
+| `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
 | `configurable_products` | 16 con 24 opzioni | 640 con 24 opzioni | 800 con 24 opzioni e 79 con 200 opzioni | 8.000 con 24 opzioni | 16.000 con 24 opzioni |
 | `product_images` | 100 immagini / 3 immagini per prodotto | 1000 immagini / 3 immagini per prodotto | 1000 immagini / 3 immagini per prodotto | 2000 immagini / 3 immagini per prodotto | 2000 immagini / 3 immagini per prodotto |
-| `categories` | 30 | 300 | 100 | 3.000 | 6.000 |
+| `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `catalog_target_rules` | 5 | 5 | 5 | 5 | 5 |
 | `cart_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `cart_price_rules_floor` | 2 | 2 | 2 | 2 | 2 |
-| `customers` | 200 | 2.000 | 2.000 | 5.000 | 10.000 |
-| `tax rates` | 130 | 40.000 | 40.000 | 40.000 | 40.000 |
-| `orders` | 80 | 50.000 | 50.000 | 100.000 | 150.000 |
+| `customers` | 200 | 2,000 | 2,000 | 5,000 | 10,000 |
+| `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
+| `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
 ### Esegui il generatore di dati
 
@@ -100,7 +100,7 @@ Generating simple products...  done in <time>
 
 ### Utenti amministratori
 
-Generates [admin](https://glossary.magento.com/admin) utenti. [XML](https://glossary.magento.com/xml) nodo profilo:
+Genera gli utenti amministratori. Nodo profilo XML:
 
 ```xml
 <!-- Number of admin users -->
@@ -124,7 +124,7 @@ Genera i set di attributi con la configurazione specificata. Nodo profilo XML:
 
 ### Bundle prodotti
 
-Genera i prodotti bundle. Le selezioni dei bundle generati non vengono visualizzate singolarmente nel [catalogo](https://glossary.magento.com/catalog). I prodotti sono distribuiti in modo uniforme per categorie e siti web. Se  `assign_entities_to_all_websites` dal profilo è impostato su `1`. I prodotti vengono assegnati a tutti i siti web.
+Genera i prodotti bundle. Le selezioni dei bundle generati non vengono visualizzate singolarmente nel catalogo. I prodotti sono distribuiti in modo uniforme per categorie e siti web. Se  `assign_entities_to_all_websites` dal profilo è impostato su `1`. I prodotti vengono assegnati a tutti i siti web.
 
 Nodo profilo XML:
 
@@ -162,7 +162,7 @@ Genera le regole del prezzo di catalogo. Nodo profilo XML:
 
 ### Categorie
 
-Genera le categorie. Se `assign_entities_to_all_websites` è impostato su `0`, tutte le categorie sono distribuite in modo uniforme per categorie principali; in caso contrario, tutte le categorie vengono assegnate a una radice [categoria](https://glossary.magento.com/category).
+Genera le categorie. Se `assign_entities_to_all_websites` è impostato su `0`, tutte le categorie sono distribuite in modo uniforme per categorie principali; in caso contrario, tutte le categorie vengono assegnate a una categoria principale.
 
 Nodo profilo XML:
 
@@ -231,7 +231,7 @@ Sono supportati i seguenti formati di nodo XML:
    </configurable_products>
    ```
 
-- Generare prodotti in base a una creazione dinamica [insieme di attributi](https://glossary.magento.com/attribute-set) con un numero specifico di attributi e opzioni:
+- Genera prodotti in base a un set di attributi creato dinamicamente con un numero specifico di attributi e opzioni:
 
    ```xml
    <configurable_products>

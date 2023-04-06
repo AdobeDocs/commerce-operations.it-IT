@@ -1,9 +1,9 @@
 ---
 title: Scarica il software Adobe Commerce
 description: Scopri come scaricare il software Adobe Commerce e Magenti Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -62,4 +62,4 @@ I sistemi UNIX richiedono `root` privilegi per installare e configurare software
 
 Do *not* installa l&#39;applicazione nel docroot del server web come `root` utente perché il server web potrebbe non essere in grado di interagire con tali file.
 
-Hai bisogno di `root` privilegi per creare [proprietario del file system](file-system/overview.md) e aggiungere il proprietario al gruppo del server web. Utilizzi le [proprietario del file system](https://glossary.magento.com/magento-file-system-owner) per eseguire `bin/magento` comandi dalla riga di comando e per impostare i lavori cron, che pianificano le attività per l&#39;utente.
+Hai bisogno di `root` privilegi per creare [proprietario del file system](file-system/overview.md) e aggiungere il proprietario al gruppo del server web. Utilizzare il proprietario del file system per eseguire `bin/magento` comandi dalla riga di comando e per impostare i lavori cron, che pianificano le attività per l&#39;utente.

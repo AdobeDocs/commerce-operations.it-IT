@@ -1,9 +1,9 @@
 ---
 title: Eseguire un aggiornamento
 description: Segui questi passaggi per aggiornare un progetto Adobe Commerce o Magenti Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 È possibile aggiornare l&#39;applicazione Adobe Commerce o Magenti Open Source dalla riga di comando se il software è stato installato da:
 
-- Download di [metapackage](https://glossary.magento.com/metapackage) utilizzando `composer create-project` comando.
+- Download del metapackage utilizzando la `composer create-project` comando.
 - Installazione dell&#39;archivio compresso.
 
 >[!NOTE]
@@ -108,7 +108,7 @@ Devi completare la [prerequisiti per l’aggiornamento](../prepare/prerequisites
 
    - `<product>` —(Obbligatorio) Il pacchetto da aggiornare. Per gli impianti locali, tale valore deve essere `product-community-edition` o `product-enterprise-edition`.
 
-   - `<version>` —(Obbligatorio) Versione di Adobe Commerce o Magento Open Source a cui si sta effettuando l&#39;aggiornamento. Ad esempio, `2.4.3`.
+   - `<version>` —(Obbligatorio) Versione di Adobe Commerce o Magento Open Source a cui si sta effettuando l&#39;aggiornamento. Ad esempio: `2.4.3`.
 
    - `--no-update` —(Obbligatorio) Disattiva l&#39;aggiornamento automatico delle dipendenze.
 

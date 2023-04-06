@@ -1,9 +1,9 @@
 ---
 title: Impedire l’avvelenamento della cache
 description: Scopri come evitare l’avvelenamento della cache delle pagine per la tua vetrina Commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Impedire l’avvelenamento della cache
 
-Questo argomento illustra come evitare [cache](https://glossary.magento.com/cache) avvelenamento se si utilizza il server web Microsoft Internet Information Server (IIS). _Avvelenamento da cache_ è un metodo per modificare il contenuto della cache in modo da includere pagine diverse dallo stesso sito. Ad esempio, è possibile inserire una pagina di errore HTTP 404 (Non trovato) al posto di alcune pagine secondarie (ad esempio, il [vetrina](https://glossary.magento.com/storefront) home page), che può portare a un potenziale rifiuto del servizio (DoS). Gli URL delle pagine dannose sono memorizzati nella cache da Varnish o Redis, da cui il nome _avvelenamento della cache delle pagine_.
+Questo argomento illustra come evitare l’avvelenamento della cache se si utilizza il server web Microsoft Internet Information Server (IIS). _Avvelenamento da cache_ è un metodo per modificare il contenuto della cache in modo da includere pagine diverse dallo stesso sito. Ad esempio, è possibile inserire una pagina di errore HTTP 404 (Non trovato) al posto di una pagina benigna (ad esempio, la home page della vetrina), che può portare a un potenziale dinial-of-service (DoS). Gli URL delle pagine dannose sono memorizzati nella cache da Varnish o Redis, da cui il nome _avvelenamento della cache delle pagine_.
 
 Questi tipi di attacchi possono essere difficili da rilevare perché non generano errori nei log del server web.
 

@@ -1,9 +1,9 @@
 ---
 title: Replica del database
 description: Scopri i vantaggi della configurazione della replica del database.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ Di seguito è riportato un livello più avanzato ed è fornito solo per informaz
 
 ## Miglioramento delle prestazioni
 
-Per migliorare le prestazioni della replica master-slave, è possibile filtrare alcune tabelle sulle istanze slave. È consigliabile filtrare tutte le tabelle temporanee con pattern di nome `search\_tmp\_%` utilizzati per [catalogo](https://glossary.magento.com/catalog) ricerca.
+Per migliorare le prestazioni della replica master-slave, è possibile filtrare alcune tabelle sulle istanze slave. È consigliabile filtrare tutte le tabelle temporanee con pattern di nome `search\_tmp\_%` utilizzati per la ricerca nel catalogo.
 
 A questo scopo, aggiungi la seguente riga al tuo `my.cnf` file sulle istanze slave:
 

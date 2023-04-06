@@ -1,9 +1,9 @@
 ---
 title: Aggiornare lo schema e i dati del database
 description: Segui questi passaggi per aggiornare lo schema del database Adobe Commerce o Magenti Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Prima di utilizzare questo comando, è necessario [installare l&#39;applicazione
 
 ## Aggiornare lo schema e i dati del database
 
-Ogni volta che esegui un&#39;azione che causa la [schema di database](https://glossary.magento.com/database-schema) o i dati da modificare, è necessario aggiornarli eseguendo il comando descritto in questa sezione. Segue un elenco parziale dei motivi:
+Ogni volta che si esegue un&#39;azione che causa la modifica dello schema o dei dati del database, è necessario aggiornarli eseguendo il comando descritto in questa sezione. Segue un elenco parziale dei motivi:
 
 * È stata aggiornata l&#39;applicazione utilizzando la riga di comando
 * È stato installato o aggiornato un componente utilizzando la riga di comando

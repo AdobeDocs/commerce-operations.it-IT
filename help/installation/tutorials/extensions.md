@@ -1,9 +1,9 @@
 ---
 title: Installare un’estensione
 description: Segui questi passaggi per installare un’estensione Adobe Commerce o Magenti Open Source.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,12 @@ Il codice che estende o personalizza il comportamento di Adobe Commerce e Magent
 Le estensioni includono:
 
 - Moduli (estensione delle funzionalità di Adobe Commerce e Magenti Open Source)
-- Temi (cambiare l&#39;aspetto e la sensazione del vostro [vetrina](https://glossary.magento.com/storefront) e amministratore)
+- Temi (cambia l&#39;aspetto della vetrina e dell&#39;amministratore)
 - Pacchetti per lingua (localizza la vetrina e l’amministratore)
 
 >[!TIP]
 >
->In questo argomento viene illustrato come utilizzare la riga di comando per installare le estensioni acquistate dalla Commerce Marketplace. È possibile utilizzare la stessa procedura per installare _qualsiasi_ estensione; tutto ciò di cui hai bisogno è dell&#39;estensione [Compositore](https://glossary.magento.com/composer) nome e versione. Per trovarlo, apri l&#39;estensione `composer.json` e prendere nota dei valori `"name"` e `"version"`.
+>In questo argomento viene illustrato come utilizzare la riga di comando per installare le estensioni acquistate dalla Commerce Marketplace. È possibile utilizzare la stessa procedura per installare _qualsiasi_ estensione; tutto ciò di cui hai bisogno è il nome e la versione del Compositore dell&#39;estensione. Per trovarlo, apri l&#39;estensione `composer.json` e prendere nota dei valori `"name"` e `"version"`.
 
 Prima dell&#39;installazione, è possibile:
 

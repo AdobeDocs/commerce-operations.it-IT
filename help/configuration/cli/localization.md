@@ -1,9 +1,9 @@
 ---
 title: Dizionari di traduzione e pacchetti di lingue
 description: Scopri come generare dizionari di traduzione e generare pacchetti di lingue.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Vedi [Panoramica sulle traduzioni].
 
 ## Generare un dizionario di traduzione
 
-Puoi generare una [dizionario di traduzione] per personalizzare stringhe esistenti, tradurre parole e frasi in un modulo personalizzato, localizzare un tema o creare [pacchetti linguistici](https://glossary.magento.com/language-package).
+Puoi generare una [dizionario di traduzione] per personalizzare le stringhe esistenti, tradurre parole e frasi in un modulo personalizzato, localizzare un tema o creare pacchetti di lingue.
 
 Per iniziare a tradurre, utilizza un comando per generare un file CSV del dizionario con un elenco raccolto di tutte le frasi e le parole esistenti.
 
@@ -92,7 +92,7 @@ Questa sezione illustra come creare un pacchetto linguistico, che scrive file CS
 1. [Raccogliere e tradurre parole e frasi](#generate-a-translation-dictionary). (2) `--magento` è obbligatorio.)
 1. [Esegui il comando pacchetto linguistico](#run-the-language-package-command).
 1. [Creare directory e file](#create-directories-and-files).
-1. (Facoltativo.) [Configurare più pacchetti per una lingua](#configure-multiple-packages-for-a-language).
+1. (Facoltativo) [Configurare più pacchetti per una lingua](#configure-multiple-packages-for-a-language).
 
 ### Esegui il comando pacchetto linguistico
 
@@ -139,7 +139,7 @@ Per creare questi file:
 
 Quando si dichiara un pacchetto linguistico nel `language.xml` file di configurazione, è necessario specificare la sequenza dell&#39;ereditarietà della lingua per questo pacchetto.
 
-L’ereditarietà della lingua consente di creare una traduzione denominata _bambino_ in base a una traduzione esistente denominata _parent_. Le traduzioni figlio sostituiscono l&#39;elemento padre. Tuttavia, se la traduzione figlio non viene caricata o visualizzata o se manca una frase o una parola, Commerce utilizza l’elemento padre [locale](https://glossary.magento.com/locale). [Esempi di ereditarietà di pacchetti linguistici](#example-of-language-inheritance).
+L’ereditarietà della lingua consente di creare una traduzione denominata _bambino_ in base a una traduzione esistente denominata _parent_. Le traduzioni figlio sostituiscono l&#39;elemento padre. Tuttavia, se la traduzione figlio non viene caricata o visualizzata o se manca una frase o una parola, Commerce utilizza le impostazioni internazionali principali. [Esempi di ereditarietà di pacchetti linguistici](#example-of-language-inheritance).
 
 Per dichiarare un pacchetto, specificare le seguenti informazioni:
 

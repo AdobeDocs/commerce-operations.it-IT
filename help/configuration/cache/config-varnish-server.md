@@ -1,9 +1,9 @@
 ---
 title: Configurare il server web
 description: Scopri come configurare il server web in modo che funzioni con Varnish.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ backend default {
 
 ## Verificare le intestazioni di risposta HTTP
 
-Ora puoi verificare che Varnish stia servendo le pagine guardando [HTML](https://glossary.magento.com/html) intestazioni di risposta restituite da qualsiasi pagina.
+Ora puoi verificare che Varnish stia servendo le pagine guardando le intestazioni di risposta di HTML restituite da qualsiasi pagina.
 
 Prima di poter esaminare le intestazioni, è necessario impostare Commerce per la modalità sviluppatore. Ci sono diversi modi per farlo, il più semplice dei quali è quello di modificare `.htaccess` nella directory principale dell’applicazione Commerce. È inoltre possibile utilizzare [`magento deploy:mode:set`](../cli/set-mode.md) comando.
 
@@ -235,7 +235,7 @@ Se intestazioni come queste lo fanno _not_ display, stop Varnish, controlla il t
 
 ### Osserva le intestazioni di risposta di HTML
 
-Ci sono diversi modi per guardare le intestazioni di risposta, incluso l&#39;uso di un browser [plug-in](https://glossary.magento.com/plug-in) o un ispettore del browser.
+Esistono diversi modi per esaminare le intestazioni di risposta, tra cui l&#39;utilizzo di un plug-in per browser o di un ispettore del browser.
 
 Nell&#39;esempio seguente viene utilizzato `curl`. È possibile immettere questo comando da qualsiasi computer in grado di accedere al server Commerce utilizzando HTTP.
 

@@ -1,9 +1,9 @@
 ---
 title: Soluzione per le prestazioni del database diviso
 description: Scopri la soluzione di database suddiviso per Adobe Commerce e Magenti Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Adobe Commerce utilizza tre database master e un numero configurabile di databas
 A causa del modo in cui è progettata la soluzione di prestazioni del database diviso, il codice personalizzato e i componenti installati _impossibile_ effettua una delle seguenti operazioni:
 
 - Scrivere direttamente nel database (è invece necessario utilizzare l&#39;interfaccia del database Adobe Commerce)
-- Utilizzare JOIN che influenzano le vendite o [preventivo](https://glossary.magento.com/quote) database
+- Utilizzare JOIN che interessano i database di vendite o preventivi
 - Utilizzare chiavi esterne per le tabelle nei database di pagamento, di vendita o principale
 
 >[!WARNING]
@@ -76,7 +76,7 @@ Ciò significa anche che è possibile:
 
 Il database suddiviso richiede l&#39;impostazione di tre database master MySQL su qualsiasi host (tutti e tre sul server Commerce, ogni database su un server separato e così via). Questi sono _maestro_ database e sono utilizzati come segue:
 
-- Un database master per [pagamento](https://glossary.magento.com/checkout) tabelle
+- Un database master per le tabelle di pagamento
 - Un database principale per le tabelle di vendita (noto anche come _Sistema di gestione degli ordini_ oppure _OMS_, tabelle)
 - Un database principale per il resto delle tabelle dell&#39;applicazione Commerce 2
 

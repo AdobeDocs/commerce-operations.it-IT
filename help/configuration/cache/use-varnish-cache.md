@@ -1,9 +1,9 @@
 ---
 title: Cancellazione della cache con vernice
 description: Scopri come funziona la cancellazione della cache con Varnish e come utilizzarla come acceleratore di memorizzazione nella cache web per l’applicazione Adobe Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ Questo argomento illustra le nozioni di base sull’utilizzo di Varnish come acc
 
 ## Spuratura verniciosa
 
-Secondo [Documentazione di vernice](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *purgare* è ciò che accade quando si sceglie un oggetto dal [cache](https://glossary.magento.com/cache) e lo scarti insieme alle sue varianti.&quot; Una eliminazione vernice è simile a un comando di eliminazione cache (o facendo clic su **Svuotare la cache del Magento** in Admin).
+Secondo [Documentazione di vernice](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *purgare* è ciò che accade quando si preleva un oggetto dalla cache e lo si elimina insieme alle sue varianti.&quot; Una eliminazione vernice è simile a un comando di eliminazione cache (o facendo clic su **Svuotare la cache del Magento** in Admin).
 
 Infatti, quando pulisci, svuota o aggiorna la cache Commerce, anche Varnish elimina.
 
 Dopo aver installato e configurato Varnish per lavorare con Commerce, le azioni seguenti possono causare una pulizia di Varnish:
 
-- Mantenimento di un [sito web](https://glossary.magento.com/website).
+- Gestione di un sito web.
 
    Ad esempio, tutte le operazioni eseguite nell’amministratore in:
 

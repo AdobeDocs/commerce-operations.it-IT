@@ -1,9 +1,9 @@
 ---
 title: Configurazione di più siti web con Nginx
 description: Segui questa esercitazione per configurare più siti web con Node.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Vedi [Configurazione di più siti web, negozi e viste store nell’Admin](ms-adm
 
 ## Passaggio 2: Creare host virtuali nginx
 
-Questo passaggio illustra come caricare i siti web [vetrina](https://glossary.magento.com/storefront). È possibile utilizzare siti web o viste store; se utilizzi le viste store, devi regolare di conseguenza i valori dei parametri. Devi completare le attività di questa sezione come utente con `sudo` privilegi.
+Questo passaggio illustra come caricare i siti web sulla vetrina. È possibile utilizzare siti web o viste store; se utilizzi le viste store, devi regolare di conseguenza i valori dei parametri. Devi completare le attività di questa sezione come utente con `sudo` privilegi.
 
 Utilizzando una sola [file host virtuale nginx](#step-2-create-nginx-virtual-hosts), puoi mantenere semplice e pulita la configurazione dell’nginx. Utilizzando diversi file host virtuali, è possibile personalizzare ogni archivio (per utilizzare una posizione personalizzata per `french.mysite.mg` per esempio).
 

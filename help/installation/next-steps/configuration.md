@@ -1,9 +1,9 @@
 ---
 title: Configurare l’applicazione
 description: Scopri la configurazione post-installazione richiesta per le distribuzioni locali Adobe Commerce e Magenti Open Source.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Se si utilizza il server web Apache, è necessario abilitare le riscritture del 
 
 Se hai più nodi web, *impossibile* utilizza la memorizzazione in cache dei file predefinita dell&#39;applicazione perché non esiste alcuna sincronizzazione tra i nodi web. In altre parole, l&#39;attività su un nodo web viene scritta solo nel file system di quel nodo web. L’attività successiva, se eseguita su un altro nodo web, può causare la scrittura di file non necessari o causare errori.
 
-Invece, utilizza [Redis](../../configuration/cache/config-redis.md) per entrambi i valori predefiniti [cache](https://glossary.magento.com/cache) e la cache della pagina.
+Invece, utilizza [Redis](../../configuration/cache/config-redis.md) sia per la cache predefinita che per la cache della pagina.
 
 ## Impostazioni server
 

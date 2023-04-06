@@ -1,10 +1,10 @@
 ---
 user-guide-title: Playbook operativo
-user-guide-description: Scopri come rendere le tue unità di business operative e pronte per gestire un sito di e-commerce di successo.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+user-guide-description: Scopri come rendere le tue aziende operative pronte per eseguire un sito di e-commerce di successo.
+source-git-commit: ed6b9cb5acd35ce8213fafddcd00be1c32127a86
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 12%
+source-wordcount: '143'
+ht-degree: 0%
 
 ---
 
@@ -72,4 +72,5 @@ ht-degree: 12%
    - [Fai clic e raccogli](product/click-collect.md)
    - [PWA](product/progressive-web-app.md)
 - [Elenchi di controllo e modelli](checklists-templates/home.md)
+- [Glossario](glossary.md)
 - [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

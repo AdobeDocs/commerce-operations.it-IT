@@ -1,9 +1,9 @@
 ---
 title: Tipi di configurazione
 description: Crea o estendi i tipi di configurazione.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Estendi i tipi di configurazione
 
-Per estendere un tipo di configurazione esistente, devi solo creare un file di configurazione nel tuo [modulo](https://glossary.magento.com/module).
+Per estendere un tipo di configurazione esistente, devi solo creare un file di configurazione nel modulo.
 
 Ad esempio, per aggiungere un osservatore evento, puoi creare `app/code/{VendorName}/{ModuleName}/etc/events.xml` e dichiarare un nuovo osservatore.
 
@@ -29,11 +29,11 @@ Per creare un tipo di configurazione, devi aggiungere almeno:
 - Schema di convalida XSD
 - File di configurazione XML
 
-Ad esempio, per introdurre un [adattatore](https://glossary.magento.com/adapter) per un nuovo server di ricerca che consenta alle estensioni di configurare la modalità di indicizzazione delle entità in tale server, crea:
+Ad esempio, per introdurre una scheda per un nuovo server di ricerca che consenta alle estensioni di configurare la modalità di indicizzazione delle entità in tale server, crea:
 
 - Caricatore
 - Un file di schema XSD
-- Un file di configurazione con nome appropriato. Ad esempio, `search.xml`. Questo file viene letto e convalidato in base allo schema.
+- Un file di configurazione con nome appropriato. Ad esempio: `search.xml`. Questo file viene letto e convalidato in base allo schema.
 - Qualsiasi altra classe richiesta per il tuo lavoro.
 
 >[!INFO]

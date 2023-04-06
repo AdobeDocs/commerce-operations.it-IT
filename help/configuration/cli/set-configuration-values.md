@@ -1,9 +1,9 @@
 ---
 title: Impostare i valori di configurazione
 description: Scopri come impostare i valori di configurazione e modificare i valori bloccati nell’amministratore.
-source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Puoi impostare i valori nei seguenti momenti:
 
 - Prima di installare Commerce, è possibile impostare i valori di configurazione solo per l’ambito predefinito, perché è l’unico ambito valido.
 
-- Dopo aver installato Commerce, puoi impostare i valori di configurazione per qualsiasi sito Web o [vista store](https://glossary.magento.com/store-view) ambito di applicazione.
+- Dopo aver installato Commerce, puoi impostare i valori di configurazione per qualsiasi ambito di visualizzazione del sito web o dell&#39;archivio.
 
 Utilizza i seguenti comandi:
 

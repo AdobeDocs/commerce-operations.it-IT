@@ -1,9 +1,9 @@
 ---
 title: Compilatore di codice
 description: Scopri come eseguire il compilatore di codice dalla riga di comando.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 La compilazione del codice comprende i seguenti elementi (in nessun ordine particolare):
 
 - Generazione del codice dell&#39;applicazione (stabilimenti, proxy)
-- Aggregazione di configurazione dell&#39;area (ottimizzata) [iniezione di dipendenza](https://glossary.magento.com/dependency-injection) configurazioni per area)
+- Aggregazione della configurazione dell&#39;area (configurazioni di iniezione di dipendenza ottimizzate per area)
 - Generazione di intercettori (generazione di codici ottimizzata di intercettatori)
 - Generazione della cache di intercettazione
 - Generazione del codice degli archivi (codice generato per API)
-- Generazione attributi di dati del servizio (generato [estensione](https://glossary.magento.com/extension) classi per oggetti dati)
+- Generazione attributi di dati di servizio (classi di estensione generate per gli oggetti dati)
 
 È possibile trovare le classi di compilazione del codice nel [\Magento\Setup\Module\Di\App\Task\Operation][operation] spazio dei nomi.
 
@@ -44,7 +44,7 @@ In alcuni casi, potrebbe essere utile compilare il codice prima di installare l�
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   Utilizza la `[-c|--clear-static-content]` opzione di cancellazione [contenuto statico](https://glossary.magento.com/static-content). Questo è necessario se in precedenza hai abilitato o disabilitato i moduli e devi cancellare per essi il contenuto statico generato in precedenza.
+   Utilizza la `[-c|--clear-static-content]` per cancellare il contenuto statico. Questo è necessario se in precedenza hai abilitato o disabilitato i moduli e devi cancellare per essi il contenuto statico generato in precedenza.
 
    Vedi [Abilitare i moduli](../../installation/tutorials/manage-modules.md).
 

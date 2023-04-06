@@ -1,9 +1,9 @@
 ---
 title: Verifica finale
 description: Verifica che la configurazione di Varnish sia configurata correttamente per funzionare con l’applicazione Adobe Commerce.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ X-Magento-Cache-Debug: MISS
 
 ## Controlla i tempi di caricamento delle pagine
 
-Se Varnish funziona, qualsiasi pagina Commerce con blocchi memorizzabili nella cache deve essere caricata in meno di 150 ms. Esempi di tali pagine sono la porta principale e [vetrina](https://glossary.magento.com/storefront) [categoria](https://glossary.magento.com/category) pagine.
+Se Varnish funziona, qualsiasi pagina Commerce con blocchi memorizzabili nella cache deve essere caricata in meno di 150 ms. Esempi di tali pagine sono le pagine della categoria portello anteriore e vetrina.
 
 Utilizzare un ispettore del browser per misurare i tempi di caricamento delle pagine.
 
@@ -66,7 +66,7 @@ Ad esempio, per utilizzare la finestra di ispezione Chrome:
 
 Assicurati che `<magento_root>/var/page_cache` directory vuota:
 
-1. Accedi al server Commerce o passa a [proprietario del file system](https://glossary.magento.com/magento-file-system-owner).
+1. Accedi al tuo server Commerce o passa al proprietario del file system.
 1. Immetti il seguente comando:
 
    ```bash

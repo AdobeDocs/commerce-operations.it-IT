@@ -1,9 +1,9 @@
 ---
 title: Disinstallare i pacchetti di lingua
 description: Per disinstallare un pacchetto Adobe Commerce o Magenti Open Source Language, effettua le seguenti operazioni.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Questa sezione illustra come disinstallare uno o più pacchetti linguistici, includendo facoltativamente il codice dei pacchetti linguistici dal file system. È possibile creare prima i backup in modo da ripristinare i dati in un secondo momento.
 
-Disinstalla questo comando *only* pacchetti linguistici specificati in `composer.json`; in altre parole, i pacchetti linguistici forniti come [Compositore](https://glossary.magento.com/composer) pacchetti. Se [pacchetto linguistico](https://glossary.magento.com/language-package) non è un pacchetto Composer, è necessario disinstallarlo manualmente rimuovendo il codice del pacchetto di linguaggio dal file system.
+Disinstalla questo comando *only* pacchetti linguistici specificati in `composer.json`; in altre parole, pacchetti linguistici forniti come pacchetti Composer. Se il pacchetto linguistico non è un pacchetto Composer, è necessario disinstallarlo manualmente rimuovendo il codice del pacchetto linguistico dal file system.
 
 È possibile ripristinare i backup in qualsiasi momento utilizzando [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
 
@@ -31,7 +31,7 @@ Il comando disinstalla pacchetto linguistico esegue le seguenti attività:
 
 1. Se `--backup code` viene specificato, esegue il backup del file system (escluso `var` e `pub/static` directory) a `var/backups/<timestamp>_filesystem.tgz`
 1. Rimuove i file dei pacchetti di linguaggio dal codebase utilizzando `composer remove`.
-1. Pulisce il [cache](https://glossary.magento.com/cache).
+1. Elimina la cache.
 
 Ad esempio, se si tenta di disinstallare un pacchetto per la lingua da cui dipende un altro pacchetto per la lingua, viene visualizzato il seguente messaggio:
 

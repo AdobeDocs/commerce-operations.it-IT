@@ -1,9 +1,9 @@
 ---
 title: Configurazione di più siti web con Apache
 description: Segui questa esercitazione per configurare più siti web con Apache.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Presupponiamo che:
 
-Se necessario, copia il `index.php` script punto di ingresso per il sito web o [vista store](https://glossary.magento.com/store-view) e aggiungilo quanto segue:
+Se necessario, copia il `index.php` script punto di ingresso per il sito web o la visualizzazione store e aggiungervi quanto segue:
 
 - Si sta lavorando su una macchina di sviluppo (laptop, macchina virtuale e così via)
 

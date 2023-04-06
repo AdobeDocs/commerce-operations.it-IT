@@ -1,9 +1,9 @@
 ---
 title: Verificare l’installazione
 description: Segui questi passaggi per confermare che l’installazione di Adobe Commerce o Magenti Open Source on-premise ha avuto successo.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Verificare l’installazione
 
-Vai a [vetrina](https://glossary.magento.com/storefront) in un browser web. Ad esempio, se la base di installazione [URL](https://glossary.magento.com/url) è `http://www.example.com`, inseriscilo nella barra degli indirizzi o della posizione del browser.
+Vai alla vetrina in un browser web. Ad esempio, se l’URL di base per l’installazione è `http://www.example.com`, inseriscilo nella barra degli indirizzi o della posizione del browser.
 
 La figura seguente mostra una pagina di esempio di vetrina. Se viene visualizzato come segue, l&#39;installazione è stata un successo!
 
@@ -29,9 +29,9 @@ Se la pagina visualizza un `404 (Not Found)` errore o non visualizza gli stili, 
 
 ## Verifica l’amministratore
 
-Vai a [Amministratore](https://glossary.magento.com/magento-admin) in un browser web. Ad esempio, se l’URL di base per l’installazione è `http://www.example.com`e l&#39;URI amministratore è `admin_au1nT`, inserisci `http://www.example.com/admin_au1nT` nella barra degli indirizzi o della posizione del browser.
+Vai ad Amministratore in un browser web. Ad esempio, se l’URL di base per l’installazione è `http://www.example.com`e l&#39;URI amministratore è `admin_au1nT`, inserisci `http://www.example.com/admin_au1nT` nella barra degli indirizzi o della posizione del browser.
 
-(2) [Amministratore](https://glossary.magento.com/admin) L’URI è specificato dal valore del `backend-frontname` parametro di installazione).
+(L’URI amministratore è specificato dal valore del `backend-frontname` parametro di installazione).
 
 Quando richiesto, accedi come amministratore.
 

@@ -1,9 +1,9 @@
 ---
 title: Controllare lo stato del database
 description: Segui questi passaggi per controllare lo stato del database Adobe Commerce o Magenti Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '108'
 ht-degree: 2%
 
 ---
@@ -35,4 +35,4 @@ Il comando restituisce uno dei seguenti codici di uscita:
 |--------------|--------------|---------------|
 | 0 | Normale | Nessuno |
 | 1 | Alcuni moduli utilizzano versioni del codice più recenti o precedenti rispetto al database | Esegui [`magento setup:upgrade`](database-upgrade.md) per aggiornare lo schema del database ed eseguire `composer update` dalla directory radice dell’applicazione per aggiornare le dipendenze dei componenti |
-| 2 | `magento setup:upgrade` obbligatorio | [`magento setup:upgrade`](database-upgrade.md) per aggiornare [schema di database](https://glossary.magento.com/database-schema) |
+| 2 | `magento setup:upgrade` obbligatorio | [`magento setup:upgrade`](database-upgrade.md) per aggiornare lo schema del database |

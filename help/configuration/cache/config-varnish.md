@@ -1,9 +1,9 @@
 ---
 title: Configurare e utilizzare Varnish
 description: Comprendere come Varnish memorizza i file e migliora il traffico HTTP.
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Nella figura precedente, le richieste HTTP degli utenti su Internet generano num
 
 Quando il server web restituisce le risorse, le risorse memorizzabili nella cache vengono memorizzate in Varnish. Eventuali richieste successive per tali risorse vengono soddisfatte da Varnish (ovvero, le richieste non raggiungono il server web). La vernice restituisce il contenuto memorizzato nella cache molto rapidamente. I risultati sono tempi di risposta più rapidi per restituire il contenuto agli utenti e un numero ridotto di richieste che devono essere soddisfatte da Commerce.
 
-Le risorse memorizzate nella cache da Varnish scadono a un intervallo configurabile o vengono sostituite da versioni più recenti delle stesse risorse. È inoltre possibile cancellare manualmente la cache utilizzando il [Amministratore](https://glossary.magento.com/magento-admin) o [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) comando.
+Le risorse memorizzate nella cache da Varnish scadono a un intervallo configurabile o vengono sostituite da versioni più recenti delle stesse risorse. Puoi anche cancellare la cache manualmente utilizzando l’amministratore o il [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) comando.
 
 ## Panoramica del processo
 
@@ -97,7 +97,7 @@ Questo argomento tratta solo le opzioni predefinite dell’elenco precedente. Es
 
 Nella prima richiesta del browser, le risorse memorizzabili in cache vengono consegnate al browser client da Varnish e memorizzate nella cache del browser.
 
-Inoltre, la vernice utilizza un [Entità](https://glossary.magento.com/entity) Assegna tag (ETag) alle risorse statiche. L&#39;ETag fornisce un modo per determinare quando [file statici](https://glossary.magento.com/static-files) sul server. Di conseguenza, le risorse statiche vengono inviate al client quando cambiano sul server, sia su una nuova richiesta di un browser o quando il client aggiorna la cache del browser, in genere premendo F5 o Control+F5.
+Inoltre, Varnish utilizza un Entity Tag (ETag) per le risorse statiche. L&#39;ETag fornisce un modo per determinare quando i file statici cambiano sul server. Di conseguenza, le risorse statiche vengono inviate al client quando cambiano sul server, sia su una nuova richiesta di un browser o quando il client aggiorna la cache del browser, in genere premendo F5 o Control+F5.
 
 Ulteriori dettagli sono forniti nelle sezioni che seguono.
 

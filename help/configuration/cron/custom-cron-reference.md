@@ -1,9 +1,9 @@
 ---
 title: Riferimento personalizzato per cron job e cron group
 description: Scopri come personalizzare gli cronisti utilizzando i gruppi cron.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Personalizzazione del riferimento cronologico
 
-Questo argomento consente di impostare le schede cronologiche e facoltativamente i gruppi cron per i moduli personalizzati. Se personalizzato [modulo](https://glossary.magento.com/module) deve pianificare periodicamente le attività, è necessario impostare un crontab per tale modulo. A _crontab_ è una configurazione cron job.
+Questo argomento consente di impostare le schede cronologiche e facoltativamente i gruppi cron per i moduli personalizzati. Se il modulo personalizzato deve pianificare periodicamente le attività, è necessario impostare una scheda cronologica per tale modulo. A _crontab_ è una configurazione cron job.
 
 Facoltativamente, puoi impostare un gruppo personalizzato, che tra le altre cose ti consente di eseguire i lavori cron definiti in quel gruppo indipendentemente da altri lavori cron.
 
@@ -38,7 +38,8 @@ Crea un `crontab.xml` nella directory del modulo:
 Per un gruppo, il file deve avere i seguenti contenuti:
 
 ```xml
-<config>
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="<group_name>">
         <job name="<job_name>" instance="<classpath>" method="<method>">
             <schedule><time></schedule>
@@ -60,7 +61,8 @@ Dove:
 Il risultato `crontab.xml` con due gruppi potrebbe essere simile al seguente:
 
 ```xml
-<config>
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="default">
         <job name="<job_1_name>" instance="<classpath>" method="<method_name>">
             <schedule>* * * * *</schedule>
@@ -84,7 +86,7 @@ Ad esempio, vedi [Magento_Customer crontab.xml](https://github.com/magento/magen
 
 ### Specifica delle opzioni del gruppo Cron
 
-È possibile dichiarare un nuovo gruppo e specificarne le opzioni di configurazione (tutte eseguite in [vista store](https://glossary.magento.com/store-view) tramite `cron_groups.xml` file, situato in:
+È possibile dichiarare un nuovo gruppo e specificarne le opzioni di configurazione (tutte eseguite nell&#39;ambito della vista Store) tramite `cron_groups.xml` file, situato in:
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml
@@ -93,7 +95,8 @@ Ad esempio, vedi [Magento_Customer crontab.xml](https://github.com/magento/magen
 Di seguito è riportato un esempio di `cron_groups.xml` file:
 
 ```xml
-<config>
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/cron_groups.xsd">
     <group id="<group_name>">
         <schedule_generate_every>1</schedule_generate_every>
         <schedule_ahead_for>4</schedule_ahead_for>

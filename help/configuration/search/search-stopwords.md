@@ -1,9 +1,9 @@
 ---
 title: Configurare le parole chiave di ricerca
 description: Scopri come gestire le parole chiave per Adobe Commerce utilizzando i file CSV.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Per ulteriori informazioni sull&#39;utilizzo delle parole chiave da parte di Ela
 
 Le parole di arresto si trovano nella `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory. Adobe Commerce e Magenti Open Source vengono forniti con un file CSV contenente parole di stop per le impostazioni internazionali predefinite e un file aggiuntivo, `stopwords.csv`, che ha le parole chiave per tutte le impostazioni internazionali che non sono rappresentate da un altro file CSV.
 
-Durata predefinita del file di parole non arrivate a termine [cache](https://glossary.magento.com/cache) è di 15 minuti.
+La durata predefinita della cache del file delle parole chiave è di 15 minuti.
 
 ### Modificare le parole rapide per un&#39;impostazione internazionale esistente
 
@@ -54,7 +54,7 @@ Durata predefinita del file di parole non arrivate a termine [cache](https://glo
       php <magento_root>/bin/magento cache:clean config
       ```
 
-1. Controlla i risultati cercando i termini sul tuo [vetrina](https://glossary.magento.com/storefront).
+1. Controlla i risultati cercando i termini sulla vetrina.
 
 ### Crea parole rapide per una nuova impostazione internazionale
 

@@ -1,9 +1,9 @@
 ---
 title: Verificare il database diviso
 description: Scopri come verificare il corretto funzionamento di una configurazione di database con suddivisione Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 Dopo la configurazione, i database master sono configurati come segue:
 
 - Database Commerce principale: 369 tabelle
-- Commerce [preventivo](https://glossary.magento.com/quote) database: 11 tabelle
+- Database delle virgolette commerciali: 11 tabelle
 - Database vendite Commerce: 55 tabelle
 
 Per verificare che i database suddivisi funzionino correttamente, eseguire le operazioni seguenti e verificare che i dati vengano aggiunti alle tabelle del database utilizzando uno strumento di database come [phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):

@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Data Migration Tool] specifica tecnica"
 description: "Scopri i dettagli di implementazione del [!DNL Data Migration Tool] e come estendere il trasferimento dei dati tra il Magento 1 e il Magento 2."
-source-git-commit: c56cc6d97f69770aa718333c02514ab3cfce774c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Il diagramma seguente rappresenta la struttura di directory di [!DNL Data Migrat
 │       │   ├── Data.php
 │       │   ├── Delta.php
 │       │   └── Settings.php
-│       ├── ResourceModel                   --- contains [adapter](https://glossary.magento.com/adapter) for connection to data storage and classes to work with structured data
+│       ├── ResourceModel                   --- contains adapter for connection to data storage and classes to work with structured data
 │       │   ├── Adapter
 │       │   │   └── Mysql.php
 │       │   ├── AbstractCollection.php
@@ -75,7 +75,7 @@ Il diagramma seguente rappresenta la struttura di directory di [!DNL Data Migrat
 │       │   ├── Source.php
 │       │   └── Structure.php
 │       ├── Config.php
-│       ├── [Exception](https://glossary.magento.com/exception).php
+│       ├── Exception.php
 │       └── Step                            --- functionality for migrating specific data
 │           ├── Eav
 │           │   ├── Data.php
@@ -342,7 +342,7 @@ In questa modalità, la maggior parte dei dati viene migrata. Prima della migraz
 
 #### Passaggio mappa
 
-La fase mappa è responsabile del trasferimento della maggior parte dei dati dal Magento 1 al Magento 2. Questo passaggio legge le istruzioni dal file map.xml (che si trova nel `etc/` ). Il file descrive le differenze tra le strutture di dati di origine (Magento 1) e destinazione (Magento 2). Nel caso in cui il Magento 1 contenga tabelle o campi appartenenti ad alcuni [estensione](https://glossary.magento.com/extension) che non esiste nel Magento 2, allora queste entità possono essere posizionate qui per ignorarle tramite il Passaggio mappa. In caso contrario, viene visualizzato un messaggio di errore.
+La fase mappa è responsabile del trasferimento della maggior parte dei dati dal Magento 1 al Magento 2. Questo passaggio legge le istruzioni dal file map.xml (che si trova nel `etc/` ). Il file descrive le differenze tra le strutture di dati di origine (Magento 1) e destinazione (Magento 2). Nel caso in cui il Magento 1 contenga tabelle o campi che appartengono a un&#39;estensione che non esiste nel Magento 2, queste entità possono essere posizionate qui per ignorarle tramite il Passaggio mappa. In caso contrario, viene visualizzato un messaggio di errore.
 
 Il file mappa ha il formato seguente:
 
@@ -464,7 +464,7 @@ Ecco un diagramma di classe di queste classi:
 
 ## Registrazione
 
-Per implementare l&#39;output del processo di migrazione e controllare tutti i livelli possibili PSR logger, che viene utilizzato nel Magento, viene applicato. `\Migration\Logger\Logger` è stata implementata per fornire funzionalità di registrazione. Per utilizzare il logger, è necessario inserirlo tramite costruttore [iniezione di dipendenza](https://glossary.magento.com/dependency-injection).
+Per implementare l&#39;output del processo di migrazione e controllare tutti i livelli possibili PSR logger, che viene utilizzato nel Magento, viene applicato. `\Migration\Logger\Logger` è stata implementata per fornire funzionalità di registrazione. Per utilizzare il logger, è necessario inserirlo tramite iniezione di dipendenza dal costruttore.
 
 ```php
 class SomeClass

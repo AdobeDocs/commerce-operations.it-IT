@@ -1,9 +1,9 @@
 ---
 title: Opzioni della modalità di manutenzione per l'aggiornamento
-description: 'Crea una pagina in modalità di manutenzione personalizzata che i clienti visualizzano sulla vetrina Adobe Commerce o Magenti Open Source durante l’esecuzione di un aggiornamento. '
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+description: Crea una pagina in modalità di manutenzione personalizzata che i clienti visualizzano sulla vetrina Adobe Commerce o Magenti Open Source durante l’esecuzione di un aggiornamento.
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Questa sezione illustra come creare una pagina di manutenzione personalizzata e 
 
 Per reindirizzare il traffico a una pagina di manutenzione personalizzata:
 
-1. Utilizza un editor di testo per aprire [nginx](https://glossary.magento.com/nginx) file di configurazione che contiene il blocco del server.
+1. Utilizza un editor di testo per aprire il file di configurazione nginx che contiene il blocco del server.
 1. Aggiungi quanto segue al blocco del server (`server` è indicato solo a fini di chiarezza; non aggiungere un secondo blocco server).
 
    I seguenti inseriscono nell&#39;elenco Consentiti gli indirizzi IP 192.0.2.110 e 192.0.2.115 su un sistema in cui è installato il Magento in `/var/www/html/magento2`:

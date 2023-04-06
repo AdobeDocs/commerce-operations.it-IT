@@ -1,9 +1,9 @@
 ---
 title: Configurazione del sistema di produzione
 description: Scopri come configurare un sistema di produzione per l’applicazione Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Potete avere un sistema di produzione. Deve essere vero quanto segue:
 
 Per impostare una macchina di produzione:
 
-1. Dopo aver installato Commerce o averlo estratto dal controllo del codice sorgente, accedi al server di produzione come o passa a [proprietario del file system](https://glossary.magento.com/magento-file-system-owner).
+1. Dopo aver installato Commerce o averlo estratto dal controllo del codice sorgente, accedi al server di produzione come proprietario del file system o passa a.
 1. Crea `~/.ssh/.composer/auth.json` se non l&#39;hai già fatto.
 
    Crea la directory:

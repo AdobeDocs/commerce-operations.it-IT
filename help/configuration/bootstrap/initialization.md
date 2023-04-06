@@ -1,9 +1,9 @@
 ---
 title: Inizializzazione dell'applicazione e avvio
 description: Informazioni sull'inizializzazione e la logica di avvio per l'applicazione Commerce.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Quando la richiesta viene reindirizzata al punto di ingresso, l’applicazione C
 
 ### Punto di ingresso della risorsa multimediale
 
-[Magento\MediaStorage\App\Media][media] recupera dal database le risorse multimediali (ovvero tutti i file caricati nell&#39;archiviazione multimediale). Viene utilizzato ogni volta che il database è configurato come [archiviazione su supporti](https://glossary.magento.com/media-storage).
+[Magento\MediaStorage\App\Media][media] recupera dal database le risorse multimediali (ovvero tutti i file caricati nell&#39;archiviazione multimediale). Viene utilizzato ogni volta che il database viene configurato come archiviazione multimediale.
 
 `\Magento\Core\App\Media` tenta di trovare il file multimediale nell&#39;archivio del database configurato e scriverlo nell&#39;archivio `pub/static` quindi restituirne il contenuto. In caso di errore, restituisce un codice di stato HTTP 404 (Non trovato) nell&#39;intestazione senza contenuto.
 

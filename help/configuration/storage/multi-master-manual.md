@@ -1,9 +1,9 @@
 ---
 title: Configurare manualmente i database master
 description: Consulta le istruzioni sulla configurazione manuale della soluzione di database suddivisi.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Se l’applicazione Commerce è già in produzione o se hai già installato codi
 
 La suddivisione manuale dei database comporta:
 
-- Crea il [pagamento](https://glossary.magento.com/checkout) e le banche dati del sistema di gestione degli ordini (OMS)
+- Creazione di database del sistema di gestione degli ordini e dei pagamenti (OMS)
 - Esegui una serie di script SQL che:
 
    - Elimina chiavi esterne
@@ -62,7 +62,7 @@ L&#39;Adobe consiglia vivamente di eseguire il backup del database e del file sy
 
 ## Configurare database master aggiuntivi
 
-Questa sezione illustra come creare istanze di database per le vendite e [preventivo](https://glossary.magento.com/quote) tabelle.
+In questa sezione viene illustrato come creare istanze di database per le tabelle di vendite e preventivi.
 
 **Creazione di banche dati sulle vendite e sulle quotazioni OMS**:
 
@@ -549,7 +549,7 @@ Individua il blocco che inizia con `'resource'` e aggiungere `'checkout'` e `'sa
 
 ## Script di riferimento
 
-Questa sezione fornisce script che è possibile eseguire per stampare un elenco completo delle tabelle interessate senza eseguire alcuna azione su di esse. È possibile utilizzarle per visualizzare le tabelle interessate prima di suddividere manualmente i database. Questa funzione può essere utile se si utilizzano estensioni che personalizzano [schema di database](https://glossary.magento.com/database-schema).
+Questa sezione fornisce script che è possibile eseguire per stampare un elenco completo delle tabelle interessate senza eseguire alcuna azione su di esse. È possibile utilizzarle per vedere quali tabelle sono interessate prima di suddividere manualmente i database. Questa funzione può essere utile se si utilizzano estensioni che personalizzano lo schema del database.
 
 Per utilizzare questi script:
 

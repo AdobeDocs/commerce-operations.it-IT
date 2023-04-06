@@ -1,9 +1,9 @@
 ---
 title: Configurazione della cache in CentOS
 description: Installa e configura la cache cache su CentOS.
-source-git-commit: 65060d067bbbfe139736df3800688ce897cb17be
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Se memcache non viene visualizzato, riavviare il server Web e aggiornare la pagi
 
 ### Crea un test memcache costituito da un database MySQL e da uno script PHP
 
-Il test utilizza un database, una tabella e dei dati MySQL per verificare che sia possibile recuperare i dati del database e archiviarli in memcache. Uno script PHP cerca prima il [cache](https://glossary.magento.com/cache). Se il risultato non esiste, lo script esegue una query al database. Dopo che la query è stata soddisfatta dal database originale, lo script memorizza il risultato in memcache, utilizzando `set` comando.
+Il test utilizza un database, una tabella e dei dati MySQL per verificare che sia possibile recuperare i dati del database e archiviarli in memcache. Uno script PHP cerca prima la cache. Se il risultato non esiste, lo script esegue una query al database. Dopo che la query è stata soddisfatta dal database originale, lo script memorizza il risultato in memcache, utilizzando `set` comando.
 
 [Maggiori dettagli su questo test](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 

@@ -1,9 +1,9 @@
 ---
 title: Dati che richiedono migrazione manuale
-description: 'Scopri come eseguire la migrazione manuale dei dati da un Magento 1 a un Magento 2 e come migrare manualmente. '
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+description: Scopri come eseguire la migrazione manuale dei dati da un Magento 1 a un Magento 2 e come migrare manualmente.
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ Ci sono quattro tipi di dati che devono essere migrati manualmente:
 
 * Media
 
-* [Vetrina](https://glossary.magento.com/storefront) progettazione
+* Progettazione della vetrina
 
-* [Amministratore](https://glossary.magento.com/admin) account utente
+* Account utente amministratore
 
 * Elenchi di controllo di accesso (ACL)
 
@@ -40,7 +40,7 @@ Questa sezione si applica a te *only* se si memorizzano file multimediali nel da
 
 1. Nel riquadro a destra, scorri fino a **Configurazione dell&#39;archiviazione per i file multimediali**.
 
-1. Da **Seleziona database multimediale** fai clic sul nome del tuo [archiviazione su supporti](https://glossary.magento.com/media-storage) database.
+1. Da **Seleziona database multimediale** fare clic sul nome del database di archiviazione multimediale.
 
 1. Fai clic su **Sincronizza**.
 
@@ -48,15 +48,15 @@ Quindi, ripeti gli stessi passaggi nel pannello Amministratore Magento 2.
 
 ### File multimediali nel file system
 
-Tutti i file multimediali (immagini per prodotti, categorie, [WYSIWYG](https://glossary.magento.com/wysiwyg) e così via) devono essere copiati manualmente da `<your Magento 1 install dir>/media` a `<your Magento 2 install dir>/pub/media`.
+Tutti i file multimediali (immagini per prodotti, categorie, editor WYSIWYG e così via) devono essere copiati manualmente da `<your Magento 1 install dir>/media` a `<your Magento 2 install dir>/pub/media`.
 
 Tuttavia, sì *not* copia il `.htaccess` file presenti nel Magento 1 `media` cartella. Il Magento 2 ha il proprio `.htaccess` ciò dovrebbe essere preservato.
 
 ## Progettazione della vetrina
 
-* Progettazione in file (CSS, JS, modelli, [XML](https://glossary.magento.com/xml) layout) ha cambiato posizione e formato
+* La progettazione nei file (CSS, JS, modelli, layout XML) ha modificato la posizione e il formato
 
-* [Layout](https://glossary.magento.com/layout) Aggiornamenti memorizzati nel database. Inserito tramite l’amministratore del Magento 1 in [CMS](https://glossary.magento.com/cms) Pagine, Widget CMS, [Categoria](https://glossary.magento.com/category) Pagine e pagine di prodotto
+* Aggiornamenti di layout memorizzati nel database. Inserito tramite l’amministratore del Magento 1 nelle pagine CMS, nei widget CMS, nelle pagine delle categorie e nelle pagine dei prodotti
 
 ## Elenchi di controllo di accesso (ACL)
 

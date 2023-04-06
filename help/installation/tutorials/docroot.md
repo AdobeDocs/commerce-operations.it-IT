@@ -1,9 +1,9 @@
 ---
 title: Modificare il docroot per migliorare la sicurezza
 description: Impedisci l’accesso non autorizzato basato su browser al file system locale Adobe Commerce o Magenti Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -165,9 +165,9 @@ Il passaggio tra le modalità è un passo importante per verificare che la confi
 
 ## 5. Verifica la vetrina
 
-Vai a [vetrina](https://glossary.magento.com/storefront) in un browser web per verificare che tutto funzioni.
+Vai alla vetrina in un browser web per verificare che tutto funzioni.
 
-1. Apri un browser web e immetti il nome host o l’indirizzo IP del server nella barra degli indirizzi. Ad esempio, `http://192.168.33.10`.
+1. Apri un browser web e immetti il nome host o l’indirizzo IP del server nella barra degli indirizzi. Ad esempio: `http://192.168.33.10`.
 
    La figura seguente mostra una pagina di esempio di vetrina. Se viene visualizzato come segue, l&#39;installazione è stata un successo!
 
