@@ -1,9 +1,9 @@
 ---
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
-source-git-commit: b71819d123856d03dab872a1652b325ffe7178a6
+source-git-commit: ef501b34947f24f8028bd5876bd4a167551e03ec
 workflow-type: tm+mt
-source-wordcount: '11561'
+source-wordcount: '11914'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,25 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla Comunità per Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.30 {#v1-1-30}
+
+* **ACSD-50336** (per Adobe Commerce e Magenti Open Source >=2.4.4-p1 &lt;2.4.4-p3) - Risolve il problema che impedisce l’invio di e-mail di avviso sul prodotto quando un prodotto è di nuovo in magazzino o il prezzo viene modificato.
+* **ACSD-50367** (per Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7) - Risolve il problema per cui l’esportazione dell’indirizzo del cliente non funziona quando viene creato un attributo dell’indirizzo del cliente con più selezioni senza valori.
+* **ACSD-49877** (per Adobe Commerce e Magenti Open Source >=2.3.7 &lt;2.4.7) - Corregge il problema per cui l’esecuzione automatica dei video non funziona sui dispositivi mobili [!DNL Safari] quando il video è collegato direttamente a un file video remoto e non a un servizio di streaming.
+* **ACSD-50165** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.7) - Corregge l&#39;errore *Impossibile eliminare il file. Avviso!scollega: Nessun file o directory* durante lo scaricamento della cache JS/CSS dall’amministratore.
+* **ACSD-49737** (per Adobe Commerce e Magento Open Source >=2.4.1-p1 &lt;2.4.7) - Corregge l&#39;emissione in cui un coupon viene contrassegnato in modo errato come utilizzato dopo un pagamento con carta non riuscita.
+* **ACSD-50814** (per Adobe Commerce e Magenti Open Source >=2.4.6 &lt;2.4.7) - Risolve il problema per cui un utente amministratore non è in grado di creare una nota di credito.
+* **ACSD-50116** (per Adobe Commerce e Magenti Open Source >=2.3.7 &lt;2.4.7) - Risolve il problema per cui un utente amministratore non può creare una riscrittura URL per le sottocategorie di livello 3 o inferiore.
+* **ACSD-49513** (per Adobe Commerce e Magenti Open Source >=2.4.3 &lt;2.4.5) - Corregge il problema in cui la sincronizzazione dell&#39;archiviazione remota non riesce a causa di file a 0 byte.
+* **ACSD-46683** (per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.7) - Corregge il problema in cui viene visualizzato il prezzo di spedizione *Non ancora calcolato*.
+* **ACSD-49129** (per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.6) - Risolve il problema in cui la variabile *[!UICONTROL content]* attributo (codice immagine base64) non restituito in `rest/V1/products/sku/media` risposte API per prodotti multimediali.
+* **ACSD-50276** (per Adobe Commerce >=2.4.0 &lt;2.4.7) - Risolve il problema per cui il modulo di registrazione cliente non funziona sulla vetrina se viene creato un attributo cliente multiselezione.
+* **ACSD-50527** (per Adobe Commerce >=2.3.7 &lt;2.4.7) - Corregge l&#39;errore che si verifica quando si salva una pagina con un blocco dinamico vuoto.
+* **ACSD-49973** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.5) - Migliora le prestazioni del recupero dei prodotti bundle tramite GraphQL.
+* **BB2B-2598** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.7) - Aggiungi la funzionalità di memorizzazione in cache al [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency]e [!UICONTROL storeConfig] Query GraphQL.
+* Sono state aggiunte nuove versioni per MDVA-42806, ACSD-48627, ACSD-46815.
+* Aggiornamento dei metadati delle patch per ACSD-49773, ACSD-47179, ACSD-48300.
 
 ## v1.1.29 {#v1-1-29}
 
@@ -175,7 +194,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **ACSD-46146** (*per Adobe Commerce e Magenti Open Source >=2.3.0 &lt;2.4.6*): risolve il problema per cui vengono inviate due e-mail di conferma dell’ordine dopo l’invio di un ordine dall’amministratore.
 * **ACSD-45255** (*per Adobe Commerce >=2.4.3 &lt;2.4.6*) - Corregge un&#39;eccezione nella pagina Rapporto Stock bassi per un utente amministratore con restrizioni.
 * **ACSD-45488** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.6*) - Corregge il problema per cui un prodotto configurabile con più origini non viene restituito automaticamente in In Stock .
-* **ACSD-45754** (*per Adobe Commerce e Magenti Open Source >=2.3.1 &lt;2.4.6*) - Corregge il problema per cui i punti premio non vengono aggiunti dopo aver applicato un coupon al carrello.
+* **ACSD-45754** (*per Adobe Commerce e Magenti Open Source >=2.3.1 &lt;2.4.6*) - Corregge il problema per cui i punti premio non vengono aggiunti dopo l&#39;applicazione di un coupon al carrello.
 * **ACSD-45849** (*per Adobe Commerce >=2.4.3 &lt;2.4.4*): risolve il problema della perdita dei metadati video dopo l&#39;applicazione di un aggiornamento di staging.
 * **ACSD-45257** (*per Adobe Commerce e Magenti Open Source >=2.3.4 &lt;2.4.4*): risolve il problema per cui GraphQL non visualizza correttamente uno sconto del carrello.
 * **ACSD-44938** (*per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.4*) - Risolve il problema in cui `VAT_ID` non può essere applicata in una richiesta GraphQL per un utente guest.
