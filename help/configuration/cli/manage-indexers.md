@@ -1,9 +1,9 @@
 ---
 title: Gestire gli indici
 description: Vedi esempi su come visualizzare e gestire gli indici Commerce.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: a7ead687c681914d90e9ed2680c8f7494eba74d4
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,10 @@ Puoi eseguire i seguenti indici in modalità parallela:
 - `Category Product` può essere affiancato dalle viste del negozio.
 - `Catalog Price` può essere affiancato da siti web e gruppi di clienti.
 - `Catalog Permissions` può essere affiancato dai gruppi di clienti.
+
+>[!INFO]
+>
+>Per impostazione predefinita, la parallelizzazione per la ricerca nel catalogo per il testo completo e il prodotto per categoria è abilitata.
 
 Per utilizzare la parallelizzazione, impostare una delle modalità di dimensioni disponibili per l&#39;indicizzatore del prezzo del prodotto:
 
