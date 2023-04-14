@@ -1,7 +1,7 @@
 ---
-source-git-commit: fb62494e65bde8a35c7ff06e4ab83a7e53d5ebc2
+source-git-commit: ce2bb441829c81a032142182dcf84515e76c91b4
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -349,6 +349,44 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <tbody>
     <tr>
       <th colspan="9">Servizio catalogo</th>
+    </tr>
+    <tr>
+      <td>Servizio catalogo 1.7</td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Compatibile</span>
+      </td>
+      <td>Compatibile</span>
+      </td>
+      <td>Compatibile</span>
+      </td>
+      <td>Compatibile</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Servizio catalogo 1.6</td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Compatibile</span>
+      </td>
+      <td>Compatibile</span>
+      </td>
+      <td>Compatibile</span>
+      </td>
+      <td>Compatibile</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
     </tr>
     <tr>
       <td>Servizio catalogo 1.5</td>
