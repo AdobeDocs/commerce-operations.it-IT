@@ -2,9 +2,9 @@
 user-guide-title: Playbook di implementazione
 user-guide-description: Scopri le strategie per la pianificazione e l’implementazione di un sito Adobe Commerce di successo.
 mini-toc-levels: 3
-source-git-commit: 5559d412ab58d392098cfff7a4cabb473c38cb0d
+source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,13 @@ ht-degree: 0%
       - [Architettura headless](architecture/headless/adobe-commerce.md)
 - Infrastruttura e diffusione {#infrastructure}
    - [Panoramica](infrastructure/overview.md)
-   - [Infrastruttura interna](infrastructure/on-premises.md)
+   - Hosting autonomo {#self-hosting}
+      - [Panoramica](infrastructure/self-hosting/overview.md)
+      - [Infrastruttura interna](infrastructure/self-hosting/on-premises.md)
+      - [Concetti di sicurezza](infrastructure/self-hosting/security-concepts.md)
+      - [Monitoraggio della telemetria e degli strumenti](infrastructure/self-hosting/monitoring-tools.md)
+      - [Idee per il disaster recovery](infrastructure/self-hosting/disaster-recovery-ideas.md)
+      - [Suggerimenti sulle prestazioni](infrastructure/self-hosting/performance-tips.md)
    - Infrastruttura cloud {#cloud}
       - [Panoramica](infrastructure/cloud/overview.md)
       - [Aree geografiche](infrastructure/cloud/regions.md)
