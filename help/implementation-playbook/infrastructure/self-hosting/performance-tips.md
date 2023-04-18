@@ -7,9 +7,9 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 66abe9f234aa44f7e07cc024607eeb6591a99d07
+source-git-commit: ab099b2a8a353c2462424831cf8100e7e281b1be
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Prima di disattivare i moduli inutilizzati, assicurarsi di non disporre di test 
 
 ## Richiedi che siano rispettati gli standard di codifica Adobe Commerce e PHP per ogni richiesta di pull
 
-Adobe Commerce ha un set di [Standard di codifica](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. Questi consentono di garantire che venga seguito un modello, uno stile e una progettazione simili, indipendentemente dal tipo di sviluppo software. Se si tratta di un requisito fondamentale da seguire è quando si contribuisce alla base di codice di Adobe Commerce. Tuttavia, il rispetto di questa metodologia per lo sviluppo personalizzato crea anche una solida pietra miliare per tutti gli sviluppatori, attuali e future. Quando richiedi a tutte le richieste di pull di passare uno standard di codice, assicurati che tutti possano comprendere e attendersi gli stessi pattern di sviluppo coerenti.
+Adobe Commerce ha un set di [Standard di codifica](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. Questi consentono di garantire che venga seguito un modello, uno stile e una progettazione simili, indipendentemente dal tipo di sviluppo software. Quando contribuisci alla base di codice Adobe Commerce, è un requisito. Tuttavia, se scegli di seguire questa metodologia per lo sviluppo personalizzato, stabilisci una solida pietra miliare per tutti gli sviluppatori, sia attuali che futuri. Quando richiedi a tutte le richieste di pull di passare uno standard di codice, assicurati che tutti possano comprendere e attendersi gli stessi pattern di sviluppo coerenti.
 
 Per accompagnare gli standard di codifica Adobe Commerce, l&#39;altra base utilizzata è gli standard di codifica di base PHP. Deve essere chiaramente definito nelle guide per gli sviluppatori quali standard sono necessari per seguire ed eventuali deviazioni accettabili. Tuttavia, un fallback dovrebbe essere alla guida gestita pubblicamente disponibile all&#39;indirizzo [PHP-FIG](https://www.php-fig.org){target="_blank"}.
 

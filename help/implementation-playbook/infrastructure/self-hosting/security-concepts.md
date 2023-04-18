@@ -7,7 +7,7 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 0d5c2d3ae44008142797c7ac91530a9df98ae004
+source-git-commit: cca195c20ddcba634a8fc39c0867e0ae28f43683
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 0%
@@ -23,7 +23,7 @@ I seguenti concetti non sono in alcun ordine particolare. Hanno lo scopo di forn
 
 ## File system di sola lettura
 
-Il concetto di file system di sola lettura è stato preso in prestito da [Adobe Commerce su un’infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Questo rimuove completamente un&#39;area importante utilizzata da un attore cattivo. Molti sfruttatori hanno approfittato della modifica di un file che si prevede si trovi nell’applicazione Commerce per evitare il rilevamento. Invece di crearne uno, l’attore errato modifica il contenuto di un file esistente per eseguire un’azione imprevista. Rendere il file system di sola lettura riduce notevolmente questo vettore di attacco.
+Il concetto di file system di sola lettura è stato preso in prestito da [Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Questo rimuove completamente un&#39;area importante utilizzata da un attore cattivo. Molti sfruttatori hanno approfittato della modifica di un file che si prevede si trovi nell’applicazione Commerce per evitare il rilevamento. Invece di crearne uno, l’attore errato modifica il contenuto di un file esistente per eseguire un’azione imprevista. Rendere il file system di sola lettura riduce notevolmente questo vettore di attacco.
 
 ## Utilizzare l’autenticazione a due fattori e i gestori di password
 
