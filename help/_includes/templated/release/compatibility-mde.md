@@ -1,7 +1,7 @@
 ---
-source-git-commit: ce2bb441829c81a032142182dcf84515e76c91b4
+source-git-commit: aa37cc2dff54825f21b0358be540cb954dd5c598
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -489,7 +489,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">Channel Manager</th>
     </tr>
     <tr>
-      <td>Channel Manager 1.4.0</td>
+      <td>Channel Manager 2.0.0</td>
       <td>Supportato</span>
       </td>
       <td>Supportato</span>
@@ -1364,6 +1364,106 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Supportato</span>
       </td>
       <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="9">Completamento store per Adobe Commerce</th>
+    </tr>
+    <tr>
+      <td>Completamento dello store per Adobe Commerce 1.4.0</td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Completamento dello store per Adobe Commerce 1.3.0</td>
+      <td>Non supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Completamento dello store per Adobe Commerce 1.2.0</td>
+      <td>Non supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Completamento dello store per Adobe Commerce 1.1.0</td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Completamento dello store per Adobe Commerce 1.1.0</td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
       </td>
       <td>Non supportato</span>
       </td>
