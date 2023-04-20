@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7dca677d6bde3f2700de5dc527a0f581e06032ad
+source-git-commit: 8bf5cb032671bbb1cd6ff05d4a26c699592d33db
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 0%
 ## Novità
 
 Scopri la nuova documentazione e gli aggiornamenti significativi alla documentazione esistente.
+
+### 19 aprile 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Origine</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Sono state aggiunte informazioni su una nuova patch rilasciata per un problema noto alla versione 2.4.6. Vedi <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Note sulla versione di Adobe Commerce e Magenti Open Source</a>.</p>
+</td>
+      <td>tecnico</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fdbb0959b615689eba3068bc93c4c9876c7a7972">fdbb09</a> (commettere)</td>
+    </tr>
+    <tr>
+      <td><p>Sono state aggiunte informazioni sulla <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard.html">Widget del centro sicurezza</a> nel quadro comandi dello strumento di valutazione a livello di sito.</p>
+</td>
+      <td>aggiornamento principale</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1e84ee6db07ec9080971de22a24fe8a7d8705916">1e84ee</a> (commettere)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 17 aprile 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Origine</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Aggiunta di un <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/self-hosting/overview.html">nuova sezione</a> sui concetti di hosting autonomo, tra cui prestazioni, sicurezza, monitoraggio e disaster recovery.</p>
+</td>
+      <td>nuovo argomento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/699c512de9c6d28ba354f02b4db76975eb5410a9">699c51</a> (commettere)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 12 aprile 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Origine</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Pubblicato <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">note sulla versione</a> per il rilascio del pacchetto QPT (Quality Patches Tool) 1.1.30.</p>
+</td>
+      <td>aggiornamento principale</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/84ed7dd2c24eef437d6719d9758da43423347eeb">84ed7d</a> (commettere)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 5 aprile 2023
 
