@@ -1,9 +1,10 @@
 ---
 title: Utilizzo
 description: Scopri come utilizzare il [!DNL Quality Patches Tool].
-source-git-commit: e35469adb1b3278cf787416e1bc829fae9979efc
+exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ Guarda questo [video tecnico](https://experienceleague.adobe.com/docs/commerce-l
 
 >[!INFO]
 >
->Vedi [Applicare singole patch](#apply-individual-patches) per istruzioni su come applicare patch ai progetti Adobe Commerce o Magenti Open Source. Vedi [Patch disponibili](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) per rivedere un elenco completo delle patch rilasciate.
+>Vedi [Applicare singole patch](#apply-individual-patches) per istruzioni su come applicare patch ai progetti Adobe Commerce o Magenti Open Source. Vedi [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) per rivedere un elenco completo delle patch rilasciate.
 
 >[!WARNING]
 >
@@ -60,7 +61,7 @@ Adobe Commerce 2.3.5.
 La tabella di stato include:
 
 - **Tipo**:
-   - `Optional` — Tutte le patch dal [!DNL Quality Patches Tool] e [Patch cloud](https://devdocs.magento.com/cloud/project/project-patch.html) Il pacchetto è facoltativo per le installazioni Adobe Commerce e Magenti Open Source.
+   - `Optional` — Tutte le patch dal [!DNL Quality Patches Tool] e [Guida di Commerce on Cloud Infrastructure > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) Il pacchetto è facoltativo per le installazioni Adobe Commerce e Magenti Open Source.
    - `Deprecated` — Adobe ha dichiarato obsoleta la singola patch. Se hai applicato la patch, ti consigliamo di ripristinarla. L&#39;operazione di ripristino rimuove anche la patch dalla tabella di stato.
 
 - **Stato**:
@@ -81,7 +82,7 @@ La tabella di stato include:
 
 >[!WARNING]
 >
->È consigliabile testare tutte le patch in un ambiente di staging o di sviluppo prima della distribuzione in produzione. Si consiglia inoltre di eseguire il backup dei dati prima di applicare una patch. Vedi [Eseguire il backup e il rollback del file system](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>È consigliabile testare tutte le patch in un ambiente di staging o di sviluppo prima della distribuzione in produzione. Si consiglia inoltre di eseguire il backup dei dati prima di applicare una patch. Vedi [Backup e ripristino del file system, dei supporti e del database](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Per applicare una singola patch, eseguire il comando seguente dove `MAGETWO-XXXX` è l&#39;ID patch specificato nella tabella di stato:
 
@@ -109,7 +110,7 @@ Puoi anche applicare più patch contemporaneamente separando ogni ID patch aggiu
 
 >[!WARNING]
 >
->È consigliabile testare tutte le patch in un ambiente di staging o di sviluppo prima della distribuzione in produzione. Si consiglia inoltre di eseguire il backup dei dati prima di applicare una patch. Vedi [Eseguire il backup e il rollback del file system](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>È consigliabile testare tutte le patch in un ambiente di staging o di sviluppo prima della distribuzione in produzione. Si consiglia inoltre di eseguire il backup dei dati prima di applicare una patch. Vedi [Backup e ripristino del file system, dei supporti e del database](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Per ripristinare una singola patch, eseguire il comando seguente dove `MAGETWO-XXXX` è l&#39;ID patch specificato nella tabella di stato:
 

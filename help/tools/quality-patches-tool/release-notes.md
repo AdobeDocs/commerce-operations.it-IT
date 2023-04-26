@@ -1,9 +1,10 @@
 ---
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
-source-git-commit: 760f7f5e2e27dba8e77e564230ab3f1cf374dac2
+exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '11946'
+source-wordcount: '11947'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 
 >[!INFO]
 >
->Vedi [Applica patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) per istruzioni su come applicare patch ai progetti Adobe Commerce o Magenti Open Source. Vedi [Patch disponibili](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella Guida all’aggiornamento del software per esaminare un elenco completo delle patch rilasciate.
+>Vedi [Applica patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) per istruzioni su come applicare patch ai progetti Adobe Commerce o Magenti Open Source. Vedi [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella Guida all’aggiornamento del software per esaminare un elenco completo delle patch rilasciate.
 
 >[!INFO]
 >
@@ -195,7 +196,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **ACSD-46146** (*per Adobe Commerce e Magenti Open Source >=2.3.0 &lt;2.4.6*): risolve il problema per cui vengono inviate due e-mail di conferma dell’ordine dopo l’invio di un ordine dall’amministratore.
 * **ACSD-45255** (*per Adobe Commerce >=2.4.3 &lt;2.4.6*) - Corregge un&#39;eccezione nella pagina Rapporto Stock bassi per un utente amministratore con restrizioni.
 * **ACSD-45488** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.6*) - Corregge il problema per cui un prodotto configurabile con più origini non viene restituito automaticamente in In Stock .
-* **ACSD-45754** (*per Adobe Commerce e Magenti Open Source >=2.3.1 &lt;2.4.6*) - Corregge il problema per cui i punti premio non vengono aggiunti dopo l&#39;applicazione di un coupon al carrello.
+* **ACSD-45754** (*per Adobe Commerce e Magenti Open Source >=2.3.1 &lt;2.4.6*) - Corregge il problema per cui i punti premio non vengono aggiunti dopo aver applicato un coupon al carrello.
 * **ACSD-45849** (*per Adobe Commerce >=2.4.3 &lt;2.4.4*): risolve il problema della perdita dei metadati video dopo l&#39;applicazione di un aggiornamento di staging.
 * **ACSD-45257** (*per Adobe Commerce e Magenti Open Source >=2.3.4 &lt;2.4.4*): risolve il problema per cui GraphQL non visualizza correttamente uno sconto del carrello.
 * **ACSD-44938** (*per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.4*) - Risolve il problema in cui `VAT_ID` non può essere applicata in una richiesta GraphQL per un utente guest.
