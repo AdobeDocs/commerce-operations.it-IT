@@ -1,13 +1,13 @@
 ---
 title: Gestire gli indici
 description: Vedi esempi su come visualizzare e gestire gli indici Commerce.
-source-git-commit: a7ead687c681914d90e9ed2680c8f7494eba74d4
+exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
+source-git-commit: beee479caeb4145d759c105012ffc8b6b55a6e39
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Gestire gli indici
 
@@ -37,6 +37,9 @@ catalog_product_price                    Product Price
 catalogsearch_fulltext                   Catalog Search
 salesrule_rule                           Sales Rule
 ```
+
+>[!NOTE]
+> I commercianti Adobe Commerce che utilizzano Live Search, Catalog Service o Product Recommendations hanno la possibilità di utilizzare [Indicizzazione dei prezzi basata su SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-index/index.html).
 
 ## Visualizza lo stato dell&#39;indicizzatore
 
