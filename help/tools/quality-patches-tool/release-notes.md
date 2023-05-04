@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
+source-git-commit: 205a0b67fab14a313d28355eed668d60ce477e64
 workflow-type: tm+mt
-source-wordcount: '11947'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla Comunità per Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.31 {#v1-1-31}
+
+* **ACSD-50345** (per Adobe Commerce e Magenti Open Source >=2.4.3 &lt;2.4.4 || >=2.4.4-p1 &lt;2.4.6) - Corregge il problema per cui Recaptcha v2 non si ricarica dopo l’invio di un pagamento non riuscito.
+* **ACSD-50817** (per Adobe Commerce e Magenti Open Source >=2.3.7 &lt;2.4.7) - Ottimizza il lavoro Cron `sales_clean_quotes` per eseguire più velocemente.
+* **ACSD-49392** (per Adobe Commerce e Magenti Open Source >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) - Risolve il problema in cui lo stato dell&#39;ordine diventa chiuso dopo un rimborso parziale per un prodotto in bundle.
+* **ACSD-51036** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.5) - Risolve il problema che si verificava quando le condizioni di concorrenza durante le chiamate REST API simultanee causavano la sovrascrittura delle informazioni sullo stato di spedizione nel [!UICONTROL Items Ordered] tabella.
+* **ACSD-50858** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.7) - Migliora le prestazioni per il caricamento dei contenuti dei banner.
+* Aggiunte nuove versioni per MDVA-39305-v2, ACSD-45169.
+* Sono state aggiornate le patch ACSD-50260-v2.
 
 ## v1.1.30 {#v1-1-30}
 
@@ -196,7 +206,7 @@ La [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) off
 * **ACSD-46146** (*per Adobe Commerce e Magenti Open Source >=2.3.0 &lt;2.4.6*): risolve il problema per cui vengono inviate due e-mail di conferma dell’ordine dopo l’invio di un ordine dall’amministratore.
 * **ACSD-45255** (*per Adobe Commerce >=2.4.3 &lt;2.4.6*) - Corregge un&#39;eccezione nella pagina Rapporto Stock bassi per un utente amministratore con restrizioni.
 * **ACSD-45488** (*per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.6*) - Corregge il problema per cui un prodotto configurabile con più origini non viene restituito automaticamente in In Stock .
-* **ACSD-45754** (*per Adobe Commerce e Magenti Open Source >=2.3.1 &lt;2.4.6*) - Corregge il problema per cui i punti premio non vengono aggiunti dopo aver applicato un coupon al carrello.
+* **ACSD-45754** (*per Adobe Commerce e Magenti Open Source >=2.3.1 &lt;2.4.6*) - Corregge il problema per cui i punti premio non vengono aggiunti dopo l&#39;applicazione di un coupon al carrello.
 * **ACSD-45849** (*per Adobe Commerce >=2.4.3 &lt;2.4.4*): risolve il problema della perdita dei metadati video dopo l&#39;applicazione di un aggiornamento di staging.
 * **ACSD-45257** (*per Adobe Commerce e Magenti Open Source >=2.3.4 &lt;2.4.4*): risolve il problema per cui GraphQL non visualizza correttamente uno sconto del carrello.
 * **ACSD-44938** (*per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.4*) - Risolve il problema in cui `VAT_ID` non può essere applicata in una richiesta GraphQL per un utente guest.
