@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8bf5cb032671bbb1cd6ff05d4a26c699592d33db
+source-git-commit: 0b9213db01cce14938e560ae576cf8ea543e4da7
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## Novità
 
 Scopri la nuova documentazione e gli aggiornamenti significativi alla documentazione esistente.
+
+### 20 aprile 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Origine</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stato aggiunto il <code class="language-plaintext highlighter-rouge">commerce.eventing.event.publish</code> consumer della coda messaggi <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html">tabella di riferimento</a>.</p>
+</td>
+      <td>tecnico</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2f9bfcf9a8232cbe659062a9b1bc88eda3d9158c">2f9bfc</a> (commettere)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 19 aprile 2023
 
