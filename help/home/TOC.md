@@ -1,7 +1,7 @@
 ---
 user-guide-title: Guide operative
 user-guide-description: Scopri gli aspetti operativi della manutenzione dell’applicazione Adobe Commerce o Magenti Open Source.
-source-git-commit: 035c60de7234e15c0ace3ffbf60aa771587c432c
+source-git-commit: 6291b6c9e062509e9bb2069050d455783fb06c7a
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -22,5 +22,5 @@ ht-degree: 0%
 - [Strumenti da riga di comando](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html)
 - [Playbook di implementazione](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
 - [Playbook operativo](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
-- [Commercio in scala](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
+- [Commercio in scala](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/overview.html)
 - [Sicurezza e conformità](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/overview.html)
