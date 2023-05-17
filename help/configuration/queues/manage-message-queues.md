@@ -1,13 +1,13 @@
 ---
 title: Gestire le code dei messaggi
 description: Scopri come gestire le code di messaggi dalla riga di comando per Adobe Commerce.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
+source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # Gestire le code dei messaggi
 
@@ -74,7 +74,7 @@ Modifica le `/app/etc/env.php` file per configurare il lavoro cron `consumers_ru
 - `cron_run` - Un valore booleano che abilita o disabilita il `consumers_runner` cron job (predefinito = `true`).
 - `max_messages` - Il numero massimo di messaggi che ogni consumatore deve elaborare prima di terminare (impostazione predefinita = `10000`). Anche se non è consigliato, puoi utilizzare 0 per impedire al consumatore di terminare. Vedi [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) per configurare il modo in cui i consumatori elaborano i messaggi dalla coda dei messaggi.
 - `consumers` - Un array di stringhe che specifica quali consumatori eseguire. Viene eseguita una matrice vuota *tutto* consumatori.
-- `multiple_processes` - Matrice di coppie chiave-valore che specifica quale consumatore eseguire in quanti processi.
+- `multiple_processes` - Matrice di coppie chiave-valore che specifica quale consumatore eseguire in quanti processi. Supportato in Commerce 2.4.4 o versione successiva.
 
    >[!INFO]
    >
