@@ -1,13 +1,13 @@
 ---
 title: File di configurazione per la distribuzione
 description: Scopri come funzionano i file di configurazione per l’installazione dell’applicazione Commerce.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
+source-git-commit: dd990800551dd2ba35ebc7d2bc04edeb1b183d6f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
-
 
 # File di configurazione per la distribuzione
 
@@ -17,9 +17,6 @@ Adobe Commerce fornisce file di configurazione che consentono di personalizzare 
 Questo file contiene l&#39;elenco dei moduli installati, dei temi e dei pacchetti linguistici; e le impostazioni di configurazione condivise.
 
    Archivia questo file nel controllo del codice sorgente e utilizzalo nei sistemi di sviluppo, staging e produzione.
-
-   A partire dalla versione 2.2, il `app/etc/config.php` il file non è più una voce nel `.gitignore` file.
-Ciò è stato fatto per facilitare [distribuzione della pipeline](../deployment/technical-details.md).
 
 - `app/etc/env.php` contiene impostazioni specifiche dell&#39;ambiente di installazione.
 
