@@ -1,37 +1,37 @@
 ---
-title: Installa Varnish
-description: Consulta i consigli sull'installazione di Varnish.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+title: Installa vernice
+description: Consulta i consigli sull’installazione di Varnish.
+exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
 
 ---
 
+# Installa vernice
 
-# Installa Varnish
+L&#39;installazione del software Vernice esula dallo scopo di questa guida. Per ulteriori informazioni sull&#39;installazione di Vernice, vedere:
 
-L&#39;installazione del software Vernish va oltre lo scopo di questa guida. Per ulteriori informazioni sull&#39;installazione di Varnish, vedi:
-
-- [guida all&#39;installazione](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
-- [Guide all&#39;installazione in vernice](https://www.varnish-cache.org/docs)
-- [Come installare Varnish (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
+- [guida all’installazione](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
+- [Guide all&#39;installazione di vernice](https://www.varnish-cache.org/docs)
+- [Come installare Vernice (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >
->Questo argomento è scritto per Vernish su CentOS e Apache 2.4. Se si sta impostando Varnish in un ambiente diverso, alcuni comandi sono probabilmente diversi. Per ulteriori informazioni, consulta la documentazione precedente.
+>Questo argomento è stato scritto per Varnish su CentOS e Apache 2.4. Se si imposta la vernice in un ambiente diverso, è probabile che alcuni comandi siano diversi. Per ulteriori informazioni, consulta la documentazione precedente.
 >
->Se si intende installare i moduli Varnish (vmods), ad esempio la modalità saint, è necessario installare Varnish compilando il codice anziché installandolo da un pacchetto. Vedi [Modalità Saint](config-varnish-advanced.md#saint-mode) per ulteriori dettagli.
+>Se si desidera installare i moduli di vernice (vmod), ad esempio la modalità saint, è consigliabile installare Vernice compilando il codice anziché installandolo da un pacchetto. Consulta [Modalità Saint](config-varnish-advanced.md#saint-mode) per ulteriori dettagli.
 
-## Conferma la versione verniciata
+## Conferma la versione di vernice
 
-Apri un terminale e immetti il seguente comando per visualizzare la versione di Varnish:
+Apri un terminale e immetti il seguente comando per visualizzare la versione di Vernice:
 
 ```bash
 varnishd -V
 ```
 
-Segue un esempio:
+Di seguito è riportato un esempio:
 
 ```terminal
 varnishd (varnish-6.3.2 revision 199de9b)
@@ -39,4 +39,4 @@ Copyright (c) 2006 Verdens Gang AS
 Copyright (c) 2006-2019 Varnish Software AS
 ```
 
-Assicurati che la versione sia 6.x prima di continuare. Se esegui una versione inferiore a 6.x, devi effettuare l’aggiornamento a una versione supportata. Per ulteriori informazioni, consulta la documentazione di installazione di Varnish .
+Assicurati che la versione sia 6.x prima di continuare. Se utilizzi una versione precedente alla 6.x, devi passare a una versione supportata. Per ulteriori informazioni, consultare la documentazione di installazione di Vernice.

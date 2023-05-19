@@ -1,21 +1,21 @@
 ---
 title: Apache
-description: Segui questi passaggi per installare e configurare il server web Apache per le installazioni on-premise di Adobe Commerce e Magenti Open Source.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+description: Segui questi passaggi per installare e configurare il server web Apache per le installazioni locali di Adobe Commerce e Magenti Open Source.
+exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 0%
 
 ---
 
-
 # Apache
 
 Adobe Commerce supporta Apache 2.4.x.
 
-## Apache direttive richieste
+## Direttive obbligatorie Apache
 
-1. Imposta `AllowEncodedSlashes` nella configurazione del server (a livello globale) o nelle configurazioni dell’host virtuale per evitare la decodifica delle barre codificate che possono causare problemi agli URL. Ad esempio, quando recuperi prodotti con una barra nello SKU tramite l’API, non vuoi che venga convertita. Il blocco di esempio non è completo e sono necessarie altre direttive.
+1. Imposta `AllowEncodedSlashes` nella configurazione del server (a livello globale) o nelle configurazioni dell’host virtuale per evitare di decodificare le barre codificate che possono causare problemi per gli URL. Ad esempio, quando recuperi prodotti con una barra nello SKU tramite l’API, non desideri convertirli. Il blocco campione non è completo e sono necessarie altre direttive.
 
    ```conf
    <VirtualHost *:443>
@@ -26,25 +26,25 @@ Adobe Commerce supporta Apache 2.4.x.
 
 ## Apache riscrive e htaccess
 
-Questo argomento illustra come abilitare la riscrittura di Apache 2.4 e specificare un&#39;impostazione per la [file di configurazione distribuito, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
+Questo argomento illustra come abilitare Apache 2.4 riscrive e specificare un’impostazione per [file di configurazione distribuito, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-Adobe Commerce e Magenti Open Source utilizzano le riscritture del server e `.htaccess` fornire istruzioni a livello di directory per Apache. Le istruzioni seguenti sono incluse anche in tutte le altre sezioni di questo argomento.
+Adobe Commerce e Magenti Open Source utilizzano le riscritture dei server e `.htaccess` per fornire istruzioni a livello di directory per Apache. Le seguenti istruzioni sono incluse anche in tutte le altre sezioni di questo argomento.
 
-Usa questa sezione per abilitare le riscritture Apache 2.4 e specifica un&#39;impostazione per [file di configurazione distribuito, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
+Utilizza questa sezione per abilitare le riscritture di Apache 2.4 e specificare un’impostazione per [file di configurazione distribuito, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
-Adobe Commerce e Magenti Open Source utilizzano le riscritture del server e `.htaccess` fornire istruzioni a livello di directory per Apache.
+Adobe Commerce e Magenti Open Source utilizzano le riscritture dei server e `.htaccess` per fornire istruzioni a livello di directory per Apache.
 
 >[!NOTE]
 >
->In genere, se non si abilita queste impostazioni, non verrà visualizzato alcuno stile sulla vetrina o sull&#39;amministratore.
+>Se non si attivano queste impostazioni, in genere non vengono visualizzati stili nella vetrina o nell’amministratore.
 
-1. Attiva il modulo di riscrittura Apache:
+1. Abilita il modulo di riscrittura Apache:
 
    ```bash
    a2enmod rewrite
    ```
 
-1. Per abilitare l&#39;applicazione all&#39;utilizzo del `.htaccess` file di configurazione, consulta le linee guida [Documentazione di Apache 2.4](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+1. Per abilitare l&#39;applicazione all&#39;utilizzo del `.htaccess` , vedere le linee guida in [Documentazione di Apache 2.4](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
 
    >[!TIP]
    >
@@ -60,7 +60,7 @@ Adobe Commerce e Magenti Open Source utilizzano le riscritture del server e `.ht
 
    >[!NOTE]
    >
-   >A volte potrebbero essere necessari parametri aggiuntivi. Per ulteriori informazioni, consulta la sezione [Documentazione di Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+   >A volte, potrebbero essere necessari parametri aggiuntivi. Per ulteriori informazioni, vedere [Documentazione di Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
 
 1. Se hai modificato le impostazioni di Apache, riavvia Apache:
 
@@ -70,13 +70,13 @@ Adobe Commerce e Magenti Open Source utilizzano le riscritture del server e `.ht
 
    >[!NOTE]
    >
-   >- Se hai effettuato l’aggiornamento da una versione precedente di Apache, cerca prima `<Directory "/var/www/html">` o `<Directory "/var/www">` in `000-default.conf`.
-   >- È necessario modificare il valore di `AllowOverride` nella direttiva per la directory in cui si prevede di installare il software Adobe Commerce o Magenti Open Source. Ad esempio, per installare nel docroot del server web, modifica la direttiva in `<Directory /var/www>`.
+   >- Se hai effettuato l’aggiornamento da una versione precedente di Apache, cerca `<Directory "/var/www/html">` o `<Directory "/var/www">` in `000-default.conf`.
+   >- È necessario modificare il valore di `AllowOverride` nella direttiva per la directory in cui si prevede di installare il software Adobe Commerce o di Magento Open Source. Ad esempio, per eseguire l’installazione nella directory principale dei documenti del server web, modifica la direttiva in `<Directory /var/www>`.
 
 
 >[!NOTE]
 >
->In genere, se non si attivano queste impostazioni, gli stili non vengono visualizzati nella vetrina o in Admin.
+>Se non si attivano queste impostazioni, in genere gli stili non vengono visualizzati nella vetrina o in Amministrazione.
 
 ## Moduli richiesti Apache
 
@@ -89,7 +89,7 @@ Adobe Commerce e Magenti Open Source richiedono l’installazione dei seguenti m
 - [mod_security.c](https://modsecurity.org)
 - [mod_ssl.c](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
 
-## Verificare la versione Apache
+## Verifica la versione di Apache
 
 Per verificare la versione di Apache in esecuzione, immetti:
 
@@ -97,41 +97,41 @@ Per verificare la versione di Apache in esecuzione, immetti:
 apache2 -v
 ```
 
-Il risultato viene visualizzato in modo simile al seguente:
+Il risultato è simile al seguente:
 
 ```terminal
 Server version: Apache/2.4.04 (Ubuntu)
 Server built: Jul 22 2020 14:35:32
 ```
 
-- Se Apache è *not* installati, vedere:
+- Se Apache è *non* , vedere:
    - [Installazione o aggiornamento di Apache su Ubuntu](#installing-apache-on-ubuntu)
    - [Installazione di Apache su CentOS](#installing-apache-on-centos)
 
 ## Installazione o aggiornamento di Apache su Ubuntu
 
-Nelle sezioni seguenti viene illustrato come installare o aggiornare Apache:
+Le sezioni seguenti spiegano come installare o aggiornare Apache:
 
-- Installa Apache
-- Aggiornamento ad Apache 2.4 su Ubuntu per utilizzare PHP 7.4.
+- Installare Apache
+- Effettua l’aggiornamento ad Apache 2.4 su Ubuntu per utilizzare PHP 7.4.
 
 ### Installazione di Apache su Ubuntu
 
 Per installare la versione predefinita di Apache:
 
-1. Installa Apache
+1. Installare Apache
 
    ```bash
    apt-get -y install apache2
    ```
 
-1. Verifica l’installazione.
+1. Verificare l&#39;installazione.
 
    ```bash
    apache2 -v
    ```
 
-   Il risultato viene visualizzato in modo simile al seguente:
+   Il risultato è simile al seguente:
 
    ```terminal
    Server version: Apache/2.4.18 (Ubuntu)
@@ -144,7 +144,7 @@ Per installare la versione predefinita di Apache:
 
 Per effettuare l’aggiornamento ad Apache 2.4:
 
-1. Aggiungi il `ppa:ondrej` archivio, che ha Apache 2.4:
+1. Aggiungi il `ppa:ondrej` archivio, che dispone di Apache 2.4:
 
    ```bash
    apt-get -y update
@@ -158,7 +158,7 @@ Per effettuare l’aggiornamento ad Apache 2.4:
    apt-get -y update
    ```
 
-1. Installa Apache 2.4:
+1. Installare Apache 2.4:
 
    ```bash
    apt-get install -y apache2
@@ -168,13 +168,13 @@ Per effettuare l’aggiornamento ad Apache 2.4:
    >
    >Se il comando &#39;apt-get install&#39; non riesce a causa di dipendenze non soddisfatte, consulta una risorsa come [https://askubuntu.com/](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
 
-1. Verifica l’installazione.
+1. Verificare l&#39;installazione.
 
    ```bash
    apache2 -v
    ```
 
-   Devono essere visualizzati messaggi simili ai seguenti:
+   Dovrebbero essere visualizzati messaggi simili ai seguenti:
 
    ```terminal
    Server version: Apache/2.4.10 (Ubuntu)
@@ -185,25 +185,25 @@ Per effettuare l’aggiornamento ad Apache 2.4:
 
 ## Installazione di Apache su CentOS
 
-Adobe Commerce e Magenti Open Source richiedono la riscrittura del server tramite Apache. È inoltre necessario specificare il tipo di direttive che è possibile utilizzare in `.htaccess`, utilizzato dall&#39;applicazione per specificare le regole di riscrittura.
+Adobe Commerce e Magenti Open Source richiedono la riscrittura del server Apache. È inoltre necessario specificare il tipo di direttive che è possibile utilizzare in `.htaccess`, utilizzato dall&#39;applicazione per specificare le regole di riscrittura.
 
-L’installazione e la configurazione di Apache è fondamentalmente un processo in tre fasi: installare il software, attivare le riscritture e specificare `.htaccess` direttive.
+L’installazione e la configurazione di Apache sono fondamentalmente tre passaggi: installare il software, abilitare le riscritture e specificare `.htaccess` direttive.
 
 ### Installazione di Apache
 
-1. Installa Apache 2.4 se non lo hai già fatto.
+1. Se non lo hai già fatto, installa Apache 2.4.
 
    ```bash
    yum -y install httpd
    ```
 
-1. Verifica l’installazione:
+1. Verificare l&#39;installazione:
 
    ```bash
    httpd -v
    ```
 
-   Messaggi simili alla seguente visualizzazione per confermare che l&#39;installazione è riuscita:
+   Vengono visualizzati messaggi simili al seguente per confermare che l’installazione è andata a buon fine:
 
    ```terminal
    Server version: Apache/2.4.40 (Unix)
@@ -247,7 +247,7 @@ L’installazione e la configurazione di Apache è fondamentalmente un processo 
    >
    >I valori precedenti per `Order` potrebbe non funzionare in tutti i casi. Per ulteriori informazioni, consulta la documentazione di Apache ([2,4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
 
-1. Salva il file e esci dall’editor di testo.
+1. Salvate il file e uscite dall&#39;editor di testo.
 
 1. Per applicare le impostazioni Apache, riavvia Apache.
 
@@ -257,7 +257,7 @@ L’installazione e la configurazione di Apache è fondamentalmente un processo 
 
 >[!NOTE]
 >
->In genere, se non si abilita queste impostazioni, non verrà visualizzato alcuno stile sulla vetrina o sull&#39;amministratore.
+>Se non si attivano queste impostazioni, in genere non vengono visualizzati stili nella vetrina o nell’amministratore.
 
 ### Abilita riscritture e .htaccess per Ubuntu
 
@@ -284,9 +284,9 @@ L’installazione e la configurazione di Apache è fondamentalmente un processo 
    </Directory>
    ```
 
-1. Salva il file e esci dall’editor di testo.
+1. Salvate il file e uscite dall&#39;editor di testo.
 
-1. Configura Apache per utilizzare la funzione `mod_rewrite` modulo:
+1. Configura Apache per utilizzare `mod_rewrite` modulo:
 
    ```bash
    cd /etc/apache2/mods-enabled
@@ -302,11 +302,11 @@ L’installazione e la configurazione di Apache è fondamentalmente un processo 
    service apache2 restart
    ```
 
-## Risoluzione degli errori 403 (proibito)
+## Risoluzione degli errori 403 (non consentito)
 
-Se incontri 403 Errori proibiti quando tenti di accedere al sito, puoi aggiornare la configurazione Apache o la configurazione dell&#39;host virtuale per consentire ai visitatori del sito:
+Se rilevi 403 errori non consentiti durante il tentativo di accesso al sito, puoi aggiornare la configurazione Apache o l’host virtuale per abilitare i visitatori al sito:
 
-### Risoluzione degli errori 403 non consentiti per Apache 2.4
+### Risoluzione di errori 403 non consentiti per Apache 2.4
 
 Per consentire ai visitatori del sito web di accedere al sito, utilizza uno dei [Richiedi direttive](https://httpd.apache.org/docs/2.4/howto/access.html).
 
@@ -323,4 +323,4 @@ Ad esempio:
 
 >[!NOTE]
 >
->I valori precedenti per `Order` potrebbe non funzionare in tutti i casi. Per ulteriori informazioni, consulta la sezione [Documentazione di Apache](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+>I valori precedenti per `Order` potrebbe non funzionare in tutti i casi. Per ulteriori informazioni, vedere [Documentazione di Apache](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).

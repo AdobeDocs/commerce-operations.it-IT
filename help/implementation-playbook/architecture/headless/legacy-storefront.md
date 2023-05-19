@@ -1,6 +1,6 @@
 ---
-title: Architettura di Storefront accoppiata
-description: Scopri cosa significa una vetrina accoppiata nel contesto delle architetture Adobe Commerce headless.
+title: Architettura di vetrina abbinata
+description: Scopri cosa significa una vetrina abbinata nel contesto delle architetture Adobe Commerce headless.
 exl-id: 978e6853-4fbe-45b8-8e46-f491c6724fc6
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -9,30 +9,30 @@ ht-degree: 0%
 
 ---
 
-# Architettura della vetrina Adobe Commerce abbinata (legacy)
+# Architettura di vetrina Adobe Commerce associata (legacy)
 
 L’attuale opzione di distribuzione predefinita per la maggior parte dei clienti commerciali include:
 
-- Supporto del 100% delle funzioni in B2B e B2C
-- Tema di riferimento maturo (Luma) che può essere rapidamente implementato/personalizzato
-- Competenze tecniche per l&#39;implementazione dei partner SI
-- Completamente compatibile con le funzionalità di e-commerce come Page Builder o Staging e Preview
+- Supporto di funzioni al 100% in B2B e B2C
+- Tema di riferimento maturo (Luma) che può essere rapidamente distribuito/personalizzato
+- Competenze maturate nell&#39;implementazione dei partner SI
+- Completamente compatibile con funzionalità commerce quali Page Builder o Staging e anteprima
 - Ampia compatibilità con le estensioni in Adobe Commerce Marketplace
 
-![Diagramma che mostra un’architettura Adobe Commerce per vetrine accoppiata](../../../assets/playbooks/coupled-storefront-architecture.svg)
+![Diagramma che mostra un’architettura abbinata per la vetrina Adobe Commerce](../../../assets/playbooks/coupled-storefront-architecture.svg)
 
-## Contenuti della vetrina legacy
+## Contro della vetrina legacy
 
-- **Senza testa**- Tutte le parti dell&#39;applicazione monolitica Adobe Commerce. Nessuna separazione tra logica di business e processi tra front-end e backend.
+- **Non headless**- Parte integrante dell&#39;applicazione Adobe Commerce monolitica. Nessuna separazione di logica e processi di business tra front-end e back-end.
 
-- **Not PWA**- Anche se il tema è reattivo, le prestazioni del sito sono molto lente rispetto a PWA all’avanguardia.
+- **Non PWA**- Anche se il tema è reattivo, le prestazioni del sito sono nettamente inferiori a quelle dei migliori PWA della categoria.
 
-- **Architettura front-end (componenti dell’interfaccia utente di Adobe Commerce)**- Specialisti Adobe Commerce/PHP per sviluppare la vetrina legacy.
+- **Architettura front-end (componenti dell’interfaccia utente di Adobe Commerce)**: specialisti Adobe Commerce/PHP per sviluppare nuove soluzioni basate su una vetrina precedente.
 
-Prima di passare alle opzioni headless, iniziamo con l’architettura storefront più familiare. Se i headless vengono disaccoppiati, questa sarebbe l&#39;architettura della vetrina associata, più comunemente vista con i nostri demo Luma.
+Prima di passare alle opzioni headless, iniziamo con l’architettura più familiare della vetrina. Se headless è scollegato, questa sarebbe l’architettura della vetrina abbinata, più comunemente vista con le nostre demo Luma.
 
-In questo punto le funzionalità di vetrina sono strettamente integrate con i servizi di e-commerce di base, non separate dal livello API GraphQL. Quindi, c&#39;è molta logica di business legata a quel tema. Questo approccio non è headless e non è PWA.
+Qui le funzionalità della vetrina sono strettamente integrate con i servizi commerce di base, non separate da quel livello API di GraphQL. Quindi, c&#39;è molta logica di business unita a questo tema. Questo approccio non è headless e non è PWA.
 
-Questa è attualmente l’opzione più comune utilizzata dai commercianti perché dispone del supporto del 100% delle funzioni sia con le funzionalità B2B che con le funzionalità Commerce B2C. La community lo conosce bene, è circondata da un ecosistema maturo di competenze ed è ampiamente compatibile con le estensioni di Adobe Commerce Marketplace.
+Questa è attualmente l’opzione più comune utilizzata dai commercianti perché dispone di supporto del 100% delle funzioni di e-commerce B2B e B2C. La community lo conosce, è circondata da un ecosistema maturo di competenze ed è ampiamente compatibile con le estensioni di Adobe Commerce Marketplace.
 
-Tuttavia, mancano i benefici di cui abbiamo parlato prima. Senza separazione dei livelli, ci sono molte dipendenze e potenziali punti di errore quando vengono apportate modifiche. Non è così performante come un PWA ben implementato e se un commerciante non ha esperienza nello sviluppo di Adobe Commerce o PHP, dovrà andare a trovare queste risorse.
+Mancano tuttavia i vantaggi di cui abbiamo parlato prima. Senza la separazione dei livelli, quando vengono apportate modifiche vi sono molte dipendenze e potenziali punti di errore. Non è performante come un PWA ben implementato e se un commerciante non ha esperienza nello sviluppo di Adobe Commerce o PHP, dovrà trovare quelle risorse.

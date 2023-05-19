@@ -1,6 +1,6 @@
 ---
 title: Team
-description: Scopri i diversi tipi di team che contribuiscono al successo dei progetti e-commerce.
+description: Scopri i diversi tipi di team che contribuiscono al successo dei progetti di e-commerce.
 exl-id: b1a007b2-49ff-475f-9ad7-5fa100cdfa3b
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,84 +11,84 @@ ht-degree: 0%
 
 # Team
 
-L&#39;e-commerce è uno dei segmenti in più rapida crescita sul mercato e i brand si stanno affrettando ad ottenere online. Affinché ogni progetto e-commerce abbia successo, è necessario disporre del giusto equilibrio del team. La gestione di un business di e-commerce richiede un team con esperienza, strategia e competenze cross-funzionali. Insieme al team di e-commerce giusto, è anche essenziale avere altri team all’interno dell’organizzazione che siano ugualmente coinvolti nell’intero processo di progetto. Deve essere uno sforzo di collaborazione se l&#39;azienda vuole raggiungere l&#39;obiettivo previsto e per farlo l&#39;azienda deve assicurarsi che i dipartimenti non funzionino da soli.
+L’e-commerce è uno dei segmenti in più rapida crescita sul mercato e i brand si affrettano a entrare online. Affinché ogni progetto di e-commerce abbia successo, è necessario avere il giusto equilibrio tra team. La gestione di un’azienda di e-commerce richiede un team con esperienza, strategia e competenze interfunzionali. Insieme al team di e-commerce giusto, è anche essenziale avere altri team all’interno dell’organizzazione che siano ugualmente coinvolti nell’intero processo del progetto. Se l’azienda intende raggiungere l’obiettivo previsto, deve essere uno sforzo collaborativo e per farlo l’azienda deve garantire che i dipartimenti non stiano lavorando in isolamento.
 
-Oltre a configurare i team, i membri del team di onboarding non devono essere trascurati. I membri del team di onboarding devono essere eseguiti in modo efficace in quanto possono definire il successo del team complessivo.
+Oltre a configurare i team, non devi trascurare i membri del gruppo di onboarding. I membri del gruppo di onboarding devono essere eseguiti in modo efficace, in quanto può definire il successo del team complessivo.
 
-È possibile strutturare i team in un formato misto, tra cui:
+Puoi strutturare i team in un formato misto, tra cui:
 
-- Co-localizzato
+- Con co-ubicazione
 - Remoto
-- Provider di servizi di terze parti
+- Fornitori di servizi di terze parti
 
 Un team di successo può utilizzare qualsiasi formato, ma deve essere chiaramente definito e flessibile per ridurre al minimo i costi e massimizzare l&#39;efficienza e la produttività.
 
 ## Marketing
 
-Ci sono un sacco di suggerimenti e trucchi là fuori che si può utilizzare per commercializzare il tuo marchio online. Alcuni potrebbero essere grandi, ma alcuni potrebbero non funzionare per voi. Non si tratta solo di pubblicare contenuti sui social media o inviare e-mail ai clienti. Sono le persone che creano tutto questo per il business, il team di marketing che aiuta a portare il traffico sul sito, aiuta a incrementare il ROI, produce campagne e promozioni, gestisce le influenze, crea strategie di marketing online e così via.
+Ci sono un sacco di suggerimenti e trucchi là fuori che è possibile utilizzare per vendere il tuo marchio online. Alcuni potrebbero essere grandiosi, ma alcuni potrebbero non funzionare per te. Non si tratta solo di pubblicare contenuti sui social media o inviare e-mail ai clienti. Sono le persone che creano tutto questo per l’azienda, è il team di marketing che aiuta a portare il traffico sul sito, aiuta a stimolare il ROI, produce campagne e promozioni, gestisce le influenze, crea strategie di marketing online e così via.
 
-Il team marketing è parte integrante dell’e-commerce, proprio come gli altri team. Mantengono in esecuzione SEO, SEM, programmi fedeltà, premi e altre attività correlate. Il coordinamento con il team Marketing aiuta a determinare il tasso di conversione sul sito.
+Il team marketing è parte integrante dell’e-commerce, proprio come gli altri team. Mantengono in esecuzione SEO, SEM, programmi fedeltà, premi e altre attività correlate. Il coordinamento con il team Marketing contribuisce a determinare il tasso di conversione sul sito.
 
-Se non c&#39;è comunicazione o collaborazione, ci potrebbero essere problemi che si risolvono. Ad esempio, se il livello di inventario di un determinato articolo è basso nel magazzino e il team marketing invia un’e-mail promozionale relativa a tale prodotto, l’azienda potrebbe trovarsi di fronte ad alcuni clienti arrabbiati e ciò avrebbe a sua volta un effetto negativo sul nome del marchio e sulla fedeltà dei clienti. C&#39;è una possibilità quando si tratta di e-commerce e deve essere perfetto.
+Se non c&#39;è comunicazione o collaborazione, potrebbero esserci dei problemi. Ad esempio, se il livello di inventario di un determinato articolo è basso nel magazzino e il team Marketing invia un’e-mail promozionale relativa a quel prodotto, l’azienda potrebbe trovarsi di fronte a clienti arrabbiati e questo a sua volta influirebbe negativamente sul nome del marchio e sulla fedeltà dei clienti. C&#39;è un solo colpo quando si tratta di e-commerce e deve essere perfetto.
 
 ## IT
 
-Alcune aziende prendono il team IT (team tecnico) che coinvolge gli sviluppatori (front-end, backend e tester) come parte del team di Ecommerce, mentre alcune aziende le mantengono separate. Alcune aziende preferiscono avere l&#39;intero team IT interno a causa di problemi di sicurezza, costi, cultura, ambiente o gestione dei prodotti.
+Alcune aziende considerano il team IT (team tecnico) che coinvolge gli sviluppatori (front-end, back-end e tester) parte del team e-commerce, mentre altre le mantengono separate. Alcune aziende preferiscono disporre internamente dell&#39;intero team IT a causa di problemi di sicurezza, costi, cultura, ambiente o gestione dei prodotti.
 
-In alternativa, alcune aziende preferiscono esternalizzare il team IT (sviluppo) alle società di consulenza che dispongono di maggiori competenze in tale ambito e possono contribuire a rendere il team interno più efficiente. Inoltre, alcune aziende preferiscono avere un mix di entrambi.
+In alternativa, alcune aziende preferiscono affidare il team IT (di sviluppo) a società di consulenza che hanno più competenze in questo settore e possono aiutare a rendere il team interno più efficace. Inoltre, alcune aziende preferiscono avere una combinazione di entrambi.
 
-Idealmente, i team di sviluppo ed e-commerce rimangono separati, ma lavorano insieme in unità quando si tratta di stabilire obiettivi, pianificare sprint e distribuire nuove funzionalità.
+Idealmente, i team di sviluppo ed e-commerce rimangono separati, ma lavorano insieme in unità quando si tratta di definire obiettivi, pianificare sprint e distribuire nuove funzioni.
 
 ## Servizio clienti
 
-Il Servizio clienti è in genere uno dei team più ignorati e sottovalutati di un&#39;organizzazione. Nel settore e-commerce, tutto è basato online e il team del Servizio clienti è l’unico team che ha contatti diretti giornalieri con i clienti. Possono fornire ai team Marketing, Product ed Ecommerce informazioni importanti che possono utilizzare per comprendere cosa funziona e quali modifiche devono essere apportate nel prossimo ciclo di rotazione.
+L’Assistenza clienti è in genere uno dei team più sottovalutati e sottovalutati di un’organizzazione. Nel settore dell’e-commerce, tutto è basato online e il team Servizio clienti è l’unico a disporre di un contatto diretto quotidiano con i clienti. Possono fornire ai team Marketing, Product ed Ecommerce informazioni importanti da utilizzare per comprendere cosa funziona e quali modifiche devono essere apportate nel prossimo ciclo di sprint.
 
-Ad esempio, per la prima volta un&#39;organizzazione ha avuto il team Servizio clienti nella stessa stanza del team di E-commerce. Il team di E-commerce e Marketing è stato in grado di ascoltare in prima persona e capire cosa i clienti hanno da dire, il che è stato di grande valore.
+Ad esempio, il team Servizio clienti di un’organizzazione si trovava nella stessa stanza del team E-commerce per la prima volta. Il team di e-commerce e marketing è stato in grado di ascoltare in prima persona e capire cosa avevano da dire i clienti, il che è stato inestimabile.
 
-È importante garantire il coinvolgimento del team del Servizio clienti e fornire costantemente un feedback al team di E-commerce. Qualsiasi feedback che potrebbe influenzare le transazioni o aggiungere al comportamento del carrello può essere rapidamente risolto nella roadmap.
+È importante assicurarsi che il team del Servizio clienti sia coinvolto e fornisca in modo coerente un feedback al team di e-commerce. Qualsiasi feedback che potrebbe influire sulle transazioni o sul comportamento del carrello può essere rapidamente risolto nella roadmap.
 
-## e-commerce
+## E-commerce
 
-Idealmente, la maggior parte delle organizzazioni dispone di un team dedicato di e-commerce che gestisce le operazioni quotidiane di e-commerce, le decisioni, la strategia, gli obiettivi, la manutenzione e tutto ciò che riguarda il successo della piattaforma online.
+Idealmente, la maggior parte delle organizzazioni dispone di un team di e-commerce dedicato che gestisce le operazioni di e-commerce quotidiane, le decisioni, la strategia, gli obiettivi, la manutenzione e tutto ciò che è correlato al successo della piattaforma online.
 
 Un tipico team di e-commerce include:
 
-- Gestore di e-commerce
+- Gestione e-commerce
 - Piattaforma PMI
-- Specialista del prodotto
+- Specialista di prodotto
 - Analista aziendale
 - Specialista SEO/SEM
-- Gestione dei contenuti
+- Gestione contenuti
 - Inventario
 
-In alcune aziende, questi ruoli si sovrappongono ad altri ruoli del team o si trovano all’interno del team e-commerce (a seconda delle dimensioni, dei ricavi e degli obiettivi di crescita).
+In alcune aziende, questi ruoli si sovrappongono ad altri ruoli del team o fanno parte del team e-commerce (a seconda delle dimensioni, dei ricavi e degli obiettivi di crescita).
 
-## Magazzino
+## Data warehouse
 
-Quando un business prevede di lanciare un sito di e-commerce, è imperativo considerare il lavoro del magazzino perché anche se l&#39;esperienza di acquisto di e-commerce avviene online, il packaging e la spedizione dei prodotti avviene nel mondo fisico. Quando le aziende si concentrano solo sul sito, trascurano parti complesse dell’esperienza di e-commerce end-to-end.
+Quando un&#39;azienda pianifica di lanciare un sito di e-commerce, è imperativo considerare il funzionamento del magazzino perché anche se l&#39;esperienza di acquisto di e-commerce avviene online, il confezionamento e la spedizione dei prodotti avviene nel mondo fisico. Quando le aziende si concentrano solo sul sito, trascurano parti complesse dell’esperienza di e-commerce end-to-end.
 
-Ad esempio, considera un&#39;organizzazione che crea e verifica un sito web, ma scopre che la propria stampante warehouse non è in grado di tenere il passo con il volume dell&#39;ordine. Il problema della stampante crea un ritardo negli ordini di imballaggio, che riduce il numero di prodotti che il team può spedire. Questo problema non solo perde tempo, ma aumenta anche il volume delle chiamate al team del Servizio Clienti e danneggia l&#39;esperienza e la fedeltà dei clienti.
+Si consideri, ad esempio, un&#39;organizzazione che crea e verifica un sito Web, ma scopre che la stampante di magazzino non è in grado di tenere il passo con il volume dell&#39;ordine. Il problema della stampante provoca un ritardo negli ordini di imballaggio, che riduce il numero di prodotti che il team può spedire. Questo problema non solo spreca tempo, ma aumenta anche il volume delle chiamate al team del Servizio clienti e danneggia la customer experience e la fedeltà.
 
 ## Livello C
 
-I dirigenti a livello C desiderano sempre che le loro organizzazioni eseguano al livello ottimale e aumentano il tasso di conversione per ottenere profitti sugli investimenti. A tal fine è necessario coinvolgere e collaborare i team di tutta l’organizzazione. È inoltre fondamentale che i dirigenti di livello C e di altro livello superiore siano maggiormente coinvolti e comprendano il processo di definizione degli obiettivi.
+I dirigenti di livello C desiderano sempre che le loro organizzazioni abbiano prestazioni ottimali e aumentino il tasso di conversione per ottenere un ritorno sugli investimenti. Per eseguire correttamente questa operazione è necessario coinvolgere e collaborare i team di tutta l’organizzazione. È inoltre fondamentale che i dirigenti di livello C e di altri dirigenti di alto livello siano maggiormente coinvolti e comprendano il processo di definizione degli obiettivi.
 
-Il livello C e un altro livello di livello superiore di buy-in è fondamentale per il successo di un importante progetto di e-commerce. Richiede un coinvolgimento diretto e una comunicazione adeguata tra tutti i team.
+L’acquisizione di un ruolo da parte di dirigenti di livello C e di altri dirigenti di alto livello è fondamentale per il successo di un grande progetto di e-commerce. Richiede un coinvolgimento diretto e una comunicazione adeguata tra tutti i team.
 
-Dal momento che i progetti di e-commerce spesso iniziano con la tecnologia piuttosto che con l&#39;attività, è raro che abbiano origine a livello C. Ecco perché è importante coinvolgere il livello C il prima possibile e tenerli coinvolti fino alla fine. Consente di impostare le aspettative in tutta l’organizzazione e di informare le parti interessate.
+Dal momento che i progetti di e-commerce spesso iniziano con la tecnologia piuttosto che con l&#39;azienda, è raro che vengano avviati a livello C. Ecco perché è importante coinvolgere il livello C il prima possibile e tenerli coinvolti fino alla fine. Aiuta a stabilire le aspettative in tutta l’organizzazione e a informare le parti interessate.
 
-Quando avvii un progetto e-commerce, ricorda a livello C e aziendale. Sono principalmente interessati ai KPI e al ROI, ma portarli nel percorso fin dall&#39;inizio li aiuta a capire l&#39;obiettivo e ciò che l&#39;organizzazione sta per ottenere.
+Quando avvii un progetto di e-commerce, tieni presente il livello C e l’azienda. Sono interessati principalmente ai KPI e al ROI, ma inserirli nel percorso fin dall’inizio li aiuta a capire l’obiettivo e ciò che l’organizzazione ha da guadagnare.
 
 >[!NOTE]
 >
->Per il successo di qualsiasi progetto e-commerce, è assolutamente essenziale che tutti gli utenti dall’alto verso il basso siano coinvolti allo stesso modo e sulla stessa pagina.
+>Per il successo di qualsiasi progetto di e-commerce, è assolutamente essenziale che tutti siano coinvolti allo stesso modo e sulla stessa pagina.
 
 ## Altro
 
-Esistono altri team che fanno parte di un team esistente o che sono autonomi, tra cui:
+Esistono altri team che fanno parte di un team esistente o sono autonomi, tra cui:
 
-- **Gruppo di contenuti**: per creare contenuti efficaci, devono essere allineati con tutti i team. Il contenuto del sito richiede aggiornamenti regolari. Il team Contenuto è responsabile della configurazione del contenuto della pagina di prodotto, delle pagine di categoria, del blog e del piè di pagina, che attrae il traffico del sito e aumenta il tasso di conversione.
+- **Team di contenuti**: devono essere allineati con tutti i team per creare contenuti efficaci. Il contenuto del sito richiede aggiornamenti regolari. Il team dei contenuti è responsabile della configurazione dei contenuti nella pagina del prodotto, nelle pagine delle categorie, nel blog e nel piè di pagina, in modo da attirare il traffico del sito e aumentare il tasso di conversione.
 
-- **Team dati**- I siti di e-commerce generano molti dati che è possibile raccogliere e analizzare, tra cui informazioni sui clienti, abitudini di spesa, prodotti popolari e il tempo in cui il sito ha il maggior traffico. Il team di dati elabora tutte queste informazioni per fornire informazioni sul funzionamento del sito e su dove il sito necessita di ulteriori miglioramenti. Il team dati può consigliare quali tendenze sono in arrivo e dove il business deve concentrarsi.
+- **Team di dati**: i siti di e-commerce generano molti dati che è possibile raccogliere e analizzare, tra cui informazioni sui clienti, abitudini di spesa, prodotti popolari e tempo in cui il sito ha più traffico. Il team di dati elabora tutte queste informazioni per fornire informazioni approfondite sul funzionamento del sito e sulle aree in cui è necessario apportare ulteriori miglioramenti. Il team Dati può consigliare le tendenze in arrivo e i punti su cui l’azienda deve concentrarsi.
 
-- **Squadra finanziaria e contabile**- Alcune aziende hanno un piccolo team di Finance and Accounting, che può essere interno o esterno. Si concentrano sul budget, sulle previsioni e sulla gestione dell&#39;aspetto finanziario della creazione e della gestione di un sito di e-commerce.
+- **Team finanziario e contabile**—Alcune aziende dispongono di un piccolo team di responsabili finanziari e contabili, che può essere interno o esterno. Si concentrano sul budgeting, la previsione e la gestione dell&#39;aspetto finanziario della creazione e gestione di un sito di e-commerce.

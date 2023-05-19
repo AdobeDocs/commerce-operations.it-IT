@@ -5,12 +5,12 @@ source-wordcount: '85'
 ht-degree: 0%
 
 ---
-# Aggiorna il sistema di produzione
+# Aggiorna sistema di produzione
 
 **Per aggiornare il sistema di produzione**:
 
 1. Accedi al sistema di produzione come proprietario del file system.
-1. Passa alla directory principale dell&#39;applicazione e attiva la modalità di manutenzione.
+1. Passa alla directory principale dell’applicazione e abilita la modalità di manutenzione.
 
    ```bash
    cd <Magento root dir>
@@ -20,9 +20,9 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   Per ulteriori opzioni, ad esempio la possibilità di impostare una whitelist di indirizzi IP, consulta [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
+   Per ulteriori opzioni, ad esempio per impostare una whitelist di indirizzi IP, consulta [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
 
-1. Interrompere i processi di lavoro in coda in esecuzione impostando `cron_run` a `false` in `app/etc/env.php` come segue:
+1. Arrestare tutti i processi di lavoro in esecuzione impostando `cron_run` a `false` in `app/etc/env.php` come segue:
 
    ```php?start_inline=1
    'cron_consumers_runner' => [
@@ -36,13 +36,13 @@ ht-degree: 0%
    bin/magento app:config:import
    ```
 
-1. Infine, `kill` qualsiasi processo attivo dei consumatori.
+1. Infine, `kill` qualsiasi processo attivo del consumatore.
 
    ```bash
    kill <PID>
    ```
 
-   Dove `PID` è l’ID del processo da terminare, ad esempio:
+   Dove `PID` è l’ID processo da terminare, ad esempio:
 
    ```bash
    kill 1234
@@ -60,13 +60,13 @@ ht-degree: 0%
    bin/magento app:config:import
    ```
 
-1. Pulisci la cache.
+1. Pulire la cache.
 
    ```bash
    bin/magento cache:clean
    ```
 
-1. Modalità di manutenzione finale.
+1. Termina modalità di manutenzione.
 
    ```bash
    bin/magento maintenance:disable

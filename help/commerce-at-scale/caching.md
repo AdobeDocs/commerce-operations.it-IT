@@ -1,5 +1,5 @@
 ---
-title: Pianificazione effettiva della cache
+title: Pianificazione cache effettiva
 description: Fai riferimento ai benchmark consigliati per la memorizzazione in cache per garantire il successo del sito sotto carico.
 exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
 source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
@@ -9,26 +9,26 @@ ht-degree: 0%
 
 ---
 
-# Pianificazione della memorizzazione in cache effettiva per il successo di e-commerce in fase di caricamento
+# Pianificazione della memorizzazione efficace nella cache per il successo dell’e-commerce in fase di caricamento
 
-Per ottenere un’esperienza di acquisto al di sotto del carico sarà necessaria una strategia di caching ben pianificata. Inizialmente, la richiesta delle parti interessate aziendali potrebbe consistere nel presentare sempre ai clienti i dati sui prodotti in tempo reale, ma questo non è un utilizzo ottimale delle risorse di sistema, e gli impatti delle prestazioni del sito dell&#39;utente finale supererebbero notevolmente i vantaggi di mostrare in modo coerente le informazioni in tempo reale.
+Per fornire un’esperienza di acquisto sotto carico sarà necessaria una strategia di caching ben pianificata. Anche se inizialmente le parti interessate possono chiedere di presentare sempre ai clienti i dati dei prodotti in tempo reale, non si tratta di un utilizzo ottimale delle risorse di sistema e l’impatto delle prestazioni del sito dell’utente finale supererebbe di gran lunga i vantaggi di una visualizzazione coerente delle informazioni in tempo reale.
 
-La fase iniziale della strategia di caching dovrebbe pertanto consistere nel definire con le parti interessate una matrice di tempi di memorizzazione in cache accettabili per le diverse aree del sito, ad esempio:
+La fase iniziale della strategia di caching dovrebbe pertanto consistere nel definire con le parti interessate una matrice di tempi di caching accettabili per le diverse aree del sito, ad esempio:
 
-| Area di memorizzazione nella cache | Quanto spesso cambia? | Impatto se il contenuto non aggiornato viene servito dalla cache | Memorizzazione in cache accettabile time-to-live (TTL)? |
+| Area di memorizzazione in cache | Quanto spesso cambia? | Impatto se il contenuto non aggiornato viene distribuito dalla cache | Time-to-live (TTL) di caching accettabile? |
 |---------------------------------------------------------------|--------------------|-------------------------------------------|-----------------------------------------------------|
-| Pagine HTML del contenuto del sito, aggiornate tramite CMS | Molto spesso | Basso | 1 giorno |
-| Contenuto del sito modello media/risorse - logo, progettazione CSS, immagini | Molto spesso | Basso | 1 settimana |
-| Pagine per l’elenco dei prodotti (PLP) | Molto spesso | Media | 1 giorno |
-| Pagina dei dettagli del prodotto (PDP) | A volte | Media | 1 ora |
-| Categorie di prodotti | Molto spesso | Media | 1 giorno |
+| Pagine HTML del contenuto del sito, aggiornate tramite CMS | Raramente | Basso | 1 giorno |
+| Media/risorse modello di contenuto del sito - logo, progettazione CSS, immagini | Raramente | Basso | 1 settimana |
+| Pagine di elenco prodotti (PLP) | Raramente | Medio | 1 giorno |
+| Pagina dettagli prodotto (PDP) | A volte | Medio | 1 ora |
+| Categorie di prodotti | Raramente | Medio | 1 giorno |
 | Prezzi | Frequentemente | Alta | Nessuna cache |
-| Inventario/magazzino | Frequentemente | Alta | Nessuna cache |
-| Ricerca nel sito | La maggior parte degli utenti univoci | Media | Risultati della cache dalle prime 100 frasi di ricerca per 1 giorno |
-| Pagamento | Ogni utente univoco | Molto alto | Nessuna cache |
-| Carrello | Ogni utente univoco | Molto alto | Nessuna cache |
-| Pagine | Ogni utente univoco | Molto alto | Nessuna cache |
+| Magazzino/scorte | Frequentemente | Alta | Nessuna cache |
+| Ricerca nel sito | Più utenti univoci | Medio | Memorizza nella cache i risultati delle prime 100 frasi di ricerca per 1 giorno |
+| Pagamento | Ogni utente univoco | Molto alta | Nessuna cache |
+| Carrello | Ogni utente univoco | Molto alta | Nessuna cache |
+| Pagine di pagamento | Ogni utente univoco | Molto alta | Nessuna cache |
 
-Una volta completata questa pianificazione iniziale, la configurazione tecnica può iniziare a essere implementata per configurare le cache in base a questi requisiti.
+Una volta completata la pianificazione iniziale, la configurazione tecnica può iniziare a essere implementata per configurare le cache in base a questi requisiti.
 
-Anche se il contenuto viene aggiornato e deve essere reso live all’interno del TTL di memorizzazione nella cache, nella maggior parte dei casi è possibile cancellare manualmente le cache per il [Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) e [Adobe Commerce](../configuration//cli/manage-cache.md#clean-and-flush-cache-types) la cache in modo selettivo per quel contenuto, il che significa che le modifiche urgenti verranno applicate immediatamente. Anche il processo di cancellazione manuale della cache deve essere pianificato e testato in anticipo in modo che se c&#39;è la necessità di forzare manualmente un aggiornamento su alcuni contenuti, allora è documentato in un manuale operativo del sito e chiarire come e chi deve essere coinvolto per agire in questo modo.
+Anche se il contenuto viene aggiornato e deve essere reso live all’interno del TTL di caching, nella maggior parte dei casi è possibile cancellare manualmente le cache per il [Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) e [Adobe Commerce](../configuration//cli/manage-cache.md#clean-and-flush-cache-types) cache selettiva per quel contenuto, il che significa che le modifiche urgenti verranno applicate immediatamente. Il processo di cancellazione manuale della cache deve essere pianificato e testato in anticipo in modo che, se è necessario forzare manualmente un aggiornamento su alcuni contenuti, venga documentato in un runbook per le operazioni del sito e sia chiaro come e chi deve essere coinvolto in questa azione.

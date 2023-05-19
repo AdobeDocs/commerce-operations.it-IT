@@ -1,6 +1,6 @@
 ---
 title: Strumenti di gestione dei progetti
-description: Scegli gli strumenti consigliati per la gestione dei progetti per l’implementazione di Adobe Commerce.
+description: Scegli gli strumenti consigliati per la gestione dei progetti nell’implementazione di Adobe Commerce.
 exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Strumenti di gestione dei progetti
 
-Il passaggio dall’ambiente Adobe Commerce attuale, ma ugualmente importante, sono gli strumenti e le soluzioni che rendono la collaborazione e l’intero processo di sviluppo il più semplice possibile.
+Uscire dall’ambiente Adobe Commerce effettivo, ma altrettanto importante, sono gli strumenti e le soluzioni che rendono la collaborazione e l’intero processo di sviluppo il più semplice possibile.
 
 La tabella seguente include gli strumenti consigliati per la gestione dei progetti:
 
 | Finalità | Strumento |
 |------------------------------------------------------|--------------------------------------|
-| Gestione dei biglietti | JIRA |
-| Gestione SLA | Atlassian JIRA Service Management |
-| Gestione dei documenti | Confluenza Atlassiana |
+| Gestione ticket | JIRA dell&#39;Atlassia |
+| Gestione SLA | Gestione servizio Atlassian JIRA |
+| Gestione dei documenti | Confluenza atlassiana |
 | Gestione del codice sorgente | Bitbucket Atlassian, GitHub |
 | Integrazione continua (CI)/distribuzione continua (CD) | Jenkins |
 | Comunicazione | E-mail, Microsoft Teams, telefono, Slack |
@@ -27,35 +27,35 @@ La tabella seguente include gli strumenti consigliati per la gestione dei proget
 
 ## Gestione SLA
 
-La gestione dei servizi Jira consente ai team di sviluppo e operativi di collaborare ad alta velocità in modo da poter rispondere ai cambiamenti aziendali e fornire rapidamente esperienze di assistenza ai clienti e ai dipendenti.
+Jira Service Management consente ai team di sviluppo e operativi di collaborare ad alta velocità in modo che possano rispondere ai cambiamenti aziendali e fornire rapidamente esperienze di servizio eccellenti a clienti e dipendenti.
 
-## Gestione dei documenti
+## Gestione documenti
 
-La confluenza è un ottimo strumento per costruire, organizzare e collaborare sul lavoro in un unico luogo praticamente ovunque. La confluenza è dotata di modelli best practice che evitano di dover reinventare la ruota. Inizia con facilità e mantieni la coerenza tra team e progetti.
+Confluence è un ottimo strumento per costruire, organizzare e collaborare al lavoro in un unico luogo praticamente da qualsiasi luogo. Confluence è dotato di modelli di best practice, quindi non è necessario reinventare la ruota. Iniziare facilmente e mantenere coerenza tra i team e i progetti.
 
 ## Gestione ticket
 
-Jira è un sistema di gestione e tracciamento dei ticket (compresa la gestione delle versioni e dei rilasci) con funzioni potenti quali:
+Jira è un sistema di gestione e tracciamento dei ticket (inclusa la gestione delle versioni e dei rilasci) con funzioni avanzate, come:
 
 - Vincola il flusso di lavoro per evitare errori
-- Stima e tracciamento dei fogli temporali a livello di ticket
-- Facile visualizzazione dei biglietti e movimento con Agile/Scrum
-- Informazioni trasparenti tra il team del cliente e il team di sviluppo
+- Stima e tracciamento dei tempi a livello di ticket
+- Visualizzazione e spostamento semplici dei ticket con Agile/Scrum
+- Informazioni trasparenti tra il team client e il team di sviluppo
 
 ## Gestione del codice sorgente
 
-Bitbucket è più della semplice gestione del codice Git. Bitbucket offre ai team un’unica posizione per pianificare i progetti, collaborare al codice, testare e distribuire. Utilizzando Bitbucket, puoi approvare le revisioni del codice in modo più efficiente con le richieste di pull. È inoltre possibile creare una checklist unita con approvatori designati e tenere discussioni direttamente nel codice sorgente con commenti in linea.
+Bitbucket è molto più di una semplice gestione del codice Git. Bitbucket offre ai team un’unica posizione per pianificare i progetti, collaborare al codice, testare e distribuire. Utilizzando Bitbucket, puoi approvare le revisioni del codice in modo più efficiente con le richieste pull. Puoi anche creare un elenco di controllo unito con approvatori designati e tenere discussioni direttamente nel codice sorgente con commenti in linea.
 
 GitHub è simile a Bitbucket, che viene utilizzato anche in alcuni progetti.
 
 ## Comunicazione
 
-Per clienti diversi, possiamo utilizzare una varietà di strumenti per la comunicazione: e-mail, Microsoft Teams e Slack sono tutti strumenti comuni che abbiamo sfruttato per le comunicazioni relative ai progetti.
+Per clienti diversi, possiamo utilizzare una varietà di strumenti per la comunicazione: e-mail, Microsoft Teams e Slack sono tutti strumenti comuni che abbiamo utilizzato per le comunicazioni relative al progetto.
 
 ## Riunione
 
-I Microsoft Teams e lo zoom sono gli strumenti più comuni per organizzare riunioni online.
+Microsoft Teams e Zoom sono gli strumenti più comuni per organizzare riunioni online.
 
-## Integrazione continua (CI)/distribuzione continua (CD)
+## Integrazione continua (CI)/ Consegna continua (CD)
 
-Jenkins è la principale soluzione di automazione open-source e fornisce centinaia di plug-in per supportare la creazione, l’implementazione e l’automazione di qualsiasi progetto. Jenkins può essere utilizzato come semplice server CI o trasformato in hub CD per qualsiasi progetto.
+Jenkins è la principale soluzione di automazione open-source e fornisce centinaia di plug-in per supportare la creazione, la distribuzione e l’automazione di qualsiasi progetto. Jenkins può essere utilizzato come un semplice server CI o trasformato nell’hub CD per qualsiasi progetto.

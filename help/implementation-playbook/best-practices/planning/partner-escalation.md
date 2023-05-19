@@ -4,13 +4,13 @@ description: Scopri come prepararti a risolvere un problema dei partner con un A
 role: User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 10d65d3453e260e105c1e90acbdfe678ca15c4e3
+exl-id: 9ead032b-93f5-4327-9f01-5320270025ce
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
 
 ---
-
 
 # Best practice per l’escalation dei partner
 

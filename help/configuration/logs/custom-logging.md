@@ -1,25 +1,25 @@
 ---
 title: Registrazione personalizzata
-description: Scopri come indagare gli errori utilizzando la registrazione personalizzata.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+description: Scopri come individuare gli errori utilizzando la registrazione personalizzata.
+exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
 
 ---
 
+# Panoramica registrazione personalizzata
 
-# Panoramica sulla registrazione personalizzata
+I registri forniscono visibilità sui processi di sistema; ad esempio, informazioni di debug che consentono di comprendere quando si è verificato un errore o cosa ha causato l’errore.
 
-I registri forniscono visibilità ai processi di sistema; ad esempio, informazioni di debug che consentono di comprendere quando si è verificato un errore o cosa ha generato l’errore.
-
-Questo argomento si concentra sulla registrazione basata su file, anche se Commerce offre la flessibilità di memorizzare i registri anche nel database.
+Questo argomento si concentra sulla registrazione basata su file, anche se Commerce offre la flessibilità di archiviare i registri anche nel database.
 
 L&#39;Adobe consiglia di utilizzare la registrazione centralizzata delle applicazioni per i motivi seguenti:
 
-- Consente lo storage dei log su un server diverso dall&#39;application server e riduce le operazioni di I/O su disco, semplificando il supporto dell&#39;application server.
+- Consente lo storage dei registri su un server diverso da quello dell&#39;applicazione e riduce le operazioni di I/O del disco, semplificando il supporto del server dell&#39;applicazione.
 
-- Rende l&#39;elaborazione dei dati dei registri più efficace utilizzando strumenti speciali, come [Logstash], [Logplex]oppure [fluido]- senza impatto su un server di produzione.
+- Rende più efficace l’elaborazione dei dati dei registri utilizzando strumenti speciali, ad esempio [Logstash], [Logplex], o [fluente]senza impatto su un server di produzione.
 
    >[!INFO]
    >
@@ -27,34 +27,34 @@ L&#39;Adobe consiglia di utilizzare la registrazione centralizzata delle applica
 
 ## Conformità PSR-3
 
-La [Standard PSR-3][laminas] definisce un&#39;interfaccia PHP comune per le librerie di log. L&#39;obiettivo principale del PSR-3 è quello di consentire alle librerie di ricevere un `Psr\Log\LoggerInterface` oggetto e scrivi i log ad esso in modo semplice e universale.
+Il [Standard PSR-3][laminas] definisce un&#39;interfaccia PHP comune per le librerie di registrazione. L&#39;obiettivo principale di PSR-3 è consentire alle librerie di ricevere `Psr\Log\LoggerInterface` gli oggetti e scrivervi i registri in modo semplice e universale.
 
-Questo consente di sostituire facilmente l&#39;implementazione senza preoccuparsi che tale sostituzione possa interrompere il codice dell&#39;applicazione. Garantisce inoltre che un componente personalizzato funzioni anche quando l’implementazione del registro viene modificata in una versione futura del sistema.
+Questo consente di sostituire facilmente l’implementazione senza preoccuparsi che possa interrompere il codice dell’applicazione. Inoltre, garantisce che un componente personalizzato funzioni anche quando l’implementazione del registro viene modificata in una versione futura del sistema.
 
 ## Monologo
 
-Commerce 2 è conforme allo standard PSR-3. Per impostazione predefinita, Commerce utilizza [Monologo]. Monolog implementato come preferenza per `Psr\Log\LoggerInterface` nell’applicazione Commerce [`di.xml`][di].
+Commerce 2 è conforme allo standard PSR-3. Per impostazione predefinita, Commerce utilizza [Monologo]. Monologo implementato come preferenza per `Psr\Log\LoggerInterface` nell’applicazione Commerce [`di.xml`][di].
 
-Monolog è una popolare soluzione di registrazione PHP con un&#39;ampia gamma di gestori che consentono di creare strategie di registrazione avanzate. Di seguito è riportato un riassunto di come funziona Monolog.
+Monologo è una popolare soluzione di registrazione PHP con una vasta gamma di gestori che consentono di creare strategie di registrazione avanzate. Di seguito è riportato un riepilogo del funzionamento di Monolog.
 
-Un monologo _logger_ è un canale con il proprio set di _gestori_. Monolog ha molti gestori, tra cui:
+Un monologo _logger_ è un canale con un proprio set di _handler_. Monolog ha molti gestori, tra cui:
 
-- Accedi a file e syslog
-- Inviare avvisi ed e-mail
-- Registrare server specifici e registrare in rete
+- Accedere a file e syslog
+- Inviare avvisi e messaggi di posta elettronica
+- Registrazione di server specifici e registrazione in rete
 - Accesso allo sviluppo (integrazione con FireBug e Chrome Logger, tra gli altri)
-- Accedere al database
+- Accedi al database
 
 Ogni gestore può elaborare il messaggio di input e interrompere la propagazione oppure passare il controllo al gestore successivo in una catena.
 
-I messaggi di registro possono essere elaborati in diversi modi. Ad esempio, è possibile memorizzare tutte le informazioni di debug in un file su disco, inserire i messaggi con livelli di log più alti in un database e infine inviare messaggi con livello di log &quot;critico&quot; tramite e-mail.
+I messaggi del registro possono essere elaborati in molti modi diversi. Ad esempio, è possibile archiviare tutte le informazioni di debug in un file su disco, inserire i messaggi con livelli di registro superiori in un database e infine inviare messaggi con livello di registro &quot;critico&quot; tramite posta elettronica.
 
-Altri canali possono avere un set diverso di gestori e logiche.
+Altri canali possono avere un set diverso di gestori e logica.
 
 <!-- link definitions -->
 
 [di]: https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9
-[fluido]: https://www.fluentd.org/
+[fluente]: https://www.fluentd.org/
 [laminas]: https://docs.laminas.dev/laminas-log/
 [Logplex]: https://devcenter.heroku.com/articles/logplex
 [Logstash]: https://www.elastic.co/products/logstash

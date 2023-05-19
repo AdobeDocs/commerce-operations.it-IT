@@ -1,6 +1,6 @@
 ---
 title: Promozioni
-description: Crea una strategia di marketing per promuovere i tuoi prodotti ai clienti.
+description: Crea una strategia di marketing per promuovere i prodotti presso i clienti.
 exl-id: 3b1cf7ab-6a24-40eb-b504-c19e3a064231
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Promozioni
 
-Con la maggior parte della popolazione che passa agli acquisti online, i retailer devono essere un passo avanti nel fornire la migliore esperienza del cliente. I retailer devono pensare ai modi migliori per immettere i loro prodotti sul mercato. Qui entra in gioco la strategia di marketing. In generale, la strategia di commercializzazione è composta da sei P:
+Con la maggior parte della popolazione che si sposta verso lo shopping online, i retailer devono fare un passo avanti nel fornire la migliore esperienza al cliente. I rivenditori devono pensare ai modi migliori per immettere i loro prodotti sul mercato. È qui che entra in gioco la strategia di marketing. In generale, la strategia di marketing è costituita da sei P:
 
 - Prodotto
 - Prezzo
@@ -20,19 +20,19 @@ Con la maggior parte della popolazione che passa agli acquisti online, i retaile
 - Persone
 - Processi
 
-È altrettanto importante per ciascuno dei sei P, ma per commercializzare i prodotti i rivenditori devono utilizzare le promozioni come tattica per aumentare il traffico sul sito e portare a tassi di conversione più elevati. Le promozioni aiutano a commercializzare prodotti e servizi offerti dal marchio. Esistono diversi livelli di promozione, ad esempio spedizione, prodotto e ordine.
+Ognuna delle sei P’s è altrettanto importante, ma per commercializzare i prodotti i rivenditori devono utilizzare le promozioni come tattica per aumentare il traffico sul sito e portare a tassi di conversione più elevati. Le promozioni aiutano a commercializzare i prodotti e i servizi offerti dal marchio. Sono disponibili vari livelli promozionali, ad esempio spedizione, prodotto e ordine.
 
-![annuncio pubblicitario di esempio](../../assets/playbooks/promotion-example.png)
+![esempio di pubblicità promozionale](../../assets/playbooks/promotion-example.png)
 
 ## Tipi di promozione
 
-Ognuno di questi livelli di promozione presenta diversi tipi di promozioni, tra cui:
+Ciascuno di questi livelli di promozione prevede diversi tipi di promozioni, tra cui:
 
-- Giveaways
+- Giveaway
 - vendite flash
-- Esempi gratuiti
-- Acquista X per totale
-- Acquista 1 gratis
+- Campioni gratuiti
+- Acquista X per un totale
+- Acquista 1 get 1 gratis
 - Prodotti bonus
 - Acquisto multiplo
 - Cross-selling
@@ -43,4 +43,4 @@ Ognuno di questi livelli di promozione presenta diversi tipi di promozioni, tra 
 - Spedizione gratuita
 - Sconto sulla spedizione
 
-I retailer devono affrontare un&#39;intensa concorrenza. Per avere un vantaggio competitivo, i retailer devono applicare strategie di marketing come le promozioni. Ogni rivenditore deve analizzare quali promozioni funzionano meglio per loro.
+I rivenditori devono affrontare una forte concorrenza. Per avere un vantaggio competitivo, i retailer devono applicare strategie di marketing come le promozioni. Ogni rivenditore deve analizzare quali promozioni funzionano meglio per loro.

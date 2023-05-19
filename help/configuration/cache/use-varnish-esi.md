@@ -1,20 +1,20 @@
 ---
-title: Blocco ESI verniciato
-description: Informazioni su Edge Side Includes e su come utilizzarli per incorporare pagine web.
-badge: label="Contributo di Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
-source-git-commit: 90544452f5f0834e096ead6ea3df64dcb5eaea11
+title: Blocco ESI vernice
+description: Scopri le inclusioni lato Edge e come utilizzarle per incorporare le pagine web.
+badge: label="Contribuito da Konstantin G." type="Informativo" url="https://github.com/goivvy" tooltip="Konstantin G."
+exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
 
 ---
 
-
-# Blocco ESI verniciato
+# Blocco ESI vernice
 
 Edge Side Includes (ESI) sono direttive speciali che è possibile utilizzare per includere pagine web in altre pagine web.
 
-Esempio:
+Ecco un esempio:
 
 ```html
 <div>
@@ -22,14 +22,14 @@ Esempio:
 </div>
 ```
 
-Varnish recupera il contenuto da `http://domain.com/index.php/page_cache/block/esi/blocks` e sostituiscono `<esi>` aggiungilo.
+La vernice recupera il contenuto da `http://domain.com/index.php/page_cache/block/esi/blocks` e sostituisci il `<esi>` aggiungeteci un tag.
 
-## ESI Commerce e Varnish
+## Commercio e vernice ESI
 
-Commerce framework crea un tag ESI quando vengono soddisfatte le seguenti condizioni:
+Il framework Commerce crea un tag ESI quando vengono soddisfatte le seguenti condizioni:
 
-- L&#39;applicazione di caching è impostata su `Varnish Cache`
-- Layout XML `block` viene aggiunto con un `ttl` attributo
+- L’applicazione di caching è impostata su `Varnish Cache`
+- Un layout XML `block` viene aggiunto con un `ttl` attributo
 
 ### Esempio
 
@@ -41,7 +41,7 @@ Commerce framework crea un tag ESI quando vengono soddisfatte le seguenti condiz
    </referenceContainer>
 ```
 
-Nell’esempio precedente, il `block` aggiunge contenuto dal `esi.phtml` template a una homepage e Varnish automaticamente lo aggiorna ogni 30 secondi.
+Nell’esempio precedente, il `block` aggiunge contenuto dal `esi.phtml` modello a una home page e Vernice lo aggiorna automaticamente ogni 30 secondi.
 
 ## Limitazioni
 

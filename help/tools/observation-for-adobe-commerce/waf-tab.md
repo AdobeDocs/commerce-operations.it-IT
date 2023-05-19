@@ -1,55 +1,56 @@
 ---
-title: "Il [!DNL WAF] scheda"
-description: Scopri le [!DNL WAF] scheda di [!DNL Observation for Adobe Commerce].
-source-git-commit: d3d178c333e6f1436a96993611930cb12cd66a71
+title: Il [!DNL WAF] scheda
+description: Scopri di più su [!DNL WAF] scheda di [!DNL Observation for Adobe Commerce].
+exl-id: e36986d7-d903-4154-bb09-6962b99ae35f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
 
 ---
 
-# La [!DNL WAF] scheda
+# Il [!DNL WAF] scheda
 
-La **[!DNL WAF]** La scheda mostra il traffico passato e bloccato da [!DNL firewall].
+Il **[!DNL WAF]** Questa scheda mostra il traffico passato e bloccato da [!DNL firewall].
 
 ## [!DNL WAF traffic summary]
 
-![Riepilogo del traffico del WAF](../../assets/tools/observation-for-adobe-commerce/waf-1.png)
+![Riepilogo traffico WAF](../../assets/tools/observation-for-adobe-commerce/waf-1.png)
 
-La **[!DNL WAF traffic summary]** il frame mostra un conteggio del traffico passato, registrato, bloccato e non riuscito dal [!DNL firewall].
+Il **[!DNL WAF traffic summary]** mostra un conteggio del traffico passato, registrato, bloccato e non riuscito da [!DNL firewall].
 
 ## [!DNL WAF Top 10 blocked IP Addresses]
 
-![10 indirizzi IP bloccati principali del WAF](../../assets/tools/observation-for-adobe-commerce/waf-2.png)
+![Primi 10 indirizzi IP bloccati WAF](../../assets/tools/observation-for-adobe-commerce/waf-2.png)
 
-La **[!DNL WAF Top 10 blocked IP Addresses]** il frame mostra i 10 indirizzi IP più bloccati dalla [!DNL firewall].
+Il **[!DNL WAF Top 10 blocked IP Addresses]** mostra i primi 10 indirizzi IP più bloccati dalla [!DNL firewall].
 
 ## [!DNL WAF Top 10 countries for blocked requests]
 
-![WAF primi 10 paesi per richieste bloccate](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
+![Primi 10 paesi del WAF per richieste bloccate](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
 
-La **[!DNL WAF Top 10 countries for blocked requests]** frame mostra un conteggio delle richieste bloccate per i paesi all&#39;interno dei primi 10 per le richieste bloccate dal [!DNL firewall].
+Il **[!DNL WAF Top 10 countries for blocked requests]** mostra un conteggio delle richieste bloccate per i paesi entro i primi 10 per le richieste bloccate dal [!DNL firewall].
 
 ## [!DNL WAF Top 10 logged IP Addresses]
 
-![10 indirizzi IP registrati principali del WAF](../../assets/tools/observation-for-adobe-commerce/waf-4.jpg)
+![Primi 10 indirizzi IP registrati WAF](../../assets/tools/observation-for-adobe-commerce/waf-4.jpg)
 
-La **[!DNL WAF Top 10 logged IP Addresses]** il frame mostra gli indirizzi IP nei primi 10 indirizzi IP registrati dal [!DNL firewall].
+Il **[!DNL WAF Top 10 logged IP Addresses]** mostra gli indirizzi IP nei primi 10 indirizzi IP registrati dalla [!DNL firewall].
 
 ## [!DNL Top 10 WAF Rules Executed and Logged by IP address]
 
-![Prime 10 regole WAF eseguite e registrate dall&#39;indirizzo IP](../../assets/tools/observation-for-adobe-commerce/waf-5.jpg)
+![Prime 10 regole WAF eseguite e registrate per indirizzo IP](../../assets/tools/observation-for-adobe-commerce/waf-5.jpg)
 
-La **[!DNL Top 10 WAF Rules Executed and Logged by IP address]** il frame mostra gli indirizzi IP che si trovano nei primi 10 indirizzi con la maggiore frequenza [!DNL firewall] regole.
+Il **[!DNL Top 10 WAF Rules Executed and Logged by IP address]** Il frame mostra gli indirizzi IP che si trovano tra i primi 10 che più spesso corrispondono [!DNL firewall] regole.
 
 ## [!DNL WAF Logged Details]
 
-![Dettagli registrati in WAF](../../assets/tools/observation-for-adobe-commerce/waf-6.jpg)
+![Dettagli registrati WAF](../../assets/tools/observation-for-adobe-commerce/waf-6.jpg)
 
-La **[!DNL WAF Logged Details]** frame mostra le richieste registrate da [!DNL firewall], compresi dettagli quali timestamp, città, regione e data center.
+Il **[!DNL WAF Logged Details]** mostra le richieste registrate da [!DNL firewall], inclusi dettagli quali marca temporale, città, regione e centro dati.
 
 ## [!DNL WAF Blocked Details]
 
-![WAF - dettagli bloccati](../../assets/tools/observation-for-adobe-commerce/waf-7.jpg)
+![Dettagli WAF bloccati](../../assets/tools/observation-for-adobe-commerce/waf-7.jpg)
 
-La **[!DNL WAF Blocked Details]** Il frame mostra le richieste bloccate da [!DNL firewall], compresi dettagli quali timestamp, città, regione e data center.
+Il **[!DNL WAF Blocked Details]** mostra le richieste bloccate da [!DNL firewall], inclusi dettagli quali marca temporale, città, regione e centro dati.

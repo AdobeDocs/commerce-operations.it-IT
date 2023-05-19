@@ -1,19 +1,19 @@
 ---
 title: Fasi di implementazione
 description: Scopri le best practice per le fasi di implementazione dei progetti Adobe Commerce.
-source-git-commit: bb49e4f239d49393b5b8c82deabe15f6f53c26f7
+exl-id: c5272f79-7315-46dc-a191-a40004aaa812
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
 
 ---
 
-
 # Best practice di implementazione
 
-Esistono molti modi per implementare un progetto Adobe Commerce. Le best practice fornite in questa sezione descrivono il modo in cui Adobe si aspetta che i clienti e i partner implementino casi d’uso specifici. Queste raccomandazioni sono progettate per evitare problemi comuni e potenziali problemi relativi alla configurazione e alla personalizzazione del sito, alla distribuzione, alle operazioni, alle prestazioni e agli aggiornamenti.
+Esistono molti modi per implementare un progetto Adobe Commerce. Le best practice fornite in questa sezione descrivono il modo in cui Adobe si aspetta che i clienti e i partner implementino casi di utilizzo specifici. Questi consigli sono progettati per contribuire a prevenire problemi comuni e potenziali problemi relativi alla configurazione e alla personalizzazione del sito, all&#39;installazione, alle operazioni, alle prestazioni e agli aggiornamenti.
 
-Queste best practice sono organizzate per fase di implementazione in modo da poter trovare i consigli applicabili al tuo caso d’uso.
+Queste best practice sono organizzate per fase di implementazione per trovare i consigli applicabili al tuo caso d’uso.
 
 <table style="table-layout:fixed">
 <tr>
@@ -24,7 +24,7 @@ Queste best practice sono organizzate per fase di implementazione in modo da pot
     <div>
     <a href="planning/overview.md"><strong>Pianificazione</strong></a>
     </div>
-    Raccolta dei requisiti, progettazione architettonica, progettazione del catalogo, ambito del progetto, provisioning dell'account, accesso degli utenti, acquisto di estensioni
+    Raccolta dei requisiti, progettazione dell'architettura, progettazione di cataloghi, valutazione dei progetti, provisioning degli account, accesso utente, acquisto di estensioni
     <br>
   </td>
   <td>
@@ -34,7 +34,7 @@ Queste best practice sono organizzate per fase di implementazione in modo da pot
     <div>
     <a href="development/overview.md"><strong>Sviluppo</strong></a>
     </div>
-    Configurazione dell'ambiente locale e di staging, risoluzione dei problemi, gestione del codice, pianificazione della velocità, revisione della velocità, test di accettazione e approvazione del cliente
+    Configurazione dell'ambiente di staging locale, risoluzione dei problemi, gestione del codice, pianificazione dello sprint, revisione dello sprint, test di accettazione e approvazione del cliente
     <br>
   </td>
   <td>
@@ -44,7 +44,7 @@ Queste best practice sono organizzate per fase di implementazione in modo da pot
     <div>
     <a href="launch/overview.md"><strong>Launch</strong></a>
     </div>
-    Recensioni finali pre e post-lancio della checklist, distribuzione della produzione, configurazione della sicurezza, verifica del servizio e monitoraggio delle prestazioni  
+    Revisioni finali degli elenchi di controllo prima e dopo l’avvio, distribuzione della produzione, configurazione della sicurezza, verifica dei servizi e monitoraggio delle prestazioni  
     <br>
   </td>
   <td>

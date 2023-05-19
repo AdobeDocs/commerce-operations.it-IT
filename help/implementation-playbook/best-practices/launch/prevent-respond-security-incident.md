@@ -1,72 +1,72 @@
 ---
-title: Prevenire e rispondere a un incidente di sicurezza
-description: Scopri le best practice per evitare e rispondere a incidenti di sicurezza nel progetto Adobe Commerce on cloud Infrastructure.
+title: Prevenire e rispondere a un problema di sicurezza
+description: Scopri le best practice per evitare incidenti di sicurezza e rispondere a tali problemi nel progetto Adobe Commerce on cloud infrastructure.
 role: Admin, Developer, Leader, User
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: bb9b8cc9993a70ea50667f08c8260759ab0f91dc
+exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 0%
 
 ---
 
-
 # Best practice per prevenire e rispondere a un problema di sicurezza
 
-La sicurezza Adobe Commerce funziona sotto un [Responsabilità condivisa](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) modello. È fondamentale comprendere le responsabilità di Adobe e team tecnici. Di seguito riassunto [Tecniche consigliate per la sicurezza](https://www.adobe.com/content/dam/cc/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf) per garantire che il tuo progetto disponga dei migliori controlli di sicurezza e del modo migliore per rispondere a un incidente di sicurezza.
+La sicurezza di Adobe Commerce funziona in un [Responsabilità condivisa](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) modello. È fondamentale capire di cosa sono responsabili gli Adobi e i team tecnici. Di seguito riepiloghiamo [Best practice per la sicurezza](https://www.adobe.com/content/dam/cc/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf) per garantire che il progetto disponga dei migliori controlli di sicurezza e come rispondere al meglio a un problema di sicurezza.
 
 ## Prodotti e versioni interessati
 
 [Tutte le versioni supportate](../../../release/versions.md) di:
 
-- Adobe Commerce su infrastruttura cloud
+- Adobe Commerce sull’infrastruttura cloud
 
-## Risposta a un incidente
+## Rispondere a un incidente
 
-Ci sono molte considerazioni quando si risponde a un incidente di sicurezza. Se pensi di aver riscontrato un problema di sicurezza recente per il progetto di infrastruttura cloud di Adobe Commerce, è importante controllare l’accesso a tutti gli account utente amministratore, abilitare i controlli avanzati di autenticazione a più fattori (MFA), mantenere i registri critici e rivedere gli aggiornamenti di sicurezza per la tua versione di Adobe Commerce.
+Quando si risponde a un problema di sicurezza, è necessario tenere presenti diverse considerazioni. Se pensi di aver riscontrato un recente problema di sicurezza per il progetto di infrastruttura cloud di Adobe Commerce, è importante controllare l’accesso a tutti gli account utente amministratore, abilitare controlli avanzati di autenticazione a più fattori (MFA), conservare i registri critici e rivedere gli aggiornamenti di sicurezza per la tua versione di Adobe Commerce.
 
-Di seguito sono riportati ulteriori consigli. Possono contribuire a prevenire l&#39;accesso non autorizzato e iniziare il processo per ulteriori analisi degli incidenti.
+Ulteriori raccomandazioni sono descritte di seguito. Possono contribuire a prevenire l&#39;accesso non autorizzato e avviare il processo per ulteriori analisi dei problemi.
 
-## Come prevenire incidenti di sicurezza
+## Come prevenire gli incidenti di sicurezza
 
-Segui queste best practice di sicurezza per evitare in modo proattivo incidenti di sicurezza che influiscono sui siti e sulle vetrine Adobe Commerce:
+Segui queste best practice sulla sicurezza per prevenire in modo proattivo incidenti di sicurezza che interessano i siti e gli store front di Adobe Commerce:
 
-- [Abilita 2FA per l&#39;accesso dell&#39;amministratore](https://docs.magento.com/user-guide/stores/security-two-factor-authentication.html).
-L’autenticazione a due fattori è ampiamente utilizzata ed è comune generare codici di accesso per siti web diversi nella stessa app. In questo modo potrai accedere solo al tuo account utente. Se si perde la password o un bot indovina, l&#39;autenticazione a due fattori aggiunge un livello di protezione.
-- [Abilitare MFA per l’accesso SSH](https://devdocs.magento.com/cloud/project/project-enable-mfa-enforcement.html).
-Quando MFA è abilitato su un progetto, tutti gli account Adobe Commerce su infrastrutture cloud con accesso SSH devono seguire un flusso di lavoro di autenticazione che richiede un codice di autenticazione a due fattori (2FA) o un token API e un certificato SSH per accedere all’ambiente.
-- Effettua l’aggiornamento alla versione più recente di Adobe Commerce.
-Adobe rilascia patch di sicurezza e funzionali per ogni versione supportata di Adobe Commerce.
-- Imposta e utilizza un [URL amministratore non predefinito](https://docs.magento.com/user-guide/stores/store-urls-custom-admin.html).
-L’Adobe consiglia di utilizzare un URL amministratore univoco e personalizzato anziché il valore predefinito `admin` o un termine comune come *backend*. Anche se questa modifica della configurazione non protegge direttamente il sito da un determinato attore danneggiato, può ridurre l&#39;esposizione a script che tentano di ottenere l&#39;accesso non autorizzato.
-- Impedisci la modifica o l&#39;aggiornamento dei valori di configurazione nell&#39;amministratore utilizzando  [`bin/magento config:set` Comando CLI con `lock env` opzione di configurazione](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values.html#set-configuration-values-that-cannot-be-edited-in-the-admin). Questa opzione blocca il valore di configurazione in modo che non possa essere modificato nell’amministratore o impedisce le modifiche a un’impostazione già bloccata. Quando utilizzi questa opzione, le modifiche di configurazione vengono scritte nel `<Commerce base dir>/app/etc/env.php` file.
-- Imposta ed esegui [Strumento di scansione della sicurezza Adobe Commerce](https://docs.magento.com/user-guide/magento/security-scan.html).
-La scansione della sicurezza avanzata consente di monitorare ogni sito Adobe Commerce, incluso PWA, per individuare rischi noti per la sicurezza e il malware, e di ricevere aggiornamenti sulle patch e notifiche di sicurezza.
-- [Rivedi e aggiorna l’accesso utente amministratore](https://docs.magento.com/user-guide/system/permissions-users-all.html) e [impostazioni di protezione](https://docs.magento.com/user-guide/stores/security-admin.html).
-   - È consigliabile rimuovere tutti gli account obsoleti, inutilizzati o sospetti e ruotare le password per tutti gli utenti Admin.
-   - Rivedi e aggiorna le Impostazioni avanzate di sicurezza&lt; per il tuo progetto. La configurazione di sicurezza Amministratore consente di aggiungere una chiave segreta agli URL, richiedere che le password siano sensibili a maiuscole e minuscole e di limitare la durata delle sessioni di amministrazione, inclusa la durata delle password, e il numero di tentativi di accesso che possono essere effettuati prima che l’account utente amministratore sia bloccato. Per una maggiore sicurezza, è possibile configurare la lunghezza dell’inattività della tastiera prima della scadenza della sessione corrente e richiedere la distinzione tra maiuscole e minuscole per nome utente e password.
-- Controlla Adobe Commerce su [utenti di progetti cloud](https://devdocs.magento.com/cloud/project/user-admin.html).
-È consigliabile rimuovere account vecchi, non utilizzati o sospetti e richiedere agli utenti di modificare le proprie password.
-- Audit [Tasti SSH](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html) per Adobe Commerce sull&#39;infrastruttura cloud.
-Consigliamo di rivedere, eliminare e ruotare le chiavi SSH.
-- Implementa l&#39;elenco di controllo accessi (ACL) per l&#39;amministratore.
-È possibile utilizzare un elenco ACL Flast Edge in combinazione con un [Frammento di codice VCL](https://devdocs.magento.com/cloud/cdn/fastly-vcl-allowlist.html#vcl) filtrare le richieste in arrivo e consentire l’accesso per indirizzo IP all’amministratore.
+- [Abilita 2FA per l&#39;accesso amministratore](https://docs.magento.com/user-guide/stores/security-two-factor-authentication.html).
+L’autenticazione a due fattori è ampiamente utilizzata ed è comune generare codici di accesso per siti web diversi sulla stessa app. In questo modo solo l&#39;utente può accedere al proprio account utente. Se si perde la password o se un bot la indovina, l&#39;autenticazione a due fattori aggiunge un livello di protezione.
+- [Abilita MFA per accesso SSH](https://devdocs.magento.com/cloud/project/project-enable-mfa-enforcement.html).
+Quando MFA è abilitato in un progetto, tutti gli account Adobe Commerce su infrastrutture cloud con accesso SSH devono seguire un flusso di lavoro di autenticazione che richiede un codice di autenticazione a due fattori (2FA) o un token API e un certificato SSH per accedere all’ambiente.
+- Effettua l’aggiornamento all’ultima versione di Adobe Commerce.
+Adobe rilascia patch funzionali e di sicurezza per ogni versione supportata di Adobe Commerce.
+- Configurazione e utilizzo di un [URL amministratore non predefinito](https://docs.magento.com/user-guide/stores/store-urls-custom-admin.html).
+L’Adobe consiglia di utilizzare un URL amministratore univoco e personalizzato invece del predefinito `admin` o un termine comune come *backend*. Anche se questa modifica alla configurazione non protegge direttamente il sito da un determinato attore non valido, può ridurre l’esposizione agli script che tentano di ottenere accesso non autorizzato.
+- Impedisci la modifica o l&#39;aggiornamento dei valori di configurazione nell&#39;amministratore utilizzando  [`bin/magento config:set` Comando CLI con `lock env` opzione di configurazione](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values.html#set-configuration-values-that-cannot-be-edited-in-the-admin). Questa opzione blocca il valore di configurazione in modo che non possa essere modificato nell’amministratore o impedisce le modifiche a un’impostazione già bloccata. Quando si utilizza questa opzione, le modifiche alla configurazione vengono scritte nel `<Commerce base dir>/app/etc/env.php` file.
+- Imposta ed esegui il [Strumento Adobe Commerce Security Scan](https://docs.magento.com/user-guide/magento/security-scan.html).
+L&#39;analisi avanzata della sicurezza consente di monitorare tutti i siti Adobe Commerce, incluso PWA, per individuare rischi noti per la sicurezza e malware, nonché di ricevere aggiornamenti delle patch e notifiche di sicurezza.
+- [Rivedere e aggiornare l’accesso utente amministratore](https://docs.magento.com/user-guide/system/permissions-users-all.html) e [impostazioni di protezione](https://docs.magento.com/user-guide/stores/security-admin.html).
+   - È consigliabile rimuovere eventuali account vecchi, inutilizzati o sospetti e ruotare le password per tutti gli utenti Admin.
+   - Rivedi e aggiorna le Impostazioni avanzate di sicurezza&lt; per il progetto. La configurazione della sicurezza Admin consente di aggiungere una chiave segreta agli URL, richiedere che le password distinguano tra maiuscole e minuscole e limitare la durata delle sessioni di amministrazione, inclusa la durata delle password e il numero di tentativi di accesso che possono essere effettuati prima che l’account utente Admin sia bloccato. Per una maggiore sicurezza, è possibile configurare la durata dell&#39;inattività della tastiera prima della scadenza della sessione corrente e richiedere che il nome utente e la password siano sensibili all&#39;uso di maiuscole e minuscole.
+- Controlla Adobe Commerce su [utenti progetto cloud](https://devdocs.magento.com/cloud/project/user-admin.html).
+È consigliabile rimuovere tutti gli account vecchi, inutilizzati o sospetti e richiedere agli utenti di modificare le password.
+- Audit [Chiavi SSH](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html) per Adobe Commerce su infrastruttura cloud.
+È consigliabile rivedere, eliminare e ruotare le chiavi SSH.
+- Implementa l’elenco di controllo di accesso (ACL) per l’amministratore.
+È possibile utilizzare un elenco ACL di Fastly Edge in combinazione con un [Frammento di codice VCL](https://devdocs.magento.com/cloud/cdn/fastly-vcl-allowlist.html#vcl) per filtrare le richieste in ingresso e consentire l’accesso all’amministratore per indirizzo IP.
 
-## Analizzare un incidente
+## Analizzare un problema
 
-Il primo passo dell&#39;analisi degli incidenti è quello di raccogliere il maggior numero possibile di fatti, il più rapidamente possibile. La raccolta delle informazioni relative all&#39;incidente può aiutarti a determinare la potenziale causa dell&#39;incidente. Adobe Commerce fornisce gli strumenti seguenti per assistere nell’analisi degli incidenti.
+Il primo passo dell&#39;analisi degli incidenti consiste nel raccogliere il maggior numero possibile di dati, il più rapidamente possibile. Raccogliere informazioni sull&#39;incidente può essere utile per determinare la causa potenziale dell&#39;incidente. Adobe Commerce fornisce gli strumenti indicati di seguito per l’analisi dei problemi.
 
-- [Registri delle azioni dell’amministratore di controllo](https://docs.magento.com/user-guide/system/action-log-report.html).
-Il rapporto Registri azioni azioni visualizza un record dettagliato di tutte le azioni di amministrazione abilitate per la registrazione. Ogni record è contrassegnato con marca temporale e registra l&#39;indirizzo IP e il nome dell&#39;utente. I dettagli del registro includono i dati utente amministratore e le relative modifiche apportate durante l’azione.
-- Analizzare gli eventi con il [Osservazione per lo strumento Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=en).
-Lo strumento Osservazione per Adobe Commerce consente di analizzare problemi complessi per identificare le cause principali. Invece di tracciare dati diversi, puoi dedicare più tempo a correlare eventi ed errori per ottenere informazioni più approfondite sulle cause dei colli di bottiglia delle prestazioni.
-Lo strumento ha lo scopo di fornire una visione chiara di alcuni dei potenziali problemi del sito per aiutare a identificare la causa principale e mantenere le prestazioni dei siti in modo ottimale. Fai clic sul collegamento alla documentazione dello strumento Osservazione per Adobe Commerce qui sopra per accedere alla documentazione dello strumento. Nella documentazione è presente una sezione che descrive tutte le informazioni disponibili nella sezione **Sicurezza** scheda .
-- Analizzare i registri con [Nuovi registri delle relazioni](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs). I progetti Adobe Commerce su infrastruttura cloud Pro includono [Nuovi registri delle relazioni](https://docs.newrelic.com/docs/logs/new-relic-logs/get-started/introduction-new-relic-logs) servizio. Il servizio è preconfigurato per aggregare tutti i dati di registro dagli ambienti di staging e produzione in modo da visualizzarli in un dashboard di gestione del registro centralizzato.
-Puoi utilizzare il servizio Nuovi registri relazionali per completare le seguenti attività:
-   - Utilizzo [Nuove query relé](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) per cercare i dati di log aggregati.
-   - Visualizza i dati di log attraverso la nuova applicazione Relic Logs.
+- [Registri azioni amministrazione di controllo](https://docs.magento.com/user-guide/system/action-log-report.html).
+Nel rapporto Registri azioni viene visualizzato un record dettagliato di tutte le azioni di amministrazione abilitate per la registrazione. Ogni record ha la marca temporale e registra l’indirizzo IP e il nome dell’utente. I dettagli del registro includono i dati utente amministratore e le relative modifiche apportate durante l’azione.
+- Analizzare gli eventi con [Strumento Osservazione per Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=en).
+Lo strumento di osservazione per Adobe Commerce consente di analizzare problemi complessi per identificare le cause principali. Invece di tenere traccia di dati diversi, puoi dedicare più tempo alla correlazione di eventi ed errori per ottenere informazioni più approfondite sulle cause dei colli di bottiglia delle prestazioni.
+Lo strumento ha lo scopo di fornire una visione chiara di alcuni dei potenziali problemi del sito per aiutarti a identificare la causa principale e mantenere le prestazioni dei siti ottimali. Per accedere alla documentazione dello strumento, fai clic sul collegamento alla documentazione Osservazione per Adobe Commerce. Nella documentazione è presente una sezione che descrive tutte le informazioni disponibili sul **Sicurezza** scheda.
+- Analizzare i registri con [Registri New Relic](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs). I progetti Pro di Adobe Commerce su infrastruttura cloud includono [Registri New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/get-started/introduction-new-relic-logs) servizio. Il servizio è preconfigurato per aggregare tutti i dati di registro dagli ambienti di staging e produzione per visualizzarli in un dashboard di gestione dei registri centralizzato.
+Puoi utilizzare il servizio Registri di New Relic per completare le seguenti attività:
+   - Utilizzare [Query New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) per cercare dati di registro aggregati.
+   - Visualizzare i dati di registro tramite l’applicazione Registri di New Relic.
 
 ## Informazioni aggiuntive
 
-- [Framework di analisi delle cause principali](https://sansec.io/kb/incident-response/magento-root-cause-analysis).
+- [Framework di analisi della causa principale](https://sansec.io/kb/incident-response/magento-root-cause-analysis).

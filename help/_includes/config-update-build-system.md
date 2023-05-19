@@ -5,18 +5,18 @@ source-wordcount: '49'
 ht-degree: 0%
 
 ---
-# Aggiorna il sistema di compilazione
+# Aggiorna sistema di build
 
-**Per aggiornare il sistema di compilazione**:
+**Per aggiornare il sistema di build**:
 
-1. Accedi al sistema di compilazione come proprietario del file system.
-1. Passa alla directory principale dell&#39;applicazione.
+1. Accedi al sistema di build come proprietario del file system.
+1. Passare alla directory radice dell&#39;applicazione.
 
    ```bash
    cd <Magento root dir>
    ```
 
-1. Recupera le modifiche apportate a `app/etc/config.php` dal controllo del codice sorgente.
+1. Richiama le modifiche in `app/etc/config.php` dal controllo del codice sorgente.
 
    ```bash
    git pull mconfig m2.2_deploy
@@ -28,13 +28,13 @@ ht-degree: 0%
    bin/magento setup:di:compile
    ```
 
-1. Dopo aver compilato il codice, genera file di visualizzazione statici.
+1. Dopo la compilazione del codice, generare i file di visualizzazione statica.
 
    ```bash
    bin/magento setup:static-content:deploy -f
    ```
 
-1. Controlla le modifiche nel controllo del codice sorgente.
+1. Controllare le modifiche apportate al controllo del codice sorgente.
 
    ```bash
    git add -A && git commit -m "Updated files on build system" && git push mconfig m2.2_deploy

@@ -1,75 +1,75 @@
 ---
 title: Architettura di riferimento
-description: Esaminare i diagrammi dell’architettura di riferimento consigliata per le distribuzioni Adobe Commerce e Magenti Open Source.
-source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
+description: Esamina i diagrammi dell’architettura di riferimento consigliata per le distribuzioni di Adobe Commerce e di Magento Open Source.
+exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
-
 # Architettura di riferimento
 
-Questo argomento descrive una configurazione consigliata generica per le istanze Adobe Commerce e Magenti Open Source che utilizzano server normali ospitati fisicamente in un data center (non virtualizzato) in cui le risorse non vengono condivise con altri utenti. Il provider di hosting, specialmente se è specializzato nell&#39;hosting ad alte prestazioni Commerce, potrebbe consigliare una configurazione diversa che sia ugualmente o più efficace per i tuoi requisiti.
+In questo argomento viene descritta una configurazione generica consigliata per le istanze di Adobe Commerce e di Magento Open Source che utilizzano server semplici ospitati fisicamente in un centro dati (non virtualizzato) in cui le risorse non vengono condivise con altri utenti. Il provider di hosting, soprattutto se è specializzato nell’hosting ad alte prestazioni di Commerce, potrebbe consigliare una configurazione diversa che sia ugualmente o più efficace per i tuoi requisiti.
 
-Per Adobe Commerce sugli ambienti di infrastruttura cloud, consulta [Architettura iniziale](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
+Per Adobe Commerce sugli ambienti dell’infrastruttura cloud, consulta [Architettura iniziale](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
-## [!DNL Commerce] Diagramma dell&#39;architettura di riferimento
+## [!DNL Commerce] Diagramma dell’architettura di riferimento
 
-La [!DNL Commerce] Il diagramma dell’architettura di riferimento rappresenta l’approccio migliore per impostare un [!DNL Commerce] sito.
+Il [!DNL Commerce] Il diagramma dell’architettura di riferimento rappresenta l’approccio migliore per impostare un’architettura [!DNL Commerce] sito.
 
-Il colore di ciascun elemento nel diagramma indica se l’elemento fa parte di Magenti Open Source o Adobe Commerce e se è richiesto.
+Il colore di ciascun elemento nel diagramma indica se l’elemento fa parte di Magenti Open Source o Adobe Commerce e se è obbligatorio.
 
-* Gli elementi arancione sono necessari per il Magento Open Source
-* Gli elementi grigi sono opzionali per il Magento Open Source
+* Gli elementi arancioni sono necessari per il Magento Open Source
+* Gli elementi grigi sono facoltativi per il Magento Open Source
 * Gli elementi blu sono facoltativi per Adobe Commerce
 
-![Diagramma dell’architettura di riferimento Commerce](../assets/performance/images/ref-architecture-2.3.png)
+![Diagramma dell’architettura di riferimento di Commerce](../assets/performance/images/ref-architecture-2.3.png)
 
-Le sezioni seguenti forniscono raccomandazioni e considerazioni per ogni sezione del diagramma di Commerce Reference Architecture.
+Le sezioni seguenti forniscono consigli e considerazioni per ogni sezione del diagramma Commerce Reference Architecture.
 
 ### [!DNL Varnish]
 
 * A [!DNL Varnish] il cluster può adattarsi al traffico di un sito
-* Regola la dimensione dell’istanza in base al numero di pagine della cache necessarie
-* In un sito con traffico elevato, utilizza un [!DNL Varnish] Master per garantire lo scaricamento in cache di una richiesta (al massimo) per livello web
+* Ottimizza la dimensione dell’istanza in base al numero di pagine della cache necessarie
+* In un sito con traffico elevato, utilizza [!DNL Varnish] Master per garantire lo svuotamento della cache di una richiesta (al massimo) per livello web
 
 ### Web
 
-* Abilita scalabilità dei nodi per traffico e ridondanza
+* Abilita la scalabilità dei nodi per il traffico e la ridondanza
 * Un nodo è principale ed esegue cron
-* In alternativa, utilizza un Admin dedicato e i nodi di lavoro
+* In alternativa, utilizza nodi Admin e worker dedicati.
 
 ### Cache
 
 * Prendi in considerazione l’implementazione di un’istanza Redis separata per le sessioni
-* Puoi avere un&#39;istanza Redis per cache
-* Ridimensiona l’istanza in modo che contenga la dimensione massima prevista della cache
+* È possibile avere un’istanza Redis per cache
+* Ridimensiona l’istanza in modo che contenga la dimensione cache più grande prevista
 
 ### Database e code
 
-* I siti a traffico elevato possono ottimizzare le prestazioni del DB con database slave e database suddivisi per ordini/carrelli (in Adobe Commerce)
-* Utilizzare un database slave per abilitare il ripristino rapido e i backup dei dati
-* I siti a traffico ridotto possono memorizzare le immagini nel database
+* I siti a traffico elevato possono regolare le prestazioni del database con database slave e database suddivisi per ordini/carrelli (in Adobe Commerce)
+* Prendere in considerazione l&#39;utilizzo di un database slave per consentire il ripristino rapido e il backup dei dati
+* I siti a traffico ridotto possono memorizzare immagini nel database
 
 ### Ricerca {#search-heading}
 
-* Ottimizza il numero di istanze in base al traffico di ricerca
+* Ottimizzare il numero di istanze in base al traffico di ricerca
 
 ### Storage
 
-* Valuta l&#39;utilizzo di GFS o GlusterFS per l&#39;archiviazione su pub/media
-* In alternativa, utilizza l’archiviazione DB per i siti a traffico ridotto
+* Prendere in considerazione l&#39;utilizzo di GFS o GlusterFS per lo storage di pub/supporti
+* In alternativa, utilizzare l&#39;archiviazione DB per i siti a traffico ridotto
 
 ### Consigliato [!DNL Varnish] architettura di riferimento
 
-Il Magento supporta diversi motori di memorizzazione in cache a pagina intera (File, Memcache, Redis, [!DNL Varnish]) preconfigurato, insieme a una copertura estesa attraverso estensioni. [!DNL Varnish] è il motore di cache a pagina intera consigliato.  [!DNL Commerce] supporta molti [!DNL Varnish] configurazioni.
+Il Magento supporta diversi motori di caching a pagina intera (File, Memcache, Redis, [!DNL Varnish]) pronto all’uso, insieme a una copertura espansa tramite le estensioni. [!DNL Varnish] è il motore di cache a pagina intera consigliato.  [!DNL Commerce] supporta molti diversi [!DNL Varnish] configurazioni.
 
-Per i siti che non richiedono elevata disponibilità, si consiglia di utilizzare un [!DNL Varnish] configurazione con terminazione SSL Nginx.
+Per i siti che non richiedono un&#39;elevata disponibilità, si consiglia di utilizzare un [!DNL Varnish] configurazione con terminazione SSL Nginx.
 
 ![Semplice [!DNL Varnish] Configurazione con terminazione SSL](../assets/performance/images/single-varnish-with-ssl-termination.png)
 
-Per i siti che richiedono un’elevata disponibilità, si consiglia di utilizzare un [!DNL Varnish] configurazione con un load balancer di terminazione SSL.
+Per i siti che richiedono un&#39;elevata disponibilità, si consiglia di utilizzare un [!DNL Varnish] con SSL che termina il load balancer.
 
-![Alta disponibilità a due livelli [!DNL Varnish] configurazione con load balancer di terminazione SSL](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)
+![Elevata disponibilità a due livelli [!DNL Varnish] configurazione con SSL che termina il load balancer](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)

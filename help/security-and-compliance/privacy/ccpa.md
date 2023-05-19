@@ -1,52 +1,52 @@
 ---
 title: California Consumer Privacy Act (CCPA)
 description: Scopri il California Consumer Privacy Act (CCPA), che estende i diritti dei consumatori in California per determinare come vengono raccolte, memorizzate e utilizzate le loro informazioni personali.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
-
 # California Consumer Privacy Act (CCPA)
 
 >[!NOTE]
 >
->Questo è uno degli argomenti trattati in una serie per aiutare Adobe Commerce e i commercianti e gli sviluppatori di Magenti Open Source a comprendere le implicazioni del California Consumer Privacy Act (CCPA). Le informazioni sono destinate solo a scopo informativo e non devono essere interpretate come consulenza legale. Rivolgiti al tuo consulente legale per determinare se e come la tua azienda debba rispettare eventuali obblighi legali.
+>Questo è uno di una serie di argomenti per aiutare Adobe Commerce e i commercianti e gli sviluppatori di Magenti Open Source a comprendere le implicazioni del California Consumer Privacy Act (CCPA). Le informazioni sono fornite unicamente a scopo informativo e non devono essere interpretate come consulenza legale. Rivolgiti al tuo consulente legale per determinare se e come la tua azienda debba conformarsi ad obblighi di legge.
 
-La [CCPA](https://oag.ca.gov/privacy/ccpa) espande i diritti dei consumatori in California per determinare come vengono raccolte, memorizzate e utilizzate le loro informazioni personali, con particolare attenzione alla protezione dei consumatori dalla vendita o dallo scambio non autorizzati o dalle loro informazioni personali. Il CCPA è stato istituito nel 2018 ed è in vigore dal 1° gennaio 2020.
+Il [CCPA](https://oag.ca.gov/privacy/ccpa) estende i diritti dei consumatori in California per determinare in che modo le loro informazioni personali vengono raccolte, memorizzate e utilizzate, ponendo l&#39;accento sulla protezione dei consumatori dalla vendita o dallo scambio non autorizzati o dalle loro informazioni personali. Il CCPA è stato emanato nel 2018 ed è in vigore dal 1° gennaio 2020.
 
 Il CCPA conferisce ai consumatori i seguenti nuovi diritti:
 
-- **Diritto di sapere** le categorie di informazioni personali raccolte, utilizzate, condivise o vendute negli ultimi 12 mesi.
-- **Diritto di cancellazione** determinati tipi di informazioni personali detenute da un&#39;azienda e/o dai loro fornitori di servizi.
-- **Diritto di rinuncia** della vendita dei loro dati personali.
-- **Diritto alla non discriminazione** in termini di prezzo o di servizio per aver esercitato un diritto alla privacy ai sensi del CCPA.
+- **Diritto di sapere** le categorie di informazioni personali che li riguardano raccolte, utilizzate, condivise o vendute negli ultimi 12 mesi.
+- **Diritto di eliminazione** alcuni tipi di informazioni personali in possesso di un’azienda e/o dei relativi fornitori di servizi.
+- **Diritto di rinuncia** della vendita delle loro informazioni personali.
+- **Diritto alla non discriminazione** in termini di prezzo o servizio per aver esercitato il diritto alla privacy in virtù del CCPA.
 
 ## Conformità CCPA
 
-Lo sviluppo e l&#39;attuazione di un piano di conformità CCPA richiede uno sforzo coordinato. Incoraggiamo i commercianti a formare un team interfunzionale e a seguire la roadmap descritta in [Guida alla conformità CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) di rendere la loro impresa conforme al regolamento. In qualità di sviluppatore, potresti essere invitato a partecipare in qualità di stakeholder con un&#39;enfasi sui passaggi da 2 a 5 del processo. Consulta la sezione [Guida alla conformità CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) per ulteriori informazioni.
+L’elaborazione e l’attuazione di un piano di conformità CCPA richiedono uno sforzo coordinato. Incoraggiamo i commercianti a creare un team cross-functional e a seguire la roadmap delineata in [Guida alla conformità CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) per rendere la loro azienda conforme al regolamento. In qualità di sviluppatore, potresti essere invitato a partecipare come soggetto interessato, con particolare attenzione ai passaggi da 2 a 5 del processo. Consulta la [Guida alla conformità CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) per ulteriori informazioni.
 
-1. Assembla un team interfunzionale per risolvere il problema della conformità CCPA.
+1. Assembla un team cross-functional per garantire la conformità con il CCPA.
 
 1. **Inventario delle proprietà digitali.**
 
-1. **Mappa il percorso cliente e i processi di raccolta dati.**
+1. **Mappa il percorso del cliente e i processi di raccolta dei dati.**
 
-1. **Stabilire procedure e meccanismi per rispondere alle richieste dei clienti.**
+1. **Stabilisci procedure e meccanismi per rispondere alle richieste dei clienti.**
 
-1. **Scrivi il contenuto per le notifiche richieste per i clienti CCPA.**
+1. **Scrivere il contenuto per le notifiche dei clienti CCPA richieste.**
 
 1. Rivedere gli accordi con i fornitori di servizi.
 
-1. Aggiorna l&#39;informativa sulla privacy.
+1. Aggiorna l’informativa sulla privacy.
 
-1. Documentare tutte le procedure relative al CCPA e conservare i record.
+1. Documentare tutte le procedure relative al CCPA e conservarne la documentazione.
 
-## Riferimento per le informazioni personali
+## Informazioni personali
 
-Per informazioni tecniche, vedere i diagrammi del flusso di dati e le mappature delle entità del database nella Guida di riferimento alle informazioni personali applicabile a ogni versione di Adobe Commerce o Magento Open Source supportato.
+Per informazioni tecniche, consulta i diagrammi di flusso dei dati e le mappature delle entità del database nella documentazione di riferimento sulle informazioni personali applicabile a ogni versione di Adobe Commerce o Magento Open Source supportato.
 
-- [Riferimento per le informazioni personali dei clienti (versione 2.x)](data-m2.md)
-- [Riferimento per le informazioni personali dei clienti (versione) 1.x](data-m1.md)
+- [Riferimento per le informazioni personali del cliente (versione 2.x)](data-m2.md)
+- [Riferimento informazioni personali cliente (versione 1.x)](data-m1.md)

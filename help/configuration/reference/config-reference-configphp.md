@@ -1,25 +1,25 @@
 ---
 title: riferimento config.php
-description: Vedi un elenco di valori nel file config.php .
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+description: Consultate un elenco di valori nel file config.php.
+exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
 
 ---
 
-
 # riferimento config.php
 
-La `config.php` il file contiene le sezioni seguenti:
+Il `config.php` Il file contiene le sezioni seguenti:
 
 | Nome | Descrizione |
 | --------- | -------------------|
 | `i18n` | Tutti i dati di traduzione in linea. La lettura da questa sezione non è supportata. |
-| `modules` | Elenco dei moduli abilitati e disabilitati. |
-| `scopes` | Elenco di negozi, gruppi di negozi e siti web con informazioni correlate. |
-| `system` | Configurazioni di sistema necessarie per la distribuzione di contenuto statico. |
-| `themes` | La configurazione dei temi installati. |
+| `modules` | L’elenco dei moduli abilitati e disabilitati. |
+| `scopes` | Elenco di negozi, gruppi di negozi e siti Web con informazioni correlate. |
+| `system` | Le configurazioni di sistema necessarie per la distribuzione di contenuti statici. |
+| `themes` | Configurazione dei temi installati. |
 
 ## moduli
 
@@ -34,17 +34,17 @@ Contiene un array di moduli e i relativi stati. Se il modulo è abilitato, il va
 ]
 ```
 
-Ulteriori informazioni [Moduli].
+Ulteriori informazioni su [Moduli].
 
 ## ambiti
 
-Contiene una matrice di valori di configurazione dell&#39;ambito. Ha i seguenti sottonodi:
+Contiene un array di valori di configurazione dell&#39;ambito. Ha i seguenti sottonodi:
 
 | Nome | Descrizione |
 | ---------- | -----------------------------------|
 | `websites` | Configurazione del sito web |
-| `groups` | Memorizza la configurazione |
-| `stores` | Configurazione delle viste del negozio |
+| `groups` | Configurazione archivi |
+| `stores` | Configurazione delle viste store |
 
 ```conf
 'scopes' => [
@@ -82,11 +82,11 @@ Contiene una matrice di valori di configurazione dell&#39;ambito. Ha i seguenti 
 ]
 ```
 
-Ulteriori informazioni [Ambiti Commerce][scopes].
+Ulteriori informazioni su [Ambiti Commerce][scopes].
 
 ## sistema
 
-Contiene una matrice di valori di configurazione dei campi di sistema.
+Contiene un array di valori di configurazione dei campi di sistema.
 
 ```conf
 'system'=> [
@@ -100,7 +100,7 @@ Contiene una matrice di valori di configurazione dei campi di sistema.
 ]
 ```
 
-Ulteriori informazioni [Configurazioni specifiche del sistema](config-reference-sens.md).
+Ulteriori informazioni su [Configurazioni specifiche per il sistema](config-reference-sens.md).
 
 ## temi
 
@@ -120,7 +120,7 @@ Contiene un array di valori per la configurazione del tema.
 ]
 ```
 
-Ulteriori informazioni [Temi].
+Ulteriori informazioni su [Temi].
 
 <!-- link definitions -->
 

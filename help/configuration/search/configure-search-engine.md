@@ -1,13 +1,13 @@
 ---
 title: Configurazione del motore di ricerca
 description: Configura un motore di ricerca per le distribuzioni locali di Adobe Commerce e Magenti Open Source.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
 
 ---
-
 
 # Configurazione del motore di ricerca
 
@@ -114,4 +114,3 @@ Per reindicizzare utilizzando la riga di comando:
    >[!INFO]
    >
    >A differenza della cache, gli indicizzatori vengono aggiornati da un processo cron. Assicurati che [cron abilitato](../cli/configure-cron-jobs.md) prima di iniziare a utilizzare il motore di ricerca.
-

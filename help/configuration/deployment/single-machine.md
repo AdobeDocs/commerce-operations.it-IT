@@ -1,59 +1,60 @@
 ---
-title: Distribuzione di singole macchine
+title: Distribuzione di un singolo computer
 description: Scopri come distribuire gli aggiornamenti a Commerce su un server di produzione utilizzando la riga di comando.
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+exl-id: ca73309c-7584-4506-99de-dd933651eeb6
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
 
 ---
 
-# Distribuzione a macchina singola
+# Distribuzione su un singolo computer
 
-Questo argomento fornisce istruzioni per la distribuzione degli aggiornamenti a Commerce su un server di produzione utilizzando la riga di comando. Questo processo si applica agli utenti tecnici responsabili dei negozi in esecuzione su un singolo computer con alcuni temi e impostazioni internazionali installati.
+In questo argomento vengono fornite istruzioni per la distribuzione di aggiornamenti a Commerce in un server di produzione tramite la riga di comando. Questo processo si applica agli utenti tecnici responsabili degli archivi in esecuzione su un singolo computer con alcuni temi e impostazioni internazionali installati.
 
-## Ipotesi
+## Presupposti
 
-- È stato installato Commerce utilizzando [Compositore](../../installation/composer.md).
-- Stai applicando direttamente gli aggiornamenti al server.
+- Hai installato Commerce tramite [Compositore](../../installation/composer.md).
+- Gli aggiornamenti vengono applicati direttamente al server.
 
 >[!WARNING]
 >
->Questa guida non si applica se hai utilizzato `git clone` per installare Commerce.
->Gli sviluppatori contributori devono utilizzare [questa guida][install] per aggiornare l’installazione Commerce.
+>Questa guida non si applica se è stato utilizzato `git clone` per installare Commerce.
+>Gli sviluppatori partecipanti devono utilizzare [questa guida][install] per aggiornare l’installazione di Commerce.
 
-## Passaggi di distribuzione
+## Passaggi della distribuzione
 
-1. Accedi al tuo server di produzione come, o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+1. Accedi al server di produzione come, o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 
-1. Cambia directory nella directory di base Commerce:
+1. Cambia la directory nella directory Commerce base:
 
    ```bash
    cd <Commerce base directory>
    ```
 
-1. Attiva la modalità di manutenzione utilizzando il comando:
+1. Abilita la modalità di manutenzione tramite il comando:
 
    ```bash
    bin/magento maintenance:enable
    ```
 
-1. Applica gli aggiornamenti a Commerce o ai relativi componenti utilizzando il seguente pattern di comando:
+1. Applica gli aggiornamenti a Commerce o ai suoi componenti utilizzando il seguente pattern di comandi:
 
    ```bash
    composer require-commerce <package> <version> --no-update
    ```
 
-   **pacchetto**: Nome del pacchetto da aggiornare.
+   **pacchetto**: nome del pacchetto da aggiornare.
 
    Ad esempio:
 
    - `magento/product-community-edition`
    - `magento/product-enterprise-edition`
 
-   **version**: Versione di destinazione del pacchetto da aggiornare.
+   **version**: versione di destinazione del pacchetto da aggiornare.
 
-1. Aggiorna i componenti con Compositore:
+1. Aggiorna componenti con Compositore:
 
    ```bash
    composer update
@@ -71,7 +72,7 @@ Questo argomento fornisce istruzioni per la distribuzione degli aggiornamenti a 
    bin/magento setup:di:compile
    ```
 
-1. Distribuzione di contenuto statico:
+1. Distribuisci contenuto statico:
 
    ```bash
    bin/magento setup:static-content:deploy

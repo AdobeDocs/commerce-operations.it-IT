@@ -1,6 +1,6 @@
 ---
-title: Obiettivi di Commerce
-description: Imposta obiettivi a breve e lungo termine per aiutare il tuo team ad allinearsi su obiettivi strategici e aumentare l'efficacia organizzativa.
+title: Obiettivi Commerce
+description: Definisci obiettivi a breve e lungo termine per aiutare il tuo team ad allinearsi su obiettivi strategici e aumentare l’efficacia organizzativa.
 exl-id: 749f6a9a-c06f-4f51-a19c-9e4181e002f7
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,12 +11,12 @@ ht-degree: 0%
 
 # Obiettivi
 
-Gli obiettivi organizzativi sono obiettivi strategici che delineano i risultati attesi e guidano gli sforzi dei dipendenti su obiettivi condivisi. Gli obiettivi sono fondamentali per l&#39;efficacia organizzativa perché servono come obiettivo per le persone a lavorare verso. È importante stabilire obiettivi a breve e lungo termine per la tua attività, in modo da poter fornire pietre miliari realistiche per il raggiungimento di obiettivi a lungo termine.
+Gli obiettivi organizzativi sono obiettivi definiti strategicamente che delineano i risultati attesi e guidano gli sforzi dei dipendenti su obiettivi condivisi. Gli obiettivi sono fondamentali per l’efficacia organizzativa perché fungono da obiettivo per le persone verso cui lavorare. È importante stabilire obiettivi a breve e lungo termine per la tua azienda, in modo da poter fornire dei punti di partenza realistici verso il raggiungimento di obiettivi a lungo termine.
 
 ## Obiettivi a breve termine
 
-Gli obiettivi a breve termine sono spesso definiti con un arco di tempo inferiore a cinque anni, e più comunemente, entro uno o tre anni. Tali obiettivi hanno una componente operativa, con piani d&#39;azione per il futuro immediato. Essi si inseriscono anche nel piano d&#39;azione per il raggiungimento di obiettivi a lungo termine.
+Gli obiettivi a breve termine sono spesso definiti come aventi un intervallo di tempo inferiore a cinque anni, e più comunemente, entro uno o tre anni. Questi obiettivi hanno una componente operativa per loro, con piani d&#39;azione per il futuro immediato. Essi costituiscono inoltre il piano d&#39;azione per il raggiungimento degli obiettivi a lungo termine.
 
 ## Obiettivi a lungo termine
 
-Gli obiettivi a lungo termine sono comunemente definiti come obiettivi che richiedono un minimo di cinque o dieci anni per raggiungere. Gli obiettivi a lungo termine sono intrinsecamente strategici e sono utilizzati per modellare la direzione generale di un&#39;organizzazione. Questi obiettivi formano la strategia generale che delinea la direzione a lungo termine per l&#39;organizzazione. Gli obiettivi a lungo termine dovrebbero avere tappe periodiche o parametri di riferimento da utilizzare per valutare i loro progressi.
+Gli obiettivi a lungo termine sono comunemente definiti come obiettivi che richiedono un minimo di cinque-dieci anni per essere raggiunti. Gli obiettivi a lungo termine sono intrinsecamente strategici e vengono utilizzati per modellare la direzione complessiva di un’organizzazione. Questi obiettivi costituiscono l&#39;ampia strategia che delinea la direzione a lungo termine dell&#39;organizzazione. Gli obiettivi a lungo termine dovrebbero prevedere tappe o benchmark periodici da utilizzare per la valutazione dei progressi dell’organizzazione.

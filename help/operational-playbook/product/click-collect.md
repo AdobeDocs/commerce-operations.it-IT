@@ -1,6 +1,6 @@
 ---
-title: Fare clic e raccogliere
-description: Segui questi dieci suggerimenti per offrire un clic delizioso e raccogliere l'esperienza per i tuoi clienti.
+title: Fai clic su e raccogli
+description: Segui questi dieci suggerimenti per fornire un piacevole clic e raccogliere esperienza per i tuoi clienti.
 exl-id: 5f5743ac-75a5-41f1-8819-2de088f56387
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -9,73 +9,73 @@ ht-degree: 0%
 
 ---
 
-# Fai clic e raccogli
+# Fai clic su e raccogli
 
-Il clic e la raccolta sono diventati parte integrante delle strategie omni-channel perché promuovono l’aumento del traffico, dell’esperienza dei clienti e del ROI. Cliccare e raccogliere non è più solo per i grandi supermercati, sta diventando una parte sia delle organizzazioni B2B che B2C.
+Fare clic e raccogliere sono diventati parte integrante delle strategie omni-channel in quanto promuovono l’aumento del footfall, dell’esperienza del cliente e del ROI. Click and collect non è più solo per i grandi supermercati, ma sta diventando parte di organizzazioni B2B e B2C.
 
 ![Scarpe in cerchio](../../assets/playbooks/shoes.png)
 
 ## Suggerimenti
 
-Le aziende dovrebbero seguire questi dieci suggerimenti per fornire un buon servizio di click e raccolta:
+Le aziende devono seguire questi dieci suggerimenti per fornire un buon servizio di click and collect:
 
 - Consegna
 - Promozione
-- Disponibilità delle scorte
+- Disponibilità scorte
 - Store Locator
-- Ottimizzato per dispositivi mobili
+- Compatibile con dispositivi mobili
 - Opzioni store
-- Opzioni di evasione
-- Stato dell&#39;ordine
-- Costi aggiuntivi
+- Opzioni di esecuzione
+- Stato ordine
+- Costo aggiuntivo
 - Raccolta in-store
 
 ### Consegna
 
-Quando decidi di implementare il clic e la raccolta, le aziende devono considerare come intendono consegnare il clic e raccogliere ai clienti, come i tipi di servizio:
+Quando decidono di implementare il click e la raccolta, le aziende devono considerare in che modo intendono distribuire il click e la raccolta ai clienti, ad esempio i tipi di servizio:
 
-- **Pagamento online e raccolta in negozio**- L&#39;utente paga il prodotto online e dopo la conferma del pagamento il negozio notifica al cliente quando il prodotto è pronto per essere raccolto in base alla selezione del negozio clienti. Raccogliere prima il pagamento aiuta a riservare il prodotto.
+- **Pagamento online e raccolta in-store**- L&#39;utente paga il prodotto online e dopo la conferma del pagamento il negozio notifica al cliente quando il prodotto è pronto per essere raccolto in base alla selezione del negozio del cliente. La riscossione del pagamento consente innanzitutto di riservare il prodotto.
 
-- **Riserva online, pagamento e raccolta in negozio**- In questo tipo di servizio il cliente non paga online quando si riserva un prodotto. In questo tipo di servizio, il cliente può cambiare idea e potrebbe non acquistare il prodotto.
+- **Prenotazione del prodotto online, pagamento e ritiro in negozio**- In questo tipo di servizio il cliente non effettua il pagamento online al momento della prenotazione di un prodotto. In questo tipo di servizio, il cliente può cambiare idea e non acquistare il prodotto.
 
-- **Integrazione**- Dopo aver selezionato il tipo di consegna, le aziende devono decidere la struttura di integrazione (dove vengono inviati gli ordini, dove gli ordini sono soddisfatti). Le scorte possono essere evase da un deposito centrale o direttamente da singoli negozi.
+- **Integrazione**- Dopo aver selezionato il tipo di consegna, le aziende devono decidere sulla struttura di integrazione (dove vengono inviati gli ordini, dove vengono evasi gli ordini). Le scorte possono essere evase da un magazzino centrale o direttamente dai singoli negozi.
 
-- **Restituisce**- I resi possono essere complessi. Le aziende devono disporre di una strategia chiara per gestire i rendimenti dei prodotti consegnati e dei prodotti ordinati con clic e raccolta. Le aziende devono consentire ai clienti di restituire i prodotti ordinati tramite clic e raccogliere per fornire un servizio clienti end-to-end.
+- **Restituisce**- Le restituzioni possono essere complesse. Le aziende devono avere una strategia chiara per gestire i resi per i prodotti consegnati e i prodotti ordinati tramite clic e raccolta. Le aziende devono consentire ai clienti di restituire i prodotti che ordinano tramite click e collect per fornire un servizio clienti end-to-end.
 
 ## Promozione
 
-Le aziende devono commercializzare il loro servizio di click e raccolta. Se nessuno è a conoscenza del servizio, allora non è utile e non genererà il ritorno sull&#39;investimento richiesto. Anche se i servizi di clic e raccolta sono solitamente gli stessi, è comunque essenziale spiegare al cliente i passaggi per utilizzare il clic e raccogliere.
+Le aziende devono commercializzare il proprio servizio di click e collection. Se nessuno è a conoscenza del servizio, questo non è utile e non genera il ritorno richiesto sull&#39;investimento. Anche se i servizi di raccolta e clic sono in genere gli stessi, è comunque essenziale spiegare al cliente i passaggi per utilizzare i servizi di raccolta e clic.
 
-## Disponibilità delle scorte
+## Disponibilità scorte
 
-Le aziende devono mostrare i livelli di stock in tempo reale ai clienti quando selezionano il clic e raccolgono. Mostra il livello delle azioni ai clienti nel loro negozio preferito. Affinché questo funzioni correttamente, la piattaforma warehouse ed e-commerce deve essere integrata per tenere sotto controllo i livelli di inventario ed evitare reclami dei clienti.
+Le aziende devono mostrare ai clienti i livelli di stock in tempo reale quando selezionano di fare clic e raccogliere i dati. In questo modo viene visualizzato il livello delle scorte al cliente che si trova nel negozio preferito. Affinché questo funzioni correttamente, la piattaforma di warehouse e e e-commerce deve essere integrata per tenere sotto controllo i livelli di inventario ed evitare reclami dei clienti.
 
 ## Store Locator
 
-Le aziende devono assicurarsi che visualizzino tutte le informazioni del negozio da cui i clienti possono raccogliere il loro ordine tramite clic e raccogliere. Il negozio deve fornire informazioni quali l&#39;indirizzo del negozio, i tempi del negozio (compresi i giorni festivi) e il numero di contatto.
+Le aziende devono assicurarsi di visualizzare tutte le informazioni del punto vendita da cui i clienti possono raccogliere l&#39;ordine facendo clic e raccogliendo. Il negozio deve fornire informazioni quali l’indirizzo del negozio, la tempistica del negozio (comprese le festività) e il numero di contatto.
 
-## Ottimizzato per dispositivi mobili
+## Compatibile con dispositivi mobili
 
-Con la crescita degli utenti di dispositivi mobili, le aziende dovrebbero progettare il proprio sito web e-commerce per essere reattivi. Le aziende devono fornire la stessa esperienza ai clienti su tutti i dispositivi.
+Con la crescita degli utenti di dispositivi mobili, le aziende dovrebbero prendere in considerazione la progettazione del proprio sito web di e-commerce per essere reattivi. Le aziende devono fornire la stessa esperienza ai clienti su tutti i dispositivi.
 
 ## Opzioni store
 
-Alcuni negozi potrebbero non essere facilmente accessibili ad alcuni clienti. È buona idea fornire altre posizioni per fare clic e raccogliere, come l&#39;ufficio postale o il negozio di comodo.
+Alcuni negozi potrebbero non essere facilmente accessibili ad alcuni clienti. È consigliabile fornire altre posizioni per il clic e la raccolta, ad esempio l&#39;ufficio postale o il negozio di generi alimentari.
 
-## Opzioni di evasione
+## Opzioni di esecuzione
 
-Se tutti i prodotti venduti da un&#39;azienda sul sito web non sono disponibili per il clic e la raccolta, l&#39;azienda deve visualizzare il metodo di spedizione previsto per quel prodotto. Questo potrebbe essere un po &#39;scomodo per i clienti, quindi è meglio offrire clic e raccogliere per il maggior numero possibile di prodotti.
+Se tutti i prodotti venduti da un’azienda sul sito web non sono disponibili per il clic e la raccolta, l’azienda deve visualizzare il metodo di spedizione fornito per quel prodotto. Questo potrebbe essere un po &#39;scomodo per i clienti, quindi è meglio offrire clic e raccogliere per il maggior numero di prodotti possibile.
 
-## Stato dell&#39;ordine
+## Stato ordine
 
-La comunicazione è fondamentale per il servizio clienti anche quando si tratta di fare clic e raccogliere. È importante comunicare lo stato dell’ordine dopo l’acquisto, ad esempio dove e quando devono raccogliere l’ordine, e se è necessario fornire l’identificazione personale per raccogliere l’ordine. Lo stato non deve essere comunicato solo tramite SMS o e-mail, ma anche sul sito in base all’ordine di tracciamento.
+La comunicazione è fondamentale per il servizio clienti anche quando si tratta di fare clic e raccogliere. È importante comunicare lo stato dell’ordine dopo l’acquisto, ad esempio dove e quando devono ritirare l’ordine e se devono portare l’identificazione personale per raccoglierlo. Lo stato non deve essere comunicato solo tramite SMS o e-mail, ma anche sul sito in ordine di tracciamento.
 
-## Costi aggiuntivi
+## Costo aggiuntivo
 
-Alcuni marchi applicano un costo aggiuntivo di assistenza se l’ordine è inferiore a un certo valore per il clic e la raccolta. Tuttavia, la ricerca ha dimostrato che la possibilità di fare clic e raccogliere gratuitamente aumenta il traffico sul sito web e aumenta i tassi di conversione, il che a sua volta aumenta il ROI.
+Alcuni marchi addebitano un costo di servizio aggiuntivo se l’ordine è inferiore a un determinato valore per il clic e la raccolta. Tuttavia, una ricerca ha dimostrato che fornire clic e raccogliere gratuitamente aumenta il footfall sul sito web e aumenta i tassi di conversione, il che a sua volta aumenta il ROI.
 
 ## Raccolta in-store
 
-Indipendentemente dal fatto che l&#39;attività sia B2B o B2C, deve fornire il miglior servizio clienti. È essenziale fornire informazioni in negozio ai clienti, ad esempio dove si trova il punto di raccolta nel negozio. Designa una sezione nello store per fare clic e raccogliere. Assicurati che i clienti non debbano aspettare a lungo per raccogliere il loro ordine. Alcuni marchi forniscono anche il click e raccogliere parcheggio, dove l&#39;utente inserisce i dettagli per cliccare e raccogliere parcheggio e i dipendenti del negozio portare loro l&#39;ordine.
+Indipendentemente dal fatto che l&#39;attività sia B2B o B2C, deve fornire il miglior servizio clienti. È essenziale fornire ai clienti informazioni in-store, ad esempio dove si trova il punto di raccolta nel negozio. Designare una sezione nell&#39;archivio per fare clic e raccogliere. Assicurati che i clienti non debbano attendere a lungo per ritirare l’ordine. Alcuni marchi forniscono anche click e raccogliere parcheggio, dove l&#39;utente inserisce i dettagli per clic e raccogliere parcheggio e i dipendenti del negozio portano il loro ordine a loro.
 
-Questi sono solo alcuni esempi di personalizzazione. Ci sono innumerevoli funzionalità e funzionalità che possono essere esplorate in base alle esigenze del business. Mantenere il passo con le tendenze di mercato in continua evoluzione può essere difficile, ma aiuta a migliorare l&#39;esperienza complessiva dei clienti.
+Questi sono solo alcuni esempi di personalizzazione. Esistono innumerevoli altre funzionalità che possono essere esplorate in base alle esigenze dell’azienda. Mantenere il passo con le tendenze di mercato in continua evoluzione può essere difficile, ma aiuta a migliorare l&#39;esperienza complessiva del cliente.

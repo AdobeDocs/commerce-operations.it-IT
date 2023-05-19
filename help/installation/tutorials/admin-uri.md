@@ -1,35 +1,35 @@
 ---
-title: Visualizza o modifica l’URI amministratore
-description: Segui questi passaggi per visualizzare e modificare l’URI dell’applicazione Adobe Commerce o Amministratore di Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Visualizzare o modificare l’URI amministratore
+description: Per visualizzare e modificare l’URI dell’applicazione Adobe Commerce o Magenti Open Source Admin, segui la procedura riportata di seguito.
+exl-id: 768f9ab4-7123-4460-9df8-a6c98ae55d95
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
 
 ---
 
-
-# Visualizza o modifica l’URI amministratore
+# Visualizzare o modificare l’URI amministratore
 
 Prima di eseguire questo comando, è necessario [Creare o aggiornare la configurazione della distribuzione](deployment.md).
 
 ## Visualizza l&#39;URI amministratore
 
-In questa sezione viene illustrato come utilizzare la riga di comando per visualizzare l’identificatore di risorsa uniforme dell’amministratore ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
+Questa sezione illustra come utilizzare la riga di comando per visualizzare l&#39;identificatore di risorsa uniforme amministratore ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
 
-Opzioni di comando:
+Opzioni comando:
 
 ```bash
 bin/magento info:adminuri
 ```
 
-Segue un esempio di risultato:
+Di seguito è riportato un esempio di risultato:
 
 ```terminal
 Admin Panel URI: /admin_1wgrah
 ```
 
-Puoi anche visualizzare l’URI amministratore in `<magento_root>/app/etc/env.php`. Segue uno snippet:
+Puoi anche visualizzare l’URI amministratore in `<magento_root>/app/etc/env.php`. Di seguito è riportato uno snippet:
 
 ```php?start_inline=1
   'backend' =>
@@ -38,6 +38,6 @@ Puoi anche visualizzare l’URI amministratore in `<magento_root>/app/etc/env.ph
   ),
 ```
 
-## Modificare l’URL amministratore
+## Modificare l’URL dell’amministratore
 
-Per modificare l’URI di amministrazione, utilizza la variabile [`magento setup:config:set`](deployment.md) comando.
+Per modificare l’URI di amministrazione, utilizza [`magento setup:config:set`](deployment.md) comando.

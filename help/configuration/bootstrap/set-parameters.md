@@ -1,24 +1,24 @@
 ---
 title: Imposta il valore dei parametri di bootstrap
-description: Scopri come impostare i parametri di avvio per l’applicazione Commerce.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+description: Scopri come impostare i parametri di bootstrap per l’applicazione Commerce.
+exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
 
-
 # Bootstrap parametri
 
-Questo argomento illustra come impostare i valori dei parametri di avvio dell’applicazione Commerce. Vedi [Panoramica dell&#39;inizializzazione dell&#39;applicazione e dell&#39;avvio](initialization.md).
+In questo argomento viene illustrato come impostare i valori dei parametri di avvio dell&#39;applicazione Commerce. Consulta [Panoramica sull&#39;inizializzazione e l&#39;avvio dell&#39;applicazione](initialization.md).
 
-La tabella seguente illustra i parametri di avvio che è possibile impostare:
+Nella tabella seguente vengono illustrati i parametri di bootstrap che è possibile impostare:
 
-| Parametro Bootstrap | Descrizione |
+| Bootstrap parametro | Descrizione |
 | ------------------- | -------------------------------------------- |
-| MAGE_DIRS | Specifica percorsi di directory e URL personalizzati |
-| MAGE_PROFILER | Abilita grafici di dipendenza e profilazione HTML |
+| DIR_IMMAGINE | Specifica percorsi URL e directory personalizzati |
+| IMMAGINE_PROFILER | Abilita i grafici delle dipendenze e la profilatura dei HTML |
 
 >[!INFO]
 >
@@ -26,23 +26,23 @@ La tabella seguente illustra i parametri di avvio che è possibile impostare:
 >- Ora puoi impostare la modalità applicazione (sviluppatore, predefinito, produzione) utilizzando [`magento deploy:mode:set {mode}`](../cli/set-mode.md) comando.
 
 
-## Impostare parametri utilizzando una variabile di ambiente
+## Impostare i parametri utilizzando una variabile di ambiente
 
-Questa sezione illustra come impostare i valori dei parametri di bootstrap utilizzando le variabili di ambiente.
+Questa sezione illustra come impostare i valori dei parametri di bootstrap utilizzando variabili di ambiente.
 
 ### Impostare la modalità applicazione
 
-È possibile specificare le variabili di bootstrap come variabili di ambiente a livello di sistema, che consentono a tutti i processi di utilizzarle.
+È possibile specificare le variabili di avvio automatico come variabili di ambiente a livello di sistema, in modo che tutti i processi possano utilizzarle.
 
-Ad esempio, puoi utilizzare il `MAGE_PROFILER` variabile di ambiente di sistema per specificare una modalità come segue:
+Ad esempio, puoi utilizzare `MAGE_PROFILER` variabile di ambiente di sistema per specificare una modalità nel modo seguente:
 
 ```terminal
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
-Imposta la variabile utilizzando un comando specifico della shell. Poiché le conchiglie hanno sintassi diversa, consulta un riferimento come [unix.stackexchange.com][unix-stackx].
+Imposta la variabile utilizzando un comando specifico della shell. Poiché le shell hanno una sintassi diversa, consulta un riferimento come [unix.stackexchange.com][unix-stackx].
 
-Esempio di shell di base per CentOS:
+Esempio di shell Bash per CentOS:
 
 ```bash
 export MAGE_PROFILER=firebug
@@ -50,7 +50,7 @@ export MAGE_PROFILER=firebug
 
 >[!INFO]
 >
->Se `PHP Fatal error` viene visualizzato nel browser dopo aver impostato un valore del profiler e aver riavviato il server web. Il motivo potrebbe essere legato alla memorizzazione in cache del codice bytecode PHP, che memorizza in cache bytecodes e percorsi classici PHP.
+>Se un `PHP Fatal error` viene visualizzato nel browser dopo aver impostato un valore di profiler, riavvia il server web. Il motivo potrebbe essere legato alla memorizzazione in cache del bytecode PHP, che memorizza nella cache i bytecode e i classpath PHP.
 
 ## Imposta parametri per Apache o Nginx
 
@@ -58,13 +58,13 @@ Questa sezione illustra come specificare la modalità per Apache o Nginx.
 
 ### Impostazione Nginx
 
-Consulta la sezione [Nginx configurazione di esempio] su _GitHub_.
+Consulta la [Configurazione campione Nginx] il _GitHub_.
 
-### Impostazione Apache.htaccess
+### Impostazione Apache .htaccess
 
-Un modo per impostare la modalità dell&#39;applicazione è quello di modificare `.htaccess`. In questo modo, non è necessario modificare le impostazioni di Apache.
+Un modo per impostare la modalità applicazione consiste nel modificare `.htaccess`. In questo modo, non è necessario modificare le impostazioni di Apache.
 
-Puoi modificare `.htaccess` in una delle posizioni seguenti, a seconda del punto di ingresso dell’applicazione Commerce:
+Puoi modificare `.htaccess` in una delle seguenti posizioni, a seconda del punto di ingresso nell’applicazione Commerce:
 
 - `<magento_root>/.htaccess`
 - `<magento_root>/pub/.htaccess`
@@ -87,30 +87,30 @@ Puoi modificare `.htaccess` in una delle posizioni seguenti, a seconda del punto
    <custom value>
    ```
 
-1. Salva le modifiche in `.htaccess`; non è necessario riavviare Apache per rendere effettiva la modifica.
+1. Salva le modifiche apportate a `.htaccess`; non è necessario riavviare Apache per rendere effettiva la modifica.
 
 ### Impostazione Apache
 
-Il server web Apache supporta l’impostazione della modalità applicazione utilizzando `mod_env` direttive.
+Il server web Apache supporta l’impostazione della modalità applicazione tramite `mod_env` direttive.
 
-Apache `mod_env` La direttiva è leggermente diversa [Apache versione 2.2] e [Apache versione 2.4].
+Apache `mod_env` la direttiva è leggermente diversa [Apache versione 2.2] e [Apache versione 2.4].
 
-Le procedure seguenti mostrano come impostare la modalità applicazione in un host virtuale Apache. Non è l’unico modo per utilizzare `mod_env` direttive; consulta la documentazione di Apache per ulteriori informazioni.
+Le procedure seguenti mostrano come impostare la modalità applicazione in un host virtuale Apache. Questo non è l’unico modo per utilizzare `mod_env` direttive; per informazioni dettagliate, consulta la documentazione di Apache.
 
 >[!TIP]
 >
->Nella sezione seguente si presuppone che tu abbia già configurato l&#39;host virtuale. In caso contrario, consulta una risorsa come [esercitazione su DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts).
+>La sezione seguente presuppone che tu abbia già configurato l&#39;host virtuale. In caso contrario, consulta una risorsa come [questo tutorial su DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts).
 
-**Per specificare una variabile di bootstrap per Apache su Ubuntu**:
+**Per specificare una variabile di avvio automatico per Apache su Ubuntu**:
 
-1. Come utente con `root` , apri il file di configurazione host virtuale in un editor di testo.
+1. Come utente con `root` , aprire il file di configurazione host virtuale in un editor di testo.
 
-   Ad esempio, se l&#39;host virtuale è denominato `my.magento`,
+   Ad esempio, se l’host virtuale è denominato `my.magento`,
 
    - Apache 2.4: `vim /etc/apache2/sites-available/my.magento.conf`
    - Apache 2.2: `vim /etc/apache2/sites-available/my.magento`
 
-1. In qualsiasi punto della configurazione dell&#39;host virtuale, aggiungi la seguente riga:
+1. In qualsiasi punto della configurazione host virtuale, aggiungi la seguente riga:
 
    ```conf
    SetEnv "<variable name>" "<variable value>"
@@ -135,20 +135,20 @@ Le procedure seguenti mostrano come impostare la modalità applicazione in un ho
    a2ensite my.magento.conf
    ```
 
-1. Dopo aver impostato la modalità , riavvia il server web:
+1. Dopo aver impostato la modalità, riavviare il server Web:
 
    - Ubuntu: `service apache2 restart`
    - CentOS: `service httpd restart`
 
 >[!TIP]
 >
->Questa sezione presuppone che tu abbia già configurato l&#39;host virtuale. In caso contrario, consulta una risorsa come [esercitazione su DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
+>In questa sezione si presuppone che l&#39;host virtuale sia già stato configurato. In caso contrario, consulta una risorsa come [questo tutorial su DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
 
-**Per specificare una variabile bootstrap per Apache su CentOS**:
+**Per specificare una variabile di avvio automatico per Apache su CentOS**:
 
-1. Come utente con `root` privilegi, apri `/etc/httpd/conf/httpd.conf` in un editor di testo.
+1. Come utente con `root` privilegi, apertura `/etc/httpd/conf/httpd.conf` in un editor di testo.
 
-1. In qualsiasi punto della configurazione dell&#39;host virtuale, aggiungi la seguente riga:
+1. In qualsiasi punto della configurazione host virtuale, aggiungi la seguente riga:
 
    ```conf
    SetEnv "<variable name>" "<variable value>"
@@ -162,7 +162,7 @@ Le procedure seguenti mostrano come impostare la modalità applicazione in un ho
 
 1. Salva le modifiche e esci dall’editor di testo.
 
-1. Dopo aver impostato la modalità , riavvia il server web:
+1. Dopo aver impostato la modalità, riavviare il server Web:
 
    - Ubuntu: `service apache2 restart`
    - CentOS: `service httpd restart`
@@ -171,5 +171,5 @@ Le procedure seguenti mostrano come impostare la modalità applicazione in un ho
 
 [Apache versione 2.2]: https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv
 [Apache versione 2.4]: https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv
-[Nginx configurazione di esempio]: https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16
+[Configurazione campione Nginx]: https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16
 [unix-stackx]: https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables

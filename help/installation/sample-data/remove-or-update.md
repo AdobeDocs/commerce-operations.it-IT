@@ -1,31 +1,31 @@
 ---
-title: Rimuovere o aggiornare moduli di dati di esempio
-description: Segui questi passaggi per gestire moduli di dati di esempio Adobe Commerce e Magenti Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+title: Rimuovi o aggiorna i moduli dati di esempio
+description: Per gestire i moduli dati di esempio di Adobe Commerce e Magenti Open Source, segui la procedura riportata di seguito.
+exl-id: d23f999f-18bf-449b-be23-bdf392dda539
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
+# Rimuovi o aggiorna i moduli dati di esempio
 
-# Rimuovere o aggiornare moduli di dati di esempio
+In questo argomento viene illustrato come:
 
-Questo argomento illustra come:
+* [Rimuovi moduli dati di esempio](#remove-sample-data-modules) da un’installazione di Adobe Commerce o di Magento Open Source `composer.json`. Questa opzione funziona *non* rimuovere i dati di esempio dal database.
 
-* [Rimuovere i moduli di dati di esempio](#remove-sample-data-modules) da un’installazione Adobe Commerce o Magenti Open Source `composer.json`. Questa opzione *not* rimuovere dati di esempio dal database.
+* [Preparare l’aggiornamento dei dati di esempio](#prepare-to-update-sample-data) (ad esempio, prima di aggiornare l’applicazione di Magento).
 
-* [Preparare l’aggiornamento dei dati di esempio](#prepare-to-update-sample-data) (ad esempio, prima di aggiornare l&#39;applicazione Magento).
+## Rimuovi moduli dati di esempio
 
-## Rimuovere i moduli di dati di esempio
-
-Immetti il seguente comando:
+Immetti il comando seguente:
 
 ```bash
 bin/magento sampledata:remove
 ```
 
-L’elenco completo dei moduli di dati campione è il seguente:
+L’elenco completo dei moduli di dati di esempio è il seguente:
 
 Adobe Commerce e Magento Open Source:
 
@@ -63,10 +63,10 @@ Solo Adobe Commerce:
 
 Questo comando consente di aggiornare i dati di esempio prima di aggiornare Adobe Commerce o Magenti Open Source.
 
-Per preparare i dati di esempio da aggiornare, immettere il comando seguente:
+Per preparare i dati di esempio per l&#39;aggiornamento, immettere il comando seguente:
 
 ```bash
 bin/magento sampledata:reset
 ```
 
-Dopo questo, [aggiornare l&#39;applicazione](../tutorials/uninstall.md#update-the-application).
+Dopo, [aggiornare l’applicazione](../tutorials/uninstall.md#update-the-application).

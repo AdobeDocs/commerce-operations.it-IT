@@ -1,6 +1,6 @@
 ---
 title: Immagini del prodotto
-description: Fornisci ai tuoi clienti immagini di prodotti e video di alta qualità per aumentare i tassi di conversazione.
+description: Fornisci ai tuoi clienti immagini e video di prodotti di alta qualità per aumentare i tassi di conversazione.
 exl-id: 080f177e-f668-4154-8a05-ea4724c29c5f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,39 +11,39 @@ ht-degree: 0%
 
 # Immagini del prodotto
 
-E-commerce è interamente basato sull’esperienza online. I clienti che visitano il tuo sito web dovrebbero essere incuriositi dall&#39;acquisto dei prodotti disponibili, il che aumenterà il tasso di conversione. Molti fattori giocano un ruolo importante nell&#39;aumento del ROI. Un fattore di questo tipo è l&#39;immagine del prodotto. Le immagini dei prodotti svolgono un ruolo importante nell&#39;attirare e convincere i clienti ad acquistare un prodotto. Puoi utilizzare le stesse immagini del prodotto sia per B2B che per B2C.
+L’e-commerce si basa interamente sull’esperienza online. I clienti che visitano il tuo sito web devono essere indotti ad acquistare i prodotti disponibili, il che aumenterà il tasso di conversione. Molti fattori contribuiscono ad aumentare il ROI. Uno di questi fattori è l&#39;immagine del prodotto. Le immagini dei prodotti svolgono un ruolo fondamentale nell&#39;attirare e convincere i clienti ad acquistare un prodotto. Puoi utilizzare le stesse immagini del prodotto sia per B2B che per B2C.
 
-In realtà, i clienti possono sentire e provare il prodotto, ma quando acquistano online non hanno una possibilità di farlo, quindi, è necessario fornire informazioni dettagliate sul prodotto. Oltre ai dettagli, è essenziale avere immagini visive di alta qualità del prodotto come immagini e video per aiutare i clienti a comprendere il prodotto prima di decidere di acquistare. Le immagini dei prodotti sono la prima cosa che i clienti vedono sul tuo sito web, anche prima della descrizione del prodotto, del nome o del prezzo.
+In realtà, i clienti possono sentire e provare il prodotto, ma quando acquistando online non hanno la possibilità di farlo, quindi, è necessario fornire informazioni dettagliate sul prodotto. Oltre ai dettagli, è essenziale disporre di visualizzazioni di alta qualità del prodotto, come immagini e video, per aiutare i clienti a comprendere il prodotto prima che decidano di acquistare. Le immagini del prodotto sono la prima cosa che i clienti visualizzano sul sito web, anche prima della descrizione del prodotto, del nome o del prezzo.
 
-È possibile utilizzare diversi tipi di immagini in base alle esigenze aziendali.
+È possibile utilizzare diversi tipi di immagini in base alle esigenze dell&#39;azienda.
 
-## Immagine del prodotto su superficie piana
+## Immagine del prodotto su una superficie piana
 
-![Immagine del prodotto su superficie piana](../../assets/playbooks/product-image-flat.png)
+![Immagine del prodotto su una superficie piana](../../assets/playbooks/product-image-flat.png)
 
-## Immagini di prodotto con modelli
+## Immagini dei prodotti con modelli
 
-![Immagine del prodotto con il modello](../../assets/playbooks/product-image-model.png)
+![Immagine prodotto con modello](../../assets/playbooks/product-image-model.png)
 
-## Immagini di prodotto
+## Immagini del prodotto in primo piano
 
-![Immagine del prodotto](../../assets/playbooks/product-image-feature.png)
+![Immagine prodotto in primo piano](../../assets/playbooks/product-image-feature.png)
 
 ## Immagini lifestyle
 
-![Immagine del prodotto con il modello](../../assets/playbooks/product-image-lifestyle.png)
+![Immagine prodotto con modello](../../assets/playbooks/product-image-lifestyle.png)
 
-## Immagini caricate dall’utente
+## Immagini caricate dall&#39;utente
 
-![Immagine del prodotto con il modello](../../assets/playbooks/product-image-user-upload.png)
+![Immagine prodotto con modello](../../assets/playbooks/product-image-user-upload.png)
 
-## Immagini di imballaggio del prodotto
+## Immagini del packaging del prodotto
 
-![Immagine del prodotto](../../assets/playbooks/product-image-packaging.png)
+![Immagine prodotto in primo piano](../../assets/playbooks/product-image-packaging.png)
 
-## Immagini non in box
+## Immagini non &quot;in box&quot;
 
-![Immagine dell&#39;unboxing del prodotto](../../assets/playbooks/product-image-unboxing.png)
+![Immagine di unboxing del prodotto](../../assets/playbooks/product-image-unboxing.png)
 
 ## Video del prodotto
 
@@ -51,20 +51,20 @@ In realtà, i clienti possono sentire e provare il prodotto, ma quando acquistan
 
 ## Best practice
 
-- **Demo del prodotto**- Se il prodotto ha uno scopo definito, demo il prodotto per mostrare le sue funzioni e caratteristiche.
+- **Demo del prodotto**- Se il prodotto ha uno scopo definito, eseguire una dimostrazione del prodotto per visualizzarne le funzioni e le caratteristiche.
 
-- **Promuovere immagini generate dall’utente**- Utenti che caricano le immagini con il prodotto come recensione, che motiva altri acquirenti ad acquistare il prodotto.
+- **Promuovi le immagini generate dall&#39;utente**—Gli utenti caricano le loro immagini con il prodotto come una recensione, che motiva gli altri acquirenti ad acquistare il prodotto.
 
-- **Vista a 360 gradi del prodotto**- Il caricamento di un video o di un GIF a 360 gradi del prodotto può fornire una visualizzazione dettagliata al cliente e motivarlo ad acquistare il prodotto.
+- **Visualizzazione a 360 gradi del prodotto**- Il caricamento di un video o un GIF a 360 gradi del prodotto può fornire una visione dettagliata al cliente e motivarlo ad acquistare il prodotto.
 
-- **Convenzione di denominazione**: rendi la regola di seguire una convenzione di denominazione per l’immagine del prodotto, che aiuta a ridurre al minimo l’errore di caricamento di un’immagine errata per un prodotto e aiuta il team a gestire facilmente le immagini.
+- **Convenzione di denominazione**- Regola: seguire una convenzione di denominazione per l&#39;immagine del prodotto per ridurre al minimo l&#39;errore di caricamento di un&#39;immagine non corretta per un prodotto e facilitare la gestione delle immagini da parte del team.
 
-- **Caricamento pagina**- Non caricare immagini che aumenteranno il tempo di caricamento della pagina. Se un cliente deve attendere che l&#39;immagine venga visualizzata, potrebbe lasciare il sito.
+- **Caricamento pagina**- Non caricare immagini che aumentano il tempo di caricamento della pagina. Se un cliente deve attendere la visualizzazione dell’immagine, potrebbe uscire dal sito.
 
-- **Contenuto semplice**- Non complicare eccessivamente il contenuto. Cercate di mantenere il contenuto semplice e attraente dove la messa a fuoco è il prodotto. Ad esempio, una best practice consiste nell’avere l’immagine del prodotto su uno sfondo bianco per migliorare l’immagine del prodotto.
+- **Contenuto semplice**- Non complicare eccessivamente il contenuto. Cercate di mantenere i contenuti semplici e accattivanti laddove il prodotto è il punto focale. Ad esempio, una best practice prevede di disporre l’immagine del prodotto su uno sfondo bianco per migliorarla.
 
-- **Immagine del prodotto reale**- Quando un cliente acquista un prodotto online, si aspetta di vedere il prodotto così come è sul sito web. Evita di applicare filtri o migliorare l’immagine per modificare l’aspetto del prodotto. È importante essere trasparenti con il cliente, altrimenti si potrebbe avere un alto tasso di rendimento.
+- **Immagine prodotto reale**- Quando un cliente acquista un prodotto online, si aspetta di vedere il prodotto così come è sul sito web. Evita di applicare filtri o migliorare l’immagine per modificare l’aspetto del prodotto. È importante essere trasparenti con il cliente, altrimenti si potrebbe avere un alto tasso di rendimenti.
 
 >[!TIP]
 >
->L&#39;obiettivo delle immagini dei prodotti è quello di mostrare al cliente quale sia il prodotto, come si presenta e motivarlo ad acquistarlo.
+>Ricordate, l&#39;obiettivo delle immagini del prodotto è quello di mostrare al cliente cos&#39;è un prodotto, come appare e motivarlo ad acquistarlo.

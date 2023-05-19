@@ -1,41 +1,41 @@
 ---
 title: Installare un’estensione
-description: Segui questi passaggi per installare un’estensione Adobe Commerce o Magenti Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+description: Per installare un’estensione Adobe Commerce o di Magento Open Source, segui la procedura riportata di seguito.
+exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
-
 # Installare un’estensione
 
-Il codice che estende o personalizza il comportamento di Adobe Commerce e Magento Open Source è denominato estensione. Facoltativamente, puoi creare un pacchetto e distribuire le estensioni nel [Commerce Marketplace](https://marketplace.magento.com) o un altro sistema di distribuzione dell&#39;estensione.
+Il codice che estende o personalizza il comportamento di Adobe Commerce e del Magento Open Source è denominato estensione. Facoltativamente, puoi creare un pacchetto e distribuire estensioni sul [Commerce Marketplace](https://marketplace.magento.com) o un altro sistema di distribuzione delle estensioni.
 
 Le estensioni includono:
 
-- Moduli (estensione delle funzionalità di Adobe Commerce e Magenti Open Source)
-- Temi (cambia l&#39;aspetto della vetrina e dell&#39;amministratore)
-- Pacchetti per lingua (localizza la vetrina e l’amministratore)
+- Moduli (estendere le funzionalità di Adobe Commerce e Magento Open Source)
+- Temi (cambia l’aspetto della vetrina e dell’amministratore)
+- Pacchetti di lingua (localizza la vetrina e Amministratore)
 
 >[!TIP]
 >
->In questo argomento viene illustrato come utilizzare la riga di comando per installare le estensioni acquistate dalla Commerce Marketplace. È possibile utilizzare la stessa procedura per installare _qualsiasi_ estensione; tutto ciò di cui hai bisogno è il nome e la versione del Compositore dell&#39;estensione. Per trovarlo, apri l&#39;estensione `composer.json` e prendere nota dei valori `"name"` e `"version"`.
+>Questo argomento spiega come utilizzare la riga di comando per installare le estensioni acquistate da Commerce Marketplace. È possibile utilizzare la stessa procedura per installare _qualsiasi_ estensione; tutto ciò di cui hai bisogno è il nome e la versione del Compositore dell’estensione. Per trovarlo, apri il file dell’estensione `composer.json` e annota i valori per `"name"` e `"version"`.
 
 Prima dell&#39;installazione, è possibile:
 
-1. Esegui il backup del database.
-1. Attiva la modalità di manutenzione:
+1. Eseguire il backup del database.
+1. Abilita modalità di manutenzione:
 
    ```bash
    bin/magento maintenance:enable
    ```
 
-Per installare un&#39;estensione, devi:
+Per installare un&#39;estensione, è necessario:
 
-1. Ottieni un&#39;estensione dalla Commerce Marketplace o da un altro sviluppatore di estensioni.
-1. Se installi un&#39;estensione dalla Commerce Marketplace, assicurati che la `repo.magento.com` l&#39;archivio esiste nel tuo `composer.json` file:
+1. Ottieni un’estensione da Commerce Marketplace o da un altro sviluppatore di estensioni.
+1. Se installi un’estensione dalla Commerce Marketplace, assicurati che il `repo.magento.com` esiste nel tuo archivio `composer.json` file:
 
    ```bash
    "repositories": [
@@ -46,40 +46,40 @@ Per installare un&#39;estensione, devi:
    ]
    ```
 
-1. Ottieni il nome e la versione del Compositore dell&#39;estensione.
-1. Aggiorna `composer.json` nel tuo progetto con il nome e la versione dell&#39;estensione .
-1. Verifica che l&#39;estensione sia installata correttamente.
-1. Abilita e configura l&#39;estensione .
+1. Ottieni il nome e la versione del Compositore dell’estensione.
+1. Aggiornare il `composer.json` nel progetto con il nome e la versione dell’estensione.
+1. Verifica che l’estensione sia installata correttamente.
+1. Abilita e configura l&#39;estensione.
 
-## Ottieni il nome e la versione del Compositore di estensione
+## Ottieni il nome e la versione del Compositore estensioni
 
 Se conosci già il nome e la versione del Compositore dell&#39;estensione, salta questo passaggio e continua con [Aggiorna il tuo `composer.json` file](#update-your-composer-file).
 
 Per ottenere il nome e la versione del Compositore dell&#39;estensione dalla Commerce Marketplace:
 
-1. Accedi a [Commerce Marketplace](https://marketplace.magento.com) con il nome utente e la password utilizzati per acquistare l&#39;estensione.
+1. Accedi a [Commerce Marketplace](https://marketplace.magento.com) con il nome utente e la password utilizzati per acquistare l’estensione.
 
-1. Nell’angolo in alto a destra, fai clic su **Nome** > **Il mio profilo**.
+1. Nell’angolo superiore destro, fai clic su **Il tuo nome** > **Il mio profilo**.
 
-   ![Accedere all’account Marketplace](../../assets/installation/marketplace-my-profile.png)
+   ![Accedi al tuo account Marketplace](../../assets/installation/marketplace-my-profile.png)
 
-1. Fai clic su **Acquisti personali**.
+1. Clic **I miei acquisti**.
 
-   ![Storico degli acquisti sul mercato](../../assets/installation//marketplace-my-purchases.png)
+   ![Cronologia acquisti Marketplace](../../assets/installation//marketplace-my-purchases.png)
 
-1. Trova l&#39;estensione da installare e fai clic su **Dettagli tecnici**.
+1. Trova l’estensione da installare e fai clic su **Dettagli tecnici**.
 
-   ![I dettagli tecnici mostrano il nome del Compositore dell&#39;estensione](../../assets/installation/marketplace-extension-technical-details.png)
+   ![I dettagli tecnici mostrano il nome del compositore dell’estensione](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
->In alternativa, puoi trovare il nome e la versione del Compositore di _qualsiasi_ estensione (acquistata su Commerce Marketplace o altrove) nel `composer.json` file.
+>In alternativa, puoi trovare il nome e la versione del Compositore di _qualsiasi_ (acquistata su Commerce Marketplace o altrove) nel file dell’estensione `composer.json` file.
 
-## Aggiorna il file Composer
+## Aggiornare il file Composer
 
 Aggiungi il nome e la versione dell&#39;estensione al tuo `composer.json` file:
 
-1. Passa alla directory del progetto e aggiorna il `composer.json` file.
+1. Vai alla directory del progetto e aggiorna la `composer.json` file.
 
    ```bash
    composer require <component-name>:<version>
@@ -91,9 +91,9 @@ Aggiungi il nome e la versione dell&#39;estensione al tuo `composer.json` file:
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Inserisci il tuo [chiavi di autenticazione](../prerequisites/authentication-keys.md). La tua chiave pubblica è il tuo nome utente; la tua chiave privata è la tua password.
+1. Immetti il [chiavi di autenticazione](../prerequisites/authentication-keys.md). La chiave pubblica è il nome utente; la chiave privata è la password.
 
-1. Attendi che Compositore completi l’aggiornamento delle dipendenze del progetto e assicurati che non ci siano errori:
+1. Attendi che Composer completi l’aggiornamento delle dipendenze del progetto e assicurati che non siano presenti errori:
 
    ```terminal
    Updating dependencies (including require-dev)
@@ -103,9 +103,9 @@ Aggiungi il nome e la versione dell&#39;estensione al tuo `composer.json` file:
    Generating autoload files
    ```
 
-## Verifica dell&#39;estensione
+## Verificare l’estensione
 
-Per verificare che l&#39;estensione sia installata correttamente, esegui il seguente comando:
+Per verificare che l’estensione sia installata correttamente, esegui il seguente comando:
 
 ```bash
 bin/magento module:status J2t_Payplug
@@ -117,19 +117,19 @@ Per impostazione predefinita, l’estensione è probabilmente disabilitata:
 Module is disabled
 ```
 
-Il nome dell&#39;estensione è nel formato `<VendorName>_<ComponentName>`; si tratta di un formato diverso dal nome del Compositore. Usa questo formato per abilitare l&#39;estensione . Se non sei sicuro del nome dell&#39;estensione, esegui:
+Il nome dell’estensione è nel formato `<VendorName>_<ComponentName>`: formato diverso dal nome del Compositore. Utilizza questo formato per abilitare l&#39;estensione. Se non sei sicuro del nome dell’estensione, esegui:
 
 ```bash
 bin/magento module:status
 ```
 
-E cerca l&#39;estensione sotto &quot;Elenco dei moduli disabilitati&quot;.
+E cerca l’estensione in &quot;Elenco dei moduli disabilitati&quot;.
 
-## Abilita l&#39;estensione
+## Abilitare l’estensione
 
-Alcune estensioni non funzionano correttamente a meno che tu non cancelli prima i file di visualizzazione statica generati. Utilizza la `--clear-static-content` per cancellare i file di visualizzazione statica quando si abilita un&#39;estensione.
+Alcune estensioni non funzionano correttamente a meno che non si cancellino prima i file di visualizzazione statica generati. Utilizza il `--clear-static-content` per cancellare i file della vista statica quando abiliti un’estensione.
 
-1. Abilita l’estensione e cancella i file di visualizzazione statica:
+1. Abilita l’estensione e cancella i file della vista statica:
 
    ```bash
    bin/magento module:enable J2t_Payplug --clear-static-content
@@ -153,19 +153,19 @@ Alcune estensioni non funzionano correttamente a meno che tu non cancelli prima 
    bin/magento setup:upgrade
    ```
 
-1. Ricompila il progetto: In modalità Produzione, potresti ricevere un messaggio per &quot;Esegui nuovamente il comando di compilazione Magento&quot;. L&#39;applicazione non richiede l&#39;esecuzione del comando di compilazione in modalità Sviluppatore.
+1. Ricompilare il progetto: in modalità di produzione, è possibile che venga visualizzato un messaggio indicante &quot;Esegui nuovamente il comando di compilazione del Magento&quot;. L&#39;applicazione non richiede di eseguire il comando di compilazione in modalità Sviluppatore.
 
    ```bash
    bin/magento setup:di:compile
    ```
 
-1. Verifica che l&#39;estensione sia abilitata:
+1. Verifica che l’estensione sia abilitata:
 
    ```bash
    bin/magento module:status J2t_Payplug
    ```
 
-   Dovresti vedere l’output per verificare che l’estensione non sia più disabilitata:
+   Dovresti vedere l’output che verifica che l’estensione non sia più disabilitata:
 
    ```terminal
    Module is enabled
@@ -177,23 +177,23 @@ Alcune estensioni non funzionano correttamente a meno che tu non cancelli prima 
    bin/magento cache:clean
    ```
 
-1. Configura l&#39;estensione in Admin in base alle esigenze.
+1. Configura l&#39;estensione in Admin secondo necessità.
 
 >[!TIP]
 >
->Se si verificano errori durante il caricamento della vetrina in un browser, utilizza il seguente comando per cancellare la cache: `bin/magento cache:flush`.
+>Se riscontri errori durante il caricamento della vetrina in un browser, usa il seguente comando per cancellare la cache: `bin/magento cache:flush`.
 
-## Aggiornare un&#39;estensione
+## Aggiornare un’estensione
 
-Per aggiornare o aggiornare un modulo o un&#39;estensione:
+Per aggiornare un modulo o un’estensione:
 
 1. Scarica il file aggiornato da Marketplace o da un altro sviluppatore di estensioni. Prendi nota del nome e della versione del modulo.
 
-1. Esporta il contenuto nella directory radice dell&#39;applicazione.
+1. Esporta il contenuto nella directory principale dell’applicazione.
 
-1. Se esiste un pacchetto Composer per il modulo, esegui una delle seguenti operazioni.
+1. Se esiste un pacchetto Compositore per il modulo, esegui una delle seguenti operazioni.
 
-   Aggiornamento per nome del modulo:
+   Nome aggiornamento per modulo:
 
    ```bash
    composer update vendor/module-name

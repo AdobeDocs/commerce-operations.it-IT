@@ -1,44 +1,44 @@
 ---
-title: Elaborazione dell'ordine ad alta velocità
-description: Ottimizza la posizione dell’ordine e l’esperienza di pagamento per la distribuzione Adobe Commerce o Magenti Open Source.
-source-git-commit: 45ffa6487d94feba3d6c2a6d5d938108b1fef91d
+title: Elaborazione degli ordini con throughput elevato
+description: Ottimizza l’esperienza di inserimento e pagamento degli ordini per la distribuzione Adobe Commerce o di Magento Open Source.
+exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
 
+# Elaborazione degli ordini con throughput elevato
 
-# Elaborazione dell&#39;ordine ad alta velocità
-
-Puoi ottimizzare l’esperienza di posizionamento e di pagamento dell’ordine configurando il seguente set di moduli per **elaborazione dell&#39;ordine ad alta velocità**:
+Puoi ottimizzare il posizionamento dell’ordine e l’esperienza di pagamento configurando il seguente set di moduli per **elaborazione degli ordini con throughput elevato**:
 
 - [AsyncOrder](#asynchronous-order-placement)- Elabora in modo asincrono gli ordini utilizzando una coda.
-- [Calcolo totale differito](#deferred-total-calculation)- Consente di trasferire i calcoli per i totali degli ordini fino all&#39;inizio del pagamento.
-- [Controllo dell&#39;inventario al caricamento del preventivo](#disable-inventory-check)- Consente di saltare la convalida dell&#39;inventario degli articoli del carrello.
+- [Calcolo del totale differito](#deferred-total-calculation)- Differisce i calcoli per i totali dell&#39;ordine fino all&#39;inizio del pagamento.
+- [Controllo magazzino al caricamento preventivo](#disable-inventory-check)- Consente di ignorare la convalida dell&#39;inventario degli articoli del carrello.
 
-Tutte le funzioni - Ordine asincrono, Calcolo totale differito e Controllo scorte - funzionano in modo indipendente. È possibile utilizzare tutte e tre le funzioni contemporaneamente oppure attivare e disattivare le funzioni in qualsiasi combinazione.
+Tutte le funzioni, AsyncOrder, Deferred Total Calculation e Inventory Check, funzionano in modo indipendente. È possibile utilizzare tutte e tre le funzionalità contemporaneamente oppure attivare e disattivare le funzionalità in qualsiasi combinazione.
 
 ## Posizionamento dell’ordine asincrono
 
-La _Ordine asincrono_ il modulo abilita il posizionamento asincrono dell’ordine, che contrassegna l’ordine come `received`, inserisce l’ordine in una coda ed elabora gli ordini dalla coda in base al principio &quot;first in first out&quot;. AsyncOrder è **disattivato** per impostazione predefinita.
+Il _Ordine asincrono_ Il modulo consente il posizionamento asincrono dell’ordine, che contrassegna l’ordine come `received`, inserisce l&#39;ordine in una coda ed elabora gli ordini dalla coda in base al primo ordine in uscita. AsyncOrder è **disabilitato** per impostazione predefinita.
 
-Ad esempio, un cliente aggiunge un prodotto al suo carrello e seleziona **[!UICONTROL Proceed to Checkout]**. Compilano **[!UICONTROL Shipping Address]** modulo, selezionare il modulo desiderato **[!UICONTROL Shipping Method]**, selezionare un metodo di pagamento e inserire l&#39;ordine. Il carrello è cancellato, l&#39;ordine è contrassegnato come **[!UICONTROL Received]**, ma la quantità del prodotto non viene ancora adeguata, né viene inviato un messaggio e-mail di vendita al cliente. L&#39;ordine viene ricevuto, ma i dettagli dell&#39;ordine non sono ancora disponibili perché l&#39;ordine non è stato completamente elaborato. Rimane in coda fino al `placeOrderProcess` il consumatore inizia, verifica l&#39;ordine con [controllo inventario](#disable-inventory-check) (abilitato per impostazione predefinita) e aggiorna l’ordine nel modo seguente:
+Ad esempio, un cliente aggiunge un prodotto al carrello e seleziona **[!UICONTROL Proceed to Checkout]**. Compilano il **[!UICONTROL Shipping Address]** modulo, seleziona il modulo preferito **[!UICONTROL Shipping Method]**, selezionare un metodo di pagamento e inoltrare l&#39;ordine. Il carrello viene cancellato, l’ordine è contrassegnato come **[!UICONTROL Received]**, ma la quantità di prodotto non è ancora stata regolata e non viene inviata al cliente un’e-mail di vendita. L&#39;ordine viene ricevuto, ma i dettagli dell&#39;ordine non sono ancora disponibili perché l&#39;ordine non è stato completamente elaborato. Rimane in coda fino al `placeOrderProcess` il consumatore inizia, verifica l’ordine con [controllo di inventario](#disable-inventory-check) (attivata per impostazione predefinita) e aggiorna l’ordine come segue:
 
-- **Prodotto disponibile**- lo stato dell&#39;ordine cambia in _In sospeso_, la quantità del prodotto viene modificata, viene inviata al cliente un’e-mail con i dettagli dell’ordine e i dettagli dell’ordine con esito positivo diventano disponibili per la visualizzazione nel **Ordini e restituzioni** elenco con opzioni utilizzabili, ad esempio riordino.
-- **Prodotto esaurito o a basso consumo**- lo stato dell&#39;ordine cambia in _Rifiutato_, la quantità di prodotto non viene modificata, viene inviata al cliente un’e-mail con i dettagli dell’ordine relativi al problema e i dettagli dell’ordine rifiutato diventano disponibili nella variabile **Ordini e restituzioni** elenco senza opzioni utilizzabili.
+- **Prodotto disponibile**- lo stato dell&#39;ordine viene modificato in _In sospeso_, la quantità del prodotto viene adeguata, viene inviata al cliente un’e-mail con i dettagli dell’ordine e i dettagli dell’ordine riusciti diventano disponibili per la visualizzazione nel **Ordini e restituzioni** con opzioni actionable, ad esempio riordina.
+- **Prodotto esaurito o di scarsa fornitura**- lo stato dell&#39;ordine viene modificato in _Rifiutato_, la quantità del prodotto non viene regolata, viene inviata al cliente un’e-mail con i dettagli dell’ordine relativi all’emissione e i dettagli dell’ordine rifiutato diventano disponibili nel **Ordini e restituzioni** senza opzioni utilizzabili.
 
-Utilizzare l&#39;interfaccia della riga di comando per abilitare queste funzionalità o modificare il `app/etc/env.php` file in base ai corrispondenti file README definiti nel [_Guida di riferimento del modulo_][mrg].
+Utilizza l’interfaccia della riga di comando per abilitare queste funzioni o modifica `app/etc/env.php` in base ai file README corrispondenti definiti nella [_Guida di riferimento del modulo_][mrg].
 
 **Per abilitare AsyncOrder**:
 
-È possibile abilitare AsyncOrder utilizzando l&#39;interfaccia della riga di comando:
+È possibile abilitare AsyncOrder tramite l&#39;interfaccia della riga di comando:
 
 ```bash
 bin/magento setup:config:set --checkout-async 1
 ```
 
-La `set` scrive quanto segue nel `app/etc/env.php` file:
+Il `set` Il comando scrive quanto segue in `app/etc/env.php` file:
 
 ```conf
 ...
@@ -47,21 +47,21 @@ La `set` scrive quanto segue nel `app/etc/env.php` file:
    ]
 ```
 
-Vedi [AsyncOrder] in _Guida di riferimento del modulo_.
+Consulta [AsyncOrder] nel _Guida di riferimento del modulo_.
 
-**Per disabilitare AsyncOrder**:
+**Per disattivare AsyncOrder**:
 
 >[!WARNING]
 >
->Prima di disabilitare il modulo AsyncOrder, è necessario verificare che _tutto_ processi di ordine asincroni completati.
+>Prima di disabilitare il modulo AsyncOrder, è necessario verificare che _tutto_ i processi di ordinamento asincrono sono stati completati.
 
-È possibile disabilitare AsyncOrder utilizzando l&#39;interfaccia della riga di comando:
+È possibile disattivare AsyncOrder utilizzando l&#39;interfaccia della riga di comando:
 
 ```bash
 bin/magento setup:config:set --checkout-async 0
 ```
 
-La `set` scrive quanto segue nel `app/etc/env.php` file:
+Il `set` Il comando scrive quanto segue in `app/etc/env.php` file:
 
 ```conf
 ...
@@ -70,21 +70,21 @@ La `set` scrive quanto segue nel `app/etc/env.php` file:
    ]
 ```
 
-### Compatibilità AsyncOrder
+### Compatibilità con AsyncOrder
 
-AsyncOrder supporta un set limitato di [!DNL Commerce] funzionalità.
+AsyncOrder supporta un set limitato di [!DNL Commerce] funzioni.
 
-| Categoria | Funzione supportata |
+| Categoria | Funzionalità supportata |
 |------------------|--------------------------------------------------------------------------|
-| Tipi di pagamento | Checkout di una pagina<br>Pagamento standard<br>Preventivo Negoziabile B2B |
-| Metodi di pagamento | Ordine di pagamento<br>Contanti sulla consegna<br>Braintree<br>PayPal PayFlow Pro |
+| Tipi di pagamento | Estrazione di OnePage<br>Pagamento standard<br>Offerta B2B negoziabile |
+| Metodi di pagamento | Assegno/vaglia postale<br>Consegna in contanti<br>Braintree<br>PayPal PayFlow Pro |
 | Metodi di spedizione | Sono supportati tutti i metodi di spedizione. |
 
-Le seguenti funzioni sono: **not** supportato da AsyncOrder, ma continua a funzionare in modo sincrono:
+Le seguenti funzioni sono **non** supportato da AsyncOrder, ma continua a funzionare in modo sincrono:
 
-- Metodi di pagamento non inclusi nell&#39;elenco delle funzioni supportate
-- Pagamento con più indirizzi
-- Creazione di ordini di amministrazione
+- Metodi di pagamento non inclusi nell’elenco delle funzioni supportate
+- Estrazione indirizzi multipli
+- Creazione ordine amministratore
 
 #### Supporto API web
 
@@ -103,21 +103,21 @@ Quando il modulo AsyncOrder è abilitato, i seguenti endpoint REST e le mutazion
 
 >[!INFO]
 >
->GraphQL non supporta il posizionamento asincrono di ordini di preventivo negoziabili.
+>GraphQL non supporta il posizionamento asincrono degli ordini di preventivo negoziabili.
 
 #### Esclusione dei metodi di pagamento
 
-Gli sviluppatori possono escludere esplicitamente alcuni metodi di pagamento dal posizionamento di ordini asincroni aggiungendoli al `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` array. Gli ordini che utilizzano metodi di pagamento esclusi vengono elaborati in modo sincrono.
+Gli sviluppatori possono escludere esplicitamente alcuni metodi di pagamento dal posizionamento dell’ordine asincrono aggiungendoli al `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` array. Gli ordini che utilizzano metodi di pagamento esclusi vengono elaborati in modo sincrono.
 
 ### Ordine asincrono offerta negoziabile
 
-La _Ordine asincrono offerta negoziabile_ Il modulo B2B consente di salvare gli elementi dell&#39;ordine in modo asincrono per il `NegotiableQuote` funzionalità. È necessario che AsyncOrder e NegotiableQuote siano abilitati.
+Il _Ordine asincrono offerta negoziabile_ Il modulo B2B consente di salvare gli articoli dell’ordine in modo asincrono per `NegotiableQuote` funzionalità. AsyncOrder e NegotiableQuote devono essere abilitati.
 
-## Calcolo totale differito
+## Calcolo del totale differito
 
-La _Calcolo totale differito_ Il modulo ottimizza il processo di pagamento rinviando il calcolo totale fino a quando non viene richiesto per il carrello o durante i passaggi di pagamento finali. Se abilitata, solo il subtotale calcola come cliente aggiunge prodotti al carrello.
+Il _Calcolo del totale differito_ Il modulo ottimizza il processo di pagamento posticipando il calcolo del totale fino a quando non viene richiesto per il carrello o durante i passaggi di pagamento finali. Quando questa opzione è attivata, solo il subtotale viene calcolato quando un cliente aggiunge prodotti al carrello.
 
-DeferredTotalCalculation è **disattivato** per impostazione predefinita. Utilizzare l&#39;interfaccia della riga di comando per abilitare queste funzionalità o modificare il `app/etc/env.php` file in base ai corrispondenti file README definiti nel [_Guida di riferimento del modulo_][mrg].
+DeferredTotalCalculation è **disabilitato** per impostazione predefinita. Utilizza l’interfaccia della riga di comando per abilitare queste funzioni o modifica `app/etc/env.php` in base ai file README corrispondenti definiti nella [_Guida di riferimento del modulo_][mrg].
 
 **Per abilitare DeferredTotalCalculation**:
 
@@ -127,7 +127,7 @@ DeferredTotalCalculation è **disattivato** per impostazione predefinita. Utiliz
 bin/magento setup:config:set --deferred-total-calculating 1
 ```
 
-La `set` scrive quanto segue nel `app/etc/env.php` file:
+Il `set` Il comando scrive quanto segue in `app/etc/env.php` file:
 
 ```conf
 ...
@@ -136,15 +136,15 @@ La `set` scrive quanto segue nel `app/etc/env.php` file:
    ]
 ```
 
-**Per disabilitare DeferredTotalCalculation**:
+**Per disattivare DeferredTotalCalculation**:
 
-È possibile disabilitare DeferredTotalCalculation utilizzando l&#39;interfaccia della riga di comando:
+È possibile disattivare DeferredTotalCalculation utilizzando l&#39;interfaccia della riga di comando:
 
 ```bash
 bin/magento setup:config:set --deferred-total-calculating 0
 ```
 
-La `set` scrive quanto segue nel `app/etc/env.php` file:
+Il `set` Il comando scrive quanto segue in `app/etc/env.php` file:
 
 ```conf
 ...
@@ -153,25 +153,25 @@ La `set` scrive quanto segue nel `app/etc/env.php` file:
    ]
 ```
 
-Vedi [CalcoloTotaleDifferito] in _Guida di riferimento del modulo_.
+Consulta [CalcoloTotaleDifferito] nel _Guida di riferimento del modulo_.
 
-### Imposta sul prodotto
+### Imposta Prodotto Fissa
 
-Quando DeferredTotalCalculation è abilitato, l’imposta sul prodotto fissa (FPT) non viene inclusa nel prezzo del prodotto e nel subtotale del carrello del mini carrello dopo l’aggiunta del prodotto al carrello. Il calcolo FPT viene differito quando si aggiunge un prodotto al mini carrello. Il FPT viene visualizzato correttamente nel carrello dopo aver effettuato il pagamento finale.
+Quando DeferredTotalCalculation è abilitato, l&#39;FPT (Fixed Product Tax) non viene incluso nel prezzo del prodotto e nel subtotale del carrello del mini carrello dopo l&#39;aggiunta del prodotto al carrello. Il calcolo dell’FPT viene differito quando si aggiunge un prodotto al mini carrello. L’FPT viene visualizzato correttamente nel carrello dopo aver proceduto al pagamento finale.
 
-## Disattiva controllo inventario
+## Disabilita controllo scorte
 
-La _Abilita inventario al caricamento del carrello_ l’impostazione globale determina se eseguire un controllo di inventario durante il caricamento di un prodotto nel carrello. La disattivazione del processo di controllo dell’inventario migliora le prestazioni di tutti i passaggi del checkout, in particolare quando si tratta di prodotti di massa nel carrello.
+Il _Abilita magazzino al caricamento del carrello_ impostazione globale determina se eseguire un controllo di inventario durante il caricamento di un prodotto nel carrello. La disattivazione del processo di controllo dell’inventario migliora le prestazioni per tutti i passaggi di pagamento, in particolare quando si tratta di prodotti in blocco nel carrello.
 
-Se questa opzione è disabilitata, il controllo dell’inventario non viene eseguito quando si aggiunge un prodotto al carrello. Se questo controllo di inventario viene ignorato, alcuni scenari esauriti potrebbero generare altri tipi di errori. Controllo dell&#39;inventario _sempre_ si verifica nella fase di posizionamento dell&#39;ordine, anche se disabilitata.
+Se è disabilitata, il controllo dell’inventario non viene eseguito quando si aggiunge un prodotto al carrello. Se questo controllo di inventario viene saltato, alcuni scenari esauriti potrebbero generare altri tipi di errori. Un controllo di inventario _sempre_ si verifica al passaggio di posizionamento dell’ordine, anche se disabilitato.
 
-**Abilita Controllo Inventario Al Carrello** è abilitato (impostato su Sì) per impostazione predefinita. Per disattivare il controllo dell&#39;inventario durante il caricamento del carrello, imposta **[!UICONTROL Enable Inventory Check On Cart Load]** a `No` in Admin UI **Negozi** > **Configurazione** > **Catalogo** > **Inventario** > **Opzioni stock** sezione . Vedi [Configurare le opzioni globali][global] e [Inventario del catalogo][inventory] in _Guida utente_.
+**Abilita controllo magazzino al caricamento del carrello** è attivato (impostato su Sì) per impostazione predefinita. Per disattivare il controllo dell&#39;inventario durante il caricamento del carrello, impostare **[!UICONTROL Enable Inventory Check On Cart Load]** a `No` nell’interfaccia di amministrazione **Negozi** > **Configurazione** > **Catalogo** > **Inventario** > **Opzioni Stock** sezione. Consulta [Configurare le opzioni globali][global] e [Inventario catalogo][inventory] nel _Guida utente_.
 
 ## Bilanciamento del carico
 
-È possibile bilanciare il carico tra nodi diversi abilitando le connessioni secondarie per il database MySQL e l&#39;istanza Redis.
+È possibile bilanciare il carico tra nodi diversi abilitando connessioni secondarie per il database MySQL e l&#39;istanza Redis.
 
-Adobe Commerce può leggere in modo asincrono più database o istanze Redis. Se utilizzi Commerce su un’infrastruttura cloud, puoi configurare le connessioni secondarie modificando il [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) e [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) nei valori `.magento.env.yaml` file. Solo un nodo deve gestire il traffico di lettura-scrittura, quindi impostare le variabili su `true` determina la creazione di una connessione secondaria per il traffico di sola lettura. Imposta i valori su `false` per rimuovere qualsiasi array di connessione di sola lettura esistente dal `env.php` file.
+Adobe Commerce può leggere più database o istanze Redis in modo asincrono. Se utilizzi Commerce su infrastruttura cloud, puoi configurare le connessioni secondarie modificando il [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) e [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) valori in `.magento.env.yaml` file. Solo un nodo deve gestire il traffico di lettura-scrittura, quindi impostare le variabili su `true` determina la creazione di una connessione secondaria per il traffico di sola lettura. Imposta i valori su `false` per rimuovere qualsiasi array di connessione di sola lettura esistente dal `env.php` file.
 
 Esempio di `.magento.env.yaml` file:
 

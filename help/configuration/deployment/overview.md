@@ -1,80 +1,80 @@
 ---
 title: Panoramica sulla distribuzione
-description: Informazioni sulle strategie di distribuzione per l’applicazione Commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+description: Scopri le strategie di distribuzione per l’applicazione Commerce.
+exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
 
 ---
 
-
 # Panoramica sulla distribuzione
 
-Questi argomenti trattano il processo di distribuzione dell’applicazione Commerce a un sito di produzione per Adobe Commerce versione 2.2 e successive. Adobe consiglia questo metodo di distribuzione per tutti coloro che dispongono di un sito di grandi dimensioni e che non desiderano riscontrare tempi di inattività durante l&#39;implementazione.
+Questi argomenti illustrano il processo di distribuzione dell’applicazione Commerce in un sito di produzione per Adobe Commerce versione 2.2 e successive. L&#39;Adobe consiglia questo metodo di distribuzione per tutti coloro che dispongono di un sito di grandi dimensioni e non desiderano subire tempi di inattività durante la distribuzione.
 
-Se distribuisci Commerce su un singolo computer e puoi tollerare alcuni tempi di inattività durante l’implementazione, consulta [Distribuzione a macchina singola](../deployment/single-machine.md).
+Se distribuisci Commerce su un singolo computer e tolleri tempi di inattività durante la distribuzione, consulta [Distribuzione su un singolo computer](../deployment/single-machine.md).
 
-## Distribuzione di pipeline
+## Distribuzione della pipeline
 
-Con Commerce versione 2.2, Adobe introdotto _distribuzione della pipeline_ come nuovo modo per implementare in produzione con tempi di inattività minimi. Questo processo di distribuzione si verifica su diversi sistemi e consente di mantenere configurazioni coerenti per tutti i sistemi di distribuzione della pipeline. Si tratta di un modello semplice ma potente che consente di separare le impostazioni di configurazione ordinarie da quelle specifiche del sistema (come host e porta) o da quelle sensibili (come nomi e password).
+Con Commerce versione 2.2, è stato introdotto un Adobe _distribuzione della pipeline_ come nuovo metodo di implementazione in produzione con tempi di inattività minimi. Questo processo di distribuzione si verifica su sistemi diversi e consente di mantenere configurazioni coerenti per tutti i sistemi di distribuzione della pipeline. Si tratta di un modello semplice ma potente che consente di separare le impostazioni di configurazione ordinarie dalle impostazioni specifiche del sistema (come host e porta) o dalle impostazioni sensibili (come nomi e password).
 
-Per utilizzare la distribuzione della pipeline, l’Adobe presuppone che:
+Per utilizzare la distribuzione della pipeline, l’Adobe presuppone che tu sia:
 
-- Integratore di sistema esperto con un&#39;eccellente conoscenza delle opzioni di configurazione di Adobe Commerce.
-- Gestione di un sito Commerce di grandi dimensioni (migliaia di unità di gestione delle scorte (SKU)) e riduzione al minimo dei tempi di inattività del sito di produzione.
+- Un integratore di sistemi esperto con un&#39;eccellente conoscenza delle opzioni di configurazione di Adobe Commerce.
+- Gestione di un sito Commerce di grandi dimensioni (migliaia di SKU (Stock-Keeping Unit)) per ridurre al minimo i tempi di inattività del sito di produzione.
 - Conoscenza della programmazione PHP.
 - Esperienza con i metodi di controllo del codice sorgente.
-- Il codice si trova in un archivio di controllo del codice sorgente. In questa guida si presuppone che utilizzi un archivio basato su Git.
+- Il codice si trova in un archivio del controllo del codice sorgente. In questa guida, si presume che si stia utilizzando un archivio basato su Git.
 
 ### Riduzione dei tempi di inattività
 
-Quando si distribuiscono risorse statiche e si compila il codice su un computer separato dal sistema di produzione, si riducono al minimo i tempi di inattività. Il tempo di inattività del sistema di produzione è limitato al tempo necessario per trasferire i file statici e il codice compilato sul server.
+Quando si distribuiscono risorse statiche e si compila il codice in un computer separato dal sistema di produzione, si riducono al minimo i tempi di inattività. I tempi di inattività del sistema di produzione sono limitati al tempo necessario per trasferire i file statici e il codice compilato sul server.
 
 ## Sistemi di distribuzione
 
-Utilizziamo i seguenti termini per descrivere i sistemi coinvolti nell&#39;implementazione.
+I termini seguenti vengono utilizzati per descrivere i sistemi coinvolti nella distribuzione.
 
-- **Sistema di sviluppo**- Macchina su cui gli sviluppatori lavorano per personalizzare il codice; e installare estensioni, temi e pacchetti linguistici da Commerce Marketplace. Inoltre, puoi apportare tutte le modifiche alla configurazione sul tuo sistema di sviluppo. Si possono avere molti sistemi di sviluppo.
+- **Sistema di sviluppo**: computer su cui gli sviluppatori lavorano per personalizzare il codice e installare estensioni, temi e pacchetti di linguaggio da Commerce Marketplace. Inoltre, puoi apportare tutte le modifiche di configurazione al sistema di sviluppo. Puoi avere molti sistemi di sviluppo.
 
-- **Sistema di compilazione**- Un sistema su cui distribuire le risorse statiche e compilare il codice per il sistema di produzione. Poiché si creano queste risorse su un sistema non in produzione, i tempi di inattività del sistema di produzione vengono ridotti al minimo.
+- **Genera sistema**- Un sistema in cui vengono distribuite le risorse statiche e viene compilato il codice per il sistema di produzione. Poiché queste risorse vengono create su un sistema non in produzione, i tempi di inattività del sistema di produzione vengono ridotti al minimo.
 
-   Nel sistema di compilazione non è necessario che sia installato Commerce. È necessario solo il codice Commerce, ma non è necessaria alcuna connessione al database. Inoltre, il sistema di compilazione non deve essere un server fisicamente separato.
+   Non è necessario che nel sistema di build sia installato Commerce. È necessario solo il codice Commerce, ma non è richiesta alcuna connessione al database. Inoltre, non è necessario che il sistema di build sia un server fisicamente separato.
 
-- **Sistema di staging**—_Facoltativo_. Facoltativamente, puoi impostare un sistema di staging da utilizzare per il test finale di tutto il codice integrato, incluso il test di accettazione dell’utente (UAT). Impostare un sistema di gestione temporanea nello stesso modo in cui si imposta un sistema di produzione. Eccetto per il fatto che la gestione temporanea non è il tuo Live Store e non elabora gli ordini dei clienti, è identica alla produzione.
+- **Sistema di staging**—_Facoltativo_. Facoltativamente, puoi impostare un sistema di staging da utilizzare per il test finale di tutto il codice integrato, incluso User Acceptance Testing (UAT). Impostare un sistema di gestione temporanea nello stesso modo in cui si imposta un sistema di produzione. Ad eccezione del fatto che la gestione temporanea non è il tuo negozio live e non elabora gli ordini dei clienti, è identica alla produzione.
 
-- **Sistema di produzione**- Il tuo negozio in diretta. In questo caso è necessario apportare minime modifiche di configurazione diretta e di certo nulla che non sia stato testato su un&#39;istanza di staging. Se possibile, apporta modifiche alla configurazione con [Patch dati](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) che sono stati testati su un’istanza di Staging/Sviluppo.
+- **Sistema di produzione**- Il vostro negozio live. È necessario apportare modifiche di configurazione dirette minime qui, e sicuramente nulla che non sia stato testato su un’istanza di staging. Se possibile, apporta modifiche alla configurazione con [Patch dati](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) che sono stati testati in un’istanza di staging/sviluppo.
 
 ## Altri metodi di distribuzione
 
 Facoltativamente, puoi utilizzare altri metodi di distribuzione, tra cui:
 
-- Copia protetta con SCP o rsync
+- Copia sicura con SCP o rsync
 - [Capistrano](https://capistranorb.com/documentation/overview/what-is-capistrano)
-- La [Strumento di distribuzione](https://deployer.org/)
+- Il [Strumento di distribuzione](https://deployer.org/)
 
 ## Gestire la configurazione
 
-Modellazione dopo [fattore 3 nel design dell&#39;app a 12 fattori](https://12factor.net/config), Commerce ora memorizza la configurazione di ogni sistema nel sistema stesso. (Le impostazioni di configurazione dello sviluppo sono memorizzate nel sistema di sviluppo, le impostazioni di produzione sono memorizzate nel sistema di produzione.)
+Modellazione dopo [fattore 3 nella progettazione di app a 12 fattori](https://12factor.net/config), Commerce ora memorizza la configurazione per ciascun sistema nel sistema stesso. (Le impostazioni di configurazione di sviluppo sono memorizzate nel sistema di sviluppo, le impostazioni di produzione nel sistema di produzione.)
 
-Forniamo un modo per sincronizzare la configurazione dei sistemi:
+Dell offre un modo per sincronizzare la configurazione dei sistemi:
 
-- **Configurazione condivisa**- Impostazioni che non sono né specifiche del sistema né sensibili.
+- **Configurazione condivisa**- Impostazioni che non sono specifiche del sistema né sensibili.
 
-   Le impostazioni condivise sono impostazioni che devono essere coerenti nei sistemi di sviluppo e produzione. Imposta la configurazione condivisa nell’amministratore nello sviluppo (o nell’infrastruttura cloud di Adobe Commerce) _integrazione_).
+   Le impostazioni condivise sono impostazioni che desideri siano coerenti nei sistemi di sviluppo e produzione. Imposta la configurazione condivisa nell’amministratore nel tuo sviluppo (o in Adobe Commerce nell’infrastruttura cloud) _integrazione_).
 
-   Il file di configurazione condiviso, `app/etc/config.php`, deve essere incluso nel controllo del codice sorgente in modo che possa essere condiviso tra i sistemi di sviluppo, generazione e produzione.
+   Il file di configurazione condiviso, `app/etc/config.php`, devono essere inclusi nel controllo del codice sorgente in modo da poter essere condivisi tra i sistemi di sviluppo, generazione e produzione.
 
-- **Configurazione specifica del sistema**- Impostazioni che variano a seconda del sistema, ad esempio nomi host e porte del motore di ricerca.
+- **Configurazione specifica del sistema**- Impostazioni che variano in base al sistema, ad esempio i nomi host e le porte dei motori di ricerca.
 
-- **Configurazione sensibile**- Impostazioni che devono _not_ essere nel controllo del codice sorgente perché espongono informazioni personali identificabili (PII) o impostazioni come chiavi API o password.
+- **Configurazione sensibile**- Impostazioni che devono essere _non_ essere inclusi nel controllo del codice sorgente perché espongono informazioni personali (PII, personally identifiable information) o impostazioni quali chiavi API o password.
 
-   Il file di configurazione specifico del sistema, `app/etc/env.php`, _not_ essere inclusi nel controllo del codice sorgente o altrimenti condivisi tra i sistemi. Invece, utilizza la [`magento config:set` e `magento:sensitive:set` comandi](../cli/set-configuration-values.md) per fornire i valori per tali impostazioni nel sistema di produzione.
+   Il file di configurazione specifico del sistema, `app/etc/env.php`, devono _non_ essere inclusi nel controllo del codice sorgente o condivisi in altro modo tra sistemi. Invece, utilizza [`magento config:set` e `magento:sensitive:set` comandi](../cli/set-configuration-values.md) per fornire i valori per tali impostazioni nel sistema di produzione.
 
 >[!INFO]
 >
->Questi nuovi metodi per gestire la configurazione sono facoltativi. Non è necessario, ma si consiglia vivamente di utilizzarli.
+>Questi nuovi metodi per gestire la configurazione sono facoltativi. Non è necessario, ma si consiglia vivamente di usarli.
 
-Nella maggior parte dei casi, le opzioni di configurazione impostate nella configurazione condivisa, specifica del sistema o sensibile non possono essere modificate in Admin. Questo consente di mantenere le impostazioni coerenti in tutti i sistemi. (È possibile utilizzare facoltativamente il [`magento config:set` command](../cli/set-configuration-values.md) senza `--lock` per configurare le impostazioni modificabili in Admin.)
+Nella maggior parte dei casi, le opzioni di configurazione impostate nella configurazione condivisa, specifica del sistema o sensibile non possono essere modificate nell’amministratore. Questo consente di mantenere le impostazioni coerenti in tutti i sistemi. (Facoltativamente, è possibile utilizzare il [`magento config:set` comando](../cli/set-configuration-values.md) senza `--lock` per configurare le impostazioni modificabili in Admin.)
 
-Ogni opzione di configurazione Commerce ha un _percorso di configurazione_. Per impostare un valore per un&#39;opzione di configurazione, è possibile utilizzare un comando CLI o una variabile di ambiente per impostare il valore per quel percorso di configurazione su un sistema specifico.
+Ogni opzione di configurazione di Commerce ha un _percorso di configurazione_. Per impostare un valore per un&#39;opzione di configurazione, è possibile utilizzare un comando CLI o una variabile di ambiente per impostare il valore per il percorso di configurazione in un sistema specifico.

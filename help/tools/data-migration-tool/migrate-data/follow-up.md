@@ -1,49 +1,49 @@
 ---
-title: Follow-up della migrazione dei dati
-description: Scopri come verificare che la migrazione dei dati dal Magento 1 al Magento 2 sia avvenuta con successo e che tutte le funzionalità funzionino come previsto.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Follow-up sulla migrazione dei dati
+description: Scopri come verificare che la migrazione dei dati dal Magento 1 al Magento 2 sia stata eseguita correttamente e che tutte le funzionalità funzionino come previsto.
+exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%
 
 ---
 
+# Follow-up sulla migrazione dei dati
 
-# Follow-up della migrazione dei dati
-
-Alcuni comportamenti e logiche del Magento 1 sono stati implementati in modo diverso nel Magento 2. La [!DNL Data Migration Tool] Se ne prende cura. È necessario conoscere alcuni aspetti della migrazione e a volte è necessario compiere piccoli passi affinché alcune funzionalità funzionino correttamente dopo la migrazione.
+Alcuni comportamenti e logiche del Magento 1 sono stati implementati diversamente nel Magento 2. Il [!DNL Data Migration Tool] se ne prende cura. Ci sono alcuni aspetti relativi alla migrazione di cui dovresti essere a conoscenza e a volte devi adottare misure minori per garantire il corretto funzionamento di alcune funzionalità dopo la migrazione.
 
 ## Informazioni
 
-### Database diviso non supportato
+### Divisione del database non supportata
 
-La [!DNL Data Migration Tool] non supporta i database suddivisi.
+Il [!DNL Data Migration Tool] non supporta la suddivisione dei database.
 
-### Prezzi di gruppo convertiti in prezzi di classe
+### Prezzi gruppo convertiti in prezzi livello
 
 Tutti i prezzi di gruppo vengono automaticamente convertiti in prezzi di livello durante la migrazione.
 
-### Nuova numerazione per le entità di vendita
+### Nuova numerazione per entità di vendita
 
-I numeri di riferimento per gli ordini, le fatture, le spedizioni, le note di credito e la RMA migrano così come sono. Dopo la migrazione, si applicano le nuove regole di assegnazione dei numeri di Magento 2. La numerazione per le nuove entità di vendita è diversa.
+Numeri di riferimento per Ordini, Fatture, Spedizioni, Note di credito e RMA eseguono la migrazione così com&#39;è. Dopo la migrazione, si applicano le nuove regole di assegnazione dei numeri del Magento 2. La numerazione per le nuove entità di vendita è diversa.
 
 ## Passaggi
 
-### Salvataggio dei segmenti dei clienti [Solo Adobe Commerce]
+### Risparmiare segmenti cliente [Solo Adobe Commerce]
 
-Dopo la migrazione, i segmenti cliente devono essere salvati nuovamente dal pannello di amministrazione per essere operativi.
+Dopo la migrazione, i segmenti dei clienti devono essere salvati nuovamente dal pannello di amministrazione per essere operativi.
 
 ### Configurare il fuso orario
 
-Lo strumento non esegue la migrazione delle impostazioni del fuso orario, pertanto devi configurare manualmente il fuso orario dopo la migrazione in **Negozi** > **Configurazione** > **Opzioni internazionali** > **Fuso orario**.
+Lo strumento non migra le impostazioni del fuso orario, pertanto devi configurare manualmente il fuso orario dopo la migrazione in **Negozi** > **Configurazione** > **Opzioni internazionali** > **Fuso orario**.
 
-Per impostazione predefinita, il Magento memorizza i dati dell’ora nel fuso orario UTC-0 del database e li visualizza in base alle impostazioni correnti del fuso orario. Se i dati relativi all’ora sono già stati salvati nel database in una zona diversa da UTC-0, è necessario convertire l’ora esistente in UTC-0 utilizzando la variabile [!DNL Data Migration Tool]s `\Migration\Handler\Timezone` handler.
+Per impostazione predefinita, il Magento memorizza i dati temporali nel fuso UTC-0 nel database e li visualizza in base alle impostazioni correnti del fuso orario. Se i dati temporali sono già stati salvati nel database in una zona diversa da UTC-0, è necessario convertire l&#39;ora esistente in UTC-0 utilizzando [!DNL Data Migration Tool]di `\Migration\Handler\Timezone` handler.
 
-Nell’esempio seguente, il Magento 1 ha risparmiato in modo errato il tempo nella zona UTC-7 del database (ad esempio, a causa di un’estensione di terze parti difettosa). Per convertire correttamente l’ora di creazione dell’account cliente nel fuso UTC-0 al momento della migrazione, effettua le seguenti operazioni:
+Nell’esempio seguente, il Magento 1 ha erroneamente risparmiato tempo nella zona UTC-7 del database (ad esempio, a causa di un’estensione di terze parti errata). Per convertire correttamente l’ora di creazione dell’account cliente nella zona UTC-0 al momento della migrazione, effettua le seguenti operazioni:
 
-1. Copia il `map-customer.xml.dist` file di configurazione dalla directory appropriata del [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`) nel `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` file.
+1. Copia il `map-customer.xml.dist` file di configurazione dalla directory appropriata del file [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`) nel `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` file.
 
-1. Aggiorna `<customer_map_file>` nodo in `config.xml` e rimuovere `.dist` estensione da `map-customer.xml.dist`
+1. Aggiornare il `<customer_map_file>` nodo in `config.xml` e rimuovere `.dist` estensione da `map-customer.xml.dist`
 
 1. Aggiungi la seguente regola al `map-customer.xml` file:
 

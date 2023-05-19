@@ -1,30 +1,30 @@
 ---
-title: Opzioni della modalità di manutenzione per l'aggiornamento
-description: Crea una pagina in modalità di manutenzione personalizzata che i clienti visualizzano sulla vetrina Adobe Commerce o Magenti Open Source durante l’esecuzione di un aggiornamento.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Opzioni della modalità di manutenzione per l’aggiornamento
+description: Crea una pagina personalizzata per la modalità di manutenzione che i clienti possono visualizzare sulla vetrina di Adobe Commerce o del Magento Open Source mentre esegui un aggiornamento.
+exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
+# Opzioni della modalità di manutenzione per l’aggiornamento
 
-# Opzioni della modalità di manutenzione per l&#39;aggiornamento
+In questo argomento viene illustrato come creare una pagina di manutenzione personalizzata da visualizzare agli utenti durante l&#39;aggiornamento dell&#39;applicazione di Magento. La creazione di una pagina personalizzata è facoltativa ma consigliata perché il sito è accessibile durante parte dell’aggiornamento.
 
-Questo argomento illustra come creare una pagina di manutenzione personalizzata da visualizzare agli utenti durante l’aggiornamento dell’applicazione del Magento. La creazione di una pagina personalizzata è facoltativa ma consigliata perché il sito è accessibile durante una parte dell’aggiornamento.
-
-La creazione di una pagina personalizzata a cui reindirizzare gli utenti impedisce qualsiasi accesso al sito e informa gli utenti che il sito è in fase di manutenzione.
+La creazione di una pagina personalizzata a cui reindirizzare gli utenti impedisce l’accesso al sito e informa gli utenti che il sito è in fase di manutenzione.
 
 >[!NOTE]
 >
->È necessario eseguire le attività di questa sezione come utente con `root` privilegi. Impossibile impostare pagine di manutenzione personalizzate in modalità sviluppatore.
+>È necessario eseguire le attività in questa sezione come utente con `root` privilegi. Impossibile impostare pagine di manutenzione personalizzate in modalità sviluppatore.
 
 ## Creare la pagina di manutenzione personalizzata
 
-Per creare una pagina di manutenzione ed effettuare il reindirizzamento, crea innanzitutto una pagina di manutenzione denominata:
+Per creare una pagina di manutenzione e reindirizzarla, crea innanzitutto una pagina di manutenzione denominata:
 
 - Apache: `<web server docroot>/maintenance.html`
-- nginx: `<magento_root>/maintenance.html`
+- indice: `<magento_root>/maintenance.html`
 
 Aggiungi il seguente contenuto:
 
@@ -56,19 +56,19 @@ body
 
 Questa sezione illustra come creare una pagina di manutenzione personalizzata e come reindirizzare il traffico verso di essa.
 
-L&#39;esempio di questa sezione mostra come modificare i file seguenti, che è uno dei modi per impostare la pagina di manutenzione:
+L’esempio riportato in questa sezione mostra come modificare i seguenti file, il che rappresenta uno dei modi per impostare la pagina di manutenzione:
 
 - Apache 2.4: `/etc/apache2/sites-available/000-default.conf`
-- Apache 2.2: `/etc/apache2/sites-available/default` (Ubuntu), `/etc/httpd/conf/httpd.conf` (CentOS)
+- Apache 2.2: `/etc/apache2/sites-available/default` Ubuntu, `/etc/httpd/conf/httpd.conf` (CentOS)
 
 Per reindirizzare il traffico a una pagina di manutenzione personalizzata:
 
-1. Aggiorna la configurazione Apache per effettuare le seguenti operazioni:
+1. Aggiorna la configurazione di Apache per effettuare le seguenti operazioni:
 
    - Reindirizza tutto il traffico alla pagina di manutenzione
-   - Inserire nell&#39;elenco Consentiti alcuni IP in modo che un amministratore possa aggiornare il software di Magento.
+   - Inserire nell&#39;elenco Consentiti determinati IP in modo che un amministratore possa aggiornare il software del Magento.
 
-   L’esempio seguente inserire nell&#39;elenco Consentiti 192.0.2.110.
+   L’esempio seguente inserisce nell&#39;elenco Consentiti la versione 192.0.2.110.
 
    Aggiungi quanto segue alla fine del file di configurazione Apache:
 
@@ -88,26 +88,26 @@ Per reindirizzare il traffico a una pagina di manutenzione personalizzata:
    - CentOS: `service httpd restart`
    - Ubuntu: `service apache2 restart`
 
-1. Immetti il seguente comando:
+1. Immetti il comando seguente:
 
    ```bash
    touch <web server docroot>/maintenance.enable
    ```
 
 1. [Aggiornare il sistema](../implementation/perform-upgrade.md).
-1. Verifica che il sito funzioni correttamente.
+1. Verifica il sito per assicurarti che funzioni correttamente.
 1. Al termine dell’aggiornamento, elimina `maintenance.enable`.
 
-## Pagina di manutenzione personalizzata per l&#39;allegato
+## Pagina di manutenzione personalizzata per l’indice
 
 Questa sezione illustra come creare una pagina di manutenzione personalizzata e come reindirizzare il traffico verso di essa.
 
 Per reindirizzare il traffico a una pagina di manutenzione personalizzata:
 
-1. Utilizza un editor di testo per aprire il file di configurazione nginx che contiene il blocco del server.
-1. Aggiungi quanto segue al blocco del server (`server` è indicato solo a fini di chiarezza; non aggiungere un secondo blocco server).
+1. Utilizza un editor di testo per aprire il file di configurazione nginx che contiene il blocco server.
+1. Aggiungi quanto segue al blocco server (`server` viene visualizzato solo a scopo di chiarezza; non aggiungere un secondo blocco server).
 
-   I seguenti inseriscono nell&#39;elenco Consentiti gli indirizzi IP 192.0.2.110 e 192.0.2.115 su un sistema in cui è installato il Magento in `/var/www/html/magento2`:
+   I seguenti di Magento consentono di inserire nell&#39;elenco Consentiti gli indirizzi IP 192.0.2.110 e 192.0.2.115 su un sistema in cui è installato `/var/www/html/magento2`:
 
    ```conf
    server {
@@ -142,22 +142,22 @@ Per reindirizzare il traffico a una pagina di manutenzione personalizzata:
    }
    ```
 
-1. Immetti il seguente comando:
+1. Immetti il comando seguente:
 
    ```bash
    touch <magento_root>/maintenance.enable
    ```
 
-1. Ricarica la configurazione dell&#39;nginx:
+1. Ricarica la configurazione nginx:
 
    ```bash
    service nginx reload
    ```
 
 1. [Aggiornare il sistema](../implementation/perform-upgrade.md).
-1. Verifica che il sito funzioni correttamente.
+1. Verifica il sito per assicurarti che funzioni correttamente.
 1. Al termine dell’aggiornamento, elimina o rinomina `maintenance.enable`
-1. Ricarica la configurazione dell&#39;nginx:
+1. Ricarica la configurazione nginx:
 
    ```bash
    service nginx reload

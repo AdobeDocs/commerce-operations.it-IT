@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # Applicazione web progressiva (PWA)
 
-Le applicazioni web progressive (PWA) rappresentano il futuro delle esperienze di acquisto. I PWA sono lo standard di tecnologia web di nuova generazione che offre esperienze di acquisto simili a quelle delle applicazioni su dispositivi mobili e desktop. Utilizzando PWA, i commercianti possono creare propri PWA ad alte prestazioni sulla propria piattaforma Commerce, che ha dimostrato di aumentare il coinvolgimento degli utenti, aumentare i tassi di conversione e diversificare i flussi di entrate.
+Le applicazioni web progressive (PWA) rappresentano il futuro delle esperienze di acquisto. I PWA sono lo standard di tecnologia web di nuova generazione che offre esperienze di acquisto simili a quelle delle applicazioni su dispositivi mobili e desktop. Utilizzando PWA, i commercianti possono creare i propri PWA ad alte prestazioni sulla piattaforma Commerce, il che è dimostrato aumentare il coinvolgimento degli utenti, aumentare i tassi di conversione e diversificare i flussi di ricavi.
 
 ## Funzioni
 
-I PWA vengono eseguiti in un browser ma offrono agli utenti l’esperienza di un’applicazione nativa tramite le funzioni chiave, tra cui:
+I PWA vengono eseguiti in un browser ma offrono agli utenti l’esperienza di un’applicazione nativa tramite funzionalità chiave, tra cui:
 
 - Accesso all’applicazione tramite la schermata iniziale mobile
 - Accesso offline
 - Notifiche push
 
-Le grandi aziende utilizzano i PWA per aumentare i tassi di conversione e aumentare i ricavi, ma anche le piccole e medie imprese possono sfruttare le stesse tecnologie per creare un&#39;esperienza simile alle applicazioni per i propri clienti ed espandere il proprio pubblico.
+Le grandi aziende utilizzano le PWA per aumentare i tassi di conversione e incrementare i ricavi, ma anche le piccole e medie imprese possono sfruttare le stesse tecnologie per creare un&#39;esperienza simile alle applicazioni per i propri clienti ed espandere il proprio pubblico.
 
 ## Importanza
 

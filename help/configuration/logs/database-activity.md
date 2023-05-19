@@ -1,28 +1,28 @@
 ---
-title: Attività del database di log
-description: Configura Commerce per registrare l’attività del database utilizzando l’interfaccia Logger .
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+title: Registra attività database
+description: Configura Commerce per registrare l’attività del database utilizzando l’interfaccia Logger.
+exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
 
 ---
 
+# Registra attività database
 
-# Attività del database di log
+Nell&#39;esempio seguente viene illustrato come registrare l&#39;attività del database utilizzando [`Magento\Framework\DB\LoggerInterface`][interface], che ha due implementazioni:
 
-L’esempio seguente mostra come registrare l’attività del database utilizzando [`Magento\Framework\DB\LoggerInterface`][interface], che dispone di due implementazioni:
-
-- Nessun registro (predefinito): [`Magento\Framework\DB\Logger\Quiet`][quiet]
-- Accessi a `var/log` directory: [`Magento\Framework\DB\Logger\File`][file]
+- Non registra nulla (impostazione predefinita): [`Magento\Framework\DB\Logger\Quiet`][quiet]
+- Accedi a `var/log` directory: [`Magento\Framework\DB\Logger\File`][file]
 
 >[!TIP]
 >
->Puoi utilizzare Commerce CLI per [abilitare e disabilitare la registrazione del database](../cli/enable-logging.md#database-logging).
+>È possibile utilizzare Commerce CLI per [abilitare e disabilitare la registrazione del database](../cli/enable-logging.md#database-logging).
 
 Per modificare la configurazione predefinita di `\Magento\Framework\DB\Logger\LoggerProxy`, modifica il `app/etc/di.xml`.
 
-Innanzitutto, modifica i valori predefiniti di `loggerAlias` e `logCallStack` argomenti a favore:
+Innanzitutto, modifica i valori predefiniti di `loggerAlias` e `logCallStack` argomenti per:
 
 ```xml
 <type name="Magento\Framework\DB\Logger\LoggerProxy">
@@ -35,7 +35,7 @@ Innanzitutto, modifica i valori predefiniti di `loggerAlias` e `logCallStack` ar
 </type>
 ```
 
-Dopo di che, fornisci il percorso del file per `Magento\Framework\DB\Logger\File`:
+In seguito, specifica il percorso del file per `Magento\Framework\DB\Logger\File`:
 
 ```xml
 <type name="Magento\Framework\DB\Logger\File">

@@ -1,33 +1,33 @@
 ---
-title: Generare dati per il test delle prestazioni
+title: Genera dati per test delle prestazioni
 description: Scopri come generare una grande quantità di dati da utilizzare per il test delle prestazioni.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 8%
 
 ---
 
+# Dati di test delle prestazioni
 
-# Dati sul test delle prestazioni
-
-Per utilizzare [Toolkit di prestazioni](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) Per eseguire un altro strumento di test delle prestazioni, è necessario generare una grande quantità di dati, ad esempio archivi, categorie e prodotti.
+Per utilizzare [Performance Toolkit](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) o un altro strumento per il test delle prestazioni, è necessario generare una grande quantità di dati, ad esempio archivi, categorie e prodotti.
 
 {{file-system-owner}}
 
 ## Profili
 
-Puoi regolare la quantità di dati che crei utilizzando _profiles_ (piccolo, medio, grande e grande). I profili si trovano in `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` directory.
+È possibile regolare la quantità di dati creati utilizzando _profili_ (piccolo, medio, grande e molto grande). I profili si trovano in `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` directory.
 
 Ad esempio: `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
-La figura seguente mostra come un prodotto viene visualizzato sulla vetrina utilizzando _piccolo_ profilo:
+La figura seguente mostra come un prodotto viene visualizzato nella vetrina utilizzando _piccolo_ profilo:
 
-![vetrina di esempio con dati generati](../../assets/configuration/generate-data.png)
+![Vetrina di esempio con dati generati](../../assets/configuration/generate-data.png)
 
-La tabella seguente fornisce dettagli sui profili del generatore di dati: piccolo, medio, grande e grande extra.
+La tabella seguente fornisce dettagli sui profili del generatore di dati: piccolo, medio, grande e molto grande.
 
-| Parametro | Profilo piccolo | Profilo medio | Profilo multisito medio | Profilo grande | Profilo extra grande |
+| Parametro | Profilo piccolo | Profilo medio | Profilo multisito medio | Profilo grande | Profilo molto grande |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
@@ -45,21 +45,21 @@ La tabella seguente fornisce dettagli sui profili del generatore di dati: piccol
 | `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
 | `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
-### Esegui il generatore di dati
+### Eseguire il generatore di dati
 
 >[!WARNING]
 >
->Prima di eseguire il generatore di dati, disattiva tutti i processi cron in esecuzione sul server. La disattivazione dei processi cron impedisce al generatore di dati di eseguire azioni in conflitto con i processi cron attivi ed evita errori non necessari.
+>Prima di eseguire il generatore di dati, disabilitare tutti i processi cron in esecuzione sul server. La disabilitazione dei processi cron impedisce al generatore di dati di eseguire azioni in conflitto con i processi cron attivi ed evita errori inutili.
 
 Esegui il comando come descritto in questa sezione. Dopo l&#39;esecuzione del comando, è necessario [reindicizza tutti gli indici](../cli/manage-indexers.md).
 
-Opzioni di comando:
+Opzioni comando:
 
 ```bash
 bin/magento setup:perf:generate-fixtures <path-to-profile>
 ```
 
-Dove `<path-to-profile>` specifica il percorso assoluto del file system per un profilo e il nome di tale profilo.
+Dove `<path-to-profile>` specifica il percorso assoluto del file system e il nome di un profilo.
 
 Ad esempio:
 
@@ -96,11 +96,11 @@ Generating simple products...  done in <time>
 ... more ...
 ```
 
-## Attrezzature delle prestazioni
+## Apparecchiature per prestazioni
 
 ### Utenti amministratori
 
-Genera gli utenti amministratori. Nodo profilo XML:
+Genera utenti amministratore. Nodo profilo XML:
 
 ```xml
 <!-- Number of admin users -->
@@ -109,7 +109,7 @@ Genera gli utenti amministratori. Nodo profilo XML:
 
 ### Set di attributi
 
-Genera i set di attributi con la configurazione specificata. Nodo profilo XML:
+Genera set di attributi con la configurazione specificata. Nodo profilo XML:
 
 ```xml
 <!-- Number of product attribute sets -->
@@ -122,9 +122,9 @@ Genera i set di attributi con la configurazione specificata. Nodo profilo XML:
 <product_attribute_sets_attributes_values>{int}</product_attribute_sets_attributes_values>
 ```
 
-### Bundle prodotti
+### Prodotti bundle
 
-Genera i prodotti bundle. Le selezioni dei bundle generati non vengono visualizzate singolarmente nel catalogo. I prodotti sono distribuiti in modo uniforme per categorie e siti web. Se  `assign_entities_to_all_websites` dal profilo è impostato su `1`. I prodotti vengono assegnati a tutti i siti web.
+Genera prodotti bundle. Le selezioni del bundle generato non vengono visualizzate singolarmente nel catalogo. I prodotti sono distribuiti uniformemente per categorie e siti web. Se  `assign_entities_to_all_websites` dal profilo è impostato su `1`. I prodotti vengono assegnati a tutti i siti web.
 
 Nodo profilo XML:
 
@@ -139,9 +139,9 @@ Nodo profilo XML:
 <bundle_products_variation>{int}</bundle_products_variation>
 ```
 
-### Regole del prezzo del carrello
+### Regole prezzi carrello
 
-Genera regole sul prezzo del carrello. Nodo profilo XML:
+Genera le regole prezzo carrello. Nodo profilo XML:
 
 ```xml
 <!-- Number of cart price rules -->
@@ -151,9 +151,9 @@ Genera regole sul prezzo del carrello. Nodo profilo XML:
 <cart_price_rules_floor>{int}</cart_price_rules_floor>
 ```
 
-### Regole del prezzo del catalogo
+### Regole prezzo catalogo
 
-Genera le regole del prezzo di catalogo. Nodo profilo XML:
+Genera regole di prezzo catalogo. Nodo profilo XML:
 
 ```xml
 <!-- Number of catalog price rules -->
@@ -162,7 +162,7 @@ Genera le regole del prezzo di catalogo. Nodo profilo XML:
 
 ### Categorie
 
-Genera le categorie. Se `assign_entities_to_all_websites` è impostato su `0`, tutte le categorie sono distribuite in modo uniforme per categorie principali; in caso contrario, tutte le categorie vengono assegnate a una categoria principale.
+Genera le categorie. Se `assign_entities_to_all_websites` è impostato su `0`, tutte le categorie sono distribuite in modo uniforme per le categorie principali; in caso contrario, tutte le categorie vengono assegnate a una categoria principale.
 
 Nodo profilo XML:
 
@@ -194,7 +194,7 @@ Imposta i valori per i campi di configurazione. Nodo profilo XML:
 
 ### Prodotti configurabili
 
-Genera prodotti configurabili. Le opzioni configurabili generate non vengono visualizzate singolarmente nel catalogo. I prodotti sono distribuiti in modo uniforme per categorie e siti web. Se `assign_entities_to_all_websites` è impostato su `1`, i prodotti vengono assegnati a tutti i siti web.
+Genera prodotti configurabili. Le opzioni configurabili generate non vengono visualizzate singolarmente nel catalogo. I prodotti sono distribuiti uniformemente per categorie e siti web. Se `assign_entities_to_all_websites` è impostato su `1`, i prodotti vengono assegnati a tutti i siti web.
 
 Sono supportati i seguenti formati di nodo XML:
 
@@ -205,7 +205,7 @@ Sono supportati i seguenti formati di nodo XML:
    <configurable_products>{int}</configurable_products>
    ```
 
-- Genera prodotti in base a un set di attributi esistente:
+- Genera prodotti in base a una serie di attributi esistente:
 
    ```xml
    <configurable_products>
@@ -231,7 +231,7 @@ Sono supportati i seguenti formati di nodo XML:
    </configurable_products>
    ```
 
-- Genera prodotti in base a un set di attributi creato dinamicamente con un numero specifico di attributi e opzioni:
+- Genera prodotti in base a un set di attributi creato dinamicamente con un numero specificato di attributi e opzioni:
 
    ```xml
    <configurable_products>
@@ -260,7 +260,7 @@ Sono supportati i seguenti formati di nodo XML:
    </configurable_products>
    ```
 
-- Genera prodotti in base a un set di attributi creato dinamicamente con una configurazione specifica per ogni attributo:
+- Genera prodotti in base a un set di attributi creato dinamicamente con una configurazione specificata per ogni attributo:
 
    ```xml
    <configurable_products>
@@ -299,7 +299,7 @@ Sono supportati i seguenti formati di nodo XML:
 
 ### Clienti
 
-Genera i clienti. I clienti hanno una distribuzione normale su tutti i siti web disponibili. Ciascun cliente dispone degli stessi dati, ad eccezione degli indirizzi e-mail del cliente, del gruppo di clienti e degli indirizzi cliente.
+Genera clienti. I clienti hanno una distribuzione normale su tutti i siti web disponibili. Ogni cliente ha gli stessi dati ad eccezione di e-mail cliente, gruppo di clienti e indirizzi dei clienti.
 
 Nodo profilo XML:
 
@@ -308,7 +308,7 @@ Nodo profilo XML:
 <customers>{int}</customers>
 ```
 
-È possibile utilizzare il seguente XML per modificare la configurazione del cliente:
+Per modificare la configurazione del cliente, è possibile utilizzare il codice XML seguente:
 
 ```xml
 <customer-config>
@@ -319,7 +319,7 @@ Nodo profilo XML:
 
 ### Immagini del prodotto
 
-Genera le immagini dei prodotti. La generazione non include il ridimensionamento.
+Genera immagini di prodotto. La generazione non include il ridimensionamento.
 
 Nodo profilo XML:
 
@@ -335,7 +335,7 @@ Nodo profilo XML:
 
 ### Stato degli indicizzatori
 
-Aggiorna lo stato degli indicizzatori. Nodo profilo XML:
+Aggiorna lo stato degli indici. Nodo profilo XML:
 
 ```xml
 <indexer>
@@ -347,7 +347,7 @@ Aggiorna lo stato degli indicizzatori. Nodo profilo XML:
 
 ### Ordini
 
-Genera gli ordini con un numero configurabile di diversi tipi di articoli dell&#39;ordine. Se necessario, genera le virgolette inattive per gli ordini generati.
+Genera ordini con un numero configurabile di diversi tipi di articoli ordine. Facoltativamente, genera preventivi inattivi per gli ordini generati.
 
 Nodo profilo XML:
 
@@ -379,9 +379,9 @@ Nodo profilo XML:
 
 ### Prodotti semplici
 
-Genera prodotti semplici. I prodotti sono distribuiti per impostazione predefinita e per set di attributi predefiniti. Se nel profilo sono specificati set di attributi aggiuntivi come: `<product_attribute_sets>{int}</product_attribute_sets>`, i prodotti vengono distribuiti anche per set di attributi aggiuntivi.
+Genera prodotti semplici. I prodotti sono distribuiti per impostazione predefinita e per set di attributi predefiniti. Se nel profilo vengono specificati set di attributi aggiuntivi, come: `<product_attribute_sets>{int}</product_attribute_sets>`, i prodotti vengono distribuiti anche per set di attributi aggiuntivi.
 
-I prodotti sono distribuiti in modo uniforme per categorie e siti web. Se `assign_entities_to_all_websites` è impostato su `1`, i prodotti vengono assegnati a tutti i siti web.
+I prodotti sono distribuiti uniformemente per categorie e siti web. Se `assign_entities_to_all_websites` è impostato su `1`, i prodotti vengono assegnati a tutti i siti web.
 
 Nodo profilo XML:
 
@@ -392,16 +392,16 @@ Nodo profilo XML:
 
 ### Siti Web
 
-Genera siti web. Nodo profilo XML:
+Genera siti Web. Nodo profilo XML:
 
 ```xml
 <!-- Number of websites to be generated -->
 <websites>{int}</websites>
 ```
 
-### Gruppi di archiviazione
+### Gruppi store
 
-Genera i gruppi di archivi (a cui fa riferimento l&#39;amministratore come _negozi_). I gruppi di negozi sono distribuiti normalmente tra i siti web.
+Genera gruppi di store (a cui si fa riferimento nell’amministratore come _store_). I gruppi di store sono distribuiti normalmente tra i siti web.
 
 Nodo profilo XML:
 
@@ -410,9 +410,9 @@ Nodo profilo XML:
 <store_groups>{int}</store_groups>
 ```
 
-### Memorizzare le visualizzazioni
+### Visualizzazioni dello store
 
-Genera le visualizzazioni store. Le visualizzazioni store vengono distribuite normalmente tra i gruppi store. Nodo profilo XML:
+Genera le visualizzazioni dello store. Le visualizzazioni dello store sono distribuite normalmente tra i gruppi di store. Nodo profilo XML:
 
 ```xml
 <!-- Number of store views to be generated -->
@@ -424,25 +424,25 @@ Genera le visualizzazioni store. Le visualizzazioni store vengono distribuite no
 
 ### Aliquote fiscali
 
-Genera le aliquote fiscali. Nodo profilo XML:
+Genera le aliquote. Nodo profilo XML:
 
 ```xml
 <!-- Accepts name of CSV file with tax rates (<path to Commerce folder>/setup/src/Magento/Setup/Fixtures/_files) -->
 <tax_rates_file>{CSV file name}</tax_rates_file>
 ```
 
-## Informazioni aggiuntive sulla configurazione:
+## Informazioni di configurazione aggiuntive:
 
-- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml`—Set di attributi predefiniti
+- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml`- Set di attributi predefiniti
 
-- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`—Configurazione del cliente
+- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`- Configurazione del cliente
 
-- `<Commerce root dir>/setup/performance-toolkit/config/description.xml`- Configurazione descrizione completa del prodotto
+- `<Commerce root dir>/setup/performance-toolkit/config/description.xml`- Configurazione descrizione completa prodotto
 
-- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`- Configurazione breve della descrizione del prodotto
+- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`- Configurazione della descrizione breve del prodotto
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`- Configurazione per la descrizione breve e completa del prodotto. Questa implementazione precedente è fornita per la compatibilità con le versioni precedenti.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`— Configurazione per descrizione breve e completa del prodotto. Questa implementazione precedente è fornita per compatibilità con le versioni precedenti.
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`—Numero ridotto di termini di ricerca in descrizioni brevi e complete
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`- Numero ridotto di termini di ricerca in descrizioni brevi e complete
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`- Numero maggiore di termini di ricerca da utilizzare in breve e descrizione completa.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`- Numero maggiore di termini di ricerca da utilizzare in una descrizione breve e completa.

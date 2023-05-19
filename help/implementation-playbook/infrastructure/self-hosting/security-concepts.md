@@ -1,63 +1,63 @@
 ---
-title: Concetti di sicurezza di Adobe Commerce per l’hosting autonomo
-description: Scopri le idee e i concetti di sicurezza e le best practice di self-hosting da considerare. Scopri concetti quali file system di sola lettura, scansione malware e molti altri argomenti da considerare durante l'hosting di adobe commerce.
-landing-page-description: Scopri alcuni concetti e cose di sicurezza da considerare quando ospita Adobe Commerce da solo.
-short-description: Scopri strategie e concetti di sicurezza per l’hosting autonomo di Adobe Commerce.
+title: Concetti di sicurezza di Adobe Commerce per hosting autonomo
+description: Scopri le idee e i concetti di sicurezza di self-hosting e le best practice da considerare. Scopri concetti come il file system di sola lettura, la scansione del malware e molti altri argomenti da considerare durante l’hosting di adobe commerce.
+landing-page-description: Scopri alcuni concetti e aspetti di sicurezza da considerare quando ospiti Adobe Commerce da solo.
+short-description: Scopri le strategie e i concetti di sicurezza per ospitare te stesso Adobe Commerce.
 kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: cca195c20ddcba634a8fc39c0867e0ae28f43683
+exl-id: c4912f02-0411-466f-8c77-d610de9eb35d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 0%
 
 ---
 
-
 # Concetti di sicurezza
 
-La sicurezza dovrebbe sempre essere una considerazione importante per qualsiasi cosa riguardi un progetto di e-commerce. Senza una forte posizione di sicurezza, la superficie che può essere attaccata è esponenzialmente più grande. I concetti e le idee presentati forniscono metodi comprovati per ridurre le vulnerabilità comuni tipicamente sfruttate.
+La sicurezza deve sempre essere una considerazione forte per qualsiasi cosa relativa a un progetto di e-commerce. Senza una forte posizione di sicurezza, la superficie che può essere attaccata è esponenzialmente più grande. I concetti e le idee presentati forniscono metodi collaudati per ridurre le vulnerabilità comuni tipicamente sfruttate.
 
-I seguenti concetti non sono in alcun ordine particolare. Hanno lo scopo di fornire alcune idee e concetti da considerare. Molti sono gratuiti o richiederebbero una configurazione e una configurazione minime e un successivo monitoraggio. Ricercare questi argomenti al di fuori di questo tutorial per assicurarti di avere una conoscenza sufficientemente approfondita dei concetti presentati qui.
+I concetti seguenti non sono in alcun ordine particolare. Hanno lo scopo di fornire alcune idee e concetti da considerare. Molte sono gratuite o richiedono un minimo di configurazione e monitoraggio. Esci da questa esercitazione per approfondire la conoscenza dei concetti presentati qui.
 
 ## File system di sola lettura
 
-Il concetto di file system di sola lettura è stato preso in prestito da [Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Questo rimuove completamente un&#39;area importante utilizzata da un attore cattivo. Molti sfruttatori hanno approfittato della modifica di un file che si prevede si trovi nell’applicazione Commerce per evitare il rilevamento. Invece di crearne uno, l’attore errato modifica il contenuto di un file esistente per eseguire un’azione imprevista. Rendere il file system di sola lettura riduce notevolmente questo vettore di attacco.
+Il concetto di file system di sola lettura è stato preso in prestito da [Adobe Commerce sull’infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Questo rimuove completamente un&#39;area importante utilizzata da un attore cattivo. Molti exploit hanno approfittato dell’alterazione di un file che dovrebbe trovarsi nell’applicazione Commerce per evitare il rilevamento. Invece di crearne uno, l’attore danneggiato modifica il contenuto di un file esistente per eseguire un’azione imprevista. Rendendo il file system di sola lettura si riduce notevolmente questo vettore di attacco.
 
-## Utilizzare l’autenticazione a due fattori e i gestori di password
+## Utilizzare l&#39;autenticazione a DUE fattori e i gestori di password
 
-Non condividere mai le password. Ogni utente amministratore deve avere il proprio account con ACL appropriato. Assicurati che l’identificazione a due fattori non sia mai disabilitata o rimossa. Se fornisci l&#39;accesso dell&#39;amministratore a terze parti, assicurati che la password sia generata da un gestore di password e non sia mai riutilizzata.
+Non condividere mai le password. Ogni utente amministratore deve disporre di un proprio account con l’ACL corretto. Assicurarsi che l&#39;identificazione dei due fattori non venga mai disattivata o rimossa. Se fornisci all’amministratore l’accesso a una terza parte, assicurati che la password sia generata da un gestore di password e non venga mai riutilizzata.
 
 ## Scansioni malware
 
-Le scansioni malware si trovano in genere da un provider di hosting che cerca di specializzarsi in Adobe Commerce. Questa libreria di malware e sfruttamenti noti è una lista sempre crescente man mano che vengono scoperte, testate e diagnosticate nuove minacce. Richiedi se il provider di hosting dispone di tale servizio e se può essere eseguito automaticamente o solo su richiesta. Ci sono anche servizi a cui puoi abbonarti che possono utilizzare la loro libreria di exploit noti per controllare costantemente la tua applicazione commerciale per gli utilizzi. Alcuni di questi sono solo esterni, alcuni possono essere aggiunti all&#39;infrastruttura per fornire una scansione profonda interna di tutte le cartelle, i file e persino il database. Ci sono alcuni fornitori con anni di esperienza in questo ambito, da Sansec.io a Sucuri e naturalmente MageReport. Alcuni sono gratuiti e altri sono accompagnati da un costo associato. Sapere che questo è disponibile e avere una conversazione attenta con il tuo architetto Adobe Commerce e il team DevOps ti garantirà la soluzione giusta.
+Le scansioni malware si trovano in genere da un provider di hosting che tenta di specializzarsi in Adobe Commerce. Questa libreria di malware e exploit noti è un elenco in continua crescita, in quanto vengono scoperte, sperimentate e diagnosticate nuove minacce. Chiedi se il provider di hosting dispone di tale servizio e se può essere eseguito automaticamente o solo su richiesta. Ci sono anche servizi a cui puoi abbonarti che possono utilizzare la loro libreria di exploit noti per controllare costantemente la tua applicazione commerce per gli exploit. Alcuni sono solo esterni, altri possono essere aggiunti all’infrastruttura per fornire una scansione approfondita interna di tutte le cartelle, i file e persino il database. Ci sono alcuni fornitori con anni di esperienza in questo settore, da Sansec.io a Sucuri e naturalmente MageReport. Alcune sono gratuite, altre hanno un costo associato. Sapere che è disponibile e parlare con il tuo architetto Adobe Commerce e il team DevOps ti garantiranno la soluzione giusta.
 
 ## Strumento di analisi a livello di sito per Commerce
 
-La [Strumento di analisi a livello di sito](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} è uno strumento proattivo self-service e un archivio centrale che include informazioni dettagliate sul sistema e raccomandazioni per garantire la sicurezza e l’operabilità dell’installazione di Adobe Commerce. Fornisce monitoraggio delle prestazioni in tempo reale, report e consigli 24 ore su 24 per identificare potenziali problemi e migliorare la visibilità sulle configurazioni di sicurezza, salute e applicazioni del sito. Consente di ridurre i tempi di risoluzione e migliorare la stabilità e le prestazioni del sito.
+Il [Strumento di analisi a livello di sito](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} è uno strumento self-service proattivo e un archivio centrale che include informazioni dettagliate sul sistema e raccomandazioni per garantire la sicurezza e l’operabilità dell’installazione di Adobe Commerce. Fornisce monitoraggio delle prestazioni in tempo reale, report e consigli 24 ore su 24, 7 giorni su 7 per identificare potenziali problemi e migliorare la visibilità delle configurazioni di salute, sicurezza e applicazioni del sito. Consente di ridurre i tempi di risoluzione e di migliorare la stabilità e le prestazioni del sito.
 
-## Abilita e verifica le impostazioni per Registrazione azioni amministratore
+## Abilita e verifica le impostazioni per la registrazione delle azioni amministratore
 
-Questo si può trovare dopo aver effettuato l’accesso all’amministratore Adobe Commerce e aver navigato in Stores > Configuration > Advanced > Admin > Admin Actions Logging (Archivia > Configurazione > Amministratore > Registrazione azioni). Questo fornisce un elenco degli eventi monitorati e registrati. È utile quando si esegue un&#39;analisi forense su un sito sfruttato, se il sospetto è che hanno avuto accesso all&#39;amministratore Commerce. La registrazione e il report possono essere utili per vedere quali eventi ha eseguito il cattivo attore. Se una registrazione di azioni di amministrazione è disabilitata, significa che qualcuno potrebbe averle disattivate per la copertura, rimuovi la registrazione quando esegui determinate azioni.
+Puoi accedere a questa pagina dopo aver effettuato l’accesso all’amministrazione di Adobe Commerce e aver selezionato Archivi > Configurazione > Avanzate > Amministratore > Registrazione azioni amministratore. Fornisce un elenco di eventi che vengono monitorati e registrati. È utile quando si eseguono analisi forensi su un sito sfruttato, se il sospetto è che abbiano ottenuto l’accesso all’amministratore di Commerce. Questa registrazione e questo rapporto possono essere utili per vedere quali eventi ha eseguito l’attore errato. Se la registrazione di eventuali azioni dell’amministratore è disabilitata, ciò indica che qualcuno potrebbe averla disabilitata per la copertura, rimuovi la registrazione quando esegui determinate azioni.
 
-## Server Bastion per l&#39;accesso ssh
+## Bastion Server per accesso ssh
 
-Questo è più difficile da spiegare che la maggior parte degli argomenti del tutorial Security Concepts. L&#39;idea di base è quella di fornire un server che funga da intermediario per l&#39;accesso ssh. In questo modo, i server di produzione non consentono mai connessioni ssh esterne. Puoi creare questo server bastion e utilizzare una maschera IP locale per garantire che solo i server designati siano autorizzati a utilizzare SSH.
+È difficile spiegare che la maggior parte degli argomenti dell’esercitazione sui concetti di sicurezza. L’idea di base è fornire un server che funga da intermediario per l’accesso a ssh. In questo modo, i server di produzione non consentono mai connessioni ssh esterne. Puoi creare questo bastion server e utilizzare una maschera IP locale per garantire che solo i server designati siano autorizzati a usare SSH in tali server.
 
-## Esamina ruoli e autorizzazioni ACL
+## Rivedi ruoli e autorizzazioni ACL
 
-A ogni utente amministratore di Adobe Commerce viene assegnato un ruolo ACL. Questo ruolo deve essere creato per fornire solo la funzionalità necessaria per eseguire il processo. I ruoli ACL devono essere valutati spesso, per garantire che non forniscano più autorità del necessario. Se necessario, crea molti ruoli ACL con responsabilità. Se l&#39;accesso è concesso a terzi per qualche motivo, è opportuno disattivarlo il prima possibile. Chiedi loro per quanto tempo hanno assolutamente bisogno di accedere e impostare una data di scadenza automatica quando crei il loro utente amministratore.
+A ogni utente amministratore di Adobe Commerce viene assegnato un ruolo ACL. Questo ruolo deve essere creato per fornire solo la funzionalità che deve eseguire il processo. I ruoli ACL devono essere valutati spesso, per garantire che non forniscano più autorità del necessario. Se necessario, crea molti ruoli ACL con responsabilità. Se per qualche motivo l’accesso è concesso a terzi, questi dovrebbero essere disattivati il prima possibile. Chiedi loro per quanto tempo hanno bisogno di accedere e imposta una data di scadenza automatica durante la creazione del loro utente amministratore.
 
-## Controllare frequentemente gli utenti amministratori e l’accesso degli utenti SSH
+## Controlla frequentemente gli utenti amministratori e l’accesso degli utenti SSH
 
-Per rilevare la creazione di utenti amministratori indesiderati o non autorizzati, l&#39;elenco degli utenti amministratori deve essere controllato frequentemente. Una buona regola è quella di verificare chi ha accesso mensile SSH e amministratore all&#39;applicazione Adobe Commerce. Se vengono rilevati nuovi utenti, disattiva il loro account e segui le politiche e le procedure aziendali relative a tale incidente. È più facile ripristinare l&#39;accesso di un utente che di recuperare da un exploit.
+Per rilevare la creazione di utenti amministratori indesiderati o non autorizzati, è necessario controllare frequentemente l’elenco degli utenti amministratori. Una buona regola è verificare chi dispone di accesso mensile SSH e amministratore all’applicazione Adobe Commerce. Se vengono rilevati nuovi utenti, disabilita il tuo account e segui la politica e le procedure aziendali relative a tali incidenti. È più facile ripristinare l’accesso di un utente che ripristinarlo da un exploit.
 
 ## Pulizia del database
 
-Limitare l’accesso ai dati di produzione. Questi membri del gruppo dovrebbero avere la possibilità di estrarre le basi di dati di produzione e pulirle di dati reali. Se la rimozione dei dati è un’opzione, tronca le tabelle appropriate come ordini, preventivi e clienti. Tuttavia, a volte si desidera l&#39;insieme completo di dati, ma i valori possono essere resi anonimi. Ciò è in genere vero in un ambiente di staging. È utile anche prima degli aggiornamenti. Grazie al volume reale di dati, ma con l’anonimizzazione è possibile testare e convalidare il tempo necessario per eseguire correttamente un’implementazione per l’aggiornamento. Se hai un set limitato di dati, puoi sottovalutare il processo di aggiornamento e la tempistica.
+Limita l’accesso ai dati di produzione. Questi team devono avere la capacità di estrarre i database di produzione e ripulirli dai dati reali. Se è possibile rimuovere i dati, troncare le tabelle appropriate, ad esempio ordini, preventivi e clienti. Tuttavia, a volte può essere utile il set completo di dati, ma i valori possono essere resi anonimi. In genere, ciò si verifica in un ambiente di staging. È utile anche prima degli aggiornamenti. Grazie alla disponibilità del volume reale di dati, ma con anonimizzazione, è possibile testare e convalidare il tempo necessario per eseguire correttamente una distribuzione per l’aggiornamento. Se si dispone di un set limitato di dati, è possibile sottostimare il processo di aggiornamento e la tempistica.
 
-+++Esempio casuale di informazioni sul cliente Ecco un esempio per come modificare l’indirizzo e-mail del cliente con una stringa casuale e tutti i campi nome e ultimo mane in alcune tabelle standard in cui Adobe Commerce memorizza i dati. **Ricordare di controllare tutte le tabelle per i dati sensibili, questo elenco non è tutto incluso nelle tabelle che possono memorizzare i dati dei clienti**
++++Esempio di casualizzazione delle informazioni sul cliente Ecco un esempio per cambiare l’indirizzo e-mail del cliente con una stringa casuale e tutti i campi nome e cognome in alcune tabelle standard in cui Adobe Commerce memorizza i dati. **Ricorda di controllare la presenza di dati sensibili in tutte le tabelle; questo elenco non include tutte le tabelle che possono memorizzare i dati dei clienti**
 
 ```SQL
 SET FOREIGN_KEY_CHECKS=0;
@@ -82,7 +82,7 @@ SET FOREIGN_KEY_CHECKS=1;
 +++
 
 
-+++È anche possibile troncare le tabelle invece di cercare di anonimizzare
++++È anche possibile troncare le tabelle invece di cercare di rendere anonime
 
 ```SQL
 SET FOREIGN_KEY_CHECKS=0;
@@ -103,7 +103,7 @@ SET FOREIGN_KEY_CHECKS=1;
 
 +++
 
-+++Rimuovi completamente le informazioni Esempio: qui è un esempio per rimuovere tutti gli ordini, le quotazioni, le note di credito e altro ancora prima del lancio o per un ambiente di sviluppo inferiore
++++Rimuovi completamente le informazioni di esempio Di seguito è riportato un esempio per la rimozione di tutti gli ordini, preventivi, note di credito e altro ancora prima del lancio o per un ambiente di sviluppo inferiore.
 
 ```SQL
 DELETE FROM `gift_message`;
@@ -207,30 +207,30 @@ ALTER TABLE sequence_shipment_7 AUTO_INCREMENT=1;
 
 +++
 
-## Usa variabili di ambiente
+## Utilizzare le variabili di ambiente
 
-[!BADGE Solo Adobe Commerce su cloud]{type=Informative}
+[!BADGE Adobe Commerce solo su cloud]{type=Informative}
 
-L’utilizzo delle variabili di ambiente consente di impostare alcuni valori che possono e devono essere modificati per ogni ambiente. Ad esempio, potresti voler avere un URL amministratore diverso per ogni ambiente. Impostando questo valore come variabile di ambiente, puoi configurarlo e anche fare riferimento rapido a tale valore dall’interfaccia utente di Cloud quando necessario.
+L’utilizzo delle variabili di ambiente consente di impostare alcuni valori che possono e devono essere modificati per ogni ambiente. Ad esempio, potrebbe essere utile disporre di un URL amministratore diverso per ogni ambiente. Impostando questo valore come variabile di ambiente, puoi configurarlo e, se necessario, anche fare riferimento rapidamente a tale valore dall’interfaccia utente di Cloud.
 
-Per ulteriori informazioni su questo argomento, consulta l’Experience League [Variabili dell’ambiente dell’infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
+Per ulteriori informazioni su questo argomento, consulta l’Experience League [Variabili di ambiente di Commerce su infrastruttura Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
 
-## Strumenti di scansione della vulnerabilità del software
+## Strumenti di scansione delle vulnerabilità software
 
-La pipeline CI/CD può essere uno strumento potente e consente di automatizzare alcune attività. In particolare, l&#39;opportunità per uno sviluppatore di eseguire il commit del codice che può essere sfruttabile è sempre una possibilità reale. Le revisioni del codice peer normalmente catturano tali elementi, ma siccome è un umano, gli errori capitano. La scansione automatica del codice aiuta a ridurre le opportunità di vulnerabilità impreviste in una nuova funzione introdotta. Questi strumenti possono anche essere implementati per bloccare l&#39;unione del codice nella codebase live. Ci sono molti modi e strumenti per offrire sicurezza del codice automatizzata e scansioni di qualità. Possono esistere solidi strumenti di sviluppo personalizzati, ma richiedono aggiornamenti e regolazioni costanti. Un&#39;alternativa è quella di applicare strumenti proattivamente aggiornati come synk.io e la finestra di ispezione del codice di Amazon.
+La pipeline CI/CD può essere uno strumento utile per automatizzare alcune attività. In particolare, la possibilità per uno sviluppatore di eseguire il commit di codice che potrebbe essere sfruttabile è sempre una possibilità reale. Le revisioni dei codici tra pari normalmente rilevano tali elementi, ma poiché si tratta di un elemento umano, possono verificarsi errori. La scansione automatica del codice aiuta a ridurre le opportunità di vulnerabilità impreviste in una funzione appena introdotta. Questi strumenti possono anche essere implementati per bloccare l’unione di codice nella base di codice live. Esistono molti modi e strumenti per offrire sicurezza automatica del codice e controlli di qualità. Possono essere disponibili solidi strumenti personalizzati, ma richiedono aggiornamenti e regolazioni costanti. In alternativa, puoi applicare strumenti aggiornati in modo proattivo, come synk.io e l’ispettore del codice di Amazon.
 
 ## Firewall applicazione Web
 
-Un firewall per applicazioni web o un WAF utilizzato spesso quando si parla con DevOps o un provider di hosting.
+Un web application firewall o WAF, come viene spesso utilizzato quando si parla con DevOps o un provider di hosting.
 
-I firewall per applicazioni web (WAF) impediscono l’accesso a siti e reti da parte di traffico dannoso filtrando il traffico in base a un insieme di regole di sicurezza. Il traffico che attiva una delle regole viene bloccato prima che possa danneggiare i siti o la rete.
+I Web Application Firewall (WAF) impediscono al traffico dannoso di entrare in siti e reti filtrando il traffico in base a una serie di regole di sicurezza. Il traffico che attiva una qualsiasi delle regole viene bloccato prima che possa danneggiare i siti o la rete.
 
-Adobe Commerce cloud WAF fornisce una policy WAF con un set di regole progettato per proteggere le applicazioni web Adobe Commerce da una vasta gamma di attacchi. Se scegli un’opzione di self-hosting, trova un WAF e configura le regole, sei tu responsabile. Alcuni provider di hosting e WAF hanno un set generico di regole che sono un buon inizio, tuttavia aspettarsi qualche lavoro per ottenere cose funzionanti per il tuo progetto.
+Adobe Commerce Cloud WAF fornisce una policy WAF con un set di regole progettato per proteggere le applicazioni web Adobe Commerce da un’ampia gamma di attacchi. Se scegli un’opzione di hosting autonomo, puoi trovare un WAF e configurare le regole. Alcuni provider di hosting e provider WAF dispongono di un set generico di regole che rappresentano un buon punto di partenza, tuttavia si aspetta un po’ di lavoro per far funzionare le cose per il progetto.
 
-Il WAF esamina il traffico web e amministrativo per identificare qualsiasi attività sospetta. Valuta il traffico GET e POST (chiamate API HTTP) e applica il set di regole per determinare quale traffico bloccare. Il WAF può bloccare un&#39;ampia varietà di attacchi, tra cui attacchi di iniezione SQL, attacchi di scripting tra siti, attacchi di filtrazione dei dati e violazioni del protocollo HTTP.
+Il WAF esamina il traffico web e di amministrazione per identificare eventuali attività sospette. Valuta il traffico GET e POST (chiamate API HTTP) e applica il set di regole per determinare quale traffico bloccare. La WAF può bloccare un&#39;ampia varietà di attacchi, tra cui attacchi SQL injection, attacchi cross-site scripting, attacchi di exfiltrazione dei dati e violazioni del protocollo HTTP.
 
-Come servizio basato su cloud, il WAF non richiede hardware o software per l&#39;installazione o la manutenzione. Infine, un partner tecnologico esistente, fornisce il software e le competenze necessarie. Il WAF ad alte prestazioni, sempre attivo, risiede in ogni nodo di cache attraverso la rete di consegna globale di Flast.
+In quanto servizio basato su cloud, WAF non richiede hardware o software per l&#39;installazione o la manutenzione. Fastly, un partner tecnologico esistente, fornisce il software e le competenze necessarie. Le loro prestazioni elevate, WAF sempre attivo, risiedono in ogni nodo di cache all’interno della rete di distribuzione globale di Fastly.
 
-Per ulteriori informazioni sul WAF su Adobe Commerce on cloud fornite da Flast, leggere il [Domande frequenti sulla Knowledge Base di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}.
+Per ulteriori informazioni sulla WAF in Adobe Commerce on cloud fornite da Fastly, consulta la sezione [Domande frequenti sulla Knowledge Base di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}.
 
 {{$include /help/_includes/hosting-related-links.md}}

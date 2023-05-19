@@ -1,19 +1,19 @@
 ---
-title: Applica patch
-description: Scopri i metodi per applicare patch a un progetto Adobe Commerce o Magenti Open Source.
-source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
+title: Applicare le patch
+description: Scopri i metodi per applicare le patch a un progetto Adobe Commerce o Magenti Open Source.
+exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
-
-# Applica patch
+# Applicare le patch
 
 È possibile applicare le patch utilizzando uno dei seguenti metodi:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Riga di comando](../patches/apply.md#command-line)
 - [Compositore](../patches/apply.md#composer)
 
@@ -21,21 +21,21 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Per applicare le patch di qualità ufficiali, utilizza il [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}. Esegui sempre test completi prima di distribuire qualsiasi patch personalizzata.
+>Per applicare le patch di qualità ufficiali, utilizzare la [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Eseguire sempre test completi prima di distribuire qualsiasi patch personalizzata.
 
-Per applicare una patch personalizzata utilizzando il Compositore:
+Per applicare una patch personalizzata mediante Compositore:
 
 1. Apri l’applicazione della riga di comando e passa alla directory del progetto.
-1. Aggiungi il `cweagans/composer-patches` plug-in a `composer.json` file.
+1. Aggiungi il `cweagans/composer-patches` plugin per `composer.json` file.
 
    ```bash
    composer require cweagans/composer-patches
    ```
 
-1. Modifica le `composer.json` e aggiungi la sezione seguente per specificare:
+1. Modifica il `composer.json` e aggiungi la seguente sezione per specificare:
    - **Modulo:** *\&quot;magento/module-payment\&quot;*
-   - **Titolo:** *\&quot;MAGETWO-56934: La pagina di pagamento si blocca durante l&#39;ordine con Authorize.net con carta di credito non valida\&quot;*
-   - **Percorso della patch:** *\&quot;patches/composer/github-issue-6474.diff\&quot;*
+   - **Titolo:** *\&quot;MAGETWO-56934: La pagina di pagamento si blocca quando si ordina con Authorize.net con carta di credito non valida\&quot;*
+   - **Percorso patch:** *\&quot;patches/composer/github-issue-6474.diff\&quot;*
 
    Ad esempio:
 
@@ -52,13 +52,13 @@ Per applicare una patch personalizzata utilizzando il Compositore:
 
    Se una patch interessa più moduli, è necessario creare più file di patch destinati a più moduli.
 
-1. Applicate la patch. Utilizza la `-v` solo se si desidera visualizzare le informazioni di debug.
+1. Applichi il cerotto. Utilizza il `-v` solo se si desidera visualizzare le informazioni di debug.
 
    ```bash
    composer -v install
    ```
 
-1. Aggiorna `composer.lock` file. Il file di blocco tiene traccia delle patch applicate a ciascun pacchetto Composer in un oggetto.
+1. Aggiornare il `composer.lock` file. Il file di blocco tiene traccia delle patch applicate a ciascun pacchetto Composer di un oggetto.
 
    ```bash
    composer update --lock
@@ -68,20 +68,20 @@ Per applicare una patch personalizzata utilizzando il Compositore:
 
 Per applicare le patch dalla riga di comando:
 
-1. Carica il file locale nel `<Magento_root>` sul server utilizzando FTP, SFTP, SSH o il normale metodo di trasporto.
-1. Accedi al server come [utente amministratore](../../configuration/cli/config-cli.md#prerequisites) e verifica che il file si trovi nella directory corretta.
-1. Nell&#39;interfaccia della riga di comando, esegui i seguenti comandi in base all&#39;estensione della patch:
+1. Carica il file locale in `<Magento_root>` sul server utilizzando FTP, SFTP, SSH o il normale metodo di trasporto.
+1. Accedi al server come [utente amministratore](../../configuration/cli/config-cli.md#prerequisites) e verificare che il file si trovi nella directory corretta.
+1. Nell’interfaccia della riga di comando, esegui i seguenti comandi in base all’estensione della patch:
 
    ```bash
    patch < patch_file_name.patch
    ```
 
-   Il comando presuppone che il file da sottoporre a patch si trovi in una posizione relativa al file della patch.
+   Il comando presuppone che il file di cui applicare la patch si trovi in relazione al file di patch.
 
    >[!NOTE]
    >
-   >Se la riga di comando mostra: `File to patch:`, significa che non è in grado di individuare il file desiderato, anche se il percorso sembra corretto. Nella casella visualizzata nel terminale della riga di comando, la prima riga mostra il file a cui applicare la patch. Copia il percorso del file e incollalo nel `File to patch:` premere `Enter` e la patch dovrebbe essere completata.
+   >Se la riga di comando mostra: `File to patch:`, significa che non è in grado di individuare il file desiderato, anche se il percorso sembra corretto. Nella casella visualizzata nel terminale della riga di comando, la prima riga mostra il file a cui applicare la patch. Copiare il percorso del file e incollarlo nella `File to patch:` richiedi e premi `Enter` e il cerotto deve essere completato.
 
-1. Affinché le modifiche si riflettano, aggiorna la cache nell’Admin in **Sistema** > Strumenti > **Gestione cache**.
+1. Affinché le modifiche vengano applicate, aggiorna la cache in Admin in **Sistema** > Strumenti > **Gestione cache**.
 
-   In alternativa, la patch può essere applicata localmente con lo stesso comando, quindi impegnata e spinta normalmente.
+   In alternativa, è possibile applicare localmente la patch con lo stesso comando, quindi eseguirne il commit e il push normalmente.

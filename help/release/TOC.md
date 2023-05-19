@@ -1,6 +1,6 @@
 ---
 user-guide-title: Informazioni sulla versione
-user-guide-description: Accedi a tutte le informazioni sulla versione per le patch e i servizi Adobe Commerce in un’unica posizione.
+user-guide-description: Accedere a tutte le informazioni sulla versione per le patch e i servizi Adobe Commerce in un'unica posizione.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 source-git-commit: 3ecac271a4c86162c07ce89b9e5664c2293ad07b
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 - Note sulla versione {#notes}
    - [Panoramica](release-notes/overview.md)
-   - [Modifiche incompatibili con le versioni precedenti](backward-incompatible-changes.md)
+   - [Modifiche non compatibili con le versioni precedenti](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
       - [2.4.6](release-notes/commerce/2-4-6.md)
       - [2.4.5](release-notes/commerce/2-4-5.md)
@@ -34,7 +34,7 @@ ht-degree: 15%
       - [2.4.0](release-notes/open-source/2-4-0.md)
    - Versioni delle patch di sicurezza {#security-patches}
       - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
-      - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
+      - [2,4,5-p1](release-notes/security/2-4-5-p1.md)
       - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
       - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
       - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
@@ -46,10 +46,10 @@ ht-degree: 15%
 - [Funzioni per versione](features.md)
 - [Disponibilità del prodotto](product-availability.md)
 - [Versioni beta](beta.md)
-- Pianificazione e politiche {#planning}
-   - [Criterio del ciclo di vita](lifecycle-policy.md)
-   - [Criterio di gestione delle versioni](versioning-policy.md)
-   - [Pianificazione del rilascio](schedule.md)
+- Pianificazione e criteri {#planning}
+   - [Ciclo di vita](lifecycle-policy.md)
+   - [Criterio di controllo delle versioni](versioning-policy.md)
+   - [Pianificazione della versione](schedule.md)
 - Pacchetti {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Pacchetti cloud per Adobe Commerce](packages/cloud.md)

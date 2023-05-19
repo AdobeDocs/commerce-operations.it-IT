@@ -1,6 +1,6 @@
 ---
-title: Sistemi di gestione degli ordini
-description: Completa il progetto e-commerce con un sistema per la creazione di pacchetti, la spedizione e i resi.
+title: Sistemi di gestione ordini
+description: Completa il tuo progetto di e-commerce con un sistema per l’imballaggio, la spedizione e la restituzione.
 exl-id: 2a5f19fa-e8fe-452b-9ab6-65428dda691d
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,85 +11,85 @@ ht-degree: 0%
 
 # Sistema di gestione degli ordini (OMS)
 
-Lo shopping online sta aumentando rapidamente e le aziende sono in competizione per fornire il miglior servizio per attirare i clienti sul loro sito. Per ottenere un vantaggio competitivo, i retailer devono aumentare la propria impronta digitale, che include la vendita online, altri mercati e persino partnership.
+Gli acquisti online stanno aumentando rapidamente e le aziende competono per fornire il miglior servizio per attrarre i clienti verso il loro sito. Per avere un vantaggio competitivo, i retailer devono incrementare il proprio ingombro digitale, che comprende la vendita online, su altri mercati e persino partnership.
 
-Un e-commerce OMS è il sistema di back-end responsabile della gestione degli ordini online, inclusi packaging, spedizione, resi e abbonamenti. Un OMS deve permettere ai retailer di essere un passo avanti rispetto ai loro concorrenti e di essere più scalabile, flessibile e adattabile. L&#39;OMS dovrebbe consentire all&#39;impresa di soddisfare le esigenze dei clienti e di cambiare facilmente con il mercato.
+Un sistema OMS di e-commerce è il sistema back-end responsabile della gestione degli ordini online, inclusi imballaggio, spedizione, resi e abbonamenti. Un OMS deve consentire ai rivenditori di essere un passo avanti rispetto ai loro concorrenti e di essere più scalabile, flessibile e adattabile. L&#39;OMS dovrebbe consentire all&#39;azienda di soddisfare le richieste dei clienti e di cambiare facilmente con il mercato.
 
-Un sistema OMS fornisce integrazione e automazione attraverso il percorso di ordini cliente nel back-end, che consente ai retailer di fornire esperienze cliente migliori. Un OMS aiuta i rivenditori a elaborare gli ordini provenienti da più canali e a facilitare l&#39;imballaggio e la spedizione in luoghi diversi, fornendo al contempo ai clienti aggiornamenti in tempo reale attraverso diversi supporti.
+Un OMS fornisce integrazione e automazione attraverso il percorso di ordini dei clienti nel backend, che consente ai rivenditori di offrire esperienze cliente avanzate. Un OMS consente ai rivenditori di elaborare gli ordini provenienti da più canali e di facilitare l&#39;imballaggio e la spedizione in luoghi diversi, fornendo al contempo ai clienti aggiornamenti in tempo reale attraverso mezzi diversi.
 
-Un OMS è importante per un sito di e-commerce perché aiuta le marche a crescere. I clienti hanno aspettative elevate, il che non lascia spazio a errori. Alcuni dei motivi per cui un OMS è essenziale includono:
+Un OMS è importante per un sito di e-commerce perché aiuta i brand a crescere. I clienti hanno aspettative elevate, il che non lascia spazio a errori. Alcuni dei motivi per cui un OMS è essenziale includono:
 
-- **Fornisce una consegna più veloce**- In un&#39;era di spedizione il giorno successivo o 2 giorni, le aziende devono cercare modi per spingere i loro ordini fuori più velocemente, in quanto la finestra per completare gli ordini sta diventando più stretta. Un OMS viene immediatamente notificato quando viene effettuato un ordine e l&#39;OMS può scegliere il deposito più vicino alla destinazione dell&#39;ordine per aiutare a velocizzare la consegna. L&#39;OMS invia al team magazzino le informazioni di ordine automatizzate per preparare e imballare l&#39;ordine da spedire utilizzando un metodo di spedizione conveniente.
+- **Consegna più rapida**- In un&#39;era di spedizione il giorno successivo o di 2 giorni, le aziende devono cercare modi per spingere i loro ordini fuori più velocemente, in quanto la finestra per completare gli ordini sta diventando più stretta. Un OMS riceve immediatamente una notifica quando viene effettuato un ordine e può scegliere il magazzino più vicino alla destinazione dell&#39;ordine per accelerare la consegna. OMS invia informazioni automatizzate sull&#39;ordine al team di magazzino per preparare e imballare l&#39;ordine da spedire utilizzando un metodo di spedizione conveniente.
 
-- **Errori limitati**: Un OMS aiuta a ridurre gli errori umani. Questi errori possono richiedere molto tempo e essere costosi. Un OMS notifica al team quando i livelli di inventario sono bassi, quando un prodotto non vende, o quale prodotto ha il più alto tasso di rendimento. Questo aiuta l&#39;azienda a correggere gli errori di spedizione e analizzare il motivo dei resi.
+- **Errori limitati**: un OMS aiuta a ridurre gli errori umani. Questi errori possono essere dispendiosi in termini di tempo e denaro. Un OMS avvisa il team quando i livelli di inventario sono bassi, quando un prodotto non è in vendita o quale prodotto ha il tasso di rendimento più elevato. In questo modo l&#39;azienda può correggere gli errori di spedizione e analizzare il motivo delle restituzioni.
 
-- **Aumento della scalabilità**- Un OMS scala in base alle esigenze dell&#39;azienda, a differenza dei vecchi sistemi manuali. Il software OMS offre alle imprese la possibilità di scalare con il mercato.
+- **Maggiore scalabilità**- Un OMS è scalabile in base alle esigenze aziendali, a differenza dei vecchi sistemi manuali. Il software OMS offre alle aziende la possibilità di adattarsi al mercato.
 
-- **Possibilità multi-canale**- In un’era di vendite multicanale su siti web, mercati o partnership (Facebook e Instagram), gli ordini di tracciamento possono essere complessi perché vengono spediti in più posizioni utilizzando uno o più metodi di spedizione. Un OMS lo unisce e aumenta la customer experience.
+- **Più possibilità multicanale**- In un&#39;era di vendite multicanale su siti web, mercati o partnership (Facebook e Instagram), il tracciamento degli ordini può essere complesso perché vengono spediti in diverse sedi utilizzando uno o più metodi di spedizione. Un OMS riunisce i dati e migliora l&#39;esperienza del cliente.
 
 ## Funzioni principali
 
 - Si integra con il sistema o i sistemi aziendali
-- Elimina i processi manuali
+- Eliminazione dei processi manuali
 - Fornisce servizi a livello internazionale
-- Generare rapporti per la previsione e la comprensione dei dati dell&#39;ordine
+- Genera report per prevedere e comprendere i dati dell&#39;ordine
 
-Le imprese/i dettaglianti devono selezionare l&#39;OMS più adatta alle loro esigenze aziendali. Le imprese devono iniziare dalle seguenti considerazioni:
+Le aziende e i rivenditori devono scegliere l&#39;OMS più adatto alle loro esigenze aziendali. Le aziende devono iniziare con le seguenti considerazioni:
 
-- Comprendere gli ordini dei clienti, i prodotti, le scorte, la spedizione e l&#39;imballaggio
+- Comprendere gli ordini, i prodotti, l&#39;inventario, la spedizione e l&#39;imballaggio dei clienti
 
-- Decidere come e quando l&#39;OMS comunica con i sistemi aziendali durante il processo di ordine
+- Decidere come e quando OMS comunica con i sistemi aziendali durante il processo dell&#39;ordine
 
-- Determinare cosa deve fare l&#39;OMS quando è stato effettuato un ordine (ad esempio, con quali sistemi aziendali deve comunicare?) e quale dovrebbe essere il prossimo passo dopo tale comunicazione
+- Determinare cosa deve fare OMS quando un ordine è stato effettuato (ad esempio, con quali sistemi aziendali deve comunicare?) e quale dovrebbe essere il prossimo passo dopo tale comunicazione
 
-- Decidere quali attività nel magazzino devono essere automatizzate, ad esempio il calcolo dei costi di spedizione, l&#39;allocazione del metodo di spedizione, i documenti di imballaggio e l&#39;aggiornamento delle scorte
+- Decidere quali attività nel magazzino devono essere automatizzate, ad esempio il calcolo delle spese di spedizione, l&#39;allocazione del metodo di spedizione, i documenti di trasporto e l&#39;aggiornamento dell&#39;inventario
 
-- Comunicare i prodotti esauriti a fornitori, team di produzione e fornitori per il ripristino del prodotto
+- Comunicazione dei prodotti esauriti ai fornitori, al team di produzione e ai fornitori per rifornire il prodotto
 
-- Comunica a clienti e team interni l’avanzamento della spedizione
+- Notifica ai clienti e ai team interni l&#39;avanzamento della spedizione
 
-- Automatizza i rimborsi, aggiorna l&#39;inventario e invia informazioni a clienti e team interni dopo un ritorno
+- Automatizzare i rimborsi, aggiornare l&#39;inventario e inviare informazioni ai clienti e ai team interni dopo la restituzione
 
-- Determinare se l&#39;azienda può permettersi un OMS a tutti gli effetti (o parti di esso)
+- Determinare se l&#39;azienda può permettersi un OMS completo (o parti di esso)
 
-- Pianificare un progetto per l’attuazione dell’OMS e formare il team per utilizzarlo
+- Pianificare un progetto per implementare OMS e addestrare il team a utilizzarlo
 
-![Diagramma del sistema di gestione degli ordini](../../assets/playbooks/order-management-system.png)
+![Diagramma del sistema Order Management](../../assets/playbooks/order-management-system.png)
 
-Un OMS può aiutare a controllare i costi, aumentare il ROI, accelerare il processo di realizzazione e migliorare l&#39;esperienza del cliente e del team interno.
+Un OMS consente di controllare i costi, aumentare il ROI, accelerare il processo di evasione e migliorare l&#39;esperienza del cliente e del team interno.
 
-La gestione degli ordini nelle aziende B2B è complessa rispetto al business B2C. Le aziende B2B hanno solitamente un costo più elevato quando si tratta di mantenere i clienti perché hanno un ciclo di acquisto diverso rispetto alle aziende B2C. Il ciclo di acquisto B2B richiede più tempo perché prevede richieste di proposte (RFP) e ordini di acquisto (PO). Gli ordini B2B tendono ad essere riordini in cui gli ordini B2C tendono ad essere alti in volume e di dimensioni inferiori.
+La gestione degli ordini nelle aziende B2B è complessa rispetto a quella B2C. Le imprese B2B hanno in genere un costo più elevato quando si tratta di mantenere i clienti perché hanno un ciclo di acquisto diverso rispetto alle imprese B2C. Il ciclo di acquisto B2B richiede più tempo perché comporta richieste di proposte (RFP) e ordini di acquisto (PO). Gli ordini B2B tendono a essere riordini in cui gli ordini B2C tendono ad essere di volume elevato e di dimensioni minori.
 
 ## Processo per B2B
 
-- Il rappresentante commerciale inserisce i dettagli dell’ordine del cliente nell’OMS o il cliente può anche effettuare un ordine online, che invierà i dettagli dell’ordine all’OMS
+- Il rappresentante commerciale inserisce i dettagli dell&#39;ordine del cliente in OMS oppure il cliente può anche effettuare un ordine online, che invierà i dettagli dell&#39;ordine a OMS
 
-- Il cliente riceve la conferma dell&#39;ordine
+- Il cliente riceve la conferma dell’ordine
 
-- I prodotti vengono allocati all’ordine
+- I prodotti sono assegnati all&#39;ordine
 
-- I dettagli dell&#39;ordine vengono inviati al magazzino in cui sono imballati i prodotti
+- I dettagli dell&#39;ordine vengono inviati al magazzino in cui i prodotti sono imballati
 
-- L’inventario viene aggiornato
+- L’inventario è aggiornato
 
 - Lo stato dell’ordine viene inviato al cliente
 
-- L&#39;ordine viene spedito al cliente
+- Ordine spedito al cliente
 
-La gestione degli ordini può essere efficace per le imprese B2B e B2C in cui l&#39;OMS:
+La gestione degli ordini può essere efficace per le aziende B2B e B2C in cui OMS:
 
 - Consente l&#39;adozione omnicanale o multicanale
 
-- Di solito è basato su cloud, che consente alle organizzazioni di non utilizzare documenti e contribuisce a migliorare l&#39;efficienza complessiva
+- Di solito è basato su cloud, il che consente alle organizzazioni di passare senza supporto cartaceo e contribuisce a migliorare l’efficienza complessiva
 
 - Consente di centralizzare le informazioni da più canali
 
-- Riduce la complessità una volta implementata
+- Riduzione della complessità dopo l&#39;implementazione
 
-- Aiuta a tenere traccia degli ordini
+- Consente di tenere traccia degli ordini
 
-- Migliora l&#39;esperienza dei clienti
+- Migliora la customer experience
 
-- Consente di accelerare il processo di consegna
+- Velocizza il processo di consegna
 
-Quando si implementa un OMS, le aziende B2B devono comprendere che non saranno in grado di servire clienti come le aziende B2C. Un OMS deve essere implementato in modo diverso per le imprese B2B e B2C a seconda delle loro esigenze.
+Quando si implementa un OMS, le aziende B2B devono capire che non saranno in grado di servire clienti come le aziende B2C. Un OMS deve essere implementato in modo diverso per le aziende B2B e B2C a seconda delle loro esigenze.

@@ -1,18 +1,18 @@
 ---
 title: Scrivi in un file di registro personalizzato
 description: Scopri come impostare file di registro personalizzati.
-badge: label="Contributo di Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
-source-git-commit: d7f32690b25c61fa31a99e6d02f9f1025de2bb99
+badge: label="Contributed by Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
+exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
-
 # Scrivi in un file di registro personalizzato
 
-La `Magento\Framework\Logger` Il modulo contiene le seguenti classi di handler:
+Il `Magento\Framework\Logger` Il modulo contiene le seguenti classi di gestori:
 
 | Classe | File di registro |
 | ----- | -------- |
@@ -22,18 +22,18 @@ La `Magento\Framework\Logger` Il modulo contiene le seguenti classi di handler:
 | [Magento\Framework\Logger\Handler\Syslog][syslog] | - |
 | [Magento\Framework\Logger\Handler\System][system] | `/var/log/system.log` |
 
-Le puoi trovare nel `lib/internal/Magento/Framework/Logger/Handler` directory.
+È possibile trovarli nel `lib/internal/Magento/Framework/Logger/Handler` directory.
 
-Puoi utilizzare uno dei seguenti approcci per accedere a un file personalizzato:
+Per l&#39;accesso a un file personalizzato è possibile utilizzare uno dei seguenti approcci:
 
-- Imposta un file di registro personalizzato nella `di.xml`
-- Configurare un file personalizzato nella classe del gestore del logger personalizzato
+- Configurare un file di registro personalizzato in `di.xml`
+- Configurare un file personalizzato nella classe del gestore di logger personalizzato
 
-## Imposta un file di registro personalizzato nella `di.xml`
+## Configurare un file di registro personalizzato in `di.xml`
 
-Questo esempio mostra come utilizzare [tipi virtuali](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) al registro `debug` messaggi in un file di registro personalizzato anziché in un file standard `/var/log/debug.log`.
+Questo esempio mostra come utilizzare [tipi virtuali](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) per registrare `debug` messaggi in un file di registro personalizzato anziché standard `/var/log/debug.log`.
 
-1. In `di.xml` file del modulo, definisci un file di registro personalizzato come [tipo virtuale](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
+1. In `di.xml` del modulo, definire un file di registro personalizzato come [tipo virtuale](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -43,9 +43,9 @@ Questo esempio mostra come utilizzare [tipi virtuali](https://developer.adobe.co
    </virtualType>
    ```
 
-   La `name` valore `Magento\Payment\Model\Method\MyCustomDebug` deve essere univoco.
+   Il `name` valore di `Magento\Payment\Model\Method\MyCustomDebug` deve essere univoco.
 
-1. Definire il gestore in un altro [tipo virtuale](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) con un `name`:
+1. Definisci il gestore in un altro [tipo virtuale](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) con un `name`:
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -57,7 +57,7 @@ Questo esempio mostra come utilizzare [tipi virtuali](https://developer.adobe.co
    </virtualType>
    ```
 
-1. Inserisci `MyCustomLogger` [tipo virtuale](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in `Magento\Payment\Model\Method\Logger` oggetto:
+1. Inietti il `MyCustomLogger` [tipo virtuale](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) nel `Magento\Payment\Model\Method\Logger` oggetto:
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -67,7 +67,7 @@ Questo esempio mostra come utilizzare [tipi virtuali](https://developer.adobe.co
    </type>
    ```
 
-1. Classe virtuale `Magento\Payment\Model\Method\MyCustomDebug` viene inserito nel `debug` gestore `$logger` nella `Magento\Payment\Model\Method\Logger` classe.
+1. La classe virtuale `Magento\Payment\Model\Method\MyCustomDebug` viene iniettato nel `debug` handler del `$logger` proprietà in `Magento\Payment\Model\Method\Logger` classe.
 
    ```xml
    ...
@@ -76,13 +76,13 @@ Questo esempio mostra come utilizzare [tipi virtuali](https://developer.adobe.co
    </argument>
    ```
 
-I messaggi di eccezione sono registrati nel `/var/log/payment.log` file.
+I messaggi di eccezione vengono registrati in `/var/log/payment.log` file.
 
-## Configurare un file di registro personalizzato nella classe gestore logger
+## Configurare un file di registro personalizzato nella classe del gestore logger
 
-Questo esempio mostra come utilizzare una classe personalizzata del gestore logger per registrare `error` in un file di registro specifico.
+Questo esempio mostra come utilizzare una classe gestore logger personalizzata per registrare `error` messaggi in un file di registro specifico.
 
-1. Creare una classe che registri i dati. In questo esempio, la classe è definita in `app/code/Vendor/ModuleName/Logger/Handler/ErrorHandler.php`.
+1. Crea una classe che registra i dati. In questo esempio, la classe è definita in `app/code/Vendor/ModuleName/Logger/Handler/ErrorHandler.php`.
 
    ```php
    <?php
@@ -116,7 +116,7 @@ Questo esempio mostra come utilizzare una classe personalizzata del gestore logg
    }
    ```
 
-1. Definisci il gestore per questa classe come [tipo virtuale](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) nel modulo `di.xml` file.
+1. Definisci il gestore per questa classe come [tipo virtuale](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) nel file del modulo `di.xml` file.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -130,7 +130,7 @@ Questo esempio mostra come utilizzare una classe personalizzata del gestore logg
 
    `MyCustomLogger` è un identificatore univoco.
 
-1. In `type` Specifica il nome della classe in cui viene inserito il gestore di logger personalizzato. Utilizzare il nome del tipo virtuale del passaggio precedente come argomento per questo tipo.
+1. In `type` specifica il nome della classe in cui viene inserito il gestore di logger personalizzato. Utilizzare il nome del tipo virtuale del passaggio precedente come argomento per questo tipo.
 
    ```xml
    <type name="Vendor\ModuleName\Observer\MyObserver">
@@ -140,7 +140,7 @@ Questo esempio mostra come utilizzare una classe personalizzata del gestore logg
    </type>
    ```
 
-   Codice sorgente di `Vendor\ModuleName\Observer\MyObserver` Classe:
+   Codice sorgente di `Vendor\ModuleName\Observer\MyObserver` classe:
 
    ```php
    <?php
@@ -192,7 +192,7 @@ Questo esempio mostra come utilizzare una classe personalizzata del gestore logg
    }
    ```
 
-1. Classe `Vendor\ModuleName\Logger\Handler\ErrorHandler` viene inserito nel `error` gestore `$logger` nella `Vendor\ModuleName\Observer\MyObserver`.
+1. La classe `Vendor\ModuleName\Logger\Handler\ErrorHandler` viene iniettato nel `error` handler del `$logger` proprietà in `Vendor\ModuleName\Observer\MyObserver`.
 
    ```xml
    ...
@@ -202,7 +202,7 @@ Questo esempio mostra come utilizzare una classe personalizzata del gestore logg
    ...
    ```
 
-I messaggi di eccezione sono registrati nel `/var/log/my_custom_logger/error.log` file.
+I messaggi di eccezione vengono registrati in `/var/log/my_custom_logger/error.log` file.
 
 <!-- link definitions -->
 

@@ -1,43 +1,43 @@
 ---
-title: Best practice di configurazione per le varianti di prodotto
+title: Best practice per la configurazione delle varianti di prodotto
 description: Scopri come ottimizzare le prestazioni di Adobe Commerce limitando il numero di varianti di prodotto configurate.
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+exl-id: a19dd8b4-23b8-498f-be51-a0adfcd12a11
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
+# Best practice per la configurazione delle varianti di prodotto
 
-# Procedure consigliate per la configurazione delle varianti di prodotto
-
-Per ottenere le migliori prestazioni, configura un massimo di 50 varianti per prodotto.
+Per prestazioni ottimali, configura un massimo di 50 varianti per prodotto.
 
 ## Prodotti e versioni interessati
 
 [Tutte le versioni supportate](../../../release/versions.md) di:
 
-- Adobe Commerce su infrastruttura cloud
+- Adobe Commerce sull’infrastruttura cloud
 - Adobe Commerce on-premise
 
 ## Ridurre il numero di varianti di prodotto
 
 Per migliorare le prestazioni del sito, utilizza le seguenti strategie per ridurre il numero di varianti di prodotto:
 
-- Ristrutturare il catalogo distribuendo il numero di varianti tra prodotti diversi.
-- Rimuovi le opzioni di attributi configurabili non disponibili.
-- Gestisci le varianti tramite funzioni alternative quali opzioni personalizzate, categorie, prodotti correlati, raggruppati e raggruppati.
+- Ristruttura il catalogo distribuendo il numero di varianti tra i diversi prodotti.
+- Rimuovere le opzioni di attributo configurabili non disponibili.
+- Gestisci le varianti tramite funzionalità alternative come opzioni personalizzate, categorie, prodotti correlati, raggruppati e bundle.
 
-## Impatto potenziale sulle prestazioni
+## Potenziale impatto sulle prestazioni
 
 Il superamento del numero consigliato di varianti di prodotto può influire sulle prestazioni del sito nei seguenti modi:
 
-- Tempi di richiesta e rendering lunghi per i dettagli dei prodotti e le pagine delle categorie contenenti prodotti complessi.
+- Tempi lunghi di richiesta e rendering dei dettagli di prodotto e delle pagine di categorie contenenti prodotti complessi.
 - È stato aumentato il tempo di risposta per completare le operazioni di salvataggio nell’amministratore.
-- Maggiore tempo per eseguire il rendering del modulo di modifica del prodotto.
+- È stato aumentato il tempo per il rendering del modulo di modifica del prodotto.
 - Pagamento lento.
 
 ## Informazioni aggiuntive

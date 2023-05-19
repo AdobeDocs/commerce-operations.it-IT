@@ -1,73 +1,73 @@
 ---
-title: Strategie di distribuzione per i file di visualizzazione statici
-description: Informazioni sulle strategie di distribuzione per l’applicazione Commerce.
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+title: Strategie di distribuzione per i file di visualizzazione statica
+description: Scopri le strategie di distribuzione per l’applicazione Commerce.
+exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
+# Strategie di distribuzione per i file di visualizzazione statica
 
-# Strategie di distribuzione per i file di visualizzazione statici
-
-Quando si distribuiscono file di visualizzazione statica, è possibile scegliere una delle tre strategie disponibili. Ognuno di essi fornisce risultati di distribuzione ottimali per diversi casi d’uso:
+Quando si distribuiscono i file di visualizzazione statica, è possibile scegliere una delle tre strategie disponibili. Ciascuno di essi fornisce risultati di distribuzione ottimali per diversi casi d’uso:
 
 - [Standard](#standard-strategy): il processo di distribuzione regolare.
-- [Rapido](#quick-strategy) (_default_): riduce al minimo il tempo necessario per la distribuzione quando vengono distribuiti file per più di un’impostazione internazionale.
-- [Compatto](#compact-strategy): riduce al minimo lo spazio occupato dai file di visualizzazione pubblicati.
+- [Rapido](#quick-strategy) (_predefinito_): riduce al minimo il tempo necessario per la distribuzione quando vengono distribuiti file per più impostazioni locali.
+- [Compatto](#compact-strategy): riduce lo spazio occupato dai file di visualizzazione pubblicati.
 
 Le sezioni seguenti descrivono i dettagli e le caratteristiche di implementazione di ciascuna strategia.
 
 ## Strategia standard
 
-Quando si utilizza la strategia Standard, tutti i file di visualizzazione statici per tutti i pacchetti vengono distribuiti, ovvero elaborati da [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
+Quando si utilizza la strategia Standard, vengono distribuiti tutti i file di visualizzazione statica per tutti i pacchetti, ovvero elaborati da [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
 
-Per ulteriori informazioni, consulta [Distribuzione di file di visualizzazione statici](../cli/static-view-file-deployment.md).
+Per ulteriori informazioni, consulta [Distribuire file di visualizzazione statica](../cli/static-view-file-deployment.md).
 
 ## Strategia rapida
 
-La strategia rapida esegue le seguenti azioni:
+La strategia rapida esegue le azioni riportate di seguito.
 
-1. Per ogni tema, viene scelta una lingua arbitraria e vengono distribuiti tutti i file per questa impostazione internazionale, come nella strategia standard.
-1. Per tutte le altre impostazioni internazionali del tema:
+1. Per ogni tema viene scelta una lingua arbitraria e vengono distribuiti tutti i file per questa lingua, come nella strategia standard.
+1. Per tutte le altre lingue del tema:
 
-   1. I file che sostituiscono le impostazioni internazionali distribuite vengono definiti e distribuiti.
-   1. Tutti gli altri file sono considerati simili per tutte le impostazioni internazionali e vengono copiati dalle impostazioni internazionali distribuite.
+   1. I file che sostituiscono le impostazioni locali distribuite vengono definiti e distribuiti.
+   1. Tutti gli altri file sono considerati simili per tutte le impostazioni locali e vengono copiati dalle impostazioni locali distribuite.
 
 >[!INFO]
 >
->Da _simile_: file indipendenti dalle impostazioni internazionali, dal tema o dall’area. Questi file possono includere CSS, immagini e font.
+>Da _simile_, si tratta di file indipendenti dalla lingua, dal tema o dall’area. Questi file possono includere CSS, immagini e font.
 
-Questo approccio riduce il tempo di distribuzione necessario per più impostazioni internazionali, anche se molti file vengono duplicati.
+Questo approccio riduce al minimo il tempo di distribuzione necessario per più impostazioni locali, anche se molti file sono duplicati.
 
 ## Strategia compatta
 
-La strategia compatta evita la duplicazione dei file memorizzando file simili in `base` sottodirectory.
+La strategia compatta evita la duplicazione dei file archiviando file simili in `base` sottodirectory.
 
-Per il risultato più ottimizzato, vengono assegnati tre ambiti per possibili somiglianze: area, tema e impostazioni internazionali. La `base` le sottodirectory vengono create per tutte le combinazioni di questi ambiti.
+Per ottenere il risultato più ottimizzato, vengono assegnati tre ambiti per una possibile somiglianza: area, tema e impostazioni internazionali. Il `base` Le sottodirectory vengono create per tutte le combinazioni di questi ambiti.
 
-I file vengono distribuiti in queste sottodirectory in base ai pattern seguenti.
+I file vengono distribuiti in queste sottodirectory in base ai seguenti modelli.
 
 | Pattern | Descrizione |
 | ------- | ----------- |
-| `<area>/<theme>/<locale>` | File specifici per un&#39;area, un tema e le impostazioni internazionali particolari |
-| `<area>/<theme>/default` | File simili per tutte le impostazioni internazionali di un particolare tema di una particolare area. |
-| `<area>/Magento/base/<locale>` | File specifici per una particolare area e impostazioni internazionali, ma simili per tutti i temi. |
+| `<area>/<theme>/<locale>` | File specifici per un&#39;area, un tema e una lingua particolari |
+| `<area>/<theme>/default` | File simili per tutte le lingue di un particolare tema di un&#39;area particolare. |
+| `<area>/Magento/base/<locale>` | File specifici per un&#39;area e una lingua particolari, ma simili per tutti i temi. |
 | `<area>/Magento/base/default` | File specifici per una particolare area, ma simili per tutti i temi e le impostazioni internazionali. |
-| `base/Magento/base/<locale>` | File simili per tutte le aree e i temi, ma specifici per una particolare impostazione internazionale. |
+| `base/Magento/base/<locale>` | File simili per tutte le aree e i temi, ma specifici per una particolare lingua. |
 | `base/Magento/base/default` | Simile per tutte le aree, i temi e le impostazioni internazionali. |
 
 ### Mappatura dei file distribuiti
 
-L&#39;approccio alla distribuzione utilizzato nella strategia compatta significa che i file vengono ereditati da temi e impostazioni internazionali di base. Queste relazioni di ereditarietà vengono memorizzate nei file di mappa per ogni combinazione di area, tema e impostazioni internazionali. Ci sono file mappa separati per PHP e JS:
+L&#39;approccio alla distribuzione utilizzato nella strategia compatta implica che i file vengono ereditati dai temi di base e dalle impostazioni internazionali. Queste relazioni di ereditarietà vengono memorizzate nei file di mappa per ogni combinazione di area, tema e impostazioni internazionali. Esistono file di mappa separati per PHP e JS:
 
 - `map.php`
 - `requirejs-map.js`
 
-La `map.php` file utilizzato da [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) per creare gli URL corretti.
+Il `map.php` il file è utilizzato da [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) per generare gli URL corretti.
 
-La `requirejs-map.js` viene utilizzato dal `baseUrlResolver` plugin per RequireJS.
+Il `requirejs-map.js` viene utilizzato da `baseUrlResolver` plugin per RequireJS.
 
 Esempio di `map.php`:
 
@@ -100,6 +100,6 @@ require.config({
 
 ## Suggerimenti per gli sviluppatori di estensioni
 
-Per creare URL per file di visualizzazione statici, utilizza [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244).
+Per generare gli URL per i file di visualizzazione statica, utilizza [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244).
 
-Non utilizzare le concatenazioni URL per evitare problemi con file statici non trovati e non visualizzati durante il rendering della pagina.
+Non utilizzare le concatenazioni URL per evitare problemi con i file statici che non vengono trovati e visualizzati durante il rendering della pagina.

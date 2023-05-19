@@ -1,13 +1,13 @@
 ---
-title: Titolo dell'argomento Best practice
-description: Scopri come ...
+title: Titolo dell’argomento sulle best practice
+description: Scopri come...
 role: Developer
 feature: Best Practices
 hide: true
 hidefromtoc: true
 source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
@@ -36,22 +36,22 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 [Tutte le versioni supportate](../../../release/versions.md) di:
 
-- Adobe Commerce su infrastruttura cloud
-- Adobe Commerce nei locali
+- Adobe Commerce sull’infrastruttura cloud
+- Adobe Commerce locale
 
 <!-- Example 2: -->
 
 Adobe Commerce su infrastruttura cloud con Adobe Commerce versione 2.3.4 o precedente e MariaDB versione 10.0 o precedente.
 
-<!-- Business type: B2C and B2B -- specify only if needed/)-->
+&lt;!— Tipo di attività: B2C e B2B — specificare solo se necessario/)—>
 
-## Intestazione ...
+## Intestazione...
 
-Consente di suddividere il contenuto in sezioni per facilitarne la lettura. Il contenuto deve includere chiamate all’azione con esempi (buoni o negativi) e collegamenti alla documentazione, se applicabile
+Suddividi il contenuto in sezioni per facilitarne la lettura. Il contenuto deve includere inviti all’azione con esempi (buoni o cattivi) e collegamenti alla documentazione, se applicabile
 
-## Intestazione ...
+## Intestazione...
 
-Utilizza solo tutte le sezioni necessarie
+Usa solo il numero di sezioni necessario
 
 ## Informazioni aggiuntive
 

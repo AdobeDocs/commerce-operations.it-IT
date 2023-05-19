@@ -1,6 +1,6 @@
 ---
-title: Aree dell'infrastruttura cloud
-description: Esaminare i diagrammi che mostrano le aree di AWS e Azure disponibili per Adobe Commerce.
+title: Aree geografiche dell’infrastruttura cloud
+description: Esamina i diagrammi che mostrano le aree geografiche di AWS e Azure disponibili per Adobe Commerce.
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
 source-git-commit: d387ca9f3c7ce3b0c8ce254cc1c056e5b244ed34
 workflow-type: tm+mt
@@ -9,22 +9,22 @@ ht-degree: 0%
 
 ---
 
-# Aree cloud
+# Aree geografiche cloud
 
-Le sezioni seguenti forniscono dettagli sulle diverse aree AWS e Azure disponibili per Adobe Commerce sull’infrastruttura cloud.
+Le sezioni seguenti forniscono dettagli sulle diverse aree di AWS e Azure disponibili per Adobe Commerce sull’infrastruttura cloud.
 
-## Aree geografiche AWS
+## Aree geografiche di AWS
 
-![Diagramma che mostra le aree di AWS](../../../assets/playbooks/aws-regions.png)
-
->[!NOTE]
->
-> Solo nei locali della Cina e della Russia.
-
-## Zone di Azure
-
-![Diagramma che mostra le aree di Azure](../../../assets/playbooks/azure-regions.png)
+![Diagramma che mostra le aree geografiche di AWS](../../../assets/playbooks/aws-regions.png)
 
 >[!NOTE]
 >
-> Solo nei locali della Cina e della Russia. Tutti i commercianti che richiedono ambienti di integrazione devono utilizzare le regioni statunitensi.
+> Solo on-premise in Cina e in Russia.
+
+## Aree geografiche di Azure
+
+![Diagramma che mostra le aree geografiche di Azure](../../../assets/playbooks/azure-regions.png)
+
+>[!NOTE]
+>
+> Solo on-premise in Cina e in Russia. Tutti i commercianti che richiedono ambienti di integrazione devono utilizzare aree geografiche degli Stati Uniti.

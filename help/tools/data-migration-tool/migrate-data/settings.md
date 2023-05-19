@@ -1,34 +1,34 @@
 ---
-title: Impostazioni di migrazione dei dati
+title: Impostazioni di migrazione dati
 description: Scopri come avviare la migrazione delle impostazioni dal Magento 1 al Magento 2 con [!DNL Data Migration Tool].
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
 
 ---
 
+# Impostazioni di migrazione dati
 
-# Impostazioni di migrazione dei dati
+Il `Settings` la modalità migra archivi, siti Web e configurazione di sistema, ad esempio impostazioni di spedizione, pagamento e imposte. In base alla migrazione dei dati [ordine](overview.md#migration-order), è necessario eseguire prima la migrazione delle impostazioni.
 
-La `Settings` la modalità esegue la migrazione di negozi, siti web e configurazioni di sistema come la spedizione, il pagamento e le impostazioni fiscali. Secondo la migrazione dei nostri dati [ordine](overview.md#migration-order), devi prima eseguire la migrazione delle impostazioni .
+Prima di iniziare, effettua le seguenti operazioni di preparazione:
 
-Prima di iniziare, procedi come segue per preparare:
+1. Accedere al server applicazioni come [proprietario del file system](../../../installation/prerequisites/file-system/overview.md).
 
-1. Accedi al server delle applicazioni come [proprietario del file system](../../../installation/prerequisites/file-system/overview.md).
-
-1. Cambia in `/bin` o assicurati che sia aggiunto al tuo sistema `PATH`.
+1. Cambia in `/bin` o accertarsi che sia aggiunta al sistema `PATH`.
 
 >[!NOTE]
 >
->Assicurati che il Magento 2 sia distribuito in `default` modalità. La modalità Sviluppatore può causare errori di convalida nello strumento di migrazione.
+>Assicurati che il Magento 2 sia implementato in `default` modalità. La modalità Sviluppatore può causare errori di convalida nello strumento di migrazione.
 
 
-Consulta la sezione [primi passi](overview.md#first-steps) per ulteriori dettagli.
+Consulta la [primi passi](overview.md#first-steps) per ulteriori dettagli.
 
 ## Esegui il comando di migrazione delle impostazioni
 
-Per avviare la migrazione delle impostazioni, esegui:
+Per avviare la migrazione delle impostazioni, eseguire:
 
 ```bash
 bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
@@ -38,22 +38,22 @@ Dove:
 
 * `[-r|--reset]` è un argomento facoltativo che avvia la migrazione dall’inizio. È possibile utilizzare questo argomento per testare la migrazione
 
-* `[-a|--auto]` è un argomento facoltativo che impedisce l’arresto della migrazione in caso di errori di controllo dell’integrità.
+* `[-a|--auto]` è un argomento facoltativo che impedisce l&#39;arresto della migrazione quando si verificano errori di verifica dell&#39;integrità.
 
-* `{<path to config.xml>}` è il percorso assoluto del file system per lo strumento di migrazione [`config.xml`](../configure.md#configure-migration-in-vendor-folder) file; questo argomento è obbligatorio.
+* `{<path to config.xml>}` è il percorso assoluto del file system dello strumento di migrazione [`config.xml`](../configure.md#configure-migration-in-vendor-folder) file; questo argomento è obbligatorio.
 
 >[!NOTE]
 >
->Questo comando non esegue la migrazione di tutte le impostazioni di configurazione. Prima di procedere, verifica tutte le impostazioni nell’amministratore di Magento 2.
+>Con questo comando non vengono migrate tutte le impostazioni di configurazione. Verificare tutte le impostazioni nell&#39;amministratore di Magento 2 prima di procedere.
 
 
-La `Migration completed` viene visualizzato un messaggio dopo il corretto trasferimento delle impostazioni.
+Il `Migration completed` viene visualizzato un messaggio dopo il corretto trasferimento delle impostazioni.
 
-## Configurare le regole di migrazione personalizzate
+## Configurare regole di migrazione personalizzate
 
-È possibile ignorare, rinominare o modificare le configurazioni di sistema durante la migrazione delle impostazioni. A questo scopo, specifica le regole personalizzate nella `settings.xml` file.
+È possibile ignorare, rinominare o modificare le configurazioni di sistema durante la migrazione delle impostazioni. A questo scopo, specifica le regole personalizzate nel `settings.xml` file.
 
-1. Accedi al server applicazioni come, o passa a, il [proprietario del file system](../../../installation/prerequisites/file-system/overview.md).
+1. Accedere al server applicazioni come, o passare a, [proprietario del file system](../../../installation/prerequisites/file-system/overview.md).
 
 1. Passa alla seguente directory:
 
@@ -61,7 +61,7 @@ La `Migration completed` viene visualizzato un messaggio dopo il corretto trasfe
    cd <your application 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
-   Ad esempio, se l&#39;applicazione è installata in `/var/www/html`, `settings.xml.dist` il file si trova in una delle seguenti directory:
+   Ad esempio, se l’applicazione è installata in `/var/www/html`, il `settings.xml.dist` il file si trova in una delle seguenti directory:
 
    * `/var/www/html/vendor/magento/data-migration-tool/etc/opensource-to-commerce`
 
@@ -69,7 +69,7 @@ La `Migration completed` viene visualizzato un messaggio dopo il corretto trasfe
 
    * `/var/www/html/vendor/magento/data-migration-tool/etc/opensource-to-opensource`
 
-1. Per creare una `settings.xml` dal file di esempio fornito, esegui:
+1. Per creare un `settings.xml` dall’esempio fornito, esegui:
 
    ```bash
    cp settings.xml.dist settings.xml
@@ -77,10 +77,10 @@ La `Migration completed` viene visualizzato un messaggio dopo il corretto trasfe
 
 1. Apporta le modifiche in `settings.xml`.
 
-1. Per specificare il nuovo nome del file di impostazioni per la mappatura, modificare il `<settings_map_file>` in `path/to/config.xml` file.
+1. Per specificare il nuovo nome del file di impostazioni per la mappatura, modificare la `<settings_map_file>` tag in `path/to/config.xml` file.
 
-Per ulteriori dettagli, consulta la sezione [Modalità di migrazione impostazioni](../technical-specification.md#settings-migration-mode) della sezione dello strumento [specifica](../technical-specification.md).
+Per ulteriori dettagli, vedi [Modalità di migrazione delle impostazioni](../technical-specification.md#settings-migration-mode) sezione dello strumento [specifica](../technical-specification.md).
 
-## Passaggio di migrazione successivo
+## Passaggio successivo della migrazione
 
-* [Eseguire la migrazione dei dati](data.md)
+* [Migrare i dati](data.md)

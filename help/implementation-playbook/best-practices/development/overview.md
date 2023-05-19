@@ -1,31 +1,31 @@
 ---
-title: Fase di sviluppo dell'implementazione
+title: Fase di sviluppo dell’implementazione
 description: Scopri le best practice di implementazione per la fase di sviluppo dei progetti Adobe Commerce.
-source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
+exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
-
 
 # Fase di sviluppo
 
 La fase di sviluppo comprende le seguenti attività:
 
-- Configurazione ambiente locale e di staging
-- Pianificazione della stampa
-- Esecuzione del ticket
+- Configurazione dell’ambiente locale e di staging
+- Pianificazione Sprint
+- Esecuzione ticket
 - Risoluzione dei problemi
-- Revisione del codice, unione e test
-- Recensione Sprint
-- Cancellazione dal servizio clienti
+- Revisione, unione e test del codice
+- Revisione Sprint
+- Approvazione del cliente
 
-Le sezioni seguenti contengono informazioni sulle best practice per la fase di sviluppo.
+Le sezioni seguenti includono informazioni sulle best practice per la fase di sviluppo.
 
 ## Sviluppo di applicazioni
 
-### Revisione del codice, unione e test
+### Revisione, unione e test del codice
 
 <!--Assets not yet integrated
 - Guidelines and standards
@@ -54,17 +54,17 @@ Le sezioni seguenti contengono informazioni sulle best practice per la fase di s
 
 ## Piattaforma e servizi
 
-- [Usa in modo rapido per l&#39;ottimizzazione delle immagini](image-optimization.md)
+- [Usa Fastly Per L&#39;Ottimizzazione Dell&#39;Immagine](image-optimization.md)
 
-### Configurazione ambiente locale e di staging
+### Configurazione dell’ambiente locale e di staging
 
-- [Flusso di lavoro di sviluppo nell’infrastruttura Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
+- [Flusso di lavoro di sviluppo sull’infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
 
 ## Codice, unione, test
 
-- [Best practice per build e distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
+- [Best practice per le build e la distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
 - [Distribuzione di contenuti statici - Cloud](static-content-deployment.md)
 - [Ottimizzare i file CSS e JS](optimize-css-js-files.md)
 - [Ottimizzare le immagini per un sito più reattivo](image-optimization.md)
-- [Tecniche consigliate per la risoluzione dei problemi relativi all’infrastruttura cloud di Adobe Commerce](troubleshooting.md)
-- [Sapere quando e come modificare le tabelle del database](modifying-core-and-third-party-tables.md)
+- [Risoluzione dei problemi relativi alle best practice per Adobe Commerce sull’infrastruttura cloud](troubleshooting.md)
+- [Scopri quando e come modificare le tabelle del database](modifying-core-and-third-party-tables.md)

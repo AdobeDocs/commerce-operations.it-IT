@@ -1,6 +1,6 @@
 ---
-title: Manutenzione di un progetto Commerce
-description: Stabilire standard di alta qualità e istituire meccanismi per mantenere tali standard nel tempo.
+title: Manutenzione progetti Commerce
+description: Fissare norme di qualità elevate e istituire meccanismi per mantenerle nel tempo.
 exl-id: 8f394ae0-02c4-4efc-a313-40b8c48aecbb
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,79 +11,79 @@ ht-degree: 0%
 
 # Aggiornamenti, backup e manutenzione
 
-Mantenere una solida base di codice, funzioni e funzionalità e mantenere una posizione di sicurezza solida sono fondamentali per avere un negozio di e-commerce competitivo.
+Mantenere una solida base di codice, funzionalità e funzionalità e mantenere una forte posizione di sicurezza sono fondamentali per avere un negozio di e-commerce competitivo.
 
-Esistono diversi modi per aggiornare in modo efficiente un sito di e-commerce in base all&#39;infrastruttura disponibile, ma questo processo varia da azienda a azienda. A seconda della maturità tecnica dell&#39;azienda, questo può essere un esercizio molto impegnativo e costoso.
+Esistono diversi modi per aggiornare in modo efficiente un sito di e-commerce a seconda dell’infrastruttura disponibile, ma questo processo varia da azienda a azienda. A seconda della maturità tecnica dell&#39;impresa, questo può essere un esercizio molto impegnativo e costoso.
 
 >[!NOTE]
 >
->Esegui sempre il backup dei file prima di eseguire un aggiornamento.
+>Eseguire sempre il backup dei file prima di eseguire un aggiornamento.
 
-## Perché effettuare l’aggiornamento ha senso
+## Perché l&#39;aggiornamento ha senso
 
-Dal momento che il cambiamento e l&#39;adattamento ai nuovi comportamenti dei clienti è la norma, essere su una piattaforma più vecchia rende accomodante o imita nuove tecnologie e comportamenti più costosi e dispendiosi in termini di tempo, o semplicemente non è possibile. Inoltre, poiché sempre più sviluppatori si concentrano sulle nuove tecnologie, la programmazione e il costo dei progetti di ristrutturazione possono essere proibitivi.
+Poiché il cambiamento e l’adattamento ai nuovi comportamenti dei clienti sono la norma, stare su una piattaforma meno recente rende più costosi e dispendiosi in termini di tempo accogliere o imitare nuove tecnologie e nuovi comportamenti, o potrebbe semplicemente non essere possibile. Inoltre, poiché sempre più sviluppatori si concentrano sulle nuove tecnologie, la programmazione e i costi dei progetti di adeguamento possono risultare proibitivi.
 
-Effettuando l&#39;aggiornamento, sarai in grado di garantire il futuro della tua attività e di offrirti la possibilità di migliorare il servizio, cambiando le esigenze dei clienti.
+Con l&#39;upgrade, potrete garantire il futuro della vostra azienda e offrirvi la possibilità di soddisfare in modo migliore le esigenze dei clienti in continua evoluzione.
 
-## Pianificazione dell&#39;aggiornamento
+## Pianificazione dell’aggiornamento
 
-Ecco un rapido elenco di domande da porre durante la pianificazione dell’aggiornamento:
+Di seguito è riportato un breve elenco di domande da porre durante la pianificazione dell&#39;aggiornamento:
 
-- **Pulizia del sito**—Cosa posso tenere e cosa può cambiare? Quali nuove cose voglio implementare? Ad esempio, quali modifiche voglio apportare alla tassonomia e alla struttura del prodotto o al contenuto?
+- **Pulizia sito**—Cosa posso mantenere e cosa posso cambiare? Quali nuove cose voglio implementare? Ad esempio, quali modifiche si desidera apportare alla tassonomia e alla struttura del prodotto o al contenuto?
 
-- **Controllo di Analytics**- Quali sono i KPI correnti? Cosa mi dicono i miei dati su come migliorare il mio sito? Esistono nuovi KPI da implementare per il nuovo sito?
+- **Controllo di Analytics**—Quali sono i KPI correnti? Cosa mi dicono i dati sul modo in cui il mio sito potrebbe essere migliorato? Esistono nuovi KPI da implementare per il nuovo sito?
 
-- **Estensioni**—Ne ho ancora bisogno? Quali estensioni di terze parti soddisfano le mie esigenze?
+- **Estensioni**—Ho ancora bisogno di loro? Quali estensioni di terze parti soddisfano le mie esigenze?
 
-- **Integrazioni**—Con quali sistemi di terze parti, come ERP e contabilità, devo integrare? Dispongono di connettori specifici o sono necessarie integrazioni personalizzate?
+- **Integrazioni**—Quali sistemi di terze parti, come ERP e accounting, è necessario integrare con? Hanno connettori specifici o sono necessarie integrazioni personalizzate?
 
-- **Formazione**- Il team di aggiornamento ha le conoscenze e la formazione necessarie? Qual è il mio piano di formare gli utenti finali su come utilizzare il nuovo amministratore prima che diventi attivo?
+- **Formazione**— Il team di aggiornamento dispone delle conoscenze e della formazione adeguate? Qual è il mio piano per insegnare agli utenti finali come utilizzare il nuovo amministratore prima che venga pubblicato?
 
-- **Aggiorna team**- Chi è dedicato al progetto di aggiornamento (esperti interni ed esterni)? Hanno il sostegno necessario della leadership e di altre squadre interne?
+- **Aggiorna team**—Chi è dedicato al progetto di aggiornamento (esperti interni ed esterni)? Hanno il supporto necessario dalla leadership e da altri team interni?
 
-## Domande comuni sull&#39;aggiornamento
+## Domande comuni sull’aggiornamento
 
-D: Quanto tempo ci vuole per eseguire un aggiornamento tipico?
+D: Quanto tempo ci vuole per eseguire un tipico aggiornamento?
 
-R: Dipende dalla piattaforma e dall&#39;architettura. Ci sono molte variabili, e se si sta anche riprogettando, ci vuole più tempo. Al termine del processo di individuazione, il team di implementazione può fornirti un arco temporale più preciso per il progetto.
+R: Dipende dalla piattaforma e dall’architettura. Ci sono molte variabili, e se state facendo anche una riprogettazione, ci vuole più tempo. Una volta completato il processo di individuazione, il team di implementazione potrà fornire un arco temporale più preciso per il progetto.
 
 
-D: Quanto costa l&#39;aggiornamento?
+D: Quanto costa effettuare l&#39;aggiornamento?
 
-R: Anche in questo caso, dipende dalla situazione attuale e dalle esigenze del nuovo sito. La buona notizia è che in generale come partner e sviluppatori sono diventati più familiari e esperti con la tua piattaforma Commerce, i costi di aggiornamento e la lunghezza dei progetti sono scesi. Si consiglia di consultare il partner della soluzione per un preventivo.
+R: Anche in questo caso, dipende dalla situazione corrente e dai requisiti per il nuovo sito. La buona notizia è che in genere, man mano che i partner e gli sviluppatori acquisiscono maggiore familiarità e competenza con la piattaforma Commerce, i costi di aggiornamento e la lunghezza dei progetti si riducono. Per un preventivo, si consiglia di consultare il partner della soluzione.
 
-D: Sono disponibili le versioni Adobe Commerce 2 delle mie estensioni Adobe Commerce 1?
+D: Sono disponibili le versioni Adobe Commerce 2 delle estensioni Adobe Commerce 1?
 
-R: Vengono coperte praticamente tutte le esigenze aziendali critiche. Dai contenuti e dalle personalizzazioni, dalla spedizione e dalla realizzazione all’ottimizzazione del sito, abbiamo visto un aumento significativo del numero, e della diversità, delle estensioni nella Commerce Marketplace in quanto l’adozione commerciale di Adobe Commerce e la familiarità con i partner sono cresciute.
+R: Sono soddisfatte praticamente tutte le esigenze aziendali critiche. Dai contenuti e personalizzazioni alla spedizione e all’ottimizzazione del sito, abbiamo assistito a un notevole aumento del numero e della diversità di estensioni nella Commerce Marketplace, man mano che Adobe Commerce acquisiva familiarità con i partner e ne acquisiva sempre più familiarità.
 
-Alcuni esempi di aziende leader a livello globale nel settore della tecnologia che hanno creato estensioni includono:
+Di seguito sono riportati alcuni esempi delle principali aziende tecnologiche globali che hanno creato estensioni:
 
 - PayPal
-- venditore ambulante
+- dotmailer
 - TaxJar
 - Nosto
 - Adobe
-- Favoloso
-- Vertex
-- Ampio
-- Celebros
+- Fastly
+- Vertice
+- Amasty
+- Celebro
 - Logicbroker
 
-Inoltre, i controlli di qualità implementati per tutte le estensioni assicurano una qualità del prodotto costantemente elevata, quindi c&#39;è una probabilità molto elevata che l&#39;estensione o un&#39;alternativa di alta qualità all&#39;estensione sia già in Commerce Marketplace.
+Inoltre, i controlli di qualità implementati per tutte le estensioni garantiscono una qualità del prodotto costantemente elevata, pertanto vi è una probabilità molto elevata che l’estensione o un’alternativa di alta qualità all’estensione sia già in Commerce Marketplace.
 
-Molti commercianti hanno scoperto che le funzionalità native di Adobe Commerce hanno ridotto la loro necessità e dipendenza dalle estensioni, semplificando le operazioni di sviluppo e manutenzione e migliorando le prestazioni complessive. Se non lo hai già fatto, ti consigliamo di intraprendere una pianificazione completa degli aggiornamenti per scoprire questi tipi di opportunità.
+Molti commercianti hanno scoperto che le funzionalità native di Adobe Commerce hanno ridotto le loro esigenze e si affidano alle estensioni, semplificando le operazioni di sviluppo e manutenzione e migliorando le prestazioni complessive. Se non lo hai già fatto, ti consigliamo di eseguire una pianificazione approfondita dell’aggiornamento per individuare questi tipi di opportunità.
 
-D: Cosa succede se le mie estensioni e integrazioni non sono compatibili con la piattaforma?
+D: cosa succede se le mie estensioni e integrazioni non sono compatibili con la piattaforma?
 
-R: A seconda della flessibilità della piattaforma e della soluzione di hosting, diverse opzioni di personalizzazione possono essere un&#39;opzione per la maggior parte dei software e dei sistemi. Queste personalizzazioni possono essere sviluppate durante il processo di aggiornamento.
+R: A seconda della flessibilità della piattaforma e della soluzione di hosting, diverse opzioni di personalizzazione possono rappresentare un’opzione per la maggior parte dei software e dei sistemi. Queste personalizzazioni possono essere sviluppate durante il processo di aggiornamento.
 
 
-D: Come verrà influenzato il mio SEO?
+D: Che impatto ha sulle attività SEO?
 
-R: Con una corretta pianificazione, il SEO dovrebbe essere migliorato. Il nostro partner Corra consiglia:
+R: Con una corretta pianificazione, il tuo SEO dovrebbe essere migliorato. Il nostro partner Corra consiglia:
 
-- Creazione di un piano di reindirizzamento sintetico 301
-- Creazione di una strategia relativa alla tassonomia degli URL
-- Esecuzione di un controllo di mappa del sito XML
+- Creazione di un piano di reindirizzamento 301 sintetico
+- Creazione di una strategia sulla tassonomia degli URL
+- Controllo di una mappa del sito XML
 - Utilizzo della gestione dei tag (Google)
 - Discutere in dettaglio con il team di implementazione

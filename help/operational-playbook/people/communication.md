@@ -1,6 +1,6 @@
 ---
-title: Processo di comunicazione e strumenti
-description: Utilizza i processi e gli strumenti di comunicazione che soddisfano le esigenze del tuo team e-commerce.
+title: Processo e strumenti di comunicazione
+description: Utilizza i processi e gli strumenti di comunicazione che soddisfano le esigenze del tuo team di e-commerce.
 exl-id: e7eca8f1-aec0-4a45-8b57-2851b2df2de0
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,93 +11,93 @@ ht-degree: 0%
 
 # Comunicazione
 
-La comunicazione è fondamentale per il successo di un progetto e-commerce.
+La comunicazione è fondamentale per il successo di un progetto di e-commerce.
 
 ## Processi di comunicazione
 
-Creare un forte processo di comunicazione all’interno di qualsiasi team di e-commerce significa gestire tutte le risorse e i processi nel modo più efficiente possibile e investire nelle persone che contano. Parte della strategia che le aziende devono adottare riguarda la delega di compiti alle persone giuste, o software, nei loro team. In generale, ogni attività di e-commerce deve affrontare tre settori principali:
+Creare un forte processo di comunicazione all’interno di qualsiasi team di e-commerce significa gestire tutte le risorse e i processi nel modo più efficiente possibile e investire nelle persone che contano. Parte della strategia che le aziende devono adottare riguarda la delega delle attività alle persone giuste, o al software, nei loro team. In generale, ogni impresa di e-commerce deve affrontare tre aree principali:
 
 - Prodotto
-- Acquisizione da clienti
-- Conservazione dei clienti
+- Acquisizione cliente
+- Fidelizzazione clienti
 
 La maggior parte dei ruoli rientra in queste tre aree.
 
-Di seguito sono elencate alcune delle attività di e-commerce del processo che dovrebbero essere adottate per affrontare, gestire e migliorare operativamente questi tre settori in modo efficace.
+Di seguito sono elencate alcune delle imprese del commercio elettronico che dovrebbero adottare al fine di affrontare, gestire e migliorare efficacemente questi tre settori.
 
-- Creare soluzioni per la gestione dei flussi di lavoro e delle attività accessibili e comprensibili al tuo team
-- Progettazione di un processo di onboarding efficiente
-- Crea un flusso di lavoro che i dipendenti possono utilizzare tra la gestione dei prodotti, le operazioni di e-commerce, l’evasione degli ordini e la distribuzione
+- Creare soluzioni per la gestione dei flussi di lavoro e delle attività facilmente accessibili e comprensibili per il team
+- Progettare un processo di onboarding efficiente
+- Creare un flusso di lavoro che i dipendenti possono utilizzare per la gestione dei prodotti, le operazioni di e-commerce, l&#39;evasione degli ordini e la distribuzione
 
 ## Strumenti di comunicazione
 
-È risaputo che una scarsa comunicazione all&#39;interno di qualsiasi relazione di lavoro danneggia le organizzazioni e i team. Gli studi hanno dimostrato che le perdite finanziarie annue sono in milioni a causa di una comunicazione inadeguata tra i dipendenti. È probabile che il personale assuma ruoli e responsabilità diversi, il che li porta a essere trascinati in molte direzioni. Fortunatamente, c&#39;è una serie di tecnologie disponibili per aiutare le persone a rimanere aperte e la connessione attraverso linee di comunicazione chiare.
+È risaputo che una comunicazione inadeguata all’interno di qualsiasi rapporto di lavoro è dannosa per le organizzazioni e i team. Gli studi hanno dimostrato che le perdite finanziarie annue sono nell&#39;ordine del milione a causa di una comunicazione inadeguata tra i dipendenti. È probabile che il personale assuma ruoli e responsabilità diversi, il che li porta a essere trascinati in molte direzioni. Fortunatamente, c&#39;è una serie di tecnologie disponibili per aiutare le persone a rimanere aperte e a connettersi attraverso chiare linee di comunicazione.
 
-Esploreremo alcuni di questi strumenti, che sono stati trovati di grande impatto all&#39;interno di grandi e piccole organizzazioni.
+Esamineremo alcuni di questi strumenti, che si sono rivelati molto efficaci all’interno di organizzazioni di grandi e piccole dimensioni.
 
 ### JIRA
 
-Gli strumenti applicativi per la gestione dei progetti e il monitoraggio dei problemi sono disponibili da molto tempo. Tali strumenti semplificano il processo di comunicazione tra i dipendenti e assicurano la scalabilità del progetto o della piattaforma.
+Strumenti applicativi per la gestione dei progetti e il monitoraggio dei problemi sono disponibili da molto tempo. Tali strumenti semplificano il processo di comunicazione tra i dipendenti e garantiscono la scalabilità del progetto o della piattaforma.
 
-JIRA è nota per aver selezionato tutte le caselle in materia di scambio di informazioni e di gestione fondamentale dei progetti. L&#39;applicazione consente ai team di condividere più conoscenze e informazioni, consentendo una migliore comprensione degli obiettivi, degli obiettivi e delle attività aziendali all&#39;interno di qualsiasi team. Se utilizzato bene, può migliorare la collaborazione e l&#39;efficienza all&#39;interno di un&#39;organizzazione.
+È risaputo che JIRA contrassegna tutte le caselle per quanto riguarda lo scambio di informazioni e la gestione fondamentale dei progetti. L&#39;applicazione consente ai team di condividere più conoscenze e informazioni, consentendo una migliore comprensione degli obiettivi, degli obiettivi e delle attività aziendali all&#39;interno di qualsiasi team. Se utilizzato correttamente, può migliorare la collaborazione e l’efficienza all’interno di un’organizzazione.
 
-Il seguente elenco include i modi in cui JIRA può essere utilizzato in qualsiasi organizzazione:
+L’elenco seguente include i modi in cui JIRA può essere utilizzato all’interno di qualsiasi organizzazione:
 
-- Flussi di lavoro Agile gestibili
-- Campi personalizzati illimitati e piste da bagno
+- Flussi di lavoro agili gestibili
+- Campi personalizzati illimitati e corsie di nuoto
 - Bug e gestione dei test
-- Integrazione perfetta tra sorgente e problema
+- Integrazione perfetta di origini e problemi
 - Ricerca e filtro
-- Riferimenti utente e assegnatari multipli
+- Menzioni utente e più assegnatari
 - Pianificazione del progetto
-- Gestione delle attività
-- Gestione risorse
+- Gestione attività
+- Gestione delle risorse
 - Pianificazione delle risorse
-- Rapporti avanzati
+- Reporting avanzato
 - Schede JIRA personalizzabili
-- Schede Kanban e Scrum preconfigurate
+- Schede Kanban e Scrum pronte all’uso
 - Sicurezza e amministrazione avanzate
 - Integrazione con API REST flessibili
 - Hosting JIRA
-- Importare efficacemente dati da altri sistemi
+- Importare efficacemente i dati da altri sistemi
 
 #### Esempio di flusso di lavoro JIRA
 
-JIRA consente ai team di creare e scrivere attività dettagliate, generare rapporti, personalizzare flussi di lavoro e assegnare lavori tra individui relativamente veloci.
+JIRA consente ai team di creare e scrivere attività dettagliate, generare report, personalizzare i flussi di lavoro e assegnare processi tra singoli utenti in modo relativamente veloce.
 
-I manager di Commerce, i team di Marketing e Sviluppo, anche i soggetti interessati a livello C possono monitorare i progressi giornalieri, settimanali, mensili e annuali di qualsiasi attività o progetto JIRA. Lo strumento Atlassian Project Management è disponibile in tre versioni, tra cui JIRA Align, JIRA Core e il software JIRA.
+I responsabili del commercio, i team di marketing e sviluppo, anche le parti interessate di livello C possono monitorare l’avanzamento giornaliero, settimanale, mensile e annuale di qualsiasi attività o progetto JIRA. Lo strumento Atlassian Project Management è disponibile in tre versioni, tra cui JIRA Align, JIRA Core e JIRA Software.
 
-I vantaggi dell’utilizzo di JIRA in qualsiasi attività di e-commerce sono la capacità di più team di collaborare utilizzando una singola piattaforma. Molte volte, le aziende assistono a team di marketing, sviluppo, creativo ed e-commerce che lavorano tutti in silos diversi. Avere uno strumento di gestione dei progetti come JIRA consente a ogni team di rappresentare priorità diverse. I problemi possono rappresentare tutto ciò che i team desiderano monitorare e sono tutti contenuti all’interno di progetti diversi che sono costituiti da attività ricorrenti che i team devono completare. Ogni problema passa attraverso un processo chiamato flusso di lavoro.
+I vantaggi dell’utilizzo di JIRA in qualsiasi azienda di e-commerce sono la possibilità per più team di collaborare utilizzando un’unica piattaforma. Molte volte, le aziende assistono ai team di marketing, sviluppo, creatività e e-commerce che lavorano in silos diversi. L’utilizzo di uno strumento di gestione dei progetti come JIRA consente a ogni team di rappresentare diverse priorità. I problemi possono rappresentare tutto ciò che i team desiderano tracciare e sono tutti contenuti in progetti diversi che sono composti da attività ricorrenti che i team devono completare. Ogni problema è sottoposto a un processo denominato flusso di lavoro.
 
-Il flusso di lavoro corretto può creare o interrompere le linee di comunicazione. I team possono creare i propri flussi di lavoro per definire i passaggi che un problema segue verso il completamento. Jira consente alle aziende di personalizzare i flussi di lavoro in base alle esigenze e agli obblighi, e al tempo stesso di trovare un modo semplice per far funzionare i team nel modo più efficiente.
+Il flusso di lavoro corretto può creare o interrompere le linee di comunicazione. I team possono creare flussi di lavoro personalizzati per definire i passaggi da seguire per il completamento di un problema. Jira consente alle aziende di personalizzare i flussi di lavoro in base alle proprie esigenze e obblighi, adattandoli al modo in cui i team lavorano con la massima efficienza.
 
-Man mano che i problemi vengono monitorati in un flusso di lavoro, tutti i membri del team, del reparto o persino dell&#39;azienda ottengono visibilità sul loro stato. Un flusso di lavoro assicura inoltre che un problema passi tutti i passaggi prima che sia completato, ovvero in che modo i team ricordano tutte queste priorità.
+Quando i problemi vengono tracciati in un flusso di lavoro, tutti i membri del team, del reparto o persino dell’azienda acquisiscono visibilità sul loro stato. Un flusso di lavoro assicura inoltre che un problema superi tutti i passaggi prima di essere completato, in questo modo i team ricordano tutte queste priorità.
 
 ![Diagramma di esempio del flusso di lavoro JIRA](../../assets/playbooks/jira-workflow-example.png)
 
 ### Confluenza
 
-Creare una banca delle informazioni e della conoscenza ricca può essere noioso. Ci vuole un team pronto a unirsi e a prestare attenzione alla creazione di processi su come viene gestita la documentazione. Se eseguito correttamente, tuttavia, la creazione di una knowledge base proattiva può ridurre notevolmente il numero di problemi nella coda di supporto e risparmiare ore di lavoro al team.
+La creazione di una ricca banca di informazioni e conoscenze può essere noiosa. È necessario che un team disponibile si riunisca e presti attenzione alla creazione di processi relativi alla gestione della documentazione. Se eseguita correttamente, tuttavia, la creazione di una knowledge base proattiva può ridurre drasticamente il numero di problemi nella coda di supporto e risparmiare al team ore di lavoro.
 
-Sia che tu stia lanciando o gestendo un sito web o documentando processi di e-commerce fondamentali, Confluence è uno spazio interattivo in cui singoli utenti di tutta l&#39;azienda possono creare, pianificare e fornire feedback su tutti i tipi di documentazione.
+Che tu stia lanciando o gestendo un sito web o documentando processi di e-commerce fondamentali, Confluence è uno spazio interattivo in cui singoli utenti provenienti da tutta l’azienda possono creare, pianificare e fornire feedback su tutti i tipi di documentazione.
 
-I team e-commerce possono creare modelli e liste di controllo standardizzati per la preparazione della distribuzione, il lancio di prodotti, articoli dimostrativi, script di test e la risoluzione dei problemi. Inoltre, l&#39;applicazione Confluence è un prodotto Atlassian e si integra bene con JIRA. Le due applicazioni possono lavorare in armonia. Il contenuto creato è facilmente accessibile ai team di tutta l’organizzazione e consente a tutti di collaborare su argomenti in un unico spazio.
+I team di e-commerce possono creare modelli e liste di controllo standardizzati per i preparativi di distribuzione, il lancio di prodotti, articoli pratici, script di test e la risoluzione dei problemi. Inoltre, l&#39;applicazione Confluence è un prodotto Atlassian e si integra bene con JIRA. Le due applicazioni possono funzionare in modo armonioso. Il contenuto creato è facilmente accessibile ai team di tutta l’organizzazione e consente a tutti di collaborare su argomenti in un unico spazio.
 
-### Supporti
+### Stand-up
 
-Nel mondo delle start-up sono nati stand-up. Le aziende utilizzano sempre di più le riunioni per rivedere i propri processi. La ricerca ha rilevato che in generale i dipendenti preferiscono meno riunioni, ma per avere una linea chiara di comunicazione e apertura, riunire le persone occasionalmente è importante per il successo di qualsiasi attività commerciale e più specificamente di e-commerce.
+Nel mondo delle start-up, sono nate delle staffe. Le aziende ricorrono sempre più spesso alle riunioni per rivedere i propri processi. Le ricerche hanno rilevato che in generale i dipendenti preferiscono meno riunioni, ma avere una linea chiara di comunicazione e apertura, riunire le persone di tanto in tanto è importante per il successo di qualsiasi azienda e più specificamente operazioni di e-commerce.
 
-Pertanto, come alternativa più casuale a riunioni lunghe e rigide, le aziende di tutte le dimensioni si sono mosse verso uno stile di riunione più rilassato. La cultura degli stand-up all&#39;interno di qualsiasi team di e-commerce consente discussioni brevi e rapide, in cui a tutti i membri viene data la possibilità di parlare, gli obiettivi sono impostati e i forti legami di team mantenuti.
+Per questo, come alternativa più informale alle riunioni lunghe e rigide, le aziende di tutte le dimensioni hanno scelto di adottare uno stile di riunione più rilassato. La cultura dei stand-up all&#39;interno di qualsiasi team di e-commerce consente discussioni brevi e rapide, in cui tutti i membri sono dati la possibilità di parlare, gli obiettivi sono stabiliti e forti legami di squadra mantenuti.
 
-L’utilizzo di stand-up all’interno di qualsiasi team di e-commerce è particolarmente utile per la pianificazione delle implementazioni, la gestione dei risultati finali e i problemi di debug.
+L’utilizzo di stand-up all’interno di qualsiasi team di e-commerce è particolarmente utile per la pianificazione delle distribuzioni, la gestione dei deliverable e i problemi di debug.
 
-## Comunicazione del team
+## Comunicazione team
 
-Le capacità di comunicazione del team sono insegnate in molti contesti diversi, ma la cultura aziendale dà il tono.
+Le capacità comunicative del team vengono insegnate in molti contesti diversi, ma la cultura aziendale imposta il tono.
 
-Ecco alcuni suggerimenti su come migliorare la comunicazione:
+Di seguito sono riportati alcuni suggerimenti su come migliorare la comunicazione:
 
-- Mantieni i tuoi messaggi chiari, usa un linguaggio semplice e stai lontano dal gergo. Anche se è probabile che i tuoi team conoscano la terminologia di e-commerce, il gergo può comunque impedire la comprensione.
-- Incontra il tuo team dove si sentono a loro agio, sia che si tratti di messaggi scritti o video tradizionali inviati via e-mail.
-- Utilizza JIRA e Confluenza per la gestione dei progetti, la pianificazione e la documentazione
-- Mantieni i stand-up brevi e di impatto per tutta la squadra
+- Mantieni i messaggi chiari, utilizza un linguaggio semplice e stai lontano dal gergo. Anche se è possibile che i team conoscano la terminologia di e-commerce, il gergo può ancora impedire la comprensione.
+- Incontra il tuo team dove si sente a suo agio, tramite messaggi scritti tradizionali o video inviati tramite e-mail.
+- Utilizzare JIRA e Confluence per la gestione del progetto, la pianificazione e la documentazione
+- Mantenere i stand-up brevi e di grande impatto per l&#39;intero team

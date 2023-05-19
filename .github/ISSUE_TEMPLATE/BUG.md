@@ -1,12 +1,12 @@
 ---
 name: Bug report
 about: Create an issue about a bug on the Experience League website
-title: Segnalazione di bug
+title: Segnalazione bug
 labels: bug
 assignees: dshevtsov
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '17'
 ht-degree: 0%
 
 ---

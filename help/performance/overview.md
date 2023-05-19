@@ -1,19 +1,19 @@
 ---
 title: Panoramica
-description: Segui queste best practice per ottimizzare le prestazioni della distribuzione Adobe Commerce o Magenti Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+description: Segui queste best practice per ottimizzare le prestazioni dell’implementazione di Adobe Commerce o di Magento Open Source.
+exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
 
 ---
 
+# Best practice per le prestazioni
 
-# Best practice sulle prestazioni
+Il _Best practice per le prestazioni_ La guida fornisce consigli e istruzioni per ottimizzare le prestazioni della distribuzione di produzione. Gli utenti tecnici responsabili della manutenzione dei negozi in modalità di produzione devono utilizzare le best practice descritte in questa guida per garantire che i loro negozi funzionino sempre al massimo dell’efficienza.
 
-La _Best practice sulle prestazioni_ Questa guida fornisce raccomandazioni e istruzioni per ottimizzare le prestazioni della distribuzione di produzione. Gli utenti tecnici che sono responsabili della manutenzione dei negozi in modalità di produzione devono utilizzare le best practice descritte in questa guida per garantire che i loro negozi funzionino sempre con la massima efficienza.
+## Presupposti
 
-## Ipotesi
-
-* Hai installato Adobe Commerce o Magento Open Source utilizzando [Compositore](../installation/composer.md).
-* Puoi utilizzare questa installazione per eseguire un&#39;istanza di produzione live di Adobe Commerce o Magenti Open Source.
+* Hai installato Adobe Commerce o Magenti Open Source utilizzando [Compositore](../installation/composer.md).
+* Utilizza questa installazione per eseguire un’istanza di produzione live di Adobe Commerce o Magenti Open Source.

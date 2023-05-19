@@ -1,13 +1,13 @@
 ---
 title: Modalità di applicazione
 description: L’applicazione Commerce può funzionare in diverse modalità in base alle tue esigenze. Visualizzare un elenco dettagliato delle modalità di applicazione disponibili.
-source-git-commit: e7c325aef90d4135218b984cc57df2c8d1d921d2
+exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
 
 ---
-
 
 # Modalità di applicazione
 

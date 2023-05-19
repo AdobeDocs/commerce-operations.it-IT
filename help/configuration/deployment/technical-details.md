@@ -1,50 +1,50 @@
 ---
 title: Dettagli tecnici
-description: Informazioni tecniche sulla distribuzione della pipeline, sui tipi di configurazioni e sui flussi di lavoro consigliati.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+description: Scopri i dettagli tecnici della distribuzione della pipeline, i tipi di configurazioni e i flussi di lavoro consigliati.
+exl-id: a396d241-f895-4414-92af-3abf3511e62a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
 
 ---
 
-
 # Dettagli tecnici
 
-Questo argomento illustra i dettagli dell’implementazione tecnica relativi all’implementazione della pipeline in Commerce 2.2 e versioni successive. I miglioramenti possono essere suddivisi nei seguenti settori:
+Questo argomento illustra i dettagli tecnici dell’implementazione della pipeline in Commerce 2.2 e versioni successive. I miglioramenti possono essere suddivisi nelle seguenti aree:
 
 - [Gestione della configurazione](#configuration-management)
-- [Modifiche nell&#39;amministratore](#changes-in-the-admin)
-- [Installa e rimuovi cron](#install-and-remove-cron)
+- [Modifiche in Admin](#changes-in-the-admin)
+- [Installare e rimuovere cron](#install-and-remove-cron)
 
-Questo argomento discute anche della [flusso di lavoro consigliato](#recommended-workflow) per l’implementazione della pipeline e fornisce alcuni esempi per aiutarti a comprendere come funziona.
+In questo argomento vengono inoltre illustrate le [workflow consigliato](#recommended-workflow) per la distribuzione della pipeline e fornisce alcuni esempi per comprendere come funziona.
 
-Prima di iniziare, consulta la sezione [Prerequisiti per i sistemi di sviluppo, generazione e produzione](../deployment/prerequisites.md).
+Prima di iniziare, controlla [Prerequisiti per i sistemi di sviluppo, generazione e produzione](../deployment/prerequisites.md).
 
 ## Gestione della configurazione
 
-Per sincronizzare e mantenere la configurazione dei sistemi di sviluppo e produzione, utilizza il seguente schema di sostituzione.
+Per consentire la sincronizzazione e la gestione della configurazione dei sistemi di sviluppo e produzione, utilizzare il seguente schema di sostituzione.
 
 ![Determinazione dei valori delle variabili di configurazione](../../assets/configuration/override-flow-diagram.png)
 
-Come illustrato nel diagramma, i valori di configurazione vengono utilizzati nell’ordine seguente:
+Come illustrato nel diagramma, i valori di configurazione vengono utilizzati nell&#39;ordine seguente:
 
-1. Le variabili di ambiente, se presenti, sostituiscono tutti gli altri valori.
-1. Dai file di configurazione condivisi `env.php` e `config.php`. Valori in `env.php` sostituisci i valori in `config.php`.
+1. Le variabili di ambiente, se esistenti, sostituiscono tutti gli altri valori.
+1. Dai file di configurazione condivisi `env.php` e `config.php`. Valori in `env.php` sostituire i valori in `config.php`.
 1. Da valori memorizzati nel database.
-1. Se non esiste alcun valore in una di queste origini, viene utilizzato il valore predefinito o NULL.
+1. Se in una di queste origini non esiste alcun valore, viene utilizzato il valore predefinito o NULL.
 
 ### Gestire la configurazione condivisa
 
-La configurazione condivisa è memorizzata in `app/etc/config.php`, che dovrebbe essere nel controllo della sorgente.
+La configurazione condivisa è archiviata in `app/etc/config.php`, che deve trovarsi nel controllo del codice sorgente.
 
-Imposta la configurazione condivisa nell’amministratore nello sviluppo (o nell’infrastruttura cloud di Adobe Commerce) _integrazione_) e scrivi la configurazione in `config.php` utilizzando [`magento app:config:dump` command](../cli/export-configuration.md).
+Imposta la configurazione condivisa nell’amministratore nel tuo sviluppo (o in Adobe Commerce nell’infrastruttura cloud) _integrazione_) e scrivere la configurazione in `config.php` utilizzando [`magento app:config:dump` comando](../cli/export-configuration.md).
 
 ### Gestire la configurazione specifica del sistema
 
-La configurazione specifica del sistema è memorizzata in `app/etc/env.php`che _not_ essere nel controllo della sorgente.
+La configurazione specifica del sistema è memorizzata in `app/etc/env.php`, che dovrebbe _non_ essere nel controllo del codice sorgente.
 
-Imposta la configurazione specifica del sistema nell’amministratore del sistema di sviluppo (o Adobe Commerce sull’integrazione dell’infrastruttura cloud) e scrivi la configurazione in `env.php` utilizzando [`magento app:config:dump` command](../cli/export-configuration.md).
+Imposta la configurazione specifica del sistema nell’Admin nel tuo sistema di sviluppo (o Adobe Commerce sull’integrazione dell’infrastruttura cloud) e scrivi la configurazione in `env.php` utilizzando [`magento app:config:dump` comando](../cli/export-configuration.md).
 
 Questo comando scrive anche le impostazioni sensibili in `env.php`.
 
@@ -55,65 +55,65 @@ La configurazione sensibile viene memorizzata anche in `app/etc/env.php`.
 Puoi gestire la configurazione sensibile in uno dei seguenti modi:
 
 - Variabili di ambiente
-- Salva la configurazione sensibile in `env.php` nel sistema di produzione utilizzando [`magento config:set:sensitive` command](../cli/set-configuration-values.md)
+- Salva la configurazione sensibile in `env.php` sul sistema di produzione utilizzando [`magento config:set:sensitive` comando](../cli/set-configuration-values.md)
 
-### Impostazioni di configurazione bloccate nell&#39;amministratore
+### Impostazioni di configurazione bloccate in Amministrazione
 
-Qualsiasi impostazione di configurazione in `config.php` o `env.php` sono bloccati nell&#39;amministratore; in altre parole, tali impostazioni non possono essere modificate nell’amministratore.
-Utilizza la [`magento config:set` o `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) per modificare le impostazioni nella `config.php` o `env.php` file.
+Qualsiasi impostazione di configurazione in `config.php` o `env.php` sono bloccati nell’amministratore, ovvero non possono essere modificati nell’amministratore.
+Utilizza il [`magento config:set` o `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) per modificare le impostazioni in `config.php` o `env.php` file.
 
-## Amministratore Commerce
+## L’amministratore di Commerce
 
-L’amministratore mostra il seguente comportamento in modalità di produzione:
+Durante la modalità di produzione, l’amministratore mostra il seguente comportamento:
 
-- Non puoi abilitare o disabilitare i tipi di cache nell’amministratore
-- Le impostazioni per gli sviluppatori non sono disponibili (**Negozi** > Impostazioni > **Configurazione** > Avanzate > **Sviluppatore**), compresi:
+- Non è possibile abilitare o disabilitare i tipi di cache nell’amministratore
+- Le impostazioni per gli sviluppatori non sono disponibili (**Negozi** > Impostazioni > **Configurazione** > Avanzate > **Sviluppatore**), tra cui:
 
    - Minimizzare CSS, JavaScript e HTML
    - Unisci CSS e JavaScript
    - Compilazione LESS lato server o lato client
    - Traduzioni in linea
-   - Come descritto in precedenza, qualsiasi impostazione di configurazione in `config.php` o `env.php` è bloccato e non può essere modificato nell&#39;amministratore.
-   - Puoi modificare le impostazioni internazionali Amministratore solo per le lingue utilizzate dai temi distribuiti
+   - Come discusso in precedenza, qualsiasi impostazione di configurazione in `config.php` o `env.php` è bloccato e non può essere modificato in Admin.
+   - È possibile modificare le impostazioni locali dell&#39;amministratore solo nelle lingue utilizzate dai temi distribuiti
 
-      Nella figura seguente viene illustrato un esempio di **Impostazione account** > **Impostazioni internazionali interfaccia** nell’elenco Admin che mostra solo due impostazioni internazionali distribuite:
+      Nella figura seguente viene illustrato un esempio di **Impostazione account** > **Impostazioni internazionali interfaccia** nell’elenco Admin (Amministratore) vengono visualizzate solo due impostazioni internazionali distribuite:
 
-      ![Puoi modificare le impostazioni internazionali amministratore solo per le impostazioni internazionali distribuite](../../assets/configuration/split-deploy-admin-locale.png)
+      ![È possibile modificare le impostazioni locali dell&#39;amministratore solo in impostazioni locali distribuite](../../assets/configuration/split-deploy-admin-locale.png)
 
-- Non è possibile modificare le configurazioni internazionali per alcun ambito utilizzando l&#39;Admin.
+- Non è possibile modificare le configurazioni locali per alcun ambito utilizzando Admin.
 
-   È consigliabile apportare queste modifiche prima di passare alla modalità Produzione.
+   È consigliabile apportare queste modifiche prima di passare alla modalità di produzione.
 
-   È comunque possibile configurare le impostazioni internazionali utilizzando le variabili di ambiente o `config:set` Comando CLI con il percorso `general/locale/code`.
+   È comunque possibile configurare le impostazioni locali utilizzando le variabili di ambiente o `config:set` Comando CLI con il percorso `general/locale/code`.
 
-## Installa e rimuovi cron
+## Installare e rimuovere cron
 
-Nella versione 2.2 per la prima volta, ti aiutiamo a configurare il tuo lavoro cron fornendo il [`magento cron:install` command](../cli/configure-cron-jobs.md). Questo comando imposta una crontab come utente che esegue il comando.
+Nella versione 2.2, per la prima volta, ti aiutiamo a impostare il tuo lavoro cron fornendo il [`magento cron:install` comando](../cli/configure-cron-jobs.md). Questo comando imposta una scheda cronologica come utente che esegue il comando.
 
-Inoltre, è possibile rimuovere la scheda cronologica utilizzando il `magento cron:remove` comando.
+È inoltre possibile rimuovere la scheda cronologica utilizzando `magento cron:remove` comando.
 
 ## Flusso di lavoro di distribuzione della pipeline consigliato
 
-Il diagramma seguente illustra come consigliamo di utilizzare la distribuzione della pipeline per gestire la configurazione.
+Il diagramma seguente mostra come si consiglia di utilizzare la distribuzione della pipeline per gestire la configurazione.
 
 ![Flusso di lavoro di distribuzione della pipeline consigliato](../../assets/configuration/split-deploy-workflow.png)
 
 ### Sistema di sviluppo
 
-Nel tuo sistema di sviluppo, apporti modifiche alla configurazione nell’amministratore e genera la configurazione condivisa, `app/etc/config.php` e la configurazione specifica del sistema, `app/etc/env.php`. Controlla il codice Commerce e la configurazione condivisa nel controllo del codice sorgente e invialo al server di compilazione.
+Nel sistema di sviluppo, apporti modifiche alla configurazione nell’Amministratore e generi la configurazione condivisa, `app/etc/config.php` e la configurazione specifica del sistema, `app/etc/env.php`. Controlla il codice Commerce e la configurazione condivisa nel controllo del codice sorgente e inviala al server di build.
 
-È inoltre necessario installare estensioni e personalizzare il codice Commerce nel sistema di sviluppo.
+Devi anche installare le estensioni e personalizzare il codice Commerce sul sistema di sviluppo.
 
-Nel sistema di sviluppo:
+Sul sistema di sviluppo:
 
 1. Imposta la configurazione in Admin.
 
-1. Utilizza la `magento app:config:dump` per scrivere la configurazione nel file system.
+1. Utilizza il `magento app:config:dump` comando per scrivere la configurazione nel file system.
 
-   - `app/etc/config.php` è la configurazione condivisa, che contiene tutte le impostazioni _eccetto_ impostazioni sensibili e specifiche del sistema. Questo file deve essere nel controllo del codice sorgente.
-   - `app/etc/env.php` è la configurazione specifica del sistema, che contiene impostazioni univoche per un particolare sistema (ad esempio, nomi host e numeri di porta). Questo file deve _not_ essere nel controllo della sorgente.
+   - `app/etc/config.php` è la configurazione condivisa, che contiene tutte le impostazioni _eccetto_ impostazioni sensibili e specifiche del sistema. Il file deve trovarsi nel controllo del codice sorgente.
+   - `app/etc/env.php` è la configurazione specifica del sistema, che contiene impostazioni univoche per un particolare sistema (ad esempio, nomi host e numeri di porta). Questo file dovrebbe _non_ essere nel controllo del codice sorgente.
 
-1. Aggiungi il codice modificato e la configurazione condivisa al controllo del codice sorgente.
+1. Aggiungere il codice modificato e la configurazione condivisa al controllo del codice sorgente.
 
 1. Per rimuovere il codice php generato e i file di risorse statiche durante lo sviluppo, esegui i seguenti comandi:
 
@@ -123,64 +123,64 @@ Nel sistema di sviluppo:
    rm -r generated/*/*
    ```
 
-Dopo aver eseguito i comandi per cancellare le risorse, Commerce genera file di lavoro.
+Dopo aver eseguito i comandi per cancellare le risorse, Commerce genera i file di lavoro.
 
 >[!WARNING]
 >
->Attento all&#39;approccio di cui sopra. Eliminazione di `.htacces`nel file s `generated` o `pub` La cartella può causare problemi.
+>Fai attenzione con l’approccio di cui sopra. Eliminazione di `.htacces`s file in `generated` o `pub` potrebbero causare problemi.
 
-### Sistema di compilazione
+### Genera sistema
 
-Il sistema di compilazione compila il codice e genera file di visualizzazione statici per i temi registrati in Commerce. non necessita di una connessione al database Commerce; ha bisogno solo della base di codice Commerce.
+Il sistema di build compila il codice e genera file di visualizzazione statica per i temi registrati in Commerce. Non è necessaria una connessione al database Commerce, ma solo la base di codice Commerce.
 
-Nel sistema di build:
+Sul sistema di build:
 
-1. Estrai il file di configurazione condiviso dal controllo del codice sorgente.
-1. Utilizza la `magento setup:di:compile` per compilare il codice.
-1. Utilizza la `magento setup:static-content:deploy -f` per aggiornare i file di visualizzazione dei file statici.
-1. Controlla gli aggiornamenti nel controllo del codice sorgente.
+1. Estrarre il file di configurazione condiviso dal controllo del codice sorgente.
+1. Utilizza il `magento setup:di:compile` per compilare il codice.
+1. Utilizza il `magento setup:static-content:deploy -f` comando per aggiornare i file statici di visualizzazione file.
+1. Controllare gli aggiornamenti nel controllo del codice sorgente.
 
 >[!INFO]
 >
->Vedi [Strategie di distribuzione per i file di visualizzazione statici](../cli/static-view-file-strategy.md).
+>Consulta [Strategie di distribuzione per i file di visualizzazione statica](../cli/static-view-file-strategy.md).
 
 ### Sistema di produzione
 
-Nel sistema di produzione, ovvero nell’archivio live, puoi estrarre le risorse generate e gli aggiornamenti di codice dal controllo del codice sorgente e impostare le impostazioni di configurazione specifiche e sensibili del sistema utilizzando la riga di comando o le variabili di ambiente.
+Nel sistema di produzione (ovvero nel tuo archivio live), puoi estrarre le risorse generate e gli aggiornamenti del codice dal controllo del codice sorgente e impostare impostazioni di configurazione specifiche del sistema e sensibili utilizzando la riga di comando o le variabili di ambiente.
 
-Nel sistema di produzione:
+Sul sistema di produzione:
 
 1. Avvia la modalità di manutenzione.
-1. Recupera il codice e gli aggiornamenti di configurazione dal controllo del codice sorgente.
-1. Se utilizzi Adobe Commerce, interrompi i processi di lavoro in coda.
-1. Utilizza la `magento app:config:import` per importare le modifiche di configurazione nel sistema di produzione.
-1. Se hai installato componenti che hanno modificato lo schema del database, esegui `magento setup:upgrade --keep-generated` per aggiornare lo schema e i dati del database, mantenendo i file statici generati.
-1. Per impostare le impostazioni specifiche del sistema, utilizza `magento config:set` variabili di ambiente o di comando.
-1. Per impostare le impostazioni sensibili, utilizza `magento config:sensitive:set` variabili di ambiente o di comando.
-1. Pulito (anche indicato come _scaricatore_) nella cache.
-1. Modalità di manutenzione finale.
+1. Recupera gli aggiornamenti del codice e della configurazione dal controllo del codice sorgente.
+1. Se si utilizza Adobe Commerce, arrestare i processi di lavoro in coda.
+1. Utilizza il `magento app:config:import` comando per importare le modifiche di configurazione nel sistema di produzione.
+1. Se sono stati installati componenti che hanno modificato lo schema del database, eseguire `magento setup:upgrade --keep-generated` per aggiornare lo schema e i dati del database, mantenendo i file statici generati.
+1. Per impostare le impostazioni specifiche del sistema, utilizzare `magento config:set` o variabili di ambiente.
+1. Per impostare le impostazioni sensibili, utilizzare `magento config:sensitive:set` o variabili di ambiente.
+1. Pulito (denominato anche _scaricamento_) la cache.
+1. Termina modalità di manutenzione.
 
 ## Comandi di gestione della configurazione
 
-Forniamo i seguenti comandi per aiutarti a gestire la configurazione:
+Per facilitare la gestione della configurazione, vengono forniti i seguenti comandi:
 
-- [`magento app:config:dump`](../cli/export-configuration.md) per scrivere le impostazioni di configurazione amministratore in `config.php` e `env.php` (ad eccezione delle impostazioni sensibili)
-- [`magento config:set`](../cli/set-configuration-values.md) impostare i valori delle impostazioni specifiche del sistema sul sistema di produzione.
+- [`magento app:config:dump`](../cli/export-configuration.md) per scrivere le impostazioni di configurazione amministratore in `config.php` e `env.php` (eccetto impostazioni sensibili)
+- [`magento config:set`](../cli/set-configuration-values.md) per impostare i valori delle impostazioni specifiche del sistema sul sistema di produzione.
 
-   Utilizza l’opzione `--lock` per bloccare l’opzione nell’amministratore (ovvero, rendere l’impostazione non modificabile). Se un&#39;impostazione è già bloccata, utilizza la `--lock` per modificare l&#39;impostazione.
+   Utilizzare l&#39;opzione `--lock` per bloccare l’opzione in Admin (rendendo cioè l’impostazione non modificabile). Se un&#39;impostazione è già bloccata, utilizzare `--lock` per modificare l&#39;impostazione.
 
-- [`magento config:sensitive:set`](../cli/set-configuration-values.md) per impostare i valori delle impostazioni sensibili nel sistema di produzione.
-- [`magento app:config:import`](../cli/import-configuration.md) per importare le modifiche di configurazione da `config.php` e `env.php` al sistema di produzione.
+- [`magento config:sensitive:set`](../cli/set-configuration-values.md) per impostare i valori delle impostazioni sensibili sul sistema di produzione.
+- [`magento app:config:import`](../cli/import-configuration.md) per importare le modifiche alla configurazione da `config.php` e `env.php` al sistema di produzione.
 
 ## Esempi di gestione della configurazione
 
-Questa sezione mostra alcuni esempi di gestione della configurazione per vedere come vengono apportate le modifiche a `config.php` e `env.php`.
+Questa sezione mostra esempi di gestione della configurazione che consentono di vedere come vengono apportate le modifiche a `config.php` e `env.php`.
 
 ### Modificare le impostazioni internazionali predefinite
 
-Questa sezione mostra le modifiche apportate a `config.php` quando si modifica l&#39;unità di peso predefinita utilizzando l&#39;amministratore (**Negozi** > Impostazioni > **Configurazione** > Generale > **Generale** > **Opzioni internazionali**).
+Questa sezione mostra le modifiche apportate a `config.php` quando si modifica l&#39;unità di misura dello spessore predefinita utilizzando l&#39;opzione Admin (**Negozi** > Impostazioni > **Configurazione** > Generale > **Generale** > **Opzioni internazionali**).
 
-Dopo aver apportato la modifica nell&#39;amministratore, esegui `bin/magento app:config:dump` per scrivere il valore in `config.php`. Il valore viene scritto nel `general` matrice sotto `locale` come frammento seguente da `config.php` mostra:
+Dopo aver apportato la modifica in Amministrazione, esegui `bin/magento app:config:dump` per scrivere il valore in `config.php`. Il valore viene scritto nel `general` array in `locale` come lo snippet seguente da `config.php` mostra:
 
 ```php
 'general' =>
@@ -196,22 +196,22 @@ Dopo aver apportato la modifica nell&#39;amministratore, esegui `bin/magento app
 
 ### Modificare diverse impostazioni di configurazione
 
-Questa sezione illustra come apportare le seguenti modifiche alla configurazione:
+Questa sezione descrive come apportare le seguenti modifiche alla configurazione:
 
-- Aggiunta di una visualizzazione sito web, store e store (**Negozi** > Impostazioni > **Tutti i negozi**)
-- Modifica del dominio e-mail predefinito (**Negozi** > Impostazioni > **Configurazione** > Clienti > **Configurazione del cliente**)
-- Impostazione del nome utente e della password dell&#39;API PayPal (**Negozi** > Impostazioni > **Configurazione** > Vendite > **Metodi di pagamento** > **PayPal** > **Impostazioni PayPal richieste**)
+- Aggiunta di una visualizzazione per siti Web, store e store (**Negozi** > Impostazioni > **Tutti i Negozi**)
+- Modifica del dominio e-mail predefinito (**Negozi** > Impostazioni > **Configurazione** > Clienti > **Configurazione cliente**)
+- Impostazione del nome utente e della password API PayPal (**Negozi** > Impostazioni > **Configurazione** > Vendite > **Metodi di pagamento** > **PayPal** > **Impostazioni PayPal richieste**)
 
-Dopo aver apportato la modifica nell&#39;amministratore, esegui `bin/magento app:config:dump` sul sistema di sviluppo. Questa volta, non tutte le modifiche vengono scritte in `config.php`; infatti, solo il sito web, la visualizzazione store e la visualizzazione store vengono scritti in quel file come mostrato nei seguenti snippet.
+Dopo aver apportato la modifica in Amministrazione, esegui `bin/magento app:config:dump` sul sistema di sviluppo. Questa volta non tutte le modifiche vengono scritte in `config.php`; infatti, solo la visualizzazione del sito Web, dello store e dello store vengono scritte in tale file come mostrato nei seguenti snippet.
 
 ### config.php
 
 `config.php` contiene:
 
-- Modifiche alla visualizzazione sito web, store e store.
+- Modifiche alla visualizzazione del sito Web, dello store e dello store.
 - Impostazioni del motore di ricerca non specifiche del sistema
 - Impostazioni PayPal non sensibili
-- Commenti che ti informano delle impostazioni sensibili omesse da `config.php`
+- Commenti che informano l&#39;utente sulle impostazioni sensibili omesse da `config.php`
 
 `websites` array:
 
@@ -283,9 +283,9 @@ Dopo aver apportato la modifica nell&#39;amministratore, esegui `bin/magento app
 
 ### env.php
 
-L’impostazione di configurazione predefinita specifica del sistema del dominio e-mail viene scritta in `app/etc/env.php`.
+L’impostazione di configurazione predefinita specifica per il sistema del dominio e-mail è scritta in `app/etc/env.php`.
 
-Le impostazioni di PayPal vengono scritte in nessuno dei due file perché il `bin/magento app:config:dump` Il comando non scrive le impostazioni sensibili. È necessario impostare le impostazioni PayPal sul sistema di produzione utilizzando i seguenti comandi:
+Le impostazioni PayPal non vengono scritte in nessuno dei due file perché `bin/magento app:config:dump` Il comando non scrive le impostazioni sensibili. È necessario impostare le impostazioni PayPal sul sistema di produzione utilizzando i seguenti comandi:
 
 ```bash
 bin/magento config:sensitive:set paypal/wpp/api_username <username>

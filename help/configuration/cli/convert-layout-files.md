@@ -1,13 +1,13 @@
 ---
 title: Conversione di file di layout
-description: Convertire file di layout XML.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+description: Converte i file di layout XML.
+exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
 
 ---
-
 
 # Conversione di file di layout XML
 
@@ -18,7 +18,7 @@ Utilizzare questo comando per aggiornare i file XML di layout se si aggiorna il 
 - [Istruzioni di layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
 - [Tipi di file di layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
 
-Opzioni di comando:
+Opzioni comando:
 
 ```bash
 bin/magento dev:xml:convert [-o|--overwrite] {xml file} {xslt stylesheet}
@@ -26,6 +26,6 @@ bin/magento dev:xml:convert [-o|--overwrite] {xml file} {xslt stylesheet}
 
 Dove:
 
-- `{xml file}`—è il percorso completo e il nome file di un file XML di layout da convertire (obbligatorio)
-- `{xslt stylesheet}`—è il percorso completo e il nome file di un file foglio di stile XSLT da utilizzare per la conversione (obbligatorio)
-- `-o|--overwrite`- includi questa opzione per sovrascrivere il file XML esistente
+- `{xml file}`- è il percorso completo e il nome di un file XML di layout da convertire (obbligatorio)
+- `{xslt stylesheet}`- è il percorso completo e il nome di un file del foglio di stile XSLT da utilizzare per la conversione (obbligatorio)
+- `-o|--overwrite`- Includi questa opzione per sovrascrivere il file XML esistente

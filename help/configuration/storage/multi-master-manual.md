@@ -1,34 +1,34 @@
 ---
-title: Configurare manualmente i database master
-description: Consulta le istruzioni sulla configurazione manuale della soluzione di database suddivisi.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Configura manualmente i database master
+description: Consulta le linee guida per la configurazione manuale della soluzione di database diviso.
+exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 0%
 
 ---
 
-
-# Configurare manualmente i database master
+# Configura manualmente i database master
 
 {{ee-only}}
 
 {{deprecate-split-db}}
 
-Se l’applicazione Commerce è già in produzione o se hai già installato codice o componenti personalizzati, potrebbe essere necessario configurare manualmente i database suddivisi. Prima di continuare, contatta il supporto Adobe Commerce per verificare se è necessario nel tuo caso.
+Se l’applicazione Commerce è già in produzione o se hai già installato codice personalizzato o componenti, potrebbe essere necessario configurare manualmente i database suddivisi. Prima di continuare, contatta il supporto Adobe Commerce per verificare se è necessario nel tuo caso.
 
 La suddivisione manuale dei database comporta:
 
-- Creazione di database del sistema di gestione degli ordini e dei pagamenti (OMS)
-- Esegui una serie di script SQL che:
+- Creare i database di checkout e Order Management System (OMS)
+- Eseguire una serie di script SQL che:
 
-   - Elimina chiavi esterne
-   - Esegui il backup delle tabelle del database delle vendite e dei preventivi
-   - Spostare le tabelle dal database principale ai database delle vendite e dei preventivi
+   - Rilascia chiavi esterne
+   - Eseguire il backup delle tabelle del database delle vendite e delle offerte
+   - Spostare le tabelle dal database principale ai database delle vendite e delle offerte
 
 >[!WARNING]
 >
->Se un codice personalizzato utilizza JOINs con tabelle nei database delle vendite e delle quotazioni, l&#39;utente _impossibile_ utilizzare database divisi. In caso di dubbi, contatta gli autori di eventuali codici personalizzati o estensioni per assicurarti che il loro codice non utilizzi JOIN.
+>Se un codice personalizzato utilizza JOIN con tabelle nei database delle vendite e delle offerte, _non può_ utilizzare database suddivisi. In caso di dubbi, contatta gli autori di eventuali codici personalizzati o estensioni per assicurarti che il loro codice non utilizzi JOIN.
 
 In questo argomento vengono utilizzate le seguenti convenzioni di denominazione:
 
@@ -37,22 +37,22 @@ In questo argomento vengono utilizzate le seguenti convenzioni di denominazione:
 
    Il database delle quotazioni è anche denominato _pagamento_ database.
 
-- Il nome del database di vendita è `magento_sales` e il nome utente e la password sono entrambi `magento_sales`
+- Il nome del database delle vendite è `magento_sales` e il nome utente e la password sono entrambi `magento_sales`
 
-   La banca dati sulle vendite è anche denominata banca dati OMS.
+   Il database delle vendite è anche denominato database OMS.
 
 >[!INFO]
 >
->Questa guida presuppone che tutti e tre i database si trovino sullo stesso host dell&#39;applicazione Commerce. Tuttavia, spetta a te scegliere dove individuare i database e il loro nome. Speriamo che i nostri esempi rendano le istruzioni più facili da seguire.
+>Questa guida presuppone che tutti e tre i database si trovino sullo stesso host dell’applicazione Commerce. Tuttavia, spetta a te scegliere dove individuare i database e il nome. Ci auguriamo che i nostri esempi rendano le istruzioni più facili da seguire.
 
-## Backup del sistema Commerce
+## Eseguire il backup del sistema Commerce
 
-L&#39;Adobe consiglia vivamente di eseguire il backup del database e del file system correnti in modo da poterli ripristinare in caso di problemi durante il processo.
+Adobe consiglia vivamente di eseguire il backup del database e del file system correnti in modo da poterli ripristinare in caso di problemi durante la procedura.
 
 **Per eseguire il backup del sistema**:
 
-1. Accedi al tuo server Commerce come o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
-1. Immetti i seguenti comandi:
+1. Accedi al server Commerce come, o passa a, il [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+1. Immettete i seguenti comandi:
 
    ```bash
    magento setup:backup --code --media --db
@@ -60,21 +60,21 @@ L&#39;Adobe consiglia vivamente di eseguire il backup del database e del file sy
 
 1. Procedi alla sezione successiva.
 
-## Configurare database master aggiuntivi
+## Imposta database master aggiuntivi
 
-In questa sezione viene illustrato come creare istanze di database per le tabelle di vendite e preventivi.
+In questa sezione viene descritto come creare istanze di database per le tabelle delle vendite e delle offerte.
 
-**Creazione di banche dati sulle vendite e sulle quotazioni OMS**:
+**Per creare i database delle offerte di vendita e OMS**:
 
-1. Accedi al server di database come qualsiasi utente.
-1. Immettere il comando seguente per accedere a un prompt dei comandi MySQL:
+1. Accedere al server del database come qualsiasi utente.
+1. Immettere il comando seguente per accedere al prompt dei comandi MySQL:
 
    ```bash
    mysql -u root -p
    ```
 
 1. Immettere MySQL `root` password dell&#39;utente quando richiesto.
-1. Immettere i seguenti comandi nell&#39;ordine mostrato per creare istanze di database denominate `magento_quote` e `magento_sales` con gli stessi nomi utente e password:
+1. Immettere i seguenti comandi nell&#39;ordine indicato per creare istanze di database denominate `magento_quote` e `magento_sales` con gli stessi nomi utente e password:
 
    ```shell
    create database magento_quote;
@@ -90,7 +90,7 @@ In questa sezione viene illustrato come creare istanze di database per le tabell
 
 1. Verificare i database, uno alla volta:
 
-   database delle virgolette:
+   database preventivo:
 
    ```bash
    mysql -u magento_quote -p
@@ -118,33 +118,33 @@ In questa sezione viene illustrato come creare istanze di database per le tabell
 
 ## Configurare il database delle vendite
 
-In questa sezione viene illustrato come creare ed eseguire script SQL che alterano le tabelle del database e consentono di eseguire il backup dei dati di tali tabelle.
+In questa sezione viene descritto come creare ed eseguire script SQL che modificano le tabelle di database delle virgolette ed eseguono il backup dei dati da tali tabelle.
 
 I nomi delle tabelle del database di vendita iniziano con:
 
 - `salesrule_`
 - `sales_`
 - `magento_sales_`
-- La `magento_customercustomattributes_sales_flat_order` anche la tabella è interessata
+- Il `magento_customercustomattributes_sales_flat_order` Anche la tabella è interessata
 
 >[!INFO]
 >
->Questa sezione contiene script con nomi di tabella di database specifici. Se hai eseguito personalizzazioni o se desideri visualizzare un elenco completo delle tabelle prima di eseguire azioni su di esse, consulta [Script di riferimento](#reference-scripts).
+>Questa sezione contiene script con nomi di tabelle di database specifici. Se sono state eseguite personalizzazioni o se si desidera visualizzare un elenco completo delle tabelle prima di eseguire azioni su di esse, vedere [Script di riferimento](#reference-scripts).
 
 Per ulteriori informazioni, consulta:
 
-- [Crea script SQL del database di vendita](#create-sales-database-sql-scripts)
+- [Creare script SQL per database vendite](#create-sales-database-sql-scripts)
 - [Backup dei dati di vendita](#back-up-sales-data)
 
-### Crea script SQL del database di vendita
+### Creare script SQL per database vendite
 
-Creare i seguenti script SQL in un percorso accessibile dall&#39;utente con cui si effettua l&#39;accesso al server Commerce. Ad esempio, se esegui l&#39;accesso o esegui comandi come `root`, è possibile creare gli script nel `/root/sql-scripts` directory.
+Creare i seguenti script SQL in un percorso accessibile dall&#39;utente al quale si accede al server Commerce. Ad esempio, se si accede o si eseguono comandi come `root`, è possibile creare gli script in `/root/sql-scripts` directory.
 
 #### Rimuovi chiavi esterne
 
-Questo script rimuove dal database di vendita le chiavi esterne che fanno riferimento a tabelle non di vendita.
+Questo script rimuove dal database delle vendite le chiavi esterne che fanno riferimento a tabelle non di vendita.
 
-Crea il seguente script e assegnagli un nome come `1_foreign-sales.sql`. Sostituisci `<your main DB name>` con il nome del database.
+Crea il seguente script e assegnagli un nome simile a `1_foreign-sales.sql`. Sostituisci `<your main DB name>` con il nome del database.
 
 ```sql
 use <your main DB name>;
@@ -199,13 +199,13 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
 
 Esegui lo script precedente:
 
-1. Accedi al database MySQL come `root` o utente amministrativo:
+1. Accedere al database MySQL come `root` o amministratore:
 
    ```bash
    mysql -u root -p
    ```
 
-1. Alla `mysql>` prompt, esegui lo script come segue:
+1. Alla `mysql>` eseguire lo script nel modo seguente:
 
    ```shell
    source <path>/<script>.sql
@@ -221,13 +221,13 @@ Esegui lo script precedente:
 
 ### Backup dei dati di vendita
 
-Questa sezione illustra come eseguire il backup delle tabelle di vendita dal database Commerce principale in modo da poterle ripristinare nel database di vendite separato.
+Questa sezione illustra come eseguire il backup delle tabelle di vendita dal database Commerce principale in modo da poterle ripristinare nel database delle vendite separato.
 
-Se ti trovi al `mysql>` prompt, immettere `exit` per tornare alla shell dei comandi.
+Se sei attualmente al `mysql>` prompt, immetti `exit` per tornare alla shell dei comandi.
 
-Esegui quanto segue `mysqldump` comandi, uno alla volta, dalla shell dei comandi. In ciascuna, sostituisci quanto segue:
+Esegui quanto segue `mysqldump` comandi, uno alla volta, dalla shell dei comandi. In ciascuno, sostituisci quanto segue:
 
-- `<your database root username>` con il nome dell&#39;utente principale del database
+- `<your database root username>` con il nome dell&#39;utente radice del database
 - `<your database root user password>` con la password dell&#39;utente
 - `<your main Commerce DB name>` con il nome del database Commerce
 - `<path>` con un percorso del file system scrivibile
@@ -262,15 +262,15 @@ Questo script ripristina i dati di vendita nel database delle offerte.
 
 #### Requisito NDB
 
-Se utilizzi un [Database di rete (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) cluster:
+Se si utilizza un [Database rete (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) cluster:
 
-1. Converti tabelle da InnoDb in tipo NDB nei file di dump:
+1. Converti tabelle da InnoDb in tipo NDB in file di dump:
 
    ```bash
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
-1. Rimuovi le righe con una chiave FULLTEXT dalle immagini perché le tabelle NDB non supportano FULLTEXT.
+1. Rimuovere le righe con una chiave FULLTEXT dalle immagini perché le tabelle NDB non supportano FULLTEXT.
 
 #### Ripristinare i dati
 
@@ -294,29 +294,29 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 
 Dove
 
-- `<your sales DB name>` con il nome del database di vendita.
+- `<your sales DB name>` con il nome del database delle vendite.
 
    In questo argomento, il nome del database di esempio è `magento_sales`.
 
-- `<root username>` con il nome utente principale MySQL
+- `<root username>` con il nome utente root MySQL
 - `<root user password>` con la password dell&#39;utente
 - Verificare il percorso dei file di backup creati in precedenza (ad esempio, `/var/sales.sql`)
 
-## Configurare il database delle virgolette
+## Configurare il database delle quotazioni
 
-Questa sezione descrive le attività necessarie per eliminare le chiavi esterne dalle tabelle del database di vendita e spostare le tabelle nel database di vendita.
+In questa sezione vengono descritti i task necessari per eliminare le chiavi esterne dalle tabelle del database delle vendite e spostare le tabelle nel database delle vendite.
 
 >[!INFO]
 >
->Questa sezione contiene script con nomi di tabella di database specifici. Se hai eseguito personalizzazioni o se desideri visualizzare un elenco completo delle tabelle prima di eseguire azioni su di esse, consulta [Script di riferimento](#reference-scripts).
+>Questa sezione contiene script con nomi di tabelle di database specifici. Se sono state eseguite personalizzazioni o se si desidera visualizzare un elenco completo delle tabelle prima di eseguire azioni su di esse, vedere [Script di riferimento](#reference-scripts).
 
-I nomi delle tabelle del database del preventivo iniziano con `quote`. La `magento_customercustomattributes_sales_flat_quote` e `magento_customercustomattributes_sales_flat_quote_address` anche le tabelle sono interessate
+I nomi delle tabelle del database delle offerte iniziano con `quote`. Il `magento_customercustomattributes_sales_flat_quote` e `magento_customercustomattributes_sales_flat_quote_address` sono interessate anche le tabelle
 
-### Elimina le chiavi esterne dalle tabelle delle virgolette
+### Rilascia chiavi esterne dalle tabelle delle offerte
 
-Questo script rimuove le chiavi esterne che fanno riferimento a tabelle non basate su virgolette dalle tabelle delle virgolette. Sostituisci `<your main Commerce DB name>` con il nome del database Commerce.
+Questo script rimuove le chiavi esterne che fanno riferimento a tabelle non basate su preventivi dalle tabelle dei preventivi. Sostituisci `<your main Commerce DB name>` con il nome del database Commerce.
 
-Crea il seguente script e assegnagli un nome come `2_foreign-key-quote.sql`:
+Crea il seguente script e assegnagli un nome simile a `2_foreign-key-quote.sql`:
 
 ```sql
 use <your main DB name>;
@@ -327,13 +327,13 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
 
 Esegui lo script come segue:
 
-1. Accedere al database MySQL come utente principale o amministrativo:
+1. Accedere al database MySQL come utente root o amministratore:
 
    ```bash
    mysql -u root -p
    ```
 
-1. Alla `mysql >` prompt, esegui lo script come segue:
+1. Alla `mysql >` eseguire lo script nel modo seguente:
    `source <path>/<script>.sql`
 
    Ad esempio:
@@ -342,11 +342,11 @@ Esegui lo script come segue:
    source /root/sql-scripts/2_foreign-key-quote.sql
    ```
 
-1. Dopo l’esecuzione dello script, immetti `exit`.
+1. Dopo l&#39;esecuzione dello script, immettere: `exit`.
 
-### Tabelle di preventivo di backup
+### Eseguire il backup delle tabelle delle offerte
 
-Questa sezione illustra come eseguire il backup delle tabelle dei preventivi dal database principale e ripristinarle nel database dei preventivi.
+In questa sezione viene illustrato come eseguire il backup delle tabelle dei preventivi dal database principale e ripristinarle nel database dei preventivi.
 
 Esegui il comando seguente da un prompt dei comandi:
 
@@ -356,27 +356,27 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### Requisito NDB
 
-Se utilizzi un [Database di rete (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) cluster:
+Se si utilizza un [Database rete (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) cluster:
 
-1. Converti tabelle da InnoDb in tipo NDB nei file di dump:
+1. Converti tabelle da InnoDb in tipo NDB in file di dump:
 
    ```bash
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
-1. Rimuovi le righe con una chiave FULLTEXT dalle immagini perché le tabelle NDB non supportano FULLTEXT.
+1. Rimuovere le righe con una chiave FULLTEXT dalle immagini perché le tabelle NDB non supportano FULLTEXT.
 
-### Ripristinare le tabelle nel database delle virgolette
+### Ripristinare le tabelle nel database delle quotazioni
 
 ```bash
 mysql -u root -p magento_quote < /<path>/quote.sql
 ```
 
-## Elimina le tabelle di vendita e di preventivo dal database
+## Eliminare le tabelle delle vendite e delle offerte dal database
 
-Tabelle di vendita e preventivi script dal database Commerce. Sostituisci `<your main DB name>` con il nome del database Commerce.
+Consente di creare script per le tabelle delle vendite e delle offerte dal database Commerce. Sostituisci `<your main DB name>` con il nome del database Commerce.
 
-Crea il seguente script e assegnagli un nome come `3_drop-tables.sql`:
+Crea il seguente script e assegnagli un nome simile a `3_drop-tables.sql`:
 
 ```sql
 use <your main DB name>;
@@ -450,13 +450,13 @@ SET foreign_key_checks = 1;
 
 Esegui lo script come segue:
 
-1. Accedere al database MySQL come utente principale o amministrativo:
+1. Accedere al database MySQL come utente root o amministratore:
 
    ```bash
    mysql -u root -p
    ```
 
-1. Alla `mysql>` prompt, esegui lo script come segue:
+1. Alla `mysql>` eseguire lo script nel modo seguente:
 
    ```shell
    source <path>/<script>.sql
@@ -468,26 +468,26 @@ Esegui lo script come segue:
    source /root/sql-scripts/3_drop-tables.sql
    ```
 
-1. Dopo l’esecuzione dello script, immetti `exit`.
+1. Dopo l&#39;esecuzione dello script, immettere: `exit`.
 
-## Aggiorna la configurazione della distribuzione
+## Aggiornare la configurazione della distribuzione
 
 L’ultimo passaggio nella suddivisione manuale dei database consiste nell’aggiungere informazioni sulla connessione e sulle risorse alla configurazione di distribuzione di Commerce, `env.php`.
 
 Per aggiornare la configurazione della distribuzione:
 
-1. Accedi al tuo server Commerce come o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
-1. Esegui il backup della configurazione di distribuzione:
+1. Accedi al server Commerce come, o passa a, il [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+1. Eseguire il backup della configurazione di distribuzione:
 
    ```bash
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 
-1. Apri `<magento_root>/app/etc/env.php` in un editor di testo e aggiornalo utilizzando le linee guida illustrate nelle sezioni seguenti.
+1. Apri `<magento_root>/app/etc/env.php` in un editor di testo e aggiornarlo utilizzando le linee guida illustrate nelle sezioni seguenti.
 
-### Aggiorna connessioni database
+### Aggiornare le connessioni al database
 
-Individua il blocco che inizia con `'default'` (4) `'connection'`) e aggiungi `'checkout'` e `'sales'` sezioni. Sostituisci i valori di esempio con i valori appropriati per il sito.
+Individua il blocco che inizia con `'default'` (sotto `'connection'`) e aggiungi `'checkout'` e `'sales'` sezioni. Sostituisci i valori di esempio con i valori appropriati per il tuo sito.
 
 ```php
  'default' =>
@@ -528,7 +528,7 @@ Individua il blocco che inizia con `'default'` (4) `'connection'`) e aggiungi `'
 
 ### Aggiorna risorse
 
-Individua il blocco che inizia con `'resource'` e aggiungere `'checkout'` e `'sales'` le sezioni seguenti:
+Individua il blocco che inizia con `'resource'` e aggiungi `'checkout'` e `'sales'` le seguenti sezioni:
 
 ```php
 'resource' =>
@@ -549,25 +549,25 @@ Individua il blocco che inizia con `'resource'` e aggiungere `'checkout'` e `'sa
 
 ## Script di riferimento
 
-Questa sezione fornisce script che è possibile eseguire per stampare un elenco completo delle tabelle interessate senza eseguire alcuna azione su di esse. È possibile utilizzarle per vedere quali tabelle sono interessate prima di suddividere manualmente i database. Questa funzione può essere utile se si utilizzano estensioni che personalizzano lo schema del database.
+In questa sezione vengono forniti gli script che è possibile eseguire e che consentono di stampare un elenco completo delle tabelle interessate senza eseguire alcuna azione. È possibile utilizzarli per visualizzare le tabelle interessate prima di dividere manualmente i database. Questa operazione può essere utile se si utilizzano estensioni che personalizzano lo schema del database.
 
 Per utilizzare questi script:
 
-1. Crea uno script SQL con il contenuto di ogni script in questa sezione.
+1. Creare uno script SQL con il contenuto di ogni script in questa sezione.
 1. In ogni script, sostituisci `<your main DB name>` con il nome del database Commerce.
 
    In questo argomento, il nome del database di esempio è `magento`.
 
-1. Esegui ogni script dal `mysql>` richiedi `source <script name>`
-1. Esamina l&#39;output.
-1. Copia il risultato di ogni script in un altro script SQL, rimuovendo i caratteri di barra verticale (`|`).
-1. Esegui ogni script dal `mysql>` richiedi `source <script name>`.
+1. Esegui ogni script da `mysql>` richiedi come `source <script name>`
+1. Esamina l’output.
+1. Copiare il risultato di ogni script in un altro script SQL, rimuovendo i caratteri di barra verticale (`|`).
+1. Esegui ogni script da `mysql>` richiedi come `source <script name>`.
 
    L’esecuzione di questo secondo script esegue le azioni nel database Commerce principale.
 
-### Rimuovi chiavi esterne (tabelle di vendita)
+### Rimuovi chiavi esterne (tabelle vendite)
 
-Questo script rimuove dal database di vendita le chiavi esterne che fanno riferimento a tabelle non di vendita.
+Questo script rimuove dal database delle vendite le chiavi esterne che fanno riferimento a tabelle non di vendita.
 
 ```sql
 select concat(
@@ -594,9 +594,9 @@ where for_name like  '<your main DB name>/|magento_sales|_%' escape '|'
 ;
 ```
 
-### Rimuovi chiavi esterne (tabelle virgolette)
+### Rimuovi chiavi esterne (tabelle di preventivo)
 
-Questo script rimuove le chiavi esterne che fanno riferimento a tabelle non basate su virgolette dalle tabelle delle virgolette.
+Questo script rimuove le chiavi esterne che fanno riferimento a tabelle non basate su preventivi dalle tabelle dei preventivi.
 
 ```sql
 select concat(
@@ -634,9 +634,9 @@ where for_name like '<your main DB name>/%'
 ;
 ```
 
-### Tabelle di vendita ridotte
+### Rilascia tabelle vendite
 
-Questo script rilascia le tabelle di vendita dal database Commerce.
+Questo script elimina le tabelle delle vendite dal database Commerce.
 
 ```sql
 use <your main DB name>;
@@ -669,6 +669,6 @@ union all
 select 'SET foreign_key_checks = 1;';
 ```
 
-### Tabelle a preventivo
+### Tabelle delle virgolette esterne
 
 Rilascia tutte le tabelle che iniziano con `quote_`.

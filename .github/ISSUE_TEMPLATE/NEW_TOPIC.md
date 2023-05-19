@@ -1,7 +1,7 @@
 ---
 name: New topic
 about: Create a request to add missing information
-title: '''Richiesta di un nuovo argomento'''
+title: 'Richiesta di un nuovo argomento'
 labels: New Topic
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 <!-- Use the following checklist template as a starting point -->
 
-- [ ] L’argomento spiega come _____.
-- [ ] L’argomento descrive i passaggi necessari per _____.
-- [ ] L’argomento contiene esempi di codice che mostrano _____.
+- [ ] L’argomento spiega come ____.
+- [ ] L’argomento descrive i passaggi da seguire per ____.
+- [ ] L&#39;argomento contiene esempi di codice che mostrano ____.
 - [ ] Altro (specificare)
 
 ## Informazioni aggiuntive

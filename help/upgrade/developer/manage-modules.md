@@ -1,19 +1,19 @@
 ---
 title: Gestire moduli ed estensioni (sviluppatore)
-description: Gestisci i moduli e le estensioni Adobe Commerce e Magenti Open Source tramite l’interfaccia a riga di comando e il gestore dei pacchetti Composer.
-source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
+description: Gestisci le estensioni e i moduli Adobe Commerce e Magenti Open Source tramite l’interfaccia della riga di comando e il gestore di pacchetti Composer.
+exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
+# Gestire moduli ed estensioni
 
-# Gestione di moduli ed estensioni
+Aiutare gli sviluppatori ad aggiornare moduli ed estensioni specificando le loro versioni in Adobe Commerce o nel Magento Open Source `composer.json` file. Se non sei uno sviluppatore, consulta [Eseguire un aggiornamento](../implementation/perform-upgrade.md).
 
-Gli sviluppatori che contribuiscono aggiornano moduli ed estensioni specificando le proprie versioni in Adobe Commerce o nel Magento Open Source `composer.json` file. Se non sei uno sviluppatore contributore, consulta [Eseguire un aggiornamento](../implementation/perform-upgrade.md).
-
-Puoi aggiungere una `require` alla sezione `composer.json` oppure puoi utilizzare il `composer require` come segue:
+Puoi aggiungere una `require` sezione al `composer.json` o puoi utilizzare il `composer require` comando come segue:
 
 {{$include /help/_includes/server-login.md}}
 
@@ -33,7 +33,7 @@ Ad esempio:
 composer show --all example/module
 ```
 
-## Utilizza la `composer require` command
+## Utilizza il `composer require` comando
 
 Utilizzo comando:
 
@@ -47,13 +47,13 @@ Ad esempio:
 composer require example/module:1.0.0
 ```
 
-Attendi che Compositore aggiorni le dipendenze e installi il modulo.
+Attendere. Aggiornamento delle dipendenze in corso e installazione del modulo.
 
-## Aggiungi un `require` al file compositer.json
+## Aggiungi un `require` al file compositore.json
 
 1. Apri `composer.json` in un editor di testo.
 
-1. Aggiungi un `require` sezione .
+1. Aggiungi un `require` sezione.
 
    ```json
    "require": {
@@ -62,9 +62,9 @@ Attendi che Compositore aggiorni le dipendenze e installi il modulo.
    }
    ```
 
-1. Salva le modifiche apportate al `composer.json` e esci dall’editor di testo.
+1. Salva le modifiche in `composer.json` e uscire dall&#39;editor di testo.
 
-1. Risolvere le dipendenze e scrivere versioni esatte nel `composer.lock` file.
+1. Risolvere le dipendenze e scrivere versioni esatte in `composer.lock` file.
 
    ```bash
    composer update

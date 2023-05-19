@@ -1,47 +1,47 @@
 ---
-title: "[!DNL Data Migration Tool] prerequisiti"
-description: "Scopri cosa devi fare prima di iniziare a utilizzare i [!DNL Data Migration Tool] trasferire i dati tra il Magento 1 e il Magento 2."
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+title: '[!DNL Data Migration Tool] prerequisiti'
+description: Scopri cosa devi fare prima di iniziare a utilizzare il [!DNL Data Migration Tool] trasferire dati tra il Magento 1 e il Magento 2.
+exl-id: 42dfa1ca-41ed-453d-a3e4-41ff36817ca3
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
 
 ---
 
-
 # [!DNL Data Migration Tool] prerequisiti
 
 Prima di avviare la migrazione, accertati che siano soddisfatti i seguenti requisiti.
 
-## Magento 2
+## MAGENTO 2
 
-* Impostare il sistema di Magento 2 in modo che soddisfi i requisiti [requisiti di sistema](../../installation/system-requirements.md).
+* Configurare il Magento 2 in modo che soddisfi [requisiti di sistema](../../installation/system-requirements.md).
 
-   Utilizzare una topologia e una progettazione che almeno corrispondano al sistema di Magento 1 esistente.
+   Utilizza una topologia e una progettazione che corrispondano almeno al Magento 1 esistente.
 
 * [Installa Magento 2](../../installation/overview.md).
 
 ## Cron
 
-Non avviare lavori di cron Magento 2.
+Non avviare lavori cron Magento 2.
 
 ## Database
 
-* Dopo l&#39;installazione, eseguire il backup o [scaricare](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) il database di Magento 2 il prima possibile. In questo modo è possibile ripristinare lo stato iniziale del database se la migrazione non ha esito positivo.
+* Dopo l&#39;installazione, eseguire il backup o [dump](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) il database Magento 2 non appena possibile. Questo consente di ripristinare lo stato iniziale del database se la migrazione non ha esito positivo.
 
-* Verifica se [!DNL Data Migration Tool] dispone dell&#39;accesso alla rete per collegare i database di Magento 1 e Magento 2.
+* Verifica se [!DNL Data Migration Tool] dispone dell&#39;accesso di rete per connettere i database del Magento 1 e del Magento 2.
 
-   Apri le porte nel firewall in modo che lo strumento di migrazione possa comunicare con i database.
+   Aprire le porte del firewall in modo che lo strumento di migrazione possa comunicare con i database.
 
-* Assicurati che gli account MySQL dispongano di tutti i privilegi necessari per accedere ai database di Magento.
+* Assicurarsi che gli account MySQL dispongano di tutti i privilegi necessari per accedere ai database di Magento.
 
-Se la funzione Registrazione binario è abilitata per il database di Magento 1, imposta la variabile globale [`log_bin_trust_function_creators`](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_bin_trust_function_creators) Variabile di sistema MySQL in `1`o concedere [Privilegio SUPER](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_super) al tuo account.
+Se la registrazione binaria è abilitata per il database del Magento 1, impostare la [`log_bin_trust_function_creators`](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_bin_trust_function_creators) Variabile di sistema MySQL su `1`, o concedono [PRIVILEGIO SUPER](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_super) sul tuo account.
 
-* Non consigliamo di creare nuove entità (prodotti, categorie e attributi) nell’archivio del Magento 2 prima della migrazione perché la variabile [!DNL Data Migration Tool] sovrascrive tali nuove entità con quelle vecchie del Magento 1.
+* Si sconsiglia di creare nuove entità (prodotti, categorie e attributi) nell’archivio del Magento 2 prima della migrazione, perché [!DNL Data Migration Tool] sovrascrive tali nuove entità con quelle vecchie del Magento 1.
 
 ## Estensioni
 
-Esegui la migrazione del codice di estensione Magento 1 al Magento 2.
+Migra il codice dell’estensione del Magento 1 al Magento 2.
 
 Per trovare le versioni più recenti delle estensioni, visita [!DNL [Commerce Marketplace]](https://marketplace.magento.com/) o contatta il provider di estensioni.
 

@@ -1,8 +1,8 @@
 ---
 source-git-commit: 20ebf9dc6c7a1aac1d183ed31b1a80a674d633f1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '271'
+ht-degree: 70%
 
 ---
 # Requisiti di sistema
@@ -15,7 +15,7 @@ ht-degree: 0%
       </th>
       <th>2.4.6</th>
       <th>2.4.5-p2</th>
-      <th>2.4.5-p1</th>
+      <th>2,4,5-p1</th>
       <th>2.4.5</th>
       <th>2.4.4-p3</th>
       <th>2.4.4-p2</th>
@@ -800,7 +800,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Il supporto per la versione del servizio e la compatibilità per l’infrastruttura cloud di Adobe Commerce è determinato dalle versioni distribuite sull’infrastruttura cloud e talvolta differisce dalle versioni supportate dalle distribuzioni locali di Adobe Commerce. Vedi [Software e servizi supportati](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) in _Guida a Cloud_.
+>Il supporto per la versione del servizio e la compatibilità per l’infrastruttura cloud di Adobe Commerce è determinato dalle versioni distribuite nell’infrastruttura cloud e talvolta differisce dalle versioni supportate dalle distribuzioni locali di Adobe Commerce. Consulta [Software e servizi supportati](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) nel _Guida al cloud_.
 
 >[!NOTE]
 >

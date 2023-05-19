@@ -1,23 +1,23 @@
 ---
-title: Politica del ciclo di vita del software
+title: Regole sul ciclo di vita del software
 description: Scopri le date chiave per la fine del supporto software per le versioni di Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '315'
+ht-degree: 10%
 
 ---
 
-# Criterio sul ciclo di vita di Adobe Commerce
+# criteri del ciclo di vita Adobe Commerce
 
 Per Adobe Commerce 2.4.4 e versioni successive:
 
-- Per semplificare meglio la politica sul ciclo di vita e supportare le esigenze mission-critical dei clienti Adobe Commerce, stiamo espandendo la nostra finestra di supporto a tre anni dalla data di disponibilità generale (GA) per Adobe Commerce 2.4.4 e versioni successive. Adobe fornisce correzioni di qualità alle versioni 2.4.4 e successive per un periodo di supporto di tre anni. I clienti possono accedere alle correzioni di qualità contattando [Supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) o attraverso il self-service [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) se la loro versione è ancora idonea al supporto qualità. Fai riferimento alla tabella seguente per le date di fine del supporto software per le linee di rilascio di Adobe Commerce.
+- Per semplificare al meglio la politica sul ciclo di vita e supportare le esigenze mission-critical dei clienti Adobe Commerce, la finestra di assistenza viene estesa a tre anni dalla data di disponibilità generale (GA) di Adobe Commerce 2.4.4 e versioni successive. Adobe fornisce correzioni di qualità alla versione 2.4.4 e alle versioni successive per un periodo di supporto di tre anni. I clienti possono accedere alle correzioni di qualità contattando [Supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) o attraverso il self-service [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) se la loro versione è ancora idonea al supporto di qualità. Consultare la tabella seguente per le date di fine del supporto software per le righe sulla versione di Adobe Commerce.
 
-- Adobe fornisce correzioni di sicurezza tramite una patch di sicurezza per il periodo di supporto di tre anni.
+- Adobe fornisce correzioni di sicurezza attraverso una versione di patch di sicurezza per il periodo di supporto di tre anni.
 
-- Per problemi critici di sicurezza, come le vulnerabilità a zero giorni, Adobe fornisce [hotfix](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) per tutti i clienti di una versione supportata, anche se non si trovano nella patch o nella patch di sicurezza più recente. È importante notare che un hotfix non è un catch-all e non risolve tutti i problemi di sicurezza che verrebbero risolti aggiornando alla versione più recente.
+- Per problemi critici di sicurezza, come vulnerabilità a zero giorni, Adobe fornisce [hotfix](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) per tutti i clienti che usano una versione supportata, anche se non sono nell’ultima versione della patch o della patch di sicurezza. È importante notare che un hotfix non è onnicomprensivo e non risolve tutti i problemi di sicurezza che verrebbero risolti con l’aggiornamento alla versione più recente.
 
 ## Fine del supporto software
 
@@ -29,11 +29,11 @@ Per Adobe Commerce 2.4.4 e versioni successive:
 
 {style="table-layout:auto"}
 
-<sup>1 La fine del supporto software include sia la fine delle correzioni di qualità che la fine delle correzioni di sicurezza.</sup><br>
+<sup>1 La fine del supporto software include sia la fine delle correzioni di qualità sia la fine delle correzioni di sicurezza.</sup><br>
 
 >[!NOTE]
 >
->Vedi [Criterio del ciclo di vita del software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>Consulta [Criteri del ciclo di vita del software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
 <thead>

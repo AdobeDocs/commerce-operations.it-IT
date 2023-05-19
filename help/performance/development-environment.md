@@ -1,27 +1,27 @@
 ---
 title: Ambiente di sviluppo Recommendations
-description: Scopri i consigli sulle prestazioni per la configurazione dell’ambiente di sviluppo Adobe Commerce locale o Magento Open Source.
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+description: Scopri i consigli sulle prestazioni per la configurazione dell’ambiente di sviluppo Adobe Commerce o di Magento Open Source locale.
+exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
+# Raccomandazioni per l’ambiente di sviluppo
 
-# Raccomandazioni in materia di ambiente di sviluppo
+Questa pagina fornisce consigli per gli ambienti di sviluppo di Commerce.
 
-Questa pagina fornisce consigli per gli ambienti di sviluppo Commerce.
+## Pulire le cache invece di disattivare
 
-## Pulisci le cache invece di disattivarle
+Molti sviluppatori tendono a disabilitare tutte le cache sulle loro istanze di sviluppatori. È consigliabile pulire solo le cache, senza disabilitare tutte le cache. [!DNL Commerce] viene eseguito in modo più efficiente quando [pulire le cache](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) invece di disattivarli completamente. La maggior parte dei tipi di cache vengono raramente invalidati durante lo sviluppo.
 
-Molti sviluppatori tendono a disabilitare tutte le cache sulle loro istanze di sviluppatori. Si consiglia di pulire solo le cache, senza disabilitare tutte le cache. [!DNL Commerce] esegue in modo più efficiente quando [pulire le cache](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) invece di disattivarli completamente. La maggior parte dei tipi di cache viene raramente invalidata durante lo sviluppo.
-
-Se [disattivare le cache](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), consigliamo solo di disabilitare le cache di pagine e blocchi nelle istanze di sviluppo. Ricorda di abilitare tutte le cache durante il test.
+Se [disattivare le cache](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), è consigliabile disabilitare solo le cache di pagina e di blocco nelle istanze di sviluppo. Ricorda di abilitare tutte le cache durante il test.
 
 ## Comandi da evitare in modalità di sviluppo
 
-In modalità di sviluppo, non eseguire comandi per la compilazione, la generazione del codice e la distribuzione di contenuti statici. Questi comandi sono stati creati solo per la modalità di produzione.
+In modalità di sviluppo, non eseguire comandi per la compilazione, la generazione di codice e la distribuzione di contenuto statico. Questi comandi sono stati creati per essere utilizzati solo in modalità di produzione.
 
 **Non eseguire** comandi di produzione in modalità di sviluppo:
 
@@ -31,9 +31,9 @@ In modalità di sviluppo, non eseguire comandi per la compilazione, la generazio
    bin/magento setup:di:compile
    ```
 
-   In modalità di sviluppo, il Magento esegue la generazione su richiesta; non è necessario eseguirlo. Se è stata modificata una firma di una classe e è necessario rigenerarla automaticamente `factories/proxies/interceptors`, rimuovi tali classi o _generato_ cartella.
+   In modalità di sviluppo, il Magento esegue la generazione on-demand, senza bisogno di eseguirla. Se è stata modificata una firma di una classe e occorre rigenerarne la generazione automatica `factories/proxies/interceptors`, rimuovere tali classi o _generato_ cartella.
 
-* `setup:static-content:deploy` distribuisce contenuto statico per uno store.
+* `setup:static-content:deploy` distribuisce contenuto statico per un archivio.
 
    ```bash
    bin/magento setup:static-content:deploy

@@ -1,13 +1,13 @@
 ---
 title: Best practice per la configurazione
 description: Ottimizza i tempi di risposta dell’implementazione di Adobe Commerce o di Magento Open Source utilizzando queste best practice.
-source-git-commit: 5b455cb1285ce764a0517008fb8b692f3899066d
+exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1348'
 ht-degree: 0%
 
 ---
-
 
 # Best practice di configurazione
 
@@ -122,4 +122,3 @@ Puoi limitare le raccolte della griglia di prodotti solo sulle pagine seguenti:
 * Pagina Crea ordine amministratore
 
 Se non desideri che la griglia di prodotto sia limitata, ti consigliamo di utilizzare i filtri in modo più preciso affinché la raccolta dei risultati abbia meno elementi di **[!UICONTROL Records Limit]**.
-

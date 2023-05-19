@@ -1,33 +1,33 @@
 ---
 title: Personalizzare [!DNL Data Migration Tool]
-description: Scopri come personalizzare il [!DNL Data Migration Tool] per trasferire i dati creati dalle estensioni tra il Magento 1 e il Magento 2.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+description: Scopri come personalizzare [!DNL Data Migration Tool] per trasferire i dati creati dalle estensioni tra il Magento 1 e il Magento 2.
+exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
 
 ---
 
+# Configurare [!DNL Data Migration Tool]
 
-# Configura le [!DNL Data Migration Tool]
+A volte il formato e la struttura dei dati creati da [estensioni](https://marketplace.magento.com/extensions.html) Il codice personalizzato di o è diverso tra il Magento 1 e il Magento 2. Utilizzare i punti di estensione all’interno di [!DNL Data Migration Tool] per migrare questi dati. Se il formato e la struttura dei dati sono identici, lo strumento può eseguire automaticamente la migrazione dei dati senza l’intervento dell’utente.
 
-A volte il formato e la struttura dei dati creati da [estensioni](https://marketplace.magento.com/extensions.html) Il codice personalizzato o è diverso tra il Magento 1 e il Magento 2. Utilizzare i punti di estensione all&#39;interno di [!DNL Data Migration Tool] per migrare questi dati. Se il formato e la struttura dei dati sono gli stessi, lo strumento può migrare automaticamente i dati senza l&#39;intervento dell&#39;utente.
-
-Durante la migrazione, il [Passaggio mappa](technical-specification.md#map-step) analizza e confronta tutte le tabelle dei Magenti 1 e 2, incluse quelle create dalle estensioni. Se le tabelle sono uguali, lo strumento esegue automaticamente la migrazione dei dati. Se le tabelle sono diverse, lo strumento termina e notifica l’utente.
+Durante la migrazione, [Passaggio mappa](technical-specification.md#map-step) analizza e confronta tutte le tabelle del Magento 1 e del Magento 2, incluse quelle create dalle estensioni. Se le tabelle sono le stesse, lo strumento migra automaticamente i dati. Se le tabelle sono diverse, lo strumento termina e invia una notifica all&#39;utente.
 
 >[!NOTE]
 >
->Leggi la sezione [Specifiche tecniche](technical-specification.md) prima di tentare di estendere [!DNL Data Migration Tool]. Inoltre, rivedi il [Guida alla migrazione](../overview.md) per informazioni generali sull’utilizzo dello strumento di migrazione.
+>Leggi le [Specifiche tecniche](technical-specification.md) prima di tentare di estendere [!DNL Data Migration Tool]. Inoltre, controlla [Guida alla migrazione](../overview.md) per informazioni generali sull’utilizzo dello strumento di migrazione.
 
 
-## Modifiche minori al formato dei dati e alla struttura
+## Modifiche minori al formato e alla struttura dei dati
 
-Nella maggior parte dei casi, il [Passaggio mappa](technical-specification.md#map-step) risolve a sufficienza le modifiche minori del formato dei dati e della struttura utilizzando i seguenti metodi nella `map.xml` file:
+Nella maggior parte dei casi, il [Passaggio mappa](technical-specification.md#map-step) risolve in modo sufficiente le modifiche minori al formato e alla struttura dei dati utilizzando i seguenti metodi nella `map.xml` file:
 
-- Modificare i nomi di tabelle o campi con le regole di mappatura
-- Trasforma i formati di dati con gestori esistenti o con un gestore personalizzato
+- Modificare i nomi di tabelle o campi con regole di mappatura
+- Trasforma i formati di dati con gestori esistenti o personalizzati
 
-Di seguito è riportato un esempio di utilizzo delle regole di mappatura e di un gestore. In questo esempio viene utilizzata un&#39;estensione ipotetica del Magento 1 denominata &quot;GreatBlog&quot; che è stata migliorata per il Magento 2.
+Di seguito è riportato un esempio di utilizzo di regole di mappatura e di un gestore. In questo esempio viene utilizzata un&#39;ipotetica estensione del Magento 1 denominata &quot;GreatBlog&quot;, che è stata migliorata per il Magento 2.
 
 ```xml
 <source>
@@ -70,36 +70,36 @@ Di seguito è riportato un esempio di utilizzo delle regole di mappatura e di un
 </destination>
 ```
 
-- Non eseguire la migrazione di dati non necessari dal `great_blog_index` tabella indice.
-- La tabella `great_blog_publication` è stato rinominato in `great_blog_post` nel Magento 2, quindi i dati vengono migrati alla nuova tabella.
-   - La `summary` è stato rinominato in `title`, quindi i dati vengono migrati nel nuovo campo.
-   - La `priority` Il campo è stato rimosso e non esiste più nel Magento 2.
-   - I dati nel `body` Il campo ha cambiato formato e deve essere elaborato dal gestore personalizzato: `\Migration\Handler\GreatBlog\NewFormat`.
-- Una nuova funzionalità di valutazione è stata sviluppata per l&#39;estensione &quot;GreatBlog&quot; nel Magento 2.
-   - Nuovo `great_blog_rating` tabella creata.
-   - Nuovo `great_blog_post.rating` campo creato.
+- Non eseguire la migrazione di dati non necessari da `great_blog_index` tabella indice.
+- Tabella `great_blog_publication` è stato rinominato in `great_blog_post` nel Magento 2, quindi i dati vengono migrati alla nuova tabella.
+   - Il `summary` il campo è stato rinominato in `title`, quindi i dati vengono migrati al nuovo campo.
+   - Il `priority` è stato rimosso e non esiste più nel Magento 2.
+   - I dati in `body` il campo ha cambiato formato e deve essere elaborato dal gestore personalizzato: `\Migration\Handler\GreatBlog\NewFormat`.
+- Una nuova funzione di valutazione è stata sviluppata per l&#39;estensione &quot;GreatBlog&quot; nel Magento 2.
+   - Una nuova `great_blog_rating` tabella creata.
+   - Una nuova `great_blog_post.rating` è stato creato.
 
-### Estendi la mappatura in altri passaggi
+### Estendere la mappatura in altri passaggi
 
-Altri passaggi supportano la mappatura, ad esempio [Passaggio EAV](technical-specification.md#eav-step) e il Passaggio Attributi del cliente . Questi passaggi eseguono la migrazione di un elenco predefinito di tabelle di Magento. Ad esempio, supponiamo che l&#39;estensione &quot;GreatBlog&quot; abbia un campo aggiuntivo nel `eav_attribute` tabella e nome modificati nel Magento 2. Poiché la tabella viene elaborata dalla [Passaggio EAV](technical-specification.md#eav-step), le regole di mappatura devono essere scritte per `map-eav.xml` file. La `map.xml` e `map-eav.xml` i file utilizzano gli stessi `map.xsd` schema, pertanto le regole di mappatura rimangono le stesse.
+Altri passaggi supportano la mappatura, ad esempio [Passaggio EAV](technical-specification.md#eav-step) e il passaggio Attributi del cliente. Questi passaggi eseguono la migrazione di un elenco predefinito di tabelle di Magento. Ad esempio, supponiamo che l&#39;estensione &quot;GreatBlog&quot; abbia un campo aggiuntivo nel `eav_attribute` e il nome è stato modificato nel Magento 2. Poiché la tabella viene elaborata da [Passaggio EAV](technical-specification.md#eav-step), le regole di mappatura devono essere scritte per `map-eav.xml` file. Il `map.xml` e `map-eav.xml` i file utilizzano lo stesso `map.xsd` dello schema, in modo che le regole di mappatura rimangano le stesse.
 
 ## Modifiche principali al formato e alla struttura dei dati
 
-Oltre al Passaggio mappa, ci sono altri passaggi nel `config.xml` file che eseguono la migrazione dei dati con modifiche rilevanti del formato e della struttura, tra cui:
+Oltre al Passaggio mappa, in sono disponibili altri passaggi `config.xml` file per la migrazione dei dati con modifiche principali di formato e struttura, tra cui:
 
-- [Passaggio Di Riscrittura Url](technical-specification.md#url-rewrite-step)
+- [Passaggio Riscrittura Url](technical-specification.md#url-rewrite-step)
 - Passaggio OrderGrids
 - [Passaggio EAV](technical-specification.md#eav-step)
 
-A differenza di [Passaggio mappa](technical-specification.md#map-step), questi passaggi eseguono la scansione di un elenco predefinito di tabelle anziché di tutte le tabelle.
+A differenza della [Passaggio mappa](technical-specification.md#map-step), questi passaggi eseguono la scansione di un elenco predefinito di tabelle anziché di tutte le tabelle.
 
-Per modifiche principali al formato dei dati e alla struttura, crea un passaggio personalizzato.
+Per modifiche principali al formato e alla struttura dei dati, crea un passaggio personalizzato.
 
 ### Creare un passaggio personalizzato
 
-Utilizzando lo stesso esempio &quot;GreatBlog&quot;, supponi che l&#39;estensione abbia una tabella nel Magento 1, ma sia stata riprogettata per avere due tabelle nel Magento 2.
+Utilizzando lo stesso esempio di &quot;GreatBlog&quot;, supponiamo che l’estensione abbia una tabella nel Magento 1, ma sia stata riprogettata per avere due tabelle nel Magento 2.
 
-Nel Magento 1 c&#39;era un singolo `greatblog_post` tabella:
+Nel Magento 1, c&#39;era un solo `greatblog_post` tabella:
 
 ```text
 | Field     | Type     |
@@ -121,7 +121,7 @@ Nel Magento 2, una nuova tabella per i tag `greatblog_post_tags` è stato introd
 | sort_order | SMALLINT |
 ```
 
-Magento 2 `greatblog_post` la tabella ora si presenta così:
+MAGENTO 2 `greatblog_post` la tabella ora si presenta così:
 
 ```text
 | Field     | Type     |
@@ -132,7 +132,7 @@ Magento 2 `greatblog_post` la tabella ora si presenta così:
 | author_id | SMALLINT |
 ```
 
-Per migrare tutti i dati dalla struttura delle tabelle precedenti a una nuova, è possibile creare un passaggio personalizzato nella `config.xml` file. Ad esempio:
+Per migrare tutti i dati dalla vecchia struttura delle tabelle a una nuova, puoi creare un passaggio personalizzato in `config.xml` file. Ad esempio:
 
 ```xml
 <steps mode="data">
@@ -152,23 +152,23 @@ Per migrare tutti i dati dalla struttura delle tabelle precedenti a una nuova, �
 </steps>
 ```
 
-Lo strumento esegue i passaggi in base alla loro posizione nel `config.xml` file; dall&#39;alto verso il basso. Nel nostro esempio, il `GreatBlog Step` corre per ultimo.
+Lo strumento esegue i passi in base alla loro posizione all&#39;interno della `config.xml` dall&#39;alto verso il basso. Nel nostro esempio, il `GreatBlog Step` viene eseguito per ultimo.
 
 I passaggi possono includere quattro tipi di classi:
 
 - Controllo dell’integrità
 - Distribuzione dei dati
-- Controllo del volume
-- Distribuzione delta
+- Controllo volume
+- Consegna delta
 
 >[!NOTE]
 >
->Fai riferimento a [Configurazione](technical-specification.md#configuration), [Passaggio interno](technical-specification.md#step-internals), [Fasi](technical-specification.md#step-stages)e [Modalità di esecuzione](technical-specification.md#running-modes) per ulteriori informazioni.
+>Fai riferimento a [Configurazione](technical-specification.md#configuration), [Interni del passaggio](technical-specification.md#step-internals), [Fasi](technical-specification.md#step-stages), e [Modalità di esecuzione](technical-specification.md#running-modes) per ulteriori informazioni.
 
 
-Le query SQL complesse possono essere assemblate all&#39;interno di queste classi per recuperare e migrare i dati. Inoltre, queste tabelle devono essere &quot;ignorate&quot; nel [Passaggio mappa](technical-specification.md#map-step) perché esegue la scansione di tutte le tabelle esistenti e tenta di eseguire la migrazione dei dati a meno che non si trovi nel `<ignore>` del `map.xml` file.
+In queste classi è possibile assemblare query SQL complesse per recuperare e migrare i dati. Inoltre, queste tabelle devono essere &quot;ignorate&quot; nella sezione [Passaggio mappa](technical-specification.md#map-step) perché analizza tutte le tabelle esistenti e tenta di migrare i dati a meno che non si trovino nel `<ignore>` tag di `map.xml` file.
 
-Per il controllo dell’integrità, definisci un file di mappa aggiuntivo nel `config.xml` per verificare che la struttura delle tabelle sia quella prevista.
+Per il controllo dell&#39;integrità, definisci un file di mappa aggiuntivo in `config.xml` per verificare che la struttura delle tabelle sia quella prevista.
 
 ```xml
 <config xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
@@ -204,7 +204,7 @@ File mappa `map-greatblog.xml`:
 </map>
 ```
 
-Classe di controllo dell’integrità `Vendor\Migration\Step\GreatBlog\Integrity` Estensioni `Migration\App\Step\AbstractIntegrity` e contiene `perform` metodo di verifica della struttura della tabella:
+Classe di controllo dell&#39;integrità `Vendor\Migration\Step\GreatBlog\Integrity` si estende `Migration\App\Step\AbstractIntegrity` e contiene `perform` metodo di verifica della struttura della tabella:
 
 ```php
 class Integrity extends \Migration\App\Step\AbstractIntegrity
@@ -247,7 +247,7 @@ class Integrity extends \Migration\App\Step\AbstractIntegrity
 }
 ```
 
-Successivamente, è necessario creare una classe per l&#39;elaborazione e il salvataggio dei dati nel database di Magento 2 `Vendor\Migration\Step\GreatBlog\Data`:
+Successivamente, è necessario creare una classe per l&#39;elaborazione e il salvataggio dei dati nel database del Magento 2 `Vendor\Migration\Step\GreatBlog\Data`:
 
 ```php
 class Data implements \Migration\App\Step\StageInterface
@@ -325,7 +325,7 @@ class Data implements \Migration\App\Step\StageInterface
 }
 ```
 
-In una classe Volume `Vendor\Migration\Step\GreatBlog\Volume`, verifichiamo se i dati sono stati completamente migrati:
+In una classe Volume `Vendor\Migration\Step\GreatBlog\Volume`, verifichiamo che i dati siano stati completamente migrati:
 
 ```php
 class Volume extends \Migration\App\Step\AbstractVolume
@@ -354,7 +354,7 @@ class Volume extends \Migration\App\Step\AbstractVolume
 }
 ```
 
-Per aggiungere la funzionalità di migrazione delta, aggiungi un nuovo gruppo al `deltalog.xml` file. In `group`, specifica il nome delle tabelle da controllare per le modifiche:
+Per aggiungere la funzionalità di migrazione delta, aggiungi un nuovo gruppo al `deltalog.xml` file. In entrata `group`, specificare il nome delle tabelle da controllare per le modifiche:
 
 ```xml
 <groups>
@@ -365,7 +365,7 @@ Per aggiungere la funzionalità di migrazione delta, aggiungi un nuovo gruppo al
 </groups>
 ```
 
-Quindi, crea la `Delta` Classe `Vendor\Migration\Step\GreatBlog\Delta` che si estende `Migration\App\Step\AbstractDelta`:
+Quindi, crea il `Delta` classe `Vendor\Migration\Step\GreatBlog\Delta` che si estende `Migration\App\Step\AbstractDelta`:
 
 ```php
 class Delta extends \Migration\App\Step\AbstractDelta
@@ -405,10 +405,10 @@ class Delta extends \Migration\App\Step\AbstractDelta
 }
 ```
 
-Dopo l’implementazione personalizzata dei passaggi fornita negli esempi, il sistema prende i dati dalla tabella a un Magento 1, li elabora utilizzando `Vendor\Migration\Step\GreatBlog\Data` e memorizzare i dati in due tabelle del Magento 2. I record nuovi e modificati vengono consegnati alla migrazione delta utilizzando `Vendor\Migration\Step\GreatBlog\Delta` classe.
+Dopo l’implementazione del passaggio personalizzato fornito negli esempi, il sistema prende i dati dalla tabella del singolo Magento 1 ed elaborarli utilizzando `Vendor\Migration\Step\GreatBlog\Data` e memorizzare i dati in due tabelle del Magento 2. I record nuovi e modificati vengono consegnati durante la migrazione delta utilizzando `Vendor\Migration\Step\GreatBlog\Delta` classe.
 
-## Metodi di estensione vietati
+## Metodi di estensione proibiti
 
-Dal momento che [!DNL Data Migration Tool] e il Magento 2 sono in costante evoluzione, i passaggi e i gestori esistenti sono soggetti a cambiamenti. Si consiglia vivamente di non ignorare il comportamento di passaggi come il [Passaggio mappa](technical-specification.md#map-step), [Passaggio di riscrittura URL](technical-specification.md#url-rewrite-step), e gestori estendendo le loro classi.
+Poiché il [!DNL Data Migration Tool] Il Magento 2 è in continua evoluzione e le fasi e i gestori esistenti sono soggetti a modifiche. Si consiglia vivamente di non ignorare il comportamento di passaggi come [Passaggio mappa](technical-specification.md#map-step), [Passaggio di riscrittura URL](technical-specification.md#url-rewrite-step), e i gestori estendendo le relative classi.
 
-Alcuni passaggi non supportano la mappatura e non possono essere modificati senza modificare il codice. Puoi scrivere un passaggio aggiuntivo che modifica i dati alla fine della migrazione o creare un [Problema GitHub](https://github.com/magento/data-migration-tool/issues) e chiedi un nuovo punto di estensione sul passaggio esistente.
+Alcuni passaggi non supportano la mappatura e non possono essere modificati senza modificare il codice. È possibile scrivere un ulteriore passaggio che modifichi i dati al termine della migrazione oppure creare un [Problema GitHub](https://github.com/magento/data-migration-tool/issues) e chiedere un nuovo punto di estensione sul passaggio esistente.

@@ -1,29 +1,29 @@
 ---
 title: Prerequisiti per la distribuzione
-description: Visualizza un elenco di prerequisiti per la distribuzione di Commerce in un sistema di sviluppo, build o produzione.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+description: Consulta un elenco di prerequisiti per la distribuzione di Commerce in un sistema di sviluppo, build o produzione.
+exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
 
 ---
 
-
 # Prerequisiti per i sistemi di sviluppo, generazione e produzione
 
-Le autorizzazioni e la proprietà dei file devono essere coerenti tra i sistemi di sviluppo, generazione e produzione. Per far funzionare questa operazione, è necessario:
+Le autorizzazioni e la proprietà dei file devono essere coerenti tra i sistemi di sviluppo, generazione e produzione. Per eseguire questa operazione, è necessario:
 
 - Tutti i seguenti elementi:
 
-   - Imposta lo stesso nome utente proprietario del file system su tutti i sistemi
-   - Assicurati che il server web venga eseguito come lo stesso utente su tutti i sistemi
-   - Assicurati che il proprietario del file system sia nel gruppo del server web su tutti i sistemi
+   - Impostare lo stesso nome utente proprietario del file system su tutti i sistemi
+   - Assicurati che il server web funzioni come lo stesso utente su tutti i sistemi
+   - Verificare che il proprietario del file system si trovi nel gruppo di server Web su tutti i sistemi
 
-- Modifica le autorizzazioni e la proprietà del file system Commerce su ogni sistema in base alle esigenze utilizzando le seguenti linee guida:
+- Modifica le autorizzazioni e la proprietà del file system di Commerce su ciascun sistema in base alle esigenze, utilizzando le seguenti linee guida:
 
-   - Sviluppo e creazione: [Impostare la proprietà e le autorizzazioni pre-installazione (due utenti)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
-   - Produzione: [Proprietà e autorizzazioni del commercio nello sviluppo e nella produzione](file-system-permissions.md)
+   - Sviluppo e creazione: [Impostare le autorizzazioni e la proprietà della preinstallazione (due utenti)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
+   - Produzione: [Proprietà e autorizzazioni commerciali in sviluppo e produzione](file-system-permissions.md)
 
 >[!INFO]
 >
->Se si sceglie questo approccio, è necessario impostare le autorizzazioni e la proprietà del file system ogni volta che si estrae il codice dal sistema di compilazione (se il proprietario del file system o l&#39;utente del server web sono diversi sul sistema di generazione).
+>Se si sceglie questo approccio, è necessario impostare le autorizzazioni e la proprietà del file system ogni volta che si richiama il codice dal sistema di build (se il proprietario del file system o l&#39;utente del server Web sono diversi nel sistema di build).

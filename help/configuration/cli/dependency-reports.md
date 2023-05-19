@@ -1,45 +1,45 @@
 ---
-title: Rapporti di dipendenza
+title: Rapporti sulle dipendenze
 description: Crea rapporti che mostrano i totali per le dipendenze di moduli, circolari e framework.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
 
 ---
 
-
-# Rapporti di dipendenza
+# Rapporti sulle dipendenze
 
 {{file-system-owner}}
 
-Puoi eseguire i seguenti tipi di report:
+Puoi eseguire i seguenti tipi di rapporti:
 
-- **Dipendenze dal modulo**: Mostra il numero totale di dipendenze tra i moduli e se le dipendenze sono dure o morbide.
-- **Dipendenze circolari**: Mostra il numero totale di catene di dipendenza e il numero e l&#39;elenco di dipendenze circolari per ciascun modulo.
-- **Dipendenze del framework**: Mostra il numero totale di dipendenze dal framework Commerce per modulo (incluso il numero totale di voci del framework per ogni libreria).
+- **Dipendenze modulo**: mostra il numero totale di dipendenze tra i moduli e se le dipendenze sono rigide o morbide.
+- **Dipendenze circolari**: mostra il numero totale di catene di dipendenze e il numero e l’elenco delle dipendenze circolari per ciascun modulo.
+- **Dipendenze framework**: mostra il numero totale di dipendenze nel framework Commerce per modulo (incluso il numero totale di voci di framework per ogni libreria).
 
 Una dipendenza in un commento è anche una dipendenza.
 
-## Eseguire rapporti di dipendenza
+## Eseguire rapporti sulle dipendenze
 
-Opzioni di comando:
+Opzioni comando:
 
 ```bash
 bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework} [-d|--directory="<path>"] [-o|--output="<path and filename"]
 ```
 
-Nella tabella seguente sono illustrate le opzioni, i parametri e i valori di questo comando.
+Nella tabella seguente vengono illustrate le opzioni, i parametri e i valori di questo comando.
 
 | Parametro | Valore | Obbligatorio |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------- | --------- |
-| `show-modules` | Rapporto sulle dipendenze del modulo. | Sì |
+| `show-modules` | Rapporto dipendenze modulo. | Sì |
 | `show-modules-circular` | Rapporto dipendenze circolari. | Sì |
-| `show-framework` | Rapporto sulle dipendenze del framework. | Sì |
-| `-d --directory` | Percorso della directory di base per iniziare la ricerca dei dati del report. | No |
-| `-o --output` | Specifica il percorso assoluto del file system e il nome del file di output del valore separato da virgole (csv) per il report. | No |
+| `show-framework` | Rapporto dipendenze framework. | Sì |
+| `-d --directory` | Percorso della directory di base per iniziare la ricerca dei dati del rapporto. | No |
+| `-o --output` | Specifica il percorso assoluto del file system e il nome del file di output con valori separati da virgola (csv) per il report. | No |
 
-Se non viene passato alcun nome di file o directory come argomento, viene utilizzata la seguente radice dell&#39;applicazione come directory predefinita e vengono utilizzati i seguenti nomi di file predefiniti:
+Se come argomento non viene passata alcuna directory o nome file, come directory predefinita viene utilizzata la directory principale dell&#39;applicazione seguente e vengono utilizzati i seguenti nomi di file predefiniti:
 
 | Comando | Nome file |
 | ----------------------------------------------------- | ----------------------------------- |
@@ -47,9 +47,9 @@ Se non viene passato alcun nome di file o directory come argomento, viene utiliz
 | `bin/magento info:dependencies:show-modules-circular` | `modules-circular-dependencies.csv` |
 | `bin/magento info:dependencies:show-framework` | `framework-dependencies.csv` |
 
-### Rapporto sulle dipendenze del modulo di esempio
+### Rapporto dipendenze modulo di esempio
 
-Di seguito è riportata una parte dell’output del report delle dipendenze di un modulo di esempio:
+Di seguito è riportata una parte dell&#39;output per un report delle dipendenze di un modulo di esempio:
 
 ```terminal
 "","All","Hard","Soft"
@@ -71,9 +71,9 @@ Di seguito è riportata una parte dell’output del report delle dipendenze di u
 " -- magento/module-import-export","","1","0"
 ```
 
-### Esempio di rapporto sulle dipendenze circolari
+### Esempio di rapporto dipendenze circolari
 
-Di seguito è riportata una parte dell&#39;output per un report di dipendenze circolari di esempio:
+Di seguito è riportata una parte dell&#39;output per un report di esempio sulle dipendenze circolari.
 
 ```terminal
 "Circular dependencies:","Total number of chains"
@@ -97,9 +97,9 @@ Di seguito è riportata una parte dell&#39;output per un report di dipendenze ci
 "magento/module-config->magento/module-backend->magento/module-sales->magento/module-checkout->magento/module-customer->magento/module-review->magento/module-catalog->magento/module-catalog-rule->magento/module-rule->magento/module-eav->magento/module-config"
 ```
 
-### Rapporto sulle dipendenze del framework di esempio
+### Esempio di report dipendenze framework
 
-Di seguito è riportata una parte dell&#39;output per un report delle dipendenze del framework di esempio:
+Di seguito è riportata una parte dell&#39;output per un report di esempio sulle dipendenze del framework:
 
 ```terminal
 "Dependencies of framework:","Total number"

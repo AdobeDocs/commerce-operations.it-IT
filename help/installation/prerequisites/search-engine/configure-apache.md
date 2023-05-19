@@ -1,13 +1,13 @@
 ---
 title: Configurare Apache per il motore di ricerca
 description: Per configurare un motore di ricerca con il server web Apache per le installazioni locali di Adobe Commerce e Magenti Open Source, segui la procedura riportata di seguito.
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
 
 ---
-
 
 # Configurare Apache per il motore di ricerca
 

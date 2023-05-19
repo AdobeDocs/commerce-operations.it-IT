@@ -1,47 +1,47 @@
 ---
-title: Configurare un lavoro cron personalizzato e un gruppo cron (esercitazione)
-description: Utilizza questa esercitazione dettagliata per creare un lavoro cron personalizzato.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+title: Configurare un processo cron personalizzato e un gruppo cron (tutorial)
+description: Utilizza questo tutorial per creare un processo cron personalizzato.
+exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
 
 ---
 
-
 # Configurare un processo cron personalizzato
 
-Questa esercitazione dettagliata mostra come creare un lavoro cron personalizzato ed eventualmente un gruppo cron in un modulo di esempio. Puoi utilizzare un modulo già in tuo possesso o puoi utilizzare un modulo di esempio dal nostro [`magento2-samples` archivio][samples].
+Questa esercitazione dettagliata mostra come creare un processo cron personalizzato e facoltativamente un gruppo cron in un modulo di esempio. Puoi utilizzare un modulo che già disponi oppure un modulo di esempio dal nostro [`magento2-samples` archivio][samples].
 
-L’esecuzione del processo cron comporta l’aggiunta di una riga al `cron_schedule` tabella con il nome del cron job, `custom_cron`.
+L’esecuzione del processo cron comporta l’aggiunta di una riga al `cron_schedule` tabella con il nome del processo cron, `custom_cron`.
 
-Inoltre, viene illustrato come creare facoltativamente un gruppo cron, che è possibile utilizzare per eseguire lavori cron personalizzati con impostazioni diverse dalle impostazioni predefinite dell’applicazione Commerce.
+Viene inoltre illustrato come creare facoltativamente un gruppo cron, che è possibile utilizzare per eseguire processi cron personalizzati con impostazioni diverse dai valori predefiniti dell’applicazione Commerce.
 
-In questa esercitazione si assume quanto segue:
+In questo tutorial, si presuppone quanto segue:
 
-- L’applicazione Commerce è installata in `/var/www/html/magento2`
+- L’applicazione Commerce viene installata in `/var/www/html/magento2`
 - Il nome utente e la password del database Commerce sono entrambi `magento`
-- Esegui tutte le azioni come [proprietario del file system](../../installation/prerequisites/file-system/overview.md)
+- Tutte le azioni vengono eseguite come [proprietario del file system](../../installation/prerequisites/file-system/overview.md)
 
-## Passaggio 1: Ottieni un modulo di esempio
+## Passaggio 1: ottenere un modulo di esempio
 
-Per impostare un processo cron personalizzato, è necessario un modulo di esempio. Suggeriamo la `magento-module-minimal` modulo .
+Per impostare un processo cron personalizzato, è necessario un modulo di esempio. Suggeriamo `magento-module-minimal` modulo.
 
-Se disponi già di un modulo di esempio, puoi utilizzarlo; salta questo passaggio e il passaggio successivo e continua con il passaggio 3: Crea una classe da eseguire cron.
+Se disponi già di un modulo di esempio, puoi utilizzarlo; salta questo passaggio e quello successivo e continua con il Passaggio 3: Creare una classe per eseguire cron.
 
 **Per ottenere un modulo di esempio**:
 
-1. Accedi al tuo server Commerce come o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
-1. Passa a una directory che non si trova nella directory principale dell’applicazione Commerce (ad esempio, nella directory principale).
+1. Accedi al server Commerce come, o passa a, il [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+1. Passa a una directory che non si trova nella directory principale dell’applicazione Commerce (ad esempio, la home directory).
 1. Clona il [`magento2-samples` archivio][samples].
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   Se il comando non riesce con l&#39;errore `Permission denied (publickey).`, devi [aggiungi la tua chiave pubblica SSH a GitHub.com][git-ssh].
+   Se il comando non riesce e viene visualizzato l&#39;errore `Permission denied (publickey).`, è necessario [aggiungi la chiave pubblica SSH a GitHub.com][git-ssh].
 
-1. Crea una directory in cui copiare il codice di esempio:
+1. Creare una directory in cui copiare il codice di esempio:
 
    ```bash
    mkdir -p /var/www/html/magento2/app/code/Magento/SampleMinimal
@@ -59,7 +59,7 @@ Se disponi già di un modulo di esempio, puoi utilizzarlo; salta questo passaggi
    ls -al /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
-   Dovresti vedere il seguente risultato:
+   Dovresti visualizzare il seguente risultato:
 
    ```terminal
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
@@ -73,7 +73,7 @@ Se disponi già di un modulo di esempio, puoi utilizzarlo; salta questo passaggi
    drwxrwsr-x.   3 magento_user apache  4096 Oct 30 13:19 Test
    ```
 
-1. Aggiorna il database e lo schema Commerce:
+1. Aggiorna il database e lo schema di Commerce:
 
    ```bash
    bin/magento setup:upgrade
@@ -85,7 +85,7 @@ Se disponi già di un modulo di esempio, puoi utilizzarlo; salta questo passaggi
    bin/magento cache:clean
    ```
 
-## Passaggio 2: Verifica il modulo di esempio
+## Passaggio 2: verificare il modulo di esempio
 
 Prima di continuare, verifica che il modulo di esempio sia registrato e abilitato.
 
@@ -103,21 +103,21 @@ Prima di continuare, verifica che il modulo di esempio sia registrato e abilitat
 
 >[!TIP]
 >
->Se l&#39;output indica che la `Module does not exist`, revisione [Passaggio 1](#step-1-get-a-sample-module) con attenzione. Assicurati che il codice sia nella directory corretta. Controllo ortografia e caso sono importanti; se qualcosa è diverso, il modulo non verrà caricato. Inoltre, non dimenticare di eseguire `magento setup:upgrade`.
+>Se l&#39;output indica che `Module does not exist`, revisione [Passaggio 1](#step-1-get-a-sample-module) con attenzione. Verifica che il codice si trovi nella directory corretta. L’ortografia e la distinzione tra maiuscole e minuscole sono importanti; se qualcosa è diverso, il modulo non viene caricato. Inoltre, non dimenticare di eseguire `magento setup:upgrade`.
 
-## Passaggio 3: Crea una classe per eseguire cron
+## Passaggio 3: creare una classe per eseguire cron
 
-Questo passaggio mostra una classe semplice per creare un lavoro cron. La classe scrive solo una riga nel `cron_schedule` tabella che conferma la configurazione completata.
+Questo passaggio mostra una classe semplice per creare un processo cron. La classe scrive solo una riga nel `cron_schedule` tabella che ne conferma la corretta configurazione.
 
 Per creare una classe:
 
-1. Crea una directory per la classe e passa a tale directory:
+1. Creare una directory per la classe e passare a tale directory:
 
    ```bash
    mkdir /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron && cd /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron
    ```
 
-1. Creazione di un file denominato `Test.php` in tale directory con il seguente contenuto:
+1. È stato creato un file denominato `Test.php` in tale directory con i seguenti contenuti:
 
    ```php
    <?php
@@ -143,11 +143,11 @@ Per creare una classe:
    }
    ```
 
-## Passaggio 4: Crea `crontab.xml`
+## Passaggio 4: creare `crontab.xml`
 
-La `crontab.xml` file imposta una pianificazione per eseguire il codice cron personalizzato.
+Il `crontab.xml` file imposta una pianificazione per eseguire il codice cron personalizzato.
 
-Crea `crontab.xml` come segue `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc` directory:
+Crea `crontab.xml` come segue nella `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc` directory:
 
 ```xml
 <?xml version="1.0"?>
@@ -160,9 +160,9 @@ Crea `crontab.xml` come segue `/var/www/html/magento2/app/code/Magento/SampleMin
 </config>
 ```
 
-Il `crontab.xml` esegue `Magento/SampleMinimal/Cron/Test.php` una volta al minuto, con conseguente aggiunta di una riga al `cron_schedule` tabella.
+Il precedente `crontab.xml` esegue `Magento/SampleMinimal/Cron/Test.php` una volta al minuto, con conseguente aggiunta di una riga alla classe `cron_schedule` tabella.
 
-Per rendere la pianificazione cron configurabile dall&#39;amministratore, utilizza il percorso di configurazione del campo di configurazione del sistema.
+Per poter configurare la pianificazione cron dall’amministratore, utilizza il percorso di configurazione del campo di configurazione del sistema.
 
 ```xml
 <?xml version="1.0"?>
@@ -175,9 +175,9 @@ Per rendere la pianificazione cron configurabile dall&#39;amministratore, utiliz
 </config>
 ```
 
-Dove `system/config/path` è un percorso di configurazione del sistema definito in `etc/adminhtml/system.xml` di un modulo.
+Dove: `system/config/path` è un percorso di configurazione del sistema definito in `etc/adminhtml/system.xml` di un modulo.
 
-## Passaggio 5: Compili e pulizia della cache
+## Passaggio 5: compilazione e pulizia della cache
 
 Compila il codice con questo comando:
 
@@ -191,13 +191,13 @@ E pulisci la cache con questo comando:
 bin/magento cache:clean
 ```
 
-## Passaggio 6: Verifica il lavoro cron
+## Passaggio 6: verificare il processo cron
 
-Questo passaggio mostra come verificare il processo cron personalizzato utilizzando correttamente una query SQL nella `cron_schedule` tabella del database.
+Questo passaggio mostra come verificare il processo cron personalizzato correttamente utilizzando una query SQL sul `cron_schedule` tabella di database.
 
 Per verificare cron:
 
-1. Esegui processi cron Commerce:
+1. Esegui processi di Commerce cron:
 
    ```bash
    bin/magento cron:run
@@ -205,12 +205,12 @@ Per verificare cron:
 
 1. Inserisci il `magento cron:run` comando due o tre volte.
 
-   La prima volta che si immette il comando, mette in coda i lavori; successivamente, i lavori cron vengono eseguiti. Immettere il comando _almeno_ due volte.
+   La prima volta che si immette il comando, vengono messi in coda i processi, quindi vengono eseguiti i processi cron. Immetti il comando _almeno_ due volte.
 
-1. Esegui la query SQL `SELECT * from cron_schedule WHERE job_code like '%custom%'` come segue:
+1. Eseguire la query SQL `SELECT * from cron_schedule WHERE job_code like '%custom%'` come segue:
 
    1. Invio `mysql -u magento -p`
-   1. Alla `mysql>` prompt, immettere `use magento;`
+   1. Alla `mysql>` prompt, immetti `use magento;`
    1. Invio `SELECT * from cron_schedule WHERE job_code like '%custom%';`
 
       Il risultato deve essere simile al seguente:
@@ -232,31 +232,31 @@ Per verificare cron:
    cat /var/www/html/magento2/var/log/system.log
    ```
 
-   Dovresti visualizzare una o più voci come segue:
+   Dovresti visualizzare una o più voci come le seguenti:
 
    ```terminal
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
-   Questi messaggi provengono dal `execute` metodo in `Test.php`:
+   Questi messaggi provengono da `execute` metodo in `Test.php`:
 
    ```php
    public function execute() {
         $this->logger->info('Cron Works');
    ```
 
-Se il comando SQL e il registro di sistema non contengono voci, eseguire il `magento cron:run` comando ancora qualche volta e attendi. L&#39;aggiornamento del database può richiedere del tempo.
+Se il comando SQL e il log di sistema non contengono voci, eseguire il comando `magento cron:run` comando ancora qualche volta e attendi. L&#39;aggiornamento del database può richiedere del tempo.
 
-## Passaggio 7 (facoltativo): Imposta un gruppo cron personalizzato
+## Passaggio 7 (facoltativo): configurare un gruppo cron personalizzato
 
-Questo passaggio mostra come impostare facoltativamente un gruppo di cron personalizzato. È necessario impostare un gruppo cron personalizzato se si desidera che il processo cron personalizzato venga eseguito su una pianificazione diversa rispetto ad altri lavori cron (in genere, una volta al minuto) o se si desidera che diversi lavori cron personalizzati vengano eseguiti con impostazioni diverse.
+Questo passaggio mostra come impostare facoltativamente un gruppo cron personalizzato. È necessario impostare un gruppo cron personalizzato se si desidera che il processo cron personalizzato venga eseguito con una pianificazione diversa rispetto agli altri processi cron (in genere, una volta al minuto) o se si desidera che vengano eseguiti più processi cron personalizzati con impostazioni diverse.
 
 Per impostare un gruppo cron personalizzato:
 
 1. Apri `crontab.xml` in un editor di testo.
-1. Modifica `<group id="default">` a `<group id="custom_crongroup">`
+1. Cambia `<group id="default">` a `<group id="custom_crongroup">`
 1. Esci dall’editor di testo.
-1. Crea `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc/cron_groups.xml` con i seguenti contenuti:
+1. Crea `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc/cron_groups.xml` con il seguente contenuto:
 
    ```xml
    <?xml version="1.0"?>
@@ -273,15 +273,15 @@ Per impostare un gruppo cron personalizzato:
    </config>
    ```
 
-Per una descrizione del significato delle opzioni, vedi [Personalizzazione del riferimento cronologico](custom-cron-reference.md).
+Per una descrizione del significato delle opzioni, vedi [Personalizzazione del riferimento crons](custom-cron-reference.md).
 
-## Passaggio 8: Verifica il gruppo cron personalizzato
+## Passaggio 8: verificare il gruppo cron personalizzato
 
-Questo _facoltativo_ questo passaggio mostra come verificare il gruppo cron personalizzato utilizzando l’amministratore.
+Questo _facoltativo_ Questo passaggio mostra come verificare il gruppo cron personalizzato utilizzando l’amministratore.
 
 Per verificare il gruppo cron personalizzato:
 
-1. Esegui processi Commerce cron per il gruppo personalizzato:
+1. Esegui processi di Commerce cron per il gruppo personalizzato:
 
    ```bash
    php /var/www/html/magento2/bin/magento cron:run --group="custom_crongroup"
@@ -296,8 +296,8 @@ Per verificare il gruppo cron personalizzato:
    ```
 
 1. Accedi all’amministratore come amministratore.
-1. Fai clic su **Negozi** > **Impostazioni** > **Configurazione** > **Avanzate** > **Sistema**.
-1. Nel riquadro a destra, espandi **Cron**.
+1. Clic **Negozi** > **Impostazioni** > **Configurazione** > **Avanzate** > **Sistema**.
+1. Nel riquadro di destra, espandere **Cron**.
 
    Il gruppo cron viene visualizzato come segue:
 

@@ -1,13 +1,13 @@
 ---
 title: Impostazioni PHP
-description: Segui questi passaggi per installare le estensioni PHP richieste e configurare le impostazioni PHP richieste per le installazioni on-premise di Adobe Commerce e Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+description: Segui questi passaggi per installare le estensioni PHP richieste e configurare le impostazioni PHP richieste per le installazioni on-premise di Adobe Commerce e Magenti Open Source.
+exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
 
 ---
-
 
 # Impostazioni PHP
 
@@ -15,17 +15,17 @@ Questo argomento illustra come impostare le opzioni PHP richieste.
 
 >[!NOTE]
 >
->Vedi [requisiti di sistema](../system-requirements.md) per le versioni supportate di PHP.
+>Consulta [requisiti di sistema](../system-requirements.md) per le versioni supportate di PHP.
 
-## Verifica che PHP sia installato
+## Verificare che PHP sia installato
 
-La maggior parte dei sapori di Linux hanno installato PHP per impostazione predefinita. Questo argomento presuppone che sia già stato installato PHP. Per verificare se PHP è già installato, digitare nella riga di comando:
+La maggior parte delle versioni di Linux hanno PHP installato per impostazione predefinita. In questo argomento si presuppone che sia già stato installato PHP. Per verificare se PHP è già installato, nella riga di comando digitare:
 
 ```bash
 php -v
 ```
 
-Se è installato PHP, viene visualizzato un messaggio simile al seguente:
+Se PHP è installato, viene visualizzato un messaggio simile al seguente:
 
 ```terminal
 PHP 7.4.0 (cli) (built: Aug 14 2019 16:42:46) ( NTS )
@@ -35,8 +35,8 @@ Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies with Zend OPcache 
 
 Adobe Commerce e Magenti Open Source 2.4 sono compatibili con PHP 7.3, ma si consiglia di testare e utilizzare PHP 7.4.
 
-Se PHP non è installato, o è necessario un aggiornamento della versione, installalo seguendo le istruzioni per il tuo particolare gusto Linux.
-Su CentOS, [potrebbero essere necessarie ulteriori misure](https://wiki.centos.org/HowTos/php7).
+Se PHP non è installato, o è necessario un aggiornamento della versione, installarlo seguendo le istruzioni per il vostro particolare sapore Linux.
+Su CentOS, [potrebbero essere necessari ulteriori passaggi](https://wiki.centos.org/HowTos/php7).
 
 ## Verificare le estensioni installate
 
@@ -46,69 +46,69 @@ Adobe Commerce e Magenti Open Source richiedono l’installazione di un set di e
 
 Per verificare le estensioni installate:
 
-1. Elenca i moduli installati.
+1. Elencare i moduli installati.
 
    ```bash
    php -m
    ```
 
 1. Verifica che siano installate tutte le estensioni richieste.
-1. Aggiungi tutti i moduli mancanti utilizzando lo stesso flusso di lavoro utilizzato per installare PHP. Ad esempio, se utilizzi `yum` per installare PHP, i moduli PHP 7.4 possono essere aggiunti con:
+1. Aggiungi eventuali moduli mancanti utilizzando lo stesso flusso di lavoro utilizzato per l&#39;installazione di PHP. Ad esempio, se utilizzi `yum` per installare PHP, è possibile aggiungere i moduli PHP 7.4 con:
 
    ```bash
     yum -y install php74u-pdo php74u-mysqlnd php74u-opcache php74u-xml php74u-gd php74u-devel php74u-mysql php74u-intl php74u-mbstring php74u-bcmath php74u-json php74u-iconv php74u-soap
    ```
 
-## Controlla le impostazioni PHP
+## Verifica impostazioni PHP
 
 >[!WARNING]
 >
->Se utilizzi PHP 7.4.20, imposta `pcre.jit=0` nel tuo `php.ini` file. Questo aggira un PHP [bug](https://bugs.php.net/bug.php?id=81101) che impedisce il caricamento di CSS.
+>Se si utilizza PHP 7.4.20, impostare `pcre.jit=0` nel tuo `php.ini` file. Questo aggira un PHP [bug](https://bugs.php.net/bug.php?id=81101) che impedisce il caricamento di file CSS.
 
-- Impostare il fuso orario del sistema per PHP; in caso contrario, potrebbero non funzionare errori come la seguente visualizzazione durante l&#39;installazione e operazioni relative all&#39;ora come cron:
+- Impostare il fuso orario di sistema per PHP; in caso contrario, errori come il seguente display durante l&#39;installazione e operazioni correlate al tempo come cron potrebbero non funzionare:
 
 ```terminal
 PHP Warning:  date(): It is not safe to rely on the system's timezone settings. [more messages follow]
 ```
 
-- Imposta il limite di memoria PHP.
+- Impostare il limite della memoria PHP.
 
-   Le nostre raccomandazioni dettagliate sono:
+   I nostri consigli dettagliati sono:
 
-   - Compilazione del codice o distribuzione di risorse statiche, `1G`
-   - Eseguire il debug, `2G`
-   - test, `~3-4G`
+   - compilazione del codice o distribuzione di risorse statiche, `1G`
+   - Debug, `2G`
+   - Test, `~3-4G`
 
-- Aumenta i valori per il PHP `realpath_cache_size` e `realpath_cache_ttl` alle impostazioni consigliate:
+- Aumentare i valori per PHP `realpath_cache_size` e `realpath_cache_ttl` alle impostazioni consigliate:
 
    ```conf
    realpath_cache_size=10M
    realpath_cache_ttl=7200
    ```
 
-   Queste impostazioni consentono ai processi PHP di memorizzare in cache i percorsi dei file invece di cercarli ogni volta che una pagina viene caricata. Vedi [Ottimizzazione delle prestazioni](https://www.php.net/manual/en/ini.core.php) nella documentazione PHP.
+   Queste impostazioni consentono ai processi PHP di memorizzare nella cache i percorsi dei file invece di cercarli ogni volta che viene caricata una pagina. Consulta [Ottimizzazione delle prestazioni](https://www.php.net/manual/en/ini.core.php) nella documentazione PHP.
 
 - Abilita [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), richiesto per Adobe Commerce e Magenti Open Source 2.1 e versioni successive.
 
-   Si consiglia di abilitare [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) per motivi di prestazioni. OPcache è abilitata in molte distribuzioni PHP.
+   È consigliabile abilitare [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) per motivi di prestazioni. OPcache è abilitata in molte distribuzioni PHP.
 
    Adobe Commerce e Magenti Open Source 2.1 e versioni successive utilizzano i commenti del codice PHP per la generazione del codice.
 
 >[!NOTE]
 >
->Per evitare problemi durante l&#39;installazione e l&#39;aggiornamento, si consiglia vivamente di applicare le stesse impostazioni PHP sia alla configurazione della riga di comando PHP che alla configurazione del plug-in del server web PHP. Per ulteriori informazioni, consulta la sezione successiva.
+>Per evitare problemi durante l&#39;installazione e l&#39;aggiornamento, si consiglia vivamente di applicare le stesse impostazioni PHP sia alla configurazione della riga di comando PHP che alla configurazione del plug-in del server Web PHP. Per ulteriori informazioni, vedere la sezione successiva.
 
-## Trova i file di configurazione PHP
+## Trova file di configurazione PHP
 
 Questa sezione illustra come trovare i file di configurazione necessari per aggiornare le impostazioni richieste.
 
 ### Trova `php.ini` file di configurazione
 
-Per trovare la configurazione del server web, esegui una [`phpinfo.php` file](optional-software.md#create-phpinfophp) nel browser web e cerca `Loaded Configuration File` come segue:
+Per trovare la configurazione del server web, esegui una [`phpinfo.php` file](optional-software.md#create-phpinfophp) nel browser web e cercare il `Loaded Configuration File` come segue:
 
-![Pagina di informazioni PHP](../../assets/installation/config_phpini-webserver.png)
+![Pagina informazioni PHP](../../assets/installation/config_phpini-webserver.png)
 
-Per individuare la configurazione della riga di comando PHP, immettere
+Per individuare la configurazione della riga di comando PHP, immettete
 
 ```bash
 php --ini | grep "Loaded Configuration File"
@@ -116,11 +116,11 @@ php --ini | grep "Loaded Configuration File"
 
 >[!NOTE]
 >
->Se ne hai solo uno `php.ini` file, apporta le modifiche in quel file. Se ne hai due `php.ini` file, apporta le modifiche *tutto* file. In caso contrario, le prestazioni potrebbero essere imprevedibili.
+>Se ne hai solo uno `php.ini` file, apportare le modifiche in tale file. Se ne hai due `php.ini` , apportare le modifiche in *tutto* file. In caso contrario, le prestazioni potrebbero risultare imprevedibili.
 
 ### Trova impostazioni di configurazione OPcache
 
-Le impostazioni PHP OPcache si trovano in genere in `php.ini` o `opcache.ini`. La posizione potrebbe dipendere dal sistema operativo e dalla versione PHP. Il file di configurazione OPcache potrebbe avere un `opcache` sezione o impostazioni come `opcache.enable`.
+Le impostazioni PHP OPcache si trovano in genere in `php.ini` o `opcache.ini`. La posizione potrebbe dipendere dal sistema operativo in uso e dalla versione PHP. Il file di configurazione OPcache potrebbe avere `opcache` sezione o impostazioni come `opcache.enable`.
 
 Utilizza le seguenti linee guida per trovarlo:
 
@@ -136,23 +136,23 @@ Utilizza le seguenti linee guida per trovarlo:
    sudo find / -name 'opcache.ini'
    ```
 
-- server web nginx con PHP-FPM: `/etc/php/7.2/fpm/php.ini`
+- Server web nginx con PHP-FPM: `/etc/php/7.2/fpm/php.ini`
 
-Se ne hai più di uno `opcache.ini`, modificateli tutti.
+Se ne hai più di uno `opcache.ini`, modificale tutte.
 
 ## Come impostare le opzioni PHP
 
 Per impostare le opzioni PHP:
 
 1. Apri un `php.ini` in un editor di testo.
-1. Individua il fuso orario del server nella [impostazioni del fuso orario](https://www.php.net/manual/en/timezones.php)
-1. Individua la seguente impostazione e rimuovi il commento se necessario:
+1. Individuare il fuso orario del server in [impostazioni del fuso orario](https://www.php.net/manual/en/timezones.php)
+1. Individua la seguente impostazione e, se necessario, rimuovi il commento:
 
    ```conf
    date.timezone =
    ```
 
-1. Aggiungi l&#39;impostazione del fuso orario trovata al passaggio 2.
+1. Aggiungere l&#39;impostazione del fuso orario specificata al passaggio 2.
 
 1. Modifica il valore di `memory_limit` a uno dei valori consigliati all&#39;inizio di questa sezione.
 
@@ -162,7 +162,7 @@ Per impostare le opzioni PHP:
    memory_limit=2G
    ```
 
-1. Aggiungi o aggiorna il `realpath_cache` configurazione per corrispondere ai seguenti valori:
+1. Aggiungi o aggiorna il `realpath_cache` affinché corrisponda ai seguenti valori:
 
    ```conf
    ;
@@ -178,9 +178,9 @@ Per impostare le opzioni PHP:
 
 1. Salva le modifiche e esci dall’editor di testo.
 
-1. Apri l&#39;altro `php.ini` (se sono diversi) e apporta le stesse modifiche.
+1. Apri l’altro `php.ini` (se sono diversi) e apporta le stesse modifiche.
 
-## Imposta le opzioni OPcache
+## Impostare le opzioni OPcache
 
 Per impostare `opcache.ini` opzioni:
 
@@ -188,12 +188,12 @@ Per impostare `opcache.ini` opzioni:
 
    - `opcache.ini` (CentOS)
    - `php.ini` (Ubuntu)
-   - `/etc/php/7.2/fpm/php.ini` (server web nginx (CentOS o Ubuntu)
+   - `/etc/php/7.2/fpm/php.ini` (server web nginx (CentOS o Ubuntu))
 
-1. Individua `opcache.save_comments` e, se necessario, rimuovilo dal commento.
+1. Individua `opcache.save_comments` e, se necessario, rimuovi il commento.
 1. Assicurati che il relativo valore sia impostato su `1`.
 1. Salva le modifiche e esci dall’editor di testo.
-1. Riavvia il server Web:
+1. Riavviare il server Web:
 
    - Apache, Ubuntu: `service apache2 restart`
    - Apache, CentOS: `service httpd restart`
@@ -201,10 +201,10 @@ Per impostare `opcache.ini` opzioni:
 
 ## Risoluzione dei problemi
 
-Per assistenza nella risoluzione dei problemi PHP, consulta i seguenti articoli del supporto Adobe Commerce:
+Consulta i seguenti articoli di supporto Adobe Commerce per assistenza nella risoluzione dei problemi PHP:
 
-- [Errore di versione PHP o errore 404 quando si accede ad Adobe Commerce nel browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [Errori delle impostazioni PHP](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
-- [Estensione PHP mcrypt non installata correttamente](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
-- [Problemi relativi al controllo di preparazione della versione PHP](https://support.magento.com/hc/en-us/articles/360033546411)
-- [Errori e soluzioni comuni PHP Fatal](https://support.magento.com/hc/en-us/articles/360030568432)
+- [Errore di versione PHP o errore 404 durante l’accesso ad Adobe Commerce nel browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
+- [Errori impostazioni PHP](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
+- [Estensione PHP Mcrypt non installata correttamente](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
+- [Problemi relativi al controllo della disponibilità della versione PHP](https://support.magento.com/hc/en-us/articles/360033546411)
+- [Errori irreversibili PHP comuni e soluzioni](https://support.magento.com/hc/en-us/articles/360030568432)

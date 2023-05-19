@@ -5,13 +5,13 @@ source-wordcount: '94'
 ht-degree: 0%
 
 ---
-# Aggiorna la configurazione condivisa
+# Aggiornare la configurazione condivisa
 
 **Per aggiornare la configurazione**:
 
-1. Accedi al tuo sistema di sviluppo come proprietario del file system o passa a tale proprietario.
+1. Accedi al sistema di sviluppo come proprietario del file system o passa a tale proprietario.
 
-1. Passa alla radice dell&#39;applicazione ed esegui il comando dump.
+1. Passare alla radice dell&#39;applicazione ed eseguire il comando dump.
 
    ```bash
    cd <Magento root dir>
@@ -25,7 +25,7 @@ ht-degree: 0%
    php bin/magento app:config:dump
    ```
 
-1. Conferma che `app/etc/config.php` è stato aggiornato.
+1. Conferma che `app/etc/config.php` aggiornata.
 
    ```bash
    git status
@@ -43,7 +43,7 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >Do _not_ invia modifiche al `generated`, `pub/media`oppure `pub/static` directory al controllo del codice sorgente. Questi file vengono generati sul sistema di compilazione. Il sistema di sviluppo ha probabilmente codici, temi e così via che non sono pronti per l&#39;uso sul sistema di produzione.
+   >Esegui _non_ invia modifiche al `generated`, `pub/media`, o `pub/static` directory al controllo del codice sorgente. Puoi generare questi file sul sistema di build. Il sistema di sviluppo ha probabilmente codice, temi e così via, che non sono pronti per essere utilizzati nel sistema di produzione.
 
 1. Archivia le modifiche apportate a `app/etc/config.php` solo al controllo del codice sorgente.
 

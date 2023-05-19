@@ -1,37 +1,37 @@
 ---
-title: Esecuzione di test di unità
-description: Esegui unit test definiti nella base di codice Adobe Commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+title: Eseguire unit test
+description: Esegui unit test definiti nella base di codice di Adobe Commerce.
+exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
 
 ---
 
-
-# Esecuzione di test di unità
+# Eseguire unit test
 
 {{file-system-owner}}
 
-Questo comando esegue un set di test definiti nella base di codice Commerce 2. Puoi eseguire tutti i test o i test selezionati. Ogni volta che viene specificato un tipo non supportato, il programma termina ed elenca tutti i tipi disponibili. Dopo l’esecuzione, viene visualizzato un rapporto dettagliato che mostra l’esecuzione del test e i risultati.
+Questo comando esegue un set di test definiti nella base di codice di Commerce 2. È possibile eseguire tutti i test o i test selezionati. Ogni volta che viene specificato un tipo non supportato, il programma termina ed elenca tutti i tipi disponibili. Dopo l’esecuzione, viene visualizzato un rapporto dettagliato che mostra l’esecuzione dei test e i relativi risultati.
 
 ## Prerequisiti
 
-Prima di eseguire questo comando, effettuare le seguenti operazioni _deve_ true:
+Prima di eseguire questo comando, procedere come segue _deve_ sii vero:
 
-- La `Magento_Developer` Il modulo deve essere abilitato. È possibile abilitarlo come segue:
+- Il `Magento_Developer` il modulo deve essere abilitato. Puoi abilitarlo come segue:
 
    ```bash
    bin/magento module:enable [--force] Magento_Developer
    ```
 
-   Utilizza la `--force` solo se necessario.
+   Utilizza il `--force` solo se necessario.
 
 - Il sistema deve essere configurato per eseguire i test desiderati.
 
-Ad esempio, per eseguire i test di integrazione, devi copiare `dev/tests/integration/etc/install-config-mysql.php.dist` a `dev/tests/integration/etc/install-config-mysql.php` e modificalo in base alle esigenze del tuo ambiente.
+Ad esempio, per eseguire gli integration test, devi copiare `dev/tests/integration/etc/install-config-mysql.php.dist` a `dev/tests/integration/etc/install-config-mysql.php` e modificarlo in base all’ambiente in uso.
 
-## Prove in corso
+## Esecuzione dei test
 
 Utilizzo comando:
 
@@ -45,13 +45,13 @@ Per elencare i tipi di test disponibili:
 bin/magento dev:tests:run --help
 ```
 
-Restituzione del campione:
+Esempio restituito:
 
 ```terminal
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 
-Ad esempio, per eseguire i test di integrazione:
+Ad esempio, per eseguire gli integration test:
 
 ```bash
 bin/magento dev:tests:run integration

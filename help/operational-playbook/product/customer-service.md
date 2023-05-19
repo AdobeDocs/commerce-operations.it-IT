@@ -1,6 +1,6 @@
 ---
 title: Servizio clienti
-description: Un buon servizio clienti può essere un vantaggio competitivo nello spazio e-commerce.
+description: Un buon servizio clienti può essere un vantaggio competitivo nello spazio di e-commerce.
 exl-id: ef798b1b-96d0-493e-b125-1d67aa7644a1
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,30 +11,30 @@ ht-degree: 0%
 
 # Servizio clienti
 
-Ecommerce è basato su tecnologia digitale e l&#39;unico team che interagisce con il cliente reale dietro la transazione è il team di Servizio Clienti. I clienti si aspettano un&#39;esperienza di alta qualità e se non ottengono che i retailer potrebbero perderli come clienti. I team di Assistenza clienti del settore e-commerce ricevono il numero più elevato di chiamate, messaggi ed e-mail rispetto ad altri settori.
+L’e-commerce è basato su tecnologia digitale e l’unico team che interagisce con il cliente reale dietro la transazione è il team Servizio clienti. I clienti si aspettano un’esperienza di alta qualità e, se non ne prendono, i rivenditori potrebbero perderli come clienti. I team del Servizio Clienti nel settore dell’e-commerce ricevono il maggior numero di chiamate, messaggi ed e-mail rispetto ad altri settori.
 
 ![Grafico a barre del servizio clienti](../../assets/playbooks/customer-service-chart.png)
 
-I retailer devono essere proattivi in termini di servizio al cliente perché non solo è in gioco il marchio, ma soprattutto la sua fedeltà al cliente. Affinché i retailer possano offrire la migliore esperienza ai clienti, esistono alcune best practice che possono seguire:
+I rivenditori devono essere proattivi in termini di servizio clienti perché non solo il marchio è in gioco, ma soprattutto la fedeltà dei clienti. Affinché i rivenditori abbiano successo nel fornire la migliore esperienza del cliente, possono seguire alcune best practice:
 
-- **Canale multi-supporto**- La fornitura di servizi solo tramite e-mail o telefono non è sufficiente nell’era odierna. Il servizio clienti deve essere fornito su vari canali, come chat dal vivo, e-mail, chiamate telefoniche, social media e o messaggi di testo. Ognuno di questi ha i propri pro e contro che i retailer devono analizzare.
+- **Canale di supporto multiplo**- Fornire servizi solo tramite e-mail o telefono non è sufficiente nell&#39;era di oggi. Il servizio clienti deve essere fornito su vari canali, ad esempio chat in diretta, e-mail, telefonate, social media e/o messaggi di testo. Ognuno di questi ha i propri pro e contro che i rivenditori devono analizzare.
 
-- **Servizio personalizzato**- Tutte le attività dei clienti vengono svolte online, che i rivenditori possono monitorare per comprendere il comportamento dei clienti. Ad esempio, quando un cliente si rivolge al team del Servizio clienti, il team disporrà in anticipo delle informazioni necessarie, quali nome, indirizzo e-mail, cronologia degli ordini e restituzioni. Questo aiuta il Servizio Clienti a fornire un servizio rapido e preciso e fornisce anche ai clienti un servizio personalizzato.
+- **Servizio personalizzato**: tutte le attività dei clienti vengono svolte online e i retailer possono tenerne traccia per comprendere il comportamento dei clienti. Ad esempio, quando un cliente si rivolge al team del Servizio clienti, il team disporrà delle informazioni precedenti, come il nome, l’indirizzo e-mail, la cronologia degli ordini e le restituzioni. In questo modo l’Assistenza clienti fornisce un servizio rapido e accurato e ai clienti anche un servizio personalizzato.
 
-- **Self-service**- I clienti possono anche essere forniti di self-service, come domande frequenti, informativa sulla privacy, termini e condizioni e forum.
+- **Self-service**- È inoltre possibile offrire ai clienti servizi self-service, ad esempio domande frequenti, informativa sulla privacy, termini e condizioni e forum.
 
-I rivenditori devono mettersi nei panni del cliente per comprendere il loro problema e fornire la migliore esperienza del cliente. L’esperienza del cliente mantiene il cliente fedele e promuove il marchio.
+I rivenditori devono mettersi nei panni del cliente per capire il loro problema e fornire la migliore esperienza al cliente. L&#39;esperienza del cliente mantiene il cliente fedele e promuove il marchio.
 
-## B2B vs B2C
+## B2B e B2C
 
 Il servizio clienti è importante sia per le aziende B2B che per quelle B2C, ma il concetto di servizio clienti è diverso tra i due:
 
-- Le imprese B2B tendono ad aver coinvolto un sacco di questioni di parti interessate e più complesse che richiedono più tempo e sforzi per risolvere, mentre le imprese B2C solitamente consistono in questioni regolari.
+- Le imprese B2B tendono a coinvolgere molte parti interessate e questioni più complesse che richiedono più tempo e sforzi per essere risolte, mentre le imprese B2C sono solitamente costituite da questioni regolari.
 
-- Le aziende B2B hanno meno clienti, ma è essenziale fornire il miglior servizio clienti per mantenere questi clienti. Anche i prodotti B2B tendono ad essere più complessi e più grandi, per cui vi è un impatto significativo sul ROI.
+- Le aziende B2B hanno meno clienti, ma è essenziale fornire il miglior servizio clienti per mantenere tali clienti. Anche i prodotti B2B tendono ad essere più complessi e più grandi, quindi c’è un impatto significativo sul ROI.
 
-- Nelle aziende B2C, il team del Servizio Clienti parla con una persona che ha effettuato la transazione, mentre con le aziende B2B ci sono più parti interessate, quindi il team del Servizio Clienti potrebbe ricevere chiamate da diversi soggetti interessati in caso di problemi.
+- Nelle aziende B2C, il team di Assistenza clienti parla con una sola persona che ha effettuato la transazione, mentre nelle aziende B2B ci sono più parti interessate, pertanto il team di Assistenza clienti potrebbe ricevere chiamate da parti interessate diverse in caso di problemi.
 
-- I team del Servizio Clienti B2B devono essere in contatto con i clienti per comprendere meglio i loro requisiti, mentre le aziende B2C raramente hanno una relazione con i clienti
+- I team del Servizio clienti B2B devono collaborare con i clienti per comprendere meglio le loro esigenze, mentre le aziende B2C raramente hanno una relazione con i clienti
 
-I rivenditori devono mettersi nei panni del cliente per comprendere il loro problema e fornire la migliore esperienza del cliente. L’esperienza del cliente mantiene il cliente fedele e promuove il marchio.
+I rivenditori devono mettersi nei panni del cliente per capire il loro problema e fornire la migliore esperienza al cliente. L&#39;esperienza del cliente mantiene il cliente fedele e promuove il marchio.

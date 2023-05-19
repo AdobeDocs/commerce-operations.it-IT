@@ -1,31 +1,32 @@
 ---
-title: Configurazione della cache L2
+title: Configurazione cache L2
 description: Scopri come configurare la cache L2.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
 
 ---
 
-# Configurazione della cache L2
+# Configurazione cache L2
 
-La memorizzazione in cache consente di ridurre il traffico di rete tra l’archiviazione della cache remota e l’applicazione Commerce. Un’istanza Commerce standard trasferisce circa 300 kb per richiesta e il traffico potrebbe rapidamente aumentare fino a oltre circa 1000 richieste in alcune situazioni.
+Il caching consente una riduzione del traffico di rete tra lo storage della cache remota e l’applicazione Commerce. Un’istanza Commerce standard trasferisce circa 300 kb per richiesta e, in alcune situazioni, il traffico può crescere rapidamente fino a oltre ~1000 richieste.
 
-Per ridurre la larghezza di banda della rete a Redis, memorizza i dati della cache localmente su ogni nodo web e utilizza la cache remota per due scopi:
+Per ridurre la larghezza di banda di rete a Redis, memorizzare i dati della cache localmente su ciascun nodo web e utilizzare la cache remota per due scopi:
 
 - Controlla la versione dei dati della cache e assicurati che la cache più recente sia memorizzata localmente
 - Trasferisci la cache più recente dal computer remoto al computer locale
 
-Commerce memorizza la versione dei dati con hash in Redis, con il suffisso &#39;:hash&#39; aggiunto alla chiave regolare. Se è presente una cache locale obsoleta, i dati vengono trasferiti al computer locale con una scheda di cache.
+Commerce memorizza la versione con hash dei dati in Redis, aggiungendo il suffisso &#39;:hash&#39; alla chiave regolare. Se è presente una cache locale obsoleta, i dati vengono trasferiti al computer locale con un adattatore della cache.
 
 >[!INFO]
 >
->Per Adobe Commerce sull’infrastruttura cloud, puoi utilizzare [distribuire le variabili](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) per la configurazione della cache L2.
+>Per l’infrastruttura cloud di Adobe Commerce, puoi utilizzare [distribuire variabili](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) per configurazione cache L2.
 
 ## Esempio di configurazione
 
-Utilizza l’esempio seguente per modificare o sostituire la sezione di cache esistente nel `app/etc/env.php` file.
+Utilizza l’esempio seguente per modificare o sostituire la sezione della cache esistente nel `app/etc/env.php` file.
 
 ```php
 'cache' => [
@@ -67,22 +68,22 @@ Dove:
    - `remote_backend_options` è la configurazione della cache remota.
    - `local_backend` è l’implementazione della cache locale: `Cm_Cache_Backend_File`
    - `local_backend_options` è la configurazione della cache locale.
-      - `cache_dir` è un’opzione specifica della cache del file per la directory in cui è memorizzata la cache locale.
-   - `use_stale_cache` è un flag che abilita o disabilita l’utilizzo di cache obsoleta.
+      - `cache_dir` è un&#39;opzione specifica della cache del file per la directory in cui è memorizzata la cache locale.
+   - `use_stale_cache` è un flag che abilita o disabilita l’utilizzo di cache non aggiornata.
 
-Adobe consiglia di utilizzare Redis per la memorizzazione in cache remota (`\Magento\Framework\Cache\Backend\Redis`) e `Cm_Cache_Backend_File` per il caching locale dei dati nella memoria condivisa, utilizzando: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+L’Adobe consiglia di utilizzare Redis per il caching remoto (`\Magento\Framework\Cache\Backend\Redis`) e `Cm_Cache_Backend_File` per il caching locale dei dati nella memoria condivisa, utilizzando: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
-L&#39;Adobe raccomanda l&#39;uso del [`cache preload`](redis-pg-cache.md#redis-preload-feature) in quanto riduce drasticamente la pressione su Redis. Non dimenticare di aggiungere il suffisso &#39;:hash&#39; per le chiavi di precaricamento.
+L’Adobe raccomanda l’utilizzo del [`cache preload`](redis-pg-cache.md#redis-preload-feature) in quanto riduce drasticamente la pressione su Redis. Non dimenticare di aggiungere il suffisso &#39;:hash&#39; per i tasti di precaricamento.
 
-## Opzioni cache obsolete
+## Opzioni cache non aggiornate
 
-Inizia con [!DNL Commerce] 2.4 `use_stale_cache` in alcuni casi specifici, le prestazioni possono essere migliorate.
+A partire da [!DNL Commerce] 2.4, il `use_stale_cache` in alcuni casi specifici.
 
-Generalmente, il compromesso con blocco in attesa è accettabile dal lato delle prestazioni, ma più grande è il numero di blocchi o cache che il commerciante ha, più tempo è speso in attesa di blocchi. In alcuni scenari, puoi aspettare un **numero di chiavi** \* **timeout ricerca** quantità di tempo per il processo. In alcuni rari casi, il commerciante può avere centinaia di chiavi `Block/Config` cache, quindi anche un piccolo timeout di ricerca per il blocco può costare secondi.
+In genere, il compromesso con l’attesa di blocco è accettabile dal lato delle prestazioni, ma più è grande il numero di Blocchi o Cache di cui dispone il commerciante, maggiore è il tempo impiegato per attendere i blocchi. In alcuni scenari, puoi attendere un **numero di chiavi** \* **timeout ricerca** tempo per il processo. In alcuni rari casi, il commerciante può avere centinaia di chiavi nel `Block/Config` cache, quindi anche un timeout di ricerca ridotto per il blocco può costare secondi.
 
-La cache obsoleta funziona solo con una cache L2. Con una cache obsoleta, puoi inviare una cache obsoleta, mentre una nuova viene generata in un processo parallelo. Per abilitare la cache obsoleta, aggiungi `'use_stale_cache' => true` alla configurazione superiore della cache L2.
+La cache non aggiornata funziona solo con una cache L2. Con una cache non aggiornata, puoi inviare una cache obsoleta, mentre una nuova viene generata in un processo parallelo. Per abilitare la cache non aggiornata, aggiungere `'use_stale_cache' => true` alla configurazione superiore della cache L2.
 
-L&#39;Adobe consiglia di abilitare il `use_stale_cache` solo per i tipi di cache che ne beneficiano di più, tra cui:
+L’Adobe consiglia di abilitare `use_stale_cache` solo per i tipi di cache che ne beneficiano maggiormente, tra cui:
 
 - `block_html`
 - `config_integration_api`
@@ -92,7 +93,7 @@ L&#39;Adobe consiglia di abilitare il `use_stale_cache` solo per i tipi di cache
 - `reflection`
 - `translate`
 
-Il codice seguente mostra una configurazione di esempio:
+Il codice seguente mostra un esempio di configurazione:
 
 ```php
 'cache' => [

@@ -1,19 +1,19 @@
 ---
-title: Disinstallare i pacchetti di lingua
-description: Per disinstallare un pacchetto Adobe Commerce o Magenti Open Source Language, effettua le seguenti operazioni.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Disinstalla pacchetti per lingua
+description: Per disinstallare un pacchetto Adobe Commerce o di lingua di Magento Open Source, segui la procedura riportata di seguito.
+exl-id: 9901aa0b-af1a-4ae9-968f-ac8421060f57
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
 
 ---
 
+# Disinstalla pacchetti per lingua
 
-# Disinstallare i pacchetti di lingua
+Questa sezione illustra come disinstallare uno o più pacchetti di lingua, includendo facoltativamente il codice dei pacchetti di lingua dal file system. È possibile creare prima i backup in modo da poter ripristinare i dati in un secondo momento.
 
-Questa sezione illustra come disinstallare uno o più pacchetti linguistici, includendo facoltativamente il codice dei pacchetti linguistici dal file system. È possibile creare prima i backup in modo da ripristinare i dati in un secondo momento.
-
-Disinstalla questo comando *only* pacchetti linguistici specificati in `composer.json`; in altre parole, pacchetti linguistici forniti come pacchetti Composer. Se il pacchetto linguistico non è un pacchetto Composer, è necessario disinstallarlo manualmente rimuovendo il codice del pacchetto linguistico dal file system.
+Questo comando disinstalla *solo* pacchetti di lingue specificati in `composer.json`; in altre parole, i pacchetti di linguaggio forniti come pacchetti Compositore. Se il pacchetto lingua non è un pacchetto Compositore, è necessario disinstallarlo manualmente rimuovendo il codice del pacchetto lingua dal file system.
 
 È possibile ripristinare i backup in qualsiasi momento utilizzando [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
 
@@ -23,30 +23,30 @@ Utilizzo comando:
 bin/magento i18n:uninstall [-b|--backup-code] {language package name} ... {language package name}
 ```
 
-Il comando disinstalla pacchetto linguistico esegue le seguenti attività:
+Il comando di disinstallazione del pacchetto della lingua esegue le operazioni seguenti:
 
-1. Controllo delle dipendenze; in tal caso, il comando termina.
+1. Controlla le dipendenze; in tal caso, il comando termina.
 
-   Per risolvere questo problema, è possibile disinstallare contemporaneamente tutti i pacchetti di lingua dipendenti oppure disinstallare prima i pacchetti di lingua dipendenti.
+   Per ovviare a questo problema, è possibile disinstallare contemporaneamente tutti i pacchetti delle lingue dipendenti oppure disinstallare prima i pacchetti delle lingue dipendenti.
 
-1. Se `--backup code` viene specificato, esegue il backup del file system (escluso `var` e `pub/static` directory) a `var/backups/<timestamp>_filesystem.tgz`
-1. Rimuove i file dei pacchetti di linguaggio dal codebase utilizzando `composer remove`.
-1. Elimina la cache.
+1. Se `--backup code` è specificato, esegui il backup del file system (escluso `var` e `pub/static` directory) a `var/backups/<timestamp>_filesystem.tgz`
+1. Rimuove i file dei pacchetti della lingua dalla base di codice utilizzando `composer remove`.
+1. Pulisce la cache.
 
-Ad esempio, se si tenta di disinstallare un pacchetto per la lingua da cui dipende un altro pacchetto per la lingua, viene visualizzato il seguente messaggio:
+Ad esempio, se tenti di disinstallare un pacchetto lingua da cui dipende un altro pacchetto lingua, viene visualizzato il seguente messaggio:
 
 ```terminal
 Cannot uninstall vendorname/language-en_us because the following package(s) depend on it:
       vendorname/language-en_gb
 ```
 
-Un&#39;alternativa è quella di disinstallare entrambi i pacchetti linguistici dopo il backup del codebase:
+Un&#39;alternativa consiste nel disinstallare entrambi i pacchetti di linguaggio dopo il backup della base di codice:
 
 ```bash
 bin/magento i18n:uninstall vendorname/language-en_us vendorname/language-en_gb --backup-code
 ```
 
-Messaggi simili alla visualizzazione seguente:
+Messaggi simili alla seguente visualizzazione:
 
 ```terminal
 Code backup is starting...

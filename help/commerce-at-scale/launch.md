@@ -1,6 +1,6 @@
 ---
 title: Suggerimenti per il test delle prestazioni
-description: Scopri come impostare i KPI per l’avvio della soluzione Adobe Commerce e Adobe Experience Manager.
+description: Scopri come impostare i KPI per l’avvio delle soluzioni Adobe Commerce e Adobe Experience Manager.
 exl-id: 4b0d9c4f-e611-452d-a80f-27f82705935d
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,47 +11,47 @@ ht-degree: 0%
 
 # Suggerimenti per il test delle prestazioni
 
-Per valutare l’efficacia di tutte le modifiche di cui sopra, è necessario eseguire un test completo delle prestazioni prima del lancio e prima di eventuali implementazioni principali future negli ambienti di produzione. Quando pianifichi il tuo test di carico, è importante simulare il più possibile il traffico dei consumatori a vita reale.
+Per valutare l’efficacia di tutte le modifiche di cui sopra, è necessario eseguire test approfonditi delle prestazioni prima del lancio e prima di qualsiasi implementazione futura importante negli ambienti di produzione. Quando pianifichi il test di carico, è importante simulare il più possibile il traffico consumer reale.
 
-Le aree del sito AEM/CIF/Adobe Commerce a uso intensivo di risorse sono quelle che non sono memorizzabili nella cache, ad esempio il processo di pagamento e la ricerca nel sito. La navigazione delle pagine statica e quindi memorizzabile nella cache, ad esempio per le pagine dei dettagli dei prodotti (PDP) e le pagine degli elenchi dei prodotti (PLP), rappresentano in genere la maggior parte del traffico verso un sito di e-commerce, pertanto gli script e gli scenari del test dovrebbero riflettere tale aspetto per misurare i limiti della piattaforma.
+Le aree del sito AEM/CIF/Adobe Commerce che richiedono un uso intensivo delle risorse sono quelle che non sono memorizzabili in cache, come la procedura di pagamento e la ricerca del sito. La navigazione nelle pagine statica, e quindi memorizzabile in cache, come ad esempio Produce Detail Pages (PDP) e Product Listing Pages (PLP), costituisce la maggior parte del traffico verso un sito di e-commerce in generale, pertanto gli script e gli scenari nel test dovrebbero rispecchiare questo fatto per misurare i limiti della piattaforma.
 
-Avere un singolo script in esecuzione per il test di carico che naviga attraverso il sito senza tempi di attesa tra i passaggi, e anche completare sempre il processo di pagamento ogni volta, non darebbe un&#39;indicazione affidabile dei limiti della piattaforma, in quanto questo non è ciò che uno scenario reale sarebbe.
+Avere un singolo script in esecuzione per il test di carico che naviga attraverso il sito senza tempo di attesa tra i passaggi, e anche sempre completa il processo di pagamento ogni volta non darebbe un&#39;indicazione affidabile dei limiti della piattaforma, in quanto non è quello che sarebbe uno scenario reale.
 
-La definizione dei KPI deve essere il primo passo del piano di test delle prestazioni: definisci le metriche che puoi sottoporre a test durante il test iniziale, ma che potrai quindi misurare nuovamente in futuro, e su base ricorrente dopo la pubblicazione del sito. Questo consente di monitorare le prestazioni del sito nel tempo, prima e dopo il lancio. Esempio di KPI da definire:
+La definizione dei KPI deve essere il primo passo del piano di test delle prestazioni: definire metriche che possono essere testate durante il test iniziale e poi misurate di nuovo in futuro e in modo ricorrente dopo che il sito è attivo. Questo consente di monitorare le prestazioni del sito nel tempo, prima e dopo il lancio. Esempio di KPI da definire:
 
-- Tempo medio di risposta: tempo al primo byte o all&#39;ultimo byte
+- Tempo medio di risposta: tempo al primo o all&#39;ultimo byte
 - Latenza
 - Byte/s (Througput)
-- Frequenza errori
+- Percentuale di errori
 - Ordini all&#39;ora
 - Visualizzazioni pagina all&#39;ora
-- Utenti univoci all&#39;ora (acquirenti simultanei)
+- Utenti univoci all’ora (acquirenti simultanei)
 
-## Linee guida di Jmetro
+## Linee guida Jmeter
 
-Quando si sviluppano i test di carico AEM/CIF/Adobe Commerce, è necessario tenere in considerazione le seguenti linee guida di livello elevato di Jmetro:
+Le seguenti linee guida di alto livello Jmeter devono essere considerate durante lo sviluppo del test di carico AEM/CIF/Adobe Commerce:
 
-- Dividi lo script in scenari configurabili, che dovrebbero riguardare, ad esempio:
-   - Apri home page
-   - Apri pagina categoria (PLP)
-   - Visualizza prodotti semplici (PDP) - 2 loop all’interno di ogni iterazione
-   - Visualizza prodotti configurabili - 2 loop all’interno di ogni iterazione
+- Suddividi lo script in scenari configurabili, ad esempio:
+   - Apri Home Page
+   - Apri pagina categorie (PLP)
+   - Visualizza prodotti semplici (PDP): 2 cicli all’interno di ogni iterazione
+   - Visualizza prodotti configurabili: 2 cicli all’interno di ogni iterazione
       - Ad esempio, imposta i passaggi precedenti al 60% del traffico
-   - Ricerca di prodotti
+   - Ricerca prodotti
       - Ad esempio, imposta la ricerca nel catalogo al 37% del traffico
    - Carrello e pagamento
-      - Ad esempio, per impostazione predefinita, un utente che completa la parte del carrello e il pagamento dello script deve applicare un tasso di conversione del sito e-commerce standard del settore di circa il 3%
-      - Poiché il flusso di pagamento viene rimosso dalla cache e solitamente un’operazione ad alta intensità di risorse, l’impostazione di una cifra irrealisticamente elevata per il numero di persone che completano gli ordini rispetto al numero di browser del sito darebbe un risultato inaffidabile per il volume di traffico che il sito potrebbe gestire.
+      - Ad esempio, un utente che completa la parte relativa al carrello e al pagamento dello script deve ottenere per impostazione predefinita un tasso di conversione del sito di e-commerce standard di circa il 3%
+      - Poiché il flusso di pagamento non viene memorizzato in cache e in genere richiede un’intensa quantità di risorse, impostare una cifra irrealisticamente elevata per il numero di persone che completano gli ordini rispetto al numero di browser del sito darebbe un risultato inaffidabile per il volume di traffico che il sito potrebbe gestire.
 - Pulisci tutte le cache prima di ogni esecuzione del test:
-   - La cache del dispatcher AEM deve essere pulita completamente
-   - La cache finale e interna di Adobe Commerce deve essere completamente scaricata e pulita - questo può essere fatto tramite il controllo della cache nell’amministratore di Adobe Commerce.
-- Includi un periodo di rampa nel test Jmetro: Non impostare alcun periodo di rampa significa che non vi è un aumento graduale del traffico e non è possibile che il sito memorizzi nella cache una qualsiasi delle pagine e dei componenti visitati di frequente nella pagina. Nella vita reale, sarebbe insolito che tutto il traffico di picco arrivasse su un sito completamente non memorizzato nella cache esattamente allo stesso tempo, quindi dovrebbe essere incluso un periodo di rampa negli script di test Jmetro per consentire alla cache di accumularsi come accadrebbe su un sito di e-commerce reale.
-- Dovrebbe essere utilizzato un &quot;Tempo di attesa&quot; tra ogni passaggio all’interno di un’iterazione, in realtà un utente non passa immediatamente alla pagina successiva del sito durante il percorso, ma ci sarà un tempo di attesa mentre l’utente legge la pagina e decide la propria azione successiva.
-- L&#39;impostazione dei gruppi di thread su loop infinitamente, ma per un periodo di tempo impostato di x (ad esempio 60 minuti), darà una prova ripetibile, con tempi di risposta mediani confrontabili con le prove precedenti. Ciò significa che dopo il periodo di aggiornamento impostato, ci sarà il numero di destinazione di Utenti virtuali in esecuzione contemporaneamente e questo continuerà per il tempo di ciclo impostato.
-- Il tempo medio dovrebbe essere utilizzato per fornire un miglioramento/diminuzione del tempo medio di risposta, non della media. Se ci sono diversi risultati edge che richiedono molto più tempo rispetto agli altri risultati, questo potrebbe distorcere questo risultato medio, ma ciò a cui siamo interessati nel tempo di risposta dell&#39;utente finale per la maggior parte degli utenti, che è più adatto alla misura media.
-- Le risorse incorporate non vengono raccolte per impostazione predefinita in jmetro (ad esempio, JS, CSS e altre risorse scaricate quando un utente reale visita la pagina). Può essere abilitato, ma solo per il dominio di cui stai eseguendo il test: le chiamate a risorse esterne devono ancora essere escluse (ad esempio, non vogliamo includere i tempi di risposta dai servizi in hosting esterni, ad esempio codice di google analytics, in quanto non abbiamo controllo su di loro).
-- È necessario abilitare HTTP Cache Manager, che consente a Jmetro di memorizzare nella cache gli elementi di pagina durante un percorso come farebbe un vero percorso di utenti durante la navigazione del sito web sul proprio browser. Durante il percorso in cui si trovava il sito, il browser dell’utente scaricava le risorse incorporate correlate una sola volta e queste venivano memorizzate nella cache dal browser dell’utente. Inoltre, se lo stesso utente ritorna al sito qualche volta dopo la visita originale, potrebbe comunque essere la cache in cui tali risorse vengono memorizzate nella cache.
-- Gli ascoltatori devono essere tenuti all’interno delle esecuzioni effettive del test di carico (ad esempio &quot;Visualizza albero risultati&quot; e &quot;Rapporto aggregato&quot;). Includere questo nell&#39;esecuzione del test di carico reale non-GUI può influenzare i risultati delle prestazioni segnalati da Jmetro, in quanto le risorse vengono utilizzate durante l&#39;esecuzione del test reale per generare i rapporti. Questi ascoltatori sono stati rimossi dallo script di test per essere sostituiti con un file di risultati JTL, che può quindi essere elaborato utilizzando la funzionalità Dashboard dei report di Jmetro.
-- Un tempo di risposta di destinazione per valutato in modo che il &quot;Punteggio dell’Apdex&quot; del rapporto del dashboard possa essere utilizzato rapidamente per misurare l’effetto dei cambiamenti sulle prestazioni tra le esecuzioni dei test. Il punteggio Apdex si basa su una certa quantità di persone in grado di accedere al sito in un tempo tollerabile . Se il tempo di risposta supera una certa quantità &quot;frustrante&quot;, questo riduce il punteggio. I tempi possono essere impostati utilizzando i parametri &quot;apdex_purchased_ soglia&quot; e &quot;apdex_Allowated_soglia&quot;.
-- Imposta una metrica di destinazione &quot;Ordini all’ora&quot; da presentare agli utenti aziendali, non un conteggio di utenti virtuali. Gli &quot;utenti virtuali&quot; possono essere un argomento complesso per comprendere cosa in tempo reale sta misurando il test. Calcolando il tasso di conversione del sito, gli ordini all&#39;ora, il tempo medio trascorso da un utente sul sito e il tempo impiegato tra ciascun caricamento di pagina, è possibile utilizzare i calcoli standard del settore per presentare diversi scenari di test di carico basati su ordini all&#39;ora da raggiungere.
-- Infine, il server di test Jmetro deve essere eseguito su un server geograficamente vicino a dove proviene la maggior parte del traffico degli utenti e da dove è ospitata l&#39;infrastruttura cloud - si spera che sia lo stesso.
+   - È necessario pulire completamente la cache del dispatcher AEM
+   - La cache Fastly e interna di Adobe Commerce deve essere completamente svuotata e pulita, tramite il controllo della cache in Adobe Commerce admin.
+- Includi un periodo di rampa nel test Jmeter: se non è impostato alcun periodo di rampa, non si verifica un aumento graduale del traffico e non si ha la possibilità che il sito memorizzi in cache le pagine e i componenti della pagina visitati di frequente. In uno scenario reale, sarebbe insolito che tutto il traffico di picco arrivasse su un sito completamente non memorizzato in cache esattamente nello stesso momento, quindi dovrebbe essere incluso un periodo di rampa negli script di test Jmeter per consentire alla cache di accumularsi come accadrebbe su un sito di e-commerce reale.
+- Dovrebbe essere utilizzato un &quot;Tempo di attesa&quot; tra ogni passaggio all’interno di un’iterazione; in realtà, un utente non passerebbe immediatamente alla pagina successiva del sito durante il percorso; si verificherebbe un tempo di attesa durante la lettura della pagina da parte dell’utente, che deciderebbe quindi in merito all’azione successiva.
+- Impostando i gruppi di filettature su loop infinito, ma per un tempo impostato di x (ad esempio 60 minuti), si otterrà un test ripetibile, con tempi di risposta mediani comparabili a quelli delle esecuzioni precedenti. Ciò significa che dopo il periodo di avvio impostato, sarà presente il numero target di utenti virtuali in esecuzione simultanea e questo continuerà per il tempo di loop impostato.
+- Il tempo mediano deve essere utilizzato per fornire un miglioramento/declino del tempo medio di risposta, non del tempo medio. Se ci sono diversi risultati edge che richiedono molto più tempo degli altri risultati, questo distorcerebbe il risultato medio, ma ci interessa il tempo di risposta dell’utente finale per la maggior parte degli utenti, che è più adatto alla misura mediana.
+- Le risorse incorporate non vengono raccolte per impostazione predefinita in jmeter (ad esempio JS, CSS e altre risorse scaricate quando un utente reale visita la pagina). Questa può essere abilitata, ma solo per il dominio che stai testando, le chiamate a risorse esterne devono comunque essere escluse (ad esempio, non vogliamo includere i tempi di risposta da servizi ospitati esternamente, ad es. google analytics (codice google analytics, poiché non abbiamo alcun controllo su di essi).
+- Se è necessario abilitare HTTP Cache Manager, questo consente a Jmeter di memorizzare in cache gli elementi di una pagina durante un percorso, come farebbe un percorso reale dell’utente durante la navigazione del sito web sul proprio browser. Durante il percorso attraverso il sito, il browser dell’utente scarica le risorse incorporate correlate una sola volta e quindi queste vengono memorizzate nella cache dal browser dell’utente. Inoltre, se lo stesso utente ritorna sul sito qualche tempo dopo la visita originale, allora potrebbe ancora essere la cache che quelle risorse vengono memorizzate in cache.
+- I listener devono essere mantenuti all’interno delle esecuzioni effettive del test di carico (ad esempio &quot;Visualizza struttura risultati&quot; e &quot;Rapporto aggregato&quot;). L’inclusione di questo valore nell’esecuzione dei test di carico reale senza interfaccia grafica utente grafica può influire sui risultati delle prestazioni riportati da Jmeter, in quanto le risorse vengono utilizzate durante l’esecuzione dei test reali per generare i rapporti. Questi listener sono stati rimossi dallo script di test e sostituiti con un file di risultati JTL, che può quindi essere elaborato utilizzando la funzionalità Report Dashboard di Jmeter.
+- Un tempo di risposta target per valutato in modo che il &quot;Punteggio approssimativo&quot; del rapporto del dashboard possa essere utilizzato come modo rapido per misurare l’effetto delle modifiche sulle prestazioni tra le esecuzioni dei test. Il punteggio Apdex si basa sulla capacità di una certa quantità di persone di accedere al sito in un tempo tollerabile . Se il tempo di risposta supera un certo importo &quot;frustrante&quot;, il punteggio si abbassa. I tempi possono essere impostati utilizzando i parametri &quot;apdex_satisfaction_ threshold&quot; e &quot;apdex_tolerated_threshold&quot;.
+- Imposta una metrica target &quot;Ordini per ora&quot; da presentare agli utenti aziendali, non un conteggio di utenti virtuali. &quot;Utenti virtuali&quot; può essere un argomento complesso per capire cosa viene misurato nella vita reale del test. Calcolando il tasso di conversione del sito, gli ordini all’ora, il tempo medio trascorso da un utente sul sito e il tempo di riflessione tra ciascun caricamento di pagina, è possibile utilizzare i calcoli standard di settore per presentare diversi scenari di test di carico in base agli ordini all’ora da raggiungere.
+- Infine, il server di test Jmeter deve essere eseguito su un server geograficamente vicino a dove proviene la maggior parte del traffico utente e dove è ospitata l’infrastruttura cloud, si spera che sia lo stesso.

@@ -1,68 +1,68 @@
 ---
 title: Funzionamento delle patch
 description: Scopri i diversi tipi di patch per Adobe Commerce e Magenti Open Source e come funzionano.
-source-git-commit: 1a18a445cb104420dd9b853b7c4d42ce3bddf2ac
+exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
-
 
 # Funzionamento delle patch
 
 >[!WARNING]
 >
->È consigliabile testare tutte le patch in un ambiente di staging o di sviluppo prima di distribuirle in produzione. Si consiglia inoltre vivamente di eseguire il backup dei dati prima di applicare una patch. Vedi [Eseguire il backup e il rollback del file system](../../installation/tutorials/backup.md).
+>Si consiglia vivamente di eseguire il test di tutte le patch in un ambiente di staging o di sviluppo prima di distribuirle in produzione. Si consiglia inoltre di eseguire il backup dei dati prima di applicare una patch. Consulta [Backup e ripristino del file system](../../installation/tutorials/backup.md).
 
-I file di patch (o diff) sono file di testo che annotano:
+I file patch (o diff) sono file di testo che contengono una nota:
 
 - File da modificare.
-- Numero della riga per iniziare la modifica e numero di righe da modificare.
+- Il numero di riga per iniziare la modifica e il numero di righe da modificare.
 - Il nuovo codice da scambiare.
 
-Quando viene eseguito il programma di patch, questo file viene letto in e le modifiche specificate vengono apportate ai file.
+Quando viene eseguito il programma patch, il file viene letto e vengono apportate le modifiche specificate ai file.
 
 Esistono tre tipi di patch:
 
-- **Hotfix**- Patch pubblicate da Adobe nel [Centro sicurezza PC](https://magento.com/security/patches).
-- **Patch singole**: patch create e distribuite dal supporto Adobe Commerce su base individuale.
-- **Patch personalizzate**- Patch non ufficiali che è possibile creare da un commit git.
+- **Hotfix**- Patch pubblicate nell&#39;Adobe [Centro sicurezza](https://magento.com/security/patches).
+- **Singole patch**- Patch create e distribuite su base individuale dal supporto Adobe Commerce.
+- **Patch personalizzate**- Patch non ufficiali che è possibile creare da un commit Git.
 
 ## Hotfix
 
-Gli hotfix sono patch che contengono correzioni di qualità o di sicurezza ad alto impatto che interessano molti merchants. Queste correzioni vengono applicate alla prossima versione della patch per la versione secondaria applicabile. Adobe rilascia gli hotfix in base alle esigenze.
+Gli hotfix sono patch che presentano problemi di sicurezza ad alto impatto o problemi di qualità che interessano molti commercianti. Queste correzioni vengono applicate alla versione patch successiva per la versione secondaria applicabile. Adobe rilascia gli hotfix in base alle esigenze.
 
-Puoi trovare gli hotfix nella sezione [Centro sicurezza PC](https://magento.com/security/patches). Segui le istruzioni riportate nella pagina per scaricare il file della patch, a seconda della versione e del tipo di installazione. Utilizza la [riga di comando](../patches/apply.md#) o [Compositore](../patches/apply.md) per applicare patch hotfix.
-
->[!NOTE]
->
->Le hotfix possono contenere modifiche incompatibili con le versioni precedenti.
-
-## Patch singole
-
-Le singole patch contengono correzioni di qualità a basso impatto per un problema specifico. Queste correzioni vengono applicate alla versione minore supportata più di recente (ad esempio, 2.4.x), ma potrebbero mancare dalla versione secondaria supportata precedente (ad esempio, 2.3.x). Adobe rilascia le singole patch in base alle esigenze.
-
-Utilizza la [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} per applicare singole patch.
+Puoi trovare gli hotfix in [Centro sicurezza](https://magento.com/security/patches). Seguire le istruzioni riportate nella pagina per scaricare il file di patch, in base alla versione e al tipo di installazione. Utilizza il [riga di comando](../patches/apply.md#) o [Compositore](../patches/apply.md) per applicare patch di correzione rapida.
 
 >[!NOTE]
 >
->Le singole patch non contengono modifiche incompatibili con le versioni precedenti.
+>Gli hotfix possono contenere modifiche non compatibili con le versioni precedenti.
+
+## Singole patch
+
+Le singole patch contengono correzioni di qualità a basso impatto per un problema specifico. Queste correzioni sono applicate alla versione secondaria supportata più di recente (ad esempio, 2.4.x), ma potrebbero mancare nella versione secondaria supportata precedente (ad esempio, 2.3.x). Adobe rilascia singole patch in base alle esigenze.
+
+Utilizza il [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} per applicare singole patch.
+
+>[!NOTE]
+>
+>Le singole patch non contengono modifiche non compatibili con le versioni precedenti.
 
 ## Patch personalizzate
 
-A volte ci vuole un po&#39; di tempo prima che il team di ingegneria di Adobe includa una correzione di bug eseguita su GitHub in una versione di Adobe Commerce o del Compositore di Magento Open Source. Nel frattempo, puoi creare una patch da GitHub e utilizzare il [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) plug-in per applicarlo all&#39;installazione basata su Composer.
+A volte ci vuole un po’ di tempo perché il team ingegneristico Adobe includa una correzione di bug effettuata su GitHub in una versione di Adobe Commerce o Magenti Open Source Composer. Nel frattempo, puoi creare una patch da GitHub e utilizzare [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) per applicarlo all’installazione basata su Compositore.
 
-Utilizza la [riga di comando] o [Compositore] per applicare patch personalizzate.
+Utilizza il [riga di comando] o [Compositore] per applicare patch personalizzate.
 
-Esistono molti modi per creare file di patch personalizzati. L’esempio seguente si concentra sulla creazione di una patch da un commit git noto.
+Esistono diversi modi per creare file di patch personalizzati. L’esempio seguente si concentra sulla creazione di una patch da un commit Git noto.
 
 Per creare una patch personalizzata:
 
-1. Crea un `patches/composer` nel progetto locale.
-1. Identifica la richiesta di commit o pull GitHub da utilizzare per la patch. In questo esempio viene utilizzato [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) commit, collegato al problema GitHub [#6474](https://github.com/magento/magento2/issues/6474).
-1. Aggiungi `.patch` o `.diff` estensioni dell&#39;URL di commit. Utilizzo `.diff` per file di dimensioni inferiori. Ad esempio: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
-1. Salva la pagina come file nel `patches/composer` directory. Ad esempio, `github-issue-6474.diff`.
+1. Creare un `patches/composer` nel progetto locale.
+1. Identifica il commit GitHub o la richiesta di pull da utilizzare per la patch. In questo esempio viene utilizzato [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) commit, collegato al problema GitHub [#6474](https://github.com/magento/magento2/issues/6474).
+1. Aggiungi `.patch` o `.diff` estensioni dell&#39;URL di commit. Utilizzare `.diff` per un file di dimensioni inferiori. Ad esempio: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
+1. Salvare la pagina come file in `patches/composer` directory. Ad esempio: `github-issue-6474.diff`.
 1. Modifica il file e rimuovi `app/code/<VENDOR>/<PACKAGE>` da tutti i percorsi in modo che siano relativi al `vendor/<VENDOR>/<PACKAGE>` directory.
 
    >[!NOTE]
@@ -90,10 +90,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 È possibile applicare le patch utilizzando uno dei seguenti metodi:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Riga di comando](/help/upgrade/patches/apply.md#command-line)
 - [Compositore](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Per applicare una patch a un progetto di infrastruttura cloud Adobe Commerce, vedi [Applica patch](https://devdocs.magento.com/cloud/project/project-patch.html) in _Guida a Cloud_.
+>Per applicare una patch a un progetto di infrastruttura cloud di Adobe Commerce, consulta [Applicare le patch](https://devdocs.magento.com/cloud/project/project-patch.html) nel _Guida al cloud_.

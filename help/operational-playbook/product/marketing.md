@@ -1,6 +1,6 @@
 ---
 title: Marketing
-description: Promuovi i tuoi prodotti e attrae i clienti attraverso campagne di marketing e-commerce.
+description: Promuovi i tuoi prodotti e attrai clienti tramite campagne di marketing e-commerce.
 exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,62 +11,62 @@ ht-degree: 0%
 
 # E-mail marketing
 
-Il marketing e-mail (in termini semplici) consiste nell’inviare messaggi di marketing ai lead e ai clienti attuali tramite e-mail per promuovere, attrarre e vendere prodotti ai clienti. I team di marketing hanno il pieno controllo sul recupero delle informazioni sui clienti e sull’invio di contenuti personalizzati ai clienti tramite campagne e-mail dirette. L’e-mail funge da strumento per creare una relazione tra i clienti e il brand.
+Il marketing via e-mail (in termini semplici) invia messaggi di marketing a lead e clienti attuali tramite e-mail per promuovere, attrarre e vendere prodotti ai clienti. I team di marketing hanno il pieno controllo sul recupero delle informazioni dei clienti e sull’invio ai clienti di contenuti personalizzati tramite campagne e-mail dirette. L’e-mail funge da strumento per creare una relazione tra i clienti e il brand.
 
-Perché considerare l’e-mail marketing:
+Perché dovresti considerare l’e-mail marketing:
 
 - Consente di creare una relazione con i clienti attuali e futuri
 
-- Aiuta le vendite e aumenta il tasso di conversione
+- Aiuta ad aumentare le vendite e il tasso di conversione
 
-- Aiuta ad accelerare la crescita delle aziende
+- Contribuisce ad accelerare la crescita aziendale
 
-- Non richiede una terza parte, ad esempio Instagram o Facebook
+- Non richiede una terza parte, come Instagram o Facebook
 
 ## E-mail di benvenuto
 
-La prima impressione è essenziale in un&#39;attività di e-commerce. Se la prima e-mail inviata ai nuovi clienti è efficace, lascerà un&#39;impressione duratura nella memoria del cliente. Cercate di mantenere il design semplice ed originale. Ad esempio, alcuni marchi forniscono sconti nell’e-mail quando il cliente effettua l’iscrizione.
+L’ultima impressione è essenziale in un’attività di e-commerce. Se la prima e-mail inviata ai nuovi clienti è efficace, lascerà impressioni durature nella memoria del cliente. Prova a mantenere il design semplice e originale. Ad esempio, alcuni marchi offrono sconti nell’e-mail quando il cliente si iscrive.
 
 ![Esempio di e-mail di marketing di benvenuto](../../assets/playbooks/marketing-email-welcome.png)
 
 ## E-mail curata
 
-L’e-mail curata è una delle forme migliori di e-mail in quanto consente agli abbonati di saperne di più sul prodotto. Puoi anche inviare e-mail curate in base alla segmentazione del cliente.
+Le e-mail curate sono una delle forme migliori di e-mail perché consentono agli abbonati di saperne di più sul prodotto. Puoi anche inviare e-mail curate in base alla segmentazione del cliente.
 
 ![Esempio di e-mail di marketing curata](../../assets/playbooks/marketing-email-curated.png)
 
 ## E-mail di coinvolgimento
 
-I clienti possono facilmente ignorare le e-mail, ma se queste vengono inviate come e-mail di coinvolgimento, la probabilità che un cliente le elimini senza visualizzarle è inferiore. Le e-mail di coinvolgimento possono assumere la forma di una campagna che offre agli utenti una promozione, ad esempio la spedizione gratuita.
+I clienti possono facilmente ignorare le e-mail, ma se le e-mail vengono inviate come e-mail di coinvolgimento, la probabilità che un cliente le elimini senza visualizzarle è inferiore. Le e-mail di coinvolgimento possono essere sotto forma di una campagna che fornisce agli utenti una promozione, ad esempio la spedizione gratuita.
 
-![Esempio di e-mail di marketing di coinvolgimento](../../assets/playbooks/marketing-email-engagement.png)
+![Esempio di e-mail di marketing per coinvolgimento](../../assets/playbooks/marketing-email-engagement.png)
 
-## Indirizzo e-mail di riferimento
+## E-mail di riferimento
 
-Parola di bocca è una delle migliori strategie di marketing. Ad esempio, l’invio di un’e-mail di riferimento a un cliente esistente. Ad esempio, &quot;Fai riferimento a un amico e ricevi $ 10!&quot; L’e-mail di riferimento motiva i clienti a diffondere la parola in modo organico, aiutandoli a ottenere più clienti.
+Il passaparola è una delle migliori strategie di marketing. Ad esempio, l’invio di un’e-mail di riferimento a un cliente esistente. Ad esempio, &quot;Fai riferimento a un amico e ricevi $ 10!&quot; L’e-mail di riferimento motiva i clienti a diffondere la parola in modo organico, consentendo di acquisire più clienti.
 
 ![Esempio di e-mail di marketing di riferimento](../../assets/playbooks/marketing-email-referral.png)
 
 ## E-mail sconto
 
-Offrire sconti tramite e-mail è una strategia di marketing efficace. È necessario offrire sconti agli abbonati per mantenere la loro fedeltà.
+Offrire sconti tramite e-mail è una strategia di marketing efficace. Devi offrire sconti agli abbonati per mantenere la loro fedeltà.
 
-![Esempio di e-mail di marketing scontato](../../assets/playbooks/marketing-email-discount.png)
+![Esempio di e-mail di marketing con sconto](../../assets/playbooks/marketing-email-discount.png)
 
 ## E-mail di abbandono
 
-I clienti abbandonano i loro carrelli per vari motivi, inclusi costi di spedizione elevati o una politica di restituzione insoddisfacente. Puoi provare a convertire questi clienti in acquirenti di successo inviando loro un promemoria e-mail sul prodotto che hanno lasciato nel loro carrello. Inoltre, è possibile offrire incentivi per completare il loro pagamento, inclusa la spedizione gratuita, uno sconto o un voucher per il loro acquisto successivo. Questo aiuta ad aumentare il tasso di conversione.
+I clienti abbandonano i loro carrelli per vari motivi, tra cui le spese di spedizione elevate o la politica di restituzione insoddisfacente. Puoi provare a convertire questi clienti in acquirenti di successo inviando loro un promemoria e-mail relativo al prodotto che hanno lasciato nel carrello. Inoltre, puoi offrire incentivi per completare il pagamento, inclusa la spedizione gratuita, uno sconto o un buono per il prossimo acquisto. Questo aiuta ad aumentare il tasso di conversione.
 
-![Esempio di abbandono dell’e-mail di marketing](../../assets/playbooks/marketing-email-abandon.png)
+![Esempio di e-mail di marketing di abbandono](../../assets/playbooks/marketing-email-abandon.png)
 
-## E-mail di conferma dell&#39;ordine
+## E-mail di conferma dell’ordine
 
-Le e-mail di conferma dell’ordine non solo contribuiscono a incrementare le vendite, ma anche a fornire ai clienti la certezza di aver effettuato l’ordine, il che aumenta l’esperienza e la fedeltà dei clienti.
+Le e-mail di conferma dell’ordine non solo contribuiscono ad aumentare le vendite, ma offrono anche ai clienti la certezza di aver effettuato l’ordine, aumentando così la customer experience e la fedeltà.
 
-![Esempio di e-mail di conferma dell’ordine](../../assets/playbooks/marketing-email-order-confirmation.png)
+![Esempio di e-mail di marketing di conferma dell’ordine](../../assets/playbooks/marketing-email-order-confirmation.png)
 
-## E-mail di sondaggio
+## E-mail sondaggio
 
-Dopo che i clienti ricevono i loro ordini, devi inviare un’e-mail di sondaggio per informarti sulla loro esperienza e sui suggerimenti per migliorarli. Alcuni rivenditori forniscono anche un buono regalo se i clienti completano il sondaggio perché la maggior parte delle volte i clienti non completano i sondaggi in quanto non c&#39;è motivo per loro di farlo.
+Dopo che i clienti ricevono i loro ordini, è necessario inviare un&#39;e-mail di sondaggio di follow-up per chiedere circa la loro esperienza e suggerimenti di miglioramento. Alcuni rivenditori forniscono anche un buono regalo se i clienti completano il sondaggio perché la maggior parte delle volte i clienti non completano i sondaggi perché non c&#39;è alcuna motivazione per farlo.
 
-![Esempio di e-mail di marketing di un sondaggio](../../assets/playbooks/marketing-email-survey.png)
+![Esempio di e-mail di marketing per sondaggio](../../assets/playbooks/marketing-email-survey.png)

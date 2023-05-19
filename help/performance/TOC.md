@@ -1,6 +1,6 @@
 ---
-user-guide-title: Best practice sulle prestazioni
-user-guide-description: Ottimizza le prestazioni della distribuzione di produzione Adobe Commerce o Magento Open Source utilizzando i nostri consigli.
+user-guide-title: Best practice per le prestazioni
+user-guide-description: Ottimizza le prestazioni della tua implementazione Adobe Commerce o di produzione di Magento Open Source utilizzando i nostri consigli.
 source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
 source-wordcount: '56'
@@ -9,16 +9,16 @@ ht-degree: 0%
 ---
 
 
-# Best practice sulle prestazioni {#performance-best-practices}
+# Best practice per le prestazioni {#performance-best-practices}
 
 - [Panoramica](overview.md)
-- [Raccomandazioni in materia di hardware](hardware.md)
-- [Raccomandazioni software](software.md)
+- [Raccomandazioni per l&#39;hardware](hardware.md)
+- [Consigli software](software.md)
 - [Architettura di riferimento](reference-architecture.md)
-- [Raccomandazioni in materia di ambiente di sviluppo](development-environment.md)
+- [Raccomandazioni per l’ambiente di sviluppo](development-environment.md)
 - [Best practice di configurazione](configuration.md)
 - [Flusso di distribuzione](deployment-flow.md)
-- [Elaborazione dell&#39;ordine ad alta velocità](high-throughput-order-processing.md)
+- [Elaborazione degli ordini con throughput elevato](high-throughput-order-processing.md)
 - Concetti avanzati {#performance-best-practices}
    - [Configurazione avanzata](advanced-setup.md)
    - [Avanzate [!DNL JavaScript] raggruppamento](advanced-js-bundling.md)

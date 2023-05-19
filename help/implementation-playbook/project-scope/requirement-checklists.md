@@ -1,209 +1,209 @@
 ---
-title: Elenchi di controllo dei requisiti
-description: Utilizza questo elenco di domande complete per prepararti a un'implementazione di Adobe Commerce.
+title: Elenchi di controllo requisiti
+description: Utilizza questo elenco di domande complete per aiutarti a prepararti per un’implementazione Adobe Commerce.
 exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
 source-git-commit: d18be812626723e203d2308be8c3f9783a19b43b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
 
-# Elenchi di controllo dei requisiti
+# Elenchi di controllo requisiti
 
-Le seguenti domande possono fungere da punto di partenza per vedere quali informazioni devono essere documentate per confermare la preparazione organizzativa. Possono inoltre essere di aiuto quando si sviluppa un PQR.
+Le seguenti domande possono fungere da punto di partenza per vedere quali informazioni devono essere documentate per confermare la preparazione organizzativa. Possono anche essere utili per sviluppare un RFP.
 
-## Business
+## Aziende
 
-- Quali sono gli obiettivi aziendali della nuova piattaforma e-commerce?
+- Quali sono gli obiettivi aziendali per la nuova piattaforma di e-commerce?
 
-- Quali sono i motivi per cambiare la piattaforma e-commerce corrente?
+- Quali sono le ragioni per cambiare la tua attuale piattaforma di e-commerce?
 
-- Quali sono gli obiettivi dell&#39;infrastruttura web?
+- Quali sono gli obiettivi per l’infrastruttura del sito web?
 
-- Qual è il tuo arco di tempo per distribuire la nuova piattaforma e-commerce?
+- Qual è il tuo periodo di tempo per distribuire la nuova piattaforma di e-commerce?
 
-- Quanti project manager IT verranno assegnati a questo progetto?
+- Quanti project manager IT saranno assegnati a questo progetto?
 
-- Quanti analisti aziendali verranno assegnati a questo progetto?
+- Quanti analisti aziendali saranno assegnati a questo progetto?
 
-- Quanti dei vostri analisti tecnici saranno assegnati a questo progetto?
+- Quanti analisti tecnici saranno assegnati a questo progetto?
 
-- Quanti dei tuoi sviluppatori HTML verranno assegnati a questo progetto?
+- Quanti dei tuoi sviluppatori HTML saranno assegnati a questo progetto?
 
-- Quale documentazione esiste per i processi aziendali correnti?
+- Quale documentazione è disponibile per i processi aziendali correnti?
 
-- Quale documentazione esiste per le integrazioni di sistema correnti?
+- Qual è la documentazione disponibile per le integrazioni di sistema correnti?
 
-- Quale documentazione esiste per i flussi di processo correnti?
+- Qual è la documentazione relativa ai flussi di processo correnti?
 
-- Quale documentazione esiste per i flussi di dati correnti?
+- Qual è la documentazione dei flussi di dati correnti?
 
 - Chi fornirà la formazione?
 
-- Quale formazione sarà completata prima del live?
+- Quale corso di formazione verrà completato prima del lancio?
 
-- Quale formazione sarà completata dopo l&#39;entrata in servizio?
+- Quale corso di formazione sarà completato dopo il lancio?
 
-- Quale supporto Adobe Commerce sarà richiesto dopo la pubblicazione?
+- Quale supporto Adobe Commerce sarà richiesto dopo il lancio?
 
-- Questo progetto dipende da altri progetti di sviluppo del sistema?
+- Il progetto dipende da altri progetti di sviluppo del sistema?
 
-- Come vede l&#39;aumento delle vendite nei prossimi 12-24 mesi?
+- Come pensi che aumenteranno le tue vendite nei prossimi 12-24 mesi?
 
-- Chi sono i suoi principali concorrenti? Fornisci i collegamenti ai loro siti. Come vuoi differenziare la tua esperienza online dai tuoi concorrenti?
+- Chi sono i tuoi principali concorrenti? Inserisci i collegamenti ai loro siti. Come vuoi differenziare la tua esperienza online dalla concorrenza?
 
-- Da dove vede la crescita futura nel suo business?
+- Quali sono le prospettive di crescita per il tuo business?
 
-- Qual è il ruolo del commercio digitale nella tua strategia commerciale? Quali sono i tuoi obiettivi principali per la configurazione di questa piattaforma di e-commerce?
+- Quale ruolo svolge il commercio digitale nella tua strategia aziendale? Quali sono i tuoi obiettivi principali per la configurazione di questa piattaforma di e-commerce?
 
-- Hai marchi/aziende che prendi come riferimento su come crescere il tuo business omnichannel?
+- Hai marchi/aziende da utilizzare come riferimento per la crescita del tuo business omnicanale?
 
-- Quali team o singoli utenti stanno guidando la strategia di e-commerce? Descrivere le posizioni pertinenti.
+- Quali team o singoli utenti guidano la strategia di e-commerce? Descrivere le posizioni pertinenti.
 
-## Piattaforma attuale
+## Piattaforma corrente
 
-- In che modo è ospitata la piattaforma corrente: Interno, provider di hosting, server cloud privati o server cloud ospitati?
+- In che modo viene ospitata la piattaforma corrente: interna, del provider di hosting, dei server cloud privati o dei server cloud ospitati?
 
-- Quali ambienti dispone della piattaforma corrente: sviluppo, QA, pre-produzione, produzione?
+- Quali ambienti dispone la piattaforma corrente: sviluppo, controllo qualità, preproduzione, produzione?
 
-- Quanti server web e database si trovano nell&#39;ambiente di sviluppo?
+- Quanti server web e di database sono presenti nell&#39;ambiente di sviluppo?
 
-- Quanti server web e database si trovano nell’ambiente di controllo qualità?
+- Quanti server web e di database sono presenti nell&#39;ambiente di controllo qualità?
 
-- Quanti server web e database si trovano nell’ambiente di staging (pre-produzione)?
+- Quanti server web e di database sono presenti nell&#39;ambiente di staging (pre-produzione)?
 
-- Quanti server web e database si trovano nell&#39;ambiente di produzione?
+- Quanti server web e di database sono presenti nell&#39;ambiente di produzione?
 
-- Si tratta di un’architettura multi-server con bilanciamento del carico?
+- Si tratta di un&#39;architettura multiserver con bilanciamento del carico?
 
-- È un&#39;architettura di sistema ad alta disponibilità?
+- Si tratta di un&#39;architettura di sistema ad alta disponibilità?
 
-- Quali problemi si verificano con i siti web correnti?
+- Quali problemi si verificano con i siti Web correnti?
 
-- Dimensione attuale del catalogo (numero di SKU)?
+- Dimensione catalogo corrente (numero di SKU)?
 
 - Visitatori medi al giorno?
 
-- Sessioni simultanee medie all&#39;ora?
+- Numero medio di sessioni simultanee all&#39;ora?
 
 - Visualizzazioni di pagina medie al giorno?
 
 - Ordini medi all&#39;ora e al giorno?
 
-## Requisiti della piattaforma previsti
+## Requisiti previsti per la piattaforma
 
 - Quale versione di Adobe Commerce utilizzerai?
 
-- Come sarà ospitata la futura piattaforma: Interno, provider di hosting, server cloud privati o server cloud ospitati?
+- In che modo verrà ospitata la futura piattaforma: interna, del provider di hosting, dei server cloud privati o dei server cloud ospitati?
 
-- Quali ambienti avranno la piattaforma futura: sviluppo, QA, pre-produzione, produzione?
+- Quali ambienti disporrà la futura piattaforma: sviluppo, controllo qualità, preproduzione, produzione?
 
-- Quanti server web e database saranno nell&#39;ambiente di sviluppo?
+- Quanti server web e di database saranno presenti nell&#39;ambiente di sviluppo?
 
 - Sarà un&#39;architettura di sistema ad alta disponibilità?
 
-- Quanti amministratori di Adobe Commerce avrete?
+- Quanti amministratori Adobe Commerce avrai?
 
 - Dimensione prevista del catalogo (numero di SKU)?
 
-- Visitatori medi attesi al giorno?
+- Visitatori medi previsti al giorno?
 
-- Sessioni simultanee medie previste all&#39;ora?
+- Media prevista sessioni simultanee all&#39;ora?
 
-- Visualizzazioni di pagina medie previste al giorno?
+- Media giornaliera prevista delle visualizzazioni di pagina?
 
-- Quali dati devono essere importati dal vecchio sito al nuovo sito? (Esempio: prodotto, cliente, cronologia ordini)
+- Quali dati devono essere importati dal sito precedente al nuovo? (Esempio: prodotto, cliente, cronologia ordini)
 
 ## Siti Web
 
 - Quanti siti web nazionali saranno implementati?
 
-- Quali lingue saranno attuate?
+- Quali lingue verranno implementate?
 
 - Quanti siti web internazionali saranno implementati?
 
-- Quali regioni saranno supportate dai siti web?
+- Quali aree geografiche saranno supportate dai siti Web?
 
-- Quali lingue saranno attuate?
+- Quali lingue verranno implementate?
 
-- Quali valute saranno attuate?
+- Quali valute verranno implementate?
 
-- Hai accordi a livello di servizio di consegna per ogni paese?
+- Sono disponibili accordi sui livelli di servizio di consegna per ciascun paese?
 
-- Chi sono i vostri fornitori di consegne per ogni paese?
+- Chi sono i fornitori di servizi di consegna per ciascun paese?
 
-- Chi sono i suoi fornitori di contabilità fiscale per ogni paese?
+- Chi sono i fornitori di contabilità fiscale per ogni paese?
 
-- Richiederai un tema personalizzato del sito web internazionale?
+- Sarà necessario un tema del sito Web internazionale personalizzato?
 
-- Si tratta principalmente di un sito B2C o B2B? Esiste un elemento B2B2B o B2B2C?
+- È principalmente un sito B2C o B2B? Esiste un elemento B2B2B o B2B2C?
 
-- Esiste un design esistente che viene adattato o la piattaforma sarà progettata da zero?
+- Esiste un progetto esistente adattato o la piattaforma sarà progettata da zero?
 
-- Esiste un requisito per il commercio headless (livelli frontend e backend separati)?
+- Esiste un requisito per l’e-commerce headless (livelli front-end e back-end separati)?
 
 - Quali sono i punti di interruzione (tablet/mobile) per il design reattivo?
 
-- Esiste un requisito per un’app mobile? PWA dovrebbe essere sfruttato per i dispositivi mobili front-end?
+- Esiste un requisito per un’app mobile? PWA dovrebbe essere utilizzato per il front-end mobile?
 
-- Alcuni browser specifici da testare (ad eccezione dei browser standard IE9+, Firefox, Chrome, Safari)?
+- Browser specifici da testare (eccetto i browser standard IE9+, Firefox, Chrome, Safari)?
 
-- Quali sono le lingue per ciascun fronte? Il contenuto tradotto è disponibile o è necessario supporto?
+- Quali sono le lingue per ogni front-end? Il contenuto tradotto è disponibile o è necessario supporto?
 
-- Ci sono più siti web? In caso affermativo, è possibile utilizzare le credenziali in tutti i siti?
+- Esistono più siti Web? In caso affermativo, i clienti possono utilizzare le credenziali in tutti i siti?
 
-- I dati di prodotto sono condivisi tra tutti i siti?
+- I dati dei prodotti sono condivisi tra tutti i siti?
 
-- Sono presenti modifiche nella progettazione da sito a sito?
+- La progettazione viene modificata da un sito all&#39;altro?
 
 - Esistono opzioni di abbonamento e come vengono gestiti gli abbonati?
 
-- Esistono requisiti specifici in materia di SEO? Come viene gestito il marketing basato su motori di ricerca?
+- Esistono requisiti SEO specifici? Come viene gestito il marketing dei motori di ricerca?
 
 ## Integrazioni
 
 - Quale sistema CMS sarà integrato con Adobe Commerce? (Esempi: WordPress, Drupal, Concrete5)
 
-È possibile utilizzare le API esistenti?
+È possibile utilizzare delle API esistenti?
 
-- La gestione degli errori di sistema è stata progettata e sviluppata per questa integrazione di sistemi di terze parti?
+- La gestione degli errori di sistema è stata progettata e sviluppata per questa integrazione di sistema di terze parti?
 
-- Quale sistema ERP verrà integrato con Adobe Commerce? (Esempi: SAP, MS Dynamics NAV)
+- Quale sistema ERP sarà integrato con Adobe Commerce? (Esempi: SAP, MS Dynamics NAV)
 
-- Quale sistema di spedizione sarà integrato con Adobe Commerce?
+- Quale sistema di corriere sarà integrato con Adobe Commerce?
 
-- Quale sistema di software fiscale sarà integrato con Adobe Commerce? (Esempio: Taxware)
+- Quale software fiscale sarà integrato con Adobe Commerce? (Esempio: Taxware)
 
-- Da quale sistema verranno importati i dati di prodotto in Adobe Commerce?
+- Da quale sistema verranno importati i dati dei prodotti in Adobe Commerce?
 
-- Frequenza dei carichi di dati di prodotto importati?
+- Frequenza dei caricamenti dei dati dei prodotti importati?
 
-- In quale sistema Adobe Commerce esporterà i dati di prodotto?
+- In quale sistema Adobe Commerce esporterà i dati dei prodotti?
 
-- Frequenza dei carichi di dati di prodotto esportati?
+- Frequenza dei caricamenti dei dati dei prodotti esportati?
 
 - Da quale sistema verranno importati i dati in Adobe Commerce?
 
-- Frequenza dei carichi di dati dell&#39;ordine importati?
+- Frequenza dei caricamenti dei dati dell’ordine importati?
 
-- In quale sistema verranno esportati i dati dell’ordine da Adobe Commerce?
+- In quale sistema Adobe Commerce esporterà i dati degli ordini?
 
-- Frequenza dei carichi di dati dell&#39;ordine esportati?
+- Frequenza dei caricamenti dei dati dell’ordine esportati?
 
 - Quale piattaforma di analisi viene utilizzata? (Esempi: Adobe Analytics, Google Analytics)
 
-- Ci sarà un single sign on e condivisione dei social network? In caso affermativo, quali reti sociali?
+- Ci sarà il single sign-on e la condivisione sui social network? In caso affermativo, quali sono i social network?
 
-- Esistono programmi di premi o fidelizzazione? Esiste un&#39;integrazione con i sistemi POS per i premi?
+- Esistono premi o programmi di fidelizzazione? C&#39;è qualche integrazione con i sistemi POS per i premi?
 
-- Come vengono gestiti i rendimenti dei prodotti? Il cliente deve registrare una richiesta di ritorno online?
+- Come vengono gestiti i resi dei prodotti? Il cliente deve registrare una richiesta di reso online?
 
 - È necessario uno strumento di chat online? Serve un chatbot?
 
-- Quale gateway di pagamento vuoi che abbia il tuo sito?
+- Specificare il gateway di pagamento da utilizzare per il sito.
 
-- Quale sistema di gestione degli ordini sarà integrato con Adobe Commerce? (Esempi: Microsoft Dynamics, SAP, Retail Pro)
+- Quale sistema di gestione degli ordini verrà integrato con Adobe Commerce? (Esempi: Microsoft Dynamics, SAP, Retail Pro)
 
 - Quale sistema di gestione delle informazioni sui prodotti sarà integrato con Adobe Commerce? (Esempi: Akeneo, InRiver, Bluestone)
 
@@ -211,67 +211,67 @@ Le seguenti domande possono fungere da punto di partenza per vedere quali inform
 
 ## Funzioni specifiche di Adobe Commerce
 
-- Richiederai un qualsiasi tipo di test A/B?
+- Avrai bisogno di qualche tipo di test A/B?
 
 - Quanti amministratori simultanei possono lavorare nel sistema?
 
 - Permetterai a un cliente di ritirare gli articoli acquistati sul sito web in un negozio?
 
-- Avrà delle pagine promozionali?
+- Avrai pagine promozionali?
 
-- Avrà dei banner di marketing?
+- Avrai dei banner di marketing?
 
-- Vuoi far riprodurre i video in una pagina CMS?
+- Riprodurre i video in una pagina CMS?
 
-- Quale sarà la frequenza di modifica o aggiornamento del contenuto?
+- Con quale frequenza verranno modificati o aggiornati i contenuti?
 
 - Quale tipo di contenuto verrà caricato?
 
-- Gli aggiornamenti dei contenuti saranno pianificati?
+- Gli aggiornamenti dei contenuti verranno pianificati?
 
-- Richiederai un sito web per la gestione temporanea dei contenuti?
+- Sarà necessario un sito Web di gestione temporanea dei contenuti?
 
-- I clienti devono essere autorizzati a creare un account sito web?
+- I clienti devono essere autorizzati a creare un account per il sito Web?
 
-- Utilizzerai buoni sconto univoci per le promozioni?
+- Utilizzerai coupon di sconto univoci per le promozioni?
 
-- Prezzi promozionali?
+- Hai dei prezzi promozionali?
 
-- Avrai un coupon flessibile (possibilità di impostare per sito web, gruppo di clienti, ora, categorie o prodotti)?
+- Avrai coupon flessibili (possibilità di impostare per sito web, gruppo di clienti, tempo, categorie o prodotti)?
 
-- Saranno offerti sconti percentuali per singoli articoli?
+- Gli sconti in percentuale verranno offerti per singoli articoli?
 
-- Quale tipo di funzionalità regalo sarà richiesto?
+- Quale tipo di funzionalità regalo sarà necessaria?
 
-- Sarà necessaria la funzionalità del programma di premi?
+- Sarà necessaria la funzionalità dei programmi per i premi?
 
-- Sarà necessaria la funzionalità newsletter?
+- Sarà richiesta la funzionalità della newsletter?
 
 - Consentire a un cliente di visualizzare gli ordini passati e selezionare gli articoli da scambiare?
 
-- Permetterai a un cliente di avviare l&#39;annullamento di un ordine dal sito web?
+- Permetterai a un cliente di avviare l’annullamento di un ordine dal sito web?
 
-- Permetterai a un cliente di avviare lo scambio di articoli dal sito web?
+- Permetterai a un cliente di avviare lo scambio di articoli dal sito Web?
 
-- Richiederai la convalida dell’indirizzo in tempo reale?
+- Sarà necessaria la convalida degli indirizzi in tempo reale?
 
-- Permetterai a un cliente di avviare la restituzione degli articoli dal sito web?
+- Consentirai a un cliente di avviare la restituzione degli articoli dal sito Web?
 
-- Adobe Commerce emetterà un RMA di ritorno?
+- Adobe Commerce emetterà una RMA di ritorno?
 
 - Acquisire informazioni sul rimborso in Adobe Commerce?
 
-- Richiederai il tracciamento degli ordini online per un cliente registrato?
+- Richiedi il tracciamento degli ordini online per un cliente registrato?
 
-- Richiederai il tracciamento degli ordini online per un cliente ospite?
+- Richiedi il tracciamento degli ordini online per un cliente ospite?
 
-- Esegui l&#39;autorizzazione online e acquisisci durante il posizionamento dell&#39;ordine?
+- Eseguire l&#39;autorizzazione online e l&#39;acquisizione durante il posizionamento dell&#39;ordine?
 
-- Autorizzazione con filtro per frode durante il posizionamento dell&#39;ordine con recupero ritardato
+- Autorizzazione con filtro antifrode durante il posizionamento dell’ordine con acquisizione ritardata
 
-- Numero di giorni per ricevere il pagamento completo (non autorizzazione)?
+- Numero di giorni per ricevere il pagamento completo (non l&#39;autorizzazione)?
 
-- Cattura ed esegui in caso di scadenza dell&#39;autorizzazione?
+- Acquisire ed eseguire in caso di scadenza dell’autorizzazione?
 
 - Authorize.net
 
@@ -279,64 +279,64 @@ Le seguenti domande possono fungere da punto di partenza per vedere quali inform
 
 - PayPal Express
 
-- Archiviazione del credito
+- Credito store
 
-- Carte regalo in plastica
+- Biglietti regalo in plastica
 
-- Punti di premio
+- Punti premio
 
-- &quot;Bill Me Più Tardi&quot; - più comunemente noto come &quot;Acquista Ora, Paga Più Tardi&quot; in quanto viene immediatamente fatturato ma non ancora pagato
+- &quot;Bill Me Later&quot; - più comunemente noto come &quot;Buy Now, Pay Later&quot; in quanto è immediatamente fatturato ma non ancora pagato
 
-- Ci saranno diversi prezzi dei prodotti su diversi siti web?
+- Ci saranno prezzi di prodotto diversi su diversi siti web?
 
-- Sarà necessaria una funzionalità per confrontare prodotti diversi?
+- Sarà necessaria la funzionalità per confrontare prodotti diversi?
 
-- Che tipi di prodotti venderai?
+- Quali tipi di prodotti venderai?
 
-- Quale sarà la frequenza di aggiunta di nuovi prodotti?
+- Con quale frequenza verranno aggiunti nuovi prodotti?
 
-- Quale sarà la frequenza di aggiornamento dei prodotti?
+- Con quale frequenza verranno aggiornati i prodotti?
 
-- Quale sarà la frequenza di creazione di nuove categorie o sottocategorie?
+- Con quale frequenza verranno create nuove categorie o sottocategorie?
 
-- Sarà necessaria la funzionalità &quot;Valutazioni e Recensioni&quot;?
+- Sarà necessaria la funzionalità &quot;Classificazioni e recensioni&quot;?
 
 - Permetterai ai clienti di consigliare un prodotto?
 
-- Vendite: Ordini, imposte, fatturati, spedizione, rimborsi, coupon, report di regolamento PayPal
+- Vendite: ordini, imposte, fatturati, spedizione, rimborsi, coupon, rapporti di liquidazione PayPal
 
 - Carrello: Prodotti in carrelli, arti abbandonate
 
-- Prodotti: Bestseller, prodotti ordinati, più visti, basso stock, download
+- Prodotti: Bestseller, prodotti ordinati, più visti, scorte basse, download
 
-- Clienti: Nuovi account, clienti per totale ordini, clienti per numero di ordini, segmenti di clienti, recensioni clienti
+- Clienti: nuovi account, clienti per totale ordini, clienti per numero di ordini, segmenti di clienti, recensioni dei clienti
 
-- Recensioni sui prodotti
+- Recensioni prodotti
 
 - Tag: Clienti, prodotti, popolari
 
 - Termini di ricerca
 
-- Inviti: Generale, clienti, tasso di conversione ordine
+- Inviti: Generale, clienti, tasso di conversione ordini
 
-- Sarà necessario che Adobe Commerce generi rapporti basati sui dati di utilizzo dei coupon?
+- Sarà necessario Adobe Commerce per generare rapporti basati sui dati di utilizzo dei coupon?
 
-- Sarà necessario che Adobe Commerce generi rapporti basati sui dati di vendita?
+- Sarà necessario Adobe Commerce per generare rapporti basati sui dati delle vendite?
 
-- Avrai bisogno di rapporti Adobe Commerce personalizzati?
+- Saranno necessari rapporti Adobe Commerce personalizzati?
 
-- Qual è la tua strategia SEO attuale?
+- Qual è la tua attuale strategia SEO (Search Engine Optimization)?
 
-- Quale sarà la tua nuova strategia SEO?
+- Quale sarà la vostra nuova strategia SEO (Search Engine Optimization)?
 
-- Quali sono i requisiti per la migrazione SEO?
+- Quali sono i requisiti per la migrazione SEO (Search Engine Optimization)?
 
-- Memorizza tariffe fisse in Adobe Commerce?
+- Memorizzare i tassi fissi in Adobe Commerce?
 
 - Consentire la spedizione parziale?
 
-- Le informazioni di tracciamento delle spedizioni devono essere memorizzate in Adobe Commerce?
+- Archiviare le informazioni di tracciabilità della spedizione in Adobe Commerce?
 
-- Richiederai regole di calcolo delle imposte per le tue regioni nazionali?
+- Saranno necessarie regole di calcolo delle imposte per le aree geografiche nazionali?
 
-- Richiederai regole di calcolo delle imposte per le tue regioni internazionali?
+- Saranno necessarie regole di calcolo delle imposte per le regioni internazionali?

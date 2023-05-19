@@ -1,13 +1,13 @@
 ---
 title: Replica del database
-description: Scopri i vantaggi della configurazione della replica del database.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+description: Vedere i vantaggi della configurazione della replica del database.
+exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
-
 
 # Replica del database
 
@@ -17,22 +17,22 @@ ht-degree: 0%
 
 L&#39;impostazione della replica del database offre i seguenti vantaggi:
 
-- Fornisce il backup dei dati
-- Abilita l’analisi dei dati senza influire sul database master
+- Backup dei dati
+- Abilita l&#39;analisi dei dati senza influire sul database principale
 - Scalabilità
 
-I database MySQL vengono replicati in modo asincrono, il che significa che gli slave non devono essere connessi in modo permanente per ricevere gli aggiornamenti dal master.
+I database MySQL vengono replicati in modo asincrono, il che significa che non è necessario che gli slave siano connessi in modo permanente per ricevere gli aggiornamenti dal master.
 
 ## Configurare la replica del database
 
-Una discussione approfondita sulla replica dei database va oltre l&#39;ambito di questa guida. Per configurarlo, puoi consultare una risorsa come:
+Una discussione approfondita sulla replica del database esula dall&#39;ambito di questa guida. Per configurarlo, puoi consultare una risorsa come:
 
 - [Documentazione di MySQL](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [Come impostare la replica principale secondario in MySQL (digitaloceani)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [Come impostare la replica master slave in MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-Commerce fornisce configurazioni MySQL di esempio per i database slave. Viene fornita una configurazione semplice con l’ `ResourceConnections` Classe `README.md`.
+Commerce fornisce configurazioni MySQL di esempio per i database slave. Una configurazione semplice viene fornita con `ResourceConnections` classe `README.md`.
 
-Di seguito è riportato un livello più avanzato ed è fornito solo per informazioni:
+Di seguito sono riportate alcune informazioni più avanzate fornite esclusivamente a scopo informativo:
 
 ```php
    return array (
@@ -121,9 +121,9 @@ Di seguito è riportato un livello più avanzato ed è fornito solo per informaz
 
 ## Miglioramento delle prestazioni
 
-Per migliorare le prestazioni della replica master-slave, è possibile filtrare alcune tabelle sulle istanze slave. È consigliabile filtrare tutte le tabelle temporanee con pattern di nome `search\_tmp\_%` utilizzati per la ricerca nel catalogo.
+Per migliorare le prestazioni della replica master-slave, è possibile filtrare alcune tabelle in base alle istanze slave. È consigliabile filtrare tutte le tabelle temporanee con il pattern dei nomi `search\_tmp\_%` utilizzati per la ricerca nel catalogo.
 
-A questo scopo, aggiungi la seguente riga al tuo `my.cnf` file sulle istanze slave:
+A questo scopo, aggiungi la seguente riga al tuo `my.cnf` file nelle istanze slave:
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

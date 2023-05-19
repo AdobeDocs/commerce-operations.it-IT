@@ -1,50 +1,50 @@
 ---
-title: Best practice di configurazione per gli indici
-description: Gestisci e ottimizza le prestazioni del sito seguendo le best practice per la configurazione dell'indicizzatore.
+title: Best practice di configurazione per gli indicizzatori
+description: Gestisci e ottimizza le prestazioni del sito seguendo le best practice per la configurazione dell’indicizzatore.
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
+exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
 
-
 # Best practice per la configurazione dell’indicizzatore
 
-Per ottimizzare e mantenere le prestazioni del sito, rivedi e aggiorna la configurazione dell’indicizzatore utilizzando le best practice sulle prestazioni descritte in questo articolo.
+Per ottimizzare e mantenere le prestazioni del sito, esaminare e aggiornare la configurazione dell&#39;indicizzatore utilizzando le best practice relative alle prestazioni descritte in questo articolo.
 
 ## Prodotti e versioni interessati
 
 [Tutte le versioni supportate](../../../release/versions.md) di:
 
-- Adobe Commerce su infrastruttura cloud
+- Adobe Commerce sull’infrastruttura cloud
 - Adobe Commerce on-premise
 
-## Imposta indici da aggiornare in base a una pianificazione
+## Imposta gli indicizzatori da aggiornare in base a una pianificazione
 
 Adobe Commerce dispone di due tipi di modalità di indicizzazione: [!UICONTROL Update on Save] (impostazione predefinita) e [!DNL Update on Schedule].
 
-- **[!UICONTROL Update on Save]** la modalità aggiorna immediatamente gli indici ogni volta che il catalogo o altri dati cambiano. Ad esempio, se un utente amministratore aggiunge nuovi prodotti a una categoria, l’indice dei prodotti della categoria viene reindicizzato immediatamente al momento del salvataggio dell’aggiornamento.
+- **[!UICONTROL Update on Save]** la modalità aggiorna immediatamente gli indici ogni volta che il catalogo o altri dati cambiano. Ad esempio, se un utente amministratore aggiunge nuovi prodotti a una categoria, l’indice dei prodotti della categoria viene reindicizzato immediatamente al salvataggio dell’aggiornamento.
 
-- **[!UICONTROL Update on Schedule]** in modalità vengono memorizzate informazioni sugli aggiornamenti dei dati e le operazioni di reindicizzazione e gli aggiornamenti dell&#39;indice sono gestiti da un processo cron in esecuzione in background a intervalli pianificati.
+- **[!UICONTROL Update on Schedule]** la modalità memorizza informazioni sugli aggiornamenti dei dati e le operazioni di reindicizzazione e gli aggiornamenti degli indici sono gestiti da un processo cron eseguito in background a intervalli pianificati.
 
-La presenza di un grande store con più amministratori che lavorano nel backend o con molte importazioni ed esportazioni attiva frequenti aggiornamenti dell&#39;indice. Se la configurazione dell&#39;indice del sito è impostata su [!UICONTROL Update on Save] modalità, la reindicizzazione frequente rallenta le prestazioni del database che rallenta le prestazioni del sito e causa lunghi ritardi nel processo di reindicizzazione, soprattutto per i grandi negozi.
+La presenza di un archivio di grandi dimensioni con più amministratori che lavorano nel back-end o il numero elevato di importazioni ed esportazioni provoca frequenti aggiornamenti dell’indice. Se la configurazione dell’indice del sito è impostata su [!UICONTROL Update on Save] modalità, la reindicizzazione frequente riduce le prestazioni del database, rallentando le prestazioni del sito e causando lunghi ritardi nel processo di reindicizzazione, in particolare per i negozi di grandi dimensioni.
 
-Per massimizzare le prestazioni del sito, segui queste best practice per l’indicizzazione:
+Per ottimizzare le prestazioni del sito, segui queste best practice per l’indicizzazione:
 
-- Rivedi la configurazione dell&#39;indice.
-- Imposta gli indici su _[!UICONTROL Update on Schedule]_per siti di grandi dimensioni e siti con aggiornamenti frequenti e traffico pesante. Vedi [Gestione dell&#39;indice](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
-- Segui [best practice sulle prestazioni](../../../performance/configuration.md) per la gestione degli indici.
+- Rivedi la configurazione dell’indice.
+- Imposta gli indicizzatori su _[!UICONTROL Update on Schedule]_per siti di grandi dimensioni e siti con aggiornamenti frequenti e traffico elevato. Consulta [Gestione indice](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
+- Segui [best practice per le prestazioni](../../../performance/configuration.md) per la gestione degli indici.
 
 >[!IMPORTANT]
 >
->La [!DNL Customer Grid] può essere reindicizzato solo utilizzando [!UICONTROL Update on Save] opzione . Questo indice non supporta il `Update by Schedule` opzione .
+>Il [!DNL Customer Grid] può essere reindicizzato solo utilizzando [!UICONTROL Update on Save] opzione. Questo indice non supporta `Update by Schedule` opzione.
 
 ## Informazioni aggiuntive
 
-- [Gestione dell&#39;indice per gli utenti amministratori](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Gestione dell’indice utilizzando il Magento CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
-- [Panoramica sull’indicizzazione per gli sviluppatori](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [Gestione dell’indice per gli utenti amministratori](../../../configuration/cli/manage-indexers.md#configure-indexers)
+- [Gestione dell’indice tramite CLI di Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [Panoramica sull’indicizzazione per sviluppatori](https://developer.adobe.com/commerce/php/development/components/indexing/)

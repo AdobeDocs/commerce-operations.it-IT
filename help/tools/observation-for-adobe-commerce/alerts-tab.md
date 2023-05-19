@@ -1,38 +1,38 @@
 ---
-title: '"Il [!UICONTROL Alerts] scheda"'
-description: Scopri le [!UICONTROL Alerts] scheda di [!DNL Observation for Adobe Commerce].
-source-git-commit: 2a82a5e232de3efa3adb76aee2334e198b929947
+title: Il [!UICONTROL Alerts] scheda
+description: Scopri di più su [!UICONTROL Alerts] scheda di [!DNL Observation for Adobe Commerce].
+exl-id: e9305576-6ed2-48f3-baec-36e081b0d04b
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
 
 ---
 
-# La [!UICONTROL Alerts] scheda
+# Il [!UICONTROL Alerts] scheda
 
-La [!UICONTROL Alerts] La scheda fornisce una serie di avvisi, tra cui avvisi critici aperti e chiusi.
+Il [!UICONTROL Alerts] fornisce una serie di avvisi, inclusi gli avvisi critici di apertura e chiusura.
 
 ## [!UICONTROL Open Alert Details]
 
 ![Apri avvisi critici](../../assets/tools/observation-for-adobe-commerce/alerts-tab-1.jpg)
 
-La **[!UICONTROL Open Alert Details]** mostra un conteggio degli avvisi critici aperti nell&#39;arco temporale selezionato. Gli avvisi includeranno gli avvisi creati da Adobi e quelli creati dal partner o dal commerciante.
+Il **[!UICONTROL Open Alert Details]** mostra un conteggio degli avvisi critici aperti nell’arco temporale selezionato. Gli avvisi includono quelli creati dagli Adobi e quelli creati dal partner o dall’esercente.
 
 ## [!UICONTROL Closed Critical Alerts]
 
 ![Avvisi critici chiusi](../../assets/tools/observation-for-adobe-commerce/alerts-tab-2.jpg)
 
-La **[!UICONTROL Closed Critical Alerts]** mostra un conteggio degli avvisi critici chiusi nell’arco temporale selezionato. Gli avvisi includeranno gli avvisi creati da Adobi e quelli creati dal partner o dal commerciante.
+Il **[!UICONTROL Closed Critical Alerts]** mostra un conteggio degli avvisi critici chiusi nell’arco temporale selezionato. Gli avvisi includono quelli creati dagli Adobi e quelli creati dal partner o dall’esercente.
 
 ## [!UICONTROL Critical Alert Details]
 
-![Dettagli avvisi critici](../../assets/tools/observation-for-adobe-commerce/alerts-tab-3.jpg)
+![Dettagli degli avvisi critici](../../assets/tools/observation-for-adobe-commerce/alerts-tab-3.jpg)
 
-La **[!UICONTROL Critical Alert Details]** frame mostra un conteggio dei dettagli dell’avviso critico nell’arco temporale selezionato, tra cui marca temporale, nome della condizione e se l’evento di avviso è aperto o chiuso.
+Il **[!UICONTROL Critical Alert Details]** fotogramma mostra un conteggio dei dettagli critici dell’avviso nell’arco temporale selezionato, tra cui marca temporale, nome della condizione e se l’evento di avviso è aperto o chiuso.
 
 ## [!UICONTROL Infrastructure Alert Details]
 
-![Dettagli avvisi infrastruttura](../../assets/tools/observation-for-adobe-commerce/alerts-tab-4.jpg)
+![Dettagli dell&#39;avviso sull&#39;infrastruttura](../../assets/tools/observation-for-adobe-commerce/alerts-tab-4.jpg)
 
-La **[!UICONTROL Infrastructure Alert Details]** Il frame mostra applicazioni, host e altri eventi di infrastruttura nell&#39;arco temporale selezionato.
-
+Il **[!UICONTROL Infrastructure Alert Details]** il frame mostra applicazioni, host e altri eventi dell&#39;infrastruttura nell&#39;arco temporale selezionato.

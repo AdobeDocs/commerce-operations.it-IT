@@ -1,60 +1,60 @@
 ---
-title: Best practice per la configurazione degli attributi di prodotto
+title: Best practice per la configurazione degli attributi del prodotto
 description: Scopri come ottimizzare le prestazioni di Adobe Commerce limitando il numero di attributi di prodotto, opzioni di attributi e set di attributi
 role: User, Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+exl-id: 81783a4c-bc82-4733-bee3-0154cf03079a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
 
 ---
 
+# Best practice per la configurazione dell’attributo di prodotto
 
-# Best practice per la configurazione degli attributi di prodotto
-
-- Per ottenere le migliori prestazioni, non configurare più del numero massimo consigliato di attributi di prodotto o opzioni di attributi di prodotto.
+- Per ottenere prestazioni ottimali, non configurare un numero di attributi di prodotto o opzioni di attributi di prodotto superiore a quello massimo consigliato.
 
 - **Attributi del prodotto**—
    - Per Adobe Commerce versione 2.3.x e da 2.4.0 a 2.4.1-p1, configura non più di 500 attributi
    - Per Adobe Commerce versione 2.4.2 e successive, configura fino a 1500 attributi di prodotto
-- **Opzioni attributo prodotto**- Configura fino a 100 opzioni di attributi per ogni attributo
-- **Set di attributi di prodotto**- Configura un massimo di 1000 set di attributi _
+- **Opzioni degli attributi del prodotto**-Configurare fino a 100 opzioni di attributo per ciascun attributo
+- **Set di attributi del prodotto**-Configurare un massimo di 1000 set di attributi _
 
 >[!NOTE]
 >
->Gli attributi del prodotto specificano le funzioni che si applicano globalmente a tutti i prodotti. Le opzioni di attributo del prodotto sono personalizzazioni per specificare le funzioni applicabili a prodotti specifici.
+>Gli attributi del prodotto specificano le funzioni che si applicano a livello globale a tutti i prodotti. Le opzioni dell’attributo del prodotto sono personalizzazioni per specificare le funzioni applicabili a prodotti specifici.
 
 ## Prodotti e versioni interessati
 
 [Tutte le versioni supportate](../../../release/versions.md) di:
 
-- Adobe Commerce su infrastruttura cloud
+- Adobe Commerce sull’infrastruttura cloud
 - Adobe Commerce on-premise
 
-## Riduzione del numero di attributi di prodotto
+## Riduci il numero di attributi del prodotto
 
-Per ottenere le migliori prestazioni durante la gestione dei prodotti dall’amministratore e il recupero dei dati dei prodotti nella vetrina:
+Per ottenere le migliori prestazioni durante la gestione dei prodotti dall’amministratore e il recupero dei dati di prodotto nella vetrina:
 
-- Utilizza diversi modelli di prodotto (set di attributi) per diversi prodotti.
-- Utilizzo di opzioni personalizzate e prodotti complessi per la gestione delle varianti
+- Utilizzare diversi modelli di prodotto (set di attributi) per prodotti diversi.
+- Sfruttare opzioni personalizzate e prodotti complessi per la gestione delle varianti
 - Riduci al minimo il numero di attributi ricercabili.
-- Rimuovere le proprietà del prodotto non utilizzate.
-- Archiviare e gestire gli attributi non relativi al commercio nei sistemi di gestione dei prodotti esterni (PMS).
+- Rimuovi le proprietà del prodotto non utilizzate.
+- Archivia e gestisci attributi non correlati all’e-commerce in sistemi esterni di gestione dei prodotti (PMS).
 
-## Riduci il numero di opzioni attributo del prodotto
+## Ridurre il numero di opzioni degli attributi di prodotto
 
-Per ottenere le migliori prestazioni durante la gestione dei prodotti dall’amministratore e il recupero dei dati dei prodotti nella vetrina:
+Per ottenere le migliori prestazioni durante la gestione dei prodotti dall’amministratore e il recupero dei dati di prodotto nella vetrina:
 
-- Utilizza diversi meccanismi di variazione per creare prodotti: prodotti complessi, opzioni personalizzate come origine di varianti di prodotto.
-- Crea modelli di prodotto specifici con attributi e opzioni di targeting per evitare modelli di prodotto e contenitori di opzioni generalizzati.
-- Gestisci un elenco di opzioni di attributi effettive.
-- Gestisci le informazioni sui prodotti tramite un sistema di gestione dei prodotti (PMS) esterno.
+- Utilizza diversi meccanismi di variante per creare prodotti: prodotti complessi, opzioni personalizzate come origine di varianti di prodotto.
+- Crea modelli di prodotto specifici con attributi di targeting e opzioni per evitare modelli di prodotto e contenitori di opzioni generalizzati.
+- Gestisce un elenco delle opzioni di attributo effettive.
+- Gestire le informazioni sui prodotti tramite un sistema di gestione dei prodotti (PMS) esterno.
 
-## Riduzione del numero di set di attributi di prodotto
+## Ridurre il numero di set di attributi di prodotto
 
-Rimuovere i set di attributi di prodotto non utilizzati utilizzando MySQL.
+Rimuovere i set di attributi di prodotto inutilizzati utilizzando MySQL.
 
 ### Verifica la configurazione del set di attributi
 
@@ -66,27 +66,27 @@ Rimuovere i set di attributi di prodotto non utilizzati utilizzando MySQL.
    SELECT COUNT(*) AS 'attribute_set' FROM *${TABLE_PREFIX}*eav_attribute_set;
    ```
 
-1. Rimuovi eventuali set di attributi non utilizzati.
+1. Rimuovere tutti i set di attributi inutilizzati.
 
-## Effetti potenziali sulle prestazioni
+## Potenziali impatti sulle prestazioni
 
-Configurazione di molti **attributi del prodotto** aumenta le dimensioni del modello di prodotto per ciascun prodotto (struttura EAV) e la quantità di dati da recuperare. Questo aumento influisce sulle operazioni nei seguenti modi:
+Configurazione di molti **attributi prodotto** aumenta le dimensioni del modello di prodotto per ciascun prodotto (struttura EAV) e la quantità di dati da recuperare. Questo aumento influisce sulle operazioni nei seguenti modi:
 
-- Aumento del traffico delle query SQL relativo al recupero dei dati EAV e alla quantità di dati elaborati che si traduce in una riduzione del throughput del database
-- Incremento significativo delle dimensioni degli indici Adobe Commerce e dell’indice di ricerca full-text
-- Raggiungere i limiti rigidi di MySQL durante la creazione di un indice FLAT per i modelli di prodotto di grandi dimensioni e l&#39;impossibilità di utilizzarlo
+- Aumento del traffico delle query SQL correlate al recupero dei dati EAV e della quantità di dati elaborati, con conseguente riduzione della velocità effettiva del database
+- Aumento significativo della dimensione degli indici Adobe Commerce e dell’indice di ricerca full-text
+- Raggiungimento dei limiti rigidi di MySQL durante la creazione di un indice FLAT per modelli di prodotto di dimensioni eccessive e impossibilità di utilizzarlo
 
 L’aumento dei dati di prodotto e delle dimensioni dell’indice può influire sulle prestazioni del sito nei seguenti modi:
 
-- Maggiore tempo di risposta per la maggior parte degli scenari di vetrina relativi alla navigazione nel catalogo, alla ricerca (rapida e avanzata) e alla navigazione a più livelli.
-- Le operazioni di gestione dei prodotti in Admin rallentano in modo significativo, il che può causare timeout.
-- La funzionalità Azioni di massa del prodotto può essere bloccata.
-- Il tempo di ricostruzione dell’indice per i cataloghi di medie e grandi dimensioni non può essere eseguito su base giornaliera a causa di lunghi tempi di esecuzione.
+- Tempi di risposta più elevati per la maggior parte degli scenari di vetrina relativi alla navigazione del catalogo, alla ricerca (rapida e avanzata) e alla navigazione su più livelli.
+- Le operazioni di gestione dei prodotti nell’amministratore subiscono un rallentamento significativo, che può causare timeout.
+- È possibile bloccare la funzionalità Azioni di massa prodotto.
+- I tempi di ricreazione degli indici per i cataloghi di medie e grandi dimensioni non possono essere eseguiti su base giornaliera a causa dei lunghi tempi di esecuzione.
 
 Configurazione di molti **opzioni attributo** può influire sulle prestazioni del sito nei seguenti modi:
 
-- Tempi di richiesta e rendering lunghi sulle pagine dei dettagli del prodotto (PDP) e delle categorie contenenti prodotti complessi.
-- I tempi di risposta delle operazioni di salvataggio dei prodotti amministratore aumentano al di sopra degli obiettivi prestazionali ottimali.
+- Lunghi tempi di richiesta e rendering sui dettagli prodotto (PDP) e sulle pagine di categorie contenenti prodotti complessi.
+- Il tempo di risposta per le operazioni di salvataggio dei prodotti dell’amministratore aumenta oltre gli obiettivi di prestazioni ottimali.
 - Aumento del tempo di rendering del modulo di modifica del prodotto.
 - Pagamento lento.
 
@@ -95,5 +95,4 @@ Configurazione di molti **opzioni attributo** può influire sulle prestazioni de
 - [Panoramica degli attributi del prodotto](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)
 - [Set di attributi](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-sets.html)
 - [Creare un prodotto](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
-- [Esercitazioni sulla personalizzazione > Personalizza modulo di creazione del prodotto](https://developer.adobe.com/commerce/php/tutorials/admin/custom-product-creation-form/)
-
+- [Tutorial di personalizzazione > Personalizza modulo di creazione prodotto](https://developer.adobe.com/commerce/php/tutorials/admin/custom-product-creation-form/)

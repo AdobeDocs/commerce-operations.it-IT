@@ -1,13 +1,13 @@
 ---
 title: Creare lo schema del database
-description: Segui questi passaggi per creare un database per il tuo Adobe Commerce o Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+description: Per creare un database per il tuo Adobe Commerce o Magento Open Source, segui la procedura riportata di seguito.
+exl-id: 860c9918-44c4-4ef1-88a5-12614566307c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
 
 ---
-
 
 # Creare lo schema del database
 
@@ -21,7 +21,7 @@ Utilizzo comando:
 bin/magento setup:db-schema:upgrade
 ```
 
-Per visualizzare lo stato del database, immettere
+Per visualizzare lo stato del database, immettere:
 
 ```bash
 bin/magento setup:db:status

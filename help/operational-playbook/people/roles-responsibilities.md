@@ -1,6 +1,6 @@
 ---
 title: Ruoli e responsabilità
-description: Scopri i diversi ruoli e responsabilità coinvolti in un progetto e-commerce di successo.
+description: Scopri i diversi ruoli e responsabilità coinvolti in un progetto di e-commerce di successo.
 exl-id: 6e61dcce-ad71-4380-bae4-48be1a3d88b9
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,29 +11,29 @@ ht-degree: 0%
 
 # Ruoli e responsabilità
 
-Un progetto e-commerce di successo richiede diversi ruoli con diversi livelli di responsabilità.
+Un progetto di e-commerce di successo richiede diversi ruoli con diversi livelli di responsabilità.
 
-## Testa del digitale
+## Head of Digital
 
-Il capo di Digital è responsabile della gestione delle operazioni di e-commerce e della supervisione di ogni team per garantire che tutti abbiano prestazioni come previsto e che lavorino verso l&#39;obiettivo previsto. Alcuni dei compiti che il responsabile del digitale deve svolgere comprendono:
+Il capo del digitale è responsabile della gestione delle operazioni di e-commerce e della supervisione di ogni team per garantire che tutti stiano ottenendo le prestazioni previste e che si adoperino per raggiungere l’obiettivo previsto. Tra i compiti che il responsabile del digitale deve svolgere figurano:
 
 - Gestione dei contratti
 - Partnership
 - Definizione della strategia
 - Budget
-- Sorveglianza di prodotti e acquisti
+- Supervisione dei prodotti e acquisto
 
-In alcune organizzazioni, il responsabile di Digital controlla anche le attività di marketing. Il capo del digitale è il punto di contatto chiave per tutti i soggetti interessati interni ed esterni. Devono avere conoscenze di e-commerce per implementare il progetto per i modelli di business B2B, B2C o D2C.
+In alcune organizzazioni, il responsabile del digitale supervisiona anche le attività di marketing. Il capo del settore digitale è il punto di contatto chiave per tutte le parti interessate interne ed esterne. Devono avere conoscenze di e-commerce per implementare il progetto per i modelli di business B2B, B2C o D2C.
 
-## PMI del commercio elettronico
+## PMI e-commerce
 
-Un esperto in materia di commercio elettronico (PMI) guida il progetto in termini di cosa può essere implementato e come deve funzionare. Essi guidano sia il lato funzionale che tecnico dei team. I progetti possono avere più di una PMI in cui una è più funzionale, mentre l&#39;altra è più mirata tecnicamente.
+Un Esperto in materia di e-commerce (SME) guida il progetto in termini di ciò che può essere implementato e come deve funzionare. Guidano sia l&#39;aspetto funzionale che quello tecnico dei team. I progetti possono avere più di una PMI in cui una è più funzionale, mentre l’altra è più tecnicamente orientata.
 
-Una PMI di e-commerce deve garantire che i dettagli dei requisiti siano corretti e allineati con i risultati finali richiesti per aderire a politiche, best practice e standard.
+Una PMI del settore e-commerce deve garantire che i dettagli dei requisiti siano corretti e allineati con i prodotti richiesti per aderire a politiche, best practice e standard.
 
-Le PMI di e-commerce hanno talvolta un duplice ruolo di project manager e si occupano di compiti di gestione dei progetti, tra cui
+La PMI del commercio elettronico svolge talvolta un duplice ruolo di project manager, dove si occupa di compiti di gestione dei progetti, tra cui
 
-- Reporting
+- Generazione rapporti
 - Presentations
 - Gestione delle parti interessate
 
@@ -41,101 +41,101 @@ Le PMI di e-commerce hanno talvolta un duplice ruolo di project manager e si occ
 
 Gli obiettivi di un Marketing Manager includono:
 
-- Attrazione del traffico verso il sito
+- Attrarre traffico verso il sito
 - Creazione di strategie di marketing
-- Aggiornato alle tendenze del settore
-- Concentrarsi sul tasso di conversione, sul carrello abbandonato e sulle promozioni per aumentare il ROI dell&#39;organizzazione
+- Aggiornamento sulle tendenze del settore
+- Concentrarsi sul tasso di conversione, sul carrello abbandonato e sulle promozioni per aumentare il ROI dell’organizzazione
 
-Le aziende di e-commerce richiedono il marketing in forme diverse, come e-mail, stampa, web, social media, influenzatori e così via. È responsabilità di Marketing Manager utilizzare questi moduli in modo efficace.
+Le aziende di e-commerce richiedono il marketing in diverse forme, ad esempio e-mail, stampa, web, social media, influencer e così via. È responsabilità del Marketing Manager utilizzare questi moduli in modo efficace.
 
-Anche il responsabile marketing di un progetto di implementazione digitale deve concentrarsi sulle attività SEO e SEM, che possono essere gestite internamente o da terzi.
+Il Marketing Manager di un progetto di implementazione digitale deve inoltre concentrarsi sulle attività SEO (Search Engine Optimization) e SEM (Search Engine Optimization), che possono essere gestite internamente o da terze parti.
 
-Un Marketing Manager deve comunicare costantemente con il capo di Digital , il team di E-commerce Manager, il team di Servizio Clienti e il team di Warehouse per allineare le campagne e le promozioni. Se un Marketing Manager pianifica e invia una promozione per un prodotto con inventario ridotto, potrebbe esserci un sacco di clienti insoddisfatti e aumentare il carico di lavoro del team del Servizio clienti. È essenziale che tutte le squadre siano allineate.
+Un Marketing Manager deve comunicare costantemente con il Head of Digital (Responsabile digitale), l’Ecommerce Manager (Responsabile e-commerce), il team di assistenza clienti e il team di Warehouse per allineare le campagne e le promozioni. Se un Marketing Manager pianifica e invia una promozione per un prodotto con inventario ridotto, potrebbero verificarsi molti problemi con i clienti e aumentare il carico di lavoro del team di assistenza clienti. È essenziale che tutte le squadre siano allineate.
 
-I responsabili marketing devono inoltre occuparsi di diversi metodi di assistenza clienti per migliorare la customer experience e la fedeltà dei clienti, tra cui, tra l’altro:
+I responsabili marketing devono inoltre adottare metodi di assistenza clienti diversi per migliorare l’esperienza e la fedeltà dei clienti, tra cui:
 
 - Fedeltà
-- Punti di premio
+- Punti premio
 - Buoni regalo
 
-## Analisi aziendale di e-commerce
+## Analista aziendale e-commerce
 
-Un Business Analyst di e-commerce aiuta l&#39;azienda a eseguire i progetti senza problemi, in quanto è il punto di contatto chiave tra l&#39;azienda e i team di e-commerce e IT.
+Un Business Analyst per l’e-commerce aiuta l’azienda a gestire i progetti in modo fluido, in quanto è il punto di contatto chiave tra l’azienda e i team di e-commerce e IT.
 
-Devono essere in grado di svolgere più attività, di tenere il passo con i requisiti, le tempistiche, l&#39;assegnazione dei compiti e i follow-up. La maggior parte delle aziende richiede anche che Ecommerce Business Analyst abbia una conoscenza approfondita della piattaforma su cui il sito è ospitato in modo che possano costruire il sito in base ai requisiti del progetto. Questa conoscenza aiuta inoltre a rispondere alle domande dei clienti e a ridurre il carico di lavoro degli sviluppatori.
+Devono essere in grado di eseguire più attività, tenere il passo con i requisiti, le tempistiche, l&#39;assegnazione delle attività e i follow-up. La maggior parte delle aziende richiede inoltre che l’analista aziendale di e-commerce abbia una conoscenza approfondita della piattaforma su cui è ospitato il sito, in modo che possa costruire il sito in base ai requisiti del progetto. Questa conoscenza li aiuta anche a rispondere alle domande dei clienti e a ridurre il carico di lavoro degli sviluppatori.
 
 ## Team IT
 
-In genere gli sviluppatori siedono sotto il team di e-commerce, ma a volte sono sotto un team IT separato. Possono essere disponibili diversi tipi di sviluppatori, tra cui:
+Gli sviluppatori di solito fanno parte del team di e-commerce, ma a volte fanno parte di un team IT separato. Possono esistere diversi tipi di sviluppatori, tra cui:
 
-- Fronte
-- Backend
-- Stack pieno
+- Frontend
+- Back-end
+- Full stack
 
-Gli sviluppatori devono essere in grado di creare e personalizzare il sito in base ai requisiti del progetto. Attualmente, i siti per i primi dispositivi mobili sono richiesti. Assicurati che i tuoi sviluppatori abbiano esperienza con la tecnologia mobile-first.
+Gli sviluppatori devono essere in grado di creare e personalizzare il sito in base ai requisiti del progetto. Attualmente, i siti mobili sono sempre più richiesti. Assicurati che i tuoi sviluppatori abbiano esperienza con la tecnologia mobile-first.
 
-Il sito di e-commerce è l&#39;anima del business. È importante che il sito sia facile da usare sia per i clienti che per gli utenti di backend per aumentare il tasso di conversione e aumentare l&#39;efficienza.
+Il sito di e-commerce è l&#39;anima del business. È importante che il sito sia facile da usare sia per i clienti che per gli utenti back-end per aumentare il tasso di conversione e l’efficienza.
 
-È fondamentale che il team ottenga correttamente le fondamenta del sito, tra cui:
+È fondamentale che il team ottenga le basi giuste del sito, tra cui:
 
-- Integrazione del gateway dei pagamenti
+- Integrazione del gateway di pagamento
 - Social media
 - Filtri
-- Ordinamento delle regole
+- Regole di ordinamento
 - Interazione del cliente con il sito
 - Contenuto
 - categoria
 - Prezzi
 - Inventario
 
-Il team IT include anche tester. Il ruolo principale dei tester è quello di testare ogni possibile scenario che potrebbe interrompere ciò che gli sviluppatori creano. Un test approfondito riduce le incongruenze di probabilità, i bug e i problemi di prestazioni al momento dell’avvio del sito, il che potrebbe influire sull’esperienza del cliente. In e-commerce, ottieni un’unica possibilità con il cliente e deve essere la prima volta giusta.
+Il team IT include anche i tester. Il ruolo principale dei tester è quello di testare ogni scenario possibile che potrebbe interrompere ciò che gli sviluppatori costruiscono. I test approfonditi riducono le probabilità di incoerenze, bug e problemi di prestazioni quando il sito viene avviato, il che potrebbe influire sull’esperienza del cliente. In e-commerce, si ottiene una possibilità con il cliente e deve essere giusto la prima volta.
 
-## Team magazzino
+## Team warehouse
 
-Anche se l&#39;intera esperienza si svolge online, c&#39;è ancora un mondo fisico che include la gestione dell&#39;inventario, il packaging dell&#39;ordine e la spedizione ai clienti.
+Anche se l&#39;intera esperienza si svolge online, esiste ancora un mondo fisico che include la gestione dell&#39;inventario, l&#39;imballaggio dell&#39;ordine e la spedizione ai clienti.
 
-### Gestore della logistica
+### Gestione logistica
 
-Il responsabile della logistica deve garantire che gli ordini in arrivo siano imballati correttamente e trasportati in sicurezza al cliente. Il responsabile della logistica deve anche gestire la squadra e la flotta, sia essa interna o esterna.
+Il responsabile logistica deve assicurarsi che gli ordini in arrivo vengano imballati correttamente e trasportati al cliente in modo sicuro. Il responsabile logistico deve anche gestire la squadra e la flotta, sia che si tratti di una squadra interna che esterna.
 
-La responsabilità principale del Gestore della logistica è quella di garantire che il prodotto venga spedito nel modo giusto, all&#39;indirizzo giusto e al momento giusto.
+Il Responsabile della logistica ha la responsabilità principale di garantire che il prodotto sia spedito nel modo giusto, all&#39;indirizzo giusto e al momento giusto.
 
-### Gestione scorte
+### Gestione inventario
 
-Il responsabile dell&#39;inventario deve controllare l&#39;inventario in uno o più magazzini per garantire che i prodotti ordinati dai clienti siano i prodotti che vengono spediti. Essi sono responsabili della supervisione dell&#39;imballaggio corretto del prodotto. Nessuna impresa vuole che i propri clienti ricevano prodotti in condizioni insoddisfacenti; la presentazione è fondamentale.
+Il responsabile dell&#39;inventario deve controllare l&#39;inventario in uno o più magazzini per assicurarsi che i prodotti ordinati dai clienti siano quelli spediti. È loro responsabilità supervisionare la corretta confezione del prodotto. Nessuna azienda desidera che i propri clienti ricevano i prodotti in condizioni insoddisfacenti; la presentazione è fondamentale.
 
 ## Team del Servizio Clienti
 
-Il team del Servizio clienti è di solito uno dei team più sottovalutati del settore, ma quando si tratta di un&#39;attività di e-commerce, è l&#39;unico team che ha contatti diretti giornalieri con i clienti che agiscono sul sito.
+Il team del Servizio clienti è in genere uno dei team più sottovalutati del settore, ma quando si tratta di un’attività di e-commerce, è l’unico team che ha un contatto diretto giornaliero con i clienti che effettuano transazioni sul sito.
 
-I team di Assistenza clienti utilizzano strumenti diversi per comunicare con i clienti, tra cui:
+I team del Servizio Clienti utilizzano diversi strumenti per comunicare con i clienti, tra cui:
 
-- Risposta alle chiamate telefoniche
-- Utilizzo di live chat
+- Risposta alle telefonate
+- Utilizzo della chat in diretta
 - Gestione dei chatbot
 
-Il team del Servizio Clienti è anche responsabile dei seguenti elementi:
+Il team del Servizio Clienti è inoltre responsabile di quanto segue:
 
-- Risposte alle domande e ai dubbi dei clienti
-- Rendimenti dell&#39;elaborazione
-- Coordinamento dell&#39;inventario relativo ai rendimenti
-- Controllo dello stato dell&#39;ordine con il magazzino
-- Controllo delle promozioni con il marketing
+- Rispondere alle domande e alle preoccupazioni dei clienti
+- Elaborazione delle restituzioni
+- Coordinamento delle scorte relative alle restituzioni
+- Verifica dello stato dell&#39;ordine con il magazzino
+- Verifica delle promozioni con il marketing
 
-Il team del Servizio clienti può fornire informazioni dettagliate ad altri membri del team in base ai feedback, alle domande e ai dubbi dei clienti, utili all’azienda per migliorare e migliorare la customer experience.
+Il team del Servizio clienti può fornire informazioni dettagliate ad altri membri del team in base al feedback ricevuto dai clienti, alle domande e ai dubbi sollevati, utili per migliorare e migliorare l’esperienza del cliente.
 
-## Gruppo di contenuti
+## Team dei contenuti
 
-Il team Contenuto si trova all’interno del team Marketing, del team E-commerce o in modo indipendente. Il traffico del sito Web non è sufficiente. I clienti devono acquistare i prodotti per la propria azienda per ottenere un ROI. Il contenuto dell’intero sito web è importante, ma il contenuto più importante è nelle pagine di categorie e prodotti. Questo è il contenuto che aiuta le aziende a fare soldi.
+Il team dei contenuti può essere posizionato all’interno del team Marketing, del team E-commerce o in modo indipendente. Il traffico del sito Web non è sufficiente. I clienti devono acquistare i prodotti per la tua azienda per ottenere un ROI. Il contenuto dell’intero sito web è importante, ma il contenuto più importante si trova nelle pagine della categoria e del prodotto. Questo è il contenuto che aiuta le aziende a fare soldi.
 
 Il team dei contenuti è responsabile di:
 
-- **Organizzazione dei contenuti**—Gli elementi, gli URL, la navigazione e la struttura delle pagine devono essere semplici e intuitivi. Se il sito è troppo complicato, allora i clienti si perdono.
+- **Organizzazione del contenuto**- Elementi, URL, navigazione e struttura della pagina devono essere semplici e intuitivi. Se il sito è troppo complicato, i clienti si perdono.
 
-- **Correzione di contenuti interrotti**- Immagini interrotte, pagine, pagine mancanti, flusso di cassa interrotto e messaggi di errore fanno sì che i clienti abbandonino il sito e lasciino un’impressione negativa.
+- **Correzione del contenuto interrotto**: immagini, pagine, pagine mancanti, flusso di pagamento interrotto e messaggi di errore interrotti fanno sì che i clienti abbandonino il sito e lascino un’impressione negativa.
 
-- **Aggiornamento del contenuto**- Il contenuto del sito web deve essere aggiornato. Se il sito è costituito da contenuto obsoleto, influisce sull’esperienza del cliente e aumenta il carico di lavoro per il team del Servizio clienti. Ad esempio, devono rispondere alle domande dei clienti alle quali i contenuti del sito web avrebbero dovuto dare risposta.
+- **Aggiornamento del contenuto**: il contenuto del sito web deve essere aggiornato. Se il sito è costituito da contenuti obsoleti, questo influisce sull’esperienza del cliente e aumenta il carico di lavoro per il team del Servizio clienti. Ad esempio, devono rispondere alle domande dei clienti a cui avrebbe dovuto rispondere il contenuto del sito web.
 
-- **Semplificazione del contenuto**- Il team dei contenuti deve creare contenuti semplici e semplici. Il linguaggio semplice funziona al meglio quando si interagisce con i clienti.
+- **Semplificazione dei contenuti**: il team dei contenuti deve creare contenuti semplici e diretti. Il linguaggio semplice funziona meglio quando si interagisce con i clienti.
 
-Il team dei contenuti crea, testa, gestisce e ottimizza tutti i contenuti del sito web, il che porta al ROI.
+Il team dei contenuti crea, verifica, gestisce e ottimizza tutti i contenuti del sito web, con conseguente ritorno sull’investimento.

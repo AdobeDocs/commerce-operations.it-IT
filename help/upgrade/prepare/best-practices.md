@@ -1,87 +1,87 @@
 ---
 title: Best practice
-description: Utilizza le best practice consigliate per Adobe per gestire il processo di aggiornamento dei progetti Adobe Commerce e Magenti Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+description: Utilizza le best practice consigliate dagli Adobi per gestire il processo di aggiornamento per i progetti Adobe Commerce e di Magento Open Source.
+exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
 
 ---
 
+# Best practice per l&#39;aggiornamento
 
-# Best practice per l’aggiornamento
-
-In questo argomento sono elencate le azioni da intraprendere per gestire la complessità dell’aggiornamento dei progetti Adobe Commerce e Magenti Open Source. Il team deve pensare agli aggiornamenti dal momento in cui inizia lo sviluppo del progetto e continuare attraverso ogni versione. Seguendo queste best practice, il processo di aggiornamento sarà molto più semplice, veloce e meno costoso.
+In questo argomento sono elencate le azioni da intraprendere per gestire la complessità dell&#39;aggiornamento dei progetti Adobe Commerce e di Magento Open Source. Il tuo team deve pensare agli aggiornamenti dal momento in cui inizia lo sviluppo del progetto e continuare attraverso ogni versione. Seguendo queste best practice, il processo di aggiornamento sarà molto più semplice, rapido e conveniente.
 
 >[!TIP]
 >
->Tali raccomandazioni si basano sulle migliori pratiche, corroborate da prove dell&#39;impatto e dell&#39;efficacia di queste ultime da parte di partner, commercianti, esperti di Adobe e della Comunità.
+>Queste raccomandazioni si basano sulle best practice supportate da dati comprovanti il suo impatto e la sua efficacia da parte di partner, esercenti, Adobi e la community.
 
 ## Che impatto ha un aggiornamento?
 
-È importante comprendere le variabili che determinano la complessità di un aggiornamento. Devi considerare queste variabili all&#39;inizio di ciascun progetto, non solo quando è il momento di eseguire l&#39;aggiornamento. Lo sviluppo di un progetto è fondamentale per garantire che gli aggiornamenti futuri siano lisci e che tu sia in grado di controllare lo sforzo necessario per completarli.
+È importante comprendere le variabili che determinano la complessità di un aggiornamento. Devi considerare queste variabili all&#39;inizio di ogni progetto, non solo quando è il momento di eseguire l&#39;aggiornamento. Lo sviluppo di un progetto è fondamentale per garantire che gli aggiornamenti futuri siano fluidi e che tu sia in grado di controllare lo sforzo necessario per completarli.
 
-Il livello di impegno per l’aggiornamento dell’istanza Adobe Commerce dipende da questi fattori:
+Il livello di impegno per aggiornare l’istanza di Adobe Commerce dipende da questi fattori:
 
-- **Come avete costruito il vostro sito?** La quantità di lavoro personalizzato e il numero di moduli di terze parti installati influisce fortemente sulla complessità di un aggiornamento. La qualità del lavoro personalizzato e dei moduli può determinare se un aggiornamento va senza problemi.
+- **Come hai creato il tuo sito?** La quantità di lavoro personalizzato e il numero di moduli di terze parti installati influiscono notevolmente sulla complessità di un aggiornamento. La qualità del lavoro e dei moduli personalizzati può determinare se un aggiornamento procede senza problemi.
 
-- **Stai saltando più versioni?** Saltare le versioni rende il prossimo aggiornamento più complesso, l&#39;aggiornamento da versioni successive rende il processo più semplice e meno costoso.
+- **Verranno ignorate più versioni?** Ignorando le versioni, il prossimo aggiornamento diventa più complesso; l’aggiornamento dalle versioni successive rende il processo più semplice e conveniente.
 
-- **Che tipo di aggiornamento stai eseguendo?** Un aggiornamento a una versione minore (ad esempio da 2.3.x a 2.4.0) è più esteso di un aggiornamento tra le versioni della patch (ad esempio da 2.4.2 a 2.4.3). Gli aggiornamenti di sicurezza sono il tipo più semplice da implementare.
+- **Che tipo di aggiornamento si sta eseguendo?** Un aggiornamento a una versione secondaria (ad esempio, da 2.3.x a 2.4.0) è più esteso di un aggiornamento tra versioni patch (ad esempio, da 2.4.2 a 2.4.3). Gli aggiornamenti di sicurezza sono il tipo più semplice da implementare.
 
 ## Best practice per la pianificazione degli aggiornamenti
 
-Se lavori su un progetto già in produzione, gli aggiornamenti ti offrono l’opportunità di migliorare la qualità del codice e delle personalizzazioni e di ottimizzare gli aggiornamenti futuri. Il tempo che investi oggi è risparmiato nel lungo periodo.
+Se stai lavorando a un progetto che è già in produzione, gli aggiornamenti sono un’opportunità per migliorare la qualità del codice e delle personalizzazioni e per ottimizzare i futuri aggiornamenti. Il tempo che investite oggi è risparmiato a lungo termine.
 
-Se gestisci più siti per diversi merchants, l’approccio migliore è quello di avere un’istanza di base con le caratteristiche principali e le personalizzazioni normalmente utilizzate. Utilizza questa istanza di base come sito di test per completare un aggiornamento e poi eseguine altre. Questa procedura offre la flessibilità di riutilizzare moduli personalizzati per clienti diversi e di semplificare gli aggiornamenti tra progetti.
+Se gestisci più siti per diversi commercianti, l’approccio migliore consiste nell’avere un’istanza di base con le funzioni e le personalizzazioni principali che utilizzi normalmente. Utilizza questa istanza di base come sito di test per completare un aggiornamento, quindi eseguilo su altri. Questa procedura offre la flessibilità di riutilizzare i moduli personalizzati per clienti diversi e semplificare gli aggiornamenti tra i progetti.
 
-Se il progetto è attivo, ti consigliamo di eseguire un controllo di audit per determinarne la qualità e di capire come migliorarlo per renderlo più efficiente.
+Se il progetto è live, ti consigliamo di eseguire un controllo di audit per determinarne la qualità e di capire come migliorarlo per rendere gli aggiornamenti più efficienti.
 
-### Sviluppo con gli aggiornamenti
+### Sviluppo pensando agli aggiornamenti
 
-Dal momento in cui inizi a lavorare su un progetto, dovresti considerare in che modo gli aggiornamenti futuri saranno influenzati dal tuo lavoro attuale. Segui sempre le best practice di sviluppo Adobe Commerce come descritto qui:
+Dal momento in cui inizi a lavorare su un progetto, dovresti considerare in che modo i futuri aggiornamenti saranno influenzati dal lavoro corrente. Segui sempre le best practice di sviluppo di Adobe Commerce come descritto qui:
 
 - [Best practice di sviluppo](https://developer.adobe.com/commerce/php/best-practices/)
-- [Standard di codifica](https://developer.adobe.com/commerce/php/coding-standards/)
+- [Norme di codifica](https://developer.adobe.com/commerce/php/coding-standards/)
 
-Se non lo hai già fatto, inizia ad adottare la piattaforma di estensibilità di Adobe Commerce. La piattaforma consente di personalizzare in modo efficiente i processi, integrare i sistemi e distribuire nuove funzionalità, mantenendo al tempo stesso la possibilità di aggiornare SaaS. Le sue caratteristiche includono:
+Inizia ad adottare la piattaforma Adobe Commerce Extensibility, se non lo hai già fatto. La piattaforma consente di personalizzare in modo efficiente i processi, integrare i sistemi e implementare nuove funzionalità, mantenendo al tempo stesso la possibilità di aggiornamento simile a SaaS. Le sue caratteristiche includono:
 
-- **Estensibilità dell’interfaccia utente**. Estendi ed evolvi la vetrina indipendentemente dal backend e dal middleware che utilizzi [PWA Studi](https://developer.adobe.com/commerce/pwa-studio/).
+- **Estensibilità dell’interfaccia utente**. Estendi ed evolvi la vetrina indipendentemente dal backend e dal middleware utilizzando [PWA Studi](https://developer.adobe.com/commerce/pwa-studio/).
 
-- **Estensibilità API**. Utilizzo [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) estendere il livello API web evolvendo il modello dati grafico ed eseguendo funzioni lambda direttamente dal livello grafico.
+- **Estensibilità API**. Utilizzare [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) estendere il livello API web evolvendo il modello dati grafico ed eseguendo funzioni lambda direttamente dal livello grafico.
 
-- **Adobe I/O middleware e servizi**. Collega i tuoi sistemi con Adobe Commerce utilizzando il middleware di Adobe e una suite di connessioni app basate su [Adobe I/O](https://www.adobe.io/). Inoltre, puoi estendere le funzionalità di base della piattaforma sovrascrivendo il comportamento predefinito con la tua logica di business che viene eseguita su Adobe I/O.
+- **middleware e servizi Adobe I/O**. Connetti i tuoi sistemi con Adobe Commerce utilizzando il middleware di Adobe e una suite di connessioni alle app basate su [Adobe I/O](https://www.adobe.io/). Inoltre, puoi estendere le funzionalità della piattaforma di base sovrascrivendo il comportamento predefinito con la tua logica di business che viene eseguita su Adobe I/O.
 
-### Aggiornamento della pianificazione
+### Aggiornamenti di Planning
 
-Man mano che espandiamo continuamente le funzionalità di Adobe Commerce, è fondamentale che tu sviluppi le ultime versioni disponibili e definisca una strategia di aggiornamento nei tuoi piani di progetto. In questo modo potrai essere sicuro, conforme e aggiornato sugli ultimi miglioramenti che ti consentono di incrementare le vendite più rapidamente, operare in modo più efficace e rimanere al passo con la concorrenza attuale e futura.
+Man mano che le funzionalità di Adobe Commerce vengono continuamente ampliate, è fondamentale che tu sviluppi l’ultima versione disponibile e definisca una strategia di aggiornamento nei piani dei tuoi progetti. In questo modo potrai rimanere sicuro, conforme e aggiornato sugli ultimi miglioramenti, consentendoti di incrementare le vendite in modo più rapido, di operare in modo più efficace e di restare al passo con la concorrenza attuale e futura.
 
-Per facilitare la pianificazione e il budget degli aggiornamenti, è necessario monitorare il nostro [programma di rilascio](https://devdocs.magento.com/release). Pianifica in anticipo le attività di aggiornamento all’interno del backlog del tuo team. Scopo di completare questo lavoro con GA.
+Per aiutarti a pianificare e a pianificare gli aggiornamenti, devi monitorare i [pianificazione delle versioni](https://devdocs.magento.com/release). Pianifica in anticipo le attività di aggiornamento nel backlog del team. Completa questo lavoro con GA.
 
-- Per informazioni su ogni nuova versione, utilizza la versione precedente al rilascio. Il pre-rilascio è il codice di disponibilità generale disponibile per gli esercenti Adobe Commerce e tutti i partner due settimane prima della disponibilità generale. Se disponi di più store, utilizza il pre-release sul tuo archivio di base e verifica che i moduli e i temi personalizzati siano compatibili con esso.
+- Utilizza la versione non definitiva per scoprire ogni nuova versione. La versione non definitiva è il codice di disponibilità generale disponibile per i commercianti Adobe Commerce e per tutti i partner due settimane prima della disponibilità generale. Se disponi di più store, utilizza la versione non definitiva sullo store di base e verifica che i moduli e i temi personalizzati siano compatibili con esso.
 
-- Consulta la sezione [Elenco di controllo piano di aggiornamento](https://support.magento.com/hc/en-us/articles/360057968951) per Adobe Commerce per pianificare l’aggiornamento.
+- Rivedi [Elenco di controllo del piano di aggiornamento](https://support.magento.com/hc/en-us/articles/360057968951) Adobe Commerce ti aiuterà a pianificare l’aggiornamento.
 
-- Pianificare gli aggiornamenti all&#39;inizio dell&#39;anno. È necessario prenotare un budget e risorse per completare ogni aggiornamento. Lo sforzo di aggiornamento può variare notevolmente da un progetto all’altro. Utilizza le tue esperienze e conoscenze per realizzare un piano il più accurato possibile.
+- Pianificare gli aggiornamenti all&#39;inizio dell&#39;anno. È necessario registrare un budget e le risorse per completare ogni aggiornamento. Ricorda che lo sforzo di aggiornamento potrebbe variare notevolmente da un progetto all’altro. Utilizza le tue esperienze e conoscenze per creare un piano il più accurato possibile.
 
-- Se gli aggiornamenti richiedono più impegno rispetto a quanto descritto qui, è consigliabile controllare il progetto e apportare modifiche all’ambiente per ridurre la manutenzione a lungo termine.
+- Se gli aggiornamenti richiedono più tempo di quanto qui descritto, ti consigliamo di controllare il progetto e apportare modifiche all’ambiente per ridurre la manutenzione a lungo termine.
 
 ### Esecuzione degli aggiornamenti
 
-Gli aggiornamenti devono essere effettuati regolarmente e con un budget predefinito. Consigliamo di pianificare aggiornamenti pre-approvati all&#39;inizio dell&#39;anno per garantire che gli aggiornamenti siano pianificati e completati in tempo.
+Gli aggiornamenti devono essere effettuati regolarmente e in base a un budget predefinito. Si consiglia di pianificare gli aggiornamenti preapprovati all&#39;inizio dell&#39;anno per assicurare che vengano pianificati e completati in tempo.
 
-Valutare il lavoro da eseguire per l’aggiornamento:
+Valutare il lavoro da eseguire per l&#39;aggiornamento:
 
-- Consulta la sezione [note sulla versione](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) per comprendere l’ambito e l’impatto della nuova versione.
+- Rivedi [note sulla versione](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) per comprendere la portata e l’impatto della nuova versione.
 
-- Utilizza la [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) per identificare potenziali problemi che devono essere risolti nel codice personalizzato prima di tentare di eseguire l&#39;aggiornamento a una versione più recente.
+- Utilizza il [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) per identificare potenziali problemi che devono essere risolti nel codice personalizzato prima di tentare l’aggiornamento a una versione più recente.
 
-- Se utilizzi estensioni di terze parti, convalidane la compatibilità con la versione di destinazione in cui intendi eseguire l’aggiornamento.
+- Se utilizzi estensioni di terze parti, verifica la loro compatibilità con la versione di destinazione a cui intendi effettuare l’aggiornamento.
 
 ### Test post-aggiornamento
 
-Il test è la fase di un aggiornamento che richiede il maggior tempo. Di conseguenza, tale processo dovrebbe essere il più automatizzato possibile. Puoi sfruttare i vantaggi dell’utilizzo degli strumenti di test di base. La [Guida al test delle applicazioni](https://developer.adobe.com/commerce/testing/guide/) fornisce dettagli.
+Il test è la fase di un aggiornamento che richiede più tempo. Di conseguenza, questo processo dovrebbe essere il più possibile automatizzato. Puoi trarre vantaggio dall’utilizzo degli strumenti di test di base. Il [Guida al test delle applicazioni](https://developer.adobe.com/commerce/testing/guide/) fornisce dettagli.
 
 Utilizza un ambiente di staging per testare e convalidare l’aggiornamento prima di passare alla produzione.
 
-Utilizzare un **pagina di manutenzione**. La preparazione anticipata di questa pagina ti consente di comunicare con i tuoi clienti, avvisandoli che il lavoro sta avvenendo in background. Questa pagina deve essere visibile per alcuni minuti, ma in caso di problemi potrebbe essere necessario utilizzarla più a lungo. Disporre del contenuto e della progettazione appropriati per la pagina di manutenzione offre agli utenti una buona esperienza anche quando lo store non è disponibile.
+Utilizza un **pagina manutenzione**. La preparazione anticipata di questa pagina consente di comunicare con i clienti e di avvisarli che il lavoro è in corso in background. Questa pagina dovrebbe essere visibile per alcuni minuti, ma in caso di problemi potrebbe essere necessario usarla più a lungo. La possibilità di disporre del contenuto e della progettazione appropriati per la pagina di manutenzione offre agli utenti una buona esperienza anche quando il negozio non è disponibile.

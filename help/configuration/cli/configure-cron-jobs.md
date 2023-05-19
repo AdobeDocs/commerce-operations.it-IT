@@ -1,28 +1,28 @@
 ---
-title: Configurare ed eseguire i lavori cron
-description: Scopri come gestire i lavori cron.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+title: Configurare ed eseguire processi cron
+description: Scopri come gestire i processi cron.
+exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 0%
 
 ---
 
-
-# Configurare i lavori cron
+# Configurare i processi cron
 
 {{file-system-owner}}
 
-Diverse funzioni Commerce richiedono almeno un lavoro cron, che pianifica le attività da eseguire in futuro. Segue un elenco parziale di queste attività:
+Diverse funzioni di Commerce richiedono almeno un processo cron, che pianifica le attività in modo che si verifichino in futuro. Segue un elenco parziale di tali attività:
 
-- Regole del prezzo del catalogo
+- Regole prezzo catalogo
 - Newsletter
 - Generazione di sitemap Google
-- Avvisi/Notifiche del cliente (variazione del prezzo del prodotto, riacquisto del prodotto)
+- Avvisi/notifiche cliente (modifica del prezzo del prodotto, prodotto di nuovo in magazzino)
 - Reindicizzazione
 - Vendite private (solo Adobe Commerce)
 - Aggiornamento automatico dei tassi di cambio
-- Tutte le e-mail Commerce (inclusa la conferma dell’ordine e le transazioni)
+- Tutti i messaggi e-mail di Commerce (incluse le conferme degli ordini e le transazioni)
 
 >[!WARNING]
 >
@@ -30,57 +30,57 @@ Diverse funzioni Commerce richiedono almeno un lavoro cron, che pianifica le att
 
 >[!INFO]
 >
->Commerce dipende da una corretta configurazione del lavoro cron per molte importanti funzioni di sistema, inclusa l&#39;indicizzazione. In caso contrario, Commerce non funzionerà come previsto.
+>Commerce dipende dalla corretta configurazione dei processi cron per molte importanti funzioni di sistema, inclusa l’indicizzazione. Se non viene configurato correttamente, Commerce non funzionerà come previsto.
 
-I sistemi UNIX pianificano le attività che devono essere eseguite da utenti particolari utilizzando un _crontab_, che è un file che contiene istruzioni al daemon cron che dicono al daemon in effetti di &quot;eseguire questo comando a questa ora a questa data&quot;. Ogni utente dispone di un proprio crontab e i comandi di qualsiasi crontab vengono eseguiti come utente proprietario dell&#39;utente.
+I sistemi UNIX pianificano le attività che devono essere eseguite da utenti particolari utilizzando un _crontab_, file che contiene istruzioni per il daemon cron che indicano al daemon in vigore di &quot;eseguire questo comando in questa data in questo momento&quot;. Ogni utente dispone di una propria scheda cronologica e i comandi in una determinata scheda cronologica vengono eseguiti come l&#39;utente proprietario.
 
-Per eseguire cron in un browser Web, vedi [Proteggi cron.php per l&#39;esecuzione in un browser](../security/secure-cron-php.md).
+Per eseguire cron in un browser Web, vedi [Proteggere cron.php da eseguire in un browser](../security/secure-cron-php.md).
 
-## Creare o rimuovere la scheda comparativa Commerce
+## Creare o rimuovere la scheda Cronc di Commerce
 
-Questa sezione illustra come creare o rimuovere il tuo crontab Commerce (ovvero la configurazione per i lavori Commerce cron).
+Questa sezione illustra come creare o rimuovere la scheda Cronc di Commerce (ovvero la configurazione per i processi Crontab di Commerce).
 
-La _crontab_ è la configurazione utilizzata per eseguire i processi cron.
+Il _crontab_ è la configurazione utilizzata per eseguire i processi cron.
 
-L’applicazione Commerce utilizza attività cron che possono essere eseguite con configurazioni diverse. La configurazione della riga di comando PHP controlla il processo cron generale che reindicizza gli indici, genera e-mail, genera la mappa del sito e così via.
+L’applicazione Commerce utilizza attività cron che possono essere eseguite con configurazioni diverse. La configurazione della riga di comando PHP controlla il processo cron generale che reindicizza gli indicizzatori, genera e-mail, genera la sitemap e così via.
 
 >[!WARNING]
 >
->- Per evitare problemi durante l&#39;installazione e l&#39;aggiornamento, si consiglia vivamente di applicare le stesse impostazioni PHP sia alla configurazione della riga di comando PHP che alla configurazione del plug-in del server web PHP. Per ulteriori informazioni, consulta [Impostazioni PHP richieste](../../installation/prerequisites/php-settings.md).
->- In un sistema a più nodi, crontab può essere eseguito su un solo nodo. Ciò vale solo se si impostano più nodi Web per motivi legati a prestazioni o scalabilità.
+>- Per evitare problemi durante l&#39;installazione e l&#39;aggiornamento, si consiglia vivamente di applicare le stesse impostazioni PHP sia alla configurazione della riga di comando PHP che alla configurazione del plug-in del server Web PHP. Per ulteriori informazioni, consulta [Impostazioni PHP richieste](../../installation/prerequisites/php-settings.md).
+>- In un sistema a più nodi, crontab può essere eseguito su un solo nodo. Questo vale solo se imposti più nodi web per motivi legati alle prestazioni o alla scalabilità.
 
 
-### Creare la scheda multimediale Commerce
+### Creare la scheda Cronologia di Commerce
 
-A partire dalla versione 2.2, Commerce crea un crontab per te. Aggiungiamo la crontab Commerce a qualsiasi crontab configurato per il proprietario del file system Commerce. In altre parole, se hai già configurato crontab per altre estensioni o applicazioni, gli aggiungiamo la crontab Commerce .
+A partire dalla versione 2.2, Commerce crea una scheda cronologica per te. Aggiungiamo la scheda cronologica di Commerce a qualsiasi scheda cronologica configurata per il proprietario del file system di Commerce. In altre parole, se hai già impostato le schede cronologiche per altre estensioni o applicazioni, vi aggiungiamo la scheda cronologica Commerce.
 
-La crontab Commerce si trova all’interno di `#~ MAGENTO START` e `#~ MAGENTO END` commenti nella tua crontab.
+La scheda Cronologia di Commerce è all’interno `#~ MAGENTO START` e `#~ MAGENTO END` commenti nella scheda cronologica.
 
-Per creare la scheda comparativa Commerce:
+Per creare la scheda Cronologia di Commerce:
 
-1. Accedi come o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
-1. Passa alla directory di installazione Commerce.
-1. Immetti il seguente comando:
+1. Accedi come, o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+1. Passa alla directory di installazione di Commerce.
+1. Immetti il comando seguente:
 
    ```bash
    bin/magento cron:install [--force]
    ```
 
-Utilizzo `--force` per riscrivere un crontab esistente.
+Utilizzare `--force` per riscrivere una scheda cronologica esistente.
 
 >[!INFO]
 >
->- `magento cron:install` non riscrive un crontab esistente all&#39;interno di `#~ MAGENTO START` e `#~ MAGENTO END` commenti nella tua crontab.
->- `magento cron:install --force` non ha alcun effetto su alcun lavoro cron al di fuori dei commenti Commerce.
+>- `magento cron:install` non riscrive un crontab esistente all&#39;interno di `#~ MAGENTO START` e `#~ MAGENTO END` commenti nella scheda cronologica.
+>- `magento cron:install --force` non ha alcun effetto su eventuali lavori cron al di fuori dei commenti di Commerce.
 
 
-Per visualizzare il crontab, immettere il comando seguente come proprietario del file system:
+Per visualizzare la scheda cronologica, immettere il comando seguente come proprietario del file system:
 
 ```bash
 crontab -l
 ```
 
-Segue un esempio:
+Di seguito è riportato un esempio:
 
 ```terminal
 #~ MAGENTO START c5f9e5ed71cceaabc4d4fd9b3e827a2b
@@ -90,19 +90,19 @@ Segue un esempio:
 
 >[!INFO]
 >
->La `update/cron.php` Il file è stato rimosso in Commerce 2.4.0 e, se presente nell’installazione, può essere rimosso in modo sicuro.
+>Il `update/cron.php` il file è stato rimosso in Commerce 2.4.0; se è presente nell’installazione, può essere rimosso senza problemi.
 >
->Qualsiasi riferimento a `update/cron.php` e `bin/magento setup:cron:run` deve essere rimosso anche dalla crontab&#39;
+>Qualsiasi riferimento a `update/cron.php` e `bin/magento setup:cron:run` deve essere rimosso anche da crontab&#39;
 
-### Rimuovi la scheda comparativa Commerce
+### Rimuovi la scheda Cronologia di Commerce
 
-È necessario rimuovere la scheda comparativa Commerce solo prima di disinstallare l’applicazione Commerce.
+Rimuovi la scheda Cronc di Commerce solo prima di disinstallare l’applicazione Commerce.
 
-Per rimuovere la scheda comparativa Commerce:
+Per rimuovere la scheda cronologica di Commerce:
 
-1. Accedi come o passa al [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
-1. Passare alla directory di installazione Commerce.
-1. Immetti il seguente comando:
+1. Accedi come o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+1. Passa alla directory di installazione di Commerce.
+1. Immetti il comando seguente:
 
    ```bash
    bin/magento cron:remove
@@ -110,59 +110,59 @@ Per rimuovere la scheda comparativa Commerce:
 
 >[!INFO]
 >
->Questo comando non ha alcun effetto sui lavori cron al di fuori del `#~ MAGENTO START` e `#~ MAGENTO END` commenti nella tua crontab.
+>Questo comando non ha effetto sui processi cron al di fuori del `#~ MAGENTO START` e `#~ MAGENTO END` commenti nella scheda cronologica.
 
 ## Esegui cron dalla riga di comando
 
-Opzioni di comando:
+Opzioni comando:
 
 ```bash
 bin/magento cron:run [--group="<cron group name>"]
 ```
 
-dove `--group` specifica il gruppo cron da eseguire (omette questa opzione per eseguire cron per tutti i gruppi)
+dove `--group` specifica il gruppo cron da eseguire (omettere questa opzione per eseguire cron per tutti i gruppi)
 
-Per eseguire il lavoro cron di indicizzazione, immetti:
+Per eseguire il processo cron di indicizzazione, immettere:
 
 ```bash
 bin/magento cron:run --group index
 ```
 
-Per eseguire il lavoro cron predefinito, immetti:
+Per eseguire il processo cron predefinito, immettere:
 
 ```bash
 bin/magento cron:run --group default
 ```
 
-Per impostare i lavori e i gruppi predefiniti personalizzati, vedi [Configurare i lavori cron personalizzati e i gruppi cron](../cron/custom-cron.md).
+Per impostare processi e gruppi di cron personalizzati, vedere [Configurare processi cron personalizzati e gruppi cron](../cron/custom-cron.md).
 
 >[!INFO]
 >
->Devi eseguire il cron due volte: la prima volta che si scoprono le attività da eseguire e la seconda volta, per eseguire le attività stesse. La seconda esecuzione del cron deve essere eseguita su o dopo il `scheduled_at` tempo per ogni compito.
+>È necessario eseguire cron due volte: la prima volta per individuare le attività da eseguire e la seconda volta per eseguire le attività stesse. La seconda esecuzione del cron deve avvenire durante o dopo il `scheduled_at` tempo per ogni attività.
 
 ## Registrazione
 
-Tutto `cron` le informazioni sul processo sono state spostate da `system.log` in un separato `cron.log`.
-Per impostazione predefinita, le informazioni cron si trovano in `<install_directory>/var/log/cron.log`.
-Tutte le eccezioni dai lavori cron sono registrate da `\Magento\Cron\Observer\ProcessCronQueueObserver::execute`.
+Tutti `cron` le informazioni sul processo sono state spostate da `system.log` in un `cron.log`.
+Per impostazione predefinita, le informazioni cron sono disponibili all’indirizzo `<install_directory>/var/log/cron.log`.
+Tutte le eccezioni dai processi cron vengono registrate da `\Magento\Cron\Observer\ProcessCronQueueObserver::execute`.
 
-Oltre all&#39;accesso `cron.log`:
+Oltre ad aver effettuato l’accesso `cron.log`:
 
-- Processi non riusciti con `ERROR` e `MISSED` gli stati vengono registrati nel `<install_directory>/var/log/support_report.log`.
+- Processi non riusciti con `ERROR` e `MISSED` Gli stati vengono registrati in `<install_directory>/var/log/support_report.log`.
 
 - Processi con un `ERROR` lo stato viene sempre registrato come `CRITICAL` in `<install_directory>/var/log/exception.log`.
 
-- Processi con una `MISSED` stato registrato come `INFO` in `<install_directory>/var/log/debug.log` directory (solo modalità sviluppatore).
+- Processi con una `MISSED` lo stato è registrato come `INFO` nel `<install_directory>/var/log/debug.log` directory (solo modalità sviluppatore).
 
 >[!INFO]
 >
->Tutti i dati cron vengono scritti anche nel `cron_schedule` nel database Commerce. La tabella fornisce una cronologia dei lavori di cron, tra cui:
+>Tutti i dati cron vengono scritti anche nel `cron_schedule` nel database di Commerce. La tabella fornisce una cronologia dei processi cron, tra cui:
 >
 >- ID processo e codice
 >- Stato
->- Data creazione
+>- Data di creazione
 >- Data pianificata
 >- Data di esecuzione
 >- Data di fine
 >
->Per visualizzare i record nella tabella, accedere al database Commerce nella riga di comando e immettere `SELECT * from cron_schedule;`.
+>Per visualizzare i record nella tabella, accedi al database Commerce dalla riga di comando e immetti `SELECT * from cron_schedule;`.

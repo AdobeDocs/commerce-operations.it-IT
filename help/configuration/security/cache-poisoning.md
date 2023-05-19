@@ -1,21 +1,21 @@
 ---
-title: Impedire l’avvelenamento della cache
-description: Scopri come evitare l’avvelenamento della cache delle pagine per la tua vetrina Commerce.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Prevenire l’avvelenamento della cache
+description: Scopri come evitare l’avvelenamento della cache delle pagine per la vetrina Commerce.
+exl-id: 947024dd-d59d-480d-bb6c-8e0065054bb6
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
+# Prevenire l’avvelenamento della cache
 
-# Impedire l’avvelenamento della cache
+In questo argomento viene illustrato come evitare l&#39;avvelenamento della cache se si utilizza il server Web Microsoft Internet Information Server (IIS). _Avvelenamento della cache_ è un metodo per modificare il contenuto della cache in modo da includere pagine diverse dello stesso sito. Ad esempio, è possibile inserire una pagina di errore HTTP 404 (non trovata) invece di una pagina non pericolosa (ad esempio, la home page della vetrina), che può causare una potenziale negazione del servizio (DoS, Denial-of-Service). Gli URL di pagina dannosi sono memorizzati nella cache da Varnish o Redis, da cui il nome _avvelenamento della cache delle pagine_.
 
-Questo argomento illustra come evitare l’avvelenamento della cache se si utilizza il server web Microsoft Internet Information Server (IIS). _Avvelenamento da cache_ è un metodo per modificare il contenuto della cache in modo da includere pagine diverse dallo stesso sito. Ad esempio, è possibile inserire una pagina di errore HTTP 404 (Non trovato) al posto di una pagina benigna (ad esempio, la home page della vetrina), che può portare a un potenziale dinial-of-service (DoS). Gli URL delle pagine dannose sono memorizzati nella cache da Varnish o Redis, da cui il nome _avvelenamento della cache delle pagine_.
+Questi tipi di attacchi possono essere difficili da rilevare perché non generano errori nei registri del server web.
 
-Questi tipi di attacchi possono essere difficili da rilevare perché non generano errori nei log del server web.
-
-Questa soluzione si applica alle seguenti versioni Commerce:
+Questa soluzione si applica alle seguenti versioni di Commerce:
 
 - 2.0.10 e versioni successive
 - 2.1.2 e versioni successive
@@ -26,7 +26,7 @@ Questa soluzione si applica alle seguenti versioni Commerce:
 
 ## Descrizione
 
-Il problema si verifica se le riscritture URL sono abilitate sul server IIS e una delle seguenti intestazioni HTTP viene modificata prima che la richiesta raggiunga il servizio di memorizzazione in cache Varnish o Redis:
+Il problema si verifica se le riscritture URL sono abilitate sul server IIS e una qualsiasi delle seguenti intestazioni HTTP viene modificata prima che la richiesta raggiunga il servizio di caching di Vernice o Redis:
 
 - `X-Rewrite-Url`
 - `X-Original-Url`
@@ -34,15 +34,15 @@ Il problema si verifica se le riscritture URL sono abilitate sul server IIS e un
 - `Unencoded-URL`
 - `Orig-path-info`
 
-Se queste intestazioni vengono modificate, l’URL e il contenuto risultanti vengono memorizzati nella cache, con conseguente rischio di vulnerabilità.
+Se queste intestazioni vengono modificate, l’URL e il contenuto risultanti vengono memorizzati in cache, generando potenziali vulnerabilità.
 
 ## Soluzione
 
-Forniamo l&#39;opzione per rimuovere i valori di tutte le intestazioni precedenti in base all&#39;impostazione del server IIS per `Enable_IIS_Rewrites`.
+È possibile rimuovere i valori di tutte le intestazioni precedenti in base all&#39;impostazione del server IIS per `Enable_IIS_Rewrites`.
 
 - Se `Enable_IIS_Rewrites` è impostato su `0`, i valori delle intestazioni vengono rimossi.
-- Se `Enable_IIS_Rewrites` è impostato su `1`, i valori delle intestazioni rimangono intatti.
+- Se `Enable_IIS_Rewrites` è impostato su `1`, i valori delle intestazioni vengono lasciati intatti.
 
 >[!WARNING]
 >
->Se si imposta `Enable_IIS_Rewrites` a `1`, non è possibile modificare i valori delle intestazioni precedenti prima che la richiesta raggiunga il server web IIS.
+>Se si imposta `Enable_IIS_Rewrites` a `1`, è necessario non consentire la modifica dei valori delle intestazioni precedenti prima che la richiesta raggiunga il server web IIS.

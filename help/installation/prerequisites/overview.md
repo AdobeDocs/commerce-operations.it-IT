@@ -1,13 +1,13 @@
 ---
 title: Prerequisiti per l'installazione locale
 description: Ulteriori informazioni sulle dipendenze software necessarie per le installazioni on-premise di Adobe Commerce e Magenti Open Source.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+exl-id: dd4694e7-5437-440c-bb67-804ae36149de
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
 
 ---
-
 
 # Prerequisiti per l&#39;installazione locale
 

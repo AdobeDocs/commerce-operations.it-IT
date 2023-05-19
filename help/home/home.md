@@ -1,7 +1,7 @@
 ---
 keywords: Adobe Commerce;home;argomenti popolari
-title: Pagina principale
-description: Sfoglia un indice di amministrazione del sistema Adobe Commerce e la documentazione operativa del prodotto.
+title: Home
+description: Sfoglia un indice della documentazione del prodotto operativo e di amministrazione del sistema di Adobe Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 source-git-commit: 9e010b68f6458bafda5119308531e62477f046a9
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Guide operative di Adobe Commerce
 
-Ottieni informazioni pratiche su concetti, processi, strumenti e best practice per sviluppare, implementare e gestire progetti Adobe Commerce.
+Ottieni informazioni pratiche su concetti, processi, strumenti e best practice per sviluppare, distribuire e gestire progetti Adobe Commerce.
 
 <table>
 <tr>
@@ -22,7 +22,7 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Informazioni sulla versione</strong></a>
-      <p>Controlla tutte le informazioni sulla versione per le patch e i servizi Adobe Commerce.</p>
+      <p>Rivedi tutte le informazioni sulla versione per le patch e i servizi Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -31,7 +31,7 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
     </a>
     <div>
       <a href="../installation/overview.md"><strong>Installazione</strong></a>
-      <p>Scopri come installare Adobe Commerce per le distribuzioni locali.</p>
+      <p>Scopri come installare Adobe Commerce per le distribuzioni on-premise.</p>
     </div>
   </td>
   <td valign="top">
@@ -40,7 +40,7 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
     </a>
     <div>
       <a href="../configuration/overview.md"><strong>Configurazione</strong></a>
-      <p>Configura funzionalità e servizi per l’applicazione Adobe Commerce.</p>
+      <p>Configura funzioni e servizi per l’applicazione Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -56,11 +56,11 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
 <tr>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="Aggiornamento" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
+      <img alt="Aggiorna" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../upgrade/overview.md"><strong>Aggiornamento</strong></a>
-      <p>Scopri come aggiornare il progetto Adobe Commerce per proteggere la vetrina e lavorare in modo efficiente.</p>
+      <a href="../upgrade/overview.md"><strong>Aggiorna</strong></a>
+      <p>Scopri come aggiornare il progetto Adobe Commerce per mantenere la vetrina sicura e funzionante in modo efficiente.</p>
     </div>
   </td>
   <td valign="top">
@@ -68,8 +68,8 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
        <img alt="Riferimento per gli strumenti della riga di comando" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Riferimento strumenti della riga di comando</strong></a>
-      <p>Informazioni su comandi, argomenti e opzioni per gli strumenti della riga di comando di Adobe Commerce.</p>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Riferimento agli strumenti della riga di comando</strong></a>
+      <p>Scopri i comandi, gli argomenti e le opzioni degli strumenti della riga di comando di Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -77,8 +77,8 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
        <img alt="Prestazioni" src="../assets/icons/gauge.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong>Best practice sulle prestazioni</strong></a>
-      <p>Utilizza questi consigli per ottimizzare le prestazioni della distribuzione Adobe Commerce.</p>
+      <a href="../performance/overview.md"><strong>Best practice per le prestazioni</strong></a>
+      <p>Utilizza questi consigli per ottimizzare le prestazioni della tua implementazione di Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -98,7 +98,7 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
     </a>
     <div>
       <a href="../implementation-playbook/overview.md"><strong>Playbook di implementazione</strong></a>
-      <p>Scopri le strategie per la pianificazione e l’implementazione di un sito Adobe Commerce di successo.</p>
+      <p>Scopri le strategie per pianificare e implementare un sito Adobe Commerce di successo.</p>
     </div>
   </td>
   <td valign="top">
@@ -107,7 +107,7 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
     </a>
     <div>
       <a href="../operational-playbook/overview.md"><strong>Playbook operativo</strong></a>
-      <p>Scopri come rendere le tue aziende operative pronte per eseguire un sito di e-commerce di successo.</p>
+      <p>Scopri come rendere le tue aziende operative e pronte per gestire un sito di e-commerce di successo.</p>
     </div>
   </td>
   <td valign="top">
@@ -115,7 +115,7 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
        <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../commerce-at-scale/overview.md"><strong>Commercio in scala</strong></a>
+      <a href="../commerce-at-scale/overview.md"><strong>Commerce su larga scala</strong></a>
       <p>Scopri come distribuire esperienze su larga scala utilizzando Adobe Commerce con Adobe Experience Manager.</p>
     </div>
   </td>
@@ -125,7 +125,7 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
     </a>
     <div>
       <a href="../security-and-compliance/overview.md"><strong>Sicurezza e conformità</strong></a>
-      <p>Scopri in che modo i commercianti Adobe Commerce sono responsabili della manutenzione di un ambiente sicuro.</p>
+      <p>Scopri in che modo i commercianti di Adobe Commerce sono responsabili della gestione di un ambiente sicuro.</p>
     </div>
   </td>
 </tr>

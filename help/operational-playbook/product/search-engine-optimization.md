@@ -9,38 +9,38 @@ ht-degree: 0%
 
 ---
 
-# Ottimizzazione del motore di ricerca (SEO)
+# Ottimizzazione dei motori di ricerca (SEO)
 
-L’ottimizzazione SEO (Search Engine Optimization) è uno strumento che consente di ottimizzare il sito web in base a parole chiave specifiche in modo che il sito si classifichi più in alto nei risultati di ricerca di Google. Google classifica i siti web in base al fatto che il marchio abbia risposto a tutte le domande di ricerca poste dai clienti. Quando i clienti ricercano qualcosa in Google, trovano diversi tipi di risultati. Le sezioni seguenti descrivono tali risultati.
+L’ottimizzazione SEO (Search Engine Optimization) è uno strumento che consente di ottimizzare il sito web in base a parole chiave specifiche, in modo che abbia una classificazione più elevata nei risultati di ricerca di Google. Google classifica i siti web in base al fatto che il brand abbia risposto a tutte le domande di ricerca poste dai clienti. Quando i clienti cercano qualcosa su Google, trovano diversi tipi di risultati. Le sezioni seguenti descrivono tali risultati.
 
 ## Non pagato
 
-Vedi i risultati evidenziati in rosso nell&#39;immagine seguente:
+Vedere i risultati evidenziati in rosso nell&#39;immagine seguente:
 
-![Risultati ricerca SEO Google non pagati](../../assets/playbooks/seo-unpaid.png)
+![Risultati di ricerca SEO Google non pagati](../../assets/playbooks/seo-unpaid.png)
 
 ## Pagato
 
-Vedi i risultati evidenziati in arancione nell&#39;immagine seguente:
+Vedere i risultati evidenziati in arancione nell&#39;immagine seguente:
 
 >[!NOTE]
 >
->Google shopping descritto in viola.
+>Google Shopping delineato in viola.
 
-![Risultati della ricerca SEO Google a pagamento](../../assets/playbooks/seo-paid.png)
+![Risultati di ricerca SEO Google a pagamento](../../assets/playbooks/seo-paid.png)
 
 ## Strategie
 
 La strategia SEO include:
 
-- **Ricerca per parola chiave**—Parole chiave utilizzate dai clienti per la ricerca
+- **Ricerca per parola chiave**- Parole chiave utilizzate dai clienti per la ricerca
 
-- **Architettura del sito**—La ricerca viene fatta sulle parole chiave
+- **Architettura del sito**- La ricerca viene eseguita sulle parole chiave
 
-- **SEO (tecnico)**—Assicurare la ricerca per indicizzazione del sito tramite SEO
+- **SEO (tecnica)**- Verifica della ricerca per indicizzazione SEO nel sito
 
-- **SEO sulla pagina**- Meta tag e contenuti utilizzati per attirare i clienti
+- **SEO a pagina**: i metadati e i contenuti vengono utilizzati per attirare i clienti
 
-- **Analytics**—Strumenti, ad esempio Google Analytics, vengono utilizzati per tenere traccia di SEO
+- **Analytics**- Gli strumenti, come le Google Analytics, vengono utilizzati per tenere traccia di SEO (Search Engine Optimization)
 
-Le campagne SEO B2B sono finalizzate ad aumentare la consapevolezza del marchio e la generazione di lead, il che porta ad un aumento del tasso di conversione. Le campagne SEO B2C sono volte ad attrarre i visitatori ad effettuare acquisti immediati. SEO ha diversi utilizzi e impatti in B2B rispetto alle aziende B2C. SEO può contribuire ad aumentare il traffico sul tuo sito, che a sua volta aumenterà le vendite e il ROI. Imposta una semplice strategia SEO per ottenere un vantaggio competitivo.
+Le campagne B2B SEO (Search Engine Optimization) hanno lo scopo di aumentare la consapevolezza del brand e la generazione di lead, il che porta a un aumento del tasso di conversione. Le campagne B2C SEO (Search Engine Optimization) hanno lo scopo di attirare i visitatori a effettuare acquisti immediati. La SEO ha usi e impatti diversi nelle aziende B2B rispetto alle aziende B2C. SEO può aiutare ad aumentare il traffico sul tuo sito, che a sua volta aumenterà le vendite e il ROI. Imposta una semplice strategia SEO (Search Engine Optimization) per ottenere un vantaggio competitivo.

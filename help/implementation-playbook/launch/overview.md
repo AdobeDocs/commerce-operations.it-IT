@@ -1,6 +1,6 @@
 ---
-title: Panoramica sulla preparazione all’avvio
-description: Rivedi un riepilogo del significato di preparazione al lancio per le implementazioni di Adobe Commerce.
+title: Panoramica sulla preparazione al lancio
+description: Rivedi un riepilogo di cosa significa preparazione al lancio per le implementazioni di Adobe Commerce.
 exl-id: 87cfcb48-3c0e-4c14-afb4-62bb9fe94c48
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -9,8 +9,8 @@ ht-degree: 0%
 
 ---
 
-# Panoramica sulla preparazione all’avvio
+# Panoramica sulla preparazione al lancio
 
-A questo punto del tuo percorso e-commerce, i team e l’organizzazione hanno dedicato mesi all’organizzazione, alla pianificazione e alla creazione di una soluzione adatta alle esigenze del tuo marchio e incrementerà la tua attività. Ora che il punto di lancio è finalmente qui, non significa che il lavoro è finito.
+A questo punto del tuo percorso di e-commerce, i team e l’organizzazione hanno dedicato mesi all’organizzazione, alla pianificazione e alla creazione di una soluzione adatta alle esigenze del tuo marchio e che farà crescere la tua attività. Ora che il punto di lancio è finalmente qui, non significa che il lavoro sia finito.
 
-Dai punti di controllo pre-lancio finali ai passaggi post-lancio che assicurano che il sito continui a mantenere il livello di efficacia dal primo giorno in poi, abbiamo messo in evidenza tutte le tattiche e le azioni da intraprendere in quattro fasi chiave dal test al post-lancio. Salvate queste checklist, in quanto sono la vostra guida per un lancio senza problemi e il ritorno a tutti quei mesi di duro lavoro.
+Dai checkpoint finali precedenti al lancio ai passaggi successivi al lancio, che garantiscono al sito di mantenere il livello di efficienza sin dal primo giorno, sono state evidenziate tutte le tattiche e le azioni da intraprendere in quattro fasi chiave, dal test al post-lancio. Salva queste liste di controllo, in quanto sono la tua guida per un lancio fluido e il payoff per tutti quei mesi di duro lavoro.

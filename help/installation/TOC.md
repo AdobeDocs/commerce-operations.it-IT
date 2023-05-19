@@ -1,6 +1,6 @@
 ---
 user-guide-title: Guida all’installazione
-user-guide-description: Scopri come installare Adobe Commerce e Magenti Open Source per le distribuzioni locali.
+user-guide-description: Scopri come installare Adobe Commerce e Magenti Open Source per le distribuzioni on-premise.
 feature: Install
 source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
@@ -22,13 +22,13 @@ ht-degree: 0%
    - Server web {#web-server}
       - [Nginx](prerequisites/web-server/nginx.md)
       - [Apache](prerequisites/web-server/apache.md)
-   - Server database {#database-server}
+   - Server di database {#database-server}
       - [MySQL](prerequisites/database/mysql.md)
       - [Connessioni remote](prerequisites/database/mysql-remote.md)
    - Motore di ricerca {#search-engine}
       - [Panoramica](prerequisites/search-engine/overview.md)
       - [AWS OpenSearch](prerequisites/search-engine/aws-opensearch.md)
-      - [Configura input penna](prerequisites/search-engine/configure-nginx.md)
+      - [Configurare Nginx](prerequisites/search-engine/configure-nginx.md)
       - [Configurare Apache](prerequisites/search-engine/configure-apache.md)
    - [PHP](prerequisites/php-settings.md)
    - [Gestore messaggi](prerequisites/rabbitmq.md)
@@ -39,32 +39,32 @@ ht-degree: 0%
 - [Installazione rapida](composer.md)
 - [Installazione avanzata](advanced.md)
 - Passaggi successivi all’installazione {#next-steps}
-   - [Verificare l’installazione](next-steps/verify.md)
+   - [Verificare l&#39;installazione](next-steps/verify.md)
    - [Configurare l’applicazione](next-steps/configuration.md)
-   - [Imposta una maschera (facoltativo)](next-steps/set-umask.md)
-   - Installa i dati di esempio (facoltativo) {#sample-data}
+   - [Impostare una maschera (facoltativo)](next-steps/set-umask.md)
+   - Installare i dati di esempio (facoltativo) {#sample-data}
       - [Panoramica](sample-data/overview.md)
-      - [Download dei pacchetti del Compositore](sample-data/composer-packages.md)
-      - [Archivi Git clonati](sample-data/git-repositories.md)
-      - [Rimuovere o aggiornare moduli](sample-data/remove-or-update.md)
+      - [Scarica pacchetti Compositore](sample-data/composer-packages.md)
+      - [Clona archivi Git](sample-data/git-repositories.md)
+      - [Rimuovere o aggiornare i moduli](sample-data/remove-or-update.md)
 - Tutorials {#tutorials}
-   - [Backup e ripristino del file system, dei supporti e del database](tutorials/backup.md)
+   - [Backup e rollback del file system, dei supporti e del database](tutorials/backup.md)
    - [Controllare lo stato del database](tutorials/database-status.md)
    - [Configurare il comportamento del consumatore dei messaggi](tutorials/message-consumers.md)
-   - [Configurare il provider di blocco](tutorials/lock-provider.md)
-   - [Configurare lo store](tutorials/store.md)
-   - [Creare, modificare o sbloccare account di amministrazione](tutorials/admin.md)
+   - [Configurare il provider di blocchi](tutorials/lock-provider.md)
+   - [Configurare l’archivio](tutorials/store.md)
+   - [Crea, modifica o sblocca account amministratore](tutorials/admin.md)
    - [Creare o aggiornare la configurazione della distribuzione](tutorials/deployment.md)
    - [Creare lo schema del database](tutorials/database.md)
-   - [Visualizza o modifica l’URI amministratore](tutorials/admin-uri.md)
+   - [Visualizzare o modificare l’URI amministratore](tutorials/admin-uri.md)
    - [Attiva o disattiva la modalità di manutenzione](tutorials/maintenance-mode.md)
-   - [Attivare o disattivare i moduli](tutorials/manage-modules.md)
+   - [Abilitare o disabilitare i moduli](tutorials/manage-modules.md)
    - [Installare un’estensione](tutorials/extensions.md)
-   - [Installa Commerce](tutorials/install.md)
-   - [Modificare il docroot per migliorare la sicurezza](tutorials/docroot.md)
-   - [Disinstallare i pacchetti di lingua](tutorials/language-packages.md)
-   - [Disinstallare i moduli](tutorials/uninstall-modules.md)
+   - [Installare Commerce](tutorials/install.md)
+   - [Modifica la directory principale dei documenti per migliorare la sicurezza](tutorials/docroot.md)
+   - [Disinstalla pacchetti per lingua](tutorials/language-packages.md)
+   - [Disinstalla moduli](tutorials/uninstall-modules.md)
    - [Disinstallare o reinstallare Commerce](tutorials/uninstall.md)
-   - [Disinstallare i temi](tutorials/themes.md)
+   - [Disinstalla temi](tutorials/themes.md)
    - [Aggiornare lo schema del database](tutorials/database-upgrade.md)
 - [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

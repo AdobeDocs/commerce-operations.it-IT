@@ -1,31 +1,31 @@
 ---
-title: Aggiornare un’installazione basata su Git
-description: Aggiorna un’installazione di Adobe Commerce o Magento Open Source clonata da un archivio Git.
-source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
+title: Aggiornamento di un’installazione basata su Git
+description: Aggiorna un’installazione di Adobe Commerce o di Magento Open Source clonata da un archivio Git.
+exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
 
 ---
 
-
 # Aggiornare un’installazione basata su Git
 
-Questo argomento illustra come uno sviluppatore contributore può aggiornare Adobe Commerce o Magento Open Source senza reinstallarlo. Se non sei uno sviluppatore contributore, consulta [Eseguire un aggiornamento](../implementation/perform-upgrade.md).
+Questo argomento illustra come uno sviluppatore che partecipa all’aggiornamento di Adobe Commerce o di un Magento Open Source senza reinstallarlo. Se non sei uno sviluppatore, consulta [Eseguire un aggiornamento](../implementation/perform-upgrade.md).
 
-Per eseguire l’aggiornamento se sei uno sviluppatore collaboratore:
+Per effettuare l&#39;aggiornamento se sei uno sviluppatore che contribuisce:
 
 {{$include /help/_includes/server-login.md}}
 
-1. Salva le modifiche apportate al `composer.json` file perché i passaggi successivi lo sovrascrivono.
+1. Salva eventuali modifiche apportate al `composer.json` perché i passaggi successivi lo sovrascrivono.
 
-1. Crea un backup del tuo `composer.json` file.
+1. Crea un backup del `composer.json` file.
 
    ```bash
    cp composer.json composer.json.old
    ```
 
-1. Aggiorna il tuo archivio locale per ottenere il codice più recente:
+1. Aggiorna l’archivio locale per ottenere il codice più recente:
 
    ```bash
    git pull origin develop
@@ -33,17 +33,17 @@ Per eseguire l’aggiornamento se sei uno sviluppatore collaboratore:
 
    >[!NOTE]
    >
-   >Se `git pull origin develop` fallisce, vedi [risoluzione](https://support.magento.com/hc/en-us/articles/360034229872).
+   >Se `git pull origin develop` non riesce, vedi [risoluzione dei problemi](https://support.magento.com/hc/en-us/articles/360034229872).
 
-1. Differisci e unisci il tuo `composer.json.old` con il `composer.json` file.
+1. Differenza e unione `composer.json.old` file con `composer.json` file.
 
-1. Risolvere le dipendenze e scrivere versioni esatte nel `composer.lock` file.
+1. Risolvere le dipendenze e scrivere versioni esatte in `composer.lock` file.
 
    ```bash
    composer update
    ```
 
-1. Aggiorna il database:
+1. Aggiornare il database:
 
    ```bash
    bin/magento setup:upgrade

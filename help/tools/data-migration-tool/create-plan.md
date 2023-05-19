@@ -1,119 +1,119 @@
 ---
 title: Creare un piano di migrazione dei dati
-description: Segui questi passaggi per creare un piano di migrazione dei dati per garantire il successo dell’aggiornamento dal Magento 1 al Magento 2.
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+description: Segui questi passaggi per creare un piano di migrazione dei dati per garantire un aggiornamento corretto dal Magento 1 al Magento 2.
+exl-id: a14237f3-c5fe-4f5f-86eb-ed4c39507bff
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
 
-
 # Creare un piano di migrazione dei dati
 
-Per eseguire correttamente la migrazione ed evitare problemi, devi pianificare e testare a fondo la migrazione.
+Per eseguire correttamente la migrazione ed evitare problemi, è necessario pianificare e testare a fondo la migrazione.
 
-## Prima di iniziare: Aggiornare
+## Prima di iniziare: valuta l’aggiornamento
 
-La migrazione è un momento perfetto per apportare cambiamenti seri e preparare il tuo sito per il prossimo livello di crescita. Valuta se il tuo nuovo sito deve essere progettato con più hardware o una topologia più avanzata con livelli di memorizzazione in cache migliori.
+La migrazione è il momento ideale per apportare modifiche sostanziali e preparare il tuo sito al prossimo livello di crescita. Valuta se il nuovo sito deve essere progettato con più hardware o con una topologia più avanzata con migliori livelli di caching.
 
-## Passaggio 1: Esamina le estensioni sul sito corrente
+## Passaggio 1: esaminare le estensioni sul sito corrente
 
 * Quali estensioni hai installato?
 
-* Hai identificato se hai bisogno di tutte queste estensioni sul tuo nuovo sito? Ci potrebbero essere vecchi che si può tranquillamente rimuovere.
+* Hai identificato se tutte queste estensioni sono necessarie sul nuovo sito? Potrebbero esserci vecchi che puoi rimuovere in modo sicuro.
 
-* Hai determinato se esistono versioni Magento 2 delle estensioni? Visita [Commerce Marketplace] per trovare le versioni più recenti o contatta il provider di estensioni.
+* Hai determinato se esistono versioni di Magento 2 delle estensioni? Visita [Commerce Marketplace] per trovare le versioni più recenti o contatta il provider di estensioni.
 
-* Quali risorse di database dalle estensioni vuoi eseguire la migrazione?
+* Quali risorse di database dalle estensioni desideri migrare?
 
-## Passaggio 2: Creare e preparare il negozio per la migrazione
+## Passaggio 2: creare e preparare il negozio per la migrazione
 
-* Impostare un sistema hardware di Magento 2 utilizzando la topologia e il design che almeno corrispondono al sistema di Magento 1 esistente
+* Configurare un sistema hardware di Magento 2 utilizzando la topologia e la progettazione che corrisponda almeno al Magento 1 esistente
 
-* Installa Magento 2.x (con tutti i moduli di questa versione) e [!DNL Data Migration Tool] su un sistema che soddisfa le [requisiti di sistema](../../installation/system-requirements.md)
+* Installa Magento 2.x (con tutti i moduli di questa versione) e il [!DNL Data Migration Tool] su un sistema che soddisfi i requisiti [requisiti di sistema](../../installation/system-requirements.md)
 
-* Apporta le modifiche personalizzate al [!DNL Data Migration Tool] nel caso in cui non sia necessario migrare alcuni dati (come pagine CMS, regole di vendita) o si desideri convertire la personalizzazione del Magento durante la migrazione. Leggi la sezione [!DNL Data Migration Tool]s [Specifiche tecniche](technical-specification.md) per comprendere meglio come funziona la migrazione dall&#39;interno
+* Apporta le modifiche personalizzate al [!DNL Data Migration Tool] codice nel caso in cui non sia necessario migrare alcuni dati (come pagine CMS, regole di vendita) o si desideri convertire la personalizzazione del Magento durante la migrazione. Leggi le [!DNL Data Migration Tool]di [Specifiche tecniche](technical-specification.md) per capire meglio come funziona la migrazione dall’interno
 
-## Passaggio 3: Prova a secco
+## Passaggio 3: prova
 
-Prima di avviare la migrazione nell’ambiente di produzione, è meglio seguire tutti i passaggi di migrazione nell’ambiente di test.
+Prima di avviare la migrazione nell’ambiente di produzione, è consigliabile eseguire tutti i passaggi di migrazione nell’ambiente di test.
 
-In questo test di migrazione, segui questi passaggi:
+In tale test di migrazione, segui questi passaggi:
 
-* Copiare l&#39;archivio Magento 1 in un server di staging
+* Copiare l&#39;archivio del Magento 1 in un server di gestione temporanea
 
-* Migrazione completa dello store Magento 1 replicato al Magento 2
+* Migrazione completa dell&#39;archivio del Magento 1 replicato al Magento 2
 
-* Prova accuratamente il tuo nuovo negozio
+* Verifica accuratamente il nuovo store
 
-## Passaggio 4: Avvia la migrazione
+## Passaggio 4: avviare la migrazione
 
-1. Assicurati che il [!DNL Data Migration Tool] dispone di un accesso di rete per connettersi ai database di Magento 1 e Magento 2. Apri le porte corrispondenti nel firewall.
+1. Assicurati che il [!DNL Data Migration Tool] dispone di un accesso di rete per connettersi ai database del Magento 1 e del Magento 2. Aprire le porte corrispondenti nel firewall.
 
-1. Arresta tutte le attività nel pannello di amministrazione di Magento 1.x (ad eccezione della gestione degli ordini), ad esempio la spedizione, la creazione di fatture e note di credito. L&#39;elenco delle attività consentite può essere esteso regolando le impostazioni della modalità Delta nel [!DNL Data Migration Tool].
+1. Interrompi tutte le attività nel pannello di amministrazione di Magento 1.x (ad eccezione della gestione degli ordini), come spedizione, creazione di fatture e note di accredito. L’elenco delle attività consentite può essere esteso modificando le impostazioni della modalità Delta in [!DNL Data Migration Tool].
 
    >[!NOTE]
    >
-   >Non devi riprendere queste attività finché il tuo negozio di Magento 2 non diventa attivo.
+   >Non devi riprendere queste attività fino a quando il tuo store di Magento 2 non diventa live.
 
-1. Consigliamo di interrompere tutti i lavori del cron Magento 1.x.
+1. È consigliabile interrompere tutti i processi cron del Magento 1.x.
 
-   Tuttavia, se durante la migrazione è necessario eseguire alcuni processi, assicurati che non creino nuove entità di database o modifichino quelle esistenti nel modo in cui tali entità non possono essere elaborate dalla modalità Delta.
+   Tuttavia, se durante la migrazione sono necessari alcuni processi, assicurarsi che non creino nuove entità di database o non modifichino quelle esistenti nel modo in cui tali entità non possono essere elaborate in modalità Delta.
 
-   Ad esempio, il `enterprise_salesarchive_archive_orders` cron job sposta i vecchi ordini all&#39;archivio. L&#39;esecuzione di questo processo durante la migrazione è sicura perché la modalità Delta riconosce questo processo ed elabora correttamente gli ordini archiviati.
+   Ad esempio, il `enterprise_salesarchive_archive_orders` cron job sposta i vecchi ordini in archivio. L&#39;esecuzione di questo processo durante la migrazione è sicura perché la modalità Delta lo riconosce ed elabora correttamente gli ordini archiviati.
 
-1. Utilizza la [!DNL Data Migration Tool] per migrare le impostazioni e i siti web.
+1. Utilizza il [!DNL Data Migration Tool] per eseguire la migrazione di impostazioni e siti Web.
 
-1. Copia i file multimediali Magento 1.x in Magento 2.x.
+1. Copiare i file multimediali Magento 1.x nel Magento 2.x.
 
-   È necessario copiare manualmente questi file dal `magento1-root/media` directory to `magento2-root/pub/media`.
+   È necessario copiare questi file manualmente da `magento1-root/media` directory in `magento2-root/pub/media`.
 
-1. Utilizza la [!DNL Data Migration Tool] per copiare in massa i dati dal database di Magento 1 al database di Magento 2.
+1. Utilizza il [!DNL Data Migration Tool] per copiare in blocco i dati dal database del Magento 1 al database del Magento 2.
 
-   Se alcune delle estensioni dispongono di dati da migrare, potrebbe essere necessario installare queste estensioni adattate per il Magento 2. Nel caso in cui le estensioni abbiano una struttura diversa nel database di Magento 2, utilizza i file di mappatura forniti con [!DNL Data Migration Tool].
+   Se alcune delle estensioni contengono dati di cui desideri eseguire la migrazione, potrebbe essere necessario installare queste estensioni adattate per il Magento 2. Se le estensioni hanno una struttura diversa nel database del Magento 2, utilizza i file di mappatura forniti con [!DNL Data Migration Tool].
 
-1. Reindicizza tutti gli indici Magento 2.x. Per ulteriori informazioni, consulta la sezione [Gestire gli indici](../../configuration/cli/manage-indexers.md) in _Guida alla configurazione_.
+1. Reindicizza tutti gli indici Magento 2.x. Per ulteriori informazioni, vedere [Gestisci indicizzatori](../../configuration/cli/manage-indexers.md) nel _Guida alla configurazione_.
 
-## Passaggio 5: Apporta modifiche ai dati migrati (se necessario)
+## Passaggio 5: apportare modifiche ai dati migrati (se necessario)
 
-A volte può essere utile avere il tuo negozio Magento 2 con diverse strutture di catalogo, regole di vendita e pagine CMS dopo la migrazione.
+A volte potrebbe essere utile che il tuo archivio Magento 2 sia memorizzato con una struttura di catalogo, regole di vendita e pagine CMS diverse dopo la migrazione.
 
-È importante prestare attenzione durante l’elaborazione delle modifiche manuali dei dati. Gli errori creano errori nel passaggio di migrazione dei dati incrementale che segue.
+È importante prestare attenzione quando si lavora con modifiche manuali ai dati. Errori creano errori nel passaggio di migrazione dati incrementale che segue.
 
-Ad esempio, un prodotto eliminato dal Magento 2: quello che è stato acquistato sul tuo negozio live Magento 1 e che non è più disponibile nel tuo negozio Magento 2. Il trasferimento di dati su tale acquisto potrebbe causare un errore durante l&#39;esecuzione del [!DNL Data Migration Tool] in modalità Delta.
+Ad esempio, un prodotto eliminato dal Magento 2: quello che è stato acquistato nel tuo negozio live il Magento 1 e che non è più disponibile nel tuo negozio Magento 2. Il trasferimento dei dati su tale acquisto potrebbe causare un errore durante l’esecuzione del [!DNL Data Migration Tool] in modalità Delta.
 
-## Passaggio 6: Aggiornamento dei dati incrementali
+## Passaggio 6: aggiornare i dati incrementali
 
-Dopo la migrazione dei dati, devi acquisire in modo incrementale gli aggiornamenti dati aggiunti nell’archivio del Magento 1 (come nuovi ordini, revisioni e modifiche nei profili cliente) e trasferire questi aggiornamenti nell’archivio del Magento 2 utilizzando la modalità Delta.
+Dopo la migrazione dei dati, è necessario acquisire in modo incrementale gli aggiornamenti dei dati aggiunti nell&#39;archivio del Magento 1 (ad esempio nuovi ordini, revisioni e modifiche nei profili cliente) e trasferire tali aggiornamenti nell&#39;archivio del Magento 2 utilizzando la modalità Delta.
 
-* Avviare la migrazione incrementale; gli aggiornamenti vengono eseguiti continuamente. È possibile interrompere il trasferimento degli aggiornamenti in qualsiasi momento premendo `Ctrl+C`.
+* Avvia la migrazione incrementale; gli aggiornamenti vengono eseguiti continuamente. È possibile interrompere il trasferimento degli aggiornamenti in qualsiasi momento premendo `Ctrl+C`.
 
-* Testa il tuo sito Magento 2 in questo periodo di tempo per risolvere eventuali problemi il prima possibile. In caso di problemi, premere `Ctrl+C` per interrompere la migrazione incrementale e riavviarla dopo aver risolto i problemi.
+* Durante questo periodo, verifica il tuo sito Magento 2 per individuare eventuali problemi il prima possibile. In caso di problemi, premere `Ctrl+C` per interrompere la migrazione incrementale e riavviarla dopo aver risolto i problemi.
 
 >[!NOTE]
 >
->Gli avvisi sul controllo del volume possono comparire nel caso in cui si effettui un test del sito di Magento 2 ed esegua contemporaneamente il processo di migrazione. Questo accade perché nel Magento 2 si creano entità che non esistono nell&#39;istanza del Magento 1.
+>È possibile che vengano visualizzati avvisi relativi al controllo del volume se si esegue contemporaneamente il test del sito del Magento 2 ed il processo di migrazione. Ciò accade perché nel Magento 2 vengono create entità che non esistono nell&#39;istanza del Magento 1.
 
-## Passaggio 7: Viva
+## Passaggio 7: pubblicazione
 
-Ora che il tuo sito Magento 2 è aggiornato con il Magento 1 e funziona normalmente, procedi come segue per passare al nuovo sito:
+Ora che il sito del Magento 2 è aggiornato al Magento 1 e funziona normalmente, eseguire le operazioni seguenti per passare al nuovo sito:
 
-1. Mettere il sistema di Magento 1 in modalità di manutenzione (DOWNTIME STARTS).
+1. Mettere il Magento 1 in modalità di manutenzione (AVVIO DOWNTIME).
 
-1. Premere Ctrl+C nella finestra di comando dello strumento di migrazione per arrestare gli aggiornamenti incrementali.
+1. Premere Ctrl+C nella finestra di comando dello strumento di migrazione per interrompere gli aggiornamenti incrementali.
 
-1. Inizia il tuo Magento 2 lavori di cron.
+1. Avvia i processi cron del Magento 2.
 
-1. Nel sistema di Magento 2, reindicizzare l&#39;indicizzatore delle azioni. Per ulteriori informazioni, consulta la sezione [Guida alla configurazione].
+1. Nel Magento 2, reindicizzare l&#39;indicizzatore di azioni. Per ulteriori informazioni, vedere [Guida alla configurazione].
 
-1. Utilizzando uno strumento a tua scelta, visita le pagine nel tuo sistema di Magento 2 per memorizzare in cache le pagine prima dei clienti che utilizzano la tua vetrina.
+1. Utilizzando uno strumento a tua scelta, visita le pagine nel Magento 2 per memorizzare in cache le pagine prima dei clienti che utilizzano la vetrina.
 
-1. Esegui qualsiasi verifica finale del tuo sito di Magento 2.
+1. Eseguire qualsiasi verifica finale del sito Magento 2.
 
-1. Cambiare DNS, bilanciatori di carico e così via per puntare a nuovo hardware di produzione (DOWNTIME ENDS).
+1. Modificare il DNS, i load balancer e così via in modo che puntino al nuovo hardware di produzione (DOWNTIME ENDS).
 
-1. Lo store Magento 2 è ora pronto per l&#39;uso. Tu e i tuoi clienti potete riprendere tutte le attività.
+1. Lo store del Magento 2 è ora pronto per l’uso. Tu e i tuoi clienti potete riprendere tutte le attività.
 
 <!-- LINK ADDRESSES -->
 

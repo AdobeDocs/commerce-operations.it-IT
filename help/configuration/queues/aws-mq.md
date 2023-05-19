@@ -1,23 +1,23 @@
 ---
-title: Configurare la coda messaggi di Amazon
+title: Configurare la coda di messaggi di Amazon
 description: Scopri come configurare Commerce per l’utilizzo del servizio AWS MQ.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
+# Configurare la coda di messaggi di Amazon
 
-# Configurare la coda messaggi di Amazon
+A partire dalla versione 2.4.3 di Commerce, Amazon Message Queue (MQ) è disponibile come sostituzione pronta per il cloud per le istanze della coda di messaggi on-premise.
 
-A partire da Commerce 2.4.3, la coda messaggi di Amazon (MQ) è disponibile come sostituzione pronta per il cloud per le istanze della coda messaggi in locale.
-
-Per creare una coda di messaggi su AWS, vedi [Configurazione di Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) in _Documentazione di AWS_.
+Per creare una coda di messaggi su AWS, vedi [Configurazione di Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) nel _Documentazione di AWS_.
 
 ## Configurare Commerce per AWS MQ
 
-Per connettersi al servizio AWS MQ, configura il `queue.amqp` nell&#39;oggetto `env.php` file.
+Per connettersi al servizio AWS MQ, configura il `queue.amqp` oggetto in `env.php` file.
 La coda messaggi di AWS richiede una connessione SSL/TLS.
 
 ```php
@@ -37,27 +37,27 @@ La coda messaggi di AWS richiede una connessione SSL/TLS.
 
 Dove:
 
-- `host`- l&#39;url dell&#39;endpoint AMQP; disponibile facendo clic sul nome del broker in AWS (rimuovi &quot;https://&quot; e il numero di porta finale)
-- `user`- Il valore del nome utente immesso durante la creazione del broker AWS MQ
-- `password`- Il valore della password immesso durante la creazione del broker AWS MQ
+- `host`: URL dell’endpoint AMQP, disponibile facendo clic sul nome del broker in AWS (rimuovere &quot;https://&quot; e il numero della porta finale)
+- `user`- Il valore del nome utente immesso durante la creazione del broker MQ di AWS
+- `password`- Il valore della password immesso durante la creazione del broker MQ di AWS
 
 >[!INFO]
 >
->Amazon MQ supporta solo le connessioni TLS. Verifica peer non supportata.
+>Amazon MQ supporta solo le connessioni TLS. La verifica tra pari non è supportata.
 
-Dopo aver modificato le `env.php` esegui il seguente comando per completare la configurazione:
+Dopo aver modificato `env.php` , eseguire il comando seguente per completare l&#39;installazione:
 
 ```bash
 bin/magento setup:upgrade
 ```
 
-## Utilizzo del servizio MQ di AWS da parte di Commerce
+## Utilizzo del servizio AWS MQ in Commerce
 
-La `async.operations.all` il consumatore della coda messaggi utilizza la connessione AMQP.
+Il `async.operations.all` Il consumatore della coda di messaggi utilizza la connessione AMQP.
 
-Questo consumatore indirizza qualsiasi nome argomento con prefisso `async` tramite la connessione AWS MQ.
+Questo consumatore indirizza qualsiasi nome di argomento con il prefisso `async` tramite la connessione AWS MQ.
 
-Ad esempio, in `InventoryCatalog` esistono:
+Ad esempio, in `InventoryCatalog` sono disponibili:
 
 ```text
 async.V1.inventory.bulk-product-source-assign.POST
@@ -65,26 +65,26 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-La configurazione predefinita per `InventoryCatalog` non pubblica messaggi in [!DNL RabbitMQ]; il comportamento predefinito consiste nell’eseguire l’azione nello stesso thread utente. Per dire `InventoryCatalog` per pubblicare i messaggi, abilita `cataloginventory/bulk_operations/async`. Dall’amministratore, vai a **Negozi** > Configurazione > **Catalogo** > **Inventario** > Operazioni in blocco dell&#39;amministratore e set  `Run asynchronously`a **Sì**.
+Configurazione predefinita per `InventoryCatalog` non pubblica i messaggi in [!DNL RabbitMQ]; il comportamento predefinito consiste nell&#39;eseguire l&#39;azione nello stesso thread utente. Da raccontare `InventoryCatalog` per pubblicare i messaggi, abilita `cataloginventory/bulk_operations/async`. Dall’amministratore, vai a **Negozi** > Configurazione > **Catalogo** > **Inventario** > Operazioni di massa e impostazione dell&#39;amministratore  `Run asynchronously`a **Sì**.
 
 ## Verifica della coda dei messaggi
 
-Per testare l’invio di messaggi da Commerce a [!DNL RabbitMQ]:
+Per verificare l’invio di messaggi da Commerce a [!DNL RabbitMQ]:
 
 1. Accedi a [!DNL RabbitMQ] console web in AWS per monitorare le code.
 1. In Amministratore, crea un prodotto.
-1. Crea un&#39;origine Inventory.
-1. Abilita **Negozi** > Configurazione > **Catalogo** > **Inventario** > Operazioni in blocco dell’amministratore > Esegui in modo asincrono.
-1. Vai a **Catalogo** > Prodotti. Dalla griglia, seleziona il prodotto creato sopra e fai clic su **Assegna origine magazzino**.
-1. Fai clic su **Salva e chiudi** per completare il processo.
+1. Crea un&#39;origine magazzino.
+1. Abilita **Negozi** > Configurazione > **Catalogo** > **Inventario** > Operazioni di massa amministrazione > Esegui in modo asincrono.
+1. Vai a **Catalogo** > Prodotti. Dalla griglia, seleziona il prodotto creato in precedenza e fai clic su **Assegna origine magazzino**.
+1. Clic **Salva e chiudi** per completare il processo.
 
-   Ora dovresti visualizzare i messaggi nella [!DNL RabbitMQ] console web.
+   Ora dovresti vedere i messaggi visualizzati nel [!DNL RabbitMQ] console web.
 
-1. Avvia la `async.operations.all` consumer della coda messaggi.
+1. Avvia il `async.operations.all` consumer coda messaggi.
 
    ```bash
    bin/magento queue:consumers:start async.operations.all
    ```
 
-Ora dovresti vedere il messaggio in coda che viene elaborato nel [!DNL RabbitMQ] console web.
-Verifica che le origini di inventario siano cambiate nel prodotto in Admin.
+Ora dovresti vedere che il messaggio in coda viene elaborato in [!DNL RabbitMQ] console web.
+Verifica che le origini dell’inventario siano state modificate sul prodotto nell’amministratore.

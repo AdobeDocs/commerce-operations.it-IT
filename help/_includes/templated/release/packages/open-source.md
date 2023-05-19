@@ -957,7 +957,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/guzzle/promises.git">guzzlehttp/promise</a>
     </td>
     <td>libreria</td>
-    <td>Guzzle promesse libreria</td>
+    <td>Libreria Guzzle promesse</td>
   </tr>
   <tr>
     <td>

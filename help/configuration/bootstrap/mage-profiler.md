@@ -1,35 +1,35 @@
 ---
-title: Abilita profilazione
-description: Scopri di più sull’abilitazione del profiler di MAGE da utilizzare con i tuoi strumenti analitici.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+title: Abilita profilatura
+description: Scopri come abilitare MAGE Profiler per l’utilizzo con i tuoi strumenti di analisi.
+exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
 
 ---
 
+# Abilita profilatura
 
-# Abilita profilazione
+Con la profilazione Commerce, puoi:
 
-Con il profiling Commerce, puoi:
+- Abilita un profiler incorporato.
 
-- Abilita un profiler integrato.
+   Puoi utilizzare un profiler integrato con Commerce per eseguire attività quali l’analisi delle prestazioni. La natura del profiling dipende dagli strumenti analitici utilizzati. Supportiamo più formati, tra cui HTML. Quando si abilita il profiler, viene `var/profiler.flag` viene generato un file che indica che il profiler è abilitato e le configurazioni. Se disabilitato, il file viene eliminato.
 
-   Puoi utilizzare un profiler integrato con Commerce per eseguire attività quali l’analisi delle prestazioni. La natura del profiling dipende dagli strumenti analitici utilizzati. Supportiamo più formati, incluso HTML. Quando abiliti il profiler, un `var/profiler.flag` viene generato un file che indica che il profiler è abilitato e le configurazioni. Se disabilitata, il file viene eliminato.
+- Visualizzare grafici delle dipendenze in una pagina Commerce.
 
-- Visualizzare i grafici delle dipendenze in una pagina Commerce.
+   A _grafico delle dipendenze_ è un elenco di dipendenze oggetto e di tutte le relative dipendenze, nonché di tutte le dipendenze per tali dipendenze e così via.
 
-   A _grafico a dipendenza_ è un elenco delle dipendenze degli oggetti e di tutte le loro dipendenze, nonché di tutte le dipendenze per tali dipendenze e così via.
-
-   Dovrebbe essere particolarmente interessato all&#39;elenco di _dipendenze inutilizzate_, che sono oggetti creati perché sono stati richiesti in alcuni costruttori, ma non sono mai stati utilizzati (ovvero, nessuno dei loro metodi è stato chiamato). Di conseguenza, il tempo e la memoria del processore utilizzati per creare queste dipendenze vengono sprecati.
+   Dovresti essere particolarmente interessato all’elenco di _dipendenze non utilizzate_: oggetti creati perché richiesti in alcuni costruttori, ma mai utilizzati (ovvero, nessuno dei relativi metodi è stato chiamato). Di conseguenza, il tempo del processore e la memoria impiegata per creare queste dipendenze vengono sprecati.
 
 Commerce fornisce la funzionalità di base in [`Magento\Framework\Profiler`][profiler].
 
-Puoi abilitare e configurare il profiler utilizzando una variabile MAGE_PROFILER o la riga di comando.
+È possibile abilitare e configurare il profiler utilizzando una variabile MAGE_PROFILER o la riga di comando.
 
 ## Imposta MAGE_PROFILER
 
-Puoi impostare il valore di `MAGE_PROFILER` in uno dei modi discussi in [Imposta il valore dei parametri di bootstrap](../bootstrap/set-parameters.md).
+Puoi impostare il valore di `MAGE_PROFILER` in uno dei modi descritti in [Imposta il valore dei parametri di bootstrap](../bootstrap/set-parameters.md).
 
 `MAGE_PROFILER` supporta i seguenti valori:
 
@@ -38,44 +38,44 @@ Puoi impostare il valore di `MAGE_PROFILER` in uno dei modi discussi in [Imposta
    Per abilitare un profiler specifico, puoi utilizzare uno dei seguenti valori:
 
    - `csvfile` che utilizza [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
-   - Qualsiasi altro valore (tranne `2`), incluso un valore vuoto, che utilizza [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
+   - Qualsiasi altro valore (eccetto `2`), incluso un valore vuoto, che utilizza [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
 
 - `2` per abilitare i grafici delle dipendenze.
 
-   I grafici di dipendenza vengono generalmente visualizzati nella parte inferiore di una pagina. La figura seguente mostra una parte dell&#39;output:
+   I grafici delle dipendenze vengono in genere visualizzati nella parte inferiore di una pagina. Nella figura seguente viene illustrata una parte dell&#39;output:
 
-   ![Grafici di dipendenza](../../assets/configuration/depend-graphs.png)
+   ![Grafici delle dipendenze](../../assets/configuration/depend-graphs.png)
 
 ## Comandi CLI
 
-Puoi abilitare o disabilitare il profiler utilizzando i comandi CLI:
+È possibile abilitare o disabilitare il profiler utilizzando i comandi CLI:
 
-- `dev:profiler:enable <type>` abilita il profiler con `type` di `html` (predefinito) o `csvfile`. Quando abilitato, un file flagfile `var/profiler.flag` viene creato.
-- `dev:profiler:disable` disabilita il profiler. Se disabilitata, il file flagfile `var/profiler.flag` viene rimosso.
+- `dev:profiler:enable <type>` abilita il profiler con `type` di `html` (impostazione predefinita) oppure `csvfile`. Quando è attivata, un file di flag `var/profiler.flag` viene creato.
+- `dev:profiler:disable` disabilita il profiler. Se disattivato, il file di flag `var/profiler.flag` è stato rimosso.
 
-Per abilitare i grafici delle dipendenze, utilizzare l’opzione variabile .
+Per abilitare i grafici delle dipendenze, utilizza l’opzione della variabile.
 
 **Per attivare o disattivare il profiler**:
 
-1. Accedi al tuo server Commerce.
-1. Passa alla directory di installazione Commerce.
+1. Accedi al server Commerce.
+1. Passa alla directory di installazione di Commerce.
 1. In qualità di proprietario del file system, abilita il profiler:
 
-   Per abilitare il profiler utilizzando il tipo `html` e crea un file flagfile:
+   Per abilitare il profiler utilizzando il tipo `html` e creare un file di flag:
 
    ```bash
    bin/magento dev:profiler:enable html
    ```
 
-   Per abilitare il profiler utilizzando il tipo `csvfile` e crea un file flagfile:
+   Per abilitare il profiler utilizzando il tipo `csvfile` e creare un file di flag:
 
    ```bash
    bin/magento dev:profiler:enable csvfile
    ```
 
-   L&#39;output viene salvato in `<project-root>/var/log/profiler.csv`. La `profiler.csv` viene ignorato in ogni aggiornamento della pagina.
+   L&#39;output viene salvato in `<project-root>/var/log/profiler.csv`. Il `profiler.csv` viene sovrascritto a ogni aggiornamento di pagina.
 
-   Per disabilitare il profiler e rimuovere il flagfile:
+   Per disattivare il profiler e rimuovere il file di flag:
 
    ```bash
    bin/magento dev:profiler:disable

@@ -1,45 +1,45 @@
 ---
 title: Configurare il server web
-description: Scopri come configurare il server web in modo che funzioni con Varnish.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+description: Scopri come configurare il server web per l’utilizzo di Vernice.
+exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
 
 ---
 
-
 # Configurare il server web
 
-Configura il tuo server web per ascoltare su una porta diversa da quella predefinita 80 perché Varnish risponde direttamente alle richieste HTTP in arrivo, non al server web.
+Configurare il server Web per l&#39;ascolto su una porta diversa da quella predefinita 80, in quanto Vernice risponde direttamente alle richieste HTTP in ingresso, non al server Web.
 
 Le sezioni seguenti utilizzano la porta 8080 come esempio.
 
-**Per modificare la porta di ascolto Apache 2.4**:
+**Per modificare la porta di ascolto di Apache 2.4**:
 
 1. Apri `/etc/httpd/conf/httpd.conf` in un editor di testo.
 1. Individua il `Listen` direttiva.
 1. Modifica il valore della porta di ascolto in `8080`. È possibile utilizzare qualsiasi porta di ascolto disponibile.
-1. Salva le modifiche in `httpd.conf` e esci dall’editor di testo.
+1. Salva le modifiche apportate a `httpd.conf` ed esci dall’editor di testo.
 
-## Modificare la configurazione del sistema Varnish
+## Modificare la configurazione del sistema di vernice
 
-Per modificare la configurazione del sistema Varnish:
+Per modificare la configurazione del sistema di vernice:
 
-1. Come utente con `root` privilegi, apri il file di configurazione Vanish in un editor di testo:
+1. Come utente con `root` , apri il file di configurazione Vanish in un editor di testo:
 
    - CentOS 6: `/etc/sysconfig/varnish`
    - CentOS 7: `/etc/varnish/varnish.params`
    - Debian: `/etc/default/varnish`
    - Ubuntu: `/etc/default/varnish`
 
-1. Imposta la porta di ascolto Varnish su 80:
+1. Impostare la porta di ascolto Vernice su 80:
 
    ```conf
    VARNISH_LISTEN_PORT=80
    ```
 
-   Per Varnish 4.x, assicurati che DAEMON_OPTS contenga la porta di ascolto corretta per `-a` (anche se VARNISH_LISTEN_PORT è impostato sul valore corretto):
+   Per la vernice 4.x, assicurarsi che DAEMON_OPTS contenga la porta di ascolto corretta per `-a` (anche se VARNISH_LISTEN_PORT è impostato sul valore corretto):
 
    ```conf
    DAEMON_OPTS="-a :80 \
@@ -49,13 +49,13 @@ Per modificare la configurazione del sistema Varnish:
       -s malloc,256m"
    ```
 
-1. Salva le modifiche nel file di configurazione Varnish e esci dall’editor di testo.
+1. Salvate le modifiche nel file di configurazione Vernice e uscite dall&#39;editor di testo.
 
-### Modificare la VCL predefinita
+### Modificare la VCL di default
 
-Questa sezione illustra come fornire una configurazione minima in modo che Varnish restituisca intestazioni di risposta HTTP. Questo ti consente di verificare che Varnish funzioni prima di configurare il [!DNL Commerce] applicazione per utilizzare Varnish.
+Questa sezione illustra come fornire una configurazione minima in modo che Varish restituisca le intestazioni di risposta HTTP. Questo consente di verificare che la vernice funzioni prima di configurare [!DNL Commerce] applicazione per l’uso di vernice.
 
-Per configurare in modo minimo la vernice:
+Per configurare la vernice in modo minimo:
 
 1. Backup `default.vcl`:
 
@@ -64,7 +64,7 @@ Per configurare in modo minimo la vernice:
    ```
 
 1. Apri `/etc/varnish/default.vcl` in un editor di testo.
-1. Individua la seguente strofa:
+1. Individua la seguente stanza:
 
    ```conf
    backend default {
@@ -73,13 +73,13 @@ Per configurare in modo minimo la vernice:
    }
    ```
 
-1. Sostituisci il valore di `.host` con l&#39;hostname o l&#39;indirizzo IP completo e il porto di ascolto della Varnish _backend_ o _server di origine_; cioè, il server che fornisce il contenuto Varnish accelererà.
+1. Sostituisci il valore di `.host` con il nome host o l&#39;indirizzo IP completo e la porta di ascolto della vernice _backend_ o _server di origine_ ovvero il server che fornisce il contenuto Vernice accelera.
 
-   In genere, si tratta del server web. Vedi [Server back-end](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) in _Guida alla vernice_.
+   In genere, si tratta del server web. Consulta [Server back-end](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) nel _Guida alla vernice_.
 
 1. Sostituisci il valore di `.port` con la porta di ascolto del server web (8080 in questo esempio).
 
-   Esempio: Apache è installato sull&#39;host 192.0.2.55 e Apache è in ascolto sulla porta 8080:
+   Esempio: Apache è installato sull’host 192.0.2.55 e Apache è in ascolto sulla porta 8080:
 
    ```conf
    backend default {
@@ -90,55 +90,55 @@ Per configurare in modo minimo la vernice:
 
    >[!INFO]
    >
-   >Se Varnish e Apache sono in esecuzione sullo stesso host, Adobe consiglia di utilizzare un indirizzo IP o un nome host e non `localhost`.
+   >Se Vernice e Apache sono in esecuzione sullo stesso host, l’Adobe consiglia di utilizzare un indirizzo IP o un nome host e non `localhost`.
 
-1. Salva le modifiche in `default.vcl` e esci dall’editor di testo.
+1. Salva le modifiche apportate a `default.vcl` ed esci dall’editor di testo.
 
-1. Riavvia vernice:
+1. Vernice di riavvio:
 
    ```bash
    service varnish restart
    ```
 
-Se l&#39;avvio di Varnish non riesce, provate a eseguirlo dalla riga di comando come segue:
+Se l&#39;avvio di Varning non riesce, provare a eseguirlo dalla riga di comando nel modo seguente:
 
 ```bash
 varnishd -d -f /etc/varnish/default.vcl
 ```
 
-Dovrebbe essere visualizzato un messaggio di errore.
+Dovrebbero essere visualizzati messaggi di errore.
 
 
 >[!INFO]
 >
->Se Varnish non si avvia come servizio, è necessario configurare le regole SELinux per consentirne l&#39;esecuzione.
+>Se Vernice non si avvia come servizio, è necessario configurare le regole SELinux per consentirne l&#39;esecuzione.
 
-## Verifica che Varnish funzioni
+## Verifica che la vernice funzioni
 
-Nelle sezioni seguenti viene illustrato come verificare che Varnish funzioni ma _senza_ configurazione di Commerce per utilizzarlo. Prova questo prima di configurare Commerce.
+Le sezioni seguenti spiegano come verificare che Varnish funzioni, ma _senza_ configurazione di Commerce per utilizzarlo. Prova prima di configurare Commerce.
 
-Esegui le operazioni descritte nelle sezioni seguenti nell’ordine mostrato:
+Eseguire i task descritti nelle sezioni seguenti nell&#39;ordine indicato:
 
 - [Inizia vernice](#start-varnish)
-- [&quot;netstat&quot;](#netstat)
+- [&#39;netstat&#39;](#netstat)
 
 ### Inizia vernice
 
-Inserisci: `service varnish start`
+Immetti: `service varnish start`
 
-Se Varnish non si avvia come servizio, avviarlo dalla riga di comando come segue:
+Se Varnish non si avvia come servizio, inizialo dalla riga di comando come segue:
 
-1. Avvia l&#39;interfaccia CLI di Varnish:
+1. Avvia CLI vernice:
 
    ```bash
    varnishd -d -f /etc/varnish/default.vcl
    ```
 
-1. Avviare il processo figlio Vernish:
+1. Avviare il processo di produzione di vernice:
 
    Quando richiesto, immetti `start`
 
-   Vengono visualizzati i seguenti messaggi per confermare l’avvio corretto:
+   Per confermare un avvio riuscito, vengono visualizzati i seguenti messaggi:
 
    ```terminal
    child (29805) Started
@@ -150,7 +150,7 @@ Se Varnish non si avvia come servizio, avviarlo dalla riga di comando come segue
 
 ### netstat
 
-Accedi al server Varnish e immetti il seguente comando:
+Accedere al server Vernice e immettere il comando seguente:
 
 ```bash
 netstat -tulpn
@@ -165,17 +165,17 @@ tcp        0      0 :::8080                     :::*                        LIST
 tcp        0      0 ::1:48509                   :::*                        LISTEN      32604/varnishd
 ```
 
-Il precedente mostra Varnish in esecuzione sulla porta 80 e Apache in esecuzione sulla porta 8080.
+Il precedente mostra la Vernice che corre sulla porta 80 e l&#39;Apache che sulla porta 8080.
 
-Se non visualizzi l&#39;output per `varnishd`Assicurati che Varnish sia in funzione.
+Se non vedi l’output per `varnishd`, accertarsi che Vernice sia in esecuzione.
 
-Vedi [`netstat` options](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
+Consulta [`netstat` opzioni](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
 ## Installare il software Commerce
 
-Se non lo hai già fatto, installa il software Commerce. Quando viene richiesto un URL di base, utilizza l&#39;host Varnish e la porta 80 (per Varnish) perché Varnish riceve tutte le richieste HTTP in ingresso.
+Installa il software Commerce, se non lo hai già fatto. Quando viene richiesto un URL di base, utilizzare l&#39;host e la porta 80 di Varnish (per Varnish) perché quest&#39;ultimo riceve tutte le richieste HTTP in entrata.
 
-Possibile errore durante l&#39;installazione di Commerce:
+Possibile errore durante l’installazione di Commerce:
 
 ```terminal
 Error 503 Service Unavailable
@@ -184,7 +184,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-Se si verifica questo errore, modifica `default.vcl` e aggiungi un timeout al `backend` strofa come segue:
+Se si verifica questo errore, modificare `default.vcl` e aggiungi un timeout al `backend` strofa come segue:
 
 ```conf
 backend default {
@@ -196,25 +196,25 @@ backend default {
 
 ## Verificare le intestazioni di risposta HTTP
 
-Ora puoi verificare che Varnish stia servendo le pagine guardando le intestazioni di risposta di HTML restituite da qualsiasi pagina.
+Ora è possibile verificare che Vernice distribuisca le pagine osservando le intestazioni di risposta dei HTML restituite da qualsiasi pagina.
 
-Prima di poter esaminare le intestazioni, è necessario impostare Commerce per la modalità sviluppatore. Ci sono diversi modi per farlo, il più semplice dei quali è quello di modificare `.htaccess` nella directory principale dell’applicazione Commerce. È inoltre possibile utilizzare [`magento deploy:mode:set`](../cli/set-mode.md) comando.
+Prima di poter esaminare le intestazioni, è necessario impostare Commerce per la modalità sviluppatore. Esistono diversi modi per farlo, il più semplice dei quali è modificare `.htaccess` nella directory principale dell’applicazione Commerce. È inoltre possibile utilizzare [`magento deploy:mode:set`](../cli/set-mode.md) comando.
 
 ### Impostare Commerce per la modalità sviluppatore
 
-Per impostare Commerce per la modalità sviluppatore, utilizza la funzione [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) comando.
+Per impostare Commerce per la modalità sviluppatore, utilizza [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) comando.
 
-### Guarda il registro di Varnish
+### Guardate il registro vernice
 
-Assicurati che Varnish sia in esecuzione, quindi inserisci il seguente comando sul server Vernish:
+Verificare che Varnish sia in esecuzione, quindi immettere il seguente comando sul server di Varnish:
 
 ```bash
 varnishlog
 ```
 
-In un browser web, vai a qualsiasi pagina Commerce.
+In un browser web, vai a qualsiasi pagina di Commerce.
 
-Nella finestra del prompt dei comandi viene visualizzato un lungo elenco di intestazioni di risposta. Cerca intestazioni come quelle seguenti:
+Nella finestra del prompt dei comandi viene visualizzato un lungo elenco di intestazioni di risposta. Cerca intestazioni come le seguenti:
 
 ```terminal
 -   BereqHeader    X-Varnish: 3
@@ -231,13 +231,13 @@ Nella finestra del prompt dei comandi viene visualizzato un lungo elenco di inte
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-Se intestazioni come queste lo fanno _not_ display, stop Varnish, controlla il tuo `default.vcl`e riprova.
+Se le intestazioni come queste lo fanno _non_ visualizzare, arrestare Vernice, controllare `default.vcl`e riprova.
 
-### Osserva le intestazioni di risposta di HTML
+### Esaminare le intestazioni di risposta di HTML
 
-Esistono diversi modi per esaminare le intestazioni di risposta, tra cui l&#39;utilizzo di un plug-in per browser o di un ispettore del browser.
+Esistono diversi modi per esaminare le intestazioni di risposta, incluso l’utilizzo di un plug-in del browser o di un controllo del browser.
 
-Nell&#39;esempio seguente viene utilizzato `curl`. È possibile immettere questo comando da qualsiasi computer in grado di accedere al server Commerce utilizzando HTTP.
+L’esempio che segue utilizza `curl`. Puoi immettere questo comando da qualsiasi computer in grado di accedere al server Commerce utilizzando HTTP.
 
 ```bash
 curl -I -v --location-trusted '<your Commerce base URL>'
@@ -249,7 +249,7 @@ Ad esempio:
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
-Cerca intestazioni come quelle seguenti:
+Cerca intestazioni come le seguenti:
 
 ```terminal
 Content-Type: text/html; charset=iso-8859-1

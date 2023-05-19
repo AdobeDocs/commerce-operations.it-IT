@@ -1,52 +1,52 @@
 ---
-title: Configurare Varnish per Commerce
-description: Scopri come aggiornare e gestire il file di configurazione Varnish per l’applicazione Commerce.
-source-git-commit: d451ea025a6f4fc8a4a9f15ca83896a63058a3a0
+title: Configurazione vernice per Commerce
+description: Scopri come aggiornare e gestire il file di configurazione di Vernice per l’applicazione Commerce.
+exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
 
 ---
 
+# Configurare l’applicazione Commerce per l’utilizzo di vernice
 
-# Configurare l’applicazione Commerce per l’utilizzo di Varnish
-
-Per configurare Commerce per l’utilizzo di Varnish:
+Per configurare Commerce per l’utilizzo di Vernice:
 
 1. Accedi all’amministratore come amministratore.
-1. Fai clic su **[!UICONTROL Stores]** > Impostazioni > **Configurazione** > **Avanzate** > **Sistema** > **Cache a pagina intera**.
-1. Da **[!UICONTROL Caching Application]** elenco, fai clic su **Memorizzazione in cache in vernice**.
-1. Immetti un valore nel **[!UICONTROL TTL for public content]** campo .
-1. Espandi **[!UICONTROL Varnish Configuration]** e inserire le seguenti informazioni:
+1. Clic **[!UICONTROL Stores]** > Impostazioni > **Configurazione** > **Avanzate** > **Sistema** > **Cache a pagina intera**.
+1. Dalla sezione **[!UICONTROL Caching Application]** , fare clic su **Caching vernice**.
+1. Immetti un valore in **[!UICONTROL TTL for public content]** campo.
+1. Espandi **[!UICONTROL Varnish Configuration]** e immettere le seguenti informazioni:
 
    | Campo | Descrizione |
    | ----- | ----------- |
-   | Elenco di accesso | Immettere il nome host completo, l&#39;indirizzo IP o [Routing tra domini diversi (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) l’intervallo di indirizzi IP della notazione per il quale annullare la validità del contenuto. Vedi [Rimozione della cache vernice](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
-   | Host back-end | Inserisci il nome host completo o l&#39;indirizzo IP e ascolta la porta della Vernish _backend_ o _server di origine_; in altre parole, il server che fornisce il contenuto Varnish accelera. In genere, si tratta del server web. Vedi [Server back-end cache verniciati](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
+   | Elenco di accesso | Inserisci il nome host completo, l’indirizzo IP o [Routing tra domini diversi senza classificazione (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) notazione Intervallo di indirizzi IP per cui annullare la validità del contenuto. Consulta [Cancellazione cache vernice](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
+   | Host back-end | Immettere il nome host completo o l&#39;indirizzo IP e la porta di ascolto della vernice _backend_ o _server di origine_ ovvero il server che fornisce il contenuto accelera la visualizzazione di Vernice. In genere, si tratta del server web. Consulta [Vernice dei server back-end della cache](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Porta back-end | Porta di ascolto del server di origine. |
-   | Periodo di tolleranza | Il periodo di tolleranza determina per quanto tempo la funzione Vernice fornisce contenuti non aggiornati se il backend non è reattivo. Il valore predefinito è 300 secondi. |
+   | Periodo di tolleranza | Il periodo di tolleranza determina per quanto tempo Vernice fornisce contenuti non aggiornati se il backend non risponde. Il valore predefinito è 300 secondi. |
 
-1. Fai clic su **Salva configurazione**.
+1. Clic **Salva configurazione**.
 
-È inoltre possibile attivare la vernice dalla riga di comando, anziché accedere all’amministratore, utilizzando lo strumento di interfaccia della riga di comando C:
+È inoltre possibile attivare la vernice dalla riga di comando, anziché accedere all&#39;amministratore, utilizzando lo strumento dell&#39;interfaccia della riga di comando C:
 
 ```bash
 bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/caching_application 2
 ```
 
-## Esportare un file di configurazione Varnish
+## Esportare un file di configurazione vernice
 
-Per esportare un file di configurazione Varnish dall’amministratore:
+Per esportare un file di configurazione vernice dall&#39;amministratore:
 
-1. Fai clic su uno dei pulsanti di esportazione per creare un `varnish.vcl` si può usare con Vernish.
+1. Fai clic su uno dei pulsanti di esportazione per creare un’ `varnish.vcl` può essere usato con vernice.
 
-   Ad esempio, se disponi di Varnish 4, fai clic su **Esportazione VCL per vernice 4**
+   Ad esempio, se si dispone di vernice 4, fare clic su **Esporta VCL per vernice 4**
 
-   La figura seguente mostra un esempio:
+   Nella figura seguente viene illustrato un esempio:
 
-   ![Configurare Commerce per utilizzare Varnish nell’amministrazione](../../assets/configuration/varnish-admin-22.png)
+   ![Configurare Commerce per l’utilizzo di Vernice nell’amministratore](../../assets/configuration/varnish-admin-22.png)
 
-1. Esegui il backup della `default.vcl`. Quindi rinomina la `varnish.vcl` file appena esportato in `default.vcl`. Quindi copia il file nel `/etc/varnish/` directory.
+1. Esegui il backup del file esistente `default.vcl`. Quindi rinomina il `varnish.vcl` file appena esportato in `default.vcl`. Quindi copia il file in `/etc/varnish/` directory.
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak2
@@ -60,7 +60,7 @@ Per esportare un file di configurazione Varnish dall’amministratore:
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
-1. Adobe consiglia di aprire `default.vcl` e modificare il valore di `acl purge` all&#39;indirizzo IP dell&#39;host Varnish. (È possibile specificare più host su linee separate oppure utilizzare anche la notazione CIDR).
+1. Adobe consigliato di aprire `default.vcl` e modificare il valore di `acl purge` all&#39;indirizzo IP dell&#39;host Vernice. È possibile specificare più host su righe separate oppure utilizzare anche la notazione CIDR.
 
    Ad esempio:
 
@@ -70,7 +70,7 @@ Per esportare un file di configurazione Varnish dall’amministratore:
     }
    ```
 
-1. Se desideri personalizzare i controlli di integrità Vagrant o la modalità di grazia o la configurazione della modalità saint, consulta [Configurazione avanzata della vernice](config-varnish-advanced.md).
+1. Se desideri personalizzare la configurazione dei controlli di integrità Vagrant, della modalità di tolleranza o della modalità santo, consulta [Configurazione vernice avanzata](config-varnish-advanced.md).
 
 1. Riavvia Varnish e il tuo server web:
 
@@ -82,9 +82,9 @@ Per esportare un file di configurazione Varnish dall’amministratore:
    service httpd restart
    ```
 
-## File statici della cache
+## Memorizza nella cache i file statici
 
-I file statici non devono essere memorizzati nella cache per impostazione predefinita, ma se desideri memorizzarli nella cache, puoi modificare la sezione `Static files caching` nella VCL avere il seguente contenuto:
+I file statici non devono essere memorizzati in cache per impostazione predefinita, ma se desideri memorizzarli in cache, puoi modificare la sezione `Static files caching` nel file VCL, avere il seguente contenuto:
 
 ```conf
 # Static files should not be cached by default
@@ -96,4 +96,4 @@ I file statici non devono essere memorizzati nella cache per impostazione predef
   #unset req.http.Cookie;
 ```
 
-È necessario apportare queste modifiche prima di configurare Commerce per utilizzare Varnish.
+È necessario apportare queste modifiche prima di configurare Commerce per l’utilizzo di Vernice.

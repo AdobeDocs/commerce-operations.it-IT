@@ -1,6 +1,6 @@
 ---
 title: Architettura di riferimento globale di Adobe Commerce
-description: Sfrutta al massimo l’implementazione Adobe Commerce sfruttando un’architettura di riferimento globale.
+description: Sfrutta un’architettura di riferimento globale per ottenere il massimo dall’implementazione di Adobe Commerce.
 exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
 source-git-commit: f713e07b57705e8720c773f9f762a357c173e29d
 workflow-type: tm+mt
@@ -13,38 +13,38 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410528/?quality=12&learn=on)
 
-Quando gestisci aziende che dispongono di più siti per più marchi in più mercati locali (con valute localizzate, lingue, media, cataloghi condivisi e carrelli univoci) e che desiderano evitare costi inutili per l’implementazione delle stesse funzionalità e integrazioni - Global Reference Architecture (GRA) è sempre una buona opzione.
+Quando si eseguono aziende che hanno più siti per più marchi in più mercati locali (con valute localizzate, lingue, supporti, cataloghi condivisi e carrelli univoci) e che desiderano evitare costi superflui per l’implementazione della stessa funzione e delle stesse integrazioni, Global Reference Architecture (GRA) è sempre una buona opzione.
 
-![Tabella che illustra il costo della divergenza architettonica](../../assets/playbooks/divergent-architecture.svg)
+![Tabella che illustra il costo della divergenza nell’architettura](../../assets/playbooks/divergent-architecture.svg)
 
-![Tabella che illustra il costo del consolidamento in architettura](../../assets/playbooks/consolidated-architecture.svg)
+![Tabella che illustra il costo del consolidamento nell&#39;architettura](../../assets/playbooks/consolidated-architecture.svg)
 
-GRA è:
+Il GRA è:
 
 - Un approccio di implementazione
-- Una strategia di distribuzione
+- Una strategia di implementazione
 - Un modello di governance dei processi
 
 GRA non è:
 
-- Una &quot;caratteristica&quot; del prodotto
-- Unico a qualsiasi piattaforma di e-commerce
+- Una &quot;funzionalità&quot; del prodotto
+- Univoco per qualsiasi piattaforma commerce
 - Solo per casi d’uso aziendali globali
 
-Effetti del GRA:
+Impatti GRA:
 
 - Modalità di distribuzione del codice
 
-   - Basato su archivi di codice specifici per uno scopo, che offrono diverse esperienze.
+   - Basato su archivi di codice specifici, che offrono esperienze diverse.
 
-- Integrare i sistemi aziendali
+- Integrazione dei sistemi aziendali
 
-   - Consolidare le connessioni ai sistemi aziendali per marchio e/o regione.
+   - Consolida le connessioni ai sistemi aziendali per marchio e/o area geografica.
 
-- Modalità di sviluppo e manutenzione della personalizzazione
+- Come viene sviluppata e mantenuta la personalizzazione
 
-   - Assicura che le personalizzazioni siano centralizzate e specifiche per il dominio, in modo che tutte le operazioni di personalizzazione vengano eseguite da un punto di vista olistico per l&#39;azienda.
+   - Garantisce che le personalizzazioni siano centralizzate e specifiche per il dominio, in modo che tutte le attività di personalizzazione vengano eseguite da un punto di vista olistico per l’azienda.
 
-- Modalità di attivazione dei nuovi mercati
+- Come si abilitano i nuovi mercati
 
-   - Semplifica la diffusione di più canali e mercati che altrimenti costerebbero molto più tempo e denaro.
+   - Semplifica il rilascio di più canali e mercati che altrimenti costerebbero molto più tempo e denaro.

@@ -1,44 +1,42 @@
 ---
-title: Prestazioni frontali di controllo
-description: Identifica e risolvi i problemi che influiscono negativamente sulle prestazioni del sito utilizzando strumenti di prestazioni web per controllare le operazioni della vetrina Adobe Commerce.
+title: Verifica prestazioni front-end
+description: Identifica e risolvi i problemi che influiscono negativamente sulle prestazioni del sito utilizzando gli strumenti di prestazioni web per controllare le operazioni della vetrina Adobe Commerce.
 role: Admin, User, Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
 
+# Best practice per prestazioni front-end
 
-# Best practice per prestazioni frontend
-
-Utilizza gli strumenti per le prestazioni web per controllare le prestazioni frontend dei tuoi store Adobe Commerce.
-Questi strumenti utilizzano varie metriche per fornire informazioni e consigli efficaci per migliorare le prestazioni del tuo negozio online.
+Utilizza gli strumenti di prestazioni web per verificare le prestazioni front-end dei tuoi store Adobe Commerce.
+Questi strumenti utilizzano varie metriche per fornire informazioni approfondite e consigli efficaci per migliorare le prestazioni del tuo negozio online.
 
 ## Prodotti e versioni interessati
 
 [Tutte le versioni supportate](../../../release/versions.md) di:
 
-- Adobe Commerce su infrastruttura cloud
+- Adobe Commerce sull’infrastruttura cloud
 - Adobe Commerce on-premise
 
-## Controllare le prestazioni frontali
+## Verifica prestazioni front-end
 
-Per controllare le prestazioni frontend dell’archivio siti web:
+Per verificare le prestazioni front-end dell’archivio siti web:
 
-1. Controlla le prestazioni frontali utilizzando strumenti di prestazioni web come:
+1. Controlla le prestazioni front-end utilizzando strumenti di prestazioni web come:
 
-   - **[Faro Google](https://web.dev/measure/)**- Il faro dispone di controlli per prestazioni, accessibilità, app web progressive, SEO e altro ancora. Per informazioni dettagliate sulle diverse modalità di esecuzione del faro, vedi [Panoramica del faro](https://developer.chrome.com/docs/lighthouse/overview).)
-   - **[Informazioni sulla velocità di pagina di Google](https://pagespeed.web.dev/)**—PageSpeed Insights fornisce rapidamente un rapporto dettagliato sulle cause di prestazioni lente delle pagine web, insieme a raccomandazioni su come correggerlo.
+   - **[Google Lighthouse](https://web.dev/measure/)**: Lighthouse dispone di controlli di prestazioni, accessibilità, applicazioni web progressive, SEO e altro ancora. Per informazioni dettagliate sulle diverse modalità di esecuzione del faro, vedere [Panoramica di Lighthouse](https://developer.chrome.com/docs/lighthouse/overview).)
+   - **[Informazioni sulla velocità della pagina Google](https://pagespeed.web.dev/)**—PageSpeed Insights fornisce rapidamente un rapporto dettagliato sulle cause del rallentamento delle prestazioni delle pagine web, insieme a consigli su come correggerle.
 
-1. Rivedi i rapporti di audit e implementa le raccomandazioni fornite per migliorare le prestazioni dello store.
+1. Esamina i rapporti di audit e implementa le raccomandazioni fornite per migliorare le prestazioni dello store.
 
 ## Informazioni aggiuntive
 
-- [Gestione dell&#39;indice per gli utenti amministratori](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Gestione degli indici tramite CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
-- [Panoramica sull’indicizzazione per gli sviluppatori](https://developer.adobe.com/commerce/php/development/components/indexing/)
-
-
+- [Gestione dell’indice per gli utenti amministratori](../../../configuration/cli/manage-indexers.md#configure-indexers)
+- [Gestione dell’indice tramite CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [Panoramica sull’indicizzazione per sviluppatori](https://developer.adobe.com/commerce/php/development/components/indexing/)

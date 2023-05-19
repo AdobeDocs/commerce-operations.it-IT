@@ -9,7 +9,7 @@ ht-degree: 14%
 
 ## 2.4.6
 
-Il supporto per la versione 2.4.6 termina il 14 marzo 2026.
+Il supporto per la riga di rilascio 2.4.6 termina il 14 marzo 2026.
 
 <table>
   <thead>
@@ -30,7 +30,7 @@ Il supporto per la versione 2.4.6 termina il 14 marzo 2026.
 
 ## 2.4.5
 
-Il supporto per la linea di rilascio 2.4.5 termina il 9 agosto 2025.
+Il supporto per la riga di rilascio 2.4.5 termina il 9 agosto 2025.
 
 <table>
   <thead>
@@ -48,7 +48,7 @@ Il supporto per la linea di rilascio 2.4.5 termina il 9 agosto 2025.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p1.html">2.4.5-p1</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p1.html">2,4,5-p1</a>
         </td>
         <td>11 ottobre 2022</td>
     </tr>
@@ -63,7 +63,7 @@ Il supporto per la linea di rilascio 2.4.5 termina il 9 agosto 2025.
 
 ## 2.4.4
 
-Il supporto per la versione 2.4.4 termina il 12 aprile 2025.
+Il supporto per la riga di rilascio 2.4.4 termina il 12 aprile 2025.
 
 <table>
   <thead>
@@ -102,7 +102,7 @@ Il supporto per la versione 2.4.4 termina il 12 aprile 2025.
 
 ## 2.4.0-2.4.3
 
-Il supporto per la versione 2.4.0-2.4.3 è terminato il 28 novembre 2022.
+Il supporto per la riga di rilascio 2.4.0-2.4.3 è terminato il 28 novembre 2022.
 
 <table>
   <thead>
@@ -168,7 +168,7 @@ Il supporto per la versione 2.4.0-2.4.3 è terminato il 28 novembre 2022.
     </tr>
     <tr>
         <td>
-          2.4.0-p1
+          2,4,0-p1
         </td>
         <td>15 ottobre 2020</td>
     </tr>
@@ -183,7 +183,7 @@ Il supporto per la versione 2.4.0-2.4.3 è terminato il 28 novembre 2022.
 
 ## 2.3
 
-Il supporto per la versione 2.3 è terminato l’8 settembre 2022.
+Il supporto per la riga di rilascio 2.3 è terminato l’8 settembre 2022.
 
 <table>
   <thead>
@@ -306,7 +306,7 @@ Il supporto per la versione 2.3 è terminato l’8 settembre 2022.
 
 ## 2.2
 
-Il supporto per la versione 2.2 è terminato il 1° dicembre 2019.
+Il supporto per la riga di rilascio 2.2 è terminato il 1° dicembre 2019.
 
 <table>
   <thead>
@@ -393,7 +393,7 @@ Il supporto per la versione 2.2 è terminato il 1° dicembre 2019.
 
 ## 2.1
 
-Il supporto per la linea di rilascio 2.1 è terminato il 30 giugno 2019.
+Il supporto per la riga di rilascio 2.1 è terminato il 30 giugno 2019.
 
 <table>
   <thead>

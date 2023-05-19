@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Strategia di estensibilità
 
-La piattaforma di estensibilità di Adobe Commerce consente ai brand di personalizzare in modo efficiente i processi, integrare i sistemi e distribuire nuove funzionalità, mantenendo al tempo stesso la possibilità di eseguire l’aggiornamento come SaaS.
+La piattaforma di estensibilità di Adobe Commerce consente ai brand di personalizzare in modo efficiente i processi, integrare i sistemi e implementare nuove funzionalità, mantenendo al contempo la possibilità di aggiornamento simile a SaaS.
 
 ![Diagramma della strategia di estensibilità di Adobe Commerce](../../assets/playbooks/extensibility-strategy-1.svg)
 
