@@ -71,7 +71,7 @@ Si consideri, ad esempio, un&#39;organizzazione che crea e verifica un sito Web,
 
 ## Livello C
 
-I dirigenti di livello C desiderano sempre che le loro organizzazioni abbiano prestazioni ottimali e aumentino il tasso di conversione per ottenere un ritorno sugli investimenti. Per eseguire correttamente questa operazione è necessario coinvolgere e collaborare i team di tutta l’organizzazione. È inoltre fondamentale che i dirigenti di livello C e di altri dirigenti di alto livello siano maggiormente coinvolti e comprendano il processo di definizione degli obiettivi.
+I dirigenti di livello C vogliono sempre che le loro organizzazioni abbiano prestazioni ottimali e aumentino il tasso di conversione per ottenere un ritorno sugli investimenti. Per eseguire correttamente questa operazione è necessario coinvolgere e collaborare i team di tutta l’organizzazione. È inoltre fondamentale che i dirigenti di livello C e di altri dirigenti di alto livello siano maggiormente coinvolti e comprendano il processo di definizione degli obiettivi.
 
 L’acquisizione di un ruolo da parte di dirigenti di livello C e di altri dirigenti di alto livello è fondamentale per il successo di un grande progetto di e-commerce. Richiede un coinvolgimento diretto e una comunicazione adeguata tra tutti i team.
 

@@ -684,7 +684,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
       <a href="https://github.com/guzzle/promises.git">guzzlehttp/promise</a>
     </td>
     <td>libreria</td>
-    <td>Libreria Guzzle promesse</td>
+    <td>Guzzle promesse libreria</td>
   </tr>
   <tr>
     <td>

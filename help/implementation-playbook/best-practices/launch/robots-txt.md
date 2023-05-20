@@ -101,7 +101,7 @@ Utilizzare l&#39;applicazione Admin per configurare `robots.txt` e `sitemap.xml`
 
 ## Sicurezza
 
-Non esporre il percorso di amministrazione nel `robots.txt` file. L’esposizione del percorso di amministrazione comporta una vulnerabilità di attacchi hacker al sito e potenziale perdita di dati. Rimuovi il percorso di amministrazione da `robots.txt` file.
+Non esporre il percorso di amministrazione nel `robots.txt` file. L’esposizione del percorso di amministrazione comporta una vulnerabilità ad attacchi di hacker al sito e potenziale perdita di dati. Rimuovi il percorso di amministrazione da `robots.txt` file.
 
 Per i passaggi per modificare `robots.txt` e rimuovere tutte le voci del percorso amministratore, vedi [Guida utente di Marketing > SEO e Ricerca > Robot motore di ricerca](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
 

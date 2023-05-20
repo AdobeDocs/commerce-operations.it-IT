@@ -374,7 +374,7 @@ mysql -u root -p magento_quote < /<path>/quote.sql
 
 ## Eliminare le tabelle delle vendite e delle offerte dal database
 
-Consente di creare script per le tabelle delle vendite e delle offerte dal database Commerce. Sostituisci `<your main DB name>` con il nome del database Commerce.
+Consente di generare lo script delle tabelle delle vendite e delle offerte dal database Commerce. Sostituisci `<your main DB name>` con il nome del database Commerce.
 
 Crea il seguente script e assegnagli un nome simile a `3_drop-tables.sql`:
 

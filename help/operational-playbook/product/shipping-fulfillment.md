@@ -49,7 +49,7 @@ Quando decidi una strategia di spedizione e di evasione, utilizza le seguenti be
 
 - Assemblare il team giusto con le persone giuste che hanno le competenze giuste
 - Impostazione degli obiettivi per i team da seguire
-- Scegliere la strategia di spedizione più adatta alle esigenze dell&#39;azienda
+- Scegliere la strategia di spedizione più adatta alle esigenze aziendali
 - Revisione della strategia e ripetizione quando necessario
 
 ## B2B e B2C

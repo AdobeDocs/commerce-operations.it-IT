@@ -9605,7 +9605,7 @@ Utilizza il percorso di origine del mount (anziché il percorso di mount) come s
 
 ### `--delete`
 
-Specifica se eliminare i file estranei nella directory di destinazione
+Se eliminare i file estranei nella directory di destinazione
 
 - Predefinito: `false`
 - Non accetta un valore

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Panoramica di Adobe Commerce con hosting autonomo
+# Panoramica di Adobe Commerce per hosting autonomo
 
 Quando prendi in considerazione il passaggio a una piattaforma di e-commerce come Adobe Commerce, hai il lusso di opzioni. Tuttavia, con queste opzioni ci sono costi aggiuntivi, rischi e passività da considerare. L’hosting di un sito Commerce può essere eseguito utilizzando una soluzione completa, ad esempio [Adobe Commerce sull’infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}: infrastruttura, server, e-mail, certificati SSL e molto altro ancora sono preconfigurati e pronti per l’uso. Trovare una buona soluzione di hosting come Adobe Commerce su infrastruttura cloud semplifica l’intero processo, ci sono motivi convincenti per ospitare autonomamente il tuo sito Commerce. All’interno delle pagine di accompagnamento, sono presenti molti argomenti che forniscono informazioni approfondite e indicazioni sui servizi, le tecniche e i concetti offerti dall’hosting autonomo. Le informazioni qui riportate non sono esaustive e non è previsto che tu debba implementare ogni suggerimento. Tuttavia, questi articoli possono aiutarti a comprendere le idee e i concetti che possono rendere l’hosting autonomo di Adobe Commerce il più stabile e sicuro possibile.
 

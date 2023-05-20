@@ -481,7 +481,7 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 * **MDVA-36464** (*per Adobe Commerce >=2.4.0 &lt;=2.4.2*) - Corregge il problema per il quale la configurazione della notifica e-mail non funziona a livello di visualizzazione store.
 * **MDVA-36138** (*per Adobe Commerce ^2.3.2*) - Corregge il problema che causa la mancata rettifica del prezzo di spedizione e la visualizzazione del prezzo di spedizione completo ai clienti se non tutti gli articoli nel carrello sono idonei per la regola del carrello di spedizione gratuito.
 * **MDVA-36424** (*per Adobe Commerce >=2.3.0 &lt;=2.3.3-p1 || >=2,0,0 &lt;2,2,0*) - Corregge il problema per cui le immagini multimediali allegate agli elementi del Page Builder scompaiono quando il contenuto viene modificato ripetutamente, se l&#39;URL di base del back-end è diverso dall&#39;URL di base dello storefront.
-* **MDVA-35984** (*per Adobe Commerce ^2.4.0*) - Corregge il problema relativo alla quantità di prodotto errata e alla quantità vendibile dopo la creazione di più spedizioni simultanee per lo stesso prodotto.
+* **MDVA-35984** (*per Adobe Commerce ^2.4.0*) - Risolve il problema relativo alla quantità di prodotto errata e alla quantità vendibile dopo la creazione di più spedizioni simultanee per lo stesso prodotto.
 
 ## v1.0.20 {#v1-0-20}
 
