@@ -1,10 +1,11 @@
 ---
 title: Verifica finale
 description: Verifica che la configurazione di Vernice sia configurata correttamente per l’utilizzo con l’applicazione Adobe Commerce.
+feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -82,4 +83,4 @@ Assicurati che le `<magento_root>/var/page_cache` directory vuota:
 
 >[!TIP]
 >
->Se si verificano errori 503 (recupero back-end non riuscito), vedi [Risoluzione dei problemi relativi a 503 (servizio non disponibile)](https://support.magento.com/hc/en-us/articles/360034631211) nel _Centro assistenza Adobe Commerce_.
+>Se si verificano errori 503 (recupero back-end non riuscito), vedi [Risoluzione dei problemi relativi a 503 (servizio non disponibile)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) nel _Centro assistenza Adobe Commerce_.

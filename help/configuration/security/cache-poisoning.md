@@ -1,8 +1,9 @@
 ---
 title: Prevenire l’avvelenamento della cache
 description: Scopri come evitare l’avvelenamento della cache delle pagine per la vetrina Commerce.
+feature: Configuration, Cache, Security
 exl-id: 947024dd-d59d-480d-bb6c-8e0065054bb6
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%

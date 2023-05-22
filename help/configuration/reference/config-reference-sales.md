@@ -1,8 +1,9 @@
 ---
 title: Riferimento percorsi configurazione vendite
 description: Visualizza un elenco di valori di configurazione vendite.
+feature: Configuration, Checkout, Gift, Shipping/Delivery, Taxes
 exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '1473'
 ht-degree: 0%
@@ -397,7 +398,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 | Proprietà elenco per il blocco up-sell | `google/analytics/upsell_block_list_value` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Proprietà elenco per il blocco prodotti correlati | `google/analytics/related_block_list_value` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Proprietà elenco per la pagina dei risultati di ricerca | `google/analytics/search_page_list_value` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
-| &quot;Promozioni interne&quot; per il campo &quot;Etichetta&quot; delle promozioni. | `google/analytics/promotions_list_value` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| &#39;Promozioni interne&#39; per il campo &quot;Etichetta&quot; delle promozioni. | `google/analytics/promotions_list_value` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Abilita | `google/adwords/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ID conversione | `google/adwords/conversion_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Lingua di conversione | `google/adwords/conversion_language` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

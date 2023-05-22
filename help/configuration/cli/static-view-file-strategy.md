@@ -1,8 +1,9 @@
 ---
 title: Strategie di distribuzione per i file di visualizzazione statica
 description: Scopri le strategie di distribuzione per l’applicazione Commerce.
+feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%

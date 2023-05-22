@@ -1,8 +1,9 @@
 ---
 title: Inizializzazione e avvio dell'applicazione
 description: Informazioni sull’inizializzazione e la logica di avvio per l’applicazione Commerce.
+feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%

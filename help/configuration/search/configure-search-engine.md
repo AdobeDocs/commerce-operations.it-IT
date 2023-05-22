@@ -1,8 +1,9 @@
 ---
 title: Configurazione del motore di ricerca
 description: Configura un motore di ricerca per le distribuzioni locali di Adobe Commerce e Magenti Open Source.
+feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%

@@ -1,8 +1,9 @@
 ---
 title: Prerequisiti per la distribuzione
 description: Consulta un elenco di prerequisiti per la distribuzione di Commerce in un sistema di sviluppo, build o produzione.
+feature: Configuration, Deploy
 exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%

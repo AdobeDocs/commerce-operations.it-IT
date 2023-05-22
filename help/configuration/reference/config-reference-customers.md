@@ -1,8 +1,9 @@
 ---
 title: Riferimento percorsi di configurazione clienti
 description: Consulta un elenco di valori di configurazione dei clienti.
+feature: Configuration, Customers
 exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '883'
 ht-degree: 0%
@@ -76,7 +77,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 | Mostra secondo nome (iniziale) | `customer/address/middlename_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostra suffisso | `customer/address/suffix_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Opzioni a discesa suffisso | `customer/address/suffix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Mostra data di nascita | `customer/address/dob_show`<br>In linea con le attuali best practice sulla sicurezza e la privacy, assicurati di essere a conoscenza di eventuali rischi legali e di sicurezza associati alla memorizzazione della data di nascita completa (mese, giorno, anno) dei clienti insieme ad altri identificatori personali, come il nome completo, prima di raccogliere o elaborare tali dati. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Mostra data di nascita | `customer/address/dob_show`<br>In linea con le attuali best practice sulla sicurezza e la privacy, assicurati di essere a conoscenza di eventuali rischi legali e di sicurezza associati alla memorizzazione della data di nascita completa dei clienti (mese, giorno, anno) insieme ad altri identificatori personali, come il nome completo, prima di raccogliere o elaborare tali dati. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostra partita IVA | `customer/address/taxvat_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostra genere | `customer/address/gender_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Abilita funzionalità credito negozio | `customer/magento_customerbalance/is_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |

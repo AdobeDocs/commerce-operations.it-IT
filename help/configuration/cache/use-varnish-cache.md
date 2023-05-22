@@ -1,8 +1,9 @@
 ---
 title: Cancellazione della cache con vernice
 description: Scopri come funziona il clearing della cache con Varnish e come utilizzarlo come acceleratore di web-caching per l’applicazione Adobe Commerce.
+feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

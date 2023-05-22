@@ -1,8 +1,9 @@
 ---
 title: Replica del database
 description: Vedere i vantaggi della configurazione della replica del database.
+recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
