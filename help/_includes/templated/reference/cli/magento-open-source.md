@@ -1,7 +1,7 @@
 ---
-source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
-source-wordcount: '17238'
+source-wordcount: '17239'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 **Versione**: 2.4.6
 
 Questo riferimento contiene 114 comandi disponibili tramite `bin/magento` strumento da riga di comando.
-L’elenco iniziale viene generato automaticamente utilizzando `bin/magento list` nell&#39;edizione.
+L’elenco iniziale viene generato automaticamente utilizzando `bin/magento list` al Magento Open Source.
 Utilizza il [&quot;Aggiungi comandi CLI&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) per aggiungere un comando CLI personalizzato.
 
 >[!NOTE]

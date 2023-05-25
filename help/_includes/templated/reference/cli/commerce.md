@@ -1,7 +1,7 @@
 ---
-source-git-commit: 27e7a262fd1d8092045f5ebe2f88caaec37a6b0d
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
-source-wordcount: '29783'
+source-wordcount: '29786'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 **Versione**: 1,42,0
 
 Questo riferimento contiene 134 comandi disponibili tramite `magento-cloud` strumento da riga di comando.
-L’elenco iniziale viene generato automaticamente utilizzando `magento-cloud list` nell&#39;edizione.
+L’elenco iniziale viene generato automaticamente utilizzando `magento-cloud list` su Adobe Commerce su infrastruttura cloud.
 
 >[!NOTE]
 >
@@ -9605,7 +9605,7 @@ Utilizza il percorso di origine del mount (anziché il percorso di mount) come s
 
 ### `--delete`
 
-Se eliminare i file estranei nella directory di destinazione
+Specifica se eliminare i file estranei nella directory di destinazione
 
 - Predefinito: `false`
 - Non accetta un valore
