@@ -2,9 +2,9 @@
 title: Gestire le code dei messaggi
 description: Scopri come gestire le code di messaggi dalla riga di comando per Adobe Commerce.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
+source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ L&#39;esempio seguente mostra `crontab` configurazione per l&#39;esecuzione dei 
 >
 >Consulta [Configurare ed eseguire cron](../cli/configure-cron-jobs.md) per ulteriori informazioni sull&#39;utilizzo di `cron` con Commerce.
 
-È inoltre possibile utilizzare un gestore di processi come [Supervisore](http://supervisord.org/index.html) per monitorare lo stato dei processi. Il manager può utilizzare la riga di comando per riavviare i processi in base alle esigenze.
+È inoltre possibile utilizzare un gestore di processi come [Supervisore](https://supervisord.readthedocs.io/en/latest/) per monitorare lo stato dei processi. Il manager può utilizzare la riga di comando per riavviare i processi in base alle esigenze.
 
 ## Configurazione
 
@@ -76,12 +76,12 @@ Modifica il `/app/etc/env.php` file per configurare il processo cron `consumers_
 - `consumers` : array di stringhe che specifica quali consumer eseguire. Viene eseguito un array vuoto *tutto* consumatori.
 - `multiple_processes` : array di coppie chiave-valore che specifica il consumatore da eseguire nel numero di processi. Supportato in Commerce 2.4.4 o versione successiva.
 
-   >[!INFO]
-   >
-   >Non è consigliabile eseguire più consumer in una coda gestita da MySQL. Consulta [Cambia coda messaggi da MySQL a AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) per ulteriori informazioni.
+  >[!INFO]
+  >
+  >Non è consigliabile eseguire più consumer in una coda gestita da MySQL. Consulta [Cambia coda messaggi da MySQL a AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) per ulteriori informazioni.
 
-   >[!INFO]
-   >
-   >Se il tuo store Adobe Commerce è ospitato sulla piattaforma Cloud, utilizza [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) per configurare il modo in cui i consumatori elaborano i messaggi dalla coda dei messaggi.
+  >[!INFO]
+  >
+  >Se il tuo store Adobe Commerce è ospitato sulla piattaforma Cloud, utilizza [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) per configurare il modo in cui i consumatori elaborano i messaggi dalla coda dei messaggi.
 
 Consulta [Avvia consumer coda messaggi](../cli/start-message-queues.md).
