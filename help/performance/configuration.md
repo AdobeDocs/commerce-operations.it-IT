@@ -2,9 +2,9 @@
 title: Best practice per la configurazione
 description: Ottimizza i tempi di risposta dell’implementazione di Adobe Commerce o di Magento Open Source utilizzando queste best practice.
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 1d7f5f58f8c21013c2ab0d68ab93a125ba0f3764
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1448'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,31 @@ Ci possono essere momenti in cui si verificano vendite intensive in una vetrina 
 >[!WARNING]
 >
 >Il **[!UICONTROL Developer]** scheda e opzioni sono disponibili solo in [Modalità sviluppatore](../configuration/cli/set-mode.md). [Adobe Commerce sull’infrastruttura cloud](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) non supporta `Developer` modalità.
+
+## Salvataggio configurazione asincrona [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponibile solo nella versione 2.4.7-beta1"}
+
+Per i progetti con un numero elevato di configurazioni a livello di archivio, il salvataggio di una configurazione di archivio può richiedere un tempo eccessivo o causare un timeout. Il _Configurazione asincrona_ Il modulo consente il salvataggio asincrono della configurazione eseguendo un processo cron che utilizza un consumer per elaborare il salvataggio in una coda di messaggi. AsyncConfig è **disabilitato** per impostazione predefinita.
+
+Puoi abilitare AsyncConfig utilizzando l’interfaccia della riga di comando:
+
+```bash
+bin/magento setup:config:set --config-async 1
+```
+
+Il `set` Il comando scrive quanto segue in `app/etc/env.php` file:
+
+```conf
+...
+   'config' => [
+       'async' => 1
+   ]
+```
+
+Avvia il seguente consumer per iniziare a elaborare i messaggi nella coda in base al principio &quot;primo in primo out&quot;:
+
+```bash
+bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
+```
 
 ## Aggiornamento scorte differite
 

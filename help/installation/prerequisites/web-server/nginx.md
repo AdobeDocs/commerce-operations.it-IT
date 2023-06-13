@@ -2,16 +2,16 @@
 title: Nginx
 description: Segui questi passaggi per installare e configurare il server web Nginx per le installazioni on-premise di Adobe Commerce e Magenti Open Source.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 9ebf10bd3296495e33c91d930be023ea0124ff62
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
 
 # Nginx
 
-Adobe Commerce supporta nginx 1.18 (o il [versione principale più recente](https://nginx.org/en/linux_packages.html#mainline)). È inoltre necessario installare la versione più recente di `php-fpm`.
+Adobe Commerce supporta nginx 1.x (o il [versione principale più recente](https://nginx.org/en/linux_packages.html#mainline)). È inoltre necessario installare la versione più recente di `php-fpm`.
 
 Le istruzioni di installazione variano in base al sistema operativo in uso. Consulta [PHP](../php-settings.md) per informazione.
 

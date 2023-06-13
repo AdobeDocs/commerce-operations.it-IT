@@ -3,7 +3,7 @@ keywords: Adobe Commerce;home;argomenti popolari
 title: Home
 description: Sfoglia un indice della documentazione del prodotto operativo e di amministrazione del sistema di Adobe Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 9e010b68f6458bafda5119308531e62477f046a9
+source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -64,11 +64,11 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html">
        <img alt="Riferimento per gli strumenti della riga di comando" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Riferimento agli strumenti della riga di comando</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html"><strong>Riferimento agli strumenti della riga di comando</strong></a>
       <p>Scopri i comandi, gli argomenti e le opzioni degli strumenti della riga di comando di Adobe Commerce.</p>
     </div>
   </td>
