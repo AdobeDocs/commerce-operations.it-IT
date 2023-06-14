@@ -1,5 +1,5 @@
 ---
-source-git-commit: 4b767014f325bef7e07cea11d01089206bf44caf
+source-git-commit: 8b82081057af7d134528988d3f9f7cf53f4d7525
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -75,4 +75,4 @@ _scripts/render
 
 Lo script esegue il rendering e scrive i modelli sottoposti a rendering in `help/_includes/templated` directory.
 
-Per ulteriori informazioni su, consulta la documentazione di Jekyll. [File di dati](https://jekyllrb.com/docs/datafiles [Filtri per liquidi](https://jekyllrb.com/docs/liquid/filters/), e altre funzioni.
+Per ulteriori informazioni su, consulta la documentazione di Jekyll. [File di dati](https://jekyllrb.com/docs/datafiles), [Filtri per liquidi](https://jekyllrb.com/docs/liquid/filters/), e altre funzioni.
