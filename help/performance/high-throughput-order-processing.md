@@ -1,8 +1,9 @@
 ---
 title: Elaborazione degli ordini con throughput elevato
 description: Ottimizza l’esperienza di inserimento e pagamento degli ordini per la distribuzione Adobe Commerce o di Magento Open Source.
+feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%

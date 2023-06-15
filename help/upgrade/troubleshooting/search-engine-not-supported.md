@@ -1,8 +1,9 @@
 ---
 title: Motore di ricerca corrente non supportato
 description: Risolvi i problemi relativi all’aggiornamento di Adobe Commerce o Magento Open Source dopo aver riscontrato un errore relativo a un motore di ricerca non supportato.
+feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -34,13 +35,11 @@ L’errore si verifica se il valore restituito è `mysql`, `elasticsearch`, o `e
 >
 >Se hai ricevuto questo errore, l&#39;installazione è in uno stato incoerente e non puoi accedere all&#39;amministratore. Mentre risolvi questo errore, ti consigliamo di ripristinare la versione precedente. A tale scopo, eseguire uno dei comandi seguenti:
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-enterprise-edition=<version>
 >```
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
