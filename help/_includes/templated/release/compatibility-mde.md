@@ -1,7 +1,7 @@
 ---
-source-git-commit: f98c0edd3ca2b8b907974717bb5d81304097f46a
+source-git-commit: 819db1df2e00a9084f62c99a58dd835d5da04dbd
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -209,6 +209,27 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <tbody>
     <tr>
       <th colspan="10">Audience Activation</th>
+    </tr>
+    <tr>
+      <td>Audience Activation 1.1.0</td>
+      <td>Compatibile</span>
+      </td>
+      <td>Compatibile</span>
+      </td>
+      <td>Compatibile</span>
+      </td>
+      <td>Compatibile</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
     </tr>
     <tr>
       <td>Audience Activation 1.0.1</td>
@@ -452,6 +473,27 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="10">Servizio catalogo</th>
     </tr>
     <tr>
+      <td>Catalog Service 1.9</td>
+      <td>Compatibile</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+    </tr>
+    <tr>
       <td>Catalog Service 1.7</td>
       <td>Compatibile</span>
       </td>
@@ -670,6 +712,27 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <tbody>
     <tr>
       <th colspan="10">Connettore Experience Platform</th>
+    </tr>
+    <tr>
+      <td>Connettore Experience Platform 3.0.0-beta1</td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
     </tr>
     <tr>
       <td>Connettore Experience Platform 2.2.0</td>
@@ -1362,6 +1425,27 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <tbody>
     <tr>
       <th colspan="10">Servizi di pagamento</th>
+    </tr>
+    <tr>
+      <td>Servizi di pagamento 2.1.0</td>
+      <td>Compatibile</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Supportato</span>
+      </td>
+      <td>Non compatibile</span>
+      </td>
+      <td>Non compatibile</span>
+      </td>
+      <td>Non compatibile</span>
+      </td>
+      <td>Non compatibile</span>
+      </td>
+      <td>Non supportato</span>
+      </td>
     </tr>
     <tr>
       <td>Payment Services 2.0.0</td>
