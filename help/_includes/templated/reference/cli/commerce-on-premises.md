@@ -1,5 +1,5 @@
 ---
-source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
+source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
 workflow-type: tm+mt
 source-wordcount: '19443'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Versione dello script di completamento
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -130,7 +130,7 @@ Suddividi il registro di debug di completamento
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -209,7 +209,7 @@ Per visualizzare la guida dei comandi raw
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -293,7 +293,7 @@ Per ignorare la descrizione degli argomenti dei comandi
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -350,7 +350,7 @@ bin/magento admin:adobe-ims:disable
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -431,7 +431,7 @@ Verificare se 2FA è abilitato per l&#39;organizzazione in Adobe Admin Console. 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -488,7 +488,7 @@ bin/magento admin:adobe-ims:info
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -545,7 +545,7 @@ bin/magento admin:adobe-ims:status
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -638,7 +638,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -702,7 +702,7 @@ Nome utente amministratore da sbloccare
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -768,7 +768,7 @@ Elenco separato da spazi dei tipi di configurazione o ometti di scaricare tutto 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -825,7 +825,7 @@ bin/magento app:config:import
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -882,7 +882,7 @@ bin/magento app:config:status
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -963,7 +963,7 @@ Password
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1035,7 +1035,7 @@ aggiungere o sostituire i parametri del bootstrap
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1107,7 +1107,7 @@ aggiungere o sostituire i parametri del bootstrap
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1179,7 +1179,7 @@ aggiungere o sostituire i parametri del bootstrap
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1251,7 +1251,7 @@ aggiungere o sostituire i parametri del bootstrap
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1314,7 +1314,7 @@ aggiungere o sostituire i parametri del bootstrap
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1385,7 +1385,7 @@ Non elaborare le immagini contrassegnate come nascoste dalla pagina prodotto
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1442,7 +1442,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1506,7 +1506,7 @@ y\n
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1595,7 +1595,7 @@ Codice ambito per la configurazione, stringa vuota per impostazione predefinita
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1699,7 +1699,7 @@ Obsoleto, utilizza invece l’opzione —lock-env.
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1776,7 +1776,7 @@ Codice ambito (obbligatorio solo se l’ambito non è `default`)
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1847,7 +1847,7 @@ Installa solo le attività non facoltative (predefinite)
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1904,7 +1904,7 @@ bin/magento cron:remove
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1973,7 +1973,7 @@ Aggiungere o sostituire i parametri del bootstrap
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2030,7 +2030,7 @@ bin/magento customer:hash:upgrade
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2101,7 +2101,7 @@ Ignora la cancellazione e la rigenerazione del contenuto statico (codice generat
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2158,7 +2158,7 @@ bin/magento deploy:mode:show
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2222,7 +2222,7 @@ Nome classe
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2279,7 +2279,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2336,7 +2336,7 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2393,7 +2393,7 @@ bin/magento dev:profiler:disable
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2456,7 +2456,7 @@ Tipo di profiler
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2513,7 +2513,7 @@ bin/magento dev:query-log:disable
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2591,7 +2591,7 @@ Include lo stack di chiamate. [true\|false]
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2685,7 +2685,7 @@ Tema: [Fornitore/tema]
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2742,7 +2742,7 @@ bin/magento dev:template-hints:disable
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2799,7 +2799,7 @@ bin/magento dev:template-hints:enable
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2856,7 +2856,7 @@ bin/magento dev:template-hints:status
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2928,7 +2928,7 @@ Argomenti aggiuntivi per PHPUnit. Esempio: &quot;-c&#39;—filter=MyTest&#39;&qu
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2999,7 +2999,7 @@ Formato di generazione del catalogo. Supportato: [phpstorm, vscode]
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3076,7 +3076,7 @@ Sovrascrivi file XML
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3142,7 +3142,7 @@ Nome domini
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3208,7 +3208,7 @@ Nomi di dominio
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3265,7 +3265,7 @@ bin/magento downloadable:domains:show
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3322,7 +3322,7 @@ bin/magento encryption:payment-data:update
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3396,7 +3396,7 @@ Descrizione del provider.
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3453,7 +3453,7 @@ bin/magento events:generate:module
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3524,7 +3524,7 @@ Il numero di livelli nel payload dell’evento da restituire
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3581,7 +3581,7 @@ bin/magento events:list
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3645,7 +3645,7 @@ Nome modulo
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3702,7 +3702,7 @@ bin/magento events:metadata:populate
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3793,7 +3793,7 @@ L’elenco delle regole per la sottoscrizione dell’evento, in cui ogni regola 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3857,7 +3857,7 @@ I metadati dell’eliminazione degli eventi non sono più necessari
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3921,7 +3921,7 @@ Codice evento a cui annullare l’abbonamento
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3997,7 +3997,7 @@ Utilizzate il parametro —magento per analizzare la base di codice del Magento 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4081,7 +4081,7 @@ Utilizza il parametro —allow-duplicates per consentire il salvataggio di dupli
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4155,7 +4155,7 @@ Backup del codice e dei file di configurazione (esclusi i file temporanei)
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4212,7 +4212,7 @@ bin/magento indexer:info
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4278,7 +4278,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4344,7 +4344,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4412,7 +4412,7 @@ Indicizzatore modalità dimensione catalog_product_price none,website,customer_g
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4483,7 +4483,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4549,7 +4549,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4615,7 +4615,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4681,7 +4681,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4738,7 +4738,7 @@ bin/magento info:adminuri
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4795,7 +4795,7 @@ bin/magento info:backups:list
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4852,7 +4852,7 @@ bin/magento info:currency:list
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4916,7 +4916,7 @@ Nome file del rapporto
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4980,7 +4980,7 @@ Nome file del rapporto
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5044,7 +5044,7 @@ Nome file del rapporto
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5101,7 +5101,7 @@ bin/magento info:language:list
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5158,7 +5158,7 @@ bin/magento info:timezone:list
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5216,7 +5216,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `compensations`
 
-Elenco degli argomenti retribuzione in formato &quot;&lt;order_increment_id>:&lt;sku>:&lt;quantity>:&lt;stock-id>&quot;
+Elenco degli argomenti retribuzione in formato &quot;\&lt;order_increment_id>:\&lt;sku>:\&lt;quantity>:\&lt;stock-id>&quot;
 
 - Predefinito: `[]`
 
@@ -5231,7 +5231,7 @@ Uscita raw
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5316,7 +5316,7 @@ Uscita raw
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5383,7 +5383,7 @@ Elenco dei codici paese da importare
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5469,7 +5469,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5539,7 +5539,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5609,7 +5609,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5672,7 +5672,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5729,7 +5729,7 @@ bin/magento media-content:sync
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5786,7 +5786,7 @@ bin/magento media-gallery:sync
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5843,7 +5843,7 @@ bin/magento module:config:status
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5936,7 +5936,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6029,7 +6029,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6115,7 +6115,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6230,7 +6230,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6310,7 +6310,7 @@ Revisione
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6367,7 +6367,7 @@ bin/magento queue:consumers:list
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6424,7 +6424,7 @@ bin/magento queue:consumers:restart
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6525,7 +6525,7 @@ Percorso del file per il salvataggio del PID (questa opzione è obsoleta, usa in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6582,7 +6582,7 @@ bin/magento remote-storage:sync
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6646,7 +6646,7 @@ Aggiornare compositore.json senza eseguire l’aggiornamento del compositore
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6710,7 +6710,7 @@ Aggiornare compositore.json senza eseguire l’aggiornamento del compositore
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6767,7 +6767,7 @@ bin/magento sampledata:reset
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6824,7 +6824,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6881,7 +6881,7 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6951,7 +6951,7 @@ Segreto
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7008,7 +7008,7 @@ bin/magento security:tfa:providers
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7078,7 +7078,7 @@ Codice provider
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7162,7 +7162,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7746,7 +7746,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7809,7 +7809,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7893,7 +7893,7 @@ Scopri il tipo di patch da generare. Valori disponibili: `data`, `schema`.
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7957,7 +7957,7 @@ Nome del modulo in cui verrà generata la whitelist
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8067,7 +8067,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8168,7 +8168,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8269,7 +8269,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8339,7 +8339,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8402,7 +8402,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8459,7 +8459,7 @@ bin/magento setup:di:compile
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -9282,7 +9282,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -9353,7 +9353,7 @@ Salta reindicizzazione
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -9434,7 +9434,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -9660,7 +9660,7 @@ Non compilare i temi principali. Supportato solo in strategie veloci e standard.
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -9777,7 +9777,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -9840,7 +9840,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -9936,7 +9936,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -9993,7 +9993,7 @@ bin/magento store:list
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10050,7 +10050,7 @@ bin/magento store:website:list
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10126,7 +10126,7 @@ Includi registri
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10209,7 +10209,7 @@ Ignora bonifica
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10273,7 +10273,7 @@ Controlla solo le utility della console richieste
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10337,7 +10337,7 @@ Forza
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10418,7 +10418,7 @@ Cancellare i file di visualizzazione statica generati.
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10516,7 +10516,7 @@ Percorso del file da scrivere in vcl
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore

@@ -1,5 +1,5 @@
 ---
-source-git-commit: adb585771fb1353614ea600117f18ba8b55b65f0
+source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Versione dello script di completamento
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -126,7 +126,7 @@ Suddividi il registro di debug di completamento
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -205,7 +205,7 @@ Per visualizzare la guida dei comandi raw
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -289,7 +289,7 @@ Per ignorare la descrizione degli argomenti dei comandi
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -353,7 +353,7 @@ Percorso per risolvere i problemi in.
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -428,7 +428,7 @@ Percorso del file in cui verrà esportato l’output (Formato Json)
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -499,7 +499,7 @@ versione di destinazione (ad esempio 2.4.5).
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -575,7 +575,7 @@ Percorso del file in cui verrà esportato l’output (Formato JSON)
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -683,7 +683,7 @@ Contesto di esecuzione. Questa opzione è a scopo di integrazione e non influisc
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per &lt;info>list&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
 
 - Predefinito: `false`
 - Non accetta un valore
