@@ -1,15 +1,11 @@
 ---
-source-git-commit: 0167c2dc9862c88cc26acf820058e7ed300d6582
+source-git-commit: e790327231f6d6ad97a03460f361e5fb63b27a37
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 70%
+source-wordcount: '287'
+ht-degree: 86%
 
 ---
 # Requisiti di sistema
-
->[!IMPORTANT]
->
->Il supporto per la versione del servizio e la compatibilità per l’infrastruttura cloud di Adobe Commerce è determinato dalle versioni distribuite nell’infrastruttura cloud e talvolta differisce dalle versioni supportate dalle distribuzioni locali di Adobe Commerce. Consulta [Software e servizi supportati](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) nel _Guida al cloud_. Ad esempio, Elasticsearch 7.17 è supportato nella versione 2.4.4 per le distribuzioni on-premise, ma Open Search 1.2 è supportato nell’infrastruttura cloud.
 
 >[!NOTE]
 >
