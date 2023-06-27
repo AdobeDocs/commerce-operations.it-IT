@@ -1,8 +1,9 @@
 ---
 title: Modifica la directory principale dei documenti per migliorare la sicurezza
 description: Impedisci l'accesso non autorizzato basato su browser al file system locale di Adobe Commerce o di Magento Open Source.
+feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%

@@ -1,8 +1,9 @@
 ---
 title: Impostazioni PHP
 description: Segui questi passaggi per installare le estensioni PHP richieste e configurare le impostazioni PHP richieste per le installazioni on-premise di Adobe Commerce e Magenti Open Source.
+feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
@@ -73,7 +74,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - Impostare il limite della memoria PHP.
 
-   I nostri consigli dettagliati sono:
+  I nostri consigli dettagliati sono:
 
    - compilazione del codice o distribuzione di risorse statiche, `1G`
    - Debug, `2G`
@@ -81,18 +82,18 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - Aumentare i valori per PHP `realpath_cache_size` e `realpath_cache_ttl` alle impostazioni consigliate:
 
-   ```conf
-   realpath_cache_size=10M
-   realpath_cache_ttl=7200
-   ```
+  ```conf
+  realpath_cache_size=10M
+  realpath_cache_ttl=7200
+  ```
 
-   Queste impostazioni consentono ai processi PHP di memorizzare nella cache i percorsi dei file invece di cercarli ogni volta che viene caricata una pagina. Consulta [Ottimizzazione delle prestazioni](https://www.php.net/manual/en/ini.core.php) nella documentazione PHP.
+  Queste impostazioni consentono ai processi PHP di memorizzare nella cache i percorsi dei file invece di cercarli ogni volta che viene caricata una pagina. Consulta [Ottimizzazione delle prestazioni](https://www.php.net/manual/en/ini.core.php) nella documentazione PHP.
 
 - Abilita [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), richiesto per Adobe Commerce e Magenti Open Source 2.1 e versioni successive.
 
-   È consigliabile abilitare [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) per motivi di prestazioni. OPcache è abilitata in molte distribuzioni PHP.
+  È consigliabile abilitare [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) per motivi di prestazioni. OPcache è abilitata in molte distribuzioni PHP.
 
-   Adobe Commerce e Magenti Open Source 2.1 e versioni successive utilizzano i commenti del codice PHP per la generazione del codice.
+  Adobe Commerce e Magenti Open Source 2.1 e versioni successive utilizzano i commenti del codice PHP per la generazione del codice.
 
 >[!NOTE]
 >
@@ -126,15 +127,15 @@ Utilizza le seguenti linee guida per trovarlo:
 
 - Server web Apache:
 
-   Per Ubuntu con Apache, le impostazioni OPcache si trovano in genere nel `php.ini` file.
+  Per Ubuntu con Apache, le impostazioni OPcache si trovano in genere nel `php.ini` file.
 
-   Per CentOS con Apache o nginx, le impostazioni OPcache si trovano in genere in `/etc/php.d/opcache.ini`
+  Per CentOS con Apache o nginx, le impostazioni OPcache si trovano in genere in `/etc/php.d/opcache.ini`
 
-   In caso contrario, utilizzare il comando seguente per individuarlo:
+  In caso contrario, utilizzare il comando seguente per individuarlo:
 
-   ```bash
-   sudo find / -name 'opcache.ini'
-   ```
+  ```bash
+  sudo find / -name 'opcache.ini'
+  ```
 
 - Server web nginx con PHP-FPM: `/etc/php/7.2/fpm/php.ini`
 

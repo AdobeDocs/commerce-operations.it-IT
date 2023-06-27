@@ -1,8 +1,9 @@
 ---
 title: Configurare l’applicazione
 description: Scopri la configurazione post-installazione richiesta per le distribuzioni Adobe Commerce e Magenti Open Source on-premise.
+feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%

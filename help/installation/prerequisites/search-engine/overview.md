@@ -1,8 +1,9 @@
 ---
 title: Prerequisiti per i motori di ricerca
 description: Segui questi passaggi per installare e configurare il software dei motori di ricerca supportato per le installazioni locali di Adobe Commerce e Magenti Open Source.
+feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
@@ -40,15 +41,15 @@ Il diagramma precedente mostra:
 
 * L’applicazione Commerce e il motore di ricerca sono installati su host diversi.
 
-   L&#39;esecuzione su host separati richiede il funzionamento del proxy. Il clustering del motore di ricerca esula dall’ambito di questa guida, ma per ulteriori informazioni consulta [Documentazione sul clustering Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  L&#39;esecuzione su host separati richiede il funzionamento del proxy. Il clustering del motore di ricerca esula dall’ambito di questa guida, ma per ulteriori informazioni consulta [Documentazione sul clustering Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * Ogni host ha il proprio server web; i server web non devono essere gli stessi.
 
-   Ad esempio, l’applicazione Commerce può eseguire Apache e il motore di ricerca può eseguire nginx.
+  Ad esempio, l’applicazione Commerce può eseguire Apache e il motore di ricerca può eseguire nginx.
 
 * Entrambi i server web utilizzano Transport Layer Security (TLS).
 
-   La configurazione di TLS va oltre l’ambito della nostra documentazione.
+  La configurazione di TLS va oltre l’ambito della nostra documentazione.
 
 Le richieste di ricerca vengono elaborate come segue:
 

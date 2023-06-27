@@ -1,8 +1,9 @@
 ---
 title: Visualizzare o modificare l’URI amministratore
 description: Per visualizzare e modificare l’URI dell’applicazione Adobe Commerce o Magenti Open Source Admin, segui la procedura riportata di seguito.
+feature: Install, Configuration
 exl-id: 768f9ab4-7123-4460-9df8-a6c98ae55d95
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
