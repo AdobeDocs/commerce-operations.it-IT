@@ -2,7 +2,8 @@
 title: Flussi di cassa ed elaborazione
 description: Aumenta i tassi di conversione offrendo ai clienti un’esperienza di pagamento fluida.
 exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Checkout
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%

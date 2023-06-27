@@ -2,7 +2,8 @@
 title: Il [!UICONTROL [!DNL RabbitMQ]Scheda ]
 description: Scopri di più su [!UICONTROL [!DNL RabbitMQ]Scheda ] di [!DNL Observation for Adobe Commerce].
 exl-id: c5370c30-fed8-4f45-89c3-ef0d6ad41a89
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%

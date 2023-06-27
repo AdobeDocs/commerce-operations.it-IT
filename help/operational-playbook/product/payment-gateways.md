@@ -2,7 +2,8 @@
 title: Gateway di pagamento
 description: Scegli un provider di gateway di pagamento per il progetto di e-commerce in base alle esigenze della tua azienda.
 exl-id: eab50191-0744-41da-99ba-2e06ea61da27
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Payments
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -15,11 +16,11 @@ C&#39;è stato un tempo in cui il contante era la principale fonte di transazion
 
 ![Logo provider gateway di pagamenti](../../assets/playbooks/payment-gateways.png)
 
-Un gateway di pagamento è un provider di servizi che connette ed elabora i pagamenti per i siti Web di e-commerce. Rivestono un ruolo fondamentale nell’esperienza di acquisto dei clienti e nei tassi di conversione. I sistemi di pagamento complicati tendono a costringere i clienti ad abbandonare i carrelli. È importante fornire ai clienti un sistema di pagamento semplice e intuitivo in cui, anche se un metodo di pagamento non riesce, hanno un metodo alternativo per motivarli a completare l’acquisto.
+Un gateway di pagamento è un provider di servizi che connette ed elabora i pagamenti per i siti Web di e-commerce. Rivestono un ruolo fondamentale nell’esperienza di acquisto dei clienti e nei tassi di conversione. I sistemi di pagamento complicati tendono a costringere i clienti ad abbandonare i carrelli. È importante fornire ai clienti un sistema di pagamento semplice e intuitivo in cui, anche se un metodo di pagamento non riesce, hanno un metodo alternativo per motivarli a completare l&#39;acquisto.
 
 ## Verifica requisiti
 
-I rivenditori devono selezionare il miglior gateway di pagamento che soddisfi le loro esigenze. Ci sono molti gateway di pagamento nel mercato, come Braintree e Stripe, ma prima di decidere su un gateway di pagamento, si pongono le seguenti domande:
+I rivenditori devono selezionare il miglior gateway di pagamento che soddisfi le loro esigenze. Esistono molti gateway di pagamento nel mercato, come Braintree e Stripe, ma prima di decidere su un gateway di pagamento, chiediti le seguenti domande:
 
 - Quali sono i requisiti aziendali?
 - È nel mio budget?

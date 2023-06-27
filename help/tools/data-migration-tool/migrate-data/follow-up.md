@@ -2,7 +2,8 @@
 title: Follow-up sulla migrazione dei dati
 description: Scopri come verificare che la migrazione dei dati dal Magento 1 al Magento 2 sia stata eseguita correttamente e che tutte le funzionalità funzionino come previsto.
 exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%

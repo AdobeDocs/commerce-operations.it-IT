@@ -2,7 +2,8 @@
 title: Spedizione e evasione
 description: Determina i metodi e i costi di spedizione prima di completare il progetto di e-commerce.
 exl-id: 07d303ab-f229-4b6a-b35a-b6d2a3be89b3
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Shipping/Delivery
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
@@ -23,7 +24,7 @@ La spedizione e l&#39;evasione hanno alcuni fattori di base che fungono da base,
 
 - **Prodotto**- Ogni prodotto è diverso in termini di numero di articoli, peso, destinazione e durata. Le aziende devono analizzare questi dettagli per comprendere il costo totale della spedizione, in quanto i diversi prodotti hanno costi di spedizione diversi.
 
-- **Imballaggio**—L&#39;imballaggio svolge anche un ruolo importante nella comprensione del metodo di spedizione e del costo. Ad esempio, il prodotto è fragile o è confezionato come regalo?
+- **Imballaggio**—Anche l&#39;imballaggio svolge un ruolo importante nella comprensione del metodo di spedizione e del costo. Ad esempio, il prodotto è fragile o è confezionato come regalo?
 
 - **Stagione**- Quali cambiamenti dovrebbero essere apportati durante le stagioni di picco, come la frenesia di clic e i festival.
 

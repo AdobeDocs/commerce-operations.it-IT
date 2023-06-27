@@ -2,7 +2,8 @@
 title: Confronto tra host Commerce
 description: Consulta questa tabella di confronto per decidere come ospitare un progetto di e-commerce.
 exl-id: 8d1f0b85-2874-4a4b-9fae-1fb367a7f85e
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Cloud, Paas
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
@@ -106,7 +107,7 @@ La tabella seguente illustra i vantaggi e gli svantaggi delle soluzioni cloud ri
         <tr>
             <td>Supporto IT</td>
             <td>Le competenze in materia di infrastruttura e applicazioni sono immediatamente disponibili</td>
-            <td>È necessario un team IT dedicato, in particolare quando le applicazioni sono personalizzate per soddisfare i requisiti specifici di un’organizzazione.</td>
+            <td>È necessario un team IT dedicato, in particolare quando le applicazioni sono personalizzate per soddisfare i requisiti specifici di un'organizzazione.</td>
             <td>La cautela nella scalabilità inerente alle implementazioni cloud significa che il supporto IT può essere gestito in modo più efficiente con meno tempo e meno impegno.</td>
             <td>La curva di apprendimento per il cloud è significativa e il personale adeguatamente formato è costoso</td>
         </tr>

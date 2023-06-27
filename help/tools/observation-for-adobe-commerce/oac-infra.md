@@ -2,7 +2,8 @@
 title: Il [!DNL Infra] scheda
 description: Il [!DNL Infra] La scheda isola i problemi e le cause dei problemi dell'infrastruttura.
 exl-id: 45f24177-3264-4848-99bc-951be32c1f7b
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%

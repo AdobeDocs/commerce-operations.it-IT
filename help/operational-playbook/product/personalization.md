@@ -2,7 +2,8 @@
 title: Personalizzazione
 description: Scopri il tipo di personalizzazione delle esperienze che dovrebbe fornire ai clienti.
 exl-id: ea829c53-1f98-4e23-90ee-5424a4ef0324
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Personalization
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -25,7 +26,7 @@ La personalizzazione deve includere:
 
 Esempi di personalizzazione includono:
 
-- **Interesse del cliente**- Modifica della home page e della navigazione in base al profilo del cliente. Ad esempio, se un utente ha già visitato il sito in precedenza e ha esplorato la sezione Donne, la prossima volta che immette l’URL passa alla homepage Donne.
+- **Interesse del cliente**- Modifica della home page e della navigazione in base al profilo del cliente. Ad esempio, se un utente ha visitato il sito in precedenza ed esplorato la sezione Donne, la prossima volta che immette l’URL viene visualizzata la homepage Donne.
 
 - **Prodotti consigliati**- Consiglia i prodotti in base al comportamento di navigazione dei clienti.
 

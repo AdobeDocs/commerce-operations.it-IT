@@ -2,7 +2,8 @@
 title: Dati che richiedono la migrazione manuale
 description: Scopri i dati che devono essere migrati manualmente durante la migrazione dei dati dal Magento 1 al Magento 2 e come farlo.
 exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%

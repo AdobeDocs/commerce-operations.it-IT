@@ -2,7 +2,9 @@
 title: Ottimizzazione delle prestazioni AEM
 description: Ottimizza la configurazione Adobe Experience Manager predefinita per supportare carichi elevati su Adobe Commerce.
 exl-id: 923a709f-9048-4e67-a5b0-ece831d2eb91
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Integration, Cache
+topic: Commerce, Performance
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '2248'
 ht-degree: 0%
@@ -25,11 +27,11 @@ Se questa opzione è abilitata, il dispatcher valuterà le intestazioni di rispo
 
 ## Memorizzazione nella cache del browser
 
-L’approccio TTL del dispatcher descritto sopra ridurrà notevolmente le richieste e il caricamento nell’editore. Tuttavia, poiché è molto improbabile che alcune risorse vengano modificate, anche le richieste al dispatcher possono essere ridotte memorizzando nella cache i file rilevanti localmente sul browser di un utente. Ad esempio, il logo del sito, che viene visualizzato in ogni pagina del sito nel modello del sito, non dovrebbe essere richiesto ogni volta a Dispatcher. Può invece essere memorizzato nella cache del browser dell’utente. La riduzione dei requisiti di larghezza di banda per ogni caricamento di pagina avrebbe un impatto notevole sulla reattività del sito e sui tempi di caricamento delle pagine.
+L’approccio TTL del dispatcher descritto sopra riduce notevolmente le richieste e il caricamento nell’editore. Tuttavia, poiché alcune risorse hanno poche probabilità di essere modificate, anche le richieste al dispatcher possono essere ridotte memorizzando nella cache i file rilevanti localmente sul browser di un utente. Ad esempio, il logo del sito, che viene visualizzato in ogni pagina del sito nel modello del sito, non dovrebbe essere richiesto ogni volta a Dispatcher. che può invece essere memorizzato nella cache del browser dell’utente. La riduzione dei requisiti di larghezza di banda per ogni caricamento di pagina avrebbe un impatto notevole sulla reattività del sito e sui tempi di caricamento delle pagine.
 
 La memorizzazione nella cache a livello di browser viene solitamente eseguita tramite l’intestazione di risposta &quot;Cache-Control: max-age=&quot;. L’impostazione massima indica al browser per quanti secondi deve memorizzare in cache il file prima di tentare di &quot;riconvalidare&quot; o richiederlo nuovamente dal sito. Questo concetto di max-age della cache viene comunemente definito &quot;Scadenza cache&quot; o TTL (&quot;Time to Live&quot;). Distribuzione di esperienze e-commerce su larga scala: con Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
 
-Alcune aree di un sito AEM/CIF/Adobe Commerce che possono essere impostate per la memorizzazione nella cache nel browser del client includono:
+Alcune aree di un sito AEM/CIF/Adobe Commerce che possono essere impostate per essere memorizzate nella cache nel browser del client includono:
 
 - Immagini (all’interno del modello AEM stesso, ad esempio logo del sito e immagini di progettazione del modello - le immagini dei prodotti catalogo verrebbero richiamate da Adobe Commerce tramite Fastly, di cui verrà discusso in seguito nella memorizzazione in cache di queste immagini)
 - File HTML (per pagine modificate raramente: pagina termini e condizioni, ecc.)
@@ -84,12 +86,12 @@ L’esempio seguente memorizza in cache le ultime 100 opzioni di ricerca con fac
 com.adobe.cq.commerce.core.search.services.SearchFilterService:true:100:3600
 ```
 
-La richiesta, comprese tutte le intestazioni e le variabili http personalizzate, deve corrispondere esattamente affinché la cache possa essere &quot;hit&quot; e per evitare una chiamata ripetuta ad Adobe Commerce. Una volta impostata, è importante notare che non è possibile annullare manualmente la validità della cache. Questo potrebbe significare, quindi, che se una nuova categoria viene aggiunta in Adobe Commerce, non inizierà a essere visualizzata nella navigazione finché il tempo di scadenza impostato nella cache precedente non è scaduto e la richiesta GraphQL non viene aggiornata. Lo stesso vale per i facet di ricerca. Tuttavia, dati i vantaggi in termini di prestazioni che questa memorizzazione in cache offre, in genere si tratta di un compromesso accettabile.
+La richiesta, incluse tutte le intestazioni e le variabili http personalizzate, deve corrispondere esattamente affinché la cache possa essere &quot;hit&quot; e per evitare una chiamata ripetuta ad Adobe Commerce. Una volta impostata, è importante notare che non è possibile annullare manualmente la validità della cache. Questo potrebbe significare, quindi, che se una nuova categoria viene aggiunta in Adobe Commerce, non inizierà a essere visualizzata nella navigazione finché il tempo di scadenza impostato nella cache precedente non è scaduto e la richiesta GraphQL non viene aggiornata. Lo stesso vale per i facet di ricerca. Tuttavia, dati i vantaggi in termini di prestazioni che questa memorizzazione in cache offre, in genere si tratta di un compromesso accettabile.
 
 Le opzioni di caching di cui sopra possono essere impostate utilizzando la console di configurazione AEM OSGi in &quot;GraphQL Client Configuration Factory&quot;. Ogni voce di configurazione della cache può essere specificata con il seguente formato:
 
 ```
-• NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
+* NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
     › NAME (String): name of the cache
     › ENABLE (true|false): enables or disables that cache entry
     › MAXSIZE (Integer): maximum size of the cache (in number of entries)
@@ -98,7 +100,7 @@ Le opzioni di caching di cui sopra possono essere impostate utilizzando la conso
 
 ## Memorizzazione in cache ibrida: richieste GraphQL lato client all’interno delle pagine del dispatcher memorizzate nella cache
 
-È anche possibile un approccio ibrido alla memorizzazione in cache delle pagine: una pagina CIF può contenere componenti che richiederebbero sempre le informazioni più recenti da Adobe Commerce direttamente dal browser del cliente. Questo può essere utile per specifiche aree della pagina all’interno di un modello che sono importanti per essere tenuti aggiornati con informazioni in tempo reale: prezzi dei prodotti all’interno di un PDP, ad esempio. Se i prezzi cambiano frequentemente a causa della corrispondenza dinamica dei prezzi, tali informazioni possono essere configurate in modo da non essere memorizzate nella cache del dispatcher, ma possono essere recuperate lato client nel browser del cliente da Adobe Commerce direttamente tramite API GraphQL con componenti web AEM CIF.
+È anche possibile un approccio ibrido alla memorizzazione in cache delle pagine: una pagina CIF può contenere componenti che richiederebbero sempre le informazioni più recenti da Adobe Commerce direttamente dal browser del cliente. Questo può essere utile per specifiche aree della pagina all’interno di un modello che sono importanti per essere tenuti aggiornati con informazioni in tempo reale: prezzi dei prodotti all’interno di un PDP, ad esempio. Se i prezzi cambiano frequentemente a causa della corrispondenza dinamica dei prezzi, tali informazioni possono essere configurate per non essere memorizzate nella cache del dispatcher, ma i prezzi possono essere recuperati lato client nel browser del cliente da Adobe Commerce direttamente tramite API GraphQL con componenti web AEM CIF.
 
 Questo può essere configurato tramite le impostazioni dei componenti AEM: per informazioni sui prezzi nelle pagine dell’elenco dei prodotti, puoi configurarlo nel modello dell’elenco dei prodotti, selezionando il componente dell’elenco dei prodotti nelle impostazioni della pagina e selezionando l’opzione &quot;carica prezzi&quot;. Lo stesso approccio funzionerebbe per i livelli delle scorte.
 
@@ -108,7 +110,7 @@ I metodi di cui sopra devono essere utilizzati solo nel caso in cui sia necessar
 
 Componenti dati dinamici specifici all’interno delle pagine non devono essere memorizzati in cache e richiederanno sempre una chiamata GraphQL ad Adobe Commerce, ad esempio per il carrello e chiamate attraverso le pagine di pagamento. Queste informazioni sono specifiche per un utente e cambiano costantemente a causa dell’attività del cliente sul sito, ad esempio aggiungendo prodotti al carrello.
 
-I risultati delle query GraphQL non devono essere memorizzati nella cache per i clienti connessi se la progettazione del sito darebbe risposte diverse in base al ruolo dell’utente. Ad esempio, puoi creare più gruppi di clienti e impostare prezzi di prodotto diversi o una visibilità della categoria di prodotto diversa per ciascun gruppo. La memorizzazione nella cache dei risultati di questo tipo può causare la visualizzazione dei prezzi di un altro gruppo di clienti o la visualizzazione di categorie non corrette da parte dei clienti.
+I risultati di GraphQL Query non devono essere memorizzati nella cache per i clienti connessi se la progettazione del sito darebbe risposte diverse in base al ruolo dell’utente. Ad esempio, puoi creare più gruppi di clienti e impostare prezzi di prodotto diversi o una visibilità della categoria di prodotto diversa per ciascun gruppo. La memorizzazione nella cache dei risultati di questo tipo può causare la visualizzazione dei prezzi di un altro gruppo di clienti o la visualizzazione di categorie non corrette da parte dei clienti.
 
 ## I parametri di tracciamento nella cache del dispatcher AEM verranno ignorati
 
@@ -132,6 +134,6 @@ Dovrebbe quindi essere configurato in modo da ignorare tutti i parametri per imp
 
 ## Limiti dei lavoratori MPM sui dispatcher
 
-Le impostazioni dei processi di lavoro MPM rappresentano una configurazione avanzata del server HTTP Apache che richiederebbe test approfonditi per ottimizzare la CPU e la RAM disponibili nel Dispatcher. Tuttavia, nell’ambito di questo white paper si suggerisce di aumentare ServerLimit e MaxRequestWorkers a un livello supportato dalla CPU e dalla RAM disponibili nel server, quindi di aumentare MinSpareThreads e MaxSpareThreads a un livello corrispondente a MaxRequestWorkers.
+Le impostazioni dei processi di lavoro MPM rappresentano una configurazione avanzata del server HTTP Apache che richiederebbe test approfonditi per ottimizzare la CPU e la RAM disponibili nel Dispatcher. Tuttavia, nell&#39;ambito di questo white paper si suggerisce di aumentare ServerLimit e MaxRequestWorkers a un livello supportato dalla CPU e dalla RAM disponibili del server, quindi di aumentare MinSpareThreads e MaxSpareThreads a un livello corrispondente a MaxRequestWorkers.
 
 Questa configurazione lascerebbe Apache HTTP su un’&quot;impostazione di fattibilità completa&quot;, ovvero una configurazione ad alte prestazioni per server con RAM significativa e più core CPU. Questa configurazione produrrà i migliori tempi di risposta possibili da Apache HTTP mantenendo le connessioni aperte persistenti pronte per servire le richieste e rimuoverà qualsiasi ritardo nella generazione di nuovi processi in risposta a improvvisi picchi di traffico, come durante le vendite flash.
