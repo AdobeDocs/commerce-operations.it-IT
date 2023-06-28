@@ -2,7 +2,9 @@
 title: Recommendations di ottimizzazione delle prestazioni
 description: Segui queste raccomandazioni per ottimizzare le prestazioni dell’implementazione di Adobe Commerce.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 821ef18c1b0f00a6b9574be968ad76f0c230335c
+feature: Cloud
+topic: Performance
+source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 0%
@@ -127,7 +129,7 @@ Ad esempio, nel 2020, Adobe ha rilasciato un’ottimizzazione per il livello Red
 
 Molti problemi derivano dai dati, inclusi modelli di dati non validi, dati non strutturati correttamente e dati senza indice.
 
-Va bene se stai testando alcune connessioni, ma viene visto in produzione quando arriva il traffico reale ed è qui che entra in gioco la lentezza. È molto importante che gli integratori di sistemi sappiano come progettare un modello di dati (in particolare per gli attributi del prodotto), evitare di aggiungere attributi non necessari e mantenere attributi obbligatori che influiscono sulla logica di business (come prezzi, disponibilità delle scorte e ricerca).
+Va bene se stai testando alcune connessioni, ma viene visto in produzione quando arriva il traffico reale ed è qui che entra in gioco la lentezza. È molto importante che gli integratori di sistemi sappiano come progettare un modello di dati (in particolare per gli attributi del prodotto), evitare di aggiungere attributi non necessari e mantenere attributi obbligatori che influiscono sulla logica di business (come prezzi, disponibilità di stock e ricerca).
 
 Per gli attributi che non influiscono sulla logica di business ma che devono ancora essere presenti nella vetrina, combinali in alcuni attributi (ad esempio, il formato JSON).
 

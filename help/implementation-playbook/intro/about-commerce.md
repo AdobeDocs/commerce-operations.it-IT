@@ -2,7 +2,8 @@
 title: Informazioni su Adobe Commerce
 description: Descrizione di Adobe Commerce
 exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
-source-git-commit: 219cbe839e40afa19b3754a9d5929074ed238920
+feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Delivery
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -15,7 +16,7 @@ Adobe Commerce offre ai commercianti la possibilità di creare esperienze di acq
 
 ## Fornire esperienze di e-commerce significative
 
-Combinando contenuti e commerce per soddisfare le richieste dei clienti relative a interazioni di brand impeccabili, le funzioni di Adobe Commerce si evolvono sempre tenendo presente il consumatore. Adobe Commerce consente ai brand di essere proprietari dell’esperienza del cliente, creare contenuti personalizzati e promozioni e fornire un percorso di acquisto fluido attraverso le seguenti funzioni:
+Combinando contenuti e commerce per soddisfare le esigenze dei clienti relative alle interazioni impeccabili con il marchio, le funzioni di Adobe Commerce sono in continua evoluzione tenendo conto delle esigenze del consumatore. Adobe Commerce consente ai brand di essere proprietari dell’esperienza del cliente, creare contenuti personalizzati e promozioni e fornire un percorso di acquisto fluido attraverso le seguenti funzioni:
 
 - Page Builder
 - Recommendations del prodotto

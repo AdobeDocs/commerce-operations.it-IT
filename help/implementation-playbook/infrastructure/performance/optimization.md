@@ -2,7 +2,8 @@
 title: Ottimizzazione delle prestazioni
 description: Scopri tutto su ottimizzazione delle prestazioni e passaggi da intraprendere per rivedere le prestazioni dell’implementazione di Adobe Commerce.
 exl-id: 506ef2cc-c6fd-4401-afa5-a71e7b9871e6
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -24,7 +25,7 @@ Le prestazioni sono un argomento importante. Quando gli utenti rilevano un sito 
 
 L’impatto di un’esperienza lenta è solitamente definito da due indicatori e ogni fattore può essere causato da tonnellate di motivi.
 
-Il TTFB (High Time-to-first-byte) è generalmente considerato un indicatore che definisce la velocità di risposta del server. Il tempo proviene non solo dall’esecuzione del codice sorgente per la gestione della richiesta, ma può anche essere influenzato dai seguenti fattori:
+L&#39;High Time-to-first-byte (TTFB) è solitamente considerato un indicatore che definisce la velocità di risposta del server. Il tempo proviene non solo dall’esecuzione del codice sorgente per la gestione della richiesta, ma può anche essere influenzato dai seguenti fattori:
 
 - Ricerca DNS
 - Query lente dal livello DB

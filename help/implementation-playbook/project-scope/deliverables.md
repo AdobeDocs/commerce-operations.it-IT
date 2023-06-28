@@ -2,7 +2,8 @@
 title: Deliverables
 description: Scopri i diversi servizi forniti associati a un’implementazione di Adobe Commerce.
 exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -39,7 +40,7 @@ Questo è un elenco completo dei fornitori di terze parti da integrare nella sol
 
 ## Dati prodotto
 
-Una rassegna dei prodotti, dei prezzi e dei dati di inventario esistenti di un’organizzazione, nonché un piano per mappare gli attributi dei dati utilizzati per popolare Adobe Commerce.
+Una revisione dei prodotti, dei prezzi e dei dati di inventario esistenti di un’organizzazione, nonché un piano per mappare gli attributi dei dati utilizzati per popolare Adobe Commerce.
 
 ## Piano di progetto
 

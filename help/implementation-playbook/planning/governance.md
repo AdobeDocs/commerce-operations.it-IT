@@ -2,7 +2,8 @@
 title: Governance del progetto
 description: Applica i consigli di governance dei nostri progetti alla tua implementazione di Adobe Commerce.
 exl-id: adf53a2a-1673-441a-84d3-4cdda47d6aa5
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Governance dei progetti
 
-La governance dei progetti è una funzione di supervisione allineata alla struttura di governance dell’organizzazione e comprende il ciclo di vita del progetto. Fornisce al project manager e al team struttura, processi, modelli decisionali e strumenti per la gestione e il controllo del progetto, garantendo al contempo la corretta esecuzione del progetto. La governance dei progetti è un elemento cruciale, soprattutto per i progetti complessi e strategici.
+La governance del progetto è una funzione di supervisione allineata con la struttura di governance dell’organizzazione e include il ciclo di vita del progetto. Fornisce al project manager e al team struttura, processi, modelli decisionali e strumenti per la gestione e il controllo del progetto, garantendo al contempo la corretta esecuzione del progetto. La governance dei progetti è un elemento cruciale, soprattutto per i progetti complessi e strategici.
 
 Il modello di governance definisce, documenta e comunica pratiche personalizzate ed efficaci per fornire un metodo completo di controllo del progetto e fornire visibilità periodica a ogni livello per garantire il successo. Contiene un quadro per prendere decisioni; definisce ruoli, responsabilità e responsabilità per la realizzazione del progetto; e governa l&#39;efficacia. La struttura di governance si estende dal team di esecuzione alla gestione esecutiva, definendo le attività, il reporting, l’escalation e il flusso di informazioni.
 

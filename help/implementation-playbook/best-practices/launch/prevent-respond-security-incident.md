@@ -2,10 +2,9 @@
 title: Prevenire e rispondere a un problema di sicurezza
 description: Scopri le best practice per evitare incidenti di sicurezza e rispondere a tali problemi nel progetto Adobe Commerce on cloud infrastructure.
 role: Admin, Developer, Leader, User
-feature-set: Commerce
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 0%

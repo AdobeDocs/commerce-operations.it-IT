@@ -2,10 +2,9 @@
 title: Best practice per la configurazione degli attributi del prodotto
 description: Scopri come ottimizzare le prestazioni di Adobe Commerce limitando il numero di attributi di prodotto, opzioni di attributi e set di attributi
 role: User, Admin
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Catalogs
 exl-id: 81783a4c-bc82-4733-bee3-0154cf03079a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
@@ -21,7 +20,6 @@ ht-degree: 0%
    - Per Adobe Commerce versione 2.4.2 e successive, configura fino a 1500 attributi di prodotto
 - **Opzioni degli attributi del prodotto**-Configurare fino a 100 opzioni di attributo per ciascun attributo
 - **Set di attributi del prodotto**-Configurare un massimo di 1000 set di attributi _
-
 >[!NOTE]
 >
 >Gli attributi del prodotto specificano le funzioni che si applicano a livello globale a tutti i prodotti. Le opzioni dell’attributo del prodotto sono personalizzazioni per specificare le funzioni applicabili a prodotti specifici.

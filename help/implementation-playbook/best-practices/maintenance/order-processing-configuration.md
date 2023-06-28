@@ -3,9 +3,8 @@ title: Best practice di configurazione per l’elaborazione degli ordini
 description: Scopri le best practice di configurazione per migliorare le prestazioni di pagamento ed elaborazione degli ordini.
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -33,17 +32,17 @@ I passaggi per abilitare l’elaborazione asincrona dell’ordine dipendono dall
 
 - Per Adobe Commerce su infrastrutture cloud e siti locali in modalità di produzione, utilizza il seguente comando CLI di Magento per abilitare l’indicizzazione asincrona:
 
-   ```php
-   php bin/magento config:set dev/grid/async_indexing 1
-   ```
+  ```php
+  php bin/magento config:set dev/grid/async_indexing 1
+  ```
 
 - Per i siti Adobe Commerce locali in modalità predefinita o Produzione, abilita l’indicizzazione asincrona aggiornando la configurazione delle Impostazioni griglia in Amministratore.
 
-   Consulta [Abilita aggiornamenti pianificati della griglia e reindicizzazione](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
+  Consulta [Abilita aggiornamenti pianificati della griglia e reindicizzazione](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
 
-   >[!WARNING]
-   >
-   >Prima di aggiornare l’ambiente di produzione, verifica sempre le modifiche alla configurazione nell’ambiente di staging.
+  >[!WARNING]
+  >
+  >Prima di aggiornare l’ambiente di produzione, verifica sempre le modifiche alla configurazione nell’ambiente di staging.
 
 ## Informazioni aggiuntive
 

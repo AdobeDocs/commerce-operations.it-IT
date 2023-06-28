@@ -2,7 +2,8 @@
 title: Approccio di consegna e pianificazione
 description: Utilizza l’approccio consigliato da Dell per pianificare e implementare Adobe Commerce.
 exl-id: ee2918d6-0d97-4f02-8e8f-b88bc999cd22
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 È importante comprendere l&#39;intero ambito di un progetto prima di iniziare l&#39;implementazione, proprio come avere un piano per fornire una soluzione puntuale, nel rispetto del budget e che soddisfi le tue esigenze. Ciò richiede sia l’identificazione di un blueprint infallibile per la progettazione e l’implementazione della soluzione, sia l’esecuzione di tale blueprint misurando al contempo il successo.
 
-Si tratta di un impegno da parte dell’intero team che inizia dall’ideazione iniziale e termina solo dopo il lancio. E anche se questo è un aspetto del processo orientato ai dettagli e a volte noioso, il lavoro che si inserisce nella pianificazione e nella governance rende gli ostacoli molto più facili da superare.
+Si tratta di un impegno da parte dell&#39;intero team che inizia dall&#39;ideazione iniziale e termina solo dopo il lancio. E anche se questo è un aspetto del processo orientato ai dettagli e a volte noioso, il lavoro che si inserisce nella pianificazione e nella governance rende gli ostacoli molto più facili da superare.
 
 I progetti commerciali strategici possono essere realizzati con diversi approcci e diverse metodologie di gestione dei progetti. Tuttavia, consigliamo un approccio ibrido Agile per una distribuzione corretta e un’esecuzione ottimale.
 

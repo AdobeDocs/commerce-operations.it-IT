@@ -2,7 +2,8 @@
 title: La conoscenza è potere
 description: Scopri perché è così importante che tutti nella tua organizzazione investano nella tua implementazione di Adobe Commerce.
 exl-id: a3929586-5ad2-4b30-8bc4-84da8f8b9eb5
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 0%

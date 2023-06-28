@@ -2,7 +2,8 @@
 title: Principali parti interessate
 description: Esamina le principali parti interessate coinvolte in un’implementazione Adobe Commerce e chi possiede diversi aspetti del progetto.
 exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -38,6 +39,6 @@ La maggior parte delle implementazioni commerce richiedono diverse piattaforme p
 
 ## Chi è lo sponsor esecutivo?
 
-Digital Commerce 360 ha riportato che la ragione numero uno per cui le organizzazioni non hanno ancora investito in una nuova trasformazione del commercio è perché mancano di supporto alla leadership. La misura in cui il team di leadership è coinvolto è cruciale per il successo di un brand. È consigliato il supporto completo dai seguenti ruoli, incluse riunioni ricorrenti ai punti di controllo per tutta la durata di un’implementazione di Commerce:
+Digital Commerce 360 ha riportato che la ragione numero uno per cui le organizzazioni non hanno ancora investito in una nuova trasformazione commerciale è perché mancano di supporto alla leadership. La misura in cui il team di leadership è coinvolto è cruciale per il successo di un brand. È consigliato il supporto completo dai seguenti ruoli, incluse riunioni ricorrenti ai punti di controllo per tutta la durata di un’implementazione di Commerce:
 
 - L&#39;intera suite C

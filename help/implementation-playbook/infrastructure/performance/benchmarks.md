@@ -2,7 +2,8 @@
 title: Benchmark delle prestazioni
 description: Rivedi i risultati dei benchmark delle prestazioni per le implementazioni Adobe Commerce in hosting sull’infrastruttura cloud Adobe.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -49,13 +50,13 @@ Le misurazioni delle prestazioni si basano sulle attività quotidiane simulate d
    - 3000 utenti simultanei in vetrina
    - Imposta su 30% di hit della cache CDN
 
-      L’utilizzo effettivo del livello di cache aumenta il numero di visualizzazioni di pagina all’ora.
+     L’utilizzo effettivo del livello di cache aumenta il numero di visualizzazioni di pagina all’ora.
 
 - **API GRAPHQL**
    - 250 thread simultanei
    - Imposta su 0% di hit della cache CDN
 
-      I tempi di risposta migliorano in modo significativo con un livello di caching davanti a GraphQL.
+     I tempi di risposta migliorano in modo significativo con un livello di caching davanti a GraphQL.
 
 - **Admin Web**
    - 500 utenti simultanei

@@ -3,9 +3,8 @@ title: Best practice per i blocchi di contenuto privati
 description: Scopri le best practice per configurare blocchi di contenuto privati per ottimizzare le prestazioni della vetrina.
 role: Developer
 feature: Best Practices
-feature-set: Commerce
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%

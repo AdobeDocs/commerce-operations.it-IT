@@ -2,10 +2,9 @@
 title: Best practice per la configurazione delle promozioni
 description: Scopri le best practice per configurare regole di vendita e codici coupon per ottimizzare le prestazioni di Commerce Store.
 role: User
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Price Rules, Shopping Cart
 exl-id: 6e177836-b8da-4e55-842c-e12ff54ffaf5
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%

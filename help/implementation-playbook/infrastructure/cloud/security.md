@@ -2,7 +2,8 @@
 title: Sicurezza dell’infrastruttura cloud
 description: Scopri come proteggere Adobe Commerce sull’infrastruttura cloud.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
-source-git-commit: 50882bebb4712e6cf095a81297684f37e15b1a6b
+feature: Cloud, Security
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 0%
@@ -23,7 +24,7 @@ Fastly fornisce una protezione CDN e Distributed Denial of Service (DDoS). Fastl
 
 ## Firewall applicazione Web (WAF)
 
-Fastly Web Application Firewall (WAF) viene utilizzato per fornire ulteriore protezione. Il WAF basato su cloud di Fastly utilizza regole di terze parti provenienti da fonti commerciali e open source, come il set di regole di base OWASP. Inoltre, vengono utilizzate regole specifiche per Adobe Commerce. I clienti sono protetti da attacchi chiave a livello di applicazione, inclusi attacchi di iniezione e input dannosi, vulnerabilità cross-site scripting, exfiltrazione dei dati, violazioni del protocollo HTTP e altre minacce OWASP Top 10.
+Fastly Web Application Firewall (WAF) viene utilizzato per fornire ulteriore protezione. Fastly’s WAF basato su cloud utilizza regole di terze parti da fonti commerciali e open source, come il set di regole di base OWASP. Inoltre, vengono utilizzate regole specifiche per Adobe Commerce. I clienti sono protetti da attacchi chiave a livello di applicazione, inclusi attacchi di iniezione e input dannosi, vulnerabilità cross-site scripting, exfiltrazione dei dati, violazioni del protocollo HTTP e altre minacce OWASP Top 10.
 
 Le regole WAF vengono aggiornate da Adobe Commerce nel caso in cui vengano rilevate nuove vulnerabilità che consentono a Managed Services di &quot;risolvere virtualmente&quot; i problemi di sicurezza prima delle patch software. Il Fastly WAF non fornisce servizi di limitazione della velocità o di rilevamento di bot. Se lo desideri, i clienti possono concedere in licenza un servizio di rilevamento di bot di terze parti compatibile con Fastly.
 
@@ -45,7 +46,7 @@ Managed Services esegue regolarmente test di penetrazione del cloud system Adobe
 
 ## Gateway di pagamento
 
-Adobe Commerce richiede integrazioni del gateway di pagamento in cui i dati della carta di credito vengono trasmessi direttamente dal browser del consumatore al gateway di pagamento. I dati della scheda non sono mai disponibili in nessuno degli ambienti Adobe Commerce Pro plan Managed Services. Le azioni sulle transazioni eseguite dall’applicazione e-commerce vengono completate utilizzando un riferimento alla transazione proveniente dal gateway.
+Adobe Commerce richiede integrazioni del gateway di pagamento in cui i dati della carta di credito vengono passati direttamente dal browser del consumatore al gateway di pagamento. I dati della scheda non sono mai disponibili in nessuno degli ambienti Adobe Commerce Pro plan Managed Services. Le azioni sulle transazioni eseguite dall’applicazione e-commerce vengono completate utilizzando un riferimento alla transazione proveniente dal gateway.
 
 ## applicazione Adobe Commerce
 
@@ -53,7 +54,7 @@ Adobe verifica regolarmente il codice dell’applicazione principale per individ
 
 - Veracode Static and Dynamic Scanning
 - Analisi del codice sorgente RIPS
-- Servizi di scansione delle vulnerabilità di Trustwave e Alert Logic
+- Servizi di scansione delle vulnerabilità di Trustwave e Logica di avviso
 - Burp Suite Pro
 - OWASPZAP
 - eSqlMap
@@ -92,7 +93,7 @@ Il RGPD è un quadro giuridico che definisce le linee guida per la raccolta e il
 
 Essenzialmente, i visitatori devono essere informati dei dati che il sito raccoglie da loro e acconsentire esplicitamente alla raccolta di informazioni. I siti devono informare i visitatori in caso di violazione dei dati personali da essi detenuti.
 
-L’esercente o la società che gestisce il sito deve inoltre disporre di un responsabile della protezione dei dati dedicato che sovrintende alla sicurezza dei dati del sito e questa persona (o il team di gestione del sito web) deve essere disponibile per il contatto nel caso in cui un visitatore richieda la cancellazione dei propri dati.
+Il commerciante o la società che gestisce il sito deve inoltre disporre di un responsabile della protezione dei dati dedicato che sovrintende alla sicurezza dei dati del sito e questa persona (o il team di gestione del sito web) deve essere disponibile per il contatto nel caso in cui un visitatore richieda la cancellazione dei propri dati.
 
 Il RGPD richiede inoltre che tutte le informazioni personali identificabili (come nomi, razza e data di nascita) raccolte siano rese anonime o pseudonime.
 
