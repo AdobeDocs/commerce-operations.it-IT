@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 28358ee2ebadfcbf12c67e667cbbd27599a28a80
+source-git-commit: 6299aa825c04a5afd31728e763269cee46cfe513
 workflow-type: tm+mt
-source-wordcount: '12912'
+source-wordcount: '13230'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,22 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per il Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.34 {#v1-1-34}
+
+* **ACSD-52277** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.7) - Corregge il problema se un utente amministratore non viene reindirizzato correttamente dopo aver selezionato una visualizzazione store durante la creazione di un nuovo ordine in Admin.
+* **ACSD-50813** (per Adobe Commerce >=2.4.5 &lt;2.4.7): è stato risolto il problema che impediva all’amministratore di aggiungere prodotti in bundle contenenti una barra nello SKU con [!UICONTROL Add Products by SKU] all&#39;ordine di amministrazione.
+* **ACSD-51630** (per Adobe Commerce e Magenti Open Source >=2.4.3 &lt;2.4.7): è stato risolto il problema che rallentava il download delle pagine di amministrazione a causa della grande quantità di messaggi di sistema.
+* **ACSD-51853** (per Adobe Commerce e Magento Open Source >=2.4.1 &lt;2.4.7) - Corregge il problema per cui gli stili di testo copiati non vengono applicati quando si utilizza [!UICONTROL Page Builder].
+* **ACSD-52160** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7): risolve il problema per cui il risultato della convalida del prodotto in base alla regola del prezzo del carrello non veniva valutato correttamente in base alla condizione della regola &quot;Se un articolo viene TROVATO/NON TROVATO nel carrello con Tutte/Qualsiasi di queste condizioni true&quot;.
+* **ACSD-51636** (per Adobe Commerce >=2.4.5 &lt;2.4.7): è stato risolto il problema che impediva all’amministratore della società di aggiungere nuovi utenti dalla sezione account cliente nonostante l’esistenza di tutti i ruoli e le autorizzazioni necessari.
+* **ACSD-51739** (per Adobe Commerce >=2.4.6 &lt;2.4.7): risolve il problema della restituzione di un errore quando il `structure_id` è richiesto in una richiesta CompanyTeam GraphQL.
+* **ACSD-51857** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.7): risolve il problema della lentezza delle prestazioni del `aggregate_sales_report_bestsellers_data` report cron su sales_order e `sales_order_item` tabelle di database dovute al modo in cui è stata scritta la query di dati principale.
+* **ACSD-48448** (per Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.7) - Corregge il problema relativo a una situazione di tipo &quot;race condition&quot; che si verifica durante l’annullamento dell’ordine e causa la duplicazione della voce `inventory_reservation` tabella.
+* **ACSD-52689** (per Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.6): è stato risolto il problema che impediva il caricamento delle immagini nell’archiviazione Amazon S3 utilizzando l’API REST.
+* **B2B-2674** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.7) - Aggiungi funzionalità di caching alla query 1customAttributeMetadata1 GraphQL.
+* Sono state aggiunte nuove versioni di ACSD-44938.
+* Sono stati aggiunti requisiti per ACSD-46988.
 
 ## v1.1.33 {#v1-1-33}
 
@@ -523,7 +539,7 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 * **MDVA-36464** (*per Adobe Commerce >=2.4.0 &lt;=2.4.2*) - Corregge il problema per il quale la configurazione della notifica e-mail non funziona a livello di visualizzazione store.
 * **MDVA-36138** (*per Adobe Commerce ^2.3.2*) - Corregge il problema che causa la mancata rettifica del prezzo di spedizione e la visualizzazione del prezzo di spedizione completo ai clienti se non tutti gli articoli nel carrello sono idonei per la regola del carrello di spedizione gratuito.
 * **MDVA-36424** (*per Adobe Commerce >=2.3.0 &lt;=2.3.3-p1 || >=2,0,0 &lt;2,2,0*) - Corregge il problema per cui le immagini multimediali allegate agli elementi del Page Builder scompaiono quando il contenuto viene modificato ripetutamente, se l&#39;URL di base del back-end è diverso dall&#39;URL di base dello storefront.
-* **MDVA-35984** (*per Adobe Commerce ^2.4.0*) - Risolve il problema relativo alla quantità di prodotto errata e alla quantità vendibile dopo la creazione di più spedizioni simultanee per lo stesso prodotto.
+* **MDVA-35984** (*per Adobe Commerce ^2.4.0*) - Corregge il problema relativo alla quantità di prodotto errata e alla quantità vendibile dopo la creazione di più spedizioni simultanee per lo stesso prodotto.
 
 ## v1.0.20 {#v1-0-20}
 
