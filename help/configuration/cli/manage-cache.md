@@ -2,9 +2,9 @@
 title: Gestire la cache
 description: Gestisci i tipi di cache e visualizza lo stato della cache.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -119,15 +119,19 @@ Risultato di esempio:
 
 ## Pulisci e svuota tipi di cache
 
+>[!NOTE]
+>
+>La cache di più pagine può essere invalidata simultaneamente e automaticamente **_senza_** entità che modificano. Ad esempio, quando un prodotto nel catalogo viene assegnato a una categoria o quando [!UICONTROL related product rule] è stato modificato.
+
 Per rimuovere gli elementi obsoleti dalla cache, puoi _pulita_ o _scaricamento_ tipi di cache:
 
 - La pulizia di un tipo di cache comporta l’eliminazione di tutti gli elementi solo dai tipi di cache di Commerce abilitati. In altre parole, questa opzione non influisce su altri processi o applicazioni perché pulisce solo la cache utilizzata da Commerce.
 
-   I tipi di cache disattivati non vengono puliti.
+  I tipi di cache disattivati non vengono puliti.
 
-   >[!TIP]
-   >
-   >Pulisci sempre la cache dopo aver aggiornato le versioni di Magenti Open Source o Adobe Commerce, aggiornato da Magenti Open Source ad Adobe Commerce o installato B2B per Adobe Commerce o qualsiasi modulo.
+  >[!TIP]
+  >
+  >Pulisci sempre la cache dopo aver aggiornato le versioni di Magenti Open Source o Adobe Commerce, aggiornato da Magenti Open Source ad Adobe Commerce o installato B2B per Adobe Commerce o qualsiasi modulo.
 
 - Lo svuotamento di un tipo di cache svuota la memoria cache, il che potrebbe influire su altre applicazioni di processi che utilizzano lo stesso spazio di archiviazione.
 
