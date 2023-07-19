@@ -2,9 +2,9 @@
 title: Configurare più siti web, store e visualizzazioni dello store in Admin
 description: Configura ulteriori siti web, store e visualizzazioni dello store nell’amministratore di Commerce.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 5860f5327003372909c425c13c6d03166288d903
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -172,3 +172,8 @@ Per modificare l&#39;URL di base predefinito per la visualizzazione archivio:
    >Se imposti un URL di base per Adobe Commerce sull’infrastruttura cloud, devi sostituire il primo punto con tre trattini. Ad esempio, se l’URL di base è `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, immetti `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`
 
 1. Clic **Salva configurazione**.
+
+
+>[!INFO]
+>
+>Il codice di visualizzazione del sito Web, dello store e dello store può includere solo lettere (a-z o A-Z), numeri (0-9) e caratteri di sottolineatura (_). Inoltre, il primo carattere deve essere una lettera. Se si utilizzano maiuscole o minuscole, per la corrispondenza interna non viene fatta distinzione tra maiuscole e minuscole, in modo da consentire l’override delle impostazioni di configurazione tramite le variabili di ambiente. Consulta [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](../reference/override-config-settings.md#environment-variables).

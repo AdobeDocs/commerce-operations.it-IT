@@ -2,9 +2,9 @@
 title: Impostare i valori di configurazione
 description: Scopri come impostare i valori di configurazione e modificare i valori bloccati nell’amministratore.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 064be78a16142fc18bf64256eafde4b14c3ad529
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Per impostare un valore di configurazione, è necessario conoscere almeno uno de
 - Percorso di configurazione
 - Per impostare un valore di configurazione per un determinato ambito, è necessario conoscere il codice dell&#39;ambito.
 
-   Per impostare un valore di configurazione per l&#39;ambito predefinito, non è necessario eseguire alcuna operazione.
+  Per impostare un valore di configurazione per l&#39;ambito predefinito, non è necessario eseguire alcuna operazione.
 
 ### Trova il percorso di configurazione
 
@@ -289,3 +289,8 @@ Risultato:
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
+
+>[!INFO]
+>
+>Il codice ambito può includere solo lettere (a-z o A-Z), numeri (0-9) e caratteri di sottolineatura (_). Inoltre, il primo carattere deve essere una lettera. Se si utilizzano maiuscole o minuscole durante la creazione di una nuova vista sito web o store, internamente la corrispondenza non farà distinzione tra maiuscole e minuscole per consentire l’override delle impostazioni di configurazione tramite le variabili di ambiente. Consulta [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](../reference/override-config-settings.md#environment-variables).
+
