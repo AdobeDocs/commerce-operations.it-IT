@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6299aa825c04a5afd31728e763269cee46cfe513
+source-git-commit: 7649f4ffb0a04053d9a674aae7c29eb09ed02006
 workflow-type: tm+mt
-source-wordcount: '13230'
+source-wordcount: '13737'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,32 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per il Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.35 {#v1-1-35}
+
+* **ACSD-51899** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.7) - Corregge il problema per cui l’indirizzo di spedizione predefinito nella fase di spedizione del pagamento viene compilato automaticamente con un indirizzo di prelievo in-store selezionato in precedenza.
+* **ACSD-52041** (per Adobe Commerce e Magenti Open Source >=2.4.4 &lt;2.4.7) - Corregge il problema se il messaggio di errore: *[ERRORE] [!DNL Page Builder] è stato eseguito il rendering per 5 secondi senza rilasciare blocchi.* viene visualizzato nel browser Chrome quando si salva il contenuto modificato con [!DNL Page Builder].
+* **ACSD-52095** (per Adobe Commerce e Magenti Open Source >=2.3.7 &lt;2.4.6) - Corregge il problema se `manage_stock` il valore veniva erroneamente impostato su 0 nel file CSV dopo l’esportazione del prodotto.
+* **ACSD-51358** (per Adobe Commerce >=2.4.5 &lt;2.4.7): è stato risolto il problema che causava la rimozione di un aggiornamento pianificato senza data di fine, con la conseguente rimozione di altri aggiornamenti pianificati per la stessa entità.
+* **ACSD-48070** (per Adobe Commerce >=2.3.7 &lt;2.4.7): risolve il problema se la modifica di un aggiornamento pianificato attiva un’eccezione.
+* **ACSD-51890** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.7) - Corregge il problema se [!UICONTROL Submit review] può essere cliccato più volte senza [!DNL Google reCAPTCHA] Convalida v3.
+* **ACSD-51984** (per Adobe Commerce >=2.4.5 &lt;2.4.7) - Corregge il problema se non è selezionata *[!UICONTROL Use Default Value]* e *[!UICONTROL non-default product field]* I valori non vengono salvati per la seconda visualizzazione del sito Web, dello store e dello store.
+* **ACSD-52398** (per Adobe Commerce e Magenti Open Source >=2.4.0 &lt;2.4.7) - Corregge l’errore *La quantità richiesta non è disponibile* ciò si verifica quando si tenta di aggiornare la quantità di un prodotto nel carrello nella vetrina.
+* **ACSD-52786** (per Adobe Commerce e Magenti Open Source >=2.4.5 &lt;2.4.6): risolve il problema se una condizione della regola del catalogo *SKU è* si applica a tutti i prodotti che iniziano con lo SKU specificato.
+* **ACSD-52921** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.7): risolve il problema relativo a un errore interno che si verificava se si richiedevano i dettagli del carrello a GraphQL in presenza di un prodotto configurabile esaurito nel carrello.
+* **ACSD-51683** (per Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7): risolve il problema che impediva l’aggiunta di un’opzione personalizzabile al carrello tramite GraphQL.
+* **ACSD-52133** (per Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7): risolve il problema che impediva il salvataggio di un account cliente dopo un aggiornamento.
+* **ACSD-52202** (per Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.7) - Corregge il problema per cui la quantità vendibile delle scorte predefinite viene erroneamente modificata in 0 quando le scorte non predefinite vengono modificate in 0 qtà per l&#39;evasione degli ordini.
+* **ACSD-51265** (per Adobe Commerce e Magenti Open Source >=2.4.2 &lt;2.4.7) - Risolve il problema con `catalog_product_price` prestazioni di reindicizzazione quando nel sistema sono presenti troppi prodotti in bundle.
+* **ACSD-52831** (per Adobe Commerce >=2.3.7 &lt;2.4.7): risolve il problema che impediva ai clienti di inserire ordini di preventivo negoziabili quando [!DNL Google reCAPTCHA v3 Invisible] è abilitato.
+* **ACSD-51845** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7): è stato risolto il problema che impediva l’aggiornamento in blocco asincrono dell’API REST dei prodotti successivi con prezzi di livello e set di attributi diversi.
+* **ACSD-52815** (per Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7) - Corregge il problema per cui l’input per il campo della quantità di un’origine non predefinita supporta solo fino a 6 cifre, a differenza di 8 per un titolo predefinito.
+* **ACSD-51149** (per Adobe Commerce >=2.3.7 &lt;2.4.7): è stato risolto il problema per cui l’Importazione pianificata con autorizzazioni di catalogo abilitate invalida gli indicizzatori e quindi effettua il flushing della cache in base alla cron.
+* **ACSD-50815** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.6): risolve il problema se la quantità decimale per un prodotto semplice non può essere utilizzata per una nuova opzione Prodotto in bundle.
+* Versioni aggiornate per ACSD-47803.
+* Titolo aggiornato per ACSD-51892.
+* Aggiornamento di ACSD-51379.
+* Aggiornamento di ACSD-49970-v2.
 
 ## v1.1.34 {#v1-1-34}
 
@@ -539,7 +565,7 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 * **MDVA-36464** (*per Adobe Commerce >=2.4.0 &lt;=2.4.2*) - Corregge il problema per il quale la configurazione della notifica e-mail non funziona a livello di visualizzazione store.
 * **MDVA-36138** (*per Adobe Commerce ^2.3.2*) - Corregge il problema che causa la mancata rettifica del prezzo di spedizione e la visualizzazione del prezzo di spedizione completo ai clienti se non tutti gli articoli nel carrello sono idonei per la regola del carrello di spedizione gratuito.
 * **MDVA-36424** (*per Adobe Commerce >=2.3.0 &lt;=2.3.3-p1 || >=2,0,0 &lt;2,2,0*) - Corregge il problema per cui le immagini multimediali allegate agli elementi del Page Builder scompaiono quando il contenuto viene modificato ripetutamente, se l&#39;URL di base del back-end è diverso dall&#39;URL di base dello storefront.
-* **MDVA-35984** (*per Adobe Commerce ^2.4.0*) - Corregge il problema relativo alla quantità di prodotto errata e alla quantità vendibile dopo la creazione di più spedizioni simultanee per lo stesso prodotto.
+* **MDVA-35984** (*per Adobe Commerce ^2.4.0*) - Risolve il problema relativo alla quantità di prodotto errata e alla quantità vendibile dopo la creazione di più spedizioni simultanee per lo stesso prodotto.
 
 ## v1.0.20 {#v1-0-20}
 
