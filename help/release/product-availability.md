@@ -1,11 +1,11 @@
 ---
 title: Disponibilità del prodotto
-description: Scopri le funzioni di Adobe Commerce attualmente disponibili, come accedervi e verificarne la compatibilità con specifiche versioni di Adobe Commerce.
+description: Scopri le funzioni di Adobe Commerce attualmente supportate e verificane la compatibilità con specifiche versioni di Adobe Commerce.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: dc5a36dc9bc6cee0e9708bb24d3c5ab4b8be5186
+source-git-commit: ca9b786cdaa8b2122d94c24b9edad02d43128c42
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 0%
+source-wordcount: '517'
+ht-degree: 10%
 
 ---
 
@@ -13,29 +13,41 @@ ht-degree: 0%
 
 La tabella seguente descrive lo stato di disponibilità del software Adobe Commerce e dove reperirlo, in particolare per il software disponibile al di fuori del pacchetto convenzionale Adobe Commerce Composer.
 
-| Prodotto | Disponibilità | Come ottenerlo |
-|-|-|-|
-| **Adobe Commerce 2.4.7-beta1** | Disponibile ora | [Compositore](../installation/composer.md) \| [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html) |
-| **Strumenti per l’infrastruttura cloud di Adobe Commerce (o ECE-Tools)** | Disponibile ora | [Compositore](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) \| [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html) |
-| **Eventi di Adobe I/O per Adobe Commerce** | Disponibile ora | [Compositore](https://developer.adobe.com/commerce/events/get-started/installation/) \| [Note sulla versione](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
-| **Sales Channel Amazon** | Disponibile ora per Adobe Commerce versioni 2.4.x e 2.3.x (Stati Uniti, Canada, Messico e Regno Unito) | [Commerce Marketplace](https://marketplace.magento.com/magento-module-amazon.html) \| [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) \| [Guida utente](https://experienceleague.adobe.com/docs/commerce-channels/amazon/overview.html) |
-| **Mesh API per Adobe Developer App Builder** | Disponibile ora | [Node.js](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) \| [Note sulla versione](https://developer.adobe.com/graphql-mesh-gateway/gateway/release-notes/) |
-| **Audience Activation** | Disponibile ora | [Commerce Marketplace](https://marketplace.magento.com/magento-audiences.html) \| [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) |
-| **Catalog Service per Adobe Commerce** | Disponibile ora | [Panoramica](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) \| [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html?lang=en) |
-| **Channel Manager** | Disponibile ora | [Commerce Marketplace](https://marketplace.magento.com/magento-channel-manager.html) \| [Guida utente](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) |
-| **Connettore Experience Platform** | Disponibile ora | [Commerce Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html) \| [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html?lang=en) \| [Guida utente](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html?lang=en) |
-| **Live Search** | Disponibile ora | [Commerce Marketplace](https://marketplace.magento.com/magento-live-search.html) \| [Documentazione per gli sviluppatori](https://developer.adobe.com/commerce/services/live-search/) \| [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) \| [Guida utente](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html) |
-| **Servizi di pagamento** | Disponibile ora | [Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html) \| [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html) \| [Guida utente](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html) |
-| **Recommendations del prodotto** | Disponibile ora | [Commerce Marketplace](https://marketplace.magento.com/magento-product-recommendations.html) \| [Documentazione per gli sviluppatori](https://devdocs.magento.com/recommendations/product-recs.html) \| [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) \| [Guida utente](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html) |
-| **PWA Studi** | Disponibile ora | [GitHub](https://github.com/magento/pwa-studio) \| [Note sulla versione](https://github.com/magento/pwa-studio/releases) \| [Documentazione per gli sviluppatori](https://developer.adobe.com/commerce/pwa-studio/) |
-| **Pagamento rapido** | Disponibile ora | [Commerce Marketplace](https://marketplace.magento.com/magento-quick-checkout.html) \| [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html) \| [Guida utente](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html) |
-| **Indicizzazione dei prezzi SaaS** | Disponibile ora | [Compositore](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html#modules) \| [Guida utente](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html) |
-| **Evasione store per Adobe Commerce** | Disponibile ora | [Commerce Marketplace](https://marketplace.magento.com/store-fulfillment-magento-walmart.html) \| [Guida utente](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/introduction.html) |
+I servizi e le estensioni vengono testati sull’ultima versione rilasciata di Commerce al momento del rilascio dei prodotti.
 
-## Compatibilità
+Le versioni supportate sono state completamente testate da Adobe. Le versioni supportate sono disponibili per l’assistenza tramite l’Assistenza clienti. Le versioni precedenti possono funzionare correttamente, ma non sono ufficialmente supportate.
 
-Utilizza questa sezione per scoprire di più sui moduli Adobe Commerce che sono stati separati dal processo di rilascio di base. Questo consente agli Adobi di rilasciare più rapidamente le iterazioni di questi moduli ai commercianti disposti ad accettare qualche rischio in cambio di un accesso precedente alle nuove funzioni.
+## Adobe di estensioni create
 
-La tabella seguente mostra lo stato di rilascio delle versioni dell’estensione relative ad Adobe Commerce.
+Queste estensioni Adobe Commerce sono state disaccoppiate dalla base di codice principale di Adobe Commerce. Questo consente agli Adobi di rilasciare più rapidamente le iterazioni di queste estensioni ai commercianti che sono disposti ad accettare un po’ di rischi in cambio di un accesso precedente a nuove funzioni.
 
-{{$include /help/_includes/templated/release/compatibility-mde.md}}
+La tabella seguente mostra il supporto delle versioni per ogni estensione rispetto alla versione di Adobe Commerce.
+
+| **Versioni di Adobe Commerce** | 2.4.7-beta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
+|-|-|-|-|-|-|-|
+| _Eventi di Adobe I/O per Adobe Commerce_ | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | - | [Compositore](https://developer.adobe.com/commerce/events/get-started/installation/) <br/>[Note sulla versione](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
+| _B2B_ | 1.3.5 | 1.4.0 | 1.3.4 | 1.3.3 | 1.3.2 | [Compositore](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
+| _Channel Manager_ | - | 2.0.0 | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
+| _Sales Channel Amazon_ | - | 4.1.0+ | 4.3.0+ | 4.3.0+ | 4.3.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
+| _Connettore Experience Platform_ | 3.0.0-beta1 | 1.0.0+ | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
+| _Evasione store per Adobe Commerce_ | - | 1.4.0 | 1.2.0+ | 1.2.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
+
+## Servizi Commerce
+
+[Servizi Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) sono una suite di funzioni ospitate dagli Adobi che, insieme all’istanza Commerce, forniscono funzionalità affidabili e tempi di risposta rapidi.
+
+Si consiglia ai commercianti di utilizzare la versione più recente di un servizio per garantire la massima stabilità e funzionalità. La documentazione descrive la versione attualmente rilasciata.
+
+* Adobe Commerce Services è attualmente compatibile con Commerce 2.4.4 e versioni successive. Si consiglia ai commercianti di utilizzare la versione più recente del servizio.
+* I servizi sono considerati compatibili con le versioni precedenti di Commerce 2.4.x, ma non sono ufficialmente supportati.
+* I servizi non sono compatibili con Commerce 2.3.x, ad eccezione di Product Recommendations 3.3.7 e versioni precedenti.
+
+La tabella seguente mostra il supporto delle versioni per ciascun servizio relativo alla versione di Adobe Commerce.
+
+| **Versioni di Adobe Commerce** | 2.4.7-beta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
+|-|-|-|-|-|-|-|
+| _Catalog Service per Adobe Commerce_ | 1.9 | 1.9 | 1.9 | 1.9 | - | [Panoramica](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html) |
+| _Live Search_ | 3.01 | 3.01 | 3.01 | 3.01 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)<br/>[Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) |
+| _Servizi di pagamento_ | 2.10 | 2.10 | 2.10 | 2.10 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)<br/> [Note sulla versione](https://commercemarketplace.adobe.com/magento-payment-services.html) |
+| _Recommendations del prodotto_ | 5.0 | 5.0 | 5.0 | 5.0 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-product-recommendations.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
+| _Pagamento rapido_ | - | 1.0.0+ | 1.2.0+ | 1.0.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-quick-checkout.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
