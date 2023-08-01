@@ -1,7 +1,7 @@
 ---
-source-git-commit: 79293c564f9fcded146916e9e3bfd27a28424940
+source-git-commit: 2c196e0a0522dc12cc53fdad4ffec66f8e1f6e22
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,86 @@ ht-degree: 0%
 ## Novità
 
 Scopri la nuova documentazione e gli aggiornamenti significativi della documentazione esistente.
+
+### 27 luglio 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ha riprogettato <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html">disponibilità del prodotto</a> per migliorare il layout e la leggibilità.</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6ed2a3e42cd0b85aae29652b8e36acbbda1b9e72">6ed2a3</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 25 luglio 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Pubblicato <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">note sulla versione</a> per il rilascio del pacchetto 1.1.35 Quality Patches Tool (QPT).</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ac0f04b7a04c5c7d3b3880b8231ffece05718558">ac0f04</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 11 luglio 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta una descrizione di un nuovo problema noto che influisce sulle etichette delle regole di vendita di staging per Adobe Commerce <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">2.4.5.</a> e <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">2.4.6.</a>.</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9e833dad884fa6146bb5e6ce6dd5ebcb23208b80">9e833d</a> (commit)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
+
+### 30 giugno 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Pubblicato <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">note sulla versione</a> per il rilascio del pacchetto 1.1.34 Quality Patches Tool (QPT).</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9fcbc03a1b52f8aad35f2347868b266228264fad">9fcbc0</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 23 giugno 2023
 
@@ -129,66 +209,6 @@ Scopri la nuova documentazione e gli aggiornamenti significativi della documenta
 </td>
       <td>principale-aggiornamento</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/051fe7707cef593027bcff93ae39adfc5cf1af3c">051fe7</a> (commit)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 25 maggio 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Sorgente</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/uct.html"><code class="language-plaintext highlighter-rouge">bin/uct</code> Riferimento CLI</a>.</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d00e8cb4ebce9cbda0218ef75f44d2ff0ec45bad">d00e8c</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 12 maggio 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Sorgente</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Sono stati aggiunti dettagli sull’infrastruttura alla sezione <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/performance/benchmarks.html">benchmark delle prestazioni</a>.</p>
-</td>
-      <td>principale-aggiornamento</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/762bc2b9bdd19d92707525044a4178b6e89e4a3d">762 bc2</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 4 maggio 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Sorgente</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Pubblicato <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">note sulla versione</a> per il rilascio del pacchetto 1.1.31 Quality Patches Tool (QPT).</p>
-</td>
-      <td>principale-aggiornamento</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7f30857b612d027dfce26fac1f947006f28ecfa6">7f3085</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
