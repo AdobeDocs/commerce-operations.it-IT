@@ -3,16 +3,16 @@ title: Modifica la directory principale dei documenti per migliorare la sicurezz
 description: Impedisci l'accesso non autorizzato basato su browser al file system locale di Adobe Commerce o di Magento Open Source.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 32dd5005422b98923ce1bdf6c3fb3f55c2ec15bd
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
 
 # Modifica la directory principale dei documenti per migliorare la sicurezza
 
-In un’installazione standard con un server web Apache, Adobe Commerce e Magenti Open Source vengono installati nella directory principale web predefinita: `/var/www/html/magento2`.
+In un’installazione standard con un server web Apache, Adobe Commerce e Magento Open Source vengono installati nella directory principale web predefinita: `/var/www/html/magento2`.
 
 Il `magento2/` la directory contiene quanto segue:
 
@@ -49,14 +49,14 @@ server {
 
 ## Prima di iniziare
 
-Per completare questa esercitazione, è necessario accedere a un&#39;installazione funzionante in esecuzione su un [LAMPADA](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stack:
+Per completare questa esercitazione, è necessario accedere a un&#39;installazione funzionante in esecuzione su uno stack LAMP:
 
 - Linux
 - Apache (2.4+)
 - MySQL (5.7+)
 - PHP (7.4)
 - Elasticsearch (7.x) o OpenSearch (1.2)
-- Adobe Commerce o Magenti Open Source (2.4+)
+- Adobe Commerce o Magento Open Source (2.4+)
 
 >[!NOTE]
 >
