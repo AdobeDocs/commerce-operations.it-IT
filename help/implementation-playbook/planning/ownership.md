@@ -3,7 +3,7 @@ title: Responsabilità e proprietà
 description: Definisci i ruoli e le responsabilità del progetto per garantire un’implementazione corretta di Adobe Commerce.
 exl-id: 206b6e3b-6dee-442e-a2ba-7867b2494b75
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 87c1570e8d215d6eaf233d50fc7e3432f66290fc
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -15,7 +15,6 @@ ht-degree: 0%
 Durante l’esecuzione di un grande progetto, all’inizio sembra che tutto vada bene. La tabella di marcia del progetto è dettagliata e completa, con tappe chiare. Sono in atto piani di risorse e impegni con le parti interessate. Tuttavia, presto le cose potrebbero iniziare a crollare, con scadenze mancate e compiti dimenticati.
 
 Questo accade spesso a causa della mancanza di chiarezza sui ruoli e sulle responsabilità dei progetti. Ruoli e responsabilità chiari sono un fattore critico di successo per qualsiasi progetto. Senza di essi, i progetti possono rapidamente deragliarsi e le parti interessate sono lasciate tentare di gestire attraverso metodi eccezionali con il superamento del tempo/budget.
-
 
 ## Come collaboriamo collettivamente?
 
