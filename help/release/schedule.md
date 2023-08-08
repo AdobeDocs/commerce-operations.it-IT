@@ -1,54 +1,90 @@
 ---
 title: Pianificazione della versione
-description: Scopri quando sono pianificate le versioni specifiche di Adobe Commerce per la versione beta, pre-release e la disponibilità generale.
+description: Scopri quando Adobe pianifica di annunciare il rilascio di nuove funzioni sostanziali per Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
 
 # Pianificazione della versione
 
-Adobe cerca continuamente di trovare il giusto equilibrio tra la semplicità e la prevedibilità degli aggiornamenti dei prodotti e la rapidità con cui questi vengono implementati. Nel corso dell&#39;ultimo anno, abbiamo perfezionato il modo in cui forniamo software per supportare questo equilibrio. Per ulteriori informazioni, consulta [criterio di controllo delle versioni](versioning-policy.md).
+Adobe cerca continuamente di trovare il giusto equilibrio tra la necessità di rendere gli aggiornamenti dei prodotti semplici e prevedibili e di offrire miglioramenti e nuove funzioni agli utenti meno esperti (vedi [criterio di controllo delle versioni](versioning-policy.md)). Lo scopo di questo programma è quello di fornire le date in cui Adobe pianifica di annunciare il rilascio di nuove funzionalità sostanziali. Queste caratteristiche possono variare nel corso dell’anno. Tuttavia, Adobe rilascia regolarmente e in modo continuo miglioramenti per strumenti di estensibilità, infrastrutture e prodotti (servizi) SaaS tra le date specificate in questa pagina.
 
-Adobe rilascia patch funzionali e di sicurezza per ogni riga di rilascio supportata di Adobe Commerce.
+Versioni di Adobe [patch](versioning-policy.md#patch-release) per ogni riga di rilascio supportata dell’applicazione core Adobe Commerce PHP. Le versioni patch offrono l’opportunità di aggiornare la base di codice principale per mantenere la piattaforma sicura, affidabile e performante. Le funzioni di sono indipendenti dalla base di codice principale e sono disponibili tramite [modulo esterno, estensione, strumento o servizio web](versioning-policy.md#extensibility-infrastructure-and-services-release).
+
+>[!NOTE]
+>
+>A partire dal 2024, Adobe non fornisce più l’accesso &quot;pre-release&quot; alle patch. In alternativa, per la versione 2.4.7 e successive, i clienti di Adobe Commerce possono utilizzare [versioni beta](beta.md) accedere al codice di disponibilità pregenerale per scopi di test e sviluppo. L’accesso pre-release è ancora pianificato per le seguenti versioni del 2023:
+>
+> - 8 agosto 2023: l’accesso in anteprima al 25 luglio 2023
+> - 10 ottobre 2023: accesso in anteprima il 26 settembre 2023
 
 Nella tabella seguente sono riportate le date dei rilasci pianificati (le date sono soggette a modifiche):
 
-| Versione | Versioni | Pre-release | Disponibilità generale |
-|--------------------------------------------------------------------|-------------------------------------------------|--------------------|----------------------|
-| Versione con funzioni di gennaio 2023 | \-\- | \-\- | 17 gennaio 2023 |
-| Versione di marzo 2023 con funzione + patch + versione con patch di sicurezza | 2.4.6.<sup>1</sup><br>2.4.5-p2<br>2.4.4-p3 | 28 febbraio 2023 | 14 marzo 2023 |
-| Versione di aprile 2023 | \-\- | \-\- | 25 aprile 2023 |
-| Giugno 2023 Versione con funzione + patch beta + patch di sicurezza | 2.4.7-beta1<br>2.4.6-p1<br>2.4.5-p3<br>2.4.4-p4 | 30 maggio 2023 | 13 giugno 2023 |
-| Agosto 2023: versione della patch per funzioni e sicurezza | 2.4.6-p2<br>2,4,5-p4<br>2.4.4-p5 | 25 luglio 2023 | 8 agosto 2023 |
-| Ottobre 2023: rilascio di patch con funzione + beta + rilascio di patch di sicurezza | 2.4.7-beta2<br>2.4.6-p3<br>2,4,5-p5<br>2.4.4-p6 | 26 settembre 2023 | 10 ottobre 2023 |
-
-{style="table-layout:auto"}
-
-<sup>\-\- Indica elementi non applicabili a questa versione.</sup><br>
-<sup>1 versione beta pianificata per gennaio 2023</sup><br>
-
->[!TIP]
->
->Le versioni patch di sicurezza e patch offrono l’opportunità di aggiornare la base di codice principale per mantenere la piattaforma sicura, affidabile e performante. Le versioni di funzioni vengono rilasciate a mesi alterni. Le versioni di funzioni sono indipendenti dalla base di codice principale e sono disponibili tramite modulo o estensione esterni. Eventuali aggiornamenti alle funzioni indipendenti esistenti vengono rilasciati durante i periodi di rilascio delle funzioni e non vengono eseguiti automaticamente se la funzione è già implementata.
-
-## Accesso in anteprima
-
-La versione non definitiva è il codice di disponibilità generale disponibile per i commercianti Adobe Commerce e per tutti i partner due settimane prima della disponibilità generale. Consente una distribuzione più rapida del codice prima della disponibilità generale.
-
-Per ulteriori informazioni, consulta [versioni beta](beta.md).
-
-## Tipi di rilascio
-
-- **Versioni patch**: aggiornamenti all&#39;applicazione Adobe Commerce di base che includono correzioni di sicurezza, conformità, prestazioni e qualità ad alta priorità.
-
-   >[!IMPORTANT]
-   >
-   >Ad Adobe verranno rilasciate versioni beta delle patch (&quot;versioni beta&quot;), che sono versioni con disponibilità pre-generale delle funzioni di Adobe Commerce rese pubbliche per tutti i clienti Adobe Commerce e i partner Adobe. I rilasci beta possono contenere difetti e sono forniti &quot;COSÌ COM’È&quot; senza alcuna garanzia. Adobe non avrà alcun obbligo di mantenere, correggere, aggiornare, modificare, modificare o supportare in altro modo (tramite i servizi di supporto Adobe o in altro modo) le versioni beta. Si consiglia al Cliente di prestare cautela e di non fare affidamento in alcun modo sul corretto funzionamento o sulle prestazioni delle versioni beta e/o di qualsiasi documentazione o materiale di accompagnamento. Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del Cliente.
-
-- **Versioni patch della versione beta**—Aggiornamenti del codice di disponibilità non generale per l&#39;applicazione Adobe Commerce di base che includono correzioni di sicurezza, conformità, prestazioni e qualità ad alta priorità. Consente un tempo aggiuntivo per rivedere il codice e i componenti interessati.
-- **Versioni delle patch di sicurezza**: aggiornamenti solo per la sicurezza dell’applicazione Adobe Commerce, rilasciati per garantire la sicurezza e la conformità dei commercianti.
-- **Versioni future**- Nuove funzioni e aggiornamenti di funzionalità forniti come servizi indipendenti, separati dalle versioni patch. Alcuni esempi includono servizi come Product Recommendations e Live Search, moduli indipendenti come PWA Studi e Inventory management (MSI) e aggiornamenti ai servizi e all’infrastruttura cloud.
+<table>
+<thead>
+  <tr>
+    <th>Disponibilità generale</th>
+    <th>Funzioni</th>
+    <th>PHP Core</th>
+  </tr>
+</thead>
+<tfoot>
+   <tr>
+      <td colspan="3"><strong>Legenda</strong>:
+         <ul>
+            <li><strong><img alt="Icona della funzione B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong>- Nuove funzioni, miglioramenti e correzioni di bug per l’estensione B2B per Adobe Commerce.</li>
+            <li><strong><img alt="Icona della funzione di estensibilità" src="../assets/icons/brackets.svg"></img> Estensibilità</strong>: nuovi strumenti e servizi per sviluppatori per l'estensibilità fuori processo forniti indipendentemente dalle versioni delle patch. Ad esempio, l’SDK dell’interfaccia di amministrazione, gli eventi di Adobe I/O per Commerce e API Mesh.</li>
+            <li><strong><img alt="Icona della funzione di infrastruttura" src="../assets/icons/servers.svg"></img> Infrastruttura</strong>—Nuove funzioni e miglioramenti apportati ad Adobe Commerce sull’infrastruttura cloud e ai pacchetti Cloud Tools Suite for Commerce, progettati per distribuire e gestire installazioni e aggiornamenti Adobe Commerce sulla piattaforma Cloud.</li>
+            <li><strong><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> Patch</strong>- Aggiornamenti all'applicazione principale Adobe Commerce PHP che includono correzioni di sicurezza, conformità, prestazioni e qualità ad alta priorità.</li>
+            <li><strong><img alt="Icona della funzione Servizi" src="../assets/icons/feature.svg"></img> Servizi</strong>- Nuove funzioni SaaS distribuite indipendentemente dalle versioni delle patch. Ad esempio Catalog Service, Live Search e Product Recommendations.</li>
+         </ul>
+      </td>
+   </tr>
+</tfoot>
+<tbody>
+  <tr>
+    <td>8 agosto 2023</td>
+    <td><img alt="Icona della funzione B2B" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Icona della funzione di estensibilità" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Estensibilità</a><br><img alt="Icona della funzione di infrastruttura" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastruttura</a><br><img alt="Icona della funzione Servizi" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Servizi</a></td>
+    <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patch di sicurezza</a>: 2,4.6-p2, 2,4.5-p4, 2,4.4-p5</td>
+  </tr>
+  <tr>
+    <td>10 ottobre 2023</td>
+    <td><img alt="Icona della funzione B2B" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Icona della funzione di estensibilità" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Estensibilità</a><br><img alt="Icona della funzione di infrastruttura" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastruttura</a><br><img alt="Icona della funzione Servizi" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Servizi</a></td>
+    <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta patch</a>: 2,4,7-beta2<br> <img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patch di sicurezza</a>: 2,4,6-p3, 2,4,5-p5, 2,4,4-p6</td>
+  </tr>
+  <tr>
+    <td>13 febbraio 2024</td>
+    <td><img alt="Icona della funzione B2B" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Icona della funzione di estensibilità" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Estensibilità</a><br><img alt="Icona della funzione di infrastruttura" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastruttura</a><br><img alt="Icona della funzione Servizi" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Servizi</a></td>
+    <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patch di sicurezza</a>: 2,4.6-p4, 2,4.5-p6, 2,4.4-p7</td>
+  </tr>
+  <tr>
+    <td>19 marzo 2024</td>
+    <td>--</td>
+    <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta patch</a>: 2,4,7-beta3</td>
+  </tr>
+  <tr>
+    <td>9 aprile 2024</td>
+    <td><img alt="Icona della funzione B2B" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Icona della funzione di estensibilità" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Estensibilità</a><br><img alt="Icona della funzione di infrastruttura" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastruttura</a><br><img alt="Icona della funzione Servizi" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Servizi</a></td>
+    <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.7</a></strong>:<ul><li>Miglioramenti delle prestazioni</li><li>Miglioramenti della qualità</li><li>Miglioramenti di sicurezza</li><li>Aggiornamenti delle dipendenze di terze parti</li></ul><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patch di sicurezza</a>: 2,4.6-p5, 2,4.5-p7, 2,4.4-p8</td>
+  </tr>
+  <tr>
+    <td>11 giugno 2024</td>
+    <td><img alt="Icona della funzione B2B" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Icona della funzione di estensibilità" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Estensibilità</a><br><img alt="Icona della funzione di infrastruttura" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastruttura</a><br><img alt="Icona della funzione Servizi" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Servizi</a></td>
+    <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patch di sicurezza</a>: 2,4.7-p1, 2,4.6-p6, 2,4.5-p8, 2,4.4-p9</td>
+  </tr>
+  <tr>
+    <td>13 agosto 2024</td>
+    <td><img alt="Icona della funzione B2B" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Icona della funzione di estensibilità" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Estensibilità</a><br><img alt="Icona della funzione di infrastruttura" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastruttura</a><br><img alt="Icona della funzione Servizi" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Servizi</a></td>
+    <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patch di sicurezza</a>: 2,4.7-p2, 2,4.6-p7, 2,4.5-p9, 2,4.4-p10</td>
+  </tr>
+  <tr>
+    <td>8 ottobre 2024</td>
+    <td><img alt="Icona della funzione B2B" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Icona della funzione di estensibilità" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Estensibilità</a><br><img alt="Icona della funzione di infrastruttura" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastruttura</a><br><img alt="Icona della funzione Servizi" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Servizi</a></td>
+    <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta patch</a>: 2.4.8-beta1<br><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patch di sicurezza</a>: 2,4.7-p3, 2,4.6-p8, 2,4.5-p10, 2,4.4-p11</td>
+  </tr>
+</tbody>
+</table>

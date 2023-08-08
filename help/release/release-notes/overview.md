@@ -1,15 +1,15 @@
 ---
-title: Note sulla versione di Adobe Commerce e Magenti Open Source
+title: Note sulla versione di Adobe Commerce e Magento Open Source
 description: Scopri dove trovare informazioni per specifiche versioni di Adobe Commerce e di Magento Open Source.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 073eec9ce841febf7653c82543eac57068576d03
+source-git-commit: c371ee59e4f1efcc947d0bbd189a892d8f32a5b7
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
-# Note sulla versione di Adobe Commerce e Magenti Open Source
+# Note sulla versione di Adobe Commerce e Magento Open Source
 
 Utilizza la tabella seguente per trovare le note sulla versione e le informazioni importanti relative a versioni specifiche di tutti i prodotti, i servizi e gli strumenti di Adobe Commerce.
 
@@ -20,13 +20,13 @@ Utilizza la tabella seguente per trovare le note sulla versione e le informazion
 <table>
   <tbody>
     <tr>
-      <td><strong>ADOBE COMMERCE e MAGENTI OPEN SOURCE</strong>
-        <p>Scopri gli ultimi miglioramenti introdotti in Adobe Commerce e Magenti Open Source, inclusi miglioramenti, sicurezza, correzioni di bug e problemi noti.</p>
+      <td><strong>ADOBE COMMERCE e MAGENTO OPEN SOURCE</strong>
+        <p>Scopri gli ultimi miglioramenti introdotti in Adobe Commerce e Magento Open Source, inclusi miglioramenti, sicurezza, correzioni di bug e problemi noti.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Modifiche non compatibili con le versioni precedenti</a></li>
-            <li><a href="commerce/2-4-7.md">Adobe Commerce</a></li>
-            <li><a href="open-source/2-4-7.md">Magento Open Source</a></li>
-            <li><a href="security/2-4-6-p1.md">Patch di sicurezza</a></li>
+            <li><a href="commerce/overview.md">Adobe Commerce</a></li>
+            <li><a href="open-source/overview.md">Magento Open Source</a></li>
+            <li><a href="security/overview.md">Patch di sicurezza</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Bollettino sulla sicurezza degli Adobi</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B per Adobe Commerce</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory management</a></li>

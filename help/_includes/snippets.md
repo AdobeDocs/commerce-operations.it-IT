@@ -1,7 +1,7 @@
 ---
-source-git-commit: 74cb55f4552bc1b2dace37d9a6f7e68939d1c262
+source-git-commit: 20add0a748e8df38dff48a779c63e1177d2a022d
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -52,3 +52,9 @@ ht-degree: 0%
 >[!NOTE]
 >
 >A partire dalla versione 2.3.2, assegneremo e pubblicheremo i numeri CVE (Common Vulnerabilities and Exposures) indicizzati con ogni bug di sicurezza segnalato da parti esterne. Questo consente agli utenti di identificare più facilmente le vulnerabilità non risolte nella loro distribuzione. Per ulteriori informazioni sugli identificatori CVE, consulta [CVE](https://cve.mitre.org/).
+
+## Altre informazioni sulla versione {#other-release-info}
+
+>[!NOTE]
+>
+>Anche se il codice per i miglioramenti e le correzioni di bug descritti in queste note sulla versione è fornito in bundle con Adobe Commerce, molti di questi progetti (ad esempio, B2B, Page Builder e Progressive Web Application (PWA) Studio) vengono rilasciati in modo indipendente. Le correzioni di bug per questi progetti sono documentate nelle informazioni sulla versione specifiche per il progetto, disponibili nella documentazione di ciascun progetto. Consulta [panoramica sulla versione del prodotto](/help/release/release-notes/overview.md).

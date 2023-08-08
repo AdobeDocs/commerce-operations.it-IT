@@ -2,9 +2,9 @@
 title: Criterio di rilascio
 description: Scopri i diversi tipi di versioni di Adobe Commerce, tra cui versioni secondarie, patch di sicurezza, funzionalità, hotfix, patch singole e patch personalizzate.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe Commerce e utilizzo del Magento Open Source [controllo delle versioni sema
       - Correzione di bug di sicurezza
       - Miglioramento della sicurezza
 - **Versione patch BETA**—2.4.7-beta1
-- **Versione funzione**
+- **Estensibilità, infrastruttura e servizi**
 - **Hotfix**
 - **Singola patch**
 - **Patch personalizzata**
@@ -62,9 +62,9 @@ Le versioni di disponibilità pre-generale delle funzioni di Adobe Commerce sono
 
 I rilasci beta possono contenere difetti e sono forniti &quot;COSÌ COM’È&quot; senza alcuna garanzia. Adobe non avrà alcun obbligo di mantenere, correggere, aggiornare, modificare, modificare o supportare in altro modo (tramite i servizi di supporto Adobe o in altro modo) le versioni beta. Si consiglia ai clienti di prestare cautela e di non fare affidamento in alcun modo sul corretto funzionamento o sulle prestazioni delle versioni beta e/o di qualsiasi documentazione o materiale di accompagnamento. Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del Cliente.
 
-## Versione funzione
+## Estensibilità, infrastruttura e servizi
 
-Le versioni delle funzioni contengono nuove funzioni e aggiornamenti delle funzioni forniti come servizi indipendenti, separati dalle versioni patch. Alcuni esempi includono servizi come Product Recommendations e Live Search, moduli indipendenti come PWA Studi e Inventory management (MSI) e aggiornamenti ai servizi e all’infrastruttura cloud.
+Versioni future che contengono nuove funzioni e aggiornamenti di funzionalità forniti come servizi indipendenti, separati dalle versioni patch. Alcuni esempi includono tecnologie di estensibilità come API Mesh and Eventing, prodotti SaaS come Product Recommendations e Live Search, moduli indipendenti come B2B e PWA Studi e aggiornamenti ai nostri servizi e infrastrutture di hosting cloud.
 
 ## Hotfix
 
