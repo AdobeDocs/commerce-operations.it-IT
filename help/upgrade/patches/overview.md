@@ -1,10 +1,10 @@
 ---
 title: Funzionamento delle patch
-description: Scopri i diversi tipi di patch per Adobe Commerce e Magenti Open Source e come funzionano.
+description: Scopri i diversi tipi di patch per Adobe Commerce e Magento Open Source e come funzionano.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 915cac8c8d436105c4ae25f95bcaefbe19cc50c1
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -51,9 +51,9 @@ Utilizza il [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/too
 
 ## Patch personalizzate
 
-A volte ci vuole un po’ di tempo perché il team ingegneristico Adobe includa una correzione di bug effettuata su GitHub in una versione di Adobe Commerce o Magenti Open Source Composer. Nel frattempo, puoi creare una patch da GitHub e utilizzare [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) per applicarlo all’installazione basata su Compositore.
+A volte ci vuole un po’ di tempo perché il team ingegneristico Adobe includa una correzione di bug effettuata su GitHub in una versione di Adobe Commerce o Magento Open Source Composer. Nel frattempo, puoi creare una patch da GitHub e utilizzare [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) per applicarlo all’installazione basata su Compositore.
 
-Utilizza il [riga di comando] o [Compositore] per applicare patch personalizzate.
+Utilizza il [riga di comando](apply.md#command-line) o [Compositore](apply.md#composer) per applicare patch personalizzate.
 
 Esistono diversi modi per creare file di patch personalizzati. L’esempio seguente si concentra sulla creazione di una patch da un commit Git noto.
 
@@ -96,4 +96,4 @@ index c8a6fef58d31..7d01c195791e 100644
 
 >[!NOTE]
 >
->Per applicare una patch a un progetto di infrastruttura cloud di Adobe Commerce, consulta [Applicare le patch](https://devdocs.magento.com/cloud/project/project-patch.html) nel _Guida al cloud_.
+>Per applicare una patch a un progetto di infrastruttura cloud di Adobe Commerce, consulta [Applicare le patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nel _Guida di Commerce su Cloud_.
