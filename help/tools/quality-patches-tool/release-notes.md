@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: aa52895b45363ca0fb3585f603bfe66a73803427
+source-git-commit: da0c85a9f1b0ac0a3176ca5f6ef5904834e8d37e
 workflow-type: tm+mt
-source-wordcount: '13735'
+source-wordcount: '13965'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,19 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per il Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.36 {#v1-1-36}
+
+* **ACSD-53239** (per Adobe Commerce e Magento Open Source >=2.4.3 &lt; 2.4.6): risolve il problema relativo alla pulizia di tutte le cache da parte dell’indicizzatore di inventario nella modalità Aggiorna in base a pianificazione.
+* **ACSD-50887** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.7): risolve il problema relativo alla proprietà dell’attributo del prodotto *[!UICONTROL Use in Search Results Layered Navigation]* può essere impostato su *Sì* senza *[!UICONTROL Use in search]* opzione impostata su *Sì*.
+* **ACSD-51846** (per Adobe Commerce e Magento Open Source >=2.4.3-p2 &lt;2.4.6) - Corregge il *Errore interno* problema che si verifica perché non tutti i livelli del payload dell’API REST sono convalidati.
+* **ACSD-52906** (per Adobe Commerce >=2.3.7 &lt;2.4.7): risolve il problema relativo all’impostazione errata del cookie X-Magento-Vary per i clienti connessi che appartengono allo stesso segmento di clienti, causando la memorizzazione nella cache non corretta di alcune pagine.
+* **ACSD-52736** (per Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.6): risolve il problema se una *Regola prezzo carrello* che include i requisiti per la quantità di prodotto configurabile non funziona come previsto.
+* **ACSD-47875** (per Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7): è stato risolto il problema che impediva agli utenti amministratori di aggiungere un prodotto al carrello di un cliente dall’amministratore per un particolare ambito di visualizzazione dello store con gestione dell’inventario.
+* **ACSD-53176** (per Adobe Commerce >=2.3.7 &lt;2.4.5) - Corregge il problema se *Regola prodotto correlata* con *è uno di* La condizione non corrisponde ai prodotti.
+* **ACSD-51666** (per Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7) - Corregge l’errore *La sessione è scaduta, effettua di nuovo l&#39;accesso.* questo accade dopo che un cliente tenta di accedere.
+* Sono state aggiunte nuove versioni per MDVA-39305-v2.
+* Sono stati aggiornati i requisiti per ACSD-19640.
 
 ## v1.1.35 {#v1-1-35}
 
