@@ -60,7 +60,7 @@ I nodi nei file di configurazione vengono uniti in base ai relativi XPath comple
 Algoritmo di unione delle applicazioni Commerce:
 
 - Se gli identificatori dei nodi sono uguali (o se non è definito alcun identificatore), tutto il contenuto sottostante nel nodo (attributi, nodi secondari e contenuto scalare) viene sovrascritto.
-- Se gli identificatori dei nodi non sono uguali, il nodo è un nuovo elemento secondario del nodo principale.
+- Se gli identificatori dei nodi non sono uguali, il nodo è un nuovo elemento figlio del nodo principale.
 - Se il documento originale ha più nodi con lo stesso identificatore, viene attivato un errore perché gli identificatori non possono essere distinti.
 
 Dopo aver unito i file di configurazione, il documento risultante contiene tutti i nodi dei file originali.

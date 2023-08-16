@@ -17,7 +17,7 @@ Adobe Commerce fornisce file di configurazione che consentono di personalizzare 
 - `app/etc/config.php` è il _condiviso_ file di configurazione.
 Questo file contiene l&#39;elenco dei moduli, dei temi e dei pacchetti di lingue installati, nonché le impostazioni di configurazione condivise.
 
-   Archivia il file nel controllo del codice sorgente e utilizzalo nei sistemi di sviluppo, staging e produzione.
+  Archivia il file nel controllo del codice sorgente e utilizzalo nei sistemi di sviluppo, staging e produzione.
 
 - `app/etc/env.php` contiene le impostazioni specifiche dell&#39;ambiente di installazione.
 

@@ -1,6 +1,6 @@
 ---
 title: Prerequisiti per i motori di ricerca
-description: Segui questi passaggi per installare e configurare il software dei motori di ricerca supportato per le installazioni locali di Adobe Commerce e Magenti Open Source.
+description: Segui questi passaggi per installare e configurare il software dei motori di ricerca supportato per le installazioni locali di Adobe Commerce e Magento Open Source.
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
 source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff

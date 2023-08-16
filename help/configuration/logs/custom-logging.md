@@ -22,9 +22,9 @@ L&#39;Adobe consiglia di utilizzare la registrazione centralizzata delle applica
 
 - Rende più efficace l’elaborazione dei dati dei registri utilizzando strumenti speciali, ad esempio [Logstash], [Logplex], o [fluente]senza impatto su un server di produzione.
 
-   >[!INFO]
-   >
-   >L’Adobe non consiglia né approva alcuna particolare soluzione di registrazione.
+  >[!INFO]
+  >
+  >L’Adobe non consiglia né approva alcuna particolare soluzione di registrazione.
 
 ## Conformità PSR-3
 

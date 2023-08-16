@@ -27,7 +27,7 @@ Per ulteriori informazioni sull&#39;utilizzo di parole non significative in Elas
 
 ## Configurare le parole d&#39;arresto
 
-Le parole d&#39;ordine si trovano nel `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory. Adobe Commerce e Magenti Open Source vengono forniti con un file CSV contenente i termini per le impostazioni internazionali predefinite e un file aggiuntivo, `stopwords.csv`, che contiene i caratteri di interruzione per le impostazioni internazionali non rappresentate da un altro file CSV.
+Le parole d&#39;ordine si trovano nel `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory. Adobe Commerce e Magento Open Source vengono forniti con un file CSV contenente i termini per le impostazioni internazionali predefinite e un file aggiuntivo, `stopwords.csv`, che contiene i caratteri di interruzione per le impostazioni internazionali non rappresentate da un altro file CSV.
 
 La durata predefinita per la cache dei file di parole non significative è di 15 minuti.
 
@@ -51,9 +51,9 @@ La durata predefinita per la cache dei file di parole non significative è di 15
 
    - Riga di comando: come proprietario del file system, immettere il comando seguente:
 
-      ```bash
-      php <magento_root>/bin/magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento cache:clean config
+     ```
 
 1. Controlla i risultati cercando i termini nella vetrina.
 
@@ -89,9 +89,9 @@ La durata predefinita per la cache dei file di parole non significative è di 15
 
    - Riga di comando: come proprietario del file system, immettere il comando seguente:
 
-      ```bash
-      php <magento_root>/bin/magento magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento magento cache:clean config
+     ```
 
 1. Controlla i risultati cercando i termini nella vetrina.
 

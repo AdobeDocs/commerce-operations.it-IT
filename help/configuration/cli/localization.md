@@ -92,7 +92,7 @@ Questa sezione illustra come creare un pacchetto per la lingua, che scrive i fil
 1. [Raccogliere e tradurre parole e frasi](#generate-a-translation-dictionary). (Il `--magento` è obbligatorio.)
 1. [Esegui il comando del pacchetto lingua](#run-the-language-package-command).
 1. [Creare directory e file](#create-directories-and-files).
-1. (Facoltativo) [Configurare più pacchetti per una lingua](#configure-multiple-packages-for-a-language).
+1. (Facoltativo.) [Configurare più pacchetti per una lingua](#configure-multiple-packages-for-a-language).
 
 ### Esegui il comando del pacchetto lingua
 

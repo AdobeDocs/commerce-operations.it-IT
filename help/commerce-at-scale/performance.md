@@ -1,6 +1,6 @@
 ---
 title: Ottimizzazione delle prestazioni AEM
-description: Ottimizza la configurazione Adobe Experience Manager predefinita per supportare carichi elevati su Adobe Commerce.
+description: Ottimizza la configurazione predefinita di Adobe Experience Manager per supportare carichi elevati su Adobe Commerce.
 exl-id: 923a709f-9048-4e67-a5b0-ece831d2eb91
 feature: Integration, Cache
 topic: Commerce, Performance
@@ -42,7 +42,7 @@ Alcune aree di un sito AEM/CIF/Adobe Commerce che possono essere impostate per e
 
 La configurazione del dispatcher predefinita utilizza l’impostazione /statfilelevel &quot;0&quot;; ciò significa che un singolo file &quot;.stat&quot; viene inserito nella directory principale di htdocs (directory principale dei documenti). Se viene apportata una modifica a una pagina o a un file nell’AEM, l’ora di modifica di questo singolo file stat viene aggiornata all’ora della modifica. Se l’ora è successiva all’ora di modifica della risorsa, Dispatcher considererà tutte le risorse invalidate e qualsiasi richiesta successiva di una risorsa invalidata attiverà una chiamata all’istanza Publish. In sostanza, con questa impostazione ogni attivazione invaliderà l’intera cache.
 
-Per qualsiasi sito, in particolare per i siti commerce con carico elevato, ciò comporterebbe un carico superfluo sul livello di pubblicazione AEM, in modo che l’intera struttura del sito venga invalidata con un solo aggiornamento di pagina.
+Per qualsiasi sito, in particolare per i siti commerce con carico elevato, ciò comporterebbe un carico superfluo sul livello di pubblicazione AEM affinché l’intera struttura del sito venga invalidata con un solo aggiornamento di pagina.
 
 È invece possibile modificare l’impostazione statfilelevel impostando un valore più alto, corrispondente alla profondità delle sottodirectory nella directory htdocs dalla directory principale dei documenti in modo che, quando un file che si trova a un determinato livello viene invalidato, vengano aggiornati solo i file a tale livello di directory .stat e inferiore.
 

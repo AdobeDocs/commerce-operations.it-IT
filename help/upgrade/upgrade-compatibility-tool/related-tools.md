@@ -21,8 +21,8 @@ Sono disponibili strumenti relativi al [!DNL Upgrade Compatibility Tool], che pu
 
 - **[!DNL AmpersandHQ]**: cerca i file che sono stati modificati come parte dell’aggiornamento e tenta di verificare se sono presenti sostituzioni nel sito. Questo ti consente di concentrarti sugli elementi che sono stati modificati e sono specifici del tuo sito. Consulta la [[!DNL AmpersandHQ] guida all’archivio](https://github.com/AmpersandHQ) per ulteriori informazioni.
 
-   >[!WARNING]
-   >
-   >[!DNL AmpersandHQ] non è uno strumento ufficiale di Adobe.
+  >[!WARNING]
+  >
+  >[!DNL AmpersandHQ] non è uno strumento ufficiale di Adobe.
 
-- **[!DNL Quality Patches Tool]**: strumento da riga di comando che fornisce patch di qualità per Adobe Commerce e Magenti Open Source. Consulta la [[!DNL Quality patches tool] guida utente](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} per ulteriori informazioni.
+- **[!DNL Quality Patches Tool]**: strumento da riga di comando che fornisce patch di qualità per Adobe Commerce e Magento Open Source. Consulta la [[!DNL Quality patches tool] guida utente](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} per ulteriori informazioni.

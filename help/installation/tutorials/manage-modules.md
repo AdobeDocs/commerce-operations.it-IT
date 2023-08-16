@@ -46,9 +46,9 @@ Dove
 * `-f` o `--force` per forzare l&#39;abilitazione o la disabilitazione di un modulo nonostante le dipendenze. Prima di utilizzare questa opzione, consulta [Informazioni sull&#39;attivazione e la disattivazione dei moduli](#about-enabling-and-disabling-modules).
 * `-c` o `--clear-static-content` pulitura [file di visualizzazione statica generati](../../configuration/cli/static-view-file-deployment.md).
 
-   Se non si cancellano i file di visualizzazione statica, potrebbero verificarsi dei problemi se sono presenti più file con lo stesso nome e non si cancellano tutti.
+  Se non si cancellano i file di visualizzazione statica, potrebbero verificarsi dei problemi se sono presenti più file con lo stesso nome e non si cancellano tutti.
 
-   In altre parole, a causa della [fallback di file statici](../../configuration/cli/static-view-file-deployment.md) regole, se non si cancellano i file statici ed è presente più di un file denominato `logo.svg` che sono diversi, il fallback potrebbe causare la visualizzazione del file sbagliato.
+  In altre parole, a causa della [fallback di file statici](../../configuration/cli/static-view-file-deployment.md) regole, se non si cancellano i file statici ed è presente più di un file denominato `logo.svg` che sono diversi, il fallback potrebbe causare la visualizzazione del file sbagliato.
 
 Ad esempio, per disattivare `Magento_Weee` modulo, immetti:
 
@@ -74,7 +74,7 @@ bin/magento cache:clean
 
 ## Informazioni sull&#39;attivazione e la disattivazione dei moduli
 
-Adobe Commerce e Magenti Open Source consentono di abilitare o disabilitare i moduli attualmente disponibili, ovvero qualsiasi modulo fornito da Adobe o qualsiasi modulo di terze parti attualmente disponibile.
+Adobe Commerce e Magento Open Source consentono di abilitare o disabilitare i moduli attualmente disponibili, ovvero qualsiasi modulo fornito da Adobe o qualsiasi modulo di terze parti attualmente disponibile.
 
 Alcuni moduli hanno dipendenze da altri moduli, nel qual caso potrebbe non essere possibile abilitare o disabilitare un modulo perché presenta dipendenze da altri moduli.
 

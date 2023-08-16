@@ -43,7 +43,7 @@ L’errore si verifica se il valore restituito è `mysql`, `elasticsearch`, o `e
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Dove `<version>` è la versione del Magento che stavi eseguendo **prima di** l&#39;aggiornamento. Ad esempio: `2.3.5`.
+>Dove `<version>` è la versione del Magento che stavi eseguendo **prima di** l&#39;aggiornamento. Ad esempio, `2.3.5`.
 
 Seguire le linee guida descritte nelle sezioni seguenti per eseguire il ripristino da uno stato incoerente.
 

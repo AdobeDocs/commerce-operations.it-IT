@@ -198,7 +198,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
 | Abilita estrazione pagina iniziale | `checkout/options/onepage_checkout_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Consenti estrazione guest | `checkout/options/guest_checkout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Consenti estrazione come ospite | `checkout/options/guest_checkout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Visualizza indirizzo di fatturazione attivato | `checkout/options/display_billing_address_on` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Abilita termini e condizioni | `checkout/options/enable_agreements` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Durata offerta (giorni) | `checkout/cart/delete_quote_after` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

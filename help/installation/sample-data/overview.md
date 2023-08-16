@@ -1,6 +1,6 @@
 ---
 title: Panoramica dei dati di esempio
-description: Scopri come utilizzare i dati di esempio per i progetti Adobe Commerce e Magenti Open Source.
+description: Scopri come utilizzare i dati di esempio per i progetti Adobe Commerce e Magento Open Source.
 exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt

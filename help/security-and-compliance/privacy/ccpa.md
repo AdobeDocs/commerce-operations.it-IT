@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Questo è uno di una serie di argomenti per aiutare Adobe Commerce e i commercianti e gli sviluppatori di Magenti Open Source a comprendere le implicazioni del California Consumer Privacy Act (CCPA). Le informazioni sono fornite unicamente a scopo informativo e non devono essere interpretate come consulenza legale. Rivolgiti al tuo consulente legale per determinare se e come la tua azienda debba conformarsi ad obblighi di legge.
 
-Il [CCPA](https://oag.ca.gov/privacy/ccpa) estende i diritti dei consumatori in California per determinare in che modo le loro informazioni personali vengono raccolte, memorizzate e utilizzate, ponendo l&#39;accento sulla protezione dei consumatori dalla vendita o dallo scambio non autorizzati o dalle loro informazioni personali. Il CCPA è stato emanato nel 2018 ed è in vigore dal 1° gennaio 2020.
+Il [CCPA](https://oag.ca.gov/privacy/ccpa) amplia i diritti dei consumatori in California per determinare in che modo le loro informazioni personali vengono raccolte, memorizzate e utilizzate, con un&#39;enfasi sulla protezione dei consumatori dalla vendita o dallo scambio non autorizzati o dalle loro informazioni personali. Il CCPA è stato emanato nel 2018 ed è in vigore dal 1° gennaio 2020.
 
 Il CCPA conferisce ai consumatori i seguenti nuovi diritti:
 

@@ -1,6 +1,6 @@
 ---
 title: Ottieni il software Adobe Commerce
-description: Scopri come scaricare il software Adobe Commerce e Magenti Open Source.
+description: Scopri come scaricare il software Adobe Commerce e Magento Open Source.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -17,7 +17,7 @@ Sei tra i 240.000 commercianti in tutto il mondo che hanno dato fiducia al nostr
 
 Controlla la disponibilità di nuove funzioni e versioni e scopri come inserirle nel nostro [pagina sulla disponibilità del prodotto](https://devdocs.magento.com/release/availability.html).
 
-Consulta la tabella seguente per iniziare a installare Adobe Commerce o Magenti Open Source.
+Consulta la tabella seguente per iniziare a installare Adobe Commerce o Magento Open Source.
 
 <table>
     <tbody>

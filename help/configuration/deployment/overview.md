@@ -36,11 +36,11 @@ Quando si distribuiscono risorse statiche e si compila il codice in un computer 
 
 I termini seguenti vengono utilizzati per descrivere i sistemi coinvolti nella distribuzione.
 
-- **Sistema di sviluppo**: computer su cui gli sviluppatori lavorano per personalizzare il codice e installare estensioni, temi e pacchetti di linguaggio da Commerce Marketplace. Inoltre, puoi apportare tutte le modifiche di configurazione al sistema di sviluppo. Puoi avere molti sistemi di sviluppo.
+- **Sistema di sviluppo**: computer su cui gli sviluppatori lavorano per personalizzare il codice e installare estensioni, temi e pacchetti di linguaggio da Commerci Marketplace. Inoltre, puoi apportare tutte le modifiche di configurazione al sistema di sviluppo. Puoi avere molti sistemi di sviluppo.
 
 - **Genera sistema**- Un sistema in cui vengono distribuite le risorse statiche e viene compilato il codice per il sistema di produzione. Poiché queste risorse vengono create su un sistema non in produzione, i tempi di inattività del sistema di produzione vengono ridotti al minimo.
 
-   Non è necessario che nel sistema di build sia installato Commerce. È necessario solo il codice Commerce, ma non è richiesta alcuna connessione al database. Inoltre, non è necessario che il sistema di build sia un server fisicamente separato.
+  Non è necessario che nel sistema di build sia installato Commerce. È necessario solo il codice Commerce, ma non è richiesta alcuna connessione al database. Inoltre, non è necessario che il sistema di build sia un server fisicamente separato.
 
 - **Sistema di staging**—_Facoltativo_. Facoltativamente, puoi impostare un sistema di staging da utilizzare per il test finale di tutto il codice integrato, incluso User Acceptance Testing (UAT). Impostare un sistema di gestione temporanea nello stesso modo in cui si imposta un sistema di produzione. Ad eccezione del fatto che la gestione temporanea non è il tuo negozio live e non elabora gli ordini dei clienti, è identica alla produzione.
 
@@ -62,15 +62,15 @@ Dell offre un modo per sincronizzare la configurazione dei sistemi:
 
 - **Configurazione condivisa**- Impostazioni che non sono specifiche del sistema né sensibili.
 
-   Le impostazioni condivise sono impostazioni che desideri siano coerenti nei sistemi di sviluppo e produzione. Imposta la configurazione condivisa nell’amministratore nel tuo sviluppo (o in Adobe Commerce nell’infrastruttura cloud) _integrazione_).
+  Le impostazioni condivise sono impostazioni che desideri siano coerenti nei sistemi di sviluppo e produzione. Imposta la configurazione condivisa nell’amministratore nel tuo sviluppo (o in Adobe Commerce nell’infrastruttura cloud) _integrazione_).
 
-   Il file di configurazione condiviso, `app/etc/config.php`, devono essere inclusi nel controllo del codice sorgente in modo da poter essere condivisi tra i sistemi di sviluppo, generazione e produzione.
+  Il file di configurazione condiviso, `app/etc/config.php`, devono essere inclusi nel controllo del codice sorgente in modo da poter essere condivisi tra i sistemi di sviluppo, generazione e produzione.
 
 - **Configurazione specifica del sistema**- Impostazioni che variano in base al sistema, ad esempio i nomi host e le porte dei motori di ricerca.
 
 - **Configurazione sensibile**- Impostazioni che devono essere _non_ essere inclusi nel controllo del codice sorgente perché espongono informazioni personali (PII, personally identifiable information) o impostazioni quali chiavi API o password.
 
-   Il file di configurazione specifico del sistema, `app/etc/env.php`, devono _non_ essere inclusi nel controllo del codice sorgente o condivisi in altro modo tra sistemi. Invece, utilizza [`magento config:set` e `magento:sensitive:set` comandi](../cli/set-configuration-values.md) per fornire i valori per tali impostazioni nel sistema di produzione.
+  Il file di configurazione specifico del sistema, `app/etc/env.php`, devono _non_ essere inclusi nel controllo del codice sorgente o condivisi in altro modo tra sistemi. Invece, utilizza [`magento config:set` e `magento:sensitive:set` comandi](../cli/set-configuration-values.md) per fornire i valori per tali impostazioni nel sistema di produzione.
 
 >[!INFO]
 >

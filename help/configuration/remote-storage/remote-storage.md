@@ -55,15 +55,15 @@ Il percorso di archiviazione predefinito si trova nel file system locale. A _sch
 
 - Esempio: installare Commerce con l’archiviazione remota
 
-   ```bash
-   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
-   ```
+  ```bash
+  bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
+  ```
 
 - Esempio: abilitare l’archiviazione remota su Commerce esistente
 
-   ```bash
-   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
-   ```
+  ```bash
+  bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
+  ```
 
 >[!TIP]
 >

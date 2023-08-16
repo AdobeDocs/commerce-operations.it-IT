@@ -1,6 +1,6 @@
 ---
 title: Installare Adobe Commerce
-description: Per installare Adobe Commerce o Magenti Open Source nell’infrastruttura di tua proprietà, segui la procedura riportata di seguito.
+description: Per installare Adobe Commerce o Magento Open Source nell’infrastruttura di tua proprietà, segui la procedura riportata di seguito.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -92,12 +92,12 @@ In Adobe Commerce versione 2.2.8 e successive, puoi creare l’utente amministra
 | Nome | Valore | Obbligatorio |
 |--- |--- |--- |
 | `--base-url` | URL di base da utilizzare per accedere all’amministratore e alla vetrina in uno dei seguenti formati:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** Lo schema (http:// o https://) e una barra finale sono entrambi obbligatori.<br><br>`<your install dir>` è il percorso relativo alla directory principale dei documenti in cui installare l&#39;applicazione. A seconda della configurazione del server web e degli host virtuali, il percorso potrebbe essere magento2 o vuoto.<br><br>Per accedere all’applicazione su localhost, puoi utilizzare: `http://127.0.0.1/<your install dir>/` o `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` che rappresenta un URL di base definito da un&#39;impostazione host virtuale o da un ambiente di virtualizzazione come Docker. Ad esempio, se imposti un host virtuale con il nome host commerce.example.com, puoi installare l’applicazione con `--base-url={{base_url}}` e accedere all’amministratore con un URL come `http://commerce.example.com/admin`. | Sì |
-| `--backend-frontname` | URI (Uniform Resource Identifier) per accedere all&#39;amministratore. Puoi omettere questo parametro per consentire all’applicazione di generare un URI casuale con il seguente pattern admin_jkhgdfq</code>.<br><br>È consigliabile utilizzare un URI casuale a scopo di sicurezza. Un URI casuale è più difficile da sfruttare per gli hacker o per il software dannoso.<br><br>L’URI viene visualizzato alla fine dell’installazione. Puoi visualizzarlo in un secondo momento utilizzando `magento info:adminuri` comando.<br><br>Se scegli di immettere un valore, ti consigliamo di non utilizzare una parola comune come admin, backend. L’URI amministratore può contenere valori alfanumerici e il carattere di sottolineatura (`_`) solo. | No |
+| `--backend-frontname` | URI (Uniform Resource Identifier) per accedere all&#39;amministratore. È possibile omettere questo parametro per consentire all&#39;applicazione di generare un URI casuale con il seguente pattern <code>admin_jkhgdfq</code>.<br><br>È consigliabile utilizzare un URI casuale a scopo di sicurezza. Un URI casuale è più difficile da sfruttare per gli hacker o per il software dannoso.<br><br>L’URI viene visualizzato alla fine dell’installazione. Puoi visualizzarlo in un secondo momento utilizzando `magento info:adminuri` comando.<br><br>Se scegli di immettere un valore, ti consigliamo di non utilizzare una parola comune come admin, backend. L’URI amministratore può contenere valori alfanumerici e il carattere di sottolineatura (`_`) solo. | No |
 | `--db-host` | Usare una delle seguenti opzioni:<br><br>: nome host o indirizzo IP completo del server di database.<br><br>- `localhost` (impostazione predefinita) oppure `127.0.0.1` se il server di database si trova sullo stesso host del server Web.localhost significa che la libreria client MySQL utilizza socket UNIX per connettersi al database. `127.0.0.1` fa in modo che la libreria client utilizzi il protocollo TCP. Per ulteriori informazioni sui socket, vedere [Documentazione PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** Facoltativamente, puoi specificare la porta del server di database nel suo nome host, ad esempio www.example.com:9000 | Sì |
 | `--db-name` | Nome dell&#39;istanza di database in cui si desidera installare le tabelle di database.<br><br>Il valore predefinito è `magento2`. | Sì |
 | `--db-user` | Nome utente del proprietario dell&#39;istanza di database.<br><br>Il valore predefinito è `root`. | Sì |
 | `--db-password` | Password del proprietario dell&#39;istanza di database. | Sì |
-| `--db-prefix` | Da utilizzare solo se si installano le tabelle di database in un&#39;istanza di database in cui sono già presenti tabelle Adobe Commerce o Magenti Open Source.<br><br>In tal caso, utilizzare un prefisso per identificare le tabelle per l&#39;installazione. Alcuni clienti hanno più di un’istanza di Adobe Commerce e Magenti Open Source in esecuzione su un server con tutte le tabelle nello stesso database.<br><br>La lunghezza del prefisso non può superare i cinque caratteri. Deve iniziare con una lettera e può includere solo lettere, numeri e caratteri di sottolineatura.<br><br>Questa opzione consente ai clienti di condividere il server di database con più installazioni. | No |
+| `--db-prefix` | Da utilizzare solo se si installano le tabelle di database in un&#39;istanza di database in cui sono già presenti tabelle Adobe Commerce o Magento Open Source.<br><br>In tal caso, utilizzare un prefisso per identificare le tabelle per l&#39;installazione. Alcuni clienti hanno più di un’istanza di Adobe Commerce e Magento Open Source in esecuzione su un server con tutte le tabelle nello stesso database.<br><br>La lunghezza del prefisso non può superare i cinque caratteri. Deve iniziare con una lettera e può includere solo lettere, numeri e caratteri di sottolineatura.<br><br>Questa opzione consente ai clienti di condividere il server di database con più installazioni. | No |
 | `--db-ssl-key` | Percorso della chiave client. | No |
 | `--db-ssl-cert` | Percorso del certificato client. | No |
 | `--db-ssl-ca` | Percorso del certificato del server. | No |
@@ -187,11 +187,11 @@ L&#39;esempio seguente installa l&#39;applicazione con le opzioni seguenti:
 
 * L&#39;applicazione viene installata nel `magento2` directory relativa alla directory principale dei documenti del server web su `localhost` e il percorso per l’Amministratore è `admin`; pertanto:
 
-   L&#39;URL della vetrina è `http://127.0.0.1`
+  L&#39;URL della vetrina è `http://127.0.0.1`
 
 * Il server di database si trova sullo stesso host del server Web.
 
-   Il nome del database è `magento`, e il nome utente e la password sono entrambi `magento`
+  Il nome del database è `magento`, e il nome utente e la password sono entrambi `magento`
 
 * Utilizza le riscritture del server
 
@@ -257,11 +257,11 @@ L&#39;esempio seguente installa l&#39;applicazione con le opzioni seguenti:
 
 * Magapplication è installato in `magento2` directory relativa alla directory principale dei documenti del server web su `localhost` e il percorso per l’Amministratore è `admin`; pertanto:
 
-   L&#39;URL della vetrina è `http://127.0.0.1`
+  L&#39;URL della vetrina è `http://127.0.0.1`
 
 * Il server di database si trova sullo stesso host del server Web.
 
-   Il nome del database è `magento`, e il nome utente e la password sono entrambi `magento`
+  Il nome del database è `magento`, e il nome utente e la password sono entrambi `magento`
 
 * L’amministratore dispone delle seguenti proprietà:
 

@@ -1,6 +1,6 @@
 ---
 title: Disinstalla moduli
-description: Per disinstallare un modulo Adobe Commerce o Magenti Open Source, segui la procedura riportata di seguito.
+description: Per disinstallare un modulo Adobe Commerce o Magento Open Source, segui la procedura riportata di seguito.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -168,26 +168,26 @@ Ad esempio, per ripristinare un backup del codice (ovvero del file system), imme
 
 * Visualizza un elenco di backup:
 
-   ```bash
-   magento info:backups:list
-   ```
+  ```bash
+  magento info:backups:list
+  ```
 
 * Ripristinare un backup di file denominato `1433876616_filesystem.tgz`:
 
-   ```bash
-   magento setup:rollback --code-file="1433876616_filesystem.tgz"
-   ```
+  ```bash
+  magento setup:rollback --code-file="1433876616_filesystem.tgz"
+  ```
 
-   Messaggi simili alla seguente visualizzazione:
+  Messaggi simili alla seguente visualizzazione:
 
-   ```terminal
-   Enabling maintenance mode
-   Code rollback is starting ...
-   Code rollback filename: 1433876616_filesystem.tgz
-   Code rollback file path: /var/www/html/magento2/var/backups/1433876616_filesystem.tgz
-   [SUCCESS]: Code rollback has completed successfully.
-   Disabling maintenance mode
-   ```
+  ```terminal
+  Enabling maintenance mode
+  Code rollback is starting ...
+  Code rollback filename: 1433876616_filesystem.tgz
+  Code rollback file path: /var/www/html/magento2/var/backups/1433876616_filesystem.tgz
+  [SUCCESS]: Code rollback has completed successfully.
+  Disabling maintenance mode
+  ```
 
 >[!NOTE]
 >

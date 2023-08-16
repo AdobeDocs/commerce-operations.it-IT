@@ -22,7 +22,7 @@ Nelle sezioni seguenti vengono descritti i requisiti per uno o due proprietari d
 
 - **Due utenti**- Se si esegue il proprio server Commerce, si consiglia di eseguire due utenti: uno per trasferire i file ed eseguire le utilità della riga di comando e un altro per il software del server Web. Quando possibile, è preferibile perché è più sicuro.
 
-   Sono invece disponibili utenti separati:
+  Sono invece disponibili utenti separati:
 
    - L’utente del server web, che esegue l’amministrazione e la vetrina.
 
@@ -112,15 +112,15 @@ Se utilizzi un server personalizzato (inclusa la configurazione del server priva
 
 - Il **utente server web**, che esegue l’amministrazione e la vetrina.
 
-   I sistemi Linux in genere non forniscono una shell per questo utente; non è possibile accedere al server Commerce come utente del server web o passare ad esso.
+  I sistemi Linux in genere non forniscono una shell per questo utente; non è possibile accedere al server Commerce come utente del server web o passare ad esso.
 
 - Il **utente della riga di comando**, a cui si accede al server Commerce come o a cui si passa.
 
-   Commerce utilizza questo utente per eseguire i comandi CLI e cron.
+  Commerce utilizza questo utente per eseguire i comandi CLI e cron.
 
-   >[!INFO]
-   >
-   >L&#39;utente della riga di comando viene anche indicato come _proprietario del file system_.
+  >[!INFO]
+  >
+  >L&#39;utente della riga di comando viene anche indicato come _proprietario del file system_.
 
 Poiché questi utenti richiedono l’accesso agli stessi file, si consiglia di creare un [gruppo condiviso](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) cui entrambi appartengono. Le procedure seguenti presuppongono che tu abbia già eseguito questa operazione.
 

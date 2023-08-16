@@ -1,6 +1,6 @@
 ---
 user-guide-title: Riferimento per gli strumenti della riga di comando
-user-guide-description: Scopri tutti i comandi, gli argomenti e le opzioni disponibili per gli strumenti della riga di comando di Adobe Commerce e Magenti Open Source.
+user-guide-description: Scopri tutti i comandi, gli argomenti e le opzioni disponibili per gli strumenti della riga di comando di Adobe Commerce e Magento Open Source.
 feature: Configuration
 source-git-commit: 3b8b9d88e72722e5c72ab94f7d3e61b78a2cb136
 workflow-type: tm+mt

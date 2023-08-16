@@ -60,7 +60,7 @@ Commerce utilizza memcached per l’archiviazione della sessione ma non per il c
 
    Se vengono visualizzati degli errori (ad esempio, HTTP 500 (Errore interno del server)), abilita la modalità sviluppatore e diagnostica il problema. Assicurati che memcached sia in esecuzione, configurato correttamente e che `env.php` non presenta errori di sintassi.
 
-1. (Facoltativo) Utilizza Telnet per esaminare l’archiviazione memorizzata in memcache.
+1. (Facoltativo.) Utilizza Telnet per esaminare l’archiviazione memorizzata in memcache.
 
    ```bash
    telnet <memcached host or ip> <memcached port>

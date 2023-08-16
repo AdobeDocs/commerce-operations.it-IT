@@ -1,6 +1,6 @@
 ---
 title: Migrare da Elasticsearch a OpenSearch
-description: Scopri come sostituire il motore di ricerca utilizzato per le installazioni locali di Adobe Commerce e Magenti Open Source.
+description: Scopri come sostituire il motore di ricerca utilizzato per le installazioni locali di Adobe Commerce e Magento Open Source.
 feature: Upgrade, Search
 exl-id: 56f1e609-83d2-4705-99d8-b395bb511411
 source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07

@@ -29,19 +29,19 @@ A seguito dell’esecuzione del comando, vengono aggiornati i seguenti file di c
 
 - `app/etc/config.php`
 
-   Questo è il file di configurazione condiviso per tutte le istanze Commerce.
+  Questo è il file di configurazione condiviso per tutte le istanze Commerce.
 Includi questo elemento nel controllo del codice sorgente in modo che possa essere condiviso tra i sistemi di sviluppo, generazione e produzione.
 
-   Consulta [riferimento config.php](../reference/config-reference-configphp.md).
+  Consulta [riferimento config.php](../reference/config-reference-configphp.md).
 
 - `app/etc/env.php`
 
-   Si tratta del file di configurazione specifico per l’ambiente.
+  Si tratta del file di configurazione specifico per l’ambiente.
 Contiene impostazioni sensibili e specifiche per il sistema per singoli ambienti.
 
-   Esegui _non_ includere il file nel controllo del codice sorgente.
+  Esegui _non_ includere il file nel controllo del codice sorgente.
 
-   Consulta [riferimento env.php](../reference/config-reference-envphp.md).
+  Consulta [riferimento env.php](../reference/config-reference-envphp.md).
 
 ## Impostazioni sensibili o specifiche del sistema
 

@@ -1,6 +1,6 @@
 ---
 title: Nginx
-description: Segui questi passaggi per installare e configurare il server web Nginx per le installazioni on-premise di Adobe Commerce e Magenti Open Source.
+description: Segui questi passaggi per installare e configurare il server web Nginx per le installazioni on-premise di Adobe Commerce e Magento Open Source.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
 source-git-commit: 9ebf10bd3296495e33c91d930be023ea0124ff62
 workflow-type: tm+mt
@@ -17,7 +17,7 @@ Le istruzioni di installazione variano in base al sistema operativo in uso. Cons
 
 ## Ubuntu
 
-La sezione seguente descrive come installare Adobe Commerce e Magenti Open Source 2.x su Ubuntu utilizzando nginx, PHP e MySQL.
+La sezione seguente descrive come installare Adobe Commerce e Magento Open Source 2.x su Ubuntu utilizzando nginx, PHP e MySQL.
 
 ### Installa nginx
 
@@ -65,7 +65,7 @@ Per installare e configurare `php-fpm`:
 
    >[!NOTE]
    >
-   >È consigliabile impostare il limite di memoria su 2 G durante il test di Adobe Commerce e Magenti Open Source. Fai riferimento a [Impostazioni PHP richieste](../php-settings.md) per ulteriori informazioni.
+   >È consigliabile impostare il limite di memoria su 2 G durante il test di Adobe Commerce e Magento Open Source. Fai riferimento a [Impostazioni PHP richieste](../php-settings.md) per ulteriori informazioni.
 
 1. Salva ed esci dall’editor.
 
@@ -81,7 +81,7 @@ Fai riferimento a [MySQL](../database/mysql.md) per ulteriori informazioni.
 
 ### Installare e configurare
 
-Esistono diversi modi per scaricare Adobe Commerce e Magenti Open Source, tra cui:
+Esistono diversi modi per scaricare Adobe Commerce e Magento Open Source, tra cui:
 
 * [Ottieni il metapacchetto Compositore](../../composer.md)
 
@@ -97,7 +97,7 @@ Questo esempio mostra un&#39;installazione basata su Compositore utilizzando la 
    cd /var/www/html
    ```
 
-1. Installa Compositore a livello globale. Il Compositore è necessario per aggiornare le dipendenze prima di installare Adobe Commerce o Magenti Open Source:
+1. Installa Compositore a livello globale. Il Compositore è necessario per aggiornare le dipendenze prima di installare Adobe Commerce o Magento Open Source:
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
@@ -207,7 +207,7 @@ Queste istruzioni presuppongono l’utilizzo della posizione predefinita di Ubun
    >
    >Il `include` la direttiva deve puntare al file di configurazione nginx di esempio nella directory di installazione.
 
-1. Sostituisci `www.magento-dev.com` con il tuo nome di dominio. Deve corrispondere all’URL di base specificato durante l’installazione di Adobe Commerce o Magenti Open Source.
+1. Sostituisci `www.magento-dev.com` con il tuo nome di dominio. Deve corrispondere all’URL di base specificato durante l’installazione di Adobe Commerce o Magento Open Source.
 
 1. Salva ed esci dall’editor.
 
@@ -235,7 +235,7 @@ Apri un browser web e passa all’URL di base del sito per [verificare l’insta
 
 ## CentOS 7
 
-La sezione seguente descrive come installare Adobe Commerce e Magenti Open Source 2.x su CentOS 7 utilizzando nginx, PHP e MySQL.
+La sezione seguente descrive come installare Adobe Commerce e Magento Open Source 2.x su CentOS 7 utilizzando nginx, PHP e MySQL.
 
 ### Installa nginx
 
@@ -283,7 +283,7 @@ Adobe Commerce e il Magento Open Source richiedono diversi [PHP](../php-settings
 
    >[!NOTE]
    >
-   >È consigliabile impostare il limite di memoria su 2 G durante il test di Adobe Commerce o Magenti Open Source. Fai riferimento a [Impostazioni PHP richieste](../php-settings.md) per ulteriori informazioni.
+   >È consigliabile impostare il limite di memoria su 2 G durante il test di Adobe Commerce o Magento Open Source. Fai riferimento a [Impostazioni PHP richieste](../php-settings.md) per ulteriori informazioni.
 
 1. Rimuovere il commento dalla directory del percorso di sessione e impostare il percorso:
 
@@ -360,7 +360,7 @@ Fai riferimento a [MySQL](..//database/mysql.md) per ulteriori informazioni.
 
 ### Installare e configurare
 
-Esistono diversi modi per scaricare Adobe Commerce e Magenti Open Source, tra cui:
+Esistono diversi modi per scaricare Adobe Commerce e Magento Open Source, tra cui:
 
 * [Ottieni il metapacchetto Compositore](../../composer.md)
 
@@ -376,7 +376,7 @@ Questo esempio mostra un&#39;installazione basata su Compositore utilizzando la 
    cd /var/www/html
    ```
 
-1. Installa Compositore a livello globale. Il Compositore è necessario per aggiornare le dipendenze prima di installare Adobe Commerce o Magenti Open Source:
+1. Installa Compositore a livello globale. Il Compositore è necessario per aggiornare le dipendenze prima di installare Adobe Commerce o Magento Open Source:
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer

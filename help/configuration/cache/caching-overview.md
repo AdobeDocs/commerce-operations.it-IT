@@ -1,6 +1,6 @@
 ---
 title: Configurare la memorizzazione in cache
-description: Scopri come memorizzare in cache e come configurare i meccanismi di cache per l’applicazione Adobe Commerce e Magenti Open Source.
+description: Scopri come memorizzare in cache e come configurare i meccanismi di cache per l’applicazione Adobe Commerce e Magento Open Source.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
@@ -31,19 +31,19 @@ ht-degree: 0%
 - **Back-end**- Specifica i dettagli su [archiviazione cache](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implementato da [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend)
 - **Back-end a due livelli**- Memorizza i record della cache in due backend: uno più veloce e uno più lento.
 
-   >[!INFO]
-   >
-   >La configurazione della cache back-end a due livelli va oltre l’ambito di questa guida.
+  >[!INFO]
+  >
+  >La configurazione della cache back-end a due livelli va oltre l’ambito di questa guida.
 
 ## Opzioni di configurazione
 
 - Modifica del fornito `default` cache front-end:
 
-   Puoi modificare solo il `<magento_root>/app/etc/di.xml` file, la configurazione dell’iniezione di dipendenza globale dell’applicazione Commerce.
+  Puoi modificare solo il `<magento_root>/app/etc/di.xml` file, la configurazione dell’iniezione di dipendenza globale dell’applicazione Commerce.
 
 - Configurazione di una cache personalizzata front-end:
 
-   Puoi modificare solo il `<magento_root>/app/etc/env.php` perché esegue l&#39;override della configurazione equivalente in `di.xml` file.
+  Puoi modificare solo il `<magento_root>/app/etc/env.php` perché esegue l&#39;override della configurazione equivalente in `di.xml` file.
 
 >[!TIP]
 >

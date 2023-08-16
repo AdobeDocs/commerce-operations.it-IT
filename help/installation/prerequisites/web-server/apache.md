@@ -1,6 +1,6 @@
 ---
 title: Apache
-description: Segui questi passaggi per installare e configurare il server web Apache per le installazioni locali di Adobe Commerce e Magenti Open Source.
+description: Segui questi passaggi per installare e configurare il server web Apache per le installazioni locali di Adobe Commerce e Magento Open Source.
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -28,11 +28,11 @@ Adobe Commerce supporta Apache 2.4.x.
 
 Questo argomento illustra come abilitare Apache 2.4 riscrive e specificare un’impostazione per [file di configurazione distribuito, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-Adobe Commerce e Magenti Open Source utilizzano le riscritture dei server e `.htaccess` per fornire istruzioni a livello di directory per Apache. Le seguenti istruzioni sono incluse anche in tutte le altre sezioni di questo argomento.
+Adobe Commerce e Magento Open Source utilizzano le riscritture dei server e `.htaccess` per fornire istruzioni a livello di directory per Apache. Le seguenti istruzioni sono incluse anche in tutte le altre sezioni di questo argomento.
 
 Utilizza questa sezione per abilitare le riscritture di Apache 2.4 e specificare un’impostazione per [file di configurazione distribuito, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
-Adobe Commerce e Magenti Open Source utilizzano le riscritture dei server e `.htaccess` per fornire istruzioni a livello di directory per Apache.
+Adobe Commerce e Magento Open Source utilizzano le riscritture dei server e `.htaccess` per fornire istruzioni a livello di directory per Apache.
 
 >[!NOTE]
 >
@@ -73,14 +73,13 @@ Adobe Commerce e Magenti Open Source utilizzano le riscritture dei server e `.ht
    >- Se hai effettuato l’aggiornamento da una versione precedente di Apache, cerca `<Directory "/var/www/html">` o `<Directory "/var/www">` in `000-default.conf`.
    >- È necessario modificare il valore di `AllowOverride` nella direttiva per la directory in cui si prevede di installare il software Adobe Commerce o di Magento Open Source. Ad esempio, per eseguire l’installazione nella directory principale dei documenti del server web, modifica la direttiva in `<Directory /var/www>`.
 
-
 >[!NOTE]
 >
 >Se non si attivano queste impostazioni, in genere gli stili non vengono visualizzati nella vetrina o in Amministrazione.
 
 ## Moduli richiesti Apache
 
-Adobe Commerce e Magenti Open Source richiedono l’installazione dei seguenti moduli Apache:
+Adobe Commerce e Magento Open Source richiedono l’installazione dei seguenti moduli Apache:
 
 - [mod_deflate.c](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
 - [mod_expires.c](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
@@ -185,7 +184,7 @@ Per effettuare l’aggiornamento ad Apache 2.4:
 
 ## Installazione di Apache su CentOS
 
-Adobe Commerce e Magenti Open Source richiedono la riscrittura del server Apache. È inoltre necessario specificare il tipo di direttive che è possibile utilizzare in `.htaccess`, utilizzato dall&#39;applicazione per specificare le regole di riscrittura.
+Adobe Commerce e Magento Open Source richiedono la riscrittura del server Apache. È inoltre necessario specificare il tipo di direttive che è possibile utilizzare in `.htaccess`, utilizzato dall&#39;applicazione per specificare le regole di riscrittura.
 
 L’installazione e la configurazione di Apache sono fondamentalmente tre passaggi: installare il software, abilitare le riscritture e specificare `.htaccess` direttive.
 

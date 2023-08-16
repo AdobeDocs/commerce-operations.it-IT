@@ -6,13 +6,13 @@ exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Cancellazione della cache di più istanze di vernice
 
-Adobe Commerce e Magenti Open Source supportano più istanze di vernice pronte all’uso.
+Adobe Commerce e Magento Open Source supportano più istanze di vernice pronte all’uso.
 
 Questo argomento illustra le nozioni di base sulla configurazione di più istanze di Vernice con Commerce.
 

@@ -21,7 +21,7 @@ Il diagramma seguente illustra il framework della coda di messaggi:
 
 - Uno scambio riceve messaggi dagli editori e li invia alle code. Anche se [!DNL RabbitMQ] supporta più tipi di scambi; Commerce utilizza solo gli scambi di argomenti. Un argomento include una chiave di instradamento, che contiene stringhe di testo separate da punti. Il formato del nome di un argomento è `string1.string2`: ad esempio, `customer.created` o `customer.sent.email`.
 
-   Il broker consente di utilizzare i caratteri jolly per impostare le regole per l’inoltro dei messaggi. È possibile utilizzare un asterisco (`*`) da sostituire _uno_ stringa o cancelletto (`#`) per sostituire 0 o più stringhe. Ad esempio: `customer.*` filtrerebbe per `customer.create` e `customer.delete`, ma non `customer.sent.email`. Tuttavia `customer.#` filtrerebbe per `customer.create`,  `customer.delete`, e `customer.sent.email`.
+  Il broker consente di utilizzare i caratteri jolly per impostare le regole per l’inoltro dei messaggi. È possibile utilizzare un asterisco (`*`) da sostituire _uno_ stringa o cancelletto (`#`) per sostituire 0 o più stringhe. Ad esempio: `customer.*` filtrerebbe per `customer.create` e `customer.delete`, ma non `customer.sent.email`. Tuttavia `customer.#` filtrerebbe per `customer.create`,  `customer.delete`, e `customer.sent.email`.
 
 - Una coda è un buffer che memorizza i messaggi.
 

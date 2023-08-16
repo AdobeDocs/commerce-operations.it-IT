@@ -1,11 +1,11 @@
 ---
 title: Note sulla versione di Adobe Commerce e Magento Open Source
-description: Scopri dove trovare informazioni per specifiche versioni di Adobe Commerce e di Magento Open Source.
+description: Scopri dove trovare informazioni per le specifiche versioni di Adobe Commerce e Magento Open Source.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
 source-git-commit: c371ee59e4f1efcc947d0bbd189a892d8f32a5b7
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 

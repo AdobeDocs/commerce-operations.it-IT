@@ -15,9 +15,9 @@ Si presuppone che:
 
 - Stai lavorando su una macchina di sviluppo (laptop, macchina virtuale o simile).
 
-   Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
+  Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
 
-   Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurazione di più siti Web o store](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) nel _Guida di Commerce su infrastruttura cloud_.
+  Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurazione di più siti Web o store](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) nel _Guida di Commerce su infrastruttura cloud_.
 
 - Accetti più domini in un file host virtuale o utilizzi un host virtuale per sito Web; i file di configurazione host virtuale si trovano in `/etc/nginx/sites-available`.
 - Utilizzi il `nginx.conf.sample` fornite da Commerce con solo le modifiche descritte in questa esercitazione.
@@ -42,8 +42,8 @@ Di seguito è riportata una roadmap per la configurazione di più siti Web con n
 
       - Utilizzare `website` per caricare il sito web nella vetrina.
       - Utilizzare `store` per caricare qualsiasi visualizzazione store nella vetrina.
-   - `$MAGE_RUN_CODE` è il codice univoco di visualizzazione del sito web o dello store che corrisponde a `$MAGE_RUN_TYPE`.
 
+   - `$MAGE_RUN_CODE` è il codice univoco di visualizzazione del sito web o dello store che corrisponde a `$MAGE_RUN_TYPE`.
 
 1. Aggiorna la configurazione dell’URL di base nell’amministratore Commerce.
 
@@ -281,7 +281,6 @@ A meno che il DNS non sia configurato per gli URL dei tuoi archivi, devi aggiung
 >
 >- Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
 >- Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce; consulta [Configurare più siti web o store Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) nel _Guida di Commerce su infrastruttura cloud_.
-
 
 ### Risoluzione dei problemi
 

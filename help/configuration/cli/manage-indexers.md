@@ -79,7 +79,7 @@ Utilizzare questo comando per reindicizzare tutti gli indicizzatori o gli indici
 
 >[!INFO]
 >
->Questo comando reindicizza una sola volta. Per mantenere aggiornati gli indicizzatori, è necessario impostare un [lavoro cron](../cli/configure-cron-jobs.md).
+>Questo comando reindicizza una sola volta. Per mantenere gli indicizzatori aggiornati, è necessario impostare un [lavoro cron](../cli/configure-cron-jobs.md).
 
 Opzioni comando:
 

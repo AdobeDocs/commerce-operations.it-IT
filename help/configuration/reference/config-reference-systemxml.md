@@ -2,11 +2,11 @@
 title: riferimento system.xml
 description: Scopri come il file XML di sistema gestisce la configurazione dell’applicazione Commerce.
 feature: Configuration, System
-badge: label="Contribuito da David Lambauer" type="Informativo" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
+badge: label="Contributo di David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2680'
 ht-degree: 0%
 
 ---
@@ -385,7 +385,7 @@ Sono disponibili le seguenti regole di convalida:
 | `integer` | Consente un numero non decimale positivo o negativo. |
 | `ipv4` | Consente un indirizzo IP v4 valido. |
 | `ipv6` | Consente un indirizzo IP v6 valido. |
-| `letters-only` | Consente solo lettere. Ad esempio: `abcABC`. |
+| `letters-only` | Consente solo lettere. Ad esempio, `abcABC`. |
 | `letters-with-basic-punc` | Consente solo lettere o punteggiatura.<br>Deve trasmettere la seguente espressione: `/^[a-z\-.,()\u0027\u0022\s]+$/i`. |
 | `mobileUK` | Consente un numero di telefono cellulare (Regno Unito). |
 | `no-marginal-whitespace` | Non consente spazi vuoti all&#39;inizio o alla fine del valore. |

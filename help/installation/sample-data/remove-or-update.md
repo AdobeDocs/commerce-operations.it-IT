@@ -1,6 +1,6 @@
 ---
 title: Rimuovi o aggiorna i moduli dati di esempio
-description: Per gestire i moduli dati di esempio di Adobe Commerce e Magenti Open Source, segui la procedura riportata di seguito.
+description: Per gestire i moduli dati di esempio di Adobe Commerce e Magento Open Source, segui la procedura riportata di seguito.
 exl-id: d23f999f-18bf-449b-be23-bdf392dda539
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -61,7 +61,7 @@ Solo Adobe Commerce:
 
 ## Preparare l’aggiornamento dei dati di esempio
 
-Questo comando consente di aggiornare i dati di esempio prima di aggiornare Adobe Commerce o Magenti Open Source.
+Questo comando consente di aggiornare i dati di esempio prima di aggiornare Adobe Commerce o Magento Open Source.
 
 Per preparare i dati di esempio per l&#39;aggiornamento, immettere il comando seguente:
 

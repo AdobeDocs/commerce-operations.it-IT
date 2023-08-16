@@ -114,11 +114,11 @@ Sono disponibili le seguenti opzioni:
 
 - `1`: i consumatori continuano a elaborare i messaggi dalla coda dei messaggi fino a quando non raggiungono `max_messages` valore specificato in `env.php` prima di chiudere la connessione TCP e terminare il processo consumer. Se la coda si svuota prima di raggiungere `max_messages` valore, il consumatore attende che arrivino più messaggi.
 
-   Consigliamo questa impostazione per i commercianti di grandi dimensioni, perché è previsto un flusso costante di messaggi e i ritardi di elaborazione non sono auspicabili.
+  Consigliamo questa impostazione per i commercianti di grandi dimensioni, perché è previsto un flusso costante di messaggi e i ritardi di elaborazione non sono auspicabili.
 
 - `0`- I consumatori elaborano i messaggi disponibili nella coda, chiudono la connessione TCP e terminano. I consumatori non attendono messaggi aggiuntivi per entrare nella coda, anche se il numero di messaggi elaborati è inferiore al `max_messages` valore specificato in `env.php` file. Questo può aiutare a prevenire problemi con i processi cron causati da lunghi ritardi nell’elaborazione della coda dei messaggi.
 
-   Consigliamo questa impostazione per i commercianti più piccoli che non si aspettano un flusso di messaggi costante e preferiscono conservare le risorse informatiche in cambio di ritardi di elaborazione minori quando non potrebbero esserci messaggi per giorni.
+  Consigliamo questa impostazione per i commercianti più piccoli che non si aspettano un flusso di messaggi costante e preferiscono conservare le risorse informatiche in cambio di ritardi di elaborazione minori quando non potrebbero esserci messaggi per giorni.
 
 ## cron
 

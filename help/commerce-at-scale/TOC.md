@@ -1,16 +1,16 @@
 ---
-user-guide-title: Distribuire esperienze e-commerce su larga scala
+user-guide-title: Distribuzione di esperienze e-commerce su larga scala
 user-guide-description: Scopri come distribuire esperienze su larga scala utilizzando Adobe Commerce con Adobe Experience Manager.
 feature: Integration
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '51'
-ht-degree: 0%
+ht-degree: 49%
 
 ---
 
 
-# Distribuire esperienze e-commerce su larga scala {#deliver-commerce-at-scale}
+# Distribuzione di esperienze e-commerce su larga scala {#deliver-commerce-at-scale}
 
 - [Panoramica](overview.md)
 - [Pianificare la memorizzazione in cache effettiva](caching.md)

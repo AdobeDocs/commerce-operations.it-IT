@@ -1,6 +1,6 @@
 ---
 title: Riferimento per le informazioni personali del cliente (versione 2.x)
-description: Scopri i diagrammi di flusso dei dati e le mappature delle entità del database per le informazioni personali dei clienti in Adobe Commerce e Magenti Open Source 2.x.
+description: Scopri i diagrammi di flusso dei dati e le mappature delle entità del database per le informazioni personali dei clienti in Adobe Commerce e Magento Open Source 2.x.
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -50,11 +50,11 @@ Adobe Commerce e il Magento Open Source caricano le informazioni sui clienti qua
 
 ## Entità di database
 
-Adobe Commerce e Magenti Open Source memorizzano principalmente le informazioni specifiche del cliente in tabelle relative a clienti, indirizzi, ordini, preventivi e pagamenti. Altre tabelle contengono riferimenti all’ID cliente.
+Adobe Commerce e Magento Open Source memorizzano principalmente le informazioni specifiche del cliente in tabelle relative a clienti, indirizzi, ordini, preventivi e pagamenti. Altre tabelle contengono riferimenti all’ID cliente.
 
 ### Dati dei clienti
 
-Adobe Commerce e Magenti Open Source possono essere configurati per memorizzare i seguenti attributi cliente:
+Adobe Commerce e Magento Open Source possono essere configurati per memorizzare i seguenti attributi cliente:
 
 - Data di nascita
 - E-mail
@@ -119,7 +119,7 @@ Le seguenti colonne nella `customer_grid_flat` la tabella contiene informazioni 
 
 ### Dati indirizzo
 
-Adobe Commerce e Magenti Open Source memorizzano i seguenti attributi cliente:
+Adobe Commerce e Magento Open Source memorizzano i seguenti attributi cliente:
 
 - Città
 - Azienda
@@ -295,7 +295,7 @@ Il `sales_order_payment` la tabella include le informazioni sulla carta di credi
 
 ### Dati invito
 
-Adobe Commerce e Magenti Open Source possono essere configurati in modo che i clienti possano inviare inviti a vendite ed eventi privati.
+Adobe Commerce e Magento Open Source possono essere configurati in modo che i clienti possano inviare inviti a vendite ed eventi privati.
 
 #### `magento_invitation` tabella
 

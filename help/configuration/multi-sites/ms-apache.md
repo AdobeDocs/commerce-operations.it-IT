@@ -17,13 +17,13 @@ Se necessario, copia il file `index.php` script del punto di ingresso per la vis
 
 - Stai lavorando su una macchina di sviluppo (laptop, macchina virtuale e così via)
 
-   Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
+  Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
 
-   Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurazione di più siti Web o store](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) nel _Guida di Commerce su infrastruttura cloud_.
+  Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurazione di più siti Web o store](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) nel _Guida di Commerce su infrastruttura cloud_.
 
 - Si utilizza un host virtuale per sito Web; il file di configurazione host virtuale è `/etc/httpd/httpd.conf`
 
-   Diverse versioni di Apache su diversi sistemi operativi configurano gli host virtuali in modo diverso. Consulta la [Documentazione di Apache](https://httpd.apache.org/docs/2.4/vhosts) o un amministratore di rete se non si è sicuri della modalità di configurazione di un host virtuale.
+  Diverse versioni di Apache su diversi sistemi operativi configurano gli host virtuali in modo diverso. Consulta la [Documentazione di Apache](https://httpd.apache.org/docs/2.4/vhosts) o un amministratore di rete se non si è sicuri della modalità di configurazione di un host virtuale.
 
 - Il software Commerce è installato in `/var/www/html/magento2`
 - Sono disponibili due siti Web diversi da quello predefinito:
@@ -111,7 +111,6 @@ A meno che il DNS non sia configurato per gli URL dei tuoi archivi, devi aggiung
 >
 >- Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
 >- Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce; consulta [Configurare più siti web o store Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) nel _Guida di Commerce su infrastruttura cloud_.
-
 
 ### Risoluzione dei problemi
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Ambienti
 
-L’architettura Pro di Adobe Commerce su infrastruttura cloud supporta gli ambienti utilizzabili per sviluppare, testare e avviare lo store. Ogni ambiente contiene un database e un server web. I quattro ambienti utilizzati da Adobe Commerce sono:
+L’architettura Pro di Adobe Commerce su infrastruttura cloud supporta gli ambienti utilizzabili per sviluppare, testare e avviare il tuo store. Ogni ambiente contiene un database e un server web. I quattro ambienti utilizzati da Adobe Commerce sono:
 
 - **Integrazione**- Fornisce un singolo ramo di ambiente e consente di creare fino a quattro rami di ambiente aggiuntivi. Questo consente un massimo di cinque rami attivi distribuiti nei contenitori Platform-as-a-Service (PaaS).
 

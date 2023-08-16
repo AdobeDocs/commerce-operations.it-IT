@@ -168,7 +168,7 @@ Il passaggio da una modalità all’altra è un passaggio importante per verific
 
 Vai alla vetrina in un browser web per verificare che tutto funzioni.
 
-1. Apri un browser web e immetti il nome host o l’indirizzo IP del server nella barra degli indirizzi. Ad esempio: `http://192.168.33.10`.
+1. Apri un browser web e immetti il nome host o l’indirizzo IP del server nella barra degli indirizzi. Ad esempio, `http://192.168.33.10`.
 
    La figura seguente mostra una pagina di vetrina di esempio. Se viene visualizzato come segue, l&#39;installazione è stata completata correttamente.
 

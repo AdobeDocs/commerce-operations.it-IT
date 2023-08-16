@@ -19,7 +19,7 @@ Per Adobe Commerce sugli ambienti dell’infrastruttura cloud, consulta [Archite
 
 Il [!DNL Commerce] Il diagramma dell’architettura di riferimento rappresenta l’approccio migliore per impostare un’architettura [!DNL Commerce] sito.
 
-Il colore di ciascun elemento nel diagramma indica se l’elemento fa parte di Magenti Open Source o Adobe Commerce e se è obbligatorio.
+Il colore di ciascun elemento nel diagramma indica se l’elemento fa parte di Magento Open Source o Adobe Commerce e se è obbligatorio.
 
 * Gli elementi arancioni sono necessari per il Magento Open Source
 * Gli elementi grigi sono facoltativi per il Magento Open Source

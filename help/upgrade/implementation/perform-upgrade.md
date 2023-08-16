@@ -1,6 +1,6 @@
 ---
 title: Eseguire un aggiornamento
-description: Per aggiornare un progetto Adobe Commerce o Magenti Open Source, segui la procedura riportata di seguito.
+description: Per aggiornare un progetto Adobe Commerce o Magento Open Source, segui la procedura riportata di seguito.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -24,7 +24,7 @@ Le istruzioni seguenti mostrano come eseguire l’aggiornamento utilizzando Comp
 
 >[!WARNING]
 >
->La procedura per l’aggiornamento di Adobe Commerce e Magenti Open Source è stata modificata. È necessario installare una nuova versione di `magento/composer-root-update-plugin` pacchetto (vedere [prerequisiti](../prepare/prerequisites.md)). Inoltre, i comandi per l&#39;aggiornamento sono stati modificati da `composer require magento/<package_name>` a `composer require-commerce magento/<package_name>`.
+>La procedura per l’aggiornamento di Adobe Commerce e Magento Open Source è stata modificata. È necessario installare una nuova versione di `magento/composer-root-update-plugin` pacchetto (vedere [prerequisiti](../prepare/prerequisites.md)). Inoltre, i comandi per l&#39;aggiornamento sono stati modificati da `composer require magento/<package_name>` a `composer require-commerce magento/<package_name>`.
 
 ## Prima di iniziare
 
@@ -74,7 +74,7 @@ Le istruzioni seguenti mostrano come eseguire l’aggiornamento utilizzando Comp
 
 1. Aggiungi o rimuovi pacchetti specifici in base alle tue esigenze.
 
-   Se ad esempio si esegue l&#39;aggiornamento da Magenti Open Source ad Adobe Commerce, rimuovere il pacchetto di Magento Open Source.
+   Se ad esempio si esegue l&#39;aggiornamento da Magento Open Source ad Adobe Commerce, rimuovere il pacchetto di Magento Open Source.
 
    ```bash
    composer remove magento/product-community-edition --no-update
@@ -88,15 +88,15 @@ Le istruzioni seguenti mostrano come eseguire l’aggiornamento utilizzando Comp
 
    - _Adobe Commerce:_
 
-      ```bash
-      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
-      ```
+     ```bash
+     composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
+     ```
 
    - _Magento Open Source:_
 
-      ```bash
-      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
-      ```
+     ```bash
+     composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
+     ```
 
 1. Aggiorna l’istanza utilizzando quanto segue `composer require-commerce` sintassi comando:
 
@@ -108,7 +108,7 @@ Le istruzioni seguenti mostrano come eseguire l’aggiornamento utilizzando Comp
 
    - `<product>` —(Obbligatorio) Il pacchetto da aggiornare. Per gli impianti locali, tale valore deve essere `product-community-edition` o `product-enterprise-edition`.
 
-   - `<version>` —(Obbligatorio) La versione di Adobe Commerce o del Magento Open Source a cui si sta effettuando l&#39;aggiornamento. Ad esempio: `2.4.3`.
+   - `<version>` —(Obbligatorio) La versione di Adobe Commerce o del Magento Open Source a cui si sta effettuando l&#39;aggiornamento. Ad esempio, `2.4.3`.
 
    - `--no-update` —(Obbligatorio) Disattiva l&#39;aggiornamento automatico delle dipendenze.
 
@@ -117,6 +117,7 @@ Le istruzioni seguenti mostrano come eseguire l’aggiornamento utilizzando Comp
    - `--force-root-updates` —(Facoltativo) Sostituisce tutti i valori personalizzati in conflitto con i valori Magenti previsti.
 
    - `--help` —(Facoltativo) Fornisce dettagli sull&#39;utilizzo del plug-in.
+
    Se nessuno dei due `--interactive-root-conflicts` né `--force-root-updates` vengono specificati, il comando mantiene i valori esistenti in conflitto e visualizza un messaggio di avviso. Per ulteriori informazioni sul plug-in, consulta [File README utilizzo plug-in](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
 
 1. Aggiornare le dipendenze.

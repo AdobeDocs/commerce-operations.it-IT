@@ -24,7 +24,7 @@ La spedizione e l&#39;evasione hanno alcuni fattori di base che fungono da base,
 
 - **Prodotto**- Ogni prodotto è diverso in termini di numero di articoli, peso, destinazione e durata. Le aziende devono analizzare questi dettagli per comprendere il costo totale della spedizione, in quanto i diversi prodotti hanno costi di spedizione diversi.
 
-- **Imballaggio**—Anche l&#39;imballaggio svolge un ruolo importante nella comprensione del metodo di spedizione e del costo. Ad esempio, il prodotto è fragile o è confezionato come regalo?
+- **Imballaggio**—L&#39;imballaggio svolge anche un ruolo importante nella comprensione del metodo di spedizione e del costo. Ad esempio, il prodotto è fragile o è confezionato come regalo?
 
 - **Stagione**- Quali cambiamenti dovrebbero essere apportati durante le stagioni di picco, come la frenesia di clic e i festival.
 
@@ -50,7 +50,7 @@ Quando decidi una strategia di spedizione e di evasione, utilizza le seguenti be
 
 - Assemblare il team giusto con le persone giuste che hanno le competenze giuste
 - Impostazione degli obiettivi per i team da seguire
-- Scegliere la strategia di spedizione più adatta alle esigenze aziendali
+- Scegliere la strategia di spedizione più adatta alle esigenze dell&#39;azienda
 - Revisione della strategia e ripetizione quando necessario
 
 ## B2B e B2C

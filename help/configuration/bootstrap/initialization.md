@@ -101,7 +101,7 @@ Quando la richiesta viene reindirizzata al punto di ingresso, l’applicazione C
 - In entrata [sviluppatore](application-modes.md#developer-mode) in modo che, ogni volta che la risorsa viene richiesta, il contenuto restituito sia aggiornato.
 - In entrata [predefinito](application-modes.md#default-mode) In questa modalità, la risorsa recuperata viene pubblicata in modo che sia accessibile dall’URL richiesto in precedenza.
 
-   Tutte le richieste future per la risorsa statica vengono elaborate dal server allo stesso modo dei file statici, ovvero senza coinvolgere il punto di ingresso. Se è necessario sincronizzare i file pubblicati con quelli originali, il `pub/static` La directory deve essere rimossa; di conseguenza, i file vengono ripubblicati automaticamente con la richiesta successiva.
+  Tutte le richieste future per la risorsa statica vengono elaborate dal server allo stesso modo dei file statici, ovvero senza coinvolgere il punto di ingresso. Se è necessario sincronizzare i file pubblicati con quelli originali, il `pub/static` La directory deve essere rimossa; di conseguenza, i file vengono ripubblicati automaticamente con la richiesta successiva.
 
 ### Punto di ingresso risorse multimediali
 

@@ -104,7 +104,7 @@ La configurazione del tema include tutti i temi registrati nel sistema Commerce;
 
 La chiave dell’array è il percorso del tema completo: `area` + `theme path`
 
-Ad esempio: `frontend/Magento/luma`.
+Ad esempio, `frontend/Magento/luma`.
 `frontend` è l’area e `Magento/luma` è il percorso del tema.
 
 Il valore dell’array è dato dal tema: codice, titolo, percorso, ID principale
@@ -128,4 +128,3 @@ Esempio completo:
 >
 >- _Registrazione tema_. Se i dati di un tema sono definiti in `config.php` ma il codice sorgente del tema non è presente nel file system, il tema viene ignorato (ovvero non registrato).
 >- _Rimozione tema_. Se un tema non è presente in `config.php` ma il codice sorgente è presente nel file system, il tema non viene rimosso.
-

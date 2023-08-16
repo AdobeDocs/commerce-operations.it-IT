@@ -1,6 +1,6 @@
 ---
 title: Panoramica sulla sicurezza
-description: Leggete una breve panoramica delle impostazioni di sicurezza per l'applicazione Adobe Commerce e Magenti Open Source.
+description: Leggete una breve panoramica delle impostazioni di sicurezza per l'applicazione Adobe Commerce e Magento Open Source.
 feature: Configuration, Security
 exl-id: e596d03f-8428-4ad7-a563-8b7f371ed5b4
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947

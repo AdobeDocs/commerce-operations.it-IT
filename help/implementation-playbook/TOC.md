@@ -1,11 +1,11 @@
 ---
 user-guide-title: Playbook di implementazione
-user-guide-description: Scopri le strategie per pianificare e implementare un sito Adobe Commerce di successo.
+user-guide-description: Scopri le strategie per la pianificazione e l’implementazione di un sito Adobe Commerce di successo.
 mini-toc-levels: 3
 source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 

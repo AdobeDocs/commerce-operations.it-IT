@@ -1,6 +1,6 @@
 ---
 title: Installazione rapida on-premise
-description: Per installare Adobe Commerce o Magenti Open Source nell’infrastruttura di tua proprietà, segui la procedura riportata di seguito.
+description: Per installare Adobe Commerce o Magento Open Source nell’infrastruttura di tua proprietà, segui la procedura riportata di seguito.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Installazione rapida on-premise
 
-Utilizziamo [Compositore](https://getcomposer.org/) per gestire Adobe Commerce e i componenti di Magento Open Source e le relative dipendenze. L’utilizzo di Composer per ottenere il metapacchetto Adobe Commerce e Magenti Open Source offre i seguenti vantaggi:
+Utilizziamo [Compositore](https://getcomposer.org/) per gestire Adobe Commerce e i componenti di Magento Open Source e le relative dipendenze. L’utilizzo di Composer per ottenere il metapacchetto Adobe Commerce e Magento Open Source offre i seguenti vantaggi:
 
 - Riutilizzare le librerie di terze parti senza unirle al codice sorgente
 - Ridurre i conflitti di estensione e i problemi di compatibilità utilizzando un’architettura basata su componenti con una solida gestione delle dipendenze
@@ -69,11 +69,11 @@ Per passare al proprietario del file system:
 
 ## Ottieni il metapacchetto
 
-Per ottenere il metapacchetto Adobe Commerce o Magenti Open Source:
+Per ottenere il metapacchetto Adobe Commerce o Magento Open Source:
 
 1. Accedere al server applicazioni come, o passare a, [proprietario del file system](prerequisites/file-system/overview.md).
 1. Passare alla directory principale dei documenti del server Web o a una directory configurata come directory principale dei documenti host virtuale.
-1. Crea un progetto Compositore utilizzando il metapacchetto Adobe Commerce o Magenti Open Source.
+1. Crea un progetto Compositore utilizzando il metapacchetto Adobe Commerce o Magento Open Source.
 
    **Magento Open Source**
 
@@ -125,7 +125,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ## Imposta autorizzazioni file
 
-È necessario impostare le autorizzazioni di lettura/scrittura per il gruppo di server Web prima di installare Adobe Commerce o il Magento Open Source. Ciò è necessario affinché la riga di comando possa scrivere file nel file system.
+È necessario impostare le autorizzazioni di lettura-scrittura per il gruppo di server Web prima di installare Adobe Commerce o il Magento Open Source. Ciò è necessario affinché la riga di comando possa scrivere file nel file system.
 
 ```terminal
 cd /var/www/html/<magento install directory>
@@ -137,7 +137,7 @@ chmod u+x bin/magento
 
 ## Installare l’applicazione
 
-Per installare Adobe Commerce o Magenti Open Source è necessario utilizzare la riga di comando.
+Per installare Adobe Commerce o Magento Open Source è necessario utilizzare la riga di comando.
 
 In questo esempio si presuppone che la directory di installazione sia denominata `magento2ee`, il `db-host` si trova sullo stesso computer (`localhost`) e che il `db-name`, `db-user`, e `db-password` sono tutti `magento`:
 

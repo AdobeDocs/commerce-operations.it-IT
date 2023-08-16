@@ -1,6 +1,6 @@
 ---
 title: Ottieni le chiavi di autenticazione
-description: Segui questi passaggi per recuperare le credenziali di accesso ai pacchetti Adobe Commerce e Magenti Open Source Composer su repo.magento.com.
+description: Segui questi passaggi per recuperare le credenziali di accesso ai pacchetti Adobe Commerce e Magento Open Source Composer su repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Ottieni le chiavi di autenticazione
 
-Il `repo.magento.com` L’archivio è il luogo in cui vengono memorizzati i pacchetti Adobe Commerce e Magenti Open Source e Compositore di terze parti e richiede l’autenticazione. Utilizza il tuo account di Commerce Marketplace per generare una coppia di 32 caratteri *chiavi di autenticazione* per accedere all’archivio.
+Il `repo.magento.com` L’archivio è il luogo in cui vengono memorizzati i pacchetti Adobe Commerce e Magento Open Source e Compositore di terze parti e richiede l’autenticazione. Utilizza il tuo account di Commerce Marketplace per generare una coppia di 32 caratteri *chiavi di autenticazione* per accedere all’archivio.
 
-Per poter accedere ai pacchetti Adobe Commerce e Magenti Open Source, devi utilizzare le chiavi associate a un MAGEID a cui è stato concesso l’accesso a tali pacchetti. Il MAGEID è in genere il contatto principale sull’account Adobe Commerce e potrebbe non essere sempre il proprietario del progetto di infrastruttura cloud di Adobe Commerce.
+Per poter accedere ai pacchetti Adobe Commerce e Magento Open Source, devi utilizzare le chiavi associate a un MAGEID a cui è stato concesso l’accesso a tali pacchetti. Il MAGEID è in genere il contatto principale sull’account Adobe Commerce e potrebbe non essere sempre il proprietario del progetto di infrastruttura cloud di Adobe Commerce.
 
 >[!TIP]
 >
@@ -21,7 +21,6 @@ Per poter accedere ai pacchetti Adobe Commerce e Magenti Open Source, devi utili
 >
 >* Se si è la persona di contatto principale dell&#39;account, verificare che non siano presenti fatture in sospeso nell&#39;elenco dell&#39;account.
 >* Se le chiavi fornite dal contatto principale non funzionano e non sono presenti fatture in sospeso nell&#39;account, contattare [Supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) per assistenza nell’utilizzo del MAGEID del contatto principale.
-
 
 Per creare le chiavi di autenticazione:
 

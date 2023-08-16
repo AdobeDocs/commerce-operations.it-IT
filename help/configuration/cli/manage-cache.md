@@ -131,7 +131,7 @@ Per rimuovere gli elementi obsoleti dalla cache, puoi _pulita_ o _scaricamento_ 
 
   >[!TIP]
   >
-  >Pulisci sempre la cache dopo aver aggiornato le versioni di Magenti Open Source o Adobe Commerce, aggiornato da Magenti Open Source ad Adobe Commerce o installato B2B per Adobe Commerce o qualsiasi modulo.
+  >Pulisci sempre la cache dopo aver aggiornato le versioni di Magento Open Source o Adobe Commerce, aggiornato da Magento Open Source ad Adobe Commerce o installato B2B per Adobe Commerce o qualsiasi modulo.
 
 - Lo svuotamento di un tipo di cache svuota la memoria cache, il che potrebbe influire su altre applicazioni di processi che utilizzano lo stesso spazio di archiviazione.
 

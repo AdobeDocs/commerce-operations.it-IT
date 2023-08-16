@@ -15,13 +15,13 @@ Con la profilazione Commerce, puoi:
 
 - Abilita un profiler incorporato.
 
-   Puoi utilizzare un profiler integrato con Commerce per eseguire attività quali l’analisi delle prestazioni. La natura del profiling dipende dagli strumenti analitici utilizzati. Supportiamo più formati, tra cui HTML. Quando si abilita il profiler, viene `var/profiler.flag` viene generato un file che indica che il profiler è abilitato e le configurazioni. Se disabilitato, il file viene eliminato.
+  Puoi utilizzare un profiler integrato con Commerce per eseguire attività quali l’analisi delle prestazioni. La natura del profiling dipende dagli strumenti analitici utilizzati. Supportiamo più formati, tra cui HTML. Quando si abilita il profiler, viene `var/profiler.flag` viene generato un file che indica che il profiler è abilitato e le configurazioni. Se disabilitato, il file viene eliminato.
 
 - Visualizzare grafici delle dipendenze in una pagina Commerce.
 
-   A _grafico delle dipendenze_ è un elenco di dipendenze oggetto e di tutte le relative dipendenze, nonché di tutte le dipendenze per tali dipendenze e così via.
+  A _grafico delle dipendenze_ è un elenco di dipendenze oggetto e di tutte le relative dipendenze, nonché di tutte le dipendenze per tali dipendenze e così via.
 
-   Dovresti essere particolarmente interessato all’elenco di _dipendenze non utilizzate_: oggetti creati perché richiesti in alcuni costruttori, ma mai utilizzati (ovvero, nessuno dei relativi metodi è stato chiamato). Di conseguenza, il tempo del processore e la memoria impiegata per creare queste dipendenze vengono sprecati.
+  Dovresti essere particolarmente interessato all’elenco di _dipendenze non utilizzate_: oggetti creati perché richiesti in alcuni costruttori, ma mai utilizzati (ovvero, nessuno dei relativi metodi è stato chiamato). Di conseguenza, il tempo del processore e la memoria impiegata per creare queste dipendenze vengono sprecati.
 
 Commerce fornisce la funzionalità di base in [`Magento\Framework\Profiler`][profiler].
 
@@ -35,16 +35,16 @@ Puoi impostare il valore di `MAGE_PROFILER` in uno dei modi descritti in [Impost
 
 - `1` per abilitare l&#39;output di un profiler specifico.
 
-   Per abilitare un profiler specifico, puoi utilizzare uno dei seguenti valori:
+  Per abilitare un profiler specifico, puoi utilizzare uno dei seguenti valori:
 
    - `csvfile` che utilizza [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
    - Qualsiasi altro valore (eccetto `2`), incluso un valore vuoto, che utilizza [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
 
 - `2` per abilitare i grafici delle dipendenze.
 
-   I grafici delle dipendenze vengono in genere visualizzati nella parte inferiore di una pagina. Nella figura seguente viene illustrata una parte dell&#39;output:
+  I grafici delle dipendenze vengono in genere visualizzati nella parte inferiore di una pagina. Nella figura seguente viene illustrata una parte dell&#39;output:
 
-   ![Grafici delle dipendenze](../../assets/configuration/depend-graphs.png)
+  ![Grafici delle dipendenze](../../assets/configuration/depend-graphs.png)
 
 ## Comandi CLI
 

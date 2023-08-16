@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Installazione sicura
 
-Per utilizzare Secure Sockets Layer (SSL), noto anche come HTTPS, sia per Admin che per la vetrina, è necessario impostare tutti i seguenti parametri:
+Per utilizzare Secure Sockets Layer (SSL), noto anche come HTTPS, sia per Admin che per la vetrina, è necessario impostare tutti i parametri seguenti:
 
 * `--use-secure`: impostato su `1`
 * `--base-url-secure`: è impostato su un URL protetto (ovvero, a partire da `https://`)

@@ -1,6 +1,6 @@
 ---
 title: Adobe Managed Services
-description: Scopri in che modo Adobe Managed Services può supportare e mantenere l’implementazione di Adobe Commerce.
+description: Scopri come Adobe Managed Services può aiutare a supportare e mantenere l’implementazione di Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
@@ -374,9 +374,9 @@ Lo stack di sicurezza di Adobe per Managed Services crea la sicurezza in a ogni 
 
 I partner della piattaforma, come Amazon Web Services e Microsoft Azure, garantiscono la massima copertura di sicurezza durante l&#39;applicazione delle personalizzazioni della piattaforma, mentre il team Managed Services di Adobe fornisce servizi di sicurezza principali, come conformità, registrazione, autenticazione, scansione e monitoraggio, protezione del server e configurazione sicura delle applicazioni. Consulta [Sicurezza di Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html) per ulteriori informazioni.
 
-Il diagramma seguente mostra lo stack della tecnologia di sicurezza Adobe Managed Services:
+Il diagramma seguente mostra l’Adobe di stack della tecnologia di sicurezza Managed Services:
 
-![Diagramma che mostra lo stack di sicurezza di Adobe Managed Services](../../assets/playbooks/managed-services-security-stack.svg)
+![Diagramma che mostra lo stack di sicurezza Managed Services di Adobe](../../assets/playbooks/managed-services-security-stack.svg)
 
 ## Assistenza per l&#39;aggiornamento
 
@@ -443,7 +443,7 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
     <td>Collaboratore<br />Il CSE supporta il test di carico monitorando le prestazioni dell’applicazione e dell’infrastruttura.<br />Il CSE fornisce assistenza per la configurazione dello strumento Commerce Security Scan.</td>
   </tr>
   <tr>
-    <td>Test di accettazione utente su staging</td>
+    <td>Test di accettazione utente sullo staging</td>
     <td>Proprietario</td>
     <td>Collaboratore</td>
     <td>Collaboratore<br />Il CSE verifica che l’applicazione e l’infrastruttura stiano funzionando correttamente dopo l’aggiornamento.</td>

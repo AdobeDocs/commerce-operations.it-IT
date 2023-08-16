@@ -1,6 +1,6 @@
 ---
 title: Usa Redis per la cache predefinita
-description: Scopri come configurare Redis come cache predefinita per Adobe Commerce e Magenti Open Source.
+description: Scopri come configurare Redis come cache predefinita per Adobe Commerce e Magento Open Source.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
@@ -35,7 +35,7 @@ Con i seguenti parametri:
 | `cache-backend-redis-server` | server | Nome host completo, indirizzo IP o percorso assoluto di un socket UNIX. Il valore predefinito 127.0.0.1 indica che Redis è installato sul server Commerce. | `127.0.0.1` |
 | `cache-backend-redis-port` | porta | Porta di ascolto del server Redis | `6379` |
 | `cache-backend-redis-db` | database | Obbligatorio se si utilizza Redis sia per la cache predefinita che per quella a pagina intera. È necessario specificare il numero di database di una delle cache; l&#39;altra cache utilizza 0 per impostazione predefinita.<br><br>**Importante**: se utilizzi Redis per più di un tipo di memorizzazione in cache, i numeri di database devono essere diversi. È consigliabile assegnare il numero predefinito del database di memorizzazione nella cache a 0, il numero del database di memorizzazione nella cache delle pagine a 1 e il numero del database di memorizzazione nella sessione a 2. | `0` |
-| `cache-backend-redis-password` | password | La configurazione della password Redis abilita una delle funzioni di sicurezza integrate: `auth` che richiede l&#39;autenticazione dei client per accedere al database. La password viene configurata direttamente nel file di configurazione di Redis: `/etc/redis/redis.conf` |  |
+| `cache-backend-redis-password` | password | La configurazione della password Redis abilita una delle funzioni di sicurezza integrate: `auth` che richiede l&#39;autenticazione dei client per accedere al database. La password viene configurata direttamente nel file di configurazione di Redis: `/etc/redis/redis.conf` | |
 
 ### Esempio di comando
 
@@ -64,7 +64,7 @@ Con i seguenti parametri:
 | `page-cache-redis-server` | server | Nome host completo, indirizzo IP o percorso assoluto di un socket UNIX. Il valore predefinito 127.0.0.1 indica che Redis è installato sul server Commerce. | `127.0.0.1` |
 | `page-cache-redis-port` | porta | Porta di ascolto del server Redis | `6379` |
 | `page-cache-redis-db` | database | Obbligatorio se si utilizza Redis sia per la cache predefinita che per quella a pagina intera. È necessario specificare il numero di database di una delle cache; l&#39;altra cache utilizza 0 per impostazione predefinita.<br/>**Importante**: se utilizzi Redis per più di un tipo di memorizzazione in cache, i numeri di database devono essere diversi. È consigliabile assegnare il numero predefinito del database di memorizzazione nella cache a 0, il numero del database di memorizzazione nella cache delle pagine a 1 e il numero del database di memorizzazione nella sessione a 2. | `0` |
-| `page-cache-redis-password` | password | La configurazione della password Redis abilita una delle funzioni di sicurezza integrate: `auth` che richiede l&#39;autenticazione dei client per accedere al database. Configura la password nel file di configurazione Redis: `/etc/redis/redis.conf` |  |
+| `page-cache-redis-password` | password | La configurazione della password Redis abilita una delle funzioni di sicurezza integrate: `auth` che richiede l&#39;autenticazione dei client per accedere al database. Configura la password nel file di configurazione Redis: `/etc/redis/redis.conf` | |
 
 ### Esempio di comando
 
@@ -120,17 +120,17 @@ Dopo [configurazione di un cluster Redis in AWS](https://aws.amazon.com/getting-
    - Aprire una connessione SSH all’istanza EC2
    - Nell’istanza EC2, installa il client Redis:
 
-      ```bash
-      sudo apt-get install redis
-      ```
+     ```bash
+     sudo apt-get install redis
+     ```
 
    - Aggiungi una regola in entrata al gruppo di sicurezza EC2: Tipo `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Aggiungi una regola in entrata al gruppo di sicurezza del cluster ElastiCache: Type `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Connessione a Redis CLI:
 
-      ```bash
-      redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
-      ```
+     ```bash
+     redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
+     ```
 
 ### Configurare Commerce per l’utilizzo del cluster
 

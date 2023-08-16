@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Cancellazione della cache con vernice
 
-Questo argomento illustra le nozioni di base sull’utilizzo di Varnish come acceleratore di web-caching per Adobe Commerce e Magenti Open Source.
+Questo argomento illustra le nozioni di base sull’utilizzo di Varnish come acceleratore di web-caching per Adobe Commerce e Magento Open Source.
 
 ## Spurgatura vernice
 
@@ -24,21 +24,21 @@ Dopo aver installato e configurato la vernice per funzionare con Commerce, le se
 
 - Gestione di un sito Web.
 
-   Ad esempio, tutte le operazioni eseguite nell’amministratore in:
+  Ad esempio, tutte le operazioni eseguite nell’amministratore in:
 
    - **NEGOZI** > **Impostazioni** > **Configurazione** > GENERALE > **Generale**
    - **NEGOZI** > **Impostazioni** > **Configurazione** > GENERALE > **Impostazione valuta**
    - **NEGOZI** > **Impostazioni** > **Configurazione** > GENERALE > **Memorizza indirizzi e-mail**
 
-   Quando Commerce rileva tale modifica, viene visualizzato un messaggio che ti informa di aggiornare la cache.
+  Quando Commerce rileva tale modifica, viene visualizzato un messaggio che ti informa di aggiornare la cache.
 
 - Gestione di un negozio (ad esempio, aggiunta o modifica di categorie, prezzi, prodotti e regole di prezzo promozionali).
 
-   La vernice viene eliminata automaticamente quando si esegue una di queste operazioni.
+  La vernice viene eliminata automaticamente quando si esegue una di queste operazioni.
 
 - Gestione del codice sorgente.
 
-   È necessario aggiornare la cache ed eliminare periodicamente tutto ciò che si trova nel `generated/code` e `generated/metadata` directory. Per informazioni sull’aggiornamento della cache, consulta la sezione successiva.
+  È necessario aggiornare la cache ed eliminare periodicamente tutto ciò che si trova nel `generated/code` e `generated/metadata` directory. Per informazioni sull’aggiornamento della cache, consulta la sezione successiva.
 
 ## Configurare Commerce per eliminare la vernice
 

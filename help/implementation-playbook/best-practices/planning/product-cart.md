@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Best practice per la gestione del carrello dei prodotti
 
-Per ottenere prestazioni ottimali, utilizza le seguenti linee guida per gestire i limiti del carrello per Adobe Commerce e Magenti Open Source:
+Per ottenere prestazioni ottimali, utilizza le seguenti linee guida per gestire i limiti del carrello per Adobe Commerce e Magento Open Source:
 
 - Per le versioni 2.3.x - 2.4.2, consenti un massimo di 100 prodotti in un carrello.
 - Per le versioni 2.4.3 e successive, il miglioramento delle funzionalità delle regole di vendita ha aumentato il carrello a un massimo di 750.

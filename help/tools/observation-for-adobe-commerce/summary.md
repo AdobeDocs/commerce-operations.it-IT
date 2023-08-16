@@ -171,7 +171,7 @@ Il **[!UICONTROL Nginx access by node]** il fotogramma esamina i conteggi del `a
 
 ![registro di galera](../../assets/tools/galera-log.jpg)
 
-[[!DNL Galera]](https://galeracluster.com/library/galera-documentation.pdf) viene utilizzato per il cluster di database. Questo frame è incentrato su segnali particolari provenienti [!UICONTROL Galera] cluster. I segnali si concentrano sui nodi che entrano ed escono dal cluster, il che è un comportamento normale per mantenere l&#39;integrità dei dati del database. I nodi vengono mantenuti sincronizzati come [!UICONTROL Galera] modifiche allo stato del cluster.
+[[!DNL Galera]](https://galeracluster.com/library/galera-documentation.pdf) viene utilizzato per il cluster di database. Questo frame è incentrato su segnali particolari provenienti [!UICONTROL Galera] cluster. I segnali si concentrano sui nodi che entrano ed escono dal cluster, il che è un comportamento normale per mantenere l&#39;integrità dei dati del database. I nodi vengono mantenuti sincronizzati come [!UICONTROL Galera] modifiche dello stato del cluster.
 
 **Elenco di [!UICONTROL Galera] modifiche stato:**
 
@@ -257,7 +257,7 @@ Il **[!UICONTROL Database mysql-slow.log]** il fotogramma esegue un conteggio de
 
 ![redis sincronizzazione dal registro](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[[!DNL Redis]](https://redis.io/docs/about/) è un archivio della struttura dati in memoria open source (con licenza BSD) utilizzato come database, cache e broker di messaggi. Se configurato, può eseguire il caching di database e sessioni. Il **[!UICONTROL Redis synchronization from Log]** il frame si concentra su [[!DNL Redis] sincronizzazione](https://redis.io/docs/manual/replication/). Maggiore è il valore [!DNL Redis] set di dati, più è probabile che si verifichino problemi con la sincronizzazione (più dati da mantenere sincronizzati).
+[[!DNL Redis]](https://redis.io/docs/about/) è un archivio della struttura dei dati in memoria open source (con licenza BSD) utilizzato come database, cache e broker di messaggi. Se configurato, può eseguire il caching di database e sessioni. Il **[!UICONTROL Redis synchronization from Log]** il frame si concentra su [[!DNL Redis] sincronizzazione](https://redis.io/docs/manual/replication/). Maggiore è il valore [!DNL Redis] set di dati, più è probabile che si verifichino problemi con la sincronizzazione (più dati da mantenere sincronizzati).
 
 **[!DNL Redis]errori e messaggi:**
 

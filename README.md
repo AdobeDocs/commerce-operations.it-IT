@@ -2,7 +2,7 @@
 source-git-commit: 8b82081057af7d134528988d3f9f7cf53f4d7525
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 # Documentazione tecnica di Adobe Commerce
@@ -11,7 +11,7 @@ Apprezziamo i contributi della nostra community e dei dipendenti Adobi esterni a
 
 ## Codice di condotta open source Adobe
 
-Questo progetto ha adottato [Codice di condotta open source Adobe](code-of-conduct.md) o [Codice di condotta .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, vedere [Contribuire](contributing.md) articolo.
+Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](code-of-conduct.md) o il [Codice di condotta di .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, consulta l’articolo [Contribuzione](contributing.md).
 
 ## Informazioni sui contributi ai contenuti Adobe
 

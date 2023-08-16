@@ -1,6 +1,6 @@
 ---
 title: Applicare le patch
-description: Scopri i metodi per applicare le patch a un progetto Adobe Commerce o Magenti Open Source.
+description: Scopri i metodi per applicare le patch a un progetto Adobe Commerce o Magento Open Source.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt

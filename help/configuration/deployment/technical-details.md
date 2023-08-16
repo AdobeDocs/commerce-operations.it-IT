@@ -76,15 +76,15 @@ Durante la modalità di produzione, l’amministratore mostra il seguente compor
    - Come discusso in precedenza, qualsiasi impostazione di configurazione in `config.php` o `env.php` è bloccato e non può essere modificato in Admin.
    - È possibile modificare le impostazioni locali dell&#39;amministratore solo nelle lingue utilizzate dai temi distribuiti
 
-      Nella figura seguente viene illustrato un esempio di **Impostazione account** > **Impostazioni internazionali interfaccia** nell’elenco Admin (Amministratore) vengono visualizzate solo due impostazioni internazionali distribuite:
+     Nella figura seguente viene illustrato un esempio di **Impostazione account** > **Impostazioni internazionali interfaccia** nell’elenco Admin (Amministratore) vengono visualizzate solo due impostazioni internazionali distribuite:
 
-      ![È possibile modificare le impostazioni locali dell&#39;amministratore solo in impostazioni locali distribuite](../../assets/configuration/split-deploy-admin-locale.png)
+     ![È possibile modificare le impostazioni locali dell&#39;amministratore solo in impostazioni locali distribuite](../../assets/configuration/split-deploy-admin-locale.png)
 
 - Non è possibile modificare le configurazioni locali per alcun ambito utilizzando Admin.
 
-   È consigliabile apportare queste modifiche prima di passare alla modalità di produzione.
+  È consigliabile apportare queste modifiche prima di passare alla modalità di produzione.
 
-   È comunque possibile configurare le impostazioni locali utilizzando le variabili di ambiente o `config:set` Comando CLI con il percorso `general/locale/code`.
+  È comunque possibile configurare le impostazioni locali utilizzando le variabili di ambiente o `config:set` Comando CLI con il percorso `general/locale/code`.
 
 ## Installare e rimuovere cron
 
@@ -167,7 +167,7 @@ Per facilitare la gestione della configurazione, vengono forniti i seguenti coma
 - [`magento app:config:dump`](../cli/export-configuration.md) per scrivere le impostazioni di configurazione amministratore in `config.php` e `env.php` (eccetto impostazioni sensibili)
 - [`magento config:set`](../cli/set-configuration-values.md) per impostare i valori delle impostazioni specifiche del sistema sul sistema di produzione.
 
-   Utilizzare l&#39;opzione `--lock` per bloccare l’opzione in Admin (rendendo cioè l’impostazione non modificabile). Se un&#39;impostazione è già bloccata, utilizzare `--lock` per modificare l&#39;impostazione.
+  Utilizzare l&#39;opzione `--lock` per bloccare l’opzione in Admin (rendendo cioè l’impostazione non modificabile). Se un&#39;impostazione è già bloccata, utilizzare `--lock` per modificare l&#39;impostazione.
 
 - [`magento config:sensitive:set`](../cli/set-configuration-values.md) per impostare i valori delle impostazioni sensibili sul sistema di produzione.
 - [`magento app:config:import`](../cli/import-configuration.md) per importare le modifiche alla configurazione da `config.php` e `env.php` al sistema di produzione.

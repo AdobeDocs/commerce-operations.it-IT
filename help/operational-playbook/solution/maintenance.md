@@ -29,7 +29,7 @@ Con l&#39;upgrade, potrete garantire il futuro della vostra azienda e offrirvi l
 
 Di seguito è riportato un breve elenco di domande da porre durante la pianificazione dell&#39;aggiornamento:
 
-- **Pulizia sito**—Cosa posso mantenere e cosa posso cambiare? Quali nuove cose voglio implementare? Ad esempio, quali modifiche si desidera apportare alla tassonomia e alla struttura del prodotto o al contenuto?
+- **Pulizia sito**—Cosa posso mantenere e cosa posso cambiare? Quali nuove cose voglio implementare? Ad esempio, quali modifiche desideri apportare alla tassonomia e alla struttura del prodotto o al contenuto?
 
 - **Controllo di Analytics**—Quali sono i KPI correnti? Cosa mi dicono i dati sul modo in cui il mio sito potrebbe essere migliorato? Esistono nuovi KPI da implementare per il nuovo sito?
 

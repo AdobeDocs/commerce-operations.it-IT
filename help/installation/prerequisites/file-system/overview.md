@@ -1,6 +1,6 @@
 ---
 title: Proprietà e autorizzazioni dei file
-description: Scopri l’importanza delle autorizzazioni per il file system quando utilizzi le installazioni on-premise di Adobe Commerce e Magenti Open Source.
+description: Scopri l’importanza delle autorizzazioni per il file system quando utilizzi le installazioni on-premise di Adobe Commerce e Magento Open Source.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -21,16 +21,17 @@ Esistono due tipi di proprietari del file system:
 
 - **Hosting condiviso con un singolo utente**
 
-   I provider di hosting condivisi consentono di accedere al server applicazioni come un unico utente. In qualità di utente singolo, puoi accedere, trasferire file tramite FTP ed eseguire il server web. È possibile impostare un valore [`umask`](#restrict-access-with-a-umask) limitare ulteriormente l’accesso, in particolare in un ambiente di produzione.
+  I provider di hosting condivisi consentono di accedere al server applicazioni come un unico utente. In qualità di utente singolo, puoi accedere, trasferire file tramite FTP ed eseguire il server web. È possibile impostare un valore [`umask`](#restrict-access-with-a-umask) limitare ulteriormente l’accesso, in particolare in un ambiente di produzione.
 
 - **Hosting privato con due utenti**
 
-   L&#39;hosting privato è utile se gestisci un server applicazioni. Ogni utente ha una responsabilità specifica:
+  L&#39;hosting privato è utile se gestisci un server applicazioni. Ogni utente ha una responsabilità specifica:
 
    - Il _utente server web_ esegue l’amministratore e la vetrina.
 
    - Il _utente della riga di comando_ esegue processi cron e utilità della riga di comando.
-   Entrambi gli utenti richiedono le stesse autorizzazioni per il file system, pertanto è consigliabile utilizzare un [gruppo condiviso](configure-permissions.md#set-ownership-and-permissions-for-two-users) e imposta un [`umask`](#restrict-access-with-a-umask).
+
+  Entrambi gli utenti richiedono le stesse autorizzazioni per il file system, pertanto è consigliabile utilizzare un [gruppo condiviso](configure-permissions.md#set-ownership-and-permissions-for-two-users) e imposta un [`umask`](#restrict-access-with-a-umask).
 
 ### Limitare l’accesso con una maschera
 
@@ -40,7 +41,7 @@ Per rafforzare la sicurezza, in particolare in un ambiente di produzione su un s
 >
 >La sicurezza del file system è complessa e importante. È consigliabile consultare un amministratore di sistema o un amministratore di rete esperto prima di decidere il livello di autorizzazioni da impostare. Ti forniamo un meccanismo da utilizzare, ma la creazione di una strategia di autorizzazioni è responsabilità tua.
 
-Adobe Commerce e Magenti Open Source utilizzano una maschera predefinita a tre bit: `002`. Sottrarre la maschera di default dai valori di default UNIX 666 per i file e 777 per le directory.
+Adobe Commerce e Magento Open Source utilizzano una maschera predefinita a tre bit: `002`. Sottrarre la maschera di default dai valori di default UNIX 666 per i file e 777 per le directory.
 
 Ad esempio:
 
@@ -64,4 +65,4 @@ Vengono ulteriormente discusse le raccomandazioni sulle autorizzazioni in [Autor
 
 >[!TIP]
 >
->Prima di installare Adobe Commerce o Magenti Open Source, controlla [Configurare la proprietà e le autorizzazioni dei file](configure-permissions.md).
+>Prima di installare Adobe Commerce o Magento Open Source, controlla [Configurare la proprietà e le autorizzazioni dei file](configure-permissions.md).

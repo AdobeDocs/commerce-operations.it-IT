@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Fasi di aggiornamento del percorso
 
-Gli aggiornamenti richiedono attenzione, pianificazione e gestione. Per comprendere meglio il percorso di aggiornamento per Adobe Commerce e Magenti Open Source, il processo è suddiviso in tre fasi principali:
+Gli aggiornamenti richiedono attenzione, pianificazione e gestione. Per comprendere meglio il percorso di aggiornamento per Adobe Commerce e Magento Open Source, il processo è suddiviso in tre fasi principali:
 
 - [Avvio del progetto](project-launch.md)
 - [Pianificazione annuale](annual-planning.md)

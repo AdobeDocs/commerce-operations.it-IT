@@ -17,7 +17,7 @@ Esistono due versioni di [!DNL Commerce]:
 
 _Magento Open Source_ è la versione gratuita, precedentemente denominata Community di Magento. Puoi scaricare, personalizzare ed eseguire la piattaforma sul tuo server o provider di hosting di tua scelta.
 
-La maggior parte dei commercianti usa il Magento Open Source a causa del basso costo e della natura aperta. Per gli sviluppatori, non ha molta importanza se sviluppano su Magenti Open Source o Adobe Commerce. Tuttavia, Adobe Commerce dispone di più funzioni integrate che possono essere utilizzate con facilità.
+La maggior parte dei commercianti usa il Magento Open Source a causa del basso costo e della natura aperta. Per gli sviluppatori, non ha molta importanza se sviluppano su Magento Open Source o Adobe Commerce. Tuttavia, Adobe Commerce dispone di più funzioni integrate che possono essere utilizzate con facilità.
 
 _Adobe Commerce_ è la versione a pagamento, precedentemente nota come Magento Enterprise. Essendo la versione premium, ci sono un sacco di funzioni aggiuntive.
 

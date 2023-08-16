@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Gateway di pagamento
 
-C&#39;è stato un tempo in cui il contante era la principale fonte di transazioni, ma il mondo online ha preso il sopravvento e i metodi di pagamento online stanno sostituendo i vecchi metodi di pagamento. Tutto è ora online, il che rende le cose più facili e accessibili, tra cui carte di credito, e-wallet e bonifici bancari.
+C&#39;è stato un tempo in cui il contante era la principale fonte di transazioni, ma il mondo online ha preso il sopravvento e i metodi di pagamento online stanno sostituendo i vecchi metodi di pagamento. Tutto è ora online, il che rende le cose più facili e accessibili, comprese le carte di credito, gli e-wallet e i bonifici bancari.
 
 ![Logo provider gateway di pagamenti](../../assets/playbooks/payment-gateways.png)
 

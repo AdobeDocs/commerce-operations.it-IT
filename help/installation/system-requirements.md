@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Requisiti di sistema
 
-Di seguito vengono riepilogate le dipendenze software e i servizi testati per Adobe Commerce e Magenti Open Source.
+Di seguito vengono riepilogate le dipendenze software e i servizi testati per Adobe Commerce e Magento Open Source.
 
 Esistono alcune differenze nelle dipendenze di Commerce dall’infrastruttura Cloud. Il supporto per la versione del servizio e la compatibilità per l’infrastruttura cloud di Adobe Commerce è determinato dai servizi testati e distribuiti negli ambienti cloud ospitati e talvolta differisce dalle versioni supportate dalle distribuzioni Adobe Commerce on-premise. Ad esempio, l’Elasticsearch 7.17 è supportato per Commerce 2.4.4 per le distribuzioni on-premise, mentre OpenSearch 1.2 è supportato per Commerce 2.4.4 sull’infrastruttura cloud.
 
-Le tabelle seguenti mostrano le versioni delle dipendenze software di terze parti testate da Adobe con specifiche versioni di Adobe Commerce e Magenti Open Source.
+Le tabelle seguenti mostrano le versioni delle dipendenze software di terze parti testate da Adobe con specifiche versioni di Adobe Commerce e Magento Open Source.
 
 Adobe supporta solo la combinazione di requisiti di sistema descritti nelle tabelle seguenti. Ad esempio, 2.4.5 è completamente testato con MariaDB 10.4. L’Adobe consiglia di eseguire l’aggiornamento a MariaDB 10.4 prima di eseguire l’aggiornamento a 2.4.5.
 
@@ -52,7 +52,7 @@ Consulta [Configurare i servizi](https://experienceleague.adobe.com/docs/commerc
 
 ## Impostazioni PHP
 
-Esistono impostazioni di configurazione PHP particolari, come `memory_limit` che può aiutarti a evitare problemi comuni quando utilizzi Adobe Commerce e Magenti Open Source. Consulta [Impostazioni PHP richieste](prerequisites/php-settings.md).
+Esistono impostazioni di configurazione PHP particolari, come `memory_limit` che può aiutarti a evitare problemi comuni quando utilizzi Adobe Commerce e Magento Open Source. Consulta [Impostazioni PHP richieste](prerequisites/php-settings.md).
 
 Per istruzioni sulla configurazione del cloud, consulta [Impostazioni PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) nel _Commerce su infrastruttura cloud_ guida.
 
@@ -98,7 +98,7 @@ Questa sezione descrive il supporto e la compatibilità per tutti gli altri tipi
 
 >[!NOTE]
 >
->I seguenti requisiti si applicano alla versione più recente della patch 2.4.x di Adobe Commerce e Magenti Open Source. Se pertinente, vengono fornite indicazioni sull’infrastruttura Commerce on Cloud.
+>I seguenti requisiti si applicano alla versione più recente della patch 2.4.x di Adobe Commerce e Magento Open Source. Se pertinente, vengono fornite indicazioni sull’infrastruttura Commerce on Cloud.
 
 ### Browser
 
@@ -124,7 +124,7 @@ L&#39;aggiornamento delle applicazioni e delle estensioni ottenute dalla Commerc
 
 Distribuzioni Linux, come RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian e simili. Microsoft Windows e macOS non sono supportati.
 
-Per alcune operazioni, Adobe Commerce e Magenti Open Source richiedono i seguenti strumenti di sistema:
+Per alcune operazioni, Adobe Commerce e Magento Open Source richiedono i seguenti strumenti di sistema:
 
 - [[!DNL bash]](https://www.gnu.org/software/bash/)
 - [[!DNL gzip]](https://www.gzip.org/)
@@ -146,7 +146,7 @@ Per l’infrastruttura Commerce on Cloud, consulta [Configurazione rapida](https
 
 ### Xdebug
 
-Per Adobe Commerce e Magenti Open Source, utilizza [php_xdebug 2.5.x](https://xdebug.org/download) o versione successiva (solo per ambienti di sviluppo; può avere un effetto negativo sulle prestazioni).
+Per Adobe Commerce e Magento Open Source, utilizza [php_xdebug 2.5.x](https://xdebug.org/download) o versione successiva (solo per ambienti di sviluppo; può avere un effetto negativo sulle prestazioni).
 
 Per Adobe Commerce su Cloud, consulta [Configura Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) nel _Commerce su infrastruttura cloud_ guida.
 

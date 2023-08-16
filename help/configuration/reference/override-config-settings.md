@@ -49,17 +49,17 @@ Il formato generale dei nomi delle variabili delle impostazioni di sistema è il
 
 - Ambito globale (ovvero l&#39;impostazione globale per _tutto_ ambiti)
 
-   Le variabili di ambito globali hanno il seguente formato:
+  Le variabili di ambito globali hanno il seguente formato:
 
-   `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
 
 - Un ambito specifico (ovvero l&#39;impostazione influisce solo su una visualizzazione store o su un sito Web specifici)
 
-   Le variabili dell’ambito della visualizzazione archivio, ad esempio, hanno il seguente formato:
+  Le variabili dell’ambito della visualizzazione archivio, ad esempio, hanno il seguente formato:
 
-   `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
 
-   Per ulteriori informazioni sugli ambiti, consulta:
+  Per ulteriori informazioni sugli ambiti, consulta:
 
    - [Passaggio 1: trovare il valore di ambito della visualizzazione del sito Web o dello store](#step-1-find-the-website-or-store-view-scope-value)
    - [Argomento della Guida utente di Commerce sull’ambito](https://docs.magento.com/user-guide/configuration/scope.html)
@@ -97,11 +97,11 @@ Come leggere la tabella:
 
 - `Path in Admin` colonna
 
-   I valori prima della virgola sono percorsi nella navigazione dell’amministratore. I valori dopo la virgola sono opzioni nel riquadro di destra.
+  I valori prima della virgola sono percorsi nella navigazione dell’amministratore. I valori dopo la virgola sono opzioni nel riquadro di destra.
 
 - `Variable name` column è il nome della variabile di ambiente corrispondente.
 
-   Se lo desideri, puoi specificare i valori di sistema per questi parametri di configurazione come variabili di ambiente.
+  Se lo desideri, puoi specificare i valori di sistema per questi parametri di configurazione come variabili di ambiente.
 
    - L&#39;intero nome della variabile è sempre TUTTO MAIUSC
    - Inizia un nome di variabile con `CONFIG__` (nota due caratteri di sottolineatura)

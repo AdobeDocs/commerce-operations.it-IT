@@ -7,13 +7,13 @@ ht-degree: 0%
 ---
 # Dati sensibili
 
-Adobe Commerce e Magenti Open Source utilizzano la chiave di crittografia per crittografare quanto segue:
+Adobe Commerce e Magento Open Source utilizzano la chiave di crittografia per crittografare quanto segue:
 
 * Informazioni carta di credito
 * Nomi utente e password specificati nella configurazione amministratore (ad esempio, accessi ai gateway di pagamento)
 * Valori CAPTCHA inviati tramite la rete
 
-Adobe Commerce e Magenti Open Source fanno *non* crittografare:
+Adobe Commerce e Magento Open Source fanno *non* crittografare:
 
 * Password e nomi utente amministrativi e cliente (con hash)
 * Indirizzo

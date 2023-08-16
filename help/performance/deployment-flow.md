@@ -1,6 +1,6 @@
 ---
 title: Flusso di implementazione
-description: Scopri i passaggi necessari per distribuire Adobe Commerce o Magenti Open Source in un ambiente di produzione.
+description: Scopri i passaggi necessari per distribuire Adobe Commerce o Magento Open Source in un ambiente di produzione.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
 source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
@@ -116,5 +116,5 @@ Il comando viene eseguito in background e non consente di impostare opzioni aggi
 Questi passaggi sono consigliati, ma non sono obbligatori. Puoi eseguirli immediatamente prima di avviare il negozio in modalità di produzione. L&#39;elenco include:
 
 * Reindicizza i dati per evitare la presenza di dati incoerenti negli indici.
-* Svuota la cache per assicurarti di non lasciare dati obsoleti o errati nella cache.
+* Svuota la cache per assicurarti che nella cache non siano rimasti dati obsoleti o errati.
 * Riscaldamento della cache, che richiama in anticipo le pagine più popolari o critiche dello store, in modo che la cache per esse venga generata e memorizzata. Questa operazione può essere eseguita con qualsiasi crawler Internet o manualmente, se si dispone di un piccolo negozio.

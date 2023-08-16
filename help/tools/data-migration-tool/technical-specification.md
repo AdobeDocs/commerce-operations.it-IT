@@ -339,7 +339,7 @@ Sotto il nodo `<value>`, esistono regole che funzionano con la colonna &quot;val
 
 ### Modalità di migrazione dati
 
-In questa modalità, la maggior parte dei dati viene migrata. Prima della migrazione dei dati, per ogni passaggio vengono eseguite le fasi di controllo dell&#39;integrità. Se il controllo di integrità viene superato, il [!DNL Data Migration Tool] installa le tabelle deltalog (con prefisso `m2_cl_*`) e i trigger corrispondenti al database del Magento 1 ed esegue la fase di migrazione dei dati dei passaggi. Quando la migrazione viene completata senza errori, la verifica del volume verifica la coerenza dei dati. Se effettui la migrazione del negozio live, puoi visualizzare un messaggio di avviso. Non preoccuparti, la migrazione delta si occupa di questi dati incrementali. I passaggi di migrazione più importanti sono Map, URL Rewrite ed EAV.
+In questa modalità, la maggior parte dei dati viene migrata. Prima della migrazione dei dati, le fasi di controllo dell&#39;integrità vengono eseguite per ogni fase. Se il controllo di integrità viene superato, il [!DNL Data Migration Tool] installa le tabelle deltalog (con prefisso `m2_cl_*`) e i trigger corrispondenti al database del Magento 1 ed esegue la fase di migrazione dei dati dei passaggi. Quando la migrazione viene completata senza errori, la verifica del volume verifica la coerenza dei dati. Se effettui la migrazione del negozio live, puoi visualizzare un messaggio di avviso. Non preoccuparti, la migrazione delta si occupa di questi dati incrementali. I passaggi di migrazione più importanti sono Map, URL Rewrite ed EAV.
 
 #### Passaggio mappa
 
@@ -457,7 +457,7 @@ Dopo la migrazione principale, i clienti della vetrina avrebbero potuto aggiunge
 
 ## Origini dati
 
-Per raggiungere le origini dati del Magento 1 e del Magento 2 e operare con i relativi dati (selezionare, aggiornare, inserire, eliminare), nella cartella Risorse sono presenti molte classi. Migration\ResourceModel\Source e Migration\ResourceModel\Destination sono classi principali. Tutti i passaggi di migrazione lo utilizzano per operare con i dati. Questi dati sono contenuti in classi quali Migration\ResourceModel\Document, Migration\ResourceModel\Record, Migration\ResourceModel\Structure, ecc.
+Per raggiungere le origini dati del Magento 1 e del Magento 2 e operare con i relativi dati (selezionare, aggiornare, inserire, eliminare), nella cartella Risorse sono presenti molte classi. Migration\ResourceModel\Source e Migration\ResourceModel\Destination sono classi principali. Tutti i passaggi di migrazione lo utilizzano per operare con i dati. Questi dati sono contenuti in classi come Migration\ResourceModel\Document, Migration\ResourceModel\Record, Migration\ResourceModel\Structure, ecc.
 
 Di seguito è riportato un diagramma classi di queste classi:
 

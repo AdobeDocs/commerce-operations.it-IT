@@ -29,17 +29,17 @@ Considera i seguenti termini:
 
 - **Sito Web**: è il contenitore principale per siti, metodi di consegna, metodi di pagamento e altro ancora. Per creare siti completamente separati che non condividono il carrello, i metodi di consegna o altri, è necessario creare siti web separati.
 
-   Gli account dei clienti dei siti web possono essere condivisi tra più siti web all’interno di una singola istanza di Commerce. Un sito web contiene almeno un negozio. I prezzi del catalogo devono essere gestiti a livello di sito web.
+  Gli account dei clienti dei siti web possono essere condivisi tra più siti web all’interno di una singola istanza di Commerce. Un sito web contiene almeno un negozio. I prezzi del catalogo devono essere gestiti a livello di sito web.
 
 - **Archivia**- è contenuto in un sito Web. A sua volta, un negozio contiene almeno un *visualizzazione store*.
 
-   Più negozi possono condividere carrello, sessioni utente, gateway di pagamento e altro ancora, ma hanno strutture di catalogo e prezzo di catalogo separati.
+  Più negozi possono condividere carrello, sessioni utente, gateway di pagamento e altro ancora, ma hanno strutture di catalogo e prezzo di catalogo separati.
 
-   Impossibile gestire la quantità di catalogo (inventario) a livello di archivio. L&#39;inventario viene gestito solo a livello di sito Web o globale.
+  Impossibile gestire la quantità di catalogo (inventario) a livello di archivio. L&#39;inventario viene gestito solo a livello di sito Web o globale.
 
-   Le visualizzazioni del Negozio modificano il modo in cui vengono presentate le pagine e in genere vengono utilizzate per visualizzare un Negozio con layout o lingue diversi. Puoi gestire valute diverse per ogni visualizzazione del Negozio.
+  Le visualizzazioni del Negozio modificano il modo in cui vengono presentate le pagine e in genere vengono utilizzate per visualizzare un Negozio con layout o lingue diversi. Puoi gestire valute diverse per ogni visualizzazione del Negozio.
 
-   Ogni sito web e ogni visualizzazione store deve avere un identificatore univoco. Questo identificatore è necessario per utilizzare `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` variabili come segue:
+  Ogni sito web e ogni visualizzazione store deve avere un identificatore univoco. Questo identificatore è necessario per utilizzare `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` variabili come segue:
 
 - `MAGE_RUN_TYPE` può essere `store` o `website`
 

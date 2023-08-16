@@ -1,11 +1,11 @@
 ---
 title: Pianificazione della versione
-description: Scopri quando Adobe pianifica di annunciare il rilascio di nuove funzioni sostanziali per Adobe Commerce.
+description: Scopri quando Adobe intende annunciare il rilascio di nuove funzioni sostanziali per Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -63,7 +63,7 @@ Nella tabella seguente sono riportate le date dei rilasci pianificati (le date s
   </tr>
   <tr>
     <td>19 marzo 2024</td>
-    <td>--</td>
+    <td>—</td>
     <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta patch</a>: 2,4,7-beta3</td>
   </tr>
   <tr>

@@ -151,10 +151,9 @@ Per clonare l’archivio GitHub dei dati di esempio utilizzando il protocollo HT
 
 >[!WARNING]
 >
->Se stai installando dati di esempio *dopo* durante l&#39;installazione di Adobe Commerce o Magenti Open Source, è necessario eseguire anche il comando seguente per aggiornare il database e lo schema:
+>Se stai installando dati di esempio *dopo* durante l&#39;installazione di Adobe Commerce o Magento Open Source, è necessario eseguire anche il comando seguente per aggiornare il database e lo schema:
 >
->
-```bash
+>```bash
 ><magento_root>/bin/magento setup:upgrade
 >```
 

@@ -22,9 +22,9 @@ Prima di eseguire questo comando, è necessario effettuare le seguenti operazion
 
 ## Configurare il blocco
 
-Configurare un provider di blocchi per impedire l&#39;avvio di processi cron e gruppi cron duplicati. (Richiede Adobe Commerce o Magenti Open Source 2.2.x, 2.2.5 e versioni successive, e 2.3.3 e versioni successive).
+Configurare un provider di blocchi per impedire l&#39;avvio di processi cron e gruppi cron duplicati. (Richiede Adobe Commerce o Magento Open Source 2.2.x, 2.2.5 e versioni successive, e 2.3.3 e versioni successive).
 
-Per impostazione predefinita, Adobe Commerce e Magenti Open Source utilizzano il database per salvare i blocchi. Se sui tuoi server sono presenti più nodi, ti consigliamo di utilizzare Zookeeper come provider di blocchi.
+Per impostazione predefinita, Adobe Commerce e Magento Open Source utilizzano il database per salvare i blocchi. Se sui tuoi server sono presenti più nodi, ti consigliamo di utilizzare Zookeeper come provider di blocchi.
 
 Se esegui Adobe Commerce su un’infrastruttura cloud, non è necessario configurare le impostazioni del provider di blocchi. L&#39;applicazione configura il provider di blocco file per i progetti Pro durante il processo di provisioning. Consulta [Variabili cloud](https://devdocs.magento.com/cloud/env/variables-cloud.html).
 

@@ -1,6 +1,6 @@
 ---
 title: Configurare l’applicazione
-description: Scopri la configurazione post-installazione richiesta per le distribuzioni Adobe Commerce e Magenti Open Source on-premise.
+description: Scopri la configurazione post-installazione richiesta per le distribuzioni Adobe Commerce e Magento Open Source on-premise.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
 source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Configurare l’applicazione
 
-Ora che hai completato l’installazione di Adobe Commerce o Magenti Open Source, devi configurarlo. In questo argomento vengono fornite alcune impostazioni di configurazione consigliate.
+Ora che hai completato l’installazione di Adobe Commerce o Magento Open Source, devi configurarlo. In questo argomento vengono fornite alcune impostazioni di configurazione consigliate.
 
 ## Configura cron
 
@@ -79,7 +79,7 @@ Ulteriori informazioni:
 
 ### Configurare un server di posta elettronica
 
-Adobe Commerce e Magenti Open Source richiedono un server di posta elettronica. Non è consigliabile utilizzare un server specifico, ma è possibile provare a eseguire una delle operazioni seguenti:
+Adobe Commerce e Magento Open Source richiedono un server di posta elettronica. Non è consigliabile utilizzare un server specifico, ma è possibile provare a eseguire una delle operazioni seguenti:
 
 * suffisso per CentOS ([Tutorial sull’oceano digitale](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [Documentazione di CentOS](https://www.centos.org))
 * suffisso per Ubuntu ([Tutorial sull’oceano digitale](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [Documentazione di Ubuntu](https://help.ubuntu.com/community/MailServer))
@@ -92,7 +92,7 @@ Elasticsearch o OpenSearch sono necessari per tutte le installazioni a partire d
 
 ### Configurare una coda di messaggi
 
-A partire dalla versione 2.3.0, Adobe Commerce e Magenti Open Source includono la funzionalità di coda dei messaggi. Nelle versioni precedenti, è disponibile solo per Adobe Commerce.
+A partire dalla versione 2.3.0, Adobe Commerce e Magento Open Source includono la funzionalità di coda dei messaggi. Nelle versioni precedenti, è disponibile solo per Adobe Commerce.
 
 * [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 

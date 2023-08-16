@@ -1,6 +1,6 @@
 ---
 title: Gestore messaggi
-description: Segui questi passaggi per installare e configurare il software Message Broker richiesto (ad esempio [!DNL RabbitMQ]) per installazioni locali di Adobe Commerce e Magenti Open Source.
+description: Segui questi passaggi per installare e configurare il software Message Broker richiesto (ad esempio [!DNL RabbitMQ]) per installazioni locali di Adobe Commerce e Magento Open Source.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -15,10 +15,10 @@ Adobe Commerce utilizza [!DNL RabbitMQ] broker di messaggi open-source. Offre un
 
 Le code di messaggi forniscono un meccanismo di comunicazione asincrona in cui il mittente e il destinatario di un messaggio non si contattano a vicenda. Non è necessario che comunichino con la coda di messaggi contemporaneamente. Quando un mittente inserisce un messaggio in una coda, questo viene memorizzato fino a quando il destinatario non lo riceve.
 
-Prima di installare Adobe Commerce o Magenti Open Source, è necessario stabilire il sistema di code dei messaggi. La sequenza di base è:
+Prima di installare Adobe Commerce o Magento Open Source, è necessario stabilire il sistema di code dei messaggi. La sequenza di base è:
 
 1. Installa [!DNL RabbitMQ] ed eventuali prerequisiti.
-1. Connetti [!DNL RabbitMQ] ad Adobe Commerce o Magenti Open Source.
+1. Connetti [!DNL RabbitMQ] ad Adobe Commerce o Magento Open Source.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Consulta la sezione [[!DNL RabbitMQ]Matrice di versione /Erlang](https://www.rab
 
 Il [!DNL RabbitMQ] Il server è incluso in CentOS, ma la versione è spesso precedente. [!DNL RabbitMQ] consiglia di installare il pacchetto dal proprio sito web.
 
-Consulta la sezione [!DNL RabbitMQ] per ottenere la versione più recente supportata. Supporto di Adobe Commerce e Magenti Open Source 2.3 e 2.4 [!DNL RabbitMQ] 3.8.x.
+Consulta la sezione [!DNL RabbitMQ] per ottenere la versione più recente supportata. Supporto di Adobe Commerce e Magento Open Source 2.3 e 2.4 [!DNL RabbitMQ] 3.8.x.
 
 Fai riferimento a [Installazione su Linux basato su RPM](https://www.rabbitmq.com/install-rpm.html) per ulteriori informazioni.
 
@@ -71,7 +71,7 @@ Rivedi il funzionario [!DNL RabbitMQ] documentazione per configurare e gestire [
 
 ## Installa con [!DNL RabbitMQ] e connetti
 
-Se installi Adobe Commerce o Magenti Open Source _dopo_ installazione [!DNL RabbitMQ], aggiungere i seguenti parametri della riga di comando durante l&#39;installazione:
+Se installi Adobe Commerce o Magento Open Source _dopo_ installazione [!DNL RabbitMQ], aggiungere i seguenti parametri della riga di comando durante l&#39;installazione:
 
 ```bash
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"

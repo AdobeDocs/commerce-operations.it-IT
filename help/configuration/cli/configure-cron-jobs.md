@@ -49,7 +49,6 @@ L’applicazione Commerce utilizza attività cron che possono essere eseguite co
 >- Per evitare problemi durante l&#39;installazione e l&#39;aggiornamento, si consiglia vivamente di applicare le stesse impostazioni PHP sia alla configurazione della riga di comando PHP che alla configurazione del plug-in del server Web PHP. Per ulteriori informazioni, consulta [Impostazioni PHP richieste](../../installation/prerequisites/php-settings.md).
 >- In un sistema a più nodi, crontab può essere eseguito su un solo nodo. Questo vale solo se imposti più nodi web per motivi legati alle prestazioni o alla scalabilità.
 
-
 ### Creare la scheda Cronologia di Commerce
 
 A partire dalla versione 2.2, Commerce crea una scheda cronologica per te. Aggiungiamo la scheda cronologica di Commerce a qualsiasi scheda cronologica configurata per il proprietario del file system di Commerce. In altre parole, se hai già impostato le schede cronologiche per altre estensioni o applicazioni, vi aggiungiamo la scheda cronologica Commerce.
@@ -72,7 +71,6 @@ Utilizzare `--force` per riscrivere una scheda cronologica esistente.
 >
 >- `magento cron:install` non riscrive un crontab esistente all&#39;interno di `#~ MAGENTO START` e `#~ MAGENTO END` commenti nella scheda cronologica.
 >- `magento cron:install --force` non ha alcun effetto su eventuali lavori cron al di fuori dei commenti di Commerce.
-
 
 Per visualizzare la scheda cronologica, immettere il comando seguente come proprietario del file system:
 

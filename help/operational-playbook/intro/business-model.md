@@ -13,7 +13,7 @@ ht-degree: 1%
 
 B2B sta per &quot;business-to-business&quot;, mentre B2C significa &quot;business-to-consumer&quot;. In generale, le imprese B2B vendono prodotti e servizi direttamente ad altre imprese (nello specifico, vendono ai responsabili decisionali di qualsiasi impresa). Ciò può includere tutto, dalla produzione al consumatore.
 
-Questo è in contrasto con i modelli B2C, che generalmente vendono prodotti per uso personale direttamente ai clienti individuali. Questo può includere viaggi, vestiti, auto e molto altro.
+Questo è in contrasto con i modelli B2C, che in genere vendono prodotti per uso personale direttamente ai clienti individuali. Questo può includere viaggi, vestiti, auto e molto altro.
 
 Le aziende B2B devono concentrarsi su:
 

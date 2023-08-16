@@ -1,17 +1,17 @@
 ---
 title: Prerequisiti per l'installazione locale
-description: Ulteriori informazioni sulle dipendenze software necessarie per le installazioni on-premise di Adobe Commerce e Magenti Open Source.
+description: Ulteriori informazioni sulle dipendenze software necessarie per le installazioni on-premise di Adobe Commerce e Magento Open Source.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Prerequisiti per l&#39;installazione locale
 
-Prima di installare Adobe Commerce o Magenti Open Source, è necessario effettuare le seguenti operazioni:
+Prima di installare Adobe Commerce o Magento Open Source, è necessario effettuare le seguenti operazioni:
 
 * Configurare uno o più host che soddisfino i requisiti [requisiti di sistema](../system-requirements.md).
 * Se stai impostando più di un nodo web con bilanciamento del carico, imposta e verifica quella parte del sistema _prima di_ installare l&#39;applicazione.
@@ -27,23 +27,23 @@ Immetti i seguenti comandi come utente con `root` privilegi:
 
 * Ubuntu
 
-   ```bash
-   apt-get update
-   ```
+  ```bash
+  apt-get update
+  ```
 
-   ```bash
-   apt-get upgrade
-   ```
+  ```bash
+  apt-get upgrade
+  ```
 
 * CentOS
 
-   ```bash
-   yum -y update
-   ```
+  ```bash
+  yum -y update
+  ```
 
-   ```bash
-   yum -y upgrade
-   ```
+  ```bash
+  yum -y upgrade
+  ```
 
 ## Verifica prerequisiti
 

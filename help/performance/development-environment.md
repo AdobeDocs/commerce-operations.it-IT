@@ -27,19 +27,19 @@ In modalità di sviluppo, non eseguire comandi per la compilazione, la generazio
 
 * `setup:di:compile` genera classi generate automaticamente e cache di configurazione ottimizzate.
 
-   ```bash
-   bin/magento setup:di:compile
-   ```
+  ```bash
+  bin/magento setup:di:compile
+  ```
 
-   In modalità di sviluppo, il Magento esegue la generazione on-demand, senza bisogno di eseguirla. Se è stata modificata una firma di una classe e occorre rigenerarne la generazione automatica `factories/proxies/interceptors`, rimuovere tali classi o _generato_ cartella.
+  In modalità di sviluppo, il Magento esegue la generazione on-demand, senza bisogno di eseguirla. Se è stata modificata una firma di una classe e occorre rigenerarne la generazione automatica `factories/proxies/interceptors`, rimuovere tali classi o _generato_ cartella.
 
 * `setup:static-content:deploy` distribuisce contenuto statico per un archivio.
 
-   ```bash
-   bin/magento setup:static-content:deploy
-   ```
+  ```bash
+  bin/magento setup:static-content:deploy
+  ```
 
-   In modalità di sviluppo, il Magento lo esegue su richiesta; non è necessario eseguirlo.
+  In modalità di sviluppo, il Magento lo esegue su richiesta; non è necessario eseguirlo.
 
 ## Tempo di caricamento normale della pagina in una macchina virtuale
 

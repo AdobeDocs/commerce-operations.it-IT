@@ -1,6 +1,6 @@
 ---
 title: Panoramica sull'installazione locale
-description: Scopri la procedura di installazione per le distribuzioni locali di Adobe Commerce e Magenti Open Source.
+description: Scopri la procedura di installazione per le distribuzioni locali di Adobe Commerce e Magento Open Source.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Il diagramma seguente fornisce una panoramica di alto livello di _**on-premise**_ installazioni di Adobe Commerce e Magenti Open Source:
+>Il diagramma seguente fornisce una panoramica di alto livello di _**on-premise**_ installazioni di Adobe Commerce e Magento Open Source:
 
 ![Come funziona l’installazione](../assets/installation/install-diagram-24.svg)
 

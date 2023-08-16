@@ -62,7 +62,7 @@ Per creare una patch personalizzata:
 1. Creare un `patches/composer` nel progetto locale.
 1. Identifica il commit GitHub o la richiesta di pull da utilizzare per la patch. In questo esempio viene utilizzato [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) commit, collegato al problema GitHub [#6474](https://github.com/magento/magento2/issues/6474).
 1. Aggiungi `.patch` o `.diff` estensioni dell&#39;URL di commit. Utilizzare `.diff` per un file di dimensioni inferiori. Ad esempio: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
-1. Salvare la pagina come file in `patches/composer` directory. Ad esempio: `github-issue-6474.diff`.
+1. Salvare la pagina come file in `patches/composer` directory. Ad esempio, `github-issue-6474.diff`.
 1. Modifica il file e rimuovi `app/code/<VENDOR>/<PACKAGE>` da tutti i percorsi in modo che siano relativi al `vendor/<VENDOR>/<PACKAGE>` directory.
 
    >[!NOTE]

@@ -1,6 +1,6 @@
 ---
 title: Configurare una connessione remota al database MySQL
-description: Per configurare una connessione al database remoto per le installazioni locali di Adobe Commerce e Magenti Open Source, eseguire la procedura seguente.
+description: Per configurare una connessione al database remoto per le installazioni locali di Adobe Commerce e Magento Open Source, eseguire la procedura seguente.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -50,7 +50,7 @@ Utilizzare le linee guida seguenti per configurare le connessioni al database re
 * È necessario configurare una connessione per ogni nodo del server Web.
 * In genere si configura una connessione al database load balancer; tuttavia, il clustering del database può essere complesso e la configurazione dipende dall&#39;utente. L&#39;Adobe non fornisce raccomandazioni specifiche per il clustering del database.
 
-   Per ulteriori informazioni, consulta [Documentazione di MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  Per ulteriori informazioni, consulta [Documentazione di MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### Risoluzione dei problemi di connessione
 
@@ -97,6 +97,7 @@ Per creare una connessione remota:
    * CentOS: `service mysqld restart`
 
    * Ubuntu: `service mysql restart`
+
    >[!NOTE]
    >
    >Se MySQL non viene avviato correttamente, cercare l&#39;origine del problema in syslog. Risolvi il problema utilizzando [Documentazione di MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) o da un’altra fonte autorevole.
@@ -135,7 +136,7 @@ Nell’host del nodo web, immetti il seguente comando per verificare il funziona
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
-Se il monitoraggio MySQL viene visualizzato come segue, il database è pronto per Adobe Commerce o Magenti Open Source:
+Se il monitoraggio MySQL viene visualizzato come segue, il database è pronto per Adobe Commerce o Magento Open Source:
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -150,9 +151,9 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 Se il server Web è in cluster, immettere il comando su ciascun host del server Web.
 
-## Installare Adobe Commerce o Magenti Open Source
+## Installare Adobe Commerce o Magento Open Source
 
-Quando installi Adobe Commerce o Magenti Open Source, devi specificare quanto segue:
+Quando installi Adobe Commerce o Magento Open Source, devi specificare quanto segue:
 
 * L’URL di base (noto anche come *indirizzo store*) specifica il nome host o l’indirizzo IP del *nodo web*
 * L&#39;host del database è *server di database remoto* Indirizzo IP (o load balancer se il server di database è in cluster)

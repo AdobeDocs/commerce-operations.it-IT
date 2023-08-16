@@ -1,6 +1,6 @@
 ---
 title: Configurazione del motore di ricerca
-description: Configura un motore di ricerca per le distribuzioni locali di Adobe Commerce e Magenti Open Source.
+description: Configura un motore di ricerca per le distribuzioni locali di Adobe Commerce e Magento Open Source.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
 source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Configurazione del motore di ricerca
 
-Questa sezione descrive le impostazioni minime che è necessario scegliere per testare Elasticsearch o OpenSearch con distribuzioni locali di Adobe Commerce e Magenti Open Source.
+Questa sezione descrive le impostazioni minime che è necessario scegliere per testare Elasticsearch o OpenSearch con distribuzioni locali di Adobe Commerce e Magento Open Source.
 
 >[!TIP]
 >
@@ -67,17 +67,17 @@ In tal caso, provare a effettuare le seguenti operazioni:
 - Verifica il valore di **[!UICONTROL Server Hostname]** campo. Verificare che il server sia disponibile. È possibile provare l&#39;indirizzo IP del server.
 - Utilizza il `netstat -an | grep <listen-port>` per verificare che la porta specificata nella **[!UICONTROL Server Port]** non è utilizzato da un altro processo.
 
-   Ad esempio, per verificare se il motore di ricerca è in esecuzione sulla porta predefinita, utilizzare il comando seguente:
+  Ad esempio, per verificare se il motore di ricerca è in esecuzione sulla porta predefinita, utilizzare il comando seguente:
 
-   ```bash
-   netstat -an | grep 9200
-   ```
+  ```bash
+  netstat -an | grep 9200
+  ```
 
-   Se è in esecuzione sulla porta 9200, viene visualizzato come segue:
+  Se è in esecuzione sulla porta 9200, viene visualizzato come segue:
 
-   ```terminal
-   `tcp        0      0 :::9200            :::-         LISTEN`
-   ```
+  ```terminal
+  `tcp        0      0 :::9200            :::-         LISTEN`
+  ```
 
 ## Reindicizza la ricerca nel catalogo e aggiorna la cache dell’intera pagina
 

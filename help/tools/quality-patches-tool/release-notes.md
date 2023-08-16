@@ -239,7 +239,7 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 * **ACSD-47079** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.5): risolve il problema per cui lo stato delle scorte dei prodotti compositi (bundle, raggruppati e configurabili) non viene aggiornato quando lo stato delle scorte dei sottoprodotti cambia tramite REST API POST /rest/V1/inventory/source-items.
 * **ACSD-47336** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Correzioni *Si è verificato un errore.* durante l’eliminazione delle notifiche nell’amministrazione di Commerce.
 * **ACSD-47559** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema se l’area Anteprima modello e-mail non è completamente visibile.
-* **ACSD-47920** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6): è stato risolto il problema che consentiva di effettuare gli ordini tramite l’API Rest come utente guest anche quando *Consenti estrazione guest* è disattivato.
+* **ACSD-47920** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6): è stato risolto il problema che consentiva di effettuare gli ordini tramite l’API Rest come utente guest anche quando *Consenti estrazione come ospite* è disattivato.
 * Patch sostituite: MDVA-39305, MDVA-42855.
 
 ## v1.1.23 {#v1-1-23}
@@ -578,7 +578,7 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 * **MDVA-36464** (*per Adobe Commerce >=2.4.0 &lt;=2.4.2*) - Corregge il problema per il quale la configurazione della notifica e-mail non funziona a livello di visualizzazione store.
 * **MDVA-36138** (*per Adobe Commerce ^2.3.2*) - Corregge il problema che causa la mancata rettifica del prezzo di spedizione e la visualizzazione del prezzo di spedizione completo ai clienti se non tutti gli articoli nel carrello sono idonei per la regola del carrello di spedizione gratuito.
 * **MDVA-36424** (*per Adobe Commerce >=2.3.0 &lt;=2.3.3-p1 || >=2,0,0 &lt;2,2,0*) - Corregge il problema per cui le immagini multimediali allegate agli elementi del Page Builder scompaiono quando il contenuto viene modificato ripetutamente, se l&#39;URL di base del back-end è diverso dall&#39;URL di base dello storefront.
-* **MDVA-35984** (*per Adobe Commerce ^2.4.0*) - Corregge il problema relativo alla quantità di prodotto errata e alla quantità vendibile dopo la creazione di più spedizioni simultanee per lo stesso prodotto.
+* **MDVA-35984** (*per Adobe Commerce ^2.4.0*) - Risolve il problema relativo alla quantità di prodotto errata e alla quantità vendibile dopo la creazione di più spedizioni simultanee per lo stesso prodotto.
 
 ## v1.0.20 {#v1-0-20}
 

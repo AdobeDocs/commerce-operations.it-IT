@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Adobe Commerce utilizza Composer per gestire i pacchetti PHP.
 
-Il `composer.json` file dichiara l&#39;elenco dei colli, mentre il `composer.lock` file memorizza un elenco completo dei pacchetti (una versione completa di ciascun pacchetto e delle relative dipendenze) utilizzati per creare un’installazione di Adobe Commerce o Magenti Open Source.
+Il `composer.json` file dichiara l&#39;elenco dei colli, mentre il `composer.lock` file memorizza un elenco completo dei pacchetti (una versione completa di ciascun pacchetto e delle relative dipendenze) utilizzati per creare un’installazione di Adobe Commerce o Magento Open Source.
 
 La seguente documentazione di riferimento è generata da `composer.lock` e riguarda i pacchetti richiesti inclusi in Adobe Commerce 2.4.6.
 
@@ -848,7 +848,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/guzzle/promises.git">guzzlehttp/promise</a>
     </td>
     <td>libreria</td>
-    <td>Guzzle promesse libreria</td>
+    <td>Libreria Guzzle promesse</td>
   </tr>
   <tr>
     <td>

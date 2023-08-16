@@ -160,7 +160,7 @@ _Attributi termine:_
 _sostantivo_
 
 Una raccolta di gruppi di attributi, personalizzati per un prodotto specifico.
-Esempio: un set di attributi di T-shirt può includere colore, dimensioni, genere e marchio.
+Esempio: un set di attributi di T-shirt può includere colore, dimensione, genere e marchio.
 
 _Attributi termine:_
 
@@ -738,7 +738,7 @@ _Attributi termine:_
 _sostantivo_
 
 Codice che estende o personalizza il comportamento di Adobe Commerce.
-Facoltativamente, puoi creare un pacchetto e distribuire un’estensione su Commerce Marketplace o su un altro sistema di distribuzione delle estensioni.
+Facoltativamente, puoi creare un pacchetto e distribuire un’estensione su Commerci Marketplace o su un altro sistema di distribuzione delle estensioni.
 Un’estensione Commerce può includere moduli, temi e Language Pack.
 
 _Attributi termine:_
@@ -1179,7 +1179,7 @@ _Attributi termine:_
 
 _sostantivo_
 
-Funzione che consente ai commercianti di creare un catalogo da utilizzare come intero catalogo o sottoinsieme di esso e quindi di assegnare prezzi personalizzati per uno o più prodotti.
+Funzione che consente ai commercianti di creare un catalogo da utilizzare come intero catalogo o come sottoinsieme di catalogo e quindi di assegnare prezzi personalizzati per uno o più prodotti.
 I commercianti possono quindi assegnare questo catalogo a una o più società.
 
 Ad esempio, un commerciante B2B ha tre clienti che hanno negoziato tariffe specifiche per il sito di distribuzione di elettronica del commerciante.
@@ -1380,7 +1380,7 @@ Contiene informazioni sulla grafica e sull&#39;aspetto.
 Personalizza l&#39;aspetto del negozio.
 Adobe Commerce può inviare i temi nei pacchetti (Composer).
 Ma i temi possono essere posizionati sotto app / design, che non è spedito in un pacchetto.
-I pacchetti sono l’unità di download per Composer e, tramite Commerce Marketplace, gli utenti Commerce possono scaricare CE o EE come una serie di pacchetti, in cui i pacchetti contengono moduli, temi o pacchetti di lingue.
+I pacchetti sono l’unità di download per Composer e, tramite Commerci Marketplace, gli utenti Commerce possono scaricare CE o EE come una serie di pacchetti, in cui i pacchetti contengono moduli, temi o pacchetti di lingue.
 
 _Attributi termine:_
 
@@ -1428,7 +1428,7 @@ Un progetto PWA può includere un file di definizione UPWARD per specificare le 
 _Attributi termine:_
 
 * _Settore: progettazione, software commerciale, programmazione_
-* _Sinonimi: PWA Studi, Definizione risposta web progressiva unificata_
+* _Sinonimi: PWA Studi, Definizione di risposta progressiva unificata per app web_
 * _Termini correlati: pwa_
 
 ## V

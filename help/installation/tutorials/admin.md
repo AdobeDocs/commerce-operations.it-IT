@@ -1,6 +1,6 @@
 ---
 title: Creare, modificare o sbloccare un account amministratore
-description: Per gestire l’account amministratore dell’applicazione Adobe Commerce o Magenti Open Source Admin, segui la procedura riportata di seguito.
+description: Per gestire l’account amministratore dell’applicazione Adobe Commerce o Magento Open Source Admin, segui la procedura riportata di seguito.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
 source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff

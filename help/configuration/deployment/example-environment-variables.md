@@ -100,20 +100,20 @@ Per impostare le impostazioni sensibili e specifiche del sistema utilizzando le 
 
 - Ambito per ogni impostazione
 
-   Se hai seguito le istruzioni riportate nel passaggio 1, l’ambito per l’invio di e-mail a è globale (ovvero, l’ambito della configurazione predefinita) e l’ambito per il dominio e-mail predefinito è sito web.
+  Se hai seguito le istruzioni riportate nel passaggio 1, l’ambito per l’invio di e-mail a è globale (ovvero, l’ambito della configurazione predefinita) e l’ambito per il dominio e-mail predefinito è sito web.
 
-   Devi conoscere il codice del sito web per impostare il valore di configurazione del dominio e-mail predefinito. Consulta [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](../reference/override-config-settings.md#environment-variables) per ulteriori informazioni su come trovarlo.
+  Devi conoscere il codice del sito web per impostare il valore di configurazione del dominio e-mail predefinito. Consulta [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](../reference/override-config-settings.md#environment-variables) per ulteriori informazioni su come trovarlo.
 
 - Percorso di configurazione per ogni impostazione
 
-   I percorsi di configurazione utilizzati in questo esempio seguono:
+  I percorsi di configurazione utilizzati in questo esempio seguono:
 
-   | Nome impostazione | Percorso di configurazione |
-   |--------------|--------------|
-   | Invia e-mail a | `contact/email/recipient_email` |
-   | Dominio e-mail predefinito | `customer/create_account/email_domain` |
+  | Nome impostazione | Percorso di configurazione |
+  |--------------|--------------|
+  | Invia e-mail a | `contact/email/recipient_email` |
+  | Dominio e-mail predefinito | `customer/create_account/email_domain` |
 
-   Puoi trovare tutti i percorsi di configurazione sensibili e specifici del sistema in [Riferimento ai percorsi di configurazione sensibili e specifici del sistema](../reference/config-reference-sens.md).
+  Puoi trovare tutti i percorsi di configurazione sensibili e specifici del sistema in [Riferimento ai percorsi di configurazione sensibili e specifici del sistema](../reference/config-reference-sens.md).
 
 #### Convertire i percorsi di configurazione in nomi di variabili
 

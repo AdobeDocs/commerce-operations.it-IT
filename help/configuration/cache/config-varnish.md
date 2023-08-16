@@ -52,9 +52,10 @@ Il processo può essere riassunto come segue:
    Se non c’è nulla nel tuo `<magento_root>/var/page_cache` directory, la configurazione di Varnish con Commerce è stata completata.
 
 >[!NOTE]
+>
 - Ad eccezione dei casi indicati, è necessario immettere tutti i comandi descritti in questo argomento come utente con `root` privilegi.
+>
 - Questo argomento è stato scritto per Varnish su CentOS e Apache 2.4. Se si imposta Vernice in un ambiente diverso, alcuni comandi potrebbero essere diversi. Per ulteriori informazioni, consulta la documentazione sulle vernici.
-
 
 ## Problemi noti
 
@@ -62,28 +63,28 @@ Conosciamo i seguenti problemi di vernice:
 
 - [La vernice non supporta SSL]
 
-   In alternativa, utilizza la terminazione SSL o un proxy di terminazione SSL.
+  In alternativa, utilizza la terminazione SSL o un proxy di terminazione SSL.
 
 - Se si elimina manualmente il contenuto del `<magento_root>/var/cache` directory, è necessario riavviare Varnish.
 
 - Possibile errore durante l’installazione di Commerce:
 
-   ```terminal
-   Error 503 Service Unavailable
-   Service Unavailable
-   XID: 303394517
-   Varnish cache server
-   ```
+  ```terminal
+  Error 503 Service Unavailable
+  Service Unavailable
+  XID: 303394517
+  Varnish cache server
+  ```
 
-   Se si verifica questo errore, modificare `default.vcl` e aggiungi un timeout al `backend` strofa come segue:
+  Se si verifica questo errore, modificare `default.vcl` e aggiungi un timeout al `backend` strofa come segue:
 
-   ```conf
-   backend default {
-       .host = "127.0.0.1";
-       .port = "8080";
-       .first_byte_timeout = 600s;
-   }
-   ```
+  ```conf
+  backend default {
+      .host = "127.0.0.1";
+      .port = "8080";
+      .first_byte_timeout = 600s;
+  }
+  ```
 
 ## Panoramica del caching di Varnish
 
@@ -94,6 +95,7 @@ Il caching delle vernici funziona con Commerce utilizzando:
 - `default.vcl` per la vernice generata utilizzando [Amministratore](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
+>
 In questo argomento vengono illustrate solo le opzioni predefinite dell&#39;elenco precedente. Esistono molti altri modi per configurare il caching in scenari complessi (ad esempio, utilizzando una rete per la distribuzione di contenuti); tali metodi vanno oltre l’ambito di questa guida.
 
 Alla prima richiesta del browser, le risorse memorizzabili in cache vengono consegnate al browser client da Microsoft e memorizzate nella cache del browser.
@@ -117,6 +119,7 @@ Nella figura seguente viene illustrato un esempio relativo all&#39;utilizzo di u
 L&#39;esempio precedente mostra una richiesta per la pagina principale storefront (`m2_ce_my`). Le risorse CSS e JavaScript sono memorizzate nella cache del browser client.
 
 >[!NOTE]
+>
 La maggior parte delle risorse statiche ha un codice di stato HTTP 200 (OK), che indica che la risorsa è stata recuperata dal server.
 
 ### Seconda richiesta browser

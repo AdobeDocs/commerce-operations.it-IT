@@ -21,13 +21,13 @@ Consigliamo quanto segue:
 
 * Il server web utilizza TLS.
 
-   TLS esula dall’ambito di questo argomento. Tuttavia, ti consigliamo vivamente di utilizzare un certificato reale in produzione e non un certificato autofirmato.
+  TLS esula dall’ambito di questo argomento. Tuttavia, ti consigliamo vivamente di utilizzare un certificato reale in produzione e non un certificato autofirmato.
 
 * Il motore di ricerca viene eseguito sullo stesso host di un server Web. L’esecuzione del motore di ricerca e del server web su host diversi esula dall’ambito di questo argomento.
 
-   Il vantaggio di mettere il motore di ricerca e il server web sullo stesso host è che rende impossibile intercettare le comunicazioni crittografate. Il server web del motore di ricerca non deve essere necessariamente lo stesso di Adobe Commerce o del server web di Magento Open Source; ad esempio, Adobe Commerce può eseguire Apache e Elasticsearch/OpenSearch può eseguire nginx.
+  Il vantaggio di mettere il motore di ricerca e il server web sullo stesso host è che rende impossibile intercettare le comunicazioni crittografate. Il server web del motore di ricerca non deve essere necessariamente lo stesso di Adobe Commerce o del server web di Magento Open Source; ad esempio, Adobe Commerce può eseguire Apache e Elasticsearch/OpenSearch può eseguire nginx.
 
-   Se il motore di ricerca è esposto al web pubblico, devi configurare l’autenticazione. Se l’istanza del motore di ricerca è protetta all’interno della rete, ciò potrebbe non essere necessario. Rivolgiti al provider di hosting per determinare le misure di sicurezza da implementare per proteggere l’istanza.
+  Se il motore di ricerca è esposto al web pubblico, devi configurare l’autenticazione. Se l’istanza del motore di ricerca è protetta all’interno della rete, ciò potrebbe non essere necessario. Rivolgiti al provider di hosting per determinare le misure di sicurezza da implementare per proteggere l’istanza.
 
 ## Ulteriori informazioni su TLS
 

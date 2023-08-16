@@ -1,6 +1,6 @@
 ---
 title: Linee guida MySQL
-description: Seguire questi passaggi per installare e configurare MySQL e MariaDB per le installazioni locali di Adobe Commerce e Magenti Open Source.
+description: Seguire questi passaggi per installare e configurare MySQL e MariaDB per le installazioni locali di Adobe Commerce e Magento Open Source.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -18,7 +18,7 @@ Adobe _fortemente_ consiglia di osservare il seguente standard durante la config
 * Adobe Commerce e utilizzo del Magento Open Source [Trigger del database MySQL](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) per migliorare l&#39;accesso al database durante la reindicizzazione. Vengono create quando la modalità di indicizzazione è impostata su [pianificazione](../../../configuration/cli/manage-indexers.md#configure-indexers). L’applicazione non supporta i trigger personalizzati nel database, poiché tali trigger possono introdurre incompatibilità con le versioni future di Adobe Commerce e del Magento Open Source.
 * Acquisisci familiarità con [queste potenziali limitazioni del trigger MySQL](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) prima di continuare.
 * Per migliorare la postura di protezione del database, abilitare [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) Modalità SQL per impedire la memorizzazione di valori di dati non validi, che potrebbe causare interazioni di database indesiderate.
-* Adobe Commerce e Magenti Open Source fanno _non_ supporta la replica basata su istruzioni MySQL. Assicurati di utilizzare _solo_ [replica basata su righe](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
+* Adobe Commerce e Magento Open Source fanno _non_ supporta la replica basata su istruzioni MySQL. Assicurati di utilizzare _solo_ [replica basata su righe](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
 
 >[!WARNING]
 >
@@ -30,7 +30,7 @@ Adobe _fortemente_ consiglia di osservare il seguente standard durante la config
 
 ## Installazione di MySQL su Ubuntu
 
-Adobe Commerce e Magenti Open Source 2.4 richiedono un&#39;installazione pulita di MySQL 8.0. Per istruzioni sull&#39;installazione di MySQL nel computer, seguire i collegamenti riportati di seguito.
+Adobe Commerce e Magento Open Source 2.4 richiedono un&#39;installazione pulita di MySQL 8.0. Per istruzioni sull&#39;installazione di MySQL nel computer, seguire i collegamenti riportati di seguito.
 
 * [Ubuntu](https://ubuntu.com/server/docs/databases-mysql)
 * [CentOS](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
@@ -53,7 +53,7 @@ Allora, [Configurare l’istanza del database](#configuring-the-database-instanc
 
 ## Modifiche a MySQL 8
 
-Per Adobe Commerce e Magenti Open Source 2.4 è stato aggiunto il supporto per MySQL 8.
+Per Adobe Commerce e Magento Open Source 2.4 è stato aggiunto il supporto per MySQL 8.
 In questa sezione vengono descritte le modifiche principali apportate a MySQL 8 di cui gli sviluppatori devono essere a conoscenza.
 
 ### Larghezza rimossa per i tipi interi (spaziatura interna)
@@ -67,15 +67,15 @@ Descrizione di admin_user in mysql 8.19
 | Campo | Tipo | Nullo | Chiave | Predefinito | Extra |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | user\_id | `int unsigned` | NO | PRI | `NULL` | `auto_increment` |
-| `firstname` | `varchar(32)` | SÌ |  | `NULL` |  |
-| `lastname` | `varchar(32`) | SÌ |  | `NULL` |  |
-| `email` | `varchar(128)` | SÌ |  | `NULL` |  |
-| `username` | `varchar(40)` | SÌ | UNI | `NULL` |  |
-| `password` | `varchar(255)` | NO |  | `NULL` |  |
-| `created` | `timestamp` | NO |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
-| `modified` | `timestamp` | NO |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` all’aggiornamento `CURRENT_TIMESTAMP` |
-| `logdate` | `timestamp` | SÌ |  | `NULL` |  |
-| `lognum` | `smallint unsigned` | NO |  | `0` |  |
+| `firstname` | `varchar(32)` | SÌ | | `NULL` | |
+| `lastname` | `varchar(32`) | SÌ | | `NULL` | |
+| `email` | `varchar(128)` | SÌ | | `NULL` | |
+| `username` | `varchar(40)` | SÌ | UNI | `NULL` | |
+| `password` | `varchar(255)` | NO | | `NULL` | |
+| `created` | `timestamp` | NO | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
+| `modified` | `timestamp` | NO | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` all’aggiornamento `CURRENT_TIMESTAMP` |
+| `logdate` | `timestamp` | SÌ | | `NULL` | |
+| `lognum` | `smallint unsigned` | NO | | `0` | |
 
 Eccetto per _TINYINT(1)_, tutte le spaziature intere (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) devono essere rimosse dal `db_schema.xml` file.
 
@@ -92,17 +92,17 @@ A partire da MySQL 8.0.13, il `ASC` o `DESC` qualificatori per `GROUP BY` clauso
 
 ## Commerce e MySQL 8
 
-Sono state apportate alcune modifiche ad Adobe Commerce e Magenti Open Source per supportare correttamente MySQL 8.
+Sono state apportate alcune modifiche ad Adobe Commerce e Magento Open Source per supportare correttamente MySQL 8.
 
 ### Comportamento query e inserimento
 
-Adobe Commerce e Magenti Open Source hanno disabilitato il comportamento di convalida regolare impostando SET SQL_MODE=&#39;&#39; in `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. Se la convalida è disattivata, è possibile che MySQL tronchi i dati. In MySQL il comportamento della query è cambiato: `Select * on my_table where IP='127.0.0.1'` non restituisce più risultati perché l’indirizzo IP viene ora visualizzato correttamente come stringa, anziché come numero intero.
+Adobe Commerce e Magento Open Source hanno disabilitato il comportamento di convalida regolare impostando SET SQL_MODE=&#39;&#39; in `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. Se la convalida è disattivata, è possibile che MySQL tronchi i dati. In MySQL il comportamento della query è cambiato: `Select * on my_table where IP='127.0.0.1'` non restituisce più risultati perché l’indirizzo IP viene ora visualizzato correttamente come stringa, anziché come numero intero.
 
 ## Aggiornamento da MySQL 5.7 a MySQL 8
 
 Per aggiornare correttamente MySQL dalla versione 5.7 alla versione 8, è necessario seguire i passaggi seguenti nell&#39;ordine indicato:
 
-1. Aggiorna Adobe Commerce o Magenti Open Source alla versione 2.4.0. Esegui il test completo e assicurati che il sistema funzioni come previsto.
+1. Aggiorna Adobe Commerce o Magento Open Source alla versione 2.4.0. Esegui il test completo e assicurati che il sistema funzioni come previsto.
 1. Abilita modalità di manutenzione:
 
    ```bash
@@ -131,7 +131,7 @@ Per aggiornare correttamente MySQL dalla versione 5.7 alla versione 8, è necess
 
 ## Configurazione dell’istanza del database
 
-Questa sezione illustra come creare un’istanza di database per Adobe Commerce o Magenti Open Source. Sebbene sia consigliata una nuova istanza di database, è possibile installare Adobe Commerce o un Magento Open Source con un&#39;istanza di database esistente.
+Questa sezione illustra come creare un’istanza di database per Adobe Commerce o Magento Open Source. Sebbene sia consigliata una nuova istanza di database, è possibile installare Adobe Commerce o un Magento Open Source con un&#39;istanza di database esistente.
 
 Per configurare un&#39;istanza di database MySQL:
 

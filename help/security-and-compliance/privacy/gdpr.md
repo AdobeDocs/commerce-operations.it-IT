@@ -29,7 +29,7 @@ Per informazioni tecniche, consulta i diagrammi di flusso dei dati e le mappatur
 - [Riferimento per le informazioni personali del cliente (versione 2.x)](data-m2.md)
 - [Riferimento informazioni personali cliente (versione 1.x)](data-m1.md)
 
-Per ulteriori informazioni su come Adobe Commerce e Magenti Open Source aiutano i commercianti a rispettare il RGPD, vedi:
+Per ulteriori informazioni su come Adobe Commerce e Magento Open Source aiutano i commercianti a rispettare il RGPD, vedi:
 
 - [Conformità RGPD](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
 - [Adobe Commerce è pronto per il RGPD](https://business.adobe.com/privacy/general-data-protection-regulation.html)

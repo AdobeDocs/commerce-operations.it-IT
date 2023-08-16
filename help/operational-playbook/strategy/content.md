@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Strategia dei contenuti
 
-I piani di marketing dei contenuti di e-commerce di successo non provengono da sessioni di brainstorming, presentazioni o abitudini ereditate. Le aziende devono raccogliere dati quantitativi e qualitativi (alcuni da fonti di cui sono già proprietarie e altri da quelle create o acquistate) per pianificare i contenuti che i clienti troveranno e apprezzeranno. Con Adobe Experience Manager puoi sfruttare i contenuti gestiti nell’ambiente di authoring AEM per creare campagne molto coinvolgenti. Puoi pubblicare facilmente le risorse marketing da progettare, gestire e convalidare in Adobe Experience Manager su diversi canali.
+I piani di marketing dei contenuti di e-commerce di successo non provengono da sessioni di brainstorming, presentazioni o abitudini ereditate. Le aziende devono raccogliere dati quantitativi e qualitativi (alcuni da fonti di cui sono già proprietarie e altri da quelle create o acquistate) per pianificare i contenuti che i clienti troveranno e apprezzeranno. Con Adobe Experience Manager puoi sfruttare i contenuti gestiti nell’ambiente di authoring AEM per creare campagne molto coinvolgenti. Puoi pubblicare facilmente le risorse di marketing da progettare, gestire e convalidare in Adobe Experience Manager su diversi canali.
 
 ## Quadro per la strategia dei contenuti
 
@@ -34,7 +34,7 @@ Infine, il test, il targeting e la strategia ti daranno l’opportunità di iden
 
 ## Adobe Experience Manager
 
-Sia che gestiate contenuti web di base o contenuti da distribuire sui social network, Adobe Experience Manager aiuta a fornire risorse creative e altri contenuti su tutti i canali con cui i clienti possono essere coinvolti. Con l’AEM puoi sfruttare i contenuti gestiti nell’ambiente di authoring dell’AEM per creare campagne molto coinvolgenti. Puoi pubblicare facilmente le risorse marketing da progettare, gestire e convalidare in Adobe Experience Manager su diversi canali e piattaforme.
+Che tu gestisca contenuti web di base o contenuti da diffondere sui social network, Adobe Experience Manager aiuta a fornire risorse creative e altri contenuti su tutti i canali con cui i clienti possono essere coinvolti. Con l’AEM puoi sfruttare i contenuti gestiti nell’ambiente di authoring dell’AEM per creare campagne molto coinvolgenti. Puoi pubblicare facilmente le risorse marketing da progettare, gestire e convalidare in Adobe Experience Manager su diversi canali e piattaforme.
 
 Adobe Experience Manager combina una serie di funzioni a livello di infrastruttura e di applicazione in un unico pacchetto integrato. L’offerta si rivolge a:
 

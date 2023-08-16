@@ -40,7 +40,7 @@ In base a criteri di test che simulano un&#39;organizzazione B2C aziendale, il s
 
 ## Ambiente di test
 
-I risultati del benchmark delle prestazioni sono stati ottenuti testando un’istanza Adobe Commerce 2.4.5 implementata in un ambiente cloud Pro con architettura scalata. L’istanza aveva anche i moduli di integrazione Adobe Commerce B2B, Inventory management e Adobe Stock installati, configurati e abilitati.
+I risultati dei benchmark delle prestazioni sono stati ottenuti testando un’istanza Adobe Commerce 2.4.5 implementata in un ambiente cloud Pro con architettura scalata. L’istanza aveva anche i moduli di integrazione Adobe Commerce B2B, Inventory management e Adobe Stock installati, configurati e abilitati.
 
 I dati di test delle prestazioni per il profilo di test sono stati generati utilizzando <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">Performance Toolkit</a>.
 

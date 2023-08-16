@@ -1,11 +1,11 @@
 ---
 user-guide-title: Playbook operativo
-user-guide-description: Scopri come rendere le tue aziende operative e pronte per gestire un sito di e-commerce di successo.
+user-guide-description: Scopri come rendere le tue unità di business operative e pronte per gestire un sito di e-commerce di successo.
 feature: Best Practices
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 

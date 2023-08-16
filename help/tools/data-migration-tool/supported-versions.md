@@ -25,7 +25,7 @@ Il [!DNL Data Migration Tool] supporta la migrazione _da_ le seguenti versioni:
    * 1.8.x
    * 1.9.x
 
-Se effettui la migrazione da Magenti Open Source ad Adobe Commerce, sono supportate le seguenti versioni:
+Se effettui la migrazione da Magento Open Source ad Adobe Commerce, sono supportate le seguenti versioni:
 
 * 1.6.x
 * 1.7.x

@@ -20,7 +20,7 @@ Questa sezione illustra come installare dati di esempio se si è ottenuto il sof
 
 * Utilizzato `composer create-project`
 
-Puoi utilizzare questo metodo per ottenere dati di esempio sia per Adobe Commerce che per Magenti Open Source, ma devi utilizzare lo stesso [chiavi di autenticazione](../prerequisites/authentication-keys.md) utilizzato per installare l’applicazione.
+Puoi utilizzare questo metodo per ottenere dati di esempio sia per Adobe Commerce che per Magento Open Source, ma devi utilizzare lo stesso [chiavi di autenticazione](../prerequisites/authentication-keys.md) utilizzato per installare l’applicazione.
 
 >[!NOTE]
 >

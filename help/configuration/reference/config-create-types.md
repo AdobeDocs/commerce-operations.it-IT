@@ -33,7 +33,7 @@ Ad esempio, per introdurre un adattatore per un nuovo server di ricerca che cons
 
 - Un caricatore
 - Un file di schema XSD
-- Un file di configurazione con nome appropriato. Ad esempio: `search.xml`. Questo file viene letto e convalidato in base allo schema.
+- Un file di configurazione con nome appropriato. Ad esempio, `search.xml`. Questo file viene letto e convalidato in base allo schema.
 - Qualsiasi altra classe necessaria per il tuo lavoro.
 
 >[!INFO]

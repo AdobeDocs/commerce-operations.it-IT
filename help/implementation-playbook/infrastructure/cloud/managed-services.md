@@ -1,6 +1,6 @@
 ---
 title: Managed Services
-description: Esamina le responsabilità di Adobe Managed Services, dei clienti e dei provider di servizi cloud per l’implementazione dell’infrastruttura cloud di Adobe Commerce.
+description: Esamina le responsabilità di Adobe Managed Services, dei clienti e dei provider di servizi cloud per l’implementazione dell’infrastruttura cloud Adobe Commerce.
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
 feature: Cloud, Services
 source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
@@ -22,7 +22,7 @@ I piani di Adobe Commerce Pro si basano su un modello di sicurezza con responsab
 
 ![Diagramma che mostra il modello di responsabilità condivisa Adobe Commerce](../../../assets/playbooks/shared-responsibility.svg)
 
-### Responsabilità di Adobe Managed Services
+### Responsabilità Managed Services di Adobe
 
 Adobe Managed Services è responsabile della sicurezza e della disponibilità dell’ambiente cloud Adobe Commerce Pro, del codice dell’applicazione Adobe Commerce Pro di base e dei sistemi di e-commerce interni. Ciò include, ma non è limitato a:
 
@@ -35,7 +35,7 @@ Adobe Managed Services è responsabile della sicurezza e della disponibilità de
 - Supporto 24/7
 - Garanzia di disponibilità dell&#39;infrastruttura del cliente in conformità agli SLA
 
-Adobe Managed Services è inoltre responsabile della gestione delle configurazioni del firewall server (iptables) e delle configurazioni del firewall perimetrale (gruppi di sicurezza). Adobe può inoltre rilasciare periodicamente aggiornamenti di sicurezza per l’applicazione principale. L&#39;applicazione di queste patch è responsabilità del cliente. Queste aree sono tutte coperte dalla certificazione PCI di Adobe Commerce su infrastruttura cloud.
+Adobe Managed Services è anche responsabile della gestione delle configurazioni del firewall del server (iptables) e delle configurazioni del firewall perimetrale (gruppi di sicurezza). Adobe può inoltre rilasciare periodicamente aggiornamenti di sicurezza per l’applicazione principale. L&#39;applicazione di queste patch è responsabilità del cliente. Queste aree sono tutte coperte dalla certificazione PCI di Adobe Commerce su infrastruttura cloud.
 
 ### Responsabilità di AWS
 

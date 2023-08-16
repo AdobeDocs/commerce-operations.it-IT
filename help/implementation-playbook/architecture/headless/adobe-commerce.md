@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Architettura Adobe Commerce headless
 
-Il vantaggio dell&#39;architettura di Adobe Commerce è che non si tratta di una proposta &quot;tutto o niente&quot; e un commerciante può trovare la giusta combinazione di soluzioni per la propria azienda. Possono creare un PWA basato su PWA Studi per la loro esperienza del sito principale oppure utilizzare Adobe Experience Manager come livello in percorsi di clienti complessi, creando al contempo un front-end personalizzato per sperimentare nuovi punti di contatto. Nessun’altra piattaforma è in grado di eguagliare i vantaggi di time-to-market e la flessibilità offerta da Adobe Commerce con la sua architettura headless.
+Il vantaggio dell&#39;architettura di Adobe Commerce è che non si tratta di una proposta &quot;tutto o niente&quot; e un commerciante può trovare la giusta combinazione di soluzioni per la propria azienda. Possono creare PWA basati su PWA Studi per la loro esperienza del sito principale oppure utilizzare Adobe Experience Manager come livello in percorsi di clienti complessi, creando al contempo un front-end personalizzato per sperimentare nuovi punti di contatto. Nessun’altra piattaforma è in grado di eguagliare i vantaggi di time-to-market e la flessibilità offerta da Adobe Commerce con la sua architettura headless.
 
 ![Diagramma che mostra un’architettura headless della vetrina Adobe Commerce](../../../assets/playbooks/headless-storefront-architecture.svg)
 

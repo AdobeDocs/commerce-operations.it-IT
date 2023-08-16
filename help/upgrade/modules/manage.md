@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Gestire moduli ed estensioni
 
-Utilizza la riga di comando per gestire moduli ed estensioni di Adobe Commerce e Magenti Open Source.
+Utilizza la riga di comando per gestire moduli ed estensioni di Adobe Commerce e Magento Open Source.
 
 ## Attivare o disattivare un modulo
 

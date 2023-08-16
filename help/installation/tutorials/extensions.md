@@ -21,7 +21,7 @@ Le estensioni includono:
 
 >[!TIP]
 >
->Questo argomento spiega come utilizzare la riga di comando per installare le estensioni acquistate da Commerce Marketplace. È possibile utilizzare la stessa procedura per installare _qualsiasi_ estensione; tutto ciò di cui hai bisogno è il nome e la versione del Compositore dell’estensione. Per trovarlo, apri il file dell’estensione `composer.json` e annota i valori per `"name"` e `"version"`.
+>Questo argomento spiega come utilizzare la riga di comando per installare le estensioni acquistate da Commerci Marketplace. È possibile utilizzare la stessa procedura per installare _qualsiasi_ estensione; tutto ciò di cui hai bisogno è il nome e la versione del Compositore dell’estensione. Per trovarlo, apri il file dell’estensione `composer.json` e annota i valori per `"name"` e `"version"`.
 
 Prima dell&#39;installazione, è possibile:
 
@@ -34,7 +34,7 @@ Prima dell&#39;installazione, è possibile:
 
 Per installare un&#39;estensione, è necessario:
 
-1. Ottieni un’estensione da Commerce Marketplace o da un altro sviluppatore di estensioni.
+1. Ottieni un’estensione da Commerci Marketplace o da un altro sviluppatore di estensioni.
 1. Se installi un’estensione dalla Commerce Marketplace, assicurati che il `repo.magento.com` esiste nel tuo archivio `composer.json` file:
 
    ```bash

@@ -31,7 +31,7 @@ Se nella pagina viene visualizzato un tag `404 (Not Found)` errore o non visuali
 
 Accedi all’amministratore in un browser web. Ad esempio, se l’URL di base dell’installazione è `http://www.example.com`e l’URI amministratore è `admin_au1nT`, immetti `http://www.example.com/admin_au1nT` nella barra degli indirizzi o della posizione del browser.
 
-(L’URI amministratore è specificato dal valore della proprietà `backend-frontname` parametro di installazione).
+L’URI amministratore è specificato dal valore della proprietà `backend-frontname` parametro di installazione).
 
 Quando richiesto, accedi come amministratore.
 

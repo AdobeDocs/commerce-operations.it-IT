@@ -49,7 +49,7 @@ Adobe Commerce è scalabile con la tua azienda grazie alle sue funzionalità:
 Ci sono anche fattori chiave che guidano la scala nel commercio, che influiscono anche sulle prestazioni complessive.
 
 - Catalogo di prodotti complesso e di grandi dimensioni
-- Un numero elevato di amministratori
+- Numero elevato di amministratori
 - Storefront globali
 - Traffico ad alta variabile
 - Espansione dei punti di contatto

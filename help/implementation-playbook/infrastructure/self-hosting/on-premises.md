@@ -33,7 +33,7 @@ Approfondiamo i ruoli e le funzioni di ogni aspetto dell&#39;infrastruttura most
 
 1. Il secondo load balancer dell&#39;applicazione di bilanciamento del carico elastico distribuisce il traffico dalla cache di vernice nel gruppo di scalabilità automatica AWS delle istanze Adobe Commerce in più aree di disponibilità.
 
-1. Installa la versione più recente di Magenti Open Source o Adobe Commerce sulle istanze Amazon EC2. L’installazione è costituita dall’applicazione Adobe Commerce, dal server web Nginx e dal PHP. Create l&#39;Amazon Machine Image (AMI) per avviare nuove istanze in un gruppo di ridimensionamento automatico.
+1. Installa la versione più recente di Magento Open Source o Adobe Commerce sulle istanze Amazon EC2. L’installazione è costituita dall’applicazione Adobe Commerce, dal server web Nginx e dal PHP. Create l&#39;Amazon Machine Image (AMI) per avviare nuove istanze in un gruppo di ridimensionamento automatico.
 
 1. Amazon Elasticsearch Service è un servizio di Elasticsearch gestito per la ricerca nel catalogo Adobe Commerce.
 

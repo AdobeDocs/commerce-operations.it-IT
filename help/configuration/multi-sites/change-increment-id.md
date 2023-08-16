@@ -54,6 +54,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 ```
 
 >[!INFO]
+>
 Importante: il nuovo valore di incremento deve essere maggiore di quello corrente.
 
 Dopo l’esecuzione della seguente query:

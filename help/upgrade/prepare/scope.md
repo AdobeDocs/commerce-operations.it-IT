@@ -72,9 +72,9 @@ Altre opzioni da utilizzare con questo comando sono:
 
 - `--vanilla-dir`- Consente di controllare il codice di base per qualsiasi implementazione non standard di funzioni o personalizzazioni. È importante che queste vengano pulite in anticipo. Un’istanza &quot;vanilla&quot; della tua versione viene scaricata automaticamente come riferimento.
 
-   >[!NOTE]
-   >
-   > Questa operazione può essere eseguita anche con `core:code:changes` nello strumento).
+  >[!NOTE]
+  >
+  > Questa operazione può essere eseguita anche con `core:code:changes` nello strumento).
 
 ### Analizzare l’output
 
@@ -105,7 +105,7 @@ L’output seguente mostra un esempio di rapporto di riepilogo:
 
 Tutti i problemi identificati dallo strumento sono elencati nel rapporto con codici di errore specifici. Utilizza il [riferimento messaggio di errore](../upgrade-compatibility-tool/error-messages.md) per ottenere ulteriori dettagli su ciascun problema. In Adobe vengono inoltre forniti suggerimenti per la risoluzione di ogni tipo di problema, in modo da poter pianificare i passaggi di correzione.
 
-Utilizza il rapporto per stimare lo sforzo necessario per aggiornare il codice per l’aggiornamento. In base all’esperienza, puoi stimare lo sforzo necessario per eseguire l’aggiornamento in base al numero totale di problemi identificati e alla gravità dei problemi. Poiché si tratta di uno strumento da riga di comando, puoi incorporarlo nelle suite di test automatizzati e di controllo del codice e utilizzare l’output JSON per generare i rapporti.
+Utilizza il rapporto per stimare lo sforzo necessario per aggiornare il codice per l’aggiornamento. In base alla tua esperienza, puoi stimare lo sforzo necessario per eseguire l’aggiornamento in base al numero totale di problemi identificati e alla gravità dei problemi. Poiché si tratta di uno strumento da riga di comando, puoi incorporarlo nelle suite di test automatizzati e di controllo del codice e utilizzare l’output JSON per generare i rapporti.
 
 È consigliabile salvare i risultati di ogni progetto di aggiornamento in modo da poter confrontare i risultati futuri dell’aggiornamento con quelli precedenti. Con l’utilizzo continuo, inizierai a sviluppare una buona percezione del livello di impegno necessario per l’aggiornamento alla versione successiva solo dal rapporto di riepilogo fornito dallo strumento.
 

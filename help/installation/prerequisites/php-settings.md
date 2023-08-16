@@ -1,6 +1,6 @@
 ---
 title: Impostazioni PHP
-description: Segui questi passaggi per installare le estensioni PHP richieste e configurare le impostazioni PHP richieste per le installazioni on-premise di Adobe Commerce e Magenti Open Source.
+description: Segui questi passaggi per installare le estensioni PHP richieste e configurare le impostazioni PHP richieste per le installazioni on-premise di Adobe Commerce e Magento Open Source.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
 source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
@@ -34,14 +34,14 @@ Copyright (c) 1997-2018 The PHP Group
 Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies with Zend OPcache v7.1.6, Copyright (c) 1999-2018, by Zend Technologies
 ```
 
-Adobe Commerce e Magenti Open Source 2.4 sono compatibili con PHP 7.3, ma si consiglia di testare e utilizzare PHP 7.4.
+Adobe Commerce e Magento Open Source 2.4 sono compatibili con PHP 7.3, ma si consiglia di testare e utilizzare PHP 7.4.
 
 Se PHP non è installato, o è necessario un aggiornamento della versione, installarlo seguendo le istruzioni per il vostro particolare sapore Linux.
 Su CentOS, [potrebbero essere necessari ulteriori passaggi](https://wiki.centos.org/HowTos/php7).
 
 ## Verificare le estensioni installate
 
-Adobe Commerce e Magenti Open Source richiedono l’installazione di un set di estensioni.
+Adobe Commerce e Magento Open Source richiedono l’installazione di un set di estensioni.
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
@@ -89,11 +89,11 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   Queste impostazioni consentono ai processi PHP di memorizzare nella cache i percorsi dei file invece di cercarli ogni volta che viene caricata una pagina. Consulta [Ottimizzazione delle prestazioni](https://www.php.net/manual/en/ini.core.php) nella documentazione PHP.
 
-- Abilita [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), richiesto per Adobe Commerce e Magenti Open Source 2.1 e versioni successive.
+- Abilita [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), richiesto per Adobe Commerce e Magento Open Source 2.1 e versioni successive.
 
   È consigliabile abilitare [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) per motivi di prestazioni. OPcache è abilitata in molte distribuzioni PHP.
 
-  Adobe Commerce e Magenti Open Source 2.1 e versioni successive utilizzano i commenti del codice PHP per la generazione del codice.
+  Adobe Commerce e Magento Open Source 2.1 e versioni successive utilizzano i commenti del codice PHP per la generazione del codice.
 
 >[!NOTE]
 >

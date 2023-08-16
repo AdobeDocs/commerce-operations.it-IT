@@ -1,6 +1,6 @@
 ---
 title: Soluzione per la suddivisione delle prestazioni del database
-description: Scopri la soluzione di database diviso per Adobe Commerce e Magenti Open Source.
+description: Scopri la soluzione di database diviso per Adobe Commerce e Magento Open Source.
 recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
@@ -38,7 +38,7 @@ Nella figura seguente viene illustrato il funzionamento di questa feature.
 
 ![Adobe Commerce utilizza database diversi per memorizzare le tabelle](../../assets/configuration/split-db-diagram-ee.png)
 
-In Magenti Open Source viene utilizzato un solo database master.
+In Magento Open Source viene utilizzato un solo database master.
 
 Adobe Commerce utilizza tre database master e un numero configurabile di database slave per la replica. Adobe Commerce dispone di un&#39;unica interfaccia per le connessioni ai database, che offre prestazioni più veloci e una migliore scalabilità.
 
@@ -58,20 +58,19 @@ A causa del modo in cui è progettata la soluzione di prestazioni del database s
 >- Utilizzare i componenti così come sono _senza_ la soluzione di database diviso.
 >- Rimuovere i componenti in modo da poter utilizzare la soluzione di database suddiviso.
 
-
 Ciò significa anche che è possibile:
 
 - Configurare la soluzione di database suddiviso _prima di_ mettere Commerce in produzione.
 
-   L’Adobe consiglia di configurare i database suddivisi il prima possibile dopo l’installazione del software Commerce.
+  L’Adobe consiglia di configurare i database suddivisi il prima possibile dopo l’installazione del software Commerce.
 
 - [Configura manualmente](multi-master-manual.md) la soluzione di database diviso.
 
-   È necessario eseguire questa attività se sono già stati installati componenti o se Commerce è già in produzione. (_Do not_ aggiornare un sistema di produzione; apportare gli aggiornamenti in un sistema di sviluppo e sincronizzare le modifiche dopo averle testate.)
+  È necessario eseguire questa attività se sono già stati installati componenti o se Commerce è già in produzione. (_Do not_ aggiornare un sistema di produzione; apportare gli aggiornamenti in un sistema di sviluppo e sincronizzare le modifiche dopo averle testate.)
 
-   >[!WARNING]
-   >
-   >È necessario eseguire manualmente il backup delle due istanze di database aggiuntive. Commerce esegue il backup solo dell’istanza di database principale. Il [`magento setup:backup --db`](../../installation/tutorials/backup.md) nelle opzioni Command e Admin non viene eseguito il backup delle tabelle aggiuntive.
+  >[!WARNING]
+  >
+  >È necessario eseguire manualmente il backup delle due istanze di database aggiuntive. Commerce esegue il backup solo dell’istanza di database principale. Il [`magento setup:backup --db`](../../installation/tutorials/backup.md) nelle opzioni Command e Admin non viene eseguito il backup delle tabelle aggiuntive.
 
 ## Prerequisiti
 

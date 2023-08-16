@@ -29,7 +29,7 @@ Il [!DNL Data Migration Tool] suddivide il processo di migrazione in tre fasi o 
 
 1. **Modalità impostazioni**: esegue la migrazione della configurazione del sistema e delle impostazioni relative al sito Web.
 1. **Modalità dati**: esegue la migrazione in blocco delle risorse del database.
-1. **Modalità delta**: migra le modifiche incrementali (modifiche dall’ultima esecuzione), ad esempio nuovi clienti e ordini.
+1. **Modalità Delta**: migra le modifiche incrementali (modifiche dall’ultima esecuzione), ad esempio nuovi clienti e ordini.
 
 ![Modalità di migrazione](../../assets/data-migration/MigrationModes2.png)
 

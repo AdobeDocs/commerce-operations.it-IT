@@ -18,15 +18,15 @@ In questo esempio vengono utilizzate le impostazioni di configurazione seguenti:
 
 - **Partita Iva** e **Nome store** per le impostazioni di configurazione condivisa.
 
-   Questi si trovano in **Negozi** > Impostazioni > **Configurazione** > Generale > **Generale**.
+  Questi si trovano in **Negozi** > Impostazioni > **Configurazione** > Generale > **Generale**.
 
 - **Invia e-mail a** per il valore di configurazione sensibile.
 
-   Questo si trova in **Negozi** > Impostazioni > **Configurazione** > Generale > **Contatti**.
+  Questo si trova in **Negozi** > Impostazioni > **Configurazione** > Generale > **Contatti**.
 
 - **Dominio e-mail predefinito** per il valore di configurazione specifico del sistema.
 
-   Questo si trova in **Negozi** > Impostazioni > **Configurazione** > Clienti > **Configurazione cliente** > **Crea nuove opzioni account**.
+  Questo si trova in **Negozi** > Impostazioni > **Configurazione** > Clienti > **Configurazione cliente** > **Crea nuove opzioni account**.
 
 È possibile utilizzare la stessa procedura illustrata in questo esempio per configurare le impostazioni nei seguenti riferimenti:
 
@@ -108,20 +108,20 @@ Per impostare le impostazioni sensibili e specifiche del sistema utilizzando le 
 
 - Ambito per ogni impostazione
 
-   Se hai seguito le istruzioni del passaggio 1, l’ambito per **Invia e-mail a** è un sito web e l’ambito di applicazione **Dominio e-mail predefinito** è globale (ovvero l’ambito Configurazione predefinita).
+  Se hai seguito le istruzioni del passaggio 1, l’ambito per **Invia e-mail a** è un sito web e l’ambito di applicazione **Dominio e-mail predefinito** è globale (ovvero l’ambito Configurazione predefinita).
 
-   È necessario il codice del sito web per impostare **Invia e-mail a** valore di configurazione.
+  È necessario il codice del sito web per impostare **Invia e-mail a** valore di configurazione.
 
-   Per ulteriori informazioni sulla ricerca di questo valore, vedi: [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](../reference/override-config-settings.md#environment-variables).
+  Per ulteriori informazioni sulla ricerca di questo valore, vedi: [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](../reference/override-config-settings.md#environment-variables).
 
 - Percorsi di configurazione per le impostazioni utilizzate in questo esempio:
 
-   | Nome impostazione | Percorso di configurazione |
-   | -------------------- | -------------------------------------- |
-   | Invia e-mail a | `contact/email/recipient_email` |
-   | Dominio e-mail predefinito | `customer/create_account/email_domain` |
+  | Nome impostazione | Percorso di configurazione |
+  | -------------------- | -------------------------------------- |
+  | Invia e-mail a | `contact/email/recipient_email` |
+  | Dominio e-mail predefinito | `customer/create_account/email_domain` |
 
-   Per tutti i percorsi di configurazione sensibili e specifici del sistema, vedi: [Riferimento ai percorsi di configurazione sensibili e specifici del sistema](../reference/config-reference-sens.md).
+  Per tutti i percorsi di configurazione sensibili e specifici del sistema, vedi: [Riferimento ai percorsi di configurazione sensibili e specifici del sistema](../reference/config-reference-sens.md).
 
 ### Impostare le variabili utilizzando i comandi CLI
 

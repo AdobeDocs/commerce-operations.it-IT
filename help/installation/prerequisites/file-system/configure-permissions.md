@@ -1,6 +1,6 @@
 ---
 title: Configurare la proprietà e le autorizzazioni dei file
-description: Segui questi passaggi per configurare le autorizzazioni del file system per le installazioni locali di Adobe Commerce e Magenti Open Source.
+description: Segui questi passaggi per configurare le autorizzazioni del file system per le installazioni locali di Adobe Commerce e Magento Open Source.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configurare la proprietà e le autorizzazioni dei file
 
-In questo argomento viene illustrato come impostare le autorizzazioni di lettura/scrittura per il gruppo di server Web prima di installare Adobe Commerce o Magenti Open Source. Ciò è necessario affinché la riga di comando possa scrivere file nel file system.
+In questo argomento viene illustrato come impostare le autorizzazioni di lettura/scrittura per il gruppo di server Web prima di installare Adobe Commerce o Magento Open Source. Ciò è necessario affinché la riga di comando possa scrivere file nel file system.
 
 La procedura utilizzata è diversa, a seconda che si utilizzi o meno [hosting condiviso](#set-permissions-for-one-user-on-shared-hosting) e avere un utente o se si utilizza un [server privato](#set-ownership-and-permissions-for-two-users) e avere due utenti.
 
@@ -133,15 +133,15 @@ Per trovare il gruppo dell&#39;utente del server Web:
 
 * CentOS:
 
-   ```bash
-   grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
-   ```
+  ```bash
+  grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
+  ```
 
-   o
+  o
 
-   ```bash
-   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
-   ```
+  ```bash
+  grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
+  ```
 
 In genere, il nome dell’utente e del gruppo è entrambi `apache`.
 

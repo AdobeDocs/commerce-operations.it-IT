@@ -36,11 +36,11 @@ In questo argomento vengono utilizzate le seguenti convenzioni di denominazione:
 - Il nome del database principale è `magento` e il nome utente e la password sono entrambi `magento`
 - Il nome del database delle virgolette è `magento_quote` e il nome utente e la password sono entrambi `magento_quote`
 
-   Il database delle quotazioni è anche denominato _pagamento_ database.
+  Il database delle quotazioni è anche denominato _pagamento_ database.
 
 - Il nome del database delle vendite è `magento_sales` e il nome utente e la password sono entrambi `magento_sales`
 
-   Il database delle vendite è anche denominato database OMS.
+  Il database delle vendite è anche denominato database OMS.
 
 >[!INFO]
 >
@@ -297,7 +297,7 @@ Dove
 
 - `<your sales DB name>` con il nome del database delle vendite.
 
-   In questo argomento, il nome del database di esempio è `magento_sales`.
+  In questo argomento, il nome del database di esempio è `magento_sales`.
 
 - `<root username>` con il nome utente root MySQL
 - `<root user password>` con la password dell&#39;utente

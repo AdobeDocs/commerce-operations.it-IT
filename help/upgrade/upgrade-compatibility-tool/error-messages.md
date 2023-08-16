@@ -38,7 +38,7 @@ Questi errori vengono segnalati quando alcuni dei file core sono mancanti o non 
 
 ### Codice personalizzato
 
-Gli errori critici vengono generati quando il codice personalizzato fa riferimento a entità che non sono presenti nella versione Adobe Commerce di destinazione. Questi errori sono segnalati anche quando gli standard di codifica critici sono stati violati.
+Gli errori critici vengono generati quando il codice personalizzato fa riferimento a entità che non sono presenti nella versione Adobe Commerce di destinazione. Questi errori vengono segnalati anche quando gli standard di codifica critici non sono stati rispettati.
 
 | Codice di errore | Descrizione errore | Azione suggerita |
 | --- | --- | --- |

@@ -33,7 +33,7 @@ Se non c&#39;è comunicazione o collaborazione, potrebbero esserci dei problemi.
 
 ## IT
 
-Alcune aziende considerano il team IT (team tecnico) che coinvolge gli sviluppatori (front-end, back-end e tester) parte del team e-commerce, mentre altre le mantengono separate. Alcune aziende preferiscono disporre internamente dell&#39;intero team IT a causa di problemi di sicurezza, costi, cultura, ambiente o gestione dei prodotti.
+Alcune aziende prendono il team IT (team tecnico) che coinvolge sviluppatori (front-end, back-end e tester) come parte del team e-commerce, mentre alcune aziende li tengono separati. Alcune aziende preferiscono disporre internamente dell&#39;intero team IT a causa di problemi di sicurezza, costi, cultura, ambiente o gestione dei prodotti.
 
 In alternativa, alcune aziende preferiscono affidare il team IT (di sviluppo) a società di consulenza che hanno più competenze in questo settore e possono aiutare a rendere il team interno più efficace. Inoltre, alcune aziende preferiscono avere una combinazione di entrambi.
 

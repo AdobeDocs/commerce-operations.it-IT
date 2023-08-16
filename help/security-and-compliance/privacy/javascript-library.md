@@ -1,6 +1,6 @@
 ---
 title: Libreria JavaScript per la privacy
-description: Scopri come utilizzare gli strumenti personalizzati per accedere ed eliminare le informazioni personali dei clienti raccolte da Adobe Commerce e Magenti Open Source.
+description: Scopri come utilizzare gli strumenti personalizzati per accedere ed eliminare le informazioni personali dei clienti raccolte da Adobe Commerce e Magento Open Source.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Libreria JavaScript per la privacy
 
-La libreria JavaScript per la privacy è un insieme di strumenti che facilitano la creazione di un processo per accedere ed eliminare i dati privati raccolti da Adobe Commerce e Magenti Open Source.
+La libreria JavaScript per la privacy è un insieme di strumenti che facilitano la creazione di un processo per accedere ed eliminare i dati privati raccolti da Adobe Commerce e Magento Open Source.
 
 I servizi di tracciamento dei dati commerciali possono memorizzare informazioni private applicabili alle normative sulla privacy come [Regolamento generale sulla protezione dei dati (RGPD)](gdpr.md) e [California Consumer Privacy Act (CCPA)](ccpa.md).
 
