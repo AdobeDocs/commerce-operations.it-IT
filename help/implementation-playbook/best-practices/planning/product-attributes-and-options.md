@@ -2,9 +2,9 @@
 title: Best practice per la configurazione degli attributi del prodotto
 description: Scopri come ottimizzare le prestazioni di Adobe Commerce limitando il numero di attributi di prodotto, opzioni di attributi e set di attributi
 role: User, Admin
-feature: Best Practices, Catalogs
+feature: Best Practices, Catalog Management
 exl-id: 81783a4c-bc82-4733-bee3-0154cf03079a
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
