@@ -4,9 +4,9 @@ description: Scopri come configurare le impostazioni di database e applicazioni 
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Gli attivatori vengono utilizzati per registrare le modifiche nelle tabelle di c
 - I trigger vengono interpretati come codice e MySQL non li precompila. Collegandosi allo spazio delle transazioni della query, il sovraccarico viene aggiunto a un parser e a un interprete per ogni query eseguita con la tabella.
 - I trigger condividono lo stesso spazio di transazione delle query originali e, mentre tali query competono per i blocchi della tabella, i trigger competono in modo indipendente sui blocchi di un&#39;altra tabella.
 
-Per informazioni sulle alternative all&#39;utilizzo di trigger personalizzati, consulta [Utilizzare i trigger MySQL in modo efficace](mysql-triggers-usage.md) nella nostra knowledge base di supporto.
+Per informazioni sulle alternative all&#39;utilizzo di trigger personalizzati, consulta [Trigger MySQL](mysql-configuration.md#triggers).
 
 ## Aggiorna [!DNL ECE-Tools] alla versione 2002.0.21 o successiva {#ece-tools-version}
 

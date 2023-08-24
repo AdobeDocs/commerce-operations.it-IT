@@ -2,10 +2,10 @@
 user-guide-title: Playbook di implementazione
 user-guide-description: Scopri le strategie per la pianificazione e l’implementazione di un sito Adobe Commerce di successo.
 mini-toc-levels: 3
-source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 10%
+source-wordcount: '254'
+ht-degree: 11%
 
 ---
 
@@ -76,22 +76,14 @@ ht-degree: 10%
    - [Panoramica](best-practices/phases.md)
    - Pianificazione {#planning}
       - [Panoramica](best-practices/planning/overview.md)
+      - [Gestione catalogo](best-practices/planning/catalog-management.md)
       - [Configurazione di siti, archivi e viste archivio](best-practices/planning/sites-stores-store-views.md)
       - [Configurazione del reporting](best-practices/planning/reporting-configuration.md)
       - [Configurazione del database per le distribuzioni cloud&#x200B;](best-practices/planning/database-on-cloud.md)
-      - [Configurazione connessione slave MySQL&#x200B;](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
-      - [Utilizzo trigger MySQL](best-practices/planning/mysql-triggers-usage.md)
+      - [Configurazione MySQL](best-practices/planning/mysql-configuration.md)
       - [Configurazione del servizio Redis](best-practices/planning/redis-service-configuration.md)
       - [Dimensioni memoria OPcache](best-practices/planning/opcache-memory-size.md)
       - [Dimensioni cache realpath](best-practices/planning/realpath-cache-size.md)
-      - [Categorie](best-practices/planning/category-limits.md)
-      - [Prodotto](best-practices/planning/product-sku-limits.md)
-      - [Varianti prodotto](best-practices/planning/product-variations.md)
-      - [Opzioni prodotto](best-practices/planning/product-options.md)
-      - [Attributi del prodotto](best-practices/planning/product-attributes-and-options.md)
-      - [Paginazione elenco prodotti](best-practices/planning/product-listing-pagination.md)
-      - [Limite carrello prodotti](best-practices/planning/product-cart.md)
-      - [Promozioni](best-practices/planning/product-cart-promotions.md)
       - [Estensioni](best-practices/planning/extensions.md)
       - [Inoltri per partner](best-practices/planning/partner-escalation.md)
       - [Elaborazione archiviazione pagamenti](best-practices/planning/payment-processing-storage.md)
@@ -112,10 +104,11 @@ ht-degree: 10%
       - [Panoramica](best-practices/maintenance/overview.md)
       - [Verifica prestazioni front-end](best-practices/maintenance/frontend-performance.md)
       - [Configurazione indicizzatore](best-practices/maintenance/indexer-configuration.md)
+      - [Applicazione di patch su scala](best-practices/maintenance/patching-at-scale.md)
       - [Elaborazione ordine](best-practices/maintenance/order-processing-configuration.md)
+      - [Risolvere i problemi di prestazioni del database](best-practices/maintenance/resolve-database-performance-issues.md)
       - [Pianificazione degli aggiornamenti dell’amministratore nei siti di produzione](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [Aggiorna servizi](best-practices/maintenance/update-services.md)
       - [Elenco di controllo per l’aggiornamento](best-practices/maintenance/upgrade-checklist.md)
-      - [Risolvere i problemi di prestazioni del database](best-practices/maintenance/resolve-database-performance-issues.md)
       - [Prerequisiti per l&#39;aggiornamento di MariaDB](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
