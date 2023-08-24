@@ -2,9 +2,9 @@
 title: Applicare le patch
 description: Scopri i metodi per applicare le patch a un progetto Adobe Commerce o Magento Open Source.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 454f586737292341b3e6dd9a57cc92b3472c4b31
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 0%
 - [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Riga di comando](../patches/apply.md#command-line)
 - [Compositore](../patches/apply.md#composer)
+
+
+>[!TIP]
+>
+>Consulta [best practice](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) per informazioni sull&#39;applicazione centralizzata di patch per Adobe Commerce su scala aziendale.
 
 ## Compositore
 
