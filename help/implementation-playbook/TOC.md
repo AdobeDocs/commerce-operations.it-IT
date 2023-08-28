@@ -2,10 +2,10 @@
 user-guide-title: Playbook di implementazione
 user-guide-description: Scopri le strategie per la pianificazione e l’implementazione di un sito Adobe Commerce di successo.
 mini-toc-levels: 3
-source-git-commit: 42d027a3aedb8d395097d872a97998e76e547966
+source-git-commit: d33d1e24c38984d0abf0c7f8f5ad2eb804ff621d
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '278'
+ht-degree: 10%
 
 ---
 
@@ -36,7 +36,13 @@ ht-degree: 11%
    - [Strategia di integrazione](architecture/integration-strategy.md)
    - [Strategia di estensibilità](architecture/extensibility-strategy.md)
    - [Opzioni di integrazione](architecture/integration-options.md)
-   - [Architettura di riferimento globale](architecture/global-reference.md)
+   - Architettura di riferimento globale {#global-reference-architecture}
+      - [Panoramica](architecture/global-reference/overview.md)
+      - [Esempi](architecture/global-reference/examples.md)
+      - Sviluppo del composizione {#composer}
+         - [Panoramica](architecture/global-reference/composer/overview.md)
+         - [Struttura del progetto](architecture/global-reference/composer/project-structure.md)
+         - [Suggerimenti](architecture/global-reference/composer/tips-and-tricks.md)
    - Commercio headless {#headless}
       - [Vantaggi](architecture/headless/benefits.md)
       - [Percorso a headless](architecture/headless/journey-to-headless.md)
@@ -89,6 +95,13 @@ ht-degree: 11%
       - [Elaborazione archiviazione pagamenti](best-practices/planning/payment-processing-storage.md)
    - Sviluppo {#development}
       - [Panoramica](best-practices/development/overview.md)
+      - [Best practice generali](best-practices/development/general.md)
+      - [Gestione del codice](best-practices/development/code-management.md)
+      - [Revisione del codice](best-practices/development/code-review.md)
+      - [Debug](best-practices/development/debugging.md)
+      - [Gestione delle eccezioni](best-practices/development/exception-handling.md)
+      - [Diramazione Git](best-practices/development/git-branching.md)
+      - [Ridimensionamento immagine catalogo](best-practices/development/catalog-image-resizing.md)
       - [Ottimizzazione immagine](best-practices/development/image-optimization.md)
       - [Risoluzione dei problemi](best-practices/development/troubleshooting.md)
       - [Ottimizzare i file CSS e JS](best-practices/development/optimize-css-js-files.md)

@@ -4,7 +4,7 @@ description: Scopri in che modo l’applicazione di patch centralizzate per Adob
 role: Developer
 feature: Best Practices
 badge: label="Contribuito da Anton Evers, Sr. Technical Architect, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Con il contributo di Anton Evers"
-source-git-commit: d8ee656b4b1741b39f2eef1f5628a299377e774c
+source-git-commit: 9cda88a4aeb4cc58d8ec9c4417e3107885a6cdb8
 workflow-type: tm+mt
 source-wordcount: '1309'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Best practice per la distribuzione delle patch di Adobe Commerce su larga scala
 
-Se gestisci più installazioni di Adobe Commerce, [applicazione patch](../../../upgrade/patches/apply.md) può essere un processo complesso. _Applicazione centralizzata di patch_ è una parte essenziale di [architettura di riferimento globale](../../architecture/global-reference.md) e una buona pratica per le imprese. Consente di applicare le patch corrette a tutte le installazioni di Adobe Commerce. Questo argomento spiega come ottenere una distribuzione centralizzata delle patch per tutti i tipi di Adobe Commerce [patch](../../../upgrade/patches/overview.md).
+Se gestisci più installazioni di Adobe Commerce, [applicazione patch](../../../upgrade/patches/apply.md) può essere un processo complesso. _Applicazione centralizzata di patch_ è una parte essenziale di [architettura di riferimento globale](../../architecture/global-reference/overview.md) e una buona pratica per le imprese. Consente di applicare le patch corrette a tutte le installazioni di Adobe Commerce. Questo argomento spiega come ottenere una distribuzione centralizzata delle patch per tutti i tipi di Adobe Commerce [patch](../../../upgrade/patches/overview.md).
 
 >[!NOTE]
 >
