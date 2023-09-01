@@ -1,19 +1,24 @@
 ---
-title: Recommendations di ottimizzazione delle prestazioni
+title: Raccomandazioni per l’ottimizzazione delle prestazioni
 description: Segui queste raccomandazioni per ottimizzare le prestazioni dell’implementazione di Adobe Commerce.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
 feature: Cloud
 topic: Performance
-source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
+source-git-commit: 31c71af854a59381c7793f26ed9b121cd9bcac83
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
 
+
 # Valutazione dell’ottimizzazione delle prestazioni
 
-Anche se l’ottimizzazione delle prestazioni può provenire da molti aspetti, ci sono alcune raccomandazioni generali che dovrebbero essere prese in considerazione per la maggior parte degli scenari. Ciò include l’ottimizzazione della configurazione per gli elementi dell’infrastruttura, la configurazione back-end di Adobe Commerce e la pianificazione della scalabilità dell’architettura.
+Anche se l’ottimizzazione delle prestazioni può provenire da molti aspetti, ci sono alcune raccomandazioni generali che dovrebbero essere prese in considerazione per la maggior parte degli scenari. I consigli generali includono l’ottimizzazione della configurazione per gli elementi dell’infrastruttura, la configurazione back-end di Adobe Commerce e la pianificazione della scalabilità dell’architettura.
+
+>[!TIP]
+>
+>Consulta la [_Guida alle best practice per le prestazioni_](../../../performance/overview.md) per ulteriori informazioni sull&#39;ottimizzazione delle prestazioni.
 
 ## Infrastruttura
 
@@ -25,7 +30,7 @@ La ricerca DNS è il processo di ricerca dell’indirizzo IP a cui appartiene il
 
 ### Rete per la distribuzione dei contenuti (CDN)
 
-Utilizza una rete CDN per ottimizzare le prestazioni di download delle risorse. Adobe Commerce utilizza Fastly. Se disponi di un’implementazione on-premise di Adobe Commerce, prendi in considerazione anche l’aggiunta di un livello CDN.
+Utilizza una rete CDN per ottimizzare le prestazioni di download delle risorse. Adobe Commerce utilizza Fastly. Se hai implementato Adobe Commerce on-premise, dovresti anche considerare l’aggiunta di un livello CDN.
 
 ### Latenza web
 
@@ -35,7 +40,7 @@ La posizione del datacenter influisce sulla latenza web per gli utenti front-end
 
 Una larghezza di banda di rete sufficiente è uno dei requisiti chiave per lo scambio di dati tra nodi web, database, server di caching/sessione e altri servizi.
 
-Poiché Adobe Commerce sfrutta in modo efficace il caching per prestazioni elevate, il sistema può scambiare attivamente i dati con server di caching come Redis. Se Redis si trova su un server remoto, è necessario fornire un canale di rete sufficiente tra i nodi web e il server di caching per evitare colli di bottiglia nelle operazioni di lettura/scrittura.
+Poiché Adobe Commerce utilizza la memorizzazione nella cache per prestazioni elevate, il sistema può scambiare attivamente i dati con server di memorizzazione nella cache come Redis. Se Redis è installato su un server remoto, è necessario fornire un canale di rete sufficiente tra i nodi web e il server di caching per evitare colli di bottiglia nelle operazioni di lettura/scrittura.
 
 ### Sistema operativo (OS)
 
@@ -55,7 +60,7 @@ L’ottimizzazione di queste impostazioni dipende dai risultati del test delle p
 
 - **ByteCode**- Per ottenere la massima velocità da Adobe Commerce su PHP 7, è necessario attivare `opcache` e configurarlo correttamente.
 
-- **APCU**- Si consiglia di abilitare l&#39;estensione PHP APCu e configurare Composer per ottimizzare le prestazioni. Questa estensione memorizza nella cache i percorsi dei file aperti, migliorando le prestazioni per le chiamate al server Adobe Commerce, incluse le pagine, le chiamate AJAX e gli endpoint.
+- **APCU**- L&#39;Adobe consiglia di abilitare l&#39;estensione PHP APCu e di configurare Compositore per ottimizzare le prestazioni. Questa estensione memorizza nella cache i percorsi dei file aperti, migliorando le prestazioni per le chiamate al server Adobe Commerce, incluse le pagine, le chiamate AJAX e gli endpoint.
 
 - **Realpath_cacheconfiguration**- Ottimizzazione `realpath_cache` consente ai processi PHP di memorizzare nella cache i percorsi dei file invece di cercarli ogni volta che viene caricata una pagina.
 
@@ -71,9 +76,9 @@ Per utilizzare nginx come server web è necessaria solo una leggera riconfiguraz
 
 ### Database
 
-Questo documento non fornisce istruzioni di tuning MySQL approfondite perché ogni archivio e ambiente è diverso, ma è possibile formulare alcune raccomandazioni generali.
+Questo documento non fornisce istruzioni di tuning MySQL approfondite perché ogni archivio e ambiente è diverso, ma Adobe può fornire consigli generali.
 
-Il database di Adobe Commerce (così come qualsiasi altro database) è sensibile alla quantità di memoria disponibile per l’archiviazione di dati e indici. Per sfruttare in modo efficace l&#39;indicizzazione dei dati MySQL, la quantità di memoria disponibile deve essere, come minimo, quasi la metà della dimensione dei dati memorizzati nel database.
+Il database di Adobe Commerce (e qualsiasi altro database) è sensibile alla quantità di memoria disponibile per l’archiviazione di dati e indici. Per utilizzare in modo efficace l&#39;indicizzazione dei dati MySQL, la quantità di memoria disponibile deve essere, come minimo, quasi la metà della dimensione dei dati memorizzati nel database.
 
 Ottimizza `innodb_buffer_pool_instances` impostazione per evitare problemi con più thread che tentano di accedere alla stessa istanza. Il valore della proprietà `max_connections` Il parametro deve essere correlato al numero totale di thread PHP configurati nel server applicazioni. Utilizza la formula seguente per calcolare il valore migliore per `innodb-thread-concurrency`:
 
@@ -85,15 +90,15 @@ innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
 
 Il caching delle sessioni è un buon candidato per la configurazione per un’istanza separata di Redis. La configurazione della memoria per questo tipo di cache deve tenere conto della strategia di abbandono del carrello del sito e di quanto tempo una sessione deve aspettarsi di rimanere nella cache.
 
-I Redis devono avere una quantità di memoria sufficiente per contenere tutte le altre cache in memoria per ottenere prestazioni ottimali. La cache di blocco sarà il fattore chiave per determinare la quantità di memoria da configurare. La cache dei blocchi cresce in relazione al numero di pagine su un sito (numero di SKU x numero di visualizzazioni dello store).
+I Redis devono avere una quantità di memoria sufficiente per contenere tutte le altre cache in memoria per ottenere prestazioni ottimali. La cache di blocco è il fattore chiave per determinare la quantità di memoria da configurare. La cache dei blocchi cresce in relazione al numero di pagine su un sito (numero di SKU x numero di visualizzazioni dello store).
 
 ### Memorizzazione in cache delle pagine
 
-Consigliamo vivamente di utilizzare vernice per la cache a pagina intera nel tuo store Adobe Commerce. Il `PageCache` Il modulo è ancora presente nella base di codice, ma deve essere utilizzato solo a scopo di sviluppo.
+L’Adobe consiglia vivamente di utilizzare Vernice per la cache a pagina intera nel tuo store Adobe Commerce. Il `PageCache` Il modulo è ancora presente nella base di codice, ma deve essere utilizzato solo a scopo di sviluppo.
 
 Installa Vernice su un server separato di fronte al livello web. Deve accettare tutte le richieste in arrivo e fornire copie delle pagine memorizzate nella cache. Per consentire a Varish di funzionare in modo efficace con pagine protette, è possibile inserire un proxy di terminazione SSL davanti a Varnish. Nginx può essere utilizzato per questo scopo.
 
-Anche se l&#39;annullamento della validità della memoria cache a pagina intera di Varnish è efficace, si consiglia di allocare una quantità di memoria sufficiente per mantenere le pagine più popolari in memoria.
+Mentre l&#39;annullamento della validità della memoria cache a pagina intera di Varnish è efficace, Adobe consiglia di allocare una quantità di memoria sufficiente per mantenere le pagine più popolari in memoria.
 
 ### Code di messaggi
 
@@ -105,7 +110,7 @@ Per ottenere una stima delle funzionalità della piattaforma e-commerce, è semp
 
 >[!NOTE]
 >
-> Adobe Commerce sull’infrastruttura cloud applica già tutte le ottimizzazioni dell’infrastruttura e dell’architettura di cui sopra, ad eccezione della ricerca DNS perché fuori dall’ambito di applicazione.
+> Adobe Commerce sull’infrastruttura cloud applica già le ottimizzazioni dell’infrastruttura e dell’architettura di cui sopra, ad eccezione della ricerca DNS perché fuori ambito.
 
 ### Ricerca {#search-heading}
 
@@ -113,28 +118,28 @@ Elasticsearch (o OpenSearch) è obbligatorio a partire dalla versione 2.4 di Ado
 
 ## Modelli operativi
 
-Oltre alle raccomandazioni comuni per l&#39;ottimizzazione dell&#39;infrastruttura precedentemente menzionate, esistono anche approcci per migliorare le prestazioni per modalità e scale di business specifiche. Questo documento non fornisce istruzioni di ottimizzazione approfondite per tutti gli scenari, in quanto ogni scenario è diverso, ma possiamo fornire alcune opzioni di alto livello per riferimento.
+Oltre alle raccomandazioni comuni per l&#39;ottimizzazione dell&#39;infrastruttura precedentemente menzionate, esistono anche approcci per migliorare le prestazioni per modalità e scale di business specifiche. Questo documento non fornisce istruzioni di ottimizzazione approfondite per tutti gli scenari, in quanto ogni scenario è diverso, ma Adobe può fornire alcune opzioni di alto livello per riferimento.
 
 ### Architettura headless
 
-Abbiamo una sezione separata dedicata al dettaglio di cosa [headless](../../architecture/headless/adobe-commerce.md) è e opzioni diverse. In sintesi, separa il livello vetrina dalla piattaforma stessa. È ancora lo stesso backend, ma Adobe Commerce non elabora più le richieste direttamente e supporta solo storefront personalizzati tramite l’API GraphQL.
+È disponibile una sezione separata dedicata a [headless](../../architecture/headless/adobe-commerce.md). In sintesi, separa il livello vetrina dalla piattaforma stessa. È ancora lo stesso backend, ma Adobe Commerce non elabora più le richieste direttamente e supporta solo storefront personalizzati tramite l’API GraphQL.
 
 ### Mantieni Adobe Commerce aggiornato
 
 Adobe Commerce offre sempre prestazioni migliori quando si esegue la versione più recente. Anche se non è possibile mantenere Adobe Commerce aggiornato dopo il rilascio di ogni nuova versione, si consiglia comunque di [aggiornamento](../../../upgrade/overview.md) quando Adobe Commerce introduce significative ottimizzazioni delle prestazioni.
 
-Ad esempio, nel 2020, Adobe ha rilasciato un’ottimizzazione per il livello Redis, risolvendo molte inefficienze, problemi di connessione e trasferimenti di dati non necessari tra Redis e Adobe Commerce. Le prestazioni complessive tra 2,3 e 2,4 sono giorno e notte e abbiamo visto miglioramenti significativi nel carrello, nel pagamento e negli utenti simultanei, solo grazie all’ottimizzazione Redis.
+Ad esempio, nel 2020, Adobe ha rilasciato un’ottimizzazione per il livello Redis, risolvendo molte inefficienze, problemi di connessione e trasferimenti di dati non necessari tra Redis e Adobe Commerce. Le prestazioni complessive tra 2.3 e 2.4 sono notturne e diurne e hanno fornito miglioramenti significativi in termini di carrello, pagamento e utenti simultanei, grazie all’ottimizzazione Redis.
 
 ### Ottimizza modello dati
 
 Molti problemi derivano dai dati, inclusi modelli di dati non validi, dati non strutturati correttamente e dati senza indice.
 
-Va bene se stai testando alcune connessioni, ma viene visto in produzione quando arriva il traffico reale ed è qui che entra in gioco la lentezza. È molto importante che gli integratori di sistemi sappiano come progettare un modello di dati (in particolare per gli attributi del prodotto), evitare di aggiungere attributi non necessari e mantenere attributi obbligatori che influiscono sulla logica di business (come prezzi, disponibilità di stock e ricerca).
+Sembra che vada bene se stai testando alcune connessioni, ma dopo la distribuzione in produzione potresti notare un grave deterioramento delle prestazioni. È importante che gli integratori di sistemi sappiano come progettare un modello di dati (in particolare per gli attributi del prodotto), evitare di aggiungere attributi non necessari e mantenere attributi obbligatori che influiscono sulla logica di business (come prezzi, disponibilità di stock e ricerca).
 
-Per gli attributi che non influiscono sulla logica di business ma che devono ancora essere presenti nella vetrina, combinali in alcuni attributi (ad esempio, il formato JSON).
+Per gli attributi che non influiscono sulla logica di business ma che devono essere ancora presenti nella vetrina, combinali in alcuni attributi (ad esempio, il formato JSON).
 
 Per ottimizzare le prestazioni della piattaforma, se la logica di business non è richiesta nella vetrina da dati o attributi rilevati da un PIM o un ERP, non è necessario aggiungere tale attributo in Adobe Commerce.
 
 ### Progettazione per la scalabilità
 
-Questo è importante per le aziende che eseguono campagne e che spesso devono affrontare orari di picco. Affinché l&#39;architettura e la progettazione delle applicazioni siano facili da scalare, è possibile aumentare le risorse durante i periodi di picco e ridurle successivamente.
+La scalabilità è importante per le aziende che eseguono campagne e che si trovano spesso ad affrontare i picchi di traffico. Un&#39;architettura scalabile e una progettazione delle applicazioni possono aumentare le risorse durante i periodi di picco e ridurle successivamente.
