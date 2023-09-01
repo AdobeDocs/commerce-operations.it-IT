@@ -4,20 +4,16 @@ description: Scopri le best practice per la configurazione di siti, store e visu
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
 # Procedure consigliate per la configurazione di siti, archivi e visualizzazione archivio
 
-Per ottenere le migliori prestazioni del sito, configura un massimo di 50 siti, 50 store e 50 visualizzazioni store per Adobe Commerce nei progetti di infrastruttura cloud.
-
->[!NOTE]
->
->Per Adobe Commerce sull’infrastruttura cloud, le best practice si applicano in modo specifico all’ambiente di produzione (e possibilmente all’architettura di staging su Pro, soggetta a vincoli di risorse) che avrebbe più risorse degli ambienti di integrazione e sviluppo. Per gli ambienti di integrazione (Pro e Starter) e staging (Starter), riduci il numero di visualizzazioni dello store a meno di 5 o 10 (in base a una revisione tecnica).
+Per Adobe Commerce sull’infrastruttura cloud, le best practice si applicano in modo specifico all’ambiente di produzione (e possibilmente all’architettura di staging su Pro, soggetta a vincoli di risorse) che avrebbe più risorse degli ambienti di integrazione e sviluppo.
 
 ## Prodotti e versioni interessati
 

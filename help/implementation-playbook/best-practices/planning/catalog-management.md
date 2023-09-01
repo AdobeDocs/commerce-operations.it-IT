@@ -3,9 +3,9 @@ title: Best practice per la gestione del catalogo
 description: Scopri i consigli per la configurazione dei limiti del carrello e degli attributi del prodotto, l’impaginazione degli elenchi, le opzioni, le promozioni e le varianti.
 role: Developer
 feature: Best Practices, Catalog Management
-source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
+source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1420'
 ht-degree: 0%
 
 ---
@@ -25,16 +25,7 @@ Le best practice per la gestione dei cataloghi qui descritte riguardano una seri
 
 ## Limiti del carrello
 
-Per ottenere prestazioni ottimali, utilizza le seguenti linee guida per gestire i limiti del carrello per Adobe Commerce e Magento Open Source:
-
-- Per le versioni 2.3.x - 2.4.2, consenti un massimo di 100 prodotti in un carrello.
-- Per le versioni 2.4.3 e successive, il miglioramento delle funzionalità delle regole di vendita ha aumentato il carrello a un massimo di 750.
-
-Per le versioni 2.3.x - 2.4.2, le prestazioni previste in base ai limiti degli articoli del carrello sono:
-
-- Fino a **100** prodotti in un carrello: il prodotto funziona, rispettando gli obiettivi prestazionali per i tempi di risposta.
-- Fino a **300** prodotti in un carrello: il prodotto funziona, ma i tempi di risposta aumentano al di sopra degli obiettivi.
-- Sopra **500** prodotti in un carrello: il carrello e i flussi di pagamento non sono garantiti
+Per ottenere prestazioni ottimali, utilizza le seguenti linee guida per gestire i limiti del carrello per Adobe Commerce e Magento Open Source.
 
 ### Prodotti e versioni interessati
 
@@ -50,20 +41,9 @@ Utilizza le seguenti strategie per gestire il numero di articoli del carrello
 - Dividi gli ordini in diversi ordini più piccoli con un numero inferiore di righe utilizzando [!UICONTROL Add Item by SKU] funzionalità.
 - Aggiungi solo la logica personalizzata e la personalizzazione del carrello richieste per caricare un elenco di elementi.
 
-### Potenziale impatto sulle prestazioni
-
-Avere nel carrello un numero di prodotti superiore al numero massimo consigliato può influire sulle prestazioni del sito nei seguenti modi:
-
-- Tempi di risposta più rapidi per le operazioni di recupero dei dati, convalida degli articoli del carrello, verifica dell&#39;applicazione delle regole di prezzo e calcoli delle imposte e dei totali.
-- È stato aumentato il tempo di risposta per il rendering di minicart, incluso il rendering delle visualizzazioni del carrello, il flusso di pagamento e l’esecuzione.
-- Tempo di caricamento aumentato per tutte le pagine del sito in cui è presente il minicart.
-
 ## Limiti delle categorie
 
-Per prestazioni ottimali, non configurare più del numero massimo di categorie consigliato per i siti Adobe Commerce.
-
-- Per Adobe Commerce versione 2.4.2 e successive, configura un massimo di 6000 categorie
-- Per Adobe Commerce versione 2.3.x e da 2.4.0 a 2.4.1-p1, configura un massimo di 3000 categorie
+La configurazione di un numero elevato di categorie può influire sulle prestazioni.
 
 ### Prodotti e versioni interessati
 
@@ -80,25 +60,9 @@ Utilizza le seguenti strategie per ridurre il numero di categorie:
 - Rimuovi categorie inattive
 - Ottimizzare la profondità del catalogo nella navigazione
 
-### Potenziale impatto sulle prestazioni
-
-Un numero di categorie superiore al numero massimo consigliato può influire sulle prestazioni del sito nei seguenti modi:
-
-- Aumento tangibile del tempo di risposta per le pagine di catalogo non memorizzate nella cache
-- Esecuzione lunga e timeout durante la gestione delle categorie dall’amministratore
-- Aumento delle dimensioni delle tabelle di database corrispondenti
-- Tabelle indice più grandi aumentano il tempo necessario per completare le operazioni di indicizzazione per `[category/product relation index\]`
-- Aumento del tempo di elaborazione per completare le operazioni di creazione della struttura delle categorie, recupero dei menu e gestione delle regole di categoria
-
 ## Attributi del prodotto
 
-- Per ottenere prestazioni ottimali, non configurare un numero di attributi di prodotto o opzioni di attributi di prodotto superiore a quello massimo consigliato.
-
-- **Attributi del prodotto**—
-   - Per Adobe Commerce versione 2.3.x e da 2.4.0 a 2.4.1-p1, configura non più di 500 attributi
-   - Per Adobe Commerce versione 2.4.2 e successive, configura fino a 1500 attributi di prodotto
-- **Opzioni degli attributi del prodotto**-Configurare fino a 100 opzioni di attributo per ciascun attributo
-- **Set di attributi del prodotto**-Configurare un massimo di 1000 set di attributi
+La configurazione di troppi attributi di prodotto o di opzioni di attributi di prodotto può influire sulle prestazioni.
 
 >[!NOTE]
 >
@@ -170,7 +134,7 @@ Configurazione di molti **opzioni attributo** può influire sulle prestazioni de
 
 ## Opzioni prodotto
 
-Per ottenere le migliori prestazioni, configura un massimo di 100 opzioni prodotto per prodotto.
+La configurazione di un numero eccessivo di opzioni prodotto per prodotto può influire sulle prestazioni.
 
 ### Prodotti e versioni interessati
 
@@ -181,7 +145,7 @@ Per ottenere le migliori prestazioni, configura un massimo di 100 opzioni prodot
 
 ### Riduci il numero di opzioni
 
-Per ottenere le migliori prestazioni del sito, utilizza le seguenti strategie per ridurre il numero di opzioni di prodotto:
+Utilizza le seguenti strategie per ridurre il numero di opzioni di prodotto per prodotto:
 
 - Configura prodotti complessi e opzioni personalizzate come origine di varianti di prodotto.
 - Invece di creare modelli di prodotto globali e contenitori di opzioni applicabili a tutti i prodotti, utilizza i set di attributi per creare modelli di prodotto specifici con attributi e opzioni di destinazione.
@@ -202,9 +166,7 @@ Gli aumenti elencati sopra possono influire sulle prestazioni del sito nei segue
 
 ## Paginazione elenco prodotti
 
-Per ottenere prestazioni ottimali, visualizza un massimo di 48 prodotti per pagina.
-
-Puoi configurare Adobe Commerce in modo da consentire agli acquirenti di visualizzare tutti i prodotti delle categorie su un’unica pagina. Se il numero di prodotti della categoria supera notevolmente i 48 prodotti, aggiorna la configurazione del catalogo per i controlli di paginazione della vetrina.
+La visualizzazione di un numero eccessivo di prodotti per pagina può influire sulle prestazioni.
 
 ### Prodotti e versioni interessati
 
@@ -215,24 +177,13 @@ Puoi configurare Adobe Commerce in modo da consentire agli acquirenti di visuali
 
 ### Aggiornare la configurazione dell’elenco dei prodotti
 
-Se hai più di 48 prodotti in una categoria, aggiorna la configurazione del catalogo della vetrina per disabilitare l’opzione su **Consenti tutti i prodotti per pagina**.
+Se hai troppi prodotti in una categoria, aggiorna la configurazione del catalogo della vetrina per disabilitare l’opzione su **Consenti tutti i prodotti per pagina**.
 
 Dopo aver disabilitato questa opzione, Adobe Commerce utilizza i controlli di paginazione della vetrina per gestire il numero di prodotti visualizzati nei componenti della vetrina. Per istruzioni, consulta [Configurare i controlli di impaginazione](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Limiti SKU prodotto
 
-Per massimizzare le prestazioni, il valore massimo consigliato per le SKU (Stock Keeping Unit) del prodotto è 242 milioni. Questo SKU prodotto effettivo massimo è calcolato come:
-
-```text
-Effective SKU = N[SKUs] x N[Stores] x N[Customer groups]
-```
-
-Dove:
-
-- N sta per il numero di elementi per quella categoria
-- I gruppi di clienti includono cataloghi condivisi, in quanto creano un gruppo di clienti aggiuntivo.
-
-Avere un numero di SKU superiore al massimo consentito rallenta il recupero dei dati dei prodotti e aumenta il tempo necessario per completare le operazioni o le indicizzazioni del pannello di amministrazione.
+Configurare troppi SKU di prodotto può influire sulle prestazioni rallentando il recupero dei dati di prodotto e aumentando il tempo necessario per completare le operazioni o le indicizzazioni dell’amministratore.
 
 ### Prodotti e versioni interessati
 
@@ -246,7 +197,7 @@ Avere un numero di SKU superiore al massimo consentito rallenta il recupero dei 
 Per ridurre il numero di prodotti (SKU), utilizza le seguenti strategie:
 
 - Riduci al minimo i moltiplicatori:
-   - Il consolidamento dei siti web riduce il moltiplicatore. Se disponi di 50.000 SKU, dieci siti Web e dieci gruppi di clienti, il numero effettivo di SKU è 5 milioni. La rimozione di cinque gruppi di clienti riduce le SKU effettive a 2,5 milioni.
+   - Il consolidamento dei siti web riduce il moltiplicatore.
    - Utilizza funzioni di prodotto alternative per i prezzi personalizzati al posto dei moltiplicatori di cataloghi e gruppi di clienti condivisi.
    - Sia i gruppi di clienti che il catalogo condiviso fungono da moltiplicatori per il numero di SKU effettivi in un negozio.
 - Ristrutturare il catalogo:
@@ -259,7 +210,7 @@ Per ridurre il numero di prodotti (SKU), utilizza le seguenti strategie:
 
 ## Varianti prodotto
 
-Per prestazioni ottimali, configura un massimo di 50 varianti per prodotto.
+La configurazione di un numero eccessivo di varianti per prodotto può influire sulle prestazioni.
 
 ### Prodotti e versioni interessati
 
@@ -287,13 +238,12 @@ Il superamento del numero consigliato di varianti di prodotto può influire sull
 
 ## Promozioni
 
-Per ottenere prestazioni ottimali, segui queste best practice per configurare vendite e promozioni per gli articoli in un carrello:
+Segui queste best practice per configurare vendite e promozioni per gli articoli in un carrello:
 
-- **Regole di vendita (regole prezzo carrello)**-Configurare non più di 1000 regole di prezzo del carrello per tutti i siti Web
+- **Regole di vendita (regole prezzo carrello)**
    - Gestisci e rimuovi le regole non utilizzate.
    - Aggiungi condizioni di regola rigide (come un filtro di attributi o categorie) per ottenere la corrispondenza più efficiente.
-- **Coupon**—
-   - Verificare che il numero totale di coupon nel database sia inferiore a 250.000.
+- **Coupon**
    - Rimuovere i coupon inutilizzati e scaduti.
    - Genera solo il numero di coupon necessari per soddisfare i requisiti della campagna.
 
@@ -312,4 +262,4 @@ Avere un numero di regole di prezzo del carrello superiore a quello massimo cons
 - È stato aumentato il tempo necessario per caricare ed eseguire il rendering del minicart.
 - È stato aumentato il tempo per il rendering della pagina del carrello.
 - È stato aumentato il tempo di rendering del **Totali** nella pagina Pagamento.
-- L’applicazione dei coupon può richiedere più di 2 secondi.
+
