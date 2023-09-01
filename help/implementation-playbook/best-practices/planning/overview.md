@@ -4,10 +4,10 @@ description: Scopri le best practice di implementazione per la fase di pianifica
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 9cda88a4aeb4cc58d8ec9c4417e3107885a6cdb8
+source-git-commit: 48ed42e69c5786a10de3426d581e35030412c001
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 0%
+source-wordcount: '458'
+ht-degree: 1%
 
 ---
 
@@ -15,64 +15,118 @@ ht-degree: 0%
 
 La fase di pianificazione comprende le seguenti attività:
 
-- Raccolta dei requisiti
 - Progettazione architettonica
 - Progettazione catalogo
-- Ambito progetto
-- Provisioning account
-- Accesso utente
 - Acquisto dell’estensione
+- Ambito progetto
+- Raccolta dei requisiti
+- Vendite e marketing
 
 Le sezioni seguenti includono informazioni sulle best practice per la fase di pianificazione.
 
 ## Raccolta dei requisiti
 
-- **Configurazione dell’applicazione**
-   - [Best practice per la configurazione di siti, store e visualizzazioni dello store (infrastruttura cloud)](sites-stores-store-views.md)
-   - [Come evitare e risolvere i cinque problemi di configurazione più comuni per i siti Adobe Commerce](https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales)
-   - [Best practice per il caching](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
-   - [Memorizzazione in cache di pagine intere](https://developer.adobe.com/commerce/php/development/cache/page/public-content/)
-   - [Dimensioni memoria OPcache](opcache-memory-size.md)
-   - [Configurazione del reporting](reporting-configuration.md)
+<table>
+<thead>
+  <tr>
+    <th>Best practice</th>
+    <th>Descrizione</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan="2"><em>Configurazione dell’applicazione</em></td>
+  </tr>
+  <tr>
+    <td><a href="sites-stores-store-views.md">Configurare siti, archivi e visualizzazioni dello store</a></td>
+    <td>Configurare siti, archivi e visualizzazioni dello store per ottimizzare le prestazioni del sito.</td>
+  </tr>
+  <tr>
+    <td><a href="https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales">Problemi di configurazione comuni</a></td>
+    <td>Correggi ed evita i cinque problemi di configurazione più comuni per i siti Adobe Commerce.</td>
+  </tr>
+  <tr>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">Memorizzazione in cache</a></td>
+    <td>Utilizza gli strumenti di gestione della cache per migliorare le prestazioni del sito.</td>
+  </tr>
+  <tr>
+    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">Memorizzazione in cache a pagina intera</a></td>
+    <td>Scopri come utilizzare i dati pubblici durante l’implementazione del caching nell’estensione Adobe Commerce o di Magento Open Source.</td>
+  </tr>
+  <tr>
+    <td><a href="opcache-memory-size.md">Dimensioni memoria OPcache</a></td>
+    <td>Evita il degrado delle prestazioni con impostazioni specifiche di consumo della memoria OPcache.</td>
+  </tr>
+  <tr>
+    <td><a href="reporting-configuration.md">Configurare la generazione di rapporti</a></td>
+    <td>Ottimizza le prestazioni del sito rimuovendo il modulo di reporting se non lo utilizzi.</td>
+  </tr>
+  <tr>
+    <td colspan="2"><em>Configurazione del database</em></td>
+  </tr>
+  <tr>
+    <td><a href="database-on-cloud.md">Configurare il database per le distribuzioni cloud</a></td>
+    <td>Configura le impostazioni di database e applicazioni per migliorare le prestazioni durante la distribuzione di Adobe Commerce nei progetti di infrastruttura cloud.</td>
+  </tr>
+  <tr>
+    <td><a href="mysql-configuration.md">Configura MySQL</a></td>
+    <td>Scopri in che modo i trigger MySQL e le connessioni slave influiscono sulle prestazioni del sito e come utilizzarle in modo efficace.</td>
+  </tr>
+  <tr>
+    <td colspan="2"><em>Configurazione servizi</em></td>
+  </tr>
+  <tr>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html">Configura Fastly</a></td>
+    <td>Configura i servizi Fastly per il progetto di infrastruttura cloud Adobe Commerce on.</td>
+  </tr>
+  <tr>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html">Configurare i canali di notifica per New Relic</a></td>
+    <td>Accedi al tuo dashboard di New Relic e analizza i dati del tuo progetto Adobe Commerce on cloud infrastructure.</td>
+  </tr>
+  <tr>
+    <td><a href="redis-service-configuration.md">Configurare Redis</a></td>
+    <td>Migliora le prestazioni di caching utilizzando l’implementazione della cache Redis estesa per Adobe Commerce.</td>
+  </tr>
+  <tr>
+    <td><a href="realpath-cache-size.md">Dimensioni cache realpath</a></td>
+    <td>Ottimizza le prestazioni aggiornando la configurazione della cache PHP "readlpath" per utilizzare le impostazioni consigliate.</td>
+  </tr>
+</tbody>
+</table>
 
-- **Configurazione del database**
-   - [Best practice per la configurazione del database per le distribuzioni cloud&#x200B;](database-on-cloud.md)
-   - [Configurazione MySQL&#x200B;](mysql-configuration.md)
+## Progettazione architettonica
 
-- **Configurazione servizi**
-   - [Configura Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
-   - [New Relic - Configurare i canali di notifica](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
-   - [Best practice per la configurazione del servizio Redis&#x200B;](redis-service-configuration.md)
-   - [Best practice per la dimensione della cache del realpath](realpath-cache-size.md)
+| Best practice | Descrizione |
+|----------------------------------------------------------------------------------------|----------------------------------------------------------|
+| [Architettura di riferimento globale (GRA)](../../architecture/global-reference/examples.md) | Comprendere i metodi comuni per organizzare una base di codice GRA. |
 
-## **Progettazione architettonica**
+## Progettazione catalogo
 
-<!--Asset not yet integrated
-- [GRA Architecture examples](https://wiki.corp.adobe.com/x/kD4ykw)
--->
-- [Architettura di riferimento globale](../../../implementation-playbook/architecture/global-reference/overview.md)
+| Best practice | Descrizione |
+|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| [Configurazione categoria](catalog-management.md#category-limits) | Configura le categorie di prodotti per prestazioni ottimali. |
+| [Configurazione del prodotto&#x200B;](catalog-management.md#product-sku-limits) | Configura le SKU del prodotto per prestazioni ottimali. |
+| [Configurazione della variante di prodotto](catalog-management.md#product-variations) | Configura le varianti di prodotto per prestazioni ottimali. |
+| [Configurazione delle opzioni prodotto](catalog-management.md#product-options) | Configurare le opzioni del prodotto per prestazioni ottimali. |
+| [Configurazione attributi prodotto&#x200B;](catalog-management.md#product-attributes) | Configura gli attributi del prodotto per prestazioni ottimali. |
+| [Configurazione dell’impaginazione per gli elenchi di prodotti](catalog-management.md#product-listing-pagination) | Configura l’impaginazione dell’elenco dei prodotti per prestazioni ottimali. |
 
-## **Progettazione catalogo**
+## Estensioni
 
-Negli argomenti seguenti vengono descritte le best practice per l’ottimizzazione delle prestazioni per la configurazione del catalogo Adobe Commerce, inclusi i valori massimi consigliati per il numero di categorie, SKU per prodotti efficaci, varianti di prodotto, attributi e opzioni di prodotto e altro ancora.
+| Best practice | Descrizione |
+|-----------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| [Utilizzo di estensioni di terze parti in Adobe Commerce](extensions.md) | Scopri come evitare problemi di prestazioni causati da estensioni Adobe Commerce di terze parti. |
 
-- [Configurazione categoria](catalog-management.md#category-limits)
-- [Configurazione del prodotto&#x200B;](catalog-management.md#product-sku-limits)
-- [Configurazione della variante di prodotto](catalog-management.md#product-variations)
-- [Configurazione delle opzioni prodotto](catalog-management.md#product-options)
-- [Configurazione attributi prodotto&#x200B;](catalog-management.md#product-attributes)
-- [Configurazione dell’impaginazione per gli elenchi di prodotti](catalog-management.md#product-listing-pagination)
+## Ambito progetto
 
-## **Vendite e marketing**
+| Best practice | Descrizione |
+|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| [Inoltri per partner](partner-escalation.md) | Preparati a risolvere un problema dei partner con un Account Team Adobe o scopri come evitare un problema di segnalazione. |
+| [Elaborazione archiviazione pagamenti](payment-processing-storage.md) | Elabora e archivia in modo sicuro i dettagli del pagamento. |
 
-- [Best practice per il limite del carrello prodotti](catalog-management.md#cart-limits)
-- [Best practice per la configurazione delle promozioni](catalog-management.md#promotions)
+## Vendite e marketing
 
-## **Ambito progetto**
-
-- [Inoltri per partner](partner-escalation.md)
-- [Elaborazione archiviazione pagamenti](payment-processing-storage.md)
-
-## **Estensioni di acquisto**
-
-- [Best practice per l’utilizzo di estensioni di terze parti in Adobe Commerce](extensions.md)
+| Best practice | Descrizione |
+|------------------------------------------------------------|--------------------------------------------------------------|
+| [Limiti del carrello dei prodotti](catalog-management.md#cart-limits) | Gestisci i limiti del carrello per prestazioni ottimali. |
+| [Configurazione delle promozioni](catalog-management.md#promotions) | Configura vendite e promozioni per gli articoli in un carrello. |
