@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: da0c85a9f1b0ac0a3176ca5f6ef5904834e8d37e
+source-git-commit: 19d41495f95ae707be1db8446ac77eb5ead6375e
 workflow-type: tm+mt
-source-wordcount: '13965'
+source-wordcount: '14327'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,25 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per il Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.37 {#v1-1-37}
+
+* **ACSD-52613** (per Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7): risolve il problema dell’aggiornamento delle cache e degli indici anche quando non vengono effettuati aggiornamenti a `Inventory_source` elementi per API REST.
+* **ACSD-51884** (per Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7): è stato risolto il problema che causava l’errata correzione del percorso della cache delle immagini del prodotto dopo l’esecuzione del comando di ridimensionamento.
+* **ACSD-53628** (per Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7) - Corregge il problema relativo alla visualizzazione di caratteri speciali non corretti nel rapporto CSV ordini cliente.
+* **ACSD-53148** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7): è stato corretto il problema per cui due richieste parallele in GraphQL per l’aggiunta dello stesso prodotto configurabile al carrello generavano due elementi separati sul carrello con lo stesso SKU di prodotto.
+* **ACSD-52606** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.7) - Corregge il problema se il messaggio di errore *Il tuo ordine non è pronto per il ritiro* viene visualizzato quando l’utente fa clic su **[!UICONTROL Notify Order is Ready for Pickup]**.
+* **ACSD-51574** (per Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.7): risolve il problema se l’immagine non viene aggiornata sul front-end dopo essere stata sostituita con un’altra immagine con lo stesso nome.
+* **ACSD-53728** (per Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7): è stato risolto il problema che causava un tempo di completamento dell’indicizzatore EAV del prodotto.
+* **ACSD-53979** (per Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7): è stato risolto il problema JS che si verificava nella home page se il messaggio di benvenuto conteneva una virgoletta singola.
+* **ACSD-52085** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.7): risolve il problema se un prodotto configurabile con un prezzo speciale non è visibile nel carosello del prodotto.
+* **ACSD-53795** (per Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.7) - Corregge il problema relativo a un tipo di dati non valido in `indexer_update_all_views` lavoro cron.
+* **ACSD-52143** (per Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7): risolve il problema della rimozione delle opzioni personalizzate dopo l’importazione del prodotto.
+* **ACSD-53750** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Corregge i *Tubo rotto o connessione chiusa* errore durante multithreading `catalog_product_price` reindicizzare.
+* **ACSD-49843** (per Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.7) - Corregge il problema per cui il collegamento sul download del prodotto non è disponibile dopo la fatturazione automatica dell’articolo ordinato con il metodo di pagamento online **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]** impostazione abilitata.
+* **ACSD-47054** (per Adobe Commerce >=2.4.2 &lt;2.4.6): risolve il problema relativo alla reindicizzazione dell’anteprima per tutti gli archivi, causando rallentamento.
+* Sono state aggiunte nuove versioni per ACSD-46541 e ACSD-47079.
+* ACSD-49970-v3 sostituito da ACSD-54095.
 
 ## v1.1.36 {#v1-1-36}
 
