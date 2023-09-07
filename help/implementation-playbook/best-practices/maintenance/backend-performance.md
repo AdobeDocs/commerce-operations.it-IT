@@ -4,9 +4,9 @@ description: Scopri come ottimizzare le prestazioni di back-end dei siti Adobe C
 badge: label="Contribuito da objectsource" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: 2416357d8cacb5627fd24f92b16c2d9839f91082
+source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Ulteriori informazioni sulla verifica dei progetti Adobe Commerce:
 
 ### Identificazione e risoluzione dei problemi di prestazioni
 
-Affronta i problemi di prestazioni utilizzando vari strumenti come New Relic e Observation for Adobe Commerce per rilevare i colli di bottiglia e ottimizzare i siti Commerce in modo efficace. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) è incluso in Adobe Commerce sull’infrastruttura cloud e [Osservazione per Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) è incluso per le distribuzioni cloud e on-premise.
+Affronta i problemi di prestazioni utilizzando vari strumenti come New Relic e Observation for Adobe Commerce per rilevare i colli di bottiglia e ottimizzare i siti Commerce in modo efficace. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) è incluso in Adobe Commerce sull’infrastruttura cloud e [Osservazione per Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) è incluso per le distribuzioni cloud e on-premise.
 
 Utilizzare questi strumenti per analizzare le prestazioni del sito e identificare i problemi di prestazioni relativi a:
 
