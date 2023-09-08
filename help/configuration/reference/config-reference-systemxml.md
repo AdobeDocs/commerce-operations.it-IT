@@ -4,9 +4,9 @@ description: Scopri come il file XML di sistema gestisce la configurazione dell�
 feature: Configuration, System
 badge: label="Contributo di David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2669'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,6 @@ A `<tab>`-Tag può avere i seguenti attributi:
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------|----------|----------|
 | `id` | Definisce l’identificatore utilizzato che fa riferimento alla sezione. | `typeId` | obbligatorio |
 | `translate` | Definisce il campo da tradurre. Fornire `label` per rendere traducibile l’etichetta. | `string` | facoltativo |
-| `type` | Definisce il tipo di input dell&#39;elemento HTML sottoposto a rendering. Il valore predefinito è `text`. | `string` | facoltativo |
 | `sortOrder` | Definisce l’ordinamento della sezione. I numeri alti spingono la sezione nella parte inferiore della pagina, mentre i numeri bassi spingono la sezione nella parte superiore. | `float` | facoltativo |
 | `class` | Aggiunge una classe CSS definita all&#39;elemento HTML scheda sottoposto a rendering. | `string` | facoltativo |
 
