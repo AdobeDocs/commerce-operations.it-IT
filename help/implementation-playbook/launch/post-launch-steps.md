@@ -3,9 +3,9 @@ title: Passaggi successivi al lancio
 description: Utilizza la nostra checklist post-lancio per garantire un’implementazione fluida del sito Adobe Commerce.
 exl-id: 0c3162d9-6475-4b34-9278-e5aea39bd0f9
 feature: Deploy
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ce41158f900fad27e3e7b8157f5c64ac988bbabf
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Una volta che il sito web è attivo, queste attività verrebbero eseguite il pri
 - Assegna tag al cluster come live e crea un ticket di supporto per attivare il monitoraggio SLA elevato
 - Il CSE (Customer Success Engineer) e il TAM (Technical Account Manager) eseguono le seguenti attività non appena il cutover è completato:
    - Assegnare al cluster i tag SLA elevati per il client Adobe Commerce e creare un ticket di supporto per attivarlo
-   - Attiva i controlli del Regno Unito per i nomi di dominio
+   - Attiva il **interno** Controlli del regno per i nomi di dominio (non è disponibile l’accesso pubblico al regno)
    - Verifica lo stato di monitoraggio e assicurati che tutti gli elementi siano in verde
    - Tieni informati gli interessati sulla durata della garanzia e sui parametri tramite e-mail il giorno di pubblicazione
 
