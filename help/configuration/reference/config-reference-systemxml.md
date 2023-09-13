@@ -4,9 +4,9 @@ description: Scopri come il file XML di sistema gestisce la configurazione dell�
 feature: Configuration, System
 badge: label="Contributo di David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
+source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2663'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,6 @@ A `<field>`-Tag può avere i seguenti elementi secondari:
 | `more_url` | Non estensibile. Vedi sotto. | `typeUrl` |
 | `demo_url` | Non estensibile. Vedi sotto. | `typeUrl` |
 | `hide_in_single_store_mode` | Indica se il gruppo deve essere visibile in modalità archivio singolo. `1` nasconde il gruppo; `0` mostra il gruppo. | `int` |
-| `source_service` | Servizio utilizzato per popolare le opzioni selezionate. | `complexType` |
 | `options` | Non utilizzato. Potenzialmente obsoleto. | `complexType` |
 | `depends` | Può essere utilizzato per dichiarare le dipendenze ad altri campi. Viene utilizzato per mostrare campi/gruppi specifici quando un determinato campo ha il valore `1`. Questo nodo richiede un `section/group/field`-string. | `complexType` |
 | `attribute` | Gli attributi personalizzati possono essere utilizzati dai modelli front-end. Di solito utilizzato per rendere più dinamico un determinato modello di front-end. | `complexType` |
