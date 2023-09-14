@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 19d41495f95ae707be1db8446ac77eb5ead6375e
+source-git-commit: 7e6e8f1ed15d88fc79e9a3ad5a4505b612564f71
 workflow-type: tm+mt
-source-wordcount: '14327'
+source-wordcount: '14539'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per il Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.38 {#v1-1-38}
+
+* **ACSD-53098** (per Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.4) - Corregge il problema per cui i prodotti assegnati a un catalogo condiviso non vengono visualizzati nella vetrina quando viene eseguito un indice parziale.
+* **ACSD-54018** (per Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.6) - Corregge i problemi di prestazioni con [!UICONTROL Product List] widget che utilizza un attributo non globale nella condizione widget.
+* **ACSD-54111** (per Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.6): è stato risolto il problema che impediva la visualizzazione delle immagini delle miniature del prodotto nella vetrina se le proporzioni dell’immagine della filigrana non corrispondevano a quelle dell’immagine del prodotto.
+* **ACSD-47669** (per Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.6) - Correzioni *Violazione del vincolo di integrità: 1452 Impossibile aggiungere o aggiornare una riga figlio: un vincolo di chiave esterna non riesce* errore durante l’importazione del file CSV dei prodotti.
+* **ACSD-53347** (per Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7): risolve il problema relativo all’esecuzione dell’indicizzatore dei prezzi.
+* **ACSD-52287** (per Adobe Commerce >=2.3.7 &lt;2.4.7): risolve il problema relativo allo stato dell’ordine errato nella griglia dell’ordine archiviata quando è abilitata l’indicizzazione asincrona della griglia.
+* **ACSD-52929** (per Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7): è stato risolto il problema relativo alle richieste ridondanti di reindicizzazione degli articoli di origine predefiniti quando l’indicizzatore di inventario è configurato in modalità asincrona.
+* **ACSD-53824** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Corregge il problema se `UpdateMultiselectAttributesBackendTypes` la patch dei dati di migrazione supera il limite delle dimensioni delle transazioni del database durante `setup:upgrade`.
 
 ## v1.1.37 {#v1-1-37}
 
