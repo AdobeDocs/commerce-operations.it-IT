@@ -3,7 +3,7 @@ title: Sicurezza dell’infrastruttura cloud
 description: Scopri come Adobe protegge l’infrastruttura cloud di Adobe Commerce.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: afe70569796c056cd0ecab82898f0dec016e7a3f
+source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -41,7 +41,7 @@ I clienti possono utilizzare i tunnel SSH per proteggere le comunicazioni con l�
 
 ## Crittografia
 
-Amazon Elastic Block Store (EBS) viene utilizzato per l’archiviazione. Tutti i volumi EBS vengono crittografati utilizzando l&#39;algoritmo AES-265, il che significa che i dati vengono crittografati a riposo. Il sistema crittografa anche i dati in transito tra la rete CDN e l’origine e tra i server di origine. Le password dei clienti vengono memorizzate come hash. Le credenziali riservate, incluse quelle del gateway di pagamento, vengono crittografate utilizzando l’algoritmo SHA-256.
+Amazon Elastic Block Store (EBS) viene utilizzato per l’archiviazione. Tutti i volumi EBS vengono crittografati utilizzando l&#39;algoritmo AES-256, il che significa che i dati vengono crittografati a riposo. Il sistema crittografa anche i dati in transito tra la rete CDN e l’origine e tra i server di origine. Le password dei clienti vengono memorizzate come hash. Le credenziali riservate, incluse quelle del gateway di pagamento, vengono crittografate utilizzando l’algoritmo SHA-256.
 
 L&#39;applicazione Adobe Commerce non supporta la crittografia a livello di colonna o di riga o la crittografia quando i dati non sono inattivi o in transito tra server diversi. Il cliente può gestire le chiavi di crittografia dall&#39;interno dell&#39;applicazione. Le chiavi utilizzate dal sistema sono memorizzate in AWS Key Management System e devono essere gestite da Managed Services per fornire parti del servizio.
 
