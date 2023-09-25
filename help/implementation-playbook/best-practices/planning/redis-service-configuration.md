@@ -4,53 +4,121 @@ description: Scopri come migliorare le prestazioni di caching utilizzando l’im
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 156e6412b9f94b74bad040b698f466808b0360e3
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
 # Best practice per la configurazione del servizio Redis
 
-- Utilizza l’implementazione della cache Redis estesa, che include le seguenti ottimizzazioni per ridurre al minimo il numero di query Redis eseguite su ogni richiesta da Adobe Commerce:
-   - Riduce le dimensioni dei trasferimenti di dati di rete tra Redis e Adobe Commerce
-   - Riduce il consumo Redis dei cicli della CPU migliorando la capacità della scheda di rete di determinare automaticamente ciò che deve essere caricato
-   - Riduce le race condition per le operazioni di scrittura Redis
+- Configura cache L2 Redis
+- Abilita connessione slave Redis
+- Precarica chiavi
+- Abilita cache non aggiornata
 - Separare la cache Redis dalla sessione Redis
-- Comprimere la cache Redis e utilizzare `gzip` per migliorare le prestazioni
+- Comprimere la cache Redis e utilizzare `gzip` per una compressione più elevata
 
-## Implementazione della cache Redis estesa
+## Configura cache L2 Redis
 
-Aggiornare la configurazione per utilizzare l’implementazione della cache Redis estesa `\Magento\Framework\Cache\Backend\Redis`.
-
-### Configurare le distribuzioni cloud
-
-Configurare la cache Redis avanzata impostando `REDIS_BACKEND` variabile di distribuzione in `.magento.env.yaml` file di configurazione.
+Configurare la cache di Redis L2 impostando `REDIS_BACKEND` variabile di distribuzione in `.magento.env.yaml` file di configurazione.
 
 ```yaml
 stage:
   deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\Redis'
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Per ulteriori informazioni, vedere [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) descrizione della variabile in _Guida di Commerce su infrastruttura cloud_.
+Per la configurazione dell’ambiente sull’infrastruttura cloud, consulta la sezione [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) nel _Guida di Commerce su infrastruttura cloud_.
+
+Per gli impianti locali, cfr. [Configurare il caching delle pagine Redis](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) nel _Guida alla configurazione_.
 
 >[!NOTE]
 >
-> Controlla la `ece-tools` versione installata nell&#39;ambiente locale dalla riga di comando utilizzando `composer show magento/ece-tools` comando. Se necessario, [aggiornamento alla versione più recente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html).
+>Verifica di utilizzare la versione più recente di `ece-tools` pacchetto. In caso contrario, [aggiornamento alla versione più recente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). Puoi controllare la versione installata nell’ambiente locale utilizzando `composer show magento/ece-tools` CLI.
+
+## Abilita connessione slave Redis
+
+Abilitare una connessione slave Redis in `.magento.env.yaml` file di configurazione per consentire a un solo nodo di gestire il traffico in lettura-scrittura, mentre gli altri nodi gestiscono il traffico in sola lettura.
+
+```yaml
+stage:
+  deploy:
+    REDIS_USE_SLAVE_CONNECTION: true
+```
+
+Consulta [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) nel _Guida di Commerce su infrastruttura cloud_.
+
+Per le installazioni Adobe Commerce on-premise, configura la nuova implementazione della cache Redis utilizzando `bin/magento:setup` comandi. Consulta [Usa Redis per la cache predefinita](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) nel _Guida alla configurazione_.
 
 >[!WARNING]
 >
->Esegui _non_ configurare una connessione slave Redis per i progetti di infrastruttura cloud con un [architettura scalata](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Questo causa errori di connessione Redis. Consulta [le linee guida per la configurazione di Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) nel _Commerce su infrastruttura cloud_ guida.
+>Esegui _non_ configurare una connessione slave Redis per i progetti di infrastruttura cloud con un [architettura scalata/divisa](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Questo causa errori di connessione Redis. Consulta [Guida alla configurazione di Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) nel _Commerce su infrastruttura cloud_ guida.
 
-### Configurare le distribuzioni locali
+## Precarica chiavi
 
-Per le distribuzioni locali di Adobe Commerce, configura la nuova implementazione della cache Redis utilizzando `bin/magento:setup` comandi. Per istruzioni, consulta [Usa Redis per la cache predefinita](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
+Per riutilizzare i dati tra pagine, elenca le chiavi per il precaricamento in `.magento.env.yaml` file di configurazione.
 
-## Istanze di sessione e cache separate
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          id_prefix: '061_'                       # Prefix for keys to be preloaded
+          backend_options:
+            preload_keys:                         # List the keys to be preloaded
+              - '061_EAV_ENTITY_TYPES:hash'
+              - '061_GLOBAL_PLUGIN_LIST:hash'
+              - '061_DB_IS_UP_TO_DATE:hash'
+              - '061_SYSTEM_DEFAULT:hash'
+```
 
-La separazione della cache Redis dalla sessione Redis consente di gestire la cache e le sessioni in modo indipendente per evitare che i problemi della cache influiscano sulle sessioni.
+Per gli impianti locali, cfr. [Funzione di precaricamento Redis](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) nel _Guida alla configurazione_.
+
+## Abilita cache non aggiornata
+
+Riduci i tempi di attesa di blocco e migliora le prestazioni, soprattutto quando si tratta di numerosi blocchi e chiavi di cache, utilizzando una cache obsoleta durante la generazione in parallelo di una nuova cache. Abilitare la cache non aggiornata e definire i tipi di cache nella `.magento.env.yaml` file di configurazione:
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      default:
+        backend_options:
+          use_stale_cache: false
+      stale_cache_enabled:
+        backend_options:
+          use_stale_cache: true
+      type:
+        default:
+          frontend: "default"
+        layout:
+          frontend: "stale_cache_enabled"
+        block_html:
+          frontend: "stale_cache_enabled"
+        reflection:
+          frontend: "stale_cache_enabled"
+        config_integration:
+          frontend: "stale_cache_enabled"
+        config_integration_api:
+          frontend: "stale_cache_enabled"
+        full_page:
+          frontend: "stale_cache_enabled"
+        translate:
+          frontend: "stale_cache_enabled"
+```
+
+Per la configurazione delle installazioni locali, consulta [Opzioni cache non aggiornate](../../../configuration/cache/level-two-cache.md#stale-cache-options) nel _Guida alla configurazione_.
+
+## Cache Redis e istanze di sessione separate
+
+La separazione della cache Redis dalla sessione Redis consente di gestire la cache e le sessioni in modo indipendente. Evita che i problemi di cache influiscano sulle sessioni, il che potrebbe influire sui ricavi. Ogni istanza Redis viene eseguita sul proprio core, migliorando le prestazioni.
 
 1. Aggiornare il `.magento/services.yaml` file di configurazione.
 
@@ -85,7 +153,7 @@ La separazione della cache Redis dalla sessione Redis consente di gestire la cac
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. Invia un [Ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) per modificare la configurazione del servizio Redis negli ambienti Pro Production e Staging. Includi gli aggiornamenti `.magento/services.yaml` e `.magento.app.yaml` file di configurazione.
+1. Invia un [Ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) per richiedere il provisioning di una nuova istanza Redis dedicata alle sessioni sugli ambienti di produzione e staging. Includi gli aggiornamenti `.magento/services.yaml` e `.magento.app.yaml` file di configurazione. Questo non causerà tempi di inattività, ma richiede una distribuzione per attivare il nuovo servizio.
 
 1. Verifica che la nuova istanza sia in esecuzione e annota il numero di porta.
 
@@ -134,7 +202,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## Compressione cache
 
-Utilizza la compressione della cache, ma tieni presente che esiste un compromesso con le prestazioni lato client. Se si dispone di CPU di riserva, attivarle. Consulta [Usa Redis per l’archiviazione della sessione](../../../configuration/cache/redis-session.md).
+Se utilizzi più di 6 GB di Redis `maxmemory`, è possibile utilizzare la compressione della cache per ridurre lo spazio utilizzato dalle chiavi. Tieni presente che esiste un compromesso con le prestazioni lato client. Se si dispone di CPU di riserva, attivarle. Consulta [Usa Redis per l’archiviazione della sessione](../../../configuration/cache/redis-session.md) nel _Guida alla configurazione_.
 
 ```yaml
 stage:
