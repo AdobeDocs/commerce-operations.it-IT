@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 7e6e8f1ed15d88fc79e9a3ad5a4505b612564f71
+source-git-commit: 67d4f2dd6b3aedae51c9b81268f2ced12369becc
 workflow-type: tm+mt
-source-wordcount: '14539'
+source-wordcount: '14811'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,21 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per il Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.39 {#v1-1-39}
+
+* **ACSD-53704** (per Adobe Commerce >=2.4.0 &lt;2.4.7): risolve il problema relativo al calcolo errato della cronologia del saldo dei punti di premio dopo la scadenza dei punti di premio.
+* **ACSD-53583** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Migliora le prestazioni di reindicizzazione parziale per *Categoria Prodotti* e *Categorie di prodotti* indici.
+* **ACSD-54026** (per Adobe Commerce >=2.4.6 &lt;2.4.7) - Corregge un messaggio di errore errato per un’ `updateCompanyRole` Richiesta GraphQL per un utente non autorizzato.
+* **ACSD-54106** (per Adobe Commerce e Magento Open Source >=2.4.1 &lt;2.4.5) - Corregge il problema per cui l’ordinamento dei prodotti di categoria per nome per i caratteri accentati turchi non è corretto.
+* **ACSD-52219** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.7): è stato risolto il problema che causava il mancato funzionamento dei filtri salvati dalle griglie dell’amministratore quando si passava spesso da una visualizzazione all’altra dei segnalibri.
+* **ACSD-54342** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.7) - Corregge un messaggio di errore errato *Errore nella struttura dati: valori misti* quando si importa un file CSV senza dati validi.
+* **ACSD-54660** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6) - Aggiunto un nuovo attributo di input *sort* per ordinare gli ordini dei clienti in GraphQL per `sort_field` e `sort_direction`.
+* **ACSD-54776** (per Adobe Commerce >=2.4.5 &lt;2.4.7) - Corregge il problema se non è selezionata *[!UICONTROL Use Default Value]* e i valori dei campi prodotto non predefiniti non vengono salvati per la seconda visualizzazione sito Web, store e store.
+* **ACSD-53998** (per Adobe Commerce e Magento Open Source >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.7) - Risolve il problema se **[!UICONTROL Dynamic Block]** in base a **[!UICONTROL Customer Segment]** non funziona correttamente dopo la disconnessione da un account cliente.
+* **ACSD-53204** (per Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Correzioni *Impossibile salvare il prodotto.* errore durante l’esecuzione di richieste simultanee di aggiunta di immagini alla galleria di prodotti utilizzando `rest/V1/products/<sku>/media` endpoint.
+* **ACSD-47657** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) È stato aggiunto un meccanismo di caching per le credenziali di AWS. Un provider di credenziali ora utilizza la cache del Magento per memorizzare nella cache le credenziali recuperate da AWS per la configurazione EC2.
+* Aggiornate patch: ACSD-51984, ACSD-51574.
 
 ## v1.1.38 {#v1-1-38}
 
