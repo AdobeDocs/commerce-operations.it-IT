@@ -1,7 +1,7 @@
 ---
-source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
+source-git-commit: d720b64f315d1e4b6fb7868d911eb3af089e3fa4
 workflow-type: tm+mt
-source-wordcount: '19899'
+source-wordcount: '20131'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Versione**: 2.4.7-beta1
+**Versione**: 2,4,7-beta2
 
-Questo riferimento contiene 132 comandi disponibili tramite `bin/magento` strumento da riga di comando.
+Questo riferimento contiene 134 comandi disponibili tramite `bin/magento` strumento da riga di comando.
 L’elenco iniziale viene generato automaticamente utilizzando `bin/magento list` in Adobe Commerce.
 Utilizza il [&quot;Aggiungi comandi CLI&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) per aggiungere un comando CLI personalizzato.
 
@@ -3756,6 +3756,120 @@ Non porre domande interattive
 - Non accetta un valore
 
 
+## `events:provider:info`
+
+Restituisce i dettagli del provider di eventi configurato
+
+```bash
+bin/magento events:provider:info
+```
+
+### `--help`, `-h`
+
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+
+- Predefinito: `false`
+- Non accetta un valore
+
+### `--quiet`, `-q`
+
+Non inviare messaggi
+
+- Predefinito: `false`
+- Non accetta un valore
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumenta la gravità dei messaggi: 1 per l’output normale, 2 per l’output più dettagliato e 3 per il debug
+
+- Predefinito: `false`
+- Non accetta un valore
+
+### `--version`, `-V`
+
+Visualizza questa versione dell&#39;applicazione
+
+- Predefinito: `false`
+- Non accetta un valore
+
+### `--ansi`
+
+Forza (o disattiva — senza ansi) output ANSI
+
+- Non accetta un valore
+
+### `--no-ansi`
+
+Ignora l&#39;opzione &quot;—ansi&quot;
+
+- Predefinito: `false`
+- Non accetta un valore
+
+### `--no-interaction`, `-n`
+
+Non porre domande interattive
+
+- Predefinito: `false`
+- Non accetta un valore
+
+
+## `events:registrations:list`
+
+Elenca le registrazioni di eventi nel progetto App Builder
+
+```bash
+bin/magento events:registrations:list
+```
+
+### `--help`, `-h`
+
+Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+
+- Predefinito: `false`
+- Non accetta un valore
+
+### `--quiet`, `-q`
+
+Non inviare messaggi
+
+- Predefinito: `false`
+- Non accetta un valore
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumenta la gravità dei messaggi: 1 per l’output normale, 2 per l’output più dettagliato e 3 per il debug
+
+- Predefinito: `false`
+- Non accetta un valore
+
+### `--version`, `-V`
+
+Visualizza questa versione dell&#39;applicazione
+
+- Predefinito: `false`
+- Non accetta un valore
+
+### `--ansi`
+
+Forza (o disattiva — senza ansi) output ANSI
+
+- Non accetta un valore
+
+### `--no-ansi`
+
+Ignora l&#39;opzione &quot;—ansi&quot;
+
+- Predefinito: `false`
+- Non accetta un valore
+
+### `--no-interaction`, `-n`
+
+Non porre domande interattive
+
+- Predefinito: `false`
+- Non accetta un valore
+
+
 ## `events:subscribe`
 
 Si iscrive all’evento
@@ -7221,7 +7335,7 @@ Non porre domande interattive
 Eseguire il server applicazioni
 
 ```bash
-bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]]
+bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]]
 ```
 
 ### `--port`, `-p`
@@ -7250,6 +7364,13 @@ area server applicazioni
 parametri init bootstrap magento
 
 - Predefinito: &quot;
+- Accetta un valore
+
+### `--maxWaitTime`, `-mwt`
+
+quanto tempo attendere i lavoratori dopo il ricaricamento (es. config change) prima di eliminarli
+
+- Predefinito: `3600`
 - Accetta un valore
 
 ### `--help`, `-h`
@@ -9417,7 +9538,7 @@ Cognome amministratore
 
 ### `--search-engine`
 
-Motore di ricerca. Valori: elasticsearch5, elasticsearch7, elasticsearch8, opensearch
+Motore di ricerca. Valori: elasticsearch7, elasticsearch8, opensearch
 
 - Richiede un valore
 

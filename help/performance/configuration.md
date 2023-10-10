@@ -3,7 +3,7 @@ title: Best practice per la configurazione
 description: Ottimizza i tempi di risposta dell’implementazione di Adobe Commerce o di Magento Open Source utilizzando queste best practice.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 62a37d5f83b4cc6efef8bddba16e44151e91a8d0
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Ci possono essere momenti in cui si verificano vendite intensive in una vetrina 
 >
 >Il **[!UICONTROL Developer]** scheda e opzioni sono disponibili solo in [Modalità sviluppatore](../configuration/cli/set-mode.md). [Adobe Commerce sull’infrastruttura cloud](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) non supporta `Developer` modalità.
 
-## Salvataggio configurazione asincrona [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponibile solo nella versione 2.4.7-beta1"}
+## Salvataggio configurazione asincrona [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponibile solo nella versione 2.4.7-beta"}
 
 Per i progetti con un numero elevato di configurazioni a livello di archivio, il salvataggio di una configurazione di archivio può richiedere un tempo eccessivo o causare un timeout. Il _Configurazione asincrona_ Il modulo consente il salvataggio asincrono della configurazione eseguendo un processo cron che utilizza un consumer per elaborare il salvataggio in una coda di messaggi. AsyncConfig è **disabilitato** per impostazione predefinita.
 

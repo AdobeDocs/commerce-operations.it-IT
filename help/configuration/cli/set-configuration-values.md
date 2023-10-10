@@ -2,9 +2,9 @@
 title: Impostare i valori di configurazione
 description: Scopri come impostare i valori di configurazione e modificare i valori bloccati nell’amministratore.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 78a7e99ecaba6a6f7982123f5bd67efc740ec2ef
+source-git-commit: 473ab09f83a4cfc1809adff854d52a11ad49d3af
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -289,3 +289,8 @@ Risultato:
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
+
+>[!INFO]
+>
+>Il codice ambito può includere solo lettere (a-z o A-Z), numeri (0-9) e caratteri di sottolineatura (_). Inoltre, il primo carattere deve essere una lettera. Se si utilizzano maiuscole o minuscole durante la creazione di una vista sito web o store, internamente la corrispondenza non distingue tra maiuscole e minuscole per consentire l’override delle impostazioni di configurazione tramite le variabili di ambiente. Consulta [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](../reference/override-config-settings.md#environment-variables).
+
