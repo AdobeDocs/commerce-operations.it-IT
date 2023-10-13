@@ -2,7 +2,7 @@
 title: Criterio di rilascio
 description: Scopri i diversi tipi di versioni di Adobe Commerce, tra cui versioni secondarie, patch di sicurezza, funzionalità, hotfix, patch singole e patch personalizzate.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
+source-git-commit: 9a74f87e0da5a7f11cd0930c8265556d80e3d1de
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Adobe Commerce e utilizzo del Magento Open Source [controllo delle versioni sema
    - **Versione patch di SICUREZZA**—2,4,5-p1
       - Correzione di bug di sicurezza
       - Miglioramento della sicurezza
-- **Versione patch BETA**—2.4.7-beta1
+- **Versione patch BETA**—2.4.7-beta2
 - **Estensibilità, infrastruttura e servizi**
 - **Hotfix**
 - **Singola patch**
