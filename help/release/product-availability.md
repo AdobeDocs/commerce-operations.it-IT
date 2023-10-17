@@ -2,7 +2,7 @@
 title: Disponibilità del prodotto
 description: Scopri le funzioni di Adobe Commerce attualmente supportate e verificane la compatibilità con specifiche versioni di Adobe Commerce.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: 307ff1e80afa9bd8d6b7aab39fa476a535bce890
+source-git-commit: df4a4b419fbd5780a98e062a12cb22c3bc9913a0
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 13%
@@ -50,10 +50,10 @@ La tabella seguente mostra il supporto delle versioni per ciascun servizio relat
 | **Versioni di Adobe Commerce** | 2.4.7-beta2 | 2.4.6 | 2.4.5 | 2.4.4 |                                                                                                                                                                                                                                                |
 |----------------------------------------|-------------|--------|-----------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _Sales Channel Amazon_ | - | 4.4.0+ | 4.3.0+ | 4.3.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
-| _Catalog Service per Adobe Commerce_ | 1.11 | 1.11 | 1.11 | 1.11 | [Panoramica](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html) |
+| _Catalog Service per Adobe Commerce_ | 1.13 | 1.13 | 1.13 | 1.13 | [Panoramica](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html) |
 | _Channel Manager_ | 2.1.0 | 2.0.0 | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
-| _Live Search_ | 3.0.2 | 3.0.2 | 3.0.2 | 3.0.2 | [Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)<br/>[Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) |
+| _Live Search_ | 3.1.1 | 3.1.1 | 3.1.1 | 3.1.1 | [Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)<br/>[Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) |
 | _Servizi di pagamento_ | 2.2.0 | 2.2.0 | 2.2.0 (PHP 8.1) | 2.2.0 (PHP 8.1) | [Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)<br/> [Note sulla versione](https://commercemarketplace.adobe.com/magento-payment-services.html) |
-| _Recommendations del prodotto_ | 5.0 | 5.0 | 5.0 | 5.0 | [Marketplace](https://commercemarketplace.adobe.com/magento-product-recommendations.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
+| _Recommendations del prodotto_ | 5.0.1 | 5.0.1 | 5.0 .1 | 5.0.1 | [Marketplace](https://commercemarketplace.adobe.com/magento-product-recommendations.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
 | _Pagamento rapido_ | - | 1.0.0+ | 1.2.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-quick-checkout.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
 | _Evasione store per Adobe Commerce_ | - | 1.5.0 | 1.2.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [Note sulla versione](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
