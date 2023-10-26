@@ -4,16 +4,16 @@ description: Scopri le best practice per evitare incidenti di sicurezza e rispon
 role: Admin, Developer, Leader, User
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 19ff1fee74e3c5ece13da49648252b32e549eafd
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
 
 # Best practice per prevenire e rispondere a un problema di sicurezza
 
-La sicurezza di Adobe Commerce funziona in un [Responsabilità condivisa](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) modello. È fondamentale capire di cosa sono responsabili gli Adobi e i team tecnici. Di seguito riepiloghiamo [Best practice per la sicurezza](https://www.adobe.com/content/dam/cc/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf) per garantire che il progetto disponga dei migliori controlli di sicurezza e come rispondere al meglio a un problema di sicurezza.
+La sicurezza di Adobe Commerce funziona in un [Responsabilità condivisa](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) modello. È fondamentale capire di cosa sono responsabili gli Adobi e i team tecnici. Nell&#39;articolo seguente vengono riepilogate le procedure consigliate per la sicurezza, in modo da garantire che il progetto disponga dei controlli di sicurezza migliori e che sia possibile pianificare la risposta migliore agli incidenti di sicurezza.
 
 ## Prodotti e versioni interessati
 
@@ -43,14 +43,14 @@ L’Adobe consiglia di utilizzare un URL amministratore univoco e personalizzato
 - Imposta ed esegui il [Strumento Adobe Commerce Security Scan](https://docs.magento.com/user-guide/magento/security-scan.html).
 L&#39;analisi avanzata della sicurezza consente di monitorare tutti i siti Adobe Commerce, incluso PWA, per individuare rischi noti per la sicurezza e malware, nonché di ricevere aggiornamenti delle patch e notifiche di sicurezza.
 - [Rivedere e aggiornare l’accesso utente amministratore](https://docs.magento.com/user-guide/system/permissions-users-all.html) e [impostazioni di protezione](https://docs.magento.com/user-guide/stores/security-admin.html).
-   - È consigliabile rimuovere eventuali account vecchi, inutilizzati o sospetti e ruotare le password per tutti gli utenti Admin.
-   - Rivedi e aggiorna le Impostazioni avanzate di sicurezza&lt; per il progetto. La configurazione della sicurezza Admin consente di aggiungere una chiave segreta agli URL, richiedere che le password distinguano tra maiuscole e minuscole e limitare la durata delle sessioni di amministrazione, inclusa la durata delle password e il numero di tentativi di accesso che possono essere effettuati prima che l’account utente Admin sia bloccato. Per una maggiore sicurezza, è possibile configurare la durata dell&#39;inattività della tastiera prima della scadenza della sessione corrente e richiedere che il nome utente e la password siano sensibili all&#39;uso di maiuscole e minuscole.
+   - Rimuovi eventuali account vecchi, inutilizzati o sospetti e ruota le password per tutti gli utenti Admin.
+   - Rivedi e aggiorna le Impostazioni avanzate di sicurezza&lt; per il progetto. La configurazione della sicurezza Admin consente di aggiungere una chiave segreta agli URL, richiedere che le password distinguano tra maiuscole e minuscole e limitare la durata delle sessioni di amministrazione, inclusa la durata delle password e il numero di tentativi di accesso consentiti prima che l’account utente Admin venga bloccato. Per una maggiore sicurezza, è possibile configurare la durata dell&#39;inattività della tastiera prima della scadenza della sessione corrente e richiedere che il nome utente e la password siano sensibili all&#39;uso di maiuscole e minuscole.
 - Controlla Adobe Commerce su [utenti progetto cloud](https://devdocs.magento.com/cloud/project/user-admin.html).
-È consigliabile rimuovere tutti gli account vecchi, inutilizzati o sospetti e richiedere agli utenti di modificare le password.
+Rimuovi eventuali account vecchi, inutilizzati o sospetti e richiedi agli utenti di modificare le password.
 - Audit [Chiavi SSH](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html) per Adobe Commerce su infrastruttura cloud.
-È consigliabile rivedere, eliminare e ruotare le chiavi SSH.
+Rivedi, elimina e ruota le chiavi SSH.
 - Implementa l’elenco di controllo di accesso (ACL) per l’amministratore.
-È possibile utilizzare un elenco ACL di Fastly Edge in combinazione con un [Frammento di codice VCL](https://devdocs.magento.com/cloud/cdn/fastly-vcl-allowlist.html#vcl) per filtrare le richieste in ingresso e consentire l’accesso all’amministratore per indirizzo IP.
+È possibile filtrare le richieste in ingresso e configurare l’accesso amministratore per indirizzo IP implementando un elenco ACL Fastly Edge in combinazione con un [Frammento di codice VCL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
 
 ## Analizzare un problema
 

@@ -4,9 +4,9 @@ description: Scopri come elaborare e memorizzare in modo sicuro i dettagli di pa
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 1887d7b285008fc98579955274bbc4affb766d0c
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Uno dei principi chiave per mantenere [Conformità PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) sta adottando una strategia per elaborare e archiviare correttamente i pagamenti con carta di credito.
 
-L’archiviazione dei dati del titolare della carta in Adobe Commerce è **severamente vietata** e ciò potrebbe costituire una violazione dei tuoi obblighi in qualità di esercente ai sensi dello standard PCI-DSS (Payment Card Industry Data Security Standard). Ulteriori informazioni sul nostro modello di responsabilità condivisa e sulle linee guida per gli obblighi dei commercianti sono disponibili nel nostro [guida alla responsabilità condivisa per Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) nel Centro protezione Adobe.
+L’archiviazione dei dati del titolare della carta in Adobe Commerce è **severamente vietata** e ciò potrebbe costituire una violazione dei tuoi obblighi in qualità di esercente ai sensi dello standard PCI-DSS (Payment Card Industry Data Security Standard). Ulteriori informazioni sul modello di responsabilità condivisa e sugli orientamenti per gli obblighi degli esercenti sono disponibili nel [Guida al modello di responsabilità condivisa di Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) nel Centro protezione Adobe.
 
-Si consiglia di seguire le best practice riportate di seguito per essere certi di elaborare correttamente le informazioni di pagamento sul sito di eCommerce. Ulteriori indicazioni sulle best practice generali in materia di sicurezza sono disponibili nella sezione [guida alle best practice per la sicurezza di Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) nel Centro protezione Adobe
+Segui le best practice riportate di seguito per assicurarti di elaborare correttamente le informazioni di pagamento sul tuo sito eCommerce. Ulteriori indicazioni sulle best practice generali in materia di sicurezza sono disponibili nella sezione [guida alle best practice per la sicurezza di Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) nel Centro protezione Adobe
 
 ## Prodotti e versioni interessati
 
@@ -32,7 +32,7 @@ Se è necessario memorizzare i dati del titolare della carta, questi devono esse
 
 Le protezioni per le chiavi crittografiche sono fondamentali per le strategie di protezione dei dati. È fondamentale disporre di custodi competenti e affidabili che supervisionino queste chiavi.
 
-Infine, un numero di account principale (PAN) deve essere illeggibile durante l’archiviazione (ad esempio, nascosto come XXX). Ciò include storage portatile e supporti di backup quali unità flash, USB e dischi rigidi esterni, nonché registri di verifica.
+Infine, un numero di account principale (PAN) deve essere illeggibile durante l&#39;archiviazione, ad esempio mascherato con `XXX`. Ciò include storage portatile e supporti di backup quali unità flash, USB e dischi rigidi esterni, nonché registri di verifica.
 
 ## Crittografare la trasmissione dei dati del titolare della carta
 
@@ -49,7 +49,7 @@ Trasmettere i dati dei titolari delle carte utilizzando protocolli e pratiche di
 * Limita l’accesso ai dati del titolare della carta
 * L&#39;accesso alle informazioni sensibili dovrebbe essere limitato in base al principio della necessità di sapere e concesso solo al personale autorizzato con esigenze aziendali
 
-Il metodo consigliato per gestire i dati del titolare della carta consiste nel non memorizzare il numero di conto principale (PAN), ma nel tokenizzare la carta con uno specifico provider di elaborazione dei pagamenti e memorizzare il token, il tipo di carta e la data di scadenza crittografata. Puoi utilizzare il token come credenziale su file per utilizzi futuri, in quanto è univoco solo per ogni commerciante. Poiché il token è univoco, in caso di problemi di sicurezza il token in viene invalidato, contribuendo a prevenire attività fraudolente
+Il metodo consigliato per gestire i dati del titolare della carta consiste nel tokenizzarli invece di memorizzarli. Tokenizza la carta con un provider di elaborazione dei pagamenti specifico e archivia il token, il tipo di carta e la data di scadenza crittografata. Puoi utilizzare il token come credenziale su file per utilizzi futuri, in quanto è univoco solo per ogni commerciante. Poiché il token è univoco, in caso di problemi di sicurezza il token viene invalidato, contribuendo a prevenire attività fraudolente.
 
 ## Informazioni aggiuntive
 
