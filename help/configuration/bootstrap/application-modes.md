@@ -2,9 +2,9 @@
 title: Modalità di applicazione
 description: L’applicazione Commerce può funzionare in diverse modalità in base alle tue esigenze. Visualizzare un elenco dettagliato delle modalità di applicazione disponibili.
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 982c478f73bdd1301210db5a89fb09edf69a6c42
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ Consulta [Impostare la modalità operativa](../cli/set-mode.md) per scoprire com
 
 ## Supporto cloud
 
-Non è necessario gestire le modalità di applicazione per un progetto di infrastruttura cloud. A causa del file system di sola lettura, non è possibile modificare le modalità negli ambienti cloud remoti. Adobe Commerce su infrastruttura cloud esegue automaticamente l’applicazione in _manutenzione_ modalità durante una distribuzione, che porta il sito offline fino al completamento della distribuzione. In caso contrario, l’applicazione rimane in _produzione_ modalità. Consulta [Processo di distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) nel _Guida di Commerce su infrastruttura cloud_.
+Non è necessario gestire le modalità di applicazione per un progetto di infrastruttura cloud. A causa del file system di sola lettura, non è possibile modificare le modalità negli ambienti cloud remoti. Non tentare di modificare le modalità modificando `app/etc/env.php` perché il `ece-tools` Il pacchetto sovrascrive il file in base a più origini di configurazione.
+
+Adobe Commerce su infrastruttura cloud esegue automaticamente l’applicazione in _manutenzione_ modalità durante una distribuzione, che porta il sito offline fino al completamento della distribuzione. In caso contrario, l’applicazione rimane in _produzione_ modalità. Consulta [Processo di distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) nel _Guida di Commerce su infrastruttura cloud_.
 
 Se utilizzi Cloud Docker for Commerce come strumento di sviluppo, puoi distribuire il progetto di infrastruttura cloud in un ambiente Docker in _sviluppatore_ ma le prestazioni sono più lente a causa di operazioni aggiuntive di sincronizzazione dei file. Consulta [Distribuire l’ambiente Docker](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) nel _Guida a Cloud Docker per Commerce_.
 
