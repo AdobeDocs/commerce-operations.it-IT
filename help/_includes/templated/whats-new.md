@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1391904acf8e2f65a733c4c899f5a67561cd8810
+source-git-commit: 965d35bfc4150230d6f4bc3b3a45c951fc13ed2b
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 1%
 ## Novità
 
 Scopri la nuova documentazione e gli aggiornamenti significativi della documentazione esistente.
+
+### 25 ottobre 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Pubblicato <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">note sulla versione</a> per il rilascio del pacchetto 1.1.40 Quality Patches Tool (QPT).</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9c02a9ca6341df46266b50dffaa6e5b961a6af98">9c02a9</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 13 ottobre 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Sono state aggiunte informazioni sull’abilitazione del server applicazioni PHP per le API GraphQL in un ambiente Cloud Starter. Consulta <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html">API di Application Server per GraphQL</a>.</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1498d2e8cfaa0243f571a8fd9a0bb717bc3a86c4">1498 d2</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 5 ottobre 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Pubblicato <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">note sulla versione</a> per il rilascio del pacchetto 1.1.39 Quality Patches Tool (QPT).</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6df49bc9d097bf883936b66176022251f9bf3b38">6df49 b</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 10 ottobre 2023
 
@@ -51,26 +111,6 @@ Scopri la nuova documentazione e gli aggiornamenti significativi della documenta
 </td>
       <td>principale-aggiornamento</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21d8d1f26e44d48c84095c539e68b34066854fda">21d8d1</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 5 ottobre 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Sorgente</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Pubblicato <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">note sulla versione</a> per il rilascio del pacchetto 1.1.39 Quality Patches Tool (QPT).</p>
-</td>
-      <td>principale-aggiornamento</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6df49bc9d097bf883936b66176022251f9bf3b38">6df49 b</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group -->
