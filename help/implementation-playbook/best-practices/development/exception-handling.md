@@ -3,13 +3,13 @@ title: Best practice per la gestione delle eccezioni
 description: Scopri i metodi consigliati per la registrazione delle eccezioni durante lo sviluppo di progetti Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 94d37b6a95cae93f465daf8eb96363a198833e27
+exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
+source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
 
 ---
-
 
 # Best practice per la gestione delle eccezioni
 
@@ -88,7 +88,7 @@ Gli esempi seguenti mostrano una gestione errata delle eccezioni.
 
 ### ![errato](../../../assets/no.svg) Logica prima della registrazione
 
-La logica prima della registrazione può causare un’altra eccezione o un errore irreversibile, che impedisce la registrazione dell’eccezione e deve essere sostituita da [esempio corretto](#correct-logging-always-comes-first).
+La logica prima della registrazione può causare un’altra eccezione o un errore irreversibile, che impedisce la registrazione dell’eccezione e deve essere sostituita da [esempio corretto](#logging-always-comes-first).
 
 ```php
 try {
@@ -101,7 +101,7 @@ try {
 
 ### ![errato](../../../assets/no.svg) Vuoto `catch`
 
-Vuoto `catch` I blocchi possono essere un segno di disattivazione involontaria e devono essere sostituiti da [esempio corretto](#correct-mute-signals).
+Vuoto `catch` I blocchi possono essere un segno di disattivazione involontaria e devono essere sostituiti da [esempio corretto](#mute-signals).
 
 ```php
 try {
@@ -137,11 +137,11 @@ try {
 
 Questo approccio introduce interruzioni di riga nel messaggio, non conforme a PSR-3. L&#39;eccezione, inclusa la traccia dello stack, deve far parte del contesto del messaggio per garantire che venga salvata correttamente con il messaggio in New Relic o in un altro archivio di registro compatibile con il monologo PSR-3.
 
-Per risolvere il problema, sostituisci il codice seguendo gli esempi corretti mostrati nella [Scrivi nel registro eccezioni](#correct-write-to-the-exception-log) o [Eccezioni di downgrade](#correct-downgrade-exceptions).
+Per risolvere il problema, sostituisci il codice seguendo gli esempi corretti mostrati nella [Scrivi nel registro eccezioni](#write-to-the-exception-log) o [Eccezioni di downgrade](#downgrade-exceptions).
 
 ### ![errato](../../../assets/no.svg) Eccezioni di downgrade senza contesto
 
-L’eccezione viene ridotta a errore, che non consente la trasmissione di un oggetto, ma solo di una stringa, da cui deriva `getMessage()`. Questo causa la perdita della traccia e deve essere sostituito dagli esempi corretti mostrati in [Scrivi nel registro eccezioni](#correct-write-to-the-exception-log) o [Eccezioni di downgrade](#correct-downgrade-exceptions).
+L’eccezione viene ridotta a errore, che non consente la trasmissione di un oggetto, ma solo di una stringa, da cui deriva `getMessage()`. Questo causa la perdita della traccia e deve essere sostituito dagli esempi corretti mostrati in [Scrivi nel registro eccezioni](#write-to-the-exception-log) o [Eccezioni di downgrade](#downgrade-exceptions).
 
 ```php
 try {
@@ -153,7 +153,7 @@ try {
 
 ### ![errato](../../../assets/no.svg) Registra solo il messaggio nel registro eccezioni
 
-Invece di passare l’oggetto `$e`, solo `$e->getMessage()` è stato superato. Questo causa la perdita della traccia e deve essere sostituito dagli esempi corretti mostrati [Scrivi nel registro eccezioni](#correct-write-to-the-exception-log) o [Eccezioni di downgrade](#correct-downgrade-exceptions).
+Invece di passare l’oggetto `$e`, solo `$e->getMessage()` è stato superato. Questo causa la perdita della traccia e deve essere sostituito dagli esempi corretti mostrati [Scrivi nel registro eccezioni](#write-to-the-exception-log) o [Eccezioni di downgrade](#downgrade-exceptions).
 
 ```php
 try {
@@ -165,7 +165,7 @@ try {
 
 ### ![errato](../../../assets/no.svg) Mancante `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-Omissione del `phpcs:ignore` line attiva un avviso in PHPCS e non deve trasmettere il CI. Questo deve essere sostituito dall&#39;esempio corretto mostrato nella [Disattiva segnali](#correct-mute-signals).
+Omissione del `phpcs:ignore` line attiva un avviso in PHPCS e non deve trasmettere il CI. Questo deve essere sostituito dall&#39;esempio corretto mostrato nella [Disattiva segnali](#mute-signals).
 
 ```php
 try {
