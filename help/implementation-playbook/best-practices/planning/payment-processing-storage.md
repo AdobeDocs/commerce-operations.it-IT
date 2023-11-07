@@ -4,9 +4,9 @@ description: Scopri come elaborare e memorizzare in modo sicuro i dettagli di pa
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 1887d7b285008fc98579955274bbc4affb766d0c
+source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Uno dei principi chiave per mantenere [Conformità PCI](https://experienceleague
 
 L’archiviazione dei dati del titolare della carta in Adobe Commerce è **severamente vietata** e ciò potrebbe costituire una violazione dei tuoi obblighi in qualità di esercente ai sensi dello standard PCI-DSS (Payment Card Industry Data Security Standard). Ulteriori informazioni sul modello di responsabilità condivisa e sugli orientamenti per gli obblighi degli esercenti sono disponibili nel [Guida al modello di responsabilità condivisa di Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) nel Centro protezione Adobe.
 
-Segui le best practice riportate di seguito per assicurarti di elaborare correttamente le informazioni di pagamento sul tuo sito eCommerce. Ulteriori indicazioni sulle best practice generali in materia di sicurezza sono disponibili nella sezione [guida alle best practice per la sicurezza di Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) nel Centro protezione Adobe
+Segui le best practice riportate di seguito per assicurarti di elaborare correttamente le informazioni di pagamento sul tuo sito eCommerce. Per ulteriori indicazioni sulle best practice per la sicurezza, consulta [Proteggere il sito e l&#39;infrastruttura](../launch/security-best-practices.md).
 
 ## Prodotti e versioni interessati
 

@@ -1,20 +1,20 @@
 ---
-title: Intestazione X-Frame-Options
-description: Utilizza X-Frame-Options per controllare i rendering delle pagine.
+title: Impedisci sfruttare il clickjacking
+description: Impedisci gli exploit di clickjacking utilizzando l’intestazione "X-Frame-Options" per controllare i rendering della pagina.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# Intestazione X-Frame-Options
+# Impedisci sfruttare il clickjacking
 
-Per prevenire [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) exploit, è stata aggiunta un’opzione per utilizzare il [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) Intestazione della richiesta HTTP nelle richieste alla vetrina.
+Previeni [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) sfruttare includendo [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) Intestazione della richiesta HTTP nelle richieste alla vetrina.
 
-Il `X-Frame-Options` consente di specificare se un browser deve essere autorizzato a eseguire il rendering di una pagina in un `<frame>`, `<iframe>`, o `<object>` come segue:
+Il `X-Frame-Options` intestazione consente di specificare se un browser può eseguire il rendering di una pagina in un `<frame>`, `<iframe>`, o `<object>` come segue:
 
 - `DENY`: la pagina non può essere visualizzata in un frame.
 - `SAMEORIGIN`: (impostazione predefinita) la pagina può essere visualizzata solo in un frame sulla stessa origine della pagina stessa.
