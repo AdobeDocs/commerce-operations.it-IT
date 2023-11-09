@@ -3,7 +3,7 @@ title: Best practice per la configurazione
 description: Ottimizza i tempi di risposta dell’implementazione di Adobe Commerce o di Magento Open Source utilizzando queste best practice.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
+source-git-commit: 3c53efdaedea075e288d262e247bc9c42b5a2432
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 0%
@@ -106,7 +106,7 @@ Quando si attiva **[!UICONTROL Enable [!DNL JavaScript] Bundling]** Questa opzio
 ### Suggerimenti per il bundling
 
 * È consigliabile utilizzare strumenti di terze parti per la minimizzazione e il bundling (come [r.js](https://requirejs.org/)). [!DNL Commerce] i meccanismi incorporati non sono ottimali e vengono spediti come alternative di fallback.
-* L’attivazione del protocollo HTTP2 può essere una buona alternativa all’utilizzo del bundling JS. Il protocollo offre più o meno gli stessi vantaggi.
+* L’attivazione del protocollo HTTP/2 può essere una buona alternativa all’utilizzo del bundling JS. Il protocollo offre più o meno gli stessi vantaggi.
 * È consigliabile non utilizzare impostazioni obsolete, come l’unione di file JS e CSS, in quanto sono state progettate solo per il file JS caricato in modo sincrono nella sezione HEAD della pagina. L’utilizzo di questa tecnica può causare il malfunzionamento del bundling e della logica requireJS.
 
 ## Convalida dei segmenti cliente

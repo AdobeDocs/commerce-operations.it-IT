@@ -4,7 +4,7 @@ description: Scopri come unire e minimizzare i file CSS e JavaScript (JS) per i 
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 409bd4795704b9daec7773459e5a1f9f42ef5128
+source-git-commit: 2662ced484fb42bf2d32609e4e82364c1e47c8f0
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Il tempo necessario per caricare i file CSS e JavaScript (JS) può essere ridott
 >
 >Adobe Commerce su infrastruttura cloud viene sempre eseguito in modalità di produzione e non è possibile impostarlo altrimenti, pertanto devi utilizzare il metodo della riga di comando per abilitare l’unione, la minimizzazione e il bundling.
 
-Non unire o raggruppare i file se la distribuzione utilizza HTTP2. HTTP2 scarica i file statici in modo asincrono. I browser devono scaricare un intero file unito prima di elaborare il contenuto del file.
+Non unire o raggruppare i file se la distribuzione utilizza HTTP/2. HTTP/2 scarica i file statici in modo asincrono. I browser devono scaricare un intero file unito prima di elaborare il contenuto del file.
 
 ### Utilizzo di Admin
 
