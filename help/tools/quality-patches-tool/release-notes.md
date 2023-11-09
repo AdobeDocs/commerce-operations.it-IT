@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6e82738ab9b3ea106b7987fac2f6f4a026ddc4f0
+source-git-commit: b1c258b33898ec07a0d0d805843bea1b3e9de478
 workflow-type: tm+mt
-source-wordcount: '15145'
+source-wordcount: '15346'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,18 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per il Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.41 {#v1-1-41}
+
+* **ACSD-54376** (per Adobe Commerce >=2.4.2 &lt;2.4.7): risolve il problema che si verifica nel carrello quando un prodotto viene rimosso dal catalogo condiviso dopo che è già stato aggiunto al carrello.
+* **ACSD-53722** (per Adobe Commerce >=2.4.4 &lt;2.4.7): è stato risolto il problema che causava la variazione di prezzo delle opzioni di prodotto in bundle a $ 0 quando diventavano attivi aggiornamenti pianificati per ambiti diversi.
+* **ACSD-53643** (per Adobe Commerce >=2.4.3 &lt;2.4.7): risolve il problema se l’ordine presenta un totale errato quando si effettua un ordine di acquisto con prodotti disabilitati o esauriti. Viene risolto nascondendo il *[!UICONTROL Place Order]* per tali ordini fornitore.
+* **ACSD-54067** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.7): risolve il problema se un video di prodotto non viene riprodotto su un dispositivo mobile.
+* **ACSD-55414** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Migliora le prestazioni quando MariaDB tenta di eseguire il cast di entity_id EAV da stringa a numero intero.
+* **ACSD-51819** (per Adobe Commerce >=2.4.4 &lt;2.4.4-p4) - Corregge il problema per cui è possibile inserire più ordini con lo stesso ID preventivo.
+* **ACSD-53118** (per Adobe Commerce >=2.4.0 &lt;2.4.7): risolve il problema se il *[!UICONTROL Cart Price Rule]* viene applicato utilizzando il codice coupon quando il prodotto ha un attributo vuoto.
+* **ACSD-54324** (per Adobe Commerce >=2.4.5 &lt;2.4.7) - Corregge il problema per cui la richiesta GraphQL richieste_list non considera le impostazioni di paginazione e restituisce tutti i risultati.
+* Patch aggiornate: MDVA-42855-v2
 
 ## v1.1.40 {#v1-1-40}
 
