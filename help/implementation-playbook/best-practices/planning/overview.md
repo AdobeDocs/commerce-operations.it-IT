@@ -4,9 +4,9 @@ description: Scopri le best practice di implementazione per la fase di pianifica
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 48ed42e69c5786a10de3426d581e35030412c001
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '459'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di pi
     <td>Configurare siti, archivi e visualizzazioni dello store per ottimizzare le prestazioni del sito.</td>
   </tr>
   <tr>
-    <td><a href="https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales">Problemi di configurazione comuni</a></td>
+    <td><a href="https://business.adobe.com/blog/how-to/the-usual-suspects-5-configuration-issues-to-maximize-your-peak-sales">Problemi di configurazione comuni</a></td>
     <td>Correggi ed evita i cinque problemi di configurazione più comuni per i siti Adobe Commerce.</td>
   </tr>
   <tr>

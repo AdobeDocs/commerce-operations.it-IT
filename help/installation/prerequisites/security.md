@@ -3,9 +3,9 @@ title: Sicurezza dell'installazione locale
 description: Scopri come migliorare la postura di sicurezza dell’installazione on-premise di Adobe Commerce o di Magento Open Source.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -68,4 +68,4 @@ Per abilitare Apache per avviare una connessione a un altro host con SELinux abi
 A seconda dei requisiti di sicurezza, potrebbe essere necessario aprire la porta 80 e altre porte nel firewall. A causa della natura sensibile della sicurezza della rete, Adobe consiglia vivamente di consultare il reparto IT prima di procedere. Di seguito sono riportati alcuni riferimenti suggeriti:
 
 * Ubuntu: [Pagina della documentazione di Ubuntu](https://help.ubuntu.com/community/IptablesHowTo)
-* CentOS: [Procedure relative a CentOS](https://wiki.centos.org/HowTos/Network/IPTables).
+* CentOS: [Procedure relative a CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).

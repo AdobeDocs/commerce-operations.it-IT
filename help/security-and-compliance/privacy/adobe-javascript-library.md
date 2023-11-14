@@ -4,9 +4,9 @@ description: Scopri come utilizzare gli strumenti personalizzati per accedere ed
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-Il [Libreria JavaScript di Adobe Privacy](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) è un insieme di strumenti che facilitano la creazione di un processo per l’accesso e l’eliminazione di dati privati.
+Il [Libreria JavaScript di Adobe Privacy](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) è un insieme di strumenti che facilitano la creazione di un processo per l’accesso e l’eliminazione di dati privati.
 
 I servizi Adobe Commerce e di tracciamento dei dati di Magento Open Source possono memorizzare informazioni private applicabili alle normative sulla privacy come [Regolamento generale sulla protezione dei dati (RGPD)](gdpr.md) e [California Consumer Privacy Act (CCPA)](ccpa.md).
 
@@ -43,7 +43,7 @@ La libreria JS di AdobePrivacy fornisce diverse funzioni per gestire i dati di i
 `retrieveThenRemoveIdentities()`
 : questa funzione è simile a `removeIdentities()` in quanto recupera un array di identità e lo rimuove dal browser.
 
-Per ulteriori informazioni ed esempi sull&#39;utilizzo di queste funzioni, vedere [documentazione ufficiale della libreria](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html).
+Per ulteriori informazioni ed esempi sull&#39;utilizzo di queste funzioni, vedere [documentazione ufficiale della libreria](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Inizializzazione
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 Il costruttore accetta un oggetto di configurazione con parametri durante la creazione dell&#39;istanza.
-Consulta la sezione [documentazione ufficiale della libreria](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) per un elenco di questi parametri di configurazione.
+Consulta la sezione [documentazione ufficiale della libreria](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) per un elenco di questi parametri di configurazione.
