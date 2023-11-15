@@ -2,9 +2,9 @@
 title: Installazione rapida on-premise
 description: Per installare Adobe Commerce o Magento Open Source nell’infrastruttura di tua proprietà, segui la procedura riportata di seguito.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
+source-git-commit: 3c6527e5936438d6f1f52b32082cc7dde5f87f22
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,10 @@ Per ottenere il metapacchetto Adobe Commerce o Magento Open Source:
    ```
 
    Quando richiesto, immettere le chiavi di autenticazione. Le chiavi pubbliche e private vengono create e configurate nel tuo [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
+
+   >[!NOTE]
+   >
+   > Quando si utilizza un Compositore `auth.json` o variabile di ambiente, non verrà richiesto di immettere le chiavi di autenticazione.
 
    Se riscontri errori, ad esempio `Could not find package...` o `...no matching package found`, verificare che nel comando non siano presenti errori di battitura. Se riscontri ancora errori, potresti non essere autorizzato a scaricare Adobe Commerce. Contatto [Supporto Adobe Commerce](https://support.magento.com/hc/en-us) per assistenza.
 
