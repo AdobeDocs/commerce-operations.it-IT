@@ -1,7 +1,7 @@
 ---
-source-git-commit: 965d35bfc4150230d6f4bc3b3a45c951fc13ed2b
+source-git-commit: e6bce0f8e9244d1a7c31f23687474a7dc4586c5d
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '613'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,106 @@ ht-degree: 1%
 ## Novità
 
 Scopri la nuova documentazione e gli aggiornamenti significativi della documentazione esistente.
+
+### 20 novembre 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stato aggiunto un nuovo argomento che descrive <a href="https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/shared-responsibility.html">modello di sicurezza con responsabilità condivisa</a> per Adobe Commerce su progetti di infrastruttura cloud.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b1bf4ffa950bf426c9e769904f5587cad93add15">b1bf4f</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 16 novembre 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata resa più chiara la <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html">criteri di supporto</a> per i servizi di terze parti e le dipendenze software.</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/010c625d2a00fda022b9e56098e74bb7b690479f">010c62</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 15 novembre 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Pubblicato <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">note sulla versione</a> per il rilascio del pacchetto 1.1.42 Quality Patches Tool (QPT).</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e89fcf5fb2aa750c34bcc9152be9ae53e673bb5c">e89fcf</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 9 novembre 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Pubblicato <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">note sulla versione</a> per il rilascio del pacchetto 1.1.41 Quality Patches Tool (QPT).</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fbc090e5fbd70ee4d594b8a813691abdddce9e20">fbc090</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 7 novembre 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stato aggiunto un <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/launch/security-best-practices.html">best practice per la sicurezza</a> argomento del <em>Playbook di implementazione</em>.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2ffda8afd118184f314e8e329a678605ac241007">2ffda8</a> (commit)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 25 ottobre 2023
 
@@ -111,66 +211,6 @@ Scopri la nuova documentazione e gli aggiornamenti significativi della documenta
 </td>
       <td>principale-aggiornamento</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21d8d1f26e44d48c84095c539e68b34066854fda">21d8d1</a> (commit)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 14 settembre 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Sorgente</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Pubblicato <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">note sulla versione</a> per il rilascio del pacchetto 1.1.38 Quality Patches Tool (QPT).</p>
-</td>
-      <td>principale-aggiornamento</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1d1fac956ceb8f869b60accfe0180c593d659ec1">1d1fac</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 11 settembre 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Sorgente</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stato aggiornato il <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/extensibility-strategy.html">strategia di estensibilità</a> con informazioni su App Builder, Mesh API ed Eventi Adobi I/O.</p>
-</td>
-      <td>principale-aggiornamento</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f4f420cee5f9241f56107c4218793af394ba1193">f4f420</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 6 settembre 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Sorgente</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Pubblicato <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">note sulla versione</a> per il rilascio del pacchetto 1.1.37 Quality Patches Tool (QPT).</p>
-</td>
-      <td>principale-aggiornamento</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3290e58436259a7af81ed81b691a3ad032c812a5">3290e5</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->

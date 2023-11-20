@@ -1,7 +1,7 @@
 ---
-source-git-commit: 525ac7ae2481be8c52b32471d14ceefba7b855a2
+source-git-commit: e6bce0f8e9244d1a7c31f23687474a7dc4586c5d
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 1%
 ## Scopri le novità nelle best practice di implementazione
 
 Questa pagina contiene le modifiche recenti che riteniamo desideriate visualizzare. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 7 novembre 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stato aggiunto un <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/launch/security-best-practices.html">best practice per la sicurezza</a> argomento del <em>Playbook di implementazione</em>.</p>
+</td>
+      <td>best practice</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2ffda8afd118184f314e8e329a678605ac241007">2ffda8</a> (commit)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 28 agosto 2023
 
@@ -73,26 +93,6 @@ Questa pagina contiene le modifiche recenti che riteniamo desideriate visualizza
 </td>
       <td>best practice</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/03cb50be0cb18b6079c5c69aafc74c6099610fb0">03cb50</a> (commit)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 9 marzo 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Sorgente</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Aggiornato <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">Best practice per la configurazione Redis</a> con informazioni sulla separazione della cache dalla sessione e sull’utilizzo della compressione.</p>
-</td>
-      <td>best practice</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9d46893a25569b9cb00b45ab285758b3b74b410">f9d468</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
