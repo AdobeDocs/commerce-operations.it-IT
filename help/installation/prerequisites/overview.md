@@ -2,9 +2,9 @@
 title: Prerequisiti per l'installazione locale
 description: Ulteriori informazioni sulle dipendenze software necessarie per le installazioni on-premise di Adobe Commerce e Magento Open Source.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -66,9 +66,11 @@ Per installare o aggiornare Apache, vedi [Apache](web-server/apache.md).
 
 ### PHP
 
-Consulta [requisiti di sistema](../system-requirements.md) per le versioni supportate di PHP e [PHP] per i requisiti PHP.
+Consulta [requisiti di sistema](../system-requirements.md) per le versioni supportate di PHP e [PHP](../system-requirements.md#php-settings) per i requisiti PHP.
 
 ### MySQL
+
+Verificare di disporre di una versione compatibile di MySQL per la versione di Adobe Commerce o del Magento Open Source da installare. Consulta [Requisiti di sistema](../system-requirements.md) versioni supportate.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -80,7 +82,7 @@ Ad esempio:
 mysql -u magento -p
 ```
 
-Verificare di disporre della versione corretta di MySQL per la versione di Adobe Commerce o del Magento Open Source che si sta installando ([seleziona qui per versioni supportate](../system-requirements.md). Il risultato seguente indica la versione in esecuzione.)
+Il risultato seguente indica la versione in esecuzione.
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
