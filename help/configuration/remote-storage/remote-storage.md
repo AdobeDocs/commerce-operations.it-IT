@@ -3,9 +3,9 @@ title: Configura archiviazione remota
 description: Scopri come configurare il modulo di archiviazione remota per l’applicazione Commerce on-premise.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Dopo aver attivato l&#39;archiviazione remota per una scheda specifica, è possi
 
 >[!INFO]
 >
->Il comando di sincronizzazione esegue la migrazione solo dei file nel `pub/media` directory, _non_ i file di importazione/esportazione in `var` directory. Consulta [Importazione/Esportazione programmata][import-export] nel _Guida utente di Commerce 2.4_.
+>Il comando di sincronizzazione esegue la migrazione solo dei file nel `pub/media` directory, _non_ i file di importazione/esportazione in `var` directory. Consulta [Importazione/Esportazione programmata](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) nel _Guida utente di Commerce 2.4_.
 
 <!-- link definitions -->
 

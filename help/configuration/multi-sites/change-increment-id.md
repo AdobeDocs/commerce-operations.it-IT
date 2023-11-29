@@ -2,9 +2,9 @@
 title: Cambia ID incremento
 description: Modifica l’ID di incremento per un’entità di database Commerce.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Potrebbe essere necessario modificare l&#39;ID incremento per le nuove entità D
 
 >[!INFO]
 >
->Puoi anche risolvere il problema del gateway di pagamento per PayPal consentendo più pagamenti per ID fattura nelle Preferenze di ricezione pagamento di PayPal. Consulta [Richiesta rifiutata gateway PayPal - problema fattura duplicata] nel _Knowledge Base_.
+>Puoi anche risolvere il problema del gateway di pagamento per PayPal consentendo più pagamenti per ID fattura nelle Preferenze di ricezione pagamento di PayPal. Consulta [Richiesta rifiutata gateway PayPal - problema fattura duplicata](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) nel _Knowledge Base_.
 
 ## Passaggi preliminari
 
@@ -55,7 +55,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 
 >[!INFO]
 >
-Importante: il nuovo valore di incremento deve essere maggiore di quello corrente.
+>Importante: il nuovo valore di incremento deve essere maggiore di quello corrente.
 
 Dopo l’esecuzione della seguente query:
 
@@ -74,6 +74,6 @@ Prima di eseguire `ALTER TABLE` in un ambiente di produzione di Adobe Commerce s
 
 <!-- Link Definitions -->
 
-[Richiesta rifiutata gateway PayPal - problema fattura duplicata]: https://support.magento.com/hc/en-us/articles/115002457473
+[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
 [Creare un backup del database]: https://support.magento.com/hc/en-us/articles/360003254334
 [qualsiasi versione supportata]
