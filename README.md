@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2727ddb18995ac2163276a0aa8573161add48971
+source-git-commit: 580a15c908fc8ac4ef5d62582dfdd87d75dde994
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '766'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Il modo in cui contribuisci dipende da chi sei e dal tipo di modifiche con cui d
 
 ### Modifiche minori
 
-Se contribuisci con piccoli aggiornamenti per bontà d’animo, visita l’articolo e fai clic su **Modifica** nell’articolo, che passa alla sorgente dell’articolo su GitHub. Quindi, utilizza l’interfaccia utente di GitHub per apportare gli aggiornamenti. Consulta la sezione Generale [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) per ulteriori informazioni.
+Se stai contribuendo con aggiornamenti minori, visita l’articolo e fai clic sull’area di feedback visualizzata in fondo all’articolo, fai clic su **Opzioni di feedback dettagliate** e quindi fare clic su **Suggerisci una modifica** per passare al file Markdown di origine su GitHub. Utilizza l’interfaccia utente di GitHub per apportare modifiche. Consulta la sezione Generale [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) per ulteriori informazioni.
 
 Le correzioni minori o i chiarimenti inviati per la documentazione e gli esempi di codice in questo archivio sono coperti dalle condizioni d’uso di Adobe.
 
