@@ -3,9 +3,9 @@ title: Cache del contenuto statico
 description: Comprendi la firma di contenuti statici e come abilitare o disabilitare la funzione.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: d099d60bcf3c960b2e40b48c386041d8865cfb50
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,10 @@ In questo modo viene modificato l’URL dei file statici e viene forzato il brow
 
 Commerce abilita questa funzione per impostazione predefinita; l’Adobe consiglia di mantenerla abilitata per evitare problemi relativi ai browser che utilizzano vecchie risorse statiche.
 
-La configurazione di questa funzione è disponibile in [**[!UICONTROL Stores]**> Impostazioni > Configurazione >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+La configurazione per la firma del contenuto statico è in [**[!UICONTROL Stores]**> Impostazioni > Configurazione >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+
+- **Solo on-premise**: questa configurazione è disponibile se il sito è **non** in [Modalità di produzione](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
+- **Cloud**: questa configurazione è nascosta perché la modalità di produzione è rigorosamente applicata; pertanto, devi utilizzare la riga di comando come mostrato di seguito.
 
 ![Impostazioni file statici](../../assets/configuration/static-files-settings.png)
 
