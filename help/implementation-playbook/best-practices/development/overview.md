@@ -4,9 +4,9 @@ description: Scopri le best practice di implementazione per la fase di sviluppo 
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+source-git-commit: ce386611834c4199e34b5d95ce76254957821f46
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di sv
 ## Ottimizzazione dei file
 
 | Best practice | Descrizione |
-|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [Ridimensionamento immagine catalogo](catalog-image-resizing.md) | Fornisce indicazioni sul ridimensionamento delle immagini prima che un negozio entri in produzione per garantire prestazioni ottimali |
 | [CSS e JS](optimize-css-js-files.md) | Unire e minimizzare i file CSS e JS dalla riga di comando Admin o |
 | [Immagini](image-optimization.md) | Ottimizzare le immagini e utilizzare Fastly per ottimizzare i tempi di risposta |
@@ -62,10 +62,11 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di sv
 ## Sviluppo PHP
 
 | Best practice | Descrizione |
-|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Gestione delle eccezioni](exception-handling.md) | Descrive i metodi consigliati per la registrazione delle eccezioni |
 | [Estensioni](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Descrive i modelli di sviluppo per garantire la compatibilità tra l’estensione, le versioni future di Adobe Commerce e altre estensioni personalizzate |
 | [Blocchi di contenuto privato](private-content-block-configuration.md) | Configurare blocchi di contenuto privati per ottimizzare le prestazioni della vetrina |
+| [Modificare il codice PHP di base e di terze parti](modifying-core-and-third-party-code.md) | Modifica la funzionalità, il risultato o l’input di codice che non è stato creato o che non è stato controllato direttamente |
 
 ## Piattaforma e servizi
 

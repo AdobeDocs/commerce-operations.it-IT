@@ -2,7 +2,7 @@
 user-guide-title: Playbook di implementazione
 user-guide-description: Scopri le strategie per la pianificazione e l’implementazione di un sito Adobe Commerce di successo.
 mini-toc-levels: 3
-source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
+source-git-commit: a547653046fd1926c7fd587df19cb2209e263114
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 11%
@@ -106,6 +106,7 @@ ht-degree: 11%
       - [Blocchi di contenuto privato](best-practices/development/private-content-block-configuration.md)
       - [Distribuzione di contenuti statici](best-practices/development/static-content-deployment.md)
       - [Modifica delle tabelle di database](best-practices/development/modifying-core-and-third-party-tables.md)
+      - [Modifica del codice core e di terze parti](best-practices/development/modifying-core-and-third-party-code.md)
    - Launch {#launch}
       - [Panoramica](best-practices/launch/overview.md)
       - [Configura web crawler](best-practices/launch/robots-txt.md)
