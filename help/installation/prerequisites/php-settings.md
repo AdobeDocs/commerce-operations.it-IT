@@ -3,9 +3,9 @@ title: Impostazioni PHP
 description: Segui questi passaggi per installare le estensioni PHP richieste e configurare le impostazioni PHP richieste per le installazioni on-premise di Adobe Commerce e Magento Open Source.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
+source-git-commit: 87e3109518fc06c655a3fc9446e2ecd648775da1
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ Questo argomento illustra come impostare le opzioni PHP richieste.
 >La versione più recente di Adobe Commerce e Magento Open Source richiede almeno PHP 8.1. Consulta [requisiti di sistema](../system-requirements.md) per tutte le versioni supportate di PHP.
 
 Per istruzioni sulla configurazione del cloud, consulta [Impostazioni PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) nel _Commerce su infrastruttura cloud_ guida.
+
+## Controllo processo PHP
+
+{{php-process-control}}
 
 ## Verificare che PHP sia installato
 

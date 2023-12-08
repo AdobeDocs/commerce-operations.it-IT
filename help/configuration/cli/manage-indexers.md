@@ -2,9 +2,9 @@
 title: Gestire gli indicizzatori
 description: Vedi esempi di come visualizzare e gestire gli indicizzatori Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 795d4e9d1910d0ad826eb6c82ac451ac58e43063
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,8 @@ Catalog Search index has been rebuilt successfully in <time>
 >La reindicizzazione di tutti gli indicizzatori può richiedere molto tempo per i negozi con un numero elevato di prodotti, clienti, categorie e regole promozionali.
 
 ### Reindicizzazione in modalità parallela
+
+{{php-process-control}}
 
 Gli indicizzatori sono con ambito e multithread per supportare la reindicizzazione in modalità parallela. Viene eseguito in parallelo dalla dimensione dell’indicizzatore su più thread, riducendo il tempo di elaborazione.
 

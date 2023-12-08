@@ -2,9 +2,9 @@
 title: Distribuire file di visualizzazione statica
 description: Scopri come scrivere file statici nel file system di Commerce durante la modalità di produzione.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0a72bc492dfec0a9014a518282a97ab21e59f96d
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -57,10 +57,10 @@ Nella tabella seguente vengono illustrati i parametri e i valori di questo coman
 | `--language (-l)` | Genera file solo per le lingue specificate. L&#39;impostazione predefinita, senza opzione specificata, prevede la generazione di file per tutti i codici di lingua ISO-639. È possibile specificare il nome di un codice lingua alla volta. Il valore predefinito è **tutto**.<br>Ad esempio: `--language en_US --language es_ES` | No |
 | `--exclude-language` | Genera file per i codici lingua specificati. Per impostazione predefinita, senza alcuna opzione specificata, non viene escluso nulla. È possibile specificare il nome di un codice lingua o di un elenco di codici di lingua separati da virgole. Il valore predefinito è **nessuno**. | No |
 | `--theme <theme>` | Temi per i quali distribuire il contenuto statico. Il valore predefinito è **tutto**.<br>Ad esempio: `--theme Magento/blank --theme Magento/luma` | No |
-| `--exclude-theme <theme>` | Temi da escludere durante la distribuzione di contenuto statico. Il valore predefinito è **nessuno**.<br>Ad esempio, `--exclude-theme Magento/blank` | No |
+| `--exclude-theme <theme>` | Temi da escludere durante la distribuzione di contenuto statico. Il valore predefinito è **nessuno**.<br>Ad esempio: `--exclude-theme Magento/blank` | No |
 | `--area (-a)` | Genera file solo per le aree specificate. L&#39;impostazione predefinita, senza opzione specificata, prevede la generazione di file per tutte le aree. I valori validi sono `adminhtml` e `frontend`. Il valore predefinito è **tutto**.<br>Ad esempio: `--area adminhtml` | No |
 | `--exclude-area` | Non generare file per le aree specificate. Per impostazione predefinita, senza alcuna opzione specificata, non viene escluso nulla. Il valore predefinito è **nessuno**. | No |
-| `--jobs (-j)` | Abilita l&#39;elaborazione parallela utilizzando il numero specificato di processi. Il valore predefinito è 0 (non viene eseguito in processi paralleli). Il valore predefinito è **0**. | No |
+| `--jobs (-j)` | Abilita [elaborazione parallela](manage-indexers.md#reindexing-in-parallel-mode) utilizzando il numero di processi specificato. Il valore predefinito è 0 (non viene eseguito in processi paralleli). Il valore predefinito è **0**. | No |
 | `--symlink-locale` | Creare collegamenti simbolici per i file di tali impostazioni internazionali, che vengono passati per la distribuzione, ma che non presentano personalizzazioni. | No |
 | `--content-version=CONTENT-VERSION` | È possibile utilizzare una versione personalizzata del contenuto statico se si esegue la distribuzione su più nodi per garantire che la versione del contenuto statico sia identica e che il caching funzioni correttamente. | No |
 | `--no-javascript` | Non distribuire file JavaScript | No |

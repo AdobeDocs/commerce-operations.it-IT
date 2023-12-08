@@ -1,7 +1,7 @@
 ---
-source-git-commit: 20add0a748e8df38dff48a779c63e1177d2a022d
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -58,3 +58,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Anche se il codice per i miglioramenti e le correzioni di bug descritti in queste note sulla versione è fornito in bundle con Adobe Commerce, molti di questi progetti (ad esempio, B2B, Page Builder e Progressive Web Application (PWA) Studio) vengono rilasciati in modo indipendente. Le correzioni di bug per questi progetti sono documentate nelle informazioni sulla versione specifiche per il progetto, disponibili nella documentazione di ciascun progetto. Consulta [panoramica sulla versione del prodotto](/help/release/release-notes/overview.md).
+
+## Controllo processo PHP {#php-process-control}
+
+Prima di poter eseguire gli indicizzatori in modalità parallela, è necessario attivare il supporto di Controllo processo (`pcntl`) in PHP. Consulta [Installazione](https://www.php.net/manual/en/pcntl.installation.php) nella documentazione PHP.
