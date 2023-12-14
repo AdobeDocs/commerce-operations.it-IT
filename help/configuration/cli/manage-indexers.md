@@ -2,9 +2,9 @@
 title: Gestire gli indicizzatori
 description: Vedi esempi di come visualizzare e gestire gli indicizzatori Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: 41082413e24733dde34542a2c9cb3cabbfdd4a35
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -225,11 +225,17 @@ Product Price:                                     Update on Save
 Catalog Search:                                    Update on Save
 ```
 
-### Configurare gli indici
+### Impostare la modalità di indicizzazione
+
+>[!IMPORTANT]
+>
+>Assicurarsi di impostare [!DNL Customer Grid] con `realtime` invece di `schedule`. Il [!DNL Customer Grid] può essere reindicizzato solo utilizzando [!UICONTROL Update on Save] opzione. Questo indice non supporta `Update by Schedule` opzione. Utilizza la seguente riga di comando per impostare questo indicizzatore da aggiornare al salvataggio: `php bin/magento indexer:set-mode realtime customer_grid`
+>
+>Consulta [Best practice per la configurazione dell’indicizzatore](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) nel _Playbook di implementazione_.
 
 >[!INFO]
 >
->Prima di passare a una modalità di indicizzazione, si consiglia di inserire il sito Web in [manutenzione](../../installation/tutorials/maintenance-mode.md) modalità e [disabilita processi cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). In questo modo si evita di subire blocchi del database.
+>Prima di cambiare modalità di indicizzazione, imposta il sito Web su [manutenzione](../../installation/tutorials/maintenance-mode.md) modalità e [disabilita processi cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). In questo modo si evita di subire blocchi del database.
 
 Per specificare la configurazione dell&#39;indicizzatore:
 
