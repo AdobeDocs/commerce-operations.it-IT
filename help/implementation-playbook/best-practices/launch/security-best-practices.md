@@ -2,13 +2,13 @@
 title: Proteggere il sito e l’infrastruttura Commerce
 description: Mantenere la sicurezza implementando le best practice per la sicurezza durante la configurazione e l’aggiornamento delle installazioni di Adobe Commerce.
 feature: Best Practices
-source-git-commit: cea5868ee37317ae9adfd8b580cd38c33c19761e
+exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
+source-git-commit: cbfd19efd9f489fefa16d93cbd8116eefb57a900
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2008'
 ht-degree: 0%
 
 ---
-
 
 # Proteggere il sito e l’infrastruttura Commerce
 
@@ -148,14 +148,15 @@ Tuttavia, Adobe ha scoperto che la maggior parte dei compromessi sul sito non so
 Negli attacchi più comuni, il codice dannoso viene iniettato nell&#39;intestazione o nel piè di pagina assoluto di un archivio clienti. In questo caso, il codice raccoglie i dati del modulo che un cliente inserisce nella vetrina, inclusi le credenziali di accesso del cliente e i dati del modulo di pagamento. Quindi, questi dati vengono inviati a un’altra posizione per scopi dannosi anziché al backend di Commerce. Inoltre, il malware può compromettere l’amministratore nell’eseguire il codice che sostituisce il modulo di pagamento originale con un modulo falso che sostituisce tutte le protezioni impostate dal provider di pagamenti.
 
 Gli skimmer di carte di credito lato client sono un tipo di malware che incorpora il codice nel contenuto del sito web di un commerciante che può essere eseguito nel browser di un utente come mostrato nella figura seguente.
-Quando si verificano determinate azioni, ad esempio l’invio di un modulo o la modifica di un valore di campo, lo skimmer serializza i dati e li invia agli endpoint di terze parti. Questi endpoint sono in genere altri siti web compromessi che fungono da relè per l’invio dei dati alla destinazione finale.
 
 ![Flusso di dati per attacchi di malware indirizzati a siti di e-commerce](../../../assets/playbooks/malware-data-flow.svg)
 
 Quando si verificano determinate azioni, ad esempio l’invio di un modulo o la modifica di un valore di campo, lo skimmer serializza i dati e li invia agli endpoint di terze parti. Questi endpoint sono in genere altri siti web compromessi che fungono da relè per l’invio dei dati alla destinazione finale.
 
 
-Se il sito Commerce è stato attaccato, segui le best practice di Adobe Commerce per [risposta a un problema di sicurezza](../maintenance/respond-to-security-incident.md).
+>[!TIP]
+>
+>Se un sito Commerce è interessato da un attacco malware, segui le best practice di Adobe Commerce per [risposta a un problema di sicurezza](../maintenance/respond-to-security-incident.md).
 
 ### Conoscere gli attacchi più comuni
 
