@@ -3,9 +3,9 @@ title: Configurare e utilizzare vernice
 description: Scopri in che modo Vernice memorizza i file e migliora il traffico HTTP.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 [Cache vernice] è un acceleratore di applicazioni web open-source (noto anche come _Acceleratore HTTP_ o _caching proxy inverso HTTP_). La vernice memorizza (o memorizza in cache) file o frammenti di file in memoria, il che consente a Vernice di ridurre il tempo di risposta e il consumo di larghezza di banda della rete su richieste equivalenti future. A differenza dei server web come Apache e Nginx, Varnish è stato progettato per essere usato esclusivamente con il protocollo HTTP.
 
-Commerce 2.4.2 è testato con vernice 6.4. Commerce 2.4.x è compatibile con Vernice 6.x
+[Requisiti di sistema](../../installation/system-requirements.md) elenca le versioni supportate di vernice.
 
 >[!WARNING]
 >
->Noi _consiglia vivamente_ usa vernice per la produzione. Il caching a pagina intera incorporato, al file system o [database]- è molto più lento di Varnish, ed è progettato per accelerare il traffico HTTP.
+>Noi _consiglia vivamente_ usa vernice per la produzione. Il caching a pagina intera incorporato, al file system o [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)- è molto più lento di Varnish, ed è progettato per accelerare il traffico HTTP.
 
 Per ulteriori informazioni sulla vernice, consulta:
 
@@ -53,9 +53,9 @@ Il processo può essere riassunto come segue:
 
 >[!NOTE]
 >
-- Ad eccezione dei casi indicati, è necessario immettere tutti i comandi descritti in questo argomento come utente con `root` privilegi.
+>- Ad eccezione dei casi indicati, è necessario immettere tutti i comandi descritti in questo argomento come utente con `root` privilegi.
 >
-- Questo argomento è stato scritto per Varnish su CentOS e Apache 2.4. Se si imposta Vernice in un ambiente diverso, alcuni comandi potrebbero essere diversi. Per ulteriori informazioni, consulta la documentazione sulle vernici.
+>- Questo argomento è stato scritto per Varnish su CentOS e Apache 2.4. Se si imposta Vernice in un ambiente diverso, alcuni comandi potrebbero essere diversi. Per ulteriori informazioni, consulta la documentazione sulle vernici.
 
 ## Problemi noti
 
@@ -96,7 +96,7 @@ Il caching delle vernici funziona con Commerce utilizzando:
 
 >[!INFO]
 >
-In questo argomento vengono illustrate solo le opzioni predefinite dell&#39;elenco precedente. Esistono molti altri modi per configurare il caching in scenari complessi (ad esempio, utilizzando una rete per la distribuzione di contenuti); tali metodi vanno oltre l’ambito di questa guida.
+>In questo argomento vengono illustrate solo le opzioni predefinite dell&#39;elenco precedente. Esistono molti altri modi per configurare il caching in scenari complessi (ad esempio, utilizzando una rete per la distribuzione di contenuti); tali metodi vanno oltre l’ambito di questa guida.
 
 Alla prima richiesta del browser, le risorse memorizzabili in cache vengono consegnate al browser client da Microsoft e memorizzate nella cache del browser.
 
@@ -120,7 +120,7 @@ L&#39;esempio precedente mostra una richiesta per la pagina principale storefron
 
 >[!NOTE]
 >
-La maggior parte delle risorse statiche ha un codice di stato HTTP 200 (OK), che indica che la risorsa è stata recuperata dal server.
+>La maggior parte delle risorse statiche ha un codice di stato HTTP 200 (OK), che indica che la risorsa è stata recuperata dal server.
 
 ### Seconda richiesta browser
 
@@ -148,7 +148,6 @@ Se il contenuto cambia sul server, il client scarica la risorsa statica con un c
 
 <!-- Link Definitions -->
 
-[database]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [Il quadro vernice grande]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [Cache vernice]: https://varnish-cache.org
 [Opzioni di avvio vernice]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options

@@ -3,9 +3,9 @@ title: Configurazione vernice avanzata
 description: Configura le funzioni avanzate di vernice, tra cui le modalità di controllo dello stato di salute, grazia e santo.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Varish offre diverse funzioni che impediscono ai clienti di riscontrare lunghi ritardi e timeout quando il server Commerce non funziona correttamente. Queste funzioni possono essere configurate in `default.vcl` file. Questo argomento descrive le aggiunte fornite da Commerce nel file VCL (Varnish Configuration Language) scaricato dall’amministratore.
 
-Consulta la [Manuale di riferimento vernice](https://varnish-cache.org/docs/6.3/reference/index.html) per informazioni dettagliate sull&#39;utilizzo del linguaggio di configurazione vernice.
+Consulta la [Manuale di riferimento vernice](https://varnish-cache.org/docs/index.html) per informazioni dettagliate sull&#39;utilizzo del linguaggio di configurazione vernice.
 
 ## Verifica stato
 
@@ -36,7 +36,7 @@ Ogni 5 secondi, questo controllo di integrità chiama il `pub/health_check.php` 
 
 Il `health_check.php` lo script si trova in `pub` directory. Se la directory principale di Commerce è `pub`, quindi assicurati di modificare il percorso in `url` parametro da `/pub/health_check.php` a `health_check.php`.
 
-Per ulteriori informazioni, vedere [Vernice controlli sanitari](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) documentazione.
+Per ulteriori informazioni, vedere [Vernice controlli sanitari](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) documentazione.
 
 ## Modalità di tolleranza
 
@@ -85,10 +85,7 @@ bin/magento cache:flush
 
 ### Installazione
 
-La modalità Saint non fa parte del pacchetto principale di vernice. Si tratta di una versione separata `vmod` che devono essere scaricati e installati. Di conseguenza, è necessario ricompilare la vernice dalla sorgente, come descritto nei seguenti articoli:
-
-- [Installazione di Vernice 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
-- [Installazione di Vernice 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
+La modalità Saint non fa parte del pacchetto principale di vernice. Si tratta di una versione separata `vmod` che devono essere scaricati e installati. Di conseguenza, è necessario ricompilare la vernice dalla sorgente, come descritto nella [istruzioni di installazione](https://varnish-cache.org/docs/index.html) per la tua versione di vernice.
 
 Dopo la ricompilazione, è possibile installare il modulo modalità Saint. In generale, segui questi passaggi:
 
