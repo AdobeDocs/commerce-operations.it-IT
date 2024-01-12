@@ -3,9 +3,9 @@ title: Il [!UICONTROL CDN] scheda
 description: Scopri di più su [!UICONTROL CDN] scheda di [!DNL Observation for Adobe Commerce].
 exl-id: db22bbca-2033-4e9a-8799-b47d84bdd720
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: e753528a1d74eda0a1393e2cc455f33f529db739
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,8 @@ Questo fotogramma mostra la durata in secondi delle richieste memorizzabili in c
 ## [!UICONTROL Fastly Cache Average Response for selected time period in seconds, faceted by POP]
 
 ![Risposta media Fastly Cache per il periodo di tempo selezionato in secondi con facet POP](../../assets/tools/observation-for-adobe-commerce/cdn-tab-10.png)
+
+*POP* in questo contesto si riferisce a un punto di presenza (POP) configurato per funzionare come pool per l’archiviazione della cache. Consulta [Punti di presenza](https://developer.fastly.com/learning/concepts/pop/).
 
 ## [!UICONTROL Total Bandwidth (All POPs) during the selected timeframe, compared with 1 week ago (% increase/decrease)]
 
