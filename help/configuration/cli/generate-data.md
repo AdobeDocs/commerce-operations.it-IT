@@ -3,18 +3,14 @@ title: Genera dati per test delle prestazioni
 description: Scopri come generare una grande quantità di dati da utilizzare per il test delle prestazioni.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
+source-git-commit: d4a6d5cd181c7c4426914bbe481f4d5d1e828b5e
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 8%
+source-wordcount: '762'
+ht-degree: 9%
 
 ---
 
 # Dati di test delle prestazioni
-
-Per utilizzare [Performance Toolkit](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) o un altro strumento per il test delle prestazioni, è necessario generare una grande quantità di dati, ad esempio archivi, categorie e prodotti.
-
-{{file-system-owner}}
 
 ## Profili
 
@@ -47,6 +43,8 @@ La tabella seguente fornisce dettagli sui profili del generatore di dati: piccol
 | `orders` | 80 | 50.000 | 50.000 | 100.000 | 150.000 |
 
 ### Eseguire il generatore di dati
+
+{{file-system-owner}}
 
 >[!WARNING]
 >
