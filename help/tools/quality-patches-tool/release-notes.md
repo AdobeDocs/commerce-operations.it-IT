@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 9d75675aed671b995f7bdda43abc5a06f2c03ee8
+source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
 workflow-type: tm+mt
-source-wordcount: '19551'
+source-wordcount: '19799'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per il Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.45 {#v1-1-45}
+
+* **ACSD-56886** (per Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.7): è stato risolto il problema che si verificava quando un prodotto configurabile esauriva quando uno dei due prodotti secondari veniva disabilitato da un aggiornamento pianificato.
+* **ACSD-56616** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.6): risolve il problema se i prodotti in bundle vengono visualizzati come in stock nella vetrina quando i loro prodotti semplici sono esauriti.
+* **ACSD-56515** (per Adobe Commerce >=2.4.2 &lt;2.4.7): è stato risolto il problema che impediva all’amministratore con autorizzazioni a livello di sito web di aggiungere o modificare un blocco dinamico.
+* **ACSD-56447** (per Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.7): è stato corretto il problema per cui l’aggiunta dello stesso prodotto al carrello tramite richieste API web REST parallele generava due elementi separati nel carrello.
+* **ACSD-56415** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.7): risolve il problema del rallentamento delle prestazioni dell’indicizzazione parziale dei prezzi a causa di un `DELETE` eseguire una query quando nel database sono presenti molti dati di prezzo parziali da indicizzare.
+* **ACSD-54965** (per Adobe Commerce >=2.4.5 &lt;2.4.6): risolve il problema se nella griglia di Visual Merchandising non viene visualizzato il titolo corretto quando un prodotto viene assegnato solo a un titolo personalizzato.
+* **ACSD-52824** (per Adobe Commerce >=2.4.5 &lt;2.4.7): risolve il problema relativo alla visualizzazione dei pulsanti PayPal Express, Google Pay e Apple Pay per i clienti aziendali quando tali metodi di pagamento sono disabilitati nelle impostazioni aziendali.
+* Patch aggiornate: ACSD-56193
 
 ## v1.1.44 {#v1-1-44}
 
