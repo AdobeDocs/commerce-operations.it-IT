@@ -4,9 +4,9 @@ description: Gestisci e ottimizza le prestazioni del sito seguendo le best pract
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce dispone di due tipi di modalità di indicizzazione: [!UICONTROL U
 
 - **[!UICONTROL Update on Save]** la modalità aggiorna immediatamente gli indici ogni volta che il catalogo o altri dati cambiano. Ad esempio, se un utente amministratore aggiunge nuovi prodotti a una categoria, l’indice dei prodotti della categoria viene reindicizzato immediatamente al salvataggio dell’aggiornamento.
 
-- **[!UICONTROL Update on Schedule]** la modalità memorizza informazioni sugli aggiornamenti dei dati e le operazioni di reindicizzazione e gli aggiornamenti degli indici sono gestiti da un processo cron eseguito in background a intervalli pianificati.
+- **[!UICONTROL Update on Schedule]** la modalità memorizza informazioni sugli aggiornamenti dei dati e le operazioni di reindicizzazione e gli aggiornamenti degli indici sono gestiti da un processo cron eseguito in background a intervalli pianificati. Il processo cron non esegue sempre una reindicizzazione ogni volta che viene eseguito. Reindicizza solo quando sono presenti nuove voci nei registri di modifica dell’indicizzatore (ad esempio, è presente un backlog sugli indicizzatori).
 
 La presenza di un archivio di grandi dimensioni con più amministratori che lavorano nel back-end o il numero elevato di importazioni ed esportazioni provoca frequenti aggiornamenti dell’indice. Se la configurazione dell’indice del sito è impostata su [!UICONTROL Update on Save] modalità, la reindicizzazione frequente riduce le prestazioni del database, rallentando le prestazioni del sito e causando lunghi ritardi nel processo di reindicizzazione, in particolare per i negozi di grandi dimensioni.
 
