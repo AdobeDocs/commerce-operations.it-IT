@@ -2,9 +2,9 @@
 title: Prerequisiti completi
 description: Prepara il tuo progetto Adobe Commerce per un aggiornamento completando questi passaggi preliminari.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
@@ -79,8 +79,8 @@ Elasticsearch richiede Java Development Kit (JDK) 1.8 o versione successiva. Con
 OpenSearch è un fork open-source di Elasticsearch 7.10.2, a seguito della modifica delle licenze di Elasticsearch. Nelle seguenti versioni di Adobe Commerce è stato introdotto il supporto per OpenSearch:
 
 * 2.4.6 (OpenSearch ha un modulo e impostazioni separati)
-* 2.4.5
-* 2.4.4
+* 2.4.5.
+* 2.4.4.
 * 2.4.3-p2
 * 2.3.7-p3
 
@@ -172,7 +172,7 @@ Contatta il fornitore del motore di ricerca per determinare se l’estensione è
 
 ## Converti formato tabella database
 
-È necessario convertire il formato di tutte le tabelle di database da `COMPACT` a `DYNAMIC`. È inoltre necessario convertire il tipo di motore di archiviazione da `MyISAM` a `InnoDB`. Consulta [best practice](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
+È necessario convertire il formato di tutte le tabelle di database da `COMPACT` a `DYNAMIC`. È inoltre necessario convertire il tipo di motore di archiviazione da `MyISAM` a `InnoDB`. Consulta [best practice](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md).
 
 ## Imposta il limite di file aperti
 
