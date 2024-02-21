@@ -3,9 +3,9 @@ title: Spedizione e evasione
 description: Determina i metodi e i costi di spedizione prima di completare il progetto di e-commerce.
 exl-id: 07d303ab-f229-4b6a-b35a-b6d2a3be89b3
 feature: Best Practices, Shipping/Delivery
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 766bd4e4e6a31157836770270cc3ba310f142161
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ La tabella seguente descrive le differenze tra spedizione e evasione B2B e B2C:
 | B2B | B2C |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------|
 | Il completamento dell&#39;evasione e della spedizione richiede più tempo a causa dei costi e della quantità | Può essere il giorno stesso di spedizione e/o spedizione gratuita |
-| Richiede una connessione su un&#39;unica connessione tra l&#39;azienda e il cliente | Di solito, le relazioni a breve termine |
+| Richiede una connessione su un&#39;unica connessione tra l&#39;azienda e il cliente | Di solito, relazioni a breve termine |
 | Di solito, relazioni a lungo termine | L&#39;azienda fornisce carte fedeltà per mantenere i clienti |
 | Il processo può essere lungo e complesso | Promozioni e campagne offerte ai clienti |
 | Devono essere applicate regole forti | È possibile applicare le regole di base |
