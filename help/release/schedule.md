@@ -1,11 +1,11 @@
 ---
 title: Pianificazione della versione
-description: Scopri quando Adobe pianifica di annunciare il rilascio di nuove funzioni per Adobe Commerce.
+description: Scopri quando Adobe intende annunciare il rilascio di nuove funzioni per Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: cbcc688fb5b356b99d103259e85117bda82f36b9
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
