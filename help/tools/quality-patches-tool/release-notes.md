@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
+source-git-commit: c39eb5c9328657083aea07a385531e7ad0df6e14
 workflow-type: tm+mt
-source-wordcount: '19990'
+source-wordcount: '20136'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,14 @@ Il [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) dis
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per il Magento Open Source, vedi [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.47 {#v1-1-47}
+
+* **ACSD-55241** (per Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.7) - Corregge il problema se *[!UICONTROL Used]* e *[!UICONTROL Times Used]* gli attributi visualizzano valori errati per i coupon generati quando vengono utilizzati durante il pagamento con più indirizzi.
+* **ACSD-56760** (per Adobe Commerce >=2.4.6 &lt;2.4.7): è stato risolto il problema che impediva a un utente amministratore limitato a un sito web specifico di ordinare o aggiungere nuovi prodotti all’interno di una categoria nel caso in cui il sito web disponga di una propria categoria principale.
+* **ACSD-56858** (per Adobe Commerce >=2.4.2 &lt;2.4.7): è stato risolto il problema che impediva la corretta visualizzazione delle autorizzazioni del ruolo aziendale B2B per un amministratore di società con restrizioni.
+* **ACSD-57074** (per Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Corregge il problema se *Sì/No* attributo personalizzato con `attrbute_code` avvio con `price_` non funziona correttamente con l’indicizzazione e i prodotti con tali attributi non sono disponibili sul front-end.
+* Patch aggiornate: ACSD-53378, ACSD-51819
 
 ## v1.1.46 {#v1-1-46}
 
