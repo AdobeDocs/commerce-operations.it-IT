@@ -1,8 +1,8 @@
 ---
-source-git-commit: 5e25ba7151b16706f60c3fb8ffc5dbc6f31f29a6
+source-git-commit: 0d6e2d58074b921466e5f4995a0c8e97a63e2d83
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 1%
+source-wordcount: '80'
+ht-degree: 2%
 
 ---
 # Novità delle best practice
@@ -10,6 +10,26 @@ ht-degree: 1%
 ## Scopri le novità nelle best practice di implementazione
 
 Questa pagina contiene le modifiche recenti che riteniamo desideriate visualizzare. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 14 febbraio 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Sono state aggiunte le best practice per <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">aggiornamento di MariaDB</a> 10.5.1 e versioni successive.</p>
+</td>
+      <td>best practice</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> (commit)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 3 gennaio 2024
 
