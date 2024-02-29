@@ -3,9 +3,9 @@ title: Best practice per la configurazione
 description: Ottimizza i tempi di risposta dell’implementazione di Adobe Commerce o di Magento Open Source utilizzando queste best practice.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 2fa587557db214ed2fbeb5e6c175a9a209883f94
+source-git-commit: 5a49aff28f1a7c87cd6135ca19b4436da41cbb1b
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Tutte le operazioni asincrone in [!DNL Commerce] vengono eseguiti utilizzando Li
 
 ## Indicizzatori
 
-Un indicizzatore può essere eseguito in **[!UICONTROL Update on Save]** o **[!UICONTROL Update on Schedule]** modalità. Il **[!UICONTROL Update on Save]** La modalità indicizza immediatamente ogni volta che il catalogo o altri dati cambiano. Questa modalità presuppone un&#39;intensità ridotta di operazioni di aggiornamento e navigazione nel negozio. Può causare notevoli ritardi e la mancata disponibilità dei dati in caso di carichi elevati. È consigliabile utilizzare **Aggiorna secondo programma** in produzione, perché memorizza informazioni sugli aggiornamenti dei dati ed esegue l’indicizzazione per porzioni in background tramite un processo cron specifico. È possibile modificare la modalità di ogni [!DNL Commerce] indicizzatore separatamente sulla  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** pagina di configurazione.
+Un indicizzatore può essere eseguito in **[!UICONTROL Update on Save]** o **[!UICONTROL Update on Schedule]** modalità. Il **[!UICONTROL Update on Save]** La modalità indicizza immediatamente ogni volta che il catalogo o altri dati cambiano. Questa modalità presuppone un&#39;intensità ridotta di operazioni di aggiornamento e navigazione nel negozio. Può causare notevoli ritardi e la mancata disponibilità dei dati in caso di carichi elevati. È consigliabile utilizzare **Aggiorna secondo programma** ai fini delle prestazioni, perché memorizza informazioni sugli aggiornamenti dei dati ed esegue l’indicizzazione per porzioni in background tramite un processo cron specifico. È possibile modificare la modalità di ogni [!DNL Commerce] indicizzatore separatamente sulla  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** pagina di configurazione. Il [!UICONTROL Customer Grid] l&#39;indice deve essere sempre impostato su **[!UICONTROL Update on Save]** modalità.
 
 >[!TIP]
 >
