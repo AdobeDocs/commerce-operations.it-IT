@@ -4,9 +4,9 @@ description: Scopri i più recenti strumenti di sviluppo componibili e funzional
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: a4738e58d8c17c17426765d6f975a2af0ce11c80
+source-git-commit: 2e17313c0a2c87ce4d2ee43e9b40277fda25edb9
 workflow-type: tm+mt
-source-wordcount: '3076'
+source-wordcount: '3078'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ Inoltre, è in corso l&#39;hosting di [sessione di laboratorio](https://reg.adob
 
 Adobe ha una vasta esperienza nell’implementazione di servizi conformi agli standard HIPAA con clienti del settore sanitario di tutte le dimensioni. Da fornitori a fornitori a fornitori farmaceutici e tecnologici, Adobe definisce lo standard per la gestione responsabile dei dati dei consumatori. Questa esperienza si sta ora estendendo al mercato del commercio digitale sanitario in rapida crescita con una versione compatibile con HIPPA della piattaforma cloud Adobe Commerce.
 
-L’offerta HIPAA-Ready è disponibile per i clienti di Adobe Commerce Managed Services. Include ulteriori controlli di sicurezza e privacy per garantire la protezione delle informazioni elettroniche sulla salute personale (ePHI) in modo che le organizzazioni del settore sanitario e delle scienze biologiche possano adempiere più facilmente ai propri obblighi di conformità. La soluzione supporta una serie di casi d&#39;uso, tra cui vendite online rapide e convenienti di copertura sanitaria, prescrizioni, dispositivi medici prescritti e forniture mediche. Adobe Commerce ora aderisce al [Adobe Experience Cloud per il settore medicale](https://business.adobe.com/solutions/industries/healthcare.html) una suite di soluzioni che consente ai clienti di fornire ai pazienti esperienze sicure ed eccezionali rispettando al contempo le preferenze dei consumatori.
+L’offerta compatibile con HIPAA è disponibile per i clienti di Adobe Commerce Cloud e Managed Service. Include ulteriori controlli di sicurezza e privacy per garantire la protezione delle informazioni elettroniche sulla salute personale (ePHI) in modo che le organizzazioni del settore sanitario e delle scienze biologiche possano adempiere più facilmente ai propri obblighi di conformità. La soluzione supporta una serie di casi d&#39;uso, tra cui vendite online rapide e convenienti di copertura sanitaria, prescrizioni, dispositivi medici prescritti e forniture mediche. Adobe Commerce ora aderisce al [Adobe Experience Cloud per il settore medicale](https://business.adobe.com/solutions/industries/healthcare.html) una suite di soluzioni che consente ai clienti di fornire ai pazienti esperienze sicure ed eccezionali rispettando al contempo le preferenze dei consumatori.
 
 >[!TIP]
 >
