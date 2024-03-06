@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9f80bf4de9112cc986708266565c96515e85554c
+source-git-commit: 93ec4b59b4c26e31ee117bc13f98d21ce23d586f
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.7.
 
-Il supporto per la riga di rilascio 2.4.7 termina il 19 aprile 2027.
+Il supporto per la riga di rilascio 2.4.7 termina il 9 aprile 2027.
 
 <table>
   <thead>
@@ -138,7 +138,7 @@ Il supporto per la riga di rilascio 2.4.5 termina il 9 agosto 2025.
 
 ## 2.4.4.
 
-Il supporto per la riga di rilascio 2.4.4 termina il 12 aprile 2025.
+Il supporto per la riga di rilascio 2.4.4 termina il 24 aprile 2025.
 
 <table>
   <thead>
