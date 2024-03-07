@@ -2,9 +2,9 @@
 title: Installazione on-premise avanzata
 description: Scopri gli scenari di installazione avanzata per Adobe Commerce o Magento Open Source sull’infrastruttura di tua proprietà.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2383'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,9 @@ Vedi anche [Aggiornare, reinstallare, disinstallare](tutorials/uninstall.md).
 
 | Argomento del programma di installazione | Comando |
 | ------------------ | ------------------------------- |
-| Lingua | informazioni su bin/magento:language:list |
-| Valuta | informazioni su bin/magento:currency:list |
-| Fuso orario | informazioni su bin/magento:timezone:list |
+| Lingua | `bin/magento info:language:list` |
+| Valuta | `bin/magento info:currency:list` |
+| Fuso orario | `bin/magento info:timezone:list` |
 
 >[!NOTE]
 >
