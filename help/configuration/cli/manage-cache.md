@@ -2,7 +2,7 @@
 title: Gestire la cache
 description: Gestisci i tipi di cache e visualizza lo stato della cache.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 604e2a1461e2cbbcc498dfed6018ba640efe8cde
+source-git-commit: 6e0e7f209b265e5b924e0092fec020e0cefc165d
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 ## Tipi di cache
 
-Commerce 2 dispone dei seguenti tipi di cache:
+Commerce dispone dei seguenti tipi di cache:
 
 | Nome &quot;descrittivo&quot; del tipo di cache | Nome codice tipo cache | Descrizione |
-|--- |--- |--- |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Configurazione | config | Commerce raccoglie la configurazione da tutti i moduli, la unisce e salva il risultato unito nella cache. Questa cache contiene anche le impostazioni specifiche dell&#39;archivio memorizzate nel file system e nel database. Pulisci o svuota questo tipo di cache dopo aver modificato i file di configurazione. |
 | Layout | layout | Layout di pagina compilati (ovvero i componenti di layout di tutti i componenti). Pulisci o svuota questo tipo di cache dopo aver modificato i file di layout. |
 | Blocca output HTML | block_html | Frammenti di pagina HTML per blocco. Pulite o svuotate questo tipo di cache dopo aver modificato il livello di vista. |
@@ -31,10 +31,9 @@ Commerce 2 dispone dei seguenti tipi di cache:
 | Traduzioni | traduci | Dopo aver unito le traduzioni da tutti i moduli, la cache di fusione verrà pulita. |
 | Configurazione dell’integrazione | config_integration | Integrazioni compilate. Pulisci o svuota la cache dopo aver modificato o aggiunto le integrazioni. |
 | Configurazione dell’API di integrazione | config_integration_api | Configurazione delle API di integrazione compilata delle integrazioni dello Store. |
+| Risultati di GraphQL Query Resolver [!BADGE 2.4.7-beta]{type=Informative url=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;Disponibile solo nella versione 2.4.7-beta&quot;} | graphql_query_resolver_result | Memorizza nella cache i risultati dei risolutori di query GraphQL per le entità cliente, pagina CMS, blocco CMS e galleria di supporti del prodotto. Mantieni questa cache abilitata per migliorare le prestazioni del GraphQL. |
 | Configurazione servizi Web | config_webservice | Memorizzazione in cache della struttura API web. |
 | Notifica cliente | customer_notification | Notifiche temporanee visualizzate nell’interfaccia utente. |
-| Cache SDK interfaccia utente amministratore | admin_ui_sdk | Memorizza nella cache le personalizzazioni amministratore aggiunte con [SDK dell’interfaccia di amministrazione di Adobe Commerce](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
-| Cache di risposta dei webhook | webhooks_response | Memorizza nella cache le risposte a [richieste webhook](https://developer.adobe.com/commerce/extensibility/webhooks/). |
 
 ## Visualizzare lo stato della cache
 
@@ -63,6 +62,7 @@ Current status:
             config_integration: 1
         config_integration_api: 1
                    target_rule: 1
+ graphql_query_resolver_result: 1
              config_webservice: 1
                      translate: 1
 ```
@@ -171,6 +171,7 @@ Risultato di esempio:
    config_integration
    config_integration_api
    full_page
+   graphql_query_resolver_results
    config_webservice
    translate
 ```
