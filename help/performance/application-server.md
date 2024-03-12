@@ -3,7 +3,7 @@ title: API di Application Server per GraphQL
 description: Segui queste istruzioni per abilitare le API di Application Server per GraphQL nella tua distribuzione Adobe Commerce.
 badgeCoreBeta: label="2.4.7-beta" type="informative"
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 8e050f72f4371afb6602ae9688f22d9f24df2f0c
+source-git-commit: 1fdb29c1a6666aeeef7e546bc7d57a83a40b7542
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Il `ApplicationServer` modulo (`Magento/ApplicationServer/`) abilita Application
 Completa le seguenti attività prima di distribuire Application Server su Cloud Pro:
 
 1. Conferma che Adobe Commerce sia installato su Commerce Cloud utilizzando Cloud Template versione 2.4.7 o successiva.
-1. Assicurati che tutte le personalizzazioni ed estensioni di Commerce siano [compatibile](https://developer.adobe.com/commerce/development/components/app-server/) con Application Server.
+1. Assicurati che tutte le personalizzazioni ed estensioni di Commerce siano [compatibile](https://developer.adobe.com/commerce/php/development/components/app-server/) con Application Server.
 1. Clona il progetto Commerce Cloud.
 1. Se necessario, regola le impostazioni nel file application-server/nginx.conf.sample.
 1. Commenta la sezione &quot;web&quot; attiva in `project_root/.magento.app.yaml` interamente.
