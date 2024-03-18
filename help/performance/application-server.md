@@ -3,9 +3,9 @@ title: API di Application Server per GraphQL
 description: Segui queste istruzioni per abilitare le API di Application Server per GraphQL nella tua distribuzione Adobe Commerce.
 badgeCoreBeta: label="2.4.7-beta" type="informative"
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 1fdb29c1a6666aeeef7e546bc7d57a83a40b7542
+source-git-commit: 9d5795400880a65947b1b90c8806b9dcb14aba23
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1897'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Completa le seguenti attività prima di distribuire Application Server su Cloud 
 1. Assicurati che tutte le personalizzazioni ed estensioni Commerce siano compatibili con Application Server.
 1. Confermare che `CRYPT_KEY` la variabile di ambiente è impostata per l’istanza. Puoi controllare lo stato di questa variabile sul Cloud Project Portal (Interfaccia utente di onboarding).
 1. Clona il progetto Commerce Cloud.
-1. Rinomina &#39;application-server/.magento/.magento.app.yaml.sample&#39; in &#39;application-server/.magento/.magento.app.yaml&#39; e, se necessario, regola le impostazioni in .magento.app.yaml.
+1. Rinomina `application-server/.magento/.magento.app.yaml.sample` a `application-server/.magento/.magento.app.yaml` e, se necessario, regola le impostazioni in .magento.app.yaml.
 1. Rimuovi commento dalla configurazione della route seguente in `project_root/.magento/routes.yaml` file da reindirizzare `/graphql` traffico verso il server applicazioni.
 
    ```yaml
@@ -108,6 +108,11 @@ Completa le seguenti attività prima di distribuire Application Server su Cloud 
    ```bash
    git commit -m "AppServer Enabled"
    ```
+
+>[!NOTE]
+>
+> Verifica che tutte le impostazioni personalizzate presenti nella directory principale `.magento.app.yaml` i file vengono migrati in modo appropriato al `application-server/.magento/.magento.app.yaml` file. Una volta `application-server/.magento/.magento.app.yaml` aggiunta al progetto, è necessario gestirla oltre alla directory principale `.magento.app.yaml` file.
+> Ad esempio, se devi [configura rabbitmq](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) o [gestire le proprietà web](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) devi aggiungere la stessa configurazione a `application-server/.magento/.magento.app.yaml` anche.
 
 ### Distribuire il server applicazioni su Cloud Starter
 
