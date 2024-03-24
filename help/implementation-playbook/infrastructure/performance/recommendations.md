@@ -4,9 +4,9 @@ description: Segui queste raccomandazioni per ottimizzare le prestazioni dell’
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
 feature: Cloud
 topic: Performance
-source-git-commit: 31c71af854a59381c7793f26ed9b121cd9bcac83
+source-git-commit: 8b09d734d8ac4490cd88af5673acd0a41b6cdf66
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Oltre alle raccomandazioni comuni per l&#39;ottimizzazione dell&#39;infrastruttu
 
 ### Architettura headless
 
-È disponibile una sezione separata dedicata a [headless](../../architecture/headless/adobe-commerce.md). In sintesi, separa il livello vetrina dalla piattaforma stessa. È ancora lo stesso backend, ma Adobe Commerce non elabora più le richieste direttamente e supporta solo storefront personalizzati tramite l’API GraphQL.
+È disponibile una sezione separata dedicata a [headless](../../architecture/enterprise-blueprint.md#headless-storefront). In sintesi, separa il livello vetrina dalla piattaforma stessa. È ancora lo stesso backend, ma Adobe Commerce non elabora più le richieste direttamente e supporta solo storefront personalizzati tramite l’API GraphQL.
 
 ### Mantieni Adobe Commerce aggiornato
 

@@ -2,10 +2,10 @@
 user-guide-title: Playbook di implementazione
 user-guide-description: Scopri le strategie per la pianificazione e l’implementazione di un sito Adobe Commerce di successo.
 mini-toc-levels: 3
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 36a2a86cbafab1e4913573b1c8431524ba43dc6a
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 11%
+source-wordcount: '257'
+ht-degree: 12%
 
 ---
 
@@ -32,10 +32,7 @@ ht-degree: 11%
    - [Responsabilità e titolarità](planning/ownership.md)
    - [Governance dei progetti](planning/governance.md)
 - Architettura e integrazioni {#architecture}
-   - [Funzionalità](architecture/capabilities.md)
-   - [Strategia di integrazione](architecture/integration-strategy.md)
-   - [Strategia di estensibilità](architecture/extensibility-strategy.md)
-   - [Opzioni di integrazione](architecture/integration-options.md)
+   - [Riferimento Enterprise](architecture/enterprise-blueprint.md)
    - Architettura di riferimento globale {#global-reference-architecture}
       - [Panoramica](architecture/global-reference/overview.md)
       - [Esempi](architecture/global-reference/examples.md)
@@ -43,13 +40,6 @@ ht-degree: 11%
          - [Panoramica](architecture/global-reference/composer/overview.md)
          - [Struttura del progetto](architecture/global-reference/composer/project-structure.md)
          - [Suggerimenti](architecture/global-reference/composer/tips-and-tricks.md)
-   - Commercio headless {#headless}
-      - [Vantaggi](architecture/headless/benefits.md)
-      - [Percorso a headless](architecture/headless/journey-to-headless.md)
-      - [Microservizi](architecture/headless/microservices.md)
-      - [Evoluzione di headless](architecture/headless/evolution.md)
-      - [Architettura della vetrina abbinata](architecture/headless/legacy-storefront.md)
-      - [Architettura headless](architecture/headless/adobe-commerce.md)
 - Infrastruttura e installazione {#infrastructure}
    - [Panoramica](infrastructure/overview.md)
    - Hosting autonomo {#self-hosting}
