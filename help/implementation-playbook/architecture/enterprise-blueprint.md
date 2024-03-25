@@ -2,13 +2,13 @@
 title: Architettura di riferimento aziendale
 description: Scopri come implementare Adobe Commerce utilizzando la più recente tecnologia di e-commerce componibile di Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
-source-git-commit: 96afb0ccf5ea872cb42320babfd04ba51fa7dbf6
+exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
+source-git-commit: 8eab688ed98eb1b9fcf4fc25f90fe2bbf99c02d6
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
 
 ---
-
 
 # Architettura di riferimento aziendale Adobe Commerce
 
@@ -78,3 +78,4 @@ Adobe offre una ricca gamma di servizi di merchandizing intelligenti e componibi
 L’e-commerce headless è l’e-commerce API-first. Adobe Commerce è completamente headless con un’architettura separata che fornisce tutti i servizi e i dati commerce tramite un livello API GraphQL. Questa architettura consente ai team di sviluppare i front-end in modo indipendente dall’applicazione principale, fornendo la flessibilità necessaria per creare e testare rapidamente nuovi punti di contatto con le tecnologie emergenti.
 
 Adobe fornisce una moderna tecnologia di vetrina headless che include gli stessi vantaggi e le stesse funzionalità offerti da [Edge Delivery Services](https://www.aem.live/home) con l’authoring basato su documenti, un’architettura basata sulle prestazioni e una sperimentazione nativa preconfigurata. Sfrutta la scalabilità e le prestazioni di Adobe Commerce [servizi di vetrina](#storefront-services) e la flessibilità e la convenienza di [componenti di rilascio](https://experienceleague.adobe.com/developer/commerce/storefront/) per fornire funzionalità commerce.
+
