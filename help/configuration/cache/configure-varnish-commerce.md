@@ -3,9 +3,9 @@ title: Configurazione vernice per Commerce
 description: Scopri come aggiornare e gestire il file di configurazione di Vernice per l’applicazione Commerce.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Per configurare Commerce per l’utilizzo di Vernice:
    | Host back-end | Immettere il nome host completo o l&#39;indirizzo IP e la porta di ascolto della vernice _backend_ o _server di origine_ ovvero il server che fornisce il contenuto accelera la visualizzazione di Vernice. In genere, si tratta del server web. Consulta [Vernice dei server back-end della cache](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Porta back-end | Porta di ascolto del server di origine. |
    | Periodo di tolleranza | Determina per quanto tempo Vernice fornisce contenuti non aggiornati se il backend non risponde. Il valore predefinito è 300 secondi. |
-   | Gestisce le dimensioni dei parametri  [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponibile solo nella versione 2.4.7-beta"} | Specifica il numero massimo di [maniglie di layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) da elaborare su [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) Endpoint HTTP per il caching di pagine intere. La limitazione delle dimensioni può migliorare la sicurezza e le prestazioni. Il valore predefinito è 100. |
+   | Gestisce le dimensioni dei parametri | Specifica il numero massimo di [maniglie di layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) da elaborare su [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) Endpoint HTTP per il caching di pagine intere. La limitazione delle dimensioni può migliorare la sicurezza e le prestazioni. Il valore predefinito è 100. |
 
 1. Clic **Salva configurazione**.
 

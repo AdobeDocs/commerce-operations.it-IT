@@ -2,10 +2,10 @@
 user-guide-title: Guide operative
 user-guide-description: Scopri gli aspetti operativi della manutenzione dell’applicazione Adobe Commerce o Magento Open Source.
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
-source-git-commit: e8b41f25cfd5b707d701016e65db43826a7f26d6
+source-git-commit: c8093c4575eccc1d012da0e1502eb618c9b048e5
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 17%
+source-wordcount: '57'
+ht-degree: 29%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 17%
 # Guide operative di Adobe Commerce {#operational-guides}
 
 - [Home](home.md)
-- [Informazioni sulla versione](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)
+- [Informazioni sulla versione](https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html)
 - [Installazione](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html)
 - [Configurazione](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html)
 - [Migrazione dei dati](https://experienceleague.adobe.com/docs/commerce-operations/tools/data-migration/how-migration-works.html)

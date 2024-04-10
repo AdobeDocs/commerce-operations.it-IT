@@ -3,10 +3,10 @@ keywords: Adobe Commerce;home;argomenti popolari
 title: Home
 description: Sfoglia un indice della documentazione del prodotto operativo e di amministrazione del sistema di Adobe Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
+source-git-commit: c8093c4575eccc1d012da0e1502eb618c9b048e5
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 18%
+source-wordcount: '225'
+ht-degree: 17%
 
 ---
 
@@ -17,7 +17,7 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
 <table>
 <tr>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html">
       <img alt="Informazioni sulla versione" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>

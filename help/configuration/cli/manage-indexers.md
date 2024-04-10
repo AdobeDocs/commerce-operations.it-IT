@@ -2,9 +2,9 @@
 title: Gestire gli indicizzatori
 description: Vedi esempi di come visualizzare e gestire gli indicizzatori Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: a8f845813971eb32053cc5b2e390883abf3a104e
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -264,7 +264,7 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 
 I trigger del database relativi agli indicizzatori vengono aggiunti quando la modalità di indicizzazione è impostata su `schedule` e viene rimosso quando la modalità indicizzatore è impostata su `realtime`. Se i trigger non sono presenti nel database mentre gli indicizzatori sono impostati su `schedule`, modifica gli indicizzatori in `realtime` e quindi riportarli a `schedule`. In questo modo vengono ripristinati i trigger.
 
-### Imposta stato indicizzatore [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponibile solo nella versione 2.4.7-beta"}
+### Imposta stato indicizzatore
 
 Questo comando consente agli amministratori di modificare lo stato operativo di uno o più indicizzatori, ottimizzando le prestazioni del sistema durante operazioni estese quali l&#39;importazione di dati, gli aggiornamenti o la manutenzione.
 

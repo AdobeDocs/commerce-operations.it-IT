@@ -3,9 +3,9 @@ user-guide-title: Best practice per le prestazioni
 user-guide-description: Ottimizza le prestazioni della tua implementazione Adobe Commerce o di produzione di Magento Open Source utilizzando i nostri consigli.
 feature: Best Practices
 topic: Administration, Commerce, Development, Performance
-source-git-commit: cb843dbb3759d9ce5e94317ae977cfe8acfa4432
+source-git-commit: 51a86a24561e2c21b895dd59b3d784313b52d186
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '54'
 ht-degree: 1%
 
 ---
@@ -24,5 +24,5 @@ ht-degree: 1%
 - Concetti avanzati {#concepts}
    - [Configurazione avanzata](advanced-setup.md)
    - [Avanzate [!DNL JavaScript] raggruppamento](advanced-js-bundling.md)
-   - [API di Application Server per GraphQL](application-server.md)
+   - [Server applicazioni GraphQL](application-server.md)
 - [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

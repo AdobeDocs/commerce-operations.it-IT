@@ -2,9 +2,9 @@
 title: Consumatori coda messaggi
 description: Scopri gli utenti di Adobe Commerce e delle code di messaggi di Magento Open Source, incluse le funzioni e le impostazioni di configurazione associate.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ La tabella seguente identifica tutti i consumer della coda di messaggi, ne descr
 | Invia e-mail ordine fornitore. Obbligatorio quando [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) nelle impostazioni di configurazione del sistema di amministrazione. |                |                         |                     |
 | `purchaseorder.validation` |                | + |                     |
 | Convalida l&#39;ordine fornitore a fronte dei relativi [regole di approvazione](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html). Obbligatorio quando [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) nelle impostazioni di configurazione del sistema di amministrazione. |                |                         |                     |
-| `saveConfigProcessor` [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponibile solo nella versione 2.4.7-beta"} | + |                         | + |
+| `saveConfigProcessor` | + |                         | + |
 | Salva in modo asincrono le modifiche alla configurazione dell&#39;archivio inserendo i processi di salvataggio in una coda di messaggi, il che può migliorare le prestazioni in implementazioni che contengono un numero elevato di configurazioni a livello di archivio. Necessario per utilizzare [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) modulo. |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |
 | Impedisce la [problema](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) dove i coupon monouso possono essere utilizzati più volte. |                |                         |                     |

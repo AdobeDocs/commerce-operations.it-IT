@@ -2,10 +2,10 @@
 title: Regole sul ciclo di vita del software
 description: Scopri le date chiave per la fine del supporto software per le versioni di Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: bb90d7903eafe01b42d8c056db771769f9e4e752
+source-git-commit: 01e926e3cf36f27f5292a0b9ce7a6209d4960cc2
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 12%
+source-wordcount: '363'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +20,7 @@ Per Adobe Commerce 2.4.4 e versioni successive:
 
 - Per problemi critici di sicurezza, come vulnerabilità a zero giorni, Adobe fornisce [hotfix](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) per tutti i clienti che usano una versione supportata, anche se non sono nell’ultima versione della patch o della patch di sicurezza. È importante notare che un hotfix non è onnicomprensivo e non risolve tutti i problemi di sicurezza che verrebbero risolti con l’aggiornamento alla versione più recente.
 
-- Adobe non fornisce correzioni di sicurezza e di qualità per servizi di terze parti e dipendenze software, come PHP. È tua responsabilità mantenere la sicurezza e la conformità (ad esempio, PCI, ISO, SOC) delle dipendenze software di terze parti. Adobe consiglia di aggiornare gli ambienti per utilizzare al più presto l’ultima versione di PHP supportata da Adobe Commerce. Non utilizzare una versione di PHP che ha raggiunto la fine del supporto.
+- Adobe non fornisce correzioni di sicurezza e di qualità per servizi di terze parti e dipendenze software (come PHP e MySQL) che possono terminare mentre i clienti sono in servizio per il periodo di supporto di tre anni per Adobe Commerce. Consulta la [requisiti di sistema](../installation/system-requirements.md) per un elenco completo delle tecnologie di terze parti testate e supportate.
 
 ## Fine del supporto software
 
@@ -28,8 +28,8 @@ Per Adobe Commerce 2.4.4 e versioni successive:
 |----------------------|----------------------|-------------------------------------|-----------------------|
 | Adobe Commerce 2.4.7 | 9 aprile 2024 | 9 aprile 2027 | 8.2 e 8.3 |
 | Adobe Commerce 2.4.6 | 14 marzo 2023 | 14 marzo 2026 | 8.1 e 8.2 |
-| Adobe Commerce 2.4.5 | 9 agosto 2022 | 9 agosto 2025 | 8.1 |
-| Adobe Commerce 2.4.4 | 12 aprile 2022 | 24 aprile 2025 | 8.1 |
+| Adobe Commerce 2.4.5 | 9 agosto 2022 | 9 agosto 2025 | 8,1 |
+| Adobe Commerce 2.4.4 | 12 aprile 2022 | 24 aprile 2025 | 8,1 |
 
 {style="table-layout:auto"}
 
@@ -80,25 +80,25 @@ Per Adobe Commerce 2.4.4 e versioni successive:
     <td>Q4</td>
   </tr>
   <tr>
-    <td>2.4.4</td>
+    <td>2.4.4.</td>
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="10"></td>
   </tr>
   <tr>
-    <td>2.4.5</td>
+    <td>2.4.5.</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="9"></td>
   </tr>
   <tr>
-    <td>2.4.6</td>
+    <td>2.4.6.</td>
     <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="8"></td>
   </tr>
   <tr>
-    <td>2.4.7</td>
+    <td>2.4.7.</td>
     <td colspan="9"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>

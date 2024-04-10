@@ -2,9 +2,9 @@
 title: Requisiti di sistema
 description: Utilizza questo riferimento per identificare le dipendenze software richieste che sono state testate con Adobe Commerce e le versioni di Magento Open Source.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 56052a5777b8719d5a9257d0c48e5640a6812a5f
+source-git-commit: 4087d5f5de0bc11ce120d61a539800a3533893f0
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Se è necessario installare OPcache separatamente, vedere [Documentazione di PHP
 
 ### PHPUnit
 
-PHPUnit (come strumento da riga di comando) 9.0.0
+PHPUnit v9 (come strumento da riga di comando).
 
 ### Estensioni PHP
 
