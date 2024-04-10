@@ -1,8 +1,8 @@
 ---
-source-git-commit: febd2aa57434ec9b959a4aff6179ae00fe0ccba8
+source-git-commit: 018c61a4ea921b4a69cc854fde355606defe1215
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 2%
+source-wordcount: '307'
+ht-degree: 0%
 
 ---
 # Nuovo modello
@@ -10,6 +10,78 @@ ht-degree: 2%
 ## Novità
 
 Scopri la nuova documentazione e gli aggiornamenti significativi della documentazione esistente.
+
+### 9 aprile 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Aggiornato <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">Versioni rilasciate</a>.</p>
+</td>
+      <td>tecnico</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/efd2fc4285a5cdc7ee20ead299ee16e54f9bcb83">efd2fc</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><ul>
+  <li>Aggiornare gli argomenti dei pacchetti di versione per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">OpenSource Magento</a>.<br />- Aggiungere un argomento dei pacchetti di versione per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B per Commerce</a>.</li>
+</ul>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>È stato aggiornato il <em>raccoglitore/magento</em> Documentazione di riferimento CLI per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">OpenSource Magento</a>.</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Pubblicato 2.4.7 GA <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">note sulla versione</a>.</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35b7caafbef5ced52ef6e4907e0634dfb2a61e4f">35b7ca</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Aggiunge note sulla versione per le versioni di sicurezza di Adobe Commerce di aprile 2024 (2.4.6-p5, 2.4.5-p7, 2.4.4-p8). Consulta <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Note sulla versione di Adobe Commerce e Magento Open Source</a></p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7acab1d8d3f7b11cc1387b5558521f282ba0873f">7acab1</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><ul>
+  <li>Aggiornare gli argomenti dei pacchetti di versione per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">OpenSource Magento</a>.<br />- Aggiungere un argomento dei pacchetti di versione per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B per Commerce</a>.</li>
+</ul>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>È stato aggiornato il <em>raccoglitore/magento</em> Documentazione di riferimento CLI per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">OpenSource Magento</a>.</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Pubblicato 2.4.7 GA <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">note sulla versione</a>.</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35b7caafbef5ced52ef6e4907e0634dfb2a61e4f">35b7ca</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Aggiunge note sulla versione per le versioni di sicurezza di Adobe Commerce di aprile 2024 (2.4.6-p5, 2.4.5-p7, 2.4.4-p8). Consulta <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Note sulla versione di Adobe Commerce e Magento Open Source</a></p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7acab1d8d3f7b11cc1387b5558521f282ba0873f">7acab1</a> (commit)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 24 marzo 2024
 
@@ -71,52 +143,6 @@ Scopri la nuova documentazione e gli aggiornamenti significativi della documenta
 </td>
       <td>principale-aggiornamento</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/acacc285f8b977b33bb27af76c971bc4015a2b45">acacc2</a> (commit)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 14 febbraio 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Sorgente</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Sono state aggiunte le best practice per <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">aggiornamento di MariaDB</a> 10.5.1 e versioni successive.</p>
-</td>
-      <td>principale-aggiornamento</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 13 febbraio 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Sorgente</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Sono state aggiunte le patch di sicurezza di febbraio 2024 alla <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">requisiti di sistema</a>.</p>
-</td>
-      <td>principale-aggiornamento</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/068eed591b461ba6c91b0e3d517dc712215c6b33">068eed</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Aggiunto <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">note sulla versione</a> per le patch di sicurezza di febbraio 2024 (2.4.4-p7, 2.4.5-p6 e 2.4.6-p4).</p>
-</td>
-      <td>principale-aggiornamento</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e5644951114daa5d0841b7fdd32ce37b9803118">8e5644</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
