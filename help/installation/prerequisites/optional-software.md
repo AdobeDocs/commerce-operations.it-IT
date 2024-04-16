@@ -1,10 +1,10 @@
 ---
 title: Software opzionale
-description: Ulteriori informazioni sul software opzionale che è possibile installare per supportare le installazioni locali di Adobe Commerce e Magento Open Source.
+description: Ulteriori informazioni sui software opzionali che è possibile installare per supportare le installazioni locali di Adobe Commerce.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Per installare e configurare NTP:
    yum search ntp
    ```
 
-1. Seleziona un pacchetto da installare. Ad esempio, `ntp.x86_64`.
+1. Seleziona un pacchetto da installare. Ad esempio: `ntp.x86_64`.
 
 1. Installa il pacchetto.
 

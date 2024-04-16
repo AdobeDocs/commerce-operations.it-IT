@@ -1,18 +1,18 @@
 ---
 title: Best practice
-description: Utilizza le best practice consigliate dagli Adobi per gestire il processo di aggiornamento per i progetti Adobe Commerce e di Magento Open Source.
+description: Utilizza le best practice consigliate dagli Adobi per gestire il processo di aggiornamento per i progetti Adobe Commerce.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
 
 # Best practice per l&#39;aggiornamento
 
-In questo argomento sono elencate le azioni da intraprendere per gestire la complessità dell&#39;aggiornamento dei progetti Adobe Commerce e di Magento Open Source. Il tuo team deve pensare agli aggiornamenti dal momento in cui inizia lo sviluppo del progetto e continuare attraverso ogni versione. Seguendo queste best practice, il processo di aggiornamento sarà molto più semplice, rapido e conveniente.
+In questo argomento sono elencate le azioni da intraprendere per gestire la complessità dell’aggiornamento dei progetti Adobe Commerce. Il tuo team deve pensare agli aggiornamenti dal momento in cui inizia lo sviluppo del progetto e continuare attraverso ogni versione. Seguendo queste best practice, il processo di aggiornamento sarà molto più semplice, rapido e conveniente.
 
 >[!TIP]
 >

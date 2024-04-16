@@ -1,17 +1,17 @@
 ---
 title: Architettura di riferimento
-description: Esamina i diagrammi dell’architettura di riferimento consigliata per le distribuzioni di Adobe Commerce e di Magento Open Source.
+description: Esamina i diagrammi dell’architettura di riferimento consigliata per le implementazioni di Adobe Commerce.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
 
 # Architettura di riferimento
 
-In questo argomento viene descritta una configurazione generica consigliata per le istanze di Adobe Commerce e di Magento Open Source che utilizzano server semplici ospitati fisicamente in un centro dati (non virtualizzato) in cui le risorse non vengono condivise con altri utenti. Il provider di hosting, soprattutto se è specializzato nell’hosting ad alte prestazioni di Commerce, potrebbe consigliare una configurazione diversa che sia ugualmente o più efficace per i tuoi requisiti.
+Questo argomento descrive una configurazione consigliata generica per le istanze di Adobe Commerce che utilizzano server semplici ospitati fisicamente in un centro dati (non virtualizzato) in cui le risorse non vengono condivise con altri utenti. Il provider di hosting, soprattutto se è specializzato nell&#39;hosting ad alte prestazioni di Commerce, potrebbe consigliare una configurazione diversa che sia ugualmente o più efficace per le tue esigenze.
 
 Per Adobe Commerce sugli ambienti dell’infrastruttura cloud, consulta [Architettura iniziale](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
@@ -27,7 +27,7 @@ Il colore di ciascun elemento nel diagramma indica se l’elemento fa parte di M
 
 ![Diagramma dell’architettura di riferimento di Commerce](../assets/performance/images/ref-architecture-2.3.png)
 
-Le sezioni seguenti forniscono consigli e considerazioni per ogni sezione del diagramma Commerce Reference Architecture.
+Nelle sezioni seguenti vengono forniti consigli e considerazioni per ogni sezione del diagramma Commerce Reference Architecture.
 
 ### [!DNL Varnish]
 

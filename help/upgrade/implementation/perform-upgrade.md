@@ -2,9 +2,9 @@
 title: Eseguire un aggiornamento
 description: Per aggiornare le distribuzioni locali di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Le istruzioni seguenti spiegano come eseguire l’aggiornamento utilizzando Gest
 
 >[!WARNING]
 >
->La procedura per l’aggiornamento di Adobe Commerce e Magento Open Source è stata modificata. È necessario installare una nuova versione di `magento/composer-root-update-plugin` pacchetto (vedere [prerequisiti](../prepare/prerequisites.md)). Inoltre, i comandi per l&#39;aggiornamento sono stati modificati da `composer require magento/<package_name>` a `composer require-commerce magento/<package_name>`.
+>La procedura per l’aggiornamento di Adobe Commerce è stata modificata. È necessario installare una nuova versione di `magento/composer-root-update-plugin` pacchetto (vedere [prerequisiti](../prepare/prerequisites.md)). Inoltre, i comandi per l&#39;aggiornamento sono stati modificati da `composer require magento/<package_name>` a `composer require-commerce magento/<package_name>`.
 
 ## Prima di iniziare
 
@@ -116,7 +116,7 @@ Le istruzioni seguenti spiegano come eseguire l’aggiornamento utilizzando Gest
 
    - `--interactive-root-conflicts` —(Facoltativo) Consente di visualizzare e aggiornare in modo interattivo tutti i valori obsoleti delle versioni precedenti o qualsiasi valore personalizzato che non corrisponde alla versione a cui si sta eseguendo l&#39;aggiornamento.
 
-   - `--force-root-updates` —(Facoltativo) Sostituisce tutti i valori personalizzati in conflitto con i valori Commerce previsti.
+   - `--force-root-updates` —(Facoltativo) Esegue l&#39;override di tutti i valori personalizzati in conflitto con i valori Commerce previsti.
 
    - `--help` —(Facoltativo) Fornisce dettagli sull&#39;utilizzo del plug-in.
 

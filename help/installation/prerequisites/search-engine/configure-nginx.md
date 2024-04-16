@@ -1,11 +1,11 @@
 ---
 title: Configurare Nginx per il motore di ricerca
-description: Segui questi passaggi per configurare un motore di ricerca con il server web Nginx per le installazioni on-premise di Adobe Commerce e Magento Open Source.
+description: Segui questi passaggi per configurare un motore di ricerca con il server web Nginx per le installazioni locali di Adobe Commerce.
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Per creare una password:
    >
    >Per motivi di sicurezza, `<filename>` deve essere nascosto; ovvero deve iniziare con un punto.
 
-1. *(Facoltativo).* Per aggiungere un altro utente al file della password, immettere lo stesso comando senza `-c` (crea) opzione:
+1. *(Facoltativo)* Per aggiungere un altro utente al file della password, immettere lo stesso comando senza `-c` (crea) opzione:
 
    ```bash
    htpasswd /etc/nginx/passwd/.<filename> <username>

@@ -3,22 +3,22 @@ title: Cancellazione della cache con più istanze di vernice
 description: Scopri come funziona la cancellazione della cache con più istanze di Vernice.
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '176'
 ht-degree: 1%
 
 ---
 
 # Cancellazione della cache di più istanze di vernice
 
-Adobe Commerce e Magento Open Source supportano più istanze di vernice pronte all’uso.
+Adobe Commerce supporta più istanze di vernice pronte all’uso.
 
 Questo argomento illustra le nozioni di base sulla configurazione di più istanze di Vernice con Commerce.
 
 ## Configurazione per eliminare più istanze di vernice
 
-Commerce elimina gli host di vernice dopo aver configurato gli host di vernice utilizzando [`magento setup:config:set`](../../installation/tutorials/deployment.md) comando.
+Commerce elimina gli host Vernice dopo aver configurato gli host Vernice utilizzando [`magento setup:config:set`](../../installation/tutorials/deployment.md) comando.
 
 Dovresti utilizzare il `--http-cache-hosts` per specificare un elenco separato da virgole di host e porte di ascolto di Vernice. (Non separare gli host con uno spazio).
 

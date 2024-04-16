@@ -1,20 +1,20 @@
 ---
-title: Proteggere il sito e l’infrastruttura Commerce
+title: Proteggere il sito e l'infrastruttura Commerce
 description: Mantenere la sicurezza implementando le best practice per la sicurezza durante la configurazione e l’aggiornamento delle installazioni di Adobe Commerce.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: cbfd19efd9f489fefa16d93cbd8116eefb57a900
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2004'
 ht-degree: 0%
 
 ---
 
-# Proteggere il sito e l’infrastruttura Commerce
+# Proteggere il sito e l&#39;infrastruttura Commerce
 
 La creazione e la manutenzione di un ambiente sicuro per i progetti Adobe Commerce implementati nell’infrastruttura cloud è una responsabilità condivisa tra i clienti Adobe Commerce, i partner delle soluzioni e gli Adobi. L’obiettivo di questa guida è quello di fornire best practice per il lato del cliente nell’equazione.
 
-Anche se non è possibile eliminare tutti i rischi per la sicurezza, l’applicazione di queste best practice rafforza la postura di sicurezza delle installazioni Commerce. Un sito e un&#39;infrastruttura sicuri rendono meno attraente il target di attacchi dannosi, garantiscono la sicurezza della soluzione e delle informazioni riservate dei clienti e contribuiscono a ridurre al minimo gli incidenti relativi alla sicurezza che possono causare interruzioni del sito e costose indagini.
+Anche se non è possibile eliminare tutti i rischi per la sicurezza, l&#39;applicazione di queste best practice rafforza la postura di sicurezza delle installazioni Commerce. Un sito e un&#39;infrastruttura sicuri rendono meno attraente il target di attacchi dannosi, garantiscono la sicurezza della soluzione e delle informazioni riservate dei clienti e contribuiscono a ridurre al minimo gli incidenti relativi alla sicurezza che possono causare interruzioni del sito e costose indagini.
 
 >[!NOTE]
 >
@@ -55,11 +55,11 @@ Mantieni il codice aggiornato da [aggiornamento del progetto Commerce all’ulti
 
 Utilizzare [gestione della configurazione](../../../configuration/cli/set-configuration-values.md) per bloccare i valori di configurazione critici.
 
-Il `lock config` e `lock env` I comandi CLI configurano le variabili di ambiente per impedirne l’aggiornamento da parte dell’amministratore. Il comando scrive il valore in `<Commerce base dir>/app/etc/env.php` file. (Per i progetti di infrastruttura cloud in Commerce, consulta [Gestione configurazione store](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).)
+Il `lock config` e `lock env` I comandi CLI configurano le variabili di ambiente per impedirne l’aggiornamento da parte dell’amministratore. Il comando scrive il valore in `<Commerce base dir>/app/etc/env.php` file. (Per i progetti Commerce su infrastrutture cloud, consulta [Gestione configurazione store](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).)
 
 ![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Eseguire scansioni di sicurezza**
 
-Utilizza il [Servizio Commerce Security Scan](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) monitorare tutti i siti Adobe Commerce e di Magento Open Source per individuare rischi noti per la sicurezza e malware e registrarsi per ricevere aggiornamenti delle patch e notifiche di sicurezza.
+Utilizza il [Servizio Commerce Security Scan](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) monitorare tutti i siti Adobe Commerce per rilevare rischi noti per la sicurezza e malware e registrarsi per ricevere aggiornamenti delle patch e notifiche di sicurezza.
 
 ## Garantire la sicurezza delle estensioni e del codice personalizzato
 
@@ -73,7 +73,7 @@ Quando estendi Adobe Commerce aggiungendo estensioni di terze parti da Adobe Com
 
 - Ridurre l&#39;esposizione ai rischi limitando il numero di estensioni e fornitori.
 
-- Se possibile, controlla il codice dell’estensione per sicurezza prima di integrarlo con l’applicazione Commerce.
+- Se possibile, controlla il codice dell’estensione per sicurezza prima di eseguire l’integrazione con l’applicazione Commerce.
 
 - Assicurati che gli sviluppatori di estensioni PHP seguano le linee guida per lo sviluppo, i processi e le best practice per la sicurezza di Adobe Commerce. In particolare, gli sviluppatori devono evitare di utilizzare le funzionalità PHP che possono portare all&#39;esecuzione di codice remoto o a una crittografia debole. Consulta [Sicurezza](https://developer.adobe.com/commerce/php/best-practices/security/) nel *Guida alle best practice per gli sviluppatori di estensioni*.
 
@@ -101,7 +101,7 @@ Per informazioni sulle versioni di Adobe Commerce disponibili, sui cicli di rila
 
 Se il sito Commerce è compromesso, è possibile controllare i danni e ripristinare rapidamente le normali operazioni aziendali sviluppando e implementando un piano completo di disaster recovery.
 
-Se un cliente richiede il ripristino di un’istanza Commerce a causa di un guasto irreparabile, Adobe può fornire al cliente i file di backup. Il cliente e l&#39;integratore di soluzioni, se applicabile, possono eseguire il ripristino.
+Se un cliente richiede il ripristino di un’istanza di Commerce a causa di un guasto irreparabile, Adobe può fornire al cliente i file di backup. Il cliente e l&#39;integratore di soluzioni, se applicabile, possono eseguire il ripristino.
 
 Come parte di un piano di disaster recovery, Adobe consiglia vivamente ai clienti [esportare la configurazione dell’applicazione Adobe Commerce](../../../configuration/cli/export-configuration.md) per semplificare la redistribuzione se necessaria per la Business Continuity. Il motivo principale per esportare la configurazione nel file system è che la configurazione del sistema ha la precedenza sulla configurazione del database. In un file system di sola lettura, l&#39;applicazione deve essere ridistribuita per modificare le impostazioni di configurazione sensibili, fornendo un ulteriore livello di protezione.
 
@@ -137,7 +137,7 @@ Le installazioni di Adobe Commerce implementate nell’infrastruttura cloud poss
 
 ![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Configurare le impostazioni avanzate di protezione della password**- Impostare password sicure e modificarle almeno ogni 90 giorni, come consigliato dallo standard PCI Data Security nella sezione 8.2.4. Consulta [Configurare le impostazioni di sicurezza dell’amministratore](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
 
-![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Usa HTTPS**- Se il sito Commerce è stato implementato di recente, avvialo per intero utilizzando HTTPS. Non solo Google utilizza HTTPS come fattore di classificazione, ma molti utenti non considerano nemmeno l’acquisto da un sito, a meno che non sia protetto con HTTPS.
+![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Usa HTTPS**- Se il sito Commerce è stato appena implementato, avviate l&#39;intero sito utilizzando HTTPS. Non solo Google utilizza HTTPS come fattore di classificazione, ma molti utenti non considerano nemmeno l’acquisto da un sito, a meno che non sia protetto con HTTPS.
 
 ## Protect contro il malware
 
@@ -160,7 +160,7 @@ Quando si verificano determinate azioni, ad esempio l’invio di un modulo o la 
 
 ### Conoscere gli attacchi più comuni
 
-Di seguito è riportato un elenco di categorie comuni di attacchi che Adobe consiglia a tutti i clienti Commerce di essere a conoscenza e di adottare misure di protezione contro:
+Di seguito è riportato un elenco delle categorie comuni di attacchi che Adobe consiglia a tutti i clienti Commerce di essere a conoscenza e di adottare misure di protezione contro:
 
 - **Defacing del sito**- L&#39;autore di un attacco danneggia un sito Web modificandone l&#39;aspetto visivo o aggiungendo i propri messaggi. Sebbene l&#39;accesso al sito e agli account utente sia stato compromesso, le informazioni sui pagamenti rimangono spesso protette.
 
@@ -176,18 +176,18 @@ Di seguito è riportato un elenco di categorie comuni di attacchi che Adobe cons
 
 Gli attacchi di brute force password indovinare possono causare l’accesso non autorizzato dell’amministratore. Protect il tuo sito da questi attacchi seguendo queste best practice:
 
-- Identifica e protegge tutti i punti in cui è possibile accedere all’installazione di Commerce dal mondo esterno.
+- Identificare e proteggere tutti i punti in cui è possibile accedere all&#39;installazione di Commerce dall&#39;esterno.
 
   Per proteggere l’accesso all’amministratore, che in genere richiede la massima protezione, segui l’Adobe di [raccomandazioni prioritarie](#priority-recommendations) durante la configurazione del progetto Commerce.
 
-- Controlla l’accesso al sito Commerce configurando un elenco di controllo degli accessi che consenta l’accesso solo agli utenti provenienti da un indirizzo IP o una rete specifici.
+- Controllare l&#39;accesso al sito Commerce impostando un elenco di controllo di accesso che consenta l&#39;accesso solo agli utenti provenienti da un indirizzo IP o una rete specifici.
 
   Puoi utilizzare un ACL Fastly Edge con uno snippet di codice VCL personalizzato per filtrare le richieste in ingresso e consentire l’accesso per indirizzo IP. Consulta [VCL personalizzato per consentire le richieste](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
 
 
   >[!TIP]
   >
-  >Se utilizzi una forza lavoro remota, accertati che gli indirizzi IP dei dipendenti remoti siano inclusi nell’elenco degli indirizzi con l’autorizzazione per accedere al sito Commerce.
+  >Se si utilizza una forza lavoro remota, assicurarsi che gli indirizzi IP dei dipendenti remoti siano inclusi nell&#39;elenco degli indirizzi con l&#39;autorizzazione per accedere al sito Commerce.
 
 ### Impedire gli exploit di clickjacking
 

@@ -1,11 +1,11 @@
 ---
 user-guide-title: Guida all’installazione
-user-guide-description: Scopri come installare Adobe Commerce e Magento Open Source per le distribuzioni on-premise.
+user-guide-description: Scopri come installare Adobe Commerce per le distribuzioni on-premise.
 feature: Install
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 3%
+source-wordcount: '169'
+ht-degree: 2%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 3%
       - [Scarica pacchetti Compositore](sample-data/composer-packages.md)
       - [Clona archivi Git](sample-data/git-repositories.md)
       - [Rimuovere o aggiornare i moduli](sample-data/remove-or-update.md)
-- Tutorial {#tutorials}
+- Tutorials {#tutorials}
    - [Backup e rollback del file system, dei supporti e del database](tutorials/backup.md)
    - [Controllare lo stato del database](tutorials/database-status.md)
    - [Configurare il comportamento del consumatore dei messaggi](tutorials/message-consumers.md)

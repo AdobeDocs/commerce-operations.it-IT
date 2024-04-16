@@ -1,10 +1,10 @@
 ---
 title: Installazione on-premise avanzata
-description: Scopri gli scenari di installazione avanzata per Adobe Commerce o Magento Open Source sull’infrastruttura di tua proprietà.
+description: Scopri gli scenari di installazione avanzata per Adobe Commerce sull’infrastruttura di tua proprietà.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2383'
+source-wordcount: '2375'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Interfaccia della riga di comando (CLI)
 
-Adobe Commerce e Magento Open Source dispongono di un&#39;unica interfaccia della riga di comando per le attività di installazione e configurazione: `<magento_root>/bin/magento`. L’interfaccia esegue più attività, tra cui:
+Adobe Commerce dispone di un’unica interfaccia della riga di comando per le attività di installazione e configurazione: `<magento_root>/bin/magento`. L’interfaccia esegue più attività, tra cui:
 
 * Installazione (e attività correlate, come la creazione o l’aggiornamento dello schema del database e la creazione della configurazione di distribuzione).
 * Cancellazione della cache.

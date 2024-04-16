@@ -3,13 +3,13 @@ title: Best practice per la gestione del catalogo
 description: Scopri i consigli per la configurazione dei limiti del carrello e degli attributi del prodotto, l’impaginazione degli elenchi, le opzioni, le promozioni e le varianti.
 role: Developer
 feature: Best Practices, Catalog Management
-source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
+exl-id: 9a672017-9122-4841-a67b-a183224b67dc
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
-
 
 # Best practice per la gestione del catalogo
 
@@ -25,7 +25,7 @@ Le best practice per la gestione dei cataloghi qui descritte riguardano una seri
 
 ## Limiti del carrello
 
-Per ottenere prestazioni ottimali, utilizza le seguenti linee guida per gestire i limiti del carrello per Adobe Commerce e Magento Open Source.
+Per ottenere prestazioni ottimali, utilizza le seguenti linee guida per gestire i limiti del carrello per Adobe Commerce.
 
 ### Prodotti e versioni interessati
 
@@ -262,4 +262,3 @@ Avere un numero di regole di prezzo del carrello superiore a quello massimo cons
 - È stato aumentato il tempo necessario per caricare ed eseguire il rendering del minicart.
 - È stato aumentato il tempo per il rendering della pagina del carrello.
 - È stato aumentato il tempo di rendering del **Totali** nella pagina Pagamento.
-

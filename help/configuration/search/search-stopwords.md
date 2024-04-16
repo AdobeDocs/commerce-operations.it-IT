@@ -3,9 +3,9 @@ title: Configurare i termini di ricerca
 description: Scopri come gestire le parole chiave per Adobe Commerce utilizzando i file CSV.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Per ulteriori informazioni sull&#39;utilizzo di parole non significative in Elas
 
 ## Configurare le parole d&#39;arresto
 
-Le parole d&#39;ordine si trovano nel `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory. Adobe Commerce e Magento Open Source vengono forniti con un file CSV contenente i termini per le impostazioni internazionali predefinite e un file aggiuntivo, `stopwords.csv`, che contiene i caratteri di interruzione per le impostazioni internazionali non rappresentate da un altro file CSV.
+Le parole d&#39;ordine si trovano nel `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory. Adobe Commerce viene fornito con un file CSV contenente i termini per le impostazioni internazionali predefinite e un file aggiuntivo, `stopwords.csv`, che contiene i caratteri di interruzione per le impostazioni internazionali non rappresentate da un altro file CSV.
 
 La durata predefinita per la cache dei file di parole non significative è di 15 minuti.
 

@@ -1,18 +1,18 @@
 ---
 title: AWS OpenSearch
-description: Segui questi passaggi per configurare il servizio web AWS OpenSearch per le installazioni locali di Adobe Commerce e Magento Open Source.
+description: Segui questi passaggi per configurare il servizio web AWS OpenSearch per le installazioni locali di Adobe Commerce.
 feature: Install, Search
 exl-id: 39ca7fd0-e21f-4f14-bda6-ff00a61a1a4d
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
 # AWS OpenSearch
 
-Adobe Commerce e Magento Open Source 2.4.5 supportano l’utilizzo di cluster del servizio Amazon OpenSearch. Questo servizio succede al servizio Amazon Elasticsearch. Questo argomento descrive come configurare Commerce per l’utilizzo di AWS OpenSearch e come migrare i dati da un’istanza di Elasticsearch locale o OpenSearch a un cluster AWS OpenSearch.
+Adobe Commerce 2.4.5 supporta l’utilizzo di cluster del servizio Amazon OpenSearch. Questo servizio succede al servizio Amazon Elasticsearch. In questo argomento viene descritto come configurare Commerce per l&#39;utilizzo di AWS OpenSearch e come migrare i dati da un&#39;istanza di Elasticsearch locale o OpenSearch a un cluster AWS OpenSearch.
 
 ## Creazione di un dominio del servizio AWS OpenSearch
 

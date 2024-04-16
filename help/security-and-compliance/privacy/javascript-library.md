@@ -1,10 +1,10 @@
 ---
 title: Libreria JavaScript per la privacy
-description: Scopri come utilizzare gli strumenti personalizzati per accedere ed eliminare le informazioni personali dei clienti raccolte da Adobe Commerce e Magento Open Source.
+description: Scopri come utilizzare gli strumenti personalizzati per accedere ed eliminare le informazioni personali dei clienti raccolte da Adobe Commerce.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Libreria JavaScript per la privacy
 
-La libreria JavaScript per la privacy è un insieme di strumenti che facilitano la creazione di un processo per accedere ed eliminare i dati privati raccolti da Adobe Commerce e Magento Open Source.
+La libreria JavaScript per la privacy è un insieme di strumenti che facilitano la creazione di un processo per accedere ed eliminare i dati privati raccolti da Adobe Commerce.
 
-I servizi di tracciamento dei dati commerciali possono memorizzare informazioni private applicabili alle normative sulla privacy come [Regolamento generale sulla protezione dei dati (RGPD)](gdpr.md) e [California Consumer Privacy Act (CCPA)](ccpa.md).
+I servizi di tracciamento dati di Commerce possono memorizzare informazioni private applicabili alle normative sulla privacy come [Regolamento generale sulla protezione dei dati (RGPD)](gdpr.md) e [California Consumer Privacy Act (CCPA)](ccpa.md).
 
-Questa libreria fornisce un set di funzioni per creare richieste di dati sulla privacy e raccogliere le loro risposte. Utilizza questa libreria per recuperare e rimuovere i dati memorizzati nel browser da Adobe Commerce e dai servizi di tracciamento dei dati di Magento Open Source.
+Questa libreria fornisce un set di funzioni per creare richieste di dati sulla privacy e raccogliere le loro risposte. Utilizza questa libreria per recuperare e rimuovere i dati memorizzati nel browser dai servizi di tracciamento dati di Adobe Commerce.
 
 >[!NOTE]
 >
->Se [Modalità di restrizione cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) è abilitato, Commerce non raccoglie dati comportamentali fino al consenso dell’acquirente. Se [!UICONTROL **Modalità di restrizione cookie**] è disabilitato, Commerce raccoglie i dati comportamentali per impostazione predefinita.
+>Se [Modalità di restrizione cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) è attivato, Commerce raccoglie i dati comportamentali solo con il consenso dell’acquirente. Se [!UICONTROL **Modalità di restrizione cookie**] è disabilitato, Commerce raccoglie i dati comportamentali per impostazione predefinita.
 
 ## Installazione
 

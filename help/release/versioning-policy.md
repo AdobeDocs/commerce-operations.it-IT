@@ -2,16 +2,16 @@
 title: Criterio di rilascio
 description: Scopri i diversi tipi di versioni di Adobe Commerce, tra cui versioni secondarie, patch di sicurezza, funzionalità, hotfix, patch singole e patch personalizzate.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 9a74f87e0da5a7f11cd0930c8265556d80e3d1de
+source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
 
 # Criteri di rilascio di Adobe Commerce
 
-Adobe Commerce e utilizzo del Magento Open Source [controllo delle versioni semantiche](https://semver.org/) a livello di singolo modulo (ad esempio `magento/framework 101.1.1`), ma non per il numero di versione marketing. Ad esempio:
+Adobe Commerce utilizza [controllo delle versioni semantiche](https://semver.org/) a livello di singolo modulo (ad esempio `magento/framework 101.1.1`), ma non per il numero di versione marketing. Ad esempio:
 
 - **Versione PRINCIPALE**—2
 - **Versione secondaria**—2,4

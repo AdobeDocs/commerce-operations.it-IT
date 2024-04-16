@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Le versioni di Adobe Commerce e di Magento Open Source possono contenere modifiche non compatibili con le versioni precedenti (BIC, back-incompatible changes). Per esaminare le modifiche non compatibili con le versioni precedenti, vedere [Riferimento BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). I principali problemi di incompatibilità con le versioni precedenti sono descritti in [Elementi di rilievo BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Non tutte le versioni introducono i principali BIC.
+>Le versioni di Adobe Commerce possono contenere modifiche non compatibili con le versioni precedenti (BIC, back-incompatible changes). Per esaminare le modifiche non compatibili con le versioni precedenti, vedere [Riferimento BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). I principali problemi di incompatibilità con le versioni precedenti sono descritti in [Elementi di rilievo BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Non tutte le versioni introducono i principali BIC.
 
 ## Avviso CVE {#cve-notice}
 

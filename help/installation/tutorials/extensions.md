@@ -2,20 +2,20 @@
 title: Installare un’estensione
 description: Per installare un’estensione Adobe Commerce o di Magento Open Source, segui la procedura riportata di seguito.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
 # Installare un’estensione
 
-Il codice che estende o personalizza il comportamento di Adobe Commerce e del Magento Open Source è denominato estensione. Facoltativamente, puoi creare un pacchetto e distribuire estensioni sul [Commerce Marketplace](https://marketplace.magento.com) o un altro sistema di distribuzione delle estensioni.
+Il codice che estende o personalizza il comportamento di Adobe Commerce è chiamato estensione. Facoltativamente, puoi creare un pacchetto e distribuire estensioni sul [Commerce Marketplace](https://marketplace.magento.com) o un altro sistema di distribuzione delle estensioni.
 
 Le estensioni includono:
 
-- Moduli (estendere le funzionalità di Adobe Commerce e Magento Open Source)
+- Moduli (estendere le funzionalità di Adobe Commerce)
 - Temi (cambia l’aspetto della vetrina e dell’amministratore)
 - Pacchetti di lingua (localizza la vetrina e Amministratore)
 

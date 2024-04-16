@@ -2,9 +2,9 @@
 title: Attiva o disattiva la modalità di manutenzione
 description: Segui questi passaggi per personalizzare ciò che i clienti vedono quando l’implementazione di Adobe Commerce o di Magento Open Source non è disponibile per la manutenzione.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 La guida seguente fa riferimento a una pagina della modalità di manutenzione standard. Se devi utilizzare una pagina di manutenzione personalizzata, consulta [Creare la pagina di manutenzione personalizzata](../../upgrade/troubleshooting/maintenance-mode-options.md) argomento.
 
-Adobe Commerce e utilizzo del Magento Open Source [modalità di manutenzione](../../configuration/bootstrap/application-modes.md#maintenance-mode) per disattivare l&#39;avvio automatico. La disattivazione dell&#39;avvio automatico è utile durante la manutenzione, l&#39;aggiornamento o la riconfigurazione del sito.
+Adobe Commerce utilizza [modalità di manutenzione](../../configuration/bootstrap/application-modes.md#maintenance-mode) per disattivare l&#39;avvio automatico. La disattivazione dell&#39;avvio automatico è utile durante la manutenzione, l&#39;aggiornamento o la riconfigurazione del sito.
 
 L’applicazione rileva la modalità di manutenzione come segue:
 

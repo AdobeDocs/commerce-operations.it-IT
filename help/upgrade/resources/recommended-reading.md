@@ -2,22 +2,22 @@
 title: Lettura consigliata per gli aggiornamenti
 description: Consulta la documentazione consigliata per pianificare l’aggiornamento di Adobe Commerce.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 83ee645269b4fb0b63bb11f6d2255ef7fa52bc4f
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 2%
+source-wordcount: '264'
+ht-degree: 4%
 
 ---
 
 # Lettura consigliata per la pianificazione dell&#39;aggiornamento
 
-Continua a conoscere gli aggiornamenti di Adobe Commerce e di Magento Open Source utilizzando le risorse presenti in questa pagina.
+Continua a conoscere gli aggiornamenti di Adobe Commerce utilizzando le risorse presenti in questa pagina.
 
 <table>
   <tbody>
     <tr>
       <td><strong>Note sulla versione e annunci</strong>
-        <p>Scopri gli ultimi sviluppi in Adobe Commerce e Magento Open Source, tra cui strategia di prodotto, sicurezza, correzioni di bug e problemi noti.</p>
+        <p>Scopri gli ultimi sviluppi in Adobe Commerce, tra cui strategia di prodotto, sicurezza, correzioni di bug e problemi noti.</p>
           <ul>
             <li><a href="https://blog.adobe.com/">Blog Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
@@ -28,7 +28,7 @@ Continua a conoscere gli aggiornamenti di Adobe Commerce e di Magento Open Sourc
           </ul>
         </td>
       <td><strong>Strumenti</strong>
-        <p>Sfoglia gli strumenti progettati per semplificare la ricerca e l'utilizzo di software Adobe Commerce e di Magento Open Source.</p>
+        <p>Sfoglia gli strumenti progettati per semplificare la ricerca e l’utilizzo del software Adobe Commerce.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">Plug-in Upgrade Compatibility Tool PhpStorm</a> (video)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Upgrade Compatibility Tool</a></li>
@@ -39,7 +39,7 @@ Continua a conoscere gli aggiornamenti di Adobe Commerce e di Magento Open Sourc
     </tr>
     <tr>
       <td><strong>Calendari e criteri</strong>
-        <p>Rivedi i dettagli relativi alle versioni e ai criteri di Adobe Commerce e di Magento Open Source.</p>
+        <p>Rivedi i dettagli sulle versioni e i criteri di Adobe Commerce.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Domande frequenti sulla fine del supporto del software Adobe Commerce</a></li>
             <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace criterio</a></li>
@@ -50,7 +50,7 @@ Continua a conoscere gli aggiornamenti di Adobe Commerce e di Magento Open Sourc
           </ul>
         </td>
       <td><strong>Funzioni e servizi indipendenti</strong>
-        <p>Esplora gli innovativi servizi Commerce disponibili come estensioni di Adobe Commerce e di Magento Open Source e dove ottenerli.</p>
+        <p>Esplora gli innovativi servizi Commerce disponibili come estensioni Adobe Commerce e dove ottenerli.</p>
           <ul>
             <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
             <li><a href="https://marketplace.magento.com/magento-live-search.html">Live Search</a></li>

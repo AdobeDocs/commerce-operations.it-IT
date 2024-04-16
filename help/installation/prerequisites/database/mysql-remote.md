@@ -1,10 +1,10 @@
 ---
 title: Configurare una connessione remota al database MySQL
-description: Per configurare una connessione al database remoto per le installazioni locali di Adobe Commerce e Magento Open Source, eseguire la procedura seguente.
+description: Per configurare una connessione a un database remoto per le installazioni locali di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 A volte può essere necessario ospitare il database su un server separato anziché eseguire il server di database e il server web sullo stesso computer.
 
-L&#39;Adobe ha fornito un modo per connettersi a un server MySQL su un computer diverso. A partire da Adobe Commerce e dal Magento Open Source 2.4.3, puoi anche configurare l’applicazione per l’utilizzo di un database Amazon Web Services (AWS) Aurora senza modifiche al codice.
+L&#39;Adobe ha fornito un modo per connettersi a un server MySQL su un computer diverso. A partire dalla versione 2.4.3 di Adobe Commerce, è anche possibile configurare l’applicazione per l’utilizzo di un database Amazon Web Services (AWS) Aurora senza modifiche al codice.
 
 Aurora è un server MySQL ad alte prestazioni e completamente conforme ospitato su AWS.
 
 ## Connessione a un database AWS Aurora
 
-L’utilizzo di Aurora come database è semplice come specificare il database nella normale configurazione di Adobe Commerce e configurazione del Magento Open Source, utilizzando il connettore di database predefinito.
+L’utilizzo di Aurora come database è semplice come specificare il database nella normale configurazione di configurazione di Adobe Commerce, utilizzando il connettore di database predefinito.
 
 Durante l’esecuzione `bin/magento setup:install`, utilizza le informazioni di Aurora in `db-` campi:
 

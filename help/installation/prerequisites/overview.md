@@ -1,10 +1,10 @@
 ---
 title: Prerequisiti per l'installazione locale
-description: Ulteriori informazioni sulle dipendenze software necessarie per le installazioni on-premise di Adobe Commerce e Magento Open Source.
+description: Ulteriori informazioni sulle dipendenze software necessarie per le installazioni locali di Adobe Commerce.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '328'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ CentOS: `httpd -v`
 
 Ubuntu: `apache2 -v`
 
-Adobe Commerce e il Magento Open Source supportano Apache versione 2.4 come indica il seguente risultato:
+Adobe Commerce supporta Apache versione 2.4 come indicato di seguito:
 
 ```terminal
 Server version: Apache/2.4.0 (Unix)

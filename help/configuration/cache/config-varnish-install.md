@@ -3,9 +3,9 @@ title: Installa vernice
 description: Consulta i consigli sull’installazione di Varnish.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ Apri un terminale e immetti il seguente comando per visualizzare la versione di 
 varnishd -V
 ```
 
-Assicurati che [Adobe Commerce e il Magento Open Source supportano](../../installation/system-requirements.md) la versione installata di Vernice prima di continuare. Se esegui una versione non supportata, devi passare a una versione supportata. Per ulteriori informazioni, consultare la documentazione di installazione di Vernice.
+Assicurati che [Adobe Commerce supporta](../../installation/system-requirements.md) la versione installata di Vernice prima di continuare. Se esegui una versione non supportata, devi passare a una versione supportata. Per ulteriori informazioni, consultare la documentazione di installazione di Vernice.

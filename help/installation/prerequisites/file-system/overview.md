@@ -1,10 +1,10 @@
 ---
 title: Proprietà e autorizzazioni dei file
-description: Scopri l’importanza delle autorizzazioni per il file system quando utilizzi le installazioni on-premise di Adobe Commerce e Magento Open Source.
+description: Scopri l’importanza delle autorizzazioni per il file system quando utilizzi le installazioni locali di Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Per rafforzare la sicurezza, in particolare in un ambiente di produzione su un s
 >
 >La sicurezza del file system è complessa e importante. È consigliabile consultare un amministratore di sistema o un amministratore di rete esperto prima di decidere il livello di autorizzazioni da impostare. Ti forniamo un meccanismo da utilizzare, ma la creazione di una strategia di autorizzazioni è responsabilità tua.
 
-Adobe Commerce e Magento Open Source utilizzano una maschera predefinita a tre bit: `002`. Sottrarre la maschera di default dai valori di default UNIX 666 per i file e 777 per le directory.
+Adobe Commerce utilizza una maschera predefinita a tre bit: `002`. Sottrarre la maschera di default dai valori di default UNIX 666 per i file e 777 per le directory.
 
 Ad esempio:
 
@@ -53,7 +53,7 @@ Per ulteriori informazioni sulla creazione di un’ `magento_umask` file, vedi [
 
 ## Autorizzazioni, proprietà e modalità di applicazione
 
-Quando utilizzi le diverse modalità di applicazione di Adobe Commerce e di Magento Open Source, consigliamo di utilizzare autorizzazioni e proprietà diverse:
+Quando utilizzi le diverse modalità dell’applicazione Adobe Commerce, consigliamo di utilizzare autorizzazioni e proprietà diverse:
 
 - Predefinito
 - Sviluppatore

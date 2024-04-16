@@ -1,11 +1,11 @@
 ---
 title: Usa Redis per la cache predefinita
-description: Scopri come configurare Redis come cache predefinita per Adobe Commerce e Magento Open Source.
+description: Scopri come configurare Redis come cache predefinita per Adobe Commerce.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1069'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 ## Configurare il caching delle pagine Redis
 
-Per configurare il caching delle pagine Redis in Commerce, esegui `setup:config:set` con parametri aggiuntivi.
+Per configurare il caching delle pagine Redis su Commerce, esegui il comando `setup:config:set` con parametri aggiuntivi.
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
@@ -104,7 +104,7 @@ Come risultato dei due comandi di esempio, Commerce aggiunge righe simili alle s
 
 ## Utilizzo di AWS ElastiCache con l’istanza EC2
 
-A partire dalla versione 2.4.3 di Commerce, le istanze in hosting su Amazon EC2 possono utilizzare un’AWS ElastiCache invece di un’istanza Redis locale.
+A partire dalla versione 2.4.3 di Commerce, le istanze in hosting su Amazon EC2 possono utilizzare un AWS ElastiCache al posto di un’istanza Redis locale.
 
 >[!WARNING]
 >
@@ -132,9 +132,9 @@ Dopo [configurazione di un cluster Redis in AWS](https://aws.amazon.com/getting-
      redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
      ```
 
-### Configurare Commerce per l’utilizzo del cluster
+### Configurare Commerce per l&#39;utilizzo del cluster
 
-Commerce supporta diversi tipi di configurazioni di caching. In genere, le configurazioni di caching sono suddivise tra front-end e back-end. Il caching front-end è classificato come `default`, utilizzato per qualsiasi tipo di cache. Puoi personalizzare o suddividere in cache di livello inferiore per ottenere prestazioni migliori. Una comune configurazione Redis separa la cache predefinita e la cache delle pagine nel proprio Redis Database (RDB).
+Commerce supporta più tipi di configurazioni di caching. In genere, le configurazioni di caching sono suddivise tra front-end e back-end. Il caching front-end è classificato come `default`, utilizzato per qualsiasi tipo di cache. Puoi personalizzare o suddividere in cache di livello inferiore per ottenere prestazioni migliori. Una comune configurazione Redis separa la cache predefinita e la cache delle pagine nel proprio Redis Database (RDB).
 
 Esegui `setup` comandi per specificare gli endpoint Redis.
 
@@ -150,7 +150,7 @@ Per configurare Commerce per il caching delle pagine Redis:
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=<ElastiCache Primary Endpoint host> --page-cache-redis-port=<ElastiCache Primary Endpoint port> --page-cache-redis-db=1
 ```
 
-Per configurare Commerce per l’utilizzo di Redis per l’archiviazione delle sessioni:
+Per configurare Commerce per l&#39;utilizzo di Redis per l&#39;archiviazione delle sessioni:
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=<ElastiCache Primary Endpoint host> --session-save-redis-port=<ElastiCache Primary Endpoint port> --session-save-redis-log-level=4 --session-save-redis-db=2
@@ -190,7 +190,7 @@ A partire dalla versione 2.3.5 di Commerce, si consiglia di utilizzare l’imple
 
 ## Funzione di precaricamento Redis
 
-Poiché Commerce memorizza i dati di configurazione nella cache Redis, possiamo precaricare i dati riutilizzati tra le pagine. Per trovare le chiavi da precaricare, analizza i dati trasferiti da Redis a Commerce. Consigliamo di precaricare i dati caricati su ogni pagina, ad esempio `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
+Poiché Commerce memorizza i dati di configurazione nella cache Redis, possiamo precaricare i dati riutilizzati tra le pagine. Per trovare le chiavi che devono essere precaricate, analizza i dati trasferiti da Redis a Commerce. Consigliamo di precaricare i dati caricati su ogni pagina, ad esempio `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
 
 Redis utilizza `pipeline` per comporre le richieste di caricamento. Le chiavi devono includere il prefisso del database; ad esempio, se il prefisso del database è `061_`, il tasto di precaricamento si presenta come: `061_SYSTEM_DEFAULT`
 
@@ -271,7 +271,7 @@ Poiché è un flag, non è possibile disattivarlo con un comando. È necessario 
 
 ## Verifica connessione Redis
 
-Per verificare che Redis e Commerce funzionino insieme, accedi al server che esegue Redis, apri un terminale e utilizza il comando di monitoraggio Redis o il comando ping.
+Per verificare che Redis e Commerce funzionino insieme, accedete al server che esegue Redis, aprite un terminale e utilizzate il comando di monitoraggio Redis o il comando ping.
 
 ### Comando Redis Monitor
 
@@ -316,4 +316,4 @@ Se entrambi i comandi sono riusciti, Redis viene configurato correttamente.
 
 ### Analisi dei dati compressi
 
-Per verificare i dati compressi di Session e Page Cache, [RESP.app](https://flathub.org/apps/details/app.resp.RESP) supporta la decompressione automatica della cache di sessione e pagina di Commerce 2 e visualizza i dati della sessione PHP in un formato leggibile.
+Per verificare i dati compressi di Session e Page Cache, [RESP.app](https://flathub.org/apps/details/app.resp.RESP) supporta la decompressione automatica della cache delle sessioni e delle pagine di Commerce 2 e visualizza i dati della sessione PHP in un formato leggibile.

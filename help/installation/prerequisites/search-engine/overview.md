@@ -1,18 +1,18 @@
 ---
 title: Prerequisiti per i motori di ricerca
-description: Segui questi passaggi per installare e configurare il software dei motori di ricerca supportato per le installazioni locali di Adobe Commerce e Magento Open Source.
+description: Segui questi passaggi per installare e configurare il software dei motori di ricerca supportato per le installazioni locali di Adobe Commerce.
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
 # Prerequisiti per i motori di ricerca
 
-A partire da Adobe Commerce e dal Magento Open Source 2.4, tutte le installazioni devono essere configurate per utilizzare [Elasticsearch](https://www.elastic.co) o [OpenSearch](https://opensearch.org/) come soluzione di ricerca nel catalogo.
+A partire da Adobe Commerce 2.4, tutte le installazioni devono essere configurate per utilizzare [Elasticsearch](https://www.elastic.co) o [OpenSearch](https://opensearch.org/) come soluzione di ricerca nel catalogo.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Le seguenti attività presuppongono che il sistema sia stato configurato in base
 
 Il diagramma precedente mostra:
 
-* L’applicazione Commerce e il motore di ricerca sono installati su host diversi.
+* L&#39;applicazione Commerce e il motore di ricerca sono installati su host diversi.
 
   L&#39;esecuzione su host separati richiede il funzionamento del proxy. Il clustering del motore di ricerca esula dall’ambito di questa guida, ma per ulteriori informazioni consulta [Documentazione sul clustering Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
@@ -53,7 +53,7 @@ Il diagramma precedente mostra:
 
 Le richieste di ricerca vengono elaborate come segue:
 
-1. Una richiesta di ricerca da parte di un utente viene ricevuta dal server web Commerce, che la inoltra al server del motore di ricerca.
+1. Una richiesta di ricerca da parte di un utente viene ricevuta dal server Web Commerce, che la inoltra al server del motore di ricerca.
 
    È possibile configurare il motore di ricerca per la connessione all&#39;host e alla porta del proxy. Consigliamo la porta SSL del server web (per impostazione predefinita, 443).
 

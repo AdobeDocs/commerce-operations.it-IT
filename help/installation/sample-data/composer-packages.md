@@ -1,11 +1,11 @@
 ---
 title: Scarica pacchetti del Compositore dati di esempio
-description: Segui questi passaggi per installare i dati di esempio di Adobe Commerce e Magento Open Source utilizzando il Composer PHP Package Manager.
+description: Segui questi passaggi per installare i dati di esempio di Adobe Commerce utilizzando il Compositore PHP Package Manager.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Questa sezione illustra come installare dati di esempio se si è ottenuto il sof
 
 * Utilizzato `composer create-project`
 
-Puoi utilizzare questo metodo per ottenere dati di esempio sia per Adobe Commerce che per Magento Open Source, ma devi utilizzare lo stesso [chiavi di autenticazione](../prerequisites/authentication-keys.md) utilizzato per installare l’applicazione.
+Puoi utilizzare questo metodo per ottenere dati di esempio per Adobe Commerce, ma devi utilizzare lo stesso [chiavi di autenticazione](../prerequisites/authentication-keys.md) utilizzato per installare l’applicazione.
 
 >[!NOTE]
 >

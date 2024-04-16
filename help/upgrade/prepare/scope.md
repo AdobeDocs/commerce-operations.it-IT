@@ -2,9 +2,9 @@
 title: Comprendere l’ambito dell’aggiornamento
 description: Scopri le modifiche non compatibili con le versioni precedenti di una versione che potrebbero influire sui moduli personalizzati di Adobe Commerce o di Magento Open Source o sulle estensioni di terze parti.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Rivedi [note sulla versione](https://devdocs.magento.com/guides/v2.4/release-not
 
 ## Modifiche non compatibili con le versioni precedenti
 
-Le versioni di Adobe Commerce e di Magento Open Source possono contenere modifiche non compatibili con le versioni precedenti. Consulta la documentazione sulle modifiche non compatibili con le versioni precedenti. Vedi quanto segue:
+Le versioni di Adobe Commerce possono contenere modifiche non compatibili con le versioni precedenti. Consulta la documentazione sulle modifiche non compatibili con le versioni precedenti. Vedi quanto segue:
 
 - **[Elementi di rilievo della modifica principale](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**- Modifiche che hanno un impatto notevole e richiedono una spiegazione dettagliata e istruzioni speciali per garantire che i moduli di terze parti continuino a funzionare.
 - **[Riferimento modifica minore](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)**- Documentazione di riferimento generata dalla base di codice che descrive modifiche minori a classi, appartenenza API, database, iniezione di dipendenza, interfacce, layout, sistema e XSD.

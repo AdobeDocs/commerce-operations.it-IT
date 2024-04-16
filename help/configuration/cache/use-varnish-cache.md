@@ -3,24 +3,24 @@ title: Cancellazione della cache con vernice
 description: Scopri come funziona il clearing della cache con Varnish e come utilizzarlo come acceleratore di web-caching per l’applicazione Adobe Commerce.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
 
 # Cancellazione della cache con vernice
 
-Questo argomento illustra le nozioni di base sull’utilizzo di Varnish come acceleratore di web-caching per Adobe Commerce e Magento Open Source.
+Questo argomento illustra le nozioni di base sull’utilizzo di Varnish come acceleratore di web-caching per Adobe Commerce.
 
 ## Spurgatura vernice
 
 Secondo [Documentazione di vernice](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *svuota* è ciò che accade quando si estrae un oggetto dalla cache e lo si elimina insieme alle relative varianti.&quot; Un&#39;eliminazione di vernice è simile a un comando di pulitura della cache (o a un clic **Svuota cache Magento** in Admin).
 
-Infatti, quando pulisci, svuota o aggiorni la cache di Commerce, anche le purghe di vernice si spolverano.
+In effetti, quando si pulisce, svuota o aggiorna la cache di Commerce, anche la vernice si svuota.
 
-Dopo aver installato e configurato la vernice per funzionare con Commerce, le seguenti azioni possono causare un’eliminazione della vernice:
+Dopo aver installato e configurato Vernice per funzionare con Commerce, le seguenti azioni possono causare un&#39;eliminazione di vernice:
 
 - Gestione di un sito Web.
 
@@ -40,9 +40,9 @@ Dopo aver installato e configurato la vernice per funzionare con Commerce, le se
 
   È necessario aggiornare la cache ed eliminare periodicamente tutto ciò che si trova nel `generated/code` e `generated/metadata` directory. Per informazioni sull’aggiornamento della cache, consulta la sezione successiva.
 
-## Configurare Commerce per eliminare la vernice
+## Configura Commerce per eliminare la vernice
 
-Commerce elimina gli host di vernice dopo aver configurato gli host di vernice utilizzando [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) comando.
+Commerce elimina gli host Vernice dopo aver configurato gli host Vernice utilizzando [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) comando.
 
 Puoi utilizzare il parametro opzionale `--http-cache-hosts` per specificare un elenco separato da virgole di host e porte di ascolto di Vernice. Configurare tutti gli host Vernice, indipendentemente dal fatto che ne siano presenti uno o più. (Non separare gli host con uno spazio).
 

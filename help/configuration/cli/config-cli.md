@@ -1,19 +1,19 @@
 ---
 title: Strumento da riga di comando
-description: Utilizza lo strumento da riga di comando di Commerce per eseguire le attività di installazione e configurazione.
+description: Utilizzare lo strumento da riga di comando di Commerce per eseguire attività di installazione e configurazione.
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
 
 # Strumento da riga di comando
 
-Commerce dispone di un&#39;unica interfaccia della riga di comando (CLI):`<magento_root>/bin/magento`: esegue attività di installazione e configurazione, tra cui:
+Commerce dispone di una sola interfaccia CLI (Command Line Interface):`<magento_root>/bin/magento`: esegue attività di installazione e configurazione, tra cui:
 
-- Installazione di Commerce (e delle attività correlate, come l’aggiornamento dello schema del database, creare una configurazione di distribuzione)
+- Installazione di Commerce (e delle attività correlate, come l’aggiornamento dello schema del database, la creazione di una configurazione di distribuzione)
 - Cancellazione della cache
 - Gestione degli indici, inclusa la reindicizzazione
 - Creazione di dizionari di traduzione e pacchetti di traduzione
@@ -28,7 +28,7 @@ Ulteriori vantaggi includono:
 - La CLI è estensibile in modo che sviluppatori di terze parti possano collegarla. Questo ha il vantaggio aggiuntivo di eliminare la curva di apprendimento degli utenti.
 - I comandi per i moduli disattivati non vengono visualizzati.
 
-In questo argomento viene illustrata la configurazione di Adobe Commerce e del software di Magento Open Source utilizzando CLI. Per informazioni sull’installazione di Commerce, consulta [Flusso di installazione](../../installation/overview.md) nel _Guida all’installazione_.
+In questo argomento viene illustrata la configurazione del software Adobe Commerce mediante CLI. Per informazioni sull&#39;installazione di Commerce, vedere [Flusso di installazione](../../installation/overview.md) nel _Guida all’installazione_.
 
 ## Prerequisiti
 
@@ -36,7 +36,7 @@ Prima di iniziare a utilizzare CLI, verificare che:
 
 1. Il sistema soddisfa i requisiti descritti in [Requisiti di sistema](../../installation/system-requirements.md) nel _Guida all’installazione_.
 1. Hai completato tutte le attività preliminari descritte in [Prerequisiti](../../installation/prerequisites/overview.md) nel _Guida all’installazione_.
-1. Dopo aver effettuato l’accesso al server Commerce, passa a un utente che dispone delle autorizzazioni di scrittura per il file system Commerce. Consulta [passa al proprietario del file system](../../installation/prerequisites/file-system/overview.md) nel _Guida all’installazione_.
+1. Dopo aver effettuato l&#39;accesso al server Commerce, passare a un utente che dispone delle autorizzazioni di scrittura nel file system di Commerce. Consulta [passa al proprietario del file system](../../installation/prerequisites/file-system/overview.md) nel _Guida all’installazione_.
 
 ## Esecuzione dei comandi
 

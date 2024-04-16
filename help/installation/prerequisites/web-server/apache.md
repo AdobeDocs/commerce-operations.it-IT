@@ -1,10 +1,10 @@
 ---
 title: Apache
-description: Segui questi passaggi per installare e configurare il server web Apache per le installazioni locali di Adobe Commerce e Magento Open Source.
+description: Per installare e configurare il server web Apache per le installazioni locali di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ Adobe Commerce supporta Apache 2.4.x.
 
 Questo argomento illustra come abilitare Apache 2.4 riscrive e specificare un’impostazione per [file di configurazione distribuito, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-Adobe Commerce e Magento Open Source utilizzano le riscritture dei server e `.htaccess` per fornire istruzioni a livello di directory per Apache. Le seguenti istruzioni sono incluse anche in tutte le altre sezioni di questo argomento.
+Adobe Commerce utilizza le riscritture server e `.htaccess` per fornire istruzioni a livello di directory per Apache. Le seguenti istruzioni sono incluse anche in tutte le altre sezioni di questo argomento.
 
 Utilizza questa sezione per abilitare le riscritture di Apache 2.4 e specificare un’impostazione per [file di configurazione distribuito, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
-Adobe Commerce e Magento Open Source utilizzano le riscritture dei server e `.htaccess` per fornire istruzioni a livello di directory per Apache.
+Adobe Commerce utilizza le riscritture server e `.htaccess` per fornire istruzioni a livello di directory per Apache.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Adobe Commerce e Magento Open Source utilizzano le riscritture dei server e `.ht
 
 ## Moduli richiesti Apache
 
-Adobe Commerce e Magento Open Source richiedono l’installazione dei seguenti moduli Apache:
+Adobe Commerce richiede l’installazione dei seguenti moduli Apache:
 
 - [mod_deflate.c](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
 - [mod_expires.c](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
@@ -184,7 +184,7 @@ Per effettuare l’aggiornamento ad Apache 2.4:
 
 ## Installazione di Apache su CentOS
 
-Adobe Commerce e Magento Open Source richiedono la riscrittura del server Apache. È inoltre necessario specificare il tipo di direttive che è possibile utilizzare in `.htaccess`, utilizzato dall&#39;applicazione per specificare le regole di riscrittura.
+Adobe Commerce richiede la riscrittura del server Apache. È inoltre necessario specificare il tipo di direttive che è possibile utilizzare in `.htaccess`, utilizzato dall&#39;applicazione per specificare le regole di riscrittura.
 
 L’installazione e la configurazione di Apache sono fondamentalmente tre passaggi: installare il software, abilitare le riscritture e specificare `.htaccess` direttive.
 

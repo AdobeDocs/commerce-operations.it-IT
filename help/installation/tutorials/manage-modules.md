@@ -2,9 +2,9 @@
 title: Abilitare o disabilitare i moduli
 description: Per gestire i moduli Adobe Commerce o di Magento Open Source, segui la procedura riportata di seguito.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 6e87d68df97adf47b5a61e8b6683ac11f600806c
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ bin/magento cache:clean
 
 ## Informazioni sull&#39;attivazione e la disattivazione dei moduli
 
-Adobe Commerce e Magento Open Source consentono di abilitare o disabilitare i moduli attualmente disponibili, ovvero qualsiasi modulo fornito da Adobe o qualsiasi modulo di terze parti attualmente disponibile.
+Adobe Commerce consente di abilitare o disabilitare i moduli attualmente disponibili, ovvero qualsiasi modulo fornito da Adobe o qualsiasi modulo di terze parti attualmente disponibile.
 
 Alcuni moduli hanno dipendenze da altri moduli, nel qual caso potrebbe non essere possibile abilitare o disabilitare un modulo perché presenta dipendenze da altri moduli.
 
@@ -92,7 +92,7 @@ Esempi:
 
 * Il modulo A è in conflitto con il modulo B. È possibile disabilitare i moduli A e B, oppure disabilitare entrambi i moduli ma *non può* attivare il modulo A e il modulo B contemporaneamente.
 
-* Le dipendenze sono dichiarate nel `require` in Adobe Commerce e nel Magento Open Source `composer.json` per ciascun modulo. I conflitti vengono dichiarati nel `conflict` campo nei moduli `composer.json` file. Queste informazioni vengono utilizzate per creare un grafico delle dipendenze: `A->B` significa che il modulo A dipende dal modulo B.
+* Le dipendenze sono dichiarate nel `require` in Adobe Commerce `composer.json` per ciascun modulo. I conflitti vengono dichiarati nel `conflict` campo nei moduli `composer.json` file. Queste informazioni vengono utilizzate per creare un grafico delle dipendenze: `A->B` significa che il modulo A dipende dal modulo B.
 
 * A *catena di dipendenze* è il percorso da un modulo a un altro. Ad esempio, se il modulo A dipende dal modulo B e il modulo B dipende dal modulo C, la catena di dipendenze è `A->B->C`.
 

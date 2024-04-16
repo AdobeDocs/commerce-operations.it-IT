@@ -1,18 +1,18 @@
 ---
 title: Configurazione del motore di ricerca
-description: Configura un motore di ricerca per le distribuzioni locali di Adobe Commerce e Magento Open Source.
+description: Configura un motore di ricerca per le distribuzioni locali di Adobe Commerce.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
 
 # Configurazione del motore di ricerca
 
-Questa sezione descrive le impostazioni minime che è necessario scegliere per testare Elasticsearch o OpenSearch con distribuzioni locali di Adobe Commerce e Magento Open Source.
+Questa sezione descrive le impostazioni minime che è necessario scegliere per testare Elasticsearch o OpenSearch con implementazioni locali di Adobe Commerce.
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Per configurare il sistema per l&#39;utilizzo di Elasticsearch o OpenSearch:
    |--- |--- |
    | **[!UICONTROL Server Hostname]** | Immettere il nome host completo o l&#39;indirizzo IP del computer che esegue Elasticsearch o OpenSearch.<br>Adobe Commerce su infrastruttura cloud: ottieni questo valore dal tuo sistema di integrazione. |
    | **[!UICONTROL Server Port]** | Immettere la porta proxy del server Web. Il valore predefinito è 9200<br>Adobe Commerce su infrastruttura cloud: ottieni questo valore dal tuo sistema di integrazione. |
-   | **[!UICONTROL Index Prefix]** | Immetti il prefisso dell’indice del motore di ricerca. Se utilizzi una singola istanza per più installazioni di Commerce (ambienti di staging e produzione), devi specificare un prefisso univoco per ciascuna installazione. In caso contrario, è possibile utilizzare il prefisso predefinito magento2. |
+   | **[!UICONTROL Index Prefix]** | Immetti il prefisso dell’indice del motore di ricerca. Se si utilizza una singola istanza per più installazioni di Commerce (ambienti di staging e produzione), è necessario specificare un prefisso univoco per ogni installazione. In caso contrario, è possibile utilizzare il prefisso predefinito magento2. |
    | **[!UICONTROL Enable HTTP Auth]** | Clic **[!UICONTROL Yes]** solo se è stata abilitata l&#39;autenticazione per il server del motore di ricerca. In tal caso, fornisci un nome utente e una password nei campi forniti. |
    | **[!UICONTROL Server Timeout]** | Immettere il tempo di attesa (in secondi) durante il tentativo di stabilire una connessione al server Elasticsearch o OpenSearch. |
 
@@ -61,9 +61,9 @@ Per configurare il sistema per l&#39;utilizzo di Elasticsearch o OpenSearch:
 In tal caso, provare a effettuare le seguenti operazioni:
 
 - Verificare che il server del motore di ricerca sia in esecuzione.
-- Se il server si trova su un host diverso da Commerce, accedi al server Commerce ed esegui il ping dell’host del motore di ricerca. Risolvi i problemi di connettività di rete e verifica di nuovo la connessione.
+- Se il server si trova su un host diverso da Commerce, accedere al server Commerce ed eseguire il ping dell&#39;host del motore di ricerca. Risolvi i problemi di connettività di rete e verifica di nuovo la connessione.
 - Esaminare la finestra di comando in cui è stato avviato Elasticsearch o OpenSearch per individuare tracce ed eccezioni dello stack. È necessario risolverli prima di continuare. In particolare, assicurati di aver avviato il motore di ricerca come utente con `root` privilegi.
-- Assicurati che [Firewall UNIX e SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) sono entrambi disabilitati oppure imposta regole per consentire al motore di ricerca e a Commerce di comunicare tra loro.
+- Assicurati che [Firewall UNIX e SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) sono entrambi disattivati oppure imposta delle regole per consentire al motore di ricerca e a Commerce di comunicare tra loro.
 - Verifica il valore di **[!UICONTROL Server Hostname]** campo. Verificare che il server sia disponibile. È possibile provare l&#39;indirizzo IP del server.
 - Utilizza il `netstat -an | grep <listen-port>` per verificare che la porta specificata nella **[!UICONTROL Server Port]** non è utilizzato da un altro processo.
 
@@ -95,7 +95,7 @@ Per pulire la cache utilizzando la riga di comando: [`bin/magento cache:clean`](
 
 Per reindicizzare utilizzando la riga di comando:
 
-1. Accedi al server Commerce come, o passa a, il [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+1. Accedi al server Commerce come, o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 1. Immettete uno dei seguenti comandi:
 
    Immetti il seguente comando per reindicizzare solo l’indice di ricerca del catalogo:

@@ -2,16 +2,16 @@
 title: Panoramica sulla sicurezza dei contenuti
 description: Scopri come migliorare la posizione di sicurezza del tuo Adobe Commerce o store di Magento Open Source utilizzando un criterio per la sicurezza dei contenuti.
 exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
-source-git-commit: 8bb692518536f5e7403ed308328e6532c020a230
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 # Panoramica sulla sicurezza dei contenuti
 
-I criteri sulla sicurezza dei contenuti (Content Security Policy, CSP) possono fornire ulteriori livelli di difesa per le installazioni di Adobe Commerce e di Magento Open Source, contribuendo a rilevare e attenuare gli attacchi cross-site scripting (XSS) e i relativi attacchi di iniezione di dati. Questo comune vettore di attacco funziona inserendo contenuti dannosi che afferma erroneamente di provenire dal sito web. Una volta caricati ed eseguiti, i contenuti dannosi possono avviare il trasferimento non autorizzato dei dati.
+I criteri sulla sicurezza dei contenuti (Content Security Policy, CSP) possono fornire ulteriori livelli di difesa per le installazioni di Adobe Commerce, contribuendo a rilevare e attenuare gli attacchi cross-site scripting (XSS) e i relativi attacchi di iniezione di dati. Questo comune vettore di attacco funziona inserendo contenuti dannosi che afferma erroneamente di provenire dal sito web. Una volta caricati ed eseguiti, i contenuti dannosi possono avviare il trasferimento non autorizzato dei dati.
 
 I CSP forniscono un set di direttive standard che indica al browser quali risorse di contenuto possono essere considerate attendibili e quali devono essere bloccate. Utilizzando criteri accuratamente definiti, i CSP possono limitare il contenuto del browser in modo da consentire la visualizzazione solo delle risorse nella whitelist.
 

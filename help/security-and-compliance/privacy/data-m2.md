@@ -1,10 +1,10 @@
 ---
 title: Riferimento per le informazioni personali del cliente (versione 2.x)
-description: Scopri i diagrammi di flusso dei dati e le mappature delle entità del database per le informazioni personali dei clienti in Adobe Commerce e Magento Open Source 2.x.
+description: Scopri i diagrammi di flusso dei dati e le mappature delle entità del database per le informazioni personali dei clienti in Adobe Commerce 2.x.
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Questo è uno di una serie di argomenti per aiutare Adobe Commerce e gli sviluppatori e i commercianti di Magento Open Source a prepararsi per il rispetto delle normative sulla privacy. Rivolgiti al tuo consulente legale per determinare se e come la tua azienda debba conformarsi ad obblighi di legge.
+>Questo è uno di una serie di argomenti per aiutare i commercianti e gli sviluppatori di Adobe Commerce a prepararsi per il rispetto delle normative sulla privacy. Rivolgiti al tuo consulente legale per determinare se e come la tua azienda debba conformarsi ad obblighi di legge.
 
 Utilizza i seguenti diagrammi di flusso di dati e mappature di entità di database come riferimento durante lo sviluppo di programmi di conformità per le normative sulla privacy, ad esempio:
 
@@ -32,7 +32,7 @@ L&#39;utente può immettere le informazioni relative al cliente, all&#39;indiriz
 
 ### Punti di accesso ai dati front-end
 
-Adobe Commerce e il Magento Open Source caricano le informazioni sui clienti quando il cliente effettua l’accesso e visualizza diverse pagine o effettua l’estrazione.
+Adobe Commerce carica le informazioni del cliente quando il cliente effettua l’accesso e visualizza diverse pagine o effettua il check-out.
 
 ![Punti di accesso ai dati front-end](../../assets/security-compliance/frontend-data-access-points.svg)
 
@@ -44,17 +44,17 @@ Un esercente può inserire informazioni sul cliente, dati sull’indirizzo e dat
 
 ### Punti di accesso ai dati back-end
 
-Adobe Commerce e il Magento Open Source caricano le informazioni sui clienti quando un commerciante visualizza diversi tipi di griglie, fa clic su una griglia per visualizzare informazioni dettagliate ed esegue varie altre attività.
+Adobe Commerce carica le informazioni sul cliente quando un commerciante visualizza diversi tipi di griglie, fa clic su una griglia per visualizzare informazioni dettagliate ed esegue varie altre attività.
 
 ![Punti di accesso ai dati back-end](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Entità di database
 
-Adobe Commerce e Magento Open Source memorizzano principalmente le informazioni specifiche del cliente in tabelle relative a clienti, indirizzi, ordini, preventivi e pagamenti. Altre tabelle contengono riferimenti all’ID cliente.
+Adobe Commerce memorizza principalmente le informazioni specifiche del cliente in tabelle relative a clienti, indirizzi, ordini, preventivi e pagamenti. Altre tabelle contengono riferimenti all’ID cliente.
 
 ### Dati dei clienti
 
-Adobe Commerce e Magento Open Source possono essere configurati per memorizzare i seguenti attributi cliente:
+Adobe Commerce può essere configurato per memorizzare i seguenti attributi del cliente:
 
 - Data di nascita
 - E-mail
@@ -119,7 +119,7 @@ Le seguenti colonne nella `customer_grid_flat` la tabella contiene informazioni 
 
 ### Dati indirizzo
 
-Adobe Commerce e Magento Open Source memorizzano i seguenti attributi cliente:
+Adobe Commerce memorizza i seguenti attributi cliente:
 
 - Città
 - Azienda
@@ -295,7 +295,7 @@ Il `sales_order_payment` la tabella include le informazioni sulla carta di credi
 
 ### Dati invito
 
-Adobe Commerce e Magento Open Source possono essere configurati in modo che i clienti possano inviare inviti a vendite ed eventi privati.
+Adobe Commerce può essere configurato in modo che i clienti possano inviare inviti a vendite ed eventi privati.
 
 #### `magento_invitation` tabella
 

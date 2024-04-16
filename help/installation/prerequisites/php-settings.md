@@ -1,11 +1,11 @@
 ---
 title: Impostazioni PHP
-description: Segui questi passaggi per installare le estensioni PHP richieste e configurare le impostazioni PHP richieste per le installazioni on-premise di Adobe Commerce e Magento Open Source.
+description: Segui questi passaggi per installare le estensioni PHP richieste e configurare le impostazioni PHP richieste per le installazioni locali di Adobe Commerce.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 87e3109518fc06c655a3fc9446e2ecd648775da1
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Questo argomento illustra come impostare le opzioni PHP richieste.
 
 >[!NOTE]
 >
->La versione più recente di Adobe Commerce e Magento Open Source richiede almeno PHP 8.1. Consulta [requisiti di sistema](../system-requirements.md) per tutte le versioni supportate di PHP.
+>La versione più recente di Adobe Commerce richiede almeno PHP 8.1. Consulta [requisiti di sistema](../system-requirements.md) per tutte le versioni supportate di PHP.
 
 Per istruzioni sulla configurazione del cloud, consulta [Impostazioni PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) nel _Commerce su infrastruttura cloud_ guida.
 
@@ -46,7 +46,7 @@ Se PHP non è installato (o richiede un aggiornamento), installarlo seguendo le 
 
 ## Verificare le estensioni installate
 
-Adobe Commerce e Magento Open Source richiedono alcune estensioni PHP. Negli elenchi seguenti sono specificate le estensioni richieste per ogni edizione di Commerce. Gli elenchi vengono generati automaticamente da una distribuzione che esegue la versione più recente di ogni edizione.
+Adobe Commerce richiede alcune estensioni PHP. Negli elenchi seguenti vengono specificate le estensioni richieste per ogni edizione di Commerce. Gli elenchi vengono generati automaticamente da una distribuzione che esegue la versione più recente di ogni edizione.
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
@@ -90,11 +90,11 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   Queste impostazioni consentono ai processi PHP di memorizzare nella cache i percorsi dei file invece di cercarli al caricamento della pagina. Consulta [Ottimizzazione delle prestazioni](https://www.php.net/manual/en/ini.core.php) nella documentazione PHP.
 
-- Abilita [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), richiesto per Adobe Commerce e Magento Open Source 2.1 e versioni successive.
+- Abilita [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), richiesto per Adobe Commerce 2.1 e versioni successive.
 
   L’Adobe consiglia di abilitare [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) per motivi di prestazioni. OPcache è abilitata in molte distribuzioni PHP.
 
-  Adobe Commerce e Magento Open Source 2.1 e versioni successive utilizzano i commenti del codice PHP per la generazione del codice.
+  Adobe Commerce 2.1 e versioni successive utilizzano i commenti del codice PHP per la generazione del codice.
 
 >[!NOTE]
 >

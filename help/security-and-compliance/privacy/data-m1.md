@@ -2,9 +2,9 @@
 title: Riferimento per le informazioni personali del cliente (versione 1.x)
 description: Scopri i mapping di entità di database e flussi di dati per le informazioni personali dei clienti nel Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Questo è uno di una serie di argomenti per aiutare Adobe Commerce e gli sviluppatori e i commercianti di Magento Open Source a prepararsi per il rispetto delle normative sulla privacy. Rivolgiti al tuo consulente legale per determinare se e come la tua azienda debba conformarsi ad obblighi di legge.
+>Questo è uno di una serie di argomenti per aiutare i commercianti e gli sviluppatori di Adobe Commerce a prepararsi per il rispetto delle normative sulla privacy. Rivolgiti al tuo consulente legale per determinare se e come la tua azienda debba conformarsi ad obblighi di legge.
 
 Utilizza i seguenti diagrammi di flusso di dati e mappature di entità di database come riferimento durante lo sviluppo di programmi di conformità per le normative sulla privacy, ad esempio:
 
@@ -32,7 +32,7 @@ L&#39;utente può immettere le informazioni relative al cliente, all&#39;indiriz
 
 ### Punti di accesso ai dati front-end
 
-Commerce carica le informazioni del cliente quando il cliente effettua l’accesso e visualizza diverse pagine o estrazioni.
+Commerce carica le informazioni del cliente quando effettua l’accesso e visualizza diverse pagine o estrazioni.
 
 ![Punti di accesso ai dati front-end](../../assets/security-compliance/frontend-data-access-points.svg)
 
@@ -44,7 +44,7 @@ Per creare un cliente o un ordine, un commerciante può immettere le informazion
 
 ### Punti di accesso ai dati back-end
 
-Commerce carica le informazioni del cliente quando un commerciante visualizza diversi tipi di griglie, fa clic su una griglia per visualizzare informazioni dettagliate ed esegue varie altre attività.
+Commerce carica le informazioni sul cliente quando un commerciante visualizza diversi tipi di griglie, fa clic su una griglia per visualizzare informazioni dettagliate ed esegue varie altre attività.
 
 ![Punti di accesso ai dati back-end](../../assets/security-compliance/backend-data-access-points.svg)
 

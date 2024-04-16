@@ -1,10 +1,10 @@
 ---
 title: Clona i dati di esempio Git archivi
-description: Per installare i dati di esempio di Adobe Commerce e di Magento Open Source clonando gli archivi Git, segui la procedura riportata di seguito.
+description: Per installare i dati di esempio di Adobe Commerce clonando gli archivi Git, segui la procedura riportata di seguito.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---

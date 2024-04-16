@@ -1,10 +1,10 @@
 ---
 title: Configurare la proprietà e le autorizzazioni dei file
-description: Segui questi passaggi per configurare le autorizzazioni del file system per le installazioni locali di Adobe Commerce e Magento Open Source.
+description: Per configurare le autorizzazioni del file system per le installazioni locali di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
