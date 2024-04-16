@@ -1,8 +1,8 @@
 ---
-source-git-commit: 018c61a4ea921b4a69cc854fde355606defe1215
+source-git-commit: 88cdf47409f45f9ba6de75701ab877c5e4604f13
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 0%
+source-wordcount: '224'
+ht-degree: 1%
 
 ---
 # Nuovo modello
@@ -29,41 +29,13 @@ Scopri la nuova documentazione e gli aggiornamenti significativi della documenta
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/efd2fc4285a5cdc7ee20ead299ee16e54f9bcb83">efd2fc</a> (commit)</td>
     </tr>
     <tr>
-      <td><ul>
-  <li>Aggiornare gli argomenti dei pacchetti di versione per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">OpenSource Magento</a>.<br />- Aggiungere un argomento dei pacchetti di versione per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B per Commerce</a>.</li>
-</ul>
+      <td><p>Sono stati aggiornati gli argomenti sui pacchetti di versione per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento Open Source</a>.<br /> È stato aggiunto un argomento sui pacchetti di versione per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B per Commerce</a>.</p>
 </td>
       <td>principale-aggiornamento</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>È stato aggiornato il <em>raccoglitore/magento</em> Documentazione di riferimento CLI per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">OpenSource Magento</a>.</p>
-</td>
-      <td>principale-aggiornamento</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Pubblicato 2.4.7 GA <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">note sulla versione</a>.</p>
-</td>
-      <td>principale-aggiornamento</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35b7caafbef5ced52ef6e4907e0634dfb2a61e4f">35b7ca</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Aggiunge note sulla versione per le versioni di sicurezza di Adobe Commerce di aprile 2024 (2.4.6-p5, 2.4.5-p7, 2.4.4-p8). Consulta <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Note sulla versione di Adobe Commerce e Magento Open Source</a></p>
-</td>
-      <td>principale-aggiornamento</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7acab1d8d3f7b11cc1387b5558521f282ba0873f">7acab1</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><ul>
-  <li>Aggiornare gli argomenti dei pacchetti di versione per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">OpenSource Magento</a>.<br />- Aggiungere un argomento dei pacchetti di versione per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B per Commerce</a>.</li>
-</ul>
-</td>
-      <td>principale-aggiornamento</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>È stato aggiornato il <em>raccoglitore/magento</em> Documentazione di riferimento CLI per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">OpenSource Magento</a>.</p>
+      <td><p>È stato aggiornato il <em>raccoglitore/magento</em> Documentazione di riferimento CLI per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">Magento Open Source</a>.</p>
 </td>
       <td>principale-aggiornamento</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> (commit)</td>
