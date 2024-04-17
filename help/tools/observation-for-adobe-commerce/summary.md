@@ -3,9 +3,9 @@ title: Il [!UICONTROL Summary] scheda
 description: Scopri di più su [!UICONTROL Summary] scheda di [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ Il **[!UICONTROL Database mysql-slow.log]** il fotogramma esegue un conteggio de
 
 ![redis sincronizzazione dal registro](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[[!DNL Redis]](https://redis.io/docs/about/) è un archivio della struttura dei dati in memoria open source (con licenza BSD) utilizzato come database, cache e broker di messaggi. Se configurato, può eseguire il caching di database e sessioni. Il **[!UICONTROL Redis synchronization from Log]** il frame si concentra su [[!DNL Redis] sincronizzazione](https://redis.io/docs/manual/replication/). Maggiore è il valore [!DNL Redis] set di dati, più è probabile che si verifichino problemi con la sincronizzazione (più dati da mantenere sincronizzati).
+[[!DNL Redis]](https://redis.io/docs/about/) è un archivio della struttura dei dati in memoria open source (con licenza BSD) utilizzato come database, cache e broker di messaggi. Se configurato, può eseguire il caching di database e sessioni. Il **[!UICONTROL Redis synchronization from Log]** il frame si concentra su [[!DNL Redis] sincronizzazione](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/). Maggiore è il valore [!DNL Redis] set di dati, più è probabile che si verifichino problemi con la sincronizzazione (più dati da mantenere sincronizzati).
 
 **[!DNL Redis]errori e messaggi:**
 
