@@ -1,17 +1,17 @@
 ---
 title: Ambiente di sviluppo Recommendations
-description: Scopri i consigli sulle prestazioni per la configurazione dell’ambiente di sviluppo Adobe Commerce o di Magento Open Source locale.
+description: Scopri i consigli sulle prestazioni per la configurazione dell’ambiente di sviluppo Adobe Commerce locale.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
 
 # Raccomandazioni per l’ambiente di sviluppo
 
-Questa pagina fornisce consigli per gli ambienti di sviluppo di Commerce.
+Questa pagina fornisce consigli per gli ambienti di sviluppo Commerce.
 
 ## Pulire le cache invece di disattivare
 

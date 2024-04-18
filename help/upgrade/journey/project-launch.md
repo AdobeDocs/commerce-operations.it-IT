@@ -1,10 +1,10 @@
 ---
 title: Avvio progetto
-description: Imposta le giuste aspettative per la procedura di aggiornamento con le parti interessate al progetto Adobe Commerce o di Magento Open Source.
+description: Imposta le giuste aspettative per il processo di aggiornamento con le parti interessate al progetto Adobe Commerce.
 exl-id: 8a5d9af2-e0e5-441c-976c-958a229ab933
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---

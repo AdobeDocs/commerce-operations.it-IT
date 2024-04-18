@@ -1,17 +1,17 @@
 ---
 title: Panoramica della guida alla configurazione
-description: Scopri tutte le funzioni e i servizi configurabili per l’applicazione Adobe Commerce o di Magento Open Source.
+description: Scopri tutte le funzioni e i servizi configurabili per la tua applicazione Adobe Commerce.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
 
 # Guida alla configurazione
 
-Il _Configurazione_ La guida fornisce materiale di riferimento e indicazioni limitate per la gestione delle funzioni e dei servizi configurabili delle applicazioni Commerce. Gli utenti tecnici responsabili della configurazione dell’applicazione Commerce possono trovare indicazioni per le seguenti aree:
+Il _Configurazione_ La guida fornisce materiale di riferimento e indicazioni limitate per la gestione delle funzioni e dei servizi configurabili dell&#39;applicazione Commerce. Gli utenti tecnici responsabili della configurazione dell’applicazione Commerce possono trovare indicazioni per le seguenti aree:
 
 - [Installazione](../configuration/bootstrap/initialization.md)
 - [Metodi di implementazione](../configuration/deployment/overview.md)
@@ -23,9 +23,9 @@ Il _Configurazione_ La guida fornisce materiale di riferimento e indicazioni lim
 - [Impostazioni motore di ricerca](../configuration/search/configure-search-engine.md)
 - [Metodi di archiviazione](../configuration/storage/memcached.md)
 
-## Configurazione dell’amministratore di Commerce
+## Configurazione amministratore Commerce
 
-Sono disponibili argomenti corrispondenti nella sezione [Guida utente di Commerce](https://docs.magento.com/user-guide/stores/configuration.html) che può aiutarti a comprendere le descrizioni dei campi per ogni impostazione di configurazione nell’amministratore di Commerce.
+Sono disponibili argomenti corrispondenti nella sezione [Guida utente di Commerce](https://docs.magento.com/user-guide/stores/configuration.html) che può aiutarti a comprendere le descrizioni dei campi per ogni impostazione di configurazione in Commerce Admin.
 
 ## Configurazione cloud
 

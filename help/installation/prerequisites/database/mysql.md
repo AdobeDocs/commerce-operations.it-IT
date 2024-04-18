@@ -2,9 +2,9 @@
 title: Linee guida MySQL
 description: Segui questi passaggi per installare e configurare MySQL e MariaDB per le installazioni locali di Adobe Commerce.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Adobe Commerce ha disabilitato il comportamento di convalida regolare impostando
 
 Per aggiornare correttamente MySQL dalla versione 5.7 alla versione 8, è necessario seguire i passaggi seguenti nell&#39;ordine indicato:
 
-1. Aggiorna Adobe Commerce o Magento Open Source alla versione 2.4.0. Esegui il test completo e assicurati che il sistema funzioni come previsto.
+1. Aggiornare Adobe Commerce alla versione 2.4.0. Esegui il test completo e assicurati che il sistema funzioni come previsto.
 1. Abilita modalità di manutenzione:
 
    ```bash
@@ -131,7 +131,7 @@ Per aggiornare correttamente MySQL dalla versione 5.7 alla versione 8, è necess
 
 ## Configurazione dell’istanza del database
 
-Questa sezione illustra come creare un’istanza di database per Adobe Commerce o Magento Open Source. Sebbene sia consigliata una nuova istanza di database, è possibile installare Adobe Commerce o un Magento Open Source con un&#39;istanza di database esistente.
+Questa sezione illustra come creare un’istanza di database per Adobe Commerce. Sebbene sia consigliata una nuova istanza di database, è possibile installare Adobe Commerce con un&#39;istanza di database esistente.
 
 Per configurare un&#39;istanza di database MySQL:
 
@@ -177,7 +177,7 @@ Per configurare un&#39;istanza di database MySQL:
 
    * Gli indicizzatori richiedono un valore più alto `tmp_table_size` e `max_heap_table_size` valori (ad esempio, 64 M). Se configuri il `batch_size` , è possibile regolare tale valore insieme alle impostazioni delle dimensioni della tabella per migliorare le prestazioni dell&#39;indicizzatore. Consulta la sezione [Guida all’ottimizzazione](../../../performance/configuration.md) per ulteriori informazioni.
 
-   * Per prestazioni ottimali, assicurarsi che tutte le tabelle di indice MySQL e Adobe Commerce o di Magento Open Source possano essere mantenute in memoria (ad esempio, configurare `innodb_buffer_pool_size`).
+   * Per prestazioni ottimali, assicurarsi che tutte le tabelle indice MySQL e Adobe Commerce possano essere mantenute in memoria (ad esempio, configurare `innodb_buffer_pool_size`).
 
    * La reindicizzazione su MariaDB 10.4 richiede più tempo rispetto ad altre versioni di MariaDB o MySQL. Consulta [Best practice di configurazione](../../../performance/configuration.md#indexers).
 

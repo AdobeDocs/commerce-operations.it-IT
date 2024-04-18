@@ -2,9 +2,9 @@
 title: Regolamento generale sulla protezione dei dati (RGPD)
 description: Scopri il Regolamento generale sulla protezione dei dati (RGPD), una normativa che disciplina la protezione dei dati e la privacy di tutte le persone nell’Unione europea e nello Spazio economico europeo.
 exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Gli integratori di sistemi possono utilizzare i diagrammi di flusso di dati e le
 
 ## Informazioni personali
 
-Per informazioni tecniche, consulta i diagrammi di flusso dei dati e le mappature delle entità del database nella documentazione di riferimento sulle informazioni personali applicabile a ogni versione di Adobe Commerce o Magento Open Source supportato.
+Per informazioni tecniche, consulta i diagrammi di flusso dei dati e le mappature delle entità del database nella documentazione di riferimento delle informazioni personali relativa a ogni versione di Adobe Commerce supportata.
 
 - [Riferimento per le informazioni personali del cliente (versione 2.x)](data-m2.md)
 - [Riferimento informazioni personali cliente (versione 1.x)](data-m1.md)

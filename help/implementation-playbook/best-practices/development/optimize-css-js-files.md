@@ -4,16 +4,16 @@ description: Scopri come unire e minimizzare i file CSS e JavaScript (JS) per i 
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 2662ced484fb42bf2d32609e4e82364c1e47c8f0
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # Ottimizzare i file di risorse
 
-Per un sito di Commerce più reattivo, ottimizza i file di risorse CSS e JavaScript (JS) ed elimina le risorse di blocco del rendering.
+Per un sito Commerce più reattivo, ottimizza i file di risorse CSS e JavaScript (JS) ed elimina le risorse di blocco del rendering.
 
 - **Ottimizzare i file CSS e JS**- Riduce il tempo necessario per caricare i file CSS e JavaScript (JS) configurando Adobe Commerce per unire, minimizzare e raggruppare file separati in un unico file.
 - **Eliminazione delle risorse di blocco del rendering**: prendi in considerazione la distribuzione di funzionalità JS e CSS critiche in linea e il rinvio di tutti gli stili JS/CSS non critici. Per maggiori informazioni, consulta [Eliminazione delle risorse di blocco del rendering](https://web.dev/render-blocking-resources/).
@@ -24,7 +24,6 @@ Per un sito di Commerce più reattivo, ottimizza i file di risorse CSS e JavaScr
 
 - Adobe Commerce sull’infrastruttura cloud
 - Adobe Commerce on-premise
-- Magento Open Source
 
 ## Unire o minimizzare file CSS
 
@@ -82,7 +81,7 @@ Per abilitare la minimizzazione JS in Adobe Commerce sull’infrastruttura cloud
 
 ## Unire e raggruppare file JS
 
-Puoi attivare l’unione o il bundling in Commerce Admin (l’unione e il bundling non possono essere abilitati contemporaneamente): [!UICONTROL **Negozi** > **Impostazioni** > **Configurazione** > **Avanzate** > **Sviluppatore** > **Impostazioni JavaScript**].
+In Amministrazione Commerce puoi attivare l’unione o il bundling (l’unione e il bundling non possono essere abilitati contemporaneamente): [!UICONTROL **Negozi** > **Impostazioni** > **Configurazione** > **Avanzate** > **Sviluppatore** > **Impostazioni JavaScript**].
 
 Puoi anche abilitare il bundling integrato di Adobe Commerce (bundling di base) dalla riga di comando:
 

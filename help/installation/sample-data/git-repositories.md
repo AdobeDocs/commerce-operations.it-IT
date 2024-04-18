@@ -2,9 +2,9 @@
 title: Clona i dati di esempio Git archivi
 description: Per installare i dati di esempio di Adobe Commerce clonando gli archivi Git, segui la procedura riportata di seguito.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Per clonare l’archivio GitHub dei dati di esempio utilizzando il protocollo HT
 
 >[!WARNING]
 >
->Se stai installando dati di esempio *dopo* durante l&#39;installazione di Adobe Commerce o Magento Open Source, è necessario eseguire anche il comando seguente per aggiornare il database e lo schema:
+>Se stai installando dati di esempio *dopo* durante l’installazione di Adobe Commerce, per aggiornare il database e lo schema devi anche eseguire il comando seguente:
 >
 >```bash
 ><magento_root>/bin/magento setup:upgrade

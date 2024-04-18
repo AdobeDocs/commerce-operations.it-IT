@@ -4,9 +4,9 @@ description: Scopri le best practice di implementazione per la fase di pianifica
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '424'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di pi
   </tr>
   <tr>
     <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">Memorizzazione in cache a pagina intera</a></td>
-    <td>Scopri come utilizzare i dati pubblici durante l’implementazione del caching nell’estensione Adobe Commerce o di Magento Open Source.</td>
+    <td>Scopri come utilizzare i dati pubblici durante l’implementazione del caching nell’estensione Adobe Commerce.</td>
   </tr>
   <tr>
     <td><a href="opcache-memory-size.md">Dimensioni memoria OPcache</a></td>

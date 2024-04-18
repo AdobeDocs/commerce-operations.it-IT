@@ -2,9 +2,9 @@
 title: Libreria JavaScript per la privacy
 description: Scopri come utilizzare gli strumenti personalizzati per accedere ed eliminare le informazioni personali dei clienti raccolte da Adobe Commerce.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Questa libreria fornisce un set di funzioni per creare richieste di dati sulla p
 
 La libreria JavaScript per la privacy è disponibile nel seguente percorso CDN: `commerce.adobe.net/magentoprivacy.js`
 
-Una volta ottenuto il file, dovrai aggiungerlo a un modulo personalizzato o a un tema installato nell’istanza Adobe Commerce o di Magento Open Source. Seguire le istruzioni descritte nella [Usa JavaScript personalizzato](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) per eseguire questa attività.
+Dopo aver installato il file, dovrai aggiungerlo a un modulo personalizzato o a un tema nell’istanza di Adobe Commerce. Seguire le istruzioni descritte nella [Usa JavaScript personalizzato](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) per eseguire questa attività.
 
 ### Inizializzazione
 

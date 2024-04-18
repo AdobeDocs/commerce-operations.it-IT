@@ -2,16 +2,16 @@
 title: Configurare la proprietà e le autorizzazioni dei file
 description: Per configurare le autorizzazioni del file system per le installazioni locali di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
 
 # Configurare la proprietà e le autorizzazioni dei file
 
-In questo argomento viene illustrato come impostare le autorizzazioni di lettura/scrittura per il gruppo di server Web prima di installare Adobe Commerce o Magento Open Source. Ciò è necessario affinché la riga di comando possa scrivere file nel file system.
+Questo argomento illustra come impostare le autorizzazioni di lettura-scrittura per il gruppo di server Web prima di installare Adobe Commerce. Ciò è necessario affinché la riga di comando possa scrivere file nel file system.
 
 La procedura utilizzata è diversa, a seconda che si utilizzi o meno [hosting condiviso](#set-permissions-for-one-user-on-shared-hosting) e avere un utente o se si utilizza un [server privato](#set-ownership-and-permissions-for-two-users) e avere due utenti.
 

@@ -1,10 +1,10 @@
 ---
 title: Panoramica
-description: Segui queste best practice per ottimizzare le prestazioni dell’implementazione di Adobe Commerce o di Magento Open Source.
+description: Segui queste best practice per ottimizzare le prestazioni dell’implementazione di Adobe Commerce.
 exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '86'
 ht-degree: 1%
 
 ---
@@ -15,5 +15,5 @@ Il _Best practice per le prestazioni_ La guida fornisce consigli e istruzioni pe
 
 ## Presupposti
 
-* Hai installato Adobe Commerce o Magento Open Source utilizzando [Compositore](../installation/composer.md).
-* Utilizza questa installazione per eseguire un’istanza di produzione live di Adobe Commerce o Magento Open Source.
+* Hai installato Adobe Commerce tramite [Compositore](../installation/composer.md).
+* Utilizza questa installazione per eseguire un’istanza di produzione live di Adobe Commerce.

@@ -1,10 +1,10 @@
 ---
 title: Opzioni della modalità di manutenzione per l’aggiornamento
-description: Crea una pagina personalizzata per la modalità di manutenzione che i clienti possono visualizzare sulla vetrina di Adobe Commerce o del Magento Open Source mentre esegui un aggiornamento.
+description: Crea una pagina personalizzata per la modalità di manutenzione che i clienti possono visualizzare nella vetrina di Adobe Commerce durante l’esecuzione di un aggiornamento.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---

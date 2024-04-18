@@ -1,24 +1,24 @@
 ---
 title: Motore di ricerca corrente non supportato
-description: Risolvi i problemi relativi all’aggiornamento di Adobe Commerce o Magento Open Source dopo aver riscontrato un errore relativo a un motore di ricerca non supportato.
+description: Risolvi i problemi relativi all’aggiornamento di Adobe Commerce dopo aver riscontrato un errore relativo a un motore di ricerca non supportato.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
 # Motore di ricerca corrente non supportato
 
-Il seguente messaggio di errore indica che la versione di Adobe Commerce o di Magento Open Source da cui stai eseguendo l’aggiornamento è configurata per l’utilizzo di un motore di ricerca catalogo non supportato nella versione a cui stai effettuando l’aggiornamento:
+Il seguente messaggio di errore indica che la versione di Adobe Commerce da cui stai eseguendo l’aggiornamento è configurata per l’utilizzo di un motore di ricerca catalogo non supportato nella versione a cui stai effettuando l’aggiornamento:
 
 ```terminal
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 
-Questo errore indica che una delle seguenti condizioni è vera nella versione di livello inferiore di Adobe Commerce o del Magento Open Source:
+Questo errore indica che una delle seguenti condizioni è vera nella versione di livello inferiore di Adobe Commerce:
 
 - Il motore di ricerca è impostato su MySQL.
 - Il motore di ricerca è impostato su una versione di Elasticsearch non più supportata.
@@ -43,7 +43,7 @@ L’errore si verifica se il valore restituito è `mysql`, `elasticsearch`, o `e
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Dove `<version>` è la versione del Magento che stavi eseguendo **prima di** l&#39;aggiornamento. Ad esempio, `2.3.5`.
+>Dove `<version>` è la versione del Magento che stavi eseguendo **prima di** l&#39;aggiornamento. Ad esempio: `2.3.5`.
 
 Seguire le linee guida descritte nelle sezioni seguenti per eseguire il ripristino da uno stato incoerente.
 
@@ -62,7 +62,7 @@ Dopo aver configurato il motore di ricerca e la reindicizzazione, sei pronto per
 
 Elasticsearch 6 e versioni precedenti non sono più supportati.
 
-Un valore di `elasticsearch` indica che la versione di livello inferiore di Adobe Commerce o del Magento Open Source è configurata per l’utilizzo di Elasticsearch 2.x. Questa versione di Elasticsearch non è più supportata.
+Un valore di `elasticsearch` indica che la versione di livello inferiore di Adobe Commerce è configurata per l’utilizzo di Elasticsearch 2.x. Questa versione di Elasticsearch non è più supportata.
 
 Prima di eseguire l’aggiornamento a 2.4, è necessario eseguire le seguenti attività:
 

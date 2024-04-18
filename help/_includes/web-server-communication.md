@@ -1,7 +1,7 @@
 ---
-source-git-commit: 475dbc056ac3e6a00c8f794259bb0fbf04143687
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Consigliamo quanto segue:
 
 * Il motore di ricerca viene eseguito sullo stesso host di un server Web. L’esecuzione del motore di ricerca e del server web su host diversi esula dall’ambito di questo argomento.
 
-  Il vantaggio di mettere il motore di ricerca e il server web sullo stesso host è che rende impossibile intercettare le comunicazioni crittografate. Il server web del motore di ricerca non deve essere necessariamente lo stesso di Adobe Commerce o del server web di Magento Open Source; ad esempio, Adobe Commerce può eseguire Apache e Elasticsearch/OpenSearch può eseguire nginx.
+  Il vantaggio di mettere il motore di ricerca e il server web sullo stesso host è che rende impossibile intercettare le comunicazioni crittografate. Il server web del motore di ricerca non deve necessariamente essere lo stesso del server web Adobe Commerce; ad esempio, Adobe Commerce può eseguire Apache e Elasticsearch/OpenSearch può eseguire nginx.
 
   Se il motore di ricerca è esposto al web pubblico, devi configurare l’autenticazione. Se l’istanza del motore di ricerca è protetta all’interno della rete, ciò potrebbe non essere necessario. Rivolgiti al provider di hosting per determinare le misure di sicurezza da implementare per proteggere l’istanza.
 

@@ -2,9 +2,9 @@
 title: Lettura consigliata per gli aggiornamenti
 description: Consulta la documentazione consigliata per pianificare l’aggiornamento di Adobe Commerce.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '260'
 ht-degree: 4%
 
 ---
@@ -61,7 +61,7 @@ Continua a conoscere gli aggiornamenti di Adobe Commerce utilizzando le risorse 
     </tr>
     <tr>
       <td><strong>Risorse per l'aggiornamento</strong>
-        <p>Proteggi la vetrina e assicurati un funzionamento efficiente. Preparati per l’aggiornamento di Adobe Commerce o Magento Open Source consultando l’ampia documentazione tecnica di Adobe.</p>
+        <p>Proteggi la vetrina e assicurati un funzionamento efficiente. Preparati per l’aggiornamento ad Adobe Commerce consultando l’ampia documentazione tecnica di Adobe.</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">Percorsi di aggiornamento consigliati</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Registrazione del workshop di aggiornamento tecnico</a></li>

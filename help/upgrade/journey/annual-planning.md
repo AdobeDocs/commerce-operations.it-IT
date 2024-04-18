@@ -1,10 +1,10 @@
 ---
 title: Pianificazione annuale per gli aggiornamenti
-description: Rivedi i suggerimenti per la creazione di un piano di aggiornamento annuale per il progetto Adobe Commerce o di Magento Open Source.
+description: Consulta i suggerimenti per la creazione di un piano di aggiornamento annuale per il tuo progetto Adobe Commerce.
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: d81283491447dcad5f38ddf55acea7d94889ef35
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---

@@ -2,9 +2,9 @@
 title: Panoramica di [!DNL Upgrade Compatibility Tool]
 description: Scopri di più su [!DNL Upgrade Compatibility Tool] e come può aiutarti con il tuo progetto Adobe Commerce.
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Consulta la sezione [Contribuisci](https://developer.adobe.com/commerce/php/codi
 
 Consulta le seguenti risorse per comprendere meglio gli aggiornamenti di Adobe Commerce:
 
-- Il [guida all’aggiornamento](../overview.md) fornisce una panoramica del tipico percorso di aggiornamento di Adobe Commerce o di Magento Open Source e delle best practice da seguire lungo tale percorso.
+- Il [guida all’aggiornamento](../overview.md) fornisce una panoramica del tipico percorso di aggiornamento di Adobe Commerce e delle best practice da seguire lungo tale percorso.
 - Il [prossime versioni](https://devdocs.magento.com/release/) fornisce le date per le versioni pianificate e future.
 - Il [risorse della community](https://developer.adobe.com/commerce/contributor/community/) pagina consente di avviare discussioni o di trovare ulteriori informazioni.
 - Controlla la [strumenti correlati](../upgrade-compatibility-tool/related-tools.md) pagina per strumenti utili nel tipico percorso di aggiornamento.

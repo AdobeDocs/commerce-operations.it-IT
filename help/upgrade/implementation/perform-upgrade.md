@@ -2,9 +2,9 @@
 title: Eseguire un aggiornamento
 description: Per aggiornare le distribuzioni locali di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Eseguire un aggiornamento
 
-È possibile eseguire l&#39;aggiornamento _on-premise_ distribuzioni dell’applicazione Adobe Commerce o di Magento Open Source dalla riga di comando se il software è stato installato:
+È possibile eseguire l&#39;aggiornamento _on-premise_ distribuzioni dell’applicazione Adobe Commerce dalla riga di comando se il software è stato installato da:
 
 - Scaricare il metapacchetto del Compositore utilizzando `composer create-project` comando.
 - Installazione dell&#39;archivio compresso.
@@ -110,7 +110,7 @@ Le istruzioni seguenti spiegano come eseguire l’aggiornamento utilizzando Gest
 
    - `<product>` —(Obbligatorio) Il pacchetto da aggiornare. Per gli impianti locali, tale valore deve essere `product-community-edition` o `product-enterprise-edition`.
 
-   - `<version>` —(Obbligatorio) La versione di Adobe Commerce o del Magento Open Source a cui si sta effettuando l&#39;aggiornamento. Ad esempio: `2.4.3`.
+   - `<version>` —(Obbligatorio) La versione di Adobe Commerce a cui si sta effettuando l&#39;aggiornamento. Ad esempio: `2.4.3`.
 
    - `--no-update` —(Obbligatorio) Disattiva l&#39;aggiornamento automatico delle dipendenze.
 

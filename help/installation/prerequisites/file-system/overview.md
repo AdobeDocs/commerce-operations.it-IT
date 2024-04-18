@@ -2,16 +2,16 @@
 title: Proprietà e autorizzazioni dei file
 description: Scopri l’importanza delle autorizzazioni per il file system quando utilizzi le installazioni locali di Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
 # Proprietà e autorizzazioni dei file
 
-È importante proteggere l&#39;installazione di Adobe Commerce o di Magento Open Source in un ambiente di sviluppo per evitare problemi relativi a persone o processi non autorizzati che accedono al sistema e potrebbero danneggiarlo. Per proteggere l&#39;installazione, utilizzare le seguenti linee guida relative alla proprietà e alle autorizzazioni del file system.
+È importante proteggere l’installazione di Adobe Commerce in un ambiente di sviluppo per evitare problemi relativi a persone o processi non autorizzati che accedono al sistema e potrebbero danneggiarlo. Per proteggere l&#39;installazione, utilizzare le seguenti linee guida relative alla proprietà e alle autorizzazioni del file system.
 
 ## Proprietario file system
 
@@ -65,4 +65,4 @@ Vengono ulteriormente discusse le raccomandazioni sulle autorizzazioni in [Autor
 
 >[!TIP]
 >
->Prima di installare Adobe Commerce o Magento Open Source, controlla [Configurare la proprietà e le autorizzazioni dei file](configure-permissions.md).
+>Prima di installare Adobe Commerce, controlla [Configurare la proprietà e le autorizzazioni dei file](configure-permissions.md).

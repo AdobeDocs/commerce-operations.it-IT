@@ -2,9 +2,9 @@
 title: Software opzionale
 description: Ulteriori informazioni sui software opzionali che è possibile installare per supportare le installazioni locali di Adobe Commerce.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Si consiglia vivamente di installare NTP per garantire che le attività correlate a cron funzionino correttamente. Ad esempio, le date del server potrebbero essere nel passato o nel futuro.
 
-Le altre utilità facoltative illustrate in questo argomento possono essere utili per l&#39;installazione, ma non sono necessarie per installare o utilizzare Adobe Commerce o Magento Open Source.
+Le altre utilità facoltative illustrate in questo argomento possono essere utili per l&#39;installazione, ma non sono necessarie per installare o utilizzare Adobe Commerce.
 
 ## Installazione e configurazione di Network Time Protocol (NTP)
 
 [NTP](https://www.ntp.org/) consente ai server di sincronizzare gli orologi di sistema utilizzando [server pool disponibili a livello globale](https://www.ntppool.org/en/). Si consiglia di utilizzare i server NTP considerati attendibili, siano essi soluzioni hardware dedicate della rete interna o server pubblici esterni.
 
-Se distribuisci Adobe Commerce o Magento Open Source su più host, NTP è un modo semplice per garantire che i loro orologi siano tutti sincronizzati, indipendentemente dal fuso orario in cui si trovano i server. Inoltre, le attività relative alle cron (come l’indicizzazione e le e-mail transazionali) dipendono dall’accuratezza dell’orologio del server.
+Se distribuisci Adobe Commerce su più host, NTP è un modo semplice per garantire che i loro orologi siano tutti sincronizzati, indipendentemente dal fuso orario in cui si trovano i server. Inoltre, le attività relative alle cron (come l’indicizzazione e le e-mail transazionali) dipendono dall’accuratezza dell’orologio del server.
 
 ### Installare e configurare NTP su Ubuntu
 

@@ -2,9 +2,9 @@
 title: Rimuovi o aggiorna i moduli dati di esempio
 description: Per gestire i moduli dati di esempio di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: d23f999f-18bf-449b-be23-bdf392dda539
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 In questo argomento viene illustrato come:
 
-* [Rimuovi moduli dati di esempio](#remove-sample-data-modules) da un’installazione di Adobe Commerce o di Magento Open Source `composer.json`. Questa opzione funziona *non* rimuovere i dati di esempio dal database.
+* [Rimuovi moduli dati di esempio](#remove-sample-data-modules) da un’installazione di Adobe Commerce `composer.json`. Questa opzione funziona *non* rimuovere i dati di esempio dal database.
 
 * [Preparare l’aggiornamento dei dati di esempio](#prepare-to-update-sample-data) (ad esempio, prima di aggiornare l’applicazione di Magento).
 
@@ -51,7 +51,7 @@ L’elenco completo dei moduli di dati di esempio è il seguente:
 
 ## Preparare l’aggiornamento dei dati di esempio
 
-Questo comando consente di aggiornare i dati di esempio prima di aggiornare Adobe Commerce o Magento Open Source.
+Questo comando consente di aggiornare i dati di esempio prima di aggiornare Adobe Commerce.
 
 Per preparare i dati di esempio per l&#39;aggiornamento, immettere il comando seguente:
 

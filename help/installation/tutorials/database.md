@@ -1,10 +1,10 @@
 ---
 title: Creare lo schema del database
-description: Per creare un database per il tuo Adobe Commerce o Magento Open Source, segui la procedura riportata di seguito.
+description: Per creare un database per il progetto Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: 860c9918-44c4-4ef1-88a5-12614566307c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '49'
 ht-degree: 0%
 
 ---

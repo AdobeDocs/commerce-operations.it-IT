@@ -2,9 +2,9 @@
 title: Configurazione avanzata
 description: Esamina le best practice e i consigli per i sistemi aziendali di grandi dimensioni progettati per elaborare grandi volumi di dati.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Un&#39;altra soluzione consiste nel posizionare la cache di configurazione sul f
 
 ## Configurazione [!DNL RabbitMQ]
 
-MAGENTO OPEN SOURCE e ADOBE [!DNL Commerce] supporta le code di messaggi implementate tramite [!DNL RabbitMQ]. [!DNL Commerce] utilizza questo servizio per eseguire numerose operazioni asincrone, incluse le operazioni del catalogo B2B e gli aggiornamenti asincroni delle scorte. Tutte le interfacce per l’aggiunta di più processi al server dei processi sono distribuite con il prodotto e sono disponibili per l’implementazione asincrona personalizzata della logica nell’ambito di estensioni di terze parti. Come con qualsiasi altra integrazione, [!DNL Commerce] fornisce un esempio di file di configurazione per [!DNL RabbitMQ] che contiene tutte le impostazioni consigliate ed è completamente pronto per l’utilizzo in produzione.
+Adobe Commerce supporta le code di messaggi implementate tramite [!DNL RabbitMQ]. [!DNL Commerce] utilizza questo servizio per eseguire numerose operazioni asincrone, incluse le operazioni del catalogo B2B e gli aggiornamenti asincroni delle scorte. Tutte le interfacce per l’aggiunta di più processi al server dei processi sono distribuite con il prodotto e sono disponibili per l’implementazione asincrona personalizzata della logica nell’ambito di estensioni di terze parti. Come con qualsiasi altra integrazione, [!DNL Commerce] fornisce un esempio di file di configurazione per [!DNL RabbitMQ] che contiene tutte le impostazioni consigliate ed è completamente pronto per l’utilizzo in produzione.
 
 ## Dividere il database
 

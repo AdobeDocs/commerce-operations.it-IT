@@ -1,10 +1,10 @@
 ---
 title: Installare Adobe Commerce
-description: Per installare Adobe Commerce o Magento Open Source nell’infrastruttura di tua proprietà, segui la procedura riportata di seguito.
+description: Per installare Adobe Commerce nell’infrastruttura di tua proprietà, segui la procedura riportata di seguito.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '2102'
+source-wordcount: '2094'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ In Adobe Commerce versione 2.2.8 e successive, puoi creare l’utente amministra
 | `--db-name` | Nome dell&#39;istanza di database in cui si desidera installare le tabelle di database.<br><br>Il valore predefinito è `magento2`. | Sì |
 | `--db-user` | Nome utente del proprietario dell&#39;istanza di database.<br><br>Il valore predefinito è `root`. | Sì |
 | `--db-password` | Password del proprietario dell&#39;istanza di database. | Sì |
-| `--db-prefix` | Da utilizzare solo se si installano le tabelle di database in un&#39;istanza di database in cui sono già presenti tabelle Adobe Commerce o Magento Open Source.<br><br>In tal caso, utilizzare un prefisso per identificare le tabelle per l&#39;installazione. Alcuni clienti hanno più di un’istanza di Adobe Commerce in esecuzione su un server con tutte le tabelle nello stesso database.<br><br>La lunghezza del prefisso non può superare i cinque caratteri. Deve iniziare con una lettera e può includere solo lettere, numeri e caratteri di sottolineatura.<br><br>Questa opzione consente ai clienti di condividere il server di database con più installazioni. | No |
+| `--db-prefix` | Da utilizzare solo se si installano le tabelle di database in un&#39;istanza di database in cui sono già presenti tabelle Adobe Commerce.<br><br>In tal caso, utilizzare un prefisso per identificare le tabelle per l&#39;installazione. Alcuni clienti hanno più di un’istanza di Adobe Commerce in esecuzione su un server con tutte le tabelle nello stesso database.<br><br>La lunghezza del prefisso non può superare i cinque caratteri. Deve iniziare con una lettera e può includere solo lettere, numeri e caratteri di sottolineatura.<br><br>Questa opzione consente ai clienti di condividere il server di database con più installazioni. | No |
 | `--db-ssl-key` | Percorso della chiave client. | No |
 | `--db-ssl-cert` | Percorso del certificato client. | No |
 | `--db-ssl-ca` | Percorso del certificato del server. | No |

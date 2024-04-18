@@ -1,10 +1,10 @@
 ---
 title: Configurare il provider di blocchi
-description: Segui questi passaggi per evitare che i processi e i gruppi cron duplicati vengano eseguiti nell’implementazione di Adobe Commerce o di Magento Open Source.
+description: Segui questi passaggi per evitare che i processi e i gruppi cron duplicati vengano eseguiti nell’implementazione di Adobe Commerce.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Prima di eseguire questo comando, è necessario effettuare le seguenti operazion
 
 ## Configurare il blocco
 
-Configurare un provider di blocchi per impedire l&#39;avvio di processi cron e gruppi cron duplicati. (Richiede Adobe Commerce o Magento Open Source 2.2.x, 2.2.5 e versioni successive, e 2.3.3 e versioni successive).
+Configurare un provider di blocchi per impedire l&#39;avvio di processi cron e gruppi cron duplicati. (Richiede Adobe Commerce 2.2.x, 2.2.5 e versioni successive e 2.3.3 e versioni successive).
 
 Per impostazione predefinita, Adobe Commerce utilizza il database per salvare i blocchi. Se sui tuoi server sono presenti più nodi, ti consigliamo di utilizzare Zookeeper come provider di blocchi.
 

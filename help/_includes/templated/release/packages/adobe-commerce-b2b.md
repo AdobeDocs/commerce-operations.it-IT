@@ -1,7 +1,7 @@
 ---
-source-git-commit: d0304f4060080f70c079fb571210cd015407f1cf
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '1992'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 B2B per Adobe Commerce utilizza Composer per gestire i pacchetti PHP.
 
-Il `composer.json` file dichiara l&#39;elenco dei colli, mentre il `composer.lock` file memorizza un elenco completo dei pacchetti (una versione completa di ciascun pacchetto e delle relative dipendenze) utilizzati per creare un’installazione di Adobe Commerce o Magento Open Source.
+Il `composer.json` file dichiara l&#39;elenco dei colli, mentre il `composer.lock` Il file memorizza un elenco completo dei pacchetti (una versione completa di ciascun pacchetto e delle relative dipendenze) utilizzati per creare un’installazione di Adobe Commerce.
 
 La seguente documentazione di riferimento è generata da `composer.lock` e riguarda i pacchetti richiesti inclusi in B2B per Adobe Commerce 1.4.2.
 

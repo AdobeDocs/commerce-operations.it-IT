@@ -2,9 +2,9 @@
 title: Aggiornare moduli ed estensioni
 description: Utilizza l’interfaccia della riga di comando e il Compositore per aggiornare moduli ed estensioni di Adobe Commerce.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Per aggiornare un modulo o un’estensione:
 
 1. Scarica il file aggiornato da Marketplace o da un altro sviluppatore di estensioni. Prendi nota del nome e della versione del modulo.
 
-1. Esporta i contenuti nella directory di installazione principale di Adobe Commerce o del Magento Open Source.
+1. Esporta i contenuti nella directory di installazione principale di Adobe Commerce.
 
 1. Se esiste un pacchetto Compositore per il modulo, esegui una delle seguenti operazioni.
 

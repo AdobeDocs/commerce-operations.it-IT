@@ -3,16 +3,16 @@ title: Gestire moduli ed estensioni (sviluppatore)
 description: Gestisci i moduli e le estensioni di Adobe Commerce tramite l’interfaccia della riga di comando e il gestore di pacchetti del Compositore.
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 2%
+source-wordcount: '131'
+ht-degree: 3%
 
 ---
 
 # Gestire moduli ed estensioni
 
-Aiutare gli sviluppatori ad aggiornare moduli ed estensioni specificando le loro versioni in Adobe Commerce o nel Magento Open Source `composer.json` file. Se non sei uno sviluppatore, consulta [Eseguire un aggiornamento](../implementation/perform-upgrade.md).
+Aiutando gli sviluppatori ad aggiornare moduli ed estensioni specificandone le versioni in Adobe Commerce `composer.json` file. Se non sei uno sviluppatore, consulta [Eseguire un aggiornamento](../implementation/perform-upgrade.md).
 
 Puoi aggiungere una `require` sezione al `composer.json` o puoi utilizzare il `composer require` comando come segue:
 

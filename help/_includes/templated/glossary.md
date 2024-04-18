@@ -1,7 +1,7 @@
 ---
-source-git-commit: 405c1d7073e5936aefc7fb3c6eb1d5dd4d69a066
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '6574'
+source-wordcount: '6363'
 ht-degree: 0%
 
 ---
@@ -128,13 +128,13 @@ _Attributi termine:_
 _sostantivo_
 
 Caratteristica o proprietà di un prodotto che descrive alcuni aspetti del prodotto.
-Gli utenti di Adobe Commerce o di un Magento Open Source possono creare attributi personalizzati da aggiungere al set di attributi predefinito o a un set di attributi personalizzato.
+Gli utenti di Adobe Commerce possono creare attributi personalizzati da aggiungere al set di attributi predefinito o a un set di attributi personalizzato.
 Crea questi attributi tramite Admin o a livello di programmazione.
 Esempi: colore, dimensione, peso, prezzo, età, genere e così via.
 
 Gli attributi personalizzati sono un tipo di attributo Entity-Attribute-Value (EAV).
 
-Per integrazioni come Google Shopping ads Channel e Amazon Sales Channel, mappi gli attributi Commerce agli attributi di terze parti per visualizzare e vendere correttamente prodotti e annunci.
+Per integrazioni quali Google Shopping ads Channel e Amazon Sales Channel, mappi gli attributi Commerce agli attributi di terze parti per visualizzare e vendere correttamente prodotti e annunci.
 
 Ulteriori informazioni: [EAV ed extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
@@ -392,7 +392,7 @@ _sostantivo_
 Per i commercianti, il catalogo rappresenta il loro inventario di prodotti.
 Nell’architettura di Adobe Commerce, il catalogo è costituito da categorie, prodotti e attributi di prodotto.
 
-Ogni negozio Commerce dispone di un solo catalogo dei prodotti, condiviso da tutte le visualizzazioni dello store.
+Ogni store di Commerce dispone di un solo catalogo dei prodotti, che viene condiviso da tutte le visualizzazioni dello store.
 In un&#39;installazione multi-store, ogni store può avere un catalogo separato o condividere il catalogo.
 Il catalogo dello store corrente è determinato dalla categoria principale predefinita, visibile all’utente nella navigazione superiore (menu principale) dello store.
 (Il termine &quot;categoria principale&quot; può confondere, perché la &quot;categoria principale&quot; non è in realtà una categoria, ma un contenitore per il menu, che consiste di categorie e sottocategorie.)
@@ -686,7 +686,7 @@ _Attributi termine:_
 
 _sostantivo_
 
-Un set di script e strumenti progettati per gestire e distribuire l’applicazione Commerce. Questo pacchetto semplifica molti processi dell’infrastruttura cloud di Adobe Commerce, tra cui l’implementazione in un ambiente Docker, la gestione delle istanze, la verifica della configurazione del progetto e l’applicazione di patch di Adobe.
+Un insieme di script e strumenti progettati per gestire e distribuire l&#39;applicazione Commerce. Questo pacchetto semplifica molti processi dell’infrastruttura cloud di Adobe Commerce, tra cui l’implementazione in un ambiente Docker, la gestione delle istanze, la verifica della configurazione del progetto e l’applicazione di patch di Adobe.
 
 Ulteriori informazioni: [pacchetto strumenti ece](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
@@ -1085,7 +1085,7 @@ _Attributi termine:_
 
 _sostantivo_
 
-Page Builder è un’estensione Commerce che consente di creare pagine ricche di contenuti trascinando i controlli predefiniti per definire layout personalizzati.
+Page Builder è un’estensione di Commerce che consente di creare pagine ricche di contenuti trascinando controlli predefiniti per definire layout personalizzati.
 Questi controlli sono anche noti come &quot;tipi di contenuto&quot;.
 I commercianti possono progettare layout e pagine senza esperienza di codifica.
 Il supporto per le estensioni è fornito agli sviluppatori per estendere Page Builder.
@@ -1313,7 +1313,7 @@ _Attributi termine:_
 
 _sostantivo_
 
-Il livello di ambito Commerce di &quot;store&quot; è il secondo livello della gerarchia del sito web, che va come segue: sito web > store > vista store.
+Il livello di ambito Commerce di &quot;store&quot; è il secondo livello della gerarchia del sito Web, che va come segue: sito Web > store > vista store.
 I negozi possono essere organizzati in uno o più. Ogni archivio, potenzialmente, ha la propria categoria principale e tutti condividono i dati di catalogo e cliente.
 
 Ogni negozio può avere più visualizzazioni dello store, che in genere vengono utilizzate per presentare la vetrina in una lingua e in una lingua diverse.
@@ -1380,7 +1380,7 @@ Contiene informazioni sulla grafica e sull&#39;aspetto.
 Personalizza l&#39;aspetto del negozio.
 Adobe Commerce può inviare i temi nei pacchetti (Composer).
 Ma i temi possono essere posizionati sotto app / design, che non è spedito in un pacchetto.
-I pacchetti sono l’unità di download per Composer e, tramite Commerci Marketplace, gli utenti Commerce possono scaricare CE o EE come una serie di pacchetti, in cui i pacchetti contengono moduli, temi o pacchetti di lingue.
+I pacchetti sono l&#39;unità di download per Composer e, tramite Commerci Marketplace, gli utenti di Commerce possono scaricare CE o EE come una serie di pacchetti, in cui i pacchetti contengono moduli, temi o pacchetti di lingue.
 
 _Attributi termine:_
 
@@ -1438,7 +1438,7 @@ _Attributi termine:_
 _sostantivo_
 
 Il codice prodotto dal fornitore che estende o personalizza il comportamento di Commerce e funziona come estensione di terze parti è considerato un’estensione in bundle con il fornitore (VBE).
-I VBE vengono accuratamente testati e inclusi in ogni versione supportata del Magento Open Source e di Adobe Commerce.
+Le VBE vengono testate accuratamente e incluse in ogni versione supportata di Adobe Commerce.
 Un VBE può includere moduli, temi e pacchetti di lingue.
 
 Per ulteriori informazioni, consulta [Argomento Estensione in bundle fornitore](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).

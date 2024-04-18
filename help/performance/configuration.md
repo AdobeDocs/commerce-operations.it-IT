@@ -1,11 +1,11 @@
 ---
 title: Best practice per la configurazione
-description: Ottimizza i tempi di risposta dell’implementazione di Adobe Commerce o di Magento Open Source utilizzando queste best practice.
+description: Ottimizza i tempi di risposta dell’implementazione di Adobe Commerce utilizzando queste best practice.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ Quando avvii lo store in produzione, attiva tutte le cache da **[!UICONTROL Syst
 
 ## Notifiche e-mail asincrone
 
-L’abilitazione dell’impostazione &quot;Notifiche e-mail asincrone&quot; sposta in background i processi che gestiscono le notifiche e-mail di pagamento e di elaborazione dell’ordine. Per abilitare questa funzione, vai a **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Consulta [E-mail vendite](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) nel _Guida utente del Magento Open Source_ per ulteriori informazioni.
+L’abilitazione dell’impostazione &quot;Notifiche e-mail asincrone&quot; sposta in background i processi che gestiscono le notifiche e-mail di pagamento e di elaborazione dell’ordine. Per abilitare questa funzione, vai a **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Consulta [E-mail vendite](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) nel _Guida utente dell’amministratore_ per ulteriori informazioni.
 
 ## Elaborazione dati ordine asincrono
 
-Ci possono essere momenti in cui si verificano vendite intensive in una vetrina nello stesso momento in cui [!DNL Commerce] sta eseguendo un&#39;elaborazione intensiva degli ordini. Puoi configurare [!DNL Commerce] distinguere questi due pattern di traffico a livello di database per evitare conflitti tra le operazioni di lettura e scrittura nelle tabelle corrispondenti. Puoi archiviare e indicizzare i dati dell’ordine in modo asincrono. Gli ordini vengono archiviati temporaneamente e spostati in blocco nella griglia di Order Management senza conflitti. Puoi attivare questa opzione da **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. Consulta [Aggiornamenti pianificati alla griglia](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) nel _Guida utente del Magento Open Source_ per ulteriori informazioni.
+Ci possono essere momenti in cui si verificano vendite intensive in una vetrina nello stesso momento in cui [!DNL Commerce] sta eseguendo un&#39;elaborazione intensiva degli ordini. Puoi configurare [!DNL Commerce] distinguere questi due pattern di traffico a livello di database per evitare conflitti tra le operazioni di lettura e scrittura nelle tabelle corrispondenti. Puoi archiviare e indicizzare i dati dell’ordine in modo asincrono. Gli ordini vengono archiviati temporaneamente e spostati in blocco nella griglia di Order Management senza conflitti. Puoi attivare questa opzione da **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. Consulta [Aggiornamenti pianificati alla griglia](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) nel _Guida utente dell’amministratore_ per ulteriori informazioni.
 
 >[!WARNING]
 >

@@ -1,10 +1,10 @@
 ---
 user-guide-title: Guida alla configurazione
-user-guide-description: Configura le funzioni e i servizi dell’applicazione Adobe Commerce o di Magento Open Source.
+user-guide-description: Configura le funzioni e i servizi dell’applicazione Adobe Commerce.
 feature: Configuration
-source-git-commit: b61a2726e1a26229515d28332bbd88ba3d416a98
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
       + [Panoramica sulla vernice](cache/config-varnish.md)
       + [Installa vernice](cache/config-varnish-install.md)
    + [Server web](cache/config-varnish-server.md)
-   + [Configura applicazione Commerce](cache/configure-varnish-commerce.md)
+   + [Configurare l’applicazione Commerce](cache/configure-varnish-commerce.md)
    + [Configurazione vernice avanzata](cache/config-varnish-advanced.md)
    + [Cancellazione della cache](cache/use-varnish-cache.md)
    + [Cancellazione della cache di più istanze di vernice](cache/use-multiple-varnish-cache.md)
@@ -76,7 +76,7 @@ ht-degree: 0%
    + [Eseguire unit test](cli/unit-tests.md)
    + [Conversione di file di layout](cli/convert-layout-files.md)
    + [Genera dati per test delle prestazioni](cli/generate-data.md)
-   + [Eseguire utilità di supporto (solo Commerce)](cli/run-support-utilities.md)
+   + [Esecuzione di utilità di supporto (solo Commerce)](cli/run-support-utilities.md)
 + File di configurazione {#files}
    + [File di configurazione per la distribuzione](reference/deployment-files.md)
    + [Tipi di configurazione](reference/config-create-types.md)

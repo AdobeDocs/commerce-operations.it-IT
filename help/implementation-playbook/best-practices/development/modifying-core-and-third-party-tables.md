@@ -5,9 +5,9 @@ role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Per ulteriori informazioni sull’utilizzo di API mesh con GraphQL, consulta [Co
 Se stabilisci che i dati legacy devono essere migrati o che i nuovi dati devono essere salvati in [!DNL Adobe Commerce], Adobe consiglia di utilizzare [attributi di estensione](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. L’utilizzo degli attributi di estensione per salvare dati aggiuntivi offre i seguenti vantaggi:
 
 - Puoi controllare i dati persistenti e la struttura del database, in modo da garantire che vengano salvati con il tipo di colonna e gli indici corretti.
-- La maggior parte delle entità in [!DNL Adobe Commerce] e [!DNL Magento Open Source] supporta l’utilizzo degli attributi di estensione.
+- La maggior parte delle entità in [!DNL Adobe Commerce] supporta l’utilizzo degli attributi di estensione.
 - Gli attributi di estensione sono un meccanismo indipendente dall’archiviazione che offre la flessibilità di salvare i dati nella posizione ottimale per il progetto.
 
 Due esempi di percorsi di archiviazione sono le tabelle di database e [!DNL Redis]. Quando si sceglie una posizione, è importante considerare se la posizione comporta una complessità aggiuntiva o influisce sulle prestazioni.

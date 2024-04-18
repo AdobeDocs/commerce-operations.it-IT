@@ -1,10 +1,10 @@
 ---
 title: Configurare l’archivio
-description: Per configurare l’archivio Adobe Commerce o di Magento Open Source, segui la procedura riportata di seguito.
+description: Per configurare il tuo archivio Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---

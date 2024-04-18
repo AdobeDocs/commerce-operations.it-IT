@@ -2,9 +2,9 @@
 title: Configurare una connessione remota al database MySQL
 description: Per configurare una connessione a un database remoto per le installazioni locali di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Prima di iniziare, è necessario:
 
 * [Installa server MySQL](mysql.md) sul server di database.
 * [Creare un’istanza di database](mysql.md#configuring-the-database-instance) sul server di database.
-* Installare il client MySQL nel nodo Web di Adobe Commerce o di Magento Open Source. Per ulteriori informazioni, consultare la documentazione MySQL.
+* Installa il client MySQL nel nodo Web di Adobe Commerce. Per ulteriori informazioni, consultare la documentazione MySQL.
 
 ### Elevata disponibilità
 
@@ -136,7 +136,7 @@ Nell’host del nodo web, immetti il seguente comando per verificare il funziona
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
-Se il monitoraggio MySQL viene visualizzato come segue, il database è pronto per Adobe Commerce o Magento Open Source:
+Se il monitoraggio MySQL viene visualizzato come segue, il database è pronto per Adobe Commerce:
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -151,9 +151,9 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 Se il server Web è in cluster, immettere il comando su ciascun host del server Web.
 
-## Installare Adobe Commerce o Magento Open Source
+## Installare Adobe Commerce
 
-Quando installi Adobe Commerce o Magento Open Source, devi specificare quanto segue:
+Quando installi Adobe Commerce, devi specificare quanto segue:
 
 * L’URL di base (noto anche come *indirizzo store*) specifica il nome host o l’indirizzo IP del *nodo web*
 * L&#39;host del database è *server di database remoto* Indirizzo IP (o load balancer se il server di database è in cluster)
