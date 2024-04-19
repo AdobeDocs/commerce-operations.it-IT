@@ -2,9 +2,9 @@
 title: Server applicazioni GraphQL
 description: Segui queste istruzioni per abilitare il server applicazioni GraphQL nella tua distribuzione Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: a1e548c1b1bffd634e0d5b1df0a77ef65c5997f8
+source-git-commit: b89ed5ddb4c6361de22d4a4439ffcfcc3ec8d474
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '2267'
 ht-degree: 0%
 
 ---
@@ -360,3 +360,40 @@ Esegui `GraphQlStateTest` eseguendo `vendor/bin/phpunit -c $(pwd)/dev/tests/inte
 ### Test funzionali
 
 Durante la distribuzione di GraphQL Application Server, gli sviluppatori di estensioni devono eseguire test funzionali WebAPI per GraphQL, nonché eventuali test funzionali personalizzati automatizzati o manuali per GraphQL. Questi test funzionali aiutano gli sviluppatori a identificare potenziali errori o problemi di compatibilità.
+
+#### Modalità di monitoraggio stato
+
+Durante l&#39;esecuzione dei test funzionali (o manuali), il server applicazioni può essere eseguito con `--state-monitor mode` è abilitata per aiutare a trovare le classi in cui lo stato viene riutilizzato involontariamente. Avviare l&#39;Application Server normalmente, ad eccezione dell&#39;aggiunta di `--state-monitor` parametro.
+
+```
+bin/magento server:run --state-monitor
+```
+
+Dopo l’elaborazione di ogni richiesta, viene aggiunto un nuovo file alla `tmp` ad esempio: `var/tmp/StateMonitor-thread-output-50-6nmxiK`. Al termine del test, questi file possono essere uniti con `bin/magento server:state-monitor:aggregate-output` che crea due file uniti, uno in `XML` e uno su `JSON`.
+
+Esempi:
+
+```
+/var/workspace/var/tmp/StateMonitor-json-2024-04-10T18:50:39Z-hW0ucN.json
+/var/workspace/var/tmp/StateMonitor-junit-2024-04-10T18:50:39Z-oreUco.xml
+```
+
+Questi file possono essere esaminati con qualsiasi strumento utilizzato per visualizzare XML o JSON, che mostrerà le proprietà modificate degli oggetti di servizio come GraphQlStateTest. Il `--state-monitor` La modalità utilizza lo stesso elenco di salto e lo stesso elenco di filtri di GraphQlStateTest.
+
+>[!NOTE]
+>
+>Non utilizzare il `--state-monitor` in produzione. È progettato solo per lo sviluppo e il testing. Crea molti file di output e viene eseguito più lentamente del normale.
+
+>[!NOTE]
+>
+>`--state-monitor` non è compatibile con le versioni PHP `8.3.0` - `8.3.4` a causa di un bug nel Garbage Collector PHP. Se si utilizza PHP 8.3, è necessario eseguire l&#39;aggiornamento a `8.3.5` o più recente per utilizzare questa funzione.
+
+## Problemi noti
+
+### Richieste perse in caso di fine del thread di lavoro.
+
+Se si verifica un problema con un thread di lavoro che causa la fine del thread di lavoro, tutte le richieste HTTP già accodate allo stesso thread di lavoro verranno reimpostate per la connessione al socket TCP. Con un proxy inverso, come NGINX, davanti al server, questi errori verranno visualizzati come `502` errori. I lavoratori possono morire a causa di arresti anomali, esaurimento della memoria o errori PHP nelle estensioni di terze parti. Questo problema è causato dal comportamento predefinito del server HTTP di Swoole. Per impostazione predefinita, il server HTTP viene avviato in `SWOOLE_BASE` modalità. In questa modalità, le richieste HTTP in arrivo vengono assegnate ai thread di lavoro in una coda, anche se il thread di lavoro sta ancora elaborando una richiesta precedente. Se si modifica questo in `SWOOLE_PROCESS` in questo modo, le connessioni vengono mantenute dal processo principale e viene utilizzata una comunicazione tra i processi molto più ampia. L’inconveniente per `SWOOLE_PROCESS` è che non supporta PHP ZTS. Leggi le [Documentazione di Swoole](https://wiki.swoole.com/en/#/learn?id=swoole_process) per ulteriori informazioni.
+
+### Application Server può utilizzare la configurazione degli attributi precedente in determinate condizioni.
+
+Il `CatalogGraphQl\Model\Config\AttributeReader` in `2.4.7` contiene un bug raro che può causare la ricezione di una risposta da parte di una richiesta GraphQL utilizzando lo stato precedente della configurazione degli attributi. Correzione di questo problema distribuita in `2.4-develop`, ma non in tempo per `2.4.7` versione.
