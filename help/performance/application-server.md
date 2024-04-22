@@ -2,9 +2,9 @@
 title: Server applicazioni GraphQL
 description: Segui queste istruzioni per abilitare il server applicazioni GraphQL nella tua distribuzione Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: b89ed5ddb4c6361de22d4a4439ffcfcc3ec8d474
+source-git-commit: 81320626a83e26a55f9ec14ce8cb706753b44269
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2293'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,11 @@ Il `ApplicationServer` modulo (`Magento/ApplicationServer/`) abilita GraphQL App
 
 ### Abilita progetti Pro
 
-Prima di distribuire GraphQL Application Server su progetti Pro, effettuare le seguenti operazioni:
+>[!NOTE]
+>
+>Il server applicazioni è una funzione di consenso nelle istanze di Cloud Pro. Per abilitarlo, invia una richiesta di supporto.
+
+Dopo aver attivato la funzionalità Application Server nel progetto Pro, completare i passaggi seguenti prima di distribuire GraphQL Application Server:
 
 1. Distribuire Adobe Commerce sull’infrastruttura cloud utilizzando il modello cloud di [Ramo 2.4.7-appserver](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Assicurati che tutte le personalizzazioni ed estensioni di Commerce siano [compatibile](https://developer.adobe.com/commerce/php/development/components/app-server/) con GraphQL Application Server.
