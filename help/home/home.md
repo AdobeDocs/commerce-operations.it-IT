@@ -1,80 +1,35 @@
 ---
-keywords: Adobe Commerce;home;argomenti popolari
-title: Home
+title: Home Guide operative
 description: Sfoglia un indice della documentazione del prodotto operativo e di amministrazione del sistema di Adobe Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 5b294d586b58689a576f411b33d95e4dfa76076e
+source-git-commit: 0e3d5c0f7c0636bb690eea8643afdace074f0ffd
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 17%
+source-wordcount: '198'
+ht-degree: 20%
 
 ---
 
+
 # Guide operative di Adobe Commerce
 
-Ottieni informazioni pratiche su concetti, processi, strumenti e best practice per sviluppare, distribuire e gestire progetti Adobe Commerce.
+Utilizza questa raccolta di guide per scoprire concetti, processi, strumenti e best practice per l’amministrazione del sistema al fine di pianificare, configurare, distribuire e gestire i progetti Adobe Commerce.
+
+## Pianificazione e orientamento
 
 <table>
 <tr>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html">
-      <img alt="Informazioni sulla versione" src="../assets/icons/promote.svg" width="40" height="40"/>
+    <a href="../release/latest.md">
+      <img alt="Informazioni sulla versione" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html"><strong>Informazioni sulla versione</strong></a>
+      <a href="../release/latest.md"><strong>Informazioni sulla versione</strong></a>
       <p>Rivedi tutte le informazioni sulla versione per le patch e i servizi Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
-    <a href="../installation/overview.md">
-      <img alt="Installazione" src="../assets/icons/servers.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="../installation/overview.md"><strong>Installazione</strong></a>
-      <p>Scopri come installare Adobe Commerce per le distribuzioni on-premise.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../configuration/overview.md">
-      <img alt="Configurazione" src="../assets/icons/settings.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="../configuration/overview.md"><strong>Configurazione</strong></a>
-      <p>Configura funzioni e servizi per l’applicazione Adobe Commerce.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../tools/data-migration-tool/how-migration-works.md">
-      <img alt="Migrazione dei dati" src="../assets/icons/move-to.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Migrazione dei dati</strong></a>
-      <p>Scopri il processo di migrazione dei dati tra il Magento 1 e il Magento 2.</p>
-    </div>
-  </td>
-</tr>
-<tr>
-  <td valign="top">
-    <a href="../upgrade/overview.md">
-      <img alt="Aggiorna" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="../upgrade/overview.md"><strong>Aggiorna</strong></a>
-      <p>Scopri come aggiornare il progetto Adobe Commerce per mantenere la vetrina sicura e funzionante in modo efficiente.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html">
-       <img alt="Riferimento per gli strumenti della riga di comando" src="../assets/icons/page-rule.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html"><strong>Riferimento agli strumenti della riga di comando</strong></a>
-      <p>Scopri i comandi, gli argomenti e le opzioni degli strumenti della riga di comando di Adobe Commerce.</p>
-    </div>
-  </td>
-  <td valign="top">
     <a href="../performance/overview.md">
-       <img alt="Prestazioni" src="../assets/icons/gauge.svg" width="40" height="40"/>
+       <img alt="Prestazioni" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
       <a href="../performance/overview.md"><strong>Best practice per le prestazioni</strong></a>
@@ -82,19 +37,19 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
     </div>
   </td>
   <td valign="top">
-    <a href="../tools/overview.md">
-       <img alt="Strumenti" src="../assets/icons/wrench.svg" width="40" height="40"/>
+    <a href="../security-and-compliance/overview.md">
+       <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40"/>
     </a>
     <div>
-      <a href="../tools/overview.md"><strong>Strumenti</strong></a>
-      <p>Scopri gli strumenti che puoi utilizzare con Adobe Commerce.</p>
+      <a href="../security-and-compliance/overview.md"><strong>Sicurezza e conformità</strong></a>
+      <p>Scopri in che modo i commercianti di Adobe Commerce sono responsabili della gestione di un ambiente sicuro.</p>
     </div>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <a href="../implementation-playbook/overview.md">
-      <img alt="Implementazione" src="../assets/icons/play.svg" width="40" height="40"/>
+      <img alt="Implementazione" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
       <a href="../implementation-playbook/overview.md"><strong>Playbook di implementazione</strong></a>
@@ -103,7 +58,7 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
   </td>
   <td valign="top">
     <a href="../operational-playbook/overview.md">
-       <img alt="Operazioni" src="../assets/icons/refresh.svg" width="40" height="40"/>
+       <img alt="Operazioni" src="../assets/icons/refresh.svg" width="40"/>
     </a>
     <div>
       <a href="../operational-playbook/overview.md"><strong>Playbook operativo</strong></a>
@@ -111,21 +66,55 @@ Ottieni informazioni pratiche su concetti, processi, strumenti e best practice p
     </div>
   </td>
   <td valign="top">
-    <a href="../operational-playbook/overview.md">
-       <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40" height="40"/>
+    <a href="../commerce-at-scale/overview.md">
+       <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40"/>
     </a>
     <div>
       <a href="../commerce-at-scale/overview.md"><strong>Commerce su larga scala</strong></a>
       <p>Scopri come distribuire esperienze su larga scala utilizzando Adobe Commerce con Adobe Experience Manager.</p>
     </div>
   </td>
+</tr>
+</table>
+
+## Gestione del sistema
+
+<table>
+<tr>
   <td valign="top">
-    <a href="../security-and-compliance/overview.md">
-       <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40" height="40"/>
+    <a href="../installation/overview.md">
+      <img alt="Installazione (on-premise)" src="../assets/icons/servers.svg" width="40"/>
     </a>
     <div>
-      <a href="../security-and-compliance/overview.md"><strong>Sicurezza e conformità</strong></a>
-      <p>Scopri in che modo i commercianti di Adobe Commerce sono responsabili della gestione di un ambiente sicuro.</p>
+      <a href="../installation/overview.md"><strong>Installazione</strong></a>
+      <p>Scopri come installare Adobe Commerce per le distribuzioni on-premise.</p>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="../configuration/overview.md">
+      <img alt="Configurazione" src="../assets/icons/settings.svg" width="40"/>
+    </a>
+    <div>
+      <a href="../configuration/overview.md"><strong>Configurazione</strong></a>
+      <p>Configura funzioni e servizi per l’applicazione Adobe Commerce.</p>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="../upgrade/overview.md">
+      <img alt="Aggiorna" src="../assets/icons/upload-cloud.svg" width="40"/>
+    </a>
+    <div>
+      <a href="../upgrade/overview.md"><strong>Aggiorna</strong></a>
+      <p>Scopri come aggiornare il progetto Adobe Commerce per mantenere la vetrina sicura e funzionante in modo efficiente.</p>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="../tools/overview.md">
+       <img alt="Strumenti" src="../assets/icons/wrench.svg" width="40"/>
+    </a>
+    <div>
+      <a href="../tools/overview.md"><strong>Strumenti</strong></a>
+      <p>Scopri gli strumenti che puoi utilizzare con Adobe Commerce.</p>
     </div>
   </td>
 </tr>

@@ -2,26 +2,24 @@
 user-guide-title: Guide operative
 user-guide-description: Scopri gli aspetti operativi della manutenzione dell’applicazione Adobe Commerce.
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 3%
+source-wordcount: '48'
+ht-degree: 4%
 
 ---
 
 
 # Guide operative di Adobe Commerce {#operational-guides}
 
-- [Home](home.md)
-- [Informazioni sulla versione](https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html)
-- [Installazione](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html)
-- [Configurazione](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html)
-- [Migrazione dei dati](https://experienceleague.adobe.com/docs/commerce-operations/tools/data-migration/how-migration-works.html)
-- [Aggiorna](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
-- [Best practice per le prestazioni](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html)
-- [Strumenti](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html)
-- [Strumenti della riga di comando](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-- [Playbook di implementazione](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
-- [Playbook operativo](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
-- [Commerce su larga scala](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/overview.html)
-- [Sicurezza e conformità](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/overview.html)
+- [Home Guide operative](home.md)
+- [Informazioni sulla versione](https://experienceleague.adobe.com/en/docs/commerce-operations/release/latest)
+- [Prestazioni](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
+- [Sicurezza e conformità](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
+- [Playbook di implementazione](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)
+- [Playbook operativo](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/overview)
+- [Commerce su larga scala](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
+- [Installazione (on-premise)](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+- [Configurazione](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/overview)
+- [Aggiorna](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)
+- [Strumenti](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview)

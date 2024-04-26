@@ -2,10 +2,10 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 2%
+source-wordcount: '182'
+ht-degree: 3%
 
 ---
 
@@ -30,6 +30,10 @@ ht-degree: 2%
    - [[!DNL Quality Patches Tool]: cerca le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilizzo](quality-patches-tool/usage.md)
    - [Note sulla versione](quality-patches-tool/release-notes.md)
+- Riferimento per gli strumenti della riga di comando {#cli-reference}
+   - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
+   - [Magento Open Source](reference/magento-open-source.md)
+   - [Upgrade Compatibility Tool](reference/uct.md)
 - Osservazione per Adobe Commerce {#observation-for-adobe-commerce}
    - [Introduzione](observation-for-adobe-commerce/intro.md)
    - [Come accedere](observation-for-adobe-commerce/access.md)
