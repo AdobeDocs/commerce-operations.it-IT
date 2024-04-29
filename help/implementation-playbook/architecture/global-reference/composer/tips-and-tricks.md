@@ -3,13 +3,15 @@ title: Suggerimenti e trucchi per il compositore
 description: Scopri le attività di sviluppo comuni del Compositore e le linee guida per risolvere rapidamente i problemi.
 feature: Best Practices
 role: Developer
-source-git-commit: b4213c40fdf903fd962a15fc99b143f31aedbcde
+hide: true
+hidefromtoc: true
+exl-id: 5ead5fb1-3bb3-4e77-a4f1-8e10c4f91efb
+source-git-commit: 80cf4dc2b5c9dd690aee1b224fbe6c766fe8f2ab
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
-
 
 # Suggerimenti e trucchi per il compositore
 
