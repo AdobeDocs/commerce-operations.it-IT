@@ -1,7 +1,7 @@
 ---
-source-git-commit: 755ea50a75924cc16f690ff888367abd305565e9
+source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
 workflow-type: tm+mt
-source-wordcount: '21455'
+source-wordcount: '21169'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,12 @@ Utilizza il [&quot;Aggiungi comandi CLI&quot;](https://developer.adobe.com/comme
 
 ## `_complete`
 
-Comando interno per fornire suggerimenti per il completamento della shell
-
 ```bash
 bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
+
+Comando interno per fornire suggerimenti per il completamento della shell
+
 
 ### `--shell`, `-s`
 
@@ -66,7 +67,7 @@ obsoleto
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -115,10 +116,40 @@ Non porre domande interattive
 
 ## `completion`
 
-Scarica lo script di completamento della shell
-
 ```bash
 bin/magento completion [--debug] [--] [<shell>]
+```
+
+Scarica lo script di completamento della shell
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently, bash, fish, zsh completion are supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    bin/magento completion  | sudo tee /etc/bash_completion.d/magento
+
+Or dump the script to a local file and source it:
+
+    bin/magento completion  > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/www/html/magento2/bin/magento completion )"
 ```
 
 
@@ -136,7 +167,7 @@ Suddividi il registro di debug di completamento
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -185,10 +216,23 @@ Non porre domande interattive
 
 ## `help`
 
-Visualizza la Guida per un comando
-
 ```bash
 bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+Visualizza la Guida per un comando
+
+
+```
+The help command displays help for a given command:
+
+  bin/magento help list
+
+You can also output the help in other formats by using the --format option:
+
+  bin/magento help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -215,7 +259,7 @@ Per visualizzare la guida dei comandi raw
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -264,10 +308,29 @@ Non porre domande interattive
 
 ## `list`
 
-Comandi elenco
-
 ```bash
 bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+Comandi elenco
+
+
+```
+The list command lists all commands:
+
+  bin/magento list
+
+You can also display the commands for a specific namespace:
+
+  bin/magento list test
+
+You can also output the information in other formats by using the --format option:
+
+  bin/magento list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  bin/magento list --raw
 ```
 
 
@@ -299,7 +362,7 @@ Per ignorare la descrizione degli argomenti dei comandi
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -348,15 +411,16 @@ Non porre domande interattive
 
 ## `admin:adobe-ims:disable`
 
-Disattiva modulo Adobe IMS
-
 ```bash
 bin/magento admin:adobe-ims:disable
 ```
 
+Disattiva modulo Adobe IMS
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -405,11 +469,12 @@ Non porre domande interattive
 
 ## `admin:adobe-ims:enable`
 
-Abilita il modulo Adobe IMS.
-
 ```bash
 bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|--client-id [CLIENT-ID]] [-s|--client-secret [CLIENT-SECRET]] [-t|--2fa [2FA]]
 ```
+
+Abilita il modulo Adobe IMS.
+
 
 ### `--organization-id`, `-o`
 
@@ -437,7 +502,7 @@ Verificare se 2FA è abilitato per l&#39;organizzazione in Adobe Admin Console. 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -486,15 +551,16 @@ Non porre domande interattive
 
 ## `admin:adobe-ims:info`
 
-Informazioni sulla configurazione del modulo Adobe IMS
-
 ```bash
 bin/magento admin:adobe-ims:info
 ```
 
+Informazioni sulla configurazione del modulo Adobe IMS
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -543,15 +609,16 @@ Non porre domande interattive
 
 ## `admin:adobe-ims:status`
 
-Stato del modulo Adobe IMS
-
 ```bash
 bin/magento admin:adobe-ims:status
 ```
 
+Stato del modulo Adobe IMS
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -600,11 +667,12 @@ Non porre domande interattive
 
 ## `admin:user:create`
 
-Crea un amministratore
-
 ```bash
 bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-PASSWORD] [--admin-email ADMIN-EMAIL] [--admin-firstname ADMIN-FIRSTNAME] [--admin-lastname ADMIN-LASTNAME] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Crea un amministratore
+
 
 ### `--admin-user`
 
@@ -644,7 +712,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -693,10 +761,17 @@ Non porre domande interattive
 
 ## `admin:user:unlock`
 
-Sblocca account amministratore
-
 ```bash
 bin/magento admin:user:unlock <username>
+```
+
+Sblocca account amministratore
+
+
+```
+This command unlocks an admin account by its username.
+To unlock:
+      bin/magento admin:user:unlock username
 ```
 
 
@@ -708,7 +783,7 @@ Nome utente amministratore da sbloccare
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -757,11 +832,12 @@ Non porre domande interattive
 
 ## `app:config:dump`
 
-Crea dump dell’applicazione
-
 ```bash
 bin/magento app:config:dump [<config-types>...]
 ```
+
+Crea dump dell’applicazione
+
 
 
 ### `config-types`
@@ -774,7 +850,7 @@ Elenco separato da spazi dei tipi di configurazione o ometti di scaricare tutto 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -823,15 +899,16 @@ Non porre domande interattive
 
 ## `app:config:import`
 
-Importare dati da file di configurazione condivisi nell&#39;archivio dati appropriato
-
 ```bash
 bin/magento app:config:import
 ```
 
+Importare dati da file di configurazione condivisi nell&#39;archivio dati appropriato
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -880,15 +957,16 @@ Non porre domande interattive
 
 ## `app:config:status`
 
-Controlla se la propagazione della configurazione richiede un aggiornamento
-
 ```bash
 bin/magento app:config:status
 ```
 
+Controlla se la propagazione della configurazione richiede un aggiornamento
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -937,11 +1015,12 @@ Non porre domande interattive
 
 ## `braintree:migrate`
 
-Migrazione di schede memorizzate da un database del Magento 1
-
 ```bash
 bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password PASSWORD]
 ```
+
+Migrazione di schede memorizzate da un database del Magento 1
+
 
 ### `--host`
 
@@ -969,7 +1048,7 @@ Password
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1018,11 +1097,12 @@ Non porre domande interattive
 
 ## `cache:clean`
 
-Pulisce i tipi di cache
-
 ```bash
 bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Pulisce i tipi di cache
+
 
 
 ### `types`
@@ -1041,7 +1121,7 @@ aggiungere o sostituire i parametri del bootstrap
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1090,11 +1170,12 @@ Non porre domande interattive
 
 ## `cache:disable`
 
-Disabilita i tipi di cache
-
 ```bash
 bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Disabilita i tipi di cache
+
 
 
 ### `types`
@@ -1113,7 +1194,7 @@ aggiungere o sostituire i parametri del bootstrap
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1162,11 +1243,12 @@ Non porre domande interattive
 
 ## `cache:enable`
 
-Abilita i tipi di cache
-
 ```bash
 bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Abilita i tipi di cache
+
 
 
 ### `types`
@@ -1185,7 +1267,7 @@ aggiungere o sostituire i parametri del bootstrap
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1234,11 +1316,12 @@ Non porre domande interattive
 
 ## `cache:flush`
 
-Svuota la memoria cache utilizzata dai tipi di cache
-
 ```bash
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Svuota la memoria cache utilizzata dai tipi di cache
+
 
 
 ### `types`
@@ -1257,7 +1340,7 @@ aggiungere o sostituire i parametri del bootstrap
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1306,11 +1389,12 @@ Non porre domande interattive
 
 ## `cache:status`
 
-Verifica lo stato della cache
-
 ```bash
 bin/magento cache:status [--bootstrap BOOTSTRAP]
 ```
+
+Verifica lo stato della cache
+
 
 ### `--bootstrap`
 
@@ -1320,7 +1404,7 @@ aggiungere o sostituire i parametri del bootstrap
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1369,11 +1453,12 @@ Non porre domande interattive
 
 ## `catalog:images:resize`
 
-Crea immagini prodotto ridimensionate
-
 ```bash
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 ```
+
+Crea immagini prodotto ridimensionate
+
 
 ### `--async`, `-a`
 
@@ -1391,7 +1476,7 @@ Non elaborare le immagini contrassegnate come nascoste dalla pagina prodotto
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1440,15 +1525,16 @@ Non porre domande interattive
 
 ## `catalog:product:attributes:cleanup`
 
-Rimuove gli attributi di prodotto inutilizzati.
-
 ```bash
 bin/magento catalog:product:attributes:cleanup
 ```
 
+Rimuove gli attributi di prodotto inutilizzati.
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1497,11 +1583,12 @@ Non porre domande interattive
 
 ## `cms:wysiwyg:restrict`
 
-Imposta se applicare la convalida del contenuto di User HTML o mostrare un avviso
-
 ```bash
 bin/magento cms:wysiwyg:restrict <restrict>
 ```
+
+Imposta se applicare la convalida del contenuto di User HTML o mostrare un avviso
+
 
 
 ### `restrict`
@@ -1512,7 +1599,7 @@ y\n
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1561,11 +1648,12 @@ Non porre domande interattive
 
 ## `config:sensitive:set`
 
-Imposta valori di configurazione sensibili
-
 ```bash
 bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path> [<value>]]
 ```
+
+Imposta valori di configurazione sensibili
+
 
 
 ### `path`
@@ -1601,7 +1689,7 @@ Codice ambito per la configurazione, stringa vuota per impostazione predefinita
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1650,11 +1738,12 @@ Non porre domande interattive
 
 ## `config:set`
 
-Modificare la configurazione del sistema
-
 ```bash
 bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env] [-c|--lock-config] [-l|--lock] [--] <path> <value>
 ```
+
+Modificare la configurazione del sistema
+
 
 
 ### `path`
@@ -1705,7 +1794,7 @@ Obsoleto, utilizza invece l’opzione —lock-env.
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1754,11 +1843,12 @@ Non porre domande interattive
 
 ## `config:show`
 
-Mostra il valore di configurazione per il percorso specificato. Se non si specifica il percorso, verranno visualizzati tutti i valori salvati
-
 ```bash
 bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path>]
 ```
+
+Mostra il valore di configurazione per il percorso specificato. Se non si specifica il percorso, verranno visualizzati tutti i valori salvati
+
 
 
 ### `path`
@@ -1782,7 +1872,7 @@ Codice ambito (obbligatorio solo se l’ambito non è `default`)
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1831,11 +1921,12 @@ Non porre domande interattive
 
 ## `cron:install`
 
-Genera e installa crontab per l&#39;utente corrente
-
 ```bash
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
+
+Genera e installa crontab per l&#39;utente corrente
+
 
 ### `--force`, `-f`
 
@@ -1853,7 +1944,7 @@ Installa solo le attività non facoltative (predefinite)
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1902,15 +1993,16 @@ Non porre domande interattive
 
 ## `cron:remove`
 
-Rimuove le attività da crontab
-
 ```bash
 bin/magento cron:remove
 ```
 
+Rimuove le attività da crontab
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1959,11 +2051,12 @@ Non porre domande interattive
 
 ## `cron:run`
 
-Esegue i processi per pianificazione
-
 ```bash
 bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootstrap BOOTSTRAP]
 ```
+
+Esegue i processi per pianificazione
+
 
 ### `--group`
 
@@ -1986,7 +2079,7 @@ Aggiungere o sostituire i parametri del bootstrap
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2035,15 +2128,16 @@ Non porre domande interattive
 
 ## `customer:hash:upgrade`
 
-Aggiorna l’hash del cliente in base all’algoritmo più recente
-
 ```bash
 bin/magento customer:hash:upgrade
 ```
 
+Aggiorna l’hash del cliente in base all’algoritmo più recente
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2092,11 +2186,12 @@ Non porre domande interattive
 
 ## `deploy:mode:set`
 
-Impostare la modalità applicazione.
-
 ```bash
 bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 ```
+
+Impostare la modalità applicazione.
+
 
 
 ### `mode`
@@ -2114,7 +2209,7 @@ Ignora la cancellazione e la rigenerazione del contenuto statico (codice generat
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2163,15 +2258,16 @@ Non porre domande interattive
 
 ## `deploy:mode:show`
 
-Visualizza la modalità di applicazione corrente.
-
 ```bash
 bin/magento deploy:mode:show
 ```
 
+Visualizza la modalità di applicazione corrente.
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2220,11 +2316,12 @@ Non porre domande interattive
 
 ## `dev:di:info`
 
-Fornisce informazioni sulla configurazione di Iniezione dipendenze per il comando.
-
 ```bash
 bin/magento dev:di:info <class>
 ```
+
+Fornisce informazioni sulla configurazione di Iniezione dipendenze per il comando.
+
 
 
 ### `class`
@@ -2235,7 +2332,7 @@ Nome classe
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2284,15 +2381,16 @@ Non porre domande interattive
 
 ## `dev:email:newsletter-compatibility-check`
 
-Analizza i modelli di newsletter per potenziali problemi di compatibilità dell’utilizzo delle variabili
-
 ```bash
 bin/magento dev:email:newsletter-compatibility-check
 ```
 
+Analizza i modelli di newsletter per potenziali problemi di compatibilità dell’utilizzo delle variabili
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2341,15 +2439,16 @@ Non porre domande interattive
 
 ## `dev:email:override-compatibility-check`
 
-Analizza le sostituzioni del modello e-mail per potenziali problemi di compatibilità dell’utilizzo delle variabili
-
 ```bash
 bin/magento dev:email:override-compatibility-check
 ```
 
+Analizza le sostituzioni del modello e-mail per potenziali problemi di compatibilità dell’utilizzo delle variabili
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2398,15 +2497,16 @@ Non porre domande interattive
 
 ## `dev:profiler:disable`
 
-Disattiva il profiler.
-
 ```bash
 bin/magento dev:profiler:disable
 ```
 
+Disattiva il profiler.
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2455,11 +2555,12 @@ Non porre domande interattive
 
 ## `dev:profiler:enable`
 
-Abilita il profiler.
-
 ```bash
 bin/magento dev:profiler:enable [<type>]
 ```
+
+Abilita il profiler.
+
 
 
 ### `type`
@@ -2469,7 +2570,7 @@ Tipo di profiler
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2518,15 +2619,16 @@ Non porre domande interattive
 
 ## `dev:query-log:disable`
 
-Disabilita registrazione query DB
-
 ```bash
 bin/magento dev:query-log:disable
 ```
 
+Disabilita registrazione query DB
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2575,11 +2677,12 @@ Non porre domande interattive
 
 ## `dev:query-log:enable`
 
-Abilita registrazione query DB
-
 ```bash
 bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
 ```
+
+Abilita registrazione query DB
+
 
 ### `--include-all-queries`
 
@@ -2604,7 +2707,7 @@ Include lo stack di chiamate. [true\|false]
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2653,11 +2756,12 @@ Non porre domande interattive
 
 ## `dev:source-theme:deploy`
 
-Raccoglie e pubblica i file di origine per il tema.
-
 ```bash
 bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA] [--theme THEME] [--] [<file>...]
 ```
+
+Raccoglie e pubblica i file di origine per il tema.
+
 
 
 ### `file`
@@ -2698,7 +2802,7 @@ Tema: [Fornitore/tema]
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2747,15 +2851,16 @@ Non porre domande interattive
 
 ## `dev:template-hints:disable`
 
-Disattiva gli hint modello front-end. Potrebbe essere necessario svuotare la cache.
-
 ```bash
 bin/magento dev:template-hints:disable
 ```
 
+Disattiva gli hint modello front-end. Potrebbe essere necessario svuotare la cache.
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2804,15 +2909,16 @@ Non porre domande interattive
 
 ## `dev:template-hints:enable`
 
-Abilitare gli hint modello front-end. Potrebbe essere necessario svuotare la cache.
-
 ```bash
 bin/magento dev:template-hints:enable
 ```
 
+Abilitare gli hint modello front-end. Potrebbe essere necessario svuotare la cache.
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2861,15 +2967,16 @@ Non porre domande interattive
 
 ## `dev:template-hints:status`
 
-Mostra lo stato degli hint di modello front-end.
-
 ```bash
 bin/magento dev:template-hints:status
 ```
 
+Mostra lo stato degli hint di modello front-end.
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2918,11 +3025,12 @@ Non porre domande interattive
 
 ## `dev:tests:run`
 
-Esegue i test
-
 ```bash
 bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 ```
+
+Esegue i test
+
 
 
 ### `type`
@@ -2941,7 +3049,7 @@ Argomenti aggiuntivi per PHPUnit. Esempio: &quot;-c&#39;—filter=MyTest&#39;&qu
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2990,11 +3098,12 @@ Non porre domande interattive
 
 ## `dev:urn-catalog:generate`
 
-Genera il catalogo di URN in mappature *.xsd per l’IDE per evidenziare xml.
-
 ```bash
 bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 ```
+
+Genera il catalogo di URN in mappature *.xsd per l’IDE per evidenziare xml.
+
 
 
 ### `path`
@@ -3012,7 +3121,7 @@ Formato di generazione del catalogo. Supportato: [phpstorm, vscode]
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3061,11 +3170,12 @@ Non porre domande interattive
 
 ## `dev:xml:convert`
 
-Converte i file XML utilizzando i fogli di stile XSL
-
 ```bash
 bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 ```
+
+Converte i file XML utilizzando i fogli di stile XSL
+
 
 
 ### `xml-file`
@@ -3089,7 +3199,7 @@ Sovrascrivi file XML
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3138,11 +3248,12 @@ Non porre domande interattive
 
 ## `downloadable:domains:add`
 
-Aggiungere domini alla whitelist dei domini scaricabili
-
 ```bash
 bin/magento downloadable:domains:add [<domains>...]
 ```
+
+Aggiungere domini alla whitelist dei domini scaricabili
+
 
 
 ### `domains`
@@ -3155,7 +3266,7 @@ Nome domini
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3204,11 +3315,12 @@ Non porre domande interattive
 
 ## `downloadable:domains:remove`
 
-Rimuovere i domini dalla whitelist dei domini scaricabili
-
 ```bash
 bin/magento downloadable:domains:remove [<domains>...]
 ```
+
+Rimuovere i domini dalla whitelist dei domini scaricabili
+
 
 
 ### `domains`
@@ -3221,7 +3333,7 @@ Nomi di dominio
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3270,15 +3382,16 @@ Non porre domande interattive
 
 ## `downloadable:domains:show`
 
-Visualizza whitelist domini scaricabili
-
 ```bash
 bin/magento downloadable:domains:show
 ```
 
+Visualizza whitelist domini scaricabili
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3327,15 +3440,16 @@ Non porre domande interattive
 
 ## `encryption:payment-data:update`
 
-Crittografa nuovamente i dati crittografati della carta di credito con la crittografia più recente.
-
 ```bash
 bin/magento encryption:payment-data:update
 ```
 
+Crittografa nuovamente i dati crittografati della carta di credito con la crittografia più recente.
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3384,16 +3498,12 @@ Non porre domande interattive
 
 ## `events:create-event-provider`
 
+```bash
+bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCRIPTION]]events:provider:create 
+```
+
 Creare un provider di eventi personalizzato in Adobe I/O Events per questa istanza. Se non si specificano le opzioni di etichetta e descrizione, è necessario definirle nel file di sistema app/etc/event-types.json.
 
-```bash
-bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCRIPTION]]
-```
-
-
-```bash
-bin/magento events:provider:create 
-```
 
 ### `--label`
 
@@ -3409,7 +3519,7 @@ Descrizione del provider.
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3458,15 +3568,16 @@ Non porre domande interattive
 
 ## `events:generate:module`
 
-Genera modulo basato sull’elenco dei plug-in
-
 ```bash
 bin/magento events:generate:module
 ```
 
+Genera modulo basato sull’elenco dei plug-in
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3515,11 +3626,12 @@ Non porre domande interattive
 
 ## `events:info`
 
-Restituisce il payload dell’evento specificato.
-
 ```bash
 bin/magento events:info [--depth [DEPTH]] [--] <event-code>
 ```
+
+Restituisce il payload dell’evento specificato.
+
 
 
 ### `event-code`
@@ -3537,7 +3649,7 @@ Il numero di livelli nel payload dell’evento da restituire
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3586,15 +3698,16 @@ Non porre domande interattive
 
 ## `events:list`
 
-Mostra l’elenco degli eventi a cui sei iscritto
-
 ```bash
 bin/magento events:list
 ```
 
+Mostra l’elenco degli eventi a cui sei iscritto
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3643,11 +3756,12 @@ Non porre domande interattive
 
 ## `events:list:all`
 
-Restituisce un elenco di eventi sottoscrittori definiti nel modulo specificato
-
 ```bash
 bin/magento events:list:all <module_name>
 ```
+
+Restituisce un elenco di eventi sottoscrittori definiti nel modulo specificato
+
 
 
 ### `module_name`
@@ -3658,7 +3772,7 @@ Nome modulo
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3707,15 +3821,16 @@ Non porre domande interattive
 
 ## `events:metadata:populate`
 
-Crea metadati in Adobe I/O dall&#39;elenco di configurazione (configurazioni XML e di applicazioni)
-
 ```bash
 bin/magento events:metadata:populate
 ```
 
+Crea metadati in Adobe I/O dall&#39;elenco di configurazione (configurazioni XML e di applicazioni)
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3764,15 +3879,16 @@ Non porre domande interattive
 
 ## `events:provider:info`
 
-Restituisce i dettagli del provider di eventi configurato
-
 ```bash
 bin/magento events:provider:info
 ```
 
+Restituisce i dettagli del provider di eventi configurato
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3821,15 +3937,16 @@ Non porre domande interattive
 
 ## `events:registrations:list`
 
-Elenca le registrazioni di eventi nel progetto App Builder
-
 ```bash
 bin/magento events:registrations:list
 ```
 
+Elenca le registrazioni di eventi nel progetto App Builder
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3878,11 +3995,12 @@ Non porre domande interattive
 
 ## `events:subscribe`
 
-Si iscrive all’evento
-
 ```bash
 bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--] <event-code>
 ```
+
+Si iscrive all’evento
+
 
 
 ### `event-code`
@@ -3934,7 +4052,7 @@ La destinazione di questo evento. Specifica questa opzione per gli eventi da con
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -3983,11 +4101,12 @@ Non porre domande interattive
 
 ## `events:sync-events-metadata`
 
-Sincronizza metadati evento per questa istanza
-
 ```bash
 bin/magento events:sync-events-metadata [-d|--delete]
 ```
+
+Sincronizza metadati evento per questa istanza
+
 
 ### `--delete`, `-d`
 
@@ -3998,7 +4117,7 @@ I metadati dell’eliminazione degli eventi non sono più necessari
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4047,11 +4166,12 @@ Non porre domande interattive
 
 ## `events:unsubscribe`
 
-Rimuove l’abbonamento all’evento fornito
-
 ```bash
 bin/magento events:unsubscribe <event-code>
 ```
+
+Rimuove l’abbonamento all’evento fornito
+
 
 
 ### `event-code`
@@ -4062,7 +4182,7 @@ Codice evento a cui annullare l’abbonamento
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4111,11 +4231,12 @@ Non porre domande interattive
 
 ## `i18n:collect-phrases`
 
-Rileva le frasi nella base di codice
-
 ```bash
 bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<directory>]
 ```
+
+Rileva le frasi nella base di codice
+
 
 
 ### `directory`
@@ -4138,7 +4259,7 @@ Utilizzate il parametro —magento per analizzare la base di codice del Magento 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4187,11 +4308,12 @@ Non porre domande interattive
 
 ## `i18n:pack`
 
-Salva il pacchetto lingua
-
 ```bash
 bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <locale>
 ```
+
+Salva il pacchetto lingua
+
 
 
 ### `source`
@@ -4222,7 +4344,7 @@ Utilizza il parametro —allow-duplicates per consentire il salvataggio di dupli
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4271,11 +4393,12 @@ Non porre domande interattive
 
 ## `i18n:uninstall`
 
-Disinstalla i pacchetti della lingua
-
 ```bash
 bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 ```
+
+Disinstalla i pacchetti della lingua
+
 
 
 ### `package`
@@ -4296,7 +4419,7 @@ Backup del codice e dei file di configurazione (esclusi i file temporanei)
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4345,15 +4468,16 @@ Non porre domande interattive
 
 ## `indexer:info`
 
-Mostra gli indicizzatori consentiti
-
 ```bash
 bin/magento indexer:info
 ```
 
+Mostra gli indicizzatori consentiti
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4402,11 +4526,12 @@ Non porre domande interattive
 
 ## `indexer:reindex`
 
-Reindicizza dati
-
 ```bash
 bin/magento indexer:reindex [<index>...]
 ```
+
+Reindicizza dati
+
 
 
 ### `index`
@@ -4419,7 +4544,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4468,11 +4593,12 @@ Non porre domande interattive
 
 ## `indexer:reset`
 
-Reimposta lo stato dell&#39;indicizzatore su non valido
-
 ```bash
 bin/magento indexer:reset [<index>...]
 ```
+
+Reimposta lo stato dell&#39;indicizzatore su non valido
+
 
 
 ### `index`
@@ -4485,7 +4611,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4534,11 +4660,12 @@ Non porre domande interattive
 
 ## `indexer:set-dimensions-mode`
 
-Imposta modalità Dimension indicizzatore
-
 ```bash
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
+
+Imposta modalità Dimension indicizzatore
+
 
 
 ### `indexer`
@@ -4553,7 +4680,7 @@ Indicizzatore modalità dimensione catalog_product_price none,website,customer_g
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4602,11 +4729,12 @@ Non porre domande interattive
 
 ## `indexer:set-mode`
 
-Imposta il tipo di modalità indice
-
 ```bash
 bin/magento indexer:set-mode [<mode> [<index>...]]
 ```
+
+Imposta il tipo di modalità indice
+
 
 
 ### `mode`
@@ -4624,7 +4752,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4673,11 +4801,12 @@ Non porre domande interattive
 
 ## `indexer:set-status`
 
-Imposta lo stato dell&#39;indicizzatore specificato
-
 ```bash
 bin/magento indexer:set-status <status> [<index>...]
 ```
+
+Imposta lo stato dell&#39;indicizzatore specificato
+
 
 
 ### `status`
@@ -4696,7 +4825,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4745,11 +4874,12 @@ Non porre domande interattive
 
 ## `indexer:show-dimensions-mode`
 
-Mostra modalità Dimension indicizzatore
-
 ```bash
 bin/magento indexer:show-dimensions-mode [<indexer>...]
 ```
+
+Mostra modalità Dimension indicizzatore
+
 
 
 ### `indexer`
@@ -4762,7 +4892,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4811,11 +4941,12 @@ Non porre domande interattive
 
 ## `indexer:show-mode`
 
-Mostra la modalità indice
-
 ```bash
 bin/magento indexer:show-mode [<index>...]
 ```
+
+Mostra la modalità indice
+
 
 
 ### `index`
@@ -4828,7 +4959,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4877,11 +5008,12 @@ Non porre domande interattive
 
 ## `indexer:status`
 
-Mostra lo stato dell&#39;indicizzatore
-
 ```bash
 bin/magento indexer:status [<index>...]
 ```
+
+Mostra lo stato dell&#39;indicizzatore
+
 
 
 ### `index`
@@ -4894,7 +5026,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4943,15 +5075,16 @@ Non porre domande interattive
 
 ## `info:adminuri`
 
-Visualizza l&#39;URI di amministrazione del Magento
-
 ```bash
 bin/magento info:adminuri
 ```
 
+Visualizza l&#39;URI di amministrazione del Magento
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5000,15 +5133,16 @@ Non porre domande interattive
 
 ## `info:backups:list`
 
-Stampa elenco dei file di backup disponibili
-
 ```bash
 bin/magento info:backups:list
 ```
 
+Stampa elenco dei file di backup disponibili
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5057,15 +5191,16 @@ Non porre domande interattive
 
 ## `info:currency:list`
 
-Visualizza l&#39;elenco delle valute disponibili
-
 ```bash
 bin/magento info:currency:list
 ```
 
+Visualizza l&#39;elenco delle valute disponibili
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5114,11 +5249,12 @@ Non porre domande interattive
 
 ## `info:dependencies:show-framework`
 
-Mostra il numero di dipendenze nel framework del Magento
-
 ```bash
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
+
+Mostra il numero di dipendenze nel framework del Magento
+
 
 ### `--output`, `-o`
 
@@ -5129,7 +5265,7 @@ Nome file del rapporto
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5178,11 +5314,12 @@ Non porre domande interattive
 
 ## `info:dependencies:show-modules`
 
-Mostra il numero di dipendenze tra i moduli
-
 ```bash
 bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 ```
+
+Mostra il numero di dipendenze tra i moduli
+
 
 ### `--output`, `-o`
 
@@ -5193,7 +5330,7 @@ Nome file del rapporto
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5242,11 +5379,12 @@ Non porre domande interattive
 
 ## `info:dependencies:show-modules-circular`
 
-Mostra il numero di dipendenze circolari tra i moduli
-
 ```bash
 bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 ```
+
+Mostra il numero di dipendenze circolari tra i moduli
+
 
 ### `--output`, `-o`
 
@@ -5257,7 +5395,7 @@ Nome file del rapporto
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5306,15 +5444,16 @@ Non porre domande interattive
 
 ## `info:language:list`
 
-Visualizza l&#39;elenco delle lingue disponibili
-
 ```bash
 bin/magento info:language:list
 ```
 
+Visualizza l&#39;elenco delle lingue disponibili
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5363,15 +5502,16 @@ Non porre domande interattive
 
 ## `info:timezone:list`
 
-Visualizza l&#39;elenco dei fusi orari disponibili
-
 ```bash
 bin/magento info:timezone:list
 ```
 
+Visualizza l&#39;elenco dei fusi orari disponibili
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5420,16 +5560,17 @@ Non porre domande interattive
 
 ## `inventory:reservation:create-compensations`
 
-Crea prenotazioni per argomenti di retribuzione forniti
-
 ```bash
 bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compensations>...]
 ```
 
+Crea prenotazioni per argomenti di retribuzione forniti
+
+
 
 ### `compensations`
 
-Elenco degli argomenti retribuzione in formato &quot;\&lt;order_increment_id>:\&lt;sku>:\&lt;quantity>:\&lt;stock-id>&quot;
+Elenco di argomenti retribuzione in formato &quot;:::&quot;
 
 - Predefinito: `[]`
 
@@ -5444,7 +5585,7 @@ Uscita raw
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5493,11 +5634,12 @@ Non porre domande interattive
 
 ## `inventory:reservation:list-inconsistencies`
 
-Mostra tutti gli ordini e i prodotti con incongruenze di quantità vendibili
-
 ```bash
 bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-i|--incomplete-orders] [-b|--bunch-size [BUNCH-SIZE]] [-r|--raw]
 ```
+
+Mostra tutti gli ordini e i prodotti con incongruenze di quantità vendibili
+
 
 ### `--complete-orders`, `-c`
 
@@ -5529,7 +5671,7 @@ Uscita raw
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5578,11 +5720,12 @@ Non porre domande interattive
 
 ## `inventory-geonames:import`
 
-Scarica e importa i nomi geografici per l’algoritmo di selezione sorgente
-
 ```bash
 bin/magento inventory-geonames:import <countries>...
 ```
+
+Scarica e importa i nomi geografici per l’algoritmo di selezione sorgente
+
 
 
 ### `countries`
@@ -5596,7 +5739,7 @@ Elenco dei codici paese da importare
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5645,11 +5788,12 @@ Non porre domande interattive
 
 ## `maintenance:allow-ips`
 
-Imposta gli IP esenti dalla modalità di manutenzione
-
 ```bash
 bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<ip>...]
 ```
+
+Imposta gli IP esenti dalla modalità di manutenzione
+
 
 
 ### `ip`
@@ -5682,7 +5826,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5731,11 +5875,12 @@ Non porre domande interattive
 
 ## `maintenance:disable`
 
-Disattiva la modalità di manutenzione
-
 ```bash
 bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Disattiva la modalità di manutenzione
+
 
 ### `--ip`
 
@@ -5752,7 +5897,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5801,11 +5946,12 @@ Non porre domande interattive
 
 ## `maintenance:enable`
 
-Abilita la modalità di manutenzione
-
 ```bash
 bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Abilita la modalità di manutenzione
+
 
 ### `--ip`
 
@@ -5822,7 +5968,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5871,11 +6017,12 @@ Non porre domande interattive
 
 ## `maintenance:status`
 
-Visualizza lo stato della modalità di manutenzione
-
 ```bash
 bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Visualizza lo stato della modalità di manutenzione
+
 
 ### `--magento-init-params`
 
@@ -5885,7 +6032,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5934,15 +6081,16 @@ Non porre domande interattive
 
 ## `media-content:sync`
 
-Sincronizzare i contenuti con le risorse
-
 ```bash
 bin/magento media-content:sync
 ```
 
+Sincronizzare i contenuti con le risorse
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5991,15 +6139,16 @@ Non porre domande interattive
 
 ## `media-gallery:sync`
 
-Sincronizzare le risorse di archiviazione e i supporti nel database
-
 ```bash
 bin/magento media-gallery:sync
 ```
 
+Sincronizzare le risorse di archiviazione e i supporti nel database
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6048,15 +6197,16 @@ Non porre domande interattive
 
 ## `module:config:status`
 
-Controlla la configurazione dei moduli nel file &quot;app/etc/config.php&quot; e segnala se sono aggiornati o meno
-
 ```bash
 bin/magento module:config:status
 ```
 
+Controlla la configurazione dei moduli nel file &quot;app/etc/config.php&quot; e segnala se sono aggiornati o meno
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6105,11 +6255,12 @@ Non porre domande interattive
 
 ## `module:disable`
 
-Disabilita i moduli specificati
-
 ```bash
 bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
+
+Disabilita i moduli specificati
+
 
 
 ### `module`
@@ -6149,7 +6300,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6198,11 +6349,12 @@ Non porre domande interattive
 
 ## `module:enable`
 
-Abilita i moduli specificati
-
 ```bash
 bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
+
+Abilita i moduli specificati
+
 
 
 ### `module`
@@ -6242,7 +6394,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6291,11 +6443,12 @@ Non porre domande interattive
 
 ## `module:status`
 
-Visualizza lo stato dei moduli
-
 ```bash
 bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module-names>...]
 ```
+
+Visualizza lo stato dei moduli
+
 
 
 ### `module-names`
@@ -6328,7 +6481,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6377,11 +6530,12 @@ Non porre domande interattive
 
 ## `module:uninstall`
 
-Disinstalla i moduli installati dal compositore
-
 ```bash
 bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media] [--backup-db] [--non-composer] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] <module>...
 ```
+
+Disinstalla i moduli installati dal compositore
+
 
 
 ### `module`
@@ -6443,7 +6597,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6492,11 +6646,12 @@ Non porre domande interattive
 
 ## `newrelic:create:deploy-marker`
 
-Controlla le voci nella coda di distribuzione e crea un marcatore di distribuzione appropriato.
-
 ```bash
 bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revision>]]
 ```
+
+Controlla le voci nella coda di distribuzione e crea un marcatore di distribuzione appropriato.
+
 
 
 ### `message`
@@ -6523,7 +6678,7 @@ Revisione
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6572,15 +6727,20 @@ Non porre domande interattive
 
 ## `queue:consumers:list`
 
-Elenco dei consumer di MessageQueue
-
 ```bash
 bin/magento queue:consumers:list
 ```
 
+Elenco dei consumer di MessageQueue
+
+
+```
+This command shows list of MessageQueue consumers.
+```
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6629,15 +6789,20 @@ Non porre domande interattive
 
 ## `queue:consumers:restart`
 
-Riavvia consumer MessageQueue
-
 ```bash
 bin/magento queue:consumers:restart
 ```
 
+Riavvia consumer MessageQueue
+
+
+```
+Command put poison pill for MessageQueue consumers and force to restart them after next status check.
+```
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6686,10 +6851,43 @@ Non porre domande interattive
 
 ## `queue:consumers:start`
 
-Avvia consumer MessageQueue
-
 ```bash
 bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BATCH-SIZE] [--area-code AREA-CODE] [--single-thread] [--multi-process [MULTI-PROCESS]] [--pid-file-path PID-FILE-PATH] [--] <consumer>
+```
+
+Avvia consumer MessageQueue
+
+
+```
+This command starts MessageQueue consumer by its name.
+
+To start consumer which will process all queued messages and terminate execution:
+
+    bin/magento queue:consumers:start someConsumer
+
+To specify the number of messages which should be processed by consumer before its termination:
+
+    bin/magento queue:consumers:start someConsumer --max-messages=50
+
+To specify the number of messages per batch for the batch consumer:
+
+    bin/magento queue:consumers:start someConsumer --batch-size=500
+
+To specify the preferred area:
+
+    bin/magento queue:consumers:start someConsumer --area-code='adminhtml'
+
+To do not run multiple copies of one consumer simultaneously:
+
+    bin/magento queue:consumers:start someConsumer --single-thread
+
+To save PID enter path (This option is deprecated, use --single-thread instead):
+
+    bin/magento queue:consumers:start someConsumer --pid-file-path='/var/someConsumer.pid'
+
+To define the number of processes per consumer:
+
+    bin/magento queue:consumers:start someConsumer --multi-process=4
 ```
 
 
@@ -6738,7 +6936,7 @@ Percorso del file per il salvataggio del PID (questa opzione è obsoleta, usa in
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6787,15 +6985,16 @@ Non porre domande interattive
 
 ## `remote-storage:sync`
 
-Sincronizzare i file multimediali con l&#39;archiviazione remota.
-
 ```bash
 bin/magento remote-storage:sync
 ```
 
+Sincronizzare i file multimediali con l&#39;archiviazione remota.
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6844,11 +7043,12 @@ Non porre domande interattive
 
 ## `saas:resync`
 
-Risincronizza i dati del feed con il servizio SaaS.
-
 ```bash
 bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]
 ```
+
+Risincronizza i dati del feed con il servizio SaaS.
+
 
 ### `--feed`
 
@@ -6898,7 +7098,7 @@ Continua la risincronizzazione dall&#39;ultima posizione memorizzata (questa opz
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -6947,11 +7147,12 @@ Non porre domande interattive
 
 ## `sampledata:deploy`
 
-Distribuire moduli dati di esempio per installazioni di Magento basate su compositore
-
 ```bash
 bin/magento sampledata:deploy [--no-update]
 ```
+
+Distribuire moduli dati di esempio per installazioni di Magento basate su compositore
+
 
 ### `--no-update`
 
@@ -6962,7 +7163,7 @@ Aggiornare compositore.json senza eseguire l’aggiornamento del compositore
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7011,11 +7212,12 @@ Non porre domande interattive
 
 ## `sampledata:remove`
 
-Rimuovi tutti i pacchetti di dati di esempio da compositore.json
-
 ```bash
 bin/magento sampledata:remove [--no-update]
 ```
+
+Rimuovi tutti i pacchetti di dati di esempio da compositore.json
+
 
 ### `--no-update`
 
@@ -7026,7 +7228,7 @@ Aggiornare compositore.json senza eseguire l’aggiornamento del compositore
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7075,15 +7277,16 @@ Non porre domande interattive
 
 ## `sampledata:reset`
 
-Reimposta tutti i moduli dati di esempio per la reinstallazione
-
 ```bash
 bin/magento sampledata:reset
 ```
 
+Reimposta tutti i moduli dati di esempio per la reinstallazione
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7132,15 +7335,16 @@ Non porre domande interattive
 
 ## `security:recaptcha:disable-for-user-forgot-password`
 
-Disattiva reCAPTCHA per modulo password dimenticata dall’utente amministratore
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-forgot-password
 ```
 
+Disattiva reCAPTCHA per modulo password dimenticata dall’utente amministratore
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7189,15 +7393,16 @@ Non porre domande interattive
 
 ## `security:recaptcha:disable-for-user-login`
 
-Disabilita reCAPTCHA per il modulo di accesso utente amministratore
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-login
 ```
 
+Disabilita reCAPTCHA per il modulo di accesso utente amministratore
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7246,11 +7451,12 @@ Non porre domande interattive
 
 ## `security:tfa:google:set-secret`
 
-Imposta il segreto utilizzato per la generazione OTP di Google.
-
 ```bash
 bin/magento security:tfa:google:set-secret <user> <secret>
 ```
+
+Imposta il segreto utilizzato per la generazione OTP di Google.
+
 
 
 ### `user`
@@ -7267,7 +7473,7 @@ Segreto
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7316,15 +7522,16 @@ Non porre domande interattive
 
 ## `security:tfa:providers`
 
-Elenca tutti i provider disponibili
-
 ```bash
 bin/magento security:tfa:providers
 ```
 
+Elenca tutti i provider disponibili
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7373,11 +7580,12 @@ Non porre domande interattive
 
 ## `security:tfa:reset`
 
-Ripristina configurazione per un utente
-
 ```bash
 bin/magento security:tfa:reset <user> <provider>
 ```
+
+Ripristina configurazione per un utente
+
 
 
 ### `user`
@@ -7394,7 +7602,7 @@ Codice provider
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7443,11 +7651,12 @@ Non porre domande interattive
 
 ## `server:run`
 
-Eseguire il server applicazioni
-
 ```bash
 bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-wn|--workerNum [WORKERNUM]] [-dm|--dispatchMode [DISPATCHMODE]] [-mr|--maxRequests [MAXREQUESTS]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]] [--state-monitor]
 ```
+
+Eseguire il server applicazioni
+
 
 ### `--port`, `-p`
 
@@ -7514,7 +7723,7 @@ Abilita il monitoraggio dello stato. Utilizzalo solo per problemi di stato del d
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7563,15 +7772,16 @@ Non porre domande interattive
 
 ## `server:state-monitor:aggregate-output`
 
-Output aggregato dal monitoraggio dello stato di ApplicationServer
-
 ```bash
 bin/magento server:state-monitor:aggregate-output
 ```
 
+Output aggregato dal monitoraggio dello stato di ApplicationServer
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7620,11 +7830,12 @@ Non porre domande interattive
 
 ## `setup:backup`
 
-Esegue il backup della base di codice dell&#39;applicazione di Magento, del supporto e del database
-
 ```bash
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Esegue il backup della base di codice dell&#39;applicazione di Magento, del supporto e del database
+
 
 ### `--code`
 
@@ -7655,7 +7866,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -7704,11 +7915,12 @@ Non porre domande interattive
 
 ## `setup:config:set`
 
-Crea o modifica la configurazione di distribuzione
-
 ```bash
 bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Crea o modifica la configurazione di distribuzione
+
 
 ### `--enable-debug-logging`
 
@@ -8305,7 +8517,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8354,11 +8566,12 @@ Non porre domande interattive
 
 ## `setup:db-data:upgrade`
 
-Installa e aggiorna i dati nel database
-
 ```bash
 bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Installa e aggiorna i dati nel database
+
 
 ### `--magento-init-params`
 
@@ -8368,7 +8581,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8417,11 +8630,12 @@ Non porre domande interattive
 
 ## `setup:db-declaration:generate-patch`
 
-Generare la patch e inserirla in una cartella specifica.
-
 ```bash
 bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--type [TYPE]] [--] <module> <patch>
 ```
+
+Generare la patch e inserirla in una cartella specifica.
+
 
 
 ### `module`
@@ -8452,7 +8666,7 @@ Scopri il tipo di patch da generare. Valori disponibili: `data`, `schema`.
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8501,11 +8715,12 @@ Non porre domande interattive
 
 ## `setup:db-declaration:generate-whitelist`
 
-Genera una whitelist di tabelle e colonne che possono essere modificate dal programma di installazione della dichiarazione
-
 ```bash
 bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]]
 ```
+
+Genera una whitelist di tabelle e colonne che possono essere modificate dal programma di installazione della dichiarazione
+
 
 ### `--module-name`
 
@@ -8516,7 +8731,7 @@ Nome del modulo in cui verrà generata la whitelist
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8565,11 +8780,12 @@ Non porre domande interattive
 
 ## `setup:db-schema:add-slave`
 
-Spostare le tabelle correlate alle virgolette di estrazione in un server di database separato
-
 ```bash
 bin/magento setup:db-schema:add-slave [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--maxAllowedLag [MAXALLOWEDLAG]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Spostare le tabelle correlate alle virgolette di estrazione in un server di database separato
+
 
 ### `--host`
 
@@ -8626,7 +8842,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8675,11 +8891,12 @@ Non porre domande interattive
 
 ## `setup:db-schema:split-quote`
 
-Spostare le tabelle correlate alle virgolette di estrazione in un server di database separato. Obsoleto dalla versione 2.4.2 e verrà rimosso
-
 ```bash
 bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Spostare le tabelle correlate alle virgolette di estrazione in un server di database separato. Obsoleto dalla versione 2.4.2 e verrà rimosso
+
 
 ### `--host`
 
@@ -8727,7 +8944,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8776,11 +8993,12 @@ Non porre domande interattive
 
 ## `setup:db-schema:split-sales`
 
-Spostare le tabelle correlate alle vendite in un server DB separato. Obsoleto dalla versione 2.4.2 e verrà rimosso
-
 ```bash
 bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Spostare le tabelle correlate alle vendite in un server DB separato. Obsoleto dalla versione 2.4.2 e verrà rimosso
+
 
 ### `--host`
 
@@ -8828,7 +9046,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8877,11 +9095,12 @@ Non porre domande interattive
 
 ## `setup:db-schema:upgrade`
 
-Installa e aggiorna lo schema del database
-
 ```bash
 bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Installa e aggiorna lo schema del database
+
 
 ### `--convert-old-scripts`
 
@@ -8898,7 +9117,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -8947,11 +9166,12 @@ Non porre domande interattive
 
 ## `setup:db:status`
 
-Controlla se lo schema o i dati del database devono essere aggiornati
-
 ```bash
 bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Controlla se lo schema o i dati del database devono essere aggiornati
+
 
 ### `--magento-init-params`
 
@@ -8961,7 +9181,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -9010,15 +9230,16 @@ Non porre domande interattive
 
 ## `setup:di:compile`
 
-Genera la configurazione DI e tutte le classi mancanti che possono essere generate automaticamente
-
 ```bash
 bin/magento setup:di:compile
 ```
 
+Genera la configurazione DI e tutte le classi mancanti che possono essere generate automaticamente
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -9067,11 +9288,12 @@ Non porre domande interattive
 
 ## `setup:install`
 
-Installa l&#39;applicazione di Magento
-
 ```bash
 bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Installa l&#39;applicazione di Magento
+
 
 ### `--enable-debug-logging`
 
@@ -9907,7 +10129,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -9956,11 +10178,12 @@ Non porre domande interattive
 
 ## `setup:performance:generate-fixtures`
 
-Genera gli staffaggi
-
 ```bash
 bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profile>
 ```
+
+Genera gli staffaggi
+
 
 
 ### `profile`
@@ -9978,7 +10201,7 @@ Salta reindicizzazione
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10027,11 +10250,12 @@ Non porre domande interattive
 
 ## `setup:rollback`
 
-Ripristina il database, il supporto e la base di codice dell&#39;applicazione di Magento
-
 ```bash
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Ripristina il database, il supporto e la base di codice dell&#39;applicazione di Magento
+
 
 ### `--code-file`, `-c`
 
@@ -10059,7 +10283,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10108,11 +10332,12 @@ Non porre domande interattive
 
 ## `setup:static-content:deploy`
 
-Distribuisce i file di visualizzazione statici
-
 ```bash
 bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--max-execution-time [MAX-EXECUTION-TIME]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-js-bundle] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [--] [<languages>...]
 ```
+
+Distribuisce i file di visualizzazione statici
+
 
 
 ### `languages`
@@ -10285,7 +10510,7 @@ Non compilare i temi principali. Supportato solo in strategie veloci e standard.
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10334,11 +10559,12 @@ Non porre domande interattive
 
 ## `setup:store-config:set`
 
-Installa la configurazione dell&#39;archivio. Obsoleto dalla versione 2.2.0. Usa config:set
-
 ```bash
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Installa la configurazione dell&#39;archivio. Obsoleto dalla versione 2.2.0. Usa config:set
+
 
 ### `--base-url`
 
@@ -10402,7 +10628,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10451,11 +10677,12 @@ Non porre domande interattive
 
 ## `setup:uninstall`
 
-Disinstalla l&#39;applicazione di Magento
-
 ```bash
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Disinstalla l&#39;applicazione di Magento
+
 
 ### `--magento-init-params`
 
@@ -10465,7 +10692,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10514,11 +10741,12 @@ Non porre domande interattive
 
 ## `setup:upgrade`
 
-Aggiorna l&#39;applicazione di Magento, i dati del database e lo schema
-
 ```bash
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Aggiorna l&#39;applicazione di Magento, i dati del database e lo schema
+
 
 ### `--keep-generated`
 
@@ -10561,7 +10789,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10610,15 +10838,16 @@ Non porre domande interattive
 
 ## `store:list`
 
-Visualizza l&#39;elenco dei negozi
-
 ```bash
 bin/magento store:list
 ```
 
+Visualizza l&#39;elenco dei negozi
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10667,15 +10896,16 @@ Non porre domande interattive
 
 ## `store:website:list`
 
-Visualizza l&#39;elenco dei siti Web
-
 ```bash
 bin/magento store:website:list
 ```
 
+Visualizza l&#39;elenco dei siti Web
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10724,11 +10954,12 @@ Non porre domande interattive
 
 ## `support:backup:code`
 
-Crea backup del codice
-
 ```bash
 bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs]
 ```
+
+Crea backup del codice
+
 
 ### `--name`
 
@@ -10751,7 +10982,7 @@ Includi registri
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10800,11 +11031,12 @@ Non porre domande interattive
 
 ## `support:backup:db`
 
-Crea backup del database
-
 ```bash
 bin/magento support:backup:db [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs] [-i|--ignore-sanitize]
 ```
+
+Crea backup del database
+
 
 ### `--name`
 
@@ -10834,7 +11066,7 @@ Ignora bonifica
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10883,11 +11115,12 @@ Non porre domande interattive
 
 ## `support:utility:check`
 
-Controlla le utilità di backup richieste
-
 ```bash
 bin/magento support:utility:check [--hide-paths]
 ```
+
+Controlla le utilità di backup richieste
+
 
 ### `--hide-paths`
 
@@ -10898,7 +11131,7 @@ Controlla solo le utility della console richieste
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10947,11 +11180,12 @@ Non porre domande interattive
 
 ## `support:utility:paths`
 
-Crea elenco percorsi utilità
-
 ```bash
 bin/magento support:utility:paths [-f|--force]
 ```
+
+Crea elenco percorsi utilità
+
 
 ### `--force`, `-f`
 
@@ -10962,7 +11196,7 @@ Forza
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -11011,11 +11245,12 @@ Non porre domande interattive
 
 ## `theme:uninstall`
 
-Disinstalla il tema
-
 ```bash
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <theme>...
 ```
+
+Disinstalla il tema
+
 
 
 ### `theme`
@@ -11043,7 +11278,7 @@ Cancellare i file di visualizzazione statica generati.
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -11092,11 +11327,12 @@ Non porre domande interattive
 
 ## `varnish:vcl:generate`
 
-Genera vernice VCL e la trasforma nella riga di comando
-
 ```bash
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]
 ```
+
+Genera vernice VCL e la trasforma nella riga di comando
+
 
 ### `--access-list`
 
@@ -11147,7 +11383,7 @@ Percorso del file da scrivere in vcl
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -11196,11 +11432,12 @@ Non porre domande interattive
 
 ## `webhooks:dev:run`
 
-Esegue un webhook registrato a scopo di sviluppo.
-
 ```bash
 bin/magento webhooks:dev:run <name> <payload>
 ```
+
+Esegue un webhook registrato a scopo di sviluppo.
+
 
 
 ### `name`
@@ -11217,7 +11454,7 @@ Payload del webhook in formato JSON
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -11266,15 +11503,16 @@ Non porre domande interattive
 
 ## `webhooks:generate:module`
 
-Genera plug-in in base alle registrazioni del webhook
-
 ```bash
 bin/magento webhooks:generate:module
 ```
 
+Genera plug-in in base alle registrazioni del webhook
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -11323,11 +11561,12 @@ Non porre domande interattive
 
 ## `webhooks:info`
 
-Restituisce il payload del webhook specificato.
-
 ```bash
 bin/magento webhooks:info [--depth [DEPTH]] [--] <webhook-name> [<webhook-type>]
 ```
+
+Restituisce il payload del webhook specificato.
+
 
 
 ### `webhook-name`
@@ -11352,7 +11591,7 @@ Numero di livelli nel payload del webhook da restituire
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -11401,15 +11640,16 @@ Non porre domande interattive
 
 ## `webhooks:list`
 
-Mostra l&#39;elenco dei webhook sottoscritti
-
 ```bash
 bin/magento webhooks:list
 ```
 
+Mostra l&#39;elenco dei webhook sottoscritti
+
+
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -11458,11 +11698,12 @@ Non porre domande interattive
 
 ## `webhooks:list:all`
 
-Restituisce un elenco dei nomi dei metodi webhook supportati per il modulo specificato
-
 ```bash
 bin/magento webhooks:list:all <module_name>
 ```
+
+Restituisce un elenco dei nomi dei metodi webhook supportati per il modulo specificato
+
 
 
 ### `module_name`
@@ -11473,7 +11714,7 @@ Nome modulo
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene fornito alcun comando, visualizzare la Guida per il comando \&lt;info>list\&lt;/info> comando
+Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
 
 - Predefinito: `false`
 - Non accetta un valore
