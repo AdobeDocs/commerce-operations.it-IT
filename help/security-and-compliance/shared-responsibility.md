@@ -2,9 +2,9 @@
 title: Responsabilità condivisa sicurezza e modello operativo
 description: Scopri le responsabilità di sicurezza di ogni parte coinvolta nel progetto di infrastruttura cloud di Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: d4ea2f3fe8d30749c96389655ef38cae482afc99
+source-git-commit: 75eafe97a69668e43818f1c01639956e9b677a69
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2804'
 ht-degree: 0%
 
 ---
@@ -890,5 +890,16 @@ I commercianti sono responsabili della sincronizzazione dei dati tra gli ambient
 | Pianificazione dei backup per gli ambienti di staging e produzione di Cloud Pro | R |   |
 | Pianificazione dei backup per gli ambienti di integrazione di Cloud Starter e Pro |     | R |
 | Disponibilità di HA/Failover | R |   |
+
+{style="table-layout:auto"}
+
+#### Server cloud e scalabilità
+
+|     | Adobe | Commerciante |
+| --- | --- | --- |
+| Disponibilità di risorse CPU, data center e spazio su disco | R |   |
+| Disponibilità ed esecuzione di capacità di sovratensione o di sovradimensionamento di emergenza | R |   |
+| Richiesta della capacità di sovratensione |     | R |
+| Monitoraggio dell’utilizzo di vCPU rispetto ai limiti | R |   |
 
 {style="table-layout:auto"}
