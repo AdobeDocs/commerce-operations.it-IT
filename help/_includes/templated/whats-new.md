@@ -1,7 +1,7 @@
 ---
-source-git-commit: 88cdf47409f45f9ba6de75701ab877c5e4604f13
+source-git-commit: ccc1c6451556ac721d331adebf02db8226e75699
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '303'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## Novità
 
 Scopri la nuova documentazione e gli aggiornamenti significativi della documentazione esistente.
+
+### 29 aprile 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stato aggiornato il <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/uct">Riferimento CLI UCT</a>.</p>
+</td>
+      <td>tecnico</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ae9b29601953f25ca28f253f557d547b200616a0">ae9b29</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 26 aprile 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Riorganizzazione di <em>Guide operative</em> home page (questa pagina) e ha spostato <em><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises">Riferimento agli strumenti della riga di comando</a></em> guida alla <em><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview">Strumenti</a></em> guida.</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/839b4e26a7c5d662093c7c1eec3fd5883ed7706a">839b4e</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>È stato aggiunto un nuovo <a href="https://experienceleague.adobe.com/docs/commerce-operations/events/summit/2024.html">pagina di riepilogo</a> ad Adobe Summit.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1c2c75da7cda0e3c38ea904c98932472b618a3e5">1c2c75</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 15 aprile 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Sorgente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stato aggiornato il <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">beta</a> per includere informazioni su tutte le beta disponibili per Adobe Commerce.</p>
+</td>
+      <td>principale-aggiornamento</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a362cad66d38a89bacda656d1520047e22262179">a362ca</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 9 aprile 2024
 
