@@ -4,9 +4,9 @@ description: Scopri le best practice di implementazione per la fase di sviluppo 
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: ce386611834c4199e34b5d95ce76254957821f46
+source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '336'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,15 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di sv
 | [Revisione del codice](code-review.md) | Processo di convalida consigliato per garantire che la funzionalità implementata soddisfi i requisiti |
 | [Compositore e Git](code-management.md) | Determina come distribuire il codice personalizzato tenendo in considerazione la gestione delle versioni, la complessità del codice e la gestione delle dipendenze |
 | [Strategia di diramazione](git-branching.md) | Gestire il codice sorgente negli archivi Git |
-| [Esempi di GRA](../../architecture/global-reference/examples.md) | Comprendere i metodi comuni per organizzare una [architettura di riferimento globale](../../architecture/global-reference/overview.md) base di codice |
+
+## Piattaforma e servizi
+
+| Best practice | Descrizione |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| [Build e implementazione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Descrive le best practice per le fasi di build e implementazione di Adobe Commerce nei progetti di infrastruttura cloud |
+| Debug | Eseguire il debug sistematico ed efficace del framework di Adobe Commerce |
+| [Distribuzione di contenuti statici](static-content-deployment.md) | Evita problemi con il contenuto statico che non viene visualizzato nella vetrina |
+| [Risoluzione dei problemi](troubleshooting.md) | Risoluzione dei problemi comuni di implementazione di Adobe Commerce |
 
 ## Database
 
@@ -67,12 +75,3 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di sv
 | [Estensioni](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Descrive i modelli di sviluppo per garantire la compatibilità tra l’estensione, le versioni future di Adobe Commerce e altre estensioni personalizzate |
 | [Blocchi di contenuto privato](private-content-block-configuration.md) | Configurare blocchi di contenuto privati per ottimizzare le prestazioni della vetrina |
 | [Modificare il codice PHP di base e di terze parti](modifying-core-and-third-party-code.md) | Modifica la funzionalità, il risultato o l’input di codice che non è stato creato o che non è stato controllato direttamente |
-
-## Piattaforma e servizi
-
-| Best practice | Descrizione |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Build e implementazione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Descrive le best practice per le fasi di build e implementazione di Adobe Commerce nei progetti di infrastruttura cloud |
-| Debug | Eseguire il debug sistematico ed efficace del framework di Adobe Commerce |
-| [Distribuzione di contenuti statici](static-content-deployment.md) | Evita problemi con il contenuto statico che non viene visualizzato nella vetrina |
-| [Risoluzione dei problemi](troubleshooting.md) | Risoluzione dei problemi comuni di implementazione di Adobe Commerce |
