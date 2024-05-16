@@ -1,5 +1,5 @@
 ---
-source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
+source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Le versioni di Adobe Commerce possono contenere modifiche non compatibili con le versioni precedenti (BIC, back-incompatible changes). Per esaminare le modifiche non compatibili con le versioni precedenti, vedere [Riferimento BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). I principali problemi di incompatibilità con le versioni precedenti sono descritti in [Elementi di rilievo BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Non tutte le versioni introducono i principali BIC.
+>Le versioni di Adobe Commerce possono contenere modifiche non compatibili con le versioni precedenti (BIC). Per esaminare le modifiche non compatibili con le versioni precedenti, vedere [Riferimento BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). I principali problemi di incompatibilità con le versioni precedenti sono descritti in [Elementi di rilievo BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Non tutte le versioni introducono i principali BIC.
 
 ## Avviso CVE {#cve-notice}
 

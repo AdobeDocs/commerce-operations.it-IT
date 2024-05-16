@@ -2,9 +2,9 @@
 title: Criterio di rilascio
 description: Scopri i diversi tipi di versioni di Adobe Commerce, tra cui versioni secondarie, patch di sicurezza, funzionalità, hotfix, patch singole e patch personalizzate.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
+source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -46,15 +46,7 @@ Le seguenti linee guida si applicano alle versioni patch:
 
 ### Versione patch di SICUREZZA
 
-**Correzione bug di sicurezza**: modifica del codice software per risolvere un problema di sicurezza identificato e ottenere i risultati previsti in un’area di prodotto interessata. Queste correzioni sono generalmente compatibili con le versioni precedenti.
-
-**Miglioramento della sicurezza**: miglioramento del software o modifica della configurazione per migliorare in modo proattivo la sicurezza all’interno dell’applicazione. Questi miglioramenti di sicurezza aiutano a risolvere i rischi di sicurezza che influiscono sulla postura di sicurezza dell’applicazione Adobe Commerce, ma che possono essere incompatibili con le versioni precedenti.
-
-Con le versioni delle patch di sicurezza, è possibile proteggere il sito in modo più efficiente senza applicare ulteriori correzioni di qualità e miglioramenti contenuti in una versione completa delle patch. Alle versioni delle patch di sicurezza viene aggiunto &#39;-pN&#39;, dove N è la versione della patch incrementale che inizia con 1 (ad esempio, 2.3.5-p1). Le versioni delle patch di sicurezza possono includere anche gli hotfix necessari per risolvere i problemi critici che interessano l’applicazione Adobe Commerce.
-
-Ogni versione di patch di sicurezza si basa sulla versione completa precedente della patch. Contiene le correzioni di qualità e sicurezza della versione patch precedente e le correzioni di sicurezza create tra la versione patch completa precedente e la versione patch di sicurezza.
-
-Per istruzioni sul download e sull&#39;applicazione delle patch di sicurezza, vedere [Installazione rapida](../installation/composer.md#example---security-patch).
+{{$include /help/_includes/security-patch-release-overview.md}}
 
 ## Versione patch BETA
 
