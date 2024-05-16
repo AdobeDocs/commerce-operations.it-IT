@@ -2,7 +2,7 @@
 title: Pianificazione della versione
 description: Scopri quando Adobe intende annunciare il rilascio di nuove funzioni per Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 4d57c979e8e65e1463f4f16829104cfbde730cb2
+source-git-commit: 1eac85dd1cf90f6cb064dc68a4622a6343c84b4d
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Nella tabella seguente sono riportate le date dei rilasci pianificati (le date s
    <tr>
       <td colspan="3"><strong>Legenda</strong>
          <ul>
-           <li><strong><img alt="Icona della funzione B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong>- Nuove funzioni, miglioramenti e correzioni di bug per l’estensione B2B per Adobe Commerce. Per informazioni dettagliate sulle versioni dell’estensione B2B, consulta le [Note sulla versione B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).</li>
+           <li><strong><img alt="Icona della funzione B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong>- Nuove funzioni, miglioramenti e correzioni di bug per l’estensione B2B per Adobe Commerce. Per informazioni dettagliate sulle versioni dell’estensione B2B, consulta le [Note sulla versione B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html).</li>
             <li><strong><img alt="Icona della funzione di estensibilità" src="../assets/icons/brackets.svg"></img> Estensibilità</strong>: nuovi strumenti e servizi per sviluppatori per l'estensibilità fuori processo forniti indipendentemente dalle versioni delle patch. Ad esempio, l’SDK dell’interfaccia di amministrazione, gli eventi di Adobe I/O per Commerce e API Mesh.</li>
             <li><strong><img alt="Icona della funzione di infrastruttura" src="../assets/icons/servers.svg"></img> Infrastruttura</strong>: nuove funzioni e miglioramenti all’infrastruttura cloud di Adobe Commerce e ai pacchetti della suite di strumenti cloud per Commerce, progettati per distribuire e gestire le installazioni e gli aggiornamenti di Adobe Commerce sulla piattaforma Cloud.</li>
             <li><strong><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> Patch</strong>- Aggiornamenti all'applicazione principale Adobe Commerce PHP che includono correzioni di sicurezza, conformità, prestazioni e qualità ad alta priorità.</li>
