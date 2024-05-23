@@ -1,11 +1,11 @@
 ---
 title: Panoramica sull'installazione locale
-description: Scopri il processo di installazione per le distribuzioni locali di Adobe Commerce.
+description: Scopri il processo di installazione per le implementazioni locali di Adobe Commerce.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
 source-wordcount: '148'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
