@@ -1,7 +1,7 @@
 ---
-source-git-commit: 580a15c908fc8ac4ef5d62582dfdd87d75dde994
+source-git-commit: 7dd6322370b976d8edea51fd94099e6dc4c082b7
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '719'
 ht-degree: 3%
 
 ---
@@ -112,6 +112,12 @@ Per aggiornare il contenuto basato su modelli:
 
    >**NOTA:** È necessario eseguire lo script da `_jekyll` directory. Se questa è la prima volta che esegui lo script, devi installare le dipendenze di Ruby prima con `bundle install` comando.
 
+1. Torna a `root` directory.
+
+   ```
+   cd ..
+   ```
+
 1. Verificare che il valore previsto `help/_includes/templated` i file sono stati modificati.
 
    ```
@@ -122,7 +128,15 @@ Per aggiornare il contenuto basato su modelli:
 
    ```
    modified:   _data/product-availability.yml
-   modified:   ../help/_includes/templated/product-availability-extensions.md
+   modified:   help/_includes/templated/product-availability-extensions.md
+   ```
+
+1. Invio delle modifiche.
+
+   ```
+   git add
+   git commit -m "_descriptive message of the intended commit_"
+   git push
    ```
 
 Per ulteriori informazioni su, consulta la documentazione di Jekyll. [File di dati](https://jekyllrb.com/docs/datafiles), [Filtri per liquidi](https://jekyllrb.com/docs/liquid/filters/), e altre funzioni.
