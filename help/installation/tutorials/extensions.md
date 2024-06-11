@@ -1,17 +1,18 @@
 ---
-title: Installare un’estensione
-description: Per installare un’estensione Adobe Commerce, segui la procedura riportata di seguito.
+title: Gestire le estensioni di terze parti
+description: Segui questi passaggi per installare, abilitare, aggiornare e disinstallare le estensioni Adobe Commerce.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 6da0e70acc77d2171d6336ab632e6a9a8dd16c67
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
 
-# Installare un’estensione
 
-Il codice che estende o personalizza il comportamento di Adobe Commerce è chiamato estensione. Facoltativamente, puoi creare un pacchetto e distribuire estensioni sul [Commerce Marketplace](https://marketplace.magento.com) o un altro sistema di distribuzione delle estensioni.
+# Gestire le estensioni di terze parti
+
+Il codice che estende o personalizza il comportamento di Adobe Commerce è chiamato estensione. Facoltativamente, puoi creare un pacchetto e distribuire estensioni sul [Commerce Marketplace](https://commercemarketplace.adobe.com/) o un altro sistema di distribuzione delle estensioni.
 
 Le estensioni includono:
 
@@ -21,7 +22,9 @@ Le estensioni includono:
 
 >[!TIP]
 >
->Questo argomento spiega come utilizzare la riga di comando per installare le estensioni acquistate da Commerci Marketplace. È possibile utilizzare la stessa procedura per installare _qualsiasi_ estensione; tutto ciò di cui hai bisogno è il nome e la versione del Compositore dell’estensione. Per trovarlo, apri il file dell’estensione `composer.json` e annota i valori per `"name"` e `"version"`.
+>Questo argomento spiega come utilizzare l’interfaccia della riga di comando per gestire le estensioni di terze parti acquistate da Commerci Marketplace. È possibile utilizzare la stessa procedura per installare _qualsiasi_ estensione; tutto ciò di cui hai bisogno è il nome e la versione del Compositore dell’estensione. Per trovarlo, apri il file dell’estensione `composer.json` e annota i valori per `"name"` e `"version"`.
+
+## Installa
 
 Prima dell&#39;installazione, è possibile:
 
@@ -51,13 +54,13 @@ Per installare un&#39;estensione, è necessario:
 1. Verifica che l’estensione sia installata correttamente.
 1. Abilita e configura l&#39;estensione.
 
-## Ottieni il nome e la versione del Compositore estensioni
+### Ottieni informazioni sull’estensione
 
-Se conosci già il nome e la versione del Compositore dell&#39;estensione, salta questo passaggio e continua con [Aggiorna il tuo `composer.json` file](#update-your-composer-file).
+Se conosci già il nome e la versione del Compositore dell&#39;estensione, salta questo passaggio e continua con [Aggiorna il tuo `composer.json` file](#update-composer-dependencies).
 
 Per ottenere il nome e la versione del Compositore dell&#39;estensione dalla Commerce Marketplace:
 
-1. Accedi a [Commerce Marketplace](https://marketplace.magento.com) con il nome utente e la password utilizzati per acquistare l’estensione.
+1. Accedi a [Commerce Marketplace](https://commercemarketplace.adobe.com/) con il nome utente e la password utilizzati per acquistare l’estensione.
 
 1. Nell’angolo superiore destro, fai clic su **Il tuo nome** > **Il mio profilo**.
 
@@ -75,7 +78,7 @@ Per ottenere il nome e la versione del Compositore dell&#39;estensione dalla Com
 >
 >In alternativa, puoi trovare il nome e la versione del Compositore di _qualsiasi_ (acquistata su Commerce Marketplace o altrove) nel file dell’estensione `composer.json` file.
 
-## Aggiornare il file Composer
+### Aggiorna dipendenze compositore
 
 Aggiungi il nome e la versione dell&#39;estensione al tuo `composer.json` file:
 
@@ -103,7 +106,7 @@ Aggiungi il nome e la versione dell&#39;estensione al tuo `composer.json` file:
    Generating autoload files
    ```
 
-## Verificare l’estensione
+### Verificare l&#39;installazione
 
 Per verificare che l’estensione sia installata correttamente, esegui il seguente comando:
 
@@ -125,7 +128,7 @@ bin/magento module:status
 
 E cerca l’estensione in &quot;Elenco dei moduli disabilitati&quot;.
 
-## Abilitare l’estensione
+### Abilita
 
 Alcune estensioni non funzionano correttamente a meno che non si cancellino prima i file di visualizzazione statica generati. Utilizza il `--clear-static-content` per cancellare i file della vista statica quando abiliti un’estensione.
 
@@ -183,7 +186,7 @@ Alcune estensioni non funzionano correttamente a meno che non si cancellino prim
 >
 >Se riscontri errori durante il caricamento della vetrina in un browser, usa il seguente comando per cancellare la cache: `bin/magento cache:flush`.
 
-## Aggiornare un’estensione
+## Aggiorna
 
 Per aggiornare un modulo o un’estensione:
 
@@ -218,3 +221,39 @@ Per aggiornare un modulo o un’estensione:
    ```bash
    bin/magento cache:clean
    ```
+
+## Disinstalla
+
+Contatta il fornitore dell’estensione per istruzioni su come rimuovere un’estensione di terze parti. Le istruzioni devono contenere le seguenti informazioni:
+
+- Ripristinare le modifiche alla tabella del database
+- Ripristinare le modifiche ai dati del database
+- Quali file rimuovere o ripristinare
+
+>[!CAUTION]
+>
+>Eseguire i passaggi di disinstallazione in un ambiente non di produzione _primo_ ed esegui test approfonditi prima di implementare nell’ambiente di produzione.
+
+Le istruzioni seguenti forniscono informazioni generali sulla disinstallazione di estensioni di terze parti:
+
+1. Rimuovi l’estensione dall’archivio dei progetti Adobe Commerce.
+
+   - Per le estensioni basate su Compositore, rimuovi l’estensione dall’Adobe Commerce `composer.json` file.
+
+     ```bash
+     composer remove <package-name>
+     ```
+
+   - Per le estensioni non basate su Compositore, rimuovi i file fisici dall’archivio dei progetti Adobe Commerce.
+
+     ```bash
+     rm -rf app/code/<vendor-name>/<module-name>
+     ```
+
+1. Se il `config.php` è incluso nel controllo del codice sorgente nell’archivio dei progetti Adobe Commerce, rimuovi l’estensione da `config.php` file.
+
+1. Eseguire il test del database locale per verificare che le istruzioni fornite dal fornitore funzionino come previsto.
+
+1. Verifica che l’estensione sia disabilitata correttamente e che il sito web funzioni come previsto nell’ambiente di staging.
+
+1. Implementa le modifiche nell’ambiente di produzione.
