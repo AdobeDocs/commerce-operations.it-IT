@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%
@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Introduzione alle note sulla versione della patch di sicurezza
 
-Queste note sulla versione della patch di sicurezza acquisiscono gli aggiornamenti per migliorare la sicurezza della distribuzione Adobe Commerce. Le informazioni includono, tra l’altro:
+Queste note sulla versione della patch di sicurezza acquisiscono gli aggiornamenti per migliorare la sicurezza della distribuzione Adobe Commerce. Le informazioni includono, tra l&#39;altro:
 
 * Correzioni di bug di sicurezza
 * Elementi di sicurezza che forniscono maggiori dettagli sui miglioramenti e gli aggiornamenti inclusi nella patch di sicurezza

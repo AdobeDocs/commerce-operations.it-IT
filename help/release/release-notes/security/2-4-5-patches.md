@@ -2,9 +2,9 @@
 title: Note sulla versione della patch di sicurezza di Adobe Commerce 2.4.5
 description: Scopri le correzioni di bug di sicurezza, i miglioramenti della sicurezza e altri aggiornamenti relativi alla sicurezza inclusi nelle versioni delle patch di sicurezza per Adobe Commerce 2.4.5.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
+source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,16 @@ ht-degree: 0%
 # Note sulla versione per le patch di sicurezza di Adobe Commerce 2.4.5
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## Adobe Commerce 2.4.5-p8
+
+La versione di sicurezza di Adobe Commerce 2.4.5-p7 fornisce correzioni di bug di sicurezza per le vulnerabilità identificate nelle versioni precedenti della versione 2.4.5.
+
+Per informazioni aggiornate sulle correzioni di bug di sicurezza, consulta [Bollettino sulla sicurezza dell’Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Aggiornamenti della piattaforma
+
+* **Supporto di MariaDB 10.5**. Questa versione patch introduce la compatibilità con MariaDB versione 10.5. Adobe Commerce è ancora compatibile con MariaDB versione 10.4, ma Adobe consiglia di utilizzare Adobe Commerce 2.4.5-p8 e tutte le prossime versioni delle patch di sicurezza 2.4.5 solo con MariaDB versione 10.5 perché la manutenzione di MariaDB 10.4 termina il 18 giugno 2024. <!--AC-11530-->
 
 ## Adobe Commerce 2.4.5-p7
 
@@ -107,5 +117,3 @@ La versione di sicurezza Adobe Commerce 2.4.5-p1 fornisce correzioni di bug di s
 Per informazioni aggiornate sulle correzioni di bug di sicurezza, consulta [Bollettino sulla sicurezza dell’Adobe APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
 Una delle correzioni di bug di sicurezza includeva la creazione di una nuova impostazione di configurazione. Il **Richiedi conferma e-mail se l’e-mail è stata modificata** L’impostazione di configurazione consente agli amministratori di richiedere una conferma e-mail quando un utente amministratore modifica il proprio indirizzo e-mail. <!-- AC-6292-->
-
-

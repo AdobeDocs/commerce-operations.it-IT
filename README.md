@@ -1,5 +1,5 @@
 ---
-source-git-commit: 7dd6322370b976d8edea51fd94099e6dc4c082b7
+source-git-commit: 0709cd6510adce0f513894fdecb2de5ac88d0e87
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 3%
@@ -7,7 +7,7 @@ ht-degree: 3%
 ---
 # Documentazione tecnica di Adobe Commerce
 
-Apprezziamo i contributi della nostra community e dei dipendenti Adobi esterni ai team di documentazione.
+Apprezziamo i contributi della community e dei dipendenti Adobi esterni ai team di documentazione.
 
 ## Codice di condotta open source Adobe
 
@@ -67,7 +67,7 @@ Di seguito sono riportati alcuni esempi di contenuti basati su modelli:
 
 ### Generare contenuti basati su modelli
 
-In generale, la maggior parte degli autori deve solo aggiungere una versione alle tabelle dei requisiti di sistema e di disponibilità del prodotto. La manutenzione per tutti gli altri contenuti basati su modelli è automatizzata o gestita da un membro del team dedicato. Queste istruzioni sono destinate alla &quot;maggior parte&quot; degli scrittori.
+In generale, la maggior parte degli autori deve solo aggiungere una versione alle tabelle dei requisiti di sistema e di disponibilità del prodotto. La manutenzione per tutti gli altri contenuti basati su modelli è automatizzata o gestita da un membro del team dedicato. Queste istruzioni sono destinate alla maggior parte degli autori.
 
 >**NOTA:**
 >
