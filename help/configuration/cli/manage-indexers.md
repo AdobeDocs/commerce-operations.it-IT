@@ -1,10 +1,10 @@
 ---
 title: Gestire gli indicizzatori
-description: Vedi esempi di come visualizzare e gestire gli indicizzatori Commerce.
+description: Consulta alcuni esempi su come visualizzare e gestire gli indicizzatori Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: 5e1684d4d910f2ea52e12eeccdc291a54372f8d6
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Gli indicizzatori sono con ambito e multithread per supportare la reindicizzazio
 
 In questo contesto: `dimension` è il campo di applicazione della reindicizzazione, ad esempio `website` o solo uno specifico `customer_group`.
 
-La parallelizzazione degli indici influisce solo sugli indicizzatori con ambito, il che significa che Commerce divide i dati in più tabelle utilizzando l’indicizzatore come ambito anziché mantenere tutti i dati in un’unica tabella.
+La parallelizzazione degli indici ha effetto solo sugli indicizzatori con ambito, il che significa che Commerce divide i dati in più tabelle utilizzando l&#39;indicizzatore come ambito anziché mantenere tutti i dati in un&#39;unica tabella.
 
 Puoi eseguire i seguenti indici in modalità parallela:
 
@@ -266,7 +266,7 @@ I trigger del database relativi agli indicizzatori vengono aggiunti quando la mo
 
 ### Imposta stato indicizzatore
 
-Questo comando consente agli amministratori di modificare lo stato operativo di uno o più indicizzatori, ottimizzando le prestazioni del sistema durante operazioni estese quali l&#39;importazione di dati, gli aggiornamenti o la manutenzione.
+Il `bin/magento indexer:set-status` è stato introdotto in Adobe Commerce 2.4.7. Consente agli amministratori di modificare lo stato operativo di uno o più indicizzatori, ottimizzando le prestazioni del sistema durante operazioni estese come l’importazione di dati, aggiornamenti o manutenzione.
 
 Sintassi del comando:
 
