@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Quando si eseguono aziende che hanno più siti per più marchi in più mercati locali (con valute localizzate, lingue, supporti, cataloghi condivisi e carrelli univoci) e che desiderano evitare costi superflui per l’implementazione della stessa funzione e delle stesse integrazioni, Global Reference Architecture (GRA) è sempre una buona opzione.
 
-![Tabella che illustra il costo della divergenza nell’architettura](../../../assets/playbooks/divergent-architecture.svg)
+![Tabella che illustra il costo della divergenza nell&#39;architettura](../../../assets/playbooks/divergent-architecture.svg)
 
 ![Tabella che illustra il costo del consolidamento nell&#39;architettura](../../../assets/playbooks/consolidated-architecture.svg)
 
@@ -55,4 +55,4 @@ Impatti GRA:
 
 >[!TIP]
 >
->Consulta [Esempi di GRA](examples.md).
+>Vedi [Esempi GRA](examples.md).

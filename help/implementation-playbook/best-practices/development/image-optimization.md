@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 0%
+source-wordcount: '197'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Commerce sull’infrastruttura cloud
 
 ## Ottimizzare e comprimere le immagini
 
-Prima di caricare le immagini nei siti Commerce, ottimizzale e comprimerle per bilanciare le prestazioni con la qualità di visualizzazione. Questo consente di aumentare lo spazio e ridurre i tempi di caricamento delle pagine.
+Prima di caricare le immagini nei siti Commerce, ottimizzale e comprimi per bilanciare le prestazioni con la qualità di visualizzazione. Questo consente di aumentare lo spazio e ridurre i tempi di caricamento delle pagine.
 
 - Il formato PNG offre immagini di dimensioni ridotte per le immagini con grandi aree di colore a tinta unita.
 
@@ -32,9 +32,9 @@ Prima di caricare le immagini nei siti Commerce, ottimizzale e comprimerle per b
 
 ## Abilitare e configurare l’ottimizzazione Fastly delle immagini
 
-Dopo aver configurato il servizio Fastly per il progetto Adobe Commerce Cloud, consulta [Ottimizzazione rapida delle immagini](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) per istruzioni su come abilitare e configurare image optimization.
+Dopo aver configurato il servizio Fastly per il progetto Adobe Commerce Cloud, vedere [Ottimizzazione immagine Fastly](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) per istruzioni su come abilitare e configurare l&#39;ottimizzazione immagine.
 
 ## Informazioni aggiuntive
 
-- [Configura Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
-- [Immagini scarsamente ottimizzate possono causare problemi di prestazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)
+- [Configurazione rapida](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
+- [Immagini non ottimizzate correttamente possono causare problemi di prestazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)

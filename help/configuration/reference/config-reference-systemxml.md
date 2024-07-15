@@ -6,14 +6,14 @@ badge: label="Contributo di David Lambauer" type="Informative" url="https://gith
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2708'
 ht-degree: 0%
 
 ---
 
 # riferimento system.xml
 
-Il `system.xml` consente di gestire la configurazione del sistema Commerce. Utilizzare questo argomento come riferimento generale per `system.xml` file. Il `system.xml` il file si trova in `etc/adminhtml/system.xml` in una determinata estensione di Commerce 2.
+Il file `system.xml` consente di gestire la configurazione del sistema Commerce. Utilizzare questo argomento come riferimento generale per il file `system.xml`. Il file `system.xml` si trova in `etc/adminhtml/system.xml` in una determinata estensione di Commerce 2.
 
 Il seguente frammento di codice mostra l&#39;ossatura del file:
 
@@ -28,36 +28,37 @@ Il seguente frammento di codice mostra l&#39;ossatura del file:
 
 >[!TIP]
 >
->Se desideri una convalida immediata *XSD nell’IDE, puoi eseguire `bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>`.
+>Se desideri una convalida *XSD immediata nell&#39;IDE, puoi eseguire `bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>`.
 
 ## Schede // Sezioni // Gruppi // Campi
 
-In `system.xml` file, è possibile definire quattro diversi tipi di entità, che sono correlate tra loro. Nella sezione seguente viene descritta la relazione tra schede, sezioni, gruppi e campi. La schermata seguente mostra la configurazione del sistema Commerce 2 nel backend di amministrazione.
-I quadrati rossi contrassegnano i diversi tipi definiti nella `system.xml` file:
+Nel file `system.xml` è possibile definire quattro diversi tipi di entità, che sono correlati tra loro. Nella sezione seguente viene descritta la relazione tra schede, sezioni, gruppi e campi. La schermata seguente mostra la configurazione del sistema di Commerce 2 nel backend di amministrazione.
+I quadrati rossi contrassegnano i diversi tipi definiti nel file `system.xml`:
 
 ![Schermata che mostra una sezione configurata in Admin.](../../assets/configuration/magento2-system-configuration.png)
 
 Le schede vengono utilizzate per dividere semanticamente diverse aree di configurazione. Ogni scheda può contenere una o più sezioni, a cui è possibile fare riferimento come sottomenu. Una sezione contiene uno o più gruppi.
-Ogni gruppo elenca uno o più campi. È inoltre possibile utilizzare un gruppo per aggiungere una descrizione generale per i campi seguenti. Come accennato, ogni gruppo può avere uno o più campi. I campi sono l&#39;entità più piccola nel contesto di configurazione del sistema.
+Ogni gruppo elenca uno o più campi. È inoltre possibile utilizzare un gruppo per aggiungere una descrizione generale per i campi seguenti. Come accennato, ogni gruppo può avere uno o più campi. I campi sono l’entità più piccola
+nel contesto di configurazione del sistema.
 
 ## Schede
 
-A `<tab>`-Assegnare tag ai riferimenti a una scheda esistente o a una nuova scheda nella configurazione di sistema.
+Un tag `<tab>` fa riferimento a una scheda esistente o nuova nella configurazione di sistema.
 
 ### Riferimento attributo scheda
 
-A `<tab>`-Tag può avere i seguenti attributi:
+Un tag `<tab>` può avere i seguenti attributi:
 
 | Attributo | Descrizione | Tipo | Obbligatorio |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------|----------|----------|
 | `id` | Definisce l’identificatore utilizzato che fa riferimento alla sezione. | `typeId` | obbligatorio |
-| `translate` | Definisce il campo da tradurre. Fornire `label` per rendere traducibile l’etichetta. | `string` | facoltativo |
+| `translate` | Definisce il campo da tradurre. Fornisci `label` per rendere traducibile l&#39;etichetta. | `string` | facoltativo |
 | `sortOrder` | Definisce l’ordinamento della sezione. I numeri alti spingono la sezione nella parte inferiore della pagina, mentre i numeri bassi spingono la sezione nella parte superiore. | `float` | facoltativo |
 | `class` | Aggiunge una classe CSS definita all&#39;elemento HTML scheda sottoposto a rendering. | `string` | facoltativo |
 
 ### Riferimento nodo scheda
 
-A `<tab>`-Tag può avere il seguente elemento figlio:
+Un tag `<tab>` può avere il seguente elemento figlio:
 
 | Nodo | Descrizione | Tipo |
 |---------|------------------------------------------------------|----------|
@@ -78,33 +79,33 @@ Il seguente frammento di codice illustra la creazione di una nuova scheda con da
 </config>
 ```
 
-Lo snippet crea una nuova scheda con l’identificatore `A_UNIQUE_ID`. Come `translate`-attribute è definito e fa riferimento all&#39;etichetta, il `label`-node è traducibile. Durante il rendering, la classe CSS `a-custom-css-class-to-style-this-tab` verrà applicato all&#39;elemento HTML creato per questa scheda.
-Il `sortOrder`-attribute con il valore di `10` definisce la posizione della scheda nell’elenco di tutte le schede sottoposte a rendering.
+Il frammento precedente crea una nuova scheda con l&#39;identificatore `A_UNIQUE_ID`. Poiché l&#39;attributo `translate` è definito e fa riferimento all&#39;etichetta, il nodo `label` è traducibile. Durante il rendering, la classe CSS `a-custom-css-class-to-style-this-tab` verrà applicata all&#39;elemento HTML creato per questa scheda.
+L&#39;attributo `sortOrder` con il valore di `10` definisce la posizione della scheda nell&#39;elenco di tutte le schede sottoposte a rendering.
 
 ## Sezioni
 
-A `<section>`-Assegna tag ai riferimenti a una sezione esistente o nuova nella configurazione del sistema.
+Un tag `<section>` fa riferimento a una sezione esistente o nuova nella configurazione di sistema.
 
 ### Riferimento attributo sezione
 
-A `<section>`-Tag può avere i seguenti attributi:
+Un tag `<section>` può avere i seguenti attributi:
 
 | Attributo | Descrizione | Tipo | Obbligatorio |
 |:----------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|:---------|:---------|
 | `id` | Definisce l’identificatore utilizzato che fa riferimento alla sezione. | `typeId` | obbligatorio |
-| `translate` | Definisce il campo da tradurre. Fornire `label` per rendere traducibile l’etichetta. | `string` | facoltativo |
-| `type` | Definisce il tipo di input dell&#39;elemento HTML sottoposto a rendering. Impostazione predefinita `text`. | `string` | facoltativo |
+| `translate` | Definisce il campo da tradurre. Fornisci `label` per rendere traducibile l&#39;etichetta. | `string` | facoltativo |
+| `type` | Definisce il tipo di input dell&#39;elemento HTML sottoposto a rendering. Impostazione predefinita: `text`. | `string` | facoltativo |
 | `sortOrder` | Definisce l’ordinamento della sezione. I numeri alti spingono la sezione nella parte inferiore della pagina, mentre i numeri bassi spingono la sezione nella parte superiore. | `float` | facoltativo |
-| `showInDefault` | Definisce se la sezione viene visualizzata nell&#39;ambito di configurazione predefinito. Specifica `1` per visualizzare la sezione e `0` per nascondere la sezione. | `int` | facoltativo |
-| `showInStore` | Definisce se la sezione viene visualizzata a livello di punto vendita. Specifica `1` per visualizzare la sezione e `0` per nascondere la sezione. | `int` | facoltativo |
-| `showInWebsite` | Definisce se la sezione viene visualizzata a livello di sito Web. Specifica `1` per visualizzare la sezione e `0` per nascondere la sezione. | `int` | facoltativo |
+| `showInDefault` | Definisce se la sezione viene visualizzata nell&#39;ambito di configurazione predefinito. Specificare `1` per visualizzare la sezione e `0` per nasconderla. | `int` | facoltativo |
+| `showInStore` | Definisce se la sezione viene visualizzata a livello di punto vendita. Specificare `1` per visualizzare la sezione e `0` per nasconderla. | `int` | facoltativo |
+| `showInWebsite` | Definisce se la sezione viene visualizzata a livello di sito Web. Specificare `1` per visualizzare la sezione e `0` per nasconderla. | `int` | facoltativo |
 | `canRestore` | Definisce se la sezione può essere ripristinata sul valore predefinito. | `int` | facoltativo |
 | `advanced` | Obsoleto dalla versione 100.0.2. | `bool` | facoltativo |
 | `extends` | Specificando un identificatore di un’altra sezione, il contenuto di questo nodo estenderà la sezione a cui hai fatto riferimento. | `string` | facoltativo |
 
 ### Riferimento nodo sezione
 
-A `<section>`-Tag può avere i seguenti elementi secondari:
+Un tag `<section>` può avere i seguenti figli:
 
 | Nodo | Descrizione | Tipo |
 |------------------|-----------------------------------------------------------------------------------------------------------------------|---------------------|
@@ -115,7 +116,7 @@ A `<section>`-Tag può avere i seguenti elementi secondari:
 | `resource` | Fa riferimento a una risorsa ACL per fornire le impostazioni delle autorizzazioni per questa sezione. | `typeAclResourceId` |
 | `group` | Definisci uno o più sottogruppi. | `typeGroup` |
 | `frontend_model` | Specifica un modello front-end diverso per modificare il rendering e l&#39;output. | `typeModel` |
-| `include` | Utilizzato per includere `system_include.xsd` file compatibili. Di solito utilizzato per strutturare grandi `system.xml` file. | `includeType` |
+| `include` | Utilizzato per includere ulteriori file compatibili con `system_include.xsd`. Utilizzato in genere per strutturare file `system.xml` di grandi dimensioni. | `includeType` |
 
 ### Esempio: creare una sezione e assegnarla a una scheda
 
@@ -138,32 +139,32 @@ Il seguente frammento di codice illustra l&#39;utilizzo di base della creazione 
 </config>
 ```
 
-La sezione descritta sopra definisce l’ID `A_UNIQUE_SECTION_ID`, è visibile nella vista di configurazione predefinita e in un contesto store. Il `label`-node è traducibile. La sezione è associata alla scheda con l’ID `A_UNIQUE_ID`. È possibile accedere alla sezione solo da utenti che dispongono delle autorizzazioni definite nell’ACL `VENDOR_MODULE::path_to_the_acl_resource`.
+La sezione descritta sopra definisce l&#39;ID `A_UNIQUE_SECTION_ID`, che è visibile nella vista di configurazione predefinita e in un contesto di archivio. Il nodo `label` è traducibile. La sezione è associata alla scheda con ID `A_UNIQUE_ID`. È possibile accedere alla sezione solo da utenti che dispongono delle autorizzazioni definite nell&#39;ACL `VENDOR_MODULE::path_to_the_acl_resource`.
 
 ## Gruppi
 
-Il `<group>`-Tag viene utilizzato per raggruppare i campi.
+Il tag `<group>` viene utilizzato per raggruppare i campi.
 
 ### Riferimento attributo gruppo
 
-A `<group>`-Tag può avere i seguenti attributi:
+Un tag `<group>` può avere i seguenti attributi:
 
 | Attributo | Descrizione | Tipo | Obbligatorio |
 |:----------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|:---------|:---------|
 | `id` | Definisce l’identificatore utilizzato che fa riferimento al gruppo. | `typeId` | obbligatorio |
-| `translate` | Definisce i campi da tradurre. Fornire `label` per rendere traducibile l’etichetta. Più campi devono essere separati da uno spazio. | `string` | facoltativo |
-| `type` | Definisce il tipo di input dell&#39;elemento HTML sottoposto a rendering. Impostazione predefinita `text`. | `string` | facoltativo |
+| `translate` | Definisce i campi da tradurre. Fornisci `label` per rendere traducibile l&#39;etichetta. Più campi devono essere separati da uno spazio. | `string` | facoltativo |
+| `type` | Definisce il tipo di input dell&#39;elemento HTML sottoposto a rendering. Impostazione predefinita: `text`. | `string` | facoltativo |
 | `sortOrder` | Definisce l’ordinamento della sezione. I numeri alti spingono la sezione nella parte inferiore della pagina, mentre i numeri bassi spingono la sezione nella parte superiore. | `float` | facoltativo |
-| `showInDefault` | Definisce se il gruppo viene visualizzato nell&#39;ambito di configurazione predefinito. Specifica `1` per mostrare il gruppo e `0` per nascondere il gruppo. | `int` | facoltativo |
-| `showInStore` | Definisce se il gruppo viene visualizzato a livello di archivio. Specifica `1` per mostrare il gruppo e `0` per nascondere il gruppo. | `int` | facoltativo |
-| `showInWebsite` | Definisce se il gruppo viene visualizzato a livello di sito Web. Specifica `1` per mostrare il gruppo e `0` per nascondere il gruppo. | `int` | facoltativo |
+| `showInDefault` | Definisce se il gruppo viene visualizzato nell&#39;ambito di configurazione predefinito. Specificare `1` per mostrare il gruppo e `0` per nasconderlo. | `int` | facoltativo |
+| `showInStore` | Definisce se il gruppo viene visualizzato a livello di archivio. Specificare `1` per mostrare il gruppo e `0` per nasconderlo. | `int` | facoltativo |
+| `showInWebsite` | Definisce se il gruppo viene visualizzato a livello di sito Web. Specificare `1` per mostrare il gruppo e `0` per nasconderlo. | `int` | facoltativo |
 | `canRestore` | Definisce se il gruppo può essere ripristinato al valore predefinito. | `int` | facoltativo |
 | `advanced` | Obsoleto dalla versione 100.0.2. | `bool` | facoltativo |
 | `extends` | Specificando un identificatore di un altro gruppo, il contenuto di questo nodo estenderà la sezione a cui si fa riferimento. | `string` | facoltativo |
 
 ### Riferimento nodo di gruppo
 
-A `<group>`-Tag può avere i seguenti elementi secondari:
+Un tag `<group>` può avere i seguenti figli:
 
 | Nodo | Descrizione | Tipo |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
@@ -175,17 +176,17 @@ A `<group>`-Tag può avere i seguenti elementi secondari:
 | `help_url` | Non estensibile. Vedi sotto. | `typeUrl` |
 | `more_url` | Non estensibile. Vedi sotto. | `typeUrl` |
 | `demo_link` | Non estensibile. Vedi sotto. | `typeUrl` |
-| `comment` | Aggiunge un commento sotto l&#39;etichetta del gruppo. Utilizzando `<![CDATA[//]]>` HTML può essere applicato. | `string` |
+| `comment` | Aggiunge un commento sotto l&#39;etichetta del gruppo. Utilizzando `<![CDATA[//]]>` HTML è possibile applicare. | `string` |
 | `hide_in_single_store_mode` | Indica se il gruppo deve essere visibile in modalità archivio singolo. `1` nasconde il gruppo; `0` mostra il gruppo. | `int` |
 | `field` | Definisci uno o più campi che devono essere disponibili in questo gruppo. | `field` |
 | `group` | Definisci uno o più sottogruppi. | `unbounded` |
-| `depends` | Può essere utilizzato per dichiarare dipendenze da altri campi. Viene utilizzato per mostrare campi/gruppi specifici solo quando un determinato campo ha il valore `1`. Questo nodo richiede un `section/group/field`-string. | `depends` |
+| `depends` | Può essere utilizzato per dichiarare dipendenze da altri campi. Viene utilizzato per mostrare campi/gruppi specifici solo quando un determinato campo ha un valore di `1`. Questo nodo richiede una stringa `section/group/field`. | `depends` |
 | `attribute` | Gli attributi personalizzati possono essere utilizzati dai modelli front-end. Di solito utilizzato per rendere più dinamico un determinato modello di front-end. | `attribute` |
-| `include` | Utilizzato per includere `system_include.xsd` file compatibili. Di solito utilizzato per strutturare grandi `system.xml` file. | `includeType` |
+| `include` | Utilizzato per includere ulteriori file compatibili con `system_include.xsd`. Utilizzato in genere per strutturare file `system.xml` di grandi dimensioni. | `includeType` |
 
 >[!WARNING]
 >
->I nodi `more_url`, `demo_url` e `help_url` sono definiti da un modello di front-end PayPal utilizzato una sola volta. Questi nodi non sono riutilizzabili.
+>I nodi `more_url`, `demo_url` e `help_url` sono definiti da un modello front-end PayPal utilizzato una sola volta. Questi nodi non sono riutilizzabili.
 
 ### Esempio: creare un gruppo per una determinata sezione
 
@@ -213,57 +214,57 @@ Il seguente frammento di codice illustra l&#39;utilizzo di base della creazione 
 </config>
 ```
 
-Il gruppo descritto sopra definisce l’ID `A_UNIQUE_GROUP_ID`, è visibile nella vista di configurazione predefinita e in un contesto store. Entrambi, il `label` e `comment` sono contrassegnati come traducibili.
+Il gruppo descritto sopra definisce l&#39;ID `A_UNIQUE_GROUP_ID`, è visibile nella vista di configurazione predefinita e in un contesto di archivio. Sia `label` che `comment` sono contrassegnati come traducibili.
 
 ## Campi
 
-Il `<field>`-Il tag viene utilizzato all&#39;interno di `<group>`-Tag per definire valori di configurazione specifici.
+Il tag `<field>` viene utilizzato all&#39;interno dei tag `<group>` per definire valori di configurazione specifici.
 
 ### Riferimento attributo campo
 
-A `<field>`-Tag può avere i seguenti attributi:
+Un tag `<field>` può avere i seguenti attributi:
 
 | Attributo | Descrizione | Tipo | Obbligatorio |
 |:----------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|:---------|:---------|
 | `id` | Definisce l’identificatore utilizzato che fa riferimento al campo. | `typeId` | obbligatorio |
-| `translate` | Definisce i campi da tradurre. Fornire `label` per rendere traducibile l’etichetta. Più campi devono essere separati da uno spazio. | `string` | facoltativo |
-| `type` | Definisce il tipo di input dell&#39;elemento HTML sottoposto a rendering. Impostazione predefinita `text`. | `string` | facoltativo |
+| `translate` | Definisce i campi da tradurre. Fornisci `label` per rendere traducibile l&#39;etichetta. Più campi devono essere separati da uno spazio. | `string` | facoltativo |
+| `type` | Definisce il tipo di input dell&#39;elemento HTML sottoposto a rendering. Impostazione predefinita: `text`. | `string` | facoltativo |
 | `sortOrder` | Definisce l’ordinamento della sezione. I numeri alti spingono la sezione nella parte inferiore della pagina, mentre i numeri bassi spingono la sezione nella parte superiore. | `float` | facoltativo |
-| `showInDefault` | Definisce se il campo viene visualizzato nell&#39;ambito di configurazione predefinito. Specifica `1` per visualizzare il campo e `0` per nascondere il campo. | `int` | facoltativo |
-| `showInStore` | Definisce se il campo viene visualizzato a livello di archivio. Specifica `1` per visualizzare il campo e `0` per nascondere il campo. | `int` | facoltativo |
-| `showInWebsite` | Definisce se il campo viene visualizzato a livello di sito Web. Specifica `1` per visualizzare il campo e `0` per nascondere il campo. | `int` | facoltativo |
+| `showInDefault` | Definisce se il campo viene visualizzato nell&#39;ambito di configurazione predefinito. Specificare `1` per visualizzare il campo e `0` per nascondere il campo. | `int` | facoltativo |
+| `showInStore` | Definisce se il campo viene visualizzato a livello di archivio. Specificare `1` per visualizzare il campo e `0` per nascondere il campo. | `int` | facoltativo |
+| `showInWebsite` | Definisce se il campo viene visualizzato a livello di sito Web. Specificare `1` per visualizzare il campo e `0` per nascondere il campo. | `int` | facoltativo |
 | `canRestore` | Definisce se il campo può essere ripristinato al valore predefinito. | `int` | facoltativo |
 | `advanced` | Obsoleto dalla versione 100.0.2. | `bool` | facoltativo |
 | `extends` | Specificando un identificatore di un altro campo, il contenuto di questo nodo estenderà la sezione a cui hai fatto riferimento. | `string` | facoltativo |
 
 ### Riferimento tipo di campo
 
-A `<field>`-Tag può avere i seguenti valori per `type=""` attributo:
+Un tag `<field>` può avere i seguenti valori per l&#39;attributo `type=""`:
 
 | Tipo | Descrizione |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `text` | Campo di testo a riga singola standard |
 | `textarea` | Blocco di testo |
-| `select` | Menu a discesa Normale, potrebbe essere necessario un `source_model`. Utilizzato anche per `Yes/No` selezioni. Consulta `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` ad esempio. |
-| `multiselect` | Mi piace `select` ma sono valide più opzioni. |
-| `button` | Pulsante che attiva un evento immediato. Richiede un modello front-end personalizzato per definire il testo del pulsante e l’azione. Consulta `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` ad esempio. |
+| `select` | Menu a discesa Normal, potrebbe essere necessario un `source_model` personalizzato. Utilizzato anche per `Yes/No` selezioni. Vedi `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` per un esempio. |
+| `multiselect` | Come `select`, ma sono valide più opzioni. |
+| `button` | Pulsante che attiva un evento immediato. Richiede un modello front-end personalizzato per definire il testo del pulsante e l’azione. Vedi `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` per un esempio. |
 | `obscure` | Un campo di testo con il valore crittografato e visualizzato come `****`. Se si modifica il tipo utilizzando l’elemento &quot;Inspect&quot; nel browser, il valore non viene visualizzato. |
-| `password` | Mi piace `obscure` a parte il fatto che il valore nascosto non è crittografato e la modifica forzata del tipo tramite l’elemento &quot;Inspect&quot; nel browser non rivela il valore. |
+| `password` | Come `obscure`, tranne per il fatto che il valore nascosto non è crittografato e la modifica forzata del tipo tramite &quot;Inspect Element&quot; nel browser non rivela il valore. |
 | `file` | Consente di caricare un file per l’elaborazione. |
 | `label` | Visualizza un&#39;etichetta anziché un campo modificabile. Utilizzare questo tipo quando un campo è modificabile solo su ambiti specifici, ad esempio solo a livello di visualizzazione archivio. |
 | `time` | Controllo per impostare il tempo utilizzando tre menu a discesa: Ora, minuto e secondo. |
 | `allowspecific` | Un elenco a selezione multipla di paesi specifici. Richiede un `source_model` come `Magento\Shipping\Model\Config\Source\Allspecificcountries` |
 | `image` | Consente di caricare un’immagine. |
-| `note` | Consente di aggiungere una nota informativa alla pagina. Questo tipo richiede un `frontend_model` per riprodurre la nota. |
+| `note` | Consente di aggiungere una nota informativa alla pagina. Questo tipo richiede `frontend_model` per eseguire il rendering della nota. |
 
 È inoltre possibile creare un tipo di campo personalizzato. Questa operazione viene spesso eseguita quando è necessario un pulsante speciale, con un’azione. A tal fine sono necessari due elementi principali:
 
-- Creazione di un blocco in `adminhtml` area
-- Impostazione di `type=""` al percorso di questo blocco
+- Creazione di un blocco in `adminhtml`
+- Impostazione di `type=""` nel percorso di questo blocco
 
-Il blocco stesso richiede, come minimo, un `__construct` metodo e un `getElementHtml()` metodo. Il [Magento_OfflineShipping](https://github.com/magento/magento2/blob/2.4/app/code/Magento/OfflineShipping) è un semplice esempio di tipo personalizzato.
+Il blocco stesso richiede almeno un metodo `__construct` e un metodo `getElementHtml()`. [Magento_OfflineShipping](https://github.com/magento/magento2/blob/2.4/app/code/Magento/OfflineShipping) è un semplice esempio di tipo personalizzato.
 
-Ad esempio, nel modulo OfflineShipping, il pulsante Esporta è definito in `Magento\OfflineShipping\Block\Adminhtml\Form\Field\Export` e la definizione del campo sarà simile alla seguente:
+Nel modulo OfflineShipping, ad esempio, il pulsante Esporta è definito in `Magento\OfflineShipping\Block\Adminhtml\Form\Field\Export` e la definizione del campo è simile alla seguente:
 
 ```xml
 <field id="export" translate="label" type="Magento\OfflineShipping\Block\Adminhtml\Form\Field\Export" sortOrder="5" showInDefault="0" showInWebsite="1" showInStore="0">
@@ -273,14 +274,14 @@ Ad esempio, nel modulo OfflineShipping, il pulsante Esporta è definito in `Mage
 
 ### Riferimento nodo di campo
 
-A `<field>`-Tag può avere i seguenti elementi secondari:
+Un tag `<field>` può avere i seguenti figli:
 
 | Nodo | Descrizione | Tipo |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | `label` | Definisce l’etichetta visualizzata nel front-end. | `string` |
-| `comment` | Aggiunge un commento sotto l&#39;etichetta del campo. Utilizzando `<![CDATA[//]]>` HTML può essere applicato. | `string` |
+| `comment` | Aggiunge un commento sotto l&#39;etichetta del campo. Utilizzando `<![CDATA[//]]>` HTML è possibile applicare. | `string` |
 | `tooltip` | Un altro possibile elemento front-end che può essere utilizzato per descrivere il significato di questo campo. Viene visualizzata come una piccola icona accanto al campo. | `string` |
-| `hint` | Visualizza informazioni aggiuntive. Disponibile solo con `frontend_model`. | `string` |
+| `hint` | Visualizza informazioni aggiuntive. Disponibile solo con `frontend_model` specifico. | `string` |
 | `frontend_class` | Aggiunge una classe CSS definita all&#39;elemento HTML della sezione di cui è stato eseguito il rendering. | `string` |
 | `frontend_model` | Specifica un modello front-end diverso per modificare il rendering e l&#39;output. | `typeModel` |
 | `backend_model` | Specifica un modello di back-end diverso per la modifica dei valori configurati. | `typeModel` |
@@ -291,19 +292,19 @@ A `<field>`-Tag può avere i seguenti elementi secondari:
 | `if_module_enabled` | Utilizzato per visualizzare un campo solo quando un determinato modulo è abilitato. | `typeModule` |
 | `base_url` | Utilizzato in combinazione con `upload_dir` per i caricamenti di file. | `typeUrl` |
 | `upload_dir` | Specifica una directory di destinazione per i caricamenti. Questo nodo ha attributi e nodi aggiuntivi. Controllali prima di usare questo. | `typeUploadDir` |
-| `button_url` | Visualizza un pulsante se `button_url` e `button_label` sono specificati. Di solito utilizzato in combinazione con un modello front-end personalizzato. | `typeUrl` |
-| `button_label` | Visualizza un pulsante se `button_label` e `button_url` sono specificati. Di solito utilizzato in combinazione con un modello front-end personalizzato. | `string` |
+| `button_url` | Visualizza un pulsante se sono specificati `button_url` e `button_label`. Di solito utilizzato in combinazione con un modello front-end personalizzato. | `typeUrl` |
+| `button_label` | Visualizza un pulsante se sono specificati `button_label` e `button_url`. Di solito utilizzato in combinazione con un modello front-end personalizzato. | `string` |
 | `more_url` | Non estensibile. Vedi sotto. | `typeUrl` |
 | `demo_url` | Non estensibile. Vedi sotto. | `typeUrl` |
 | `hide_in_single_store_mode` | Indica se il gruppo deve essere visibile in modalità archivio singolo. `1` nasconde il gruppo; `0` mostra il gruppo. | `int` |
 | `options` | Non utilizzato. Potenzialmente obsoleto. | `complexType` |
-| `depends` | Può essere utilizzato per dichiarare le dipendenze ad altri campi. Viene utilizzato per mostrare campi/gruppi specifici quando un determinato campo ha il valore `1`. Questo nodo richiede un `section/group/field`-string. | `complexType` |
+| `depends` | Può essere utilizzato per dichiarare le dipendenze ad altri campi. Viene utilizzato per mostrare campi/gruppi specifici solo quando un determinato campo ha un valore di `1`. Questo nodo richiede una stringa `section/group/field`. | `complexType` |
 | `attribute` | Gli attributi personalizzati possono essere utilizzati dai modelli front-end. Di solito utilizzato per rendere più dinamico un determinato modello di front-end. | `complexType` |
 | `requires` | Non estensibile. Vedi sotto. | `complexType` |
 
 >[!WARNING]
 >
->I nodi `more_url`, `demo_url`, `requires` e `options` sono definiti da un diverso modello di pagamento di base e sono utilizzati una sola volta. Questi nodi non sono riutilizzabili.
+>I nodi `more_url`, `demo_url`, `requires` e `options` sono definiti da un diverso modello di pagamento di base e vengono utilizzati una sola volta. Questi nodi non sono riutilizzabili.
 
 ### Esempio: creare due campi in un determinato gruppo
 
@@ -346,15 +347,15 @@ A `<field>`-Tag può avere i seguenti elementi secondari:
 </config>
 ```
 
-L&#39;esempio precedente crea due campi, entrambi visibili/configurabili nella visualizzazione predefinita e nella visualizzazione punto vendita. Entrambi i campi hanno un commento e una descrizione per descriverne lo scopo per l’utente. Il `label`-node è traducibile.
-Il campo con l’identificatore `ANOTHER_UNIQUE_FIELD_ID` è visibile quando il modulo specificato in `if_module_enabled` è abilitato a livello globale. Il campo convalida anche il suo valore in base alle regole `required-entry` e `no-whitespace`.
-Il campo con l’identificatore `A_UNIQUE_FIELD_ID` definisce un modello di origine diverso che fornisce tali valori `Yes` e `No`.
+L&#39;esempio precedente crea due campi, entrambi visibili/configurabili nella visualizzazione predefinita e nella visualizzazione punto vendita. Entrambi i campi hanno un commento e una descrizione per descriverne lo scopo per l’utente. Il nodo `label` è traducibile.
+Il campo con l&#39;identificatore `ANOTHER_UNIQUE_FIELD_ID` è visibile quando il modulo specificato in `if_module_enabled` è abilitato a livello globale. Il valore del campo viene convalidato anche in base alle regole `required-entry` e `no-whitespace`.
+Il campo con identificatore `A_UNIQUE_FIELD_ID` definisce un modello di origine diverso che fornisce i valori `Yes` e `No`.
 
 ### Modelli di origine comuni
 
-I seguenti modelli di origine sono forniti da Commerce 2 Core. In generale, ci sono molti più modelli di origine; l&#39;elenco seguente descrive quelli più comuni. Tieni presente che questi modelli di origine richiedono l’attributo del campo `type` da impostare su `select` per funzionare correttamente.
+I seguenti modelli di origine sono forniti da Commerce 2 Core. In generale, ci sono molti più modelli di origine; l&#39;elenco seguente descrive quelli più comuni. Tenere presente che questi modelli di origine richiedono che l&#39;attributo del campo `type` sia impostato su `select` per funzionare correttamente.
 
-| Modello di origine | Descrizione |
+| Modello Source | Descrizione |
 |-----------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | `Magento\Config\Model\Config\Source\Yesnocustom` | Fornisce i valori `Yes`, `No` e `Specified`. |
 | `Magento\Config\Model\Config\Source\Enabledisable` | Fornisce i valori `Enable`, `Disable`. Salva i valori come `0` e `1` nel database. |
@@ -366,7 +367,7 @@ I seguenti modelli di origine sono forniti da Commerce 2 Core. In generale, ci s
 
 ### Convalida campo
 
-A un campo possono essere assegnate una o più classi di convalida per garantire che l’input dell’utente soddisfi i requisiti dell’estensione. Le regole di convalida possono essere applicate con `<validate>`-Tag.
+A un campo possono essere assegnate una o più classi di convalida per garantire che l’input dell’utente soddisfi i requisiti dell’estensione. Le regole di convalida possono essere applicate con il tag `<validate>`.
 Nell&#39;esempio seguente viene convalidato un campo e vengono aggiunte diverse regole di convalida.
 
 ```xml
@@ -384,30 +385,30 @@ Sono disponibili le seguenti regole di convalida:
 | `ipv4` | Consente un indirizzo IP v4 valido. |
 | `ipv6` | Consente un indirizzo IP v6 valido. |
 | `letters-only` | Consente solo lettere. Ad esempio, `abcABC`. |
-| `letters-with-basic-punc` | Consente solo lettere o punteggiatura.<br>Deve trasmettere la seguente espressione: `/^[a-z\-.,()\u0027\u0022\s]+$/i`. |
+| `letters-with-basic-punc` | Consente solo lettere o punteggiatura.<br>Deve passare la seguente espressione: `/^[a-z\-.,()\u0027\u0022\s]+$/i`. |
 | `mobileUK` | Consente un numero di telefono cellulare (Regno Unito). |
 | `no-marginal-whitespace` | Non consente spazi vuoti all&#39;inizio o alla fine del valore. |
 | `no-whitespace` | Non consente spazi vuoti. |
 | `phoneUK` | Consente un numero di telefono (Regno Unito). |
 | `phoneUS` | Consente un numero di telefono (Stati Uniti). |
-| `required-entry` | Non consente un valore vuoto (convalida equivalente come `validate-no-empty`).<br>Messaggio di errore di convalida: &quot;Campo obbligatorio&quot;. |
+| `required-entry` | Non consente un valore vuoto (convalida equivalente a `validate-no-empty`).<br>Messaggio di errore di convalida: &quot;Questo campo è obbligatorio&quot;. |
 | `time` | Consente un orario valido nel formato 24 ore, tra le 00:00 e le 23:59. Ad esempio `15`, `15:05` o `15:05:48`. |
-| `time12h` | Consente un orario valido in formato 12 ore, tra le 12:00 e le 11:59:17:00 Ad esempio `3 am`, `11:30 pm`, `02:15:00 pm`. |
+| `time12h` | Consente un orario valido in formato 12 ore, tra le 12:00 e le 11:59:59 pm. Ad esempio `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | Consente 7 o più caratteri, sia numerici che alfabetici. |
 | `validate-alphanum-with-spaces` | Consente l&#39;uso di lettere (a-z o A-Z), numeri (0-9) o solo spazi. |
-| `validate-clean-url` | Consente un URL valido. Ad esempio: `https://www.example.com` o `www.example.com`. |
+| `validate-clean-url` | Consente un URL valido. Ad esempio, `https://www.example.com` o `www.example.com`. |
 | `validate-currency-dollar` | Consente un importo in dollari valido. Ad esempio, $100,00. |
-| `validate-data` | Consente solo l&#39;utilizzo di lettere (a-z o A-Z), numeri (0-9) o caratteri di sottolineatura (\_).<br>Il primo carattere deve essere una lettera.<br>(Deve corrispondere all&#39;espressione: `/^[A-Za-z]+[A-Za-z0-9_]+$/`)<br>Messaggio di errore di convalida: &quot;In questo campo utilizzare solo lettere (a-z o A-Z), numeri (0-9) o il carattere di sottolineatura (\_); il primo carattere deve essere una lettera.&quot; |
+| `validate-data` | Consente solo l&#39;utilizzo di lettere (a-z o A-Z), numeri (0-9) o caratteri di sottolineatura (\_).<br>Il primo carattere deve essere una lettera.<br>(Deve corrispondere all&#39;espressione: `/^[A-Za-z]+[A-Za-z0-9_]+$/`)<br>Messaggio di errore di convalida: &quot;Utilizzare solo lettere (a-z o A-Z), numeri (0-9) o il carattere di sottolineatura (\_) in questo campo e il primo carattere deve essere una lettera.&quot; |
 | `validate-date-au` | Applica il seguente formato data: gg/mm/aaaa. Ad esempio, 17/03/2006 per il 17 marzo 2006. |
 | `validate-email` | Consente un indirizzo e-mail valido. Ad esempio, johndoe@domain.com. |
 | `validate-emailSender` | Consente un indirizzo e-mail valido. Ad esempio, johndoe@domain.com. |
 | `validate-fax` | Consente un numero di fax valido. Ad esempio, 123-456-7890. |
-| `validate-no-empty` | Non consente un valore vuoto (convalida equivalente come `requried-entry`).<br>Messaggio di errore di convalida: &quot;Valore vuoto&quot;. |
+| `validate-no-empty` | Non consente un valore vuoto (convalida equivalente a `requried-entry`).<br>Messaggio di errore di convalida: &quot;Valore vuoto&quot;. |
 | `validate-no-html-tags` | Non consente l’utilizzo di tag HTML. |
 | `validate-password` | Consente 6 o più caratteri. Gli spazi iniziali e finali verranno ignorati. |
 | `validate-phoneLax` | Consente un numero di telefono valido. Ad esempio, (123) 456-7890 o 123-456-7890. |
 | `validate-phoneStrict` | Consente un numero di telefono valido. Ad esempio, (123) 456-7890 o 123-456-7890. |
-| `validate-select` | Impone che l’opzione di selezione scelta non abbia un `null` valore, valore stringa di `none` o stringa di lunghezza pari a 0. |
+| `validate-select` | Impone che l&#39;opzione di selezione scelta non abbia un valore `null`, un valore stringa di `none` o una lunghezza stringa di 0. |
 | `validate-ssn` | Consente un numero di previdenza sociale (Stati Uniti) valido. Ad esempio, 123-45-6789. |
 | `validate-street` | Consente l&#39;utilizzo solo di lettere (a-z o A-Z), numeri (0-9), spazi e &quot;#&quot;. |
 | `validate-url` | Consente un URL valido. Protocollo obbligatorio (http://, https:// o ftp://). |
@@ -417,9 +418,9 @@ Sono disponibili le seguenti regole di convalida:
 
 ### Valori predefiniti
 
-I valori predefiniti per i campi possono essere impostati nel `etc/config.xml` specificando il valore predefinito in `section/group/field_ID` nodo.
+I valori predefiniti per i campi possono essere impostati nel file `etc/config.xml` del modulo specificando il valore predefinito nel nodo `section/group/field_ID`.
 
-#### Esempio: impostazione del valore predefinito per `ANOTHER_UNIQUE_FIELD_ID` (Ambito predefinito)
+#### Esempio: impostazione del valore predefinito per `ANOTHER_UNIQUE_FIELD_ID` (ambito predefinito)
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
@@ -433,9 +434,9 @@ I valori predefiniti per i campi possono essere impostati nel `etc/config.xml` s
 </config>
 ```
 
-#### Esempio: impostazione del valore predefinito per `ANOTHER_UNIQUE_FIELD_ID` (Ambito del sito web)
+#### Esempio: impostazione del valore predefinito per `ANOTHER_UNIQUE_FIELD_ID` (ambito sito Web)
 
-Utilizzo di `websites` , specifica il valore predefinito per un sito web specifico.
+Utilizzando il tag `websites`, specifica il valore predefinito per un sito Web specifico.
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">

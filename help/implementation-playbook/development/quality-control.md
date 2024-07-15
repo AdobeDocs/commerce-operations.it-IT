@@ -77,7 +77,7 @@ Il processo di controllo della qualità descritto nel diagramma precedente può 
   <tr>
     <td></td>
     <td></td>
-    <td>Pubblicare bug nel sistema di tracciamento dei bug (Jira/Redmine/Trello)</td>
+    <td>Post bug nel sistema di tracciamento dei bug (Jira/Redmine/Trello)</td>
     <td>Assegna priorità/pianifica i test da allineare alla pianificazione del progetto definita dal PM</td>
   </tr>
   <tr>
@@ -143,7 +143,7 @@ Il processo di controllo della qualità descritto nel diagramma precedente può 
 </tbody>
 </table>
 
-Simile a [strumenti](project-management-tools.md) abbiamo identificato per il processo di sviluppo una serie di soluzioni e piattaforme che spesso utilizziamo per il test del controllo di qualità.
+Analogamente ai [strumenti](project-management-tools.md) identificati per il processo di sviluppo, abbiamo selezionato alcune soluzioni e piattaforme preferite che spesso utilizziamo per il test del controllo qualità.
 
 | Finalità | Strumento |
 |---------------------------|---------------------------------------------------|
@@ -181,7 +181,7 @@ BrowserStack è una piattaforma di test cloud per web e dispositivi mobili che c
 
 Postman è la piattaforma di collaborazione per lo sviluppo API. Postman semplifica ogni passaggio della creazione di un’API e semplifica la collaborazione per consentirti di creare API migliori.
 
-SoapUI è un&#39;applicazione di test per servizi Web open-source per SOAP (Simple Object Access Protocol) e REST (Rappresentational State Transfer). La sua funzionalità copre l&#39;ispezione dei servizi web; richiamo, sviluppo, simulazione e beffa; test funzionali; test di carico e conformità.
+SoapUI è un’applicazione open-source per test di servizi web per Simple Object Access Protocol (SOAP) e trasferimenti di stato di rappresentazione (REST). La sua funzionalità copre l&#39;ispezione dei servizi web; richiamo, sviluppo, simulazione e beffa; test funzionali; test di carico e conformità.
 
 ## Test di automazione
 

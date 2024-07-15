@@ -4,7 +4,7 @@ description: Monitora i KPI, tieni traccia delle vendite e misura il successo de
 exl-id: 7b57c11b-ff32-440f-85bd-6b6d09c522b7
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,13 @@ In un&#39;attività di e-commerce c&#39;è così tanto che può essere difficile
 
 I primi quattro rapporti e dashboard utilizzati dalle aziende B2B includono:
 
-- **Profilo società**: le aziende B2B devono tenere traccia dei profili aziendali dei clienti per comprendere la cronologia degli acquisti, i dettagli dei pagamenti e il canale che hanno utilizzato per acquistare. Questa dashboard può aiutare a identificare potenziali rischi e problemi.
+- **Profilo società**: le aziende B2B devono tenere traccia dei profili delle aziende clienti per comprendere la cronologia degli acquisti, i dettagli dei pagamenti e il canale che hanno utilizzato per acquistare. Questa dashboard può aiutare a identificare potenziali rischi e problemi.
 
-- **Catalogo**- Un report catalogo e un dashboard consentono alle aziende B2B di visualizzare le prestazioni di ogni prodotto nel catalogo, nelle promozioni e nei livelli di inventario, identificando il tipo di promozione più efficace e i prodotti più richiesti. In questo modo le aziende possono fare scorta di scorte e ottenere un vantaggio competitivo.
+- **Catalogo**: un report catalogo e un dashboard consentono alle aziende B2B di visualizzare le prestazioni di ogni prodotto nel catalogo, nelle promozioni e nei livelli di inventario, in modo da identificare il tipo di promozione più efficace e i prodotti più richiesti. In questo modo le aziende possono fare scorta di scorte e ottenere un vantaggio competitivo.
 
-- **Virgolette**- Il modello di business B2B opera su preventivi e prezzi. Le aziende B2B devono seguire un processo in cui analizzano un preventivo in modo da poterlo approvare o tentare di negoziare. Un report preventivo e una dashboard consentono di migliorare il tasso di conversione dei preventivi tenendo traccia del tasso di successo, dei tassi di concorrenza, delle prestazioni e della fidelizzazione complessiva dei clienti.
+- **Preventivi**: il modello di business B2B opera su preventivi e prezzi. Le aziende B2B devono seguire un processo in cui analizzano un preventivo in modo da poterlo approvare o tentare di negoziare. Un report preventivo e una dashboard consentono di migliorare il tasso di conversione dei preventivi tenendo traccia del tasso di successo, dei tassi di concorrenza, delle prestazioni e della fidelizzazione complessiva dei clienti.
 
-- **Vendite**- Anche se le aziende B2B possono lavorare online, un rappresentante commerciale è comunque necessario per far progredire le cose in termini di identificazione dei preventivi che necessitano di negoziazione, tracciamento dei preventivi che stanno per scadere, tracciamento dei contratti in attesa di rinnovo, tracciamento delle prestazioni del team e aiuto per semplificare le attività aziendali quotidiane.
+- **Vendite**: anche se le aziende B2B possono lavorare online, un rappresentante commerciale è comunque necessario per identificare i preventivi che richiedono negoziazione, tenere traccia dei preventivi in scadenza, tenere traccia dei contratti in scadenza, tenere traccia delle prestazioni del team e semplificare le attività aziendali quotidiane.
 
 ## Meglio insieme
 

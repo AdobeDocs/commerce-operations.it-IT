@@ -5,20 +5,20 @@ feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
 source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
 
 # Riferimento percorsi di configurazione catalogo
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin (Amministrazione) in **Negozi** > Impostazioni > **Configurazione** > **Catalogo**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Catalogo**.
 
-Il [`magento app:config:dump` comando](../cli/export-configuration.md) scrive questi valori nel file di configurazione condiviso, `app/etc/config.php`, che deve trovarsi nel controllo del codice sorgente. Per ignorare eventuali impostazioni di configurazione o per impostare impostazioni sensibili, vedi [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](override-config-settings.md#environment-variables). Questo argomento fa _non_ list [valori sensibili e specifici del sistema](config-reference-sens.md).
+Il comando [`magento app:config:dump`](../cli/export-configuration.md) scrive questi valori nel file di configurazione condiviso, `app/etc/config.php`, che deve trovarsi nel controllo del codice sorgente. Per ignorare eventuali impostazioni di configurazione o per impostare impostazioni sensibili, vedere [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](override-config-settings.md#environment-variables). Questo argomento _non_ elenca [valori sensibili e specifici del sistema](config-reference-sens.md).
 
 ## Percorsi catalogo
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Catalogo** > **Catalogo**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Catalogo** > **Catalogo**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -121,7 +121,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi inventario
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Catalogo** > **Inventario**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Catalogo** > **Inventario**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -151,7 +151,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi di Visual Merchandiser
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Catalogo** > **Visual Merchandiser**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Catalogo** > **Visual Merchandiser**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -164,7 +164,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi sitemap XML
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Catalogo** > **XML Sitemap**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Catalogo** > **XML Sitemap**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -188,7 +188,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi feed RSS
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Catalogo** > **Feed RSS**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Catalogo** > **Feed RSS**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -204,7 +204,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi per l’e-mail a un amico
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Catalogo** > **E-mail a un amico**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Catalogo** > **Invia un&#39;e-mail a un amico**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|

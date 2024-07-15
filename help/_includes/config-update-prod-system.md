@@ -20,9 +20,9 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   Per ulteriori opzioni, ad esempio per impostare una whitelist di indirizzi IP, consulta [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
+   Per ulteriori opzioni, ad esempio la possibilità di impostare un indirizzo IP nella whitelist, vedere [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
 
-1. Arrestare tutti i processi di lavoro in esecuzione impostando `cron_run` a `false` in `app/etc/env.php` come segue:
+1. Arrestare i processi di lavoro in esecuzione impostando `cron_run` su `false` in `app/etc/env.php` nel modo seguente:
 
    ```php?start_inline=1
    'cron_consumers_runner' => [
@@ -36,13 +36,13 @@ ht-degree: 0%
    bin/magento app:config:import
    ```
 
-1. Infine, `kill` qualsiasi processo attivo del consumatore.
+1. Infine, `kill` qualsiasi processo consumer attivo.
 
    ```bash
    kill <PID>
    ```
 
-   Dove `PID` è l’ID processo da terminare, ad esempio:
+   Dove `PID` è l&#39;ID processo da terminare, ad esempio:
 
    ```bash
    kill 1234

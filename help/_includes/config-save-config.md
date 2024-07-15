@@ -18,14 +18,14 @@ ht-degree: 0%
    php bin/magento app:config:dump
    ```
 
-   Ad esempio, se Commerce è installato in `/var/www/html/magento2`, immetti:
+   Se ad esempio Commerce è installato in `/var/www/html/magento2`, immettere:
 
    ```bash
    cd /var/www/html/magento2
    php bin/magento app:config:dump
    ```
 
-1. Conferma che `app/etc/config.php` aggiornata.
+1. Conferma che `app/etc/config.php` è stato aggiornato.
 
    ```bash
    git status
@@ -43,9 +43,9 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >Esegui _non_ invia modifiche al `generated`, `pub/media`, o `pub/static` directory al controllo del codice sorgente. Puoi generare questi file sul sistema di build. Il sistema di sviluppo ha probabilmente codice, temi e così via, che non sono pronti per essere utilizzati nel sistema di produzione.
+   >_non_ inviare le modifiche alle directory `generated`, `pub/media` o `pub/static` al controllo del codice sorgente. Puoi generare questi file sul sistema di build. Il sistema di sviluppo ha probabilmente codice, temi e così via, che non sono pronti per essere utilizzati nel sistema di produzione.
 
-1. Archivia le modifiche apportate a `app/etc/config.php` solo al controllo del codice sorgente.
+1. Archivia le modifiche apportate a `app/etc/config.php` solo nel controllo del codice sorgente.
 
    ```bash
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy

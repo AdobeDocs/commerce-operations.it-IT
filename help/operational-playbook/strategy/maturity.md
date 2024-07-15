@@ -4,7 +4,7 @@ description: Valuta la fase della tua attività in base a questo modello di matu
 exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Considera un modello di maturità come un rapporto affidabile che consente di de
 
 Il diagramma seguente riassume le diverse esigenze tra i diversi livelli di maturità:
 
-![Diagramma delle esigenze tra i livelli di maturità](../../assets/playbooks/maturity-levels.png)
+![Necessità per il diagramma dei livelli di maturità](../../assets/playbooks/maturity-levels.png)
 
 ## Livelli di maturità
 

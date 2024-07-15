@@ -75,7 +75,7 @@ Ulteriori informazioni: [Guida utente di Adobe Commerce](https://experienceleagu
 _Attributi termine:_
 
 * _Campo: software commerce_
-* _Sinonimi: amministratore, pannello di amministrazione, back-end, interfaccia di amministrazione, interfaccia di amministrazione_
+* _Sinonimi: Amministratore, Pannello di amministrazione, backend, Interfaccia di amministrazione, Interfaccia di amministrazione_
 * _Termini correlati: admin_
 
 ### Variabili ADMIN
@@ -101,7 +101,7 @@ Ulteriori informazioni: [Guida utente di Adobe Commerce](https://experienceleagu
 _Attributi termine:_
 
 * _Campo: software commerce_
-* _Termini correlati: area, commerce admin_
+* _Termini correlati: area, amministrazione commerciale_
 
 ### area
 
@@ -136,11 +136,11 @@ Gli attributi personalizzati sono un tipo di attributo Entity-Attribute-Value (E
 
 Per integrazioni quali Google Shopping ads Channel e Amazon Sales Channel, mappi gli attributi Commerce agli attributi di terze parti per visualizzare e vendere correttamente prodotti e annunci.
 
-Ulteriori informazioni: [EAV ed extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+Ulteriori informazioni: [EAV e extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
+* _Campo: software commerce, prodotto_
 * _Sinonimi: attributo di prodotto, attributo personalizzato_
 * _Termini correlati: attributo di estensione_
 
@@ -164,7 +164,7 @@ Esempio: un set di attributi di T-shirt può includere colore, dimensione, gener
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
+* _Campo: software commerce, prodotto_
 * _Termini correlati: attribute_
 
 ### costo medio di magazzino
@@ -212,25 +212,25 @@ _Attributi termine:_
 _sostantivo_
 
 Un’unità di output della pagina che genera alcuni contenuti distintivi (informazioni, elementi dell’interfaccia utente) visibili all’utente finale.
-[Blocchi](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) sono implementate e fornite da moduli.
+[I blocchi](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) sono implementati e forniti dai moduli.
 I blocchi utilizzano i modelli per generare HTML.
 Esempi di blocchi includono un elenco di categorie, un mini carrello, tag di prodotti ed elenco di prodotti.
 
-[Blocchi dinamici](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) forniscono contenuto in base alla logica, ad esempio in base alle regole di prezzo.
+[I blocchi dinamici](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) forniscono contenuto in base alla logica, ad esempio in base alle regole di prezzo.
 
-Il Page Builder approfondisce l’interattività e la creazione di [blocchi](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) e [blocchi dinamici](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html).
+Page Builder approfondisce l&#39;interattività e la creazione di [blocchi](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) e [blocchi dinamici](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html).
 
 _Attributi termine:_
 
 * _Campo: software commerce_
-* _Sinonimi: blocchi dinamici_
+* _Sinonimi: Blocchi Dinamici_
 * _Termini correlati: blocco cms, blocco statico, contenitore, layout_
 
 ### brand
 
 _sostantivo, verbo_
 
-Identità univoca che definisce un particolare prodotto o gruppo di prodotti da parte del produttore o del designer.
+Identità univoca che definisce un particolare prodotto o gruppo di prodotti da parte del produttore o del Designer.
 Questi includono marchi di nomi per abbigliamento, elettrodomestici, articoli di lusso e così via.
 La tua azienda potrebbe essere anche il marchio, che vende prodotti con più marchi in base alla business unit, al pubblico di destinazione e così via.
 
@@ -248,7 +248,7 @@ _aggettivo_
 
 Un&#39;attività di vendita al dettaglio con una sede fisica permanente, a differenza delle attività che funzionano virtualmente o esclusivamente tramite Internet.
 
-Per [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) e [Gestione ordini](https://omsdocs.magento.com/getting-started/terminology/), questo negozio è un&#39;origine per la registrazione delle quantità di prodotti, degli ordini di spedizione e del supporto del prelievo in-store.
+Per [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) e [Order Management](https://omsdocs.magento.com/getting-started/terminology/), questo archivio è un&#39;origine per la registrazione delle quantità di prodotti, degli ordini di spedizione e il supporto del prelievo in-store.
 
 _Attributi termine:_
 
@@ -261,7 +261,7 @@ _sostantivo_
 Le operazioni in blocco sono azioni eseguite su larga scala.
 Esempio di operazioni in blocco le attività includono l&#39;importazione o l&#39;esportazione di articoli, la modifica dei prezzi su scala di massa e l&#39;assegnazione di prodotti a un magazzino.
 
-Ulteriori informazioni: [Operazioni di massa DevDocs](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
+Ulteriori informazioni: [Operazioni in blocco DevDocs](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
 
 _Attributi termine:_
 
@@ -278,7 +278,7 @@ Ulteriori informazioni: [Prodotti configurabili](https://experienceleague.adobe.
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
+* _Campo: software commerce, prodotto_
 * _Termini correlati: prodotto semplice, prodotto virtuale, tipi di prodotto_
 
 ### estensione in bundle
@@ -290,7 +290,7 @@ Può includere moduli, temi e pacchetti di lingue.
 
 _Attributi termine:_
 
-* _Campo: estensione in bundle, estensione_
+* _Campo: estensione nel bundle, estensione_
 * _Sinonimi: estensione_
 * _Termini correlati: estensione, estensione del bundle del fornitore_
 
@@ -307,7 +307,7 @@ Una cache di secondo livello, ad esempio un file system o un back-end Redis, è 
 _Attributi termine:_
 
 * _Campo: programmazione_
-* _Termini correlati: back-end_
+* _Termini correlati: backend_
 
 ### cache front-end
 
@@ -383,7 +383,7 @@ Utilizzato per creare promozioni.
 _Attributi termine:_
 
 * _Campo: software commerciale, prezzi, prodotto_
-* _Termini correlati: regole del catalogo, carrello_
+* _Termini correlati: regole catalogo, carrello_
 
 ### catalogo
 
@@ -425,7 +425,7 @@ Il menu principale del negozio è organizzato in categorie e sottocategorie di p
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
+* _Campo: software commerce, prodotto_
 
 ### pagamento
 
@@ -436,17 +436,17 @@ Dopo che il cliente rivede le informazioni e invia l’ordine, gli viene inviata
 
 Checkout dispone di molte opzioni e configurazione pronte all’uso e tramite l’estensione.
 
-Ulteriori informazioni: [Tutorial su Check-Out](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/)
+Ulteriori informazioni: [Esercitazione estrazione](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/)
 
 _Attributi termine:_
 
-* _Settore: business, design, ordine, prodotto, programmazione_
+* _Campo: business, design, order, product, programming_
 
 ### variabili cloud
 
 _sostantivo_
 
-Le variabili cloud sono variabili di ambiente specifiche di Adobe Commerce sull’infrastruttura cloud e utilizzano **`MAGENTO_CLOUD`** prefisso.
+Le variabili cloud sono variabili di ambiente specifiche di Adobe Commerce sull&#39;infrastruttura cloud e utilizzano il prefisso **`MAGENTO_CLOUD`**.
 
 Ulteriori informazioni: [Variabili cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
 
@@ -458,7 +458,7 @@ _Attributi termine:_
 
 _sostantivo_
 
-Una variante speciale di [blocco](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) che possono essere create solo in Admin e a cui non è possibile fare riferimento tramite i file di layout.
+Una variante speciale di [blocco](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) che può essere creata solo in Admin e a cui non è possibile fare riferimento tramite file di layout.
 
 _Attributi termine:_
 
@@ -485,7 +485,7 @@ _Attributi termine:_
 
 * _Campo: software commerce_
 * _Sinonimi: componente_
-* _Termini correlati: componente ui_
+* _Termini correlati: componente interfaccia utente_
 
 ### prodotto configurabile
 
@@ -505,7 +505,7 @@ Quindi, tutte le varianti vengono aggiunte a un prodotto configurabile in cui i 
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
+* _Campo: software commerce, prodotto_
 * _Termini correlati: tipi di prodotto_
 
 ### tasso di conversione
@@ -569,7 +569,7 @@ Sono simili agli acquisti d&#39;impulso, come riviste e caramelle ai registrator
 
 _Attributi termine:_
 
-* _Campo: business, product_
+* _Campo: business, prodotto_
 * _Termini correlati: upselling_
 
 ### CVM
@@ -582,7 +582,7 @@ Un modo per verificare l’identità del cliente confermando un codice di sicure
 _Attributi termine:_
 
 * _Campo: business, order_
-* _Sinonimi: metodo di verifica del titolare della carta_
+* _Sinonimi: Metodo di verifica del titolare della carta_
 * _Termini correlati: codice di sicurezza_
 
 ## D
@@ -647,7 +647,7 @@ I file scaricabili possono risiedere sul server o essere forniti come URL a qual
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
+* _Campo: software commerce, prodotto_
 * _Termini correlati: tipi di prodotto_
 
 ### contenuto dinamico
@@ -688,7 +688,7 @@ _sostantivo_
 
 Un insieme di script e strumenti progettati per gestire e distribuire l&#39;applicazione Commerce. Questo pacchetto semplifica molti processi dell’infrastruttura cloud di Adobe Commerce, tra cui l’implementazione in un ambiente Docker, la gestione delle istanze, la verifica della configurazione del progetto e l’applicazione di patch di Adobe.
 
-Ulteriori informazioni: [pacchetto strumenti ece](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
+Ulteriori informazioni: [pacchetto ece-tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
 _Attributi termine:_
 
@@ -716,7 +716,7 @@ Memorizza l’ID entità, il nome attributo e il valore come una tripla, consent
 Nella codifica, il numero di attributi che possono essere utilizzati per descrivere le entità può essere ridimensionato in modo esteso, ma il numero che si applica a una determinata entità è ridotto al minimo.
 Questo modello dati è flessibile, ma può essere lento.
 
-Ulteriori informazioni: [EAV ed extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+Ulteriori informazioni: [EAV e extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
 _Attributi termine:_
 
@@ -738,7 +738,7 @@ _Attributi termine:_
 _sostantivo_
 
 Codice che estende o personalizza il comportamento di Adobe Commerce.
-Facoltativamente, puoi creare un pacchetto e distribuire un’estensione su Commerci Marketplace o su un altro sistema di distribuzione delle estensioni.
+Facoltativamente, puoi creare un pacchetto e distribuire un’estensione su Commerce Marketplace o su un altro sistema di distribuzione delle estensioni.
 Un’estensione Commerce può includere moduli, temi e Language Pack.
 
 _Attributi termine:_
@@ -752,7 +752,7 @@ _sostantivo_
 
 Estendere le funzionalità e spesso utilizzare tipi di dati più complessi rispetto agli attributi personalizzati. Questi attributi non vengono visualizzati nella GUI.
 
-Ulteriori informazioni: [Aggiunta di attributi di estensione all’entità](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
+Ulteriori informazioni: [Aggiunta di attributi di estensione all&#39;entità](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
 
 _Attributi termine:_
 
@@ -770,7 +770,7 @@ Il FOB può essere basato sul luogo di origine o di destinazione ed essere desig
 
 _Attributi termine:_
 
-* _Campo: business, ordine, determinazione prezzi_
+* _Campo: business, order, pricing_
 * _Sinonimi: fob_
 
 ### front-end
@@ -860,7 +860,7 @@ I clienti possono selezionare le dimensioni desiderate e aggiungerle al carrello
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
+* _Campo: software commerce, prodotto_
 * _Termini correlati: prodotto semplice, tipi di prodotto_
 
 ## H
@@ -905,7 +905,7 @@ Se sulla stessa funzione sono definiti più plug-in, la configurazione dell’in
 _Attributi termine:_
 
 * _Campo: programmazione_
-* _Termini correlati: plug in_
+* _Termini correlati: plug-in_
 
 ## L
 
@@ -920,7 +920,7 @@ I file di layout assemblano quindi il contenuto (i blocchi) in queste diverse ar
 
 _Attributi termine:_
 
-* _Settore: progettazione, software commerciale_
+* _Campo: progettazione, software commerce_
 * _Termini correlati: istruzioni di layout, blocco_
 
 ### istruzioni di layout
@@ -944,7 +944,7 @@ Utilizzato per snippet di codice aggiunti per modificare il layout XML o per imp
 
 _Attributi termine:_
 
-* _Settore: progettazione, software commerciale_
+* _Campo: progettazione, software commerce_
 
 ### Proprietario licenza
 
@@ -978,14 +978,14 @@ _Attributi termine:_
 _sostantivo_
 
 Nel marketing e nel retail, una percentuale aggiunta al costo di un articolo per determinare il prezzo di vendita al dettaglio.
-[Configurare il markup](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html)o markdown di un prodotto tramite opzioni personalizzabili del prodotto.
+[Configurare il markup](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html), o markdown, di un prodotto tramite le opzioni personalizzabili del prodotto.
 
 Nello sviluppo, lingua del computer che controlla l&#39;elaborazione, la presentazione e la formattazione del testo.
 Inoltre, i tag di markup sono snippet di codice che aggiungono funzionalità o contenuto a una pagina o a un blocco CMS.
 
 _Attributi termine:_
 
-* _Settore: business, programmazione_
+* _Campo: business, programmazione_
 * _Sinonimi: Markdown_
 
 ### ambiente principale
@@ -1012,13 +1012,13 @@ _Attributi termine:_
 
 _sostantivo_
 
-MFTF è un [Framework di test funzionali](https://developer.adobe.com/commerce/testing/functional-testing-framework/).
+MFTF è un [framework di test funzionali](https://developer.adobe.com/commerce/testing/functional-testing-framework/).
 Fornisce un framework di test per sviluppatori Commerce e ingegneri software, come specialisti di controllo qualità, sviluppatori PHP e integratori di sistemi.
 Sviluppatori e QA possono scrivere test per tentare interazioni dell’utente con le applicazioni web, verificare la funzionalità e automatizzare i test di regressione.
 
 _Attributi termine:_
 
-* _Campo: software commerciale, programmazione_
+* _Campo: software commerce, programmazione_
 * _Termini correlati: blocco cms, blocco statico, contenitore, layout_
 
 ### modulo
@@ -1058,7 +1058,7 @@ Le funzionalità di OMS includono:
 * Servizio clienti più semplice e reattivo
 * Migliore esperienza e fedeltà dei clienti
 
-Ulteriori informazioni: [Guida introduttiva a OMS](https://omsdocs.magento.com/en/getting-started/), [Sito documenti OMS](https://omsdocs.magento.com/en/)
+Ulteriori informazioni: [Guida introduttiva a OMS](https://omsdocs.magento.com/en/getting-started/), [sito documenti OMS](https://omsdocs.magento.com/en/)
 
 _Attributi termine:_
 
@@ -1072,11 +1072,11 @@ _sostantivo_
 
 Il cloaking dell’origine è una funzione di sicurezza che consente ad Adobe Commerce sull’infrastruttura cloud di bloccare qualsiasi traffico non Fastly per evitare attacchi DDoS, indirizzandolo all’infrastruttura cloud (origine).
 
-Ulteriori informazioni: [Cloaking di origine rapida](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
+Ulteriori informazioni: [Cloaking dell&#39;origine veloce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
 
 _Attributi termine:_
 
-* _Campo: security_
+* _Campo: protezione_
 * _Termini correlati: web application firewall_
 
 ## P
@@ -1094,8 +1094,8 @@ Ulteriori informazioni: [Guida utente di Page Builder](https://experienceleague.
 
 _Attributi termine:_
 
-* _Settore: software commerciale, progettazione_
-* _Sinonimi: amministratore, pannello di amministrazione, back-end, interfaccia di amministrazione, interfaccia di amministrazione_
+* _Campo: software commerce, progettazione_
+* _Sinonimi: Amministratore, Pannello di amministrazione, backend, Interfaccia di amministrazione, Interfaccia di amministrazione_
 * _Termini correlati: admin_
 
 ### gateway di pagamento
@@ -1106,7 +1106,7 @@ Un gateway di pagamento è un servizio di terze parti che elabora senza interruz
 
 _Attributi termine:_
 
-* _Settore: business, ordine, programmazione_
+* _Campo: business, order, programming_
 
 ## R
 
@@ -1119,7 +1119,7 @@ Ad esempio, se il cliente visualizza la pagina di prodotto di una fotocamera, i 
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
+* _Campo: software commerce, prodotto_
 
 ## S
 
@@ -1131,7 +1131,7 @@ Include le regole del carrello e del catalogo, utilizzate per determinare il pre
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
+* _Campo: software commerce, prodotto_
 * _Termini correlati: regole carrello, regole catalogo_
 
 ### ambito
@@ -1163,7 +1163,7 @@ Le API web possono essere associate a contratti di servizio tramite file di conf
 _Attributi termine:_
 
 * _Campo: programmazione_
-* _Termini correlati: php, web api_
+* _Termini correlati: php, api Web_
 
 ### liquidazione
 
@@ -1192,8 +1192,8 @@ Utilizzando la funzione di catalogo condiviso, l’esercente dispone di:
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
-* _Termini correlati: catalog, b2b_
+* _Campo: software commerce, prodotto_
+* _Termini correlati: catalogo, b2b_
 
 ### spedizione
 
@@ -1235,9 +1235,9 @@ Si riferisce anche a un’area di un sito di e-commerce in cui è possibile trov
 
 _Attributi termine:_
 
-* _Settore: business, design, prodotto, programmazione_
+* _Campo: business, design, product, programming_
 * _Sinonimi: carrello, carrello_
-* _Termini correlati: regole del carrello_
+* _Termini correlati: regole carrello_
 
 ### prodotto semplice
 
@@ -1250,7 +1250,7 @@ Un prodotto semplice con opzioni personalizzate è talvolta indicato come prodot
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
+* _Campo: software commerce, prodotto_
 * _Termini correlati: tipi di prodotto_
 
 ### SKU
@@ -1262,7 +1262,7 @@ Numero o codice assegnato a un prodotto per identificare il prodotto, le opzioni
 
 _Attributi termine:_
 
-* _Settore: business, prezzi, prodotto, programmazione_
+* _Campo: business, prezzi, prodotto, programmazione_
 * _Termini correlati: catalogo condiviso_
 
 ### pagina iniziale
@@ -1286,7 +1286,7 @@ I widget possono essere aggiunti a blocchi statici per fornire funzionalità agg
 _Attributi termine:_
 
 * _Campo: software commerce_
-* _Termini correlati: blocco CMS, blocco_
+* _Termini correlati: blocco cms, blocco_
 
 ### contenuto statico
 
@@ -1303,7 +1303,7 @@ _Attributi termine:_
 
 _sostantivo_
 
-La raccolta di risorse, come CSS, font, immagini e JavaScript utilizzate da un tema.
+La raccolta di risorse, come CSS, font, immagini e JavaScript, utilizzate da un tema.
 
 _Attributi termine:_
 
@@ -1320,8 +1320,8 @@ Ogni negozio può avere più visualizzazioni dello store, che in genere vengono 
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
-* _Termini correlati: visualizzazione negozio, sito Web_
+* _Campo: software commerce, prodotto_
+* _Termini correlati: visualizzazione archivio, sito Web_
 
 ### visualizzazione store
 
@@ -1333,8 +1333,8 @@ Per modificare le visualizzazioni dello store, utilizza il selettore store nell�
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
-* _Termini correlati: store, website_
+* _Campo: software commerce, prodotto_
+* _Termini correlati: store, sito Web_
 
 ### vetrina
 
@@ -1344,7 +1344,7 @@ Il negozio online visitato dai clienti quando visitano il sito Commerce.
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
+* _Campo: software commerce, prodotto_
 
 ## T
 
@@ -1380,7 +1380,7 @@ Contiene informazioni sulla grafica e sull&#39;aspetto.
 Personalizza l&#39;aspetto del negozio.
 Adobe Commerce può inviare i temi nei pacchetti (Composer).
 Ma i temi possono essere posizionati sotto app / design, che non è spedito in un pacchetto.
-I pacchetti sono l&#39;unità di download per Composer e, tramite Commerci Marketplace, gli utenti di Commerce possono scaricare CE o EE come una serie di pacchetti, in cui i pacchetti contengono moduli, temi o pacchetti di lingue.
+I pacchetti sono l&#39;unità di download per Composer e, tramite Commerce Marketplace, gli utenti di Commerce possono scaricare CE o EE come una serie di pacchetti, in cui i pacchetti contengono moduli, temi o pacchetti di lingue.
 
 _Attributi termine:_
 
@@ -1396,13 +1396,13 @@ Tag progettato per il software Adobe Commerce per consentire un rendering dell�
 Gli obiettivi del sistema dei componenti dell’interfaccia utente includono:
 
 * Semplificazione della gestione del layout dei file XML
-* Spostamento degli elementi dell’interfaccia utente Admin da HTML+JavaScript a un widget system personalizzato &quot;JavaScript puro&quot;
+* Spostamento degli elementi dell’interfaccia utente di amministrazione da HTML+JavaScript a un sistema di widget personalizzato &quot;JavaScript puro&quot;
 * Creazione di componenti dell’interfaccia utente più complessi a partire da componenti più piccoli
 * Pre-rendering dei dati per i componenti dell’interfaccia utente come JSON, associazione stretta agli oggetti dati back-end
 * Utilizzo dell’AJAX per aggiornare i dati dei componenti
 * Presentazione di un nuovo DSL per la creazione degli elementi sopra indicati
 
-Ulteriori informazioni: [Guida ai componenti dell’interfaccia utente](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
+Ulteriori informazioni: [Guida ai componenti dell&#39;interfaccia utente](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
 
 _Attributi termine:_
 
@@ -1413,7 +1413,7 @@ _Attributi termine:_
 
 _sostantivo_
 
-[PWA Studi](https://github.com/magento/pwa-studio) utilizza [VERSO L&#39;ALTO](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) in sviluppo.
+[PWA Studi](https://github.com/magento/pwa-studio) utilizza [UPWARD](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) nello sviluppo.
 UPWARD è un acronimo di Unified Progressive Web App Response Definition.
 Un file di definizione UPWARD descrive come un server web distribuisce e supporta un Progressive Web Application.
 
@@ -1427,8 +1427,8 @@ Un progetto PWA può includere un file di definizione UPWARD per specificare le 
 
 _Attributi termine:_
 
-* _Settore: progettazione, software commerciale, programmazione_
-* _Sinonimi: PWA Studi, Definizione di risposta progressiva unificata per app web_
+* _Campo: progettazione, software commerciale, programmazione_
+* _Sinonimi: PWA Studi, Definizione risposta app Web progressiva unificata_
 * _Termini correlati: pwa_
 
 ## V
@@ -1441,13 +1441,13 @@ Il codice prodotto dal fornitore che estende o personalizza il comportamento di 
 Le VBE vengono testate accuratamente e incluse in ogni versione supportata di Adobe Commerce.
 Un VBE può includere moduli, temi e pacchetti di lingue.
 
-Per ulteriori informazioni, consulta [Argomento Estensione in bundle fornitore](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
+Ulteriori informazioni sono disponibili nell&#39;argomento [Estensione in bundle fornitore](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
 
 _Attributi termine:_
 
 * _Campo: estensione commerce, estensione bundle fornitore, estensione, VBE_
-* _Sinonimi: extension, VBE_
-* _Termini correlati: estensione, estensione in bundle_
+* _Sinonimi: estensione, VBE_
+* _Termini correlati: estensione, estensione nel pacchetto_
 
 ### ridimensionamento verticale
 
@@ -1457,7 +1457,7 @@ Per ridimensionamento verticale si intende l&#39;aumento della potenza di elabor
 
 _Attributi termine:_
 
-* _Campo: ambiente_
+* _Campo: environment_
 
 ### prodotto virtuale
 
@@ -1472,7 +1472,7 @@ Tuttavia, poiché un prodotto virtuale non viene spedito, non è disponibile alc
 
 _Attributi termine:_
 
-* _Campo: software commerciale, prodotto_
+* _Campo: software commerce, prodotto_
 * _Termini correlati: tipi di prodotto_
 
 ### tipo virtuale
@@ -1480,7 +1480,7 @@ _Attributi termine:_
 _sostantivo_
 
 I tipi virtuali sono un modo per inserire dipendenze diverse nelle classi PHP esistenti senza influenzare altre classi e senza dover creare un file di classe.
-È possibile fare riferimento ai tipi virtuali solo tramite sostituzioni di argomenti in una `<type>` nei file di.xml, mai nel codice sorgente.
+È possibile fare riferimento ai tipi virtuali solo tramite sostituzioni di argomenti in un elemento `<type>` all&#39;interno di file di.xml, mai nel codice sorgente.
 Non possono essere estese e non possono essere riferimenti come dipendenze in un costruttore di classi.
 
 _Attributi termine:_
@@ -1500,18 +1500,18 @@ I siti Web possono essere configurati per la condivisione dei dati dei clienti o
 
 _Attributi termine:_
 
-* _Settore: software commerciale, progettazione, prodotto_
-* _Termini correlati: store, store view_
+* _Campo: software commerciale, progettazione, prodotto_
+* _Termini correlati: store, visualizzazione store_
 
 ### widget
 
 _sostantivo_
 
-A [widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) è uno snippet di codice preparato che può essere utilizzato per inserire blocchi, collegamenti e contenuti dinamici in posizioni specifiche sulle pagine dei negozi.
+Un [widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) è un frammento di codice preparato che può essere utilizzato per inserire blocchi, collegamenti e contenuto dinamico in posizioni specifiche nelle pagine dell&#39;archivio.
 Puoi utilizzare i widget per creare pagine di destinazione per campagne di marketing e visualizzare contenuti promozionali in posizioni specifiche in tutto il negozio.
 I widget possono essere utilizzati anche per aggiungere elementi interattivi e blocchi di azione per sistemi di revisione esterni, chat video, votazioni e moduli di abbonamento, o per fornire elementi di navigazione per cloud di tag e cursori di immagini.
 
 _Attributi termine:_
 
-* _Settore: business, software commerciale, design_
+* _Campo: business, software commerciale, progettazione_
 * _Termini correlati: blocco_

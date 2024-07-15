@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
 source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -34,12 +34,12 @@ Se il progetto richiede più siti, store o visualizzazioni dello store, puoi uti
 
 I siti Web e i negozi sono moltiplicatori per i dati di catalogo, pertanto la presenza di numerosi siti Web e negozi può influire negativamente sulle prestazioni del sito nei seguenti modi:
 
-- Le tabelle indice più grandi aumentano il tempo necessario per completare le operazioni di indicizzazione [Indice dei prezzi].
+- Le tabelle indice più grandi aumentano il tempo necessario per completare le operazioni di indicizzazione [Indice prezzo].
 - L&#39;aumento del tempo di recupero della configurazione dell&#39;applicazione riduce il tempo di risposta della vetrina per le pagine di catalogo non memorizzate nella cache.
 - Aumenta in modo significativo il tempo necessario per completare le operazioni di salvataggio nell’amministratore, in quanto i dati vengono salvati separatamente per ciascun sito web.
 
 
 ## Informazioni aggiuntive
 
-- [Informazioni su siti Web, store e visualizzazioni dello store](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
+- [Informazioni su siti Web, archivi e visualizzazioni dello store](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [Configurazione di più siti Web o store](https://devdocs.magento.com/cloud/project/project-multi-sites.html)

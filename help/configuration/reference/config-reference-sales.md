@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Riferimento percorsi configurazione vendite
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin (Amministrazione) in **Negozi** > Impostazioni > **Configurazione** > **Vendite**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite**.
 
-Il [`magento app:config:dump` comando](../cli/export-configuration.md) scrive questi valori nel file di configurazione condiviso, `app/etc/config.php`, che deve trovarsi nel controllo del codice sorgente. Per ignorare eventuali impostazioni di configurazione o per impostare impostazioni sensibili, vedi [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](override-config-settings.md#environment-variables). Questo argomento fa _non_ list [valori sensibili e specifici del sistema](config-reference-sens.md).
+Il comando [`magento app:config:dump`](../cli/export-configuration.md) scrive questi valori nel file di configurazione condiviso, `app/etc/config.php`, che deve trovarsi nel controllo del codice sorgente. Per ignorare eventuali impostazioni di configurazione o per impostare impostazioni sensibili, vedere [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](override-config-settings.md#environment-variables). Questo argomento _non_ elenca [valori sensibili e specifici del sistema](config-reference-sens.md).
 
 ## Percorsi di vendita
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Vendite**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Vendite**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -71,7 +71,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi e-mail vendite
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **E-mail vendite**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **E-mail vendite**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -144,7 +144,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi imposta
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Imposta**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Imposta**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -162,7 +162,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 | Abilitare il commercio transfrontaliero | `tax/calculation/cross_border_trade_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Paese predefinito | `tax/defaults/country` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Stato predefinito | `tax/defaults/region` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Codice postale predefinito | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Codice Post predefinito | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Visualizza Prezzi Prodotto Nel Catalogo | `tax/display/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Visualizza prezzi di spedizione | `tax/display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Visualizza prezzi | `tax/cart_display/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -193,7 +193,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi di checkout
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Pagamento**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Pagamento**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -218,7 +218,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi delle impostazioni di spedizione
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Impostazioni spedizione**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Impostazioni spedizione**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -229,7 +229,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi di impostazioni multidimensionali
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Impostazioni Multishipping**.
+Questi valori di configurazione sono disponibili nell&#39;Admin in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Impostazioni di multipipping**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -240,7 +240,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi dei metodi di consegna
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Metodi di consegna**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Metodi di consegna**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -386,7 +386,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi API Google
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **API GOOGLE**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **API Google**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -412,7 +412,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi carte regalo
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Biglietti regalo**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Biglietti regalo**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|

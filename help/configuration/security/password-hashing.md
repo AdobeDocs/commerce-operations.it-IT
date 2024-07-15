@@ -5,32 +5,32 @@ feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
 
 # Hashing password
 
-Attualmente, Commerce utilizza una propria strategia per l’hashing delle password, basata su diversi algoritmi di hashing PHP nativi. Commerce supporta più algoritmi come `MD5`, `SHA256`, o `Argon 2ID13`. Se è installata l&#39;estensione Sodio (installata per impostazione predefinita in PHP 7.3), `Argon 2ID13` viene scelto come algoritmo di hashing predefinito. Altrimenti, `SHA256` è il valore predefinito. Commerce può utilizzare il PHP nativo `password_hash` con supporto algoritmo Argon 2i.
+Attualmente, Commerce utilizza una propria strategia per l’hashing delle password, basata su diversi algoritmi di hashing PHP nativi. Commerce supporta più algoritmi come `MD5`, `SHA256` o `Argon 2ID13`. Se è installata l&#39;estensione Sodium (installata per impostazione predefinita in PHP 7.3), viene scelto `Argon 2ID13` come algoritmo di hashing predefinito. In caso contrario, `SHA256` è il valore predefinito. Commerce può utilizzare la funzione PHP `password_hash` nativa con il supporto dell&#39;algoritmo Argon 2i.
 
-Per evitare di compromettere le password meno recenti con hash di algoritmi obsoleti come `MD5`, l’implementazione corrente fornisce un metodo per aggiornare l’hash senza modificare la password originale. In generale, l’hash della password ha il seguente formato:
+Per evitare di compromettere le password meno recenti che sono state sottoposte a hashing con algoritmi obsoleti come `MD5`, l&#39;implementazione corrente fornisce un metodo per aggiornare l&#39;hash senza modificare la password originale. In generale, l’hash della password ha il seguente formato:
 
 ```text
 password_hash:salt:version<n>:version<n>
 ```
 
-Dove `version<n>`...`version<n>` rappresenta tutte le versioni degli algoritmi hash utilizzate sulla password. Inoltre, il sale viene sempre memorizzato insieme all&#39;hash della password, in modo da poter ripristinare l&#39;intera catena di algoritmi. Ecco un esempio:
+Dove `version<n>`...`version<n>` rappresenta tutte le versioni degli algoritmi hash utilizzate nella password. Inoltre, il sale viene sempre memorizzato insieme all&#39;hash della password, in modo da poter ripristinare l&#39;intera catena di algoritmi. Ecco un esempio:
 
 ```text
 a853b06f077b686f8a3af80c98acfca763cf10c0e03597c67e756f1c782d1ab0:8qnyO4H1OYIfGCUb:1:2
 ```
 
-La prima parte rappresenta l’hash della password. La seconda, `8qnyO4H1OYIfGCUb` è il sale. Gli ultimi due sono i diversi algoritmi hash: 1 è `SHA256` e 2 è `Argon 2ID13`. Ciò significa che originariamente era presente un hash alla password del cliente `SHA256` e in seguito, l’algoritmo è stato aggiornato con `Argon 2ID13` e l&#39;hash è stato riesumato con Argon.
+La prima parte rappresenta l’hash della password. Il secondo `8qnyO4H1OYIfGCUb` è il sale. Gli ultimi due sono diversi algoritmi hash: 1 è `SHA256` e 2 è `Argon 2ID13`. Ciò significa che alla password del cliente è stato originariamente applicato l&#39;hash con `SHA256` e successivamente l&#39;algoritmo è stato aggiornato con `Argon 2ID13` e l&#39;hash è stato rieseguito con Argon.
 
 ## Strategia di aggiornamento hash
 
-Considera l’aspetto del meccanismo di aggiornamento hash. Supponiamo che originariamente, una password sia stata sottoposta ad hashing con `MD5` l&#39;algoritmo è stato aggiornato più volte con Argon 2ID13. Il diagramma seguente mostra il flusso di aggiornamento hash.
+Considera l’aspetto del meccanismo di aggiornamento hash. Si supponga che in origine sia stato eseguito l&#39;hashing di una password con `MD5` e che l&#39;algoritmo sia stato aggiornato più volte con Argon 2ID13. Il diagramma seguente mostra il flusso di aggiornamento hash.
 
 ![Flusso di lavoro di aggiornamento hash](../../assets/configuration/hash-upgrade-algorithm.png)
 
@@ -61,4 +61,4 @@ Poiché Commerce memorizza tutte le versioni di hash della password utilizzate i
 
 ## Implementazione
 
-Il `\Magento\Framework\Encryption\Encryptor` La classe è responsabile della generazione e della verifica dell&#39;hash della password. Il [`bin/magento customer:hash:upgrade`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#customerhashupgrade) Il comando aggiorna l’hash della password di un cliente all’algoritmo hash più recente.
+La classe `\Magento\Framework\Encryption\Encryptor` è responsabile della generazione e della verifica dell&#39;hash della password. Il comando [`bin/magento customer:hash:upgrade`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#customerhashupgrade) aggiorna un hash della password del cliente all&#39;algoritmo hash più recente.

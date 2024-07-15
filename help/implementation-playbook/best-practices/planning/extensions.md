@@ -6,8 +6,8 @@ feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 0%
+source-wordcount: '176'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Le estensioni (moduli) di terze parti di Adobe Commerce possono causare vari problemi che possono influire negativamente sulle prestazioni della vetrina. Per evitare questi problemi, segui queste best practice:
 
-- Scarica e acquista estensioni di terze parti da una fonte attendibile, come [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+- Scarica e acquista estensioni di terze parti da un&#39;origine attendibile, come [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 - Aggiorna tutte le estensioni di terze parti alla versione più recente.
 - Se non riesci a mantenere aggiornate le estensioni di terze parti, puoi utilizzare estensioni diverse.
 - Quando pianifichi un aggiornamento a una nuova versione di Adobe Commerce, verifica che le estensioni di terze parti installate siano compatibili con la nuova versione e, se necessario, aggiorna le estensioni.
@@ -36,4 +36,4 @@ Le estensioni (moduli) di terze parti di Adobe Commerce possono causare vari pro
 - [Best practice per la pianificazione degli aggiornamenti](../../../upgrade/prepare/best-practices.md)
 - Utilizzo di estensioni di terze parti con Adobe Commerce sull’infrastruttura cloud
    - [Tecnologie e requisiti - Sviluppo e test](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-devtest)
-   - [Perché eseguire completamente i test in Integration and Staging?](https://devdocs.magento.com/cloud/live/live.html#whytest)
+   - [Perché eseguire completamente il test in Integration and Staging?](https://devdocs.magento.com/cloud/live/live.html#whytest)

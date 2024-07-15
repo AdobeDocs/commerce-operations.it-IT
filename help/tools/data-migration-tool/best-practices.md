@@ -6,7 +6,7 @@ feature: Best Practices, Configuration
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 Questa sezione fornisce consigli su come accelerare e semplificare la migrazione e indicazioni sul tempo necessario.
 
-* **Utilizzare una copia del database da un&#39;istanza del Magento 1** durante l’esecuzione dei test di migrazione. Non utilizzare l&#39;istanza di produzione del database dell&#39;archivio di Magento 1.
+* **Utilizzare una copia del database da un&#39;istanza del Magento 1** durante l&#39;esecuzione dei test di migrazione. Non utilizzare l&#39;istanza di produzione del database dell&#39;archivio di Magento 1.
 
 * **Rimuovere i dati obsoleti e ridondanti** dal database del Magento 1 prima della migrazione.
 
 Tali dati possono includere registri, preventivi d’ordine, prodotti visualizzati o confrontati di recente, visitatori, categorie specifiche dell’evento e regole promozionali.
 
-* **Segui le [regole generali per una migrazione corretta](migrate-data/overview.md#migration-overview)**.
+* **Segui le [regole generali per la corretta migrazione](migrate-data/overview.md#migration-overview)**.
 
-* Per migliorare le prestazioni, **abilita `direct_document_copy` opzione** nel tuo `config.xml` file:
+* Per migliorare le prestazioni, **abilita l&#39;opzione `direct_document_copy`** nel file `config.xml`:
 
   ```xml
   <direct_document_copy>1</direct_document_copy>

@@ -16,7 +16,7 @@ La governance del progetto è una funzione di supervisione allineata con la stru
 
 Il modello di governance definisce, documenta e comunica pratiche personalizzate ed efficaci per fornire un metodo completo di controllo del progetto e fornire visibilità periodica a ogni livello per garantire il successo. Contiene un quadro per prendere decisioni; definisce ruoli, responsabilità e responsabilità per la realizzazione del progetto; e governa l&#39;efficacia. La struttura di governance si estende dal team di esecuzione alla gestione esecutiva, definendo le attività, il reporting, l’escalation e il flusso di informazioni.
 
-![Infografica sulla governance dei progetti](../../assets/playbooks/project-governance.svg)
+![Infografica sulla governance del progetto](../../assets/playbooks/project-governance.svg)
 
 A vari livelli, i team esaminano metriche specifiche di sprint e progetto per comprendere i progressi e intraprendere le azioni correttive necessarie. Queste metriche a livello di sprint possono includere la velocità e il burndown di ogni sprint.
 
@@ -62,13 +62,13 @@ Oltre alle metriche sprint, è anche essenziale misurare i KPI relativi alle pre
 
 ## Storyboard e velocità
 
-![Esempio di bacheca Kanban](../../assets/playbooks/kanban-board-chart.svg)
+![Bacheca kanban di esempio](../../assets/playbooks/kanban-board-chart.svg)
 
 ## Burndown di sprint e release
 
 ![Esempio di grafico a dispersione e rilascio](../../assets/playbooks/sprint-release-burndown.svg)
 
-Sfide o cambiamenti si verificano per tutta la durata di un progetto. Dare alle persone giuste all’interno della tua organizzazione la possibilità di monitorare, misurare e eseguire pivot quando viene soddisfatta una sfida aumenta la probabilità che tu esca dal progetto dopo aver raggiunto gli obiettivi e sia soddisfatto del risultato.
+Sfide o modifiche si verificano per tutta la durata di un progetto. Dare alle persone giuste all&#39;interno della tua organizzazione la possibilità di monitorare, misurare e ruotare quando viene affrontata una sfida aumenterà la probabilità che tu esca dal progetto dopo aver raggiunto i tuoi obiettivi e sia soddisfatto del risultato.
 
 <table>
 <thead>
@@ -102,7 +102,7 @@ Sfide o cambiamenti si verificano per tutta la durata di un progetto. Dare alle 
   <tr>
     <td>Qualità del codice</td>
     <td># + %</td>
-    <td>Complessità, LdC, violazioni, code coverage per lo sprint</td>
+    <td>Complessità, LoC, violazioni Code copertura per lo sprint</td>
   </tr>
 </tbody>
 </table>

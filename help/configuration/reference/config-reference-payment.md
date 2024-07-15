@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Riferimento ai percorsi di configurazione dei pagamenti
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Metodi di pagamento**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Metodi di pagamento**.
 
-Il [`magento app:config:dump` comando](../cli/export-configuration.md) scrive questi valori nel file di configurazione condiviso, `app/etc/config.php`, che deve trovarsi nel controllo del codice sorgente. Per ignorare eventuali impostazioni di configurazione o per impostare impostazioni sensibili, vedi [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](override-config-settings.md#environment-variables). Questo argomento fa _non_ list [valori sensibili e specifici del sistema](config-reference-sens.md).
+Il comando [`magento app:config:dump`](../cli/export-configuration.md) scrive questi valori nel file di configurazione condiviso, `app/etc/config.php`, che deve trovarsi nel controllo del codice sorgente. Per ignorare eventuali impostazioni di configurazione o per impostare impostazioni sensibili, vedere [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](override-config-settings.md#environment-variables). Questo argomento _non_ elenca [valori sensibili e specifici del sistema](config-reference-sens.md).
 
 Le impostazioni sono ulteriormente organizzate per metodo di pagamento.
 
@@ -100,7 +100,7 @@ Le impostazioni sono ulteriormente organizzate per metodo di pagamento.
 
 ## Payments Pro Hosted Solution (Regno Unito)
 
-Queste opzioni sono disponibili solo se si sceglie Regno Unito come [paese commerciante](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
+Queste opzioni sono disponibili solo se hai scelto il Regno Unito come [paese esercente](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? |
 |--------------|--------------|--------------|--------------|

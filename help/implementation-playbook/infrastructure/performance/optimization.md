@@ -57,4 +57,4 @@ Ci sono anche fattori chiave che guidano la scala nel commercio, che influiscono
 
 Per architetture su più livelli e memorizzabili in cache create per la scalabilità, puoi utilizzare questo grafico come riferimento.
 
-![Diagramma che mostra come utilizzare l’API GraphQL di Adobe Commerce in un’architettura memorizzabile in cache](../../../assets/playbooks/cacheable-architecture.svg)
+![Diagramma che mostra come utilizzare l&#39;API GraphQL di Adobe Commerce in un&#39;architettura memorizzabile in cache](../../../assets/playbooks/cacheable-architecture.svg)

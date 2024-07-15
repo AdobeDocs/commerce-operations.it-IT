@@ -3,13 +3,13 @@ title: Best practice per la gestione del codice
 description: Scopri le best practice per la gestione del codice nella fase di sviluppo dei progetti Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 0902997fb0bf862b37a5e29026f462bf8c86c96b
+exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '670'
 ht-degree: 0%
 
 ---
-
 
 # Best practice per la gestione del codice per Adobe Commerce
 
@@ -26,7 +26,7 @@ Questo argomento è progettato per aiutarti a decidere se utilizzare Git o Compo
 - Adobe Commerce sull’infrastruttura cloud
 - Adobe Commerce on-premise
 
-Copre entrambi [architettura di riferimento globale (GRA)](../../architecture/global-reference/overview.md) e installazioni a istanza singola.
+Copre sia l&#39;[architettura di riferimento globale (GRA)](../../architecture/global-reference/overview.md) che le installazioni di singole istanze.
 
 ## Definizioni
 
@@ -80,11 +80,11 @@ Copre entrambi [architettura di riferimento globale (GRA)](../../architecture/gl
 
 | Funzionalità | Git | Compositore |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Archivio del codice principale | Tutto il codice risiede in un singolo archivio Git o in alcuni archivi Git | Tutto il codice risiede nei pacchetti in un archivio Compositore<br>Ogni singolo pacchetto Composer è rappresentato da un archivio Git |
-| Posizione codice | Lo sviluppo avviene in `app/` directory | Lo sviluppo avviene in `vendor/` directory |
+| Archivio del codice principale | Tutto il codice risiede in un singolo archivio Git o in alcuni archivi Git | Tutto il codice risiede nei pacchetti di un repository Composer<br>Ogni singolo pacchetto Composer è rappresentato da un repository Git |
+| Posizione codice | Lo sviluppo avviene nella directory `app/` | Lo sviluppo avviene nella directory `vendor/` |
 | Gestione degli aggiornamenti di base | Adobe Commerce Core viene installato e aggiornato tramite Composer, il risultato è confermato in Git | Adobe Commerce Core viene installato e aggiornato tramite Composer; il risultato viene confermato in Git |
-| Gestione dei moduli di terze parti | I moduli di terze parti sono installati in `vendor/` se vengono installati tramite il marketplace o packagist.org. Altrimenti vengono installati in `app/` | Tutti i moduli di terze parti sono installati nel `vendor/` directory |
-| Versioni | Il rilascio è caratterizzato da `git merge` e `git pull` o `git checkout` comandi | Il rilascio è caratterizzato da `composer update` e `git pull` o `git checkout` comandi |
+| Gestione dei moduli di terze parti | I moduli di terze parti vengono installati in `vendor/` se sono installati tramite il marketplace o packagist.org. Altrimenti sono installati in `app/` | Tutti i moduli di terze parti sono installati nella directory `vendor/` |
+| Versioni | Rilascio caratterizzato da `git merge` e `git pull` o `git checkout` comandi | Rilascio caratterizzato da `composer update` e `git pull` o `git checkout` comandi |
 | Numero di archivi Git | Pochi | Molti |
 | Complessità dello sviluppo | Semplice | Complesso |
 | Complessità della richiesta pull | Semplice | Complesso |
@@ -101,14 +101,14 @@ Copre entrambi [architettura di riferimento globale (GRA)](../../architecture/gl
 
 ## Soluzioni da evitare
 
-1. **Compositore e `app/code` per i moduli**
+1. **Compositore combinato e `app/code` per i moduli**
 
    Comporta tutti gli svantaggi di entrambi gli stili di gestione del codice combinati nel progetto. Aggiunge inutili complessità, instabilità e mancanza di flessibilità.
 
    Ad esempio:
    - Spiega al team di sviluppo i flussi di lavoro Git e Compositore (anziché uno solo).
-   - Installare moduli incompatibili in `app/code` poiché non c&#39;è nulla che impedisca che ciò accada.
-   - Spostamento di un modulo da `app/code` Compositore (o viceversa) è complicato, soprattutto con lo sviluppo in corso.
+   - Installare moduli incompatibili in `app/code` poiché non è disponibile alcuna risorsa per impedire che ciò accada.
+   - Lo spostamento di un modulo da `app/code` a Compositore (o viceversa) è complicato, soprattutto con lo sviluppo in corso.
 
 1. **Gestione pacchetti Satis**
 

@@ -5,14 +5,14 @@ exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # Principali parti interessate
 
-Molte aziende nel 2021 hanno capito che diventare &quot;a prova di pandemia&quot; è direttamente collegato alla forza digitale di un’organizzazione. In base ai dati di Forrester,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)ha scoperto che l&#39;e-commerce ha visto una crescita di 10 anni in appena 3 mesi, con la crescita guidata dalla necessità di connettersi digitalmente con i clienti mentre le porte di mattoni e mortaio erano chiuse.
+Molte aziende nel 2021 hanno capito che diventare &quot;a prova di pandemia&quot; è direttamente collegato alla forza digitale di un’organizzazione. Sulla base dei dati di Forrester,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)ha rilevato che l&#39;e-commerce ha registrato una crescita di 10 anni in appena 3 mesi, con la crescita guidata dalla necessità di connettersi digitalmente con i clienti mentre le porte di mattoni e mortaio erano chiuse.
 
 Quando viene presa la decisione di investire in una trasformazione commerciale, uno dei passaggi più importanti è determinare chi dall&#39;organizzazione è coinvolto nel processo. Per le aziende più piccole, a volte il team di e-commerce o digitale è solo una manciata di persone, quindi l’intero team assume l’attività. Tuttavia, per le organizzazioni più grandi, un approccio consiste nel dividere questo in tre aree diverse, tra cui:
 
@@ -39,6 +39,6 @@ La maggior parte delle implementazioni commerce richiedono diverse piattaforme p
 
 ## Chi è lo sponsor esecutivo?
 
-Digital Commerce 360 ha riportato che la ragione numero uno per cui le organizzazioni non hanno ancora investito in una nuova trasformazione commerciale è perché mancano di supporto alla leadership. La misura in cui il team di leadership è coinvolto è cruciale per il successo di un brand. È consigliato il supporto completo dai seguenti ruoli, incluse riunioni ricorrenti ai punti di controllo per tutta la durata di un’implementazione di Commerce:
+Digital Commerce 360 ha riportato che la ragione numero uno per cui le organizzazioni non hanno ancora investito in una nuova trasformazione del commercio è perché mancano di supporto alla leadership. La misura in cui il team di leadership è coinvolto è cruciale per il successo di un brand. È consigliato il supporto completo dai seguenti ruoli, incluse riunioni ricorrenti ai punti di controllo per tutta la durata di un’implementazione di Commerce:
 
 - L&#39;intera suite C

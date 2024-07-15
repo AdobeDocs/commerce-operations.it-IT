@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Questo argomento descrive una configurazione consigliata generica per le istanze di Adobe Commerce che utilizzano server semplici ospitati fisicamente in un centro dati (non virtualizzato) in cui le risorse non vengono condivise con altri utenti. Il provider di hosting, soprattutto se è specializzato nell&#39;hosting ad alte prestazioni di Commerce, potrebbe consigliare una configurazione diversa che sia ugualmente o più efficace per le tue esigenze.
 
-Per Adobe Commerce sugli ambienti dell’infrastruttura cloud, consulta [Architettura iniziale](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
+Per Adobe Commerce sugli ambienti dell&#39;infrastruttura cloud, consulta [Architettura Starter](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
-## [!DNL Commerce] Diagramma dell’architettura di riferimento
+## [!DNL Commerce] Diagramma dell&#39;architettura di riferimento
 
-Il [!DNL Commerce] Il diagramma dell’architettura di riferimento rappresenta l’approccio migliore per impostare un’architettura [!DNL Commerce] sito.
+Il diagramma dell&#39;architettura di riferimento [!DNL Commerce] rappresenta l&#39;approccio ottimale per impostare un sito [!DNL Commerce] scalabile.
 
 Il colore di ciascun elemento nel diagramma indica se l’elemento fa parte di Magento Open Source o Adobe Commerce e se è obbligatorio.
 
@@ -25,15 +25,15 @@ Il colore di ciascun elemento nel diagramma indica se l’elemento fa parte di M
 * Gli elementi grigi sono facoltativi per il Magento Open Source
 * Gli elementi blu sono facoltativi per Adobe Commerce
 
-![Diagramma dell’architettura di riferimento di Commerce](../assets/performance/images/ref-architecture-2.3.png)
+![Diagramma dell&#39;architettura di riferimento di Commerce](../assets/performance/images/ref-architecture-2.3.png)
 
 Nelle sezioni seguenti vengono forniti consigli e considerazioni per ogni sezione del diagramma Commerce Reference Architecture.
 
 ### [!DNL Varnish]
 
-* A [!DNL Varnish] il cluster può adattarsi al traffico di un sito
+* Un cluster [!DNL Varnish] può essere ridimensionato al traffico di un sito
 * Ottimizza la dimensione dell’istanza in base al numero di pagine della cache necessarie
-* In un sito con traffico elevato, utilizza [!DNL Varnish] Master per garantire lo svuotamento della cache di una richiesta (al massimo) per livello web
+* In un sito con traffico elevato, utilizza un master [!DNL Varnish] per garantire lo scaricamento della cache di una richiesta (al massimo) per livello web
 
 ### Web
 
@@ -62,14 +62,14 @@ Nelle sezioni seguenti vengono forniti consigli e considerazioni per ogni sezion
 * Prendere in considerazione l&#39;utilizzo di GFS o GlusterFS per lo storage di pub/supporti
 * In alternativa, utilizzare l&#39;archiviazione DB per i siti a traffico ridotto
 
-### Consigliato [!DNL Varnish] architettura di riferimento
+### Architettura di riferimento [!DNL Varnish] consigliata
 
-Il Magento supporta diversi motori di caching a pagina intera (File, Memcache, Redis, [!DNL Varnish]) pronto all’uso, insieme a una copertura espansa tramite le estensioni. [!DNL Varnish] è il motore di cache a pagina intera consigliato.  [!DNL Commerce] supporta molti diversi [!DNL Varnish] configurazioni.
+Il Magento supporta diversi motori di caching a pagina intera (File, Memcache, Redis, [!DNL Varnish]) preconfigurati, insieme a una copertura estesa tramite le estensioni. [!DNL Varnish] è il motore di cache a pagina intera consigliato.  [!DNL Commerce] supporta diverse configurazioni di [!DNL Varnish].
 
-Per i siti che non richiedono un&#39;elevata disponibilità, si consiglia di utilizzare un [!DNL Varnish] configurazione con terminazione SSL Nginx.
+Per i siti che non richiedono elevata disponibilità, si consiglia di utilizzare una configurazione [!DNL Varnish] semplice con terminazione SSL Nginx.
 
-![Semplice [!DNL Varnish] Configurazione con terminazione SSL](../assets/performance/images/single-varnish-with-ssl-termination.png)
+![Configurazione [!DNL Varnish] semplice con terminazione SSL](../assets/performance/images/single-varnish-with-ssl-termination.png)
 
-Per i siti che richiedono un&#39;elevata disponibilità, si consiglia di utilizzare un [!DNL Varnish] con SSL che termina il load balancer.
+Per i siti che richiedono elevata disponibilità, è consigliabile utilizzare una configurazione [!DNL Varnish] a 2 livelli con un load balancer di terminazione SSL.
 
-![Elevata disponibilità a due livelli [!DNL Varnish] configurazione con SSL che termina il load balancer](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)
+![Configurazione a due livelli di elevata disponibilità [!DNL Varnish] con SSL che termina il load balancer](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)

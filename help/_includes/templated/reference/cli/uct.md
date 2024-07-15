@@ -12,14 +12,14 @@ ht-degree: 0%
 <!-- The template to render with above values -->
 **Versione**: 3.0.17
 
-Questo riferimento contiene 9 comandi disponibili tramite `bin/uct` strumento da riga di comando.
-L’elenco iniziale viene generato automaticamente utilizzando `bin/uct list` in Adobe Commerce.
+Questo riferimento contiene 9 comandi disponibili tramite lo strumento della riga di comando `bin/uct`.
+L&#39;elenco iniziale viene generato automaticamente utilizzando il comando `bin/uct list` in Adobe Commerce.
 
-Ulteriori informazioni sullo strumento sono disponibili in [Panoramica](/help/upgrade/upgrade-compatibility-tool/overview.md).
+Ulteriori informazioni sullo strumento in [Panoramica](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
 >[!NOTE]
 >
->Questo riferimento viene generato dalla base di codice dell&#39;applicazione. Per modificare il contenuto, puoi aggiornare il codice sorgente per l’implementazione del comando corrispondente in [codebase](https://github.com/magento) e inviare le modifiche per la revisione. Un altro modo consiste nel _Inviaci feedback_ (trovi il collegamento in alto a destra). Per le linee guida sui contributi, consulta [Contributi codice](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Questo riferimento viene generato dalla base di codice dell&#39;applicazione. Per modificare il contenuto, è possibile aggiornare il codice sorgente per l&#39;implementazione del comando corrispondente nell&#39;archivio [codebase](https://github.com/magento) e inviare le modifiche per la revisione. Un altro modo consiste nel _inviarci un feedback_ (trovare il collegamento in alto a destra). Per le linee guida sui contributi, consulta [Contributi codice](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 

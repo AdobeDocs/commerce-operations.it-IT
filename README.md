@@ -9,19 +9,19 @@ ht-degree: 3%
 
 Apprezziamo i contributi della community e dei dipendenti Adobi esterni ai team di documentazione.
 
-## Codice di condotta open source Adobe
+## Codice di condotta di Adobe Open Source
 
 Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](code-of-conduct.md) o il [Codice di condotta di .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, consulta l’articolo [Contribuzione](contributing.md).
 
 ## Informazioni sui contributi ai contenuti Adobe
 
-Consulta la [Guida per i collaboratori Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Consulta la [Guida collaboratore per i documenti di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Il modo in cui contribuisci dipende da chi sei e dal tipo di modifiche con cui desideri contribuire:
 
 ### Modifiche minori
 
-Se stai contribuendo con aggiornamenti minori, visita l’articolo e fai clic sull’area di feedback visualizzata in fondo all’articolo, fai clic su **Opzioni di feedback dettagliate** e quindi fare clic su **Suggerisci una modifica** per passare al file Markdown di origine su GitHub. Utilizza l’interfaccia utente di GitHub per apportare modifiche. Consulta la sezione Generale [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) per ulteriori informazioni.
+Se stai apportando aggiornamenti minori, visita l&#39;articolo e fai clic sull&#39;area di feedback visualizzata in fondo all&#39;articolo, fai clic su **Opzioni di feedback dettagliate**, quindi fai clic su **Suggerisci una modifica** per passare al file Markdown di origine su GitHub. Utilizza l’interfaccia utente di GitHub per apportare modifiche. Per ulteriori informazioni, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Le correzioni minori o i chiarimenti inviati per la documentazione e gli esempi di codice in questo archivio sono coperti dalle condizioni d’uso di Adobe.
 
@@ -35,7 +35,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Modifiche sostanziali da parte dei dipendenti Adobe
 
-Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del team addetto ai prodotti di una soluzione Adobe Experience Cloud ed è tuo compito creare o contribuire ad articoli tecnici, devi utilizzare l’archivio privato all’indirizzo `https://git.corp.adobe.com/AdobeDocs`.
+Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione Adobe Experience Cloud ed è tuo compito creare o contribuire ad articoli tecnici, devi utilizzare l&#39;archivio privato all&#39;indirizzo `https://git.corp.adobe.com/AdobeDocs`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -43,14 +43,14 @@ Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del te
 
 I collaboratori della community possono utilizzare l’interfaccia utente di GitHub per apportare modifiche di base o eseguire il fork dell’archivio per apportare contributi principali.
 
-Consulta la [Guida per i collaboratori Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) per i dettagli.
+Per informazioni dettagliate, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Come utilizzare markdown per formattare l’argomento
 
 Tutti gli articoli in questo archivio utilizzano il markdown GitHub. Se non conosci Markdown, consulta:
 
 * [Nozioni di base su Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Foglio di riferimento per markdown stampabile](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Foglio di riferimento per il markdown stampabile](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Modelli
 
@@ -62,7 +62,7 @@ Per alcuni argomenti, usiamo file di dati e modelli per generare contenuti pubbl
 Di seguito sono riportati alcuni esempi di contenuti basati su modelli:
 
 * [Riferimento strumenti CLI](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-* [Tabelle di disponibilità dei prodotti](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+* [Tabelle di disponibilità del prodotto](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
 * [Tabelle dei requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
 ### Generare contenuti basati su modelli
@@ -72,25 +72,25 @@ In generale, la maggior parte degli autori deve solo aggiungere una versione all
 >**NOTA:**
 >
 >* La generazione di contenuti basati su modelli richiede l’utilizzo della riga di comando in un terminale.
->* Per eseguire lo script di rendering, è necessario che Ruby sia installato. Consulta [_jekyll/.ruby-version](_jekyll/.ruby-version) per la versione richiesta.
+>* Per eseguire lo script di rendering, è necessario che Ruby sia installato. Vedere [_jekyll/.ruby-version](_jekyll/.ruby-version) per la versione richiesta.
 
 Per una descrizione della struttura di file per il contenuto con modelli, consulta:
 
-* `_jekyll`- Contiene argomenti basati su modelli e risorse richieste
-* `_jekyll/_data`- Contiene i formati di file leggibili al computer utilizzati per il rendering dei modelli
-* `_jekyll/templated`- Contiene file modello basati su HTML che utilizzano il linguaggio di modellazione Liquid
-* `help/_includes/templated`- Contiene l&#39;output generato per il contenuto con modelli in `.md` in modo che possa essere pubblicato negli argomenti di Experience League; lo script di rendering scrive automaticamente l&#39;output generato in questa directory
+* `_jekyll` - Contiene gli argomenti con modelli e le risorse richieste
+* `_jekyll/_data` - Contiene i formati di file leggibili dal computer utilizzati per il rendering dei modelli
+* `_jekyll/templated` - Contiene file di modelli basati su HTML che utilizzano il linguaggio di modelli Liquid
+* `help/_includes/templated` - Contiene l&#39;output generato per il contenuto con modelli nel formato di file `.md` in modo che possa essere pubblicato negli argomenti di Experience League. Lo script di rendering scrive automaticamente l&#39;output generato in questa directory
 
 Per aggiornare il contenuto basato su modelli:
 
-1. Nell’editor di testo, apri un file di dati nel `/jekyll/_data` directory. Ad esempio:
+1. Nell&#39;editor di testo aprire un file di dati nella directory `/jekyll/_data`. Ad esempio:
 
-   * [Tabelle di disponibilità dei prodotti](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   * [Tabelle di disponibilità del prodotto](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
    * [Tabelle dei requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
 
 1. Utilizzare la struttura YAML esistente per creare le voci.
 
-   Ad esempio, per aggiungere una versione di Adobe Commerce alle tabelle di disponibilità del prodotto, aggiungi quanto segue a ciascuna voce della sezione `extensions` e `services` sezioni del `/jekyll/_data/product-availability.yml` file (modificare i numeri di versione secondo necessità):
+   Ad esempio, per aggiungere una versione di Adobe Commerce alle tabelle di disponibilità del prodotto, aggiungere quanto segue a ogni voce nelle sezioni `extensions` e `services` del file `/jekyll/_data/product-availability.yml` (modificare i numeri di versione in base alle esigenze):
 
    ```
    support:
@@ -98,27 +98,27 @@ Per aggiornare il contenuto basato su modelli:
         version: 4.5.6
    ```
 
-1. Accedi a `_jekyll` directory.
+1. Passare alla directory `_jekyll`.
 
    ```
    cd _jekyll
    ```
 
-1. Genera contenuti con modelli e scrivi l’output in `help/_includes/templated` directory.
+1. Genera contenuti con modelli e scrive l&#39;output nella directory `help/_includes/templated`.
 
    ```
    rake render
    ```
 
-   >**NOTA:** È necessario eseguire lo script da `_jekyll` directory. Se questa è la prima volta che esegui lo script, devi installare le dipendenze di Ruby prima con `bundle install` comando.
+   >**NOTA:** è necessario eseguire lo script dalla directory `_jekyll`. Se questa è la prima volta che esegui lo script, devi prima installare le dipendenze Ruby con il comando `bundle install`.
 
-1. Torna a `root` directory.
+1. Tornare alla directory `root`.
 
    ```
    cd ..
    ```
 
-1. Verificare che il valore previsto `help/_includes/templated` i file sono stati modificati.
+1. Verificare che i `help/_includes/templated` file previsti siano stati modificati.
 
    ```
    git status
@@ -139,4 +139,4 @@ Per aggiornare il contenuto basato su modelli:
    git push
    ```
 
-Per ulteriori informazioni su, consulta la documentazione di Jekyll. [File di dati](https://jekyllrb.com/docs/datafiles), [Filtri per liquidi](https://jekyllrb.com/docs/liquid/filters/), e altre funzioni.
+Per ulteriori informazioni su [File di dati](https://jekyllrb.com/docs/datafiles), [Filtri liquidi](https://jekyllrb.com/docs/liquid/filters/) e altre funzionalità, vedere la documentazione di Jekyll.

@@ -12,31 +12,31 @@ ht-degree: 0%
 
 # Configurare i termini di ricerca
 
-In generale, _stopwords_ sono parole comuni che i motori di ricerca filtrano dopo l’elaborazione del testo. In origine, quando lo spazio su disco e la memoria erano estremamente limitati, ogni kilobyte risparmiato significava un miglioramento significativo delle prestazioni. Pertanto, i motori di ricerca hanno ottenuto miglioramenti delle prestazioni ignorando determinate parole e mantenendo piccolo l’indice.
+In generale, _stopwords_ sono parole comuni che i motori di ricerca filtrano dopo l&#39;elaborazione del testo. In origine, quando lo spazio su disco e la memoria erano estremamente limitati, ogni kilobyte risparmiato significava un miglioramento significativo delle prestazioni. Pertanto, i motori di ricerca hanno ottenuto miglioramenti delle prestazioni ignorando determinate parole e mantenendo piccolo l’indice.
 
 Anche se oggi abbiamo più storage, le prestazioni sono ancora importanti. Elasticsearch e OpenSearch, come altri motori di ricerca, utilizzano ancora i termini di arresto per migliorare le prestazioni.
 
-È necessario gestire le parole non significative utilizzando i file CSV disponibili nella `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` o `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/` a seconda di come è stato installato il software Commerce.
+È necessario gestire le parole non significative utilizzando i file CSV che si trovano nella directory `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` o nella directory `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`, a seconda di come è stato installato il software Commerce.
 
 Per ulteriori informazioni sull&#39;utilizzo di parole non significative in Elasticsearch e OpenSearch, vedere le risorse seguenti:
 
-- [Parole di arresto: prestazioni e precisione](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
-- [Pro e contro delle parole d&#39;arresto](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
-- [Utilizzo delle parole d&#39;arresto](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
+- [Parole Chiuse: Prestazioni Rispetto A Precision](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
+- [Pro e contro di parole bloccate](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
+- [Utilizzo di parole non significative](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
 - [Parole di arresto e prestazioni](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
 
 ## Configurare le parole d&#39;arresto
 
-Le parole d&#39;ordine si trovano nel `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory. Adobe Commerce viene fornito con un file CSV contenente i termini per le impostazioni internazionali predefinite e un file aggiuntivo, `stopwords.csv`, che contiene i caratteri di interruzione per le impostazioni internazionali non rappresentate da un altro file CSV.
+Le parole non significative si trovano nella directory `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`. In Adobe Commerce è disponibile un file CSV contenente i termini per le impostazioni internazionali predefinite e un file aggiuntivo, `stopwords.csv`, contenente i termini per le impostazioni locali non rappresentate da un altro file CSV.
 
 La durata predefinita per la cache dei file di parole non significative è di 15 minuti.
 
 ### Modificare le parole non significative per una lingua esistente
 
-**Per modificare le parole d&#39;arresto**:
+**Per modificare le parole non significative**:
 
-1. Accedi al server Commerce o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
-1. Utilizzare un editor di testo per aprire un file di parametri `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory.
+1. Accedi al tuo server Commerce o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+1. Utilizzare un editor di testo per aprire un file di parametri nella directory `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`.
 
    I file CSV utilizzano la convenzione di denominazione `stopwords_<locale_code>.csv`. Ad esempio, il nome del file di parole non significative tedesco è `stopwords_de_DE.csv`.
 
@@ -47,7 +47,7 @@ La durata predefinita per la cache dei file di parole non significative è di 15
 1. Salva le modifiche e esci dall’editor di testo.
 1. Pulisci la cache di configurazione.
 
-   - Amministratore: **Sistema** > Strumenti > **Gestione cache**. Seleziona la **Configurazione** e, dall’elenco precedente, fai clic su **Aggiorna**. Clic **Invia** per completare l&#39;azione.
+   - Amministratore: **Sistema** > Strumenti > **Gestione cache**. Selezionare la casella di controllo **Configurazione** e fare clic su **Aggiorna** dall&#39;elenco precedente. Fai clic su **Invia** per completare l&#39;azione.
 
    - Riga di comando: come proprietario del file system, immettere il comando seguente:
 
@@ -59,18 +59,18 @@ La durata predefinita per la cache dei file di parole non significative è di 15
 
 ### Creazione di parole non significative per una nuova lingua
 
-**Per aggiungere parole d&#39;arresto per una lingua**:
+**Per aggiungere parole non significative per una lingua**:
 
-1. Accedi al server Commerce o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+1. Accedi al tuo server Commerce o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 
-1. Utilizzare un editor di testo per creare un file di parole d&#39;arresto denominato `stopwords_<locale_code>.csv` nel `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory.
+1. Utilizzare un editor di testo per creare un file di parole d&#39;ordine denominato `stopwords_<locale_code>.csv` nella directory `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`.
 
-   Ad esempio, per creare parole non significative per la lingua italiana, assegnare un nome al file `stopwords_it_IT.csv`.
+   Ad esempio, per creare parole non significative per le impostazioni internazionali italiane, assegnare al file il nome `stopwords_it_IT.csv`.
 
 1. Nel file di parametri verificare che ogni indicatore di stato si trovi su una riga separata.
 1. Salva le modifiche e esci dall’editor di testo.
 1. Nella stessa directory, aprire `esconfig.xml` in un editor di testo.
-1. Aggiungi una riga a `esconfig.xml` come segue:
+1. Aggiungere una riga a `esconfig.xml` come segue:
 
    ```xml
    <LOCALE_CODE>stopwords_LOCALE_CODE.csv</LOCALE_CODE>
@@ -82,10 +82,10 @@ La durata predefinita per la cache dei file di parole non significative è di 15
    <it_IT>stopwords_it_IT.csv</it_IT>
    ```
 
-1. Salva le modifiche apportate a `esconfig.xml` ed esci dall’editor di testo.
+1. Salvare le modifiche apportate a `esconfig.xml` e uscire dall&#39;editor di testo.
 1. Pulisci la cache di configurazione.
 
-   - Amministratore: **Sistema** > Strumenti > **Gestione cache**. Seleziona la **Configurazione** e, dall’elenco precedente, fai clic su **Aggiorna**. Clic **Invia** per completare l&#39;azione.
+   - Amministratore: **Sistema** > Strumenti > **Gestione cache**. Selezionare la casella di controllo **Configurazione** e fare clic su **Aggiorna** dall&#39;elenco precedente. Fai clic su **Invia** per completare l&#39;azione.
 
    - Riga di comando: come proprietario del file system, immettere il comando seguente:
 
@@ -102,17 +102,17 @@ In questa sezione viene illustrato come modificare la directory di default dei p
 - `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`
 - `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`
 
-La posizione dipende da come è stato installato il software Commerce. Se hai clonato l’archivio GitHub del Magento 2, il percorso si trova in `app/code`. Se hai installato un archivio compresso o un metapacchetto, il percorso si trova in `vendor`.
+La posizione dipende da come è stato installato il software Commerce. Se hai clonato l&#39;archivio GitHub Magento 2, il percorso si trova in `app/code`. Se è stato installato un archivio compresso o un metapacchetto, il percorso si trova in `vendor`.
 
 **Per modificare la directory**:
 
-1. Come proprietario del file system, apri l’Elasticsearch `di.xml` in un editor di testo.
+1. Come proprietario del file system, aprire l&#39;Elasticsearch `di.xml` in un editor di testo.
 
-   Se hai clonato l’archivio, questo si trova in `app/code/Magento/Elasticsearch/etc/di.xml`
+   Se l&#39;archivio è stato clonato, si trova in `app/code/Magento/Elasticsearch/etc/di.xml`
 
-   Se hai un archivio o il metapacchetto, puoi trovarlo all’indirizzo `vendor/magento/module-elasticsearch/etc/di.xml`
+   Se hai ottenuto un archivio o il metapacchetto, si trova in `vendor/magento/module-elasticsearch/etc/di.xml`
 
-1. Modifica il valore di `stopwordsDirectory` nella directory desiderata:
+1. Modificare il valore di `stopwordsDirectory` nella directory desiderata:
 
    ```xml
    <type name="Magento\Elasticsearch\SearchAdapter\Query\Preprocessor\Stopwords">
@@ -122,11 +122,11 @@ La posizione dipende da come è stato installato il software Commerce. Se hai cl
    </type>
    ```
 
-1. Salva le modifiche apportate a `di.xml` ed esci dall’editor di testo.
+1. Salvare le modifiche apportate a `di.xml` e uscire dall&#39;editor di testo.
 
 ## Per cambiare la directory dal modulo
 
-1. [Creare un modulo](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
+1. [Crea un modulo](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. Nel modulo `etc/di.xml` aggiungi istruzioni:
 
    ```xml
@@ -138,6 +138,6 @@ La posizione dipende da come è stato installato il software Commerce. Se hai cl
    </type>
    ```
 
-1. Nel modulo, crea la directory `etc/stopwords`, con il file CSV corrispondente.
+1. Nel modulo creare la directory `etc/stopwords` con il file CSV corrispondente.
 
-1. Salva le modifiche apportate a `di.xml` ed esci dall’editor di testo.
+1. Salvare le modifiche apportate a `di.xml` e uscire dall&#39;editor di testo.

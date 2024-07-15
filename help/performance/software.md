@@ -21,15 +21,15 @@ ht-degree: 0%
 
 Per le distribuzioni su più server o per gli esercenti che pianificano la scalabilità della propria attività, consigliamo quanto segue:
 
-* [[!DNL Varnish] cache](../configuration/cache/config-varnish.md)
+* [Cache [!DNL Varnish]](../configuration/cache/config-varnish.md)
 * [Redis](../configuration/cache/redis-session.md) per sessioni (da 2.0.6+)
-* Un’istanza Redis separata come [cache predefinita](../configuration/cache/redis-pg-cache.md) (non utilizzare questa istanza per la cache delle pagine)
+* Un&#39;istanza Redis separata come [cache predefinita](../configuration/cache/redis-pg-cache.md) (non utilizzare questa istanza per la cache delle pagine)
 
-Consulta [requisiti di sistema](../installation/system-requirements.md) per informazioni sulle versioni supportate di ciascun tipo di software.
+Per informazioni sulle versioni supportate di ciascun tipo di software, vedere [requisiti di sistema](../installation/system-requirements.md).
 
 ## Sistema operativo
 
-Le configurazioni e le ottimizzazioni del sistema operativo sono simili per [!DNL Commerce] rispetto ad altre applicazioni web ad alto carico. Con l&#39;aumento del numero di connessioni simultanee gestite dal server, il numero di socket disponibili può essere completamente allocato. Il kernel Linux supporta un meccanismo per &quot;riutilizzare&quot; le connessioni TCP. Per attivare questo meccanismo, impostate il seguente valore in `/etc/sysctl.conf`:
+Le configurazioni e le ottimizzazioni del sistema operativo sono simili per [!DNL Commerce] rispetto ad altre applicazioni Web ad alto carico. Con l&#39;aumento del numero di connessioni simultanee gestite dal server, il numero di socket disponibili può essere completamente allocato. Il kernel Linux supporta un meccanismo per &quot;riutilizzare&quot; le connessioni TCP. Per abilitare questo meccanismo, impostare il valore seguente in `/etc/sysctl.conf`:
 
 >[!INFO]
 >
@@ -39,7 +39,7 @@ Le configurazioni e le ottimizzazioni del sistema operativo sono simili per [!DN
 net.ipv4.tcp_tw_reuse = 1
 ```
 
-Il parametro kernel `net.core.somaxconn` controlla il numero massimo di socket aperti in attesa di connessioni. Questo valore può essere aumentato in modo sicuro a 1024, ma dovrebbe essere correlato alla capacità del server di gestire tale quantità. Per abilitare questo parametro del kernel, impostate il seguente valore in `/etc/sysctl.conf`:
+Il parametro kernel `net.core.somaxconn` controlla il numero massimo di socket aperti in attesa di connessioni. Questo valore può essere aumentato in modo sicuro a 1024, ma dovrebbe essere correlato alla capacità del server di gestire tale quantità. Per abilitare questo parametro del kernel, impostare il valore seguente in `/etc/sysctl.conf`:
 
 ```text
 net.core.somaxconn = 1024
@@ -51,7 +51,7 @@ Il Magento supporta pienamente PHP 7.3 e 7.4. Ci sono diversi fattori da tenere 
 
 ### Estensioni PHP
 
-È consigliabile limitare l&#39;elenco delle estensioni PHP attive a quelle necessarie per [!DNL Commerce] funzionalità.
+È consigliabile limitare l&#39;elenco delle estensioni PHP attive a quelle necessarie per la funzionalità [!DNL Commerce].
 
 Magento Open Source e Adobe Commerce:
 
@@ -114,7 +114,7 @@ L&#39;aggiunta di più estensioni aumenta i tempi di caricamento della libreria.
 
 >[!INFO]
 >
->`php-mcrypt` è stato rimosso da PHP 7.2 e sostituito con il [`sodium` libreria](https://www.php.net/manual/en/book.sodium.php). Assicurati che [sodio](https://www.php.net/manual/en/sodium.installation.php) è abilitato correttamente durante l&#39;aggiornamento di PHP.
+>`php-mcrypt` è stato rimosso da PHP 7.2 e sostituito con la libreria [`sodium`](https://www.php.net/manual/en/book.sodium.php). Verificare che [sodio](https://www.php.net/manual/en/sodium.installation.php) sia abilitato correttamente durante l&#39;aggiornamento di PHP.
 
 >[!INFO]
 >
@@ -122,7 +122,7 @@ L&#39;aggiunta di più estensioni aumenta i tempi di caricamento della libreria.
 
 ### Impostazioni PHP
 
-Garantire la corretta esecuzione di tutte le [!DNL Commerce] istanze senza scaricare dati o codice su disco, impostare il limite di memoria come segue:
+Per garantire la corretta esecuzione di tutte le [!DNL Commerce] istanze senza scaricare dati o codice su disco, impostare il limite di memoria come segue:
 
 ```text
 memory_limit=1G
@@ -132,7 +132,7 @@ Per il debug, aumentare questo valore a 2G.
 
 #### Configurazione Realpath_cache
 
-Per migliorare [!DNL Commerce] prestazioni, aggiungi o aggiorna i seguenti elementi consigliati `realpath_cache` impostazioni in `php.ini` file. Questa configurazione consente ai processi PHP di memorizzare nella cache i percorsi dei file invece di cercarli ogni volta che viene caricata una pagina. Consulta [Ottimizzazione delle prestazioni](https://www.php.net/manual/en/ini.core.php) nella documentazione PHP.
+Per migliorare le prestazioni di [!DNL Commerce], aggiungere o aggiornare le seguenti impostazioni consigliate di `realpath_cache` nel file `php.ini`. Questa configurazione consente ai processi PHP di memorizzare nella cache i percorsi dei file invece di cercarli ogni volta che viene caricata una pagina. Vedi [Ottimizzazione delle prestazioni](https://www.php.net/manual/en/ini.core.php) nella documentazione di PHP.
 
 ```text
 realpath_cache_size=10M
@@ -162,9 +162,9 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-È consigliabile abilitare [Estensione PHP APCu](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) e [configurazione `composer` per supportarlo](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) per ottimizzare le prestazioni. Questa estensione memorizza nella cache i percorsi dei file aperti, migliorando le prestazioni per [!DNL Commerce] chiamate al server, incluse pagine, chiamate Ajax ed endpoint.
+È consigliabile abilitare l&#39;estensione APCu [PHP](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) e [configurare `composer` per supportarla](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) per ottimizzare le prestazioni. Questa estensione memorizza nella cache i percorsi dei file aperti, il che aumenta le prestazioni per [!DNL Commerce] chiamate al server, incluse pagine, chiamate AJAX ed endpoint.
 
-Modifica il `apcu.ini` file per includere quanto segue:
+Modifica il file `apcu.ini` per includere quanto segue:
 
 ```text
 extension=apcu.so
@@ -174,7 +174,7 @@ apc.enabled = 1
 
 ## Server web
 
-Magento supporta completamente i server web Nginx e Apache. [!DNL Commerce] fornisce esempi di file di configurazione consigliati in  `<magento_home>/nginx.conf.sample` (Nginx) e  `<magento_home>.htaccess.sample` (Apache).  L&#39;esempio di Nginx contiene impostazioni per prestazioni migliori ed è progettato in modo che sia richiesta una piccola riconfigurazione. Alcune delle best practice di configurazione principali definite nel file di esempio includono:
+Magento supporta completamente i server web Nginx e Apache. [!DNL Commerce] fornisce file di configurazione consigliati di esempio nei file `<magento_home>/nginx.conf.sample` (Nginx) e `<magento_home>.htaccess.sample` (Apache).  L&#39;esempio di Nginx contiene impostazioni per prestazioni migliori ed è progettato in modo che sia richiesta una piccola riconfigurazione. Alcune delle best practice di configurazione principali definite nel file di esempio includono:
 
 * Impostazioni per la memorizzazione nella cache del contenuto statico in un browser
 * Impostazioni della memoria e del tempo di esecuzione per PHP
@@ -185,45 +185,45 @@ Devi anche configurare il numero di thread per l’elaborazione delle richieste 
 | Server web | Nome attributo | Posizione | Informazioni correlate |
 |--- | --- | --- | ---|
 | Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [Ottimizzazione di NGINX per le prestazioni](https://www.nginx.com/blog/tuning-nginx/) |
-| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Ottimizzazione delle prestazioni di Apache](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
+| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Ottimizzazione prestazioni Apache](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
 | Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Direttive comuni Apache MPM](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]
 
-Questo documento non fornisce informazioni approfondite [!DNL MySQL] istruzioni di ottimizzazione perché ogni negozio e ambiente è diverso, ma possiamo fare alcuni consigli generali.
+Questo documento non fornisce istruzioni di ottimizzazione [!DNL MySQL] approfondite perché ogni archivio e ambiente è diverso, ma è possibile formulare alcune raccomandazioni generali.
 
-Ci sono stati molti miglioramenti a [!DNL MySQL] 5.7.9 Siamo certi che [!DNL MySQL] viene distribuito con buone impostazioni predefinite. Le impostazioni più critiche sono:
+Sono stati apportati numerosi miglioramenti a [!DNL MySQL] 5.7.9 Siamo certi che [!DNL MySQL] sia distribuito con le impostazioni predefinite corrette. Le impostazioni più critiche sono:
 
 | Parametro | Predefinito | Descrizione |
 |--- | --- | ---|
 | `innodb_buffer_pool_instances` | 8 | Il valore predefinito è impostato su 8 per evitare problemi con più thread che tentano di accedere alla stessa istanza. |
-| `innodb_buffer_pool_size` | 128 MB | In combinazione con le istanze di pool multiple descritte in precedenza, ciò significa un&#39;allocazione di memoria predefinita di 1024 MB. La dimensione totale viene divisa tra tutti i pool di buffer. Per una maggiore efficienza, specificare una combinazione di `innodb_buffer_pool_instances` e `innodb_buffer_pool_size` in modo che ogni istanza del pool di buffer sia di almeno 1 GB. |
-| `max_connections` | 150 | Il valore della proprietà `max_connections` Il parametro deve essere correlato al numero totale di thread PHP configurati nel server applicazioni. Una raccomandazione generale sarebbe di 300 per un ambiente di piccole dimensioni e di 1000 per un ambiente di medie dimensioni. |
+| `innodb_buffer_pool_size` | 128 MB | In combinazione con le istanze di pool multiple descritte in precedenza, ciò significa un&#39;allocazione di memoria predefinita di 1024 MB. La dimensione totale viene divisa tra tutti i pool di buffer. Per una maggiore efficienza, specificare una combinazione di `innodb_buffer_pool_instances` e `innodb_buffer_pool_size` in modo che ogni istanza del pool di buffer sia di almeno 1 GB. |
+| `max_connections` | 150 | Il valore del parametro `max_connections` deve essere correlato al numero totale di thread PHP configurati nel server applicazioni. Una raccomandazione generale sarebbe di 300 per un ambiente di piccole dimensioni e di 1000 per un ambiente di medie dimensioni. |
 | `innodb_thread_concurrency` | 0 | Il valore migliore per questa configurazione deve essere calcolato con la formula: `innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)` |
 
 ## [!DNL Varnish]
 
-Il Magento consiglia vivamente di utilizzare [!DNL Varnish] come server di cache a pagina intera per lo store. Il modulo PageCache è ancora presente nel codebase, ma deve essere utilizzato solo a scopo di sviluppo. Non deve essere usato insieme a o al posto di [!DNL Varnish].
+Il Magento consiglia vivamente di utilizzare [!DNL Varnish] come server cache a pagina intera per l&#39;archivio. Il modulo PageCache è ancora presente nel codebase, ma deve essere utilizzato solo a scopo di sviluppo. Non deve essere usato insieme o al posto di [!DNL Varnish].
 
-Installa [!DNL Varnish] su un server separato di fronte al livello web. Deve accettare tutte le richieste in arrivo e fornire copie delle pagine memorizzate nella cache. Per consentire [!DNL Varnish] per funzionare in modo efficace con le pagine protette, è possibile inserire un proxy di terminazione SSL davanti a [!DNL Varnish]. Nginx può essere utilizzato per questo scopo.
+Installa [!DNL Varnish] in un server separato di fronte al livello Web. Deve accettare tutte le richieste in arrivo e fornire copie delle pagine memorizzate nella cache. Per consentire a [!DNL Varnish] di funzionare in modo efficace con le pagine protette, è possibile inserire un proxy di terminazione SSL davanti a [!DNL Varnish]. Nginx può essere utilizzato per questo scopo.
 
-[!DNL Commerce] distribuisce un file di configurazione di esempio per [!DNL Varnish] (versioni 4 e 5) che contiene tutte le impostazioni consigliate per le prestazioni. Tra questi, i più critici in termini di prestazioni sono:
+[!DNL Commerce] distribuisce un file di configurazione di esempio per [!DNL Varnish] (versioni 4 e 5) contenente tutte le impostazioni consigliate per le prestazioni. Tra questi, i più critici in termini di prestazioni sono:
 
-* **Verifica stato back-end** polling di [!DNL Commerce] per determinare se risponde in modo tempestivo.
-* **Modalità di tolleranza** consente di istruire [!DNL Varnish] per mantenere un oggetto nella cache oltre il periodo Time to Live (TTL) e distribuire questo contenuto non aggiornato se [!DNL Commerce] non è integro o se il contenuto fresco non è ancora stato recuperato.
-* **Modalità Saint** blacklist non integra [!DNL Commerce] per un periodo di tempo configurabile. Di conseguenza, i backend non integri non possono distribuire il traffico quando si utilizza [!DNL Varnish] come load balancer.
+* **Il controllo di integrità back-end** esegue il polling del server [!DNL Commerce] per determinare se sta rispondendo in modo tempestivo.
+* **La modalità di tolleranza** consente di istruire [!DNL Varnish] a mantenere un oggetto nella cache oltre il periodo TTL (Time to Live) e a distribuire questo contenuto non aggiornato se [!DNL Commerce] non è integro o se non è ancora stato recuperato contenuto nuovo.
+* **Modalità Saint** inserisce nella blacklist [!DNL Commerce] server non integri per un periodo di tempo configurabile. Di conseguenza, i backend non integri non possono gestire il traffico quando si utilizza [!DNL Varnish] come load balancer.
 
-Consulta [Avanzate [!DNL Varnish] configurazione](../configuration/cache/config-varnish-advanced.md) per ulteriori informazioni sull’implementazione di queste funzioni.
+Per ulteriori informazioni sull&#39;implementazione di queste funzionalità, vedere [Advanced [!DNL Varnish] configuration](../configuration/cache/config-varnish-advanced.md).
 
 ### Ottimizzare le prestazioni delle risorse
 
 In generale, consigliamo di memorizzare le risorse (immagini, JS, CSS, ecc.) su una rete CDN per prestazioni ottimali.
 
-Se il sito non richiede l&#39;implementazione di un numero elevato di impostazioni internazionali e i server si trovano nella stessa area della maggior parte dei clienti, è possibile ottenere significativi miglioramenti delle prestazioni a un costo inferiore archiviando le risorse in [!DNL Varnish] invece di utilizzare una rete CDN.
+Se il sito non richiede la distribuzione di un numero elevato di impostazioni internazionali e i server si trovano nella stessa area della maggior parte dei clienti, è possibile ottenere significativi miglioramenti delle prestazioni a un costo inferiore archiviando le risorse in [!DNL Varnish] anziché utilizzando una rete CDN.
 
-Per memorizzare le risorse in [!DNL Varnish], aggiungi le seguenti voci VCL nel tuo `default.vcl` file generato da [!DNL Commerce] per [!DNL Varnish] 5.
+Per archiviare le risorse in [!DNL Varnish], aggiungi le seguenti voci VCL nel file `default.vcl` generato da [!DNL Commerce] per [!DNL Varnish] 5.
 
-Alla fine del `if` istruzione per le richieste PURGE in `vcl_recv` subroutine, aggiungere:
+Alla fine dell&#39;istruzione `if` per le richieste PURGE nella subroutine `vcl_recv`, aggiungere:
 
 ```javascript
 # static files are cacheable. remove SSL flag and cookie
@@ -235,8 +235,8 @@ if (req.url ~ "^/(pub/)?(media|static)/.*\.(ico|html|css|js|jpg|jpeg|png|gif|tif
 }
 ```
 
-In `vcl_backend_response` subroutine, cerca `if` istruzione che annulla l’impostazione del cookie per `GET` o `HEAD` richieste.
-Il valore aggiornato `if` Il blocco deve essere simile al seguente:
+Nella subroutine `vcl_backend_response`, cercare l&#39;istruzione `if` che annulla l&#39;impostazione del cookie per le richieste `GET` o `HEAD`.
+Il blocco `if` aggiornato deve essere simile al seguente:
 
 ```javascript
 # validate if we need to cache it and prevent from setting cookie
@@ -252,7 +252,7 @@ if (bereq.url !~ "\.(ico|css|js|jpg|jpeg|png|gif|tiff|bmp|gz|tgz|bz2|tbz|mp3|ogg
 }
 ```
 
-Riavvia il [!DNL Varnish] server per svuotare le risorse memorizzate nella cache ogni volta che aggiorni il sito o distribuisci/aggiorni le risorse.
+Riavvia il server [!DNL Varnish] per eseguire il flushing delle risorse memorizzate nella cache ogni volta che aggiorni il sito o distribuisci/aggiorni le risorse.
 
 ## Memorizzazione in cache e server di sessione
 
@@ -264,7 +264,7 @@ Se prevedi di gestire tutto il traffico con un solo nodo web, non avrebbe senso 
 
 ### Configurazione di più nodi web
 
-Per la configurazione di più nodi web, Redis è l’opzione migliore. Perché [!DNL Commerce] memorizza in cache attivamente molti dati per migliorare le prestazioni, presta attenzione al tuo canale di rete tra i nodi web e il server Redis. Non vuoi che il canale diventi un collo di bottiglia per l’elaborazione delle richieste.
+Per la configurazione di più nodi web, Redis è l’opzione migliore. Poiché [!DNL Commerce] memorizza nella cache molti dati per migliorare le prestazioni, prestare attenzione al canale di rete tra i nodi Web e il server Redis. Non vuoi che il canale diventi un collo di bottiglia per l’elaborazione delle richieste.
 
 >[!INFO]
 >

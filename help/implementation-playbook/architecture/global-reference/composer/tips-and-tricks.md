@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Le presenti linee guida riguardano principalmente [architettura di riferimento globale (GRA)](../overview.md) progetti.
+>Queste linee guida si applicano principalmente a [progetti GRA (Global Reference Architecture)](../overview.md).
 
 ## Compositore velocità
 
@@ -45,7 +45,7 @@ Il compositore a volte si blocca a causa delle versioni dei pacchetti. Potresti 
    composer clearcache
    ```
 
-1. Rimuovi il `composer.lock` per tutti i pacchetti.
+1. Rimuovi il file `composer.lock` per tutti i pacchetti.
 
    ```bash
    rm -rf vendor/* composer.lock
@@ -59,7 +59,7 @@ Il compositore a volte si blocca a causa delle versioni dei pacchetti. Potresti 
 
 >[!TIP]
 >
->Questi passaggi aggiornano tutti i pacchetti alla versione più recente disponibile. Ripristina `composer.lock` da Git per annullare questi aggiornamenti.
+>Questi passaggi aggiornano tutti i pacchetti alla versione più recente disponibile. Ripristina il file `composer.lock` da Git per annullare questi aggiornamenti.
 
 ## Verificare la presenza di eventuali aggiornamenti nei pacchetti client
 
@@ -69,7 +69,7 @@ Il compositore a volte si blocca a causa delle versioni dei pacchetti. Potresti 
    composer outdated
    ```
 
-1. Filtrare utilizzando caratteri jolly e/o `--minor-only` opzione per ignorare gli aggiornamenti non compatibili con le versioni precedenti:
+1. Filtra utilizzando i caratteri jolly e/o l&#39;opzione `--minor-only` per ignorare gli aggiornamenti incompatibili con le versioni precedenti:
 
    ```bash
    composer outdated 'magento/*'
@@ -84,7 +84,7 @@ Visualizza i dettagli di tutti i pacchetti installati in un ramo Git.
 composer info
 ```
 
-Esegui `composer install` dopo il passaggio a rami Git e prima dell’esecuzione `composer info`. In caso contrario, Composer mostra i dettagli relativi al ramo precedente estratto.
+Esegui `composer install` dopo aver cambiato rami Git e prima di eseguire `composer info`. In caso contrario, Composer mostra i dettagli relativi al ramo precedente estratto.
 
 >[!TIP]
 >
@@ -123,24 +123,24 @@ composer why-not client/module-example
 
 ## Ospitare un archivio Compositore privato
 
-Se hai bisogno di un archivio Compositore privato, utilizza [Packagist privato](https://packagist.com/) o [JFrog Artifactory](https://jfrog.com/integration/php-composer-repository/). Non usi [Satis](https://github.com/composer/satis).
+Se hai bisogno di un repository Composer privato, utilizza [Private Packagist](https://packagist.com/) o [JFrog Artifactory](https://jfrog.com/integration/php-composer-repository/). Non utilizzare [Satis](https://github.com/composer/satis).
 
-- **Packagist privato** è sicuro, costa circa $ 600 USD all&#39;anno con tre utenti amministratori ed è ospitato.
+- **Il Packagist privato** è sicuro, costa circa 600 $ all&#39;anno con tre utenti amministratori ed è in hosting.
 
 - **JFrog Artifactory** parte da $1.176 USD all&#39;anno. Non viene comunemente utilizzato come Packagist, ma supporta più lingue rispetto a PHP.
 
-- **Satis** non ha sicurezza incorporata, non ha automazione e richiede un hosting aggiuntivo. È gratuito solo se anche il tuo tempo è libero.
+- **Satis** non dispone di protezione incorporata, nessuna automazione e richiede un hosting aggiuntivo. È gratuito solo se anche il tuo tempo è libero.
 
 ## Pacchetti di controllo delle versioni
 
-Utilizzare [Controllo delle versioni semantiche 2.0.0](https://semver.org/spec/v2.0.0.html) come descritto in Adobe Commerce [schema di controllo delle versioni](https://developer.adobe.com/commerce/php/development/versioning/). Non reinventare la ruota.
+Utilizzare [Controllo delle versioni semantiche 2.0.0](https://semver.org/spec/v2.0.0.html) come descritto nello schema di controllo delle versioni [Adobe Commerce](https://developer.adobe.com/commerce/php/development/versioning/). Non reinventare la ruota.
 
-Per le dipendenze dei moduli Adobe Commerce, segui la [dipendenze versione modulo](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) documentazione.
+Per le dipendenze dei moduli Adobe Commerce, segui la documentazione [dipendenze delle versioni del modulo](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
 
-Non utilizzare la definizione della versione all’interno di `composer.json` file. Utilizza invece i tag Git per le versioni. Consulta [Versioni e vincoli del Compositore](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints).
+Non utilizzare la definizione della versione all&#39;interno del file `composer.json`. Utilizza invece i tag Git per le versioni. Consulta [Versioni e vincoli del Compositore](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints).
 
 ## Dove inserire i moduli in un file di archivio e non tramite Compositore
 
-Crea un archivio Git per i moduli in un archivio e ospitali autonomamente. Ogni modulo di Adobe Commerce ha una `composer.json` file. Dopo averlo ospitato in Git e sincronizzato con Private Packagist, puoi installarlo con Composer.
+Crea un archivio Git per i moduli in un archivio e ospitali autonomamente. Ogni modulo di Adobe Commerce ha un file `composer.json`. Dopo averlo ospitato in Git e sincronizzato con Private Packagist, puoi installarlo con Composer.
 
 Quando ricevi una nuova versione del pacchetto, carica il codice su Git, assegna i tag desiderati e installa la nuova versione con Composer.

@@ -29,7 +29,7 @@ Immettere il comando seguente per installare NTP:
 apt-get install ntp
 ```
 
-Continua con [Utilizzare i server pool NTP](#use-ntp-pool-servers).
+Continuare con [Utilizzare i server pool NTP](#use-ntp-pool-servers).
 
 ### Installare e configurare NTP su CentOS
 
@@ -41,7 +41,7 @@ Per installare e configurare NTP:
    yum search ntp
    ```
 
-1. Seleziona un pacchetto da installare. Ad esempio: `ntp.x86_64`.
+1. Seleziona un pacchetto da installare. Ad esempio, `ntp.x86_64`.
 
 1. Installa il pacchetto.
 
@@ -59,7 +59,7 @@ Per installare e configurare NTP:
 
 ### Utilizzare i server pool NTP
 
-La selezione dei server del pool dipende dall&#39;utente. Se si utilizzano server pool NTP, ntp.org consiglia di utilizzare [server di pool](https://www.ntppool.org/en/) che sono vicini al fuso orario dei server, come descritto nel [Pagina progetto pool NTP](https://www.ntppool.org/en/use.html). Se si dispone di un server NTP privato disponibile per tutti gli host della distribuzione, è possibile utilizzare tale server.
+La selezione dei server del pool dipende dall&#39;utente. Se si utilizzano server pool NTP, ntp.org consiglia di utilizzare [server pool](https://www.ntppool.org/en/) vicini al fuso orario dei server, come descritto nella [pagina del progetto pool NTP](https://www.ntppool.org/en/use.html). Se si dispone di un server NTP privato disponibile per tutti gli host della distribuzione, è possibile utilizzare tale server.
 
 1. Apri `/etc/ntp.conf` in un editor di testo.
 
@@ -81,7 +81,7 @@ La selezione dei server del pool dipende dall&#39;utente. Se si utilizzano serve
    server 2.us.pool.ntp.org
    ```
 
-1. Salva le modifiche apportate a `/etc/ntp.conf` ed esci dall’editor di testo.
+1. Salvare le modifiche apportate a `/etc/ntp.conf` e uscire dall&#39;editor di testo.
 
 1. Riavviare il servizio.
 
@@ -89,21 +89,21 @@ La selezione dei server del pool dipende dall&#39;utente. Se si utilizzano serve
 
    * CentOS: `service ntpd restart`
 
-1. Invio `date` per controllare la data del server.
+1. Immettere `date` per controllare la data del server.
 
    Se la data non è corretta, accertati che la porta client NTP (in genere, UDP 123) sia aperta nel firewall.
 
-   Prova la `ntpdate _[pool server hostname]_` comando. In caso di esito negativo, cercare l&#39;errore restituito.
+   Provare il comando `ntpdate _[pool server hostname]_`. In caso di esito negativo, cercare l&#39;errore restituito.
 
    In caso contrario, provare a riavviare il server.
 
 ## Creare phpinfo.php
 
-Il [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) file visualizza una grande quantità di informazioni su PHP e le sue estensioni.
+Nel file [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) vengono visualizzate molte informazioni su PHP e sulle relative estensioni.
 
 >[!NOTE]
 >
->Utilizzare `phpinfo.php` in un sistema di sviluppo _solo_. Può essere un problema di sicurezza in produzione.
+>Utilizza `phpinfo.php` in un sistema di sviluppo _only_. Può essere un problema di sicurezza in produzione.
 
 Aggiungi il seguente codice in qualsiasi punto della directory principale dei documenti del server web:
 
@@ -113,7 +113,7 @@ Aggiungi il seguente codice in qualsiasi punto della directory principale dei do
 phpinfo();
 ```
 
-Per ulteriori informazioni, vedere [pagina manuale phpinfo](https://www.php.net/manual/en/function.phpinfo.php).
+Per ulteriori informazioni, vedere la [pagina del manuale phpinfo](https://www.php.net/manual/en/function.phpinfo.php).
 
 Per visualizzare i risultati, immetti il seguente URL nel campo posizione o indirizzo del browser:
 
@@ -126,21 +126,21 @@ Se viene visualizzato un errore 404 (Non trovato), verificare quanto segue:
 * Avvia il server web, se necessario.
 * Verificare che il firewall consenta il traffico sulla porta 80.
 
-  [Aiuto per Ubuntu](https://help.ubuntu.com/community/UFW)
+  [Guida per Ubuntu](https://help.ubuntu.com/community/UFW)
 
-  [Guida di CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
+  [Guida per CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
 
 ## phpMyAdmin
 
 L&#39;applicazione phpMyAdmin è un&#39;utilità di amministrazione del database facile da usare e gratuita. È possibile utilizzarlo per controllare e modificare il contenuto del database. È necessario accedere a phpMyAdmin come utente amministrativo del database MySQL.
 
-Per ulteriori informazioni su phpMyAdmin, vedere [home page phpMyAdmin](https://www.phpmyadmin.net/).
+Per ulteriori informazioni su phpMyAdmin, vedere la home page di [phpMyAdmin](https://www.phpmyadmin.net/).
 
-Per informazioni più dettagliate sull&#39;installazione, vedere [documentazione sull&#39;installazione di phpMyAdmin](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
+Per informazioni più dettagliate sull&#39;installazione, vedere la [documentazione sull&#39;installazione di phpMyAdmin](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
 
 >[!NOTE]
 >
->Utilizzare phpMyAdmin in un sistema di sviluppo _solo_. Può essere un problema di sicurezza in produzione.
+>Utilizzare phpMyAdmin in un sistema di sviluppo _only_. Può essere un problema di sicurezza in produzione.
 
 1. Per usare phpMyAdmin, immetti il seguente comando nel campo indirizzo o percorso del browser:
 

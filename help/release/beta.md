@@ -1,5 +1,5 @@
 ---
-title: Versioni beta
+title: Versioni di Beta
 description: Scopri le versioni beta di Adobe Commerce e come partecipare.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 source-git-commit: 0e2dfc376a049a47348a7a913bd5181436227cc2
@@ -13,22 +13,22 @@ ht-degree: 0%
 
 I programmi beta di Adobe Commerce consentono ai commercianti di accedere alle funzioni e al codice prerelease, fornire feedback e guidare il futuro di Adobe Commerce. Esistono due tipi di programmi beta:
 
-- Beta pubblica: un programma beta pubblico è disponibile per tutti i clienti e i partner di Adobe Commerce
-- Beta privata: per partecipare a un programma beta privato potrebbe essere necessaria un’approvazione basata su criteri di qualificazione
+- Beta pubblico: un programma beta pubblico è disponibile per tutti i clienti e i partner Adobe Commerce
+- Private Beta: per partecipare a un programma beta privato potrebbe essere necessaria un’approvazione basata su criteri di qualificazione
 
 >[!IMPORTANT]
 >
->I rilasci beta possono contenere difetti e sono forniti &quot;COSÌ COME SONO&quot; senza alcuna garanzia di alcun tipo. Adobe non avrà alcun obbligo di mantenere, correggere, aggiornare, modificare, modificare o supportare in altro modo (tramite i servizi di supporto Adobe o in altro modo) le versioni beta. Si consiglia ai clienti di prestare cautela e di non fare affidamento in alcun modo sul corretto funzionamento o sulle prestazioni delle versioni beta e/o di qualsiasi documentazione o materiale di accompagnamento. Le funzioni e le API in versione beta sono soggette a modifiche senza preavviso. Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del cliente.
+>I rilasci di Beta possono contenere difetti e vengono forniti &quot;COSÌ COME SONO&quot; senza alcuna garanzia. Adobe non avrà alcun obbligo di mantenere, correggere, aggiornare, modificare, modificare o supportare in altro modo (tramite i servizi di supporto Adobe o in altro modo) le versioni beta. Si consiglia ai clienti di prestare cautela e di non fare affidamento in alcun modo sul corretto funzionamento o sulle prestazioni delle versioni beta e/o di qualsiasi documentazione o materiale di accompagnamento. Le funzioni e le API in versione beta sono soggette a modifiche senza preavviso. Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del cliente.
 
 ## Vantaggi della partecipazione
 
 L&#39;accesso anticipato alle funzioni sviluppate da Adobe offre a clienti e partner la possibilità di fornire feedback, definire lo sviluppo dei prodotti e prepararsi ad adottare nuove funzionalità prima della disponibilità generale.
 
-## Programmi beta correnti
+## Programmi Beta correnti
 
 Per un elenco dei programmi beta attivi, consulta le sezioni seguenti.
 
-### Integrazione di Experience Manager Assets per Commerce (versione beta privata)
+### Integrazione di Experience Manager Assets per Commerce (Private Beta)
 
 L&#39;integrazione di Experience Manager Assets per Commerce consente la gestione e la distribuzione efficienti di un grande volume di immagini di prodotti da Experience Manager Assets ad Adobe Commerce con un minimo sforzo operativo.
 
@@ -40,11 +40,11 @@ Funzioni principali:
 
 - Onboarding semplificato: l’onboarding degli esercenti è semplificato con un processo di sincronizzazione configurabile che consente la sincronizzazione completa tra l’archivio Experience Manager Assets e il catalogo Commerce.
 
-- Strategia di corrispondenza flessibile: l’integrazione include algoritmi di corrispondenza delle risorse predefiniti basati su SKU di prodotto che sincronizzano le immagini tra AEM Assets e Commerce ed è estensibile utilizzando Adobe Developer App Builder. Collabora con il tuo partner di soluzioni per creare una strategia di corrispondenza delle risorse personalizzata oltre all’integrazione per adattarsi a qualsiasi struttura dell’archivio di gestione delle risorse.
+- Strategia di corrispondenza flessibile: l’integrazione include algoritmi di corrispondenza delle risorse predefiniti basati su SKU di prodotto che sincronizzano le immagini tra AEM Assets e Commerce ed è estensibile tramite Adobe Developer App Builder. Collabora con il tuo partner di soluzioni per creare una strategia di corrispondenza delle risorse personalizzata oltre all’integrazione per adattarsi a qualsiasi struttura dell’archivio di gestione delle risorse.
 
 Per partecipare alla versione beta, invia una richiesta e-mail a [Shaun McCran](mailto:mccran@adobe.com).
 
-### Integrazione del sistema IBM Sterling Order Management (versione beta privata)
+### Integrazione dei sistemi IBM Sterling Order Management (Private Beta)
 
 Questo acceleratore di integrazione per IBM Sterling Order Management consente ai clienti Adobe Commerce di iniziare con funzionalità avanzate di gestione degli ordini basate su IBM Sterling OMS. Con questa integrazione i commercianti ottengono:
 - Visibilità in tempo reale dei livelli di inventario e date di consegna precise per i clienti.
@@ -54,7 +54,7 @@ Questo acceleratore di integrazione per IBM Sterling Order Management consente a
 
 Per partecipare a questa versione beta, invia una richiesta e-mail a [sbieber@adobe.com](mailto:sbieber@adobe.com).
 
-### Connessione dati e Audience Activation (versione beta pubblica)
+### Connessione dati e Audience Activation (Beta pubblico)
 
 È stata ampliata la condivisione di dati tra Adobe Commerce e Adobe Experience Platform per promuovere esperienze personalizzate più potenti. Questa funzionalità consente agli esercenti di:
 - Condividere i profili cliente di Commerce
@@ -64,7 +64,7 @@ Per partecipare a questa versione beta, invia una richiesta e-mail a [sbieber@ad
 
 Per partecipare a questa versione beta, invia una richiesta e-mail a [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
 
-### Adobe Commerce Foundation (versione beta pubblica)
+### Adobe Commerce Foundation (Beta pubblica)
 
 Ogni versione beta di Adobe Commerce Foundation include tutte le modifiche consegnate al codice core di Adobe Commerce entro la data di rilascio pianificata, incluse, a titolo esemplificativo, le seguenti aree funzionali:
 
@@ -73,30 +73,30 @@ Ogni versione beta di Adobe Commerce Foundation include tutte le modifiche conse
 - Miglioramenti GraphQL
 - Correzioni di bug di qualità generale
 - Contributi comunitari
-- Modifiche necessarie per supportare la compatibilità con [Servizi Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- Modifiche necessarie per supportare la compatibilità con [i servizi Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
 
 #### Convenzione di denominazione e pianificazione
 
 Adobe in genere rilascia patch beta due volte all’anno.
 
-I pacchetti versione beta presentano `-betaX` suffisso. Ad esempio, i pacchetti della versione beta di Adobe Commerce 2.4.7 utilizzano la seguente convenzione di denominazione:
+I pacchetti di rilascio di Beta hanno un suffisso `-betaX`. Ad esempio, i pacchetti della versione beta di Adobe Commerce 2.4.7 utilizzano la seguente convenzione di denominazione:
 
 - `2.4.7-beta1`
 - `2.4.7-beta2`
 
-Consulta la [pianificazione delle versioni](schedule.md) per l’elenco delle prossime date di rilascio della versione beta pubblica.
+Per un elenco delle prossime date di rilascio della versione beta pubblica, consulta la [pianificazione del rilascio](schedule.md).
 
 
-#### Accesso alla versione beta
+#### Accesso alla versione di Beta
 
-Le versioni beta di Adobe Commerce sono distribuite come qualsiasi altra versione patch di Adobe Commerce: come metapacchetti Compositore su `https://repo.magento.com`. Il codice sorgente è disponibile su [GitHub](https://github.com/magento/magento2).
+Le versioni beta di Adobe Commerce vengono distribuite come qualsiasi altra versione patch di Adobe Commerce: come metapacchetti Compositore in `https://repo.magento.com`. Il codice sorgente è disponibile su [GitHub](https://github.com/magento/magento2).
 
-Consulta [Guida introduttiva all&#39;installazione del Compositore](../installation/composer.md) per ulteriori dettagli.
+Per ulteriori dettagli, vedere [Avvio rapido dell&#39;installazione del Compositore](../installation/composer.md).
 
 #### Segnalazione problemi
 
 Adobe non fornisce il servizio standard di supporto Adobe per le versioni beta.
 
-Per inviare feedback relativi alle versioni beta, segui la nostra [flusso regolare di reporting sui problemi](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) il [GitHub](https://github.com/magento/magento2).
+Per inviare feedback relativi alle versioni beta, segui il [flusso regolare di segnalazione dei problemi](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) in [GitHub](https://github.com/magento/magento2).
 
 I nostri team interni monitoreranno tutti i problemi critici segnalati in base all’ultima versione beta e assegneranno loro un ordine di priorità per la risoluzione prima della data di rilascio della versione GA.

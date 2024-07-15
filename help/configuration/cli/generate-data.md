@@ -14,17 +14,17 @@ ht-degree: 9%
 
 ## Profili
 
-È possibile regolare la quantità di dati creati utilizzando _profili_ (piccolo, medio, grande e molto grande). I profili si trovano in `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` directory.
+Puoi regolare la quantità di dati creati utilizzando _profili_ (piccoli, medi, grandi e molto grandi). I profili si trovano nella directory `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>`.
 
 Ad esempio: `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
-La figura seguente mostra come un prodotto viene visualizzato nella vetrina utilizzando _piccolo_ profilo:
+La figura seguente mostra come un prodotto viene visualizzato nella vetrina utilizzando il profilo _small_:
 
 ![Vetrina di esempio con dati generati](../../assets/configuration/generate-data.png)
 
 La tabella seguente fornisce dettagli sui profili del generatore di dati: piccolo, medio, grande e molto grande.
 
-| Parametro | Profilo piccolo | Profilo medio | Profilo multisito medio | Profilo grande | Profilo molto grande |
+| Parametro | Profilo piccolo | Profilo Medium | Profilo multisito Medium | Profilo grande | Profilo molto grande |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
@@ -50,9 +50,9 @@ La tabella seguente fornisce dettagli sui profili del generatore di dati: piccol
 >
 >Prima di eseguire il generatore di dati, disabilitare tutti i processi cron in esecuzione sul server. La disabilitazione dei processi cron impedisce al generatore di dati di eseguire azioni in conflitto con i processi cron attivi ed evita errori inutili.
 >
->Se intendi implementare l’evento con [!DNL Adobe I/O Events for Adobe Commerce] durante il test delle prestazioni, esegui questo comando prima di effettuare la sottoscrizione [Eventi](https://developer.adobe.com/commerce/extensibility/events/). La sottoscrizione degli eventi può causare errori.
+>Se si desidera implementare eventi con [!DNL Adobe I/O Events for Adobe Commerce] durante il test delle prestazioni, eseguire questo comando prima di sottoscrivere [eventi](https://developer.adobe.com/commerce/extensibility/events/). La sottoscrizione degli eventi può causare errori.
 
-Esegui il comando come descritto in questa sezione. Dopo l&#39;esecuzione del comando, è necessario [reindicizza tutti gli indici](../cli/manage-indexers.md).
+Esegui il comando come descritto in questa sezione. Dopo l&#39;esecuzione del comando, è necessario [reindicizzare tutti gli indicizzatori](../cli/manage-indexers.md).
 
 Opzioni comando:
 
@@ -125,7 +125,7 @@ Genera set di attributi con la configurazione specificata. Nodo profilo XML:
 
 ### Prodotti bundle
 
-Genera prodotti bundle. Le selezioni del bundle generato non vengono visualizzate singolarmente nel catalogo. I prodotti sono distribuiti uniformemente per categorie e siti web. Se  `assign_entities_to_all_websites` dal profilo è impostato su `1`. I prodotti vengono assegnati a tutti i siti web.
+Genera prodotti bundle. Le selezioni del bundle generato non vengono visualizzate singolarmente nel catalogo. I prodotti sono distribuiti uniformemente per categorie e siti web. Se `assign_entities_to_all_websites` dal profilo è impostato su `1`. I prodotti vengono assegnati a tutti i siti web.
 
 Nodo profilo XML:
 
@@ -163,7 +163,7 @@ Genera regole di prezzo catalogo. Nodo profilo XML:
 
 ### Categorie
 
-Genera le categorie. Se `assign_entities_to_all_websites` è impostato su `0`, tutte le categorie sono distribuite in modo uniforme per le categorie principali; in caso contrario, tutte le categorie vengono assegnate a una categoria principale.
+Genera le categorie. Se `assign_entities_to_all_websites` è impostato su `0`, tutte le categorie vengono distribuite in modo uniforme per le categorie principali; in caso contrario, tutte le categorie vengono assegnate a una categoria principale.
 
 Nodo profilo XML:
 
@@ -195,7 +195,7 @@ Imposta i valori per i campi di configurazione. Nodo profilo XML:
 
 ### Prodotti configurabili
 
-Genera prodotti configurabili. Le opzioni configurabili generate non vengono visualizzate singolarmente nel catalogo. I prodotti sono distribuiti uniformemente per categorie e siti web. Se `assign_entities_to_all_websites` è impostato su `1`, i prodotti vengono assegnati a tutti i siti web.
+Genera prodotti configurabili. Le opzioni configurabili generate non vengono visualizzate singolarmente nel catalogo. I prodotti sono distribuiti uniformemente per categorie e siti web. Se `assign_entities_to_all_websites` è impostato su `1`, i prodotti vengono assegnati a tutti i siti Web.
 
 Sono supportati i seguenti formati di nodo XML:
 
@@ -380,9 +380,9 @@ Nodo profilo XML:
 
 ### Prodotti semplici
 
-Genera prodotti semplici. I prodotti sono distribuiti per impostazione predefinita e per set di attributi predefiniti. Se nel profilo vengono specificati set di attributi aggiuntivi, come: `<product_attribute_sets>{int}</product_attribute_sets>`, i prodotti vengono distribuiti anche per set di attributi aggiuntivi.
+Genera prodotti semplici. I prodotti sono distribuiti per impostazione predefinita e per set di attributi predefiniti. Se nel profilo sono specificati set di attributi aggiuntivi come `<product_attribute_sets>{int}</product_attribute_sets>`, i prodotti vengono distribuiti anche per set di attributi aggiuntivi.
 
-I prodotti sono distribuiti uniformemente per categorie e siti web. Se `assign_entities_to_all_websites` è impostato su `1`, i prodotti vengono assegnati a tutti i siti web.
+I prodotti sono distribuiti uniformemente per categorie e siti web. Se `assign_entities_to_all_websites` è impostato su `1`, i prodotti vengono assegnati a tutti i siti Web.
 
 Nodo profilo XML:
 
@@ -402,7 +402,7 @@ Genera siti Web. Nodo profilo XML:
 
 ### Gruppi store
 
-Genera gruppi di store (a cui si fa riferimento nell’amministratore come _store_). I gruppi di store sono distribuiti normalmente tra i siti web.
+Genera i gruppi di archivi (denominati nell&#39;amministratore _archivi_). I gruppi di store sono distribuiti normalmente tra i siti web.
 
 Nodo profilo XML:
 
@@ -434,16 +434,16 @@ Genera le aliquote. Nodo profilo XML:
 
 ## Informazioni di configurazione aggiuntive:
 
-- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml`- Set di attributi predefiniti
+- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml` - Set di attributi predefiniti
 
-- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`- Configurazione del cliente
+- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`: configurazione cliente
 
-- `<Commerce root dir>/setup/performance-toolkit/config/description.xml`- Configurazione descrizione completa prodotto
+- `<Commerce root dir>/setup/performance-toolkit/config/description.xml` - Configurazione descrizione completa prodotto
 
-- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`- Configurazione della descrizione breve del prodotto
+- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`: configurazione descrizione breve prodotto
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`— Configurazione per descrizione breve e completa del prodotto. Questa implementazione precedente è fornita per compatibilità con le versioni precedenti.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`—Configurazione per descrizione breve e completa del prodotto. Questa implementazione precedente è fornita per compatibilità con le versioni precedenti.
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`- Numero ridotto di termini di ricerca in descrizioni brevi e complete
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` - Numero ridotto di termini di ricerca in descrizioni brevi e complete
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`- Numero maggiore di termini di ricerca da utilizzare in una descrizione breve e completa.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` - Numero maggiore di termini di ricerca da utilizzare in una descrizione breve e completa.

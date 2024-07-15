@@ -6,14 +6,14 @@ feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
 # Blocco ESI vernice
 
-Edge Side Includes (ESI) sono direttive speciali che è possibile utilizzare per includere pagine web in altre pagine web.
+Le Inclusioni lato Edge (ESI) sono direttive speciali che è possibile utilizzare per includere pagine web in altre pagine web.
 
 Ecco un esempio:
 
@@ -23,14 +23,14 @@ Ecco un esempio:
 </div>
 ```
 
-La vernice recupera il contenuto da `http://domain.com/index.php/page_cache/block/esi/blocks` e sostituisci il `<esi>` aggiungeteci un tag.
+La vernice recupera il contenuto da `http://domain.com/index.php/page_cache/block/esi/blocks` e sostituisce con esso il tag `<esi>`.
 
-## Commercio e vernice ESI
+## Commerce e vernice ESI
 
 Il framework Commerce crea un tag ESI quando vengono soddisfatte le seguenti condizioni:
 
-- L’applicazione di caching è impostata su `Varnish Cache`
-- Un layout XML `block` viene aggiunto con un `ttl` attributo
+- Applicazione di caching impostata su `Varnish Cache`
+- Elemento `block` del layout XML aggiunto con un attributo `ttl`
 
 ### Esempio
 
@@ -42,7 +42,7 @@ Il framework Commerce crea un tag ESI quando vengono soddisfatte le seguenti con
    </referenceContainer>
 ```
 
-Nell’esempio precedente, il `block` aggiunge contenuto dal `esi.phtml` modello a una home page e Vernice lo aggiorna automaticamente ogni 30 secondi.
+Nell&#39;esempio precedente, l&#39;elemento `block` aggiunge contenuto dal modello `esi.phtml` a una home page e Varnish lo aggiorna automaticamente ogni 30 secondi.
 
 ## Limitazioni
 

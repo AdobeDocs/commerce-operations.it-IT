@@ -1,5 +1,5 @@
 ---
-title: Principi commerciali
+title: Principi di Commerce
 description: Utilizza questi importanti principi di leadership per garantire che il tuo progetto Adobe Commerce funzioni in modo efficace.
 exl-id: 70b7346a-8536-428f-a980-b240bd5eb5ab
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -22,14 +22,14 @@ Uno sponsor esecutivo efficace dovrebbe garantire la gestione, la roadmap e la c
 
 ## Acquisto
 
-![Ticket sporgente dalla macchina](../../assets/playbooks/buyin.png)
+![Ticket rimanente nel computer](../../assets/playbooks/buyin.png)
 È inoltre fondamentale ottenere l&#39;adesione dei dirigenti all&#39;interno del team dirigente. Disporre di più agenti di modifica per stimolare la crescita consente di favorire la crescita in modo più semplice e rapido. La responsabilità per la corretta gestione di Adobe Commerce deve essere condivisa dall’intero team di leadership. Spetta quindi allo sponsor esecutivo conquistare il team esecutivo condividendo esempi che dimostrino il valore complessivo di Adobe Commerce. In genere, si concentra sulla fornitura di una migliore esperienza del cliente e sui successivi vantaggi per l&#39;azienda.
 
 Quando si gestiscono siti di e-commerce o si implementano progetti digitali come Adobe Commerce, i leader sono responsabili del monitoraggio di diversi dipartimenti e team che possiedono parti diverse delle iniziative di e-commerce. è fondamentale garantire che tutti i gruppi condividano una strategia comune per raggiungere obiettivi comuni. Un roadshow interno per ottenere il supporto dei dirigenti aiuta a sensibilizzare l’opinione pubblica, allineare i team e ottenere le risorse necessarie per un’implementazione ottimale.
 
 ## Responsabilità
 
-![figure raccolte attorno a una tabella](../../assets/playbooks/accountability.png)
+![figure raccolte intorno a una tabella](../../assets/playbooks/accountability.png)
 La leadership del progetto è l&#39;atto di guidare un team verso il completamento di un obiettivo di successo. Spesso può essere una delle aree più critiche per capire bene al fine di consegnare con successo un progetto di e-commerce. Una leadership di progetto di successo richiede competenze sia nella gestione che nella leadership per assicurarsi l&#39;adesione da parte delle persone giuste, guidando il team nella giusta direzione.
 
 ## Livello C
@@ -72,8 +72,10 @@ Responsabile di garantire che il progetto sia incentrato sul raggiungimento dei 
 
 - Progetta e nomina i team di gestione del progetto
 - Supervisiona lo sviluppo del business case, garantendo l&#39;allineamento strategico aziendale
-- Monitora e controlla i progressi a livello strategico, in particolare rivedendo periodicamente il caso di business
-- Escalation di problemi e rischi (è il punto di escalation per problemi e rischi e garantisce che tutti i rischi associati al caso di business siano identificati, valutati e controllati)
+- Controlla i progressi a livello strategico, in particolare
+analisi periodica del business case
+- Escalation di problemi e rischi (è il punto di escalation per problemi e
+rischi e garantisce che tutti i rischi associati al business case siano identificati, valutati e controllati)
 - Prende decisioni su questioni sollevate, con particolare attenzione alla giustificazione aziendale continuata
 - Garantisce la sicurezza globale del progetto e garantisce che rimanga in linea con l&#39;obiettivo di fornire prodotti in grado di ottenere i vantaggi previsti per il business
 
@@ -157,4 +159,5 @@ La gestione efficace di un sito di e-commerce richiede che il team di gestione d
 
 Per coinvolgere l&#39;organizzazione, è sempre una buona idea condividere la visione e rafforzare ripetutamente il motivo per cui la tua azienda sta investendo nella tecnologia di e-commerce articolando sia i vantaggi per il cliente che i vantaggi per l&#39;azienda.
 
-La condivisione di documentazione, come i casi di successo delle implementazioni digitali, consente di convalidare il motivo e il modo in cui questo investimento porta l’organizzazione a un nuovo livello. Se desideri che l’organizzazione adotti la trasformazione digitale, è importante che i dipendenti sappiano che si tratta di una priorità.
+Condivisione di documentazione, come casi di successo di studi digitali
+implementazioni, consente di convalidare il motivo e il modo in cui questo investimento porta l’organizzazione a un nuovo livello. Se desideri che l’organizzazione adotti la trasformazione digitale, è importante che i dipendenti sappiano che si tratta di una priorità.

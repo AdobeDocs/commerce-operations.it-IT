@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configurare il provider di blocchi
 
-Prima di eseguire questo comando, è necessario effettuare le seguenti operazioni *o* devi [installare l’applicazione](../advanced.md):
+Prima di eseguire questo comando, è necessario eseguire *o* [installare l&#39;applicazione](../advanced.md):
 
 * [Creare o aggiornare la configurazione della distribuzione](deployment.md)
 * [Creare lo schema del database](database.md)
@@ -26,7 +26,7 @@ Configurare un provider di blocchi per impedire l&#39;avvio di processi cron e g
 
 Per impostazione predefinita, Adobe Commerce utilizza il database per salvare i blocchi. Se sui tuoi server sono presenti più nodi, ti consigliamo di utilizzare Zookeeper come provider di blocchi.
 
-Se esegui Adobe Commerce su un’infrastruttura cloud, non è necessario configurare le impostazioni del provider di blocchi. L&#39;applicazione configura il provider di blocco file per i progetti Pro durante il processo di provisioning. Consulta [Variabili cloud](https://devdocs.magento.com/cloud/env/variables-cloud.html).
+Se esegui Adobe Commerce su un’infrastruttura cloud, non è necessario configurare le impostazioni del provider di blocchi. L&#39;applicazione configura il provider di blocco file per i progetti Pro durante il processo di provisioning. Vedi [Variabili cloud](https://devdocs.magento.com/cloud/env/variables-cloud.html).
 
 ### Utilizzo dei comandi
 
@@ -38,8 +38,8 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 
 | Nome | Valore | Obbligatorio |
 |--- |--- |--- |
-| `--lock-provider` | Nome provider di blocco: `db`, `zookeeper`, o `file`.<br><br>Provider di blocchi predefinito: `db` | No |
-| `--lock-db-prefix` | Il prefisso db specifico per evitare conflitti di blocco quando si utilizza `db` blocca provider.<br><br>Il valore predefinito: `NULL` | No |
-| `--lock-zookeeper-host` | Host e porta per la connessione al cluster Zookeeper quando si utilizza `zookeeper` blocca provider.<br><br>Ad esempio: `127.0.0.1:2181` | Sì, se si imposta `--lock-provider=zookeeper` |
-| `--lock-zookeeper-path` | Percorso in cui Zookeeper salva i blocchi.<br><br>Il percorso predefinito è: `/magento/locks` | No |
+| `--lock-provider` | Blocca nome provider: `db`, `zookeeper` o `file`.<br><br>Provider di blocchi predefinito: `db` | No |
+| `--lock-db-prefix` | Prefisso db specifico per evitare conflitti di blocco quando si utilizza il provider di blocchi `db`.<br><br>Valore predefinito: `NULL` | No |
+| `--lock-zookeeper-host` | Host e porta per la connessione al cluster Zookeeper quando si utilizza il provider di blocchi `zookeeper`.<br><br>Esempio: `127.0.0.1:2181` | Sì, se si imposta `--lock-provider=zookeeper` |
+| `--lock-zookeeper-path` | Percorso in cui Zookeeper salva i blocchi.<br><br>Percorso predefinito: `/magento/locks` | No |
 | `--lock-file-path` | Percorso in cui vengono salvati i blocchi di file. | Sì, se si imposta `--lock-provider=file` |

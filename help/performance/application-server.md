@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server consente ad Adobe Commerce di mantenere lo stato tra le richieste API di Commerce GraphQL. GraphQL Application Server, basato sull&#39;estensione Swoole, funziona come un processo con thread di lavoro che gestiscono l&#39;elaborazione delle richieste. Mantenendo uno stato di applicazione avviato tra le richieste API di GraphQL, GraphQL Application Server migliora la gestione delle richieste e le prestazioni complessive del prodotto. Le richieste API diventano notevolmente più efficienti.
 
-GraphQL Application Server è disponibile solo per Adobe Commerce. Non è disponibile per il Magento Open Source. Devi [inviare un messaggio di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ticket per abilitare GraphQL Application Server sui progetti Pro.
+GraphQL Application Server è disponibile solo per Adobe Commerce. Non è disponibile per il Magento Open Source. È necessario [inviare un ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) per abilitare GraphQL Application Server nei progetti Pro.
 
 >[!NOTE]
 >
->GraphQL Application Server non è attualmente compatibile con [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). I clienti di Adobe Commerce su infrastruttura cloud attualmente utilizzano [!DNL AWS S3] per [archiviazione remota](../configuration/remote-storage/cloud-support.md) non può utilizzare GraphQL Application Server finché Adobe non rilascia un hotfix più tardi nel 2024.
+>GraphQL Application Server non è attualmente compatibile con [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). I clienti di Adobe Commerce sull&#39;infrastruttura cloud che attualmente utilizzano [!DNL AWS S3] per l&#39;[archiviazione remota](../configuration/remote-storage/cloud-support.md) non possono utilizzare GraphQL Application Server fino a quando Adobe non rilascerà un hotfix più tardi nel 2024.
 
 ## Architettura
 
@@ -42,7 +42,7 @@ L&#39;esecuzione di GraphQL Application Server richiede quanto segue:
 
 ## Abilitare e distribuire su infrastruttura cloud
 
-Il `ApplicationServer` modulo (`Magento/ApplicationServer/`) abilita GraphQL Application Server.
+Il modulo `ApplicationServer` (`Magento/ApplicationServer/`) abilita GraphQL Application Server.
 
 ### Abilita progetti Pro
 
@@ -52,12 +52,12 @@ Il `ApplicationServer` modulo (`Magento/ApplicationServer/`) abilita GraphQL App
 
 Dopo aver attivato la funzionalità Application Server nel progetto Pro, completare i passaggi seguenti prima di distribuire GraphQL Application Server:
 
-1. Distribuire Adobe Commerce sull’infrastruttura cloud utilizzando il modello cloud di [Ramo 2.4.7-appserver](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
-1. Assicurati che tutte le personalizzazioni ed estensioni di Commerce siano [compatibile](https://developer.adobe.com/commerce/php/development/components/app-server/) con GraphQL Application Server.
+1. Distribuisci Adobe Commerce sull&#39;infrastruttura cloud utilizzando il modello cloud del ramo [2.4.7-appserver](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
+1. Assicurati che tutte le personalizzazioni ed estensioni di Commerce siano [compatibili](https://developer.adobe.com/commerce/php/development/components/app-server/) con GraphQL Application Server.
 1. Clona il progetto Commerce Cloud.
 1. Se necessario, regola le impostazioni nel file application-server/nginx.conf.sample.
-1. Commenta la sezione &quot;web&quot; attiva in `project_root/.magento.app.yaml` interamente.
-1. Rimuovi il commento dalla seguente configurazione di sezione &quot;web&quot; in `project_root/.magento.app.yaml` file che include GraphQL Application Server `start` comando.
+1. Aggiungere un commento alla sezione &#39;web&#39; attiva nel file `project_root/.magento.app.yaml`.
+1. Rimuovere il commento dalla seguente configurazione di sezione &#39;web&#39; nel file `project_root/.magento.app.yaml` che include il comando di GraphQL Application Server `start`.
 
    ```yaml
    web:
@@ -68,7 +68,7 @@ Dopo aver attivato la funzionalità Application Server nel progetto Pro, complet
            start: ./application-server/start.sh > var/log/application-server-status.log 2>&1
    ```
 
-1. Assicurati che `/application-server/start.sh` è eseguibile eseguendo il comando seguente:
+1. Verificare che `/application-server/start.sh` sia eseguibile eseguendo il comando seguente:
 
    ```bash
    chmod +x application-server/start.sh
@@ -98,12 +98,12 @@ git push
 
 Prima di distribuire GraphQL Application Server su progetti iniziali, effettuare le operazioni riportate di seguito.
 
-1. Distribuire Adobe Commerce sull’infrastruttura cloud utilizzando il modello cloud di [Ramo 2.4.7-appserver](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
+1. Distribuisci Adobe Commerce sull&#39;infrastruttura cloud utilizzando il modello cloud del ramo [2.4.7-appserver](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Verificare che tutte le personalizzazioni e le estensioni di Commerce siano compatibili con GraphQL Application Server.
-1. Confermare che `CRYPT_KEY` la variabile di ambiente è impostata per l’istanza. Puoi controllare lo stato di questa variabile sul Cloud Project Portal (Interfaccia utente di onboarding).
+1. Verificare che la variabile di ambiente `CRYPT_KEY` sia impostata per l&#39;istanza. Puoi controllare lo stato di questa variabile sul Cloud Project Portal (Interfaccia utente di onboarding).
 1. Clona il progetto Commerce Cloud.
-1. Rinomina `application-server/.magento/.magento.app.yaml.sample` a `application-server/.magento/.magento.app.yaml` e, se necessario, regola le impostazioni in .magento.app.yaml.
-1. Rimuovi commento dalla configurazione della route seguente in `project_root/.magento/routes.yaml` file da reindirizzare `/graphql` traffico verso GraphQL Application Server.
+1. Rinomina `application-server/.magento/.magento.app.yaml.sample` in `application-server/.magento/.magento.app.yaml` e, se necessario, regola le impostazioni in .magento.app.yaml.
+1. Rimuovere il commento dalla configurazione della route seguente nel file `project_root/.magento/routes.yaml` per reindirizzare il traffico `/graphql` a GraphQL Application Server.
 
    ```yaml
    "http://{all}/graphql":
@@ -125,11 +125,11 @@ Prima di distribuire GraphQL Application Server su progetti iniziali, effettuare
 
 >[!NOTE]
 >
->Verifica che tutte le impostazioni personalizzate nella directory principale `.magento.app.yaml` i file vengono migrati in modo appropriato al `application-server/.magento/.magento.app.yaml` file. Dopo il `application-server/.magento/.magento.app.yaml` aggiunta al progetto, è necessario gestirla oltre alla directory principale `.magento.app.yaml` file. Ad esempio, se devi [configura rabbitmq](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) o [gestire le proprietà web](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) devi aggiungere la stessa configurazione a `application-server/.magento/.magento.app.yaml` anche.
+>Assicurarsi che tutte le impostazioni personalizzate nel file radice `.magento.app.yaml` siano migrate in modo appropriato nel file `application-server/.magento/.magento.app.yaml`. Dopo aver aggiunto il file `application-server/.magento/.magento.app.yaml` al progetto, è necessario mantenerlo in aggiunta al file radice `.magento.app.yaml`. Se ad esempio è necessario [configurare rabbitmq](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) o [gestire le proprietà Web](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property), aggiungere la stessa configurazione anche a `application-server/.magento/.magento.app.yaml`.
 
 ### Distribuire progetti iniziali
 
-Dopo aver completato l’abilitazione [passaggi](#before-you-begin-a-cloud-starter-deployment), invia le modifiche all’archivio Git per distribuire GraphQL Application Server:
+Dopo aver completato i [passaggi](#before-you-begin-a-cloud-starter-deployment) per l&#39;abilitazione, invia le modifiche all&#39;archivio Git per distribuire GraphQL Application Server:
 
 ```bash
 git push
@@ -137,7 +137,7 @@ git push
 
 ### Verificare l’abilitazione nei progetti cloud
 
-1. Esegui una query GraphQL o una mutazione rispetto all’istanza per confermare che `graphql` endpoint accessibile. Ad esempio:
+1. Eseguire una query GraphQL o una mutazione sull&#39;istanza per confermare che l&#39;endpoint `graphql` è accessibile. Ad esempio:
 
    ```
    mutation {  
@@ -155,7 +155,7 @@ git push
     }
    ```
 
-1. Utilizza SSH per accedere alla tua istanza cloud. Il `project_root/var/log/application-server.log` deve contenere un nuovo record di registro per ogni richiesta GraphQL.
+1. Utilizza SSH per accedere alla tua istanza cloud. `project_root/var/log/application-server.log` deve contenere un nuovo record di registro per ogni richiesta GraphQL.
 
 1. È inoltre possibile verificare se GraphQL Application Server è in esecuzione eseguendo il comando seguente:
 
@@ -163,26 +163,26 @@ git push
    ps aux|grep php
    ```
 
-   Dovresti vedere un `bin/magento server:run` processo con più thread.
+   Dovresti visualizzare un processo `bin/magento server:run` con più thread.
 
-Se questi passaggi di verifica hanno esito positivo, GraphQL Application Server è in esecuzione `/graphql` richieste.
+Se questi passaggi di verifica hanno esito positivo, GraphQL Application Server è in esecuzione e fornisce `/graphql` richieste.
 
 ## Abilita progetti locali
 
-Il `ApplicationServer` modulo (`Magento/ApplicationServer/`) abilita le API di GraphQL Application Server per GraphQL.
+Il modulo `ApplicationServer` (`Magento/ApplicationServer/`) abilita le API di GraphQL Application Server per GraphQL.
 
 L&#39;esecuzione locale di GraphQL Application Server richiede l&#39;installazione dell&#39;estensione Swoole e una modifica minore al file di configurazione Nginx della distribuzione.
 
 ### Prerequisiti
 
-Completa i passaggi seguenti prima di abilitare `ApplicationServer` modulo:
+Completare i passaggi seguenti prima di abilitare il modulo `ApplicationServer`:
 
 * Configurare Nginx
 * Installare e configurare l’estensione Swoole v5+
 
 #### Configurare Nginx
 
-La distribuzione specifica di Commerce determina come configurare Nginx. In generale, il file di configurazione di Nginx è denominato per impostazione predefinita `nginx.conf` e si trova in una delle seguenti directory: `/usr/local/nginx/conf`, `/etc/nginx`, o `/usr/local/etc/nginx`. Consulta [Guida per principianti](https://nginx.org/en/docs/beginners_guide.html) per ulteriori informazioni sulla configurazione di Nginx.
+La distribuzione specifica di Commerce determina come configurare Nginx. In generale, il file di configurazione Nginx è denominato `nginx.conf` per impostazione predefinita e si trova in una delle seguenti directory: `/usr/local/nginx/conf`, `/etc/nginx` o `/usr/local/etc/nginx`. Per ulteriori informazioni sulla configurazione di Nginx, vedere [Guida per principianti](https://nginx.org/en/docs/beginners_guide.html).
 
 Esempio di configurazione di Nginx:
 
@@ -205,7 +205,7 @@ La procedura seguente descrive come installare l’estensione Swoole per PHP 8.2
 pecl install swoole
 ```
 
-Durante l’installazione, Adobe Commerce visualizza le richieste per abilitare il supporto per `openssl`, `mysqlnd`, `sockets`, `http2`, e `postgres`. Invio `yes` per tutte le opzioni eccetto `postgres`.
+Durante l&#39;installazione, Adobe Commerce visualizza le richieste per abilitare il supporto per `openssl`, `mysqlnd`, `sockets`, `http2` e `postgres`. Immettere `yes` per tutte le opzioni eccetto `postgres`.
 
 ### Verifica installazione Swoole
 
@@ -217,17 +217,17 @@ php -m | grep swoole
 
 ### Errori comuni con l’installazione di Swoole
 
-Eventuali errori che si verificano durante l’installazione di Swoole si verificano in genere durante `pecl` fase di installazione. Gli errori tipici includono mancanti `openssl.h` e `pcre2.h` file. Per risolvere questi errori, accertati che questi due pacchetti siano installati nel sistema locale.
+Eventuali errori che si verificano durante l&#39;installazione di Swoole si verificano in genere durante la fase di installazione di `pecl`. Gli errori tipici includono i file mancanti `openssl.h` e `pcre2.h`. Per risolvere questi errori, accertati che questi due pacchetti siano installati nel sistema locale.
 
-* Controlla la posizione di `openssl` eseguendo:
+* Controllare il percorso di `openssl` eseguendo:
 
 ```bash
 openssl version -d
 ```
 
-Questo comando mostra il percorso in cui `openssl` è installato.
+Questo comando mostra il percorso in cui è installato `openssl`.
 
-* Controlla la posizione di `pcre2` eseguendo:
+* Controllare il percorso di `pcre2` eseguendo:
 
 ```bash
 pcre2-config --prefix 
@@ -245,13 +245,13 @@ brew install pcre2
 
 #### Risolvere i problemi con openssl
 
-Per risolvere i problemi relativi a `openssl`, esegui:
+Per risolvere i problemi relativi a `openssl`, eseguire:
 
 ```bash
 export LDFLAGS="-L/opt/homebrew/etc/openssl@3/lib" export CPPFLAGS="-I/opt/homebrew/etc/openssl@3/include"
 ```
 
-Conferma di utilizzare il percorso dal tuo `dev` ambiente.
+Verificare di utilizzare il percorso dell&#39;ambiente `dev` locale.
 
 #### Conferma la risoluzione dei problemi correlati a openssl
 
@@ -263,7 +263,7 @@ pecl install swoole
 
 #### Risolvere i problemi relativi a pcre2.h
 
-Per risolvere i problemi relativi a `pcre2.h`, collegano simbolicamente il `pcre2.h` percorso della directory dell&#39;estensione PHP installata. La versione specifica installata di PHP e `pcr2.h` determina la versione specifica del comando da utilizzare.
+Per risolvere i problemi relativi a `pcre2.h`, collegare il percorso `pcre2.h` alla directory dell&#39;estensione PHP installata. La versione installata specifica di PHP e `pcr2.h` determina la versione specifica del comando da utilizzare.
 
 ### Esegui server applicazioni GraphQL
 
@@ -283,20 +283,20 @@ ps aux | grep php
 
 Altri metodi per verificare che GraphQL Application Server sia in esecuzione includono:
 
-* Controlla la `/var/log/application-server.log` file per le voci correlate alle richieste GraphQL elaborate.
-* Provare a connettersi alla porta HTTP su cui viene eseguito GraphQL Application Server. Ad esempio: `curl -g 'http://localhost:9501/graph`.
+* Verificare nel file `/var/log/application-server.log` la presenza di voci correlate alle richieste GraphQL elaborate.
+* Provare a connettersi alla porta HTTP su cui viene eseguito GraphQL Application Server. Esempio: `curl -g 'http://localhost:9501/graph`.
 
 ### Conferma l’elaborazione delle richieste GraphQL
 
-GraphQL Application Server aggiunge `X-Backend` intestazione di risposta con il valore `graphql_server` a ogni richiesta elaborata. Per verificare se una richiesta è stata gestita da GraphQL Application Server, controllare questa intestazione di risposta.
+GraphQL Application Server aggiunge l&#39;intestazione di risposta `X-Backend` con il valore `graphql_server` a ogni richiesta elaborata. Per verificare se una richiesta è stata gestita da GraphQL Application Server, controllare questa intestazione di risposta.
 
 ### Conferma compatibilità di estensione e personalizzazione
 
-Gli sviluppatori e i commercianti di estensioni devono prima verificare che il loro codice di estensione e personalizzazione sia conforme alle linee guida tecniche descritte in [Linee guida tecniche](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/).
+Gli sviluppatori e i commercianti delle estensioni devono verificare innanzitutto che il codice di estensione e personalizzazione sia conforme alle linee guida tecniche descritte in [Linee guida tecniche](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/).
 
 Considera queste linee guida durante la valutazione del codice:
 
-* Classi di servizio (ovvero classi che forniscono il comportamento ma non i dati, ad esempio `EventManager`) non deve avere uno stato mutabile.
+* Le classi del servizio (ovvero le classi che forniscono il comportamento ma non i dati, ad esempio `EventManager`) non devono avere uno stato mutabile.
 * Evitare l&#39;accoppiamento temporale.
 
 ## Disabilita server applicazioni GraphQL
@@ -305,7 +305,7 @@ Le procedure per la disattivazione di GraphQL Application Server variano a secon
 
 ### Disabilita server applicazioni GraphQL (cloud)
 
-1. Rimuovi eventuali nuovi file e altre modifiche al codice inclusi nel `AppServer Enabled` esegui il commit durante i preparativi per l’implementazione.
+1. Rimuovere tutti i nuovi file ed eventuali altre modifiche al codice inclusi nel commit `AppServer Enabled` durante i preparativi per la distribuzione.
 
 1. Eseguire il commit delle modifiche utilizzando questo comando:
 
@@ -321,14 +321,14 @@ Le procedure per la disattivazione di GraphQL Application Server variano a secon
 
 ### Disabilita GraphQL Application Server (locale)
 
-1. Commenta il `/graphql` sezione di `nginx.conf` file aggiunto quando si abilita GraphQL Application Server.
+1. Aggiungere un commento alla sezione `/graphql` del file `nginx.conf` aggiunto quando si abilita GraphQL Application Server.
 1. Riavvia indice.
 
 Questo metodo di disattivazione di GraphQL Application Server può essere utile per testare o confrontare rapidamente le prestazioni.
 
 ### Verificare che GraphQL Application Server sia disabilitato
 
-Per confermare che le richieste GraphQL vengono elaborate da `php-fpm` anziché GraphQL Application Server, immettere il comando seguente: `ps aux | grep php`.
+Per confermare che le richieste GraphQL vengono elaborate da `php-fpm` anziché da GraphQL Application Server, immettere il comando seguente: `ps aux | grep php`.
 
 Dopo aver disabilitato GraphQL Application Server:
 
@@ -337,11 +337,11 @@ Dopo aver disabilitato GraphQL Application Server:
 
 ## Integrazione e test funzionali per GraphQL Application Server
 
-Gli sviluppatori di estensioni possono eseguire due integration test per verificare la compatibilità delle estensioni con GraphQL Application Server: `GraphQlStateTest` e `ResetAfterRequestTest`.
+Gli sviluppatori di estensioni possono eseguire due integration test per verificare la compatibilità dell&#39;estensione con GraphQL Application Server: `GraphQlStateTest` e `ResetAfterRequestTest`.
 
 ### GraphQlStateTest
 
-`GraphQlStateTest` rileva lo stato negli oggetti condivisi che non devono essere riutilizzati per più richieste.
+`GraphQlStateTest` rileva lo stato negli oggetti condivisi che non deve essere riutilizzato per più richieste.
 
 Questo test è progettato per rilevare le modifiche dello stato negli oggetti del servizio prodotti da `ObjectManager`. Il test esegue due volte query GraphQL identiche e confronta lo stato dell&#39;oggetto servizio prima e dopo la seconda query.
 
@@ -349,23 +349,23 @@ Questo test è progettato per rilevare le modifiche dello stato negli oggetti de
 
 * **Impossibile aggiungere, saltare o filtrare un elenco**. Se si verifica un errore che indica che non è sicuro aggiungere, saltare o filtrare un elenco, valutare se è possibile eseguire il refactoring della classe in modo compatibile con le versioni precedenti per utilizzare le factory delle classi di servizio con stato mutabile.
 
-* **La classe presenta uno stato mutabile**. Se la classe stessa presenta uno stato mutabile, prova a riscrivere il codice per aggirare questo stato. Se per motivi di prestazioni è necessario lo stato mutabile, implementa `ResetAfterRequestInterface` e utilizzare `_resetState()` per ripristinare lo stato di costruzione iniziale dell&#39;oggetto.
+* **La classe presenta uno stato modificabile**. Se la classe stessa presenta uno stato mutabile, prova a riscrivere il codice per aggirare questo stato. Se lo stato mutabile è necessario per motivi di prestazioni, implementare `ResetAfterRequestInterface` e utilizzare `_resetState()` per ripristinare lo stato costruito iniziale dell&#39;oggetto.
 
 * **Impossibile accedere alla proprietà digitata $x prima del messaggio di inizializzazione**. Errori con questo tipo di messaggio indicano che la proprietà specificata non è stata inizializzata dal costruttore. Si tratta di una forma di accoppiamento temporale che si verifica perché l&#39;oggetto non può essere utilizzato dopo che è stato inizialmente costruito. Questo accoppiamento si verifica anche se la proprietà è privata perché l’agente di raccolta che recupera i dati dalle proprietà utilizza la funzione di riflessione PHP. In questo caso, provare a rieseguire il factoring della classe per evitare l&#39;accoppiamento temporale e lo stato mutabile. Se il refactoring non risolve l&#39;errore, è possibile modificare il tipo di proprietà in un tipo nullable in modo che possa essere inizializzato in null.  Se la proprietà è un array, provare a inizializzarla come array vuoto.
 
-Esegui `GraphQlStateTest` eseguendo `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php`.
+Eseguire `GraphQlStateTest` eseguendo `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php`.
 
 ### ResetAfterRequestTest
 
-`ResetAfterRequestTest` cerca tutte le classi che implementano `ResetAfterRequestInterface` e verifica che `_resetState()` il metodo restituisce lo stato di un oggetto allo stesso stato che aveva dopo essere stato costruito da `ObjectManager`.  Questo test crea un oggetto servizio con `ObjectManager`, quindi clona tale oggetto, chiama `_resetState()`e quindi confronta entrambi gli oggetti. Il test non chiama alcun metodo tra la creazione di istanze di oggetti e `_resetState()`, pertanto non conferma il ripristino di alcuno stato mutabile. Trova problemi quando un bug o un errore di battitura in `_resetState()` può impostare lo stato su un valore diverso da quello originale.
+`ResetAfterRequestTest` cerca tutte le classi che implementano `ResetAfterRequestInterface` e verifica che il metodo `_resetState()` restituisca lo stato di un oggetto allo stesso stato che aveva dopo essere stato costruito da `ObjectManager`.  Questo test crea un oggetto servizio con `ObjectManager`, quindi clona l&#39;oggetto, chiama `_resetState()` e confronta entrambi gli oggetti. Il test non chiama alcun metodo tra la creazione dell&#39;istanza dell&#39;oggetto e `_resetState()`, pertanto non conferma la reimpostazione di alcuno stato mutabile. Sono stati rilevati problemi in cui un bug o un errore di battitura in `_resetState()` può impostare lo stato su un valore diverso da quello originale.
 
 #### Errori ResetAfterRequestTest e potenziale correzione
 
-* **La classe presenta valori di proprietà incoerenti**. Se il test ha esito negativo, verificare se una classe è stata modificata con il risultato che l&#39;oggetto dopo la costruzione ha valori di proprietà diversi rispetto a quelli dopo la `_resetState()` viene chiamato il metodo. Se la classe su cui stai lavorando non contiene `_resetState()` nella gerarchia di classi per individuare una superclasse che la implementa.
+* **La classe contiene valori di proprietà incoerenti**. Se il test non riesce, verificare se una classe è stata modificata con il risultato che l&#39;oggetto dopo la costruzione ha valori di proprietà diversi rispetto a quelli che ha dopo la chiamata al metodo `_resetState()`. Se la classe su cui si sta lavorando non contiene il metodo `_resetState()` stesso, controllare la gerarchia di classi per individuare una superclasse che lo implementa.
 
 * **Impossibile accedere alla proprietà digitata $x prima del messaggio di inizializzazione**. Questo problema si verifica anche con `GraphQlStateTest`.
 
-  Esegui `ResetAfterRequestTest` eseguendo: `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php`.
+  Eseguire `ResetAfterRequestTest` eseguendo: `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php`.
 
 ### Test funzionali
 
@@ -373,13 +373,13 @@ Durante la distribuzione di GraphQL Application Server, gli sviluppatori di este
 
 #### Modalità di monitoraggio stato
 
-Durante l&#39;esecuzione dei test funzionali (o manuali), il server applicazioni può essere eseguito con `--state-monitor mode` è abilitata per aiutare a trovare le classi in cui lo stato viene riutilizzato involontariamente. Avviare l&#39;Application Server normalmente, ad eccezione dell&#39;aggiunta di `--state-monitor` parametro.
+Durante l&#39;esecuzione dei test funzionali (o manuali), il server applicazioni può essere eseguito con `--state-monitor mode` abilitato per consentire la ricerca di classi in cui lo stato viene riutilizzato involontariamente. Avviare l&#39;Application Server normalmente, tranne aggiungere il parametro `--state-monitor`.
 
 ```
 bin/magento server:run --state-monitor
 ```
 
-Dopo l’elaborazione di ogni richiesta, viene aggiunto un nuovo file alla `tmp` ad esempio: `var/tmp/StateMonitor-thread-output-50-6nmxiK`. Al termine del test, questi file possono essere uniti con `bin/magento server:state-monitor:aggregate-output` che crea due file uniti, uno in `XML` e uno su `JSON`.
+Dopo l&#39;elaborazione di ogni richiesta, viene aggiunto un nuovo file alla directory `tmp`, ad esempio: `var/tmp/StateMonitor-thread-output-50-6nmxiK`. Al termine del test, questi file possono essere uniti con il comando `bin/magento server:state-monitor:aggregate-output`, che crea due file uniti, uno in `XML` e uno in `JSON`.
 
 Esempi:
 
@@ -388,12 +388,12 @@ Esempi:
 /var/workspace/var/tmp/StateMonitor-junit-2024-04-10T18:50:39Z-oreUco.xml
 ```
 
-Questi file possono essere esaminati con qualsiasi strumento utilizzato per visualizzare XML o JSON, che mostrerà le proprietà modificate degli oggetti di servizio come GraphQlStateTest. Il `--state-monitor` La modalità utilizza lo stesso elenco di salto e lo stesso elenco di filtri di GraphQlStateTest.
+Questi file possono essere esaminati con qualsiasi strumento utilizzato per visualizzare XML o JSON, che mostrerà le proprietà modificate degli oggetti di servizio come GraphQlStateTest. La modalità `--state-monitor` utilizza lo stesso elenco di salto e lo stesso elenco di filtri di GraphQlStateTest.
 
 >[!NOTE]
 >
->Non utilizzare il `--state-monitor` in produzione. È progettato solo per lo sviluppo e il testing. Crea molti file di output e viene eseguito più lentamente del normale.
+>Non utilizzare la modalità `--state-monitor` in produzione. È progettato solo per lo sviluppo e il testing. Crea molti file di output e viene eseguito più lentamente del normale.
 
 >[!NOTE]
 >
->`--state-monitor` non è compatibile con le versioni PHP `8.3.0` - `8.3.4` a causa di un bug nel Garbage Collector PHP. Se si utilizza PHP 8.3, è necessario eseguire l&#39;aggiornamento a `8.3.5` o più recente per utilizzare questa funzione.
+>`--state-monitor` non è compatibile con le versioni PHP `8.3.0` - `8.3.4` a causa di un bug nel Garbage Collector PHP. Se si utilizza PHP 8.3, è necessario eseguire l&#39;aggiornamento a `8.3.5` o versione successiva per utilizzare questa funzionalità.

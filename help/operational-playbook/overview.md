@@ -23,7 +23,7 @@ Il pubblico di destinazione per questo playbook include:
 
 - Responsabile marketing
 - Responsabile del reparto Digital, Head of Strategy, responsabile del marketing
-- Responsabile dei contenuti, Responsabile dell’esperienza utente, Responsabile della produzione dei contenuti, Responsabile della strategia dei contenuti, Produttori di contenuti, Designer UX
+- Responsabile dei contenuti, Responsabile UX, Responsabile della produzione dei contenuti, Stratega dei contenuti, Produttori di contenuti, Designer UX
 - Architetto della soluzione, responsabile dell&#39;implementazione, sviluppatore principale
 - Responsabile del programma, Project Manager
 - Ecommerce Manager, Business Analyst
@@ -32,17 +32,17 @@ Il pubblico di destinazione per questo playbook include:
 
 Il presente documento segue una struttura progettata per aiutarti a comprendere le aree di interesse principali per trarre il massimo valore dal tuo investimento in Adobe Commerce. Questa struttura si basa sul framework di governance di Deloitte ed Adobe Commerce, che crea l’ambiente aziendale appropriato per il successo delle operazioni e delle trasformazioni digitali. Include:
 
-- **Leader**—Acquisto e supporto per la gestione efficace di una piattaforma di e-commerce.
+- **Leadership**: supporto e supporto per la corretta gestione di una piattaforma di e-commerce.
 
-- **Strategia** chiarezza e allineamento rispetto agli obiettivi aziendali chiave per la valutazione delle prestazioni digitali e delle operazioni di e-commerce.
+- **Strategia**: chiarezza e allineamento rispetto agli obiettivi aziendali chiave per la valutazione delle prestazioni digitali e delle operazioni di e-commerce.
 
-- **Soluzione** valutazione dell&#39;infrastruttura e dell&#39;hosting in base ai diversi requisiti aziendali e di e-commerce.
+- **Soluzione**: hosting e valutazione dell&#39;infrastruttura per esigenze aziendali e di e-commerce diverse.
 
 - **Persone**: risorse, competenze e la struttura di team appropriata per eseguire le operazioni di e-commerce in modo efficace.
 
-- **Processo**: procedure, gestione dei progetti e flussi di lavoro per gestire in modo efficace un sito di e-commerce.
+- **Processo**: procedure, gestione dei progetti e flussi di lavoro per la gestione efficace di un sito di e-commerce.
 
-- **Prodotto** soluzioni di e-commerce generali, integrazioni comuni e automazioni.
+- **Prodotto**: soluzioni di e-commerce generali, integrazioni comuni e automazioni.
 
 >[!NOTE]
 >

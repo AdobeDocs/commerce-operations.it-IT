@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
@@ -23,15 +23,15 @@ Adobe Commerce su infrastruttura cloud 2.4.x e versioni successive
 
 Aggiorna i servizi e i componenti utilizzati da Adobe Commerce prima che raggiungano o siano prossimi alla data di fine del ciclo di vita. Questo consente di mantenere il passo con la conformità PCI e ridurre le vulnerabilità di sicurezza.
 
-I clienti che utilizzano i piani Starter possono eseguire autonomamente gli aggiornamenti dei servizi. Fai riferimento a [Modifica versione del servizio](https://devdocs.magento.com/cloud/project/services.html#change-service-version) per informazioni dettagliate su come eseguire questa operazione.
+I clienti che utilizzano i piani Starter possono eseguire autonomamente gli aggiornamenti dei servizi. Per ulteriori informazioni su come eseguire questa operazione, consultare [Modifica versione del servizio](https://devdocs.magento.com/cloud/project/services.html#change-service-version).
 
-I clienti che utilizzano i piani Pro possono effettuare il self-service solo con gli aggiornamenti dei servizi [Ambiente di integrazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Per gli aggiornamenti dei servizi in produzione, è necessario [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) richiesta dell’aggiornamento.
+I clienti con piani Pro possono eseguire il self-service solo sugli aggiornamenti dei servizi nel proprio [ambiente di integrazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Per gli aggiornamenti dei servizi in produzione, è necessario [inviare un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) richiedendo l&#39;aggiornamento.
 
 >[!WARNING]
 >
 >Gli aggiornamenti dei servizi non possono essere inviati all’ambiente di produzione senza un preavviso di 48 ore lavorative al nostro team di infrastruttura. Ciò è necessario in quanto è necessario disporre di un tecnico del supporto dell&#39;infrastruttura per aggiornare la configurazione entro l&#39;intervallo di tempo desiderato, riducendo al minimo i tempi di inattività dell&#39;ambiente di produzione.
 
-L&#39;elenco delle versioni del servizio e delle date di fine del ciclo di vita è disponibile nel seguente file: [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
+È possibile visualizzare l&#39;elenco delle versioni del servizio e delle date di fine del ciclo di vita nel seguente file: [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 >[!NOTE]
 >

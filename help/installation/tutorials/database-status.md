@@ -11,7 +11,7 @@ ht-degree: 3%
 
 # Controllare lo stato del database
 
-Prima di eseguire questo comando, è necessario [Creare o aggiornare la configurazione della distribuzione](deployment.md).
+Prima di eseguire questo comando, è necessario [creare o aggiornare la configurazione della distribuzione](deployment.md).
 
 ## Utilizzo dei comandi
 
@@ -34,5 +34,5 @@ Il comando restituisce uno dei seguenti codici di uscita:
 | Codice di uscita | Descrizione | Azione suggerita |
 |--------------|--------------|---------------|
 | 0 | Normale | Nessuno |
-| 1 | Alcuni moduli utilizzano versioni di codice più recenti o precedenti rispetto al database | Esegui [`magento setup:upgrade`](database-upgrade.md) per aggiornare lo schema del database ed eseguire `composer update` dalla directory radice dell&#39;applicazione per aggiornare le dipendenze dei componenti |
+| 1 | Alcuni moduli utilizzano versioni di codice più recenti o precedenti rispetto al database | Eseguire [`magento setup:upgrade`](database-upgrade.md) per aggiornare lo schema del database ed eseguire `composer update` dalla directory radice dell&#39;applicazione per aggiornare le dipendenze dei componenti |
 | 2 | `magento setup:upgrade` è obbligatorio | [`magento setup:upgrade`](database-upgrade.md) per aggiornare lo schema del database |

@@ -31,7 +31,7 @@ Sul mercato sono disponibili diversi metodi di pagamento, tra cui:
 - Trasferimenti interbancari
 - Pagamenti mobili
 - Biglietti regalo
-- Iscrizioni
+- Abbonamenti
 
 ## Pagamenti online
 

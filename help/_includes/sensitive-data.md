@@ -13,7 +13,7 @@ Adobe Commerce utilizza la tua chiave di crittografia per crittografare quanto s
 * Nomi utente e password specificati nella configurazione amministratore (ad esempio, accessi ai gateway di pagamento)
 * Valori CAPTCHA inviati tramite la rete
 
-Adobe Commerce sì *non* crittografare:
+Adobe Commerce *non* crittografa:
 
 * Password e nomi utente amministrativi e cliente (con hash)
 * Indirizzo

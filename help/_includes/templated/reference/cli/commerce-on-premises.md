@@ -11,19 +11,19 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Versione**: 2,4,7-p1
+**Versione**: 2.4.7-p1
 
-Questo riferimento contiene 141 comandi disponibili tramite `bin/magento` strumento da riga di comando.
-L’elenco iniziale viene generato automaticamente utilizzando `bin/magento list` in Adobe Commerce.
-Utilizza il [&quot;Aggiungi comandi CLI&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) per aggiungere un comando CLI personalizzato.
-
->[!NOTE]
->
->Puoi chiamare `bin/magento` Comandi CLI che utilizzano i tasti di scelta rapida anziché il nome completo del comando. Ad esempio, puoi chiamare `bin/magento setup:upgrade` utilizzo `bin/magento s:up`, `bin/magento s:upg`. Consulta [sintassi di scelta rapida](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) per informazioni su come utilizzare le scelte rapide con qualsiasi comando CLI.
+Questo riferimento contiene 141 comandi disponibili tramite lo strumento della riga di comando `bin/magento`.
+L&#39;elenco iniziale viene generato automaticamente utilizzando il comando `bin/magento list` in Adobe Commerce.
+Utilizzare la guida [&quot;Add CLI command&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) per aggiungere un comando CLI personalizzato.
 
 >[!NOTE]
 >
->Questo riferimento viene generato dalla base di codice dell&#39;applicazione. Per modificare il contenuto, puoi aggiornare il codice sorgente per l’implementazione del comando corrispondente in [codebase](https://github.com/magento) e inviare le modifiche per la revisione. Un altro modo consiste nel _Inviaci feedback_ (trovi il collegamento in alto a destra). Per le linee guida sui contributi, consulta [Contributi codice](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>È possibile chiamare i comandi CLI `bin/magento` utilizzando i collegamenti anziché il nome completo del comando. Ad esempio, è possibile chiamare `bin/magento setup:upgrade` utilizzando `bin/magento s:up`, `bin/magento s:upg`. Per informazioni su come utilizzare i tasti di scelta rapida con qualsiasi comando CLI, vedere [sintassi dei collegamenti](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax).
+
+>[!NOTE]
+>
+>Questo riferimento viene generato dalla base di codice dell&#39;applicazione. Per modificare il contenuto, è possibile aggiornare il codice sorgente per l&#39;implementazione del comando corrispondente nell&#39;archivio [codebase](https://github.com/magento) e inviare le modifiche per la revisione. Un altro modo consiste nel _inviarci un feedback_ (trovare il collegamento in alto a destra). Per le linee guida sui contributi, consulta [Contributi codice](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 
@@ -706,7 +706,7 @@ Crea un amministratore
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -726,36 +726,36 @@ Non inviare messaggi
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Aumenta la gravità dei messaggi: 1 per l’output normale, 2 per l’output più dettagliato e 3 per il debug
+Aumentare il livello di dettaglio dei messaggi: 1 per l&#39;output normale, 2 per un output più dettagliato e 3 per debug
 
-- Predefinito: `false`
+- Default: `false`
 - Non accetta un valore
 
 ### `--version`, `-V`
 
-Visualizza questa versione dell&#39;applicazione
+Visualizza questa versione applicazione
 
-- Predefinito: `false`
+- Default: `false`
 - Non accetta un valore
 
 ### `--ansi`
 
-Forza (o disattiva — senza ansi) output ANSI
+Forza (o disabilita --no-ansi) l&#39;uscita ANSI
 
 - Non accetta un valore
 
 ### `--no-ansi`
 
-Ignora l&#39;opzione &quot;—ansi&quot;
+Annulla l&#39;opzione &quot;--ansi&quot;
 
-- Predefinito: `false`
+- Default: `false`
 - Non accetta un valore
 
 ### `--no-interaction`, `-n`
 
-Non porre domande interattive
+Non fare domande interattive
 
-- Predefinito: `false`
+- Default: `false`
 - Non accetta un valore
 
 
@@ -842,7 +842,7 @@ Crea dump dell’applicazione
 
 ### `config-types`
 
-Elenco separato da spazi dei tipi di configurazione o ometti di scaricare tutto [ambiti, sistema, temi, i18n]
+Elenco separato da spazi dei tipi di configurazione o ometti di eseguire il dump di tutti [ambiti, sistema, temi, i18n]
 
 - Predefinito: `[]`
 
@@ -1865,7 +1865,7 @@ Ambito per la configurazione, se non specificato, verrà utilizzato l’ambito &
 
 ### `--scope-code`
 
-Codice ambito (obbligatorio solo se l’ambito non è `default`)
+Codice ambito (obbligatorio solo se l&#39;ambito non è `default`)
 
 - Predefinito: &quot;
 - Accetta un valore
@@ -2202,9 +2202,9 @@ Modalità di applicazione da impostare. Le opzioni disponibili sono &quot;svilup
 
 ### `--skip-compilation`, `-s`
 
-Ignora la cancellazione e la rigenerazione del contenuto statico (codice generato, CSS preelaborato e risorse in pub/static/)
+Salta la cancellazione e la rigenerazione dei contenuto statici (codice generato, CSS pre-elaborato e risorse in pub/static/)
 
-- Predefinito: `false`
+- Default: `false`
 - Non accetta un valore
 
 ### `--help`, `-h`
@@ -2230,29 +2230,29 @@ Aumenta la gravità dei messaggi: 1 per l’output normale, 2 per l’output pi�
 
 ### `--version`, `-V`
 
-Visualizza questa versione dell&#39;applicazione
+Visualizza questa versione applicazione
 
-- Predefinito: `false`
+- Default: `false`
 - Non accetta un valore
 
 ### `--ansi`
 
-Forza (o disattiva — senza ansi) output ANSI
+Forza (o disabilita --no-ansi) l&#39;uscita ANSI
 
 - Non accetta un valore
 
 ### `--no-ansi`
 
-Ignora l&#39;opzione &quot;—ansi&quot;
+Annulla l&#39;opzione &quot;--ansi&quot;
 
-- Predefinito: `false`
+- Default: `false`
 - Non accetta un valore
 
 ### `--no-interaction`, `-n`
 
-Non porre domande interattive
+Non fare domande interattive
 
-- Predefinito: `false`
+- Default: `false`
 - Non accetta un valore
 
 
@@ -2262,14 +2262,14 @@ Non porre domande interattive
 bin/magento deploy:mode:show
 ```
 
-Visualizza la modalità di applicazione corrente.
+Visualizza la modalità applicazione corrente.
 
 
 ### `--help`, `-h`
 
-Visualizza la Guida per il comando specificato. Se non viene assegnato alcun comando, visualizzare la Guida per il comando list
+Visualizza la guida per il comando specificato. Quando non viene assegnato alcun comando, visualizzare la guida per il comando elenco
 
-- Predefinito: `false`
+- Default: `false`
 - Non accetta un valore
 
 ### `--quiet`, `-q`
@@ -2781,14 +2781,14 @@ Tipo di file di origine: [meno]
 
 ### `--locale`
 
-Lingua: [en_US]
+Impostazioni internazionali: [en_US]
 
 - Predefinito: `en_US`
 - Richiede un valore
 
 ### `--area`
 
-Superficie: [frontend\|adminhtml]
+Area: [frontend\|adminhtml]
 
 - Predefinito: `frontend`
 - Richiede un valore
@@ -4682,7 +4682,7 @@ Nome indicizzatore [catalog_product_price|catalogpermissions_category]
 
 ### `mode`
 
-Indicizzatore modalità dimensione catalog_product_price none,website,customer_group,website_and_customer_group catalogpermissions_category none,customer_group
+Modalità dimensione indicizzatore catalog_product_price          none,website,customer_group,website_and_customer_group catalogpermissions_category    none,gruppo_clienti
 
 
 ### `--help`, `-h`
@@ -4721,9 +4721,9 @@ Forza (o disattiva — senza ansi) output ANSI
 
 ### `--no-ansi`
 
-Ignora l&#39;opzione &quot;—ansi&quot;
+Annulla l&#39;opzione &quot;--ansi&quot;
 
-- Predefinito: `false`
+- Default: `false`
 - Non accetta un valore
 
 ### `--no-interaction`, `-n`
@@ -4746,7 +4746,7 @@ Imposta il tipo di modalità indice
 
 ### `mode`
 
-Tipo di modalità indicizzatore [realtime|pianificazione]
+Tipo di modalità indicizzatore [realtime|schedule]
 
 
 ### `index`
@@ -5827,7 +5827,7 @@ Aggiungi l&#39;indirizzo IP all&#39;elenco esistente
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -5898,7 +5898,7 @@ Indirizzi IP consentiti (utilizza &quot;nessuno&quot; per cancellare l’elenco 
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -5969,7 +5969,7 @@ Indirizzi IP consentiti (utilizza &quot;nessuno&quot; per cancellare l’elenco 
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -6033,7 +6033,7 @@ Visualizza lo stato della modalità di manutenzione
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -6301,7 +6301,7 @@ Cancellare i file di visualizzazione statica generati. Necessario, se i moduli d
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -6395,7 +6395,7 @@ Cancellare i file di visualizzazione statica generati. Necessario, se i moduli d
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -6482,7 +6482,7 @@ Stampa solo moduli disattivati
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -6598,7 +6598,7 @@ Cancellare i file di visualizzazione statica generati. Necessario, se i moduli d
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -7867,7 +7867,7 @@ Esegui backup completo del database
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -8153,14 +8153,14 @@ Host cache http
 
 ### `--db-ssl-key`
 
-Percorso completo del file della chiave client per stabilire la connessione db tramite SSL
+Percorso completo del file chiave client per stabilire la connessione db tramite SSL
 
 - Predefinito: &quot;
 - Richiede un valore
 
 ### `--db-ssl-cert`
 
-Percorso completo del file del certificato client per stabilire la connessione del database tramite SSL
+Percorso completo del file di certificato client per stabilire la connessione db tramite SSL
 
 - Predefinito: &quot;
 - Richiede un valore
@@ -8193,19 +8193,19 @@ Nome host completo, indirizzo IP o percorso assoluto se si utilizzano socket UNI
 
 ### `--session-save-redis-port`
 
-Porta di ascolto del server Redis
+Server Redis in ascolto porta
 
 - Richiede un valore
 
 ### `--session-save-redis-password`
 
-Password del server Redis
+password del server Redis
 
 - Richiede un valore
 
 ### `--session-save-redis-timeout`
 
-Timeout della connessione, in secondi
+Timeout di connessione, in secondi
 
 - Richiede un valore
 
@@ -8223,31 +8223,31 @@ Numero database Redis
 
 ### `--session-save-redis-compression-threshold`
 
-Soglia di compressione Redis
+soglia di compressione Redis
 
 - Richiede un valore
 
 ### `--session-save-redis-compression-lib`
 
-Libreria di compressione Redis. Valori: gzip (predefinito), lzf, lz4, snappy
+La compressione Redis libreria. Valori: gzip (predefinito), lzf, lz4, snappy
 
 - Richiede un valore
 
 ### `--session-save-redis-log-level`
 
-Livello di registro Redis. Valori: da 0 (meno dettagliato) a 7 (più dettagliato)
+Livello di log Redis. Valori: da 0 (minimo dettagliato) a 7 (più dettagliato)
 
 - Richiede un valore
 
 ### `--session-save-redis-max-concurrency`
 
-Numero massimo di processi che possono attendere un blocco in una sessione
+Numero massimo di processi che possono attendere il blocco di una sessione
 
 - Richiede un valore
 
 ### `--session-save-redis-break-after-frontend`
 
-Numero di secondi di attesa prima di interrompere un blocco per la sessione front-end
+Numero di secondi di attesa prima di provare a rompere un blocco per la sessione frontend
 
 - Richiede un valore
 
@@ -8518,7 +8518,7 @@ Prefisso ID per le chiavi
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -8582,7 +8582,7 @@ Installa e aggiorna i dati nel database
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -8843,7 +8843,7 @@ Connessione slave lag max consentita (in secondi)
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -8945,7 +8945,7 @@ Nome risorsa di estrazione
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -9047,7 +9047,7 @@ Nome risorsa di vendita
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -9118,7 +9118,7 @@ Consente di convertire gli script precedenti (InstallSchema, UpgradeSchema) nel 
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -9182,7 +9182,7 @@ Controlla se lo schema o i dati del database devono essere aggiornati
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -9831,13 +9831,13 @@ Percorso in cui verranno salvati i blocchi di file.
 
 ### `--document-root-is-pub`
 
-Flag da mostrare: il pub è nella directory principale; può essere true o false solo
+Flag per mostrare se Pub è sulla radice, può essere solo true o false
 
 - Richiede un valore
 
 ### `--backpressure-logger`
 
-Gestore logger di backpression
+Gestore logger di contropressione
 
 - Richiede un valore
 
@@ -9879,7 +9879,7 @@ Password del server Redis
 
 ### `--backpressure-logger-redis-user`
 
-Utente server Redis
+utente del server Redis
 
 - Richiede un valore
 
@@ -9891,31 +9891,31 @@ Prefisso ID per le chiavi
 
 ### `--base-url`
 
-URL in cui lo store deve essere disponibile. Obsoleto, usa config:set con percorso web/unsecure/base_url
+URL il store dovrebbe essere disponibile all&#39;indirizzo. Deprecated, use config:set with path web/unsecure/base_url
 
 - Richiede un valore
 
 ### `--language`
 
-Codice lingua predefinito. Obsoleto, usa config:set con percorso generale/lingua/codice
+Codice lingua predefinito. Obsoleto, usa config:set con percorso general/locale/code
 
 - Richiede un valore
 
 ### `--timezone`
 
-Codice fuso orario predefinito. Obsoleto, usa config:set con percorso generale/lingua/fuso orario
+Codice fuso orario predefinito. Obsoleto, usa config:set con percorso generale/locale/fuso orario
 
 - Richiede un valore
 
 ### `--currency`
 
-Codice valuta predefinito. Obsoleto, usa config:set con percorso valuta/opzioni/base, valuta/opzioni/predefinito e valuta/opzioni/consenti
+Codice valuta predefinito. Obsoleto, usa config:set con percorso currency/options/base, currency/options/default e currency/options/allow
 
 - Richiede un valore
 
 ### `--use-rewrites`
 
-Utilizza le riscritture. Obsoleto, usa config:set con percorso web/seo/use_rewrites
+Utilizzare le riscritture. Obsoleto, usa config:set con percorso web/seo/use_rewrites
 
 - Richiede un valore
 
@@ -10130,7 +10130,7 @@ L&#39;installazione del Magento viene eseguita in modalità di funzionamento a s
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -10284,7 +10284,7 @@ Nome base del file di backup del database in var/backups
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -10454,7 +10454,7 @@ Non distribuire file JavaScript.
 
 ### `--no-js-bundle`
 
-Non distribuire file bundle JavaScript.
+Non distribuire i file bundle di JavaScript.
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -10629,7 +10629,7 @@ Specifica se utilizzare una funzione di &quot;chiave di sicurezza&quot; negli UR
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -10693,7 +10693,7 @@ Disinstalla l&#39;applicazione di Magento
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -10790,7 +10790,7 @@ L&#39;installazione del Magento viene eseguita in modalità di funzionamento a s
 
 ### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;DIR_IMMAGINE[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -11345,7 +11345,7 @@ Genera vernice VCL e la trasforma nella riga di comando
 
 Elenco di accesso IP in grado di eliminare la vernice
 
-- Predefinito: `localhost`
+- Default: `localhost`
 - Richiede un valore
 
 ### `--backend-host`

@@ -32,9 +32,9 @@ Questo approccio consiste nelle seguenti fasi:
 
 Il modello ibrido ti consente di sfruttare la potenza della metodologia Agile, mantenendo il target per la timeline, i costi e la qualità. L&#39;intero piano è diviso in due fasi distinte, seguite da attività di lancio, ottimizzazione e manutenzione.
 
-- **La giusta idea**- Si tratta di una fase di pre-implementazione per garantire che i requisiti, la progettazione e la soluzione tecnologica siano strategizzati, documentati e collaborati tra le parti interessate. L&#39;arretrato per l&#39;implementazione viene curato e creato, vengono pianificati gli sprint di sviluppo e viene finalizzata una strategia sequenziale per la creazione del prodotto.
+- **Ideazione corretta**: si tratta di una fase di pre-implementazione per garantire che i requisiti, la progettazione e la soluzione tecnologica siano pianificati, documentati e collaborati tra le parti interessate. L&#39;arretrato per l&#39;implementazione viene curato e creato, vengono pianificati gli sprint di sviluppo e viene finalizzata una strategia sequenziale per la creazione del prodotto.
 
-- **Come capire bene il concetto**— Questa è la fase di implementazione per creare il prodotto in modo iterativo, testarlo accuratamente e rilasciarlo in modo appropriato. Il primo passaggio consiste nello sviluppare il codice attraverso più sprint; ogni sprint contiene sviluppo e test in-sprint, seguiti da test di integrazione del sistema, test di prestazioni e sicurezza, test di accettazione da parte dell’utente e attività di rilascio.
+- **Come capire bene l&#39;idea**: questa è la fase di implementazione per creare il prodotto in modo iterativo, testarlo a fondo e rilasciarlo in modo appropriato. Il primo passaggio consiste nello sviluppare il codice attraverso più sprint; ogni sprint contiene sviluppo e test in-sprint, seguiti da test di integrazione del sistema, test di prestazioni e sicurezza, test di accettazione da parte dell’utente e attività di rilascio.
 
 La pianificazione dei progetti è un&#39;attività critica. Guida le parti interessate, i team, gli sponsor e i project manager su come monitorare, gestire e controllare le fasi dei progetti. Consente inoltre di identificare gli obiettivi, evitare scadenze mancanti, assegnare priorità alle attività essenziali, ridurre i rischi e ottenere i risultati desiderati.
 
@@ -43,7 +43,7 @@ Il piano di progetto è in genere suddiviso in quattro fasi:
 - Avvio e pianificazione
 - Esecuzione
 - Launch
-- Post-lancio
+- Post-launch
 
 Ciascuna fase può essere realizzata attraverso più sprint più piccoli, gestendo in tal modo il progresso e i risultati attraverso incrementi più piccoli e con un maggiore grado di agilità. La pianificazione è unica, tuttavia, in quanto di solito fa parte delle altre tre fasi. Abbiamo fornito un raggruppamento dettagliato di ogni fase e un esempio di piano di progetto per una corretta implementazione di Adobe Commerce:
 
@@ -51,4 +51,4 @@ Ciascuna fase può essere realizzata attraverso più sprint più piccoli, gesten
 
 L&#39;approccio che abbiamo definito mostra l&#39;unione di diverse fasi del progetto per una corretta esecuzione. Il Project Management Office (PMO) fornisce una supervisione attenta a vari livelli e garantisce il successo in ogni fase (e sprint) fino alla corretta esecuzione tempestiva con qualità e costi ottimali.
 
-![Infografica dell’approccio di pianificazione di esempio](../../assets/playbooks/planning-approach-sample.svg)
+![Infografica dell&#39;approccio di pianificazione di esempio](../../assets/playbooks/planning-approach-sample.svg)

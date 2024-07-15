@@ -5,7 +5,7 @@ feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '180'
 ht-degree: 1%
 
 ---
@@ -16,19 +16,19 @@ In questo argomento vengono fornite istruzioni per la distribuzione di aggiornam
 
 ## Presupposti
 
-- Hai installato Commerce tramite [Compositore](../../installation/composer.md).
+- Hai installato Commerce utilizzando [Compositore](../../installation/composer.md).
 - Gli aggiornamenti vengono applicati direttamente al server.
 
 >[!WARNING]
 >
->Questa guida non si applica se è stato utilizzato `git clone` per installare Commerce.
->Gli sviluppatori partecipanti devono utilizzare [questa guida][install] per aggiornare l’installazione di Commerce.
+>Questa guida non è applicabile se è stato utilizzato `git clone` per installare Commerce.
+>Gli sviluppatori partecipanti devono utilizzare [questa guida][install] per aggiornare l&#39;installazione di Commerce.
 
 ## Passaggi della distribuzione
 
-1. Accedi al server di produzione come, o passa a [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+1. Accedi al server di produzione come [proprietario del file system](../../installation/prerequisites/file-system/overview.md) o passa a tale proprietario.
 
-1. Cambia la directory nella directory Commerce base:
+1. Cambia directory in directory base Commerce:
 
    ```bash
    cd <Commerce base directory>
@@ -40,20 +40,20 @@ In questo argomento vengono fornite istruzioni per la distribuzione di aggiornam
    bin/magento maintenance:enable
    ```
 
-1. Applica gli aggiornamenti a Commerce o ai suoi componenti utilizzando il seguente pattern di comandi:
+1. Applica aggiornamenti a Commerce o ai suoi componenti utilizzando il seguente pattern di comando:
 
    ```bash
    composer require-commerce <package> <version> --no-update
    ```
 
-   **pacchetto**: nome del pacchetto da aggiornare.
+   **pacchetto**: nome del pacchetto che si desidera aggiornare.
 
    Ad esempio:
 
    - `magento/product-community-edition`
    - `magento/product-enterprise-edition`
 
-   **version**: versione di destinazione del pacchetto da aggiornare.
+   **versione**: la versione di destinazione del pacchetto da aggiornare.
 
 1. Aggiorna componenti con Compositore:
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Questo argomento illustra come impostare le autorizzazioni di lettura-scrittura per il gruppo di server Web prima di installare Adobe Commerce. Ciò è necessario affinché la riga di comando possa scrivere file nel file system.
 
-La procedura utilizzata è diversa, a seconda che si utilizzi o meno [hosting condiviso](#set-permissions-for-one-user-on-shared-hosting) e avere un utente o se si utilizza un [server privato](#set-ownership-and-permissions-for-two-users) e avere due utenti.
+La procedura utilizzata è diversa a seconda che si utilizzi [hosting condiviso](#set-permissions-for-one-user-on-shared-hosting) e si disponga di un utente oppure si utilizzi un [server privato](#set-ownership-and-permissions-for-two-users) e si disponga di due utenti.
 
 ## Impostare le autorizzazioni per un utente su hosting condiviso
 
@@ -24,7 +24,7 @@ Per impostare le autorizzazioni prima di installare l&#39;applicazione:
 1. Accedere al server applicazioni.
 1. Utilizza un’applicazione di gestione file fornita dal provider di hosting condiviso per verificare che le autorizzazioni di scrittura siano impostate sulle seguenti directory:
 
-   * `vendor` (Compositore o installazione di un archivio compresso)
+   * `vendor` (installazione del compositore o dell&#39;archivio compresso)
    * `app/etc`
    * `pub/static`
    * `var`
@@ -49,7 +49,7 @@ Per impostare le autorizzazioni prima di installare l&#39;applicazione:
    chmod u+x bin/magento
    ```
 
-   Per inserire tutti i comandi su una sola riga, inserire quanto segue presupponendo che l&#39;applicazione sia installata in `/var/www/html/magento2`:
+   Per immettere facoltativamente tutti i comandi su una riga, immettere quanto segue presupponendo che l&#39;applicazione sia installata in `/var/www/html/magento2`:
 
    ```bash
    cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} + && chmod u+x bin/magento
@@ -58,9 +58,9 @@ Per impostare le autorizzazioni prima di installare l&#39;applicazione:
 1. Se non lo hai già fatto, ottieni l’applicazione in uno dei seguenti modi:
 
    * [Metapacchetto del compositore](../../composer.md)
-   * [Clonare l’archivio (solo per sviluppatori che contribuiscono)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+   * [Clona l&#39;archivio (solo sviluppatori partecipanti)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
-1. Dopo aver impostato la proprietà e le autorizzazioni del file system, [installare l’applicazione](../../advanced.md)
+1. Dopo aver impostato le autorizzazioni e la proprietà del file system, [installare l&#39;applicazione](../../advanced.md)
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Per impostare le autorizzazioni prima di installare l&#39;applicazione:
 
 ## Impostare la proprietà e le autorizzazioni per due utenti
 
-Questa sezione illustra come impostare la proprietà e le autorizzazioni per il proprio server o una configurazione di hosting privato. In questo tipo di configurazione, in genere *non può* accedi come utente del server web o passa a. In genere si accede come un utente ed il server web viene eseguito come un altro utente.
+Questa sezione illustra come impostare la proprietà e le autorizzazioni per il proprio server o una configurazione di hosting privato. In questo tipo di installazione, in genere *non è possibile* accedere come utente del server Web o passare a tale utente. In genere si accede come un utente ed il server web viene eseguito come un altro utente.
 
 Per impostare la proprietà e le autorizzazioni per un sistema a due utenti:
 
@@ -83,25 +83,25 @@ Completa le seguenti attività nell’ordine indicato:
 
 ### Informazioni sul gruppo condiviso
 
-Per consentire al server Web di scrivere file e directory nel file system, ma anche di mantenere *proprietà* dal proprietario del file system, entrambi gli utenti devono appartenere allo stesso gruppo. Ciò è necessario affinché entrambi gli utenti possano condividere l’accesso ai file (inclusi i file creati utilizzando l’Admin o altre utilità basate sul web).
+Per consentire al server Web di scrivere file e directory nel file system ma anche di mantenere la proprietà *1* del proprietario del file system, entrambi gli utenti devono appartenere allo stesso gruppo. Ciò è necessario affinché entrambi gli utenti possano condividere l’accesso ai file (inclusi i file creati utilizzando l’Admin o altre utilità basate sul web).
 
 Questa sezione illustra come creare un proprietario del file system e inserire tale utente nel gruppo del server web. Se lo si desidera, è possibile utilizzare un account utente esistente. Per motivi di sicurezza, è consigliabile che l&#39;utente disponga di una password sicura.
 
 >[!NOTE]
 >
->Passa a [Trovare il gruppo di utenti del server web](#find-the-web-server-user-group) se prevedi di utilizzare un account utente esistente.
+>Passa a [Trova il gruppo di utenti del server Web](#find-the-web-server-user-group) se intendi utilizzare un account utente esistente.
 
 ### Creare il proprietario del file system e assegnare all&#39;utente una password sicura
 
-Questa sezione illustra come creare il proprietario del file system. (proprietario del file system è un altro termine per *utente della riga di comando*.)
+Questa sezione illustra come creare il proprietario del file system. (il proprietario del file system è un altro termine per l&#39;*utente della riga di comando*.)
 
-Per creare un utente su CentOS o Ubuntu, immetti il comando seguente come utente con `root` privilegi:
+Per creare un utente su CentOS o Ubuntu, immettere il comando seguente come utente con privilegi `root`:
 
 ```bash
 adduser <username>
 ```
 
-Per assegnare una password all&#39;utente, immettere il comando seguente come utente con `root` privilegi:
+Per assegnare all&#39;utente una password, immettere il comando seguente come utente con privilegi `root`:
 
 ```bash
 passwd <username>
@@ -111,9 +111,9 @@ Seguire le istruzioni visualizzate per creare una password per l&#39;utente.
 
 >[!WARNING]
 >
->Se non hai `root` sul server applicazioni, è possibile utilizzare un altro account utente locale. Assicurati che l’utente disponga di una password sicura e continua con [Inserisci il proprietario del file system nel gruppo di server web](#step-3-put-the-file-system-owner-in-the-web-servers-group).
+>Se non si dispone dei privilegi di `root` sul server applicazioni, è possibile utilizzare un altro account utente locale. Assicurarsi che l&#39;utente disponga di una password sicura e continuare con [Inserire il proprietario del file system nel gruppo di server Web](#step-3-put-the-file-system-owner-in-the-web-servers-group).
 
-Ad esempio, per creare un utente denominato `magento_user` e assegna all&#39;utente una password, immetti:
+Ad esempio, per creare un utente denominato `magento_user` e assegnare una password all&#39;utente, immettere:
 
 ```bash
 sudo adduser magento_user
@@ -125,7 +125,7 @@ sudo passwd magento_user
 
 >[!WARNING]
 >
->Poiché lo scopo della creazione di questo utente è quello di fornire maggiore sicurezza, assicurati di creare una [password sicura](https://en.wikipedia.org/wiki/Password_strength).
+>Poiché lo scopo della creazione di questo utente è quello di fornire maggiore protezione, assicurarsi di creare una [password sicura](https://en.wikipedia.org/wiki/Password_strength).
 
 ### Trovare il gruppo di utenti del server web
 
@@ -143,24 +143,24 @@ Per trovare il gruppo dell&#39;utente del server Web:
   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
-In genere, il nome dell’utente e del gruppo è entrambi `apache`.
+In genere, l&#39;utente e il nome del gruppo sono entrambi `apache`.
 
-* Ubuntu: `ps aux | grep apache` per trovare l’utente Apache, `groups <apache user>` per trovare il gruppo.
+* Ubuntu: `ps aux | grep apache` per trovare l&#39;utente Apache, quindi `groups <apache user>` per trovare il gruppo.
 
 In genere, il nome utente e il nome del gruppo sono entrambi `www-data`.
 
 ### Inserisci il proprietario del file system nel gruppo di server web
 
-Per inserire il proprietario del file system nel gruppo principale del server web (supponendo il nome tipico del gruppo Apache per CentOS e Ubuntu), immetti il comando seguente come utente con `root` privilegi:
+Per inserire il proprietario del file system nel gruppo principale del server Web (supponendo il nome tipico del gruppo Apache per CentOS e Ubuntu), immettere il comando seguente come utente con privilegi `root`:
 
 * CentOS: `usermod -a -G apache <username>`
 * Ubuntu: `usermod -a -G www-data <username>`
 
 >[!NOTE]
 >
->Il `-a -G` le opzioni sono importanti perché aggiungono `apache` o `www-data` as a *secondario* per l&#39;account utente, che conserva i *primario* gruppo. L’aggiunta di un gruppo secondario a un account utente facilita [limitare la proprietà e le autorizzazioni dei file](#set-ownership-and-permissions-for-two-users) per garantire che i membri di un gruppo condiviso abbiano accesso solo a determinati file.
+>Le opzioni `-a -G` sono importanti perché aggiungono `apache` o `www-data` come gruppo *secondario* all&#39;account utente, mantenendo il gruppo *primario* dell&#39;utente. L&#39;aggiunta di un gruppo secondario a un account utente consente a [limitare la proprietà e le autorizzazioni dei file](#set-ownership-and-permissions-for-two-users) per garantire che i membri di un gruppo condiviso abbiano accesso solo a determinati file.
 
-Ad esempio, per aggiungere l’utente `magento_user` al `apache` gruppo principale su CentOS:
+Ad esempio, per aggiungere l&#39;utente `magento_user` al gruppo primario `apache` su CentOS:
 
 ```bash
 sudo usermod -a -G apache magento_user
@@ -172,7 +172,7 @@ Per confermare che l&#39;utente è membro del gruppo di server Web, immettere il
 groups magento_user
 ```
 
-Il seguente esempio mostra il principale dell&#39;utente (`magento`) e secondario (`apache`).
+Il seguente esempio mostra i gruppi primario (`magento`) e secondario (`apache`) dell&#39;utente.
 
 ```bash
 magento_user : magento_user apache
@@ -192,7 +192,7 @@ Per completare l&#39;operazione, riavviare il server Web:
 Se non lo hai già fatto, ottieni il software in uno dei seguenti modi:
 
 * [Metapacchetto del compositore](../../composer.md)
-* [Clonare l’archivio (solo per sviluppatori che contribuiscono)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Clona l&#39;archivio (solo sviluppatori partecipanti)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 ### Imposta proprietà e autorizzazioni per il gruppo condiviso
 
@@ -221,13 +221,13 @@ Per impostare la proprietà e le autorizzazioni prima di installare l&#39;applic
    chmod u+x bin/magento
    ```
 
-Per inserire tutti i comandi su una sola riga, inserire quanto segue presupponendo che l&#39;applicazione sia installata in `/var/www/html/magento2` e il nome del gruppo di server web è `apache`:
+Per immettere facoltativamente tutti i comandi su una riga, immettere quanto segue presupponendo che l&#39;applicazione sia installata in `/var/www/html/magento2` e che il nome del gruppo di server Web sia `apache`:
 
 ```bash
 cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
-Nel caso in cui le autorizzazioni del file system non siano impostate correttamente e non possano essere modificate dal proprietario del file system, è possibile immettere il comando come utente con `root` privilegi:
+Nel caso in cui le autorizzazioni del file system non siano impostate correttamente e non possano essere modificate dal proprietario del file system, è possibile immettere il comando come utente con privilegi `root`:
 
 ```bash
 cd /var/www/html/magento2 && sudo find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && sudo find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && sudo chown -R :apache . && sudo chmod u+x bin/magento

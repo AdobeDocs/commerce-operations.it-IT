@@ -4,7 +4,7 @@ description: Rivedi i consigli per pianificare l’aggiornamento di Adobe Commer
 exl-id: f776b000-0085-4b77-860f-623837c3c902
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Un’implementazione di eCommerce è un’evoluzione: non è mai realmente compl
 - Migliore esperienza e strumenti per gli sviluppatori
 - Possibilità di una maggiore integrazione con altre applicazioni Adobe Experience Cloud
 
-Per offrire ai nostri esercenti maggiore flessibilità nella pianificazione degli aggiornamenti, abbiamo recentemente aggiornato Adobe Commerce [pianificazione delle versioni](../../release/schedule.md), ha esteso la data di fine del supporto (EOS) 2.3 e ha annunciato nuove opzioni di supporto esteso per alcune versioni del software. Per ulteriori informazioni su questi aggiornamenti, vedi [Supporto esteso per Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
+Per offrire ai nostri commercianti maggiore flessibilità nella pianificazione degli aggiornamenti, abbiamo recentemente aggiornato la [pianificazione della versione](../../release/schedule.md) di Adobe Commerce, esteso la data di fine del supporto (EOS) di 2.3 e annunciato nuove opzioni di supporto esteso per alcune versioni del software. Per ulteriori informazioni su questi aggiornamenti, vedere [Supporto esteso per Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
 
 Di seguito sono riportati i percorsi di aggiornamento consigliati da Adobe Commerce per mantenere il sito sicuro e performante durante l’aggiornamento a una delle versioni più recenti.
 
@@ -34,4 +34,4 @@ Di seguito sono riportati i percorsi di aggiornamento consigliati da Adobe Comme
 
 ## Aggiornamento da 2.4.4 e 2.4.5
 
-![Percorso di aggiornamento da 2.4.4 a 2.4.5](../../assets/upgrade-guide/2.4.4-and-2.4.5.png)
+![Percorso di aggiornamento da 2.4.4 e 2.4.5](../../assets/upgrade-guide/2.4.4-and-2.4.5.png)

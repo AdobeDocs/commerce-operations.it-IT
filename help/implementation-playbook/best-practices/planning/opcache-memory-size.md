@@ -6,14 +6,14 @@ feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 0%
+source-wordcount: '138'
+ht-degree: 1%
 
 ---
 
 # Procedure consigliate per la dimensione della memoria OPcache in Adobe Commerce
 
-Per Adobe Commerce su infrastruttura cloud Pro plan architecture 2.3.x, si consiglia di impostare `opcache.memory_consumption` ad almeno 2 GB, per evitare il peggioramento delle prestazioni.
+Per Adobe Commerce on Cloud Infrastructure Pro plan Architecture 2.3.x, si consiglia di impostare `opcache.memory_consumption` su almeno 2 GB, per evitare il degrado delle prestazioni.
 
 ## Prodotti e versioni interessati
 
@@ -22,7 +22,7 @@ Per Adobe Commerce su infrastruttura cloud Pro plan architecture 2.3.x, si consi
 
 ## Configurare la memoria
 
-Alloca almeno **2 GB** di memoria per [Modulo PHP OPcache](https://www.php.net/manual/en/book.opcache.php). Il modulo OPcache è configurato in `php.ini` file. Per allocare 2048 MB di memoria, impostare `opcache.memory_consumption = 2048`.
+Allocare almeno **2 GB** di memoria per il modulo PHP [OPcache](https://www.php.net/manual/en/book.opcache.php). Modulo OPcache configurato nel file `php.ini`. Per allocare 2048 MB di memoria, impostare `opcache.memory_consumption = 2048`.
 
 ## Informazioni aggiuntive
 

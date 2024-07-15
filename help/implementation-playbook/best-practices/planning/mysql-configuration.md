@@ -1,15 +1,15 @@
 ---
 title: Best practice di configurazione MySQL
-description: Scopri in che modo i trigger MySQL e le connessioni slave influiscono sulle prestazioni del sito Commerce e come utilizzarli in modo efficace.
+description: Scopri in che modo i trigger MySQL e le connessioni slave influiscono sulle prestazioni del sito Commerce e come utilizzarle in modo efficace.
 role: Developer
 feature: Best Practices
-source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
+exl-id: 7c2f51fd-9333-4954-bd35-79c2de3cb2ff
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
-
 
 # Best practice di configurazione MySQL
 
@@ -40,14 +40,14 @@ Questo sovraccarico aggiuntivo può influire negativamente sulle prestazioni del
 
 >[!WARNING]
 >
->Adobe Commerce non supporta i trigger personalizzati nel database di Adobe Commerce, in quanto possono introdurre incompatibilità con le versioni future di Adobe Commerce. Per le best practice, consulta [Linee guida generali MySQL](../../../installation/prerequisites/database/mysql.md) nella documentazione di Adobe Commerce.
+>Adobe Commerce non supporta i trigger personalizzati nel database di Adobe Commerce, in quanto possono introdurre incompatibilità con le versioni future di Adobe Commerce. Per le best practice, vedere [Linee guida generali per MySQL](../../../installation/prerequisites/database/mysql.md) nella documentazione di Adobe Commerce.
 
 ### Uso efficace
 
 Per evitare problemi di prestazioni quando si utilizzano i trigger, attenersi alle seguenti linee guida:
 
 - Se disponi di trigger personalizzati che scrivono alcuni dati quando il trigger viene eseguito, sposta questa logica per scrivere direttamente nelle tabelle di controllo. Ad esempio, aggiungendo una query aggiuntiva nel codice dell’applicazione, dopo la query per la quale intendi creare il trigger.
-- Rivedi i trigger personalizzati esistenti e prendi in considerazione la loro rimozione e la scrittura diretta nelle tabelle dal lato dell’applicazione. Verifica la presenza di trigger esistenti nel database utilizzando [`SHOW TRIGGERS` Istruzione SQL](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
+- Rivedi i trigger personalizzati esistenti e prendi in considerazione la loro rimozione e la scrittura diretta nelle tabelle dal lato dell’applicazione. Controllare i trigger esistenti nel database utilizzando l&#39;istruzione SQL [`SHOW TRIGGERS`](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
 - Per ulteriore assistenza, domande o dubbi, [invia un ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
 
 ## Connessioni slave
@@ -62,13 +62,13 @@ Adobe Commerce su infrastruttura cloud, solo architettura Pro
 
 ### Configurazione
 
-Nell’infrastruttura cloud di Adobe Commerce on, puoi sovrascrivere la configurazione predefinita per la connessione slave MYSQL impostando il [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) variabile. Imposta questa variabile su `true` per utilizzare automaticamente una connessione di sola lettura al database.
+Nell&#39;infrastruttura cloud di Adobe Commerce è possibile ignorare la configurazione predefinita per la connessione slave MYSQL impostando la variabile [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection). Impostare questa variabile su `true` per utilizzare automaticamente una connessione di sola lettura al database.
 
-**Per attivare la connessione slave MySQL**:
+**Per abilitare la connessione slave MySQL**:
 
 1. Sulla workstation locale, passa alla directory del progetto.
 
-1. In `.magento.env.yaml` file, imposta `MYSQL_USE_SLAVE_CONNECTION` su true.
+1. Nel file `.magento.env.yaml`, impostare `MYSQL_USE_SLAVE_CONNECTION` su true.
 
    ```
    stage:
@@ -76,6 +76,6 @@ Nell’infrastruttura cloud di Adobe Commerce on, puoi sovrascrivere la configur
        MYSQL_USE_SLAVE_CONNECTION: true
    ```
 
-1. Eseguire il commit di `.magento.env.yaml` modifiche ai file e invio all&#39;ambiente remoto.
+1. Eseguire il commit delle modifiche al file `.magento.env.yaml` e inviare il messaggio push all&#39;ambiente remoto.
 
    Al termine della distribuzione, la connessione slave MySQL viene abilitata per l&#39;ambiente cloud.

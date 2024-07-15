@@ -4,7 +4,7 @@ description: Scopri come disabilitare l’output del modulo.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Per impostazione predefinita, tutti i moduli sono configurati in modo che l’output del modulo possa essere scritto in una vista. La disattivazione dell’output offre un modo per disabilitare essenzialmente un modulo che non può essere disabilitato a causa di dipendenze rigide.
 
-Ad esempio, il `Customer` il modulo dipende dal `Review` modulo, in modo che `Review` non può essere disabilitato. Tuttavia, se non desideri che i clienti forniscano le recensioni, puoi disattivare l’output dal `Review` modulo.
+Ad esempio, il modulo `Customer` dipende dal modulo `Review`, pertanto non è possibile disabilitare il modulo `Review`. Tuttavia, se non si desidera che i clienti forniscano recensioni, è possibile disattivare l&#39;output dal modulo `Review`.
 
 >[!INFO]
 >
@@ -32,13 +32,13 @@ La disattivazione dell&#39;output viene eseguita nelle seguenti classi:
 
 Per disabilitare l’output del modulo nella distribuzione della pipeline o in qualsiasi altra distribuzione, con più istanze dell’applicazione Commerce:
 
-1. Modifica il `Backend` del modulo `config.xml` file.
+1. Modificare il file `config.xml` del modulo `Backend`.
 1. Esporta le modifiche di configurazione.
 
-### Modifica il `Backend` modulo `config.xml` file
+### Modifica il file `config.xml` del modulo `Backend`
 
-1. Archivia l&#39;originale `config.xml` file.
-1. Aggiungi righe simili alle seguenti al `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` direttamente sotto il `<default>` elemento:
+1. Archivia il file `config.xml` originale.
+1. Aggiungere righe simili alle seguenti al file `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml`, direttamente sotto l&#39;elemento `<default>`:
 
    ```xml
    <advanced>
@@ -51,8 +51,8 @@ Per disabilitare l’output del modulo nella distribuzione della pipeline o in q
    Qui:
 
    - `<modules_disable_output>` contiene un elenco di moduli.
-   - `<Magento_Newsletter></Magento_Newsletter>` specifica il modulo per il quale disabilitare l&#39;output.
-   - `1` è il flag che disabilita l’output per `Magento_Newsletter` modulo.
+   - `<Magento_Newsletter></Magento_Newsletter>` specifica per quale modulo disabilitare l&#39;output.
+   - `1` è il flag che disabilita l&#39;output per il modulo `Magento_Newsletter`.
 
 Come risultato di questa configurazione, i clienti non possono più registrarsi per ricevere newsletter.
 
@@ -64,7 +64,7 @@ Esegui il comando seguente per esportare le modifiche di configurazione:
 bin/magento app:config:dump
 ```
 
-I risultati vengono scritti nel `<Magento_install_dir>/app/etc/config.php` file.
+I risultati vengono scritti nel file `<Magento_install_dir>/app/etc/config.php`.
 
 Quindi, cancella la cache per abilitare la nuova impostazione:
 
@@ -72,14 +72,14 @@ Quindi, cancella la cache per abilitare la nuova impostazione:
 bin/magento cache:clean config
 ```
 
-Consulta [Esportare la configurazione](../cli/export-configuration.md).
+Vedere [Esportare la configurazione](../cli/export-configuration.md).
 
 ## Disattivare l’output del modulo in una distribuzione semplice
 
 La procedura per disabilitare l’output del modulo su una singola istanza di Commerce è più semplice perché le modifiche non devono essere distribuite.
 
-1. Archivia l&#39;originale `<Magento_install_dir>/app/etc/config.php` file.
-1. Aggiungi il `advanced` e `modules_disable_output` sezioni per `config.php` file (se non esistono):
+1. Archivia il file `<Magento_install_dir>/app/etc/config.php` originale.
+1. Aggiungere le sezioni `advanced` e `modules_disable_output` al file `config.php` (se non esistono):
 
    ```php
    'system' =>
@@ -100,5 +100,5 @@ La procedura per disabilitare l’output del modulo su una singola istanza di Co
      ),
    ```
 
-In questo esempio, l’output per `Magento_Review` Il modulo è stato disattivato e i clienti non possono più esaminare i prodotti.
-Per riattivare l&#39;output, impostare il valore su `0`.
+In questo esempio, l&#39;output per il modulo `Magento_Review` è stato disabilitato e i clienti non possono più esaminare i prodotti.
+Per riabilitare l&#39;output, impostare il valore su `0`.

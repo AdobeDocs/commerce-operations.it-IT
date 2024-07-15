@@ -13,4 +13,4 @@ ht-degree: 0%
 
 Mantenere un sito eCommerce sano è fondamentale per il successo dell’azienda tanto quanto il lancio iniziale, e un aspetto chiave di questo è pianificare e preparare in modo proattivo gli aggiornamenti che aiutano il sito a funzionare nel modo più fluido possibile.
 
-Non impostare le giuste aspettative di aggiornamento in questo periodo porta a insoddisfazione futura. Assicurati di conoscere e comprendere [cadenza di rilascio](https://devdocs.magento.com/release/), e utilizza questa guida per aiutarti a definire come e quando pianificare gli aggiornamenti.
+Non impostare le giuste aspettative di aggiornamento in questo periodo porta a insoddisfazione futura. Assicurati di conoscere e comprendere la cadenza della [versione](https://devdocs.magento.com/release/) e utilizza questa guida per aiutarti a definire come e quando pianificare gli aggiornamenti.

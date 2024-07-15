@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Cache del contenuto statico
 
-Per migliorare le prestazioni, Commerce imposta il `Expires` intestazioni per risorse statiche, come immagini, JavaScript e file CSS.
-Impostazione di `Expires` L’intestazione di una risorsa statica comunica al browser di memorizzare in cache la risorsa in tale URL e di distribuire la versione memorizzata nella cache fino alla scadenza.
-Questo è un comune [best practice](https://developer.yahoo.com/performance/rules.html#expires=) per memorizzare nella cache risorse statiche.
+Per migliorare le prestazioni, Commerce imposta le intestazioni `Expires` per le risorse statiche, ad esempio immagini, JavaScript e file CSS.
+L&#39;impostazione dell&#39;intestazione `Expires` su una risorsa statica indica al browser di memorizzare la risorsa nella cache in corrispondenza di tale URL e di distribuire la versione memorizzata nella cache fino alla scadenza.
+Si tratta di una [best practice](https://developer.yahoo.com/performance/rules.html#expires=) comune per memorizzare nella cache risorse statiche.
 
 Quando il browser memorizza in cache una risorsa statica che cambia sul server, è necessario cancellare la cache del browser in modo che possa scaricare la nuova versione.
 La cancellazione manuale della cache del browser funziona se sei un amministratore del sito web, ma questa non è una richiesta appropriata da effettuare da parte degli utenti quando desideri che scarichino nuove versioni di una risorsa statica.
@@ -22,7 +22,7 @@ La cancellazione manuale della cache del browser funziona se sei un amministrato
 ## Firma del contenuto statico
 
 La firma di contenuti statici è una funzione di Commerce che consente di annullare la validità della cache del browser per le risorse statiche.
-A tal fine, Commerce aggiunge una versione di distribuzione all’URL dei file statici.
+Commerce esegue questa operazione aggiungendo una versione di distribuzione all’URL dei file statici.
 
 Di seguito è riportato un esempio di URL firmato con una versione:
 
@@ -37,8 +37,8 @@ Commerce abilita questa funzione per impostazione predefinita; l’Adobe consigl
 
 La configurazione per la firma del contenuto statico è in [**[!UICONTROL Stores]**> Impostazioni > Configurazione >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
 
-- **Solo on-premise**: questa configurazione è disponibile se il sito è **non** in [Modalità di produzione](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
-- **Cloud**: questa configurazione è nascosta perché la modalità di produzione è rigorosamente applicata; pertanto, devi utilizzare la riga di comando come mostrato di seguito.
+- **Solo locale**: questa configurazione è disponibile se il sito è **non** in [Modalità di produzione](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
+- **Cloud**: questa configurazione è nascosta perché la modalità di produzione è rigorosamente applicata; è quindi necessario utilizzare la riga di comando come illustrato di seguito.
 
 ![Impostazioni file statici](../../assets/configuration/static-files-settings.png)
 
@@ -65,7 +65,7 @@ Quando un browser richiede un’origine firmata dal server, quest’ultimo utili
 
 ## Utilizzo durante le distribuzioni
 
-Dopo aver aggiornato o modificato le risorse statiche, è necessario eseguire il comando `setup:static-content:deploy` per distribuire la versione e aggiornare il contenuto statico, costringendo il browser a caricare le risorse aggiornate.
+Dopo aver aggiornato o modificato le risorse statiche, è necessario eseguire il comando `setup:static-content:deploy` per distribuire la versione e aggiornare il contenuto statico, forzando il browser a caricare le risorse aggiornate.
 
-Se distribuisci il codice su un server separato e lo sposti in produzione utilizzando un archivio del codice per ridurre i tempi di inattività, devi aggiungere anche il file `pub/static/deployed_version.txt` all’archivio.
+Se si distribuisce il codice in un server separato e lo si sposta in produzione utilizzando un repository di codice per ridurre i tempi di inattività, è necessario aggiungere anche il file `pub/static/deployed_version.txt` all&#39;archivio.
 Questo file contiene la nuova versione per il contenuto statico distribuito.

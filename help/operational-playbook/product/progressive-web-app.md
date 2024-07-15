@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Applicazione web progressiva (PWA)
 
-Le applicazioni web progressive (PWA) rappresentano il futuro delle esperienze di acquisto. I PWA sono lo standard di tecnologia web di nuova generazione che offre esperienze di acquisto simili a quelle delle applicazioni su dispositivi mobili e desktop. Utilizzando PWA, i commercianti possono creare i propri PWA ad alte prestazioni sulla piattaforma Commerce, il che è dimostrato aumentare il coinvolgimento degli utenti, aumentare i tassi di conversione e diversificare i flussi di ricavi.
+Le applicazioni web progressive (PWA) rappresentano il futuro delle esperienze di acquisto. I PWA sono lo standard di tecnologia web di nuova generazione che offre esperienze di acquisto simili a quelle delle applicazioni su dispositivi mobili e desktop. Utilizzando PWA, i commercianti possono creare i propri PWA ad alte prestazioni sulla piattaforma Commerce, il che è dimostrato aumentare il coinvolgimento degli utenti, aumentare i tassi di conversione e diversificare i flussi di entrate.
 
 ## Funzioni
 

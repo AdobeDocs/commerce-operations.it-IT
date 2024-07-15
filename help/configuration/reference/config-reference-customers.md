@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Riferimento percorsi di configurazione clienti
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin (Amministrazione) in **Negozi** > Impostazioni > **Configurazione** > **Clienti**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Clienti**.
 
-Il [`magento app:config:dump` comando](../cli/export-configuration.md) scrive questi valori nel file di configurazione condiviso, `app/etc/config.php`, che deve trovarsi nel controllo del codice sorgente. Per ignorare eventuali impostazioni di configurazione o per impostare impostazioni sensibili, vedi [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](override-config-settings.md#environment-variables). Questo argomento fa _non_ list [valori sensibili e specifici del sistema](config-reference-sens.md).
+Il comando [`magento app:config:dump`](../cli/export-configuration.md) scrive questi valori nel file di configurazione condiviso, `app/etc/config.php`, che deve trovarsi nel controllo del codice sorgente. Per ignorare eventuali impostazioni di configurazione o per impostare impostazioni sensibili, vedere [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](override-config-settings.md#environment-variables). Questo argomento _non_ elenca [valori sensibili e specifici del sistema](config-reference-sens.md).
 
 ## Percorsi newsletter
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Clienti** > **Newsletter**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Clienti** > **Newsletter**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -35,7 +35,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi di configurazione del cliente
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Clienti** > **Configurazione cliente**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Clienti** > **Configurazione cliente**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -77,7 +77,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 | Mostra secondo nome (iniziale) | `customer/address/middlename_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostra suffisso | `customer/address/suffix_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Opzioni a discesa suffisso | `customer/address/suffix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Mostra data di nascita | `customer/address/dob_show`<br>In linea con le attuali best practice sulla sicurezza e la privacy, assicurati di essere a conoscenza di eventuali rischi legali e di sicurezza associati alla memorizzazione della data di nascita completa dei clienti (mese, giorno, anno) insieme ad altri identificatori personali, come il nome completo, prima di raccogliere o elaborare tali dati. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Mostra data di nascita | `customer/address/dob_show`<br>In linea con le attuali best practice in materia di sicurezza e privacy, assicurati di essere a conoscenza di eventuali rischi legali e di sicurezza associati alla memorizzazione della data di nascita completa dei clienti (mese, giorno, anno) insieme ad altri identificatori personali, come il nome completo, prima di raccogliere o elaborare tali dati. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostra partita IVA | `customer/address/taxvat_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostra genere | `customer/address/gender_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Abilita funzionalità credito negozio | `customer/magento_customerbalance/is_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
@@ -105,7 +105,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi elenco desideri
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Clienti** > **Lista dei desideri**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Clienti** > **Elenco desideri**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -122,7 +122,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi inviti
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Clienti** > **Inviti**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Clienti** > **Inviti**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -139,7 +139,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi punti premio
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Clienti** > **Punti premio**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Clienti** > **Punti premio**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -173,7 +173,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi delle promozioni
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Clienti** > **Promozioni**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Clienti** > **Promozioni**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -195,7 +195,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi del Registro di sistema per regali
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Clienti** > **Registro Regali**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Clienti** > **Registro regali**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -213,7 +213,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi persistenti del carrello
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Clienti** > **Carrello acquisti persistente**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Clienti** > **Carrello acquisti persistente**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|

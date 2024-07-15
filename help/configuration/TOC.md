@@ -30,10 +30,10 @@ ht-degree: 0%
    + [Autorizzazioni di accesso ai file system](deployment/file-system-permissions.md)
    + Esempi {#examples}
       + [Utilizzo di una configurazione condivisa](deployment/example-shared-configuration.md)
-      + [Utilizzo dei comandi CLI](deployment/example-using-cli.md)
-      + [Utilizzo delle variabili di ambiente](deployment/example-environment-variables.md)
+      + [Uso dei comandi CLI](deployment/example-using-cli.md)
+      + [Uso delle variabili d&#39;ambiente](deployment/example-environment-variables.md)
 + Cache {#cache}
-   + [Panoramica sulla memorizzazione in cache](cache/caching-overview.md)
+   + [Panoramica sulla memorizzazione nella cache](cache/caching-overview.md)
    + [Tipi di cache](cache/cache-types.md)
    + [Opzioni cache](cache/cache-options.md)
    + [Cache L2](cache/level-two-cache.md)
@@ -41,23 +41,23 @@ ht-degree: 0%
       + [Configurare Redis](cache/config-redis.md)
       + [Usa Redis per la cache predefinita](cache/redis-pg-cache.md)
       + [Usa Redis per l’archiviazione della sessione](cache/redis-session.md)
-   + Vernice {#varnish}
+   + Smalto {#varnish}
       + [Panoramica sulla vernice](cache/config-varnish.md)
       + [Installa vernice](cache/config-varnish-install.md)
    + [Server web](cache/config-varnish-server.md)
    + [Configurare l’applicazione Commerce](cache/configure-varnish-commerce.md)
-   + [Configurazione vernice avanzata](cache/config-varnish-advanced.md)
-   + [Cancellazione della cache](cache/use-varnish-cache.md)
-   + [Cancellazione della cache di più istanze di vernice](cache/use-multiple-varnish-cache.md)
+   + [Configurazione Avanzate Varnish](cache/config-varnish-advanced.md)
+   + [Eliminazione cache](cache/use-varnish-cache.md)
+   + [Cancellazione cache di più istanze di Varnish](cache/use-multiple-varnish-cache.md)
    + [Verifica configurazione vernice](cache/config-varnish-final.md)
-   + [Blocco ESI vernice](cache/use-varnish-esi.md)
+   + [Blocco di vernice ESI](cache/use-varnish-esi.md)
    + [Cache del contenuto statico](cache/static-content-signing.md)
 + Riga di comando {#cli}
    + [Strumento da riga di comando](cli/config-cli.md)
    + [Comandi comuni](cli/common-cli-commands.md)
    + [Abilita registrazione](cli/enable-logging.md)
    + [Gestire la cache](cli/manage-cache.md)
-   + [Gestisci indicizzatori](cli/manage-indexers.md)
+   + [Gestire gli indicizzatori](cli/manage-indexers.md)
    + [Configurare i processi cron](cli/configure-cron-jobs.md)
    + [Compila codice](cli/code-compiler.md)
    + [Modalità operativa](cli/set-mode.md)
@@ -66,7 +66,7 @@ ht-degree: 0%
    + [Rapporti sulle dipendenze](cli/dependency-reports.md)
    + [Localizzazione](cli/localization.md)
    + Gestione della configurazione {#configuration-management}
-      + [Imposta valori](cli/set-configuration-values.md)
+      + [Impostare valori](cli/set-configuration-values.md)
       + [Impostazioni di esportazione](cli/export-configuration.md)
       + [Importare dati](cli/import-configuration.md)
    + Vista statica {#static-view}
@@ -90,44 +90,44 @@ ht-degree: 0%
    + [Generale](reference/config-reference-general.md)
    + [Estensione B2B](reference/config-reference-b2b.md)
    + [Catalogo](reference/config-reference-catalog.md)
-   + [Clienti](reference/config-reference-customers.md)
+   + [Clientela](reference/config-reference-customers.md)
    + [Metodi di pagamento](reference/config-reference-payment.md)
    + [Vendite](reference/config-reference-sales.md)
    + [Servizi](reference/config-reference-services.md)
    + [Impostazioni sensibili e specifiche del sistema](reference/config-reference-sens.md)
-   + [Ignora impostazioni di configurazione](reference/override-config-settings.md)
-+ Processi Cron {#crons}
-   + [Processi e gruppi di controllo](cron/custom-cron.md)
-   + [Personalizzazione del riferimento crons](cron/custom-cron-reference.md)
-   + [Configurare un processo cron personalizzato](cron/custom-cron-tutorial.md)
+   + [Sostituisci impostazioni di configurazione](reference/override-config-settings.md)
++ Cron Jobs {#crons}
+   + [Cron job e gruppi](cron/custom-cron.md)
+   + [Riferimento alla personalizzazione dei cron](cron/custom-cron-reference.md)
+   + [Configura un cron job personalizzato](cron/custom-cron-tutorial.md)
 + Registri {#logs}
    + [Registri personalizzati](logs/custom-logging.md)
    + [Interfaccia logger](logs/logger-interface.md)
    + [Registra attività database](logs/database-activity.md)
    + [Scrivi in un file di registro personalizzato](logs/custom-log-files.md)
 + Code messaggi {#message-queues}
-   + [Framework coda messaggi](queues/message-queue-framework.md)
-   + [Gestire le code dei messaggi](queues/manage-message-queues.md)
-   + [Configurare Amazon MQ](queues/aws-mq.md)
+   + [Invia messaggio coda quadro](queues/message-queue-framework.md)
+   + [Gestire le code di messaggi](queues/manage-message-queues.md)
+   + [Impostare Amazon MQ](queues/aws-mq.md)
    + [Consumatori](queues/consumers.md)
 + Più siti {#multi-sites}
    + [Più siti e visualizzazioni](multi-sites/ms-overview.md)
    + [ID incremento entità database](multi-sites/change-increment-id.md)
-   + [Configurare in Admin](multi-sites/ms-admin.md)
-   + [Configurazione con Nginx](multi-sites/ms-nginx.md)
+   + [Configura nell&#39;ambiente Amministratore](multi-sites/ms-admin.md)
+   + [Configura con Nginx](multi-sites/ms-nginx.md)
    + [Configurazione con Apache](multi-sites/ms-apache.md)
 + Motore di ricerca {#search}
    + [Panoramica dei motori di ricerca](search/overview-search.md)
    + [Configurare il motore di ricerca](search/configure-search-engine.md)
    + [Filtra con parole d&#39;arresto](search/search-stopwords.md)
-+ Sicurezza {#security}
++ Protezione {#security}
    + [Panoramica sulla sicurezza](security/overview.md)
    + [Hashing password](security/password-hashing.md)
-   + [Avvelenamento della cache](security/cache-poisoning.md)
-   + [Cron PHP sicuro](security/secure-cron-php.md)
+   + [Avvelenamento da cache](security/cache-poisoning.md)
+   + [Secure cron PHP](security/secure-cron-php.md)
    + [TXT di sicurezza](security/security-txt.md)
-   + [Prese clic su Exploits](security/xframe-options.md)
-+ Storage {#storage}
+   + [Exploit di click jacking](security/xframe-options.md)
++ Immagazzinamento {#storage}
    + [Database profiler](storage/db-profiler.md)
    + Archiviazione remota {#remote-storage}
       + [Modulo di archiviazione remota](remote-storage/remote-storage.md)

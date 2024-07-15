@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: c4912f02-0411-466f-8c77-d610de9eb35d
+exl-id: f76a8906-af31-4a61-be68-f5dad87161e2
 feature: Install, Security
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ I concetti seguenti non sono in alcun ordine particolare. Hanno lo scopo di forn
 
 ## File system di sola lettura
 
-Il concetto di file system di sola lettura è stato preso in prestito da [Adobe Commerce sull’infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Questo rimuove completamente un&#39;area importante utilizzata da un attore cattivo. Molti exploit hanno approfittato dell’alterazione di un file che dovrebbe trovarsi nell’applicazione Commerce per evitare il rilevamento. Invece di crearne uno, l’attore danneggiato modifica il contenuto di un file esistente per eseguire un’azione imprevista. Rendendo il file system di sola lettura si riduce notevolmente questo vettore di attacco.
+Concetto di file system di sola lettura preso in prestito da [Adobe Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Questo rimuove completamente un&#39;area importante utilizzata da un attore cattivo. Molti exploit hanno approfittato della modifica di un file che dovrebbe trovarsi nell&#39;applicazione Commerce per evitare il rilevamento. Invece di crearne uno, l’attore danneggiato modifica il contenuto di un file esistente per eseguire un’azione imprevista. Rendendo il file system di sola lettura si riduce notevolmente questo vettore di attacco.
 
 ## Utilizzare l&#39;autenticazione a DUE fattori e i gestori di password
 
@@ -36,11 +36,11 @@ Le scansioni malware si trovano in genere da un provider di hosting che tenta di
 
 ## Strumento di analisi a livello di sito per Commerce
 
-Il [Strumento di analisi a livello di sito](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} è uno strumento self-service proattivo e un archivio centrale che include informazioni dettagliate sul sistema e raccomandazioni per garantire la sicurezza e l’operabilità dell’installazione di Adobe Commerce. Fornisce monitoraggio delle prestazioni in tempo reale, report e consigli 24 ore su 24, 7 giorni su 7 per identificare potenziali problemi e migliorare la visibilità delle configurazioni di salute, sicurezza e applicazioni del sito. Consente di ridurre i tempi di risoluzione e di migliorare la stabilità e le prestazioni del sito.
+[Site-Wide Analysis Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} è uno strumento proattivo self-service e un archivio centrale che include informazioni dettagliate sul sistema e raccomandazioni per garantire la sicurezza e l&#39;operabilità dell&#39;installazione di Adobe Commerce. Fornisce monitoraggio delle prestazioni in tempo reale, report e consigli 24 ore su 24, 7 giorni su 7 per identificare potenziali problemi e migliorare la visibilità delle configurazioni di salute, sicurezza e applicazioni del sito. Consente di ridurre i tempi di risoluzione e di migliorare la stabilità e le prestazioni del sito.
 
 ## Abilita e verifica le impostazioni per la registrazione delle azioni amministratore
 
-Puoi accedere a questa pagina dopo aver effettuato l’accesso all’amministrazione di Adobe Commerce e aver selezionato Archivi > Configurazione > Avanzate > Amministratore > Registrazione azioni amministratore. Fornisce un elenco di eventi che vengono monitorati e registrati. È utile quando si eseguono analisi forensi su un sito sfruttato, se il sospetto è che abbiano ottenuto l’accesso all’amministratore di Commerce. Questa registrazione e questo rapporto possono essere utili per vedere quali eventi ha eseguito l’attore errato. Se la registrazione di eventuali azioni dell’amministratore è disabilitata, ciò indica che qualcuno potrebbe averla disabilitata per la copertura, rimuovi la registrazione quando esegui determinate azioni.
+Puoi accedere a questa pagina dopo aver effettuato l’accesso all’amministrazione di Adobe Commerce e aver selezionato Archivi > Configurazione > Avanzate > Amministratore > Registrazione azioni amministratore. Fornisce un elenco di eventi che vengono monitorati e registrati. È utile quando si fanno analisi forensi su un sito sfruttato, se il sospetto è che abbiano ottenuto l&#39;accesso all&#39;amministratore di Commerce. Questa registrazione e questo rapporto possono essere utili per vedere quali eventi ha eseguito l’attore errato. Se la registrazione di eventuali azioni dell’amministratore è disabilitata, ciò indica che qualcuno potrebbe averla disabilitata per la copertura, rimuovi la registrazione quando esegui determinate azioni.
 
 ## Bastion Server per accesso ssh
 
@@ -58,7 +58,8 @@ Per rilevare la creazione di utenti amministratori indesiderati o non autorizzat
 
 Limita l’accesso ai dati di produzione. Questi team devono avere la capacità di estrarre i database di produzione e ripulirli dai dati reali. Se è possibile rimuovere i dati, troncare le tabelle appropriate, ad esempio ordini, preventivi e clienti. Tuttavia, a volte può essere utile il set completo di dati, ma i valori possono essere resi anonimi. In genere, ciò si verifica in un ambiente di staging. È utile anche prima degli aggiornamenti. Grazie alla disponibilità del volume reale di dati, ma con anonimizzazione, è possibile testare e convalidare il tempo necessario per eseguire correttamente una distribuzione per l’aggiornamento. Se si dispone di un set limitato di dati, è possibile sottostimare il processo di aggiornamento e la tempistica.
 
-+++Esempio di casualizzazione delle informazioni sul cliente Ecco un esempio per cambiare l’indirizzo e-mail del cliente con una stringa casuale e tutti i campi nome e cognome in alcune tabelle standard in cui Adobe Commerce memorizza i dati. **Ricorda di controllare la presenza di dati sensibili in tutte le tabelle; questo elenco non include tutte le tabelle che possono memorizzare i dati dei clienti**
++++Esempio di casualizzazione delle informazioni sui clienti
+Di seguito è riportato un esempio di come modificare l’indirizzo e-mail del cliente con una stringa casuale e tutti i campi nome e cognome in alcune tabelle standard in cui Adobe Commerce memorizza i dati. **Ricorda di verificare la presenza di dati sensibili in tutte le tabelle. L&#39;elenco non include tutte le tabelle che possono memorizzare i dati dei clienti**
 
 ```SQL
 SET FOREIGN_KEY_CHECKS=0;
@@ -104,7 +105,8 @@ SET FOREIGN_KEY_CHECKS=1;
 
 +++
 
-+++Rimuovi completamente le informazioni di esempio Di seguito è riportato un esempio per la rimozione di tutti gli ordini, preventivi, note di credito e altro ancora prima del lancio o per un ambiente di sviluppo inferiore.
++++Rimozione completa delle informazioni di esempio
+Di seguito è riportato un esempio per rimuovere tutti gli ordini, i preventivi, le note di credito e altro prima del lancio o per un ambiente di sviluppo inferiore
 
 ```SQL
 DELETE FROM `gift_message`;
@@ -210,11 +212,11 @@ ALTER TABLE sequence_shipment_7 AUTO_INCREMENT=1;
 
 ## Utilizzare le variabili di ambiente
 
-[!BADGE Adobe Commerce solo su cloud]{type=Informative}
+[!BADGE Adobe Commerce solo sul cloud]{type=Informative}
 
 L’utilizzo delle variabili di ambiente consente di impostare alcuni valori che possono e devono essere modificati per ogni ambiente. Ad esempio, potrebbe essere utile disporre di un URL amministratore diverso per ogni ambiente. Impostando questo valore come variabile di ambiente, puoi configurarlo e, se necessario, anche fare riferimento rapidamente a tale valore dall’interfaccia utente di Cloud.
 
-Per ulteriori informazioni su questo argomento, consulta l’Experience League [Variabili di ambiente di Commerce su infrastruttura Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
+Puoi trovare ulteriori informazioni su questo argomento nell&#39;Experience League [Commerce sulle variabili di ambiente dell&#39;infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
 
 ## Strumenti di scansione delle vulnerabilità software
 
@@ -232,6 +234,6 @@ Il WAF esamina il traffico web e di amministrazione per identificare eventuali a
 
 In quanto servizio basato su cloud, WAF non richiede hardware o software per l&#39;installazione o la manutenzione. Fastly, un partner tecnologico esistente, fornisce il software e le competenze necessarie. Le loro prestazioni elevate, WAF sempre attivo, risiedono in ogni nodo di cache all’interno della rete di distribuzione globale di Fastly.
 
-Per ulteriori informazioni sulla WAF in Adobe Commerce on cloud fornite da Fastly, consulta la sezione [Domande frequenti sulla Knowledge Base di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}.
+Per ulteriori informazioni sul WAF in Adobe Commerce on cloud fornito da Fastly, leggere le [Domande frequenti sulla Knowledge Base di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}.
 
 {{$include /help/_includes/hosting-related-links.md}}

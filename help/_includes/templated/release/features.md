@@ -1,7 +1,7 @@
 ---
 source-git-commit: d1af1ffe584b18cbc6c664cab31283c13f36c25e
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '180'
 ht-degree: 8%
 
 ---
@@ -14,11 +14,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
   <tbody>
     <tr style="background:lightgray;">
       <th style="border-style:none;">Ottimizzazione di conversione e vendite</th>
-      <th style="border-style:none;">2.0</th>
-      <th style="border-style:none;">2.1</th>
-      <th style="border-style:none;">2.2</th>
-      <th style="border-style:none;">2.3</th>
-      <th style="border-style:none;">2.4</th>
+      <th style="border-style:none;">2,0</th>
+      <th style="border-style:none;">2,1</th>
+      <th style="border-style:none;">2,2</th>
+      <th style="border-style:none;">2,3</th>
+      <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
       <td>Live Search basato su Adobe Sensei (B2C e B2B)</td>
@@ -61,7 +61,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>PWA Studi</td>
+      <td>PWA Studio</td>
       <td></td>
       <td></td>
       <td></td>
@@ -104,11 +104,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
   <tbody>
     <tr style="background:lightgray;">
       <th style="border-style:none;">Operazioni più veloci e intelligenti</th>
-      <th style="border-style:none;">2.0</th>
-      <th style="border-style:none;">2.1</th>
-      <th style="border-style:none;">2.2</th>
-      <th style="border-style:none;">2.3</th>
-      <th style="border-style:none;">2.4</th>
+      <th style="border-style:none;">2,0</th>
+      <th style="border-style:none;">2,1</th>
+      <th style="border-style:none;">2,2</th>
+      <th style="border-style:none;">2,3</th>
+      <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
       <td>Servizi di pagamento</td>
@@ -159,7 +159,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Inventory management multi-sorgente</td>
+      <td>Inventory management multi-Source</td>
       <td></td>
       <td></td>
       <td></td>
@@ -194,11 +194,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
   <tbody>
     <tr style="background:lightgray;">
       <th style="border-style:none;">Miglioramenti a livello di piattaforma, prestazioni e sicurezza</th>
-      <th style="border-style:none;">2.0</th>
-      <th style="border-style:none;">2.1</th>
-      <th style="border-style:none;">2.2</th>
-      <th style="border-style:none;">2.3</th>
-      <th style="border-style:none;">2.4</th>
+      <th style="border-style:none;">2,0</th>
+      <th style="border-style:none;">2,1</th>
+      <th style="border-style:none;">2,2</th>
+      <th style="border-style:none;">2,3</th>
+      <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
       <td>Strumento di analisi a livello di sito</td>

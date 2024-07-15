@@ -4,7 +4,7 @@ description: Applica framework noti per gestire il tuo progetto di e-commerce.
 exl-id: 514e2317-f409-4079-bdee-1596f6635467
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ La gestione dei progetti è l&#39;applicazione di conoscenze, abilità, strument
 
 Il diagramma seguente descrive le cinque fasi della gestione del progetto e il relativo ciclo di vita:
 
-![Diagramma del ciclo di vita della gestione dei progetti](../../assets/playbooks/project-management-lifecycle.png)
+![Diagramma del ciclo di vita della gestione del progetto](../../assets/playbooks/project-management-lifecycle.png)
 
 Il ciclo di vita della gestione del progetto fornisce un processo di consegna tempestivo e controllato che va a vantaggio di;; soggetti interessati al progetto. Il primo passo per realizzare un progetto di e-commerce di successo è la gestione dei progetti. L’approccio e la metodologia corretti sono necessari per consentire al team di realizzare il progetto in modo efficace ed efficiente.
 
@@ -36,17 +36,17 @@ Scrum aiuta a gestire le modifiche durante il progetto, consente ai team di most
 
 Un piano di base per la gestione dei progetti di e-commerce include:
 
-- **Analisi**- Nella fase iniziale di un progetto, l&#39;azienda deve condurre analisi, incluse analisi di mercato e di concorrenza, per comprendere i punti di forza e di debolezza dell&#39;organizzazione.
+- **Analisi** - Nella fase iniziale di un progetto, l&#39;azienda deve condurre analisi, incluse analisi di mercato e di mercato per comprendere i punti di forza e di debolezza dell&#39;organizzazione.
 
-- **Requisiti**— Definire i requisiti dettagliati di ciò che l&#39;organizzazione desidera alla fine del progetto in termini di miglioramento delle competenze esistenti e/o implementazione di nuove funzioni e/o integrazioni.
+- **Requisiti**: definisci i requisiti dettagliati di ciò che l&#39;organizzazione desidera alla fine del progetto in termini di miglioramento delle competenze esistenti e/o implementazione di nuove funzioni e/o integrazioni.
 
-- **Provider di terze parti**—In questa fase, mappa le integrazioni di terze parti richieste (ad esempio, pagamento, spedizione, valutazioni e recensioni).
+- **Provider di terze parti**—In questa fase, mappare le integrazioni di terze parti richieste (ad esempio, pagamento, spedizione, valutazioni e revisioni).
 
-- **Progettazione**— Requisiti di progettazione specifici per i modelli e il manuale del marchio aziendale.
+- **Progettazione**: brainstorm requisiti specifici per la progettazione dei modelli e del registro dei marchi aziendali.
 
-- **Migrazione**- Pianifica i passaggi per la migrazione di contenuti e dati.
+- **Migrazione** - Pianifica i passaggi per la migrazione di contenuti e dati.
 
-- **Piattaforma e-commerce**: analisi e finalizzazione della piattaforma necessaria per soddisfare i requisiti aziendali.
+- **Piattaforma e-commerce** - Analizza e finalizza la piattaforma necessaria affinché l&#39;azienda soddisfi i requisiti.
 
 ## Best practice
 

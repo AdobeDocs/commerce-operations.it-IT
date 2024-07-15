@@ -4,7 +4,7 @@ user-guide-description: Scopri la conformit√† alle normative e le responsabilit√
 feature: Security
 source-git-commit: 28b94fe2fd4f976ad48fa9c59e7e1559db8ba35e
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '53'
 ht-degree: 1%
 
 ---

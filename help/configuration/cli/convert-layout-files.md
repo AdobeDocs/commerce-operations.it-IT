@@ -4,7 +4,7 @@ description: Converte i file di layout XML.
 exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '82'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,6 @@ bin/magento dev:xml:convert [-o|--overwrite] {xml file} {xslt stylesheet}
 
 Dove:
 
-- `{xml file}`- è il percorso completo e il nome di un file XML di layout da convertire (obbligatorio)
-- `{xslt stylesheet}`- è il percorso completo e il nome di un file del foglio di stile XSLT da utilizzare per la conversione (obbligatorio)
-- `-o|--overwrite`- Includi questa opzione per sovrascrivere il file XML esistente
+- `{xml file}`: percorso completo e nome di file di un file XML di layout da convertire (obbligatorio)
+- `{xslt stylesheet}`—è il percorso completo e il nome di un file del foglio di stile XSLT da utilizzare per la conversione (obbligatorio)
+- `-o|--overwrite`: includere questa opzione per sovrascrivere il file XML esistente

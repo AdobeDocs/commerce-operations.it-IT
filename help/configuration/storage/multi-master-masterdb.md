@@ -18,17 +18,17 @@ ht-degree: 1%
 
 In questo argomento viene illustrato come iniziare a utilizzare la soluzione di database suddiviso:
 
-1. Installazione di Adobe Commerce con un singolo database principale (denominato `magento`)
+1. Installazione di Adobe Commerce con un singolo database master (denominato `magento`)
 1. Creazione di due database master aggiuntivi per l&#39;estrazione e OMS (denominati `magento_quote` e `magento_sales`)
 1. Configurazione di Adobe Commerce per l&#39;utilizzo dei database di pagamento e di vendita
 
 >[!INFO]
 >
->Questa guida presuppone che tutti e tre i database si trovino sullo stesso host dell’applicazione Commerce e che siano denominati `magento`, `magento_quote`, e `magento_sales`. Tuttavia, spetta a te scegliere dove individuare i database e il nome. Ci auguriamo che i nostri esempi rendano le istruzioni più facili da seguire.
+>Questa guida presuppone che tutti e tre i database si trovino sullo stesso host dell&#39;applicazione Commerce e che siano denominati `magento`, `magento_quote` e `magento_sales`. Tuttavia, spetta a te scegliere dove individuare i database e il nome. Ci auguriamo che i nostri esempi rendano le istruzioni più facili da seguire.
 
 ## Installare il software Adobe Commerce
 
-È possibile abilitare i database suddivisi in qualsiasi momento dopo l&#39;installazione del software Adobe Commerce; in altre parole, è possibile aggiungere database suddivisi a un sistema Adobe Commerce che dispone già di dati di estrazione e ordine. Utilizzare le istruzioni contenute nel file README di Adobe Commerce o [guida all’installazione](../../installation/overview.md) per installare il software Adobe Commerce utilizzando un singolo database principale.
+È possibile abilitare i database suddivisi in qualsiasi momento dopo l&#39;installazione del software Adobe Commerce; in altre parole, è possibile aggiungere database suddivisi a un sistema Adobe Commerce che dispone già di dati di estrazione e ordine. Per installare il software Adobe Commerce utilizzando un singolo database master, utilizzare le istruzioni contenute nel file README di Adobe Commerce o nella [guida all&#39;installazione](../../installation/overview.md).
 
 ## Imposta database master aggiuntivi
 
@@ -41,7 +41,7 @@ Creare i database master di estrazione e OMS nel modo seguente:
    mysql -u root -p
    ```
 
-1. Immettere MySQL `root` password dell&#39;utente quando richiesto.
+1. Immettere la password dell&#39;utente MySQL `root` quando richiesto.
 1. Immettere i seguenti comandi nell&#39;ordine indicato per creare istanze di database denominate `magento_quote` e `magento_sales` con gli stessi nomi utente e password:
 
    ```shell
@@ -60,7 +60,7 @@ Creare i database master di estrazione e OMS nel modo seguente:
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. Invio `exit` per uscire dal prompt dei comandi.
+1. Immettere `exit` per uscire dal prompt dei comandi.
 
 1. Verificare i database, uno alla volta:
 
@@ -86,13 +86,13 @@ Creare i database master di estrazione e OMS nel modo seguente:
 
    Se viene visualizzato il monitoraggio MySQL, il database è stato creato correttamente. Se viene visualizzato un errore, ripetere i comandi precedenti.
 
-## Configurare Commerce per l’utilizzo dei database master
+## Configurare Commerce per l&#39;utilizzo dei database master
 
 Dopo aver impostato un totale di tre database master, utilizzare la riga di comando per configurare Commerce per l&#39;utilizzo. Il comando consente di impostare le connessioni al database e di distribuire le tabelle tra i database master.
 
 ### Primi passaggi
 
-Consulta [Esecuzione dei comandi](../cli/config-cli.md#running-commands) per accedere ed eseguire i comandi CLI.
+Vedere [Esecuzione dei comandi](../cli/config-cli.md#running-commands) per accedere ed eseguire i comandi CLI.
 
 ### Configurare il database di estrazione
 

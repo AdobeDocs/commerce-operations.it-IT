@@ -1,6 +1,6 @@
 ---
 title: Conclusione
-description: Rivedi i concetti dalla guida Distribuisci esperienze Commerce su scala.
+description: Rivedi i concetti della guida Distribuisci esperienze Commerce su scala.
 exl-id: a5d5c398-451f-4283-b787-d16c7486e824
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt

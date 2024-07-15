@@ -25,7 +25,7 @@ Di norma, consigliamo di eseguire test A/B due volte all’anno sulle versioni p
 
 ## Test di distribuzione
 
-![Icona dei test di distribuzione](../../assets/playbooks/deployment-testing.png)
+![Icona Test di distribuzione](../../assets/playbooks/deployment-testing.png)
 
 L’obiettivo del test di distribuzione è verificare che tutte le build, le modifiche, la progettazione e il caricamento funzionino come previsto nel sito di produzione. I test di distribuzione sono importanti perché rappresentano il controllo finale prima dell’avvio del sito e prima che i clienti visualizzino il sito e le funzionalità.
 

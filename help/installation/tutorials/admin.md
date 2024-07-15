@@ -28,7 +28,7 @@ Utilizzare questo comando per creare un amministratore o per modificare un ammin
 
 >[!NOTE]
 >
->Se stai modificando un amministratore, solo il `first name`, `last name`, e `password` possono essere modificati.
+>Se si modifica un amministratore, è possibile modificare solo `first name`, `last name` e `password`.
 
 Utilizzo comando:
 
@@ -44,7 +44,7 @@ Dove la tabella seguente definisce parametri e valori:
 | `--admin-lastname` | Cognome dell&#39;utente amministratore. | Sì |
 | `--admin-email` | Indirizzo di posta elettronica dell&#39;utente amministratore. | Sì |
 | `--admin-user` | Nome utente amministratore. | Sì |
-| `--admin-password` | Password utente amministratore. La password deve contenere almeno 7 caratteri e includere almeno un carattere alfabetico e almeno un carattere numerico. <br><br>Consigliamo una password più lunga e complessa. Se la stringa della password contiene caratteri speciali che richiedono un&#39;interpretazione letterale, ad esempio barre rovesciate o spazi, racchiudere la password tra virgolette singole. | Sì |
+| `--admin-password` | Password utente amministratore. La password deve contenere almeno 7 caratteri e includere almeno un carattere alfabetico e almeno un carattere numerico. <br><br>È consigliabile impostare una password più lunga e complessa. Se la stringa della password contiene caratteri speciali che richiedono un&#39;interpretazione letterale, ad esempio barre rovesciate o spazi, racchiudere la password tra virgolette singole. | Sì |
 | `--magento-init-params` | Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione dell&#39;applicazione<br/><br/>Ad esempio: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | No |
 
 Esempio di utilizzo:
@@ -75,7 +75,7 @@ Admin last name: Doe Young
 Created Magento administrator user named John
 ```
 
-L’esempio seguente aggiorna `first name`, `last name`, e `password` di `j.doe` utente amministratore:
+Il seguente esempio aggiorna `first name`, `last name` e `password` di `j.doe` utente amministratore:
 
 ```bash
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
@@ -109,7 +109,7 @@ Se l’account non è sbloccato o si è verificato un problema, viene visualizza
 The user account "admin" was not locked or could not be unlocked
 ```
 
-Verificare che l&#39;utente sia un amministratore, che sia attivo e che l&#39;account sia bloccato. Per visualizzare l’elenco degli utenti bloccati nell’amministratore, accedi come amministratore e fai clic su **Sistema** > **Autorizzazioni** > **Utenti bloccati**.
+Verificare che l&#39;utente sia un amministratore, che sia attivo e che l&#39;account sia bloccato. Per visualizzare l&#39;elenco degli utenti bloccati nell&#39;amministratore, accedere come amministratore e fare clic su **Sistema** > **Autorizzazioni** > **Utenti bloccati**.
 
 Se l’account non esiste, viene visualizzato il seguente messaggio:
 

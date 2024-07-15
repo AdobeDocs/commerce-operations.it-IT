@@ -5,35 +5,35 @@ feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
 
 # Riferimento ai percorsi di configurazione dell’estensione B2B
 
-_Questa funzione è disponibile per le istanze in cui è installato B2B per Adobe Commerce._
+_Disponibile per le istanze con B2B per Adobe Commerce installato._
 
-In questo argomento sono elencati i percorsi di configurazione per l’estensione Commerce Enterprise B2B. Il [`magento app:config:dump` comando](../cli/export-configuration.md) scrive questi valori nel file di configurazione condiviso, `app/etc/config.php`, che deve trovarsi nel controllo del codice sorgente.
+In questo argomento sono elencati i percorsi di configurazione per l’estensione B2B di Commerce Enterprise. Il comando [`magento app:config:dump`](../cli/export-configuration.md) scrive questi valori nel file di configurazione condiviso, `app/etc/config.php`, che deve trovarsi nel controllo del codice sorgente.
 
 >[!INFO]
 >
->Questo elenco di riferimenti _solo_ percorsi di configurazione univoci di B2B per Adobe Commerce. Questa estensione include tutti i percorsi di configurazione per Adobe Commerce.
+>Questo riferimento elenca _solo_ percorsi di configurazione univoci per B2B per Adobe Commerce. Questa estensione include tutti i percorsi di configurazione per Adobe Commerce.
 
 Per i percorsi di configurazione, vedi:
 
 - [Percorsi di configurazione del pagamento](config-reference-payment.md)
 - [Riferimento ai percorsi di configurazione sensibili e specifici del sistema](config-reference-sens.md)
 
-Per ignorare eventuali impostazioni di configurazione o per impostare impostazioni sensibili, vedi [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](override-config-settings.md#environment-variables).
+Per ignorare eventuali impostazioni di configurazione o per impostare impostazioni sensibili, vedere [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](override-config-settings.md#environment-variables).
 
 ## Categoria generale
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin in **[!UICONTROL Stores]** > Impostazioni > **[!UICONTROL Configuration]** > **[!UICONTROL General]**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **[!UICONTROL Stores]** > Impostazioni > **[!UICONTROL Configuration]** > **[!UICONTROL General]**.
 
 ### Percorsi di funzionalità B2B
 
-Questi valori di configurazione sono disponibili in Amministrazione in **[!UICONTROL Stores]** > Impostazioni > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
+Questi valori di configurazione sono disponibili nell&#39;Admin in **[!UICONTROL Stores]** > Impostazioni > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
 
 | Nome | Percorso configurazione | Crittografato? | Specifico per il sistema? | Sensibili? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -49,11 +49,11 @@ Questi valori di configurazione sono disponibili in Amministrazione in **[!UICON
 
 ## Categoria di clienti
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin (Amministrazione) in **[!UICONTROL Stores]** > Impostazioni > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **[!UICONTROL Stores]** > Impostazioni > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]**.
 
 ### Percorsi di configurazione società
 
-Questi valori di configurazione sono disponibili in Amministrazione in **[!UICONTROL Stores]** > Impostazioni > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**.
+Questi valori di configurazione sono disponibili nell&#39;Admin in **[!UICONTROL Stores]** > Impostazioni > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**.
 
 | Nome | Percorso configurazione | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|
@@ -93,7 +93,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **[!UICON
 
 ### La richiesta elenca i percorsi
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Clienti** > **Elenchi richieste**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Clienti** > **Elenchi richieste di acquisto**.
 
 | Nome | Percorso configurazione | Crittografato? | Specifico per il sistema? | Sensibili? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -103,11 +103,11 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Categoria di vendita
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin (Amministrazione) in **Negozi** > Impostazioni > **Configurazione** > **Vendite**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite**.
 
 ### Percorsi e-mail vendite
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **E-mail vendite**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **E-mail vendite**.
 
 | Nome | Percorso configurazione | Crittografato? | Specifico per il sistema? | Sensibili? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -126,7 +126,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi virgolette
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Virgolette**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Preventivi**.
 
 | Nome | Percorso configurazione | Crittografato? | Specifico per il sistema? | Sensibili? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -145,7 +145,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi del metodo di pagamento
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Metodi di pagamento**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Metodi di pagamento**.
 
 >[!INFO]
 >

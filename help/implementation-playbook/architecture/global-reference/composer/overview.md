@@ -15,18 +15,18 @@ ht-degree: 0%
 
 # Sviluppo del composizione
 
-Questo argomento descrive l’approccio consigliato per lo sviluppo di moduli Compositore sul posto (come archivi Git in `vendor/` e aggiungendo tali moduli al progetto Git principale.
+In questo argomento viene descritto l&#39;approccio consigliato per lo sviluppo di moduli Composer sul posto (come archivi Git nella directory `vendor/`) e per l&#39;aggiunta di tali moduli al progetto Git principale.
 
 >[!NOTE]
 >
->Le presenti linee guida riguardano principalmente [architettura di riferimento globale (GRA)](../overview.md) progetti.
+>Queste linee guida si applicano principalmente a [progetti GRA (Global Reference Architecture)](../overview.md).
 
 ## Preparare un ramo di sviluppo
 
 1. Crea o estrai il ramo di sviluppo nell’archivio Git principale.
 1. Richiedi le versioni di sviluppo per ogni modulo gestito.
 
-   In questo esempio, ogni ramo nell’archivio Git principale rappresenta una versione del pacchetto Composer. In questo scenario, la convenzione di denominazione consigliata per le versioni del Compositore è `dev-` seguito dal nome della filiale. Ad esempio:
+   In questo esempio, ogni ramo nell’archivio Git principale rappresenta una versione del pacchetto Composer. La convenzione di denominazione consigliata per le versioni del Compositore in questo scenario è `dev-` seguita dal nome del ramo. Ad esempio:
 
    - `dev-develop`
    - `dev-qa`
@@ -35,25 +35,25 @@ Questo argomento descrive l’approccio consigliato per lo sviluppo di moduli Co
    composer require client/module-example:dev-develop
    ```
 
-1. Se un altro pacchetto Compositore richiede una versione specifica di un modulo (ad esempio, `client/module-example 1.0.12`), installarlo con un alias:
+1. Se un altro pacchetto Composer richiede una versione specifica di un modulo (ad esempio, `client/module-example 1.0.12`), installarlo con un alias:
 
    ```bash
    composer require 'client/module-example:dev-develop as 1.0.12'
    ```
 
-   Per `qa` branch, replace `dev-develop` con `dev-qa`.
+   Per il ramo `qa`, sostituire `dev-develop` con `dev-qa`.
 
 ## Conversione di pacchetti in archivi Git
 
-Per impostazione predefinita, i pacchetti non contengono `.git/` directory. Il Compositore può estrarre i pacchetti da Git invece di utilizzare i pacchetti predefiniti del Compositore. Il vantaggio di questo approccio è che puoi modificare facilmente i pacchetti durante lo sviluppo.
+Per impostazione predefinita, i pacchetti non contengono una directory `.git/`. Il Compositore può estrarre i pacchetti da Git invece di utilizzare i pacchetti predefiniti del Compositore. Il vantaggio di questo approccio è che puoi modificare facilmente i pacchetti durante lo sviluppo.
 
-1. Rimuovi il modulo da `vendor/` directory.
+1. Rimuovere il modulo dalla directory `vendor/`.
 
    ```bash
    rm -rf vendor/client/module-example
    ```
 
-1. Reinstallare il modulo utilizzando [origine Git specificata](#prepare-a-development-branch).
+1. Reinstalla il modulo utilizzando l&#39;[origine Git specificata](#prepare-a-development-branch).
 
    ```bash
    composer install --prefer-source
@@ -92,7 +92,7 @@ Per impostazione predefinita, i pacchetti non contengono `.git/` directory. Il C
 
 ## Aggiornare il progetto principale con il tuo sviluppo
 
-Aggiornare l’archivio Git principale modificando il file `composer.lock` file. Se il modulo è nuovo, attivalo.
+Aggiornare l&#39;archivio Git principale modificando il file `composer.lock`. Se il modulo è nuovo, attivalo.
 
 ```bash
 # to update your packages and all dependencies of the package

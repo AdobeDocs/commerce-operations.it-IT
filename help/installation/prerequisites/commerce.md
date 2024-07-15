@@ -15,7 +15,7 @@ Sei tra i 240.000 commercianti in tutto il mondo che hanno dato fiducia al nostr
 
 ## Come ottenere il software
 
-Controlla la disponibilità di nuove funzioni e versioni e scopri come inserirle nel nostro [pagina sulla disponibilità del prodotto](https://devdocs.magento.com/release/availability.html).
+Controlla la disponibilità di nuove funzionalità e versioni interessanti e scopri come ottenerle nella [pagina sulla disponibilità del prodotto](https://devdocs.magento.com/release/availability.html).
 
 Per informazioni introduttive sull’installazione di Adobe Commerce, consulta la tabella seguente.
 
@@ -31,22 +31,22 @@ Per informazioni introduttive sull’installazione di Adobe Commerce, consulta l
         <td><p>Integratore, packager</p></td>
         <td><p>Vuole il controllo completo su tutti i componenti installati, ha accesso al server applicazioni, altamente tecnico, potrebbe riconfezionare il Magento Open Source con altri componenti.</p>
         </td>
-        <td><ol><li>Crea un Compositore <em>progetto</em> che contiene l’elenco dei componenti da utilizzare.</li>
-            <li>Utilizza il Compositore per aggiornare le dipendenze del pacchetto; utilizza <code>composer create-project</code> per ottenere il metapacchetto Compositore.</li>
-            <li>Installa l'applicazione utilizzando <a href="../advanced.md">riga di comando</a>.</li>
-        <li>Aggiorna l'applicazione e le estensioni utilizzando  <a href="../../upgrade/implementation/perform-upgrade.md">riga di comando</a>.</li></ol></td>
+        <td><ol><li>Crea un Compositore <em>progetto</em> contenente l'elenco dei componenti da utilizzare.</li>
+            <li>Utilizza Composer per aggiornare le dipendenze del pacchetto; utilizza <code>composer create-project</code> per ottenere il metapackage Composer.</li>
+            <li>Installa l'applicazione utilizzando la <a href="../advanced.md">riga di comando</a>.</li>
+        <li>Aggiorna l'applicazione e le estensioni utilizzando la <a href="../../upgrade/implementation/perform-upgrade.md">riga di comando</a>.</li></ol></td>
         <td><p><a href="../composer.md">Ottieni il metapacchetto</a></p></td>
     </tr>
     <tr>
         <td><p>Sviluppatore partecipante</p></td>
         <td><p>Contribuisce alla base di codice del Magento Open Source, ai file bug e personalizza l’applicazione. Estremamente tecnico, dispone di un proprio server di sviluppo, comprende Composer e GitHub.</p>
-            <p>Tu <em>non può</em> utilizzare l'applicazione in un ambiente di produzione.</p>
-      <p>È necessario eseguire l’aggiornamento tramite <a href="../../upgrade/developer/git-installs.md">Compositore e comandi Git</a>.</p></td>
+            <p><em>impossibile</em> utilizzare l'applicazione in un ambiente di produzione.</p>
+      <p>È necessario eseguire l'aggiornamento utilizzando <a href="../../upgrade/developer/git-installs.md">Compositore e comandi Git</a>.</p></td>
         <td><ol><li>Clona l’archivio GitHub.</li>
             <li>Utilizza Compositore per aggiornare le dipendenze del pacchetto.</li>
             <li>Installa l'applicazione utilizzando <a href="../advanced.md">riga di comando</a>.</li>
-            <li>Aggiorna l'applicazione tramite <a href="../../upgrade/developer/git-installs.md">Compositore e comandi Git</a>.</li>
-            <li>Personalizza il codice in <code>app/code</code> directory.</li></ol></td>
+            <li>Aggiorna l'applicazione utilizzando <a href="../../upgrade/developer/git-installs.md">Compositore e comandi Git</a>.</li>
+            <li>Personalizza il codice nella directory <code>app/code</code>.</li></ol></td>
         <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/">Clonare l’archivio GitHub</a></p></td>
     </tr>
     </tbody>
@@ -58,8 +58,8 @@ Utilizzare i collegamenti sul lato sinistro della pagina per spostarsi tra gli a
 
 ## Autorizzazioni server richieste
 
-I sistemi UNIX richiedono `root` privilegi per installare e configurare software come un server web, PHP. Se è necessario installare questo software, assicurarsi di avere `root` accesso.
+I sistemi UNIX richiedono privilegi `root` per installare e configurare software come un server Web, PHP. Se devi installare questo software, assicurati di disporre dell&#39;accesso `root`.
 
-Esegui *non* installare l’applicazione nella directory principale dei documenti del server web come `root` perché il server web potrebbe non essere in grado di interagire con tali file.
+*non* installare l&#39;applicazione nella directory principale dei documenti del server Web come utente `root` perché il server Web potrebbe non essere in grado di interagire con tali file.
 
-Hai bisogno di `root` privilegi per creare [proprietario del file system](file-system/overview.md) e aggiungi tale proprietario al gruppo del server web. Utilizzare il proprietario del file system per eseguire `bin/magento` comandi dalla riga di comando e per impostare i processi cron, che consentono di pianificare le attività.
+Sono necessari i privilegi di `root` per creare il [proprietario del file system](file-system/overview.md) e aggiungerlo al gruppo del server Web. Utilizzare il proprietario del file system per eseguire `bin/magento` comandi dalla riga di comando e per impostare processi cron, che consentono di pianificare le attività.

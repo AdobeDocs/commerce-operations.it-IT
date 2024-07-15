@@ -6,14 +6,14 @@ role: Developer
 exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
 source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
 # Best practice per la gestione delle eccezioni
 
-Se non viene scritta un&#39;eccezione in `exception.log` file con il modello di eccezione come contesto, non viene riconosciuto e analizzato correttamente in New Relic o in altri archivi di registro compatibili con il monologo PSR-3. La registrazione solo di una parte dell’eccezione (o la registrazione nel file errato) causa bug nella produzione quando le eccezioni vengono ignorate.
+Se un&#39;eccezione non viene scritta nel file `exception.log` con il modello di eccezione come contesto, non viene riconosciuta e analizzata correttamente in New Relic o in un altro archivio di log compatibile con il monologo PSR-3. La registrazione solo di una parte dell’eccezione (o la registrazione nel file errato) causa bug nella produzione quando le eccezioni vengono ignorate.
 
 ## Gestione delle eccezioni corretta
 
@@ -31,9 +31,9 @@ try {
 }
 ```
 
-Questo approccio salva automaticamente `$e->getMessage` al messaggio di registro e al `$e` oggetto al contesto, seguendo la [Contesto standard PSR-3](https://www.php-fig.org/psr/psr-3/#13-context). Questa operazione viene eseguita in `\Magento\Framework\Logger\Monolog::addRecord`.
+Questo approccio salva automaticamente `$e->getMessage` nel messaggio di registro e l&#39;oggetto `$e` nel contesto, seguendo lo standard di contesto [PSR-3](https://www.php-fig.org/psr/psr-3/#13-context). Operazione completata in `\Magento\Framework\Logger\Monolog::addRecord`.
 
-### ![corretto](../../../assets/yes.svg) Disattiva segnali
+### ![segnali corretti](../../../assets/yes.svg) Disattiva audio
 
 Disattiva i segnali non registrando le eccezioni che fanno parte del flusso di operazioni previsto. Non è necessaria alcuna azione di follow-up quando si verifica l’eccezione, pertanto non è necessario registrarla e analizzarla quando si verifica. Aggiungete un commento che indica il motivo dell&#39;audio disattivato e che è intenzionale. Combina con `phpcs:ignore`.
 
@@ -45,9 +45,9 @@ try {
 }
 ```
 
-### ![corretto](../../../assets/yes.svg) Eccezioni di downgrade
+### ![corretto](../../../assets/yes.svg) eccezioni di downgrade
 
-Eseguire il downgrade delle eccezioni seguendo la [Contesto standard PSR-3](https://www.php-fig.org/psr/psr-3/#13-context).
+Eseguire il downgrade delle eccezioni seguendo lo standard di contesto [PSR-3](https://www.php-fig.org/psr/psr-3/#13-context).
 
 ```php
 try {
@@ -57,7 +57,7 @@ try {
 }
 ```
 
-### ![corretto](../../../assets/yes.svg) La registrazione viene sempre prima
+### La registrazione ![corretta](../../../assets/yes.svg) viene sempre prima
 
 Come best practice, la registrazione viene sempre prima nel codice per evitare casi in cui viene generata un’altra eccezione o un errore irreversibile prima di scrivere nel registro.
 
@@ -72,7 +72,7 @@ try {
 
 ### ![corretto](../../../assets/yes.svg) Registra i messaggi e l&#39;intera traccia dell&#39;eccezione
 
-Registra i messaggi e l&#39;intera traccia dell&#39;eccezione seguendo [Contesto standard PSR-3](https://www.php-fig.org/psr/psr-3/#13-context).
+Registra i messaggi e l&#39;intera traccia dell&#39;eccezione seguendo lo standard di contesto [PSR-3](https://www.php-fig.org/psr/psr-3/#13-context).
 
 ```php
 try {
@@ -86,9 +86,9 @@ try {
 
 Gli esempi seguenti mostrano una gestione errata delle eccezioni.
 
-### ![errato](../../../assets/no.svg) Logica prima della registrazione
+### ![logica errata](../../../assets/no.svg) prima della registrazione
 
-La logica prima della registrazione può causare un’altra eccezione o un errore irreversibile, che impedisce la registrazione dell’eccezione e deve essere sostituita da [esempio corretto](#logging-always-comes-first).
+La logica prima della registrazione può causare un&#39;altra eccezione o un errore irreversibile che impedisce la registrazione dell&#39;eccezione e deve essere sostituita da [esempio corretto](#logging-always-comes-first).
 
 ```php
 try {
@@ -101,7 +101,7 @@ try {
 
 ### ![errato](../../../assets/no.svg) Vuoto `catch`
 
-Vuoto `catch` I blocchi possono essere un segno di disattivazione involontaria e devono essere sostituiti da [esempio corretto](#mute-signals).
+I blocchi vuoti di `catch` possono essere un segnale di disattivazione audio non intenzionale e devono essere sostituiti dall&#39;[esempio corretto](#mute-signals).
 
 ```php
 try {
@@ -122,7 +122,7 @@ try {
 }
 ```
 
-### ![errato](../../../assets/no.svg) Registra messaggi e traccia in diversi file di registro
+### ![errato](../../../assets/no.svg) Messaggi di registro e traccia in file di registro diversi
 
 Il codice seguente registra erroneamente l&#39;analisi dello stack per un&#39;eccezione come stringa in un file di registro.
 
@@ -137,11 +137,11 @@ try {
 
 Questo approccio introduce interruzioni di riga nel messaggio, non conforme a PSR-3. L&#39;eccezione, inclusa la traccia dello stack, deve far parte del contesto del messaggio per garantire che venga salvata correttamente con il messaggio in New Relic o in un altro archivio di registro compatibile con il monologo PSR-3.
 
-Per risolvere il problema, sostituisci il codice seguendo gli esempi corretti mostrati nella [Scrivi nel registro eccezioni](#write-to-the-exception-log) o [Eccezioni di downgrade](#downgrade-exceptions).
+Risolvere il problema sostituendo il codice seguendo gli esempi corretti mostrati in [Scrivi nel registro eccezioni](#write-to-the-exception-log) o [Scaricare le eccezioni](#downgrade-exceptions).
 
 ### ![errato](../../../assets/no.svg) Eccezioni di downgrade senza contesto
 
-L’eccezione viene ridotta a errore, che non consente la trasmissione di un oggetto, ma solo di una stringa, da cui deriva `getMessage()`. Questo causa la perdita della traccia e deve essere sostituito dagli esempi corretti mostrati in [Scrivi nel registro eccezioni](#write-to-the-exception-log) o [Eccezioni di downgrade](#downgrade-exceptions).
+L&#39;eccezione viene ridotta a un errore, che non consente la trasmissione di un oggetto, ma solo di una stringa, da cui deriva `getMessage()`. Questo causa la perdita della traccia e deve essere sostituito dagli esempi corretti mostrati in [Scrivi nel registro eccezioni](#write-to-the-exception-log) o [Scaricare le eccezioni](#downgrade-exceptions).
 
 ```php
 try {
@@ -151,9 +151,9 @@ try {
 }
 ```
 
-### ![errato](../../../assets/no.svg) Registra solo il messaggio nel registro eccezioni
+### ![errato](../../../assets/no.svg) registra solo il messaggio nel registro eccezioni
 
-Invece di passare l’oggetto `$e`, solo `$e->getMessage()` è stato superato. Questo causa la perdita della traccia e deve essere sostituito dagli esempi corretti mostrati [Scrivi nel registro eccezioni](#write-to-the-exception-log) o [Eccezioni di downgrade](#downgrade-exceptions).
+Invece di passare l&#39;oggetto `$e`, viene passato solo `$e->getMessage()`. Questo causa la perdita della traccia e deve essere sostituito dagli esempi corretti mostrati [Scrivi nel registro eccezioni](#write-to-the-exception-log) o [Scaricare le eccezioni](#downgrade-exceptions).
 
 ```php
 try {
@@ -165,7 +165,7 @@ try {
 
 ### ![errato](../../../assets/no.svg) Mancante `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-Omissione del `phpcs:ignore` line attiva un avviso in PHPCS e non deve trasmettere il CI. Questo deve essere sostituito dall&#39;esempio corretto mostrato nella [Disattiva segnali](#mute-signals).
+Omettendo la riga `phpcs:ignore` si attiva un avviso in PHPCS e non si deve trasmettere il CI. Questo deve essere sostituito dall&#39;esempio corretto mostrato in [Segnali audio](#mute-signals).
 
 ```php
 try {

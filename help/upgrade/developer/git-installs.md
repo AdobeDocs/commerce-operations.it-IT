@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Aggiornare un’installazione basata su Git
 
-Questo argomento illustra come uno sviluppatore che partecipa all’aggiornamento di Adobe Commerce senza reinstallarlo. Se non sei uno sviluppatore, consulta [Eseguire un aggiornamento](../implementation/perform-upgrade.md).
+Questo argomento illustra come uno sviluppatore che partecipa all’aggiornamento di Adobe Commerce senza reinstallarlo. Se non sei uno sviluppatore che contribuisce, consulta [Eseguire un aggiornamento](../implementation/perform-upgrade.md).
 
 Per effettuare l&#39;aggiornamento se sei uno sviluppatore che contribuisce:
 
 {{$include /help/_includes/server-login.md}}
 
-1. Salva eventuali modifiche apportate al `composer.json` perché i passaggi successivi lo sovrascrivono.
+1. Salvare le modifiche apportate al file `composer.json` perché i passaggi successivi lo sovrascrivono.
 
-1. Crea un backup del `composer.json` file.
+1. Crea un backup del file `composer.json`.
 
    ```bash
    cp composer.json composer.json.old
@@ -35,9 +35,9 @@ Per effettuare l&#39;aggiornamento se sei uno sviluppatore che contribuisce:
    >
    >Se `git pull origin develop` non riesce, vedi [risoluzione dei problemi](https://support.magento.com/hc/en-us/articles/360034229872).
 
-1. Differenza e unione `composer.json.old` file con `composer.json` file.
+1. Differenziare e unire il file `composer.json.old` con il file `composer.json`.
 
-1. Risolvere le dipendenze e scrivere versioni esatte in `composer.lock` file.
+1. Risolvere le dipendenze e scrivere versioni esatte nel file `composer.lock`.
 
    ```bash
    composer update

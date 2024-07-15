@@ -4,14 +4,14 @@ description: Consulta un elenco di valori per il file env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # riferimento env.php
 
-Il `env.php` Il file contiene le sezioni seguenti:
+Il file `env.php` contiene le sezioni seguenti:
 
 | Nome | Descrizione |
 |-------------------------------|-----------------------------------------------------------------|
@@ -23,12 +23,12 @@ Il `env.php` Il file contiene le sezioni seguenti:
 | `crypt` | Chiave di crittografia per le funzioni di crittografia |
 | `db` | Impostazioni di connessione al database |
 | `default_connection` | Connessione predefinita code di messaggi |
-| `directories` | Impostazioni mappatura directory Commerce |
+| `directories` | Impostazioni di mappatura delle directory Commerce |
 | `downloadable_domains` | Elenco dei domini scaricabili |
 | `install` | Data di installazione |
 | `lock` | Blocca impostazioni provider |
-| `MAGE_MODE` | Il [modalità applicazione](../bootstrap/application-modes.md) |
-| `queue` | [Code di messaggi](../queues/manage-message-queues.md) impostazioni |
+| `MAGE_MODE` | [modalità applicazione](../bootstrap/application-modes.md) |
+| `queue` | Impostazioni [Code messaggi](../queues/manage-message-queues.md) |
 | `resource` | Mappatura del nome della risorsa su una connessione |
 | `session` | Dati archiviazione sessione |
 | `system` | Disattiva il campo per la modifica in Admin |
@@ -36,7 +36,7 @@ Il `env.php` Il file contiene le sezioni seguenti:
 
 ## backend
 
-Configurare **frontName** per l’URL dell’amministratore di Commerce che utilizza `backend` nodo in env.php.
+Configura **frontName** per l&#39;URL amministratore di Commerce utilizzando il nodo `backend` in env.php.
 
 ```conf
 'backend' => [
@@ -46,7 +46,7 @@ Configurare **frontName** per l’URL dell’amministratore di Commerce che util
 
 ## cache
 
-Configurare la pagina Redis e il caching predefinito utilizzando `cache` nodo in `env.php` file.
+Configurare la pagina redis e il caching predefinito utilizzando il nodo `cache` nel file `env.php`.
 
 ```conf
 'cache' => [
@@ -98,11 +98,11 @@ Da questo nodo sono disponibili tutte le configurazioni dei tipi di cache.
 ]
 ```
 
-Ulteriori informazioni sulle diverse [Tipi di cache](../cli/manage-cache.md).
+Ulteriori informazioni sui diversi [tipi di cache](../cli/manage-cache.md).
 
 ## consumer_wait_for_messages
 
-Specifica se i consumatori devono continuare a eseguire il polling dei messaggi se il numero di messaggi elaborati è inferiore al `max_messages` valore. Il valore predefinito è `1`.
+Specificare se i consumatori devono continuare a eseguire il polling dei messaggi se il numero di messaggi elaborati è inferiore al valore `max_messages`. Il valore predefinito è `1`.
 
 ```conf
 'queue' => [
@@ -112,17 +112,17 @@ Specifica se i consumatori devono continuare a eseguire il polling dei messaggi 
 
 Sono disponibili le seguenti opzioni:
 
-- `1`: i consumatori continuano a elaborare i messaggi dalla coda dei messaggi fino a quando non raggiungono `max_messages` valore specificato in `env.php` prima di chiudere la connessione TCP e terminare il processo consumer. Se la coda si svuota prima di raggiungere `max_messages` valore, il consumatore attende che arrivino più messaggi.
+- `1` - I consumatori continuano a elaborare i messaggi dalla coda dei messaggi fino a raggiungere il valore `max_messages` specificato nel file `env.php` prima di chiudere la connessione TCP e terminare il processo consumer. Se la coda si svuota prima di raggiungere il valore `max_messages`, il consumatore attende che arrivino altri messaggi.
 
   Consigliamo questa impostazione per i commercianti di grandi dimensioni, perché è previsto un flusso costante di messaggi e i ritardi di elaborazione non sono auspicabili.
 
-- `0`- I consumatori elaborano i messaggi disponibili nella coda, chiudono la connessione TCP e terminano. I consumatori non attendono messaggi aggiuntivi per entrare nella coda, anche se il numero di messaggi elaborati è inferiore al `max_messages` valore specificato in `env.php` file. Questo può aiutare a prevenire problemi con i processi cron causati da lunghi ritardi nell’elaborazione della coda dei messaggi.
+- `0` - I consumatori elaborano i messaggi disponibili nella coda, chiudono la connessione TCP e terminano. I consumatori non attendono messaggi aggiuntivi per entrare nella coda, anche se il numero di messaggi elaborati è inferiore al valore `max_messages` specificato nel file `env.php`. Questo può aiutare a prevenire problemi con i processi cron causati da lunghi ritardi nell’elaborazione della coda dei messaggi.
 
   Consigliamo questa impostazione per i commercianti più piccoli che non si aspettano un flusso di messaggi costante e preferiscono conservare le risorse informatiche in cambio di ritardi di elaborazione minori quando non potrebbero esserci messaggi per giorni.
 
 ## cron
 
-Abilita o disabilita i processi cron per l’applicazione Commerce. Per impostazione predefinita, i processi cron sono abilitati. Per disattivarli, aggiungi `cron` alla configurazione `env.php` e imposta il valore su `0`.
+Attiva o disattiva i processi cron per l&#39;applicazione Commerce. Per impostazione predefinita, i processi cron sono abilitati. Per disattivarle, aggiungere la configurazione `cron` al file `env.php` e impostare il valore su `0`.
 
 ```conf
 'cron' => [
@@ -132,9 +132,9 @@ Abilita o disabilita i processi cron per l’applicazione Commerce. Per impostaz
 
 >[!WARNING]
 >
->Presta attenzione quando disattivi i processi cron. Quando sono disabilitati, i processi essenziali richiesti dall’applicazione Commerce non vengono eseguiti.
+>Presta attenzione quando disattivi i processi cron. Quando sono disattivati, i processi essenziali richiesti dall’applicazione Commerce non vengono eseguiti.
 
-Ulteriori informazioni su [Cron](../cli/configure-cron-jobs.md).
+Ulteriori informazioni su [Crons](../cli/configure-cron-jobs.md).
 
 ## criptare
 
@@ -146,7 +146,7 @@ Commerce utilizza una chiave di crittografia per proteggere le password e altri 
 ]
 ```
 
-Ulteriori informazioni su [Chiave di crittografia](https://docs.magento.com/user-guide/system/encryption-key.html) nel _Guida utente di Commerce_.
+Ulteriori informazioni sulla [chiave di crittografia](https://docs.magento.com/user-guide/system/encryption-key.html) nella _Guida utente di Commerce_.
 
 ## db
 
@@ -172,7 +172,7 @@ Tutte le configurazioni di database sono disponibili in questo nodo.
 
 ## default_connection
 
-Definisce la connessione predefinita per le code di messaggi. Il valore può essere `db`, `amqp`o un sistema di code personalizzato come `redismq`. Se specifichi un valore diverso da `db`, il software della coda di messaggi deve essere installato e configurato per primo. In caso contrario, i messaggi non verranno elaborati correttamente.
+Definisce la connessione predefinita per le code di messaggi. Il valore può essere `db`, `amqp` o un sistema di code personalizzato come `redismq`. Se si specifica un valore diverso da `db`, è necessario installare e configurare prima il software della coda messaggi. In caso contrario, i messaggi non verranno elaborati correttamente.
 
 ```conf
 'queue' => [
@@ -180,12 +180,12 @@ Definisce la connessione predefinita per le code di messaggi. Il valore può ess
 ]
 ```
 
-Se `queue/default_connection` è specificato nel sistema `env.php` file, questa connessione viene utilizzata per tutte le code di messaggi nel sistema, a meno che non venga definita una connessione specifica in un `queue_topology.xml`, `queue_publisher.xml` o `queue_consumer.xml` file.
-Ad esempio, se `queue/default_connection` è `amqp` in `env.php` ma un `db` connessione specificata nei file XML di configurazione della coda di un modulo, il modulo utilizzerà MySQL come gestore di messaggi.
+Se `queue/default_connection` è specificato nel file di sistema `env.php`, questa connessione viene utilizzata per tutte le code di messaggi nel sistema, a meno che non sia definita una connessione specifica in un file `queue_topology.xml`, `queue_publisher.xml` o `queue_consumer.xml`.
+Ad esempio, se `queue/default_connection` è `amqp` in `env.php` ma è specificata una connessione `db` nei file XML di configurazione della coda di un modulo, il modulo utilizzerà MySQL come gestore di messaggi.
 
 ## directory
 
-Opzioni di mappatura directory opzionali che devono essere impostate quando il server web è configurato per servire l’app Commerce dal `/pub` directory per [maggiore sicurezza](../../installation/tutorials/docroot.md).
+Opzioni di mappatura della directory facoltative che devono essere impostate quando il server Web è configurato per servire l&#39;app Commerce dalla directory `/pub` per [sicurezza migliorata](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -207,7 +207,7 @@ Ulteriori informazioni su [Domini scaricabili](https://devdocs.magento.com/guide
 
 ## installare
 
-Data di installazione dell’applicazione Commerce.
+Data di installazione dell&#39;applicazione Commerce.
 
 ```conf
 'install' => [
@@ -217,7 +217,7 @@ Data di installazione dell’applicazione Commerce.
 
 ## blocca
 
-Le impostazioni del provider di blocco sono configurate utilizzando `lock` nodo.
+Le impostazioni del provider di blocco sono configurate utilizzando il nodo `lock`.
 
 Ulteriori informazioni su [Blocca configurazione provider](../../installation/tutorials/lock-provider.md).
 
@@ -229,7 +229,7 @@ La modalità di distribuzione può essere configurata in questo nodo.
 'MAGE_MODE' => 'developer'
 ```
 
-Ulteriori informazioni su [Modalità di applicazione](../cli/set-mode.md).
+Ulteriori informazioni sulle [modalità applicazione](../cli/set-mode.md).
 
 ## coda
 
@@ -260,7 +260,7 @@ Le impostazioni di configurazione delle risorse sono disponibili in questo nodo.
 
 ## sessione
 
-Le configurazioni delle sessioni sono memorizzate in `session` nodo.
+Le configurazioni di sessione sono archiviate nel nodo `session`.
 
 ```conf
 'session' => [
@@ -268,7 +268,7 @@ Le configurazioni delle sessioni sono memorizzate in `session` nodo.
 ],
 ```
 
-Ulteriori informazioni su [Sessione](../storage/sessions.md).
+Ulteriori informazioni sulla [sessione](../storage/sessions.md).
 
 ## x-frame-options
 
@@ -282,7 +282,7 @@ Ulteriori informazioni su [x-frame-options](../security/xframe-options.md).
 
 ## sistema
 
-Utilizzando questo nodo, Commerce blocca i valori di configurazione in `env.php` e quindi disabilita il campo nell&#39;amministratore.
+Utilizzando questo nodo, Commerce blocca i valori di configurazione nel file `env.php` e quindi disabilita il campo nell&#39;amministratore.
 
 ```conf
 'system' => [

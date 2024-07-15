@@ -4,19 +4,19 @@ description: Vedi un esempio di come modificare le impostazioni in un sistema di
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
 # Esempio di utilizzo di una configurazione condivisa
 
-Questo esempio mostra come modificare le seguenti impostazioni nel sistema di sviluppo, aggiornare il file di configurazione condiviso, `config.php`, nel sistema di build e implementare le stesse impostazioni nel sistema di produzione:
+In questo esempio viene illustrato come modificare le impostazioni seguenti nel sistema di sviluppo, aggiornare il file di configurazione condiviso `config.php` nel sistema di build e implementare le stesse impostazioni nel sistema di produzione:
 
 - Fuso orario
 - Unità di peso
 
-Queste impostazioni sono disponibili nella sezione Amministrazione di **Negozi** > Impostazioni > **Configurazione** > Generale > **Generale**.
+Queste impostazioni sono disponibili nell&#39;Admin in **Archivi** > Impostazioni > **Configurazione** > Generale > **Generale**.
 
 È possibile utilizzare la stessa procedura per configurare qualsiasi impostazione non sensibile e non specifica del sistema nei seguenti riferimenti:
 
@@ -26,7 +26,7 @@ Queste impostazioni sono disponibili nella sezione Amministrazione di **Negozi**
 
 ## Prima di iniziare
 
-Prima di iniziare, imposta le autorizzazioni e la proprietà del file system come descritto in [Prerequisiti per i sistemi di sviluppo, generazione e produzione](../deployment/prerequisites.md).
+Prima di iniziare, configurare le autorizzazioni e la proprietà del file system come descritto in [Prerequisiti per i sistemi di sviluppo, compilazione e produzione](../deployment/prerequisites.md).
 
 ## Presupposti
 
@@ -43,22 +43,22 @@ Ai fini del presente esempio, si assume quanto segue:
 Per impostare il fuso orario e le unità di peso nel sistema di sviluppo:
 
 1. Accedi all’amministratore.
-1. Clic **Negozi** > Impostazioni > **Configurazione** > Generale > **Generale**.
-1. Nel riquadro di destra, espandere **Opzioni internazionali**.
+1. Fai clic su **Archivi** > Impostazioni > **Configurazione** > Generale > **Generale**.
+1. Nel riquadro di destra espandere **Opzioni internazionali**.
 
    Nella figura seguente viene illustrato un esempio.
 
-   ![Impostare le opzioni internazionali nel sistema di sviluppo](../../assets/configuration/split-deploy-set-locale.png)
+   ![Impostare le opzioni delle impostazioni locali nel sistema di sviluppo](../../assets/configuration/split-deploy-set-locale.png)
 
-1. Dalla sezione **Fuso orario** , fare clic su **GMT+00:00 (UTC)**.
-1. Cancella **Usa valore di sistema** accanto alla casella di controllo **Unità di peso** campo.
-1. Dalla sezione **Unità di peso** , fare clic su **kg**.
-1. Clic **Salva configurazione**.
+1. Dall&#39;elenco **Fuso orario**, fare clic su **GMT+00:00 (UTC)**.
+1. Deselezionare la casella di controllo **Usa valore di sistema** accanto al campo **Unità di peso**.
+1. Nell&#39;elenco **Unità di peso** fare clic su **kg**.
+1. Fai clic su **Salva configurazione**.
 1. Se richiesto, svuotare la cache.
 
 ## Passaggio 2: aggiornare la configurazione condivisa
 
-Genera il file di configurazione condiviso, `app/etc/config.php`, nel sistema di sviluppo e trasferirlo utilizzando il controllo del codice sorgente nel sistema di build, come descritto in questa sezione.
+Generare il file di configurazione condiviso `app/etc/config.php` nel sistema di sviluppo e trasferirlo utilizzando il controllo del codice sorgente nel sistema di compilazione, come descritto in questa sezione.
 
 {{$include /help/_includes/config-save-config.md}}
 
@@ -76,16 +76,16 @@ L’ultimo passaggio del processo consiste nell’aggiornare il sistema di produ
 
 ### Verificare le modifiche in Admin
 
-**Per verificare che queste impostazioni non siano modificabili in Amministrazione**:
+**Per verificare che queste impostazioni non siano modificabili in Admin**:
 
 1. Accedi all’amministratore.
-1. Clic **Negozi** > Impostazioni > **Configurazione** > Generale > **Generale**.
-1. Nel riquadro di destra, espandere **Opzioni internazionali**.
+1. Fai clic su **Archivi** > Impostazioni > **Configurazione** > Generale > **Generale**.
+1. Nel riquadro di destra espandere **Opzioni internazionali**.
 
    Le opzioni appena impostate vengono visualizzate come segue:
 
-   ![Opzioni di configurazione non modificabili in Amministrazione](../../assets/configuration/split-deploy-not-editable.png)
+   ![Opzioni di configurazione non modificabili nell&#39;amministratore](../../assets/configuration/split-deploy-not-editable.png)
 
 >[!INFO]
 >
->Per modificare un’impostazione bloccata in Admin, utilizza [`magento config:set --lock` comando](../cli/set-configuration-values.md).
+>Per modificare un&#39;impostazione bloccata nell&#39;amministratore, utilizzare il comando [`magento config:set --lock`](../cli/set-configuration-values.md).

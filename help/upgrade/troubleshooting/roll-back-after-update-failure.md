@@ -23,4 +23,4 @@ Se l’aggiornamento del modulo non riesce, nel registro della console vengono v
 
 Nell’esempio precedente, non esiste una versione del componente a cui eseguire il rollback. Contatta il fornitore del componente o prova a risolvere il problema da solo.
 
-Nel frattempo, puoi tornare a una versione precedente facendo clic su **Rollback**, che recupera i dati anche se non ne è stato eseguito il backup in precedenza.
+Nel frattempo, puoi tornare a una versione precedente facendo clic su **Rollback**, che ripristina i dati anche se non ne hai eseguito il backup in precedenza.

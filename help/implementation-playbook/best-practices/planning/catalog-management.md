@@ -38,7 +38,7 @@ Per ottenere prestazioni ottimali, utilizza le seguenti linee guida per gestire 
 
 Utilizza le seguenti strategie per gestire il numero di articoli del carrello
 
-- Dividi gli ordini in diversi ordini più piccoli con un numero inferiore di righe utilizzando [!UICONTROL Add Item by SKU] funzionalità.
+- Suddividere gli ordini in più ordini più piccoli con un numero di righe inferiore utilizzando la funzione [!UICONTROL Add Item by SKU].
 - Aggiungi solo la logica personalizzata e la personalizzazione del carrello richieste per caricare un elenco di elementi.
 
 ## Limiti delle categorie
@@ -112,7 +112,7 @@ Rimuovere i set di attributi di prodotto inutilizzati utilizzando MySQL.
 
 ### Potenziale impatto sulle prestazioni
 
-Configurazione di molti **attributi prodotto** aumenta le dimensioni del modello di prodotto per ciascun prodotto (struttura EAV) e la quantità di dati da recuperare. Questo aumento influisce sulle operazioni nei seguenti modi:
+La configurazione di molti **attributi di prodotto** aumenta le dimensioni del modello di prodotto per ciascun prodotto (struttura EAV) e la quantità di dati da recuperare. Questo aumento influisce sulle operazioni nei seguenti modi:
 
 - Aumento del traffico delle query SQL correlate al recupero dei dati EAV e della quantità di dati elaborati, con conseguente riduzione della velocità effettiva del database
 - Aumento significativo della dimensione degli indici Adobe Commerce e dell’indice di ricerca full-text
@@ -125,7 +125,7 @@ L’aumento dei dati di prodotto e delle dimensioni dell’indice può influire 
 - È possibile bloccare la funzionalità Azioni di massa prodotto.
 - I tempi di ricreazione degli indici per i cataloghi di medie e grandi dimensioni non possono essere eseguiti su base giornaliera a causa dei lunghi tempi di esecuzione.
 
-Configurazione di molti **opzioni attributo** può influire sulle prestazioni del sito nei seguenti modi:
+La configurazione di molte **opzioni attributo** può influire sulle prestazioni del sito nei seguenti modi:
 
 - Lunghi tempi di richiesta e rendering sui dettagli prodotto (PDP) e sulle pagine di categorie contenenti prodotti complessi.
 - Il tempo di risposta per le operazioni di salvataggio dei prodotti dell’amministratore aumenta oltre gli obiettivi di prestazioni ottimali.
@@ -155,7 +155,7 @@ Utilizza le seguenti strategie per ridurre il numero di opzioni di prodotto per 
 
 La configurazione di molte opzioni di prodotto aumenta la quantità di dati recuperati per ciascun prodotto su tutte le operazioni di lettura e scrittura, con conseguente:
 
-- Traffico di query SQL aumentato e maggiore `JOIN` le operazioni aumentano la velocità effettiva del database.
+- L&#39;aumento del traffico delle query SQL e le operazioni `JOIN` più pesanti aumentano la velocità effettiva del database.
 - Sono state aumentate le dimensioni per gli indici Adobe Commerce e l’indice di ricerca full-text.
 
 Gli aumenti elencati sopra possono influire sulle prestazioni del sito nei seguenti modi:
@@ -177,9 +177,9 @@ La visualizzazione di un numero eccessivo di prodotti per pagina può influire s
 
 ### Aggiornare la configurazione dell’elenco dei prodotti
 
-Se hai troppi prodotti in una categoria, aggiorna la configurazione del catalogo della vetrina per disabilitare l’opzione su **Consenti tutti i prodotti per pagina**.
+Se hai troppi prodotti in una categoria, aggiorna la configurazione del catalogo della vetrina per disabilitare l&#39;opzione su **Consenti tutti i prodotti per pagina**.
 
-Dopo aver disabilitato questa opzione, Adobe Commerce utilizza i controlli di paginazione della vetrina per gestire il numero di prodotti visualizzati nei componenti della vetrina. Per istruzioni, consulta [Configurare i controlli di impaginazione](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
+Dopo aver disabilitato questa opzione, Adobe Commerce utilizza i controlli di paginazione della vetrina per gestire il numero di prodotti visualizzati nei componenti della vetrina. Per istruzioni, vedere [Configurare i controlli di impaginazione](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Limiti SKU prodotto
 
@@ -205,7 +205,7 @@ Per ridurre il numero di prodotti (SKU), utilizza le seguenti strategie:
    - Diminuisci il numero di SKU diminuendo il numero di siti web, gruppi di clienti, cataloghi condivisi, numero di prodotti o numero di opzioni di prodotto configurabili
 - Puoi fornire più varianti di prodotto utilizzando opzioni personalizzate anziché creare prodotti separati.
 - Tenendo conto del fatto che una SKU effettiva potrebbe includere una serie di potenziali permutazioni dei prezzi, poiché i prezzi possono essere specificati in modo diverso per ogni negozio o gruppo di clienti.
-- Disattiva o rimuovi i componenti di sistema inutilizzati come i moduli. Consulta  [Disinstalla moduli](../../../installation/tutorials/uninstall-modules.md).
+- Disattiva o rimuovi i componenti di sistema inutilizzati come i moduli. Consulta [Disinstallare i moduli](../../../installation/tutorials/uninstall-modules.md).
 - Gestione dei prodotti in un sistema di gestione della piattaforma (PMS) esterno.
 
 ## Varianti prodotto
@@ -261,4 +261,4 @@ Avere un numero di regole di prezzo del carrello superiore a quello massimo cons
 - Tempi di risposta più rapidi quando i prodotti vengono aggiunti al carrello.
 - È stato aumentato il tempo necessario per caricare ed eseguire il rendering del minicart.
 - È stato aumentato il tempo per il rendering della pagina del carrello.
-- È stato aumentato il tempo di rendering del **Totali** nella pagina Pagamento.
+- È stato aumentato il tempo per il rendering del blocco **Totali** nella pagina Pagine di pagamento.

@@ -4,7 +4,7 @@ description: Ottenere un vantaggio competitivo creando una strategia per modific
 exl-id: 913dba96-d939-4e9a-b382-f22c6669fed1
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ La determinazione dinamica dei prezzi è una strategia di determinazione dei pre
 
 Esistono tre fattori che determinano il prezzo dinamico, tra cui:
 
-- **Settore**—I rivenditori devono verificare, tra le altre marche, il prezzo di base di un prodotto.
+- **Settore**: i rivenditori devono verificare qual è il prezzo di base di un prodotto tra gli altri marchi.
 
-- **Mercato**- Qual è la domanda e l&#39;offerta corrente? Qual è la domanda e l&#39;offerta previste?
+- **Mercato**—Qual è la domanda e l&#39;offerta correnti? Qual è la domanda e l&#39;offerta previste?
 
-- **Clienti**—Qual è il comportamento di acquisto del cliente? Qual è il prezzo che il cliente è disposto a pagare per un prodotto.
+- **Clienti** - Qual è il comportamento di acquisto del cliente? Qual è il prezzo che il cliente è disposto a pagare per un prodotto.
 
 Quando si lavora a una strategia di prezzo dinamica, è necessario considerare ogni aspetto.
 

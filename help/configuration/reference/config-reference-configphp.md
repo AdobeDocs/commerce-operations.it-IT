@@ -4,14 +4,14 @@ description: Consultate un elenco di valori nel file config.php.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '147'
 ht-degree: 1%
 
 ---
 
 # riferimento config.php
 
-Il `config.php` Il file contiene le sezioni seguenti:
+Il file `config.php` contiene le sezioni seguenti:
 
 | Nome | Descrizione |
 | --------- | -------------------|
@@ -34,7 +34,7 @@ Contiene un array di moduli e i relativi stati. Se il modulo è abilitato, il va
 ]
 ```
 
-Ulteriori informazioni su [Moduli].
+Ulteriori informazioni sui [moduli].
 
 ## ambiti
 
@@ -82,7 +82,7 @@ Contiene un array di valori di configurazione dell&#39;ambito. Ha i seguenti sot
 ]
 ```
 
-Ulteriori informazioni su [Ambiti Commerce][scopes].
+Ulteriori informazioni su [ambiti Commerce][scopes].
 
 ## sistema
 
@@ -100,7 +100,7 @@ Contiene un array di valori di configurazione dei campi di sistema.
 ]
 ```
 
-Ulteriori informazioni su [Configurazioni specifiche per il sistema](config-reference-sens.md).
+Ulteriori informazioni sulle [configurazioni specifiche del sistema](config-reference-sens.md).
 
 ## temi
 

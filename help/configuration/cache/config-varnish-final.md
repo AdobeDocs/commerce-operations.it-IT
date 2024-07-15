@@ -5,20 +5,20 @@ feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
 
 # Verifica finale della configurazione vernice
 
-Ora che utilizzi il `default.vcl` generate per te da Commerce, puoi eseguire alcune verifiche finali per assicurarti che Varnish funzioni.
+Ora che si sta utilizzando `default.vcl` generato per l&#39;utente da Commerce, è possibile eseguire alcune verifiche finali per verificare che Vernice funzioni.
 
 ## Verificare le intestazioni di risposta HTTP
 
-Utilizzare `curl` oppure un’altra utility per visualizzare le intestazioni di risposta HTTP quando visiti una pagina Commerce in un browser web.
+Utilizza `curl` o un&#39;altra utility per visualizzare le intestazioni di risposta HTTP quando visiti una pagina Commerce in un browser Web.
 
-Innanzitutto, assicurati di utilizzare [modalità sviluppatore](../cli/set-mode.md#change-to-developer-mode); in caso contrario, le intestazioni non verranno visualizzate.
+Innanzitutto, assicurati di utilizzare la [modalità sviluppatore](../cli/set-mode.md#change-to-developer-mode); in caso contrario, le intestazioni non verranno visualizzate.
 
 Ad esempio:
 
@@ -48,12 +48,12 @@ Ad esempio, per utilizzare la finestra di ispezione Chrome:
 
 1. Accedi a qualsiasi pagina di Commerce memorizzabile in cache in Chrome.
 1. Fare clic con il pulsante destro del mouse in un punto qualsiasi della pagina.
-1. Dal menu a comparsa, fare clic su **[!UICONTROL Inspect Element]**
-1. Nel riquadro del controllo fare clic sul pulsante **[!UICONTROL Network]** scheda.
+1. Dal menu popup, fare clic su **[!UICONTROL Inspect Element]**
+1. Nel riquadro del controllo fare clic sulla scheda **[!UICONTROL Network]**.
 1. Aggiorna la pagina.
 1. Scorrere fino alla parte superiore del riquadro del controllo per visualizzare l&#39;URL della pagina visualizzata.
 
-   Nella figura seguente viene illustrato un esempio di caricamento di `magento2` pagina indice.
+   Nella figura seguente viene illustrato un esempio di caricamento della pagina indice `magento2`.
 
    ![Fare clic sulla pagina visualizzata](../../assets/configuration/varnish-inspector.png)
 
@@ -65,7 +65,7 @@ Ad esempio, per utilizzare la finestra di ispezione Chrome:
 
 ## Verificare la cache di Commerce
 
-Assicurati che le `<magento_root>/var/page_cache` directory vuota:
+Assicurarsi che la directory `<magento_root>/var/page_cache` sia vuota:
 
 1. Accedi al server Commerce o passa al proprietario del file system.
 1. Immetti il comando seguente:
@@ -74,13 +74,13 @@ Assicurati che le `<magento_root>/var/page_cache` directory vuota:
    rm -rf <magento_root>/var/page_cache/*
    ```
 
-1. Accedi a una o più pagine di Commerce memorizzabili in cache.
-1. Controlla la `var/page_cache/` directory.
+1. Accedi a una o più pagine Commerce memorizzabili nella cache.
+1. Controllare la directory `var/page_cache/`.
 
    Se la directory è vuota, congratulazioni! Hai configurato correttamente Varnish e Commerce per lavorare insieme.
 
-1. Se hai cancellato `var/page_cache/` directory, riavviare Varnish.
+1. Se la directory `var/page_cache/` è stata cancellata, riavviare Varnish.
 
 >[!TIP]
 >
->Se si verificano errori 503 (recupero back-end non riuscito), vedi [Risoluzione dei problemi relativi a 503 (servizio non disponibile)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) nel _Centro assistenza Adobe Commerce_.
+>Se si verificano 503 errori (recupero back-end non riuscito), vedere [Risoluzione dei problemi relativi agli errori 503 (servizio non disponibile)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) nel _Centro assistenza Adobe Commerce_.

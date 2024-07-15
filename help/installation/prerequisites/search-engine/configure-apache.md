@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Il supporto di OpenSearch è stato aggiunto nella versione 2.4.4. OpenSearch è un fork di Elasticsearch compatibile. Consulta [Migra Elasticsearch a OpenSearch](../../../upgrade/prepare/opensearch-migration.md) per ulteriori informazioni.
+>Il supporto di OpenSearch è stato aggiunto nella versione 2.4.4. OpenSearch è un fork di Elasticsearch compatibile. Per ulteriori informazioni, vedere [Migrare l&#39;Elasticsearch a OpenSearch](../../../upgrade/prepare/opensearch-migration.md).
 
-Questa sezione illustra come configurare Apache come *non sicuro* in modo che Adobe Commerce possa utilizzare un motore di ricerca in esecuzione su questo server. Questa sezione non tratta la configurazione dell’autenticazione HTTP Basic; questo argomento è trattato in [Comunicazione sicura con Apache](#secure-communication-with-apache).
+In questa sezione viene illustrato come configurare Apache come proxy *unsecure* in modo che Adobe Commerce possa utilizzare un motore di ricerca in esecuzione su questo server. In questa sezione non viene illustrata la configurazione dell&#39;autenticazione HTTP Basic, argomento trattato in [Comunicazione protetta con Apache](#secure-communication-with-apache).
 
 >[!NOTE]
 >
@@ -84,9 +84,9 @@ Questa sezione illustra come configurare un proxy utilizzando un host virtuale.
 
 ## Comunicazione sicura con Apache
 
-Questa sezione illustra come proteggere la comunicazione tra Apache e il motore di ricerca utilizzando [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617) autenticazione con Apache. Per ulteriori opzioni, consulta una delle risorse seguenti:
+Questa sezione illustra come proteggere la comunicazione tra Apache e il motore di ricerca utilizzando l&#39;autenticazione [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617) con Apache. Per ulteriori opzioni, consulta una delle risorse seguenti:
 
-* [Tutorial sull’autenticazione e l’autorizzazione di Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
+* [Esercitazione di autenticazione e autorizzazione di Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 Vedere una delle sezioni seguenti:
 
@@ -99,15 +99,15 @@ Per motivi di sicurezza, è possibile individuare il file della password in qual
 
 #### Se necessario, installare htpasswd
 
-Innanzitutto, verifica di disporre di Apache `htpasswd` L&#39;utilità viene installata come segue:
+Verificare innanzitutto che l&#39;utilità Apache `htpasswd` sia installata nel modo seguente:
 
-1. Immetti il seguente comando per determinare se `htpasswd` è già installato:
+1. Immettere il comando seguente per determinare se `htpasswd` è già installato:
 
    ```bash
    which htpasswd
    ```
 
-   Se viene visualizzato un percorso, questo viene installato; se il comando non restituisce alcun output, `htpasswd` non è installato.
+   Se viene visualizzato un percorso, questo verrà installato. Se il comando non restituisce alcun output, `htpasswd` non verrà installato.
 
 1. Se necessario, installare `htpasswd`:
 
@@ -116,7 +116,7 @@ Innanzitutto, verifica di disporre di Apache `htpasswd` L&#39;utilità viene ins
 
 #### Creare un file di password
 
-Immetti i seguenti comandi come utente con `root` privilegi:
+Immettere i seguenti comandi come utente con privilegi `root`:
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -134,7 +134,7 @@ Dove
 
   In questo esempio, utilizziamo l’utente del server web, ma la scelta dell’utente dipende da te.
 
-   * Elasticsearch di configurazione: l’utente è denominato `magento_elasticsearch` in questo esempio
+   * Elasticsearch di configurazione: l&#39;utente è denominato `magento_elasticsearch`
 
 * `<password file name>` deve essere un file nascosto (inizia con `.`) e deve riflettere il nome dell&#39;utente. Per ulteriori informazioni, consulta gli esempi più avanti in questa sezione.
 
@@ -166,7 +166,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticse
 
 #### Aggiungi altri utenti
 
-Per aggiungere un altro utente al file della password, immettere il comando seguente come utente con `root` privilegi:
+Per aggiungere un altro utente al file della password, immettere il comando seguente come utente con privilegi `root`:
 
 ```bash
 htpasswd /usr/local/apache/password/.htpasswd <username>
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Comunicazione sicura con Apache
 
-Questa sezione illustra come impostare [Autenticazione HTTP Basic](https://httpd.apache.org/docs/2.2/howto/auth.html). L’utilizzo congiunto dell’autenticazione TLS e HTTP Basic impedisce a chiunque di intercettare le comunicazioni con Elasticsearch, OpenSearch o con il server dell’applicazione.
+In questa sezione viene illustrato come configurare l&#39;autenticazione di base HTTP [HTTP](https://httpd.apache.org/docs/2.2/howto/auth.html). L’utilizzo congiunto dell’autenticazione TLS e HTTP Basic impedisce a chiunque di intercettare le comunicazioni con Elasticsearch, OpenSearch o con il server dell’applicazione.
 
 Questa sezione illustra come specificare chi può accedere al server Apache.
 
@@ -200,7 +200,7 @@ Questa sezione illustra come specificare chi può accedere al server Apache.
    </Proxy>
    ```
 
-1. Se hai aggiunto il precedente all’host virtuale protetto, rimuovi `Listen 8080` e `<VirtualHost *:8080>` direttive aggiunte in precedenza all&#39;host virtuale non protetto.
+1. Se hai aggiunto il precedente all&#39;host virtuale protetto, rimuovi `Listen 8080` e le direttive `<VirtualHost *:8080>` aggiunte in precedenza all&#39;host virtuale non protetto.
 
 1. Salva le modifiche, esci dall’editor di testo e riavvia Apache:
 

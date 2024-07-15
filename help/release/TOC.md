@@ -36,7 +36,7 @@ ht-degree: 3%
       - [2.4.2.](release-notes/open-source/2-4-2.md)
       - [2.4.1.](release-notes/open-source/2-4-1.md)
       - [2.4.0](release-notes/open-source/2-4-0.md)
-   - Versioni delle patch di sicurezza {#security-patches}
+   - Versioni patch di sicurezza {#security-patches}
       - [Panoramica](release-notes/security/overview.md)
       - [2.4.7.](release-notes/security/2-4-7-patches.md)
       - [2.4.6.](release-notes/security/2-4-6-patches.md)
@@ -45,7 +45,7 @@ ht-degree: 3%
       - [2.4.3.](release-notes/security/2-4-3-patches.md)
       - [2.4.2.](release-notes/security/2-4-2-patches.md)
 - [Disponibilità del prodotto](product-availability.md)
-- [Versioni beta](beta.md)
+- [Versioni di Beta](beta.md)
 - Pianificazione e criteri {#planning}
    - [Ciclo di vita](lifecycle-policy.md)
    - [Criterio di controllo delle versioni](versioning-policy.md)

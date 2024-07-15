@@ -18,9 +18,9 @@ Questo argomento illustra le nozioni di base sulla configurazione di più istanz
 
 ## Configurazione per eliminare più istanze di vernice
 
-Commerce elimina gli host Vernice dopo aver configurato gli host Vernice utilizzando [`magento setup:config:set`](../../installation/tutorials/deployment.md) comando.
+Commerce elimina gli host Varnish dopo aver configurato gli host Varnish utilizzando il comando [`magento setup:config:set`](../../installation/tutorials/deployment.md).
 
-Dovresti utilizzare il `--http-cache-hosts` per specificare un elenco separato da virgole di host e porte di ascolto di Vernice. (Non separare gli host con uno spazio).
+È necessario utilizzare il parametro `--http-cache-hosts` per specificare un elenco separato da virgole di host e porte di ascolto di Microsoft. (Non separare gli host con uno spazio).
 
 Il formato del parametro deve essere `<hostname or ip>:<listen port>`, dove è possibile omettere `<listen port>` se si tratta della porta 80.
 
@@ -30,8 +30,8 @@ Ad esempio:
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
-È quindi possibile eliminare tutti gli host Vernice quando si aggiorna la cache di Commerce (nota anche come _pulizia_ cache) nell’Admin o utilizzando la riga di comando.
+È quindi possibile eliminare tutti gli host Vernice quando si aggiorna la cache di Commerce (nota anche come _pulizia_ della cache) nell&#39;Admin o utilizzando la riga di comando.
 
-Per aggiornare la cache utilizzando Admin, fai clic su **SISTEMA** > Strumenti > **Gestione cache**, quindi fai clic su **Svuota cache Magento** nella parte superiore della pagina. (Puoi anche aggiornare singoli tipi di cache).
+Per aggiornare la cache utilizzando l&#39;amministratore, fare clic su **SYSTEM** > Strumenti > **Gestione cache**, quindi fare clic su **Svuota cache di Magento** nella parte superiore della pagina. (Puoi anche aggiornare singoli tipi di cache).
 
-Per aggiornare la cache di più istanze di Vernice da cli, utilizza [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comando come [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+Per aggiornare la cache di più istanze di Microsoft da cli, utilizzare il comando [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) come [proprietario del file system](../../installation/prerequisites/file-system/overview.md).

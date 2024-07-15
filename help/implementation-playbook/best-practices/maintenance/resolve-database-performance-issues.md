@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -29,17 +29,17 @@ Determinare se l&#39;esecuzione delle query MySQL è lenta. A seconda del piano 
 
 È possibile utilizzare MySQL per identificare e risolvere query con tempi di esecuzione lunghi su qualsiasi progetto di infrastruttura cloud di Adobe Commerce.
 
-1. Esegui il [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) dichiarazione.
-1. Se vengono visualizzate query con tempi di esecuzione lunghi, esegui [MySQL `EXPLAIN` e `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/) per ciascuno di essi, per scoprire cosa fa eseguire la query per un lungo periodo di tempo.
+1. Eseguire l&#39;istruzione [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html).
+1. Se vengono visualizzate query con tempi di esecuzione lunghi, eseguire [MySQL `EXPLAIN` e `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/) per ciascuna di esse, per individuare gli elementi che rendono la query eseguita per un periodo di tempo prolungato.
 1. In base ai problemi rilevati, procedi alla correzione della query in modo che venga eseguita più rapidamente.
 
 ### Analizzare le query utilizzando Percona Toolkit (solo per l&#39;architettura Pro)
 
 Se il progetto Adobe Commerce è implementato su un’architettura Pro, puoi utilizzare Percona Toolkit per analizzare le query.
 
-1. Esegui il `pt-query-digest --type=slowlog` comando rispetto ai log delle query lente di MySQL.
-   * Per individuare la posizione dei registri di query lente, consulta **[!UICONTROL Log locations > Service Logs]**(https://devdocs.magento.com/cloud/project/log-locations.html#service-logs) nella documentazione per gli sviluppatori.
-   * Consulta la [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) documentazione.
+1. Eseguire il comando `pt-query-digest --type=slowlog` nei registri query lente MySQL.
+   * Per trovare il percorso dei registri di query lente, consulta **[!UICONTROL Log locations > Service Logs]**(https://devdocs.magento.com/cloud/project/log-locations.html#service-logs) nella documentazione per gli sviluppatori.
+   * Consulta la documentazione di [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest).
 1. In base ai problemi rilevati, procedi alla correzione della query in modo che venga eseguita più rapidamente.
 
 ## Verifica che tutte le tabelle abbiano una chiave primaria
@@ -58,15 +58,15 @@ Per evitare questi problemi, definisci una chiave primaria per le tabelle che no
    SELECT table_catalog, table_schema, table_name, engine FROM information_schema.tables        WHERE (table_catalog, table_schema, table_name) NOT IN (SELECT table_catalog, table_schema, table_name FROM information_schema.table_constraints  WHERE constraint_type = 'PRIMARY KEY') AND table_schema NOT IN ('information_schema', 'pg_catalog');    
    ```
 
-1. Per qualsiasi tabella senza una chiave primaria, aggiungi una chiave primaria aggiornando il `db_schema.xml` (schema dichiarativo) con un nodo simile al seguente:
+1. Per qualsiasi tabella senza una chiave primaria, aggiungere una chiave primaria aggiornando `db_schema.xml` (schema dichiarativo) con un nodo simile al seguente:
 
    ```html
    <constraint xsi:type="primary" referenceId="PRIMARY">         <column name="id_column"/>     </constraint>    
    ```
 
-   Quando aggiungi il nodo, sostituisci il `referenceID` e `column name` variabili con valori personalizzati.
+   Quando aggiungi il nodo, sostituisci le variabili `referenceID` e `column name` con i valori personalizzati.
 
-Per ulteriori informazioni, consulta [Configura schema dichiarativo](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) nella documentazione per gli sviluppatori.
+Per ulteriori informazioni, consulta [Configurare lo schema dichiarativo](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) nella documentazione per gli sviluppatori.
 
 ## Identificare e rimuovere gli indici duplicati
 
@@ -82,11 +82,11 @@ SELECT s.INDEXED_COL,GROUP_CONCAT(INDEX_NAME) FROM (SELECT INDEX_NAME,GROUP_CONC
 
 La query restituisce i nomi delle colonne e i nomi di eventuali indici duplicati.
 
-I commercianti dell&#39;architettura Pro possono anche eseguire il controllo utilizzando Percona Toolkit  `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)` comando.
+I commercianti dell&#39;architettura Pro possono eseguire il controllo anche utilizzando il comando Percona Toolkit `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)`.
 
 ### Rimuovere gli indici duplicati
 
-Utilizzare il linguaggio SQL [Istruzione DROP INDEX](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) per rimuovere gli indici duplicati.
+Utilizzare l&#39;istruzione SQL [DROP INDEX](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) per rimuovere gli indici duplicati.
 
 ```SQL
 DROP INDEX

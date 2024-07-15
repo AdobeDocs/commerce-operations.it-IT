@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Esempi di architettura di riferimento globale
 
-In questo argomento vengono descritti i metodi comuni per organizzare un [architettura di riferimento globale (GRA)](overview.md) base di codice. Anche se il [pacchetti separati](#option-1-separate-packages) opzione è preferibile, alcune situazioni richiedono una delle altre opzioni descritte di seguito.
+In questo argomento vengono descritti i metodi comuni per organizzare una [base di codice per l&#39;architettura di riferimento globale (GRA)](overview.md). Anche se l&#39;opzione [pacchetti separati](#option-1-separate-packages) è preferita, alcune situazioni richiedono una delle altre opzioni descritte di seguito.
 
 ## Definizioni
 
@@ -23,11 +23,11 @@ In questo argomento vengono descritti i metodi comuni per organizzare un [archit
 
 ## Opzione 1: pacchetti separati
 
-Consulta [Struttura del progetto Compositore](composer/project-structure.md) best practice per impostare questo metodo.
+Consulta le [Best practice per la configurazione di questo metodo nella struttura del progetto del compositore](composer/project-structure.md).
 
-![Diagramma che illustra l’opzione dei pacchetti separati per l’architettura di riferimento globale](../../../assets/playbooks/gra-separate-packages.png)
+![Diagramma che illustra l&#39;opzione dei pacchetti separati per l&#39;architettura di riferimento globale](../../../assets/playbooks/gra-separate-packages.png)
 
-Il modo più flessibile per gestire i pacchetti GRA Composer è attraverso i metapackages. I metapacchetti contengono una `composer.json` solo file, che definisce altre dipendenze del pacchetto. Creare metapacchetti utilizzando [Packagist privato](https://packagist.com/) archivi.
+Il modo più flessibile per gestire i pacchetti GRA Composer è attraverso i metapackages. I metapacchetti contengono solo un file `composer.json`, che definisce altre dipendenze del pacchetto. Creare metapacchetti utilizzando [archivi Packagist privati](https://packagist.com/).
 
 ### Progetto principale `composer.json`
 
@@ -82,7 +82,7 @@ Il modo più flessibile per gestire i pacchetti GRA Composer è attraverso i met
 }
 ```
 
-Ogni modulo, Language Pack, tema e libreria dispone di un proprio archivio Git. Ogni archivio Git si sincronizza automaticamente con l’archivio Private Packagist e genera un pacchetto in tale archivio purché sia presente un `composer.json` nella directory principale dell’archivio Git.
+Ogni modulo, Language Pack, tema e libreria dispone di un proprio archivio Git. Ogni archivio Git si sincronizza automaticamente con l&#39;archivio del Packagist privato e genera un pacchetto in tale archivio purché nella radice dell&#39;archivio Git sia presente un file `composer.json`.
 
 ## Opzioni 2: pacchetti in blocco
 
@@ -109,7 +109,7 @@ La struttura del file all’interno della directory del fornitore deve essere si
             └── composer.json
 ```
 
-Il `composer.json` Il file deve essere simile al seguente:
+Il file `composer.json` deve essere simile al seguente:
 
 ```json
 {
@@ -138,25 +138,25 @@ Il `composer.json` Il file deve essere simile al seguente:
 
 Questa architettura utilizza quattro archivi Git per memorizzare il codice:
 
-- `core`: contiene l’installazione di base di Adobe Commerce. Viene utilizzato per aggiornare le versioni di Adobe Commerce.
-- `GRA`: contiene il codice GRA. Tutti i moduli GRA, i Language Pack, i temi delle etichette bianche e le librerie.
-- `brand/region`: ogni marchio o area geografica dispone di un proprio archivio con solo codice specifico del marchio o dell’area geografica.
-- `release`: tutte le operazioni precedenti vengono unite in questo archivio Git. Qui sono consentiti solo i commit di unione.
+- `core`: contiene l&#39;installazione di base di Adobe Commerce. Viene utilizzato per aggiornare le versioni di Adobe Commerce.
+- `GRA`: contiene codice GRA. Tutti i moduli GRA, i Language Pack, i temi delle etichette bianche e le librerie.
+- `brand/region`: ogni marchio o area geografica ha il proprio archivio con solo codice specifico per il marchio o l&#39;area geografica.
+- `release`: tutte le operazioni precedenti sono state unite in questo archivio Git. Qui sono consentiti solo i commit di unione.
 
-![Diagramma che illustra l’opzione Git divisa per l’architettura di riferimento globale](../../../assets/playbooks/gra-split-git.png)
+![Diagramma che illustra l&#39;opzione Git divisa per l&#39;architettura di riferimento globale](../../../assets/playbooks/gra-split-git.png)
 
 Per impostare questa opzione:
 
-1. Crea i quattro tipi di archivio in Git. Creare `core` e `GRA` archivi una sola volta. Crea un elemento `brand/region` e uno `release` per ogni marchio.
+1. Crea i quattro tipi di archivio in Git. Creare gli archivi `core` e `GRA` una sola volta. Creare un archivio `brand/region` e un archivio `release` per ogni marchio.
 
    Nomi repository suggeriti:
 
    - `m2-core`
    - `m2-gra`
-   - `m2-region-x`/`m2-brand-x` (ad esempio, `m2-emea`/`m2-adobe`)
-   - `m2-release-region-x`/`m2-release-brand-x` (ad esempio, `m2-release-emea`/`m2-release-adobe`)
+   - `m2-region-x`/`m2-brand-x` (ad esempio `m2-emea`/`m2-adobe`)
+   - `m2-release-region-x`/`m2-release-brand-x` (ad esempio `m2-release-emea`/`m2-release-adobe`)
 
-1. Creare un `release/` ed esegui quanto segue per creare una cronologia Git condivisa per tutti gli archivi.
+1. Creare una directory `release/` ed eseguire quanto segue per creare una cronologia Git condivisa per tutti gli archivi.
 
    ```bash
    git init
@@ -173,7 +173,7 @@ Per impostare questa opzione:
    git push region-x master
    ```
 
-1. Clona ogni repository, tranne `core`, in una directory diversa del computer.
+1. Clonare ogni repository, ad eccezione di `core`, in una directory diversa nel computer.
 
    ```bash
    git clone git@github.com:example-client/m2-release-brand-x.git
@@ -181,7 +181,7 @@ Per impostare questa opzione:
    git clone git@github.com:example-client/m2-gra.git
    ```
 
-1. [Installare Adobe Commerce con Composer](../../../installation/composer.md). Rimuovi il `.gitignore` file, aggiungi `core` remote, aggiungi e conferma il codice e invia.
+1. [Installa Adobe Commerce con Composer](../../../installation/composer.md). Rimuovi il file `.gitignore`, aggiungi il remoto `core`, aggiungi e conferma il codice e invia.
 
    ```bash
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition m2-core
@@ -196,18 +196,18 @@ Per impostare questa opzione:
    git push
    ```
 
-1. In `GRA` repository, creare le directory seguenti:
+1. Nell&#39;archivio `GRA` creare le directory seguenti:
 
    - `app/code/`
    - `app/design/`
    - `app/i18n/`
    - `lib/`
 
-1. Aggiungi il codice. Rimuovi il `.gitignore` file, aggiungi e conferma il codice, aggiungi il remoto e invia.
+1. Aggiungi il codice. Rimuovi il file `.gitignore`, aggiungi e conferma il codice, aggiungi il remoto e invia.
 
-1. In `brand/region` archivio. Effettua le stesse operazioni descritte in `GRA` e ricorda che i file devono essere univoci. Non è possibile includere lo stesso file sia in questo archivio che in `GRA` archivio.
+1. Nell&#39;archivio `brand/region`. Effettua le stesse operazioni eseguite nell&#39;archivio `GRA` e ricorda che i file devono essere univoci. Non è possibile includere lo stesso file sia in questo repository che in quello `GRA`.
 
-1. In `release` , applicare l&#39;unione.
+1. Nell&#39;archivio `release`, applicare l&#39;unione.
 
    ```bash
    git clone git@github.com:example-client/m2-release-brand-x.git
@@ -220,9 +220,9 @@ Per impostare questa opzione:
    git push
    ```
 
-1. Rimuovi il `.gitkeep` file.
+1. Rimuovi il file `.gitkeep`.
 
-1. Distribuire `release` nei server di produzione, test, controllo qualità e sviluppo. Aggiornamento `core`, `GRA`, e `brand` l&#39;esecuzione del codice è altrettanto semplice dei seguenti comandi:
+1. Distribuire l&#39;archivio `release` nei server di produzione, test, controllo qualità e sviluppo. L&#39;aggiornamento del codice `core`, `GRA` e `brand` è altrettanto semplice dell&#39;esecuzione dei seguenti comandi:
 
    ```bash
    git fetch --all
@@ -236,13 +236,13 @@ Questa strategia simula da vicino il funzionamento dell’archivio Git del Magen
 
 Tutto il codice viene sviluppato e testato in un unico archivio. L’automazione distilla i pacchetti da questo singolo archivio, che può essere installato su UAT e sugli ambienti di produzione utilizzando Composer.
 
-![Diagramma che illustra l’opzione monorepo per l’architettura di riferimento globale](../../../assets/playbooks/gra-monorepo1.png)
+![Diagramma che illustra l&#39;opzione monorepo per l&#39;architettura di riferimento globale](../../../assets/playbooks/gra-monorepo1.png)
 
 L’opzione monorepo ti offre la facilità di lavorare in un singolo archivio, fornendo al contempo la flessibilità di comporre le istanze con i pacchetti.
 
 Il controllo delle versioni e la distillazione dei pacchetti vengono eseguiti tramite automazione, utilizzando le azioni GitHub o GitLab.
 
-![Diagramma che illustra l’opzione monorepo per l’architettura di riferimento globale](../../../assets/playbooks/gra-monorepo2.png)
+![Diagramma che illustra l&#39;opzione monorepo per l&#39;architettura di riferimento globale](../../../assets/playbooks/gra-monorepo2.png)
 
 Per ulteriori informazioni su questa automazione, consulta le risorse seguenti:
 
@@ -255,16 +255,16 @@ Per ulteriori informazioni su questa automazione, consulta le risorse seguenti:
 
 ## Non mescolare strategie
 
-Non è consigliabile utilizzare un approccio combinato utilizzando Composer per i pacchetti GRA e `app/` directory per i pacchetti del marchio o dell’area geografica.
+Non è consigliabile utilizzare un approccio combinato utilizzando Composer per i pacchetti GRA e la directory `app/` per i pacchetti di marchio o area geografica.
 
-Non solo ottieni tutto _vantaggi_ ma anche tutti _svantaggi_ di entrambi i metodi. Dovresti scegliere una delle due (Git o Compositore) per lavorare in modo ottimale.
+Non solo ottieni tutti i _vantaggi_, ma anche tutti i _svantaggi_ di entrambi i metodi. Dovresti scegliere una delle due (Git o Compositore) per lavorare in modo ottimale.
 
 ## Soluzioni da evitare
 
 - **Convenzioni di denominazione dei moduli per indicare GRA o brand**
 
-  I moduli di denominazione per indicare GRA o marchio portano a una mancanza di flessibilità. Utilizza invece i metapacchetti Compositore per determinare a quale gruppo appartiene un modulo. Ad esempio, per il file VF del cliente, pacchetto `vf/meta-gra` contiene riferimenti a tutti i pacchetti GRA e può essere installato utilizzando `composer require vf/meta-gra` comando. Pacchetto `vf/meta-kipling` contiene riferimenti a tutti i colli specifici Kipling e al `vf/meta-gra` pacchetto. I moduli sono denominati `vf/module-sales` e `vf/module-sap` ad esempio. Questa convenzione di denominazione consente di spostare i pacchetti tra lo stato del marchio e lo stato GRA, con un impatto ridotto.
+  I moduli di denominazione per indicare GRA o marchio portano a una mancanza di flessibilità. Utilizza invece i metapacchetti Compositore per determinare a quale gruppo appartiene un modulo. Ad esempio, per il file VF del cliente, il pacchetto `vf/meta-gra` contiene riferimenti a tutti i pacchetti GRA e può essere installato utilizzando il comando `composer require vf/meta-gra`. Il pacchetto `vf/meta-kipling` contiene riferimenti a tutti i pacchetti specifici Kipling e al pacchetto `vf/meta-gra`. I moduli sono denominati ad esempio `vf/module-sales` e `vf/module-sap`. Questa convenzione di denominazione consente di spostare i pacchetti tra lo stato del marchio e lo stato GRA, con un impatto ridotto.
 
-- **Aggiornamenti di base di Adobe Commerce per istanza**
+- **Aggiornamenti principali di Adobe Commerce per istanza**
 
   Pianifica gli aggiornamenti di base di Adobe Commerce, inclusi gli aggiornamenti delle patch, per far sì che diversi marchi o aree geografiche vengano eseguiti il più vicino possibile. Il supporto di più versioni di Adobe Commerce per i moduli condivisi comporta il forking dei moduli a causa di vincoli di compatibilità e raddoppia lo sforzo di manutenzione. Per evitare questo sforzo maggiore, accertati che tutte le istanze siano in esecuzione sulla stessa versione di Adobe Commerce prima di continuare lo sviluppo regolare.

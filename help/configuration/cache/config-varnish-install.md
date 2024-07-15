@@ -14,15 +14,15 @@ ht-degree: 0%
 
 L&#39;installazione del software Vernice esula dallo scopo di questa guida. Per ulteriori informazioni sull&#39;installazione di Vernice, vedere:
 
-- [guida all’installazione](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
+- [guida all&#39;installazione](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
 - [Guide all&#39;installazione di vernice](https://www.varnish-cache.org/docs)
-- [Come installare Vernice (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
+- [Come installare Varnish (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >
 >Questo argomento è stato scritto per Varnish su CentOS e Apache 2.4. Se si imposta la vernice in un ambiente diverso, è probabile che alcuni comandi siano diversi. Per ulteriori informazioni, consulta la documentazione precedente.
 >
->Se si desidera installare i moduli di vernice (vmod), ad esempio la modalità saint, è consigliabile installare Vernice compilando il codice anziché installandolo da un pacchetto. Consulta [Modalità Saint](config-varnish-advanced.md#saint-mode) per ulteriori dettagli.
+>Se si desidera installare i moduli di vernice (vmod), ad esempio la modalità saint, è consigliabile installare Vernice compilando il codice anziché installandolo da un pacchetto. Per ulteriori dettagli, vedere [Modalità SAINT](config-varnish-advanced.md#saint-mode).
 
 ## Conferma la versione di vernice
 
@@ -32,4 +32,4 @@ Apri un terminale e immetti il seguente comando per visualizzare la versione di 
 varnishd -V
 ```
 
-Assicurati che [Adobe Commerce supporta](../../installation/system-requirements.md) la versione installata di Vernice prima di continuare. Se esegui una versione non supportata, devi passare a una versione supportata. Per ulteriori informazioni, consultare la documentazione di installazione di Vernice.
+Prima di continuare, assicurati che [Adobe Commerce supporti](../../installation/system-requirements.md) la versione installata di Vernice. Se esegui una versione non supportata, devi passare a una versione supportata. Per ulteriori informazioni, consultare la documentazione di installazione di Vernice.

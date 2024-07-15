@@ -37,16 +37,16 @@ Anche se il successo di un progetto IT dipende in larga misura dall’esperienza
 
 La struttura di questo playbook segue il ciclo di vita tipico di un progetto di implementazione Adobe Commerce. Questo semplifica la navigazione in tutto il documento, poiché i lettori possono passare immediatamente alla sezione pertinente di un progetto per tutte le informazioni pertinenti.
 
-- **Ambito progetto**: suddivisione delle principali parti interessate, processi, tempistiche e requisiti fondamentali affinché i brand possano comprenderli e completarli per un’implementazione di successo.
+- **Ambito del progetto**: suddivisione delle principali parti interessate, processi, tempistiche e requisiti critici affinché i brand possano comprenderli e completarli per una corretta implementazione.
 
-- **Sviluppo e controllo qualità**- Esaminiamo gli strumenti, le soluzioni, i processi e le metodologie testati e perfezionati in diverse implementazioni di Adobe Commerce, nonché i nostri consigli per individuare le soluzioni più adatte a specifiche esigenze e obiettivi aziendali.
+- **Sviluppo e controllo qualità**: una panoramica degli strumenti, delle soluzioni, dei processi e delle metodologie testati e perfezionati in diverse implementazioni di Adobe Commerce, nonché dei suggerimenti per individuare le soluzioni più adatte a specifiche esigenze e obiettivi aziendali.
 
-- **Pianificazione e governance**—Per avere successo è fondamentale creare un piano per la fornitura di una soluzione puntuale e nel rispetto del budget, che soddisfi le esigenze aziendali.
+- **Pianificazione e governance**: un tuffo nella creazione di un piano per la distribuzione di una soluzione nei tempi e nel budget previsti e che soddisfi le tue esigenze è fondamentale per il successo.
 
 - **Architettura e integrazioni**: funzionalità, architettura e integrazioni che rendono Adobe Commerce una delle piattaforme di e-commerce più affidabili e affidabili sul mercato.
 
-- **Infrastruttura e installazione**- Passando all&#39;attuale piattaforma, mettiamo in evidenza l&#39;infrastruttura e gli ambienti che alimentano Adobe Commerce e le soluzioni software che la rendono una piattaforma così solida.
+- **Infrastruttura e distribuzione**: spostandosi ulteriormente nella piattaforma effettiva, vengono evidenziate l&#39;infrastruttura e gli ambienti che alimentano Adobe Commerce e le soluzioni software che la rendono una piattaforma così solida.
 
-- **Avvio e cut-over**- Tattiche e azioni da pre-lancio a post-lancio che devono essere attuate per garantire la disponibilità del sito e il mantenimento del suo livello di efficacia dal primo giorno in poi.
+- **Processo di lancio e cut-over**: le tattiche e le azioni da pre-lancio a post-lancio che devono aver luogo per garantire che il sito venga attivato e mantenga il suo livello di efficacia dal primo giorno in poi.
 
-- **Supporto e manutenzione continui**- Dettagli sulla fase di transizione e sui tipi di modelli e SLA relativi a un piano di supporto continuo per continuare a far avanzare il marchio dopo il lancio.
+- **Supporto e manutenzione continui**—Dettagli sulla fase di transizione e sui tipi di modelli e SLA relativi a un piano di supporto continuo per continuare a portare avanti il tuo marchio dopo il lancio.

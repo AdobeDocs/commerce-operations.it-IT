@@ -26,7 +26,7 @@ Questo argomento approfondisce alcuni degli standard principali di sviluppo per 
 
 Anche se alcuni implementatori di soluzioni possono avere le proprie preferenze in metodologie, processi e strumenti, questo playbook si concentra sulle best practice e metodologie accettate che possono essere condivise nella maggior parte delle implementazioni.
 
-Come qualsiasi progetto IT di grandi dimensioni, Adobe Commerce è basato su standard di codifica che utilizzano best practice e standardizzazioni e standard stabiliti all’interno di Adobe Commerce [Codifica standard](https://developer.adobe.com/commerce/php/coding-standards/). Il rispetto di questi standard è importante per eliminare i bug e migliorare la qualità e la gestibilità del codice personalizzato.
+Come qualsiasi progetto IT di grandi dimensioni, Adobe Commerce è basato su standard di codifica che utilizzano best practice e standardizzazioni e standard stabiliti in Adobe Commerce [Coding Standard](https://developer.adobe.com/commerce/php/coding-standards/). Il rispetto di questi standard è importante per eliminare i bug e migliorare la qualità e la gestibilità del codice personalizzato.
 
 ## Adobe Commerce sull’infrastruttura cloud
 

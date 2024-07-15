@@ -50,4 +50,5 @@ Anche se le piattaforme di e-commerce sono al centro della maggior parte delle a
 
 Si consiglia ai rivenditori di utilizzare i sistemi migliori, ovvero di utilizzare il sistema migliore per ogni parte della loro attività. Nella maggior parte dei casi, la scelta di una piattaforma per eseguire tutti gli aspetti e le funzioni della tua azienda non soddisfa le tue aspettative.
 
-Al contrario, le aziende dovrebbero essere in grado di utilizzare qualsiasi numero di sistemi per i loro sistemi ERP, POS, 3PL ed e-commerce e di integrarli per sincronizzare inventario, ordini, clienti, articoli e dati di spedizione/tracciamento per automatizzare i processi aziendali. Le piattaforme SaaS basate su cloud spesso soddisfano questi requisiti aziendali con flessibilità e facilità.
+Al contrario, le aziende dovrebbero essere in grado di utilizzare un numero qualsiasi di sistemi per
+i loro sistemi ERP, POS, 3PL e e-commerce e integrano tali sistemi per sincronizzare inventario, ordini, clienti, articoli e dati di spedizione/tracciamento automatizzano i processi aziendali. Le piattaforme SaaS basate su cloud spesso soddisfano questi requisiti aziendali con flessibilità e facilità.

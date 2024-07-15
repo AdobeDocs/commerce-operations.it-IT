@@ -44,4 +44,4 @@ Una rassegna dei prodotti, dei prezzi e dei dati di inventario esistenti di un�
 
 ## Piano di progetto
 
-Un piano di progetto descrive le attività di alto livello e le tempistiche associate all’iniziativa di implementazione, comprese le integrazioni sovrapposte e le dipendenze di terze parti. Il piano può anche includere una matrice delle responsabilità, oppure [RACI](../planning/ownership.md), grafico che mostra chi è responsabile, responsabile, consultato e informato.
+Un piano di progetto descrive le attività di alto livello e le tempistiche associate all’iniziativa di implementazione, comprese le integrazioni sovrapposte e le dipendenze di terze parti. Il piano può anche includere una matrice delle responsabilità, o [RACI](../planning/ownership.md), un grafico che mostra chi è responsabile, responsabile, consultato e informato.

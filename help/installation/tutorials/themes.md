@@ -12,22 +12,22 @@ ht-degree: 0%
 
 # Disinstalla temi
 
-Prima di utilizzare questo comando, è necessario conoscere il percorso relativo del tema. I temi si trovano in una sottodirectory di `<magento_root>/app/design/<area name>`. È necessario specificare il percorso del tema che inizia con l&#39;area, che è `frontend` (per i temi della vetrina) o `adminhtml` (per i temi Amministratore).
+Prima di utilizzare questo comando, è necessario conoscere il percorso relativo del tema. I temi si trovano in una sottodirectory di `<magento_root>/app/design/<area name>`. È necessario specificare il percorso del tema che inizia con l&#39;area, che è `frontend` (per i temi storefront) o `adminhtml` (per i temi Admin).
 
-Ad esempio, il percorso del tema Luma fornito con Adobe Commerce è `frontend/Magento/luma`.
+Il percorso del tema Luma fornito con Adobe Commerce, ad esempio, è `frontend/Magento/luma`.
 
-Per ulteriori informazioni sui temi, vedi [struttura del tema](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
+Per ulteriori informazioni sui temi, vedere [struttura tema](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
 ## Panoramica sulla disinstallazione dei temi
 
 Questa sezione illustra come disinstallare uno o più temi, includendo facoltativamente il codice dei temi dal file system. È possibile creare prima i backup in modo da poter ripristinare i dati in un secondo momento.
 
-Questo comando disinstalla *solo* temi specificati in `composer.json`; in altre parole, i temi forniti come pacchetti Compositore. Se il tema non è un pacchetto Compositore, è necessario disinstallarlo manualmente:
+Questo comando disinstalla *solo* temi specificati in `composer.json`; in altre parole, temi forniti come pacchetti Composer. Se il tema non è un pacchetto Compositore, è necessario disinstallarlo manualmente:
 
-* Aggiornamento di `parent` informazioni sui nodi in `theme.xml` per rimuovere i riferimenti al tema.
+* Aggiornamento delle informazioni sul nodo `parent` in `theme.xml` per rimuovere i riferimenti al tema.
 * Rimozione del codice del tema dal file system.
 
-  [Ulteriori informazioni sull’ereditarietà dei temi](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [Ulteriori informazioni sull&#39;ereditarietà del tema](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
 ## Disinstalla temi
 
@@ -39,9 +39,9 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 Dove
 
-* `{theme path}` è il percorso relativo del tema, a partire dal nome dell’area. Ad esempio, il percorso del tema vuoto fornito con Adobe Commerce è `frontend/Magento/blank`.
-* `--backup-code` esegue il backup della base di codice, come descritto nei paragrafi seguenti.
-* `--clear-static-content` pulitura generata [file di visualizzazione statica](../../configuration/cli/static-view-file-deployment.md), necessario per la corretta visualizzazione dei file di visualizzazione statica.
+* `{theme path}` è il percorso relativo del tema, a partire dal nome dell&#39;area. Il percorso del tema vuoto fornito con Adobe Commerce, ad esempio, è `frontend/Magento/blank`.
+* `--backup-code` esegue il backup della base di codice come descritto nei paragrafi seguenti.
+* `--clear-static-content` pulisce i [file di visualizzazione statica](../../configuration/cli/static-view-file-deployment.md) generati, necessari per la corretta visualizzazione dei file di visualizzazione statica.
 
 Il comando esegue le seguenti operazioni:
 
@@ -54,17 +54,17 @@ Il comando esegue le seguenti operazioni:
 1. Verifica che il tema non sia utilizzato; se è utilizzato, il comando termina.
 1. Verifica che il tema non sia la base del tema virtuale; se è la base di un tema virtuale, il comando termina.
 1. Mette l&#39;archivio in modalità di manutenzione.
-1. Se `--backup-code` , eseguendo il backup della base di codice, ad esclusione della `pub/static`, `pub/media`, e `var` directory.
+1. Se si specifica `--backup-code`, eseguire il backup della codebase, escludendo le directory `pub/static`, `pub/media` e `var`.
 
    Il nome del file di backup è `var/backups/<timestamp>_filesystem.tgz`
 
-   È possibile ripristinare i backup in qualsiasi momento utilizzando [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
+   È possibile ripristinare i backup in qualsiasi momento utilizzando il comando [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files).
 
-1. Rimuove i temi dal `theme` tabella di database.
-1. Rimuovi temi dalla base di codice tramite `composer remove`.
+1. Rimuove i temi dalla tabella del database `theme`.
+1. Rimuovere i temi dalla base di codice utilizzando `composer remove`.
 1. Pulisce la cache.
 1. Pulisce le classi generate
-1. Se `--clear-static-content` è specificato, pulisce [file di visualizzazione statica generati](../../configuration/cli/static-view-file-deployment.md).
+1. Se si specifica `--clear-static-content`, pulisce [file di visualizzazione statica generati](../../configuration/cli/static-view-file-deployment.md).
 
 Ad esempio, se tenti di disinstallare un tema da cui dipende un altro tema, viene visualizzato il seguente messaggio:
 
@@ -103,4 +103,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->Per disinstallare un tema amministratore, è necessario rimuoverlo anche dalla configurazione dell’iniezione di dipendenza del componente, `<component root directory>/etc/di.xml`.
+>Per disinstallare un tema amministratore, è necessario rimuoverlo anche dalla configurazione dell&#39;iniezione di dipendenza del componente, `<component root directory>/etc/di.xml`.

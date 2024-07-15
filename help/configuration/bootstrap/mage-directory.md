@@ -4,20 +4,20 @@ description: Utilizzare la variabile MAGE_DIRS per impostare una matrice di perc
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
 
 # Percorsi directory base
 
-Il `MAGE_DIRS` La variabile di ambiente consente di specificare percorsi di directory di base personalizzati e frammenti di URL di base utilizzati dall’applicazione Commerce per creare percorsi assoluti a vari file o per generare URL.
+La variabile di ambiente `MAGE_DIRS` consente di specificare percorsi di directory di base personalizzati e frammenti di URL di base utilizzati dall&#39;applicazione Commerce per creare percorsi assoluti a vari file o per generare URL.
 
 ## Imposta DIRS_IMMAGINE
 
-Specifica un array associativo da cui le chiavi sono costanti [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] I valori e sono rispettivamente percorsi assoluti delle directory o dei relativi percorsi URL.
+Specifica un array associativo in cui le chiavi sono costanti di [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] e i valori sono rispettivamente percorsi assoluti delle directory o dei relativi percorsi URL.
 
-È possibile impostare `MAGE_DIRS` in uno dei seguenti modi:
+È possibile impostare `MAGE_DIRS` in uno dei modi seguenti:
 
 - [Imposta il valore dei parametri di bootstrap](../bootstrap/set-parameters.md)
 - Utilizza uno script di punto di ingresso personalizzato come il seguente:
@@ -48,7 +48,7 @@ Specifica un array associativo da cui le chiavi sono costanti [\\Magento\\App\\F
   $bootstrap->run($app);
   ```
 
-L&#39;esempio precedente imposta i percorsi per `[cache]` e `[media]` directory in `/mnt/nfs/cache` e `/mnt/nfs/media`, rispettivamente.
+L&#39;esempio precedente imposta i percorsi per le directory `[cache]` e `[media]` rispettivamente su `/mnt/nfs/cache` e `/mnt/nfs/media`.
 
 <!-- link definitions -->
 

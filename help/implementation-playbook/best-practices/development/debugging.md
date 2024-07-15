@@ -3,13 +3,13 @@ title: Best practice per il debug
 description: Scopri le tecniche per risolvere i problemi comuni di sviluppo di Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1139'
 ht-degree: 0%
 
 ---
-
 
 # Best practice per il debug per Adobe Commerce
 
@@ -22,10 +22,10 @@ Questa sezione descrive i problemi più comuni che potresti riscontrare durante 
 ### Cache
 
 - Svuota la cache prima di ulteriori indagini
-- Considera la cache APC, CDN, vernice, codice generato e il `var/view_preprocessed` e `pub/static/` directory
-- Arresta e riavvia i gestori code dopo lo svuotamento della cache o la modifica del codice
+- Considera la cache APC, CDN, Varnish, il codice generato e le `var/view_preprocessed` directory and `pub/static/`
+- Interruzione e riavviare i gestori coda dopo lo svuotamento della cache o la modifica del codice
 
-Il codice di esempio seguente fornisce comandi utili relativi alla gestione della cache (non eseguire in ambienti di produzione):
+Nell&#39;esempio di codice riportato di seguito vengono forniti utili comandi relativi alla gestione della cache (da non eseguire in ambienti di produzione):
 
 ```bash
 # restart php-fpm to flush APC
@@ -72,11 +72,11 @@ sudo kill <process_id>
 
 ### Dati indicizzati
 
-Reindicizza tutto se il problema potrebbe essere correlato all’indice. Il debug dei dati indicizzati si verifica in genere in ambienti non di produzione. Negli ambienti di produzione, potrebbe essere utile analizzare l’origine del disallineamento dell’indice prima di reindicizzarlo. Le caratteristiche dello stato difettoso possono dirvi qualcosa sull&#39;origine del problema.
+Reindicizza tutto se il problema può essere correlato all&#39;indice. Il debug dei dati indicizzati avviene tipicamente in ambienti non di produzione. Negli ambienti di produzione, è possibile esaminare l&#39;origine del disallineamento dell&#39;indice prima di reindicizzare. Le caratteristiche dello stato difettoso possono dirvi qualcosa sull&#39;origine del problema.
 
 ### Compositore
 
-È possibile che il codice sia obsoleto a causa di una modifica del ramo o a causa di file core modificati in un precedente tentativo di debug. Per eliminare potenziali problemi, eseguire i comandi seguenti:
+È possibile che il codice non sia aggiornato a causa di una modifica del ramo o di file core modificati in un precedente tentativo di debug. Per eliminare potenziali problemi, esegui i seguenti comandi:
 
 ```bash
 rm -rf vendor/*
@@ -84,9 +84,9 @@ composer clear-cache
 composer install
 ```
 
-### Contenuto generato
+### contenuto generata
 
-Rigenera i file front-end prima di eseguire il debug del contenuto generato in JS, CSS, immagini, traduzioni e altri file.
+Ricostruisci i file front-end prima di eseguire il debug dei contenuto generati in JS, CSS, immagini, traduzioni e altri file.
 
 ```bash
 rm -rf generated/* var/cache/* var/page_cache/* var/session/* var/view_preprocessed/* pub/static/*
@@ -96,7 +96,7 @@ bin/magento cache:flush
 
 ### Modalità sviluppatore
 
-Verificare che l&#39;installazione locale sia in `developer` modalità.
+Verificare che l&#39;installazione locale sia in modalità `developer`.
 
 ### Nuovo modulo
 
@@ -108,9 +108,9 @@ Se hai creato un modulo, verifica la presenza dei seguenti problemi:
   bin/magento module --enable Your_Module
   ```
 
-  Controlla la `app/etc/config.php` per il nuovo modulo.
+  Controlla il file `app/etc/config.php` per il nuovo modulo.
 
-- Controllare la nidificazione della struttura del file e della directory. Ad esempio, sono i file di layout nella `view/layout/` invece del `view/frontend/layout` directory? I modelli sono in `view/frontend/template` invece del `view/frontend/templates` directory?
+- Controllare la nidificazione della struttura del file e della directory. Ad esempio, i file di layout si trovano nella directory `view/layout/` invece che nella directory `view/frontend/layout`? I modelli si trovano nella directory `view/frontend/template` invece che nella directory `view/frontend/templates`?
 
 ## Risoluzione dei problemi: Suddivisione in parti uguali
 
@@ -118,9 +118,9 @@ Se i soliti sospetti non offrono una soluzione al problema, il modo più veloce 
 
 Vedere i seguenti diagrammi:
 
-![Diagramma Bisect](../../../assets/playbooks/bisect.png)
+![Diagramma bisettile](../../../assets/playbooks/bisect.png)
 
-![Diagramma Bisect](../../../assets/playbooks/bisect2.png)
+![Diagramma bisettile](../../../assets/playbooks/bisect2.png)
 
 Esistono diversi approcci alla bisezione, ma l’Adobe consiglia di seguire questo ordine:
 
@@ -132,12 +132,12 @@ Esistono diversi approcci alla bisezione, ma l’Adobe consiglia di seguire ques
 
 Se il problema non è correlato al codice, eliminare prima i blocchi di grandi dimensioni. Alcuni dei blocchi più grandi a cui pensare includono:
 
-- **framework Adobe Commerce**- Il problema è relativo ad Adobe Commerce o potrebbe essere correlato a un altro sistema connesso?
-- **Server e client**- Cancella la cache e l&#39;archiviazione del browser. Il problema è risolto? Questo potrebbe escludere una causa relativa al server. Il problema esiste ancora? Non è necessario sprecare altro tempo nel debug del browser.
-- **Sessione**- Il problema si verifica per ogni utente? In caso contrario, il problema potrebbe essere limitato ad argomenti relativi alla sessione o al browser.
-- **Cache**- La disattivazione di tutte le cache comporta delle modifiche? In tal caso, puoi concentrarti su argomenti relativi alla cache.
-- **Database**: il problema si verifica in ogni ambiente che esegue lo stesso codice? In caso contrario, cercare problemi nella configurazione e altri argomenti correlati al database.
-- **Codice**- Se il problema non è stato risolto, cercare i problemi di codice.
+- **Framework Adobe Commerce**: il problema è relativo ad Adobe Commerce o potrebbe essere correlato a un altro sistema connesso?
+- **Server e client** - Cancella la cache e l&#39;archiviazione del browser. Il problema è risolto? Questo potrebbe escludere una causa relativa al server. Il problema esiste ancora? Non è necessario sprecare altro tempo nel debug del browser.
+- **Sessione**: il problema si verifica per ogni utente? In caso contrario, il problema potrebbe essere limitato ad argomenti relativi alla sessione o al browser.
+- **Cache**: la disattivazione di tutte le cache comporta delle modifiche? In tal caso, puoi concentrarti su argomenti relativi alla cache.
+- **Database**: il problema si verifica in tutti gli ambienti che eseguono lo stesso codice? In caso contrario, cercare problemi nella configurazione e altri argomenti correlati al database.
+- **Codice** - Cercare i problemi di codice se nessuno dei problemi sopra indicati ha risolto il problema.
 
 ### Passaggio 2: eseguire il bisect per commit
 
@@ -148,7 +148,7 @@ Se il problema è iniziato tra ora e due mesi fa, riporta il codice a due mesi f
 ### Passaggio 3: creare un file Bisect by
 
 - Dividi Adobe Commerce per tipi di file (core e non-core). Innanzitutto, disabilita tutti i moduli cliente e marketplace. Il problema esiste ancora? Molto probabilmente si tratta di un problema non fondamentale.
-- Abilita nuovamente (approssimativamente) metà dei moduli nel `app/etc/config.php` file. Presta attenzione alle dipendenze. È consigliabile abilitare i cluster di moduli con lo stesso argomento contemporaneamente. Il problema esiste ancora?
+- Abilitare di nuovo circa la metà dei moduli nel file `app/etc/config.php`. Presta attenzione alle dipendenze. È consigliabile abilitare i cluster di moduli con lo stesso argomento contemporaneamente. Il problema esiste ancora?
 - Attiva un quarto dei moduli rimanenti. Il problema esiste ancora? Disattiva metà di ciò che hai abilitato. Questo metodo può aiutarti a isolare la causa principale in un singolo modulo.
 
 ## Risparmi di tempo
@@ -157,19 +157,19 @@ Oltre alle tecniche di risoluzione dei problemi, questa sezione fornisce alcune 
 
 ### Limita dati
 
-Valuta se è necessario il catalogo completo o tutte le visualizzazioni dello store per replicare il problema. È possibile eseguire il debug dei problemi di indicizzazione relativi a un clone di database in cui è stato rimosso il 95% del catalogo prima di avviare il debug. Questo metodo consente di risparmiare molto tempo durante i processi di indicizzazione. Crea un duplicato del database client con un numero di archivi e un catalogo ridotti. Questo potrebbe valere anche per altre entità (come i clienti) a seconda dell’area di cui si sta eseguendo il debug.
+Valuta se hai bisogno dell&#39;intero catalogo o di tutte le store viste per replicare il problema. È possibile debug problemi di indicizzazione con un clone di database in cui è stato rimosso il 95% del catalogo prima di iniziare il debug. Questo metodo consente di risparmiare molto tempo durante i processi di indicizzazione. Crea un duplicato del database client con conteggio store e catalogo ridotti. Ciò può essere applicato anche ad altre entità (ad esempio i clienti) a seconda dell&#39;area di cui si esegue il debug.
 
-### Richiedi ulteriori informazioni
+### Richiedi maggiori informazioni
 
-A volte, un passaggio facile da dimenticare tra tutto il codice e il lavoro tecnico: chiedere ulteriori informazioni. Acquisizioni a schermo intero, un video, una videoconferenza chat con la persona che ha identificato il problema, passaggi di replica, domande se altre cose apparentemente non importanti sono accadute intorno all&#39;evento problematico. Chiedi cosa si aspettava che accadesse. Si tratta davvero di un bug o forse solo di un&#39;incomprensione del modo in cui funziona il codice?
+A volte, un passo facile da dimenticare in mezzo a tutto il codice e il lavoro tecnico: chiedere maggiori informazioni. Acquisizioni a schermo intero, un video, una chat in videoconferenza con la persona che ha identificato il problema, passaggi di replica, domande sul fatto che altre cose apparentemente non importanti siano accadute intorno all&#39;evento problematico. Chiedi cosa qualcuno si aspettava che accadesse. Si tratta davvero di un bug o forse solo di un&#39;incomprensione del modo in cui funziona il codice?
 
 ### Lingua e interpretazione
 
-La descrizione del problema è chiara? Sei sicuro che nessun termine o descrizione possa essere interpretato in più modi? Se sì, assicurati di parlare della stessa cosa.
+La descrizione del problema è chiara? Sei sicuro che nessun termine o descrizione possa essere interpretato in più modi? Se è così, assicurati di parlare della stessa cosa.
 
-### Ricerca Internet
+### Internet ricerca
 
-Eseguire una ricerca su Internet con i termini relativi al problema. È probabile che un altro utente abbia già riscontrato lo stesso problema. Cerca in [Problemi relativi a Adobe Commerce GitHub](https://github.com/magento/magento2/issues).
+Eseguire una ricerca su Internet con i termini relativi al problema. È probabile che un altro utente abbia già riscontrato lo stesso problema. Cerca nei [problemi GitHub di Adobe Commerce](https://github.com/magento/magento2/issues).
 
 ### Fai una pausa
 
@@ -177,7 +177,7 @@ Se si sta cercando un problema troppo a lungo, può essere difficile trovare una
 
 ## Strumenti
 
-Strumenti CLI magerun n98 ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) forniscono funzionalità utili per lavorare con Adobe Commerce dalla riga di comando. In particolare, i seguenti comandi:
+Gli strumenti CLI n98 magerun ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) forniscono funzionalità utili per l&#39;utilizzo di Adobe Commerce dalla riga di comando. In particolare, i seguenti comandi:
 
 ```bash
 n98-magerun2.phar dev:console
@@ -191,7 +191,7 @@ n98-magerun2.phar index:trigger:recreate
 
 Negli argomenti seguenti vengono forniti snippet di codice che possono essere utilizzati per registrare o identificare i problemi nei progetti Commerce.
 
-### Verifica se un file XML è utilizzato da Commerce
+### Controlla se Commerce utilizza un file XML
 
 Aggiungi un errore di sintassi evidente in un file XML per verificare se è utilizzato. Apri un tag e non chiuderlo, ad esempio:
 

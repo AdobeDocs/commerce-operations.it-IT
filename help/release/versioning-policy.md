@@ -11,12 +11,12 @@ ht-degree: 0%
 
 # Criteri di rilascio di Adobe Commerce
 
-Adobe Commerce utilizza [controllo delle versioni semantiche](https://semver.org/) a livello di singolo modulo (ad esempio `magento/framework 101.1.1`), ma non per il numero di versione marketing. Ad esempio:
+Adobe Commerce utilizza [il controllo delle versioni semantiche](https://semver.org/) a livello del singolo modulo (ad esempio `magento/framework 101.1.1`), ma non per il numero di versione di marketing. Ad esempio:
 
-- **Versione PRINCIPALE**—2
-- **Versione secondaria**—2,4
-- **Versione di PATCH**—2.4.5
-   - **Versione patch di SICUREZZA**—2,4,5-p1
+- **Versione principale**—2
+- **Versione secondaria**—2.4
+- **versione di PATCH**—2.4.5
+   - **Versione patch di sicurezza**—2.4.5-p1
       - Correzione di bug di sicurezza
       - Miglioramento della sicurezza
 - **Versione patch BETA**—2.4.7-beta2
@@ -48,19 +48,19 @@ Le seguenti linee guida si applicano alle versioni patch:
 
 {{$include /help/_includes/security-patch-release-overview.md}}
 
-## Versione patch BETA
+## Versione patch di Beta
 
 Le versioni di disponibilità pre-generale delle funzioni di Adobe Commerce sono rese pubbliche a tutti i clienti Adobe Commerce e ai partner Adobe. Consente un tempo aggiuntivo prima della disponibilità generale per rivedere il codice e i componenti interessati.
 
-I rilasci beta possono contenere difetti e sono forniti &quot;COSÌ COM’È&quot; senza alcuna garanzia. Adobe non avrà alcun obbligo di mantenere, correggere, aggiornare, modificare, modificare o supportare in altro modo (tramite i servizi di supporto Adobe o in altro modo) le versioni beta. Si consiglia ai clienti di prestare cautela e di non fare affidamento in alcun modo sul corretto funzionamento o sulle prestazioni delle versioni beta e/o di qualsiasi documentazione o materiale di accompagnamento. Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del Cliente.
+I rilasci di Beta possono contenere difetti e vengono forniti &quot;COSÌ COME SONO&quot; senza alcuna garanzia. Adobe non avrà alcun obbligo di mantenere, correggere, aggiornare, modificare, modificare o supportare in altro modo (tramite i servizi di supporto Adobe o in altro modo) le versioni di Beta. Si consiglia ai clienti di prestare cautela e di non fare affidamento in alcun modo sul corretto funzionamento o sulle prestazioni delle versioni di Beta e/o di qualsiasi documentazione o materiale di accompagnamento. Di conseguenza, qualsiasi utilizzo delle versioni di Beta è interamente a rischio del Cliente.
 
 ## Estensibilità, infrastruttura e servizi
 
-Versioni future che contengono nuove funzioni e aggiornamenti di funzionalità forniti come servizi indipendenti, separati dalle versioni patch. Alcuni esempi includono tecnologie di estensibilità come API Mesh and Eventing, prodotti SaaS come Product Recommendations e Live Search, moduli indipendenti come B2B e PWA Studi e aggiornamenti ai nostri servizi e infrastrutture di hosting cloud.
+Versioni future che contengono nuove funzioni e aggiornamenti di funzionalità forniti come servizi indipendenti, separati dalle versioni patch. Alcuni esempi includono tecnologie di estensibilità come API Mesh and Eventing, prodotti SaaS come Product Recommendations e Live Search, moduli indipendenti come B2B e PWA Studio e aggiornamenti ai nostri servizi e infrastrutture di hosting cloud.
 
 ## Hotfix
 
-Gli hotfix sono patch che contengono problemi di sicurezza ad alto impatto o correzioni di qualità, come le correzioni a vulnerabilità pari a zero giorni, che interessano molti commercianti. Adobe rilascia gli hotfix per le versioni di Adobe Commerce ancora supportate e interessate da problemi critici di sicurezza o qualità, in base alle esigenze. Gli hotfix vengono pubblicati in [Sezione Problemi noti](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) della nostra Knowledge Base. Queste correzioni sono incluse nella prossima versione pianificata della patch.
+Gli hotfix sono patch che contengono problemi di sicurezza ad alto impatto o correzioni di qualità, come le correzioni a vulnerabilità pari a zero giorni, che interessano molti commercianti. Adobe rilascia gli hotfix per le versioni di Adobe Commerce ancora supportate e interessate da problemi critici di sicurezza o qualità, in base alle esigenze. Gli hotfix vengono pubblicati nella [sezione Problemi noti](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) della Knowledge Base. Queste correzioni sono incluse nella prossima versione pianificata della patch.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Gli hotfix sono patch che contengono problemi di sicurezza ad alto impatto o cor
 
 ## Singola patch
 
-Le singole patch contengono correzioni di qualità a basso impatto per un problema specifico. Queste correzioni vengono applicate alle versioni secondarie supportate di Adobe Commerce. Adobe rilascia singole patch in base alle esigenze di Adobe Commerce in conformità con [Criteri del ciclo di vita del software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+Le singole patch contengono correzioni di qualità a basso impatto per un problema specifico. Queste correzioni vengono applicate alle versioni secondarie supportate di Adobe Commerce. Adobe rilascia singole patch in base alle esigenze di Adobe Commerce in conformità con i nostri [criteri del ciclo di vita del software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Le singole patch contengono correzioni di qualità a basso impatto per un proble
 
 ## Patch personalizzata
 
-Creato da personale non Adobe per risolvere un problema o modificare il codice Adobe Commerce per vari motivi. Le patch personalizzate vengono distribuite tramite [Strumento Patch di qualità](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+Creato da personale non Adobe per risolvere un problema o modificare il codice Adobe Commerce per vari motivi. Le patch personalizzate vengono distribuite tramite lo strumento [Patch di qualità](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
 
 ## Argomenti correlati
 

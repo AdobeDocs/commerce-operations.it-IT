@@ -4,7 +4,8 @@ description: Scopri come e quando modificare il codice PHP di base di Adobe Comm
 role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2023-12-8
-source-git-commit: ab02552939d595627f0de83b8508c7cd21777642
+exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
+source-git-commit: d47567a8d69ccdae3db01e964f1db12e8ae26717
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 0%
@@ -46,7 +47,7 @@ index 51b68411d40..ac4a3468322 100644
 
 #### Cosa può essere modificato con una patch
 
-Qualsiasi cosa. Letteralmente, qualsiasi carattere all’interno di un file di destinazione può essere modificato. Le patch non sono limitate a un particolare tipo di file o linguaggio di codice. In genere, si utilizza una patch per eseguire il targeting dei file all’interno di `vendor` directory. 
+Qualsiasi cosa. Letteralmente, qualsiasi carattere all’interno di un file di destinazione può essere modificato. Le patch non sono limitate a un particolare tipo di file o linguaggio di codice. In genere, si utilizza una patch per eseguire il targeting dei file nella directory `vendor`. 
 
 #### Quando usare un cerotto
 
@@ -69,7 +70,7 @@ Va notato che (solitamente) la nuova classe PHP che sostituisce la classe PHP or
 
 #### Dichiarare una preferenza
 
-Dichiarare una preferenza è un processo abbastanza semplice. È necessario aggiungere una singola riga di codice a un `di.xml` in un modulo. Questa operazione può essere eseguita a livello globale o in qualsiasi &quot;area&quot; di Adobe Commerce, ad esempio `frontend`, `adminhtml`, `graphql`, `webapi_rest`, e `crontab`.
+Dichiarare una preferenza è un processo abbastanza semplice. È necessario aggiungere una singola riga di codice a un file `di.xml` all&#39;interno di un modulo. Questa operazione può essere eseguita a livello globale o all&#39;interno di qualsiasi &quot;area&quot; Adobe Commerce, ad esempio `frontend`, `adminhtml`, `graphql`, `webapi_rest` e `crontab`.
 
 ```xml
 <preference for="Magento\Elasticsearch7\SearchAdapter\Adapter" type="Vendor\Namespace\Adapter\AlgoliaElasticSearch7Adapter"/>
@@ -105,11 +106,11 @@ Le preferenze sono un modo ingordo per modificare il codice e devono essere util
 
 Un osservatore è il concetto di listener di eventi, presente in molte applicazioni, piattaforme, librerie e linguaggi di codifica. Il concetto non è univoco per la piattaforma Adobe Commerce. Gli osservatori sono stati inseriti nella piattaforma fin dai Magenti 1 e sono considerati la scelta principale per modificare il codice di base e il codice di terze parti. 
 
-La base di codice core e qualsiasi modulo di terze parti possono inviare un evento in un luogo scelto nel codice. L&#39;osservatore, che è dichiarato in un `events.xml` e ascolta l’evento inviato per nome, può funzionare a livello globale o essere vincolato a qualsiasi &quot;area&quot; di Adobe Commerce, ad esempio `frontend`, `adminhtml`, `graphql`, `webapi_rest`, e `crontab`.
+La base di codice core e qualsiasi modulo di terze parti possono inviare un evento in un luogo scelto nel codice. L&#39;osservatore, dichiarato in un file `events.xml` e in ascolto dell&#39;evento inviato per nome, può lavorare a livello globale o essere vincolato a qualsiasi &quot;area&quot; di Adobe Commerce, ad esempio `frontend`, `adminhtml`, `graphql`, `webapi_rest` e `crontab`.
 
 #### Come dichiarare un osservatore
 
-Gli osservatori possono essere configurati in un’area globale o specifica di un’area `events.xml` file.
+Gli osservatori possono essere configurati in un file `events.xml` globale o specifico per l&#39;area.
 
 ```xml
     <event name="sales_model_service_quote_submit_before">
@@ -164,11 +165,11 @@ Inoltre, un altro fattore limitante per gli osservatori è che l’evento inviat
 
 ### Plug-in
 
-Un plug-in è un concetto flessibile introdotto nella piattaforma Adobe Commerce. Consente di intercettare, sostituire e modificare qualsiasi metodo PHP pubblico. I plug-in consentono di modificare gli argomenti che entrano in un metodo prima dell&#39;esecuzione del metodo di destinazione, di modificare il risultato dopo l&#39;esecuzione del metodo di destinazione o di sostituire completamente il metodo di destinazione. Puoi modificare molti metodi di una classe PHP di destinazione all&#39;interno di un singolo file di plug-in. Inoltre, è possibile utilizzare `$subject` per eseguire tutti i metodi pubblici esistenti nella classe PHP di destinazione.
+Un plug-in è un concetto flessibile introdotto nella piattaforma Adobe Commerce. Consente di intercettare, sostituire e modificare qualsiasi metodo PHP pubblico. I plug-in consentono di modificare gli argomenti che entrano in un metodo prima dell&#39;esecuzione del metodo di destinazione, di modificare il risultato dopo l&#39;esecuzione del metodo di destinazione o di sostituire completamente il metodo di destinazione. Puoi modificare molti metodi di una classe PHP di destinazione all&#39;interno di un singolo file di plug-in. È inoltre possibile utilizzare l&#39;argomento `$subject` per eseguire qualsiasi metodo pubblico esistente nella classe PHP di destinazione.
 
 #### Come dichiarare un plug-in
 
-I plug-in possono essere configurati in una specifica area o globale `di.xml` file.
+I plug-in possono essere configurati in un file `di.xml` globale o specifico per l&#39;area.
 
 ```xml
     <type name="Magento\Catalog\Api\CategoryRepositoryInterface">

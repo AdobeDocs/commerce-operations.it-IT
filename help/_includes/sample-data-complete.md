@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Completare l&#39;installazione dei dati di esempio
 
-Dopo aver scaricato i pacchetti dati di esempio, accedere al server applicazioni come proprietario del file system o passare a, quindi immettere il seguente comando in `<app_root>` directory:
+Dopo aver scaricato i pacchetti dati di esempio, accedere al server applicazioni come proprietario del file system o passare a, quindi immettere il comando seguente nella directory `<app_root>`:
 
 ```bash
 bin/magento setup:upgrade

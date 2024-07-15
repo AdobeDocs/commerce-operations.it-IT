@@ -16,8 +16,8 @@ Utilizza la tabella seguente per trovare le note sulla versione e le informazion
 
 >[!TIP]
 >
->- Se hai poca esperienza con Adobe Commerce, consulta [architettura aziendale](../../implementation-playbook/architecture/enterprise-blueprint.md) e [informazioni su Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) argomenti per ottenere l&#39;orientamento.
->- Per informazioni sugli aggiornamenti, consulta [lettura consigliata](../../upgrade/resources/recommended-reading.md).
+>- Se hai poca esperienza con Adobe Commerce, consulta gli argomenti [architettura aziendale](../../implementation-playbook/architecture/enterprise-blueprint.md) e [informazioni su Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) per ottenere l&#39;orientamento.
+>- Per informazioni sugli aggiornamenti, vedere [letture consigliate](../../upgrade/resources/recommended-reading.md).
 
 <table>
   <tbody>
@@ -32,12 +32,12 @@ Utilizza la tabella seguente per trovare le note sulla versione e le informazion
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B per Adobe Commerce</a></li>
           </ul>
         </td>
-      <td><strong>Adobe Commerce sull’infrastruttura cloud</strong>
+      <td><strong>Adobe Commerce sull'infrastruttura cloud</strong>
         <p>Scopri gli ultimi miglioramenti apportati ai pacchetti Cloud Suite per Adobe Commerce, progettati per distribuire e gestire installazioni e aggiornamenti di Adobe Commerce sulla piattaforma cloud.</p>
           <ul>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/backward-incompatible-changes.html">Modifiche non compatibili con le versioni precedenti</a></li>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html">Patch cloud per Commerce</a></li>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcd-release-notes.html">Cloud Docker per Commerce</a></li>
+            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcd-release-notes.html">Docker cloud per Commerce</a></li>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/mcc-release-notes.html">Componenti cloud per Commerce</a></li>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html">strumenti ece</a></li>
           </ul>
@@ -62,7 +62,7 @@ Utilizza la tabella seguente per trovare le note sulla versione e le informazion
       <td><strong>Strumenti</strong>
         <p>Scopri gli ultimi miglioramenti agli strumenti progettati per semplificare la ricerca e l’utilizzo del software Adobe Commerce.</p>
           <ul>
-            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Mesh API per gli sviluppatori di APP Builder di Adobe</a></li>
+            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Mesh API, ad Adobe App Builder Developer</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Eventi di Adobe I/O per Adobe Commerce</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">SDK interfaccia utente amministratore</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Strumento Patch di qualità</a></li>
@@ -77,7 +77,7 @@ Utilizza la tabella seguente per trovare le note sulla versione e le informazion
           <ul>
             <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/">Adobe Commerce Storefront</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>
-            <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studi</a></li>
+            <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
       </td>
       <td></td>

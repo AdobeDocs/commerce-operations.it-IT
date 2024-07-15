@@ -5,7 +5,7 @@ recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,10 @@ I database MySQL vengono replicati in modo asincrono, il che significa che non �
 
 Una discussione approfondita sulla replica del database esula dall&#39;ambito di questa guida. Per configurarlo, puoi consultare una risorsa come:
 
-- [Documentazione di MySQL](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [Come impostare la replica master slave in MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [Documentazione MySQL](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
+- [Impostare la replica master slave in MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-Commerce fornisce configurazioni MySQL di esempio per i database slave. Una configurazione semplice viene fornita con `ResourceConnections` classe `README.md`.
+Commerce fornisce configurazioni MySQL di esempio per i database slave. Configurazione semplice fornita con la classe `ResourceConnections` `README.md`.
 
 Di seguito sono riportate alcune informazioni più avanzate fornite esclusivamente a scopo informativo:
 
@@ -122,9 +122,9 @@ Di seguito sono riportate alcune informazioni più avanzate fornite esclusivamen
 
 ## Miglioramento delle prestazioni
 
-Per migliorare le prestazioni della replica master-slave, è possibile filtrare alcune tabelle in base alle istanze slave. È consigliabile filtrare tutte le tabelle temporanee con il pattern dei nomi `search\_tmp\_%` utilizzati per la ricerca nel catalogo.
+Per migliorare le prestazioni della replica master-slave, è possibile filtrare alcune tabelle in base alle istanze slave. È consigliabile filtrare tutte le tabelle temporanee con il pattern dei nomi `search\_tmp\_%` utilizzate per la ricerca nel catalogo.
 
-A questo scopo, aggiungi la seguente riga al tuo `my.cnf` file nelle istanze slave:
+A questo scopo, aggiungi la seguente riga al file `my.cnf` nelle tue istanze slave:
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

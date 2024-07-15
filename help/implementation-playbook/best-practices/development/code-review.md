@@ -3,13 +3,13 @@ title: Best practice per la revisione del codice
 description: Scopri le best practice per la revisione del codice nella fase di sviluppo dei progetti Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1161'
 ht-degree: 0%
 
 ---
-
 
 # Best practice per la revisione del codice per Adobe Commerce
 
@@ -49,7 +49,7 @@ Inoltre, considera i seguenti punti quando implementi i processi di revisione de
 
 Lo stile può essere testato automaticamente eseguendo l&#39;ispezione PhpStorm (vedi sotto).
 
-Assicurati di configurare [PHPMD e PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) e per eseguire [Codifica standard](https://github.com/magento/magento-coding-standard) dall&#39;interfaccia CLI (disponibile anche di seguito). Esiste una sovrapposizione, ma entrambi dispongono di test univoci.
+Assicurati di configurare [PHPMD e PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) e di eseguire lo strumento [Coding Standard](https://github.com/magento/magento-coding-standard) dalla CLI (anche di seguito). Esiste una sovrapposizione, ma entrambi dispongono di test univoci.
 
 ### Convenzione e struttura
 
@@ -69,7 +69,7 @@ Le verifiche della completezza vengono eseguite manualmente.
 
 - Il codice può essere abilitato o disabilitato dalla configurazione e tutto il codice necessario si comporta come previsto?
 - È presente tutta la configurazione menzionata nel ticket? Controlla l’ambito, il tipo di dati, la convalida, la traduzione e i valori predefiniti.
-- La configurazione viene sempre recuperata al livello più basso possibile (livello di visualizzazione archivio, livello sito Web o livello globale)? Il recupero della configurazione deve corrispondere alla definizione dell’ambito nel `system.xml` file.
+- La configurazione viene sempre recuperata al livello più basso possibile (livello di visualizzazione archivio, livello sito Web o livello globale)? Il recupero della configurazione deve corrispondere alla definizione dell&#39;ambito nel file `system.xml`.
 - Sono coperti tutti i percorsi nel diagramma di flusso delle specifiche tecniche? Sono contemplate tutte le altre specifiche tecniche?
 - Per la nuova funzionalità sono stati definiti degli ACL?
 - PhpDocs è chiaro? I messaggi di commit sono chiari?
@@ -80,14 +80,14 @@ Le verifiche della completezza vengono eseguite manualmente.
 Le verifiche delle prestazioni vengono eseguite manualmente, il che può essere facilitato dall’esecuzione del codice in caso di dubbi.
 
 - Le query vengono eseguite in loop? Questo ciclo può essere esterno ai file modificati.
-- Riesci a individuarne una `cachable="false"` attributi? Sono applicate correttamente?
+- È possibile individuare qualsiasi attributo `cachable="false"`? Sono applicate correttamente?
 
 ### Sicurezza
 
 Le verifiche sulla sicurezza vengono effettuate manualmente, e possono essere supportate dalla ricerca di testo. Parte del controllo di sicurezza è effettuata tramite test automatizzati.
 
 - Le eccezioni vengono registrate quando necessario? Vengono utilizzati i giusti tipi di eccezioni?
-- Can `around` evitare i plug-in?
+- È possibile evitare `around` plug-in?
 - I plug-in restituiscono i tipi di dati corretti?
 - È possibile trovare query SQL non elaborate che devono essere create utilizzando il livello di astrazione del database?
 - Esistono nuovi tipi di dati esposti a qualsiasi tipo di utente, amministratore o front-end? L&#39;esposizione è un rischio per la sicurezza?
@@ -95,7 +95,7 @@ Le verifiche sulla sicurezza vengono effettuate manualmente, e possono essere su
 
 ### Privacy e RGPD
 
-Recensioni per privacy e [RGPD](../../../security-and-compliance/privacy/gdpr.md) vengono eseguiti manualmente.
+Le revisioni per privacy e [RGPD](../../../security-and-compliance/privacy/gdpr.md) vengono eseguite manualmente.
 
 - Il codice gestisce i dati o le e-mail dei clienti? Faccia particolare attenzione.
 - Se questo codice può essere eseguito in un ciclo continuo, può causare la perdita di dati del cliente da un ciclo continuo all&#39;altro?
@@ -131,19 +131,19 @@ Gli sviluppatori possono utilizzare l’automazione per rivedere la compilazione
   bin/magento deploy:mode:set developer || exit;
   ```
 
-- Schema del database `whitelist.json`: esegui il seguente comando CLI e verifica che `db_schema_whitelist.json` file non viene aggiunto o modificato.
+- Schema di database `whitelist.json`: eseguire il comando CLI seguente e verificare che il file `db_schema_whitelist.json` non sia stato aggiunto o modificato.
 
   ```bash
   bin/magento setup:db-declaration:generate-whitelist --module-name[=MODULE-NAME]
   ```
 
-- Convalida composizione: convalida `composer.json` eseguendo il seguente comando CLI nella directory che contiene il file `composer.json` file.
+- Composer validate - Convalida il file `composer.json` eseguendo il seguente comando CLI nella directory che contiene il file `composer.json`.
 
   ```bash
   composer validate
   ```
 
-- Standard di codifica: consente di installare ed eseguire lo strumento Standard di codifica e di eseguirlo in base al modulo. Nel file seguente viene illustrato come attivarlo per l&#39;esecuzione in qualsiasi posizione digitando `mcs ./app/code/Vendor/Module/`.
+- Standard di codifica: consente di installare ed eseguire lo strumento Standard di codifica e di eseguirlo in base al modulo. Nel file seguente viene illustrato come consentire l&#39;esecuzione in qualsiasi posizione digitando `mcs ./app/code/Vendor/Module/`.
 
   ```bash
   #!/usr/bin/env bash

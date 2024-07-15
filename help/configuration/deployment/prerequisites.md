@@ -20,10 +20,10 @@ Le autorizzazioni e la proprietà dei file devono essere coerenti tra i sistemi 
    - Assicurati che il server web funzioni come lo stesso utente su tutti i sistemi
    - Verificare che il proprietario del file system si trovi nel gruppo di server Web su tutti i sistemi
 
-- Modifica le autorizzazioni e la proprietà del file system di Commerce su ciascun sistema in base alle esigenze, utilizzando le seguenti linee guida:
+- Modificare le autorizzazioni e la proprietà del file system di Commerce in base alle esigenze utilizzando le seguenti linee guida:
 
-   - Sviluppo e creazione: [Impostare le autorizzazioni e la proprietà della preinstallazione (due utenti)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
-   - Produzione: [Proprietà e autorizzazioni commerciali in sviluppo e produzione](file-system-permissions.md)
+   - Sviluppo e compilazione: [Impostare le autorizzazioni e la proprietà di preinstallazione (due utenti)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
+   - Produzione: [Proprietà e autorizzazioni di Commerce in sviluppo e produzione](file-system-permissions.md)
 
 >[!INFO]
 >

@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Questa sezione illustra come disinstallare uno o più moduli. Durante la disinstallazione, è possibile rimuovere facoltativamente il codice dei moduli, lo schema del database e i dati del database. È possibile creare prima i backup in modo da poter recuperare i dati in un secondo momento.
 
-È consigliabile disinstallare un modulo solo se si è certi di non utilizzarlo. Invece di disinstallare un modulo, puoi disattivarlo come descritto in [Abilitare o disabilitare i moduli](manage-modules.md).
+È consigliabile disinstallare un modulo solo se si è certi di non utilizzarlo. Anziché disinstallare un modulo, è possibile disattivarlo come descritto in [Abilitare o disabilitare i moduli](manage-modules.md).
 
 >[!NOTE]
 >
->Questo comando verifica che solo le dipendenze dichiarate nel `composer.json` file. Se disinstalli un modulo che è _non_ definito nel `composer.json` file, questo comando disinstalla il modulo senza verificare le dipendenze. Questo comando esegue _non_ Tuttavia, rimuovi il codice del modulo dal file system. Per rimuovere il codice del modulo è necessario utilizzare gli strumenti del file system (ad esempio, `rm -rf <path to module>`). In alternativa, puoi: [disable](manage-modules.md) moduli non di composizione.
+>Questo comando verifica che solo le dipendenze dichiarate nel file `composer.json`. Se si disinstalla un modulo _not_ definito nel file `composer.json`, il modulo verrà disinstallato senza verificare le dipendenze. Con questo comando _not_ il codice del modulo viene rimosso dal file system. Per rimuovere il codice del modulo è necessario utilizzare gli strumenti del file system (ad esempio, `rm -rf <path to module>`). In alternativa, puoi [disabilitare](manage-modules.md) moduli non compositori.
 
 Utilizzo comando:
 
@@ -26,13 +26,13 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
   {ModuleName} ... {ModuleName}
 ```
 
-Dove `{ModuleName}` specifica il nome del modulo in `<VendorName>_<ModuleName>` formato. Ad esempio, il nome del modulo Cliente è `Magento_Customer`. Per ottenere un elenco dei nomi dei moduli, immetti `magento module:status`
+Dove `{ModuleName}` specifica il nome del modulo nel formato `<VendorName>_<ModuleName>`. Ad esempio, il nome del modulo del cliente è `Magento_Customer`. Per ottenere un elenco dei nomi dei moduli, immettere `magento module:status`
 
 Il comando di disinstallazione del modulo esegue le operazioni seguenti:
 
 1. Verifica che i moduli specificati siano presenti nella base di codice e siano pacchetti installati da Composer.
 
-   Questo comando funziona _solo_ con moduli definiti come pacchetti Compositore.
+   Questo comando funziona _only_ con moduli definiti come pacchetti Composer.
 
 1. Controlla le dipendenze con altri moduli e termina il comando se sono presenti dipendenze non soddisfatte.
 
@@ -44,25 +44,25 @@ Il comando di disinstallazione del modulo esegue le operazioni seguenti:
 
    | Opzione | Significato | Nome e percorso del file di backup |
    | ---------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
-   | `--backup-code` | Backup del file system (escluso `var` e `pub/static` directory). | `var/backups/<timestamp>_filesystem.tgz` |
+   | `--backup-code` | Esegue il backup del file system (escluse le directory `var` e `pub/static`). | `var/backups/<timestamp>_filesystem.tgz` |
    | `--backup-media` | Esegue il backup della directory pub/media. | `var/backups/<timestamp>_filesystem_media.tgz` |
    | `--backup-db` | Backup del database. | `var/backups/<timestamp>_db.gz` |
 
-1. Se `--remove-data` , rimuovi lo schema del database e i dati definiti nel file `Uninstall` classi.
+1. Se si specifica `--remove-data`, rimuovere lo schema di database e i dati definiti nelle classi `Uninstall` del modulo.
 
-   Per ogni modulo specificato da disinstallare, richiama `uninstall` metodo nel suo `Uninstall` classe. Questa classe deve ereditare da [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
+   Per ogni modulo specificato da disinstallare, richiama il metodo `uninstall` nella relativa classe `Uninstall`. Questa classe deve ereditare da [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
 
-1. Rimuove i moduli specificati dal `setup_module` tabella di database.
-1. Rimuove i moduli specificati dall&#39;elenco dei moduli nel [configurazione della distribuzione](../../configuration/reference/deployment-files.md).
-1. Rimuove il codice dal codebase utilizzando `composer remove`.
+1. Rimuove i moduli specificati dalla tabella del database `setup_module`.
+1. Rimuove i moduli specificati dall&#39;elenco dei moduli nella [configurazione di distribuzione](../../configuration/reference/deployment-files.md).
+1. Rimuove il codice dalla base di codice utilizzando `composer remove`.
 
    >[!NOTE]
    >
-   >Disinstallazione di un modulo _sempre_ esecuzioni `composer remove`. Il `--remove-data` rimuove i dati del database e lo schema definiti dal modulo `Uninstall` classe.
+   >Disinstallare un modulo _always_ esegue `composer remove`. L&#39;opzione `--remove-data` rimuove i dati del database e lo schema definiti dalla classe `Uninstall` del modulo.
 
 1. Pulisce la cache.
 1. Aggiorna le classi generate.
-1. Se `--clear-static-content` è specificato, pulisce [file di visualizzazione statica generati](../../configuration/cli/static-view-file-deployment.md).
+1. Se si specifica `--clear-static-content`, pulisce [file di visualizzazione statica generati](../../configuration/cli/static-view-file-deployment.md).
 1. Porta il negozio fuori dalla modalità di manutenzione.
 
 Ad esempio, se tenti di disinstallare un modulo da cui dipende un altro modulo, viene visualizzato il seguente messaggio:
@@ -73,7 +73,7 @@ magento module:uninstall Magento_SampleMinimal
         Magento_SampleModifyContent
 ```
 
-Un&#39;alternativa consiste nel disinstallare entrambi i moduli dopo aver eseguito il backup del file system dei moduli, `pub/media` file e tabelle di database, ma _non_ rimozione dello schema di database o dei dati del modulo:
+Un&#39;alternativa consiste nel disinstallare entrambi i moduli dopo aver eseguito il backup del file system del modulo, dei file `pub/media` e delle tabelle di database, ma _non_ rimuovendo lo schema o i dati di database del modulo:
 
 ```bash
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
@@ -126,15 +126,15 @@ Per ripristinare la base di codice nello stato in cui è stato eseguito il backu
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
-Dove `<filename>` è il nome del file di backup in `<app_root>/var/backups` directory. Per visualizzare un elenco di file di backup, immettere: `magento info:backups:list`
+Dove `<filename>` è il nome del file di backup nella directory `<app_root>/var/backups`. Per visualizzare un elenco di file di backup, immettere `magento info:backups:list`
 
 >[!WARNING]
 >
->Questo comando elimina i file specificati o il database prima di ripristinarli. Ad esempio, il `--media-file` elimina le risorse multimediali in `pub/media` prima del ripristino dal file di rollback specificato. Prima di utilizzare questo comando, assicurarsi di non aver modificato il file system o il database che si desidera mantenere.
+>Questo comando elimina i file specificati o il database prima di ripristinarli. Ad esempio, l&#39;opzione `--media-file` elimina le risorse multimediali nella directory `pub/media` prima di eseguire il ripristino dal file di rollback specificato. Prima di utilizzare questo comando, assicurarsi di non aver modificato il file system o il database che si desidera mantenere.
 
 >[!NOTE]
 >
->Per visualizzare un elenco dei file di backup disponibili, immettere: `magento info:backups:list`
+>Per visualizzare un elenco dei file di backup disponibili, immettere `magento info:backups:list`
 
 Questo comando esegue le seguenti attività:
 
@@ -142,7 +142,7 @@ Questo comando esegue le seguenti attività:
 1. Verifica il nome del file di backup.
 1. Se si specifica un file di rollback del codice:
 
-   a. Verifica che le posizioni di destinazione del rollback siano scrivibili (si noti che `pub/static` e `var` cartelle ignorate).
+   a. Verifica che i percorsi di destinazione del rollback siano scrivibili (si noti che le cartelle `pub/static` e `var` vengono ignorate).
 
    b. Elimina tutti i file e le directory nella directory di installazione dell&#39;applicazione.
 
@@ -191,4 +191,4 @@ Ad esempio, per ripristinare un backup del codice (ovvero del file system), imme
 
 >[!NOTE]
 >
->Per eseguire `magento` senza modificare le directory, potrebbe essere necessario immettere `cd pwd`.
+>Per eseguire nuovamente il comando `magento` senza modificare le directory, potrebbe essere necessario immettere `cd pwd`.

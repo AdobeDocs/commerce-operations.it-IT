@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -19,15 +19,15 @@ Le sezioni seguenti utilizzano la porta 8080 come esempio.
 **Per modificare la porta di ascolto di Apache 2.4**:
 
 1. Apri `/etc/httpd/conf/httpd.conf` in un editor di testo.
-1. Individua il `Listen` direttiva.
-1. Modifica il valore della porta di ascolto in `8080`. È possibile utilizzare qualsiasi porta di ascolto disponibile.
-1. Salva le modifiche apportate a `httpd.conf` ed esci dall’editor di testo.
+1. Individuare la direttiva `Listen`.
+1. Modificare il valore della porta di ascolto in `8080`. È possibile utilizzare qualsiasi porta di ascolto disponibile.
+1. Salvare le modifiche apportate a `httpd.conf` e uscire dall&#39;editor di testo.
 
 ## Modificare la configurazione del sistema di vernice
 
 Per modificare la configurazione del sistema di vernice:
 
-1. Come utente con `root` , apri il file di configurazione Vanish in un editor di testo:
+1. In qualità di utente con privilegi di `root`, apri il file di configurazione Vanish in un editor di testo:
 
    - CentOS 6: `/etc/sysconfig/varnish`
    - CentOS 7: `/etc/varnish/varnish.params`
@@ -40,7 +40,7 @@ Per modificare la configurazione del sistema di vernice:
    VARNISH_LISTEN_PORT=80
    ```
 
-   Per la vernice 4.x, assicurarsi che DAEMON_OPTS contenga la porta di ascolto corretta per `-a` (anche se VARNISH_LISTEN_PORT è impostato sul valore corretto):
+   Per la vernice 4.x, assicurarsi che DAEMON_OPTS contenga la porta di ascolto corretta per il parametro `-a` (anche se VARNISH_LISTEN_PORT è impostato sul valore corretto):
 
    ```conf
    DAEMON_OPTS="-a :80 \
@@ -54,11 +54,11 @@ Per modificare la configurazione del sistema di vernice:
 
 ### Modificare la VCL di default
 
-Questa sezione illustra come fornire una configurazione minima in modo che Varish restituisca le intestazioni di risposta HTTP. Questo consente di verificare che la vernice funzioni prima di configurare [!DNL Commerce] applicazione per l’uso di vernice.
+Questa sezione illustra come fornire una configurazione minima in modo che Varish restituisca le intestazioni di risposta HTTP. In questo modo è possibile verificare che Vernice funzioni prima di configurare l&#39;applicazione [!DNL Commerce] per l&#39;utilizzo di Vernice.
 
 Per configurare la vernice in modo minimo:
 
-1. Backup `default.vcl`:
+1. Backup di `default.vcl`:
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
@@ -74,11 +74,11 @@ Per configurare la vernice in modo minimo:
    }
    ```
 
-1. Sostituisci il valore di `.host` con il nome host o l&#39;indirizzo IP completo e la porta di ascolto della vernice _backend_ o _server di origine_ ovvero il server che fornisce il contenuto Vernice accelera.
+1. Sostituire il valore di `.host` con il nome host o l&#39;indirizzo IP completo e la porta di ascolto del server _backend_ o _origine_ della vernice, ovvero il server che fornisce il contenuto che verrà accelerato da Varnish.
 
-   In genere, si tratta del server web. Consulta [Server back-end](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) nel _Guida alla vernice_.
+   In genere, si tratta del server web. Vedi [Server back-end](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) nella _Guida vernice_.
 
-1. Sostituisci il valore di `.port` con la porta di ascolto del server web (8080 in questo esempio).
+1. Sostituire il valore di `.port` con la porta di ascolto del server Web (8080 in questo esempio).
 
    Esempio: Apache è installato sull’host 192.0.2.55 e Apache è in ascolto sulla porta 8080:
 
@@ -91,9 +91,9 @@ Per configurare la vernice in modo minimo:
 
    >[!INFO]
    >
-   >Se Vernice e Apache sono in esecuzione sullo stesso host, l’Adobe consiglia di utilizzare un indirizzo IP o un nome host e non `localhost`.
+   >Se Vernice e Apache sono in esecuzione sullo stesso host, l&#39;Adobe consiglia di utilizzare un indirizzo IP o un nome host e non `localhost`.
 
-1. Salva le modifiche apportate a `default.vcl` ed esci dall’editor di testo.
+1. Salvare le modifiche apportate a `default.vcl` e uscire dall&#39;editor di testo.
 
 1. Vernice di riavvio:
 
@@ -116,7 +116,7 @@ Dovrebbero essere visualizzati messaggi di errore.
 
 ## Verifica che la vernice funzioni
 
-Le sezioni seguenti spiegano come verificare che Varnish funzioni, ma _senza_ configurazione di Commerce per utilizzarlo. Prova prima di configurare Commerce.
+Nelle sezioni seguenti viene illustrato come verificare il funzionamento di Vernice, ma _senza_ configurare Commerce per l&#39;utilizzo. Prova prima di configurare Commerce.
 
 Eseguire i task descritti nelle sezioni seguenti nell&#39;ordine indicato:
 
@@ -137,7 +137,7 @@ Se Varnish non si avvia come servizio, inizialo dalla riga di comando come segue
 
 1. Avviare il processo di produzione di vernice:
 
-   Quando richiesto, immetti `start`
+   Quando richiesto, immettere `start`
 
    Per confermare un avvio riuscito, vengono visualizzati i seguenti messaggi:
 
@@ -168,15 +168,15 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 Il precedente mostra la Vernice che corre sulla porta 80 e l&#39;Apache che sulla porta 8080.
 
-Se non vedi l’output per `varnishd`, accertarsi che Vernice sia in esecuzione.
+Se l&#39;output per `varnishd` non viene visualizzato, verificare che Vernice sia in esecuzione.
 
-Consulta [`netstat` opzioni](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
+Vedi [`netstat` opzioni](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
 ## Installare il software Commerce
 
-Installa il software Commerce, se non lo hai già fatto. Quando viene richiesto un URL di base, utilizzare l&#39;host e la porta 80 di Varnish (per Varnish) perché quest&#39;ultimo riceve tutte le richieste HTTP in entrata.
+Installare il software Commerce, se non lo si è già fatto. Quando viene richiesto un URL di base, utilizzare l&#39;host e la porta 80 di Varnish (per Varnish) perché quest&#39;ultimo riceve tutte le richieste HTTP in entrata.
 
-Possibile errore durante l’installazione di Commerce:
+Possibile errore durante l&#39;installazione di Commerce:
 
 ```terminal
 Error 503 Service Unavailable
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-Se si verifica questo errore, modificare `default.vcl` e aggiungi un timeout al `backend` strofa come segue:
+Se si verifica questo errore, modificare `default.vcl` e aggiungere un timeout alla stanza `backend` come segue:
 
 ```conf
 backend default {
@@ -199,11 +199,11 @@ backend default {
 
 Ora è possibile verificare che Vernice distribuisca le pagine osservando le intestazioni di risposta dei HTML restituite da qualsiasi pagina.
 
-Prima di poter esaminare le intestazioni, è necessario impostare Commerce per la modalità sviluppatore. Esistono diversi modi per farlo, il più semplice dei quali è modificare `.htaccess` nella directory principale dell’applicazione Commerce. È inoltre possibile utilizzare [`magento deploy:mode:set`](../cli/set-mode.md) comando.
+Prima di poter esaminare le intestazioni, è necessario impostare Commerce per la modalità sviluppatore. Esistono diversi modi per farlo, il più semplice dei quali è modificare `.htaccess` nella radice dell&#39;applicazione Commerce. È inoltre possibile utilizzare il comando [`magento deploy:mode:set`](../cli/set-mode.md).
 
-### Impostare Commerce per la modalità sviluppatore
+### Imposta Commerce per la modalità sviluppatore
 
-Per impostare Commerce per la modalità sviluppatore, utilizza [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) comando.
+Per impostare Commerce per la modalità sviluppatore, utilizzare il comando [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode).
 
 ### Guardate il registro vernice
 
@@ -232,13 +232,13 @@ Nella finestra del prompt dei comandi viene visualizzato un lungo elenco di inte
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-Se le intestazioni come queste lo fanno _non_ visualizzare, arrestare Vernice, controllare `default.vcl`e riprova.
+Se le intestazioni come queste non vengono visualizzate __, smetti di usare Vernice, controlla `default.vcl` e riprova.
 
 ### Esaminare le intestazioni di risposta di HTML
 
 Esistono diversi modi per esaminare le intestazioni di risposta, incluso l’utilizzo di un plug-in del browser o di un controllo del browser.
 
-L’esempio che segue utilizza `curl`. Puoi immettere questo comando da qualsiasi computer in grado di accedere al server Commerce utilizzando HTTP.
+Nell&#39;esempio seguente viene utilizzato `curl`. È possibile immettere questo comando da qualsiasi computer in grado di accedere al server Commerce tramite HTTP.
 
 ```bash
 curl -I -v --location-trusted '<your Commerce base URL>'

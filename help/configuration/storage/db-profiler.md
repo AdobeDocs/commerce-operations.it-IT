@@ -1,23 +1,23 @@
 ---
 title: Configurare il profiler del database
-description: Vedere un esempio di configurazione dell'output per il profiler del database.
+description: Vedere un esempio di come configurare l'output per il profiler del database.
 feature: Configuration, Storage
-badge: label="Contributo di Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+badge: label="di Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Gosvami"
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
 
 # Configurare il profiler del database
 
-Il profiler del database Commerce visualizza tutte le query implementate in una pagina, incluso il tempo di ciascuna query e i parametri applicati.
+Il profiler del database Commerce visualizza tutte le query implementate in una pagina, incluso l&#39;ora per ogni query e i parametri applicati.
 
-## Passaggio 1: modificare la configurazione della distribuzione
+## Passaggio 1: Modificare la configurazione dell&#39;implementazione
 
-Modifica `<magento_root>/app/etc/env.php` per aggiungere il seguente riferimento al [classe profiler database](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
+Modificare `<magento_root>/app/etc/env.php` per aggiungere il seguente riferimento alla classe del profiler del [](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php)database:
 
 ```php?start_inline=1
         'profiler' => [
@@ -53,17 +53,17 @@ Di seguito è riportato un esempio:
   ),
 ```
 
-## Passaggio 2: configurare l’output
+## Passaggio 2: configurare l&#39;output
 
-Configurare l’output nel file di bootstrap dell’applicazione Commerce; potrebbe trattarsi di `<magento_root>/pub/index.php` oppure può trovarsi in una configurazione host virtuale server web.
+Configurare l&#39;output nel file di bootstrap di Commerce applicazione. Questo potrebbe essere `<magento_root>/pub/index.php` o potrebbe trovarsi in una configurazione di host virtuale del server Web.
 
-Nell&#39;esempio seguente vengono visualizzati i risultati in una tabella a tre colonne:
+I risultati nell&#39;esempio seguente sono visualizzati in una tabella a tre colonne:
 
 - Tempo totale (visualizza il tempo totale necessario per eseguire tutte le query sulla pagina)
-- SQL (visualizza tutte le query SQL; l&#39;intestazione di riga visualizza il numero di query)
-- Parametri query (visualizza i parametri per ogni query SQL)
+- SQL (visualizza tutte le query SQL; l&#39;intestazione della riga visualizza il conteggio delle query)
+- Parametri di query (visualizza i parametri per ogni query SQL)
 
-Per configurare l’output, aggiungi quanto segue dopo la `$bootstrap->run($app);` riga nel file di bootstrap:
+Per configurare l&#39;output, aggiungi quanto segue dopo la `$bootstrap->run($app);` riga nel file di bootstrap:
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -87,8 +87,8 @@ foreach ($profiler->getQueryProfiles() as $query) {
 echo "</table>";
 ```
 
-## Passaggio 3: visualizzare i risultati
+## Passaggio 3: Visualizza i risultati
 
-Vai a qualsiasi pagina della vetrina o dell’amministratore per visualizzare i risultati. Di seguito è riportato un esempio:
+Vai a qualsiasi pagina del tuo negozio o dell&#39;amministratore per visualizzare i risultati. Di seguito è riportato un esempio:
 
-![Esempio di risultati del profiler del database](../../assets/configuration/db-profiler-results.png)
+![Risultati del profiler di database di esempio](../../assets/configuration/db-profiler-results.png)

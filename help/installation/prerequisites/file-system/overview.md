@@ -21,21 +21,21 @@ Esistono due tipi di proprietari del file system:
 
 - **Hosting condiviso con un singolo utente**
 
-  I provider di hosting condivisi consentono di accedere al server applicazioni come un unico utente. In qualità di utente singolo, puoi accedere, trasferire file tramite FTP ed eseguire il server web. È possibile impostare un valore [`umask`](#restrict-access-with-a-umask) limitare ulteriormente l’accesso, in particolare in un ambiente di produzione.
+  I provider di hosting condivisi consentono di accedere al server applicazioni come un unico utente. In qualità di utente singolo, puoi accedere, trasferire file tramite FTP ed eseguire il server web. È possibile impostare un [`umask`](#restrict-access-with-a-umask) per limitare ulteriormente l&#39;accesso, in particolare in un ambiente di produzione.
 
 - **Hosting privato con due utenti**
 
   L&#39;hosting privato è utile se gestisci un server applicazioni. Ogni utente ha una responsabilità specifica:
 
-   - Il _utente server web_ esegue l’amministratore e la vetrina.
+   - L&#39;_utente del server Web_ esegue l&#39;amministratore e la vetrina.
 
-   - Il _utente della riga di comando_ esegue processi cron e utilità della riga di comando.
+   - L&#39;_utente della riga di comando_ esegue processi cron e utilità della riga di comando.
 
-  Entrambi gli utenti richiedono le stesse autorizzazioni per il file system, pertanto è consigliabile utilizzare un [gruppo condiviso](configure-permissions.md#set-ownership-and-permissions-for-two-users) e imposta un [`umask`](#restrict-access-with-a-umask).
+  Entrambi gli utenti richiedono le stesse autorizzazioni per il file system, pertanto è consigliabile utilizzare un [gruppo condiviso](configure-permissions.md#set-ownership-and-permissions-for-two-users) e impostare un [`umask`](#restrict-access-with-a-umask).
 
 ### Limitare l’accesso con una maschera
 
-Per rafforzare la sicurezza, in particolare in un ambiente di produzione su un sistema di hosting condiviso, puoi utilizzare `umask` per limitare l&#39;accesso. A `umask`—denominati anche _maschera di creazione file system_- è un insieme di bit che controlla il modo in cui vengono impostate le autorizzazioni per i file appena creati.
+Per rafforzare la sicurezza, in particolare in un ambiente di produzione in un sistema di hosting condiviso, puoi utilizzare `umask` per limitare l&#39;accesso. Una `umask`, detta anche _maschera per la creazione del file system_, è un insieme di bit che controlla il modo in cui vengono impostate le autorizzazioni per i file appena creati.
 
 >[!WARNING]
 >
@@ -45,11 +45,11 @@ Adobe Commerce utilizza una maschera predefinita a tre bit: `002`. Sottrarre la 
 
 Ad esempio:
 
-- **775 per directory**- Controllo completo da parte dell&#39;utente, controllo completo da parte del gruppo e possibilità per tutti di attraversare la directory. Queste autorizzazioni sono in genere richieste dai provider di hosting condivisi.
+- **775 per le directory**: controllo completo da parte dell&#39;utente, controllo completo da parte del gruppo e possibilità per tutti di attraversare la directory. Queste autorizzazioni sono in genere richieste dai provider di hosting condivisi.
 
-- **664 per file**: scrivibile dall&#39;utente, scrivibile dal gruppo e di sola lettura per tutti gli altri.
+- **664 per i file**: scrivibile dall&#39;utente, scrivibile dal gruppo e di sola lettura per tutti gli altri.
 
-Per ulteriori informazioni sulla creazione di un’ `magento_umask` file, vedi [Imposta una maschera](../../next-steps/set-umask.md).
+Per ulteriori informazioni sulla creazione di un file `magento_umask`, vedere [Impostare un umask](../../next-steps/set-umask.md).
 
 ## Autorizzazioni, proprietà e modalità di applicazione
 
@@ -59,9 +59,9 @@ Quando utilizzi le diverse modalità dell’applicazione Adobe Commerce, consigl
 - Sviluppatore
 - Produzione
 
-Consulta [Informazioni sulle modalità](../../../configuration/bootstrap/application-modes.md) nel _Guida alla configurazione_.
+Consulta [Informazioni sulle modalità](../../../configuration/bootstrap/application-modes.md) nella _Guida alla configurazione_.
 
-Vengono ulteriormente discusse le raccomandazioni sulle autorizzazioni in [Autorizzazioni di accesso ai file system](../../../configuration/deployment/file-system-permissions.md) nel _Guida alla configurazione_.
+Vengono inoltre illustrate le raccomandazioni relative alle autorizzazioni in [Autorizzazioni di accesso ai file system](../../../configuration/deployment/file-system-permissions.md) nella _Guida alla configurazione_.
 
 >[!TIP]
 >

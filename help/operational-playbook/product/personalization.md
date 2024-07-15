@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Personalizzazione
 
-Lo scenario di base della crescita aziendale dell’e-commerce è la fedeltà dei clienti. Mantenere i clienti soddisfatti è una combinazione di molti fattori, da prodotti, contenuti, pagamento, esperienza del cliente e del servizio. La personalizzazione dipende dall’intelligenza artificiale, che tiene traccia delle informazioni sui clienti in tempo reale e offre un’esperienza univoca e personalizzata. La personalizzazione potrebbe non funzionare per tutti i tipi di aziende, ma è una funzione aggiuntiva che può aiutare a indirizzare il traffico verso il sito.
+Lo scenario di base della crescita aziendale dell’e-commerce è la fedeltà dei clienti. Mantenere i clienti soddisfatti è una combinazione di molti fattori, da prodotti, contenuti, pagamento, esperienza del cliente e del servizio. Personalization dipende dall’intelligenza artificiale, che tiene traccia delle informazioni sui clienti in tempo reale e offre un’esperienza univoca e personalizzata. Personalization potrebbe non funzionare per tutti i tipi di aziende, ma è una funzione aggiuntiva che può aiutare a indirizzare il traffico verso il tuo sito.
 
-La personalizzazione deve includere:
+Personalization deve includere:
 
 - Soddisfare le esigenze dei clienti
 
@@ -26,21 +26,21 @@ La personalizzazione deve includere:
 
 Esempi di personalizzazione includono:
 
-- **Interesse del cliente**- Modifica della home page e della navigazione in base al profilo del cliente. Ad esempio, se un utente ha visitato il sito in precedenza ed esplorato la sezione Donne, la prossima volta che immette l’URL viene visualizzata la homepage Donne.
+- **Interesse del cliente**—Modifica della home page e della navigazione in base al profilo del cliente. Ad esempio, se un utente ha visitato il sito in precedenza ed esplorato la sezione Donne, la prossima volta che immette l’URL viene visualizzata la homepage Donne.
 
-- **Prodotti consigliati**- Consiglia i prodotti in base al comportamento di navigazione dei clienti.
+- **Prodotti consigliati**—Consigliare prodotti in base al comportamento di navigazione dei clienti.
 
-- **Ricerca**- Visualizza risultati di ricerca personalizzati in base a un comportamento di ricerca precedente del cliente.
+- **Ricerca**: visualizza i risultati di ricerca personalizzati in base a un comportamento di ricerca precedente del cliente.
 
-- **E-mail**: invia e-mail personalizzate sui prodotti se un cliente ha lasciato l’articolo nel carrello o se il prodotto era esaurito. invia una notifica quando è di nuovo disponibile.
+- **E-mail** - Invia e-mail personalizzate sui prodotti se un cliente ha lasciato l&#39;articolo nel carrello o se il prodotto non era disponibile invia una notifica quando è di nuovo disponibile.
 
-- **Geolocalizzazione**- Visualizzazione di più geolocalizzazioni per il sito. Ad esempio, un cliente visita il sito di AU, ma viene visualizzata anche l’opzione del sito US per dare al cliente una scelta.
+- **Geolocalizzazione**—Visualizzazione di più geolocalizzazioni per il sito. Ad esempio, un cliente visita il sito di AU, ma viene visualizzata anche l’opzione del sito US per dare al cliente una scelta.
 
-- **Codice sconto**- Visualizza codici sconto categoria specifici per promuovere i prodotti di una categoria specifica.
+- **Codice sconto**—Visualizza codici sconto categoria specifici per promuovere i prodotti di una determinata categoria.
 
-- **Prodotti complementari**- Visualizza prodotti complementari quando il cliente visita un prodotto. Ad esempio, un cliente visualizza un abito e può visualizzare prodotti gratuiti come scarpe, borse e accessori che vanno con l’abito.
+- **Prodotti complementari**: visualizza prodotti complementari quando il cliente visita un prodotto. Ad esempio, un cliente visualizza un abito e può visualizzare prodotti gratuiti come scarpe, borse e accessori che vanno con l’abito.
 
-- **Home page personalizzata**- Consente di visualizzare una home page personalizzata per un utente registrato, in modo da renderli speciali.
+- **Home page personalizzata**—Visualizza una home page personalizzata per un utente registrato per renderli speciali.
 
 ![Esempio di prodotti personalizzati](../../assets/playbooks/personalization-example.png)
 

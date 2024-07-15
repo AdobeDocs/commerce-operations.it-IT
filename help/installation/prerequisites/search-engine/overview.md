@@ -22,7 +22,7 @@ A partire da Adobe Commerce 2.4, tutte le installazioni devono essere configurat
 
 È necessario installare e configurare Elasticsearch o OpenSearch prima di installare Adobe Commerce 2.4.4 e versioni successive.
 
-Consulta la sezione [Requisiti di sistema](../../system-requirements.md) per informazioni specifiche sulla versione.
+Per informazioni specifiche sulla versione, consultare [Requisiti di sistema](../../system-requirements.md).
 
 ## Configurazione consigliata
 
@@ -35,13 +35,13 @@ Consigliamo quanto segue:
 
 Le seguenti attività presuppongono che il sistema sia stato configurato in base al diagramma seguente:
 
-![Diagramma del motore di ricerca](../../../assets/installation/search-engine-config.svg)
+![Diagramma motore di ricerca](../../../assets/installation/search-engine-config.svg)
 
 Il diagramma precedente mostra:
 
 * L&#39;applicazione Commerce e il motore di ricerca sono installati su host diversi.
 
-  L&#39;esecuzione su host separati richiede il funzionamento del proxy. Il clustering del motore di ricerca esula dall’ambito di questa guida, ma per ulteriori informazioni consulta [Documentazione sul clustering Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  L&#39;esecuzione su host separati richiede il funzionamento del proxy. Il clustering del motore di ricerca esula dall&#39;ambito di questa guida, ma puoi trovare ulteriori informazioni nella [documentazione sul clustering di Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).
 
 * Ogni host ha il proprio server web; i server web non devono essere gli stessi.
 
@@ -59,7 +59,7 @@ Le richieste di ricerca vengono elaborate come segue:
 
 1. Il server web del motore di ricerca (in ascolto sulla porta 443) invia la richiesta al server del motore di ricerca (per impostazione predefinita, ascolta sulla porta 9200).
 
-1. L’accesso al motore di ricerca è ulteriormente protetto dall’autenticazione HTTP Basic. Per poter raggiungere il motore di ricerca, una richiesta deve utilizzare SSL *e* fornisci un nome utente e una password validi.
+1. L’accesso al motore di ricerca è ulteriormente protetto dall’autenticazione HTTP Basic. Affinché una richiesta possa raggiungere il motore di ricerca, deve viaggiare su SSL *e* fornire un nome utente e una password validi.
 
 1. Il motore di ricerca elabora la richiesta.
 
@@ -82,7 +82,7 @@ Per impostazione predefinita, il software relativo alla sicurezza (iptables, SEL
 
 Per impostare le regole che consentono la comunicazione con il firewall o con SELinux abilitato, consulta le risorse seguenti:
 
-* [iptables procedure](https://help.ubuntu.com/community/IptablesHowTo)
+* [iptables procedura](https://help.ubuntu.com/community/IptablesHowTo)
 * [Come modificare le regole iptables (progetto fedora)](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
 * [Introduzione a SELinux (CentOS.org)](https://www.centos.org)
 * [Wiki tutorial SELinux (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
@@ -95,7 +95,7 @@ Per determinare se Java è già installato, immetti il seguente comando:
 java -version
 ```
 
-Se il messaggio `java: command not found` , è necessario installare Java SDK come descritto nella sezione successiva.
+Se viene visualizzato il messaggio `java: command not found`, è necessario installare l&#39;SDK Java come descritto nella sezione successiva.
 
 Vedere una delle sezioni seguenti:
 
@@ -104,7 +104,7 @@ Vedere una delle sezioni seguenti:
 
 #### Installare JDK su CentOS
 
-Vedi questo [Tutorial sull’oceano digitale](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
+Consulta questa [esercitazione sull&#39;oceano digitale](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
 
 Assicurarsi di installare JDK e *non* JRE.
 
@@ -114,11 +114,11 @@ yum -y install java-1.8.0-openjdk
 
 >[!NOTE]
 >
->Java versione 8 potrebbe non essere disponibile per tutti i sistemi operativi. Ad esempio, puoi [cerca nell’elenco dei pacchetti disponibili Ubuntu](https://packages.ubuntu.com/).
+>Java versione 8 potrebbe non essere disponibile per tutti i sistemi operativi. Ad esempio, puoi [cercare nell&#39;elenco dei pacchetti disponibili Ubuntu](https://packages.ubuntu.com/).
 
 #### Installare JDK su Ubuntu
 
-Per installare JDK 1.8 su Ubuntu, immetti i seguenti comandi come utente con `root` privilegi:
+Per installare JDK 1.8 su Ubuntu, immettere i seguenti comandi come utente con privilegi `root`:
 
 ```bash
 apt-get -y update
@@ -132,7 +132,7 @@ Per altre opzioni, consulta [Documentazione di Oracle](https://docs.oracle.com/j
 
 ### Installare il motore di ricerca
 
-Segui [Elasticsearch di installazione](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) o [Installare e configurare OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) per i passaggi specifici della piattaforma.
+Segui [Installazione di Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) o [Installa e configura OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) per i passaggi specifici della tua piattaforma.
 
 Per verificare che Elasticsearch funzioni, immetti il comando seguente sul server su cui è in esecuzione:
 
@@ -159,10 +159,10 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 ## Elasticsearch di aggiornamento
 
-Fai riferimento a [Elasticsearch di aggiornamento](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) per istruzioni complete sul backup dei dati, l&#39;individuazione di potenziali problemi di migrazione e il test degli aggiornamenti prima della distribuzione in produzione. A seconda della versione corrente dell&#39;Elasticsearch, potrebbe essere necessario o meno un riavvio completo del cluster.
+Consulta l&#39;[Elasticsearch sull&#39;aggiornamento](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) per istruzioni complete sul backup dei dati, l&#39;individuazione di potenziali problemi di migrazione e il test degli aggiornamenti prima della distribuzione in produzione. A seconda della versione corrente dell&#39;Elasticsearch, potrebbe essere necessario o meno un riavvio completo del cluster.
 
 Elasticsearch richiede JDK 1.8 o versione successiva. Consulta [Installare Java Software Development Kit](#install-the-java-software-development-kit) per verificare quale versione di JDK è installata.
 
 ## Risorse aggiuntive
 
-Consulta la [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) o [OpenSearch](https://opensearch.org/docs/latest/) documentazione.
+Consulta la documentazione di [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) o [OpenSearch](https://opensearch.org/docs/latest/).

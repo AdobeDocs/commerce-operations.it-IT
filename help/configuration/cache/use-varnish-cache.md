@@ -16,7 +16,7 @@ Questo argomento illustra le nozioni di base sull’utilizzo di Varnish come acc
 
 ## Spurgatura vernice
 
-Secondo [Documentazione di vernice](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *svuota* è ciò che accade quando si estrae un oggetto dalla cache e lo si elimina insieme alle relative varianti.&quot; Un&#39;eliminazione di vernice è simile a un comando di pulitura della cache (o a un clic **Svuota cache Magento** in Admin).
+Secondo la [documentazione di Varnish](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;Una *eliminazione* è ciò che accade quando si preleva un oggetto dalla cache e lo si elimina insieme alle relative varianti&quot;. Un&#39;eliminazione di vernice è simile a un comando di pulizia della cache (o a un clic su **Svuota cache di Magento** nell&#39;amministratore).
 
 In effetti, quando si pulisce, svuota o aggiorna la cache di Commerce, anche la vernice si svuota.
 
@@ -26,9 +26,9 @@ Dopo aver installato e configurato Vernice per funzionare con Commerce, le segue
 
   Ad esempio, tutte le operazioni eseguite nell’amministratore in:
 
-   - **NEGOZI** > **Impostazioni** > **Configurazione** > GENERALE > **Generale**
-   - **NEGOZI** > **Impostazioni** > **Configurazione** > GENERALE > **Impostazione valuta**
-   - **NEGOZI** > **Impostazioni** > **Configurazione** > GENERALE > **Memorizza indirizzi e-mail**
+   - **ARCHIVI** > **Impostazioni** > **Configurazione** > GENERALE > **Generale**
+   - **ARCHIVI** > **Impostazioni** > **Configurazione** > GENERALE > **Impostazione valuta**
+   - **ARCHIVI** > **Impostazioni** > **Configurazione** > GENERALE > **Indirizzi e-mail archivio**
 
   Quando Commerce rileva tale modifica, viene visualizzato un messaggio che ti informa di aggiornare la cache.
 
@@ -38,13 +38,13 @@ Dopo aver installato e configurato Vernice per funzionare con Commerce, le segue
 
 - Gestione del codice sorgente.
 
-  È necessario aggiornare la cache ed eliminare periodicamente tutto ciò che si trova nel `generated/code` e `generated/metadata` directory. Per informazioni sull’aggiornamento della cache, consulta la sezione successiva.
+  È necessario aggiornare la cache ed eliminare periodicamente tutti gli elementi nelle directory `generated/code` e `generated/metadata`. Per informazioni sull’aggiornamento della cache, consulta la sezione successiva.
 
 ## Configura Commerce per eliminare la vernice
 
-Commerce elimina gli host Vernice dopo aver configurato gli host Vernice utilizzando [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) comando.
+Commerce elimina gli host Varnish dopo aver configurato gli host Varnish utilizzando il comando [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset).
 
-Puoi utilizzare il parametro opzionale `--http-cache-hosts` per specificare un elenco separato da virgole di host e porte di ascolto di Vernice. Configurare tutti gli host Vernice, indipendentemente dal fatto che ne siano presenti uno o più. (Non separare gli host con uno spazio).
+È possibile utilizzare il parametro facoltativo `--http-cache-hosts` per specificare un elenco separato da virgole di host e porte di ascolto di Microsoft. Configurare tutti gli host Vernice, indipendentemente dal fatto che ne siano presenti uno o più. (Non separare gli host con uno spazio).
 
 Il formato del parametro deve essere `<hostname or ip>:<listen port>`, dove è possibile omettere `<listen port>` se si tratta della porta 80.
 
@@ -54,8 +54,8 @@ Ad esempio:
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-È quindi possibile eliminare gli host di vernice quando si aggiorna la cache di Commerce (nota anche come *pulizia* cache) nell’Admin o utilizzando la riga di comando.
+È quindi possibile eliminare gli host Varnish quando si aggiorna la cache di Commerce (detta anche *pulizia* della cache) nell&#39;Admin o utilizzando la riga di comando.
 
-Per aggiornare la cache utilizzando Admin, fai clic su **[!UICONTROL SYSTEM]** > Strumenti > **Gestione cache**, quindi fai clic su **Svuota cache Magento** nella parte superiore della pagina. (Puoi anche aggiornare singoli tipi di cache).
+Per aggiornare la cache utilizzando l&#39;amministratore, fare clic su **[!UICONTROL SYSTEM]** > Strumenti > **Gestione cache**, quindi fare clic su **Svuota cache Magento** nella parte superiore della pagina. (Puoi anche aggiornare singoli tipi di cache).
 
-Per aggiornare la cache utilizzando la riga di comando, in genere si utilizza [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comando come [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+Per aggiornare la cache utilizzando la riga di comando, in genere si utilizza il comando [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) come [proprietario del file system](../../installation/prerequisites/file-system/overview.md).

@@ -18,8 +18,8 @@ ht-degree: 0%
 
 La versione di sicurezza di Adobe Commerce 2.4.2-p2 fornisce correzioni di bug di sicurezza per le vulnerabilità identificate nelle versioni precedenti della versione 2.4.2.
 
-Per informazioni aggiornate sulle correzioni di bug di sicurezza, consulta [Bollettino sulla sicurezza dell’Adobe APSB21-64](https://helpx.adobe.com/security/products/magento/apsb21-64.html).
+Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB21-64](https://helpx.adobe.com/security/products/magento/apsb21-64.html).
 
-## Applica `AC-3022.patch` continuare a offrire DHL come vettore marittimo
+## Applica `AC-3022.patch` per continuare a offrire DHL come vettore di spedizione
 
-DHL ha introdotto lo schema versione 6.2 e dichiarerà obsoleto lo schema versione 6.0 nel prossimo futuro. Adobe Commerce 2.4.4 e versioni precedenti che supportano l’integrazione DHL supportano solo la versione 6.0. I commercianti che distribuiscono queste versioni devono applicare `AC-3022.patch` non appena possibile, di continuare a offrire DHL come vettore marittimo. Consulta la [Applicare una patch per continuare a offrire DHL come vettore di spedizione](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Articolo della Knowledge Base per informazioni sul download e l&#39;installazione della patch.
+DHL ha introdotto lo schema versione 6.2 e dichiarerà obsoleto lo schema versione 6.0 nel prossimo futuro. Adobe Commerce 2.4.4 e versioni precedenti che supportano l’integrazione DHL supportano solo la versione 6.0. I commercianti che distribuiscono queste versioni devono applicare `AC-3022.patch` al più presto per continuare a offrire DHL come vettore di spedizione. Per informazioni sul download e l&#39;installazione della patch, vedere l&#39;articolo della Knowledge Base [Applica una patch per continuare a offrire DHL come corriere](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier).

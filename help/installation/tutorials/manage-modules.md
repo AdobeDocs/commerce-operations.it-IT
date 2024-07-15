@@ -23,13 +23,13 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 Dove
 
-* `--enabled` elenca tutti i moduli attivati.
-* `--disabled` elenca tutti i moduli disattivati.
+* `--enabled` elenca tutti i moduli abilitati.
+* `--disabled` elenca tutti i moduli disabilitati.
 * `<module-list>` è un elenco di moduli delimitato da spazi per verificare lo stato. Se un nome di modulo contiene caratteri speciali, racchiuderlo tra virgolette singole o doppie.
 
 >[!NOTE]
 >
->Non puoi abilitare o disabilitare i moduli direttamente nei progetti cloud. È necessario eseguire questi comandi localmente e quindi inviare le modifiche al `app/etc/config.php` per un ambiente. Consulta [Flusso di lavoro di un progetto Pro: flusso di lavoro di distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
+>Non puoi abilitare o disabilitare i moduli direttamente nei progetti cloud. È necessario eseguire questi comandi localmente e quindi inviare le modifiche al file `app/etc/config.php` per un ambiente. Vedi [Flusso di lavoro del progetto Pro: flusso di lavoro di distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Attivazione modulo, disattivazione
 
@@ -45,16 +45,16 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 Dove
 
-* `<module-list>` è un elenco di moduli delimitato da spazi da abilitare o disabilitare. Se un nome di modulo contiene caratteri speciali, racchiuderlo tra virgolette singole o doppie.
-* `--all` per attivare o disattivare tutti i moduli contemporaneamente.
-* `-f` o `--force` per forzare l&#39;abilitazione o la disabilitazione di un modulo nonostante le dipendenze. Prima di utilizzare questa opzione, consulta [Informazioni sull&#39;attivazione e la disattivazione dei moduli](#about-enabling-and-disabling-modules).
-* `-c` o `--clear-static-content` pulitura [file di visualizzazione statica generati](../../configuration/cli/static-view-file-deployment.md).
+* `<module-list>` è un elenco delimitato da spazi di moduli da abilitare o disabilitare. Se un nome di modulo contiene caratteri speciali, racchiuderlo tra virgolette singole o doppie.
+* `--all` per abilitare o disabilitare tutti i moduli contemporaneamente.
+* `-f` o `--force` per forzare l&#39;abilitazione o la disabilitazione di un modulo nonostante le dipendenze. Prima di utilizzare questa opzione, vedere [Informazioni sull&#39;attivazione e la disattivazione dei moduli](#about-enabling-and-disabling-modules).
+* `-c` o `--clear-static-content` pulisce [file di visualizzazione statica generati](../../configuration/cli/static-view-file-deployment.md).
 
   Se non si cancellano i file di visualizzazione statica, potrebbero verificarsi dei problemi se sono presenti più file con lo stesso nome e non si cancellano tutti.
 
-  In altre parole, a causa della [fallback di file statici](../../configuration/cli/static-view-file-deployment.md) regole, se non si cancellano i file statici ed è presente più di un file denominato `logo.svg` che sono diversi, il fallback potrebbe causare la visualizzazione del file sbagliato.
+  In altre parole, a causa delle [regole di fallback del file statico](../../configuration/cli/static-view-file-deployment.md), se non si cancellano i file statici e sono presenti più file denominati `logo.svg` diversi, il fallback potrebbe causare la visualizzazione del file errato.
 
-Ad esempio, per disattivare `Magento_Weee` modulo, immetti:
+Ad esempio, per disabilitare il modulo `Magento_Weee`, immettere:
 
 ```bash
 bin/magento module:disable Magento_Weee
@@ -82,7 +82,7 @@ Adobe Commerce consente di abilitare o disabilitare i moduli attualmente disponi
 
 Alcuni moduli hanno dipendenze da altri moduli, nel qual caso potrebbe non essere possibile abilitare o disabilitare un modulo perché presenta dipendenze da altri moduli.
 
-Inoltre, potrebbero esserci *in conflitto* moduli che non possono essere attivati contemporaneamente.
+Inoltre, potrebbero essere presenti *moduli in conflitto* che non possono essere attivati entrambi contemporaneamente.
 
 Esempi:
 
@@ -90,20 +90,20 @@ Esempi:
 
 * Il modulo A dipende dal modulo B, entrambi disabilitati. È necessario abilitare il modulo B prima di abilitare il modulo A.
 
-* Il modulo A è in conflitto con il modulo B. È possibile disabilitare i moduli A e B, oppure disabilitare entrambi i moduli ma *non può* attivare il modulo A e il modulo B contemporaneamente.
+* Il modulo A è in conflitto con il modulo B. È possibile disabilitare i moduli A e B oppure disabilitare entrambi i moduli, ma *non è possibile* abilitare contemporaneamente i moduli A e B.
 
-* Le dipendenze sono dichiarate nel `require` in Adobe Commerce `composer.json` per ciascun modulo. I conflitti vengono dichiarati nel `conflict` campo nei moduli `composer.json` file. Queste informazioni vengono utilizzate per creare un grafico delle dipendenze: `A->B` significa che il modulo A dipende dal modulo B.
+* Le dipendenze sono dichiarate nel campo `require` nel file Adobe Commerce `composer.json` per ciascun modulo. I conflitti sono dichiarati nel campo `conflict` nei file `composer.json` dei moduli. Queste informazioni vengono utilizzate per creare un grafico delle dipendenze: `A->B` significa che il modulo A dipende dal modulo B.
 
-* A *catena di dipendenze* è il percorso da un modulo a un altro. Ad esempio, se il modulo A dipende dal modulo B e il modulo B dipende dal modulo C, la catena di dipendenze è `A->B->C`.
+* Una *catena di dipendenze* è il percorso da un modulo a un altro. Ad esempio, se il modulo A dipende dal modulo B e il modulo B dipende dal modulo C, la catena di dipendenze è `A->B->C`.
 
 Se tenti di abilitare o disabilitare un modulo che dipende da altri moduli, il grafico delle dipendenze viene visualizzato nel messaggio di errore.
 
 >[!NOTE]
 >
->È possibile che il modulo A `composer.json` dichiara un conflitto con il modulo B ma non viceversa.
+>È possibile che il modulo A `composer.json` dichiari un conflitto con il modulo B ma non viceversa.
 
-*Solo riga di comando:* Per forzare l&#39;attivazione o la disattivazione di un modulo indipendentemente dalle dipendenze, utilizzare l&#39;opzione `--force` argomento.
+*Solo riga di comando:* Per forzare l&#39;attivazione o la disattivazione di un modulo indipendentemente dalle dipendenze, utilizzare l&#39;argomento facoltativo `--force`.
 
 >[!NOTE]
 >
->Utilizzo di `--force` può disabilitare l’archivio e causare problemi di accesso all’amministratore.
+>L&#39;utilizzo di `--force` può disabilitare l&#39;archivio e causare problemi di accesso all&#39;amministratore.

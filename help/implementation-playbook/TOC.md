@@ -36,11 +36,11 @@ ht-degree: 12%
    - Architettura di riferimento globale {#global-reference-architecture}
       - [Panoramica](architecture/global-reference/overview.md)
       - [Esempi](architecture/global-reference/examples.md)
-      - Sviluppo del composizione {#composer}
+      - Sviluppo del compositore {#composer}
          - [Panoramica](architecture/global-reference/composer/overview.md)
          - [Struttura del progetto](architecture/global-reference/composer/project-structure.md)
          - [Suggerimenti](architecture/global-reference/composer/tips-and-tricks.md)
-- Infrastruttura e installazione {#infrastructure}
+- Infrastruttura e distribuzione {#infrastructure}
    - [Panoramica](infrastructure/overview.md)
    - Hosting autonomo {#self-hosting}
       - [Panoramica](infrastructure/self-hosting/overview.md)
@@ -58,17 +58,17 @@ ht-degree: 12%
       - [Problemi tipici](infrastructure/performance/optimization.md)
       - [Benchmark](infrastructure/performance/benchmarks.md)
       - [Recommendations](infrastructure/performance/recommendations.md)
-- Preparazione al lancio {#launch}
+- Preparazione del lancio {#launch}
    - [Panoramica](launch/overview.md)
    - [Passaggi precedenti all’avvio](launch/pre-launch-steps.md)
    - [Passaggi di avvio](launch/launch-steps.md)
-   - [Passaggi successivi all’avvio](launch/post-launch-steps.md)
+   - [Passaggi per l’avvio di Post](launch/post-launch-steps.md)
 - Manutenzione e supporto {#maintenance}
    - [Panoramica](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Best practice {#best-practices}
    - [Panoramica](best-practices/phases.md)
-   - Pianificazione {#planning}
+   - Pianificazione di {#planning}
       - [Panoramica](best-practices/planning/overview.md)
       - [Gestione catalogo](best-practices/planning/catalog-management.md)
       - [Configurazione di siti, archivi e viste archivio](best-practices/planning/sites-stores-store-views.md)
@@ -96,8 +96,8 @@ ht-degree: 12%
       - [Blocchi di contenuto privato](best-practices/development/private-content-block-configuration.md)
       - [Distribuzione di contenuti statici](best-practices/development/static-content-deployment.md)
       - [Modifica delle tabelle di database](best-practices/development/modifying-core-and-third-party-tables.md)
-      - [Modifica del codice core e di terze parti](best-practices/development/modifying-core-and-third-party-code.md)
-   - Launch {#launch}
+      - [Modifica del codice principale e di terze parti](best-practices/development/modifying-core-and-third-party-code.md)
+   - Avvia {#launch}
       - [Panoramica](best-practices/launch/overview.md)
       - [Configura web crawler](best-practices/launch/robots-txt.md)
       - [Proteggere il sito e l&#39;infrastruttura](best-practices/launch/security-best-practices.md)

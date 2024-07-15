@@ -5,7 +5,7 @@ exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
 feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Delivery
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '296'
 ht-degree: 1%
 
 ---
@@ -27,11 +27,11 @@ Combinando contenuti e commerce per soddisfare le esigenze dei clienti relative 
 
 ## Acquisti senza soluzione di continuità ovunque
 
-La crescita del commercio è alimentata dal soddisfare le esigenze dei clienti. Espandi la tua portata e diventa un nuovo canale, area geografica e vendi online sia alle aziende che ai consumatori in un’unica piattaforma. Porta il commercio ai tuoi clienti ovunque, in qualsiasi momento e in qualsiasi momento preferiscano acquistare.
+La crescita di Commerce è alimentata dal soddisfare le esigenze dei clienti. Espandi la tua portata e diventa un nuovo canale, area geografica e vendi online sia alle aziende che ai consumatori in un’unica piattaforma. Porta il commercio ai tuoi clienti ovunque, in qualsiasi momento e in qualsiasi momento preferiscano acquistare.
 
 - Mobile commerce
 - E-commerce B2B
-- PWA Studi
+- PWA Studio
 - Espansione globale
 - Canale di vendita Amazon
 - Integrazione ERP

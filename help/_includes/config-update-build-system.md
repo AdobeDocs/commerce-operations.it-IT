@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Aggiorna sistema di build
 
-**Per aggiornare il sistema di build**:
+**Per aggiornare il sistema di compilazione**:
 
 1. Accedi al sistema di build come proprietario del file system.
 1. Passare alla directory radice dell&#39;applicazione.
@@ -16,7 +16,7 @@ ht-degree: 0%
    cd <Magento root dir>
    ```
 
-1. Richiama le modifiche in `app/etc/config.php` dal controllo del codice sorgente.
+1. Estrarre le modifiche a `app/etc/config.php` dal controllo del codice sorgente.
 
    ```bash
    git pull mconfig m2.2_deploy

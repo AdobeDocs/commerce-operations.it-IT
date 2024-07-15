@@ -15,17 +15,17 @@ ht-degree: 0%
 
 ## Tipi di cache
 
-Puoi utilizzare il sistema di gestione della cache di Adobe Commerce per migliorare le prestazioni del sito. Questo argomento spiega come gli amministratori di sistema o gli sviluppatori con accesso al server applicazioni Commerce possono gestire le cache dalla riga di comando.
+Puoi utilizzare il sistema di gestione della cache di Adobe Commerce per migliorare le prestazioni del sito. In questo argomento viene illustrato come gli amministratori di sistema o gli sviluppatori con accesso al server applicazioni di Commerce possono gestire le cache dalla riga di comando.
 
 >[!NOTE]
 >
 >
->Gli amministratori del sito di Commerce possono gestire la cache dall’amministratore utilizzando lo strumento Sistema di gestione della cache. Consulta [Gestione cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) nel _Guida ai sistemi di amministrazione_.
+>Gli amministratori del sito di Commerce possono gestire la cache dall’amministratore utilizzando lo strumento Sistema di gestione della cache. Consulta [Gestione cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) nella _Guida di Admin Systems_.
 
 
 ## Visualizzare lo stato della cache
 
-Dalla riga di comando del server applicazioni Commerce, visualizzare lo stato della cache utilizzando `cache:status` Comando Commerce CLI.
+Dalla riga di comando del server applicazioni Commerce, visualizzare lo stato della cache utilizzando il comando CLI di Commerce `cache:status`.
 
 ```bash
    bin/magento cache:status
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Per una descrizione dettagliata dei tipi di cache predefiniti supportati da Adobe Commerce, vedi [Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) nel _Guida ai sistemi di amministrazione_.
+>Per una descrizione dettagliata dei tipi di cache predefiniti supportati da Adobe Commerce, vedi [Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) nella _Guida ai sistemi di amministrazione_.
 
 
 ## Abilitare o disabilitare i tipi di cache
@@ -68,9 +68,9 @@ Questo comando consente di abilitare o disabilitare tutti i tipi di cache o solo
 
 >[!INFO]
 >
->A partire dalla versione 2.2, è possibile abilitare o disabilitare i tipi di cache solo utilizzando la riga di comando durante l’esecuzione di Commerce in modalità di produzione. Se esegui Commerce in modalità sviluppatore, puoi abilitare o disabilitare i tipi di cache utilizzando la riga di comando o manualmente. Prima di eseguire questa operazione, è necessario eseguire manualmente le operazioni `<magento_root>/app/etc/env.php` scrivibile da [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
+>A partire dalla versione 2.2, è possibile abilitare o disabilitare solo i tipi di cache utilizzando la riga di comando durante l’esecuzione di Commerce in modalità di produzione. Se esegui Commerce in modalità sviluppatore, puoi abilitare o disabilitare i tipi di cache utilizzando la riga di comando o manualmente. Prima di eseguire questa operazione, è necessario rendere `<magento_root>/app/etc/env.php` scrivibile manualmente dal [proprietario del file system](../../installation/prerequisites/file-system/overview.md).
 
-È possibile pulire (indicato anche come _scaricamento_ o _aggiorna_) i tipi di cache utilizzando la riga di comando o l&#39;amministratore.
+È possibile pulire i tipi di cache (detti anche _scaricamento_ o _aggiornamento_) utilizzando la riga di comando o l&#39;amministratore.
 
 Opzioni comando:
 
@@ -82,7 +82,7 @@ bin/magento cache:enable [type] ... [type]
 bin/magento cache:disable [type] ... [type]
 ```
 
-Se omesso `[type]` attiva o disattiva tutti i tipi di cache contemporaneamente. Il `type` option è un elenco di tipi di cache separati da spazi.
+Se omette `[type]`, verranno attivati o disattivati tutti i tipi di cache contemporaneamente. L&#39;opzione `type` è un elenco di tipi di cache separati da spazi.
 
 <!-- `--bootstrap=` is a URL-encoded associative array of Commerce [application bootstrap parameters](../bootstrap/set-parameters.md#bootstrap-parameters) and values. -->
 
@@ -112,17 +112,17 @@ Risultato di esempio:
 
 >[!INFO]
 >
->A partire dalla versione 2.3.4, Commerce memorizza nella cache tutti gli attributi EAV di sistema durante il recupero. Memorizzare nella cache gli attributi EAV in questo modo migliora le prestazioni, perché riduce la quantità di richieste di inserimento/selezione al database. Tuttavia, aumenta anche la dimensione della rete cache. Gli sviluppatori possono memorizzare nella cache gli attributi EAV personalizzati eseguendo il comando `bin/magento config:set dev/caching/cache_user_defined_attributes 1` comando. Questa operazione può essere eseguita anche dall’amministratore durante la [Modalità sviluppatore](../bootstrap/application-modes.md) impostando **Negozi** > Impostazioni **Configurazione** > **Avanzate** > **Sviluppatore** > **Impostazioni di memorizzazione in cache** > **Memorizza nella cache attributi definiti dall&#39;utente** a **Sì**.
+>A partire dalla versione 2.3.4, Commerce memorizza nella cache tutti gli attributi EAV di sistema durante il recupero. Memorizzare nella cache gli attributi EAV in questo modo migliora le prestazioni, perché riduce la quantità di richieste di inserimento/selezione al database. Tuttavia, aumenta anche la dimensione della rete cache. Gli sviluppatori possono memorizzare nella cache gli attributi EAV personalizzati eseguendo il comando `bin/magento config:set dev/caching/cache_user_defined_attributes 1`. Questa operazione può essere eseguita anche dall&#39;amministratore in [modalità sviluppatore](../bootstrap/application-modes.md) impostando **Archivi** > Impostazioni **Configurazione** > **Avanzate** > **Sviluppatore** > **Impostazioni memorizzazione in cache** > **Memorizza nella cache attributi definiti dall&#39;utente** a **Sì**.
 
 ## Pulisci e svuota tipi di cache
 
 >[!NOTE]
 >
->La cache di più pagine può essere invalidata simultaneamente e automaticamente **_senza_** entità che modificano. Ad esempio, quando un prodotto nel catalogo viene assegnato a una categoria o quando [!UICONTROL related product rule] è stato modificato.
+>La cache di più pagine può essere invalidata simultaneamente e automaticamente **_senza_** la modifica di queste entità. Ad esempio, quando un prodotto nel catalogo viene assegnato a una categoria qualsiasi o quando viene modificato [!UICONTROL related product rule].
 
-Per rimuovere gli elementi obsoleti dalla cache, puoi _pulita_ o _scaricamento_ tipi di cache:
+Per eliminare gli elementi non aggiornati dalla cache, è possibile _pulire_ o _svuotare_ i tipi di cache:
 
-- La pulizia di un tipo di cache comporta l’eliminazione di tutti gli elementi solo dai tipi di cache di Commerce abilitati. In altre parole, questa opzione non influisce su altri processi o applicazioni perché pulisce solo la cache utilizzata da Commerce.
+- La pulizia di un tipo di cache comporta l&#39;eliminazione di tutti gli elementi solo dai tipi di cache di Commerce abilitati. In altre parole, questa opzione non influisce su altri processi o applicazioni perché pulisce solo la cache utilizzata da Commerce.
 
   I tipi di cache disattivati non vengono puliti.
 
@@ -144,7 +144,7 @@ Utilizzo comando:
    bin/magento cache:flush [type] ... [type]
 ```
 
-Dove `[type]` è un elenco di tipi di cache separati da spazi. Omissione `[type]` pulisce o svuota tutti i tipi di cache contemporaneamente. Ad esempio, per eseguire il flushing di tutti i tipi di cache, immettere
+Dove `[type]` è un elenco separato da spazi di tipi di cache. Se si omette `[type]`, tutti i tipi di cache vengono puliti o svuotati contemporaneamente. Ad esempio, per eseguire il flushing di tutti i tipi di cache, immettere
 
 ```bash
    bin/magento cache:flush
@@ -173,4 +173,4 @@ Risultato di esempio:
 
 >[!TIP]
 >
->Puoi anche pulire e svuotare i tipi di cache in Admin. Vai a **Sistema** > **Strumenti** > **Gestione cache**. **Svuota archiviazione cache** equivale a `bin/magento cache:flush`. **Svuota cache Magento** equivale a `bin/magento cache:clean`.
+>Puoi anche pulire e svuotare i tipi di cache in Admin. Vai a **Sistema** > **Strumenti** > **Gestione cache**. **L&#39;archiviazione della cache di scaricamento** equivale a `bin/magento cache:flush`. **Svuota cache Magento** equivale a `bin/magento cache:clean`.

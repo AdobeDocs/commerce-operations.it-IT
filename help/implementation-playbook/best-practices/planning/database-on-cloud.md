@@ -21,7 +21,7 @@ Adobe Commerce sull’infrastruttura cloud
 
 ## Convertire tutte le tabelle MyISAM in InnoDB
 
-L&#39;Adobe consiglia di utilizzare il motore di database InnoDB. In un&#39;installazione predefinita di Adobe Commerce, tutte le tabelle del database vengono memorizzate utilizzando il motore InnoDB. Tuttavia, alcuni moduli di terze parti (estensioni) possono introdurre tabelle in formato MyISAM. Dopo aver installato un modulo di terze parti, controlla il database per identificare eventuali tabelle in `myisam` formattare e convertirli in `innodb` formato.
+L&#39;Adobe consiglia di utilizzare il motore di database InnoDB. In un&#39;installazione predefinita di Adobe Commerce, tutte le tabelle del database vengono memorizzate utilizzando il motore InnoDB. Tuttavia, alcuni moduli di terze parti (estensioni) possono introdurre tabelle in formato MyISAM. Dopo aver installato un modulo di terze parti, controllare il database per identificare eventuali tabelle in formato `myisam` e convertirle nel formato `innodb`.
 
 ### Determinare se un modulo include tabelle MyISAM
 
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### Cambia il motore di archiviazione in InnoDB
 
-In `db_schema.xml` file che dichiara la tabella, impostare `engine` valore di attributo per il corrispondente `table` nodo a `innodb`. Per maggiori informazioni, consulta [Configura schema dichiarativo > nodo tabella](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) nella documentazione per gli sviluppatori.
+Nel file `db_schema.xml` che dichiara la tabella, impostare il valore dell&#39;attributo `engine` per il nodo `table` corrispondente su `innodb`. Per maggiori informazioni, consulta [Configurare lo schema dichiarativo > nodo della tabella](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) nella documentazione per gli sviluppatori.
 
 Lo schema dichiarativo è stato introdotto in Adobe Commerce sulla versione 2.3 dell’infrastruttura cloud.
 
@@ -59,9 +59,9 @@ Per determinare quale motore di ricerca è attualmente in uso, eseguire il coman
 
 Per le istruzioni di configurazione, consulta la Guida per gli sviluppatori per Adobe Commerce sul cloud:
 
-- [Configurare il servizio OpenSearch](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [Configura il servizio OpenSearch](https://devdocs.magento.com/cloud/project/services-opensearch.html)
 
-- [Configurare il servizio Elasticsearch](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [Configura il servizio Elasticsearch](https://devdocs.magento.com/cloud/project/services-elastic.html)
 
 ## Evita trigger personalizzati
 
@@ -72,22 +72,22 @@ Gli attivatori vengono utilizzati per registrare le modifiche nelle tabelle di c
 - I trigger vengono interpretati come codice e MySQL non li precompila. Collegandosi allo spazio delle transazioni della query, il sovraccarico viene aggiunto a un parser e a un interprete per ogni query eseguita con la tabella.
 - I trigger condividono lo stesso spazio di transazione delle query originali e, mentre tali query competono per i blocchi della tabella, i trigger competono in modo indipendente sui blocchi di un&#39;altra tabella.
 
-Per informazioni sulle alternative all&#39;utilizzo di trigger personalizzati, consulta [Trigger MySQL](mysql-configuration.md#triggers).
+Per informazioni sulle alternative all&#39;utilizzo di trigger personalizzati, vedere [Trigger MySQL](mysql-configuration.md#triggers).
 
 ## Aggiorna [!DNL ECE-Tools] alla versione 2002.0.21 o successiva {#ece-tools-version}
 
-Per evitare potenziali problemi con deadlock cron, aggiorna ECE-Tools alla versione 2002.0.21 o successiva. Per istruzioni, consulta [Aggiorna `ece-tools` version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) nella documentazione per gli sviluppatori.
+Per evitare potenziali problemi con deadlock cron, aggiorna ECE-Tools alla versione 2002.0.21 o successiva. Per istruzioni, consulta [Aggiornare `ece-tools` versione](https://devdocs.magento.com/cloud/project/ece-tools-update.html) nella documentazione per gli sviluppatori.
 
 ## Cambia la modalità di indicizzazione in modo sicuro
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
-Cambiare gli indicizzatori genera [!DNL data definition language] (DDL) per creare trigger che possono causare blocchi del database. Per evitare questo problema, imposta il sito Web in modalità di manutenzione e disabilita i processi cron prima di modificare la configurazione.
-Per istruzioni, consulta [Configurare gli indici](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) nel *Guida alla configurazione di Adobe Commerce*.
+Il passaggio degli indicizzatori genera istruzioni [!DNL data definition language] (DDL) per creare trigger che possono causare blocchi del database. Per evitare questo problema, imposta il sito Web in modalità di manutenzione e disabilita i processi cron prima di modificare la configurazione.
+Per istruzioni, vedere [Configurare gli indicizzatori](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) nella *Guida alla configurazione di Adobe Commerce*.
 
 ## Non eseguire istruzioni DDL in produzione
 
-Evita di eseguire istruzioni DDL nell’ambiente di produzione per evitare conflitti (come modifiche e creazioni di tabelle). Il `setup:upgrade` processo è un&#39;eccezione.
+Evita di eseguire istruzioni DDL nell’ambiente di produzione per evitare conflitti (come modifiche e creazioni di tabelle). Il processo `setup:upgrade` è un&#39;eccezione.
 
 Se devi eseguire un’istruzione DDL, imposta il sito web in modalità di manutenzione e disattiva cron (consulta le istruzioni per il passaggio sicuro degli indici nella sezione precedente).
 
@@ -95,7 +95,7 @@ Se devi eseguire un’istruzione DDL, imposta il sito web in modalità di manute
 
 Abilita l’archiviazione degli ordini dall’amministratore per ridurre lo spazio necessario per le tabelle Vendite in base alla crescita dei dati dell’ordine. L&#39;archiviazione consente di risparmiare spazio su disco MySQL e di migliorare le prestazioni di estrazione.
 
-Consulta [Abilita archiviazione](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) nella documentazione di Adobe Commerce Merchant.
+Consulta [Abilitare l&#39;archiviazione](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) nella documentazione di Adobe Commerce Merchant.
 
 ## Informazioni aggiuntive
 

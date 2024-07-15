@@ -4,7 +4,7 @@ description: Scopri come generare dizionari di traduzione e pacchetti linguistic
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1432'
 ht-degree: 0%
 
 ---
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Le traduzioni Commerce ti consentono di personalizzare e localizzare il tuo negozio per più aree geografiche e mercati generando:
+Le traduzioni Commerce consentono di personalizzare e localizzare il negozio per più aree geografiche e mercati generando:
 
-- **Dizionari di traduzione**, che sono un modo pratico per personalizzare o tradurre _alcuni_ parole e frasi, ad esempio quelle per un modulo o un tema personalizzato.
-- **Pacchetti per lingua** che ti consentono di tradurre _uno o tutti_ parole e frasi nell’applicazione Commerce.
+- **Dizionari di traduzione**, che rappresentano un modo pratico per personalizzare o tradurre _alcune_ parole e frasi, ad esempio quelle per un modulo o un tema personalizzato.
+- **Pacchetti di lingua** che consentono di tradurre _una o tutte_ parole e frasi nell&#39;applicazione Commerce.
 
-Consulta [Panoramica sulle traduzioni].
+Vedi [Panoramica sulle traduzioni].
 
 ## Generare un dizionario di traduzione
 
-Puoi generare un [dizionario di traduzione] per personalizzare le stringhe esistenti, traduci parole e frasi in un modulo personalizzato, localizza un tema o crea pacchetti di lingue.
+Puoi generare un [dizionario di traduzione] per personalizzare stringhe esistenti, tradurre parole e frasi in un modulo personalizzato, localizzare un tema o creare pacchetti di lingue.
 
 Per iniziare la traduzione, utilizza un comando per generare un file CSV del dizionario con un elenco di tutte le frasi e parole esistenti.
 
@@ -33,9 +33,9 @@ Per generare il dizionario e avviare la traduzione:
 
    Sono disponibili opzioni per l’utilizzo del dizionario tradotto:
 
-1. Puoi creare un pacchetto dei dizionari di traduzione in un pacchetto per lingua e fornirlo all’amministratore di Commerce Store.
+1. Puoi creare un pacchetto dei dizionari di traduzione in un pacchetto per lingua e fornirlo all’amministratore del Commerce Store.
 
-1. Nell’amministratore, l’amministratore dello store [configura le traduzioni].
+1. Nell&#39;amministratore, l&#39;amministratore dell&#39;archivio [configura le traduzioni].
 
 Opzioni comando:
 
@@ -49,21 +49,21 @@ Nella tabella seguente vengono illustrati i parametri e i valori:
 |--- |--- |--- |
 | `<path to directory to translate>` | Percorso di una directory che contiene codice traducibile, ovvero file PHP, PHTML o XML con frasi da tradurre.<br><br>Lo strumento inizia la ricerca nel percorso immesso e cerca tutti i file e le sottodirectory in esso contenuti.<br><br>Non utilizzare questo parametro se si utilizza `-m --magento`. | Sì (dizionari), no (pacchetti). |
 | `-m --magento` | Necessario per creare un pacchetto lingua da questo dizionario di traduzione. Se utilizzato, esegue la ricerca nelle directory che contengono bin/magento. Questa opzione aggiunge temi o moduli a ogni riga del dizionario.<br><br>Di seguito è riportato un esempio:<br><br>&quot;Nessun elemento trovato&quot;,&quot;Nessun elemento trovato&quot;,modulo,Magento_Wishlist | No |
-| `-o --output="<path>"` | Specifica il percorso assoluto del file system e il nome del file CSV del dizionario di traduzione da creare. Il valore immesso fa distinzione tra maiuscole e minuscole. Il nome del file CSV deve corrispondere esattamente al nome delle impostazioni internazionali, comprese le lettere maiuscole e minuscole.<br><br>Se si omette questo parametro, l&#39;output viene indirizzato a stdout. | No |
+| `-o --output="<path>"` | Specifica il percorso assoluto del file system e il nome del file CSV del dizionario di traduzione da creare. Il valore immesso fa distinzione tra maiuscole e minuscole. Il nome del file CSV deve corrispondere esattamente al nome delle impostazioni internazionali, comprese le lettere maiuscole e minuscole.<br><br>Se si omette questo parametro, l&#39;output verrà indirizzato a stdout. | No |
 
 >[!INFO]
 >
->Per creare un Language Pack da un dizionario di traduzione, _deve_ utilizzare il `-m|--magento` opzione.
+>Per creare un Language Pack da un dizionario di traduzione, è _necessario_ utilizzare l&#39;opzione `-m|--magento`.
 
 ### Linee guida per la traduzione
 
 Utilizza le seguenti linee guida per tradurre parole e frasi:
 
-- Modificare solo il contenuto della seconda colonna. Traduci le frasi da Inglese (`US`) alla lingua desiderata.
-- Quando crei dizionari per le lingue, utilizza le stringhe Commerce predefinite.
-- Durante la traduzione, presta attenzione ai segnaposto: `%1`, `%2`
+- Modificare solo il contenuto della seconda colonna. Tradurre le frasi dall&#39;inglese (`US`) alla lingua desiderata.
+- Quando si creano dizionari per lingue, utilizzare le stringhe predefinite di Commerce.
+- Durante la traduzione, prestare attenzione ai segnaposto: `%1`, `%2`
 
-Commerce utilizza i segnaposto per inserire valori contestuali; sono _non_ utilizzato per le traduzioni. Ad esempio:
+Commerce utilizza i segnaposto per inserire i valori di contesto; sono _non_ utilizzati per le traduzioni. Ad esempio:
 
 ```text
 Product '%1' has been added to shopping cart.
@@ -75,7 +75,7 @@ Popola con un valore:
 Product 'Multimeter-2000' has been added to shopping cart.
 ```
 
-La frase risultante deve contenere almeno uno di ciascun segnaposto. Si supponga, ad esempio, che siano presenti segnaposto da `%1` a `%3` nella frase originale. La traduzione può avere un numero illimitato di segnaposto in qualsiasi ordine, ma deve esserci almeno un&#39;occorrenza di `%1`, `%2`, e `%3`. La traduzione non può contenere valori segnaposto non presenti nel valore originale (ad esempio, `%4`, `%5`e così via).
+La frase risultante deve contenere almeno uno di ciascun segnaposto. Si supponga, ad esempio, che nella frase originale siano presenti segnaposto compresi tra `%1` e `%3`. La traduzione può avere tutti questi segnaposto in qualsiasi ordine, ma deve esserci almeno un&#39;occorrenza di `%1`, `%2` e `%3`. La traduzione non può contenere valori segnaposto non presenti nel valore originale (ad esempio, `%4`, `%5` e così via).
 
 Un esempio di traduzione di una frase:
 
@@ -89,10 +89,10 @@ Al contrario di un dizionario di traduzione, puoi tradurre qualsiasi parola o tu
 
 Questa sezione illustra come creare un pacchetto per la lingua, che scrive i file CSV in moduli e temi. Per creare un pacchetto lingua, è necessario eseguire le attività descritte nelle sezioni seguenti:
 
-1. [Raccogliere e tradurre parole e frasi](#generate-a-translation-dictionary). (Il `--magento` è obbligatorio.)
+1. [Raccogliere e tradurre parole e frasi](#generate-a-translation-dictionary). (Il parametro `--magento` è obbligatorio.)
 1. [Esegui il comando del pacchetto lingua](#run-the-language-package-command).
 1. [Creare directory e file](#create-directories-and-files).
-1. (Facoltativo.) [Configurare più pacchetti per una lingua](#configure-multiple-packages-for-a-language).
+1. (Facoltativo) [Configurare più pacchetti per una lingua](#configure-multiple-packages-for-a-language).
 
 ### Esegui il comando del pacchetto lingua
 
@@ -106,40 +106,40 @@ Nella tabella seguente vengono illustrati i parametri e i valori per il comando 
 
 | Parametro | Valore | Obbligatorio |
 |--- |--- |--- |
-| `<source>` | Percorso assoluto del file system e nome file di un file CSV che contiene il dizionario di traduzione combinato e le metainformazioni necessarie per la suddivisione in un pacchetto lingua.<br><br>Utilizzare [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) per creare il file CSV, quindi crea il pacchetto lingua come descritto in [Creare directory e file](#m2devgde-xlate-files). | Sì |
-| `<locale>` | [ISO 639-1] (lingua) e [ISO 3166] (paese) identificatore della lingua utilizzata come nome file per tutti i file CSV risultanti. Esempi: `de_DE`, `pt_PT`, `pt_BR`. | Sì |
-| `-m --mode` | Se esiste un file di destinazione, specifica se sostituire il pacchetto lingua esistente o unire con il nuovo Language Pack. L’unione sostituisce tutte le frasi esistenti e ne aggiunge di nuove.<br><br>Valori: unisci o sostituisci (impostazione predefinita). | No |
+| `<source>` | Percorso assoluto del file system e nome file di un file CSV che contiene il dizionario di traduzione combinato e le metainformazioni necessarie per la suddivisione in un pacchetto lingua.<br><br>Utilizzare [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) per creare il file CSV, quindi creare il pacchetto lingua come descritto in [Creare directory e file](#m2devgde-xlate-files). | Sì |
+| `<locale>` | [ISO 639-1] (lingua) e [ISO 3166] (paese) identificatori della lingua utilizzati come nome file per tutti i file CSV risultanti. Esempi: `de_DE`, `pt_PT`, `pt_BR`. | Sì |
+| `-m --mode` | Se esiste un file di destinazione, specifica se sostituire il pacchetto lingua esistente o unire con il nuovo Language Pack. L’unione sostituisce tutte le frasi esistenti e ne aggiunge di nuove.<br><br>Valori: merge o replace (impostazione predefinita). | No |
 | `-d --allow-duplicates` | Includi questa opzione per consentire i duplicati nel Language Pack. In caso contrario, il comando non riesce se rileva la stessa frase in più voci con traduzioni diverse. | No |
 
 ### Creare directory e file
 
-I pacchetti di lingua si trovano in una directory in `app/i18n/<VendorName>` nel file system di Commerce con i seguenti contenuti:
+I pacchetti di lingua si trovano in una directory in `app/i18n/<VendorName>` nel file system di Commerce con il seguente contenuto:
 
 - File di licenza richiesti
 - `composer.json`
-- `registration.php` che [registri] il pacchetto lingua
-- [`language.xml`](#language-package-languagexml) file di metadati
+- `registration.php` che [registra] il pacchetto lingua
+- [`language.xml`](#language-package-languagexml) file di metainformazioni
 
 >[!INFO]
 >
->L&#39;intero percorso deve essere scritto in minuscolo. Ad esempio, consulta [`de_de`].
+>L&#39;intero percorso deve essere scritto in minuscolo. Ad esempio, vedere [`de_de`].
 
 Per creare questi file:
 
 1. Creare una directory in `app/i18n`.
 
-   Ad esempio, i pacchetti per lingua Commerce si trovano in `app/i18n/magento`
+   Ad esempio, i pacchetti delle lingue di Commerce si trovano in `app/i18n/magento`
 
 1. Aggiungi i file di licenza richiesti.
 1. Aggiungi [`composer.json`] che specifica le dipendenze per il pacchetto lingua.
-1. Registrare il pacchetto lingua con [`registration.php`]
-1. Aggiungi `language.xml` file di metadati, come descritto nella sezione successiva.
+1. Registra il pacchetto lingua con [`registration.php`]
+1. Aggiungere il file di metainformazioni `language.xml` come descritto nella sezione successiva.
 
 #### Language.xml del pacchetto lingua
 
-Quando si dichiara un pacchetto lingua in `language.xml` file di configurazione, è necessario specificare la sequenza dell&#39;ereditarietà della lingua per questo pacchetto.
+Quando si dichiara un pacchetto lingua nel file di configurazione `language.xml`, è necessario specificare la sequenza dell&#39;ereditarietà della lingua per questo pacchetto.
 
-L’ereditarietà della lingua consente di creare una traduzione denominata _secondario_ in base a una traduzione esistente denominata _principale_. Le traduzioni secondarie hanno la precedenza su quelle principali. Tuttavia, se la traduzione secondaria non viene caricata o visualizzata o manca una frase o una parola, Commerce utilizza le impostazioni locali principali. [Esempi di ereditarietà dei pacchetti di linguaggio](#example-of-language-inheritance).
+L&#39;ereditarietà della lingua consente di creare una traduzione denominata _figlio_ basata su una traduzione esistente denominata _padre_. Le traduzioni secondarie hanno la precedenza su quelle principali. Tuttavia, se la traduzione secondaria non viene caricata o visualizzata oppure manca una frase o una parola, Commerce utilizza le impostazioni locali principali. [Esempi di ereditarietà del pacchetto del linguaggio](#example-of-language-inheritance).
 
 Per dichiarare un pacchetto, specificare le informazioni seguenti:
 
@@ -156,11 +156,11 @@ Per dichiarare un pacchetto, specificare le informazioni seguenti:
 
 Dove:
 
-- `code`- Impostazioni locali del pacchetto lingua (obbligatorio)
-- `vendor`- Nome del fornitore del modulo (obbligatorio)
-- `package`- Nome pacchetto lingua (obbligatorio)
-- `sort_order`- Priorità di caricamento di un pacchetto quando sono disponibili diversi pacchetti di lingue per uno store
-- `use`- Impostazioni locali del pacchetto lingua padre da cui ereditare i dizionari
+- `code` - Impostazioni locali del pacchetto lingua (obbligatorio)
+- `vendor` - Nome fornitore del modulo (obbligatorio)
+- `package` - Nome pacchetto lingua (obbligatorio)
+- `sort_order` - Priorità di caricamento di un pacchetto quando sono disponibili diversi pacchetti di lingue per un archivio
+- `use` - Impostazioni locali del pacchetto lingua padre da cui ereditare i dizionari
 
 Se necessario, puoi specificare diversi pacchetti principali. I pacchetti padre vengono applicati in base al primo elenco utilizzato.
 
@@ -168,7 +168,7 @@ Se necessario, puoi specificare diversi pacchetti principali. I pacchetti padre 
 
 Supponiamo che un pacchetto di linguaggio erediti da altri due pacchetti e che questi pacchetti abbiano anche pacchetti padre e &quot;nonno&quot;.
 
-Se un pacchetto di linguaggio eredita da due pacchetti, `language.xml` potrebbe essere simile al seguente:
+Se un pacchetto di lingua eredita da due pacchetti, `language.xml` potrebbe essere simile al seguente:
 
 ```xml
 <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
@@ -186,7 +186,7 @@ Nell’esempio precedente:
 - `language_package_one` eredita da `en_au_package` e `en_au_package` eredita da `en_ie_package`
 - `language_package_two` eredita da `en_ca_package` e `en_ca_package` eredita da `en_us_package`
 
-Se l’applicazione Commerce non è in grado di trovare una parola o una frase nel `en_GB` pacchetto, cerca in altri pacchetti nella seguente sequenza:
+Se l&#39;applicazione Commerce non è in grado di trovare parole o frasi nel pacchetto `en_GB`, cerca in altri pacchetti nella sequenza seguente:
 
 1. `parent-package-one/language_package_one`
 1. `<vendorname>/en_au_package`
@@ -195,13 +195,13 @@ Se l’applicazione Commerce non è in grado di trovare una parola o una frase n
 1. `<vendorname>/en_ca_package`
 1. `<vendorname>/en_us_package`
 
-La specifica di tutte le ereditarietà tra i pacchetti di linguaggio potrebbe causare la creazione di catene di ereditarietà circolari. Utilizzare [Magento\Test\Integrity\App\Language\CircularDependencyTest] per individuare e correggere tali catene.
+La specifica di tutte le ereditarietà tra i pacchetti di linguaggio potrebbe causare la creazione di catene di ereditarietà circolari. Utilizza il test [Magento\Test\Integrity\App\Language\CircularDependencyTest] per individuare e correggere tali catene.
 
 ### Configurare più pacchetti per una lingua
 
 Per rendere il tuo negozio più flessibile, puoi caricare diversi pacchetti linguistici per la stessa lingua nel tuo negozio. Pertanto, puoi utilizzare pacchetti personalizzati diversi per parti diverse del tuo archivio, perché il sistema compila un singolo pacchetto da tutti i pacchetti disponibili per una lingua.
 
-Per abilitare un pacchetto aggiuntivo per una lingua esistente, assegna al nuovo pacchetto un nome qualsiasi ad eccezione del nome di un codice della lingua esistente (per evitare confusione). Specificare le configurazioni di un pacchetto nel file del pacchetto lingua `language.xml` file di metadati, come descritto nella sezione successiva.
+Per abilitare un pacchetto aggiuntivo per una lingua esistente, assegna al nuovo pacchetto un nome qualsiasi ad eccezione del nome di un codice della lingua esistente (per evitare confusione). Specificare le configurazioni di un pacchetto nel file di metainformazioni `language.xml` del pacchetto lingua, come descritto nella sezione successiva.
 
 ## Esempi di utilizzo dei comandi di traduzione
 
@@ -219,14 +219,14 @@ Per aggiungere una traduzione in tedesco a un modulo o a un tema che desideri di
 
    >[!INFO]
    >
-   >Il nome del file CSV deve _corrisponde esattamente_ le impostazioni locali, comprese le lettere maiuscole e minuscole dei caratteri.
+   >Il nome del file CSV deve _corrispondere esattamente_ alla lingua, comprese le lettere maiuscole e minuscole.
 
-1. Traduci parole e frasi utilizzando [le presenti linee guida](#translation-guidelines).
-1. Se necessario, copia `xx_YY.csv` a `/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n` o nella directory dei temi del modulo (a seconda che il dizionario di traduzione sia per un modulo o per un tema).
+1. Traduci le parole e le frasi utilizzando [queste linee guida](#translation-guidelines).
+1. Se necessario, copiare `xx_YY.csv` in `/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n` o nella directory dei temi del modulo (a seconda che il dizionario di traduzione sia per un modulo o un tema).
 
 ### Esempio: creare un pacchetto lingua
 
-Come nell’esempio precedente, genera un file CSV, ma invece di specificare un modulo o una directory tematica, specifica l’intera directory principale dell’applicazione Commerce. Il file CSV risultante contiene tutte le frasi che il comando potrebbe trovare nel codice.
+Analogamente all&#39;esempio precedente, generare un file CSV, ma invece di specificare un modulo o una directory dei temi, specificare l&#39;intera directory radice dell&#39;applicazione Commerce. Il file CSV risultante contiene tutte le frasi che il comando potrebbe trovare nel codice.
 
 1. Raccogli frasi dal modulo:
 
@@ -236,9 +236,9 @@ Come nell’esempio precedente, genera un file CSV, ma invece di specificare un 
 
    >[!INFO]
    >
-   >Il nome del file CSV deve _corrisponde esattamente_ le impostazioni locali, comprese le lettere maiuscole e minuscole dei caratteri.
+   >Il nome del file CSV deve _corrispondere esattamente_ alla lingua, comprese le lettere maiuscole e minuscole.
 
-1. Traduci parole e frasi utilizzando [le presenti linee guida](#translation-guidelines).
+1. Traduci le parole e le frasi utilizzando [queste linee guida](#translation-guidelines).
 1. Crea il pacchetto lingua.
 
    ```bash

@@ -4,7 +4,7 @@ description: Scopri i diversi ruoli e responsabilità coinvolti in un progetto d
 exl-id: 6e61dcce-ad71-4380-bae4-48be1a3d88b9
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -130,11 +130,11 @@ Il team dei contenuti può essere posizionato all’interno del team Marketing, 
 
 Il team dei contenuti è responsabile di:
 
-- **Organizzazione del contenuto**- Elementi, URL, navigazione e struttura della pagina devono essere semplici e intuitivi. Se il sito è troppo complicato, i clienti si perdono.
+- **Organizzazione del contenuto**: elementi, URL, navigazione e struttura della pagina devono essere semplici e intuitivi. Se il sito è troppo complicato, i clienti si perdono.
 
-- **Correzione del contenuto interrotto**: immagini, pagine, pagine mancanti, flusso di pagamento interrotto e messaggi di errore interrotti fanno sì che i clienti abbandonino il sito e lascino un’impressione negativa.
+- **Correzione di contenuti interrotti**: immagini, pagine, pagine mancanti, flussi di pagamento interrotti e messaggi di errore interrotti fanno uscire i clienti dal sito e lasciano un&#39;impressione negativa.
 
-- **Aggiornamento del contenuto**: il contenuto del sito web deve essere aggiornato. Se il sito è costituito da contenuti obsoleti, questo influisce sull’esperienza del cliente e aumenta il carico di lavoro per il team del Servizio clienti. Ad esempio, devono rispondere alle domande dei clienti a cui avrebbe dovuto rispondere il contenuto del sito web.
+- **Aggiornamento del contenuto**: il contenuto del sito Web deve essere aggiornato. Se il sito è costituito da contenuti obsoleti, questo influisce sull’esperienza del cliente e aumenta il carico di lavoro per il team del Servizio clienti. Ad esempio, devono rispondere alle domande dei clienti a cui avrebbe dovuto rispondere il contenuto del sito web.
 
 - **Semplificazione dei contenuti**: il team dei contenuti deve creare contenuti semplici e diretti. Il linguaggio semplice funziona meglio quando si interagisce con i clienti.
 

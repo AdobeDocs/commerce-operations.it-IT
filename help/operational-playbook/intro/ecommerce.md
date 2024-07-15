@@ -4,7 +4,7 @@ description: Descrizione dell’e-commerce
 exl-id: b418d36b-7dc6-49c7-95a8-03a55c69cb6f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ L’e-commerce consente alle persone di aprire le porte dei propri negozi virtua
 - Le spese generali dell&#39;e-commerce sono basse rispetto a mattoni e malta
 - I negozi online sono aperti 24 ore su 24, 7 giorni su 7
 - L&#39;acquisto è immediato
-- Personalizzazione ed esperienze utente personalizzate
+- Personalization ed esperienze utente personalizzate
 - Potenziale di portata globale del cliente
 
 ### Svantaggi
@@ -73,6 +73,6 @@ Le aspettative dei clienti sono in aumento e sono sempre disponibili nuove tecni
 
 ![Il valore della tecnologia commerce](../../assets/playbooks/commerce-tech.png)
 
-## Industrie commerciali
+## Settori Commerce
 
 ![Il valore della tecnologia commerce](../../assets/playbooks/commerce-industries.png)

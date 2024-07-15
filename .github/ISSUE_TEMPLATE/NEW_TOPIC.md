@@ -6,8 +6,8 @@ labels: New Topic
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 0%
+source-wordcount: '36'
+ht-degree: 8%
 
 ---
 
@@ -22,8 +22,8 @@ ht-degree: 0%
 
 <!-- Use the following checklist template as a starting point -->
 
-- [ ] L’argomento spiega come ____.
-- [ ] L’argomento descrive i passaggi da seguire per ____.
+- [ ] L&#39;argomento spiega come ____.
+- [ ] L&#39;argomento descrive i passaggi per la ____.
 - [ ] L&#39;argomento contiene esempi di codice che mostrano ____.
 - [ ] Altro (specificare)
 

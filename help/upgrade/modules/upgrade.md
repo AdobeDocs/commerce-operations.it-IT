@@ -47,9 +47,9 @@ Per aggiornare un modulo o un’estensione:
 
 ## Estensioni in bundle con i fornitori (VBE)
 
-Adobe rimosso tutto [VBE](https://devdocs.magento.com/extensions/vendor/) al punto 2.4.4. I fornitori continuano a supportare queste estensioni sul Marketplace Adobe Commerce.
+L&#39;Adobe ha rimosso tutti i [VBE](https://devdocs.magento.com/extensions/vendor/) nella versione 2.4.4. I fornitori continuano a supportare queste estensioni sul Marketplace Adobe Commerce.
 
-Se desideri continuare a utilizzare queste estensioni con Adobe Commerce 2.4.4 e versioni successive, devi aggiornare le dipendenze dei pacchetti corrispondenti nel `composer.json` file _prima di_ aggiornamento a 2.4.4. Contatta il fornitore per il nome e la versione del pacchetto da utilizzare.
+Se si desidera continuare a utilizzare queste estensioni con Adobe Commerce 2.4.4 e versioni successive, è necessario aggiornare le dipendenze del pacchetto corrispondenti nel file `composer.json` _prima_ dell&#39;aggiornamento alla versione 2.4.4. Contatta il fornitore per il nome e la versione del pacchetto da utilizzare.
 
 Per ulteriori informazioni, consulta i seguenti elenchi di Adobe Commerce Marketplace:
 

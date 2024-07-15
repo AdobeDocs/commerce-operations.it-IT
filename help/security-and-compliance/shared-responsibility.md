@@ -106,10 +106,10 @@ La soluzione Adobe Commerce per l’infrastruttura cloud utilizza i provider CDN
 
 La tabella di riepilogo seguente utilizza il modello RACI per mostrare le responsabilità di sicurezza condivise tra Adobe, l’esercente e il provider di servizi Cloud:
 
-**R** — Responsabile
+**R** - Responsabile
 **A** — Responsabile
 **C** — Consultato
-**I** — Informato
+**I** - Informato
 
 >[!ENDSHADEBOX]
 
@@ -132,7 +132,7 @@ La tabella di riepilogo seguente utilizza il modello RACI per mostrare le respon
     <td></td>
   </tr>
   <tr>
-    <td>Applicazione di patch ai servizi di supporto<br>Ad esempio, Nginx o MySQL.</td>
+    <td>Applicazione delle patch ai servizi di supporto<br> (ad esempio, Nginx o MySQL).</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -230,7 +230,7 @@ La tabella di riepilogo seguente utilizza il modello RACI per mostrare le respon
     <td></td>
   </tr>
   <tr>
-    <td>Configurazione dell’archivio di origine<sup>1</sup></td>
+    <td>Configurazione del repository di origine<sup>1</sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -356,7 +356,7 @@ La tabella di riepilogo seguente utilizza il modello RACI per mostrare le respon
     <td></td>
   </tr>
   <tr>
-    <td>Configurazione di Nginx<sup>3</sup></td>
+    <td>Configurazione Di Nginx<sup>3</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -440,7 +440,7 @@ La tabella di riepilogo seguente utilizza il modello RACI per mostrare le respon
     <td></td>
   </tr>
   <tr>
-    <td>Correzione delle scansioni PCI di Adobe Commerce sull’infrastruttura cloud<sup>4</sup></td>
+    <td>Correzione delle scansioni PCI di Adobe Commerce sull'infrastruttura cloud<sup>4</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -520,10 +520,10 @@ La tabella di riepilogo seguente utilizza il modello RACI per mostrare le respon
 <tfoot>
   <tr>
     <td colspan="5">
-      <p><sup><strong>1</strong></sup> Solo se come archivio principale viene utilizzato l’archivio dell’infrastruttura cloud di Adobe Commerce. L’utilizzo di altri archivi esterni è di esclusiva responsabilità dell’esercente.</p>
-      <p><sup><strong>2</strong></sup> L’Adobe fornisce supporto di livello 1 per i problemi con i provider CDN.</p>
-      <p><sup><strong>3</strong></sup> Il commerciante è responsabile di tutti i controlli Ngnix che configura per le loro applicazioni.</p>
-      <p><sup><strong>4</strong></sup> Per il PCI, i requisiti dei test di penetrazione sono condivisi tra Adobe e il commerciante.</p>
+      <p><sup><strong>1</strong></sup> Solo se l'archivio dell'infrastruttura cloud di Adobe Commerce è utilizzato come archivio principale. L’utilizzo di altri archivi esterni è di esclusiva responsabilità dell’esercente.</p>
+      <p>L'Adobe di <sup><strong>2</strong></sup> fornisce il supporto di livello 1 per i problemi con i provider CDN.</p>
+      <p><sup><strong>3</strong></sup> Il commerciante è responsabile di tutti i controlli Ngnix configurati per le proprie applicazioni.</p>
+      <p><sup><strong>4</strong></sup> Per PCI, i requisiti dei test di penetrazione sono condivisi tra Adobe e il commerciante.</p>
     </td>
   </tr>
 </tfoot>
@@ -639,7 +639,7 @@ I commercianti sono responsabili della sincronizzazione dei dati tra ambienti di
 | --- | --- | --- |
 | Rotazione dei registri | R |   |
 | Applicazione Adobe Commerce personalizzata | | R |
-| Disponibilità dei servizi New Relic:<br>Integrazione di applicazioni e agenti APM, applicazione di infrastruttura,<br>Registrazione e integrazione | R |   |
+| Disponibilità dei servizi New Relic:<br>Integrazione di agenti e applicazioni APM, applicazione di infrastruttura,<br>Registrazione e integrazione | R |   |
 | Configurazione degli avvisi di New Relic |     | R |
 | Distribuzione dell&#39;agente New Relic sui server PaaS |     | R |
 
@@ -662,7 +662,7 @@ I commercianti sono responsabili della sincronizzazione dei dati tra ambienti di
 | --- | --- | --- |
 | Configurazione dell’applicazione |     | R |
 | Aggiunta di domini all’applicazione Adobe Commerce (URL di base) |     | R |
-| Configurazione di PaaS per l’utilizzo delle versioni dei servizi supportate dalla versione di Adobe Commerce implementata<br><br>Ad esempio, versioni diverse di Commerce sono compatibili con versioni specifiche di PHP, Redis e così via. |     | R |
+| Configurazione di PaaS per l&#39;utilizzo delle versioni dei servizi supportate dalla versione distribuita di Adobe Commerce<br><br>Ad esempio, versioni diverse di Commerce sono compatibili con versioni specifiche di PHP, Redis e così via. |     | R |
 
 {style="table-layout:auto"}
 
@@ -702,8 +702,8 @@ I commercianti sono responsabili della sincronizzazione dei dati tra ambienti di
 |     | Adobe | Commerciante |
 | --- | --- | --- |
 | Disponibilità dei servizi Galera e MariaDB | R | |
-| Manutenzione continua delle impostazioni predefinite del database<br><br>(indicizzazione e ottimizzazione delle tabelle principali, ottimizzazione delle impostazioni sys-admin predefinite) | R |   |
-| Manutenzione continua dei dati degli esercenti e delle impostazioni modificate<br><br>(configurazione di tabelle normalizzate e flat, indicizzazione e ottimizzazione di tabelle personalizzate e di terze parti, archiviazione o rimozione di dati, configurazione delle impostazioni di amministrazione del sistema) |     | R |
+| Manutenzione in corso delle impostazioni predefinite del database<br><br>(indicizzazione e ottimizzazione delle tabelle principali, ottimizzazione delle impostazioni predefinite sys-admin) | R |   |
+| Manutenzione continua dei dati dei commercianti e delle impostazioni modificate<br><br>(configurazione di tabelle normalizzate e flat, indicizzazione e ottimizzazione di tabelle personalizzate e di terze parti, archiviazione o rimozione di dati, configurazione delle impostazioni di amministrazione del sistema) |     | R |
 | Configurazione di Galera e MySQL | R |   |
 | Qualità costante e patch di Galera e MariaDB | R |   |
 | Ottimizzazione continua dell&#39;infrastruttura | R |   |
@@ -755,7 +755,7 @@ I commercianti sono responsabili della sincronizzazione dei dati tra ambienti di
 | --- | --- | --- |
 | Disponibilità del servizio e-mail SendGrid e relativa integrazione | R |   |
 | Monitorare l’utilizzo di SendGrid da parte del commerciante rispetto ai limiti | R |   |
-| L’esercente è responsabile dell’utilizzo del servizio solo per le e-mail transazionali in uscita<br>Il servizio non supporta l’invio di e-mail di marketing. |     | R |
+| L&#39;esercente è responsabile dell&#39;utilizzo del servizio solo per le e-mail transazionali in uscita<br>Il servizio non supporta l&#39;invio di e-mail di marketing. |     | R |
 | Configurazione dei servizi e-mail di terze parti facoltativi |     | R |
 
 {style="table-layout:auto"}
@@ -786,8 +786,8 @@ I commercianti sono responsabili della sincronizzazione dei dati tra ambienti di
 | Disponibilità dei servizi di Business Intelligence Adobe Commerce | R |   |
 | Processi di sincronizzazione dati MBI | R |   |
 | Rilevamento problemi di sincronizzazione MBI | R |   |
-| Configurazione della sincronizzazione dei dati MBI con Adobe Commerce Cloud Pro, Starter, On-Premises o non Adobe Commerce<br>(API, qualità e formattazione dei dati, rete commerciale,<br>Connessioni DB sia all&#39;interno che all&#39;esterno di Adobe Commerce Cloud DB, oltre le soglie dati) |     | R |
-| Configurazione della sincronizzazione dei dati MBI con Adobe Commerce Cloud Pro<br>(configurazione del database di Adobe Commerce Cloud) | R |   |
+| Configurazione della sincronizzazione dei dati MBI con Adobe Commerce Cloud Pro, Starter, On-Premises o non Adobe Commerce<br>(API, qualità e formattazione dei dati, rete di esercenti,<br>connessioni DB sia all&#39;interno che all&#39;esterno di Adobe Commerce Cloud DB, oltre le soglie dei dati) |     | R |
+| Configurazione della sincronizzazione dei dati MBI con Adobe Commerce Cloud Pro<br> (configurazione del database Adobe Commerce Cloud) | R |   |
 
 {style="table-layout:auto"}
 
@@ -857,7 +857,7 @@ I commercianti sono responsabili della sincronizzazione dei dati tra ambienti di
 | Configurazione di PrivateLink in entrata nell’endpoint del servizio VPC dell’esercente |     | R |
 | Accettazione di PrivateLink in entrata all&#39;endpoint del servizio VPC del commerciante | R |   |
 | Configurazione delle integrazioni PrivateLink (da endpoint a account) |     | R |
-| Configurazione del VPC di proprietà del commerciante per l’endpoint PrivateLink<br><br> (comprese eventuali connessioni VPN) |     | R |
+| Configurazione del VPC di proprietà del commerciante per l&#39;endpoint PrivateLink <br><br> (incluse eventuali connessioni VPN) |     | R |
 
 {style="table-layout:auto"}
 

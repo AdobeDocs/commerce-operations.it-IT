@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,15 @@ I passaggi seguenti descrivono come associare il front-end della cache a un tipo
 
 ## Passaggio 1: definire un front-end della cache
 
-L’applicazione Commerce presenta una `default` cache front-end utilizzabile per qualsiasi [tipo di cache](../cli/manage-cache.md#clean-and-flush-cache-types). Questa sezione illustra come definire facoltativamente un front-end della cache con un nome diverso, che è preferibile se si prevede di personalizzare il front-end.
+L&#39;applicazione Commerce dispone di una cache front-end `default` che è possibile utilizzare per qualsiasi tipo di [cache](../cli/manage-cache.md#clean-and-flush-cache-types). Questa sezione illustra come definire facoltativamente un front-end della cache con un nome diverso, che è preferibile se si prevede di personalizzare il front-end.
 
 >[!INFO]
 >
->Per utilizzare `default` tipo di cache, non è necessario modificare `env.php` affatto; puoi modificare il codice globale di Commerce `di.xml`. Consulta [Opzioni cache di basso livello](cache-options.md).
+>Per utilizzare il tipo di cache `default`, non è necessario modificare `env.php`. Modificare il `di.xml` globale di Commerce. Consulta [Opzioni cache di basso livello](cache-options.md).
 
-È necessario specificare una cache front-end personalizzata: `app/etc/env.php` o Commerce&#39;s global `app/etc/di.xml`.
+È necessario specificare un front-end di cache personalizzato `app/etc/env.php` o `app/etc/di.xml` globale di Commerce.
 
-L’esempio seguente mostra come definirlo nel `env.php` , che sostituisce il `di.xml` file:
+Nell&#39;esempio seguente viene illustrato come definirlo nel file `env.php`, che sostituisce il file `di.xml`:
 
 ```php?start_inline=1
 'cache' => [
@@ -46,7 +46,7 @@ L’esempio seguente mostra come definirlo nel `env.php` , che sostituisce il `d
 ],
 ```
 
-Dove `<unique frontend id>` è un nome univoco per identificare il front-end e `<cache options>` sono opzioni descritte negli argomenti specifici di ciascun tipo di memorizzazione in cache (database, Redis e così via).
+Dove `<unique frontend id>` è un nome univoco per identificare il front-end e `<cache options>` sono opzioni discusse negli argomenti specifici di ciascun tipo di memorizzazione in cache (database, Redis e così via).
 
 ## Passaggio 2: configurare la cache
 
@@ -70,10 +70,10 @@ Dove `<unique frontend id>` è un nome univoco per identificare il front-end e `
 dove
 
 - `<frontend_type>` è il tipo di cache front-end di basso livello. Specificare il nome di una classe compatibile con `Zend\Cache\Core`.
-Se ometti `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) viene utilizzato.
+Se si omette `<frontend_type>`, verrà utilizzato [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php).
 
-- `<frontend_option>`, `<frontend_option_value>` sono il nome e il valore delle opzioni che il framework Commerce trasmette come array associativo alla cache front-end al momento della sua creazione.
-- `<backend_type>` è il tipo di cache back-end di basso livello. Specificare il nome di una classe compatibile con `Zend_Cache_Backend` e che implementa `Zend_Cache_Backend_Interface`.
-- `<backend_option>` e `<backend_option_value>` sono il nome e il valore delle opzioni passate dal framework Commerce come array associativo alla cache back-end al momento della sua creazione.
+- `<frontend_option>`, `<frontend_option_value>` sono il nome e il valore delle opzioni passate dal framework Commerce come array associativo alla cache front-end al momento della creazione.
+- `<backend_type>` è il tipo di cache back-end di basso livello. Specificare il nome di una classe compatibile con `Zend_Cache_Backend` che implementa `Zend_Cache_Backend_Interface`.
+- `<backend_option>` e `<backend_option_value>` sono il nome e il valore delle opzioni passate dal framework Commerce come array associativo alla cache back-end al momento della creazione.
 
-Consulta la [Documentazione di Laminas](https://docs.laminas.dev/) per informazioni aggiornate su Zend.
+Per informazioni aggiornate su Zend, consulta la [documentazione di Laminas](https://docs.laminas.dev/).

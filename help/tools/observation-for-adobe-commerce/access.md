@@ -1,6 +1,6 @@
 ---
-title: Accesso a [!DNL Observation for Adobe Commerce] nerdlet
-description: Scopri come accedere al [!DNL Observation for Adobe Commerce] nerdlet.
+title: Accesso al nerdlet  [!DNL Observation for Adobe Commerce]
+description: Scopri come accedere al nerdlet  [!DNL Observation for Adobe Commerce] .
 exl-id: 4b6f554e-685b-465d-8676-b70e790606c6
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,16 +10,16 @@ ht-degree: 0%
 
 ---
 
-# Accesso a [!DNL Observation for Adobe Commerce] nerdlet
+# Accesso al nerdlet [!DNL Observation for Adobe Commerce]
 
-Per utilizzare [!DNL New Relic Observation for Adobe Commerce] nerdlet, assicurati di avere accesso a [!DNL New Relic].
+Per utilizzare il nerdlet [!DNL New Relic Observation for Adobe Commerce], assicurati di avere accesso a [!DNL New Relic].
 
-1. Vai a [!UICONTROL Okta] home page (solo per utenti di Adobi interni).
-1. Seleziona la [!UICONTROL New Relic applet] (solo per utenti di Adobi interni).
+1. Passa alla home page di [!UICONTROL Okta] (solo per utenti Adobi interni).
+1. Selezionare [!UICONTROL New Relic applet] (solo per utenti Adobi interni).
 
    ![Applet New Relic](../../assets/tools/observation-for-adobe-commerce/new-relic-applet.jpeg)
 
-1. Autentica tramite [!UICONTROL Okta] (solo per utenti di Adobi interni).
-1. Dalla sezione [!DNL New Relic] home page, selezionare la voce di menu App.
+1. Eseguire l&#39;autenticazione tramite [!UICONTROL Okta] (solo per utenti Adobi interni).
+1. Dalla home page di [!DNL New Relic], selezionare la voce di menu App.
 
    ![Home page di New Relic](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)

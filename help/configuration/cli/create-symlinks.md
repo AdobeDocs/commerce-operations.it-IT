@@ -23,19 +23,19 @@ bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="...
 
 >[!INFO]
 >
->Durante lo sviluppo, questo comando crea dei symlink per i file LESS in `var/view_preprocessed` e `pub/static` cartelle. Questo processo non compila file LESS in file CSS.
+>Durante lo sviluppo, questo comando crea symlink per i file LESS nelle cartelle `var/view_preprocessed` e `pub/static`. Questo processo non compila file LESS in file CSS.
 
 Nella tabella seguente vengono illustrati i parametri e i valori di questo comando.
 
 | Parametro | Valore | Obbligatorio |
 | --------- | ----- | --------- |
-| `--type` | Tipo di file di origine: [meno] (impostazione predefinita: &quot;less&quot;)<br>Attualmente, LESS è l’unico tipo di file supportato. | No |
-| `--locale` | Codice lingua.<br>Per visualizzare l&#39;elenco dei codici internazionali, immettere: `bin/magento info:language:list` | No |
-| `--area` | Area (`adminhtml` per il settore amministrativo, `frontend` per la vetrina). | No |
-| `--theme` | Nome tema in `<VendorName>/<theme-name>` formato. Ad esempio: `Magento/blank` o `Magento/backend`. | No |
-| `<file>` | Elenco separato da spazi di file CSS da convertire in LESS senza estensione CSS. (Il valore predefinito è `css/styles-m css/styles-l`, per il tipo adminhtml `css/styles css/styles-old`) | No |
+| `--type` | Tipo di file di origine: [less] (impostazione predefinita: &quot;less&quot;)<br>Attualmente, LESS è l&#39;unico tipo di file supportato. | No |
+| `--locale` | Codice lingua.<br>Per visualizzare l&#39;elenco dei codici locali, immettere `bin/magento info:language:list` | No |
+| `--area` | Area (`adminhtml` per l&#39;area amministrativa, `frontend` per la vetrina). | No |
+| `--theme` | Nome tema in formato `<VendorName>/<theme-name>`. Ad esempio, `Magento/blank` o `Magento/backend`. | No |
+| `<file>` | Elenco separato da spazi di file CSS da convertire in LESS senza estensione CSS. Il valore predefinito è `css/styles-m css/styles-l`, per il tipo adminhtml `css/styles css/styles-old` | No |
 
-Ad esempio, per creare MENO file per il tema front-end denominato `VendorName/themeName` nel `en_US` impostazioni locali utilizzando un file CSS denominato `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`, immetti il comando seguente:
+Ad esempio, per creare un file LESS per il tema front-end denominato `VendorName/themeName` nelle impostazioni locali di `en_US` utilizzando un file CSS denominato `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`, immettere il comando seguente:
 
 ```bash
 bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="frontend" --theme="VendorName/themeName" css/styles-l

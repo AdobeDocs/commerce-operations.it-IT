@@ -28,27 +28,27 @@ Per evitare un problema relativo alla mancata disponibilità del contenuto stati
 
 1. Assicurati di seguire le linee guida per la distribuzione:
    * Per Adobe Commerce on-premise (tutte le versioni), consulta [Panoramica della distribuzione](../../../configuration/deployment/overview.md) nella documentazione per gli sviluppatori.
-   * Per l’infrastruttura cloud di Adobe Commerce (tutte le versioni), consulta [Processo di distribuzione cloud](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html) e [Strategie di distribuzione dei contenuti statici](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html) nella documentazione per gli sviluppatori.
+   * Per Adobe Commerce sull&#39;infrastruttura cloud (tutte le versioni), consulta [Processo di distribuzione cloud](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html) e [Strategie di distribuzione dei contenuti statici](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html) nella documentazione per gli sviluppatori.
 
 1. Per l’infrastruttura cloud di Adobe Commerce (tutte le versioni), assicurati che gli strumenti ece siano nella versione più recente. Consulta: [Aggiorna versione strumenti ece](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) nella documentazione per gli sviluppatori.
-1. Per l’infrastruttura cloud di Adobe Commerce (tutte le versioni), assicurati che il contenuto statico sia distribuito durante la fase di build anziché di distribuzione. Consulta: [Gestione della configurazione per le impostazioni dello store: prestazioni di distribuzione del contenuto statico](https://devdocs.magento.com/cloud/live/sens-data-over.html#cloud-confman-scd-over) nella documentazione per gli sviluppatori.
+1. Per l’infrastruttura cloud di Adobe Commerce (tutte le versioni), assicurati che il contenuto statico sia distribuito durante la fase di build anziché di distribuzione. Consulta: [Gestione della configurazione per le impostazioni dello store - Prestazioni della distribuzione di contenuti statici](https://devdocs.magento.com/cloud/live/sens-data-over.html#cloud-confman-scd-over) nella documentazione per gli sviluppatori.
 1. Assicurati di non avere processi cron con tempi di esecuzione lunghi e di non terminare i processi cron con tempi di esecuzione lunghi. I processi cron a esecuzione prolungata possono richiedere risorse della CPU e potenzialmente aumentare notevolmente i tempi di distribuzione.
-1. Per Adobe Commerce on-premise (tutte le versioni), verifica che il `php` processo in CLI ha accesso al `pub/static` directory. In caso contrario, potrebbe verificarsi un problema che impedirebbe a una distribuzione di contenuto statico di scrivere file in tale directory. Per ulteriori informazioni: [Autorizzazioni di accesso ai file system](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) nella documentazione per gli sviluppatori.
-1. Assicurati che `generated` la directory non è una directory condivisa tra le build; in caso contrario, le build potrebbero non riuscire in modo casuale. Per ulteriori informazioni:
-   * Adobe Commerce locale (tutte le versioni): [Dettagli tecnici](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) nella documentazione per gli sviluppatori.
-   * Adobe Commerce su infrastruttura cloud (tutte le versioni): [Processo di implementazione - Fase 2: compilazione](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-build) nella documentazione per gli sviluppatori.
+1. Per Adobe Commerce on-premise (tutte le versioni), verificare che il processo `php` in CLI abbia accesso alla directory `pub/static`. In caso contrario, potrebbe verificarsi un problema che impedirebbe a una distribuzione di contenuto statico di scrivere file in tale directory. Per ulteriori informazioni: [Autorizzazioni di accesso ai file system](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) nella documentazione per gli sviluppatori.
+1. Verificare che la directory `generated` non sia una directory condivisa tra le build. In caso contrario, le build potrebbero non riuscire in modo casuale. Per ulteriori informazioni:
+   * Adobe Commerce on-premise (tutte le versioni): [Dettagli tecnici](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) nella documentazione per gli sviluppatori.
+   * Adobe Commerce su infrastruttura cloud (tutte le versioni): [Processo di distribuzione - Fase 2: build](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-build) nella documentazione per gli sviluppatori.
 
-1. Verifica la strategia SCD. Il *rapido* Strategia è l&#39;impostazione predefinita. Per ulteriori informazioni:
-   * Adobe Commerce locale (tutte le versioni): [Strategie di distribuzione dei file statici](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) nella documentazione per gli sviluppatori.
-   * Adobe Commerce su infrastruttura cloud (tutte le versioni): [Distribuisci variabili - SCD\_STRATEGY](https://devdocs.magento.com/cloud/env/variables-deploy.html#scd_strategy) nella documentazione per gli sviluppatori.
+1. Verifica la strategia SCD. La strategia *quick* è quella predefinita. Per ulteriori informazioni:
+   * Adobe Commerce on-premise (tutte le versioni): [Strategie di distribuzione di file statici](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) nella documentazione per gli sviluppatori.
+   * Adobe Commerce sull&#39;infrastruttura cloud (tutte le versioni): [Distribuire le variabili - SCD\_STRATEGY](https://devdocs.magento.com/cloud/env/variables-deploy.html#scd_strategy) nella documentazione per gli sviluppatori.
 
 ## Informazioni aggiuntive
 
 Nella documentazione per gli sviluppatori:
 
-* [Contenitore di contenuti statici](https://developer.adobe.com/commerce/admin-developer/pattern-library/containers/static-content/)
+* [Contenitore contenuto statico](https://developer.adobe.com/commerce/admin-developer/pattern-library/containers/static-content/)
 * [Firma contenuto statico](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/static-content-signing.html)
 * [Distribuisci variabili - STATIC\_CONTENT\_SYMLINK](https://devdocs.magento.com/cloud/env/variables-deploy.html#static_content_symlink)
 * [Flusso di distribuzione](../../../performance/deployment-flow.md)
-* [Installazione senza downtime](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html)
-* [Ottimizzare l’implementazione cloud](https://devdocs.magento.com/cloud/deploy/optimize-cloud-deployment.html)
+* [Distribuzione senza tempi di inattività](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html)
+* [Ottimizza distribuzione cloud](https://devdocs.magento.com/cloud/deploy/optimize-cloud-deployment.html)

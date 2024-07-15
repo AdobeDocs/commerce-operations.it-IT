@@ -70,7 +70,7 @@ Utilizza questa raccolta di guide per scoprire concetti, processi, strumenti e b
        <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40"/>
     </a>
     <div>
-      <a href="../commerce-at-scale/overview.md"><strong>Commerce su larga scala</strong></a>
+      <a href="../commerce-at-scale/overview.md"><strong>Commerce su scala</strong></a>
       <p>Scopri come distribuire esperienze su larga scala utilizzando Adobe Commerce con Adobe Experience Manager.</p>
     </div>
   </td>

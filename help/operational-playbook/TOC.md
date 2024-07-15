@@ -4,8 +4,8 @@ user-guide-description: Scopri come rendere le tue unità di business operative 
 feature: Best Practices
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 13%
+source-wordcount: '138'
+ht-degree: 14%
 
 ---
 
@@ -17,38 +17,38 @@ ht-degree: 13%
    - [Adobe Commerce](intro/commerce.md)
    - [Cos’è l’e-commerce?](intro/ecommerce.md)
    - [Modello di business](intro/business-model.md)
-   - [Operazioni commerciali](intro/operations.md)
-   - [Funzioni di Commerce](intro/features.md)
-- Leader {#leadership}
+   - [Operazioni Commerce](intro/operations.md)
+   - [Funzionalità di Commerce](intro/features.md)
+- Leadership {#leadership}
    - [Principi](leadership/principles.md)
    - [Obiettivi](leadership/goals.md)
    - [Visione](leadership/vision.md)
    - [Pianificazione](leadership/planning.md)
 - Soluzione {#solution}
-   - [Software as a service (SaaS)](solution/software-service.md)
+   - [Software-as-a-service (SaaS)](solution/software-service.md)
    - [Platform-as-a-service (PaaS)](solution/platform-service.md)
    - [Hosting locale](solution/on-premises.md)
-   - [Cloud e on-premise](solution/hosting-comparison.md)
+   - [Confronto tra cloud e on-premise](solution/hosting-comparison.md)
    - [Integrazioni di terze parti](solution/integrations.md)
    - [Aggiornamenti, backup e manutenzione](solution/maintenance.md)
 - Strategia {#strategy}
-   - [Strategia commerciale](strategy/commerce.md)
+   - [Strategia Commerce](strategy/commerce.md)
    - [Focus](strategy/focus.md)
    - [Strategia dei contenuti](strategy/content.md)
    - [Maturità](strategy/maturity.md)
-- Processo {#process}
+- Elabora {#process}
    - [Gestione ordini](process/order-management.md)
    - [Piano di progetto](process/project-plan.md)
    - [Ambito del progetto](process/project-scope.md)
-   - [Gestione dei progetti](process/project-management.md)
+   - [Gestione di progetto](process/project-management.md)
    - [Modello DACI](process/project-management-framework.md)
    - [Metodologia Scrum Agile](process/agile-scrum.md)
    - [Workshop comuni sui progetti](process/project-workshops.md)
    - [Test](process/testing.md)
 - Persone {#people}
-   - [Team](people/teams.md)
+   - [Squadre](people/teams.md)
    - [Struttura del team](people/team-structure.md)
-   - [Struttura dell’organizzazione](people/organizational-structure.md)
+   - [Struttura organizzativa](people/organizational-structure.md)
    - [Comunicazione](people/communication.md)
    - [Ruoli e responsabilità](people/roles-responsibilities.md)
    - [Risorse](people/resources.md)
@@ -56,14 +56,14 @@ ht-degree: 13%
    - [Team di progetto](people/project-teams.md)
 - Prodotto {#product}
    - [Sistemi di gestione degli ordini](product/order-management-systems.md)
-   - [Spedizione e adempimento](product/shipping-fulfillment.md)
+   - [Spedizione ed evasione degli ordini](product/shipping-fulfillment.md)
    - [Gateway di pagamento](product/payment-gateways.md)
    - [Prezzi](product/pricing.md)
    - [Immagini del prodotto](product/images.md)
    - [Flussi e processi di checkout](product/checkout.md)
    - [Gestione dinamica dei prezzi](product/dynamic-pricing.md)
    - [Promozioni](product/promotions.md)
-   - [Gestione delle campagne](product/campaign-management.md)
+   - [Gestione Campaign](product/campaign-management.md)
    - [Generazione di lead](product/lead-generation.md)
    - [Reporting e dashboard](product/reporting.md)
    - [Servizio clienti online](product/customer-service.md)
@@ -72,6 +72,6 @@ ht-degree: 13%
    - [Personalizzazione](product/personalization.md)
    - [Fai clic su e raccogli](product/click-collect.md)
    - [PWA](product/progressive-web-app.md)
-- [Elenchi di controllo e modelli](checklists-templates/home.md)
+- [Liste di controllo e modelli](checklists-templates/home.md)
 - [Glossario](glossary.md)
 - [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

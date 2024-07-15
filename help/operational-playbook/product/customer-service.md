@@ -5,7 +5,7 @@ exl-id: ef798b1b-96d0-493e-b125-1d67aa7644a1
 feature: Best Practices, Customers
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ L’e-commerce è basato su tecnologia digitale e l’unico team che interagisce
 
 I retailer devono essere proattivi in termini di servizio ai clienti, perché non solo il marchio è in gioco, ma soprattutto la fedeltà dei clienti. Affinché i rivenditori abbiano successo nel fornire la migliore esperienza del cliente, possono seguire alcune best practice:
 
-- **Canale di supporto multiplo**- La fornitura di servizi solo tramite e-mail o telefono non è sufficiente nell&#39;era attuale. Il servizio clienti deve essere fornito su vari canali, ad esempio chat in diretta, e-mail, telefonate, social media e/o messaggi di testo. Ognuno di questi ha i propri pro e contro che i rivenditori devono analizzare.
+- **Canale di supporto multiplo** - La fornitura di servizi solo tramite e-mail o telefono non è sufficiente nell&#39;era odierna. Il servizio clienti deve essere fornito su vari canali, ad esempio chat in diretta, e-mail, telefonate, social media e/o messaggi di testo. Ognuno di questi ha i propri pro e contro che i rivenditori devono analizzare.
 
-- **Servizio personalizzato**: tutte le attività dei clienti vengono svolte online e i retailer possono tenerne traccia per comprendere il comportamento dei clienti. Ad esempio, quando un cliente si rivolge al team del Servizio clienti, il team disporrà delle informazioni precedenti, come il nome, l’indirizzo e-mail, la cronologia degli ordini e le restituzioni. In questo modo l’Assistenza clienti fornisce un servizio rapido e accurato e ai clienti anche un servizio personalizzato.
+- **Servizio personalizzato**: tutte le attività del cliente vengono eseguite online e i rivenditori possono tenerne traccia per comprendere il comportamento del cliente. Ad esempio, quando un cliente si rivolge al team del Servizio clienti, il team disporrà delle informazioni precedenti, come il nome, l’indirizzo e-mail, la cronologia degli ordini e le restituzioni. In questo modo l’Assistenza clienti fornisce un servizio rapido e accurato e ai clienti anche un servizio personalizzato.
 
-- **Self-service**- È inoltre possibile offrire ai clienti servizi self-service, ad esempio domande frequenti, informativa sulla privacy, termini e condizioni e forum.
+- **Self-service**: è inoltre possibile fornire ai clienti self-service, ad esempio domande frequenti, informativa sulla privacy, termini e condizioni e forum.
 
 I rivenditori dovrebbero mettersi nei panni del cliente per capire il loro problema e fornire la migliore esperienza al cliente. L&#39;esperienza del cliente mantiene il cliente fedele e promuove il marchio.
 

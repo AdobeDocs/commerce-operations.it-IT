@@ -19,12 +19,12 @@ Scrum incoraggia i team auto-organizzati e cross-functional a risolvere i proble
 
 Nella metodologia Scrum, ci sono diverse riunioni che vengono utilizzate per promuovere la trasparenza e i progressi in un progetto di e-commerce:
 
-- **Pianificazione Sprint**- Riunione di pianificazione in cui i membri del team si riuniscono per decidere la quantità di lavoro che può essere completata in uno sprint.
+- **Pianificazione stampata**: una riunione di pianificazione in cui i membri del team si riuniscono per decidere la quantità di lavoro che è possibile completare in uno sprint.
 
-- **Scrum giornaliero**- Una riunione di 15 minuti utilizzata per condividere gli aggiornamenti relativi alle attività di ogni membro del team.
+- **Scrum giornaliero**: una riunione di 15 minuti utilizzata per condividere aggiornamenti sulle attività di ogni membro del team.
 
-- **Revisione Sprint**- Riunione utilizzata per dimostrare l&#39;avanzamento dello sprint.
+- **Revisione Sprint** - Riunione utilizzata per dimostrare lo stato di avanzamento dallo sprint.
 
-- **Stampa retrospettiva**- Riunione utilizzata per riflettere sullo sprint precedente e per identificare le opportunità di miglioramento.
+- **Stampa retrospettiva**: riunione utilizzata per riflettere sullo sprint precedente e per identificare opportunità di miglioramento.
 
 Al termine di ogni sprint, è necessario fornire ai clienti un incremento di valore (ad esempio nuove funzioni, correzioni di bug, aggiornamenti o aggiornamenti di codice generici) che possa essere reso disponibile.

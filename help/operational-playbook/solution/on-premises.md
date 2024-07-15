@@ -14,7 +14,8 @@ ht-degree: 0%
 
 # Hosting locale
 
-Le soluzioni di hosting basate sul cloud sono estremamente popolari e svolgono certamente un ruolo importante in molte organizzazioni, tuttavia l&#39;infrastruttura on-premise è ancora un&#39;opzione adatta per alcune organizzazioni e commercianti.
+Le soluzioni di hosting basate su cloud sono estremamente popolari e di sicuro offrono
+un ruolo importante in molte organizzazioni, tuttavia, l&#39;infrastruttura on-premise è ancora un&#39;opzione adatta per alcune organizzazioni e commercianti.
 
 È necessario considerare diversi fattori prima di scegliere l&#39;hosting on-premise, tra cui i costi irrecuperabili significativi, un pool di competenze IT competenti/convenienti facilmente disponibili e il fatto che le applicazioni on-premise possono spesso essere più facilmente adattate alle esigenze di un&#39;organizzazione.
 

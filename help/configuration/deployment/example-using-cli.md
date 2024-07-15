@@ -4,7 +4,7 @@ description: Vedi un esempio di come impostare valori condivisi, specifici del s
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -12,21 +12,21 @@ ht-degree: 0%
 # Esempio di utilizzo dei comandi CLI
 
 Questo esempio mostra come impostare valori condivisi, specifici del sistema e sensibili nel sistema di sviluppo, quindi distribuire tali valori nel sistema di produzione.
-Questa operazione viene eseguita utilizzando una combinazione di configurazioni condivise `config.php` file e il comando Commerce CLI.
+Questa operazione viene eseguita utilizzando una combinazione di configurazioni condivise, il file `config.php` e il comando CLI di Commerce.
 
 In questo esempio vengono utilizzate le impostazioni di configurazione seguenti:
 
-- **Partita Iva** e **Nome store** per le impostazioni di configurazione condivisa.
+- **Numero Iva** e **Nome archivio** per le impostazioni di configurazione condivise.
 
-  Questi si trovano in **Negozi** > Impostazioni > **Configurazione** > Generale > **Generale**.
+  Sono disponibili in **Archivi** > Impostazioni > **Configurazione** > Generale > **Generale**.
 
 - **Invia e-mail a** per il valore di configurazione sensibile.
 
-  Questo si trova in **Negozi** > Impostazioni > **Configurazione** > Generale > **Contatti**.
+  Si trova in **Archivi** > Impostazioni > **Configurazione** > Generale > **Contatti**.
 
 - **Dominio e-mail predefinito** per il valore di configurazione specifico del sistema.
 
-  Questo si trova in **Negozi** > Impostazioni > **Configurazione** > Clienti > **Configurazione cliente** > **Crea nuove opzioni account**.
+  Si trova in **Archivi** > Impostazioni > **Configurazione** > Clienti > **Configurazione cliente** > **Crea nuove opzioni account**.
 
 È possibile utilizzare la stessa procedura illustrata in questo esempio per configurare le impostazioni nei seguenti riferimenti:
 
@@ -37,7 +37,7 @@ In questo esempio vengono utilizzate le impostazioni di configurazione seguenti:
 
 ## Prima di iniziare
 
-Prima di iniziare, imposta le autorizzazioni e la proprietà del file system come descritto in [Prerequisito per i sistemi di sviluppo, generazione e produzione](../deployment/prerequisites.md).
+Prima di iniziare, configurare le autorizzazioni e la proprietà del file system come descritto in [Prerequisiti per i sistemi di sviluppo, compilazione e produzione](../deployment/prerequisites.md).
 
 ## Presupposti
 
@@ -54,30 +54,30 @@ Ai fini del presente esempio, si assume quanto segue:
 Per impostare le impostazioni internazionali e le unità di misura predefinite nel sistema di sviluppo:
 
 1. Accedi all’amministratore.
-1. Clic **Negozi** > Impostazioni > **Configurazione** > Generale > **Generale**.
-1. Se sono disponibili più siti Web, utilizzare **Visualizzazione store** nell’angolo in alto a sinistra per passare a un sito web diverso, come illustrato nella figura seguente.
+1. Fai clic su **Archivi** > Impostazioni > **Configurazione** > Generale > **Generale**.
+1. Se sono disponibili più siti Web, utilizzare l&#39;elenco **Visualizzazione store** nell&#39;angolo superiore sinistro per passare a un sito Web diverso, come illustrato nella figura seguente.
 
    ![Cambia siti Web](../../assets/configuration/split-deploy-switch-website.png)
 
-1. Nel riquadro di destra, espandere **Informazioni sul negozio**.
-1. Se necessario, cancellare il **Usa predefinito** accanto alla casella di controllo **Partita IVA** e **Nome store** campi.
-1. Immettere un numero nel campo, ad esempio `12345`).
-1. In **Nome store** , immetti un valore (come `My Store`).
-1. Clic **Salva configurazione**.
-1. Nel menu di navigazione a sinistra, nella sezione Generale, fai clic su **Contatti**.
-1. Nel riquadro di destra, espandere **Opzioni e-mail**.
-1. Se necessario, cancellare il **Usa predefinito** accanto alla casella di controllo **Invia e-mail a** campo.
+1. Nel riquadro destro espandere **Informazioni archivio**.
+1. Se necessario, deselezionare la casella di controllo **Usa predefinito** accanto ai campi **Partita IVA** e **Nome archivio**.
+1. Immettere un numero nel campo, ad esempio `12345`.
+1. Nel campo **Nome archivio**, immetti un valore (ad esempio `My Store`).
+1. Fai clic su **Salva configurazione**.
+1. Nel menu di navigazione a sinistra, in Generale, fare clic su **Contatti**.
+1. Nel riquadro di destra espandere **Opzioni e-mail**.
+1. Se necessario, deselezionare la casella di controllo **Usa predefinito** accanto al campo **Invia e-mail a**.
 1. Immetti un indirizzo e-mail nel campo.
-1. Clic **Salva configurazione**.
-1. Utilizza il **Visualizzazione store** elenco per selezionare **Configurazione predefinita** come illustrato nella figura seguente.
+1. Fai clic su **Salva configurazione**.
+1. Utilizzare l&#39;elenco **Visualizzazione archivio** per selezionare la **Configurazione predefinita**, come illustrato nella figura seguente.
 
    ![Passa alla configurazione predefinita](../../assets/configuration/split-deploy-default-config.png)
 
-1. Nel riquadro a sinistra, fai clic su Clienti > **Configurazione cliente**.
-1. Nel riquadro di destra, espandere **Crea nuove opzioni account**.
-1. Se necessario, cancellare il **Usa valore di sistema** accanto alla casella di controllo **Dominio e-mail predefinito** campo.
+1. Nel riquadro sinistro fare clic su Clienti > **Configurazione cliente**.
+1. Nel riquadro di destra espandere **Crea nuove opzioni account**.
+1. Se necessario, deselezionare la casella di controllo **Usa valore di sistema** accanto al campo **Dominio e-mail predefinito**.
 1. Immetti un nome di dominio nel campo.
-1. Clic **Salva configurazione**.
+1. Fai clic su **Salva configurazione**.
 1. Se richiesto, svuotare la cache.
 
 ## Passaggio 2: aggiornare la configurazione
@@ -108,11 +108,11 @@ Per impostare le impostazioni sensibili e specifiche del sistema utilizzando le 
 
 - Ambito per ogni impostazione
 
-  Se hai seguito le istruzioni del passaggio 1, l’ambito per **Invia e-mail a** è un sito web e l’ambito di applicazione **Dominio e-mail predefinito** è globale (ovvero l’ambito Configurazione predefinita).
+  Se hai seguito le istruzioni del passaggio 1, l&#39;ambito per **Inviare e-mail a** è sito Web e l&#39;ambito per **Dominio e-mail predefinito** è globale (ovvero l&#39;ambito di configurazione predefinito).
 
-  È necessario il codice del sito web per impostare **Invia e-mail a** valore di configurazione.
+  È necessario il codice del sito Web per impostare il valore di configurazione **Invia e-mail a**.
 
-  Per ulteriori informazioni sulla ricerca di questo valore, vedi: [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](../reference/override-config-settings.md#environment-variables).
+  Per ulteriori informazioni sulla ricerca di questo valore, vedere: [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](../reference/override-config-settings.md#environment-variables).
 
 - Percorsi di configurazione per le impostazioni utilizzate in questo esempio:
 
@@ -121,7 +121,7 @@ Per impostare le impostazioni sensibili e specifiche del sistema utilizzando le 
   | Invia e-mail a | `contact/email/recipient_email` |
   | Dominio e-mail predefinito | `customer/create_account/email_domain` |
 
-  Per tutti i percorsi di configurazione sensibili e specifici del sistema, vedi: [Riferimento ai percorsi di configurazione sensibili e specifici del sistema](../reference/config-reference-sens.md).
+  Per tutti i percorsi di configurazione sensibili e specifici del sistema, vedere: [Riferimento percorsi di configurazione sensibili e specifici del sistema](../reference/config-reference-sens.md).
 
 ### Impostare le variabili utilizzando i comandi CLI
 
@@ -130,7 +130,7 @@ Utilizzare i seguenti comandi CLI per impostare le impostazioni di configurazion
 - `magento config:set` per le impostazioni specifiche del sistema
 - `magento config:sensitive:set` per le impostazioni sensibili
 
-Per impostare l&#39;impostazione specifica del sistema **Dominio e-mail predefinito**, che si trova nell&#39;ambito predefinito, utilizza il comando seguente:
+Per impostare l&#39;impostazione specifica del sistema **Dominio e-mail predefinito**, che si trova nell&#39;ambito predefinito, utilizzare il comando seguente:
 
 ```bash
 bin/magento config:set customer/create_account/email_domain <email domain>
@@ -138,7 +138,7 @@ bin/magento config:set customer/create_account/email_domain <email domain>
 
 Non è necessario utilizzare l&#39;ambito nel comando perché è l&#39;ambito predefinito.
 
-Per impostare i valori per **Invia e-mail a** Tuttavia, è necessario conoscere il tipo di ambito (`website`) e il codice ambito, probabilmente diverso in ogni sito.
+Per impostare i valori per **Invia e-mail a**, è tuttavia necessario conoscere il tipo di ambito (`website`) e il codice di ambito, che probabilmente è diverso in ogni sito.
 
 Esempio:
 
@@ -157,8 +157,8 @@ Questa sezione illustra come richiamare tutte le modifiche apportate ai sistemi 
 Per verificare le impostazioni di configurazione:
 
 1. Accedi all’amministratore del sistema di produzione.
-1. Clic **Negozi** > Impostazioni > **Configurazione** > Generale > **Generale**.
-1. Utilizza il **Visualizzazione store** nell’angolo in alto a sinistra per passare a un altro sito web.
+1. Fai clic su **Archivi** > Impostazioni > **Configurazione** > Generale > **Generale**.
+1. Utilizza l&#39;elenco **Visualizzazione archivio** nell&#39;angolo superiore sinistro per passare a un altro sito Web.
 
    Le opzioni di configurazione condivise impostate nel sistema di sviluppo vengono visualizzate in modo simile alle seguenti.
 
@@ -166,18 +166,18 @@ Per verificare le impostazioni di configurazione:
 
    >[!INFO]
    >
-   >Il **Nome store** è modificabile nell’ambito del sito web, ma se passi all’ambito Configurazione predefinita non è modificabile. Questo è il risultato di come si impostano le opzioni nel sistema di sviluppo. Il valore di **Partita IVA** non è modificabile nell’ambito del sito web.
+   >Il campo **Nome archivio** è modificabile nell&#39;ambito del sito Web ma non è modificabile se si passa all&#39;ambito Configurazione predefinita. Questo è il risultato di come si impostano le opzioni nel sistema di sviluppo. Il valore di **Partita IVA** non è modificabile nell&#39;ambito del sito Web.
 
 1. Se non lo hai già fatto, passa all’ambito Configurazione predefinita.
-1. Nel menu di navigazione a sinistra, nella sezione Generale, fai clic su **Contatti**.
+1. Nel menu di navigazione a sinistra, in Generale, fare clic su **Contatti**.
 
-   Il **Invia e-mail a** non è modificabile, come illustrato nella figura seguente. Si tratta di un’impostazione sensibile.
+   Il campo **Invia e-mail a** non è modificabile, come illustrato nella figura seguente. Si tratta di un’impostazione sensibile.
 
    ![Verifica le impostazioni nel sistema di produzione](../../assets/configuration/split-deploy-verify-contacts.png)
 
-1. Nel riquadro a sinistra, fai clic su Clienti > **Configurazione cliente**.
-1. Nel riquadro di destra, espandere **Crea nuove opzioni account**.
+1. Nel riquadro sinistro fare clic su Clienti > **Configurazione cliente**.
+1. Nel riquadro di destra espandere **Crea nuove opzioni account**.
 
-   Il valore della proprietà **Dominio e-mail predefinito** viene visualizzato come segue. Si tratta di un’impostazione specifica del sistema.
+   Il valore del campo **Dominio e-mail predefinito** viene visualizzato come segue. Si tratta di un’impostazione specifica del sistema.
 
    ![Verifica le impostazioni nel sistema di produzione](../../assets/configuration/split-default-domain.png)

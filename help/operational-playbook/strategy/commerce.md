@@ -4,12 +4,12 @@ description: Sblocca le funzionalità di e-commerce di base utilizzando il frame
 exl-id: 0efb424b-9026-439d-a50c-d2d935c07c8c
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# Strategia commerciale
+# Strategia Commerce
 
 Il commercio digitale è una forza in rapida evoluzione che si evolve rapidamente ogni anno. Anche se questo può essere interessante per i singoli individui, si presenta anche con molte sfide per le organizzazioni che cercano di navigare nella terra che è l&#39;e-commerce.
 
@@ -48,7 +48,7 @@ La strategia complessiva di e-commerce di ogni azienda è unica in natura che di
 - Creazione ordine
 - Carrello e marketplace di pagamento
 - Conversione da preventivo a ordine
-- Servizi di abbonamento
+- Servizi di iscrizione
 - Transazione OA in linea e fattura di pagamento in linea
 - Ordinamento integrato NextGen B2B (ad esempio, Punchout)
 - Flusso di lavoro e integrazione per gli acquisti

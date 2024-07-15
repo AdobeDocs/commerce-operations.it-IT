@@ -6,8 +6,8 @@ feature: Best Practices, Cache
 exl-id: 1cd48155-5d60-48b2-b07b-9b5784b81681
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 0%
+source-wordcount: '182'
+ht-degree: 1%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 La cache Realpath memorizza nella cache i percorsi effettivi dei file system dei nomi di file a cui si fa riferimento, invece di cercarli ogni volta. Ogni volta che vengono eseguite varie funzioni di file o che richiedono un file e utilizzano un percorso relativo, PHP deve cercare dove esiste realmente quel file.
 
-Per migliorare le prestazioni di Commerce, utilizza le seguenti impostazioni consigliate per configurare `realpath_cache` impostazioni in `php.ini` file:
+Per migliorare le prestazioni di Commerce, utilizzare le seguenti impostazioni consigliate per configurare le impostazioni `realpath_cache` nel file `php.ini`:
 
 - Imposta la dimensione della cache su 10 MB (`realpath cache_size=10M`)
-- Imposta il time to live (ttl) su 7200 secondi (`realpath_cache_ttl=7200`)
+- Imposta durata (ttl) su 7200 secondi (`realpath_cache_ttl=7200`)
 
-Per le istruzioni di configurazione, consulta [Come impostare le opzioni PHP](../../../installation/prerequisites/php-settings.md#how-to-set-php-options).
+Per istruzioni di configurazione, vedere [Come impostare le opzioni PHP](../../../installation/prerequisites/php-settings.md#how-to-set-php-options).
 
 ## Prodotti e versioni interessati
 

@@ -5,24 +5,24 @@ feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 # Riferimento ai percorsi di configurazione generali e avanzati
 
-In questo argomento sono elencati i percorsi di configurazione generali e avanzati e _non_ [valori sensibili e specifici del sistema](config-reference-sens.md). Il [`magento app:config:dump` comando](../cli/export-configuration.md) scrive questi valori nel file di configurazione condiviso, `app/etc/config.php`, che deve trovarsi nel controllo del codice sorgente.
+In questo argomento sono elencati i percorsi di configurazione generali e avanzati e _non_ [valori sensibili e specifici del sistema](config-reference-sens.md). Il comando [`magento app:config:dump`](../cli/export-configuration.md) scrive questi valori nel file di configurazione condiviso, `app/etc/config.php`, che deve trovarsi nel controllo del codice sorgente.
 
-Per ignorare eventuali impostazioni di configurazione o per impostare impostazioni sensibili, vedi [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](override-config-settings.md#environment-variables).
+Per ignorare eventuali impostazioni di configurazione o per impostare impostazioni sensibili, vedere [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](override-config-settings.md#environment-variables).
 
 ## Categoria generale
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin in **Negozi** > Impostazioni > **Configurazione** > **Generale**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Generale**.
 
 ### Percorsi generali
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > Generale > **Generale**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > Generale > **Generale**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Sensibili? |
 |--------------|--------------|--------------|--------------|
@@ -59,7 +59,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi web
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Generale** > **Web**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Generale** > **Web**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -91,7 +91,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi di impostazione della valuta
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Generale** > **Impostazione valuta**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Generale** > **Impostazione valuta**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -116,7 +116,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi contatti
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Generale** > **Contatti**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Generale** > **Contatti**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -129,7 +129,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi dei rapporti
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Generale** > **Rapporti**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Generale** > **Rapporti**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -140,7 +140,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi di gestione dei contenuti
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Generale** > **Gestione dei contenuti**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Generale** > **Gestione contenuto**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -154,7 +154,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi di reporting di New Relic
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Generale** > **Generazione rapporti New Relic**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Generali** > **Generazione rapporti New Relic**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -166,11 +166,11 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Categoria avanzata
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin (Amministrazione) in **Negozi** > Impostazioni > **Configurazione** > **Avanzate**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Avanzate**.
 
 ### Percorsi di amministrazione
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Avanzate** > **Amministratore**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Avanzate** > **Amministratore**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -208,7 +208,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi di sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Avanzate** > **Sistema**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Avanzate** > **Sistema**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
@@ -276,7 +276,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi per sviluppatori
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Avanzate** > **Sviluppatore**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Avanzate** > **Sviluppatore**.
 
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|

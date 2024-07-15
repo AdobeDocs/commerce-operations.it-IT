@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Flusso di distribuzione
 
-Il [!DNL Commerce] il flusso di distribuzione di produzione consente a un archivio di raggiungere le massime prestazioni.
+Il flusso di distribuzione di produzione [!DNL Commerce] consente a un archivio di raggiungere le massime prestazioni.
 
 ## Installare le dipendenze
 
-Il `composer.json` e `composer.lock` file gestire [!DNL Commerce] e installare la versione appropriata per ciascun pacchetto. È necessario installare le dipendenze prima di [istruzioni per l’iniezione della dipendenza di pre-elaborazione](#preprocess-dependency-injection-instructions) se prevedi di aggiornare [autoloader](#update-the-autoloader).
+I file `composer.json` e `composer.lock` gestiscono [!DNL Commerce] dipendenze e installano la versione appropriata per ciascun pacchetto. Installare le dipendenze prima delle [istruzioni per l&#39;inserimento delle dipendenze di pre-elaborazione](#preprocess-dependency-injection-instructions) se si intende aggiornare l&#39;[autoloader](#update-the-autoloader).
 
 Per installare [!DNL Commerce] dipendenze:
 
@@ -41,13 +41,13 @@ bin/magento setup:di:compile
 
 ## Aggiornare il caricatore automatico
 
-Al termine della compilazione, confermare che [APCu è abilitato](../performance/software.md#php-settings) e aggiornare l&#39;autoloader:
+Al termine della compilazione, verificare che [APCu sia abilitato](../performance/software.md#php-settings) e aggiornare il caricatore automatico:
 
 Per aggiornare il caricatore automatico:
 
 >[!INFO]
 >
->Il `-o` L&#39;opzione converte il caricamento automatico PSR-0/4 in classmap per ottenere un autoloader più veloce. Il `--apcu` L’opzione utilizza APCu per memorizzare in cache le classi trovate/non trovate.
+>L&#39;opzione `-o` converte il caricamento automatico PSR-0/4 in classmap per ottenere un autoloader più veloce. L&#39;opzione `--apcu` utilizza APCu per memorizzare nella cache le classi trovate/non trovate.
 
 ```bash
 composer dump-autoload -o --apcu
@@ -73,7 +73,7 @@ bin/magento setup:static-content:deploy
 
 ## Distribuire contenuto statico
 
-La distribuzione di contenuto statico causa [!DNL Commerce] per eseguire le azioni seguenti:
+La distribuzione di contenuto statico induce [!DNL Commerce] a eseguire le azioni seguenti:
 
 * Analizzare tutte le risorse statiche
 * Eseguire l’unione, la riduzione a icona e il raggruppamento dei contenuti
@@ -81,9 +81,9 @@ La distribuzione di contenuto statico causa [!DNL Commerce] per eseguire le azio
 * Analisi del fallback del tema
 * Memorizza tutti i contenuti elaborati e materializzati in una cartella specifica per un ulteriore utilizzo
 
-Se il contenuto statico non viene distribuito, [!DNL Commerce] esegue al volo tutte le operazioni elencate, determinando un aumento significativo dei tempi di risposta.
+Se il contenuto statico non è distribuito, [!DNL Commerce] esegue al volo tutte le operazioni elencate, determinando un aumento significativo del tempo di risposta.
 
-È possibile utilizzare diverse opzioni per personalizzare le operazioni di distribuzione in base alle dimensioni del negozio e alle esigenze di evasione. La più comune è la strategia di installazione compatta. Consulta [Strategie di distribuzione dei file statici](../configuration/cli/static-view-file-strategy.md)
+È possibile utilizzare diverse opzioni per personalizzare le operazioni di distribuzione in base alle dimensioni del negozio e alle esigenze di evasione. La più comune è la strategia di installazione compatta. Vedi [Strategie di distribuzione file statici](../configuration/cli/static-view-file-strategy.md)
 
 Per distribuire il contenuto statico:
 
@@ -97,9 +97,9 @@ Questo comando consente a Composer di ricreare la mappatura ai file di progetto 
 
 >[!INFO]
 >
->L’impostazione della modalità di produzione viene eseguita automaticamente `setup:di:compile` e `setup:static-content:deploy`.
+>L&#39;impostazione della modalità di produzione esegue automaticamente `setup:di:compile` e `setup:static-content:deploy`.
 
-Infine, devi mettere il negozio in modalità Produzione. La modalità di produzione è ottimizzata in modo specifico per garantire le massime prestazioni del punto vendita. Disattiva inoltre tutte le funzioni specifiche per gli sviluppatori. Questa operazione può essere eseguita nel `.htaccess` o `nginx.conf` file:
+Infine, devi mettere il negozio in modalità Produzione. La modalità di produzione è ottimizzata in modo specifico per garantire le massime prestazioni del punto vendita. Disattiva inoltre tutte le funzioni specifiche per gli sviluppatori. Questa operazione può essere eseguita nel file `.htaccess` o `nginx.conf`:
 
 `SetEnv MAGE_MODE production`
 

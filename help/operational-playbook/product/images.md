@@ -4,7 +4,7 @@ description: Fornisci ai tuoi clienti immagini e video di prodotti di alta quali
 exl-id: 080f177e-f668-4154-8a05-ea4724c29c5f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ In realtà, i clienti possono sentire e provare il prodotto, ma quando acquistan
 
 ## Immagine del prodotto su una superficie piana
 
-![Immagine del prodotto su una superficie piana](../../assets/playbooks/product-image-flat.png)
+![Immagine prodotto su superficie piana](../../assets/playbooks/product-image-flat.png)
 
 ## Immagini dei prodotti con modelli
 
@@ -47,23 +47,23 @@ In realtà, i clienti possono sentire e provare il prodotto, ma quando acquistan
 
 ## Video del prodotto
 
-![Video del prodotto](../../assets/playbooks/product-video.png)
+![Video prodotto](../../assets/playbooks/product-video.png)
 
 ## Best practice
 
-- **Demo del prodotto**- Se il prodotto ha uno scopo definito, eseguire una dimostrazione del prodotto per visualizzarne le funzioni e le caratteristiche.
+- **Demo del prodotto**. Se il prodotto ha uno scopo definito, esegui una demo del prodotto per mostrarne le funzioni e le caratteristiche.
 
-- **Promuovi le immagini generate dall&#39;utente**—Gli utenti caricano le loro immagini con il prodotto come una recensione, che motiva gli altri acquirenti ad acquistare il prodotto.
+- **Promuovi le immagini generate dall&#39;utente**: gli utenti caricano le immagini con il prodotto come recensione, motivando altri acquirenti ad acquistare il prodotto.
 
-- **Visualizzazione a 360 gradi del prodotto**- Il caricamento di un video o un GIF a 360 gradi del prodotto può fornire una visione dettagliata al cliente e motivarlo ad acquistare il prodotto.
+- **Visualizzazione a 360 gradi del prodotto**. Il caricamento di un video o di un GIF a 360 gradi del prodotto può fornire al cliente una visualizzazione dettagliata e motivarlo ad acquistare il prodotto.
 
-- **Convenzione di denominazione**- Regola: seguire una convenzione di denominazione per l&#39;immagine del prodotto per ridurre al minimo l&#39;errore di caricamento di un&#39;immagine non corretta per un prodotto e facilitare la gestione delle immagini da parte del team.
+- **Convenzione di denominazione**: imposta come regola il rispetto di una convenzione di denominazione per l&#39;immagine del prodotto, che consente di ridurre al minimo l&#39;errore di caricamento di un&#39;immagine non corretta per un prodotto e di facilitare la gestione delle immagini da parte del team.
 
-- **Caricamento pagina**- Non caricare immagini che aumentano il tempo di caricamento della pagina. Se un cliente deve attendere la visualizzazione dell’immagine, potrebbe uscire dal sito.
+- **Caricamento pagina**—Non caricare immagini che aumenteranno il tempo di caricamento della pagina. Se un cliente deve attendere la visualizzazione dell’immagine, potrebbe uscire dal sito.
 
-- **Contenuto semplice**- Non complicare eccessivamente il contenuto. Cercate di mantenere i contenuti semplici e accattivanti laddove il prodotto è il punto focale. Ad esempio, una best practice prevede di disporre l’immagine del prodotto su uno sfondo bianco per migliorarla.
+- **Contenuto semplice**: non complicare eccessivamente il contenuto. Cercate di mantenere i contenuti semplici e accattivanti laddove il prodotto è il punto focale. Ad esempio, una best practice prevede di disporre l’immagine del prodotto su uno sfondo bianco per migliorarla.
 
-- **Immagine prodotto reale**- Quando un cliente acquista un prodotto online, si aspetta di vedere il prodotto così come è sul sito web. Evita di applicare filtri o migliorare l’immagine per modificare l’aspetto del prodotto. È importante essere trasparenti con il cliente, altrimenti si potrebbe avere un alto tasso di rendimenti.
+- **Immagine prodotto reale**: quando un cliente acquista un prodotto online, si aspetta di vedere il prodotto così com&#39;è sul sito Web. Evita di applicare filtri o migliorare l’immagine per modificare l’aspetto del prodotto. È importante essere trasparenti con il cliente, altrimenti si potrebbe avere un alto tasso di rendimenti.
 
 >[!TIP]
 >

@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Questa sezione illustra come disinstallare uno o più pacchetti di lingua, includendo facoltativamente il codice dei pacchetti di lingua dal file system. È possibile creare prima i backup in modo da poter ripristinare i dati in un secondo momento.
 
-Questo comando disinstalla *solo* pacchetti di lingue specificati in `composer.json`; in altre parole, i pacchetti di linguaggio forniti come pacchetti Compositore. Se il pacchetto lingua non è un pacchetto Compositore, è necessario disinstallarlo manualmente rimuovendo il codice del pacchetto lingua dal file system.
+Con questo comando vengono disinstallati *solo* pacchetti di linguaggio specificati in `composer.json`; in altre parole, pacchetti di linguaggio forniti come pacchetti Composer. Se il pacchetto lingua non è un pacchetto Compositore, è necessario disinstallarlo manualmente rimuovendo il codice del pacchetto lingua dal file system.
 
-È possibile ripristinare i backup in qualsiasi momento utilizzando [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
+È possibile ripristinare i backup in qualsiasi momento utilizzando il comando [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files).
 
 Utilizzo comando:
 
@@ -29,7 +29,7 @@ Il comando di disinstallazione del pacchetto della lingua esegue le operazioni s
 
    Per ovviare a questo problema, è possibile disinstallare contemporaneamente tutti i pacchetti delle lingue dipendenti oppure disinstallare prima i pacchetti delle lingue dipendenti.
 
-1. Se `--backup code` è specificato, esegui il backup del file system (escluso `var` e `pub/static` directory) a `var/backups/<timestamp>_filesystem.tgz`
+1. Se si specifica `--backup code`, eseguire il backup del file system (escluse `var` e `pub/static` directory) in `var/backups/<timestamp>_filesystem.tgz`
 1. Rimuove i file dei pacchetti della lingua dalla base di codice utilizzando `composer remove`.
 1. Pulisce la cache.
 

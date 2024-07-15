@@ -5,9 +5,9 @@ source-wordcount: '17'
 ht-degree: 0%
 
 ---
-## Scopo della richiesta di pull
+## Scopo del presente richiamare richiesta
 
-Questa richiesta di pull (PR) ...
+Questo richiamare richiesta (PR) ...
 
 ## Pagine interessate
 
@@ -15,7 +15,7 @@ Questa richiesta di pull (PR) ...
 
 - ...
 
-## Collegamenti al codice del Magento Open Source
+## Collegamenti al codice Magento Open Source
 
 <!--  OPTIONAL - REMOVE THIS SECTION IF NOT USED. If this pull request references a file in a Magento Open Source or Adobe Commerce codebase repository, add it here. -->
 

@@ -1,6 +1,6 @@
 ---
-title: Il [!UICONTROL Deploy] scheda
-description: Scopri di più su [!UICONTROL Deploy] scheda di [!DNL Observation for Adobe Commerce].
+title: Scheda [!UICONTROL Deploy]
+description: Scopri la scheda [!UICONTROL Deploy] di [!DNL Observation for Adobe Commerce].
 exl-id: 3e33f7b0-7a40-4598-ae2e-436118e8d99a
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Il [!UICONTROL Deploy] scheda
+# Scheda [!UICONTROL Deploy]
 
 Questa scheda è un tentativo di isolare rapidamente i problemi e le cause dei problemi di distribuzione.
 
@@ -18,13 +18,13 @@ Questa scheda è un tentativo di isolare rapidamente i problemi e le cause dei p
 
 ![Risoluzione dei problemi di distribuzione del registro](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
 
-Il **[!UICONTROL Deploy log Deployment Troubleshooter]** mostra un conteggio degli eventi di registro della distribuzione che si sono verificati nell’arco temporale selezionato. L’obiettivo è fornire una panoramica dell’attività di distribuzione e determinare la complessità della distribuzione in base al conteggio. Più sono i messaggi registrati, più complessa è in genere la distribuzione.
+Il frame **[!UICONTROL Deploy log Deployment Troubleshooter]** mostra un conteggio degli eventi del registro di distribuzione che si sono verificati nell&#39;arco temporale selezionato. L’obiettivo è fornire una panoramica dell’attività di distribuzione e determinare la complessità della distribuzione in base al conteggio. Più sono i messaggi registrati, più complessa è in genere la distribuzione.
 
 ## [!UICONTROL Deploy State]
 
-![Stato distribuzione](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
+![Distribuisci stato](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
 
-Il **[!UICONTROL Deploy State]** frame mostra gli eventi di distribuzione che si sono verificati nell’arco temporale selezionato. Il parser per questo fotogramma sta cercando questi segnali specifici:
+Il frame **[!UICONTROL Deploy State]** mostra gli eventi di distribuzione che si sono verificati nell&#39;arco temporale selezionato. Il parser per questo fotogramma sta cercando questi segnali specifici:
 
 * &#39;`%NOTICE: Starting generate command%`&#39;) come &#39;`start_gen`&#39;
 * &#39;`%git apply /app/vendor/magento/ece-tools/patches%`&#39;) come &#39;`apply_patches`&#39;
@@ -38,9 +38,9 @@ Il **[!UICONTROL Deploy State]** frame mostra gli eventi di distribuzione che si
 
 ## [!UICONTROL Deploy Log Detail]
 
-![Distribuisci dettagli registro](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg)
+![Dettagli registro distribuzione](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg)
 
-Il **[!UICONTROL Deploy Log Detail]** frame mostra i dettagli di riepilogo del messaggio di registro distribuzione che si sono verificati nell’arco temporale selezionato. Il frame è in fase di analisi per le seguenti stringhe nei registri di distribuzione:
+Il frame **[!UICONTROL Deploy Log Detail]** mostra i dettagli di riepilogo dei messaggi di log della distribuzione che si sono verificati nell&#39;intervallo di tempo selezionato. Il frame è in fase di analisi per le seguenti stringhe nei registri di distribuzione:
 
 * &#39;`%NOTICE: Starting deploy.%`&#39;) come &#39;`start_dply`&#39;
 * &#39;`%INFO: Starting scenario(s): scenario/deploy.xml%`&#39;) come &#39;`start_scenario`&#39;
@@ -79,9 +79,9 @@ Il **[!UICONTROL Deploy Log Detail]** frame mostra i dettagli di riepilogo del m
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![Dettagli registro post-distribuzione](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
+![Dettagli registro distribuzione Post](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
-Il **[!UICONTROL Post Deploy Log Detail]** mostra i dettagli del registro post-distribuzione che si sono verificati nell’arco temporale selezionato. Questo frame è incentrato su messaggi di registro specifici che contengono le stringhe seguenti:
+Il frame **[!UICONTROL Post Deploy Log Detail]** mostra i dettagli del registro post-distribuzione che si sono verificati nell&#39;arco temporale selezionato. Questo frame è incentrato su messaggi di registro specifici che contengono le stringhe seguenti:
 
 * &#39;`%Disabled maintenance mode%`&#39;) come &#39;`disabled_maint_mode`&#39;
 * &#39;`%INFO: Starting scenario(s): scenario/post-deploy.xml%`&#39;) come &#39;`start_pstdply_scenario`&#39;
@@ -99,7 +99,7 @@ Il **[!UICONTROL Post Deploy Log Detail]** mostra i dettagli del registro post-d
 
 ![Dettagli registro cloud](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
-Il **[!UICONTROL Cloud Log Detail]** frame mostra i dettagli del registro cloud che si sono verificati nell’arco temporale selezionato. Le seguenti stringhe vengono analizzate e restituite con l’etichetta &quot;AS&quot; seguente:
+Il frame **[!UICONTROL Cloud Log Detail]** mostra i dettagli del registro cloud che si sono verificati nell&#39;arco temporale selezionato. Le seguenti stringhe vengono analizzate e restituite con l’etichetta &quot;AS&quot; seguente:
 
 * &#39;`%DEBUG: /bin/bash -c "set -o pipefail; php ./bin/magento setup:upgrade%`&#39;) come &#39;`start_update`&#39;
 * &#39;`%Schema creation/updates:%`&#39;) come &#39;`schema_updates`&#39;
@@ -153,10 +153,10 @@ Il **[!UICONTROL Cloud Log Detail]** frame mostra i dettagli del registro cloud 
 
 ![Numero di moduli importati durante la distribuzione](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg)
 
-Il **[!UICONTROL Count of modules imported during deploy]** frame mostra il numero di moduli importati durante la distribuzione nell’arco temporale selezionato.
+Il frame **[!UICONTROL Count of modules imported during deploy]** mostra il numero di moduli importati durante la distribuzione nell&#39;arco temporale selezionato.
 
 ## [!UICONTROL Deployed module list]
 
-![Elenco dei moduli distribuiti](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
+![Elenco moduli distribuiti](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
-Il **[!UICONTROL Deployed module list]** mostra i moduli distribuiti nell’arco temporale selezionato.
+Il frame **[!UICONTROL Deployed module list]** mostra i moduli distribuiti nell&#39;arco temporale selezionato.

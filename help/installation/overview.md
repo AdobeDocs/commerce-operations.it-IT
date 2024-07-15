@@ -13,26 +13,26 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Il diagramma seguente fornisce una panoramica di alto livello di _**on-premise**_ installazioni di Adobe Commerce:
+>Il diagramma seguente fornisce una panoramica di alto livello delle installazioni di _**on-premise**_ di Adobe Commerce:
 
-![Come funziona l’installazione](../assets/installation/install-diagram-24.svg)
+![Funzionamento dell&#39;installazione](../assets/installation/install-diagram-24.svg)
 
 Il flusso generale di installazione è il seguente:
 
 1. Configura l’ambiente server.
 
-   Installa il software prerequisito, inclusi PHP, Apache, MySQL e il motore di ricerca. Consulta la [requisiti di sistema](system-requirements.md) per ulteriori informazioni.
+   Installa il software prerequisito, inclusi PHP, Apache, MySQL e il motore di ricerca. Per ulteriori informazioni, vedere [requisiti di sistema](system-requirements.md).
 
-1. Ottenere [chiavi di autenticazione](prerequisites/authentication-keys.md) all’archivio del Compositore Commerce.
+1. Ottieni [chiavi di autenticazione](prerequisites/authentication-keys.md) nell&#39;archivio del Compositore Commerce.
 
 1. Ottieni il software Adobe Commerce.
 
-   * (Consigliato) Ottieni [Metapacchetto del compositore](composer.md) per gestire i moduli e le relative dipendenze.
+   * (Consigliato) Ottieni il metapacchetto [Compositore](composer.md) per gestire i moduli e le relative dipendenze.
 
-   * Se desideri contribuire al codice di Magento Open Source o personalizzare l’applicazione, [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) l’archivio GitHub. Questo metodo richiede familiarità sia con GitHub che con Composer.
+   * Se desideri contribuire al codebase di Magento Open Source o personalizzare l&#39;applicazione, [clona](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) l&#39;archivio GitHub. Questo metodo richiede familiarità sia con GitHub che con Composer.
 
 1. Installare l&#39;applicazione utilizzando la riga di comando.
 
-   Se il passaggio non riesce perché i prerequisiti software non sono configurati correttamente, esaminare [prerequisiti](prerequisites/overview.md).
+   Se il passaggio non riesce perché i prerequisiti software non sono configurati correttamente, esaminare i [prerequisiti](prerequisites/overview.md).
 
-1. [Verifica](next-steps/verify.md) l’installazione visualizzando la vetrina e l’amministratore.
+1. [Verificare](next-steps/verify.md) l&#39;installazione visualizzando la vetrina e l&#39;amministratore.

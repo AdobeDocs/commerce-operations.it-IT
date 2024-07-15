@@ -5,7 +5,7 @@ exl-id: 466f2f83-ea19-4230-b33b-4435974effb7
 feature: Best Practices, Promotions/Events
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Nell’e-commerce, le campagne definiscono una serie di azioni o attività collegate tra loro, a beneficio della visione e dell’obiettivo di business. È possibile impostare queste azioni o attività in modo che possano funzionare singolarmente, in sequenza, contemporaneamente o in qualsiasi combinazione. Le campagne svolgono un ruolo importante in una strategia aziendale.
 
-![Esempio di immagine della campagna](../../assets/playbooks/campaign-example.png)
+![Immagine della campagna di esempio](../../assets/playbooks/campaign-example.png)
 
 ## Tipi di campagna
 
@@ -35,10 +35,10 @@ L’intero modello di e-commerce è impostato sul sito web, il che significa che
 
 Differenze tra la gestione delle campagne B2B e B2C:
 
-- **Sviluppa relazione**—Il B2B utilizza la gestione delle campagne per creare relazioni a lungo termine, mentre il B2C utilizza la gestione delle campagne per creare relazioni a breve termine
+- **Sviluppa relazione**: B2B utilizza la gestione delle campagne per creare relazioni a lungo termine, mentre B2C utilizza la gestione delle campagne per creare relazioni a breve termine
 
-- **Marchio**: la gestione delle campagne B2B si concentra maggiormente sulla generazione di lead, mentre B2C si concentra sul valore del brand
+- **Branding**: la gestione delle campagne B2B si concentra maggiormente sulla generazione di lead, mentre B2C si concentra sul valore del brand
 
-- **Processo decisionale**—Le decisioni relative alle campagne B2B sono logiche, mentre quelle relative alle campagne B2C sono emotive
+- **Processo decisionale**: le decisioni sulle campagne B2B sono logiche, mentre le decisioni sulle campagne B2C sono emotive
 
-- **Pubblico**—La gestione delle campagne B2B include più parti interessate, mentre la gestione delle campagne B2C è destinata a singoli utenti finali
+- **Pubblico**: la gestione delle campagne B2B include più soggetti interessati, mentre la gestione delle campagne B2C è destinata a singoli utenti finali

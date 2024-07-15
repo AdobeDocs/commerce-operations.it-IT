@@ -10,25 +10,25 @@ ht-degree: 0%
 
 ---
 
-# Configurare l’applicazione Commerce per l’utilizzo di vernice
+# Configurare l&#39;applicazione Commerce per l&#39;utilizzo di Vernice
 
-Per configurare Commerce per l’utilizzo di Vernice:
+Per configurare Commerce per l&#39;utilizzo di Vernice:
 
 1. Accedi all’amministratore come amministratore.
-1. Clic **[!UICONTROL Stores]** > Impostazioni > **Configurazione** > **Avanzate** > **Sistema** > **Cache a pagina intera**.
-1. Dalla sezione **[!UICONTROL Caching Application]** , fare clic su **Caching vernice**.
-1. Immetti un valore in **[!UICONTROL TTL for public content]** campo.
-1. Espandi **[!UICONTROL Varnish Configuration]** e immettere le seguenti informazioni:
+1. Fai clic su **[!UICONTROL Stores]** > Impostazioni > **Configurazione** > **Avanzate** > **Sistema** > **Cache a pagina intera**.
+1. Dall&#39;elenco **[!UICONTROL Caching Application]**, fare clic su **Memorizzazione in cache vernice**.
+1. Immettere un valore nel campo **[!UICONTROL TTL for public content]**.
+1. Espandere **[!UICONTROL Varnish Configuration]** e immettere le informazioni seguenti:
 
    | Campo | Descrizione |
    | ----- | ----------- |
-   | Elenco di accesso | Inserisci il nome host completo, l’indirizzo IP o [Routing tra domini diversi senza classificazione (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) notazione Intervallo di indirizzi IP per cui annullare la validità del contenuto. Consulta [Cancellazione cache vernice](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
-   | Host back-end | Immettere il nome host completo o l&#39;indirizzo IP e la porta di ascolto della vernice _backend_ o _server di origine_ ovvero il server che fornisce il contenuto accelera la visualizzazione di Vernice. In genere, si tratta del server web. Consulta [Vernice dei server back-end della cache](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
+   | Elenco di accesso | Immettere il nome host completo, l&#39;indirizzo IP o l&#39;intervallo di indirizzi IP con notazione ](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) di tipo [Classless Inter-Domain Routing (CIDR) per cui annullare la validità del contenuto. Vedi [Rimozione cache vernice](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
+   | Host back-end | Immettere il nome host completo o l&#39;indirizzo IP e la porta di ascolto del server di origine _backend_ o _vernice_, ovvero il server che fornisce il contenuto, che verrà accelerato da Vernice. In genere, si tratta del server web. Vedi [Server back-end della cache di vernice](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Porta back-end | Porta di ascolto del server di origine. |
    | Periodo di tolleranza | Determina per quanto tempo Vernice fornisce contenuti non aggiornati se il backend non risponde. Il valore predefinito è 300 secondi. |
-   | Gestisce le dimensioni dei parametri | Specifica il numero massimo di [maniglie di layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) da elaborare su [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) Endpoint HTTP per il caching di pagine intere. La limitazione delle dimensioni può migliorare la sicurezza e le prestazioni. Il valore predefinito è 100. |
+   | Gestisce le dimensioni dei parametri | Specifica il numero massimo di [handle di layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) da elaborare sull&#39;endpoint HTTP [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) per il caching a pagina intera. La limitazione delle dimensioni può migliorare la sicurezza e le prestazioni. Il valore predefinito è 100. |
 
-1. Clic **Salva configurazione**.
+1. Fai clic su **Salva configurazione**.
 
 È inoltre possibile attivare la vernice dalla riga di comando, anziché accedere all&#39;amministratore, utilizzando lo strumento dell&#39;interfaccia della riga di comando C:
 
@@ -40,15 +40,15 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
 
 Per esportare un file di configurazione vernice dall&#39;amministratore:
 
-1. Fai clic su uno dei pulsanti di esportazione per creare un’ `varnish.vcl` può essere usato con vernice.
+1. Fare clic su uno dei pulsanti di esportazione per creare un `varnish.vcl` utilizzabile con vernice.
 
    Ad esempio, se si dispone di vernice 4, fare clic su **Esporta VCL per vernice 4**
 
    Nella figura seguente viene illustrato un esempio:
 
-   ![Configurare Commerce per l’utilizzo di Vernice nell’amministratore](../../assets/configuration/varnish-admin-22.png)
+   ![Configura Commerce per l&#39;utilizzo di Vernice nell&#39;amministratore](../../assets/configuration/varnish-admin-22.png)
 
-1. Esegui il backup del file esistente `default.vcl`. Quindi rinomina il `varnish.vcl` file appena esportato in `default.vcl`. Quindi copia il file in `/etc/varnish/` directory.
+1. Esegui il backup di `default.vcl` esistente. Quindi rinominare il file `varnish.vcl` appena esportato in `default.vcl`. Copiare quindi il file nella directory `/etc/varnish/`.
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak2
@@ -62,7 +62,7 @@ Per esportare un file di configurazione vernice dall&#39;amministratore:
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
-1. Adobe consigliato di aprire `default.vcl` e modificare il valore di `acl purge` all&#39;indirizzo IP dell&#39;host Vernice. È possibile specificare più host su righe separate oppure utilizzare anche la notazione CIDR.
+1. L&#39;Adobe consiglia di aprire `default.vcl` e modificare il valore di `acl purge` nell&#39;indirizzo IP dell&#39;host Vernice. È possibile specificare più host su righe separate oppure utilizzare anche la notazione CIDR.
 
    Ad esempio:
 
@@ -72,7 +72,7 @@ Per esportare un file di configurazione vernice dall&#39;amministratore:
     }
    ```
 
-1. Se desideri personalizzare la configurazione dei controlli di integrità Vagrant, della modalità di tolleranza o della modalità santo, consulta [Configurazione vernice avanzata](config-varnish-advanced.md).
+1. Se si desidera personalizzare i controlli di integrità Vagrant o la configurazione della modalità di tolleranza o della modalità di santo, vedere [Configurazione avanzata vernice](config-varnish-advanced.md).
 
 1. Riavvia Varnish e il tuo server web:
 
@@ -86,7 +86,7 @@ Per esportare un file di configurazione vernice dall&#39;amministratore:
 
 ## Memorizza nella cache i file statici
 
-I file statici non devono essere memorizzati in cache per impostazione predefinita, ma se desideri memorizzarli in cache, puoi modificare la sezione `Static files caching` nel file VCL, avere il seguente contenuto:
+Per impostazione predefinita, i file statici non devono essere memorizzati in cache, ma se desideri memorizzarli in cache, puoi modificare la sezione `Static files caching` nel file VCL in modo che abbia il seguente contenuto:
 
 ```conf
 # Static files should not be cached by default
@@ -98,4 +98,4 @@ I file statici non devono essere memorizzati in cache per impostazione predefini
   #unset req.http.Cookie;
 ```
 
-È necessario apportare queste modifiche prima di configurare Commerce per l’utilizzo di Vernice.
+È necessario apportare queste modifiche prima di configurare Commerce per l&#39;utilizzo di Vernice.

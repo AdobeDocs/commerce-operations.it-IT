@@ -5,7 +5,7 @@ feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Le sezioni seguenti descrivono i dettagli e le caratteristiche di implementazion
 
 Quando si utilizza la strategia Standard, vengono distribuiti tutti i file di visualizzazione statica per tutti i pacchetti, ovvero elaborati da [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
 
-Per ulteriori informazioni, consulta [Distribuire file di visualizzazione statica](../cli/static-view-file-deployment.md).
+Per ulteriori informazioni, vedere [Distribuire i file di visualizzazione statici](../cli/static-view-file-deployment.md).
 
 ## Strategia rapida
 
@@ -38,15 +38,15 @@ La strategia rapida esegue le azioni riportate di seguito.
 
 >[!INFO]
 >
->Da _simile_, si tratta di file indipendenti dalla lingua, dal tema o dall’area. Questi file possono includere CSS, immagini e font.
+>Per _simili_, si intendono file indipendenti dalle impostazioni locali, dal tema o dall&#39;area. Questi file possono includere CSS, immagini e font.
 
 Questo approccio riduce al minimo il tempo di distribuzione necessario per più impostazioni locali, anche se molti file sono duplicati.
 
 ## Strategia compatta
 
-La strategia compatta evita la duplicazione dei file archiviando file simili in `base` sottodirectory.
+La strategia compatta evita la duplicazione dei file archiviando file simili in sottodirectory `base`.
 
-Per ottenere il risultato più ottimizzato, vengono assegnati tre ambiti per una possibile somiglianza: area, tema e impostazioni internazionali. Il `base` Le sottodirectory vengono create per tutte le combinazioni di questi ambiti.
+Per ottenere il risultato più ottimizzato, vengono assegnati tre ambiti per una possibile somiglianza: area, tema e impostazioni internazionali. Le sottodirectory `base` vengono create per tutte le combinazioni di questi ambiti.
 
 I file vengono distribuiti in queste sottodirectory in base ai seguenti modelli.
 
@@ -66,9 +66,9 @@ L&#39;approccio alla distribuzione utilizzato nella strategia compatta implica c
 - `map.php`
 - `requirejs-map.js`
 
-Il `map.php` il file è utilizzato da [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) per generare gli URL corretti.
+Il file `map.php` è utilizzato da [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) per generare gli URL corretti.
 
-Il `requirejs-map.js` viene utilizzato da `baseUrlResolver` plugin per RequireJS.
+`requirejs-map.js` è utilizzato dal plug-in `baseUrlResolver` per RequireJS.
 
 Esempio di `map.php`:
 
@@ -101,6 +101,6 @@ require.config({
 
 ## Suggerimenti per gli sviluppatori di estensioni
 
-Per generare gli URL per i file di visualizzazione statica, utilizza [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244).
+Per generare gli URL per i file di visualizzazione statica, utilizzare [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244).
 
 Non utilizzare le concatenazioni URL per evitare problemi con i file statici che non vengono trovati e visualizzati durante il rendering della pagina.

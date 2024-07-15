@@ -7,13 +7,13 @@ ht-degree: 0%
 ---
 # Comunicazione server web sicura
 
-In questo argomento viene illustrato un esempio di protezione della comunicazione tra il server Web e il motore di ricerca (Elasticsearch o OpenSearch) tramite una combinazione di crittografia Transport Layer Security (TLS) e [autenticazione HTTP di base](https://datatracker.ietf.org/doc/html/rfc2617). Facoltativamente puoi anche configurare altri tipi di autenticazione; forniamo i riferimenti per tali informazioni.
+In questo argomento viene illustrato un esempio di protezione delle comunicazioni tra il server Web e il motore di ricerca (Elasticsearch o OpenSearch) tramite una combinazione di crittografia TLS (Transport Layer Security) e autenticazione di base HTTP [1. ](https://datatracker.ietf.org/doc/html/rfc2617) Facoltativamente puoi anche configurare altri tipi di autenticazione; forniamo i riferimenti per tali informazioni.
 
-Un termine precedente, Secure Sockets Layer (SSL), viene spesso utilizzato in modo intercambiabile con TLS. In questo argomento, si fa riferimento a *TLS*.)
+Un termine precedente, Secure Sockets Layer (SSL), viene spesso utilizzato in modo intercambiabile con TLS. In questo argomento si fa riferimento a *TLS*.)
 
 >[!WARNING]
 >
->Se non diversamente specificato, tutti i comandi di questo argomento devono essere immessi come utente con `root` privilegi.
+>Se non diversamente specificato, tutti i comandi di questo argomento devono essere immessi come utenti con privilegi `root`.
 
 ## Recommendations
 
@@ -37,7 +37,7 @@ Consulta una delle risorse seguenti:
 
    * [Procedure per la crittografia avanzata di Apache 2.4](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
    * [Come creare un certificato SSL su Apache per Ubuntu 14.04 (tutorial Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04)
-   * [Configurazione di un server web protetto SSL con CentOS (wiki CentOS)](https://wiki.centos.org/HowTos/Https)
+   * [Configurazione di un server Web protetto SSL con CentOS (wiki CentOS)](https://wiki.centos.org/HowTos/Https)
 
 * Nginx
 

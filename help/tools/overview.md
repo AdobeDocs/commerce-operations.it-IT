@@ -20,7 +20,7 @@ Questa guida è progettata per commercianti, sviluppatori e integratori per faci
 ## Cosa c&#39;è nella guida?
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
-* [[!DNL Quality Patches Tool]: cerca le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+* [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 * [&quot;bin/magento&quot;](reference/commerce-on-premises.md)
 * [&quot;bin/uct&quot;](reference/commerce-on-premises.md)
 * [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)

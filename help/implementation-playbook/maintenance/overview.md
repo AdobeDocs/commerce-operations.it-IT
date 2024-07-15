@@ -5,7 +5,7 @@ exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Il trasferimento delle conoscenze avviene nel corso dell’intero progetto e un 
 
 Il diagramma seguente mostra le fasi e le attività da includere in un risultato di transizione di successo:
 
-![Schema delle fasi del processo di transizione](../../assets/playbooks/transition-diagram.svg)
+![Diagramma che mostra le fasi del processo di transizione](../../assets/playbooks/transition-diagram.svg)
 
 >[!NOTE]
 >
@@ -33,5 +33,5 @@ Il diagramma seguente mostra le fasi e le attività da includere in un risultato
 Identificare il modello di supporto appropriato per l’azienda al fine di continuare a migliorare e ottimizzare la piattaforma e le pratiche commerciali nel loro complesso è un passaggio fondamentale per mantenere tutto il duro lavoro svolto durante il processo di implementazione. Grazie a un piano di supporto continuo completo, il sito di e-commerce può soddisfare le aspettative dei clienti e continuare a raggiungere i tuoi obiettivi.
 
 Durante l’implementazione di Adobe Commerce, è fondamentale considerare cosa includere nella strategia di manutenzione e supporto.
-La licenza di Adobe Commerce prevede l’assistenza di esperti. Per ulteriori informazioni sul supporto di esperti e sui piani di supporto per Adobi, consulta [Piani di supporto Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
+La licenza di Adobe Commerce prevede l’assistenza di esperti. Per ulteriori informazioni sul supporto specialistico e sui piani di supporto Adobe, fare riferimento a [Piani di supporto Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
 Oltre ai piani di supporto Adobe, sono disponibili i precedenti termini di supporto del Magento. Per capire quali servizi di supporto sono applicabili al cliente, consulta il tuo contratto per vedere quale contratto di supporto hai o rivolgiti al team del tuo account di Adobe.

@@ -4,7 +4,7 @@ description: Segui questi dieci suggerimenti per fornire un piacevole clic e rac
 exl-id: 5f5743ac-75a5-41f1-8819-2de088f56387
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,13 @@ Le aziende devono seguire questi dieci suggerimenti per fornire un buon servizio
 
 Quando decidono di implementare il click e la raccolta, le aziende devono considerare in che modo intendono distribuire il click e la raccolta ai clienti, ad esempio i tipi di servizio:
 
-- **Pagamento online e raccolta in-store**- L&#39;utente paga il prodotto online e dopo la conferma del pagamento il negozio notifica al cliente quando il prodotto è pronto per essere raccolto in base alla selezione del negozio del cliente. La riscossione del pagamento consente innanzitutto di riservare il prodotto.
+- **Pagamento online e raccolta in negozio**: l&#39;utente paga il prodotto online e dopo la conferma del pagamento il negozio notifica al cliente quando il prodotto è pronto per essere raccolto in base alla selezione del negozio clienti. La riscossione del pagamento consente innanzitutto di riservare il prodotto.
 
-- **Prenotazione del prodotto online, pagamento e ritiro in negozio**- In questo tipo di servizio il cliente non effettua il pagamento online al momento della prenotazione di un prodotto. In questo tipo di servizio, il cliente può cambiare idea e non acquistare il prodotto.
+- **Riserva prodotto in linea, pagamento e raccolta in negozio**. In questo tipo di servizio il cliente non paga in linea durante la prenotazione di un prodotto. In questo tipo di servizio, il cliente può cambiare idea e non acquistare il prodotto.
 
-- **Integrazione**- Dopo aver selezionato il tipo di consegna, le aziende devono decidere sulla struttura di integrazione (dove vengono inviati gli ordini, dove vengono evasi gli ordini). Le scorte possono essere evase da un magazzino centrale o direttamente dai singoli negozi.
+- **Integrazione**: dopo aver selezionato il tipo di consegna, le aziende devono decidere la struttura di integrazione (dove vengono inviati gli ordini, dove vengono evasi gli ordini). Le scorte possono essere evase da un magazzino centrale o direttamente dai singoli negozi.
 
-- **Restituisce**- Le restituzioni possono essere complesse. Le aziende devono avere una strategia chiara per gestire i resi per i prodotti consegnati e i prodotti ordinati tramite clic e raccolta. Le aziende devono consentire ai clienti di restituire i prodotti che ordinano tramite click e collect per fornire un servizio clienti end-to-end.
+- **Restituisce** - I resi possono essere complessi. Le aziende devono avere una strategia chiara per gestire i resi per i prodotti consegnati e i prodotti ordinati tramite clic e raccolta. Le aziende devono consentire ai clienti di restituire i prodotti che ordinano tramite click e collect per fornire un servizio clienti end-to-end.
 
 ## Promozione
 

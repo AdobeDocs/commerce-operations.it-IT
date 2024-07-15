@@ -4,32 +4,32 @@ description: Scopri come personalizzare i nodi utilizzando i gruppi cron.
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
 # Personalizzazione del riferimento crons
 
-Questo argomento consente di impostare le schede cronologiche e facoltativamente i gruppi cron per i moduli personalizzati. Se il modulo personalizzato deve pianificare le attività periodicamente, è necessario impostare una scheda cronologica per tale modulo. A _crontab_ è una configurazione di processo cron.
+Questo argomento consente di impostare le schede cronologiche e facoltativamente i gruppi cron per i moduli personalizzati. Se il modulo personalizzato deve pianificare le attività periodicamente, è necessario impostare una scheda cronologica per tale modulo. Una _crontab_ è una configurazione di processo cron.
 
 Facoltativamente, è possibile impostare un gruppo personalizzato che, tra le altre cose, consente di eseguire i job cron definiti in tale gruppo indipendentemente dagli altri job cron.
 
-Per un tutorial dettagliato, consulta [Configurare processi cron personalizzati e gruppi cron (tutorial)](custom-cron-tutorial.md).
+Per un&#39;esercitazione dettagliata, vedere [Configurare processi cron personalizzati e gruppi cron (esercitazione)](custom-cron-tutorial.md).
 
-Per una panoramica sui processi cron, vedi [Configurare i processi cron](../cli/configure-cron-jobs.md).
+Per una panoramica sui processi cron, vedere [Configurare i processi cron](../cli/configure-cron-jobs.md).
 
 ## Configurare i gruppi cron
 
 Questa sezione illustra come creare facoltativamente un gruppo cron per un modulo personalizzato. Se non è necessario eseguire questa operazione, continuare con la sezione successiva.
 
-A _gruppo cron_ è un gruppo logico che consente di eseguire facilmente cron per più processi alla volta. La maggior parte dei moduli Commerce utilizza `default` gruppo cron; alcuni moduli utilizzano `index` gruppo.
+Un _gruppo cron_ è un gruppo logico che consente di eseguire facilmente cron per più processi alla volta. La maggior parte dei moduli di Commerce utilizza il gruppo cron `default`; alcuni moduli utilizzano il gruppo `index`.
 
-Se implementi cron per un modulo personalizzato, puoi scegliere di utilizzare `default` o un gruppo diverso.
+Se si implementa cron per un modulo personalizzato, è possibile scegliere di utilizzare il gruppo `default` o un gruppo diverso.
 
 **Per configurare un gruppo cron per il modulo**:
 
-Creare un `crontab.xml` nella directory del modulo:
+Crea un file `crontab.xml` nella directory del modulo:
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/crontab.xml
@@ -55,10 +55,10 @@ Dove:
 | `group_name` | Nome del gruppo cron. Il nome del gruppo non deve necessariamente essere univoco. È possibile eseguire cron per un gruppo alla volta. |
 | `job_name` | ID univoco per questo processo cron. |
 | `classpath` | Classe da creare come istanza (classpath). |
-| `method` | Metodo in `classpath` per chiamare. |
-| `time` | Pianificazione in formato cron. Ometti questo parametro se la pianificazione è definita nel database Commerce o in un altro archivio. |
+| `method` | Metodo in `classpath` da chiamare. |
+| `time` | Pianificazione in formato cron. Ometti questo parametro se la pianificazione è definita nel database di Commerce o in un altro archivio. |
 
-Il risultato `crontab.xml` con due gruppi può essere simile al seguente:
+Il `crontab.xml` risultante con due gruppi potrebbe essere simile al seguente:
 
 ```xml
 <?xml version="1.0"?>
@@ -82,17 +82,17 @@ Il risultato `crontab.xml` con due gruppi può essere simile al seguente:
 </config>
 ```
 
-Ad esempio, consulta [Magento_Cliente crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
+Ad esempio, consulta [Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
 
 ### Specifica delle opzioni del gruppo di celle
 
-È possibile dichiarare un nuovo gruppo e specificarne le opzioni di configurazione (tutte eseguite nell&#39;ambito della visualizzazione archivio) tramite `cron_groups.xml` file, situato in:
+È possibile dichiarare un nuovo gruppo e specificarne le opzioni di configurazione (tutte eseguite nell&#39;ambito della visualizzazione archivio) tramite il file `cron_groups.xml`, che si trova in:
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml
 ```
 
-Ecco un esempio di `cron_groups.xml` file:
+Di seguito è riportato un esempio del file `cron_groups.xml`:
 
 ```xml
 <?xml version="1.0"?>
@@ -113,8 +113,8 @@ Dove:
 
 | Opzione | Descrizione |
 | -------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `schedule_generate_every` | Frequenza (in minuti) di scrittura delle pianificazioni nel `cron_schedule` tabella. |
-| `schedule_ahead_for` | Tempo (in minuti) prima che le pianificazioni vengano scritte nel `cron_schedule` tabella. |
+| `schedule_generate_every` | Frequenza (in minuti) di scrittura delle pianificazioni nella tabella `cron_schedule`. |
+| `schedule_ahead_for` | Tempo (in minuti) in anticipo per la scrittura delle pianificazioni nella tabella `cron_schedule`. |
 | `schedule_lifetime` | Intervallo di tempo (in minuti) per l&#39;avvio di un processo cron o il processo cron viene considerato non eseguito (&quot;troppo tardi&quot; per l&#39;esecuzione). |
 | `history_cleanup_every` | Tempo (in minuti) in cui la cronologia dei cron viene mantenuta nel database. |
 | `history_success_lifetime` | Tempo (in minuti) per il quale viene conservato nel database il record dei processi cron completati correttamente. |
@@ -123,9 +123,9 @@ Dove:
 
 ## Disattivare un processo cron
 
-I processi Cron non dispongono di un `disable` funzionalità come quelle disponibili per [osservatori](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers). Tuttavia, un processo cron può essere disabilitato utilizzando la tecnica seguente: `schedule` un’ora che contiene una data che non si verifica mai.
+I processi Cron non dispongono di una funzionalità `disable` simile a quella di [observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers). Tuttavia, è possibile disabilitare un processo cron utilizzando la tecnica seguente: `schedule` un&#39;ora che contiene una data che non si verificherà mai.
 
-Ad esempio, disabilita il `visitor_clean` processo cron definito in `Magento_Customer` modulo:
+Disattivare ad esempio il processo cron `visitor_clean` definito nel modulo `Magento_Customer`:
 
 ```xml
 ...
@@ -137,7 +137,7 @@ Ad esempio, disabilita il `visitor_clean` processo cron definito in `Magento_Cus
 ...
 ```
 
-Per disattivare `visitor_clean` processo cron, crea un modulo personalizzato e riscrivi il `visitor_clean` lavoro cron `schedule`:
+Per disabilitare il processo cron `visitor_clean`, creare un modulo personalizzato e riscrivere il processo cron `visitor_clean` `schedule`:
 
 ```xml
 ...
@@ -149,4 +149,4 @@ Per disattivare `visitor_clean` processo cron, crea un modulo personalizzato e r
 ...
 ```
 
-Ora, il `visitor_clean` Il processo cron è stato impostato per essere eseguito alle 00:00 del 30 febbraio, in una data che non si verificherà mai.
+Ora, il processo cron `visitor_clean` è stato impostato per essere eseguito alle 00:00 del 30 febbraio, in una data che non si verificherà mai.

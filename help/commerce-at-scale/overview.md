@@ -9,23 +9,24 @@ ht-degree: 0%
 
 ---
 
-# Distribuisci esperienze su larga scala con Adobe Commerce, Commerce Integration Framework e Adobe Experience Manager
+# Distribuisci esperienze su larga scala con Adobe Commerce, Commerce integration framework e Adobe Experience Manager
 
-Un modello di integrazione consigliato tra AEM e Adobe Commerce che utilizza CIF come connettore è che l’AEM possieda il livello di presentazione (il &quot;vetro&quot;) e Adobe Commerce fornisca al backend di e-commerce la potenza di un back-end &quot;headless&quot;. Questo approccio di integrazione sfrutta i punti di forza di ogni applicazione: le funzionalità di authoring, personalizzazione e omnicanale delle operazioni AEM e e-commerce di Adobe Commerce.
+Un modello di integrazione consigliato tra AEM e Adobe Commerce che utilizza l’CIF come connettore è che l’AEM possieda il livello di presentazione (il &quot;vetro&quot;) e Adobe Commerce alimentino il back-end commerce come back-end &quot;headless&quot;. Questo approccio di integrazione sfrutta i punti di forza di ogni applicazione: le funzionalità di authoring, personalizzazione e omnicanale delle operazioni AEM e e-commerce di Adobe Commerce.
 
 In un ambiente AEM/CIF/Adobe Commerce, i visitatori del sito di e-commerce arriveranno inizialmente all’AEM. AEM controllerà se la pagina richiesta è disponibile nella cache del dispatcher. Se la pagina esiste, la pagina memorizzata in cache verrà trasmessa al visitatore e non è richiesta alcuna ulteriore elaborazione. Se il dispatcher non contiene la pagina richiesta o è scaduta, richiede all’editore dell’AEM di compilare la pagina; se necessario, l’editore chiama Adobe Commerce per i dati di e-commerce per generare la pagina. La pagina generata viene quindi passata al dispatcher per essere trasmessa al visitatore e viene memorizzata nella cache, impedendo la necessità di caricare ulteriormente sui server in occasione di successive richieste di altri visitatori alla stessa pagina.
 
-![Diagramma di panoramica dell’architettura di Adobe Experience Manager e Adobe Commerce](../assets/commerce-at-scale/overview.png)
+![Diagramma di panoramica dell&#39;architettura di Adobe Experience Manager e Adobe Commerce](../assets/commerce-at-scale/overview.png)
 
-Nel modello AEM/CIF/Adobe Commerce è possibile utilizzare una combinazione di rendering lato server e rendering lato client: rendering lato server per fornire contenuto statico e rendering lato client per fornire contenuti dinamici personali o in continua evoluzione chiamando direttamente Adobe Commerce per componenti specifici dal browser dell’utente.
+Nel modello AEM/CIF/Adobe Commerce è possibile utilizzare una combinazione di rendering lato server e rendering lato client: rendering lato server per fornire contenuto statico e rendering lato client per fornire contenuti dinamici personali o in continua evoluzione chiamando direttamente Adobe Commerce per componenti specifici
+dal browser dell’utente.
 
 Un esempio dei diversi componenti di una pagina di dettagli del prodotto in una vetrina di esempio di e-commerce AEM è visibile nell’esempio seguente:
 
-![Diagramma di panoramica dell’architettura di Adobe Experience Manager e Adobe Commerce](../assets/commerce-at-scale/product-details-page.svg)
+![Diagramma di panoramica dell&#39;architettura di Adobe Experience Manager e Adobe Commerce](../assets/commerce-at-scale/product-details-page.svg)
 
 ## Rendering lato server
 
-È improbabile che le pagine e-commerce, come le pagine di dettaglio del prodotto (PDP) e le pagine di elenco dei prodotti (PLP), vengano modificate frequentemente e sono idonee per essere completamente memorizzate nella cache dopo il rendering lato server utilizzando i componenti core CIF dell’AEM. Le pagine devono essere sottoposte a rendering nell’editore AEM utilizzando i modelli generici creati nell’AEM. Questi componenti ottengono i dati da Adobe Commerce tramite API GraphQL. Queste pagine vengono create in modo dinamico, sottoposte a rendering sul server, memorizzate nella cache del dispatcher AEM e quindi distribuite al browser. Esempi di ciò sono mostrati nelle caselle viola nell’esempio precedente.
+È improbabile che le pagine e-commerce, come le pagine di dettaglio del prodotto (PDP) e le pagine di elenco dei prodotti (PLP), vengano modificate frequentemente e sono idonee per essere completamente memorizzate nella cache dopo essere state sottoposte a rendering lato server utilizzando i componenti core CIF dell’AEM. Le pagine devono essere sottoposte a rendering nell’editore AEM utilizzando i modelli generici creati nell’AEM. Questi componenti ottengono i dati da Adobe Commerce tramite API GraphQL. Queste pagine vengono create in modo dinamico, sottoposte a rendering sul server, memorizzate nella cache del dispatcher AEM e quindi distribuite al browser. Esempi di ciò sono mostrati nelle caselle viola nell’esempio precedente.
 
 ## Rendering lato client
 

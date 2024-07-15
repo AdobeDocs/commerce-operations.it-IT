@@ -20,27 +20,27 @@ Ci impegniamo a fornire ai clienti la migliore esperienza online. Dal punto di v
 
 La spedizione e l&#39;evasione hanno alcuni fattori di base che fungono da base, tra cui:
 
-- **Metodi e costi di spedizione**—Le aziende devono analizzare e dividere l&#39;intero costo di spedizione e determinare se assorbire i costi di spedizione, trasferire i costi ai clienti o condividere i costi? In che modo l&#39;azienda fornirà le offerte di spedizione o spedizione gratuite? Come verranno spediti i prodotti? Ci saranno più di un metodo di spedizione e le spese di spedizione?
+- **Metodi e costi di spedizione**: le aziende devono analizzare e dividere l&#39;intero costo di spedizione e determinare se assorbire i costi di spedizione, trasferire i costi ai clienti o condividere i costi? In che modo l&#39;azienda fornirà le offerte di spedizione o spedizione gratuite? Come verranno spediti i prodotti? Ci saranno più di un metodo di spedizione e le spese di spedizione?
 
-- **Prodotto**- Ogni prodotto è diverso in termini di numero di articoli, peso, destinazione e durata. Le aziende devono analizzare questi dettagli per comprendere il costo totale della spedizione, in quanto i diversi prodotti hanno costi di spedizione diversi.
+- **Prodotto**: ogni prodotto è diverso in termini di numero di articoli, peso, destinazione e durata. Le aziende devono analizzare questi dettagli per comprendere il costo totale della spedizione, in quanto i diversi prodotti hanno costi di spedizione diversi.
 
-- **Imballaggio**—L&#39;imballaggio svolge anche un ruolo importante nella comprensione del metodo di spedizione e del costo. Ad esempio, il prodotto è fragile o è confezionato come regalo?
+- **Imballaggio**: anche l&#39;imballaggio svolge un ruolo importante nella comprensione del metodo e del costo di spedizione. Ad esempio, il prodotto è fragile o è confezionato come regalo?
 
-- **Stagione**- Quali cambiamenti dovrebbero essere apportati durante le stagioni di picco, come la frenesia di clic e i festival.
+- **Stagione**—Quali cambiamenti dovrebbero essere apportati durante le stagioni di picco, come la frenesia dei clic e i festival.
 
-- **Vettori**—Quale società di spedizione di terze parti meglio si adatta al business? Quali sono i servizi forniti dalle compagnie di navigazione? Qual è il costo?
+- **Vettori**—Quale società di spedizione di terze parti si adatta meglio all&#39;azienda? Quali sono i servizi forniti dalle compagnie di navigazione? Qual è il costo?
 
 ## Metodi di spedizione
 
 Prima che un&#39;azienda spedisca il suo prodotto, deve decidere i metodi e i costi di spedizione. Sono disponibili varie opzioni per i metodi di spedizione, tra cui:
 
-- **Spedizione gratuita**- La spedizione gratuita ai clienti potrebbe rappresentare la migliore esperienza del cliente, ma potrebbe non essere adatta all&#39;azienda.
+- **Spedizione gratuita**: la spedizione gratuita ai clienti potrebbe essere la migliore esperienza del cliente, ma potrebbe non essere adatta all&#39;azienda.
 
-- **Tariffe in tempo reale**- La collaborazione con i fornitori di servizi di spedizione di terze parti consente ai rivenditori di registrare il metodo di spedizione e i costi attualmente addebitati dalla società di spedizione. Questo consente ai clienti di scegliere il metodo di spedizione preferito.
+- **Tariffe in tempo reale**—La collaborazione con i fornitori di spedizione di terze parti consente ai rivenditori di registrare il metodo di spedizione e il costo attualmente addebitati dalla società di spedizione. Questo consente ai clienti di scegliere il metodo di spedizione preferito.
 
-- **Tariffa fissa**- Una delle opzioni di spedizione più popolari. Il trucco qui è garantire che i rivenditori non sovraccaricano o sottopongono i clienti. Questo funziona anche se i rivenditori hanno un prodotto standard, ma può complicarsi se hanno una varietà di prodotti.
+- **Tariffa fissa**—Una delle opzioni di spedizione più comuni. Il trucco qui è garantire che i rivenditori non sovraccaricano o sottopongono i clienti. Questo funziona anche se i rivenditori hanno un prodotto standard, ma può complicarsi se hanno una varietà di prodotti.
 
-- **Spedizione gratuita oltre un importo**—I rivenditori possono fornire la spedizione gratuita quando il cliente acquista oltre un certo importo. I rivenditori devono calcolare tale importo per fornire questo servizio.
+- **Spedizione gratuita per un importo superiore**: i rivenditori possono fornire la spedizione gratuita quando il cliente acquista un importo superiore a un determinato. I rivenditori devono calcolare tale importo per fornire questo servizio.
 
 La spedizione e l&#39;evasione richiedevano il coordinamento del team sia internamente che esternamente. Una strategia di spedizione e di evasione deve essere condivisa con l&#39;intera organizzazione in modo che siano allineate. Ad esempio, se il team Marketing desidera inviare una promozione che include la spedizione gratuita, deve allinearla alla strategia di spedizione e di evasione e al team di eliminazione di eventuali esperienze negative da parte dei clienti.
 

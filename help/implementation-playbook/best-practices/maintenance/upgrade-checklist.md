@@ -21,7 +21,7 @@ Utilizza questo elenco di controllo durante le conversazioni annuali e trimestra
 
 >[!NOTE]
 >
->Per una descrizione dettagliata dei passaggi tecnici per il corretto aggiornamento, fare riferimento a [Completare i prerequisiti per l’aggiornamento](../../../upgrade/prepare/prerequisites.md) nella documentazione per gli utenti.
+>Per una descrizione dettagliata dei passaggi tecnici per eseguire l&#39;aggiornamento, consulta [Prerequisiti per l&#39;aggiornamento completi](../../../upgrade/prepare/prerequisites.md) nella documentazione utente.
 
 ## Prodotti e versioni interessati
 
@@ -46,7 +46,7 @@ Utilizza questo elenco di controllo durante le conversazioni annuali e trimestra
 
 ## Budget e tempistica
 
-▢ Utilizzare Adobe Commerce [pianificazione delle versioni](../../../release/schedule.md) per pianificare il prossimo aggiornamento e prepararsi in anticipo.
+▢ Utilizza la [pianificazione del rilascio](../../../release/schedule.md) di Adobe Commerce per pianificare il tuo prossimo aggiornamento e prepararti in anticipo.
 
 ▢ Discuti quale versione pensi di adottare (completa o di sola sicurezza) in base alle esigenze previste.
 
@@ -60,14 +60,14 @@ Utilizza questo elenco di controllo durante le conversazioni annuali e trimestra
 
 ▢ Attività di accesso anticipato
 
-- Partecipazione del partner [Beta](../../../release/beta.md)
-- Revisione delle note sulla versione beta.
+- Il partner partecipa a [Beta](../../../release/beta.md)
+- Revisione delle note sulla versione di Beta.
 
 ▢ Accordo su budget, tempistica, ambito.
 
-▢ Esegui il [Upgrade Compatibility Tool](../../../upgrade/upgrade-compatibility-tool/overview.md)
+▢ Eseguire lo strumento di compatibilità per l&#39;aggiornamento [](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
-▢ Valuta l&#39;utilizzo dell&#39;aggiornamento per risolvere i problemi identificati da [Strumento di analisi a livello di sito](../../../tools/site-wide-analysis-tool/intro.md).
+▢ Considerare l&#39;utilizzo dell&#39;aggiornamento per risolvere i problemi identificati dallo [strumento di analisi a livello di sito](../../../tools/site-wide-analysis-tool/intro.md).
 
 ▢ Documento dipendenze ed eventuali modifiche tecniche dello stack richieste, ad esempio le versioni PHP o Elastic Search.
 
@@ -77,17 +77,17 @@ Utilizza questo elenco di controllo durante le conversazioni annuali e trimestra
 
 ▢ Finestra di manutenzione del piano se si prevedono tempi di inattività.
 
-▢ Rivedere e approvare la strategia di test; considerare l’utilizzo di Adobe Commerce [framework di test](https://developer.adobe.com/commerce/testing/) o una suite di automazione di terze parti.
+▢ Rivedi e approva la strategia di test; prova a utilizzare Adobe Commerce [test framework](https://developer.adobe.com/commerce/testing/) o una suite di automazione di terze parti.
 
 ▢ Verifica che tutte le estensioni e personalizzazioni siano compatibili.
 
 ▢ Rivedi e aggiorna il playbook successivo all’avvio; da utilizzare se vengono rilevati problemi durante o dopo l’aggiornamento.
 
-## Post-implementazione
+## Distribuzione Post
 
 ▢ Monitora il sito per individuare eventuali problemi: prestazioni, elaborazione degli ordini, analisi e altro ancora.
 
-▢ Eseguire un’Adobe Commerce [analisi della sicurezza](https://account.magento.com/scanner/dashboard/) o altre analisi di terze parti e analisi di potenziali vulnerabilità di sicurezza.
+▢ Eseguire un&#39;analisi della protezione di Adobe Commerce [](https://account.magento.com/scanner/dashboard/) o un&#39;altra analisi di terze parti ed esaminare potenziali vulnerabilità di protezione.
 
 ▢ Esegui una retrospettiva con tutte le parti interessate e documenta cosa è andato bene e cosa non è andato e come migliorare.
 

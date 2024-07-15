@@ -5,7 +5,7 @@ exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 È necessario eseguire la migrazione manuale di quattro tipi di dati:
 
-* Contenuti multimediali
+* Media
 
 * Progettazione vetrina
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 * Elenchi di controllo di accesso (ACL)
 
-## Contenuti multimediali
+## Media
 
 Questa sezione illustra come eseguire manualmente la migrazione dei file multimediali.
 
@@ -33,17 +33,17 @@ Questa sezione illustra come eseguire manualmente la migrazione dei file multime
 >Il metodo di archiviazione dei supporti del database è obsoleto a partire dal Magento 2.4.3.
 
 
-Questa sezione si applica a te *solo* se si memorizzano file multimediali nel database di Magento. Questo passaggio deve essere eseguito prima di [migrazione dei dati](data.md):
+Questa sezione è valida per *solo* se i file multimediali vengono archiviati nel database di Magento. Questo passaggio deve essere eseguito prima della [migrazione dei dati](data.md):
 
 1. Accedere al pannello di amministrazione di Magento 1 come amministratore.
 
-1. Clic **Sistema** > **Configurazione** > AVANZATE > **Sistema**.
+1. Fare clic su **Sistema** > **Configurazione** > AVANZATE > **Sistema**.
 
-1. Nel riquadro di destra, scorri fino a **Configurazione archiviazione per contenuti multimediali**.
+1. Nel riquadro di destra, scorri fino a **Configurazione archiviazione per file multimediali**.
 
-1. Dalla sezione **Seleziona database multimediale** fare clic sul nome del database di archiviazione dei supporti.
+1. Nell&#39;elenco **Seleziona database multimediale** fare clic sul nome del database di archiviazione multimediale.
 
-1. Clic **Sincronizza**.
+1. Fare clic su **Sincronizza**.
 
 Quindi, ripeti gli stessi passaggi nel pannello di amministrazione di Magento 2.
 
@@ -51,7 +51,7 @@ Quindi, ripeti gli stessi passaggi nel pannello di amministrazione di Magento 2.
 
 Tutti i file multimediali (immagini per prodotti, categorie, editor WYSIWYG e così via) devono essere copiati manualmente da `<your Magento 1 install dir>/media` a `<your Magento 2 install dir>/pub/media`.
 
-Tuttavia, eseguire *non* copia `.htaccess` file nel Magento 1 `media` cartella. Il Magento 2 ha il proprio `.htaccess` questo dovrebbe essere mantenuto.
+Tuttavia, *non* copiare i file `.htaccess` presenti nella cartella `media` del Magento 1. Il Magento 2 ha un proprio `.htaccess` che deve essere mantenuto.
 
 ## Progettazione vetrina
 
@@ -69,4 +69,4 @@ Tuttavia, eseguire *non* copia `.htaccess` file nel Magento 1 `media` cartella. 
 
 >[!NOTE]
 >
->È possibile regolare il fuso orario per un&#39;entità di database utilizzando `\Migration\Handler\Timezone` handler. Consulta la [seguito](follow-up.md) per ulteriori dettagli.
+>È possibile regolare il fuso orario per un&#39;entità di database utilizzando il gestore `\Migration\Handler\Timezone`. Per ulteriori dettagli, consulta la sezione [follow-up](follow-up.md).

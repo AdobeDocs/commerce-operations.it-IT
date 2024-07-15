@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configurare i consumer di messaggi
 
-Prima di eseguire questo comando, è necessario effettuare le seguenti operazioni *o* devi [installare l’applicazione](../advanced.md):
+Prima di eseguire questo comando, è necessario eseguire *o* [installare l&#39;applicazione](../advanced.md):
 
 * [Creare o aggiornare la configurazione della distribuzione](deployment.md)
 * [Creare lo schema del database](database.md)

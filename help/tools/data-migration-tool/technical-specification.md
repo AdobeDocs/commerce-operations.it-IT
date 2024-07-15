@@ -1,26 +1,26 @@
 ---
-title: '''[!DNL Data Migration Tool] specifiche tecniche"'
-description: Scopri i dettagli di implementazione di [!DNL Data Migration Tool] e come estendere durante il trasferimento dei dati tra il Magento 1 e il Magento 2.
+title: '[!DNL Data Migration Tool] specifica tecnica'
+description: Scopri i dettagli di implementazione di  [!DNL Data Migration Tool]  e come estendere il trasferimento di dati tra il Magento 1 e il Magento 2.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2098'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Migration Tool] specifiche tecniche
+# Specifiche tecniche [!DNL Data Migration Tool]
 
-Questa sezione descrive [!DNL Data Migration Tool] dettagli sull’implementazione ed estensione delle funzionalità.
+Questa sezione descrive i dettagli sull&#39;implementazione di [!DNL Data Migration Tool] e come estenderne la funzionalità.
 
 ## Archivi
 
-Per accedere al [!DNL Data Migration Tool] codice sorgente, consulta GitHub [archivio](https://github.com/magento/data-migration-tool).
+Per accedere al codice sorgente [!DNL Data Migration Tool], consulta l&#39;[archivio](https://github.com/magento/data-migration-tool) GitHub.
 
 ## Requisiti di sistema
 
-Il [requisiti di sistema](../../installation/system-requirements.md) per [!DNL Data Migration Tool] sono gli stessi del Magento 2.
+I [requisiti di sistema](../../installation/system-requirements.md) per [!DNL Data Migration Tool] sono gli stessi del Magento 2.
 
 ## Struttura interna
 
@@ -107,9 +107,9 @@ Lo script che esegue il processo di migrazione si trova in: `magento-root/bin/ma
 
 ## Configurazione
 
-Schema per la configurazione `config.xsd` il file si trova in `etc/` directory. Il file di configurazione predefinito (`config.xml.dist`) viene creato per ogni versione del Magento 1.x. Si trova in una directory separata sotto `etc/`.
+Lo schema per il file di configurazione `config.xsd` si trova nella directory `etc/`. Il file di configurazione predefinito (`config.xml.dist`) viene creato per ogni versione del Magento 1.x. Si trova in una directory separata in `etc/`.
 
-Il file di configurazione predefinito può essere sostituito da uno personalizzato (vedere [sintassi del comando](migrate-data/overview.md#command-syntax)).
+Il file di configurazione predefinito può essere sostituito da un file personalizzato (vedi [sintassi comando](migrate-data/overview.md#command-syntax)).
 
 Il file di configurazione ha la seguente struttura:
 
@@ -164,19 +164,19 @@ Il file di configurazione ha la seguente struttura:
 
 Modifica l&#39;opzione del prefisso nel caso in cui il Magento sia stato installato con il prefisso nelle tabelle di database. Può essere impostata per i database del Magento 1 e del Magento 2. Utilizzate di conseguenza le opzioni di configurazione &quot;source_prefix&quot; e &quot;dest_prefix&quot;.
 
-I dati di configurazione sono accessibili con `\Migration\Config` classe.
+I dati di configurazione sono accessibili con la classe `\Migration\Config`.
 
 ## Passaggi operazioni disponibili
 
 | Documento | Campo |
 |---|---|
-| `step` | Nodo di secondo livello all’interno del nodo Passaggi. La descrizione della fase pertinente deve essere specificata nel `title` attributo. |
+| `step` | Nodo di secondo livello all’interno del nodo Passaggi. La descrizione del passaggio pertinente deve essere specificata nell&#39;attributo `title`. |
 | `integrity` | Specifica la classe PHP responsabile del controllo dell&#39;integrità. Confronta i nomi dei campi, i tipi e altre informazioni della tabella per verificare la compatibilità tra le strutture di dati dei Magenti 1 e 2. |
 | `data` | Specifica la classe PHP responsabile del controllo dei dati. Trasferisce i dati tabella per tabella dal Magento 1 al Magento 2. |
 | `volume` | Specifica la classe PHP responsabile del controllo del volume. Confronta il numero di record tra le tabelle per verificare che il trasferimento sia stato eseguito correttamente. |
 | `delta` | Specifica la classe PHP responsabile del controllo delta. Trasferisce il delta dal Magento 1 al Magento 2 dopo la migrazione completa dei dati. |
 
-## Attributi delle informazioni del database di origine
+## Attributi delle informazioni del database di Source
 
 | Documento | Campo | Obbligatorio |
 |---|---|---|
@@ -204,7 +204,7 @@ I dati di configurazione sono accessibili con `\Migration\Config` classe.
 
 ## Connetti utilizzando il protocollo TLS
 
-È inoltre possibile connettersi a un database utilizzando il protocollo TLS, ovvero le chiavi di crittografia pubbliche/private. Aggiungi i seguenti attributi facoltativi alla `database` elemento:
+È inoltre possibile connettersi a un database utilizzando il protocollo TLS, ovvero le chiavi di crittografia pubbliche/private. Aggiungere i seguenti attributi facoltativi all&#39;elemento `database`:
 
 * `ssl_ca`
 * `ssl_cert`
@@ -227,7 +227,7 @@ Il processo di migrazione è costituito da passaggi.
 
 Step è un&#39;unità che fornisce le funzionalità necessarie per la migrazione di alcuni dati separati. Il passo può essere costituito da uno o più stadi (controllo di integrità, dati, controllo del volume e delta).
 
-Per impostazione predefinita, sono disponibili diversi passaggi ([Mappa](#map-step), [EAV](#eav), [Riscritture URL](#url-rewrite-step)e così via). Facoltativamente, puoi anche aggiungere passaggi personalizzati.
+Per impostazione predefinita, sono disponibili diversi passaggi ([Mappa](#map-step), [EAV](#eav), [Riscritture URL](#url-rewrite-step) e così via). Facoltativamente, puoi anche aggiungere passaggi personalizzati.
 
 Le classi relative ai passi si trovano nella directory src/Migration/Step.
 
@@ -263,9 +263,9 @@ class StageClass implements StageInterface
 }
 ```
 
-Se la fase dati supporta il rollback, deve implementare `RollbackInterface` di rete.
+Se la fase dati supporta il rollback, deve implementare l&#39;interfaccia `RollbackInterface`.
 
-La visualizzazione del passaggio in esecuzione è fornita dal componente ProgressBar di Symfony (consultate [Barra di avanzamento](https://symfony.com/doc/current/components/console/helpers/progressbar.html)). Accedere a questo componente in un passaggio come LogLevelProcessor.
+La visualizzazione del passaggio in esecuzione è fornita dal componente ProgressBar di Symfony (vedere [Barra di avanzamento](https://symfony.com/doc/current/components/console/helpers/progressbar.html)). Accedere a questo componente in un passaggio come LogLevelProcessor.
 
 I principali metodi di utilizzo sono:
 
@@ -283,7 +283,7 @@ Ogni fase deve verificare che la struttura dell’origine dati (Magento 1 per im
 
 ### Trasferimento dati
 
-Se il controllo di integrità è stato superato, il trasferimento dei dati è in esecuzione. Se compaiono errori, il rollback viene eseguito per ripristinare lo stato precedente del Magento 2. Se una classe step implementa `RollbackInterface` , il metodo di rollback viene eseguito in caso di errore.
+Se il controllo di integrità è stato superato, il trasferimento dei dati è in esecuzione. Se compaiono errori, il rollback viene eseguito per ripristinare lo stato precedente del Magento 2. Se una classe step implementa l&#39;interfaccia `RollbackInterface`, il metodo rollback viene eseguito in caso di errore.
 
 ### Controllo volume
 
@@ -333,17 +333,17 @@ Tutta la configurazione dell&#39;archivio mantiene i propri dati nella tabella c
 </settings>
 ```
 
-Sotto il nodo `<key>` esistono regole che funzionano con la colonna &quot;percorso&quot; nella `core_config_data` tabella. `<ignore>` le regole impediscono allo strumento di trasferire alcune impostazioni. In questo nodo è possibile utilizzare i caratteri jolly. Tutte le altre impostazioni non elencate in `<ignore>` migrazione dei nodi. Se il percorso di un&#39;impostazione viene modificato nel Magento 2, deve essere aggiunto a `//key/rename` nodo, dove il percorso precedente indica in `//key/rename/path` il nodo e il nuovo percorso indicano `//key/rename/to` nodo.
+Nel nodo `<key>` sono presenti regole che funzionano con la colonna &#39;percorso&#39; nella tabella `core_config_data`. `<ignore>` regole impediscono allo strumento di trasferire alcune impostazioni. In questo nodo è possibile utilizzare i caratteri jolly. Tutte le altre impostazioni non elencate nel nodo `<ignore>` sono state migrate. Se il percorso di un&#39;impostazione è stato modificato nel Magento 2, deve essere aggiunto al nodo `//key/rename`, dove il percorso precedente indica nel nodo `//key/rename/path` e il nuovo percorso indica nel nodo `//key/rename/to`.
 
-Sotto il nodo `<value>`, esistono regole che funzionano con la colonna &quot;valore&quot; nella `core_config_data` tabella. Queste regole hanno lo scopo di trasformare il valore delle impostazioni da parte dei gestori (classi che implementano `Migration\Handler\HandlerInterface`) e adattarlo per il Magento 2.
+Nel nodo `<value>` sono presenti regole che funzionano con la colonna &#39;value&#39; nella tabella `core_config_data`. Queste regole hanno lo scopo di trasformare il valore delle impostazioni da parte dei gestori (classi che implementano `Migration\Handler\HandlerInterface`) e di adattarlo per il Magento 2.
 
 ### Modalità di migrazione dati
 
-In questa modalità, la maggior parte dei dati viene migrata. Prima della migrazione dei dati, le fasi di controllo dell&#39;integrità vengono eseguite per ogni fase. Se il controllo di integrità viene superato, il [!DNL Data Migration Tool] installa le tabelle deltalog (con prefisso `m2_cl_*`) e i trigger corrispondenti al database del Magento 1 ed esegue la fase di migrazione dei dati dei passaggi. Quando la migrazione viene completata senza errori, la verifica del volume verifica la coerenza dei dati. Se effettui la migrazione del negozio live, puoi visualizzare un messaggio di avviso. Non preoccuparti, la migrazione delta si occupa di questi dati incrementali. I passaggi di migrazione più importanti sono Map, URL Rewrite ed EAV.
+In questa modalità, la maggior parte dei dati viene migrata. Prima della migrazione dei dati, le fasi di controllo dell&#39;integrità vengono eseguite per ogni fase. Se il controllo di integrità viene superato, [!DNL Data Migration Tool] installa le tabelle deltalog (con prefisso `m2_cl_*`) e i trigger corrispondenti nel database del Magento 1 ed esegue la fase di migrazione dei dati dei passaggi. Quando la migrazione viene completata senza errori, la verifica del volume verifica la coerenza dei dati. Se effettui la migrazione del negozio live, puoi visualizzare un messaggio di avviso. Non preoccuparti, la migrazione delta si occupa di questi dati incrementali. I passaggi di migrazione più importanti sono Map, URL Rewrite ed EAV.
 
 #### Passaggio mappa
 
-Il passaggio della mappa è responsabile del trasferimento della maggior parte dei dati dal Magento 1 al Magento 2. Questo passaggio legge le istruzioni dal file map.xml (che si trova nel `etc/` directory). Il file descrive le differenze tra le strutture di dati di origine (Magento 1) e destinazione (Magento 2). Se il Magento 1 contiene tabelle o campi che appartengono a un’estensione che non esiste nel Magento 2, queste entità possono essere posizionate qui per ignorarle mediante il passaggio mappa. In caso contrario, viene visualizzato un messaggio di errore.
+Il passaggio della mappa è responsabile del trasferimento della maggior parte dei dati dal Magento 1 al Magento 2. Questo passaggio legge le istruzioni dal file map.xml (che si trova nella directory `etc/`). Il file descrive le differenze tra le strutture di dati di origine (Magento 1) e destinazione (Magento 2). Se il Magento 1 contiene tabelle o campi che appartengono a un’estensione che non esiste nel Magento 2, queste entità possono essere posizionate qui per ignorarle mediante il passaggio mappa. In caso contrario, viene visualizzato un messaggio di errore.
 
 Il file della mappa ha il formato successivo:
 
@@ -401,23 +401,23 @@ Il file della mappa ha il formato successivo:
 
 Aree:
 
-* *sorgente* : contiene regole del database di origine
+* *origine* - contiene le regole del database di origine
 
-* *destinazione* : contiene regole del database di destinazione
+* *destinazione* - contiene le regole del database di destinazione
 
 Opzioni:
 
-* *ignora* : documento, campo o tipo di dati contrassegnato con questa opzione viene ignorato
+* *ignora* - il documento, il campo o il tipo di dati contrassegnato con questa opzione viene ignorato
 
-* *rinomina* - descrive le relazioni di nome tra documenti con un nome diverso. In un caso in cui il nome del documento di destinazione non corrisponde a quello del documento di origine, è possibile utilizzare l&#39;opzione Rinomina per impostare il nome del documento di origine in modo simile al nome della tabella di destinazione
+* *rinomina*: descrive le relazioni dei nomi tra documenti con un nome diverso. In un caso in cui il nome del documento di destinazione non corrisponde a quello del documento di origine, è possibile utilizzare l&#39;opzione Rinomina per impostare il nome del documento di origine in modo simile al nome della tabella di destinazione
 
 * *sposta* - imposta la regola per spostare il campo specificato dal documento di origine al documento di destinazione. NOTA: il nome del documento di destinazione deve corrispondere al nome del documento di origine. Se i nomi dei documenti di origine e di destinazione sono diversi, è necessario utilizzare l&#39;opzione Rinomina per il documento che contiene un campo spostato
 
-* *trasformazione* - è un’opzione che consente all’utente di migrare i campi in base al comportamento descritto in gestori
+* *transform* - è un&#39;opzione che consente agli utenti di migrare i campi in base al comportamento descritto nei gestori
 
-* *handler* : descrive il comportamento di trasformazione dei campi. Per chiamare il gestore, è necessario specificare il nome di una classe del gestore in un `<handler>` tag. Utilizza il `<param>` tag con il nome del parametro e i dati del valore per trasmetterlo al gestore
+* *gestore*: descrive il comportamento di trasformazione dei campi. Per chiamare il gestore, è necessario specificare il nome di una classe del gestore in un tag `<handler>`. Utilizza il tag `<param>` con il nome del parametro e i dati del valore per trasmetterlo al gestore
 
-**Sorgente** operazioni disponibili:
+**Source** operazioni disponibili:
 
 | Documento | Campo |
 |--- |--- |
@@ -431,7 +431,7 @@ Opzioni:
 
 #### Caratteri jolly
 
-Per ignorare documenti con parti simili (`document_name_1`, `document_name_2`), è possibile utilizzare la funzionalità con caratteri jolly. Inserisci `*` simbolo anziché parte ripetuta (`document_name_*`) e questa maschera copre tutti i documenti di origine o di destinazione che soddisfano questa maschera.
+Per ignorare documenti con parti simili (`document_name_1`, `document_name_2`), è possibile utilizzare la funzionalità dei caratteri jolly. Inserire il simbolo `*` invece della parte ripetuta (`document_name_*`) e questa maschera copre tutti i documenti di origine o di destinazione che soddisfano questa maschera.
 
 #### Passaggio di riscrittura URL
 
@@ -453,7 +453,7 @@ Alcune delle tabelle elaborate nel passaggio:
 
 ### Modalità di migrazione delta
 
-Dopo la migrazione principale, i clienti della vetrina avrebbero potuto aggiungere dati aggiuntivi al database del Magento 1. Per tenere traccia di questi dati, lo strumento imposta i trigger del database per le tabelle all’inizio del processo di migrazione. Per ulteriori informazioni, consulta [Eseguire la migrazione dei dati creati da estensioni di terze parti](migrate-data/delta.md#migrate-data-created-by-third-party-extensions).
+Dopo la migrazione principale, i clienti della vetrina avrebbero potuto aggiungere dati aggiuntivi al database del Magento 1. Per tenere traccia di questi dati, lo strumento imposta i trigger del database per le tabelle all’inizio del processo di migrazione. Per ulteriori informazioni, vedere [Eseguire la migrazione dei dati creati da estensioni di terze parti](migrate-data/delta.md#migrate-data-created-by-third-party-extensions).
 
 ## Origini dati
 
@@ -461,11 +461,11 @@ Per raggiungere le origini dati del Magento 1 e del Magento 2 e operare con i re
 
 Di seguito è riportato un diagramma classi di queste classi:
 
-![Struttura dati dello strumento di migrazione](../../assets/data-migration/MmigrationToolDataStructure.png)
+![Struttura dati strumento di migrazione](../../assets/data-migration/MmigrationToolDataStructure.png)
 
 ## Registrazione
 
-Al fine di implementare l&#39;output del processo di migrazione e controllare tutti i possibili livelli PSR logger, che viene utilizzato nel Magento, è applicato. `\Migration\Logger\Logger` La classe è stata implementata per fornire funzionalità di registrazione. Per utilizzare il logger, è necessario iniettarlo tramite l’iniezione di dipendenza del costruttore.
+Al fine di implementare l&#39;output del processo di migrazione e controllare tutti i possibili livelli PSR logger, che viene utilizzato nel Magento, è applicato. La classe `\Migration\Logger\Logger` è stata implementata per fornire funzionalità di registrazione. Per utilizzare il logger, è necessario iniettarlo tramite l’iniezione di dipendenza del costruttore.
 
 ```php
 class SomeClass
@@ -490,7 +490,7 @@ $this->logger->error("Message about error operation");
 $this->logger->warning("Some warning message");
 ```
 
-È possibile personalizzare la posizione in cui scrivere le informazioni di registro. Per farlo, aggiungi un gestore al logger utilizzando il metodo pushHandler() del logger. Ogni gestore deve implementare `\Monolog\Handler\HandlerInterface` di rete. Per ora ci sono due gestori:
+È possibile personalizzare la posizione in cui scrivere le informazioni di registro. Per farlo, aggiungi un gestore al logger utilizzando il metodo pushHandler() del logger. Ogni gestore deve implementare l&#39;interfaccia `\Monolog\Handler\HandlerInterface`. Per ora ci sono due gestori:
 
 * ConsoleHandler: scrive i messaggi nella console
 
@@ -519,21 +519,21 @@ Esiste la possibilità di impostare il livello di dettaglio. Per ora ci sono tre
 * `INFO` (nel registro vengono scritte solo informazioni importanti, valore predefinito)
 * `DEBUG` (tutto è scritto)
 
-Il livello di registro di verifica può essere impostato separatamente per ogni gestore chiamando `setLevel()` metodo. Se si desidera impostare il livello di dettaglio tramite il parametro della riga di comando, è necessario modificare l&#39;opzione &#39;verbose&#39; all&#39;avvio dell&#39;applicazione.
+È possibile impostare il livello di registro di verifica per ogni gestore separatamente chiamando il metodo `setLevel()`. Se si desidera impostare il livello di dettaglio tramite il parametro della riga di comando, è necessario modificare l&#39;opzione &#39;verbose&#39; all&#39;avvio dell&#39;applicazione.
 
-Puoi formattare i messaggi di registro con il formattatore monologo. Per il corretto funzionamento della funzionalità di formattazione, è necessario specificare il gestore di registro utilizzando `setFormatter()` metodo. Attualmente, è disponibile una classe formattatore (`MessageFormatter`) che imposta un determinato formato (in base al livello di dettaglio) durante la gestione dei messaggi (tramite `format()` dal gestore).
+Puoi formattare i messaggi di registro con il formattatore monologo. Per utilizzare la funzionalità di formattazione, è necessario specificare il gestore di registro utilizzando il metodo `setFormatter()`. Attualmente, è disponibile una classe formattatore (`MessageFormatter`) che imposta un determinato formato (a seconda del livello di dettaglio) durante la gestione dei messaggi (tramite il metodo `format()` eseguito dal gestore).
 
-La manipolazione del logger (aggiunta di gestori e processori) e l’elaborazione in modalità dettagliata vengono eseguite in `process()` metodo del `Migration\Logger\Manager` classe. Il metodo viene chiamato all&#39;avvio dell&#39;applicazione.
+La manipolazione del logger (aggiunta di gestori e processori) e l&#39;elaborazione in modalità dettagliata vengono eseguite nel metodo `process()` della classe `Migration\Logger\Manager`. Il metodo viene chiamato all&#39;avvio dell&#39;applicazione.
 
 ## Test automatici
 
-Esistono tre tipi di test nel [!DNL Data Migration Tool]:
+Esistono tre tipi di test in [!DNL Data Migration Tool]:
 
 * Statico
 * Unità
 * Integrazione
 
-Si trovano nel `tests/` , che è lo stesso del tipo di test (gli unit test si trovano nella directory `tests/unit` directory). Per avviare il test, deve essere installato phpunit. Cambia la directory corrente con la directory di test e avvia phpunit. Ad esempio:
+Si trovano nella directory `tests/` dello strumento, che corrisponde al tipo di test (gli unit test si trovano nella directory `tests/unit`). Per avviare il test, deve essere installato phpunit. Cambia la directory corrente con la directory di test e avvia phpunit. Ad esempio:
 
 ```bash
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]

@@ -19,7 +19,7 @@ ht-degree: 2%
    - File system {#file-system}
       - [Panoramica](prerequisites/file-system/overview.md)
       - [Configurare le autorizzazioni](prerequisites/file-system/configure-permissions.md)
-   - Server web {#web-server}
+   - Server Web {#web-server}
       - [Nginx](prerequisites/web-server/nginx.md)
       - [Apache](prerequisites/web-server/apache.md)
    - Server di database {#database-server}
@@ -38,11 +38,11 @@ ht-degree: 2%
    - [Software opzionale](prerequisites/optional-software.md)
 - [Installazione rapida](composer.md)
 - [Installazione avanzata](advanced.md)
-- Passaggi successivi all’installazione {#next-steps}
+- Passaggi dell&#39;installazione di Post {#next-steps}
    - [Verificare l&#39;installazione](next-steps/verify.md)
    - [Configurare l’applicazione](next-steps/configuration.md)
    - [Impostare una maschera (facoltativo)](next-steps/set-umask.md)
-   - Installare i dati di esempio (facoltativo) {#sample-data}
+   - Installa dati di esempio (facoltativo) {#sample-data}
       - [Panoramica](sample-data/overview.md)
       - [Scarica pacchetti Compositore](sample-data/composer-packages.md)
       - [Clona archivi Git](sample-data/git-repositories.md)

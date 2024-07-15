@@ -16,7 +16,7 @@ I piani di marketing dei contenuti di e-commerce di successo non provengono da s
 
 ## Quadro per la strategia dei contenuti
 
-![Diagramma framework strategia dei contenuti](../../assets/playbooks/content-strategy-framework.png)
+![Diagramma framework strategia contenuti](../../assets/playbooks/content-strategy-framework.png)
 
 ### Pre-produzione
 
@@ -26,7 +26,7 @@ Questa fase comporta l’avvio con l’utente, la comprensione delle sue esigenz
 
 Questa fase comporta la creazione di contenuti. Ciò include la creazione, l’authoring, l’editing, la produzione e l’ottimizzazione dei contenuti: accessibilità, SEO, assegnazione di tag e classificazione, outsourcing in produzione, ruolo di strumenti e tecnologie di terze parti e riutilizzo dei contenuti.
 
-### Post-produzione
+### Post-production
 
 Questa fase comprende la revisione e la valutazione dei contenuti, l&#39;adattamento e l&#39;ottimizzazione. Ciò include la valutazione, l’ottimizzazione, il test, l’apprendimento e l’esperienza utente di Analytics.
 
@@ -38,10 +38,10 @@ Che tu gestisca contenuti web di base o contenuti da diffondere sui social netwo
 
 Adobe Experience Manager combina una serie di funzioni a livello di infrastruttura e di applicazione in un unico pacchetto integrato. L’offerta si rivolge a:
 
-- **Sites** creazione e distribuzione rapida di siti web e app mobili rilevanti e aggiornamento dei contenuti in qualsiasi momento senza sovraccaricare il reparto IT.
-- **Risorse** gestione semplificata di immagini, video e altre risorse su ogni canale digitale per offrire esperienze cliente personalizzate.
-- **Community**: crea community dinamiche e conversazioni coinvolgenti su tutte le tue proprietà social in modo da poter ispirare nuovi livelli di apprendimento e fidelizzare i clienti.
-- **Forms** integrazione di moduli a livello aziendale nei siti web e nelle esperienze mobili, semplificazione della creazione di moduli e del completamento delle transazioni.
-- **App**: creazione e distribuzione di app mobili con una soluzione che colma il divario tra gli addetti al marketing e l&#39;IT, in modo che possano aggiornare facilmente i contenuti (anche dopo il lancio).
+- **Sites**: crea e distribuisci rapidamente siti Web e app mobili rilevanti e aggiorna i contenuti in qualsiasi momento senza appesantire il reparto IT.
+- **Assets**: gestisci facilmente immagini, video e altre risorse in ogni canale digitale per fornire esperienze cliente personalizzate.
+- **Community**: crea community dinamiche e conversazioni coinvolgenti tra tutte le tue proprietà social in modo da ispirare nuovi livelli di apprendimento e fidelizzare i clienti.
+- **Forms**: integra i moduli di livello Enterprise nei siti Web e nelle esperienze mobili e semplifica la creazione di moduli e il completamento delle transazioni.
+- **App**: crea e distribuisci app mobili con una soluzione che colma il divario tra gli addetti al marketing e l&#39;IT in modo che possano aggiornare facilmente i contenuti (anche dopo il lancio).
 
-![Diagramma framework strategia dei contenuti](../../assets/playbooks/content-strategy-framework2.png)
+![Diagramma framework strategia contenuti](../../assets/playbooks/content-strategy-framework2.png)

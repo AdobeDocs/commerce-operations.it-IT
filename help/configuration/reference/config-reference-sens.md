@@ -5,7 +5,7 @@ feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
 source-git-commit: 5a8e52d8eee1619697db40accb9775b92b4e8a9d
 workflow-type: tm+mt
-source-wordcount: '3702'
+source-wordcount: '3696'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,10 @@ ht-degree: 0%
 
 In questo argomento vengono elencati i percorsi di configurazione per le impostazioni sensibili e specifiche del sistema:
 
-- Il [`magento app:config:dump` comando](../cli/export-configuration.md) scrive le impostazioni specifiche del sistema nel file di configurazione specifico del sistema, `app/etc/env.php`, che dovrebbe _non_ essere nel controllo del codice sorgente. Scrive inoltre la configurazione condivisa per tutte le istanze Commerce in `app/etc/config.php`, questo file _dovrebbe_ essere nel controllo del codice sorgente.
-- Il [`magento config:sensitive:set` comando](../cli/set-configuration-values.md) scrive le impostazioni sensibili in `app/etc/env.php`.
+- Il comando [`magento app:config:dump`](../cli/export-configuration.md) scrive le impostazioni specifiche del sistema nel file di configurazione specifico del sistema, `app/etc/env.php`, che dovrebbe _non_ essere incluso nel controllo del codice sorgente. Scrive inoltre la configurazione condivisa per tutte le istanze di Commerce in `app/etc/config.php`. Il file _dovrebbe_ essere incluso nel controllo del codice sorgente.
+- Il comando [`magento config:sensitive:set`](../cli/set-configuration-values.md) scrive le impostazioni sensibili in `app/etc/env.php`.
 
-  Puoi anche impostare valori sensibili utilizzando le variabili di configurazione, come descritto in [Utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione](../reference/override-config-settings.md#environment-variables).
+  È inoltre possibile impostare valori sensibili utilizzando le variabili di configurazione come descritto in [Utilizzare le variabili di ambiente per sostituire le impostazioni di configurazione](../reference/override-config-settings.md#environment-variables).
 
 Per un elenco degli altri percorsi di configurazione, vedi:
 
@@ -26,15 +26,15 @@ Per un elenco degli altri percorsi di configurazione, vedi:
 
 >[!INFO]
 >
->Tutti i percorsi di configurazione elencati in questo argomento sono sensibili. Il `System-specific?` mostra quali valori sono anche specifici del sistema.
+>Tutti i percorsi di configurazione elencati in questo argomento sono sensibili. La colonna `System-specific?` mostra quali valori sono anche specifici del sistema.
 
 ## Percorsi generali sensibili alle categorie e specifici del sistema
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin in **Negozi** > Impostazioni > **Configurazione** > **Generale**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Generale**.
 
 ### Percorsi sensibili ai percorsi web e specifici del sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Generale** > **Web**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Generale** > **Web**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -58,7 +58,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi sensibili all’impostazione della valuta e specifici del sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Generale** > **Impostazione valuta**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Generale** > **Impostazione valuta**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -68,7 +68,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Archivia percorsi sensibili agli indirizzi e-mail e specifici del sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione e-mail** > **Generale** > **Memorizza indirizzi e-mail**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione e-mail** > **Generale** > **Indirizzi e-mail per archivio**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -87,7 +87,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi sensibili ai contatti e specifici del sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Generale** > **Contatti**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Generale** > **Contatti**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -99,7 +99,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi sensibili alla generazione di rapporti e specifici per il sistema di New Relic
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Generale** > **Generazione rapporti New Relic**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Generali** > **Generazione rapporti New Relic**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -114,11 +114,11 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi sensibili alle categorie e specifici del sistema dei clienti
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin (Amministrazione) in **Negozi** > Impostazioni > **Configurazione** > **Clienti**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Clienti**.
 
 ### Percorsi sensibili alla configurazione del cliente e specifici del sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Clienti** > **Configurazione cliente**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Clienti** > **Configurazione cliente**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -128,11 +128,11 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Categoria catalogo
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin (Amministrazione) in **Negozi** > Impostazioni > **Configurazione** > **Catalogo**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Catalogo**.
 
 ### Percorsi sensibili al catalogo e specifici del sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Catalogo** > **Catalogo**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Catalogo** > **Catalogo**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -169,7 +169,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi sensibili all’inventario e specifici per il sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Catalogo** > **Inventario**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Catalogo** > **Inventario**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -179,7 +179,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi specifici del sistema e sensibili alla mappa del sito XML
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Catalogo** > **XML Sitemap**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Catalogo** > **XML Sitemap**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -189,11 +189,11 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Categoria di vendita
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin (Amministrazione) in **Negozi** > Impostazioni > **Configurazione** > **Vendite**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite**.
 
 ### Impostazioni di spedizione sensibili e percorsi specifici del sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Impostazioni spedizione**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Impostazioni spedizione**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -209,7 +209,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi sensibili alle e-mail per le vendite e specifici per il sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **E-mail vendite**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **E-mail vendite**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -227,7 +227,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi sensibili al checkout e specifici per il sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Pagamento**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Pagamento**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -237,7 +237,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi sensibili alle API Google e specifici del sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **API GOOGLE**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **API Google**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -247,7 +247,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi sensibili ai metodi di consegna e specifici del sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Metodi di consegna**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Metodi di consegna**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -278,7 +278,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi sensibili alle vendite e specifici del sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Vendite**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Vendite**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -298,7 +298,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi API Google
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **API GOOGLE**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **API Google**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -308,11 +308,11 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Categoria avanzata
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin (Amministrazione) in **Negozi** > Impostazioni > **Configurazione** > **Avanzate**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Avanzate**.
 
 ### Percorsi sensibili all’amministratore e specifici per il sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Avanzate** > **Amministratore**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Avanzate** > **Amministratore**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -323,7 +323,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi sensibili al sistema e specifici del sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Avanzate** > **Sistema**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Avanzate** > **Sistema**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -335,7 +335,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi sensibili per sviluppatori e specifici per il sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Avanzate** > **Sviluppatore**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Avanzate** > **Sviluppatore**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -345,11 +345,11 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Categoria avanzata
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin (Amministrazione) in **Negozi** > Impostazioni > **Configurazione** > **Avanzate**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Avanzate**.
 
 ### Percorsi di sistema
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Avanzate** > **Sistema**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Avanzate** > **Sistema**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -362,7 +362,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ### Percorsi per sviluppatori
 
-Questi valori di configurazione sono disponibili in Amministrazione in **Negozi** > Impostazioni > **Configurazione** > **Avanzate** > **Sviluppatore**.
+Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Avanzate** > **Sviluppatore**.
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
@@ -372,7 +372,7 @@ Questi valori di configurazione sono disponibili in Amministrazione in **Negozi*
 
 ## Percorsi sensibili ai pagamenti e specifici del sistema
 
-In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni in Admin (Amministrazione) in **Negozi** > Impostazioni > **Configurazione** > **Vendite** > **Pagamento**.
+In questa sezione sono elencati i nomi delle variabili e i percorsi di configurazione disponibili per le opzioni dell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Vendite** > **Pagamento**.
 
 ### Variabile generale
 
@@ -384,7 +384,7 @@ In questa sezione sono elencati i nomi delle variabili e i percorsi di configura
 
 >[!INFO]
 >
->La scelta di questa variabile determina quale [Percorsi internazionali](#international-paths) puoi utilizzare.
+>La scelta di questa variabile determina quali [percorsi internazionali](#international-paths) puoi utilizzare.
 
 ### Percorsi sensibili a PayPal e specifici per il sistema
 

@@ -12,24 +12,24 @@ ht-degree: 0%
 
 # Modifica la directory principale dei documenti per migliorare la sicurezza
 
-In un’installazione standard con un server web Apache, Adobe Commerce viene installato sulla directory principale web predefinita: `/var/www/html/magento2`.
+In un&#39;installazione standard con un server Web Apache, Adobe Commerce viene installato nella directory principale Web predefinita: `/var/www/html/magento2`.
 
-Il `magento2/` la directory contiene quanto segue:
+La directory `magento2/` contiene quanto segue:
 
 - `pub/`
 - `setup/`
 - `var/`
 
-L’applicazione viene trasmessa da `/var/www/html/magento2/pub`. Il resto del file system è vulnerabile perché è accessibile da un browser.
-Impostazione di Webroot su `pub/` impedisce ai visitatori del sito di accedere ad aree sensibili del file system da un browser.
+L&#39;applicazione è servita da `/var/www/html/magento2/pub`. Il resto del file system è vulnerabile perché è accessibile da un browser.
+L&#39;impostazione della directory Web `pub/` impedisce ai visitatori del sito di accedere ad aree sensibili del file system da un browser.
 
-Questo argomento descrive come modificare la directory principale dei documenti Apache su un’istanza esistente per distribuire i file dalla directory `pub/` , che è più sicuro.
+In questo argomento viene descritto come modificare la directory principale dei documenti Apache in un&#39;istanza esistente per distribuire i file dalla directory `pub/`, che è più sicura.
 
 ## Nota sull&#39;indice
 
-Se sta usando [nginx](../prerequisites/web-server/nginx.md) e [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) file incluso nella directory di installazione, probabilmente i file sono già in uso da `pub/` directory.
+Se si utilizza [nginx](../prerequisites/web-server/nginx.md) e il file [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) incluso nella directory di installazione, è probabile che si stiano già distribuendo file dalla directory `pub/`.
 
-Se utilizzato nel blocco del server che definisce il sito, il `nginx.conf.sample` sostituisce le impostazioni della directory principale dei documenti del server per distribuire i file da `pub/` directory. Ad esempio, vedi l’ultima riga nella seguente configurazione:
+Se utilizzata nel blocco del server che definisce il sito, la configurazione di `nginx.conf.sample` sostituisce le impostazioni della directory principale dei documenti del server per distribuire i file dalla directory di `pub/`. Ad esempio, vedi l’ultima riga nella seguente configurazione:
 
 ```conf
 # /etc/nginx/sites-available/magento
@@ -60,7 +60,7 @@ Per completare questa esercitazione, è necessario accedere a un&#39;installazio
 
 >[!NOTE]
 >
->Fai riferimento a [Prerequisiti](../prerequisites/overview.md) e [Guida all’installazione](../overview.md) per ulteriori informazioni.
+>Per ulteriori informazioni, consultare [Prerequisiti](../prerequisites/overview.md) e la [Guida all&#39;installazione](../overview.md).
 
 ## 1. Modifica la configurazione del server
 
@@ -73,7 +73,7 @@ Il nome e la posizione del file host virtuale dipendono dalla versione di Apache
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
-1. Aggiungi il percorso al tuo `pub/` alla directory `DocumentRoot` direttiva:
+1. Aggiungere il percorso della directory `pub/` alla direttiva `DocumentRoot`:
 
    ```conf
    <VirtualHost *:80>
@@ -98,7 +98,7 @@ Il nome e la posizione del file host virtuale dipendono dalla versione di Apache
 
 ## 2. Aggiorna l’URL di base
 
-Se hai aggiunto un nome di directory al nome host o all’indirizzo IP del server per creare l’URL di base quando hai installato l’applicazione (ad esempio `http://192.168.33.10/magento2`), è necessario rimuoverlo.
+Se si è aggiunto un nome di directory al nome host o all&#39;indirizzo IP del server per creare l&#39;URL di base al momento dell&#39;installazione dell&#39;applicazione (ad esempio `http://192.168.33.10/magento2`), è necessario rimuoverlo.
 
 >[!NOTE]
 >
@@ -124,7 +124,7 @@ Se hai aggiunto un nome di directory al nome host o all’indirizzo IP del serve
 
 ## 3. Aggiornare il file env.php
 
-Aggiungi il seguente nodo alla `env.php` file.
+Aggiungere il nodo seguente al file `env.php`.
 
 ```conf
 'directories' => [
@@ -132,16 +132,16 @@ Aggiungi il seguente nodo alla `env.php` file.
 ]
 ```
 
-Consulta la sezione [riferimento env.php](../../configuration/reference/config-reference-envphp.md) per ulteriori informazioni.
+Per ulteriori informazioni, fare riferimento al [riferimento env.php](../../configuration/reference/config-reference-envphp.md).
 
 ## 4. Cambiare modalità
 
-[Modalità di applicazione](../../configuration/bootstrap/application-modes.md), che includono `production` e `developer`, sono progettate per migliorare la sicurezza e semplificare lo sviluppo. Come suggeriscono i nomi, è necessario passare a `developer` quando si estende o si personalizza l&#39;applicazione e si passa a `production` in esecuzione in un ambiente live.
+[Le modalità applicazione](../../configuration/bootstrap/application-modes.md), che includono `production` e `developer`, sono progettate per migliorare la sicurezza e semplificare lo sviluppo. Come suggeriscono i nomi, è necessario passare alla modalità `developer` quando si estende o si personalizza l&#39;applicazione e passare alla modalità `production` quando l&#39;esecuzione avviene in un ambiente live.
 
 Il passaggio da una modalità all’altra è un passaggio importante per verificare che la configurazione del server funzioni correttamente. È possibile passare da una modalità all&#39;altra utilizzando lo strumento CLI:
 
 1. Vai alla directory di installazione.
-1. Passa a `production` modalità.
+1. Passa alla modalità `production`.
 
    ```bash
    bin/magento deploy:mode:set production
@@ -152,7 +152,7 @@ Il passaggio da una modalità all’altra è un passaggio importante per verific
    ```
 
 1. Aggiorna il browser e verifica che la vetrina sia visualizzata correttamente.
-1. Passa a `developer` modalità.
+1. Passa alla modalità `developer`.
 
    ```bash
    bin/magento deploy:mode:set developer
@@ -168,13 +168,13 @@ Il passaggio da una modalità all’altra è un passaggio importante per verific
 
 Vai alla vetrina in un browser web per verificare che tutto funzioni.
 
-1. Apri un browser web e immetti il nome host o l’indirizzo IP del server nella barra degli indirizzi. Ad esempio: `http://192.168.33.10`.
+1. Apri un browser web e immetti il nome host o l’indirizzo IP del server nella barra degli indirizzi. Ad esempio, `http://192.168.33.10`.
 
    La figura seguente mostra una pagina di vetrina di esempio. Se viene visualizzato come segue, l&#39;installazione è stata completata correttamente.
 
    ![Storefront che verifica la corretta installazione](../../assets/installation/install-success_store.png)
 
-   Consulta la sezione [sezione risoluzione dei problemi](https://support.magento.com/hc/en-us/articles/360032994352) se la pagina mostra un errore 404 (Non trovato) o se non riesce a caricare altre risorse come immagini, CSS e JS.
+   Consulta la [sezione per la risoluzione dei problemi](https://support.magento.com/hc/en-us/articles/360032994352) se nella pagina viene visualizzato il valore 404 (Non trovato) o se non è possibile caricare altre risorse come immagini, CSS e JS.
 
 1. Provare ad accedere a una directory dell&#39;applicazione da un browser. Aggiungi il nome della directory al nome host o all’indirizzo IP del server nella barra degli indirizzi:
 

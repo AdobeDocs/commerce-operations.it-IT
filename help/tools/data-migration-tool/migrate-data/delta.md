@@ -1,18 +1,18 @@
 ---
 title: Migra modifiche
-description: Scopri come eseguire la migrazione solo dei dati che sono stati modificati dopo l’ultima migrazione dei dati del Magento 1 con [!DNL Data Migration Tool].
+description: Scopri come eseguire la migrazione solo dei dati che sono stati modificati dopo l'ultima migrazione dei dati del Magento 1 con  [!DNL Data Migration Tool].
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
 
 # Migra modifiche
 
-Lo strumento di migrazione incrementale installa le tabelle deltalog (con prefisso `m2_cl_*`) e i trigger (per il tracciamento delle modifiche) nel database del Magento 1 durante il [migrazione dei dati](data.md). Queste tabelle di dialogo dettagliate e i trigger sono essenziali per garantire la migrazione solo delle modifiche apportate nel Magento 1 dall&#39;ultima migrazione dei dati. Queste modifiche sono:
+Lo strumento di migrazione incrementale installa tabelle deltalog (con prefisso `m2_cl_*`) e trigger (per il rilevamento delle modifiche) nel database del Magento 1 durante la [migrazione dei dati](data.md). Queste tabelle di dialogo dettagliate e i trigger sono essenziali per garantire la migrazione solo delle modifiche apportate nel Magento 1 dall&#39;ultima migrazione dei dati. Queste modifiche sono:
 
 * Dati aggiunti dai clienti tramite vetrina (ordini creati, recensioni e modifiche nei profili dei clienti)
 
@@ -25,10 +25,10 @@ Lo strumento di migrazione incrementale installa le tabelle deltalog (con prefis
 
 Prima di iniziare, effettua le seguenti operazioni di preparazione:
 
-1. Accedi al server applicazioni come [il proprietario del file system](../../../installation/prerequisites/file-system/overview.md).
-1. Cambia in `/bin` o accertarsi che sia aggiunta al sistema `PATH`.
+1. Accedere al server applicazioni come [proprietario del file system](../../../installation/prerequisites/file-system/overview.md).
+1. Passare alla directory `/bin` o assicurarsi che sia aggiunta al sistema `PATH`.
 
-Consulta la [primi passi](overview.md#first-steps) per ulteriori dettagli.
+Per ulteriori dettagli, consulta la sezione [primi passaggi](overview.md#first-steps).
 
 ## Eseguire il comando di migrazione incrementale
 
@@ -40,11 +40,11 @@ bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 Dove:
 
-* `[-r|--reset]` è un argomento facoltativo che avvia la migrazione dall’inizio. È possibile utilizzare questo argomento per testare la migrazione.
+* `[-r|--reset]` è un argomento facoltativo che avvia la migrazione dall&#39;inizio. È possibile utilizzare questo argomento per testare la migrazione.
 
 * `[-a|--auto]` è un argomento facoltativo che impedisce l&#39;arresto della migrazione quando si verificano errori di verifica dell&#39;integrità.
 
-* `{<path to config.xml>}` è il percorso assoluto del file system a `config.xml`; questo argomento è obbligatorio.
+* `{<path to config.xml>}` è il percorso assoluto del file system di `config.xml`. Questo argomento è obbligatorio.
 
 >[!NOTE]
 >
@@ -53,10 +53,10 @@ Dove:
 
 ## Eseguire la migrazione dei dati creati da estensioni di terze parti
 
-In `Delta` modalità, la [!DNL Data Migration Tool] esegue la migrazione dei dati creati solo dai moduli di Magento e non è responsabile del codice o delle estensioni create da sviluppatori di terze parti. Se queste estensioni hanno creato dati nel database storefront e il commerciante vuole averli nel Magento 2 — file di configurazione del [!DNL Data Migration Tool] devono essere create e modificate di conseguenza.
+Nella modalità `Delta`, [!DNL Data Migration Tool] esegue la migrazione dei dati creati solo dai moduli del Magento e non è responsabile del codice o delle estensioni effettuate da sviluppatori di terze parti. Se queste estensioni hanno creato dati nel database storefront e il commerciante desidera che questi dati siano nel Magento 2, i file di configurazione di [!DNL Data Migration Tool] devono essere creati e modificati di conseguenza.
 
 Se un’estensione dispone di tabelle proprie e devi tenere traccia delle modifiche per la migrazione delta, effettua le seguenti operazioni:
 
-1. Aggiungi le tabelle da tracciare al `deltalog.xml` file
+1. Aggiungere le tabelle da tracciare al file `deltalog.xml`
 1. Creare una classe delta aggiuntiva che estende `Migration\App\Step\AbstractDelta`
 1. Aggiungere il nome della classe appena creata alla sezione della modalità delta di `config.xml`

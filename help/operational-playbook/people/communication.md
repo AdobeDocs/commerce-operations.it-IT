@@ -65,7 +65,7 @@ L’elenco seguente include i modi in cui JIRA può essere utilizzato all’inte
 
 JIRA consente ai team di creare e scrivere attività dettagliate, generare report, personalizzare i flussi di lavoro e assegnare processi tra singoli utenti in modo relativamente veloce.
 
-I responsabili del commercio, i team di marketing e sviluppo, anche le parti interessate di livello C possono monitorare l’avanzamento giornaliero, settimanale, mensile e annuale di qualsiasi attività o progetto JIRA. Lo strumento Atlassian Project Management è disponibile in tre versioni, tra cui JIRA Align, JIRA Core e JIRA Software.
+I manager Commerce, i team di marketing e sviluppo e le parti interessate a livello C possono monitorare l’avanzamento giornaliero, settimanale, mensile e annuale di qualsiasi attività o progetto JIRA. Lo strumento Atlassian Project Management è disponibile in tre versioni, tra cui JIRA Align, JIRA Core e JIRA Software.
 
 I vantaggi dell’utilizzo di JIRA in qualsiasi azienda di e-commerce sono la possibilità per più team di collaborare utilizzando un’unica piattaforma. Molte volte, le aziende assistono ai team di marketing, sviluppo, creatività e e-commerce che lavorano in silos diversi. L’utilizzo di uno strumento di gestione dei progetti come JIRA consente a ogni team di rappresentare diverse priorità. I problemi possono rappresentare tutto ciò che i team desiderano tracciare e sono tutti contenuti in progetti diversi che sono composti da attività ricorrenti che i team devono completare. Ogni problema è sottoposto a un processo denominato flusso di lavoro.
 
@@ -73,7 +73,7 @@ Il flusso di lavoro corretto può creare o interrompere le linee di comunicazion
 
 Quando i problemi vengono tracciati in un flusso di lavoro, tutti i membri del team, del reparto o persino dell’azienda acquisiscono visibilità sul loro stato. Un flusso di lavoro assicura inoltre che un problema superi tutti i passaggi prima di essere completato, in questo modo i team ricordano tutte queste priorità.
 
-![Diagramma di esempio del flusso di lavoro JIRA](../../assets/playbooks/jira-workflow-example.png)
+![Diagramma di esempio flusso di lavoro JIRA](../../assets/playbooks/jira-workflow-example.png)
 
 ### Confluenza
 

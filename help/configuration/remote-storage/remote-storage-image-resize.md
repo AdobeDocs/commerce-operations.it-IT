@@ -5,8 +5,8 @@ feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Il diagramma seguente mostra come Nginx recupera, ridimensiona e memorizza le im
 
 >[!TIP]
 >
->Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Configurare l’archiviazione remota per l’infrastruttura Commerce on Cloud](cloud-support.md)
+>Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Configurare l&#39;archiviazione remota per Commerce su infrastrutture cloud](cloud-support.md)
 
 ## Configurare il formato URL in Adobe Commerce
 
@@ -28,31 +28,31 @@ Per ridimensionare le immagini sul lato server, devi configurare Adobe Commerce 
 
 **Per configurare Commerce per il ridimensionamento delle immagini lato server**:
 
-1. In _Amministratore_ , fare clic su **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
+1. Nel pannello _Amministratore_, fare clic su **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
 
-1. Nel riquadro di destra, espandere **[!UICONTROL Url options]**.
+1. Nel riquadro di destra espandere **[!UICONTROL Url options]**.
 
-1. In _Formato URL del catalogo multimediale_ sezione, cancella **[!UICONTROL Use system value]**.
+1. Nella sezione _Formato URL contenuto multimediale catalogo_, cancella **[!UICONTROL Use system value]**.
 
-1. Seleziona la `Image optimization based on query parameters` URL in **_Formato URL del catalogo multimediale_** campo.
+1. Selezionare l&#39;URL `Image optimization based on query parameters` nel campo **_Formato URL contenuto multimediale catalogo_**.
 
-1. Clic **[!UICONTROL Save Config]**.
+1. Fare clic su **[!UICONTROL Save Config]**.
 
-1. Continua con [Configurazione Nginx](#configure-nginx).
+1. Passa alla [configurazione Nginx](#configure-nginx).
 
 ## Configurare Nginx
 
-Per continuare a configurare il ridimensionamento delle immagini lato server, è necessario preparare il `nginx.conf` e fornire un `proxy_pass` valore per la scheda di rete scelta.
+Per continuare a configurare il ridimensionamento delle immagini lato server, è necessario preparare il file `nginx.conf` e fornire un valore `proxy_pass` per l&#39;adattatore scelto.
 
 **Per consentire a Nginx di ridimensionare le immagini**:
 
-1. Installare [Modulo filtro immagini Nginx][nginx-module].
+1. Installa il modulo filtro immagini [Nginx][nginx-module].
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. Creare un `nginx.conf` file basato sul modello incluso `nginx.conf.sample` file. Ad esempio:
+1. Creare un file `nginx.conf` in base al file `nginx.conf.sample` del modello incluso. Ad esempio:
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {
@@ -69,7 +69,7 @@ Per continuare a configurare il ridimensionamento delle immagini lato server, è
    }
    ```
 
-1. [_Facoltativo_] Configurare un `proxy_pass` valore per la scheda di rete specifica.
+1. [_Facoltativo_] Configura un valore `proxy_pass` per la scheda specifica.
 
    - [Servizio Amazon Simple Storage (Amazon S3)](remote-storage-aws-s3.md)
 

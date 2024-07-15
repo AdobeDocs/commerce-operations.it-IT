@@ -83,12 +83,12 @@ Quando avvii un progetto di e-commerce, tieni presente il livello C e l’aziend
 >
 >Per il successo di qualsiasi progetto di e-commerce, è assolutamente essenziale che tutti siano coinvolti allo stesso modo e sulla stessa pagina.
 
-## Altro
+## Altri
 
 Esistono altri team che fanno parte di un team esistente o sono autonomi, tra cui:
 
-- **Team di contenuti**: devono essere allineati con tutti i team per creare contenuti efficaci. Il contenuto del sito richiede aggiornamenti regolari. Il team dei contenuti è responsabile della configurazione dei contenuti nella pagina del prodotto, nelle pagine delle categorie, nel blog e nel piè di pagina, in modo da attirare il traffico del sito e aumentare il tasso di conversione.
+- **Team dei contenuti**: devono essere allineati con tutti i team per creare contenuti efficaci. Il contenuto del sito richiede aggiornamenti regolari. Il team dei contenuti è responsabile della configurazione dei contenuti nella pagina del prodotto, nelle pagine delle categorie, nel blog e nel piè di pagina, in modo da attirare il traffico del sito e aumentare il tasso di conversione.
 
 - **Team di dati**: i siti di e-commerce generano molti dati che è possibile raccogliere e analizzare, tra cui informazioni sui clienti, abitudini di spesa, prodotti popolari e tempo in cui il sito ha più traffico. Il team di dati elabora tutte queste informazioni per fornire informazioni approfondite sul funzionamento del sito e sulle aree in cui è necessario apportare ulteriori miglioramenti. Il team Dati può consigliare le tendenze in arrivo e i punti su cui l’azienda deve concentrarsi.
 
-- **Team finanziario e contabile**—Alcune aziende dispongono di un piccolo team di responsabili finanziari e contabili, che può essere interno o esterno. Si concentrano sul budgeting, la previsione e la gestione dell&#39;aspetto finanziario della creazione e gestione di un sito di e-commerce.
+- **Team finanziario e contabile**. Alcune aziende dispongono di un piccolo team finanziario e contabile, che può essere interno o esterno. Si concentrano sul budgeting, la previsione e la gestione dell&#39;aspetto finanziario della creazione e gestione di un sito di e-commerce.

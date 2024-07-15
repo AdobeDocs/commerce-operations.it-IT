@@ -21,13 +21,13 @@ Adobe supporta solo la combinazione di requisiti di sistema descritti nelle tabe
 
 >[!BEGINTABS]
 
->[!TAB Commerce su Cloud]
+>[!TAB Commerce sul cloud]
 
-Il [Modello Commerce on Cloud](https://github.com/magento/magento-cloud) fornisce una configurazione predefinita per i servizi compatibili con una versione di Commerce specifica.
+Il modello [Commerce on Cloud](https://github.com/magento/magento-cloud) fornisce una configurazione predefinita per i servizi compatibili con una versione specifica di Commerce.
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-I servizi e le versioni sono definiti in [il `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Di seguito è riportata la configurazione predefinita del servizio per Commerce 2.4.6 su infrastruttura Cloud:
+I servizi e le versioni sono definiti nel [file `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Di seguito è riportata la configurazione predefinita del servizio per Commerce 2.4.6 su infrastruttura Cloud:
 
 ```yaml
 mysql:
@@ -42,9 +42,9 @@ opensearch:
     disk: 1024
 ```
 
-Consulta [Configurare i servizi](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) nel _Commerce su infrastruttura cloud_ guida.
+Consulta [Configurare i servizi](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) nella guida _Commerce su infrastruttura cloud_.
 
->[!TAB Commerce on-premise]
+>[!TAB Commerce locale]
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
@@ -52,17 +52,17 @@ Consulta [Configurare i servizi](https://experienceleague.adobe.com/docs/commerc
 
 ## Impostazioni PHP
 
-Esistono impostazioni di configurazione PHP particolari, come `memory_limit` che può aiutarti a evitare problemi comuni quando utilizzi Adobe Commerce. Consulta [Impostazioni PHP richieste](prerequisites/php-settings.md).
+Sono disponibili impostazioni di configurazione PHP particolari, ad esempio l&#39;impostazione `memory_limit`, che consentono di evitare problemi comuni durante l&#39;utilizzo di Adobe Commerce. Vedere [Impostazioni PHP richieste](prerequisites/php-settings.md).
 
-Per istruzioni sulla configurazione del cloud, consulta [Impostazioni PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) nel _Commerce su infrastruttura cloud_ guida.
+Per informazioni sulla configurazione cloud, consulta [Impostazioni PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) nella guida _Commerce su infrastruttura cloud_.
 
 ### PHP OPcache
 
-È consigliabile verificare che [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) è abilitato per motivi di prestazioni. OPcache è abilitata in molte distribuzioni PHP. Il `opcache` L’estensione è installata per impostazione predefinita nell’infrastruttura Commerce on Cloud.
+È consigliabile verificare che [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) sia abilitato per motivi di prestazioni. OPcache è abilitata in molte distribuzioni PHP. L&#39;estensione `opcache` è installata per impostazione predefinita nell&#39;infrastruttura Commerce on Cloud.
 
-Per gli on-premise, verificare che PHP OPcache sia installato, vedere [Impostazioni PHP](prerequisites/php-settings.md). Oppure, per indicazioni specifiche sulle impostazioni delle prestazioni, vedere le raccomandazioni software per [Impostazioni PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) nel _Best practice per le prestazioni_ guida.
+Per le impostazioni locali, verificare che PHP OPcache sia installato. Vedere [Impostazioni PHP](prerequisites/php-settings.md). Oppure per indicazioni specifiche sulle impostazioni delle prestazioni, vedere le raccomandazioni software per le [impostazioni PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) nella _Guida alle best practice per le prestazioni_.
 
-Se è necessario installare OPcache separatamente, vedere [Documentazione di PHP OPcache](https://www.php.net/manual/en/opcache.setup.php).
+Se devi installare OPcache separatamente, consulta la [documentazione di PHP OPcache](https://www.php.net/manual/en/opcache.setup.php).
 
 ### Controllo processo PHP
 
@@ -74,25 +74,25 @@ PHPUnit v9 (come strumento da riga di comando).
 
 ### Estensioni PHP
 
-Il [Istruzioni di installazione PHP](prerequisites/php-settings.md) includi un passaggio per installare queste estensioni.
+Le [istruzioni di installazione PHP](prerequisites/php-settings.md) includono un passaggio per l&#39;installazione di queste estensioni.
 
 >[!TIP]
 >
->Per le estensioni PHP nell’infrastruttura Cloud, consulta [Abilitare le estensioni PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) nel _Commerce su infrastruttura cloud_ guida.
+>Per le estensioni PHP nell&#39;infrastruttura cloud, vedere [Abilitare le estensioni PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) nella _guida di Commerce su infrastruttura cloud_.
 
 >[!BEGINTABS]
 
->[!TAB Commerce su Cloud]
+>[!TAB Commerce sul cloud]
 
 La tabella seguente mostra le estensioni PHP supportate durante la distribuzione di Adobe Commerce sulla piattaforma Cloud.
 
 {{$include /help/_includes/templated/php-extensions-cloud.md}}
 
->[!TAB Commerce on-premise]
+>[!TAB Commerce locale]
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
-Fai riferimento a [documentazione ufficiale PHP](https://www.php.net/manual/en/extensions.php) per informazioni dettagliate sull&#39;installazione.
+Per informazioni dettagliate sull&#39;installazione, consultare la [documentazione ufficiale PHP](https://www.php.net/manual/en/extensions.php).
 
 >[!ENDTABS]
 
@@ -113,15 +113,15 @@ Storefront e amministratore:
 - Chrome (versione principale più recente e precedente; qualsiasi sistema operativo)
 - Safari (versione principale più recente e precedente; solo macOS)
 - Safari per iOS (versione principale più recente e precedente, per storefront)
-- Chrome per Android (versione principale più recente e precedente, per vetrina)
+- Chrome per Android (versione principale più recente e precedente, per storefront)
 
 ### Server di posta
 
-Mail Transfer Agent (MTA) o un server SMTP. L’infrastruttura Commerce on Cloud utilizza [Servizio e-mail SendGrid](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html).
+Mail Transfer Agent (MTA) o un server SMTP. L&#39;infrastruttura Commerce on Cloud utilizza il servizio e-mail [SendGrid](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html).
 
 ### Memoria
 
-L&#39;aggiornamento delle applicazioni e delle estensioni ottenute dalla Commerce Marketplace e da altre origini può richiedere fino a 2 GB di RAM. Se si utilizza un sistema con meno di 2 GB di RAM, creare un [file di scambio](https://support.magento.com/hc/en-us/articles/360032980432); in caso contrario, l’aggiornamento potrebbe non riuscire.
+L&#39;aggiornamento delle applicazioni e delle estensioni ottenute dalla Commerce Marketplace e da altre origini può richiedere fino a 2 GB di RAM. Se si utilizza un sistema con meno di 2 GB di RAM, creare un [file di scambio](https://support.magento.com/hc/en-us/articles/360032980432). In caso contrario, l&#39;aggiornamento potrebbe non riuscire.
 
 ### Sistemi operativi (Linux x86-64)
 
@@ -143,16 +143,16 @@ Per alcune operazioni Adobe Commerce richiede i seguenti strumenti di sistema:
 
 - Per HTTPS è necessario un certificato di sicurezza valido.
 - I certificati SSL autofirmati non sono supportati.
-- Requisito Transport Layer Security (TLS) - PayPal e `repo.magento.com` entrambi richiedono TLS 1.2 o versione successiva.
+- Requisito Transport Layer Security (TLS): PayPal e `repo.magento.com` richiedono entrambi TLS 1.2 o versione successiva.
 
-Per l’infrastruttura Commerce on Cloud, consulta [Configurazione rapida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) nel _Commerce su infrastruttura cloud_ guida.
+Per l&#39;infrastruttura Commerce on Cloud, consulta [Configurazione rapida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) nella guida _Commerce on Cloud Infrastructure_.
 
 ### Xdebug
 
 Per Adobe Commerce, utilizza [php_xdebug 2.5.x](https://xdebug.org/download) o versione successiva (solo per ambienti di sviluppo; può avere un effetto negativo sulle prestazioni).
 
-Per Adobe Commerce su Cloud, consulta [Configura Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) nel _Commerce su infrastruttura cloud_ guida.
+Per Adobe Commerce on Cloud, consulta [Configurare Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) nella guida _Commerce on Cloud Infrastructure_.
 
 >[!NOTE]
 >
->Si è verificato un problema noto con `xdebug` che possono influenzare le installazioni di Adobe Commerce o l’accesso alla vetrina o all’amministratore dopo l’installazione. Consulta [Problema noto che influisce `xdebug` installazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) nel _Knowledge Base del supporto Commerce_.
+>Si è verificato un problema noto con `xdebug` che può influire sulle installazioni di Adobe Commerce o sull&#39;accesso alla vetrina o all&#39;amministratore dopo l&#39;installazione. Vedere [Problema noto che riguarda l&#39;installazione di `xdebug`](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) nella _Knowledge Base del supporto Commerce_.

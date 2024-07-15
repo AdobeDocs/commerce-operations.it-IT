@@ -1,6 +1,6 @@
 ---
-title: Il [!UICONTROL [!DNL RabbitMQ]Scheda ]
-description: Scopri di più su [!UICONTROL [!DNL RabbitMQ]Scheda ] di [!DNL Observation for Adobe Commerce].
+title: Scheda [!UICONTROL [!DNL RabbitMQ]
+description: Scopri la scheda [!UICONTROL [!DNL RabbitMQ] di [!DNL Observation for Adobe Commerce].
 exl-id: c5370c30-fed8-4f45-89c3-ef0d6ad41a89
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,15 +10,15 @@ ht-degree: 0%
 
 ---
 
-# Il [!UICONTROL [!DNL RabbitMQ]] scheda
+# Scheda [!UICONTROL [!DNL RabbitMQ]]
 
-Il **[!UICONTROL [!DNL RabbitMQ]]** La scheda contiene informazioni su [!DNL RabbitMQ] segnali.
+La scheda **[!UICONTROL [!DNL RabbitMQ]]** contiene informazioni incentrate su [!DNL RabbitMQ] segnali.
 
 ## [!UICONTROL [!DNL RabbitMQ] Infrastructure events]
 
-![[!DNL RabbitMQ] Eventi di infrastruttura](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
+![[!DNL RabbitMQ] eventi di infrastruttura](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
 
-Il **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** Il frame mostra gli eventi di infrastruttura che coinvolgono [!DNL RabbitMQ] che si è verificato nell’arco temporale selezionato:
+Il frame **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** mostra gli eventi di infrastruttura che coinvolgono [!DNL RabbitMQ] che si sono verificati nell&#39;intervallo di tempo selezionato:
 
 * `%Response [error] for node [rabbit@host1]: unexpected http response from%`) come `unexpected_resp_node1`
 * `%Response [error] for node [rabbit@host2]: unexpected http response from%`) come `unexpected_resp_node2`
@@ -43,7 +43,7 @@ Il **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** Il frame mostra gli ev
 
 ![[!DNL RabbitMQ] segnali di avvio/arresto del servizio](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
 
-Questo frame mostra [!DNL RabbitMQ] segnali di avvio/arresto del servizio che si sono verificati durante l’intervallo temporale selezionato:
+Questo frame mostra [!DNL RabbitMQ] segnali di avvio/arresto del servizio che si sono verificati durante l&#39;intervallo di tempo selezionato:
 
 * `%RabbitMQ is asked to stop...%`) come `rabbitmq_stop`
 * `%Starting RabbitMQ%`) come `rabbitmq_start`
@@ -52,9 +52,9 @@ Questo frame mostra [!DNL RabbitMQ] segnali di avvio/arresto del servizio che si
 
 ![[!DNL RabbitMQ] errori](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
 
-Questo frame mostra [!DNL RabbitMQ] errori che si sono verificati durante l’intervallo di tempo selezionato:
+Questo frame mostra [!DNL RabbitMQ] errori che si sono verificati durante l&#39;intervallo di tempo selezionato:
 
-* `%exit with reason {case_clause,timeout} and stacktrace {rabbit_mgmt_wm_healthchecks%}` as `exit_timeout`
+* `%exit with reason {case_clause,timeout} and stacktrace {rabbit_mgmt_wm_healthchecks%}` come `exit_timeout`
 * `%client unexpectedly closed TCP connection%`) come `client_closed_tcp_conn`
 * `%at undefined exit with reason shutdown in context shutdown_error%`) come `undef_exit`
 * `%Connection attempt from disallowed node%`) come `disallowed_node`
@@ -62,7 +62,7 @@ Questo frame mostra [!DNL RabbitMQ] errori che si sono verificati durante l’in
 
 ## [!UICONTROL [!DNL RabbitMQ] node status]
 
-![[!DNL RabbitMQ] stato del nodo](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
+![[!DNL RabbitMQ] stato nodo](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
 
 * `%rabbit on node rabbit@host1 down%`) come `rmq_node1_down`
 * `%rabbit on node rabbit@host2 down%`) come `rmq_node2_down`
@@ -73,13 +73,13 @@ Questo frame mostra [!DNL RabbitMQ] errori che si sono verificati durante l’in
 
 ## [!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]
 
-![[!DNL RabbitMQ] Stato riepilogo di alto livello del messaggio per coda](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
+Stato riepilogo di alto livello del messaggio ![[!DNL RabbitMQ] per coda](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
 
-Il **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** grafico mostra il numero di messaggi pubblicati per [!DNL RabbitMQ] coda per l’intervallo temporale selezionato.
+Il grafico **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** mostra il numero di messaggi pubblicati dalla coda [!DNL RabbitMQ] per l&#39;intervallo di tempo selezionato.
 
 ## [!UICONTROL [!DNL RabbitMQ] Message Detail Summary]
 
-![[!DNL RabbitMQ] Riepilogo dettagli messaggio](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
+Riepilogo dettagli messaggio ![[!DNL RabbitMQ]](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
 
 * `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) come `queue_err`
 * `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) come `queue_err`
@@ -88,30 +88,30 @@ Il **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** g
 
 ## [!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]
 
-![[!DNL RabbitMQ] Consumo in coda MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
+![[!DNL RabbitMQ] consumo coda MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
 
-Il **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** grafico mostra il numero di byte utilizzati da ogni [!DNL RabbitMQ] mette in coda nell’intervallo temporale selezionato.
+Il grafico **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** mostra il numero di byte utilizzati da ogni coda [!DNL RabbitMQ] nel periodo di tempo selezionato.
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]
 
-![[!DNL RabbitMQ] Messaggi pubblicati dalla coda](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
+![[!DNL RabbitMQ] messaggi pubblicati dalla coda](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
 
-Il **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** grafico mostra il numero di byte utilizzati da ogni [!DNL RabbitMQ] mette in coda nell’intervallo temporale selezionato.
+Il grafico **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** mostra il numero di byte utilizzati da ogni coda [!DNL RabbitMQ] nel periodo di tempo selezionato.
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]
 
-![[!DNL RabbitMQ] Throughput messaggi pubblicati dalla coda](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
+![[!DNL RabbitMQ] velocità effettiva dei messaggi pubblicati dalla coda](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
 
-Il **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** Il grafico mostra il numero medio di messaggi pubblicati al secondo per ogni [!DNL RabbitMQ] mette in coda nell’intervallo temporale selezionato.
+Il grafico **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** mostra il numero medio di messaggi pubblicati al secondo da ogni coda [!DNL RabbitMQ] nel periodo di tempo selezionato.
 
 ## [!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]
 
-![[!DNL RabbitMQ] Throughput totale messaggi per coda](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
+![[!DNL RabbitMQ] velocità effettiva messaggi totale dalla coda](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
 
-Il **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** Il grafico mostra il numero totale medio di messaggi al secondo per ogni [!DNL RabbitMQ] mette in coda nell’intervallo temporale selezionato.
+Il grafico **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** mostra il numero totale medio di messaggi al secondo per ogni coda [!DNL RabbitMQ] nell&#39;intervallo di tempo selezionato.
 
 ## [!UICONTROL [!DNL RabbitMQ] Consumers by Queue]
 
-![[!DNL RabbitMQ] Consumatori per coda](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
+![[!DNL RabbitMQ] utenti per coda](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
 
-Il **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** Il grafico mostra il numero totale medio di consumatori per ogni [!DNL RabbitMQ] mette in coda nell’intervallo temporale selezionato.
+Il grafico **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** mostra il numero totale medio di consumer per ogni coda [!DNL RabbitMQ] nell&#39;arco temporale selezionato.

@@ -1,6 +1,6 @@
 ---
-title: Il [!UICONTROL Indexing] scheda
-description: Scopri di più su [!UICONTROL Indexing] scheda di [!DNL Observation for Adobe Commerce].
+title: Scheda [!UICONTROL Indexing]
+description: Scopri la scheda [!UICONTROL Indexing] di [!DNL Observation for Adobe Commerce].
 exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,15 +10,15 @@ ht-degree: 0%
 
 ---
 
-# Il [!UICONTROL Indexing] scheda
+# Scheda [!UICONTROL Indexing]
 
-Il **[!UICONTROL Indexing]** La scheda tenta di spiegare i problemi relativi all’indicizzazione e identificare le potenziali cause.
+La scheda **[!UICONTROL Indexing]** tenta di spiegare i problemi di indicizzazione e identificare le potenziali cause.
 
 ## [!UICONTROL Core index invalidated]
 
 ![Indice core invalidato](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
 
-Il **[!UICONTROL Core index invalidated]** frame esamina l’invalidazione dell’indicizzazione in un arco temporale selezionato. Se l’indicizzazione avviene contemporaneamente ad altre risorse [!DNL crons], comporterà un carico pesante sulle risorse del sito.
+Il frame **[!UICONTROL Core index invalidated]** esamina l&#39;invalidazione dell&#39;indicizzazione in un intervallo temporale selezionato. Se l&#39;indicizzazione si verifica contemporaneamente ad altri [!DNL crons] a uso intensivo di risorse, le risorse del sito saranno soggette a un carico elevato.
 
 * `%Catalog Product Rule indexer has been invalidated%`) come `catalog_product_rule_idx_reset`
 * `%Catalog Rule Product indexer has been invalidated%`) come `catalog_rule_product_idx_reset`
@@ -36,9 +36,9 @@ Il **[!UICONTROL Core index invalidated]** frame esamina l’invalidazione dell�
 
 ## [!UICONTROL Core index rebuilds]
 
-![Ricostruzioni dell’indice core](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
+![Ricostruzioni indice core](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
 
-Il **[!UICONTROL Core index rebuilds]** il fotogramma esamina le ricostruzioni dell’indice core in un arco temporale selezionato. Di seguito sono riportate le stringhe analizzate dai registri per indicare il completamento della ricostruzione dell’indice.
+Il fotogramma **[!UICONTROL Core index rebuilds]** esamina le ricompilazioni dell&#39;indice di base in un arco temporale selezionato. Di seguito sono riportate le stringhe analizzate dai registri per indicare il completamento della ricostruzione dell’indice.
 
 * `%Catalog Product Rule index has been rebuilt%`) come `catalog_product_rule_idx`
 * `%Catalog Rule Product index has been rebuilt%`) come `catalog_rule_product_idx`
@@ -59,10 +59,10 @@ Il **[!UICONTROL Core index rebuilds]** il fotogramma esamina le ricostruzioni d
 
 ![tabelle indice catalogsearch](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
 
-Il **[!UICONTROL catalogsearch index table(s)]** frame esamina le tabelle dell’indice catalogsearch nell’arco temporale selezionato. Questa query esamina la durata di qualsiasi operazione di archivio dati rispetto alle tabelle con `%catalogsearch%` nella tabella.
+Il frame **[!UICONTROL catalogsearch index table(s)]** esamina le tabelle dell&#39;indice catalogsearch in un intervallo temporale selezionato. Questa query esamina la durata delle operazioni dell&#39;archivio dati rispetto alle tabelle il cui nome contiene `%catalogsearch%`.
 
 ## [!UICONTROL product index table(s)]
 
 ![tabelle indice prodotto](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
 
-Il **[!UICONTROL product index table(s)]** frame esamina le tabelle dell’indice del prodotto in un arco temporale selezionato. Questa query esamina la durata di qualsiasi operazione di archivio dati rispetto alle tabelle con `%product%` nella tabella.
+Il frame **[!UICONTROL product index table(s)]** esamina le tabelle dell&#39;indice di prodotto in un intervallo temporale selezionato. Questa query esamina la durata delle operazioni dell&#39;archivio dati rispetto alle tabelle il cui nome contiene `%product%`.

@@ -23,6 +23,6 @@ ht-degree: 2%
 - [Flusso di distribuzione](deployment-flow.md)
 - Concetti avanzati {#concepts}
    - [Configurazione avanzata](advanced-setup.md)
-   - [Avanzate [!DNL JavaScript] raggruppamento](advanced-js-bundling.md)
+   - [Avanzato [!DNL JavaScript] raggruppamento](advanced-js-bundling.md)
    - [Server applicazioni GraphQL](application-server.md)
 - [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

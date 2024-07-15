@@ -1,5 +1,5 @@
 ---
-title: Operazioni commerciali
+title: Operazioni Commerce
 description: Scopri cosa serve per avere una strategia operativa di successo per la tua attività di e-commerce.
 exl-id: 21123987-0508-4d52-8af4-837b7a3ba1cb
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# Operazioni commerciali
+# Operazioni Commerce
 
-Le operazioni commerciali riguardano la centralizzazione delle operazioni back-end in modo che funzionino in modo più intelligente, rapido ed efficiente. Una strategia operativa di successo richiede una solida infrastruttura IT in grado di supportare le operazioni di e-commerce end-to-end, il catalogo dei prodotti, la gestione dell&#39;inventario, il pagamento e la spedizione. Le operazioni di e-commerce si basano su diversi elementi, ad esempio una vetrina facile da usare, una varietà di prodotti, la corretta gestione dell’inventario, le promozioni, il pagamento semplice e i metodi di spedizione.
+Le operazioni di Commerce riguardano la centralizzazione delle operazioni back-end, in modo che funzionino in modo più intelligente, rapido ed efficiente. Una strategia operativa di successo richiede una solida infrastruttura IT in grado di supportare le operazioni di e-commerce end-to-end, il catalogo dei prodotti, la gestione dell&#39;inventario, il pagamento e la spedizione. Le operazioni di e-commerce si basano su diversi elementi, ad esempio una vetrina facile da usare, una varietà di prodotti, la corretta gestione dell’inventario, le promozioni, il pagamento semplice e i metodi di spedizione.
 
 ## Perché la strategia operativa di e-commerce è importante?
 

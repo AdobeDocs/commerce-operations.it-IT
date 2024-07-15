@@ -79,7 +79,7 @@ Lo scopo del workshop di progettazione è quello di creare un brainstorming su c
 - Imposta un obiettivo
 - Brainstorming sulle esigenze
 - Definire i risultati
-- Sketch Sketch Sketch!
+- Sketch Sketch Sketch
 - Creare team all’interno del lato client per ricevere feedback sul lavoro degli altri
 - Annota i Mi piace e Non mi piace
 - Tempo di tracciamento

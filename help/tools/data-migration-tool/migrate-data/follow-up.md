@@ -5,20 +5,20 @@ exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
 
 # Follow-up sulla migrazione dei dati
 
-Alcuni comportamenti e logiche del Magento 1 sono stati implementati diversamente nel Magento 2. Il [!DNL Data Migration Tool] se ne prende cura. Ci sono alcuni aspetti relativi alla migrazione di cui dovresti essere a conoscenza e a volte devi adottare misure minori per garantire il corretto funzionamento di alcune funzionalità dopo la migrazione.
+Alcuni comportamenti e logiche del Magento 1 sono stati implementati diversamente nel Magento 2. [!DNL Data Migration Tool] se ne occupa. Ci sono alcuni aspetti relativi alla migrazione di cui dovresti essere a conoscenza e a volte devi adottare misure minori per garantire il corretto funzionamento di alcune funzionalità dopo la migrazione.
 
 ## Informazioni
 
 ### Divisione del database non supportata
 
-Il [!DNL Data Migration Tool] non supporta la suddivisione dei database.
+[!DNL Data Migration Tool] non supporta database suddivisi.
 
 ### Prezzi gruppo convertiti in prezzi livello
 
@@ -30,23 +30,23 @@ Numeri di riferimento per Ordini, Fatture, Spedizioni, Note di credito e RMA ese
 
 ## Passaggi
 
-### Risparmiare segmenti cliente [Solo Adobe Commerce]
+### Salva nuovamente segmenti cliente [solo Adobe Commerce]
 
 Dopo la migrazione, i segmenti dei clienti devono essere salvati nuovamente dal pannello di amministrazione per essere operativi.
 
 ### Configurare il fuso orario
 
-Lo strumento non migra le impostazioni del fuso orario, pertanto devi configurare manualmente il fuso orario dopo la migrazione in **Negozi** > **Configurazione** > **Opzioni internazionali** > **Fuso orario**.
+Lo strumento non esegue la migrazione delle impostazioni del fuso orario, pertanto devi configurare manualmente il fuso orario dopo la migrazione in **Archivi** > **Configurazione** > **Opzioni internazionali** > **Fuso orario**.
 
-Per impostazione predefinita, il Magento memorizza i dati temporali nel fuso UTC-0 nel database e li visualizza in base alle impostazioni correnti del fuso orario. Se i dati temporali sono già stati salvati nel database in una zona diversa da UTC-0, è necessario convertire l&#39;ora esistente in UTC-0 utilizzando [!DNL Data Migration Tool]di `\Migration\Handler\Timezone` handler.
+Per impostazione predefinita, il Magento memorizza i dati temporali nel fuso UTC-0 nel database e li visualizza in base alle impostazioni correnti del fuso orario. Se i dati temporali sono già stati salvati nel database in una zona diversa da UTC-0, è necessario convertire l&#39;ora esistente in UTC-0 utilizzando il gestore `\Migration\Handler\Timezone` di [!DNL Data Migration Tool].
 
 Nell’esempio seguente, il Magento 1 ha erroneamente risparmiato tempo nella zona UTC-7 del database (ad esempio, a causa di un’estensione di terze parti errata). Per convertire correttamente l’ora di creazione dell’account cliente nella zona UTC-0 al momento della migrazione, effettua le seguenti operazioni:
 
-1. Copia il `map-customer.xml.dist` file di configurazione dalla directory appropriata del file [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`) nel `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` file.
+1. Copiare il file di configurazione `map-customer.xml.dist` dalla directory appropriata di [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`) nel file `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml`.
 
-1. Aggiornare il `<customer_map_file>` nodo in `config.xml` e rimuovere `.dist` estensione da `map-customer.xml.dist`
+1. Aggiorna il nodo `<customer_map_file>` in `config.xml` e rimuovi l&#39;estensione `.dist` da `map-customer.xml.dist`
 
-1. Aggiungi la seguente regola al `map-customer.xml` file:
+1. Aggiungi la seguente regola al file `map-customer.xml`:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

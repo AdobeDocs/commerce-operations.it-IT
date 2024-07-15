@@ -19,8 +19,8 @@ Questo può essere un approccio di successo. Tuttavia, una raccomandazione che a
 
 ## Esempio di timeline tipico
 
-![Esempio tipico di timeline di implementazione per e-commerce](../../assets/playbooks/timeline-example.svg)
+![Esempio tipico di timeline di implementazione per commerce](../../assets/playbooks/timeline-example.svg)
 
 ## Attività timeline di esempio
 
-![Attività timeline di esempio per l’implementazione in Commerce](../../assets/playbooks/timeline-activities-example.svg)
+![Attività timeline di implementazione per e-commerce di esempio](../../assets/playbooks/timeline-activities-example.svg)

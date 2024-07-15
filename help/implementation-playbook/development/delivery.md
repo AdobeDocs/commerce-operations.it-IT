@@ -29,7 +29,7 @@ Continuous Delivery (CD) distribuisce immediatamente il codice sorgente al serve
 
 Quando la build viene eseguita sul sistema di build, non solo riduce al minimo i tempi di inattività dell’implementazione, ma riduce anche il carico sul server. Di conseguenza, le attività di controllo qualità che si verificano sul server sono meno interessate.
 
-![Infografica della consegna continua](../../assets/playbooks/cicd.svg)
+![Infografica di consegna continua](../../assets/playbooks/cicd.svg)
 
 Il processo CI/CD nel diagramma precedente può essere descritto brevemente come segue:
 

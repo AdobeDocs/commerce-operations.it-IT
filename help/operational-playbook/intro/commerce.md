@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Adobe Commerce è la piattaforma leader per l’innovazione del commercio aperto. Ogni anno, Adobe Commerce gestisce oltre 100 miliardi di dollari in volume lordo di merci. Adobe Commerce offre ai clienti la possibilità di creare esperienze di acquisto uniche e coinvolgenti, funzionalità pronte all’uso e la possibilità illimitata di personalizzare, un’architettura headless flessibile e integrazioni senza soluzione di continuità di terze parti.
 
-Esistono due versioni di [!DNL Commerce]:
+Sono disponibili due versioni di [!DNL Commerce]:
 
-_Magento Open Source_ è la versione gratuita, precedentemente denominata Community di Magento. Puoi scaricare, personalizzare ed eseguire la piattaforma sul tuo server o provider di hosting di tua scelta.
+_Magento Open Source_ è la versione gratuita, precedentemente denominata Comunità Magento. Puoi scaricare, personalizzare ed eseguire la piattaforma sul tuo server o provider di hosting di tua scelta.
 
 La maggior parte dei commercianti usa il Magento Open Source a causa del basso costo e della natura aperta. Per gli sviluppatori, non ha molta importanza se sviluppano su Magento Open Source o Adobe Commerce. Tuttavia, Adobe Commerce dispone di più funzioni integrate che possono essere utilizzate con facilità.
 

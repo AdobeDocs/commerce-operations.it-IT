@@ -21,26 +21,26 @@ Aurora è un server MySQL ad alte prestazioni e completamente conforme ospitato 
 
 L’utilizzo di Aurora come database è semplice come specificare il database nella normale configurazione di configurazione di Adobe Commerce, utilizzando il connettore di database predefinito.
 
-Durante l’esecuzione `bin/magento setup:install`, utilizza le informazioni di Aurora in `db-` campi:
+Durante l&#39;esecuzione di `bin/magento setup:install`, utilizzare le informazioni di Aurora nei campi `db-`:
 
 ```bash
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
-Il `db-host` valore è l’URL di Aurora con `https://` e finale `:portnumber`  è stato rimosso.
+Il valore `db-host` è l&#39;URL di Aurora con `https://` e `:portnumber` finale rimossi.
 
 ## Impostazione di una connessione al database remoto
 
 >[!NOTE]
 >
->Si tratta di un argomento avanzato che deve essere utilizzato solo da un amministratore di rete o da un amministratore di database esperto. Devi avere `root` accesso al file system e accedere a MySQL come `root`.
+>Si tratta di un argomento avanzato che deve essere utilizzato solo da un amministratore di rete o da un amministratore di database esperto. È necessario disporre dell&#39;accesso `root` al file system e accedere a MySQL come `root`.
 
 ### Prerequisiti
 
 Prima di iniziare, è necessario:
 
-* [Installa server MySQL](mysql.md) sul server di database.
-* [Creare un’istanza di database](mysql.md#configuring-the-database-instance) sul server di database.
+* [Installare il server MySQL](mysql.md) nel server di database.
+* [Creare un&#39;istanza di database](mysql.md#configuring-the-database-instance) nel server di database.
 * Installa il client MySQL nel nodo Web di Adobe Commerce. Per ulteriori informazioni, consultare la documentazione MySQL.
 
 ### Elevata disponibilità
@@ -50,7 +50,7 @@ Utilizzare le linee guida seguenti per configurare le connessioni al database re
 * È necessario configurare una connessione per ogni nodo del server Web.
 * In genere si configura una connessione al database load balancer; tuttavia, il clustering del database può essere complesso e la configurazione dipende dall&#39;utente. L&#39;Adobe non fornisce raccomandazioni specifiche per il clustering del database.
 
-  Per ulteriori informazioni, consulta [Documentazione di MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  Per ulteriori informazioni, vedere la [documentazione MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### Risoluzione dei problemi di connessione
 
@@ -60,7 +60,7 @@ In caso di problemi di connessione a uno degli host, effettua prima il ping dell
 
 Per creare una connessione remota:
 
-1. Sul server di database, come utente con `root` , aprire il file di configurazione MySQL.
+1. Nel server di database, come utente con privilegi `root`, aprire il file di configurazione MySQL.
 
    Per individuarlo, immetti il seguente comando:
 
@@ -77,19 +77,19 @@ Per creare una connessione remota:
 
    >[!NOTE]
    >
-   >Su Ubuntu 16, il percorso è tipicamente `/etc/mysql/mysql.conf.d/mysqld.cnf`.
+   >Su Ubuntu 16, il percorso è in genere `/etc/mysql/mysql.conf.d/mysqld.cnf`.
 
-1. Cerca nel file di configurazione `bind-address`.
+1. Cerca `bind-address` nel file di configurazione.
 
    Se esiste, modificare il valore come indicato di seguito.
 
-   Se non esiste, aggiungilo al `[mysqld]` sezione.
+   Se non esiste, aggiungerlo alla sezione `[mysqld]`.
 
    ```conf
    bind-address = <ip address of your web node>
    ```
 
-   Consulta [Documentazione di MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), soprattutto se si dispone di un server web cluster.
+   Consulta la [documentazione di MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), soprattutto se disponi di un server Web cluster.
 
 1. Salva le modifiche nel file di configurazione e chiudi l’editor di testo.
 1. Riavviare il servizio MySQL:
@@ -100,18 +100,18 @@ Per creare una connessione remota:
 
    >[!NOTE]
    >
-   >Se MySQL non viene avviato correttamente, cercare l&#39;origine del problema in syslog. Risolvi il problema utilizzando [Documentazione di MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) o da un’altra fonte autorevole.
+   >Se MySQL non viene avviato correttamente, cercare l&#39;origine del problema in syslog. Risolvere il problema utilizzando la [documentazione MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) o un&#39;altra origine autorevole.
 
 ## Concedere l’accesso a un utente del database
 
 Per consentire al nodo Web di connettersi al server di database, è necessario concedere a un nodo Web l&#39;accesso utente al database sul server remoto.
 
-In questo esempio viene concesso il `root` accesso completo dell&#39;utente al database sull&#39;host remoto.
+Questo esempio concede all&#39;utente del database `root` l&#39;accesso completo al database sull&#39;host remoto.
 
 Per concedere l&#39;accesso a un utente del database:
 
 1. Accedere al server del database.
-1. Connessione al database MySQL come `root` utente.
+1. Connetti al database MySQL come utente `root`.
 1. Immetti il comando seguente:
 
    ```shell
@@ -155,8 +155,8 @@ Se il server Web è in cluster, immettere il comando su ciascun host del server 
 
 Quando installi Adobe Commerce, devi specificare quanto segue:
 
-* L’URL di base (noto anche come *indirizzo store*) specifica il nome host o l’indirizzo IP del *nodo web*
-* L&#39;host del database è *server di database remoto* Indirizzo IP (o load balancer se il server di database è in cluster)
-* Database username è il *nodo web locale* utente del database a cui è stato concesso l&#39;accesso
+* L&#39;URL di base (detto anche *indirizzo archivio*) specifica il nome host o l&#39;indirizzo IP del *nodo Web*
+* L&#39;host del database è l&#39;*indirizzo IP del server di database remoto* (o il load balancer se il server di database è in cluster)
+* Il nome utente del database è l&#39;*utente del database del nodo Web locale* a cui hai dato accesso
 * La password del database è la password dell&#39;utente del nodo Web locale
 * Nome database è il nome del database sul server remoto

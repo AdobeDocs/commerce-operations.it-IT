@@ -12,9 +12,9 @@ ht-degree: 3%
 
 # Gestire moduli ed estensioni
 
-Aiutando gli sviluppatori ad aggiornare moduli ed estensioni specificandone le versioni in Adobe Commerce `composer.json` file. Se non sei uno sviluppatore, consulta [Eseguire un aggiornamento](../implementation/perform-upgrade.md).
+Gli sviluppatori che collaborano aggiornano moduli ed estensioni specificando le loro versioni nel file Adobe Commerce `composer.json`. Se non sei uno sviluppatore che contribuisce, consulta [Eseguire un aggiornamento](../implementation/perform-upgrade.md).
 
-Puoi aggiungere una `require` sezione al `composer.json` o puoi utilizzare il `composer require` comando come segue:
+È possibile aggiungere una sezione `require` al file `composer.json` oppure utilizzare il comando `composer require` come segue:
 
 {{$include /help/_includes/server-login.md}}
 
@@ -34,7 +34,7 @@ Ad esempio:
 composer show --all example/module
 ```
 
-## Utilizza il `composer require` comando
+## Usa il comando `composer require`
 
 Utilizzo comando:
 
@@ -50,11 +50,11 @@ composer require example/module:1.0.0
 
 Attendere. Aggiornamento delle dipendenze in corso e installazione del modulo.
 
-## Aggiungi un `require` al file compositore.json
+## Aggiungi una sezione `require` al file compositore.json
 
 1. Apri `composer.json` in un editor di testo.
 
-1. Aggiungi un `require` sezione.
+1. Aggiungi una sezione `require`.
 
    ```json
    "require": {
@@ -63,9 +63,9 @@ Attendere. Aggiornamento delle dipendenze in corso e installazione del modulo.
    }
    ```
 
-1. Salva le modifiche in `composer.json` e uscire dall&#39;editor di testo.
+1. Salvare le modifiche apportate al file `composer.json` e uscire dall&#39;editor di testo.
 
-1. Risolvere le dipendenze e scrivere versioni esatte in `composer.lock` file.
+1. Risolvere le dipendenze e scrivere versioni esatte nel file `composer.lock`.
 
    ```bash
    composer update

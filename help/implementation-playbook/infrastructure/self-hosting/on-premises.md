@@ -17,7 +17,7 @@ Le motivazioni per avviare una nuova implementazione Adobe Commerce o per sposta
 
 Il diagramma seguente mostra l’architettura di riferimento per l’implementazione di Adobe Commerce on-premise sull’infrastruttura AWS. Altri fornitori di servizi cloud come Azure, Google Cloud e Alibaba Cloud condividono una progettazione dell’infrastruttura e servizi omologhi simili.
 
-![Diagramma che mostra l’infrastruttura Adobe Commerce con hosting autonomo sui servizi cloud di terze parti](/help/assets/playbooks/on-premises-infrastructure.svg)
+![Diagramma che mostra l&#39;infrastruttura Adobe Commerce con hosting autonomo sui servizi cloud di terze parti](/help/assets/playbooks/on-premises-infrastructure.svg)
 
 Approfondiamo i ruoli e le funzioni di ogni aspetto dell&#39;infrastruttura mostrata sopra:
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Perso? Hai bisogno di aiuto? Prova il nostro [Installazione rapida](composer.md) o [Installazione collaboratore](https://developer.adobe.com/commerce/contributor/guides/install/) guide.
+>Perso? Hai bisogno di aiuto? Prova le [guide all&#39;installazione rapida](composer.md) o [all&#39;installazione collaboratore](https://developer.adobe.com/commerce/contributor/guides/install/).
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Interfaccia della riga di comando (CLI)
 
-Adobe Commerce dispone di un’unica interfaccia della riga di comando per le attività di installazione e configurazione: `<magento_root>/bin/magento`. L’interfaccia esegue più attività, tra cui:
+Adobe Commerce dispone di un&#39;unica interfaccia della riga di comando per le attività di installazione e configurazione: `<magento_root>/bin/magento`. L’interfaccia esegue più attività, tra cui:
 
 * Installazione (e attività correlate, come la creazione o l’aggiornamento dello schema del database e la creazione della configurazione di distribuzione).
 * Cancellazione della cache.
@@ -38,7 +38,7 @@ Altre prestazioni:
 * La CLI è estensibile in modo che sviluppatori di terze parti possano collegarla. Questo ha il vantaggio aggiuntivo di eliminare la curva di apprendimento degli utenti.
 * I comandi per i moduli disattivati non vengono visualizzati.
 
-In questo argomento viene illustrata l&#39;installazione del software Adobe Commerce mediante CLI. Per informazioni sulla configurazione, vedi [Guida alla configurazione](../configuration/overview.md).
+In questo argomento viene illustrata l&#39;installazione del software Adobe Commerce mediante CLI. Per informazioni sulla configurazione, vedere la [Guida alla configurazione](../configuration/overview.md).
 
 Il programma di installazione può essere eseguito più volte, se necessario, in modo da:
 
@@ -55,17 +55,17 @@ Prima di iniziare, completa i passaggi seguenti:
 
 * Verificare che il sistema soddisfi i requisiti descritti in [requisiti di sistema](system-requirements.md).
 
-* Completa tutto [prerequisito](prerequisites/overview.md) attività.
+* Completa tutte le [attività prerequisite](prerequisites/overview.md).
 
-* Completare i primi passaggi di installazione. Consulta [percorso di installazione o aggiornamento](overview.md).
+* Completare i primi passaggi di installazione. Vedi [il tuo percorso di installazione o aggiornamento](overview.md).
 
-* Dopo aver effettuato l&#39;accesso al server applicazioni, [passa al proprietario del file system](prerequisites/file-system/overview.md).
+* Dopo aver effettuato l&#39;accesso al server applicazioni, [passare al proprietario del file system](prerequisites/file-system/overview.md).
 
-* Rivedi [installazione rapida](composer.md) panoramica.
+* Rivedi la panoramica di [installazione rapida](composer.md).
 
 >[!NOTE]
 >
->È necessario installare Adobe Commerce da `bin` sottodirectory.
+>È necessario installare Adobe Commerce dalla sottodirectory `bin`.
 
 È possibile eseguire il programma di installazione più volte con diverse opzioni per completare attività di installazione come le seguenti:
 
@@ -77,9 +77,9 @@ Prima di iniziare, completa i passaggi seguenti:
 
 >[!NOTE]
 >
->Per impostazione predefinita, il programma di installazione non sovrascrive il database se si installa il software nella stessa istanza di database. È possibile utilizzare l’ `cleanup-database` per modificare questo comportamento.
+>Per impostazione predefinita, il programma di installazione non sovrascrive il database se si installa il software nella stessa istanza di database. È possibile utilizzare il parametro facoltativo `cleanup-database` per modificare questo comportamento.
 
-Vedi anche [Aggiornare, reinstallare, disinstallare](tutorials/uninstall.md).
+Vedere anche [Aggiorna, reinstalla, disinstalla](tutorials/uninstall.md).
 
 ### Installazione sicura
 
@@ -97,7 +97,7 @@ Vedi anche [Aggiornare, reinstallare, disinstallare](tutorials/uninstall.md).
 
 >[!NOTE]
 >
->Se durante l&#39;esecuzione di questi comandi viene visualizzato un errore, verificare di aver aggiornato le dipendenze di installazione come descritto in [Aggiornare le dipendenze di installazione](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+>Se durante l&#39;esecuzione di questi comandi viene visualizzato un errore, verificare di aver aggiornato le dipendenze di installazione come descritto in [Aggiorna dipendenze di installazione](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
 
 ## Installa dalla riga di comando
 
@@ -107,7 +107,7 @@ Il comando install utilizza il seguente formato:
 bin/magento setup:install --<option>=<value> ... --<option>=<value>
 ```
 
-Nelle tabelle seguenti vengono descritti i nomi e i valori delle opzioni di installazione. Ad esempio, i comandi di installazione, vedere [Esempi di installazioni localhost](#sample-localhost-installations).
+Nelle tabelle seguenti vengono descritti i nomi e i valori delle opzioni di installazione. Per i comandi di installazione, vedere [Esempi di installazioni localhost](#sample-localhost-installations).
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ Nelle tabelle seguenti vengono descritti i nomi e i valori delle opzioni di inst
 
 Le opzioni seguenti specificano le informazioni utente e le credenziali per l’utente amministratore.
 
-Puoi creare l’utente amministratore durante o dopo l’installazione. Se crei l’utente durante l’installazione, sono necessarie tutte le variabili delle credenziali amministratore. Consulta [Esempi di installazioni localhost](#sample-localhost-installations).
+Puoi creare l’utente amministratore durante o dopo l’installazione. Se crei l’utente durante l’installazione, sono necessarie tutte le variabili delle credenziali amministratore. Vedi [Esempi di installazioni localhost](#sample-localhost-installations).
 
 Nelle tabelle seguenti sono disponibili molti parametri di installazione, ma non tutti. Per un elenco completo, vedere [Riferimento agli strumenti della riga di comando](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html).
 
@@ -133,9 +133,9 @@ Nelle tabelle seguenti sono disponibili molti parametri di installazione, ma non
 
 | Nome | Valore | Obbligatorio |
 |--- |--- |--- |
-| `--base-url` | URL di base da utilizzare per accedere all’amministratore e alla vetrina in uno dei seguenti formati:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** Lo schema (http:// o https://) e una barra finale sono entrambi obbligatori.<br><br>`<your install dir>` è il percorso relativo alla directory principale dei documenti in cui installare il software Adobe Commerce. A seconda della configurazione del server web e degli host virtuali, il percorso potrebbe essere magento2 o vuoto.<br><br>Per accedere ad Adobe Commerce o MagenAdobe Commerceutilizzare `http://127.0.0.1/<your install dir>/` o `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` che rappresenta un URL di base definito da un&#39;impostazione host virtuale o da un ambiente di virtualizzazione come Docker. Ad esempio, se imposti un host virtuale con il nome host `magento.example.com`, è possibile installare il software con `--base-url={{base_url}}` e accedere all’amministratore con un URL come `http://magento.example.com/admin`. | Sì |
-| `--backend-frontname` | URI (Uniform Resource Identifier) per accedere all&#39;amministratore. È possibile omettere questo parametro per consentire all&#39;applicazione di generare un URI casuale con il seguente pattern <code>admin_jkhgdfq</code>.<br><br>È consigliabile utilizzare un URI casuale a scopo di sicurezza. Un URI casuale è più difficile da sfruttare per gli hacker o per il software dannoso.<br><br>L’URI viene visualizzato alla fine dell’installazione. Puoi visualizzarlo in un secondo momento utilizzando `bin/magento info:adminuri` comando.<br><br>Se scegli di immettere un valore, ti consigliamo di non utilizzare una parola comune come admin, backend. L’URI amministratore può contenere valori alfanumerici e il carattere di sottolineatura (`_`) solo. | No |
-| `--db-host` | Usare una delle seguenti opzioni:<br><br>: nome host o indirizzo IP completo del server di database.<br><br>- `localhost` (impostazione predefinita) oppure `127.0.0.1` se il server di database si trova sullo stesso host del server Web.localhost significa che la libreria client MySQL utilizza socket UNIX per connettersi al database. `127.0.0.1` fa in modo che la libreria client utilizzi il protocollo TCP. Per ulteriori informazioni sui socket, vedere [Documentazione PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** Facoltativamente, puoi specificare la porta del server di database nel suo nome host, ad esempio www.example.com:9000 | Sì |
+| `--base-url` | URL di base da utilizzare per accedere all&#39;amministratore e alla vetrina in uno dei seguenti formati:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** lo schema (http:// o https://) e una barra finale sono entrambi obbligatori.<br><br>`<your install dir>` è il percorso relativo alla directory principale dei documenti in cui installare il software Adobe Commerce. A seconda della configurazione del server web e degli host virtuali, il percorso potrebbe essere magento2 o vuoto.<br><br>Per accedere ad Adobe Commerce o MagenAdobe Commerceutilizzare `http://127.0.0.1/<your install dir>/` o `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` che rappresenta un URL di base definito da un&#39;impostazione host virtuale o da un ambiente di virtualizzazione come Docker. Se ad esempio si configura un host virtuale con il nome host `magento.example.com`, è possibile installare il software con `--base-url={{base_url}}` e accedere all&#39;amministratore con un URL come `http://magento.example.com/admin`. | Sì |
+| `--backend-frontname` | URI (Uniform Resource Identifier) per accedere all&#39;amministratore. È possibile omettere questo parametro per consentire all&#39;applicazione di generare un URI casuale con il seguente pattern <code>admin_jkhgdfq</code>.<br><br>È consigliabile utilizzare un URI casuale per motivi di sicurezza. Un URI casuale è più difficile da sfruttare per gli hacker o per il software dannoso.<br><br>L&#39;URI viene visualizzato alla fine dell&#39;installazione. È possibile visualizzarlo in un secondo momento utilizzando il comando `bin/magento info:adminuri`.<br><br>Se scegli di immettere un valore, ti consigliamo di non usare una parola comune come admin, backend. L&#39;URI amministratore può contenere solo valori alfanumerici e il carattere di sottolineatura (`_`). | No |
+| `--db-host` | Utilizzare uno dei seguenti elementi:<br><br>- Nome host o indirizzo IP completo del server di database.<br><br>- `localhost` (impostazione predefinita) o `127.0.0.1` se il server di database si trova sullo stesso host del server Web.localhost significa che la libreria client MySQL utilizza socket UNIX per connettersi al database. `127.0.0.1` fa in modo che la libreria client utilizzi il protocollo TCP. Per ulteriori informazioni sui socket, consulta la [documentazione PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** è possibile specificare la porta del server di database nel nome host, ad esempio www.example.com:9000 | Sì |
 | `--db-name` | Nome dell&#39;istanza di database in cui si desidera installare le tabelle di database.<br><br>Il valore predefinito è `magento2`. | Sì |
 | `--db-user` | Nome utente del proprietario dell&#39;istanza di database.<br><br>Il valore predefinito è `root`. | Sì |
 | `--db-password` | Password del proprietario dell&#39;istanza di database. | Sì |
@@ -143,15 +143,15 @@ Nelle tabelle seguenti sono disponibili molti parametri di installazione, ma non
 | `--db-ssl-key` | Percorso della chiave client. | No |
 | `--db-ssl-cert` | Percorso del certificato client. | No |
 | `--db-ssl-ca` | Percorso del certificato del server. | No |
-| `--language` | Codice lingua da utilizzare nell’amministrazione e nella vetrina. Se non lo hai già fatto, puoi visualizzare l’elenco dei codici lingua immettendo `bin/magento info:language:list` dalla directory bin.) | No |
-| `--currency` | Valuta predefinita da utilizzare nella vetrina. (Se non lo hai già fatto, puoi visualizzare l’elenco delle valute inserendo `bin/magento info:currency:list` dalla directory bin.) | No |
-| `--timezone` | Fuso orario predefinito da utilizzare in Admin e storefront. (Se non lo hai già fatto, puoi visualizzare l’elenco dei fusi orari inserendo `bin/magento info:timezone:list` dal `bin/` directory.) | No |
-| `--use-rewrites` | `1` significa che utilizzi le riscritture del server web per i collegamenti generati nella vetrina e in Admin.<br><br>`0` disabilita l&#39;utilizzo delle riscritture del server web. Questa è l&#39;impostazione predefinita. | No |
-| `--use-secure` | `1` consente l’utilizzo di Secure Sockets Layer (SSL) negli URL della vetrina. Prima di selezionare questa opzione, assicurati che il server web supporti SSL.<br><br>`0` disabilita l&#39;utilizzo di SSL. In questo caso, anche tutte le altre opzioni URL protetto sono impostate su 0. Questa è l&#39;impostazione predefinita. | No |
-| `--base-url-secure` | URL di base sicuro da utilizzare per accedere all’amministratore e alla vetrina nel seguente formato: `http[s]://<host or ip>/<your install dir>/` | No |
-| `--use-secure-admin` | `1` significa che utilizzi SSL per accedere all’Admin. Prima di selezionare questa opzione, assicurati che il server web supporti SSL.<br><br>`0` significa che non utilizzi SSL con l’amministratore. Questa è l&#39;impostazione predefinita. | No |
+| `--language` | Codice lingua da utilizzare nell’amministrazione e nella vetrina. Se non lo hai già fatto, puoi visualizzare l&#39;elenco dei codici di lingua immettendo `bin/magento info:language:list` dalla directory bin. | No |
+| `--currency` | Valuta predefinita da utilizzare nella vetrina. Se non lo hai già fatto, puoi visualizzare l&#39;elenco delle valute immettendo `bin/magento info:currency:list` dalla directory bin. | No |
+| `--timezone` | Fuso orario predefinito da utilizzare in Admin e storefront. Se non lo hai già fatto, puoi visualizzare l&#39;elenco dei fusi orari immettendo `bin/magento info:timezone:list` dalla directory `bin/`. | No |
+| `--use-rewrites` | `1` significa che si utilizza il server Web per riscrivere i collegamenti generati nella vetrina e in Amministrazione.<br><br>`0` disabilita l&#39;utilizzo delle riscritture del server Web. Questa è l&#39;impostazione predefinita. | No |
+| `--use-secure` | `1` consente l&#39;utilizzo di Secure Sockets Layer (SSL) negli URL della vetrina. Prima di selezionare questa opzione, assicurati che il server web supporti SSL.<br><br>`0` disabilita l&#39;utilizzo di SSL. In questo caso, anche tutte le altre opzioni URL protetto sono impostate su 0. Questa è l&#39;impostazione predefinita. | No |
+| `--base-url-secure` | URL di base sicuro da utilizzare per accedere all&#39;amministratore e alla vetrina nel seguente formato: `http[s]://<host or ip>/<your install dir>/` | No |
+| `--use-secure-admin` | `1` significa che si utilizza SSL per accedere all&#39;amministratore. Prima di selezionare questa opzione, assicurati che il server web supporti SSL.<br><br>`0` significa che non utilizzi SSL con l&#39;amministratore. Questa è l&#39;impostazione predefinita. | No |
 | `--admin-use-security-key` | 1 fa in modo che l’applicazione utilizzi un valore chiave generato in modo casuale per accedere alle pagine in Admin e nei moduli. Questi valori chiave aiutano a prevenire attacchi di tipo cross-site script forgery. Questa è l&#39;impostazione predefinita.<br><br>`0` disabilita l&#39;utilizzo della chiave. | No |
-| `--session-save` | Usare una delle seguenti opzioni:<br><br>- `db` per memorizzare i dati della sessione nel database. Se si dispone di un database in cluster, scegliere l&#39;archiviazione del database. In caso contrario, l&#39;archiviazione basata su file potrebbe non offrire molti vantaggi.<br><br>- `files` per memorizzare i dati della sessione nel file system. L&#39;archiviazione delle sessioni basata su file è appropriata a meno che l&#39;accesso al file system non sia lento, che si disponga di un database cluster o che si desideri archiviare i dati della sessione in Redis.<br><br>- `redis` per memorizzare i dati della sessione in Redis. Se utilizzi Redis per il caching predefinito o delle pagine, Redis deve essere già installato. Per ulteriori informazioni sulla configurazione del supporto per Redis, consulta Utilizzare Redis per l’archiviazione delle sessioni. | No |
+| `--session-save` | Utilizzare uno dei seguenti elementi:<br><br>- `db` per archiviare i dati della sessione nel database. Se si dispone di un database in cluster, scegliere l&#39;archiviazione del database. In caso contrario, l&#39;archiviazione basata su file potrebbe non offrire molti vantaggi.<br><br>- `files` per archiviare i dati della sessione nel file system. L&#39;archiviazione delle sessioni basata su file è appropriata a meno che l&#39;accesso al file system non sia lento, che si disponga di un database cluster o che si desideri archiviare i dati della sessione in Redis.<br><br>- `redis` per archiviare i dati della sessione in Redis. Se utilizzi Redis per il caching predefinito o delle pagine, Redis deve essere già installato. Per ulteriori informazioni sulla configurazione del supporto per Redis, consulta Utilizzare Redis per l’archiviazione delle sessioni. | No |
 | `--key` | Se disponibile, specificare una chiave per crittografare i dati sensibili nel database. Se non ne hai uno, l’applicazione ne genera uno per te. | Sì |
 | `--cleanup-database` | Per eliminare le tabelle di database prima di installare Adobe Commerce, specifica questo parametro senza un valore. In caso contrario, il database viene lasciato intatto. | No |
 | `--db-init-statements` | Parametro di configurazione MySQL avanzato. Utilizza le istruzioni di inizializzazione del database da eseguire durante la connessione al database MySQL. Consultate un riferimento simile a questo prima di impostare qualsiasi valore.<br><br>Il valore predefinito è `SET NAMES utf8;`. | No |
@@ -181,22 +181,22 @@ Nelle tabelle seguenti sono disponibili molti parametri di installazione, ma non
 
 | Nome | Valore | Obbligatorio |
 |--- |--- |--- |
-| `--amqp-host` | Non utilizzare il `--amqp` a meno che non sia già stata impostata un&#39;installazione di [!DNL RabbitMQ]. Consulta [!DNL RabbitMQ] installazione per ulteriori informazioni sull&#39;installazione e la configurazione [!DNL RabbitMQ].<br><br>Il nome host in cui [!DNL RabbitMQ] è installato. | No |
-| `--amqp-port` | Porta a cui connettersi [!DNL RabbitMQ]. Il valore predefinito è 5672. | No |
+| `--amqp-host` | Non utilizzare le opzioni `--amqp` a meno che non sia già stata impostata un&#39;installazione di [!DNL RabbitMQ]. Per ulteriori informazioni sull&#39;installazione e la configurazione di [!DNL RabbitMQ], vedere Installazione di [!DNL RabbitMQ].<br><br>Il nome host in cui è installato [!DNL RabbitMQ]. | No |
+| `--amqp-port` | Porta da utilizzare per la connessione a [!DNL RabbitMQ]. Il valore predefinito è 5672. | No |
 | `--amqp-user` | Nome utente per la connessione a [!DNL RabbitMQ]. Non utilizzare l&#39;utente predefinito `guest`. | No |
 | `--amqp-password` | Password per la connessione a [!DNL RabbitMQ]. Non utilizzare la password predefinita `guest`. | No |
 | `--amqp-virtualhost` | Host virtuale per la connessione a [!DNL RabbitMQ]. Il valore predefinito è `/`. | No |
-| `--amqp-ssl` | Indica se connettersi a [!DNL RabbitMQ]. Il valore predefinito è `false`. Consulta [!DNL RabbitMQ] per informazioni sulla configurazione di SSL per [!DNL RabbitMQ]. | No |
+| `--amqp-ssl` | Indica se connettersi a [!DNL RabbitMQ]. Il valore predefinito è `false`. Per informazioni sulla configurazione di SSL per [!DNL RabbitMQ], vedere [!DNL RabbitMQ]. | No |
 | `--consumers-wait-for-messages` | I consumatori devono attendere un messaggio dalla coda? 1 - Sì, 0 - No | No |
 
-**Opzioni di configurazione del blocco:**
+**Blocca opzioni di configurazione:**
 
 | Nome | Valore | Obbligatorio |
 |--- |--- |--- |
 | `--lock-provider` | Blocca nome provider.<br><br>Provider di blocchi disponibili: `db`, `zookeeper`, `file`.<br><br>Provider di blocchi predefinito: `db` | No |
-| `--lock-db-prefix` | Il prefisso db specifico per evitare conflitti di blocco quando si utilizza `db` blocca provider.<br><br>Il valore predefinito: `NULL` | No |
-| `--lock-zookeeper-host` | Host e porta per la connessione al cluster Zookeeper quando si utilizza `zookeeper` blocca provider.<br><br>Ad esempio: `127.0.0.1:2181` | Sì, se si imposta `--lock-provider=zookeeper` |
-| `--lock-zookeeper-path` | Percorso in cui Zookeeper salva i blocchi.<br><br>Il percorso predefinito è: `/magento/locks` | No |
+| `--lock-db-prefix` | Prefisso db specifico per evitare conflitti di blocco quando si utilizza il provider di blocchi `db`.<br><br>Valore predefinito: `NULL` | No |
+| `--lock-zookeeper-host` | Host e porta per la connessione al cluster Zookeeper quando si utilizza il provider di blocchi `zookeeper`.<br><br>Esempio: `127.0.0.1:2181` | Sì, se si imposta `--lock-provider=zookeeper` |
+| `--lock-zookeeper-path` | Percorso in cui Zookeeper salva i blocchi.<br><br>Percorso predefinito: `/magento/locks` | No |
 | `--lock-file-path` | Percorso in cui vengono salvati i blocchi di file. | Sì, se si imposta `--lock-provider=file` |
 
 **Opzioni di configurazione consumer:**
@@ -205,7 +205,7 @@ Nelle tabelle seguenti sono disponibili molti parametri di installazione, ma non
 
 >[!NOTE]
 >
->Per abilitare o disabilitare i moduli dopo l’installazione di Adobe Commerce, consulta [Abilitare e disabilitare i moduli](tutorials/manage-modules.md).
+>Per attivare o disattivare i moduli dopo l&#39;installazione di Adobe Commerce, vedere [Attivare e disattivare i moduli](tutorials/manage-modules.md).
 
 **Dati sensibili:**
 
@@ -219,23 +219,23 @@ Gli esempi seguenti mostrano i comandi per installare Adobe Commerce localmente 
 
 L’esempio seguente installa Adobe Commerce con le seguenti opzioni:
 
-* L&#39;applicazione viene installata nel `magento2` directory relativa alla directory principale dei documenti del server web su `localhost` e il percorso per l’Amministratore è `admin`; pertanto:
+* L&#39;applicazione è installata nella directory `magento2` relativa alla directory principale dei documenti del server Web in `localhost` e il percorso dell&#39;amministratore è `admin`. Pertanto:
 
   L&#39;URL della vetrina è `http://127.0.0.1`
 
 * Il server di database si trova sullo stesso host del server Web.
 
-  Il nome del database è `magento`, e il nome utente e la password sono entrambi `magento`
+  Il nome del database è `magento` e il nome utente e la password sono entrambi `magento`
 
 * Utilizza le riscritture del server
 
 * L’amministratore dispone delle seguenti proprietà:
 
-   * I nomi e i cognomi sono `Magento User`
-   * Il nome utente è `admin` e la password è `admin123`
+   * Il nome e il cognome sono `Magento User`
+   * Nome utente: `admin`, password: `admin123`
    * Indirizzo di posta elettronica: `user@example.com`
 
-* La lingua predefinita è `en_US` (Inglese (Stati Uniti)
+* La lingua predefinita è `en_US` (inglese americano)
 * La valuta predefinita è il dollaro statunitense
 * Il fuso orario predefinito è Stati Uniti centrali (America/Chicago)
 * OpenSearch 1.2 è installato su `os-host.example.com` e si connette alla porta 9200
@@ -282,32 +282,32 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
 
-Dopo l’installazione è possibile creare un utente amministratore utilizzando `admin:user:create` comando:
+Dopo l&#39;installazione è possibile creare un utente amministratore utilizzando il comando `admin:user:create`:
 [Creare o modificare un amministratore](tutorials/admin.md#create-or-edit-an-administrator)
 
 #### Esempio 3 - Installazione con opzioni aggiuntive
 
 L’esempio seguente installa Adobe Commerce con le seguenti opzioni:
 
-* L&#39;applicazione viene installata nel `magento2` directory relativa alla directory principale dei documenti del server web su `localhost` e il percorso per l’Amministratore è `admin`; pertanto:
+* L&#39;applicazione è installata nella directory `magento2` relativa alla directory principale dei documenti del server Web in `localhost` e il percorso dell&#39;amministratore è `admin`. Pertanto:
 
   L&#39;URL della vetrina è `http://127.0.0.1`
 
 * Il server di database si trova sullo stesso host del server Web.
 
-  Il nome del database è `magento`, e il nome utente e la password sono entrambi `magento`
+  Il nome del database è `magento` e il nome utente e la password sono entrambi `magento`
 
 * L’amministratore dispone delle seguenti proprietà:
 
-   * I nomi e i cognomi sono `Magento User`
-   * Il nome utente è `admin` e la password è `admin123`
+   * Il nome e il cognome sono `Magento User`
+   * Nome utente: `admin`, password: `admin123`
    * Indirizzo di posta elettronica: `user@example.com`
 
-* La lingua predefinita è `en_US` (Inglese (Stati Uniti)
+* La lingua predefinita è `en_US` (inglese americano)
 * La valuta predefinita è il dollaro statunitense
 * Il fuso orario predefinito è Stati Uniti centrali (America/Chicago)
 * Il programma di installazione pulisce il database prima di installare le tabelle e lo schema
-* È possibile utilizzare il prefisso di incremento dell&#39;ordine cliente `ORD$` (poiché contiene un carattere speciale [`$`], il valore deve essere racchiuso tra virgolette)
+* È possibile utilizzare il prefisso di incremento dell&#39;ordine cliente `ORD$` (poiché contiene un carattere speciale [`$`], il valore deve essere racchiuso tra virgolette doppie)
 * I dati della sessione vengono salvati nel database
 * Utilizza le riscritture del server
 * OpenSearch è installato su `os-host.example.com` e si connette alla porta 9200
@@ -325,7 +325,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 >[!NOTE]
 >
->È necessario immettere il comando su una singola riga oppure, come nell&#39;esempio precedente, con un `\` carattere alla fine di ogni riga.
+>È necessario immettere il comando su una sola riga oppure, come nell&#39;esempio precedente, con un carattere `\` alla fine di ogni riga.
 
 Se l’installazione ha esito positivo, vengono visualizzati messaggi come i seguenti:
 

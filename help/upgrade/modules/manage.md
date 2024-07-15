@@ -16,10 +16,10 @@ Utilizza la riga di comando per gestire moduli ed estensioni di Adobe Commerce.
 
 ## Attivare o disattivare un modulo
 
-Per abilitare o disabilitare un modulo, vedi [Abilitare o disabilitare i moduli](../../installation/tutorials/manage-modules.md).
+Per attivare o disattivare un modulo, vedere [Attivare o disattivare i moduli](../../installation/tutorials/manage-modules.md).
 
 ## Disinstallare un modulo
 
-Per disinstallare un modulo, vedi [Disinstalla moduli](../../installation/tutorials/uninstall-modules.md).
+Per disinstallare un modulo, vedi [Disinstallare i moduli](../../installation/tutorials/uninstall-modules.md).
 
-Per disinstallare un tema, utilizza [`theme:uninstall`](../../installation/tutorials/themes.md) comando.
+Per disinstallare un tema, utilizzare il comando [`theme:uninstall`](../../installation/tutorials/themes.md).

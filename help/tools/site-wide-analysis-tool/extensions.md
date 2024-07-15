@@ -1,34 +1,34 @@
 ---
 title: '[!DNL Extensions]'
-description: Scopri di più su [!DNL Extensions] scheda in [!DNL Site-Wide Analysis Tool], quando utilizzarla, i suoi vantaggi e le best practice.
+description: Scopri la scheda  [!DNL Extensions]  in [!DNL Site-Wide Analysis Tool], quando utilizzarla, i suoi vantaggi e le best practice.
 exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
 # [!DNL Extensions]
 
-Un [!DNL extension] è un modulo personalizzato, un Language Pack o una combinazione di moduli personalizzati e Language Pack che aggiungono nuove funzionalità al prodotto di base di Adobe Commerce. [Commerce Marketplace](https://marketplace.magento.com/extensions.html) offre una selezione di [!DNL extensions] che sono disponibili gratuitamente e quelli in vendita. Puoi trovare l’elenco di [!DNL extensions] installato nell’istanza Adobe Commerce in [!DNL Site-Wide Analysis Tool].
+[!DNL extension] è un modulo personalizzato, un Language Pack o una combinazione di moduli personalizzati e Language Pack che aggiungono nuove funzionalità al prodotto Adobe Commerce di base. [Commerce Marketplace](https://marketplace.magento.com/extensions.html) offre una selezione di [!DNL extensions] disponibili gratuitamente e quelli in vendita. L&#39;elenco di [!DNL extensions] installati nell&#39;istanza Adobe Commerce è disponibile in [!DNL Site-Wide Analysis Tool].
 
 ## Quando utilizzare
 
-Il [!DNL Extensions] scheda in [!DNL Site-Wide Analysis Tool] fornisce informazioni su [!DNL extensions] installati nell’istanza Adobe Commerce. È possibile utilizzare questa scheda per controllare l&#39;elenco di [!DNL extensions] stai utilizzando, le loro versioni e altre informazioni dettagliate come descrizione, funzioni e utilizzi.
+La scheda [!DNL Extensions] in [!DNL Site-Wide Analysis Tool] fornisce informazioni su [!DNL extensions] installati nell&#39;istanza Adobe Commerce. È possibile utilizzare questa scheda per controllare l&#39;elenco di [!DNL extensions] in uso, le relative versioni e altre informazioni dettagliate quali descrizione, caratteristiche e utilizzi.
 
 ## Vantaggi
 
-* Risparmio di tempo con una rapida panoramica di tutti [!DNL extensions] installato nell’istanza di Adobe Commerce.
+* Risparmia tempo con una rapida panoramica di tutti i [!DNL extensions] installati nell&#39;istanza Adobe Commerce.
 
-* Ottieni informazioni sulle versioni di installate [!DNL extensions] e aggiornarli alle versioni più recenti.
+* Ottenere informazioni sulle versioni di [!DNL extensions] installate e aggiornarle alle versioni più recenti.
 
 ## Best practice
 
-* Mantieni le tue terze parti [!DNL extensions] aggiornate alle versioni più recenti.
+* Mantieni [!DNL extensions] di terze parti aggiornato con le versioni più recenti.
 
-* Assicurati che le [!DNL extensions] scegli sono compatibili con la tua istanza di Adobe Commerce.
+* Assicurati che i [!DNL extensions] scelti siano compatibili con la tua istanza di Adobe Commerce.
 
-* Se non riesci a mantenere la terza parte [!DNL extensions] aggiornate alle versioni più recenti, è consigliabile utilizzare diverse [!DNL extensions].
+* Se non riesci a mantenere aggiornato [!DNL extensions] di terze parti alle versioni più recenti, puoi utilizzare [!DNL extensions] diverso.
 
-* Per evitare potenziali problemi, scarica/acquista prodotti di terze parti [!DNL extensions] da una sorgente affidabile, come [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+* Per evitare potenziali problemi, scarica/acquista [!DNL extensions] di terze parti da un&#39;origine attendibile, ad esempio [Commerce Marketplace](https://marketplace.magento.com/extensions.html).

@@ -6,14 +6,14 @@ feature: Best Practices, Configuration
 exl-id: 8c991b8a-affb-4a9e-9383-671f595ff89e
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 0%
+source-wordcount: '121'
+ht-degree: 1%
 
 ---
 
 # Procedure consigliate per la configurazione dei rapporti
 
-Se la tua azienda non richiede la funzionalità di reporting o di segmenti dinamici dei clienti, disabilita [Funzionalità di reporting](https://docs.magento.com/user-guide/configuration/general/reports.html) per migliorare le prestazioni dello store.
+Se la tua azienda non richiede la funzionalità di reporting o segmenti cliente dinamici, disabilita la funzionalità [Rapporti](https://docs.magento.com/user-guide/configuration/general/reports.html) per migliorare le prestazioni dello store.
 
 ## Prodotti e versioni interessati
 
@@ -26,11 +26,11 @@ Se la tua azienda non richiede la funzionalità di reporting o di segmenti dinam
 
 Se non utilizzi i segmenti Reports o clienti dinamici, disabilita la funzionalità Reports.
 
-1. Dall’amministratore, passa a **Negozi** > **Impostazioni** > **Configurazione** > **Generale** > **Rapporti**.
-1. Sotto **Opzioni generali**, impostato **Abilita rapporti** a *No*.
-1. Svuota la cache eseguendo `php bin/magento cache:flush` o nell’Admin in **Sistema** > **Strumenti** > **Gestione cache**.
+1. Dall&#39;amministratore, passare a **Archivi** > **Impostazioni** > **Configurazione** > **Generale** > **Rapporti**.
+1. In **Opzioni generali**, impostare **Abilita report** su *No*.
+1. Svuota la cache eseguendo `php bin/magento cache:flush` o nell&#39;amministratore in **Sistema** > **Strumenti** > **Gestione cache**.
 
 ## Informazioni aggiuntive
 
-- [Generare rapporti in Adobe Commerce](https://docs.magento.com/user-guide/reports.html)
+- [Genera report in Adobe Commerce](https://docs.magento.com/user-guide/reports.html)
 - [Segmenti dinamici del cliente](https://docs.magento.com/user-guide/marketing/customer-segments.html)

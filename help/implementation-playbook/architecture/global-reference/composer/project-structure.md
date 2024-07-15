@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Struttura del progetto Compositore
 
-Questa guida descrive come impostare e gestire [opzione pacchetti separati](../examples.md#option-1-separate-packages) descritte negli esempi di architettura di riferimento globale (GRA).
+Questa guida descrive come impostare e gestire l&#39;opzione [pacchetti separati](../examples.md#option-1-separate-packages) descritta negli esempi di architettura di riferimento globale (GRA).
 
 ## Prerequisiti
 
@@ -23,7 +23,7 @@ Prima di iniziare, verifica quanto segue:
 
 - Disponi di un archivio Git
 - Disponi di un archivio Compositore (in questo argomento viene evidenziato Private Packagist)
-- Hai configurato l’archivio del Compositore in modo da rispecchiare `repo.magento.com` e `packagist.org` archivi
+- Il repository Composer è stato configurato per riflettere gli archivi `repo.magento.com` e `packagist.org`
 
 ## Archivio principale del progetto Git
 
@@ -37,7 +37,7 @@ L’archivio principale del progetto Git deve contenere solo un progetto Compose
 └─ composer.lock
 ```
 
-Aggiungi il seguente contenuto al `.gitignore` file:
+Aggiungi il seguente contenuto al file `.gitignore`:
 
 ```tree
 /*
@@ -49,7 +49,7 @@ Aggiungi il seguente contenuto al `.gitignore` file:
 
 1. Creare un archivio Git denominato `project-<region/country/brand>`.
 
-1. Crea `composer.json` e `composer.lock` file:
+1. Creare `composer.json` e `composer.lock` file:
 
    ```bash
    composer create-project --no-install --repository-url=https://repo.magento.com/ magento/project-enterprise-edition project-<region/country/brand>
@@ -71,13 +71,13 @@ Aggiungi il seguente contenuto al `.gitignore` file:
 
 ## Salva file non modulo
 
-1. Aggiungi il `app/etc/config.xml` nell’archivio Git.
+1. Aggiungere il file `app/etc/config.xml` all&#39;archivio Git.
 
-   Puoi utilizzare il modulo che stai per creare per installare altri file specifici per l’area geografica o il marchio, ad esempio `.htaccess`File di testo, eseguibili o altri file statici di autenticazione Google o Bing non gestiti dai moduli Adobe Commerce.
+   È possibile utilizzare il modulo che si sta per creare per installare altri file specifici dell&#39;area geografica o del marchio, ad esempio `.htaccess`, file di testo di autenticazione Google o Bing, file eseguibili o altri file statici non gestiti dai moduli di Adobe Commerce.
 
-   Utilizzare `magento2-component` digita i pacchetti per creare una mappatura file per copiare i file nell’archivio Git principale durante `composer install` e `composer update` operazioni.
+   Utilizzare pacchetti di tipo `magento2-component` per creare un mapping di file per copiare i file nell&#39;archivio Git principale durante le operazioni `composer install` e `composer update`.
 
-1. Crea un archivio Git che segue la convenzione di denominazione `component-environment-<region/country/brand>`:
+1. Creare un archivio Git che segue la convenzione di denominazione `component-environment-<region/country/brand>`:
 
    ```bash
    bin/magento module:enable --all
@@ -94,7 +94,7 @@ Aggiungi il seguente contenuto al `.gitignore` file:
    composer config -e
    ```
 
-1. Aggiungi il `app/etc/config.php` file come mappatura in `extra.map` attributo del tuo `composer.json` file:
+1. Aggiungi il file `app/etc/config.php` come mapping nell&#39;attributo `extra.map` del file `composer.json`:
 
    ```json
    {
@@ -115,7 +115,7 @@ Aggiungi il seguente contenuto al `.gitignore` file:
    }
    ```
 
-1. Convalidare `composer.json` file e esegui il commit nell’archivio Git:
+1. Convalida il file `composer.json` e esegui il commit nell&#39;archivio Git:
 
    ```bash
    composer validate
@@ -203,7 +203,7 @@ Aggiungi il seguente contenuto al `.gitignore` file:
    git push --tags
    ```
 
-1. Verifica che Composer abbia copiato `app/etc/config.php` file da `<client>/component-environment-<region/country/brand>`.
+1. Verificare che Composer abbia copiato il file `app/etc/config.php` da `<client>/component-environment-<region/country/brand>`.
 
 ## Distribuisci il codice
 
@@ -211,24 +211,24 @@ Sul server web, puoi distribuire il codice utilizzando Compositore, ma non puoi 
 
 ## Aggiungere altre istanze e pacchetti
 
-Ogni istanza (area geografica, marchio o altra installazione univoca di Adobe Commerce) deve avere il proprio **progetto principale** istanza, **metapacchetto specifico**, e **pacchetto dei componenti dell’ambiente**. Il **Metapackage GRA** dovrebbe essere **condiviso** in tutte le istanze.
+Ogni istanza (area geografica, marchio o installazione univoca di Adobe Commerce) deve ottenere la propria istanza del **progetto principale**, il **metapackage specifico** e il **pacchetto di componenti dell&#39;ambiente**. Il metapackage **GRA** deve essere **condiviso** in tutte le istanze.
 
 I pacchetti funzionali (come moduli, temi, Language Pack e librerie di Adobe Commerce) e i pacchetti di terze parti devono essere richiesti da:
 
-- **Metapackage GRA**- Per installazione su _tutto_ istanze
-- **metapackage specifico dell’istanza**- Per l&#39;installazione su un&#39;unica marca o regione
+- **GRA metapackage**—Per l&#39;installazione su _tutte_ le istanze
+- **metapackage specifico dell&#39;istanza** - Per l&#39;installazione su un singolo marchio o area geografica
 
 >[!IMPORTANT]
 >
->Non richiedere pacchetti nel del progetto principale `composer.json` file su `main` o `release` rami.
+>Non richiedere pacchetti nel file `composer.json` del progetto principale sui rami `main` o `release`.
 
 ## Prepararsi per lo sviluppo
 
 Per lo sviluppo, installare `develop` versioni di tutti i moduli gestiti.
 
-A seconda della strategia di ramificazione, è possibile che `develop`, `qa`, `uat`, e `main` rami. Ogni ramo esiste in Compositore con `dev-` prefisso. Quindi il `develop` il ramo può essere richiesto tramite Compositore come versione `dev-develop`.
+A seconda della strategia di ramificazione, è possibile che siano presenti `develop`, `qa`, `uat` e `main` rami. Ogni ramo esiste in Composer con il prefisso `dev-`. Pertanto, il ramo `develop` può essere richiesto tramite Composer come versione `dev-develop`.
 
-1. Crea `develop` diramazioni in tutti i moduli e archivi di progetti.
+1. Crea `develop` rami in tutti i moduli e gli archivi dei progetti.
 
    ```bash
    cd ../component-environment-<region/country/brand>
@@ -262,7 +262,7 @@ A seconda della strategia di ramificazione, è possibile che `develop`, `qa`, `u
    "magento-services/component-environment-fantasy-corp:dev-develop as 0.999"
    ```
 
-   Il passaggio precedente genera le seguenti righe nel `composer.json` file:
+   Il passaggio precedente genera le righe seguenti nel file `composer.json`:
 
    ```json
    "require": {
@@ -274,4 +274,4 @@ A seconda della strategia di ramificazione, è possibile che `develop`, `qa`, `u
 
    >[!IMPORTANT]
    >
-   >**Non unire** questi `composer.json` modifiche al file nel ramo di produzione. Installa solo versioni stabili dei pacchetti su `release` e `main` rami. È possibile definire queste dipendenze per `qa` le filiali e le altre filiali non principali.
+   >**Non unire** queste `composer.json` modifiche al file nel ramo di produzione. Installa solo versioni stabili dei pacchetti nei rami `release` e `main`. È possibile definire queste dipendenze per `qa` rami e altri rami non principali.

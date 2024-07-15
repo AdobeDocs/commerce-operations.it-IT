@@ -21,7 +21,7 @@ Prima di aggiornare Adobe Commerce sull’infrastruttura cloud, potrebbe essere 
 
 ## Adobe Commerce 2.4.6
 
-A partire da MariaDB 10.5.1, le colonne con i vecchi formati temporali sono contrassegnate con `/* mariadb-5.3 */` commento nell’output del `SHOW CREATE TABLE`, `SHOW COLUMNS`, `DESCRIBE` e nella sezione `COLUMN_TYPE` colonna del `INFORMATION_SCHEMA.COLUMNS` tabella. [Consulta la documentazione di MariaDB](https://mariadb.com/kb/en/datetime/#internal-format).
+A partire da MariaDB 10.5.1, le colonne con formati temporali precedenti sono contrassegnate con un commento `/* mariadb-5.3 */` nell&#39;output delle istruzioni `SHOW CREATE TABLE`, `SHOW COLUMNS`, `DESCRIBE` e nella colonna `COLUMN_TYPE` della tabella `INFORMATION_SCHEMA.COLUMNS`. [Consulta la documentazione di MariaDB](https://mariadb.com/kb/en/datetime/#internal-format).
 
 Adobe Commerce non è in grado di mappare le colonne di date su un tipo di dati corretto a causa del commento MariaDB, che potrebbe causare un comportamento imprevisto nel codice personalizzato.
 
@@ -29,7 +29,7 @@ Per evitare un comportamento imprevisto durante l’aggiornamento di MariaDB dal
 
 ### Configurazione predefinita
 
-In MariaDB 10.1.2, è stato introdotto un nuovo formato temporale da MySQL 5.6. Il `mysql56_temporal_format` variabile di sistema consente al database di convertire automaticamente il formato data precedente in quello nuovo quando viene eseguita una tabella alter o viene importato un database. Configurazione predefinita per `mysql56_temporal_format` è sempre abilitato su Adobe Commerce su infrastruttura cloud.
+In MariaDB 10.1.2, è stato introdotto un nuovo formato temporale da MySQL 5.6. La variabile di sistema `mysql56_temporal_format` consente al database di convertire automaticamente il formato data precedente in quello nuovo quando viene eseguita una tabella alter o viene importato un database. La configurazione predefinita per `mysql56_temporal_format` è sempre abilitata in Adobe Commerce sull&#39;infrastruttura cloud.
 
 ### Colonne data di migrazione
 
@@ -47,7 +47,7 @@ SELECT CONCAT( 'ALTER TABLE `', COALESCE(TABLE_NAME), '`', ' MODIFY ', '`', COAL
 
 >[!NOTE]
 >
->È importante migrare le colonne nel nuovo formato data interno _prima di_ distribuzione del nuovo codice per evitare comportamenti imprevisti.
+>È importante migrare le colonne nel nuovo formato data interno _prima_ della distribuzione del nuovo codice per evitare comportamenti imprevisti.
 
 ## Adobe Commerce 2.3.5
 
@@ -59,18 +59,18 @@ Dopo aver preparato il database, invia un ticket di supporto Adobe Commerce per 
 
 Prima che il team di supporto Adobe Commerce inizi il processo di aggiornamento, preparare il database convertendo le tabelle di database:
 
-- Converti il formato della riga da `COMPACT` a `DYNAMIC`
+- Converti il formato riga da `COMPACT` in `DYNAMIC`
 - Cambia il motore di archiviazione da `MyISAM` a `InnoDB`
 
 Quando pianifichi e pianifichi la conversione, tieni presenti le seguenti considerazioni:
 
-- Conversione da `COMPACT` a `DYNAMIC` le tabelle possono richiedere diverse ore con un database di grandi dimensioni.
+- La conversione da `COMPACT` a `DYNAMIC` tabelle può richiedere diverse ore con un database di grandi dimensioni.
 
 - Per evitare il danneggiamento dei dati, non completare il lavoro di conversione su un sito live.
 
 - Completa il lavoro di conversione durante un periodo di traffico ridotto sul tuo sito.
 
-- Cambia sito in [modalità di manutenzione](../../../installation/tutorials/maintenance-mode.md) prima di eseguire i comandi per convertire le tabelle di database.
+- Passa alla [modalità di manutenzione](../../../installation/tutorials/maintenance-mode.md) prima di eseguire i comandi per convertire le tabelle del database.
 
 #### Converti formato riga tabella database
 
@@ -106,18 +106,18 @@ Quando pianifichi e pianifichi la conversione, tieni presenti le seguenti consid
 
 Il processo di conversione del formato di archiviazione è diverso per i progetti Adobe Commerce Starter e Adobe Commerce Pro.
 
-- Per l&#39;architettura Starter, utilizzare MySQL `ALTER` per convertire il formato.
-- Nell&#39;architettura Pro, utilizzare MySQL `CREATE` e `SELECT` comandi per creare una tabella di database con `InnoDB` e copiare i dati dalla tabella esistente nella nuova tabella. Questo metodo assicura che le modifiche vengano replicate in tutti i nodi del cluster.
+- Per l&#39;architettura Starter, utilizzare il comando MySQL `ALTER` per convertire il formato.
+- Nell&#39;architettura Pro, utilizzare i comandi MySQL `CREATE` e `SELECT` per creare una tabella di database con archiviazione `InnoDB` e copiare i dati dalla tabella esistente nella nuova tabella. Questo metodo assicura che le modifiche vengano replicate in tutti i nodi del cluster.
 
 **Converti formato di archiviazione tabella per progetti Adobe Commerce Pro**
 
-1. Identificare le tabelle che utilizzano `MyISAM` archiviazione.
+1. Identificare le tabelle che utilizzano l&#39;archiviazione `MyISAM`.
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
    ```
 
-1. Converti tutte le tabelle in `InnoDB` formato di archiviazione uno alla volta.
+1. Convertire tutte le tabelle nel formato di archiviazione `InnoDB` una alla volta.
 
    - Rinomina la tabella esistente per evitare conflitti di nomi.
 
@@ -125,7 +125,7 @@ Il processo di conversione del formato di archiviazione è diverso per i progett
      RENAME TABLE <existing_table> <table_old>;
      ```
 
-   - Creare una tabella che utilizza `InnoDB` archiviazione utilizzando i dati della tabella esistente.
+   - Creare una tabella che utilizza l&#39;archiviazione `InnoDB` utilizzando i dati della tabella esistente.
 
      ```mysql
      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
@@ -138,13 +138,13 @@ Il processo di conversione del formato di archiviazione è diverso per i progett
 
 **Converti formato di archiviazione tabella per progetti Adobe Commerce Starter**
 
-1. Identificare le tabelle che utilizzano `MyISAM` archiviazione.
+1. Identificare le tabelle che utilizzano l&#39;archiviazione `MyISAM`.
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
    ```
 
-1. Convertire le tabelle che utilizzano `MyISAM` archiviazione in `InnoDB` archiviazione.
+1. Convertire le tabelle che utilizzano l&#39;archiviazione `MyISAM` nell&#39;archiviazione `InnoDB`.
 
    ```mysql
    ALTER TABLE [ table name here ] ENGINE=InnoDB;
@@ -156,13 +156,13 @@ Il giorno prima dell’aggiornamento pianificato a MariaDB versione 10.3, 10.4 o
 
 1. Accedi al database.
 
-1. Verifica la presenza di tabelle che presentano ancora il `COMPACT` formato riga.
+1. Verificare la presenza di tabelle che presentano ancora il formato di riga `COMPACT`.
 
    ```mysql
    SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
    ```
 
-1. Verifica la presenza di eventuali tabelle che utilizzano ancora `MyISAM` formato di archiviazione
+1. Controllare le tabelle che utilizzano ancora il formato di archiviazione `MyISAM`
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
@@ -172,4 +172,4 @@ Il giorno prima dell’aggiornamento pianificato a MariaDB versione 10.3, 10.4 o
 
 ### Cambia il motore di archiviazione
 
-Consulta [Conversione di tabelle MyISAM in InnoDB](../planning/database-on-cloud.md).
+Vedere [Converti tabelle MyISAM in InnoDB](../planning/database-on-cloud.md).

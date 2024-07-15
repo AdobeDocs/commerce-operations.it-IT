@@ -13,4 +13,4 @@ ht-degree: 0%
 
 Il modello DACI è un quadro di gestione del progetto utilizzato per definire chiaramente i ruoli e le responsabilità delle varie parti interessate in un progetto, per giungere a decisioni di gruppo efficaci ed efficienti. DACI sta per Driver, Approvatore, Collaboratore e Informato. Questi ruoli chiariscono chi ha autorità in determinate aree e situazioni, consentendo al progetto di progredire senza problemi.
 
-![Diagramma di gestione dei progetti DACI](../../assets/playbooks/daci-model.png)
+![Diagramma gestione progetti DACI](../../assets/playbooks/daci-model.png)

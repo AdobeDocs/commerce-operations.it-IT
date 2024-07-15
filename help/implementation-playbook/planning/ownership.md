@@ -18,6 +18,6 @@ Questo accade spesso a causa della mancanza di chiarezza sui ruoli e sulle respo
 
 ## Come collaboriamo collettivamente?
 
-Una matrice responsabile, responsabile, consultata e informata (RACI), come quella menzionata nella [ambito del progetto](../project-scope/deliverables.md) sezione: è uno strumento utile che definisce e documenta la proprietà e la responsabilità in ogni fase del progetto. All’interno della matrice, ogni attività, milestone e decisione nel progetto è mappata a ruoli o individui specifici. Aiuta la gestione dei progetti a semplificare i processi garantendo a ogni membro del team e alle parti interessate di comprendere i propri ruoli specifici. Ciò dovrebbe essere definito nella fase di pianificazione del progetto e accettato da ogni parte interessata.
+Una matrice Responsabile, Responsabile, Consultato e Informato (RACI), come quella menzionata nella sezione [valutazione del progetto](../project-scope/deliverables.md), è uno strumento utile che definisce e documenta la proprietà e la responsabilità in ogni fase del progetto. All’interno della matrice, ogni attività, milestone e decisione nel progetto è mappata a ruoli o individui specifici. Aiuta la gestione dei progetti a semplificare i processi garantendo a ogni membro del team e alle parti interessate di comprendere i propri ruoli specifici. Ciò dovrebbe essere definito nella fase di pianificazione del progetto e accettato da ogni parte interessata.
 
-![Tabella che descrive il quadro RACI](../../assets/playbooks/raci.svg)
+![Tabella che descrive il framework RACI](../../assets/playbooks/raci.svg)

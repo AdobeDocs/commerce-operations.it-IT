@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Visualizzare o modificare l’URI amministratore
 
-Prima di eseguire questo comando, è necessario [Creare o aggiornare la configurazione della distribuzione](deployment.md).
+Prima di eseguire questo comando, è necessario [creare o aggiornare la configurazione della distribuzione](deployment.md).
 
 ## Visualizza l&#39;URI amministratore
 
-Questa sezione illustra come utilizzare la riga di comando per visualizzare l&#39;identificatore di risorsa uniforme amministratore ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
+In questa sezione viene illustrato come utilizzare la riga di comando per visualizzare l&#39;identificatore di risorsa uniforme amministratore ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
 
 Opzioni comando:
 
@@ -30,7 +30,7 @@ Di seguito è riportato un esempio di risultato:
 Admin Panel URI: /admin_1wgrah
 ```
 
-Puoi anche visualizzare l’URI amministratore in `<magento_root>/app/etc/env.php`. Di seguito è riportato uno snippet:
+È inoltre possibile visualizzare l&#39;URI amministratore in `<magento_root>/app/etc/env.php`. Di seguito è riportato uno snippet:
 
 ```php?start_inline=1
   'backend' =>
@@ -41,4 +41,4 @@ Puoi anche visualizzare l’URI amministratore in `<magento_root>/app/etc/env.ph
 
 ## Modificare l’URL dell’amministratore
 
-Per modificare l’URI di amministrazione, utilizza [`magento setup:config:set`](deployment.md) comando.
+Per modificare l&#39;URI amministratore, utilizzare il comando [`magento setup:config:set`](deployment.md).

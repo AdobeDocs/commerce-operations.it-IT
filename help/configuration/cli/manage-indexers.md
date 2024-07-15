@@ -39,7 +39,7 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> I commercianti di Adobe Commerce che utilizzano Live Search, Catalog Service o Product Recommendations possono utilizzare [Indicizzazione dei prezzi basata su SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html).
+> I commercianti Adobe Commerce che utilizzano Live Search, Catalog Service o Product Recommendations possono utilizzare l&#39;indicizzazione dei prezzi basata su [SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html).
 
 ## Visualizza stato indicizzatore
 
@@ -51,7 +51,7 @@ Opzioni comando:
 bin/magento indexer:status [indexer]
 ```
 
-Dove `[indexer]` è un elenco di indicizzatori separato da spazi. Ometti `[indexer]` per visualizzare lo stato di tutti gli indici.
+Dove `[indexer]` è un elenco separato da spazi di indicizzatori. Ometti `[indexer]` per visualizzare lo stato di tutti gli indicizzatori.
 
 Risultato di esempio:
 
@@ -79,7 +79,7 @@ Utilizzare questo comando per reindicizzare tutti gli indicizzatori o gli indici
 
 >[!INFO]
 >
->Questo comando reindicizza una sola volta. Per mantenere gli indicizzatori aggiornati, è necessario impostare un [lavoro cron](../cli/configure-cron-jobs.md).
+>Questo comando reindicizza una sola volta. Per mantenere aggiornati gli indicizzatori, è necessario impostare un [processo cron](../cli/configure-cron-jobs.md).
 
 Opzioni comando:
 
@@ -87,7 +87,7 @@ Opzioni comando:
 bin/magento indexer:reindex [indexer]
 ```
 
-Dove `[indexer]` è un elenco di indicizzatori separato da spazi. Ometti `[indexer]` per reindicizzare tutti gli indici.
+Dove `[indexer]` è un elenco separato da spazi di indicizzatori. Ometti `[indexer]` per reindicizzare tutti gli indici.
 
 Risultato di esempio:
 
@@ -115,7 +115,7 @@ Catalog Search index has been rebuilt successfully in <time>
 
 Gli indicizzatori sono con ambito e multithread per supportare la reindicizzazione in modalità parallela. Viene eseguito in parallelo dalla dimensione dell’indicizzatore su più thread, riducendo il tempo di elaborazione.
 
-In questo contesto: `dimension` è il campo di applicazione della reindicizzazione, ad esempio `website` o solo uno specifico `customer_group`.
+In questo contesto, `dimension` è l&#39;ambito della reindicizzazione, ad esempio un `website` o solo un `customer_group` specifico.
 
 La parallelizzazione degli indici ha effetto solo sugli indicizzatori con ambito, il che significa che Commerce divide i dati in più tabelle utilizzando l&#39;indicizzatore come ambito anziché mantenere tutti i dati in un&#39;unica tabella.
 
@@ -123,8 +123,8 @@ Puoi eseguire i seguenti indici in modalità parallela:
 
 - `Catalog Search Fulltext` può essere affiancato dalle visualizzazioni dello store.
 - `Category Product` può essere affiancato dalle visualizzazioni dello store.
-- `Catalog Price` può essere affiancato da siti web e gruppi di clienti.
-- `Catalog Permissions` possono essere affiancati dai gruppi di clienti.
+- `Catalog Price` può essere affiancato da siti Web e gruppi di clienti.
+- `Catalog Permissions` può essere affiancato dai gruppi di clienti.
 
 >[!INFO]
 >
@@ -132,7 +132,7 @@ Puoi eseguire i seguenti indici in modalità parallela:
 
 Per utilizzare la parallelizzazione, impostare una delle modalità di dimensione disponibili per l&#39;indicizzatore prezzo prodotto:
 
-- `none` (impostazione predefinita)
+- `none` (predefinito)
 - `website`
 - `customer_group`
 - `website_and_customer_group`
@@ -145,7 +145,7 @@ bin/magento indexer:set-dimensions-mode catalog_product_price website
 
 Per utilizzare la parallelizzazione per le autorizzazioni del catalogo, imposta una delle modalità di dimensioni disponibili per l’indicizzatore delle autorizzazioni del catalogo:
 
-- `none` (impostazione predefinita)
+- `none` (predefinito)
 - `customer_group`
 
 Oppure per controllare la modalità corrente:
@@ -154,9 +154,9 @@ Oppure per controllare la modalità corrente:
 bin/magento indexer:show-dimensions-mode
 ```
 
-Per reindicizzare in modalità parallela, esegui il comando reindicizza utilizzando la variabile di ambiente `MAGE_INDEXER_THREADS_COUNT`o aggiungere una variabile di ambiente al `env.php` file. Questa variabile imposta il numero di thread per la reindicizzazione.
+Per reindicizzare in modalità parallela, eseguire il comando reindicizza utilizzando la variabile di ambiente `MAGE_INDEXER_THREADS_COUNT` oppure aggiungere una variabile di ambiente al file `env.php`. Questa variabile imposta il numero di thread per la reindicizzazione.
 
-Ad esempio, il comando seguente esegue `Catalog Search Fulltext` indicizzatore su tre thread:
+Il comando seguente, ad esempio, esegue l&#39;indicizzatore `Catalog Search Fulltext` su tre thread:
 
 ```bash
 MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fulltext
@@ -172,7 +172,7 @@ Opzioni comando:
 bin/magento indexer:reset [indexer]
 ```
 
-Dove ```[indexer]``` è un elenco di indicizzatori separato da spazi. Ometti `[indexer]` per annullare la validità di tutti gli indicizzatori.
+Dove ```[indexer]``` è un elenco separato da spazi di indicizzatori. Ometti `[indexer]` per annullare la validità di tutti gli indicizzatori.
 
 Risultato di esempio:
 
@@ -194,10 +194,10 @@ Catalog Search indexer has been invalidated.
 
 Utilizzare questo comando per impostare le opzioni di indicizzazione seguenti:
 
-- **Aggiorna al salvataggio (`realtime`)**: i dati indicizzati vengono aggiornati quando viene apportata una modifica in Admin. Ad esempio, l’indice dei prodotti di categoria viene reindicizzato dopo l’aggiunta dei prodotti a una categoria in Admin. Questa è l&#39;impostazione predefinita.
-- **Aggiorna per pianificazione (`schedule`)**: i dati vengono indicizzati in base alla pianificazione impostata dal processo cron.
+- **Aggiornamento al salvataggio (`realtime`)**: i dati indicizzati vengono aggiornati quando viene apportata una modifica nell&#39;amministratore. Ad esempio, l’indice dei prodotti di categoria viene reindicizzato dopo l’aggiunta dei prodotti a una categoria in Admin. Questa è l&#39;impostazione predefinita.
+- **Aggiornamento in base alla pianificazione (`schedule`)**: i dati sono indicizzati in base alla pianificazione impostata dal processo cron.
 
-[Ulteriori informazioni sull’indicizzazione](https://developer.adobe.com/commerce/php/development/components/indexing/).
+[Ulteriori informazioni sull&#39;indicizzazione](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
 ### Visualizza la configurazione corrente
 
@@ -207,7 +207,7 @@ Per visualizzare la configurazione corrente dell&#39;indicizzatore:
 bin/magento indexer:show-mode [indexer]
 ```
 
-Dove `[indexer]` è un elenco di indicizzatori separato da spazi. Ometti `[indexer]` per visualizzare tutte le modalità degli indicizzatori. Ad esempio, per visualizzare la modalità di tutti gli indicizzatori:
+Dove `[indexer]` è un elenco separato da spazi di indicizzatori. Ometti `[indexer]` per visualizzare tutte le modalità degli indicizzatori. Ad esempio, per visualizzare la modalità di tutti gli indicizzatori:
 
 Risultato di esempio:
 
@@ -229,13 +229,13 @@ Catalog Search:                                    Update on Save
 
 >[!IMPORTANT]
 >
->Assicurarsi di impostare [!DNL Customer Grid] con `realtime` invece di `schedule`. Il [!DNL Customer Grid] può essere reindicizzato solo utilizzando [!UICONTROL Update on Save] opzione. Questo indice non supporta `Update by Schedule` opzione. Utilizza la seguente riga di comando per impostare questo indicizzatore da aggiornare al salvataggio: `php bin/magento indexer:set-mode realtime customer_grid`
+>Assicurarsi di impostare [!DNL Customer Grid] con `realtime` anziché `schedule`. È possibile reindicizzare [!DNL Customer Grid] solo utilizzando l&#39;opzione [!UICONTROL Update on Save]. L&#39;indice non supporta l&#39;opzione `Update by Schedule`. Utilizzare la riga di comando seguente per impostare l&#39;indicizzatore da aggiornare al salvataggio: `php bin/magento indexer:set-mode realtime customer_grid`
 >
->Consulta [Best practice per la configurazione dell’indicizzatore](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) nel _Playbook di implementazione_.
+>Consulta [Best practice per la configurazione dell&#39;indicizzatore](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) nella _Playbook di implementazione_.
 
 >[!INFO]
 >
->Prima di cambiare modalità di indicizzazione, imposta il sito Web su [manutenzione](../../installation/tutorials/maintenance-mode.md) modalità e [disabilita processi cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). In questo modo si evita di subire blocchi del database.
+>Prima di cambiare modalità di indicizzazione, impostare il sito Web sulla modalità [manutenzione](../../installation/tutorials/maintenance-mode.md) e [disabilitare i processi cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). In questo modo si evita di subire blocchi del database.
 
 Per specificare la configurazione dell&#39;indicizzatore:
 
@@ -245,9 +245,9 @@ bin/magento indexer:set-mode {realtime|schedule} [indexer]
 
 Dove:
 
-- `realtime`- Imposta gli indicizzatori selezionati da aggiornare al salvataggio.
-- `schedule`- Imposta gli indicizzatori specificati per il salvataggio in base alla pianificazione cron.
-- `indexer`- È un elenco di indicizzatori separato da spazi. Ometti `indexer` per configurare tutti gli indicizzatori allo stesso modo.
+- `realtime` - Imposta gli indici selezionati da aggiornare al momento del salvataggio.
+- `schedule` - Imposta gli indicizzatori specificati per il salvataggio in base alla pianificazione cron.
+- `indexer` - Elenco di indicizzatori separato da spazi. Ometti `indexer` per configurare tutti gli indicizzatori allo stesso modo.
 
 Ad esempio, per modificare solo gli indici dei prodotti e delle categorie di prodotti per l&#39;aggiornamento in base alla programmazione, immettere:
 
@@ -262,11 +262,11 @@ Index mode for Indexer Category Products was changed from 'Update on Save' to 'U
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
 
-I trigger del database relativi agli indicizzatori vengono aggiunti quando la modalità di indicizzazione è impostata su `schedule` e viene rimosso quando la modalità indicizzatore è impostata su `realtime`. Se i trigger non sono presenti nel database mentre gli indicizzatori sono impostati su `schedule`, modifica gli indicizzatori in `realtime` e quindi riportarli a `schedule`. In questo modo vengono ripristinati i trigger.
+I trigger del database relativi agli indicizzatori vengono aggiunti quando la modalità indicizzatore è impostata su `schedule` e rimossi quando la modalità indicizzatore è impostata su `realtime`. Se nel database mancano i trigger mentre gli indicizzatori sono impostati su `schedule`, modificare gli indicizzatori in `realtime` e quindi riportarli in `schedule`. In questo modo vengono ripristinati i trigger.
 
 ### Imposta stato indicizzatore
 
-Il `bin/magento indexer:set-status` è stato introdotto in Adobe Commerce 2.4.7. Consente agli amministratori di modificare lo stato operativo di uno o più indicizzatori, ottimizzando le prestazioni del sistema durante operazioni estese come l’importazione di dati, aggiornamenti o manutenzione.
+Comando `bin/magento indexer:set-status` introdotto in Adobe Commerce 2.4.7. Consente agli amministratori di modificare lo stato operativo di uno o più indicizzatori, ottimizzando le prestazioni del sistema durante operazioni estese come l’importazione di dati, aggiornamenti o manutenzione.
 
 Sintassi del comando:
 
@@ -276,10 +276,10 @@ bin/magento indexer:set-status {invalid|suspended|valid} [indexer]
 
 Dove:
 
-- `invalid`- Contrassegna gli indicizzatori come non aggiornati, richiedendo la reindicizzazione nella successiva esecuzione cron, a meno che non vengano sospesi.
-- `suspended`- Interrompe temporaneamente gli aggiornamenti automatici attivati da cron per gli indicizzatori. Questo stato si applica sia alla modalità in tempo reale che alla modalità di pianificazione, garantendo che gli aggiornamenti automatici vengano messi in pausa durante le operazioni intensive.
-- `valid`- Indica che i dati dell&#39;indicizzatore sono aggiornati, senza necessità di reindicizzazione.
-- `indexer`- È un elenco di indicizzatori separato da spazi. Ometti `indexer` per configurare tutti gli indicizzatori allo stesso modo.
+- `invalid` - Contrassegna gli indicizzatori come non aggiornati, richiedendo la reindicizzazione nella successiva esecuzione cron, a meno che non vengano sospesi.
+- `suspended` - Interrompe temporaneamente gli aggiornamenti automatici attivati da cron per gli indicizzatori. Questo stato si applica sia alla modalità in tempo reale che alla modalità di pianificazione, garantendo che gli aggiornamenti automatici vengano messi in pausa durante le operazioni intensive.
+- `valid` - Indica che i dati dell&#39;indicizzatore sono aggiornati, senza necessità di reindicizzazione.
+- `indexer` - Elenco di indicizzatori separato da spazi. Ometti `indexer` per configurare tutti gli indicizzatori allo stesso modo.
 
 Ad esempio, per sospendere indicizzatori specifici, immettere:
 
@@ -296,18 +296,18 @@ Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspe
 
 #### Gestione dello stato dell’indicizzatore sospeso
 
-Quando un indicizzatore è impostato su `suspended` influisce principalmente sulla reindicizzazione automatica e sugli aggiornamenti delle viste materializzate. Ecco una breve panoramica:
+Quando un indicizzatore è impostato sullo stato `suspended`, influisce principalmente sulla reindicizzazione automatica e sugli aggiornamenti delle viste materializzate. Ecco una breve panoramica:
 
-**Reindicizzazione ignorata**: reindicizzazione automatica ignorata per `suspended` indicizzatori ed eventuali indicizzatori che condividono lo stesso `shared_index`. In questo modo le risorse di sistema vengono conservate evitando la reindicizzazione dei dati relativi ai processi sospesi.
+**Reindicizzazione ignorata**: la reindicizzazione automatica viene ignorata per `suspended` indicizzatori e per tutti gli indicizzatori che condividono lo stesso `shared_index`. In questo modo le risorse di sistema vengono conservate evitando la reindicizzazione dei dati relativi ai processi sospesi.
 
-**Aggiornamenti delle viste materializzate ignorati**: simile alla reindicizzazione, aggiornamenti alle viste materializzate correlate a `suspended` vengono sospesi anche gli indicizzatori o i relativi indici condivisi. Questa azione riduce ulteriormente il carico del sistema durante i periodi di sospensione.
+**Aggiornamenti delle viste materializzate ignorati**: analogamente alla reindicizzazione, anche gli aggiornamenti alle viste materializzate relative agli indicizzatori `suspended` o ai relativi indici condivisi vengono sospesi. Questa azione riduce ulteriormente il carico del sistema durante i periodi di sospensione.
 
 >[!INFO]
 >
->Il `indexer:reindex` comando reindicizza tutti gli indicizzatori, inclusi quelli contrassegnati come `suspended`, che risulta utile per gli aggiornamenti manuali quando si mettono in pausa quelli automatici.
+>Il comando `indexer:reindex` reindicizza tutti gli indicizzatori, inclusi quelli contrassegnati come `suspended`, rendendolo utile per gli aggiornamenti manuali quando si mettono in pausa quelli automatici.
 
 >[!IMPORTANT]
 >
->Modifica dello stato di un indicizzatore in `valid` da `suspended` o `invalid` richiede cautela. Questa azione può causare il deterioramento delle prestazioni in caso di accumulo di dati non indicizzati.
+>La modifica dello stato di un indicizzatore in `valid` da `suspended` o `invalid` richiede cautela. Questa azione può causare il deterioramento delle prestazioni in caso di accumulo di dati non indicizzati.
 >
->È fondamentale garantire che tutti i dati siano indicizzati accuratamente prima di aggiornare manualmente lo stato in `valid` per mantenere le prestazioni del sistema e l&#39;integrità dei dati.
+>È fondamentale assicurarsi che tutti i dati siano indicizzati accuratamente prima di aggiornare manualmente lo stato a `valid` per mantenere le prestazioni del sistema e l&#39;integrità dei dati.

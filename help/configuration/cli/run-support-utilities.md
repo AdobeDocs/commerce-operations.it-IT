@@ -1,10 +1,10 @@
 ---
 title: Eseguire le utilità di supporto
-description: Risolvi i problemi del progetto Commerce utilizzando l’utility di supporto incorporata.
+description: Risolvere i problemi relativi al progetto Commerce utilizzando l'utilità di supporto incorporata.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Le utility di supporto di Adobe Commerce, denominate anche [Agente di raccolta dati](https://docs.magento.com/user-guide/system/support-data-collector.html): consente agli utenti di raccogliere informazioni sulla risoluzione dei problemi del sistema che possono essere utilizzate dal team di supporto.
+Le utility di supporto di Adobe Commerce, denominate anche [Data Collector](https://docs.magento.com/user-guide/system/support-data-collector.html), consentono agli utenti di raccogliere informazioni sulla risoluzione dei problemi del sistema che possono essere utilizzate dal team di supporto.
 
-Adobe Commerce utilizza questi backup, denominati anche _immagini_, per analizzare i problemi che richiedono l’accesso al codice. Di seguito è riportato uno scenario tipico:
+Adobe Commerce utilizza questi backup, detti anche _dump_, per analizzare i problemi che richiedono l&#39;accesso al codice. Di seguito è riportato uno scenario tipico:
 
-1. Stai avendo un problema con il tuo Negozio Commerce e contatta il Supporto Adobe Commerce.
+1. Stai avendo un problema con il tuo store Commerce e contatta il Supporto Adobe Commerce.
 1. Il supporto determina che devono visualizzare il codice o il database per riprodurre il problema.
-1. Esegui il backup del codice in un `.tar.gz` file.
+1. È possibile eseguire il backup del codice in un file `.tar.gz`.
 
    Questo backup _esclude i file multimediali per velocizzare il processo e ottenere un file molto più piccolo.
 
-1. Eseguire il backup del database in una `.tar.gz` file.
+1. Eseguire il backup del database in un file `.tar.gz`.
 
    Per impostazione predefinita, i dati sensibili vengono sottoposti a hashing durante l’esecuzione del backup.
 
@@ -36,7 +36,7 @@ Il completamento delle utilità può richiedere alcuni minuti.
 
 ## Creare un backup del codice
 
-Questo comando esegue il backup del codice e lo comprime `tar.gz` formato.
+Questo comando esegue il backup del codice e lo comprime nel formato `tar.gz`.
 
 {{tip-backup-command}}
 
@@ -49,7 +49,7 @@ bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--
 Dove:
 
 - **`--name`** specifica il nome del file di dump (facoltativo). Se si omette questo parametro, il file di dump sarà contrassegnato con data e ora.
-- **`-o|--output=<path>`** è il percorso assoluto del file system in cui archiviare il backup (obbligatorio).
+- **`-o|--output=<path>`** è il percorso assoluto del file system per archiviare il backup (obbligatorio).
 - **`-l|--logs`** include i file di registro (facoltativo).
 
 Ad esempio, per creare un backup del codice denominato `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
@@ -62,7 +62,7 @@ Al termine del comando, fornisci il backup del codice al supporto Adobe Commerce
 
 ## Creare un backup del database
 
-Questo comando esegue il backup del database Commerce e lo comprime in `tar.gz` formato.
+Questo comando esegue il backup del database di Commerce e lo comprime nel formato `tar.gz`.
 
 {{tip-backup-command}}
 
@@ -77,7 +77,7 @@ Dove:
 - **`--name`** specifica il nome del file di dump (facoltativo). Se si omette questo parametro, il file di dump sarà contrassegnato con data e ora.
 - **`-o|--output=<path>` è il percorso assoluto del file system in cui archiviare il backup (obbligatorio).
 - **`-l|--logs`** include i file di registro (facoltativo).
-- **`-i|--ignore-sanitize`** significa che i dati vengono conservati; ometti il flag per eseguire l’hashing dei dati sensibili memorizzati nel database durante la creazione del backup (facoltativo).
+- **`-i|--ignore-sanitize`** significa che i dati sono conservati. Omettere il flag per eseguire l&#39;hashing dei dati sensibili memorizzati nel database durante la creazione del backup (facoltativo).
 
 I dati riservati includono le informazioni sui clienti delle tabelle di database seguenti:
 
@@ -106,13 +106,13 @@ Utility lsof not found
 
 Eseguire i seguenti comandi nell&#39;ordine indicato per visualizzare i percorsi delle applicazioni utilizzate dalle utility di supporto e dall&#39;agente di raccolta dati:
 
-1. Passa alla directory di installazione di Commerce.
+1. Passare alla directory di installazione di Commerce.
 
    Ad esempio: `cd /var/www/magento2`
 
    >[!INFO]
    >
-   >I comandi vengono eseguiti correttamente _solo_ dalla directory di installazione.
+   >I comandi vengono eseguiti correttamente _only_ dalla directory di installazione.
 
 1. `bin/magento support:utility:paths` crea `<magento_root>/var/support/Paths.php`, che elenca i percorsi di tutte le applicazioni utilizzate dall&#39;utility.
 1. `bin/magento support:utility:check` visualizza i percorsi del file system.
@@ -131,4 +131,4 @@ Di seguito è riportato un esempio:
    mysql => /usr/bin/mysql
 ```
 
-Per risolvere i problemi relativi all&#39;esecuzione degli strumenti, assicurarsi che queste applicazioni siano installate e si trovino nel file dell&#39;utente del server Web `$PATH` variabile di ambiente.
+Per risolvere i problemi relativi all&#39;esecuzione degli strumenti, assicurarsi che queste applicazioni siano installate e che siano incluse nella variabile di ambiente `$PATH` dell&#39;utente del server Web.

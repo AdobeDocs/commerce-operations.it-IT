@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Strumento da riga di comando
 
-Commerce dispone di una sola interfaccia CLI (Command Line Interface):`<magento_root>/bin/magento`: esegue attività di installazione e configurazione, tra cui:
+Commerce dispone di un&#39;interfaccia della riga di comando (CLI), `<magento_root>/bin/magento`, che esegue attività di installazione e configurazione, tra cui:
 
 - Installazione di Commerce (e delle attività correlate, come l’aggiornamento dello schema del database, la creazione di una configurazione di distribuzione)
 - Cancellazione della cache
@@ -28,15 +28,15 @@ Ulteriori vantaggi includono:
 - La CLI è estensibile in modo che sviluppatori di terze parti possano collegarla. Questo ha il vantaggio aggiuntivo di eliminare la curva di apprendimento degli utenti.
 - I comandi per i moduli disattivati non vengono visualizzati.
 
-In questo argomento viene illustrata la configurazione del software Adobe Commerce mediante CLI. Per informazioni sull&#39;installazione di Commerce, vedere [Flusso di installazione](../../installation/overview.md) nel _Guida all’installazione_.
+In questo argomento viene illustrata la configurazione del software Adobe Commerce mediante CLI. Per informazioni sull&#39;installazione di Commerce, vedere [Flusso di installazione](../../installation/overview.md) nella _Guida all&#39;installazione_.
 
 ## Prerequisiti
 
 Prima di iniziare a utilizzare CLI, verificare che:
 
-1. Il sistema soddisfa i requisiti descritti in [Requisiti di sistema](../../installation/system-requirements.md) nel _Guida all’installazione_.
-1. Hai completato tutte le attività preliminari descritte in [Prerequisiti](../../installation/prerequisites/overview.md) nel _Guida all’installazione_.
-1. Dopo aver effettuato l&#39;accesso al server Commerce, passare a un utente che dispone delle autorizzazioni di scrittura nel file system di Commerce. Consulta [passa al proprietario del file system](../../installation/prerequisites/file-system/overview.md) nel _Guida all’installazione_.
+1. Il sistema soddisfa i requisiti descritti in [Requisiti di sistema](../../installation/system-requirements.md) nella _Guida all&#39;installazione_.
+1. Hai completato tutte le attività preliminari descritte in [Prerequisiti](../../installation/prerequisites/overview.md) nella _Guida all&#39;installazione_.
+1. Dopo aver effettuato l&#39;accesso al server Commerce, passare a un utente che dispone delle autorizzazioni di scrittura nel file system di Commerce. Vedere [passare al proprietario del file system](../../installation/prerequisites/file-system/overview.md) nella _Guida all&#39;installazione_.
 
 ## Esecuzione dei comandi
 
@@ -52,9 +52,9 @@ Se il proprietario del file system non consente l&#39;accesso, è possibile util
 sudo -u <file system owner> <command>
 ```
 
-**Per eseguire comandi CLI da qualsiasi directory**:
+**Per eseguire i comandi CLI da qualsiasi directory**:
 
-Aggiungi `<magento_root>/bin` al sistema `PATH`.
+Aggiungi `<magento_root>/bin` al tuo sistema `PATH`.
 
 Shell di base di esempio per CentOS:
 
@@ -66,4 +66,4 @@ Facoltativamente, è possibile eseguire le operazioni seguenti:
 
 - `cd <magento_root>/bin` ed eseguirli come `./magento <command name>`
 - `<magento_root>/bin/magento <command name>`
-- `<magento_root>` è una sottodirectory della directory principale dei documenti del server web
+- `<magento_root>` è una sottodirectory della directory dei documenti del server Web

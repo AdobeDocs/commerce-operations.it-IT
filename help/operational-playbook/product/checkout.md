@@ -5,7 +5,7 @@ exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
 feature: Best Practices, Checkout
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Pagamento è una parte fondamentale dello shopping online. Qui è dove vengono f
 
 Il flusso di cassa è come il traguardo, dove gli acquirenti si trasformano in clienti che effettuano transazioni. Ma anche un piccolo intoppo nel checkout può avere un enorme impatto negativo sul tasso di conversione e sul ROI, quindi, migliorare il tasso di conversione anche leggermente può aiutare ad aumentare massicciamente il ROI. Il miglioramento dei flussi e dei processi di pagamento inizia anche prima della pagina di pagamento.
 
-![Diagramma del flusso del processo di checkout](../../assets/playbooks/checkout-diagram.png)
+![Diagramma del flusso del processo di estrazione](../../assets/playbooks/checkout-diagram.png)
 
 ## Pagine prodotto
 
@@ -69,7 +69,7 @@ Non imporre un tipo di opzione all’utente.
 
 I dettaglianti dovrebbero fornire diversi metodi di spedizione per soddisfare le esigenze dei diversi clienti.
 
-Oltre alle opzioni di pagamento, i rivenditori possono anche fornire opzioni come [fai clic su e raccogli](click-collect.md).
+Oltre alle opzioni di pagamento, i rivenditori possono anche fornire opzioni come [clic e raccolta](click-collect.md).
 
 ## Dettagli pagamento
 
@@ -107,7 +107,7 @@ Esiste una differenza tra flussi e processi di checkout B2B e B2C.
 - Opzioni di pagamento diverse, ad esempio carta di credito e portafoglio elettronico
 - Possibilità di aggiungere il codice coupon al pagamento
 
-![Diagramma di checkout B2C](../../assets/playbooks/checkout-b2c.png)
+![Diagramma estrazione B2C](../../assets/playbooks/checkout-b2c.png)
 
 ### B2B
 
@@ -117,4 +117,4 @@ Esiste una differenza tra flussi e processi di checkout B2B e B2C.
 - Opzioni di pagamento diverse, ad esempio ordine di acquisto, bonifico bancario o assegno
 - Processo semplice da riordinare
 
-![Diagramma di checkout B2B](../../assets/playbooks/checkout-b2b.png)
+![Diagramma estrazione B2B](../../assets/playbooks/checkout-b2b.png)

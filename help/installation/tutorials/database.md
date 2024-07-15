@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Creare lo schema del database
 
-Prima di eseguire questo comando, è necessario [Creare o aggiornare la configurazione della distribuzione](deployment.md).
+Prima di eseguire questo comando, è necessario [creare o aggiornare la configurazione della distribuzione](deployment.md).
 
 ## Configurare il database e aggiungere dati
 

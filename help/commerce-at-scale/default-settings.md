@@ -6,7 +6,7 @@ feature: Integration, Cache
 topic: Commerce, Performance
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,14 @@ Per ridurre la latenza tra l’editore dell’AEM e Adobe Commerce GraphQL duran
 
 ## Memorizzazione in cache di GraphQL in Adobe Commerce
 
-Quando il browser dell’utente o l’editore dell’AEM chiama il GraphQL di Adobe Commerce, alcune chiamate verranno memorizzate nella cache in Fastly. Le query memorizzate nella cache sono generalmente quelle che contengono dati non personali e che probabilmente non cambiano spesso. Ad esempio: categorie, categoryList e prodotti. Quelli che non sono esplicitamente memorizzati nella cache sono quelli che cambiano regolarmente e se memorizzati nella cache potrebbero rappresentare rischi per i dati personali e le operazioni del sito, ad esempio query come cart e customerPaymentTokens.
+Quando il browser dell’utente o l’editore dell’AEM chiama il GraphQL di Adobe Commerce, alcune chiamate verranno memorizzate nella cache
+in Fastly. Le query memorizzate nella cache sono generalmente quelle che contengono dati non personali e che probabilmente non cambiano spesso. Ad esempio: categorie, categoryList e prodotti. Quelli che non sono esplicitamente memorizzati nella cache sono quelli che cambiano regolarmente e se memorizzati nella cache potrebbero rappresentare rischi per i dati personali e le operazioni del sito, ad esempio query come cart e customerPaymentTokens.
 
 GraphQL consente di eseguire più query in una singola chiamata. È importante notare che se specifichi una sola query che Adobe Commerce non memorizza in cache insieme a molte altre che non possono essere memorizzate in cache, Adobe Commerce ignorerà la cache per tutte le query nella chiamata. Questo aspetto deve essere tenuto in considerazione dagli sviluppatori quando combinano più query per garantire che le query potenzialmente memorizzabili nella cache non vengano involontariamente ignorate‡.
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sulle query memorizzabili in cache e non memorizzabili in cache, vedi Adobe Commerce [documentazione per sviluppatori](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
+> Per ulteriori informazioni sulle query memorizzabili nella cache e non memorizzabili nella cache, consulta la [documentazione per gli sviluppatori](https://devdocs.magento.com/guides/v2.4/graphql/caching.html) di Adobe Commerce.
 
 ## Tabella a schermo piatto catalogo
 
@@ -41,9 +42,9 @@ La schermatura dell’origine rapida può essere abilitata nelle impostazioni di
 
 Una volta abilitata la schermatura dell’origine Fastly, questo consente di attivare anche Fastly Image Optimizer. Dove le immagini del catalogo dei prodotti sono memorizzate su Adobe Commerce, questo servizio consente di scaricare sull’origine Fastly e off dall’origine Adobe Commerce tutte le immagini del catalogo dei prodotti, ad uso intensivo di risorse, che vengono trasformate. Anche i tempi di risposta dell’utente finale sono migliorati per i tempi di caricamento delle pagine, in quanto le immagini vengono trasformate nella posizione edge di, il che elimina la latenza riducendo il numero di richieste all’origine Adobe Commerce.
 
-L’ottimizzazione Fastly Image può essere abilitata &quot;abilita l’ottimizzazione deep image&quot; nella configurazione Fastly in admin, anche se solo dopo l’attivazione dello schermo di origine. Ulteriori dettagli sulle configurazioni per l’ottimizzazione Fastly Image sono disponibili in Adobe Commerce [documentazione per sviluppatori](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
+L’ottimizzazione Fastly Image può essere abilitata &quot;abilita l’ottimizzazione deep image&quot; nella configurazione Fastly in admin, anche se solo dopo l’attivazione dello schermo di origine. Ulteriori dettagli sulle configurazioni per l&#39;ottimizzazione Fastly Image sono disponibili nella [documentazione per gli sviluppatori](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) di Adobe Commerce.
 
-![Schermata delle impostazioni di ottimizzazione immagine Fastly in Adobe Commerce Admin](../assets/commerce-at-scale/image-optimization.svg)
+![Schermata delle impostazioni di ottimizzazione immagine Fastly nell&#39;amministrazione di Adobe Commerce](../assets/commerce-at-scale/image-optimization.svg)
 
 ## Disabilita moduli inutilizzati
 
@@ -57,7 +58,7 @@ Se l&#39;istanza di Adobe Commerce prevede un carico estremo, l&#39;attivazione 
 
 Come guida, negli ambienti con carico normale, l’abilitazione di Connessioni slave rallenterà le prestazioni del 10-15%. Tuttavia, nei cluster con carico e traffico elevati, le prestazioni aumentano del 10-15% circa. Pertanto, è importante eseguire un test di carico dell’ambiente con i livelli di traffico previsti per valutare se questa impostazione sarebbe utile per i tempi di prestazioni in condizioni di carico.
 
-Per attivare/disattivare le connessioni slave per mysql e redis, è necessario modificare il `.magento.env.yaml` file per includere quanto segue:
+Per abilitare/disabilitare le connessioni slave per mysql e redis, è necessario modificare il file `.magento.env.yaml` in modo che includa quanto segue:
 
 ```
 stage:
