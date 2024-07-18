@@ -2,7 +2,7 @@
 title: Eseguire le utilità di supporto
 description: Risolvere i problemi relativi al progetto Commerce utilizzando l'utilità di supporto incorporata.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Dove:
 
 I dati riservati includono le informazioni sui clienti delle tabelle di database seguenti:
 
-```terminal
+```
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ Al termine del comando, fornire il backup del database al supporto Adobe Commerc
 
 Forniamo comandi che visualizzano i percorsi delle utility richieste dall’agente di raccolta dati e dalla riga di comando. Puoi utilizzare questi comandi, ad esempio, se nella riga di comando o in Amministrazione vengono visualizzati errori come i seguenti:
 
-```terminal
+```
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Eseguire i seguenti comandi nell&#39;ordine indicato per visualizzare i percorsi
 
 Di seguito è riportato un esempio:
 
-```terminal
+```
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

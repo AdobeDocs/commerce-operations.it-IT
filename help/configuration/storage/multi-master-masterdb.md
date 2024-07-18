@@ -3,7 +3,7 @@ title: Configura automaticamente i database master
 description: Consulta le linee guida per la configurazione automatica della soluzione di database diviso.
 recommendations: noCatalog
 exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
@@ -110,7 +110,7 @@ bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quo
 
 Viene visualizzato il seguente messaggio per confermare la corretta configurazione:
 
-```terminal
+```
 Migration has been finished successfully!
 ```
 
@@ -134,6 +134,6 @@ bin/magento setup:upgrade
 
 Viene visualizzato il seguente messaggio per confermare la corretta configurazione:
 
-```terminal
+```
 Migration has been finished successfully!
 ```

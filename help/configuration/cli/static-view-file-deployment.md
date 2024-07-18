@@ -2,7 +2,7 @@
 title: Distribuire file di visualizzazione statica
 description: Scopri come scrivere file statici nel file system di Commerce durante la modalità di produzione.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 0a72bc492dfec0a9014a518282a97ab21e59f96d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -93,7 +93,7 @@ bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-
 
 Output di esempio:
 
-```terminal
+```
 Requested languages: en_US
 Requested areas: frontend, adminhtml
 Requested themes: Magento/blank, Magento/backend
@@ -132,7 +132,7 @@ bin/magento setup:static-content:deploy --area frontend --no-fonts --theme Magen
 
 Output di esempio:
 
-```terminal
+```
 Requested languages: en_US
 Requested areas: frontend
 Requested themes: Magento/luma
@@ -162,7 +162,7 @@ A questo scopo, effettua le seguenti operazioni:
 
 **Sintomo**: quando si esegue lo strumento di distribuzione dei file di visualizzazione statica viene visualizzato l&#39;errore seguente:
 
-```terminal
+```
 ERROR: You need to install the Commerce application before running this utility.
 ```
 

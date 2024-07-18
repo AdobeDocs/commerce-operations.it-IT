@@ -2,7 +2,7 @@
 title: Installazione rapida on-premise
 description: Per installare Adobe Commerce nell’infrastruttura di tua proprietà, segui la procedura riportata di seguito.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -27,33 +27,33 @@ Adobe utilizza [Compositore](https://getcomposer.org/) per gestire i componenti 
 
 ## Prerequisiti
 
-Prima di procedere, è necessario effettuare le seguenti operazioni:
+Prima di continuare, è necessario effettuare le seguenti operazioni:
 
-- Tutte le applicazioni tutte le [attività](system-requirements.md) preliminari.
-- [Installa Composer](https://getcomposer.org/download/).
+- Completa tutte le [attività preliminari](system-requirements.md).
+- [Installa Compositore](https://getcomposer.org/download/).
 - Ottieni [chiavi di autenticazione](prerequisites/authentication-keys.md) nell&#39;archivio del Compositore Adobe Commerce.
 
 ## Accedi come proprietario del file system
 
 Per informazioni su proprietà, autorizzazioni e proprietario del file system, vedere l&#39;argomento [Panoramica sulla proprietà e sulle autorizzazioni](prerequisites/file-system/overview.md).
 
-Per passare al file system proprietario:
+Per passare al proprietario del file system:
 
-1. Accedere al server applicazione come, o passare a, un utente con le autorizzazioni per scrivere sul file system.
+1. Accedere al server applicazioni come utente con autorizzazioni di scrittura nel file system o passare a tale utente.
 
-   Se si utilizza la shell bash, è possibile utilizzare la seguente sintassi per passare al proprietario del file system e immettere contemporaneamente il comando:
+   Se si utilizza la shell bash, è possibile utilizzare la sintassi seguente per passare al proprietario del file system e immettere contemporaneamente il comando:
 
    ```bash
    su <file system owner> -s /bin/bash -c <command>
    ```
 
-   Se il proprietario del file system non consente l&#39;accesso è possibile effettuare le seguenti operazioni:
+   Se il proprietario del file system non consente l&#39;accesso, è possibile effettuare le seguenti operazioni:
 
    ```bash
    sudo -u <file system owner>  <command>
    ```
 
-1. Per eseguire comandi CLI da qualsiasi directory, aggiungi `<app_root>/bin` al tuo sistema `PATH`.
+1. Per eseguire i comandi CLI da qualsiasi directory, aggiungere `<app_root>/bin` al sistema `PATH`.
 
    Poiché le shell hanno sintassi diverse, consultare un riferimento come [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
@@ -129,7 +129,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 Prima di installare Adobe Commerce, è necessario impostare le autorizzazioni di lettura e scrittura per il gruppo di server Web. Ciò è necessario affinché la riga di comando possa scrivere file nel file system.
 
-```terminal
+```bash
 cd /var/www/html/<magento install directory>
 find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
 find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
@@ -204,21 +204,21 @@ Nella tabella seguente vengono riepilogati i comandi disponibili. I comandi veng
 |--- |--- |--- |
 | `magento setup:install` | Installa l&#39;applicazione | Nessuno |
 | `magento setup:uninstall` | Rimuove l&#39;applicazione. | Applicazione installata |
-| `magento setup:upgrade` | Aggiorna il applicazione. | Configurazione dell&#39;implementazione |
+| `magento setup:upgrade` | Aggiorna l&#39;applicazione. | Configurazione della distribuzione |
 | `magento maintenance:{enable/disable}` | Attiva o disattiva la modalità di manutenzione (in modalità di manutenzione, solo gli indirizzi IP esenti possono accedere all’Admin o alla vetrina). | Applicazione installata |
 | `magento setup:config:set` | Crea o aggiorna la configurazione di distribuzione. | Nessuno |
-| `magento module:{enable/disable}` | Attivare o disattivare i moduli. | Nessuno |
-| `magento setup:store-config:set` | Imposta le opzioni relative alla vetrina del negozio, ad esempio URL base, lingua e fuso orario. | Configurazione dell&#39;implementazione |
+| `magento module:{enable/disable}` | Attiva o disattiva i moduli. | Nessuno |
+| `magento setup:store-config:set` | Imposta le opzioni relative alla vetrina, ad esempio URL di base, lingua, fuso orario. | Configurazione della distribuzione |
 | `magento setup:db-schema:upgrade` | Aggiorna lo schema del database. | Configurazione della distribuzione |
 | `magento setup:db-data:upgrade` | Aggiorna i dati del database. | Configurazione della distribuzione |
 | `magento setup:db:status` | Controlla se il database è aggiornato con il codice. | Configurazione della distribuzione |
-| `magento admin:user:create` | Crea un utente amministratore. | È possibile creare utenti per quanto segue:<br><br>Configurazione<br><br>della distribuzione Abilitare almeno il `Magento_User` database dei moduli<br><br>e `Magento_Authorization` (il modo più semplice è usare `bin/magento setup:upgrade`) |
+| `magento admin:user:create` | Crea un utente amministratore. | Puoi creare utenti per:<br><br>Configurazione della distribuzione<br><br>Abilitare almeno i moduli `Magento_User` e `Magento_Authorization`<br><br>Database (il modo più semplice è utilizzare `bin/magento setup:upgrade`) |
 | `magento list` | Elenca tutti i comandi disponibili. | Nessuno |
-| `magento help` | Guida per il comando specificato. | Nessuno |
+| `magento help` | Visualizza la Guida per il comando specificato. | Nessuno |
 
 ### Argomenti comuni
 
-Gli argomenti seguenti sono comuni a tutti i comandi. Questi comandi possono essere eseguiti prima o dopo l&#39;installazione del applicazione:
+I seguenti argomenti sono comuni a tutti i comandi. Questi comandi possono essere eseguiti prima o dopo l&#39;installazione dell&#39;applicazione:
 
 | Versione lunga | Versione breve | Significato |
 |--- |--- |--- |

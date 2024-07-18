@@ -3,7 +3,7 @@ title: Configurare il server web
 description: Scopri come configurare il server web per l’utilizzo di Vernice.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Se Varnish non si avvia come servizio, inizialo dalla riga di comando come segue
 
    Per confermare un avvio riuscito, vengono visualizzati i seguenti messaggi:
 
-   ```terminal
+   ```
    child (29805) Started
    200 0
    
@@ -159,7 +159,7 @@ netstat -tulpn
 
 Cerca in particolare il seguente output:
 
-```terminal
+```
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
@@ -178,7 +178,7 @@ Installare il software Commerce, se non lo si è già fatto. Quando viene richie
 
 Possibile errore durante l&#39;installazione di Commerce:
 
-```terminal
+```
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -217,7 +217,7 @@ In un browser web, vai a qualsiasi pagina di Commerce.
 
 Nella finestra del prompt dei comandi viene visualizzato un lungo elenco di intestazioni di risposta. Cerca intestazioni come le seguenti:
 
-```terminal
+```
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -252,7 +252,7 @@ curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 
 Cerca intestazioni come le seguenti:
 
-```terminal
+```
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

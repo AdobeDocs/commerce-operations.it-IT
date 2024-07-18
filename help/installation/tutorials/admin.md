@@ -3,7 +3,7 @@ title: Creare, modificare o sbloccare un account amministratore
 description: Per gestire l’account amministratore dell’applicazione Adobe Commerce Admin, segui la procedura riportata di seguito.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Esempio di utilizzo:
 bin/magento admin:user:create --admin-firstname=John --admin-lastname=Doe --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A0b9%t3g
 ```
 
-```terminal
+```
 Created Magento administrator user named j.doe
 ```
 
@@ -63,7 +63,7 @@ Se non si specifica alcun parametro obbligatorio, l&#39;applicazione chiede info
 bin/magento admin:user:create
 ```
 
-```terminal
+```
 Admin user: John
 Admin password:
 Admin email: j.doe.young@example.com
@@ -71,7 +71,7 @@ Admin first name: John
 Admin last name: Doe Young
 ```
 
-```terminal
+```
 Created Magento administrator user named John
 ```
 
@@ -81,7 +81,7 @@ Il seguente esempio aggiorna `first name`, `last name` e `password` di `j.doe` u
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
 ```
 
-```terminal
+```
 Created Magento administrator user named j.doe
 ```
 
@@ -99,13 +99,13 @@ Specificare il nome utente dell&#39;amministratore. Esempio:
 bin/magento admin:user:unlock admin
 ```
 
-```terminal
+```
 The user account "admin" has been unlocked
 ```
 
 Se l’account non è sbloccato o si è verificato un problema, viene visualizzato il seguente messaggio:
 
-```terminal
+```
 The user account "admin" was not locked or could not be unlocked
 ```
 
@@ -113,6 +113,6 @@ Verificare che l&#39;utente sia un amministratore, che sia attivo e che l&#39;ac
 
 Se l’account non esiste, viene visualizzato il seguente messaggio:
 
-```terminal
+```
 Couldn't find the user account "bob"
 ```

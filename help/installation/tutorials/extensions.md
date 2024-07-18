@@ -2,7 +2,7 @@
 title: Gestire le estensioni di terze parti
 description: Segui questi passaggi per installare, abilitare, aggiornare e disinstallare le estensioni Adobe Commerce.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 6da0e70acc77d2171d6336ab632e6a9a8dd16c67
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
@@ -98,7 +98,7 @@ Aggiungere il nome e la versione dell&#39;estensione al file `composer.json`:
 
 1. Attendi che Composer completi l’aggiornamento delle dipendenze del progetto e assicurati che non siano presenti errori:
 
-   ```terminal
+   ```
    Updating dependencies (including require-dev)
    Package operations: 1 install, 0 updates, 0 removals
      - Installing j2t/module-payplug (2.0.2): Downloading (100%)
@@ -116,7 +116,7 @@ bin/magento module:status J2t_Payplug
 
 Per impostazione predefinita, l’estensione è probabilmente disabilitata:
 
-```terminal
+```
 Module is disabled
 ```
 
@@ -140,7 +140,7 @@ Alcune estensioni non funzionano correttamente a meno che non si cancellino prim
 
    Dovresti visualizzare il seguente output:
 
-   ```terminal
+   ```
    The following modules have been enabled:
    - J2t_Payplug
    
@@ -170,7 +170,7 @@ Alcune estensioni non funzionano correttamente a meno che non si cancellino prim
 
    Dovresti vedere l’output che verifica che l’estensione non sia più disabilitata:
 
-   ```terminal
+   ```
    Module is enabled
    ```
 

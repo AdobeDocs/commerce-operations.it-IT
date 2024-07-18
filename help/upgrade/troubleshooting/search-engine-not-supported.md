@@ -3,7 +3,7 @@ title: Motore di ricerca corrente non supportato
 description: Risolvi i problemi relativi all’aggiornamento di Adobe Commerce dopo aver riscontrato un errore relativo a un motore di ricerca non supportato.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Il seguente messaggio di errore indica che la versione di Adobe Commerce da cui stai eseguendo l’aggiornamento è configurata per l’utilizzo di un motore di ricerca catalogo non supportato nella versione a cui stai effettuando l’aggiornamento:
 
-```terminal
+```
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 

@@ -2,7 +2,7 @@
 title: Clona i dati di esempio Git archivi
 description: Per installare i dati di esempio di Adobe Commerce clonando gli archivi Git, segui la procedura riportata di seguito.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Per clonare i dati di esempio dell’archivio GitHub utilizzando il protocollo S
    >
    >Se viene visualizzato il seguente errore, assicurati di [aver condiviso la tua chiave SSH](https://docs.github.com/articles/generating-ssh-keys/) con GitHub:<br>
 
-   ```terminal
+   ```
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly

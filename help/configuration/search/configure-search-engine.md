@@ -3,7 +3,7 @@ title: Configurazione del motore di ricerca
 description: Configura un motore di ricerca per le distribuzioni locali di Adobe Commerce.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 0%
@@ -75,7 +75,7 @@ In tal caso, provare a effettuare le seguenti operazioni:
 
   Se è in esecuzione sulla porta 9200, viene visualizzato come segue:
 
-  ```terminal
+  ```
   `tcp        0      0 :::9200            :::-         LISTEN`
   ```
 

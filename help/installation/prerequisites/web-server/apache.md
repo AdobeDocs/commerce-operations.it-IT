@@ -2,7 +2,7 @@
 title: Apache
 description: Per installare e configurare il server web Apache per le installazioni locali di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Adobe Commerce utilizza le riscritture del server e `.htaccess` per fornire istr
 
    Ad esempio, è possibile aggiungere quanto segue alla fine di `000-default.conf`:
 
-   ```terminal
+   ```
    <Directory "/var/www/html">
        AllowOverride All
    </Directory>
@@ -98,7 +98,7 @@ apache2 -v
 
 Il risultato è simile al seguente:
 
-```terminal
+```
 Server version: Apache/2.4.04 (Ubuntu)
 Server built: Jul 22 2020 14:35:32
 ```
@@ -132,7 +132,7 @@ Per installare la versione predefinita di Apache:
 
    Il risultato è simile al seguente:
 
-   ```terminal
+   ```
    Server version: Apache/2.4.18 (Ubuntu)
    Server built: 2020-04-15T18:00:57
    ```
@@ -175,7 +175,7 @@ Per effettuare l’aggiornamento ad Apache 2.4:
 
    Dovrebbero essere visualizzati messaggi simili ai seguenti:
 
-   ```terminal
+   ```
    Server version: Apache/2.4.10 (Ubuntu)
    Server built: Jul 22 2020 22:46:25
    ```
@@ -204,7 +204,7 @@ L&#39;installazione e la configurazione di Apache sono fondamentalmente tre pass
 
    Vengono visualizzati messaggi simili al seguente per confermare che l’installazione è andata a buon fine:
 
-   ```terminal
+   ```
    Server version: Apache/2.4.40 (Unix)
    Server built: Oct 16 2020 14:48:21
    ```
