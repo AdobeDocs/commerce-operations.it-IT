@@ -1,7 +1,7 @@
 ---
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 50b87e6f2f604d195c2d079bd18451754edaa11c
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ Con le versioni delle patch di sicurezza, è possibile proteggere il sito in mod
 
 Ogni versione di patch di sicurezza si basa sulla versione completa precedente della patch. Contiene le correzioni di qualità e sicurezza della versione patch precedente e le correzioni di sicurezza create tra la versione patch completa precedente e la versione patch di sicurezza.
 
-Per istruzioni su come scaricare e applicare le patch di sicurezza, vedere [Installazione rapida](../installation/composer.md#example---security-patch).
+Per istruzioni su come scaricare e applicare le patch di sicurezza, vedere [Eseguire e aggiornare](../installation/composer.md#example---security-patch) nella _Guida all&#39;aggiornamento_.
