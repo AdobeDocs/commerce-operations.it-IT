@@ -2,9 +2,9 @@
 title: Pianificazione della versione
 description: Scopri quando Adobe intende annunciare il rilascio di nuove funzioni per Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 2dd18f3eada5fc5e1abe9ecc7954df06986abcd1
+source-git-commit: dc493fc044401e33ef40e4e070b5d82977938eb1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -82,7 +82,7 @@ Nella tabella seguente sono riportate le date dei rilasci patch pianificati (le 
   </tr>
   <tr>
     <td>14 ottobre 2025</td>
-    <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patch di sicurezza</a>: per 2.4.8, 2.4.7, 2.4.6 e 2.4.5</td>
+    <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patch di sicurezza</a>: per 2.4.8, 2.4.7 e 2.4.6</td>
   </tr>
 </tbody>
 </table>
