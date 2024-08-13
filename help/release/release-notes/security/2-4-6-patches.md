@@ -2,9 +2,9 @@
 title: Note sulla versione della patch di sicurezza di Adobe Commerce 2.4.6
 description: Scopri le correzioni di bug di sicurezza, i miglioramenti della sicurezza e altri aggiornamenti relativi alla sicurezza inclusi nelle versioni delle patch di sicurezza per Adobe Commerce 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 3a2d104f0a689ac3715af302d470a1660857543c
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1201'
 ht-degree: 0%
 
 ---
@@ -14,37 +14,51 @@ ht-degree: 0%
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
-## Adobe Commerce 2.4.6-p6
+## 2,4,6-p7
+
+La versione di sicurezza di Adobe Commerce 2.4.6-p7 fornisce correzioni di bug di sicurezza per le vulnerabilità identificate nelle versioni precedenti della versione 2.4.6.
+
+Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
+
+### In evidenza
+
+{{$include /help/_includes/release-notes/2024-08/security.md}}
+
+### Hotfix inclusi in questa versione
+
+{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+
+## 2,4,6-p6
 
 La versione di sicurezza Adobe Commerce 2.4.6-p6 fornisce correzioni di bug di sicurezza per le vulnerabilità identificate nelle versioni precedenti della versione 2.4.6.
 
 Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
+Per la compatibilità con Commerce versione 2.4.6-p6, i commercianti con estensione Adobe Commerce B2B devono eseguire l&#39;aggiornamento alla versione [B2B versione 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
+
 ### Applica hotfix per CVE-2024-34102
 
 {{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
 
-### Evidenziazione sicurezza
+Per la compatibilità con Commerce versione 2.4.6-p6, i commercianti con estensione Adobe Commerce B2B devono eseguire l&#39;aggiornamento alla versione [B2B versione 1.4.2-p1](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes#b2b-v142p1.html).
 
-Per la compatibilità con Commerce versione 2.4.6-p6, i commercianti con estensione Adobe Commerce B2B devono eseguire l&#39;aggiornamento alla versione [B2B versione 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
-
-### Ulteriori miglioramenti della sicurezza
+### In evidenza
 
 {{$include /help/_includes/release-notes/2-4-7-security.md}}
 
-## Adobe Commerce 2.4.6-p5
+## 2,4,6-p5
 
 La versione di sicurezza Adobe Commerce 2.4.6-p5 fornisce correzioni di bug di sicurezza per le vulnerabilità identificate nelle versioni precedenti della versione 2.4.6.
 
 Per informazioni aggiornate su queste correzioni, vedere [Adobe Security Bulletin APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html).
 
-## Adobe Commerce 2.4.6-p4
+## 2,4,6-p4
 
 La versione di sicurezza Adobe Commerce 2.4.6-p4 fornisce correzioni di bug di sicurezza per le vulnerabilità identificate nelle versioni precedenti. Questa versione include anche miglioramenti di sicurezza che migliorano la conformità alle più recenti best practice per la sicurezza.
 
 Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html).
 
-### Elementi di rilievo sulla sicurezza
+### In evidenza
 
 Questa versione introduce due miglioramenti significativi per la sicurezza:
 
@@ -55,13 +69,13 @@ Questa versione introduce due miglioramenti significativi per la sicurezza:
 
 * **Limitazioni al numero di codici coupon generati automaticamente**. Commerce ora limita il numero di codici coupon generati automaticamente. Il valore massimo predefinito è 250.000. I commercianti possono utilizzare la nuova opzione di configurazione **[!UICONTROL Code Quantity Limit]** (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**) per controllare questo nuovo limite. <!-- AC-8753 -->
 
-## Adobe Commerce 2.4.6-p3
+## 2.4.6-p3
 
 La versione di sicurezza Adobe Commerce 2.4.6-p3 fornisce correzioni di bug di sicurezza per le vulnerabilità identificate nelle versioni precedenti. Questa versione include anche miglioramenti di sicurezza per migliorare la conformità alle più recenti best practice in materia di sicurezza.
 
 Per informazioni aggiornate sulle correzioni di sicurezza, vedere [Adobe Security Bulletin APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html).
 
-### Elementi di rilievo sulla sicurezza
+### In evidenza
 
 Questa versione introduce una nuova impostazione di configurazione della cache di pagina intera che consente di attenuare i rischi associati all&#39;endpoint `{BASE-URL}/page_cache/block/esi HTTP`. Questo endpoint supporta frammenti di contenuto senza restrizioni e caricati dinamicamente dagli handle di layout e dalle strutture di blocco di Commerce. La nuova impostazione di configurazione **[!UICONTROL Handles Param]** imposta il valore del parametro `handles` di questo endpoint, che determina il numero massimo consentito di handle per API. Il valore predefinito di questa proprietà è 100. I commercianti possono modificare questo valore dall&#39;amministratore (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**. <!-- AC-9113 -->
 
@@ -69,7 +83,7 @@ Questa versione introduce una nuova impostazione di configurazione della cache d
 
 Adobe Commerce 2.4.6-p3 include la risoluzione del degrado delle prestazioni risolto dalla patch ACSD-51892. I commercianti non sono interessati dal problema risolto da questa patch, descritto nell&#39;articolo [ACSD-51892: Problema di prestazioni in cui i file di configurazione vengono caricati più volte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html) della Knowledge Base.
 
-### Problema noto
+### Problemi noti
 
 **Problema**: Adobe Commerce visualizza un errore `wrong checksum` durante il download da parte del Compositore da `repo.magento.com` e il download del pacchetto è stato interrotto. Questo problema può verificarsi durante il download dei pacchetti di rilascio resi disponibili durante il periodo di prerelease ed è causato da un repackaging del pacchetto `magento/module-page-cache`.
 
@@ -86,11 +100,11 @@ La versione di sicurezza Adobe Commerce 2.4.6-p2 fornisce correzioni di bug di s
 
 Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html).
 
-### Applica la patch per risolvere la vulnerabilità di sicurezza CVE-2022-31160 nella libreria jQuery-UI
+### Applica hotfix per CVE-2022-31160
 
 La libreria `jQuery-UI` versione 1.13.1 presenta una vulnerabilità di sicurezza nota (CVE-2022-31160) che interessa più versioni di Adobe Commerce e Magento Open Source. Questa libreria è una dipendenza di Adobe Commerce e dei Magenti Open Source 2.4.4, 2.4.5 e 2.4.6. I commercianti che eseguono distribuzioni interessate devono applicare la patch specificata nella correzione della vulnerabilità di sicurezza dell&#39;interfaccia utente [jQuery CVE-2022-31160 per le versioni 2.4.4, 2.4.5 e 2.4.6](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) dell&#39;articolo della Knowledge Base.
 
-### Evidenziazione sicurezza
+### In evidenza
 
 Il valore di `fastcgi_pass` nel file `nginx.sample` è stato restituito al precedente valore di `fastcgi_backend` (precedente alla 2.4.6-p1). Questo valore è stato inavvertitamente modificato in `php-fpm:9000` in Adobe Commerce 2.4.6-p1.
 
@@ -98,17 +112,17 @@ Il valore di `fastcgi_pass` nel file `nginx.sample` è stato restituito al prece
 
 Adobe Commerce 2.4.6-p2 include la risoluzione del degrado delle prestazioni risolto dalla patch ACSD-51892. I commercianti non sono interessati dal problema risolto da questa patch, descritto nell&#39;articolo [ACSD-51892: Problema di prestazioni in cui i file di configurazione vengono caricati più volte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html) della Knowledge Base.
 
-## Adobe Commerce 2.4.6-p1
+## 2.4.6-p1
 
 La versione di sicurezza Adobe Commerce 2.4.6-p1 fornisce correzioni di bug di sicurezza per le vulnerabilità identificate nelle versioni precedenti. Questa versione include anche miglioramenti della sicurezza e aggiornamenti della piattaforma per migliorare la conformità alle più recenti best practice per la sicurezza.
 
 Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html).
 
-### Applica la patch per risolvere la vulnerabilità di sicurezza CVE-2022-31160 nella libreria jQuery-UI
+### Applica hotfix per CVE-2022-31160
 
 La libreria `jQuery-UI` versione 1.13.1 presenta una vulnerabilità di sicurezza nota (CVE-2022-31160) che interessa più versioni di Adobe Commerce e Magento Open Source. Questa libreria è una dipendenza di Adobe Commerce e dei Magenti Open Source 2.4.4, 2.4.5 e 2.4.6. I commercianti che eseguono distribuzioni interessate devono applicare la patch specificata nella correzione della vulnerabilità di sicurezza dell&#39;interfaccia utente di query CVE-2022-31160 per le versioni 2.4.4, 2.4.5 e 2.4.6](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) dell&#39;articolo della Knowledge Base.[
 
-#### Evidenziazione sicurezza
+#### Evidenzia
 
 Il comportamento predefinito della query GraphQL [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) e dell&#39;endpoint REST ([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) è stato modificato. Per impostazione predefinita, l&#39;API ora restituisce sempre `true`. I commercianti possono abilitare il comportamento originale, che restituisce `true` se l&#39;e-mail non esiste nel database e `false` se esiste. <!-- AC-6695 -->
 
