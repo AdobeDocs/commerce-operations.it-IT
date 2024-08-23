@@ -3,12 +3,13 @@ title: Aree geografiche dell’infrastruttura cloud
 description: Esamina i diagrammi che mostrano le aree geografiche di AWS e Azure disponibili per Adobe Commerce.
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
 feature: Cloud
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 4b42fc5deb12c97c2c078d0a25992ba23735747e
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '73'
 ht-degree: 0%
 
 ---
+
 
 # Aree geografiche cloud
 
@@ -16,7 +17,7 @@ Le sezioni seguenti forniscono dettagli sulle diverse aree di AWS e Azure dispon
 
 ## Aree geografiche di AWS
 
-![Diagramma che mostra le aree geografiche di AWS](../../../assets/playbooks/aws-regions.png)
+![Diagramma che mostra le aree geografiche di AWS](../../../assets/playbooks/aws-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -24,7 +25,7 @@ Le sezioni seguenti forniscono dettagli sulle diverse aree di AWS e Azure dispon
 
 ## Aree geografiche di Azure
 
-![Diagramma che mostra le aree geografiche di Azure](../../../assets/playbooks/azure-regions.png)
+![Diagramma che mostra le aree geografiche di Azure](../../../assets/playbooks/azure-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >
