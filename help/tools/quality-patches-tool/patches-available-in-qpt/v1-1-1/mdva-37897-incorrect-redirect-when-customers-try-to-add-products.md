@@ -1,0 +1,64 @@
+---
+title: "MDVA-37897: reindirizzamento non corretto quando si aggiungono prodotti visualizzati di recente"
+description: La patch MDVA-37897 risolve il problema del reindirizzamento errato quando gli utenti tentano di aggiungere prodotti con opzioni del widget Visualizzato di recente. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1. L'ID della patch è MDVA-37897. Il problema è pianificato per la risoluzione in Adobe Commerce versione 2.4.4.
+feature: Products
+role: Admin
+source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 0%
+
+---
+
+# MDVA-37897: reindirizzamento non corretto quando si aggiungono prodotti visualizzati di recente
+
+La patch MDVA-37897 risolve il problema del reindirizzamento errato quando gli utenti tentano di aggiungere prodotti con opzioni del widget Visualizzato di recente. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1. L&#39;ID della patch è MDVA-37897. Il problema è pianificato per la risoluzione in Adobe Commerce versione 2.4.4.
+
+## Prodotti e versioni interessati
+
+**La patch è stata creata per la versione di Adobe Commerce:**
+
+* Adobe Commerce sulla nostra infrastruttura cloud 2.4.1
+
+**Compatibile con le versioni di Adobe Commerce:**
+
+* Adobe Commerce (tutti i metodi di implementazione) 2.3.0 - 2.4.2-p1
+
+>[!NOTE]
+>
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni dello strumento Patch di qualità. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+
+## Problema
+
+Quando un utente tenta di aggiungere un prodotto dalla sezione Visualizzato di recente in cui è necessario selezionare alcune opzioni, viene reindirizzato alla pagina dell’elenco dei prodotti anziché alla pagina dei dettagli del prodotto.
+
+<u>Passaggi da riprodurre</u>:
+
+1. Crea un prodotto semplice con opzioni personalizzabili (Tipo: Pulsante di scelta).
+1. Configura il widget Visualizzato di recente per mostrare i prodotti.
+1. Visita i prodotti con opzioni personalizzabili in modo che vengano visualizzati nel widget Visualizzato di recente.
+1. Fai clic su **Aggiungi al carrello** su uno dei prodotti nel widget Visualizzato di recente.
+
+<u>Risultati previsti</u>:
+
+Ti reindirizzano alla pagina dei dettagli del prodotto per scegliere le opzioni.
+
+<u>Risultati effettivi</u>:
+
+Ti reindirizzano alla pagina dell’elenco dei prodotti.
+
+## Applicare la patch
+
+Per applicare singole patch, utilizzare i collegamenti seguenti a seconda del tipo di distribuzione:
+
+* Adobe Commerce on-premise: [Guida all&#39;aggiornamento software > Applicazione di patch](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) nella documentazione per gli sviluppatori.
+* Adobe Commerce sulla nostra infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://devdocs.magento.com/cloud/project/project-patch.html) nella documentazione per gli sviluppatori.
+
+## Lettura correlata
+
+Per ulteriori informazioni sulle patch di qualità per Adobe Commerce, consulta:
+
+* [È stato rilasciato lo strumento Quality Patches: è stato introdotto un nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
+* [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando lo strumento Patch di qualità](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md).
+
+Per informazioni sulle altre patch disponibili in QPT, consulta la sezione [Patch disponibili in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html-).
