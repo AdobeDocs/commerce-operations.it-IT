@@ -3,9 +3,9 @@ title: "ACSD-46519: [!UICONTROL product_count] in [!UICONTROL categoryList] [!DN
 description: Applicare la patch ACSD-46519 per risolvere il problema di Adobe Commerce. Quando si utilizza il metodo [!UICONTROL categoryList] [!DNL GraphQL]  per ottenere categorie figlio, il valore [!UICONTROL product_count] viene visualizzato come 0 per le categorie padre.
 feature: Categories, GraphQL, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Se la categoria padre è ancorata, i prodotti vengono visualizzati come 0 per il
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata

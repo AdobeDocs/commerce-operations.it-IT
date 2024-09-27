@@ -3,9 +3,9 @@ title: "ACSD-52824: Metodi di pagamento disattivati visualizzati per i clienti a
 description: Applica la patch ACSD-52824 per risolvere il problema di Adobe Commerce, in cui  [!DNL PayPal Express], [!DNL Google Pay], and [!DNL Apple Pay] i metodi di pagamento vengono visualizzati per i clienti aziendali nonostante siano disabilitati nelle impostazioni aziendali.
 feature: Payments, B2B, Shopping Cart
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Le opzioni di pagamento di [!DNL PayPal] e [!DNL Braintree] rimangono visibili n
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata

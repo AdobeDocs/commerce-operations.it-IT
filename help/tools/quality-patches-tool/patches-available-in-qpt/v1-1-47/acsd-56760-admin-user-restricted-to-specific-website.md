@@ -2,9 +2,9 @@
 title: "ACSD-56760: l’utente amministratore è limitato a un sito web specifico e non è in grado di ordinare o aggiungere nuovi prodotti"
 description: Applica la patch ACSD-56760 per risolvere il problema di Adobe Commerce, a causa del quale l’utente amministratore limitato a un sito web specifico e non è in grado di ordinare o aggiungere nuovi prodotti all’interno di una categoria nel caso in cui lo store web abbia la propria categoria principale.
 role: Admin
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ L’utente amministratore limitato a un sito web specifico e che non è in grado
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
