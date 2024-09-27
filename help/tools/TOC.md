@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: af567e6643ef977671f8ba27dbb961bcc4c7d472
+source-git-commit: d9354e2d63701f402adc4693785a50aa720fce67
 workflow-type: tm+mt
-source-wordcount: '5892'
+source-wordcount: '5904'
 ht-degree: 0%
 
 ---
@@ -625,6 +625,7 @@ ht-degree: 0%
          - [ACSD-60303: problema di posizionamento dell’ordine amministratore risolto con la minimizzazione dei HTML abilitata](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
       - v1.1.51 {#v1-1-51}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
+         - [ACSD-61195: la richiesta Cart GraphQL non restituisce gli elementi nella pagina finale](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
          - [ACSD-60538: gli attributi non mostrano se un prodotto è disabilitato](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
       - v1.1.52 {#v1-1-52}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
