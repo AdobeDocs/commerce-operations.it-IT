@@ -4,9 +4,9 @@ description: Gestisci e ottimizza le prestazioni del sito seguendo le best pract
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
+source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Per ottimizzare e mantenere le prestazioni del sito, esaminare e aggiornare la c
 
 ## Imposta gli indicizzatori da aggiornare in base a una pianificazione
 
-Adobe Commerce dispone di due tipi di modalità di indicizzazione: [!UICONTROL Update on Save] (impostazione predefinita) e [!DNL Update on Schedule].
+Adobe Commerce dispone di due tipi di modalità di indicizzazione: [!UICONTROL Update on Save] e [!DNL Update on Schedule].
 
 - La modalità **[!UICONTROL Update on Save]** aggiorna immediatamente gli indici ogni volta che il catalogo o altri dati cambiano. Ad esempio, se un utente amministratore aggiunge nuovi prodotti a una categoria, l’indice dei prodotti della categoria viene reindicizzato immediatamente al salvataggio dell’aggiornamento.
 

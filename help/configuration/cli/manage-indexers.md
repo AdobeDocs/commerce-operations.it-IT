@@ -2,9 +2,9 @@
 title: Gestire gli indicizzatori
 description: Consulta alcuni esempi su come visualizzare e gestire gli indicizzatori Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 9a92204369d3a8310aadfb94f8193a6c89f78c30
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -194,7 +194,7 @@ Catalog Search indexer has been invalidated.
 
 Utilizzare questo comando per impostare le opzioni di indicizzazione seguenti:
 
-- **Aggiornamento al salvataggio (`realtime`)**: i dati indicizzati vengono aggiornati quando viene apportata una modifica nell&#39;amministratore. Ad esempio, l’indice dei prodotti di categoria viene reindicizzato dopo l’aggiunta dei prodotti a una categoria in Admin. Questa è l&#39;impostazione predefinita.
+- **Aggiornamento al salvataggio (`realtime`)**: i dati indicizzati vengono aggiornati quando viene apportata una modifica nell&#39;amministratore. Ad esempio, l’indice dei prodotti di categoria viene reindicizzato dopo l’aggiunta dei prodotti a una categoria in Admin.
 - **Aggiornamento in base alla pianificazione (`schedule`)**: i dati sono indicizzati in base alla pianificazione impostata dal processo cron.
 
 [Ulteriori informazioni sull&#39;indicizzazione](https://developer.adobe.com/commerce/php/development/components/indexing/).

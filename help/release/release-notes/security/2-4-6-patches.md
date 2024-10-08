@@ -2,9 +2,9 @@
 title: Note sulla versione della patch di sicurezza di Adobe Commerce 2.4.6
 description: Scopri le correzioni di bug di sicurezza, i miglioramenti della sicurezza e altri aggiornamenti relativi alla sicurezza inclusi nelle versioni delle patch di sicurezza per Adobe Commerce 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 7024c6a9c464257df00ed98f435a3d7793478db5
+source-git-commit: cb4f388c90902c2fe1df4a5d84841280fa740104
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,22 @@ ht-degree: 0%
 # Note sulla versione per le patch di sicurezza di Adobe Commerce 2.4.6
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## 2.4.6-p8
+
+La versione di sicurezza di Adobe Commerce 2.4.6-p8 fornisce correzioni di bug di sicurezza per le vulnerabilità identificate nelle versioni precedenti della versione 2.4.6.
+
+Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
+
+{{b2b-patches}}
+
+### In evidenza
+
+{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+
+### Hotfix inclusi in questa versione
+
+{{$include /help/_includes/release-notes/2024-10/hotfixes-included-foo.md}}
 
 ## 2,4,6-p7
 
