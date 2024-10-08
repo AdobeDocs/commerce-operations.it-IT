@@ -1,7 +1,7 @@
 ---
-source-git-commit: cb3392b7716667201305b7502f6c9c31bc7d1a23
+source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
 workflow-type: tm+mt
-source-wordcount: '14443'
+source-wordcount: '14792'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ compatibilità e funzionalità aggiornate. In precedenza, l’aggiornamento alle
 
 ## Problemi risolti
 
-Sono stati risolti 253 problemi nel codice core del Magento Open Source 2.4.8. Di seguito è descritto un sottoinsieme dei problemi risolti inclusi in questa versione.
+Sono stati risolti 254 problemi nel codice core del Magento Open Source 2.4.8. Di seguito è descritto un sottoinsieme dei problemi risolti inclusi in questa versione.
 
 ### API
 
@@ -207,6 +207,10 @@ In precedenza era possibile creare il gruppo di clienti prezzo gruppo sito web d
    * _Nota corretta_: il sistema ora accetta caricamenti di immagini di prodotto con estensioni di file in maiuscolo, garantendo un processo di creazione del prodotto fluido. In precedenza, i caricamenti di immagini con estensioni di file in maiuscolo venivano rifiutati, costringendo gli utenti a cambiare l’estensione del file in minuscolo.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/38831>
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-6975_: [Problema] Imposta la modalità di indicizzazione predefinita su &#39;pianificazione&#39;
+   * _Correzione nota_: per impostazione predefinita, tutti i nuovi indicizzatori sono in modalità **[!UICONTROL Update by Schedule]**.  In precedenza, la modalità predefinita era **[!UICONTROL Update on Save]**. Gli indicizzatori esistenti non vengono interessati. [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+   * _Problema GitHub_: <https://github.com/magento/magento2/issues/36419>
+   * _Contributo codice GitHub_: <https://github.com/magento/magento2/commit/0b410856>
 * _AC-7700_: [Problema] Eliminare le tabelle del registro modifiche dell&#39;indicizzatore all&#39;annullamento dell&#39;abbonamento a mview
    * _Correzione nota_: il sistema rimuove automaticamente le tabelle del registro modifiche non utilizzate quando un indice viene cambiato da &quot;aggiorna secondo pianificazione&quot; a &quot;aggiorna al salvataggio&quot;, contrassegnando l&#39;indice come non valido per garantire che non vengano perse voci. In precedenza, il passaggio di un indice a &quot;aggiorna al salvataggio&quot; lasciava le tabelle del registro modifiche inutilizzate nel sistema e contrassegnava tutti gli indici modificati come &quot;validi&quot;.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/29789>
@@ -300,18 +304,24 @@ Ora è possibile aggiornare gli stati degli ordini creati su misura, mentre in p
 ### Braintree
 
 * _BUNDLE-3367_: pagamento tramite LPM
+   * _Correzione nota_: il sistema ora esegue correttamente il rendering dei metodi di pagamento locali (LPM) al caricamento iniziale, anche quando gli indirizzi di spedizione e fatturazione di un cliente connesso non corrispondono, garantendo un processo di pagamento fluido. In precedenza, una mancata corrispondenza tra gli indirizzi di spedizione e di fatturazione di un cliente impediva il rendering di LPM, causando potenziali interruzioni durante il pagamento.
    * _Contributo codice GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3368_: configurabile con prodotto virtuale come secondario
+   * _Correzione nota_: il sistema ora consente metodi di pagamento rapido per prodotti configurabili che hanno un prodotto figlio virtuale, garantendo un processo di pagamento senza problemi. In precedenza, i metodi di pagamento rapido non erano disponibili quando al carrello veniva aggiunto un prodotto configurabile con un prodotto figlio virtuale.
    * _Contributo codice GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3369_: errore di verifica CVV non riuscita
    * _Contributo codice GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3370_: archiviazione tramite l&#39;area dell&#39;account problemi 247
+   * _Correzione nota_: il sistema ora consente ai clienti di salvare le informazioni relative alla nuova carta o all&#39;account PayPal in più siti Web senza riscontrare errori di autorizzazione. In precedenza, i clienti non erano in grado di salvare nuovi metodi di pagamento tra siti web diversi e ricevevano un messaggio di errore di autorizzazione.
    * _Contributo codice GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3371_: invia a un indirizzo di un altro paese
+   * _Correzione nota_: il sistema ora consente l&#39;elaborazione delle transazioni senza errori durante la spedizione a un indirizzo di un altro paese, garantendo un processo di pagamento senza problemi. In precedenza, il tentativo di spedire un indirizzo da un altro paese generava errori nella console, nonostante non fossero visibili errori nel front-end.
    * _Contributo codice GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3372_: carta di credito - funzione Teardown
+   * _Correzione nota_: il sistema ora gestisce correttamente il ripristino dei componenti PayPal di Braintree quando un cliente torna dalla pagina di pagamento alla pagina di spedizione, evitando errori e assicurandosi che i pulsanti PayPal Express vengano riprodotti correttamente. In precedenza, tornando alla pagina di spedizione dalla pagina di pagamento a volte si verificava un errore durante il tentativo di eliminare la Braintree dei componenti PayPal.
    * _Contributo codice GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3373_: richiamata di spedizione per PayPal Express
+   * _Correzione nota_: il sistema ora visualizza correttamente i metodi di spedizione disponibili nel modale PayPal Express, consentendo ai clienti di selezionare il metodo di spedizione preferito prima di passare alla pagina di revisione o completare la transazione. In precedenza, non era disponibile alcun metodo di spedizione da selezionare nel modale PayPal Express, che richiedeva ai clienti di selezionare un metodo di spedizione in una pagina di revisione separata prima di poter completare la transazione.
    * _Contributo codice GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 
 ### Carrello e pagamento
