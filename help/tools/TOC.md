@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: a19b19560a84dcbc308c1f778262689bce0bdb65
+source-git-commit: 07d7aafc25c9d9cdf9b6adfe6ff09f1088c53749
 workflow-type: tm+mt
-source-wordcount: '5938'
+source-wordcount: '5948'
 ht-degree: 0%
 
 ---
@@ -628,6 +628,7 @@ ht-degree: 0%
          - [ACSD-60632: indirizzo salvato con ogni tentativo di ordine](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
          - [ACSD-61195: la richiesta Cart GraphQL non restituisce gli elementi nella pagina finale](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
          - [ACSD-60538: gli attributi non mostrano se un prodotto è disabilitato](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
+         - [ACSD-60326: la query GraphQL sullo stato del cliente [!UICONTROL Returns] restituisce un errore](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
       - v1.1.52 {#v1-1-52}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
          - [ACSD-61322: i prodotti non assegnati a [!UICONTROL Shared Catalogue] sono inclusi in XML Sitemap](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
