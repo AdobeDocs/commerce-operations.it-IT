@@ -2,7 +2,7 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 3efc57161e30a17dae50a52060a78698997649f0
+source-git-commit: fec2ee4a047d8b33fa1cb3b2c4d9364f925fa028
 workflow-type: tm+mt
 source-wordcount: '6061'
 ht-degree: 0%
@@ -632,7 +632,7 @@ ht-degree: 0%
          - [ACSD-60816: [!DNL New Relic] gli script di monitoraggio del browser inseriti dall&#39;agente APM non sono conformi a CSP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
          - [ACSD-59967: l&#39;errore JavaScript impedisce il corretto rendering di  [!DNL Google Maps] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
          - [ACSD-60326: la query GraphQL sullo stato del cliente [!UICONTROL Returns] restituisce un errore](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
-         - [ACSD-59786: GraphQL restituisce un errore durante il recupero di un ID preventivo per un preventivo scaduto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired.quote.md)
+         - [ACSD-59786: GraphQL restituisce un errore durante il recupero di un ID preventivo per un preventivo scaduto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired-quote.md)
       - v1.1.52 {#v1-1-52}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
          - [ACSD-61366: installazione bin/magento:static-content:distribuzione —il comando jobs 4 non riesce e viene restituito un errore](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error.md)
