@@ -1,5 +1,5 @@
 ---
-source-git-commit: a8f4df78dfec2a1e94d650cac03c7fba21f398e8
+source-git-commit: 31de6be4eb57fa396801c9ce4f3ed65d77026190
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 
 <!-- The template to render with above values -->
-**Versione**: 3.0.19
+**Versione**: 3.0.20
 
 Questo riferimento contiene 9 comandi disponibili tramite lo strumento della riga di comando `bin/uct`.
 L&#39;elenco iniziale viene generato automaticamente utilizzando il comando `bin/uct list` in Adobe Commerce.
