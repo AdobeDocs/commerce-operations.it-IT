@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: f10eb87efbda20899574486f1e9db01f2a66f855
+source-git-commit: efa483b3e5a09bf2f4a472f9ee9e30512a0ca211
 workflow-type: tm+mt
-source-wordcount: '22258'
+source-wordcount: '22642'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,23 @@ ht-degree: 0%
 >[!INFO]
 >
 >Per informazioni sulle [!DNL quality patches] create dalla community per il Magento Open Source, consulta le [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.54 {#v1-1-54}
+
+* **AC-13283** (per Adobe Commerce e Magento Open Source 2.4.6-p8) - Ripristina le modifiche non compatibili con l&#39;ordine precedente incluse in 2.4.6-p8.
+* **ACSD-60267** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Risolve il problema relativo alla corretta applicazione di FPT (Fixed Product Tax) quando si aggiungono prodotti semplici con FPT direttamente al carrello, ma non riesce quando si selezionano questi prodotti tramite opzioni di prodotto configurabili.
+* **ACSD-61103** (per Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Corregge il problema per cui il conteggio degli errori nella tabella `customer_entity` non viene reimpostato su zero dopo che un cliente ha effettuato correttamente l&#39;accesso tramite gli endpoint API.
+* **ACSD-61134** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Corregge il problema di deselezione automatica del metodo di pagamento [!DNL Braintree Vault] nel flusso di lavoro di pagamento quando un acquirente aggiorna il proprio indirizzo di fatturazione deselezionando la casella di controllo *[!UICONTROL My billing and shipping address are the same]*.
+* **ACSD-61199** (per Adobe Commerce >=2.4.4 &lt;2.4.8) - Corregge il problema per cui nella scheda Gerarchia pagine di CMS non viene visualizzata una struttura ad albero corretta quando si modifica una pagina CMS con una gerarchia esistente.
+* **ACSD-61200** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corregge il problema di mancanza dei calcoli per *[!UICONTROL Total Amount]* e *[!UICONTROL Total Amount Actual]* nelle vendite *[!UICONTROL Discount Tax Compensation Amount]* e *[!UICONTROL Shipping Discount Tax Compensation Amount]*, causando discrepanze nei dati dell&#39;ordine di vendita.
+* **ACSD-61522** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corregge il problema relativo alla possibilità di immettere indirizzi e-mail nei campi *[!UICONTROL First Name]* e *[!UICONTROL Last Name]* del cliente ospite e di inviare e-mail di conferma dell&#39;ordine non valide.
+* **ACSD-61756** (per Adobe Commerce >=2.4.4 &lt;2.4.7) - Migliora le prestazioni di `AdvancedSalesRule` filtri.
+* **ACSD-61799** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.5) - Corregge il problema relativo al calcolo errato dello sconto totale quando al preventivo vengono applicate più regole del carrello con sconti fissi.
+* **ACSD-61845** (per Adobe Commerce e Magento Open Source >=2.4.7-p1 &lt;2.4.8) - Corregge l&#39;errore che si verifica quando una richiesta viene inviata con solo *text/html* intestazione di accettazione.
+* **ACSD-62056** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Risolve il problema di errore nel caricamento delle immagini per un prodotto configurabile se MSI è installato.
+* **ACSD-62485** (per Adobe Commerce >=2.4.4 &lt;2.4.6-p8 || >=2.4.7 &lt;2.4.8) - Risolve il problema per cui il consumatore `async.operations.all` smette di lavorare quando viene creata un&#39;azienda.
+* Patch aggiornate: ACSD-48661, ACSD-51846, ACSD-55100, ACSD-61553
+* Patch obsolete: ACSD-51846
 
 ## v1.1.53 {#v1-1-53}
 
