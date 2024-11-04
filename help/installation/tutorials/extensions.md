@@ -2,9 +2,9 @@
 title: Gestire le estensioni di terze parti
 description: Segui questi passaggi per installare, abilitare, aggiornare e disinstallare le estensioni Adobe Commerce.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: f057cf082eeab1e34957e284817c6b93517de21b
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Le estensioni includono:
 - Temi (cambia l’aspetto della vetrina e dell’amministratore)
 - Pacchetti di lingua (localizza la vetrina e Amministratore)
 
->[!TIP]
->
->Questo argomento spiega come utilizzare l’interfaccia della riga di comando per gestire le estensioni di terze parti acquistate da Commerce Marketplace. È possibile utilizzare la stessa procedura per installare l&#39;estensione _any_; tutto ciò che serve è il nome e la versione del Compositore dell&#39;estensione. Per trovarlo, aprire il file `composer.json` dell&#39;estensione e prendere nota dei valori per `"name"` e `"version"`.
+Questo argomento spiega come utilizzare l&#39;interfaccia della riga di comando per gestire le estensioni di terze parti acquistate da Commerce Marketplace per _progetti locali_. Per i progetti di infrastruttura cloud, consulta [Gestione estensioni](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+
+È possibile utilizzare la stessa procedura per installare l&#39;estensione _any_; tutto ciò che serve è il nome e la versione del Compositore dell&#39;estensione. Per trovarlo, aprire il file `composer.json` dell&#39;estensione e prendere nota dei valori per `"name"` e `"version"`.
 
 ## Installa
 
@@ -70,7 +70,7 @@ Per ottenere il nome e la versione del Compositore dell&#39;estensione dalla Com
 
    ![Cronologia acquisti Marketplace](../../assets/installation//marketplace-my-purchases.png)
 
-1. Trovare l&#39;estensione da installare e fare clic su **Dettagli tecnici**.
+1. Trova l’estensione da installare e annota il nome e la versione del componente.
 
    ![I dettagli tecnici mostrano il nome del Compositore dell&#39;estensione](../../assets/installation/marketplace-extension-technical-details.png)
 
@@ -241,13 +241,13 @@ Le istruzioni seguenti forniscono informazioni generali sulla disinstallazione d
    - Per le estensioni basate su Compositore, rimuovere l&#39;estensione dal file Adobe Commerce `composer.json`.
 
      ```bash
-     composer remove <package-name>
+     composer remove <component-name>
      ```
 
    - Per le estensioni non basate su Compositore, rimuovi i file fisici dall’archivio dei progetti Adobe Commerce.
 
      ```bash
-     rm -rf app/code/<vendor-name>/<module-name>
+     rm -rf app/code/<vendor-name>/<component-name>
      ```
 
 1. Se il file `config.php` è incluso nel controllo del codice sorgente nell&#39;archivio dei progetti Adobe Commerce, rimuovere l&#39;estensione dal file `config.php`.
