@@ -2,7 +2,7 @@
 title: File di configurazione del modulo
 description: Scopri come personalizzare un modulo utilizzando i tipi di configurazione.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
@@ -43,19 +43,19 @@ dove
 - `<vendorname>` è il nome del fornitore del componente; ad esempio, il nome del fornitore di Commerce è `magento`.
 - `<component-type>` è uno dei seguenti:
 
-   - `module-`: estensione o modulo.
-   - `theme-`: tema.
+   - `module-`: un&#39;estensione o un modulo.
+   - `theme-`:Tema.
    - `language-`: pacchetto lingua.
 
 >[!INFO]
 >
 >Attualmente, i temi si trovano in `<magento_root>/app/design/frontend` o `<magento_root>/app/design/adminhtml`.
 
-- `<component-name>`: nome del componente come definito in [compositore.json](https://github.com/magento/magento2/blob/2.4/composer.json).
+- `<component-name>`: nome del componente, come definito in [composer.json](https://github.com/magento/magento2/blob/2.4/composer.json).
 
 ### Unione file di configurazione
 
-I nodi nei file di configurazione vengono uniti in base ai relativi XPath completi, per i quali è stato dichiarato come identificatore un attributo speciale definito nell&#39;array `$idAttributes`. Questo identificatore deve essere univoco per tutti i nodi nidificati sotto lo stesso nodo principale.
+I nodi nei file di configurazione vengono uniti in base ai rispettivi XPath completi, che hanno un attributo speciale definito nell&#39;array `$idAttributes` dichiarato come identificatore. Questo identificatore deve essere univoco per tutti i nodi nidificati sotto lo stesso nodo principale.
 
 Algoritmo di unione delle applicazioni Commerce:
 
@@ -81,19 +81,19 @@ Nella tabella seguente vengono illustrati i tipi di configurazione e gli oggetti
 | --- | --- | --- | --- |
 | `address_formats.xml` | Dichiarazione formato indirizzo | primario, globale | [\Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
 | `acl.xml` | [Elenco di controllo di accesso](https://developer.adobe.com/commerce/webapi/get-started/authentication/#relationship-between-aclxml-and-webapixml) | globale | [\Magento\Framework\Acl\AclResource\Provider](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Acl/AclResource/Provider.php) |
-| `analytics.xml` | [Generazione rapporti avanzata](https://devdocs.magento.com/guides/v2.4/advanced-reporting/data-collection.html) | primario, globale | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
+| `analytics.xml` | [Generazione rapporti avanzata]https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | primario, globale | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
 | `cache.xml` | Dichiarazione tipo cache | primario, globale | [\Magento\Framework\Cache\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
 | `catalog_attributes.xml` | Configurazione attributi catalogo | globale | [\Magento\Catalog\Model\Attribute\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Attribute/Config/Data.php) |
 | `config.php` e `env.php` | [Configurazione della distribuzione](../reference/deployment-files.md) | Questi file sono leggibili/scrivibili dal processore di configurazione interno. | Non ha alcun oggetto, non può essere personalizzato |
 | `config.xml` | Configurazione del sistema | primario, globale | [\Magento\Framework\App\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config.php) |
 | `communication.xml` | [Definisce gli aspetti del sistema di code di messaggi](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#communicationxml) | globale | [\Magento\WebapiAsync\Code\Generator\Config\RemoteServiceReader\Communication](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Code/Generator/Config/RemoteServiceReader/Communication.php) |
 | `crontab.xml` | [Configura i gruppi cron](../cron/custom-cron-reference.md#configure-cron-groups) | globale | [\Magento\Cron\Model\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/Model/Config/Data.php) |
-| `cron_groups.xml` | [Specifica le opzioni per gruppo cron](../cron/custom-cron-reference.md) | globale | [\Magento\Cron\Model\Groups\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/Model/Groups/Config/Data.php) |
+| `cron_groups.xml` | [Specifica le opzioni del gruppo cron](../cron/custom-cron-reference.md) | globale | [\Magento\Cron\Model\Groups\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/Model/Groups/Config/Data.php) |
 | `db_schema.xml` | [Schema dichiarativo](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) | globale | [Magento\Framework\Setup\Declaration\Schema](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/Declaration/Schema/SchemaConfig.php) |
 | `di.xml` | Configurazione di [Iniezione di dipendenza](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) | primario, globale, area | [\Magento\Framework\ObjectManager\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/ObjectManager/Config/Config.php) |
 | `eav_attributes.xml` | Fornisce la configurazione degli attributi EAV | globale | [\Magento\Eav\Model\Entity\Attribute\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Eav/Model/Entity/Attribute/Config.php) |
 | `email_templates.xml` | Configurazione dei modelli e-mail | globale | [\Magento\Email\Model\Template\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Email/Model/Template/Config/Data.php) |
-| `esconfig.xml` | [Configurazione parole non consentite nelle impostazioni locali del motore di ricerca](../search/search-stopwords.md#create-stopwords-for-a-new-locale) | globale | [\Magento\Elasticsearch\Model\Adapter\Index\Config\EsConfig](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Elasticsearch/Model/Adapter/Index/Config/EsConfig.php) |
+| `esconfig.xml` | [Search configurazione delle parole di arresto locali del motore](../search/search-stopwords.md#create-stopwords-for-a-new-locale) | globale | [\Magento\Elasticsearch\Model\Adapter\Index\Config\EsConfig](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Elasticsearch/Model/Adapter/Index/Config/EsConfig.php) |
 | `events.xml` | Configurazione evento/osservatore | globale, area | [\Magento\Framework\Event](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Event.php) |
 | `export.xml` | Esporta configurazione entità | globale | [\Magento\ImportExport\Model\Export\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/ImportExport/Model/Export/Config.php) |
 | `extension_attributes.xml` | [Attributi di estensione](https://developer.adobe.com/commerce/php/development/components/attributes/#extension-attributes) | globale | [\Magento\Framework\Api\ExtensionAttribute\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/ExtensionAttribute/Config.php) |
@@ -111,9 +111,9 @@ Nella tabella seguente vengono illustrati i tipi di configurazione e gli oggetti
 | `queue_consumer.xml` | [Definisce la relazione tra un coda esistente e il relativo consumatore](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_consumerxml) | globale | [\Magento\Framework\MessageQueue\Consumer\Config\Xml\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/MessageQueue/Consumer/Config/Xml/Reader.php) |
 | `queue_publisher.xml` | [Definisce lo scambio in cui viene pubblicato un argomento.](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_publisherxml) | globale | [\Magento\WebapiAsync\Code\Generator\Config\RemoteServiceReader\Publisher](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Code/Generator/Config/RemoteServiceReader/Publisher.php) |
 | `queue_topology.xml` | [Definisce le regole di routing dei messaggi, dichiara code e scambi](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_topologyxml) | globale | [\Magento\Framework\MessageQueue\Topology\Config\Xml\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/MessageQueue/Topology/Config/Xml/Reader.php) |
-| `reports.xml` | [Rapporti avanzati](https://devdocs.magento.com/guides/v2.4/advanced-reporting/report-xml.html) | globale | [\Magento\Analytics\ReportXml\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config.php) |
+| `reports.xml` | [Avanzate rapporti](https://developer.adobe.com/commerce/php/development/advanced-reporting/report-xml/) | globale | [\Magento\Analytics\ReportXml\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config.php) |
 | `resources.xml` | Definisce la risorsa del modulo | globale | [\Magento\Framework\App\ResourceConnection\Config\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/ResourceConnection/Config/Reader.php) |
-| `routes.xml` | Configurazione di [Route](https://developer.adobe.com/commerce/php/development/components/routing/) | area | [Magento\Framework\App\Route\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Route/Config.php) |
+| `routes.xml` | Configurazione di [Route](https://developer.adobe.com/commerce/php/development/components/routing/) | area | [Magento\Framework\app\Route\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Route/Config.php) |
 | `sales.xml` | Definisce la configurazione del totale delle vendite | globale | [\Magento\Sales\Model\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Config/Data.php) |
 | `search_engine.xml` | Fornisce la configurazione del motore di ricerca | globale | [Magento\Search\Model\SearchEngine\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Search/Model/SearchEngine/Config.php) |
 | `search_request.xml` | Definisce la configurazione della ricerca nel catalogo | globale | [\Magento\Framework\Search\Request\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Search/Request/Config.php) |

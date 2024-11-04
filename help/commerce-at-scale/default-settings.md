@@ -4,7 +4,7 @@ description: Prepara il progetto Adobe Commerce per utilizzare Adobe Experience 
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
 feature: Integration, Cache
 topic: Commerce, Performance
-source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 0%
@@ -26,7 +26,7 @@ GraphQL consente di eseguire più query in una singola chiamata. È importante n
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sulle query memorizzabili nella cache e non memorizzabili nella cache, consulta la [documentazione per gli sviluppatori](https://devdocs.magento.com/guides/v2.4/graphql/caching.html) di Adobe Commerce.
+> Per ulteriori informazioni sulle query memorizzabili nella cache e non memorizzabili nella cache, consulta la [documentazione per gli sviluppatori](https://developer.adobe.com/commerce/webapi/graphql/caching.html) di Adobe Commerce.
 
 ## Tabella a schermo piatto catalogo
 
@@ -42,7 +42,7 @@ La schermatura dell’origine rapida può essere abilitata nelle impostazioni di
 
 Una volta abilitata la schermatura dell’origine Fastly, questo consente di attivare anche Fastly Image Optimizer. Dove le immagini del catalogo dei prodotti sono memorizzate su Adobe Commerce, questo servizio consente di scaricare sull’origine Fastly e off dall’origine Adobe Commerce tutte le immagini del catalogo dei prodotti, ad uso intensivo di risorse, che vengono trasformate. Anche i tempi di risposta dell’utente finale sono migliorati per i tempi di caricamento delle pagine, in quanto le immagini vengono trasformate nella posizione edge di, il che elimina la latenza riducendo il numero di richieste all’origine Adobe Commerce.
 
-L’ottimizzazione Fastly Image può essere abilitata &quot;abilita l’ottimizzazione deep image&quot; nella configurazione Fastly in admin, anche se solo dopo l’attivazione dello schermo di origine. Ulteriori dettagli sulle configurazioni per l&#39;ottimizzazione Fastly Image sono disponibili nella [documentazione per gli sviluppatori](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) di Adobe Commerce.
+L’ottimizzazione Fastly Image può essere abilitata &quot;abilita l’ottimizzazione deep image&quot; nella configurazione Fastly in admin, anche se solo dopo l’attivazione dello schermo di origine. Ulteriori dettagli sulle configurazioni per l&#39;ottimizzazione Fastly Image sono disponibili nella [documentazione per gli sviluppatori](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization) di Adobe Commerce.
 
 ![Schermata delle impostazioni di ottimizzazione immagine Fastly nell&#39;amministrazione di Adobe Commerce](../assets/commerce-at-scale/image-optimization.svg)
 

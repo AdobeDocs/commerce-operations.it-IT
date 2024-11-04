@@ -3,7 +3,7 @@ title: "MDVA-44147: la richiesta di GraphQL non restituisce gli elenchi di richi
 description: La patch di MDVA-44147 risolve il problema per cui la richiesta di GraphQL non restituisce gli elenchi delle richieste di acquisto. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14. L'ID della patch è MDVA-44147. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -35,8 +35,8 @@ La richiesta di GraphQL non restituisce gli elenchi di richieste.
 <u>Passaggi da riprodurre</u>:
 
 1. Vai a **Store** > **Impostazioni** > **Configurazione** > **Generale** > **Caratteristiche B2B** e abilita elenco richieste di acquisto.
-1. Accedi come cliente e aggiungi un prodotto all&#39;[elenco richieste di acquisto](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html).
-1. Crea un [token cliente](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token.html).
+1. Accedi come cliente e aggiungi un prodotto all&#39;[elenco richieste di acquisto](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
+1. Crea un [token cliente](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
 
    <pre>
     <code class="language-graphql">
@@ -51,7 +51,7 @@ La richiesta di GraphQL non restituisce gli elenchi di richieste.
       </code>
       </pre>
 
-1. Utilizzare la query seguente per recuperare tutti gli elenchi di richieste dal cliente. Utilizza l&#39;intestazione **Authorization** con il valore `Bearer <customer_token>`. Per ulteriori informazioni, consulta l&#39;articolo [Customer Query](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer.html) nella documentazione per gli sviluppatori.
+1. Utilizzare la query seguente per recuperare tutti gli elenchi di richieste dal cliente. Utilizza l&#39;intestazione **Authorization** con il valore `Bearer <customer_token>`. Per ulteriori informazioni, consulta l&#39;articolo [Customer Query](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) nella documentazione per gli sviluppatori.
 
    Richiesta:
 

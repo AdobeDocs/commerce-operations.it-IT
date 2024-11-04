@@ -3,7 +3,7 @@ title: Hashing password
 description: Scopri le strategie e l’implementazione di hashing delle password.
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -61,4 +61,4 @@ Poiché Commerce memorizza tutte le versioni di hash della password utilizzate i
 
 ## Implementazione
 
-La classe `\Magento\Framework\Encryption\Encryptor` è responsabile della generazione e della verifica dell&#39;hash della password. Il comando [`bin/magento customer:hash:upgrade`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#customerhashupgrade) aggiorna un hash della password del cliente all&#39;algoritmo hash più recente.
+La classe `\Magento\Framework\Encryption\Encryptor` è responsabile della generazione e della verifica dell&#39;hash della password. Il comando [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) aggiorna un hash della password del cliente all&#39;algoritmo hash più recente.

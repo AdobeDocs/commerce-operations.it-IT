@@ -2,7 +2,7 @@
 title: Configurare più siti web, store e visualizzazioni dello store in Admin
 description: Configura altri siti web, store e visualizzazioni dello store in Commerce Admin.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: f7c82844fd6d006e4ebbcf56f6e10338f67d0bdd
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 Questa attività richiede di creare una categoria principale (e categorie aggiuntive, se desiderato) per ogni archivio. Le attività descritte in questo argomento consentono di impostare più archivi. Per ulteriori informazioni, vedere le risorse seguenti nella Guida utente di Commerce:
 
-- [Categorie](https://docs.magento.com/user-guide/catalog/categories.html)
-- [Aggiunta di siti Web](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [Archivia URL](https://docs.magento.com/user-guide/stores/store-urls.html)
-- [Contenuto](https://docs.magento.com/user-guide/cms/content-menu.html)
+- [Categorie](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [Aggiunta di siti Web](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Archivia URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [Contenuto](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +34,7 @@ Per creare una categoria radice:
 1. Nel campo **Nome categoria** immettere un nome univoco per identificare la categoria.
 1. Assicurarsi che Abilita categoria sia impostato su **Sì**.
 
-   Per informazioni sulle altre opzioni disponibili in questa pagina, vedere [Categorie principali](https://docs.magento.com/user-guide/catalog/category-root.html).
+   Per informazioni sulle altre opzioni disponibili in questa pagina, vedere [Categorie principali](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root).
 
    Nella figura seguente viene illustrato un esempio.
 
@@ -131,7 +131,7 @@ Commerce consente di aggiungere il codice del punto vendita all&#39;URL della ba
 
 Ciò impedisce a `index.php` e `.htaccess` di uscire dalla sincronizzazione con il codebase di Commerce negli aggiornamenti futuri.
 
-Consulta la [Guida utente di Commerce](https://docs.magento.com/user-guide/stores/store-urls.html).
+Consulta la [Guida utente di Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 Per aggiungere il codice store all&#39;URL di base:
 

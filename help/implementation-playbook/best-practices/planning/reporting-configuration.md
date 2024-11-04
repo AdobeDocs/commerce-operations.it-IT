@@ -4,7 +4,7 @@ description: Ottimizza le prestazioni del sito rimuovendo il modulo di reporting
 role: Admin
 feature: Best Practices, Configuration
 exl-id: 8c991b8a-affb-4a9e-9383-671f595ff89e
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Procedure consigliate per la configurazione dei rapporti
 
-Se la tua azienda non richiede la funzionalità di reporting o segmenti cliente dinamici, disabilita la funzionalità [Rapporti](https://docs.magento.com/user-guide/configuration/general/reports.html) per migliorare le prestazioni dello store.
+Se la tua azienda non richiede la funzionalità di reporting o segmenti cliente dinamici, disabilita la funzionalità [Rapporti](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/reports) per migliorare le prestazioni dello store.
 
 ## Prodotti e versioni interessati
 
@@ -32,5 +32,5 @@ Se non utilizzi i segmenti Reports o clienti dinamici, disabilita la funzionalit
 
 ## Informazioni aggiuntive
 
-- [Genera report in Adobe Commerce](https://docs.magento.com/user-guide/reports.html)
-- [Segmenti dinamici del cliente](https://docs.magento.com/user-guide/marketing/customer-segments.html)
+- [Genera report in Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)
+- [Segmenti dinamici del cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)

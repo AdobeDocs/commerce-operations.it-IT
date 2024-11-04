@@ -4,7 +4,7 @@ description: Descrive come evitare il degrado delle prestazioni mediante imposta
 role: Developer
 feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Allocare almeno **2 GB** di memoria per il modulo PHP [OPcache](https://www.php.
 ## Informazioni aggiuntive
 
 * [Best practice per le prestazioni - Impostazioni PHP](../../../performance/software.md#php-settings)
-* [Configurare le opzioni PHP](https://devdocs.magento.com/cloud/project/project-conf-files_magento-app.html#customize-phpini-settings)
+* [Configurare le opzioni PHP](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/overview)
 * [Best practice per il database di Adobe Commerce sull’infrastruttura cloud](database-on-cloud.md)
 * [Problemi di database più comuni in Adobe Commerce sull’infrastruttura cloud](../maintenance/resolve-database-performance-issues.md)
 * [Gli indicizzatori &quot;Update On Schedule&quot; ottimizzano le prestazioni di Adobe Commerce](../maintenance/indexer-configuration.md)

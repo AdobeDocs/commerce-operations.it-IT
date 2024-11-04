@@ -2,7 +2,7 @@
 title: Panoramica della guida alla configurazione
 description: Scopri tutte le funzioni e i servizi configurabili per la tua applicazione Adobe Commerce.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 9%
@@ -25,8 +25,8 @@ La guida alla _configurazione_ fornisce materiale di riferimento e indicazioni l
 
 ## Configurazione amministratore Commerce
 
-La [Guida utente di Commerce](https://docs.magento.com/user-guide/stores/configuration.html) contiene argomenti corrispondenti che possono aiutarti a comprendere le descrizioni dei campi per ogni impostazione di configurazione nell&#39;amministratore di Commerce.
+La [Guida utente di Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) contiene argomenti corrispondenti che possono aiutarti a comprendere le descrizioni dei campi per ogni impostazione di configurazione nell&#39;amministratore di Commerce.
 
 ## Configurazione cloud
 
-[!DNL Commerce on cloud infrastructure] utilizza un [set di file di configurazione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) per aggiornare le funzionalità e i servizi dell&#39;applicazione Commerce negli ambienti ospitati. A causa della natura univoca degli ambienti Adobe ospitati su cloud, è sempre necessario consultare la [Guida cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) per ulteriori requisiti di configurazione.
+[!DNL Commerce on cloud infrastructure] utilizza un [set di file di configurazione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) per aggiornare le funzionalità e i servizi dell&#39;applicazione Commerce negli ambienti ospitati. A causa della natura univoca degli ambienti ospitati da Adobe Cloud, è sempre necessario consultare la [Guida cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) per ulteriori requisiti di configurazione.

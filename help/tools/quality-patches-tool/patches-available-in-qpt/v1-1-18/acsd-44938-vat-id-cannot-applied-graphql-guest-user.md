@@ -3,7 +3,7 @@ title: "ACSD-44938: VAT_ID non può essere applicato nella richiesta GraphQL per
 description: La patch ACSD-44938 risolve il problema che impediva l'applicazione del VAT_ID in una richiesta GraphQL per un utente guest. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18. L’ID della patch è ACSD-44938. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 feature: Admin Workspace, GraphQL
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -34,12 +34,12 @@ VAT_ID non può essere applicato in una richiesta GraphQL per un utente ospite.
 
 <u>Passaggi da riprodurre</u>:
 
-1. Segui i passaggi indicati nell&#39;[esercitazione su GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-shopping-cart.html) nella documentazione per sviluppatori per creare un carrello guest.
+1. Segui i passaggi indicati nell&#39;[esercitazione su GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) nella documentazione per sviluppatori per creare un carrello guest.
 1. Provare ad applicare VAT_ID per l&#39;utente ospite che utilizza GraphQL.
 
 <u>Risultati previsti</u>:
 
-VAT_ID può essere applicato nello stesso modo di un cliente registrato. Consulta l&#39;articolo [createCustomerAddress mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-customer-address.html) nella documentazione per gli sviluppatori.
+VAT_ID può essere applicato nello stesso modo di un cliente registrato. Consulta l&#39;articolo [createCustomerAddress mutation](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) nella documentazione per gli sviluppatori.
 
 <u>Risultati effettivi</u>:
 

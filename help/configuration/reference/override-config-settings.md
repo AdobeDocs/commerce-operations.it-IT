@@ -2,18 +2,18 @@
 title: Ignora impostazioni di configurazione
 description: Scopri come utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
 
 ---
 
-# Sostituisci impostazioni di configurazione
+# Ignora impostazioni di configurazione
 
-In questo argomento viene illustrato come derivare un nome di variabile d&#39;ambiente conoscendo un percorso di configurazione. Puoi ignorare le impostazioni di configurazione di Adobe Systems Commerce utilizzando le variabili di ambiente. Ad esempio, puoi sovrascrivere il valore dell’URL live di un elaboratore di pagamenti sul sistema di produzione.
+Questo argomento illustra come derivare il nome di una variabile di ambiente conoscendo un percorso di configurazione. Puoi sovrascrivere le impostazioni di configurazione di Adobe Commerce utilizzando le variabili di ambiente. Ad esempio, puoi sovrascrivere il valore dell’URL live di un elaboratore di pagamenti sul sistema di produzione.
 
-È possibile sovrascrivere il valore dell&#39;impostazione di configurazione _any_ utilizzando variabili di ambiente; tuttavia, l&#39;Adobe consiglia di mantenere impostazioni coerenti utilizzando il file di configurazione condiviso, `config.php`, e il file di configurazione specifico del sistema, `env.php`, come descritto in [Panoramica generale sulla distribuzione](../deployment/overview.md).
+È possibile sovrascrivere il valore dell&#39;impostazione di configurazione _any_ utilizzando le variabili di ambiente. Tuttavia, Adobe consiglia di mantenere le impostazioni coerenti utilizzando il file di configurazione condiviso, `config.php`, e il file di configurazione specifico del sistema, `env.php`, come descritto in [Panoramica generale sulla distribuzione](../deployment/overview.md).
 
 >[!TIP]
 >
@@ -62,8 +62,8 @@ Di seguito è riportato il formato generale dei nomi delle variabili delle impos
   Per ulteriori informazioni sugli ambiti, consulta:
 
    - [Passaggio 1: trovare il valore di ambito della visualizzazione del sito Web o dello store](#step-1-find-the-website-or-store-view-scope-value)
-   - [Argomento della Guida utente di Commerce sull&#39;ambito](https://docs.magento.com/user-guide/configuration/scope.html)
-   - [Riferimento rapido ambito](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
+   - [Argomento della Guida utente di Commerce sull&#39;ambito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [Riferimento rapido ambito](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` è il percorso di configurazione con due caratteri di sottolineatura al posto di `/`. Per ulteriori informazioni, vedere [Passaggio 2: impostazione delle variabili di sistema](#step-2-set-global-website-or-store-view-variables).
 
@@ -77,8 +77,8 @@ Se un percorso di configurazione contiene un carattere di sottolineatura, questo
 
 Un elenco completo dei percorsi di configurazione è disponibile in:
 
-- [Riferimenti sui percorsi di configurazione sensibili e specifici del sistema](config-reference-sens.md)
-- [Riferimento sui percorsi di configurazione dei pagamenti](config-reference-payment.md)
+- [Riferimento ai percorsi di configurazione sensibili e specifici del sistema](config-reference-sens.md)
+- [Riferimento ai percorsi di configurazione dei pagamenti](config-reference-payment.md)
 - [Riferimento ai percorsi di configurazione dell’estensione Commerce Enterprise B2B](config-reference-b2b.md)
 - [Altri percorsi di configurazione di riferimento](config-reference-general.md)
 
@@ -101,20 +101,20 @@ Come leggere la tabella:
 
 - La colonna `Variable name` è il nome della variabile di ambiente corrispondente.
 
-  È possibile specificare i valori di sistema per questi parametri di configurazione come variabili di ambiente, se lo si desidera.
+  Se lo desideri, puoi specificare i valori di sistema per questi parametri di configurazione come variabili di ambiente.
 
-   - L&#39;intero nome della variabile è sempre TUTTO MAIUSCOLO
-   - Inizia un nome variabile con `CONFIG__` (notare due caratteri di sottolineatura)
-   - È possibile trovare il nome o `<STORE_VIEW_CODE>` `<WEBSITE_CODE>` parte di un nome di variabile nel database Admin o Commerce, come indicato nelle sezioni seguenti.
-   - `<SYSTEM__VARIABLE__NAME>` Come illustrato nel [Passaggio 2: impostare variabili](#step-2-set-global-website-or-store-view-variables) di visualizzazione globale, sito Web o store.
+   - L&#39;intero nome della variabile è sempre TUTTO MAIUSC
+   - Iniziare un nome di variabile con `CONFIG__` (annotare due caratteri di sottolineatura)
+   - È possibile trovare la porzione `<STORE_VIEW_CODE>` o `<WEBSITE_CODE>` di un nome di variabile nel database Admin o Commerce, come indicato nelle sezioni seguenti.
+   - È possibile trovare `<SYSTEM__VARIABLE__NAME>` come descritto in [Passaggio 2: impostare variabili globali, di visualizzazione sito Web o di archiviazione](#step-2-set-global-website-or-store-view-variables).
 
 ### Trovare un ambito di visualizzazione sito web o store nell’Amministratore
 
 Nella tabella seguente viene riepilogato come trovare il valore della visualizzazione del sito Web o dello store nell&#39;amministratore.
 
-| Descrizione | Percorso in Admin | Variabile nome |
+| Descrizione | Percorso in Admin | Nome variabile |
 |--------------|--------------|----------------------|
-| Crea, modifica, elimina store visualizzazioni | **[!UICONTROL Stores]** > **[!UICONTROL All Stores]** | `CONFIG__STORES__<STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>` |
+| Creare, modificare ed eliminare le visualizzazioni dello store | **[!UICONTROL Stores]** > **[!UICONTROL All Stores]** | `CONFIG__STORES__<STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>` |
 | Creazione, modifica ed eliminazione di siti Web | **[!UICONTROL Stores]** > **[!UICONTROL All Store]s** | `CONFIG__WEBSITES__<WEBSITE_CODE>__<SYSTEM__VARIABLE__NAME>` |
 
 Ad esempio, per trovare un valore di ambito di visualizzazione sito web o store nell’Admin:
@@ -199,7 +199,7 @@ La tabella seguente mostra alcune variabili di esempio.
 | Elasticsearch nome host del server | Catalogo > **Catalogo**, **Nome host server Elasticsearch** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
 | porta server Elasticsearch | Catalogo > **Catalogo**, **Elasticsearch porta server** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_PORT` |
 | Paese di spedizione di provenienza | Vendita > **spedizione Impostazioni** | `<SCOPE>__SHIPPING__ORIGIN__COUNTRY_ID` |
-| Custom Admin URL | **Amministratore Avanzate >** | `<SCOPE>__ADMIN__URL__CUSTOM` |
+| URL amministratore personalizzato | Avanzate > **Admin** | `<SCOPE>__ADMIN__URL__CUSTOM` |
 | Percorso amministratore personalizzato | Avanzate > **Amministratore** | `<SCOPE>__ADMIN__URL__CUSTOM_PATH` |
 
 ## Esempi
@@ -220,25 +220,25 @@ Per trovare il nome della variabile per la minimizzazione globale di HTML:
 
 ### Origine paese di spedizione
 
-Per trovare il nome della variabile per il paese di spedizione di origine:
+Per trovare il nome della variabile per l&#39;origine del paese di spedizione:
 
-1. Determinare il ambito.
+1. Determinare l&#39;ambito.
 
-   Individuare il ambito nel [database](#find-a-website-or-store-view-scope-in-the-database) come illustrato nel Passaggio 1: trovare il sito Web o visualizzare store ambito valore. (È inoltre possibile trovare il valore nell&#39;amministratore, come mostrato nella [tabella in Passaggio 2: Imposta variabili] di visualizzazione globale, sito Web o store (#step-2-set-global-website-or-store-view-variables.
+   Trovare l&#39;ambito nel [database](#find-a-website-or-store-view-scope-in-the-database) come descritto nel passaggio 1: Trovare il valore dell&#39;ambito della visualizzazione del sito Web o dell&#39;archivio. (Puoi anche trovare il valore nell&#39;amministratore come mostrato nella tabella [del passaggio 2: Imposta variabili globali, di visualizzazione del sito Web o di archiviazione](#step-2-set-global-website-or-store-view-variables.
 
-   Ad esempio, il ambito potrebbe essere `CONFIG__WEBSITES__DEFAULT`.
+   Ad esempio, l&#39;ambito potrebbe essere `CONFIG__WEBSITES__DEFAULT`.
 
 1. Il resto del nome della variabile è `SHIPPING__ORIGIN__COUNTRY_ID`.
 
    **Risultato**: nome variabile: `CONFIG__WEBSITES__DEFAULT__SHIPPING__ORIGIN__COUNTRY_ID`
 
-## Come usare le variabili d&#39;ambiente
+## Come utilizzare le variabili di ambiente
 
-Imposta i valori di configurazione come variabili utilizzando l&#39;array associato di [`$_ENV`](https://php.net/manual/en/reserved.variables.environment.php) PHP. È possibile impostare i valori in qualsiasi script PHP eseguito durante l&#39;esecuzione di Commerce.
+Impostare i valori di configurazione come variabili utilizzando l&#39;array associato [`$_ENV`](https://php.net/manual/en/reserved.variables.environment.php) di PHP. È possibile impostare i valori in qualsiasi script PHP eseguito quando viene eseguito Commerce.
 
 >[!TIP]
 >
->L&#39;impostazione dei valori delle variabili in `index.php` o `pub/index.php` non funziona sempre come previsto poiché è possibile utilizzare diversi punti di ingresso applicazione a seconda della configurazione del server Web. Inserendo `$_ENV` le direttive nel `app/bootstrap.php` file, indipendentemente dai diversi punti di ingresso applicazione, le `$_ENV` direttive vengono sempre eseguite poiché il `app/bootstrap.php` file viene caricato come parte dell&#39;architettura Commerce.
+>L&#39;impostazione dei valori delle variabili in `index.php` o `pub/index.php` non funziona sempre come previsto, in quanto è possibile utilizzare punti di ingresso dell&#39;applicazione diversi a seconda della configurazione del server Web. Inserendo `$_ENV` direttive nel file `app/bootstrap.php`, indipendentemente dai diversi punti di ingresso dell&#39;applicazione, le direttive `$_ENV` vengono sempre eseguite dal caricamento del file `app/bootstrap.php` come parte dell&#39;architettura di Commerce.
 
 Di seguito è riportato un esempio di impostazione di due valori `$_ENV`:
 
@@ -251,7 +251,7 @@ Un esempio dettagliato viene visualizzato in [Impostare i valori di configurazio
 
 >[!WARNING]
 >
->- Per utilizzare i valori impostati nell&#39;array `$_ENV`, è necessario impostare `variables_order = "EGPCS"`(Ambiente, Get, Post, Cookie e Server) nel file `php.ini`. Per informazioni dettagliate, vedere la [documentazione PHP](https://www.php.net/manual/en/ini.core.php).
+>- Per utilizzare i valori impostati nell&#39;array `$_ENV`, è necessario impostare `variables_order = "EGPCS"`(Environment, Get, Post, Cookie e Server) nel file `php.ini`. Per informazioni dettagliate, vedere la [documentazione PHP](https://www.php.net/manual/en/ini.core.php).
 >
 >- Per Adobe Commerce su infrastruttura cloud, se si tenta di ignorare le impostazioni di configurazione utilizzando [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), è necessario anteporre al nome della variabile `env:`. Ad esempio:
 >

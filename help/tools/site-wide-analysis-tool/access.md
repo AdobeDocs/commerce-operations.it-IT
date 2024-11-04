@@ -2,7 +2,7 @@
 title: Come accedere a  [!DNL Site-Wide Analysis Tool]
 description: Scopri come accedere a  [!DNL Site-Wide Analysis Tool]
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 18416ae29cee182a5d088069065d73814fc7d860
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Puoi accedere a [!DNL dashboard] direttamente dal [[!DNL Site-Wide Analysis Tool] sito Web](https://supportinsights.adobe.com/commerce) **(solo per Adobe Commerce su infrastruttura cloud)** e al tuo Adobe ID oppure tramite [!DNL dashboard] dal [!DNL Admin Panel] del tuo archivio.
 
-Il servizio [!DNL Site-Wide Analysis Tool] è disponibile in [modalità di produzione](https://docs.magento.com/user-guide/magento/installation-modes.html) per [!DNL Admin] utenti con autorizzazione di accesso all&#39;utente [risorse ruolo](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
+Il servizio [!DNL Site-Wide Analysis Tool] è disponibile in [modalità di produzione](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) per [!DNL Admin] utenti con autorizzazione di accesso all&#39;utente [risorse ruolo](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Vedi ulteriori dettagli in [Condividi un [!DNL Commerce] account](https://experi
 
 ### Passaggio 1: verificare le autorizzazioni
 
-Verificare che l&#39;account utente [!DNL Admin] disponga dell&#39;autorizzazione per accedere a [!DNL Site-Wide Analysis Tool] tramite il relativo [ruolo utente assegnato](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
+Verificare che l&#39;account utente [!DNL Admin] disponga dell&#39;autorizzazione per accedere a [!DNL Site-Wide Analysis Tool] tramite il relativo [ruolo utente assegnato](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
 
 >[!IMPORTANT]
 >

@@ -4,7 +4,7 @@ description: Scopri i passaggi per ottimizzare le immagini e utilizzare l’otti
 role: Developer, Admin
 feature: Best Practices
 exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 1%
@@ -32,9 +32,9 @@ Prima di caricare le immagini nei siti Commerce, ottimizzale e comprimi per bila
 
 ## Abilitare e configurare l’ottimizzazione Fastly delle immagini
 
-Dopo aver configurato il servizio Fastly per il progetto Adobe Commerce Cloud, vedere [Ottimizzazione immagine Fastly](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) per istruzioni su come abilitare e configurare l&#39;ottimizzazione immagine.
+Dopo aver configurato il servizio Fastly per il progetto Adobe Commerce Cloud, vedere [Ottimizzazione immagine Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization) per istruzioni su come abilitare e configurare l&#39;ottimizzazione immagine.
 
 ## Informazioni aggiuntive
 
-- [Configurazione rapida](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
+- [Configurazione rapida](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
 - [Immagini non ottimizzate correttamente possono causare problemi di prestazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)

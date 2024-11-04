@@ -4,7 +4,7 @@ description: Scopri come configurare le impostazioni di database e applicazioni 
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Adobe Commerce sull’infrastruttura cloud
 
 ## Convertire tutte le tabelle MyISAM in InnoDB
 
-L&#39;Adobe consiglia di utilizzare il motore di database InnoDB. In un&#39;installazione predefinita di Adobe Commerce, tutte le tabelle del database vengono memorizzate utilizzando il motore InnoDB. Tuttavia, alcuni moduli di terze parti (estensioni) possono introdurre tabelle in formato MyISAM. Dopo aver installato un modulo di terze parti, controllare il database per identificare eventuali tabelle in formato `myisam` e convertirle nel formato `innodb`.
+Adobe consiglia di utilizzare il motore di database InnoDB. In un&#39;installazione predefinita di Adobe Commerce, tutte le tabelle del database vengono memorizzate utilizzando il motore InnoDB. Tuttavia, alcuni moduli di terze parti (estensioni) possono introdurre tabelle in formato MyISAM. Dopo aver installato un modulo di terze parti, controllare il database per identificare eventuali tabelle in formato `myisam` e convertirle nel formato `innodb`.
 
 ### Determinare se un modulo include tabelle MyISAM
 
@@ -43,7 +43,7 @@ Lo schema dichiarativo è stato introdotto in Adobe Commerce sulla versione 2.3 
 
 ## Configura il motore di ricerca consigliato per la ricerca MySQL nativa
 
-L’Adobe consiglia di configurare sempre Elasticsearch o OpenSearch per il progetto di infrastruttura cloud di Adobe Commerce, anche se prevedi di configurare uno strumento di ricerca di terze parti per l’applicazione Adobe Commerce. Questa configurazione fornisce un’opzione di fallback nel caso in cui lo strumento di ricerca di terze parti non riesca.
+Adobe consiglia di configurare sempre Elasticsearch o OpenSearch per il progetto di infrastruttura cloud di Adobe Commerce, anche se si intende configurare uno strumento di ricerca di terze parti per l’applicazione Adobe Commerce. Questa configurazione fornisce un’opzione di fallback nel caso in cui lo strumento di ricerca di terze parti non riesca.
 
 Il motore di ricerca utilizzato dipende dalla versione di Adobe Commerce su cloud installata:
 
@@ -59,15 +59,15 @@ Per determinare quale motore di ricerca è attualmente in uso, eseguire il coman
 
 Per le istruzioni di configurazione, consulta la Guida per gli sviluppatori per Adobe Commerce sul cloud:
 
-- [Configura il servizio OpenSearch](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [Configura il servizio OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [Configura il servizio Elasticsearch](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [Configura il servizio Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## Evita trigger personalizzati
 
 Se possibile, evita di utilizzare trigger personalizzati.
 
-Gli attivatori vengono utilizzati per registrare le modifiche nelle tabelle di controllo. L’Adobe consiglia di configurare l’applicazione per scrivere direttamente nelle tabelle di controllo, anziché utilizzare la funzionalità di attivazione per i seguenti motivi:
+Gli attivatori vengono utilizzati per registrare le modifiche nelle tabelle di controllo. Adobe consiglia di configurare l’applicazione per scrivere direttamente nelle tabelle di controllo, anziché utilizzare la funzionalità di attivazione per i seguenti motivi:
 
 - I trigger vengono interpretati come codice e MySQL non li precompila. Collegandosi allo spazio delle transazioni della query, il sovraccarico viene aggiunto a un parser e a un interprete per ogni query eseguita con la tabella.
 - I trigger condividono lo stesso spazio di transazione delle query originali e, mentre tali query competono per i blocchi della tabella, i trigger competono in modo indipendente sui blocchi di un&#39;altra tabella.
@@ -76,7 +76,7 @@ Per informazioni sulle alternative all&#39;utilizzo di trigger personalizzati, v
 
 ## Aggiorna [!DNL ECE-Tools] alla versione 2002.0.21 o successiva {#ece-tools-version}
 
-Per evitare potenziali problemi con deadlock cron, aggiorna ECE-Tools alla versione 2002.0.21 o successiva. Per istruzioni, consulta [Aggiornare `ece-tools` versione](https://devdocs.magento.com/cloud/project/ece-tools-update.html) nella documentazione per gli sviluppatori.
+Per evitare potenziali problemi con deadlock cron, aggiorna ECE-Tools alla versione 2002.0.21 o successiva. Per istruzioni, consulta [Aggiornare `ece-tools` versione](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) nella documentazione per gli sviluppatori.
 
 ## Cambia la modalità di indicizzazione in modo sicuro
 

@@ -1,9 +1,9 @@
 ---
 title: Sicurezza dell’infrastruttura cloud
-description: Scopri come Adobe protegge l’infrastruttura cloud di Adobe Commerce.
+description: Scopri come Adobe protegge l’infrastruttura cloud con Adobe Commerce.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 L&#39;architettura del piano Adobe Commerce [Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) è progettata per fornire un ambiente altamente sicuro. Ogni cliente viene distribuito nel proprio ambiente server isolato, separato dagli altri. I dettagli di sicurezza dell’ambiente di produzione sono descritti di seguito.
 
-## Browser web
+## Browser Web
 
-La maggior parte del traffico in entrata e in uscita dall’ambiente cloud proviene dai browser web dei consumatori. Il traffico del consumatore può essere protetto utilizzando HTTPS per tutte le pagine del sito web (utilizzando una certificazione SSL condivisa o il certificato SSL del cliente a un costo aggiuntivo). Le pagine di pagamento e account vengono sempre servite utilizzando HTTPS. La best practice prevede di distribuire tutte le pagine in HTTPS.
+La maggior parte dei traffico che entrano ed escono dall&#39;ambiente cloud proviene dai browser Web dei consumatori. Il traffico del consumatore può essere protetto utilizzando HTTPS per tutte le pagine del sito web (utilizzando una certificazione SSL condivisa o il certificato SSL del cliente a un costo aggiuntivo). Le pagine di pagamento e account vengono sempre servite utilizzando HTTPS. La best practice prevede di distribuire tutte le pagine in HTTPS.
 
 ## Rete di distribuzione dei contenuti
 
@@ -27,11 +27,11 @@ Consulta [Panoramica dei servizi Fastly](https://experienceleague.adobe.com/docs
 
 ## Firewall applicazione Web
 
-Fastly Web Application Firewall (WAF) viene utilizzato per fornire ulteriore protezione. Fastly’s WAF basato su cloud utilizza regole di terze parti da fonti commerciali e open source, come il set di regole di base OWASP. Inoltre, vengono utilizzate regole specifiche per Adobe Commerce. I clienti sono protetti da attacchi chiave a livello di applicazione, tra cui attacchi di iniezione e input dannosi, vulnerabilità cross-site scripting, exfiltrazione dei dati, violazioni del protocollo HTTP e altre minacce OWASP top ten.
+Fastly Web Application Firewall (WAF) viene utilizzato per fornire una protezione aggiuntiva. Il WAF basato su cloud di Fastly utilizza regole di terze parti provenienti da fonti commerciali e open source, come il set di regole di base di OWASP. Inoltre, vengono utilizzate regole specifiche per Adobe Commerce. I clienti sono protetti da attacchi chiave a livello di applicazione, tra cui attacchi di iniezione e input dannosi, vulnerabilità cross-site scripting, exfiltrazione dei dati, violazioni del protocollo HTTP e altre minacce OWASP top ten.
 
-Le regole WAF vengono aggiornate da Adobe Commerce nel caso in cui vengano rilevate nuove vulnerabilità che consentono a Managed Services di applicare &quot;virtualmente patch&quot; ai problemi di sicurezza prima delle patch software. Il Fastly WAF non fornisce servizi di limitazione della velocità o di rilevamento di bot. Se lo desideri, i clienti possono concedere in licenza un servizio di rilevamento di bot di terze parti compatibile con Fastly.
+Le regole di WAF vengono aggiornate da Adobe Commerce nel caso in cui vengano rilevate nuove vulnerabilità che consentono a Managed Services di applicare &quot;virtualmente patch&quot; ai problemi di sicurezza prima delle patch software. Fastly WAF non fornisce servizi di limitazione della velocità o di rilevamento di bot. Se lo desideri, i clienti possono concedere in licenza un servizio di rilevamento di bot di terze parti compatibile con Fastly.
 
-Consulta [Web Application Firewall (WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) nella _Guida di Cloud_.
+Vedi [Firewall applicazione Web (WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) nella _Guida cloud_.
 
 ## Virtual Private Cloud
 
@@ -47,15 +47,15 @@ L&#39;applicazione Adobe Commerce non supporta la crittografia a livello di colo
 
 ## Rilevamento degli endpoint e risposta
 
-[!DNL CrowdStrike Falcon], un agente EDR (Endpoint Detection and Response) leggero di nuova generazione è installato su tutti gli endpoint (inclusi i server) all&#39;interno di Adobe. Gli agenti EDR proteggono i dati e i sistemi Adobi con il monitoraggio e la raccolta continui in tempo reale, che consente di identificare e rispondere rapidamente alle minacce.
+[!DNL CrowdStrike Falcon], un agente EDR (Endpoint Detection and Response) leggero e di nuova generazione è installato su tutti gli endpoint (inclusi i server) entro Adobe Systems. Gli agenti EDR proteggono Adobe Systems dati e sistemi con monitoraggio e raccolta continui in tempo reale, che consentono una rapida identificazione e risposta alle minacce.
 
 ## Test di penetrazione
 
-Managed Services esegue regolarmente test di penetrazione del cloud system Adobe Commerce con l’applicazione preconfigurata. I clienti sono responsabili di qualsiasi test di penetrazione delle loro applicazioni personalizzate.
+Managed Services conduce regolarmente test di penetrazione del sistema Adobe Systems Commerce cloud con la applicazione pronta all&#39;uso. I clienti sono responsabili di eventuali test di penetrazione dei loro applicazione personalizzati.
 
 ## Gateway di pagamento
 
-Adobe Commerce richiede integrazioni del gateway di pagamento in cui i dati della carta di credito vengono passati direttamente dal browser del consumatore al gateway di pagamento. I dati della scheda non sono mai disponibili in nessuno degli ambienti Adobe Commerce Pro plan Managed Services. Le azioni sulle transazioni eseguite dall’applicazione e-commerce vengono completate utilizzando un riferimento alla transazione proveniente dal gateway.
+Adobe Systems Commerce richiede integrazioni di gateway di pagamento in cui i dati di scheda di credito vengono passati direttamente dal browser del consumatore al gateway di pagamento. I dati della scheda non sono mai disponibili in nessuno degli ambienti Adobe Commerce Pro plan Managed Services. Le azioni sulle transazioni eseguite dall’applicazione e-commerce vengono completate utilizzando un riferimento alla transazione proveniente dal gateway.
 
 ## applicazione Adobe Commerce
 
@@ -68,29 +68,29 @@ Adobe verifica regolarmente il codice dell’applicazione principale per individ
 - OWASPZAP
 - eSqlMap
 
-La base di codice completa viene scansionata con questi strumenti su base bisettimanale. Le patch di sicurezza vengono notificate ai clienti tramite e-mail dirette, notifiche nell&#39;applicazione e nel [Centro sicurezza PC](https://helpx.adobe.com/security.html).
+La base di codice completa viene scansionata con questi strumenti su base bisettimanale. I clienti vengono informati delle patch di sicurezza tramite e-mail dirette, notifiche in applicazione e nel [Centro](https://helpx.adobe.com/security.html) sicurezza.
 
-I clienti devono assicurarsi che queste patch vengano applicate alla propria applicazione personalizzata entro 30 giorni dal rilascio, in conformità alle linee guida PCI. L&#39;Adobe fornisce anche uno [strumento di analisi della sicurezza](https://docs.magento.com/user-guide/magento/security-scan.html) che consente ai commercianti di monitorare regolarmente i propri siti e ricevere aggiornamenti sui rischi di sicurezza noti, il malware e l&#39;accesso non autorizzato. Lo strumento Security Scan è un servizio gratuito e può essere eseguito su qualsiasi versione di Adobe Commerce.
+I clienti devono assicurarsi che queste patch vengano applicate ai loro applicazione personalizzati entro 30 giorni dal rilascio, secondo le linee guida PCI. Adobe Systems fornisce anche uno [strumento](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) di scansione della sicurezza che consente ai commercianti di monitorare regolarmente i loro siti e ricevere aggiornamenti su rischi noti per la sicurezza, malware e accesso non autorizzati. Security Scan Tool è un servizio gratuito e può essere eseguito su qualsiasi versione di Adobe Systems Commerce.
 
-Per incoraggiare i ricercatori di sicurezza a identificare e segnalare le vulnerabilità, Adobe Commerce dispone di un [programma di bug-bounty](https://hackerone.com/magento) oltre a test interni. Inoltre, il cliente riceve il codice sorgente completo dell&#39;applicazione per la propria revisione, se desiderato.
+Per incoraggiare i ricercatori di sicurezza a identificare e segnalare le vulnerabilità, Adobe Systems Commerce ha un [programma](https://hackerone.com/magento) di bug bounty oltre ai test interni. Inoltre, al cliente viene fornito il codice sorgente completo del applicazione per la propria revisione, se lo si desidera.
 
 ## File system di sola lettura
 
-Tutto il codice eseguibile viene distribuito in un&#39;immagine del file system di sola lettura, che riduce notevolmente le superfici disponibili per l&#39;attacco. Il processo di distribuzione crea un’immagine Squash-FS per ridurre le opportunità di inserire codice PHP o JavaScript nel sistema o modificare i file dell’applicazione Adobe Commerce.
+Tutto il codice eseguibile viene distribuito in un&#39;immagine di file system di sola lettura, che riduce drasticamente le superfici disponibili per l&#39;attacco. Il processo di distribuzione crea un&#39;immagine Squash-FS per ridurre le opportunità di inserire codice PHP o JavaScript nel sistema o modificare i file Adobe Systems Commerce applicazione.
 
 ## Distribuzione remota
 
-L’unico modo per inserire il codice eseguibile nell’ambiente di produzione Managed Services è quello di eseguirlo attraverso un processo di provisioning. Il provisioning comporta il push del codice sorgente dal repository di origine in un repository remoto che avvia un processo di distribuzione. L’accesso a tale destinazione di distribuzione è controllato, in modo da avere il controllo completo su chi può accedere alla destinazione di distribuzione. Tutte le distribuzioni del codice dell’applicazione nell’ambiente non di produzione sono controllate dal cliente.
+L&#39;unico modo per ottenere codice eseguibile nell&#39;ambiente di produzione Managed Services consiste nell&#39;eseguirlo attraverso un processo di provisioning. Il provisioning comporta il push del codice sorgente dal archivio di origine a un archivio remoto che avvia un processo di distribuzione. L&#39;accesso a tale destinazione di distribuzione è controllato, in modo da avere il controllo completo su chi può accesso la distribuzione destinazione. Tutte le distribuzioni del codice dell’applicazione nell’ambiente non di produzione sono controllate dal cliente.
 
 ## Registrazione
 
-Tutte le attività di AWS sono registrate in AWS CloudTrail. I registri del sistema operativo, del server applicazioni e del database vengono archiviati nei server di produzione e nei backup. Tutte le modifiche al codice sorgente vengono registrate in un archivio Git. La cronologia della distribuzione è disponibile in Adobe Commerce [Project Web Interface](https://devdocs.magento.com/cloud/project/projects.html#login). Tutti gli accessi al supporto vengono registrati e le sessioni di supporto registrate.
+Tutte le attività di AWS sono registrate in AWS CloudTrail. I registri del sistema operativo, del server applicazioni e del database vengono archiviati nei server di produzione e nei backup. Tutte le modifiche al codice sorgente vengono registrate in un archivio Git. La cronologia della distribuzione è disponibile in Adobe Commerce [Project Web Interface](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview). Tutti gli accessi al supporto vengono registrati e le sessioni di supporto registrate.
 
 Consulta [Visualizzare e gestire i registri](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) nella _Guida cloud_.
 
 ## Dati sensibili
 
-I dati riservati possono riguardare sia informazioni personali dei consumatori che dati riservati dei clienti Managed Services. La protezione dei dati sensibili di clienti e consumatori è un obbligo fondamentale per Adobe Commerce Managed Services. Sia Managed Services che i clienti Adobe hanno obblighi legali in merito alle informazioni personali identificabili. Oltre alle funzioni di sicurezza dell’architettura, esistono altri controlli per limitare la distribuzione e l’accesso ai dati sensibili.
+I dati sensibili possono riguardare informazioni personali dei consumatori o dati riservati di Managed Services clienti. La protezione dei dati sensibili di clienti e consumatori è un obbligo fondamentale per Adobe Commerce Managed Services. Sia i clienti Managed Services che Adobe hanno obblighi legali in merito alle informazioni personali identificabili. Oltre alle funzioni di sicurezza dell’architettura, esistono altri controlli per limitare la distribuzione e l’accesso ai dati sensibili.
 
 I clienti possiedono i propri dati e hanno il controllo sulla loro posizione. Il cliente specifica la posizione in cui risiedono le istanze di produzione e sviluppo. Inoltre, specificano la posizione utilizzata per l’ambiente di reporting di Adobe Commerce con Commerce e se tale applicazione di reporting di Adobe Commerce ha accesso o meno a informazioni personali. Le istanze di produzione possono trovarsi nella maggior parte delle aree geografiche di AWS, mentre gli ambienti di sviluppo e reporting di Adobe Commerce si trovano attualmente negli Stati Uniti o nell’Unione Europea.
 

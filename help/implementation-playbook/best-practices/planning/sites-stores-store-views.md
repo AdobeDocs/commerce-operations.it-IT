@@ -4,7 +4,7 @@ description: Scopri le best practice per la configurazione di siti, store e visu
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -41,5 +41,5 @@ I siti Web e i negozi sono moltiplicatori per i dati di catalogo, pertanto la pr
 
 ## Informazioni aggiuntive
 
-- [Informazioni su siti Web, archivi e visualizzazioni dello store](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [Configurazione di più siti Web o store](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
+- [Informazioni su siti Web, archivi e visualizzazioni dello store](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Configurazione di più siti Web o store](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
