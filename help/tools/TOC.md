@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: ebcf6c2f99b44489d3914dc4a83fd0f3f944ad93
+source-git-commit: 2a751e4548ab032a1d9339efeb66559c3836e58e
 workflow-type: tm+mt
-source-wordcount: '6093'
+source-wordcount: '6106'
 ht-degree: 0%
 
 ---
@@ -642,6 +642,7 @@ ht-degree: 0%
          - [ACSD-60590: Miglioramento delle prestazioni della generazione di report giornalieri aggregati Bestsellers](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925: ordinamento degli elementi in [!UICONTROL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
          - [ACSD-59865: [!UICONTROL Cart Price Rule] non è in grado di annullare le regole precedenti a causa di quantità insufficiente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
+         - [ACSD-59366: eliminare i team con utenti disattivati non visibili nell’elenco dei team](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list.md)
          - [ACSD-60788: script personalizzati per  [!DNL Google Tag Manager]  non eseguiti a causa di errori CSP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors.md)
          - [ACSD-59952: errore durante l’eliminazione del catalogo condiviso con lo stesso ID gruppo di un altro catalogo condiviso](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
       - v1.1.53 {#v1-1-53}
