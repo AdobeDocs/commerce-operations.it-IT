@@ -1,42 +1,42 @@
 ---
-title: Procedure consigliate per i servizi di aggiornamento
-description: Scopri come mantenere aggiornato lo stack tecnologico di Adobe Systems Commerce su infrastruttura cloud.
+title: Best practice per aggiornare i servizi
+description: Scopri come mantenere aggiornato lo stack di tecnologia Adobe Commerce su infrastruttura cloud.
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 5e3289b328b51eb50354efdc1571283791175b9a
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
 
-# Procedure consigliate per i servizi di aggiornamento
+# Best practice per aggiornare i servizi
 
-Questo articolo fornisce consigli per mantenere aggiornato lo stack tecnologico di Adobe Systems Commerce su infrastruttura cloud e fornisce collegamenti a risorse utili.
+Questo articolo fornisce consigli per mantenere aggiornato lo stack di tecnologia Adobe Commerce on cloud infrastructure e fornisce collegamenti a risorse utili.
 
 ## Prodotti e versioni interessati
 
-Adobe Systems Commerce su infrastruttura cloud 2.4.x e versioni successive
+Adobe Commerce su infrastruttura cloud 2.4.x e versioni successive
 
-## Servizi di aggiornamento
+## Aggiorna servizi
 
-Aggiorna i servizi e i componenti utilizzati da Adobe Systems Commerce prima che raggiungano o siano vicini alla data di fine del ciclo di vita. Ciò consente di tenere il passo con la conformità PCI e ridurre le vulnerabilità della sicurezza.
+Aggiorna i servizi e i componenti utilizzati da Adobe Commerce prima che raggiungano o siano prossimi alla data di fine del ciclo di vita. Questo consente di mantenere il passo con la conformità PCI e ridurre le vulnerabilità di sicurezza.
 
-I clienti con piani Starter possono usufruire autonomamente degli aggiornamenti dei servizi. Fare riferimento a [Modificare la versione](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) del servizio per informazioni dettagliate su come eseguire questa operazione.
+I clienti che utilizzano i piani Starter possono eseguire autonomamente gli aggiornamenti dei servizi. Per ulteriori informazioni su come eseguire questa operazione, consultare [Modifica versione del servizio](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version).
 
-I clienti con piani Pro possono gestire autonomamente solo gli aggiornamenti dei servizi nel loro [ambiente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html) di integrazione. Per gli aggiornamenti dei servizi in Produzione, è necessario [inviare un ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) di supporto per richiedere l&#39;aggiornamento.
+I clienti con piani Pro possono eseguire il self-service solo sugli aggiornamenti dei servizi nel proprio [ambiente di integrazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Per gli aggiornamenti dei servizi in produzione, è necessario [inviare un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) richiedendo l&#39;aggiornamento.
 
 >[!WARNING]
 >
->Gli aggiornamenti del servizio non possono essere inviati all&#39;ambiente di produzione senza un preavviso di 48 ore lavorative all&#39;team dell&#39;infrastruttura. Ciò è necessario in quanto dobbiamo assicurarci di avere un tecnico di supporto dell&#39;infrastruttura disponibile per aggiornare la configurazione entro un arco temporale desiderato con tempi di inattività minimi per l&#39;ambiente di produzione.
+>Gli aggiornamenti dei servizi non possono essere inviati a un ambiente di produzione senza un preavviso di 48 ore lavorative al team dell&#39;infrastruttura Adobe. Questo è necessario affinché Adobe possa garantire la disponibilità di un tecnico del supporto dell’infrastruttura per aggiornare la configurazione entro l’intervallo di tempo desiderato, riducendo al minimo i tempi di inattività dell’ambiente di produzione. Adobe consiglia di attivare la modalità di manutenzione del sito durante l’aggiornamento del servizio.
 
 È possibile visualizzare l&#39;elenco delle versioni del servizio e delle date di fine del ciclo di vita nel seguente file: [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 >[!NOTE]
 >
->Questo file non può essere considerato un&#39;unica fonte di verità. In caso di dubbio, fare riferimento ai siti Web ufficiali dei fornitori per queste tecnologie.
+>Questo file non può essere considerato un’unica fonte di verità. In caso di dubbi, consulta i siti web ufficiali dei fornitori di queste tecnologie.
 
 ## Informazioni aggiuntive
 
-[requisiti di sistema](../../../installation/system-requirements.md)
+[Requisiti di sistema](../../../installation/system-requirements.md)
