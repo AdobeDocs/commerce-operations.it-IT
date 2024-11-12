@@ -2,9 +2,9 @@
 title: Server applicazioni GraphQL
 description: Segui queste istruzioni per abilitare il server applicazioni GraphQL nella tua distribuzione Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 620be59a5b66bd4f55997951c59e473ac14a5c21
+source-git-commit: c5446f0273705b158297c0a253054742ec95b44e
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2082'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ GraphQL Application Server è disponibile solo per Adobe Commerce. Non è dispon
 
 >[!NOTE]
 >
->GraphQL Application Server non è attualmente compatibile con [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). I clienti di Adobe Commerce sull&#39;infrastruttura cloud che attualmente utilizzano [!DNL AWS S3] per l&#39;[archiviazione remota](../configuration/remote-storage/cloud-support.md) non possono utilizzare GraphQL Application Server fino a quando Adobe non rilascerà un hotfix più tardi nel 2024.
+>GraphQL Application Server non è attualmente compatibile con [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). I clienti di Adobe Commerce su infrastruttura cloud che attualmente utilizzano [!DNL AWS S3] per l&#39;[archiviazione remota](../configuration/remote-storage/cloud-support.md) non potranno utilizzare GraphQL Adobe Application Server fino a quando non rilasceranno un hotfix più tardi nel 2024.
 
 ## Architettura
 
@@ -101,7 +101,7 @@ Prima di distribuire GraphQL Application Server su progetti iniziali, effettuare
 
 1. Distribuisci Adobe Commerce sull&#39;infrastruttura cloud utilizzando il modello cloud del ramo [2.4.7-appserver](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Verificare che tutte le personalizzazioni e le estensioni di Commerce siano compatibili con GraphQL Application Server.
-1. Verificare che la variabile di ambiente `CRYPT_KEY` sia impostata per l&#39;istanza. Puoi controllare lo stato di questa variabile sul Cloud Project Portal (Interfaccia utente di onboarding).
+1. Verificare che la variabile di ambiente `CRYPT_KEY` sia impostata per l&#39;istanza. Puoi controllare lo stato di questa variabile nella console Cloud.
 1. Clona il progetto Commerce Cloud.
 1. Rinomina `application-server/.magento/.magento.app.yaml.sample` in `application-server/.magento/.magento.app.yaml` e, se necessario, regola le impostazioni in .magento.app.yaml.
 1. Rimuovere il commento dalla configurazione della route seguente nel file `project_root/.magento/routes.yaml` per reindirizzare il traffico `/graphql` a GraphQL Application Server.
