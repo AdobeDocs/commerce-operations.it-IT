@@ -1,7 +1,7 @@
 ---
-source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
+source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
 workflow-type: tm+mt
-source-wordcount: '14792'
+source-wordcount: '14732'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ compatibilità e funzionalità aggiornate. In precedenza, l’aggiornamento alle
    * _Correzione nota_: l&#39;opzione Elasticsearch 8 nell&#39;opzione Configurazione amministratore verrà visualizzata con testo obsoleto per informare gli utenti che l&#39;opzione Elasticsearch 8 non è più consigliata.
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/commit/0611e750>
 * _AC-12481_: aggiungi una nota di testo quando l&#39;opzione Elasticsearch è selezionata in Admin Configuration
-   * _Correzione nota_: viene aggiunta una nota di testo per informare gli utenti amministratori di Adobe Commerce che elasticsearch non è più supportato da Adobe ed è obsoleto.
+   * _Nota di correzione_: viene aggiunta una nota di testo per informare gli utenti amministratori di Adobe Commerce che elasticsearch non è più supportato da Adobe ed è obsoleto.
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/commit/0611e750>
 * _AC-12870_: compatibilità tra gli strumenti SVC e EAT e MariaDB 11.4
    * _Correzione nota_: compatibilità tra gli strumenti SVC e EAT e MariaDB 11.4
@@ -144,7 +144,7 @@ compatibilità e funzionalità aggiornate. In precedenza, l’aggiornamento alle
 
 ## Problemi risolti
 
-Sono stati risolti 254 problemi nel codice core del Magento Open Source 2.4.8. Di seguito è descritto un sottoinsieme dei problemi risolti inclusi in questa versione.
+Sono stati risolti 253 problemi nel codice core del Magento Open Source 2.4.8. Di seguito è descritto un sottoinsieme dei problemi risolti inclusi in questa versione.
 
 ### API
 
@@ -1143,10 +1143,6 @@ to bin/magento config:set twofactorauth/google/leeway VALUE
 * _AC-12128_: correzione della vulnerabilità di sicurezza di Prototype.js CVE-2020-27511
    * _Correzione nota_: il sistema è stato aggiornato per risolvere la vulnerabilità di sicurezza CVE-2020-27511 in Prototype.js 1.7.3, migliorando la sicurezza complessiva del sistema. Prima di questo aggiornamento, il sistema era suscettibile a un’espressione regolare Denial of Service (ReDOS) attraverso la rimozione di tag HTML creati.
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/commit/de4dfb8e>
-* _AC-12128_:
-   * _Correzione nota_: Correzione di una vulnerabilità di sicurezza di Prototype.js CVE-2020-27511
-   * _Problema GitHub_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _Contributo del codice GitHub_: il sistema è stato aggiornato per risolvere la vulnerabilità di sicurezza CVE-2020-27511 in Prototype.js 1.7.3, migliorando la sicurezza complessiva del sistema. Prima di questo aggiornamento, il sistema era suscettibile a un’espressione regolare Denial of Service (ReDOS) attraverso la rimozione di tag HTML creati.
 * _AC-12189_: Grunt Less utilizza il prefisso pub/ per sourcemaps
    * _Correzione nota_: il sistema ora genera meno sourcemap/css senza il prefisso /pub per i percorsi quando si utilizza grunt, eliminando la necessità di una soluzione alternativa nella configurazione del server Web. In precedenza, l’utilizzo del prefisso /pub nei percorsi sourcemaps richiedeva una configurazione specifica nel server web per funzionare correttamente.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/38837>
