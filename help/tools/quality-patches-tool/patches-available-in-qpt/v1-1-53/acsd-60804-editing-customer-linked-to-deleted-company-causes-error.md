@@ -3,9 +3,10 @@ title: "ACSD-60804: la modifica di un cliente associato a un’azienda eliminata
 description: Applicare la patch ACSD-60804 per risolvere il problema Adobe Commerce, se la modifica di un cliente associato a una società eliminata causa un errore *Chiamata a una funzione membro getSuperUserId() su null*.
 feature: Companies, Customers, B2B
 role: Admin, Developer
-source-git-commit: 1231dac065565ff636424673a15ae4148a5f84dd
+exl-id: 09241160-f5ed-41f8-8bb6-2bb8ed5cccd5
+source-git-commit: 9d39b1045099a71d23f25ad1ef4932f78b1f33f0
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -64,8 +65,4 @@ Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del m
 
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
-* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
-* [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
-
-
-Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida di [!DNL Quality Patches Tool].
+* [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.
