@@ -2,7 +2,7 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fb884f895cb03dcc920dc3de9baa63deb8737cd3
+source-git-commit: 3f6093b55c7bbfaf8666438ac1fef8f90432d947
 workflow-type: tm+mt
 source-wordcount: '23125'
 ht-degree: 0%
@@ -68,7 +68,7 @@ ht-degree: 0%
 * **ACSD-61553** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.7) - Corregge il problema per cui gli sconti di **[!UICONTROL Cart Price Rule]** non vengono calcolati correttamente quando al prodotto vengono applicati più sconti con priorità diverse e **[!UICONTROL Maximum Qty Discount is Applied To]**.
 * **ACSD-61667** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Migliora le prestazioni di inventario per la creazione di spedizioni nel caso di molte origini con prelievo in-store.
 * **ACSD-61969** (per Adobe Commerce >=2.4.7 &lt;2.4.8) - Corregge il problema per cui l&#39;utente deve digitare un codice coupon con distinzione tra maiuscole e minuscole in modo che corrisponda esattamente alla configurazione del codice coupon.
-* Patch aggiornate: ACSD-54989, ACSD-60632
+* Versioni aggiornate: **ACSD-54989**, **ACSD-60632**
 
 ## v1.1.52 {#v1-1-52}
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 * **ACSD-60788** (per Adobe Commerce >=2.4.7 &lt;2.4.8) - Corregge il problema per cui gli script personalizzati per [!DNL Google Tag Manager] non vengono eseguiti a causa di errori CSP (Content Security Policy).
 * **ACSD-61322** (per Adobe Commerce >=2.4.6 &lt;2.4.8) - Corregge il problema per cui [!UICONTROL Products/Categories] non assegnato a [!UICONTROL Shared Catalog] per il valore predefinito (Gruppo generale) è ancora incluso in Sitemap XML.
 * **ACSD-61366** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Risolve il problema relativo all&#39;esecuzione del comando `setup:static-content:deploy --jobs 4` con più processi non riusciti. L&#39;errore *Port deve essere configurato all&#39;interno del parametro host* quando viene specificata la porta per la connessione DB.
-* Versioni aggiornate: **ACSD-54989**, **ACSD-60632**
+* Patch aggiornate: ACSD-51857, ACSD-57394
 
 ## v1.1.51 {#v1-1-51}
 
