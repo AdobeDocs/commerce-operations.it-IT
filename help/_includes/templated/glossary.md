@@ -1,7 +1,7 @@
 ---
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 0d5eeb691281d7c62aa64a9d8cd042f18504a67f
 workflow-type: tm+mt
-source-wordcount: '6363'
+source-wordcount: '6370'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ _Attributi termine:_
 _sostantivo_
 
 Il back office protetto da password del negozio in cui vengono gestiti ordini, cataloghi, contenuti e configurazioni.
-Gli utenti accedono all’area di amministrazione per gestire il punto vendita, compresi prodotti, ordini, spedizioni, contenuti CMS, progettazione della vetrina, informazioni sui clienti e così via.
+Gli utenti accedono all&#39;area di amministrazione per gestire il punto vendita, inclusi prodotti, ordini, spedizioni, contenuti CMS, progettazione della vetrina, informazioni sui clienti e così via.
 Agli utenti amministratori è associato un ruolo con autorizzazioni che controlla l’accesso a funzioni, opzioni e funzionalità.
 
 Ulteriori informazioni: [Guida utente di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
@@ -248,7 +248,7 @@ _aggettivo_
 
 Un&#39;attività di vendita al dettaglio con una sede fisica permanente, a differenza delle attività che funzionano virtualmente o esclusivamente tramite Internet.
 
-Per [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) e [Order Management](https://omsdocs.magento.com/getting-started/terminology/), questo archivio è un&#39;origine per la registrazione delle quantità di prodotti, degli ordini di spedizione e il supporto del prelievo in-store.
+Per [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) e [Order Management](#oms), questo archivio è un&#39;origine per la registrazione delle quantità di prodotti, degli ordini di spedizione e il supporto del prelievo in-store.
 
 _Attributi termine:_
 
@@ -686,7 +686,7 @@ _Attributi termine:_
 
 _sostantivo_
 
-Un insieme di script e strumenti progettati per gestire e distribuire l&#39;applicazione Commerce. Questo pacchetto semplifica molti processi dell’infrastruttura cloud di Adobe Commerce, tra cui l’implementazione in un ambiente Docker, la gestione delle istanze, la verifica della configurazione del progetto e l’applicazione di patch di Adobe.
+Un insieme di script e strumenti progettati per gestire e distribuire l&#39;applicazione Commerce. Questo pacchetto semplifica molti processi dell’infrastruttura cloud di Adobe Commerce, tra cui l’implementazione in un ambiente Docker, la gestione delle istanze, la verifica della configurazione del progetto e l’applicazione di patch Adobe.
 
 Ulteriori informazioni: [pacchetto ece-tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
@@ -951,7 +951,7 @@ _Attributi termine:_
 _sostantivo_
 
 Il proprietario della licenza (noto anche come proprietario dell’account) è la persona designata in un’organizzazione aziendale che gestisce i pagamenti e altri problemi aziendali per l’account Adobe Commerce sull’infrastruttura cloud.
-Questa persona funge da punto di contatto con l’Adobe.
+Questa persona funge da punto di contatto con Adobe.
 Dopo che un’azienda ha acquistato un abbonamento a un’infrastruttura cloud di Adobe Commerce, il progetto iniziale e l’accesso al codice sono disponibili solo per la persona designata come proprietario della licenza.
 
 _Attributi termine:_
@@ -981,7 +981,7 @@ Nel marketing e nel retail, una percentuale aggiunta al costo di un articolo per
 [Configurare il markup](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html), o markdown, di un prodotto tramite le opzioni personalizzabili del prodotto.
 
 Nello sviluppo, lingua del computer che controlla l&#39;elaborazione, la presentazione e la formattazione del testo.
-Inoltre, i tag di markup sono snippet di codice che aggiungono funzionalità o contenuto a una pagina o a un blocco CMS.
+Inoltre, i tag di markup sono snippet di codice che aggiungono funzionalità o contenuto a una pagina o a un blocco di CMS.
 
 _Attributi termine:_
 
@@ -1046,7 +1046,11 @@ _Attributi termine:_
 
 _sostantivo_
 
-[OMS](https://omsdocs.magento.com) è l&#39;offerta Order Management System di Adobe.
+OMS è l&#39;offerta Order Management System di Adobe.
+
+>[!IMPORTANT]
+>
+>Adobe Commerce Order Management (OMS) ha raggiunto la fine del ciclo di vita e non è più supportato.
 
 OMS è una soluzione flessibile e conveniente per la gestione, la vendita e l&#39;evasione dell&#39;inventario da qualsiasi canale di vendita.
 OMS offre ai clienti un&#39;esperienza fluida, che aumenta le vendite riducendo i costi e velocizza il time-to-market.
@@ -1058,7 +1062,7 @@ Le funzionalità di OMS includono:
 * Servizio clienti più semplice e reattivo
 * Migliore esperienza e fedeltà dei clienti
 
-Ulteriori informazioni: [Guida introduttiva a OMS](https://omsdocs.magento.com/en/getting-started/), [sito documenti OMS](https://omsdocs.magento.com/en/)
+Ulteriori informazioni: [Sito documenti OMS archiviato](https://commerce-docs.github.io/oms-documentation-archive/)
 
 _Attributi termine:_
 
@@ -1279,7 +1283,7 @@ _Attributi termine:_
 
 _sostantivo_
 
-Unità modulare di contenuto che può essere inserita da un utente nel CMS di una pagina per visualizzare testo e immagini o eseguire snippet di codice.
+Un’unità modulare di contenuto che può essere inserita da un utente nel CMS su una pagina per visualizzare testo e immagini o eseguire snippet di codice.
 I blocchi statici contengono contenuto modificabile e possono fungere da pagine di destinazione per le categorie di prodotti.
 I widget possono essere aggiunti a blocchi statici per fornire funzionalità aggiuntive.
 
