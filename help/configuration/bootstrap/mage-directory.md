@@ -2,7 +2,7 @@
 title: Personalizzare i percorsi delle directory di base
 description: Utilizzare la variabile MAGE_DIRS per impostare una matrice di percorsi assoluti.
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
-source-git-commit: 02c69e890b40643781ab8f48c3133527dd79386a
+source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Specifica un array associativo in cui le chiavi sono costanti di [\\Magento\\App
   ```php
   <?php
   /**
-   * Copyright Adobe
+   * Copyright [first year code created] Adobe
    * All Rights Reserved.
    */
   
