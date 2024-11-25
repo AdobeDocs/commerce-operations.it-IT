@@ -3,16 +3,16 @@ title: Proteggere il sito e l'infrastruttura Commerce
 description: Mantenere la sicurezza implementando le best practice per la sicurezza durante la configurazione e l’aggiornamento delle installazioni di Adobe Commerce.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: a00b7b66beb6499f7fb19fda2dfd450799f73728
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
 
 # Proteggere il sito e l&#39;infrastruttura Commerce
 
-La creazione e la manutenzione di un ambiente sicuro per i progetti Adobe Commerce implementati nell’infrastruttura cloud è una responsabilità condivisa tra i clienti Adobe Commerce, i partner delle soluzioni e gli Adobi. L’obiettivo di questa guida è quello di fornire best practice per il lato del cliente nell’equazione.
+La creazione e la manutenzione di un ambiente sicuro per i progetti Adobe Commerce implementati nell’infrastruttura cloud è una responsabilità condivisa tra i clienti Adobe Commerce, i partner delle soluzioni e Adobe. L’obiettivo di questa guida è quello di fornire best practice per il lato del cliente nell’equazione.
 
 Anche se non è possibile eliminare tutti i rischi per la sicurezza, l&#39;applicazione di queste best practice rafforza la postura di sicurezza delle installazioni Commerce. Un sito e un&#39;infrastruttura sicuri rendono meno attraente il target di attacchi dannosi, garantiscono la sicurezza della soluzione e delle informazioni riservate dei clienti e contribuiscono a ridurre al minimo gli incidenti relativi alla sicurezza che possono causare interruzioni del sito e costose indagini.
 
@@ -27,7 +27,7 @@ Anche se non è possibile eliminare tutti i rischi per la sicurezza, l&#39;appli
 
 ## Raccomandazioni prioritarie
 
-L’Adobe considera le seguenti raccomandazioni come della massima priorità per tutti i clienti. Implementa queste best practice chiave per la sicurezza in tutte le distribuzioni di Commerce:
+Adobe considera le seguenti raccomandazioni come della massima priorità per tutti i clienti. Implementa queste best practice chiave per la sicurezza in tutte le distribuzioni di Commerce:
 
 ![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Abilita l&#39;autenticazione a due fattori per l&#39;amministratore e tutte le connessioni SSH**
 
@@ -49,7 +49,7 @@ Quando MFA è abilitato in un progetto, tutti gli account Adobe Commerce su infr
 
 ![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Esegui l&#39;aggiornamento all&#39;ultima versione di Adobe Commerce**
 
-Mantieni il codice aggiornato [aggiornando il progetto Commerce all&#39;ultima versione](#upgrade-to-the-latest-release) di Adobe Commerce, Commerce Services ed estensioni, incluse patch di sicurezza, hotfix e altre patch fornite da Adobe.
+Aggiorna il codice [aggiornando il progetto Commerce all&#39;ultima versione](#upgrade-to-the-latest-release) di Adobe Commerce, Commerce Services ed estensioni, incluse patch di sicurezza, hotfix e altre patch fornite da Adobe.
 
 ![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Valori di configurazione sensibili protetti**
 
@@ -67,7 +67,7 @@ Quando estendi Adobe Commerce aggiungendo estensioni di terze parti da Adobe Com
 
 ![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Scegli un partner o un integratore di soluzioni (SI) esperto in materia di sicurezza**. Assicurati integrazioni sicure e distribuzione sicura del codice personalizzato selezionando le organizzazioni che seguono procedure di sviluppo sicure e hanno una solida esperienza nel prevenire e risolvere i problemi di sicurezza.
 
-![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Utilizza estensioni sicure**—Identifica le estensioni più appropriate e sicure per le distribuzioni di Commerce consultando il tuo integratore o sviluppatore di soluzioni e seguendo [Best practice per le estensioni di Adobe](../planning/extensions.md).
+![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Utilizza estensioni sicure**—Identifica le estensioni più appropriate e sicure per le distribuzioni di Commerce consultando il tuo integratore o sviluppatore di soluzioni e seguendo le [best practice per le estensioni di Adobe](../planning/extensions.md).
 
 - Solo le estensioni sorgente provengono da Adobe Commerce Marketplace o tramite l’integratore di soluzioni. Se l’estensione proviene da un integratore, assicurati che la proprietà della licenza dell’estensione sia trasferibile, nel caso in cui l’integratore cambi.
 
@@ -95,7 +95,7 @@ Per informazioni sulle versioni di Adobe Commerce disponibili, sui cicli di rila
 
 >[!TIP]
 >
->Ottieni le informazioni di sicurezza più recenti e attenua i problemi di sicurezza noti effettuando l&#39;abbonamento al [servizio di notifica sulla sicurezza Adobe](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
+>Ottieni le informazioni di sicurezza più recenti e attenua i problemi di sicurezza noti sottoscrivendo il [Servizio di notifica di sicurezza di Adobe](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
 
 ## Sviluppo di un piano di disaster recovery
 
@@ -103,7 +103,7 @@ Se il sito Commerce è compromesso, è possibile controllare i danni e ripristin
 
 Se un cliente richiede il ripristino di un’istanza di Commerce a causa di un guasto irreparabile, Adobe può fornire al cliente i file di backup. Il cliente e l&#39;integratore di soluzioni, se applicabile, possono eseguire il ripristino.
 
-Come parte di un piano di disaster recovery, Adobe consiglia vivamente ai clienti di [esportare la configurazione dell&#39;applicazione Adobe Commerce](../../../configuration/cli/export-configuration.md) per semplificare la redistribuzione se necessaria per la Business Continuity. Il motivo principale per esportare la configurazione nel file system è che la configurazione del sistema ha la precedenza sulla configurazione del database. In un file system di sola lettura, l&#39;applicazione deve essere ridistribuita per modificare le impostazioni di configurazione sensibili, fornendo un ulteriore livello di protezione.
+Come parte di un piano di disaster recovery, Adobe consiglia vivamente ai clienti di [esportare la configurazione dell&#39;applicazione Adobe Commerce](../../../configuration/cli/export-configuration.md) per facilitare la ridistribuzione, se necessaria per scopi di business continuity. Il motivo principale per esportare la configurazione nel file system è che la configurazione del sistema ha la precedenza sulla configurazione del database. In un file system di sola lettura, l&#39;applicazione deve essere ridistribuita per modificare le impostazioni di configurazione sensibili, fornendo un ulteriore livello di protezione.
 
 ### Informazioni aggiuntive
 
@@ -114,10 +114,6 @@ Come parte di un piano di disaster recovery, Adobe consiglia vivamente ai client
 - [Archivia la gestione della configurazione per Adobe Commerce nell&#39;infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)
 
 **Adobe Commerce distribuito nei locali**
-
-- [Idee di disaster recovery](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
-- [Backup e ripristino](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
 
 - [Esporta impostazioni di configurazione](../../../configuration/cli/export-configuration.md)
 
@@ -143,7 +139,7 @@ Le installazioni di Adobe Commerce distribuite nell&#39;infrastruttura cloud pos
 
 Gli attacchi di malware che colpiscono i siti di e-commerce sono troppo comuni e gli attori della minaccia sviluppano continuamente nuovi modi per raccogliere informazioni personali e sulla carta di credito dalle transazioni.
 
-Tuttavia, Adobe ha scoperto che la maggior parte dei compromessi sul sito non sono dovuti a un hacker innovativo. Piuttosto, gli attori che si occupano di minacce spesso sfruttano vulnerabilità esistenti e senza patch, password scadenti e impostazioni di proprietà e autorizzazioni inadeguate nel file system.
+Tuttavia, Adobe ha scoperto che la maggior parte dei compromessi sui siti non sono dovuti a un hacker innovativo. Piuttosto, gli attori che si occupano di minacce spesso sfruttano vulnerabilità esistenti e senza patch, password scadenti e impostazioni di proprietà e autorizzazioni inadeguate nel file system.
 
 Negli attacchi più comuni, il codice dannoso viene iniettato nell&#39;intestazione o nel piè di pagina assoluto di un archivio clienti. In questo caso, il codice raccoglie i dati del modulo che un cliente inserisce nella vetrina, inclusi le credenziali di accesso del cliente e i dati del modulo di pagamento. Quindi, questi dati vengono inviati a un’altra posizione per scopi dannosi anziché al backend di Commerce. Inoltre, il malware può compromettere l’amministratore nell’eseguire il codice che sostituisce il modulo di pagamento originale con un modulo falso che sostituisce tutte le protezioni impostate dal provider di pagamenti.
 
@@ -178,7 +174,7 @@ Gli attacchi di brute force password indovinare possono causare l’accesso non 
 
 - Identificare e proteggere tutti i punti in cui è possibile accedere all&#39;installazione di Commerce dall&#39;esterno.
 
-  Puoi proteggere l&#39;accesso all&#39;amministratore, che in genere richiede la massima protezione, seguendo le [raccomandazioni sulla priorità dell&#39;Adobe](#priority-recommendations) durante la configurazione del progetto Commerce.
+  Puoi proteggere l&#39;accesso all&#39;amministratore, che in genere richiede la massima protezione, seguendo [le raccomandazioni sulla priorità di Adobe](#priority-recommendations) durante la configurazione del progetto Commerce.
 
 - Controllare l&#39;accesso al sito Commerce impostando un elenco di controllo di accesso che consenta l&#39;accesso solo agli utenti provenienti da un indirizzo IP o una rete specifici.
 

@@ -4,9 +4,9 @@ description: Scopri le best practice generali per lo sviluppo di progetti Adobe 
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 68dc4635df9fc411925fe0d48a578edece8895dc
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ Questo argomento descrive la linea di base per un processo di sviluppo Adobe Com
 
 >[!NOTE]
 >
->Gli architetti tecnici Adobi utilizzano queste best practice come riferimento durante gli impegni che coinvolgono lo sviluppo.
+>Gli architetti tecnici di Adobe utilizzano queste best practice come riferimento durante gli impegni che coinvolgono lo sviluppo.
 
-Queste best practice sono state sviluppate sulla base di anni di esperienza nello sviluppo e nella distribuzione di progetti Commerce. L’Adobe consiglia di seguire queste best practice nelle iniziative tecniche e di migliorare i processi e il codice esistenti per allinearli.
+Queste best practice sono state sviluppate sulla base di anni di esperienza nello sviluppo e nella distribuzione di progetti Commerce. Adobe consiglia di seguire queste best practice nelle iniziative tecniche e di migliorare i processi e il codice esistenti per allinearli.
 
 ## Convenzioni testo
 
@@ -46,18 +46,6 @@ Le parole chiave &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &
 1. Tutti gli sviluppatori DEVONO sviluppare e testare utilizzando lo stesso stack di tecnologia utilizzato sui (futuri) server di produzione. Le versioni del software in questo stack di tecnologia DEVONO corrispondere alla versione principale e alla versione secondaria del software installato sui server di produzione. Consulta [requisiti di sistema](../../../installation/system-requirements.md) per informazioni dettagliate sullo stack tecnologico tipico di Adobe Commerce.
 1. L’amministratore di sistema o l’architetto tecnico PUÒ fornire al team un ambiente di sviluppo locale gestito a livello centrale per garantire e promuovere ambienti locali uguali e aggiornati.
 1. Sviluppatori e ingegneri QA DEVONO avere accesso alla riga di comando, al database e ai file di registro dell’ambiente QA. Potrebbe essere necessaria una connessione VPN.
-
-## Norme di codifica
-
-1. Tutto il codice DEVE seguire le convenzioni degli standard di architettura, metodologia e codifica. La creatività è desiderata nella funzione, non nella forma.
-1. Tutto il codice deve essere conforme alla [Guida all&#39;architettura di Adobe Commerce](https://developer.adobe.com/commerce/php/architecture/){target="_blank}.
-1. Tutto il codice deve rispettare i [Standard di codifica Adobe Commerce](https://developer.adobe.com/commerce/php/coding-standards/).
-1. Tutto il codice deve rispettare le [linee guida tecniche di Adobe Commerce](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/).
-1. Tutto il codice DEVE implementare le [Best practice per Adobe Commerce](../phases.md), se applicabili.
-1. Tutto il codice DEVE rispettare gli standard [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/).
-1. Ove possibile, si consiglia di prendere in considerazione [Visioni tecniche di Adobe Commerce](https://developer.adobe.com/commerce/php/architecture/technical-vision/).
-1. Tutte le integrazioni con sistemi esterni DEVONO disporre di test di integrazione che convalidano il processo aziendale.
-1. Tutti i moduli DEVONO avere copertura di test. Cosa verificare esattamente DEVE essere determinato dal team di sviluppo in collaborazione con l’architetto tecnico o lo sviluppatore principale. Tale determinazione DOVREBBE basarsi su misure qualitative e non su misure quantitative; una percentuale elevata di copertura del codice non è un indicatore di successo né implica un&#39;elevata qualità del codice. Determinare piuttosto il rischio di non coprire una parte del codice valutando la probabilità e la gravità delle regressioni in tale parte del programma.
 
 ## Controllo delle versioni
 

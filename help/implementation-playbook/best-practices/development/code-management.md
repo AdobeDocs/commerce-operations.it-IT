@@ -4,9 +4,9 @@ description: Scopri le best practice per la gestione del codice nella fase di sv
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,6 @@ Questo argomento è progettato per aiutarti a decidere se utilizzare Git o Compo
 
 - Adobe Commerce sull’infrastruttura cloud
 - Adobe Commerce on-premise
-
-Copre sia l&#39;[architettura di riferimento globale (GRA)](../../architecture/global-reference/overview.md) che le installazioni di singole istanze.
 
 ## Definizioni
 

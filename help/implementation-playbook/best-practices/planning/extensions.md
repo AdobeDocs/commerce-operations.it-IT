@@ -4,9 +4,9 @@ description: Scopri come evitare problemi di prestazioni causati da estensioni A
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 1fdbded7738365593ef7da64f4dbe6713984bff3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 1%
 
 Le estensioni (moduli) di terze parti di Adobe Commerce possono causare vari problemi che possono influire negativamente sulle prestazioni della vetrina. Per evitare questi problemi, segui queste best practice:
 
+- Sviluppa le integrazioni e le personalizzazioni di Commerce utilizzando [estensibilità fuori processo](https://developer.adobe.com/commerce/extensibility/), ove possibile, per semplificare la manutenzione e l&#39;aggiornamento.
 - Scarica e acquista estensioni di terze parti da un&#39;origine attendibile, come [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 - Aggiorna tutte le estensioni di terze parti alla versione più recente.
 - Se non riesci a mantenere aggiornate le estensioni di terze parti, puoi utilizzare estensioni diverse.

@@ -2,10 +2,10 @@
 title: Home Guide operative
 description: Sfoglia un indice della documentazione del prodotto operativo e di amministrazione del sistema di Adobe Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
+source-git-commit: 5a2aae6a2f3b1353457f003460d230db2b57abdd
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 20%
+source-wordcount: '163'
+ht-degree: 7%
 
 ---
 
@@ -27,13 +27,13 @@ Utilizza questa raccolta di guide per scoprire concetti, processi, strumenti e b
       <p>Rivedi tutte le informazioni sulla versione per le patch e i servizi Adobe Commerce.</p>
     </div>
   </td>
-  <td valign="top">
-    <a href="../performance/overview.md">
-       <img alt="Prestazioni" src="../assets/icons/gauge.svg" width="40"/>
+    <td valign="top">
+    <a href="../implementation-playbook/overview.md">
+      <img alt="Implementazione" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong>Best practice per le prestazioni</strong></a>
-      <p>Utilizza questi consigli per ottimizzare le prestazioni della tua implementazione di Adobe Commerce.</p>
+      <a href="../implementation-playbook/overview.md"><strong>Playbook di implementazione</strong></a>
+      <p>Scopri le strategie per la pianificazione e l’implementazione di un sito Adobe Commerce di successo.</p>
     </div>
   </td>
   <td valign="top">
@@ -45,33 +45,13 @@ Utilizza questa raccolta di guide per scoprire concetti, processi, strumenti e b
       <p>Scopri in che modo i commercianti di Adobe Commerce sono responsabili della gestione di un ambiente sicuro.</p>
     </div>
   </td>
-</tr>
-<tr>
-  <td valign="top">
-    <a href="../implementation-playbook/overview.md">
-      <img alt="Implementazione" src="../assets/icons/play.svg" width="40"/>
+    <td valign="top">
+    <a href="../performance/overview.md">
+       <img alt="Prestazioni" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>Playbook di implementazione</strong></a>
-      <p>Scopri le strategie per la pianificazione e l’implementazione di un sito Adobe Commerce di successo.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../operational-playbook/overview.md">
-       <img alt="Operazioni" src="../assets/icons/refresh.svg" width="40"/>
-    </a>
-    <div>
-      <a href="../operational-playbook/overview.md"><strong>Playbook operativo</strong></a>
-      <p>Scopri come rendere le tue unità di business operative e pronte per gestire un sito di e-commerce di successo.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../commerce-at-scale/overview.md">
-       <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40"/>
-    </a>
-    <div>
-      <a href="../commerce-at-scale/overview.md"><strong>Commerce su scala</strong></a>
-      <p>Scopri come distribuire esperienze su larga scala utilizzando Adobe Commerce con Adobe Experience Manager.</p>
+      <a href="../performance/overview.md"><strong>Best practice per le prestazioni</strong></a>
+      <p>Utilizza questi consigli per ottimizzare le prestazioni della tua implementazione di Adobe Commerce.</p>
     </div>
   </td>
 </tr>

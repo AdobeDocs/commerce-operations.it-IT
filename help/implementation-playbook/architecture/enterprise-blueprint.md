@@ -3,9 +3,9 @@ title: Architettura di riferimento aziendale
 description: Scopri come implementare Adobe Commerce utilizzando la più recente tecnologia di e-commerce componibile di Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
+source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -45,24 +45,32 @@ Adobe Commerce si integra con tutte le soluzioni Experience Cloud per fornire [e
 
 >[!NOTE]
 >
->Consulta [Progetti di esperienza digitale](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) per ulteriori dettagli tecnici.
+>Per ulteriori informazioni, consulta le risorse seguenti:
+>
+>- [Blueprint per esperienze digitali](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) per ulteriori dettagli tecnici.
+>- Consulta [Personalizzazione della customer experience](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Integrazione con sistemi di terze parti
 
-Adobe fornisce agli sviluppatori punti di estensione e strumenti completi per creare applicazioni che estendono le funzionalità principali di Commerce e integrano Commerce con sistemi di terze parti (come CRM, ERPS e PIMS). Questi strumenti riducono il costo totale di proprietà della piattaforma nei seguenti modi:
+Adobe fornisce agli sviluppatori punti di estensione completi e strumenti per creare applicazioni che estendono le funzionalità principali di Commerce e integrano Commerce con sistemi di terze parti (come CRM, ERPS e PIMS). Questi strumenti riducono il costo totale di proprietà della piattaforma nei seguenti modi:
 
 - **Scalabilità**: le applicazioni possono essere scalate separatamente dal software principale, consentendo una maggiore efficienza e aggiornamenti semplificati.
 - **Isolamento**-Un ambiente isolato significa che gli sviluppatori possono aggiornare o modificare le loro estensioni a loro discrezione senza affidarsi a una versione di base.
 - **Indipendenza tecnologica**-Gli sviluppatori possono scegliere qualsiasi tecnologia, stack e linguaggi di codifica che soddisfino le loro esigenze.
 
-L’Adobe fornisce i seguenti strumenti per sviluppatori per creare integrazioni e personalizzazioni:
+Adobe fornisce i seguenti strumenti per sviluppatori per creare integrazioni e personalizzazioni:
 
 - [**Mesh API per Adobe Developer App Builder**](https://developer.adobe.com/graphql-mesh-gateway/): consente di coordinare e combinare più origini API, GraphQL, REST e altre in un unico endpoint GraphQL interrogabile.
 - [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/): crea e distribuisci applicazioni web sicure e scalabili che estendono le funzionalità di Commerce e si integrano con soluzioni di terze parti.
 - [**Eventi**](https://developer.adobe.com/commerce/extensibility/events/)—Utilizza trigger evento personalizzati per interagire con altri strumenti di sviluppo estensibili.
 - [**Webhook**](https://developer.adobe.com/commerce/extensibility/webhooks/): utilizza i webhook per attivare automaticamente le interazioni tra Commerce e i sistemi di terze parti.
 - [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—Personalizza e migliora l&#39;amministratore Commerce con nuove pagine e funzionalità per i tuoi esercenti.
+- [**Integration Starter Kit**](https://developer.adobe.com/commerce/extensibility/starter-kit/): accelera le integrazioni di backoffice con integrazioni di riferimento, script di onboarding e architettura standardizzata.
+
+>[!NOTE]
+>
+>Vedi [L&#39;approccio moderno: estensibilità effettiva in Adobe Commerce](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
 
 ## Servizi di vetrina
 

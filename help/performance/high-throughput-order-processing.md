@@ -3,9 +3,9 @@ title: Best practice per le prestazioni del checkout
 description: Scopri come ottimizzare le prestazioni delle esperienze di pagamento sul tuo sito Adobe Commerce.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: e4c1832076bb81cd3e70ff279a6921ffb29ea631
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Il processo di [estrazione](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) in Adobe Commerce è un aspetto critico dell&#39;esperienza di vetrina. Si basa sulle funzionalità integrate [cart](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) e [checkout](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page).
 
-Le prestazioni sono fondamentali per mantenere una buona esperienza utente. Rivedi il riepilogo del benchmark delle prestazioni [](../implementation-playbook/infrastructure/performance/benchmarks.md) per ulteriori informazioni sulle aspettative delle prestazioni. Puoi ottimizzare le prestazioni di estrazione configurando le seguenti opzioni per l&#39;**elaborazione di ordini ad alta velocità**:
+Le prestazioni sono fondamentali per mantenere una buona esperienza utente. Puoi ottimizzare le prestazioni di estrazione configurando le seguenti opzioni per l&#39;**elaborazione di ordini ad alta velocità**:
 
 - [AsyncOrder](#asynchronous-order-placement)—Elabora gli ordini in modo asincrono utilizzando una coda.
 - [Calcolo totale differito](#deferred-total-calculation)—Differisci i calcoli per i totali dell&#39;ordine fino all&#39;inizio dell&#39;estrazione.

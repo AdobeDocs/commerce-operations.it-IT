@@ -3,22 +3,22 @@ title: Best practice per la distribuzione delle patch su larga scala
 description: Scopri in che modo l’applicazione di patch centralizzate per Adobe Commerce può aiutarti a gestire i progetti aziendali.
 role: Developer
 feature: Best Practices
-badge: label="Contribuito da Anton Evers, Sr. Technical Architect, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Con il contributo di Anton Evers"
+badge: label="Con il contributo di Anton Evers, Sr. Technical Architect, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Con il contributo di Anton Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1251'
 ht-degree: 0%
 
 ---
 
 # Best practice per la distribuzione delle patch di Adobe Commerce su larga scala
 
-Se gestisci più installazioni di Adobe Commerce, [l&#39;applicazione di patch](../../../upgrade/patches/apply.md) può essere un processo complesso. _L&#39;applicazione centralizzata delle patch_ è una parte essenziale della [architettura di riferimento globale](../../architecture/global-reference/overview.md) e una best practice per le aziende. Consente di applicare le patch corrette a tutte le installazioni di Adobe Commerce. Questo argomento spiega come ottenere la distribuzione centralizzata delle patch per tutti i tipi di [patch](../../../upgrade/patches/overview.md) di Adobe Commerce.
+Se gestisci più installazioni di Adobe Commerce, [l&#39;applicazione di patch](../../../upgrade/patches/apply.md) può essere un processo complesso. _L&#39;applicazione centralizzata delle patch_ è una best practice per le aziende. Consente di applicare le patch corrette a tutte le installazioni di Adobe Commerce. Questo argomento spiega come ottenere la distribuzione centralizzata delle patch per tutti i tipi di [patch](../../../upgrade/patches/overview.md) di Adobe Commerce.
 
 >[!NOTE]
 >
->Il seguente contenuto è stato originariamente pubblicato nel post [Distribuzione di patch Adobe Commerce su scala](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) nell&#39;Adobe Tech Blog. È stato modificato per concentrarsi sui passaggi e sugli esempi di codice per l’implementazione di una strategia di applicazione di patch centralizzata. Per ulteriori dettagli sui diversi tipi di patch qui descritti, consulta il post originale.
+>Il seguente contenuto è stato originariamente pubblicato nel post [Distribuzione di patch di Adobe Commerce su scala](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) sul blog di Adobe Tech. È stato modificato per concentrarsi sui passaggi e sugli esempi di codice per l’implementazione di una strategia di applicazione di patch centralizzata. Per ulteriori dettagli sui diversi tipi di patch qui descritti, consulta il post originale.
 
 ## Prodotti e versioni interessati
 
