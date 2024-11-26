@@ -3,15 +3,15 @@ title: "ACSD-58471: il caricamento del contenuto dinamico nella pagina dei detta
 description: Applica la patch ACSD-58471 per risolvere il problema di Adobe Commerce, in cui il contenuto dinamico non viene caricato sulla pagina dei dettagli del prodotto, quando sono state pianificate le relative regole del prezzo di catalogo.
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: a3afb779006de95ac70dff39a737360112220af8
+exl-id: 6ff68b74-67fc-400c-aa79-a1274fd19708
+source-git-commit: 28390659fe180180c9b2c8d16239008a1f8a510b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-58471: il caricamento del contenuto dinamico non riesce sulla pagina dei dettagli del prodotto, quando sono state pianificate le regole del prezzo di catalogo associate
+# ACSD-58471: il caricamento del contenuto dinamico non riesce nella pagina dei dettagli del prodotto, quando sono state pianificate le regole del prezzo di catalogo associate
 
 La patch ACSD-58471 risolve il problema relativo al mancato caricamento del contenuto dinamico nella pagina dei dettagli del prodotto, quando sono state pianificate le regole del prezzo di catalogo associate. Il sistema ora visualizza correttamente il contenuto dinamico associato alle regole del prezzo di catalogo programmato nella pagina dei dettagli del prodotto. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55. L’ID della patch è ACSD-58471. Questo problema è pianificato per la risoluzione in Adobe Commerce 2.5.0.
 
@@ -28,6 +28,8 @@ La patch ACSD-58471 risolve il problema relativo al mancato caricamento del cont
 >La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
+
+Il contenuto dinamico non viene caricato sulla pagina dei dettagli del prodotto quando sono pianificate le regole del prezzo di catalogo.
 
 <u>Passaggi da riprodurre</u>:
 
