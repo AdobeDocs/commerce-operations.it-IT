@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 0f593cd529ee1b5d259c091758e141629e785ab8
+source-git-commit: 088b9ce70ba89bad4ea82f60093de0e3bf050cf9
 workflow-type: tm+mt
-source-wordcount: '6365'
+source-wordcount: '6377'
 ht-degree: 0%
 
 ---
@@ -659,7 +659,8 @@ ht-degree: 0%
          - [ACSD-61667: migliora le prestazioni di inventario per la creazione di spedizioni](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
-           [ACSD-60267: FPT non viene applicato correttamente quando i prodotti vengono aggiunti tramite opzioni di prodotto configurabili](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md)
+         - [ACSD-61756: peggioramento delle prestazioni dei filtri AdvancedSalesRule a causa di indici di database mancanti](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter.md)
+         - [ACSD-60267: l’FPT non si applica correttamente quando i prodotti vengono aggiunti tramite opzioni di prodotto configurabili](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md)
          - [ACSD-61199: la scheda [!UICONTROL Hierarchy] della pagina CMS non visualizza la struttura ad albero corretta](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
          - [ACSD-61200: Corregge la compensazione dell&#39;imposta sugli sconti nei calcoli del totale delle vendite](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522: gli indirizzi e-mail nei campi Nome e Cognome inviano conferme di ordine non valide](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
