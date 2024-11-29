@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: d0fe699d99f630a07702373599547638316103af
+source-git-commit: 634a3b3835419214fc8a3b349c8a0425c30fab52
 workflow-type: tm+mt
-source-wordcount: '6329'
+source-wordcount: '6340'
 ht-degree: 0%
 
 ---
@@ -668,6 +668,7 @@ ht-degree: 0%
          - [ACSD-61845: si verifica un errore per le richieste con intestazione di accettazione testo/html](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
+         - [ACSD-61348: voci della lista dei desideri visibili tramite GraphQL ma non nella vetrina](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront.md)
          - [ACSD-61785: impossibile aggiornare l’attributo reward_warning_notification tramite la mutazione GraphQL e le chiamate API REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql.md)
          - [ACSD-58471: quando vengono pianificate le regole del prezzo di catalogo, il contenuto dinamico non viene caricato sulla pagina dei dettagli del prodotto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
          - [ACSD-58383: note di credito duplicate da richieste di rimborso simultanee tramite  [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
