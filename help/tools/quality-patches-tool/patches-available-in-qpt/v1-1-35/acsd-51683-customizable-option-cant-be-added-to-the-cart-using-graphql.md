@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51683: l’opzione personalizzabile non può essere aggiunta al carrello utilizzando GraphQL"
+title: 'ACSD-51683: l’opzione personalizzabile non può essere aggiunta al carrello utilizzando GraphQL'
 description: Applica la patch ACSD-51683 per risolvere il problema di Adobe Commerce, se non è possibile aggiungere l’opzione personalizzabile al carrello utilizzando GraphQL.
 feature: GraphQL
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9cdf71aa-3dea-4f8c-b4d6-d6f192a9710d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

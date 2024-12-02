@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53979: errore JS nella home page"
+title: 'ACSD-53979: errore JS nella home page'
 description: Se il messaggio di benvenuto contiene una virgoletta singola, applica la patch ACSD-53979 per risolvere il problema di Adobe Commerce in cui si verifica un errore JavaScript nella pagina home.
 feature: Page Content
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 34a1802e-b64c-4d5d-85df-356c0740aa41
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%

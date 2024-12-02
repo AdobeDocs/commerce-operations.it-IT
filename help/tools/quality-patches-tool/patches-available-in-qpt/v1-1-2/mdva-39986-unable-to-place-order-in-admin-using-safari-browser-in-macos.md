@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39986: impossibile effettuare ordini in amministratore nel browser Safari su macOS"
+title: 'MDVA-39986: impossibile effettuare ordini in amministratore nel browser Safari su macOS'
 description: La patch MDVA-39986 risolve il problema che impediva agli utenti di effettuare ordini nell'amministratore utilizzando il browser Safari su macOS. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2. L'ID della patch è MDVA-39986. Il problema è stato risolto in Adobe Commerce 2.4.3.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: bd4e72fe-278d-40ae-98d3-1eeca0a0e70c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

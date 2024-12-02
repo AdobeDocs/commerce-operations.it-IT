@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48216: *AUTO_INCREMENT degli aumenti della tabella inventory_source_item* con il funzionamento *UPDATE*"
+title: 'ACSD-48216: *AUTO_INCREMENT della tabella inventory_source_item* aumenta con il funzionamento *UPDATE*'
 description: Applicate la patch ACSD-48216 per risolvere il problema Adobe Commerce in cui *AUTO_INCREMENT della tabella inventory_source_item* aumenta con l'operazione *UPDATE*.
 feature: Admin Workspace, Inventory, Orders
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: acb956c8-75d4-4764-8b8d-250bc8620b29
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%

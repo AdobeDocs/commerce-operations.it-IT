@@ -1,9 +1,10 @@
 ---
-title: "MDVA-38393: le regole del catalogo cessano di funzionare per il prodotto configurabile se il relativo prodotto semplice viene rinominato"
+title: 'MDVA-38393: le regole del catalogo cessano di funzionare per il prodotto configurabile se il relativo prodotto semplice viene rinominato'
 description: La patch MDVA-38393 risolve il problema che causa il mancato funzionamento delle regole di catalogo per un prodotto configurabile se il relativo prodotto semplice viene rinominato. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8. L'ID della patch è MDVA-38393. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: Catalog Management, Categories, Configuration, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 3d98671c-6ee7-4fe8-80d9-67fa697cae75
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%

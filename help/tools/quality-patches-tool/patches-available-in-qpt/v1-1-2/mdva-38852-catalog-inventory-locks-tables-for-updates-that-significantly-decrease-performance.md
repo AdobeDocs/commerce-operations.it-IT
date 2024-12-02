@@ -1,9 +1,10 @@
 ---
-title: "MDVA-38852: l'inventario del catalogo blocca le tabelle riducendo le prestazioni"
+title: 'MDVA-38852: l''inventario del catalogo blocca le tabelle riducendo le prestazioni'
 description: La patch di MDVA-38852 risolve il problema relativo all'inventario del catalogo che blocca le tabelle per gli aggiornamenti, riducendo in modo significativo le prestazioni quando vengono inoltrati diversi ordini paralleli. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2. L'ID della patch è MDVA-38852. Il problema è stato risolto in Adobe Commerce 2.3.6.
 feature: Catalog Management, Inventory, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: ce93130b-8d96-47b8-96c6-da5988b34ae0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-47137: migliorare la velocità di caricamento della galleria di immagini con la cartella ''pub/media'' grande'
+title: 'ACSD-47137: migliorare la velocità di caricamento della galleria di immagini "pub/media" cartella big'
 description: Applica la patch ACSD-47137 per migliorare la velocità di caricamento della galleria di immagini quando la cartella "pub/media" è molto grande.
 feature: Cache, Catalog Management, Categories, Media
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8a5dd930-1940-486e-96db-ee1b166cf312
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

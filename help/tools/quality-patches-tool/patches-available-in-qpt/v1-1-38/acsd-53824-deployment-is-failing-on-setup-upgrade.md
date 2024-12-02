@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53824: distribuzione non riuscita durante l’aggiornamento dell’installazione"
+title: 'ACSD-53824: distribuzione non riuscita durante l''aggiornamento dell''installazione'
 description: Applica la patch ACSD-53824 per risolvere il problema Adobe Commerce in cui la distribuzione non riesce durante l’aggiornamento dell’installazione
 feature: Attributes, Upgrade
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9038190b-5779-47b5-b4fb-ccd0a769dc61
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%

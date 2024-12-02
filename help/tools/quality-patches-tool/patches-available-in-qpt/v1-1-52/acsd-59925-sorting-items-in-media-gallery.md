@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59925: ordinamento degli elementi in [!UICONTROL Media Gallery] in base alla posizione in GraphQL"
+title: 'ACSD-59925: ordinamento degli elementi in [!UICONTROL Media Gallery] in base alla posizione in GraphQL'
 description: Applicare la patch ACSD-59925 per risolvere il problema di Adobe Commerce per cui gli elementi in [!UICONTROL Media Gallery] non sono ordinati per posizione, causando un ordine di visualizzazione errato.
 feature: Media, GraphQL
 role: Admin, Developer
-source-git-commit: 97e3ab77e7c8f5f1efd9b616b5e1d198a1b41ab0
+exl-id: a4dd840f-44d2-40dc-b0e1-13d55b688204
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

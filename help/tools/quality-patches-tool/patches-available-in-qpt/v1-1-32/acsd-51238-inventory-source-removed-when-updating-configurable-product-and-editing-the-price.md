@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51238: l’origine dell’inventario viene rimossa quando si aggiorna un prodotto configurabile e si modifica il prezzo"
+title: 'ACSD-51238: l’origine inventario viene rimossa quando si aggiorna un prodotto configurabile e si modifica il prezzo'
 description: Applicare la patch ACSD-51238 per risolvere il problema di Adobe Commerce in cui l'origine inventario viene rimossa quando si aggiorna un prodotto configurabile e si modifica il prezzo.
 feature: Configuration, Inventory, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 785f012f-e064-4ac6-b559-9e9aa42c679c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

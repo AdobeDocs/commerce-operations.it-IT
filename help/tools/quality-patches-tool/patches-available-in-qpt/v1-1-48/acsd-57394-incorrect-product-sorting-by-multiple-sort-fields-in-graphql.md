@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57394: ordinamento del prodotto non corretto in base a più attributi di ordinamento in [!DNL GraphQL]"
+title: 'ACSD-57394: ordinamento del prodotto non corretto per più attributi di ordinamento in [!DNL GraphQL]'
 description: Applicare la patch ACSD-57394 per risolvere il problema di Adobe Commerce in cui i prodotti vengono ordinati in modo errato quando si utilizzano più attributi di ordinamento in [!DNL GraphQL].
 feature: GraphQL, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3e4ca535-37ed-4363-ba6c-968eb53b98b3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -103,4 +104,3 @@ Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
 
 Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida di [!DNL Quality Patches Tool].
-

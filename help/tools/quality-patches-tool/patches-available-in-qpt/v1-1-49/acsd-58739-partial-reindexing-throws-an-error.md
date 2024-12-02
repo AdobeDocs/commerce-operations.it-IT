@@ -1,9 +1,10 @@
 ---
-title: "ACSD-58739: la reindicizzazione parziale genera un errore"
+title: 'ACSD-58739: la reindicizzazione parziale genera un errore'
 description: Applica la patch ACSD-55241 per risolvere il problema di Adobe Commerce che genera un errore a causa della reindicizzazione parziale.
 feature: Inventory, Products
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%

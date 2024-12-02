@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48204: la regola del prezzo di catalogo creata in base all’attributo *Sì/No* non considera l’ambito selezionato"
+title: 'ACSD-48204: la regola del prezzo di catalogo creata in base all’attributo *Sì/No* non considera l’ambito selezionato'
 description: Applica la patch ACSD-48204 per risolvere il problema Adobe Commerce per cui la regola del prezzo di catalogo creata in base all’attributo *Sì/No* non considera l’ambito selezionato.
 feature: Admin Workspace, Attributes, Catalog Management, Orders, Price Rules
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 69f2b35c-856e-4f96-ae2f-fb0c64d5eb94
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%

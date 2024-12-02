@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53309: applicazione fiscale incompleta per opzioni personalizzabili ed etichetta [!UICONTROL Regular Price]"
+title: 'ACSD-53309: applicazione fiscale incompleta per le opzioni personalizzabili e l''etichetta [!UICONTROL Regular Price]'
 description: Applicare la patch ACSD-53309 per risolvere il problema di Adobe Commerce in cui l'imposta non viene applicata completamente nell'etichetta '[!UICONTROL Regular Price]' quando si seleziona un'opzione personalizzabile.
 feature: Taxes, Shipping/Delivery
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7f4a8923-11dd-48b2-9d97-77de5c2b24ce
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

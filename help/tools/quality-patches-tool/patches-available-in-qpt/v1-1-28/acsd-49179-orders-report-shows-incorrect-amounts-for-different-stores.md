@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49179: il rapporto Ordini mostra importi non corretti per negozi diversi."
+title: 'ACSD-49179: il rapporto Ordini mostra importi non corretti per negozi diversi.'
 description: Applica la patch ACSD-49179 per risolvere il problema Adobe Commerce, in cui il rapporto Ordini mostra importi non corretti in caso di valute diverse per negozi diversi.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b10653ef-c4b1-40df-8bfe-7da755db621b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%

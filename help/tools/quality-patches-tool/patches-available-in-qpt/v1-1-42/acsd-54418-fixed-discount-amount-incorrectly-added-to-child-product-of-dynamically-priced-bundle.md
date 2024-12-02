@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54418: l’importo dello sconto fisso aggiunto in modo errato al prodotto secondario del bundle a prezzo dinamico"
+title: 'ACSD-54418: l’importo dello sconto fisso aggiunto in modo errato al prodotto secondario del bundle a prezzo dinamico'
 description: Applica la patch ACSD-54418 per risolvere il problema di Adobe Commerce in cui l’importo dello sconto fisso viene applicato in modo errato a ciascun prodotto secondario del bundle a prezzo dinamico.
 feature: Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f7b57361-9056-4eec-a393-dadb65aa595b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

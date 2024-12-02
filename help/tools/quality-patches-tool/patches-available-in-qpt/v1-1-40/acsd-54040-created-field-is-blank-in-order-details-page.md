@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54040: il campo [!UICONTROL Created] è vuoto nei dettagli dell’ordine quando i moduli B2B sono abilitati"
+title: 'ACSD-54040: il campo [!UICONTROL Created] è vuoto nei dettagli dell’ordine quando i moduli B2B sono abilitati'
 description: Applica la patch ACSD-54040 per risolvere il problema di Adobe Commerce, in cui il campo [!UICONTROL Created] è vuoto nella pagina dei dettagli dell’ordine quando i moduli B2B sono abilitati.
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09fc1e0f-2e02-4cfc-9a7a-7c6aacd9fee0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49706: valore predefinito salvato per l’attributo campione visivo quando non è selezionato alcun valore"
+title: 'ACSD-49706: valore predefinito salvato per l’attributo campione visivo quando non è selezionato alcun valore'
 description: Applicate la patch ACSD-49706 per risolvere il problema Adobe Commerce, se per un attributo di campione visivo non è selezionato alcun valore, in cui viene salvato un valore predefinito.
 feature: Admin Workspace, Attributes
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: fa3cb0a1-f898-4826-aa64-efeba1af58a8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%

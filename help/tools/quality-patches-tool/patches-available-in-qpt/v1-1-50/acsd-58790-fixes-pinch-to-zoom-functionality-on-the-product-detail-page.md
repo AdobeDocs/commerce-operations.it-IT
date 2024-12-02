@@ -1,15 +1,15 @@
 ---
-title: "ACSD-58790: corregge la funzionalità di zoom sulle immagini della pagina dei dettagli del prodotto nella visualizzazione per dispositivi mobili su [!DNL Chrome]"
+title: 'ACSD-58790: corregge la funzionalità di zoom sulle immagini della pagina dei dettagli del prodotto in visualizzazione mobile su [!DNL Chrome]'
 description: ACSD-58790 risolve il problema di Adobe Commerce, per cui l'immagine nella visualizzazione per dispositivi mobili in  [!DNL Chrome]  non veniva ingrandita come previsto.
 feature: Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 46b324bf-c2a0-4086-87ee-96e8c4883494
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58790: corregge la funzionalità di zoom sulle immagini della pagina dei dettagli del prodotto in visualizzazione mobile su [!DNL Chrome]
 

@@ -1,9 +1,10 @@
 ---
-title: "MDVA-37725: le e-mail inviate tramite siti non predefiniti contengono gli URL del logo del sito predefinito"
+title: 'MDVA-37725: le e-mail inviate tramite siti non predefiniti contengono gli URL del logo del sito predefinito'
 description: La patch MDVA-37725 risolve il problema dell'invio asincrono delle e-mail di ordine tramite siti Web non predefiniti contenenti gli URL del logo del sito Web predefinito.
 feature: Communications, Orders
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 6e72897c-7652-4b5a-8575-090e94188daf
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%

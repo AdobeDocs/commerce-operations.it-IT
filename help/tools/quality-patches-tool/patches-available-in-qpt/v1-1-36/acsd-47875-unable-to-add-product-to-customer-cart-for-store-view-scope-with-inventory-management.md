@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47875: impossibile aggiungere il prodotto al carrello per l’ambito di visualizzazione del negozio con gestione dell’inventario"
+title: 'ACSD-47875: impossibile aggiungere il prodotto al carrello per l’ambito di visualizzazione del negozio con gestione dell’inventario'
 description: Applica la patch ACSD-47875 per risolvere il problema di Adobe Commerce che impedisce l’aggiunta di un prodotto al carrello clienti da parte dell’amministratore per un particolare ambito di visualizzazione dello store con gestione dell’inventario.
 feature: Inventory, Shopping Cart, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 10862e09-d561-4ed5-ab6f-cf002fae6850
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%

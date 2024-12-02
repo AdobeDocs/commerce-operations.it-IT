@@ -3,7 +3,8 @@ title: 'ACSD-61534: la configurazione del progetto non può essere impostata uti
 description: Applica la patch ACSD-61534 per risolvere il problema di Adobe Commerce, in cui la configurazione del progetto non può essere impostata utilizzando il comando "bin/magento config:set", e i valori bloccati possono essere modificati tramite la manipolazione del modulo.
 feature: Configuration
 role: Admin, Developer
-source-git-commit: ef00c05593ad319caab8bb9e0f5090959786513f
+exl-id: 5bba3f05-e017-42b2-8a89-5471afb84ff3
+source-git-commit: bbf7df7fdca4c11f6f268344db00e2c8643b5dce
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

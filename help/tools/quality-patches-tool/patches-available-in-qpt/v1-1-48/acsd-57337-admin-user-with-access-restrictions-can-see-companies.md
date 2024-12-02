@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57337: l’utente amministratore con restrizioni di accesso poteva visualizzare tutte le aziende nella griglia *Aziende*"
+title: 'ACSD-57337: l’utente amministratore con restrizioni di accesso può visualizzare tutte le aziende nella griglia *Aziende*'
 description: Applica la patch ACSD-57337 per risolvere il problema Adobe Commerce, in cui un utente amministratore con restrizioni di accesso a siti web specifici può visualizzare le aziende da tutti i siti web nella griglia *Aziende*.
 feature: Companies, B2B, Configuration
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7a05d335-5ed8-460e-80c4-dbc51d06c5bd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

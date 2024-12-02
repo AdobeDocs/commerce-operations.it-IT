@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51230: l’account della gift card viene eliminato"
+title: 'ACSD-51230: l''account della gift card viene eliminato'
 description: Applicare la patch ACSD-51230 per risolvere il problema Adobe Commerce in cui il conto gift card viene eliminato quando il rimborso parziale di un prodotto semplice viene elaborato da un ordine.
 feature: Customer Service, Gift, Marketing Tools
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a4aed574-3908-42e0-ac32-911f61b44995
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

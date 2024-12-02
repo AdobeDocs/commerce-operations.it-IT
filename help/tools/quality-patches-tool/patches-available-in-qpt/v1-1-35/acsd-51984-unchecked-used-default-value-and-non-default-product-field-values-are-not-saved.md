@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51984: i valori deselezionati [!UICONTROL Use Default Value] e non predefiniti dei campi prodotto non vengono salvati per la seconda visualizzazione sito Web, archivio e archivio"
+title: 'ACSD-51984: i valori deselezionati [!UICONTROL Use Default Value] e non predefiniti dei campi prodotto non vengono salvati per la seconda visualizzazione sito Web, archivio e archivio'
 description: Applica la patch ACSD-51984 per risolvere il problema Adobe Commerce, per cui i valori non selezionati [!UICONTROL Use Default Value] e non predefiniti del campo prodotto non vengono salvati per la seconda visualizzazione del sito Web, dello store e dello store.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 51a810fa-d416-4b37-b5bd-66eed9fe4626
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%

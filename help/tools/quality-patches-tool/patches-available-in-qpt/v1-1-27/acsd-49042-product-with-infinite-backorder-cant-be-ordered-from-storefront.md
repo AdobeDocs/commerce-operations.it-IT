@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49042: il prodotto con ordine infinito non può essere ordinato dalla vetrina"
+title: 'ACSD-49042: prodotto con ordine infinito non può essere ordinato dalla vetrina'
 description: Applica la patch ACSD-49042 per risolvere il problema di Adobe Commerce, a causa del quale non è possibile ordinare un prodotto con ordine inevaso dalla vetrina.
 feature: Admin Workspace, Orders, Products, Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b94d06c0-806a-40be-bcd4-d6b8e5e474c3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%

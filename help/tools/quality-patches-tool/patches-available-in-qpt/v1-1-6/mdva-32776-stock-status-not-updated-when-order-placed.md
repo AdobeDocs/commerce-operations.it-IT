@@ -1,9 +1,10 @@
 ---
-title: "MDVA-32776: stato del magazzino non aggiornato con il posizionamento dell'ordine"
+title: 'MDVA-32776: lo stato del magazzino non viene aggiornato con l''inserimento dell''ordine'
 description: La patch MDVA-32776 risolve il problema che causa l'aggiornamento dello stato delle scorte quando un ordine viene effettuato ma non spedito. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6. L'ID della patch è MDVA-32776. Il problema è stato risolto in Adobe Commerce 2.4.2.
 feature: Orders
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 6f872c72-c96f-4c23-b6df-44e3da3a81c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%

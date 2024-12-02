@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50621: i prezzi di livello per i diversi siti web nel catalogo condiviso non sono visibili"
+title: 'ACSD-50621: i prezzi di livello per i diversi siti web nel catalogo condiviso non sono visibili'
 description: Applica la patch ACSD-50621 per risolvere il problema di Adobe Commerce, in cui i prezzi dei diversi siti web nel catalogo condiviso non sono visibili quando vengono modificati in un ambiente con più siti web.
 feature: Catalog Management, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2256dee7-e544-4723-9753-ba9cf7247880
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

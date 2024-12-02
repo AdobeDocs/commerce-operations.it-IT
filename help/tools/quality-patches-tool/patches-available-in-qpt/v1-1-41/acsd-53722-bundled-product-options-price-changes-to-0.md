@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53722: il prezzo delle opzioni di prodotto in bundle cambia a $0"
+title: 'ACSD-53722: il prezzo delle opzioni di prodotto in bundle cambia a $0'
 description: Applica la patch ACSD-53722 per risolvere il problema di Adobe Commerce, in cui il prezzo delle opzioni del prodotto in bundle cambia a $ 0 quando diventano attivi aggiornamenti pianificati per ambiti diversi.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2e974a6a-0c79-442f-9b45-b4edf831a052
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55414: Prestazioni non soddisfacenti quando MariaDB tenta di eseguire il cast di entitys_ids"
+title: 'ACSD-55414: Prestazioni non buone quando MariaDB tenta di eseguire il cast di entitys_ids'
 description: Applica la patch ACSD-55414 per risolvere il problema di Adobe Commerce quando MariaDB tenta di convertire "entitys_ids" da stringa a numero intero, ostacolando le prestazioni della reindicizzazione.
 feature: Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 76309cef-559e-4a55-a27b-7d807ef9f74e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%

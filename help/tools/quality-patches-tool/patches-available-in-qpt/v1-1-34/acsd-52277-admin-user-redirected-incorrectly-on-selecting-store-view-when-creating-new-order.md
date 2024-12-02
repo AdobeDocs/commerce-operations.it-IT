@@ -1,7 +1,8 @@
 ---
-title: "ACSD-52277: l’utente amministratore non è stato reindirizzato correttamente quando ha selezionato la vista store durante la creazione di un nuovo ordine"
+title: 'ACSD-52277: l’utente amministratore non è stato reindirizzato correttamente quando ha selezionato la vista store durante la creazione di un nuovo ordine'
 description: Applica la patch ACSD-52277 per risolvere il problema di Adobe Commerce, se un utente amministratore non viene reindirizzato correttamente, dopo aver selezionato la vista Store durante la creazione di un nuovo ordine in Admin.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 61ef59a9-7a31-441f-a763-2d8016498fa7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

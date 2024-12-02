@@ -1,9 +1,10 @@
 ---
-title: "MDVA-31590: impossibile aggiornare gli attributi in blocco utilizzando le code asincrone MySQL"
+title: 'MDVA-31590: impossibile aggiornare gli attributi in blocco utilizzando le code asincrone MySQL'
 description: La patch MDVA-31590 risolve il problema che impediva agli utenti di aggiornare gli attributi in blocco utilizzando le code asincrone MySQL. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3. L'ID della patch è MDVA-31590. Il problema è stato risolto in Adobe Commerce 2.4.2.
 feature: Attributes, Services
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f8d1c3bd-e995-41ef-89e1-93eec6e8b1f1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 0%

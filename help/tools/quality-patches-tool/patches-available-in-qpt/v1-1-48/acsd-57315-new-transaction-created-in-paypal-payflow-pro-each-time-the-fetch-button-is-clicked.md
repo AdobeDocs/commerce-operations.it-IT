@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57315: viene creata una nuova transazione in [!DNL PayPal Payflow Pro] ogni volta che si fa clic sul pulsante Fetch"
+title: 'ACSD-57315: viene creata una nuova transazione in [!DNL PayPal Payflow Pro] ogni volta che si fa clic sul pulsante Fetch'
 description: Applica la patch ACSD-57315 per risolvere il problema Adobe Commerce relativo alla creazione di una nuova transazione in [!DNL PayPal Payflow Pro] ogni volta che si fa clic sul pulsante Recupera nella schermata Visualizza transazione in [!UICONTROL Admin].
 feature: Payments
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1fb8a5af-fda1-4c24-859d-d45424bde12f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

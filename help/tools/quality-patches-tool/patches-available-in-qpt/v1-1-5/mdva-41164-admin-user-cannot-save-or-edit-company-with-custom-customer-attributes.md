@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41164: impossibile salvare o modificare la società con attributi cliente personalizzati"
+title: 'MDVA-41164: impossibile salvare o modificare la società con attributi cliente personalizzati'
 description: La patch MDVA-41164 risolve il problema che impediva all'utente amministratore di salvare o modificare un'azienda con attributi cliente personalizzati di file o immagini di qualsiasi tipo. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5. L'ID della patch è MDVA-41164. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: Admin Workspace, Attributes, B2B, Companies
 role: Developer
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 9d1792e0-ba7b-444b-b1b1-771fd0e328eb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%

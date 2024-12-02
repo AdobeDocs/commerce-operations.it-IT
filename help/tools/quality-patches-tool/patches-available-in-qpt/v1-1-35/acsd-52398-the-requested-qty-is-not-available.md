@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52398: la quantità richiesta non è disponibile quando si tenta di aggiornare la quantità del prodotto nel bundle"
+title: 'ACSD-52398: la quantità richiesta non è disponibile quando si tenta di aggiornare la quantità del prodotto nel pacchetto'
 description: Applica la patch ACSD-52398 per risolvere il problema di Adobe Commerce per cui la quantità richiesta non è disponibile quando si tenta di aggiornare la quantità di un prodotto nel carrello nella vetrina.
 feature: Shopping Cart, Quotes, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 75fa5f96-22e7-40a2-8b8a-f44452e5124d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

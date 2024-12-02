@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52219: risoluzione del problema di filtro delle griglie di amministrazione nel passaggio alla visualizzazione segnalibro"
+title: 'ACSD-52219: risoluzione del problema di filtro delle griglie di amministrazione nel passaggio alla visualizzazione segnalibro'
 description: Applica la patch ACSD-52219 per risolvere il problema di Adobe Commerce, in cui i filtri salvati delle griglie di amministrazione non funzionano come previsto quando si passa di frequente da una visualizzazione di segnalibro all’altra.
 feature: Admin Workspace
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3f1af6ba-88a0-480c-b16e-c00c655e346f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

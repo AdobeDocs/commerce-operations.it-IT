@@ -1,9 +1,10 @@
 ---
-title: "MDVA-42768: GraphQL mostra un prezzo errato quando i prodotti secondari sono esauriti"
+title: 'MDVA-42768: GraphQL mostra un prezzo errato quando i prodotti secondari sono esauriti'
 description: La patch MDVA-42768 risolve il problema che causa la visualizzazione errata del prezzo da parte di GraphQL quando i prodotti secondari configurabili sono esauriti. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.10. L'ID della patch è MDVA-42768. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: GraphQL, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 9f6ab418-2267-4548-952a-17dc8295f632
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%

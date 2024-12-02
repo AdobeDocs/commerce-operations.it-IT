@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52714: il filtro data non funziona nella griglia di amministrazione se impostato come y-m-d"
+title: 'ACSD-52714: il filtro data non funziona nella griglia di amministrazione se impostato come y-m-d'
 description: Applica la patch ACSD-52714 per risolvere il problema di Adobe Commerce per cui il filtro della data non funziona nella griglia di amministrazione quando il formato della data è impostato come y-m-d.
 feature: Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4a34900b-9566-41bb-8d3e-18a440117907
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

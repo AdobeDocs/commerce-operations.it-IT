@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-43824: azione di annullamento dell''ordine non riuscita. Errore: "L''elemento non è stato annullato""'
-description: "La patch MDVA-43824 risolve il problema relativo all'errore di annullamento dell'ordine: *L'elemento non è stato annullato*. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13. L'ID della patch è MDVA-43824. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.5."
+title: 'MDVA-43824: azione di annullamento dell''ordine non riuscita. Errore: "L''elemento non è stato annullato"'
+description: 'La patch MDVA-43824 risolve il problema relativo all''errore di annullamento dell''ordine: *Non è stato annullato l''elemento*. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13. L''ID della patch è MDVA-43824. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.'
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 8c2d15a0-2f53-4583-bdf2-86746f61160f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54961: l'utente amministratore con restrizioni non può aggiornare di massa [!UICONTROL Product Review status]"
+title: 'ACSD-54961: l''utente amministratore con restrizioni non può aggiornare di massa [!UICONTROL Product Review status]'
 description: Applica la patch ACSD-54961 per risolvere il problema di Adobe Commerce per cui un utente amministratore con restrizioni non può aggiornare in massa lo stato di recensione del prodotto.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d303365c-d7c7-4aca-9f33-75d67bcbe573
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%

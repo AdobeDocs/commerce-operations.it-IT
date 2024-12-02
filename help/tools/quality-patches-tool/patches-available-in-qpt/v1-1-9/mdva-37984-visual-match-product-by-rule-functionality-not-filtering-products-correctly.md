@@ -1,9 +1,10 @@
 ---
-title: "MDVA-37984: il funzionamento di Visual Merchandiser non è corretto quando vengono applicati gli aggiornamenti di staging"
+title: 'MDVA-37984: Visual Merchandiser non funziona correttamente quando vengono applicati aggiornamenti di staging'
 description: La patch MDVA-37984 risolve il problema per cui la funzionalità "Match product by rule" di Visual Merchandiser non filtra correttamente i prodotti quando vengono applicati aggiornamenti di staging. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9. L'ID della patch è MDVA-37984. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Categories, Merchandising, Products, Staging
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 3aeb74a4-b6f7-453a-a8f6-45a345aaa74f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%

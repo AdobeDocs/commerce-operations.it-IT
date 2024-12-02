@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46541: un utente amministratore non può creare una nota di credito se viene eliminato un articolo dell’ordine"
+title: 'ACSD-46541: un utente amministratore non può creare una nota di credito se viene eliminato un articolo dell''ordine'
 description: Applica la patch ACSD-46541 per risolvere il problema di Adobe Commerce, per cui una volta eliminato un prodotto non è più possibile creare una nota di credito nell’amministratore Adobe Commerce.
 feature: Admin Workspace, Orders, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c46ee888-92b1-4798-bd2b-1a082fd1406a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

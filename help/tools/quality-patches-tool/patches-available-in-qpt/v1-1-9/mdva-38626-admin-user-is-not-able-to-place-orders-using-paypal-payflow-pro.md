@@ -1,9 +1,10 @@
 ---
-title: "MDVA-38626: l'utente amministratore non è in grado di effettuare ordini con PayPal Payflow Pro"
+title: 'MDVA-38626: l''utente amministratore non è in grado di effettuare ordini con PayPal Payflow Pro'
 description: La patch MDVA-38626 risolve il problema che impediva all'utente amministratore di effettuare un ordine sul backend utilizzando il metodo di pagamento PayPal Payflow Pro. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9. L'ID della patch è MDVA-38626. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Admin Workspace, Orders, Payments
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 32d2e5dd-7081-42f2-a074-71e21c870dc2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

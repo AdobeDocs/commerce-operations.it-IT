@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54264: errore durante il tentativo del cliente di effettuare il check-out con un preventivo negoziabile"
+title: 'ACSD-54264: errore durante il tentativo del cliente di effettuare il check-out con un preventivo negoziabile'
 description: Applica la patch ACSD-54264 per risolvere il problema di Adobe Commerce, in cui viene visualizzato il messaggio di errore "Impossibile aggiornare l’attributo richiesto. Viene visualizzata la riga ID:store_id" quando un cliente tenta di effettuare il Check-Out con un preventivo negoziabile da un'altra vista del punto vendita.
 feature: B2B, Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b1696228-b2ed-44eb-9e75-bf25ccf2f1cd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%

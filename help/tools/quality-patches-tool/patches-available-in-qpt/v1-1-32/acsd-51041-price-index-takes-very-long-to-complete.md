@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51041: il completamento dell’indice dei prezzi richiede molto tempo"
+title: 'ACSD-51041: Il completamento dell’indice dei prezzi richiede molto tempo'
 description: Applicare la patch ACSD-51041 per risolvere il problema di Adobe Commerce, in cui l'indice dei prezzi richiede molto tempo per essere completato con un set di prodotti molto grande.
 feature: Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d45d4042-06a1-445d-bed3-803085626dd3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%

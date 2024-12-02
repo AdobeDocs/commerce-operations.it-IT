@@ -1,15 +1,15 @@
 ---
-title: "ACSD-58442: risolve il problema per cui i dispositivi con larghezza di 768 px venivano trattati come dispositivi mobili, causando il caricamento di menu e intestazioni nella vista mobile non desktop"
+title: 'ACSD-58442: risolve il problema per cui i dispositivi con larghezza di 768 px venivano trattati come dispositivi mobili, causando il caricamento di menu e intestazioni nella visualizzazione per dispositivi mobili non desktop'
 description: Applica la patch ACSD-58442 per risolvere il problema Adobe Commerce, in cui i dispositivi con una larghezza di 768 px vengono trattati come dispositivi mobili, causando il caricamento del menu e dell’intestazione in una visualizzazione mobile anziché desktop.
 feature: Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 86ea64aa-10fc-4fa3-9902-918fb8983ca0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58442: risolve il problema per cui i dispositivi con larghezza di 768 px venivano trattati come dispositivi mobili, causando il caricamento di menu e intestazioni nella visualizzazione per dispositivi mobili non desktop
 
@@ -62,5 +62,3 @@ Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
 
 Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida di [!DNL Quality Patches Tool].
-
-

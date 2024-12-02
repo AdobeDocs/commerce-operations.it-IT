@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50794: impossibile rimuovere la confezione regalo dall’ordine del cliente tramite GraphQL"
+title: 'ACSD-50794: impossibile rimuovere la confezione regalo dall''ordine del cliente tramite GraphQL'
 description: Applica la patch ACSD-50794 per risolvere il problema di Adobe Commerce che impedisce agli utenti di rimuovere la confezione regalo dall’ordine del cliente tramite GraphQL.
 feature: Gift, GraphQL, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e088fb18-89d3-47e4-ad02-54068c1ab653
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46581: il totale fiscale stimato non viene aggiornato dopo aver selezionato un paese nel carrello"
+title: 'ACSD-46581: il totale imposte stimato non viene aggiornato dopo aver selezionato un paese nel carrello'
 description: Applica la patch ACSD-46581 per risolvere il problema Adobe Commerce, in cui l’aliquota non viene aggiornata dopo il passaggio dal paese al carrello.
 feature: Orders, Shopping Cart
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 45800055-8556-4f87-8938-c6be5d82938d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%

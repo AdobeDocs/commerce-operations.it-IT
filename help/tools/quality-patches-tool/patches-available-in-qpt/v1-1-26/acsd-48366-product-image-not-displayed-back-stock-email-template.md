@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48366: immagine del prodotto non visualizzata nel modello e-mail [!UICONTROL Back to Stock]"
+title: 'ACSD-48366: immagine del prodotto non visualizzata nel modello e-mail [!UICONTROL Back to Stock]'
 description: Applica la patch ACSD-48366 per risolvere il problema Adobe Commerce, se l’immagine della miniatura del prodotto non viene visualizzata nell’e-mail di avviso sulle scorte del prodotto.
 feature: Admin Workspace, Communications, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a721f399-f50a-4a13-9f5d-17ae7f3985f6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%

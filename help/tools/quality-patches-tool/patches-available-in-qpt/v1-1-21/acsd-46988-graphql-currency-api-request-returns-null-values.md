@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46988: la richiesta API della valuta GraphQL restituisce valori Null"
+title: 'ACSD-46988: la richiesta API della valuta GraphQL restituisce valori null'
 description: La patch ACSD-46988 risolve il problema per cui la richiesta API della valuta GraphQL restituisce valori Null per una valuta personalizzata. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.21. L’ID della patch è ACSD-46988. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 feature: REST, GraphQL
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 276d2c75-6e7f-4888-b4d2-ac96bea93fc1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48448: problema di condizione di gara durante l’annullamento dell’ordine che causa la duplicazione dell’immissione nella tabella inventory_booking"
+title: 'ACSD-48448: problema di condizione di gara durante l’annullamento dell’ordine che causa la duplicazione dell’immissione nella tabella inventory_booking'
 description: Applica la patch ACSD-48448 per risolvere il problema di prestazioni di Adobe Commerce in cui si verifica il problema di condizione Race durante gli annullamenti dell’ordine, che causa la duplicazione delle voci nella tabella inventory_booking.
 feature: Orders, Checkout
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: c1905b60-4607-454c-975b-77b0056661ad
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

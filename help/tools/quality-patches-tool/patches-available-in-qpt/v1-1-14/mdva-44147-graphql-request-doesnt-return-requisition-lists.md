@@ -1,5 +1,5 @@
 ---
-title: "MDVA-44147: [!DNL GraphQL] la richiesta non restituisce [!UICONTROL Requisition Lists]"
+title: 'MDVA-44147: [!DNL GraphQL] la richiesta non restituisce [!UICONTROL Requisition Lists]'
 description: La patch di MDVA-44147 risolve il problema per cui  [!DNL GraphQL] richiesta non restituisce [!UICONTROL Requisition Lists]. Questa patch è disponibile quando [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 è installato. L'ID della patch è MDVA-44147. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: B2B, GraphQL
 role: Admin

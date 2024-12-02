@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48627: il prodotto configurabile esaurito causa un errore"
+title: 'ACSD-48627: il prodotto configurabile esaurito causa un errore'
 description: Applica la patch ACSD-48627 per risolvere il problema di Adobe Commerce, a causa del quale il prodotto configurabile esaurito causa un errore durante l’invio di una richiesta GraphQL per ottenere i dettagli del carrello.
 feature: Admin Workspace, Configuration, Orders, Products
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 457c605e-d0c3-479e-b515-9b2851a71a08
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%

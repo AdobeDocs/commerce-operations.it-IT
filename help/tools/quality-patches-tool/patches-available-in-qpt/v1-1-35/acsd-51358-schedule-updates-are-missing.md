@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51358: aggiornamenti della pianificazione mancanti"
+title: 'ACSD-51358: mancano aggiornamenti della pianificazione'
 description: Applica la patch ACSD-51358 per risolvere il problema di Adobe Commerce, in cui le modifiche all’aggiornamento pianificato senza data di fine determinano la rimozione di altri aggiornamenti pianificati sulla stessa entità.
 feature: Staging
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6e2e598b-72f1-4f00-a989-3f75bf65f8f0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39181: le regole di prodotto correlate mostrano i prodotti della categoria non definiti nella regola"
+title: 'MDVA-39181: le regole di prodotto correlate mostrano i prodotti della categoria non definiti nella regola'
 description: La patch MDVA-39181 risolve il problema che causa la visualizzazione di prodotti di una categoria non definita nella regola da parte di regole di prodotto correlate. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.10. L'ID della patch è MDVA-39181. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Categories, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 98f65b7d-2cb3-49ff-95ef-c23a922e49f2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

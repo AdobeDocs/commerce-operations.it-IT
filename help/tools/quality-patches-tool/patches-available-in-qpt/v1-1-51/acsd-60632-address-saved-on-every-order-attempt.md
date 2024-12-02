@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60632: indirizzo salvato con ogni tentativo di ordine"
+title: 'ACSD-60632: indirizzo salvato con ogni tentativo di ordine'
 description: Applica la patch ACSD-60632 per risolvere il problema Adobe Commerce relativo al salvataggio di un nuovo indirizzo a ogni tentativo di inserimento dell’ordine, indipendentemente dal fatto che l’ordine sia stato creato correttamente o meno.
 feature: Orders, Products
 role: Admin, Developer
-source-git-commit: d68d6f7501e7dd6faf36f8506d1b0aab028eed58
+exl-id: 9b623a1c-594f-47ed-82b4-d11ba20f3a58
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

@@ -1,15 +1,15 @@
 ---
-title: "ACSD-58352: le etichette degli attributi restituiti per l'archivio predefinito vengono restituite tramite [!DNL GraphQL] API"
+title: 'ACSD-58352: le etichette degli attributi restituiti per l''archivio predefinito vengono restituite tramite [!DNL GraphQL] API'
 description: Applica la patch ACSD-58352 per risolvere il problema di Adobe Commerce per cui le etichette degli attributi restituiti per l'archivio predefinito vengono restituite tramite API [!DNL GraphQL] quando nell'intestazione della richiesta è specificata una visualizzazione archivio non predefinita.
 feature: GraphQL, Returns
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e513039e-42cd-4dac-963b-3068ba8bf7ee
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58352: le etichette degli attributi restituiti per l&#39;archivio predefinito vengono restituite tramite l&#39;API [!DNL GraphQL]
 

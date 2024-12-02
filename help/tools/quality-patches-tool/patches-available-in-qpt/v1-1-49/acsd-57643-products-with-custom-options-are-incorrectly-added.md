@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57643: prodotti con opzioni personalizzate aggiunte erroneamente al carrello tramite GraphQL"
+title: 'ACSD-57643: prodotti con opzioni personalizzate aggiunte erroneamente al carrello tramite GraphQL'
 description: Applica la patch ACSD-57643 per risolvere il problema di Adobe Commerce, a causa del quale i prodotti con opzioni personalizzate non vengono aggiunti correttamente al carrello tramite GraphQL.
 feature: Shopping Cart, GraphQL, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 568f820b-ecab-4839-b32e-b0b42c1d2342
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

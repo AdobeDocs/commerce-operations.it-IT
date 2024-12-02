@@ -1,9 +1,10 @@
 ---
-title: "ACSD-43887: dettagli non corretti visualizzati nella pagina di pagamento del pagamento di pagamento del pagamento di pagamento del pagamento di pagamento"
+title: 'ACSD-43887: dettagli non corretti visualizzati nella pagina di pagamento per il pagamento dell''assegno'
 description: La patch di ACSD-43887 risolve il problema della visualizzazione di dettagli non corretti nella pagina Pagamento di pagamento di pagamento di pagamento quando gli ordini di acquisto per le società sono abilitati. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17. L’ID della patch è ACSD-43887. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 feature: B2B, Checkout, Orders, Payments, User Account
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: e150f093-9f1a-4ba5-bdcf-90e7f42a29c3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%

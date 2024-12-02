@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46869: i prodotti configurabili non vengono aggiornati utilizzando l’API REST al momento del pagamento"
+title: 'ACSD-46869: i prodotti configurabili non vengono aggiornati utilizzando l’API REST al momento del pagamento'
 description: La patch ACSD-46869 risolve il problema che impedisce l’aggiornamento dei prodotti configurabili tramite l’API REST al momento del pagamento. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20. L’ID della patch è ACSD-46869. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%

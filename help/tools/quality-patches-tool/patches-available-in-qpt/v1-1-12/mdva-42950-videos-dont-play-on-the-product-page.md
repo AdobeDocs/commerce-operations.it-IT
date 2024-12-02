@@ -1,9 +1,10 @@
 ---
-title: "MDVA-42950: i video non vengono riprodotti sulla pagina del prodotto"
+title: 'MDVA-42950: i video non vengono riprodotti nella pagina del prodotto'
 description: La patch MDVA-42950 risolve il problema relativo alla mancata riproduzione di video nella pagina del prodotto. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-42950. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 61c36dc5-0015-431d-84c1-0726bb310cd6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-53176: la regola del prodotto con la condizione "is one of" non corrisponde"'
+title: 'ACSD-53176: La regola del prodotto con la condizione "is one of" non corrisponde'
 description: Applica la patch ACSD-53176 per risolvere il problema di Adobe Commerce in cui la relativa regola prodotto "è una delle" condizioni non funziona correttamente per "Products to Match".
 feature: Marketing Tools
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8260c6ac-3ca2-4361-9e36-a8a58468fa95
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%

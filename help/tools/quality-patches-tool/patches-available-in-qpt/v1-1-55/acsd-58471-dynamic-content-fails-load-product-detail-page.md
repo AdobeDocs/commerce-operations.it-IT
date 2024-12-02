@@ -1,5 +1,5 @@
 ---
-title: "ACSD-58471: il caricamento del contenuto dinamico nella pagina dei dettagli del prodotto non riesce quando sono state pianificate le regole del prezzo di catalogo associate"
+title: 'ACSD-58471: il caricamento del contenuto dinamico non riesce nella pagina dei dettagli del prodotto, quando sono state pianificate le regole del prezzo di catalogo associate'
 description: Applica la patch ACSD-58471 per risolvere il problema di Adobe Commerce, in cui il contenuto dinamico non viene caricato sulla pagina dei dettagli del prodotto, quando sono state pianificate le relative regole del prezzo di catalogo.
 feature: Catalog Management
 role: Admin, Developer

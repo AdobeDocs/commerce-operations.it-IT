@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52143: le opzioni personalizzate vengono rimosse dopo l’importazione del prodotto"
+title: 'ACSD-52143: le opzioni personalizzate vengono rimosse dopo l’importazione del prodotto'
 description: Applica la patch ACSD-52143 per risolvere il problema di Adobe Commerce, per cui le opzioni di personalizzazione vengono rimosse dopo l’importazione del prodotto.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 630fffa7-012c-4539-9745-9a34571bd2eb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

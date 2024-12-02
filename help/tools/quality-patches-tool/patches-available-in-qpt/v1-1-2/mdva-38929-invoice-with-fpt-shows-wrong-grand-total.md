@@ -1,9 +1,10 @@
 ---
-title: "MDVA-38929: la fattura con FPT mostra un totale errato"
+title: 'MDVA-38929: la fattura con FPT mostra un totale errato'
 description: La patch MDVA-38929 risolve il problema che la fattura con FPT presenta un totale complessivo errato quando l'ordine viene pagato con il credito del negozio. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2. L'ID della patch è MDVA-38929. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: Invoices, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: fd0ca2f3-c6bf-4f09-a0fa-c931df94158b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%

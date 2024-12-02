@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50858: prestazioni migliorate per il caricamento del contenuto dei banner"
+title: 'ACSD-50858: prestazioni migliorate per il caricamento del contenuto dei banner'
 description: Applica la patch ACSD-50858 per risolvere il problema di Adobe Commerce, in cui le prestazioni del banner sono influenzate nella pagina carrello/pagamento a causa di query eccessive sul database e di un aumento del tempo di caricamento della pagina.
 feature: Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1b46e51f-70ad-4450-b3a8-173c2e4b7925
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%

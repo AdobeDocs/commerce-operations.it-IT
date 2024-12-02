@@ -1,5 +1,5 @@
 ---
-title: '''MDVA-41631: errore durante il recupero delle informazioni sull''ordine senza valore "phone" opzionale'''
+title: 'MDVA-41631: errore durante il recupero delle informazioni sull''ordine senza il valore "phone" opzionale'
 description: La patch di MDVA-41631 risolve il problema che causa un errore durante il recupero delle informazioni dell'ordine senza il valore "phone" facoltativo tramite  [!DNL GraphQL]. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin

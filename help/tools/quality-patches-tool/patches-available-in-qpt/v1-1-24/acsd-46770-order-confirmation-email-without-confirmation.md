@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46770: l'e-mail di conferma dell'ordine viene inviata anche quando [!UICONTROL Email Order Confirmation] è deselezionato"
+title: 'ACSD-46770: l''e-mail di conferma dell''ordine viene inviata anche quando [!UICONTROL Email Order Confirmation] è deselezionato'
 description: Applicare la patch ACSD-46770 per risolvere il problema di Adobe Commerce, per cui le e-mail di conferma dell'ordine vengono inviate anche quando [!UICONTROL Email Order Confirmation] non è selezionato.
 feature: Communications, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d25ca121-7551-417c-b598-d8ed3a3da969
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

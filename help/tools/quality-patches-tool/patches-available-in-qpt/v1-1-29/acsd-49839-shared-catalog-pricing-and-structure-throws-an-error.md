@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49839: la struttura e i prezzi del catalogo condiviso generano un errore"
+title: 'ACSD-49839: la struttura e i prezzi del catalogo condiviso genera un errore'
 description: Applica la patch ACSD-49839 per risolvere il problema di Adobe Commerce, a causa del quale la struttura e i prezzi del catalogo condiviso generano un errore nell’amministratore quando i prodotti presentano virgolette singole o doppie in SKU.
 feature: Admin Workspace, Catalog Management, Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b74e3926-16c8-4222-b642-ed1b7095dea4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

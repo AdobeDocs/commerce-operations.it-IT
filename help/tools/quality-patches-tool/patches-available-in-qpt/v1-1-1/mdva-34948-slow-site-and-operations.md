@@ -1,9 +1,10 @@
 ---
-title: "MDVA-34948: rallentamento del sito web"
+title: 'MDVA-34948: rallentamento del sito web'
 description: La patch di MDVA-34948 Adobe Commerce risolve il problema del rallentamento del sito Web. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1. L'ID della patch è MDVA-34948. Il problema è stato risolto nella versione 2.4.1 di Adobe Commerce.
 feature: Observability, Configuration
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 3c2a2d44-7d60-42da-a0a3-785fb61d571e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59930: Migliora le prestazioni dei flussi aziendali"
+title: 'ACSD-59930: migliora le prestazioni dei flussi aziendali'
 description: Applica la patch ACSD-59930 per risolvere il problema di Adobe Commerce, se nel pannello di amministrazione viene visualizzato un errore di *Timeout* durante la creazione, il salvataggio o l’eliminazione di una società con un amministratore che ha indirizzi *1000+* nella rubrica.
 feature: Customers, B2B
 role: Admin, Developer
-source-git-commit: bff014ede6ab7e8e72700814bb4edda2e733557a
+exl-id: eaa6c78d-13e3-439d-90f7-70c1c96c3197
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

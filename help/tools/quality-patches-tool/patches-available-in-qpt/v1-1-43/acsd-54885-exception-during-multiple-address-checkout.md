@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54885: eccezione durante l’estrazione di più indirizzi quando l’amministratore effettua l’accesso come cliente"
+title: 'ACSD-54885: eccezione durante l’estrazione di più indirizzi quando l’amministratore accede come cliente'
 description: Applicare la patch ACSD-54885 per risolvere il problema Adobe Commerce in cui si verifica un errore durante l'estrazione di più indirizzi quando l'amministratore utilizza la funzionalità *[!UICONTROL Login as Customer]*.
 feature: Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c146bc2a-2df1-4825-9cfc-69e04095b3c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%

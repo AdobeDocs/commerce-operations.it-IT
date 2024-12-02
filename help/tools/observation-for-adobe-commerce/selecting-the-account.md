@@ -1,5 +1,5 @@
 ---
-title: "Iniziare a utilizzare: selezione dell’account e dell’intervallo temporale"
+title: 'Inizia a utilizzare: selezione dell’account e dell’arco temporale'
 description: Scopri come iniziare a utilizzare il nerdlet  [!DNL Observation for Adobe Commerce]  selezionando l'account e l'intervallo di tempo.
 exl-id: f2364fa4-ef83-42f2-992f-e37ff1ac96a1
 feature: Configuration, Observability

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52133: impossibile salvare l’account del cliente dopo un aggiornamento"
+title: 'ACSD-52133: impossibile salvare l’account del cliente dopo un aggiornamento'
 description: Applica la patch ACSD-52133 per risolvere il problema di Adobe Commerce, a causa del quale non è possibile salvare un account cliente dopo un aggiornamento.
 feature: Customers, Upgrade
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 4a0e6ed8-3e35-40ce-bb49-8ccfcde437a0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

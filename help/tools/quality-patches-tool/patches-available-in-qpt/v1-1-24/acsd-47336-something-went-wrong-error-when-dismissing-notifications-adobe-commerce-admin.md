@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47336: errore [!UICONTROL Something went wrong] durante la rimozione delle notifiche in Adobe Commerce Admin"
+title: 'ACSD-47336: errore [!UICONTROL Something went wrong] durante la rimozione delle notifiche in Adobe Commerce Admin'
 description: Applica la patch ACSD-47336 per risolvere il problema di Adobe Commerce, in cui l'utente visualizza l'errore [!UICONTROL Something went wrong], quando ignora le notifiche in  [!DNL Commerce] Admin.
 feature: Admin Workspace
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: da0c0119-6720-493f-a278-d573ed898a63
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%

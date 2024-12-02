@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53643: l’ordine presenta un totale errato al momento dell’inserimento di un ordine fornitore"
+title: 'ACSD-53643: l’ordine presenta un totale errato al momento del posizionamento di un ordine fornitore'
 description: Applicare la patch ACSD-53643 per risolvere il problema Adobe Commerce in cui l'ordine presenta un totale errato quando si effettua un ordine con prodotti disabilitati o esauriti.
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 72b52695-ef3c-4143-9e77-901463d4a9ed
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%

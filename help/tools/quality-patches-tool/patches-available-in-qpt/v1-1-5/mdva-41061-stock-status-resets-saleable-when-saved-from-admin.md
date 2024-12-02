@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41061: lo stato del magazzino viene reimpostato su vendibile quando il prodotto viene salvato da Admin"
+title: 'MDVA-41061: lo stato del magazzino viene reimpostato su vendibile quando il prodotto viene salvato dall''amministratore'
 description: La patch MDVA-41061 risolve il problema se lo stato delle scorte viene reimpostato su vendibile quando il prodotto viene salvato dall'amministratore. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5. L'ID della patch è MDVA-41061. La versione più recente della patch è disponibile in QPT 1.1.15 con ID di patch MDVA-41061-V3. Tieni presente che il problema è risolto in Adobe Commerce 2.4.4.
 feature: Admin Workspace, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: ddbc30ef-bc88-4878-8bd8-6880823819a2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%

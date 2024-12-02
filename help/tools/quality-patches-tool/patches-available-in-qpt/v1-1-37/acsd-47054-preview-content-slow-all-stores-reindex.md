@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47054: anteprima del contenuto lenta quando tutti gli store si reindicizzano"
+title: 'ACSD-47054: anteprima del contenuto lenta quando tutti gli store si reindicizzano'
 description: Applica la patch ACSD-47054 per risolvere il problema di Adobe Commerce, in cui il caricamento della pagina di anteprima è lento a causa della reindicizzazione di tutti gli store.
 feature: Page Content
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bfbda95a-354b-4b67-8081-84aefbbd7cb4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56741: risoluzione dei problemi relativi agli errori di installazione del database con trigger MySQL personalizzati"
+title: 'ACSD-56741: Risoluzione dei problemi di installazione del database con trigger MySQL personalizzati'
 description: Applica la patch ACSD-56741 per risolvere il problema di Adobe Commerce, dove un messaggio di errore *Tentativo di accedere all’offset dell’array sul valore di tipo null* viene visualizzato durante "setup:upgrade" a causa di un trigger MySQL personalizzato nel database non correlato all’indicizzazione e  [!DNL MView].
 feature: Install
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 93a1c75f-8a45-49df-9fa4-6ba1234c822d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51114: i prodotti casuali scompaiono da cataloghi di grandi dimensioni quando è abilitata l’indicizzazione asincrona"
+title: 'ACSD-51114: i prodotti casuali scompaiono dai cataloghi di grandi dimensioni quando è abilitata l’indicizzazione asincrona'
 description: Applica la patch ACSD-51114 per risolvere il problema di Adobe Commerce. I prodotti Random scompaiono dai cataloghi di grandi dimensioni quando è abilitata l’indicizzazione asincrona.
 feature: Catalog Management, Categories, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ab1816ef-fb09-46e7-8102-32865f806874
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

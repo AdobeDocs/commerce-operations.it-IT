@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53925: impossibile salvare il blocco CMS con [!UICONTROL Product Carousel]"
+title: 'ACSD-53925: impossibile salvare il blocco CMS con [!UICONTROL Product Carousel]'
 description: Applica la patch ACSD-53925 per risolvere il problema di Adobe Commerce, in cui l’amministratore non è in grado di salvare un blocco CMS con Product Carousel quando la modalità dimensioni per "catalog_product_price" è impostata su sito web.
 feature: CMS, Page Builder, Price Indexer, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f6d286ab-d904-4f08-8265-99632f74b88a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
