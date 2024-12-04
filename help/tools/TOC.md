@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 46c7053368bfab9c5975c5616be9b67050b93105
+source-git-commit: c03b0b3c81556f1c75ad5259a5905a5dd5b0224e
 workflow-type: tm+mt
-source-wordcount: '6415'
+source-wordcount: '6425'
 ht-degree: 0%
 
 ---
@@ -679,6 +679,7 @@ ht-degree: 0%
          - [ACSD-58471: quando vengono pianificate le regole del prezzo di catalogo, il contenuto dinamico non viene caricato sulla pagina dei dettagli del prodotto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
          - [ACSD-58383: note di credito duplicate da richieste di rimborso simultanee tramite  [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
          - [ACSD-58735: l’amministratore con restrizioni non può visualizzare i carrelli acquisti abbandonati sull’account del cliente per il sito web associato](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
+         - [ACSD-60344: e-mail di conferma dell&#39;ordine duplicate all&#39;utilizzo di [!UICONTROL Purchase Order] con approvazione automatica](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
       - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Riferimento strumenti della riga di comando {#cli-reference}
