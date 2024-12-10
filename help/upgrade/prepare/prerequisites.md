@@ -2,9 +2,9 @@
 title: Prerequisiti completi
 description: Prepara il tuo progetto Adobe Commerce per un aggiornamento completando questi passaggi preliminari.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 4c84710da62fbb31214a0de2adc8adbd68880a76
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1612'
 ht-degree: 0%
 
 ---
@@ -178,7 +178,7 @@ Contatta il fornitore del motore di ricerca per determinare se l’estensione è
 
 L&#39;impostazione del limite dei file aperti (ulimit) consente di evitare errori dovuti a più chiamate ricorsive di stringhe di query lunghe o problemi con l&#39;utilizzo del comando `bin/magento setup:rollback`. Questo comando è diverso per le diverse shell UNIX. Per informazioni specifiche sul comando `ulimit`, consultare la versione personalizzata.
 
-L&#39;Adobe consiglia di impostare i file aperti [ulimit](https://ss64.com/bash/ulimit.html) su un valore pari o superiore a `65536`, ma se necessario è possibile utilizzare un valore maggiore. È possibile impostare il limite massimo sulla riga di comando oppure impostarlo come impostazione permanente per la shell dell&#39;utente.
+Adobe consiglia di impostare i file aperti [ulimit](https://ss64.com/bash/ulimit.html) su un valore pari o superiore a `65536`, ma se necessario è possibile utilizzare un valore maggiore. È possibile impostare il limite massimo sulla riga di comando oppure impostarlo come impostazione permanente per la shell dell&#39;utente.
 
 Per impostare il limite dalla riga di comando:
 
@@ -229,11 +229,11 @@ Dovrebbero essere visualizzati risultati simili ai seguenti:
 
 Un altro sintomo di cron non in esecuzione è il seguente errore in Admin:
 
-![](../../assets/upgrade-guide/cron-not-running.png)
+![Messaggi di sistema - cron non in esecuzione](../../assets/upgrade-guide/cron-not-running.png)
 
 Per visualizzare l&#39;errore, fare clic su **Messaggi di sistema** nella parte superiore della finestra nel modo seguente:
 
-![](../../assets/upgrade-guide/system-messages.png)
+![Notifica messaggi di sistema](../../assets/upgrade-guide/system-messages.png)
 
 Per ulteriori informazioni, vedere [Configurare ed eseguire cron](../../configuration/cli/configure-cron-jobs.md).
 
