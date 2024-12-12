@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52095: errore durante l’esportazione del file CSV durante la gestione del valore delle azioni"
+title: 'ACSD-52095: errore nella gestione del valore delle azioni durante l’esportazione del file CSV'
 description: Applica la patch ACSD-52095 per risolvere il problema Adobe Commerce in cui il valore delle azioni di gestione del prodotto non è corretto durante l’esportazione del file CSV.
 feature: Inventory, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1f8415aa-23c6-480a-b54d-37b2b2d3199a
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -57,7 +58,7 @@ Il valore **[!UICONTROL Manage Stock]** è *0* quando è abilitato per i prodott
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](</help/tools/quality-patches-tool/usage.md>) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata

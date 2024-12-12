@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54776: i valori deselezionati [!UICONTROL Use Default Value] e non predefiniti dei campi prodotto non vengono salvati per la seconda visualizzazione sito Web, archivio e archivio"
+title: 'ACSD-54776: i valori deselezionati [!UICONTROL Use Default Value] e non predefiniti dei campi prodotto non vengono salvati per la seconda visualizzazione sito Web, archivio e archivio'
 description: Applica la patch ACSD-54776 per risolvere il problema Adobe Commerce, per cui i valori non selezionati [!UICONTROL Use Default Value] e non predefiniti del campo prodotto non vengono salvati per la seconda visualizzazione del sito Web, dello store e dello store.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9f63abb-5d00-4777-a186-1120344af018
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
@@ -57,7 +58,7 @@ I valori dei campi e delle caselle di controllo non vengono salvati.
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](</help/tools/quality-patches-tool/usage.md>) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata

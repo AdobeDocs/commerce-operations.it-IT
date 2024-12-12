@@ -4,7 +4,7 @@ description: Applica la patch ACSD-51102 per risolvere il problema di Adobe Comm
 feature: Catalog Management, Products
 role: Admin
 exl-id: 35a8078d-667b-4101-8562-ece052b44c9c
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Viene applicato solo il primo sconto regola.
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](</help/tools/quality-patches-tool/usage.md>) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata

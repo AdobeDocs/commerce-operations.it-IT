@@ -4,7 +4,7 @@ description: Applicare la patch ACSD-51204 per risolvere il problema di Adobe Co
 feature: Orders, Products, Returns
 role: Admin
 exl-id: a4dba28c-c239-4812-8b3a-ce0493f9b1aa
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -55,7 +55,7 @@ La quantità vendibile del prodotto viene lasciata come *0*.
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](</help/tools/quality-patches-tool/usage.md>) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata

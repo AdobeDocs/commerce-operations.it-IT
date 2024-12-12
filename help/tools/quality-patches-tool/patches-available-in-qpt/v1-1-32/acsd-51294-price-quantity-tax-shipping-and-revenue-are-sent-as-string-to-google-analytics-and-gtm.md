@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51294: prezzo, quantità, imposta, spedizione, ricavi inviati come stringa a [!DNL Google Analytics]  e GTM"
+title: 'ACSD-51294: prezzo, quantità, imposta, spedizione, ricavi inviati come stringa a  [!DNL Google Analytics]  e GTM'
 description: Applica la patch ACSD-51294 per risolvere il problema di Adobe Commerce in cui prezzo, quantità, imposta, spedizione e ricavi vengono inviati come stringa a  [!DNL Google Analytics]  e GTM.
 feature: Orders, Shipping/Delivery, Variables
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 99d2a311-2543-4007-99fd-6c34a2950773
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -51,7 +52,7 @@ I valori di prezzo e quantità sono stringa.
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](</help/tools/quality-patches-tool/usage.md>) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata

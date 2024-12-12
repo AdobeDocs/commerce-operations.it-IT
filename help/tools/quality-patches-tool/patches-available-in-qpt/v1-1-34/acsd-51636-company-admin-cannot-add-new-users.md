@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51636: l’amministratore dell’azienda non può aggiungere nuovi utenti dalla sezione account cliente"
+title: 'ACSD-51636: l’amministratore dell’azienda non può aggiungere nuovi utenti dalla sezione dell’account cliente'
 description: Applica la patch ACSD-51636 per risolvere il problema di Adobe Commerce, per cui l’amministratore dell’azienda non può aggiungere nuovi utenti dalla sezione dell’account cliente nonostante disponga di tutti i ruoli e le autorizzazioni necessari.
 feature: Admin Workspace, B2B, Companies, Customer Service
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 46e79ae3-ea24-4cb2-b06e-e82cec33b16c
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -64,7 +65,7 @@ L’utente amministratore può aggiungere un nuovo utente.
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](</help/tools/quality-patches-tool/usage.md>) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata

@@ -4,7 +4,7 @@ description: Applica la patch ACSD-51358 per risolvere il problema di Adobe Comm
 feature: Staging
 role: Admin, Developer
 exl-id: 6e2e598b-72f1-4f00-a989-3f75bf65f8f0
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Le modifiche apportate all’aggiornamento programmato senza data di fine determ
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](</help/tools/quality-patches-tool/usage.md>) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata

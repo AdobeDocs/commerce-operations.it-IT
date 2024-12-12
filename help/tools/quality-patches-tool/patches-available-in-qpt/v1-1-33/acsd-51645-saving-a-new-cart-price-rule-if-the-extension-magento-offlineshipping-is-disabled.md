@@ -2,7 +2,7 @@
 title: 'ACSD-51645: salvataggio di una nuova regola prezzo carrello se l’estensione Magento_OfflineShipping è disabilitata'
 description: Applica la patch ACSD-51645 per risolvere il problema di Adobe Commerce in cui si verifica un errore durante il salvataggio di una nuova Regola prezzo carrello se l’estensione Magento_OfflineShipping è disabilitata.
 exl-id: ce747ae4-6d2f-41c0-ba75-7da72be359c7
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Si verifica il seguente errore:
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](</help/tools/quality-patches-tool/usage.md>) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
