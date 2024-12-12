@@ -1,17 +1,18 @@
 ---
-title: "ACSD-56760: l’utente amministratore è limitato a un sito web specifico e non è in grado di ordinare o aggiungere nuovi prodotti"
+title: 'ACSD-56760: l’utente amministratore è limitato a un sito web specifico e non può ordinare o aggiungere nuovi prodotti'
 description: Applica la patch ACSD-56760 per risolvere il problema di Adobe Commerce, a causa del quale l’utente amministratore limitato a un sito web specifico e non è in grado di ordinare o aggiungere nuovi prodotti all’interno di una categoria nel caso in cui lo store web abbia la propria categoria principale.
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2d75164e-c463-4e1a-aa6f-f420dbe0aaeb
+source-git-commit: 881d33089b15b78583e09b79e93a3f78f38bc2ca
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # ACSD-56760: l’utente amministratore è limitato a un sito web specifico e non può ordinare o aggiungere nuovi prodotti
 
-La patch ACSD-56760 risolve il problema per cui l’utente amministratore, limitato a un sito web specifico e impossibilitato a ordinare o aggiungere nuovi prodotti all’interno di una categoria, nel caso in cui il web store abbia la propria categoria principale. Questa patch è disponibile quando è installato [!DNL Quality Patches Tool (QPT)] 1.1.47. L’ID della patch è ACSD-56760. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.
+La patch ACSD-56760 risolve il problema per cui l’utente amministratore, limitato a un sito web specifico e impossibilitato a ordinare o aggiungere nuovi prodotti all’interno di una categoria, nel caso in cui il web store abbia la propria categoria principale. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.47. L’ID della patch è ACSD-56760. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.8-beta1.
 
 ## Prodotti e versioni interessati
 
@@ -68,8 +69,4 @@ Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del m
 
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
-* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
-* [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
-
-
-Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida di [!DNL Quality Patches Tool].
+* [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.
