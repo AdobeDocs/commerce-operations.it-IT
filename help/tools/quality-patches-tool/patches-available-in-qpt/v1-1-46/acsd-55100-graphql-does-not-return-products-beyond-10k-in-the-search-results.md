@@ -4,14 +4,18 @@ description: Applica la patch ACSD-55100 per risolvere il problema di Adobe Comm
 feature: GraphQL, Products, Search
 role: Admin, Developer
 exl-id: f08b62b9-ed56-4eca-b7e7-6e2bd99df01f
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: ec05b041c7af477abd6d3ade6ea95fed5065f2fa
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
 # ACSD-55100: [!DNL GraphQL] non restituisce prodotti oltre i 10.000 nei risultati di ricerca
+
+>[!NOTE]
+>
+>È stata rilasciata una patch aggiornata ([ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)) per risolvere lo stesso problema per le versioni 2.4.6 - 2.4.6-p8. Per ulteriori dettagli, vedere [ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md).
 
 La patch ACSD-55100 risolve il problema per cui [!DNL GraphQL] non restituisce prodotti oltre *10k* nei risultati di ricerca. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.46. L’ID della patch è ACSD-55100. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.
 
