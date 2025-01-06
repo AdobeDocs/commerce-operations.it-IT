@@ -2,9 +2,9 @@
 title: Installazione rapida on-premise
 description: Per installare Adobe Commerce nell’infrastruttura di tua proprietà, segui la procedura riportata di seguito.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 60db3da9154e76032c88d687b6b6e22d7b81f9ae
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ Per ottenere il metapacchetto Adobe Commerce:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Quando richiesto, immettere le chiavi di autenticazione. Le chiavi pubbliche e private vengono create e configurate nella [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
+   Quando richiesto, immettere le chiavi di autenticazione. Le chiavi pubbliche e private vengono create e configurate da [Commerce Marketplace - Chiavi di accesso](https://commercemarketplace.adobe.com/customer/account/login/). Per `[!UICONTROL username]`, copia e incolla il valore della chiave pubblica. Per `[!UICONTROL password]`, copia e incolla il valore della chiave privata.
 
    >[!NOTE]
    >
-   > Quando si utilizza un file Composer `auth.json` o una variabile di ambiente, non verrà richiesto di immettere le chiavi di autenticazione.
+   > Se si utilizza un file Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` o una variabile di ambiente configurata con le chiavi di autenticazione di Commerce, non viene richiesto di immettere le chiavi di autenticazione.
 
    Se si verificano errori, ad esempio `Could not find package...` o `...no matching package found`, verificare che il comando non contenga errori di battitura. Se riscontri ancora errori, potresti non essere autorizzato a scaricare Adobe Commerce. Contatta il [Supporto Adobe Commerce](https://support.magento.com/hc/en-us) per assistenza.
 
