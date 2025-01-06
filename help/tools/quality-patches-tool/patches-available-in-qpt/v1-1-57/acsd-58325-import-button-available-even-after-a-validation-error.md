@@ -3,13 +3,13 @@ title: 'ACSD-58325: pulsante [!UICONTROL Import] disponibile anche dopo un error
 description: Applicare la patch ACSD-58325 per risolvere il problema di Adobe Commerce per cui il pulsante [!UICONTROL Import] è disponibile anche dopo un errore di convalida.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: 5a2709014828810827e71d9dd91d34102d80bd66
+exl-id: 551a9ac7-9b7f-49b5-9255-2014c330fb07
+source-git-commit: c50fa066d02c04a08c28730afffe4508019a93aa
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58325: pulsante [!UICONTROL Import] disponibile anche dopo un errore di convalida
 
@@ -21,8 +21,7 @@ La patch ACSD-58325 risolve il problema per cui il pulsante **[!UICONTROL Import
 * Adobe Commerce (tutti i metodi di implementazione) 2.4.6-p3
 
 **Compatibile con le versioni di Adobe Commerce:**
-* Adobe Commerce on-premise 2.4.6 - 2.4.6-p8
-* Adobe Commerce sull’infrastruttura cloud 2.4.6 - 2.4.6-p8
+* Adobe Commerce (tutti i metodi di implementazione) 2.4.6 - 2.4.6-p8
 
 >[!NOTE]
 >
@@ -60,4 +59,3 @@ Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del m
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
 * [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.
-
