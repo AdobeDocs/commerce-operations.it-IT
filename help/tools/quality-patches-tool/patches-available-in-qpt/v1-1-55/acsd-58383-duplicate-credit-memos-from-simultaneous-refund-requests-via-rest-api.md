@@ -4,14 +4,14 @@ description: Applicare la patch ACSD-58383 per risolvere il problema Adobe Comme
 feature: REST, Payments, Returns
 role: Admin, Developer
 exl-id: 962970d5-22e7-4bdc-afa0-70e1fa21ecec
-source-git-commit: 28390659fe180180c9b2c8d16239008a1f8a510b
+source-git-commit: d3d98c04afe32d80cdf985b1d93c8a2cb57236ed
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
-# Patch ACSD-58383 Adobe Commerce: note di credito duplicate da richieste di rimborso simultanee tramite [!DNL REST API]
+# ACSD-58383: note di credito duplicate da richieste di rimborso simultanee tramite [!DNL REST API]
 
 La patch ACSD-58383 risolve il problema che, emettendo un rimborso tramite [!DNL REST API] con due richieste identiche eseguite contemporaneamente, genera note di credito duplicate.
 
