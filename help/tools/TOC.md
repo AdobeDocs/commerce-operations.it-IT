@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: b06e25b27b7e07ec14defd59a95048b8027cbcbf
+source-git-commit: df59ebd79609c04d9fa8efc6123af24029db8b91
 workflow-type: tm+mt
-source-wordcount: '6694'
+source-wordcount: '6705'
 ht-degree: 0%
 
 ---
@@ -688,6 +688,7 @@ ht-degree: 0%
          - [ACSD-62591: il tema non viene cambiato correttamente quando [!UICONTROL User Agent Rules] è configurato](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
       - v1.1.56 {#v1-1-56}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+         - [ACSD-60811: Corregge la limitazione nell’aggiornamento dello stato dell’ordine ai valori personalizzati](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-60811-fixes-limitation-in-updating-order-status-to-custom-values.md)
          - [ACSD-62971: l&#39;importazione di origini di magazzino con valori di quantità non numerici determina l&#39;impostazione della quantità su 0](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62971-stock-import-error-non-numeric-quantity.md)
          - [ACSD-62979: l’ID archivio errato nell’intestazione del GraphQL causa un errore irreversibile di memoria](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error.md)
          - [ACSD-62475: risolve i problemi di unione delle gift card nel carrello](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart.md)
