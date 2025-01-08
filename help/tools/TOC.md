@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: df59ebd79609c04d9fa8efc6123af24029db8b91
+source-git-commit: 5f161057bba76d208d363d33e6c09d1780c2e74b
 workflow-type: tm+mt
-source-wordcount: '6705'
+source-wordcount: '6716'
 ht-degree: 0%
 
 ---
@@ -703,6 +703,7 @@ ht-degree: 0%
       - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57 {#v1-1-57}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
+         - [ACSD-57570: correzione relativa all’accesso limitato degli utenti amministratori ai cataloghi condivisi](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-57570-fix-restricted-admin-access.md)
          - [ACSD-62635: i prodotti correlati a più store non sono visualizzati correttamente in [!DNL GraphQL]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62635-multistore-related-products-displayed-incorrectly-in-graphql.md)
          - [ACSD-61622: [!DNL FedEx] le tariffe specifiche dell&#39;account non sono presenti nella risposta REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response.md)
          - [ACSD-62965: sono state corrette le correzioni per cui mancava il messaggio LocalizedException nella risposta di posizionamento dell’ordine di GraphQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response.md)
