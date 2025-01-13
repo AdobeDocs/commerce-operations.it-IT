@@ -1,0 +1,69 @@
+---
+title: 'ACSD-62689: impossibile aggiungere categorie in [!UICONTROL Related Product Rules] e widget dopo la profondità 4'
+description: Applicare la patch ACSD-62689 per risolvere il problema di Adobe Commerce che impedisce al cliente di aggiungere categorie in [!UICONTROL Related Product Rules] e widget dopo la nidificazione della profondità quattro.
+feature: Categories
+role: Admin, Developer
+source-git-commit: 154a017fbc6e069e8e59651db46955922c004955
+workflow-type: tm+mt
+source-wordcount: '374'
+ht-degree: 0%
+
+---
+
+
+# ACSD-62689: impossibile aggiungere categorie in *[!UICONTROL Related Product Rules]* e widget dopo la profondità 4
+
+La patch ACSD-62689 risolve il problema che impediva al cliente di aggiungere categorie in *[!UICONTROL Related Product Rules]* e widget dopo la nidificazione di livello quattro. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/patches/release-notes.html) 1.1.57. L’ID della patch è ACSD-62689. Questo problema è pianificato per la risoluzione in Adobe Commerce 2.4.8.
+
+## Prodotti e versioni interessati
+
+**La patch è stata creata per la versione di Adobe Commerce:**
+
+* Adobe Commerce (tutti i metodi di implementazione) 2.4.7-p3
+
+**Compatibile con le versioni di Adobe Commerce:**
+
+* Adobe Commerce (tutti i metodi di implementazione) 2.4.7 - 2.4.7-p3
+
+>[!NOTE]
+>
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+
+## Problema
+
+Un cliente non è in grado di aggiungere categorie in *[!UICONTROL Related Product Rules]* e widget dopo la nidificazione di profondità quattro.
+
+<u>Passaggi da riprodurre</u>:
+
+1. Creare due categorie denominate *[!UICONTROL Anchor]* e *[!UICONTROL Non-Anchor]* nella categoria principale predefinita.
+   * Verificare che il flag *[!UICONTROL Is Anchor]* sia disabilitato per la categoria *[!UICONTROL Non-Anchor]*.
+1. Vai a **[!UICONTROL Content]** > **[!UICONTROL Widgets]** e crea un widget.
+1. In *[!UICONTROL Layout Updates]*, selezionare **[!UICONTROL Non-Anchor Categories]** nel campo *[!UICONTROL Display on]*.
+1. Fare clic su **[!UICONTROL Specific Categories]**.
+1. Fai clic sull’icona di selezione della categoria.
+1. Espandere la categoria radice.
+1. Controlla le categorie. Entrambi devono essere disabilitati e non selezionabili.
+1. In *[!UICONTROL Layout Updates]*, selezionare **[!UICONTROL Anchor Categories]** nel campo *[!UICONTROL Display on]*. Quindi seguire i punti 5 e 6.
+1. Controlla le categorie. Entrambi devono essere attivati e selezionabili.
+
+<u>Risultati previsti</u>:
+
+Nel passaggio 7, deve essere selezionabile solo la categoria *[!UICONTROL Non-Anchor]*. Nel passaggio 9, la categoria *[!UICONTROL Anchor]* deve essere selezionabile.
+
+<u>Risultati effettivi</u>:
+
+Nel passaggio 7, non è possibile selezionare entrambe le categorie. Nel passaggio 9, è possibile selezionare entrambe le categorie.
+
+## Applicare la patch
+
+Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
+
+* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
+
+
+## Lettura correlata
+
+Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
+
+* [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.
