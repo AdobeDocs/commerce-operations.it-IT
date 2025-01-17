@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 32f3a7682ac13fdef7ff5694ef478b1d0704d8e9
+source-git-commit: 3b200e814ee973fde79b436d9efc5738b3420ee2
 workflow-type: tm+mt
-source-wordcount: '6807'
+source-wordcount: '6811'
 ht-degree: 0%
 
 ---
@@ -704,7 +704,6 @@ ht-degree: 0%
          - [ACSD-55339: risoluzione del problema di trimming SKU in preventivi negoziabili per Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-55339-resolving-sku-trimming-issue-in-negotiable-quotes-for-adobe-commerce.md)
          - [ACSD-62670: errore durante l&#39;esportazione del report [!UICONTROL Products Ordered] in formato CSV e XML](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error.md)
          - [ACSD-62755: [!DNL TinyMCE] 7 è necessario aggiungere la dimensione e il tipo di carattere alle impostazioni di inizializzazione dell&#39;editor](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
-      - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57 {#v1-1-57}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
          - [ACSD-62708: [!DNL TinyMCE] 7 dimensione font editor nel pannello di amministrazione mostra PT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue.md)
@@ -719,6 +718,9 @@ ht-degree: 0%
          - [ACSD-63286: per visualizzare i prodotti assegnati al catalogo condiviso è necessaria la reindicizzazione manuale](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325: pulsante [!UICONTROL Import] disponibile anche dopo un errore di convalida](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
          - [ACSD-62671: [!DNL GraphQL] non restituisce l&#39;indirizzo aggiornato al primo tentativo](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
+      - v1.1.58 {#v1-1-58}
+         - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
+   - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Riferimento strumenti della riga di comando {#cli-reference}
    - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
    - [Upgrade Compatibility Tool](reference/uct.md)
