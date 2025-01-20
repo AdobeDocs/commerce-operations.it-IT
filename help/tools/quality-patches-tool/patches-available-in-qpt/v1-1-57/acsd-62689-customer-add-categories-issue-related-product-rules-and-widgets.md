@@ -3,17 +3,17 @@ title: 'ACSD-62689: impossibile aggiungere categorie in [!UICONTROL Related Prod
 description: Applicare la patch ACSD-62689 per risolvere il problema di Adobe Commerce che impedisce al cliente di aggiungere categorie in [!UICONTROL Related Product Rules] e widget dopo la nidificazione della profondità quattro.
 feature: Categories
 role: Admin, Developer
-source-git-commit: 154a017fbc6e069e8e59651db46955922c004955
+exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-62689: impossibile aggiungere categorie in *[!UICONTROL Related Product Rules]* e widget dopo la profondità 4
 
-La patch ACSD-62689 risolve il problema che impediva al cliente di aggiungere categorie in *[!UICONTROL Related Product Rules]* e widget dopo la nidificazione di livello quattro. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/patches/release-notes.html) 1.1.57. L’ID della patch è ACSD-62689. Questo problema è pianificato per la risoluzione in Adobe Commerce 2.4.8.
+La patch ACSD-62689 risolve il problema che impediva al cliente di aggiungere categorie in *[!UICONTROL Related Product Rules]* e widget dopo la nidificazione di livello quattro. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57. L’ID della patch è ACSD-62689. Questo problema è pianificato per la risoluzione in Adobe Commerce 2.4.8.
 
 ## Prodotti e versioni interessati
 
@@ -67,3 +67,4 @@ Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del m
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
 * [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.
+

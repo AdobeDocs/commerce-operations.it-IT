@@ -3,16 +3,17 @@ title: 'ACSD-62758: problema di rendering video risolto nelle pagine di prodotti
 description: Applica la patch ACSD-62758 per risolvere il problema di Adobe Commerce, a causa del quale i video dei prodotti nelle pagine dei dettagli configurabili del prodotto non vengono riprodotti correttamente se gli URL contengono opzioni di campioni preselezionate.
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: 313709361ee86e39b89c416f71a92b078318f4fb
+exl-id: 084b497d-4471-4458-bc1d-2a452bfe2662
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
 # ACSD-62758: problema di rendering video risolto nelle pagine di prodotti configurabili
 
-La patch ACSD-62758 risolve il problema per cui i video dei prodotti nelle pagine dei dettagli configurabili del prodotto non vengono riprodotti correttamente se gli URL contengono opzioni di campioni preselezionate. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57. L’ID della patch è ACSD-62758. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.
+La patch ACSD-62758 risolve il problema per cui i video dei prodotti nelle pagine dei dettagli configurabili del prodotto non vengono riprodotti correttamente se gli URL contengono opzioni di campioni preselezionate. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57. L’ID della patch è ACSD-62758. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.
 
 ## Prodotti e versioni interessati
 
@@ -70,3 +71,4 @@ Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del m
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
 * [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.
+

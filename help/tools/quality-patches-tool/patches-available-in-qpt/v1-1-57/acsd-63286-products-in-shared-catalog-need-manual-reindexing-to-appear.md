@@ -3,16 +3,17 @@ title: 'ACSD-63286: per visualizzare i prodotti assegnati al catalogo condiviso 
 description: Applica la patch ACSD-63286 per risolvere il problema di Adobe Commerce, a causa del quale i prodotti assegnati a un catalogo condiviso tramite API non vengono visualizzati nella vetrina fino a quando non viene eseguita una reindicizzazione manuale.
 feature: Products, REST
 role: Admin, Developer
-source-git-commit: 00b2b9285ca27d630bd0ece2750b531710e8d196
+exl-id: 0435c06e-337e-4320-acc6-fa79a3b34008
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # ACSD-63286: per visualizzare i prodotti assegnati al catalogo condiviso è necessaria la reindicizzazione manuale
 
-La patch ACSD-63286 risolve il problema per cui i prodotti assegnati a un catalogo condiviso tramite API non vengono visualizzati nella vetrina fino a quando non viene eseguita una reindicizzazione manuale. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57. L’ID della patch è ACSD-63286. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.
+La patch ACSD-63286 risolve il problema per cui i prodotti assegnati a un catalogo condiviso tramite API non vengono visualizzati nella vetrina fino a quando non viene eseguita una reindicizzazione manuale. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57. L’ID della patch è ACSD-63286. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.
 
 ## Prodotti e versioni interessati
 
