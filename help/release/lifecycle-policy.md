@@ -2,7 +2,7 @@
 title: Regole sul ciclo di vita del software
 description: Scopri le date chiave per la fine del supporto software per le versioni di Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 2a611b87df0d25be0e047e4d07e8c0ac3cd4d904
+source-git-commit: ce7c322c5cf979a992e6f929c3105daf86d4aa49
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 4%
@@ -38,8 +38,8 @@ Adobe incoraggia i clienti ad effettuare l’aggiornamento il prima possibile. T
 |----------------------|----------------------|------------------------------------|-------------------------|-----------------------|------------------------------|
 | Adobe Commerce 2.4.7 | 9 aprile 2024 | 9 aprile 2027 | N/D | 8.2 e 8.3 | 10,6 |
 | Adobe Commerce 2.4.6 | 14 marzo 2023 | 11 agosto 2026<sup>2</sup> | N/D | 8.1 e 8.2 | 10,6 |
-| Adobe Commerce 2.4.5 | 9 agosto 2022 | 9 agosto 2025 | 11 agosto 2026 | 8,1 | 10,5<sup>3</sup> |
-| Adobe Commerce 2.4.4 | 12 aprile 2022 | 24 aprile 2025 | 14 aprile 2026 | 8,1 | 10,5<sup>4</sup> |
+| Adobe Commerce 2.4.5 | 9 agosto 2022 | 9 agosto 2025 | 11 agosto 2026 | 8,1 | 10,6<sup>3</sup> |
+| Adobe Commerce 2.4.4 | 12 aprile 2022 | 24 aprile 2025 | 14 aprile 2026 | 8,1 | 10,6<sup>4</sup> |
 
 {style="table-layout:auto"}
 
@@ -47,8 +47,8 @@ Adobe incoraggia i clienti ad effettuare l’aggiornamento il prima possibile. T
 >
 >- <sup>1</sup> La fine del supporto software include sia la fine delle correzioni di qualità che la fine delle correzioni di sicurezza.
 >- <sup>2</sup> Aggiornato per allinearlo alla fine del supporto esteso per la versione 2.4.5.
->- <sup>3</sup> a partire dalla patch di sicurezza 2.4.5-p8.
->- <sup>4</sup> a partire dalla patch di sicurezza 2.4.4-p9.
+>- <sup>3</sup> a partire dalla patch di sicurezza 2.4.5-p11.
+>- <sup>4</sup> a partire dalla patch di sicurezza 2.4.4-p12.
 >- Consulta [Criteri del ciclo di vita software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
