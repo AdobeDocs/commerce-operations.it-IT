@@ -1,5 +1,5 @@
 ---
-source-git-commit: 4a84f20fba387f6b94786095ebad82c2fdf0560e
+source-git-commit: 35477721e6c71320ee3915965b6bd589f5886693
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
@@ -219,7 +219,7 @@ Il supporto per la versione 2.4.5 di termina in agosto  9, 2025.
 
 ## 2.4.4.
 
-Il supporto per la riga di rilascio 2.4.4 termina il 24 aprile 2025.
+Il supporto per la riga di rilascio 2.4.4 termina il 12 aprile 2025.
 
 <table>
   <thead>
