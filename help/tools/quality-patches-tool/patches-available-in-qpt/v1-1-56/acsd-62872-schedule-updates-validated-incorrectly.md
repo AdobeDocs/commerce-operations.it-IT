@@ -3,13 +3,13 @@ title: 'ACSD-62872: gli aggiornamenti della pianificazione non vengono convalida
 description: Applica la patch ACSD-62872 per risolvere il problema di Adobe Commerce con convalida di attributi univoci in cui gli aggiornamenti pianificati non vengono convalidati correttamente.
 feature: Catalog Management, Admin Workspace
 role: Admin, Developer
-source-git-commit: f734dab2316237d60164a430eeabed17782b0ae6
+exl-id: bd0d452b-aae3-4682-8a2c-471a7f8bf132
+source-git-commit: 4727a94178c642922224cb37ad5c1b2b4f6002cb
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62872: gli aggiornamenti della pianificazione non vengono convalidati correttamente
 
@@ -23,7 +23,11 @@ La patch ACSD-62872 risolve il problema della convalida univoca degli attributi,
 
 **Compatibile con le versioni di Adobe Commerce:**
 
-* Adobe Commerce (tutti i metodi di implementazione) 2.4.4 - 2.4.7-p3
+* Adobe Commerce (tutti i metodi di implementazione) 2.4.7 - 2.4.7-p3
+
+>[!NOTE]
+>
+>La patch è contrassegnata come obsoleta per le versioni 2.4.4 - 2.4.6-p8 nella versione 1.1.58 di QPT.
 
 >[!NOTE]
 >
@@ -39,7 +43,7 @@ L’aggiornamento pianificato di un attributo personalizzato non viene convalida
 1. Passa a **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 1. Crea una nuova categoria.
 1. Nella stessa categoria, passare alla sezione **[!UICONTROL Scheduled Updates]**.
-1. Imposta un nuovo aggiornamento per questa categoria in un momento futuro.
+1. Imposta un nuovo aggiornamento per questa categoria in qualsiasi momento futuro.
 1. Prima di avviare l’aggiornamento pianificato, prova a modificare l’aggiornamento pianificato creato per la categoria.
 
 <u>Risultati previsti</u>:
@@ -55,8 +59,7 @@ Errore: *Il valore dell&#39;attributo &quot;Custom Attribute&quot; non è univoc
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
-
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
