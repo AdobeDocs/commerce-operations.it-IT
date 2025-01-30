@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: ef50c80723bdef72df5319f29069ddfc0814807b
+source-git-commit: dad7141d0bc49896bc55965ab40b354f53f2a17b
 workflow-type: tm+mt
-source-wordcount: '6915'
+source-wordcount: '6926'
 ht-degree: 0%
 
 ---
@@ -729,6 +729,7 @@ ht-degree: 0%
          - [ACSD-63283: risoluzione di [!UICONTROL Gift Registry] problemi di invio di e-mail e ordini in Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md)
          - [ACSD-62118: tabella sales_order_tax_item non completamente aggiornata per gli ordini B2B effettuati utilizzando il metodo [!UICONTROL Purchase Order]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
          - [ACSD-63182: errore durante il salvataggio di un prodotto dopo la duplicazione del prodotto nel bundle](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication.md)
+         - [ACSD-63325: &quot;Errore di sintassi: errore &lt; EOF > imprevisto&quot; durante l&#39;invio di una richiesta vuota [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
    - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Riferimento strumenti della riga di comando {#cli-reference}
    - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
