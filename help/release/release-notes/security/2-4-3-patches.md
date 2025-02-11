@@ -2,7 +2,7 @@
 title: Note sulla versione per le patch di sicurezza di Adobe Commerce 2.4.3
 description: Scopri le correzioni di bug di sicurezza, i miglioramenti della sicurezza e altri aggiornamenti relativi alla sicurezza inclusi nelle versioni delle patch di sicurezza per Adobe Commerce 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
+source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Note sulla versione per le patch di sicurezza di Adobe Commerce 2.4.3
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
 ## Adobe Commerce 2.4.3-p3
 
@@ -78,7 +78,7 @@ Questa versione include il seguente hotfix e tutti gli hotfix rilasciati per la 
 
 **ID sessione rimossi dal database**. Questa modifica al codice può causare modifiche non significative se i commercianti dispongono di personalizzazioni o estensioni installate che utilizzano gli ID di sessione non elaborati memorizzati nel database. <!-- MC-40976-->
 
-**Accesso amministratore limitato alle cartelle di Media Gallery**. Le autorizzazioni predefinite di Media Gallery consentono ora solo le operazioni di directory (visualizzazione, caricamento, eliminazione e creazione) che sono esplicitamente consentite dalla configurazione. Gli utenti amministratori non possono più accedere alle risorse multimediali tramite Media Gallery caricate all&#39;esterno delle directory `catalog/category` o `wysiwyg`. Gli amministratori che desiderano accedere alle risorse multimediali devono spostarle in una cartella consentita in modo esplicito o modificare le impostazioni di configurazione. Vedere [Modificare le autorizzazioni della cartella di Media Library](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
+**Accesso amministratore limitato alle cartelle di Media Gallery**. Le autorizzazioni predefinite di Media Gallery consentono ora solo le operazioni di directory (visualizzazione, caricamento, eliminazione e creazione) che sono esplicitamente consentite dalla configurazione. Gli utenti amministratori non possono più accedere alle risorse multimediali tramite Media Gallery caricate all&#39;esterno delle directory `catalog/category` o `wysiwyg`. Gli amministratori che desiderano accedere alle risorse multimediali devono spostarle in una cartella consentita in modo esplicito o modificare le impostazioni di configurazione. Vedere [Modifica autorizzazioni cartella Catalogo multimediale](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
 
 **Limiti ridotti alla complessità delle query GraphQL**. La complessità massima delle query consentita per GraphQL è stata ridotta per evitare attacchi Denial of Service (DOS). Vedere [Configurazione della sicurezza di GraphQL](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/). <!-- PWA-1700-->
 
