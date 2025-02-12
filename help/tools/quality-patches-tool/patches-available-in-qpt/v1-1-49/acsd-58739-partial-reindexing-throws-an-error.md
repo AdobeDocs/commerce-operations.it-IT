@@ -4,7 +4,7 @@ description: Applica la patch ACSD-55241 per risolvere il problema di Adobe Comm
 feature: Inventory, Products
 role: Admin, Developer
 exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: c643d55823ae0791ecfa0f2220116bbcbd02668a
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -35,7 +35,7 @@ La reindicizzazione parziale genera un errore.
 
 <u>Passaggi da riprodurre</u>:
 
-1. Aggiungere le impostazioni di connessione slave a `app/etc/ev.php`.
+1. Aggiungere le impostazioni di connessione slave a `app/etc/env.php`.
 1. Genera fino a 10000 prodotti ed esegui il comando seguente:
 
    ```
@@ -68,7 +68,7 @@ Nessun errore.
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool]
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool]
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud
 
 ## Lettura correlata
