@@ -2,9 +2,9 @@
 title: Versioni di Beta
 description: Scopri le versioni beta di Adobe Commerce e come partecipare.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 4643c8392b6d92a2ccbbc2ec5b27d75c112d7521
+source-git-commit: c29602d6f1619c0b32feb48843ec01b350a3ae32
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ I programmi beta di Adobe Commerce consentono ai commercianti di accedere alle f
 
 >[!IMPORTANT]
 >
->I rilasci di Beta possono contenere difetti e vengono forniti &quot;COSÌ COME SONO&quot; senza alcuna garanzia. Adobe non avrà alcun obbligo di mantenere, correggere, aggiornare, modificare, modificare o supportare in altro modo (tramite i servizi di supporto Adobe o in altro modo) le versioni beta. Si consiglia ai clienti di prestare cautela e di non fare affidamento in alcun modo sul corretto funzionamento o sulle prestazioni delle versioni beta e/o di qualsiasi documentazione o materiale di accompagnamento. Le funzioni e le API in versione beta sono soggette a modifiche senza preavviso. Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del cliente.
+>I rilasci di Beta possono contenere difetti e vengono forniti &quot;COSÌ COME SONO&quot; senza alcuna garanzia. Adobe non avrà alcun obbligo di mantenere, correggere, aggiornare, modificare o altrimenti supportare (tramite i servizi di supporto Adobe o in altro modo) le versioni beta. Si consiglia ai clienti di prestare cautela e di non fare affidamento in alcun modo sul corretto funzionamento o sulle prestazioni delle versioni beta e/o di qualsiasi documentazione o materiale di accompagnamento. Le funzioni e le API in versione beta sono soggette a modifiche senza preavviso. Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del cliente.
 
 ## Vantaggi della partecipazione
 
-L&#39;accesso anticipato alle funzioni sviluppate da Adobe offre a clienti e partner la possibilità di fornire feedback, definire lo sviluppo dei prodotti e prepararsi ad adottare nuove funzionalità prima della disponibilità generale.
+L’accesso anticipato alle funzioni sviluppate da Adobe offre a clienti e partner la possibilità di fornire feedback, definire lo sviluppo dei prodotti e prepararsi ad adottare nuove funzionalità prima della disponibilità generale.
 
 ## Programmi Beta correnti
 
@@ -53,22 +53,6 @@ Questa versione beta supporta tre nuove funzionalità nella query [`productSearc
 Queste nuove condizioni migliorano il meccanismo di filtro delle query di ricerca per perfezionare i risultati della ricerca. Queste nuove condizioni non influiscono sulla query di ricerca principale. Per partecipare alla versione beta, invia una richiesta e-mail a [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
 Per installare la versione beta di Live Search, consulta la [guida di Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
-
-### Integrazione di Experience Manager Assets per Commerce (Private Beta)
-
-L&#39;integrazione di Experience Manager Assets per Commerce consente la gestione e la distribuzione efficienti di un grande volume di immagini di prodotti da Experience Manager Assets ad Adobe Commerce con un minimo sforzo operativo.
-
-Funzioni principali:
-
-- Integrazione Plug and Play: un Adobe di integrazione preconfigurata tra Experience Manager Assets e Adobe Commerce per consentire ai commercianti di concentrarsi su ciò che conta di più, con costi operativi ridotti e maggiore efficienza.
-
-- Personalizzare le immagini dei prodotti su larga scala-Utilizza Experience Manager Assets per generare milioni di varianti di prodotto per esperienze Commerce personalizzate con semplici strumenti di modifica basati sull’interfaccia utente, creazione di contenuti generativa tramite Adobe Firefly e flussi di lavoro di risorse assegnati per garantire la coerenza del marchio. Una volta soddisfatte le risorse, distribuirle direttamente ai punti vendita Commerce utilizzando l’integrazione di Experience Manager Assets.
-
-- Onboarding semplificato: l’onboarding degli esercenti è semplificato con un processo di sincronizzazione configurabile che consente la sincronizzazione completa tra l’archivio Experience Manager Assets e il catalogo Commerce.
-
-- Strategia di corrispondenza flessibile: l’integrazione include algoritmi di corrispondenza delle risorse predefiniti basati su SKU di prodotto che sincronizzano le immagini tra AEM Assets e Commerce ed è estensibile tramite Adobe Developer App Builder. Collabora con il tuo partner di soluzioni per creare una strategia di corrispondenza delle risorse personalizzata oltre all’integrazione per adattarsi a qualsiasi struttura dell’archivio di gestione delle risorse.
-
-Per partecipare alla versione beta, invia una richiesta e-mail a [Shaun McCran](mailto:mccran@adobe.com).
 
 ### Integrazione dei sistemi IBM Sterling Order Management (Private Beta)
 
@@ -121,7 +105,7 @@ Per ulteriori dettagli, vedere [Avvio rapido dell&#39;installazione del Composit
 
 #### Segnalazione problemi
 
-Adobe non fornisce il servizio standard di supporto Adobe per le versioni beta.
+Adobe non fornisce il servizio di supporto Adobe standard per le versioni beta.
 
 Per inviare feedback relativi alle versioni beta, segui il [flusso regolare di segnalazione dei problemi](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) in [GitHub](https://github.com/magento/magento2).
 
