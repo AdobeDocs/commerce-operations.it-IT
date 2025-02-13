@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 183a83346633913b3b013732cbac8676a0756609
+source-git-commit: 329a9413eca2de00451ee694501cca2cf0c57c30
 workflow-type: tm+mt
-source-wordcount: '6981'
+source-wordcount: '6990'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
    - [Schede Funzionalità](site-wide-analysis-tool/features-tabs.md)
    - [Dashboard](site-wide-analysis-tool/dashboard.md)
    - [Informazioni](site-wide-analysis-tool/information.md)
-   - [Recommendations](site-wide-analysis-tool/recommendations.md)
+   - [Consigli](site-wide-analysis-tool/recommendations.md)
    - [Eccezioni](site-wide-analysis-tool/exceptions.md)
    - [Estensioni](site-wide-analysis-tool/extensions.md)
    - [Avvisi](site-wide-analysis-tool/alerts.md)
@@ -300,7 +300,7 @@ ht-degree: 0%
          - [ACSD-48661: problema di convalida del separatore virgola del limite di credito della società](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48661-company-credit-limit-comma-separator-validation.md)
          - [ACSD-48587: il widget del prodotto non funziona con SKU contenenti caratteri HTML](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48587-product-widget-not-working-with-html-characters.md)
          - [ACSD-48212: l’importazione del prodotto assegna il prodotto a un’origine errata](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48212-product-import-assigns-product-wrong-source.md)
-         - [ACSD-47988: esportazione del prodotto taglia i tag HTML dalla descrizione del prodotto di page builder](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-47988-product-export-trims-html-tags.md)
+         - [ACSD-47988: l’esportazione del prodotto taglia i tag HTML dalla descrizione del prodotto del generatore di pagine](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-47988-product-export-trims-html-tags.md)
          - [ACSD-48366: l’immagine del prodotto non viene visualizzata nel modello e-mail Torna al magazzino](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48366-product-image-not-displayed-back-stock-email-template.md)
          - [ACSD-48417: errore SQL dopo la creazione di una modifica della pianificazione](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48417-sql-error-after-creating-a-schedule-change.md)
       - V1.1.27 {#v1-1-27}
@@ -403,9 +403,9 @@ ht-degree: 0%
          - [ACSD-52148: l’accesso amministratore Google v3 reCAPTCHA a volte non riesce](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-52148-google-v3-recaptcha-admin-login-fails-occasionally.md)
          - [ACSD-51408: lo stato dell&#39;articolo dell&#39;ordine è impostato su inevaso](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51408-order-item-status-is-set-to-backordered.md)
          - [ACSD-50512: errore durante l’aggiornamento della data di inizio per un aggiornamento scaricabile della gestione temporanea del prodotto](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
-         - [ACSD-50895: i tag GTM Google Analytics 3 non vengono attivati se Google Analytics 4 GTM non è configurato](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
+         - [ACSD-50895: i tag GTM di Google Analytics 3 non vengono attivati se Google Analytics 4 GTM non è configurato](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471: l’utente amministratore non può salvare l’aggiornamento pianificato per il prodotto in bundle](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120: cache delle richieste di GraphQL GET non cancellata per le pagine CMS che contengono blocchi di CMS](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120: GraphQL GET richiede la cache non cancellata per le pagine CMS che contengono blocchi CMS](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700: errore nel cambiare le visualizzazioni dello store nella pagina di modifica del prodotto scaricabile](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735: lo stato dell&#39;articolo dell&#39;ordine non è impostato correttamente su [!UICONTROL Ordered] quando lo stock di prodotto è 0](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: impossibile ordinare la pagina del catalogo per attributo personalizzato di tipo A discesa](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -454,7 +454,7 @@ ht-degree: 0%
          - [ACSD-53176: la regola prodotto con è una delle condizioni non corrisponde](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-53176-product-rule-with-is-one-of-condition-do-not-match.md)
          - [ACSD-47875: impossibile aggiungere il prodotto al carrello per l’ambito di visualizzazione del negozio con gestione dell’inventario](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-47875-unable-to-add-product-to-customer-cart-for-store-view-scope-with-inventory-management.md)
          - [ACSD-51666: errore &quot;La sessione è scaduta, effettua di nuovo l’accesso.&quot; dopo l’accesso](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-51666-error-session-has-expired-please-login-again.md)
-         - [ACSD-52906: risoluzione del problema relativo ai cookie X-Magento-Vary per il caching dei clienti connessi](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52906-resolving-x-magento-vary-cookie-issue-logged-in-customer-caching.md)
+         - [ACSD-52906: Risoluzione del problema relativo ai cookie X-Magento-Vary per il caching dei clienti connessi](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52906-resolving-x-magento-vary-cookie-issue-logged-in-customer-caching.md)
       - v1.1.37 {#v1-1-37}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.37](quality-patches-tool/patches-available-in-qpt/v1-1-37/overview.md)
          - [ACSD-52613: la cache e gli indici vengono aggiornati senza aggiornamenti](quality-patches-tool/patches-available-in-qpt/v1-1-37/acsd-52613-cache-and-indexes-are-refreshed-with-no-updates.md)
@@ -623,7 +623,7 @@ ht-degree: 0%
          - [ACSD-58442: risolve il problema per cui i dispositivi con larghezza di 768 px venivano trattati come dispositivi mobili, causando il caricamento di menu e intestazioni nella visualizzazione per dispositivi mobili non desktop](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop.md)
          - [ACSD-48210: l’attributo di ambito specifico della vista archivio sostituisce i valori globali](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
          - [ACSD-59280: Errore ReflectionUnionType::getName() nelle installazioni 2.4.4-pX](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
-         - [ACSD-60303: problema di posizionamento dell’ordine amministratore risolto con la minimizzazione dei HTML abilitata](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
+         - [ACSD-60303: problema di posizionamento dell’ordine amministratore risolto con la minimizzazione del HTML abilitata](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
       - v1.1.51 {#v1-1-51}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
          - [ACSD-60234: [!DNL PayPal] mostra un importo errato quando viene applicato lo sconto](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-paypal-shows-an-incorrect-amount-when-discount-is-applied.md)
@@ -733,6 +733,7 @@ ht-degree: 0%
          - [ACSD-48570: risoluzione del problema di collegamento per reimpostazione password amministratore con codice store nell’URL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299: il prezzo speciale di un prodotto configurabile non viene visualizzato nella vetrina](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325: &quot;Errore di sintassi: errore &lt; EOF > imprevisto&quot; durante l&#39;invio di una richiesta vuota [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
+         - [ACSD-63578: se si fa clic sull&#39;icona [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU], lo SKU non viene rimosso](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329: i valori predefiniti per i campi di data e ora non vengono impostati durante la creazione di prodotti con API REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
    - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Riferimento strumenti della riga di comando {#cli-reference}
