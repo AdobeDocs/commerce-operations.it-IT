@@ -3,9 +3,9 @@ title: Configurare l’applicazione
 description: Scopri la configurazione post-installazione richiesta per le distribuzioni Adobe Commerce on-premise.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: e737ca014e90860b8ab023487625b07c0eeb1222
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,14 @@ Per ulteriori informazioni, consulta una delle seguenti sezioni:
 * [Procedura: esercitazione del comando di rotazione del registro con dieci esempi](https://www.thegeekstuff.com/2010/07/logrotate-examples)
 * [Stack Exchange](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 * Pagina man [`logrotate`](https://linuxconfig.org/logrotate-8-manual-page)
+
+>[!AVAILABILITY]
+>
+>Le seguenti informazioni sulla disponibilità si applicano ai progetti Adobe Commerce on Cloud Infrastructure:
+>
+>* Gli ambienti Starter non dispongono di una rotazione del registro.
+>
+>* Non è possibile configurare la rotazione dei registri negli ambienti di integrazione Pro. Devi implementare una soluzione/script personalizzato e [configurare il cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) per eseguire lo script in base alle esigenze.
 
 ### Imposta le regole iptables per consentire a vari servizi di comunicare
 
