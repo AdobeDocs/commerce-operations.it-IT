@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 24cce88e5daccd8ad50e01b869f2682722cb8052
+source-git-commit: fa23ca7a760f25e6b77b94af15eec7d8a88e880e
 workflow-type: tm+mt
-source-wordcount: '24820'
+source-wordcount: '25023'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,15 @@ ht-degree: 0%
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per Magento Open Source, consulta le [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.60 {#v1-1-60}
+
+* **ACSD-63323** (per Adobe Commerce >=2.4.7 &lt;2.4.8) - Risolve il problema relativo al mancato funzionamento dell&#39;opzione **[!UICONTROL Select All]** durante l&#39;aggiunta di prodotti a una categoria. Inoltre, assicura che la paginazione e l’etichetta del conteggio dei record funzionino correttamente quando si aggiungono prodotti a una categoria tramite la griglia a comparsa.
+* **ACSD-63992** (per Adobe Commerce >=2.4.4 &lt;2.4.8) - Risolve un problema che impediva la corretta applicazione di una regola del prezzo del carrello con un coupon e una condizione basata su un metodo di spedizione tramite l&#39;interfaccia utente di amministrazione.
+* **ACSD-64111** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corregge il problema che si verifica in caso di errore durante l&#39;impostazione delle condizioni nidificate per un componente prodotto in [!DNL Page Builder].
+* **ACSD-64137** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corregge il problema per cui la ricerca di percorsi di prelievo per codice postale non funziona correttamente per la localizzazione olandese.
+* **ACSD-64149** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Risolve il problema relativo al salvataggio di un segmento di clienti con una condizione di intervallo di date quando viene modificata solo una delle date.
+* Versioni aggiornate: **MDVA-12304**, **ACSD-45049**, **MDVA-43824**, **ACSD-46192**, **ACSD-50368**, **ACSD-52133**, **ACSD-47657**, **ACSD-51819**, **ACSD-54966-V2**, **ACSD-55628**, **ACSD-45049**, **ACSD-63242**
 
 ## v1.1.59 {#v1-1-59}
 
