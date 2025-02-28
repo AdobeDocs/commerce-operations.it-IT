@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: f92cdabf58cf9f95c57312f7d3efb2b2ad098e2e
+source-git-commit: 9c2a1aea2fdadb12998773c324560faf6872bd82
 workflow-type: tm+mt
-source-wordcount: '7055'
+source-wordcount: '7069'
 ht-degree: 0%
 
 ---
@@ -740,6 +740,7 @@ ht-degree: 0%
          - [ACSD-64112: l&#39;esecuzione cron indexer_update_all_views non riesce quando è impostato MAGE_INDEXER_THREADS_COUNT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
          - [ACSD-63454: il valore predefinito per gli attributi a discesa e Selezione multipla non viene salvato correttamente nel database](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
          - [ACSD-63870: il cliente non si è disconnesso correttamente durante la modifica dello stato della società](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
+         - [ACSD-64212: ordine non collegato a un account cliente creato tramite [!DNL GraphQL] dopo aver effettuato l&#39;ordine](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account.md)
          - [ACSD-63793: i processi di importazione interferiscono tra loro in diverse schede del browser](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
          - [ACSD-63574: l&#39;aggiunta dell&#39;inserzione [!UICONTROL Bundle Product] al blocco tramite [!DNL Page Builder] genera un errore](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
    - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
