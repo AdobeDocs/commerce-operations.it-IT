@@ -2,9 +2,9 @@
 title: Requisiti di sistema
 description: Utilizza questo riferimento per identificare le dipendenze software richieste testate con le versioni di Adobe Commerce.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 63c73a34eb6c61c83f00761e0510108485687596
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,15 @@ ht-degree: 0%
 
 Di seguito sono riepilogate le dipendenze software e i servizi testati per Adobe Commerce.
 
-Esistono alcune differenze nelle dipendenze di Commerce dall’infrastruttura Cloud. Il supporto per la versione del servizio e la compatibilità per l’infrastruttura cloud di Adobe Commerce è determinato dai servizi testati e distribuiti negli ambienti cloud ospitati e talvolta differisce dalle versioni supportate dalle distribuzioni Adobe Commerce on-premise. Ad esempio, l’Elasticsearch 7.17 è supportato per Commerce 2.4.4 per le distribuzioni on-premise, mentre OpenSearch 1.2 è supportato per Commerce 2.4.4 sull’infrastruttura cloud.
+Esistono alcune differenze nelle dipendenze di Commerce dall’infrastruttura Cloud. Il supporto per la versione del servizio e la compatibilità per l’infrastruttura cloud di Adobe Commerce è determinato dai servizi testati e distribuiti negli ambienti cloud ospitati e talvolta differisce dalle versioni supportate dalle distribuzioni Adobe Commerce on-premise. Ad esempio, Elasticsearch 7.17 è supportato per Commerce 2.4.4 per le distribuzioni on-premise, ma OpenSearch 1.2 è supportato per Commerce 2.4.4 sull’infrastruttura cloud.
+
+>[!NOTE]
+>
+>I requisiti di sistema si applicano solo alle versioni rilasciate di Adobe Commerce. Beta o le versioni ad accesso anticipato non sono incluse. Per ulteriori informazioni sulle ultime versioni rilasciate di Adobe Commerce, consulta le [note sulla versione](../release/release-notes/overview.md).
 
 Le tabelle seguenti mostrano le versioni delle dipendenze software di terze parti testate da Adobe con specifiche versioni di Adobe Commerce.
 
-Adobe supporta solo la combinazione di requisiti di sistema descritti nelle tabelle seguenti. Ad esempio, 2.4.5 è completamente testato con MariaDB 10.4. L’Adobe consiglia di eseguire l’aggiornamento a MariaDB 10.4 prima di eseguire l’aggiornamento a 2.4.5.
+Adobe supporta solo la combinazione di requisiti di sistema descritti nelle tabelle seguenti. Ad esempio, 2.4.5 è completamente testato con MariaDB 10.4. Adobe consiglia di eseguire l’aggiornamento a MariaDB 10.4 prima di passare alla versione 2.4.5.
 
 >[!BEGINTABS]
 
@@ -121,7 +125,7 @@ Mail Transfer Agent (MTA) o un server SMTP. L&#39;infrastruttura Commerce on Clo
 
 ### Memoria
 
-L&#39;aggiornamento delle applicazioni e delle estensioni ottenute dalla Commerce Marketplace e da altre origini può richiedere fino a 2 GB di RAM. Se si utilizza un sistema con meno di 2 GB di RAM, creare un [file di scambio](https://support.magento.com/hc/en-us/articles/360032980432). In caso contrario, l&#39;aggiornamento potrebbe non riuscire.
+L’aggiornamento delle applicazioni e delle estensioni ottenute da Commerce Marketplace e da altre origini può richiedere fino a 2 GB di RAM. Se si utilizza un sistema con meno di 2 GB di RAM, creare un [file di scambio](https://support.magento.com/hc/en-us/articles/360032980432). In caso contrario, l&#39;aggiornamento potrebbe non riuscire.
 
 ### Sistemi operativi (Linux x86-64)
 
