@@ -3,13 +3,13 @@ title: 'ACSD-63454: il valore predefinito per gli attributi a discesa e Selezion
 description: Applica la patch ACSD-63454 per risolvere il problema di Adobe Commerce, in cui il valore predefinito per gli attributi a discesa e Selezione multipla non viene salvato correttamente nel database.
 feature: Attributes, Products
 role: Admin, Developer
-source-git-commit: 1c872ebeff05c0c84756d7abd7f43c4652032d3f
+exl-id: fa79a3bb-e615-44cb-8d84-da892f924fd0
+source-git-commit: cb73a5a346ec0e8acd59accf73605e25ef35c3ca
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63454: il valore predefinito per gli attributi [!UICONTROL Dropdown] e [!UICONTROL Multiple Select] non viene salvato correttamente nel database
 
@@ -35,19 +35,19 @@ Il valore predefinito per gli attributi [!UICONTROL Dropdown] e [!UICONTROL Mult
 
 <u>Passaggi da riprodurre</u>:
 
-1. Accedi al backend, passa a **[!UICONTROL Stores]** > [!UICONTROL Attributes] > **[!UICONTROL Product]**.
+1. Accedi al backend, passa a **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Product]**.
 1. Fare clic su **[!UICONTROL Add New Attribute]**.
 1. Nella scheda **[!UICONTROL Properties]**, impostare quanto segue:
-   * [!UICONTROL Default Label] = test
-   * [!UICONTROL Catalog Input Type for Store Owner]= [!UICONTROL Multiple Select]
-   * [!UICONTROL Manage Options]: aggiungere 2 opzioni senza selezionare **[!UICONTROL Is Default]**.
+   * **[!UICONTROL Default Label]**: *test*
+   * **[!UICONTROL Catalog Input Type for Store Owner]**: *[!UICONTROL Multiple Select]*
+   * **[!UICONTROL Manage Options]**: aggiungere due opzioni senza selezionare **[!UICONTROL Is Default]**.
 1. Fare clic su **[!UICONTROL Save Attribute]**.
-1. Verificare nel database che la colonna *default_value* sia vuota.
+1. Verificare nel database che la colonna `default_value` sia vuota.
 
    `select attribute_code, default_value from eav_attribute where attribute_code = 'test';`
 
 1. Tornare indietro e impostare una delle due opzioni come **[!UICONTROL Is Default]**.
-1. Controlla nuovamente il database per assicurarti che *default_value* ora contenga l&#39;ID opzione selezionato.
+1. Controllare nuovamente il database per verificare che `default_value` contenga ora l&#39;ID opzione selezionato.
 1. Tornate indietro e modificate l&#39;opzione di default selezionando l&#39;altra opzione.
 
 <u>Risultati previsti</u>:
