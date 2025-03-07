@@ -4,9 +4,9 @@ description: La patch ACSD-46869 risolve il problema che impedisce l’aggiornam
 feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
 exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
-source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
+source-git-commit: 470cee19ced38fb90a9565c8bb23e2f9fa97595a
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,4 @@ Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del m
 
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
-* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
-* [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
-
-Per informazioni sulle altre patch disponibili in [!DNL QPT], fare riferimento a [Patch disponibili in [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida dello strumento Patch di qualità.
+* [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.

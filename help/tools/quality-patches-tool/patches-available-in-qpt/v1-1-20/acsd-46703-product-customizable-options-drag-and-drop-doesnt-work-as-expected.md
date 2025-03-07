@@ -4,9 +4,9 @@ description: Questo articolo fornisce una soluzione per il problema in cui il tr
 feature: Products
 role: Developer
 exl-id: 38b9490a-c9d4-4f8e-b90f-69bf50a6b571
-source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
+source-git-commit: deb16062ed1e903655d49d8e835c2358377d63e3
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,6 @@ Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del m
 
 ## Lettura correlata
 
-Per ulteriori informazioni sullo strumento Patch di qualità, vedere:
+Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
-* [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
-* [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
-
-Per informazioni sulle altre patch disponibili in QPT, vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida dello strumento Patch di qualità.
+* [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.
