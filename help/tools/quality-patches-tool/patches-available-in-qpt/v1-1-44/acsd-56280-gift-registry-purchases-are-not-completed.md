@@ -1,16 +1,21 @@
 ---
-title: "ACSD-56280: gli acquisti del registro dei regali non sono completati"
+title: 'ACSD-56280: gli acquisti del registro dei regali non sono completati'
 description: Applicare la patch ACSD-56280 per risolvere il problema Adobe Commerce in cui gli acquisti del registro regali non sono completati
 feature: Checkout
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a79f789f-999f-4d11-b7ee-2c065b681efb
+source-git-commit: ab02be3396e68044e9356f89fba6b55aa880056f
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
 # ACSD-56280: gli acquisti del registro dei regali non sono completati
+
+>[!NOTE]
+>
+>Questa patch è sostituita da [ACSD-63283](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md).
 
 La patch ACSD-56280 risolve il problema che causa il mancato completamento degli acquisti del registro dei regali. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.44. L’ID della patch è ACSD-56280. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.
 
@@ -54,7 +59,7 @@ L&#39;ordine non è stato effettuato e l&#39;errore visualizzato è `Call to a m
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
