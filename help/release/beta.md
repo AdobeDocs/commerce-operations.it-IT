@@ -2,9 +2,9 @@
 title: Versioni di Beta
 description: Scopri le versioni beta di Adobe Commerce e come partecipare.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c29602d6f1619c0b32feb48843ec01b350a3ae32
+source-git-commit: e569e8106930882323ab3ab046a3db0ee1da1503
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,20 @@ L’accesso anticipato alle funzioni sviluppate da Adobe offre a clienti e partn
 ## Programmi Beta correnti
 
 Per un elenco dei programmi beta attivi, consulta le sezioni seguenti.
+
+### Adobe Commerce Optimizer
+
+Adobe Commerce Optimizer migliora la tua esperienza di e-commerce con una vetrina ad alte prestazioni, aumentando il traffico organico, il coinvolgimento dei clienti e i ricavi.
+
+Con Adobe Commerce Optimizer è possibile:
+
+- Aumenta e ridimensiona il catalogo senza riorganizzare l’intero stack commerce.
+- Acquisisci i dati del catalogo da qualsiasi origine.
+- Definire i canali e i criteri aziendali.
+- Crea ricerche e consigli personalizzati utilizzando IA e ML.
+- Visualizzare i dati fondamentali sulla disponibilità dei prodotti, compresi lo stato di sincronizzazione e i dati degli eventi storefront, per un&#39;implementazione e una risoluzione dei problemi accurate.
+
+[Ulteriori informazioni](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) su Adobe Commerce Optimizer. Se desideri partecipare al programma di accesso anticipato di Adobe Commerce Optimizer, invia una richiesta e-mail a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
 ### Funzionalità di ricerca avanzate per Live Search (Beta pubblico)
 
