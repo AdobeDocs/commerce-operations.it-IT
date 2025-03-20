@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fa23ca7a760f25e6b77b94af15eec7d8a88e880e
+source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
 workflow-type: tm+mt
-source-wordcount: '25023'
+source-wordcount: '25431'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,22 @@ ht-degree: 0%
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per Magento Open Source, consulta le [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.61 {#v1-1-61}
+
+* **ACP2E-3689** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corregge diversi problemi con la visualizzazione della struttura delle categorie su livelli più profondi e che riflettono relazioni ancoraggio/non ancoraggio.
+* **ACP2E-3705** (per Adobe Commerce >=2.4.7 &lt;2.4.8): è stato risolto un problema che impediva l&#39;esecuzione del cron `indexer_update_all_views` se `MAGE_INDEXER_THREADS_COUNT` era impostato.
+* **ACSD-63883** (per Adobe Commerce >=2.4.4 &lt;2.4.7-p4): è stato risolto il problema che causava la restituzione di un `items_count` errato nella risposta di GraphQL da parte dell&#39;elenco richieste di acquisto.
+* **ACSD-63974** (per Adobe Commerce >=2.4.4 &lt;2.4.8) - Corregge il problema relativo al caricamento della pagina dell&#39;elenco Richieste di acquisto che richiede troppo tempo in presenza di troppi elementi, aggiungendo una funzionalità di impaginazione alla griglia dell&#39;elenco Richieste di acquisto nella vetrina, che visualizza solo porzioni di record limitate al numero di record per pagina, anziché tutti i record contemporaneamente.
+* **ACSD-64178** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Risolve il problema relativo al caricamento lento della pagina di modifica del set di attributi se sono presenti migliaia di attributi di prodotto.
+* **ACSD-64209** (per Adobe Commerce >=2.4.4 &lt;2.4.8): è stato risolto il problema che causava il recupero da parte del modulo di pianificazione cron di tutti i preventivi negoziabili senza escludere quelli con stato **[!UICONTROL ordered]**, causando l&#39;attivazione di un messaggio e-mail o di messaggi e-mail.
+* **ACSD-64431** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - La mutazione `placeOrder` che contiene le informazioni sul codice del coupon nella richiesta non genera più un errore interno, ma mostra che l&#39;ordine è stato effettuato correttamente.
+* **ACSD-64467** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corregge il problema se l&#39;editor WYSIWYG appare vuoto dopo il salvataggio di una descrizione di categoria a livello di visualizzazione archivio.
+* **ACSD-64546** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corregge il problema relativo a un messaggio di errore generico nell&#39;interfaccia utente e a un&#39;eccezione *Array to string conversion* viene memorizzata nei registri durante la creazione delle etichette di spedizione UPS, assicurandosi che l&#39;errore effettivo venga visualizzato nell&#39;interfaccia utente e che il messaggio di errore corretto venga memorizzato nei registri.
+* **ACSD-64684** (per Adobe Commerce >=2.4.4 &lt;2.4.8) - Risolve il problema relativo a un errore di convalida durante la modifica e il salvataggio di una gift card con valore maggiore di *999* a causa della virgola (separatore delle migliaia) nel numero *mille (1.000)*.
+* Versioni aggiornate: **ACSD-49392**, **ACSD-50368**, **ACSD-51819**, **ACSD-54966-V2**, **ACSD-57003**, **ACSD-62979**, **ACSD-64112**
+* Sostituzione delle patch: **ACSD-49392**, **ACSD-58739**, **ACSD-62689**, **ACSD-64112**
+* Patch obsolete: **ACSD-46192**, **ACSD-52133**
 
 ## v1.1.60 {#v1-1-60}
 
