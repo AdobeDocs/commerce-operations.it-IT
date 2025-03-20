@@ -2,9 +2,9 @@
 title: Requisiti di sistema
 description: Utilizza questo riferimento per identificare le dipendenze software richieste testate con le versioni di Adobe Commerce.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 0d8dcfd7064488787ddd0ff54c82c77f3e4d1cfb
+source-git-commit: ca0c47cf9882bccbc55aca786f3e6615503662f3
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,9 @@ L’aggiornamento delle applicazioni e delle estensioni ottenute da Commerce Mar
 
 ### Sistemi operativi (Linux x86-64)
 
-Distribuzioni Linux, come RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian e simili. Microsoft Windows e macOS non sono supportati.
+Distribuzioni Linux, come RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian e simili.
+
+Microsoft Windows e macOS sono **non** supportati.
 
 Per alcune operazioni Adobe Commerce richiede i seguenti strumenti di sistema:
 
