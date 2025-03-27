@@ -2,9 +2,9 @@
 title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
+source-git-commit: 93c9eb8865aa53ec784d47fd66ca97d1941b4604
 workflow-type: tm+mt
-source-wordcount: '25431'
+source-wordcount: '25682'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ ht-degree: 0%
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per Magento Open Source, consulta le [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.62 {#v1-1-62}
+
+* **ACSD-63406** (per Adobe Commerce e Magento Open Source >=2.4.4-p9 &lt;2.4.5 || >=2,4,5-p8 &lt;2,4,6 || >=2.4.6-p6 &lt;2.4.8) - Corregge il problema per cui le virgolette persistenti scadute non vengono cancellate da alcun processo cron durante l&#39;esecuzione del processo cron `persistent_clear_expired`.
+* **ACSD-63520** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corregge il problema per cui le immagini aggiunte tramite **[!UICONTROL Configurations]** nel pannello di amministrazione non rispettano il limite di dimensione massima per il caricamento.
+* **ACSD-64523** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8): è stato risolto il problema che consentiva la creazione di nuovi prodotti senza nome tramite il processo di importazione (admin o API), interrompendo l&#39;interfaccia di amministrazione e generando prodotti non validi.
+* **ACSD-64532** (per Adobe Commerce e Magento Open Source >=2.4.6-p2 &lt;2.4.8) - Corregge il problema per cui una variabile ENV impostata su &quot;false&quot; viene trattata come una stringa &quot;false&quot; invece di un valore booleano false.
+* **ACSD-64592** (per Adobe Commerce >=2.4.4 &lt;2.4.8) - Corregge il problema per cui il collegamento della richiesta di risarcimento dall&#39;e-mail per una gift card in negozi non predefiniti ha sempre reindirizzato la richiesta di rimborso della gift card al sito Web predefinito.
+* **ACSD-65164** (per Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.8) - Corregge il problema relativo al messaggio di errore *Alcune delle opzioni selezionate per l&#39;elemento non sono attualmente disponibili* si verifica quando si riordina un prodotto configurabile con una singola opzione personalizzata selezionata per la casella di controllo.
+* **ACSD-64732** (per Adobe Commerce >=2.4.4 &lt;2.4.8) - Corregge il problema relativo ai controller di terze parti non memorizzati correttamente nella cache con i segmenti dei clienti.
 
 ## v1.1.61 {#v1-1-61}
 
