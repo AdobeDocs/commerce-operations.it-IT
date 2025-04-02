@@ -4,7 +4,7 @@ description: Applica la patch ACSD-55100 per risolvere il problema di Adobe Comm
 feature: GraphQL, Products, Search
 role: Admin, Developer
 exl-id: f08b62b9-ed56-4eca-b7e7-6e2bd99df01f
-source-git-commit: ec05b041c7af477abd6d3ade6ea95fed5065f2fa
+source-git-commit: b8c2c28f126360fe15bd1a49c37560b7d220f4f2
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >È stata rilasciata una patch aggiornata ([ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)) per risolvere lo stesso problema per le versioni 2.4.6 - 2.4.6-p8. Per ulteriori dettagli, vedere [ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md).
 
-La patch ACSD-55100 risolve il problema per cui [!DNL GraphQL] non restituisce prodotti oltre *10k* nei risultati di ricerca. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.46. L’ID della patch è ACSD-55100. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.
+La patch ACSD-55100 risolve il problema per cui [!DNL GraphQL] non restituisce prodotti oltre *10k* nei risultati di ricerca. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.46. L’ID della patch è ACSD-55100. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.
 
 ## Prodotti e versioni interessati
 
@@ -123,7 +123,7 @@ Impossibile ottenere altri prodotti da mostrare dopo il batch *10k*.
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
