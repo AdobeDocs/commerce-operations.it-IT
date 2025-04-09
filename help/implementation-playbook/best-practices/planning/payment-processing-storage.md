@@ -4,7 +4,7 @@ description: Scopri come elaborare e memorizzare in modo sicuro i dettagli di pa
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -53,4 +53,4 @@ Il metodo consigliato per gestire i dati del titolare della carta consiste nel t
 
 ## Informazioni aggiuntive
 
-Se stai cercando soluzioni di pagamento consigliate per Adobe, considera [Servizi di pagamento Adobi](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
+Se stai cercando soluzioni di pagamento consigliate da Adobe, prendi in considerazione [Servizi di pagamento Adobe](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html).

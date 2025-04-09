@@ -1,8 +1,8 @@
 ---
-source-git-commit: a8f4df78dfec2a1e94d650cac03c7fba21f398e8
+source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
 workflow-type: tm+mt
-source-wordcount: '8072'
-ht-degree: 0%
+source-wordcount: '8253'
+ht-degree: 1%
 
 ---
 # bin/magento (Adobe Commerce on-premise)
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Versione**: 2.4.7-p1
+**Versione**: 2.4.8
 
-Questo riferimento contiene 141 comandi disponibili tramite lo strumento della riga di comando `bin/magento`.
+Questo riferimento contiene 145 comandi disponibili tramite lo strumento della riga di comando `bin/magento`.
 L&#39;elenco iniziale viene generato automaticamente utilizzando il comando `bin/magento list` in Adobe Commerce.
 
 ## Generale
 
 Utilizzare la guida [&quot;Add CLI command&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) per aggiungere un comando CLI personalizzato.
 
-È possibile chiamare i comandi CLI `bin/magento` utilizzando i collegamenti anziché il nome completo del comando. Ad esempio, è possibile chiamare `bin/magento setup:upgrade` utilizzando `bin/magento s:up`, `bin/magento s:upg`. Per informazioni su come utilizzare i tasti di scelta rapida con qualsiasi comando CLI, vedere [sintassi dei collegamenti](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax).
+È possibile chiamare i comandi CLI `bin/magento` utilizzando i collegamenti anziché il nome completo del comando. Ad esempio, è possibile chiamare `bin/magento setup:upgrade` utilizzando `bin/magento s:up`, `bin/magento s:upg`. Vedere [sintassi](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) dei collegamenti per informazioni su come utilizzare i collegamenti con qualsiasi comando CLI.
 
 Questa documentazione di riferimento viene generata dal codice sorgente dell’applicazione. Per modificare la documentazione, è necessario aprire una richiesta di pull per il comando corrispondente nell&#39;archivio [codebase](https://github.com/magento) pertinente. Per ulteriori informazioni, consulta [Contributi codice](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
@@ -37,7 +37,7 @@ Visualizza la Guida per il comando specificato. Se non viene assegnato alcun com
 
 #### `--quiet`, `-q`
 
-Non inviare messaggi
+Non emettere alcun messaggio
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -104,7 +104,7 @@ Array di token di input (ad esempio, COMP_WORDS o argv)
 
 #### `--current`, `-c`
 
-Indice dell&#39;array &quot;input&quot; in cui si trova il cursore (ad esempio, COMP_CWORD)
+L&#39;indice della matrice di &quot;input&quot; in cui si trova il cursore (ad esempio, COMP_CWORD)
 
 - Richiede un valore
 
@@ -116,7 +116,7 @@ Versione API dello script di completamento
 
 #### `--symfony`, `-S`
 
-obsoleto
+Deprecato
 
 - Richiede un valore
 
@@ -127,7 +127,7 @@ obsoleto
 bin/magento completion [--debug] [--] [<shell>]
 ```
 
-Scarica lo script di completamento della shell
+Eseguire il dump dello script di completamento della shell
 
 ```
 The completion command dumps the shell completion script required
@@ -162,15 +162,15 @@ Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
 
 #### `shell`
 
-Se non specificato, verrà utilizzato il tipo di shell (ad esempio &quot;bash&quot;) e il valore dell’env var &quot;$SHELL&quot;
+Il tipo di shell (ad esempio &quot;bash&quot;), il valore del &quot;$SHELL&quot; env var verrà utilizzato se questo non viene dato
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--debug`
 
-Suddividi il registro di debug di completamento
+Eseguire il tail del debug di completamento
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -206,7 +206,7 @@ Nome del comando
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--format`
 
@@ -367,17 +367,17 @@ Crea un amministratore
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--admin-user`
 
-(Obbligatorio) Utente amministratore
+(Obbligatorio) Amministratore utente
 
 - Richiede un valore
 
 #### `--admin-password`
 
-(Obbligatorio) Password amministratore
+(Obbligatorio) Amministratore password
 
 - Richiede un valore
 
@@ -401,7 +401,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare Magento parametri di inizializzazione Per esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -430,7 +430,7 @@ Nome utente amministratore da sbloccare
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `app:config:dump`
@@ -439,13 +439,13 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento app:config:dump [<config-types>...]
 ```
 
-Crea dump dell’applicazione
+Crea dump di applicazione
 
 ### Argomenti
 
 #### `config-types`
 
-Elenco separato da spazi dei tipi di configurazione o ometti di eseguire il dump di tutti [ambiti, sistema, temi, i18n]
+Elenco separato da spazi dei tipi di configurazione o ometti di eseguire il dump di tutti [ambiti, temi, sistema, i18n]
 
 - Predefinito: `[]`
 - Array
@@ -487,7 +487,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password PASSWORD]
 ```
 
-Migrazione di schede memorizzate da un database del Magento 1
+Migrazione di schede memorizzate da un database Magento 1
 
 ### Opzioni
 
@@ -546,6 +546,19 @@ aggiungere o sostituire i parametri del bootstrap
 - Richiede un valore
 
 
+## `cache:clean:payment_services_merchant_scopes`
+
+```bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
+
+Pulisci cache ambiti esercente servizi di pagamento
+
+### Opzioni
+
+Per le opzioni globali, vedi [Opzioni globali](#global-options).
+
+
 ## `cache:disable`
 
 ```bash
@@ -565,11 +578,11 @@ Elenco separato da spazi dei tipi di cache o omesso da applicare a tutti i tipi 
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--bootstrap`
 
-aggiungere o sostituire i parametri del bootstrap
+Aggiungi o sovrascrivi parametri del bootstrap
 
 - Richiede un valore
 
@@ -614,7 +627,7 @@ Svuota la memoria cache utilizzata dai tipi di cache
 
 #### `types`
 
-Elenco separato da spazi dei tipi di cache o omesso da applicare a tutti i tipi di cache.
+Elenco dei tipi di cache separati da spazi oppure omettere di applicarlo a tutti i tipi di cache.
 
 - Predefinito: `[]`
 - Array
@@ -695,7 +708,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento cms:wysiwyg:restrict <restrict>
 ```
 
-Imposta se applicare la convalida del contenuto di User HTML o mostrare un avviso
+Imposta se applicare la convalida del contenuto HTML dell’utente o mostrare un avviso
 
 ### Argomenti
 
@@ -804,14 +817,14 @@ Valore di blocco che impedisce la modifica in Admin (verrà salvato in app/etc/e
 
 #### `--lock-config`, `-c`
 
-Blocca e condividi il valore con altre installazioni, impedisce le modifiche in Admin (verrà salvato in app/etc/config.php)
+Blocca e condividi il valore con altre installazioni, impedisce la modifica nell&#39;amministratore (verrà salvato in app / etc / config.php)
 
 - Predefinito: `false`
 - Non accetta un valore
 
 #### `--lock`, `-l`
 
-Obsoleto, utilizza invece l’opzione —lock-env.
+Obsoleto, utilizza invece l&#39;opzione --lock-env.
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -837,7 +850,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 
 #### `--scope`
 
-Ambito per la configurazione, se non specificato, verrà utilizzato l’ambito &quot;predefinito&quot;
+Ambito di configurazione, se non specificato, verrà utilizzata la ambito &#39;predefinita&#39;
 
 - Predefinito: `default`
 - Accetta un valore
@@ -856,15 +869,15 @@ Codice ambito (obbligatorio solo se l&#39;ambito non è `default`)
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
 
-Genera e installa crontab per l&#39;utente corrente
+Genera e installa crontab per il utente corrente
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--force`, `-f`
 
-Forza attività di installazione
+Forza installazione delle attività
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -887,7 +900,7 @@ Rimuove le attività da crontab
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `cron:run`
@@ -896,28 +909,28 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootstrap BOOTSTRAP]
 ```
 
-Esegue i processi per pianificazione
+Esegue i processi per programmare
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--group`
 
-Esegui processi solo dal gruppo specificato
+Esegui processi solo da un gruppo specificato
 
 - Richiede un valore
 
 #### `--exclude-group`
 
-Escludi processi dal gruppo specificato
+Escludi lavori dal gruppo specificato
 
 - Predefinito: `[]`
 - Accetta più valori
 
 #### `--bootstrap`
 
-Aggiungere o sostituire i parametri del bootstrap
+Aggiungi o sovrascrivi parametri del bootstrap
 
 - Richiede un valore
 
@@ -928,11 +941,11 @@ Aggiungere o sostituire i parametri del bootstrap
 bin/magento customer:hash:upgrade
 ```
 
-Aggiorna l’hash del cliente in base all’algoritmo più recente
+Aggiorna l&#39;hash del cliente secondo l&#39;algoritmo più recente
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `deploy:mode:set`
@@ -941,7 +954,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 ```
 
-Impostare la modalità applicazione.
+Imposta applicazione modalità.
 
 ### Argomenti
 
@@ -957,7 +970,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 
 #### `--skip-compilation`, `-s`
 
-Ignora la cancellazione e la rigenerazione del contenuto statico (codice generato, CSS preelaborato e risorse in pub/static/)
+Salta la cancellazione e la rigenerazione dei contenuto statici (codice generato, CSS pre-elaborato e risorse in pub/static/)
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -979,7 +992,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 ## `dev:di:info`
 
 ```bash
-bin/magento dev:di:info <class>
+bin/magento dev:di:info <class> [<area>]
 ```
 
 Fornisce informazioni sulla configurazione di Iniezione dipendenze per il comando.
@@ -991,6 +1004,11 @@ Fornisce informazioni sulla configurazione di Iniezione dipendenze per il comand
 Nome classe
 
 - Obbligatorio
+
+
+#### `area`
+
+Indicativo località
 
 ### Opzioni
 
@@ -1089,14 +1107,14 @@ Registra tutte le query. [true\|false]
 
 #### `--query-time-threshold`
 
-Soglie di tempo per le query.
+Soglie temporali per le query.
 
 - Predefinito: `0.001`
 - Accetta un valore
 
 #### `--include-call-stack`
 
-Include lo stack di chiamate. [true\|false]
+Includi stack di chiamate. [true\|false]
 
 - Predefinito: `true`
 - Accetta un valore
@@ -1108,7 +1126,7 @@ Include lo stack di chiamate. [true\|false]
 bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA] [--theme THEME] [--] [<file>...]
 ```
 
-Raccoglie e pubblica i file di origine per il tema.
+Raccoglie e pubblica i file sorgente per il tema.
 
 ### Argomenti
 
@@ -1159,7 +1177,7 @@ Tema: [Fornitore/tema]
 bin/magento dev:template-hints:disable
 ```
 
-Disattiva gli hint modello front-end. Potrebbe essere necessario svuotare la cache.
+Disabilita i suggerimenti per i modelli di frontend. Potrebbe essere necessario uno svuotamento della cache.
 
 ### Opzioni
 
@@ -1242,7 +1260,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 
 #### `--ide`
 
-Formato di generazione del catalogo. Supportato: [phpstorm, vscode]
+Formato in cui verrà generato il catalogo. Supportati: [phpstorm, vscode]
 
 - Predefinito: `phpstorm`
 - Richiede un valore
@@ -1254,7 +1272,7 @@ Formato di generazione del catalogo. Supportato: [phpstorm, vscode]
 bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 ```
 
-Converte i file XML utilizzando i fogli di stile XSL
+Converte i file XML utilizzando fogli di stile XSL
 
 ### Argomenti
 
@@ -1324,7 +1342,7 @@ Nomi di dominio
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `downloadable:domains:show`
@@ -1337,7 +1355,61 @@ Visualizza whitelist domini scaricabili
 
 ### Opzioni
 
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
+
+
+## `encryption:data:list-re-encryptors`
+
+```bash
+bin/magento encryption:data:list-re-encryptors
+```
+
+Mostra un elenco di ricodificatori di dati disponibili.
+
+### Opzioni
+
 Per le opzioni globali, vedi [Opzioni globali](#global-options).
+
+
+## `encryption:data:re-encrypt`
+
+```bash
+bin/magento encryption:data:re-encrypt [<encryptors>...]
+```
+
+Crittografa nuovamente i dati crittografati utilizzando la chiave di crittografia corrente.
+
+### Argomenti
+
+#### `encryptors`
+
+Elenco separato da spazi dei ri-crittografatori da utilizzare.
+
+- Predefinito: `[]`
+- Array
+
+### Opzioni
+
+Per le opzioni globali, vedi [Opzioni globali](#global-options).
+
+
+## `encryption:key:change`
+
+```bash
+bin/magento encryption:key:change [-k|--key [KEY]]
+```
+
+Modifica la chiave di crittografia nel file env.php.
+
+### Opzioni
+
+Per le opzioni globali, vedi [Opzioni globali](#global-options).
+
+#### `--key`, `-k`
+
+La chiave deve essere una stringa di 32 caratteri. Se non viene fornito, verrà generata una chiave casuale.
+
+- Accetta un valore
 
 
 ## `encryption:payment-data:update`
@@ -1359,7 +1431,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCRIPTION]]events:provider:create 
 ```
 
-Creare un provider di eventi personalizzato in Adobe I/O Events per questa istanza. Se non si specificano le opzioni di etichetta e descrizione, è necessario definirle nel file di sistema app/etc/event-types.json.
+Crea un provider di eventi personalizzato in Adobe I/O Events per questa istanza. Se non si specificano le opzioni di etichetta e descrizione, è necessario definirle nel file di sistema app/etc/event-types.json.
 
 ### Opzioni
 
@@ -1459,7 +1531,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento events:metadata:populate
 ```
 
-Crea metadati in Adobe I/O dall&#39;elenco di configurazione (configurazioni XML e di applicazioni)
+Crea metadati in Adobe I/O dall’elenco di configurazione (configurazioni XML e di applicazioni)
 
 ### Opzioni
 
@@ -1510,7 +1582,7 @@ Codice evento
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--force`, `-f`
 
@@ -1528,13 +1600,13 @@ L’elenco dei campi nel payload dei dati dell’evento.
 
 #### `--parent`
 
-Il codice evento padre di una sottoscrizione evento con regole.
+Il codice evento padre di una sottoscrizione evento con regole o come alias.
 
 - Richiede un valore
 
 #### `--rules`
 
-L’elenco delle regole per la sottoscrizione dell’evento, in cui ogni regola è formattata come &quot;campo\|operatore\|valore&quot;.
+L’elenco delle regole per la sottoscrizione dell’evento, in cui ogni regola è formattata come &quot;campo\|operatore\|valore&quot;. Per utilizzare questa opzione, è necessario specificare anche l&#39;opzione &quot;parent&quot;.
 
 - Predefinito: `[]`
 - Richiede un valore
@@ -1628,7 +1700,7 @@ Percorso (compreso il nome del file) di un file di output. Se non viene specific
 
 #### `--magento`, `-m`
 
-Utilizzate il parametro —magento per analizzare la base di codice del Magento corrente. Ometti il parametro se è specificata una directory.
+Utilizzate il parametro —magento per analizzare la base di codice Magento corrente. Ometti il parametro se è specificata una directory.
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1653,24 +1725,24 @@ Percorso del file del dizionario di origine con le traduzioni
 
 #### `locale`
 
-Impostazioni locali di destinazione per il dizionario, ad esempio &quot;de_DE&quot;
+Target impostazioni internazionali del dizionario, ad esempio &quot;de_DE&quot;
 
 - Obbligatorio
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--mode`, `-m`
 
-Modalità di salvataggio per il dizionario - &quot;replace&quot; - sostituisci Language Pack con un nuovo - &quot;merge&quot; - unisci pacchetti di lingue, per impostazione predefinita &quot;replace&quot;
+Salva modalità per dizionario - &quot;sostituisci&quot; - sostituisci il Language Pack con uno nuovo - &quot;unisci&quot; - unisci i pacchetti linguistici, per impostazione predefinita &quot;sostituisci&quot;
 
 - Predefinito: `replace`
 - Richiede un valore
 
 #### `--allow-duplicates`, `-d`
 
-Utilizza il parametro —allow-duplicates per consentire il salvataggio di duplicati di traduzione. In caso contrario, ometti il parametro.
+Utilizzare il parametro --allow-duplicates per consentire il salvataggio di duplicati di traduzione. In caso contrario, omettere il parametro.
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -1739,7 +1811,7 @@ Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli in
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `indexer:reset`
@@ -1754,14 +1826,14 @@ Reimposta lo stato dell&#39;indicizzatore su non valido
 
 #### `index`
 
-Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli indici.
+Elenco di tipi di indice separati da spazi o omettere di applicarlo a tutti gli indici.
 
 - Predefinito: `[]`
 - Array
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `indexer:set-dimensions-mode`
@@ -1770,7 +1842,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
 
-Imposta modalità Dimension indicizzatore
+Modalità Imposta dimensioni indicizzatore
 
 ### Argomenti
 
@@ -1800,12 +1872,12 @@ Imposta il tipo di modalità indice
 
 #### `mode`
 
-Tipo di modalità indicizzatore [realtime|schedule]
+Tipo modalità [indicizzatore in tempo reale|programmare]
 
 
 #### `index`
 
-Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli indici.
+Elenco di tipi di indice separati da spazi o omettere di applicarlo a tutti gli indici.
 
 - Predefinito: `[]`
 - Array
@@ -1850,13 +1922,13 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento indexer:show-dimensions-mode [<indexer>...]
 ```
 
-Mostra modalità Dimension indicizzatore
+Mostra la modalità Dimension dell&#39;indicizzatore
 
 ### Argomenti
 
 #### `indexer`
 
-Elenco separato da spazi dei tipi di indice o omesso da applicare a tutti gli indici (catalog_product_price,catalogpermissions_category)
+Elenco di tipi di indice separati da spazi o omissione di applicarlo a tutti gli indici (catalog_product_price,catalogpermissions_category)
 
 - Predefinito: `[]`
 - Array
@@ -1916,7 +1988,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento info:adminuri
 ```
 
-Visualizza l&#39;URI di amministrazione del Magento
+Visualizza l&#39;URI di amministrazione di Magento
 
 ### Opzioni
 
@@ -1955,7 +2027,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
 
-Mostra il numero di dipendenze nel framework del Magento
+Mostra il numero di dipendenze nel framework Magento
 
 ### Opzioni
 
@@ -2032,7 +2104,7 @@ Visualizza l&#39;elenco dei fusi orari disponibili
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `inventory:reservation:create-compensations`
@@ -2054,11 +2126,11 @@ Elenco di argomenti retribuzione in formato &quot;:::&quot;
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--raw`, `-r`
 
-Uscita raw
+Output raw
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2099,7 +2171,7 @@ Definisce quanti ordini verranno caricati contemporaneamente
 
 #### `--raw`, `-r`
 
-Uscita raw
+Output raw
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2111,7 +2183,7 @@ Uscita raw
 bin/magento inventory-geonames:import <countries>...
 ```
 
-Scarica e importa i nomi geografici per l’algoritmo di selezione sorgente
+Scaricare e importare nomi geografici per l&#39;algoritmo di selezione della sorgente
 
 ### Argomenti
 
@@ -2126,7 +2198,7 @@ Elenco dei codici paese da importare
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `maintenance:allow-ips`
@@ -2135,7 +2207,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<ip>...]
 ```
 
-Imposta gli IP esenti dalla modalità di manutenzione
+Imposta gli IP esenti dalla modalità manutenzione
 
 ### Argomenti
 
@@ -2148,11 +2220,11 @@ Indirizzi IP consentiti
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--none`
 
-Cancella indirizzi IP consentiti
+Cancella gli indirizzi IP consentiti
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2166,7 +2238,7 @@ Aggiungi l&#39;indirizzo IP all&#39;elenco esistente
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare Magento parametri di inizializzazione Per esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -2177,7 +2249,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Disattiva la modalità di manutenzione
+Disabilita la modalità di manutenzione
 
 ### Opzioni
 
@@ -2192,7 +2264,7 @@ Indirizzi IP consentiti (utilizza &quot;nessuno&quot; per cancellare l’elenco 
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare Magento parametri di inizializzazione Per esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -2203,22 +2275,22 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Abilita la modalità di manutenzione
+Abilita la modalità manutenzione
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--ip`
 
-Indirizzi IP consentiti (utilizza &quot;nessuno&quot; per cancellare l’elenco IP consentiti)
+Indirizzi IP consentiti (utilizzate &#39;none&#39; per cancellare l&#39;elenco degli IP consentiti)
 
 - Predefinito: `[]`
 - Richiede un valore
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -2237,7 +2309,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -2325,7 +2397,7 @@ Cancellare i file di visualizzazione statica generati. Necessario, se i moduli d
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -2349,11 +2421,11 @@ Nome del modulo
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--force`, `-f`
 
-Ignora controllo dipendenze
+Verifica delle dipendenze di bypass
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2367,14 +2439,14 @@ Abilita tutti i moduli
 
 #### `--clear-static-content`, `-c`
 
-Cancellare i file di visualizzazione statica generati. Necessario, se i moduli dispongono di file di visualizzazione statica
+Cancella i file di visualizzazione statica generati. Necessario, se i moduli dispongono di file di visualizzazione statici
 
 - Predefinito: `false`
 - Non accetta un valore
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare Magento parametri di inizializzazione Per esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -2416,7 +2488,7 @@ Stampa solo moduli disattivati
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -2460,7 +2532,7 @@ Backup del codice e dei file di configurazione (esclusi i file temporanei)
 
 #### `--backup-media`
 
-Backup dei supporti
+Prendi media backup
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -2488,7 +2560,7 @@ Cancellare i file di visualizzazione statica generati. Necessario, se i moduli d
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -2505,7 +2577,7 @@ Controlla le voci nella coda di distribuzione e crea un marcatore di distribuzio
 
 #### `message`
 
-Distribuire il messaggio?
+Distribuire Invia messaggio?
 
 - Obbligatorio
 
@@ -2528,7 +2600,7 @@ Revisione
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `queue:consumers:list`
@@ -2545,7 +2617,7 @@ This command shows list of MessageQueue consumers.
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `queue:consumers:restart`
@@ -2554,7 +2626,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento queue:consumers:restart
 ```
 
-Riavvia consumer MessageQueue
+Riavvia gli utenti di MessageQueue
 
 ```
 Command put poison pill for MessageQueue consumers and force to restart them after next status check.
@@ -2562,7 +2634,7 @@ Command put poison pill for MessageQueue consumers and force to restart them aft
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `queue:consumers:start`
@@ -2571,7 +2643,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BATCH-SIZE] [--area-code AREA-CODE] [--single-thread] [--multi-process [MULTI-PROCESS]] [--pid-file-path PID-FILE-PATH] [--] <consumer>
 ```
 
-Avvia consumer MessageQueue
+Inizia consumer MessageQueue
 
 ```
 This command starts MessageQueue consumer by its name.
@@ -2671,7 +2743,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 ## `saas:resync`
 
 ```bash
-bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]
+bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync] [--by-ids BY-IDS] [--id-type ID-TYPE]
 ```
 
 Risincronizza i dati del feed con il servizio SaaS.
@@ -2726,6 +2798,18 @@ Continua la risincronizzazione dall&#39;ultima posizione memorizzata (questa opz
 - Predefinito: `false`
 - Non accetta un valore
 
+#### `--by-ids`
+
+Risincronizza parzialmente per elenco di identificatori forniti. (Questa opzione è applicabile ai prodotti, alle sostituzioni dei prodotti e ai feed dei prezzi)
+
+- Richiede un valore
+
+#### `--id-type`
+
+Tipo di identificatori per la risincronizzazione parziale (ad esempio: sku, productId, ecc.)
+
+- Richiede un valore
+
 
 ## `sampledata:deploy`
 
@@ -2733,7 +2817,7 @@ Continua la risincronizzazione dall&#39;ultima posizione memorizzata (questa opz
 bin/magento sampledata:deploy [--no-update]
 ```
 
-Distribuire moduli dati di esempio per installazioni di Magento basate su compositore
+Distribuire moduli dati di esempio per installazioni Magento basate su compositore
 
 ### Opzioni
 
@@ -2777,7 +2861,7 @@ Reimposta tutti i moduli dati di esempio per la reinstallazione
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `security:recaptcha:disable-for-user-forgot-password`
@@ -2786,11 +2870,11 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento security:recaptcha:disable-for-user-forgot-password
 ```
 
-Disattiva reCAPTCHA per modulo password dimenticata dall’utente amministratore
+Disabilita reCAPTCHA per l&#39;amministratore utente hai dimenticato password modulo
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `security:recaptcha:disable-for-user-login`
@@ -2799,11 +2883,11 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento security:recaptcha:disable-for-user-login
 ```
 
-Disabilita reCAPTCHA per il modulo di accesso utente amministratore
+Disattiva reCAPTCHA per il modulo utente login di amministrazione
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `security:tfa:google:set-secret`
@@ -2853,7 +2937,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento security:tfa:reset <user> <provider>
 ```
 
-Ripristina configurazione per un utente
+Reimposta configurazione per un utente
 
 ### Argomenti
 
@@ -2903,21 +2987,21 @@ flag modalità di sfondo
 
 #### `--workerNum`, `-wn`
 
-numero di processi di lavoro da avviare
+Numero di processi di lavoro da avviare
 
 - Predefinito: `4`
 - Accetta un valore
 
 #### `--dispatchMode`, `-dm`
 
-modalità di invio delle connessioni ai processi di lavoro
+Modalità di invio delle connessioni ai processi di lavoro
 
 - Predefinito: `3`
 - Accetta un valore
 
 #### `--maxRequests`, `-mr`
 
-numero massimo di richieste prima del riavvio del processo di lavoro
+Numero massimo di richieste prima del riavvio del processo di lavoro
 
 - Predefinito: `10000`
 - Accetta un valore
@@ -2970,7 +3054,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Esegue il backup della base di codice dell&#39;applicazione di Magento, del supporto e del database
+Esegue il backup della base di codice dell&#39;applicazione Magento, del supporto e del database
 
 ### Opzioni
 
@@ -2999,7 +3083,7 @@ Esegui backup completo del database
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -3007,32 +3091,14 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 ## `setup:config:set`
 
 ```bash
-bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 Crea o modifica la configurazione di distribuzione
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
-
-#### `--enable-debug-logging`
-
-Abilita registrazione debug
-
-- Richiede un valore
-
-#### `--enable-syslog-logging`
-
-Abilita registrazione syslog
-
-- Richiede un valore
-
-#### `--backend-frontname`
-
-Nome front-end (verrà generato automaticamente se mancante)
-
-- Richiede un valore
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--remote-storage-driver`
 
@@ -3044,7 +3110,7 @@ Driver di archiviazione remota
 
 Prefisso archiviazione remota
 
-- Predefinito: &quot;
+- Impostazione predefinita: &#39;&#39;
 - Richiede un valore
 
 #### `--remote-storage-endpoint`
@@ -3061,7 +3127,7 @@ Bucket di archiviazione remota
 
 #### `--remote-storage-region`
 
-Area di archiviazione remota
+Archiviazione remota area geografica
 
 - Richiede un valore
 
@@ -3076,7 +3142,7 @@ Chiave di accesso all&#39;archiviazione remota
 
 Chiave segreta di archiviazione remota
 
-- Predefinito: &quot;
+- Impostazione predefinita: &#39;&#39;
 - Richiede un valore
 
 #### `--remote-storage-path-style`
@@ -3086,21 +3152,39 @@ Stile percorso archiviazione remota
 - Predefinito: `0`
 - Richiede un valore
 
+#### `--backend-frontname`
+
+Nome front-end (verrà generato automaticamente se mancante)
+
+- Richiede un valore
+
+#### `--enable-debug-logging`
+
+Attivare debug registrazione
+
+- Richiede un valore
+
+#### `--enable-syslog-logging`
+
+Abilitare registrazione syslog
+
+- Richiede un valore
+
 #### `--id_salt`
 
 GraphQl Salt
 
 - Richiede un valore
 
-#### `--config-async`
+#### `--checkout-async`
 
-Abilitare il salvataggio asincrono della configurazione amministratore? 1 - Sì, 0 - No
+Abilitare l&#39;elaborazione degli ordini asincroni? 1 - Sì, 0 - No
 
 - Richiede un valore
 
-#### `--checkout-async`
+#### `--config-async`
 
-Abilitare l’elaborazione asincrona degli ordini? 1 - Sì, 0 - No
+Abilitare la configurazione amministratore asincrona Salva? 1 - Sì, 0 - No
 
 - Richiede un valore
 
@@ -3108,12 +3192,12 @@ Abilitare l’elaborazione asincrona degli ordini? 1 - Sì, 0 - No
 
 Host del server Amqp
 
-- Predefinito: &quot;
+- Impostazione predefinita: &#39;&#39;
 - Richiede un valore
 
 #### `--amqp-port`
 
-Porta server Amqp
+porta del server Amqp
 
 - Predefinito: `5672`
 - Richiede un valore
@@ -3191,7 +3275,7 @@ Nome database
 
 #### `--db-user`
 
-Nome utente server database
+Nome utente del server database
 
 - Richiede un valore
 
@@ -3240,7 +3324,7 @@ Host cache http
 
 #### `--db-ssl-key`
 
-Percorso completo del file della chiave client per stabilire la connessione db tramite SSL
+Percorso completo del file chiave client per stabilire la connessione db tramite SSL
 
 - Predefinito: &quot;
 - Richiede un valore
@@ -3256,7 +3340,7 @@ Percorso completo del file del certificato client per stabilire la connessione d
 
 Percorso completo del file del certificato del server per stabilire la connessione del database tramite SSL
 
-- Predefinito: &quot;
+- Impostazione predefinita: &#39;&#39;
 - Richiede un valore
 
 #### `--db-ssl-verify`
@@ -3293,6 +3377,12 @@ Password del server Redis
 #### `--session-save-redis-timeout`
 
 Timeout della connessione, in secondi
+
+- Richiede un valore
+
+#### `--session-save-redis-retries`
+
+Ridisattiva nuovi tentativi di connessione.
 
 - Richiede un valore
 
@@ -3376,7 +3466,7 @@ Durata minima sessione Redis, in secondi
 
 #### `--session-save-redis-max-lifetime`
 
-Durata massima sessione Redis, in secondi
+Redis max sessione a vita, in secondi
 
 - Richiede un valore
 
@@ -3388,7 +3478,7 @@ Redis Sentinel master
 
 #### `--session-save-redis-sentinel-servers`
 
-Server Redis Sentinel, separati da virgola
+Server Redis Sentinel, separati da virgole
 
 - Richiede un valore
 
@@ -3449,6 +3539,12 @@ Libreria di compressione da utilizzare [snappy,lzf,l4z,zstd,gzip] (lasciare vuot
 #### `--cache-backend-redis-use-lua`
 
 Imposta su 1 per abilitare lua (il valore predefinito è 0, disabilitato)
+
+- Richiede un valore
+
+#### `--cache-backend-redis-use-lua-on-gc`
+
+Imposta questo valore su 0 per disabilitare la funzione lua nella raccolta di oggetti inattivi (l&#39;impostazione predefinita è 1, abilitato)
 
 - Richiede un valore
 
@@ -3527,7 +3623,7 @@ Prefisso di blocco specifico per l&#39;installazione per evitare conflitti di bl
 
 #### `--lock-zookeeper-host`
 
-Host e porta per la connessione al cluster Zookeeper. Ad esempio: 127.0.0.1:2181
+Host e porta per la connessione al cluster Zookeeper. Esempio: 127.0.0.1:2181
 
 - Richiede un valore
 
@@ -3545,13 +3641,13 @@ Percorso in cui verranno salvati i blocchi di file.
 
 #### `--document-root-is-pub`
 
-Flag da mostrare: il pub è nella directory principale; può essere true o false solo
+Flag per mostrare se Pub è sulla radice, può essere solo true o false
 
 - Richiede un valore
 
 #### `--backpressure-logger`
 
-Gestore logger di backpression
+Gestore logger di contropressione
 
 - Richiede un valore
 
@@ -3587,13 +3683,13 @@ Numero Redis db
 
 #### `--backpressure-logger-redis-password`
 
-Password del server Redis
+password del server Redis
 
 - Richiede un valore
 
 #### `--backpressure-logger-redis-user`
 
-Utente server Redis
+utente del server Redis
 
 - Richiede un valore
 
@@ -3605,7 +3701,7 @@ Prefisso ID per le chiavi
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare Magento parametri di inizializzazione Per esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -3624,7 +3720,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -3752,7 +3848,7 @@ Connessione slave lag max consentita (in secondi)
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -3809,7 +3905,7 @@ Nome risorsa di estrazione
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -3866,7 +3962,7 @@ Nome risorsa di vendita
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -3892,7 +3988,7 @@ Consente di convertire gli script precedenti (InstallSchema, UpgradeSchema) nel 
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -3911,7 +4007,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -3932,32 +4028,14 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 ## `setup:install`
 
 ```bash
-bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:install [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Installa l&#39;applicazione di Magento
+Installa l&#39;applicazione Magento
 
 ### Opzioni
 
 Per le opzioni globali, vedi [Opzioni globali](#global-options).
-
-#### `--enable-debug-logging`
-
-Abilita registrazione debug
-
-- Richiede un valore
-
-#### `--enable-syslog-logging`
-
-Abilita registrazione syslog
-
-- Richiede un valore
-
-#### `--backend-frontname`
-
-Nome front-end (verrà generato automaticamente se mancante)
-
-- Richiede un valore
 
 #### `--remote-storage-driver`
 
@@ -3986,40 +4064,52 @@ Bucket di archiviazione remota
 
 #### `--remote-storage-region`
 
-Area di archiviazione remota
+Archiviazione remota area geografica
 
 - Richiede un valore
 
 #### `--remote-storage-key`
 
-Chiave di accesso all&#39;archiviazione remota
+Chiave accesso archiviazione remota
 
-- Predefinito: &quot;
+- Impostazione predefinita: &#39;&#39;
 - Richiede un valore
 
 #### `--remote-storage-secret`
 
 Chiave segreta di archiviazione remota
 
-- Predefinito: &quot;
+- Impostazione predefinita: &#39;&#39;
 - Richiede un valore
 
 #### `--remote-storage-path-style`
 
-Stile percorso archiviazione remota
+Stile del percorso di archiviazione remota
 
 - Predefinito: `0`
+- Richiede un valore
+
+#### `--backend-frontname`
+
+Nome front-end (verrà generato automaticamente se mancante)
+
+- Richiede un valore
+
+#### `--enable-debug-logging`
+
+Abilita registrazione debug
+
+- Richiede un valore
+
+#### `--enable-syslog-logging`
+
+Abilita registrazione syslog
+
 - Richiede un valore
 
 #### `--id_salt`
 
 GraphQl Salt
-
-- Richiede un valore
-
-#### `--config-async`
-
-Abilitare il salvataggio asincrono della configurazione amministratore? 1 - Sì, 0 - No
 
 - Richiede un valore
 
@@ -4029,11 +4119,17 @@ Abilitare l’elaborazione asincrona degli ordini? 1 - Sì, 0 - No
 
 - Richiede un valore
 
+#### `--config-async`
+
+Abilitare la configurazione amministratore asincrona Salva? 1 - Sì, 0 - No
+
+- Richiede un valore
+
 #### `--amqp-host`
 
 Host del server Amqp
 
-- Predefinito: &quot;
+- Impostazione predefinita: &#39;&#39;
 - Richiede un valore
 
 #### `--amqp-port`
@@ -4047,14 +4143,14 @@ Porta server Amqp
 
 Nome utente server Amqp
 
-- Predefinito: &quot;
+- Impostazione predefinita: &#39;&#39;
 - Richiede un valore
 
 #### `--amqp-password`
 
-Password del server Amqp
+password del server Amqp
 
-- Predefinito: &quot;
+- Impostazione predefinita: &#39;&#39;
 - Richiede un valore
 
 #### `--amqp-virtualhost`
@@ -4068,19 +4164,19 @@ Amqp virtualhost
 
 Amqp SSL
 
-- Predefinito: &quot;
+- Impostazione predefinita: &#39;&#39;
 - Richiede un valore
 
 #### `--amqp-ssl-options`
 
-Opzioni SSL Amqp (JSON)
+Amqp SSL Opzioni (JSON)
 
-- Predefinito: &quot;
+- Impostazione predefinita: &#39;&#39;
 - Richiede un valore
 
 #### `--consumers-wait-for-messages`
 
-I consumatori devono attendere un messaggio dalla coda? 1 - Sì, 0 - No
+I consumatori dovrebbero aspettare un messaggio dal coda? 1 - Sì, 0 - No
 
 - Richiede un valore
 
@@ -4221,6 +4317,12 @@ Timeout della connessione, in secondi
 
 - Richiede un valore
 
+#### `--session-save-redis-retries`
+
+Ridisattiva nuovi tentativi di connessione.
+
+- Richiede un valore
+
 #### `--session-save-redis-persistent-id`
 
 Stringa univoca per abilitare le connessioni permanenti
@@ -4235,7 +4337,7 @@ Numero database Redis
 
 #### `--session-save-redis-compression-threshold`
 
-Soglia di compressione Redis
+soglia di compressione Redis
 
 - Richiede un valore
 
@@ -4253,31 +4355,31 @@ Livello di registro Redis. Valori: da 0 (meno dettagliato) a 7 (più dettagliato
 
 #### `--session-save-redis-max-concurrency`
 
-Numero massimo di processi che possono attendere un blocco in una sessione
+Numero massimo di processi che possono attendere il blocco di una sessione
 
 - Richiede un valore
 
 #### `--session-save-redis-break-after-frontend`
 
-Numero di secondi di attesa prima di interrompere un blocco per la sessione front-end
+Numero di secondi di attesa prima di provare a rompere un blocco per la sessione frontend
 
 - Richiede un valore
 
 #### `--session-save-redis-break-after-adminhtml`
 
-Numero di secondi di attesa prima di interrompere un blocco per la sessione di amministrazione
+Numero di secondi di attesa prima di provare a rompere un blocco per la sessione di amministrazione
 
 - Richiede un valore
 
 #### `--session-save-redis-first-lifetime`
 
-Durata in secondi della sessione per i non bot alla prima scrittura (usa 0 per disabilitare)
+Durata, in secondi, della sessione per i non-bot alla prima scrittura (usare 0 per disabilitare)
 
 - Richiede un valore
 
 #### `--session-save-redis-bot-first-lifetime`
 
-Durata in secondi della sessione per i bot alla prima scrittura (usa 0 per disabilitare)
+Durata, in secondi, della sessione per i bot alla prima scrittura (usare 0 per disabilitare)
 
 - Richiede un valore
 
@@ -4355,7 +4457,7 @@ Porta di ascolto del server Redis
 
 #### `--cache-backend-redis-password`
 
-Password del server Redis
+password del server Redis
 
 - Richiede un valore
 
@@ -4373,13 +4475,19 @@ Libreria di compressione da utilizzare [snappy,lzf,l4z,zstd,gzip] (lasciare vuot
 
 #### `--cache-backend-redis-use-lua`
 
-Imposta su 1 per abilitare lua (il valore predefinito è 0, disabilitato)
+Impostare su 1 per abilitare lua (il valore predefinito è 0, disabilitato)
+
+- Richiede un valore
+
+#### `--cache-backend-redis-use-lua-on-gc`
+
+Imposta su 0 per disabilitare lua su Garbage raccolta (il valore predefinito è 1, abilitato)
 
 - Richiede un valore
 
 #### `--cache-id-prefix`
 
-Prefisso ID per le chiavi della cache
+Prefisso ID per le chiavi cache
 
 - Richiede un valore
 
@@ -4416,25 +4524,25 @@ Porta di ascolto del server Redis
 
 #### `--page-cache-redis-password`
 
-Password del server Redis
+password del server Redis
 
 - Richiede un valore
 
 #### `--page-cache-redis-compress-data`
 
-Impostate questo valore su 1 per comprimere la cache dell&#39;intera pagina (usate 0 per disattivare)
+Impostare questo valore su 1 per comprimere l&#39;intera cache della pagina (utilizzare 0 per disabilitarla)
 
 - Richiede un valore
 
 #### `--page-cache-redis-compression-lib`
 
-Libreria di compressione da utilizzare [snappy,lzf,l4z,zstd,gzip] (lasciare vuoto per determinare automaticamente)
+Compressione libreria utilizzare [snappy, lzf, l4z, zstd, gzip] (lasciare vuoto per determinare automaticamente)
 
 - Richiede un valore
 
 #### `--page-cache-id-prefix`
 
-Prefisso ID per le chiavi della cache
+Prefisso ID per le chiavi cache
 
 - Richiede un valore
 
@@ -4452,25 +4560,25 @@ Prefisso di blocco specifico per l&#39;installazione per evitare conflitti di bl
 
 #### `--lock-zookeeper-host`
 
-Host e porta per la connessione al cluster Zookeeper. Ad esempio: 127.0.0.1:2181
+Host e porta per connettersi al cluster Zookeeper. Ad esempio: 127.0.0.1:2181
 
 - Richiede un valore
 
 #### `--lock-zookeeper-path`
 
-Percorso in cui Zookeeper salverà i blocchi. Il percorso predefinito è: /magento/locks
+Il percorso in cui Zookeeper salverà le serrature. Il percorso predefinito è: /magento/locks
 
 - Richiede un valore
 
 #### `--lock-file-path`
 
-Percorso in cui verranno salvati i blocchi di file.
+Verrà salvato il percorso in cui i file vengono bloccati.
 
 - Richiede un valore
 
 #### `--document-root-is-pub`
 
-Flag da mostrare: il pub è nella directory principale; può essere true o false solo
+Flag per mostrare se Pub è sulla radice, può essere solo true o false
 
 - Richiede un valore
 
@@ -4494,7 +4602,7 @@ Porta di ascolto del server Redis
 
 #### `--backpressure-logger-redis-timeout`
 
-Timeout del server Redis
+Timeout server Redis
 
 - Richiede un valore
 
@@ -4578,7 +4686,7 @@ Esegui l’interfaccia di amministrazione con SSL. Obsoleto, usa config:set con 
 
 #### `--admin-use-security-key`
 
-Specifica se utilizzare una funzione di &quot;chiave di sicurezza&quot; negli URL e nei moduli dell’amministratore di Magento. Obsoleto, usa config:set con path admin/security/use_form_key
+Se utilizzare una funzione di &quot;chiave di sicurezza&quot; negli URL e nei moduli dell’amministratore Magento. Obsoleto, usa config:set con path admin/security/use_form_key
 
 - Richiede un valore
 
@@ -4614,19 +4722,19 @@ Cognome amministratore
 
 #### `--search-engine`
 
-Motore di ricerca. Valori: elasticsearch7, elasticsearch8, opensearch
+Motore di ricerca. Valori: elasticsearch8, opensearch
 
 - Richiede un valore
 
 #### `--elasticsearch-host`
 
-Host del server di Elasticsearch.
+Host del server Elasticsearch.
 
 - Richiede un valore
 
 #### `--elasticsearch-port`
 
-Porta server di Elasticsearch.
+Porta del server Elasticsearch.
 
 - Richiede un valore
 
@@ -4656,7 +4764,7 @@ Prefisso indice Elasticsearch.
 
 #### `--elasticsearch-timeout`
 
-Timeout del server di Elasticsearch.
+Timeout del server Elasticsearch.
 
 - Richiede un valore
 
@@ -4743,33 +4851,33 @@ Consente di convertire gli script precedenti (InstallSchema, UpgradeSchema) nel 
 
 #### `--interactive`, `-i`
 
-Installazione interattiva del Magento
+Installazione interattiva di Magento
 
 - Predefinito: `false`
 - Non accetta un valore
 
 #### `--safe-mode`
 
-Installazione sicura del Magento con immagini su operazioni distruttive, come la rimozione delle colonne
+Installazione sicura di Magento con discariche su operazioni distruttive like rimozione delle colonne
 
 - Accetta un valore
 
 #### `--data-restore`
 
-Ripristinare i dati rimossi dalle immagini
+Ripristinare i dati rimossi dai dump
 
 - Accetta un valore
 
 #### `--dry-run`
 
-L&#39;installazione del Magento viene eseguita in modalità di funzionamento a secco
+L&#39;installazione di Magento verrà eseguita in modalità a secco
 
 - Predefinito: `false`
 - Accetta un valore
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare Magento parametri di inizializzazione Per esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -4780,7 +4888,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profile>
 ```
 
-Genera gli staffaggi
+Genera fissaggi
 
 ### Argomenti
 
@@ -4808,7 +4916,7 @@ Salta reindicizzazione
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Ripristina il database, il supporto e la base di codice dell&#39;applicazione di Magento
+Ripristina il database, il supporto e la base di codice dell&#39;applicazione Magento
 
 ### Opzioni
 
@@ -4834,7 +4942,7 @@ Nome base del file di backup del database in var/backups
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -4845,24 +4953,24 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--max-execution-time [MAX-EXECUTION-TIME]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-js-bundle] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [--] [<languages>...]
 ```
 
-Distribuisce i file di visualizzazione statici
+Distribuisce i file di visualizzazione statica
 
 ### Argomenti
 
 #### `languages`
 
-Elenco separato da spazi dei codici di lingua ISO-639 per i quali generare file di visualizzazione statica.
+Elenco separato da spazi dei codici lingua ISO-639 per i quali produrre file di visualizzazione statica.
 
 - Predefinito: `[]`
 - Array
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--force`, `-f`
 
-Distribuisci i file in qualsiasi modalità.
+Distribuire i file in qualsiasi modalità.
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -4987,7 +5095,7 @@ Non distribuire immagini.
 
 #### `--no-fonts`
 
-Non distribuire file di font.
+Non distribuire file font.
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -5053,19 +5161,19 @@ Codice fuso orario predefinito. Obsoleto, usa config:set con percorso generale/l
 
 #### `--currency`
 
-Codice valuta predefinito. Obsoleto, usa config:set con percorso valuta/opzioni/base, valuta/opzioni/predefinito e valuta/opzioni/consenti
+Codice valuta predefinito. Obsoleto, usa config:set con percorso currency/options/base, currency/options/default e currency/options/allow
 
 - Richiede un valore
 
 #### `--use-rewrites`
 
-Utilizza le riscritture. Obsoleto, usa config:set con percorso web/seo/use_rewrites
+Utilizzare le riscritture. Deprecato, usa config:set con percorso web/seo/use_rewrites
 
 - Richiede un valore
 
 #### `--use-secure`
 
-Utilizza URL sicuri. Abilita questa opzione solo se SSL è disponibile. Obsoleto, usa config:set con percorso web/secure/use_in_frontend
+Utilizza URL protetti. Abilita questa opzione solo se SSL è disponibile. Obsoleto, usa config:set con percorso web/secure/use_in_frontend
 
 - Richiede un valore
 
@@ -5083,13 +5191,13 @@ Esegui l’interfaccia di amministrazione con SSL. Obsoleto, usa config:set con 
 
 #### `--admin-use-security-key`
 
-Specifica se utilizzare una funzione di &quot;chiave di sicurezza&quot; negli URL e nei moduli dell’amministratore di Magento. Obsoleto, usa config:set con path admin/security/use_form_key
+Se utilizzare una funzione di &quot;chiave di sicurezza&quot; negli URL e nei moduli dell’amministratore Magento. Obsoleto, usa config:set con path admin/security/use_form_key
 
 - Richiede un valore
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -5100,7 +5208,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Disinstalla l&#39;applicazione di Magento
+Disinstalla l&#39;applicazione Magento
 
 ### Opzioni
 
@@ -5108,7 +5216,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione di Magento. Esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -5119,7 +5227,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Aggiorna l&#39;applicazione di Magento, i dati del database e lo schema
+Aggiorna l&#39;applicazione Magento, i dati del database e lo schema
 
 ### Opzioni
 
@@ -5141,26 +5249,26 @@ Consente di convertire gli script precedenti (InstallSchema, UpgradeSchema) nel 
 
 #### `--safe-mode`
 
-Installazione sicura del Magento con immagini su operazioni distruttive, come la rimozione delle colonne
+Installazione sicura di Magento con immagini su operazioni distruttive, come la rimozione di colonne
 
 - Accetta un valore
 
 #### `--data-restore`
 
-Ripristinare i dati rimossi dalle immagini
+Ripristinare i dati rimossi dai dump
 
 - Accetta un valore
 
 #### `--dry-run`
 
-L&#39;installazione del Magento viene eseguita in modalità di funzionamento a secco
+Magento L&#39;installazione verrà eseguita in modalità funzionamento a secco
 
 - Predefinito: `false`
 - Accetta un valore
 
 #### `--magento-init-params`
 
-Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione del Magento Ad esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Aggiungi a qualsiasi comando per personalizzare Magento parametri di inizializzazione Per esempio: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Richiede un valore
 
@@ -5175,7 +5283,7 @@ Visualizza l&#39;elenco dei negozi
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `store:website:list`
@@ -5188,7 +5296,7 @@ Visualizza l&#39;elenco dei siti Web
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 
 ## `support:backup:code`
@@ -5197,7 +5305,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs]
 ```
 
-Crea backup del codice
+Crea Code backup
 
 ### Opzioni
 
@@ -5229,7 +5337,7 @@ Includi registri
 bin/magento support:backup:db [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
-Crea backup del database
+Crea DB backup
 
 ### Opzioni
 
@@ -5346,15 +5454,15 @@ Cancellare i file di visualizzazione statica generati.
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]
 ```
 
-Genera vernice VCL e la trasforma nella riga di comando
+Genera Varnish VCL e lo invia alla riga di comando
 
 ### Opzioni
 
-Per le opzioni globali, vedi [Opzioni globali](#global-options).
+Per le opzioni globali, vedere [Opzioni](#global-options) globali.
 
 #### `--access-list`
 
-Elenco di accesso IP in grado di eliminare la vernice
+Gli IP accesso elenco che possono eliminare la vernice
 
 - Predefinito: `localhost`
 - Richiede un valore
@@ -5375,7 +5483,7 @@ Porta del back-end web
 
 #### `--export-version`
 
-Versione del file di vernice
+Versione del file Varnish
 
 - Predefinito: `6`
 - Richiede un valore
@@ -5389,13 +5497,13 @@ Periodo di tolleranza in secondi
 
 #### `--input-file`
 
-File di input da cui generare il file VCL
+File di input da cui generare vcl
 
 - Richiede un valore
 
 #### `--output-file`
 
-Percorso del file da scrivere in vcl
+Percorso del file per scrivere vcl
 
 - Richiede un valore
 
@@ -5495,7 +5603,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 bin/magento webhooks:list:all <module_name>
 ```
 
-Restituisce un elenco dei nomi dei metodi webhook supportati per il modulo specificato
+Restituisce un elenco di nomi di metodi webhook supportati per il modulo specificato
 
 ### Argomenti
 

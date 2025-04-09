@@ -3,7 +3,7 @@ title: Guida all’installazione
 description: Utilizza questa guida per installare  [!DNL Site-Wide Analysis Tool]  per il tuo sito Web
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Prima di installare l&#39;agente, l&#39;infrastruttura locale deve soddisfare i 
 
 ## [!DNL Commerce Services Connector]
 
-L&#39;agente richiede che l&#39;estensione [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) sia installata nel sistema e [configurata](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) con chiavi API. Per verificare che l’estensione sia installata, esegui il seguente comando:
+L&#39;agente richiede che l&#39;estensione [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) sia installata nel sistema e [configurata](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) con chiavi API. Per verificare che l’estensione sia installata, esegui il seguente comando:
 
 ```bash
 bin/magento module:status Magento_ServicesId
@@ -98,7 +98,7 @@ Se hai installato l&#39;estensione e l&#39;hai configurata utilizzando una chiav
 
 1. Fai clic su **[!UICONTROL Delete]** accanto alla chiave API esistente.
 
-1. [Configura](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) una nuova chiave API.
+1. [Configura](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) una nuova chiave API.
 
 >[!IMPORTANT]
 >
@@ -130,7 +130,7 @@ Se l&#39;estensione non è installata, attenersi alle istruzioni seguenti per in
    bin/magento cache:clean
    ```
 
-1. [Configura le chiavi API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) per connettere l&#39;estensione al sistema.
+1. [Configura le chiavi API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) per connettere l&#39;estensione al sistema.
 
 ## Installare l’agente
 
@@ -404,7 +404,7 @@ Per risolvere l&#39;errore, effettuare le seguenti operazioni:
 1. Eseguire un&#39;installazione [con script](#scripted), salvare l&#39;output ed esaminarlo per individuare eventuali errori.
 1. Rivedi il file `config.yaml` generato e verifica che il percorso dell&#39;istanza Commerce e del PHP sia corretto.
 1. Verificare che l&#39;utente che esegue il modulo di pianificazione si trovi nel gruppo Unix [proprietario del file system](../../installation/prerequisites/file-system/overview.md) o che sia lo stesso utente del proprietario del file system.
-1. Verificare che le chiavi [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) siano installate correttamente e provare ad aggiornarle per connettere l&#39;estensione al sistema.
+1. Verificare che le chiavi [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) siano installate correttamente e provare ad aggiornarle per connettere l&#39;estensione al sistema.
 1. [Disinstalla](#uninstall) l&#39;agente dopo l&#39;aggiornamento delle chiavi e la reinstallazione tramite lo [script di installazione](#scripted).
 1. Eseguire il modulo di pianificazione e verificare se si riceve ancora lo stesso errore.
 1. Se si riceve lo stesso errore, aumentare il livello di registro in `config.yaml` per eseguire il debug e aprire un ticket di supporto.

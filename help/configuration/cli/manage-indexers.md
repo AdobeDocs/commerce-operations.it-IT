@@ -2,7 +2,7 @@
 title: Gestire gli indicizzatori
 description: Consulta alcuni esempi su come visualizzare e gestire gli indicizzatori Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 9a92204369d3a8310aadfb94f8193a6c89f78c30
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,7 +39,7 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> I commercianti Adobe Commerce che utilizzano Live Search, Catalog Service o Product Recommendations possono utilizzare l&#39;indicizzazione dei prezzi basata su [SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html).
+> I commercianti di Adobe Commerce che utilizzano Live Search, Catalog Service o Product Recommendations possono utilizzare l&#39;indicizzazione dei prezzi basata su [SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/index.html).
 
 ## Visualizza stato indicizzatore
 
@@ -124,28 +124,28 @@ Puoi eseguire i seguenti indici in modalità parallela:
 - `Catalog Search Fulltext` può essere affiancato dalle visualizzazioni dello store.
 - `Category Product` può essere affiancato dalle visualizzazioni dello store.
 - `Catalog Price` può essere affiancato da siti Web e gruppi di clienti.
-- `Catalog Permissions` può essere affiancato dai gruppi di clienti.
+- `Catalog Permissions` può essere affiancato da gruppi di clienti.
 
 >[!INFO]
 >
->Per impostazione predefinita, è abilitata la parallelizzazione per il prodotto full-text e per la categoria di ricerca nel catalogo.
+>La parallelizzazione per il catalogo Search il testo completo e Categoria prodotto è attivata per impostazione predefinita.
 
-Per utilizzare la parallelizzazione, impostare una delle modalità di dimensione disponibili per l&#39;indicizzatore prezzo prodotto:
+Per utilizzare la parallelizzazione, impostare una delle modalità delle dimensioni disponibili per l&#39;indicizzatore dei prezzi dei prodotti:
 
-- `none` (predefinito)
+- `none` (impostazione predefinita)
 - `website`
 - `customer_group`
 - `website_and_customer_group`
 
-Ad esempio, per impostare la modalità per sito Web:
+Ad esempio, per impostare la modalità per ogni sito Web:
 
 ```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
 
-Per utilizzare la parallelizzazione per le autorizzazioni del catalogo, imposta una delle modalità di dimensioni disponibili per l’indicizzatore delle autorizzazioni del catalogo:
+Per utilizzare la parallelizzazione per le autorizzazioni del catalogo, imposta una delle modalità delle dimensioni disponibili per l&#39;indicizzatore delle autorizzazioni del catalogo:
 
-- `none` (predefinito)
+- `none` (impostazione predefinita)
 - `customer_group`
 
 Oppure per controllare la modalità corrente:
@@ -154,9 +154,9 @@ Oppure per controllare la modalità corrente:
 bin/magento indexer:show-dimensions-mode
 ```
 
-Per reindicizzare in modalità parallela, eseguire il comando reindicizza utilizzando la variabile di ambiente `MAGE_INDEXER_THREADS_COUNT` oppure aggiungere una variabile di ambiente al file `env.php`. Questa variabile imposta il numero di thread per la reindicizzazione.
+Per reindicizzare in modalità parallela, eseguire il comando reindex utilizzando la variabile `MAGE_INDEXER_THREADS_COUNT`di ambiente o aggiungere una variabile di ambiente al `env.php` file. Questa variabile imposta il numero di thread per l&#39;elaborazione della reindicizzazione.
 
-Il comando seguente, ad esempio, esegue l&#39;indicizzatore `Catalog Search Fulltext` su tre thread:
+Ad esempio, il comando seguente esegue l&#39;indicizzatore `Catalog Search Fulltext` in tre thread:
 
 ```bash
 MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fulltext
@@ -192,12 +192,12 @@ Catalog Search indexer has been invalidated.
 
 ## Configurare gli indici
 
-Utilizzare questo comando per impostare le opzioni di indicizzazione seguenti:
+Utilizzare questo comando per impostare le seguenti opzioni dell&#39;indicizzatore:
 
-- **Aggiornamento al salvataggio (`realtime`)**: i dati indicizzati vengono aggiornati quando viene apportata una modifica nell&#39;amministratore. Ad esempio, l’indice dei prodotti di categoria viene reindicizzato dopo l’aggiunta dei prodotti a una categoria in Admin.
-- **Aggiornamento in base alla pianificazione (`schedule`)**: i dati sono indicizzati in base alla pianificazione impostata dal processo cron.
+- **Aggiornamento al salvataggio (`realtime`)**: i dati indicizzati vengono aggiornati quando viene apportata una modifica nell&#39;amministratore. Ad esempio, l&#39;indice della categoria prodotti viene reindicizzato dopo che i prodotti sono stati aggiunti a una categoria nell&#39;Amministratore.
+- **Aggiornamento per programmare (`schedule`)**: i dati vengono indicizzati in base al programmare impostato dal cron job.
 
-[Ulteriori informazioni sull&#39;indicizzazione](https://developer.adobe.com/commerce/php/development/components/indexing/).
+[Scopri maggiori informazioni sull&#39;indicizzazione](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
 ### Visualizza la configurazione corrente
 
@@ -207,7 +207,7 @@ Per visualizzare la configurazione corrente dell&#39;indicizzatore:
 bin/magento indexer:show-mode [indexer]
 ```
 
-Dove `[indexer]` è un elenco separato da spazi di indicizzatori. Ometti `[indexer]` per visualizzare tutte le modalità degli indicizzatori. Ad esempio, per visualizzare la modalità di tutti gli indicizzatori:
+Dove `[indexer]` è un elenco di indicizzatori separato da spazi. Omettere `[indexer]` di visualizzare tutte le modalità degli indicizzatori. Ad esempio, per visualizzare la modalità di tutti gli indicizzatori:
 
 Risultato di esempio:
 
@@ -225,7 +225,7 @@ Product Price:                                     Update on Save
 Catalog Search:                                    Update on Save
 ```
 
-### Impostare la modalità di indicizzazione
+### Impostare la modalità indicizzatore
 
 >[!IMPORTANT]
 >
@@ -308,6 +308,6 @@ Quando un indicizzatore è impostato sullo stato `suspended`, influisce principa
 
 >[!IMPORTANT]
 >
->La modifica dello stato di un indicizzatore in `valid` da `suspended` o `invalid` richiede cautela. Questa azione può causare il deterioramento delle prestazioni in caso di accumulo di dati non indicizzati.
+>La modifica dello stato di un indicizzatore in `valid` da `suspended` o `invalid` richiede cautela. Questa azione può lead a riduzione delle prestazioni se sono presenti dati non indicizzati accumulati.
 >
->È fondamentale assicurarsi che tutti i dati siano indicizzati accuratamente prima di aggiornare manualmente lo stato a `valid` per mantenere le prestazioni del sistema e l&#39;integrità dei dati.
+>È fondamentale assicurarsi che tutti i dati siano indicizzati accuratamente prima di aggiornare manualmente lo stato per `valid` mantenere le prestazioni del sistema e l&#39;integrità dei dati.

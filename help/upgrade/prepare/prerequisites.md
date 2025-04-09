@@ -1,24 +1,24 @@
 ---
-title: Prerequisiti completi
-description: Prepara il tuo progetto Adobe Commerce per un aggiornamento completando questi passaggi preliminari.
+title: Tutte le applicazioni Prerequisiti
+description: Prepara il progetto Adobe Systems Commerce per un aggiornamento completando questi passaggi prerequisiti.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: d19051467efe7dcf7aedfa7a29460c72d896f5d4
+source-git-commit: df185e21f918d32ed5033f5db89815b5fc98074f
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1866'
 ht-degree: 0%
 
 ---
 
-# Completare i prerequisiti per l’aggiornamento
+# Tutte le applicazioni prerequisiti per l&#39;aggiornamento
 
-È importante comprendere cosa è necessario per eseguire Adobe Commerce. È innanzitutto necessario esaminare i [requisiti di sistema](../../installation/system-requirements.md) per la versione che si desidera aggiornare.
+È importante comprendere ciò che è necessario per eseguire Adobe Systems Commerce. È innanzitutto necessario esaminare i [requisiti di sistema](../../installation/system-requirements.md) per la versione che si desidera aggiornare.
 
 Dopo aver esaminato i requisiti di sistema, è necessario completare i seguenti prerequisiti prima di aggiornare il sistema:
 
 * Aggiorna tutto il software
 * Verificare che sia installato un motore di ricerca supportato
 * Converti formato tabella database
-* Imposta il limite di file aperti
+* Impostare il limite dei file aperti
 * Verificare che i processi cron siano in esecuzione
 * Imposta `DATA_CONVERTER_BATCH_SIZE`
 * Verificare le autorizzazioni del file system
@@ -62,6 +62,60 @@ A partire dalla versione 2.4, MySQL non è più un motore di ricerca catalogo su
 
 Alcuni motori di ricerca di cataloghi di terze parti vengono eseguiti sul motore di ricerca di Adobe Commerce. Contatta il fornitore per determinare se è necessario aggiornare l’estensione.
 
+### Modifiche a MySQL 8.4
+
+Adobe ha aggiunto il supporto per MySQL 8.4 nella versione 2.4.8.
+In questa sezione vengono descritte le principali modifiche apportate a MySQL 8.4 di cui gli sviluppatori devono essere a conoscenza.
+
+#### Chiave non standard obsoleta
+
+L&#39;utilizzo di chiavi non univoche o parziali come chiavi esterne non è standard ed è obsoleto in MySQL 8.4. A partire da MySQL 8.4.0, è necessario abilitare esplicitamente tali chiavi impostando [`restrict_fk_on_non_standard_key`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key) su `OFF` oppure avviando il server con l&#39;opzione `--skip-restrict-fk-on-non-standard-key`.
+
+#### Aggiornamento da MySQL 8.0 ( o versioni precedenti ) a MySQL 8.4
+
+Per aggiornare correttamente MySQL dalla versione 8.0 alla versione 8.4, è necessario seguire i passaggi seguenti nell&#39;ordine in cui si desidera eseguire:
+
+1. Abilita modalità di manutenzione:
+
+   ```bash
+   bin/magento maintenance:enable
+   ```
+
+1. Eseguire un backup del database:
+
+   ```bash
+   bin/magento setup:backup --db
+   ```
+
+1. Aggiornare MySQL alla versione 8.4.
+1. Imposta `restrict_fk_on_non_standard_key` su `OFF` in `[mysqld]` nel file `my.cnf`.
+
+   ```bash
+   [mysqld]
+   restrict_fk_on_non_standard_key = OFF 
+   ```
+
+   >[!WARNING]
+   >
+   >Se non si modifica il valore di `restrict_fk_on_non_standard_key` in `OFF`, verrà visualizzato il seguente errore durante l&#39;importazione:
+   >
+   ```sql
+   > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
+   >```
+1. Riavviare il server MySQL.
+1. Importare i dati di backup in MySQL.
+1. Pulisci la cache:
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
+1. Disattiva modalità di manutenzione:
+
+   ```bash
+   bin/magento maintenance:disable
+   ```
+
 #### MariaDB
 
 {{$include /help/_includes/maria-db-config.md}}
@@ -72,11 +126,11 @@ Prima di eseguire l’aggiornamento a 2.4.0, è necessario installare e configur
 
 Consulta [Aggiornamento di Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) per istruzioni complete sul backup dei dati, l&#39;individuazione di potenziali problemi di migrazione e il test degli aggiornamenti prima della distribuzione in produzione. A seconda della versione corrente di Elasticsearch, potrebbe essere necessario o meno un riavvio completo del cluster.
 
-Elasticsearch richiede Java Development Kit (JDK) 1.8 o versione successiva. Consulta [Installare Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
+Elasticsearch richiede Java Development Kit (JDK) 1.8 o versione successiva. Consultate [Installare Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
 
-#### OpenSearch
+#### Ricerca aperta
 
-OpenSearch è un fork open-source di Elasticsearch 7.10.2, a seguito della modifica delle licenze di Elasticsearch. Nelle seguenti versioni di Adobe Commerce è stato introdotto il supporto per OpenSearch:
+OpenSearch è un fork open source di Elasticsearch 7.10.2, in seguito al cambio di licenza di Elasticsearch. Le seguenti versioni di Adobe Systems Commerce introducono il supporto per OpenSearch:
 
 * 2.4.6 (OpenSearch ha un modulo e impostazioni separati)
 * 2.4.5.
@@ -86,7 +140,7 @@ OpenSearch è un fork open-source di Elasticsearch 7.10.2, a seguito della modif
 
 Puoi [migrare da Elasticsearch a OpenSearch](opensearch-migration.md) solo se esegui l&#39;aggiornamento a una versione di Adobe Commerce elencata sopra (o successiva).
 
-OpenSearch richiede JDK 1.8 o versione successiva. Consulta [Installare Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
+OpenSearch richiede JDK 1.8 o superiore. Consulta [Installare Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
 
 [Configurazione del motore di ricerca](../../configuration/search/configure-search-engine.md) descrive le attività da eseguire dopo la modifica dei motori di ricerca.
 
@@ -233,13 +287,13 @@ Per impostare il valore nella shell Bash:
 
 ## Verificare che i processi cron siano in esecuzione
 
-L&#39;Utilità di pianificazione UNIX `cron` è fondamentale per le operazioni quotidiane di Adobe Commerce. Pianifica elementi come reindicizzazione, newsletter, e-mail e sitemap. Diverse funzionalità richiedono almeno un processo cron in esecuzione come proprietario del file system.
+L&#39;Utilità di pianificazione UNIX `cron` è fondamentale per le operazioni quotidiane di Adobe Commerce. Pianifica elementi come reindicizzazione, newsletter, e-mail e sitemap. Diverse funzioni richiedono almeno un cron job in esecuzione come file system proprietario.
 
-Per verificare che il processo cron sia configurato correttamente, controllare la scheda cronica immettendo il comando seguente come proprietario del file system:
+Per verificare che il tuo cron job sia impostato correttamente, controlla il crontab inserendo il seguente comando come file system proprietario:
 
 >[!NOTE]
 >
->Crontab è il file di configurazione responsabile dell&#39;esecuzione dei processi cron.
+>Il crontab è il file di configurazione responsabile dell&#39;esecuzione dei cron job.
 
 ```bash
 crontab -l
@@ -253,7 +307,7 @@ Dovrebbero essere visualizzati risultati simili ai seguenti:
 #~ MAGENTO END c5f9e5ed71cceaabc4d4fd9b3e827a2b
 ```
 
-Un altro sintomo di cron non in esecuzione è il seguente errore in Admin:
+Un altro sintomo di cron non in esecuzione è il seguente errore nell&#39;amministratore:
 
 ![Messaggi di sistema - cron non in esecuzione](../../assets/upgrade-guide/cron-not-running.png)
 
@@ -265,7 +319,7 @@ Per ulteriori informazioni, vedere [Configurare ed eseguire cron](../../configur
 
 ## Imposta DATA_CONVERTER_BATCH_SIZE
 
-Adobe Commerce 2.4 include miglioramenti della sicurezza che richiedono la conversione di alcuni dati da serializzati a JSON. Questa conversione si verifica durante l’aggiornamento e può richiedere molto tempo, a seconda della quantità di dati presenti nel database.
+Adobe Systems Commerce 2.4 include miglioramenti della sicurezza che richiedono la conversione di alcuni dati da serializzati a JSON. Questa conversione si verifica durante l&#39;aggiornamento e può richiedere molto tempo, a seconda della quantità di dati presenti nel database.
 
 Le tabelle seguenti sono quelle maggiormente interessate:
 
@@ -294,7 +348,7 @@ Per impostare la variabile di ambiente:
    >
    > `DATA_CONVERTER_BATCH_SIZE` richiede memoria; evitare di impostarla su un valore elevato (circa 1 GB) senza prima testarla.
 
-1. Al termine dell’aggiornamento, puoi annullare l’impostazione della variabile:
+1. Al termine dell&#39;aggiornamento, è possibile annullare la configurazione della variabile:
 
    ```bash
    unset DATA_CONVERTER_BATCH_SIZE
@@ -302,9 +356,9 @@ Per impostare la variabile di ambiente:
 
 ## Verificare le autorizzazioni del file system
 
-Per motivi di sicurezza, Adobe Commerce richiede determinate autorizzazioni sul file system. Le autorizzazioni sono diverse da _[proprietà](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. La proprietà determina chi può eseguire azioni sul file system; le autorizzazioni determinano ciò che l’utente può fare.
+Per motivi di sicurezza, Adobe Systems Commerce richiede determinate autorizzazioni sul file system. Le autorizzazioni sono diverse dalla _[proprietà](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. La proprietà determina chi può eseguire azioni sul file system; Le autorizzazioni determinano le operazioni che la utente può eseguire.
 
-Le directory nel file system devono essere scrivibili dal gruppo ](../../installation/prerequisites/file-system/overview.md) del proprietario del file system [.
+Le directory nel file system devono essere scrivibili dal [gruppo di proprietario del](../../installation/prerequisites/file-system/overview.md) file system.
 
 Per verificare che le autorizzazioni del file system siano impostate correttamente, accedere al server applicazioni o utilizzare l&#39;applicazione di gestione file del provider di hosting.
 
