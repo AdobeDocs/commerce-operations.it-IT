@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1ad42acc0d007ef1dee8c6c6f93da9daed1925f8
+source-git-commit: 54757d09eb0f476229e567e43c58dc2130a59ac9
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.8.
 
-La data in cui termina il supporto della riga di rilascio 2.4.8 non è ancora stata impostata.
+Il supporto per la riga di rilascio 2.4.8 termina l’11 aprile 2028.
 
 <table>
   <thead>
@@ -21,15 +21,9 @@ La data in cui termina il supporto della riga di rilascio 2.4.8 non è ancora st
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#highlights-in-v248-beta2">2.4.8-beta2</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8</a>
         </td>
-        <td>11 febbraio 2025</td>
-    </tr>
-    <tr>
-        <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#highlights-in-v248-beta1">2.4.8-beta1</a>
-        </td>
-        <td>ottobre  8 ottobre 2024</td>
+        <td>Aprile  8 ottobre 2025</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -46,6 +40,12 @@ Il supporto per la versione 2.4.7 di termina in aprile  9 settembre 2027.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5</a>
+        </td>
+        <td>Aprile  8 ottobre 2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p4">2.4.7-p4</a>
@@ -91,6 +91,12 @@ Il supporto per la riga di rilascio 2.4.6 termina l’11 agosto 2026.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p10">2.4.6-p10</a>
+        </td>
+        <td>Aprile  8 ottobre 2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p9">2.4.6-p9</a>
@@ -166,6 +172,12 @@ Il supporto per la versione 2.4.5 di termina in agosto  9, 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p12">2.4.5-p12</a>
+        </td>
+        <td>Aprile  8 ottobre 2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p11">2.4.5-p11</a>
@@ -255,6 +267,12 @@ Il supporto per la riga di rilascio 2.4.4 termina il 12 aprile 2025.
   <tbody>
     <tr>
         <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p13">2.4.4-p13</a>
+        </td>
+        <td>Aprile  8 ottobre 2025</td>
+    </tr>
+    <tr>
+        <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p12">2.4.4-p12</a>
         </td>
         <td>11 febbraio 2025</td>
@@ -336,7 +354,7 @@ Il supporto per la riga di rilascio 2.4.4 termina il 12 aprile 2025.
 
 ## 2,4,0-2,4,3
 
-Il supporto per la riga di rilascio 2.4.0-2.4.3 è terminato il 28 novembre 2022.
+Il supporto per la linea di rilascio 2.4.0-2.4.3 è terminato il 28 novembre 2022.
 
 <table>
   <thead>
@@ -473,7 +491,7 @@ Il supporto per la riga di rilascio 2.3 è terminato a settembre  8 ottobre 202
         <td>
           2.3.5-p2
         </td>
-        <td>28 luglio 2020</td>
+        <td>Luglio 28, 2020</td>
     </tr>
     <tr>
         <td>
@@ -497,7 +515,7 @@ Il supporto per la riga di rilascio 2.3 è terminato a settembre  8 ottobre 202
         <td>
           2.3.3-p1
         </td>
-        <td>28 gennaio 2020</td>
+        <td>Gennaio 28, 2020</td>
     </tr>
     <tr>
         <td>
@@ -659,13 +677,13 @@ Il supporto per la riga di rilascio 2.1 è terminato il 30 giugno 2019.
         <td>
           2.1.15
         </td>
-        <td>18 settembre 2018</td>
+        <td>settembre 18, 2018</td>
     </tr>
     <tr>
         <td>
           2.1.14
         </td>
-        <td>27 giugno 2018</td>
+        <td>giugno 27, 2018</td>
     </tr>
     <tr>
         <td>
@@ -677,19 +695,19 @@ Il supporto per la riga di rilascio 2.1 è terminato il 30 giugno 2019.
         <td>
           2.1.12
         </td>
-        <td>27 febbraio 2018</td>
+        <td>febbraio 27, 2018</td>
     </tr>
     <tr>
         <td>
           2.1.11
         </td>
-        <td>12 dicembre 2017</td>
+        <td>dicembre 12, 2017</td>
     </tr>
     <tr>
         <td>
           2.1.10
         </td>
-        <td>Novembre  7 luglio 2017</td>
+        <td>7 novembre 2017</td>
     </tr>
     <tr>
         <td>
@@ -842,13 +860,13 @@ Il supporto per la versione 2.0 è terminato il 31 marzo 2018.
         <td>
           2.0.6.
         </td>
-        <td>17 maggio 2016</td>
+        <td>maggio 17, 2016</td>
     </tr>
     <tr>
         <td>
           2.0.5
         </td>
-        <td>28 aprile 2016</td>
+        <td>aprile 28, 2016</td>
     </tr>
     <tr>
         <td>
@@ -866,13 +884,13 @@ Il supporto per la versione 2.0 è terminato il 31 marzo 2018.
         <td>
           2.0.2.
         </td>
-        <td>28 gennaio 2016</td>
+        <td>gennaio 28, 2016</td>
     </tr>
     <tr>
         <td>
           2.0.1.
         </td>
-        <td>20 gennaio 2016</td>
+        <td>gennaio 20, 2016</td>
     </tr>
     <tr>
         <td>
