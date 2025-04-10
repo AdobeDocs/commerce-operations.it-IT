@@ -1,16 +1,21 @@
 ---
-title: "ACSD-49392: lo stato dell’ordine diventa chiuso dopo un rimborso parziale"
+title: 'ACSD-49392: lo stato dell''ordine viene modificato in chiuso dopo il rimborso parziale'
 description: Applica la patch ACSD-49392 per risolvere il problema Adobe Commerce, in cui lo stato dell’ordine diventa chiuso dopo un rimborso parziale per un prodotto in bundle.
 feature: Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e12cbf2d-219e-4cb5-a226-6c7ae4929549
+source-git-commit: 67e050b4ceccc3f30bf8cd49125525b2e8d8b0dd
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
 
 # ACSD-49392: lo stato dell&#39;ordine viene modificato in chiuso dopo il rimborso parziale
+
+>[!NOTE]
+>
+>La patch ACSD-49392 è stata sostituita con la patch [ACSD-57003](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-57003-order-status-changed-to-complete-instead-of-processing) per le versioni da 2.4.6-p7 a 2.4.6-p10.
 
 La patch ACSD-49392 risolve il problema relativo alla chiusura dello stato dell&#39;ordine dopo un rimborso parziale per un prodotto in bundle. Questa patch è disponibile quando è installato [!DNL Quality Patches Tool (QPT)] 1.1.31. L’ID della patch è ACSD-49392. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.
 
@@ -22,7 +27,7 @@ La patch ACSD-49392 risolve il problema relativo alla chiusura dello stato dell&
 
 **Compatibile con le versioni di Adobe Commerce:**
 
-* Adobe Commerce (tutti i metodi di implementazione) 2.3.7 - 2.3.7-p4 e 2.4.1 - 2.4.6
+* Adobe Commerce (tutti i metodi di implementazione) 2.3.7 - 2.3.7-p4 e 2.4.1 - 2.4.6-p6
 
 >[!NOTE]
 >
@@ -52,7 +57,7 @@ Dopo aver creato una nota di credito parziale per il prodotto nel pacchetto, lo 
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
