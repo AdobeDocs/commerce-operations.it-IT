@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 77f3bb9b766eef3d56fc5d89b29daa9254992220
+source-git-commit: 7358d2aca927c94505e7a99b5ee390aa6a7f5fc9
 workflow-type: tm+mt
-source-wordcount: '7335'
+source-wordcount: '7359'
 ht-degree: 0%
 
 ---
@@ -763,6 +763,7 @@ ht-degree: 0%
       - v1.1.60 {#v1-1-60}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323: risolve la funzionalità [!UICONTROL Select All] e migliora l&#39;impaginazione e il conteggio dei record nel popup della categoria di prodotto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
+         - [ACSD-64149: è possibile salvare il segmento del cliente con una condizione [!UICONTROL Date range] quando viene modificata una sola data](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition.md)
          - [ACSD-64111: Corregge l&#39;errore InvalidArgumentException: Class does not exist quando si impostano condizioni nidificate per un componente Product in [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992: [!UICONTROL Cart Price Rule] con coupon e errore di condizione del metodo di spedizione nell&#39;interfaccia utente di amministrazione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
@@ -770,11 +771,12 @@ ht-degree: 0%
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689: più problemi con la visualizzazione della struttura delle categorie su livelli più profondi e che riflettono relazioni ancoraggio/non ancoraggio](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178: la pagina [!UICONTROL Edit Attribute Set] viene caricata lentamente con migliaia di attributi di prodotto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-63883: correzione di items_count errato nella risposta  [!DNL GraphQL]  per [!UICONTROL Requisition List]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
          - [ACP2E-3705: l&#39;esecuzione del cron indexer_update_all_views non riesce quando è impostato MAGE_INDEXER_THREADS_COUNT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
          - [ACSD-64467: l’editor WYSIWYG è vuoto dopo il salvataggio della descrizione della categoria a livello di visualizzazione negozio](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
          - [ACSD-63974: corregge il tempo di caricamento lento di [!UICONTROL Requisition List] con la paginazione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
    - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-- Riferimento per gli strumenti della riga di comando {#cli-reference}
+- Riferimento strumenti della riga di comando {#cli-reference}
    - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
    - [Upgrade Compatibility Tool](reference/uct.md)
 - Osservazione per Adobe Commerce {#observation-for-adobe-commerce}
@@ -811,7 +813,7 @@ ht-degree: 0%
       - [Configura](data-migration-tool/configure.md)
       - [Personalizza](data-migration-tool/customize.md)
       - [Specifiche tecniche](data-migration-tool/technical-specification.md)
-   - Migrare i dati {#migrate-data}
+   - Esegui migrazione dati {#migrate-data}
       - [Panoramica](data-migration-tool/migrate-data/overview.md)
       - [Impostazioni](data-migration-tool/migrate-data/settings.md)
       - [Dati](data-migration-tool/migrate-data/data.md)
