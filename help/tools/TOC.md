@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 58d57155fdb197897bff7647546b4a79740ebb38
+source-git-commit: b658fd11c7c178f41f9acec07a9aee6285991eda
 workflow-type: tm+mt
-source-wordcount: '7381'
+source-wordcount: '7397'
 ht-degree: 0%
 
 ---
@@ -766,6 +766,7 @@ ht-degree: 0%
          - [ACSD-64149: è possibile salvare il segmento del cliente con una condizione [!UICONTROL Date range] quando viene modificata una sola data](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition.md)
          - [ACSD-64111: Corregge l&#39;errore InvalidArgumentException: Class does not exist quando si impostano condizioni nidificate per un componente Product in [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992: [!UICONTROL Cart Price Rule] con coupon e errore di condizione del metodo di spedizione nell&#39;interfaccia utente di amministrazione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
+         - [ACSD-64137: la ricerca di posizioni di prelievo in base al codice postale non funziona correttamente per la localizzazione olandese](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code.md)
       - v1.1.61 {#v1-1-61}
          - [ACSD-64546: messaggio di errore generico nell’interfaccia utente e eccezione di conversione da array a stringa durante la creazione dell’etichetta UPS](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion.md)
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
