@@ -1,11 +1,11 @@
 ---
-source-git-commit: adba9931e14e4cd633b6880116017b85b1785336
+source-git-commit: 9242cdf1e3a3eecf28013dce7688b646d0a3e8fc
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '979'
 ht-degree: 54%
 
 ---
-# requisiti di sistema
+# Requisiti di sistema
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8,17
+          —
       </td>
     </tr>
     <tr>
@@ -54,7 +54,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.4/8.3
+            8,4/8,3
       </td>
     </tr>
     <tr>
@@ -90,7 +90,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
       <td>
-            8.0.mysql_aurora.3.08 o più recente disponibile
+            8.0.mysql_aurora.3.08 o versione più recente disponibile
       </td>
     </tr>
     <tr>
@@ -137,7 +137,7 @@ ht-degree: 54%
       <th>2.4.7-p3</th>
       <th>2.4.7-p2</th>
       <th>2.4.7-p1</th>
-      <th>2.4.7</th>
+      <th>2.4.7.</th>
     </tr>
   </thead>
   <tbody>
@@ -438,7 +438,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-            ElastiCache versione 7.1 per Redis OSS (migliorato)
+            ElastiCache versione 7.1 per Redis OSS (ottimizzato)
       </td>
       <td>
             Redis 7.0
@@ -465,13 +465,13 @@ ht-degree: 54%
           —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
           —
@@ -510,14 +510,14 @@ ht-degree: 54%
       <th>2.4.6-p10</th>
       <th>2.4.6-p9</th>
       <th>2.4.6-p8</th>
-      <th>2.4.6-p7</th>
-      <th>2.4.6-p6</th>
-      <th>2.4.6-p5</th>
+      <th>2,4,6-p7</th>
+      <th>2,4,6-p6</th>
+      <th>2,4,6-p5</th>
       <th>2,4,6-p4</th>
       <th>2.4.6-p3</th>
       <th>2.4.6-p2</th>
       <th>2.4.6-p1</th>
-      <th>2.4.6</th>
+      <th>2.4.6.</th>
     </tr>
   </thead>
   <tbody>
@@ -1028,7 +1028,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-            ElastiCache versione 7.1 per Redis OSS (migliorato)
+            ElastiCache versione 7.1 per Redis OSS (ottimizzato)
       </td>
       <td>
             Redis 6.2
@@ -1064,12 +1064,6 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
       <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
           —
       </td>
       <td>
@@ -1088,10 +1082,16 @@ ht-degree: 54%
           —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
       </td>
       <td>
           —
@@ -1889,7 +1889,7 @@ ht-degree: 54%
       <th>2.4.4-p8</th>
       <th>2.4.4-p7</th>
       <th>2.4.4-p6</th>
-      <th>2.4.4-P5</th>
+      <th>2.4.4-p5</th>
       <th>2.4.4-p4</th>
       <th>2.4.4-p3</th>
       <th>2.4.4-p2</th>
@@ -2048,7 +2048,7 @@ ht-degree: 54%
             10,5, 10,4
       </td>
       <td>
-            10.5, 10.4
+            10,5, 10,4
       </td>
       <td>
             10,4
@@ -2588,25 +2588,25 @@ ht-degree: 54%
           —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
             7,9
@@ -2659,236 +2659,6 @@ ht-degree: 54%
       <td>
           —
       </td>
-      <td>
-          —
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<table style="table-layout:auto">
-  <thead>
-    <tr>
-      <th>
-        Dipendenze software
-      </th>
-      <th>2.4.3-p3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><span class="uicontrol">[!DNL Composer]</span></td>
-      <td>
-            1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-            7,16
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
-      <td>
-            1,2
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
-      <td>
-            10,4
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL MySQL]</span></td>
-      <td>
-            8,0
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL PHP]</span></td>
-      <td>
-            7,4
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
-      <td>
-            3,8
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Redis]</span></td>
-      <td>
-            6,0
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Varnish]</span></td>
-      <td>
-            6,5
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Apache]</span></td>
-      <td>
-            2,4
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL nginx]</span></td>
-      <td>
-            1,18
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
-      <td>
-            5,7
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS S3]</span></td>
-      <td>
-            ✔️
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
-      <td>
-            3.8.11
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
-      <td>
-            Redis 6
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
-      <td>
-            7,9
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
-      <td>
-          —
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<table style="table-layout:auto">
-  <thead>
-    <tr>
-      <th>
-        Dipendenze software
-      </th>
-      <th>2.4.2-p2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><span class="uicontrol">[!DNL Composer]</span></td>
-      <td>
-            1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-            7,9
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
-      <td>
-          —
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
-      <td>
-            10,4
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL MySQL]</span></td>
-      <td>
-            8,0
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL PHP]</span></td>
-      <td>
-            7,4
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
-      <td>
-            3,8
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Redis]</span></td>
-      <td>
-            6,0
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Varnish]</span></td>
-      <td>
-            6,4
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Apache]</span></td>
-      <td>
-            2,4
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL nginx]</span></td>
-      <td>
-            1,18
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
-      <td>
-          --
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS S3]</span></td>
-      <td>
-            ✔️
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
-      <td>
-          --
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
-      <td>
-          --
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
-      <td>
-          --
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
       <td>
           —
       </td>

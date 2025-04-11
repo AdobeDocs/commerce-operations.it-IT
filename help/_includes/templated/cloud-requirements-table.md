@@ -1,7 +1,7 @@
 ---
-source-git-commit: c900b70bd67d4fe9eb1e040d1f87c7952c8d5ab0
+source-git-commit: 9242cdf1e3a3eecf28013dce7688b646d0a3e8fc
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '433'
 ht-degree: 54%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 54%
       <th>
         Dipendenze software
       </th>
-      <th>2.4.8</th>
+      <th>2.4.8.</th>
     </tr>
   </thead>
   <tbody>
@@ -50,7 +50,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.4/8.3
+            8,4/8,3
       </td>
     </tr>
     <tr>
@@ -263,7 +263,7 @@ ht-degree: 54%
       <th>2.4.6-p10</th>
       <th>2.4.6-p9</th>
       <th>2.4.6-p8</th>
-      <th>2.4.6-p7</th>
+      <th>2,4,6-p7</th>
       <th>2,4,6-p6</th>
       <th>2,4,6-p5</th>
       <th>2,4,6-p4</th>
@@ -650,13 +650,13 @@ ht-degree: 54%
           —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
           —
@@ -1015,16 +1015,16 @@ ht-degree: 54%
           —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
           —
@@ -1307,128 +1307,6 @@ ht-degree: 54%
       </td>
       <td>
             6,2
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<table style="table-layout:auto">
-  <thead>
-    <tr>
-      <th>
-        Dipendenze software
-      </th>
-      <th>2.4.3-p3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><span class="uicontrol">[!DNL Composer]</span></td>
-      <td>
-            1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-          —
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
-      <td>
-            1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
-      <td>
-            10,4
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL New Relic]</span></td>
-      <td>
-          —
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL PHP]</span></td>
-      <td>
-            7,4
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
-      <td>
-            3,8
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Redis]</span></td>
-      <td>
-            6,0
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<table style="table-layout:auto">
-  <thead>
-    <tr>
-      <th>
-        Dipendenze software
-      </th>
-      <th>2.4.2-p2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><span class="uicontrol">[!DNL Composer]</span></td>
-      <td>
-            1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-            7,9
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
-      <td>
-          —
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
-      <td>
-            10,4
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL New Relic]</span></td>
-      <td>
-          —
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL PHP]</span></td>
-      <td>
-            7,4
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
-      <td>
-            3,8
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Redis]</span></td>
-      <td>
-            6,0
       </td>
     </tr>
   </tbody>
