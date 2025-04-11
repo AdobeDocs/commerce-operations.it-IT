@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: b658fd11c7c178f41f9acec07a9aee6285991eda
+source-git-commit: 72917c9e97141216e7393c28048e43f4f5f9c73f
 workflow-type: tm+mt
-source-wordcount: '7397'
+source-wordcount: '7407'
 ht-degree: 0%
 
 ---
@@ -777,6 +777,7 @@ ht-degree: 0%
          - [ACP2E-3705: l&#39;esecuzione del cron indexer_update_all_views non riesce quando è impostato MAGE_INDEXER_THREADS_COUNT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
          - [ACSD-64467: l’editor WYSIWYG è vuoto dopo il salvataggio della descrizione della categoria a livello di visualizzazione negozio](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
          - [ACSD-63974: corregge il tempo di caricamento lento di [!UICONTROL Requisition List] con la paginazione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
+         - [ACSD-64209: il modulo di pianificazione Cron recupera i preventivi negoziabili senza escludere [!UICONTROL Ordered] preventivi](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers.md)
    - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Riferimento strumenti della riga di comando {#cli-reference}
    - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
