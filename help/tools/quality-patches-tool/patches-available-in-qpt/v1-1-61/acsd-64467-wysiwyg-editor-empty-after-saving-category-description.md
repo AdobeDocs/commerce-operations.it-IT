@@ -3,8 +3,7 @@ title: 'ACSD-64467: l’editor WYSIWYG è vuoto dopo il salvataggio della descri
 description: Applica la patch ACSD-64467 per risolvere il problema di Adobe Commerce, in cui l’editor WYSIWYG appare vuoto dopo il salvataggio di una descrizione della categoria a livello di visualizzazione archivio.
 feature: Page Content
 role: Admin, Developer
-exl-id: 8bc1794f-ace1-4719-9fff-194dbd701ab6
-source-git-commit: b71447d5dac3208e537b29204dc8d47e8838f584
+source-git-commit: 4e883b3ec9b790f52dd56206539475e72bdf361d
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 # ACSD-64467: l’editor WYSIWYG è vuoto dopo il salvataggio della descrizione della categoria a livello di visualizzazione negozio
 
-La patch ACSD-64467 risolve il problema se l’editor WYSIWYG appare vuoto dopo il salvataggio di una descrizione della categoria a livello di visualizzazione archivio. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61. L’ID della patch è ACSD-64467. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.
+The ACSD-64467 patch fixes the issue where the WYSIWYG editor appears empty after saving a category description at the store view level. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61. The patch ID is ACSD-64467. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.
 
 ## Prodotti e versioni interessati
 
@@ -31,18 +30,18 @@ La patch ACSD-64467 risolve il problema se l’editor WYSIWYG appare vuoto dopo 
 
 ## Problema
 
-L’editor WYSIWYG appare vuoto dopo aver salvato una descrizione della categoria a livello di visualizzazione store.
+The WYSIWYG editor appears empty after saving a category description at the store view level.
 
 <u>Passaggi da riprodurre</u>:
 
-1. Modifica una categoria in Commerce Admin a livello di visualizzazione store.
-1. Deselezionare la casella di controllo *[!UICONTROL Use default value]* accanto alla descrizione della categoria.
-1. Immetti una descrizione nell’editor di WYSIWYG.
+1. Edit a category in the Commerce Admin at the store view level.
+1. Deselect the *[!UICONTROL Use default value]* checkbox next to the category description.
+1. Enter a description in the WYSIWYG editor.
 1. Fare clic su **[!UICONTROL Save]**.
 
 <u>Risultati previsti</u>:
 
-La descrizione viene salvata e visualizzata correttamente.
+The description is saved and properly displayed.
 
 <u>Risultati effettivi</u>:
 
