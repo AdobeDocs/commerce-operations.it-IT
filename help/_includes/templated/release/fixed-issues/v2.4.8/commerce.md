@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2f8ca1dd3289c1a24e33198c95d38c1a04a507ff
+source-git-commit: 934fe621356c45bcefd2f84b7d01986b4995b061
 workflow-type: tm+mt
-source-wordcount: '28394'
+source-wordcount: '28390'
 ht-degree: 0%
 
 ---
@@ -99,8 +99,8 @@ In precedenza era possibile creare il gruppo di clienti prezzo gruppo sito web d
    * _Correzione nota_: il sistema ora allinea correttamente i pulsanti Azioni pagina al lato destro dell&#39;intestazione fissa nel pannello di amministrazione, migliorando l&#39;aspetto professionale. In precedenza, questi pulsanti si spostavano erroneamente sul lato sinistro dell’intestazione fissa.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/38701>
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/commit/44cef3a9>
-* _AC-11999_: errore dev:di:info in magento 2.4.7
-   * _Correzione nota_: i parametri del costruttore vengono ora visualizzati correttamente durante l&#39;esecuzione del comando dev:di:info, evitando il verificarsi di errori. In precedenza, l’esecuzione di questo comando generava un errore a causa di una mancata corrispondenza del tipo nell’argomento.
+* _AC-11999_: errore `dev:di:info` in magento 2.4.7
+   * _Correzione nota_: i parametri del costruttore vengono ora visualizzati correttamente durante l&#39;esecuzione del comando `dev:di:info`, evitando il verificarsi di errori. In precedenza, l’esecuzione di questo comando generava un errore a causa di una mancata corrispondenza del tipo nell’argomento.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/38740>
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-13000_: casella di controllo per l&#39;accesso come consenso del cliente non traducibile
@@ -1531,8 +1531,8 @@ In precedenza, venivano assegnati all’archivio di amministrazione invece che a
 * _LYNX-399_: la miniatura segnaposto viene restituita quando un prodotto semplice viene aggiunto al carrello all&#39;interno di un prodotto raggruppato
    * _Nota corretta_: è stato risolto un problema che causava la restituzione di un&#39;immagine di miniatura segnaposto da parte dell&#39;aggiunta di un prodotto semplice (parte di un prodotto raggruppato) al carrello, anche quando al prodotto era stata assegnata un&#39;immagine.
 Dettagli correzione:
-· La miniatura del prodotto ora mostra correttamente l&#39;immagine assegnata, se disponibile.
-· La selezione delle miniature rispetta la configurazione di amministrazione in:
+* Ora la miniatura del prodotto mostra correttamente l’immagine assegnata, se disponibile.
+* La selezione delle miniature rispetta la configurazione di amministrazione in:
 Negozi > Configurazione > Vendite > Pagamento > Carrello acquisti > Immagine prodotto raggruppato.
 In questo modo si garantisce un comportamento coerente delle miniature per i prodotti raggruppati in base alle impostazioni dello store.
 * _LYNX-400_: gli attributi di opzione personalizzati del cliente non funzionano con valori interi
@@ -1542,8 +1542,8 @@ In questo modo si garantisce un comportamento coerente delle miniature per i pro
 * _LYNX-403_: only_x_left_in_stock restituisce sempre 0 per i prodotti configurabili
    * _Correzione nota_: è stato risolto un problema a causa del quale l&#39;attributo only_x_left_in_stock restituiva sempre 0 per i prodotti configurabili quando aggiunti utilizzando lo SKU padre con opzioni.
 Dettagli correzione:
-· Il valore only_x_left_in_stock ora riflette con precisione il materiale grezzo della variante figlio selezionata invece dello SKU padre.
-· In questo modo i livelli delle scorte vengono visualizzati correttamente per le varianti di prodotto configurabili nel carrello e nelle pagine dei prodotti.
+* Il valore only_x_left_in_stock ora riflette con precisione il materiale grezzo della variante figlio selezionata invece dello SKU padre.
+* In questo modo i livelli delle scorte vengono visualizzati correttamente per le varianti di prodotto configurabili nel carrello e nelle pagine dei prodotti.
 * _LYNX-405_: Errore GraphQL: tipo di file non supportato nella query delle opzioni personalizzabili
    * _Correzione nota_: è stato risolto un problema a causa del quale GraphQL restituiva un errore per le opzioni personalizzabili di tipo &quot;file&quot; negli elementi del carrello. La query ora restituisce correttamente i dettagli per tutti i tipi di opzioni personalizzabili, comprese le opzioni basate su file, senza causare errori.
 * _LYNX-411_: la query GraphQL non restituisce il prezzo normale calcolato corretto per i prodotti personalizzabili
@@ -1551,7 +1551,7 @@ Dettagli correzione:
 * _LYNX-412_: le imposte applicate tramite EstimatedTotals persistono con mutazioni aggiornate
    * _Correzione nota_: è stato risolto un problema con la mutazione EstimatedTotals a causa del quale le imposte applicate persistevano su un carrello anche dopo l&#39;aggiornamento dell&#39;area geografica o del codice postale. La mutazione ora aggiorna correttamente le imposte applicate quando si cambia tra i valori di area e codice postale, garantendo che venga applicata solo la regola fiscale corretta in base ai dati del carrello correnti.
 * _LYNX-420_: l&#39;attributo is_available in CartItemInterface restituisce true anche quando le scorte vendibili sono inferiori alla quantità del prodotto
-   * _Correzione nota_: è stato risolto un problema a causa del quale l&#39;attributo is_available in CartItemInterface restituiva erroneamente true anche quando le scorte vendibili erano inferiori alla quantità di prodotto richiesta. Il campo is_available ora restituisce correttamente false quando la quantità del prodotto supera le scorte disponibili.
+   * _Correzione nota_: è stato risolto un problema a causa del quale l&#39;attributo is_available in CartItemInterface restituiva erroneamente true anche quando le scorte vendibili erano inferiori alla quantità di prodotto richiesta. The is_available field now correctly returns false when the product&#39;s quantity exceeds the available stock.
 * _LYNX-421_: impossibile aggiungere il coupon al carrello per lo sconto solo spedizione
    * _Correzione nota_: è stato risolto un problema che impediva l&#39;applicazione di un coupon a un carrello per gli sconti solo per la spedizione. Il coupon viene ora applicato correttamente all’importo di spedizione quando si utilizza una regola di vendita senza condizioni di prodotto, garantendo l’applicazione dello sconto previsto alle spese di spedizione.
 * _LYNX-425_: prezzo regolare del prodotto con 12 decimali e valore errato
