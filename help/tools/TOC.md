@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 72917c9e97141216e7393c28048e43f4f5f9c73f
+source-git-commit: 0960da0b0c1945e899ce092fb938de13e1b5c95c
 workflow-type: tm+mt
-source-wordcount: '7407'
+source-wordcount: '7422'
 ht-degree: 0%
 
 ---
@@ -772,6 +772,7 @@ ht-degree: 0%
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689: più problemi con la visualizzazione della struttura delle categorie su livelli più profondi e che riflettono relazioni ancoraggio/non ancoraggio](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178: la pagina [!UICONTROL Edit Attribute Set] viene caricata lentamente con migliaia di attributi di prodotto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-64431: la mutazione &quot;placeOrder&quot; con codice coupon nella richiesta genera un errore interno](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error.md)
          - [ACSD-64684: errore di convalida durante il salvataggio di una gift card con un valore superiore a 999 a causa della virgola in mille (1.000)](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand.md)
          - [ACSD-63883: correzione di items_count errato nella risposta  [!DNL GraphQL]  per [!UICONTROL Requisition List]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
          - [ACP2E-3705: l&#39;esecuzione del cron indexer_update_all_views non riesce quando è impostato MAGE_INDEXER_THREADS_COUNT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
@@ -779,7 +780,7 @@ ht-degree: 0%
          - [ACSD-63974: corregge il tempo di caricamento lento di [!UICONTROL Requisition List] con la paginazione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
          - [ACSD-64209: il modulo di pianificazione Cron recupera i preventivi negoziabili senza escludere [!UICONTROL Ordered] preventivi](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers.md)
    - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-- Riferimento strumenti della riga di comando {#cli-reference}
+- Riferimento per gli strumenti della riga di comando {#cli-reference}
    - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
    - [Upgrade Compatibility Tool](reference/uct.md)
 - Osservazione per Adobe Commerce {#observation-for-adobe-commerce}
@@ -816,7 +817,7 @@ ht-degree: 0%
       - [Configura](data-migration-tool/configure.md)
       - [Personalizza](data-migration-tool/customize.md)
       - [Specifiche tecniche](data-migration-tool/technical-specification.md)
-   - Esegui migrazione dati {#migrate-data}
+   - Migrare i dati {#migrate-data}
       - [Panoramica](data-migration-tool/migrate-data/overview.md)
       - [Impostazioni](data-migration-tool/migrate-data/settings.md)
       - [Dati](data-migration-tool/migrate-data/data.md)
