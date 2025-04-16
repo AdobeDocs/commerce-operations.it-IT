@@ -3,15 +3,15 @@ title: 'ACSD-64431: la mutazione "placeOrder" con codice coupon nella richiesta 
 description: Applica la patch ACSD-64431 per risolvere il problema di Adobe Commerce, in cui la mutazione "placeOrder" contenente le informazioni sul codice del coupon nella richiesta genera un errore interno del server invece di effettuare l’ordine correttamente.
 feature: GraphQL, Orders, Promotions/Events
 role: Admin, Developer
-source-git-commit: 883b9db12308c8832afbf709bc188edab746618f
+exl-id: 13918f3e-842b-4b2e-b2e2-2d8add542a87
+source-git-commit: 43f4055d7c6bf681fde851d5132860ea7b68b677
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-64431: la mutazione &quot;placeOrder&quot; con codice coupon nella richiesta genera un errore interno
+# ACSD-64431: la mutazione &quot;placeOrder&quot; con codice coupon nella richiesta genera un errore interno del server
 
 La patch ACSD-64431 risolve il problema per cui la mutazione `placeOrder` contenente le informazioni sul codice coupon nella richiesta genera un errore interno del server invece di eseguire l&#39;ordine correttamente. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61. L’ID della patch è ACSD-64431. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.
 
@@ -341,10 +341,6 @@ Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del m
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
-
-## Passaggi aggiuntivi necessari dopo l&#39;installazione della patch
-
-Questa sezione è facoltativa; potrebbero essere necessari alcuni passaggi dopo l’applicazione della patch per risolvere il problema. 
 
 ## Lettura correlata
 
