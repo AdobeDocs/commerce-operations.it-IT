@@ -1,5 +1,5 @@
 ---
-source-git-commit: 54757d09eb0f476229e567e43c58dc2130a59ac9
+source-git-commit: f756964406f101a93a513600f668edbffec17cb1
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
@@ -255,7 +255,7 @@ Il supporto per la versione 2.4.5 di termina in agosto  9, 2025.
 
 ## 2.4.4.
 
-Il supporto per la riga di rilascio 2.4.4 termina il 12 aprile 2025.
+Il supporto per la riga di rilascio 2.4.4 è terminato il 12 aprile 2025.
 
 <table>
   <thead>
@@ -354,7 +354,7 @@ Il supporto per la riga di rilascio 2.4.4 termina il 12 aprile 2025.
 
 ## 2,4,0-2,4,3
 
-Il supporto per la linea di rilascio 2.4.0-2.4.3 è terminato il 28 novembre 2022.
+Il supporto per la riga di rilascio 2.4.0-2.4.3 è terminato il 28 novembre 2022.
 
 <table>
   <thead>
@@ -491,7 +491,7 @@ Il supporto per la riga di rilascio 2.3 è terminato a settembre  8 ottobre 202
         <td>
           2.3.5-p2
         </td>
-        <td>Luglio 28, 2020</td>
+        <td>28 luglio 2020</td>
     </tr>
     <tr>
         <td>
@@ -515,7 +515,7 @@ Il supporto per la riga di rilascio 2.3 è terminato a settembre  8 ottobre 202
         <td>
           2.3.3-p1
         </td>
-        <td>Gennaio 28, 2020</td>
+        <td>28 gennaio 2020</td>
     </tr>
     <tr>
         <td>
@@ -677,13 +677,13 @@ Il supporto per la riga di rilascio 2.1 è terminato il 30 giugno 2019.
         <td>
           2.1.15
         </td>
-        <td>settembre 18, 2018</td>
+        <td>18 settembre 2018</td>
     </tr>
     <tr>
         <td>
           2.1.14
         </td>
-        <td>giugno 27, 2018</td>
+        <td>27 giugno 2018</td>
     </tr>
     <tr>
         <td>
@@ -695,19 +695,19 @@ Il supporto per la riga di rilascio 2.1 è terminato il 30 giugno 2019.
         <td>
           2.1.12
         </td>
-        <td>febbraio 27, 2018</td>
+        <td>27 febbraio 2018</td>
     </tr>
     <tr>
         <td>
           2.1.11
         </td>
-        <td>dicembre 12, 2017</td>
+        <td>12 dicembre 2017</td>
     </tr>
     <tr>
         <td>
           2.1.10
         </td>
-        <td>7 novembre 2017</td>
+        <td>Novembre  7 luglio 2017</td>
     </tr>
     <tr>
         <td>
@@ -860,13 +860,13 @@ Il supporto per la versione 2.0 è terminato il 31 marzo 2018.
         <td>
           2.0.6.
         </td>
-        <td>maggio 17, 2016</td>
+        <td>17 maggio 2016</td>
     </tr>
     <tr>
         <td>
           2.0.5
         </td>
-        <td>aprile 28, 2016</td>
+        <td>28 aprile 2016</td>
     </tr>
     <tr>
         <td>
@@ -884,13 +884,13 @@ Il supporto per la versione 2.0 è terminato il 31 marzo 2018.
         <td>
           2.0.2.
         </td>
-        <td>gennaio 28, 2016</td>
+        <td>28 gennaio 2016</td>
     </tr>
     <tr>
         <td>
           2.0.1.
         </td>
-        <td>gennaio 20, 2016</td>
+        <td>20 gennaio 2016</td>
     </tr>
     <tr>
         <td>
