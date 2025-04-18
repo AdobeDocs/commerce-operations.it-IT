@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2f8ca1dd3289c1a24e33198c95d38c1a04a507ff
+source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
 workflow-type: tm+mt
-source-wordcount: '26047'
+source-wordcount: '26039'
 ht-degree: 0%
 
 ---
@@ -195,8 +195,8 @@ In precedenza era possibile creare il gruppo di clienti prezzo gruppo sito web d
    * _Correzione nota_: il sistema ora allinea correttamente i pulsanti Azioni pagina al lato destro dell&#39;intestazione fissa nel pannello di amministrazione, migliorando l&#39;aspetto professionale. In precedenza, questi pulsanti si spostavano erroneamente sul lato sinistro dell’intestazione fissa.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/38701>
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/commit/44cef3a9>
-* _AC-11999_: errore dev:di:info in magento 2.4.7
-   * _Correzione nota_: i parametri del costruttore vengono ora visualizzati correttamente durante l&#39;esecuzione del comando dev:di:info, evitando il verificarsi di errori. In precedenza, l’esecuzione di questo comando generava un errore a causa di una mancata corrispondenza del tipo nell’argomento.
+* _AC-11999_: errore `dev:di:info` in magento 2.4.7
+   * _Correzione nota_: i parametri del costruttore vengono ora visualizzati correttamente durante l&#39;esecuzione del comando `dev:di:info`, evitando il verificarsi di errori. In precedenza, l’esecuzione di questo comando generava un errore a causa di una mancata corrispondenza del tipo nell’argomento.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/38740>
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-13000_: casella di controllo per l&#39;accesso come consenso del cliente non traducibile
@@ -331,7 +331,7 @@ Ora è possibile aggiornare gli stati degli ordini creati su misura, mentre in p
    * _Nota sulla correzione_: dopo la correzione, se il dominio amministratore personalizzato è un sottodominio del dominio principale, l&#39;amministratore è accessibile solo dal sottodominio configurato.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/37663>
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3392_: convalida interrotta per &quot;Quantità massima consentita nel carrello&quot;
+* _ACP2E-3392_: convalida interrotta per &#39;Quantità massima consentita nel carrello&#39;
    * _Correzione nota_: in precedenza, quando `Maximum Qty Allowed in Shopping Cart` veniva inserito vuoto, non veniva generata alcuna eccezione, ma qui non veniva accettato un valore vuoto. In seguito all’applicazione di questa correzione, se si inserisce una stringa vuota verranno generate delle eccezioni e non sarà possibile salvare il prodotto.
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_: [Problema interfaccia utente di anteprima Pagebuilder] I pulsanti nella colonna Page Builder non sono allineati correttamente
@@ -1084,8 +1084,8 @@ Ora è possibile aggiornare gli stati degli ordini creati su misura, mentre in p
    * _Correzione nota_: il sistema ora fa correttamente riferimento alle classi nei moduli, garantendo un funzionamento più fluido e impedendo arresti anomali dovuti a classi non esistenti. Ciò include un bug nei moduli Indexer e Creditmemo e l&#39;implementazione di HttpGetActionInterface nella classe PrintAction. In precedenza, i riferimenti di classe errati causavano errori e potenziali arresti anomali del sistema, e alcune funzionalità, come il nome del file creditmemo PDF e la reindicizzazione delle scorte, non funzionavano come previsto.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/39126>
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/pull/37784>
-* _AC-12964_: possibilità di definire l&#39;area per il comando dev:di:info CLI
-   * _Correzione nota_: il sistema ora consente agli sviluppatori di definire un&#39;area per il comando dev:di:info CLI, migliorando il processo di sviluppo e debug. In precedenza, questo comando consentiva di visualizzare solo le informazioni relative all&#39;area GLOBAL.
+* _AC-12964_: possibilità di definire l&#39;area per il comando CLI `dev:di:info`
+   * _Correzione nota_: il sistema ora consente agli sviluppatori di definire un&#39;area per il comando CLI `dev:di:info`, migliorando il processo di sviluppo e debug. In precedenza, questo comando consentiva di visualizzare solo le informazioni relative all&#39;area GLOBAL.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/38758>
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/pull/38759>
 * _AC-13149_: [Problema] aggiungere la proprietà isMultipleFiles al modello di elemento modulo immagine
@@ -1506,8 +1506,8 @@ In precedenza, venivano assegnati all’archivio di amministrazione invece che a
 * _LYNX-399_: la miniatura segnaposto viene restituita quando un prodotto semplice viene aggiunto al carrello all&#39;interno di un prodotto raggruppato
    * _Nota corretta_: è stato risolto un problema che causava la restituzione di un&#39;immagine di miniatura segnaposto da parte dell&#39;aggiunta di un prodotto semplice (parte di un prodotto raggruppato) al carrello, anche quando al prodotto era stata assegnata un&#39;immagine.
 Dettagli correzione:
-· La miniatura del prodotto ora mostra correttamente l&#39;immagine assegnata, se disponibile.
-· La selezione delle miniature rispetta la configurazione di amministrazione in:
+* Ora la miniatura del prodotto mostra correttamente l’immagine assegnata, se disponibile.
+* La selezione delle miniature rispetta la configurazione di amministrazione in:
 Negozi > Configurazione > Vendite > Pagamento > Carrello acquisti > Immagine prodotto raggruppato.
 In questo modo si garantisce un comportamento coerente delle miniature per i prodotti raggruppati in base alle impostazioni dello store.
 * _LYNX-400_: gli attributi di opzione personalizzati del cliente non funzionano con valori interi
@@ -1517,8 +1517,8 @@ In questo modo si garantisce un comportamento coerente delle miniature per i pro
 * _LYNX-403_: only_x_left_in_stock restituisce sempre 0 per i prodotti configurabili
    * _Correzione nota_: è stato risolto un problema a causa del quale l&#39;attributo only_x_left_in_stock restituiva sempre 0 per i prodotti configurabili quando aggiunti utilizzando lo SKU padre con opzioni.
 Dettagli correzione:
-· Il valore only_x_left_in_stock ora riflette con precisione il materiale grezzo della variante figlio selezionata invece dello SKU padre.
-· In questo modo i livelli delle scorte vengono visualizzati correttamente per le varianti di prodotto configurabili nel carrello e nelle pagine dei prodotti.
+* Il valore only_x_left_in_stock ora riflette con precisione il materiale grezzo della variante figlio selezionata invece dello SKU padre.
+* In questo modo i livelli delle scorte vengono visualizzati correttamente per le varianti di prodotto configurabili nel carrello e nelle pagine dei prodotti.
 * _LYNX-411_: la query GraphQL non restituisce il prezzo normale calcolato corretto per i prodotti personalizzabili
    * _Correzione nota_: è stato risolto un problema a causa del quale GraphQL non restituiva il prezzo normale calcolato corretto per i prodotti personalizzabili. La query ora include correttamente il prezzo regolare calcolato con valori personalizzabili applicati (ad esempio, $ 125) nella proprietà price, che riflette sia il prezzo di base che eventuali costi di personalizzazione aggiuntivi.
 * _LYNX-412_: le imposte applicate tramite EstimatedTotals persistono con mutazioni aggiornate
@@ -1534,7 +1534,7 @@ Dettagli correzione:
 * _LYNX-447_: errore del server GraphQL nel carrello con only_x_left_in_stock nel prodotto incluso
    * _Correzione nota_: è stato risolto un problema che causava un errore interno del server quando si recuperava un carrello contenente un prodotto in bundle con il campo only_x_left_in_stock nella query di GraphQL. GraphQL ora restituisce correttamente un valore float o null per il campo only_x_left_in_stock senza errori.
 * _LYNX-464_: errore GraphQL durante la rimozione di altri prodotti con prodotto configurabile insufficiente nel carrello
-   * _Correzione nota_: è stato risolto un problema a causa del quale il tentativo di rimuovere prodotti in magazzino dal carrello causava un errore di GraphQL di tipo &quot;La quantità richiesta non è disponibile&quot; se il carrello conteneva anche prodotti configurabili con scorte insufficienti. La rimozione ora funziona come previsto senza errori di attivazione.
+   * _Correzione nota_: è stato risolto un problema a causa del quale il tentativo di rimuovere dal carrello i prodotti in magazzino causava un errore di GraphQL di tipo &quot;La quantità richiesta non è disponibile&quot; se il carrello conteneva anche prodotti configurabili con scorte insufficienti. La rimozione ora funziona come previsto senza errori di attivazione.
 * _LYNX-469_: impossibile aggiungere prodotti perché la mutazione SKU fa distinzione tra maiuscole e minuscole
    * _Correzione nota_: è stato risolto un problema a causa del quale la mutazione addProductsToCart restituiva un errore &quot;PRODUCT_NOT_FOUND&quot; quando si utilizzavano SKU con maiuscole e minuscole diverse. La mutazione ora gestisce gli SKU senza distinzione tra maiuscole e minuscole, garantendo la coerenza con le query di Catalog Service e il comportamento PDP.
 * _LYNX-603_: l&#39;attributo del prodotto > ™ del formato breve del marchio registrato viene restituito come ™
