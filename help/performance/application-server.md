@@ -2,9 +2,9 @@
 title: Server applicazioni GraphQL
 description: Segui queste istruzioni per abilitare il server applicazioni GraphQL nella tua distribuzione Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: c5446f0273705b158297c0a253054742ec95b44e
+source-git-commit: 2f8396a367cbe1191bdf67aec75bd56f64d3fda8
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2074'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server consente ad Adobe Commerce di mantenere lo stato tra le richieste API di Commerce GraphQL. GraphQL Application Server, basato sull&#39;estensione Swoole, funziona come un processo con thread di lavoro che gestiscono l&#39;elaborazione delle richieste. Mantenendo uno stato di applicazione avviato tra le richieste API di GraphQL, GraphQL Application Server migliora la gestione delle richieste e le prestazioni complessive del prodotto. Le richieste API diventano notevolmente più efficienti.
 
-GraphQL Application Server è disponibile solo per Adobe Commerce. Non è disponibile per il Magento Open Source. Per i progetti Cloud Pro, è necessario [inviare un ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) per abilitare il server applicazioni GraphQL.
+GraphQL Application Server è disponibile solo per Adobe Commerce. Non è disponibile per Magento Open Source. Per i progetti Cloud Pro, è necessario [inviare un ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) per abilitare il server applicazioni GraphQL.
 
 >[!NOTE]
 >
->GraphQL Application Server non è attualmente compatibile con [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). I clienti di Adobe Commerce su infrastruttura cloud che attualmente utilizzano [!DNL AWS S3] per l&#39;[archiviazione remota](../configuration/remote-storage/cloud-support.md) non potranno utilizzare GraphQL Adobe Application Server fino a quando non rilasceranno un hotfix più tardi nel 2024.
+>GraphQL Application Server non è attualmente compatibile con [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). I clienti di Adobe Commerce sull&#39;infrastruttura cloud che attualmente utilizzano [!DNL AWS S3] per l&#39;[archiviazione remota](../configuration/remote-storage/cloud-support.md) non possono utilizzare GraphQL Application Server.
 
 ## Architettura
 
@@ -39,7 +39,7 @@ L&#39;esecuzione di GraphQL Application Server richiede quanto segue:
 * Commerce versione 2.4.7+
 * PHP 8.2 o superiore
 * Estensione PHP Swoole v5+ installata
-* RAM e CPU adeguate in base al carico previsto
+* RAM e CPU adeguati in base al carico previsto
 
 ## Abilitare e distribuire su infrastruttura cloud
 
@@ -126,7 +126,7 @@ Prima di distribuire GraphQL Application Server su progetti iniziali, effettuare
 
 >[!NOTE]
 >
->Assicurarsi che tutte le impostazioni personalizzate nel file radice `.magento.app.yaml` siano migrate in modo appropriato nel file `application-server/.magento/.magento.app.yaml`. Dopo aver aggiunto il file `application-server/.magento/.magento.app.yaml` al progetto, è necessario mantenerlo in aggiunta al file radice `.magento.app.yaml`. Se ad esempio è necessario [configurare il servizio RabbitMQ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) o [gestire le proprietà Web](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property), aggiungere la stessa configurazione anche a `application-server/.magento/.magento.app.yaml`.
+>Assicurarsi che tutte le impostazioni personalizzate nel file radice `.magento.app.yaml` siano migrate in modo appropriato nel file `application-server/.magento/.magento.app.yaml`. Dopo aver aggiunto il file `application-server/.magento/.magento.app.yaml` al progetto, è necessario mantenerlo in aggiunta al file radice `.magento.app.yaml`. Ad esempio, se devi [configurare il servizio RabbitMQ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) o [gestire le proprietà Web](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property), devi aggiungere la stessa configurazione anche a `application-server/.magento/.magento.app.yaml`.
 
 ### Distribuire progetti iniziali
 
