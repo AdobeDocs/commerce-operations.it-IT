@@ -4,9 +4,9 @@ description: Applica la patch ACSD-57003 per risolvere il problema Adobe Commerc
 feature: Orders, Invoices, Shipping/Delivery
 role: Admin, Developer
 exl-id: a28ecc35-5c9a-4bba-b0b9-67fbe37ed8c3
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 128107310416e97edca3b122e97456138d04073f
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ La patch ACSD-57003 risolve il problema in cui lo stato dell&#39;ordine cambia i
 
 **La patch è stata creata per la versione di Adobe Commerce:**
 
-* Adobe Commerce (tutti i metodi di implementazione) 2.4.6-p3
+* Adobe Commerce (tutti i metodi di implementazione) 2.4.6-p3, 2.4.6-p8, 2.4.7-p3
 
 **Compatibile con le versioni di Adobe Commerce:**
 
-* Adobe Commerce (tutti i metodi di implementazione) 2.4.6 - 2.4.6-p3
+* Adobe Commerce (tutti i metodi di implementazione) 2.4.6 - 2.4.6-p9, 2.4.7-p2 - 2.4.7-p4
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Lo stato dell&#39;ordine diventa *Completo* dopo la creazione di una nota di cre
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
