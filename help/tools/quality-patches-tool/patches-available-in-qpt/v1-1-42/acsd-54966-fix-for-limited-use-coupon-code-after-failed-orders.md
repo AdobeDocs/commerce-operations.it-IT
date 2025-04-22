@@ -4,9 +4,9 @@ description: Applica la patch ACSD-54966 per risolvere il problema di Adobe Comm
 feature: Promotions/Events, Shopping Cart, Orders
 role: Admin, Developer
 exl-id: e08062e5-62ff-4da6-918f-896af36edccc
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: f109d3544912ee09b25d882333840cf81d2f08e3
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -20,10 +20,12 @@ La patch ACSD-54966 risolve il problema che impedisce il riutilizzo dei codici c
 **La patch è stata creata per la versione di Adobe Commerce:**
 
 * Adobe Commerce (tutti i metodi di implementazione) 2.4.6-p1
+* Adobe Commerce 2.4.7-p2
 
 **Compatibile con le versioni di Adobe Commerce:**
 
-* Adobe Commerce (tutti i metodi di implementazione) 2.4.5 - 2.4.6-p3
+* Adobe Commerce (tutti i metodi di implementazione) 2.4.5 - 2.4.5-p10, 2.4.6 - 2.4.6-p8
+* Adobe Commerce: 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
@@ -53,7 +55,7 @@ Il cliente non è in grado di riutilizzare il codice coupon.
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
@@ -62,6 +64,5 @@ Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
 * [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
-
 
 Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida di [!DNL Quality Patches Tool].
