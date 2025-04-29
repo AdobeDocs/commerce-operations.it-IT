@@ -1,7 +1,7 @@
 ---
-source-git-commit: f756964406f101a93a513600f668edbffec17cb1
+source-git-commit: 736e2b53cc6df0083fc02c7e6e88da1e7ca00b0d
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '822'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 2%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 18 aprile 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta la versione 2.4.8 ai <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy">criteri del ciclo di vita</a>.</p>
+</td>
+      <td>
+        Aggiornamento principale
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/915f5f61c27bedeafdceee7a8c2e0cd474765418">915f5f</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 15 aprile 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error">descrizione dettagliata del problema risolto dalla patch ACSD-64431 nella versione QPT 1.1.61</a>.</p>
+</td>
+      <td>
+        Nuovo argomento
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/13f5f1c06e5c60047ed246bee766b7f515b0661f">13f5f1</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 11 aprile 2025
 
@@ -463,132 +507,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Nuovo argomento
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dab020c6b176717a38b5a81a8710217b0feab0eb">dab020</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 28 febbraio 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account">descrizione dettagliata del problema risolto dalla patch ACSD-64212 nella versione QPT 1.1.59</a></p>
-</td>
-      <td>
-        Nuovo argomento
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/60f62d00afe94c1e9874c623d6703162c35791c2">60f62d</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images">descrizione dettagliata del problema risolto dalla patch ACSD-64113 nella versione QPT 1.1.59</a></p>
-</td>
-      <td>
-        Nuovo argomento
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8b71fc097d50209786beda72cfc5a7eae6a0449f">8b71fc</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 27 febbraio 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error">descrizione dettagliata del problema risolto dalla patch ACSD-63574 nella versione QPT 1.1.59</a></p>
-</td>
-      <td>
-        Nuovo argomento
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7477a28c5db13e5c2daabea4f36dc9de784581a5">7477a2</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs">descrizione dettagliata del problema risolto dalla patch ACSD-63793 nella versione QPT 1.1.59</a></p>
-</td>
-      <td>
-        Nuovo argomento
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dae40520a0b5584a0627ddccaeaa7faed37e42bd">dae405</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 21 febbraio 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails">descrizione dettagliata del problema risolto dalla patch ACSD-64112 nella versione QPT 1.1.59</a>.</p>
-</td>
-      <td>
-        Nuovo argomento
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c22cffcbac34ed45d0252a879fa714cf283be4fe">c22cff</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 20 febbraio 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown">descrizione dettagliata del problema risolto dalla patch ACSD-63454 nella versione QPT 1.1.59</a>.</p>
-</td>
-      <td>
-        Nuovo argomento
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ee04269b7b443d9a75bc905e4dde2470e2c9eb7d">ee0426</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 19 febbraio 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change">descrizione dettagliata del problema risolto dalla patch ACSD-63870 nella versione QPT 1.1.59</a></p>
-</td>
-      <td>
-        Nuovo argomento
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/826125b9e176639a53c79ec7fea825b6963ffa3c">826125</a> (commit)</td>
     </tr>
   </tbody>
 </table>
