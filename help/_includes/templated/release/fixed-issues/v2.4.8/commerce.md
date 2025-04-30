@@ -1,7 +1,7 @@
 ---
-source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
+source-git-commit: c96f5620bbde1b15f6419c482c790517cc8de70c
 workflow-type: tm+mt
-source-wordcount: '28386'
+source-wordcount: '28383'
 ht-degree: 0%
 
 ---
@@ -202,7 +202,7 @@ In precedenza, dopo l’accesso, i prodotti aggiunti all’elenco di confronto c
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _ACP2E-2687_: problema di autorizzazione per l&#39;accesso al blocco dinamico
    * _Correzione nota_: in precedenza, per l&#39;amministratore con restrizioni, l&#39;aggiunta di un nuovo blocco dinamico generava un errore. Dopo aver implementato questa correzione, l’amministratore con restrizioni può aggiungere correttamente il blocco dinamico e modificarlo senza errori
-* _ACP2E-2787_: il nome dell&#39;apostrofo nella visualizzazione punto vendita è sostituito da &#39;
+* _ACP2E-2787_: il nome dell&#39;apostrofo nella visualizzazione punto vendita è sostituito da &amp;#039;
    * _Correzione nota_: i filtri di visualizzazione archivio della griglia ora visualizzano correttamente gli apostrofi
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/38395>
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/commit/39d54c2d>
@@ -1010,8 +1010,8 @@ In precedenza, i record nelle tabelle della sequenza di prodotti Bundle non veni
    * _Correzione nota_: i PHPDocs per il metodo \Magento\Framework\Data\Collection::getItemById sono stati aggiornati per includere null come possibile tipo restituito, risolvendo i problemi con gli strumenti di analisi statica. In precedenza, i PHPDocs del metodo non specificavano null come possibile tipo restituito, generando avvisi o errori nell&#39;analisi statica quando il metodo veniva utilizzato nelle istruzioni condizionali.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/38485>
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/pull/38439>
-* _AC-11592_: [Problema] Consenti solo preferenze valide durante l&#39;installazione:di:compilazione
-   * _Correzione nota_: il sistema ora genera un errore durante il comando setup:di:compile se viene creata una preferenza per una classe che non esiste o che è specificamente esclusa, assicurandosi che siano consentite solo le preferenze valide. In precedenza, questi scenari avrebbero avuto esito negativo in silenzio, rendendo potenzialmente inutili i plug-in associati alle classi originali.
+* _AC-11592_: [Problema] Consenti solo preferenze valide durante `setup:di:compile`
+   * _Correzione nota_: il sistema ora genera un errore durante il comando `setup:di:compile` se viene creata una preferenza per una classe che non esiste o che è specificamente esclusa, assicurandosi che siano consentite solo le preferenze valide. In precedenza, questi scenari avrebbero avuto esito negativo in silenzio, rendendo potenzialmente inutili i plug-in associati alle classi originali.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/38517>
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/pull/33161>
 * _AC-11651_: Magento sta tentando di modificare la proprietà di sola lettura nel metodo __wakeup di LoggerProxy
@@ -1566,7 +1566,7 @@ Dettagli correzione:
    * _Correzione nota_: è stato risolto un problema a causa del quale il tentativo di rimuovere dal carrello i prodotti in magazzino causava un errore di GraphQL di tipo &quot;La quantità richiesta non è disponibile&quot; se il carrello conteneva anche prodotti configurabili con scorte insufficienti. La rimozione ora funziona come previsto senza errori di attivazione.
 * _LYNX-469_: impossibile aggiungere prodotti perché la mutazione SKU fa distinzione tra maiuscole e minuscole
    * _Correzione nota_: è stato risolto un problema a causa del quale la mutazione addProductsToCart restituiva un errore &quot;PRODUCT_NOT_FOUND&quot; quando si utilizzavano SKU con maiuscole e minuscole diverse. La mutazione ora gestisce gli SKU senza distinzione tra maiuscole e minuscole, garantendo la coerenza con le query di Catalog Service e il comportamento PDP.
-* _LYNX-603_: l&#39;attributo del prodotto > ™ del formato breve del marchio registrato viene restituito come ™
+* _LYNX-603_: Attributo prodotto > marchio di fabbrica in forma abbreviata &amp;trade; viene restituito come &amp;trade;
    * _Correzione nota_: è stato risolto un problema di codifica dei caratteri relativo al nome del prodotto per l&#39;API GraphQL
 * _LYNX-619_: problema di mutazione updateCustomerEmail
    * _Correzione nota_: è stato risolto un problema relativo alla mutazione updateCustomerEmail a causa del quale i clienti che non disponevano degli attributi personalizzati richiesti (aggiunti dopo la creazione dell&#39;account) non potevano aggiornare l&#39;e-mail.
@@ -1641,7 +1641,7 @@ Dettagli correzione:
    * _Correzione nota_: il sistema ora carica correttamente i file CSS in modo asincrono nelle pagine di estrazione, anche quando l&#39;impostazione &#39;dev/css/use_css_critical_path&#39; è abilitata, assicurandosi che tali pagine vengano sottoposte a rendering con gli stili CSS appropriati. In precedenza, i criteri sulla sicurezza dei contenuti (CSP) con restrizioni impedivano l’esecuzione di JavaScript in linea, causando il mancato caricamento dei file CSS come previsto.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/39020>
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/pull/39040>
-* _AC-13398_: utilizzando il tipo virtuale per configurare il plug-in, il metodo intercettore non può essere generato correttamente nel comando setup:di:compile
+* _AC-13398_: utilizzando il tipo virtuale per configurare il plug-in, il metodo intercettore non può essere generato correttamente nel comando `setup:di:compile`
    * _Correzione nota_: il sistema ora genera correttamente i metodi intercettore quando utilizza un tipo virtuale per configurare un plug-in, garantendo risultati coerenti sia in modalità precompilata che in modalità runtime. In precedenza, il sistema generava risultati errati se precompilato rispetto alla compilazione in fase di esecuzione.
    * _Problema GitHub_: <https://github.com/magento/magento2/issues/33980>
    * _Contributo codice GitHub_: <https://github.com/magento/magento2/pull/38141>
