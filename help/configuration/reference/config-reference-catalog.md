@@ -3,9 +3,9 @@ title: Riferimento percorsi di configurazione catalogo
 description: Consulta un elenco di valori di configurazione del catalogo.
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
+source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,8 @@ Questi valori di configurazione sono disponibili nell&#39;amministratore in **Ar
 | Abilita suggerimenti di ricerca | `catalog/search/search_suggestion_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Conteggio suggerimenti di ricerca | `catalog/search/search_suggestion_count` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Mostra conteggio risultati per ogni suggerimento | `catalog/search/search_suggestion_count_results_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
-| Abilita Recommendations di ricerca | `catalog/search/search_recommendations_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
-| Conteggio Recommendations di ricerca | `catalog/search/search_recommendations_count` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Abilita Consigli di ricerca | `catalog/search/search_recommendations_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Conteggio consigli di ricerca | `catalog/search/search_recommendations_count` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Mostra il conteggio dei risultati per ogni consiglio | `catalog/search/search_recommendations_count_results_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Condizioni minime da rispettare | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Genera riscritture URL &quot;categoria/prodotto&quot; | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -150,6 +150,8 @@ Questi valori di configurazione sono disponibili nell&#39;amministratore in **Ar
 {style="table-layout:auto"}
 
 ## Percorsi di Visual Merchandiser
+
+[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
 
 Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Catalogo** > **Visual Merchandiser**.
 
