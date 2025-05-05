@@ -16,7 +16,7 @@ Utilizzare la tabella seguente per trovare informazioni importanti e note sulla 
 
 >[!TIP]
 >
->- Se non hai familiarità con Adobe Systems Commerce, consulta l&#39;architettura [](../../implementation-playbook/architecture/enterprise-blueprint.md) aziendale e [gli argomenti relativi a Adobe Systems Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) per orientarti.
+>- Se non hai familiarità con Adobe Systems Commerce, consulta l&#39;architettura [&#128279;](../../implementation-playbook/architecture/enterprise-blueprint.md) aziendale e [gli argomenti relativi a Adobe Systems Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) per orientarti.
 >- Per informazioni sugli aggiornamenti, vedere [letture](../../upgrade/resources/recommended-reading.md) consigliate.
 
 <table>

@@ -99,7 +99,7 @@ Continuare a monitorare attentamente il sito dopo l&#39;incidente poiché molti 
 
 ### Codice di controllo
 
-- Dall&#39;amministratore, esamina la configurazione](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) dell&#39;intestazione [HTML e del piè di pagina in tutti i livelli ambito, inclusi `website` e `store view`. Rimuovere eventuali codici JavaScript sconosciuti dagli script e dai fogli di stile e da impostazioni HTML varie. Conserva solo il codice riconosciuto, ad esempio i frammenti di tracciamento.
+- Dall&#39;amministratore, esamina la configurazione[&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) dell&#39;intestazione HTML e del piè di pagina in tutti i livelli ambito, inclusi `website` e `store view`. Rimuovere eventuali codici JavaScript sconosciuti dagli script e dai fogli di stile e da impostazioni HTML varie. Conserva solo il codice riconosciuto, ad esempio i frammenti di tracciamento.
 
 - Confrontare la base di codice di produzione corrente con la base di codice memorizzata nel sistema di controllo delle versioni (VCS, Version Control System).
 

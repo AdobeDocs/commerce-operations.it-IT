@@ -224,7 +224,7 @@ Per trovare il nome della variabile per l&#39;origine del paese di spedizione:
 
 1. Determinare l&#39;ambito.
 
-   Trovare l&#39;ambito nel [database](#find-a-website-or-store-view-scope-in-the-database) come descritto nel passaggio 1: Trovare il valore dell&#39;ambito della visualizzazione del sito Web o dell&#39;archivio. (Puoi anche trovare il valore nell&#39;amministratore come mostrato nella tabella [del passaggio 2: Imposta variabili globali, di visualizzazione del sito Web o di archiviazione](#step-2-set-global-website-or-store-view-variables.
+   Trovare l&#39;ambito nel [database](#find-a-website-or-store-view-scope-in-the-database) come descritto nel passaggio 1: Trovare il valore dell&#39;ambito della visualizzazione del sito Web o dell&#39;archivio. (Puoi anche trovare il valore nell&#39;amministratore come mostrato nella tabella [del passaggio 2: Imposta variabili globali, di visualizzazione del sito Web o di archiviazione] (#step-2-set-global-website-or-store-view-variables.
 
    Ad esempio, l&#39;ambito potrebbe essere `CONFIG__WEBSITES__DEFAULT`.
 

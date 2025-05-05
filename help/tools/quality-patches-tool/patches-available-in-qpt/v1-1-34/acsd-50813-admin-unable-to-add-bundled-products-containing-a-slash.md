@@ -1,6 +1,6 @@
 ---
 title: "ACSD-50813: l’amministratore non è in grado di aggiungere prodotti in bundle contenenti una barra"
-description: Applica la patch ACSD-50813 per risolvere il problema di prestazioni di Adobe Commerce, in cui l’amministratore non può aggiungere prodotti in bundle contenenti una barra (`/`) nello SKU con la funzionalità *Add Products by SKU* (Aggiungi prodotti per SKU) all’ordine di amministrazione.
+description: Applica la patch ACSD-50813 per risolvere il problema di prestazioni di Adobe Commerce, in cui l’amministratore non può aggiungere prodotti in bundle contenenti una barra (&grave;/&grave;) nello SKU con la funzionalità *Add Products by SKU* (Aggiungi prodotti per SKU) all’ordine di amministrazione.
 source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
 source-wordcount: '406'

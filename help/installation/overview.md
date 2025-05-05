@@ -13,7 +13,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Il diagramma seguente fornisce una panoramica di alto livello delle installazioni di _**on-premise**_ di Adobe Commerce:
+>Il diagramma seguente fornisce una panoramica di alto livello delle installazioni di _&#x200B;**on-premise**&#x200B;_ di Adobe Commerce:
 
 ![Funzionamento dell&#39;installazione](../assets/installation/install-diagram-24.svg)
 

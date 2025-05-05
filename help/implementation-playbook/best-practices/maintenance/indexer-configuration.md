@@ -35,7 +35,7 @@ Avere una grande store con più amministratori che lavorano nel back-end o avere
 Per massimizzare la prestazioni del sito, seguire queste best practice per l&#39;indicizzazione:
 
 - Esamina la configurazione dell&#39;indice.
-- Impostare gli indicizzatori su _[!UICONTROL Update on Schedule]_per siti di grandi dimensioni e siti con aggiornamenti frequenti e traffico pesanti. Consulta [Gestione Index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+- Impostare gli indicizzatori su _[!UICONTROL Update on Schedule]_&#x200B;per siti di grandi dimensioni e siti con aggiornamenti frequenti e traffico pesanti. Consulta [Gestione Index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Seguire [le best practice](../../../performance/configuration.md) sulle prestazioni per la gestione degli indici.
 
 >[!IMPORTANT]

@@ -17,7 +17,7 @@ Il profiler del database Commerce visualizza tutte le query implementate in una 
 
 ## Passaggio 1: Modificare la configurazione dell&#39;implementazione
 
-Modificare `<magento_root>/app/etc/env.php` per aggiungere il seguente riferimento alla classe del profiler del [](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php)database:
+Modificare `<magento_root>/app/etc/env.php` per aggiungere il seguente riferimento alla classe del profiler del [&#128279;](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php)database:
 
 ```php?start_inline=1
         'profiler' => [

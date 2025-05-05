@@ -234,7 +234,7 @@ Per verificare se l’aggiornamento è stato eseguito correttamente, apri l’UR
 
 Se l&#39;applicazione non riesce con un errore `We're sorry, an error has occurred while generating this email.`:
 
-1. Reimposta la proprietà e le autorizzazioni del file system [](../../installation/prerequisites/file-system/configure-permissions.md) come utente con privilegi `root`.
+1. Reimposta la proprietà e le autorizzazioni del file system [&#128279;](../../installation/prerequisites/file-system/configure-permissions.md) come utente con privilegi `root`.
 1. Cancella le directory seguenti:
    - `var/cache/`
    - `var/page_cache/`

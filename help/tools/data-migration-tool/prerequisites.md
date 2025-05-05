@@ -44,6 +44,6 @@ Se la registrazione binaria è abilitata per il database di Magento 1, impostare
 
 Migra il codice dell’estensione del Magento 1 al Magento 2.
 
-Per trovare le versioni più recenti delle estensioni, visita [!DNL [Commerce Marketplace]](https://marketplace.magento.com/) o contatta il provider di estensioni.
+Per trovare le versioni più recenti delle estensioni, visita [[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/) o contatta il provider di estensioni.
 
-È inoltre possibile utilizzare [!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).
+È inoltre possibile utilizzare [[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).

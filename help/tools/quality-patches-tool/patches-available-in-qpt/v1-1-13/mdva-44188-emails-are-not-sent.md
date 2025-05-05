@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-44188: le e-mail non vengono inviate a ID contenenti ".-"'
-description: La patch MDVA-44188 risolve il problema per cui le e-mail non vengono inviate agli ID e-mail contenenti `.-". Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13. L'ID della patch è MDVA-44188. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-44188 risolve il problema per cui le e-mail non vengono inviate agli ID e-mail contenenti &grave;.-". Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13. L'ID della patch è MDVA-44188. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Communications
 role: Admin
 exl-id: 9029c7f1-3e62-44a1-8962-9730ae54db7d

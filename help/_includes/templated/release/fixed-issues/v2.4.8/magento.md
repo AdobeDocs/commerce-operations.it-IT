@@ -267,7 +267,7 @@ Il sistema ora visualizza correttamente il campo &quot;created_at&quot; dai comm
 * __i18n:collect-phrase interrompe l&#39;integrità delle traduzioni__
 Il comando `bin/magento i18n:collect-phrases -o` ora raccoglie e aggiunge correttamente nuove frasi dai file JavaScript e .phtml, garantendo che le traduzioni vengano riflesse correttamente nel file di traduzione. In precedenza, il sistema non era in grado di includere frasi di traduzione multilinea da file JavaScript e frasi da file .phtml nel file di traduzione, il che portava a traduzioni incomplete o errate.
   _AC-9843 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/0c53bbf7)_
-* __Il nome dell&#39;apostrofo nella visualizzazione archivio è stato sostituito da &amp;#039;__
+* __Il nome dell&#39;apostrofo nella visualizzazione archivio è stato sostituito da &#039;__
 I filtri di visualizzazione archivio della griglia ora visualizzano correttamente gli apostrofi
   _ACP2E-2787 - [Problema GitHub](https://github.com/magento/magento2/issues/38395) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/39d54c2d)_
 * __Il caricamento dei favicon non riesce a convalidare i file .ico__
@@ -1449,7 +1449,7 @@ Dettagli correzione:
 * __Impossibile aggiungere prodotti perché la mutazione SKU nella mutazione fa distinzione tra maiuscole e minuscole__
 È stato risolto un problema a causa del quale la mutazione addProductsToCart restituiva un errore &quot;PRODUCT_NOT_FOUND&quot; quando si utilizzavano SKU con maiuscole e minuscole diverse. La mutazione ora gestisce gli SKU senza distinzione tra maiuscole e minuscole, garantendo la coerenza con le query di Catalog Service e il comportamento PDP.
   _LYNX-469_
-* __Attributo prodotto > marchio di fabbrica formato breve &amp;trade; viene restituito come &amp;trade;__
+* __Attributo prodotto > marchio di fabbrica formato breve &trade; viene restituito come &trade;__
 È stato risolto un problema di codifica dei caratteri con il nome del prodotto per l’API GraphQL.
   _LYNX-603_
 * __problema di mutazione di customerEmail__
