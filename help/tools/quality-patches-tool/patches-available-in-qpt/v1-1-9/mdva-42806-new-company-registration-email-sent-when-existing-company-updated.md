@@ -1,6 +1,6 @@
 ---
 title: '''MDVA-42806: Nuovo''e-mail di registrazione della società viene inviata ogni volta che viene aggiornata la società esistente'''
-description: La patch MDVA-42806 risolve il problema per cui viene inviata una nuova e-mail aziendale registrazione ogni volta che una società esistente viene aggiornata tramite API REST. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9. L'ID della patch è MDVA-42806. Si prega di notare che il problema è pianificato per essere risolto in Adobe Systems Commerce 2.4.5.
+description: La patch MDVA-42806 risolve il problema per cui viene inviata una nuova e-mail aziendale registrazione ogni volta che una società esistente viene aggiornata tramite API REST. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9. L'ID della patch è MDVA-42806. Si prega di notare che il problema è pianificato per essere risolto in Adobe Systems Commerce 2.4.5.
 feature: REST, B2B, Communications, Companies
 role: Admin
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # MDVA-42806: Nuovo e-mail di registrazione aziendale viene inviata ogni volta che viene aggiornata una società esistente
 
-La patch MDVA-42806 risolve il problema per cui viene inviata una nuova e-mail aziendale registrazione ogni volta che una società esistente viene aggiornata tramite API REST. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9. L&#39;ID della patch è MDVA-42806. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+La patch MDVA-42806 risolve il problema per cui viene inviata una nuova e-mail aziendale registrazione ogni volta che una società esistente viene aggiornata tramite API REST. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9. L&#39;ID della patch è MDVA-42806. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 
 ## Prodotti e versioni interessati
 
@@ -26,7 +26,7 @@ La patch MDVA-42806 risolve il problema per cui viene inviata una nuova e-mail a
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con nuove versioni di Quality Patches Tool. Per verificare se la patch è compatibile con la versione di Adobe Systems Commerce in uso, aggiornare il `magento/quality-patches` pacchetto alla versione più recente e verificare la compatibilità nella [[!DNL Quality Patches Tool]pagina](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) : Search for patches. Utilizzare l&#39;ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con nuove versioni di Quality Patches Tool. Per verificare se la patch è compatibile con la versione di Adobe Systems Commerce in uso, aggiornare il `magento/quality-patches` pacchetto alla versione più recente e verificare la compatibilità nella [[!DNL Quality Patches Tool]pagina](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) : Search for patches. Utilizzare l&#39;ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Questione
 
@@ -76,13 +76,13 @@ Viene inviata un&#39;e-mail con il messaggio &quot;Nuovo società registrazione 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
 Per ulteriori informazioni sullo strumento Patch di qualità, vedere:
 
-* [Rilasciato Quality Patches Tool: una nuova strumento per le patch](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) di qualità self-service nel knowledge base di supporto.
+* [Rilasciato Quality Patches Tool: una nuova strumento per le patch](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) di qualità self-service nel knowledge base di supporto.
 * [Controlla se la patch è disponibile per il tuo problema di Adobe Systems Commerce utilizzando Quality [!DNL Quality Patches Tool] Patches Tool](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida.
 
-Per informazioni su altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Search per le](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) patch nella [!DNL Quality Patches Tool] guida.
+Per informazioni su altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Search per le](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) patch nella [!DNL Quality Patches Tool] guida.

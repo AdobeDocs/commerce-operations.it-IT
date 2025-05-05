@@ -63,7 +63,7 @@ Nel malaugurato caso di una compromissione del sito, ecco alcuni consigli chiave
 
 Il primo passo dell&#39;analisi degli incidenti consiste nel raccogliere quante più informazioni possibili, il più rapidamente possibile. Raccogliere informazioni sull&#39;incidente può essere utile per determinare la causa potenziale dell&#39;incidente. Adobe Commerce fornisce gli strumenti indicati di seguito per l’analisi dei problemi.
 
-- [Registri azioni azioni amministrazione controllo](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
+- [Registri azioni azioni amministrazione controllo](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=it).
 
   Il rapporto Registri azioni visualizza un record dettagliato di tutte le azioni dell&#39;amministratore abilitate per registrazione. Ogni record ha la marca temporale e registra l’indirizzo IP e il nome dell’utente. I dettagli del registro includono i dati utente amministratore e le relative modifiche apportate durante l’azione.
 
@@ -73,9 +73,9 @@ Il primo passo dell&#39;analisi degli incidenti consiste nel raccogliere quante 
 
   Utilizza la scheda **Sicurezza** nello strumento per ottenere una chiara visualizzazione dei potenziali problemi di sicurezza per aiutare a identificare le cause principali e mantenere le prestazioni dei siti ottimali.
 
-- Analizza i registri con [Registri New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)
+- Analizza i registri con [Registri New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=it)
 
-  I progetti Adobe Commerce su infrastruttura cloud Pro includono il servizio [Registri New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html). Il servizio è preconfigurato per aggregare tutti i dati di registro dagli ambienti di staging e produzione per visualizzarli in un dashboard di gestione dei registri centralizzato in cui è possibile cercare e visualizzare i dati aggregati.
+  I progetti Adobe Commerce su infrastruttura cloud Pro includono il servizio [Registri New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=it). Il servizio è preconfigurato per aggregare tutti i dati di registro dagli ambienti di staging e produzione per visualizzarli in un dashboard di gestione dei registri centralizzato in cui è possibile cercare e visualizzare i dati aggregati.
 
   Per altri progetti Commerce, puoi impostare e utilizzare il servizio [Registri New Relic](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) per completare le seguenti attività:
    - Utilizza [query New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) per cercare dati di registro aggregati.
@@ -89,17 +89,17 @@ Continuare a monitorare attentamente il sito dopo l&#39;incidente poiché molti 
 
 ### Controlla account utente amministratore
 
-- [Controlla accesso utente amministratore](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html): consente di rimuovere account vecchi, inutilizzati o sospetti e di ruotare le password per tutti gli utenti amministratore.
+- [Controlla accesso utente amministratore](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=it): consente di rimuovere account vecchi, inutilizzati o sospetti e di ruotare le password per tutti gli utenti amministratore.
 
-- [Esamina le impostazioni](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) di sicurezza dell&#39;amministratore: verifica che le impostazioni di sicurezza dell&#39;amministratore seguire le best practice per la sicurezza.
+- [Esamina le impostazioni](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=it) di sicurezza dell&#39;amministratore: verifica che le impostazioni di sicurezza dell&#39;amministratore seguire le best practice per la sicurezza.
 
-- [Esamina gli account utente di Adobe Systems Commerce su infrastruttura cloud progetti](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html), Rimuovi account vecchi, inutilizzati o sospetti e ruota le password per tutti gli utenti amministratori cloud progetto. Assicurati che account impostazioni di sicurezza siano configurate correttamente.
+- [Esamina gli account utente di Adobe Systems Commerce su infrastruttura cloud progetti](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=it), Rimuovi account vecchi, inutilizzati o sospetti e ruota le password per tutti gli utenti amministratori cloud progetto. Assicurati che account impostazioni di sicurezza siano configurate correttamente.
 
-- [Controlla le chiavi](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) SSH per Adobe Systems Commerce su infrastruttura cloud: rivedi, elimina e ruota le chiavi SSH.
+- [Controlla le chiavi](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=it) SSH per Adobe Systems Commerce su infrastruttura cloud: rivedi, elimina e ruota le chiavi SSH.
 
 ### Codice di controllo
 
-- Dall&#39;amministratore, esamina la configurazione[&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) dell&#39;intestazione HTML e del piè di pagina in tutti i livelli ambito, inclusi `website` e `store view`. Rimuovere eventuali codici JavaScript sconosciuti dagli script e dai fogli di stile e da impostazioni HTML varie. Conserva solo il codice riconosciuto, ad esempio i frammenti di tracciamento.
+- Dall&#39;amministratore, esamina la configurazione[&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=it) dell&#39;intestazione HTML e del piè di pagina in tutti i livelli ambito, inclusi `website` e `store view`. Rimuovere eventuali codici JavaScript sconosciuti dagli script e dai fogli di stile e da impostazioni HTML varie. Conserva solo il codice riconosciuto, ad esempio i frammenti di tracciamento.
 
 - Confrontare la base di codice di produzione corrente con la base di codice memorizzata nel sistema di controllo delle versioni (VCS, Version Control System).
 

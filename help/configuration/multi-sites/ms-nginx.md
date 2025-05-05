@@ -17,7 +17,7 @@ Si presuppone che:
 
   Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
 
-  Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurare più siti Web o store](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) nella _guida di Commerce sull&#39;infrastruttura cloud_.
+  Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurare più siti Web o store](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=it) nella _guida di Commerce sull&#39;infrastruttura cloud_.
 
 - Accettare più domini in un file host virtuale o utilizzare un host virtuale per sito Web. I file di configurazione host virtuale si trovano in `/etc/nginx/sites-available`.
 - Utilizza `nginx.conf.sample` fornito da Commerce con le sole modifiche descritte in questa esercitazione.
@@ -280,7 +280,7 @@ A meno che il DNS non sia configurato per gli URL dei tuoi archivi, devi aggiung
 >[!INFO]
 >
 >- Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
->- Sono necessarie attività aggiuntive per configurare Adobe Commerce sull&#39;infrastruttura cloud; consulta [Configurare più siti Web o store Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
+>- Sono necessarie attività aggiuntive per configurare Adobe Commerce sull&#39;infrastruttura cloud; consulta [Configurare più siti Web o store Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=it) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
 
 ### Risoluzione dei problemi
 

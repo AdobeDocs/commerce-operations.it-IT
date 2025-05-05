@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Le utility di supporto di Adobe Commerce, denominate anche [Data Collector](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector), consentono agli utenti di raccogliere informazioni sulla risoluzione dei problemi del sistema che possono essere utilizzate dal team di supporto.
+Le utility di supporto di Adobe Commerce, denominate anche [Data Collector](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/support#data-collector), consentono agli utenti di raccogliere informazioni sulla risoluzione dei problemi del sistema che possono essere utilizzate dal team di supporto.
 
 Adobe Commerce utilizza questi backup, detti anche _dump_, per analizzare i problemi che richiedono l&#39;accesso al codice. Di seguito è riportato uno scenario tipico:
 

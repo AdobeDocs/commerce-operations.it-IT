@@ -13,7 +13,7 @@ ht-degree: 0%
 
 È possibile applicare le patch utilizzando uno dei seguenti metodi:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"}
 - [Riga di comando](../patches/apply.md#command-line)
 - [Compositore](../patches/apply.md#composer)
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Per applicare le patch di qualità ufficiali, utilizzare [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Eseguire sempre test completi prima di distribuire qualsiasi patch personalizzata.
+>Per applicare le patch di qualità ufficiali, utilizzare [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"}. Eseguire sempre test completi prima di distribuire qualsiasi patch personalizzata.
 
 Per applicare una patch personalizzata mediante Compositore:
 

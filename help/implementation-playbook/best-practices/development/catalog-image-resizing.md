@@ -116,5 +116,5 @@ Se si visita un URL della cache delle immagini, vengono generate in background t
 
 >[!NOTE]
 >
->- I progetti Adobe Commerce su infrastrutture cloud possono scaricare il ridimensionamento dell’immagine del prodotto sul servizio Fastly. Vedi [Ottimizzazione immagine approfondita](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) nella _Guida cloud_.
->- Se utilizzi il modulo di archiviazione remota, puoi anche provare a scaricare il ridimensionamento dell&#39;immagine su nginx. Vedi [Configurare il ridimensionamento delle immagini per l&#39;archiviazione remota](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) nella _Guida alla configurazione_.
+>- I progetti Adobe Commerce su infrastrutture cloud possono scaricare il ridimensionamento dell’immagine del prodotto sul servizio Fastly. Vedi [Ottimizzazione immagine approfondita](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=it#deep-image-optimization) nella _Guida cloud_.
+>- Se utilizzi il modulo di archiviazione remota, puoi anche provare a scaricare il ridimensionamento dell&#39;immagine su nginx. Vedi [Configurare il ridimensionamento delle immagini per l&#39;archiviazione remota](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=it) nella _Guida alla configurazione_.

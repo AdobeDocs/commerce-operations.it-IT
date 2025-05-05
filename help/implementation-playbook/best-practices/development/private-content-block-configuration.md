@@ -31,4 +31,4 @@ Sites che hanno blocchi di contenuto privati contenenti le variabili attivano AJ
 ## Informazioni aggiuntive
 
 - [Contenuto privato](../../../performance/configuration.md#client-side-optimization-settings)
-- [Un throughput elevato AJAX richieste causa prestazioni ridotte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [Un throughput elevato AJAX richieste causa prestazioni ridotte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=it)

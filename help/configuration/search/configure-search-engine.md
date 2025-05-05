@@ -19,7 +19,7 @@ Questa sezione descrive le impostazioni minime che è necessario scegliere per t
 >Nelle versioni 2.4.4 e 2.4.3-p2, tutti i campi con etichetta **Elasticsearch** si applicano anche a OpenSearch.
 >Quando nella versione 2.4.6 è stato introdotto il supporto per l’Elasticsearch 8.x, sono state create nuove etichette per distinguere tra le configurazioni di Elasticsearch e OpenSearch.
 
-Per ulteriori dettagli sulla configurazione del motore di ricerca, consulta la [Guida utente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
+Per ulteriori dettagli sulla configurazione del motore di ricerca, consulta la [Guida utente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=it).
 
 ## Configurare il motore di ricerca dall’amministratore
 

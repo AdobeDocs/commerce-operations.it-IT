@@ -23,7 +23,7 @@ Commerce memorizza la versione con hash dei dati in Redis, con il suffisso &#39;
 
 >[!INFO]
 >
->Per Adobe Commerce su infrastruttura cloud, puoi utilizzare [distribuire variabili](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) per la configurazione della cache L2.
+>Per Adobe Commerce su infrastruttura cloud, puoi utilizzare [distribuire variabili](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=it#redis_backend) per la configurazione della cache L2.
 
 ## Esempio di configurazione
 

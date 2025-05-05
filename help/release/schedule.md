@@ -18,9 +18,9 @@ Adobe si impegna continuamente a trovare il giusto equilibrio tra la necessità 
 
 Nuovo funzionalità, gli aggiornamenti delle funzionalità, i infrastruttura cloud e gli aggiornamenti di estensibilità vengono forniti indipendentemente dalle versioni di patch e sono disponibili tramite moduli, estensioni, strumenti o servizi Web esterni. Gli esempi includono:
 
-- ![Icona](../assets/icons/feature.svg) [**delle funzionalità Caratteristiche e funzionalità**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all): Nuovo caratteristiche e funzionalità fornite indipendentemente dalle versioni delle patch. Ad esempio, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Servizio catalogo, Connessione dati, Live Search e Product Raccomandazioni.
+- ![Icona](../assets/icons/feature.svg) [**delle funzionalità Caratteristiche e funzionalità**](https://experienceleague.adobe.com/it/docs/commerce/user-guides/release-information/release-notes-all): Nuovo caratteristiche e funzionalità fornite indipendentemente dalle versioni delle patch. Ad esempio, [B2B](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/release-notes), Servizio catalogo, Connessione dati, Live Search e Product Raccomandazioni.
 
-- ![Icona](../assets/icons/servers.svg) [**dell&#39;infrastruttura Infrastruttura**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) cloud: Nuovo funzionalità e miglioramenti ai pacchetti Adobe Systems Commerce on infrastruttura cloud e Cloud Strumenti Suite for Commerce, che distribuire e gestire installazioni e aggiornamenti di Adobe Systems Commerce sulla piattaforma cloud.
+- ![Icona](../assets/icons/servers.svg) [**dell&#39;infrastruttura Infrastruttura**](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) cloud: Nuovo funzionalità e miglioramenti ai pacchetti Adobe Systems Commerce on infrastruttura cloud e Cloud Strumenti Suite for Commerce, che distribuire e gestire installazioni e aggiornamenti di Adobe Systems Commerce sulla piattaforma cloud.
 
 - ![Icona](../assets/icons/brackets.svg) [**di estensibilità Estensibilità**](https://developer.adobe.com/commerce/extensibility/): Nuovo strumenti e servizi di sviluppo per l&#39;estensibilità out-of-process forniti indipendentemente dalle versioni delle patch. Ad esempio, Starter Kit di integrazione, SDK interfaccia di amministrazione Adobe Systems eventi I/O per Commerce e API Mesh.
 
@@ -36,7 +36,7 @@ Nell&#39;elenco seguente sono indicate le date per le versioni pianificate di fu
 
 >[!NOTE]
 >
->Funzionalità, infrastruttura cloud ed estensibilità possono variare nel corso dell’anno. Tuttavia, Adobe rilascia regolarmente e continuamente miglioramenti per queste aree tra le date specificate in questa pagina. Vedi [Cos&#39;è Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) per ulteriori informazioni sulle funzionalità più recenti.
+>Funzionalità, infrastruttura cloud ed estensibilità possono variare nel corso dell’anno. Tuttavia, Adobe rilascia regolarmente e continuamente miglioramenti per queste aree tra le date specificate in questa pagina. Vedi [Cos&#39;è Adobe Commerce?](https://experienceleague.adobe.com/it/docs/commerce-admin/start/about) per ulteriori informazioni sulle funzionalità più recenti.
 
 ## Patch
 

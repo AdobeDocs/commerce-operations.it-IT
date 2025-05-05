@@ -17,7 +17,7 @@ In questa pagina sono elencate le versioni rilasciate di Adobe Commerce. Contien
 >[!NOTE]
 >
 >Adobe consiglia di installare o aggiornare Adobe Commerce alla patch di sicurezza più recente disponibile per ogni versione.
->Per altri aggiornamenti di sicurezza, vedere [Aggiornamenti di sicurezza per Magento / Adobe Commerce](https://helpx.adobe.com/security/products/magento.html).
+>Per altri aggiornamenti di sicurezza, vedere [Aggiornamenti di sicurezza per Magento / Adobe Commerce](https://helpx.adobe.com/it/security/products/magento.html).
 >Per informazioni sui prezzi, vedere [Adobe Commerce pricing](https://business.adobe.com/products/magento/pricing.html).
 
 {{$include /help/_includes/templated/release/core-releases.md}}

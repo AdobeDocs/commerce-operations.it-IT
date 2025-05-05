@@ -27,4 +27,4 @@ Utilizzare la pagina [!UICONTROL Exceptions] per visualizzare i registri di erro
 
 ## Best practice
 
-Monitorare la pagina [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] per verificare quali eccezioni si verificano. Per ulteriori informazioni, consulta [Visualizzare e gestire i registri](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) nella documentazione per gli sviluppatori.
+Monitorare la pagina [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] per verificare quali eccezioni si verificano. Per ulteriori informazioni, consulta [Visualizzare e gestire i registri](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/test/log-locations) nella documentazione per gli sviluppatori.

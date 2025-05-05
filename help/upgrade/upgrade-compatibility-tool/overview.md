@@ -54,6 +54,6 @@ Fare riferimento all&#39;argomento [Contribute](https://developer.adobe.com/comm
 Consulta le seguenti risorse per comprendere meglio gli aggiornamenti di Adobe Commerce:
 
 - La [guida all&#39;aggiornamento](../overview.md) fornisce una panoramica del tipico percorso di aggiornamento di Adobe Commerce e delle best practice da seguire in tale percorso.
-- Nella pagina delle [prossime versioni](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) sono incluse le date per le versioni pianificate e future.
+- Nella pagina delle [prossime versioni](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/schedule) sono incluse le date per le versioni pianificate e future.
 - La pagina [Risorse community](https://developer.adobe.com/commerce/contributor/community/) deve essere utilizzata per avviare discussioni o per trovare ulteriori informazioni.
 - Controlla la pagina [strumenti correlati](../upgrade-compatibility-tool/related-tools.md) per trovare strumenti utili nel tuo tipico percorso di aggiornamento.
