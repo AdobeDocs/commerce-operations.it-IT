@@ -2,9 +2,9 @@
 title: Esegui  [!DNL Upgrade Compatibility Tool]
 description: Segui questi passaggi per eseguire  [!DNL Upgrade Compatibility Tool]  in un'interfaccia della riga di comando per il tuo progetto Adobe Commerce.
 exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: bfb952d29bd3d7fc7147107216981e05202e44aa
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ chmod +x ./uct/bin/uct
 
 [!DNL Upgrade Compatibility Tool] è uno strumento che controlla un&#39;istanza personalizzata di Adobe Commerce rispetto a una versione specifica analizzando tutti i moduli in essa installati. Restituisce un elenco di problemi critici, errori e avvisi che devono essere risolti prima dell’aggiornamento alla versione più recente di Adobe Commerce.
 
-Per ulteriori informazioni su [!DNL Upgrade Compatibility Tool], consulta questa [esercitazione video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=it) (06:02).
+Per ulteriori informazioni su [!DNL Upgrade Compatibility Tool], consulta questa [esercitazione video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02).
 
 Comandi disponibili per [!DNL Upgrade Compatibility Tool] in un&#39;interfaccia della riga di comando:
 
@@ -59,7 +59,7 @@ Opzioni disponibili per il comando `upgrade:check`:
 
 | **Comando** | **Opzioni disponibili** |
 |----------------|-----------------|
-| `upgrade:check` | <ul><li>—help: restituisce tutte le opzioni disponibili.</li><li>—current-version: versione corrente di Adobe Commerce. Questo parametro è obbligatorio e deve essere sempre utilizzato.</li><li>—min-issue-level: è possibile filtrare i problemi in base al livello di problema minimo (il valore predefinito è WARNING).</li><li>—ignore-current-version-compatibility-issues (o -i): se non si desidera includere nel rapporto problemi critici, errori e avvisi della versione corrente.</li><li>—coming-version (o -c): specifica una versione di Adobe Commerce. Se omesso, verrà utilizzato il più recente disponibile.</li></ul> |
+| `upgrade:check` | <ul><li>—help: restituisce tutte le opzioni disponibili.</li><li>—current-version: versione corrente di Adobe Commerce. Se omessa, verrà utilizzata la versione dell’installazione di Adobe Commerce.</li><li>—min-issue-level: è possibile filtrare i problemi in base al livello di problema minimo (il valore predefinito è WARNING).</li><li>—ignore-current-version-compatibility-issues (o -i): se non si desidera includere nel rapporto problemi critici, errori e avvisi della versione corrente.</li><li>—coming-version (o -c): specifica una versione di Adobe Commerce. Se omesso, verrà utilizzato il più recente disponibile.</li></ul> |
 
 [!DNL Upgrade Compatibility Tool] consente di eseguire il comando `upgrade:check` con un&#39;opzione `--ignore-current-version-compatibility-issues`. Utilizzare questa opzione quando si desidera ottenere solo i nuovi problemi introdotti con l&#39;aggiornamento dalla versione corrente alla versione di destinazione nel report [!DNL Upgrade Compatibility Tool]:
 
@@ -146,7 +146,7 @@ Opzioni disponibili per il comando `core:code:changes`:
 
 >[!NOTE]
 >
-> È consigliabile escludere il codice personalizzato dal codice principale. Per ulteriori best practice per l&#39;aggiornamento, consulta la [guida all&#39;aggiornamento](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=it) di Adobe Commerce 2.4.
+> È consigliabile escludere il codice personalizzato dal codice principale. Per ulteriori best practice per l&#39;aggiornamento, consulta la [guida all&#39;aggiornamento](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) di Adobe Commerce 2.4.
 
 ### Installazione Vanilla
 
@@ -259,8 +259,8 @@ Vengono restituite opzioni specifiche che è possibile eseguire per il comando `
 
 - Evita di avere due moduli con lo stesso nome.
 - Segui [gli standard di codifica](https://developer.adobe.com/commerce/php/coding-standards/) di Adobe Commerce.
-- Best practice per l&#39;aggiornamento alla [Guida all&#39;aggiornamento](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=it) di Adobe Commerce 2.4.
-- Esegui [!DNL Upgrade Compatibility Tool] da [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=it) per [Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=it){target=_blank} progetti.
+- Best practice per l&#39;aggiornamento alla [Guida all&#39;aggiornamento](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) di Adobe Commerce 2.4.
+- Esegui [!DNL Upgrade Compatibility Tool] da [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) per [progetti Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}.
 
 ## Ottimizzare i risultati
 
