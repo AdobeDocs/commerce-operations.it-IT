@@ -37,7 +37,7 @@ Diagramma ![[!DNL Upgrade Compatibility Tool]](../../assets/upgrade-guide/uct-di
 
 Guarda questo video per saperne di più su [!DNL Upgrade Compatibility Tool]:
 
->[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/344384?quality=12&captions=ita)
 
 ## Contribuisci a migliorare [!DNL Upgrade Compatibility Tool]
 

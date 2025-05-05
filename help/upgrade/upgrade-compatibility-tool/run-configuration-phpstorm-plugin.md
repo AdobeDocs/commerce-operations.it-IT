@@ -21,4 +21,4 @@ Per informazioni dettagliate su come installare [!DNL Magento PHPStorm plugin], 
 
 Guarda questo video per saperne di più su [!DNL Magento PHPStorm plugin]:
 
->[!VIDEO](https://video.tv.adobe.com/v/340150?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/344406?quality=12&captions=ita)

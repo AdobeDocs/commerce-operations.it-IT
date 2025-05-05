@@ -67,4 +67,4 @@ Commercianti e partner che desiderano avere maggiore visibilità sui loro siti w
 
 Guarda questo video per saperne di più su [!DNL Site-Wide Analysis Tool]:
 
->[!VIDEO](https://video.tv.adobe.com/v/344001?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3410778?quality=12&captions=ita)
