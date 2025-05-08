@@ -1,7 +1,7 @@
 ---
-source-git-commit: 53b2494d848c027e32f1493bbc7a9f204677afaa
+source-git-commit: 5d6d60b99d883f0a83cdcfc1c65c04d2f4ef09b7
 workflow-type: tm+mt
-source-wordcount: '27958'
+source-wordcount: '27937'
 ht-degree: 0%
 
 ---
@@ -192,7 +192,7 @@ Il comando `bin/magento i18n:collect-phrases -o` ora raccoglie e aggiunge corret
 * __Problema di autorizzazione per accedere al blocco dinamico__
 In precedenza, per l’amministratore con restrizioni, l’aggiunta di un nuovo blocco dinamico generava un errore. Dopo aver implementato questa correzione, l’amministratore con restrizioni può aggiungere correttamente il blocco dinamico e modificarlo senza errori
   _ACP2E-2687_
-* __Il nome dell&#39;apostrofo nella visualizzazione archivio è stato sostituito da &#039;__
+* __Il nome dell&#39;apostrofo nella visualizzazione archivio è stato sostituito da &amp;#039;__
 I filtri di visualizzazione archivio della griglia ora visualizzano correttamente gli apostrofi
   _ACP2E-2787 - [Problema GitHub](https://github.com/magento/magento2/issues/38395) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/39d54c2d)_
 * __Il caricamento dei favicon non riesce a convalidare i file .ico__
@@ -1537,7 +1537,7 @@ Dettagli correzione:
 * __Impossibile aggiungere prodotti perché la mutazione SKU nella mutazione fa distinzione tra maiuscole e minuscole__
 È stato risolto un problema a causa del quale la mutazione addProductsToCart restituiva un errore &quot;PRODUCT_NOT_FOUND&quot; quando si utilizzavano SKU con maiuscole e minuscole diverse. La mutazione ora gestisce gli SKU senza distinzione tra maiuscole e minuscole, garantendo la coerenza con le query di Catalog Service e il comportamento PDP.
   _LYNX-469_
-* __Attributo prodotto > marchio di fabbrica formato breve &trade; viene restituito come &trade;__
+* __Attributo prodotto > marchio di fabbrica formato breve &amp;trade; viene restituito come &amp;trade;__
 È stato risolto un problema di codifica dei caratteri con il nome del prodotto per l’API GraphQL.
   _LYNX-603_
 * __problema di mutazione di customerEmail__
@@ -1638,9 +1638,6 @@ Il sistema ora carica correttamente i file CSS in modo asincrono sulle pagine di
 * __Utilizzo del tipo virtuale per configurare il plug-in, impossibile generare correttamente il metodo intercettore nel comando `setup:di:compile`__
 Il sistema ora genera correttamente i metodi intercettore quando si utilizza un tipo virtuale per configurare un plug-in, garantendo risultati coerenti sia in modalità precompilata che in modalità runtime. In precedenza, il sistema generava risultati errati se precompilato rispetto alla compilazione in fase di esecuzione.
   _AC-13398 - [Problema GitHub](https://github.com/magento/magento2/issues/33980) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/38141)_
-* __Impossibile scaricare i file dall&#39;agente di raccolta dati__
-Il download del backup non mostra più una pagina vuota invece di scaricare il file.
-  _ACP2E-3441_
 * __Impossibile eseguire gli unit test di Adobe Commerce 2.4.7-p3__
 Non sono richieste note sulla versione.
   _ACP2E-3631 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/982b1c42)_
