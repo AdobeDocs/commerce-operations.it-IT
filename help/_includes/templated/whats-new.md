@@ -23,7 +23,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany">descrizione dettagliata del problema risolto dalla patch ACSD-65195 nella versione QPT 1.1.63</a>.</p>
+      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany">descrizione dettagliata del problema risolto dalla patch ACSD-65195 nella versione QPT 1.1.63</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -31,7 +31,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a6a8ad44c339b95b4afcedbd33b84c1d8b3411cc">commit</a></td>
     </tr>
     <tr>
-      <td><p>La patch <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false">ACSD-64532</a> risolve il problema in cui la variabile ENV impostata su false viene trattata come una stringa false invece di un BOOLEAN FALSE.</p>
+      <td><p>La patch <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false">ACSD-64532</a> risolve il problema in cui la variabile ENV impostata su false viene trattata come una stringa false invece di un BOOLEAN FALSE.</p>
 </td>
       <td>
         Nuovo argomento, qpt
