@@ -24,13 +24,13 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Per la configurazione dell&#39;ambiente nell&#39;infrastruttura cloud, vedere [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) nella _Guida all&#39;infrastruttura cloud di Commerce_.
+Per la configurazione dell&#39;ambiente nell&#39;infrastruttura cloud, vedere [`VALKEY_BACKEND`](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) nella _Guida all&#39;infrastruttura cloud di Commerce_.
 
 Per le installazioni locali, vedere [Configure Valkey page caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) nella _Guida alla configurazione_.
 
 >[!NOTE]
 >
->Verificare di utilizzare la versione più recente del pacchetto `ece-tools`. In caso contrario, [aggiorna alla versione più recente](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). È possibile controllare la versione installata nell&#39;ambiente locale utilizzando il comando CLI `composer show magento/ece-tools`.
+>Verificare di utilizzare la versione più recente del pacchetto `ece-tools`. In caso contrario, [aggiorna alla versione più recente](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). È possibile controllare la versione installata nell&#39;ambiente locale utilizzando il comando CLI `composer show magento/ece-tools`.
 
 ### Dimensioni della memoria cache L2 (Adobe Commerce Cloud)
 
@@ -90,7 +90,7 @@ Per le installazioni locali di Adobe Commerce, configura la nuova implementazion
 
 >[!WARNING]
 >
->_non_ configurare una connessione slave Valkey per i progetti di infrastruttura cloud con [architettura scalata/divisa](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). Questo causa errori di connessione Redis. Per ulteriori informazioni, vedere la [Guida alla configurazione di Redis](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
+>_non_ configurare una connessione slave Valkey per i progetti di infrastruttura cloud con [architettura scalata/divisa](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). Questo causa errori di connessione Redis. Per ulteriori informazioni, vedere la [Guida alla configurazione di Redis](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
 
 ## Precarica chiavi
 
@@ -152,7 +152,7 @@ stage:
 
 >[!NOTE]
 >
->Nell&#39;esempio precedente, la cache `full_page` non è rilevante per i progetti di infrastruttura cloud di Adobe Commerce, perché utilizza [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
+>Nell&#39;esempio precedente, la cache `full_page` non è rilevante per i progetti di infrastruttura cloud di Adobe Commerce, perché utilizza [Fastly](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/fastly).
 
 Per la configurazione delle installazioni locali, vedere [Opzioni cache non aggiornate](../../../configuration/cache/level-two-cache.md#stale-cache-options) nella _Guida alla configurazione_.
 
