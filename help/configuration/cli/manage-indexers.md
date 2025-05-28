@@ -40,7 +40,7 @@ salesrule_rule                           Sales Rule
 
 >[!NOTE]
 >
-> I commercianti di Adobe Commerce che utilizzano Live Search, Catalog Service o Product Recommendations possono utilizzare l&#39;indicizzazione dei prezzi basata su [SaaS](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
+> I commercianti di Adobe Commerce che utilizzano Live Search, Catalog Service o Product Recommendations possono utilizzare l&#39;indicizzazione dei prezzi basata su [SaaS](https://experienceleague.adobe.com/it/docs/commerce/price-indexer/price-indexing).
 
 ## Visualizza stato indicizzatore
 
@@ -232,11 +232,11 @@ Catalog Search:                                    Update on Save
 >
 >Assicurarsi di impostare [!DNL Customer Grid] con `realtime` anziché `schedule`. È possibile reindicizzare [!DNL Customer Grid] solo utilizzando l&#39;opzione [!UICONTROL Update on Save]. L&#39;indice non supporta l&#39;opzione `Update by Schedule`. Utilizzare la riga di comando seguente per impostare l&#39;indicizzatore da aggiornare al salvataggio: `php bin/magento indexer:set-mode realtime customer_grid`
 >
->Consulta [Best practice per la configurazione dell&#39;indicizzatore](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) nella _Playbook di implementazione_.
+>Consulta [Best practice per la configurazione dell&#39;indicizzatore](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=it) nella _Playbook di implementazione_.
 
 >[!INFO]
 >
->Prima di cambiare modalità di indicizzazione, impostare il sito Web sulla modalità [manutenzione](../../installation/tutorials/maintenance-mode.md) e [disabilitare i processi cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). In questo modo si evita di subire blocchi del database.
+>Prima di cambiare modalità di indicizzazione, impostare il sito Web sulla modalità [manutenzione](../../installation/tutorials/maintenance-mode.md) e [disabilitare i processi cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=it#disable-cron-jobs). In questo modo si evita di subire blocchi del database.
 
 Per specificare la configurazione dell&#39;indicizzatore:
 
