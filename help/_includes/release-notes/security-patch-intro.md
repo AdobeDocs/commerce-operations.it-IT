@@ -18,4 +18,4 @@ Queste note sulla versione della patch di sicurezza acquisiscono gli aggiornamen
 Ulteriori informazioni sulle versioni delle patch di sicurezza:
 
 * [Panoramica sulle versioni delle patch di sicurezza di Adobe Commerce](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* Le istruzioni per il download e l&#39;applicazione delle versioni delle patch di sicurezza sono disponibili in [Come ottenere e applicare le patch di sicurezza](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) nella _Knowledge Base di Adobe Commerce_.
+* Le istruzioni per il download e l&#39;applicazione delle versioni delle patch di sicurezza sono disponibili in [Come ottenere e applicare le patch di sicurezza](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) nella _Knowledge Base di Adobe Commerce_.
