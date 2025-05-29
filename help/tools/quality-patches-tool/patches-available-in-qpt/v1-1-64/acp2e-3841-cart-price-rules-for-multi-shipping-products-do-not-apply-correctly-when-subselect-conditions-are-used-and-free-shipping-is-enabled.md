@@ -50,6 +50,7 @@ Le regole del prezzo del carrello per i prodotti di spedizione multipla non si a
 1. Test prodotto 2:
    1. Categorie: prova di categoria 2
    1. Prezzo: $ 56,25 
+
       **(I prezzi devono essere uguali a quelli mostrati qui per garantire il corretto funzionamento del test.)**
 
 **Regola prezzo carrello:**
