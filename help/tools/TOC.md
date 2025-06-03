@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: daead0be5b8f8c8ee67a7e54ca9fb5d179d00059
+source-git-commit: c6dcf84cb36fafbdb94619a0a9fa0c9698956ad4
 workflow-type: tm+mt
-source-wordcount: '7627'
+source-wordcount: '7640'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Avvisi gestiti per Adobe Commerce: avviso di CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Strumento Patch di qualità {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilizzo](quality-patches-tool/usage.md)
    - [Note sulla versione](quality-patches-tool/release-notes.md)
    - Patch disponibili nello strumento Patch di qualità {#patches-available-in-qpt}
@@ -793,6 +793,7 @@ ht-degree: 0%
          - [ACSD-64753: lo store preselezionato in &quot;Ritiro in negozio&quot; non si aggiorna quando cambia l’indirizzo di spedizione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
       - v1.1.64 {#v1-1-64}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
+         - [ACSD-65127: la minimizzazione del JavaScript in modalità di produzione causa  [!DNL TinyMCE] 6 errori nel browser](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65127-javascript-minification-in-production-mode-causes-tinymce-6-errors-in-the-browser.md)
          - [ACP2E-3838: [!DNL Page Builder] Gli errori CORS impediscono il salvataggio delle modifiche nel pannello di amministrazione in modalità di produzione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3838-page-builder-cors-errors-prevent-saving-changes-in-the-admin-panel-in-production-mode.md)
          - [ACSD-65787: SchemaBuilder si blocca durante la creazione o l’aggiornamento dello schema a causa di una &quot;colonna&quot; della chiave di array non definita nei dati della tabella](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65787-schemabuilder-crashes-during-schema-creation-updates-due-to-undefined-array-key-column-in-table-data.md)
          - [ACSD-65223: i termini e gli accordi selezionati manualmente per gli ordini fornitore B2B generano un errore](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65223-manually-selected-terms-and-agreements-for-b2b-purchase-orders-result-in-an-error.md)
@@ -844,6 +845,6 @@ ht-degree: 0%
       - [Dati che richiedono la migrazione manuale](data-migration-tool/migrate-data/manual.md)
       - [Passaggi di migrazione post-dati](data-migration-tool/migrate-data/post-migration.md)
    - Risorse {#resources}
-      - [Risoluzione dei problemi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=it)
+      - [Risoluzione dei problemi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro modifiche](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
