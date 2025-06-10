@@ -1,9 +1,9 @@
 ---
 title: Note sulla versione della patch di sicurezza di Adobe Commerce 2.4.8
 description: Scopri le correzioni di bug di sicurezza, i miglioramenti della sicurezza e altri aggiornamenti relativi alla sicurezza inclusi nelle versioni delle patch di sicurezza per Adobe Commerce 2.4.7.
-source-git-commit: cbf41054a2a8ffefa38049e1bf6e4a2f09e06ce1
+source-git-commit: e996ef274920b1828331e2bb1eadacbb2cde59a6
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,6 @@ Questa versione include i seguenti elementi di rilievo:
 
 >[!BEGINSHADEBOX]
 
-La correzione per CVE-2025-47110 è disponibile anche come patch isolata. Per ulteriori informazioni, vedere l&#39;[articolo della Knowledge Base](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50).
+Le correzioni per CVE-2025-47110 e VULN-31547 sono disponibili anche come patch isolata. Per ulteriori informazioni, vedere l&#39;[articolo della Knowledge Base](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50).
 
 >[!ENDSHADEBOX]
