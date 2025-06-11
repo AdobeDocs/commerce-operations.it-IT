@@ -3,9 +3,9 @@ title: Adobe Managed Services
 description: Scopri in che modo Adobe Managed Services può supportare e mantenere l’implementazione di Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: c93dd37d6e196a09c9e7f4b376e421ca5886c7e0
+source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,6 @@ Per un confronto più dettagliato dei principali vantaggi offerti da Managed Ser
 | Coordinamento del processo di pubblicazione | | | |
 | Gestione dedicata dell&#39;escalation | | | |
 | Monitoraggio e assistenza delle applicazioni | | | |
-
-Comunicami se desideri che venga esportato in Excel o in un altro formato.
 
 ## Ruoli e responsabilità
 
