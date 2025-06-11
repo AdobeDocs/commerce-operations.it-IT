@@ -1,11 +1,11 @@
 ---
 title: Adobe Managed Services
-description: Scopri come Adobe Managed Services può aiutare a supportare e mantenere l’implementazione di Adobe Commerce.
+description: Scopri in che modo Adobe Managed Services può supportare e mantenere l’implementazione di Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: c93dd37d6e196a09c9e7f4b376e421ca5886c7e0
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe Managed Services fornisce applicazioni e infrastrutture in hosting e gesti
 
 ## Vantaggi
 
-![Infografica che mostra i vantaggi di Adobe Managed Services](../../assets/playbooks/managed-services-benefits.png)
+![Immagine che mostra i vantaggi di Adobe Managed Services](../../assets/playbooks/managed-services-benefits.png)
 
 ### Confronto delle opzioni di implementazione
 
@@ -35,9 +35,26 @@ Adobe Managed Services offre vantaggi chiave rispetto alle implementazioni cloud
    - Supporto degli eventi tramite pianificazione, esecuzione e monitoraggio
    - Supporto e competenze cloud (ottimizzazione proattiva, reporting e best practice)
 
-Per un confronto più dettagliato dei principali vantaggi di Managed Services, consulta la seguente infografica:
+Per un confronto più dettagliato dei principali vantaggi offerti da Managed Services, consulta la tabella seguente:
 
-![Infografica che mostra un confronto tra Managed Services di Adobe e altre opzioni di implementazione di Adobe Commerce](../../assets/playbooks/managed-services-compare.png)
+| Funzionalità | Adobe Commerce on-premise | Adobe Commerce su Cloud | Adobe Commerce su Managed Services |
+|---------|---------------------------|-------------------------|-----------------------------------|
+| Software Adobe Enterprise | ✓ | ✓ | ✓ |
+| Infrastruttura cloud sicura e dedicata | | ✓ | ✓ |
+| Obiettivo livello di servizio per incidente avanzato | | P1: 1 ora | P1: 15 minuti |
+| Monitoraggio e risposta della capacità di sovraccarico | | | ✓ |
+| Sicurezza dell&#39;infrastruttura | | | ✓ |
+| Livello di infrastruttura 99,99% SLA | | | ✓ |
+| Livello di applicazione 99,9% SLA | | | |
+| Risorsa esperta di infrastruttura designata (Customer Success Engineer) | | | |
+| Gestione degli eventi pianificati | | | |
+| Monitoraggio del sito personalizzato e runbook personalizzato | | | |
+| Assistenza per l&#39;installazione di aggiornamenti e patch | | | |
+| Coordinamento del processo di pubblicazione | | | |
+| Gestione dedicata dell&#39;escalation | | | |
+| Monitoraggio e assistenza delle applicazioni | | | |
+
+Comunicami se desideri che venga esportato in Excel o in un altro formato.
 
 ## Ruoli e responsabilità
 
@@ -105,7 +122,7 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
             <td>Raccolta dei requisiti e gestione dei progetti</td>
             <td>Collaboratore</td>
             <td>Proprietario</td>
-            <td>Consigliere</td>
+            <td>Consulente</td>
         </tr>
         <tr>
             <td>Sviluppo di applicazioni</td>
@@ -114,16 +131,16 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
             <td>Consulente</td>
         </tr>
         <tr>
-            <td>Test delle applicazioni</td>
+            <td>Test dell'applicazione</td>
             <td>Collaboratore</td>
             <td>Proprietario</td>
-            <td>Consigliere</td>
+            <td>Consulente</td>
         </tr>
         <tr>
-            <td colspan="4" style="background:lightgray;"><strong>Messa in scena e transizione</strong></td>
+            <td colspan="4" style="background:lightgray;"><strong>Staging e transizione</strong></td>
         </tr>
         <tr>
-            <td>Code Distribuzione in sviluppo, integrazione e staging</td>
+            <td>Distribuzione del codice per sviluppo, integrazione e staging</td>
             <td>Collaboratore</td>
             <td>Proprietario</td>
             <td>Consulente</td>
@@ -177,7 +194,7 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
             <td>Consulente</td>
         </tr>
         <tr>
-            <td>Completamento runbook</td>
+            <td>Completamento Runbook</td>
             <td>Proprietario</td>
             <td>Collaboratore</td>
             <td>Collaboratore</td>
@@ -189,10 +206,10 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
             <td>Proprietario</td>
         </tr>
         <tr>
-            <td colspan="4" style="background:lightgray;"><strong>Lanciare</strong></td>
+            <td colspan="4" style="background:lightgray;"><strong>Launch</strong></td>
         </tr>
         <tr>
-            <td>Lista di controllo per il go-live</td>
+            <td>Elenco di controllo per la pubblicazione</td>
             <td>Collaboratore</td>
             <td>Collaboratore</td>
             <td>Proprietario</td>
@@ -219,7 +236,7 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
             <td>Proprietario</td>
         </tr>
         <tr>
-            <td>Principali applicazione monitoraggio</td>
+            <td>Monitoraggio dell’applicazione principale</td>
             <td>Collaboratore</td>
             <td>Collaboratore</td>
             <td>Proprietario</td>
@@ -300,31 +317,31 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
             <td>Proprietario</td>
         </tr>
         <tr>
-            <td>Certificazione PCI del applicazione personalizzato</td>
+            <td>Certificazione PCI dell'applicazione personalizzata</td>
             <td>Proprietario</td>
             <td>Collaboratore</td>
             <td></td>
         </tr>
         <tr>
-            <td>Audit di sicurezza delle applicazioni core</td>
+            <td>Controlli di sicurezza delle applicazioni principali</td>
             <td>Proprietario</td>
             <td>Collaboratore</td>
-            <td>Consigliere</td>
+            <td>Consulente</td>
         </tr>
         <tr>
-            <td>Controlli di sicurezza delle personalizzazioni e delle estensioni</td>
-            <td>Proprietario</td>
-            <td>Collaboratore</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Test di penetrazione delle istanze del cliente delle applicazioni</td>
+            <td>Controlli di sicurezza delle personalizzazioni ed estensioni</td>
             <td>Proprietario</td>
             <td>Collaboratore</td>
             <td></td>
         </tr>
         <tr>
-            <td>Regole firewall applicazione Web (WAF)</td>
+            <td>Test di penetrazione delle istanze delle applicazioni del cliente</td>
+            <td>Proprietario</td>
+            <td>Collaboratore</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Regole del firewall per l'applicazione Web (WAF)</td>
             <td>Collaboratore</td>
             <td>Collaboratore</td>
             <td>Proprietario</td>
@@ -336,7 +353,7 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
             <td>Proprietario</td>
         </tr>
         <tr>
-            <td>Monitoraggio di applicazioni ed eventi DB</td>
+            <td>Monitoraggio degli eventi di applicazioni e database</td>
             <td>Collaboratore</td>
             <td>Collaboratore</td>
             <td>Proprietario</td>
@@ -370,13 +387,13 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
 
 ## Sicurezza
 
-Lo stack di sicurezza di Adobe per Managed Services crea la sicurezza in a ogni livello utilizzando l’automazione e la coerenza per ridurre gli errori umani. I team di sviluppo e operativi ereditano automaticamente i controlli di sicurezza da diversi livelli dello stack.
+Lo stack di sicurezza Adobe per Managed Services crea la sicurezza in a ogni livello utilizzando l’automazione e la coerenza per ridurre gli errori umani. I team di sviluppo e operativi ereditano automaticamente i controlli di sicurezza da diversi livelli dello stack.
 
 I partner della piattaforma, come Amazon Web Services e Microsoft Azure, garantiscono la massima copertura di sicurezza durante l&#39;applicazione delle personalizzazioni della piattaforma, mentre il team Managed Services di Adobe fornisce servizi di sicurezza principali, come conformità, registrazione, autenticazione, scansione e monitoraggio, protezione del server e configurazione sicura delle applicazioni. Per ulteriori informazioni, vedere [Sicurezza Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html).
 
-Il diagramma seguente mostra l’Adobe di stack della tecnologia di sicurezza Managed Services:
+Il diagramma seguente mostra lo stack della tecnologia di sicurezza Adobe Managed Services:
 
-![Diagramma che mostra lo stack di sicurezza Managed Services Adobe](../../assets/playbooks/managed-services-security-stack.svg)
+![Diagramma che mostra lo stack di sicurezza di Adobe Managed Services](../../assets/playbooks/managed-services-security-stack.svg)
 
 ## Assistenza per l&#39;aggiornamento
 
@@ -384,7 +401,7 @@ Il team Managed Services svolge un ruolo attivo nella pianificazione e nell&#39;
 
 I CSE di Managed Services hanno collaborato con i clienti Adobe Commerce per eseguire aggiornamenti in ambienti di grandi dimensioni. Il tuo CSE può aiutarti a sfruttare le conoscenze degli esperti per massimizzare il successo dell’aggiornamento riducendo al minimo i tempi di inattività e i rischi complessivi. Inoltre, i CSE di Managed Services collaborano con l’ambiente di staging dedicato per l’aggiornamento in modo che i processi di produzione esistenti non vengano influenzati durante la convalida dell’aggiornamento.
 
-Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging e produzione dei sistemi Managed Services. La tabella seguente fornisce una panoramica dei ruoli che ogni partecipante svolge nel processo di aggiornamento:
+Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging e produzione del sistema Managed Services. La tabella seguente fornisce una panoramica dei ruoli che ogni partecipante svolge nel processo di aggiornamento:
 
 <table>
 <thead>
@@ -402,23 +419,23 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
     <td>Crea piano di progetto di aggiornamento</td>
     <td>Proprietario</td>
     <td>Collaboratore</td>
-    <td>Il CSE del collaboratore<br />fornisce esempi di modelli di aggiornamento e piani di aggiornamento; offre consigli e suggerimenti sulle best practice.</td>
+    <td>Collaboratore<br />CSE fornisce esempi di modelli di aggiornamento e piani di aggiornamento; offre suggerimenti e best practice.</td>
   </tr>
   <tr>
     <td>Determinare le modifiche necessarie all'infrastruttura</td>
     <td></td>
     <td>Collaboratore</td>
-    <td>Il CSE del proprietario<br />esamina l'infrastruttura di staging e produzione per garantire il corretto dimensionamento.</td>
+    <td>Proprietario<br />Il CSE esamina l'infrastruttura di staging e produzione per garantire il corretto dimensionamento.</td>
   </tr>
   <tr>
-    <td>Valutare la complessità<br />dell'aggiornamento Identificare e documentare pacchetti, problemi e correzioni e moduli di terze parti e personalizzati</td>
+    <td>Valuta la complessità dell'aggiornamento<br />Identifica e documenta pacchetti, problemi e correzioni, moduli personalizzati e di terze parti</td>
     <td>Collaboratore</td>
     <td>Proprietario</td>
-    <td>Il CSE del collaboratore<br />fornisce report e raccomandazioni sullo strumento di aggiornamento Compatibilità.</td>
+    <td>Contributor<br />CSE fornisce report e raccomandazioni relativi allo strumento di compatibilità per l'aggiornamento.</td>
   </tr>
   <tr>
     <td rowspan="3">Esegui aggiornamento</td>
-    <td>Aggiornare i servizi<br /> dell'infrastruttura [MariaDB, Redis, Open Search e Rabbit MQ] (staging e produzione)</td>
+    <td>Aggiornamento dei servizi dell'infrastruttura<br />[MariaDB, Redis, Open Search e Rabbit MQ] (Gestione temporanea e produzione)</td>
     <td></td>
     <td></td>
     <td>Proprietario<br />CSE coordina gli aggiornamenti del servizio di infrastruttura.<br />CSE pianifica l'evento conferenza per gli aggiornamenti.<br />Il CSE fornisce assistenza per la migrazione dei dati dalla produzione alla gestione temporanea.</td>
@@ -433,7 +450,7 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
     <td>Eseguire controlli post-aggiornamento e risoluzione dei problemi</td>
     <td></td>
     <td>Proprietario</td>
-    <td>Il CSE del collaboratore<br />esegue un runbook di post-aggiornamento per rilevare e risolvere i problemi correlati all'aggiornamento.</td>
+    <td>Il collaboratore<br />CSE esegue il runbook di post-aggiornamento per rilevare e risolvere i problemi relativi all'aggiornamento.</td>
   </tr>
   <tr>
     <td rowspan="3">UAT e Launch</td>
@@ -455,7 +472,7 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
     <td>Collaboratore<br />CSE pianifica l'evento conferenza di avvio.</td>
   </tr>
   <tr>
-    <td>Post-Launch</td>
+    <td>Post-lancio</td>
     <td></td>
     <td>Collaboratore</td>
     <td>Collaboratore</td>
