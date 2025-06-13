@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39935: GraphQL restituisce prodotti secondari configurabili disabilitati a livello di sito Web"
-description: La patch di MDVA-39935 Adobe Commerce risolve il problema relativo alla restituzione da parte di GraphQL di prodotti secondari configurabili disattivati a livello di sito Web. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2. L'ID della patch è MDVA-39935. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
+title: 'MDVA-39935: GraphQL restituisce prodotti secondari configurabili disabilitati a livello di sito Web'
+description: La patch di MDVA-39935 Adobe Commerce risolve il problema relativo alla restituzione da parte di GraphQL di prodotti secondari configurabili disattivati a livello di sito Web. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. L'ID della patch è MDVA-39935. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: GraphQL, Configuration, Products
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: b86b1595-ddd5-41ce-b126-287046462561
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-39935: GraphQL restituisce prodotti secondari configurabili disabilitati a livello di sito Web
 
-La patch di MDVA-39935 Adobe Commerce risolve il problema relativo alla restituzione da parte di GraphQL di prodotti secondari configurabili disattivati a livello di sito Web. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2. L&#39;ID della patch è MDVA-39935. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
+La patch di MDVA-39935 Adobe Commerce risolve il problema relativo alla restituzione da parte di GraphQL di prodotti secondari configurabili disattivati a livello di sito Web. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. L&#39;ID della patch è MDVA-39935. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 
 ## Prodotti e versioni interessati
 
@@ -26,7 +27,7 @@ Adobe Commerce (tutti i metodi di implementazione) 2.4.1 - 2.4.3
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni dello strumento Patch di qualità. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni dello strumento Patch di qualità. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -41,26 +42,26 @@ GraphQL restituisce prodotti secondari configurabili anche dopo che sono stati d
 
 <pre>
   <code class="language-graphql">
-&lbrace;
-  products(filter: { sku: { eq: "cp1" } }) &lbrace;
-    items &lbrace;
+{
+  products(filter: { sku: { eq: "cp1" } }) {
+    items {
       __typename
       name
       sku
-      ... on ConfigurableProduct &lbrace;
-        variants &lbrace;
-          product &lbrace;
+      ... on ConfigurableProduct {
+        variants {
+          product {
             __typename
             name
             sku
             color
             stock_status
-          &rbrace;
-        &rbrace;
-      &rbrace;
-    &rbrace;
-  &rbrace;
-&rbrace;
+          }
+        }
+      }
+    }
+  }
+}
 </code>
 </pre>
 
@@ -76,14 +77,14 @@ I dati dei prodotti disattivati vengono recuperati nei risultati delle varianti.
 
 Per applicare singole patch, utilizzare i collegamenti seguenti a seconda del tipo di distribuzione:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
 Per ulteriori informazioni sulle patch di qualità per Adobe Commerce, consulta:
 
-* [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
+* [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando lo strumento Patch di qualità](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!DNL Quality Patches Tool].
 
-Per informazioni sulle altre patch disponibili in QPT, consulta la sezione [Patch disponibili in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it).
+Per informazioni sulle altre patch disponibili in QPT, consulta la sezione [Patch disponibili in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
