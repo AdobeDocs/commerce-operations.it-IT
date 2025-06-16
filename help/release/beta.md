@@ -2,9 +2,9 @@
 title: Versioni di Beta
 description: Scopri le versioni beta di Adobe Commerce e come partecipare.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: ea4f340540e57b282657a44502d80f1d5c409c6a
+source-git-commit: 1c0dd720df944a5784c850a3f4ea63b8984069f1
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Con Adobe Commerce Optimizer è possibile:
 - Crea ricerche e consigli personalizzati utilizzando IA e ML.
 - Visualizzare i dati fondamentali sulla disponibilità dei prodotti, compresi lo stato di sincronizzazione e i dati degli eventi storefront, per un&#39;implementazione e una risoluzione dei problemi accurate.
 
-[Ulteriori informazioni](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html?lang=it) su Adobe Commerce Optimizer. Per ulteriori informazioni sul programma di accesso anticipato [!DNL Adobe Commerce Optimizer], compilare il [modulo di richiesta di accesso anticipato](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
+[Ulteriori informazioni](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) su Adobe Commerce Optimizer. Per ulteriori informazioni sul programma di accesso anticipato [!DNL Adobe Commerce Optimizer], compilare il [modulo di richiesta di accesso anticipato](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
 
 ### Funzionalità di ricerca avanzate per Live Search (Beta pubblico)
 
@@ -66,7 +66,7 @@ Questa versione beta supporta tre nuove funzionalità nella query [`productSearc
 
 Queste nuove condizioni migliorano il meccanismo di filtro delle query di ricerca per perfezionare i risultati della ricerca. Queste nuove condizioni non influiscono sulla query di ricerca principale. Per partecipare alla versione beta, invia una richiesta e-mail a [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
-Per installare la versione beta di Live Search, consulta la [guida di Live Search](https://experienceleague.adobe.com/it/docs/commerce/live-search/install#install-the-live-search-beta).
+Per installare la versione beta di Live Search, consulta la [guida di Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### Integrazione dei sistemi IBM Sterling Order Management (Private Beta)
 
@@ -79,38 +79,43 @@ Questo acceleratore di integrazione per IBM Sterling Order Management consente a
 
 Per partecipare a questa versione beta, invia una richiesta e-mail a [sbieber@adobe.com](mailto:sbieber@adobe.com).
 
-### Adobe Commerce Foundation (Beta pubblica)
+### Adobe Commerce Foundation (Alpha/Beta pubblico)
 
-Ogni versione beta di Adobe Commerce Foundation include tutte le modifiche consegnate al codice core di Adobe Commerce entro la data di rilascio pianificata, incluse, a titolo esemplificativo, le seguenti aree funzionali:
+Ogni versione alfa e beta di Adobe Commerce Foundation include tutte le modifiche consegnate al codice core di Adobe Commerce entro la data di rilascio pianificata, incluse, a titolo esemplificativo, le seguenti aree funzionali:
 
 - Correzioni di sicurezza più recenti
 - Miglioramenti delle prestazioni
 - Miglioramenti GraphQL
 - Correzioni di bug di qualità generale
 - Contributi comunitari
-- Modifiche necessarie per supportare la compatibilità con [i servizi Adobe Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=it)
+- Modifiche necessarie per supportare la compatibilità con [i servizi Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Convenzione di denominazione e pianificazione
 
-Adobe in genere rilascia patch beta due volte all’anno.
+Adobe rilascia generalmente patch alfa e beta diverse volte all’anno.
+
+I pacchetti di rilascio di Alpha hanno un suffisso `-alphaX`. Ad esempio, i pacchetti di rilascio alfa di Adobe Commerce 2.4.7 utilizzano la seguente convenzione di denominazione:
+
+- `2.4.7-alpha1`
+- `2.4.7-alpha2`
 
 I pacchetti di rilascio di Beta hanno un suffisso `-betaX`. Ad esempio, i pacchetti della versione beta di Adobe Commerce 2.4.7 utilizzano la seguente convenzione di denominazione:
 
 - `2.4.7-beta1`
 - `2.4.7-beta2`
 
-Per un elenco delle prossime date di rilascio della versione beta pubblica, consulta la [pianificazione del rilascio](schedule.md).
+Consulta la [pianificazione delle versioni](schedule.md) per un elenco delle prossime date pubbliche di rilascio delle versioni alfa e beta.
 
-#### Accesso alla versione di Beta
+#### Accesso al rilascio
 
-Le versioni beta di Adobe Commerce vengono distribuite come qualsiasi altra versione patch di Adobe Commerce: come metapacchetti Compositore in `https://repo.magento.com`. Il codice sorgente è disponibile su [GitHub](https://github.com/magento/magento2).
+Le versioni alfa e beta di Adobe Commerce sono distribuite come qualsiasi altra versione patch di Adobe Commerce: come metapacchetti Compositore in `https://repo.magento.com`. Il codice sorgente è disponibile su [GitHub](https://github.com/magento/magento2).
 
 Per ulteriori dettagli, vedere [Avvio rapido dell&#39;installazione del Compositore](../installation/composer.md).
 
 #### Segnalazione problemi
 
-Adobe non fornisce il servizio di supporto Adobe standard per le versioni beta.
+Adobe non fornisce il servizio di supporto Adobe standard per le versioni alfa e beta.
 
-Per inviare feedback relativi alle versioni beta, segui il [flusso regolare di segnalazione dei problemi](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) in [GitHub](https://github.com/magento/magento2).
+Per inviare feedback relativi alle versioni alfa e beta, segui il [flusso regolare di segnalazione dei problemi](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) su [GitHub](https://github.com/magento/magento2).
 
-I nostri team interni monitoreranno tutti i problemi critici segnalati in base all’ultima versione beta e assegneranno loro un ordine di priorità per la risoluzione prima della data di rilascio della versione GA.
+Adobe monitora tutti i problemi critici segnalati in base all’ultima versione alfa o beta e assegna loro un ordine di priorità per la risoluzione prima della data di rilascio GA.
