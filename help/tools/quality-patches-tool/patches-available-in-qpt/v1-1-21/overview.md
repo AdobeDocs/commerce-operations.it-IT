@@ -4,7 +4,8 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin
 exl-id: 8cfc61bc-c082-40b5-b64d-68a4c30561fd
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -21,7 +22,7 @@ QPT v1.1.21 include le seguenti patch:
 1. **ACSD-46541**: è stato risolto il problema che impediva a un utente amministratore di creare una nota di credito se veniva eliminato un elemento dell&#39;ordine.
 1. **ACSD-46581**: è stato risolto il problema che impediva l&#39;aggiornamento del totale imposte stimato dopo aver selezionato un paese nel carrello.
 1. **ACSD-46618**: è stato risolto il problema che causava la visualizzazione di prezzi non corretti nella cache da parte del widget elenco prodotti per un cliente connesso.
-1. **ACSD-46674**: risolve il problema relativo alla visualizzazione delle opzioni personalizzate di un tipo di immagine come HTML nelle e-mail dei clienti.
+1. **ACSD-46674**: risolve il problema che causava la visualizzazione delle opzioni personalizzate di un tipo di immagine come HTML nelle e-mail dei clienti.
 1. **ACSD-46809**: è stato corretto il problema che si verificava quando un utente riceveva un errore durante l&#39;assegnazione di un numero elevato di origini prodotto.
 1. **ACSD-46856**: migliora le prestazioni aggiornando i prezzi dei livelli tramite **[!UICONTROL System]** > **[!UICONTROL Configuration]** > **[!UICONTROL Import]** > **[!UICONTROL Advanced Pricing]**.
 1. **ACSD-46988**: è stato corretto il problema per cui la richiesta API &#39;currency&#39; di GraphQL restituiva valori NULL per una valuta personalizzata.

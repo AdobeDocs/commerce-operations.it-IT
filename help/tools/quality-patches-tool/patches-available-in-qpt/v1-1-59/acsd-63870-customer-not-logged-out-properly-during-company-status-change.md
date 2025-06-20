@@ -3,13 +3,14 @@ title: 'ACSD-63870: il cliente non si è disconnesso correttamente durante la mo
 description: Applica la patch ACSD-63870 per risolvere il problema Adobe Commerce, in cui il cliente dell’azienda non viene disconnesso correttamente se cambia lo stato dell’azienda durante una sessione attiva del cliente.
 feature: Customers, B2B, Companies
 role: Admin, Developer
-source-git-commit: 3544eaef7812524a098e851ac8a2c140f33f7668
+exl-id: 4488f3cb-bb34-491e-8821-c2e98ff69429
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63870: il cliente non si è disconnesso correttamente durante la modifica dello stato della società
 
@@ -27,7 +28,7 @@ La patch ACSD-63870 risolve il problema relativo alla disconnessione non corrett
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -62,7 +63,7 @@ Il cliente è stato disconnesso.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Passaggi aggiuntivi necessari dopo l&#39;installazione della patch
 
@@ -73,4 +74,3 @@ Questa sezione è facoltativa; potrebbero essere necessari alcuni passaggi dopo 
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
 * [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.
-

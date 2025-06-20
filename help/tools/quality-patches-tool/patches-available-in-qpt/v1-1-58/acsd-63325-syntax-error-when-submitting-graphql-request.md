@@ -1,15 +1,16 @@
 ---
-title: 'ACSD-63325: errore di sintassi: errore <EOF> imprevisto durante l''invio di una richiesta vuota [!DNL GraphQL] '
+title: 'ACSD-63325: Errore di sintassi: errore imprevisto &lt;EOF&gt; durante l''invio di una richiesta vuota [!DNL GraphQL] '
 description: Applica la patch ACSD-63325 per risolvere il problema Adobe Commerce in cui si verifica un errore di sintassi durante l'invio di una richiesta [!DNL GraphQL] vuota.
 feature: GraphQL
 Role: Admin, Developer
-source-git-commit: 805ab7fb001cda112ce1298f0221fb22b6494b47
+exl-id: a83a8c5f-a43a-4733-a601-7b92656e5325
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63325: &quot;Errore di sintassi: errore &lt; EOF > imprevisto&quot; durante l’invio di una richiesta [!DNL GraphQL] vuota
 
@@ -27,7 +28,7 @@ La patch ACSD-63325 risolve il problema relativo a un errore di &quot;Sintassi E
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -61,8 +62,8 @@ HTTP/1.1 500 Internal Server Error
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

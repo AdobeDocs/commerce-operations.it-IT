@@ -3,7 +3,9 @@ title: 'Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.16'
 description: Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in  [!DNL Quality Patches Tool] (QPT) v1.1.16.
 feature: Tools and External Services
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 8fc8ad88-d6be-455c-a0af-22b102394f70
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%

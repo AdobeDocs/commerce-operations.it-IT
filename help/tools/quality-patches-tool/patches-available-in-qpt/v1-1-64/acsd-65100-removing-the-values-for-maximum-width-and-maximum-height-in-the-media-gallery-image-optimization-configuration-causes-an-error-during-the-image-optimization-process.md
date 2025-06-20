@@ -3,13 +3,14 @@ title: 'ACSD-65100: la rimozione dei valori [!UICONTROL Maximum Width] e [!UICON
 description: Applicare la patch ACSD-65100 per risolvere il problema di Adobe Commerce per cui la rimozione dei valori [!UICONTROL Maximum Width] e [!UICONTROL Maximum Height] nella configurazione [!UICONTROL Media Gallery Image Optimization] causa un errore durante il processo di ottimizzazione dell'immagine.
 feature: Media
 role: Admin, Developer
-source-git-commit: 97ffcd84b760962e1ad7290343f81860ca6568c7
+exl-id: 86197602-19a1-41c2-b129-1f695f303ce5
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65100: la rimozione dei valori [!UICONTROL Maximum Width] e [!UICONTROL Maximum Height] nella configurazione [!UICONTROL Media Gallery Image Optimization] causa un errore
 
@@ -27,7 +28,7 @@ La patch ACSD-65100 risolve il problema che causa un errore durante il processo 
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -64,7 +65,7 @@ report.ERROR: InvalidArgumentException: Invalid image dimensions. in /var/www/ht
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

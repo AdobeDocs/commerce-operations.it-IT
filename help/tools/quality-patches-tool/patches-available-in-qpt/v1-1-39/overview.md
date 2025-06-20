@@ -3,7 +3,9 @@ title: 'Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.39'
 description: Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in  [!DNL Quality Patches Tool] (QPT) v1.1.39.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+exl-id: 6116f566-2ff8-4148-ab60-cec65f9b7a6f
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -26,6 +28,6 @@ QPT v1.1.39 include le seguenti patch:
 1. **ACSD-54776**: è stato risolto il problema che impediva il salvataggio dei valori non selezionati *[!UICONTROL Use Default Value]* e non predefiniti dei campi prodotto per la seconda visualizzazione sito Web, archivio e archivio.
 1. **ACSD-53998**: è stato risolto il problema che impediva il corretto funzionamento di **[!UICONTROL Dynamic Block]** basato su **[!UICONTROL Customer Segment]** dopo la disconnessione da un account cliente.
 1. **ACSD-53204**: correzioni *Impossibile salvare il prodotto.Errore* durante l&#39;esecuzione di richieste simultanee per l&#39;aggiunta di immagini alla raccolta prodotti utilizzando l&#39;endpoint `rest/V1/products/<sku>/media`.
-1. **ACSD-47657**: aggiunto un meccanismo di caching per le credenziali di AWS. Un provider di credenziali ora utilizza la cache del Magento per memorizzare nella cache le credenziali recuperate da AWS per la configurazione EC2.
+1. **ACSD-47657**: aggiunto un meccanismo di caching per le credenziali di AWS. Un provider di credenziali ora utilizza la cache di Magento per memorizzare nella cache le credenziali recuperate da AWS per la configurazione EC2.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.

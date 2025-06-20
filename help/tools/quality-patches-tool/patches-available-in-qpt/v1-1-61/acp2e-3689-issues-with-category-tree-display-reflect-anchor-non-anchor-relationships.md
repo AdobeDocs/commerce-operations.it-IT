@@ -3,13 +3,14 @@ title: 'ACP2E-3689: molteplici problemi con la visualizzazione dell’albero del
 description: Applicate la patch ACP2E-3689 per risolvere il problema Adobe Commerce relativo alla visualizzazione della struttura delle categorie su una profondità superiore a quattro annidamenti e relazioni di ancoraggio/non di ancoraggio riflettenti.
 feature: Categories, Page Content
 role: Admin, Developer
-source-git-commit: af8b7b44274b828b3f60f92fd78f9f3d3983abb8
+exl-id: 8d3c484f-3f8d-4fc1-8b31-e850cb34341c
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3689: molteplici problemi con la visualizzazione dell’albero delle categorie a livelli più profondi e che riflettono le relazioni ancoraggio/non ancoraggio
 
@@ -31,7 +32,7 @@ La patch ACP2E-3689 risolve diversi problemi con la visualizzazione dell&#39;alb
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -57,7 +58,7 @@ Sono disponibili solo i primi livelli (&lt;4) dell&#39;albero delle categorie.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

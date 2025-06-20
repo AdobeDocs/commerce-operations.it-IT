@@ -3,7 +3,9 @@ title: 'Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.48'
 description: Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in  [!DNL Quality Patches Tool] (QPT) v1.1.48.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+exl-id: 250c88e9-1422-4af5-a0f0-32b15d9ab078
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -28,4 +30,3 @@ QPT v1.1.48 include le seguenti patch:
 1. **ACSD-58008**: è stato risolto il problema per cui l&#39;aggiornamento pianificato rimuove la versione precedente dell&#39;elemento nell&#39;area intermedia se non è specificata una data di fine.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
-

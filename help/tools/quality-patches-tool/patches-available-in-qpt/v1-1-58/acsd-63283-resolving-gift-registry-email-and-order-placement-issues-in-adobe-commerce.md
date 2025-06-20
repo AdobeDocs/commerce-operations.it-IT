@@ -3,7 +3,9 @@ title: 'ACSD-63283: risoluzione di [!UICONTROL Gift Registry] problemi di invio 
 description: Applicare la patch ACSD-63283 per risolvere il problema Adobe Commerce per cui l'ordinamento di elementi da [!UICONTROL Gift Registry] causa un'eccezione e assicura che [!UICONTROL Gift Registry Updates] includa solo gli elementi corretti.
 feature: Gift, Shopping Cart
 role: Admin, Developer
-source-git-commit: a9dd031ba004954074a0551315e80a2bd733f690
+exl-id: cff5b9e6-56ee-4df2-961a-6d90ec83c0c2
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 La patch ACSD-63283 risolve il problema per cui l&#39;ordinamento di elementi da [!UICONTROL Gift Registry] causa un&#39;eccezione e assicura che [!UICONTROL Gift Registry Updates] includa solo gli elementi corretti. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58. L’ID della patch è ACSD-63283. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.
 
 >[!NOTE]
->Questa patch sostituisce ed estende la patch [ACSD-56280](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed) QPT.
+>Questa patch sostituisce ed estende la patch [ACSD-56280](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed) QPT.
 
 ## Prodotti e versioni interessati
 
@@ -29,7 +31,7 @@ Adobe Commerce (tutti i metodi di implementazione) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -61,8 +63,8 @@ Il cliente B riceve l&#39;e-mail con gli articoli da tutti i registri dei regali
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 
 ## Lettura correlata

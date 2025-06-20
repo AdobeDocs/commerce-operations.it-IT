@@ -3,29 +3,30 @@ title: 'ACSD-64546: messaggio di errore generico nell’interfaccia utente e ecc
 description: Applica la patch ACSD-64546 per risolvere il problema di Adobe Commerce, in cui viene visualizzato un messaggio di errore generico nell’interfaccia utente e l’eccezione Array to String conversion viene registrata durante la creazione dell’etichetta UPS. La patch fa sì che l’errore corretto venga visualizzato nell’interfaccia utente e nei registri.
 feature: Shipping/Delivery
 role: Admin, Developer
-source-git-commit: f50da09cec35b3a72208f17b6832e3068de9c874
+exl-id: 458371bc-4afe-4675-b090-5797e05c5b88
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-64546: messaggio di errore generico nell&#39;interfaccia utente e eccezione *Array to string conversion* durante la creazione dell&#39;etichetta UPS
 
-La patch ACSD-64546 risolve il problema in cui viene visualizzato un messaggio di errore generico nel interfaccia e l&#39;eccezione di *conversione* da array a stringa viene registrata durante la creazione dell&#39;etichetta UPS, assicurando che l&#39;errore corretto venga visualizzato nel interfaccia e nei registri. Questa patch è disponibile quando è installata la [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) versione 1.1.61. L&#39;ID della patch è ACSD-64546. Si noti che questo problema è pianificato per essere risolto in Adobe Systems Commerce 2.4.8.
+La patch ACSD-64546 risolve il problema che causava la visualizzazione di un messaggio di errore generico nell&#39;interfaccia utente e la registrazione dell&#39;eccezione *Conversione da array a stringa* durante la creazione dell&#39;etichetta UPS, garantendo la visualizzazione dell&#39;errore corretto nell&#39;interfaccia utente e nei registri. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61. L’ID della patch è ACSD-64546. Questo problema è pianificato per la risoluzione in Adobe Commerce 2.4.8.
 
 ## Prodotti e versioni interessati
 
-**La patch è stata creata per Adobe Systems versione Commerce:**
-* Adobe Systems Commerce (tutti i metodi di distribuzione) 2.4.7-p3
+**La patch è stata creata per la versione di Adobe Commerce:**
+* Adobe Commerce (tutti i metodi di implementazione) 2.4.7-p3
 
 **Compatibile con le versioni di Adobe Commerce:**
 * Adobe Commerce (tutti i metodi di implementazione) 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -44,12 +45,12 @@ Nell&#39;interfaccia utente viene visualizzato un messaggio di errore generico e
 1. Crea una nuova spedizione.
    1. Selezionare la casella di controllo **[!UICONTROL Create Shipping Label]**.
    1. Fare clic su **[!UICONTROL Submit shipment]**.
-   1. Aggiungere il prodotto a un pacchetto. Specifica le dimensioni del pacchetto (lunghezza, Larghezza e Altezza).
+   1. Aggiungi il prodotto a un pacchetto. Specifica la dimensione del pacchetto (Lunghezza, Larghezza e Altezza).
    1. Fare clic su **[!UICONTROL Save]**.
 
-<u>Risultati attesi</u>:
+<u>Risultati previsti</u>:
 
-Il messaggio di errore effettivo viene visualizzato nel interfaccia e nei registri.
+Il messaggio di errore effettivo viene visualizzato nell’interfaccia utente e nei registri.
 
 <u>Risultati effettivi</u>:
 
@@ -59,11 +60,11 @@ Il messaggio di errore effettivo viene visualizzato nel interfaccia e nei regist
 
 ## Applicare la patch
 
-Per applicare singole patch, utilizzare i seguenti collegamenti a seconda del metodo di distribuzione:
-* Adobe Systems Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella [!DNL Quality Patches Tool] guida.
-* Adobe Systems Commerce on infrastruttura cloud: aggiornamenti e patch > Applica patch nella guida Commerce on Cloud Infrastructure.
+Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce su infrastruttura cloud: Aggiornamenti e patch > Applica patch nella guida Commerce su infrastruttura cloud.
 
-## Letture correlate
+## Lettura correlata
 
-Per ulteriori informazioni , [!DNL Quality Patches Tool]consulta:
-* [[!DNL Quality Patches Tool]: un strumento self-service per patch](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) di qualità nella guida Strumenti.
+Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
+* [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.

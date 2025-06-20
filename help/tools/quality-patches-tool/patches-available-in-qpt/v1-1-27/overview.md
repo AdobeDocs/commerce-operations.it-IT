@@ -1,9 +1,11 @@
 ---
-title: "Panoramica: Strumento Patch di qualità (QPT) v1.1.27"
+title: 'Panoramica: QPT (Quality Patches Tool) v1.1.27'
 description: Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in [!UICONTROL Quality Patches Tool] (QPT) v1.1.27.
 feature: Tools and External Services
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+exl-id: c82b5829-917d-4f38-b8a6-826f92e319b6
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%

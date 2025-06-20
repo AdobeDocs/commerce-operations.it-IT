@@ -3,7 +3,9 @@ title: 'Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.20'
 description: Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in  [!DNL Quality Patches Tool] (QPT) v1.1.20.
 feature: Tools and External Services
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 224b57b8-89c4-43b7-835f-d62c2e5b6201
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -21,6 +23,6 @@ QPT v1.1.20 include le seguenti patch:
 1. **ACSD-46520**: è stato risolto il problema che impediva all&#39;utente di ottenere uno stato di ordine errato quando veniva rimborsato utilizzando il credito dell&#39;archivio.
 1. **ACSD-46703**: è stato risolto il problema che impediva il trascinamento delle opzioni personalizzate in una pagina di modifica del prodotto.
 1. **ACSD-46815**: è stato corretto il problema per cui la richiesta della struttura delle categorie è limitata a 20 categorie.
-1. **ACSD-46869**: è stato risolto il problema che impediva l&#39;aggiornamento di un prodotto configurabile nel carrello tramite una richiesta *PUT REST API* senza modificare la quantità di prodotto.
+1. **ACSD-46869**: è stato risolto il problema che impediva l&#39;aggiornamento di un prodotto configurabile nel carrello tramite una richiesta *API REST PUT* senza modificare la quantità di prodotto.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.

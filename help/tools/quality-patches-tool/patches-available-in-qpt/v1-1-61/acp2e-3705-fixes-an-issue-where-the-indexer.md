@@ -3,13 +3,14 @@ title: 'ACP2E-3705: l’esecuzione del cron "indexer_update_all_views" non riesc
 description: Applica la patch ACP2E-3705 per risolvere il problema Adobe Commerce per cui l’esecuzione del cron "indexer_update_all_views" non riesce quando è impostato "MAGE_INDEXER_THREADS_COUNT".
 feature: Catalog Management, B2B
 role: Admin, Developer
-source-git-commit: 4f719c62fdd9fd960548799c9872f73c76997278
+exl-id: 111325fa-8ed5-45f9-9e68-b52f4425d253
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3705: l&#39;esecuzione del cron `indexer_update_all_views` non riesce quando `MAGE_INDEXER_THREADS_COUNT` è impostato
 
@@ -31,7 +32,7 @@ La patch ACP2E-3705 risolve il problema in cui l&#39;esecuzione del cron `indexe
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 

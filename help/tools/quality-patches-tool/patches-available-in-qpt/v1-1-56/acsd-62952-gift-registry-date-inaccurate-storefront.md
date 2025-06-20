@@ -3,13 +3,14 @@ title: 'ACSD-62952: la data del registro degli omaggi non viene visualizzata cor
 description: Applica la patch ACSD-62952 per risolvere il problema di Adobe Commerce, in cui la data del registro dei regali viene visualizzata in modo impreciso sulla vetrina.
 feature: Gift, Storefront
 role: Admin, Developer
-source-git-commit: 1fad4ecf1bab1df7a106ca12fe0431f19b65fb68
+exl-id: c11e95ab-775d-4aa7-828b-29ec52685d47
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62952: la data del registro degli omaggi non viene visualizzata correttamente sul vetrina
 
@@ -27,7 +28,7 @@ La patch ACSD-62952 risolve il problema relativo alla visualizzazione non corret
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -54,7 +55,7 @@ Il Registro regali aperto dall’e-mail di invito mostra la data dell’evento c
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source locale: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
 * Adobe Commerce su infrastruttura cloud: Aggiornamenti e patch > Applica patch nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
@@ -62,4 +63,3 @@ Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del m
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
 * [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.
-

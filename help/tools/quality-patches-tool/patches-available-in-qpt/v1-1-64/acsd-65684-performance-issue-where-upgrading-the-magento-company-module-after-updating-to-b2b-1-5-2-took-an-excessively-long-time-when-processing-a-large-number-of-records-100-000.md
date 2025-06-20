@@ -3,13 +3,14 @@ title: 'ACSD-65684: l’aggiornamento di Magento_Company in B2B 1.5.2 è lento c
 description: Applica la patch ACSD-65684 per risolvere il problema di Adobe Commerce per cui l’aggiornamento del modulo Magento_Company in B2B 1.5.2 richiede troppo tempo a causa dell’elaborazione di un numero elevato di record (~100.000+) nella tabella company_structure.
 feature: B2B
 role: Admin, Developer
-source-git-commit: dbf1bf3483aa7e52f5d1c950ab82f504c44fc989
+type: Troubleshooting
+exl-id: 1b45ebe4-4fb4-4fb5-b107-a2d44ec784e0
+source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65684: l&#39;aggiornamento di `Magento_Company` in [!DNL B2B] 1.5.2 è lento con oltre 100.000 record in `company_structure`
 
@@ -27,7 +28,7 @@ La patch ACSD-65684 risolve un problema di prestazioni per cui l&#39;aggiornamen
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -58,7 +59,7 @@ Il completamento di `setup:upgrade` richiede troppo tempo.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
