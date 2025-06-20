@@ -50,26 +50,26 @@ I moduli B2B devono essere installati.
   $search: String
   $pageSize: int!
   $currentPage: Int!
-) {
+) &lbrace;
   products(
     filtro: $filter
     sort: $sort
     ricerca: $search
     pageSize: $pageSize
     currentPage: $currentPage
-  ) {
+  ) &lbrace;
     total_count
-    page_info {
+    page_info &lbrace;
       total_pages
       current_page
       page_size
-    }
-    elementi {
+    &rbrace;
+    elementi &lbrace;
       nome
       sku
-    }
-  }
-}</pre>
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 Variabili:
 
