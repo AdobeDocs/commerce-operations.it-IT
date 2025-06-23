@@ -5,9 +5,9 @@ feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 6cfe4f4c-cdb3-49b3-84d0-ad794dfcafc3
-source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
+source-git-commit: 773bc7a5b34a2b5f7314929be435c842a755de54
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ QPT v1.1.65 include le seguenti patch:
 1. **ACSD-65202**: la pagina **[!UICONTROL My Account]** non mostra gli ordini recenti provenienti da altre visualizzazioni dello store.
 1. **ACSD-65254**: notifica e-mail non inviata dopo l&#39;aggiornamento dell&#39;e-mail del cliente tramite `updateCustomerEmail` mutazione GraphQL.
 1. **ACSD-65331**: l&#39;archivio selezionato in **[!UICONTROL Pick in Store]** è stato cancellato dopo il ritorno alla pagina di estrazione.
-1. **ACSD-65822**: le quantità del bundle e dei prodotti configurabili non vengono riportate correttamente nel carrello.
+1. **ACSD-65822**: le quantità del bundle e del prodotto configurabile non vengono riportate correttamente in [!UICONTROL Shopping Cart].
 1. **ACSD-66093**: i campi del nome del cliente ospite consentono l&#39;input delle e-mail causando messaggi e-mail di ordine non validi.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
