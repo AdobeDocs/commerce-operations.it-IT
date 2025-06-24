@@ -3,9 +3,10 @@ title: Best practice per la configurazione del servizio Valkey
 description: Scopri come migliorare le prestazioni di caching utilizzando l’implementazione estesa della cache Valkey per Adobe Commerce.
 role: Developer, Admin
 feature: Best Practices, Cache
-source-git-commit: 107b5bb19c3375be64c216bd89feb8410e2fc2bd
+exl-id: ca1598b0-07c6-4338-aed1-f2ba05375197
+source-git-commit: 1ab977bf2b30c2851609f0bfcc636978e974f07a
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -24,13 +25,13 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Per la configurazione dell&#39;ambiente nell&#39;infrastruttura cloud, vedere [`VALKEY_BACKEND`](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) nella _Guida all&#39;infrastruttura cloud di Commerce_.
+Per la configurazione dell&#39;ambiente nell&#39;infrastruttura cloud, vedere [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) nella _Guida all&#39;infrastruttura cloud di Commerce_.
 
-Per le installazioni locali, vedere [Configure Valkey page caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) nella _Guida alla configurazione_.
+Per le installazioni locali, vedere [Configure Valkey page caching](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) nella _Guida alla configurazione_.
 
 >[!NOTE]
 >
->Verificare di utilizzare la versione più recente del pacchetto `ece-tools`. In caso contrario, [aggiorna alla versione più recente](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). È possibile controllare la versione installata nell&#39;ambiente locale utilizzando il comando CLI `composer show magento/ece-tools`.
+>Verificare di utilizzare la versione più recente del pacchetto `ece-tools`. In caso contrario, [aggiorna alla versione più recente](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). È possibile controllare la versione installata nell&#39;ambiente locale utilizzando il comando CLI `composer show magento/ece-tools`.
 
 ### Dimensioni della memoria cache L2 (Adobe Commerce Cloud)
 
@@ -86,11 +87,11 @@ stage:
 
 Per ulteriori dettagli, vedere [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) nella _Guida all&#39;infrastruttura cloud di Commerce_.
 
-Per le installazioni locali di Adobe Commerce, configura la nuova implementazione della cache di Valkey utilizzando i comandi `bin/magento:setup`. Per ulteriori informazioni, vedere [Utilizzare Valkey per la cache predefinita](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) nella _Guida alla configurazione_.
+Per le installazioni locali di Adobe Commerce, configura la nuova implementazione della cache di Valkey utilizzando i comandi `bin/magento:setup`. Per ulteriori informazioni, vedere [Utilizzare Valkey per la cache predefinita](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) nella _Guida alla configurazione_.
 
 >[!WARNING]
 >
->_non_ configurare una connessione slave Valkey per i progetti di infrastruttura cloud con [architettura scalata/divisa](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). Questo causa errori di connessione Redis. Per ulteriori informazioni, vedere la [Guida alla configurazione di Redis](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
+>_non_ configurare una connessione slave Valkey per i progetti di infrastruttura cloud con [architettura scalata/divisa](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). Questo causa errori di connessione a Valkey. Per ulteriori informazioni, vedere la [Guida alla configurazione di Valkey](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
 
 ## Precarica chiavi
 
@@ -113,7 +114,7 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-Per le installazioni locali, vedere [Funzionalità di precaricamento Valkey](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) nella _Guida alla configurazione_.
+Per le installazioni locali, vedere [Funzionalità di precaricamento Valkey](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature) nella _Guida alla configurazione_.
 
 ## Abilita cache non aggiornata
 
@@ -152,7 +153,7 @@ stage:
 
 >[!NOTE]
 >
->Nell&#39;esempio precedente, la cache `full_page` non è rilevante per i progetti di infrastruttura cloud di Adobe Commerce, perché utilizza [Fastly](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/fastly).
+>Nell&#39;esempio precedente, la cache `full_page` non è rilevante per i progetti di infrastruttura cloud di Adobe Commerce, perché utilizza [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
 
 Per la configurazione delle installazioni locali, vedere [Opzioni cache non aggiornate](../../../configuration/cache/level-two-cache.md#stale-cache-options) nella _Guida alla configurazione_.
 
@@ -172,7 +173,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## Compressione cache
 
-Se si utilizzano più di 6 GB di Valkey `maxmemory`, è possibile utilizzare la compressione della cache per ridurre lo spazio utilizzato dalle chiavi. Tieni presente che esiste un compromesso con le prestazioni lato client. Se disponi di CPU di riserva, Adobe consiglia di abilitarle. Vedere [Utilizzare Redis per l&#39;archiviazione della sessione](../../../configuration/cache/redis-session.md) nella _Guida alla configurazione_.
+Se si utilizzano più di 6 GB di Valkey `maxmemory`, è possibile utilizzare la compressione della cache per ridurre lo spazio utilizzato dalle chiavi. Tieni presente che esiste un compromesso con le prestazioni lato client. Se disponi di CPU di riserva, Adobe consiglia di abilitarle. Vedere [Use Valkey for session storage](../../../configuration/cache/valkey-session.md) nella _Guida alla configurazione_.
 
 ```yaml
 stage:
@@ -188,8 +189,3 @@ stage:
             compress_threshold: 20480     # do not compress files smaller than this value
             compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~70%)
 ```
-
-## Informazioni aggiuntive
-
-- [Cache pagine Redis](../../../configuration/cache/redis-pg-cache.md)
-- [Usa Redis per l’archiviazione della sessione](../../../configuration/cache/redis-session.md)
