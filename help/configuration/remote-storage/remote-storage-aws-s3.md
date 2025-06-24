@@ -3,9 +3,9 @@ title: Configurare il bucket AWS S3 per l’archiviazione remota
 description: Configura il progetto Commerce per utilizzare il servizio di archiviazione AWS S3 per l’archiviazione remota.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->L&#39;Adobe scoraggia fortemente l&#39;uso di secchi pubblici perché comporta gravi rischi per la sicurezza.
+>Adobe scoraggia fortemente l’uso di contenitori pubblici perché comporta gravi rischi per la sicurezza.
 
 **Per abilitare l&#39;archiviazione remota con la scheda AWS S3**:
 
@@ -43,6 +43,10 @@ ht-degree: 0%
    ```
 
 ## Configurare Nginx
+
+>[!NOTE]
+>
+>Questo approccio non è applicabile ai progetti Adobe Commerce su infrastrutture cloud. Nginx non può essere configurato su Adobe Commerce nell’infrastruttura cloud. Per ulteriori informazioni, consulta la [documentazione specifica per il cloud](cloud-support.md).
 
 Nginx richiede una configurazione aggiuntiva per eseguire l&#39;autenticazione con la direttiva `proxy_pass`. Aggiungere le seguenti informazioni proxy al file `nginx.conf`:
 
