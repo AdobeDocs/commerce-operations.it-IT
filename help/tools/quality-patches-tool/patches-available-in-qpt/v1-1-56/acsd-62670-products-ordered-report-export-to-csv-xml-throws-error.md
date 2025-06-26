@@ -1,20 +1,20 @@
 ---
-title: 'ACSD-62670: errore durante l''esportazione di [!UICONTROL Ordered Products Report] in CSV e XML'
+title: 'ACSD-62670: l''esportazione di [!UICONTROL Ordered Products Report] in CSV e XML restituisce l''errore 404'
 description: Applicare la patch ACSD-62670 per risolvere il problema di Adobe Commerce, a causa del quale l'esportazione di [!UICONTROL Ordered Products Report] in formato CSV e XML genera un errore.
 feature: Reporting, Admin Workspace, Data Import/Export
 role: Admin, Developer
 exl-id: 99d77ddd-4fb3-4eda-8771-62c0e25f49d1
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 3469da56c15499de4ceb5313c3cc2dfde0f0771c
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
 
 # ACSD-62670: errore durante l&#39;esportazione di *[!UICONTROL Ordered Products Report]* in CSV e XML
 
-La patch ACSD-62670 risolve il problema che causava la generazione di un errore durante l&#39;esportazione di *[!UICONTROL Ordered Products Report]* in CSV e XML. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=it) 1.1.56. L’ID della patch è ACSD-62670. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.
+La patch ACSD-62670 risolve il problema che causava la generazione di un errore durante l&#39;esportazione di *[!UICONTROL Ordered Products Report]* in CSV e XML. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.56. L’ID della patch è ACSD-62670. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.
 
 ## Prodotti e versioni interessati
 
@@ -28,7 +28,7 @@ La patch ACSD-62670 risolve il problema che causava la generazione di un errore 
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -52,7 +52,7 @@ L&#39;esportazione di *[!UICONTROL Ordered Products Report]* genera l&#39;errore
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
