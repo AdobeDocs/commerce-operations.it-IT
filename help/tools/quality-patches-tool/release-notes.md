@@ -3,9 +3,9 @@ title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: fe1bec27cb9aa420fd71a0542edd5f82492e17aa
+source-git-commit: c14532e7390a3c123a4f673fca2211bfea9bcaa1
 workflow-type: tm+mt
-source-wordcount: '26682'
+source-wordcount: '26993'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,25 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=it#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
+>Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
 
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per Magento Open Source, consulta le [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.67 {#v1-1-67}
+
+* **ACSD-65935** (per Adobe Commerce >=2.4.4 &lt;2.4.8) - Corregge il problema per cui la query GraphQL `customerOrders` ha restituito un errore interno del server quando un prodotto è stato eliminato.
+* **ACSD-66049** (per Adobe Commerce e Magento Open Source >=2.4.5-p3 &lt;2.4.6 || >=2.4.7 &lt;2.4.9) - Corregge il problema relativo alla visualizzazione di prezzi non corretti da parte di storefront non inglesi a causa della versione della libreria ICU.
+* **ACSD-66084** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.9) - Corregge il problema per cui `row_total_incl_tax` viene restituito come valore residuo prossimo allo zero nella risposta API dell&#39;ordine anziché 0,00 per gli elementi completamente scontati.
+* **ACSD-66118** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corregge il problema per cui l&#39;aggiornamento del codice della vista archivio cancella le impostazioni [!UICONTROL Design Configuration] se la cache di configurazione non viene aggiornata.
+* **ACSD-66139** (per Adobe Commerce >=2.4.7 &lt;2.4.8) - Corregge il problema per cui le chiamate di GraphQL per effettuare un ordine per un carrello inesistente o inattivo hanno restituito un codice di errore *UNDEFINED*.
+* **ACSD-66301** (per Adobe Commerce e Magento Open Source >=2.4.6-p9 &lt;2.4.7 || >=2.4.7-p4 &lt;2.4.8) - Corregge il problema se lo spostamento di prodotti da un ordine al carrello nell’Admin causa una mancata corrispondenza della quantità.
+* **ACSD-66434** (per Adobe Commerce >=2.4.6-p8 &lt;2.4.9) - Corregge il problema di assenza dell&#39;ID cliente dalle query GraphQL aziendali.
+* **ACSD-66441** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.8): è stato risolto il problema che causava la visualizzazione di dati di indice errati nella navigazione a più livelli durante l&#39;indicizzazione di prodotti configurabili per una configurazione multi-store.
+* **AC-14984** (per Adobe Commerce e Magento Open Source >=2.4.6-p10 &lt;2.4.7 || >=2.4.8 &lt;2.4.9) - Corregge l’errore *Tipo di frame 21* non valido nella connessione SSL RabbitMQ.
+* **AC-14985** (per Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corregge il problema per cui le e-mail non vengono inviate quando si utilizza il server `smtp` esterno con TLS abilitato.
+* Versioni aggiornate: **MDVA-12304**, **ACSD-47920**, **ACSD-56447**, **ACSD-61845**, **ACSD-64118**
 
 ## v1.1.66 {#v1-1-66}
 
