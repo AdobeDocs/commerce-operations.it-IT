@@ -3,9 +3,9 @@ title: Adobe Managed Services
 description: Scopri in che modo Adobe Managed Services può supportare e mantenere l’implementazione di Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
+source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -39,20 +39,21 @@ Per un confronto più dettagliato dei principali vantaggi offerti da Managed Ser
 
 | Funzionalità | Adobe Commerce on-premise | Adobe Commerce su Cloud | Adobe Commerce su Managed Services |
 |---------|---------------------------|-------------------------|-----------------------------------|
-| Software Adobe Enterprise | ✓ | ✓ | ✓ |
-| Infrastruttura cloud sicura e dedicata | | ✓ | ✓ |
-| Obiettivo livello di servizio per incidente avanzato | | P1: 1 ora | P1: 15 minuti |
-| Monitoraggio e risposta della capacità di sovraccarico | | | ✓ |
-| Sicurezza dell&#39;infrastruttura | | | ✓ |
-| Livello di infrastruttura 99,99% SLA | | | ✓ |
-| Livello di applicazione 99,9% SLA | | | |
-| Risorsa esperta di infrastruttura designata (Customer Success Engineer) | | | |
-| Gestione degli eventi pianificati | | | |
-| Monitoraggio del sito personalizzato e runbook personalizzato | | | |
-| Assistenza per l&#39;installazione di aggiornamenti e patch | | | |
-| Coordinamento del processo di pubblicazione | | | |
-| Gestione dedicata dell&#39;escalation | | | |
-| Monitoraggio e assistenza delle applicazioni | | | |
+| Software aziendale Adobe | ✓ | ✓ | ✓ |
+| Adobe Developer App Builder | | ✓ | ✓ |
+| Infrastruttura cloud sicura e dedicata | | ✓ P1: 1 ora | ✓ P1: 15 minuti |
+| Destinazione livello di servizio per richieste di supporto avanzate | | ✓ | ✓ |
+| Monitoraggio e risposta della sovracapacità | | ✓ | ✓ |
+| Sicurezza dell&#39;infrastruttura | | ✓ | ✓ |
+| Livello di infrastruttura 99,99% SLA | | ✓ | ✓ |
+| Livello di applicazione 99,9% SLA | | | ✓ |
+| Risorsa esperta di infrastruttura designata (Customer Success Engineer) | | | ✓ |
+| Gestione degli eventi pianificati | | | ✓ |
+| Monitoraggio del sito personalizzato e runbook personalizzato | | | ✓ |
+| Assistenza per l’installazione di aggiornamenti e patch | | | ✓ |
+| Coordinamento del processo di pubblicazione | | | ✓ |
+| Gestione dedicata dell&#39;escalation | | | ✓ |
+| Monitoraggio e assistenza delle applicazioni | | | ✓ |
 
 ## Ruoli e responsabilità
 
