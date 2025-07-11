@@ -78,11 +78,11 @@ Il passaggio di spedizione inizia a caricarsi e viene reindirizzato a **[!UICONT
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool]** > Utilizzo]**(/help/tools/quality-patches-tool/usage.md) nella guida[!DNL Quality Patches Tool]**.
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] **&#x200B; > Utilizzo]**(/help/tools/quality-patches-tool/usage.md) nella guida[!DNL Quality Patches Tool]**.
 * Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch]**(https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
 Per ulteriori informazioni su [!DNL Quality Patches Tool]**, vedere:
 
-* [[!DNL Quality Patches Tool]**: strumento self-service per patch di qualità]**(/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida Strumenti.
+* [[!DNL Quality Patches Tool]&#x200B;**: strumento self-service per patch di qualità]**(/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida Strumenti.
