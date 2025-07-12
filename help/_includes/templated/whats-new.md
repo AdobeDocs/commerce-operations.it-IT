@@ -23,7 +23,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65775-incorrect-order-detail-values-in-rest-api-order-details-for-multiple-quantities">descrizione dettagliata del problema risolto dalla patch ACSD-65775 nella versione QPT 1.1.66</a>.</p>
+      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65775-incorrect-order-detail-values-in-rest-api-order-details-for-multiple-quantities">descrizione dettagliata del problema risolto dalla patch ACSD-65775 nella versione QPT 1.1.66</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
