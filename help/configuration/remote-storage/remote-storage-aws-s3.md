@@ -3,9 +3,9 @@ title: Configurare il bucket AWS S3 per l’archiviazione remota
 description: Configura il progetto Commerce per utilizzare il servizio di archiviazione AWS S3 per l’archiviazione remota.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
+source-git-commit: 3690043019d70ad15332f757158937a7d5305043
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 >[!WARNING]
 >
 >Adobe scoraggia fortemente l’uso di contenitori pubblici perché comporta gravi rischi per la sicurezza.
+>
+>Quando si utilizza un bucket S3 fornito dal cliente per l’archiviazione di risorse o supporti, Adobe non è responsabile e non fornisce supporto per eventuali problemi, perdite di dati o interruzioni relativi alla configurazione, alla gestione o al funzionamento del bucket S3. La risoluzione dei problemi e la manutenzione del bucket S3 sono di esclusiva responsabilità del cliente.
 
 **Per abilitare l&#39;archiviazione remota con la scheda AWS S3**:
 
