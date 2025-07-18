@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 17c44a40eed91f38272956cd043122c14b4b7267
+source-git-commit: d12657ff88bc832cb875dbe48bd823545e5362f0
 workflow-type: tm+mt
-source-wordcount: '7827'
+source-wordcount: '7836'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Avvisi gestiti per Adobe Commerce: avviso di CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Strumento Patch di qualità {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilizzo](quality-patches-tool/usage.md)
    - [Note sulla versione](quality-patches-tool/release-notes.md)
    - Patch disponibili nello strumento Patch di qualità {#patches-available-in-qpt}
@@ -267,7 +267,7 @@ ht-degree: 0%
          - [Panoramica: QPT (Quality Patches Tool) v1.1.22](quality-patches-tool/patches-available-in-qpt/v1-1-22/overview.md)
          - [ACSD-47106: nuovo attributo personalizzato non salvato nella pagina di creazione della società](quality-patches-tool/patches-available-in-qpt/v1-1-22/acsd-47106-new-custom-attribute-on-company-creation-page-not-saved.md)
          - [ACSD-47444: errore [!UICONTROL Trying to access array offset on value of type bool] durante l&#39;accesso a determinati percorsi di categoria non esistenti per prodotti noti in PHP 7.4](quality-patches-tool/patches-available-in-qpt/v1-1-22/acsd-47444-trying-access-array-offset-value-type-bool-error.md)
-         - [ACSD-47332: errore Cron segnalato solo quando si esegue tra le 00:00 e le 00:59 UTC](quality-patches-tool/patches-available-in-qpt/v1-1-22/acsd-47332-cron-fails-with-error-reported-between-00-59.md)
+         - [ACSD-47332: errore Cron segnalato solo quando è in esecuzione tra 00](quality-patches-tool/patches-available-in-qpt/v1-1-22/acsd-47332-cron-fails-with-error-reported-between-00-59.md)
       - v1.1.23 {#v1-1-23}
          - [Panoramica: QPT (Quality Patches Tool) v1.1.23](quality-patches-tool/patches-available-in-qpt/v1-1-23/overview.md)
          - [ACSD-46519: product_count in [!UICONTROL categoryList] [!DNL GraphQL] query restituisce 0 per le categorie di ancoraggio](quality-patches-tool/patches-available-in-qpt/v1-1-23/acsd-46519-product-count-categorylist-graphql-query-returns-zero-anchor-categories.md)
@@ -623,7 +623,7 @@ ht-degree: 0%
          - [ACSD-59036: eccezione durante il caricamento dei prezzi dei prodotti](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59036-exception-occurs-when-loading-product-prices.md)
          - [ACSD-45049: l&#39;impostazione dell&#39;attributo del cliente [!UICONTROL Is required] non funziona in base all&#39;ambito del sito Web in Admin](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-45049-customer-attribute-is-required-setting-doesnt-work.md)
          - [ACSD-59378: Store-level [!DNL URL] riscrive in modo errato durante l&#39;importazione](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59378-store-level-url-rewrites-incorrectly-updated-during-import.md)
-         - [ACSD-46938: problemi di prestazioni con i trigger del database durante la configurazione:aggiornamento](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
+         - [ACSD-46938: problemi di prestazioni con i trigger del database durante la configurazione](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
          - [ACSD-54887: il carrello acquisti del cliente viene cancellato dopo la scadenza della sessione del cliente](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
          - [ACSD-58141: PHPSESSID viene rigenerato nelle richieste POST per i clienti connessi se la cache L2 Redis è abilitata](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
          - [ACSD-59229: allocazione errata dei dati del gruppo di clienti a causa di un valore X-Magento-Vary obsoleto](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
@@ -687,7 +687,7 @@ ht-degree: 0%
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
          - [ACSD-58685: le e-mail di vendita disabilitate vengono inviate al momento della riabilitazione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling.md)
          - [ACSD-58828: viene visualizzato il messaggio &quot;address is required&quot; lato server per qualsiasi campo obbligatorio vuoto, insieme alla convalida lato client](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
-         - [ACSD-61534: impossibile impostare la configurazione di progettazione utilizzando bin/magento config:set](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set.md)
+         - [ACSD-61534: impossibile impostare la configurazione di progettazione con la configurazione bin/magento](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set.md)
          - [ACSD-61348: voci della lista dei desideri visibili tramite GraphQL ma non nella vetrina](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront.md)
          - [ACSD-61785: impossibile aggiornare l’attributo reward_warning_notification tramite la mutazione GraphQL e le chiamate API REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql.md)
          - [ACSD-58471: quando vengono pianificate le regole del prezzo di catalogo, il contenuto dinamico non viene caricato sulla pagina dei dettagli del prodotto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
@@ -814,6 +814,7 @@ ht-degree: 0%
          - [ACSD-65331: l&#39;archivio selezionato in [!UICONTROL Pick in Store] è stato cancellato dopo il ritorno all&#39;estrazione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65331-selected-store-in-pick-in-store-cleared-after-returning-to-checkout-page.md)
       - v1.1.66 {#v1-1-66}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.66](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview.md)
+         - [ACSD-66212: l’importazione del file CSV del cliente ha provocato due volte errori nel secondo e nei successivi tentativi](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-66212-importing-a-customer-csv-file-twice-caused-failures-on-the-second-and-subsequent-attempts.md)
          - [ACSD-65775: valori base_row_total e row_total non corretti nei dettagli dell’ordine API REST per più quantità](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65775-incorrect-order-detail-values-in-rest-api-order-details-for-multiple-quantities.md)
          - [ACP2E-3789: file multimediali duplicati all’aggiornamento del prodotto tramite WebAPI](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3789-media-files-duplicated-on-product-update-via-webapi.md)
    - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
@@ -863,6 +864,6 @@ ht-degree: 0%
       - [Dati che richiedono la migrazione manuale](data-migration-tool/migrate-data/manual.md)
       - [Passaggi di migrazione post-dati](data-migration-tool/migrate-data/post-migration.md)
    - Risorse {#resources}
-      - [Risoluzione dei problemi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=it)
+      - [Risoluzione dei problemi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro modifiche](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
