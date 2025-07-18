@@ -3,9 +3,9 @@ title: Usa Redis per la cache predefinita
 description: Scopri come configurare Redis come cache predefinita per Adobe Commerce.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 2c489f2655e6fb067de1730355df6cd3683ea562
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -32,10 +32,12 @@ Con i seguenti parametri:
 
 | Parametro della riga di comando | Valore | Significato | Valore predefinito |
 | ------------------------------ | --------- | ------- | ------------- |
-| `cache-backend-redis-server` | server | Nome host completo, indirizzo IP o percorso assoluto di un socket UNIX. Il valore predefinito 127.0.0.1 indica che Redis è installato sul server Commerce. | `127.0.0.1` |
+| `cache-backend-redis-server` | server | Nome host completo, indirizzo IP o percorso assoluto di un socket UNIX. Il valore predefinito 127.0.0.1 indica che Redis è installato nel server Commerce. | `127.0.0.1` |
 | `cache-backend-redis-port` | porta | Porta di ascolto del server Redis | `6379` |
 | `cache-backend-redis-db` | database | Obbligatorio se si utilizza Redis sia per la cache predefinita che per quella a pagina intera. È necessario specificare il numero di database di una delle cache; l&#39;altra cache utilizza 0 per impostazione predefinita.<br><br>**Importante**: se si utilizza Redis per più di un tipo di memorizzazione nella cache, i numeri di database devono essere diversi. È consigliabile assegnare il numero predefinito del database di memorizzazione nella cache a 0, il numero del database di memorizzazione nella cache delle pagine a 1 e il numero del database di memorizzazione nella sessione a 2. | `0` |
 | `cache-backend-redis-password` | password | La configurazione di una password Redis abilita una delle funzionalità di protezione incorporate: il comando `auth`, che richiede l&#39;autenticazione dei client per accedere al database. La password è configurata direttamente nel file di configurazione di Redis: `/etc/redis/redis.conf` | |
+| `--cache-backend-redis-use-lua` | use_lua | Attiva o disattiva LUA. <br><br>**LUA**: Lua ci consente di eseguire parte della logica dell&#39;applicazione all&#39;interno di Redis, migliorando le prestazioni e garantendo la coerenza dei dati attraverso la sua esecuzione atomica. | `0` |
+| `--cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Attiva o disattiva LUA per la raccolta di oggetti inattivi. <br><br>**LUA**: Lua ci consente di eseguire parte della logica dell&#39;applicazione all&#39;interno di Redis, migliorando le prestazioni e garantendo la coerenza dei dati attraverso la sua esecuzione atomica. | `1` |
 
 ### Esempio di comando
 
@@ -61,7 +63,7 @@ Con i seguenti parametri:
 
 | Parametro della riga di comando | Valore | Significato | Valore predefinito |
 | ------------------------------ | --------- | ------- | ------------- |
-| `page-cache-redis-server` | server | Nome host completo, indirizzo IP o percorso assoluto di un socket UNIX. Il valore predefinito 127.0.0.1 indica che Redis è installato sul server Commerce. | `127.0.0.1` |
+| `page-cache-redis-server` | server | Nome host completo, indirizzo IP o percorso assoluto di un socket UNIX. Il valore predefinito 127.0.0.1 indica che Redis è installato nel server Commerce. | `127.0.0.1` |
 | `page-cache-redis-port` | porta | Porta di ascolto del server Redis | `6379` |
 | `page-cache-redis-db` | database | Obbligatorio se si utilizza Redis sia per la cache predefinita che per quella a pagina intera. È necessario specificare il numero di database di una delle cache; l&#39;altra cache utilizza 0 per impostazione predefinita.<br/>**Importante**: se si utilizza Redis per più di un tipo di memorizzazione nella cache, i numeri di database devono essere diversi. È consigliabile assegnare il numero predefinito del database di memorizzazione nella cache a 0, il numero del database di memorizzazione nella cache delle pagine a 1 e il numero del database di memorizzazione nella sessione a 2. | `0` |
 | `page-cache-redis-password` | password | La configurazione di una password Redis abilita una delle funzionalità di protezione incorporate: il comando `auth`, che richiede l&#39;autenticazione dei client per accedere al database. Configurare la password nel file di configurazione Redis: `/etc/redis/redis.conf` | |
