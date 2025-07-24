@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
-source-git-commit: f24e6b4cc973247cb176b7e6b10cc9c61e1c16c2
+source-git-commit: a7cbe756f73211e4cc400ea27e357e99aa39605c
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ QPT v1.1.66 include le seguenti patch:
 1. **ACSD-65775**: valori `base_row_total` e `row_total` non corretti nei dettagli dell&#39;ordine REST API per più quantità.
 1. **ACSD-65777**: campo &quot;types&quot; mancante per i tipi di immagini prodotto nella richiesta GraphQL `MediaGallery`.
 1. **ACSD-65848**: il caricamento delle categorie nell&#39;amministratore è molto lento.
-1. **ACSD-65913**: OpenSearch ha generato un `illegal_argument_exception` per le categorie con prodotti che hanno lo stesso prezzo.
+1. **ACSD-65913**: [!DNL OpenSearch] genera un `illegal_argument_exception` per le categorie con prodotti che hanno lo stesso prezzo.
 1. **ACSD-66041**: impossibile cercare le località di prelievo nei codici postali dell&#39;Irlanda (IE) a causa di un CountryID mancante.
 1. **ACSD-66212**: è stato corretto il problema che si verificava se l&#39;importazione di un file CSV del cliente causava due volte errori nel secondo e nei successivi tentativi.
 
