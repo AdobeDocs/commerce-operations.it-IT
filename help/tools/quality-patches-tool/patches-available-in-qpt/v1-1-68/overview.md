@@ -3,9 +3,10 @@ title: 'Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.68'
 description: Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in  [!DNL Quality Patches Tool] (QPT) v1.1.68.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 515064fc03f37eb97a4d392328041c340880cb22
+exl-id: 74094036-cb1b-419f-b287-ca24d351a448
+source-git-commit: 0a7fdb3e5a7cb2c61ba54af78fadb524a570e20f
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ QPT v1.1.68 include le seguenti patch:
 1. **ACSD-66072**: i prodotti correlati non vengono restituiti tramite GraphQL nella pagina Dettagli prodotto a causa di un errore interno del server quando [!UICONTROL Related Products Rule] è configurato.
 1. **ACSD-66082**: impossibile aggiornare l&#39;immagine campione di un prodotto tramite l&#39;importazione del prodotto.
 1. **ACSD-66179**: l&#39;annullamento di una fattura con il tipo di pagamento &quot;Not Capture&quot; genera una pagina di errore 404.
-1. **ACSD-66233**: gli utenti amministratori non hanno potuto aggiungere prodotti alle categorie a causa del mancato caricamento del popup Aggiungi prodotto.
+1. **ACSD-66233**: gli amministratori non possono aggiungere prodotti a causa di un pop-up di elenco prodotti che non risponde.
 1. **ACSD-66506**: si è verificato un errore di back-end quando i prodotti assegnati in precedenza di un catalogo condiviso sono stati eliminati e quelli nuovi assegnati.
 1. **ACSD-66865**: il salvataggio delle regole del prezzo di catalogo invalida gli indicizzatori e fornisce un&#39;alternativa alla reindicizzazione solo dei prodotti interessati.
 1. **ACSD-66889**: errore durante la reindicizzazione inventario in CLI.
