@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: 7fd88da04ca147829aa5aa7f90d05d8760ff0f3d
+source-git-commit: f26ada4171197107866c45db7a711bce8be1d18e
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in [!DNL Quality Patches Tool] (QPT) v1.1.67.
 
 QPT v1.1.67 include le seguenti patch:
-1. **AC-14985**: La posta SMTP inviata con TLS restituisce un errore.
+1. **AC-14985**: errore durante l&#39;invio di e-mail SMTP tramite TLS.
 1. **AC-14984**: problema di connessione SSL con php-amqplib/php-amqplib ^3.2.0.
 1. **ACSD-65935**: la query GraphQL `customerOrders` ha restituito un errore interno del server quando un prodotto è stato eliminato.
 1. **ACSD-66049**: gli storefront non inglesi visualizzano prezzi errati a causa della versione della libreria ICU.
