@@ -4,13 +4,13 @@ description: Applica la patch ACSD-66049 per risolvere il problema Adobe Commerc
 feature: Products
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 39e0b972dfa41f74f3c19e61d8fc1188d5c93f7c
+exl-id: e667d462-87f6-4db5-bf3f-3213edac2f09
+source-git-commit: da11e8bd5c4937ec2a7e548ce487797b83f8fd27
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66049: i vetrine non inglesi mostrano prezzi errati a causa della versione della libreria ICU
 
@@ -28,7 +28,7 @@ La patch ACSD-66049 risolve il problema della visualizzazione di prezzi non corr
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -39,7 +39,7 @@ I vetrine non inglesi mostrano prezzi errati quando si utilizzano versioni prece
 1. Verifica versione ICU:
    * Connettersi al server tramite SSH ed eseguire il comando: `php -a`
    * Al prompt, immettere: `echo INTL_ICU_VERSION;`
-1. Vai a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale]** > **[!UICONTROL Locale Options]**. **[!UICONTROL Configure Locale]** = *[UICONTOL Ebraico (Israele)]*.
+1. Vai a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale]** > **[!UICONTROL Locale Options]**. **[!UICONTROL Configure Locale]** = *[!UICONTROL Hebrew (Israel)]*.
 1. Crea un prodotto con prezzo = 100.
 1. Visualizza la pagina del prodotto nella vetrina.
 
@@ -50,14 +50,13 @@ Il prezzo visualizzato non è 0.
 <u>Risultati effettivi</u>:
 
 Dopo essere comparso brevemente come 100, il prezzo viene immediatamente aggiornato a 0.
-(Questo problema riguarda le versioni da 63.1 a 74.1 della libreria ICU PHP).
 
 ## Applicare la patch
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
