@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: a0bf44520c0d355c9aca3aaab55306a2d0fe018e
+source-git-commit: 53ad3cfeaa75b1264374ff4e183b079ef1f36100
 workflow-type: tm+mt
-source-wordcount: '8026'
+source-wordcount: '8047'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Avvisi gestiti per Adobe Commerce: avviso di CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Strumento Patch di qualità {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilizzo](quality-patches-tool/usage.md)
    - [Note sulla versione](quality-patches-tool/release-notes.md)
    - Patch disponibili nello strumento Patch di qualità {#patches-available-in-qpt}
@@ -832,6 +832,7 @@ ht-degree: 0%
          - [AC-14985: Errore durante l’invio di e-mail SMTP tramite TLS](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14985-error-when-sending-smtp-emails-using-tls.md)
          - [ACSD-66434: [!UICONTROL Customer ID] mancante dalla società [!DNL GraphQL] query](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
       - v1.1.68 {#v1-1-68}
+         - [ACSD-66072: GraphQL non è in grado di restituire i prodotti correlati nella pagina Dettagli prodotto a causa di un errore interno del server durante la configurazione [!UICONTROL Related Products Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66072-graphql-fails-to-return-related-products-due-to-server-error-in-related-product-rules.md)
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
          - [ACSD-66179: l&#39;annullamento di una fattura con il tipo di pagamento [!UICONTROL Not Capture] genera una pagina di errore 404](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66179-canceling-an-invoice-with-the-not-capture-payment-type-results-in-a-404-error-page.md)
          - [ACSD-66082: impossibile aggiornare l’immagine campione di un prodotto tramite l’importazione del prodotto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66082-cant-update-a-products-swatch-image-through-product-import.md)
@@ -883,6 +884,6 @@ ht-degree: 0%
       - [Dati che richiedono la migrazione manuale](data-migration-tool/migrate-data/manual.md)
       - [Passaggi di migrazione post-dati](data-migration-tool/migrate-data/post-migration.md)
    - Risorse {#resources}
-      - [Risoluzione dei problemi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=it)
+      - [Risoluzione dei problemi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro modifiche](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
