@@ -2,9 +2,9 @@
 title: Pianificazione della versione
 description: Scopri quando Adobe intende annunciare il rilascio di nuove funzioni per Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 9e3246e81063769e4197f2e786e1e405b4460787
+source-git-commit: b908b468f0b8abe8bb7904b9c4a626201dc919bc
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '483'
 ht-degree: 2%
 
 ---
@@ -18,16 +18,14 @@ Adobe si impegna continuamente a trovare il giusto equilibrio tra la necessità 
 
 Nuove funzioni, aggiornamenti delle funzioni, infrastruttura cloud e aggiornamenti di estensibilità vengono forniti indipendentemente dalle versioni delle patch e sono disponibili tramite moduli esterni, estensioni, strumenti o servizi web. Alcuni esempi:
 
-- ![Icona funzionalità](../assets/icons/feature.svg) [**Funzionalità e funzionalità**](https://experienceleague.adobe.com/it/docs/commerce/user-guides/release-information/release-notes-all)—Nuove funzionalità e funzionalità distribuite indipendentemente dalle versioni delle patch. Ad esempio, [B2B](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search e Product Recommendations.
+- ![Icona funzionalità](../assets/icons/feature.svg) [**Funzionalità e funzionalità**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)—Nuove funzionalità e funzionalità distribuite indipendentemente dalle versioni delle patch. Ad esempio, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search e Product Recommendations.
 
-- ![Icona infrastruttura](../assets/icons/servers.svg) [**Infrastruttura cloud**](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite): nuove funzionalità e miglioramenti per Adobe Commerce sull&#39;infrastruttura cloud e per i pacchetti della suite di strumenti cloud per Commerce, che distribuiscono e gestiscono installazioni e aggiornamenti Adobe Commerce sulla piattaforma cloud.
+- ![Icona infrastruttura](../assets/icons/servers.svg) [**Infrastruttura cloud**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite): nuove funzionalità e miglioramenti per Adobe Commerce sull&#39;infrastruttura cloud e per i pacchetti della suite di strumenti cloud per Commerce, che distribuiscono e gestiscono installazioni e aggiornamenti Adobe Commerce sulla piattaforma cloud.
 
 - ![Icona Estensibilità](../assets/icons/brackets.svg) [**Estensibilità**](https://developer.adobe.com/commerce/extensibility/)—Nuovi strumenti e servizi per sviluppatori per l&#39;estensibilità fuori processo forniti indipendentemente dalle versioni delle patch. Ad esempio, Integration Starter Kit, Admin UI SDK, Adobe I/O Events for Commerce e API Mesh.
 
 L’elenco seguente fornisce le date delle versioni pianificate di funzioni, infrastruttura cloud ed estensibilità (le date sono soggette a modifiche):
 
-- 13 agosto 2024
-- 8 ottobre 2024
 - 11 febbraio 2025
 - 8 aprile 2025
 - 10 giugno 2025
@@ -36,7 +34,7 @@ L’elenco seguente fornisce le date delle versioni pianificate di funzioni, inf
 
 >[!NOTE]
 >
->Funzionalità, infrastruttura cloud ed estensibilità possono variare nel corso dell’anno. Tuttavia, Adobe rilascia regolarmente e continuamente miglioramenti per queste aree tra le date specificate in questa pagina. Vedi [Cos&#39;è Adobe Commerce?](https://experienceleague.adobe.com/it/docs/commerce-admin/start/about) per ulteriori informazioni sulle funzioni più recenti.
+>Funzionalità, infrastruttura cloud ed estensibilità possono variare nel corso dell’anno. Tuttavia, Adobe rilascia regolarmente e continuamente miglioramenti per queste aree tra le date specificate in questa pagina. Vedi [Cos&#39;è Adobe Commerce?](https://business.adobe.com/products/magento/magento-commerce.html) per ulteriori informazioni sulle funzioni più recenti.
 
 ## Patch
 
@@ -55,14 +53,6 @@ Nella tabella seguente sono riportate le date dei rilasci patch pianificati (le 
 </thead>
 <tbody>
   <tr>
-  <tr>
-    <td>13 agosto 2024</td>
-    <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patch di sicurezza</a>: 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10</td>
-  </tr>
-  <tr>
-    <td>8 ottobre 2024</td>
-    <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">patch di Beta</a>: 2.4.8-beta1<br><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">patch di sicurezza</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
-  </tr>
   <tr>
     <td>11 febbraio 2025</td>
     <td><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">patch di Beta</a>: 2.4.8-beta2<br><img alt="Icona rilascio patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">patch di sicurezza</a>: per 2.4.7, 2.4.6, 2.4.5 e 2.4.4</td>

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2f471a1bc1cbf31076aeb67ceaee289196841cd4
+source-git-commit: 44c3581a68cad32ce737219351601cfde31941fb
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
@@ -56,3 +56,9 @@ _AC-14559_
 #### Migrazione dell&#39;integrazione DHL da XML DHL Express obsoleto alle nuove API RESTful API MyDHL
 
 _AC-13258_
+
+### Sicurezza
+
+Per informazioni aggiornate sulle correzioni di bug di sicurezza, vedere [Adobe Security Bulletin APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
+
+{{$include /help/_includes/release-notes/highlights/security-2025-06.md}}
