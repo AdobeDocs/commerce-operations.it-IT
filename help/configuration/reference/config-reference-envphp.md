@@ -2,9 +2,9 @@
 title: riferimento env.php
 description: Consulta un elenco di valori per il file env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
+source-git-commit: 26fac37405ad635f297b65415517451d5149e50f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce utilizza una chiave di crittografia per proteggere le password e altri 
 ]
 ```
 
-Ulteriori informazioni sulla [chiave di crittografia](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/security/encryption-key) nella _Guida utente di Commerce_.
+Ulteriori informazioni sulla [chiave di crittografia](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) nella _Guida utente di Commerce_.
 
 ## db
 
@@ -203,7 +203,7 @@ Elenco dei domini scaricabili disponibili in questo nodo. È possibile aggiunger
 ]
 ```
 
-Ulteriori informazioni su [Domini scaricabili](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Ulteriori informazioni su [Domini scaricabili](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installare
 
@@ -334,7 +334,7 @@ Come altro esempio, convertiamo un percorso dell&#39;opzione di configurazione `
 >
 >Il nome della variabile deve essere in maiuscolo, ma il valore fa distinzione tra maiuscole e minuscole e deve essere mantenuto come documentato.
 
-Per ricevere il nome finale della variabile di ambiente del sistema operativo `MAGENTO_DC_X-FRAME-OPTIONS`, è sufficiente utilizzare la maiuscola e il prefisso `MAGENTO_DC_`.
+Per ricevere il nome finale della variabile di ambiente del sistema operativo `MAGENTO_DC_`, è sufficiente utilizzare la maiuscola e il prefisso `MAGENTO_DC_X-FRAME-OPTIONS`.
 
 ```shell
 export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
@@ -347,6 +347,12 @@ export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
 ## Sovrascrivi configurazione file con variabili
 
 Per sostituire le opzioni di configurazione di `env.php` esistenti con una variabile di ambiente del sistema operativo, l&#39;elemento array della configurazione deve essere codificato in JSON e impostato come valore della variabile del sistema operativo `MAGENTO_DC__OVERRIDE`.
+
+Quando `MAGENTO_DC__OVERRIDE` è impostato, il framework Commerce ignora i valori corrispondenti nel file `env.php` e legge la configurazione direttamente dalla variabile di ambiente. I valori nel file `env.php` rimangono invariati ma vengono ignorati per le sezioni di configurazione sostituite.
+
+>[!IMPORTANT]
+>
+>La variabile `MAGENTO_DC__OVERRIDE` ignora completamente le sezioni di configurazione specificate nel file `env.php`. Questo comportamento è diverso dalle singole variabili `MAGENTO_DC_`, che hanno priorità inferiore rispetto ai valori nel file `env.php`.
 
 Se devi ignorare più opzioni di configurazione, assemblatele tutte in un singolo array prima della codifica JSON.
 
