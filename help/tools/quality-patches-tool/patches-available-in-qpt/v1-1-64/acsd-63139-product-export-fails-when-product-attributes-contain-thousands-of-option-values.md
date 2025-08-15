@@ -38,9 +38,9 @@ L’esportazione del prodotto ha esito negativo quando gli attributi del prodott
 
 1. Installa Adobe Commerce con il modulo B2B.
 1. Importa un dump di database di grandi dimensioni con:
-   - circa 7.000 prodotti
-   - circa 450 attributi di prodotto
-   - Alcuni attributi con più di 100 opzioni
+   &#x200B;- circa 7.000 prodotti
+   &#x200B;- circa 450 attributi di prodotto
+   &#x200B;- Alcuni attributi con più di 100 opzioni
 1. Eseguire il comando seguente per installare cron (se non è già installato):
 
    ```

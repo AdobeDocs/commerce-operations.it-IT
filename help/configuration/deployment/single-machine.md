@@ -22,7 +22,7 @@ In questo argomento vengono fornite istruzioni per la distribuzione di aggiornam
 >[!WARNING]
 >
 >Questa guida non è applicabile se è stato utilizzato `git clone` per installare Commerce.
->>Gli sviluppatori partecipanti devono utilizzare [questa guida][install] per aggiornare l&#39;installazione di Commerce.
+>&#x200B;>Gli sviluppatori partecipanti devono utilizzare [questa guida][install] per aggiornare l&#39;installazione di Commerce.
 
 ## Passaggi della distribuzione
 

@@ -26,7 +26,7 @@ Dashboard *[!DNL Site-Wide Analysis Tool]*
 >[!NOTE]
 >
 >Il tuo account deve avere diritto a **[!DNL Support Permissions]** per accedere a [!DNL Site-Wide Analysis Tool Dashboard].
->>Vedi ulteriori dettagli in [Condividi un [!DNL Commerce] account](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) nella nostra guida utente.
+>&#x200B;>Vedi ulteriori dettagli in [Condividi un [!DNL Commerce] account](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) nella nostra guida utente.
 
 ## Accesso a [!DNL Site-Wide Analysis Tool Dashboard] da [!UICONTROL Admin Panel] del tuo archivio
 

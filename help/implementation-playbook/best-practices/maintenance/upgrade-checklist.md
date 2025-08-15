@@ -87,7 +87,7 @@ Utilizza questo elenco di controllo durante le conversazioni annuali e trimestra
 
 ▢ Monitorare il sito per individuare eventuali problemi: prestazioni, elaborazione degli ordini, analisi e altri.
 
-▢ Eseguire un&#39;analisi di sicurezza di Adobe Commerce [](https://account.magento.com/scanner/dashboard/) o un&#39;altra analisi di terze parti ed esaminare potenziali vulnerabilità di sicurezza.
+▢ Eseguire un&#39;analisi di sicurezza di Adobe Commerce [&#128279;](https://account.magento.com/scanner/dashboard/) o un&#39;altra analisi di terze parti ed esaminare potenziali vulnerabilità di sicurezza.
 
 ▢ Esegui una retrospettiva con tutte le parti interessate e documenta cosa è andato bene e cosa non è successo e come migliorare.
 

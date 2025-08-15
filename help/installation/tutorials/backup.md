@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**Avviso di rimozione:**
->>La funzionalità di backup è obsoleta dal 2.1.16, 2.2.7 e 2.3.0. Si consiglia di esaminare ulteriori tecnologie di backup e strumenti di backup binari (come Percona XtraBackup).
+>&#x200B;>La funzionalità di backup è obsoleta dal 2.1.16, 2.2.7 e 2.3.0. Si consiglia di esaminare ulteriori tecnologie di backup e strumenti di backup binari (come Percona XtraBackup).
 
 ## Imposta il limite di file aperti
 

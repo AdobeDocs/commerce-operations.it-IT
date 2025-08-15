@@ -50,14 +50,14 @@ Gli utenti ricevono un errore durante il tentativo di recuperare informazioni su
 
    <pre>
     <code class="language-graphql">
-    query {
-     category(id: 49) {
+    query &lbrace;
+     category(id: 49) &lbrace;
       name
-      children {
+      children &lbrace;
         name
-       }
-     }
-   }
+       &rbrace;
+     &rbrace;
+   &rbrace;
    </code>
    </pre>
 
@@ -65,18 +65,18 @@ Gli utenti ricevono un errore durante il tentativo di recuperare informazioni su
 
    <pre>
     <code class="language-graphql">
-    {
-      "data": {
-        "category": {
+    &lbrace;
+      "data": &lbrace;
+        "category": &lbrace;
           "name": "Some category",
-          "children": [
-            {
+          "children": &lbrack;
+            &lbrace;
               "name": "Some child category"
-            }
-          ]
-        }
-      }
-    }
+            &rbrace;
+          &rbrack;
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -94,29 +94,29 @@ Viene visualizzato il seguente errore:
 
 <pre>
 <code class="language-graphql">
-{
-  "errors": [
-    {
+&lbrace;
+  "errors": &lbrack;
+    &lbrace;
       "debugMessage": "uasort() expects parameter 1 to be array, string given",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 2,
           "column": 3
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "category"
-      ]
-    }
-  ],
-  "data": {
+      &rbrack;
+    &rbrace;
+  &rbrack;,
+  "data": &lbrace;
     "category": null
-  }
-}
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -124,14 +124,14 @@ Viene visualizzato il seguente errore:
 
 Per applicare singole patch, utilizzare i collegamenti seguenti a seconda del tipo di distribuzione:
 
-* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
+&#x200B;* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
+&#x200B;* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
 Per ulteriori informazioni sulle patch di qualità per Adobe Commerce, consulta:
 
-* [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
-* [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando lo strumento Patch di qualità](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!DNL Quality Patches Tool].
+&#x200B;* [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
+&#x200B;* [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando lo strumento Patch di qualità](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!DNL Quality Patches Tool].
 
 Per informazioni sulle altre patch disponibili in QPT, consulta la sezione [Patch disponibili in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
