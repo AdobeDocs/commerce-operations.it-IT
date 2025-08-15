@@ -2,9 +2,9 @@
 title: Criterio di rilascio
 description: Scopri i diversi tipi di versioni di Adobe Commerce.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 0ea8c2bfffe81d27547c0330abdd75fc078542cf
+source-git-commit: f7b22089bcf88f6c881b0cbd4d7f77d795d9071b
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,10 @@ Le singole patch contengono correzioni di qualità a basso impatto per un proble
 
 ## Patch isolata
 
-patch isolateContengono una correzione autonoma inclusa nell&#39;ultima patch di sicurezza o in una patch di sicurezza imminente, che verrà rilasciata separatamente per un&#39;implementazione più rapida.
+Le patch isolate sono correzioni di sicurezza rilasciate indipendentemente da una patch di sicurezza completa per consentire un’implementazione più rapida. Ciascuna patch isolata risolve un problema di sicurezza specifico ed è inclusa nell&#39;ultima patch di sicurezza o in una patch di sicurezza completa imminente. I dettagli sul problema sono forniti nel relativo bollettino sulla sicurezza, che rimanda a un articolo della Knowledge Base (KB) contenente i dettagli della correzione, le modalità di applicazione della patch e informazioni aggiuntive.
+
+Per trovare gli ultimi aggiornamenti per la sicurezza disponibili per Adobe Commerce, visita il [Centro sicurezza PC](https://helpx.adobe.com/security/products/magento.html).
 
 ## Patch personalizzata
 
-Creato da personale non Adobe per risolvere un problema o modificare il codice Adobe Commerce per vari motivi. Le patch personalizzate vengono distribuite tramite lo strumento [Patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/usage).
+Creato da personale non Adobe per risolvere un problema o modificare il codice Adobe Commerce per vari motivi. Le patch personalizzate vengono distribuite tramite lo strumento [Patch di qualità](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
