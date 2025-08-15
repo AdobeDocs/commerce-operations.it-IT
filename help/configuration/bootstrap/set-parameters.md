@@ -9,16 +9,16 @@ ht-degree: 1%
 
 ---
 
-# Bootstrap parametri
+# Parametri Bootstrap
 
 In questo argomento viene illustrato come impostare i valori dei parametri di avvio dell&#39;applicazione Commerce. Vedere [Panoramica sull&#39;inizializzazione e l&#39;avvio dell&#39;applicazione](initialization.md).
 
 Nella tabella seguente vengono illustrati i parametri di bootstrap che è possibile impostare:
 
-| Bootstrap parametro | Descrizione |
+| Parametro Bootstrap | Descrizione |
 | ------------------- | -------------------------------------------- |
 | DIR_IMMAGINE | Specifica percorsi URL e directory personalizzati |
-| IMMAGINE_PROFILER | Abilita i grafici delle dipendenze e la profilatura dei HTML |
+| IMMAGINE_PROFILER | Abilita i grafici delle dipendenze e la creazione di profili HTML |
 
 >[!INFO]
 >

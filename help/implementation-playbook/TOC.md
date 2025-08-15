@@ -69,4 +69,4 @@ ht-degree: 14%
       - [Elenco di controllo per l’aggiornamento](best-practices/maintenance/upgrade-checklist.md)
       - [Prerequisiti per l&#39;aggiornamento di MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Glossario](glossary.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

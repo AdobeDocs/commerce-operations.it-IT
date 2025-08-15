@@ -1,5 +1,5 @@
 ---
-title: Scheda  [!DNL WAF]
+title: 'Scheda  [!DNL WAF] '
 description: Scopri la scheda  [!DNL WAF]  di [!DNL Observation for Adobe Commerce].
 exl-id: e36986d7-d903-4154-bb09-6962b99ae35f
 feature: Configuration, Observability
@@ -22,7 +22,7 @@ Il frame **[!DNL WAF traffic summary]** mostra un conteggio del traffico passato
 
 ## [!DNL WAF Top 10 blocked IP Addresses]
 
-![Primi 10 indirizzi IP bloccati in WAF](../../assets/tools/observation-for-adobe-commerce/waf-2.png)
+![Primi 10 indirizzi IP bloccati da WAF](../../assets/tools/observation-for-adobe-commerce/waf-2.png)
 
 Il frame **[!DNL WAF Top 10 blocked IP Addresses]** mostra i primi 10 indirizzi IP più bloccati da [!DNL firewall].
 
@@ -34,7 +34,7 @@ Il frame **[!DNL WAF Top 10 countries for blocked requests]** mostra un conteggi
 
 ## [!DNL WAF Top 10 logged IP Addresses]
 
-![Primi 10 indirizzi IP registrati in WAF](../../assets/tools/observation-for-adobe-commerce/waf-4.jpg)
+![Primi 10 indirizzi IP registrati da WAF](../../assets/tools/observation-for-adobe-commerce/waf-4.jpg)
 
 Il frame **[!DNL WAF Top 10 logged IP Addresses]** mostra gli indirizzi IP nei primi 10 indirizzi IP registrati da [!DNL firewall].
 
@@ -46,12 +46,12 @@ Il frame **[!DNL Top 10 WAF Rules Executed and Logged by IP address]** mostra gl
 
 ## [!DNL WAF Logged Details]
 
-![Dettagli registrati WAF](../../assets/tools/observation-for-adobe-commerce/waf-6.jpg)
+![Dettagli registrati da WAF](../../assets/tools/observation-for-adobe-commerce/waf-6.jpg)
 
 Il frame **[!DNL WAF Logged Details]** mostra le richieste registrate da [!DNL firewall], inclusi dettagli quali marca temporale, città, area geografica e data center.
 
 ## [!DNL WAF Blocked Details]
 
-![Dettagli WAF bloccati](../../assets/tools/observation-for-adobe-commerce/waf-7.jpg)
+![Dettagli bloccati da WAF](../../assets/tools/observation-for-adobe-commerce/waf-7.jpg)
 
 Il frame **[!DNL WAF Blocked Details]** mostra le richieste bloccate da [!DNL firewall], inclusi dettagli quali data e ora, città, area geografica e data center.

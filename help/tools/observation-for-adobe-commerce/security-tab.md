@@ -36,18 +36,18 @@ Il frame **[!UICONTROL Create Account access]** mostra il numero di nuove attivi
 
 Il frame **[!UICONTROL POST activities]** mostra le attività `POST` per il sito, sfaccettate su `client_ip` dai registri [!DNL Fastly]. Mostra anche l’URL a cui accede l’indirizzo IP.
 
-![attività-POST](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
+![POST-attività](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
 Nel frame **[!UICONTROL POST activities summary table]** sono visualizzate le `POST` attività riepilogate per il sito, sfaccettate in `client_ip` dai registri [!DNL Fastly]. Mostra anche il conteggio dell’URL a cui accede l’indirizzo IP. Il conteggio si riferisce all’intervallo temporale selezionato.
 
-![attività-POST-riepilogo](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
+![POST-attività-riepilogo](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
 Il frame **[!UICONTROL POST activities details table]** mostra le attività `POST` per il sito dai registri [!DNL Fastly]. Vengono inoltre visualizzati tutti i dettagli del registro [!DNL Fastly] per queste richieste. È limitato alle ultime 2000 richieste.
-![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
+![Dettagli-post-attività](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 

@@ -1,6 +1,6 @@
 ---
 title: Riferimento per le informazioni personali del cliente (versione 1.x)
-description: Scopri i mapping di entità di database e flussi di dati per le informazioni personali dei clienti nel Magento 1.x.
+description: Scopri i mapping di entità di database e flussi di dati per le informazioni personali dei clienti in Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
@@ -50,11 +50,11 @@ Commerce carica le informazioni sul cliente quando un commerciante visualizza di
 
 ## Entità di database
 
-Il Magento 1 memorizza le informazioni sui clienti in tabelle di clienti, vendite e altri database.
+Magento 1 memorizza le informazioni sui clienti in tabelle di clienti, vendite e altri database.
 
 ### Dati dei clienti
 
-Il Magento 1 memorizza le informazioni del cliente nelle tabelle `customer_entity` e `customer_address_entity`. Entrambe queste tabelle hanno diverse tabelle di riferimento che possono contenere attributi cliente personalizzati.
+Magento 1 archivia le informazioni sui clienti nelle tabelle `customer_entity` e `customer_address_entity`. Entrambe queste tabelle hanno diverse tabelle di riferimento che possono contenere attributi cliente personalizzati.
 
 #### `customer_entity` e tabelle di riferimento
 
@@ -81,25 +81,25 @@ Le tabelle seguenti fanno riferimento a `customer_address_entity` e possono cont
 | Tabella | Colonna | Tipo di dati |
 | --- | --- | --- |
 | `customer_address_entity_datetime` | `value` | datetime |
-| `customer_address_entity_decimal` | `value` | decimale(12,4) |
-| `customer_address_entity_int` | `value` | numero intero(11) |
-| `customer_address_entity_text` | `value` | Testo |
-| `customer_address_entity_varchar` | `value` | Varchar(255) |
+| `customer_address_entity_decimal` | `value` | decimal(12,4) |
+| `customer_address_entity_int` | `value` | int(11) |
+| `customer_address_entity_text` | `value` | text |
+| `customer_address_entity_varchar` | `value` | varchar(255) |
 
-### Dati dell&#39;ordine
+### Dati ordine
 
-Le `sales_flat_order` tabelle correlate contengono il nome, gli indirizzi fatturazione e di spedizione del cliente e le informazioni correlate.
+`sales_flat_order` e tabelle correlate contengono il nome del cliente, gli indirizzi di fatturazione e spedizione e le informazioni correlate.
 
-#### `sales_flat_order` tavolo
+#### Tabella `sales_flat_order`
 
-Le colonne seguenti della tabella contengono informazioni `sales_order` sui clienti:
+Le colonne seguenti della tabella `sales_order` contengono informazioni sul cliente:
 
 | Colonna | Tipo di dati |
 | --- | --- |
-| `customer_id` | numero intero(10) |
-| `customer_email` | Varchar(128) |
-| `customer_firstname` | Varchar(128) |
-| `customer_gender` | numero intero(11) |
+| `customer_id` | int(10) |
+| `customer_email` | varchar(128) |
+| `customer_firstname` | varchar(128) |
+| `customer_gender` | int(11) |
 | `customer_lastname` | varchar(128) |
 | `customer_middlename` | varchar(128) |
 | `customer_prefix` | varchar(32) |
@@ -152,7 +152,7 @@ Le colonne seguenti della tabella `sales_flat_order_payment` contengono informaz
 | `cc_ss_start_month` | varchar(255) |
 | `cc_owner` | varchar(255) |
 | `cc_exp_year` | varchar(255) |
-| `echeck_routing_number` | Varchar(255) |
+| `echeck_routing_number` | varchar(255) |
 | `echeck_account_name` | varchar(255) |
 
 ### Dati offerta
@@ -165,14 +165,14 @@ Le colonne seguenti della tabella `sales_flat_quote` contengono informazioni sul
 
 | Colonna | Tipo di dati |
 | --- | --- |
-| `customer_id` | numero intero(10) |
-| `customer_tax_class_id` | numero intero(10) |
-| `customer_group_id` | numero intero(10) |
-| `customer_email` | Varchar(255) |
+| `customer_id` | int(10) |
+| `customer_tax_class_id` | int(10) |
+| `customer_group_id` | int(10) |
+| `customer_email` | varchar(255) |
 | `customer_prefix` | varchar(40) |
-| `customer_firstname` | Varchar(255) |
+| `customer_firstname` | varchar(255) |
 | `customer_middlename` | varchar(40) |
-| `customer_lastname` | Varchar(255) |
+| `customer_lastname` | varchar(255) |
 | `customer_suffix` | varchar(40) |
 | `customer_dob` | datetime |
 | `customer_note` | varchar(255) |
@@ -236,19 +236,19 @@ Le tabelle e le colonne seguenti contengono informazioni sui clienti:
 
 ### Dati RMA
 
-Le seguenti tabelle e colonne RMA contengono informazioni sui clienti:
+Le tabelle e le colonne RMA seguenti contengono informazioni sul cliente:
 
-| Tavolo | Colonna | Tipo di dati |
+| Tabella | Colonna | Tipo di dati |
 | --- | --- | --- |
-| `enterprise_rma` | `customer_custom_email` | Varchar(255) |
-| `enterprise_rma_grid` | `customer_id` | numero intero(10) |
-| `enterprise_rma_grid` | `customer_name` | Varchar(255) |
+| `enterprise_rma` | `customer_custom_email` | varchar(255) |
+| `enterprise_rma_grid` | `customer_id` | int(10) |
+| `enterprise_rma_grid` | `customer_name` | varchar(255) |
 
 ### Dati vari
 
 Le tabelle e le colonne seguenti contengono informazioni sui clienti:
 
-| Tavolo | Colonna | Tipo di dati |
+| Tabella | Colonna | Tipo di dati |
 | --- | --- | --- |
 | `core_email_queue_recipients` | `recipient_email` | varchar(128) |
 | `core_email_queue_recipients` | `recipient_name` | varchar(255) |
@@ -267,16 +267,16 @@ Le tabelle e le colonne seguenti contengono informazioni sui clienti:
 | `enterprise_scheduled_operations` | `email_sender` | varchar(150) |
 | `gift_message` | `customer_id` | int(10) |
 | `gift_message` | `recipient` | varchar(255) |
-| `gift_message` | `sender` | Varchar(255) |
-| `newsletter_subscriber` | `customer_id` | numero intero(10) |
+| `gift_message` | `sender` | varchar(255) |
+| `newsletter_subscriber` | `customer_id` | int(10) |
 | `newsletter_subscriber` | `subscriber_email` | varchar(150) |
-| `persistent_session` | `customer_id` | numero intero(10) |
-| `persistent_session` | `info` | Testo |
-| `poll_vote` | `customer_id` | numero intero(10) |
-| `poll_vote` | `ip_address` | Binario(16) |
-| `rating_option_vote` | `customer_id` | numero intero(10) |
-| `rating_option_vote` | `remote_ip` | Varchar(50) |
-| `rating_option_vote` | `remote_ip_long` | Varibinario(516) |
+| `persistent_session` | `customer_id` | int(10) |
+| `persistent_session` | `info` | text |
+| `poll_vote` | `customer_id` | int(10) |
+| `poll_vote` | `ip_address` | varbinary(16) |
+| `rating_option_vote` | `customer_id` | int(10) |
+| `rating_option_vote` | `remote_ip` | varchar(50) |
+| `rating_option_vote` | `remote_ip_long` | varbinary(516) |
 | `send_friend_log` | `ip` | varbinary(16) |
 
 Altre tabelle che fanno riferimento al cliente:

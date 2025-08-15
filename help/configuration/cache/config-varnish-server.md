@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Per configurare la vernice in modo minimo:
 
 1. Sostituire il valore di `.port` con la porta di ascolto del server Web (8080 in questo esempio).
 
-   Esempio: Apache è installato sull’host 192.0.2.55 e Apache è in ascolto sulla porta 8080:
+   Esempio: Apache è installato nell&#39;host 192.0.2.55 e Apache è in ascolto sulla porta 8080:
 
    ```conf
    backend default {
@@ -91,7 +91,7 @@ Per configurare la vernice in modo minimo:
 
    >[!INFO]
    >
-   >Se Vernice e Apache sono in esecuzione sullo stesso host, l&#39;Adobe consiglia di utilizzare un indirizzo IP o un nome host e non `localhost`.
+   >Se Vernice e Apache sono in esecuzione sullo stesso host, Adobe consiglia di utilizzare un indirizzo IP o un nome host e non `localhost`.
 
 1. Salvare le modifiche apportate a `default.vcl` e uscire dall&#39;editor di testo.
 
@@ -197,7 +197,7 @@ backend default {
 
 ## Verificare le intestazioni di risposta HTTP
 
-Ora è possibile verificare che Vernice distribuisca le pagine osservando le intestazioni di risposta dei HTML restituite da qualsiasi pagina.
+Ora puoi verificare che Vernice distribuisca le pagine osservando le intestazioni di risposta di HTML restituite da qualsiasi pagina.
 
 Prima di poter esaminare le intestazioni, è necessario impostare Commerce per la modalità sviluppatore. Esistono diversi modi per farlo, il più semplice dei quali è modificare `.htaccess` nella radice dell&#39;applicazione Commerce. È inoltre possibile utilizzare il comando [`magento deploy:mode:set`](../cli/set-mode.md).
 

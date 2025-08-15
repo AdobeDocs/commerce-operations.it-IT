@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Il supporto di OpenSearch è stato aggiunto nella versione 2.4.4. OpenSearch è un fork di Elasticsearch compatibile. Per ulteriori informazioni, vedere [Migrare l&#39;Elasticsearch a OpenSearch](../../../upgrade/prepare/opensearch-migration.md).
+>Il supporto di OpenSearch è stato aggiunto nella versione 2.4.4. OpenSearch è un fork compatibile di Elasticsearch. Per ulteriori informazioni, vedere [Migrazione da Elasticsearch a OpenSearch](../../../upgrade/prepare/opensearch-migration.md).
 
 In questa sezione viene illustrato come configurare Apache come proxy *unsecure* in modo che Adobe Commerce possa utilizzare un motore di ricerca in esecuzione su questo server. In questa sezione non viene illustrata la configurazione dell&#39;autenticazione HTTP Basic, argomento trattato in [Comunicazione protetta con Apache](#secure-communication-with-apache).
 
@@ -64,7 +64,7 @@ Questa sezione illustra come configurare un proxy utilizzando un host virtuale.
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
-   Ad esempio, se utilizzi Elasticsearch e il tuo proxy utilizza la porta 8080:
+   Ad esempio, se utilizzi Elasticsearch e il proxy utilizza la porta 8080:
 
    ```bash
    curl -i http://localhost:8080/_cluster/health
@@ -134,7 +134,7 @@ Dove
 
   In questo esempio, utilizziamo l’utente del server web, ma la scelta dell’utente dipende da te.
 
-   * Elasticsearch di configurazione: l&#39;utente è denominato `magento_elasticsearch`
+   * Configurazione di Elasticsearch: l&#39;utente è denominato `magento_elasticsearch` in questo esempio
 
 * `<password file name>` deve essere un file nascosto (inizia con `.`) e deve riflettere il nome dell&#39;utente. Per ulteriori informazioni, consulta gli esempi più avanti in questa sezione.
 
@@ -154,7 +154,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
 **Esempio 2: Elasticsearch**
-Devi impostare l’autenticazione per due utenti: uno con accesso a nginx e uno con accesso a Elasticsearch. Per creare file di password per questi utenti, immetti i seguenti comandi:
+Devi impostare l’autenticazione per due utenti: uno con accesso a nginx e uno con accesso ad Elasticsearch. Per creare file di password per questi utenti, immetti i seguenti comandi:
 
 ```bash
 mkdir -p /usr/local/apache/password

@@ -76,7 +76,7 @@ Per creare un tipo di configurazione:
    </config>
    ```
 
-   - Il primo nodo di tipo imposta il nome del file del Reader e le classi `Converter` e `SchemaLocator` associate.
+   - Il primo nodo di tipo imposta il nome file di Reader, le classi `Converter` e `SchemaLocator` associate.
    - Il nodo del tipo virtuale `pdfConfigDataStorage` associa quindi la classe Reader a un&#39;istanza di [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
    - Infine, l&#39;ultimo nodo di tipo associa il tipo virtuale di dati di configurazione alla classe [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php), che viene utilizzata per la lettura effettiva dei valori in da tali file [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml).
 

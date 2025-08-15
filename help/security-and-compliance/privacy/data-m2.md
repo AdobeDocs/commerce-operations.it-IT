@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Questo è uno di una serie di argomenti per aiutare i commercianti e gli sviluppatori di Adobe Commerce a prepararsi per il rispetto delle normative sulla privacy. Rivolgiti al tuo consulente legale per determinare se e come la tua azienda debba conformarsi ad obblighi di legge.
 
-Utilizzare i diagrammi di flusso di dati e i mapping delle entità del database seguenti come riferimento quando si sviluppano programmi di conformità per le normative sulla privacy, ad esempio:
+Utilizza i seguenti diagrammi di flusso di dati e mappature di entità di database come riferimento durante lo sviluppo di programmi di conformità per le normative sulla privacy, ad esempio:
 
 - [RGPD](gdpr.md)
 - [CCPA](ccpa.md)
@@ -34,7 +34,7 @@ L&#39;utente può immettere le informazioni relative al cliente, all&#39;indiriz
 
 Adobe Commerce carica le informazioni del cliente quando il cliente effettua l’accesso e visualizza diverse pagine o effettua il check-out.
 
-![Dati frontend accesso punti](../../assets/security-compliance/frontend-data-access-points.svg)
+![Punti di accesso ai dati front-end](../../assets/security-compliance/frontend-data-access-points.svg)
 
 ### Punti di immissione dati back-end
 
@@ -50,15 +50,15 @@ Adobe Commerce carica le informazioni sul cliente quando un commerciante visuali
 
 ## Entità di database
 
-Adobe Systems Commerce memorizza principalmente informazioni specifiche del cliente nelle tabelle di clienti, indirizzi, ordini, preventivi e pagamenti. Altre tabelle contengono riferimenti all&#39;ID cliente.
+Adobe Commerce memorizza principalmente le informazioni specifiche del cliente in tabelle relative a clienti, indirizzi, ordini, preventivi e pagamenti. Altre tabelle contengono riferimenti all’ID cliente.
 
-### Dati cliente
+### Dati dei clienti
 
-Adobe Systems Commerce può essere configurato per store i seguenti attributi del cliente:
+Adobe Commerce può essere configurato per memorizzare i seguenti attributi del cliente:
 
 - Data di nascita
 - E-mail
-- Nome di battesimo
+- Nome
 - Genere
 - Cognome
 - Secondo nome/iniziale
@@ -67,36 +67,36 @@ Adobe Systems Commerce può essere configurato per store i seguenti attributi de
 
 >[!NOTE]
 >
->In linea con le attuali best practice in materia di sicurezza e privacy, assicurati di essere a conoscenza di eventuali rischi legali e di sicurezza associati alla memorizzazione della data di nascita completa dei clienti (mese, giorno, anno) insieme ad altri identificatori personali, come il nome completo, prima di raccogliere o elaborare tali dati.
+>In linea con le attuali best practice sulla sicurezza e la privacy, assicurati di essere a conoscenza di eventuali rischi legali e di sicurezza associati alla memorizzazione della data di nascita completa dei clienti (mese, giorno, anno) insieme ad altri identificatori personali, come il nome completo, prima di raccogliere o elaborare tali dati.
 
-#### `customer_entity` e riferimenti &quot;customer_entity&quot;
+#### `customer_entity` e riferimenti &#39;customer_entity&#39;
 
-Le colonne seguenti della tabella contengono informazioni `customer_entity` sui clienti:
+Le colonne seguenti della tabella `customer_entity` contengono informazioni sul cliente:
 
 | Colonna | Tipo di dati |
 | ------------ | ------------ |
-| `email` | Varchar(255) |
+| `email` | varchar(255) |
 | `prefix` | varchar(40) |
-| `firstname` | Varchar(255) |
-| `middlename` | Varchar(255) |
-| `lastname` | Varchar(255) |
+| `firstname` | varchar(255) |
+| `middlename` | varchar(255) |
+| `lastname` | varchar(255) |
 | `suffix` | varchar(40) |
-| `dob` | dattero |
+| `dob` | data |
 | `gender` | smallint(5) |
 
-Queste tabelle fanno riferimento `customer_entity` e possono contenere attributi personalizzati del cliente:
+Queste tabelle fanno riferimento a `customer_entity` e possono contenere attributi cliente personalizzati:
 
-| Tavolo | Colonna | Tipo di dati |
+| Tabella | Colonna | Tipo di dati |
 | -------------------------- | ------- | ------------- |
 | `customer_entity_datetime` | `value` | datetime |
 | `customer_entity_decimal` | `value` | decimal(12,4) |
 | `customer_entity_int` | `value` | int(11) |
-| `customer_entity_text` | `value` | Testo |
-| `customer_entity_varchar` | `value` | Varchar(255) |
+| `customer_entity_text` | `value` | text |
+| `customer_entity_varchar` | `value` | varchar(255) |
 
-#### `customer_grid_flat` tavolo
+#### Tabella `customer_grid_flat`
 
-Le colonne seguenti della tabella contengono informazioni `customer_grid_flat` sui clienti:
+Le colonne seguenti della tabella `customer_grid_flat` contengono informazioni sul cliente:
 
 | Colonna | Tipo di dati |
 | -------------------- | ------------ |
@@ -105,7 +105,7 @@ Le colonne seguenti della tabella contengono informazioni `customer_grid_flat` s
 | `dob` | data |
 | `gender` | int(11) |
 | `shipping_full` | text |
-| `billing_full` | Testo |
+| `billing_full` | text |
 | `billing_firstname` | varchar(255) |
 | `billing_lastname` | varchar(255) |
 | `billing_telephone` | varchar(255) |
@@ -115,7 +115,7 @@ Le colonne seguenti della tabella contengono informazioni `customer_grid_flat` s
 | `billing_city` | varchar(255) |
 | `billing_fax` | varchar(255) |
 | `billing_vat_id` | varchar(255) |
-| `billing_company` | Varchar(255) |
+| `billing_company` | varchar(255) |
 
 ### Dati indirizzo
 
@@ -125,35 +125,35 @@ Adobe Commerce memorizza i seguenti attributi cliente:
 - Azienda
 - Paese
 - Fax
-- Nome di battesimo
+- Nome
 - Cognome
 - Secondo nome/iniziale
 - Prefisso nome
 - Suffisso nome
 - Numero di telefono
 - Stato/Provincia
-- ID stato/provincia
+- ID Stato/Provincia
 - Indirizzo
 - Partita IVA
-- Code postale/postale
+- CAP
 
 #### `customer_address_entity` e `customer_address_entity` riferimenti
 
-Le colonne seguenti della tabella contengono informazioni `customer_address_entity` sui clienti:
+Le colonne seguenti della tabella `customer_address_entity` contengono informazioni sul cliente:
 
 | Colonna | Tipo di dati |
 | ------------ | ------------ |
-| `city` | Varchar(255) |
-| `company` | Varchar(255) |
-| `country_id` | Varchar(255) |
-| `fax` | Varchar(255) |
-| `firstname` | Varchar(255) |
-| `lastname` | Varchar(255) |
-| `middlename` | Varchar(255) |
-| `postcode` | Varchar(255) |
-| `region` | Varchar(255) |
-| `region_id` | numero intero(10) |
-| `street` | Testo |
+| `city` | varchar(255) |
+| `company` | varchar(255) |
+| `country_id` | varchar(255) |
+| `fax` | varchar(255) |
+| `firstname` | varchar(255) |
+| `lastname` | varchar(255) |
+| `middlename` | varchar(255) |
+| `postcode` | varchar(255) |
+| `region` | varchar(255) |
+| `region_id` | int(10) |
+| `street` | text |
 | `suffix` | varchar(40) |
 | `telephone` | varchar(255) |
 | `vat_id` | varchar(255) |
@@ -163,9 +163,9 @@ Queste tabelle fanno riferimento a `customer_address_entity` e possono contenere
 | Tabella | Colonna | Tipo di dati |
 | ---------------------------------- | ------- | ------------- |
 | `customer_address_entity_datetime` | `value` | datetime |
-| `customer_address_entity_decimal` | `value` | decimale(12,4) |
-| `customer_address_entity_int` | `value` | numero intero(11) |
-| `customer_address_entity_text` | `value` | Testo |
+| `customer_address_entity_decimal` | `value` | decimal(12,4) |
+| `customer_address_entity_int` | `value` | int(11) |
+| `customer_address_entity_text` | `value` | text |
 | `customer_address_entity_varchar` | `value` | varchar(255) |
 
 ### Dati ordine
@@ -179,7 +179,7 @@ Le colonne seguenti della tabella `sales_order` contengono informazioni sul clie
 | Colonna | Tipo di dati |
 | --------------------- | ------------ |
 | `customer_dob` | datetime |
-| `customer_email` | Varchar(128) |
+| `customer_email` | varchar(128) |
 | `customer_firstname` | varchar(128) |
 | `customer_gender` | int(11) |
 | `customer_group_id` | int(11) |
@@ -199,35 +199,35 @@ La tabella `sales_order_address` contiene l&#39;indirizzo del cliente.
 
 | Colonna | Tipo di dati |
 | --------------------- | ------------ |
-| `customer_address_id` | numero intero(11) |
-| `quote_address_id` | numero intero(11) |
-| `region_id` | numero intero(11) |
-| `customer_id` | numero intero(11) |
-| `fax` | Varchar(255) |
-| `region` | Varchar(255) |
-| `postcode` | Varchar(255) |
-| `lastname` | Varchar(255) |
-| `street` | Varchar(255) |
-| `city` | Varchar(255) |
-| `email` | Varchar(255) |
-| `telephone` | Varchar(255) |
+| `customer_address_id` | int(11) |
+| `quote_address_id` | int(11) |
+| `region_id` | int(11) |
+| `customer_id` | int(11) |
+| `fax` | varchar(255) |
+| `region` | varchar(255) |
+| `postcode` | varchar(255) |
+| `lastname` | varchar(255) |
+| `street` | varchar(255) |
+| `city` | varchar(255) |
+| `email` | varchar(255) |
+| `telephone` | varchar(255) |
 | `country_id` | varchar(2) |
-| `firstname` | Varchar(255) |
-| `suffix` | Varchar(255) |
-| `company` | Varchar(255) |
+| `firstname` | varchar(255) |
+| `suffix` | varchar(255) |
+| `company` | varchar(255) |
 
-#### `sales_order_grid` tavolo
+#### Tabella `sales_order_grid`
 
-Le colonne seguenti della tabella contengono informazioni `sales_order_grid` sui clienti:
+Le colonne seguenti della tabella `sales_order_grid` contengono informazioni sul cliente:
 
 | Colonna | Tipo di dati |
 | ---------------------- | ------------ |
-| `customer_id` | numero intero(10) |
-| `shipping_name` | Varchar(255) |
-| `billing_name` | Varchar(255) |
-| `billing_address` | Varchar(255) |
-| `shipping_address` | Varchar(255) |
-| `shipping_information` | Varchar(255) |
+| `customer_id` | int(10) |
+| `shipping_name` | varchar(255) |
+| `billing_name` | varchar(255) |
+| `billing_address` | varchar(255) |
+| `shipping_address` | varchar(255) |
+| `shipping_information` | varchar(255) |
 | `customer_email` | varchar(255) |
 | `customer_name` | varchar(255) |
 
@@ -235,9 +235,9 @@ Le colonne seguenti della tabella contengono informazioni `sales_order_grid` sui
 
 I preventivi contengono il nome, l&#39;indirizzo e-mail e le informazioni correlate di un cliente.
 
-#### `quote` tavolo
+#### Tabella `quote`
 
-Le colonne seguenti della tabella contengono informazioni `quote` sui clienti:
+Le colonne seguenti della tabella `quote` contengono informazioni sul cliente:
 
 | Colonna | Tipo di dati |
 | --------------------- | ------------ |
@@ -249,7 +249,7 @@ Le colonne seguenti della tabella contengono informazioni `quote` sui clienti:
 | `customer_lastname` | varchar(255) |
 | `customer_dob` | datetime |
 | `remote_ip` | varchar(32) |
-| `customer_taxvat` | Varchar(255) |
+| `customer_taxvat` | varchar(255) |
 | `customer_gender` | varchar(255) |
 
 #### Tabella `quote_address`
@@ -265,45 +265,45 @@ Le colonne seguenti della tabella `quote_address` contengono informazioni sul cl
 | `middlename` | varchar(40) |
 | `lastname` | varchar(255) |
 | `suffix` | varchar(40) |
-| `company` | Varchar(255) |
-| `street` | Varchar(255) |
-| `city` | Varchar(255) |
-| `region` | Varchar(255) |
-| `region_id` | numero intero(10) |
+| `company` | varchar(255) |
+| `street` | varchar(255) |
+| `city` | varchar(255) |
+| `region` | varchar(255) |
+| `region_id` | int(10) |
 | `postcode` | varchar(20) |
 | `country_id` | varchar(30) |
-| `telephone` | Varchar(255) |
-| `fax` | Varchar(255) |
+| `telephone` | varchar(255) |
+| `fax` | varchar(255) |
 
 ### Dati di pagamento
 
-La `sales_order_payment` tabella include informazioni sulla scheda creditizia e altre informazioni sulle transazioni.
+La tabella `sales_order_payment` include informazioni sulla carta di credito e altre informazioni sulle transazioni.
 
 | Colonna | Tipo di dati |
 | ------------------------ | ------------ |
 | `cc_exp_month` | varchar(12) |
-| `echeck_bank_name` | Varchar(128) |
+| `echeck_bank_name` | varchar(128) |
 | `cc_last_4` | varchar(100) |
-| `cc_owner` | Varchar(128) |
+| `cc_owner` | varchar(128) |
 | `po_number` | varchar(32) |
 | `cc_exp_year` | varchar(4) |
 | `echeck_routing_number` | varchar(32) |
 | `cc_debug_response_body` | varchar(32) |
 | `echeck_account_name` | varchar(32) |
-| `cc_number_enc` | Varchar(128) |
-| `additional_information` | Testo |
+| `cc_number_enc` | varchar(128) |
+| `additional_information` | text |
 
-### Dati dell&#39;invito
+### Dati invito
 
-Adobe Systems Commerce può essere configurato in modo che i clienti possano inviare inviti a vendite ed eventi privati.
+Adobe Commerce può essere configurato in modo che i clienti possano inviare inviti a vendite ed eventi privati.
 
-#### `magento_invitation` tavolo
+#### Tabella `magento_invitation`
 
-La `magento_invitation` tabella contiene l&#39;ID cliente, l&#39;e-mail e l&#39;ID riferimento.
+La tabella `magento_invitation` contiene l&#39;ID cliente, l&#39;e-mail e l&#39;ID riferimento.
 
 | Colonna | Tipo di dati |
 | ------------- | ------------ |
-| `customer_id` | numero intero(10) |
+| `customer_id` | int(10) |
 | `email` | varchar(255) |
 | `referral_id` | int(10) |
 
@@ -313,8 +313,8 @@ La tabella `magento_invitation_track` contiene anche informazioni sul cliente.
 
 | Colonna | Tipo di dati |
 | ------------- | --------- |
-| `inviter_id` | numero intero(10) |
-| `referral_id` | numero intero(10) |
+| `inviter_id` | int(10) |
+| `referral_id` | int(10) |
 
 ### Tabelle varie che fanno riferimento al cliente
 

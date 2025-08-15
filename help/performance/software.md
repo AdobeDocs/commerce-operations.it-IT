@@ -1,5 +1,5 @@
 ---
-title: Recommendations software
+title: Consigli software
 description: Rivedi un elenco di software consigliati relativi alle prestazioni ottimali delle implementazioni di Adobe Commerce.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
@@ -47,7 +47,7 @@ net.core.somaxconn = 1024
 
 ## PHP
 
-Il Magento supporta pienamente PHP 7.3 e 7.4. Ci sono diversi fattori da tenere in considerazione quando si configura PHP per ottenere la massima velocità ed efficienza nell’elaborazione delle richieste.
+Magento supporta pienamente PHP 7.3 e 7.4. Ci sono diversi fattori da tenere in considerazione quando si configura PHP per ottenere la massima velocità ed efficienza nell’elaborazione delle richieste.
 
 ### Estensioni PHP
 
@@ -151,7 +151,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-Quando ottimizzi l’allocazione di memoria per opcache, tieni conto delle dimensioni della base di codice del Magento e di tutte le estensioni. Il team delle prestazioni del Magento utilizza i valori dell’esempio precedente per il test, perché fornisce spazio sufficiente in opcache per il numero medio di estensioni installate.
+Quando ottimizzi l’allocazione di memoria per opcache, prendi in considerazione le dimensioni della base di codice di Magento e di tutte le estensioni. Il team delle prestazioni di Magento utilizza i valori dell’esempio precedente per il test, perché fornisce spazio sufficiente in opcache per il numero medio di estensioni installate.
 
 Se la memoria del computer è insufficiente e non sono installate molte estensioni o personalizzazioni, utilizzare le impostazioni seguenti per ottenere un risultato simile:
 
@@ -203,7 +203,7 @@ Sono stati apportati numerosi miglioramenti a [!DNL MySQL] 5.7.9 Siamo certi che
 
 ## [!DNL Varnish]
 
-Il Magento consiglia vivamente di utilizzare [!DNL Varnish] come server cache a pagina intera per l&#39;archivio. Il modulo PageCache è ancora presente nel codebase, ma deve essere utilizzato solo a scopo di sviluppo. Non deve essere usato insieme o al posto di [!DNL Varnish].
+Magento consiglia vivamente di utilizzare [!DNL Varnish] come server cache a pagina intera per il tuo archivio. Il modulo PageCache è ancora presente nel codebase, ma deve essere utilizzato solo a scopo di sviluppo. Non deve essere usato insieme o al posto di [!DNL Varnish].
 
 Installa [!DNL Varnish] in un server separato di fronte al livello Web. Deve accettare tutte le richieste in arrivo e fornire copie delle pagine memorizzate nella cache. Per consentire a [!DNL Varnish] di funzionare in modo efficace con le pagine protette, è possibile inserire un proxy di terminazione SSL davanti a [!DNL Varnish]. Nginx può essere utilizzato per questo scopo.
 
@@ -256,7 +256,7 @@ Riavvia il server [!DNL Varnish] per eseguire il flushing delle risorse memorizz
 
 ## Memorizzazione in cache e server di sessione
 
-Magento fornisce una serie di opzioni per memorizzare la cache e i dati di sessione, tra cui Redis, Memcache, file system e database. Alcune di queste opzioni sono discusse di seguito.
+Magento offre diverse opzioni per memorizzare la cache e i dati di sessione, tra cui Redis, Memcache, file system e database. Alcune di queste opzioni sono discusse di seguito.
 
 ### Configurazione di un singolo nodo web
 

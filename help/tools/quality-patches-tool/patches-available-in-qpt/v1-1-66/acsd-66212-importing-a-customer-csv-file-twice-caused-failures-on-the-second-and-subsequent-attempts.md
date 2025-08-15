@@ -3,13 +3,13 @@ title: 'ACSD-66212: l’importazione del file CSV del cliente ha provocato due v
 description: Applica la patch ACSD-66212 per risolvere il problema di Adobe Commerce, a causa del quale l’importazione di un file CSV del cliente causava due volte errori nel secondo e nei successivi tentativi.
 feature: Data Import/Export, Customers
 role: Admin, Developer
-source-git-commit: 97a5979a189e43b737c44cfe7a65025effae711c
+exl-id: ae41f341-6ca3-405e-877a-35bdc3bc5623
+source-git-commit: 5a36d0f0aaa9b7cf0ed30f0da8efac241523cf6b
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66212: l’importazione del file CSV del cliente ha provocato due volte errori nel secondo e nei successivi tentativi
 
@@ -27,7 +27,7 @@ La patch ACSD-66212 risolve il problema che causava due volte errori durante il 
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -55,7 +55,7 @@ Additional data: <div class="messages"><div class="message message-error error">
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

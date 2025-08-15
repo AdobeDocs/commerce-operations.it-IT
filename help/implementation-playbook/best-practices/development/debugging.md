@@ -22,10 +22,10 @@ Questa sezione descrive i problemi più comuni che potresti riscontrare durante 
 ### Cache
 
 - Svuota la cache prima di ulteriori indagini
-- Considera la cache APC, CDN, Varnish, il codice generato e le `var/view_preprocessed` directory and `pub/static/`
-- Interruzione e riavviare i gestori coda dopo lo svuotamento della cache o la modifica del codice
+- Considera la cache APC, la rete CDN, la vernice, il codice generato e le directory `var/view_preprocessed` e `pub/static/`
+- Arresta e riavvia i gestori code dopo lo svuotamento della cache o la modifica del codice
 
-Nell&#39;esempio di codice riportato di seguito vengono forniti utili comandi relativi alla gestione della cache (da non eseguire in ambienti di produzione):
+Il codice di esempio seguente fornisce comandi utili relativi alla gestione della cache (non eseguire in ambienti di produzione):
 
 ```bash
 # restart php-fpm to flush APC
@@ -72,11 +72,11 @@ sudo kill <process_id>
 
 ### Dati indicizzati
 
-Reindicizza tutto se il problema può essere correlato all&#39;indice. Il debug dei dati indicizzati avviene tipicamente in ambienti non di produzione. Negli ambienti di produzione, è possibile esaminare l&#39;origine del disallineamento dell&#39;indice prima di reindicizzare. Le caratteristiche dello stato difettoso possono dirvi qualcosa sull&#39;origine del problema.
+Reindicizza tutto se il problema potrebbe essere correlato all’indice. Il debug dei dati indicizzati si verifica in genere in ambienti non di produzione. Negli ambienti di produzione, potrebbe essere utile analizzare l’origine del disallineamento dell’indice prima di reindicizzarlo. Le caratteristiche dello stato difettoso possono dirvi qualcosa sull&#39;origine del problema.
 
 ### Compositore
 
-È possibile che il codice non sia aggiornato a causa di una modifica del ramo o di file core modificati in un precedente tentativo di debug. Per eliminare potenziali problemi, esegui i seguenti comandi:
+È possibile che il codice sia obsoleto a causa di una modifica del ramo o a causa di file core modificati in un precedente tentativo di debug. Per eliminare potenziali problemi, eseguire i comandi seguenti:
 
 ```bash
 rm -rf vendor/*
@@ -84,9 +84,9 @@ composer clear-cache
 composer install
 ```
 
-### contenuto generata
+### Contenuto generato
 
-Ricostruisci i file front-end prima di eseguire il debug dei contenuto generati in JS, CSS, immagini, traduzioni e altri file.
+Rigenera i file front-end prima di eseguire il debug del contenuto generato in JS, CSS, immagini, traduzioni e altri file.
 
 ```bash
 rm -rf generated/* var/cache/* var/page_cache/* var/session/* var/view_preprocessed/* pub/static/*
@@ -122,7 +122,7 @@ Vedere i seguenti diagrammi:
 
 ![Diagramma bisettile](../../../assets/playbooks/bisect2.png)
 
-Esistono diversi approcci alla bisezione, ma l’Adobe consiglia di seguire questo ordine:
+Esistono diversi approcci alla bisezione, ma Adobe consiglia di seguire questo ordine:
 
 - Bisetta per argomento
 - Bisetta per commit
@@ -157,17 +157,17 @@ Oltre alle tecniche di risoluzione dei problemi, questa sezione fornisce alcune 
 
 ### Limita dati
 
-Valuta se hai bisogno dell&#39;intero catalogo o di tutte le store viste per replicare il problema. È possibile debug problemi di indicizzazione con un clone di database in cui è stato rimosso il 95% del catalogo prima di iniziare il debug. Questo metodo consente di risparmiare molto tempo durante i processi di indicizzazione. Crea un duplicato del database client con conteggio store e catalogo ridotti. Ciò può essere applicato anche ad altre entità (ad esempio i clienti) a seconda dell&#39;area di cui si esegue il debug.
+Valuta se è necessario il catalogo completo o tutte le visualizzazioni dello store per replicare il problema. È possibile eseguire il debug dei problemi di indicizzazione relativi a un clone di database in cui è stato rimosso il 95% del catalogo prima di avviare il debug. Questo metodo consente di risparmiare molto tempo durante i processi di indicizzazione. Crea un duplicato del database client con un numero di archivi e un catalogo ridotti. Questo potrebbe valere anche per altre entità (come i clienti) a seconda dell’area di cui si sta eseguendo il debug.
 
-### Richiedi maggiori informazioni
+### Richiedi ulteriori informazioni
 
-A volte, un passo facile da dimenticare in mezzo a tutto il codice e il lavoro tecnico: chiedere maggiori informazioni. Acquisizioni a schermo intero, un video, una chat in videoconferenza con la persona che ha identificato il problema, passaggi di replica, domande sul fatto che altre cose apparentemente non importanti siano accadute intorno all&#39;evento problematico. Chiedi cosa qualcuno si aspettava che accadesse. Si tratta davvero di un bug o forse solo di un&#39;incomprensione del modo in cui funziona il codice?
+A volte, un passaggio facile da dimenticare tra tutto il codice e il lavoro tecnico: chiedere ulteriori informazioni. Acquisizioni a schermo intero, un video, una videoconferenza chat con la persona che ha identificato il problema, passaggi di replica, domande se altre cose apparentemente non importanti sono accadute intorno all&#39;evento problematico. Chiedi cosa si aspettava che accadesse. Si tratta davvero di un bug o forse solo di un&#39;incomprensione del modo in cui funziona il codice?
 
 ### Lingua e interpretazione
 
-La descrizione del problema è chiara? Sei sicuro che nessun termine o descrizione possa essere interpretato in più modi? Se è così, assicurati di parlare della stessa cosa.
+La descrizione del problema è chiara? Sei sicuro che nessun termine o descrizione possa essere interpretato in più modi? Se sì, assicurati di parlare della stessa cosa.
 
-### Internet ricerca
+### Ricerca Internet
 
 Eseguire una ricerca su Internet con i termini relativi al problema. È probabile che un altro utente abbia già riscontrato lo stesso problema. Cerca nei [problemi GitHub di Adobe Commerce](https://github.com/magento/magento2/issues).
 

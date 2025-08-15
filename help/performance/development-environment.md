@@ -1,5 +1,5 @@
 ---
-title: Ambiente di sviluppo Recommendations
+title: Raccomandazioni per l’ambiente di sviluppo
 description: Scopri i consigli sulle prestazioni per la configurazione dell’ambiente di sviluppo Adobe Commerce locale.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
@@ -31,7 +31,7 @@ In modalità di sviluppo, non eseguire comandi per la compilazione, la generazio
   bin/magento setup:di:compile
   ```
 
-  In modalità di sviluppo, il Magento esegue la generazione on-demand, senza bisogno di eseguirla. Se hai modificato una firma di una classe e devi rigenerare `factories/proxies/interceptors` generato automaticamente, rimuovi tali classi o la cartella _generated_.
+  In modalità di sviluppo, Magento esegue la generazione su richiesta; non è necessario eseguirla. Se hai modificato una firma di una classe e devi rigenerare `factories/proxies/interceptors` generato automaticamente, rimuovi tali classi o la cartella _generated_.
 
 * `setup:static-content:deploy` distribuisce il contenuto statico per un archivio.
 
@@ -39,8 +39,8 @@ In modalità di sviluppo, non eseguire comandi per la compilazione, la generazio
   bin/magento setup:static-content:deploy
   ```
 
-  In modalità di sviluppo, il Magento lo esegue su richiesta; non è necessario eseguirlo.
+  In modalità di sviluppo, Magento lo esegue su richiesta; non è necessario eseguirlo.
 
 ## Tempo di caricamento normale della pagina in una macchina virtuale
 
-Se si sviluppa su una VM e il caricamento di una pagina di Magento richiede più di 2 secondi, rivedere le impostazioni dell&#39;ambiente.
+Se si sviluppa su una VM e il caricamento di una pagina Magento richiede più di 2 secondi, rivedere le impostazioni dell&#39;ambiente.

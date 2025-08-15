@@ -100,7 +100,7 @@ Le revisioni per privacy e [RGPD](../../../security-and-compliance/privacy/gdpr.
 - Il codice gestisce i dati o le e-mail dei clienti? Faccia particolare attenzione.
 - Se questo codice può essere eseguito in un ciclo continuo, può causare la perdita di dati del cliente da un ciclo continuo all&#39;altro?
 - Gli indicatori di un rischio sono le importazioni, i processi cron, le e-mail transazionali e i gestori di code batch.
-- Garantire l&#39;isolamento dei dati utente nei loop. L&#39;Adobe consiglia di utilizzare fabbriche o repository per la creazione di modelli nel ciclo del ciclo, che non sono accessibili all&#39;esterno del ciclo.
+- Garantire l&#39;isolamento dei dati utente nei loop. Adobe consiglia di utilizzare le fabbriche o i repository per creare modelli nel ciclo del ciclo, che non sono accessibili al di fuori del ciclo.
 
 ### Tutoraggio
 

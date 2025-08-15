@@ -28,7 +28,7 @@ Se il progetto richiede più siti, store o visualizzazioni dello store, puoi uti
 
 - Ristrutturare il catalogo spostando la logica nelle categorie
 - Separare i listini prezzi dai dati del catalogo utilizzando un prezzo esterno e un sistema di gestione dei prezzi (PMS).
-- Utilizza un’archiviazione dati noSQL alternativa come Elasticsearch
+- Utilizzare un’archiviazione dati noSQL alternativa come Elasticsearch
 
 ## Potenziali impatti sulle prestazioni
 
@@ -41,5 +41,5 @@ I siti Web e i negozi sono moltiplicatori per i dati di catalogo, pertanto la pr
 
 ## Informazioni aggiuntive
 
-- [Informazioni su siti Web, archivi e visualizzazioni dello store](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Configurazione di più siti Web o store](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Informazioni su siti Web, archivi e visualizzazioni dello store](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Configurazione di più siti Web o store](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

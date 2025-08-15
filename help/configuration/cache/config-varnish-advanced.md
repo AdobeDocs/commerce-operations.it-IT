@@ -77,7 +77,7 @@ Su tutti gli altri computer, l&#39;istanza di Commerce deve avere accesso al dat
 
 In alternativa, il controllo delle versioni dei file statici può essere disattivato su tutti i computer. È possibile accedervi dall&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Avanzate** > **Sviluppo** > **Impostazioni file statici** > **Firma file statici** = **No**.
 
-Infine, tutte le istanze di Commerce devono essere in modalità di produzione. Prima dell&#39;avvio di Vernice, cancellare la cache su ogni istanza. In Amministrazione, passare a **Sistema** > Strumenti > **Gestione cache** e fare clic su **Svuota cache di Magento**. Per cancellare la cache, puoi anche eseguire il seguente comando:
+Infine, tutte le istanze di Commerce devono essere in modalità di produzione. Prima dell&#39;avvio di Vernice, cancellare la cache su ogni istanza. In Amministrazione, vai a **Sistema** > Strumenti > **Gestione cache** e fai clic su **Svuota cache Magento**. Per cancellare la cache, puoi anche eseguire il seguente comando:
 
 ```bash
 bin/magento cache:flush

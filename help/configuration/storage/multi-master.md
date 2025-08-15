@@ -62,7 +62,7 @@ Ciò significa anche che è possibile:
 
 - Configurare la soluzione del database diviso _prima_ di avviare Commerce in produzione.
 
-  L&#39;Adobe consiglia di configurare i database suddivisi il prima possibile dopo l&#39;installazione del software Commerce.
+  Adobe consiglia di configurare i database suddivisi il prima possibile dopo l&#39;installazione del software Commerce.
 
 - [Configurare manualmente](multi-master-manual.md) la soluzione del database diviso.
 

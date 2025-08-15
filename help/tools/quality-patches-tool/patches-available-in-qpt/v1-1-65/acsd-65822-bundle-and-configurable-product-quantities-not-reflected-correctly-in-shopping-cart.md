@@ -3,13 +3,13 @@ title: 'ACSD-65822: quantità di prodotti configurabili e in bundle non riportat
 description: Applica la patch ACSD-65822 per risolvere il problema di Adobe Commerce, dove la quantità appariva come 0 nella sezione carrello clienti nel pannello di amministrazione quando si aggiungevano bundle di prodotti.
 feature: Admin Workspace, Checkout, Orders
 role: Admin, Developer
-source-git-commit: d8421ba07a5d2fa3a3174541ed8cd6a2bc76f157
+exl-id: 6740b5a6-8710-458c-abe4-03d2a8a694c5
+source-git-commit: 7e9598e3ac0558706ef98ca81c19d27c37f7e860
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65822: le quantità del bundle e dei prodotti configurabili non vengono riportate correttamente in [!UICONTROL Shopping Cart]
 
@@ -27,7 +27,7 @@ La patch ACSD-65822 risolve il problema che causa la visualizzazione non corrett
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -55,7 +55,7 @@ La quantità dell&#39;articolo del bundle viene visualizzata come 0.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

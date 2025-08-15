@@ -1,6 +1,6 @@
 ---
 title: Installa  [!DNL Data Migration Tool]
-description: Scopri come installare  [!DNL Data Migration Tool] per trasferire i dati tra il Magento 1 e il Magento 2.
+description: Scopri come installare  [!DNL Data Migration Tool] per trasferire dati tra Magento 1 e Magento 2.
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
@@ -18,7 +18,7 @@ ht-degree: 0%
 >Le versioni di Magento e [!DNL Data Migration Tool] devono corrispondere.
 
 
-Assicurati di utilizzare *la stessa versione rilasciata* sia del Magento 2 che di [!DNL Data Migration Tool]. Ad esempio, per la versione di Magento 2.2.0, è necessario utilizzare anche la versione 2.2.0 di [!DNL Data Migration Tool].
+Assicurati di utilizzare *la stessa versione rilasciata* di Magento 2 e [!DNL Data Migration Tool]. Ad esempio, per Magento versione 2.2.0, è necessario utilizzare anche [!DNL Data Migration Tool] versione 2.2.0.
 
 ## Verifica la versione
 
@@ -29,7 +29,7 @@ Utilizza uno dei seguenti metodi per verificare la versione di Magento in uso:
 
 ### Metapacchetto del compositore
 
-Se il software di Magento è stato scaricato utilizzando un metapacchetto Compositore, immettere il comando seguente:
+Se il software Magento è stato scaricato utilizzando un metapacchetto Compositore, immettere il comando seguente:
 
 ```bash
 php <magento_root>/bin/magento --version
@@ -37,7 +37,7 @@ php <magento_root>/bin/magento --version
 
 ### Archivio GitHub
 
-Se hai clonato l’archivio GitHub Magento 2, immetti i seguenti comandi:
+Se hai clonato l’archivio GitHub di Magento 2, immetti i seguenti comandi:
 
 ```bash
 cd <your Magento 2 clone directory>
@@ -66,11 +66,11 @@ Vai alla pagina [Versioni](https://github.com/magento/data-migration-tool/releas
 Prima dell’installazione, assicurati di disporre di:
 
 - Ha completato tutte le attività menzionate nella sezione [Precondizioni](prerequisites.md)
-- [Verifica della versione](install.md#check-your-version) del software del Magento 2
+- [Verifica della versione](install.md#check-your-version) del software Magento 2
 
 ### Installa da `repo.magento.com`
 
-Per installare [!DNL Data Migration Tool], è necessario aggiornare `composer.json` nella directory di installazione radice del Magento per specificare il percorso del pacchetto [!DNL Data Migration Tool].
+Per installare [!DNL Data Migration Tool], è necessario aggiornare `composer.json` nella directory di installazione radice di Magento per specificare il percorso del pacchetto [!DNL Data Migration Tool].
 
 1. Accedi al server applicazioni come [proprietario del file system](../../installation/prerequisites/file-system/overview.md) o passa a tale proprietario.
 1. Passare alla directory radice dell&#39;applicazione.
@@ -84,7 +84,7 @@ Per installare [!DNL Data Migration Tool], è necessario aggiornare `composer.js
    composer require magento/data-migration-tool:<version>
    ```
 
-   Dove `<version>` deve corrispondere alla versione del codebase Magento 2.
+   Dove `<version>` deve corrispondere alla versione della base di codice di Magento 2.
 
    Ad esempio, per la versione 2.2.0, immetti:
 
@@ -114,7 +114,7 @@ Se hai clonato l&#39;archivio GitHub, segui i passaggi seguenti per installare [
    composer require magento/data-migration-tool:<version>
    ```
 
-   dove `<version>` deve corrispondere alla versione del codebase Magento 2.
+   dove `<version>` deve corrispondere alla versione della base di codice di Magento 2.
 
    Ad esempio, per la versione 2.2.0, immetti:
 

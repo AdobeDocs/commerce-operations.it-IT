@@ -15,7 +15,7 @@ Un termine precedente, Secure Sockets Layer (SSL), viene spesso utilizzato in mo
 >
 >Se non diversamente specificato, tutti i comandi di questo argomento devono essere immessi come utenti con privilegi `root`.
 
-## Recommendations
+## Consigli
 
 Consigliamo quanto segue:
 

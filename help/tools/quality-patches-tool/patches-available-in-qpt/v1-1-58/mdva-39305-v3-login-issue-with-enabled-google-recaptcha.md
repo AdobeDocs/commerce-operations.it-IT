@@ -20,7 +20,7 @@ ht-degree: 0%
 
 La patch MDVA-39305-V3 risolve il problema che impediva ai clienti registrati di accedere quando [!DNL Google reCAPTCHA] è abilitato. Questa patch risolve anche il problema relativo all&#39;invio di un modulo prima del caricamento completo di [!DNL Google reCAPTCHA]. Inoltre, viene corretto l&#39;errore *Chiamata a una funzione membro isDisabled() su null* quando i blocchi vengono utilizzati in posizioni non predefinite in una pagina CMS.
 
-Questa patch è stata aggiunta nella versione [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.48. È stato aggiornato nella versione QPT 1.1.58 per includere le nuove versioni di Adobe Commerce 2.4.7 - 2.4.7-p4. L&#39;ID della patch è MDVA-39305-V3. Il problema è stato risolto nelle versioni 2.4.4, 2.4.5-p2 e 2.4.7 di Adobe Commerce.
+Questa patch è stata aggiunta nella versione [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.48. È stato aggiornato nella versione QPT 1.1.58 per includere le nuove versioni di Adobe Commerce 2.4.7 - 2.4.7-p4. L&#39;ID della patch è MDVA-39305-V3. Il problema è stato risolto nelle versioni 2.4.4, 2.4.5-p2 e 2.4.7 di Adobe Commerce.
 
 ## Prodotti e versioni interessati
 
@@ -34,7 +34,7 @@ Questa patch è stata aggiunta nella versione [Quality Patches Tool (QPT)](https
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni dello strumento Patch di qualità. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni dello strumento Patch di qualità. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problemi
 
@@ -86,7 +86,7 @@ Sulla pagina della vetrina si verifica un errore 500.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

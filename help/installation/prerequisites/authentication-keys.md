@@ -11,26 +11,26 @@ ht-degree: 0%
 
 # Ottieni le chiavi di autenticazione
 
-L&#39;archivio `repo.magento.com` è il luogo in cui sono archiviati i pacchetti Adobe Commerce e Compositore di terze parti e richiede l&#39;autenticazione. Utilizza l&#39;account di Commerce Marketplace per generare una coppia di *chiavi di autenticazione* di 32 caratteri per accedere all&#39;archivio.
+L&#39;archivio `repo.magento.com` è il luogo in cui sono archiviati i pacchetti Adobe Commerce e Compositore di terze parti e richiede l&#39;autenticazione. Utilizza il tuo account Commerce Marketplace per generare una coppia di *chiavi di autenticazione* di 32 caratteri per accedere all&#39;archivio.
 
 Per accedere ai pacchetti Adobe Commerce, devi utilizzare le chiavi associate a un MAGEID a cui è stato concesso l’accesso. Il MAGEID è in genere il contatto principale sull’account Adobe Commerce e potrebbe non essere sempre il proprietario del progetto di infrastruttura cloud di Adobe Commerce.
 
 >[!TIP]
 >
->Se riscontri [errori](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=it), potresti non disporre dell&#39;autorizzazione per accedere al pacchetto o il diritto di accesso è scaduto a causa di una fattura in sospeso sul tuo account.
+>Se riscontri [errori](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), potresti non disporre dell&#39;autorizzazione per accedere al pacchetto o il diritto di accesso è scaduto a causa di una fattura in sospeso sul tuo account.
 >
 >* Se si è la persona di contatto principale dell&#39;account, verificare che non siano presenti fatture in sospeso nell&#39;elenco dell&#39;account.
->* Se le chiavi fornite dal contatto principale non funzionano e non sono presenti fatture in sospeso nell&#39;account, il contatto principale deve contattare il [supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#submit-ticket) per assistenza.
+>* Se le chiavi fornite dal contatto principale non funzionano e non sono presenti fatture in sospeso nell&#39;account, il contatto principale deve contattare il [supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) per assistenza.
 
 Per creare le chiavi di autenticazione:
 
-1. Accedi alla [Commerce Marketplace](https://commercemarketplace.adobe.com/). Se non hai un account, fai clic su **Registra**.
+1. Accedi a [Commerce Marketplace](https://commercemarketplace.adobe.com/). Se non hai un account, fai clic su **Registra**.
 
 1. Fai clic sul nome del tuo account in alto a destra della pagina e seleziona **Il mio profilo**.
 
 1. Fare clic su **Chiavi di accesso** nella scheda Marketplace.
 
-   ![Ottieni le tue chiavi di accesso sicure su Commerce Marketplace](../../assets/installation/cloud_access-key.png)
+   ![Ottieni le tue chiavi di accesso sicure in Commerce Marketplace](../../assets/installation/cloud_access-key.png)
 
 1. Fare clic su **Crea una nuova chiave di accesso**. Immettere un nome specifico per le chiavi, ad esempio il nome dello sviluppatore che le riceve, quindi fare clic su **OK**.
 

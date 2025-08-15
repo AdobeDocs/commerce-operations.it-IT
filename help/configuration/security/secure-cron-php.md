@@ -17,13 +17,13 @@ In questo argomento viene illustrata la protezione di `pub/cron.php` per impedir
 Il processo cron esegue diverse attività pianificate ed è una parte fondamentale della configurazione del Commerce. Le attività pianificate includono, tra l&#39;altro:
 
 - Reindicizzazione
-- Generazione di e-mail
+- Generazione di messaggi di posta elettronica
 - Generazione di newsletter
-- Generazione di Sitemap
+- Generazione di sitemap
 
 >[!INFO]
 >
->Fare riferimento a [Configurare ed eseguire cron](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) per ulteriori informazioni sui gruppi cron.
+>Per ulteriori informazioni sui gruppi cron, vedere [Configurare ed eseguire cron](../cli/configure-cron-jobs.md#run-cron-from-the-command-line).
 
 È possibile eseguire un processo cron nei modi seguenti:
 
@@ -69,13 +69,13 @@ htpasswd /usr/local/apache/password/passwords <username>
 
 Per consentire l&#39;esecuzione di cron da parte di più utenti, aggiungerli al file della password, incluso un file di gruppo.
 
-Per aggiungere un altro utente al file password:
+Per aggiungere un altro utente al file della password:
 
 ```bash
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
-Per creare un gruppo autorizzato, creare un file di gruppo in qualsiasi punto all&#39;esterno della docroot del server Web. Il file di gruppo specifica il nome del gruppo e gli utenti del gruppo. In questo esempio, il nome del gruppo è `MagentoCronGroup`.
+Per creare un gruppo autorizzato, creare un file di gruppo all&#39;esterno della directory principale dei documenti del server Web. Il file di gruppo specifica il nome del gruppo e gli utenti del gruppo. In questo esempio, il nome del gruppo è `MagentoCronGroup`.
 
 ```bash
 vim /usr/local/apache/password/group
@@ -126,12 +126,12 @@ Per proteggere cron nel file `.htaccess`:
 
 Questa sezione descrive come proteggere cron utilizzando il server web Nginx. È necessario eseguire le seguenti attività:
 
-1. Impostare un file password crittografato per Nginx
-1. Modifica la configurazione nginx in modo che faccia riferimento al file password quando accedi `pub/cron.php`
+1. Imposta un file di password crittografato per Nginx
+1. Modifica la configurazione nginx in modo che faccia riferimento al file della password quando accedi a `pub/cron.php`
 
-### Crea un file di password
+### Creare un file di password
 
-Consultare una delle risorse seguenti per creare un file di password prima di continuare:
+Consulta una delle seguenti risorse per creare un file di password prima di continuare:
 
 - [Impostare l&#39;autenticazione tramite password con Nginx su Ubuntu 14.04 (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
 - [Autenticazione HTTP di base con Nginx (howtoforge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
@@ -199,7 +199,7 @@ Il modo più semplice per verificare che `pub/cron.php` sia protetto consiste ne
    use magento;
    ```
 
-1. Elimina tutte le righe della tabella di `cron_schedule` database:
+1. Elimina tutte le righe dalla tabella del database `cron_schedule`:
 
    ```shell
    TRUNCATE TABLE cron_schedule;
@@ -217,7 +217,7 @@ Il modo più semplice per verificare che `pub/cron.php` sia protetto consiste ne
    http://magento.example.com/cron.php?group=default
    ```
 
-1. Quando richiesto, immettere il nome e il password di un utente autorizzato. Nella figura seguente viene illustrato un esempio.
+1. Quando richiesto, immettere il nome e la password di un utente autorizzato. Nella figura seguente viene illustrato un esempio.
 
    ![Autorizzazione di cron tramite HTTP Basic](../../assets/configuration/cron-auth.png)
 
@@ -259,7 +259,7 @@ Puoi eseguire cron in qualsiasi momento, ad esempio durante lo sviluppo, utilizz
 Se si utilizza un server Web Apache, è necessario rimuovere la restrizione dal file `.htaccess` prima di poter eseguire cron in un browser:
 
 1. Accedi al server Commerce come utente con autorizzazioni di scrittura nel file system di Commerce.
-1. Apri uno dei seguenti elementi in un editor di testo (a seconda del punto di ingresso al Magento):
+1. Apri una delle seguenti opzioni in un editor di testo (a seconda del punto di ingresso di Magento):
 
    ```text
    <magento_root>/pub/.htaccess
@@ -311,4 +311,4 @@ https://magento.example.com/magento2/pub/cron.php?group=index
 
 >[!INFO]
 >
->È necessario eseguire cron due volte: prima per scoprire le attività da eseguire e di nuovo per eseguire le attività stesse. Fare riferimento a [Configurare ed eseguire cron](../cli/configure-cron-jobs.md) per ulteriori informazioni sui gruppi cron.
+>È necessario eseguire cron due volte: prima per individuare le attività da eseguire e di nuovo per eseguire le attività stesse. Per ulteriori informazioni sui gruppi cron, vedere [Configurare ed eseguire cron](../cli/configure-cron-jobs.md).

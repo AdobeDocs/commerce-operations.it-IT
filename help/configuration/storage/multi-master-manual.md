@@ -48,7 +48,7 @@ In questo argomento vengono utilizzate le seguenti convenzioni di denominazione:
 
 ## Backup del sistema Commerce
 
-Adobe consiglia vivamente di eseguire il backup del database e del file system correnti in modo da poterli ripristinare in caso di problemi durante la procedura.
+Adobe consiglia vivamente di eseguire il backup del database e del file system correnti in modo da poterli ripristinare in caso di problemi durante il processo.
 
 **Per eseguire il backup del sistema**:
 

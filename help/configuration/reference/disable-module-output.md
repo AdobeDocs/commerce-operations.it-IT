@@ -32,10 +32,10 @@ La disattivazione dell&#39;output viene eseguita nelle seguenti classi:
 
 Per disabilitare l’output del modulo nella distribuzione della pipeline o in qualsiasi altra distribuzione, con più istanze dell’applicazione Commerce:
 
-1. Modificare il file `config.xml` del modulo `Backend`.
+1. Modificare il file `Backend` del modulo `config.xml`.
 1. Esporta le modifiche di configurazione.
 
-### Modifica il file `config.xml` del modulo `Backend`
+### Modifica il file `Backend` del modulo `config.xml`
 
 1. Archivia il file `config.xml` originale.
 1. Aggiungere righe simili alle seguenti al file `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml`, direttamente sotto l&#39;elemento `<default>`:

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Quando i ricercatori scoprono delle vulnerabilità di sicurezza, spesso mancano i canali di segnalazione appropriati. Di conseguenza, alcune vulnerabilità non vengono segnalate. Lo scopo del file `security.txt` [formato file](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) è quello di fornire ai ricercatori della sicurezza le informazioni che possono utilizzare per segnalare i risultati.
 
-Gli esercenti possono immettere le informazioni di contatto per [segnalazione dei problemi di sicurezza](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/security/security-issue-reporting) da Commerce _Amministratore_. Per gli sviluppatori, il modulo `Magento_Securitytxt` fornisce le funzionalità seguenti:
+Gli esercenti possono immettere le informazioni di contatto per [segnalazione dei problemi di sicurezza](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-issue-reporting) da Commerce _Amministratore_. Per gli sviluppatori, il modulo `Magento_Securitytxt` fornisce le funzionalità seguenti:
 
 - Consente di salvare le configurazioni di sicurezza da _Admin_.
 - Contiene un router che corrisponde alla classe di azione dell&#39;applicazione per le richieste ai file `.well-known/security.txt` e `.well-known/security.txt.sig`.

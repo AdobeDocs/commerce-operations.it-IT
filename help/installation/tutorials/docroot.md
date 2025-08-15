@@ -62,7 +62,7 @@ Per completare questa esercitazione, è necessario accedere a un&#39;installazio
 >
 >Per ulteriori informazioni, consultare [Prerequisiti](../prerequisites/overview.md) e la [Guida all&#39;installazione](../overview.md).
 
-## 1. Modifica la configurazione del server
+## &#x200B;1. Modifica la configurazione del server
 
 Il nome e la posizione del file host virtuale dipendono dalla versione di Apache in esecuzione. Questo esempio mostra il nome e la posizione del file host virtuale in Apache v2.4.
 
@@ -96,7 +96,7 @@ Il nome e la posizione del file host virtuale dipendono dalla versione di Apache
    systemctl restart apache2
    ```
 
-## 2. Aggiorna l’URL di base
+## &#x200B;2. Aggiorna l’URL di base
 
 Se si è aggiunto un nome di directory al nome host o all&#39;indirizzo IP del server per creare l&#39;URL di base al momento dell&#39;installazione dell&#39;applicazione (ad esempio `http://192.168.33.10/magento2`), è necessario rimuoverlo.
 
@@ -122,7 +122,7 @@ Se si è aggiunto un nome di directory al nome host o all&#39;indirizzo IP del s
    UPDATE core_config_data SET value='http://192.168.33.10' WHERE path='web/unsecure/base_url';
    ```
 
-## 3. Aggiornare il file env.php
+## &#x200B;3. Aggiornare il file env.php
 
 Aggiungere il nodo seguente al file `env.php`.
 
@@ -134,7 +134,7 @@ Aggiungere il nodo seguente al file `env.php`.
 
 Per ulteriori informazioni, fare riferimento al [riferimento env.php](../../configuration/reference/config-reference-envphp.md).
 
-## 4. Cambiare modalità
+## &#x200B;4. Cambiare modalità
 
 [Le modalità applicazione](../../configuration/bootstrap/application-modes.md), che includono `production` e `developer`, sono progettate per migliorare la sicurezza e semplificare lo sviluppo. Come suggeriscono i nomi, è necessario passare alla modalità `developer` quando si estende o si personalizza l&#39;applicazione e passare alla modalità `production` quando l&#39;esecuzione avviene in un ambiente live.
 
@@ -164,7 +164,7 @@ Il passaggio da una modalità all’altra è un passaggio importante per verific
 
 1. Aggiorna il browser e verifica che la vetrina sia visualizzata correttamente.
 
-## 5. Verificare la vetrina
+## &#x200B;5. Verificare la vetrina
 
 Vai alla vetrina in un browser web per verificare che tutto funzioni.
 

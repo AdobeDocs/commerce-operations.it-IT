@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Vedere [Requisiti di sistema](../../system-requirements.md) per le versioni supportate di MySQL.
 
-L&#39;Adobe _fortemente_ consiglia di osservare il seguente standard durante la configurazione del database:
+Adobe _consiglia vivamente_ di rispettare il seguente standard durante la configurazione del database:
 
 * Adobe Commerce utilizza [i trigger del database MySQL](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) per migliorare l&#39;accesso al database durante la reindicizzazione. Vengono creati quando la modalità indicizzatore è impostata su [pianificazione](../../../configuration/cli/manage-indexers.md#configure-indexers). L’applicazione non supporta i trigger personalizzati nel database, poiché tali trigger possono introdurre incompatibilità con le versioni future di Adobe Commerce.
 * Acquisisci familiarità con [le potenziali limitazioni del trigger MySQL](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) prima di continuare.

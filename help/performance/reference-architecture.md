@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Questo argomento descrive una configurazione consigliata generica per le istanze di Adobe Commerce che utilizzano server semplici ospitati fisicamente in un centro dati (non virtualizzato) in cui le risorse non vengono condivise con altri utenti. Il provider di hosting, soprattutto se è specializzato nell&#39;hosting ad alte prestazioni di Commerce, potrebbe consigliare una configurazione diversa che sia ugualmente o più efficace per le tue esigenze.
 
-Per Adobe Commerce sugli ambienti dell&#39;infrastruttura cloud, consulta [Architettura Starter](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
+Per Adobe Commerce sugli ambienti dell&#39;infrastruttura cloud, consulta [Architettura Starter](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
 
 ## [!DNL Commerce] Diagramma dell&#39;architettura di riferimento
 
@@ -21,8 +21,8 @@ Il diagramma dell&#39;architettura di riferimento [!DNL Commerce] rappresenta l&
 
 Il colore di ciascun elemento nel diagramma indica se l’elemento fa parte di Magento Open Source o Adobe Commerce e se è obbligatorio.
 
-* Gli elementi arancioni sono necessari per il Magento Open Source
-* Gli elementi grigi sono facoltativi per il Magento Open Source
+* Gli elementi arancioni sono necessari per Magento Open Source
+* Gli elementi grigi sono facoltativi per Magento Open Source
 * Gli elementi blu sono facoltativi per Adobe Commerce
 
 ![Diagramma dell&#39;architettura di riferimento di Commerce](../assets/performance/images/ref-architecture-2.3.png)
@@ -64,7 +64,7 @@ Nelle sezioni seguenti vengono forniti consigli e considerazioni per ogni sezion
 
 ### Architettura di riferimento [!DNL Varnish] consigliata
 
-Il Magento supporta diversi motori di caching a pagina intera (File, Memcache, Redis, [!DNL Varnish]) preconfigurati, insieme a una copertura estesa tramite le estensioni. [!DNL Varnish] è il motore di cache a pagina intera consigliato.  [!DNL Commerce] supporta diverse configurazioni di [!DNL Varnish].
+Magento supporta diversi motori di caching a pagina intera (File, Memcache, Redis, [!DNL Varnish]) preconfigurati, insieme a una copertura estesa tramite le estensioni. [!DNL Varnish] è il motore di cache a pagina intera consigliato.  [!DNL Commerce] supporta diverse configurazioni di [!DNL Varnish].
 
 Per i siti che non richiedono elevata disponibilità, si consiglia di utilizzare una configurazione [!DNL Varnish] semplice con terminazione SSL Nginx.
 

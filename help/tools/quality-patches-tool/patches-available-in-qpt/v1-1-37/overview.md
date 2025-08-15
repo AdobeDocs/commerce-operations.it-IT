@@ -24,7 +24,7 @@ QPT v1.1.37 include le seguenti patch:
 1. **ACSD-49843**: è stato risolto il problema che impediva la disponibilità del collegamento al download del prodotto dopo la fatturazione automatica dell&#39;articolo ordinato tramite metodo di pagamento online con l&#39;impostazione *[!UICONTROL Payment Action]* = *[!UICONTROL Sale]* abilitata.
 1. **ACSD-53148**: è stato corretto il problema per cui due richieste parallele in GraphQL per l&#39;aggiunta dello stesso prodotto configurabile al carrello causavano due elementi separati sul carrello con lo stesso SKU prodotto.
 1. **ACSD-47054**: è stato risolto il problema che causava la reindicizzazione dell&#39;anteprima in tutti gli archivi, causando rallentamenti.
-1. **ACSD-52606**: è stato risolto il problema relativo al messaggio di errore *Quando l&#39;utente fa clic su **[!UICONTROL Notify Order is Ready for Pickup]**, l&#39;ordine non è pronto per il ritiro*.
+1. **ACSD-52606**: è stato risolto il problema relativo al messaggio di errore *Quando l&#39;utente fa clic su*, l&#39;ordine non è pronto per il ritiro **[!UICONTROL Notify Order is Ready for Pickup]**.
 1. **ACSD-51574**: è stato risolto il problema che impediva l&#39;aggiornamento dell&#39;immagine sul front-end dopo la sua sostituzione con un&#39;altra immagine con lo stesso nome.
 1. **ACSD-53728**: è stato risolto il problema che causava il ritardo nel completamento dell&#39;indicizzatore EAV del prodotto.
 1. **ACSD-53979**: risolve il problema JS che si verifica nella home page se il messaggio di benvenuto contiene una virgoletta singola.

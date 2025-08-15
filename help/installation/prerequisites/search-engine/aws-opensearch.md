@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # AWS OpenSearch
 
-Adobe Commerce 2.4.5 supporta l’utilizzo di cluster del servizio Amazon OpenSearch. Questo servizio succede al servizio Amazon Elasticsearch. In questo argomento viene descritto come configurare Commerce per l&#39;utilizzo di AWS OpenSearch e come migrare i dati da un&#39;istanza di Elasticsearch locale o OpenSearch a un cluster AWS OpenSearch.
+Adobe Commerce 2.4.5 supporta l’utilizzo di cluster del servizio Amazon OpenSearch. Questo servizio succede al servizio Amazon Elasticsearch. In questo argomento viene descritto come configurare Commerce per l&#39;utilizzo di AWS OpenSearch e come migrare i dati da un&#39;istanza Elasticsearch o OpenSearch locale a un cluster AWS OpenSearch.
 
 ## Creazione di un dominio del servizio AWS OpenSearch
 

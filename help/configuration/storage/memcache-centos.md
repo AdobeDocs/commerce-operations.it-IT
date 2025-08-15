@@ -16,7 +16,7 @@ Questa sezione fornisce istruzioni per installare memcached su CentOS. Per ulter
 
 >[!INFO]
 >
->L’Adobe consiglia di utilizzare l’ultima versione stabile di memcached (attualmente 3.1.3 per memcached).
+>Adobe consiglia di utilizzare la versione più recente di memcached stabile (attualmente 3.1.3 per memcached).
 
 Poiché PHP non dispone di supporto nativo per memcache, è necessario installare un&#39;estensione affinché PHP possa utilizzarla. Sono disponibili due estensioni PHP ed è importante decodificare quali utilizzare:
 
@@ -86,7 +86,7 @@ Per installare memcached su CentOS, eseguire le attività seguenti come utente c
 
 ## Verifica del funzionamento di memcached prima di installare Commerce
 
-L’Adobe consiglia di testare memcached per assicurarsi che funzioni prima di installare Commerce. Questa operazione richiede solo pochi minuti e può semplificare la risoluzione dei problemi in un secondo momento.
+Adobe consiglia di testare memcached per assicurarsi che funzioni prima di installare Commerce. Questa operazione richiede solo pochi minuti e può semplificare la risoluzione dei problemi in un secondo momento.
 
 ### Verificare che memcached sia riconosciuto dal server web
 

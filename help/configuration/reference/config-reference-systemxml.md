@@ -6,7 +6,7 @@ badge: label="Contributo di David Lambauer" type="Informative" url="https://gith
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2709'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Un tag `<tab>` può avere i seguenti attributi:
 | `id` | Definisce l’identificatore utilizzato che fa riferimento alla sezione. | `typeId` | obbligatorio |
 | `translate` | Definisce il campo da tradurre. Fornisci `label` per rendere traducibile l&#39;etichetta. | `string` | facoltativo |
 | `sortOrder` | Definisce l’ordinamento della sezione. I numeri alti spingono la sezione nella parte inferiore della pagina, mentre i numeri bassi spingono la sezione nella parte superiore. | `float` | facoltativo |
-| `class` | Aggiunge una classe CSS definita all&#39;elemento HTML scheda sottoposto a rendering. | `string` | facoltativo |
+| `class` | Aggiunge una classe CSS definita all&#39;elemento HTML della scheda di cui è stato eseguito il rendering. | `string` | facoltativo |
 
 ### Riferimento nodo scheda
 
@@ -176,7 +176,7 @@ Un tag `<group>` può avere i seguenti figli:
 | `help_url` | Non estensibile. Vedi sotto. | `typeUrl` |
 | `more_url` | Non estensibile. Vedi sotto. | `typeUrl` |
 | `demo_link` | Non estensibile. Vedi sotto. | `typeUrl` |
-| `comment` | Aggiunge un commento sotto l&#39;etichetta del gruppo. Utilizzando `<![CDATA[//]]>` HTML è possibile applicare. | `string` |
+| `comment` | Aggiunge un commento sotto l&#39;etichetta del gruppo. Utilizzando `<![CDATA[//]]>` è possibile applicare HTML. | `string` |
 | `hide_in_single_store_mode` | Indica se il gruppo deve essere visibile in modalità archivio singolo. `1` nasconde il gruppo; `0` mostra il gruppo. | `int` |
 | `field` | Definisci uno o più campi che devono essere disponibili in questo gruppo. | `field` |
 | `group` | Definisci uno o più sottogruppi. | `unbounded` |
@@ -248,8 +248,8 @@ Un tag `<field>` può avere i seguenti valori per l&#39;attributo `type=""`:
 | `select` | Menu a discesa Normal, potrebbe essere necessario un `source_model` personalizzato. Utilizzato anche per `Yes/No` selezioni. Vedi `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` per un esempio. |
 | `multiselect` | Come `select`, ma sono valide più opzioni. |
 | `button` | Pulsante che attiva un evento immediato. Richiede un modello front-end personalizzato per definire il testo del pulsante e l’azione. Vedi `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` per un esempio. |
-| `obscure` | Un campo di testo con il valore crittografato e visualizzato come `**&#x200B;**`. Se si modifica il tipo utilizzando l’elemento &quot;Inspect&quot; nel browser, il valore non viene visualizzato. |
-| `password` | Come `obscure`, tranne per il fatto che il valore nascosto non è crittografato e la modifica forzata del tipo tramite &quot;Inspect Element&quot; nel browser non rivela il valore. |
+| `obscure` | Un campo di testo con il valore crittografato e visualizzato come `****`. Se si modifica il tipo utilizzando &quot;Ispect Element&quot; nel browser, il valore non viene visualizzato. |
+| `password` | Come `obscure`, tranne per il fatto che il valore nascosto non è crittografato e la modifica forzata del tipo tramite &quot;Ispect Element&quot; nel browser non rivela il valore. |
 | `file` | Consente di caricare un file per l’elaborazione. |
 | `label` | Visualizza un&#39;etichetta anziché un campo modificabile. Utilizzare questo tipo quando un campo è modificabile solo su ambiti specifici, ad esempio solo a livello di visualizzazione archivio. |
 | `time` | Controllo per impostare il tempo utilizzando tre menu a discesa: Ora, minuto e secondo. |
@@ -279,7 +279,7 @@ Un tag `<field>` può avere i seguenti figli:
 | Nodo | Descrizione | Tipo |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | `label` | Definisce l’etichetta visualizzata nel front-end. | `string` |
-| `comment` | Aggiunge un commento sotto l&#39;etichetta del campo. Utilizzando `<![CDATA[//]]>` HTML è possibile applicare. | `string` |
+| `comment` | Aggiunge un commento sotto l&#39;etichetta del campo. Utilizzando `<![CDATA[//]]>` è possibile applicare HTML. | `string` |
 | `tooltip` | Un altro possibile elemento front-end che può essere utilizzato per descrivere il significato di questo campo. Viene visualizzata come una piccola icona accanto al campo. | `string` |
 | `hint` | Visualizza informazioni aggiuntive. Disponibile solo con `frontend_model` specifico. | `string` |
 | `frontend_class` | Aggiunge una classe CSS definita all&#39;elemento HTML della sezione di cui è stato eseguito il rendering. | `string` |
@@ -392,7 +392,7 @@ Sono disponibili le seguenti regole di convalida:
 | `phoneUK` | Consente un numero di telefono (Regno Unito). |
 | `phoneUS` | Consente un numero di telefono (Stati Uniti). |
 | `required-entry` | Non consente un valore vuoto (convalida equivalente a `validate-no-empty`).<br>Messaggio di errore di convalida: &quot;Questo campo è obbligatorio&quot;. |
-| `time` | Consente un orario valido nel formato 24 ore, tra le 00:00 e le 23:59. Ad esempio `15`, `15:05` o `15:05:48`. |
+| `time` | Consente un&#39;ora valida nel formato 24 ore, tra 00:00 e 23:59. Ad esempio `15`, `15:05` o `15:05:48`. |
 | `time12h` | Consente un orario valido in formato 12 ore, tra le 12:00 e le 11:59:59 pm. Ad esempio `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | Consente 7 o più caratteri, sia numerici che alfabetici. |
 | `validate-alphanum-with-spaces` | Consente l&#39;uso di lettere (a-z o A-Z), numeri (0-9) o solo spazi. |

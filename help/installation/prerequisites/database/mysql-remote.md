@@ -13,7 +13,7 @@ ht-degree: 0%
 
 A volte può essere necessario ospitare il database su un server separato anziché eseguire il server di database e il server web sullo stesso computer.
 
-L&#39;Adobe ha fornito un modo per connettersi a un server MySQL su un computer diverso. A partire dalla versione 2.4.3 di Adobe Commerce, è anche possibile configurare l’applicazione per l’utilizzo di un database Amazon Web Services (AWS) Aurora senza modifiche al codice.
+Adobe ha fornito un modo per connettersi a un server MySQL su un computer diverso. A partire dalla versione 2.4.3 di Adobe Commerce, è anche possibile configurare l’applicazione per l’utilizzo di un database Amazon Web Services (AWS) Aurora senza modifiche al codice.
 
 Aurora è un server MySQL ad alte prestazioni e completamente conforme ospitato su AWS.
 
@@ -48,7 +48,7 @@ Prima di iniziare, è necessario:
 Utilizzare le linee guida seguenti per configurare le connessioni al database remoto se il server Web o il server di database sono cluster:
 
 * È necessario configurare una connessione per ogni nodo del server Web.
-* In genere si configura una connessione al database load balancer; tuttavia, il clustering del database può essere complesso e la configurazione dipende dall&#39;utente. L&#39;Adobe non fornisce raccomandazioni specifiche per il clustering del database.
+* In genere si configura una connessione al database load balancer; tuttavia, il clustering del database può essere complesso e la configurazione dipende dall&#39;utente. Adobe non fornisce raccomandazioni specifiche per il clustering del database.
 
   Per ulteriori informazioni, vedere la [documentazione MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 

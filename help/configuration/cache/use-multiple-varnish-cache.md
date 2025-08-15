@@ -32,6 +32,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 
 È quindi possibile eliminare tutti gli host Vernice quando si aggiorna la cache di Commerce (nota anche come _pulizia_ della cache) nell&#39;Admin o utilizzando la riga di comando.
 
-Per aggiornare la cache utilizzando l&#39;amministratore, fare clic su **SYSTEM** > Strumenti > **Gestione cache**, quindi fare clic su **Svuota cache di Magento** nella parte superiore della pagina. (Puoi anche aggiornare singoli tipi di cache).
+Per aggiornare la cache utilizzando l&#39;amministratore, fare clic su **SISTEMA** > Strumenti > **Gestione cache**, quindi fare clic su **Svuota cache di Magento** nella parte superiore della pagina. (Puoi anche aggiornare singoli tipi di cache).
 
 Per aggiornare la cache di più istanze di Microsoft da cli, utilizzare il comando [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) come [proprietario del file system](../../installation/prerequisites/file-system/overview.md).

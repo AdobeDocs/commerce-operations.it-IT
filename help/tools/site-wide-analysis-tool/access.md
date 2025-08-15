@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Puoi accedere al dashboard [!DNL Site-Wide Analysis Tool] dal [!UICONTROL Admin Panel] del tuo archivio.
 
-Il servizio [!DNL Site-Wide Analysis Tool] è disponibile in [modalità di produzione](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/developer-tools#operation-modes) per [!UICONTROL Admin] utenti con autorizzazione di accesso all&#39;utente [risorse ruolo](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
+Il servizio [!DNL Site-Wide Analysis Tool] è disponibile in [modalità di produzione](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) per [!UICONTROL Admin] utenti con autorizzazione di accesso all&#39;utente [risorse ruolo](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
 
 >[!NOTE]
 >
@@ -26,13 +26,13 @@ Dashboard *[!DNL Site-Wide Analysis Tool]*
 >[!NOTE]
 >
 >Il tuo account deve avere diritto a **[!DNL Support Permissions]** per accedere a [!DNL Site-Wide Analysis Tool Dashboard].
->Vedi ulteriori dettagli in [Condividi un [!DNL Commerce] account](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html?lang=it) nella nostra guida utente.
+>>Vedi ulteriori dettagli in [Condividi un [!DNL Commerce] account](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) nella nostra guida utente.
 
 ## Accesso a [!DNL Site-Wide Analysis Tool Dashboard] da [!UICONTROL Admin Panel] del tuo archivio
 
 ### Passaggio 1: verificare le autorizzazioni
 
-Verificare che l&#39;account utente [!UICONTROL Admin] disponga dell&#39;autorizzazione per accedere a [!DNL Site-Wide Analysis Tool] tramite il relativo [ruolo utente assegnato](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
+Verificare che l&#39;account utente [!UICONTROL Admin] disponga dell&#39;autorizzazione per accedere a [!DNL Site-Wide Analysis Tool] tramite il relativo [ruolo utente assegnato](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
 
 >[!IMPORTANT]
 >
@@ -51,7 +51,7 @@ Per il ruolo personalizzato che richiede l&#39;accesso [!DNL Site-Wide Analysis 
 
 >[!NOTE]
 >
->Se si è verificato che l&#39;account utente dispone dell&#39;autorizzazione per accedere a [!DNL Site-Wide Analysis Tool] e l&#39;utente riceve un errore 403 quando tenta di accedere allo strumento da [!UICONTROL Admin], il controllo degli accessi HTTP potrebbe essere abilitato nell&#39;istanza di Adobe Commerce sull&#39;infrastruttura cloud. Il dashboard [!DNL Site-Wide Analysis Tool] NON è supportato se è abilitata l&#39;autenticazione HTTP. Per ulteriori informazioni sulla risoluzione di questo problema, consulta l&#39;[articolo di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
+>Se si è verificato che l&#39;account utente dispone dell&#39;autorizzazione per accedere a [!DNL Site-Wide Analysis Tool] e l&#39;utente riceve un errore 403 quando tenta di accedere allo strumento da [!UICONTROL Admin], il controllo degli accessi HTTP potrebbe essere abilitato nell&#39;istanza di Adobe Commerce sull&#39;infrastruttura cloud. Il dashboard [!DNL Site-Wide Analysis Tool] NON è supportato se è abilitata l&#39;autenticazione HTTP. Per ulteriori informazioni sulla risoluzione di questo problema, consulta l&#39;[articolo di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
 
 ### Passaggio 2: accedere a [!DNL Site-Wide Analysis Tool]
 
@@ -85,7 +85,7 @@ Per il ruolo personalizzato che richiede l&#39;accesso [!DNL Site-Wide Analysis 
 | --- | --- |
 | Dashboard | Mostra l’integrità del sistema con le notifiche e i consigli correnti per priorità. |
 | Informazioni | Fornisce informazioni di contatto dei clienti e un riepilogo dei ticket correnti, con informazioni dettagliate su ciascun prodotto Adobe Commerce installato. |
-| Recommendations | Elenca i consigli basati sulle best practice per risolvere i problemi rilevati sul sito. |
+| Consigli | Elenca i consigli basati sulle best practice per risolvere i problemi rilevati sul sito. |
 | Eccezioni | Elenca gli errori generati dall&#39;applicazione causati da condizioni anomale senza un gestore degli errori. |
 | Estensioni | Elenca tutte le estensioni e le librerie di terze parti. |
 

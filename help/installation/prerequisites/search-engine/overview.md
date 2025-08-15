@@ -16,7 +16,7 @@ A partire da Adobe Commerce 2.4, tutte le installazioni devono essere configurat
 
 >[!NOTE]
 >
->Il supporto di OpenSearch è stato aggiunto nella versione 2.4.4. OpenSearch è un fork di Elasticsearch compatibile. Tutte le istruzioni per la configurazione dell&#39;Elasticsearch 7 sono valide per OpenSearch. [Migrare da Elasticsearch a OpenSearch](../../../upgrade/prepare/opensearch-migration.md) fornisce indicazioni sul passaggio a OpenSearch.
+>Il supporto di OpenSearch è stato aggiunto nella versione 2.4.4. OpenSearch è un fork compatibile di Elasticsearch. Tutte le istruzioni per configurare Elasticsearch 7 valgono per OpenSearch. [Migrazione da Elasticsearch a OpenSearch](../../../upgrade/prepare/opensearch-migration.md) fornisce indicazioni sul passaggio a OpenSearch.
 
 ## Versioni supportati
 
@@ -72,7 +72,7 @@ Le attività descritte in questa sezione richiedono quanto segue:
 * [Firewall e SELinux](#firewall-and-selinux)
 * [Installare Java Software Development Kit (JDK)](#install-the-java-software-development-kit)
 * [Installare il motore di ricerca](#install-the-search-engine)
-* [Elasticsearch di aggiornamento](#upgrading-elasticsearch)
+* [Aggiornamento di Elasticsearch](#upgrading-elasticsearch)
 
 ### Firewall e SELinux
 
@@ -95,7 +95,7 @@ Per determinare se Java è già installato, immetti il seguente comando:
 java -version
 ```
 
-Se viene visualizzato il messaggio `java: command not found`, è necessario installare l&#39;SDK Java come descritto nella sezione successiva.
+Se viene visualizzato il messaggio `java: command not found`, è necessario installare Java SDK come descritto nella sezione successiva.
 
 Vedere una delle sezioni seguenti:
 
@@ -157,9 +157,9 @@ curl -XGET https://<host>:9200 -u 'admin:admin' --insecure
 curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 
-## Elasticsearch di aggiornamento
+## Aggiornamento di Elasticsearch
 
-Consulta l&#39;[Elasticsearch sull&#39;aggiornamento](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) per istruzioni complete sul backup dei dati, l&#39;individuazione di potenziali problemi di migrazione e il test degli aggiornamenti prima della distribuzione in produzione. A seconda della versione corrente dell&#39;Elasticsearch, potrebbe essere necessario o meno un riavvio completo del cluster.
+Consulta [Aggiornamento di Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) per istruzioni complete sul backup dei dati, l&#39;individuazione di potenziali problemi di migrazione e il test degli aggiornamenti prima della distribuzione in produzione. A seconda della versione corrente di Elasticsearch, potrebbe essere necessario o meno un riavvio completo del cluster.
 
 Elasticsearch richiede JDK 1.8 o versione successiva. Consulta [Installare Java Software Development Kit](#install-the-java-software-development-kit) per verificare quale versione di JDK è installata.
 

@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Questo argomento illustra come derivare il nome di una variabile di ambiente conoscendo un percorso di configurazione. Puoi sovrascrivere le impostazioni di configurazione di Adobe Commerce utilizzando le variabili di ambiente. Ad esempio, puoi sovrascrivere il valore dell’URL live di un elaboratore di pagamenti sul sistema di produzione.
 
-È possibile sovrascrivere il valore dell&#39;impostazione di configurazione _any_ utilizzando le variabili di ambiente. Tuttavia, Adobe consiglia di mantenere le impostazioni coerenti utilizzando il file di configurazione condiviso, `config.php`, e il file di configurazione specifico del sistema, `env.php`, come descritto in [Panoramica generale sulla distribuzione](../deployment/overview.md).
+È possibile sovrascrivere il valore dell&#39;impostazione di configurazione _any_ utilizzando le variabili di ambiente; tuttavia, Adobe consiglia di mantenere impostazioni coerenti utilizzando il file di configurazione condiviso, `config.php`, e il file di configurazione specifico del sistema, `env.php`, come descritto in [Panoramica generale sulla distribuzione](../deployment/overview.md).
 
 >[!TIP]
 >
->Consulta l&#39;argomento [Configurare gli ambienti](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=it) nella _guida di Commerce sull&#39;infrastruttura cloud_.
+>Consulta l&#39;argomento [Configurare gli ambienti](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) nella _guida di Commerce sull&#39;infrastruttura cloud_.
 
 ## Variabili di ambiente
 
@@ -34,26 +34,26 @@ Un nome di variabile di ambiente è costituito dal relativo ambito seguito dal r
 
 I percorsi di configurazione si trovano in:
 
-- [Riferimenti sui percorsi di configurazione sensibili e specifici del sistema](config-reference-sens.md)
-- [Riferimento sui percorsi di configurazione dei pagamenti](config-reference-payment.md)
+- [Riferimento ai percorsi di configurazione sensibili e specifici del sistema](config-reference-sens.md)
+- [Riferimento ai percorsi di configurazione dei pagamenti](config-reference-payment.md)
 - [Riferimento ai percorsi di configurazione dell’estensione Commerce B2B](config-reference-b2b.md)
 - [Altri percorsi di configurazione di riferimento](config-reference-general.md)
 
-### Variabile nomi
+### Nomi variabili
 
-Di seguito è riportato il formato generale dei nomi delle variabili delle impostazioni di sistema:
+Il formato generale dei nomi delle variabili delle impostazioni di sistema è il seguente:
 
 `<SCOPE>__<SYSTEM__VARIABLE__NAME>`
 
 `<SCOPE>` può essere:
 
-- ambito globale (ovvero l&#39;impostazione globale per _tutti_ gli ambiti)
+- Ambito globale (ovvero l&#39;impostazione globale per _tutti_ ambiti)
 
-  Le variabili di ambito globali hanno il formato seguente:
+  Le variabili di ambito globali hanno il seguente formato:
 
   `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
 
-- Un ambito specifico (ovvero, l&#39;impostazione interessa solo una visualizzazione store o un sito Web specifici)
+- Un ambito specifico (ovvero l&#39;impostazione influisce solo su una visualizzazione store o su un sito Web specifici)
 
   Le variabili dell’ambito della visualizzazione archivio, ad esempio, hanno il seguente formato:
 
@@ -62,8 +62,8 @@ Di seguito è riportato il formato generale dei nomi delle variabili delle impos
   Per ulteriori informazioni sugli ambiti, consulta:
 
    - [Passaggio 1: trovare il valore di ambito della visualizzazione del sito Web o dello store](#step-1-find-the-website-or-store-view-scope-value)
-   - [Argomento della Guida utente di Commerce sull&#39;ambito](https://experienceleague.adobe.com/it/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [Riferimento rapido ambito](https://experienceleague.adobe.com/it/docs/commerce-admin/config/scope-change#scope-quick-reference)
+   - [Argomento della Guida utente di Commerce sull&#39;ambito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [Riferimento rapido ambito](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` è il percorso di configurazione con due caratteri di sottolineatura al posto di `/`. Per ulteriori informazioni, vedere [Passaggio 2: impostazione delle variabili di sistema](#step-2-set-global-website-or-store-view-variables).
 
@@ -130,11 +130,11 @@ Ad esempio, per trovare un valore di ambito di visualizzazione sito web o store 
 1. Il nome dell&#39;ambito viene visualizzato nel campo **[!UICONTROL Code]**.
 1. Continua con [Passaggio 2: imposta le variabili globali, di visualizzazione sito Web o di visualizzazione archivio](#step-2-set-global-website-or-store-view-variables).
 
-### Trovare un sito Web o visualizzare store ambito nel database
+### Trovare un ambito di visualizzazione sito Web o archivio nel database
 
 Per ottenere questi valori dal database:
 
-1. Accedi al tuo sistema di sviluppo come file system proprietario se non lo hai già fatto.
+1. Accedi al sistema di sviluppo come proprietario del file system, se non lo hai già fatto.
 1. Immetti il comando seguente:
 
    ```bash
@@ -167,17 +167,17 @@ Per ottenere questi valori dal database:
    +------------+-------+--------------+------------+------------------+------------+
    ```
 
-1. Utilizza il valore della `code` colonna come nome del ambito, non come `name` valore.
+1. Utilizzare il valore della colonna `code` come nome dell&#39;ambito, non il valore `name`.
 
-   Ad esempio, per impostare una variabile di configurazione per il sito Web di prova, utilizzare il formato seguente:
+   Ad esempio, per impostare una variabile di configurazione per il sito Web di prova, utilizza il formato seguente:
 
    ```shell
    CONFIG__WEBSITES__TEST1__<SYSTEM__VARIABLE__NAME>
    ```
 
-   dove `<SYSTEM__VARIABLE__NAME>` viene dalla sezione successiva.
+   dove `<SYSTEM__VARIABLE__NAME>` proviene dalla sezione successiva.
 
-## Passaggio 2: Imposta le variabili di visualizzazione globale, sito Web o store
+## Passaggio 2: impostare le variabili di visualizzazione globale, del sito Web o dello store
 
 Questa sezione illustra come impostare le variabili di sistema.
 
@@ -194,12 +194,12 @@ Questa sezione illustra come impostare le variabili di sistema.
 
 La tabella seguente mostra alcune variabili di esempio.
 
-| Descrizione | Percorso in Amministrazione (omettendo **Archivi** > **Impostazioni >** **Configurazione**) | Variabile nome |
+| Descrizione | Percorso in Amministrazione (omettendo **Archivi** > **Impostazioni** > **Configurazione**) | Nome variabile |
 |--------------|--------------|----------------------|
-| Elasticsearch nome host del server | Catalogo > **Catalogo**, **Nome host server Elasticsearch** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
-| porta server Elasticsearch | Catalogo > **Catalogo**, **Elasticsearch porta server** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_PORT` |
-| Paese di spedizione di provenienza | Vendita > **spedizione Impostazioni** | `<SCOPE>__SHIPPING__ORIGIN__COUNTRY_ID` |
-| URL amministratore personalizzato | Avanzate > **Admin** | `<SCOPE>__ADMIN__URL__CUSTOM` |
+| Nome host del server Elasticsearch | Catalogo > **Catalogo**, **Nome host server Elasticsearch** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
+| Porta del server Elasticsearch | Catalogo > **Catalogo**, **Porta server Elasticsearch** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_PORT` |
+| Origine paese di spedizione | Vendite > **Impostazioni spedizione** | `<SCOPE>__SHIPPING__ORIGIN__COUNTRY_ID` |
+| URL amministratore personalizzato | Avanzate > **Amministratore** | `<SCOPE>__ADMIN__URL__CUSTOM` |
 | Percorso amministratore personalizzato | Avanzate > **Amministratore** | `<SCOPE>__ADMIN__URL__CUSTOM_PATH` |
 
 ## Esempi
@@ -224,7 +224,7 @@ Per trovare il nome della variabile per l&#39;origine del paese di spedizione:
 
 1. Determinare l&#39;ambito.
 
-   Trovare l&#39;ambito nel [database](#find-a-website-or-store-view-scope-in-the-database) come descritto nel passaggio 1: Trovare il valore dell&#39;ambito della visualizzazione del sito Web o dell&#39;archivio. (Puoi anche trovare il valore nell&#39;amministratore come mostrato nella tabella [del passaggio 2: Imposta variabili globali, di visualizzazione del sito Web o di archiviazione] (#step-2-set-global-website-or-store-view-variables.
+   Trovare l&#39;ambito nel [database](#find-a-website-or-store-view-scope-in-the-database) come descritto nel passaggio 1: Trovare il valore dell&#39;ambito della visualizzazione del sito Web o dell&#39;archivio. (Puoi anche trovare il valore nell&#39;amministratore come mostrato nella tabella [del passaggio 2: Imposta variabili globali, di visualizzazione del sito Web o di archiviazione]&#x200B;(#step-2-set-global-website-or-store-view-variables.
 
    Ad esempio, l&#39;ambito potrebbe essere `CONFIG__WEBSITES__DEFAULT`.
 
@@ -253,6 +253,6 @@ Un esempio dettagliato viene visualizzato in [Impostare i valori di configurazio
 >
 >- Per utilizzare i valori impostati nell&#39;array `$_ENV`, è necessario impostare `variables_order = "EGPCS"`(Environment, Get, Post, Cookie e Server) nel file `php.ini`. Per informazioni dettagliate, vedere la [documentazione PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Per Adobe Commerce su infrastruttura cloud, se si tenta di ignorare le impostazioni di configurazione utilizzando [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=it#configure-the-project), è necessario anteporre al nome della variabile `env:`. Ad esempio:
+>- Per Adobe Commerce su infrastruttura cloud, se si tenta di ignorare le impostazioni di configurazione utilizzando [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), è necessario anteporre al nome della variabile `env:`. Ad esempio:
 >
 >![Esempio di variabile di ambiente](../../assets/configuration/cloud-console-envvariable.png)

@@ -16,7 +16,7 @@ I registri forniscono visibilità sui processi di sistema; ad esempio, informazi
 
 Questo argomento si concentra sulla registrazione basata su file, anche se Commerce offre la flessibilità di memorizzare i registri anche nel database.
 
-L&#39;Adobe consiglia di utilizzare la registrazione centralizzata delle applicazioni per i motivi seguenti:
+Adobe consiglia di utilizzare la registrazione centralizzata delle applicazioni per i seguenti motivi:
 
 - Consente lo storage dei registri su un server diverso da quello dell&#39;applicazione e riduce le operazioni di I/O del disco, semplificando il supporto del server dell&#39;applicazione.
 
@@ -24,7 +24,7 @@ L&#39;Adobe consiglia di utilizzare la registrazione centralizzata delle applica
 
   >[!INFO]
   >
-  >L’Adobe non consiglia né approva alcuna particolare soluzione di registrazione.
+  >Adobe non consiglia né approva alcuna particolare soluzione di registrazione.
 
 ## Conformità PSR-3
 

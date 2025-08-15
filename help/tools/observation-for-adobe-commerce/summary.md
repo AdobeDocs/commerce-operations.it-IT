@@ -18,7 +18,7 @@ La scheda [!UICONTROL Summary] di [!DNL Observation for Adobe Commerce] ha lo sc
 
 ![Panoramica transazioni](../../assets/tools/transaction-overview.jpg)
 
-### [Che cos&#39;è una transazione?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,Che%20è%20a%20transaction%3F,lavoro%20in%20a%20software%20application.&amp;text=For%20APM%2C%20it%20will%20frequent,quando%20la%20response%20is%20sent)
+### [Che cos&#39;è una transazione?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,Che%20è%20a%20transaction%3F,lavoro%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20frequent,quando%20la%20response%20is%20sent)
 
 &quot;In [!DNL New Relic], una transazione è definita come un&#39;unità logica di lavoro in un&#39;applicazione software. In particolare, si riferisce alle chiamate di funzione e di metodo che compongono tale unità di lavoro. Si riferisce spesso a una transazione web, che rappresenta un’attività che si verifica tra il momento in cui l’applicazione riceve una richiesta web e il momento in cui viene inviata la risposta.&quot;
 
@@ -56,9 +56,9 @@ Nel frame **[!UICONTROL Swap memory free in bytes]** viene visualizzata, per nod
 
 ## [!UICONTROL CPU % by host]
 
-![percentuale CPU per host](../../assets/tools/cpu-percent-by-host.jpg)
+![Percentuale CPU per host](../../assets/tools/cpu-percent-by-host.jpg)
 
-L&#39;aggregato di tutti gli ambienti e i nodi viene visualizzato nel frame **[!UICONTROL CPU % by host]**. Devi deselezionare gli ambienti non di produzione. Inoltre, tieni presente tutte le istanze in cui non sono presenti tutti i nodi per l’ambiente di produzione. Per ulteriori suggerimenti sull&#39;utilizzo intensivo della CPU, fare riferimento a [Risoluzione dei problemi relativi alle prestazioni con New Relic su Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=it).
+L&#39;aggregato di tutti gli ambienti e i nodi viene visualizzato nel frame **[!UICONTROL CPU % by host]**. Devi deselezionare gli ambienti non di produzione. Inoltre, tieni presente tutte le istanze in cui non sono presenti tutti i nodi per l’ambiente di produzione. Per ulteriori suggerimenti sull&#39;utilizzo intensivo di CPU, fare riferimento a [Risoluzione dei problemi relativi alle prestazioni con New Relic su Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -68,9 +68,9 @@ L&#39;aggregato di tutti gli ambienti e i nodi viene visualizzato nel frame **[!
 
 ## [!UICONTROL CPU Usage]
 
-![Utilizzo CPU](../../assets/tools/cpu-usage.jpg)
+![Utilizzo di CPU](../../assets/tools/cpu-usage.jpg)
 
-Se il frame **[!UICONTROL CPU Usage]** è vuoto, significa che l&#39;applicazione di infrastruttura di [!DNL New Relic] non è abilitata. Se il tuo sito è su Starter, queste informazioni non vengono visualizzate. Se il tuo sito è su Pro, apri un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it) per abilitare [!DNL New Relic Infrastructure] per il tuo sito.
+Se il frame **[!UICONTROL CPU Usage]** è vuoto, significa che l&#39;applicazione di infrastruttura di [!DNL New Relic] non è abilitata. Se il tuo sito è su Starter, queste informazioni non vengono visualizzate. Se il tuo sito è su Pro, apri un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) per abilitare [!DNL New Relic Infrastructure] per il tuo sito.
 
 ## [!UICONTROL Average Response Time]
 
@@ -116,7 +116,7 @@ Il frame **[!UICONTROL Deployment State]** presenta determinate fasi di distribu
 * &#39;%NOTICE: generazione comando completata%&#39;) come &#39;gen_compl&#39;
 * &#39;%NOTICE: distribuzione completata%&#39;) come &#39;deploy_compl&#39;
 * &#39;%NOTICE: avvio post-distribuzione.%&#39;) come &#39;start_pdeploy&#39;
-* &#39;%NOTICE: distribuzione Post completata%&#39;) come &#39;distribuzione&#39;
+* &#39;%NOTICE: la post-distribuzione è completa%&#39;) come &#39;pdeploy&#39;
 * &#39;%deploy-complete%&#39;) come &#39;cl_deploy_compl&#39;
 
 ## [!UICONTROL IP Frequency]
@@ -381,10 +381,10 @@ Il frame **[!UICONTROL Order transactions (default?)]** cerca le transazioni `re
 * &#39;%all shards failed%&#39; come &#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39; come &#39;no_alive_nodes&#39;
 * &#39;%PHP Errore irreversibile: errore non rilevato: parametri errati per Elasticsearch%&#39; come &#39;error_param&#39;
-* &#39;%È possibile risolvere il problema aggiornando il servizio Elasticsearch nell&#39;infrastruttura cloud di Magento alla versione%&#39; come &#39;ver_err&#39;
+* &#39;%È possibile risolvere il problema aggiornando il servizio Elasticsearch nell&#39;infrastruttura Magento Cloud alla versione%&#39; come &#39;ver_err&#39;
 * Lo stato di integrità del cluster &#39;%cluster è cambiato da \[GIALLO\] a \[ROSSO\] (motivo:%&#39; come &#39;giallo_rosso&#39;
 * &#39;%Nessuno spazio disponibile nel dispositivo%&#39; come &#39;no_space&#39;
-* &#39;% Impossibile eseguire &lbrack;SearchRequest&lbrace;searchType=%&#39; come &#39;failed_query&#39;
+* &#39;% Impossibile eseguire [SearchRequest{searchType=%&#39; come &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 

@@ -1,6 +1,6 @@
 ---
-title: Passaggi di migrazione dei dati Post
-description: Scopri come procedere dopo aver utilizzato  [!DNL Data Migration Tool]  per migrare i dati dal Magento 1 al Magento 2.
+title: Passaggi di migrazione post-dati
+description: Scopri come eseguire la migrazione dei dati da Magento 1 a Magento 2 dopo l'utilizzo di  [!DNL Data Migration Tool] .
 exl-id: 00171c41-ccea-4ebe-8958-becb9aa09973
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,16 +10,16 @@ ht-degree: 0%
 
 ---
 
-# Passaggi di migrazione dei dati Post
+# Passaggi di migrazione post-dati
 
-Dopo aver completato la migrazione e testato in modo approfondito il nuovo sito Magento 2, eseguire le operazioni seguenti:
+Dopo aver completato la migrazione e testato in modo approfondito il nuovo sito Magento 2, eseguire le attività seguenti:
 
-* Metti il Magento 1 in modalità di manutenzione e interrompi definitivamente tutte le attività di amministrazione
+* Metti Magento 1 in modalità di manutenzione e interrompi definitivamente tutte le attività di amministrazione
 
-* Avvia processi cron Magento 2
+* Avvia processi cron di Magento 2
 
-* [Svuota tutti i tipi di cache del Magento 2](../../../configuration/cli/manage-cache.md#clean-and-flush-cache-types)
+* [Svuota tutti i tipi di cache di Magento 2](../../../configuration/cli/manage-cache.md#clean-and-flush-cache-types)
 
-* [Reindicizza tutti gli indicizzatori del Magento 2](../../../configuration/cli/manage-indexers.md#reindex)
+* [Reindicizza tutti gli indicizzatori di Magento 2](../../../configuration/cli/manage-indexers.md#reindex)
 
-* Modificare il DNS e i load balancer per puntare all&#39;hardware di produzione del Magento 2
+* Modificare il DNS e i load balancer in modo che puntino all&#39;hardware di produzione Magento 2

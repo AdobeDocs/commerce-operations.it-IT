@@ -43,7 +43,7 @@ L&#39;errore si verifica se il valore restituito è `mysql`, `elasticsearch` o `
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Dove `<version>` è la versione del Magento in cui si stava eseguendo **prima** dell&#39;aggiornamento. Ad esempio, `2.3.5`.
+>Dove `<version>` è la versione di Magento in esecuzione **prima** dell&#39;aggiornamento. Ad esempio, `2.3.5`.
 
 Seguire le linee guida descritte nelle sezioni seguenti per eseguire il ripristino da uno stato incoerente.
 
@@ -66,12 +66,12 @@ Il valore `elasticsearch` indica che la versione di Adobe Commerce di livello in
 
 Prima di eseguire l’aggiornamento a 2.4, è necessario eseguire le seguenti attività:
 
-1. Aggiornamento a una versione di Elasticsearch supportata da Commerce. Consulta l&#39;[Elasticsearch sull&#39;aggiornamento](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) per istruzioni complete sul backup dei dati, l&#39;individuazione di potenziali problemi di migrazione e il test degli aggiornamenti prima della distribuzione in produzione. A seconda della versione corrente dell&#39;Elasticsearch, potrebbe essere necessario o meno un riavvio completo del cluster.
+1. Aggiornamento a una versione di Elasticsearch supportata da Commerce. Consulta [Aggiornamento di Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) per istruzioni complete sul backup dei dati, l&#39;individuazione di potenziali problemi di migrazione e il test degli aggiornamenti prima della distribuzione in produzione. A seconda della versione corrente di Elasticsearch, potrebbe essere necessario o meno un riavvio completo del cluster.
 
    >[!NOTE]
    >
    >Elasticsearch richiede JDK 1.8 o versione successiva. Consulta [Installare Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
 
-1. [Configurare Elasticsearch](../../configuration/search/configure-search-engine.md) e reindicizzare.
+1. [Configura Elasticsearch](../../configuration/search/configure-search-engine.md) e reindicizza.
 
 Dopo aver configurato il motore di ricerca e la reindicizzazione, sei pronto per l’aggiornamento alla versione 2.4.

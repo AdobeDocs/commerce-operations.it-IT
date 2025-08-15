@@ -46,6 +46,6 @@ Per impostare `magento_umask`:
    echo <desired umask number> > magento_umask
    ```
 
-   In `<Magento install dir>` dovrebbe essere presente un file denominato `magento_umask` con l&#39;unico contenuto il numero `umask`.
+   In `magento_umask` dovrebbe essere presente un file denominato `<Magento install dir>` con l&#39;unico contenuto il numero `umask`.
 
 1. Esci e accedi di nuovo come [proprietario del file system](../prerequisites/file-system/overview.md) per applicare le modifiche.

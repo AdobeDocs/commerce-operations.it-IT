@@ -1,6 +1,6 @@
 ---
 title: Configura  [!DNL Data Migration Tool]
-description: Scopri i due metodi per configurare  [!DNL Data Migration Tool]  per trasferire i dati tra il Magento 1 e il Magento 2.
+description: Scopri i due metodi per configurare  [!DNL Data Migration Tool]  per trasferire dati tra Magento 1 e Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -15,10 +15,10 @@ ht-degree: 0%
 Dopo aver installato [!DNL Data Migration Tool], la directory seguente contiene i file di mapping e di configurazione:
 
 * Magento Open Source:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: configurazione e script per la migrazione dal Magento Open Source 1 al Magento Open Source 2
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: configurazione e script per la migrazione da Magento Open Source 1 a Magento Open Source 2
 
 * Adobe Commerce:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: configurazione e script per la migrazione dal Magento Open Source 1 ad Adobe Commerce 2
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: configurazione e script per la migrazione da Magento Open Source 1 ad Adobe Commerce 2
    * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: configurazione e script per la migrazione da Adobe Commerce 1 ad Adobe Commerce 2
 
 Le directory precedenti contengono sottodirectory per ogni versione supportata.
@@ -35,9 +35,9 @@ Se si prevede di eseguire [!DNL Data Migration Tool] solo localmente, è possibi
 
 ### Configurare la migrazione in un modulo separato
 
-Prima di eseguire la migrazione dei dati, è necessario creare un modulo Magento 2.
+Prima di eseguire la migrazione dei dati, è necessario creare un modulo di Magento 2.
 
-1. Creazione di un modulo Magento 2.
+1. Creare un modulo di Magento 2.
 
    * `<your Magento 2 install dir>/app/code/Vendor/Migration/composer.json`
 
@@ -106,7 +106,7 @@ Prima di eseguire la migrazione dei dati, è necessario creare un modulo Magento
 
 1. Nel file `config.xml` è necessario impostare i dettagli di accesso ai database M1 e M2 e alla chiave di crittografia.
 
-1. Se nell&#39;archivio M1 sono presenti modifiche personalizzate, è necessario mappare il resto dei file di configurazione alle personalizzazioni dell&#39;archivio del Magento 1. Vedi [Operazioni con i file di configurazione e mappatura](#migration-config).
+1. Se nell&#39;archivio M1 sono presenti modifiche personalizzate, è necessario mappare il resto dei file di configurazione alle personalizzazioni dell&#39;archivio Magento 1. Vedi [Operazioni con i file di configurazione e mappatura](#migration-config).
 
 ### Configura migrazione nella cartella `vendor`
 
@@ -190,7 +190,7 @@ Ad esempio:
 
 ## Utilizzare i file di configurazione e mappatura
 
-[!DNL Data Migration Tool] utilizza *file di mapping* per consentire l&#39;esecuzione di mapping di database personalizzati tra i database del Magento 1 e del Magento 2, inclusi:
+[!DNL Data Migration Tool] utilizza *file di mapping* per consentire l&#39;esecuzione di mapping di database personalizzati tra i database di Magento 1 e Magento 2, inclusi:
 
 * Modifica dei nomi delle tabelle
 
@@ -210,7 +210,7 @@ Per utilizzare i file di mappatura:
 
    1. Percorso assoluto del file, ad esempio `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. percorso file relativo del modulo magento/data-migration-tool: `etc/opensource-to-opensource/1.9.4.1/map.xml`
-   1. Percorso file relativo alla radice del Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Percorso file relativo alla directory principale di Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 
 Le directory `<Magento 2 dir>/vendor/magento/data-migration-tool/etc` e `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` contengono i seguenti file di configurazione:
 
@@ -218,8 +218,8 @@ Anche se si utilizza il file `map.xml.dist` nella maggior parte dei casi, nella 
 
 | Nome file di mappatura | Descrizione |
 | --- | --- |
-| `class-map.xml.dist` | Dizionario delle mappature di classe tra il Magento 1 e il Magento 2 |
-| `config.xml.dist` | File di configurazione principale che specifica le configurazioni del database del Magento 1 e del Magento 2, la configurazione dei passaggi e i collegamenti ai file di mappatura |
+| `class-map.xml.dist` | Dizionario delle mappature di classi tra Magento 1 e Magento 2 |
+| `config.xml.dist` | File di configurazione principale che specifica le configurazioni del database di Magento 1 e Magento 2, la configurazione dei passaggi e i collegamenti ai file di mappatura |
 | *Solo Adobe Commerce*. `customer-attr-document-groups.xml.dist` | Elenco di tabelle utilizzate nel passaggio Attributi cliente personalizzati. |
 | *Solo Adobe Commerce*. `customer-attr-map.xml.dist` | File di mappa utilizzato nel passaggio Attributi del cliente personalizzati. |
 | `deltalog.xml.dist` | Contiene l&#39;elenco delle tabelle necessarie per l&#39;impostazione delle routine di database. |

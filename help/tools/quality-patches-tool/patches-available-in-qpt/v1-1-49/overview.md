@@ -24,7 +24,7 @@ QPT v1.1.49 include le seguenti patch:
 1. **ACSD-57643**: risolve il problema relativo all&#39;aggiunta errata di prodotti con opzioni personalizzate al carrello tramite GraphQL.
 1. **ACSD-57846**: è stato corretto il problema per cui la ricerca di prodotti GraphQL con un filtro per prezzi zero non restituisce alcun risultato a causa di un&#39;eccezione.
 1. **ACSD-57941**: è stato risolto il problema che impediva l&#39;assegnazione corretta delle opzioni prodotto all&#39;archivio di amministrazione anziché ai rispettivi archivi.
-1. **ACSD-58375**: è stato risolto il problema che causava un errore durante l&#39;aggiunta di un video [!DNL YouTube] a livello di visualizzazione archivio in caso di configurazione *[!DNL YouTube API Key]* errata.
+1. **ACSD-58375**: è stato risolto il problema che causava un errore durante l&#39;aggiunta di un video *[!DNL YouTube API Key]* a livello di visualizzazione archivio in caso di configurazione [!DNL YouTube] errata.
 1. **ACSD-58739**: risolve il problema che causava la generazione di un errore da parte della reindicizzazione parziale.
 1. **ACSD-58446**: risolve il problema per cui quando si elimina un team con utenti o team secondari indipendentemente dal loro stato (inattivo), il sistema fornisce un messaggio di errore non informativo non coerente con l&#39;interfaccia utente.
 1. **ACSD-58054**: è stato risolto il problema che rendeva possibile la generazione di token cliente per i clienti inattivi tramite API.

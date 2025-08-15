@@ -4,13 +4,13 @@ description: Applica la patch ACSD-65750 per risolvere il problema di Adobe Comm
 feature: GraphQL, Page Builder, Products
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 2555327c02985a51e7f34a36dd256227b12b5924
+exl-id: 3aee28e1-1293-42d0-a62c-5021e8f75518
+source-git-commit: 2d6debf4d426a0473eb77919c2307afdc77bf937
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65750: la query &quot;route&quot; [!DNL GraphQL] restituisce prodotti fuori ordine nel tipo di contenuto [!DNL Page Builder] prodotti
 
@@ -28,7 +28,7 @@ La patch ACSD-65750 risolve il problema per cui la query &quot;route&quot; di [!
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -88,7 +88,7 @@ Il sistema restituisce i prodotti in un ordine che non corrisponde alla loro pos
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

@@ -18,13 +18,13 @@ La scheda [!UICONTROL Alerts] fornisce una serie di avvisi, inclusi gli avvisi c
 
 ![Apri avvisi critici](../../assets/tools/observation-for-adobe-commerce/alerts-tab-1.jpg)
 
-Il frame **[!UICONTROL Open Alert Details]** mostra un conteggio degli avvisi critici aperti nell&#39;arco temporale selezionato. Gli avvisi includono quelli creati dagli Adobi e quelli creati dal partner o dall’esercente.
+Il frame **[!UICONTROL Open Alert Details]** mostra un conteggio degli avvisi critici aperti nell&#39;arco temporale selezionato. Gli avvisi includono quelli creati da Adobe e quelli creati dal partner o dall’esercente.
 
 ## [!UICONTROL Closed Critical Alerts]
 
 ![Avvisi critici chiusi](../../assets/tools/observation-for-adobe-commerce/alerts-tab-2.jpg)
 
-Il frame **[!UICONTROL Closed Critical Alerts]** mostra un conteggio degli avvisi critici chiusi nell&#39;intervallo temporale selezionato. Gli avvisi includono quelli creati dagli Adobi e quelli creati dal partner o dall’esercente.
+Il frame **[!UICONTROL Closed Critical Alerts]** mostra un conteggio degli avvisi critici chiusi nell&#39;intervallo temporale selezionato. Gli avvisi includono quelli creati da Adobe e quelli creati dal partner o dall’esercente.
 
 ## [!UICONTROL Critical Alert Details]
 

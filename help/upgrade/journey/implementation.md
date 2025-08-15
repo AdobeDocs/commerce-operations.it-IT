@@ -9,7 +9,7 @@ ht-degree: 1%
 
 ---
 
-# Aggiornare implementazione
+# Implementazione dell’aggiornamento
 
 L’implementazione dell’aggiornamento consiste in cinque fasi:
 
@@ -17,21 +17,21 @@ L’implementazione dell’aggiornamento consiste in cinque fasi:
 - Sviluppo e garanzia della qualità (QA)
 - Test di accettazione utente (UAT) e preparazione al lancio
 - Launch
-- Post-lanciare
+- Post-lancio
 
-## Analisi dell&#39;aggiornamento
+## Analisi dell’aggiornamento
 
-L&#39;analisi è probabilmente la parte più importante del processo di aggiornamento. Un&#39;analisi ben eseguita consente di risparmiare tempo e limita le sorprese future. Il risultato di questa fase dovrebbe essere una lista di controllo dettagliata per l&#39;aggiornamento e un documento con tutte le dipendenze.
+L’analisi è senza dubbio la parte più importante del processo di aggiornamento. Un’analisi ben eseguita ti consente di risparmiare tempo e limita le sorprese in futuro. Il risultato di questa fase deve essere un elenco di controllo dell’aggiornamento dettagliato e un documento con tutte le dipendenze.
 
 Di seguito sono riportati gli elementi che è possibile includere in un&#39;analisi approfondita:
 
-- **Ambito della versione di destinazione**—La documentazione sull&#39;[Experience League](../../release/release-notes/overview.md) e le informazioni dei webinar sulle versioni dei partner forniscono tutti i dettagli necessari sull&#39;aggiornamento di destinazione.
+- **Ambito della versione di destinazione**—La documentazione su [Experience League](../../release/release-notes/overview.md) e le informazioni dei webinar sulle versioni dei partner forniscono tutti i dettagli necessari sull&#39;aggiornamento di destinazione.
 
-- **[!DNL Upgrade Compatibility Tool]risultati**: questo strumento rende qualsiasi aggiornamento più semplice e veloce confrontando il codice corrente con il codice della versione destinazione e producendo un rapporto di tutti i problemi che devono essere risolti. Vedere .[[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) I dettagli chiave del rapporto includono:
+- **[!DNL Upgrade Compatibility Tool]risultati** - Questo strumento rende qualsiasi aggiornamento più rapido e semplice confrontando il codice corrente con il codice della versione di destinazione e generando un report di tutti i problemi che devono essere risolti. Vedere [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). I dettagli principali del rapporto includono:
 
-   - Versione corrente installata
-   - Aggiorna versione destinazione
-   - Numero e dettagli degli errori rilevati critico
+   - Versione installata corrente
+   - Aggiorna versione di destinazione
+   - Numero e dettagli degli errori critici rilevati
 
   >[!TIP]
   >
@@ -47,18 +47,18 @@ Di seguito sono riportati gli elementi che è possibile includere in un&#39;anal
   | [!DNL RabbitMQ] | 3,8 | 3,9 | Attualmente non in uso, ma è consigliabile utilizzarlo |
   | MariaDB (Cloud) | 10,4 | 10,6 |                                                          |
   | MySQL | 8,0 | -/-/ |                                                          |
-  | Compositore | 1.9.2 | 2,2 |                                                          |
+  | Compositore | 1.9.2. | 2,2 |                                                          |
   | Elasticsearch | 7,10 | 7,17 |                                                          |
 
 - **Estensioni e moduli di terze parti**: utilizza questo modello di tabella per comprendere lo stato delle estensioni e delle personalizzazioni, in modo da poter prendere decisioni strategiche e definire azioni. Si tratta di un’opportunità per sostituire eventuali estensioni native per Adobe Commerce, al fine di ridurre al minimo la complessità del progetto. Utilizzare il comando `bin/magento module:status` per visualizzare un elenco di moduli ed estensioni.
 
   | N. | Estensione/<br>nome modulo | Pacchetto Compositore | Fornitore | Versione corrente | Funzionalità | Compatibile con la versione più recente di <br>Commerce? | Problemi | Nativa di Commerce? | Azione | Note |
   |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
-  | 1 | Nome e collegamento dell’estensione | extension/<br>extensionx-magento-2 | Nome fornitore | Versione installata | Requisiti aziendali | Sì/No | Elencare i problemi identificati relativi a questa estensione | Sì/No | Keep/Sostituisci/<br>Rimuovi |       |
+  | 1 | Nome e collegamento dell’estensione | extension/<br>extensionx-magento-2 | Nome fornitore | Versione installata | Requisiti aziendali | Sì/No | Elencare i problemi identificati relativi a questa estensione | Sì/No | Mantieni/Sostituisci/<br>Rimuovi |       |
 
-- **Moduli** personalizzati: simile alla tabella dei moduli di terze parti, questo modello consente di tenere traccia e comprendere lo stato e le azioni necessarie per l&#39;aggiornamento dei moduli personalizzati.
+- **Moduli personalizzati**: simile alla tabella dei moduli di terze parti, questo modello consente di tenere traccia e comprendere lo stato e le azioni necessarie per l&#39;aggiornamento dei moduli personalizzati.
 
-  | # | Nome modulo | Funzionalità | Obbligatorio? | Nativo di Commerce? | Azione | Note |
+  | N. | Nome modulo | Funzionalità | Obbligatorio | Nativa di Commerce? | Azione | Note |
   |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
   | 1 | Nome modulo | Requisiti aziendali | Sì/No | Sì/No | Mantieni/Sostituisci/Rimuovi |       |
 
@@ -84,8 +84,8 @@ Segui il tuo piano di comunicazione e assicurati che tutte le parti interessate 
 
 Infine, rivolgiti al tuo team per determinare le lezioni apprese e le insidie. Questa retrospettiva ti aiuta a migliorare il processo la prossima volta.
 
-## Post-Launch
+## Post-lancio
 
 Dopo l’avvio del sito, assicurati di controllare i dati di analisi, la console Google Search e altre risorse per verificare che non vi siano problemi imprevisti e che tutto funzioni come previsto.
 
-È sempre una buona idea monitorare le prestazioni attraverso strumenti di monitoraggio ben progettati. Esistono molti strumenti e strumenti per monitorare le prestazioni del sito, quindi assicurati di sceglierne uno che sia adatto alla tua organizzazione. È consigliabile che i clienti Adobe Commerce che utilizzano il sistema di gestione dell&#39;infrastruttura cloud utilizzino servizi quali [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=it) per monitorare le prestazioni del sito.
+È sempre una buona idea monitorare le prestazioni attraverso strumenti di monitoraggio ben progettati. Esistono molti strumenti e strumenti per monitorare le prestazioni del sito, quindi assicurati di sceglierne uno che sia adatto alla tua organizzazione. È consigliabile che i clienti Adobe Commerce che utilizzano il sistema di gestione dell&#39;infrastruttura cloud utilizzino servizi quali [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) per monitorare le prestazioni del sito.

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-La [Libreria JavaScript per la privacy degli Adobi](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=it) è un insieme di strumenti che facilitano la creazione di un processo per l&#39;accesso e l&#39;eliminazione di dati privati.
+La [libreria JavaScript di Adobe Privacy](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) è un insieme di strumenti che facilitano la creazione di un processo per l&#39;accesso e l&#39;eliminazione di dati privati.
 
 I servizi di tracciamento dati di Adobe Commerce possono memorizzare informazioni private applicabili alle normative sulla privacy, come il [Regolamento generale sulla protezione dei dati (RGPD)](gdpr.md) e il [California Consumer Privacy Act (CCPA)](ccpa.md).
 
@@ -43,7 +43,7 @@ La libreria JS di AdobePrivacy fornisce diverse funzioni per gestire i dati di i
 `retrieveThenRemoveIdentities()`
 : questa funzione è simile a `removeIdentities()` in quanto recupera un array di identità e lo rimuove dal browser.
 
-Per ulteriori informazioni ed esempi sull&#39;utilizzo di queste funzioni, vedere la [documentazione ufficiale della libreria](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=it).
+Per ulteriori informazioni ed esempi sull&#39;utilizzo di queste funzioni, vedere la [documentazione ufficiale della libreria](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Inizializzazione
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 Il costruttore accetta un oggetto di configurazione con parametri durante la creazione dell&#39;istanza.
-Per un elenco di questi parametri di configurazione, consulta la [documentazione ufficiale della libreria](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=it).
+Per un elenco di questi parametri di configurazione, consulta la [documentazione ufficiale della libreria](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).

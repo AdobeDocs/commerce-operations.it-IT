@@ -79,7 +79,7 @@ Il frame **[!UICONTROL Deploy Log Detail]** mostra i dettagli di riepilogo dei m
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![Dettagli registro distribuzione Post](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
+![Dettagli registro post-distribuzione](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
 Il frame **[!UICONTROL Post Deploy Log Detail]** mostra i dettagli del registro post-distribuzione che si sono verificati nell&#39;arco temporale selezionato. Questo frame è incentrato su messaggi di registro specifici che contengono le stringhe seguenti:
 

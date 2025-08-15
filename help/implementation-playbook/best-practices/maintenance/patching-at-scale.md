@@ -18,7 +18,7 @@ Se gestisci più installazioni di Adobe Commerce, [l&#39;applicazione di patch](
 
 >[!NOTE]
 >
->Il seguente contenuto è stato originariamente pubblicato nel post [Distribuzione di patch di Adobe Commerce su scala](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) sul blog di Adobe Tech. È stato modificato per concentrarsi sui passaggi e sugli esempi di codice per l’implementazione di una strategia di applicazione di patch centralizzata. Per ulteriori dettagli sui diversi tipi di patch qui descritti, consulta il post originale.
+>Il seguente contenuto è stato originariamente pubblicato nel post [Distribuzione di patch Adobe Commerce su scala](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) del blog tecnico Adobe. È stato modificato per concentrarsi sui passaggi e sugli esempi di codice per l’implementazione di una strategia di applicazione di patch centralizzata. Per ulteriori dettagli sui diversi tipi di patch qui descritti, consulta il post originale.
 
 ## Prodotti e versioni interessati
 
@@ -33,8 +33,8 @@ Poiché esistono molti tipi diversi di patch e molti modi per applicarle, come s
 
 1. **Le patch di sicurezza** fanno parte della base di codice statico di una versione di Adobe Commerce.
 1. **Patch compositore** tramite `composer install` e `composer update` plug-in come [cweagans/compositore-patches](https://packagist.org/packages/cweagans/composer-patches).
-1. Tutte le **patch richieste** incluse nel pacchetto [Patch cloud per Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=it).
-1. **patch di qualità** selezionate incluse in [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md).
+1. Tutte le **patch richieste** incluse nel pacchetto [Patch cloud per Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html).
+1. **patch di qualità** selezionate incluse in [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
 1. **Patch personalizzate** e patch di supporto Adobe Commerce nella directory `/m2-hotfixes` in ordine alfabetico in base al nome della patch.
 
    >[!IMPORTANT]
@@ -148,7 +148,7 @@ Per creare il pacchetto del componente `centralized-patcher`:
    ```
 
 
-L&#39;attributo `quality-patches` nell&#39;esempio di codice precedente contiene due patch dall&#39;[elenco completo delle patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it).  Queste patch di qualità vengono installate in ogni progetto che richiede il pacchetto `centralized-patcher` utilizzando il comando `vendor/bin/magento-patches apply`.
+L&#39;attributo `quality-patches` nell&#39;esempio di codice precedente contiene due patch dall&#39;[elenco completo delle patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).  Queste patch di qualità vengono installate in ogni progetto che richiede il pacchetto `centralized-patcher` utilizzando il comando `vendor/bin/magento-patches apply`.
 
 A scopo di test, è possibile creare una patch di esempio (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`).
 
@@ -365,12 +365,12 @@ Come per Adobe Commerce sull&#39;infrastruttura cloud, questo articolo presuppon
 
 In questo modo è possibile gestire centralmente tutte le patch per tutte le installazioni e garantire al meglio la sicurezza e la stabilità degli store Adobe Commerce. Per controllare lo stato della patch, utilizzare i metodi seguenti:
 
-- [Progetti infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it#view-available-patches-and-status)
+- [Progetti infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html#view-available-patches-and-status)
 - [Progetti on-premise](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Esempi di codice
 
-- [Patch centralizzate nel Magento Open Source](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
+- [Patch centralizzate in Magento Open Source](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
 - [Patch centralizzate in Adobe Commerce sull&#39;infrastruttura cloud](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
 - [Plug-in del Compositore patch centralizzato](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
 - [Componente patch centralizzato](https://github.com/AntonEvers/centralized-patcher)

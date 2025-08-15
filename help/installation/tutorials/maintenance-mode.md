@@ -4,7 +4,7 @@ description: Segui questi passaggi per personalizzare ciò che i clienti vedono 
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
 source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Se si desidera impostare più archivi, ciascuno con un layout e un contenuto loc
 
 Nell&#39;esempio seguente viene utilizzato un file di modello di errore di tipo `503` che richiede contenuto localizzato.
 
-Il costruttore della classe `Error_Processor` accetta un parametro di GET `skin` per modificare il layout:
+Il costruttore della classe `Error_Processor` accetta un parametro GET `skin` per modificare il layout:
 
 ```php
 if (isset($_GET['skin'])) {

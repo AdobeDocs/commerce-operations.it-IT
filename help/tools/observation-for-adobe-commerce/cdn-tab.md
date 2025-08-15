@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Scheda [!UICONTROL CDN]
 
-Questa scheda contiene informazioni incentrate su [!DNL content delivery network (CDN)]. Nel caso di Adobe Commerce Cloud, questo è il servizio [!DNL Fastly].
+Questa scheda contiene informazioni incentrate su [!DNL content delivery network (CDN)]. Nel caso di Adobe Commerce Cloud, si tratta del servizio [!DNL Fastly].
 
 ## [!UICONTROL HIT rate]
 

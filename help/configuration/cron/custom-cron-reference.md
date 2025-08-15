@@ -149,4 +149,4 @@ Per disabilitare il processo cron `visitor_clean`, creare un modulo personalizza
 ...
 ```
 
-Ora, il processo cron `visitor_clean` è stato impostato per essere eseguito alle 00:00 del 30 febbraio, in una data che non si verificherà mai.
+Ora il processo cron `visitor_clean` è stato impostato per essere eseguito alle 00:00 del 30 febbraio, in una data che non si verificherà mai.

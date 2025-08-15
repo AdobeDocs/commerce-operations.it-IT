@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # Configurazione del motore di ricerca
 
-Questa sezione descrive le impostazioni minime che è necessario scegliere per testare Elasticsearch o OpenSearch con implementazioni locali di Adobe Commerce.
+Questa sezione descrive le impostazioni minime che è necessario scegliere per testare Elasticsearch o OpenSearch con le distribuzioni locali di Adobe Commerce.
 
 >[!TIP]
 >
 >Nelle versioni 2.4.4 e 2.4.3-p2, tutti i campi con etichetta **Elasticsearch** si applicano anche a OpenSearch.
->Quando nella versione 2.4.6 è stato introdotto il supporto per l’Elasticsearch 8.x, sono state create nuove etichette per distinguere tra le configurazioni di Elasticsearch e OpenSearch.
+>>Quando è stato introdotto il supporto per Elasticsearch 8.x nella versione 2.4.6, sono state create nuove etichette per distinguere tra le configurazioni di Elasticsearch e OpenSearch.
 
-Per ulteriori dettagli sulla configurazione del motore di ricerca, consulta la [Guida utente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=it).
+Per ulteriori dettagli sulla configurazione del motore di ricerca, consulta la [Guida utente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Configurare il motore di ricerca dall’amministratore
 
@@ -41,7 +41,7 @@ Per configurare il sistema per l&#39;utilizzo di Elasticsearch o OpenSearch:
    | **[!UICONTROL Server Port]** | Immettere la porta proxy del server Web. Il valore predefinito è 9200<br>Adobe Commerce sull&#39;infrastruttura cloud: ottieni questo valore dal sistema di integrazione. |
    | **[!UICONTROL Index Prefix]** | Immetti il prefisso dell’indice del motore di ricerca. Se si utilizza una singola istanza per più installazioni di Commerce (ambienti di staging e produzione), è necessario specificare un prefisso univoco per ogni installazione. In caso contrario, è possibile utilizzare il prefisso predefinito magento2. |
    | **[!UICONTROL Enable HTTP Auth]** | Fare clic su **[!UICONTROL Yes]** solo se è stata abilitata l&#39;autenticazione per il server del motore di ricerca. In tal caso, fornisci un nome utente e una password nei campi forniti. |
-   | **[!UICONTROL Server Timeout]** | Immettere il tempo di attesa (in secondi) durante il tentativo di stabilire una connessione al server Elasticsearch o OpenSearch. |
+   | **[!UICONTROL Server Timeout]** | Immetti il tempo di attesa (in secondi) durante il tentativo di stabilire una connessione al server Elasticsearch o OpenSearch. |
 
 1. Fare clic su **[!UICONTROL Test Connection]**.
 

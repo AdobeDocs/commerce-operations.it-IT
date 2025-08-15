@@ -61,7 +61,7 @@ Gli errori critici vengono generati quando il codice personalizzato fa riferimen
 | 5002 | Il tag PHP di apertura deve essere il primo contenuto del file | Assicurati che nel file non sia presente alcun contenuto prima del tag di apertura PHP. |
 | 5003 | La funzione è diventata obsoleta | Utilizza un sostituto suggerito nel messaggio di errore. Se il messaggio non suggerisce una sostituzione, è necessario un esame approfondito per selezionare una funzione o un’implementazione alternativa. |
 | 5005 | Errore di sintassi PHP | Il codice deve essere aggiornato per rispettare gli standard di sintassi PHP. |
-| 5072 | Possibile violazione di progettazione del Magento 2. È stata rilevata una tipica costruzione Magento 1.x | Aggiornare la costruzione agli standard del Magento 2. |
+| 5072 | Possibile violazione della progettazione di Magento 2. È stata rilevata una tipica costruzione Magento 1.x | Aggiornamento della costruzione agli standard Magento 2. |
 | 5076 | Impossibile utilizzare nello spazio dei nomi perché è riservato a partire da PHP 7 | Sostituisci la parola riservata nello spazio dei nomi con una parola chiave non riservata. |
 | 5077 | Impossibile utilizzare come nome di classe perché è riservato a partire da PHP 7 | Sostituire il nome della classe riservata con un nome non riservato. |
 

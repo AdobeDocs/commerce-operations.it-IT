@@ -5,7 +5,7 @@ feature: Install
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
    - File system {#file-system}
       - [Panoramica](prerequisites/file-system/overview.md)
       - [Configurare le autorizzazioni](prerequisites/file-system/configure-permissions.md)
-   - Server Web {#web-server}
+   - Server web {#web-server}
       - [Nginx](prerequisites/web-server/nginx.md)
       - [Apache](prerequisites/web-server/apache.md)
    - Server di database {#database-server}
@@ -38,16 +38,16 @@ ht-degree: 2%
    - [Software opzionale](prerequisites/optional-software.md)
 - [Installazione rapida](composer.md)
 - [Installazione avanzata](advanced.md)
-- Passaggi dell&#39;installazione di Post {#next-steps}
+- Passaggi successivi all’installazione {#next-steps}
    - [Verificare l&#39;installazione](next-steps/verify.md)
    - [Configurare l’applicazione](next-steps/configuration.md)
    - [Impostare una maschera (facoltativo)](next-steps/set-umask.md)
-   - Installa dati di esempio (facoltativo) {#sample-data}
+   - Installare i dati di esempio (facoltativo) {#sample-data}
       - [Panoramica](sample-data/overview.md)
       - [Scarica pacchetti Compositore](sample-data/composer-packages.md)
       - [Clona archivi Git](sample-data/git-repositories.md)
       - [Rimuovere o aggiornare i moduli](sample-data/remove-or-update.md)
-- Tutorials {#tutorials}
+- Tutorial {#tutorials}
    - [Backup e rollback del file system, dei supporti e del database](tutorials/backup.md)
    - [Controllare lo stato del database](tutorials/database-status.md)
    - [Configurare il comportamento del consumatore dei messaggi](tutorials/message-consumers.md)
@@ -67,4 +67,4 @@ ht-degree: 2%
    - [Disinstallare o reinstallare Commerce](tutorials/uninstall.md)
    - [Disinstalla temi](tutorials/themes.md)
    - [Aggiornare lo schema del database](tutorials/database-upgrade.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -76,7 +76,7 @@ Ricorda che l&#39;obiettivo del bundling [!DNL JavaScript] è di ridurre il nume
 
 Un modo per ottenere questo risultato è definire i bundle per tipo di pagina. È possibile categorizzare le pagine di [!DNL Commerce] in diversi tipi di pagina, tra cui Categoria, Prodotto, CMS, Cliente, Carrello e Pagamento. Ogni pagina categorizzata in uno di questi tipi di pagina ha un set diverso di dipendenze del modulo RequireJS. Quando si raggruppano i moduli RequireJS per tipo di pagina, si otterrà solo una manciata di bundle che coprono le dipendenze di qualsiasi pagina del negozio.
 
-Ad esempio, potresti ottenere un bundle per le dipendenze comuni a tutte le pagine, un bundle per le pagine solo CMS, un bundle per le pagine solo catalogo, un altro bundle per le pagine solo ricerca e un bundle per le pagine Pagamento.
+Ad esempio, potresti ottenere un bundle per le dipendenze comuni a tutte le pagine, un bundle per le pagine solo CMS, un bundle per le pagine solo Catalog, un altro bundle per le pagine solo Search e un bundle per le pagine Checkout.
 
 Puoi anche creare bundle in base allo scopo: per caratteristiche comuni, funzioni relative ai prodotti, funzioni di spedizione, funzioni di pagamento, imposte e convalide di moduli. Sta a te definire come definire i bundle e la struttura del tuo negozio. Potresti notare che alcune strategie di bundling funzionano meglio di altre.
 
@@ -149,7 +149,7 @@ In questo file sono disponibili più voci per ciascuno dei nodi di configurazion
 })
 ```
 
-#### 4. Aggiungi un nodo di moduli
+#### &#x200B;4. Aggiungi un nodo di moduli
 
 Alla fine del file `build.js`, aggiungi l&#39;array module[] come segnaposto per i bundle che definirai per la vetrina in un secondo momento.
 
@@ -167,7 +167,7 @@ Alla fine del file `build.js`, aggiungi l&#39;array module[] come segnaposto per
 })
 ```
 
-#### 5. Recuperare le dipendenze RequireJS
+#### &#x200B;5. Recuperare le dipendenze RequireJS
 
 Puoi recuperare tutte le dipendenze del modulo [!DNL RequireJS] dai tipi di pagina del tuo store utilizzando:
 
@@ -230,7 +230,7 @@ Object.keys(window.require.s.contexts._.defined)
 
 Questo comando (utilizzato nello script [!DNL PhantomJS]) crea lo stesso elenco di dipendenze [!DNL RequireJS] e le visualizza nella console del browser. Lo svantaggio di questo approccio è che dovrai creare un pacchetto personalizzato o file di testo di tipo pagina.
 
-#### 6. Formattare e filtrare l’output
+#### &#x200B;6. Formattare e filtrare l’output
 
 Dopo aver unito le dipendenze [!DNL RequireJS] in file di testo di tipo pagina, è possibile utilizzare il comando seguente in ogni file di dipendenza di tipo pagina per sostituire le virgole nei file con nuove righe:
 
@@ -250,7 +250,7 @@ sed -i -e 's/mixins\!.*$//g' bundle/product.txt
 ...
 ```
 
-#### 7. Identificare bundle univoci e comuni
+#### &#x200B;7. Identificare bundle univoci e comuni
 
 L&#39;obiettivo è creare un bundle comune di [!DNL JavaScript] file necessari per tutte le pagine. In questo modo il browser deve caricare solo il bundle comune insieme a uno o più tipi di pagina specifici.
 
@@ -285,7 +285,7 @@ L’output mostra solo tre tipi di pagina (home page, categoria e prodotto), che
 
 Questo ci dice che probabilmente possiamo migliorare le velocità di caricamento delle pagine del nostro negozio suddividendo le nostre dipendenze in un bundle diverso, una volta che sappiamo quali tipi di pagina hanno bisogno di quali dipendenze.
 
-#### 8. Creare un file di distribuzione delle dipendenze
+#### &#x200B;8. Creare un file di distribuzione delle dipendenze
 
 Per individuare i tipi di pagina necessari per le dipendenze, creare un nuovo file nella directory principale [!DNL Commerce] denominata `deps-map.sh` e copiarlo nel codice seguente:
 
@@ -333,7 +333,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 Queste informazioni sono sufficienti per creare una configurazione di bundle.
 
-#### 9. Creare bundle nel file build.js
+#### &#x200B;9. Creare bundle nel file build.js
 
 Apri il file di configurazione `build.js` e aggiungi i bundle al nodo `modules`. Ogni bundle deve definire le seguenti proprietà:
 
@@ -380,7 +380,7 @@ In questo esempio vengono riutilizzate `mage/bootstrap` e `requirejs/require` ri
 
 I passaggi seguenti descrivono il processo di base per la generazione di bundle [!DNL Commerce] più efficienti. Puoi automatizzare questo processo come preferisci, ma dovrai comunque utilizzare `nodejs` e `r.js` per generare effettivamente i bundle. E se i temi hanno personalizzazioni relative a [!DNL JavaScript] e non possono riutilizzare lo stesso file `build.js`, potrebbe essere necessario creare diverse `build.js` configurazioni per tema.
 
-#### 1. Generare siti di archiviazione statici
+#### &#x200B;1. Generare siti di archiviazione statici
 
 Prima di generare i bundle, esegui il comando di distribuzione statica:
 
@@ -397,7 +397,7 @@ Questo comando genera distribuzioni statiche dell&#39;archivio per ogni tema e l
 
 Per generare bundle per tutti i temi e le impostazioni internazionali dello store, ripeti i passaggi seguenti per ciascun tema e ciascuna impostazione locale dello store.
 
-#### 2. Spostare il contenuto dell&#39;archivio statico in una directory temporanea
+#### &#x200B;2. Spostare il contenuto dell&#39;archivio statico in una directory temporanea
 
 Innanzitutto, devi spostare il contenuto statico dalla directory di destinazione ad una directory temporanea perché RequireJS sostituisce tutto il contenuto all’interno della directory di destinazione.
 
@@ -411,7 +411,7 @@ Ad esempio:
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp
 ```
 
-#### 3. Eseguire r.js optimizer
+#### &#x200B;3. Eseguire r.js optimizer
 
 Eseguire quindi r.js optimizer sul file `build.js` dalla directory radice di [!DNL Commerce]. I percorsi di tutte le directory e dei file sono relativi alla directory di lavoro.
 
@@ -438,7 +438,7 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 -rw-r--r--  1 root root   74233 Mar 28 11:24 shipping.js
 ```
 
-#### 4. Configurare RequireJS per l’utilizzo dei bundle
+#### &#x200B;4. Configurare RequireJS per l’utilizzo dei bundle
 
 Per ottenere RequireJS per utilizzare i bundle, aggiungi un callback `onModuleBundleComplete` dopo il nodo `modules` nel file `build.js`:
 
@@ -474,7 +474,7 @@ require.config({});
 }
 ```
 
-#### 5. Rieseguire il comando di distribuzione
+#### &#x200B;5. Rieseguire il comando di distribuzione
 
 Esegui il comando seguente per distribuire:
 
@@ -497,7 +497,7 @@ require.config({
 >
 >Durante la configurazione dei bundle, assicurati di inserire le chiamate `requirejs.config()` nell&#39;ordine in cui desideri che vengano eseguite, in quanto le chiamate vengono eseguite nell&#39;ordine in cui compaiono.
 
-#### 6. Verificare i risultati
+#### &#x200B;6. Verificare i risultati
 
 Una volta caricata la pagina, noterai che il browser sta caricando diverse dipendenze e bundle. Ad esempio, di seguito sono riportati i risultati per il profilo &quot;Slow 3G&quot;:
 
@@ -505,7 +505,7 @@ Una volta caricata la pagina, noterai che il browser sta caricando diverse dipen
 
 Il tempo di caricamento della pagina per una home page vuota è ora il doppio rispetto all&#39;utilizzo del bundling nativo [!DNL Commerce]. Ma possiamo fare ancora meglio.
 
-#### 7. Ottimizzare i bundle
+#### &#x200B;7. Ottimizzare i bundle
 
 Anche se sono compressi, i file [!DNL JavaScript] sono ancora grandi. Minimizzarli con RequireJS, che utilizza un uglifier per minimizzare [!DNL JavaScript] e ottenere buoni risultati.
 

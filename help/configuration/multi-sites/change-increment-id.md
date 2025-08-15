@@ -28,7 +28,7 @@ Potrebbe essere necessario modificare l&#39;ID incremento per le nuove entità D
 
 >[!INFO]
 >
->Puoi anche risolvere il problema del gateway di pagamento per PayPal consentendo più pagamenti per ID fattura nelle Preferenze di ricezione pagamento di PayPal. Vedi [Richiesta rifiutata dal gateway PayPal - problema fattura duplicata](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=it) nella _Knowledge Base_.
+>Puoi anche risolvere il problema del gateway di pagamento per PayPal consentendo più pagamenti per ID fattura nelle Preferenze di ricezione pagamento di PayPal. Vedi [Richiesta rifiutata dal gateway PayPal - problema fattura duplicata](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) nella _Knowledge Base_.
 
 ## Passaggi preliminari
 

@@ -1,5 +1,5 @@
 ---
-title: Scheda  [!DNL QuickView]
+title: 'Scheda  [!DNL QuickView] '
 description: Nella scheda  [!DNL QuickView]  sono illustrati i diversi tipi di avviso visualizzati, inclusi quelli con spazio su disco insufficiente e utilizzo del server.
 exl-id: 34405f9b-30de-4fab-acca-64a8e308ca90
 feature: Configuration, Observability
@@ -30,4 +30,4 @@ Il frame **[!UICONTROL Upsize / Downsize by node]** mostra gli upsize e i downsi
 
 ![Utilizzo CPU](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
 
-Il frame **[!UICONTROL CPU Utilization]** mostra l&#39;utilizzo della CPU da parte dei nodi nel periodo di tempo selezionato.
+Il frame **[!UICONTROL CPU Utilization]** mostra l&#39;utilizzo del CPU da parte dei nodi nell&#39;intervallo temporale selezionato.

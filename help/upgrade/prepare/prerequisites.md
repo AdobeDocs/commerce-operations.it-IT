@@ -1,6 +1,6 @@
 ---
-title: Tutte le applicazioni Prerequisiti
-description: Prepara il progetto Adobe Systems Commerce per un aggiornamento completando questi passaggi prerequisiti.
+title: Prerequisiti completi
+description: Prepara il tuo progetto Adobe Commerce per un aggiornamento completando questi passaggi preliminari.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
 source-git-commit: df185e21f918d32ed5033f5db89815b5fc98074f
 workflow-type: tm+mt
@@ -9,16 +9,16 @@ ht-degree: 0%
 
 ---
 
-# Tutte le applicazioni prerequisiti per l&#39;aggiornamento
+# Completare i prerequisiti per l’aggiornamento
 
-È importante comprendere ciò che è necessario per eseguire Adobe Systems Commerce. È innanzitutto necessario esaminare i [requisiti di sistema](../../installation/system-requirements.md) per la versione che si desidera aggiornare.
+È importante comprendere cosa è necessario per eseguire Adobe Commerce. È innanzitutto necessario esaminare i [requisiti di sistema](../../installation/system-requirements.md) per la versione che si desidera aggiornare.
 
 Dopo aver esaminato i requisiti di sistema, è necessario completare i seguenti prerequisiti prima di aggiornare il sistema:
 
 * Aggiorna tutto il software
 * Verificare che sia installato un motore di ricerca supportato
 * Converti formato tabella database
-* Impostare il limite dei file aperti
+* Imposta il limite di file aperti
 * Verificare che i processi cron siano in esecuzione
 * Imposta `DATA_CONVERTER_BATCH_SIZE`
 * Verificare le autorizzazioni del file system
@@ -33,7 +33,7 @@ Assicurati di aver aggiornato tutti i requisiti di sistema e le dipendenze nell�
 
 >[!NOTE]
 >
->Per i progetti Adobe Commerce su infrastruttura cloud Pro, è necessario creare un ticket [Supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#submit-ticket) per installare o aggiornare i servizi negli ambienti di staging e produzione. Indicare le modifiche necessarie al servizio e includere nel ticket i file `.magento.app.yaml` e `services.yaml` aggiornati e la versione PHP. L’aggiornamento del progetto da parte del team di infrastruttura Cloud può richiedere fino a 48 ore. Consulta [Software e servizi supportati](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=it#supported-software-and-services).
+>Per i progetti Adobe Commerce su infrastruttura cloud Pro, è necessario creare un ticket [Supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) per installare o aggiornare i servizi negli ambienti di staging e produzione. Indicare le modifiche necessarie al servizio e includere nel ticket i file `.magento.app.yaml` e `services.yaml` aggiornati e la versione PHP. L’aggiornamento del progetto da parte del team di infrastruttura Cloud può richiedere fino a 48 ore. Consulta [Software e servizi supportati](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## Verificare che sia installato un motore di ricerca supportato
 
@@ -99,7 +99,7 @@ Per aggiornare correttamente MySQL dalla versione 8.0 alla versione 8.4, è nece
    >
    >Se non si modifica il valore di `restrict_fk_on_non_standard_key` in `OFF`, verrà visualizzato il seguente errore durante l&#39;importazione:
    >
-   >```sql
+   ```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Riavviare il server MySQL.
@@ -126,11 +126,11 @@ Prima di eseguire l’aggiornamento a 2.4.0, è necessario installare e configur
 
 Consulta [Aggiornamento di Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) per istruzioni complete sul backup dei dati, l&#39;individuazione di potenziali problemi di migrazione e il test degli aggiornamenti prima della distribuzione in produzione. A seconda della versione corrente di Elasticsearch, potrebbe essere necessario o meno un riavvio completo del cluster.
 
-Elasticsearch richiede Java Development Kit (JDK) 1.8 o versione successiva. Consultate [Installare Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
+Elasticsearch richiede Java Development Kit (JDK) 1.8 o versione successiva. Consulta [Installare Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
 
-#### Ricerca aperta
+#### OpenSearch
 
-OpenSearch è un fork open source di Elasticsearch 7.10.2, in seguito al cambio di licenza di Elasticsearch. Le seguenti versioni di Adobe Systems Commerce introducono il supporto per OpenSearch:
+OpenSearch è un fork open-source di Elasticsearch 7.10.2, a seguito della modifica delle licenze di Elasticsearch. Nelle seguenti versioni di Adobe Commerce è stato introdotto il supporto per OpenSearch:
 
 * 2.4.6 (OpenSearch ha un modulo e impostazioni separati)
 * 2.4.5.
@@ -140,7 +140,7 @@ OpenSearch è un fork open source di Elasticsearch 7.10.2, in seguito al cambio 
 
 Puoi [migrare da Elasticsearch a OpenSearch](opensearch-migration.md) solo se esegui l&#39;aggiornamento a una versione di Adobe Commerce elencata sopra (o successiva).
 
-OpenSearch richiede JDK 1.8 o superiore. Consulta [Installare Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
+OpenSearch richiede JDK 1.8 o versione successiva. Consulta [Installare Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
 
 [Configurazione del motore di ricerca](../../configuration/search/configure-search-engine.md) descrive le attività da eseguire dopo la modifica dei motori di ricerca.
 
@@ -287,13 +287,13 @@ Per impostare il valore nella shell Bash:
 
 ## Verificare che i processi cron siano in esecuzione
 
-L&#39;Utilità di pianificazione UNIX `cron` è fondamentale per le operazioni quotidiane di Adobe Commerce. Pianifica elementi come reindicizzazione, newsletter, e-mail e sitemap. Diverse funzioni richiedono almeno un cron job in esecuzione come file system proprietario.
+L&#39;Utilità di pianificazione UNIX `cron` è fondamentale per le operazioni quotidiane di Adobe Commerce. Pianifica elementi come reindicizzazione, newsletter, e-mail e sitemap. Diverse funzionalità richiedono almeno un processo cron in esecuzione come proprietario del file system.
 
-Per verificare che il tuo cron job sia impostato correttamente, controlla il crontab inserendo il seguente comando come file system proprietario:
+Per verificare che il processo cron sia configurato correttamente, controllare la scheda cronica immettendo il comando seguente come proprietario del file system:
 
 >[!NOTE]
 >
->Il crontab è il file di configurazione responsabile dell&#39;esecuzione dei cron job.
+>Crontab è il file di configurazione responsabile dell&#39;esecuzione dei processi cron.
 
 ```bash
 crontab -l
@@ -307,7 +307,7 @@ Dovrebbero essere visualizzati risultati simili ai seguenti:
 #~ MAGENTO END c5f9e5ed71cceaabc4d4fd9b3e827a2b
 ```
 
-Un altro sintomo di cron non in esecuzione è il seguente errore nell&#39;amministratore:
+Un altro sintomo di cron non in esecuzione è il seguente errore in Admin:
 
 ![Messaggi di sistema - cron non in esecuzione](../../assets/upgrade-guide/cron-not-running.png)
 
@@ -319,7 +319,7 @@ Per ulteriori informazioni, vedere [Configurare ed eseguire cron](../../configur
 
 ## Imposta DATA_CONVERTER_BATCH_SIZE
 
-Adobe Systems Commerce 2.4 include miglioramenti della sicurezza che richiedono la conversione di alcuni dati da serializzati a JSON. Questa conversione si verifica durante l&#39;aggiornamento e può richiedere molto tempo, a seconda della quantità di dati presenti nel database.
+Adobe Commerce 2.4 include miglioramenti della sicurezza che richiedono la conversione di alcuni dati da serializzati a JSON. Questa conversione si verifica durante l’aggiornamento e può richiedere molto tempo, a seconda della quantità di dati presenti nel database.
 
 Le tabelle seguenti sono quelle maggiormente interessate:
 
@@ -348,7 +348,7 @@ Per impostare la variabile di ambiente:
    >
    > `DATA_CONVERTER_BATCH_SIZE` richiede memoria; evitare di impostarla su un valore elevato (circa 1 GB) senza prima testarla.
 
-1. Al termine dell&#39;aggiornamento, è possibile annullare la configurazione della variabile:
+1. Al termine dell’aggiornamento, puoi annullare l’impostazione della variabile:
 
    ```bash
    unset DATA_CONVERTER_BATCH_SIZE
@@ -356,9 +356,9 @@ Per impostare la variabile di ambiente:
 
 ## Verificare le autorizzazioni del file system
 
-Per motivi di sicurezza, Adobe Systems Commerce richiede determinate autorizzazioni sul file system. Le autorizzazioni sono diverse dalla _[proprietà](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. La proprietà determina chi può eseguire azioni sul file system; Le autorizzazioni determinano le operazioni che la utente può eseguire.
+Per motivi di sicurezza, Adobe Commerce richiede determinate autorizzazioni sul file system. Le autorizzazioni sono diverse da _[proprietà](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. La proprietà determina chi può eseguire azioni sul file system; le autorizzazioni determinano ciò che l’utente può fare.
 
-Le directory nel file system devono essere scrivibili dal [gruppo di proprietario del](../../installation/prerequisites/file-system/overview.md) file system.
+Le directory nel file system devono essere scrivibili dal gruppo [ del proprietario del file system ](../../installation/prerequisites/file-system/overview.md).
 
 Per verificare che le autorizzazioni del file system siano impostate correttamente, accedere al server applicazioni o utilizzare l&#39;applicazione di gestione file del provider di hosting.
 

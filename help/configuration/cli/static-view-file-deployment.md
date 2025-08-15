@@ -83,7 +83,7 @@ Nella tabella seguente vengono illustrati i parametri e i valori di questo coman
 
 Di seguito sono riportati alcuni comandi di esempio.
 
-### Esclusione di un tema e minimizzazione dei HTML
+### Esclusione di un tema e minimizzazione di HTML
 
 Il comando seguente distribuisce il contenuto statico per la lingua inglese statunitense (`en_US`), esclude il tema Luma fornito con Commerce e non minimizza i file HTML.
 

@@ -38,7 +38,7 @@ Determinare se l&#39;esecuzione delle query MySQL è lenta. A seconda del piano 
 Se il progetto Adobe Commerce è implementato su un’architettura Pro, puoi utilizzare Percona Toolkit per analizzare le query.
 
 1. Eseguire il comando `pt-query-digest --type=slowlog` nei registri query lente MySQL.
-   * Per trovare il percorso dei registri di query lente, consulta **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) nella documentazione per gli sviluppatori.
+   * Per trovare il percorso dei registri di query lente, consulta **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) nella documentazione per gli sviluppatori.
    * Consulta la documentazione di [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest).
 1. In base ai problemi rilevati, procedi alla correzione della query in modo che venga eseguita più rapidamente.
 

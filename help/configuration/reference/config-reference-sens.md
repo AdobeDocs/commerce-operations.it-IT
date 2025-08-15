@@ -143,7 +143,7 @@ Questi valori di configurazione sono disponibili nell&#39;amministratore in **Ar
 | Nome Utente Solr Server | `catalog/search/solr_server_username` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) | | ![Specifico per sistema](/help/assets/configuration/cloud-env.png) | ![Sensibile](/help/assets/configuration/cloud-sens.png) |
 | Password server Solr | `catalog/search/solr_server_password` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) | | ![Specifico per sistema](/help/assets/configuration/cloud-env.png) | ![Sensibile](/help/assets/configuration/cloud-sens.png) |
 | Percorso server Solr | `catalog/search/solr_server_path` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) | | ![Specifico per sistema](/help/assets/configuration/cloud-env.png) | ![Sensibile](/help/assets/configuration/cloud-sens.png) |
-| Nome host server di Elasticsearch | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Specifico per sistema](/help/assets/configuration/cloud-env.png) | ![Sensibile](/help/assets/configuration/cloud-sens.png) |
+| Nome host server Elasticsearch | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Specifico per sistema](/help/assets/configuration/cloud-env.png) | ![Sensibile](/help/assets/configuration/cloud-sens.png) |
 | Porta server Elasticsearch | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Specifico per sistema](/help/assets/configuration/cloud-env.png) | ![Sensibile](/help/assets/configuration/cloud-sens.png) |
 | Prefisso indice Elasticsearch | `catalog/search/elasticsearch_index_prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Specifico per sistema](/help/assets/configuration/cloud-env.png) | ![Sensibile](/help/assets/configuration/cloud-sens.png) |
 | Abilita autenticazione HTTP Elasticsearch | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Specifico per sistema](/help/assets/configuration/cloud-env.png) |
@@ -464,7 +464,7 @@ In questa sezione sono elencati i nomi delle variabili e i percorsi di configura
 
 {style="table-layout:auto"}
 
-### Braintree percorsi sensibili e specifici del sistema
+### Percorsi sensibili a Braintree e specifici del sistema
 
 | Nome | Percorso configurazione | Solo Commerce? | Crittografato? | Specifico per il sistema? | Sensibili? |
 |--------------|--------------|--------------|--------------|--------------|--------------|

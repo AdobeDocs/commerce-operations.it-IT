@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-63244: risoluzione dei problemi di JavaScript del pannello di amministrazione, inclusi  [!DNL Google Maps]  errori di rendering e console'
-description: La patch ACSD-63244 risolve i diversi problemi di JavaScript nel pannello di amministrazione, inclusi i problemi relativi al rendering di  [!DNL Google Maps]  e al ricorrente errore di tipo "Uncovered TypeError"._each is not a function&grave; errors (ciascuno non è una funzione) nella console del browser.
+description: La patch ACSD-63244 risolve i diversi problemi di JavaScript nel pannello di amministrazione, inclusi i problemi relativi al rendering di  [!DNL Google Maps]  e al ricorrente errore di tipo "Uncovered TypeError"._each is not a function` errors (ciascuno non è una funzione) nella console del browser.
 feature: Admin Workspace
 role: Admin, Developer
 exl-id: 1985c845-219e-4af4-8f70-62dd57722494
@@ -28,7 +28,7 @@ Adobe Commerce (tutti i metodi di implementazione) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -63,7 +63,7 @@ Uncaught TypeError: this._each is not a function
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

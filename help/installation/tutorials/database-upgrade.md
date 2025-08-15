@@ -23,7 +23,7 @@ Ogni volta che si esegue un&#39;azione che causa la modifica dello schema o dei 
 
 >[!NOTE]
 >
->Un *componente* può essere un modulo, un tema o un Language Pack; non importa se il componente proviene o meno dalla Commerce Marketplace.
+>Un *componente* può essere un modulo, un tema o un Language Pack; non importa se il componente proviene da Commerce Marketplace o meno.
 
 1. Avvia l&#39;aggiornamento:
 

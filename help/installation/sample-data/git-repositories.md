@@ -11,18 +11,18 @@ ht-degree: 0%
 
 # Clona i dati di esempio Git archivi
 
-Questo argomento illustra come clonare e aggiungere dati di esempio se hai clonato l’archivio GitHub di Magento Open Source. Questo metodo è destinato solo agli sviluppatori che contribuiscono (ovvero, gli sviluppatori che pianificano di contribuire alla base di codice del Magento Open Source).
+Questo argomento illustra come clonare e aggiungere dati di esempio se hai clonato l’archivio GitHub di Magento Open Source. Questo metodo è destinato solo agli sviluppatori che contribuiscono (ovvero, gli sviluppatori che hanno intenzione di contribuire alla base di codice di Magento Open Source).
 
 Se non sei uno sviluppatore, scegli una delle altre opzioni visualizzate nel sommario sul lato sinistro della pagina.
 
 Gli sviluppatori che collaborano possono utilizzare questo metodo per installare i dati di esempio *solo* se si verifica quanto segue:
 
-* Usa il Magento Open Source
+* Utilizzi Magento Open Source
 * Hai [clonato l&#39;archivio GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 >[!WARNING]
 >
->È possibile utilizzare dati di esempio con il ramo `develop` (più corrente) o con un ramo rilasciato (ad esempio `2.4` (più stabile)). È consigliabile utilizzare un ramo rilasciato perché è più stabile. Se si sta contribuendo codice all&#39;archivio e si desidera il codice più recente, utilizzare il ramo `develop`. Indipendentemente dal ramo scelto, è necessario [clonare](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) il ramo corrispondente dell&#39;archivio GitHub di Magento Open Source. I dati di esempio per il ramo `develop`, ad esempio, possono essere utilizzati *solo* con il ramo `develop` del Magento Open Source.
+>È possibile utilizzare dati di esempio con il ramo `develop` (più corrente) o con un ramo rilasciato (ad esempio `2.4` (più stabile)). È consigliabile utilizzare un ramo rilasciato perché è più stabile. Se si sta contribuendo codice all&#39;archivio e si desidera il codice più recente, utilizzare il ramo `develop`. Indipendentemente dal ramo scelto, è necessario [clonare](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) il ramo corrispondente dell&#39;archivio GitHub di Magento Open Source. Ad esempio, i dati di esempio per il ramo `develop` possono essere utilizzati *solo* con il ramo `develop` di Magento Open Source.
 
 ## Clonare l’archivio dati di esempio
 
@@ -159,7 +159,7 @@ Per clonare l’archivio GitHub dei dati di esempio utilizzando il protocollo HT
 
 ## Impostare le autorizzazioni e la proprietà del file system
 
-Poiché lo script `php build-sample-data.php` crea collegamenti simbolici tra l&#39;archivio dati di esempio e l&#39;archivio di Magento Open Source, è necessario impostare le autorizzazioni e la proprietà del file system nell&#39;archivio dati di esempio. In caso contrario, si verificheranno errori durante l’accesso alla vetrina.
+Poiché lo script `php build-sample-data.php` crea collegamenti simbolici tra l&#39;archivio dati di esempio e l&#39;archivio Magento Open Source, è necessario impostare le autorizzazioni e la proprietà del file system nell&#39;archivio dati di esempio. In caso contrario, si verificheranno errori durante l’accesso alla vetrina.
 
 Per impostare le autorizzazioni e la proprietà del file system nell&#39;archivio dati di esempio:
 

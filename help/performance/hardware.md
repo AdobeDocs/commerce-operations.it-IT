@@ -1,5 +1,5 @@
 ---
-title: Recommendations hardware
+title: Consigli hardware
 description: Rivedi un elenco di componenti hardware consigliati relativi alle prestazioni ottimali delle implementazioni Adobe Commerce.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
@@ -26,7 +26,7 @@ Se prevedi che il carico di un negozio cambi, puoi aumentare manualmente il nume
 
 ### PHP
 
-Il Magento ha requisiti di memoria PHP diversi, in base alla modalità di distribuzione.  In generale, se si sta configurando un singolo archivio server, si consiglia di configurare la memoria PHP per 2G.  Se imposti un sito utilizzando la distribuzione della pipeline, consigliamo 2 GB sul server di build e 1 GB sui nodi web.
+Magento ha diversi requisiti di memoria PHP, in base alla modalità di distribuzione del sistema.  In generale, se si sta configurando un singolo archivio server, si consiglia di configurare la memoria PHP per 2G.  Se imposti un sito utilizzando la distribuzione della pipeline, consigliamo 2 GB sul server di build e 1 GB sui nodi web.
 
 Scenari e requisiti di memoria PHP previsti:
 

@@ -20,7 +20,7 @@ Questa pagina fornisce una panoramica dell’installazione di Adobe Commerce sul
 >
 >Per procedere correttamente, devi disporre di conoscenze tecniche intermedie e di accesso al server.
 
-L&#39;installazione crea un archivio Adobe Commerce completamente funzionante con una [vetrina per il cliente](https://experienceleague.adobe.com/it/docs/commerce-admin/start/storefront/storefront) e un [pannello amministrativo](https://experienceleague.adobe.com/it/docs/commerce-admin/start/admin/admin). Prima di iniziare il processo, è necessario disporre delle credenziali del database, delle informazioni sul dominio e delle chiavi di autenticazione.
+L&#39;installazione crea un archivio Adobe Commerce completamente funzionante con una [vetrina per il cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) e un [pannello amministrativo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Prima di iniziare il processo, è necessario disporre delle credenziali del database, delle informazioni sul dominio e delle chiavi di autenticazione.
 
 ## Flusso di lavoro
 

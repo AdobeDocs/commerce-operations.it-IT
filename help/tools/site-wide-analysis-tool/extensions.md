@@ -31,4 +31,4 @@ La scheda [!DNL Extensions] in [!DNL Site-Wide Analysis Tool] fornisce informazi
 
 * Se non riesci a mantenere aggiornato [!DNL extensions] di terze parti alle versioni più recenti, puoi utilizzare [!DNL extensions] diverso.
 
-* Per evitare potenziali problemi, scarica/acquista [!DNL extensions] di terze parti da un&#39;origine attendibile, ad esempio [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+* Per evitare potenziali problemi, scaricare/acquistare [!DNL extensions] di terze parti da un&#39;origine attendibile, ad esempio [Commerce Marketplace](https://marketplace.magento.com/extensions.html).

@@ -14,11 +14,11 @@ ht-degree: 0%
 
 In generale, _stopwords_ sono parole comuni che i motori di ricerca filtrano dopo l&#39;elaborazione del testo. In origine, quando lo spazio su disco e la memoria erano estremamente limitati, ogni kilobyte risparmiato significava un miglioramento significativo delle prestazioni. Pertanto, i motori di ricerca hanno ottenuto miglioramenti delle prestazioni ignorando determinate parole e mantenendo piccolo l’indice.
 
-Anche se oggi abbiamo più storage, le prestazioni sono ancora importanti. Elasticsearch e OpenSearch, come altri motori di ricerca, utilizzano ancora i termini di arresto per migliorare le prestazioni.
+Anche se oggi abbiamo più storage, le prestazioni sono ancora importanti. Elasticsearch e OpenSearch, come altri motori di ricerca, usano ancora i termini di arresto per migliorare le prestazioni.
 
 È necessario gestire le parole non significative utilizzando i file CSV che si trovano nella directory `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` o nella directory `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`, a seconda di come è stato installato il software Commerce.
 
-Per ulteriori informazioni sull&#39;utilizzo di parole non significative in Elasticsearch e OpenSearch, vedere le risorse seguenti:
+Per ulteriori informazioni sull&#39;utilizzo dei termini di arresto in Elasticsearch e OpenSearch, vedere le risorse seguenti:
 
 - [Parole Chiuse: Prestazioni Rispetto A Precision](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
 - [Pro e contro di parole bloccate](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
@@ -102,11 +102,11 @@ In questa sezione viene illustrato come modificare la directory di default dei p
 - `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`
 - `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`
 
-La posizione dipende da come è stato installato il software Commerce. Se hai clonato l&#39;archivio GitHub Magento 2, il percorso si trova in `app/code`. Se è stato installato un archivio compresso o un metapacchetto, il percorso si trova in `vendor`.
+La posizione dipende da come è stato installato il software Commerce. Se hai clonato l&#39;archivio GitHub di Magento 2, il percorso si trova in `app/code`. Se è stato installato un archivio compresso o un metapacchetto, il percorso si trova in `vendor`.
 
 **Per modificare la directory**:
 
-1. Come proprietario del file system, aprire l&#39;Elasticsearch `di.xml` in un editor di testo.
+1. Come proprietario del file system, aprire Elasticsearch `di.xml` in un editor di testo.
 
    Se l&#39;archivio è stato clonato, si trova in `app/code/Magento/Elasticsearch/etc/di.xml`
 

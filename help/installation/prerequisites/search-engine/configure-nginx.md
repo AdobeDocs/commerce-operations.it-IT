@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Il supporto di OpenSearch è stato aggiunto nella versione 2.4.4. OpenSearch è un fork di Elasticsearch compatibile. Per ulteriori informazioni, vedere [Migrare l&#39;Elasticsearch a OpenSearch](../../../upgrade/prepare/opensearch-migration.md).
+>Il supporto di OpenSearch è stato aggiunto nella versione 2.4.4. OpenSearch è un fork compatibile di Elasticsearch. Per ulteriori informazioni, vedere [Migrazione da Elasticsearch a OpenSearch](../../../upgrade/prepare/opensearch-migration.md).
 
 In questa sezione viene illustrato come configurare nginx come proxy *unsecure* in modo che Adobe Commerce possa utilizzare un motore di ricerca in esecuzione su questo server. In questa sezione non viene illustrata la configurazione dell&#39;autenticazione HTTP Basic, argomento trattato in [Comunicazione sicura con nginx](#secure-communication-with-nginx).
 
@@ -89,7 +89,7 @@ Risorse aggiuntive:
 
 * [Impostare l&#39;autenticazione tramite password con Nginx su Ubuntu 14.04 (Oceano digitale)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
 * [Autenticazione HTTP Di Base Con Nginx (HowtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
-* [Esempio di configurazioni Nginx per Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
+* [Configurazioni Nginx di esempio per Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
 Per ulteriori informazioni, consulta le sezioni seguenti:
 
@@ -100,7 +100,7 @@ Per ulteriori informazioni, consulta le sezioni seguenti:
 
 ### Creare una password
 
-È consigliabile utilizzare il comando Apache `htpasswd` per codificare le password per un utente con accesso a Elasticsearch o OpenSearch (denominato `magento_elasticsearch` in questo ).
+È consigliabile utilizzare il comando Apache `htpasswd` per codificare le password per un utente con accesso ad Elasticsearch o OpenSearch (denominato `magento_elasticsearch` in questo esempio).
 
 Per creare una password:
 

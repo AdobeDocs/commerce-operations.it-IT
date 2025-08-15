@@ -17,7 +17,7 @@ Con l&#39;aumento del volume degli ordini nei siti Commerce, è possibile ottimi
 
 - **[!UICONTROL Asynchronous indexing]** - Abilitare questa opzione per evitare blocchi del database e rallentamenti dell&#39;elaborazione che possono verificarsi quando un numero elevato di ordini viene effettuato contemporaneamente.
 - **[!UICONTROL Asynchronous email notifications]** - Abilitare questa opzione per velocizzare le prestazioni di estrazione inviando le notifiche e-mail di estrazione e di elaborazione dell&#39;ordine a intervalli definiti anziché inviarle immediatamente.
-- **[!UICONTROL Enable Archiving]** - Abilitare questa opzione per migliorare le prestazioni di ordini, fatture, spedizioni e note di accredito e mantenere l&#39;area di lavoro libera da informazioni non necessarie, in modo da poter concentrarsi sulle attività correnti. Vedi [Abilita archiviazione](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+- **[!UICONTROL Enable Archiving]** - Abilitare questa opzione per migliorare le prestazioni di ordini, fatture, spedizioni e note di accredito e mantenere l&#39;area di lavoro libera da informazioni non necessarie, in modo da poter concentrarsi sulle attività correnti. Vedi [Abilita archiviazione](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ## Prodotti e versioni interessati
 
@@ -30,7 +30,7 @@ Con l&#39;aumento del volume degli ordini nei siti Commerce, è possibile ottimi
 
 I passaggi per abilitare l’elaborazione asincrona dell’ordine dipendono dalla modalità di distribuzione:
 
-- Per Adobe Commerce su infrastrutture cloud e siti locali in modalità di produzione, utilizza il seguente comando CLI di Magento per abilitare l’indicizzazione asincrona:
+- Per Adobe Commerce su infrastrutture cloud e siti locali in modalità di produzione, utilizza il seguente comando Magento CLI per abilitare l’indicizzazione asincrona:
 
   ```php
   php bin/magento config:set dev/grid/async_indexing 1
@@ -38,7 +38,7 @@ I passaggi per abilitare l’elaborazione asincrona dell’ordine dipendono dall
 
 - Per i siti Adobe Commerce locali in modalità predefinita o Produzione, abilita l’indicizzazione asincrona aggiornando la configurazione delle Impostazioni griglia in Amministratore.
 
-  Vedi [Abilitare gli aggiornamenti pianificati della griglia e la reindicizzazione](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html?lang=it#enable-scheduled-grid-updates-and-reindexing)
+  Vedi [Abilitare gli aggiornamenti pianificati della griglia e la reindicizzazione](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
 
   >[!WARNING]
   >

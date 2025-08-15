@@ -40,7 +40,7 @@ Ogni fase di sviluppo deve avere un ramo corrispondente in Git per tenere tracci
 
 >[!TIP]
 >
->I progetti Adobe Commerce su infrastrutture cloud contengono rami specifici che corrispondono a ambienti diversi. Consulta il [flusso di lavoro progetto Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=it) e il [flusso di lavoro progetto iniziale](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=it) nella _Guida a Cloud_.
+>I progetti Adobe Commerce su infrastrutture cloud contengono rami specifici che corrispondono a ambienti diversi. Consulta il [flusso di lavoro progetto Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html) e il [flusso di lavoro progetto iniziale](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html) nella _Guida a Cloud_.
 
 ## Strategie per i rami
 

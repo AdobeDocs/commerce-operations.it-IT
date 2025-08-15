@@ -15,7 +15,7 @@ Sei tra i 240.000 commercianti in tutto il mondo che hanno dato fiducia al nostr
 
 ## Come ottenere il software
 
-Controlla la disponibilità di nuove funzionalità e versioni interessanti e scopri come ottenerle nella [pagina sulla disponibilità del prodotto](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability).
+Controlla la disponibilità di nuove funzionalità e versioni interessanti e scopri come ottenerle nella [pagina sulla disponibilità del prodotto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 Per informazioni introduttive sull’installazione di Adobe Commerce, consulta la tabella seguente.
 
@@ -29,7 +29,7 @@ Per informazioni introduttive sull’installazione di Adobe Commerce, consulta l
         </tr>
     <tr>
         <td><p>Integratore, packager</p></td>
-        <td><p>Vuole il controllo completo su tutti i componenti installati, ha accesso al server applicazioni, altamente tecnico, potrebbe riconfezionare il Magento Open Source con altri componenti.</p>
+        <td><p>Vuole il controllo completo su tutti i componenti installati, ha accesso al server applicazioni, altamente tecnico, potrebbe ricompilare Magento Open Source con altri componenti.</p>
         </td>
         <td><ol><li>Crea un Compositore <em>progetto</em> contenente l'elenco dei componenti da utilizzare.</li>
             <li>Utilizza Composer per aggiornare le dipendenze del pacchetto; utilizza <code>composer create-project</code> per ottenere il metapackage Composer.</li>
@@ -39,7 +39,7 @@ Per informazioni introduttive sull’installazione di Adobe Commerce, consulta l
     </tr>
     <tr>
         <td><p>Sviluppatore partecipante</p></td>
-        <td><p>Contribuisce alla base di codice del Magento Open Source, ai file bug e personalizza l’applicazione. Estremamente tecnico, dispone di un proprio server di sviluppo, comprende Composer e GitHub.</p>
+        <td><p>Contribuisce alla base di codice di Magento Open Source, ai file bug e personalizza l’applicazione. Estremamente tecnico, dispone di un proprio server di sviluppo, comprende Composer e GitHub.</p>
             <p><em>impossibile</em> utilizzare l'applicazione in un ambiente di produzione.</p>
       <p>È necessario eseguire l'aggiornamento utilizzando <a href="../../upgrade/developer/git-installs.md">Compositore e comandi Git</a>.</p></td>
         <td><ol><li>Clona l’archivio GitHub.</li>

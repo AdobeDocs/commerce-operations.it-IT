@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Panoramica sulla distribuzione
 
-In questi argomenti viene illustrato il processo di distribuzione dell&#39;applicazione Commerce in un sito di produzione per Adobe Commerce versione 2.2 e successive. L&#39;Adobe consiglia questo metodo di distribuzione per tutti coloro che dispongono di un sito di grandi dimensioni e non desiderano subire tempi di inattività durante la distribuzione.
+In questi argomenti viene illustrato il processo di distribuzione dell&#39;applicazione Commerce in un sito di produzione per Adobe Commerce versione 2.2 e successive. Adobe consiglia questo metodo di distribuzione per tutti coloro che dispongono di un sito di grandi dimensioni e non desiderano subire tempi di inattività durante la distribuzione.
 
 Se si distribuisce Commerce in un singolo computer e si tollera alcuni tempi di inattività durante la distribuzione, vedere [Distribuzione su un singolo computer](../deployment/single-machine.md).
 
@@ -20,7 +20,7 @@ Se si distribuisce Commerce in un singolo computer e si tollera alcuni tempi di 
 
 Con la versione 2.2 di Commerce, Adobe ha introdotto la _distribuzione pipeline_ come nuovo modo di distribuire in produzione con tempi di inattività minimi. Questo processo di distribuzione si verifica su sistemi diversi e consente di mantenere configurazioni coerenti per tutti i sistemi di distribuzione della pipeline. Si tratta di un modello semplice ma potente che consente di separare le impostazioni di configurazione ordinarie dalle impostazioni specifiche del sistema (come host e porta) o dalle impostazioni sensibili (come nomi e password).
 
-Per utilizzare la distribuzione della pipeline, l’Adobe presuppone che tu sia:
+Per utilizzare la distribuzione della pipeline, Adobe presuppone che tu sia:
 
 - Un integratore di sistemi esperto con un&#39;eccellente conoscenza delle opzioni di configurazione di Adobe Commerce.
 - Gestione di un sito Commerce di grandi dimensioni (migliaia di SKU (Stock-Keeping Unit)) e riduzione al minimo dei tempi di inattività del sito di produzione.

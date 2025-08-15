@@ -17,7 +17,7 @@ Si presuppone che:
 
   Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
 
-  Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurare più siti Web o store](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=it) nella _guida di Commerce sull&#39;infrastruttura cloud_.
+  Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurare più siti Web o store](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) nella _guida di Commerce sull&#39;infrastruttura cloud_.
 
 - Accettare più domini in un file host virtuale o utilizzare un host virtuale per sito Web. I file di configurazione host virtuale si trovano in `/etc/nginx/sites-available`.
 - Utilizza `nginx.conf.sample` fornito da Commerce con le sole modifiche descritte in questa esercitazione.
@@ -36,7 +36,7 @@ Di seguito è riportata una roadmap per la configurazione di più siti Web con n
 
 1. [Configura siti Web, archivi e visualizzazioni dello store](ms-admin.md) nell&#39;amministratore.
 1. Creare un [host virtuale Nginx](#step-2-create-nginx-virtual-hosts)) per mappare molti siti Web o un host virtuale Nginx per sito Web Commerce (passaggi descritti di seguito).
-1. Passa i valori delle [variabili MAGE](ms-overview.md) `$MAGE_RUN_TYPE` e `$MAGE_RUN_CODE` a nginx utilizzando `nginx.conf.sample` fornito dal Magento (passaggi descritti di seguito).
+1. Passa i valori delle [variabili MAGE](ms-overview.md) `$MAGE_RUN_TYPE` e `$MAGE_RUN_CODE` a nginx utilizzando `nginx.conf.sample` fornito da Magento (passaggi descritti di seguito).
 
    - `$MAGE_RUN_TYPE` può essere `store` o `website`:
 
@@ -280,7 +280,7 @@ A meno che il DNS non sia configurato per gli URL dei tuoi archivi, devi aggiung
 >[!INFO]
 >
 >- Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
->- Sono necessarie attività aggiuntive per configurare Adobe Commerce sull&#39;infrastruttura cloud; consulta [Configurare più siti Web o store Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=it) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
+>- Sono necessarie attività aggiuntive per configurare Adobe Commerce sull&#39;infrastruttura cloud; consulta [Configurare più siti Web o store Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
 
 ### Risoluzione dei problemi
 

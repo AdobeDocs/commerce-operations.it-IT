@@ -4,7 +4,7 @@ description: Per installare Adobe Commerce nell’infrastruttura di tua propriet
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: '2093'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ In Adobe Commerce versione 2.2.8 e successive, puoi creare l’utente amministra
 |--- |--- |--- |
 | `--base-url` | URL di base da utilizzare per accedere all&#39;amministratore e alla vetrina in uno dei seguenti formati:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** lo schema (http:// o https://) e una barra finale sono entrambi obbligatori.<br><br>`<your install dir>` è il percorso relativo alla directory principale dei documenti in cui installare l&#39;applicazione. A seconda della configurazione del server web e degli host virtuali, il percorso potrebbe essere magento2 o vuoto.<br><br>Per accedere all&#39;applicazione su localhost, è possibile utilizzare `http://127.0.0.1/<your install dir>/` o `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` che rappresenta un URL di base definito da un&#39;impostazione host virtuale o da un ambiente di virtualizzazione come Docker. Ad esempio, se imposti un host virtuale con il nome host commerce.example.com, puoi installare l&#39;applicazione con `--base-url={{base_url}}` e accedere all&#39;amministratore con un URL come `http://commerce.example.com/admin`. | Sì |
 | `--backend-frontname` | URI (Uniform Resource Identifier) per accedere all&#39;amministratore. È possibile omettere questo parametro per consentire all&#39;applicazione di generare un URI casuale con il seguente pattern <code>admin_jkhgdfq</code>.<br><br>È consigliabile utilizzare un URI casuale per motivi di sicurezza. Un URI casuale è più difficile da sfruttare per gli hacker o per il software dannoso.<br><br>L&#39;URI viene visualizzato alla fine dell&#39;installazione. È possibile visualizzarlo in un secondo momento utilizzando il comando `magento info:adminuri`.<br><br>Se scegli di immettere un valore, ti consigliamo di non usare una parola comune come admin, backend. L&#39;URI amministratore può contenere solo valori alfanumerici e il carattere di sottolineatura (`_`). | No |
-| `--db-host` | Utilizzare uno dei seguenti elementi:<br><br>- Nome host o indirizzo IP completo del server di database.<br><br>- `localhost` (impostazione predefinita) o `127.0.0.1` se il server di database si trova sullo stesso host del server Web.localhost significa che la libreria client MySQL utilizza socket UNIX per connettersi al database. `127.0.0.1` fa in modo che la libreria client utilizzi il protocollo TCP. Per ulteriori informazioni sui socket, consulta la [documentazione PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** è possibile specificare la porta del server di database nel nome host, ad esempio www.example.com:9000 | Sì |
+| `--db-host` | Utilizzare uno dei seguenti elementi:<br><br>- Nome host o indirizzo IP completo del server di database.<br><br>- `localhost` (impostazione predefinita) o `127.0.0.1` se il server di database si trova sullo stesso host del server Web.localhost significa che la libreria client MySQL utilizza socket UNIX per connettersi al database. `127.0.0.1` fa in modo che la libreria client utilizzi il protocollo TCP. Per ulteriori informazioni sui socket, consulta la [documentazione PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** è possibile specificare facoltativamente la porta del server di database nel relativo nome host, ad esempio www.example.com:9000 | Sì |
 | `--db-name` | Nome dell&#39;istanza di database in cui si desidera installare le tabelle di database.<br><br>Il valore predefinito è `magento2`. | Sì |
 | `--db-user` | Nome utente del proprietario dell&#39;istanza di database.<br><br>Il valore predefinito è `root`. | Sì |
 | `--db-password` | Password del proprietario dell&#39;istanza di database. | Sì |
@@ -123,7 +123,7 @@ In Adobe Commerce versione 2.2.8 e successive, puoi creare l’utente amministra
 
 | Nome | Valore | Obbligatorio |
 |--- |--- |--- |
-| `--search-engine` | Versione del motore di ricerca. I valori possibili sono `elasticsearch7`, `elasticsearch6` e `elasticsearch5`. Il valore predefinito è `elasticsearch7`. Se OpenSearch è stato installato come motore di ricerca, specificare il valore `elasticsearch7`. L&#39;Elasticsearch 5 è stato dichiarato obsoleto e non è consigliato. | No |
+| `--search-engine` | Versione del motore di ricerca. I valori possibili sono `elasticsearch7`, `elasticsearch6` e `elasticsearch5`. Il valore predefinito è `elasticsearch7`. Se OpenSearch è stato installato come motore di ricerca, specificare il valore `elasticsearch7`. Elasticsearch 5 è stato dichiarato obsoleto e non è consigliato. | No |
 | `--elasticsearch-host` | Il nome host o l’indirizzo IP in cui è in esecuzione il motore di ricerca. Il valore predefinito è `localhost`. | No |
 | `--elasticsearch-port` | Porta per le richieste HTTP in ingresso. Il valore predefinito è `9200`. | No |
 | `--elasticsearch-index-prefix` | Prefisso che identifica l&#39;indice di ricerca. Il valore predefinito è `magento2`. | No |
@@ -204,7 +204,7 @@ L&#39;esempio seguente installa l&#39;applicazione con le opzioni seguenti:
 * La lingua predefinita è `en_US` (inglese americano)
 * La valuta predefinita è il dollaro statunitense
 * Il fuso orario predefinito è Stati Uniti centrali (America/Chicago)
-* L&#39;Elasticsearch 7 è installato su `es-host.example.com` e si connette alla porta 9200
+* Elasticsearch 7 è installato su `es-host.example.com` e si connette alla porta 9200
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -276,7 +276,7 @@ L&#39;esempio seguente installa l&#39;applicazione con le opzioni seguenti:
 * Si utilizza un prefisso di incremento dell&#39;ordine cliente `ORD$` (poiché contiene un carattere speciale [`$`], il valore deve essere racchiuso tra virgolette)
 * I dati della sessione vengono salvati nel database
 * Utilizza le riscritture del server
-* L&#39;Elasticsearch 7 è installato su `es-host.example.com` e si connette alla porta 9200
+* Elasticsearch 7 è installato su `es-host.example.com` e si connette alla porta 9200
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \

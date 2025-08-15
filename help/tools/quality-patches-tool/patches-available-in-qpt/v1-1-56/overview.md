@@ -33,6 +33,6 @@ QPT v1.1.56 include le seguenti patch:
 1. **ACSD-61805**: è stato risolto il problema che causava l&#39;esaurimento delle scorte dei prodotti nella vetrina dopo l&#39;aggiornamento dello stato dell&#39;ordine inevaso tramite [!DNL REST API].
 1. **ACSD-60811**: è stato corretto il problema per cui l&#39;aggiornamento dello stato dell&#39;ordine con un valore o un commento personalizzato è possibile solo se lo stato corrente è *[!UICONTROL Processing]* o *[!UICONTROL Fraud]*.
 1. **ACSD-62952**: è stato risolto il problema che causava la visualizzazione non corretta della data [!UICONTROL Gift Registry] nella vetrina.
-1. **ACSD-55339**: è stato risolto il problema che causava la rimozione di *0* da parte di un prodotto [!DNL SKU] che inizia con *0* (zero), impedendo l&#39;aggiornamento del preventivo.
+1. **ACSD-55339**: è stato risolto il problema che causava la rimozione di [!DNL SKU]0 *da parte di un prodotto* che inizia con *0* (zero), impedendo l&#39;aggiornamento del preventivo.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.

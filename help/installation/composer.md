@@ -18,12 +18,12 @@ Adobe utilizza [Compositore](https://getcomposer.org/) per gestire i componenti 
 - Riutilizzare le librerie di terze parti senza unirle al codice sorgente
 - Ridurre i conflitti di estensione e i problemi di compatibilità utilizzando un’architettura basata su componenti con una solida gestione delle dipendenze
 - Rispetta gli standard [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/)
-- Magento Open Source di riconfezionamento con altri componenti
+- Riconfezionamento di Magento Open Source con altri componenti
 - Utilizzare il software Adobe Commerce in un ambiente di produzione
 
 >[!NOTE]
 >
->Gli sviluppatori che contribuiscono al Magento Open Source devono utilizzare il metodo di installazione [basato su Git](https://developer.adobe.com/commerce/contributor/guides/install/).
+>Gli sviluppatori che contribuiscono a Magento Open Source devono utilizzare il metodo di installazione [basato su Git](https://developer.adobe.com/commerce/contributor/guides/install/).
 
 ## Prerequisiti
 
@@ -93,7 +93,7 @@ Per ottenere il metapacchetto Adobe Commerce:
 
    >[!NOTE]
    >
-   > Se si utilizza un file Composer `[auth.json](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` o una variabile di ambiente configurata con le chiavi di autenticazione di Commerce, non viene richiesto di immettere le chiavi di autenticazione.
+   > Se si utilizza un file Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` o una variabile di ambiente configurata con le chiavi di autenticazione di Commerce, non viene richiesto di immettere le chiavi di autenticazione.
 
    Se si verificano errori, ad esempio `Could not find package...` o `...no matching package found`, verificare che il comando non contenga errori di battitura. Se riscontri ancora errori, potresti non essere autorizzato a scaricare Adobe Commerce. Contatta il [Supporto Adobe Commerce](https://support.magento.com/hc/en-us) per assistenza.
 

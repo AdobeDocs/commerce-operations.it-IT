@@ -58,7 +58,7 @@ Il frame **[!UICONTROL Redis used memory]** mostra l&#39;utilizzo della memoria 
 
 ![Modifiche Redis dall&#39;ultimo salvataggio del database](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] è residente in memoria e salva le informazioni nell&#39;archivio. Il frame **[!UICONTROL Redis changes since last db save]** indica il numero di modifiche alla memoria che si sono verificate dall&#39;ultimo salvataggio del database nell&#39;archivio. Per ulteriori informazioni sulla persistenza di [!DNL Redis's], consulta [Redis](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/).
+[!DNL Redis] è residente in memoria e salva le informazioni nell&#39;archivio. Il frame **[!UICONTROL Redis changes since last db save]** indica il numero di modifiche alla memoria che si sono verificate dall&#39;ultimo salvataggio del database nell&#39;archivio. Per ulteriori informazioni sulla persistenza di [, consulta ](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)Redis[!DNL Redis's].
 
 ## [!UICONTROL Redis synchronization from Log]
 

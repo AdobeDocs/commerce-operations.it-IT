@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
 source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Per ridurre la larghezza di banda di rete a Redis, memorizzare i dati della cach
 - Controlla la versione dei dati della cache e assicurati che la cache più recente sia memorizzata localmente
 - Trasferisci la cache più recente dal computer remoto al computer locale
 
-Commerce memorizza la versione con hash dei dati in Redis, con il suffisso &#39;:hash&#39; aggiunto alla chiave regolare. Se è presente una cache locale obsoleta, i dati vengono trasferiti al computer locale con un adattatore della cache.
+Commerce archivia la versione con hash dei dati in Redis, con il suffisso &#39;:hash&#39; aggiunto alla chiave regolare. Se è presente una cache locale obsoleta, i dati vengono trasferiti al computer locale con un adattatore della cache.
 
 >[!INFO]
 >
->Per Adobe Commerce su infrastruttura cloud, puoi utilizzare [distribuire variabili](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=it#redis_backend) per la configurazione della cache L2.
+>Per Adobe Commerce su infrastruttura cloud, puoi utilizzare [distribuire variabili](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) per la configurazione della cache L2.
 
 ## Esempio di configurazione
 
@@ -70,9 +70,9 @@ Dove:
    - `local_backend_options` è la configurazione della cache locale.
    - `cache_dir` è un&#39;opzione specifica della cache del file per la directory in cui è memorizzata la cache locale.
 
-L&#39;Adobe consiglia di utilizzare Redis per il caching remoto (`\Magento\Framework\Cache\Backend\Redis`) e `Cm_Cache_Backend_File` per il caching locale dei dati nella memoria condivisa, utilizzando: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+Adobe consiglia di utilizzare Redis per il caching remoto (`\Magento\Framework\Cache\Backend\Redis`) e `Cm_Cache_Backend_File` per il caching locale dei dati nella memoria condivisa, utilizzando: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
-L&#39;Adobe consiglia di utilizzare la funzionalità [`cache preload`](redis-pg-cache.md#redis-preload-feature), in quanto riduce drasticamente la pressione su Redis. Non dimenticare di aggiungere il suffisso &#39;:hash&#39; per i tasti di precaricamento.
+Adobe consiglia di utilizzare la funzionalità [`cache preload`](redis-pg-cache.md#redis-preload-feature), in quanto riduce drasticamente la pressione su Redis. Non dimenticare di aggiungere il suffisso &#39;:hash&#39; per le chiavi di precaricamento.
 
 ## Opzioni cache non aggiornate
 
@@ -82,7 +82,7 @@ In genere, il compromesso con l’attesa di blocco è accettabile dal lato delle
 
 La cache non aggiornata funziona solo con una cache L2. Con una cache non aggiornata, puoi inviare una cache obsoleta, mentre una nuova viene generata in un processo parallelo. Per abilitare la cache non aggiornata, aggiungere `'use_stale_cache' => true` alla configurazione superiore della cache L2.
 
-L&#39;Adobe consiglia di abilitare l&#39;opzione `use_stale_cache` solo per i tipi di cache che ne beneficiano maggiormente, tra cui:
+Adobe consiglia di abilitare l&#39;opzione `use_stale_cache` solo per i tipi di cache che ne beneficiano maggiormente, tra cui:
 
 - `block_html`
 - `config_integration_api`
@@ -92,7 +92,7 @@ L&#39;Adobe consiglia di abilitare l&#39;opzione `use_stale_cache` solo per i ti
 - `reflection`
 - `translate`
 
-L&#39;Adobe non consiglia di abilitare l&#39;opzione `use_stale_cache` per il tipo di cache `default`.
+Adobe sconsiglia di abilitare l&#39;opzione `use_stale_cache` per il tipo di cache `default`.
 
 Il codice seguente mostra un esempio di configurazione:
 

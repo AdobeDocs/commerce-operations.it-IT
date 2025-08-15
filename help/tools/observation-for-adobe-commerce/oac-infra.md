@@ -1,5 +1,5 @@
 ---
-title: Scheda  [!DNL Infra]
+title: 'Scheda  [!DNL Infra] '
 description: La scheda  [!DNL Infra]  isola i problemi e le cause dei problemi dell'infrastruttura.
 exl-id: 45f24177-3264-4848-99bc-951be32c1f7b
 feature: Configuration, Observability

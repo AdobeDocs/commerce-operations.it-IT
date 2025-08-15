@@ -42,7 +42,7 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di sv
 
 | Best practice | Descrizione |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Build e distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=it){target="_blank"} | Descrive le best practice per le fasi di build e implementazione di Adobe Commerce nei progetti di infrastruttura cloud |
+| [Build e distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Descrive le best practice per le fasi di build e implementazione di Adobe Commerce nei progetti di infrastruttura cloud |
 | Debug | Eseguire il debug sistematico ed efficace del framework di Adobe Commerce |
 | [Distribuzione di contenuto statico](static-content-deployment.md) | Evita problemi con il contenuto statico che non viene visualizzato nella vetrina |
 | [Risoluzione dei problemi](troubleshooting.md) | Risoluzione dei problemi comuni di implementazione di Adobe Commerce |

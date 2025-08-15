@@ -4,7 +4,7 @@ description: Segui questi passaggi per eseguire  [!DNL Upgrade Compatibility Too
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 In seguito all&#39;analisi, [!DNL Upgrade Compatibility Tool] può esportare un report contenente un elenco di problemi per ogni file specificandone la gravità, il codice di errore e la descrizione. [!DNL Upgrade Compatibility Tool] esporta il report in due formati diversi:
 
 - Un file [JSON](reports.md#json-file).
-- Un report di [HTML](reports.md#html-report).
+- Un [report HTML](reports.md#html-report).
 
 Vedi il seguente esempio di interfaccia della riga di comando di un rapporto:
 
@@ -83,7 +83,7 @@ Dove gli argomenti sono i seguenti:
 
 ## Rapporto HTML
 
-È possibile ottenere il report HTML durante l&#39;esecuzione dello strumento su un&#39;interfaccia della riga di comando o tramite [!DNL Site-Wide Analysis Tool]. La relazione HTML contiene inoltre:
+È possibile ottenere il report di HTML durante l&#39;esecuzione dello strumento tramite un&#39;interfaccia della riga di comando o tramite [!DNL Site-Wide Analysis Tool]. Il rapporto HTML contiene inoltre:
 
 - Elenco dei problemi identificati.
 - Riepilogo dell’analisi.
@@ -96,7 +96,7 @@ Puoi navigare facilmente tra i problemi identificati durante l&#39;analisi [!DNL
 
 Nell’angolo in alto a destra è presente un elenco a discesa che consente di selezionare un livello diverso. L’elenco dei problemi identificati viene filtrato di conseguenza.
 
-![Report HTML - Utilizzo elenco a discesa](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+![Rapporto HTML - Utilizzo elenco a discesa](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Questi grafici consentono di identificare i moduli più compromessi e quelli che
 
 ![Rapporto HTML - Diagrammi](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-Anche i diagrammi di report di HTML vengono aggiornati di conseguenza, con l&#39;unica eccezione di `Modules with relative sizes and issues`, generato con `min-issue-level` originariamente configurato.
+Anche i diagrammi dei report di HTML vengono aggiornati di conseguenza, con l&#39;unica eccezione di `Modules with relative sizes and issues`, generato con `min-issue-level` originariamente configurato.
 
 Se si desidera visualizzare risultati diversi per il diagramma `Modules with relative sizes and issues`, è necessario rieseguire il comando specificando un altro valore per l&#39;opzione `--min-issue-level`.
 

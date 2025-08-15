@@ -1,6 +1,6 @@
 ---
-title: Best practice per i blocchi contenuto privati
-description: Scopri best practice per la configurazione di blocchi di contenuto privati al fine di ottimizzare le prestazioni della vetrina del negozio.
+title: Best practice per i blocchi di contenuto privati
+description: Scopri le best practice per configurare blocchi di contenuto privati per ottimizzare le prestazioni della vetrina.
 role: Developer
 feature: Best Practices
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
@@ -11,24 +11,24 @@ ht-degree: 1%
 
 ---
 
-# Best practice per i blocchi contenuto privati
+# Best practice per i blocchi di contenuto privati
 
-Quando un blocco contenuto privato contiene la `_isScopePrivate` variabile, il blocco non è memorizzabile in cache. Poiché il blocco privato non è memorizzato nella cache, Adobe Systems Commerce deve recuperare gli stessi dati per ogni cliente richiesta il che aumenta il carico del server.
+Quando un blocco di contenuto privato contiene la variabile `_isScopePrivate`, il blocco non è memorizzabile in cache. Poiché il blocco privato non è memorizzato in cache, Adobe Commerce deve recuperare gli stessi dati per ogni richiesta del cliente, il che aumenta il carico del server.
 
-Invece di utilizzare la variabile per contenuto `_isScopePrivate` privati, crea un blocco e un modello per visualizzare i dati indipendenti dal utente. Questi dati vengono sostituiti con dati utente specifici dal componente interfaccia Adobe Systems Commerce, che gestisce i dati di pre-rendering in modo più efficiente. Per istruzioni, vedere [Contenuto](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) privato in _[!DNL Commerce PHP Extensions Guide]_.
+Invece di utilizzare la variabile `_isScopePrivate` per il contenuto privato, crea un blocco e un modello per visualizzare dati indipendenti dall&#39;utente. Questi dati vengono sostituiti con dati specifici dell’utente dal componente dell’interfaccia utente di Adobe Commerce, che gestisce in modo più efficiente i dati di pre-rendering. Per istruzioni, vedere [Contenuto privato](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) in _[!DNL Commerce PHP Extensions Guide]_.
 
 ## Prodotti e versioni interessati
 
-[Tutte le versioni](../../../release/versions.md) supportate di:
+[Tutte le versioni supportate](../../../release/versions.md) di:
 
-- Adobe Systems Commerce su infrastruttura cloud
-- Adobe Systems Commerce locale
+- Adobe Commerce sull’infrastruttura cloud
+- Adobe Commerce on-premise
 
 ## Potenziale impatto sulle prestazioni
 
-Sites che hanno blocchi di contenuto privati contenenti le variabili attivano AJAX `_isScopePrivate` richieste per recuperare gli stessi dati per ogni richiesta del cliente. Ciò aumenta i tempi di risposta e utilizza risorse aggiuntive che potrebbero essere utilizzate per gestire più operazioni di vetrina critico aziendali come registrazione clienti, aggiornamenti del carrello acquisti, invio degli ordini e transazioni di pagamento.
+I siti con blocchi di contenuto privati contenenti le variabili `_isScopePrivate` attivano le richieste di AJAX per recuperare gli stessi dati per ogni richiesta del cliente. Questo aumenta i tempi di risposta e utilizza risorse aggiuntive che potrebbero essere utilizzate per gestire operazioni più importanti per lo storefront, come la registrazione dei clienti, gli aggiornamenti del carrello, l’invio degli ordini e le transazioni di pagamento.
 
 ## Informazioni aggiuntive
 
 - [Contenuto privato](../../../performance/configuration.md#client-side-optimization-settings)
-- [Un throughput elevato AJAX richieste causa prestazioni ridotte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=it)
+- [Le richieste di AJAX con throughput elevato causano prestazioni insoddisfacenti](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)

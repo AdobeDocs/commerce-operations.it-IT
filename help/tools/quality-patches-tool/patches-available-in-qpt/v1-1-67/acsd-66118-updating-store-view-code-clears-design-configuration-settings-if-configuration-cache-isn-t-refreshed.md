@@ -4,13 +4,13 @@ description: Applica la patch ACSD-66118 per risolvere il problema di Adobe Comm
 feature: Cache, Configuration, Themes
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: ef4d6e420f304b0229c54c8ec7bd5500039bcb6b
+exl-id: ecfdff54-99e0-4dbe-a0bb-80f60aafc7b6
+source-git-commit: 468c780f355c99cf06d557e530e81c414a01961e
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66118: l&#39;aggiornamento di **[!UICONTROL Store View Code]** cancella **[!UICONTROL Design Configuration]** impostazioni se **[!UICONTROL Configuration Cache]** non è aggiornato
 
@@ -28,7 +28,7 @@ La patch ACSD-66118 risolve il problema per cui l&#39;aggiornamento di **[!UICON
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -56,7 +56,7 @@ Dopo aver aggiornato **[!UICONTROL Store View Code]**, **[!UICONTROL Design Conf
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

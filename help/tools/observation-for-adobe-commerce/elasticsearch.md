@@ -50,19 +50,19 @@ Il frame **[!UICONTROL Elasticsearch Status by node information]** mostra lo sta
 
 ## [!UICONTROL Elasticsearch index information]
 
-![Informazioni sull&#39;indice Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
+![Informazioni indice Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 La tabella **[!UICONTROL Elasticsearch index information]** mostra il nome dell&#39;indice, il nodo in cui si trova, il numero di documenti indicizzati, lo stato dell&#39;indice e la dimensione dell&#39;indice in MB in un determinato momento.
 
 ## [!UICONTROL Elasticsearch process CPU %]
 
-![CPU per elaborazione Elasticsearch](../../assets/tools/elasticsearch-process-cpu.jpg)
+![Elasticsearch elabora CPU](../../assets/tools/elasticsearch-process-cpu.jpg)
 
 Il frame **[!UICONTROL Elasticsearch process CPU %]** mostra la percentuale di CPU del processo [!DNL Elasticsearch] nel periodo di tempo selezionato.
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
-![Garbage di memoria di Elasticsearch](../../assets/tools/elasticsearch-memory-garbage.jpg)
+![Garbage di memoria Elasticsearch](../../assets/tools/elasticsearch-memory-garbage.jpg)
 
 [!DNL Elasticsearch] è un processo Java. Se la memoria allocata è insufficiente, verrà avviata la raccolta di oggetti inattivi per liberare memoria. Se la raccolta di oggetti inattivi è frequente, è un’indicazione del fatto che potrebbero esserci troppi indici o frammenti per la memoria allocata. Potrebbe essere possibile pulire gli indici e le parti oppure [!DNL Elasticsearch] potrebbe richiedere più memoria.
 
@@ -86,6 +86,6 @@ Nel frame **[!UICONTROL Elasticsearch Errors]** vengono visualizzati errori con 
 
 ## [!UICONTROL Elasticsearch Unassigned Shards]:
 
-![Elasticsearch di parti non assegnate](../../assets/tools/elasticsearch-unassigned-shards.jpg)
+![Schede Elasticsearch non assegnate](../../assets/tools/elasticsearch-unassigned-shards.jpg)
 
 Le parti non assegnate causeranno lo spostamento di un cluster dallo stato Verde allo stato Giallo.

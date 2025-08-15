@@ -1,5 +1,5 @@
 ---
-title: Come utilizzare il nerdlet  [!DNL Observation for Adobe Commerce]
+title: 'Come utilizzare il nerdlet  [!DNL Observation for Adobe Commerce] '
 description: Scopri come utilizzare il nerdlet  [!DNL Observation for Adobe Commerce] .
 exl-id: 3c368814-0786-4e8f-ac81-9a77cec94677
 feature: Configuration, Observability
@@ -28,7 +28,7 @@ Verifica gli stati delle risorse dell’ambiente:
 
    * Adobe Commerce su infrastruttura cloud fornisce [!DNL Managed alerts]. Puoi fare clic sul collegamento nell&#39;intestazione per visualizzare [!DNL Support Knowledge Base] articoli che ti aiuteranno a determinare le azioni da parte tua per avvisi specifici.
 
-* Esaminare il frame **[!UICONTROL CPU % by host]**: se è presente un utilizzo elevato della CPU, controllare il frame nell&#39;articolo [!DNL Support Knowledge Base] nell&#39;intestazione. Inoltre, verificare che le importazioni/esportazioni del database o i backup non vengano eseguiti durante i periodi di traffico di picco.
+* Esamina il frame **[!UICONTROL CPU % by host]**: se è presente un elevato utilizzo di CPU, controlla il frame nell&#39;articolo [!DNL Support Knowledge Base] nell&#39;intestazione. Inoltre, verificare che le importazioni/esportazioni del database o i backup non vengano eseguiti durante i periodi di traffico di picco.
 
 * Controlla il frame **[!UICONTROL Web Traffic volume compared to one week ago]**: se il traffico è molto più elevato della settimana precedente durante lo stesso periodo, è possibile spiegarlo (ad esempio, campagna di vendita o nuovi prodotti commercializzati)?
    * Se non è possibile spiegare un aumento del traffico, considera il tempo medio di risposta (millisecondi) per l’ambiente di produzione. Il traffico più elevato contribuisce a un tempo di risposta diverso rispetto al normale? Espandi l’intervallo di tempo per verificare se si tratta di un’anomalia.

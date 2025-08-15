@@ -4,13 +4,13 @@ description: Applica la patch ACSD-65775 per risolvere il problema di Adobe Comm
 feature: REST
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 23c78abaf28f64baf0e91bcaf89bd0e34b5bf78a
+exl-id: c2a8f4ef-3998-4e73-af9e-69b17a10d684
+source-git-commit: ce5a136dd59c52d5fa5b555b3ee74fe14d7e53a4
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65775: valori `base_row_total` e `row_total` non corretti nei dettagli dell&#39;ordine API REST per più quantità
 
@@ -28,7 +28,7 @@ La patch ACSD-65775 risolve il problema per cui i dettagli dell’ordine REST AP
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -64,7 +64,7 @@ I valori `base_row_total` e `row_total` nella risposta REST API per i dettagli d
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

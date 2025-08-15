@@ -15,7 +15,7 @@ Con la profilatura di Commerce è possibile:
 
 - Abilita un profiler incorporato.
 
-  È possibile utilizzare un profiler integrato con Commerce per eseguire attività quali l’analisi delle prestazioni. La natura del profiling dipende dagli strumenti analitici utilizzati. Supportiamo più formati, tra cui HTML. Quando si abilita il profiler, viene generato un file `var/profiler.flag` che indica che il profiler è abilitato e le configurazioni. Se disabilitato, il file viene eliminato.
+  È possibile utilizzare un profiler integrato con Commerce per eseguire attività quali l’analisi delle prestazioni. La natura del profiling dipende dagli strumenti analitici utilizzati. Supportiamo diversi formati, tra cui HTML. Quando si abilita il profiler, viene generato un file `var/profiler.flag` che indica che il profiler è abilitato e le configurazioni. Se disabilitato, il file viene eliminato.
 
 - Visualizzare i grafici delle dipendenze in una pagina Commerce.
 

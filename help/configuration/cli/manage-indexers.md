@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> I commercianti di Adobe Commerce che utilizzano Live Search, Catalog Service o Product Recommendations possono utilizzare l&#39;indicizzazione dei prezzi basata su [SaaS](https://experienceleague.adobe.com/it/docs/commerce/price-indexer/price-indexing).
+> I commercianti di Adobe Commerce che utilizzano Live Search, Catalog Service o Product Recommendations possono utilizzare l&#39;indicizzazione dei prezzi basata su [SaaS](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
 
 ## Visualizza stato indicizzatore
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 e versioni successive**: l&#39;indicizzatore [!DNL Customer Grid] supporta sia la modalità [!UICONTROL Update on Save] che la modalità [!UICONTROL Update by Schedule]. Impostazione predefinita: [!UICONTROL Update by Schedule].
 >
->Consulta [Best practice per la configurazione dell&#39;indicizzatore](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) nella _Playbook di implementazione_.
+>Consulta [Best practice per la configurazione dell&#39;indicizzatore](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) nella _Playbook di implementazione_.
 
 >[!INFO]
 >
->Prima di cambiare modalità di indicizzazione, impostare il sito Web sulla modalità [manutenzione](../../installation/tutorials/maintenance-mode.md) e [disabilitare i processi cron](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). In questo modo non si verificheranno blocchi del database.
+>Prima di cambiare modalità di indicizzazione, impostare il sito Web sulla modalità [manutenzione](../../installation/tutorials/maintenance-mode.md) e [disabilitare i processi cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). In questo modo non si verificheranno blocchi del database.
 
 Per specificare la configurazione dell&#39;indicizzatore:
 

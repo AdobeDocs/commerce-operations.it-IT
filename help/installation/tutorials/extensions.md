@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Gestire le estensioni di terze parti
 
-Il codice che estende o personalizza il comportamento di Adobe Commerce è chiamato estensione. Facoltativamente, è possibile creare un pacchetto e distribuire estensioni sulla [Commerce Marketplace](https://commercemarketplace.adobe.com/) o su un altro sistema di distribuzione delle estensioni.
+Il codice che estende o personalizza il comportamento di Adobe Commerce è chiamato estensione. Facoltativamente, è possibile creare un pacchetto e distribuire estensioni sul [Commerce Marketplace](https://commercemarketplace.adobe.com/) o su un altro sistema di distribuzione delle estensioni.
 
 Le estensioni includono:
 
@@ -20,7 +20,7 @@ Le estensioni includono:
 - Temi (cambia l’aspetto della vetrina e dell’amministratore)
 - Pacchetti di lingua (localizza la vetrina e Amministratore)
 
-Questo argomento spiega come utilizzare l&#39;interfaccia della riga di comando per gestire le estensioni di terze parti acquistate da Commerce Marketplace per _progetti locali_. Per i progetti di infrastruttura cloud, consulta [Gestione estensioni](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+Questo argomento spiega come utilizzare l&#39;interfaccia della riga di comando per gestire le estensioni di terze parti acquistate da Commerce Marketplace per _progetti locali_. Per i progetti di infrastruttura cloud, consulta [Gestione estensioni](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 È possibile utilizzare la stessa procedura per installare l&#39;estensione _any_; tutto ciò che serve è il nome e la versione del Compositore dell&#39;estensione. Per trovarlo, aprire il file `composer.json` dell&#39;estensione e prendere nota dei valori per `"name"` e `"version"`.
 
@@ -38,7 +38,7 @@ Prima dell&#39;installazione, è possibile:
 Per installare un&#39;estensione, è necessario:
 
 1. Ottieni un’estensione da Commerce Marketplace o da un altro sviluppatore di estensioni.
-1. Se si installa un&#39;estensione dalla Commerce Marketplace, verificare che l&#39;archivio `repo.magento.com` esista nel file `composer.json`:
+1. Se si installa un&#39;estensione da Commerce Marketplace, verificare che l&#39;archivio `repo.magento.com` esista nel file `composer.json`:
 
    ```bash
    "repositories": [
@@ -58,7 +58,7 @@ Per installare un&#39;estensione, è necessario:
 
 Se conosci già il nome e la versione del Compositore dell&#39;estensione, salta questo passaggio e continua con [Aggiorna il file `composer.json`](#update-composer-dependencies).
 
-Per ottenere il nome e la versione del Compositore dell&#39;estensione dalla Commerce Marketplace:
+Per ottenere il nome e la versione del Compositore dell&#39;estensione da Commerce Marketplace:
 
 1. Accedi a [Commerce Marketplace](https://commercemarketplace.adobe.com/) con il nome utente e la password utilizzati per acquistare l&#39;estensione.
 
@@ -76,7 +76,7 @@ Per ottenere il nome e la versione del Compositore dell&#39;estensione dalla Com
 
 >[!TIP]
 >
->In alternativa, è possibile trovare il nome del Compositore e la versione dell&#39;estensione _any_ (acquistata su Commerce Marketplace o altrove) nel file `composer.json` dell&#39;estensione.
+>In alternativa, è possibile trovare il nome del Compositore e la versione dell&#39;estensione _any_ (acquistata in Commerce Marketplace o altrove) nel file `composer.json` dell&#39;estensione.
 
 ### Aggiorna dipendenze compositore
 
@@ -156,7 +156,7 @@ Alcune estensioni non funzionano correttamente a meno che non si cancellino prim
    bin/magento setup:upgrade
    ```
 
-1. Ricompilare il progetto: in modalità di produzione, è possibile che venga visualizzato un messaggio indicante &quot;Esegui nuovamente il comando di compilazione del Magento&quot;. L&#39;applicazione non richiede di eseguire il comando di compilazione in modalità Sviluppatore.
+1. Ricompila il progetto: in modalità di produzione, potresti ricevere un messaggio indicante &quot;Esegui nuovamente il comando di compilazione di Magento&quot;. L&#39;applicazione non richiede di eseguire il comando di compilazione in modalità Sviluppatore.
 
    ```bash
    bin/magento setup:di:compile

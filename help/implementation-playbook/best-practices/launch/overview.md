@@ -26,11 +26,11 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di la
 
 | Best practice | Descrizione |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Servizio di notifica di sicurezza Adobe](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Iscriviti alle notifiche di sicurezza Adobe. |
+| [Servizio di notifica sulla sicurezza di Adobe](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Iscriviti alle notifiche di sicurezza di Adobe. |
 | [Proteggere il sito e l&#39;infrastruttura Commerce](security-best-practices.md) | Rafforzare la sicurezza delle installazioni Commerce per proteggere la vetrina, l&#39;amministratore, l&#39;infrastruttura e i dati Commerce da accessi non autorizzati e attacchi informatici. |
-| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=it) | Configura Google reCAPTCHA per l’accesso come amministratore e varie azioni in vetrina avviate da clienti registrati. |
+| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | Configura Google reCAPTCHA per l’accesso come amministratore e varie azioni in vetrina avviate da clienti registrati. |
 | [Configura Web crawler](robots-txt.md) | Passa istruzioni sul tuo sito Adobe Commerce ai crawler web. |
-| [Verifica la configurazione della sicurezza](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=it) | Esamina le voci dell’elenco di controllo prima di avviare un sito Adobe Commerce sull’infrastruttura cloud. |
+| [Verifica la configurazione della sicurezza](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html) | Esamina le voci dell’elenco di controllo prima di avviare un sito Adobe Commerce sull’infrastruttura cloud. |
 
 ## Monitoraggio delle prestazioni
 

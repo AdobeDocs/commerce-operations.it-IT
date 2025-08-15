@@ -43,7 +43,7 @@ Gli hotfix sono patch che presentano problemi di sicurezza ad alto impatto o pro
 
 Le singole patch contengono correzioni di qualità a basso impatto per un problema specifico. Queste correzioni sono applicate alla versione secondaria supportata più di recente (ad esempio, 2.4.x), ma potrebbero mancare nella versione secondaria supportata precedente (ad esempio, 2.3.x). Adobe rilascia singole patch in base alle esigenze.
 
-Utilizzare [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"} per applicare singole patch.
+Utilizzare [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} per applicare singole patch.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Utilizzare [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tool
 
 ## Patch personalizzate
 
-A volte ci vuole un po’ di tempo perché il team ingegneristico Adobe includa una correzione di bug effettuata su GitHub in una versione di Adobe Commerce Composer. Nel frattempo, puoi creare una patch da GitHub e utilizzare il plug-in [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) per applicarla all&#39;installazione basata su Composer.
+A volte ci vuole un po’ di tempo perché il team ingegneristico di Adobe includa una correzione di bug effettuata su GitHub in una versione del Compositore di Adobe Commerce. Nel frattempo, puoi creare una patch da GitHub e utilizzare il plug-in [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) per applicarla all&#39;installazione basata su Composer.
 
 Utilizza la [riga di comando](apply.md#command-line) o [Compositore](apply.md#composer) per applicare patch personalizzate.
 
@@ -90,10 +90,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 È possibile applicare le patch utilizzando uno dei seguenti metodi:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Riga di comando](/help/upgrade/patches/apply.md#command-line)
 - [Compositore](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Per applicare una patch a un progetto di infrastruttura cloud di Adobe Commerce, consulta [Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella _guida di Commerce on Cloud_.
+>Per applicare una patch a un progetto di infrastruttura cloud di Adobe Commerce, consulta [Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella _guida di Commerce on Cloud_.

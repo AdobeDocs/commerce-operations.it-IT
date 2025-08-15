@@ -1,6 +1,6 @@
 ---
 title: Impostazioni di migrazione dati
-description: Scopri come avviare la migrazione delle impostazioni dal Magento 1 al Magento 2 con  [!DNL Data Migration Tool].
+description: Scopri come avviare la migrazione delle impostazioni da Magento 1 a Magento 2 con  [!DNL Data Migration Tool].
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -22,7 +22,7 @@ Prima di iniziare, effettua le seguenti operazioni di preparazione:
 
 >[!NOTE]
 >
->Verificare che il Magento 2 sia distribuito in modalità `default`. La modalità Sviluppatore può causare errori di convalida nello strumento di migrazione.
+>Verificare che Magento 2 sia distribuito in modalità `default`. La modalità Sviluppatore può causare errori di convalida nello strumento di migrazione.
 
 
 Per ulteriori dettagli, consulta la sezione [primi passaggi](overview.md#first-steps).
@@ -45,7 +45,7 @@ Dove:
 
 >[!NOTE]
 >
->Con questo comando non vengono migrate tutte le impostazioni di configurazione. Verificare tutte le impostazioni nell&#39;amministratore di Magento 2 prima di procedere.
+>Con questo comando non vengono migrate tutte le impostazioni di configurazione. Verificare tutte le impostazioni in Magento 2 Admin prima di procedere.
 
 
 Il messaggio `Migration completed` viene visualizzato dopo il corretto trasferimento delle impostazioni.
