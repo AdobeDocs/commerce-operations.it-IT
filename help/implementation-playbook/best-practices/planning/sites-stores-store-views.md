@@ -41,5 +41,5 @@ I siti Web e i negozi sono moltiplicatori per i dati di catalogo, pertanto la pr
 
 ## Informazioni aggiuntive
 
-- [Informazioni su siti Web, archivi e visualizzazioni dello store](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Configurazione di più siti Web o store](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Informazioni su siti Web, archivi e visualizzazioni dello store](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Configurazione di più siti Web o store](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

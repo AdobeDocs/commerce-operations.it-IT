@@ -31,4 +31,4 @@ I siti con blocchi di contenuto privati contenenti le variabili `_isScopePrivate
 ## Informazioni aggiuntive
 
 - [Contenuto privato](../../../performance/configuration.md#client-side-optimization-settings)
-- [Le richieste di AJAX con throughput elevato causano prestazioni insoddisfacenti](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [Le richieste di AJAX con throughput elevato causano prestazioni insoddisfacenti](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=it)

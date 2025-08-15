@@ -41,7 +41,7 @@ Come utente con privilegi di `root`, apri il file `php.ini` e cerca il valore di
 
 ## Gestisci dimensioni sessione
 
-Consulta la [Gestione delle sessioni](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) nella _Guida utente_.
+Consulta la [Gestione delle sessioni](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/security/security-session-management) nella _Guida utente_.
 
 ## Configurazione della raccolta di oggetti inattivi
 

@@ -15,7 +15,7 @@ Sei tra i 240.000 commercianti in tutto il mondo che hanno dato fiducia al nostr
 
 ## Come ottenere il software
 
-Controlla la disponibilità di nuove funzionalità e versioni interessanti e scopri come ottenerle nella [pagina sulla disponibilità del prodotto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+Controlla la disponibilità di nuove funzionalità e versioni interessanti e scopri come ottenerle nella [pagina sulla disponibilità del prodotto](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability).
 
 Per informazioni introduttive sull’installazione di Adobe Commerce, consulta la tabella seguente.
 

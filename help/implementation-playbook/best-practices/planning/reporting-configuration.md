@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Procedure consigliate per la configurazione dei rapporti
 
-Se la tua azienda non richiede la funzionalità di reporting o segmenti cliente dinamici, disabilita la funzionalità [Rapporti](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/reports) per migliorare le prestazioni dello store.
+Se la tua azienda non richiede la funzionalità di reporting o segmenti cliente dinamici, disabilita la funzionalità [Rapporti](https://experienceleague.adobe.com/it/docs/commerce-admin/config/general/reports) per migliorare le prestazioni dello store.
 
 ## Prodotti e versioni interessati
 
@@ -32,5 +32,5 @@ Se non utilizzi i segmenti Reports o clienti dinamici, disabilita la funzionalit
 
 ## Informazioni aggiuntive
 
-- [Genera report in Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)
-- [Segmenti dinamici del cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)
+- [Genera report in Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/start/reporting/reports-menu)
+- [Segmenti dinamici del cliente](https://experienceleague.adobe.com/it/docs/commerce-admin/customers/segments/customer-segments)

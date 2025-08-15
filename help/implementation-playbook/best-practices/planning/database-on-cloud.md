@@ -59,9 +59,9 @@ Per determinare quale motore di ricerca è attualmente in uso, eseguire il coman
 
 Per le istruzioni di configurazione, consulta la Guida per gli sviluppatori per Adobe Commerce sul cloud:
 
-- [Configura il servizio OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [Configura il servizio OpenSearch](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [Configura il servizio Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [Configura il servizio Elasticsearch](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## Evita trigger personalizzati
 
@@ -76,14 +76,14 @@ Per informazioni sulle alternative all&#39;utilizzo di trigger personalizzati, v
 
 ## Aggiorna [!DNL ECE-Tools] alla versione 2002.0.21 o successiva {#ece-tools-version}
 
-Per evitare potenziali problemi con deadlock cron, aggiorna ECE-Tools alla versione 2002.0.21 o successiva. Per istruzioni, consulta [Aggiornare `ece-tools` versione](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) nella documentazione per gli sviluppatori.
+Per evitare potenziali problemi con deadlock cron, aggiorna ECE-Tools alla versione 2002.0.21 o successiva. Per istruzioni, consulta [Aggiornare `ece-tools` versione](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) nella documentazione per gli sviluppatori.
 
 ## Cambia la modalità di indicizzazione in modo sicuro
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 Il passaggio degli indicizzatori genera istruzioni [!DNL data definition language] (DDL) per creare trigger che possono causare blocchi del database. Per evitare questo problema, imposta il sito Web in modalità di manutenzione e disabilita i processi cron prima di modificare la configurazione.
-Per istruzioni, vedere [Configurare gli indicizzatori](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) nella *Guida alla configurazione di Adobe Commerce*.
+Per istruzioni, vedere [Configurare gli indicizzatori](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=it#configure-indexers-1) nella *Guida alla configurazione di Adobe Commerce*.
 
 ## Non eseguire istruzioni DDL in produzione
 
@@ -95,7 +95,7 @@ Se devi eseguire un’istruzione DDL, imposta il sito web in modalità di manute
 
 Abilita l’archiviazione degli ordini dall’amministratore per ridurre lo spazio necessario per le tabelle Vendite in base alla crescita dei dati dell’ordine. L&#39;archiviazione consente di risparmiare spazio su disco MySQL e di migliorare le prestazioni di estrazione.
 
-Consulta [Abilitare l&#39;archiviazione](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) nella documentazione di Adobe Commerce Merchant.
+Consulta [Abilitare l&#39;archiviazione](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html?lang=it) nella documentazione di Adobe Commerce Merchant.
 
 ## Informazioni aggiuntive
 

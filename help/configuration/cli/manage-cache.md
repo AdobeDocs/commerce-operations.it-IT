@@ -20,7 +20,7 @@ Puoi utilizzare il sistema di gestione della cache di Adobe Commerce per miglior
 >[!NOTE]
 >
 >
->Gli amministratori del sito di Commerce possono gestire la cache dall’amministratore utilizzando lo strumento Sistema di gestione della cache. Consulta [Gestione cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) nella _Guida di Admin Systems_.
+>Gli amministratori del sito di Commerce possono gestire la cache dall’amministratore utilizzando lo strumento Sistema di gestione della cache. Consulta [Gestione cache](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/cache-management) nella _Guida di Admin Systems_.
 
 
 ## Visualizzare lo stato della cache
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Per una descrizione dettagliata dei tipi di cache predefiniti supportati da Adobe Commerce, vedi [Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) nella _Guida ai sistemi di amministrazione_.
+>Per una descrizione dettagliata dei tipi di cache predefiniti supportati da Adobe Commerce, vedi [Cache](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/cache-management#caches) nella _Guida ai sistemi di amministrazione_.
 
 
 ## Abilitare o disabilitare i tipi di cache

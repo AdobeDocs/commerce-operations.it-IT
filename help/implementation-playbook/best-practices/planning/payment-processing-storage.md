@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Best practice per l’elaborazione e l’archiviazione dei pagamenti
 
-Uno dei principi chiave per mantenere la conformità PCI [1&rbrace; consiste nell&#39;avere una strategia per elaborare e archiviare correttamente i pagamenti con carta di credito.](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html)
+Uno dei principi chiave per mantenere la conformità PCI [1&rbrace; consiste nell&#39;avere una strategia per elaborare e archiviare correttamente i pagamenti con carta di credito.](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=it)
 
 Memorizzare i dati del titolare della carta in Adobe Commerce è **severamente vietato** e ciò potrebbe costituire una violazione dei tuoi obblighi in quanto esercente in base allo standard PCI-DSS (Payment Card Industry Data Security Standard). Ulteriori informazioni sul modello di responsabilità condivisa e sulle linee guida per gli obblighi degli esercenti sono disponibili nella [Guida al modello di responsabilità condivisa di Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) nel Centro affidabilità di Adobe.
 
@@ -53,4 +53,4 @@ Il metodo consigliato per gestire i dati del titolare della carta consiste nel t
 
 ## Informazioni aggiuntive
 
-Se stai cercando soluzioni di pagamento consigliate da Adobe, prendi in considerazione [Servizi di pagamento Adobe](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html).
+Se stai cercando soluzioni di pagamento consigliate da Adobe, prendi in considerazione [Servizi di pagamento Adobe](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=it).

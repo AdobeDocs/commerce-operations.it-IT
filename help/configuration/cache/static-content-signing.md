@@ -35,9 +35,9 @@ In questo modo viene modificato l’URL dei file statici e viene forzato il brow
 
 Commerce abilita questa funzione per impostazione predefinita; Adobe consiglia di mantenerla abilitata per evitare problemi relativi ai browser che utilizzano vecchie risorse statiche.
 
-La configurazione per la firma del contenuto statico è in [**[!UICONTROL Stores]**> Impostazioni > Configurazione >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
+La configurazione per la firma del contenuto statico è in [**[!UICONTROL Stores]**> Impostazioni > Configurazione >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
-- **Solo locale**: questa configurazione è disponibile se il sito è **non** in [Modalità di produzione](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
+- **Solo locale**: questa configurazione è disponibile se il sito è **non** in [Modalità di produzione](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=it#production-mode).
 - **Cloud**: questa configurazione è nascosta perché la modalità di produzione è rigorosamente applicata; è quindi necessario utilizzare la riga di comando come illustrato di seguito.
 
 ![Impostazioni file statici](../../assets/configuration/static-files-settings.png)

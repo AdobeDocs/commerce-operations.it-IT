@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Best practice: flusso di lavoro per la creazione di contenuti
 
-Questo documento descrive il flusso di lavoro dell&#39;utente per richiedere modifiche o aggiunte al contenuto delle *[best practice] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* nella *playbook di implementazione di Adobe Commerce*.
+Questo documento descrive il flusso di lavoro dell&#39;utente per richiedere modifiche o aggiunte al contenuto delle *[best practice] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=it* nella *playbook di implementazione di Adobe Commerce*.
 
 ## Chi può creare una richiesta?
 
@@ -35,13 +35,13 @@ Puoi inviare i seguenti tipi di richieste:
 
 Se una richiesta non contiene informazioni sufficienti, il team richiede ulteriori informazioni al richiedente. Se il richiedente non risponde entro 14 giorni, il team chiude la richiesta.
 
-**Creazione o aggiornamento del contenuto**-Il lavoro di creazione del contenuto è stato completato seguendo il processo documentato nella [Guida per i collaboratori di Adobe Experience League](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html). A seconda della richiesta, il lavoro può includere la conversione di nuovi contenuti in markdown, la creazione di un argomento o l’aggiornamento di un argomento esistente.
+**Creazione o aggiornamento del contenuto**-Il lavoro di creazione del contenuto è stato completato seguendo il processo documentato nella [Guida per i collaboratori di Adobe Experience League](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it). A seconda della richiesta, il lavoro può includere la conversione di nuovi contenuti in markdown, la creazione di un argomento o l’aggiornamento di un argomento esistente.
 
-**Revisione, approvazione e pubblicazione del contenuto**-Il contenuto viene rivisto e modificato durante la creazione o l&#39;aggiornamento dell&#39;argomento tramite [richieste pull GitHub](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=en#pull-requests). Tutti i contenuti devono essere sottoposti a revisione editoriale. La revisione tecnica è facoltativa e dipende dal contenuto. Se non è necessaria alcuna revisione tecnica, il processo continua solo con una revisione editoriale. Questo processo può richiedere diverse iterazioni fino all’approvazione del contenuto.
+**Revisione, approvazione e pubblicazione del contenuto**-Il contenuto viene rivisto e modificato durante la creazione o l&#39;aggiornamento dell&#39;argomento tramite [richieste pull GitHub](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=it#pull-requests). Tutti i contenuti devono essere sottoposti a revisione editoriale. La revisione tecnica è facoltativa e dipende dal contenuto. Se non è necessaria alcuna revisione tecnica, il processo continua solo con una revisione editoriale. Questo processo può richiedere diverse iterazioni fino all’approvazione del contenuto.
 
 Dopo l’approvazione di un articolo, la richiesta di pull può essere unita al ramo di produzione. L’unione deve essere eseguita dall’autore. Dopo l&#39;unione di un argomento, è possibile pubblicarlo immediatamente in produzione utilizzando un processo manuale o automaticamente alla successiva esecuzione del processo di pubblicazione. I processi di pubblicazione vengono in genere eseguiti ogni due ore.
 
-**Notifica per nuovo contenuto**-Adobe fornirà una sezione *Novità* nell&#39;argomento [Panoramica sulle best practice](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) per informare gli utenti sugli argomenti pubblicati o aggiornati di recente. Adobe promuoverà inoltre nuovi contenuti relativi alle best practice utilizzando i canali esistenti, ad esempio il marketing e le comunicazioni interne.
+**Notifica per nuovo contenuto**-Adobe fornirà una sezione *Novità* nell&#39;argomento [Panoramica sulle best practice](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=it) per informare gli utenti sugli argomenti pubblicati o aggiornati di recente. Adobe promuoverà inoltre nuovi contenuti relativi alle best practice utilizzando i canali esistenti, ad esempio il marketing e le comunicazioni interne.
 
 ## Backlog e Kanban Board
 

@@ -47,7 +47,7 @@ Per aggiornare un modulo o un’estensione:
 
 ## Estensioni in bundle con i fornitori (VBE)
 
-Adobe ha rimosso tutti i [VBE](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/modules/upgrade) nella versione 2.4.4. I fornitori continuano a supportare queste estensioni sul Marketplace Adobe Commerce.
+Adobe ha rimosso tutti i [VBE](https://experienceleague.adobe.com/it/docs/commerce-operations/upgrade-guide/modules/upgrade) nella versione 2.4.4. I fornitori continuano a supportare queste estensioni sul Marketplace Adobe Commerce.
 
 Se si desidera continuare a utilizzare queste estensioni con Adobe Commerce 2.4.4 e versioni successive, è necessario aggiornare le dipendenze del pacchetto corrispondenti nel file `composer.json` _prima_ dell&#39;aggiornamento alla versione 2.4.4. Contatta il fornitore per il nome e la versione del pacchetto da utilizzare.
 

@@ -316,7 +316,7 @@ Analogamente all&#39;esempio precedente, generare un file CSV, ma invece di spec
 
 [Panoramica sulle traduzioni]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [dizionario di traduzione]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[configura le traduzioni]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
+[configura le traduzioni]: https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/store-localize
 [Ulteriori informazioni sui pacchetti per lingua]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

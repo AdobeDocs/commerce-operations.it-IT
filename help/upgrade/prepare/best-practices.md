@@ -57,7 +57,7 @@ Inizia ad adottare la piattaforma Adobe Commerce Extensibility, se non lo hai gi
 
 Man mano che le funzionalità di Adobe Commerce vengono continuamente ampliate, è fondamentale che tu sviluppi l’ultima versione disponibile e definisca una strategia di aggiornamento nei piani dei tuoi progetti. In questo modo potrai rimanere sicuro, conforme e aggiornato sugli ultimi miglioramenti, consentendoti di incrementare le vendite in modo più rapido, di operare in modo più efficace e di restare al passo con la concorrenza attuale e futura.
 
-Per aiutarti a pianificare e pianificare il budget per gli aggiornamenti, devi monitorare la [pianificazione delle versioni](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule). Pianifica in anticipo le attività di aggiornamento nel backlog del team. Completa questo lavoro con GA.
+Per aiutarti a pianificare e pianificare il budget per gli aggiornamenti, devi monitorare la [pianificazione delle versioni](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/schedule). Pianifica in anticipo le attività di aggiornamento nel backlog del team. Completa questo lavoro con GA.
 
 - Utilizza la versione non definitiva per scoprire ogni nuova versione. La versione non definitiva è il codice di disponibilità generale disponibile per i commercianti Adobe Commerce e per tutti i partner due settimane prima della disponibilità generale. Se disponi di più store, utilizza la versione non definitiva sullo store di base e verifica che i moduli e i temi personalizzati siano compatibili con esso.
 
@@ -73,7 +73,7 @@ Gli aggiornamenti devono essere effettuati regolarmente e in base a un budget pr
 
 Valutare il lavoro da eseguire per l&#39;aggiornamento:
 
-- Consulta le [note sulla versione](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) per comprendere l&#39;ambito e l&#39;impatto della nuova versione.
+- Consulta le [note sulla versione](https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/overview) per comprendere l&#39;ambito e l&#39;impatto della nuova versione.
 
 - Utilizza [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) per identificare potenziali problemi che devono essere risolti nel codice personalizzato prima di tentare l&#39;aggiornamento a una versione più recente.
 

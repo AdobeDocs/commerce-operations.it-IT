@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Per utilizzare il nerdlet [!DNL New Relic Observation for Adobe Commerce], assicurati di avere accesso a [!DNL New Relic].
 
-[Gestione account New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
+[Gestione account New Relic](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
 
 Dalla home page di [!DNL New Relic], selezionare la voce di menu App.
 
