@@ -2,7 +2,7 @@
 title: File di configurazione del modulo
 description: Scopri come personalizzare un modulo utilizzando i tipi di configurazione.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 80d7a7f2592e547ef70f2fac63c25be0cce9365d
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Nella tabella seguente vengono illustrati i tipi di configurazione e gli oggetti
 | --- | --- | --- | --- |
 | `address_formats.xml` | Dichiarazione formato indirizzo | primario, globale | [\Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
 | `acl.xml` | [Elenco di controllo di accesso](https://developer.adobe.com/commerce/webapi/get-started/authentication/#relationship-between-aclxml-and-webapixml) | globale | [\Magento\Framework\Acl\AclResource\Provider](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Acl/AclResource/Provider.php) |
-| `analytics.xml` | [Generazione rapporti avanzata]https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | primario, globale | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
+| `analytics.xml` | [Generazione rapporti avanzata](https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | primario, globale | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
 | `cache.xml` | Dichiarazione tipo cache | primario, globale | [\Magento\Framework\Cache\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
 | `catalog_attributes.xml` | Configurazione attributi catalogo | globale | [\Magento\Catalog\Model\Attribute\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Attribute/Config/Data.php) |
 | `config.php` e `env.php` | [Configurazione della distribuzione](../reference/deployment-files.md) | Questi file sono leggibili/scrivibili dal processore di configurazione interno. | Non ha alcun oggetto, non può essere personalizzato |
