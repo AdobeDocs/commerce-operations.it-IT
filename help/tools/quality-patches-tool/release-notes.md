@@ -3,9 +3,9 @@ title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 00153baf1c4a52d17b750db35a678b1950e00ed1
+source-git-commit: 4adac1df0382cd0ae0833599011aeb664a91ceb6
 workflow-type: tm+mt
-source-wordcount: '27482'
+source-wordcount: '28046'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,33 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=it#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
+>Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
 
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per Magento Open Source, consulta le [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.69 {#v1-1-69}
+
+* **AC-15223** (per Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9): è stato risolto un problema nella vetrina 2.4.8 a causa del quale, dopo il passaggio a un altro archivio, la pagina viene distribuita dalla cache e non riflette l&#39;archivio selezionato.
+* **ACP2E-3731** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corregge il problema per cui le esportazioni di prodotti con visibilità **[!UICONTROL Catalog, Search]** includono erroneamente record di altre visualizzazioni di store in ambienti multi-store.
+* **ACP2E-3767** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corregge il problema per cui l&#39;ultima opzione del bundle in un prodotto bundle non può essere rimossa.
+* **ACP2E-3964** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - È stato risolto il problema che impediva l&#39;elenco dei prodotti secondari di prodotti configurabili tramite l&#39;API REST quando un video veniva impostato nella raccolta.
+* **ACP2E-3977** (per Adobe Commerce >=2.4.4 &lt;2.4.9) - Corregge il problema per cui il campo **[!UICONTROL Cap Reward Points Balance At]** non può essere vuoto se è impostato [!UICONTROL Rewards Points Balance Redemption Threshold], causando un errore di convalida.
+* **ACP2E-4050** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.8) - Corregge il problema per cui le regole del prezzo del carrello non vengono applicate correttamente per i prodotti di multi-shipping quando viene utilizzato il prodotto bundle e le condizioni di sub-selezione vengono utilizzate con la spedizione gratuita abilitata.
+* **ACSD-56226** (per Adobe Commerce >=2.4.6 &lt;2.4.7) - Corregge il problema per cui le query READ nel nodo slave restituiscono dati obsoleti quando il flag `synchronous_replication` è abilitato.
+* **ACSD-57477** (per Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7): è stato risolto il problema che causava un rallentamento delle prestazioni dell&#39;elaborazione delle regole di vendita nelle richieste relative al carrello.
+* **ACSD-58108** (per Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.8) - Corregge il problema relativo al nome della tabella di join mancante nella tabella di recupero originale che causava errori con SQL dell&#39;estensione del modulo personalizzato nella griglia dell&#39;ordine.
+* **ACSD-65983** (per Adobe Commerce >=2.4.6-p10 &lt;2.4.9): è stato risolto il problema che causava la generazione di un errore durante la riconfigurazione di un preventivo di prodotto nel back-end Amministratore.
+* **ACSD-66149** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corregge il problema per cui il gestore IPN restituisce un errore *500* per tipi IPN non supportati o sconosciuti.
+* **ACSD-66153** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corregge il problema se una pagina restituisce un errore *500* a causa di una struttura di layout errata memorizzata nella cache.
+* **ACSD-66302** (per Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corregge il problema che impediva il corretto filtraggio degli elementi della lista dei desideri in base all&#39;ID archivio anziché in base al sito Web.
+* **ACSD-66311** (per Adobe Commerce >=2.4.6-p9 &lt;2.4.9) - Corregge il problema relativo al caricamento lento della griglia Aziende per gli utenti amministratori con accesso limitato ai siti Web.
+* **ACSD-66404** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9): è stato risolto il problema che impediva al processo cron di cancellare le tabelle del registro delle modifiche, causando [!DNL Galera Cluster] arresti anomali durante la gestione di grandi quantità di dati.
+* **ACSD-66952** (per Adobe Commerce >=2.4.4 &lt;2.4.9): è stato risolto il problema che causava la cancellazione della cache in ogni visita del PLP o del carrello e un sovraccarico delle prestazioni quando veniva impostata una regola di destinazione.
+* **ACSD-67264** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8): è stato risolto il problema che causava l&#39;incoerenza tra il layout del bundle e quello delle pagine di prodotto scaricabili nei diversi dispositivi.
+* **ACSD-67347** (per Adobe Commerce e Magento Open Source >=2.4.5-p11 &lt;2.4.6) - Corregge il problema se l&#39;ordine non riesce con *Impossibile acquisire un blocco* errore quando vengono utilizzati coupon con caratteri speciali e il blocco dei file è abilitato.
+* Patch sostituite: **ACP2E-3841**
 
 ## v1.1.68 {#v1-1-68}
 
