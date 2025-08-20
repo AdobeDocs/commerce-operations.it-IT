@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: c701c9ff7385821b771af2d19920ead192e4410a
+source-git-commit: 29f09e0ee426f9b58a98fdd512d7c1ac3fca2425
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -27,7 +27,7 @@ QPT v1.1.69 include le seguenti patch:
 1. **ACSD-58108**: il nome della tabella di join mancante causa errori SQL nell&#39;estensione del modulo personalizzato della griglia.
 1. **ACSD-65983**: errore durante la riconfigurazione dell&#39;offerta di prodotto aggregata in Admin.
 1. **ACSD-66149**: il gestore IPN restituisce 500 per i tipi non supportati.
-1. **ACSD-66153**: la pagina restituisce 500 a causa di una struttura di layout non corretta memorizzata nella cache.
+1. **ACSD-66153**: la pagina restituisce un errore 500 a causa di una struttura di layout non corretta nella cache.
 1. **ACSD-66302**: elementi della lista dei desideri filtrati in base all&#39;ID archivio anziché al sito Web.
 1. **ACSD-66311**: la griglia delle società viene caricata lentamente per gli amministratori con restrizioni.
 1. **ACSD-66404**: il processo Cron non riesce a cancellare le tabelle del registro delle modifiche a causa dei limiti di dimensione delle transazioni [!DNL Galera Cluster].
