@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 937acc659427b788b8af778f5ea826eacccdc70e
+source-git-commit: ba4154c109c64d3e45e6de8dc8ffd9bb9741e5b2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ QPT v1.1.68 include le seguenti patch:
 1. **ACSD-66179**: l&#39;annullamento di una fattura con il tipo di pagamento &quot;Not Capture&quot; genera una pagina di errore 404.
 1. **ACSD-66233**: gli amministratori non possono aggiungere prodotti a causa di un pop-up di elenco prodotti che non risponde.
 1. **ACSD-66506**: si è verificato un errore di back-end quando i prodotti assegnati in precedenza di un catalogo condiviso sono stati eliminati e quelli nuovi assegnati.
-1. **ACSD-66865**: il salvataggio delle regole del prezzo di catalogo invalida gli indicizzatori e fornisce un&#39;alternativa alla reindicizzazione solo dei prodotti interessati.
+1. **ACSD-66865**: il salvataggio di un **[!UICONTROL Catalog Price Rule]** invalida gli indicizzatori e fornisce un&#39;alternativa alla reindicizzazione solo dei prodotti interessati.
 1. **ACSD-66889**: errore durante la reindicizzazione inventario in CLI.
 1. **ACSD-66963**: la mutazione EstimateTotals restituisce null per gli sconti quando un codice sconto viene applicato a un carrello con prodotti virtuali.
 1. **ACSD-66965**: l&#39;opzione Stampa nella pagina Elenco richieste di acquisto causa un errore.
