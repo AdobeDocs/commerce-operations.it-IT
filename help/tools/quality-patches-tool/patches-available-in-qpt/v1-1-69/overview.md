@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 29f09e0ee426f9b58a98fdd512d7c1ac3fca2425
+source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 
 QPT v1.1.69 include le seguenti patch:
 1. **AC-15223**: la pagina Storefront mostra il contenuto memorizzato nella cache dopo il passaggio da un archivio all&#39;altro.
-1. **ACP2E-3731**: le esportazioni di prodotti con visibilità **[!UICONTROL Catalog, Search]** includono record di altre visualizzazioni dello store.
+1. **ACP2E-3731**: le esportazioni di prodotti con visibilità *[!UICONTROL Catalog, Search]* includono record di altre visualizzazioni dello store.
 1. **ACP2E-3767**: l&#39;ultima opzione bundle viene visualizzata nuovamente dopo il salvataggio di un prodotto bundle.
 1. **ACP2E-3964**: prodotti secondari configurabili con video non elencati tramite API REST.
 1. **ACP2E-3977**: il campo [!UICONTROL Cap Reward Points Balance At] non può essere lasciato vuoto.
