@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: ba4154c109c64d3e45e6de8dc8ffd9bb9741e5b2
+source-git-commit: fa5164f3118ec51e4562f7ae5073781307452bc4
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,8 @@ QPT v1.1.68 include le seguenti patch:
 1. **ACSD-66865**: il salvataggio di un **[!UICONTROL Catalog Price Rule]** invalida gli indicizzatori e fornisce un&#39;alternativa alla reindicizzazione solo dei prodotti interessati.
 1. **ACSD-66889**: errore durante la reindicizzazione inventario in CLI.
 1. **ACSD-66963**: la mutazione EstimateTotals restituisce null per gli sconti quando un codice sconto viene applicato a un carrello con prodotti virtuali.
-1. **ACSD-66965**: l&#39;opzione Stampa nella pagina Elenco richieste di acquisto causa un errore.
+1. **ACSD-66965**: l&#39;opzione **[!UICONTROL Print]** nella pagina **[!UICONTROL Requisition List]** causa un errore.
 1. **ACSD-67039**: i record cliente non sono stati salvati a causa della convalida dell&#39;attributo di sistema `rp_token`.
+
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
