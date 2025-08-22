@@ -4,13 +4,13 @@ description: Applica la patch ACSD-66139 per risolvere il problema di Adobe Comm
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 16d95ae0d58dfdc88a5fab725a37d353d3ee5c96
+exl-id: 5a1a94ca-f274-4098-8b44-d3f1a0ea65a1
+source-git-commit: 8681dd706e614f86bbee36c182b47491ec707196
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66139: l’ordine GraphQL non riesce e viene visualizzato l’errore &quot;NON DEFINITO&quot; per il carrello inattivo
 
@@ -28,7 +28,7 @@ La patch ACSD-66139 risolve il problema per cui, quando si ordina un carrello in
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` all&#39;ultima versione e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` all&#39;ultima versione e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -42,10 +42,11 @@ GraphQL restituisce un codice di errore *UNDEFINED* invece di uno specifico quan
 "Could not find a cart with ID ""%masked_cart_id""","Oh noo, we have an UNDEFINED issue, see!",module,Magento_QuoteGraphQl
 ```
 
-1. Crea una visualizzazione store nel pannello Amministratore. Vai a **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL All Stores]**. Fare clic su **[!UICONTROL Create Store View]** e per **[!UICONTROL Code]** immettere il codice `test`.
+1. Nel pannello di amministrazione, passa a **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]** > **[!UICONTROL Create Store View]** per creare una visualizzazione archivio.
+1. Imposta **[!UICONTROL Code]** su *test*.
 1. Assegna la lingua `german` alla visualizzazione dello store appena creata.
 1. Eseguire `setup:upgrade` e `setup:static-content:deploy -f`.
-1. Esegui la seguente query GraphQL con intestazione &#39;Store:test&#39;:
+1. Eseguire la seguente query GraphQL con intestazione `Store:test`:
 
 ```
 mutation {
@@ -123,7 +124,7 @@ Risposta di errore corretta:
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
