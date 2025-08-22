@@ -3,7 +3,7 @@ title: Gestire moduli ed estensioni (sviluppatore)
 description: Gestisci i moduli e le estensioni di Adobe Commerce tramite l’interfaccia della riga di comando e il gestore di pacchetti del Compositore.
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 3%
@@ -70,3 +70,5 @@ Attendere. Aggiornamento delle dipendenze in corso e installazione del modulo.
    ```bash
    composer update
    ```
+
+<!-- Last updated from includes: 2022-09-08 16:00:49 -->

@@ -3,7 +3,7 @@ title: Impostazioni PHP
 description: Segui questi passaggi per installare le estensioni PHP richieste e configurare le impostazioni PHP richieste per le installazioni locali di Adobe Commerce.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Questo argomento illustra come impostare le opzioni PHP richieste.
 >
 >La versione più recente di Adobe Commerce richiede almeno PHP 8.1. Vedi [requisiti di sistema](../system-requirements.md) per tutte le versioni supportate di PHP.
 
-Per informazioni sulla configurazione cloud, consulta [Impostazioni PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=it) nella guida _Commerce su infrastruttura cloud_.
+Per informazioni sulla configurazione cloud, consulta [Impostazioni PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) nella guida _Commerce su infrastruttura cloud_.
 
 ## Controllo processo PHP
 
@@ -210,3 +210,5 @@ Consulta i seguenti articoli di supporto Adobe Commerce per assistenza nella ris
 - [Estensione PHP mcrypt non installata correttamente](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
 - [Problemi relativi al controllo della disponibilità della versione PHP](https://support.magento.com/hc/en-us/articles/360033546411)
 - [Errori irreversibili PHP comuni e soluzioni](https://support.magento.com/hc/en-us/articles/360030568432)
+
+<!-- Last updated from includes: 2025-04-04 22:27:22 -->

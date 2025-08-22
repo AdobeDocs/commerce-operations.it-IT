@@ -2,7 +2,7 @@
 title: Installare Adobe Commerce
 description: Per installare Adobe Commerce nell’infrastruttura di tua proprietà, segui la procedura riportata di seguito.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '2093'
 ht-degree: 0%
@@ -306,3 +306,5 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 >[!TIP]
 >
 >Se disponi di un account utente per accedere al server applicazioni, vedi [impostare un umask](../next-steps/set-umask.md). Questo tipo di configurazione è tipico per l&#39;hosting condiviso.
+
+<!-- Last updated from includes: 2024-04-16 09:42:31 -->

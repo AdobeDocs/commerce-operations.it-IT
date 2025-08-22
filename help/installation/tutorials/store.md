@@ -2,7 +2,7 @@
 title: Configurare l’archivio
 description: Per configurare il tuo archivio Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -42,3 +42,5 @@ Dove la tabella seguente definisce parametri e valori:
 | `--use-secure-admin` | `1` significa che si utilizza SSL per accedere all&#39;amministratore. Prima di selezionare questa opzione, assicurati che il server web supporti SSL.<br><br>`0` significa che non utilizzi SSL con l&#39;amministratore. Questa è l&#39;impostazione predefinita. | No |
 | `--admin-use-security-key` | `1` fa in modo che l&#39;applicazione utilizzi un valore chiave generato in modo casuale per accedere alle pagine in Amministrazione e nei moduli. Questi valori chiave aiutano a prevenire attacchi di tipo cross-site script forgery. Questa è l&#39;impostazione predefinita.<br/><br/>`0` disabilita l&#39;utilizzo della chiave. | No |
 | `--magento-init-params` | Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione dell&#39;applicazione<br/><br/>Ad esempio: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | No |
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

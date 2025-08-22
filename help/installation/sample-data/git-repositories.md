@@ -2,7 +2,7 @@
 title: Clona i dati di esempio Git archivi
 description: Per installare i dati di esempio di Adobe Commerce clonando gli archivi Git, segui la procedura riportata di seguito.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -195,3 +195,5 @@ Per impostare le autorizzazioni e la proprietà del file system nell&#39;archivi
 ## Completare l&#39;installazione dei dati di esempio
 
 {{$include /help/_includes/sample-data-complete.md}}
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

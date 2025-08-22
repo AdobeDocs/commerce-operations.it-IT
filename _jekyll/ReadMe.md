@@ -1,7 +1,7 @@
 ---
-source-git-commit: ca9e04d50e69b8a51ec4a6fbcf1d35f0fb363fab
+source-git-commit: 9994f486c38df4c0dc2ff477c48f3e8f3259aa9f
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,18 @@ Questo progetto include diverse attività Rake per automatizzare vari aspetti de
 
 ### `render`
 
-Esegue il rendering dei file modello nella directory `_jekyll/templates` con i dati di `_jekyll/_data/`. Il risultato si troverà nella directory `help/includes/templated`.
+Esegue il rendering dei file modello nella directory `_jekyll/templates` con i dati di `_jekyll/_data/`. Il risultato si troverà nella directory `help/includes/templated`. Questa attività mantiene automaticamente le relazioni di inclusione e i timestamp dopo il rendering.
 
 **Utilizzo:**
 
 ```sh
 rake render
 ```
+
+**Funzionamento:**
+- Esegue lo script di rendering per generare file con modelli
+- Esegue `includes:maintain_all` per aggiornare le relazioni di inclusione e i timestamp
+- Assicura che tutti i metadati inclusi siano correnti dopo il rendering
 
 ### `image_optim`
 
@@ -77,6 +82,134 @@ Genera una mappa delle aree di Azure. Il file di dati di input deve trovarsi in 
 
 ```sh
 rake azure_regions
+```
+
+### `includes:maintain_relationships`
+
+Rileva e aggiorna il file `include-relationships.yml` analizzando tutti i file Markdown nella directory `help` per individuare le istruzioni di inclusione che utilizzano il modello `{{$include /help/_includes/filename.md}}`. Questa attività mantiene automaticamente le relazioni tra i file di contenuto principale e i relativi file inclusi.
+
+**Utilizzo:**
+
+```sh
+rake includes:maintain_relationships
+```
+
+**Funzionamento:**
+- Legge l&#39;elenco dei file di inclusione esistenti dalla directory `help/_includes`
+- Esegue la ricerca in tutti i file markdown principali per individuare quelli che fanno riferimento a ciascuno di essi
+- Utilizza il pattern `{{$include /help/_includes/filename.md}}` per identificare i riferimenti
+- Aggiorna il file `include-relationships.yml` con le relazioni individuate
+- Fornisce un riepilogo delle modifiche apportate e identifica gli inclusioni senza riferimenti
+
+### `includes:maintain_timestamps`
+
+Mantiene i timestamp di inclusione aggiungendo i timestamp di modifica del file di inclusione più recenti ai file principali. Questa attività legge il file `include-relationships.yml`, controlla la cronologia Git per ciascun file di inclusione e aggiunge o aggiorna i timestamp alla fine dei file principali.
+
+**Utilizzo:**
+
+```sh
+rake includes:maintain_timestamps
+```
+
+**Funzionamento:**
+- I caricamenti includono relazioni da `include-relationships.yml`
+- Per ogni file principale, trova la data di commit Git più recente tra i suoi file di inclusione
+- Aggiunge o aggiorna i commenti di HTML con marca temporale alla fine dei file principali
+- Utilizza il formato: `<!-- Last updated from includes: YYYY-MM-DD HH:MM:SS -->`
+- Fornisce un output dettagliato che mostra quali file di inclusione sono stati controllati e i relativi timestamp
+
+**Output di esempio:**
+
+```console
+Processing installation/advanced.md...
+  Latest include change: 2024-04-16 09:42:31
+  Include files checked: help/_includes/cli-consumers.md (2022-09-12 09:38:25), help/_includes/secure-install.md (2022-09-08 11:33:05), help/_includes/sensitive-data.md (2024-04-16 09:42:31)
+  Added new timestamp
+```
+
+### `includes:maintain_all`
+
+Un&#39;attività di convenienza che esegue `includes:maintain_relationships` e `includes:maintain_timestamps` in sequenza. Questo è il modo consigliato per mantenere sia le relazioni di inclusione che i timestamp.
+
+**Utilizzo:**
+
+```sh
+rake includes:maintain_all
+```
+
+### `unused_includes`
+
+Trova i file di inclusione nella directory `help/_includes` a cui non viene fatto riferimento da alcun file markdown. Questo aiuta a identificare i file di inclusione orfani che possono essere rimossi in modo sicuro.
+
+**Utilizzo:**
+
+```sh
+rake unused_includes
+```
+
+## Elenco delle attività disponibili
+
+Per visualizzare tutte le attività di rastremazione disponibili con le relative descrizioni, utilizzare:
+
+```sh
+rake --tasks
+```
+
+Per informazioni più dettagliate su un&#39;attività specifica, utilizzare:
+
+```sh
+rake -T [task_name]
+```
+
+## Includi attività di gestione
+
+Tutte le attività correlate all&#39;inclusione sono organizzate nello spazio dei nomi `includes` per una migliore organizzazione:
+
+```sh
+# Discover and maintain include relationships
+rake includes:maintain_relationships
+
+# Add/update timestamps based on include file changes
+rake includes:maintain_timestamps
+
+# Do both operations in sequence (recommended)
+rake includes:maintain_all
+```
+
+## Includi formato file relazioni
+
+Il file `include-relationships.yml` tiene traccia delle relazioni tra i file di contenuto principale e i relativi file inclusi. Questo file viene gestito automaticamente dall&#39;attività di rake `maintain_include_relationships`, che rileva le relazioni leggendo i file di inclusione esistenti e individuando i file principali che vi fanno riferimento.
+
+**Struttura file:**
+
+```yaml
+---
+metadata:
+  last_updated: '2025-08-22 14:04:37'
+  description: 'Index of main files and their included files for automatic timestamp updates'
+  total_relationships: 57
+  auto_discovered: true
+  discovery_date: '2025-08-22 14:04:37'
+relationships:
+  configuration/deployment/example-environment-variables.md:
+    - "/help/_includes/config-save-config.md"
+    - "/help/_includes/config-update-build-system.md"
+    - "/help/_includes/config-update-prod-system.md"
+  # ... more relationships
+```
+
+**Campi:**
+- `metadata.last_updated`: Timestamp dell&#39;ultimo aggiornamento
+- `metadata.total_relationships`: numero totale di file principali con inclusioni
+- `metadata.auto_discovered`: indica che il file è stato generato automaticamente
+- `metadata.discovery_date`: data in cui sono state individuate le prime relazioni
+- `relationships`: mapping dei file principali ai relativi file inclusi
+
+**Includi formato istruzione:**
+Nei file di contenuto principale viene utilizzata la sintassi seguente per includere altri file:
+
+```markdown
+{{$include /help/_includes/filename.md}}
 ```
 
 ## Prerequisiti

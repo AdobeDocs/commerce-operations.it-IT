@@ -4,7 +4,7 @@ description: Scopri le best practice per la gestione del codice nella fase di sv
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -115,3 +115,5 @@ Questo argomento è progettato per aiutarti a decidere se utilizzare Git o Compo
 1. **Inizia con Git, quindi passa a Compositore**
 
    Scegli un approccio di gestione del codice all’inizio del progetto. Il passaggio da Git a Compositore o viceversa, con lo sviluppo in corso, è complicato e potrebbe portare alla perdita di codice e/o di cronologia delle revisioni.
+
+<!-- Last updated from includes: 2023-08-23 15:56:59 -->

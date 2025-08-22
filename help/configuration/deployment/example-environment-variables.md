@@ -2,7 +2,7 @@
 title: Esempio di utilizzo di variabili di ambiente
 description: Vedi un esempio di come impostare valori condivisi, specifici del sistema e sensibili nel sistema di sviluppo utilizzando variabili di ambiente.
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
@@ -197,3 +197,5 @@ Questa sezione descrive come verificare le impostazioni di configurazione nellâ€
    Il valore del campo **Dominio e-mail predefinito** viene visualizzato come segue. Si tratta di unâ€™impostazione specifica del sistema.
 
    ![Verifica le impostazioni nel sistema di produzione](../../assets/configuration/split-default-domain.png)
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->
