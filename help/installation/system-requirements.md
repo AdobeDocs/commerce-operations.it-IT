@@ -48,7 +48,7 @@ opensearch:
     disk: 1024
 ```
 
-Consulta [Configurare i servizi](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) nella guida _Commerce su infrastruttura cloud_.
+Consulta [Configurare i servizi](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=it) nella guida _Commerce su infrastruttura cloud_.
 
 >[!TAB Commerce locale]
 
@@ -60,13 +60,13 @@ Consulta [Configurare i servizi](https://experienceleague.adobe.com/docs/commerc
 
 Sono disponibili impostazioni di configurazione PHP particolari, ad esempio l&#39;impostazione `memory_limit`, che consentono di evitare problemi comuni durante l&#39;utilizzo di Adobe Commerce. Vedere [Impostazioni PHP richieste](prerequisites/php-settings.md).
 
-Per informazioni sulla configurazione cloud, consulta [Impostazioni PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) nella guida _Commerce su infrastruttura cloud_.
+Per informazioni sulla configurazione cloud, consulta [Impostazioni PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=it) nella guida _Commerce su infrastruttura cloud_.
 
 ### PHP OPcache
 
 È consigliabile verificare che [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) sia abilitato per motivi di prestazioni. OPcache è abilitata in molte distribuzioni PHP. L&#39;estensione `opcache` è installata per impostazione predefinita nell&#39;infrastruttura Commerce on Cloud.
 
-Per le impostazioni locali, verificare che PHP OPcache sia installato. Vedere [Impostazioni PHP](prerequisites/php-settings.md). Oppure per indicazioni specifiche sulle impostazioni delle prestazioni, vedere le raccomandazioni software per le [impostazioni PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) nella _Guida alle best practice per le prestazioni_.
+Per le impostazioni locali, verificare che PHP OPcache sia installato. Vedere [Impostazioni PHP](prerequisites/php-settings.md). Oppure per indicazioni specifiche sulle impostazioni delle prestazioni, vedere le raccomandazioni software per le [impostazioni PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html?lang=it#php-settings) nella _Guida alle best practice per le prestazioni_.
 
 Se devi installare OPcache separatamente, consulta la [documentazione di PHP OPcache](https://www.php.net/manual/en/opcache.setup.php).
 
@@ -84,7 +84,7 @@ Le [istruzioni di installazione PHP](prerequisites/php-settings.md) includono un
 
 >[!TIP]
 >
->Per le estensioni PHP nell&#39;infrastruttura cloud, vedere [Abilitare le estensioni PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) nella _guida di Commerce su infrastruttura cloud_.
+>Per le estensioni PHP nell&#39;infrastruttura cloud, vedere [Abilitare le estensioni PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=it#enable-extensions) nella _guida di Commerce su infrastruttura cloud_.
 
 >[!BEGINTABS]
 
@@ -123,7 +123,7 @@ Storefront e amministratore:
 
 ### Server di posta
 
-Mail Transfer Agent (MTA) o un server SMTP. L&#39;infrastruttura Commerce on Cloud utilizza il servizio e-mail [SendGrid](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html).
+Mail Transfer Agent (MTA) o un server SMTP. L&#39;infrastruttura Commerce on Cloud utilizza il servizio e-mail [SendGrid](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=it).
 
 ### Memoria
 
@@ -153,17 +153,17 @@ Per alcune operazioni Adobe Commerce richiede i seguenti strumenti di sistema:
 - I certificati SSL autofirmati non sono supportati.
 - Requisito Transport Layer Security (TLS): PayPal e `repo.magento.com` richiedono entrambi TLS 1.2 o versione successiva.
 
-Per l&#39;infrastruttura Commerce on Cloud, consulta [Configurazione rapida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) nella guida _Commerce on Cloud Infrastructure_.
+Per l&#39;infrastruttura Commerce on Cloud, consulta [Configurazione rapida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=it) nella guida _Commerce on Cloud Infrastructure_.
 
 ### Xdebug
 
 Per Adobe Commerce, utilizza [php_xdebug 2.5.x](https://xdebug.org/download) o versione successiva (solo per ambienti di sviluppo; può avere un effetto negativo sulle prestazioni).
 
-Per Adobe Commerce on Cloud, consulta [Configurare Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) nella guida _Commerce on Cloud Infrastructure_.
+Per Adobe Commerce on Cloud, consulta [Configurare Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html?lang=it) nella guida _Commerce on Cloud Infrastructure_.
 
 >[!NOTE]
 >
->Si è verificato un problema noto con `xdebug` che può influire sulle installazioni di Adobe Commerce o sull&#39;accesso alla vetrina o all&#39;amministratore dopo l&#39;installazione. Vedere [Problema noto che riguarda l&#39;installazione di `xdebug`](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) nella _Knowledge Base del supporto Commerce_.
+>Si è verificato un problema noto con `xdebug` che può influire sulle installazioni di Adobe Commerce o sull&#39;accesso alla vetrina o all&#39;amministratore dopo l&#39;installazione. Vedere [Problema noto che riguarda l&#39;installazione di `xdebug`](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html?lang=it) nella _Knowledge Base del supporto Commerce_.
 
 
 <!-- Last updated from includes: 2025-08-18 10:08:31 -->
