@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
+source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,6 @@ QPT v1.1.69 include le seguenti patch:
 1. **ACSD-66404**: il processo Cron non riesce a cancellare le tabelle del registro delle modifiche a causa dei limiti di dimensione delle transazioni [!DNL Galera Cluster].
 1. **ACSD-66952**: la cache viene cancellata a ogni visita del PLP o del carrello quando viene impostata una regola di destinazione.
 1. **ACSD-67264**: i layout delle pagine dei prodotti in bundle e scaricabili non sono coerenti tra i dispositivi.
-1. **ACSD-67347**: l&#39;ordine non riesce e viene visualizzato un errore di blocco quando si utilizzano coupon di caratteri speciali e il blocco dei file.
+1. **ACSD-67347**: l&#39;ordine non riesce. Impossibile acquisire un blocco quando si utilizzano codici coupon.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
