@@ -82,31 +82,31 @@ La mutazione `estimateTotals` restituisce *null* per gli sconti quando viene app
 Le informazioni sugli sconti sono incluse per i carrelli che contengono solo prodotti virtuali.
 
     &quot;
-    {
-    &quot;dati&quot;: {
-    &quot;estimatedTotals&quot;: {
-    &quot;carrello&quot;: {
-    &quot;prezzi&quot;: {
-    &quot;sconti&quot;: [
-    {
-    &quot;importo&quot;: {
+    &lbrace;
+    &quot;dati&quot;: &lbrace;
+    &quot;estimatedTotals&quot;: &lbrace;
+    &quot;carrello&quot;: &lbrace;
+    &quot;prezzi&quot;: &lbrace;
+    &quot;sconti&quot;: &lbrack;
+    &lbrace;
+    &quot;importo&quot;: &lbrace;
     &quot;valore&quot;: 100.5,
     &quot;valuta&quot;: &quot;USD&quot;
-    },
+    &rbrace;,
     &quot;etichetta&quot;: &quot;Secondo codice sconto per test&quot;,
-    &quot;coupon&quot;: {
+    &quot;coupon&quot;: &lbrace;
     &quot;codice&quot;: &quot;z3r0c00l&quot;
-    },
+    &rbrace;,
     &quot;apply_to&quot;: &quot;ITEM&quot;,
     &quot;type&quot;: null
-    }
-    ]
-    }
-    }
-    }
-    },
+    &rbrace;
+    &rbrack;
+    &rbrace;
+    &rbrace;
+    &rbrace;
+    &rbrace;,
     &quot;extensions&quot;: {}
-    }
+    &rbrace;
     &quot;
 
 <u>Risultati effettivi</u>:
@@ -114,18 +114,18 @@ Le informazioni sugli sconti sono incluse per i carrelli che contengono solo pro
 Le informazioni sullo sconto restituiscono come *null* per i carrelli con solo prodotti virtuali.
 
     &quot;
-    {
-    &quot;dati&quot;: {
-    &quot;estimatedTotals&quot;: {
-    &quot;carrello&quot;: {
-    &quot;prezzi&quot;: {
+    &lbrace;
+    &quot;dati&quot;: &lbrace;
+    &quot;estimatedTotals&quot;: &lbrace;
+    &quot;carrello&quot;: &lbrace;
+    &quot;prezzi&quot;: &lbrace;
     &quot;sconti&quot;: null
-    }
-    }
-    }
-    },
+    &rbrace;
+    &rbrace;
+    &rbrace;
+    &rbrace;,
     &quot;estensioni&quot;: {}
-    }
+    &rbrace;
     &quot;
 
 ## Applicare la patch
