@@ -1,7 +1,7 @@
 ---
-source-git-commit: 926ca67d3878de14cf7ee6940e4226ac29a76919
+source-git-commit: 69be9bbc0fbd12d9b4ef8f9abecc1909228c19da
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -11,13 +11,28 @@ Questa directory contiene le definizioni delle attività di rake organizzate per
 
 ## Organizzazione file
 
+### `adobe-docs-tasks.rake`
+
+Contiene i requisiti comuni, le funzionalità condivise e le attività senza spazio dei nomi per le attività di rake dell’archivio della documentazione di Adobe Commerce su Experience League:
+
+- `whatsnew` - Genera dati per riepilogo notizie (impostazione predefinita: dall&#39;ultimo aggiornamento)
+- `render` - Rendering dei file con modelli e gestione include
+
 ### `includes.rake`
 
-Contiene tutte le attività di rake correlate all&#39;inclusione nello spazio dei nomi `:includes`:
+Contiene le attività di gestione di inclusione organizzate nello spazio dei nomi `:includes`:
 
-- `includes:maintain_relationships` - Individuazione e gestione delle relazioni di inclusione
+- `includes:maintain_relationships` - Individuazione e gestione delle relazioni di inclusione nei file Markdown
 - `includes:maintain_timestamps` - Aggiungi/aggiorna timestamp in base alle modifiche del file di inclusione
 - `includes:maintain_all` - Esegui entrambe le operazioni in sequenza
+- `includes:unused` - Trovare i file di inclusione inutilizzati
+
+### `images.rake`
+
+Contiene le attività di gestione delle immagini organizzate nello spazio dei nomi `:images`:
+
+- `images:optimize` - Ottimizzazione delle immagini nei file non salvati modificati
+- `images:unused` - Trova immagini inutilizzate nel progetto
 
 ## Come funziona
 
@@ -37,7 +52,7 @@ Per aggiungere un nuovo gruppo di attività correlate:
 3. Definisci le attività all’interno dello spazio dei nomi
 4. Rake li carica automaticamente
 
-## Struttura di esempio
+## Esempio di struttura
 
 ```ruby
 namespace :your_namespace do
