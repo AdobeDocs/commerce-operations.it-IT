@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
+source-git-commit: e72c99bbb5e82cd2dc77e33b7d17dfe8955e945a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -26,7 +26,7 @@ QPT v1.1.69 include le seguenti patch:
 1. **ACP2E-4050**: le regole del prezzo del carrello non vengono applicate per la spedizione multipla con prodotti bundle e la spedizione gratuita.
 1. **ACSD-56226**: le query READ restituiscono dati obsoleti con `synchronous_replication` abilitato.
 1. **ACSD-57477**: l&#39;elaborazione della regola di vendita rallenta le prestazioni nelle richieste relative al carrello.
-1. **ACSD-58108**: il nome della tabella di join mancante causa errori SQL nell&#39;estensione del modulo personalizzato della griglia.
+1. **[ACSD-58108](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension.md)**: il nome della tabella di join mancante causa errori SQL nell&#39;estensione del modulo personalizzato della griglia.
 1. **ACSD-65983**: errore durante la riconfigurazione dell&#39;offerta di prodotto aggregata in Admin.
 1. **ACSD-66149**: il gestore IPN restituisce 500 per i tipi non supportati.
 1. **ACSD-66153**: la pagina restituisce un errore 500 a causa di una struttura di layout non corretta nella cache.

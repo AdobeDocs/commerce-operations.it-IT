@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 79284826ce3e690a3e187eb12dcb3165b2931524
+source-git-commit: e72c99bbb5e82cd2dc77e33b7d17dfe8955e945a
 workflow-type: tm+mt
-source-wordcount: '8373'
+source-wordcount: '8390'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Avvisi gestiti per Adobe Commerce: avviso di CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Strumento Patch di qualità {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilizzo](quality-patches-tool/usage.md)
    - [Note sulla versione](quality-patches-tool/release-notes.md)
    - Patch disponibili nello strumento Patch di qualità {#patches-available-in-qpt}
@@ -852,6 +852,7 @@ ht-degree: 0%
          - [ACSD-66233: gli amministratori non possono aggiungere prodotti a causa di una finestra a comparsa dell’elenco di prodotti che non risponde](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66233-admins-unable-add-products-due-to-unresponsive-product-list-popup.md)
       - v1.1.69 {#v1-1-69}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.69](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/overview.md)
+         - [ACSD-58108: si verificano errori SQL nell’estensione del modulo personalizzato della griglia dell’ordine a causa di un nome di tabella di join mancante](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension.md)
          - [ACP2E-3767: dopo il salvataggio di un prodotto bundle, viene nuovamente visualizzata l’ultima opzione bundle](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acp2e-3767-last-bundle-option-reappears-after-saving-a-bundle-product.md)
          - [ACP2E-4050: [!UICONTROL Free Shipping] non applicato con pagamento multi-shipping](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acp2e-4050-cart-price-rules-fail-for-multi-shipping-with-bundle-products-and-free-shipping.md)
          - [ACSD-66311: la griglia delle società viene caricata lentamente per gli amministratori con restrizioni](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66311-companies-grid-loads-slowly-for-restricted-admins.md)
@@ -915,6 +916,6 @@ ht-degree: 0%
       - [Dati che richiedono la migrazione manuale](data-migration-tool/migrate-data/manual.md)
       - [Passaggi di migrazione post-dati](data-migration-tool/migrate-data/post-migration.md)
    - Risorse {#resources}
-      - [Risoluzione dei problemi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=it)
+      - [Risoluzione dei problemi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro modifiche](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
