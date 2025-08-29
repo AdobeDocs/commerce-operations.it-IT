@@ -4,13 +4,13 @@ description: Applica la patch ACSD-66302 per risolvere il problema Adobe Commerc
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 7f9a13a9a8cc666c8aa9d964da8aaff01913d35f
+exl-id: c1a9eadc-0321-4f5c-ba82-533286a1f24f
+source-git-commit: bec27df19ce5d34be063dce3de74ffe253c3e8f4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66302: elementi della lista dei desideri filtrati per ID negozio invece che per sito Web
 
@@ -28,7 +28,7 @@ La patch ACSD-66302 risolve il problema che causava il filtraggio degli elementi
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -48,27 +48,27 @@ Gli elementi della lista dei desideri vengono filtrati in modo errato in base al
 1. Conferma che il prodotto sia ancora presente nella lista dei desideri (comportamento corretto).
 1. Eseguire la seguente query [!DNL GraphQL]:
 
-```
-{
-  customer {
-    wishlists {
-      id
-      name
-      items_count
-      items_v2 {
-        items {
-          id
-          product {
-            uid
-            name
-            sku
-          }
-        }
-      }
-    }
-  }
-}
-```
+   ```
+   {
+     customer {
+       wishlists {
+         id
+         name
+         items_count
+         items_v2 {
+           items {
+             id
+             product {
+               uid
+               name
+               sku
+             }
+           }
+         }
+       }
+     }
+   }
+   ```
 
 1. Esegui la query sull’archivio predefinito: il prodotto viene visualizzato come previsto.
 1. Esegui la stessa query sull’archivio dei test: il prodotto non viene visualizzato.
@@ -86,7 +86,7 @@ Il prodotto scompare dalla lista dei desideri quando si passa da una visualizzaz
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
