@@ -3,9 +3,9 @@ title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 4adac1df0382cd0ae0833599011aeb664a91ceb6
+source-git-commit: edb7f2351afc346d54f62ae1278f481ba7d732f9
 workflow-type: tm+mt
-source-wordcount: '28046'
+source-wordcount: '28348'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,26 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=it#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
+>Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
 
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per Magento Open Source, consulta le [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.70 {#v1-1-70}
+
+* **AC-15210** (per Adobe Commerce e Magento Open Source >=2.4.6-p3 &lt;2.4.9) - Esegue la migrazione dell&#39;integrazione USPS dalle API obsolete degli strumenti Web alle nuove API RESTful USPS.
+* **ACSD-67102** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corregge il problema relativo al caricamento molto lento del backend di Adobe Commerce **[!UICONTROL Categories]**.
+* **ACSD-66120** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corregge il problema per cui [!DNL GraphQL] visualizza in modo errato le percentuali di sconto e i prezzi base quando i prezzi del catalogo sono configurati per includere le imposte.
+* **ACSD-66157** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.9) - Corregge il problema che il prezzo speciale non viene applicato ai siti Web creati con fusi orari diversi.
+* **ACSD-67659** (per Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corregge un problema per cui i messaggi di errore tradotti restituiscono un codice di errore NON DEFINITO.
+* **ACSD-67166** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9): è stato risolto il problema che causava l&#39;esecuzione ripetuta della query `cataloginventory_stock_status` durante il caricamento di un preventivo nella vetrina, causando chiamate di database ridondanti.
+* **ACSD-67289** (per Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corregge il problema per cui il prezzo normale non viene visualizzato quando viene applicato un prezzo speciale.
+* **ACSD-67686** (per Adobe Commerce e Magento Open Source >=2.4.4-p15 &lt;2.4.5 || >=2,4,5-p14 &lt;2,4,6 || >=2.4.6-p12 &lt;2.4.7) - Corregge il problema che si verifica un errore `Syntax Error: Unexpected <EOF>` durante l&#39;invio di una richiesta [!DNL GraphQL] vuota.
+* **ACSD-67250** (per Adobe Commerce >=2.4.7-p4 &lt;2.4.8) - Corregge il problema per cui l&#39;operazione di salvataggio **[!UICONTROL Shared Catalog]** aggiorna tutti gli elementi anziché solo quelli interessati, migliorando le prestazioni ed eliminando le operazioni non necessarie.
+* **ACSD-67030** (per Adobe Commerce >=2.4.4 &lt;2.4.9) - Risolve il problema relativo all&#39;annullamento dell&#39;assegnazione di prodotti semplici a un prodotto configurabile quando viene modificato da un amministratore con ruolo limitato.
+* Versioni aggiornate: **ACSD-54095**, **ACSD-51636**, **ACSD-51739**, **ACSD-66093**
+* Patch sostituite: **ACSD-62415**
 
 ## v1.1.69 {#v1-1-69}
 
