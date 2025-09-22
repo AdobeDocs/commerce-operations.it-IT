@@ -2,7 +2,7 @@
 title: Home Guide operative
 description: Sfoglia un indice della documentazione del prodotto operativo e di amministrazione del sistema di Adobe Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 21a4ec57b49f896cffefbec8db4ce97c161315a0
+source-git-commit: a436200f76cc200b70113daf7dff5929edf0b104
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 7%
@@ -102,4 +102,4 @@ Utilizza questa raccolta di guide per scoprire concetti, processi, strumenti e b
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2025-09-05 20:40:49 -->
+<!-- Last updated from includes: 2025-09-12 20:40:55 -->
