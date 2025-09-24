@@ -3,9 +3,9 @@ title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: edb7f2351afc346d54f62ae1278f481ba7d732f9
+source-git-commit: 4718ebd237c73913e8bc03b9370298b3504e619f
 workflow-type: tm+mt
-source-wordcount: '28348'
+source-wordcount: '28592'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,23 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=it#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
+>Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
 
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per Magento Open Source, consulta le [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.71 {#v1-1-71}
+
+* **ACSD-60624** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corregge il problema per cui **[!UICONTROL Upload Image]** non funziona per contenuti vuoti nelle sezioni [!UICONTROL Image], [!UICONTROL Banner] e [!UICONTROL Slider] in Page Builder.
+* **ACSD-67089** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corregge il problema di impaginazione nell&#39;API `inventory/export-stock-salable-qty`, che limita erroneamente `total_count` alle dimensioni della pagina.
+* **ACSD-67093** (per Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corregge il problema per cui il recupero di ordini tramite GraphQL utilizzando il filtro dell&#39;intervallo di date restituisce risultati errati.
+* **ACSD-67459** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.9) - Corregge il problema che impedisce l&#39;importazione di prodotti con descrizioni che superano i 65.536 caratteri.
+* **ACSD-67603** (per Adobe Commerce >=2.4.6 &lt;2.4.8) - Risolve il problema relativo alla generazione di sitemap per i prodotti con esperienze abilitate all&#39;inclusione delle immagini con tempi di elaborazione lunghi.
+* **ACSD-67643** (per Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corregge il problema relativo alla creazione di voci duplicate durante gli aggiornamenti pianificati in ambienti con un numero elevato di categorie nidificate.
+* **ACSD-67652** (per Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corregge il problema per cui lo stato del prodotto bundle viene restituito come esaurito nelle chiamate GraphQL anche con prodotti secondari e principali in magazzino.
+* **ACSD-67904** (per Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corregge il problema per cui non è possibile effettuare ordini se il nome della città contiene cifre (0-9), e commerciale (&amp;), punto (.) o parentesi ().
+* Sostituzione delle patch: **ACSD-61322**, **ACSD-65848**
 
 ## v1.1.70 {#v1-1-70}
 
