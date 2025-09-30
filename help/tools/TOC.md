@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 950d353cc3a3211b0fa90814d8a6af331ab8ffc3
+source-git-commit: 6bcc9b86ec0780d4de0feba5b6bd65195149c7c2
 workflow-type: tm+mt
-source-wordcount: '8449'
+source-wordcount: '8461'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Avvisi gestiti per Adobe Commerce: avviso di CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Strumento Patch di qualità {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilizzo](quality-patches-tool/usage.md)
    - [Note sulla versione](quality-patches-tool/release-notes.md)
    - Patch disponibili nello strumento Patch di qualità {#patches-available-in-qpt}
@@ -875,6 +875,7 @@ ht-degree: 0%
            [ACSD-67289: il prezzo normale non viene visualizzato quando viene applicato un prezzo speciale](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67289.md)
          - [ACSD-67166: esecuzione duplicata della query cataloginventory_stock_status durante il caricamento di un preventivo nella vetrina](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166.md)
       - v1.1.71 {#v1-1-71}
+         - [ACSD-67643: voci duplicate create durante gli aggiornamenti pianificati in ambienti di categorie nidificati elevati](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67643.md)
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)
          - [ACSD-67603: tempi di elaborazione lunghi per la generazione di sitemap per prodotti con inclusione di immagini abilitata](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
    - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
@@ -924,6 +925,6 @@ ht-degree: 0%
       - [Dati che richiedono la migrazione manuale](data-migration-tool/migrate-data/manual.md)
       - [Passaggi di migrazione post-dati](data-migration-tool/migrate-data/post-migration.md)
    - Risorse {#resources}
-      - [Risoluzione dei problemi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=it)
+      - [Risoluzione dei problemi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro modifiche](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
