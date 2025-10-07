@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: cabc3ca71176a1bde126957929037f09ca09562b
+source-git-commit: 1347c16e485c64ab961d6f6a990804cfd0d07c10
 workflow-type: tm+mt
-source-wordcount: '8537'
+source-wordcount: '8549'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Avvisi gestiti per Adobe Commerce: avviso di CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Strumento Patch di qualità {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilizzo](quality-patches-tool/usage.md)
    - [Note sulla versione](quality-patches-tool/release-notes.md)
    - Patch disponibili nello strumento Patch di qualità {#patches-available-in-qpt}
@@ -627,7 +627,7 @@ ht-degree: 0%
          - [ACSD-54887: il carrello acquisti del cliente viene cancellato dopo la scadenza della sessione del cliente](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
          - [ACSD-58141: PHPSESSID viene rigenerato nelle richieste POST per i clienti connessi se la cache L2 Redis è abilitata](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
          - [ACSD-59229: allocazione errata dei dati del gruppo di clienti a causa di un valore X-Magento-Vary obsoleto](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
-         - [ACSD-60441: errore generato dall&#39;aggiornamento dei clienti tramite l&#39;endpoint API V1/customers [!DNL REST] &#x200B;](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
+         - [ACSD-60441: errore generato dall&#39;aggiornamento dei clienti tramite l&#39;endpoint API V1/customers [!DNL REST] ](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
          - [ACSD-58352: le etichette degli attributi restituiti per l&#39;archivio predefinito vengono restituite tramite [!DNL GraphQL] API](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
          - [ACSD-59514: Forms in Admin con  [!DNL Page Builder]  errore generato nella console del browser](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
          - [ACSD-58790: corregge la funzionalità di zoom delle immagini della pagina dei dettagli del prodotto nella visualizzazione per dispositivi mobili su [!DNL Chrome]](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58790-fixes-pinch-to-zoom-functionality-on-the-product-detail-page.md)
@@ -643,7 +643,7 @@ ht-degree: 0%
          - [ACSD-60538: gli attributi non mostrano se un prodotto è disabilitato](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
          - [ACSD-60631: GraphQL restituisce un errore quando lo stesso prodotto viene assegnato a più prodotti configurabili](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60631-graphql-returns-an-error-when-same-product-is-assigned-to-multiple-configurable-products.md)
          - [ACSD-60816: [!DNL New Relic] gli script di monitoraggio del browser inseriti dall&#39;agente APM non sono conformi a CSP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
-         - [ACSD-59967: l&#39;errore JavaScript impedisce il corretto rendering di  [!DNL Google Maps] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
+         - [ACSD-59967: l&#39;errore JavaScript impedisce il corretto rendering di  [!DNL Google Maps] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
          - [ACSD-60326: la query GraphQL sullo stato del cliente [!UICONTROL Returns] restituisce un errore](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
          - [ACSD-59786: GraphQL restituisce un errore durante il recupero di un ID preventivo per un preventivo scaduto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired-quote.md)
       - v1.1.52 {#v1-1-52}
@@ -743,7 +743,7 @@ ht-degree: 0%
          - [ACSD-63090: l’eliminazione di un prodotto dall’amministratore comporta lo svuotamento del carrello](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart.md)
          - [ACSD-48570: risoluzione del problema di collegamento per reimpostazione password amministratore con codice store nell’URL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299: il prezzo speciale di un prodotto configurabile non viene visualizzato nella vetrina](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
-         - [ACSD-63325: &quot;Errore di sintassi: errore &lt; EOF > imprevisto&quot; durante l&#39;invio di una richiesta vuota [!DNL GraphQL] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
+         - [ACSD-63325: &quot;Errore di sintassi: errore &lt; EOF > imprevisto&quot; durante l&#39;invio di una richiesta vuota [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
          - [ACSD-63578: se si fa clic sull&#39;icona [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU], lo SKU non viene rimosso](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329: i valori predefiniti per i campi di data e ora non vengono impostati durante la creazione di prodotti con API REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
          - [MDVA-39305-V3: problema di accesso con abilitato [!DNL Google reCAPTCHA]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha.md)
@@ -883,6 +883,7 @@ ht-degree: 0%
          - [ACSD-67643: voci duplicate create durante gli aggiornamenti pianificati in ambienti di categorie nidificati elevati](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67643.md)
          - [ACSD-67904: non è possibile inserire ordini se il nome della città contiene cifre (0-9), e commerciale (&amp;), punto (.) o parentesi ()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
          - [ACSD-67603: tempi di elaborazione lunghi per la generazione di sitemap per prodotti con inclusione di immagini abilitata](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
+         - [ACSD-67459: impossibile importare prodotti con descrizioni di lunghezza superiore a 65.536 caratteri](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
    - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Riferimento per gli strumenti della riga di comando {#cli-reference}
    - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
@@ -902,7 +903,7 @@ ht-degree: 0%
    - [Scheda Avvisi](observation-for-adobe-commerce/alerts-tab.md)
    - [Scheda WAF](observation-for-adobe-commerce/waf-tab.md)
    - [Scheda CDN](observation-for-adobe-commerce/cdn-tab.md)
-   - [Scheda  [!DNL RabbitMQ] &#x200B;](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [Scheda  [!DNL RabbitMQ] ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Scheda Cron](observation-for-adobe-commerce/cron-tab.md)
    - [Scheda Indicizzazione](observation-for-adobe-commerce/indexing-tab.md)
    - [Scheda QuickView](observation-for-adobe-commerce/oac-quickview-tab.md)
@@ -930,6 +931,6 @@ ht-degree: 0%
       - [Dati che richiedono la migrazione manuale](data-migration-tool/migrate-data/manual.md)
       - [Passaggi di migrazione post-dati](data-migration-tool/migrate-data/post-migration.md)
    - Risorse {#resources}
-      - [Risoluzione dei problemi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=it)
+      - [Risoluzione dei problemi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro modifiche](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
