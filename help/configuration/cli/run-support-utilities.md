@@ -1,10 +1,10 @@
 ---
 title: Eseguire le utilità di supporto
-description: Risolvere i problemi relativi al progetto Commerce utilizzando l'utilità di supporto incorporata.
+description: Scopri come eseguire le utility di supporto per risolvere i problemi del progetto Adobe Commerce. Scopri gli strumenti di diagnostica e supporto incorporati.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Le utility di supporto di Adobe Commerce, denominate anche [Data Collector](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/support#data-collector), consentono agli utenti di raccogliere informazioni sulla risoluzione dei problemi del sistema che possono essere utilizzate dal team di supporto.
+Le utility di supporto di Adobe Commerce, denominate anche [Data Collector](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector), consentono agli utenti di raccogliere informazioni sulla risoluzione dei problemi del sistema che possono essere utilizzate dal team di supporto.
 
 Adobe Commerce utilizza questi backup, detti anche _dump_, per analizzare i problemi che richiedono l&#39;accesso al codice. Di seguito è riportato uno scenario tipico:
 

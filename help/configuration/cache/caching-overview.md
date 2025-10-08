@@ -1,11 +1,11 @@
 ---
 title: Configurare la memorizzazione in cache
-description: Scopri come memorizzare in cache e come configurare i meccanismi di cache per l’applicazione Adobe Commerce.
+description: Scopri i meccanismi di caching e le opzioni di configurazione per le applicazioni Adobe Commerce. Scopri alternative al caching predefinito del file system.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---

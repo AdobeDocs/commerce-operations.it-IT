@@ -1,10 +1,10 @@
 ---
 title: File di configurazione del modulo
-description: Scopri come personalizzare un modulo utilizzando i tipi di configurazione.
+description: Scopri come personalizzare i moduli utilizzando i tipi di configurazione in Adobe Commerce. Scopri le best practice per la gestione dei file di configurazione e la personalizzazione dei moduli.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 80d7a7f2592e547ef70f2fac63c25be0cce9365d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---

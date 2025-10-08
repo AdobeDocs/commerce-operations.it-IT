@@ -1,11 +1,11 @@
 ---
 title: Strategie di distribuzione per i file di visualizzazione statica
-description: Scopri le strategie di distribuzione per l’applicazione Commerce.
+description: Scopri le strategie di distribuzione dei file di visualizzazione statica nelle applicazioni Adobe Commerce. Scopri i metodi di distribuzione ottimali per diversi casi d’uso.
 feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---

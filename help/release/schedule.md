@@ -1,11 +1,11 @@
 ---
 title: Pianificazione della versione
-description: Scopri quando Adobe intende annunciare il rilascio di nuove funzioni per Adobe Commerce.
+description: Scopri quando Adobe pianifica di annunciare nuove funzioni e versioni di Adobe Commerce. Scopri le pianificazioni delle patch e i tempi di consegna delle funzionalità per una migliore pianificazione.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: b908b468f0b8abe8bb7904b9c4a626201dc919bc
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 2%
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +18,9 @@ Adobe si impegna continuamente a trovare il giusto equilibrio tra la necessità 
 
 Nuove funzioni, aggiornamenti delle funzioni, infrastruttura cloud e aggiornamenti di estensibilità vengono forniti indipendentemente dalle versioni delle patch e sono disponibili tramite moduli esterni, estensioni, strumenti o servizi web. Alcuni esempi:
 
-- ![Icona funzionalità](../assets/icons/feature.svg) [**Funzionalità e funzionalità**](https://experienceleague.adobe.com/it/docs/commerce/user-guides/release-information/release-notes-all)—Nuove funzionalità e funzionalità distribuite indipendentemente dalle versioni delle patch. Ad esempio, [B2B](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search e Product Recommendations.
+- ![Icona funzionalità](../assets/icons/feature.svg) [**Funzionalità e funzionalità**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)—Nuove funzionalità e funzionalità distribuite indipendentemente dalle versioni delle patch. Ad esempio, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search e Product Recommendations.
 
-- ![Icona infrastruttura](../assets/icons/servers.svg) [**Infrastruttura cloud**](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite): nuove funzionalità e miglioramenti per Adobe Commerce sull&#39;infrastruttura cloud e per i pacchetti della suite di strumenti cloud per Commerce, che distribuiscono e gestiscono installazioni e aggiornamenti Adobe Commerce sulla piattaforma cloud.
+- ![Icona infrastruttura](../assets/icons/servers.svg) [**Infrastruttura cloud**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite): nuove funzionalità e miglioramenti per Adobe Commerce sull&#39;infrastruttura cloud e per i pacchetti della suite di strumenti cloud per Commerce, che distribuiscono e gestiscono installazioni e aggiornamenti Adobe Commerce sulla piattaforma cloud.
 
 - ![Icona Estensibilità](../assets/icons/brackets.svg) [**Estensibilità**](https://developer.adobe.com/commerce/extensibility/)—Nuovi strumenti e servizi per sviluppatori per l&#39;estensibilità fuori processo forniti indipendentemente dalle versioni delle patch. Ad esempio, Integration Starter Kit, Admin UI SDK, Adobe I/O Events for Commerce e API Mesh.
 

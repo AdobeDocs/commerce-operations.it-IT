@@ -1,10 +1,10 @@
 ---
 title: Impostare i valori di configurazione
-description: Scopri come impostare i valori di configurazione e modificare i valori bloccati nell’amministratore.
+description: Scopri come impostare i valori di configurazione e modificare i valori Admin bloccati in Adobe Commerce. Scopri i comandi e le tecniche di configurazione avanzata.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,7 @@ dove
 
 >[!INFO]
 >
->Il comando `bin/magento config:show` visualizza i valori di qualsiasi [valore crittografato](../reference/config-reference-sens.md) come una serie di asterischi: `**&#x200B;**&#x200B;**`.
+>Il comando `bin/magento config:show` visualizza i valori di qualsiasi [valore crittografato](../reference/config-reference-sens.md) come una serie di asterischi: `******`.
 
 ### Esempi
 

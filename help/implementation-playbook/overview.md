@@ -1,12 +1,12 @@
 ---
 title: Playbook di implementazione
-description: Scopri le best practice per la pianificazione, lo sviluppo, il lancio e la manutenzione dei progetti Adobe Commerce.
+description: Scopri le best practice per la pianificazione, lo sviluppo, il lancio e la manutenzione del progetto Adobe Commerce. Scopri le metodologie per un’implementazione efficace su tutti i tipi di progetti.
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 feature: Best Practices, Cloud, Integration
-source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 6%
+source-wordcount: '259'
+ht-degree: 0%
 
 ---
 

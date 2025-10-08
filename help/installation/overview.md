@@ -1,11 +1,11 @@
 ---
 title: Panoramica sull'installazione locale
-description: Scopri il processo di installazione per le implementazioni locali di Adobe Commerce.
+description: Scopri il processo di installazione on-premise per Adobe Commerce. Scopri i requisiti del server, i passaggi di configurazione e le best practice per l’implementazione.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 9ad18dac76f171ad0f90330e1a1347baa056403b
+source-git-commit: 062267b8b06e41d89f704144e640fc1254952532
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 2%
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Questa pagina fornisce una panoramica dell’installazione di Adobe Commerce sul
 >
 >Per procedere correttamente, devi disporre di conoscenze tecniche intermedie e di accesso al server.
 
-L&#39;installazione crea un archivio Adobe Commerce completamente funzionante con una [vetrina per il cliente](https://experienceleague.adobe.com/it/docs/commerce-admin/start/storefront/storefront) e un [pannello amministrativo](https://experienceleague.adobe.com/it/docs/commerce-admin/start/admin/admin). Prima di iniziare il processo, è necessario disporre delle credenziali del database, delle informazioni sul dominio e delle chiavi di autenticazione.
+L&#39;installazione crea un archivio Adobe Commerce completamente funzionante con una [vetrina per il cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) e un [pannello amministrativo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Prima di iniziare il processo, è necessario disporre delle credenziali del database, delle informazioni sul dominio e delle chiavi di autenticazione.
 
 ## Responsabilità del commerciante
 

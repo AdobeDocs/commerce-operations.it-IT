@@ -1,10 +1,10 @@
 ---
 title: Tipi di configurazione
-description: Crea o estende i tipi di configurazione.
+description: Scopri come creare ed estendere i tipi di configurazione in Adobe Commerce. Scopri le tecniche di configurazione e personalizzazione del modulo.
 exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---

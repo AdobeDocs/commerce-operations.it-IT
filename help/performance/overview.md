@@ -1,10 +1,10 @@
 ---
 title: Panoramica
-description: Segui queste best practice per ottimizzare le prestazioni dell’implementazione di Adobe Commerce.
+description: Scopri le best practice per le prestazioni per ottimizzare l’implementazione di Adobe Commerce. Scopri strategie comprovate per massimizzare la velocità, l’efficienza e l’esperienza utente.
 exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '94'
 ht-degree: 1%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Cancellazione della cache con vernice
-description: Scopri come funziona il clearing della cache con Varnish e come utilizzarlo come acceleratore di web-caching per l’applicazione Adobe Commerce.
+description: Scopri come funziona il clearing della cache con l’acceleratore di web-caching di Varnish per Adobe Commerce. Scopri le tecniche di gestione e ottimizzazione della cache.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Dopo aver installato e configurato Vernice per funzionare con Commerce, le segue
 
 ## Configura Commerce per eliminare la vernice
 
-Commerce elimina gli host Varnish dopo aver configurato gli host Varnish utilizzando il comando [`magento setup:config:set`](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
+Commerce elimina gli host Varnish dopo aver configurato gli host Varnish utilizzando il comando [`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
 
 È possibile utilizzare il parametro facoltativo `--http-cache-hosts` per specificare un elenco separato da virgole di host e porte di ascolto di Microsoft. Configurare tutti gli host Vernice, indipendentemente dal fatto che ne siano presenti uno o più. (Non separare gli host con uno spazio).
 

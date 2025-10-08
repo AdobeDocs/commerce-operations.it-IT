@@ -1,10 +1,10 @@
 ---
 title: Strumento da riga di comando
-description: Utilizzare lo strumento da riga di comando di Commerce per eseguire attività di installazione e configurazione.
+description: Scopri come utilizzare lo strumento della riga di comando di Adobe Commerce per le attività di installazione e configurazione. Rilevamento dei comandi CLI e delle funzioni amministrative.
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Riferimento ai percorsi di configurazione dei pagamenti
-description: Consulta un elenco di valori del metodo di pagamento configurabile.
+description: Scopri i percorsi di configurazione dei pagamenti e i valori dei metodi in Adobe Commerce Admin. Scopri le opzioni di configurazione di PayPal, carta di credito e gateway di pagamento.
 feature: Configuration, Payments
 exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '4100'
+source-wordcount: '4113'
 ht-degree: 0%
 
 ---

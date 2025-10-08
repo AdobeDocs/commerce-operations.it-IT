@@ -1,10 +1,10 @@
 ---
 title: Configurare un processo cron personalizzato e un gruppo cron (tutorial)
-description: Utilizza questo tutorial per creare un processo cron personalizzato.
+description: Scopri come creare processi cron personalizzati utilizzando questo tutorial dettagliato per Adobe Commerce. Scopri la configurazione del modulo e del gruppo cron.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---

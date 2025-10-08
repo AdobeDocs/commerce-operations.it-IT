@@ -1,11 +1,11 @@
 ---
 title: Opzioni cache
-description: Configurare l'accesso allo storage della cache di basso livello.
+description: Scopri le opzioni di cache di basso livello e la configurazione dello storage in Adobe Commerce. Scopri la configurazione front-end, back-end e di storage per Redis e database.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---

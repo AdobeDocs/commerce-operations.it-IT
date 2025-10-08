@@ -3,9 +3,9 @@ title: Scheda [!UICONTROL Summary]
 description: Scopri la scheda [!UICONTROL Summary] di [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2494'
 ht-degree: 0%
 
 ---
@@ -32,19 +32,19 @@ Osservando il frame **[!UICONTROL Transaction Overview]** di cui sopra, sono sta
 
 ## [!UICONTROL 404 page errors frame]
 
-![frame errori pagina 404](../../assets/tools/404-page-errors.jpg)
+![404: il dashboard di monitoraggio degli errori mostra gli incidenti della pagina non trovati nel tempo](../../assets/tools/404-page-errors.jpg)
 
 Nel frame **[!UICONTROL 404 page errors]** sono elencati [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) e il numero di errori di pagina 404 per un intervallo di tempo selezionato.
 
 ## [!UICONTROL % of Storage Free frame]
 
-![percento del frame di archiviazione disponibile](../../assets/tools/percent-of-storage-free.jpg)
+![Grafico di utilizzo dello spazio di archiviazione che visualizza la percentuale di spazio su disco disponibile](../../assets/tools/percent-of-storage-free.jpg)
 
 Nel frame **[!UICONTROL % of Storage Free]** viene visualizzata la percentuale media di spazio libero sugli mount dell&#39;archiviazione in tutti i nodi del cluster. Ad esempio, se disponi di un cluster a tre nodi, il frame mostra \&lt;punto di montaggio\>, \&lt;nome ambiente\>. Questo fotogramma può essere ingannevole se c&#39;è una varianza tra tre nodi. Un esempio di varianza potrebbe essere se il punto di montaggio libero `/data/mysql` fosse un valore diverso nel cluster a tre nodi. Nella scheda [!UICONTROL MySQL] è presente un frame che esegue il facet dei punti di montaggio in base al nome del nodo per visualizzare con maggiore precisione lo spazio di archiviazione `/data/mysql` disponibile su ciascun nodo.
 
 ## [!UICONTROL % of system memory that is free frame]
 
-![percento della memoria di sistema che è un frame libero](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
+![Grafico utilizzo memoria di sistema con la percentuale di RAM disponibile](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
 Il **% della memoria di sistema disponibile** frame visualizza, per nodo, la quantità di memoria di sistema disponibile su ciascun nodo.
 
@@ -58,11 +58,11 @@ Nel frame **[!UICONTROL Swap memory free in bytes]** viene visualizzata, per nod
 
 ![Percentuale CPU per host](../../assets/tools/cpu-percent-by-host.jpg)
 
-L&#39;aggregato di tutti gli ambienti e i nodi viene visualizzato nel frame **[!UICONTROL CPU % by host]**. Devi deselezionare gli ambienti non di produzione. Inoltre, tieni presente tutte le istanze in cui non sono presenti tutti i nodi per l’ambiente di produzione. Per ulteriori suggerimenti sull&#39;utilizzo intensivo di CPU, fare riferimento a [Risoluzione dei problemi relativi alle prestazioni con New Relic su Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=it).
+L&#39;aggregato di tutti gli ambienti e i nodi viene visualizzato nel frame **[!UICONTROL CPU % by host]**. Devi deselezionare gli ambienti non di produzione. Inoltre, tieni presente tutte le istanze in cui non sono presenti tutti i nodi per l’ambiente di produzione. Per ulteriori suggerimenti sull&#39;utilizzo intensivo di CPU, fare riferimento a [Risoluzione dei problemi relativi alle prestazioni con New Relic su Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
-![avvisi durante l&#39;intervallo di tempo](../../assets/tools/alerts-during-timeframe.jpg)
+![Il dashboard delle notifiche di avviso mostra gli incidenti nel periodo di tempo selezionato](../../assets/tools/alerts-during-timeframe.jpg)
 
 **[!UICONTROL Alerts during timeframe]** visualizza tutti gli avvisi, incluso [!UICONTROL Managed Alerts] aggiunti dal supporto Adobe Commerce.
 
@@ -70,7 +70,7 @@ L&#39;aggregato di tutti gli ambienti e i nodi viene visualizzato nel frame **[!
 
 ![Utilizzo di CPU](../../assets/tools/cpu-usage.jpg)
 
-Se il frame **[!UICONTROL CPU Usage]** è vuoto, significa che l&#39;applicazione di infrastruttura di [!DNL New Relic] non è abilitata. Se il tuo sito è su Starter, queste informazioni non vengono visualizzate. Se il tuo sito è su Pro, apri un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it) per abilitare [!DNL New Relic Infrastructure] per il tuo sito.
+Se il frame **[!UICONTROL CPU Usage]** è vuoto, significa che l&#39;applicazione di infrastruttura di [!DNL New Relic] non è abilitata. Se il tuo sito è su Starter, queste informazioni non vengono visualizzate. Se il tuo sito è su Pro, apri un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) per abilitare [!DNL New Relic Infrastructure] per il tuo sito.
 
 ## [!UICONTROL Average Response Time]
 
@@ -139,7 +139,7 @@ Il frame **[!UICONTROL API Calls by IP]** consente di identificare il traffico p
 
 ## [!UICONTROL API Calls by IP, details by URL]
 
-![chiamate api per dettagli ip per url](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
+![Analisi della richiesta API che mostra le chiamate raggruppate per indirizzo IP e URL endpoint](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
 
 Il frame **[!UICONTROL API Calls by IP, details by URL]** fornisce i dettagli del traffico pesante contro le API e i dettagli degli URL che effettuano le richieste.
 
@@ -332,13 +332,13 @@ Il frame **[!UICONTROL Fastly Cache]** mostra una visualizzazione aggregata dell
 
 ## [!UICONTROL Page Rendering]
 
-![rendering pagina](../../assets/tools/page-rendering.jpg)
+![Metriche delle prestazioni delle pagine che mostrano l&#39;analisi del tempo di rendering](../../assets/tools/page-rendering.jpg)
 
 Il frame **[!UICONTROL Page Rendering]** visualizza la durata media del rendering della pagina della settimana corrente dall&#39;origine di visualizzazione della pagina di [!DNL New Relic] rispetto alla settimana precedente nello stesso periodo di tempo.
 
 ## [!UICONTROL Page loading detail]
 
-![dettagli di caricamento pagina](../../assets/tools/page-loading-detail.png)
+![Dettagliata suddivisione delle prestazioni di caricamento delle pagine che mostra i componenti del tempo di caricamento](../../assets/tools/page-loading-detail.png)
 
 Il frame **[!UICONTROL Page loading detail]** descrive gli eventi di caricamento della pagina. Descrive il significato di questi facet. Di seguito è riportata la query eseguita per questo frame:
 
@@ -384,7 +384,7 @@ Il frame **[!UICONTROL Order transactions (default?)]** cerca le transazioni `re
 * &#39;%È possibile risolvere il problema aggiornando il servizio Elasticsearch nell&#39;infrastruttura Magento Cloud alla versione%&#39; come &#39;ver_err&#39;
 * Lo stato di integrità del cluster &#39;%cluster è cambiato da \[GIALLO\] a \[ROSSO\] (motivo:%&#39; come &#39;giallo_rosso&#39;
 * &#39;%Nessuno spazio disponibile nel dispositivo%&#39; come &#39;no_space&#39;
-* &#39;% Impossibile eseguire &lbrack;SearchRequest&lbrace;searchType=%&#39; come &#39;failed_query&#39;
+* &#39;% Impossibile eseguire [SearchRequest{searchType=%&#39; come &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 

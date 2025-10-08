@@ -1,10 +1,10 @@
 ---
 title: Note sulla versione di Adobe Commerce
-description: Consulta le note sulla versione di Adobe Commerce.
+description: Scopri le note sulla versione di Adobe Commerce, compresi le funzioni più recenti, i miglioramenti e gli aggiornamenti di sicurezza. Scopri le correzioni di bug, i problemi noti e le linee guida per l’aggiornamento.
 exl-id: 984d42e1-d8f8-4170-936d-0884a9c50c1b
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '29'
+source-wordcount: '45'
 ht-degree: 0%
 
 ---

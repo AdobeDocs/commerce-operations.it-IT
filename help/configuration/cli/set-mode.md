@@ -1,10 +1,10 @@
 ---
 title: Impostare la modalità operativa
-description: Informazioni sull’impostazione delle modalità operative di Adobe Commerce.
+description: Scopri come impostare le modalità operative di Adobe Commerce tra sviluppatore e produzione. Scopri i comandi di cambio modalità e le implicazioni relative alla sicurezza.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---

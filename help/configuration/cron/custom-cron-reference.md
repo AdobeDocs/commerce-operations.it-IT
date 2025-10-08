@@ -1,10 +1,10 @@
 ---
 title: Riferimento a processo cron personalizzato e gruppo cron
-description: Scopri come personalizzare i nodi utilizzando i gruppi cron.
+description: Scopri come personalizzare gli utenti con Gruppi cron e schede cronologiche in Adobe Commerce. Scopri la configurazione del modulo personalizzato e l’attività pianificata.
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---

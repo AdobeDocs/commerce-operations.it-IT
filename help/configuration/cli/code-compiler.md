@@ -1,10 +1,10 @@
 ---
 title: Compilatore di codice
-description: Scopri come eseguire il compilatore di codice dalla riga di comando.
+description: Scopri come eseguire il compilatore del codice Adobe Commerce dalla riga di comando. Scopri i processi di compilazione e le tecniche di ottimizzazione.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---

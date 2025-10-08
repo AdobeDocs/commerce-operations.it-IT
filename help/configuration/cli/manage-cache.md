@@ -1,10 +1,10 @@
 ---
 title: Gestire la cache
-description: Gestisci i tipi di cache e visualizza lo stato della cache dalla riga di comando tramite Commerce CLI
+description: Scopri come gestire i tipi di cache e visualizzare lo stato della cache utilizzando i comandi CLI di Adobe Commerce. Scopri le tecniche di gestione e ottimizzazione della cache.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Puoi utilizzare il sistema di gestione della cache di Adobe Commerce per miglior
 >[!NOTE]
 >
 >
->Gli amministratori del sito di Commerce possono gestire la cache dall’amministratore utilizzando lo strumento Sistema di gestione della cache. Consulta [Gestione cache](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/cache-management) nella _Guida di Admin Systems_.
+>Gli amministratori del sito Commerce possono gestire la cache dall&#39;amministratore utilizzando lo strumento Cache Management System. Consulta [Gestione cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) nella _Guida di Admin Systems_.
 
 
 ## Visualizzare lo stato della cache
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Per una descrizione dettagliata dei tipi di cache predefiniti supportati da Adobe Commerce, vedi [Cache](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/cache-management#caches) nella _Guida ai sistemi di amministrazione_.
+>Per una descrizione dettagliata dei tipi di cache predefiniti supportati da Adobe Commerce, vedi [Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) nella _Guida ai sistemi di amministrazione_.
 
 
 ## Abilitare o disabilitare i tipi di cache

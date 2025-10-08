@@ -1,10 +1,10 @@
 ---
 title: Creare collegamenti simbolici a file LESS
-description: Scopri come creare collegamenti simbolici a file LESS.
+description: Scopri come creare collegamenti simbolici a file LESS per lo sviluppo Adobe Commerce. Scopri il collegamento dei fogli di stile e l’ottimizzazione del flusso di lavoro di sviluppo.
 exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---

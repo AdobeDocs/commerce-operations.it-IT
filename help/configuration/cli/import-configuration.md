@@ -1,10 +1,10 @@
 ---
 title: Importare dati dai file di configurazione
-description: Importa le impostazioni di configurazione di Adobe Commerce dai file di configurazione.
+description: Scopri come importare le impostazioni di configurazione di Adobe Commerce dai file di configurazione. Scopri i processi di distribuzione della pipeline e importazione del database.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---

@@ -2,9 +2,9 @@
 title: Gestire le estensioni di terze parti
 description: Segui questi passaggi per installare, abilitare, aggiornare e disinstallare le estensioni Adobe Commerce.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: f057cf082eeab1e34957e284817c6b93517de21b
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Le estensioni includono:
 - Temi (cambia l’aspetto della vetrina e dell’amministratore)
 - Pacchetti di lingua (localizza la vetrina e Amministratore)
 
-Questo argomento spiega come utilizzare l&#39;interfaccia della riga di comando per gestire le estensioni di terze parti acquistate da Commerce Marketplace per _progetti locali_. Per i progetti di infrastruttura cloud, consulta [Gestione estensioni](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+Questo argomento spiega come utilizzare l&#39;interfaccia della riga di comando per gestire le estensioni di terze parti acquistate da Commerce Marketplace per _progetti locali_. Per i progetti di infrastruttura cloud, consulta [Gestione estensioni](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 È possibile utilizzare la stessa procedura per installare l&#39;estensione _any_; tutto ciò che serve è il nome e la versione del Compositore dell&#39;estensione. Per trovarlo, aprire il file `composer.json` dell&#39;estensione e prendere nota dei valori per `"name"` e `"version"`.
 
@@ -72,7 +72,7 @@ Per ottenere il nome e la versione del Compositore dell&#39;estensione da Commer
 
 1. Trova l’estensione da installare e annota il nome e la versione del componente.
 
-   ![I dettagli tecnici mostrano il nome del Compositore dell&#39;estensione](../../assets/installation/marketplace-extension-technical-details.png)
+   ![Dettagli tecnici dell&#39;estensione che visualizzano il nome del pacchetto Composer per l&#39;installazione](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >

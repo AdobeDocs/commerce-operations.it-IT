@@ -1,10 +1,10 @@
 ---
 title: Comandi comuni
-description: Visualizzare un esempio di comandi e utilizzo comuni di Commerce CLI.
+description: Scopri i comandi CLI comuni di Adobe Commerce e i relativi esempi di utilizzo. Scopri gli strumenti essenziali della riga di comando per lo sviluppo e l’amministrazione.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 3d0e6d6517e28a32816bfe2b328edfba97523740
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---

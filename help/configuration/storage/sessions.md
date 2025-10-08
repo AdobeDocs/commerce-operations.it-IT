@@ -1,11 +1,11 @@
 ---
 title: Percorso di archiviazione sessione
-description: Scopri dove vengono memorizzati i file della sessione.
+description: Scopri le posizioni di archiviazione delle sessioni e la gestione dei file in Adobe Commerce. Scopri la logica di archiviazione e le opzioni di configurazione.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Come utente con privilegi di `root`, apri il file `php.ini` e cerca il valore di
 
 ## Gestisci dimensioni sessione
 
-Consulta la [Gestione delle sessioni](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/security/security-session-management) nella _Guida utente_.
+Consulta la [Gestione delle sessioni](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) nella _Guida utente_.
 
 ## Configurazione della raccolta di oggetti inattivi
 

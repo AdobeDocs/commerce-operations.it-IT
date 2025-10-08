@@ -1,10 +1,10 @@
 ---
 title: Installazione rapida on-premise
-description: Per installare Adobe Commerce nell’infrastruttura di tua proprietà, segui la procedura riportata di seguito.
+description: Scopri come installare Adobe Commerce nella tua infrastruttura utilizzando Composer. Scopri i passaggi rapidi e i requisiti di configurazione.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 60db3da9154e76032c88d687b6b6e22d7b81f9ae
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Per ottenere il metapacchetto Adobe Commerce:
 
    >[!NOTE]
    >
-   > Se si utilizza un file Composer `[auth.json](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` o una variabile di ambiente configurata con le chiavi di autenticazione di Commerce, non viene richiesto di immettere le chiavi di autenticazione.
+   > Se si utilizza un file Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` o una variabile di ambiente configurata con le chiavi di autenticazione di Commerce, non viene richiesto di immettere le chiavi di autenticazione.
 
    Se si verificano errori, ad esempio `Could not find package...` o `...no matching package found`, verificare che il comando non contenga errori di battitura. Se riscontri ancora errori, potresti non essere autorizzato a scaricare Adobe Commerce. Contatta il [Supporto Adobe Commerce](https://support.magento.com/hc/en-us) per assistenza.
 

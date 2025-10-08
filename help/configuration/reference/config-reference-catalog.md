@@ -1,11 +1,11 @@
 ---
 title: Riferimento percorsi di configurazione catalogo
-description: Consulta un elenco di valori di configurazione del catalogo.
+description: Scopri i percorsi e i valori di configurazione del catalogo nelle impostazioni di amministrazione di Adobe Commerce. Scopri le opzioni di configurazione di prodotto, categoria e gestione catalogo.
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ Questi valori di configurazione sono disponibili nell&#39;amministratore in **Ar
 | Nome | Percorso configurazione | Solo Commerce? |
 |--------------|--------------|--------------|
 | Maschera per SKU | `catalog/fields_masks/sku` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Maschera per metatitolo | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Maschera per parole chiave meta | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Maschera per descrizione metadati | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Maschera per titolo Meta | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Maschera per parole chiave Meta | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Maschera per descrizione Meta | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modalità elenco | `catalog/frontend/list_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Prodotti per pagina sulla griglia valori consentiti | `catalog/frontend/grid_per_page_values` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Prodotti per pagina sulla griglia Valore predefinito | `catalog/frontend/grid_per_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -80,8 +80,8 @@ Questi valori di configurazione sono disponibili nell&#39;amministratore in **Ar
 | Usa il percorso delle categorie per gli URL dei prodotti | `catalog/seo/product_use_categories` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Crea un reindirizzamento permanente per gli URL se la chiave URL è stata modificata | `catalog/seo/save_rewrites_history` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Separatore titolo pagina | `catalog/seo/title_separator` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Usa tag meta collegamento canonico per le categorie | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Usa tag meta collegamento canonico per i prodotti | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Usa Tag Meta Collegamento Canonico Per Le Categorie | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Utilizza il tag Meta di collegamento canonico per i prodotti | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Abilita | `catalog/magento_catalogpermissions/enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Consenti esplorazione categoria | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Gruppi di clienti | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
@@ -151,7 +151,7 @@ Questi valori di configurazione sono disponibili nell&#39;amministratore in **Ar
 
 ## Percorsi di Visual Merchandiser
 
-[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
+[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
 
 Questi valori di configurazione sono disponibili nell&#39;amministratore in **Archivi** > Impostazioni > **Configurazione** > **Catalogo** > **Visual Merchandiser**.
 

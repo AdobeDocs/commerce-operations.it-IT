@@ -1,11 +1,11 @@
 ---
 title: Best practice per le prestazioni del checkout
-description: Scopri come ottimizzare le prestazioni delle esperienze di pagamento sul tuo sito Adobe Commerce.
+description: Scopri le best practice sulle prestazioni di pagamento in Adobe Commerce. Scopri le linee guida per l’implementazione e le strategie di ottimizzazione.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Best practice per le prestazioni del checkout
 
-Il processo di [estrazione](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) in Adobe Commerce è un aspetto critico dell&#39;esperienza di vetrina. Si basa sulle funzionalità integrate [cart](https://experienceleague.adobe.com/it/docs/commerce-admin/start/storefront/storefront#shopping-cart) e [checkout](https://experienceleague.adobe.com/it/docs/commerce-admin/start/storefront/storefront#checkout-page).
+Il processo di [estrazione](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) in Adobe Commerce è un aspetto critico dell&#39;esperienza di vetrina. Si basa sulle funzionalità integrate [cart](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) e [checkout](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page).
 
 Le prestazioni sono fondamentali per mantenere una buona esperienza utente. Puoi ottimizzare le prestazioni di estrazione configurando le seguenti opzioni per l&#39;**elaborazione di ordini ad alta velocità**:
 
@@ -174,13 +174,13 @@ L&#39;impostazione globale _Abilita inventario al caricamento del carrello_ dete
 
 Se è disabilitata, il controllo dell’inventario non viene eseguito quando si aggiunge un prodotto al carrello. Se questo controllo di inventario viene saltato, alcuni scenari esauriti potrebbero generare altri tipi di errori. Un controllo di inventario _always_ si verifica al passaggio di posizionamento dell&#39;ordine, anche se disabilitato.
 
-**Abilita controllo inventario al caricamento del carrello** è abilitato (impostato su Sì) per impostazione predefinita. Per disabilitare il controllo dell&#39;inventario durante il caricamento del carrello, impostare **[!UICONTROL Enable Inventory Check On Cart Load]** su `No` nella sezione **Archivi** > **Configurazione** > **Catalogo** > **Inventario** > **Opzioni Stock**. Consulta [Configurare le opzioni globali](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/configuration/global-options) e [Inventario catalogo](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/guide-overview) nella _Guida utente_.
+**Abilita controllo inventario al caricamento del carrello** è abilitato (impostato su Sì) per impostazione predefinita. Per disabilitare il controllo dell&#39;inventario durante il caricamento del carrello, impostare **[!UICONTROL Enable Inventory Check On Cart Load]** su `No` nella sezione **Archivi** > **Configurazione** > **Catalogo** > **Inventario** > **Opzioni Stock**. Consulta [Configurare le opzioni globali](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options) e [Inventario catalogo](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) nella _Guida utente_.
 
 ## Bilanciamento del carico
 
 È possibile bilanciare il carico tra nodi diversi abilitando connessioni secondarie per il database MySQL e l&#39;istanza Redis.
 
-Adobe Commerce può leggere più database o istanze Redis in modo asincrono. Se si utilizza Commerce nell&#39;infrastruttura cloud, è possibile configurare le connessioni secondarie modificando i valori [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) e [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) nel file `.magento.env.yaml`. Poiché solo un nodo deve gestire il traffico di lettura/scrittura, l&#39;impostazione delle variabili su `true` determina la creazione di una connessione secondaria per il traffico di sola lettura. Impostare i valori su `false` per rimuovere qualsiasi array di connessione di sola lettura esistente dal file `env.php`.
+Adobe Commerce può leggere più database o istanze Redis in modo asincrono. Se si utilizza Commerce nell&#39;infrastruttura cloud, è possibile configurare le connessioni secondarie modificando i valori [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) e [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) nel file `.magento.env.yaml`. Poiché solo un nodo deve gestire il traffico di lettura/scrittura, l&#39;impostazione delle variabili su `true` determina la creazione di una connessione secondaria per il traffico di sola lettura. Impostare i valori su `false` per rimuovere qualsiasi array di connessione di sola lettura esistente dal file `env.php`.
 
 Esempio del file `.magento.env.yaml`:
 

@@ -1,10 +1,10 @@
 ---
 title: Processi Cron
-description: Scopri i gruppi cron e come creare un processo cron personalizzato.
+description: Scopri i gruppi cron e come creare processi cron personalizzati in Adobe Commerce. Scopri la configurazione dell’attività pianificata e del gruppo cron.
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -21,5 +21,5 @@ L&#39;applicazione Commerce fornisce i seguenti gruppi cron:
 - `index`, che aggiorna [indici](../cli/manage-indexers.md)
 - `consumers`, che esegue la coda di messaggi [consumer](../cli/start-message-queues.md)
 - Questi argomenti sono disponibili solo in Adobe Commerce
-   - `staging`, che esegue [Attività relative alla gestione temporanea](https://experienceleague.adobe.com/it/docs/commerce-admin/content-design/staging/content-staging)
+   - `staging`, che esegue [Attività relative alla gestione temporanea](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging)
    - `catalog_event`, che esegue le attività per la destinazione e le regole del carrello acquisti

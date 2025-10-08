@@ -1,10 +1,10 @@
 ---
 title: Installazione on-premise avanzata
-description: Scopri gli scenari di installazione avanzata per Adobe Commerce sull’infrastruttura di tua proprietà.
+description: Scopri gli scenari di installazione avanzata per le distribuzioni Adobe Commerce on-premise. Scopri configurazioni complesse e opzioni di configurazione personalizzate.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2317'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Le opzioni seguenti specificano le informazioni utente e le credenziali per l’
 
 Puoi creare l’utente amministratore durante o dopo l’installazione. Se crei l’utente durante l’installazione, sono necessarie tutte le variabili delle credenziali amministratore. Vedi [Esempi di installazioni localhost](#sample-localhost-installations).
 
-Nelle tabelle seguenti sono disponibili molti parametri di installazione, ma non tutti. Per un elenco completo, vedere [Riferimento agli strumenti della riga di comando](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+Nelle tabelle seguenti sono disponibili molti parametri di installazione, ma non tutti. Per un elenco completo, vedere [Riferimento agli strumenti della riga di comando](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nome | Valore | Obbligatorio |
 |--- |--- |--- |

@@ -1,10 +1,10 @@
 ---
 title: Conversione di file di layout
-description: Converte i file di layout XML.
+description: Scopri come convertire i file di layout XML utilizzando gli strumenti della riga di comando di Adobe Commerce. Scopri gli aggiornamenti dei fogli di stile XSLT e i processi di conversione dei file.
 exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---

@@ -1,12 +1,12 @@
 ---
 title: Blocco ESI vernice
-description: Scopri le inclusioni lato Edge e come utilizzarle per incorporare le pagine web.
+description: Scopri le funzioni ESI (Varnish Edge Side Includes) e come incorporare le pagine web per Adobe Commerce. Scopri l’implementazione e l’ottimizzazione dei blocchi ESI.
 badge: label="Contributo di Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
