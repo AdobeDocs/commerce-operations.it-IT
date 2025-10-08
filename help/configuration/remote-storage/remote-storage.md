@@ -30,7 +30,7 @@ L&#39;abilitazione dell&#39;archiviazione remota potrebbe influire sull&#39;espe
 
 >[!INFO]
 >
->- L’archiviazione remota è disponibile solo per Commerce versione 2.4.2 e successive. Consulta le [2.4.2 note sulla versione](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
+>- L’archiviazione remota è disponibile solo per Commerce versione 2.4.2 e successive. Consulta le [2.4.2 note sulla versione](https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- Il modulo di archiviazione remota dispone del supporto _limitato_ su Adobe Commerce nell&#39;infrastruttura cloud. Adobe non è in grado di risolvere completamente i problemi relativi al servizio adattatore di archiviazione di terze parti. Consulta [Configurare l&#39;archiviazione remota per Commerce sull&#39;infrastruttura cloud](cloud-support.md) per informazioni sull&#39;implementazione dell&#39;archiviazione remota per i progetti cloud.
 
@@ -91,7 +91,7 @@ Dopo aver abilitato l&#39;archiviazione remota per una scheda specifica, è poss
 
 >[!INFO]
 >
->Il comando sync esegue la migrazione solo dei file nella directory `pub/media`, _not_ i file di importazione/esportazione nella directory `var`. Vedi [Importazione/esportazione pianificata](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) nella _Guida utente di Commerce 2.4_.
+>Il comando sync esegue la migrazione solo dei file nella directory `pub/media`, _not_ i file di importazione/esportazione nella directory `var`. Vedi [Importazione/esportazione pianificata](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=it) nella _Guida utente di Commerce 2.4_.
 
 <!-- link definitions -->
 
