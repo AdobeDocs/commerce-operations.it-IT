@@ -248,7 +248,7 @@ Un tag `<field>` può avere i seguenti valori per l&#39;attributo `type=""`:
 | `select` | Menu a discesa Normal, potrebbe essere necessario un `source_model` personalizzato. Utilizzato anche per `Yes/No` selezioni. Vedi `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` per un esempio. |
 | `multiselect` | Come `select`, ma sono valide più opzioni. |
 | `button` | Pulsante che attiva un evento immediato. Richiede un modello front-end personalizzato per definire il testo del pulsante e l’azione. Vedi `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` per un esempio. |
-| `obscure` | Un campo di testo con il valore crittografato e visualizzato come `****`. Se si modifica il tipo utilizzando &quot;Ispect Element&quot; nel browser, il valore non viene visualizzato. |
+| `obscure` | Un campo di testo con il valore crittografato e visualizzato come `**&#x200B;**`. Se si modifica il tipo utilizzando &quot;Ispect Element&quot; nel browser, il valore non viene visualizzato. |
 | `password` | Come `obscure`, tranne per il fatto che il valore nascosto non è crittografato e la modifica forzata del tipo tramite &quot;Ispect Element&quot; nel browser non rivela il valore. |
 | `file` | Consente di caricare un file per l’elaborazione. |
 | `label` | Visualizza un&#39;etichetta anziché un campo modificabile. Utilizzare questo tipo quando un campo è modificabile solo su ambiti specifici, ad esempio solo a livello di visualizzazione archivio. |

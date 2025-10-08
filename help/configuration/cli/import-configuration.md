@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Quando si configura un sistema di produzione utilizzando il modello di distribuzione della pipeline [ di Commerce 2.2 ](../deployment/technical-details.md), è necessario _importare_ le impostazioni di configurazione da `config.php` e `env.php` nel database.
+Quando si configura un sistema di produzione utilizzando il modello di distribuzione della pipeline [&#x200B; di Commerce 2.2 &#x200B;](../deployment/technical-details.md), è necessario _importare_ le impostazioni di configurazione da `config.php` e `env.php` nel database.
 Queste impostazioni includono percorsi e valori di configurazione, siti web, store, visualizzazioni store e temi.
 
 Dopo aver importato siti Web, store, visualizzazioni di store e temi, puoi creare attributi di prodotto e applicarli a siti Web, store e visualizzazioni di store nel sistema di produzione.
