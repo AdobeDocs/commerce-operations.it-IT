@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Comunicazione server web sicura
 
-In questo argomento viene illustrato un esempio di protezione delle comunicazioni tra il server Web e il motore di ricerca (Elasticsearch o OpenSearch) tramite una combinazione di crittografia TLS (Transport Layer Security) e autenticazione di base HTTP [1. ](https://datatracker.ietf.org/doc/html/rfc2617) Facoltativamente puoi anche configurare altri tipi di autenticazione; forniamo i riferimenti per tali informazioni.
+In questo argomento viene illustrato un esempio di protezione delle comunicazioni tra il server Web e il motore di ricerca (Elasticsearch o OpenSearch) tramite una combinazione di crittografia TLS (Transport Layer Security) e autenticazione di base HTTP [1. &#x200B;](https://datatracker.ietf.org/doc/html/rfc2617) Facoltativamente puoi anche configurare altri tipi di autenticazione; forniamo i riferimenti per tali informazioni.
 
 Un termine precedente, Secure Sockets Layer (SSL), viene spesso utilizzato in modo intercambiabile con TLS. In questo argomento si fa riferimento a *TLS*.)
 

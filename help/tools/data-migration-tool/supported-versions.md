@@ -34,4 +34,4 @@ Se effettui la migrazione da Magento Open Source ad Adobe Commerce, sono support
 
 ## Migrazione alla versione
 
-Per informazioni sulle versioni supportate (quelle a cui stai eseguendo la migrazione), consulta la [!DNL Data Migration Tool]pagina sulla versione[ di ](https://github.com/magento/data-migration-tool/releases).
+Per informazioni sulle versioni supportate (quelle a cui stai eseguendo la migrazione), consulta la [!DNL Data Migration Tool]pagina sulla versione[&#x200B; di &#x200B;](https://github.com/magento/data-migration-tool/releases).

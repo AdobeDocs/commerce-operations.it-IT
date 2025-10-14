@@ -358,7 +358,7 @@ Per impostare la variabile di ambiente:
 
 Per motivi di sicurezza, Adobe Commerce richiede determinate autorizzazioni sul file system. Le autorizzazioni sono diverse da _[proprietà](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. La proprietà determina chi può eseguire azioni sul file system; le autorizzazioni determinano ciò che l’utente può fare.
 
-Le directory nel file system devono essere scrivibili dal gruppo [ del proprietario del file system ](../../installation/prerequisites/file-system/overview.md).
+Le directory nel file system devono essere scrivibili dal gruppo [&#x200B; del proprietario del file system &#x200B;](../../installation/prerequisites/file-system/overview.md).
 
 Per verificare che le autorizzazioni del file system siano impostate correttamente, accedere al server applicazioni o utilizzare l&#39;applicazione di gestione file del provider di hosting.
 

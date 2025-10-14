@@ -29,7 +29,7 @@ chmod +x ./uct/bin/uct
 
 [!DNL Upgrade Compatibility Tool] è uno strumento che controlla un&#39;istanza personalizzata di Adobe Commerce rispetto a una versione specifica analizzando tutti i moduli in essa installati. Restituisce un elenco di problemi critici, errori e avvisi che devono essere risolti prima dell’aggiornamento alla versione più recente di Adobe Commerce.
 
-Per ulteriori informazioni su [, consulta questa ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=it)esercitazione video:02 (06[!DNL Upgrade Compatibility Tool]).
+Per ulteriori informazioni su [, consulta questa &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=it)esercitazione video:02 (06[!DNL Upgrade Compatibility Tool]).
 
 Comandi disponibili per [!DNL Upgrade Compatibility Tool] in un&#39;interfaccia della riga di comando:
 
