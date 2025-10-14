@@ -18,7 +18,7 @@ Lo scopo di questa pianificazione è quello di fornire le date in cui Adobe pian
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle nuove funzioni, sull&#39;infrastruttura cloud e sulle versioni di estensibilità, consulta la [documentazione sulla versione di Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
+>Per ulteriori informazioni sulle nuove funzioni, sull&#39;infrastruttura cloud e sulle versioni di estensibilità, consulta la [documentazione sulla versione di Adobe Commerce Services](https://experienceleague.adobe.com/it/docs/commerce/user-guides/release-information/release-notes-all).
 
 Oltre alle patch di qualità, sicurezza e versione beta pianificate elencate in questa pagina, Adobe fornisce l&#39;accesso a [singole patch](versioning-policy.md#individual-patch) tramite lo strumento [Patch di qualità](../tools/quality-patches-tool/usage.md). Lo strumento consente di applicare, ripristinare e visualizzare informazioni generali su tutte le singole patch disponibili per la versione installata di Adobe Commerce.
 

@@ -49,7 +49,7 @@ Nell&#39;esempio seguente viene illustrata la configurazione `crontab` per i con
 
 >[!INFO]
 >
->Se il tuo archivio Adobe Commerce è ospitato sulla piattaforma Cloud, usa [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) per configurare il processo cron `consumers_runner`.
+>Se il tuo archivio Adobe Commerce è ospitato sulla piattaforma Cloud, usa [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=it#cron_consumers_runner) per configurare il processo cron `consumers_runner`.
 
 ### Configurazione specifica
 
@@ -82,7 +82,7 @@ Modificare il file `/app/etc/env.php` per configurare il processo cron `consumer
 
   >[!INFO]
   >
-  >Se il tuo archivio Adobe Commerce è ospitato sulla piattaforma Cloud, usa [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) per configurare il modo in cui i consumatori elaborano i messaggi dalla coda dei messaggi.
+  >Se il tuo archivio Adobe Commerce è ospitato sulla piattaforma Cloud, usa [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=it#consumers_wait_for_max_messages) per configurare il modo in cui i consumatori elaborano i messaggi dalla coda dei messaggi.
 
   >[!NOTE]
   >
