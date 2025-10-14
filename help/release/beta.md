@@ -2,9 +2,9 @@
 title: Versioni di Beta
 description: Scopri le versioni beta di Adobe Commerce e come partecipare.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 879160b11fe4840eb3af97c64f080deb5f002827
+source-git-commit: d467ada97a81d64dff358bc83acd489f69ba0677
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ I programmi beta di Adobe Commerce consentono ai commercianti di accedere alle f
 
 >[!IMPORTANT]
 >
->I rilasci di Beta possono contenere difetti e vengono forniti &quot;COSÌ COME SONO&quot; senza alcuna garanzia. Adobe non avrà alcun obbligo di mantenere, correggere, aggiornare, modificare o altrimenti supportare (tramite i servizi di supporto Adobe o in altro modo) le versioni beta. Si consiglia ai clienti di prestare cautela e di non fare affidamento in alcun modo sul corretto funzionamento o sulle prestazioni delle versioni beta e/o di qualsiasi documentazione o materiale di accompagnamento. Le funzioni e le API in versione beta sono soggette a modifiche senza preavviso. Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del cliente.
+>I rilasci di Beta possono contenere difetti e vengono forniti &quot;COSÌ COME SONO&quot; senza alcuna garanzia. Adobe non ha alcun obbligo di mantenere, correggere, aggiornare, modificare o altrimenti supportare (tramite i servizi di supporto Adobe o in altro modo) le versioni beta. Si consiglia ai clienti di prestare cautela e di non fare affidamento in alcun modo sul corretto funzionamento o sulle prestazioni delle versioni beta e/o di qualsiasi documentazione o materiale di accompagnamento. Le funzioni e le API in versione beta sono soggette a modifiche senza preavviso. Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del cliente.
 
 ## Vantaggi della partecipazione
 
@@ -28,9 +28,32 @@ L’accesso anticipato alle funzioni sviluppate da Adobe offre a clienti e partn
 
 Per un elenco dei programmi beta attivi, consulta le sezioni seguenti.
 
+### Servizio di applicazione di patch per l&#39;automazione cloud (Private Beta)
+
+Il [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automatizza il processo di applicazione di patch di sicurezza isolate agli ambienti [Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview).
+
+A ottobre 2025, la versione beta del Cloud Automation Patching Service verrà aggiunta alla [dashboard dello strumento di analisi a livello di sito](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Questo servizio supporta gli amministratori di progetto Commerce con un flusso di lavoro di applicazione delle patch semplificato che include:
+
+- Installazione automatica delle patch
+- Ripristino rollback
+- Verifica post-distribuzione.
+
+Il servizio garantisce la sicurezza, la stabilità e l&#39;aggiornamento degli ambienti con il minimo sforzo e rischio manuale.
+
+La versione beta include le seguenti funzionalità:
+
+- **Installazione automatica delle patch**: semplificazione e automazione del processo di applicazione delle patch a vulnerabilità critiche in ambienti diversi.
+- **Riduci al minimo il rischio**: impedisce interruzioni del sito con funzionalità di verifica dello stato e rollback post-distribuzione.
+
+>[!NOTE]
+>
+>Poiché il servizio di esecuzione patch di automazione cloud applica automaticamente le patch di sicurezza isolate, è necessario disporre del ruolo [Collaboratore o amministratore progetto](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) per utilizzarlo.
+
+Per partecipare a questa versione beta, completa e invia il [Servizio di applicazione di patch per l&#39;automazione cloud - Modulo registrazione Beta](https://forms.office.com/r/3Wfxj5nPdB).
+
 ### Funzionalità di ricerca avanzate per Live Search (Beta pubblico)
 
-Questa versione beta supporta tre nuove funzionalità nella query [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+Questa versione beta supporta tre nuove funzionalità nella query [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/):
 
 - **Ricerca a livelli** - Ricerca in un altro contesto di ricerca - Con questa funzionalità è possibile eseguire fino a due livelli di ricerca per le query di ricerca. Ad esempio:
 
@@ -48,11 +71,13 @@ Questa versione beta supporta tre nuove funzionalità nella query [`productSearc
 
    - Ricerca di una query all&#39;interno di una stringa più grande. Ad esempio, se un acquirente cerca il numero di prodotto &quot;PE-123&quot; nella stringa &quot;HAPE-123&quot;.
 
-      - Nota: questo tipo di ricerca è diverso dalla [ricerca frase](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase) esistente, che esegue una ricerca di completamento automatico. Ad esempio, se il valore dell’attributo del prodotto è &quot;pantaloni da esterni&quot;, la ricerca di una frase restituisce una risposta per &quot;out pan&quot;, ma non restituisce una risposta per &quot;o formiche&quot;. Una ricerca contiene, tuttavia, restituisce una risposta per &quot;o formiche&quot;.
+     >[!NOTE]
+     >
+     >Questo tipo di ricerca è diverso dalla [ricerca frase](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) esistente, che esegue una ricerca di completamento automatico. Ad esempio, se il valore dell’attributo del prodotto è &quot;pantaloni da esterni&quot;, la ricerca di una frase restituisce una risposta per &quot;out pan&quot;, ma non restituisce una risposta per &quot;o formiche&quot;. Una ricerca contiene, tuttavia, restituisce una risposta per &quot;o formiche&quot;.
 
 Queste nuove condizioni migliorano il meccanismo di filtro delle query di ricerca per perfezionare i risultati della ricerca. Queste nuove condizioni non influiscono sulla query di ricerca principale. Per partecipare alla versione beta, invia una richiesta e-mail a [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
-Per installare la versione beta di Live Search, consulta la [guida di Live Search](https://experienceleague.adobe.com/it/docs/commerce/live-search/install#install-the-live-search-beta).
+Per installare la versione beta di Live Search, consulta la [guida di Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### Integrazione dei sistemi IBM Sterling Order Management (Private Beta)
 
@@ -74,7 +99,7 @@ Ogni versione alfa e beta di Adobe Commerce Foundation include tutte le modifich
 - Miglioramenti GraphQL
 - Correzioni di bug di qualità generale
 - Contributi comunitari
-- Modifiche necessarie per supportare la compatibilità con [i servizi Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home)
+- Modifiche necessarie per supportare la compatibilità con [i servizi Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Convenzione di denominazione e pianificazione
 

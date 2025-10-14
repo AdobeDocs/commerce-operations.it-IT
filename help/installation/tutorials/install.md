@@ -2,9 +2,9 @@
 title: Installare Adobe Commerce
 description: Per installare Adobe Commerce nell’infrastruttura di tua proprietà, segui la procedura riportata di seguito.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
 workflow-type: tm+mt
-source-wordcount: '2093'
+source-wordcount: '2261'
 ht-degree: 0%
 
 ---
@@ -142,6 +142,21 @@ In Adobe Commerce versione 2.2.8 e successive, puoi creare l’utente amministra
 | `--amqp-password` | Password per la connessione a [!DNL RabbitMQ]. Non utilizzare la password predefinita `guest`. | No |
 | `--amqp-virtualhost` | Host virtuale per la connessione a [!DNL RabbitMQ]. Il valore predefinito è `/`. | No |
 | `--amqp-ssl` | Indica se connettersi a [!DNL RabbitMQ]. Il valore predefinito è `false`. Per informazioni sulla configurazione di SSL per [!DNL RabbitMQ], vedere [!DNL RabbitMQ]. | No |
+| `--consumers-wait-for-messages` | I consumatori devono attendere un messaggio dalla coda? 1 - Sì, 0 - No | No |
+
+**Opzioni di configurazione di ActiveMQ Artemis:**
+
+>[!NOTE]
+>
+>ActiveMQ Artemis è stato introdotto in Adobe Commerce 2.4.6 e versioni successive.
+
+| Nome | Valore | Obbligatorio |
+|--- |--- |--- |
+| `--stomp-host` | Non utilizzare le opzioni `--stomp` a meno che non sia già stata impostata un&#39;installazione di ActiveMQ Artemis. Per ulteriori informazioni sull&#39;installazione e la configurazione di ActiveMQ Artemis, vedere Installazione di ActiveMQ Artemis.<br><br>Il nome host in cui è installato ActiveMQ Artemis. | No |
+| `--stomp-port` | Porta da utilizzare per la connessione ad ActiveMQ Artemis. Il valore predefinito è 61613. | No |
+| `--stomp-user` | Nome utente per la connessione ad ActiveMQ Artemis. Non utilizzare l&#39;utente predefinito `artemis`. | No |
+| `--stomp-password` | Password per la connessione ad ActiveMQ Artemis. Non utilizzare la password predefinita `artemis`. | No |
+| `--stomp-ssl` | Indica se connettersi ad ActiveMQ Artemis utilizzando SSL. Il valore predefinito è `false`. Vedere ActiveMQ Artemis per informazioni sulla configurazione di SSL per ActiveMQ Artemis. | No |
 | `--consumers-wait-for-messages` | I consumatori devono attendere un messaggio dalla coda? 1 - Sì, 0 - No | No |
 
 **Opzioni di archiviazione remota:**
@@ -302,6 +317,25 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Magento installation complete.
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
+
+#### Esempio 4: installazione con ActiveMQ Artemis
+
+Nell&#39;esempio seguente viene illustrato come installare Adobe Commerce con ActiveMQ Artemis come gestore di messaggi:
+
+```bash
+magento setup:install --base-url=http://127.0.0.1/magento2/ \
+--db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
+--admin-firstname=Commerce --admin-lastname=User --admin-email=user@example.com \
+--admin-user=admin --admin-password=admin123 --language=en_US \
+--currency=USD --timezone=America/Chicago --use-rewrites=1 \
+--search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
+--elasticsearch-port=9200 --stomp-host=localhost --stomp-port=61613 \
+--stomp-user=artemis --stomp-password=artemis
+```
+
+>[!NOTE]
+>
+>L&#39;installazione di ActiveMQ Artemis richiede Adobe Commerce 2.4.6 o versione successiva.
 
 >[!TIP]
 >

@@ -2,9 +2,9 @@
 title: Server applicazioni GraphQL
 description: Informazioni su graphql application server in Adobe Commerce. Scopri le linee guida per l’implementazione e le strategie di ottimizzazione.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2360'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server consente ad Adobe Commerce di mantenere lo stato tra le richieste API di Commerce GraphQL. GraphQL Application Server, basato sull&#39;estensione Swoole, funziona come un processo con thread di lavoro che gestiscono l&#39;elaborazione delle richieste. Mantenendo uno stato di applicazione avviato tra le richieste API di GraphQL, GraphQL Application Server migliora la gestione delle richieste e le prestazioni complessive del prodotto. Le richieste API diventano notevolmente più efficienti.
 
-GraphQL Application Server è disponibile solo per Adobe Commerce. Non è disponibile per Magento Open Source. Per i progetti Cloud Pro, è necessario [inviare un ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) per abilitare il server applicazioni GraphQL.
+GraphQL Application Server è disponibile solo per Adobe Commerce. Non è disponibile per Magento Open Source. Per i progetti Cloud Pro, è necessario [inviare un ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) per abilitare il server applicazioni GraphQL.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ L&#39;esecuzione di GraphQL Application Server richiede quanto segue:
 
 ### Progetti cloud
 
-Per impostazione predefinita, i progetti Adobe Commerce su infrastrutture cloud includono l’estensione Swoole. È possibile [abilitarlo](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) nella proprietà `runtime` del file `.magento.app.yaml`. Ad esempio:
+Per impostazione predefinita, i progetti Adobe Commerce su infrastrutture cloud includono l’estensione Swoole. È possibile [abilitarlo](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) nella proprietà `runtime` del file `.magento.app.yaml`. Ad esempio:
 
 ```yaml
 runtime:
@@ -273,7 +273,7 @@ Prima di distribuire GraphQL Application Server su progetti iniziali, effettuare
 
 >[!NOTE]
 >
->Assicurarsi che tutte le impostazioni personalizzate nel file radice `.magento.app.yaml` siano migrate in modo appropriato nel file `application-server/.magento/.magento.app.yaml`. Dopo aver aggiunto il file `application-server/.magento/.magento.app.yaml` al progetto, è necessario mantenerlo in aggiunta al file radice `.magento.app.yaml`. Ad esempio, se devi [configurare il servizio RabbitMQ](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) o [gestire le proprietà Web](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property), devi aggiungere la stessa configurazione anche a `application-server/.magento/.magento.app.yaml`.
+>Assicurarsi che tutte le impostazioni personalizzate nel file radice `.magento.app.yaml` siano migrate in modo appropriato nel file `application-server/.magento/.magento.app.yaml`. Dopo aver aggiunto il file `application-server/.magento/.magento.app.yaml` al progetto, è necessario mantenerlo in aggiunta al file radice `.magento.app.yaml`. Ad esempio, se devi [configurare il servizio RabbitMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) o [gestire le proprietà Web](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property), devi aggiungere la stessa configurazione anche a `application-server/.magento/.magento.app.yaml`.
 
 ### Verificare l’abilitazione nei progetti cloud
 
@@ -537,3 +537,30 @@ Questi file possono essere esaminati con qualsiasi strumento utilizzato per visu
 >[!NOTE]
 >
 >`--state-monitor` non è compatibile con le versioni PHP `8.3.0` - `8.3.4` a causa di un bug nel Garbage Collector PHP. Se si utilizza PHP 8.3, è necessario eseguire l&#39;aggiornamento a `8.3.5` o versione successiva per utilizzare questa funzionalità.
+
+## Configurazione di alternativeHeaders per il rilevamento IP del client
+
+Per impostazione predefinita, GraphQL Application Server supporta una configurazione standard per l&#39;intestazione `x-forwarded-for` definita nel file `app/etc/di.xml`, consentendo il recupero accurato dell&#39;indirizzo IP del client negli ambienti proxy e CDN tipici.
+
+Se devi supportare intestazioni aggiuntive o personalizzate (ad esempio `x-client-ip`, `fastly-client-ip` o `x-real-ip`), puoi estendere o ignorare l&#39;argomento `alternativeHeaders` nel file `app/etc/di.xml`. Questa operazione è necessaria solo se l&#39;ambiente utilizza intestazioni diverse da `x-forwarded-for` per passare l&#39;indirizzo IP del client.
+
+Ad esempio, per aggiungere il supporto per altre intestazioni, aggiorna `app/etc/di.xml` come segue:
+
+```xml
+<type name="Magento\Framework\HTTP\PhpEnvironment\RemoteAddress">
+    <arguments>
+        <argument name="alternativeHeaders" xsi:type="array">
+            <item name="x-client-ip" xsi:type="string">HTTP_X_CLIENT_IP</item>
+            <item name="fastly-client-ip" xsi:type="string">HTTP_FASTLY_CLIENT_IP</item>
+            <item name="x-real-ip" xsi:type="string">HTTP_X_REAL_IP</item>
+            <item name="x-forwarded-for" xsi:type="string">HTTP_X_FORWARDED_FOR</item>
+        </argument>
+    </arguments>
+</type>
+```
+
+Puoi aggiungere, rimuovere o riordinare le intestazioni in base alle esigenze per garantire che l’IP client venga recuperato dalla sorgente corretta per la configurazione.
+
+>[!NOTE]
+>
+>Se utilizzi Adobe Commerce Cloud con il modulo CDN Fastly, questa configurazione viene gestita automaticamente e non sono necessarie modifiche manuali. La configurazione manuale è necessaria solo per le impostazioni di intestazione personalizzate CDN, proxy o non standard.

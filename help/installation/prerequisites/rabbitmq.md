@@ -1,15 +1,15 @@
 ---
-title: Gestore messaggi
+title: Gestore messaggi (RabbitMQ)
 description: Segui questi passaggi per installare e configurare il software Message Broker richiesto (ad esempio  [!DNL RabbitMQ]) per le installazioni locali di Adobe Commerce.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
-# Gestore messaggi
+# Gestore messaggi (RabbitMQ)
 
 Adobe Commerce utilizza il broker di messaggi open-source [!DNL RabbitMQ]. Offre un sistema di messaggistica affidabile, ad alta disponibilità, scalabile e portatile.
 

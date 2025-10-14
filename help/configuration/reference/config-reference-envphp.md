@@ -2,9 +2,9 @@
 title: riferimento env.php
 description: Scopri i valori e le sezioni di configurazione del file env.php in Adobe Commerce. Scopri le impostazioni dell’ambiente e le opzioni di configurazione.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce utilizza una chiave di crittografia per proteggere le password e altri 
 ]
 ```
 
-Ulteriori informazioni sulla [chiave di crittografia](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/security/encryption-key) nella _Guida utente di Commerce_.
+Ulteriori informazioni sulla [chiave di crittografia](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) nella _Guida utente di Commerce_.
 
 ## db
 
@@ -172,11 +172,19 @@ Tutte le configurazioni di database sono disponibili in questo nodo.
 
 ## default_connection
 
-Definisce la connessione predefinita per le code di messaggi. Il valore può essere `db`, `amqp` o un sistema di code personalizzato come `redismq`. Se si specifica un valore diverso da `db`, è necessario installare e configurare prima il software della coda messaggi. In caso contrario, i messaggi non verranno elaborati correttamente.
+Definisce la connessione predefinita per le code di messaggi. Il valore può essere `db`, `amqp`, `stomp` o un sistema di code personalizzato come `redismq`. Se si specifica un valore diverso da `db`, è necessario installare e configurare prima il software della coda messaggi. In caso contrario, i messaggi non verranno elaborati correttamente.
 
 ```conf
 'queue' => [
     'default_connection' => 'amqp'
+]
+```
+
+Per STOMP (ActiveMQ Artemis):
+
+```conf
+'queue' => [
+    'default_connection' => 'stomp'
 ]
 ```
 
@@ -203,7 +211,7 @@ Elenco dei domini scaricabili disponibili in questo nodo. È possibile aggiunger
 ]
 ```
 
-Ulteriori informazioni su [Domini scaricabili](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Ulteriori informazioni su [Domini scaricabili](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installare
 
@@ -233,13 +241,13 @@ Ulteriori informazioni sulle [modalità applicazione](../cli/set-mode.md).
 
 ## coda
 
-Le configurazioni della coda messaggi sono disponibili in questo nodo.
+Le configurazioni della coda messaggi sono disponibili in questo nodo. Puoi configurare RabbitMQ (AMQP) o ActiveMQ Artemis (STOMP) come broker di messaggi.
 
 ```conf
 'queue' => [
   'topics' => [
-    'customer.created' => [publisher="default-rabitmq"],
-    'order.created' => [publisher="default-rabitmq"],
+    'customer.created' => [publisher="default-broker"],
+    'order.created' => [publisher="default-broker"],
   ]
 ]
 ```

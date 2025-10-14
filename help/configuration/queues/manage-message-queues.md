@@ -2,16 +2,16 @@
 title: Gestire le code dei messaggi
 description: Scopri come gestire le code di messaggi dalla riga di comando per Adobe Commerce.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
+source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
 # Gestire le code dei messaggi
 
-È possibile gestire le code di messaggi dalla riga di comando utilizzando i processi cron o un gestore di processi esterno per garantire che i consumatori recuperino i messaggi.
+È possibile gestire le code di messaggi dalla riga di comando utilizzando i processi cron o un gestore di processi esterno per garantire che i consumatori recuperino i messaggi. Questo vale per tutti i broker di messaggi supportati, inclusi RabbitMQ (AMQP), Apache ActiveMQ Artemis (STOMP) e la scheda MySQL.
 
 ## Gestione dei processi
 
@@ -49,7 +49,7 @@ Nell&#39;esempio seguente viene illustrata la configurazione `crontab` per i con
 
 >[!INFO]
 >
->Se il tuo archivio Adobe Commerce è ospitato sulla piattaforma Cloud, usa [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=it#cron_consumers_runner) per configurare il processo cron `consumers_runner`.
+>Se il tuo archivio Adobe Commerce è ospitato sulla piattaforma Cloud, usa [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) per configurare il processo cron `consumers_runner`.
 
 ### Configurazione specifica
 
@@ -78,10 +78,14 @@ Modificare il file `/app/etc/env.php` per configurare il processo cron `consumer
 
   >[!INFO]
   >
-  >Non è consigliabile eseguire più consumer in una coda gestita da MySQL. Per ulteriori informazioni, vedere [Cambiare la coda dei messaggi da MySQL a AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp).
+  >Non è consigliabile eseguire più consumer in una coda gestita da MySQL. Per ulteriori informazioni sul passaggio a AMQP (RabbitMQ) o STOMP (ActiveMQ Artemis), vedere [Cambiare la coda di messaggi da MySQL a broker esterni](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-external-brokers).
 
   >[!INFO]
   >
-  >Se il tuo archivio Adobe Commerce è ospitato sulla piattaforma Cloud, usa [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=it#consumers_wait_for_max_messages) per configurare il modo in cui i consumatori elaborano i messaggi dalla coda dei messaggi.
+  >Se il tuo archivio Adobe Commerce è ospitato sulla piattaforma Cloud, usa [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) per configurare il modo in cui i consumatori elaborano i messaggi dalla coda dei messaggi.
+
+  >[!NOTE]
+  >
+  >ActiveMQ Artemis (STOMP) è stato introdotto in Adobe Commerce 2.4.6 e versioni successive.
 
 Vedi [Avvia consumer coda messaggi](../cli/start-message-queues.md).
