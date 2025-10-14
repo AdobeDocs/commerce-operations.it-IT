@@ -49,7 +49,7 @@ Per ulteriori informazioni, vedere [Installazione su Debian/Ubuntu](https://www.
 
 Per ulteriori informazioni, vedere [Installazione manuale](https://www.erlang-solutions.com/downloads/).
 
-Per installare la versione corretta, consultare la [[!DNL RabbitMQ]/Erlang versione ](https://www.rabbitmq.com/which-erlang.html).
+Per installare la versione corretta, consultare la [[!DNL RabbitMQ]/Erlang versione &#x200B;](https://www.rabbitmq.com/which-erlang.html).
 
 ### Installa [!DNL RabbitMQ]
 

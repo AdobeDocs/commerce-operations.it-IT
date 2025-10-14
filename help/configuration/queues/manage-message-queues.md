@@ -35,7 +35,7 @@ Nell&#39;esempio seguente viene illustrata la configurazione `crontab` per i con
 >
 >Può essere configurato in Admin Stores (Archivi amministratori) > Settings (Impostazioni) > Configuration (Configurazione) > Advanced (Avanzate) > System (Sistema) > Cron configuration options (Opzioni di configurazione Cron) per group: users (Gruppo: consumatori).
 >
->Per ulteriori informazioni sull&#39;utilizzo di [ con Commerce, vedere ](../cli/configure-cron-jobs.md)Configurare ed eseguire cron`cron`.
+>Per ulteriori informazioni sull&#39;utilizzo di [&#x200B; con Commerce, vedere &#x200B;](../cli/configure-cron-jobs.md)Configurare ed eseguire cron`cron`.
 
 È inoltre possibile utilizzare un gestore processi come [Supervisore](https://supervisord.readthedocs.io/en/latest/) per monitorare lo stato dei processi. Il manager può utilizzare la riga di comando per riavviare i processi in base alle esigenze.
 
