@@ -2,7 +2,7 @@
 title: Pianificazione rilascio patch
 description: Scopri quando Adobe prevede di annunciare il rilascio di nuove patch e correzioni di sicurezza per Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 5f9f0e1dab7f5e4580f077693039ea387df23880
+source-git-commit: f4601034e3e988b3058946b263ec5e8da41fce16
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Lo scopo di questa pianificazione è quello di fornire le date in cui Adobe pian
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle nuove funzioni, sull&#39;infrastruttura cloud e sulle versioni di estensibilità, consulta la [documentazione sulla versione di Adobe Commerce Services](https://experienceleague.adobe.com/it/docs/commerce/user-guides/release-information/release-notes-all).
+>Per ulteriori informazioni sulle nuove funzioni, sull&#39;infrastruttura cloud e sulle versioni di estensibilità, consulta la [documentazione sulla versione di Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Oltre alle patch di qualità, sicurezza e versione beta pianificate elencate in questa pagina, Adobe fornisce l&#39;accesso a [singole patch](versioning-policy.md#individual-patch) tramite lo strumento [Patch di qualità](../tools/quality-patches-tool/usage.md). Lo strumento consente di applicare, ripristinare e visualizzare informazioni generali su tutte le singole patch disponibili per la versione installata di Adobe Commerce.
 
@@ -34,4 +34,6 @@ A partire da gennaio 2026, Adobe Commerce passerà a una pianificazione mensile 
 
 Per ulteriori informazioni, vedere l&#39;immagine seguente:
 
-![Calendario della versione di Adobe Commerce 2026](../assets/release/release-calendar.drawio.svg)
+<!-- The SVG source for the following image is located here: /help/assets/release/release-calendar.drawio.svg -->
+
+![Calendario della versione di Adobe Commerce 2026](../assets/release/release-calendar.drawio.png)
