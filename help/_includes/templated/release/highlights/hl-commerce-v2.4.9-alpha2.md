@@ -1,5 +1,5 @@
 ---
-source-git-commit: bfad68a46b9b1a79a702f04efd39129decda1a1c
+source-git-commit: c71367c553dce66c146540389461f36eaa529bfc
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -93,17 +93,20 @@ _AC-14610_
 #### Migrare l’integrazione USPS dalle API obsolete degli strumenti web alle nuove API RESTful USPS
 
 Per rispettare l’annuncio di USPS del ritiro delle API legacy degli strumenti web entro il 25 gennaio 2026, l’integrazione Adobe Commerce USPS viene migrata alle nuove API RESTful USPS.
+
 Miglioramenti principali:
-- Supporto di API doppie: gli utenti amministratori ora possono scegliere tra l’API legacy degli strumenti web e la nuova API RESTful USPS tramite le impostazioni di configurazione.
-- Aggiornamento autenticazione: OAuth 2.0 è stato implementato per l’accesso API sicuro.
-- Formato dati migliorato: transizione da XML a JSON per una comunicazione più pulita ed efficiente.
-- Nuovi campi amministratore:
-URL REST gateway (in base alla modalità: Sviluppo o Live)
-ID client e segreto
-Tipo di conto, numero di conto
-CRID, MID, codice di identificazione dell’Mailer
-AES/ITN per spedizioni internazionali
-Metodi di spedizione consentiti specifici per REST
+
+* Supporto di API doppie: gli utenti amministratori ora possono scegliere tra l’API legacy degli strumenti web e la nuova API RESTful USPS tramite le impostazioni di configurazione.
+* Aggiornamento autenticazione: OAuth 2.0 è stato implementato per l’accesso API sicuro.
+* Formato dati migliorato: transizione da XML a JSON per una comunicazione più pulita ed efficiente.
+* Nuovi campi amministratore:
+   * URL REST gateway (in base alla modalità: Sviluppo o Live)
+   * ID client e segreto
+   * Tipo di conto, numero di conto
+   * CRID, MID, codice di identificazione dell’Mailer
+   * AES/ITN per spedizioni internazionali
+   * Metodi di spedizione consentiti specifici per REST
+
 Questa migrazione garantisce che Adobe Commerce rimanga conforme agli standard USPS, migliori l’affidabilità del sistema e integrazioni di spedizione a prova di futuro per gli esercenti.
 
 _AC-13257_

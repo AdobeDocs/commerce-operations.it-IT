@@ -1,9 +1,9 @@
 ---
 title: Gestore messaggi (ActiveMQ Artemis)
 description: Segui questi passaggi per installare e configurare Apache ActiveMQ Artemis message broker per le installazioni locali di Adobe Commerce.
-source-git-commit: 6f15a24e650a7138bae6d0b40f230e6970a943b0
+source-git-commit: 46816b42ea30cb6c5f5ce59752cc00c38d221610
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,10 @@ ht-degree: 0%
 
 Adobe Commerce supporta anche il broker di messaggi open source ActiveMQ Artemis tramite il protocollo STOMP (Simple Text Oriented Messaging Protocol). Fornisce un sistema di messaggistica affidabile e scalabile, offrendo flessibilità per le integrazioni basate su STOMP.
 
+
 >[!NOTE]
 >
->ActiveMQ Artemis è stato introdotto in Adobe Commerce 2.4.6 e versioni successive.
+>ActiveMQ Artemis è stato introdotto in Adobe Commerce 2.4.6 e versioni successive. Per informazioni dettagliate sull&#39;installazione di ActiveMQ Artemis in Adobe Commerce su progetti di infrastruttura cloud, vedere [Configurazione del servizio ActiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemqsee) nella *Guida di Commerce su Cloud*.
 
 Le code di messaggi forniscono un meccanismo di comunicazione asincrona in cui il mittente e il destinatario di un messaggio non si contattano a vicenda. Non è necessario che comunichino con la coda di messaggi contemporaneamente. Quando un mittente inserisce un messaggio in una coda, questo viene memorizzato fino a quando il destinatario non lo riceve.
 

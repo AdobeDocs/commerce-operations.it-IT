@@ -1,5 +1,5 @@
 ---
-source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
+source-git-commit: c71367c553dce66c146540389461f36eaa529bfc
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Questa versione include i seguenti elementi di rilievo:
 
-* **Aggiornamento TinyMCE**. L&#39;[editor WYSIWYG](https://experienceleague.adobe.com/it/docs/commerce-admin/content-design/wysiwyg/editor) nell&#39;amministratore utilizza ora la versione più recente della dipendenza TinyMCE (7.3&#x200B;).
+* **Aggiornamento TinyMCE**. L&#39;[editor WYSIWYG](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/editor) nell&#39;amministratore utilizza ora la versione più recente della dipendenza TinyMCE (7.3&#x200B;).
 
    * TinyMCE 7.3 offre un&#39;esperienza utente migliorata, una migliore collaborazione e una maggiore efficienza. TinyMCE 5 è stato rimosso nella versione 2.4.8&#x200B;.
 
