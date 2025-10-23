@@ -101,7 +101,7 @@ Miglioramenti principali:
 * Formato dati migliorato: transizione da XML a JSON per una comunicazione più pulita ed efficiente.
 * Nuovi campi amministratore:
    * URL REST gateway (in base alla modalità: Sviluppo o Live)
-   * ID client &amp;amp; Segreto
+   * ID client &amp; Segreto
    * Tipo di conto, numero di conto
    * CRID, MID, codice di identificazione dell’Mailer
    * AES/ITN per spedizioni internazionali
