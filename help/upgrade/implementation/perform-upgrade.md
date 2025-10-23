@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->- Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Aggiornare Commerce versione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) nella Guida al cloud.
+>- Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Aggiornare Commerce versione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=it) nella Guida al cloud.
 >- Non utilizzare questo metodo per eseguire l’aggiornamento se hai clonato l’archivio GitHub. Consulta [Aggiornare un&#39;installazione basata su Git](../developer/git-installs.md).
 
 Le istruzioni seguenti spiegano come eseguire l’aggiornamento utilizzando Gestione pacchetti Compositore. Adobe Commerce 2.4.2 ha introdotto il supporto per Composer 2. Se si sta tentando di eseguire l&#39;aggiornamento da &lt;2.4.1, è necessario eseguire prima l&#39;aggiornamento a una versione compatibile con Composer 2 (ad esempio, 2.4.2) utilizzando Composer 1 _prima_ dell&#39;aggiornamento a Composer 2 per gli aggiornamenti >2.4.2. Inoltre, devi eseguire una [versione supportata](../../installation/system-requirements.md) di PHP.
