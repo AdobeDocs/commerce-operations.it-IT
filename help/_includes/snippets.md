@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dopo aver installato questa patch di sicurezza, i commercianti B2B di Adobe Commerce devono effettuare l’aggiornamento alla versione più recente della patch di sicurezza B2B compatibile. Consulta le [note sulla versione B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
+>Dopo aver installato questa patch di sicurezza, i commercianti B2B di Adobe Commerce devono effettuare l’aggiornamento alla versione più recente della patch di sicurezza B2B compatibile. Consulta le [note sulla versione B2B](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/release-notes).
 
 ## Solo Adobe Commerce {#ee-only}
 
@@ -85,7 +85,7 @@ Prima di poter eseguire gli indicizzatori in modalità parallela, è necessario 
 
 >[!IMPORTANT]
 >
->Adobe non supporta l’applicazione di patch ufficiali fornite da Adobe utilizzando questo metodo. Utilizza il seguente metodo a proprio rischio e pericolo. Per applicare patch ufficiali, utilizzare [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Eseguire sempre test completi prima di distribuire qualsiasi patch personalizzata.
+>Adobe non supporta l’applicazione di patch ufficiali fornite da Adobe utilizzando questo metodo. Utilizza il seguente metodo a proprio rischio e pericolo. Per applicare patch ufficiali, utilizzare [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"}. Eseguire sempre test completi prima di distribuire qualsiasi patch personalizzata.
 
 ## Backport delle patch di sicurezza di ottobre 2025 {#oct-2025-backports}
 
@@ -99,7 +99,7 @@ Prima di poter eseguire gli indicizzatori in modalità parallela, è necessario 
 
 * **Aggiunto supporto per il protocollo Apache ActiveMQ Artemis STOMP**
 
-  È stato aggiunto il supporto per il gestore di messaggi open source ActiveMQ Artemis tramite il protocollo STOMP (Simple Text Oriented Messaging Protocol). Fornisce un sistema di messaggistica affidabile e scalabile, offrendo flessibilità per le integrazioni basate su STOMP. Vedi [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) nella *Guida alla configurazione di Commerce*.
+  È stato aggiunto il supporto per il gestore di messaggi open source ActiveMQ Artemis tramite il protocollo STOMP (Simple Text Oriented Messaging Protocol). Fornisce un sistema di messaggistica affidabile e scalabile, offrendo flessibilità per le integrazioni basate su STOMP. Vedi [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) nella *Guida alla configurazione di Commerce*.
 
 ## Impossibile caricare static.min.js e mixins.min.js nella pagina di estrazione {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 
