@@ -1,5 +1,5 @@
 ---
-source-git-commit: 151272eed6c4bb2e1c2e5138a5c8a3a7e7bd8fe6
+source-git-commit: ae571a9e7ca1234644a3bc9beade447009c58a3d
 workflow-type: tm+mt
 source-wordcount: '6077'
 ht-degree: 0%
@@ -41,9 +41,9 @@ _AC-15208 - [Problema GitHub](https://github.com/magento/magento2/issues/40093) 
 
 _ACP2E-4086 - [Contributo codice GitHub](https://github.com/magento/inventory/commit/5632fb5e)_
 
-#### L’autore dell’attacco può utilizzare la richiesta POST utilizzando l’API REST e inviare il payload RCE
+#### Problema di convalida con gli ID opzione personalizzati nell’elemento del carrello API REST
 
-API REST V1/guest-carts/&lt;cartId>/items/ e V1/carts/mine/items/ ora convalida &quot;product_options.extension_attributes.custom_options.*.option_id&quot; per essere option_id valido nello SKU dell’articolo del carrello. In precedenza, tale opzione veniva elaborata e salvata nel database senza alcuna convalida.
+API REST V1/guest-carts/&lt;cartId>/items/ e V1/carts/mine/items/ ora convalidano &quot;product_options.extension_attributes.custom_options.*.option_id&quot; per garantire che faccia riferimento a un option_id valido per lo SKU dell’articolo del carrello. In precedenza, questo parametro veniva elaborato e salvato nel database senza convalida.
 
 _ACP2E-4138 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/a1c57b2e)_
 
