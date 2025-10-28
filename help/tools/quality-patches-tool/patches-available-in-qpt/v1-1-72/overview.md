@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4a3060235a4d22764cbb231aca7c1f835d357906
+source-git-commit: 3493a89d40e3dee377be715e71e2f977a3afd382
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ QPT v1.1.72 include le seguenti patch:
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: `media_gallery` voci non vengono restituite nel nodo del prodotto Cart GraphQL dopo uno scaricamento della cache.
 1. **ACSD-67946**: gli aggiornamenti del carrello mostrano banner di errore duplicati.
 1. **ACSD-68011**: SKU non esistenti assegnati al catalogo condiviso tramite l&#39;API /V1/sharedCatalog/:id/assignProducts.
-1. **ACSD-68118**: la query di GraphQL `customerCart` restituisce valori di attributi di prodotto che non riflettono l&#39;intestazione dell&#39;archivio, causando una localizzazione incoerente.
+1. **ACSD-68118**: la query `customerCart` [!DNL GraphQL] restituisce valori di attributi di prodotto non corretti per la visualizzazione archivio.
 1. **ACSD-68092**: le opzioni del prodotto del bundle vengono perse dopo più salvataggi a causa di una sincronizzazione non corretta tra gli aggiornamenti pianificati e i dati del prodotto di base.
 1. **ACSD-67424**: il valore `updated_at` nella risposta API `GET /carts/search` di [!DNL REST] non corrisponde al valore visualizzato in **[!UICONTROL Admin panel]** quando si utilizzano le virgolette negoziabili.
 1. **ACSD-67187**: gli utenti amministratori limitati a siti Web non predefiniti visualizzano l&#39;errore, *&quot;*Crea almeno un catalogo condiviso pubblico per continuare* e non può accedere al pulsante **[!UICONTROL Add New Company]** nella griglia dell&#39;azienda.
