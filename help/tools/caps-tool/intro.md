@@ -53,7 +53,7 @@ Questa guida è stata progettata per i commercianti e i partner di Adobe Commerc
 
 Scopri Adobe Cloud Automated Patching Service e come questo strumento aiuta gli utenti a trovare e applicare rapidamente le patch di sicurezza. Il video seguente illustra come accedervi tramite la dashboard SWAT, scegliere il progetto e l’ambiente e applicare le patch con un clic.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476255/?captions=ita&learn=on&enablevpops)
 
 ## Casi d’uso comuni
 
