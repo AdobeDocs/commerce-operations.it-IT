@@ -796,7 +796,7 @@ I commercianti sono responsabili della sincronizzazione dei dati tra ambienti di
 >
 >I commercianti devono utilizzare la versione più recente di Live Search, Product Recommendations e Payment Services per garantire la massima stabilità, funzionalità e idoneità al supporto.
 >Adobe non supporta versioni obsolete e l’aggiornamento consente di beneficiare dei miglioramenti e delle correzioni di bug più recenti.
->Per informazioni dettagliate sulle versioni supportate, vedere la [Matrice di disponibilità del prodotto per i servizi Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
+>Per informazioni dettagliate sulle versioni supportate, vedere la [Matrice di disponibilità del prodotto per i servizi Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability#commerce-services).
 
 #### Consigli di prodotto
 
