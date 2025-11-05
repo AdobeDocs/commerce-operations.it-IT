@@ -3,10 +3,10 @@ user-guide-title: Guida all’aggiornamento
 user-guide-description: Scopri l’importanza di aggiornare l’applicazione Adobe Commerce e come pianificare ed eseguire correttamente un aggiornamento.
 feature: Upgrade
 topic: Administration, Commerce, Development, Upgrade
-source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
+source-git-commit: 4616cc6990921b531483213f2904a24b483fb7ac
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 5%
+source-wordcount: '144'
+ht-degree: 4%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 5%
    - [Rivedi modifiche alla piattaforma](prepare/platform-changes.md)
    - [Completare i prerequisiti per l’aggiornamento](prepare/prerequisites.md)
    - [Migrazione da Elasticsearch a OpenSearch](prepare/opensearch-migration.md)
+   - [Migrazione da RabbitMQ ad ActiveMQ](prepare/activemq-migration.md)
    - [Comprendere l’ambito dell’aggiornamento](prepare/scope.md)
 - Implementazione {#implementation}
    - [Eseguire un aggiornamento](implementation/perform-upgrade.md)
@@ -54,4 +55,4 @@ ht-degree: 5%
 - Risorse {#resources}
    - [Lettura consigliata](resources/recommended-reading.md)
    - [Modernizzazione della piattaforma con Adobe Commerce](resources/recommended-upgrade-paths.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
