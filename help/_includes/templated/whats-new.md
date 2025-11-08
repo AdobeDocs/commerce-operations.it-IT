@@ -614,7 +614,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td>
         Aggiornamento principale
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">richiesta pull</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.it-IT/pull/161">richiesta pull</a></td>
     </tr>
   </tbody>
 </table>

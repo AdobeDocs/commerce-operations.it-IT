@@ -18,7 +18,7 @@ Adobe accetta le richieste delle parti interessate interne ed esterne, inclusi, 
 
 ## Come si crea una richiesta?
 
-**Le parti interessate interne** possono inviare richieste aprendo un problema Jira nel progetto COMDOX. **Le parti interessate esterne** possono inviare richieste aprendo [un problema GitHub](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) in questo archivio.
+**Le parti interessate interne** possono inviare richieste aprendo un problema Jira nel progetto COMDOX. **Le parti interessate esterne** possono inviare richieste aprendo [un problema GitHub](https://github.com/AdobeDocs/commerce-operations.it-IT/issues/new/choose) in questo archivio.
 
 Puoi inviare i seguenti tipi di richieste:
 
@@ -29,7 +29,7 @@ Puoi inviare i seguenti tipi di richieste:
 ## Qual è il processo complessivo?
 
 
-**Crea un ticket Jira o un problema**. Le parti interessate interne creano un ticket Jira nel progetto COMDOX. Le parti interessate esterne presentano un problema GitHub. Includi i dettagli completi nel problema Jira o [GitHub](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) per aiutare il team a comprendere il contesto e assegnare la priorità alla richiesta.
+**Crea un ticket Jira o un problema**. Le parti interessate interne creano un ticket Jira nel progetto COMDOX. Le parti interessate esterne presentano un problema GitHub. Includi i dettagli completi nel problema Jira o [GitHub](https://github.com/AdobeDocs/commerce-operations.it-IT/issues/new/choose) per aiutare il team a comprendere il contesto e assegnare la priorità alla richiesta.
 
 **Il team del progetto Adobe valuta e assegna la priorità alla richiesta**. Il team controlla regolarmente le richieste per determinarne la priorità e valutare le modifiche richieste per l&#39;inclusione nelle best practice per l&#39;implementazione del playbook. Ad esempio, il team potrebbe determinare che, invece di creare un nuovo argomento Best Practices, il contenuto richiesto debba essere aggiunto alla documentazione del prodotto esistente su Experience League o sul sito Adobe Developer.
 
