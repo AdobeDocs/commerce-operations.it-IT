@@ -1,7 +1,7 @@
 ---
-source-git-commit: e044459f849f35a4a1e161a191bc7497fcef9281
+source-git-commit: 92685411a41cb03f1ac9408b0cef2fe83b4a2a16
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,10 @@ L&#39;elenco iniziale viene generato automaticamente utilizzando il comando `bin
 ## Generale
 
 Ulteriori informazioni sullo strumento in [Panoramica](/help/upgrade/upgrade-compatibility-tool/overview.md).
+
+>[!NOTE]
+>
+>Il comando `composer update` non funziona per l&#39;aggiornamento di questo strumento. È necessario [scaricare e installare la versione più recente](/help/upgrade/upgrade-compatibility-tool/run.md).
 
 Questa documentazione di riferimento viene generata dal codice sorgente dell’applicazione. Per modificare la documentazione, è necessario aprire una richiesta di pull per il comando corrispondente nell&#39;archivio [codebase](https://github.com/magento) pertinente. Per ulteriori informazioni, consulta [Contributi codice](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
