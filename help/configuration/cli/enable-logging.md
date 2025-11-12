@@ -3,9 +3,9 @@ title: Abilita registrazione
 description: Scopri come abilitare e disabilitare diversi tipi di accesso in Adobe Commerce. Scopri le tecniche di configurazione e gestione della registrazione.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: aff705cefcd4de38d17cad41628bc8dbd6d630cb
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,23 @@ Per impostazione predefinita, Commerce scrive nel registro di debug (`<install_d
 
 Per impostazione predefinita, Commerce scrive i log delle attività del database nel file `<install-dir>/var/debug/db.log`.
 
+### Percorso di archiviazione registrazione query
+
+Quando la registrazione del database è abilitata, Commerce memorizza i registri delle query nel percorso seguente:
+
+- **File di registro query**: `<install-directory>/var/debug/db.log`
+- **Directory di registro**: `<install-directory>/var/debug/`
+
+Il registro query contiene:
+- Query SQL eseguite dall’applicazione
+- Tempi di esecuzione della query
+- Parametri di query e associazioni
+- Informazioni sulla connessione al database
+
+>[!NOTE]
+>
+>Il file di registro delle query può crescere rapidamente in ambienti con traffico elevato. Monitorare lo spazio su disco e implementare la rotazione del registro o la pulizia periodica del file di registro delle query.
+
 ### Per abilitare la registrazione del database
 
 1. Utilizzare il comando `dev:query-log` per abilitare o disabilitare la registrazione del database.
@@ -71,6 +88,24 @@ Per impostazione predefinita, Commerce scrive i log delle attività del database
    ```bash
    bin/magento cache:flush
    ```
+
+### Per visualizzare i registri delle query
+
+Puoi visualizzare i registri delle query utilizzando i comandi standard di visualizzazione dei file:
+
+```bash
+# View the entire query log
+cat var/debug/db.log
+
+# View the last 100 lines of the query log
+tail -n 100 var/debug/db.log
+
+# Monitor the query log in real-time
+tail -f var/debug/db.log
+
+# Search for specific queries
+grep "SELECT" var/debug/db.log
+```
 
 ## Registrazione Cron
 
