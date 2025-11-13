@@ -3,9 +3,9 @@ title: Creare, modificare o sbloccare un account amministratore
 description: Per gestire l’account amministratore dell’applicazione Adobe Commerce Admin, segui la procedura riportata di seguito.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: aaed7dba7d11085eb8e2793cefffb8c8b082e750
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,12 @@ bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 Dove la tabella seguente definisce parametri e valori:
 
 | Nome | Valore | Obbligatorio |
-|--- |--- |--- |
+|--- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--- |
 | `--admin-firstname` | Nome dell&#39;utente amministratore. | Sì |
 | `--admin-lastname` | Cognome dell&#39;utente amministratore. | Sì |
 | `--admin-email` | Indirizzo di posta elettronica dell&#39;utente amministratore. | Sì |
 | `--admin-user` | Nome utente amministratore. | Sì |
-| `--admin-password` | Password utente amministratore. La password deve contenere almeno 7 caratteri e includere almeno un carattere alfabetico e almeno un carattere numerico. <br><br>È consigliabile impostare una password più lunga e complessa. Se la stringa della password contiene caratteri speciali che richiedono un&#39;interpretazione letterale, ad esempio barre rovesciate o spazi, racchiudere la password tra virgolette singole. | Sì |
+| `--admin-password` | Password utente amministratore. La password deve contenere almeno 12 caratteri e includere almeno un carattere alfabetico e almeno un carattere numerico. <br><br>Adobe consiglia di specificare una password più lunga e complessa. Se la stringa della password contiene caratteri speciali che richiedono un&#39;interpretazione letterale, ad esempio barre rovesciate o spazi, racchiudere la password tra virgolette singole. | Sì |
 | `--magento-init-params` | Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione dell&#39;applicazione<br/><br/>Ad esempio: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | No |
 
 Esempio di utilizzo:
