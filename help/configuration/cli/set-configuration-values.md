@@ -2,9 +2,9 @@
 title: Impostare i valori di configurazione
 description: Scopri come impostare i valori di configurazione e modificare i valori Admin bloccati in Adobe Commerce. Scopri i comandi e le tecniche di configurazione avanzata.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 2672c696d672ad72bef7537570ed630bc33c41b4
+source-git-commit: 5e2d11330d3334df36ba8b3d176fbe2d8bfe0486
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -140,9 +140,7 @@ Nella tabella seguente sono descritti i parametri del comando `set`:
 
 >[!INFO]
 >
->A partire da Commerce 2.2.4, le opzioni `--lock-env` e `--lock-config` sostituiscono l&#39;opzione `--lock`.
->
->Se si utilizza l&#39;opzione `--lock-env` o `--lock-config` per impostare o modificare un valore, è necessario utilizzare il comando [`bin/magento app:config:import`](../cli/import-configuration.md) per importare l&#39;impostazione prima di accedere all&#39;Admin o alla vetrina.
+>A partire da Commerce 2.2.4, le opzioni `--lock-env` e `--lock-config` sostituiscono l&#39;opzione `--lock`. Se si utilizza una di queste opzioni, il valore viene scritto direttamente nel file `app/etc/env.php` o `app/etc/config.php` e diventa di sola lettura nell&#39;amministratore. Per importare le modifiche di configurazione da questi file nel database, eseguire il comando `bin/magento app:config:import`, ad esempio dopo aver modificato o ridistribuito manualmente i file.
 
 Se si immette un percorso di configurazione errato, questo comando restituirà un errore
 
@@ -191,7 +189,7 @@ bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecu
 
 >[!INFO]
 >
->Il file `env.php` è specifico del sistema. Non è consigliabile trasferirla in un altro sistema. Puoi utilizzarlo per sovrascrivere i valori di configurazione dal database. È possibile, ad esempio, acquisire un dump del database da un altro sistema e sovrascrivere `base_url` e altri valori in modo da non dover modificare il database.
+>Il file `env.php` è specifico del sistema. Non trasferirla in un altro sistema. Puoi utilizzarlo per sovrascrivere i valori di configurazione dal database. È possibile, ad esempio, acquisire un dump del database da un altro sistema e sovrascrivere `base_url` e altri valori in modo da non dover modificare il database.
 
 Se si utilizza l&#39;opzione `--lock-config` come segue, il valore di configurazione viene salvato in `<Commerce base dir>/app/etc/config.php`. Il campo per la modifica di questo valore in Amministrazione è disabilitato.
 
@@ -221,7 +219,7 @@ dove
 
 >[!INFO]
 >
->Il comando `bin/magento config:show` visualizza i valori di qualsiasi [valore crittografato](../reference/config-reference-sens.md) come una serie di asterischi: `**&#x200B;**&#x200B;**`.
+>Il comando `bin/magento config:show` visualizza i valori di qualsiasi [valore crittografato](../reference/config-reference-sens.md) come una serie di asterischi: `******`.
 
 ### Esempi
 
