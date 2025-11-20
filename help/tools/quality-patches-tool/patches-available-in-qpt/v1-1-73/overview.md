@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a604879f63b1cfcf8f21fec53e69984bff0c66d4
+source-git-commit: ae994d8185516dabf88b682a33f1775c0d636515
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ QPT v1.1.73 include le seguenti patch:
 1. **ACSD-67908**: è stato risolto il problema che impediva la corretta unione dei file JS nelle impostazioni multi-store.
 1. **ACSD-68190**: è stato risolto il problema che impediva l&#39;applicazione degli sconti, impediva la corretta visualizzazione degli sconti applicati nella risposta alla visualizzazione del carrello di GraphQL e la rimozione degli sconti non cedolari in seguito alla rimozione di uno sconto cedolare.
 1. **ACSD-68206**: è stato corretto l&#39;errore che si verificava quando si utilizzava il server applicazioni GraphQL con la funzionalità **[!UICONTROL Rate Limiting]** con l&#39;estensione PHP [!DNL Redis] installata.
-1. **ACSD-68356**: è stato risolto il problema a causa del quale una query del carrello di GraphQL restituiva un importo di sconto errato per i preventivi virtuali.
+1. **ACSD-68356**: la query del carrello [!DNL GraphQL] restituisce un importo di sconto errato per le virgolette virtuali.
 1. **ACSD-68391**: è stato corretto il problema a causa del quale le autorizzazioni relative alla categoria non venivano applicate correttamente in **[!UICONTROL Quick Order]** e **[!UICONTROL Requisition Lists]**.
 1. **ACSD-68400**: è stato risolto un problema a causa del quale la quantità di gift card virtuale non veniva riportata in modo preciso in **[!UICONTROL Inventory reservation table]**.
 
