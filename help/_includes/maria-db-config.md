@@ -1,5 +1,5 @@
 ---
-source-git-commit: d7926b9150137813b1161581bb1d7884a6fe11e9
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -10,7 +10,7 @@ ht-degree: 1%
 La reindicizzazione su MariaDB 10.4 e 10.6 richiede più tempo rispetto alle versioni precedenti di MariaDB o MySQL. Per accelerare la reindicizzazione, si consiglia di impostare i seguenti parametri di configurazione MariaDB:
 
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
-* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
+* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/docs/server/server-management/variables-and-modes/server-system-variables#optimizer_use_condition_selectivity)
 
 Se si verifica un peggioramento delle prestazioni non correlato all&#39;indicizzazione dopo l&#39;aggiornamento a MariaDB 10.6, provare ad abilitare l&#39;impostazione [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type). Ad esempio, `--query-cache-type=ON`.
 

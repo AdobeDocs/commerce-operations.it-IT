@@ -5,7 +5,7 @@ role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: d40de2f05147e6c58c15cd3cd59275cc91283162
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Due esempi di percorsi di archiviazione sono le tabelle di database e [!DNL Redi
 
 In qualità di sviluppatore, è fondamentale prendere sempre in considerazione l&#39;utilizzo di strumenti al di fuori dell&#39;ambiente [!DNL Adobe Commerce], ad esempio GraphQL mesh e Adobe App Builder. Questi strumenti possono essere utili per mantenere l’accesso ai dati, ma non hanno alcun impatto sull’applicazione Commerce di base o sulle tabelle di database sottostanti. Con questo approccio, puoi esporre i dati tramite un’API. Quindi, aggiungi un’origine dati alla configurazione di App Builder. Utilizzando GraphQL Mesh, puoi combinare tali origini dati e produrre un&#39;unica risposta come indicato in [dati legacy](#legacy-data).
 
-Per ulteriori dettagli sulla rete GraphQL, vedere [Gateway GraphQL Mesh](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Per informazioni sull&#39;App Builder di Adobe, vedere [Introduzione ad App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=it){target="_blank"}.
+Per ulteriori dettagli sulla rete GraphQL, vedere [Gateway GraphQL Mesh](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Per informazioni sull&#39;App Builder di Adobe, vedere [Introduzione ad App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
 
 ## Modifica di una tabella core o di terze parti
 
@@ -73,7 +73,7 @@ Adobe consiglia di seguire questi passaggi quando si aggiunge una colonna a una 
 
    Esempio: `app/code/YourCompany/Customer`
 
-1. Creare i file appropriati per abilitare il modulo (vedere [Creare un modulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=it){target="_blank"}.
+1. Creare i file appropriati per abilitare il modulo (vedere [Creare un modulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Creare un file denominato `db_schema.xml` nella cartella `etc` e apportare le modifiche appropriate.
 
