@@ -17,10 +17,10 @@ Per accedere ai pacchetti Adobe Commerce, devi utilizzare le chiavi associate a 
 
 >[!TIP]
 >
->Se riscontri [errori](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) o non vedi la sezione [!UICONTROL Access Keys] nella scheda Marketplace, potresti non disporre dell&#39;autorizzazione per accedere al pacchetto o il diritto di accesso è scaduto a causa di una fattura in sospeso sul tuo account.
+>Se riscontri [errori](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=it) o non vedi la sezione [!UICONTROL Access Keys] nella scheda Marketplace, potresti non disporre dell&#39;autorizzazione per accedere al pacchetto o il diritto di accesso è scaduto a causa di una fattura in sospeso sul tuo account.
 >
 >* Se si è la persona di contatto principale dell&#39;account, verificare che non siano presenti fatture in sospeso nell&#39;elenco dell&#39;account.
->* Se le chiavi fornite dal contatto principale non funzionano e non sono presenti fatture in sospeso nell&#39;account, il contatto principale deve contattare il [supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) per assistenza.
+>* Se le chiavi fornite dal contatto principale non funzionano e non sono presenti fatture in sospeso nell&#39;account, il contatto principale deve contattare il [supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#submit-ticket) per assistenza.
 
 Per creare le chiavi di autenticazione:
 
