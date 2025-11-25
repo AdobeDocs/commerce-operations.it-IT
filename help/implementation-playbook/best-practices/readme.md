@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Best practice: flusso di lavoro per la creazione di contenuti
 
-Questo documento descrive il flusso di lavoro dell&#39;utente per richiedere modifiche o aggiunte al contenuto delle *[best practice](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* nella *playbook di implementazione di Adobe Commerce*.
+Questo documento descrive il flusso di lavoro dell&#39;utente per richiedere modifiche o aggiunte al contenuto delle *[best practice] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* nella *playbook di implementazione di Adobe Commerce*.
 
 ## Chi può creare una richiesta?
 

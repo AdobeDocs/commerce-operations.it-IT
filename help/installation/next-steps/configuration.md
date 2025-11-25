@@ -27,7 +27,7 @@ Per ulteriori informazioni su cron, tra cui come rimuovere un crontab ed eseguir
 Dopo l&#39;installazione, si consiglia quanto segue:
 
 * Assicurati che la proprietà e le autorizzazioni del file siano impostate [correttamente](../prerequisites/file-system/configure-permissions.md)
-* È consigliabile [modificare l&#39;URI di amministrazione predefinito ](../tutorials/admin-uri.md) da `admin` a qualcos&#39;altro
+* È consigliabile [modificare l&#39;URI di amministrazione predefinito &#x200B;](../tutorials/admin-uri.md) da `admin` a qualcos&#39;altro
 * Verificare che l&#39;intestazione HTTP [`X-Frame-Option`](../../configuration/security/xframe-options.md) sia impostata correttamente.
 * Prendi precauzioni contro il cross-site scripting (XSS) [proteggendo i modelli](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)
 
