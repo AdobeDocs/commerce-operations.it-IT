@@ -2,7 +2,7 @@
 title: Prerequisiti completi
 description: Prepara il tuo progetto Adobe Commerce per un aggiornamento completando questi passaggi preliminari.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 2d17da1f8cbda1462839ad2fa3ea569833443827
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Assicurati di aver aggiornato tutti i requisiti di sistema e le dipendenze nell�
 
 >[!NOTE]
 >
->Per i progetti Adobe Commerce su infrastruttura cloud Pro, è necessario creare un ticket [Supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#submit-ticket) per installare o aggiornare i servizi negli ambienti di staging e produzione. Indicare le modifiche necessarie al servizio e includere nel ticket i file `.magento.app.yaml` e `services.yaml` aggiornati e la versione PHP. L’aggiornamento del progetto da parte del team di infrastruttura Cloud può richiedere fino a 48 ore. Consulta [Software e servizi supportati](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=it#supported-software-and-services).
+>Per i progetti Adobe Commerce su infrastruttura cloud Pro, è necessario creare un ticket [Supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) per installare o aggiornare i servizi negli ambienti di staging e produzione. Indicare le modifiche necessarie al servizio e includere nel ticket i file `.magento.app.yaml` e `services.yaml` aggiornati e la versione PHP. L’aggiornamento del progetto da parte del team di infrastruttura Cloud può richiedere fino a 48 ore. Consulta [Software e servizi supportati](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## Verificare che sia installato un motore di ricerca supportato
 
@@ -99,7 +99,7 @@ Per aggiornare correttamente MySQL dalla versione 8.0 alla versione 8.4, è nece
    >
    >Se non si modifica il valore di `restrict_fk_on_non_standard_key` in `OFF`, verrà visualizzato il seguente errore durante l&#39;importazione:
    >
-   >```sql
+   ```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Riavviare il server MySQL.
@@ -358,7 +358,7 @@ Per impostare la variabile di ambiente:
 
 Per motivi di sicurezza, Adobe Commerce richiede determinate autorizzazioni sul file system. Le autorizzazioni sono diverse da _[proprietà](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. La proprietà determina chi può eseguire azioni sul file system; le autorizzazioni determinano ciò che l’utente può fare.
 
-Le directory nel file system devono essere scrivibili dal gruppo [&#x200B; del proprietario del file system &#x200B;](../../installation/prerequisites/file-system/overview.md).
+Le directory nel file system devono essere scrivibili dal gruppo [ del proprietario del file system ](../../installation/prerequisites/file-system/overview.md).
 
 Per verificare che le autorizzazioni del file system siano impostate correttamente, accedere al server applicazioni o utilizzare l&#39;applicazione di gestione file del provider di hosting.
 
@@ -445,4 +445,4 @@ Per installare il plug-in:
    composer update
    ```
 
-<!-- Last updated from includes: 2024-02-12 09:51:27 -->
+<!-- Last updated from includes: 2025-11-25 11:39:51 -->
