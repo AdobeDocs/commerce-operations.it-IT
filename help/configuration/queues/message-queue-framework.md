@@ -2,7 +2,7 @@
 title: Panoramica delle code di messaggi
 description: Scopri il framework della coda di messaggi e come funziona con l’applicazione Adobe Commerce.
 exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
-source-git-commit: 6f15a24e650a7138bae6d0b40f230e6970a943b0
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 MQF (Message Queue Framework) è un sistema che consente a un modulo di pubblicare messaggi nelle code. Definisce inoltre i [consumer](consumers.md) che riceveranno i messaggi in modo asincrono. MQF supporta più broker di messaggistica:
 
 - **[[!DNL RabbitMQ]](https://www.rabbitmq.com)** - Gestore di messaggistica primario, che fornisce una piattaforma scalabile per l&#39;invio e la ricezione di messaggi. Include un meccanismo per l’archiviazione dei messaggi non consegnati ed è basato sulla specifica AMQP (Advanced Message Queuing Protocol) 0.9.1.
-- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - Gestore di messaggistica alternativo che utilizza il protocollo STOMP (Simple Text Oriented Messaging Protocol) per la messaggistica affidabile e scalabile. Introdotto in Adobe Commerce 2.4.6 e versioni successive.
+- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - Gestore di messaggistica alternativo che utilizza il protocollo STOMP (Simple Text Oriented Messaging Protocol) per la messaggistica affidabile e scalabile. Introdotto in Adobe Commerce 2.4.5 e versioni successive.
 
 ## RabbitMQ (AMQP)
 
@@ -38,7 +38,7 @@ In alternativa a RabbitMQ, Adobe Commerce supporta anche [Apache ActiveMQ Artemi
 
 >[!NOTE]
 >
->ActiveMQ Artemis è stato introdotto in Adobe Commerce 2.4.6 e versioni successive.
+>ActiveMQ Artemis è stato introdotto in Adobe Commerce 2.4.5 e versioni successive.
 
 Il diagramma seguente illustra il framework STOMP con ActiveMQ Artemis:
 

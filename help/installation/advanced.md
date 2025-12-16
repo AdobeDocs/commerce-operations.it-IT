@@ -2,7 +2,7 @@
 title: Installazione on-premise avanzata
 description: Scopri gli scenari di installazione avanzata per le distribuzioni Adobe Commerce on-premise. Scopri configurazioni complesse e opzioni di configurazione personalizzate.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 937db2209ec4122c611a857796f043523a0acb29
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Le opzioni seguenti specificano le informazioni utente e le credenziali per l’
 
 Puoi creare l’utente amministratore durante o dopo l’installazione. Se crei l’utente durante l’installazione, sono necessarie tutte le variabili delle credenziali amministratore. Vedi [Esempi di installazioni localhost](#sample-localhost-installations).
 
-Nelle tabelle seguenti sono disponibili molti parametri di installazione, ma non tutti. Per un elenco completo, vedere [Riferimento agli strumenti della riga di comando](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+Nelle tabelle seguenti sono disponibili molti parametri di installazione, ma non tutti. Per un elenco completo, vedere [Riferimento agli strumenti della riga di comando](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nome | Valore | Obbligatorio |
 |--- |--- |--- |
@@ -193,7 +193,7 @@ Nelle tabelle seguenti sono disponibili molti parametri di installazione, ma non
 
 >[!NOTE]
 >
->ActiveMQ Artemis è stato introdotto in Adobe Commerce 2.4.6 e versioni successive.
+>ActiveMQ Artemis è stato introdotto in Adobe Commerce 2.4.5 e versioni successive.
 
 | Nome | Valore | Obbligatorio |
 |--- |--- |--- |
@@ -369,6 +369,6 @@ bin/magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 >[!NOTE]
 >
->L&#39;installazione di ActiveMQ Artemis richiede Adobe Commerce 2.4.6 o versione successiva.
+>L&#39;installazione di ActiveMQ Artemis richiede Adobe Commerce 2.4.5 o versione successiva.
 
 <!-- Last updated from includes: 2024-04-16 09:42:31 -->
