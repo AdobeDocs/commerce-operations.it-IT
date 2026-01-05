@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4dd926ca7014c9e007a8c2c847e076064eb8d170
+source-git-commit: 86d7fba92705b808b45d655a432bb92ed9f9181a
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Il progetto aderisce al [Codice di condotta](code-of-conduct.md) di Adobe. Parte
 
 ## Documentazione della Guida per i collaboratori
 
-Consulta la [Guida per i collaboratori](https://experienceleague.adobe.com/it/docs/contributor/contributor-guide/introduction).
+Consulta la [Guida per i collaboratori](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 ## Hai una domanda?
 
@@ -41,10 +41,9 @@ Tutte le richieste devono essere presentate sotto forma di richieste pull e devo
 dai committenti del progetto. Leggi la documentazione sulle richieste pull di [GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 per ulteriori informazioni sull’invio di richieste pull.
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+Infine, segui il [modello di richiesta pull](PULL_REQUEST_TEMPLATE.md) quando
+invio di una richiesta di pull.
+
 
 ## Da collaboratore a committente
 
@@ -57,11 +56,11 @@ Puoi rivolgerti ai committer esistenti per parlarne con loro.
 
 ## Problemi di sicurezza
 
-I problemi di sicurezza non devono essere segnalati in questo Issue tracker. [segnala un problema ai nostri esperti di sicurezza](https://helpx.adobe.com/it/security/alertus.html).
+I problemi di sicurezza non devono essere segnalati in questo Issue tracker. [segnala un problema ai nostri esperti di sicurezza](https://helpx.adobe.com/security/alertus.html).
 
 ## Novità
 
-Se le modifiche introducono nuovi argomenti, aggiornamenti significativi o correzioni che devono essere evidenziati, puoi aggiungere una breve descrizione alla [sezione Novità](https://experienceleague.adobe.com/it/docs/commerce-operations/operational-guides/home#whats-new) direttamente dal corpo della richiesta di pull.
+Se le modifiche introducono nuovi argomenti, aggiornamenti significativi o correzioni che devono essere evidenziati, puoi aggiungere una breve descrizione alla [sezione Novità](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new) direttamente dal corpo della richiesta di pull.
 
 Per aggiungere un&#39;evidenziazione Novità:
 
@@ -109,4 +108,4 @@ Per aggiungere un&#39;evidenziazione Novità:
 1. La parte `whatsnew` deve iniziare dal tag `whatsnew` e trovarsi alla fine del corpo della richiesta di pull.
 1. Le descrizioni delle modifiche devono includere collegamenti di lavoro. Verifica che i collegamenti siano corretti e reindirizza agli argomenti previsti. Se l’argomento è nuovo, verifica che i collegamenti funzionino dopo aver unito la richiesta di pull e pubblicato il nuovo argomento. È consentito correggere i collegamenti dopo l’unione della richiesta di pull.
 
-Ad esempio, cerca nelle richieste pull chiuse nell&#39;archivio di per vedere come vengono formattati gli elementi di rilievo esistenti e confrontarli con la [sezione Novità](https://experienceleague.adobe.com/it/docs/commerce-operations/operational-guides/home#whats-new) per vedere come appaiono nella documentazione.
+Ad esempio, cerca nelle richieste pull chiuse nell&#39;archivio di per vedere come vengono formattati gli elementi di rilievo esistenti e confrontarli con la [sezione Novità](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new) per vedere come appaiono nella documentazione.
