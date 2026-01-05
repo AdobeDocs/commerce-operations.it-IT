@@ -23,12 +23,12 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono stati forniti ulteriori dettagli su <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values">Impostare i valori di configurazione</a>.</p>
+      <td><p>Sono stati forniti ulteriori dettagli su <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values">Impostare i valori di configurazione</a>.</p>
 </td>
       <td>
         Best practice
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/147">richiesta pull</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.it-IT/pull/147">richiesta pull</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stato aggiornato il comando CLI <code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> nelle istruzioni <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Configure Valkey default caching</a> per specificare il valore corretto per il parametro <code class="language-plaintext highlighter-rouge">cache-backend</code>.</p>
+      <td><p>È stato aggiornato il comando CLI <code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> nelle istruzioni <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Configure Valkey default caching</a> per specificare il valore corretto per il parametro <code class="language-plaintext highlighter-rouge">cache-backend</code>.</p>
 </td>
       <td>
         Best practice
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/159">richiesta pull</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.it-IT/pull/159">richiesta pull</a></td>
     </tr>
   </tbody>
 </table>
