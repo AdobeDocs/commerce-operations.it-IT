@@ -3,7 +3,7 @@ title: Fasi di implementazione
 description: Scopri le best practice per le fasi di implementazione dei progetti Adobe Commerce.
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
 feature: Best Practices
-source-git-commit: 21a4ec57b49f896cffefbec8db4ce97c161315a0
+source-git-commit: 152c932b6eca3e131f46e5ade93c4e87fc0811a6
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 7%
@@ -63,4 +63,4 @@ Queste best practice sono organizzate per fase di implementazione per trovare i 
 
 {{$include /help/_includes/templated/whats-new-bp.md}}
 
-<!-- Last updated from includes: 2025-09-04 11:19:10 -->
+<!-- Last updated from includes: 2026-01-05 14:40:37 -->
