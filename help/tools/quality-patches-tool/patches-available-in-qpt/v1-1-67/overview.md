@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: 951738a4c671ed6fcc47b2a928d2110c78763d26
+source-git-commit: 4f4131b89abffbe707f084b45f9d492679138b00
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 QPT v1.1.67 include le seguenti patch:
 1. **AC-14985**: errore durante l&#39;invio di e-mail SMTP tramite TLS.
 1. **AC-14984**: problema di connessione SSL con php-amqplib/php-amqplib ^3.2.0.
-1. **ACSD-65935**: la query GraphQL `customerOrders` ha restituito un errore interno del server quando un prodotto è stato eliminato.
+1. **[ACSD-65935](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted.md)**: la query GraphQL `customerOrders` ha restituito un errore interno del server quando un prodotto è stato eliminato.
 1. **ACSD-66049**: gli storefront non inglesi visualizzano prezzi errati a causa della versione della libreria ICU.
 1. **ACSD-66084**: `row_total_incl_tax` restituisce quasi zero invece di 0,00 per gli elementi completamente scontati nell&#39;API dell&#39;ordine.
 1. **ACSD-66118**: l&#39;aggiornamento del codice **[!UICONTROL Store View]** cancella le impostazioni **[!UICONTROL Design Configuration]** se la cache di configurazione non viene aggiornata.
