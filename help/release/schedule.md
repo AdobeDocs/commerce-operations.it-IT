@@ -18,7 +18,7 @@ Lo scopo di questa pianificazione è quello di fornire le date in cui Adobe pian
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle nuove funzioni, sull&#39;infrastruttura cloud e sulle versioni di estensibilità, consulta la [documentazione sulla versione di Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
+>Per ulteriori informazioni sulle nuove funzioni, sull&#39;infrastruttura cloud e sulle versioni di estensibilità, consulta la [documentazione sulla versione di Adobe Commerce Services](https://experienceleague.adobe.com/it/docs/commerce/user-guides/release-information/release-notes-all).
 
 Oltre alle patch di qualità, sicurezza e versione beta pianificate elencate in questa pagina, Adobe fornisce l&#39;accesso a [singole patch](versioning-policy.md#individual-patch) tramite lo strumento [Patch di qualità](../tools/quality-patches-tool/usage.md). Lo strumento consente di applicare, ripristinare e visualizzare informazioni generali su tutte le singole patch disponibili per la versione installata di Adobe Commerce.
 
@@ -43,10 +43,10 @@ Per ulteriori informazioni, vedere l&#39;immagine seguente:
 
 Adobe notifica ai clienti le nuove versioni delle patch tramite i seguenti canali:
 
-- [Bollettini sulla sicurezza e avvisi di Adobe](https://helpx.adobe.com/security/security-bulletin.html#magento)
+- [Bollettini sulla sicurezza e avvisi di Adobe](https://helpx.adobe.com/it/security/security-bulletin.html#magento)
 - E-mail
 - Avvisi interni al prodotto
 
 >[!NOTE]
 >
-> Per le date di rilascio di ogni versione secondaria, patch e di sicurezza e per le date di fine del supporto regolare, vedere [Versioni rilasciate](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
+> Per le date di rilascio di ogni versione secondaria, patch e di sicurezza e per le date di fine del supporto regolare, vedere [Versioni rilasciate](https://experienceleague.adobe.com/it/docs/commerce-operations/release/versions).
