@@ -2,7 +2,7 @@
 title: Compilatore di codice
 description: Scopri come eseguire il compilatore del codice Adobe Commerce dalla riga di comando. Scopri i processi di compilazione e le tecniche di ottimizzazione.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -22,7 +22,7 @@ La compilazione del codice include quanto segue (in nessun ordine particolare):
 - Generazione del codice degli archivi (codice generato per le API)
 - Generazione attributi dati del servizio (classi di estensione generate per gli oggetti dati)
 
-Le classi di compilazione del codice sono disponibili nello spazio dei nomi [\Magento\Setup\Module\Di\App\Task\Operation][operation].
+Le classi di compilazione del codice sono disponibili nello spazio dei nomi [\Magento\Setup\Module\Di\App\Task\Operation](https://github.com/magento/magento2/blob/2.4.8/setup/src/Magento/Setup/Module/Di/App/Task/Operation).
 
 Per eseguire il compilatore a tenant singolo:
 
@@ -60,6 +60,3 @@ In alcuni casi, potrebbe essere utile compilare il codice prima di installare l&
 
 Per compilare il codice senza un database, vedere [Distribuire i file di visualizzazione statica senza installare Magento](../cli/static-view-file-deployment.md).
 
-<!-- link definitions -->
-
-[operation]: https://github.com/magento/magento2/blob/2.4/setup/src/Magento/Setup/Module/Di/App/Task/Operation

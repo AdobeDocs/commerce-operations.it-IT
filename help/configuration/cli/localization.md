@@ -2,9 +2,9 @@
 title: Dizionari di traduzione e pacchetti linguistici
 description: Scopri come generare dizionari di traduzione e pacchetti linguistici per Adobe Commerce. Scopri la localizzazione e la configurazione di store multilingue.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Le traduzioni Commerce consentono di personalizzare e localizzare il negozio per
 - **Dizionari di traduzione**, che rappresentano un modo pratico per personalizzare o tradurre _alcune_ parole e frasi, ad esempio quelle per un modulo o un tema personalizzato.
 - **Pacchetti di lingua** che consentono di tradurre _una o tutte_ parole e frasi nell&#39;applicazione Commerce.
 
-Vedi [Panoramica sulle traduzioni].
+Vedi [Panoramica sulle traduzioni](https://developer.adobe.com/commerce/frontend-core/guide/translations/).
 
 ## Generare un dizionario di traduzione
 
-Puoi generare un [dizionario di traduzione] per personalizzare stringhe esistenti, tradurre parole e frasi in un modulo personalizzato, localizzare un tema o creare pacchetti di lingue.
+Puoi generare un [dizionario di traduzione](https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries) per personalizzare stringhe esistenti, tradurre parole e frasi in un modulo personalizzato, localizzare un tema o creare pacchetti di lingue.
 
 Per iniziare la traduzione, utilizza un comando per generare un file CSV del dizionario con un elenco di tutte le frasi e parole esistenti.
 
@@ -35,7 +35,7 @@ Per generare il dizionario e avviare la traduzione:
 
 1. Puoi creare un pacchetto dei dizionari di traduzione in un pacchetto per lingua e fornirlo all’amministratore del Commerce Store.
 
-1. Nell&#39;amministratore, l&#39;amministratore dell&#39;archivio [configura le traduzioni].
+1. Nell&#39;amministratore, l&#39;amministratore dell&#39;archivio [configura le traduzioni](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Opzioni comando:
 
@@ -85,7 +85,7 @@ Un esempio di traduzione di una frase:
 
 ## Creare un pacchetto lingua
 
-Al contrario di un dizionario di traduzione, puoi tradurre qualsiasi parola o tutte le parole e le frasi nell’applicazione Commerce utilizzando un pacchetto lingua. È possibile tradurre un particolare componente, come un modulo o un tema, utilizzando un dizionario di traduzione. [Ulteriori informazioni sui pacchetti per lingua].
+Al contrario di un dizionario di traduzione, puoi tradurre qualsiasi parola o tutte le parole e le frasi nell’applicazione Commerce utilizzando un pacchetto lingua. È possibile tradurre un particolare componente, come un modulo o un tema, utilizzando un dizionario di traduzione. [Ulteriori informazioni sui pacchetti per lingua](https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages).
 
 Questa sezione illustra come creare un pacchetto per la lingua, che scrive i file CSV in moduli e temi. Per creare un pacchetto lingua, è necessario eseguire le attività descritte nelle sezioni seguenti:
 
@@ -107,7 +107,7 @@ Nella tabella seguente vengono illustrati i parametri e i valori per il comando 
 | Parametro | Valore | Obbligatorio |
 |--- |--- |--- |
 | `<source>` | Percorso assoluto del file system e nome file di un file CSV che contiene il dizionario di traduzione combinato e le metainformazioni necessarie per la suddivisione in un pacchetto lingua.<br><br>Utilizzare [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) per creare il file CSV, quindi creare il pacchetto lingua come descritto in [Creare directory e file](#m2devgde-xlate-files). | Sì |
-| `<locale>` | [ISO 639-1] (lingua) e [ISO 3166] (paese) identificatori della lingua utilizzati come nome file per tutti i file CSV risultanti. Esempi: `de_DE`, `pt_PT`, `pt_BR`. | Sì |
+| `<locale>` | [ISO 639-1](https://www.iso.org/iso-639-language-codes.html) (lingua) e [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) (paese) identificatori della lingua utilizzati come nome file per tutti i file CSV risultanti. Esempi: `de_DE`, `pt_PT`, `pt_BR`. | Sì |
 | `-m --mode` | Se esiste un file di destinazione, specifica se sostituire il pacchetto lingua esistente o unire con il nuovo Language Pack. L’unione sostituisce tutte le frasi esistenti e ne aggiunge di nuove.<br><br>Valori: merge o replace (impostazione predefinita). | No |
 | `-d --allow-duplicates` | Includi questa opzione per consentire i duplicati nel Language Pack. In caso contrario, il comando non riesce se rileva la stessa frase in più voci con traduzioni diverse. | No |
 
@@ -117,12 +117,12 @@ I pacchetti di lingua si trovano in una directory in `app/i18n/<VendorName>` nel
 
 - File di licenza richiesti
 - `composer.json`
-- `registration.php` che [registra] il pacchetto lingua
+- `registration.php` che [registra](https://developer.adobe.com/commerce/php/development/build/component-registration/) il pacchetto lingua
 - [`language.xml`](#language-package-languagexml) file di metainformazioni
 
 >[!INFO]
 >
->L&#39;intero percorso deve essere scritto in minuscolo. Ad esempio, vedere [`de_de`].
+>L&#39;intero percorso deve essere scritto in minuscolo. Ad esempio, vedere [`de_de`](https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php).
 
 Per creare questi file:
 
@@ -131,8 +131,8 @@ Per creare questi file:
    Ad esempio, i pacchetti delle lingue di Commerce si trovano in `app/i18n/magento`
 
 1. Aggiungi i file di licenza richiesti.
-1. Aggiungi [`composer.json`] che specifica le dipendenze per il pacchetto lingua.
-1. Registra il pacchetto lingua con [`registration.php`]
+1. Aggiungi [`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration/) che specifica le dipendenze per il pacchetto lingua.
+1. Registra il pacchetto della lingua con [`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration/)
 1. Aggiungere il file di metainformazioni `language.xml` come descritto nella sezione successiva.
 
 #### Language.xml del pacchetto lingua
@@ -195,7 +195,7 @@ Se l&#39;applicazione Commerce non è in grado di trovare parole o frasi nel pac
 1. `<vendorname>/en_ca_package`
 1. `<vendorname>/en_us_package`
 
-La specifica di tutte le ereditarietà tra i pacchetti di linguaggio potrebbe causare la creazione di catene di ereditarietà circolari. Utilizza il test [Magento\Test\Integrity\App\Language\CircularDependencyTest] per individuare e correggere tali catene.
+La specifica di tutte le ereditarietà tra i pacchetti di linguaggio potrebbe causare la creazione di catene di ereditarietà circolari. Utilizza il test [Magento\Test\Integrity\App\Language\CircularDependencyTest](https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php) per individuare e correggere tali catene.
 
 ### Configurare più pacchetti per una lingua
 
@@ -312,16 +312,3 @@ Analogamente all&#39;esempio precedente, generare un file CSV, ma invece di spec
    </language>
    ```
 
-<!-- link definitions -->
-
-[Panoramica sulle traduzioni]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
-[dizionario di traduzione]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[configura le traduzioni]: https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/store-localize
-[Ulteriori informazioni sui pacchetti per lingua]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
-[ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
-[ISO 3166]: https://www.iso.org/iso-3166-country-codes.html
-[registri]: https://developer.adobe.com/commerce/php/development/build/component-registration/
-[&quot;de_de&quot;]: https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php
-[&quot;compositore.json&quot;]: https://developer.adobe.com/commerce/php/development/build/composer-integration/
-[&quot;registration.php&quot;]: https://developer.adobe.com/commerce/php/development/build/component-registration/
-[Magento\Test\Integrity\App\Language\CircularDependencyTest]: https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php

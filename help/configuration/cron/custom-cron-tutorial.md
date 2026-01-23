@@ -2,16 +2,16 @@
 title: Configurare un processo cron personalizzato e un gruppo cron (tutorial)
 description: Scopri come creare processi cron personalizzati utilizzando questo tutorial dettagliato per Adobe Commerce. Scopri la configurazione del modulo e del gruppo cron.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
 
 # Configurare un processo cron personalizzato
 
-Questa esercitazione dettagliata mostra come creare un processo cron personalizzato e facoltativamente un gruppo cron in un modulo di esempio. Puoi utilizzare un modulo che già disponi oppure un modulo di esempio dal nostro archivio [`magento2-samples`][samples].
+Questa esercitazione dettagliata mostra come creare un processo cron personalizzato e facoltativamente un gruppo cron in un modulo di esempio. Puoi utilizzare un modulo che già disponi oppure un modulo di esempio dal nostro archivio [`magento2-samples`](https://github.com/magento/magento2-samples).
 
 L&#39;esecuzione del processo cron comporta l&#39;aggiunta di una riga alla tabella `cron_schedule` con il nome del processo cron, `custom_cron`.
 
@@ -33,13 +33,13 @@ Se disponi già di un modulo di esempio, puoi utilizzarlo; salta questo passaggi
 
 1. Accedi al server Commerce come [proprietario del file system](../../installation/prerequisites/file-system/overview.md) o passa a tale proprietario.
 1. Passare a una directory non presente nella directory principale dell&#39;applicazione Commerce, ad esempio la home directory.
-1. Clonare l&#39;archivio [`magento2-samples`][samples].
+1. Clonare l&#39;archivio [`magento2-samples`](https://github.com/magento/magento2-samples).
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   Se il comando non riesce e viene restituito l&#39;errore `Permission denied (publickey).`, è necessario [aggiungere la chiave pubblica SSH a GitHub.com][git-ssh].
+   Se il comando non riesce e viene restituito l&#39;errore `Permission denied (publickey).`, è necessario [aggiungere la chiave pubblica SSH a GitHub.com](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 1. Creare una directory in cui copiare il codice di esempio:
 
@@ -303,7 +303,3 @@ Per verificare il gruppo cron personalizzato:
 
    ![Gruppo cron personalizzato](../../assets/configuration/cron-group.png)
 
-<!-- link definitions -->
-
-[git-ssh]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-[samples]: https://github.com/magento/magento2-samples

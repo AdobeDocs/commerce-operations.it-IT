@@ -3,16 +3,16 @@ title: Configurare il bucket AWS S3 per l’archiviazione remota
 description: Configura il progetto Commerce per utilizzare il servizio di archiviazione AWS S3 per l’archiviazione remota.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3690043019d70ad15332f757158937a7d5305043
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
 # Configurare il bucket AWS S3 per l’archiviazione remota
 
-[Amazon Simple Storage Service (Amazon S3)][AWS S3] è un servizio di archiviazione degli oggetti che offre scalabilità, disponibilità dei dati, sicurezza e prestazioni leader del settore. Il servizio AWS S3 utilizza contenitori o bucket per l’archiviazione dei dati. Questa configurazione richiede la creazione di un bucket _private_. Per Adobe Commerce sull&#39;infrastruttura cloud, vedere [Configurare l&#39;archiviazione remota per Commerce sull&#39;infrastruttura cloud](cloud-support.md).
+[Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3) è un servizio di archiviazione degli oggetti che offre scalabilità, disponibilità dei dati, sicurezza e prestazioni leader del settore. Il servizio AWS S3 utilizza contenitori o bucket per l’archiviazione dei dati. Questa configurazione richiede la creazione di un bucket _private_. Per Adobe Commerce sull&#39;infrastruttura cloud, vedere [Configurare l&#39;archiviazione remota per Commerce sull&#39;infrastruttura cloud](cloud-support.md).
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 1. Accedi al tuo dashboard di Amazon S3 e crea un bucket _private_.
 
-1. Configura [i ruoli AWS IAM]. In alternativa, genera l’accesso e le chiavi segrete.
+1. Configura [i ruoli AWS IAM](https://aws.amazon.com/iam/). In alternativa, genera l’accesso e le chiavi segrete.
 
 1. Disattiva l&#39;archiviazione del database predefinita.
 
@@ -73,7 +73,7 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### Autenticazione
 
-Se utilizzi le chiavi di accesso e segrete invece di [ruoli AWS IAM], devi includere il modulo Nginx [`ngx_aws_auth`][ngx repo].
+Se utilizzi le chiavi di accesso e segrete invece di [ruoli AWS IAM](https://aws.amazon.com/iam/), devi includere il modulo Nginx [`ngx_aws_auth`](https://github.com/anomalizer/ngx_aws_auth).
 
 ### Autorizzazioni
 
@@ -83,8 +83,3 @@ L’integrazione di S3 si basa sulla capacità di generare e archiviare immagini
 
 Si consiglia di utilizzare i metodi dell&#39;adattatore di file [!DNL Commerce] nello sviluppo della codifica o dell&#39;estensione, indipendentemente dal tipo di archiviazione dei file. Quando si utilizza S3 per l&#39;archiviazione, non utilizzare operazioni I/O native del file PHP, ad esempio `copy`, `rename` o `file_put_contents`, perché i file S3 non si trovano nel file system. Per esempi di codice, vedere [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18).
 
-<!-- link definitions -->
-
-[AWS S3]: https://aws.amazon.com/s3
-[AWS IAM]: https://aws.amazon.com/iam/
-[ngx repo]: https://github.com/anomalizer/ngx_aws_auth

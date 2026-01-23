@@ -2,7 +2,7 @@
 title: '[!DNL Extensions]'
 description: Scopri la scheda  [!DNL Extensions]  in [!DNL Site-Wide Analysis Tool], quando utilizzarla, i suoi vantaggi e le best practice.
 exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Extensions]
 
-[!DNL extension] è un modulo personalizzato, un Language Pack o una combinazione di moduli personalizzati e Language Pack che aggiungono nuove funzionalità al prodotto Adobe Commerce di base. [Commerce Marketplace](https://marketplace.magento.com/extensions.html) offre una selezione di [!DNL extensions] disponibili gratuitamente e quelli in vendita. L&#39;elenco di [!DNL extensions] installati nell&#39;istanza Adobe Commerce è disponibile in [!DNL Site-Wide Analysis Tool].
+[!DNL extension] è un modulo personalizzato, un Language Pack o una combinazione di moduli personalizzati e Language Pack che aggiungono nuove funzionalità al prodotto Adobe Commerce di base. [Commerce Marketplace](https://commercemarketplace.adobe.com//extensions.html) offre una selezione di [!DNL extensions] disponibili gratuitamente e quelli in vendita. L&#39;elenco di [!DNL extensions] installati nell&#39;istanza Adobe Commerce è disponibile in [!DNL Site-Wide Analysis Tool].
 
 ## Quando utilizzare
 
@@ -31,4 +31,4 @@ La scheda [!DNL Extensions] in [!DNL Site-Wide Analysis Tool] fornisce informazi
 
 * Se non riesci a mantenere aggiornato [!DNL extensions] di terze parti alle versioni più recenti, puoi utilizzare [!DNL extensions] diverso.
 
-* Per evitare potenziali problemi, scaricare/acquistare [!DNL extensions] di terze parti da un&#39;origine attendibile, ad esempio [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+* Per evitare potenziali problemi, scaricare/acquistare [!DNL extensions] di terze parti da un&#39;origine attendibile, ad esempio [Commerce Marketplace](https://commercemarketplace.adobe.com//extensions.html).

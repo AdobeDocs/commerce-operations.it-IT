@@ -2,7 +2,7 @@
 title: Personalizzare i percorsi delle directory di base
 description: Utilizzare la variabile MAGE_DIRS per impostare una matrice di percorsi assoluti.
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -15,7 +15,7 @@ La variabile di ambiente `MAGE_DIRS` consente di specificare percorsi di directo
 
 ## Imposta DIRS_IMMAGINE
 
-Specifica un array associativo in cui le chiavi sono costanti di [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] e i valori sono rispettivamente percorsi assoluti delle directory o dei relativi percorsi URL.
+Specifica un array associativo in cui le chiavi sono costanti di [\\Magento\\App\\Filesystem\\DirectoryList](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) e i valori sono rispettivamente percorsi assoluti delle directory o dei relativi percorsi URL.
 
 È possibile impostare `MAGE_DIRS` in uno dei modi seguenti:
 
@@ -50,6 +50,3 @@ Specifica un array associativo in cui le chiavi sono costanti di [\\Magento\\App
 
 L&#39;esempio precedente imposta i percorsi per le directory `[cache]` e `[media]` rispettivamente su `/mnt/nfs/cache` e `/mnt/nfs/media`.
 
-<!-- link definitions -->
-
-[directory-list]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php

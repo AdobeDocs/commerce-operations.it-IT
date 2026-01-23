@@ -2,7 +2,7 @@
 title: Panoramica del processo di aggiornamento
 description: Scopri come l’aggiornamento del progetto Adobe Commerce mantiene la vetrina sicura ed efficiente. Scopri le best practice per la pianificazione e l’esecuzione di aggiornamenti riusciti.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Spesso il ritardo o il differimento degli aggiornamenti della piattaforma si rid
 
 Può sembrare inaspettato, ma eseguire aggiornamenti regolari della piattaforma richiede uno sforzo complessivo inferiore rispetto all’esecuzione di aggiornamenti non frequenti a causa dell’entità del debito tecnico accumulato derivante dal ritardo. Adobe ha recentemente lavorato con un partner che ha un commerciante al dettaglio che effettuava gli aggiornamenti con scarsa frequenza e incoerenza (annualmente o più a lungo). Trasformando il loro approccio agli aggiornamenti e seguendo un percorso di aggiornamento regolare consigliato da Adobe nel corso di 12 mesi, il partner è stato in grado di risparmiare al cliente quattro settimane di tempo di sviluppo cumulativo, impegno e costi associati. Questi costi potrebbero quindi essere riorientati verso iniziative che stimolino la crescita aziendale.
 
-Quando gli aggiornamenti vengono eseguiti regolarmente, le modifiche sono incrementali e il corrispondente sforzo di aggiornamento riflette questo aspetto. Quando gli aggiornamenti della piattaforma vengono differiti per un periodo prolungato, possono diventare un processo molto più coinvolto. Inoltre, le estensioni utilizzate da [Adobe Commerce Marketplace](https://marketplace.magento.com/) e altre integrazioni di terze parti potrebbero essere interessate. Infine, il tempo necessario per analizzare, pianificare ed eseguire un aggiornamento ritardato viene esteso, il che aggiunge sforzi e costi evitabili.
+Quando gli aggiornamenti vengono eseguiti regolarmente, le modifiche sono incrementali e il corrispondente sforzo di aggiornamento riflette questo aspetto. Quando gli aggiornamenti della piattaforma vengono differiti per un periodo prolungato, possono diventare un processo molto più coinvolto. Inoltre, le estensioni utilizzate da [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com//) e altre integrazioni di terze parti potrebbero essere interessate. Infine, il tempo necessario per analizzare, pianificare ed eseguire un aggiornamento ritardato viene esteso, il che aggiunge sforzi e costi evitabili.
 
 Alcuni dei fattori generali che influiscono sul livello di impegno necessario per aggiornare il progetto includono, tra gli altri:
 

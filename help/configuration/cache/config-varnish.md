@@ -3,16 +3,16 @@ title: Configurare e utilizzare vernice
 description: Scopri come configurare e utilizzare il caching di vernice per Adobe Commerce. Scopri le tecniche di accelerazione HTTP, archiviazione dei file e ottimizzazione delle prestazioni.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # Configura vernice
 
-[Varnish Cache] è un acceleratore dell&#39;applicazione Web open-source (detto anche _acceleratore HTTP_ o _proxy HTTP inverso nella cache_). La vernice memorizza (o memorizza in cache) file o frammenti di file in memoria, il che consente a Vernice di ridurre il tempo di risposta e il consumo di larghezza di banda della rete su richieste equivalenti future. A differenza dei server web come Apache e Nginx, Varnish è stato progettato per essere usato esclusivamente con il protocollo HTTP.
+[Varnish Cache](https://varnish-cache.org) è un acceleratore dell&#39;applicazione Web open-source (detto anche _acceleratore HTTP_ o _proxy HTTP inverso nella cache_). La vernice memorizza (o memorizza in cache) file o frammenti di file in memoria, il che consente a Vernice di ridurre il tempo di risposta e il consumo di larghezza di banda della rete su richieste equivalenti future. A differenza dei server web come Apache e Nginx, Varnish è stato progettato per essere usato esclusivamente con il protocollo HTTP.
 
 [Requisiti di sistema](../../installation/system-requirements.md) elenca le versioni supportate di Vernice.
 
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Per ulteriori informazioni sulla vernice, consulta:
 
-- [Immagine di vernice grande]
-- [Opzioni avvio vernice]
-- [Vernice e prestazioni del sito Web]
+- [Immagine di vernice grande](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
+- [Opzioni avvio vernice](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
+- [Vernice e prestazioni del sito Web](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
 
 ## Diagramma topologico della vernice
 
@@ -61,7 +61,7 @@ Il processo può essere riassunto come segue:
 
 Conosciamo i seguenti problemi di vernice:
 
-- [La vernice non supporta SSL]
+- [La vernice non supporta SSL](https://www.varnish-cache.org/docs/3.0/phk/ssl.html)
 
   In alternativa, utilizza la terminazione SSL o un proxy di terminazione SSL.
 
@@ -146,10 +146,3 @@ Il codice di stato 304 si verifica perché l’utente ha invalidato la cache loc
 
 Se il contenuto cambia sul server, il client scarica la risorsa statica con un codice di stato HTTP 200 (OK) e un nuovo ETag.
 
-<!-- Link Definitions -->
-
-[Il quadro vernice grande]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
-[Cache vernice]: https://varnish-cache.org
-[Opzioni di avvio vernice]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
-[Vernice e prestazioni del sito web]: https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance
-[La vernice non supporta SSL]: https://www.varnish-cache.org/docs/3.0/phk/ssl.html

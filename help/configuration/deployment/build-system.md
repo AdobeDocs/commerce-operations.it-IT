@@ -3,9 +3,9 @@ title: Configurazione del sistema di build
 description: Scopri come distribuire Commerce in un sistema di build.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -67,11 +67,11 @@ Per installare Composer:
    mv composer.phar /usr/local/bin/composer
    ```
 
-Per ulteriori opzioni di installazione, vedere la [documentazione sull&#39;installazione del Compositore][composer].
+Per ulteriori opzioni di installazione, vedere la [documentazione sull&#39;installazione del Compositore](https://getcomposer.org/download/).
 
 ### Installare PHP
 
-Installa PHP in [CentOS] o [Ubuntu].
+Installa PHP in [CentOS](https://wiki.centos.org/HowTos/php7) o [Ubuntu](https://help.ubuntu.com/lts/serverguide/php.html).
 
 ### Configurare il sistema di build
 
@@ -134,8 +134,3 @@ Per impostare il sistema di build:
 
    `<mode>` è obbligatorio. Può essere `default` o `developer`.
 
-<!-- Link Definitions -->
-
-[CentOS]: https://wiki.centos.org/HowTos/php7
-[composer]: https://getcomposer.org/download/
-[Ubuntu]: https://help.ubuntu.com/lts/serverguide/php.html

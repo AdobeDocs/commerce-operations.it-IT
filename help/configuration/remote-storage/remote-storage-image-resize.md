@@ -3,7 +3,7 @@ title: Configurare il ridimensionamento delle immagini per l'archiviazione remot
 description: Ottimizzare le risorse disco configurando il ridimensionamento delle immagini lato server.
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Per continuare a configurare il ridimensionamento delle immagini lato server, è
 
 **Per consentire a Nginx di ridimensionare le immagini**:
 
-1. Installa il modulo filtro immagini [Nginx][nginx-module].
+1. Installa il modulo filtro immagini [Nginx](https://nginx.org/en/docs/http/ngx_http_image_filter_module.html).
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
@@ -73,6 +73,3 @@ Per continuare a configurare il ridimensionamento delle immagini lato server, è
 
    - [Servizio Amazon Simple Storage (Amazon S3)](remote-storage-aws-s3.md)
 
-<!-- link definitions -->
-
-[nginx-module]: https://nginx.org/en/docs/http/ngx_http_image_filter_module.html

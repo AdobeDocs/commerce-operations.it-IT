@@ -2,9 +2,9 @@
 title: Cambia ID incremento
 description: Modificare l'ID di incremento per un'entità di database Commerce.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Potrebbe essere necessario modificare l&#39;ID incremento per le nuove entità D
 
 >[!INFO]
 >
->Puoi anche risolvere il problema del gateway di pagamento per PayPal consentendo più pagamenti per ID fattura nelle Preferenze di ricezione pagamento di PayPal. Vedi [Richiesta rifiutata dal gateway PayPal - problema fattura duplicata](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=it) nella _Knowledge Base_.
+>Puoi anche risolvere il problema del gateway di pagamento per PayPal consentendo più pagamenti per ID fattura nelle Preferenze di ricezione pagamento di PayPal. Vedi [Richiesta rifiutata dal gateway PayPal - problema fattura duplicata](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) nella _Knowledge Base_.
 
 ## Passaggi preliminari
 
@@ -70,10 +70,5 @@ L&#39;ordine successivo effettuato con `ID=1` avrà l&#39;ID &#39;#100002000&#39
 Prima di eseguire la query `ALTER TABLE` in un ambiente di produzione di Adobe Commerce su un&#39;infrastruttura cloud, si consiglia vivamente di eseguire i passaggi seguenti:
 
 - Test dell&#39;intera procedura di modifica dell&#39;ID di incremento nell&#39;ambiente di staging
-- [Crea un backup del database] per ripristinare il database di produzione in caso di errore
+- [Crea un backup del database](https://support.magento.com/hc/en-us/articles/360003254334) per ripristinare il database di produzione in caso di errore
 
-<!-- Link Definitions -->
-
-[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
-[Creare un backup del database]: https://support.magento.com/hc/en-us/articles/360003254334
-[qualsiasi versione supportata]

@@ -3,7 +3,7 @@ title: Distribuzione di un singolo computer
 description: Scopri come distribuire gli aggiornamenti a Commerce su un server di produzione utilizzando la riga di comando.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 1%
@@ -22,7 +22,7 @@ In questo argomento vengono fornite istruzioni per la distribuzione di aggiornam
 >[!WARNING]
 >
 >Questa guida non è applicabile se è stato utilizzato `git clone` per installare Commerce.
->Gli sviluppatori partecipanti devono utilizzare [questa guida][install] per aggiornare l&#39;installazione di Commerce.
+>Gli sviluppatori partecipanti devono utilizzare [questa guida](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) per aggiornare l&#39;installazione di Commerce.
 
 ## Passaggi della distribuzione
 
@@ -91,6 +91,3 @@ In questo argomento vengono fornite istruzioni per la distribuzione di aggiornam
    bin/magento maintenance:disable
    ```
 
-<!-- link definitions -->
-
-[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies

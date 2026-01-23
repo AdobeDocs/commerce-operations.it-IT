@@ -3,19 +3,19 @@ title: Registra attività database
 description: Configura Commerce per registrare l’attività del database utilizzando l’interfaccia Logger.
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
 # Registra attività database
 
-Nell&#39;esempio seguente viene illustrato come registrare l&#39;attività del database utilizzando [`Magento\Framework\DB\LoggerInterface`][interface], che ha due implementazioni:
+Nell&#39;esempio seguente viene illustrato come registrare l&#39;attività del database utilizzando `[Magento\Framework\DB\LoggerInterface](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/LoggerInterface.php)`, che ha due implementazioni:
 
-- Non registra nulla (impostazione predefinita): [`Magento\Framework\DB\Logger\Quiet`][quiet]
-- Registra nella directory `var/log`: [`Magento\Framework\DB\Logger\File`][file]
+- Non registra nulla (impostazione predefinita): [`Magento\Framework\DB\Logger\Quiet`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/Quiet.php)
+- Registra nella directory `var/log`: [`Magento\Framework\DB\Logger\File`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/File.php)
 
 >[!TIP]
 >
@@ -58,8 +58,3 @@ E pulisci la cache con:
 bin/magento cache:clean
 ```
 
-<!-- link definitions -->
-
-[file]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Logger/File.php
-[interface]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/LoggerInterface.php
-[quiet]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Logger/Quiet.php

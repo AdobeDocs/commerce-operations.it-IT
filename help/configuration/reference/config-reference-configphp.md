@@ -2,9 +2,9 @@
 title: riferimento config.php
 description: Scopri i valori del file config.php e le sezioni per la configurazione di Adobe Commerce. Scopri moduli, ambiti, impostazioni di sistema e best practice per la distribuzione.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '156'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Contiene un array di moduli e i relativi stati. Se il modulo è abilitato, il va
 ]
 ```
 
-Ulteriori informazioni sui [moduli].
+Ulteriori informazioni sui [moduli](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
 
 ## ambiti
 
@@ -82,7 +82,7 @@ Contiene un array di valori di configurazione dell&#39;ambito. Ha i seguenti sot
 ]
 ```
 
-Ulteriori informazioni su [ambiti Commerce][scopes].
+Ulteriori informazioni su [ambiti Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
 
 ## sistema
 
@@ -120,10 +120,5 @@ Contiene un array di valori per la configurazione del tema.
 ]
 ```
 
-Ulteriori informazioni su [Temi].
+Ulteriori informazioni su [Temi](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/).
 
-<!-- link definitions -->
-
-[Moduli]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=it
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it#scope-settings
-[Temi]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/
