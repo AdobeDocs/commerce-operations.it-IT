@@ -36,5 +36,5 @@ Le estensioni (moduli) di terze parti di Adobe Commerce possono causare vari pro
 
 - [Best practice per la pianificazione degli aggiornamenti](../../../upgrade/prepare/best-practices.md)
 - Utilizzo di estensioni di terze parti con Adobe Commerce sull’infrastruttura cloud
-   - [Tecnologie e requisiti - Sviluppo e test](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [Perché eseguire completamente il test in Integration and Staging?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+   - [Tecnologie e requisiti - Sviluppo e test](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [Perché eseguire completamente il test in Integration and Staging?](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
