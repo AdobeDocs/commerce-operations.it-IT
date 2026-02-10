@@ -1,5 +1,5 @@
 ---
-source-git-commit: 937e883e74d3a0b32a25dbdf3db0347398ef6ba3
+source-git-commit: e50883135e13621f9668914a260bd5a2bf48641d
 workflow-type: tm+mt
 source-wordcount: '8232'
 ht-degree: 1%
@@ -24,7 +24,9 @@ Utilizzare la guida [&quot;Add CLI command&quot;](https://developer.adobe.com/co
 
 È possibile chiamare i comandi CLI `bin/magento` utilizzando i collegamenti anziché il nome completo del comando. Ad esempio, è possibile chiamare `bin/magento setup:upgrade` utilizzando `bin/magento s:up`, `bin/magento s:upg`. Per informazioni su come utilizzare i tasti di scelta rapida con qualsiasi comando CLI, vedere [sintassi dei collegamenti](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax).
 
-Questa documentazione di riferimento viene generata dal codice sorgente dell’applicazione. Per modificare la documentazione, è necessario aprire una richiesta di pull per il comando corrispondente nell&#39;archivio [codebase](https://github.com/magento) pertinente. Per ulteriori informazioni, consulta [Contributi codice](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+Questa documentazione di riferimento viene generata dal codice sorgente dell’applicazione. Per modificare la documentazione, apri
+una richiesta pull per il comando corrispondente nell&#39;archivio [codebase](https://github.com/magento) pertinente. Consulta
+[Contributi codice](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) per ulteriori informazioni.
 
 ### Opzioni globali
 
