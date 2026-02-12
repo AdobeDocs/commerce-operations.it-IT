@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
-source-git-commit: 8e7cec268cf4d0022cf5037f5effcaa8a13b55ca
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -16,6 +16,7 @@ ht-degree: 0%
 Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in [!DNL Quality Patches Tool] (QPT) v1.1.66.
 
 QPT v1.1.66 include le seguenti patch:
+
 1. **ACP2E-3918**: errore di estrazione per i clienti aziendali che utilizzano il ritiro in-store.
 1. **ACP2E-3789**: file multimediali duplicati durante l&#39;aggiornamento del prodotto tramite WebAPI.
 1. **ACSD-65750**: la query &quot;route&quot; di GraphQL ha restituito prodotti fuori servizio nei tipi di contenuto Prodotti Page Builder.

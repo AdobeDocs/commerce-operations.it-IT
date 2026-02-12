@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: e72c99bbb5e82cd2dc77e33b7d17dfe8955e945a
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,16 @@ ht-degree: 0%
 Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in [!DNL Quality Patches Tool] (QPT) v1.1.69.
 
 QPT v1.1.69 include le seguenti patch:
+
 1. **AC-15223**: la pagina Storefront mostra il contenuto memorizzato nella cache dopo il passaggio da un archivio all&#39;altro.
 1. **ACP2E-3731**: le esportazioni di prodotti con visibilità *[!UICONTROL Catalog, Search]* includono record di altre visualizzazioni dello store.
 1. **ACP2E-3767**: l&#39;ultima opzione bundle viene visualizzata nuovamente dopo il salvataggio di un prodotto bundle.
 1. **ACP2E-3964**: prodotti secondari configurabili con video non elencati tramite API REST.
 1. **ACP2E-3977**: **[!UICONTROL Cap Reward Points Balance At]** non può essere lasciato vuoto.
 1. **ACP2E-4050**: **[!UICONTROL Free Shipping]** non applicato con estrazione multi-indirizzo.
-1. **ACP2E-3977**: il campo [!UICONTROL Cap Reward Points Balance At] non può essere lasciato vuoto.
-1. **ACP2E-4050**: le regole del prezzo del carrello non vengono applicate per la spedizione multipla con prodotti bundle e la spedizione gratuita.
 1. **ACSD-56226**: le query READ restituiscono dati obsoleti con `synchronous_replication` abilitato.
 1. **ACSD-57477**: l&#39;elaborazione della regola di vendita rallenta le prestazioni nelle richieste relative al carrello.
-1. **[ACSD-58108](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension.md)**: il nome della tabella di join mancante causa errori SQL nell&#39;estensione del modulo personalizzato della griglia.
+1. **ACSD-58108**: il nome della tabella di join mancante causa errori SQL nell&#39;estensione del modulo personalizzato della griglia.
 1. **ACSD-65983**: errore durante la riconfigurazione dell&#39;offerta di prodotto aggregata in Admin.
 1. **ACSD-66149**: il gestore IPN restituisce 500 per i tipi non supportati.
 1. **ACSD-66153**: la pagina restituisce un errore 500 a causa di una struttura di layout non corretta nella cache.

@@ -3,7 +3,7 @@ title: 'Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.70'
 description: Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in  [!DNL Quality Patches Tool] (QPT) v1.1.70.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: cafb2df4ca11dd74d7dfb461e8130704f52f6f27
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 0%
@@ -15,12 +15,13 @@ ht-degree: 0%
 Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in [!DNL Quality Patches Tool] (QPT) v1.1.70.
 
 QPT v1.1.70 include le seguenti patch:
+
 1. **ACSD-67102**: il caricamento della categoria è lento o si interrompe quando è presente un numero elevato di categorie e prodotti.
 1. **ACSD-66120**: [!DNL GraphQL] visualizza percentuali di sconto e prezzi base non corretti quando i prezzi del catalogo includono le imposte.
 1. **ACSD-66157**: il prezzo speciale non viene applicato ai siti Web creati con fusi orari diversi.
 1. **ACSD-67659**: i messaggi di errore tradotti restituiscono un codice *UNDEFINED*.
 1. **ACSD-67166**: la query `cataloginventory_stock_status` duplicata viene eseguita durante il caricamento delle virgolette nella vetrina.
-1. **[ACSD-67030](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67030.md)**: i prodotti semplici non vengono più assegnati come configurabili se modificati dall&#39;amministratore con ruolo limitato.
+1. **ACSD-67030**: i prodotti semplici non vengono più assegnati come configurabili se modificati dall&#39;amministratore con ruolo limitato.
 1. **ACSD-67289**: il prezzo normale non viene visualizzato quando viene applicato un prezzo speciale.
 1. **AC-15210**: migrazione dell&#39;integrazione USPS dalle API degli strumenti Web alle nuove API RESTful USPS.
 
