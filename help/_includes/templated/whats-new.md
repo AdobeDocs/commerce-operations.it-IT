@@ -23,7 +23,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.75 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517: Corregge un errore di reinvio modulo nelle pagine di ricerca catalogo e catalogo</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.75 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517: Corregge un errore di reinvio modulo nelle pagine di ricerca catalogo e catalogo</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -53,7 +53,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8ee6404271170b19ff27a3ab64711061505494b3">commit</a></td>
     </tr>
     <tr>
-      <td><p>Aggiunta <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">Panoramica: Strumento Patch di qualità (QPT) v1.1.76</a>.</p>
+      <td><p>Aggiunta <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">Panoramica: Strumento Patch di qualità (QPT) v1.1.76</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
