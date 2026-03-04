@@ -5,9 +5,9 @@ feature: Catalog Management, B2B
 role: Admin, Developer
 exl-id: 111325fa-8ed5-45f9-9e68-b52f4425d253
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 8124ce31fbe3a94638fba057419efa7f2a139b84
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ La patch ACP2E-3705 risolve il problema in cui l&#39;esecuzione del cron `indexe
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -79,3 +79,4 @@ Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del m
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
 * [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.
+* [Reindicizzazione in modalità parallela](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindexing-in-parallel-mode) nella Guida alla configurazione di Commerce.
