@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 59ae7d5e05395f123ad139bea4e022b26d310f1f
+source-git-commit: 9d24eeeeedc02e2e086560b5f18baa4a1a61b972
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ QPT v1.1.76 include le seguenti patch:
 1. **ACSD-69319**: è stato corretto un problema a causa del quale i prezzi dei bundle non venivano indicizzati correttamente quando i prodotti secondari disponevano di scorte in origini personalizzate.
 1. **[ACSD-69325](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325.md)**: è stato risolto un problema che causava la mancata disponibilità del prodotto nella vetrina a causa della modifica del case SKU.
 1. **ACSD-69331**: è stato risolto un problema che impediva ai creatori di contenuto nella raccolta multimediale di creare cartelle con l&#39;autorizzazione `create_folder`. Dopo la correzione, può creare le cartelle come previsto.
+1. **[ACSD-69541](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541.md)**: è stato corretto un problema a causa del quale la riduzione della quantità di un prodotto in [!UICONTROL Admin] a una quantità inferiore a quella precedente in un carrello impediva la modifica della quantità di prodotto in tale carrello tramite GraphQL.
 1. **[ACSD-69333](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333.md)**: è stato risolto un problema che consentiva le modifiche SKU per i prodotti con un aggiornamento pianificato attivo. Dopo la correzione, le modifiche SKU non sono consentite durante gli aggiornamenti attivi; il salvataggio non riesce e viene visualizzato un errore di cancellazione e il campo SKU amministratore è disabilitato. In questo modo si evitano incoerenze nell’inventario MSI causate da modifiche SKU durante il rollback dell’area di gestione temporanea.
-1. **ACSD-69541**: è stato corretto un problema a causa del quale la riduzione della quantità di un prodotto nell&#39;amministratore a un livello inferiore a quello esistente in un carrello impediva la modifica della quantità di prodotto nel carrello tramite GraphQL.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
