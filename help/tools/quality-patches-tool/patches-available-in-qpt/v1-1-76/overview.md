@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8eac0cdbf303e307b7734845c09c9d652d901d7b
+source-git-commit: 535934d92c0bd8a0d029c2c9a6c06be161db266f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ QPT v1.1.76 include le seguenti patch:
 1. **ACSD-69115**: è stato risolto un problema che impediva la visualizzazione degli errori del carrello all&#39;utente amministratore durante la gestione del carrello per un cliente assegnato a un sito Web non predefinito.
 1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)**: è stato risolto un problema che causava l&#39;eliminazione del sito Web di base predefinito e l&#39;utilizzo del sito Web secondario come sito Web predefinito, causando un errore durante il tentativo di aggiornamento del prezzo del sito Web secondario tramite l&#39;API [!DNL REST].
 1. **ACSD-69203**: è stato risolto un problema a causa del quale il widget **[!UICONTROL Products List]** restituiva risultati non corretti quando più categorie erano elencate nella condizione di categoria.
+1. **[ACSD-69261](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)**: è stato risolto un problema che causava il riutilizzo più volte di un coupon della regola di prezzo del carrello configurato per l&#39;uso singolo per cliente a causa di una gestione non corretta dell&#39;attributo `times_used` nella fattura parziale e negli scenari di annullamento della quantità rimanenti.
+1. **ACSD-69308**: è stato corretto un problema a causa del quale le regole del prezzo di catalogo non venivano applicate quando `special_price` era impostato solo a livello di sito Web (non a **[!UICONTROL All Store Views]**). Dopo la correzione, le regole del prezzo del catalogo vengono applicate correttamente controllando prima il negozio predefinito del sito web.
 1. **ACSD-69261**: è stato risolto un problema che causava il riutilizzo più volte di un coupon della regola di prezzo del carrello configurato per l&#39;uso singolo per cliente a causa di una gestione non corretta dell&#39;attributo `times_used` nella fattura parziale e negli scenari di annullamento della quantità rimanenti.
 1. **[ACSD-69308](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)**: è stato corretto un problema a causa del quale le regole del prezzo di catalogo non venivano applicate quando `special_price` era impostato solo a livello di sito Web (non a **[!UICONTROL All Store Views]**).
 1. **ACSD-69319**: è stato corretto un problema a causa del quale i prezzi dei bundle non venivano indicizzati correttamente quando i prodotti secondari disponevano di scorte in origini personalizzate.
