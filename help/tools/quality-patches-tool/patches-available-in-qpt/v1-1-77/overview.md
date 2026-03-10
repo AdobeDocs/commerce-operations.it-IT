@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 7dd35627836160bf1e892ea920a21ddd107642ad
+source-git-commit: 5ad8f9ce930ca8484c355561f8bfa2f19dba3e9c
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,9 @@ QPT v1.1.77 include le seguenti patch:
 1. **ACSD-69016**: il prezzo speciale non viene applicato ai siti Web con fusi orari diversi.
 1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: è stato risolto un problema che causava la visualizzazione di prodotti configurabili nei caroselli di prodotti [!DNL Page Builder] quando i prodotti secondari corrispondevano alle condizioni di filtro.
 1. **ACSD-69237**: `sales_*_async_insert` processi cron elaborano solo 100 voci per esecuzione.
+1. **ACSD-69351**: è stato risolto il problema relativo alla visualizzazione dei saldi gift card e delle date di scadenza su siti Web errati.
 1. **ACSD-69311**: corregge il calcolo dell&#39;imposta errato nelle note di accredito dopo rimborsi parziali dalle fatture.
-1. **ACSD-69351**: i saldi delle gift card e le date di scadenza vengono visualizzati su siti Web errati.
+1. **ACSD-69494**: corregge le richieste di rimborso asincrone con `is_online` e non attiva i rimborsi online.
 1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)**: corregge le richieste di rimborso asincrone con `is_online` e non attiva i rimborsi online.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
