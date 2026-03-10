@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 535934d92c0bd8a0d029c2c9a6c06be161db266f
+source-git-commit: f56050886f28692286c42102222dfb580e52aef1
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -16,8 +16,8 @@ ht-degree: 0%
 Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in [!DNL Quality Patches Tool] (QPT) v1.1.76.
 
 QPT v1.1.76 include le seguenti patch:
+1. **[ACSD-67370](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67370.md)**: sono stati risolti diversi problemi a causa dei quali venivano visualizzati prezzi non corretti per i prodotti Bundle su PDP/PLP e per la pagina del carrello per gli archivi multivaluta.
 1. **[ACSD-67091](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091.md)**: corregge l&#39;errore relativo alle dimensioni massime del set di scrittura per garantire la pulizia dell&#39;indice del prodotto della regola del catalogo implementando due strategie di eliminazione basate sul volume dei dati.
-1. **ACSD-67370**: sono stati risolti diversi problemi a causa dei quali venivano visualizzati prezzi non corretti per i prodotti Bundle su PDP/PLP e per la pagina del carrello per gli archivi multivaluta.
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: è stato corretto un problema a causa del quale l&#39;inserimento di un ordine per un preventivo negoziabile aggiungeva o univa erroneamente righe aggiuntive del carrello al preventivo. I prodotti vengono ora aggiunti correttamente al carrello dopo aver lasciato l’ultimo passaggio del pagamento delle offerte negoziabili.
 1. **ACSD-69086**: è stato risolto il problema che impediva al processo cron di cancellare le tabelle del registro delle modifiche, causando [!DNL Galera Cluster] arresti anomali durante la gestione di grandi quantità di dati.
 1. **ACSD-69115**: è stato risolto un problema che impediva la visualizzazione degli errori del carrello all&#39;utente amministratore durante la gestione del carrello per un cliente assegnato a un sito Web non predefinito.
