@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1f377ab6e4dcdd2d350366f3889b8befd233474b
+source-git-commit: 4f2ca409bbad8b399e61577484a6e0d5a549d5c3
 workflow-type: tm+mt
-source-wordcount: '25720'
+source-wordcount: '25717'
 ht-degree: 0%
 
 ---
@@ -470,7 +470,7 @@ Il comando `bin/magento i18n:collect-phrases -o` ora raccoglie e aggiunge corret
 
 _AC-9843 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/0c53bbf7)_
 
-#### L&#39;apostrofo nel nome della visualizzazione punto vendita è sostituito da &#039;
+#### Il nome dell’apostrofo nella vista store è sostituito da &quot;
 
 I filtri di visualizzazione archivio della griglia ora visualizzano correttamente gli apostrofi
 
@@ -1878,7 +1878,7 @@ Il sistema ora rispetta lo standard di codifica rimuovendo il tag `@author` non 
 
 _AC-8356 - [Problema GitHub](https://github.com/magento/magento2/issues/37250) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/37000)_
 
-#### Lo spazio nella sintassi editorconfig interrompe la regola per `[&lbrace;composer,auth&rbrace;.json]`
+#### Lo spazio nella sintassi editorconfig interrompe la regola per `[{composer,auth}.json]`
 
 Il sistema ora applica correttamente un rientro a 4 spazi ai file compositore e auth.json, in seguito a una correzione di un errore di sintassi nell&#39;editor config. In precedenza, a causa di uno spazio nella sintassi editorconfig, questi file non venivano formattati correttamente con un rientro a 2 spazi.
 
@@ -2022,7 +2022,7 @@ Il problema è stato risolto dopo l’applicazione del controllo durante la rich
 
 _ACP2E-2653 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### La chiamata dei prodotti GraphQL contenente il filtro prezzi `&lbrace;from:&quot;0&quot;&rbrace;` non restituisce alcun risultato
+#### La chiamata dei prodotti GraphQL contenente il filtro prezzi `{from:"0"}` non restituisce alcun risultato
 
 In precedenza, la ricerca di prodotti graphql con filtro per prezzi zero non restituiva alcun risultato a causa di un’eccezione generata. Ora la ricerca restituisce i risultati come previsto.
 
@@ -2641,7 +2641,7 @@ _LYNX-464_
 
 _LYNX-469_
 
-#### Attributo prodotto > marchio di fabbrica formato breve &trade; viene restituito come &trade;
+#### Attributo del prodotto > ™ di forma abbreviata del marchio registrato restituito come ™
 
 È stato risolto un problema di codifica dei caratteri con il nome del prodotto per l’API GraphQL.
 
