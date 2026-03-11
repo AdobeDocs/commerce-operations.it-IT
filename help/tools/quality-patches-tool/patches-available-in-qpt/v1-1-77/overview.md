@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 5ad8f9ce930ca8484c355561f8bfa2f19dba3e9c
+source-git-commit: fa839814adf83d2a22840e13d4d70540270269b1
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,9 @@ QPT v1.1.77 include le seguenti patch:
 1. **ACSD-68537**: le prestazioni del checkout peggiorano con molti segmenti di clienti.
 1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: l&#39;anteprima dell&#39;aggiornamento pianificato presenta errori nei domini di archivio personalizzati.
 1. **ACSD-68759**: errore durante la creazione dell&#39;account del cliente con le impostazioni locali arabe quando viene visualizzata la data di nascita.
+1. **ACSD-68892**: comportamento di caching [!DNL Fastly] incoerente per le pagine memorizzabili in cache.
+1. **[ACSD-69016](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016.md)**: è stato risolto un problema che impediva l&#39;applicazione di prezzi speciali a siti Web con fusi orari diversi.
+1. **ACSD-69020**: i prodotti configurabili vengono visualizzati nei caroselli [!UICONTROL Page Builder] quando i prodotti secondari corrispondono ai filtri.
 1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: è stato corretto un comportamento di memorizzazione nella cache di [!DNL Fastly] incoerente per le pagine memorizzabili nella cache.
 1. **ACSD-69016**: il prezzo speciale non viene applicato ai siti Web con fusi orari diversi.
 1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: è stato risolto un problema che causava la visualizzazione di prodotti configurabili nei caroselli di prodotti [!DNL Page Builder] quando i prodotti secondari corrispondevano alle condizioni di filtro.
