@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f56050886f28692286c42102222dfb580e52aef1
+source-git-commit: d852c8dc40d061b878daf25aac0c7cf57628954c
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ QPT v1.1.76 include le seguenti patch:
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: è stato corretto un problema a causa del quale l&#39;inserimento di un ordine per un preventivo negoziabile aggiungeva o univa erroneamente righe aggiuntive del carrello al preventivo. I prodotti vengono ora aggiunti correttamente al carrello dopo aver lasciato l’ultimo passaggio del pagamento delle offerte negoziabili.
 1. **ACSD-69086**: è stato risolto il problema che impediva al processo cron di cancellare le tabelle del registro delle modifiche, causando [!DNL Galera Cluster] arresti anomali durante la gestione di grandi quantità di dati.
 1. **ACSD-69115**: è stato risolto un problema che impediva la visualizzazione degli errori del carrello all&#39;utente amministratore durante la gestione del carrello per un cliente assegnato a un sito Web non predefinito.
+1. **[ACSD-69203](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203.md)**: è stato risolto un problema a causa del quale il widget **[!UICONTROL Products List]** restituiva risultati non corretti quando più categorie erano elencate nella condizione di categoria.
 1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)**: è stato risolto un problema che causava l&#39;eliminazione del sito Web di base predefinito e l&#39;utilizzo del sito Web secondario come sito Web predefinito, causando un errore durante il tentativo di aggiornamento del prezzo del sito Web secondario tramite l&#39;API [!DNL REST].
 1. **ACSD-69203**: è stato risolto un problema a causa del quale il widget **[!UICONTROL Products List]** restituiva risultati non corretti quando più categorie erano elencate nella condizione di categoria.
 1. **[ACSD-69261](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)**: è stato risolto un problema che causava il riutilizzo più volte di un coupon della regola di prezzo del carrello configurato per l&#39;uso singolo per cliente a causa di una gestione non corretta dell&#39;attributo `times_used` nella fattura parziale e negli scenari di annullamento della quantità rimanenti.
