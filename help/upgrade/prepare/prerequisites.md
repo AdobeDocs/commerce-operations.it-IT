@@ -99,7 +99,7 @@ Per aggiornare correttamente MySQL dalla versione 8.0 alla versione 8.4, è nece
    >
    >Se non si modifica il valore di `restrict_fk_on_non_standard_key` in `OFF`, verrà visualizzato il seguente errore durante l&#39;importazione:
    >
-   ```sql
+   >```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Riavviare il server MySQL.
@@ -358,7 +358,7 @@ Per impostare la variabile di ambiente:
 
 Per motivi di sicurezza, Adobe Commerce richiede determinate autorizzazioni sul file system. Le autorizzazioni sono diverse da _[proprietà](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. La proprietà determina chi può eseguire azioni sul file system; le autorizzazioni determinano ciò che l’utente può fare.
 
-Le directory nel file system devono essere scrivibili dal gruppo [ del proprietario del file system ](../../installation/prerequisites/file-system/overview.md).
+Le directory nel file system devono essere scrivibili dal gruppo [&#x200B; del proprietario del file system &#x200B;](../../installation/prerequisites/file-system/overview.md).
 
 Per verificare che le autorizzazioni del file system siano impostate correttamente, accedere al server applicazioni o utilizzare l&#39;applicazione di gestione file del provider di hosting.
 
