@@ -3,7 +3,7 @@ title: Funzionamento della migrazione dei dati
 description: Scopri il processo di migrazione dei dati tra Magento 1 e Magento 2, inclusa la terminologia, i diagrammi di flusso di lavoro e i passaggi.
 exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
 topic: Commerce, Migration
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 6171b2d8ed2ca73e3221fe6ab07060a3c43a6dbf
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Ulteriori informazioni sullo sviluppo di estensioni per Magento 2 sono disponibi
 
 ### Temi e personalizzazioni
 
-Magento 2 utilizza nuovi approcci e tecnologie che offrono ai commercianti la possibilità di creare esperienze di acquisto innovative e scalare a nuovi livelli. Per sfruttare questi progressi, gli sviluppatori devono apportare modifiche ai temi e alle personalizzazioni. La documentazione è disponibile online per la creazione di [temi](https://developer.adobe.com/commerce/frontend-core/guide/themes/), [layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) e [personalizzazioni](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage/) di Magento 2.
+Magento 2 utilizza nuovi approcci e tecnologie che offrono ai commercianti la possibilità di creare esperienze di acquisto innovative e scalare a nuovi livelli. Per sfruttare questi progressi, gli sviluppatori devono apportare modifiche ai temi e alle personalizzazioni. La documentazione è disponibile online per la creazione di [temi](https://developer.adobe.com/commerce/frontend-core/guide/themes/), [layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) e [personalizzazioni](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage) di Magento 2.
 
 ## Attività di migrazione
 
