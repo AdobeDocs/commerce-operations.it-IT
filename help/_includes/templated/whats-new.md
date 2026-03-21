@@ -45,7 +45,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.77 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68759">ACSD-68759: Errore di creazione dell'account cliente con impostazioni locali arabe quando viene visualizzata la data di nascita</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.77 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68759">ACSD-68759: Errore di creazione dell'account cliente con impostazioni locali arabe quando viene visualizzata la data di nascita</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -53,7 +53,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d3c2d0ebea67fb376a43a67995f3ce278ceac3ee">commit</a></td>
     </tr>
     <tr>
-      <td><p>Aggiunta descrizione dettagliata della correzione QPT 1.1.77 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69237">ACSD-69237: Sales__async_insert cron jobs elabora solo 100 voci per esecuzione</a>.</p>
+      <td><p>Aggiunta descrizione dettagliata della correzione QPT 1.1.77 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69237">ACSD-69237: Sales__async_insert cron jobs elabora solo 100 voci per esecuzione</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -61,7 +61,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0842ba414e45857e36d61c589687718435739efa">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.76 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203">ACSD-69203: Il widget Elenco prodotti restituisce risultati non corretti quando si utilizzano più categorie nella condizione categoria</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.76 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203">ACSD-69203: Il widget Elenco prodotti restituisce risultati non corretti quando si utilizzano più categorie nella condizione categoria</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
