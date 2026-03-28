@@ -3,7 +3,7 @@ title: Riferimento generale ai percorsi di configurazione
 description: Scopri percorsi e valori di configurazione generali e avanzati per Adobe Commerce. Scopri le opzioni di configurazione di sistema, sicurezza e amministrazione.
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 0%
@@ -30,8 +30,8 @@ Questi valori di configurazione sono disponibili nell&#39;amministratore in **Ar
 | Consenti paesi | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensibile](/help/assets/configuration/cloud-sens.png) |
 | Il CAP è facoltativo per | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensibile](/help/assets/configuration/cloud-sens.png) |
 | Paesi dell&#39;Unione Europea | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensibile](/help/assets/configuration/cloud-sens.png) |
-| Destinazioni principali | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Lo stato è obbligatorio per | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Destinazioni principali | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Lo stato è obbligatorio per | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Consenti di scegliere lo stato se è facoltativo per il paese | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Fuso orario | `general/locale/timezone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Lingua | `general/locale/code` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |

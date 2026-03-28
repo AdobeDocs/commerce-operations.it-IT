@@ -2,7 +2,7 @@
 title: Responsabilità condivisa sicurezza e modello operativo
 description: Scopri le responsabilità di sicurezza di ogni parte coinvolta nel progetto di infrastruttura cloud di Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: aac78fc95b86951f352a636eef33e0b79b22a183
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '2939'
 ht-degree: 0%
@@ -793,10 +793,11 @@ I commercianti sono responsabili della sincronizzazione dei dati tra ambienti di
 
 {style="table-layout:auto"}
 
+>[!NOTE]
 >
 >I commercianti devono utilizzare la versione più recente di Live Search, Product Recommendations e Payment Services per garantire la massima stabilità, funzionalità e idoneità al supporto.
 >Adobe non supporta versioni obsolete e l’aggiornamento consente di beneficiare dei miglioramenti e delle correzioni di bug più recenti.
->Per informazioni dettagliate sulle versioni supportate, vedere la [Matrice di disponibilità del prodotto per i servizi Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability#commerce-services).
+>Per informazioni dettagliate sulle versioni supportate, vedere la [Matrice di disponibilità del prodotto per i servizi Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
 
 #### Consigli di prodotto
 

@@ -2,10 +2,10 @@
 user-guide-title: Guida all’installazione
 user-guide-description: Scopri come installare Adobe Commerce per le distribuzioni on-premise.
 feature: Install
-source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
+source-git-commit: 53f21e0588603ecf19d4d904a8926c978009d449
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 3%
+source-wordcount: '175'
+ht-degree: 4%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 3%
       - [Panoramica](prerequisites/file-system/overview.md)
       - [Configurare le autorizzazioni](prerequisites/file-system/configure-permissions.md)
    - Server web {#web-server}
-      - [Nginx](prerequisites/web-server/nginx.md)
-      - [Apache](prerequisites/web-server/apache.md)
+      - [Installa Nginx](prerequisites/web-server/nginx.md)
+      - [Installare Apache](prerequisites/web-server/apache.md)
    - Server di database {#database-server}
       - [MySQL](prerequisites/database/mysql.md)
       - [Connessioni remote](prerequisites/database/mysql-remote.md)
@@ -69,4 +69,4 @@ ht-degree: 3%
    - [Disinstallare o reinstallare Commerce](tutorials/uninstall.md)
    - [Disinstalla temi](tutorials/themes.md)
    - [Aggiornare lo schema del database](tutorials/database-upgrade.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -2,9 +2,9 @@
 title: Ottieni le chiavi di autenticazione
 description: Segui questi passaggi per recuperare le credenziali di accesso ai pacchetti di Adobe Commerce Composer su repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 4a4fd51891b7a98529d00d51c94ed10429218726
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,16 @@ Per accedere ai pacchetti Adobe Commerce, devi utilizzare le chiavi associate a 
 
 >[!TIP]
 >
->Se riscontri [errori](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=it) o non vedi la sezione [!UICONTROL Access Keys] nella scheda Marketplace, potresti non disporre dell&#39;autorizzazione per accedere al pacchetto o il diritto di accesso è scaduto a causa di una fattura in sospeso sul tuo account.
+>Se riscontri [errori](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) o non vedi la sezione [!UICONTROL Access Keys] nella scheda Marketplace, potresti non disporre dell&#39;autorizzazione per accedere al pacchetto o il diritto di accesso è scaduto a causa di una fattura in sospeso sul tuo account.
 >
 >* Se si è la persona di contatto principale dell&#39;account, verificare che non siano presenti fatture in sospeso nell&#39;elenco dell&#39;account.
->* Se le chiavi fornite dal contatto principale non funzionano e non sono presenti fatture in sospeso nell&#39;account, il contatto principale deve contattare il [supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#submit-ticket) per assistenza.
+>* Se le chiavi fornite dal contatto principale non funzionano e non sono presenti fatture in sospeso nell&#39;account, il contatto principale deve contattare il [supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) per assistenza.
 
 Per creare le chiavi di autenticazione:
+
+>[!NOTE]
+>
+>A partire da agosto 2022, il proprietario dell’account deve disporre di un Adobe ID e assicurarsi che sia collegato al proprio account Commerce. Se il proprietario dell&#39;account non dispone di un Adobe ID, deve crearne uno e collegarlo al proprio account Commerce prima di generare le chiavi di autenticazione: [Crea e accedi al tuo account Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
 
 1. Accedi a [Commerce Marketplace](https://commercemarketplace.adobe.com/). Se non hai un account, fai clic su **Registra**.
 

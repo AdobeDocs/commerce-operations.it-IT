@@ -2,7 +2,7 @@
 title: Implementazione dell’aggiornamento
 description: Scopri le diverse fasi di implementazione dell’aggiornamento per i progetti Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: a81d2c0b6526c2c8c8c5c4652c83595667985543
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -88,4 +88,4 @@ Infine, rivolgiti al tuo team per determinare le lezioni apprese e le insidie. Q
 
 Dopo l’avvio del sito, assicurati di controllare i dati di analisi, la console Google Search e altre risorse per verificare che non vi siano problemi imprevisti e che tutto funzioni come previsto.
 
-È sempre una buona idea monitorare le prestazioni attraverso strumenti di monitoraggio ben progettati. Esistono molti strumenti e strumenti per monitorare le prestazioni del sito, quindi assicurati di sceglierne uno che sia adatto alla tua organizzazione. È consigliabile che i clienti Adobe Commerce che utilizzano il sistema di gestione dell&#39;infrastruttura cloud utilizzino servizi quali [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=it) per monitorare le prestazioni del sito.
+È sempre una buona idea monitorare le prestazioni attraverso strumenti di monitoraggio ben progettati. Esistono molti strumenti e strumenti per monitorare le prestazioni del sito, quindi assicurati di sceglierne uno che sia adatto alla tua organizzazione. È consigliabile che i clienti Adobe Commerce che utilizzano il sistema di gestione dell&#39;infrastruttura cloud utilizzino servizi quali [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) per monitorare le prestazioni del sito.

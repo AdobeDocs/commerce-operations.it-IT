@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0a22d08d6965c6abc288a1a171d25f4ff8bbd7ce
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '26969'
+source-wordcount: '26968'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Ora le API convalidano correttamente l’input e restituiscono un errore 400 per
 
 _AC-6419 - [Problema GitHub](https://github.com/magento/magento2/issues/35934) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Errore interno del server nell&#39;endpoint API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Errore interno del server nell&#39;endpoint API `/V1/order/{orderId}/ship`
 
 Il sistema ora corregge l&#39;errore del server interno nell&#39;endpoint API `/V1/order/{orderId}/ship` e restituisce un errore 400 poiché la richiesta non è valida.
 
@@ -818,7 +818,7 @@ _AC-14464 - [Problema GitHub](https://github.com/magento/magento2/issues/39820) 
 
 #### [2.4.8] Non è possibile inserire ordini contenenti cifre da 0 a 9, e commerciale, punto e virgola o parentesi nel nome della città
 
-È stato corretto un problema a causa del quale l’estrazione non riusciva per i nomi delle città contenenti caratteri speciali come . , &amp; o parentesi.
+È stato risolto un problema che impediva l’estrazione dei nomi delle città contenenti caratteri speciali come . , &amp; o parentesi.
 Ora, gli ordini con tali nomi di città vengono inseriti correttamente senza errori di convalida.
 
 _AC-14495 - [Problema GitHub](https://github.com/magento/magento2/issues/39854) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/b9f5d6f7)_
@@ -1079,7 +1079,7 @@ _AC-13373 - [Problema GitHub](https://github.com/magento/magento2/issues/39363) 
 
 #### Il prezzo speciale non viene visualizzato correttamente per il prodotto secondario del prodotto configurabile (prodotto semplice)
 
-È stato risolto un problema che impediva la corretta visualizzazione del prezzo speciale del prodotto secondario (semplice) configurabile nella pagina di elenco dei prodotti quando &quot;Utilizzato nell’elenco dei prodotti&quot; era impostato su No. Ora il prezzo speciale viene visualizzato correttamente insieme al prezzo regolare, garantendo prezzi coerenti tra i diversi tipi di prodotto.
+È stato risolto un problema che impediva la corretta visualizzazione del prezzo speciale per il prodotto secondario (semplice) di un prodotto configurabile nella pagina di elenco dei prodotti quando &quot;Utilizzato nell’elenco dei prodotti&quot; era impostato su No. Ora il prezzo speciale viene visualizzato correttamente insieme al prezzo regolare, garantendo prezzi coerenti tra i diversi tipi di prodotto.
 
 _AC-13594 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/3cf1a106)_
 
@@ -1096,7 +1096,7 @@ _AC-13671 - [Problema GitHub](https://github.com/magento/magento2/issues/39521) 
 In Magento 2.4.2, la modifica dell’ambito del prezzo tramite config.php non aggiorna correttamente il valore is_global in catalog_eav_attribute per l’attributo del prezzo.
 Di conseguenza, i prezzi dei prodotti rimangono globali e non possono essere salvati per sito web, anche quando la definizione del prezzo è impostata su sito web.
 La soluzione alternativa richiede l’aggiornamento manuale della colonna is_global nel database, che non è ideale per gli ambienti di produzione.
-Questo comportamento è coerente con la progettazione predefinita di Magento, in cui l’ambito del prezzo è Globale o Sito web, ma non per visualizzazione negozio.
+Questo comportamento è coerente con la progettazione predefinita di Magento, in cui l’ambito del prezzo è Globale o Sito Web, ma non per visualizzazione negozio.
 
 _AC-13857 - [Problema GitHub](https://github.com/magento/magento2/issues/33559)_
 
@@ -2351,7 +2351,7 @@ _AC-8949 - [Contributo codice GitHub](https://github.com/magento/magento2/commit
 
 #### Il posizionamento di Risposta GraphQL per ordine non include il messaggio di eccezione
 
-È stata ripristinata la modifica precedente che restituiva errori in un formato diverso. Ora i potenziali errori vengono restituiti in modo coerente, senza interrompere lo schema di GraphQL. Questo codice deve essere aggiunto come BIC noto, approvato da PM qui: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+È stata ripristinata la modifica precedente che restituiva errori in un formato diverso. Ora i potenziali errori vengono restituiti in modo coerente, senza interrompere lo schema di GraphQL. Questo codice deve essere aggiunto come BIC noto, approvato da PM qui: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
 
 _ACP2E-3399 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/9608ca21)_
 
@@ -2449,7 +2449,7 @@ _ACP2E-4244 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 #### risposta di errore errata di updateCartItems GraphQL
 
-In precedenza, quando veniva effettuata una richiesta graphQL per un articolo con quantità insufficiente, veniva restituito un messaggio di errore corretto con un codice di errore, insieme al calcolo della quantità e del prezzo richiesto, anche se l’articolo non era disponibile. Dopo l’applicazione di questa correzione, viene restituito un messaggio di errore corretto con un codice di errore e la quantità dell’articolo viene impostata sul valore precedente, se non è disponibile nella risposta.
+In precedenza, quando veniva effettuata una richiesta graphQL per un articolo con quantità insufficiente, veniva restituito un messaggio di errore corretto con un codice di errore, insieme al calcolo della quantità e del prezzo richiesto, anche se l’articolo non era disponibile. Dopo l&#39;applicazione di questa correzione, viene restituito un messaggio di errore corretto con un codice di errore e la quantità dell&#39;articolo viene impostata sul valore precedente, se non è disponibile nella risposta.
 
 _ACP2E-4283 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/cbca0396)_
 
@@ -2636,7 +2636,7 @@ _ACP2E-4233 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 #### [MSI] test MFTF non riusciti relativi alle ultime modifiche della linea principale.
 
-Prima che i clienti ospiti che scelgono il ritiro in-store senza un indirizzo di spedizione abbiano il loro indirizzo di fatturazione automaticamente con l&#39;indirizzo del negozio, che non può essere modificato, portando a dettagli di fattura errati. In questo scenario, dopo la correzione dell’indirizzo di fatturazione è ora possibile modificarlo, consentendo agli ospiti di inserire i propri dettagli. Gli utenti registrati visualizzeranno il proprio indirizzo di fatturazione salvato invece di quello dello store.
+Prima della correzione, i clienti ospiti che scelgono il ritiro in-store senza un indirizzo di spedizione avevano il loro indirizzo di fatturazione automatico con l&#39;indirizzo del negozio, che non poteva essere modificato, portando a dettagli di fattura errati. In questo scenario, dopo la correzione dell’indirizzo di fatturazione è ora possibile modificarlo, consentendo agli ospiti di inserire i propri dettagli. Gli utenti registrati vedranno il loro indirizzo di fatturazione salvato invece di quello dello store.
 
 _ACP2E-4260 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/ab891304) - [Contributo codice GitHub](https://github.com/magento/inventory/commit/13e432a6)_
 
@@ -2833,7 +2833,7 @@ _ACP2E-4061 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 #### Mittente specifico del negozio non utilizzato per le e-mail con gift card
 
-In precedenza, quando si inviava un modello e-mail per una gift card dopo la creazione di una fattura da un negozio diverso, il nome del proprietario nelle impostazioni di configurazione dell’amministratore non veniva riportato nelle intestazioni dell’e-mail quando il cliente riceveva l’e-mail. Dopo l’applicazione di questa correzione, le intestazioni e-mail ora includono le informazioni e-mail del proprietario dello store appropriato.
+In precedenza, quando si inviava un modello e-mail per una gift card dopo la creazione di una fattura da un altro negozio, il nome del proprietario nelle impostazioni di configurazione dell&#39;amministratore non veniva riportato nelle intestazioni dell&#39;e-mail quando il cliente riceveva l&#39;e-mail. Dopo l’applicazione di questa correzione, le intestazioni e-mail ora includono le informazioni e-mail del proprietario del negozio appropriato.
 
 _ACP2E-4310_
 
@@ -3255,7 +3255,7 @@ La funzionalità del segmento del cliente ora include un meccanismo di caching p
 
 _ACP2E-4299_
 
-#### Regola prezzo catalogo [Cloud][experienceleague] non applicata
+#### Regola prezzo catalogo `[Cloud][experienceleague]` non applicata
 
 Prima di correggere le regole del prezzo del catalogo non erano applicabili quando `special_price` era impostato solo a livello di sito Web (non in &quot;Tutte le visualizzazioni dello store&quot;). Dopo la correzione, le regole del prezzo del catalogo ora vengono applicate correttamente quando `special_price` viene impostato a livello di sito Web controllando prima lo store predefinito del sito Web.
 
@@ -3487,7 +3487,7 @@ _ACP2E-4226_
 
 #### Impossibile spostarsi tra siti Web nell&#39;anteprima di aggiornamento pianificazione
 
-Prima di questa correzione, l’anteprima dell’aggiornamento pianificato si interromperebbe quando si tenta di visualizzare in anteprima il contenuto per gli archivi con domini personalizzati. Dopo questa correzione, i domini store personalizzati possono essere visualizzati in anteprima così come sono e spostati all’interno dell’iframe di anteprima. La correzione riguarda prodotti, categorie, pagine CMS e blocchi CMS e supporta i collegamenti di navigazione tramite `{{store url}}` tag di markup, come documentato in [Variabili Adobe Commerce e tag di markup](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/variables/markup-tags).
+Prima di questa correzione, l’anteprima dell’aggiornamento pianificato si interromperebbe quando si tenta di visualizzare in anteprima il contenuto per gli archivi con domini personalizzati. Dopo questa correzione, i domini store personalizzati possono essere visualizzati in anteprima così come sono e spostati all’interno dell’iframe di anteprima. La correzione riguarda prodotti, categorie, pagine CMS e blocchi CMS e supporta i collegamenti di navigazione tramite `{{store url}}` tag di markup, come documentato in [Variabili Adobe Commerce e tag di markup](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
