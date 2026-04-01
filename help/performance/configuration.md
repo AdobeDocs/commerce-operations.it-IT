@@ -3,9 +3,9 @@ title: Best practice per la configurazione
 description: Scopri le best practice di configurazione per ottimizzare le prestazioni di Adobe Commerce. Scopri le impostazioni e gli strumenti per migliorare il tempo di risposta e la velocità effettiva.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: be13bed02b6307d0906e9c640962ee7d8c05d855
+source-git-commit: 0185c3d88a370c6932198eb4c44ec6dbfa0a6cf0
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Commerce fornisce molte impostazioni e strumenti che puoi utilizzare per miglior
 
 ## Processi Cron
 
-Tutte le operazioni asincrone in [!DNL Commerce] vengono eseguite utilizzando il comando Linux `cron`. Vedi [Configura ed esegui cron](../configuration/cli/configure-cron-jobs.md) per configurarlo correttamente.
+Tutte le operazioni asincrone in Commerce vengono eseguite utilizzando il comando Linux `cron`. Vedi [Configura ed esegui cron](../configuration/cli/configure-cron-jobs.md) per configurarlo correttamente.
 
 ## Indicizzatori
 
@@ -32,19 +32,19 @@ Quando avvii lo store in produzione, attiva tutte le cache dalla pagina **[!UICO
 
 ## Notifiche e-mail asincrone
 
-L’abilitazione dell’impostazione &quot;Notifiche e-mail asincrone&quot; sposta in background i processi che gestiscono le notifiche e-mail di pagamento e di elaborazione dell’ordine. Per abilitare questa funzione, vai a **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Per ulteriori informazioni, vedere [E-mail vendite](https://experienceleague.adobe.com/it/docs/commerce-admin/config/sales/sales-emails) nella _Guida utente amministratore_.
+L&#39;abilitazione dell&#39;impostazione **[!UICONTROL Asynchronous email notifications]** sposta in background i processi che gestiscono le notifiche e-mail di pagamento e di elaborazione dell&#39;ordine. Per abilitare questa funzione, vai a **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Per ulteriori informazioni, vedere [E-mail vendite](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales-emails) nella _Guida utente amministratore_.
 
 ## Elaborazione dati ordine asincrono
 
-In alcuni casi le vendite intensive in una vetrina si verificano contemporaneamente all&#39;elaborazione intensiva degli ordini da parte di [!DNL Commerce]. È possibile configurare [!DNL Commerce] per distinguere questi due pattern di traffico a livello di database per evitare conflitti tra le operazioni di lettura e scrittura nelle tabelle corrispondenti. Puoi archiviare e indicizzare i dati dell’ordine in modo asincrono. Gli ordini vengono inseriti in un archivio temporaneo e spostati in blocco nella griglia di Order Management senza alcuna collisione. È possibile attivare questa opzione da **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. Per ulteriori informazioni, vedere [Aggiornamenti pianificati alla griglia](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing) nella _Guida utente amministratore_.
+In alcuni casi, le vendite intensive in una vetrina si verificano contemporaneamente all&#39;elaborazione intensiva degli ordini da parte di Commerce. È possibile configurare Commerce per distinguere questi due pattern di traffico a livello di database per evitare conflitti tra le operazioni di lettura e scrittura nelle tabelle corrispondenti. Puoi archiviare e indicizzare i dati dell’ordine in modo asincrono. Gli ordini vengono inseriti in un archivio temporaneo e spostati in blocco nella griglia di Order Management senza alcuna collisione. È possibile attivare questa opzione da **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. Per ulteriori informazioni, vedere [Aggiornamenti pianificati alla griglia](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing) nella Guida utente dell&#39;amministratore.
 
 >[!WARNING]
 >
->La scheda e le opzioni **[!UICONTROL Developer]** sono disponibili solo in [modalità sviluppatore](../configuration/cli/set-mode.md). [Adobe Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) non supporta la modalità `Developer`.
+>La scheda e le opzioni **[!UICONTROL Developer]** sono disponibili solo in [modalità sviluppatore](../configuration/cli/set-mode.md). [Adobe Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) non supporta la modalità `Developer`.
 
 ## Salvataggio configurazione asincrona
 
-Per i progetti con un numero elevato di configurazioni a livello di archivio, il salvataggio di una configurazione di archivio può richiedere un tempo eccessivo o causare un timeout. Il modulo _Configurazione asincrona_ consente il salvataggio asincrono della configurazione eseguendo un processo cron che utilizza un consumer per elaborare il salvataggio in una coda di messaggi. AsyncConfig è **disabilitato** per impostazione predefinita.
+Per i progetti con un numero elevato di configurazioni a livello di archivio, il salvataggio di una configurazione di archivio può richiedere un tempo eccessivo o causare un timeout. Il modulo _Configurazione asincrona_ consente il salvataggio asincrono della configurazione eseguendo un processo cron che utilizza un consumer per elaborare il salvataggio in una coda di messaggi. AsyncConfig è *disabilitato* per impostazione predefinita.
 
 Puoi abilitare AsyncConfig utilizzando l’interfaccia della riga di comando:
 
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## Aggiornamento scorte differite
 
-In periodi di vendite intensive, [!DNL Commerce] può rimandare gli aggiornamenti delle scorte relativi agli ordini. In questo modo si riduce al minimo il numero di operazioni e si accelera il processo di posizionamento dell&#39;ordine. Tuttavia, questa opzione è rischiosa e può essere utilizzata solo quando gli ordini inevasi vengono attivati nel punto vendita, perché può portare a quantità di scorte negative. Questa opzione consente di migliorare notevolmente le prestazioni dei flussi di cassa per i negozi che possono facilmente ricaricare le scorte su richiesta. Per attivare gli aggiornamenti delle azioni differite sul sito, vai a **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. Per ulteriori informazioni, vedere [Gestione dell&#39;inventario](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) nella _Guida utente di Adobe Commerce_.
+In periodi di vendite intensive, Commerce può rimandare gli aggiornamenti delle scorte relativi agli ordini. In questo modo si riduce al minimo il numero di operazioni e si accelera il processo di posizionamento dell&#39;ordine. Tuttavia, questa opzione è rischiosa e può essere utilizzata solo quando gli ordini inevasi vengono attivati nel punto vendita, perché può portare a quantità di scorte negative. Questa opzione consente di migliorare notevolmente le prestazioni dei flussi di cassa per i negozi che possono facilmente ricaricare le scorte su richiesta. Per attivare gli aggiornamenti delle azioni differite sul sito, vai a **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. Per ulteriori informazioni, vedere [Gestione dell&#39;inventario](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) nella _Guida utente di Adobe Commerce_.
 
 >[!INFO]
 >
@@ -77,7 +77,7 @@ In periodi di vendite intensive, [!DNL Commerce] può rimandare gli aggiornament
 
 >[!INFO]
 >
->Questa opzione funziona anche con [Inserimento ordine asincrono](high-throughput-order-processing.md#asynchronous-order-placement) in combinazione con [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html?lang=it).
+>Questa opzione funziona anche con [Inserimento ordine asincrono](high-throughput-order-processing.md#asynchronous-order-placement) in combinazione con [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html).
 
 ## Impostazioni di ottimizzazione lato client
 
@@ -95,27 +95,27 @@ Per migliorare la reattività della vetrina dell&#39;istanza [!DNL Commerce], pa
 
 >[!INFO]
 >
->La scheda e le opzioni **[!UICONTROL Developer]** sono disponibili solo in [modalità sviluppatore](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) non supporta la modalità `Developer`.
+>La scheda e le opzioni **[!UICONTROL Developer]** sono disponibili solo in [modalità sviluppatore](../configuration/cli/set-mode.md). [Adobe Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) non supporta la modalità `Developer`.
 
 Quando attivi l&#39;opzione **[!UICONTROL Enable [!DNL JavaScript] Bundling]**, consenti a Commerce di unire tutte le risorse JS in uno o più bundle caricati nelle pagine della vetrina. Il bundling di JS comporta un numero inferiore di richieste al server, migliorando le prestazioni della pagina. Aiuta anche il browser a memorizzare in cache le risorse JS alla prima chiamata e a riutilizzarle per tutte le ulteriori ricerche. Questa opzione consente anche la valutazione lenta, in quanto tutto JS viene caricato come testo. Avvia l&#39;analisi e la valutazione del codice solo dopo che sono state attivate azioni specifiche sulla pagina. Tuttavia, questa impostazione non è consigliata per i negozi in cui il tempo di caricamento della prima pagina è estremamente critico, perché tutto il contenuto JS verrà caricato alla prima chiamata.
 
 >[!INFO]
 >
->Per ulteriori informazioni sull&#39;ottimizzazione di CSS e JavaScript, vedere [Ottimizzare i file di risorse](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files).
+>Per ulteriori informazioni sull&#39;ottimizzazione di CSS e JavaScript, vedere [Ottimizzare i file di risorse](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files).
 
-### Suggerimenti per il bundling
+### Suggerimenti per il bundling {#bundling-tips}
 
-* È consigliabile utilizzare strumenti di terze parti per la minimizzazione e il bundling (come [r.js](https://requirejs.org/)). [!DNL Commerce] meccanismi incorporati non sono ottimali e vengono forniti come alternative di fallback.
+* È consigliabile utilizzare strumenti di terze parti per la minimizzazione e il bundling (come [r.js](https://requirejs.org/)). I meccanismi incorporati di Commerce non sono ottimali e vengono forniti come alternative di fallback.
 * L’attivazione del protocollo HTTP/2 può essere una buona alternativa all’utilizzo del bundling JS. Il protocollo offre molti degli stessi vantaggi. È abilitato per impostazione predefinita in Adobe Commerce sui progetti di infrastruttura cloud.
 * È sconsigliato utilizzare impostazioni obsolete, come l’unione di file JS e CSS, in quanto sono state progettate solo per il file JS caricato in modo sincrono nella sezione HEAD della pagina. L’utilizzo di questa tecnica può causare il malfunzionamento del bundling e della logica requireJS.
 
 ## Convalida dei segmenti cliente
 
-I commercianti che hanno un numero elevato di [segmenti di clienti](https://experienceleague.adobe.com/it/docs/commerce-admin/customers/segments/customer-segments) possono riscontrare un significativo deterioramento delle prestazioni con le azioni dei clienti, ad esempio l&#39;accesso dei clienti e l&#39;aggiunta di prodotti al carrello.
+I commercianti che hanno un numero elevato di [segmenti di clienti](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments) possono riscontrare un significativo deterioramento delle prestazioni con le azioni dei clienti, ad esempio l&#39;accesso dei clienti e l&#39;aggiunta di prodotti al carrello.
 
 Le azioni dei clienti attivano un processo di convalida per i segmenti dei clienti, che è ciò che può causare il deterioramento delle prestazioni. Per impostazione predefinita, Adobe Commerce convalida ogni segmento in tempo reale per definire quali segmenti dei clienti corrispondono e quali no.
 
-Per evitare un peggioramento delle prestazioni, è possibile impostare l&#39;opzione di configurazione del sistema **[!UICONTROL Real-time Check if Customer is Matched by Segment]** su **No** per convalidare i segmenti dei clienti tramite una singola query SQL con condizione combinata.
+Per evitare un peggioramento delle prestazioni, è possibile impostare l&#39;opzione di configurazione del sistema **[!UICONTROL Real-time Check if Customer is Matched by Segment]** su *No* per convalidare i segmenti dei clienti tramite una singola query SQL con condizione combinata.
 
 Per abilitare questa ottimizzazione, vai a **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] >[!UICONTROL Real-time Check if Customer is Matched by Segment]**.
 
@@ -136,7 +136,7 @@ Per migliorare le prestazioni della griglia prodotti per i cataloghi di grandi d
 Questa impostazione di configurazione del sistema è disabilitata per impostazione predefinita. Attivandola, puoi limitare il numero di prodotti nella griglia a un valore specifico. **[!UICONTROL Records Limit]** è un&#39;impostazione personalizzabile con un valore minimo predefinito di `20000`.
 Quando l&#39;impostazione **[!UICONTROL Limit Number of Products in Grid]** è abilitata e il numero di prodotti nella griglia è maggiore del limite di record, viene restituita la raccolta limitata di record. Al raggiungimento del limite, i record totali trovati, il numero di record selezionati e gli elementi di impaginazione sono nascosti dall&#39;intestazione della griglia.
 
-Quando il numero totale di prodotti nella griglia è limitato, non influisce sulle azioni di massa della griglia del prodotto. Influisce solo sul livello di presentazione della griglia del prodotto. Ad esempio, nella griglia è presente un numero limitato di prodotti `20000`, l&#39;utente fa clic su **[!UICONTROL Select All]**, seleziona l&#39;azione di massa **[!UICONTROL Update attributes]** e aggiorna alcuni attributi. Di conseguenza, vengono aggiornati tutti i prodotti, non la raccolta limitata di `20000` record.
+Quando il numero totale di prodotti nella griglia è limitato, non influisce sulle azioni di massa della griglia di prodotto. Influisce solo sul livello di presentazione della griglia del prodotto. Ad esempio, nella griglia è presente un numero limitato di prodotti `20000`, l&#39;utente fa clic su **[!UICONTROL Select All]**, seleziona l&#39;azione di massa **[!UICONTROL Update attributes]** e aggiorna alcuni attributi. Di conseguenza, vengono aggiornati tutti i prodotti, non la raccolta limitata di `20000` record.
 
 La limitazione relativa alla griglia di prodotti influisce solo sulle raccolte di prodotti utilizzate dai componenti dell’interfaccia utente. Di conseguenza, questa limitazione non riguarda tutte le griglie di prodotti. Solo quelli che utilizzano `Magento\Catalog\Ui\DataProvider\Product\ProductCollection`.
 Puoi limitare le raccolte della griglia di prodotti solo sulle pagine seguenti:
@@ -147,4 +147,4 @@ Puoi limitare le raccolte della griglia di prodotti solo sulle pagine seguenti:
 * Aggiungi prodotti al prodotto gruppo
 * Pagina Crea ordine amministratore
 
-Se non desideri che la griglia prodotti sia limitata, ti consigliamo di utilizzare i filtri in modo più preciso affinché la raccolta dei risultati contenga meno elementi di **[!UICONTROL Records Limit]**.
+Se non desideri che la griglia prodotti sia limitata, ti consigliamo di utilizzare i filtri in modo più preciso affinché la raccolta dei risultati abbia meno elementi di **[!UICONTROL Records Limit]**.

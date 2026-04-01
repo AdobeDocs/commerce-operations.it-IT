@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
 workflow-type: tm+mt
-source-wordcount: '25717'
+source-wordcount: '25765'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ _AC-11673 - [Contributo codice GitHub](https://github.com/magento/magento2/commi
 _AC-11911 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/7cabfb46)_
 
 #### Aggiunta della compatibilità con MySQL 8.4 LTS per Magento CE
+
+Nessuna descrizione disponibile.
 
 _AC-11995 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/672a2e61)_
 
@@ -67,13 +69,19 @@ _AC-12025 - [Contributo codice GitHub](https://github.com/magento/magento2/commi
 
 #### Aggiunta della compatibilità con MySQL 8.4 LTS per EE
 
+Nessuna descrizione disponibile.
+
 _AC-12032 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Aggiunta compatibilità con MySQL 8.4 LTS per B2B
 
+Nessuna descrizione disponibile.
+
 _AC-12034 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Aggiunta della compatibilità con MySQL 8.4 LTS per le estensioni bundle
+
+Nessuna descrizione disponibile.
 
 _AC-12074 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/672a2e61)_
 
@@ -85,6 +93,8 @@ _AC-12085 - [Contributo codice GitHub](https://github.com/magento/magento2/commi
 
 #### Ottimizzazione degli abbonati - PhpUnit10
 
+Nessuna descrizione disponibile.
+
 _AC-12165 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/90e25b6b)_
 
 #### Supporta i nuovi tentativi di connessione per la sessione Redis e compatibile con colinmollenhour/php-redis-session-abstract v2.0.0
@@ -94,6 +104,8 @@ _AC-12165 - [Contributo codice GitHub](https://github.com/magento/magento2/commi
 _AC-12267 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Esaminare gli errori dei test di automazione con MySQL 8.4 LTS
+
+Nessuna descrizione disponibile.
 
 _AC-12576 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/672a2e61)_
 
@@ -115,6 +127,8 @@ compatibilità e funzionalità aggiornate. In precedenza, l’aggiornamento alle
 _AC-12715 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/b34c0a75)_
 
 #### Esaminare l&#39;errore dello unit test dovuto all&#39;aggiornamento della patch phpunit durante l&#39;aggiornamento del componente
+
+Nessuna descrizione disponibile.
 
 _AC-12823 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/b34c0a75)_
 
@@ -299,6 +313,8 @@ _AC-10782 - [Problema GitHub](https://github.com/magento/magento2/issues/38331) 
 
 #### aggiornamento password amministratore.
 
+Nessuna descrizione disponibile.
+
 _AC-10886 - [Problema GitHub](https://github.com/magento/magento2/issues/38352) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/4bca5dfe)_
 
 #### il mio account aggiungi l&#39;arresto anomalo dell&#39;indirizzo al salvataggio
@@ -387,6 +403,8 @@ _ACP2E-3038 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 ### Account, carrello e pagamento
 
 #### L’attributo personalizzato &quot;select&quot; (seleziona indirizzo cliente) non viene riprodotto per il nuovo indirizzo cliente
+
+Nessuna descrizione disponibile.
 
 _AC-2341 - [Problema GitHub](https://github.com/magento/magento2/issues/34950)_
 
@@ -1482,6 +1500,8 @@ _AC-12283 - [Problema GitHub](https://github.com/magento/magento2/issues/38845) 
 
 #### La struttura delle categorie del widget non viene rappresentata correttamente
 
+Nessuna descrizione disponibile.
+
 _AC-12692 - [Problema GitHub](https://github.com/magento/magento2/issues/39008) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/58e40ceb)_
 
 #### Impossibile visualizzare il messaggio &quot;Using Default value&quot; (Utilizzo del valore predefinito) quando si modifica il tema nella pagina di configurazione della progettazione
@@ -1878,7 +1898,7 @@ Il sistema ora rispetta lo standard di codifica rimuovendo il tag `@author` non 
 
 _AC-8356 - [Problema GitHub](https://github.com/magento/magento2/issues/37250) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/37000)_
 
-#### Lo spazio nella sintassi editorconfig interrompe la regola per `[&lbrace;composer,auth&rbrace;.json]`
+#### Lo spazio nella sintassi editorconfig interrompe la regola per `[{composer,auth}.json]`
 
 Il sistema ora applica correttamente un rientro a 4 spazi ai file compositore e auth.json, in seguito a una correzione di un errore di sintassi nell&#39;editor config. In precedenza, a causa di uno spazio nella sintassi editorconfig, questi file non venivano formattati correttamente con un rientro a 2 spazi.
 
@@ -2022,7 +2042,7 @@ Il problema è stato risolto dopo l’applicazione del controllo durante la rich
 
 _ACP2E-2653 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### La chiamata dei prodotti GraphQL contenente il filtro prezzi `&lbrace;from:"0"&rbrace;` non restituisce alcun risultato
+#### La chiamata dei prodotti GraphQL contenente il filtro prezzi `{from:"0"}` non restituisce alcun risultato
 
 In precedenza, la ricerca di prodotti graphql con filtro per prezzi zero non restituiva alcun risultato a causa di un’eccezione generata. Ora la ricerca restituisce i risultati come previsto.
 
@@ -2765,6 +2785,8 @@ _AC-11474 - [Problema GitHub](https://github.com/magento/magento2/issues/38486) 
 
 #### La navigazione nella struttura delle categorie causa errori in Redis: &quot;La sessione di Redis ha superato le connessioni simultanee&quot;
 
+Nessuna descrizione disponibile.
+
 _AC-12571 - [Problema GitHub](https://github.com/magento/magento2/issues/38851) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/0611e750)_
 
 #### Problemi CSP combinati con dev/css/use_css_critical_path
@@ -2891,6 +2913,8 @@ Il sistema ora visualizza correttamente il prezzo dei prodotti semplici quando v
 _AC-11810 - [Problema GitHub](https://github.com/magento/magento2/issues/38603)_
 
 #### Errore di arrotondamento in centesimi nella regola del catalogo
+
+Nessuna descrizione disponibile.
 
 _AC-13855 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/276e0acd)_
 
@@ -3072,6 +3096,8 @@ _AC-13053 - [Contributo codice GitHub](https://github.com/magento/magento2/commi
 
 #### magento/module-open-search dipende da un ramo opensearch-php inesistente
 
+Nessuna descrizione disponibile.
+
 _AC-13721 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/05dc0bbf)_
 
 #### la tabella search_query, se di dimensioni enormi, ha un impatto notevole sul front-end del tempo di caricamento
@@ -3202,9 +3228,13 @@ _AC-13362 - [Problema GitHub](https://github.com/magento/magento2/issues/31399) 
 
 #### MAGETWO-95118: Verifica del comportamento con il carrello acquisti persistente dopo la scadenza della sessione
 
+Nessuna descrizione disponibile.
+
 _AC-13478 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/7d5e3906)_
 
 #### Correggi i test statici per consentire l’utilizzo da parte di estensioni di terze parti
+
+Nessuna descrizione disponibile.
 
 _AC-13848 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/9e383b4d)_
 
@@ -3271,6 +3301,8 @@ Questa PR migliora il messaggio di errore quando i requisiti non riescono a cari
 _AC-13472 - [Problema GitHub](https://github.com/magento/magento2/issues/36761) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/38971)_
 
 #### Errori di deprecazione di PHP 8.4 che causano errori di build in 2.4-development
+
+Nessuna descrizione disponibile.
 
 _AC-14004 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/1da9ba6f)_
 

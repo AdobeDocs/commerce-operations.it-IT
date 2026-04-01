@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
 workflow-type: tm+mt
-source-wordcount: '27921'
+source-wordcount: '27999'
 ht-degree: 0%
 
 ---
@@ -132,6 +132,8 @@ _AC-10782 - [Problema GitHub](https://github.com/magento/magento2/issues/38331) 
 
 #### aggiornamento password amministratore.
 
+Nessuna descrizione disponibile.
+
 _AC-10886 - [Problema GitHub](https://github.com/magento/magento2/issues/38352) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/4bca5dfe)_
 
 #### il mio account aggiungi l&#39;arresto anomalo dell&#39;indirizzo al salvataggio
@@ -171,6 +173,8 @@ Il sistema ora consente di impostare i campi &quot;Login as Customer opt-in chec
 _AC-13000 - [Problema GitHub](https://github.com/magento/magento2/issues/32329) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/32359)_
 
 #### La home page dell’interfaccia utente front-end nel menu a discesa del profilo non è presente.(in modo intermittente)
+
+Nessuna descrizione disponibile.
 
 _AC-14299_
 
@@ -237,6 +241,8 @@ _ACP2E-3038 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 #### L’attributo personalizzato &quot;select&quot; (seleziona indirizzo cliente) non viene riprodotto per il nuovo indirizzo cliente
 
+Nessuna descrizione disponibile.
+
 _AC-2341 - [Problema GitHub](https://github.com/magento/magento2/issues/34950)_
 
 ### Interfaccia utente amministratore
@@ -285,9 +291,13 @@ _AC-13529 - [Contributo codice GitHub](https://github.com/magento/magento2/commi
 
 #### Quando il numero massimo di richieste di reimpostazione password è impostato su maggiore di 0, ad esempio: 3, i messaggi di errore &quot;Limite superato&quot; vengono inviati prima del raggiungimento del limite, ovvero dalla seconda volta
 
+Nessuna descrizione disponibile.
+
 _AC-13767_
 
 #### Anche se il numero massimo di richieste di reimpostazione password è impostato su 0 (disattivato) , &quot;i messaggi di errore relativi al limite superiore vengono inviati dalla seconda volta&quot;
+
+Nessuna descrizione disponibile.
 
 _AC-13768_
 
@@ -298,6 +308,8 @@ In precedenza l&#39;asterisco rosso non veniva visualizzato per il numero di tel
 _AC-13850 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/c699c206)_
 
 #### In Amministratore Quando si tenta di riordinare l’ordine, il pulsante non è selezionabile. (in modo intermittente)
+
+Nessuna descrizione disponibile.
 
 _AC-14300_
 
@@ -605,6 +617,8 @@ _ACP2E-3187 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 #### Errore del pacchetto Enterprise Edition 2.4.8-beta102 con eccezioni dell&#39;applicazione
 
+Nessuna descrizione disponibile.
+
 _AC-13501_
 
 #### I prodotti assegnati al catalogo condiviso non si riflettono sul front-end quando viene eseguito l’indice parziale
@@ -684,6 +698,8 @@ _ACP2E-3391_
 
 #### Il pulsante Estrazione rapida amministratore è disabilitato.
 
+Nessuna descrizione disponibile.
+
 _AC-14293_
 
 #### Pagamento tramite LPM
@@ -699,6 +715,8 @@ Il sistema ora consente metodi di pagamento rapidi per i prodotti configurabili 
 _BUNDLE-3368_
 
 #### Errore di verifica CVV non riuscita
+
+Nessuna descrizione disponibile.
 
 _BUNDLE-3369_
 
@@ -810,9 +828,13 @@ _AC-13302 - [Problema GitHub](https://github.com/magento/magento2/issues/39292) 
 
 #### Il prodotto del registro degli omaggi non viene visualizzato correttamente
 
+Nessuna descrizione disponibile.
+
 _AC-13797_
 
 #### Il prodotto del registro degli omaggi non viene visualizzato correttamente
+
+Nessuna descrizione disponibile.
 
 _AC-13841_
 
@@ -1531,6 +1553,8 @@ _AC-12283 - [Problema GitHub](https://github.com/magento/magento2/issues/38845) 
 
 #### La struttura delle categorie del widget non viene rappresentata correttamente
 
+Nessuna descrizione disponibile.
+
 _AC-12692 - [Problema GitHub](https://github.com/magento/magento2/issues/39008) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/58e40ceb)_
 
 #### Impossibile visualizzare il messaggio &quot;Using Default value&quot; (Utilizzo del valore predefinito) quando si modifica il tema nella pagina di configurazione della progettazione
@@ -1909,6 +1933,8 @@ _AC-13149 - [Problema GitHub](https://github.com/magento/magento2/issues/39219) 
 
 #### setup:upgrade non riesce con la versione MariaDB 11.4 a causa di modifiche a charset e regole di confronto
 
+Nessuna descrizione disponibile.
+
 _AC-13247_
 
 #### [Problema] Rimuovi tutti i parametri di marketing get per ridurre la cache
@@ -1971,7 +1997,7 @@ Il sistema ora rispetta lo standard di codifica rimuovendo il tag `@author` non 
 
 _AC-8356 - [Problema GitHub](https://github.com/magento/magento2/issues/37250) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/37000)_
 
-#### Lo spazio nella sintassi editorconfig interrompe la regola per `[&lbrace;composer,auth&rbrace;.json]`
+#### Lo spazio nella sintassi editorconfig interrompe la regola per `[{composer,auth}.json]`
 
 Il sistema ora applica correttamente un rientro a 4 spazi ai file compositore e auth.json, in seguito a una correzione di un errore di sintassi nell&#39;editor config. In precedenza, a causa di uno spazio nella sintassi editorconfig, questi file non venivano formattati correttamente con un rientro a 2 spazi.
 
@@ -2085,6 +2111,8 @@ _AC-7976 - [Problema GitHub](https://github.com/magento/magento2/issues/36877) -
 
 #### I rapporti EE 2.4.8-beta1 non vengono generati a causa dell’eccezione Magento
 
+Nessuna descrizione disponibile.
+
 _AC-13011_
 
 ### Framework, Framework interfaccia utente
@@ -2127,7 +2155,7 @@ Il problema è stato risolto dopo l’applicazione del controllo durante la rich
 
 _ACP2E-2653 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### La chiamata dei prodotti GraphQL contenente il filtro prezzi `&lbrace;from:"0"&rbrace;` non restituisce alcun risultato
+#### La chiamata dei prodotti GraphQL contenente il filtro prezzi `{from:"0"}` non restituisce alcun risultato
 
 In precedenza, la ricerca di prodotti graphql con filtro per prezzi zero non restituiva alcun risultato a causa di un’eccezione generata. Ora la ricerca restituisce i risultati come previsto.
 
@@ -2662,13 +2690,19 @@ _ACP2E-3003 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 #### [Braintree] rimborsa la transazione di archiviazione online come transazione id-rimborso
 
+Nessuna descrizione disponibile.
+
 _BUNDLE-3394_
 
 #### [Braintree] + [CLOUD] ordini Braintree (carta di credito) non in grado di dividere le spese
 
+Nessuna descrizione disponibile.
+
 _BUNDLE-3421_
 
 #### [Braintree] [Cloud]Il certificato SSL di Braintree scade il 30 giugno
+
+Nessuna descrizione disponibile.
 
 _BUNDLE-3422_
 
@@ -2981,6 +3015,8 @@ _AC-11474 - [Problema GitHub](https://github.com/magento/magento2/issues/38486) 
 
 #### La navigazione nella struttura delle categorie causa errori in Redis: &quot;La sessione di Redis ha superato le connessioni simultanee&quot;
 
+Nessuna descrizione disponibile.
+
 _AC-12571 - [Problema GitHub](https://github.com/magento/magento2/issues/38851) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/0611e750)_
 
 #### Problemi CSP combinati con dev/css/use_css_critical_path
@@ -3115,6 +3151,8 @@ Il sistema ora visualizza correttamente il prezzo dei prodotti semplici quando v
 _AC-11810 - [Problema GitHub](https://github.com/magento/magento2/issues/38603)_
 
 #### Errore di arrotondamento in centesimi nella regola del catalogo
+
+Nessuna descrizione disponibile.
 
 _AC-13855 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/276e0acd)_
 
@@ -3335,6 +3373,8 @@ _ACP2E-3383 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 #### La seconda regola prezzo carrello non viene applicata se la regola Primo carrello è già applicata
 
+Nessuna descrizione disponibile.
+
 _AC-13751_
 
 ### Ricerca
@@ -3346,6 +3386,8 @@ Il sistema ora visualizza correttamente i risultati della ricerca nella pagina R
 _AC-13053 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/3ea26621)_
 
 #### magento/module-open-search dipende da un ramo opensearch-php inesistente
+
+Nessuna descrizione disponibile.
 
 _AC-13721 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/05dc0bbf)_
 
@@ -3396,6 +3438,8 @@ Assicurati che le tariffe UPS siano visibili nel carrello e nel pagamento.
 _AC-11938 - [Problema GitHub](https://github.com/magento/magento2/issues/38618) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/493e01f5)_
 
 #### UPS REST &quot;sandbox&quot; e &quot;prod&quot; aggiornamento delle istruzioni di installazione in devdoc
+
+Nessuna descrizione disponibile.
 
 _AC-12938_
 
@@ -3505,9 +3549,13 @@ _AC-13362 - [Problema GitHub](https://github.com/magento/magento2/issues/31399) 
 
 #### MAGETWO-95118: Verifica del comportamento con il carrello acquisti persistente dopo la scadenza della sessione
 
+Nessuna descrizione disponibile.
+
 _AC-13478 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/7d5e3906)_
 
 #### Test di integrazione non riusciti Magento\NegotiableQuote\Controller\Quote\DownloadTest::testCompanyManagerDownloadWithNQSubPermission
+
+Nessuna descrizione disponibile.
 
 _AC-13716_
 
@@ -3518,6 +3566,8 @@ In precedenza, se Database contiene record sulla regola di destinazione senza al
 _AC-13722_
 
 #### Correggi i test statici per consentire l’utilizzo da parte di estensioni di terze parti
+
+Nessuna descrizione disponibile.
 
 _AC-13848 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/9e383b4d)_
 
@@ -3584,6 +3634,8 @@ Questa PR migliora il messaggio di errore quando i requisiti non riescono a cari
 _AC-13472 - [Problema GitHub](https://github.com/magento/magento2/issues/36761) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/38971)_
 
 #### Errori di deprecazione di PHP 8.4 che causano errori di build in 2.4-development
+
+Nessuna descrizione disponibile.
 
 _AC-14004 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/1da9ba6f)_
 
