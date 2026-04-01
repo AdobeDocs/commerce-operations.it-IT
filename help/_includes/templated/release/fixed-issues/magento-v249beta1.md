@@ -61,7 +61,7 @@ Ora le API convalidano correttamente l’input e restituiscono un errore 400 per
 
 _AC-6419 - [Problema GitHub](https://github.com/magento/magento2/issues/35934) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Errore interno del server nell&#39;endpoint API `/V1/order/{orderId}/ship`
+#### Errore interno del server nell&#39;endpoint API `/V1/order/&lbrace;orderId&rbrace;/ship`
 
 Il sistema ora corregge l&#39;errore del server interno nell&#39;endpoint API `/V1/order/{orderId}/ship` e restituisce un errore 400 poiché la richiesta non è valida.
 
@@ -2172,7 +2172,7 @@ _AC-8949 - [Contributo codice GitHub](https://github.com/magento/magento2/commit
 
 #### Il posizionamento di Risposta GraphQL per ordine non include il messaggio di eccezione
 
-È stata ripristinata la modifica precedente che restituiva errori in un formato diverso. Ora i potenziali errori vengono restituiti in modo coerente, senza interrompere lo schema di GraphQL. Questo codice deve essere aggiunto come BIC noto, approvato da PM qui: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+È stata ripristinata la modifica precedente che restituiva errori in un formato diverso. Ora i potenziali errori vengono restituiti in modo coerente, senza interrompere lo schema di GraphQL. Questo codice deve essere aggiunto come BIC noto, approvato da PM qui: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
 
 _ACP2E-3399 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/9608ca21)_
 
