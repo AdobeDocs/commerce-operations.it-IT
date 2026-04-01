@@ -3497,7 +3497,7 @@ _ACP2E-4226_
 
 #### Impossibile spostarsi tra siti Web nell&#39;anteprima di aggiornamento pianificazione
 
-Prima di questa correzione, l’anteprima dell’aggiornamento pianificato si interromperebbe quando si tenta di visualizzare in anteprima il contenuto per gli archivi con domini personalizzati. Dopo questa correzione, i domini store personalizzati possono essere visualizzati in anteprima così come sono e spostati all’interno dell’iframe di anteprima. La correzione riguarda prodotti, categorie, pagine CMS e blocchi CMS e supporta i collegamenti di navigazione tramite `{{store url}}` tag di markup, come documentato in [Variabili Adobe Commerce e tag di markup](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
+Prima di questa correzione, l’anteprima dell’aggiornamento pianificato si interromperebbe quando si tenta di visualizzare in anteprima il contenuto per gli archivi con domini personalizzati. Dopo questa correzione, i domini store personalizzati possono essere visualizzati in anteprima così come sono e spostati all’interno dell’iframe di anteprima. La correzione riguarda prodotti, categorie, pagine CMS e blocchi CMS e supporta i collegamenti di navigazione tramite `{{store url}}` tag di markup, come documentato in [Variabili Adobe Commerce e tag di markup](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
