@@ -2,9 +2,9 @@
 user-guide-title: Playbook di implementazione
 user-guide-description: Scopri le strategie per la pianificazione e l’implementazione di un sito Adobe Commerce di successo.
 mini-toc-levels: 3
-source-git-commit: 8d2dd409741717b534e4aef5e252a614ccb81f4a
+source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '161'
 ht-degree: 14%
 
 ---
@@ -27,8 +27,7 @@ ht-degree: 14%
       - [Configurazione del reporting](best-practices/planning/reporting-configuration.md)
       - [Configurazione del database per le distribuzioni cloud&#x200B;](best-practices/planning/database-on-cloud.md)
       - [Configurazione MySQL](best-practices/planning/mysql-configuration.md)
-      - [Configurazione del servizio Redis](best-practices/planning/redis-service-configuration.md)
-      - [Configurazione del servizio Valkey](best-practices/planning/valkey-service-configuration.md)
+      - [Configurazione del servizio Redis/Valkey](best-practices/planning/redis-valkey-service-configuration.md)
       - [Dimensioni memoria OPcache](best-practices/planning/opcache-memory-size.md)
       - [Dimensioni cache realpath](best-practices/planning/realpath-cache-size.md)
       - [Estensioni](best-practices/planning/extensions.md)
@@ -52,7 +51,7 @@ ht-degree: 14%
       - [Modifica del codice principale e di terze parti](best-practices/development/modifying-core-and-third-party-code.md)
    - Launch {#launch}
       - [Panoramica](best-practices/launch/overview.md)
-      - [Configura web crawler](best-practices/launch/robots-txt.md)
+      - [Configurare crawler web](best-practices/launch/robots-txt.md)
       - [Proteggere il sito e l&#39;infrastruttura](best-practices/launch/security-best-practices.md)
    - Manutenzione {#maintenance}
       - [Panoramica](best-practices/maintenance/overview.md)
@@ -69,4 +68,4 @@ ht-degree: 14%
       - [Elenco di controllo per l’aggiornamento](best-practices/maintenance/upgrade-checklist.md)
       - [Prerequisiti per l&#39;aggiornamento di MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Glossario](glossary.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
