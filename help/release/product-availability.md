@@ -31,7 +31,7 @@ La tabella seguente mostra il supporto delle versioni per ogni estensione rispet
 
 ## Servizi Commerce
 
-[I servizi Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) sono una suite di funzionalità ospitate da Adobe che forniscono funzionalità affidabili e tempi di risposta rapidi, insieme all&#39;istanza Commerce.
+[I servizi Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=it) sono una suite di funzionalità ospitate da Adobe che forniscono funzionalità affidabili e tempi di risposta rapidi, insieme all&#39;istanza Commerce.
 
 Si consiglia ai commercianti di utilizzare la versione più recente di un servizio per garantire la massima stabilità e funzionalità. La documentazione descrive la versione attualmente rilasciata.
 
