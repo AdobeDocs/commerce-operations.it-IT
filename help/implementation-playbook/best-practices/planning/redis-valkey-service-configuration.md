@@ -8,9 +8,9 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: aedff83fe473691340f0f254e7c79ef7e632ac0d
+source-git-commit: 381d58d5fc9844aca88239e8e7ac39151dfc766c
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '1909'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Utilizza questi consigli per configurare Redis o Valkey per il caching e le sess
 
 >[!NOTE]
 >
->Per gli ambienti dell&#39;infrastruttura Commerce on Cloud, verificare di utilizzare la versione più recente del pacchetto `ece-tools`. In caso contrario, [aggiorna alla versione più recente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=it). È possibile controllare la versione installata nell&#39;ambiente locale utilizzando il comando CLI `composer show magento/ece-tools`.
+>Per gli ambienti dell&#39;infrastruttura Commerce on Cloud, verificare di utilizzare la versione più recente del pacchetto `ece-tools`. In caso contrario, [aggiorna alla versione più recente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). È possibile controllare la versione installata nell&#39;ambiente locale utilizzando il comando CLI `composer show magento/ece-tools`.
 
 ## Configurare la cache L2
 
@@ -48,7 +48,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Per la configurazione dell&#39;ambiente nell&#39;infrastruttura cloud, vedere il riferimento alla configurazione [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=it#redis_backend) nella _Guida all&#39;infrastruttura cloud di Commerce_.
+Per la configurazione dell&#39;ambiente nell&#39;infrastruttura cloud, vedere il riferimento alla configurazione [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) nella _Guida all&#39;infrastruttura cloud di Commerce_.
 
 Per le installazioni locali, vedere [Configure Redis page caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) nella _Guida alla configurazione_.
 
@@ -62,7 +62,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Per la configurazione dell&#39;ambiente nell&#39;infrastruttura cloud, vedere il riferimento alla configurazione [`VALKEY_BACKEND`](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) nella _Guida all&#39;infrastruttura cloud di Commerce_.
+Per la configurazione dell&#39;ambiente nell&#39;infrastruttura cloud, vedere il riferimento alla configurazione [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) nella _Guida all&#39;infrastruttura cloud di Commerce_.
 
 Per le installazioni locali, vedere [Configure Valkey](../../../configuration/cache/config-valkey.md) in _Configuration Guide_.
 
@@ -129,60 +129,6 @@ df -h /dev/shm
 
 L’utilizzo può variare tra i nodi, ma deve convergere in un valore simile.
 
-## Configurare directory personalizzate per la cache L2
-
-Quando si ottimizzano le prestazioni della cache L2, è possibile scegliere di memorizzare i file della cache locale in una directory personalizzata ad alte prestazioni, ad esempio un disco RAM (`/dev/shm/`).
-
-Per garantire la coerenza a livello di applicazione ed evitare la frammentazione dell&#39;archiviazione della cache, configurare sia le opzioni specifiche del back-end L2 che il Registro di sistema della directory globale nel file `app/etc/env.php`.
-
-**Best practice:** Definisci sia `local_backend_options['cache_dir']` che il `directories['cache']['path']` globale.
-
-- **`local_backend_options['cache_dir']`**: indirizza l&#39;adattatore cache back-end (ad esempio, `Cm_Cache_Backend_File`) a memorizzare i file della cache L2 sincronizzati nel percorso specificato.
-- **`directories['cache']['path']`**: aggiorna il Registro di sistema di Adobe Commerce `DirectoryList`, stabilendo il percorso personalizzato come directory definitiva della cache di sistema per l&#39;intera applicazione.
-
-### Impedisci la suddivisione delle directory della cache e errori di segmentazione GlusterFS
-
-Se si definisce il percorso personalizzato esclusivamente in `local_backend_options`, il motore di cache L2 funziona correttamente, ma il Registro di sistema globale dell&#39;applicazione continua a riconoscere `var/cache` come percorso di cache predefinito.
-
-Questa mancata corrispondenza di configurazione determina uno scenario &quot;split-brain&quot; in cui estensioni di terze parti o processi di fallback di base scrivono file temporanei nella directory predefinita `var/cache`.
-
-**Impatto critico su Adobe Commerce Cloud:** Nelle architetture Pro, la directory `var/` è montata su un file system distribuito condiviso. L&#39;imposizione dell&#39;I/O della cache ad alta velocità su questo montaggio di rete sovraccarica il client ed è un trigger primario per **errori di segmentazione GlusterFS e interruzioni a livello di cluster**. La configurazione di entrambe le impostazioni garantisce che tutti gli I/O della cache rimangano rigorosamente sul disco locale ad alte prestazioni.
-
-### Esempio di configurazione
-
-Per applicare un&#39;unica directory cache unificata, aggiornare il file `env.php` in modo da includere entrambe le configurazioni:
-
-```php
-return [
-    // 1. Override the global directory registry
-    'directories' => [
-        'cache' => [
-            'path' => '/dev/shm/magento_cache'
-        ]
-    ],
-    // 2. Configure the L2 cache engine
-    'cache' => [
-        'frontend' => [
-            'default' => [
-                'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
-                'backend_options' => [
-                    'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
-                    'server' => '127.0.0.1',
-                    'port' => '6379',
-                    'database' => '1',
-                    // ... other redis configurations ...
-                    'local_backend' => 'Cm_Cache_Backend_File',
-                    'local_backend_options' => [
-                        'cache_dir' => '/dev/shm/magento_cache' 
-                    ]
-                ]
-            ]
-        ]
-    ],
-    // ...
-];
-```
-
 ## Abilita connessione slave
 
 Abilitare la connessione slave nel file `.magento.env.yaml` per consentire ad Adobe Commerce di utilizzare una connessione cache di sola lettura aggiuntiva per le operazioni di lettura mentre si continua a utilizzare l&#39;endpoint primario per le operazioni di scrittura. Questa configurazione può ridurre il carico di lettura sul servizio di cache principale e distribuire il traffico di lettura in modo più efficace.
@@ -199,7 +145,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Per la configurazione dell&#39;ambiente nell&#39;infrastruttura Commerce Cloud, vedere [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=it#redis_use_slave_connection) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
+Per la configurazione dell&#39;ambiente nell&#39;infrastruttura Commerce Cloud, vedere [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
 
 Per le installazioni Adobe Commerce locali, configurare la nuova implementazione della cache Redis utilizzando i comandi `bin/magento setup`. Vedere [Utilizzare Redis per la cache predefinita](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) nella _Guida alla configurazione_.
 
@@ -213,7 +159,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Per la configurazione dell&#39;ambiente nell&#39;infrastruttura Commerce Cloud, vedere [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=it#valkey_use_slave_connection) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
+Per la configurazione dell&#39;ambiente nell&#39;infrastruttura Commerce Cloud, vedere [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
 
 Per le installazioni locali di Adobe Commerce, configura la nuova implementazione della cache di Valkey utilizzando i comandi `bin/magento setup`. Vedi [Configurazione di Valkey](../../../configuration/cache/config-valkey.md) nella _Guida alla configurazione_.
 
@@ -359,7 +305,7 @@ stage:
 
 >[!NOTE]
 >
->Il tipo di cache `full_page` non è rilevante per i progetti di infrastruttura Adobe Commerce on Cloud perché utilizza [Fastly](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/cdn/fastly).
+>Il tipo di cache `full_page` non è rilevante per i progetti di infrastruttura Adobe Commerce on Cloud perché utilizza [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
 
 Per le installazioni locali, vedere [Opzioni cache non aggiornate](../../../configuration/cache/level-two-cache.md#stale-cache-options) nella _Guida alla configurazione_.
 
@@ -544,7 +490,7 @@ Segui i passaggi seguenti per effettuare il provisioning di un’istanza dedicat
 
 1. Richiedi una nuova istanza Redis dedicata alle sessioni sugli ambienti di produzione e staging.
 
-   Invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#submit-ticket). Includere i file di configurazione `.magento/services.yaml` e `.magento.app.yaml` aggiornati.
+   Invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Includere i file di configurazione `.magento/services.yaml` e `.magento.app.yaml` aggiornati.
 
    Questo aggiornamento non causa tempi di inattività, ma richiede una distribuzione per attivare il nuovo servizio.
 
@@ -619,7 +565,7 @@ Segui i passaggi seguenti per effettuare il provisioning di un’istanza dedicat
 
 1. Richiedi una nuova istanza di Valkey dedicata alle sessioni sugli ambienti di produzione e staging.
 
-   Invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#submit-ticket). Includere i file di configurazione `.magento/services.yaml` e `.magento.app.yaml` aggiornati.
+   Invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Includere i file di configurazione `.magento/services.yaml` e `.magento.app.yaml` aggiornati.
 
    Questo aggiornamento non causa tempi di inattività, ma richiede una distribuzione per attivare il nuovo servizio.
 
@@ -679,7 +625,7 @@ stage:
 
 ## Abilita liberazione asincrona
 
-Per abilitare `lazyfree` su Adobe Commerce nell&#39;infrastruttura cloud, invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#submit-ticket) richiedendo che la seguente configurazione Redis o Valkey venga applicata agli ambienti:
+Per abilitare `lazyfree` su Adobe Commerce nell&#39;infrastruttura cloud, invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) richiedendo che la seguente configurazione Redis o Valkey venga applicata agli ambienti:
 
 ```text
 lazyfree-lazy-eviction yes
@@ -701,7 +647,7 @@ Quando `lazyfree` è abilitato, Redis o Valkey scarica il recupero della memoria
 
 ## Abilita I/O multithread
 
-Per abilitare il threading di I/O Redis su Adobe Commerce nell&#39;infrastruttura cloud, invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#submit-ticket) richiedendo la configurazione del threading di I/O seguente. Questa configurazione può migliorare il throughput scaricando le letture e le scritture del socket e l&#39;analisi dei comandi dal thread principale, al costo di un maggiore utilizzo di CPU. Convalida sotto carico e monitora gli host.
+Per abilitare il threading di I/O Redis su Adobe Commerce nell&#39;infrastruttura cloud, invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) richiedendo la configurazione del threading di I/O seguente. Questa configurazione può migliorare il throughput scaricando le letture e le scritture del socket e l&#39;analisi dei comandi dal thread principale, al costo di un maggiore utilizzo di CPU. Convalida sotto carico e monitora gli host.
 
 >[!BEGINTABS]
 
