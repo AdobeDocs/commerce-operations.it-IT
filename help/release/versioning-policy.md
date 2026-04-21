@@ -2,9 +2,9 @@
 title: Criterio di rilascio
 description: Scopri i diversi tipi di versioni di Adobe Commerce.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: bf7049ad5b805397f823e7e4cb430e9ecca5965e
+source-git-commit: ef1f4b3199e7e1daa670e537b97175f58327aa12
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ I rilasci di Beta possono contenere difetti e vengono forniti &quot;COSÌ COME S
 
 ## Hotfix
 
-Gli hotfix sono patch che contengono problemi di sicurezza ad alto impatto o correzioni di qualità, come le correzioni a vulnerabilità pari a zero giorni, che interessano molti commercianti. Adobe rilascia gli hotfix (in base alle esigenze) per le versioni di Adobe Commerce supportate quando sono interessate da problemi critici di sicurezza o qualità. Gli hotfix vengono pubblicati nella [sezione Problemi noti](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) della Knowledge Base. Queste correzioni sono incluse nella prossima versione pianificata della patch.
+Gli hotfix sono patch che contengono problemi di sicurezza ad alto impatto o correzioni di qualità, come le correzioni a vulnerabilità pari a zero giorni, che interessano molti commercianti. Adobe rilascia gli hotfix (in base alle esigenze) per le versioni di Adobe Commerce supportate quando sono interessate da problemi critici di sicurezza o qualità. Gli hotfix vengono distribuiti tramite [Strumento Patch di qualità](../tools/quality-patches-tool/usage.md). Queste correzioni sono incluse nella prossima versione pianificata della patch.
 
 >[!NOTE]
 >
@@ -71,20 +71,14 @@ Gli hotfix sono patch che contengono problemi di sicurezza ad alto impatto o cor
 
 ## Singola patch
 
-Le singole patch contengono correzioni di qualità a basso impatto per un problema specifico. Queste correzioni vengono applicate alle versioni secondarie supportate di Adobe Commerce. Adobe rilascia singole patch in base alle esigenze per Adobe Commerce in conformità con [Criteri del ciclo di vita del software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+Le singole patch contengono correzioni di qualità a basso impatto per un problema specifico. Queste correzioni vengono applicate alle versioni secondarie supportate di Adobe Commerce. Adobe rilascia singole patch in base alle esigenze per Adobe Commerce in conformità con [Criteri del ciclo di vita del software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Vengono consegnati tramite lo strumento [Patch di qualità](../tools/quality-patches-tool/usage.md).
 
 >[!NOTE]
 >
 >Le singole patch non contengono modifiche non compatibili con le versioni precedenti.
 
-## Correzioni di sicurezza isolate
-
-Le patch isolate sono correzioni di sicurezza non cumulative rilasciate indipendentemente da una patch di sicurezza completa per consentire un’implementazione più rapida. Ogni correzione di sicurezza isolata risolve un problema di sicurezza specifico ed è inclusa nella patch di sicurezza completa più recente o in arrivo. I dettagli sul problema sono forniti nel relativo bollettino sulla sicurezza, che rimanda a un articolo della Knowledge Base (KB) contenente i dettagli della correzione, le modalità di applicazione della correzione e informazioni aggiuntive.
-
-Per trovare gli ultimi aggiornamenti per la sicurezza disponibili per Adobe Commerce, visita il [Centro sicurezza PC](https://helpx.adobe.com/it/security/products/magento.html).
-
 ## Patch personalizzata
 
-Creato da personale non Adobe per risolvere un problema o modificare il codice Adobe Commerce per vari motivi. Le patch personalizzate vengono distribuite tramite lo strumento [Patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/usage).
+Creato da personale non Adobe per risolvere un problema o modificare il codice Adobe Commerce per vari motivi.
 
 <!-- Last updated from includes: 2025-10-09 22:53:22 -->

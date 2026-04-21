@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4a2266f2df235b98ed3b738af4b97cb4b74dc664
+source-git-commit: 52c330f62d722a4cae7f7f360ca61eca0f04b961
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,17 @@ Le versioni delle patch di sicurezza possono includere anche le modifiche relati
 
 Ogni versione di patch di sicurezza si basa sulla versione completa precedente della patch. Contiene le correzioni di qualità e sicurezza della versione patch precedente e le correzioni di sicurezza create tra la versione patch completa precedente e la versione patch di sicurezza.
 
-Per istruzioni su come scaricare e applicare le patch di sicurezza, vedere [Come ottenere e applicare le patch di sicurezza](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) nella _Adobe Commerce Knowledgebase_.
+Per istruzioni su come scaricare e applicare le patch di sicurezza, vedere [Come ottenere e applicare le patch di sicurezza](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) nella _Adobe Commerce Knowledgebase_.
 
 >[!NOTE]
 >
->Le patch di sicurezza per il supporto esteso per le versioni 2.4.4 e 2.4.5 sono disponibili solo per i clienti Adobe Commerce e non per la base di codice Magento Open Source. Consulta [Supporto esteso](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+>Le patch di sicurezza per il supporto esteso sono disponibili solo per i clienti Adobe Commerce e non per la base di codice Magento Open Source. Consulta [Supporto esteso](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+
+## File patch di sicurezza isolato
+
+I file di patch di sicurezza isolati sono file di patch indipendenti e non cumulativi che includono correzioni per una o più vulnerabilità di sicurezza, senza ulteriori aggiornamenti delle funzioni o modifiche non di sicurezza. Queste patch vengono rilasciate in modo indipendente per consentire una correzione più rapida e vengono incorporate nella successiva patch di sicurezza completa. I dettagli sulle vulnerabilità sono forniti nel bollettino sulla sicurezza associato, che si collega a un articolo della Knowledge Base (KB) con istruzioni per l’applicazione della patch e informazioni aggiuntive.
+
+Per applicare un file di patch di sicurezza isolato, i clienti devono utilizzare l&#39;ultima versione di patch di sicurezza (l&#39;ultima versione -p) per la propria riga di rilascio supportata, in quanto i file di patch di sicurezza isolati vengono testati esclusivamente in base a tale versione.
+
+Per trovare gli ultimi aggiornamenti per la sicurezza disponibili per Adobe Commerce, visita il [Centro sicurezza PC](https://helpx.adobe.com/security/products/magento.html).
+
