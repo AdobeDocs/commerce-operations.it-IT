@@ -17,11 +17,11 @@ Le versioni delle patch di sicurezza possono includere anche le modifiche relati
 
 Ogni versione di patch di sicurezza si basa sulla versione completa precedente della patch. Contiene le correzioni di qualità e sicurezza della versione patch precedente e le correzioni di sicurezza create tra la versione patch completa precedente e la versione patch di sicurezza.
 
-Per istruzioni su come scaricare e applicare le patch di sicurezza, vedere [Come ottenere e applicare le patch di sicurezza](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) nella _Adobe Commerce Knowledgebase_.
+Per istruzioni su come scaricare e applicare le patch di sicurezza, vedere [Come ottenere e applicare le patch di sicurezza](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) nella _Adobe Commerce Knowledgebase_.
 
 >[!NOTE]
 >
->Le patch di sicurezza per il supporto esteso sono disponibili solo per i clienti Adobe Commerce e non per la base di codice Magento Open Source. Consulta [Supporto esteso](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+>Le patch di sicurezza per il supporto esteso sono disponibili solo per i clienti Adobe Commerce e non per la base di codice Magento Open Source. Consulta [Supporto esteso](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
 
 ## File patch di sicurezza isolato
 
@@ -29,5 +29,5 @@ I file di patch di sicurezza isolati sono file di patch indipendenti e non cumul
 
 Per applicare un file di patch di sicurezza isolato, i clienti devono utilizzare l&#39;ultima versione di patch di sicurezza (l&#39;ultima versione -p) per la propria riga di rilascio supportata, in quanto i file di patch di sicurezza isolati vengono testati esclusivamente in base a tale versione.
 
-Per trovare gli ultimi aggiornamenti per la sicurezza disponibili per Adobe Commerce, visita il [Centro sicurezza PC](https://helpx.adobe.com/security/products/magento.html).
+Per trovare gli ultimi aggiornamenti per la sicurezza disponibili per Adobe Commerce, visita il [Centro sicurezza PC](https://helpx.adobe.com/it/security/products/magento.html).
 
