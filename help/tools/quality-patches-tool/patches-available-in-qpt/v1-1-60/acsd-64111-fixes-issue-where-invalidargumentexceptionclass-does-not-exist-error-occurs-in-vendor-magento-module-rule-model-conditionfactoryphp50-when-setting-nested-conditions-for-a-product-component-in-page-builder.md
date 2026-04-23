@@ -1,63 +1,69 @@
 ---
-title: 'ACSD-64111: Fixes the *InvalidArgumentException: Class does not exist* error when setting nested conditions for a Product component in [!DNL Page Builder]'
+title: 'ACSD-64111: corregge l''errore *InvalidArgumentException: Class does not exist* durante l''impostazione di condizioni nidificate per un componente Product in [!DNL Page Builder]'
 feature: Products, Page Builder
 role: Admin, Developer
 exl-id: dc39c65b-fb78-4105-b0e8-92a78b49adaf
 type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 0%
+
 ---
-# ACSD-64111: Fixes the *InvalidArgumentException: Class does not exist* error when setting nested conditions for a Product component in [!DNL Page Builder]
 
-The ACSD-64111 patch fixes the issue where *InvalidArgumentException: Class does not exist* error occurs in `vendor/magento/module-rule/Model/ConditionFactory.php:50` when setting nested conditions for a Product component in [!DNL Page Builder]. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 is installed. The patch ID is ACSD-64111. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+# ACSD-64111: corregge l&#39;errore *InvalidArgumentException: La classe non esiste* durante l&#39;impostazione delle condizioni nidificate per un componente prodotto in [!DNL Page Builder]
 
-## Affected products and versions
+La patch ACSD-64111 risolve il problema in cui *InvalidArgumentException: la classe non esiste* si verifica in `vendor/magento/module-rule/Model/ConditionFactory.php:50` quando si impostano condizioni nidificate per un componente prodotto in [!DNL Page Builder]. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60. L’ID della patch è ACSD-64111. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.
 
-**The patch is created for Adobe Commerce version:**
+## Prodotti e versioni interessati
 
-* Adobe Commerce (all deployment methods)  2.4.6-p8
+**La patch è stata creata per la versione di Adobe Commerce:**
 
-**Compatible with Adobe Commerce versions:**
+* Adobe Commerce (tutti i metodi di distribuzione)  2.4.6-p8
 
-* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p4
+**Compatibile con le versioni di Adobe Commerce:**
+
+* Adobe Commerce (tutti i metodi di implementazione) 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
->The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Use the patch ID as a search keyword to locate the patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
-## Issue
+## Problema
 
-An error *InvalidArgumentException: Class does not exist in /app/<project id\>/vendor/magento/module-rule/Model/ConditionFactory.php* is thrown when adding a *[!UICONTROL Conditions Combination]* in [!DNL Page Builder] Products widget condition.
+Errore *InvalidArgumentException: la classe non esiste in /app/&lt;project id\>/vendor/magento/module-rule/Model/ConditionFactory.php* viene generata quando si aggiunge un *[!UICONTROL Conditions Combination]* nella condizione [!DNL Page Builder] del widget Prodotti.
 
-<u>Steps to reproduce</u>:
+<u>Passaggi da riprodurre</u>:
 
-1. Log in to the Adobe Commerce admin.
-1. Go to **[!UICONTROL Content]** > *[!UICONTROL Elements]* > **[!UICONTROL Pages]**.
-1. Add a new page (or edit an existing page).
-1. Expand the **[!UICONTROL Content]** section and click **[!UICONTROL Edit with Page Builder]**.
-1. Add a new row and then the **[!UICONTROL Products]** widget.
-1. Configure the **[!UICONTROL Products]** widget.
-1. Select the **[!UICONTROL Condition]** under **[!UICONTROL Select Products By]**.
-1. Add a new condition and select **[!UICONTROL Conditions Combination]** from the dropdown.
+1. Accedi all’amministratore di Adobe Commerce.
+1. Vai a **[!UICONTROL Content]** > *[!UICONTROL Elements]* > **[!UICONTROL Pages]**.
+1. Aggiungere una nuova pagina o modificare una pagina esistente.
+1. Espandere la sezione **[!UICONTROL Content]** e fare clic su **[!UICONTROL Edit with Page Builder]**.
+1. Aggiungere una nuova riga e quindi il widget **[!UICONTROL Products]**.
+1. Configurare il widget **[!UICONTROL Products]**.
+1. Selezionare **[!UICONTROL Condition]** in **[!UICONTROL Select Products By]**.
+1. Aggiungi una nuova condizione e seleziona **[!UICONTROL Conditions Combination]** dal menu a discesa.
 
-<u>Expected results</u>:
+<u>Risultati previsti</u>:
 
-No errors in logs.
+Nessun errore nei registri.
 
-<u>Actual results</u>:
+<u>Risultati effettivi</u>:
 
-The below exception is recorded in the logs:
+Nei registri viene registrata la seguente eccezione:
 
-*report.CRITICAL: InvalidArgumentException: Class does not exist in vendor/magento/module-rule/Model/ConditionFactory.php:50*
+*report.CRITICAL: InvalidArgumentException: la classe non esiste in vendor/magento/module-rule/Model/ConditionFactory.php:50*
 
-## Apply the patch
+## Applicare la patch
 
-To apply individual patches, use the following links depending on your deployment method:
+Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 
-## Related reading
+## Lettura correlata
 
-To learn more about [!DNL Quality Patches Tool], refer to:
+Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
-* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
+* [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.
