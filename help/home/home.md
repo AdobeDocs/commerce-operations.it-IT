@@ -1,11 +1,11 @@
 ---
-title: Home Guide operative
-description: Scopri l’amministrazione e i concetti operativi dei sistemi Adobe Commerce. Consulta le guide complete per la pianificazione, la configurazione e la manutenzione dell’implementazione di Commerce.
+title: Operational Guides Home
+description: Scopri l’amministrazione e i concetti operativi dei sistemi Adobe Commerce. Browse comprehensive guides for planning, configuring, and maintaining your Commerce deployment.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: d4759f2394d55d115e5da80c271152ee621a2683
+source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 7%
+source-wordcount: '173'
+ht-degree: 6%
 
 ---
 
@@ -42,7 +42,7 @@ Utilizza questa raccolta di guide per scoprire concetti, processi, strumenti e b
     </a>
     <div>
       <a href="../security-and-compliance/overview.md"><strong>Sicurezza e conformità</strong></a>
-      <p>Scopri in che modo i commercianti di Adobe Commerce sono responsabili della gestione di un ambiente sicuro.</p>
+      <p>Learn how Adobe Commerce merchants are responsible for maintaining a secure environment.</p>
     </div>
   </td>
     <td valign="top">
@@ -51,7 +51,7 @@ Utilizza questa raccolta di guide per scoprire concetti, processi, strumenti e b
     </a>
     <div>
       <a href="../performance/overview.md"><strong>Best practice per le prestazioni</strong></a>
-      <p>Utilizza questi consigli per ottimizzare le prestazioni della tua implementazione di Adobe Commerce.</p>
+      <p>Use these recommendations to optimize the performance of your Adobe Commerce deployment.</p>
     </div>
   </td>
 </tr>
@@ -102,4 +102,4 @@ Utilizza questa raccolta di guide per scoprire concetti, processi, strumenti e b
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-04-03 22:13:36 -->
+<!-- Last updated from includes: 2026-04-24 20:40:38 -->

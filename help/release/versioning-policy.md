@@ -2,9 +2,9 @@
 title: Criterio di rilascio
 description: Scopri i diversi tipi di versioni di Adobe Commerce.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: ef1f4b3199e7e1daa670e537b97175f58327aa12
+source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -81,4 +81,4 @@ Le singole patch contengono correzioni di qualità a basso impatto per un proble
 
 Creato da personale non Adobe per risolvere un problema o modificare il codice Adobe Commerce per vari motivi.
 
-<!-- Last updated from includes: 2025-10-09 22:53:22 -->
+<!-- Last updated from includes: 2026-04-20 10:12:04 -->
