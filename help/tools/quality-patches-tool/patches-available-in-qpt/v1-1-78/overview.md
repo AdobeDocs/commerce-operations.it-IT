@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0494717c06fcabcb093a2b168ae714f773ed6f7b
+source-git-commit: f0aa5266d54a205cba36d9015fe9ed5dca50b599
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ QPT v1.1.78 include le seguenti patch:
 1. **ACP2E-4528**: è stato risolto il problema relativo alla convalida della città negli indirizzi dei clienti, che ora consente l&#39;utilizzo del carattere barra (/) e rifiuta i caratteri non validi come !, &quot;, # e ?.
 1. **ACP2E-4535**: è stato risolto un problema che causava l&#39;eliminazione o la rigenerazione della sessione (modifiche PHPSESSID) e l&#39;eliminazione del carrello guest.
 1. **ACP2E-4540**: è stato risolto il problema che impediva il caricamento corretto della libreria Fotorama, rendendo visibile solo la prima immagine allegata.
-1. **ACP2E-4555**: è stato risolto il problema relativo ai numeri di telefono moderni contenenti &quot;.&quot; o &quot;/&quot; non sono convalidati correttamente.
+1. **[ACP2E-4555](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555.md)**: è stato risolto il problema relativo ai numeri di telefono moderni contenenti &quot;.&quot; o &quot;/&quot; non sono convalidati correttamente.
 1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)**: è stato risolto il problema per cui la query GraphQL della società restituisce &quot;Il cliente corrente non è autorizzato&quot; quando viene utilizzata l&#39;intestazione X-Adobe-Company.
 1. **ACP2E-4591**: è stato risolto il problema che impediva l&#39;aggiornamento dei segmenti cliente basati sul conteggio degli ordini, ad esempio &quot;Acquirenti nuovi&quot;, quando venivano effettuati gli ordini tramite l&#39;API REST.
 1. **ACP2E-4609**: è stato risolto il problema che impediva la visualizzazione di virgolette nella pagina Le mie virgolette quando alcune virgolette contengono prodotti eliminati.
