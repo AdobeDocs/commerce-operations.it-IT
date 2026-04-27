@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 5d52a3d956054c1d4cb8922f0cfd26ae600c4b8d
+source-git-commit: cc3bd15a0c11762812e4e51e4c01bfa64756421a
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -24,7 +24,7 @@ QPT v1.1.78 include le seguenti patch:
 1. **ACP2E-4456**: è stato corretto un problema a causa del quale l&#39;annullamento di un ordine tramite una mutazione GraphQL non comporta la transizione di un ordine pagato interamente con gift card allo stato Chiuso.
 1. **ACP2E-4507**: è stato risolto il problema che impediva l&#39;applicazione della configurazione delle opzioni password per le richieste di reimpostazione della password dei clienti effettuate tramite mutazioni GraphQL.
 1. **ACP2E-4513**: è stato risolto il problema che impediva l&#39;eliminazione dal sistema delle immagini CAPTCHA scadute.
-1. **ACP2E-4522**: è stato risolto il problema relativo a un errore di chiave duplicata intermittente nella tabella quote_coupons quando vengono eseguite contemporaneamente più richieste di unione carrello o salvataggio preventivo.
+1. **[ACP2E-4522](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522.md)**: è stato risolto il problema relativo a un errore di chiave duplicata intermittente nella tabella quote_coupons quando vengono eseguite contemporaneamente più richieste di unione carrello o salvataggio preventivo.
 1. **ACP2E-4528**: è stato risolto il problema relativo alla convalida della città negli indirizzi dei clienti, che ora consente l&#39;utilizzo del carattere barra (/) e rifiuta i caratteri non validi come !, &quot;, # e ?.
 1. **ACP2E-4535**: è stato risolto un problema che causava l&#39;eliminazione o la rigenerazione della sessione (modifiche PHPSESSID) e l&#39;eliminazione del carrello guest.
 1. **ACP2E-4540**: è stato risolto il problema che impediva il caricamento corretto della libreria Fotorama, rendendo visibile solo la prima immagine allegata.
