@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3e003e0cf2428a5e6ec45292fa19aaa2b9e9324d
+source-git-commit: 5d52a3d956054c1d4cb8922f0cfd26ae600c4b8d
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 
 QPT v1.1.78 include le seguenti patch:
 1. **ACP2E-4416**: è stato risolto il problema che impediva l&#39;inizializzazione dei punti premio cliente creati nell&#39;amministratore.
-1. **ACP2E-4419**: è stato risolto il problema che impediva l&#39;applicazione corretta delle gift card al momento del pagamento dopo la convalida reCAPTCHA v2 (&#39;I am not a robot&#39;) nella vetrina.
+1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)**: è stato risolto il problema che impediva l&#39;applicazione corretta delle gift card al momento del pagamento dopo la convalida reCAPTCHA v2 (&#39;I am not a robot&#39;) nella vetrina.
 1. **ACP2E-4431**: è stato risolto il problema che causava l&#39;eliminazione dei prodotti correlati corrispondenti alle regole di destinazione durante il processo di reindicizzazione.
 1. **ACP2E-4448**: è stato risolto il problema che impediva la visualizzazione delle modifiche apportate alla configurazione durante le interruzioni di Redis dopo il ripristino di Redis, causando la persistenza di valori non aggiornati.
 1. **ACP2E-4452**: è stato risolto il problema che determinava l&#39;inclusione dell&#39;imposta nei prezzi dei prodotti nella pagina Ordine rapido indipendentemente dalla configurazione della visualizzazione delle imposte.
