@@ -2,9 +2,9 @@
 title: Regole sul ciclo di vita del software
 description: Scopri le date chiave per la fine del supporto software per le versioni di Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 3e7cef954a2be506c6f72e704710d16ed1d9b7a3
+source-git-commit: 3bf3c4261073ab649376bb5c7fb84ea591a09869
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '949'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ Per semplificare la politica sul ciclo di vita di Adobe Commerce e supportare le
 
 Durante il periodo di assistenza triennale, il cliente ha accesso a:
 
-- **Correzioni di qualità**-I clienti possono accedere alle correzioni di qualità contattando [il supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) o tramite [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) self-service. La tabella seguente descrive le date di fine del supporto software per le righe della versione di Adobe Commerce.
+- **Correzioni di qualità**-I clienti possono accedere alle correzioni di qualità contattando [il supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) o tramite [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) self-service. La tabella seguente descrive le date di fine del supporto software per le righe della versione di Adobe Commerce.
 
 - **Correzioni di sicurezza**-Adobe fornisce correzioni di sicurezza tramite patch di sicurezza cumulative e [file di patch di sicurezza isolati](versioning-policy.md#isolated-security-fixes) non cumulativi per il periodo di supporto di tre anni.
 
@@ -36,8 +36,8 @@ Adobe incoraggia i clienti ad effettuare l’aggiornamento il prima possibile. T
 
 | Versione | Disponibilità generale | Fine del supporto regolare<sup>1</sup> | Fine del supporto esteso |
 |----------------------|----------------------|------------------------------------|-------------------------|
-| Adobe Commerce 2.4.8 | 8 aprile 2025 | 31 maggio 2028 | Da definire |
-| Adobe Commerce 2.4.7 | 9 aprile 2024 | 31 maggio 2027 | Da definire |
+| Adobe Commerce 2.4.8 | 8 aprile 2025 | 31 maggio 2028 | TBD |
+| Adobe Commerce 2.4.7 | 9 aprile 2024 | 31 maggio 2027 | TBD |
 | Adobe Commerce 2.4.6 | 14 marzo 2023 | 11 agosto 2026 | 30 agosto 2027 |
 | Adobe Commerce 2.4.5 | 9 agosto 2022 | 12 agosto 2025 | 11 agosto 2026 |
 | Adobe Commerce 2.4.4 | 12 aprile 2022 | 12 aprile 2025 | 14 aprile 2026 |
@@ -49,6 +49,10 @@ Adobe incoraggia i clienti ad effettuare l’aggiornamento il prima possibile. T
 >- <sup>1</sup> Se sei un cliente di Adobe Commerce, puoi continuare a ricevere correzioni di sicurezza e qualità per un altro anno durante il periodo di supporto esteso.
 >- Consulta [Criteri del ciclo di vita software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
+>[!IMPORTANT]
+>
+>La conformità PCI non può essere garantita per i commercianti che eseguono la versione 2.4.6 che continuano a utilizzare PHP 8.1, che ha raggiunto la [fine del supporto nel 2025](https://www.php.net/eol.php). Analogamente, PHP 8.2 raggiunge la [fine del ciclo di vita alla fine del 2026](https://www.php.net/supported-versions.php), creando lo stesso rischio di conformità PCI per gli esercenti che continuano a utilizzarlo nel 2027.
+
 ## Provisioning di ulteriori correzioni di sicurezza per Adobe Commerce 2.4.4 e 2.4.5
 
 Come eccezione una tantum, Adobe fornisce un periodo esteso di provisioning delle correzioni di sicurezza per Adobe Commerce versioni 2.4.4 e 2.4.5 per dare ai clienti più tempo per migrare ad Adobe Commerce as a Cloud Service o effettuare l’aggiornamento a una linea di rilascio supportata.
@@ -59,11 +63,11 @@ Durante questo periodo di provisioning delle correzioni di sicurezza, tieni pres
 
   Per applicare un file di patch di sicurezza isolato, i clienti devono utilizzare l’ultima versione della patch di sicurezza (l’ultima versione -p) per la propria riga di rilascio supportata, in quanto le correzioni di sicurezza isolate vengono testate esclusivamente in base a tale versione.
 
-- **Nessuna correzione di qualità o assistenza tecnica**-Durante questo periodo non verranno fornite correzioni di bug, aggiornamenti di qualità ([Strumento Patch di qualità](../tools/quality-patches-tool/usage.md)) o assistenza tecnica ([Supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) per le versioni 2.4.4 o 2.4.5.
+- **Nessuna correzione di qualità o assistenza tecnica**-Durante questo periodo non verranno fornite correzioni di bug, aggiornamenti di qualità ([Strumento Patch di qualità](../tools/quality-patches-tool/usage.md)) o assistenza tecnica ([Supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) per le versioni 2.4.4 o 2.4.5.
 
 - **La conformità PCI non è garantita:**-Poiché le versioni 2.4.4 e 2.4.5 utilizzano PHP che hanno raggiunto la fine del ciclo di vita, la conformità PCI non può essere garantita per gli esercenti su tali versioni. Continuare a eseguire queste versioni può mettere a rischio la conformità PCI.
 
-Per mantenere una copertura di sicurezza completa e garantire la conformità PCI, i clienti devono effettuare l&#39;aggiornamento a una versione attualmente supportata di Adobe Commerce il prima possibile o migrare a [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/it/docs/commerce/cloud-service/overview).
+Per mantenere una copertura di sicurezza completa e garantire la conformità PCI, i clienti devono effettuare l&#39;aggiornamento a una versione attualmente supportata di Adobe Commerce il prima possibile o migrare a [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview).
 
 | Versione | Disponibilità generale | Fine del supporto esteso | Fine del provisioning delle correzioni di sicurezza |
 |----------------------|----------------------|-------------------------|------------------------------------|
@@ -127,7 +131,7 @@ Le mappe della timeline di supporto supportano i periodi trimestre per trimestre
     <td>Q4</td>
   </tr>
   <tr>
-    <td>2.4.4.</td>
+    <td>2.4.4</td>
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
@@ -135,7 +139,7 @@ Le mappe della timeline di supporto supportano i periodi trimestre per trimestre
     <td colspan="10"></td>
   </tr>
   <tr>
-    <td>2.4.5.</td>
+    <td>2.4.5</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
@@ -143,20 +147,20 @@ Le mappe della timeline di supporto supportano i periodi trimestre per trimestre
     <td colspan="9"></td>
   </tr>
   <tr>
-    <td>2.4.6.</td>
+    <td>2.4.6</td>
     <td colspan="4"></td>
     <td colspan="15" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
     <td colspan="10"></td>
   </tr>
   <tr>
-    <td>2.4.7.</td>
+    <td>2.4.7</td>
     <td colspan="9"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="6"></td>
   </tr>
   <tr>
-    <td>2.4.8.</td>
+    <td>2.4.8</td>
     <td colspan="13"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
