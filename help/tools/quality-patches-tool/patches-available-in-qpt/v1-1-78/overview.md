@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 23d9c45da4c30f3ae80e9668fa49a085ac2f3df2
+source-git-commit: e0111754306fc220ba7eacf3590b70bcc048f34f
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -38,7 +38,7 @@ QPT v1.1.78 include le seguenti patch:
 1. **[ACP2E-4609](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609.md)**: è stato risolto il problema che impediva la visualizzazione di virgolette nella pagina Le mie virgolette quando alcune virgolette contengono prodotti eliminati.
 1. **ACP2E-4591**: è stato risolto il problema che impediva l&#39;aggiornamento dei segmenti cliente basati sul conteggio degli ordini, ad esempio &quot;Acquirenti nuovi&quot;, quando venivano effettuati gli ordini tramite l&#39;API REST.
 1. **ACP2E-4609**: è stato risolto il problema che impediva la visualizzazione di virgolette nella pagina Le mie virgolette quando alcune virgolette contengono prodotti eliminati.
-1. **ACP2E-4613**: è stato risolto il problema relativo alle strutture di directory multimediali di grandi dimensioni, che causava risposte lente e tempi di caricamento estesi della struttura di directory di Media Gallery.
+1. **[ACP2E-4613](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)**: è stato risolto il problema relativo alle strutture di directory multimediali di grandi dimensioni che causavano risposte di recupero lente, con tempi di caricamento estesi per la struttura di directory **[!UICONTROL Media Gallery]**.
 1. **ACP2E-4628**: è stato corretto il problema per cui l&#39;importazione di clienti con indirizzi e-mail in maiuscolo causava l&#39;errore di chiave di matrice non definita quando Condivisione account era impostato su Globale.
 1. **ACP2E-4665**: è stato corretto il problema per cui i prodotti secondari di prodotti configurabili contenenti video nelle raccolte prodotti non sono elencati quando richiesto tramite API REST.
 1. **ACP2E-4732**: è stato risolto un problema che causava l&#39;interruzione dell&#39;indicizzazione parziale per i clienti con un numero elevato di aggiornamenti quando la colonna version_id nella tabella changelog raggiungeva il valore massimo.
