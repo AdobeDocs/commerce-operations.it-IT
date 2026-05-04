@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f78520918618a750cdca062a0543eb4821dfc525
+source-git-commit: 371cca36da675d8b9ad8e7b0281e48a3067073e2
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 0%
 Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in [!DNL Quality Patches Tool] (QPT) v1.1.78.
 
 QPT v1.1.78 include le seguenti patch:
+1. **ACP2E-4416**: è stato risolto il problema che impediva l&#39;inizializzazione dei punti premio cliente creati nell&#39;amministratore.
+1. **ACP2E-4419**: è stato risolto il problema che impediva l&#39;applicazione corretta delle gift card al momento del pagamento dopo la convalida reCAPTCHA v2 (&#39;I am not a robot&#39;) nella vetrina.
+1. **ACP2E-4431**: è stato risolto il problema che causava l&#39;eliminazione dei prodotti correlati corrispondenti alle regole di destinazione durante il processo di reindicizzazione.
+1. **[ACP2E-4448](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448.md)**: è stato risolto il problema che impediva la visualizzazione delle modifiche apportate alla configurazione durante le interruzioni di Redis dopo il ripristino di Redis, causando la persistenza di valori non aggiornati.
 1. **[ACP2E-4416](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416.md)**: è stato risolto il problema che impediva l&#39;inizializzazione dei punti premio cliente creati nell&#39;amministratore.
 1. **[ACP2E-4431](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431.md)**: è stato risolto il problema per cui [!UICONTROL Related Products] corrispondenti alle regole di destinazione vengono eliminati durante il processo di reindicizzazione.
 1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)**: è stato risolto il problema che impediva l&#39;applicazione corretta delle gift card al momento del pagamento dopo la convalida reCAPTCHA v2 (&#39;I am not a robot&#39;) nella vetrina.
