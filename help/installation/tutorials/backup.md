@@ -23,7 +23,7 @@ Dopo il backup, puoi [eseguire il rollback](#rollback) in un secondo momento.
 
 >[!TIP]
 >
->Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Snapshot e gestione backup](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) nella _Guida cloud_.
+>Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Snapshot e gestione backup](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) nella _Guida cloud_.
 
 ## Abilita backup
 

@@ -21,7 +21,7 @@ Questa libreria fornisce un set di funzioni per creare richieste di dati sulla p
 
 >[!NOTE]
 >
->Se la modalità di restrizione dei cookie [è abilitata](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html), Commerce non raccoglie i dati comportamentali fino al consenso dell&#39;acquirente. Se la modalità di restrizione dei cookie [!UICONTROL **Modalità**] è disabilitata, Commerce raccoglie i dati comportamentali per impostazione predefinita.
+>Se la modalità di restrizione dei cookie [è abilitata](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=it), Commerce non raccoglie i dati comportamentali fino al consenso dell&#39;acquirente. Se la modalità di restrizione dei cookie [!UICONTROL **Modalità**] è disabilitata, Commerce raccoglie i dati comportamentali per impostazione predefinita.
 
 ## Installazione
 
