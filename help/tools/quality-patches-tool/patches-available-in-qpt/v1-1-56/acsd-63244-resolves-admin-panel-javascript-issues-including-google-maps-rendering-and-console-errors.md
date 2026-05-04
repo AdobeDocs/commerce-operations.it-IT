@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-63244: risoluzione dei problemi di JavaScript del pannello di amministrazione, inclusi  [!DNL Google Maps]  errori di rendering e console'
-description: La patch ACSD-63244 risolve i diversi problemi di JavaScript nel pannello di amministrazione, inclusi i problemi con il rendering di  [!DNL Google Maps] e gli errori ricorrenti di 'TipoErrore non rilevato questo._each non è una funzione` nella console del browser.
+description: La patch ACSD-63244 risolve i diversi problemi di JavaScript nel pannello di amministrazione, inclusi i problemi con il rendering di  [!DNL Google Maps] e gli errori ricorrenti di 'TipoErrore non rilevato questo._each non è una funzione&grave; nella console del browser.
 feature: Admin Workspace
 role: Admin, Developer
 exl-id: 1985c845-219e-4af4-8f70-62dd57722494

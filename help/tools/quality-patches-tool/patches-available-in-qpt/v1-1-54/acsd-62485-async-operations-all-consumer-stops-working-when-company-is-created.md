@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-62485: `async.operations.all` il consumatore smette di funzionare quando l’azienda viene creata'
+title: 'ACSD-62485: &grave;async.operations.all&grave; il consumatore smette di funzionare quando l’azienda viene creata'
 description: Applica la patch ACSD-62485 per risolvere il problema di Adobe Commerce, in cui il consumatore "async.operations.all" smette di funzionare durante la creazione di un’azienda B2B.
 feature: B2B, Companies
 role: Admin, Developer
