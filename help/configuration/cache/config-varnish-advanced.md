@@ -3,9 +3,9 @@ title: Configurazione vernice avanzata
 description: Scopri come configurare le funzioni avanzate di vernice per Adobe Commerce, inclusi i controlli di integrità, le modalità grazia e santo. Scopri le tecniche di ottimizzazione VCL.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ In alternativa, il controllo delle versioni dei file statici può essere disatti
 
 Infine, tutte le istanze di Commerce devono essere in modalità di produzione. Prima dell&#39;avvio di Vernice, cancellare la cache su ogni istanza. In Amministrazione, vai a **Sistema** > Strumenti > **Gestione cache** e fai clic su **Svuota cache Magento**. Per cancellare la cache, puoi anche eseguire il seguente comando:
 
-```bash
+```shell
 bin/magento cache:flush
 ```
 
@@ -92,7 +92,7 @@ Dopo la ricompilazione, è possibile installare il modulo modalità Saint. In ge
 1. Ottieni il codice sorgente da [moduli vernice](https://github.com/varnish/varnish-modules). Clona la versione Git (versione master) poiché le versioni 0.9.x contengono un errore del codice sorgente.
 1. Crea il codice sorgente con gli strumenti automatici:
 
-   ```bash
+   ```shell
    sudo apt-get install libvarnishapi-dev || sudo yum install varnish-libs-devel
    ./bootstrap   # If running from git.
    ./configure

@@ -2,9 +2,9 @@
 title: Software opzionale
 description: Ulteriori informazioni sui software opzionali che è possibile installare per supportare le installazioni locali di Adobe Commerce.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Se distribuisci Adobe Commerce su più host, NTP è un modo semplice per garanti
 
 Immettere il comando seguente per installare NTP:
 
-```bash
+```shell
 apt-get install ntp
 ```
 
@@ -37,7 +37,7 @@ Per installare e configurare NTP:
 
 1. Immettere il seguente comando per trovare il software NTP appropriato:
 
-   ```bash
+   ```shell
    yum search ntp
    ```
 
@@ -45,13 +45,13 @@ Per installare e configurare NTP:
 
 1. Installa il pacchetto.
 
-   ```bash
+   ```shell
    yum -y install ntp.x86_64
    ```
 
 1. Immettere il comando seguente in modo che NTP venga avviato all&#39;avvio del server.
 
-   ```bash
+   ```shell
    chkconfig ntpd on
    ```
 
@@ -126,9 +126,9 @@ Se viene visualizzato un errore 404 (Non trovato), verificare quanto segue:
 * Avvia il server web, se necessario.
 * Verificare che il firewall consenta il traffico sulla porta 80.
 
-  [Guida per Ubuntu](https://help.ubuntu.com/community/UFW)
+  [Aiuto per Ubuntu](https://help.ubuntu.com/community/UFW)
 
-  [Guida per CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
+  [Guida di CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
 
 ## phpMyAdmin
 

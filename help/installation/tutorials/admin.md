@@ -3,7 +3,7 @@ title: Creare, modificare o sbloccare un account amministratore
 description: Per gestire l’account amministratore dell’applicazione Adobe Commerce Admin, segui la procedura riportata di seguito.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: aaed7dba7d11085eb8e2793cefffb8c8b082e750
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Utilizzare questo comando per creare un amministratore o per modificare un ammin
 
 Utilizzo comando:
 
-```bash
+```shell
 bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 ```
 
@@ -49,21 +49,21 @@ Dove la tabella seguente definisce parametri e valori:
 
 Esempio di utilizzo:
 
-```bash
+```shell
 bin/magento admin:user:create --admin-firstname=John --admin-lastname=Doe --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A0b9%t3g
 ```
 
-```
+```text
 Created Magento administrator user named j.doe
 ```
 
 Se non si specifica alcun parametro obbligatorio, l&#39;applicazione chiede informazioni in CLI:
 
-```bash
+```shell
 bin/magento admin:user:create
 ```
 
-```
+```text
 Admin user: John
 Admin password:
 Admin email: j.doe.young@example.com
@@ -71,17 +71,17 @@ Admin first name: John
 Admin last name: Doe Young
 ```
 
-```
+```text
 Created Magento administrator user named John
 ```
 
 Il seguente esempio aggiorna `first name`, `last name` e `password` di `j.doe` utente amministratore:
 
-```bash
+```shell
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
 ```
 
-```
+```text
 Created Magento administrator user named j.doe
 ```
 
@@ -89,23 +89,23 @@ Created Magento administrator user named j.doe
 
 Utilizzare questo comando per sbloccare l&#39;account di un amministratore bloccato, in genere a causa di più tentativi di accesso non corretti.
 
-```bash
+```shell
 bin/magento admin:user:unlock {username}
 ```
 
 Specificare il nome utente dell&#39;amministratore. Esempio:
 
-```bash
+```shell
 bin/magento admin:user:unlock admin
 ```
 
-```
+```text
 The user account "admin" has been unlocked
 ```
 
 Se l’account non è sbloccato o si è verificato un problema, viene visualizzato il seguente messaggio:
 
-```
+```text
 The user account "admin" was not locked or could not be unlocked
 ```
 
@@ -113,6 +113,6 @@ Verificare che l&#39;utente sia un amministratore, che sia attivo e che l&#39;ac
 
 Se l’account non esiste, viene visualizzato il seguente messaggio:
 
-```
+```text
 Couldn't find the user account "bob"
 ```

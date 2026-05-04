@@ -5,9 +5,9 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2023-12-8
 exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Una patch è un file che contiene istruzioni per modificare direttamente il codi
 
 Le chiazze si rompono facilmente. Se i file di destinazione della patch vengono aggiornati, spesso la patch non funziona più. Questo perché un file patch contiene numeri di riga e numeri di colonna che indicano in modo specifico ciò che deve essere modificato dalla patch. Se qualcosa non corrisponde a quello che la patch si aspettava, cessa di essere applicata e interrompe il codice.
 
-```bash
+```shell
 diff --git a/vendor/magento/module-quote/Model/QuoteManagement.php b/vendor/magento/module-quote/Model/QuoteManagement.php
 index 51b68411d40..ac4a3468322 100644
 --- a/vendor/magento/module-quote/Model/QuoteManagement.php

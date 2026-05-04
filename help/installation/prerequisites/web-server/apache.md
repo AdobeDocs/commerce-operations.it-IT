@@ -2,11 +2,11 @@
 title: Installare Apache per le distribuzioni locali
 description: Scopri come installare e configurare Apache per le distribuzioni Adobe Commerce on-premise. Abilita i moduli richiesti, le riscritture e le impostazioni ".htaccess".
 feature: Install, Configuration
-badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
+badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Utilizzare questa sezione per abilitare Apache riscrive e configurare il [file `
 
 1. Abilita il modulo di riscrittura Apache:
 
-   ```bash
+   ```shell
    a2enmod rewrite
    ```
 
@@ -72,7 +72,7 @@ Utilizzare questa sezione per abilitare Apache riscrive e configurare il [file `
 
 1. Riavvia Apache per applicare le modifiche:
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -91,7 +91,7 @@ Adobe Commerce richiede l’installazione dei seguenti moduli Apache:
 
 Per verificare che Apache sia installato e visualizzare la versione corrente, immetti:
 
-```bash
+```shell
 apache2 -v
 ```
 
@@ -120,13 +120,13 @@ Quando si configura la riscrittura del server Apache, è necessario specificare 
 
 1. Installa Apache se non lo hai già fatto:
 
-   ```bash
+   ```shell
    apt-get -y install apache2
    ```
 
 1. Verificare l&#39;installazione:
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
@@ -149,7 +149,7 @@ Se Apache è già installato e si utilizza una versione precedente a `2.4`, eseg
 
 1. Aggiorna informazioni pacchetto:
 
-   ```bash
+   ```shell
    apt-get -y update
    ```
 
@@ -157,7 +157,7 @@ Se Apache è già installato e si utilizza una versione precedente a `2.4`, eseg
 
 1. Installare o aggiornare Apache:
 
-   ```bash
+   ```shell
    apt-get install -y apache2
    ```
 
@@ -167,7 +167,7 @@ Se Apache è già installato e si utilizza una versione precedente a `2.4`, eseg
 
 1. Verificare l&#39;installazione:
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
@@ -179,7 +179,7 @@ Se Apache è già installato e si utilizza una versione precedente a `2.4`, eseg
 
 1. Apri il file `/etc/apache2/sites-available/000-default.conf` per la modifica:
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -206,17 +206,17 @@ Se Apache è già installato e si utilizza una versione precedente a `2.4`, eseg
 
 1. Configurare Apache per l&#39;utilizzo del modulo `mod_rewrite`:
 
-   ```bash
+   ```shell
    cd /etc/apache2/mods-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s ../mods-available/rewrite.load
    ```
 
 1. Riavvia Apache per applicare le modifiche:
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -238,13 +238,13 @@ Quando si configura la riscrittura del server Apache, è necessario specificare 
 
 1. Se non lo hai già fatto, installa Apache.
 
-   ```bash
+   ```shell
    yum -y install httpd
    ```
 
 1. Verificare l&#39;installazione:
 
-   ```bash
+   ```shell
    httpd -v
    ```
 
@@ -265,7 +265,7 @@ Quando si configura la riscrittura del server Apache, è necessario specificare 
 
 1. Apri il file `/etc/httpd/conf/httpd.conf` per la modifica:
 
-   ```bash
+   ```shell
    vim /etc/httpd/conf/httpd.conf
    ```
 
@@ -296,7 +296,7 @@ Quando si configura la riscrittura del server Apache, è necessario specificare 
 
 1. Per applicare le impostazioni Apache, riavvia Apache.
 
-   ```bash
+   ```shell
    systemctl restart httpd
    ```
 

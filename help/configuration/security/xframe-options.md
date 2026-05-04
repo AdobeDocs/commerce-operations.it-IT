@@ -3,9 +3,9 @@ title: Impedisci sfruttare il clickjacking
 description: Impedisci gli exploit di clickjacking utilizzando l’intestazione "X-Frame-Options" per controllare i rendering della pagina.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Per verificare l’impostazione, visualizza le intestazioni HTTP su qualsiasi pa
 
 Nell&#39;esempio seguente viene utilizzato curl, che può essere eseguito da qualsiasi computer in grado di connettersi al server Commerce tramite il protocollo HTTP.
 
-```bash
+```shell
 curl -I -v --location-trusted '<storefront-URL>'
 ```
 

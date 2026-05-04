@@ -3,9 +3,9 @@ title: Configurare i termini di ricerca
 description: Scopri come gestire le parole chiave per Adobe Commerce utilizzando i file CSV.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Anche se oggi abbiamo più storage, le prestazioni sono ancora importanti. Elast
 
 Per ulteriori informazioni sull&#39;utilizzo dei termini di arresto in Elasticsearch e OpenSearch, vedere le risorse seguenti:
 
-- [Parole Chiuse: Prestazioni Rispetto A Precision](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
-- [Pro e contro di parole bloccate](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
-- [Utilizzo di parole non significative](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
+- [Parole di arresto: prestazioni e precisione](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
+- [Pro e contro delle parole d&#39;arresto](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
+- [Utilizzo delle parole d&#39;arresto](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
 - [Parole di arresto e prestazioni](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
 
 ## Configurare le parole d&#39;arresto
@@ -51,7 +51,7 @@ La durata predefinita per la cache dei file di parole non significative è di 15
 
    - Riga di comando: come proprietario del file system, immettere il comando seguente:
 
-     ```bash
+     ```shell
      php <magento_root>/bin/magento cache:clean config
      ```
 
@@ -89,7 +89,7 @@ La durata predefinita per la cache dei file di parole non significative è di 15
 
    - Riga di comando: come proprietario del file system, immettere il comando seguente:
 
-     ```bash
+     ```shell
      php <magento_root>/bin/magento magento cache:clean config
      ```
 
@@ -126,7 +126,7 @@ La posizione dipende da come è stato installato il software Commerce. Se hai cl
 
 ## Per cambiare la directory dal modulo
 
-1. [Crea un modulo](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
+1. [Creare un modulo](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. Nel modulo `etc/di.xml` aggiungi istruzioni:
 
    ```xml

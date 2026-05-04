@@ -2,9 +2,9 @@
 title: Raccomandazioni per l’ambiente di sviluppo
 description: Scopri i consigli sull’ambiente di sviluppo in Adobe Commerce. Scopri le linee guida per l’implementazione e le strategie di ottimizzazione.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ In modalità di sviluppo, non eseguire comandi per la compilazione, la generazio
 
 * `setup:di:compile` genera classi generate automaticamente e cache di configurazione ottimizzate.
 
-  ```bash
+  ```shell
   bin/magento setup:di:compile
   ```
 
@@ -35,7 +35,7 @@ In modalità di sviluppo, non eseguire comandi per la compilazione, la generazio
 
 * `setup:static-content:deploy` distribuisce il contenuto statico per un archivio.
 
-  ```bash
+  ```shell
   bin/magento setup:static-content:deploy
   ```
 

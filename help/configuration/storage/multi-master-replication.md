@@ -1,11 +1,11 @@
 ---
 title: Replica del database
-description: Vedere i vantaggi della configurazione della replica del database.
+description: Scopri i vantaggi della replica del database per Adobe Commerce, tra cui backup, offload di Analytics e configurazione asincrona degli slave MySQL.
 recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,8 @@ I database MySQL vengono replicati in modo asincrono, il che significa che non Ã
 
 Una discussione approfondita sulla replica del database esula dall&#39;ambito di questa guida. Per configurarlo, puoi consultare una risorsa come:
 
-- [Documentazione MySQL](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [Impostare la replica master slave in MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [Documentazione di MySQL](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
+- [Come impostare la replica master slave in MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
 Commerce fornisce configurazioni MySQL di esempio per i database slave. Configurazione semplice fornita con la classe `ResourceConnections` `README.md`.
 

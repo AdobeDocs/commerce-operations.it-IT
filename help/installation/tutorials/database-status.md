@@ -2,7 +2,7 @@
 title: Controllare lo stato del database
 description: Per verificare lo stato del database Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 3%
@@ -17,7 +17,7 @@ Prima di eseguire questo comando, è necessario [creare o aggiornare la configur
 
 Per controllare lo stato del database.
 
-```bash
+```shell
 bin/magento setup:db:status
 ```
 
@@ -25,7 +25,7 @@ Il comando non contiene argomenti o opzioni.
 
 Di seguito è riportato un esempio di output:
 
-```
+```text
 All modules are up to date.
 ```
 

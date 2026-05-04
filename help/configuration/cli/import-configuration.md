@@ -2,9 +2,9 @@
 title: Importare dati dai file di configurazione
 description: Scopri come importare le impostazioni di configurazione di Adobe Commerce dai file di configurazione. Scopri i processi di distribuzione della pipeline e importazione del database.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Quando si configura un sistema di produzione utilizzando il modello di distribuzione della pipeline [&#x200B; di Commerce 2.2 &#x200B;](../deployment/technical-details.md), è necessario _importare_ le impostazioni di configurazione da `config.php` e `env.php` nel database.
+Quando si configura un sistema di produzione utilizzando il modello di distribuzione della pipeline ](../deployment/technical-details.md) di Commerce 2.2 [, è necessario _importare_ le impostazioni di configurazione da `config.php` e `env.php` nel database.
 Queste impostazioni includono percorsi e valori di configurazione, siti web, store, visualizzazioni store e temi.
 
 Dopo aver importato siti Web, store, visualizzazioni di store e temi, puoi creare attributi di prodotto e applicarli a siti Web, store e visualizzazioni di store nel sistema di produzione.
@@ -26,7 +26,7 @@ Dopo aver importato siti Web, store, visualizzazioni di store e temi, puoi crear
 
 Nel sistema di produzione eseguire il comando seguente per importare i dati dai file di configurazione (`config.php` e `env.php`) al database:
 
-```bash
+```shell
 bin/magento app:config:import [-n, --no-interaction]
 ```
 
@@ -36,7 +36,7 @@ Se immetti `bin/magento app:config:import` senza il flag opzionale, dovrai confe
 
 Ad esempio, se il file di configurazione contiene un nuovo sito Web e un nuovo archivio, viene visualizzato il seguente messaggio:
 
-```
+```text
 These Websites will be created: New Website
 These Groups will be created: New Store
 Do you want to continue [yes/no]?
@@ -46,14 +46,14 @@ Per continuare l&#39;importazione, immettere `yes`.
 
 Se i file di configurazione della distribuzione contengono alcuni dati da importare, viene visualizzato un messaggio simile al seguente:
 
-```
+```text
 Start import:
 Some information about importing
 ```
 
 Se i file di configurazione della distribuzione non contengono dati da importare, viene visualizzato un messaggio simile al seguente:
 
-```
+```text
 Start import:
 Nothing to import
 ```

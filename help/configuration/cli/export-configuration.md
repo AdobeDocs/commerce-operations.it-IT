@@ -2,9 +2,9 @@
 title: Esporta impostazioni di configurazione
 description: Scopri come esportare le impostazioni di configurazione di Adobe Commerce in file utilizzando il dump di configurazione. Scopri l’implementazione della pipeline e la gestione della configurazione.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 In Commerce 2.2 e versioni successive del [modello di distribuzione della pipeline](../deployment/technical-details.md), è possibile mantenere una configurazione coerente tra i sistemi. Dopo aver configurato le impostazioni in Admin sul sistema di sviluppo, esportale nei file di configurazione utilizzando il comando seguente:
 
-```bash
+```shell
 bin/magento app:config:dump {config-types}
 ```
 
-_config_types_ è un elenco separato da spazi dei tipi di configurazione da scaricare. I tipi disponibili sono `scopes`, `system`, `themes` e `i18n`. Se non viene specificato alcun tipo di configurazione, vengono sottoposte a dump tutte le informazioni di configurazione del sistema.
+_config_ types_ è un elenco separato da spazi dei tipi di configurazione da scaricare. I tipi disponibili sono `scopes`, `system`, `themes` e `i18n`. Se non viene specificato alcun tipo di configurazione, vengono sottoposte a dump tutte le informazioni di configurazione del sistema.
 
 L’esempio seguente esegue il dump solo di ambiti e temi:
 
-```bash
+```shell
 bin/magento app:config:dump scopes themes
 ```
 

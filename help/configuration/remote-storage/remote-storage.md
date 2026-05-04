@@ -3,9 +3,9 @@ title: Configura archiviazione remota
 description: Scopri come configurare il modulo di archiviazione remota per l’applicazione Commerce on-premise.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Per impostazione predefinita, l&#39;applicazione Adobe Commerce memorizza i file
 
 Non è possibile abilitare contemporaneamente l&#39;archiviazione del database _e_ nell&#39;archiviazione remota. È necessario disabilitare l&#39;archiviazione del database prima di abilitare l&#39;archiviazione remota.
 
-```bash
+```shell
 bin/magento config:set system/media_storage_configuration/media_database 0
 ```
 
@@ -30,7 +30,7 @@ L&#39;abilitazione dell&#39;archiviazione remota potrebbe influire sull&#39;espe
 
 >[!INFO]
 >
->- L’archiviazione remota è disponibile solo per Commerce versione 2.4.2 e successive. Consulta le [2.4.2 note sulla versione](https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
+>- L’archiviazione remota è disponibile solo per Commerce versione 2.4.2 e successive. Consulta le [2.4.2 note sulla versione](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- Il modulo di archiviazione remota dispone del supporto _limitato_ su Adobe Commerce nell&#39;infrastruttura cloud. Adobe non è in grado di risolvere completamente i problemi relativi al servizio adattatore di archiviazione di terze parti. Consulta [Configurare l&#39;archiviazione remota per Commerce sull&#39;infrastruttura cloud](cloud-support.md) per informazioni sull&#39;implementazione dell&#39;archiviazione remota per i progetti cloud.
 
@@ -67,13 +67,13 @@ Il percorso di archiviazione predefinito si trova nel file system locale. Un _ad
 
 - Esempio: installare Commerce con l’archiviazione remota
 
-  ```bash
+  ```shell
   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
 - Esempio: abilitare l&#39;archiviazione remota su Commerce esistente
 
-  ```bash
+  ```shell
   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
@@ -85,11 +85,11 @@ Il percorso di archiviazione predefinito si trova nel file system locale. Un _ad
 
 Dopo aver abilitato l&#39;archiviazione remota per una scheda specifica, è possibile utilizzare CLI per migrare i file _media_ esistenti nell&#39;archiviazione remota.
 
-```bash
+```shell
 ./magento2ce/bin/magento remote-storage:sync
 ```
 
 >[!INFO]
 >
->Il comando sync esegue la migrazione solo dei file nella directory `pub/media`, _not_ i file di importazione/esportazione nella directory `var`. Vedi [Importazione/esportazione pianificata](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=it) nella _Guida utente di Commerce 2.4_.
+>Il comando sync esegue la migrazione solo dei file nella directory `pub/media`, _not_ i file di importazione/esportazione nella directory `var`. Vedi [Importazione/esportazione pianificata](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) nella _Guida utente di Commerce 2.4_.
 

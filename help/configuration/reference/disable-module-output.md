@@ -2,9 +2,9 @@
 title: Disattiva output modulo
 description: Scopri come disabilitare l’output dei moduli in Adobe Commerce senza rimuovere le dipendenze. Scopri i passaggi di configurazione e i casi d’uso.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -32,10 +32,10 @@ La disattivazione dell&#39;output viene eseguita nelle seguenti classi:
 
 Per disabilitare l’output del modulo nella distribuzione della pipeline o in qualsiasi altra distribuzione, con più istanze dell’applicazione Commerce:
 
-1. Modificare il file `Backend` del modulo `config.xml`.
+1. Modificare il file `config.xml` del modulo `Backend`.
 1. Esporta le modifiche di configurazione.
 
-### Modifica il file `Backend` del modulo `config.xml`
+### Modifica il file `config.xml` del modulo `Backend`
 
 1. Archivia il file `config.xml` originale.
 1. Aggiungere righe simili alle seguenti al file `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml`, direttamente sotto l&#39;elemento `<default>`:
@@ -60,7 +60,7 @@ Come risultato di questa configurazione, i clienti non possono più registrarsi 
 
 Esegui il comando seguente per esportare le modifiche di configurazione:
 
-```bash
+```shell
 bin/magento app:config:dump
 ```
 
@@ -68,7 +68,7 @@ I risultati vengono scritti nel file `<Magento_install_dir>/app/etc/config.php`.
 
 Quindi, cancella la cache per abilitare la nuova impostazione:
 
-```bash
+```shell
 bin/magento cache:clean config
 ```
 

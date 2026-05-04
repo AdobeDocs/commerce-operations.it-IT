@@ -2,9 +2,9 @@
 title: Gestore messaggi (RabbitMQ)
 description: Segui questi passaggi per installare e configurare il software Message Broker richiesto (ad esempio  [!DNL RabbitMQ]) per le installazioni locali di Adobe Commerce.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Prima di installare Adobe Commerce, è necessario stabilire il sistema della cod
 
 Per installare [!DNL RabbitMQ] su Ubuntu 16, immettere il comando seguente:
 
-```bash
+```shell
 sudo apt install -y rabbitmq-server
 ```
 
@@ -49,7 +49,7 @@ Per ulteriori informazioni, vedere [Installazione su Debian/Ubuntu](https://www.
 
 Per ulteriori informazioni, vedere [Installazione manuale](https://www.erlang-solutions.com/downloads/).
 
-Per installare la versione corretta, consultare la [[!DNL RabbitMQ]/Erlang versione &#x200B;](https://www.rabbitmq.com/which-erlang.html).
+Per installare la versione corretta, consultare la [[!DNL RabbitMQ]/Erlang versione ](https://www.rabbitmq.com/which-erlang.html).
 
 ### Installa [!DNL RabbitMQ]
 
@@ -73,7 +73,7 @@ Consulta la documentazione ufficiale di [!DNL RabbitMQ] per configurare e gestir
 
 Se installi Adobe Commerce _dopo_ installi [!DNL RabbitMQ], aggiungi i seguenti parametri della riga di comando durante l&#39;installazione:
 
-```bash
+```shell
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
 ```
 
@@ -108,7 +108,7 @@ Se Adobe Commerce è già installato e si desidera connetterlo a [!DNL RabbitMQ]
 
 È inoltre possibile impostare [!DNL RabbitMQ] valori di configurazione utilizzando il comando `bin/magento setup:config:set`:
 
-```bash
+```shell
 bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="11213" --amqp-user="magento" --amqp-password="magento" --amqp-virtualhost="/"
 ```
 

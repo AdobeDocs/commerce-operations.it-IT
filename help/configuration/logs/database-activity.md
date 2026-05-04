@@ -3,9 +3,9 @@ title: Registra attività database
 description: Configura Commerce per registrare l’attività del database utilizzando l’interfaccia Logger.
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,13 @@ In seguito, specificare il percorso del file per `Magento\Framework\DB\Logger\Fi
 
 Infine, compila il codice con:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
 E pulisci la cache con:
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 

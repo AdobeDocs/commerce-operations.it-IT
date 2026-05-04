@@ -2,9 +2,9 @@
 title: Distribuire file di visualizzazione statica
 description: Scopri come distribuire i file di visualizzazione statica nel file system di Adobe Commerce in modalità di produzione. Scopri i comandi di distribuzione e le tecniche di ottimizzazione.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ La distribuzione di file di visualizzazione statica è influenzata dalle modalit
 
 >[!WARNING]
 >
->_Solo modalità sviluppatore_: quando si installa o si abilita un nuovo modulo, è possibile che vengano caricati nuovi JavaScript, CSS, layout e così via. Per evitare problemi con i file statici, è necessario pulire i vecchi file per assicurarsi di ottenere tutte le modifiche per il nuovo modulo. È possibile pulire i file della vista statica generati in diversi modi. Per ulteriori informazioni, consultare l&#39;argomento [Pulisci cache dei file statici](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache).
+>_Solo modalità sviluppatore_: quando si installa o si abilita un nuovo modulo, è possibile che vengano caricati nuovi JavaScript, CSS, layout e così via. Per evitare problemi con i file statici, è necessario pulire i vecchi file per assicurarsi di ottenere tutte le modifiche per il nuovo modulo. È possibile pulire i file della vista statica generati in diversi modi. Per ulteriori informazioni, consultare l&#39;argomento [Pulisci cache dei file statici](https://developer.adobe.com/commerce/frontend-core/guide/caching#clean-static-files-cache).
 
 **Per distribuire i file di visualizzazione statica**:
 
@@ -45,7 +45,7 @@ La distribuzione di file di visualizzazione statica è influenzata dalle modalit
 
    Opzioni comando:
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy [<languages>] [-t|--theme[="<theme>"]] [--exclude-theme[="<theme>"]] [-l|--language[="<language>"]] [--exclude-language[="<language>"]] [-a|--area[="<area>"]] [--exclude-area[="<area>"]] [-j|--jobs[="<number>"]]  [--no-javascript] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [-f|--force]
    ```
 
@@ -53,7 +53,7 @@ Nella tabella seguente vengono illustrati i parametri e i valori di questo coman
 
 | Opzione | Descrizione | Obbligatorio |
 | ------ | ----------- | --------- |
-| `<languages>` | Elenco separato da spazi di [codici di lingua ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) per i quali generare file di visualizzazione statica. Il valore predefinito è `en_US`.<br>Trovare l&#39;elenco eseguendo: `bin/magento info:language:list` | No |
+| `<languages>` | Elenco separato da spazi di [codici di lingua ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) per i quali generare file di visualizzazione statica. Il valore predefinito è `en_US`.)<br>Trovare l&#39;elenco eseguendo: `bin/magento info:language:list` | No |
 | `--language (-l)` | Genera file solo per le lingue specificate. L&#39;impostazione predefinita, senza opzione specificata, prevede la generazione di file per tutti i codici di lingua ISO-639. È possibile specificare il nome di un codice lingua alla volta. Il valore predefinito è **all**.<br>Esempio: `--language en_US --language es_ES` | No |
 | `--exclude-language` | Genera file per i codici lingua specificati. Per impostazione predefinita, senza alcuna opzione specificata, non viene escluso nulla. È possibile specificare il nome di un codice lingua o di un elenco di codici di lingua separati da virgole. Il valore predefinito è **none**. | No |
 | `--theme <theme>` | Temi per i quali distribuire il contenuto statico. Il valore predefinito è **all**.<br>Esempio: `--theme Magento/blank --theme Magento/luma` | No |
@@ -87,13 +87,13 @@ Di seguito sono riportati alcuni comandi di esempio.
 
 Il comando seguente distribuisce il contenuto statico per la lingua inglese statunitense (`en_US`), esclude il tema Luma fornito con Commerce e non minimizza i file HTML.
 
-```bash
+```shell
 bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-html-minify
 ```
 
 Output di esempio:
 
-```
+```text
 Requested languages: en_US
 Requested areas: frontend, adminhtml
 Requested themes: Magento/blank, Magento/backend
@@ -112,13 +112,13 @@ Successful: 1993 files; errors: 0
 
 Il comando seguente distribuisce solo JavaScript, con 4 processi, con una strategia di distribuzione standard:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy -s standard --no-misc --no-html --no-fonts --no-images --no-less --no-css -j 4
 ```
 
 Il comando seguente distribuisce solo CSS e LESS con 3 processi e una strategia di distribuzione rapida:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy -s quick --no-misc --no-html --no-fonts --no-images --no-javascript -j 3
 ```
 
@@ -126,13 +126,13 @@ bin/magento setup:static-content:deploy -s quick --no-misc --no-html --no-fonts 
 
 Il comando seguente genera file di visualizzazione statica per tutte le lingue, solo l&#39;area front-end, solo il tema Commerce Luma, senza generare font:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy --area frontend --no-fonts --theme Magento/luma
 ```
 
 Output di esempio:
 
-```
+```text
 Requested languages: en_US
 Requested areas: frontend
 Requested themes: Magento/luma
@@ -162,7 +162,7 @@ A questo scopo, effettua le seguenti operazioni:
 
 **Sintomo**: quando si esegue lo strumento di distribuzione dei file di visualizzazione statica viene visualizzato l&#39;errore seguente:
 
-```
+```text
 ERROR: You need to install the Commerce application before running this utility.
 ```
 

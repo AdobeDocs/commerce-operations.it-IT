@@ -1,11 +1,11 @@
 ---
 title: Cron PHP sicuro
-description: Limita gli utenti che possono eseguire il file cron.php in un browser.
+description: Scopri come limitare l’accesso del browser a pub/cron.php e proteggere le attività pianificate di Adobe Commerce dall’esecuzione non autorizzata o dannosa dei cron.
 feature: Configuration, Security
 exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '975'
 ht-degree: 1%
 
 ---
@@ -38,8 +38,8 @@ Il processo cron esegue diverse attività pianificate ed è una parte fondamenta
 
 Questa sezione illustra come proteggere il cron utilizzando l’autenticazione HTTP Basic con Apache. Queste istruzioni sono basate su Apache 2.2 con CentOS 6. Per ulteriori informazioni, consulta una delle risorse seguenti:
 
-- [Esercitazione di autenticazione e autorizzazione di Apache 2.2](https://httpd.apache.org/docs/2.2/howto/auth.html)
-- [Esercitazione di autenticazione e autorizzazione di Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
+- [Tutorial sull’autenticazione e l’autorizzazione di Apache 2.2](https://httpd.apache.org/docs/2.2/howto/auth.html)
+- [Tutorial sull’autenticazione e l’autorizzazione di Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 ### Creare un file di password
 
@@ -47,11 +47,11 @@ Per motivi di sicurezza, è possibile individuare il file della password in qual
 
 Immettere i seguenti comandi come utente con privilegi `root`:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/passwords <username>
 ```
 
@@ -61,7 +61,7 @@ Seguire le istruzioni visualizzate per creare una password per l&#39;utente.
 
 Per aggiungere un altro utente al file della password, immettere il comando seguente come utente con privilegi `root`:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
@@ -71,13 +71,13 @@ Per consentire l&#39;esecuzione di cron da parte di più utenti, aggiungerli al 
 
 Per aggiungere un altro utente al file della password:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
 Per creare un gruppo autorizzato, creare un file di gruppo all&#39;esterno della directory principale dei documenti del server Web. Il file di gruppo specifica il nome del gruppo e gli utenti del gruppo. In questo esempio, il nome del gruppo è `MagentoCronGroup`.
 
-```bash
+```shell
 vim /usr/local/apache/password/group
 ```
 
@@ -107,7 +107,7 @@ Per proteggere cron nel file `.htaccess`:
    </Files>
    ```
 
-1. _Accesso al controllo per un gruppo._ Sostituisci la direttiva `<Files cron.php>` esistente con quanto segue:
+1. _Accesso Cron per un gruppo._ Sostituisci la direttiva `<Files cron.php>` esistente con quanto segue:
 
    ```conf
    <Files cron.php>
@@ -133,7 +133,7 @@ Questa sezione descrive come proteggere cron utilizzando il server web Nginx. È
 
 Consulta una delle seguenti risorse per creare un file di password prima di continuare:
 
-- [Impostare l&#39;autenticazione tramite password con Nginx su Ubuntu 14.04 (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+- [Come impostare l’autenticazione tramite password con Nginx su Ubuntu 14.04 (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
 - [Autenticazione HTTP di base con Nginx (howtoforge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 
 ### Cron protetto in `nginx.conf.sample`
@@ -163,7 +163,7 @@ Commerce fornisce un esempio ottimizzato di file di configurazione nginx pronto 
 
 1.Inginx di riavvio:
 
-```bash
+```shell
 systemctl restart nginx
 ```
 
@@ -183,7 +183,7 @@ Il modo più semplice per verificare che `pub/cron.php` sia protetto consiste ne
 
    Ad esempio:
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 

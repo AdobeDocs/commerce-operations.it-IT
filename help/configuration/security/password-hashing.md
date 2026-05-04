@@ -1,11 +1,11 @@
 ---
 title: Hashing password
-description: Scopri le strategie e l’implementazione di hashing delle password.
+description: Scopri l’hashing delle password in Adobe Commerce, gli algoritmi supportati come Argon2 e SHA256 e come gli hash legacy vengono aggiornati senza modificare le password.
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ Poiché Commerce memorizza tutte le versioni di hash della password utilizzate i
 
 ## Implementazione
 
-La classe `\Magento\Framework\Encryption\Encryptor` è responsabile della generazione e della verifica dell&#39;hash della password. Il comando [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) aggiorna un hash della password del cliente all&#39;algoritmo hash più recente.
+La classe `\Magento\Framework\Encryption\Encryptor` è responsabile della generazione e della verifica dell&#39;hash della password. Il comando [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) aggiorna un hash della password del cliente all&#39;algoritmo hash più recente.

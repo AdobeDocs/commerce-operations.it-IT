@@ -5,9 +5,9 @@ feature: Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 0233db9b-86b1-4320-a566-7e7e207dab84
-source-git-commit: 1ccb4c1dda5141934e04509b27fdafbfdc436a15
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ La patch ACSD-65848 risolve il problema relativo al calcolo del conteggio totale
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -42,7 +42,7 @@ La pagina di visualizzazione/modifica della categoria Amministratore presenta ri
    1. Aprire il profilo `small.xml` e aggiornarlo in modo da includere 2.500 categorie e 250.000 prodotti (in base alla configurazione del commerciante).
    1. Esegui il comando seguente per generare gli staffaggi:
 
-      ```bash
+      ```shell
       bin/magento 
       setup:performance:generate-fixtures var/setup/performance-toolkit/profiles/ce/small.xml
       ```
@@ -62,7 +62,7 @@ La pagina di visualizzazione/modifica della categoria Amministratore presenta ri
 1. Nel pannello Amministratore, crea una struttura di categorie più profonda:
    * Spostare la categoria 2 nella categoria 1 per annidarla più in profondità nell&#39;albero.
 1. Prova ad aprire una pagina di categoria nel pannello di amministrazione utilizzando un URL come:
-   ```/admin/catalog/category/edit/id/xx/```
+   `/admin/catalog/category/edit/id/xx/`
 
 <u>Risultati previsti</u>:
 
@@ -77,7 +77,7 @@ L&#39;apertura delle pagine delle categorie richiede più di un minuto.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

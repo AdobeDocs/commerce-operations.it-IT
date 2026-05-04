@@ -1,20 +1,20 @@
 ---
 title: 'MDVA-39966: impossibile distribuire impostazioni locali diverse da en_US'
-description: La patch MDVA-39966 risolve il problema se l'utente non è in grado di distribuire impostazioni internazionali diverse da en_US. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. L'ID della patch è MDVA-39966. Il problema è stato risolto nella versione 2.4.1 di Adobe Commerce.
+description: La patch MDVA-39966 risolve il problema se l'utente non è in grado di distribuire impostazioni internazionali diverse da en_US. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. L'ID della patch è MDVA-39966. Il problema è stato risolto nella versione 2.4.1 di Adobe Commerce.
 feature: Deploy
 role: Admin
 exl-id: 03bb0002-9742-4f26-bb41-1b46f0a3573c
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
 
 # MDVA-39966: impossibile distribuire impostazioni locali diverse da en_US
 
-La patch MDVA-39966 risolve il problema se l&#39;utente non è in grado di distribuire impostazioni internazionali diverse da en_US. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. L&#39;ID della patch è MDVA-39966. Il problema è stato risolto nella versione 2.4.1 di Adobe Commerce.
+La patch MDVA-39966 risolve il problema se l&#39;utente non è in grado di distribuire impostazioni internazionali diverse da en_US. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. L&#39;ID della patch è MDVA-39966. Il problema è stato risolto nella versione 2.4.1 di Adobe Commerce.
 
 ## Prodotti e versioni interessati
 
@@ -28,7 +28,7 @@ La patch MDVA-39966 risolve il problema se l&#39;utente non è in grado di distr
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni dello strumento Patch di qualità. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni dello strumento Patch di qualità. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -39,7 +39,7 @@ Impossibile distribuire impostazioni locali diverse da en_US.
 1. Configurate due viste store con impostazioni internazionali diverse, ad esempio en_US e de_DE.
 1. Prova a distribuire il contenuto statico per queste impostazioni internazionali eseguendo il seguente comando:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy --language=en_US
 bin/magento setup:static-content:deploy --language=de_DE
 ```
@@ -48,7 +48,7 @@ bin/magento setup:static-content:deploy --language=de_DE
 
 de_DE locale è distribuito.
 
-```bash
+```shell
 bin/magento setup:static-content:deploy --language=de_DE
 
 Deploy using quick strategy
@@ -63,7 +63,7 @@ Execution time: 27.062166929245
 
 en_US locale distribuito invece di de_DE:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy --language=de_DE
 
 Deploy using quick strategy
@@ -77,13 +77,13 @@ frontend/Magento/luma/en_US             2504/2504           ====================
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
 Per ulteriori informazioni sullo strumento Patch di qualità, vedere:
 
-* [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
+* [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando lo strumento Patch di qualità](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!DNL Quality Patches Tool].
 
-Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella guida di [!DNL Quality Patches Tool].
+Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida di [!DNL Quality Patches Tool].

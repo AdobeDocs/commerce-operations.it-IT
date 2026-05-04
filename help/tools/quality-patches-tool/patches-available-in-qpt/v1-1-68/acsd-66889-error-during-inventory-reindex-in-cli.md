@@ -4,13 +4,13 @@ description: Applica la patch ACSD-66889 per risolvere il problema di Adobe Comm
 feature: Inventory
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 9631e0864b2ad8fc09734aedd476e96852cd70fb
+exl-id: 289bd211-99f5-489e-9005-58c711ef128e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66889: errore durante la reindicizzazione dell’inventario in CLI
 
@@ -28,7 +28,7 @@ La patch ACSD-66889 corregge l&#39;errore che si verifica durante l&#39;esecuzio
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -38,7 +38,7 @@ Durante l’esecuzione dell’indicizzatore di inventario, il processo genera un
 
 1. Eseguire la reindicizzazione dell&#39;inventario utilizzando il comando CLI:
 
-   ```
+   ```shell
    php bin/magento indexer:reindex inventory
    ```
 
@@ -50,7 +50,7 @@ CLI ricostruisce correttamente l&#39;indicizzatore inventario.
 
 CLI genera un errore di funzionalità obsoleto e gli indici di inventario rimangono nello stato *Reindicizzazione richiesta*:
 
-```
+```shell
 Deprecated Functionality: Using ${var} in strings is deprecated, use {$var} instead in /home/vendor/magento/module-elasticsearch-catalog-permissions/Model/Adapter/FieldMapper/Product/FieldProvider/FieldName/Resolver/CategoryPermission.php on line 24
 ```
 
@@ -59,7 +59,7 @@ Deprecated Functionality: Using ${var} in strings is deprecated, use {$var} inst
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

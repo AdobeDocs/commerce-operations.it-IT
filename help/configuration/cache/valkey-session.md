@@ -3,9 +3,9 @@ title: Usa Valkey per l'archiviazione della sessione
 description: Scopri come configurare Valkey per l’archiviazione delle sessioni in Adobe Commerce. Scopri i passaggi di configurazione, le opzioni di configurazione e le tecniche di ottimizzazione delle prestazioni.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '915'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Adobe Commerce fornisce opzioni della riga di comando per configurare l’archiv
 
 Eseguire il comando `setup:config:set` e specificare i parametri specifici di Valkey.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parameter_name>=<parameter_value>...
 ```
 
@@ -34,7 +34,7 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 >
 >A partire da **Adobe Commerce 2.4.9-alpha2**, **Valkey** ha ufficialmente sostituito Redis negli strumenti CLI a causa di modifiche nelle licenze. Valkey è un fork di Redis e mantiene funzionalità quasi identiche. Per **versioni 2.4.8 e precedenti**, i comandi CLI utilizzati per configurare Valkey rimangono gli stessi di quelli utilizzati per Redis, garantendo una perfetta compatibilità con le versioni precedenti e semplificando la migrazione o il supporto di ambienti doppi. Nell&#39;esempio seguente viene illustrato il comando specifico di Valkey.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
 ```
 
@@ -45,7 +45,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-valkey-password | password | Specifica una password se il server Valkey richiede l&#39;autenticazione. | vuoto |
 | session-save-valkey-timeout | timeout | Timeout della connessione, in secondi. | 2,5 |
 | session-save-valkey-persistent-id | persistent_identifier | Stringa univoca per abilitare le connessioni permanenti (ad esempio, sess-db0).<br>[Problemi noti con phpredis e php-fpm](https://github.com/phpredis/phpredis/issues/70). |  |
-| session-save-valkey-db | database | Numero univoco del database Valkey, che si consiglia di proteggere dalla perdita di dati.<br><br>**Importante**: se si utilizza Valkey per più di un tipo di memorizzazione nella cache, i numeri di database devono essere diversi. È consigliabile assegnare il numero predefinito del database di memorizzazione nella cache a `0`, il numero del database di memorizzazione nella cache delle pagine a `1` e il numero del database di archiviazione sessione a `2`. | 0 |
+| session-save-valkey-db | database | Numero di database Valkey univoco, che si consiglia di proteggere dalla perdita di dati.<br><br>**Importante**: se si utilizza Valkey per più di un tipo di memorizzazione nella cache, i numeri di database devono essere diversi. È consigliabile assegnare il numero predefinito del database di memorizzazione nella cache a `0`, il numero del database di memorizzazione nella cache delle pagine a `1` e il numero del database di archiviazione sessione a `2`. | 0 |
 | session-save-valkey-compression-threshold | compression_threshold | Impostare su `0` per disabilitare la compressione (consigliato quando `suhosin.session.encrypt = On`). | 2048 |
 | session-save-valkey-compression-lib | library_di_compressione | Opzioni: gzip, lzf, lz4 o snappy. | gzip |
 | session-save-valkey-log-level | log_level | Impostato su uno dei seguenti, elencati in ordine dal meno dettagliato al più dettagliato:<ul><li>0 (emergenza: solo gli errori più gravi)<li>1 (avviso: è necessaria un&#39;azione immediata)<li>2 (critico: componente applicazione non disponibile)<li>3 (errore: errori di runtime, non critici ma da monitorare)<li>4 (avviso: informazioni aggiuntive, consigliato)<li>5 (nota: condizione normale ma significativa)<li>6 (informazioni: messaggi informativi)<li>7 (debug: la maggior parte delle informazioni solo per lo sviluppo o il testing)</ul> | 1 |
@@ -67,7 +67,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 
 Nell&#39;esempio seguente Valkey viene impostato come archivio dati della sessione, l&#39;host viene impostato su `127.0.0.1`, il livello di log viene impostato su `4` e il numero di database su `2`. Tutti gli altri parametri vengono impostati sul valore predefinito.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=127.0.0.1 --session-save-valkey-log-level=4 --session-save-valkey-db=2
 ```
 
@@ -75,7 +75,7 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=12
 >
 >A partire da **Adobe Commerce 2.4.9**, **Valkey** ha ufficialmente sostituito Redis negli strumenti CLI a causa di modifiche nelle licenze. Valkey è un fork di Redis e mantiene funzionalità quasi identiche. Per **versioni 2.4.8 e precedenti**, i comandi CLI utilizzati per configurare Valkey rimangono gli stessi di quelli utilizzati per Redis, garantendo una perfetta compatibilità con le versioni precedenti e semplificando la migrazione o il supporto di ambienti doppi. Nell&#39;esempio seguente viene illustrato il comando specifico di Valkey.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
@@ -119,13 +119,13 @@ Per verificare che Valkey e Commerce funzionino correttamente, accedere al serve
 
 ### Comando di monitoraggio Valkey
 
-```bash
+```shell
 valkey-cli monitor
 ```
 
 Esempio di output di archiviazione sessione:
 
-```
+```text
 1476824834.187250 [0 127.0.0.1:52353] "select" "0"
 1476824834.187587 [0 127.0.0.1:52353] "hmget" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "data" "writes"
 1476824834.187939 [0 127.0.0.1:52353] "expire" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "1200"
@@ -136,7 +136,7 @@ Esempio di output di archiviazione sessione:
 
 ### Comando ping Valkey
 
-```bash
+```shell
 valkey-cli ping
 ```
 

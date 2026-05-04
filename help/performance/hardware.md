@@ -3,9 +3,9 @@ title: Consigli hardware
 description: Scopri i consigli sull’hardware per prestazioni Adobe Commerce ottimali. Scopri i requisiti di CPU, memoria e storage per le implementazioni di produzione.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Commerce] nodi web gestiscono tutte le richieste che non sono memorizzate nella cache o che non possono essere memorizzate nella cache tramite l&#39;applicazione. Un core CPU può servire circa due (a volte fino a quattro) [!DNL Commerce] richieste in modo efficace. Utilizza la seguente equazione per determinare quanti nodi/core web sono necessari per elaborare tutte le richieste in ingresso senza metterle in coda:
 
-```
+```text
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
 ```
 

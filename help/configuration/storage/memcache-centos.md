@@ -3,9 +3,9 @@ title: Configurare memcached su CentOS
 description: Scopri come installare e configurare memcached su CentOS per il caching di Adobe Commerce. Scopri le istruzioni di configurazione e i suggerimenti di ottimizzazione.
 feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -35,19 +35,19 @@ Per installare memcached su CentOS, eseguire le attività seguenti come utente c
 
 1. Installare memcached e le relative dipendenze:
 
-   ```bash
+   ```shell
    yum -y update
    ```
 
-   ```bash
+   ```shell
    yum install -y libevent libevent-devel
    ```
 
-   ```bash
+   ```shell
    yum install -y memcached
    ```
 
-   ```bash
+   ```shell
    yum install -y php-pecl-memcache
    ```
 
@@ -70,7 +70,7 @@ Per installare memcached su CentOS, eseguire le attività seguenti come utente c
 1. Salvare le modifiche apportate a `memcached` e uscire dall&#39;editor di testo.
 1. Riavvia memcached.
 
-   ```bash
+   ```shell
    service memcached restart
    ```
 
@@ -78,7 +78,7 @@ Per installare memcached su CentOS, eseguire le attività seguenti come utente c
 
    Per Apache:
 
-   ```bash
+   ```shell
    service httpd restart
    ```
 
@@ -120,7 +120,7 @@ Il test utilizza un database, una tabella e dati MySQL per verificare che sia po
 
 Creare il database MySQL:
 
-```bash
+```shell
 mysql -u root -p
 ```
 
@@ -167,11 +167,11 @@ Dove `<memcached hostname or ip>` è `localhost`, `127.0.0.1` o il nome host o l
 
 Esegui lo script dalla riga di comando.
 
-```bash
+```shell
 cd <web server docroot>
 ```
 
-```bash
+```shell
 php cache-test.php
 ```
 
@@ -181,19 +181,19 @@ Il secondo risultato è `got result from memcached`, che verifica che il valore 
 
 Infine, puoi visualizzare le chiavi memcache utilizzando Telnet:
 
-```bash
+```shell
 telnet localhost <memcache port>
 ```
 
 Al prompt, immetti
 
-```bash
+```shell
 stats items
 ```
 
 Il risultato è simile al seguente:
 
-```
+```text
 STAT items:3:number 1
 STAT items:3:age 1075
 STAT items:3:evicted 0
@@ -205,12 +205,12 @@ STAT items:3:tailrepairs 0
 
 Scaricare la memoria cache e uscire da Telnet:
 
-```bash
+```shell
 flush_all
 ```
 
-```bash
+```shell
 quit
 ```
 
-[Ulteriori informazioni sul test Telnet](https://darkcoding.net/software/memcached-list-all-keys/)
+[Informazioni aggiuntive sul test Telnet](https://darkcoding.net/software/memcached-list-all-keys/)

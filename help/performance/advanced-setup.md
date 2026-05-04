@@ -2,9 +2,9 @@
 title: Configurazione avanzata
 description: Scopri come configurare in modo avanzato Adobe Commerce. Scopri le istruzioni dettagliate e i requisiti di configurazione.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: da9ce645d4d32c1368da442d9bd260f5fb3cdb98
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Adobe Commerce supporta le code di messaggi implementate tramite [!DNL RabbitMQ]
 
 >[!WARNING]
 >
->La funzionalità del database diviso era [obsoleta](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) nella versione 2.4.2 di Adobe Commerce. Vedere [Ripristino da un database diviso a un singolo database](../configuration/storage/revert-split-database.md).
+>La funzione di suddivisione del database è stata rimossa nella versione 2.4.2 di Adobe Commerce. Vedere [Ripristino da un database diviso a un singolo database](../configuration/storage/revert-split-database.md).
 
 Adobe Commerce consente di configurare lo storage scalabile del database per soddisfare le esigenze di un&#39;azienda in crescita. È possibile impostare tre database master distinti che servono domini specifici:
 
@@ -68,13 +68,13 @@ Per configurare database aggiuntivi, è necessario creare un database vuoto ed e
 
 Per database master di estrazione
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote
 ```
 
 Per database master OMS
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales
 ```
 
@@ -86,7 +86,7 @@ Oltre ai database master, [!DNL Commerce] consente di configurare diversi databa
 
 È possibile aggiungere un database slave eseguendo il comando seguente:
 
-```bash
+```shell
 bin/magento setup:db-schema:add-slave
 ```
 

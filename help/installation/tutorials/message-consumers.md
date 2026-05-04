@@ -2,7 +2,7 @@
 title: Configurare i consumer di messaggi
 description: Per configurare il comportamento dei consumer della coda di messaggi di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: df292301-f4bd-49df-a241-7467c35bf1d8
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Prima di eseguire questo comando, è necessario eseguire *o* [installare l&#39;a
 
 La configurazione del comportamento del consumatore viene eseguita inviando coppie chiave/valore all’interno della funzione di configurazione:
 
-```bash
+```shell
 bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 ```
 

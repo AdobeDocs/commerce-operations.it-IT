@@ -2,9 +2,9 @@
 title: Gestire gli indicizzatori
 description: Scopri come visualizzare e gestire gli indicizzatori Adobe Commerce utilizzando gli strumenti della riga di comando. Scopri i comandi dell’indicizzatore, il controllo dello stato e le tecniche di reindicizzazione.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: ed21cbaf145493614d274da6eee41f6b1ae39ff2
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1025'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> I commercianti di Adobe Commerce che utilizzano Live Search, Catalog Service o Product Recommendations possono utilizzare l&#39;indicizzazione dei prezzi basata su [SaaS](https://experienceleague.adobe.com/it/docs/commerce/price-indexer/price-indexing).
+> I commercianti di Adobe Commerce che utilizzano Live Search, Catalog Service o Product Recommendations possono utilizzare l&#39;indicizzazione dei prezzi basata su [SaaS](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
 
 ## Visualizza stato indicizzatore
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 e versioni successive**: l&#39;indicizzatore [!DNL Customer Grid] supporta sia la modalità [!UICONTROL Update on Save] che la modalità [!UICONTROL Update by Schedule]. Impostazione predefinita: [!UICONTROL Update by Schedule].
 >
->Consulta [Best practice per la configurazione dell&#39;indicizzatore](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) nella _Playbook di implementazione_.
+>Consulta [Best practice per la configurazione dell&#39;indicizzatore](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) nella _Playbook di implementazione_.
 
 >[!INFO]
 >
->Prima di cambiare modalità di indicizzazione, impostare il sito Web sulla modalità [manutenzione](../../installation/tutorials/maintenance-mode.md) e [disabilitare i processi cron](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). In questo modo non si verificheranno blocchi del database.
+>Prima di cambiare modalità di indicizzazione, impostare il sito Web sulla modalità [manutenzione](../../installation/tutorials/maintenance-mode.md) e [disabilitare i processi cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). In questo modo non si verificheranno blocchi del database.
 
 Per specificare la configurazione dell&#39;indicizzatore:
 
@@ -295,7 +295,7 @@ bin/magento indexer:set-mode schedule catalog_category_product catalog_product_c
 
 Risultato di esempio:
 
-```
+```text
 Index mode for Indexer Category Products was changed from 'Update on Save' to 'Update by Schedule'
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
@@ -327,7 +327,7 @@ bin/magento indexer:set-status suspended catalog_category_product catalog_produc
 
 Risultato di esempio:
 
-```
+```text
 Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
 Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
 ```

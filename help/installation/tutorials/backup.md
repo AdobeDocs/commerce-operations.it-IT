@@ -2,9 +2,9 @@
 title: Backup e rollback del file system, dei supporti e del database
 description: Per eseguire il backup e il ripristino dell’applicazione Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,20 @@ Dopo il backup, puoi [eseguire il rollback](#rollback) in un secondo momento.
 
 >[!TIP]
 >
->Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Snapshot e gestione backup](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) nella _Guida cloud_.
+>Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Snapshot e gestione backup](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) nella _Guida cloud_.
 
 ## Abilita backup
 
 La funzione di backup è disabilitata per impostazione predefinita. Per attivare questa opzione, immettere il seguente comando CLI:
 
-```bash
+```shell
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
 >[!WARNING]
 >
->**Avviso di rimozione:**
->&#x200B;>La funzionalità di backup è obsoleta dal 2.1.16, 2.2.7 e 2.3.0. Si consiglia di esaminare ulteriori tecnologie di backup e strumenti di backup binari (come Percona XtraBackup).
+>**Avviso di deprecazione:**
+>La funzionalità di backup è obsoleta dal 2.1.16, 2.2.7 e 2.3.0. Si consiglia di esaminare ulteriori tecnologie di backup e strumenti di backup binari (come Percona XtraBackup).
 
 ## Imposta il limite di file aperti
 
@@ -54,7 +54,7 @@ Prima di continuare, se non lo hai già fatto, passa al [proprietario del file s
 
 Comando:
 
-```bash
+```shell
 ulimit -s 65536
 ```
 
@@ -70,7 +70,7 @@ Per impostare facoltativamente il valore nella shell Bash dell&#39;utente:
 1. Apri `/home/<username>/.bashrc` in un editor di testo.
 1. Aggiungi la seguente riga:
 
-   ```bash
+   ```shell
    ulimit -s 65536
    ```
 
@@ -84,7 +84,7 @@ Per impostare facoltativamente il valore nella shell Bash dell&#39;utente:
 
 Utilizzo comando:
 
-```bash
+```shell
 bin/magento setup:backup [--code] [--media] [--db]
 ```
 
@@ -103,13 +103,13 @@ Il comando esegue le seguenti operazioni:
 
 Ad esempio, per eseguire il backup del file system e del database,
 
-```bash
+```shell
 bin/magento setup:backup --code --db
 ```
 
 Messaggi simili alla seguente visualizzazione:
 
-```
+```shell
 Enabling maintenance mode
 Code backup is starting...
 Code backup filename: 1434133011_filesystem.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
@@ -128,7 +128,7 @@ Questa sezione illustra come ripristinare un backup precedente. È necessario co
 
 Per trovare il nome dei backup, immettere:
 
-```bash
+```shell
 bin/magento info:backups:list
 ```
 
@@ -136,19 +136,19 @@ La prima stringa nel nome del file di backup è la marca temporale.
 
 Per eseguire il rollback a un backup precedente, immettere:
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
 Ad esempio, per ripristinare un backup multimediale denominato `1440611839_filesystem_media.tgz`, immettere:
 
-```bash
+```shell
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz
 ```
 
 Messaggi simili alla seguente visualizzazione:
 
-```
+```shell
 [SUCCESS]: Media rollback completed successfully.
 Please set file permission of bin/magento to executable
 Disabling maintenance mode

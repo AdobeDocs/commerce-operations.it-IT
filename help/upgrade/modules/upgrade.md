@@ -2,9 +2,9 @@
 title: Aggiornare moduli ed estensioni
 description: Utilizza l’interfaccia della riga di comando e il Compositore per aggiornare moduli ed estensioni di Adobe Commerce.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -21,33 +21,33 @@ Per aggiornare un modulo o un’estensione:
 
    Nome aggiornamento per modulo:
 
-   ```bash
+   ```shell
    composer update vendor/module-name
    ```
 
    Aggiornamento per versione:
 
-   ```bash
+   ```shell
    composer require vendor/module-name ^x.x.x
    ```
 
 1. Esegui i seguenti comandi per aggiornare, distribuire e pulire la cache.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade --keep-generated
    ```
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 ## Estensioni in bundle con i fornitori (VBE)
 
-Adobe ha rimosso tutti i [VBE](https://experienceleague.adobe.com/it/docs/commerce-operations/upgrade-guide/modules/upgrade) nella versione 2.4.4. I fornitori continuano a supportare queste estensioni sul Marketplace Adobe Commerce.
+Adobe ha rimosso tutti i [VBE](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/modules/upgrade) nella versione 2.4.4. I fornitori continuano a supportare queste estensioni sul Marketplace Adobe Commerce.
 
 Se si desidera continuare a utilizzare queste estensioni con Adobe Commerce 2.4.4 e versioni successive, è necessario aggiornare le dipendenze del pacchetto corrispondenti nel file `composer.json` _prima_ dell&#39;aggiornamento alla versione 2.4.4. Contatta il fornitore per il nome e la versione del pacchetto da utilizzare.
 

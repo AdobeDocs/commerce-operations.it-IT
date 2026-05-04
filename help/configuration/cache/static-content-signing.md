@@ -3,9 +3,9 @@ title: Cache del contenuto statico
 description: Scopri la firma della cache di contenuti statici e l’ottimizzazione delle prestazioni in Adobe Commerce. Scopri come abilitare, disabilitare e configurare le funzioni di caching.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Commerce esegue questa operazione aggiungendo una versione di distribuzione all�
 
 Di seguito è riportato un esempio di URL firmato con una versione:
 
-```
+```text
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 
@@ -35,22 +35,22 @@ In questo modo viene modificato l’URL dei file statici e viene forzato il brow
 
 Commerce abilita questa funzione per impostazione predefinita; Adobe consiglia di mantenerla abilitata per evitare problemi relativi ai browser che utilizzano vecchie risorse statiche.
 
-La configurazione per la firma del contenuto statico è in [**[!UICONTROL Stores]**> Impostazioni > Configurazione >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
+La configurazione per la firma del contenuto statico è in [**[!UICONTROL Stores]**> Impostazioni > Configurazione >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
-- **Solo locale**: questa configurazione è disponibile se il sito è **non** in [Modalità di produzione](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=it#production-mode).
+- **Solo locale**: questa configurazione è disponibile se il sito è **non** in [Modalità di produzione](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
 - **Cloud**: questa configurazione è nascosta perché la modalità di produzione è rigorosamente applicata; è quindi necessario utilizzare la riga di comando come illustrato di seguito.
 
 ![Impostazioni file statici](../../assets/configuration/static-files-settings.png)
 
 Determinare lo stato:
 
-```bash
+```shell
 bin/magento config:show dev/static/sign
 ```
 
 Attiva o disattiva la firma di contenuto statico:
 
-```bash
+```shell
 bin/magento config:set dev/static/sign <value>
 ```
 

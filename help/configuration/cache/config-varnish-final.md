@@ -3,9 +3,9 @@ title: Verifica finale
 description: Scopri come eseguire la verifica finale della configurazione di Vernice con Adobe Commerce. Scopri i passaggi di test e le tecniche di risoluzione dei problemi.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ Innanzitutto, assicurati di utilizzare la [modalità sviluppatore](../cli/set-mo
 
 Ad esempio:
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
 Intestazioni importanti:
 
-```
+```text
 X-Magento-Cache-Control: max-age=86400, public, s-maxage=86400
 Age: 0
 X-Magento-Cache-Debug: MISS
@@ -70,7 +70,7 @@ Assicurarsi che la directory `<magento_root>/var/page_cache` sia vuota:
 1. Accedi al server Commerce o passa al proprietario del file system.
 1. Immetti il comando seguente:
 
-   ```bash
+   ```shell
    rm -rf <magento_root>/var/page_cache/*
    ```
 
@@ -83,4 +83,4 @@ Assicurarsi che la directory `<magento_root>/var/page_cache` sia vuota:
 
 >[!TIP]
 >
->Se si verificano 503 errori (recupero back-end non riuscito), vedere [Risoluzione dei problemi relativi agli errori 503 (servizio non disponibile)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=it) nel _Centro assistenza Adobe Commerce_.
+>Se si verificano 503 errori (recupero back-end non riuscito), vedere [Risoluzione dei problemi relativi agli errori 503 (servizio non disponibile)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) nel _Centro assistenza Adobe Commerce_.

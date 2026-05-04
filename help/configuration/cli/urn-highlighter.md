@@ -2,9 +2,9 @@
 title: Evidenziatore URN
 description: Scopri come impostare l’evidenziazione URN nell’IDE per lo sviluppo Adobe Commerce. Scopri la configurazione dello schema XSD e l’ottimizzazione dello sviluppo.
 exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Attualmente sono supportati solo PhpStorm e Visual Studio Code.
 
 Sintassi del comando:
 
-```bash
+```shell
 bin/magento dev:urn-catalog:generate <path>
 ```
 

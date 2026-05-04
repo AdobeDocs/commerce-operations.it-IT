@@ -3,9 +3,9 @@ title: Configurare memcached su Ubuntu
 description: Scopri come installare e configurare memcached su Ubuntu per il caching di Adobe Commerce. Scopri le istruzioni di configurazione e i suggerimenti di ottimizzazione.
 feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ L&#39;estensione `memcache` attualmente _non funziona con PHP 7_. Consulta la [d
 
 1. In qualità di utente con privilegi `root`, immetti il comando seguente:
 
-   ```bash
+   ```shell
    apt-get -y update
    ```
 
-   ```bash
+   ```shell
    apt-get -y install php5-memcached memcached
    ```
 
@@ -53,7 +53,7 @@ L&#39;estensione `memcache` attualmente _non funziona con PHP 7_. Consulta la [d
    1. Salvare le modifiche apportate a `memcached.conf` e uscire dall&#39;editor di testo.
    1. Riavvia memcached.
 
-      ```bash
+      ```shell
       service memcached restart
       ```
 
@@ -130,7 +130,7 @@ Aggiorna il browser. Il messaggio diventa `Successfully retrieved the data!`
 
 Infine, puoi visualizzare le chiavi memcache utilizzando Telnet:
 
-```bash
+```shell
 telnet localhost <memcache port>
 ```
 
@@ -142,7 +142,7 @@ stats items
 
 Il risultato è simile al seguente:
 
-```
+```text
 STAT items:2:number 1
 STAT items:2:age 106
 STAT items:2:evicted 0
@@ -165,4 +165,4 @@ flush_all
 quit
 ```
 
-[Ulteriori informazioni sul test Telnet](https://darkcoding.net/software/memcached-list-all-keys/)
+[Informazioni aggiuntive sul test Telnet](https://darkcoding.net/software/memcached-list-all-keys/)

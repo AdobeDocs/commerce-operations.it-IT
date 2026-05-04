@@ -2,9 +2,9 @@
 title: Abilita profilatura
 description: Scopri come abilitare MAGE Profiler per l’utilizzo con i tuoi strumenti di analisi.
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -63,13 +63,13 @@ Per abilitare i grafici delle dipendenze, utilizza l’opzione della variabile.
 
    Per abilitare il profiler utilizzando il tipo `html` e creare un flagfile:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable html
    ```
 
    Per abilitare il profiler utilizzando il tipo `csvfile` e creare un flagfile:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable csvfile
    ```
 
@@ -77,7 +77,7 @@ Per abilitare i grafici delle dipendenze, utilizza l’opzione della variabile.
 
    Per disattivare il profiler e rimuovere il file di flag:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:disable
    ```
 

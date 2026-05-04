@@ -4,9 +4,9 @@ description: Applica la patch ACP2E-3753 per risolvere il problema Adobe Commerc
 feature: Themes, Personalization
 role: Admin, Developer
 exl-id: ad44ffdd-f122-4119-83e3-1816951b662c
-source-git-commit: 2089fed83a207f9d0211273652ea320d2590f8d5
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ La patch ACP2E-3753 risolve il problema per cui le e-mail di avviso sul prodotto
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -40,7 +40,7 @@ Le e-mail di avviso sui prodotti in una configurazione con più store vengono se
 1. L’impostazione predefinita per gli avvisi sui prodotti è l’ambito che viene eseguito ogni minuto.
 1. Ignora/aggiungi parte del contenuto al file `stock.phtml` per entrambi i temi. Esempio di posizione del file:
 
-   ```
+   ```text
    app\design\frontend\Adobe\Taiwan\Magento_ProductAlert\templates\email\stock.phtml
    app\design\frontend\Adobe\Japan\Magento_ProductAlert\templates\email\stock.phtml
    ```
@@ -61,7 +61,7 @@ Le e-mail non includono i modelli impostati nel rispettivo sito web/store.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

@@ -2,9 +2,9 @@
 title: Configurare la proprietà e le autorizzazioni dei file
 description: Per configurare le autorizzazioni del file system per le installazioni locali di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1005'
 ht-degree: 0%
 
 ---
@@ -33,32 +33,32 @@ Per impostare le autorizzazioni prima di installare l&#39;applicazione:
 
 1. Se si dispone dell&#39;accesso alla riga di comando, immettere i seguenti comandi nell&#39;ordine indicato:
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
    Per immettere facoltativamente tutti i comandi su una riga, immettere quanto segue presupponendo che l&#39;applicazione sia installata in `/var/www/html/magento2`:
 
-   ```bash
+   ```shell
    cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} + && chmod u+x bin/magento
    ```
 
 1. Se non lo hai già fatto, ottieni l’applicazione in uno dei seguenti modi:
 
    * [Metapacchetto del compositore](../../composer.md)
-   * [Clona l&#39;archivio (solo sviluppatori partecipanti)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+   * [Clonare l’archivio (solo per sviluppatori che contribuiscono)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 1. Dopo aver impostato le autorizzazioni e la proprietà del file system, [installare l&#39;applicazione](../../advanced.md)
 
@@ -97,13 +97,13 @@ Questa sezione illustra come creare il proprietario del file system. (il proprie
 
 Per creare un utente su CentOS o Ubuntu, immettere il comando seguente come utente con privilegi `root`:
 
-```bash
+```shell
 adduser <username>
 ```
 
 Per assegnare all&#39;utente una password, immettere il comando seguente come utente con privilegi `root`:
 
-```bash
+```shell
 passwd <username>
 ```
 
@@ -115,11 +115,11 @@ Seguire le istruzioni visualizzate per creare una password per l&#39;utente.
 
 Ad esempio, per creare un utente denominato `magento_user` e assegnare una password all&#39;utente, immettere:
 
-```bash
+```shell
 sudo adduser magento_user
 ```
 
-```bash
+```shell
 sudo passwd magento_user
 ```
 
@@ -133,13 +133,13 @@ Per trovare il gruppo dell&#39;utente del server Web:
 
 * CentOS:
 
-  ```bash
+  ```shell
   grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
   o
 
-  ```bash
+  ```shell
   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
@@ -162,19 +162,19 @@ Per inserire il proprietario del file system nel gruppo principale del server We
 
 Ad esempio, per aggiungere l&#39;utente `magento_user` al gruppo primario `apache` su CentOS:
 
-```bash
+```shell
 sudo usermod -a -G apache magento_user
 ```
 
 Per confermare che l&#39;utente è membro del gruppo di server Web, immettere il comando seguente:
 
-```bash
+```shell
 groups magento_user
 ```
 
 Il seguente esempio mostra i gruppi primario (`magento`) e secondario (`apache`) dell&#39;utente.
 
-```bash
+```shell
 magento_user : magento_user apache
 ```
 
@@ -192,7 +192,7 @@ Per completare l&#39;operazione, riavviare il server Web:
 Se non lo hai già fatto, ottieni il software in uno dei seguenti modi:
 
 * [Metapacchetto del compositore](../../composer.md)
-* [Clona l&#39;archivio (solo sviluppatori partecipanti)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+* [Clonare l’archivio (solo per sviluppatori che contribuiscono)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 ### Imposta proprietà e autorizzazioni per il gruppo condiviso
 
@@ -201,35 +201,35 @@ Per impostare la proprietà e le autorizzazioni prima di installare l&#39;applic
 1. Accedere al server applicazioni come proprietario del file system o passare a tale proprietario.
 1. Immettete i seguenti comandi nell&#39;ordine indicato:
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-   ```bash
+   ```shell
    chown -R :<web server group> .
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
 Per immettere facoltativamente tutti i comandi su una riga, immettere quanto segue presupponendo che l&#39;applicazione sia installata in `/var/www/html/magento2` e che il nome del gruppo di server Web sia `apache`:
 
-```bash
+```shell
 cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
 Nel caso in cui le autorizzazioni del file system non siano impostate correttamente e non possano essere modificate dal proprietario del file system, è possibile immettere il comando come utente con privilegi `root`:
 
-```bash
+```shell
 cd /var/www/html/magento2 && sudo find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && sudo find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && sudo chown -R :apache . && sudo chmod u+x bin/magento
 ```
 
@@ -242,6 +242,6 @@ Dopo aver eseguito le altre attività descritte in questo argomento, immettere u
 
 Ad esempio:
 
-```bash
+```shell
 su magento_user
 ```

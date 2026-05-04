@@ -2,9 +2,9 @@
 title: Configurare ed eseguire processi cron
 description: Scopri come configurare e gestire i processi cron in Adobe Commerce. Scopri le tecniche di pianificazione, configurazione e risoluzione dei problemi.
 exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Per creare la scheda cronologica di Commerce:
 1. Passare alla directory di installazione di Commerce.
 1. Immetti il comando seguente:
 
-   ```bash
+   ```shell
    bin/magento cron:install [--force]
    ```
 
@@ -74,13 +74,13 @@ Utilizzare `--force` per riscrivere una scheda cronologica esistente.
 
 Per visualizzare la scheda cronologica, immettere il comando seguente come proprietario del file system:
 
-```bash
+```shell
 crontab -l
 ```
 
 Di seguito è riportato un esempio:
 
-```
+```shell
 #~ MAGENTO START c5f9e5ed71cceaabc4d4fd9b3e827a2b
 * * * * * /usr/bin/php /var/www/html/magento2/bin/magento cron:run 2>&1 | grep -v "Ran jobs by schedule" >> /var/www/html/magento2/var/log/magento.cron.log
 #~ MAGENTO END c5f9e5ed71cceaabc4d4fd9b3e827a2b
@@ -102,7 +102,7 @@ Per rimuovere la scheda cronologica di Commerce:
 1. Passare alla directory di installazione di Commerce.
 1. Immetti il comando seguente:
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
@@ -114,7 +114,7 @@ Per rimuovere la scheda cronologica di Commerce:
 
 Opzioni comando:
 
-```bash
+```shell
 bin/magento cron:run [--group="<cron group name>"]
 ```
 
@@ -122,13 +122,13 @@ dove `--group` specifica il gruppo cron da eseguire (omettere questa opzione per
 
 Per eseguire il processo cron di indicizzazione, immettere:
 
-```bash
+```shell
 bin/magento cron:run --group index
 ```
 
 Per eseguire il processo cron predefinito, immettere:
 
-```bash
+```shell
 bin/magento cron:run --group default
 ```
 

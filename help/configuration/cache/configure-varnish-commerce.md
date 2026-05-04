@@ -3,9 +3,9 @@ title: Configurazione vernice per Commerce
 description: Scopri come configurare Vernice in modo specifico per le applicazioni Adobe Commerce. Scopri gli aggiornamenti dei file di configurazione e le tecniche di gestione.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Per configurare Commerce per l&#39;utilizzo di Vernice:
 
    | Campo | Descrizione |
    | ----- | ----------- |
-   | Elenco di accesso | Immettere il nome host completo, l&#39;indirizzo IP o l&#39;intervallo di indirizzi IP con notazione [&#x200B; di tipo &#x200B;](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking)Classless Inter-Domain Routing (CIDR) per cui annullare la validità del contenuto. Vedi [Rimozione cache vernice](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
+   | Elenco di accesso | Immettere il nome host completo, l&#39;indirizzo IP o l&#39;intervallo di indirizzi IP con notazione ](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) di tipo [Classless Inter-Domain Routing (CIDR) per cui annullare la validità del contenuto. Vedi [Rimozione cache vernice](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
    | Host back-end | Immettere il nome host completo o l&#39;indirizzo IP e la porta di ascolto del server di origine _backend_ o _vernice_, ovvero il server che fornisce il contenuto, che verrà accelerato da Vernice. In genere, si tratta del server web. Vedi [Server back-end della cache di vernice](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Porta back-end | Porta di ascolto del server di origine. |
    | Periodo di tolleranza | Determina per quanto tempo Vernice fornisce contenuti non aggiornati se il backend non risponde. Il valore predefinito è 300 secondi. |
@@ -32,7 +32,7 @@ Per configurare Commerce per l&#39;utilizzo di Vernice:
 
 È inoltre possibile attivare la vernice dalla riga di comando, anziché accedere all&#39;amministratore, utilizzando lo strumento dell&#39;interfaccia della riga di comando C:
 
-```bash
+```shell
 bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/caching_application 2
 ```
 
@@ -50,15 +50,15 @@ Per esportare un file di configurazione vernice dall&#39;amministratore:
 
 1. Esegui il backup di `default.vcl` esistente. Quindi rinominare il file `varnish.vcl` appena esportato in `default.vcl`. Copiare quindi il file nella directory `/etc/varnish/`.
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak2
    ```
 
-   ```bash
+   ```shell
    mv <download_directory>/varnish.vcl default.vcl
    ```
 
-   ```bash
+   ```shell
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
@@ -76,11 +76,11 @@ Per esportare un file di configurazione vernice dall&#39;amministratore:
 
 1. Riavvia Varnish e il tuo server web:
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
-   ```bash
+   ```shell
    service httpd restart
    ```
 

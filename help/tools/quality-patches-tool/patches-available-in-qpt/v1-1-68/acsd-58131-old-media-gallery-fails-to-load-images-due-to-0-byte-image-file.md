@@ -4,13 +4,13 @@ description: Applica la patch ACSD-58131 per risolvere il problema di Adobe Comm
 feature: Media
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: b09749a1e56ab6a7b613135ca252fd69757669d0
+exl-id: 8fdca43d-b79f-4036-8694-de6fa1417a52
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58131: la galleria di vecchi supporti non riesce a caricare le immagini a causa di un file di immagine a 0 byte
 
@@ -28,13 +28,13 @@ La patch ACSD-58131 risolve il problema che impediva il rendering delle immagini
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
 Quando si inserisce un&#39;immagine a 0 byte nella directory della raccolta multimediale, la vecchia raccolta multimediale non riesce a eseguire il rendering delle immagini. Il sistema aggiornato ignora i file a 0 byte non validi, visualizza le immagini valide come previsto e registra un avviso per ogni file non valido.
 
-```
+```text
 [2024-05-02T14:00:39.616459+00:00] report.WARNING: The image empty2.jpg is invalid and cannot be displayed in the gallery. [] []
 ```
 
@@ -60,7 +60,7 @@ La raccolta multimediale rimane funzionante anche se è presente un&#39;immagine
 
 La raccolta multimediale non riesce a caricare immagini dalla directory `wysiwyg` a causa di un errore critico registrato in `var/log/system.log`:
 
-```
+```text
 [2024-03-22T05:00:55.100934+00:00] report.CRITICAL: Exception: Notice: getimagesizefromstring(): Error reading from ! in /app/project/vendor/magento/module-cms/Model/Wysiwyg/Images/Storage.php on line 426 in /app/project/vendor/magento/framework/App/ErrorHandler.php:62
 ```
 
@@ -69,7 +69,7 @@ La raccolta multimediale non riesce a caricare immagini dalla directory `wysiwyg
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

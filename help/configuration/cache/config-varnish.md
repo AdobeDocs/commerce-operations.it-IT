@@ -3,16 +3,16 @@ title: Configurare e utilizzare vernice
 description: Scopri come configurare e utilizzare il caching di vernice per Adobe Commerce. Scopri le tecniche di accelerazione HTTP, archiviazione dei file e ottimizzazione delle prestazioni.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
 
 # Configura vernice
 
-[Varnish Cache](https://varnish-cache.org) è un acceleratore dell&#39;applicazione Web open-source (detto anche _acceleratore HTTP_ o _proxy HTTP inverso nella cache_). La vernice memorizza (o memorizza in cache) file o frammenti di file in memoria, il che consente a Vernice di ridurre il tempo di risposta e il consumo di larghezza di banda della rete su richieste equivalenti future. A differenza dei server web come Apache e Nginx, Varnish è stato progettato per essere usato esclusivamente con il protocollo HTTP.
+[Varnish Cache](https://www.varnish.org/) è un acceleratore dell&#39;applicazione Web open-source (detto anche _acceleratore HTTP_ o _proxy HTTP inverso nella cache_). La vernice memorizza (o memorizza in cache) file o frammenti di file in memoria, il che consente a Vernice di ridurre il tempo di risposta e il consumo di larghezza di banda della rete su richieste equivalenti future. A differenza dei server web come Apache e Nginx, Varnish è stato progettato per essere usato esclusivamente con il protocollo HTTP.
 
 [Requisiti di sistema](../../installation/system-requirements.md) elenca le versioni supportate di Vernice.
 
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Per ulteriori informazioni sulla vernice, consulta:
 
-- [Immagine di vernice grande](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
-- [Opzioni avvio vernice](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
-- [Vernice e prestazioni del sito Web](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
+- [Il quadro vernice grande](https://www.varnish.org/docs/users-guide/intro/#users-intro)
+- [Opzioni di avvio vernice](https://www.varnish.org/docs/users-guide/running/#users-running)
+- [Vernice e prestazioni del sito web](https://www.varnish.org/docs/users-guide/performance/)
 
 ## Diagramma topologico della vernice
 
@@ -69,7 +69,7 @@ Conosciamo i seguenti problemi di vernice:
 
 - Possibile errore durante l&#39;installazione di Commerce:
 
-  ```
+  ```text
   Error 503 Service Unavailable
   Service Unavailable
   XID: 303394517

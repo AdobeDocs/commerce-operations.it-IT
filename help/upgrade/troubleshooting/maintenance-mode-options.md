@@ -2,7 +2,7 @@
 title: Opzioni della modalità di manutenzione per l’aggiornamento
 description: Crea una pagina personalizzata per la modalità di manutenzione che i clienti possono visualizzare nella vetrina di Adobe Commerce durante l’esecuzione di un aggiornamento.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -68,11 +68,11 @@ Per reindirizzare il traffico a una pagina di manutenzione personalizzata:
    - Reindirizza tutto il traffico alla pagina di manutenzione
    - Inserire nell&#39;elenco Consentiti determinati IP in modo che un amministratore possa aggiornare il software Magento.
 
-   Inserire nell&#39;elenco Consentiti L&#39;esempio seguente 192.0.2.110.
+   L&#39;esempio seguente 192.0.2.110.
 
    Aggiungi quanto segue alla fine del file di configurazione Apache:
 
-   ```
+   ```text
    RewriteEngine On
    RewriteCond %{REMOTE_ADDR} !^192\.0\.2\.110
    RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f
@@ -90,7 +90,7 @@ Per reindirizzare il traffico a una pagina di manutenzione personalizzata:
 
 1. Immetti il comando seguente:
 
-   ```bash
+   ```shell
    touch <web server docroot>/maintenance.enable
    ```
 
@@ -144,13 +144,13 @@ Per reindirizzare il traffico a una pagina di manutenzione personalizzata:
 
 1. Immetti il comando seguente:
 
-   ```bash
+   ```shell
    touch <magento_root>/maintenance.enable
    ```
 
 1. Ricarica la configurazione nginx:
 
-   ```bash
+   ```shell
    service nginx reload
    ```
 
@@ -159,6 +159,6 @@ Per reindirizzare il traffico a una pagina di manutenzione personalizzata:
 1. Al termine dell&#39;aggiornamento, eliminare o rinominare `maintenance.enable`
 1. Ricarica la configurazione nginx:
 
-   ```bash
+   ```shell
    service nginx reload
    ```

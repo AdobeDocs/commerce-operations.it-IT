@@ -3,9 +3,9 @@ title: Impostazioni PHP
 description: Segui questi passaggi per installare le estensioni PHP richieste e configurare le impostazioni PHP richieste per le installazioni locali di Adobe Commerce.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: e0c62575f71a6d212ba9dab33e38587950e3d783
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Questo argomento illustra come impostare le opzioni PHP richieste.
 >
 >Le versioni PHP supportate variano a seconda della versione di Adobe Commerce. Consulta [requisiti di sistema](../system-requirements.md) per le versioni PHP supportate dalla versione che stai installando.
 
-Per informazioni sulla configurazione cloud, consulta [Impostazioni PHP](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/app/php-settings) nella guida _Commerce su infrastruttura cloud_.
+Per informazioni sulla configurazione cloud, consulta [Impostazioni PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) nella guida _Commerce su infrastruttura cloud_.
 
 ## Controllo processo PHP
 
@@ -29,13 +29,13 @@ Per informazioni sulla configurazione cloud, consulta [Impostazioni PHP](https:/
 
 PHP è installato per impostazione predefinita sulla maggior parte delle distribuzioni Linux. In questo argomento si presuppone che sia già stato installato PHP. Per verificare se PHP è installato, immetti quanto segue sulla riga di comando:
 
-```bash
+```shell
 php -v
 ```
 
 Se PHP è installato, viene visualizzato un messaggio simile al seguente:
 
-```
+```text
 PHP <supported-version> (cli) (built: <build-date>) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v<matching-version>, Copyright (c) Zend Technologies
@@ -54,7 +54,7 @@ Per verificare le estensioni installate:
 
 1. Elencare i moduli installati.
 
-   ```bash
+   ```shell
    php -m
    ```
 
@@ -69,7 +69,7 @@ Per verificare le estensioni installate:
 
 - Impostare il fuso orario di sistema per PHP; in caso contrario, errori come il seguente display durante l&#39;installazione e operazioni correlate al tempo come cron potrebbero non funzionare:
 
-```
+```text
 PHP Warning:  date(): It is not safe to rely on the system's timezone settings. [more messages follow]
 ```
 
@@ -112,7 +112,7 @@ Per trovare la configurazione del server Web, eseguire un file [`phpinfo.php`](o
 
 Per individuare la configurazione della riga di comando PHP, immettete
 
-```bash
+```shell
 php --ini | grep "Loaded Configuration File"
 ```
 
@@ -134,7 +134,7 @@ Utilizza le seguenti linee guida per trovarlo:
 
   In caso contrario, utilizzare il comando seguente per individuarlo:
 
-  ```bash
+  ```shell
   sudo find / -name 'opcache.ini'
   ```
 
@@ -205,10 +205,9 @@ Per impostare `opcache.ini` opzioni:
 
 Consulta i seguenti articoli di supporto Adobe Commerce per assistenza nella risoluzione dei problemi PHP:
 
-- [Errore di versione PHP o errore 404 durante l&#39;accesso ad Adobe Commerce in un browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [Errori impostazioni PHP](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [Estensione PHP mcrypt non installata correttamente](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
-- [Problemi relativi al controllo della disponibilità della versione PHP](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [Errori irreversibili PHP comuni e soluzioni](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [Errore di versione PHP o errore 404 durante l’accesso ad Adobe Commerce in un browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
+- [Errori impostazioni PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [Problemi relativi al controllo della disponibilità della versione PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [Errori irreversibili PHP comuni e soluzioni](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2025-04-04 22:27:22 -->

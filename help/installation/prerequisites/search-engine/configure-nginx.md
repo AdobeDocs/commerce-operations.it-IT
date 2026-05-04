@@ -3,9 +3,9 @@ title: Configurare Nginx per il motore di ricerca
 description: Segui questi passaggi per configurare un motore di ricerca con il server web Nginx per le installazioni locali di Adobe Commerce.
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -51,25 +51,25 @@ Questa sezione illustra come specificare chi può accedere al server nginx.
 
 1. Inginx di riavvio:
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 
 1. Verificare il funzionamento del proxy immettendo il comando seguente:
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
    Ad esempio, se il proxy utilizza la porta 8080:
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
    Messaggi simili alla seguente visualizzazione per indicare il successo:
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -87,9 +87,9 @@ Poiché nginx supporta in modo nativo l&#39;autenticazione HTTP Basic, è consig
 
 Risorse aggiuntive:
 
-* [Impostare l&#39;autenticazione tramite password con Nginx su Ubuntu 14.04 (Oceano digitale)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
-* [Autenticazione HTTP Di Base Con Nginx (HowtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
-* [Configurazioni Nginx di esempio per Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
+* [Come impostare l’autenticazione tramite password con Nginx su Ubuntu 14.04 (Oceano digitale)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+* [Autenticazione HTTP di base con Nginx (HowtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
+* [Esempio di configurazioni Nginx per Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
 Per ulteriori informazioni, consulta le sezioni seguenti:
 
@@ -106,7 +106,7 @@ Per creare una password:
 
 1. Immettere il comando seguente per determinare se `htpasswd` è già installato:
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
@@ -119,11 +119,11 @@ Per creare una password:
 
 1. Creare una directory `/etc/nginx/passwd` per archiviare le password:
 
-   ```bash
+   ```shell
    mkdir -p /etc/nginx/passwd
    ```
 
-   ```bash
+   ```shell
    htpasswd -c /etc/nginx/passwd/.<filename> <username>
    ```
 
@@ -131,9 +131,9 @@ Per creare una password:
    >
    >Per motivi di sicurezza, `<filename>` deve essere nascosto, ovvero deve iniziare con un punto.
 
-1. *(facoltativo).* Per aggiungere un altro utente al file della password, immettere lo stesso comando senza l&#39;opzione `-c` (crea):
+1. *(Facoltativo).* Per aggiungere un altro utente al file della password, immettere lo stesso comando senza l&#39;opzione `-c` (crea):
 
-   ```bash
+   ```shell
    htpasswd /etc/nginx/passwd/.<filename> <username>
    ```
 
@@ -188,7 +188,7 @@ Questa sezione illustra come specificare chi può accedere al server del motore 
 
 1. Immetti il seguente comando per creare una directory in cui memorizzare la configurazione di autenticazione:
 
-   ```bash
+   ```shell
    mkdir /etc/nginx/auth/
    ```
 
@@ -209,7 +209,7 @@ Questa sezione illustra come specificare chi può accedere al server del motore 
 1. Se si imposta un proxy protetto, eliminare `/etc/nginx/conf.d/magento_es_auth.conf`.
 1. Riavvia nginx e continua con la sezione successiva:
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 

@@ -5,9 +5,9 @@ feature: Products, REST
 role: Admin, Developer
 exl-id: 0435c06e-337e-4320-acc6-fa79a3b34008
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ La patch ACSD-63286 risolve il problema per cui i prodotti assegnati a un catalo
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -41,13 +41,13 @@ Quando i prodotti vengono assegnati a un catalogo condiviso tramite API, non ven
 1. Crea un prodotto semplice e assegnalo a una categoria.
 1. Eseguire la reindicizzazione parziale.
 
-   ```
+   ```shell
    bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1
    ```
 
 1. Utilizzare la seguente richiesta API per assegnare il prodotto creato al catalogo condiviso `pub/rest/all/V1/sharedCatalog/<id>/assignProducts`:
 
-   ```
+   ```json
    {
        "products":[{
            "sku": "24-MB06"
@@ -58,11 +58,11 @@ Quando i prodotti vengono assegnati a un catalogo condiviso tramite API, non ven
 
 1. Eseguire la seguente cron per cancellare le code ed eseguire la reindicizzazione parziale.
 
-   ```
+   ```shell
    bin/magento cron:run --group=consumers
    ```
 
-   ```
+   ```shell
    bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1
    ```
 
@@ -70,7 +70,7 @@ Quando i prodotti vengono assegnati a un catalogo condiviso tramite API, non ven
 1. Consultate la pagina delle categorie front-end. I prodotti appena assegnati non sono visibili.
 1. Eseguire una reindicizzazione manuale:
 
-   ```
+   ```shell
    bin/magento index:reindex
    ```
 
@@ -87,7 +87,7 @@ Il prodotto viene visualizzato sul front-end solo dopo la reindicizzazione manua
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 
 ## Lettura correlata

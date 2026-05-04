@@ -2,9 +2,9 @@
 title: Libreria JavaScript per la privacy
 description: Scopri come utilizzare gli strumenti personalizzati per accedere ed eliminare le informazioni personali dei clienti raccolte da Adobe Commerce.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ Questa libreria fornisce un set di funzioni per creare richieste di dati sulla p
 
 >[!NOTE]
 >
->Se la modalità di restrizione dei cookie [è abilitata](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=it), Commerce non raccoglie i dati comportamentali fino al consenso dell&#39;acquirente. Se la modalità di restrizione dei cookie [!UICONTROL **Modalità**] è disabilitata, Commerce raccoglie i dati comportamentali per impostazione predefinita.
+>Se la modalità di restrizione dei cookie [è abilitata](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html), Commerce non raccoglie i dati comportamentali fino al consenso dell&#39;acquirente. Se la modalità di restrizione dei cookie [!UICONTROL **Modalità**] è disabilitata, Commerce raccoglie i dati comportamentali per impostazione predefinita.
 
 ## Installazione
 
 La libreria JavaScript per la privacy è disponibile nel percorso CDN seguente: `commerce.adobe.net/magentoprivacy.js`
 
-Dopo aver installato il file, dovrai aggiungerlo a un modulo personalizzato o a un tema nell’istanza di Adobe Commerce. Segui le istruzioni descritte nell&#39;argomento [Utilizza JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) personalizzato per eseguire questa attività.
+Dopo aver installato il file, dovrai aggiungerlo a un modulo personalizzato o a un tema nell’istanza di Adobe Commerce. Segui le istruzioni descritte nell&#39;argomento [Utilizza JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom) personalizzato per eseguire questa attività.
 
 ### Inizializzazione
 

@@ -2,9 +2,9 @@
 title: Eseguire le utilità di supporto
 description: Scopri come eseguire le utility di supporto per risolvere i problemi del progetto Adobe Commerce. Scopri gli strumenti di diagnostica e supporto incorporati.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Le utility di supporto di Adobe Commerce, denominate anche [Data Collector](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/support#data-collector), consentono agli utenti di raccogliere informazioni sulla risoluzione dei problemi del sistema che possono essere utilizzate dal team di supporto.
+Le utility di supporto di Adobe Commerce, denominate anche [Data Collector](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector), consentono agli utenti di raccogliere informazioni sulla risoluzione dei problemi del sistema che possono essere utilizzate dal team di supporto.
 
 Adobe Commerce utilizza questi backup, detti anche _dump_, per analizzare i problemi che richiedono l&#39;accesso al codice. Di seguito è riportato uno scenario tipico:
 
@@ -42,7 +42,7 @@ Questo comando esegue il backup del codice e lo comprime nel formato `tar.gz`.
 
 Opzioni comando:
 
-```bash
+```shell
 bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--logs]
 ```
 
@@ -54,7 +54,7 @@ Dove:
 
 Ad esempio, per creare un backup del codice denominato `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
 
-```bash
+```shell
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
 ```
 
@@ -68,7 +68,7 @@ Questo comando esegue il backup del database di Commerce e lo comprime nel forma
 
 Opzioni comando:
 
-```bash
+```shell
 bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
@@ -81,7 +81,7 @@ Dove:
 
 I dati riservati includono le informazioni sui clienti delle tabelle di database seguenti:
 
-```
+```text
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ Al termine del comando, fornire il backup del database al supporto Adobe Commerc
 
 Forniamo comandi che visualizzano i percorsi delle utility richieste dall’agente di raccolta dati e dalla riga di comando. Puoi utilizzare questi comandi, ad esempio, se nella riga di comando o in Amministrazione vengono visualizzati errori come i seguenti:
 
-```
+```text
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Eseguire i seguenti comandi nell&#39;ordine indicato per visualizzare i percorsi
 
 Di seguito è riportato un esempio:
 
-```
+```text
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

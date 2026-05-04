@@ -1,10 +1,10 @@
 ---
 title: Abilitare o disabilitare i moduli
-description: Per gestire i moduli Adobe Commerce, segui la procedura riportata di seguito.
+description: Scopri come abilitare, disabilitare e controllare lo stato dei moduli Adobe Commerce dalla riga di comando utilizzando lo stato del modulo e le opzioni correlate.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Questo comando non ha prerequisiti.
 
 Utilizza il seguente comando per elencare i moduli abilitati e disabilitati:
 
-```bash
+```shell
 bin/magento module:status [--enabled] [--disabled] <module-list>
 ```
 
@@ -29,17 +29,17 @@ Dove
 
 >[!NOTE]
 >
->Non puoi abilitare o disabilitare i moduli direttamente nei progetti cloud. È necessario eseguire questi comandi localmente e quindi inviare le modifiche al file `app/etc/config.php` per un ambiente. Vedi [Flusso di lavoro del progetto Pro: flusso di lavoro di distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=it#deployment-workflow).
+>Non puoi abilitare o disabilitare i moduli direttamente nei progetti cloud. È necessario eseguire questi comandi localmente e quindi inviare le modifiche al file `app/etc/config.php` per un ambiente. Vedi [Flusso di lavoro del progetto Pro: flusso di lavoro di distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Attivazione modulo, disattivazione
 
 Per attivare o disattivare i moduli disponibili, utilizzare il comando seguente:
 
-```bash
+```shell
 bin/magento module:enable [-c|--clear-static-content] [-f|--force] [--all] <module-list>
 ```
 
-```bash
+```shell
 bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <module-list>
 ```
 
@@ -56,7 +56,7 @@ Dove
 
 Ad esempio, per disabilitare il modulo `Magento_Weee`, immettere:
 
-```bash
+```shell
 bin/magento module:disable Magento_Weee
 ```
 
@@ -66,13 +66,13 @@ Per informazioni importanti sull&#39;attivazione e la disattivazione dei moduli,
 
 Se sono stati attivati uno o più moduli, eseguire il comando seguente per aggiornare il database:
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
 Quindi pulisci la cache:
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 

@@ -5,9 +5,9 @@ feature: Catalog Management, B2B
 role: Admin, Developer
 exl-id: 111325fa-8ed5-45f9-9e68-b52f4425d253
 type: Troubleshooting
-source-git-commit: 8124ce31fbe3a94638fba057419efa7f2a139b84
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ La patch ACP2E-3705 risolve il problema in cui l&#39;esecuzione del cron `indexe
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -45,7 +45,7 @@ L&#39;esecuzione del cron `indexer_update_all_views` ha esito negativo quando `M
 1. Abilita **[!UICONTROL Category Permissions]**.
 1. Impostare i seguenti indicizzatori sulla modalità **[!UICONTROL Update on Schedule]**:
 
-   ```
+   ```shell
    bin/magento indexer:set-mode schedule catalogpermissions_category catalogpermissions_product
    ```
 
@@ -62,7 +62,7 @@ La reindicizzazione è stata completata senza errori.
 
 Il processo cron `indexer_update_all_views` rileva il seguente errore:
 
-```
+```text
 Magento\Framework\DB\Adapter\TableNotFoundException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogpermissions_category_cl__tmp67acb6582cec12_69065236' doesn't exist, query was: SELECT MAX(id) as max, COUNT(*) as cnt FROM (SELECT `catalogpermissions_category_cl__tmp67acb6582cec12_69065236`.* FROM
 ```
 
@@ -79,4 +79,4 @@ Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del m
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
 * [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella guida degli strumenti.
-* [Reindicizzazione in modalità parallela](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindexing-in-parallel-mode) nella Guida alla configurazione di Commerce.
+* [Reindicizzazione in modalità parallela](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindexing-in-parallel-mode) nella Guida alla configurazione di Commerce.

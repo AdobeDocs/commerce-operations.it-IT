@@ -4,9 +4,9 @@ description: Applica la patch ACSD-65935 per risolvere il problema di Adobe Comm
 feature: Orders, GraphQL
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ La patch ACSD-65935 risolve il problema in cui la query GraphQL `customerOrders`
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -41,7 +41,7 @@ La query GraphQL `customerOrders` restituisce un errore interno del server quand
 1. Vai al backend ed elimina un prodotto.
 1. Creare un token cliente:
 
-```
+```text
 https://localhost/pub/graphql
 mutation {
   generateCustomerToken(email: "test@test.com", password: "123123qA") {
@@ -52,7 +52,7 @@ mutation {
 
 1. Recuperare l&#39;elenco degli ordini utilizzando il filtro `eligible_for_return` (utilizzato in PWA per recuperare gli ordini dei clienti):
 
-```
+```text
 https://localhost/pub/graphql
 {
   customerOrders {
@@ -78,7 +78,7 @@ L’elenco degli ordini viene raccolto senza errori.
 
 Eccezione: *Errore interno del server*
 
-```
+```graphql
 [2025-05-16T23:42:15.174025+00:00] report.ERROR: Call to a member function getIsReturnable() on null
 
 {"exception":"[object] (GraphQL\\Error\\Error(code: 0): Call to a member function getIsReturnable() on null at /var/www/html/localhost/vendor/webonyx/graphql-php/src/Error/Error.php:170) [previous exception] [object] (Error(code: 0): Call to a member function getIsReturnable() on null at /var/www/html/localhost/magento2ee/app/code/Magento/Rma/Helper/Data.php:644)"}
@@ -92,7 +92,7 @@ Eccezione: *Errore interno del server*
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

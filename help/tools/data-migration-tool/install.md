@@ -4,9 +4,9 @@ description: Scopri come installare  [!DNL Data Migration Tool] per trasferire d
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Utilizza uno dei seguenti metodi per verificare la versione di Magento in uso:
 
 Se il software Magento è stato scaricato utilizzando un metapacchetto Compositore, immettere il comando seguente:
 
-```bash
+```shell
 php <magento_root>/bin/magento --version
 ```
 
@@ -39,11 +39,11 @@ php <magento_root>/bin/magento --version
 
 Se hai clonato l’archivio GitHub di Magento 2, immetti i seguenti comandi:
 
-```bash
+```shell
 cd <your Magento 2 clone directory>
 ```
 
-```bash
+```shell
 git branch
 ```
 
@@ -60,7 +60,7 @@ Vai alla pagina [Versioni](https://github.com/magento/data-migration-tool/releas
 
 È possibile installare [!DNL Data Migration Tool] da:
 
-- [&quot;repo.magento.com&quot;](#install-from-repomagentocom)
+- [`repo.magento.com`](#install-from-repomagentocom)
 - [GitHub](#install-from-github)
 
 Prima dell’installazione, assicurati di disporre di:
@@ -76,11 +76,11 @@ Per installare [!DNL Data Migration Tool], è necessario aggiornare `composer.js
 1. Passare alla directory radice dell&#39;applicazione.
 1. Immettete i seguenti comandi:
 
-   ```bash
+   ```shell
    composer config repositories.magento composer https://repo.magento.com
    ```
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:<version>
    ```
 
@@ -88,11 +88,11 @@ Per installare [!DNL Data Migration Tool], è necessario aggiornare `composer.js
 
    Ad esempio, per la versione 2.2.0, immetti:
 
-   ```bash
+   ```shell
    composer config repositories.magento composer https://repo.magento.com
    ```
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:2.2.0
    ```
 
@@ -106,11 +106,11 @@ Se hai clonato l&#39;archivio GitHub, segui i passaggi seguenti per installare [
 1. Passare alla directory radice dell&#39;applicazione.
 1. Immettete i seguenti comandi:
 
-   ```bash
+   ```shell
    composer config repositories.data-migration-tool git https://github.com/magento/data-migration-tool
    ```
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:<version>
    ```
 
@@ -118,11 +118,11 @@ Se hai clonato l&#39;archivio GitHub, segui i passaggi seguenti per installare [
 
    Ad esempio, per la versione 2.2.0, immetti:
 
-   ```bash
+   ```shell
    composer config repositories.data-migration-tool git https://github.com/magento/data-migration-tool
    ```
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:2.2.0
    ```
 

@@ -5,9 +5,9 @@ feature: B2B, GraphQL
 role: Admin, Developer
 type: Troubleshooting
 exl-id: cd83c868-29d8-4d7c-9067-af7597056d35
-source-git-commit: e60194341bf79ca3ecdc505cf30f226b8f1b6c7f
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ La patch ACSD-66434 risolve il problema di assenza di **[!UICONTROL Customer ID]
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -40,7 +40,7 @@ La query della società [!DNL GraphQL] restituisce `null` per **[!UICONTROL Cust
 1. Dall’amministratore di Commerce, abilita le funzioni B2B e crea una società di test.
 1. Genera un token Bearer per l&#39;amministratore della società utilizzando la seguente mutazione [!DNL GraphQL]:
 
-```
+```graphql
 mutation {
   generateCustomerToken(email: "admin_email@example.com", password: "admin_password") {
     token
@@ -50,7 +50,7 @@ mutation {
 
 1. Utilizza il token generato per recuperare la struttura aziendale del cliente con la seguente query [!DNL GraphQL]:
 
-```
+```graphql
 query {
   company {
     id
@@ -87,7 +87,7 @@ query {
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

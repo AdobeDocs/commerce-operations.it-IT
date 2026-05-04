@@ -2,9 +2,9 @@
 title: Avvia consumer coda messaggi
 description: Scopri come avviare i consumer di code di messaggi per le operazioni asincrone di Adobe Commerce. Scopri la gestione dei consumatori e la configurazione delle funzionalità B2B.
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -17,19 +17,19 @@ ht-degree: 0%
 
 Per visualizzare un elenco di tutti i consumatori:
 
-```bash
+```shell
 bin/magento queue:consumers:list
 ```
 
 Per avviare i consumer della coda messaggi:
 
-```bash
+```shell
 bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>] [--single-thread] [--area-code=<value>] [--multi-process=<value>] <consumer_name>
 ```
 
 Dopo aver utilizzato tutti i messaggi disponibili, il comando termina. È possibile eseguire nuovamente il comando manualmente o con un processo cron. È inoltre possibile eseguire più istanze del comando `magento queue:consumers:start` per elaborare code di messaggi di grandi dimensioni. È ad esempio possibile aggiungere `&` al comando per eseguirlo in background, tornare a un prompt e continuare a eseguire i comandi:
 
-```bash
+```shell
 bin/magento queue:consumers:start <consumer_name> &
 ```
 

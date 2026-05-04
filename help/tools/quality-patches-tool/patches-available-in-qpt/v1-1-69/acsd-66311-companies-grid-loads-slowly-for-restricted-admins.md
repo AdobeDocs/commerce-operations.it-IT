@@ -5,9 +5,9 @@ role: Admin, Developer
 feature: B2B
 type: Troubleshooting
 exl-id: e470078b-dd10-4b0b-a489-bc88f025fded
-source-git-commit: 3337907b1893260d6cb18b1c4fbf45dfa1f3d6d5
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '425'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ La patch ACSD-66311 risolve il problema relativo al rallentamento del caricament
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -56,7 +56,7 @@ La griglia delle aziende viene caricata lentamente per gli utenti amministratori
 
    1. Esegui la seguente query per verificare la distribuzione:
 
-      ```
+      ```sql
            SELECT website_id, COUNT(*) 
            FROM customer_entity 
            GROUP BY website_id; 
@@ -67,12 +67,12 @@ La griglia delle aziende viene caricata lentamente per gli utenti amministratori
       | Numero di clienti | Numero di società |
       |---------------------|---------------------|
       | 1 | 4.500 |
-      | 2 | ~1.000 |
+      | 2 | ~1,000 |
       | ~595 k | 1 |
 
    1. Esegui la seguente query per verificare la distribuzione:
 
-      ```
+      ```sql
             SELECT customer_count, COUNT(*) AS number_of_companies
             FROM (
               SELECT company_id, COUNT(customer_id) AS customer_count
@@ -100,7 +100,7 @@ Il caricamento della pagina richiede più di 14 minuti.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

@@ -5,9 +5,9 @@ feature: Shipping/Delivery, Shopping Cart
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 4c33da14-38b2-4a3c-a680-849b62dfb896
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ La patch ACSD-66041 risolve il problema per cui i codici postali di Irlanda (IE)
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -63,7 +63,7 @@ Impossibile cercare le località di prelievo in Irlanda (IE) a causa di un eleme
 
 1. Utilizza le seguenti variabili:
 
-   ```
+   ```json
    {
        "radius": 81,
        "term": "dublin:IE"
@@ -79,7 +79,7 @@ I codici postali irlandesi sono disponibili per cercare località di prelievo.
 * *Errore interno del server* restituito.
 * `var/log/exception.log` contiene il seguente errore:
 
-  ```
+  ```yaml
   report.ERROR: Provided countryId does not exist.  {"exception":"[object] (GraphQL\\Error\\Error(code: 0): Provided countryId does not exist.
   ```
 
@@ -88,7 +88,7 @@ I codici postali irlandesi sono disponibili per cercare località di prelievo.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

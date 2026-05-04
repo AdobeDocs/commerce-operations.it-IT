@@ -5,9 +5,9 @@ feature: System
 role: Admin, Developer
 exl-id: a0fa2ac9-e61f-43d5-81ff-edf178b1abc0
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce (tutti i metodi di implementazione) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -39,7 +39,7 @@ Alcune operazioni di aggiornamento del database generano errori di tipo &quot;Ta
 1. Imposta la modalità indicizzatore su **[!UICONTROL Update on Schedule]**.
 1. Inserire record nelle tabelle `cl` utilizzando i seguenti comandi SQL:
 
-   ```
+   ```sql
    INSERT INTO catalogrule_product_cl SELECT NULL, entity_id FROM catalog_product_entity;
    INSERT INTO catalogrule_rule_cl SELECT NULL, entity_id FROM catalog_product_entity;
    INSERT INTO catalogsearch_fulltext_cl SELECT NULL, entity_id FROM catalog_product_entity;
@@ -69,7 +69,7 @@ Le operazioni del database vengono eseguite senza errori.
 
 Si è verificato un errore durante l&#39;esecuzione:
 
-```
+```text
 SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento24.design_config_dummy_cl__tmp663bb682960345_17794892' doesn't exist in /www/magento24/lib/internal/Magento/Framework/DB/Statement/Pdo/Mysql.php:90
 ```
 
@@ -78,7 +78,7 @@ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento24.design_conf
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 
 ## Lettura correlata

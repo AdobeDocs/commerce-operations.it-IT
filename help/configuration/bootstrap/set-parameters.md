@@ -2,9 +2,9 @@
 title: Imposta il valore dei parametri di bootstrap
 description: Scopri come impostare i parametri di bootstrap per l’applicazione Commerce.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '617'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Questa sezione illustra come impostare i valori dei parametri di bootstrap utili
 
 Ad esempio, è possibile utilizzare la variabile di ambiente di sistema `MAGE_PROFILER` per specificare una modalità nel modo seguente:
 
-```
+```text
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -43,7 +43,7 @@ Imposta la variabile utilizzando un comando specifico della shell. Poiché la si
 
 Esempio di shell Bash per CentOS:
 
-```bash
+```shell
 export MAGE_PROFILER=firebug
 ```
 
@@ -80,7 +80,7 @@ Puoi modificare `.htaccess` in uno dei seguenti percorsi, a seconda del punto di
 
 1. Impostare il valore di `MAGE_PROFILER` su uno dei valori seguenti:
 
-   ```
+   ```text
    firebug
    csvfile
    <custom value>
@@ -124,13 +124,13 @@ Le procedure seguenti mostrano come impostare la modalità applicazione in un ho
 1. Salva le modifiche e esci dall’editor di testo.
 1. Abilita l&#39;host virtuale se non lo hai già fatto:
 
-   ```bash
+   ```shell
    a2ensite <virtual host config file name>
    ```
 
    Ad esempio:
 
-   ```bash
+   ```shell
    a2ensite my.magento.conf
    ```
 

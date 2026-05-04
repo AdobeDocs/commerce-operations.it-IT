@@ -3,9 +3,9 @@ title: Configura  [!DNL Data Migration Tool]
 description: Scopri i due metodi per configurare  [!DNL Data Migration Tool]  per trasferire dati tra Magento 1 e Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,11 @@ Prima di eseguire la migrazione dei dati, è necessario creare un modulo di Mage
 
    Ad esempio, se esegui la migrazione di `Magento 1.9.3.6 Community Edition` a `Magento 2 Open Source`:
 
-   ```bash
+   ```shell
    cd <your Magento 2 install dir>
    ```
 
-   ```bash
+   ```shell
    cp vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.6/config.xml.dist app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.3.6/config.xml
    ```
 
@@ -118,13 +118,13 @@ Per configurare [!DNL Data Migration Tool] per la migrazione:
 
 1. Passa alla seguente directory:
 
-   ```bash
+   ```shell
    <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>
    ```
 
 1. Immettere il comando seguente per creare un `config.xml` dal campione fornito:
 
-   ```bash
+   ```shell
    cp config.xml.dist config.xml
    ```
 
@@ -208,7 +208,7 @@ Per utilizzare i file di mappatura:
 
 1. Aggiornare il percorso del file appena copiato nel nodo `<options>` di `config.xml`. Il percorso aggiornato deve essere uno dei seguenti:
 
-   1. Percorso assoluto del file, ad esempio `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Percorso assoluto del file, ad. g. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. percorso file relativo del modulo magento/data-migration-tool: `etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. Percorso file relativo alla directory principale di Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 

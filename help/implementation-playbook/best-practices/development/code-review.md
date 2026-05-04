@@ -4,9 +4,9 @@ description: Scopri le best practice per la revisione del codice nella fase di s
 feature: Best Practices
 role: Developer
 exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1180'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Gli sviluppatori possono utilizzare l’automazione per rivedere la compilazione
 
 - Compilazione DI: eseguire i seguenti comandi CLI per verificare se il codice può essere compilato senza problemi.
 
-  ```bash
+  ```shell
   bin/magento module:disable -n -q --all || exit;
   bin/magento module:enable -n -q --all || exit;
   bin/magento cache:enable -n -q || exit;
@@ -133,26 +133,26 @@ Gli sviluppatori possono utilizzare l’automazione per rivedere la compilazione
 
 - Schema di database `whitelist.json`: eseguire il comando CLI seguente e verificare che il file `db_schema_whitelist.json` non sia stato aggiunto o modificato.
 
-  ```bash
+  ```shell
   bin/magento setup:db-declaration:generate-whitelist --module-name[=MODULE-NAME]
   ```
 
 - Composer validate - Convalida il file `composer.json` eseguendo il seguente comando CLI nella directory che contiene il file `composer.json`.
 
-  ```bash
+  ```shell
   composer validate
   ```
 
 - Standard di codifica: consente di installare ed eseguire lo strumento Standard di codifica e di eseguirlo in base al modulo. Nel file seguente viene illustrato come consentire l&#39;esecuzione in qualsiasi posizione digitando `mcs ./app/code/Vendor/Module/`.
 
-  ```bash
+  ```shell
   #!/usr/bin/env bash
   $HOME/web/magento/magento-coding-standard/vendor/bin/phpcs --standard=Magento2 "$@"
   ```
 
 - Phpstan
 
-  ```bash
+  ```shell
   ./vendor/bin/phpstan analyze app/code/Vendor/Module
   ```
 

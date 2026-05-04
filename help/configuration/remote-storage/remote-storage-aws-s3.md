@@ -3,9 +3,9 @@ title: Configurare il bucket AWS S3 per l’archiviazione remota
 description: Configura il progetto Commerce per utilizzare il servizio di archiviazione AWS S3 per l’archiviazione remota.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -28,19 +28,19 @@ ht-degree: 0%
 
 1. Disattiva l&#39;archiviazione del database predefinita.
 
-   ```bash
+   ```shell
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
 1. Configura Commerce per l’utilizzo del bucket privato. Consulta [Opzioni di archiviazione remota](remote-storage.md#remote-storage-options) per un elenco completo dei parametri.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
    ```
 
 1. Sincronizzare i file multimediali con l&#39;archiviazione remota.
 
-   ```bash
+   ```shell
    bin/magento remote-storage:sync
    ```
 

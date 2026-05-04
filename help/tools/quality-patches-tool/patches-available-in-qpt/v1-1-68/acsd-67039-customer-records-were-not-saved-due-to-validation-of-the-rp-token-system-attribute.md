@@ -5,10 +5,10 @@ feature: Customers, Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
 exl-id: e5995e28-b6b5-4955-a52a-895842c6b6e8
-source-git-commit: 17c35f6da57440c2704879309a58c46b2c4eea25
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 0%
+source-wordcount: '394'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ La patch ACSD-67039 risolve il problema che impediva il salvataggio dei record d
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -43,7 +43,7 @@ La codifica dei segni diacritici causa errori di convalida su `rp_token`, che è
    *d337b914e91ff703b1e94ba4156aadf0*
 1. Impostare i valori seguenti nel database per qualsiasi cliente nella tabella `customer_entity`:
 *`rp_token` = *incr4869*
-*`rp_token_created_at` = *2021-04-29 20:06:14*
+*`rp_token_created_at` =* 2021-04-29 20:06:14*
 1. Nel pannello di amministrazione, passa a **[!UICONTROL Customers]** > **[!UICONTROL All Customers]**.
 1. Modifica il cliente per il quale hai appena aggiornato i valori precedenti.
 1. Fare clic su **[!UICONTROL Save Customer]** o **[!UICONTROL Save and Continue Edit]**.
@@ -57,7 +57,7 @@ I valori del cliente vengono salvati correttamente.
 Il record cliente non viene salvato e l&#39;utente amministratore visualizza il messaggio di errore *Si è verificato un errore durante il salvataggio del cliente.*
 `system.log` contiene il seguente errore:
 
-```
+```text
 report.CRITICAL: Exception message: Notice: iconv(): Detected an incomplete multibyte character in input string in /vendor/magento/module-eav/Model/Attribute/Data/Text.php on line 190
 ```
 
@@ -66,7 +66,7 @@ report.CRITICAL: Exception message: Notice: iconv(): Detected an incomplete mult
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool]
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud
 
 ## Lettura correlata
 

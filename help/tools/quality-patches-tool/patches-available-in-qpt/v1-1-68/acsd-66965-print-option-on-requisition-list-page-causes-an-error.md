@@ -4,13 +4,13 @@ description: Applicare la patch ACSD-66965 per risolvere un problema in Adobe Co
 feature: B2B
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 7682a326a6c703a08dd6d0fac5319ac38e1bc3c8
+exl-id: ccd0920a-074c-4851-a45a-09c43b04fe64
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66965: l&#39;opzione **[!UICONTROL Print]** nella pagina **[!UICONTROL Requisition List]** causa un errore
 
@@ -28,7 +28,7 @@ La patch ACSD-66965 risolve il problema che causa un errore nell&#39;opzione **[
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -53,7 +53,7 @@ L&#39;opzione **[!UICONTROL Print]** nella pagina **[!UICONTROL Requisition List
 
 Viene visualizzato il seguente messaggio di errore: *Si è verificato un errore durante l&#39;esecuzione dell&#39;applicazione. Vedere il registro eccezioni per i dettagli.*
 
-```
+```text
 Call to a member function setCollection() on null in /vendor/magento/module-requisition-list/Block/Requisition/View/Items/Grid.php:146
 ```
 
@@ -62,7 +62,7 @@ Call to a member function setCollection() on null in /vendor/magento/module-requ
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

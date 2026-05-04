@@ -3,9 +3,9 @@ title: Migrare i dati
 description: Scopri come avviare la migrazione dei dati da Magento 1 a Magento 2 con  [!DNL Data Migration Tool].
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Per ulteriori dettagli, consulta la sezione [primi passaggi](overview.md#first-s
 
 Per avviare la migrazione dei dati, eseguire:
 
-```bash
+```shell
 bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 

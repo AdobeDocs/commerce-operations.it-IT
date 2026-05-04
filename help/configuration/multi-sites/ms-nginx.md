@@ -2,9 +2,9 @@
 title: Configurare più siti Web con Nginx
 description: Segui questo tutorial per configurare più siti web con Nginx.
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '972'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Si presuppone che:
 
   Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
 
-  Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurare più siti Web o store](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=it) nella _guida di Commerce sull&#39;infrastruttura cloud_.
+  Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurare più siti Web o store](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) nella _guida di Commerce sull&#39;infrastruttura cloud_.
 
 - Accettare più domini in un file host virtuale o utilizzare un host virtuale per sito Web. I file di configurazione host virtuale si trovano in `/etc/nginx/sites-available`.
 - Utilizza `nginx.conf.sample` fornito da Commerce con le sole modifiche descritte in questa esercitazione.
@@ -83,13 +83,13 @@ Questa configurazione si espande dopo [configurazione nginx](../../installation/
 1. Salvare le modifiche apportate ai file e uscire dall&#39;editor di testo.
 1. Verifica la configurazione del server:
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. In caso di esito positivo, viene visualizzato il seguente messaggio:
 
-   ```
+   ```yaml
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -97,11 +97,11 @@ Questa configurazione si espande dopo [configurazione nginx](../../installation/
 
 1. Creare un collegamento simbolico nella directory `/etc/nginx/sites-enabled`:
 
-   ```bash
+   ```shell
    cd /etc/nginx/sites-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/magento magento
    ```
 
@@ -141,13 +141,13 @@ Per ulteriori dettagli sulla direttiva mappa, consulta la [documentazione nginx 
 1. Salvare le modifiche apportate ai file e uscire dall&#39;editor di testo.
 1. Verifica la configurazione del server:
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. In caso di esito positivo, viene visualizzato il seguente messaggio:
 
-   ```
+   ```yaml
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -155,15 +155,15 @@ Per ulteriori dettagli sulla direttiva mappa, consulta la [documentazione nginx 
 
 1. Creare collegamenti simbolici nella directory `/etc/nginx/sites-enabled`:
 
-   ```bash
+   ```shell
    cd /etc/nginx/sites-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/french.mysite.mg french.mysite.mg
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/german.mysite.mg german.mysite.mg
    ```
 
@@ -253,7 +253,7 @@ location ~ (index|get|static|report|404|503|health_check)\.php$ {
 
 Eseguire il comando seguente per pulire le cache `config` e `full_page`.
 
-```bash
+```shell
 bin/magento cache:clean config full_page
 ```
 
@@ -280,7 +280,7 @@ A meno che il DNS non sia configurato per gli URL dei tuoi archivi, devi aggiung
 >[!INFO]
 >
 >- Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
->- Sono necessarie attività aggiuntive per configurare Adobe Commerce sull&#39;infrastruttura cloud; consulta [Configurare più siti Web o store Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=it) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
+>- Sono necessarie attività aggiuntive per configurare Adobe Commerce sull&#39;infrastruttura cloud; consulta [Configurare più siti Web o store Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
 
 ### Risoluzione dei problemi
 

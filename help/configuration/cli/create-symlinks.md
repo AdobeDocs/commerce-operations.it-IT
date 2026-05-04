@@ -2,9 +2,9 @@
 title: Creare collegamenti simbolici a file LESS
 description: Scopri come creare collegamenti simbolici a file LESS per lo sviluppo Adobe Commerce. Scopri il collegamento dei fogli di stile e l’ottimizzazione del flusso di lavoro di sviluppo.
 exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Per creare collegamenti simbolici a file LESS:
 
 Opzioni comando:
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="..."] [--theme="..."] [file1] ... [fileN]
 ```
 
@@ -37,13 +37,13 @@ Nella tabella seguente vengono illustrati i parametri e i valori di questo coman
 
 Ad esempio, per creare un file LESS per il tema front-end denominato `VendorName/themeName` nelle impostazioni locali di `en_US` utilizzando un file CSS denominato `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`, immettere il comando seguente:
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="frontend" --theme="VendorName/themeName" css/styles-l
 ```
 
 Per confermare il successo, vengono visualizzati i seguenti messaggi:
 
-```
+```text
 Processed Area: frontend, Locale: en_US, Theme: VendorName/themeName, File type: less.
 -> css/styles-l.less
 Successfully processed.
@@ -51,6 +51,6 @@ Successfully processed.
 
 Per creare MENO file per l&#39;amministratore:
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy --locale="en_US" --area="adminhtml" --theme="Magento/backend" css/styles css/styles-old
 ```

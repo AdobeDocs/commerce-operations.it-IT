@@ -2,9 +2,9 @@
 title: Rapporti sulle dipendenze
 description: Scopri come creare rapporti sulle dipendenze che mostrano le dipendenze di moduli, circolari e framework in Adobe Commerce. Scopri gli strumenti di analisi e reporting.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Una dipendenza in un commento è anche una dipendenza.
 
 Opzioni comando:
 
-```bash
+```shell
 bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework} [-d|--directory="<path>"] [-o|--output="<path and filename"]
 ```
 
@@ -51,7 +51,7 @@ Se come argomento non viene passata alcuna directory o nome file, come directory
 
 Di seguito è riportata una parte dell&#39;output per un report delle dipendenze di un modulo di esempio:
 
-```
+```text
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ Di seguito è riportata una parte dell&#39;output per un report delle dipendenze
 
 Di seguito è riportata una parte dell&#39;output per un report di esempio sulle dipendenze circolari.
 
-```
+```text
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ Di seguito è riportata una parte dell&#39;output per un report di esempio sulle
 
 Di seguito è riportata una parte dell&#39;output per un report di esempio sulle dipendenze del framework:
 
-```
+```text
 "Dependencies of framework:","Total number"
 "","111"
 

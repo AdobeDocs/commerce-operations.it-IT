@@ -4,9 +4,9 @@ description: Scopri come unire e minimizzare i file CSS e JavaScript (JS) per i 
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: a08560eb307638a36fdc52224c41bdf2c5d47763
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Per abilitare l’unione CSS in Adobe Commerce sull’infrastruttura cloud:
 
 1. Esegui questo comando localmente:
 
-   ```bash
+   ```shell
    bin/magento config:set --lock-config dev/css/merge_css_files 1
    ```
 
@@ -55,7 +55,7 @@ Per abilitare la minimizzazione CSS in Adobe Commerce sull’infrastruttura clou
 
 1. Esegui questo comando localmente:
 
-   ```bash
+   ```shell
    bin/magento config:set --lock-config dev/css/minify_files 1
    ```
 
@@ -73,7 +73,7 @@ Per abilitare la minimizzazione JS in Adobe Commerce sull’infrastruttura cloud
 
 1. Esegui questo comando localmente:
 
-   ```bash
+   ```shell
    bin/magento config:set --lock-config dev/js/minify_files 1
    ```
 
@@ -89,7 +89,7 @@ Per abilitare la minimizzazione JS in Adobe Commerce sull’infrastruttura cloud
 
 Puoi anche abilitare il bundling integrato di Adobe Commerce (bundling di base) dalla riga di comando:
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
@@ -105,6 +105,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 - [Impostazioni di ottimizzazione lato client](../../../performance/configuration.md#client-side-optimization-settings)
 - [Suggerimenti per il bundling](../../../performance/configuration.md#bundling-tips) in *Best practice per la configurazione*: strumenti di bundle di terze parti, HTTP/2 e indicazioni su unione JS e CSS obsoleta
-- [Guida utente: ottimizzazione dei file di risorse](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
-- [Guida per gli sviluppatori front-end: unione CSS, minimizzazione e prestazioni del sito](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [Guida utente: ottimizzazione dei file di risorse](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [Guida per gli sviluppatori di Frontend: unione CSS, minimizzazione e prestazioni del sito](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Bundling JavaScript avanzato](../../../performance/advanced-js-bundling.md)

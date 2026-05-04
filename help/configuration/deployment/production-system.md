@@ -2,9 +2,9 @@
 title: Configurazione del sistema di produzione
 description: Scopri come impostare un sistema di produzione per l’applicazione Commerce.
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Per impostare una macchina di produzione:
 
    Crea la directory:
 
-   ```bash
+   ```shell
    mkdir -p ~/.ssh/.composer
    ```
 
@@ -74,19 +74,19 @@ Per impostare i valori sensibili:
 1. Passare alla directory di installazione di Commerce.
 1. Immetti il comando seguente:
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set {configuration path} {value}
    ```
 
    Ad esempio, per impostare su `1234` il valore della chiave API di YouTube, immetti
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set catalog/product_video/youtube_api_key 1234
    ```
 
    Puoi anche impostare uno o più valori in modo interattivo, come segue:
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set -i
    ```
 

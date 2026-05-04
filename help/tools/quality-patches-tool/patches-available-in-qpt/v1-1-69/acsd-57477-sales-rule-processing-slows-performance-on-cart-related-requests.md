@@ -4,13 +4,13 @@ description: Applica la patch ACSD-57477 per risolvere il problema di Adobe Comm
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 00fce49fbe5432a16324937e0430a08ec7c41188
+exl-id: 3944b4d4-09c0-49a4-9a7e-8e1758d9d73c
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-57477: l’elaborazione delle regole di vendita rallenta le prestazioni sulle richieste relative al carrello
 
@@ -28,7 +28,7 @@ La patch ACSD-57477 risolve il problema che causa un rallentamento delle prestaz
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -39,13 +39,13 @@ L’elaborazione delle regole di vendita rallenta le prestazioni nelle richieste
 1. Aggiungi 1000 attributi di prodotto.
 1. Crea un carrello utilizzando la query GraphQL di seguito.
 
-   ```
+   ```graphql
    mutation {createEmptyCart}{noformat}
    ```
 
 1. Aggiungi un prodotto al carrello utilizzando la query GraphQL di seguito.
 
-   ```
+   ```graphql
    mutation AddProductsToCart($cartId: String!, $products: [CartItemInput!]!) {
        addProductsToCart(cartId: $cartId, cartItems: $products) {
          cart {
@@ -59,7 +59,7 @@ L’elaborazione delle regole di vendita rallenta le prestazioni nelle richieste
 
 1. Imposta queste variabili.
 
-   ```
+   ```json
    {
      "cartId": "id_here",
      "products": [
@@ -75,7 +75,7 @@ L’elaborazione delle regole di vendita rallenta le prestazioni nelle richieste
 1. Questo problema si verifica solo quando si inviano i parametri come variabili di GraphQL. Se includi i parametri nella query GraphQL stessa, questo problema non si verifica.
 1. Invia la stessa richiesta **Aggiungi al carrello** dopo aver aggiunto i parametri alla query GraphQL stessa.
 
-   ```
+   ```graphql
    mutation {
     addProductsToCart(
       cartId: "id_here"
@@ -109,7 +109,7 @@ Le prestazioni dell&#39;operazione GraphQL `AddProductsToCart` peggiorano perch�
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool]
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud
 
 ## Lettura correlata
 

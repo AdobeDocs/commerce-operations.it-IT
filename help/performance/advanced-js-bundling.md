@@ -2,9 +2,9 @@
 title: Bundling JavaScript avanzato
 description: Scopri il bundling avanzato di JavaScript in Adobe Commerce. Scopri le linee guida per l’implementazione e le strategie di ottimizzazione.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 5d827da35414fa75649f86a2d96fa8ab9086601a
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2283'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Consulta [Suggerimenti per il bundling](configuration.md#bundling-tips) in *Best
 
 Per abilitare il bundling incorporato dalla riga di comando:
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
@@ -53,7 +53,7 @@ Il bundling Commerce riduce il numero di connessioni per pagina, ma per ogni ric
 
 Per abilitare l&#39;unione incorporata dalla riga di comando:
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/merge_files 1
 ```
 
@@ -156,7 +156,7 @@ In questo file sono disponibili più voci per ciascuno dei nodi di configurazion
 })
 ```
 
-#### &#x200B;4. Aggiungi un nodo di moduli
+#### 4\. Aggiungi un nodo di moduli
 
 Alla fine del file `build.js`, aggiungi l&#39;array module[] come segnaposto per i bundle che definirai per la vetrina in un secondo momento.
 
@@ -174,7 +174,7 @@ Alla fine del file `build.js`, aggiungi l&#39;array module[] come segnaposto per
 })
 ```
 
-#### &#x200B;5. Recupera [!DNL RequireJS] dipendenze
+#### 5\. Recupera [!DNL RequireJS] dipendenze
 
 Puoi recuperare tutte le dipendenze del modulo [!DNL RequireJS] dai tipi di pagina del tuo store utilizzando:
 
@@ -219,7 +219,7 @@ phantomjs deps.js <i>url-to-specific-page</i> &gt; <i>text-file-presentation-pag
 
 Ad esempio, ecco quattro pagine dell’archivio esempi a tema Luma che rappresentano i quattro tipi di pagina che utilizzeremo per creare i nostri quattro bundle (homepage, categoria, prodotto, carrello):
 
-```
+```text
 phantomjs deps.js http://m2.loc/ > bundle/homepage.txt
 phantomjs deps.js http://m2.loc/women/tops-women/jackets-women.html > bundle/category.txt
 phantomjs deps.js http://m2.loc/beaumont-summit-kit.html > bundle/product.txt
@@ -237,11 +237,11 @@ Object.keys(window.require.s.contexts._.defined)
 
 Questo comando (utilizzato nello script [!DNL PhantomJS]) crea lo stesso elenco di dipendenze [!DNL RequireJS] e le visualizza nella console del browser. Lo svantaggio di questo approccio è che dovrai creare un pacchetto personalizzato o file di testo di tipo pagina.
 
-#### &#x200B;6. Formattare e filtrare l’output
+#### 6\. Formattare e filtrare l’output
 
 Dopo aver unito le dipendenze [!DNL RequireJS] in file di testo di tipo pagina, è possibile utilizzare il comando seguente in ogni file di dipendenza di tipo pagina per sostituire le virgole nei file con nuove righe:
 
-```bash
+```shell
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -250,26 +250,26 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 È inoltre necessario rimuovere tutti i mixin per ciascun file perché i mixin duplicano le dipendenze. Utilizza il seguente comando su ciascun file di dipendenza:
 
-```bash
+```shell
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
 ...
 ```
 
-#### &#x200B;7. Identificare bundle univoci e comuni
+#### 7\. Identificare bundle univoci e comuni
 
 L’obiettivo è quello di creare un bundle comune di file JavaScript necessari a tutte le pagine. In questo modo il browser deve caricare solo il bundle comune insieme a uno o più tipi di pagina specifici.
 
 Apri un terminale nella directory principale di Commerce e utilizza il seguente comando per verificare di disporre di dipendenze da suddividere in bundle separati:
 
-```bash
+```shell
 sort bundle/*.txt |uniq -c |sort -n
 ```
 
 Questo comando unisce e ordina le dipendenze trovate nei file `bundle/*.txt`.  L’output mostra anche il numero di file che contengono ciascuna dipendenza:
 
-```
+```text
 1 buildTools,
 1 jquery/jquery.parsequery,
 1 jsbuild,
@@ -292,7 +292,7 @@ L’output mostra solo tre tipi di pagina (home page, categoria e prodotto), che
 
 Questo ci dice che probabilmente possiamo migliorare le velocità di caricamento delle pagine del nostro negozio suddividendo le nostre dipendenze in un bundle diverso, una volta che sappiamo quali tipi di pagina hanno bisogno di quali dipendenze.
 
-#### &#x200B;8. Creare un file di distribuzione delle dipendenze
+#### 8\. Creare un file di distribuzione delle dipendenze
 
 Per individuare i tipi di pagina necessari per le dipendenze, creare un nuovo file nella directory principale di Commerce denominato `deps-map.sh` e copiare il codice seguente:
 
@@ -318,13 +318,13 @@ Puoi anche trovare lo script in [https://www.unix.com/shell-programming-and-scri
 
 Apri un terminale nella directory principale di Commerce ed esegui il file:
 
-```bash
+```shell
 bash deps-map.sh
 ```
 
 L’output di questo script, applicato ai tre tipi di pagina di esempio, dovrebbe essere simile al seguente (ma molto più lungo):
 
-```
+```text
 bundle/product.txt   -->   buildTools,
 bundle/category.txt  -->   jquery/jquery.parsequery,
 bundle/product.txt   -->   jsbuild,
@@ -340,7 +340,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 Queste informazioni sono sufficienti per creare una configurazione di bundle.
 
-#### &#x200B;9. Creare bundle nel file build.js
+#### 9\. Creare bundle nel file build.js
 
 Apri il file di configurazione `build.js` e aggiungi i bundle al nodo `modules`. Ogni bundle deve definire le seguenti proprietà:
 
@@ -387,11 +387,11 @@ In questo esempio vengono riutilizzate `mage/bootstrap` e `requirejs/require` ri
 
 I passaggi seguenti descrivono il processo di base per la generazione di bundle Commerce più efficienti. Puoi automatizzare questo processo come preferisci, ma dovrai comunque utilizzare `nodejs` e `r.js` per generare effettivamente i bundle. E se i temi hanno personalizzazioni relative a JavaScript e non possono riutilizzare lo stesso file `build.js`, potrebbe essere necessario creare diverse `build.js` configurazioni per tema.
 
-#### &#x200B;1. Generare siti di archiviazione statici
+#### &#x200B;1. Genera siti di archiviazione statici
 
 Prima di generare i bundle, esegui il comando di distribuzione statica:
 
-```bash
+```shell
 php -f bin/magento setup:static-content:deploy -f -a frontend
 ```
 
@@ -404,25 +404,25 @@ Questo comando genera distribuzioni statiche dell&#39;archivio per ogni tema e l
 
 Per generare bundle per tutti i temi e le impostazioni internazionali dello store, ripeti i passaggi seguenti per ciascun tema e ciascuna impostazione locale dello store.
 
-#### &#x200B;2. Spostare il contenuto dell&#39;archivio statico in una directory temporanea
+#### &#x200B;2. Spostare il contenuto dell’archivio statico in una directory temporanea
 
 Innanzitutto, devi spostare il contenuto statico dalla directory di destinazione ad una directory temporanea perché [!DNL RequireJS] sostituisce tutto il contenuto all&#39;interno della directory di destinazione.
 
-```bash
+```shell
 mv pub/static/frontend/Magento/{theme}/{locale} pub/static/frontend/Magento/{theme}/{locale}_tmp
 ```
 
 Ad esempio:
 
-```bash
+```shell
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp
 ```
 
-#### &#x200B;3. Eseguire r.js optimizer
+#### &#x200B;3. Eseguire l’ottimizzatore r.js
 
 Eseguire quindi r.js optimizer sul file `build.js` dalla directory principale di Commerce. I percorsi di tutte le directory e dei file sono relativi alla directory di lavoro.
 
-```bash
+```shell
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
@@ -430,11 +430,11 @@ Questo comando genera i bundle in una sottodirectory `bundles` della directory d
 
 L’elenco dei contenuti della nuova directory del bundle potrebbe essere simile al seguente:
 
-```bash
+```shell
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```
+```text
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
@@ -445,7 +445,7 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 -rw-r--r--  1 root root   74233 Mar 28 11:24 shipping.js
 ```
 
-#### &#x200B;4. Configurare [!DNL RequireJS] per l&#39;utilizzo dei bundle
+#### &#x200B;4. Configura [!DNL RequireJS] per l&#39;utilizzo dei bundle
 
 Per fare in modo che [!DNL RequireJS] utilizzi i bundle, aggiungi un callback `onModuleBundleComplete` dopo il nodo `modules` nel file `build.js`:
 
@@ -481,11 +481,11 @@ require.config({});
 }
 ```
 
-#### &#x200B;5. Rieseguire il comando di distribuzione
+#### &#x200B;5. Riesegui il comando di distribuzione
 
 Esegui il comando seguente per distribuire:
 
-```bash
+```shell
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
@@ -504,7 +504,7 @@ require.config({
 >
 >Durante la configurazione dei bundle, assicurati di inserire le chiamate `requirejs.config()` nell&#39;ordine in cui desideri che vengano eseguite, in quanto le chiamate vengono eseguite nell&#39;ordine in cui compaiono.
 
-#### &#x200B;6. Verificare i risultati
+#### &#x200B;6. Verifica i risultati
 
 Una volta caricata la pagina, noterai che il browser sta caricando diverse dipendenze e bundle. Ad esempio, di seguito sono riportati i risultati per il profilo &quot;Slow 3G&quot;:
 

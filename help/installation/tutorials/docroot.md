@@ -3,9 +3,9 @@ title: Modifica la directory principale dei documenti per migliorare la sicurezz
 description: Impedisci l’accesso non autorizzato al file system locale di Adobe Commerce basato su browser.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Il nome e la posizione del file host virtuale dipendono dalla versione di Apache
 1. Accedere al server applicazioni.
 1. Modifica il file host virtuale:
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -92,11 +92,11 @@ Il nome e la posizione del file host virtuale dipendono dalla versione di Apache
 
 1. Riavvia Apache:
 
-   ```bash
+   ```shell
    systemctl restart apache2
    ```
 
-## &#x200B;2. Aggiorna l’URL di base
+## &#x200B;2. Aggiornare l’URL di base
 
 Se si è aggiunto un nome di directory al nome host o all&#39;indirizzo IP del server per creare l&#39;URL di base al momento dell&#39;installazione dell&#39;applicazione (ad esempio `http://192.168.33.10/magento2`), è necessario rimuoverlo.
 
@@ -106,7 +106,7 @@ Se si è aggiunto un nome di directory al nome host o all&#39;indirizzo IP del s
 
 1. Accedi al database:
 
-   ```bash
+   ```shell
    mysql -u <user> -p
    ```
 
@@ -134,7 +134,7 @@ Aggiungere il nodo seguente al file `env.php`.
 
 Per ulteriori informazioni, fare riferimento al [riferimento env.php](../../configuration/reference/config-reference-envphp.md).
 
-## &#x200B;4. Cambiare modalità
+## &#x200B;4. Cambia modalità
 
 [Le modalità applicazione](../../configuration/bootstrap/application-modes.md), che includono `production` e `developer`, sono progettate per migliorare la sicurezza e semplificare lo sviluppo. Come suggeriscono i nomi, è necessario passare alla modalità `developer` quando si estende o si personalizza l&#39;applicazione e passare alla modalità `production` quando l&#39;esecuzione avviene in un ambiente live.
 
@@ -143,22 +143,22 @@ Il passaggio da una modalità all’altra è un passaggio importante per verific
 1. Vai alla directory di installazione.
 1. Passa alla modalità `production`.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Aggiorna il browser e verifica che la vetrina sia visualizzata correttamente.
 1. Passa alla modalità `developer`.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 

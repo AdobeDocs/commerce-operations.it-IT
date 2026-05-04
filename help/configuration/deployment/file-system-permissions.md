@@ -3,9 +3,9 @@ title: Autorizzazioni di accesso ai file system
 description: Come impostare il proprietario o i proprietari del file system dell'applicazione Commerce per un sistema di sviluppo e produzione.
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -74,19 +74,19 @@ Per rimuovere le autorizzazioni di scrittura per file e directory dal gruppo del
 
 1. Passa alla modalità di produzione.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Rimuovi le autorizzazioni di scrittura per le directory seguenti.
 
-   ```bash
+   ```shell
    find app/code var/view_preprocessed vendor pub/static app/etc generated/code generated/metadata \( -type f -or -type d \) -exec chmod u-w {} + && chmod o-rwx app/etc/env.php
    ```
 
 1. Rende eseguibile lo strumento della riga di comando.
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
@@ -98,7 +98,7 @@ Per rendere i file e le directory scrivibili in modo da poter aggiornare i compo
 1. Passare alla directory di installazione di Commerce.
 1. Immettete i seguenti comandi:
 
-   ```bash
+   ```shell
    chmod -R u+w .
    ```
 
@@ -139,7 +139,7 @@ I file nelle directory seguenti devono essere scrivibili sia dagli utenti in mod
 - `pub/media`
 - `app/etc`
 
-Impostare il bit [`setgid`](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/) sulle directory in modo che le autorizzazioni ereditino sempre dalla directory padre.
+Impostare il bit [`setgid`](https://linuxconfig.org/how-to-use-special-permissions-the-setuid-setgid-and-sticky-bits) sulle directory in modo che le autorizzazioni ereditino sempre dalla directory padre.
 
 >[!INFO]
 >
@@ -154,15 +154,15 @@ Per impostare `setgid` e le autorizzazioni per la modalità sviluppatore:
 1. Accedi al server Commerce come proprietario del file system o passa a tale proprietario.
 1. Immettete i seguenti comandi nell&#39;ordine indicato:
 
-   ```bash
+   ```shell
    cd <magento_root>
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
@@ -188,13 +188,13 @@ Per rimuovere le autorizzazioni scrivibili per file e directory dal gruppo dell&
 1. Passare alla directory di installazione di Commerce.
 1. Come proprietario del file system, immettere il seguente comando per passare alla modalità di produzione:
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Immettere il comando seguente come utente con privilegi `root`:
 
-   ```bash
+   ```shell
    find app/code lib pub/static app/etc generated/code generated/metadata var/view_preprocessed \( -type d -or -type f \) -exec chmod g-w {} + && chmod o-rwx app/etc/env.php
    ```
 
@@ -206,6 +206,6 @@ Per rendere i file e le directory scrivibili in modo da poter aggiornare i compo
 1. Passare alla directory di installazione di Commerce.
 1. Immetti il comando seguente:
 
-   ```bash
+   ```shell
    find app/code lib var generated vendor pub/static pub/media app/etc \( -type d -or -type f \) -exec chmod g+w {} + && chmod o+rwx app/etc/env.php
    ```

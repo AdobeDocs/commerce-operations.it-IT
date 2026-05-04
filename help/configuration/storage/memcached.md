@@ -1,11 +1,11 @@
 ---
 title: Usa memcached per l’archiviazione della sessione
-description: Scopri come utilizzare memcached per l’archiviazione delle sessioni di Commerce.
+description: Scopri come configurare Adobe Commerce per l’utilizzo di memcached per l’archiviazione delle sessioni in env.php e quando preferire Redis o Varnish per altri livelli di memorizzazione in cache.
 feature: Configuration, Cache, Storage
 exl-id: 24077929-e732-4579-8d7d-717a4902fc64
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Commerce utilizza memcached per l’archiviazione della sessione ma non per il c
 
 1. Eliminare il contenuto delle directory seguenti nella directory di installazione di Commerce:
 
-   ```bash
+   ```shell
    rm -rf var/cache/* var/page_cache/* var/session/*
    ```
 
@@ -62,17 +62,17 @@ Commerce utilizza memcached per l’archiviazione della sessione ma non per il c
 
 1. (Facoltativo) Utilizza Telnet per esaminare l’archiviazione memorizzata in memcache.
 
-   ```bash
+   ```shell
    telnet <memcached host or ip> <memcached port>
    ```
 
-   ```bash
+   ```shell
    stats items
    ```
 
    I risultati vengono visualizzati in modo simile al seguente:
 
-   ```
+   ```text
    STAT items:3:number 1
    STAT items:3:age 7714
    STAT items:3:evicted 0

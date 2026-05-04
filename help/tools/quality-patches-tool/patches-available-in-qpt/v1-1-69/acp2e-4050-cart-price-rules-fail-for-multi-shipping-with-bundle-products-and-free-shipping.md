@@ -4,13 +4,13 @@ description: Applicare la patch ACP2E-4050 per risolvere il problema di Adobe Co
 feature: Shopping Cart, Shipping/Delivery
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: d36ce39fcd897261b784d57f8806b3eceb66fc01
+exl-id: 447d2460-5c29-4849-81d0-a9aaf0a758b4
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-4050: **[!UICONTROL Free Shipping]** non applicato con il pagamento multi-shipping
 
@@ -28,7 +28,7 @@ La patch ACP2E-4050 risolve il problema in cui **[!UICONTROL Free Shipping]** no
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -40,7 +40,7 @@ La patch ACP2E-4050 risolve il problema in cui **[!UICONTROL Free Shipping]** no
 1. Abilita **[!UICONTROL Free Shipping]** e imposta **[!UICONTROL Minimum Order Amount]** su *999999*.
 1. Passa a [!UICONTROL Admin] > [!UICONTROL Marketing] > [!UICONTROL Cart Price Rules] e crea una regola del prezzo del carrello con le seguenti condizioni:
 
-```
+```text
 If ALL of these conditions are TRUE:
  * Subtotal is at least 50
  * The subtotal is at most 500
@@ -71,7 +71,7 @@ If ALL of these conditions are TRUE:
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

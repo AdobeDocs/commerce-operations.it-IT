@@ -3,9 +3,9 @@ title: Flusso di implementazione
 description: Scopri il processo di flusso di distribuzione per gli ambienti di produzione Adobe Commerce. Scopri i passaggi per ottenere le massime prestazioni e affidabilità.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ I file `composer.json` e `composer.lock` gestiscono [!DNL Commerce] dipendenze e
 
 Per installare [!DNL Commerce] dipendenze:
 
-```bash
+```shell
 composer install --no-dev
 ```
 
@@ -35,7 +35,7 @@ Quando pre-elabora e compila le istruzioni di iniezione di dipendenza (DI), Mage
 
 Per pre-elaborare e compilare le istruzioni ID:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
@@ -49,25 +49,25 @@ Per aggiornare il caricatore automatico:
 >
 >L&#39;opzione `-o` converte il caricamento automatico PSR-0/4 in classmap per ottenere un autoloader più veloce. L&#39;opzione `--apcu` utilizza APCu per memorizzare nella cache le classi trovate/non trovate.
 
-```bash
+```shell
 composer dump-autoload -o --apcu
 ```
 
 Se si prevede di aggiornare il caricatore automatico, è necessario eseguire i seguenti comandi per:
 
-```bash
+```shell
 composer install --no-dev
 ```
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-```bash
+```shell
 composer dump-autoload -o
 ```
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -87,7 +87,7 @@ Se il contenuto statico non è distribuito, [!DNL Commerce] esegue al volo tutte
 
 Per distribuire il contenuto statico:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -105,7 +105,7 @@ Infine, devi mettere il negozio in modalità Produzione. La modalità di produzi
 
 È inoltre possibile distribuire contenuto statico, compilare il contenuto e impostare la modalità in un comando CLI:
 
-```bash
+```shell
 bin/magento deploy:mode:set production
 ```
 

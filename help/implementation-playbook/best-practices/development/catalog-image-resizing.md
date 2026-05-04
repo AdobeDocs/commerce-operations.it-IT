@@ -4,9 +4,9 @@ description: Scopri come evitare il deterioramento delle prestazioni prima dell�
 feature: Best Practices
 role: Developer
 exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Tutte le immagini del catalogo devono essere ridimensionate prima che un archivi
 
 Utilizzare il comando CLI predefinito per ridimensionare tutte le immagini:
 
-```bash
+```shell
 bin/magento catalog:images:resize
 ```
 
@@ -41,19 +41,19 @@ Il ridimensionamento asincrono delle immagini è stato introdotto in Adobe Comme
 
 1. Verificare che i gestori delle code siano in esecuzione:
 
-   ```bash
+   ```shell
    pgrep -fl media.storage.catalog.image.resize
    ```
 
 1. Compila la coda con tutte le richieste di ridimensionamento immagini:
 
-   ```bash
+   ```shell
    bin/magento catalog:images:resize --async
    ```
 
 1. Dopo aver ridimensionato tutte le immagini, terminare il processo:
 
-   ```bash
+   ```shell
    pkill -f media.storage.catalog.image.resize
    ```
 
@@ -77,7 +77,7 @@ Questo approccio consente di ridimensionare 100.000 immagini in meno di 8 ore, m
 
 >[!TAB sed]
 
-```bash
+```shell
 cd pub/
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' > images.txt
 ```
@@ -86,13 +86,13 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 
 Lo svantaggio di `siege` è che visita tutti gli URL 10 volte se la concorrenza è impostata su 10.
 
-```bash
+```shell
 siege --file=./images.txt --user-agent="image-resizer" --no-follow --no-parser --concurrent=10 --reps=once
 ```
 
 >[!TAB curl]
 
-```bash
+```shell
 xargs -0 -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n" < <(tr \\n \\0 <images.txt)
 ```
 
@@ -102,7 +102,7 @@ L&#39;argomento `-P` determina il numero di thread.
 
 Una riga per l&#39;esempio `find/curl`, nel caso in cui sia possibile eseguire `curl` dallo stesso computer in cui si trovano le immagini:
 
-```bash
+```shell
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' | xargs -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n"
 ```
 
@@ -110,11 +110,11 @@ Sostituisci `www.example.com` con il dominio del tuo sito Web e imposta `-P` sul
 
 >[!ENDTABS]
 
-L’output restituisce un elenco di tutte le immagini del prodotto presenti nell’archivio. È possibile eseguire la ricerca per indicizzazione delle immagini (con `siege` o qualsiasi altro crawler) utilizzando tutti i server e i core del processore disponibili e generare la cache di ridimensionamento a una velocità notevolmente superiore rispetto ad altri approcci.
+L’output restituisce un elenco di tutte le immagini del prodotto presenti nell’archivio. È possibile scansionare le immagini (con `siege` o qualsiasi altro crawler) utilizzando tutti i server e i core del processore disponibili e generare la cache di ridimensionamento a una velocità notevolmente superiore rispetto ad altri approcci.
 
 Se si visita un URL della cache delle immagini, vengono generate in background tutte le dimensioni delle immagini, se non esistono ancora. Inoltre, ignora i file che sono già stati ridimensionati.
 
 >[!NOTE]
 >
->- I progetti Adobe Commerce su infrastrutture cloud possono scaricare il ridimensionamento dell’immagine del prodotto sul servizio Fastly. Vedi [Ottimizzazione immagine approfondita](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=it#deep-image-optimization) nella _Guida cloud_.
->- Se utilizzi il modulo di archiviazione remota, puoi anche provare a scaricare il ridimensionamento dell&#39;immagine su nginx. Vedi [Configurare il ridimensionamento delle immagini per l&#39;archiviazione remota](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=it) nella _Guida alla configurazione_.
+>- I progetti Adobe Commerce su infrastrutture cloud possono scaricare il ridimensionamento dell’immagine del prodotto sul servizio Fastly. Vedi [Ottimizzazione immagine approfondita](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html#deep-image-optimization) nella _Guida cloud_.
+>- Se utilizzi il modulo di archiviazione remota, puoi anche provare a scaricare il ridimensionamento dell&#39;immagine su nginx. Vedi [Configurare il ridimensionamento delle immagini per l&#39;archiviazione remota](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) nella _Guida alla configurazione_.

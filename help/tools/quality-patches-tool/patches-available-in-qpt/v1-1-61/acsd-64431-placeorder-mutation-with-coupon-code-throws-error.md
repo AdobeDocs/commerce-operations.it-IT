@@ -5,9 +5,9 @@ feature: GraphQL, Orders, Promotions/Events
 role: Admin, Developer
 exl-id: 13918f3e-842b-4b2e-b2e2-2d8add542a87
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ La patch ACSD-64431 risolve il problema per cui la mutazione `placeOrder` conten
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -40,7 +40,7 @@ La mutazione `placeOrder` che contiene le informazioni sul codice coupon nella r
 1. Creare un **[!UICONTROL Cart Price Rule]**, impostare **[!UICONTROL Coupon]** su `Specific Coupon` e immettere _TEST1234_ come codice coupon.
 1. Creare un cliente:
 
-   ```
+   ```graphql
    mutation {
    createCustomer(
        input: {
@@ -63,7 +63,7 @@ La mutazione `placeOrder` che contiene le informazioni sul codice coupon nella r
 
 1. Genera un token cliente. Puoi utilizzare questo token per le richieste successive.
 
-   ```
+   ```graphql
    mutation {
    generateCustomerToken(email: "john.doe@example.com", password: "b1b2b3l@w+") {
        token
@@ -73,7 +73,7 @@ La mutazione `placeOrder` che contiene le informazioni sul codice coupon nella r
 
 1. Crea un carrello vuoto. Salva l’ID carrello e utilizzalo per le richieste successive.
 
-   ```
+   ```graphql
    mutation {
        createEmptyCart
    } 
@@ -81,7 +81,7 @@ La mutazione `placeOrder` che contiene le informazioni sul codice coupon nella r
 
 1. Aggiungi il prodotto al carrello:
 
-   ```
+   ```graphql
    mutation {
        addProductsToCart(
            cartId: "xxxx"
@@ -120,7 +120,7 @@ La mutazione `placeOrder` che contiene le informazioni sul codice coupon nella r
 
 1. Applica il coupon:
 
-   ```
+   ```graphql
    mutation {
        applyCouponToCart(input: { cart_id: "xxxx", coupon_code: "TEST1234" }) {
            cart {
@@ -154,7 +154,7 @@ La mutazione `placeOrder` che contiene le informazioni sul codice coupon nella r
 
 1. Impostare un indirizzo di spedizione:
 
-   ```
+   ```graphql
    mutation {
        setShippingAddressesOnCart(
            input: {
@@ -209,7 +209,7 @@ La mutazione `placeOrder` che contiene le informazioni sul codice coupon nella r
 
 1. Impostare un metodo di spedizione:
 
-   ```
+   ```graphql
    mutation {
        setShippingMethodsOnCart(
            input: {
@@ -237,7 +237,7 @@ La mutazione `placeOrder` che contiene le informazioni sul codice coupon nella r
 
 1. Imposta un indirizzo di fatturazione:
 
-   ```
+   ```graphql
    mutation {
        setBillingAddressOnCart(
            input: {
@@ -284,7 +284,7 @@ La mutazione `placeOrder` che contiene le informazioni sul codice coupon nella r
 
 1. Impostare un metodo di pagamento:
 
-   ```
+   ```graphql
    mutation {
        setPaymentMethodOnCart(
            input: { cart_id: "xxxx", payment_method: { code: "checkmo" } }
@@ -300,7 +300,7 @@ La mutazione `placeOrder` che contiene le informazioni sul codice coupon nella r
 
 1. Effettua l’ordine:
 
-   ```
+   ```graphql
    mutation {
    placeOrder(
        input: {
@@ -331,7 +331,7 @@ Viene visualizzato il seguente messaggio di errore:
 
 `exception.log` contiene il seguente errore:
 
-```
+```text
     report.ERROR: "discount_model" value should be specifiedGraphQL (1:135)
     1: mutation { placeOrder(input: {cart_id: "xxxx"}) { orderV2 { total { discounts { amount { currency value } coupon { code } } } } errors { message code } } }
 ```
@@ -341,7 +341,7 @@ Viene visualizzato il seguente messaggio di errore:
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

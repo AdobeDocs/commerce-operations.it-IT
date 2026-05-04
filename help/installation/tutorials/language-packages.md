@@ -2,7 +2,7 @@
 title: Disinstalla pacchetti per lingua
 description: Per disinstallare un pacchetto lingua di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: 9901aa0b-af1a-4ae9-968f-ac8421060f57
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Con questo comando vengono disinstallati *solo* pacchetti di linguaggio specific
 
 Utilizzo comando:
 
-```bash
+```shell
 bin/magento i18n:uninstall [-b|--backup-code] {language package name} ... {language package name}
 ```
 
@@ -35,20 +35,20 @@ Il comando di disinstallazione del pacchetto della lingua esegue le operazioni s
 
 Ad esempio, se tenti di disinstallare un pacchetto lingua da cui dipende un altro pacchetto lingua, viene visualizzato il seguente messaggio:
 
-```
+```text
 Cannot uninstall vendorname/language-en_us because the following package(s) depend on it:
       vendorname/language-en_gb
 ```
 
 Un&#39;alternativa consiste nel disinstallare entrambi i pacchetti di linguaggio dopo il backup della base di codice:
 
-```bash
+```shell
 bin/magento i18n:uninstall vendorname/language-en_us vendorname/language-en_gb --backup-code
 ```
 
 Messaggi simili alla seguente visualizzazione:
 
-```
+```text
 Code backup is starting...
 Code backup filename: 1435261098_filesystem_code.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
 Code backup path: /var/www/html/magento2/var/backups/1435261098_filesystem_code.tgz

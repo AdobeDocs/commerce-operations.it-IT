@@ -2,9 +2,9 @@
 title: Impostare la modalità operativa
 description: Scopri come impostare le modalità operative di Adobe Commerce tra sviluppatore e produzione. Scopri i comandi di cambio modalità e le implicazioni relative alla sicurezza.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ La modalità di produzione offre prestazioni migliori perché i file di visualiz
 
 Quando passi alla modalità di sviluppo o produzione, vengono cancellati i contenuti delle seguenti directory:
 
-```
+```text
 var/cache
 generated/metadata
 generated/code
@@ -48,13 +48,13 @@ Il modo più semplice per farlo è eseguire questo comando come [proprietario de
 
 Utilizzo comando:
 
-```bash
+```shell
 bin/magento deploy:mode:show
 ```
 
 Viene visualizzato un messaggio simile al seguente:
 
-```
+```text
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
@@ -66,7 +66,7 @@ dove:
 
 Utilizzo comando:
 
-```bash
+```shell
 bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 ```
 
@@ -80,13 +80,13 @@ Seguono alcuni esempi.
 
 ### Passare alla modalità di produzione
 
-```bash
+```shell
 bin/magento deploy:mode:set production
 ```
 
 Messaggi simili alla seguente visualizzazione:
 
-```
+```text
 Enabled maintenance mode
 Requested languages: en_US
 === frontend -> Magento/luma -> en_US ===
@@ -131,31 +131,31 @@ Quando si passa dalla modalità di produzione alla modalità sviluppatore, è ne
 
 1. Se si sta passando dalla modalità di produzione alla modalità sviluppatore, eliminare il contenuto delle directory `generated/code` e `generated/metadata`:
 
-   ```bash
+   ```shell
    rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*
    ```
 
 1. Impostare la modalità:
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
    Viene visualizzato il seguente messaggio:
 
-   ```
+   ```text
    Enabled developer mode.
    ```
 
 ### Passa alla modalità predefinita
 
-```bash
+```shell
 bin/magento deploy:mode:set default
 ```
 
 Viene visualizzato il seguente messaggio:
 
-```
+```text
 Enabled default mode.
 ```
 

@@ -3,9 +3,9 @@ title: Impostare una maschera (facoltativo)
 description: Migliora la postura di sicurezza dell’installazione on-premise di Adobe Commerce limitando le autorizzazioni del file system.
 feature: Install, Configuration
 exl-id: 18d65d75-7be0-4488-bf35-4b058e4ae5ea
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -36,16 +36,16 @@ Per impostare `magento_umask`:
 1. In un terminale della riga di comando, accedi al server applicazioni come [proprietario del file system](../prerequisites/file-system/overview.md).
 1. Passare alla directory di installazione dell&#39;applicazione:
 
-   ```bash
+   ```shell
    cd <Application install directory>
    ```
 
 1. Utilizzare il comando seguente per creare un file denominato `magento_umask` e scrivervi il valore `umask`.
 
-   ```bash
+   ```shell
    echo <desired umask number> > magento_umask
    ```
 
-   In `magento_umask` dovrebbe essere presente un file denominato `<Magento install dir>` con l&#39;unico contenuto il numero `umask`.
+   In `<Magento install dir>` dovrebbe essere presente un file denominato `magento_umask` con l&#39;unico contenuto il numero `umask`.
 
 1. Esci e accedi di nuovo come [proprietario del file system](../prerequisites/file-system/overview.md) per applicare le modifiche.

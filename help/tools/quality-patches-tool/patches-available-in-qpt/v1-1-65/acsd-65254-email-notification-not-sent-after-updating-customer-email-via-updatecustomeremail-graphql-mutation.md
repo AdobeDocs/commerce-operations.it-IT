@@ -5,9 +5,9 @@ feature: GraphQL, User Account
 role: Admin, Developer
 type: Troubleshooting
 exl-id: a97daceb-98f6-4bb8-9847-692af700c0fd
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ La patch ACSD-65254 risolve il problema per cui le notifiche e-mail non venivano
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -38,7 +38,7 @@ Le notifiche e-mail non sono state inviate ai clienti dopo l&#39;aggiornamento d
 
 1. Crea utente utilizzando la mutazione seguente:
 
-   ```
+   ```graphql
    mutation {
        createCustomer(
            input: {
@@ -58,7 +58,7 @@ Le notifiche e-mail non sono state inviate ai clienti dopo l&#39;aggiornamento d
 
 1. Genera un token per l’utente creato in precedenza e utilizzalo come token Bearer:
 
-   ```
+   ```graphql
    mutation {
    generateCustomerToken(email: "test@test.com", password: "Admin@123") {
        token
@@ -68,7 +68,7 @@ Le notifiche e-mail non sono state inviate ai clienti dopo l&#39;aggiornamento d
 
 1. Prova ad aggiornare l’e-mail per l’utente creato in precedenza utilizzando l’ultimo token bearer creato:
 
-   ```
+   ```graphql
    mutation {
        updateCustomerEmail(email: "test+updated@test.com", password: "Admin@123") {
            customer {
@@ -91,7 +91,7 @@ Al nuovo indirizzo viene inviato solo un messaggio e-mail di abbonamento; l’e-
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

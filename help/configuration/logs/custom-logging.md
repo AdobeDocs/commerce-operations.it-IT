@@ -1,11 +1,11 @@
 ---
 title: Registrazione personalizzata
-description: Scopri come individuare gli errori utilizzando la registrazione personalizzata.
+description: Scopri come individuare gli errori utilizzando la registrazione personalizzata basata su file in Adobe Commerce, incluse considerazioni sulla conformità PSR-3 e sulla registrazione centralizzata.
 feature: Configuration, Logs
 exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---

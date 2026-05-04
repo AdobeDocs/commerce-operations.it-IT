@@ -1,10 +1,10 @@
 ---
 title: Configurare la coda di messaggi di Amazon
-description: Scopri come configurare Commerce per l’utilizzo del servizio AWS MQ.
+description: Scopri come configurare le code di messaggi di Adobe Commerce per Amazon MQ in env.php, inclusi i requisiti SSL e TLS per le connessioni AMQP pronte per il cloud.
 exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Dove:
 
 Dopo aver modificato il file `env.php`, eseguire il comando seguente per completare l&#39;installazione:
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -82,7 +82,7 @@ Per verificare l&#39;invio di messaggi da Commerce a [!DNL RabbitMQ]:
 
 1. Avvia il consumer della coda di messaggi `async.operations.all`.
 
-   ```bash
+   ```shell
    bin/magento queue:consumers:start async.operations.all
    ```
 

@@ -4,10 +4,10 @@ description: Scopri come evitare problemi di prestazioni causati da estensioni A
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ Le estensioni (moduli) di terze parti di Adobe Commerce possono causare vari pro
 
 >[!NOTE]
 >
-> Tutte le estensioni disponibili in Adobe Commerce Marketplace sono necessarie per mantenere la compatibilità con le nuove versioni di Commerce. Consulta [Compatibilità della versione](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases/).
+> Tutte le estensioni disponibili in Adobe Commerce Marketplace sono necessarie per mantenere la compatibilità con le nuove versioni di Commerce. Consulta [Compatibilità della versione](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases).
 
 ## Prodotti e versioni interessati
 
@@ -36,5 +36,5 @@ Le estensioni (moduli) di terze parti di Adobe Commerce possono causare vari pro
 
 - [Best practice per la pianificazione degli aggiornamenti](../../../upgrade/prepare/best-practices.md)
 - Utilizzo di estensioni di terze parti con Adobe Commerce sull’infrastruttura cloud
-   - [Tecnologie e requisiti - Sviluppo e test](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [Perché eseguire completamente il test in Integration and Staging?](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+   - [Tecnologie e requisiti - Sviluppo e test](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [Perché eseguire completamente i test in Integration and Staging?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

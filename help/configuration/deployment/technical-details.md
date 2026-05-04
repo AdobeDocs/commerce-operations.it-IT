@@ -2,9 +2,9 @@
 title: Dettagli tecnici
 description: Scopri i dettagli tecnici della distribuzione della pipeline, i tipi di configurazioni e i flussi di lavoro consigliati.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Sul sistema di sviluppo:
 
 1. Per rimuovere il codice php generato e i file di risorse statiche durante lo sviluppo, esegui i seguenti comandi:
 
-   ```bash
+   ```shell
    rm -r var/view_preprocessed/*
    rm -r pub/static/*/*
    rm -r generated/*/*
@@ -287,10 +287,10 @@ L&#39;impostazione di configurazione predefinita specifica per il sistema del do
 
 Le impostazioni PayPal non vengono scritte in nessun file perché il comando `bin/magento app:config:dump` non scrive impostazioni sensibili. È necessario impostare le impostazioni PayPal sul sistema di produzione utilizzando i seguenti comandi:
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_username <username>
 ```
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_password <password>
 ```

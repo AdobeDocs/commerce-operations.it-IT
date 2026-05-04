@@ -3,9 +3,9 @@ title: Sicurezza dell'installazione locale
 description: Scopri come migliorare la postura di sicurezza dell’installazione on-premise di Adobe Commerce.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -22,23 +22,23 @@ ht-degree: 0%
 
 Se scegli di abilitare SELinux, potrebbero verificarsi problemi durante l&#39;esecuzione del programma di installazione a meno che non modifichi il *contesto di sicurezza* di alcune directory come segue:
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/app/etc
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/var
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/media
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/static
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 ```
 
@@ -54,7 +54,7 @@ Per abilitare Apache per avviare una connessione a un altro host con SELinux abi
 
 1. Per determinare se SELinux è abilitato, utilizzare il comando seguente:
 
-   ```bash
+   ```shell
    getenforce
    ```
 

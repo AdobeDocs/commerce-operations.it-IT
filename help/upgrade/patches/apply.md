@@ -2,9 +2,9 @@
 title: Applicare le patch
 description: Scopri i metodi per applicare patch a un progetto Adobe Commerce.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 È possibile applicare le patch utilizzando uno dei seguenti metodi:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Riga di comando](../patches/apply.md#command-line)
 - [Compositore](../patches/apply.md#composer)
 
@@ -31,7 +31,7 @@ Per applicare una patch personalizzata mediante Compositore:
 1. Apri l’applicazione della riga di comando e passa alla directory del progetto.
 1. Aggiungere il plug-in `cweagans/composer-patches` al file `composer.json`.
 
-   ```bash
+   ```shell
    composer require cweagans/composer-patches
    ```
 
@@ -57,13 +57,13 @@ Per applicare una patch personalizzata mediante Compositore:
 
 1. Applichi il cerotto. Utilizzare l&#39;opzione `-v` solo se si desidera visualizzare le informazioni di debug.
 
-   ```bash
+   ```shell
    composer -v install
    ```
 
 1. Aggiornare il file `composer.lock`. Il file di blocco tiene traccia delle patch applicate a ciascun pacchetto Composer di un oggetto.
 
-   ```bash
+   ```shell
    composer update --lock
    ```
 
@@ -75,7 +75,7 @@ Per applicare le patch dalla riga di comando:
 1. Accedere al server come [utente amministratore](../../configuration/cli/config-cli.md#prerequisites) e verificare che il file si trovi nella directory corretta.
 1. Nell’interfaccia della riga di comando, esegui i seguenti comandi in base all’estensione della patch:
 
-   ```bash
+   ```shell
    patch < patch_file_name.patch
    ```
 

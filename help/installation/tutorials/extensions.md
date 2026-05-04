@@ -2,9 +2,9 @@
 title: Gestire le estensioni di terze parti
 description: Segui questi passaggi per installare, abilitare, aggiornare e disinstallare le estensioni Adobe Commerce.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Le estensioni includono:
 - Temi (cambia l’aspetto della vetrina e dell’amministratore)
 - Pacchetti di lingua (localizza la vetrina e Amministratore)
 
-Questo argomento spiega come utilizzare l&#39;interfaccia della riga di comando per gestire le estensioni di terze parti acquistate da Commerce Marketplace per _progetti locali_. Per i progetti di infrastruttura cloud, consulta [Gestione estensioni](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+Questo argomento spiega come utilizzare l&#39;interfaccia della riga di comando per gestire le estensioni di terze parti acquistate da Commerce Marketplace per _progetti locali_. Per i progetti di infrastruttura cloud, consulta [Gestione estensioni](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 È possibile utilizzare la stessa procedura per installare l&#39;estensione _any_; tutto ciò che serve è il nome e la versione del Compositore dell&#39;estensione. Per trovarlo, aprire il file `composer.json` dell&#39;estensione e prendere nota dei valori per `"name"` e `"version"`.
 
@@ -31,7 +31,7 @@ Prima dell&#39;installazione, è possibile:
 1. Eseguire il backup del database.
 1. Abilita modalità di manutenzione:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
@@ -40,7 +40,7 @@ Per installare un&#39;estensione, è necessario:
 1. Ottieni un’estensione da Commerce Marketplace o da un altro sviluppatore di estensioni.
 1. Se si installa un&#39;estensione da Commerce Marketplace, verificare che l&#39;archivio `repo.magento.com` esista nel file `composer.json`:
 
-   ```bash
+   ```shell
    "repositories": [
        {
            "type": "composer",
@@ -84,13 +84,13 @@ Aggiungere il nome e la versione dell&#39;estensione al file `composer.json`:
 
 1. Passa alla directory del progetto e aggiorna il file `composer.json`.
 
-   ```bash
+   ```shell
    composer require <component-name>:<version>
    ```
 
    Ad esempio:
 
-   ```bash
+   ```shell
    composer require j2t/module-payplug:2.0.2
    ```
 
@@ -98,7 +98,7 @@ Aggiungere il nome e la versione dell&#39;estensione al file `composer.json`:
 
 1. Attendi che Composer completi l’aggiornamento delle dipendenze del progetto e assicurati che non siano presenti errori:
 
-   ```
+   ```text
    Updating dependencies (including require-dev)
    Package operations: 1 install, 0 updates, 0 removals
      - Installing j2t/module-payplug (2.0.2): Downloading (100%)
@@ -110,19 +110,19 @@ Aggiungere il nome e la versione dell&#39;estensione al file `composer.json`:
 
 Per verificare che l’estensione sia installata correttamente, esegui il seguente comando:
 
-```bash
+```shell
 bin/magento module:status J2t_Payplug
 ```
 
 Per impostazione predefinita, l’estensione è probabilmente disabilitata:
 
-```
+```text
 Module is disabled
 ```
 
 Il nome dell&#39;estensione è nel formato `<VendorName>_<ComponentName>`, che è diverso dal nome del Compositore. Utilizza questo formato per abilitare l&#39;estensione. Se non sei sicuro del nome dell’estensione, esegui:
 
-```bash
+```shell
 bin/magento module:status
 ```
 
@@ -134,13 +134,13 @@ Alcune estensioni non funzionano correttamente a meno che non si cancellino prim
 
 1. Abilita l’estensione e cancella i file della vista statica:
 
-   ```bash
+   ```shell
    bin/magento module:enable J2t_Payplug --clear-static-content
    ```
 
    Dovresti visualizzare il seguente output:
 
-   ```
+   ```text
    The following modules have been enabled:
    - J2t_Payplug
    
@@ -152,31 +152,31 @@ Alcune estensioni non funzionano correttamente a meno che non si cancellino prim
 
 1. Registra l&#39;estensione:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Ricompila il progetto: in modalità di produzione, potresti ricevere un messaggio indicante &quot;Esegui nuovamente il comando di compilazione di Magento&quot;. L&#39;applicazione non richiede di eseguire il comando di compilazione in modalità Sviluppatore.
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. Verifica che l’estensione sia abilitata:
 
-   ```bash
+   ```shell
    bin/magento module:status J2t_Payplug
    ```
 
    Dovresti vedere l’output che verifica che l’estensione non sia più disabilitata:
 
-   ```
+   ```text
    Module is enabled
    ```
 
 1. Pulisci la cache:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -198,27 +198,27 @@ Per aggiornare un modulo o un’estensione:
 
    Nome aggiornamento per modulo:
 
-   ```bash
+   ```shell
    composer update vendor/module-name
    ```
 
    Aggiornamento per versione:
 
-   ```bash
+   ```shell
    composer require vendor/module-name ^x.x.x
    ```
 
 1. Esegui i seguenti comandi per aggiornare, distribuire e pulire la cache.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade --keep-generated
    ```
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -240,13 +240,13 @@ Le istruzioni seguenti forniscono informazioni generali sulla disinstallazione d
 
    - Per le estensioni basate su Compositore, rimuovere l&#39;estensione dal file Adobe Commerce `composer.json`.
 
-     ```bash
+     ```shell
      composer remove <component-name>
      ```
 
    - Per le estensioni non basate su Compositore, rimuovi i file fisici dall’archivio dei progetti Adobe Commerce.
 
-     ```bash
+     ```shell
      rm -rf app/code/<vendor-name>/<component-name>
      ```
 

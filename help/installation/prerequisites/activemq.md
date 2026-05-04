@@ -1,9 +1,9 @@
 ---
 title: Gestore messaggi (ActiveMQ Artemis)
 description: Segui questi passaggi per installare e configurare Apache ActiveMQ Artemis message broker per le installazioni locali di Adobe Commerce.
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Adobe Commerce supporta anche il broker di messaggi open source ActiveMQ Artemis
 
 >[!NOTE]
 >
->ActiveMQ Artemis è stato introdotto in Adobe Commerce 2.4.5 e versioni successive. Per informazioni dettagliate sull&#39;installazione di ActiveMQ Artemis in Adobe Commerce su progetti di infrastruttura cloud, vedere [Configurazione del servizio ActiveMQ](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/service/activemq) nella *Guida di Commerce su Cloud*.
+>ActiveMQ Artemis è stato introdotto in Adobe Commerce 2.4.5 e versioni successive. Per informazioni dettagliate sull&#39;installazione di ActiveMQ Artemis in Adobe Commerce su progetti di infrastruttura cloud, vedere [Configurazione del servizio ActiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq) nella *Guida di Commerce su Cloud*.
 
 Le code di messaggi forniscono un meccanismo di comunicazione asincrona in cui il mittente e il destinatario di un messaggio non si contattano a vicenda. Non è necessario che comunichino con la coda di messaggi contemporaneamente. Quando un mittente inserisce un messaggio in una coda, questo viene memorizzato fino a quando il destinatario non lo riceve.
 
@@ -51,7 +51,7 @@ Verificare che Docker sia installato e in esecuzione nel sistema.
 
 1. Esegui ActiveMQ Artemis utilizzando l&#39;immagine Docker ufficiale:
 
-   ```bash
+   ```shell
    # Run with default configuration
    docker run --detach \
      --name artemis \
@@ -63,7 +63,7 @@ Verificare che Docker sia installato e in esecuzione nel sistema.
 
 1. Esegui con credenziali personalizzate:
 
-   ```bash
+   ```shell
    # Run with custom username/password
    docker run --detach \
      --name artemis \
@@ -77,7 +77,7 @@ Verificare che Docker sia installato e in esecuzione nel sistema.
 
 #### Comandi di gestione Docker
 
-```bash
+```shell
 # Check container status
 docker ps | grep artemis
 
@@ -115,7 +115,7 @@ Verificare che sia installato Java 17 o versione successiva (richiesto per Activ
 
 1. Scarica e installa la versione più recente dal sito Web [Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/download/). A settembre 2025, la versione stabile più recente è la 2.42.0:
 
-   ```bash
+   ```shell
    sudo mkdir -p /opt/artemis
    cd /opt/artemis
    sudo curl -O https://downloads.apache.org/activemq/activemq-artemis/2.42.0/apache-artemis-2.42.0-bin.tar.gz
@@ -125,7 +125,7 @@ Verificare che sia installato Java 17 o versione successiva (richiesto per Activ
 
 1. Creare l&#39;utente `artemis` e impostare la proprietà:
 
-   ```bash
+   ```shell
    # Create artemis user and set ownership
    sudo useradd -r -s /bin/false artemis 2>/dev/null || true
    sudo chown -R artemis:artemis /opt/artemis
@@ -133,14 +133,14 @@ Verificare che sia installato Java 17 o versione successiva (richiesto per Activ
 
 1. Crea un&#39;istanza di broker:
 
-   ```bash
+   ```shell
    sudo /opt/artemis/bin/artemis create /var/lib/artemis-instance --user artemis --password artemis --allow-anonymous
    sudo chown -R artemis:artemis /var/lib/artemis-instance
    ```
 
 1. Avvia broker:
 
-   ```bash
+   ```shell
    # Start in foreground (for testing)
    sudo /var/lib/artemis-instance/bin/artemis run
    
@@ -195,7 +195,7 @@ Per abilitare SSL su STOMP è necessario aggiungere esplicitamente l&#39;accetto
 
 Se si installa Adobe Commerce _dopo_ l&#39;installazione di ActiveMQ Artemis, aggiungere i seguenti parametri della riga di comando durante l&#39;installazione:
 
-```bash
+```shell
 --stomp-host="<hostname>" --stomp-port="61613" --stomp-user="<user_name>" --stomp-password="<password>"
 ```
 
@@ -232,7 +232,7 @@ Se nel file `<install_directory>/app/etc/env.php` è già presente un&#39;istanz
 
 È inoltre possibile impostare i valori di configurazione ActiveMQ utilizzando il comando `bin/magento setup:config:set` (rimuovere la configurazione AMQP se esiste nel file `app/etc/env.php`):
 
-```bash
+```shell
 bin/magento setup:config:set --stomp-host="activemq.example.com" --stomp-port="61613" --stomp-user="magento" --stomp-password="magento"
 ```
 
@@ -337,13 +337,13 @@ ActiveMQ Artemis fornisce una console di gestione basata su Web accessibile da:
 
 Verifica connessione STOMP tramite telnet:
 
-```bash
+```shell
 telnet localhost 61613
 ```
 
 Dovresti vedere una connessione stabilita. Per eseguire il test con un comando STOMP:
 
-```bash
+```shell
 # Test basic STOMP connection
 echo -e "CONNECT\nhost:localhost\n\n\x00" | telnet localhost 61613
 ```
