@@ -3,9 +3,9 @@ title: Come funziona  [!DNL Cloud Automation Patching Service (CAPS)]  flusso di
 description: Scopri il processo del flusso di lavoro  [!DNL Cloud Automation Patching Service (CAPS)] , inclusa la terminologia, le fasi del flusso di lavoro e le operazioni per la gestione automatizzata delle patch.
 hide: true
 hidefromtoc: true
-source-git-commit: eff8c0ae9e1d9db6b46ba7cfbb915685ab5b194d
+source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---

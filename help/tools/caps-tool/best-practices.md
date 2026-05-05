@@ -3,9 +3,9 @@ title: Guida alle best practice di [!DNL Cloud Automation Patching Service (CAPS
 description: Scopri le best practice per utilizzare  [!DNL Cloud Automation Patching Service (CAPS)]  in modo efficace e sicuro
 hide: true
 hidefromtoc: true
-source-git-commit: 9d377babd1059d7ec0af687755965ca4d0b541fb
+source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
