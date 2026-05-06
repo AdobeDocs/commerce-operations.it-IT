@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4c95c5a6c60ff701e81a3d58cbcd587810322a24
+source-git-commit: 0c45d7ba61be21d0983b242cfdbe0b9591dd5c5c
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -20,8 +20,8 @@ QPT v1.1.78 include le seguenti patch:
 1. **ACP2E-4419**: è stato risolto il problema che impediva l&#39;applicazione corretta delle gift card al momento del pagamento dopo la convalida reCAPTCHA v2 (&#39;I am not a robot&#39;) nella vetrina.
 1. **ACP2E-4431**: è stato risolto il problema che causava l&#39;eliminazione dei prodotti correlati corrispondenti alle regole di destinazione durante il processo di reindicizzazione.
 1. **ACP2E-4448**: è stato risolto il problema che impediva la visualizzazione delle modifiche apportate alla configurazione durante le interruzioni di Redis dopo il ripristino di Redis, causando la persistenza di valori non aggiornati.
+1. **[ACP2E-4456](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456.md)**: è stato corretto un problema a causa del quale l&#39;annullamento di un ordine tramite una mutazione GraphQL non comporta la transizione di un ordine pagato interamente con gift card allo stato Chiuso.
 1. **[ACP2E-4452](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)**: è stato risolto il problema per cui i prezzi dei prodotti nella pagina [!UICONTROL Quick Order] includono l&#39;imposta indipendentemente dalla configurazione della visualizzazione delle imposte.
-1. **ACP2E-4456**: è stato corretto un problema a causa del quale l&#39;annullamento di un ordine tramite una mutazione GraphQL non comporta la transizione di un ordine pagato interamente con gift card allo stato Chiuso.
 1. **ACP2E-4507**: è stato risolto il problema che impediva l&#39;applicazione della configurazione delle opzioni password per le richieste di reimpostazione della password dei clienti effettuate tramite mutazioni GraphQL.
 1. **ACP2E-4513**: è stato risolto il problema che impediva l&#39;eliminazione dal sistema delle immagini CAPTCHA scadute.
 1. **ACP2E-4522**: è stato risolto il problema relativo a un errore di chiave duplicata intermittente nella tabella quote_coupons quando vengono eseguite contemporaneamente più richieste di unione carrello o salvataggio preventivo.
