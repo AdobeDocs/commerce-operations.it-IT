@@ -5,9 +5,9 @@ feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: bb56c0c2-e094-4173-8260-da154df79748
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 0382d65a4d2ab24e595ede662be113a04db99450
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,15 @@ Adobe Commerce (tutti i metodi di implementazione) 2.4.4 - 2.4.4-p11
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
 Quando si aggiunge **[!UICONTROL Bundle Product]** a un blocco utilizzando [!DNL Page Builder], l&#39;anteprima del widget del prodotto si interrompe e viene visualizzato il messaggio di errore *Si è verificato un errore durante la generazione del contenuto*. Questo problema si verifica in modo specifico quando il prodotto bundle include `Checkbox` o `Multi Select` tipi di opzione e `indexer dimension mode` è impostato su `website_and_customer_group`. Nel registro eccezioni viene visualizzato il seguente errore:
 
-    &quot;yaml
-    report.CRITICAL: PDOException: SQLSTATE[42S02]: tabella o vista di base non trovata: 1146 La tabella &#39;db_name.catalog_product_index_price_cg0_ws0&#39; non esiste in /home/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:90
-    &quot;
+```yaml
+report.CRITICAL: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_name.catalog_product_index_price_cg0_ws0' doesn't exist in /home/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:90
+```
 
 <u>Passaggi da riprodurre</u>:
 
@@ -65,7 +65,7 @@ Impossibile aggiungere un prodotto tramite [!DNL Page Builder] quando il tipo di
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 
 ## Lettura correlata
