@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0c45d7ba61be21d0983b242cfdbe0b9591dd5c5c
+source-git-commit: 88d68b8ad28dfe044808a304d947bde4f5dfb054
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -50,9 +50,9 @@ QPT v1.1.78 include le seguenti patch:
 1. **ACP2E-4609**: è stato risolto il problema che impediva la visualizzazione di virgolette nella pagina Le mie virgolette quando alcune virgolette contengono prodotti eliminati.
 1. **[ACP2E-4613](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)**: è stato risolto il problema relativo alle strutture di directory multimediali di grandi dimensioni che causavano risposte di recupero lente, con tempi di caricamento estesi per la struttura di directory **[!UICONTROL Media Gallery]**.
 1. **ACP2E-4628**: è stato corretto il problema per cui l&#39;importazione di clienti con indirizzi e-mail in maiuscolo causava l&#39;errore di chiave di matrice non definita quando Condivisione account era impostato su Globale.
+1. **[ACP2E-4732](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4732.md)**: è stato risolto un problema che causava l&#39;interruzione dell&#39;indicizzazione parziale per i clienti con un numero elevato di aggiornamenti quando la colonna version_id nella tabella changelog raggiungeva il valore massimo.
 1. **[ACP2E-4665](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665.md)**: è stato risolto il problema che impediva l&#39;elenco dei prodotti secondari di prodotti configurabili contenenti video nelle raccolte prodotti, se richiesto tramite API REST.
 1. **ACP2E-4665**: è stato corretto il problema per cui i prodotti secondari di prodotti configurabili contenenti video nelle raccolte prodotti non sono elencati quando richiesto tramite API REST.
-1. **ACP2E-4732**: è stato risolto un problema che causava l&#39;interruzione dell&#39;indicizzazione parziale per i clienti con un numero elevato di aggiornamenti quando la colonna version_id nella tabella changelog raggiungeva il valore massimo.
 1. **ACP2E-4763**: è stato risolto il problema che si verificava se la query GraphQL customerOrders restituiva valori gonfiati come original_price_included_tax e original_row_total_included_tax quando i prezzi del catalogo sono impostati su Includi imposta, a causa dell&#39;applicazione dell&#39;imposta due volte.
 1. **ACSD-60989**: risolve il problema se la modifica di una colonna con una chiave esterna tramite uno schema dichiarativo causa errori in MariaDB.
 
