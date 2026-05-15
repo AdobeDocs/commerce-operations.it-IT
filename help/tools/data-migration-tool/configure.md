@@ -3,7 +3,7 @@ title: Configura  [!DNL Data Migration Tool]
 description: Scopri i due metodi per configurare  [!DNL Data Migration Tool]  per trasferire dati tra Magento 1 e Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 0%
@@ -106,7 +106,7 @@ Prima di eseguire la migrazione dei dati, è necessario creare un modulo di Mage
 
 1. Nel file `config.xml` è necessario impostare i dettagli di accesso ai database M1 e M2 e alla chiave di crittografia.
 
-1. Se nell&#39;archivio M1 sono presenti modifiche personalizzate, è necessario mappare il resto dei file di configurazione alle personalizzazioni dell&#39;archivio Magento 1. Vedi [Operazioni con i file di configurazione e mappatura](#migration-config).
+1. Se nell&#39;archivio M1 sono presenti modifiche personalizzate, è necessario mappare il resto dei file di configurazione alle personalizzazioni dell&#39;archivio Magento 1. Vedi [Operazioni con i file di configurazione e mappatura](#work-with-configuration-and-mapping-files).
 
 ### Configura migrazione nella cartella `vendor`
 

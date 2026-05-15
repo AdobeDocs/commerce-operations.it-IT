@@ -1,18 +1,18 @@
 ---
-title: Configura Valkey
-description: Scopri come configurare il caching di Valkey per l’ottimizzazione delle prestazioni di Adobe Commerce. Scopri le funzioni, i passaggi di configurazione e le best practice per la configurazione.
+title: Installazione e configurazione di Valkey
+description: Scopri come installare e configurare Valkey per il caching e l’archiviazione delle sessioni con Adobe Commerce. Scopri le opzioni per l’ottimizzazione e l’ottimizzazione delle prestazioni.
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: de613310ad701dd594a6ee8fcd973aa2c3769870
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
-# Configura Valkey
+# Installare e configurare Valkey
 
-Le caratteristiche principali includono:
+Valkey è un archivio dati in memoria open source compatibile con Redis che può essere utilizzato come back-end della cache e per l’archiviazione della sessione. Le caratteristiche principali includono:
 
 - Archiviazione sessione PHP
 - Pulizia della cache basata su tag senza `foreach` cicli
@@ -22,9 +22,9 @@ Le caratteristiche principali includono:
 
 Per installare e configurare il software Valkey, consultare le risorse seguenti:
 
-- [Scarica pagina Valkey](https://valkey.io/download/)
-- [Avvio rapido Valkey](https://valkey.io/topics/quickstart/)
-- [Pagina documentazione Valkey](https://valkey.io/docs)
+- [Scarica pagina Valkey](https://valkey.io/download/){target="_blank"}
+- [Guida introduttiva di Valkey](https://valkey.io/topics/quickstart/){target="_blank"}
+- [Pagina della documentazione di Valkey](https://valkey.io/docs){target="_blank"}
 
 ## Configurare la configurazione Valkey
 

@@ -2,9 +2,9 @@
 title: Ignora impostazioni di configurazione
 description: Scopri come utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione di Adobe Commerce. Scopri le best practice per la gestione della configurazione e l’implementazione.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1270'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Questo argomento illustra come derivare il nome di una variabile di ambiente con
 
 >[!TIP]
 >
->Consulta l&#39;argomento [Configurare gli ambienti](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=it) nella _guida di Commerce sull&#39;infrastruttura cloud_.
+>Consulta l&#39;argomento [Configurare gli ambienti](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) nella _guida di Commerce sull&#39;infrastruttura cloud_.
 
 ## Variabili di ambiente
 
@@ -62,8 +62,8 @@ Il formato generale dei nomi delle variabili delle impostazioni di sistema è il
   Per ulteriori informazioni sugli ambiti, consulta:
 
    - [Passaggio 1: trovare il valore di ambito della visualizzazione del sito Web o dello store](#step-1-find-the-website-or-store-view-scope-value)
-   - [Argomento della Guida utente di Commerce sull’ambito](https://experienceleague.adobe.com/it/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [Riferimento rapido ambito](https://experienceleague.adobe.com/it/docs/commerce-admin/config/scope-change#scope-quick-reference)
+   - [Argomento della Guida utente di Commerce sull’ambito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [Riferimento rapido ambito](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` è il percorso di configurazione con due caratteri di sottolineatura al posto di `/`. Per ulteriori informazioni, vedere [Passaggio 2: impostazione delle variabili di sistema](#step-2-set-global-website-or-store-view-variables).
 
@@ -224,7 +224,7 @@ Per trovare il nome della variabile per l&#39;origine del paese di spedizione:
 
 1. Determinare l&#39;ambito.
 
-   Trovare l&#39;ambito nel [database](#find-a-website-or-store-view-scope-in-the-database) come descritto nel passaggio 1: Trovare il valore dell&#39;ambito della visualizzazione del sito Web o dell&#39;archivio. (Puoi anche trovare il valore nell&#39;amministratore come mostrato nella tabella [del passaggio 2: Imposta variabili globali, di visualizzazione del sito Web o di archiviazione]&#x200B;(#step-2-set-global-website-or-store-view-variables.
+   Trovare l&#39;ambito nel [database](#find-a-website-or-store-view-scope-in-the-database) come descritto nel passaggio 1: Trovare il valore dell&#39;ambito della visualizzazione del sito Web o dell&#39;archivio. È inoltre possibile trovare il valore nell&#39;amministratore come illustrato nella tabella [del passaggio 2: Imposta variabili globali, di visualizzazione del sito Web o di archiviazione](#step-2-set-global-website-or-store-view-variables).
 
    Ad esempio, l&#39;ambito potrebbe essere `CONFIG__WEBSITES__DEFAULT`.
 
@@ -253,6 +253,6 @@ Un esempio dettagliato viene visualizzato in [Impostare i valori di configurazio
 >
 >- Per utilizzare i valori impostati nell&#39;array `$_ENV`, è necessario impostare `variables_order = "EGPCS"`(Environment, Get, Post, Cookie e Server) nel file `php.ini`. Per informazioni dettagliate, vedere la [documentazione PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Per Adobe Commerce su infrastruttura cloud, se si tenta di ignorare le impostazioni di configurazione utilizzando [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=it#configure-the-project), è necessario anteporre al nome della variabile `env:`. Ad esempio:
+>- Per Adobe Commerce su infrastruttura cloud, se si tenta di ignorare le impostazioni di configurazione utilizzando [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), è necessario anteporre al nome della variabile `env:`. Ad esempio:
 >
 >![Esempio di variabile di ambiente](../../assets/configuration/cloud-console-envvariable.png)

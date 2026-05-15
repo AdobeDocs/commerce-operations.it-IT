@@ -3,10 +3,10 @@ user-guide-title: Informazioni sulla versione
 user-guide-description: Accedere a tutte le informazioni sulla versione per le patch e i servizi Adobe Commerce in un'unica posizione.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: c76154516c3b800c530769f35d4c52f794e47076
+source-git-commit: ec031489837997a5c383c9a0f8a3e1cfc17f1f1e
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 5%
+source-wordcount: '97'
+ht-degree: 34%
 
 ---
 
@@ -18,37 +18,37 @@ ht-degree: 5%
    - [Modifiche non compatibili con le versioni precedenti](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
       - [Panoramica](release-notes/commerce/overview.md)
-      - [2.4.9-beta](release-notes/commerce/2-4-9.md)
-      - [2.4.8.](release-notes/commerce/2-4-8.md)
-      - [2.4.7.](release-notes/commerce/2-4-7.md)
-      - [2.4.6.](release-notes/commerce/2-4-6.md)
-      - [2.4.5.](release-notes/commerce/2-4-5.md)
-      - [2.4.4.](release-notes/commerce/2-4-4.md)
-      - [2.4.3.](release-notes/commerce/2-4-3.md)
-      - [2.4.2.](release-notes/commerce/2-4-2.md)
-      - [2.4.1.](release-notes/commerce/2-4-1.md)
+      - [2.4.9](release-notes/commerce/2-4-9.md)
+      - [2.4.8](release-notes/commerce/2-4-8.md)
+      - [2.4.7](release-notes/commerce/2-4-7.md)
+      - [2.4.6](release-notes/commerce/2-4-6.md)
+      - [2.4.5](release-notes/commerce/2-4-5.md)
+      - [2.4.4](release-notes/commerce/2-4-4.md)
+      - [2.4.3](release-notes/commerce/2-4-3.md)
+      - [2.4.2](release-notes/commerce/2-4-2.md)
+      - [2.4.1](release-notes/commerce/2-4-1.md)
       - [2.4.0](release-notes/commerce/2-4-0.md)
    - Magento Open Source {#magento-open-source}
       - [Panoramica](release-notes/open-source/overview.md)
-      - [2.4.9-beta](release-notes/open-source/2-4-9.md)
-      - [2.4.8.](release-notes/open-source/2-4-8.md)
-      - [2.4.7.](release-notes/open-source/2-4-7.md)
-      - [2.4.6.](release-notes/open-source/2-4-6.md)
-      - [2.4.5.](release-notes/open-source/2-4-5.md)
-      - [2.4.4.](release-notes/open-source/2-4-4.md)
-      - [2.4.3.](release-notes/open-source/2-4-3.md)
-      - [2.4.2.](release-notes/open-source/2-4-2.md)
-      - [2.4.1.](release-notes/open-source/2-4-1.md)
+      - [2.4.9](release-notes/open-source/2-4-9.md)
+      - [2.4.8](release-notes/open-source/2-4-8.md)
+      - [2.4.7](release-notes/open-source/2-4-7.md)
+      - [2.4.6](release-notes/open-source/2-4-6.md)
+      - [2.4.5](release-notes/open-source/2-4-5.md)
+      - [2.4.4](release-notes/open-source/2-4-4.md)
+      - [2.4.3](release-notes/open-source/2-4-3.md)
+      - [2.4.2](release-notes/open-source/2-4-2.md)
+      - [2.4.1](release-notes/open-source/2-4-1.md)
       - [2.4.0](release-notes/open-source/2-4-0.md)
    - Versioni delle patch di sicurezza {#security-patches}
       - [Panoramica](release-notes/security/overview.md)
-      - [2.4.8.](release-notes/security/2-4-8-patches.md)
-      - [2.4.7.](release-notes/security/2-4-7-patches.md)
-      - [2.4.6.](release-notes/security/2-4-6-patches.md)
-      - [2.4.5.](release-notes/security/2-4-5-patches.md)
-      - [2.4.4.](release-notes/security/2-4-4-patches.md)
-      - [2.4.3.](release-notes/security/2-4-3-patches.md)
-      - [2.4.2.](release-notes/security/2-4-2-patches.md)
+      - [2.4.8](release-notes/security/2-4-8-patches.md)
+      - [2.4.7](release-notes/security/2-4-7-patches.md)
+      - [2.4.6](release-notes/security/2-4-6-patches.md)
+      - [2.4.5](release-notes/security/2-4-5-patches.md)
+      - [2.4.4](release-notes/security/2-4-4-patches.md)
+      - [2.4.3](release-notes/security/2-4-3-patches.md)
+      - [2.4.2](release-notes/security/2-4-2-patches.md)
 - [Disponibilità del prodotto](product-availability.md)
 - [Versioni di Beta](beta.md)
 - Pianificazione e criteri {#planning}
@@ -60,4 +60,4 @@ ht-degree: 5%
 - Pacchetti {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

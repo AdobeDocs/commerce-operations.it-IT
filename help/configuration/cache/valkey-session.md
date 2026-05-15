@@ -1,9 +1,9 @@
 ---
-title: Usa Valkey per l'archiviazione della sessione
-description: Scopri come configurare Valkey per l’archiviazione delle sessioni in Adobe Commerce. Scopri i passaggi di configurazione, le opzioni di configurazione e le tecniche di ottimizzazione delle prestazioni.
+title: Configurare Valkey per l'archiviazione della sessione
+description: Scopri come configurare Valkey per l’archiviazione delle sessioni in Adobe Commerce. Scopri la configurazione CLI, i parametri di sessione e le tecniche di verifica della connessione.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# Usa Valkey per l&#39;archiviazione della sessione
+# Configurare Valkey per l&#39;archiviazione della sessione
 
 >[!IMPORTANT]
 >

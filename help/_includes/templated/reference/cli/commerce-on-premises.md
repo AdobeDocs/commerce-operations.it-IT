@@ -1,7 +1,7 @@
 ---
-source-git-commit: ef3abc83e2c699ebfbb53ad367aaceb9ecb92491
+source-git-commit: 44f5debe62afeb55d301a769ca8a3af957e5b6fd
 workflow-type: tm+mt
-source-wordcount: '8072'
+source-wordcount: '9246'
 ht-degree: 1%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 1%
 
 <!-- The template to render with above values -->
 
-**Versione**: 2.4.8
+**Versione**: 2.4.9
 
-Questo riferimento contiene 145 comandi disponibili tramite lo strumento della riga di comando `bin/magento`.
+Questo riferimento contiene 147 comandi disponibili tramite lo strumento della riga di comando `bin/magento`.
 L&#39;elenco iniziale viene generato automaticamente utilizzando il comando `bin/magento list` in Adobe Commerce.
 
 ## Generale
@@ -37,9 +37,16 @@ Visualizza la Guida per il comando specificato. Se non viene assegnato alcun com
 - Predefinito: `false`
 - Non accetta un valore
 
-#### `--quiet`, `-q`
+#### `--silent`
 
 Non inviare messaggi
+
+- Predefinito: `false`
+- Non accetta un valore
+
+#### `--quiet`, `-q`
+
+Vengono visualizzati solo gli errori. Tutti gli altri output vengono soppressi
 
 - Predefinito: `false`
 - Non accetta un valore
@@ -68,7 +75,6 @@ Forza (o disattiva — senza ansi) output ANSI
 
 Ignora l&#39;opzione &quot;—ansi&quot;
 
-- Predefinito: `false`
 - Non accetta un valore
 
 #### `--no-interaction`, `-n`
@@ -1091,7 +1097,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 ## `dev:query-log:enable`
 
 ```shell
-bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
+bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]] [--include-index-check [INCLUDE-INDEX-CHECK]]
 ```
 
 Abilita registrazione query DB
@@ -1119,6 +1125,13 @@ Soglie di tempo per le query.
 Include lo stack di chiamate. [true\|false]
 
 - Predefinito: `true`
+- Accetta un valore
+
+#### `--include-index-check`
+
+Includi controllo indice. Avvertenza: potrebbe verificarsi un peggioramento delle prestazioni. [true\|false]
+
+- Predefinito: `false`
 - Accetta un valore
 
 
@@ -1543,20 +1556,26 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 ## `events:provider:info`
 
 ```shell
-bin/magento events:provider:info
+bin/magento events:provider:info [--provider-id [PROVIDER-ID]]
 ```
 
-Restituisce i dettagli del provider di eventi configurato
+Restituisce i dettagli di un provider di eventi
 
 ### Opzioni
 
 Per le opzioni globali, vedi [Opzioni globali](#global-options).
 
+#### `--provider-id`
+
+ID di un provider di eventi. Se questa opzione non viene utilizzata, vengono restituite le informazioni per il provider di eventi impostato nella configurazione di sistema.
+
+- Accetta un valore
+
 
 ## `events:registrations:list`
 
 ```shell
-bin/magento events:registrations:list
+bin/magento events:registrations:list [--provider-id [PROVIDER-ID]]
 ```
 
 Elenca le registrazioni di eventi nel progetto App Builder
@@ -1565,11 +1584,17 @@ Elenca le registrazioni di eventi nel progetto App Builder
 
 Per le opzioni globali, vedi [Opzioni globali](#global-options).
 
+#### `--provider-id`
+
+ID di un provider di eventi. Quando specifichi questa opzione, i dati di registrazione dell’evento per il progetto App Builder vengono filtrati in base all’ID fornito.
+
+- Accetta un valore
+
 
 ## `events:subscribe`
 
 ```shell
-bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--hipaaAuditRequired] [--] <event-code>
+bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--providerId PROVIDERID] [--hipaaAuditRequired] [--] <event-code>
 ```
 
 Si iscrive all’evento
@@ -1625,6 +1650,12 @@ Accelera la trasmissione di questo evento. Specifica questa opzione per gli even
 La destinazione di questo evento. Specifica questa opzione per gli eventi da consegnare alla destinazione personalizzata.
 
 - Predefinito: `default`
+- Richiede un valore
+
+#### `--providerId`
+
+Il provider di eventi a cui verranno consegnati gli eventi
+
 - Richiede un valore
 
 #### `--hipaaAuditRequired`
@@ -2570,16 +2601,16 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 ## `newrelic:create:deploy-marker`
 
 ```shell
-bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revision>]]
+bin/magento newrelic:create:deploy-marker [-c|--commit [COMMIT]] [-d|--deep-link [DEEP-LINK]] [-g|--group-id [GROUP-ID]] [--] <message> <change_log> [<user> [<revision>]]
 ```
 
-Controlla le voci nella coda di distribuzione e crea un marcatore di distribuzione appropriato.
+Creare un marcatore di distribuzione in New Relic (supporta sia REST v2 che NerdGraph)
 
 ### Argomenti
 
 #### `message`
 
-Distribuire il messaggio?
+Distribuisci messaggio/descrizione
 
 - Obbligatorio
 
@@ -2598,11 +2629,29 @@ Utente distribuzione
 
 #### `revision`
 
-Revisione
+Revisione/Versione
 
 ### Opzioni
 
 Per le opzioni globali, vedi [Opzioni globali](#global-options).
+
+#### `--commit`, `-c`
+
+Hash del commit Git per questa distribuzione (solo NerdGraph)
+
+- Accetta un valore
+
+#### `--deep-link`, `-d`
+
+Collegamento profondo ai dettagli della distribuzione (solo NerdGraph)
+
+- Accetta un valore
+
+#### `--group-id`, `-g`
+
+ID gruppo per organizzare le distribuzioni (solo NerdGraph)
+
+- Accetta un valore
 
 
 ## `queue:consumers:list`
@@ -2740,6 +2789,50 @@ Sincronizzare i file multimediali con l&#39;archiviazione remota.
 ### Opzioni
 
 Per le opzioni globali, vedi [Opzioni globali](#global-options).
+
+
+## `saas:initialize:project`
+
+```shell
+bin/magento saas:initialize:project [-p|--projectName PROJECTNAME]
+```
+
+Inizializza un nuovo progetto per l’esercente configurato nel connettore di servizio
+
+### Opzioni
+
+Per le opzioni globali, vedi [Opzioni globali](#global-options).
+
+#### `--projectName`, `-p`
+
+Nome progetto
+
+- Richiede un valore
+
+
+## `saas:list:projects`
+
+```shell
+bin/magento saas:list:projects [-p|--projectId [PROJECTID]] [-e|--environmentId [ENVIRONMENTID]]
+```
+
+Elenca le informazioni sui progetti per l’esercente configurato nel connettore di servizio
+
+### Opzioni
+
+Per le opzioni globali, vedi [Opzioni globali](#global-options).
+
+#### `--projectId`, `-p`
+
+Identificatore progetto
+
+- Accetta un valore
+
+#### `--environmentId`, `-e`
+
+Identificatore dell’ambiente
+
+- Accetta un valore
 
 
 ## `saas:resync`
@@ -3093,7 +3186,7 @@ Aggiungi a qualsiasi comando per personalizzare i parametri di inizializzazione 
 ## `setup:config:set`
 
 ```shell
-bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--stomp-host STOMP-HOST] [--stomp-port STOMP-PORT] [--stomp-user STOMP-USER] [--stomp-password STOMP-PASSWORD] [--stomp-ssl STOMP-SSL] [--stomp-ssl-options STOMP-SSL-OPTIONS] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--session-save-valkey-host SESSION-SAVE-VALKEY-HOST] [--session-save-valkey-port SESSION-SAVE-VALKEY-PORT] [--session-save-valkey-password SESSION-SAVE-VALKEY-PASSWORD] [--session-save-valkey-timeout SESSION-SAVE-VALKEY-TIMEOUT] [--session-save-valkey-retries SESSION-SAVE-VALKEY-RETRIES] [--session-save-valkey-persistent-id SESSION-SAVE-VALKEY-PERSISTENT-ID] [--session-save-valkey-db SESSION-SAVE-VALKEY-DB] [--session-save-valkey-compression-threshold SESSION-SAVE-VALKEY-COMPRESSION-THRESHOLD] [--session-save-valkey-compression-lib SESSION-SAVE-VALKEY-COMPRESSION-LIB] [--session-save-valkey-log-level SESSION-SAVE-VALKEY-LOG-LEVEL] [--session-save-valkey-max-concurrency SESSION-SAVE-VALKEY-MAX-CONCURRENCY] [--session-save-valkey-break-after-frontend SESSION-SAVE-VALKEY-BREAK-AFTER-FRONTEND] [--session-save-valkey-break-after-adminhtml SESSION-SAVE-VALKEY-BREAK-AFTER-ADMINHTML] [--session-save-valkey-first-lifetime SESSION-SAVE-VALKEY-FIRST-LIFETIME] [--session-save-valkey-bot-first-lifetime SESSION-SAVE-VALKEY-BOT-FIRST-LIFETIME] [--session-save-valkey-bot-lifetime SESSION-SAVE-VALKEY-BOT-LIFETIME] [--session-save-valkey-disable-locking SESSION-SAVE-VALKEY-DISABLE-LOCKING] [--session-save-valkey-min-lifetime SESSION-SAVE-VALKEY-MIN-LIFETIME] [--session-save-valkey-max-lifetime SESSION-SAVE-VALKEY-MAX-LIFETIME] [--session-save-valkey-sentinel-master SESSION-SAVE-VALKEY-SENTINEL-MASTER] [--session-save-valkey-sentinel-servers SESSION-SAVE-VALKEY-SENTINEL-SERVERS] [--session-save-valkey-sentinel-verify-master SESSION-SAVE-VALKEY-SENTINEL-VERIFY-MASTER] [--session-save-valkey-sentinel-connect-retries SESSION-SAVE-VALKEY-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-serializer CACHE-BACKEND-REDIS-SERIALIZER] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-backend-valkey-server CACHE-BACKEND-VALKEY-SERVER] [--cache-backend-valkey-db CACHE-BACKEND-VALKEY-DB] [--cache-backend-valkey-port CACHE-BACKEND-VALKEY-PORT] [--cache-backend-valkey-password CACHE-BACKEND-VALKEY-PASSWORD] [--cache-backend-valkey-compress-data CACHE-BACKEND-VALKEY-COMPRESS-DATA] [--cache-backend-valkey-compression-lib CACHE-BACKEND-VALKEY-COMPRESSION-LIB] [--cache-backend-valkey-serializer CACHE-BACKEND-VALKEY-SERIALIZER] [--cache-backend-valkey-use-lua CACHE-BACKEND-VALKEY-USE-LUA] [--cache-backend-valkey-use-lua-on-gc CACHE-BACKEND-VALKEY-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-redis-serializer PAGE-CACHE-REDIS-SERIALIZER] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--page-cache-valkey-server PAGE-CACHE-VALKEY-SERVER] [--page-cache-valkey-db PAGE-CACHE-VALKEY-DB] [--page-cache-valkey-port PAGE-CACHE-VALKEY-PORT] [--page-cache-valkey-password PAGE-CACHE-VALKEY-PASSWORD] [--page-cache-valkey-compress-data PAGE-CACHE-VALKEY-COMPRESS-DATA] [--page-cache-valkey-compression-lib PAGE-CACHE-VALKEY-COMPRESSION-LIB] [--page-cache-valkey-serializer PAGE-CACHE-VALKEY-SERIALIZER] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 Crea o modifica la configurazione di distribuzione
@@ -3249,6 +3342,48 @@ I consumatori devono attendere un messaggio dalla coda? 1 - Sì, 0 - No
 
 Connessione predefinita delle code di messaggi. Può essere &#39;db&#39;, &#39;amqp&#39; o un sistema di code personalizzato.Il sistema di coda deve essere installato e configurato, altrimenti i messaggi non verranno elaborati correttamente.
 
+- Richiede un valore
+
+#### `--stomp-host`
+
+Interrompi host server
+
+- Predefinito: &quot;
+- Richiede un valore
+
+#### `--stomp-port`
+
+Interrompi porta server
+
+- Predefinito: `61613`
+- Richiede un valore
+
+#### `--stomp-user`
+
+Nome utente del server Stomp
+
+- Predefinito: &quot;
+- Richiede un valore
+
+#### `--stomp-password`
+
+Password del server Stomp
+
+- Predefinito: &quot;
+- Richiede un valore
+
+#### `--stomp-ssl`
+
+Smetti SSL
+
+- Predefinito: &quot;
+- Richiede un valore
+
+#### `--stomp-ssl-options`
+
+Opzioni SSL stomp (JSON)
+
+- Predefinito: &quot;
 - Richiede un valore
 
 #### `--deferred-total-calculating`
@@ -3496,6 +3631,144 @@ Nuovi tentativi di connessione di Redis Sentinel.
 
 - Richiede un valore
 
+#### `--session-save-valkey-host`
+
+Nome host completo, indirizzo IP o percorso assoluto se si utilizzano socket UNIX
+
+- Richiede un valore
+
+#### `--session-save-valkey-port`
+
+Porta di ascolto server Valkey
+
+- Richiede un valore
+
+#### `--session-save-valkey-password`
+
+Password server Valkey
+
+- Richiede un valore
+
+#### `--session-save-valkey-timeout`
+
+Timeout della connessione, in secondi
+
+- Richiede un valore
+
+#### `--session-save-valkey-retries`
+
+Nuovi tentativi di connessione a Valkey.
+
+- Richiede un valore
+
+#### `--session-save-valkey-persistent-id`
+
+Stringa univoca per abilitare le connessioni permanenti
+
+- Richiede un valore
+
+#### `--session-save-valkey-db`
+
+Numero database Valkey
+
+- Richiede un valore
+
+#### `--session-save-valkey-compression-threshold`
+
+Soglia di compressione Valkey
+
+- Richiede un valore
+
+#### `--session-save-valkey-compression-lib`
+
+Libreria di compressione Valkey. Valori: gzip (predefinito), lzf, lz4, snappy
+
+- Richiede un valore
+
+#### `--session-save-valkey-log-level`
+
+Livello di registro Valkey. Valori: da 0 (meno dettagliato) a 7 (più dettagliato)
+
+- Richiede un valore
+
+#### `--session-save-valkey-max-concurrency`
+
+Numero massimo di processi che possono attendere un blocco in una sessione
+
+- Richiede un valore
+
+#### `--session-save-valkey-break-after-frontend`
+
+Numero di secondi di attesa prima di interrompere un blocco per la sessione front-end
+
+- Richiede un valore
+
+#### `--session-save-valkey-break-after-adminhtml`
+
+Numero di secondi di attesa prima di interrompere un blocco per la sessione di amministrazione
+
+- Richiede un valore
+
+#### `--session-save-valkey-first-lifetime`
+
+Durata in secondi della sessione per i non bot alla prima scrittura (usa 0 per disabilitare)
+
+- Richiede un valore
+
+#### `--session-save-valkey-bot-first-lifetime`
+
+Durata in secondi della sessione per i bot alla prima scrittura (usa 0 per disabilitare)
+
+- Richiede un valore
+
+#### `--session-save-valkey-bot-lifetime`
+
+Durata della sessione per i bot nelle scritture successive (usa 0 per disabilitare)
+
+- Richiede un valore
+
+#### `--session-save-valkey-disable-locking`
+
+Valkey disabilita il blocco. Valori: false (predefinito), true
+
+- Richiede un valore
+
+#### `--session-save-valkey-min-lifetime`
+
+Durata minima sessione Valkey, in secondi
+
+- Richiede un valore
+
+#### `--session-save-valkey-max-lifetime`
+
+Durata massima sessione Valkey, in secondi
+
+- Richiede un valore
+
+#### `--session-save-valkey-sentinel-master`
+
+Valkey Sentinel master
+
+- Richiede un valore
+
+#### `--session-save-valkey-sentinel-servers`
+
+Server Sentinel Valkey, separati da virgola
+
+- Richiede un valore
+
+#### `--session-save-valkey-sentinel-verify-master`
+
+Valkey Sentinel verifica master. Valori: false (predefinito), true
+
+- Richiede un valore
+
+#### `--session-save-valkey-sentinel-connect-retries`
+
+Nuovi tentativi di connessione di Valkey Sentinel.
+
+- Richiede un valore
+
 #### `--cache-backend`
 
 Gestore cache predefinito
@@ -3538,6 +3811,12 @@ Libreria di compressione da utilizzare [snappy,lzf,l4z,zstd,gzip] (lasciare vuot
 
 - Richiede un valore
 
+#### `--cache-backend-redis-serializer`
+
+Serializzatore da utilizzare (il file binario è più veloce del 70%, più piccolo del 58% rispetto al serializzatore PHP)
+
+- Richiede un valore
+
 #### `--cache-backend-redis-use-lua`
 
 Imposta su 1 per abilitare lua (il valore predefinito è 0, disabilitato)
@@ -3545,6 +3824,60 @@ Imposta su 1 per abilitare lua (il valore predefinito è 0, disabilitato)
 - Richiede un valore
 
 #### `--cache-backend-redis-use-lua-on-gc`
+
+Imposta questo valore su 0 per disabilitare la funzione lua nella raccolta di oggetti inattivi (l&#39;impostazione predefinita è 1, abilitato)
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-server`
+
+Server Valkey
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-db`
+
+Numero di database per la cache
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-port`
+
+Porta di ascolto server Valkey
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-password`
+
+Password server Valkey
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-compress-data`
+
+Impostate questo valore su 0 per disattivare la compressione (il valore predefinito è 1, abilitato)
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-compression-lib`
+
+Libreria di compressione da utilizzare [snappy,lzf,l4z,zstd,gzip] (lasciare vuoto per determinare automaticamente)
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-serializer`
+
+Serializzatore da utilizzare (il file binario è più veloce del 70%, più piccolo del 58% rispetto al serializzatore PHP)
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-use-lua`
+
+Imposta su 1 per abilitare lua (il valore predefinito è 0, disabilitato)
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-use-lua-on-gc`
 
 Imposta questo valore su 0 per disabilitare la funzione lua nella raccolta di oggetti inattivi (l&#39;impostazione predefinita è 1, abilitato)
 
@@ -3605,9 +3938,57 @@ Libreria di compressione da utilizzare [snappy,lzf,l4z,zstd,gzip] (lasciare vuot
 
 - Richiede un valore
 
+#### `--page-cache-redis-serializer`
+
+Serializzatore da utilizzare (il file binario è più veloce del 70%, più piccolo del 58% rispetto al serializzatore PHP)
+
+- Richiede un valore
+
 #### `--page-cache-id-prefix`
 
 Prefisso ID per le chiavi della cache
+
+- Richiede un valore
+
+#### `--page-cache-valkey-server`
+
+Server Valkey
+
+- Richiede un valore
+
+#### `--page-cache-valkey-db`
+
+Numero di database per la cache
+
+- Richiede un valore
+
+#### `--page-cache-valkey-port`
+
+Porta di ascolto server Valkey
+
+- Richiede un valore
+
+#### `--page-cache-valkey-password`
+
+Password server Valkey
+
+- Richiede un valore
+
+#### `--page-cache-valkey-compress-data`
+
+Impostate questo valore su 1 per comprimere la cache dell&#39;intera pagina (usate 0 per disattivare)
+
+- Richiede un valore
+
+#### `--page-cache-valkey-compression-lib`
+
+Libreria di compressione da utilizzare [snappy,lzf,l4z,zstd,gzip] (lasciare vuoto per determinare automaticamente)
+
+- Richiede un valore
+
+#### `--page-cache-valkey-serializer`
+
+Serializzatore da utilizzare (il file binario è più veloce del 70%, più piccolo del 58% rispetto al serializzatore PHP)
 
 - Richiede un valore
 
@@ -4030,7 +4411,7 @@ Per le opzioni globali, vedi [Opzioni globali](#global-options).
 ## `setup:install`
 
 ```shell
-bin/magento setup:install [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:install [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--stomp-host STOMP-HOST] [--stomp-port STOMP-PORT] [--stomp-user STOMP-USER] [--stomp-password STOMP-PASSWORD] [--stomp-ssl STOMP-SSL] [--stomp-ssl-options STOMP-SSL-OPTIONS] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--session-save-valkey-host SESSION-SAVE-VALKEY-HOST] [--session-save-valkey-port SESSION-SAVE-VALKEY-PORT] [--session-save-valkey-password SESSION-SAVE-VALKEY-PASSWORD] [--session-save-valkey-timeout SESSION-SAVE-VALKEY-TIMEOUT] [--session-save-valkey-retries SESSION-SAVE-VALKEY-RETRIES] [--session-save-valkey-persistent-id SESSION-SAVE-VALKEY-PERSISTENT-ID] [--session-save-valkey-db SESSION-SAVE-VALKEY-DB] [--session-save-valkey-compression-threshold SESSION-SAVE-VALKEY-COMPRESSION-THRESHOLD] [--session-save-valkey-compression-lib SESSION-SAVE-VALKEY-COMPRESSION-LIB] [--session-save-valkey-log-level SESSION-SAVE-VALKEY-LOG-LEVEL] [--session-save-valkey-max-concurrency SESSION-SAVE-VALKEY-MAX-CONCURRENCY] [--session-save-valkey-break-after-frontend SESSION-SAVE-VALKEY-BREAK-AFTER-FRONTEND] [--session-save-valkey-break-after-adminhtml SESSION-SAVE-VALKEY-BREAK-AFTER-ADMINHTML] [--session-save-valkey-first-lifetime SESSION-SAVE-VALKEY-FIRST-LIFETIME] [--session-save-valkey-bot-first-lifetime SESSION-SAVE-VALKEY-BOT-FIRST-LIFETIME] [--session-save-valkey-bot-lifetime SESSION-SAVE-VALKEY-BOT-LIFETIME] [--session-save-valkey-disable-locking SESSION-SAVE-VALKEY-DISABLE-LOCKING] [--session-save-valkey-min-lifetime SESSION-SAVE-VALKEY-MIN-LIFETIME] [--session-save-valkey-max-lifetime SESSION-SAVE-VALKEY-MAX-LIFETIME] [--session-save-valkey-sentinel-master SESSION-SAVE-VALKEY-SENTINEL-MASTER] [--session-save-valkey-sentinel-servers SESSION-SAVE-VALKEY-SENTINEL-SERVERS] [--session-save-valkey-sentinel-verify-master SESSION-SAVE-VALKEY-SENTINEL-VERIFY-MASTER] [--session-save-valkey-sentinel-connect-retries SESSION-SAVE-VALKEY-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-serializer CACHE-BACKEND-REDIS-SERIALIZER] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-backend-valkey-server CACHE-BACKEND-VALKEY-SERVER] [--cache-backend-valkey-db CACHE-BACKEND-VALKEY-DB] [--cache-backend-valkey-port CACHE-BACKEND-VALKEY-PORT] [--cache-backend-valkey-password CACHE-BACKEND-VALKEY-PASSWORD] [--cache-backend-valkey-compress-data CACHE-BACKEND-VALKEY-COMPRESS-DATA] [--cache-backend-valkey-compression-lib CACHE-BACKEND-VALKEY-COMPRESSION-LIB] [--cache-backend-valkey-serializer CACHE-BACKEND-VALKEY-SERIALIZER] [--cache-backend-valkey-use-lua CACHE-BACKEND-VALKEY-USE-LUA] [--cache-backend-valkey-use-lua-on-gc CACHE-BACKEND-VALKEY-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-redis-serializer PAGE-CACHE-REDIS-SERIALIZER] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--page-cache-valkey-server PAGE-CACHE-VALKEY-SERVER] [--page-cache-valkey-db PAGE-CACHE-VALKEY-DB] [--page-cache-valkey-port PAGE-CACHE-VALKEY-PORT] [--page-cache-valkey-password PAGE-CACHE-VALKEY-PASSWORD] [--page-cache-valkey-compress-data PAGE-CACHE-VALKEY-COMPRESS-DATA] [--page-cache-valkey-compression-lib PAGE-CACHE-VALKEY-COMPRESSION-LIB] [--page-cache-valkey-serializer PAGE-CACHE-VALKEY-SERIALIZER] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 Installa l&#39;applicazione Magento
@@ -4186,6 +4567,48 @@ I consumatori devono attendere un messaggio dalla coda? 1 - Sì, 0 - No
 
 Connessione predefinita delle code di messaggi. Può essere &#39;db&#39;, &#39;amqp&#39; o un sistema di code personalizzato.Il sistema di coda deve essere installato e configurato, altrimenti i messaggi non verranno elaborati correttamente.
 
+- Richiede un valore
+
+#### `--stomp-host`
+
+Interrompi host server
+
+- Predefinito: &quot;
+- Richiede un valore
+
+#### `--stomp-port`
+
+Interrompi porta server
+
+- Predefinito: `61613`
+- Richiede un valore
+
+#### `--stomp-user`
+
+Nome utente del server Stomp
+
+- Predefinito: &quot;
+- Richiede un valore
+
+#### `--stomp-password`
+
+Password del server Stomp
+
+- Predefinito: &quot;
+- Richiede un valore
+
+#### `--stomp-ssl`
+
+Smetti SSL
+
+- Predefinito: &quot;
+- Richiede un valore
+
+#### `--stomp-ssl-options`
+
+Opzioni SSL stomp (JSON)
+
+- Predefinito: &quot;
 - Richiede un valore
 
 #### `--deferred-total-calculating`
@@ -4433,6 +4856,144 @@ Nuovi tentativi di connessione di Redis Sentinel.
 
 - Richiede un valore
 
+#### `--session-save-valkey-host`
+
+Nome host completo, indirizzo IP o percorso assoluto se si utilizzano socket UNIX
+
+- Richiede un valore
+
+#### `--session-save-valkey-port`
+
+Porta di ascolto server Valkey
+
+- Richiede un valore
+
+#### `--session-save-valkey-password`
+
+Password server Valkey
+
+- Richiede un valore
+
+#### `--session-save-valkey-timeout`
+
+Timeout della connessione, in secondi
+
+- Richiede un valore
+
+#### `--session-save-valkey-retries`
+
+Nuovi tentativi di connessione a Valkey.
+
+- Richiede un valore
+
+#### `--session-save-valkey-persistent-id`
+
+Stringa univoca per abilitare le connessioni permanenti
+
+- Richiede un valore
+
+#### `--session-save-valkey-db`
+
+Numero database Valkey
+
+- Richiede un valore
+
+#### `--session-save-valkey-compression-threshold`
+
+Soglia di compressione Valkey
+
+- Richiede un valore
+
+#### `--session-save-valkey-compression-lib`
+
+Libreria di compressione Valkey. Valori: gzip (predefinito), lzf, lz4, snappy
+
+- Richiede un valore
+
+#### `--session-save-valkey-log-level`
+
+Livello di registro Valkey. Valori: da 0 (meno dettagliato) a 7 (più dettagliato)
+
+- Richiede un valore
+
+#### `--session-save-valkey-max-concurrency`
+
+Numero massimo di processi che possono attendere un blocco in una sessione
+
+- Richiede un valore
+
+#### `--session-save-valkey-break-after-frontend`
+
+Numero di secondi di attesa prima di interrompere un blocco per la sessione front-end
+
+- Richiede un valore
+
+#### `--session-save-valkey-break-after-adminhtml`
+
+Numero di secondi di attesa prima di interrompere un blocco per la sessione di amministrazione
+
+- Richiede un valore
+
+#### `--session-save-valkey-first-lifetime`
+
+Durata in secondi della sessione per i non bot alla prima scrittura (usa 0 per disabilitare)
+
+- Richiede un valore
+
+#### `--session-save-valkey-bot-first-lifetime`
+
+Durata in secondi della sessione per i bot alla prima scrittura (usa 0 per disabilitare)
+
+- Richiede un valore
+
+#### `--session-save-valkey-bot-lifetime`
+
+Durata della sessione per i bot nelle scritture successive (usa 0 per disabilitare)
+
+- Richiede un valore
+
+#### `--session-save-valkey-disable-locking`
+
+Valkey disabilita il blocco. Valori: false (predefinito), true
+
+- Richiede un valore
+
+#### `--session-save-valkey-min-lifetime`
+
+Durata minima sessione Valkey, in secondi
+
+- Richiede un valore
+
+#### `--session-save-valkey-max-lifetime`
+
+Durata massima sessione Valkey, in secondi
+
+- Richiede un valore
+
+#### `--session-save-valkey-sentinel-master`
+
+Valkey Sentinel master
+
+- Richiede un valore
+
+#### `--session-save-valkey-sentinel-servers`
+
+Server Sentinel Valkey, separati da virgola
+
+- Richiede un valore
+
+#### `--session-save-valkey-sentinel-verify-master`
+
+Valkey Sentinel verifica master. Valori: false (predefinito), true
+
+- Richiede un valore
+
+#### `--session-save-valkey-sentinel-connect-retries`
+
+Nuovi tentativi di connessione di Valkey Sentinel.
+
+- Richiede un valore
+
 #### `--cache-backend`
 
 Gestore cache predefinito
@@ -4475,6 +5036,12 @@ Libreria di compressione da utilizzare [snappy,lzf,l4z,zstd,gzip] (lasciare vuot
 
 - Richiede un valore
 
+#### `--cache-backend-redis-serializer`
+
+Serializzatore da utilizzare (il file binario è più veloce del 70%, più piccolo del 58% rispetto al serializzatore PHP)
+
+- Richiede un valore
+
 #### `--cache-backend-redis-use-lua`
 
 Imposta su 1 per abilitare lua (il valore predefinito è 0, disabilitato)
@@ -4482,6 +5049,60 @@ Imposta su 1 per abilitare lua (il valore predefinito è 0, disabilitato)
 - Richiede un valore
 
 #### `--cache-backend-redis-use-lua-on-gc`
+
+Imposta questo valore su 0 per disabilitare la funzione lua nella raccolta di oggetti inattivi (l&#39;impostazione predefinita è 1, abilitato)
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-server`
+
+Server Valkey
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-db`
+
+Numero di database per la cache
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-port`
+
+Porta di ascolto server Valkey
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-password`
+
+Password server Valkey
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-compress-data`
+
+Impostate questo valore su 0 per disattivare la compressione (il valore predefinito è 1, abilitato)
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-compression-lib`
+
+Libreria di compressione da utilizzare [snappy,lzf,l4z,zstd,gzip] (lasciare vuoto per determinare automaticamente)
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-serializer`
+
+Serializzatore da utilizzare (il file binario è più veloce del 70%, più piccolo del 58% rispetto al serializzatore PHP)
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-use-lua`
+
+Imposta su 1 per abilitare lua (il valore predefinito è 0, disabilitato)
+
+- Richiede un valore
+
+#### `--cache-backend-valkey-use-lua-on-gc`
 
 Imposta questo valore su 0 per disabilitare la funzione lua nella raccolta di oggetti inattivi (l&#39;impostazione predefinita è 1, abilitato)
 
@@ -4542,9 +5163,57 @@ Libreria di compressione da utilizzare [snappy,lzf,l4z,zstd,gzip] (lasciare vuot
 
 - Richiede un valore
 
+#### `--page-cache-redis-serializer`
+
+Serializzatore da utilizzare (il file binario è più veloce del 70%, più piccolo del 58% rispetto al serializzatore PHP)
+
+- Richiede un valore
+
 #### `--page-cache-id-prefix`
 
 Prefisso ID per le chiavi della cache
+
+- Richiede un valore
+
+#### `--page-cache-valkey-server`
+
+Server Valkey
+
+- Richiede un valore
+
+#### `--page-cache-valkey-db`
+
+Numero di database per la cache
+
+- Richiede un valore
+
+#### `--page-cache-valkey-port`
+
+Porta di ascolto server Valkey
+
+- Richiede un valore
+
+#### `--page-cache-valkey-password`
+
+Password server Valkey
+
+- Richiede un valore
+
+#### `--page-cache-valkey-compress-data`
+
+Impostate questo valore su 1 per comprimere la cache dell&#39;intera pagina (usate 0 per disattivare)
+
+- Richiede un valore
+
+#### `--page-cache-valkey-compression-lib`
+
+Libreria di compressione da utilizzare [snappy,lzf,l4z,zstd,gzip] (lasciare vuoto per determinare automaticamente)
+
+- Richiede un valore
+
+#### `--page-cache-valkey-serializer`
+
+Serializzatore da utilizzare (il file binario è più veloce del 70%, più piccolo del 58% rispetto al serializzatore PHP)
 
 - Richiede un valore
 

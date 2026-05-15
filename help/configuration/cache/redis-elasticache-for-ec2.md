@@ -1,10 +1,10 @@
 ---
 title: Configurare Redis con AWS ElastiCache
-description: Per le istanze Commerce in hosting su EC2, scopri come utilizzare AWS ElastiCache al posto di un’istanza Redis locale. Scopri la configurazione della riga di comando, le opzioni di configurazione e le tecniche di convalida.
+description: Scopri come utilizzare AWS ElastiCache come back-end Redis per Adobe Commerce su EC2. Individua l'installazione, la configurazione e la convalida della riga di comando.
 feature: Configuration, Cache
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -75,4 +75,4 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
    ```
 
 1. Apri una pagina nell’interfaccia utente di Commerce.
-1. Verifica l&#39;[output della cache](#verify-the-redis-connection) nel terminale.
+1. Verifica l&#39;[output della cache](#verify-connectivity) nel terminale.

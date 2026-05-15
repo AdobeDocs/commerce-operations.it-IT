@@ -2,7 +2,7 @@
 title: Dettagli tecnici
 description: Scopri i dettagli tecnici della distribuzione della pipeline, i tipi di configurazioni e i flussi di lavoro consigliati.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 0%
@@ -14,10 +14,10 @@ ht-degree: 0%
 Questo argomento illustra i dettagli tecnici dell’implementazione della pipeline in Commerce 2.2 e versioni successive. I miglioramenti possono essere suddivisi nelle seguenti aree:
 
 - [Gestione della configurazione](#configuration-management)
-- [Modifiche in Admin](#changes-in-the-admin)
+- [Modifiche in Admin](#the-commerce-admin)
 - [Installare e rimuovere cron](#install-and-remove-cron)
 
-In questo argomento viene inoltre illustrato il [flusso di lavoro consigliato](#recommended-workflow) per la distribuzione della pipeline e vengono forniti alcuni esempi per comprendere il funzionamento.
+In questo argomento viene inoltre illustrato il [flusso di lavoro consigliato](#recommended-pipeline-deployment-workflow) per la distribuzione della pipeline e vengono forniti alcuni esempi per comprendere il funzionamento.
 
 Prima di iniziare, controlla i [Prerequisiti per i sistemi di sviluppo, generazione e produzione](../deployment/prerequisites.md).
 
@@ -60,7 +60,7 @@ Puoi gestire la configurazione sensibile in uno dei seguenti modi:
 ### Impostazioni di configurazione bloccate in Amministrazione
 
 Tutte le impostazioni di configurazione in `config.php` o `env.php` sono bloccate nell&#39;amministratore, ovvero non possono essere modificate nell&#39;amministratore.
-Utilizzare il comando [`magento config:set` o `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) per modificare le impostazioni nei file `config.php` o `env.php`.
+Utilizzare il comando [`magento config:set` o `magento config:set --lock`](../cli/set-configuration-values.md#set-values) per modificare le impostazioni nei file `config.php` o `env.php`.
 
 ## L’Amministratore Commerce
 

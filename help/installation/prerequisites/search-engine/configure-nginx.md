@@ -3,7 +3,7 @@ title: Configurare Nginx per il motore di ricerca
 description: Segui questi passaggi per configurare un motore di ricerca con il server web Nginx per le installazioni locali di Adobe Commerce.
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -217,4 +217,4 @@ Questa sezione illustra come specificare chi può accedere al server del motore 
 
 {{$include /help/_includes/verify-secure-communication.md}}
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

@@ -3,7 +3,7 @@ title: Motore di ricerca corrente non supportato
 description: Risolvi i problemi relativi all’aggiornamento di Adobe Commerce dopo aver riscontrato un errore relativo a un motore di ricerca non supportato.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Prima di eseguire l’aggiornamento a 2.4, è necessario eseguire le seguenti at
 
    >[!NOTE]
    >
-   >Elasticsearch richiede JDK 1.8 o versione successiva. Consulta [Installare Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) per verificare quale versione di JDK è installata.
+   >Elasticsearch richiede JDK 1.8 o versione successiva. Consulta [Installare Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit) per verificare quale versione di JDK è installata.
 
 1. [Configura Elasticsearch](../../configuration/search/configure-search-engine.md) e reindicizza.
 

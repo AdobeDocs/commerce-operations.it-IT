@@ -1,18 +1,18 @@
 ---
-title: Configurare Redis
-description: Scopri come configurare il caching di Redis per l’ottimizzazione delle prestazioni di Adobe Commerce. Scopri le funzioni, i passaggi di configurazione e le best practice per la configurazione.
+title: Installazione e configurazione di Redis
+description: Scopri come installare e configurare Redis per il caching e l’archiviazione delle sessioni con Adobe Commerce. Scopri le opzioni per l’ottimizzazione e l’ottimizzazione delle prestazioni.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: de613310ad701dd594a6ee8fcd973aa2c3769870
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-# Configurare Redis
+# Installare e configurare Redis
 
-Le funzioni di Redis includono:
+Redis è un archivio dati in memoria che può essere utilizzato come back-end della cache e per l’archiviazione della sessione. Le caratteristiche principali includono:
 
 - Archiviazione sessione PHP
 - Pulizia della cache basata su tag senza `foreach` cicli
@@ -23,7 +23,7 @@ Le funzioni di Redis includono:
 L&#39;installazione e la configurazione del software Redis esulano dall&#39;ambito di questa guida. Consulta risorse quali:
 
 - [Scarica pagina Redis](https://redis.io/download)
-- [Guida introduttiva](https://redis.io/docs/latest/)
+- [Guida introduttiva Redis](https://redis.io/docs/latest/)
 - [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis)
 - [Pagina della documentazione di Redis](https://redis.io/docs)
 

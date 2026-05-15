@@ -2,7 +2,7 @@
 title: Configurare la proprietà e le autorizzazioni dei file
 description: Per configurare le autorizzazioni del file system per le installazioni locali di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 0%
@@ -111,7 +111,7 @@ Seguire le istruzioni visualizzate per creare una password per l&#39;utente.
 
 >[!WARNING]
 >
->Se non si dispone dei privilegi di `root` sul server applicazioni, è possibile utilizzare un altro account utente locale. Assicurarsi che l&#39;utente disponga di una password sicura e continuare con [Inserire il proprietario del file system nel gruppo di server Web](#step-3-put-the-file-system-owner-in-the-web-servers-group).
+>Se non si dispone dei privilegi di `root` sul server applicazioni, è possibile utilizzare un altro account utente locale. Assicurarsi che l&#39;utente disponga di una password sicura e continuare con [Inserire il proprietario del file system nel gruppo di server Web](#put-the-file-system-owner-in-the-web-server-group).
 
 Ad esempio, per creare un utente denominato `magento_user` e assegnare una password all&#39;utente, immettere:
 

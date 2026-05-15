@@ -2,7 +2,7 @@
 title: Dizionari di traduzione e pacchetti linguistici
 description: Scopri come generare dizionari di traduzione e pacchetti linguistici per Adobe Commerce. Scopri la localizzazione e la configurazione di store multilingue.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Per generare il dizionario e avviare la traduzione:
 
 1. Puoi creare un pacchetto dei dizionari di traduzione in un pacchetto per lingua e fornirlo all’amministratore del Commerce Store.
 
-1. Nell&#39;amministratore, l&#39;amministratore dell&#39;archivio [configura le traduzioni](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. Nell&#39;amministratore, l&#39;amministratore dell&#39;archivio [configura le traduzioni](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Opzioni comando:
 
@@ -106,7 +106,7 @@ Nella tabella seguente vengono illustrati i parametri e i valori per il comando 
 
 | Parametro | Valore | Obbligatorio |
 |--- |--- |--- |
-| `<source>` | Percorso assoluto del file system e nome file di un file CSV che contiene il dizionario di traduzione combinato e le metainformazioni necessarie per la suddivisione in un pacchetto lingua.<br><br>Utilizzare [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) per creare il file CSV, quindi creare il pacchetto lingua come descritto in [Creare directory e file](#m2devgde-xlate-files). | Sì |
+| `<source>` | Percorso assoluto del file system e nome file di un file CSV che contiene il dizionario di traduzione combinato e le metainformazioni necessarie per la suddivisione in un pacchetto lingua.<br><br>Utilizzare [`bin/magento i18n:collect-phrases`](#generate-a-translation-dictionary) per creare il file CSV, quindi creare il pacchetto lingua come descritto in [Creare directory e file](#create-directories-and-files). | Sì |
 | `<locale>` | [ISO 639-1](https://www.iso.org/iso-639-language-codes.html) (lingua) e [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) (paese) identificatori della lingua utilizzati come nome file per tutti i file CSV risultanti. Esempi: `de_DE`, `pt_PT`, `pt_BR`. | Sì |
 | `-m --mode` | Se esiste un file di destinazione, specifica se sostituire il pacchetto lingua esistente o unire con il nuovo Language Pack. L&#39;unione sostituisce tutte le frasi esistenti e ne aggiunge di nuove.<br><br>Valori: merge o replace (impostazione predefinita). | No |
 | `-d --allow-duplicates` | Includi questa opzione per consentire i duplicati nel Language Pack. In caso contrario, il comando non riesce se rileva la stessa frase in più voci con traduzioni diverse. | No |

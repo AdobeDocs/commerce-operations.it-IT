@@ -3,14 +3,14 @@ title: Configurazione vernice per Commerce
 description: Scopri come configurare Vernice in modo specifico per le applicazioni Adobe Commerce. Scopri gli aggiornamenti dei file di configurazione e le tecniche di gestione.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
-# Configurare l&#39;applicazione Commerce per l&#39;utilizzo di Vernice
+# Configurazione vernice per Commerce
 
 Per configurare Commerce per l&#39;utilizzo di Vernice:
 
@@ -22,7 +22,7 @@ Per configurare Commerce per l&#39;utilizzo di Vernice:
 
    | Campo | Descrizione |
    | ----- | ----------- |
-   | Elenco di accesso | Immettere il nome host completo, l&#39;indirizzo IP o l&#39;intervallo di indirizzi IP con notazione [&#128279;](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) di tipo Classless Inter-Domain Routing (CIDR) per cui annullare la validità del contenuto. Vedi [Rimozione cache vernice](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
+   | Elenco di accesso | Immettere il nome host completo, l&#39;indirizzo IP o l&#39;intervallo di indirizzi IP con notazione ](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) di tipo [Classless Inter-Domain Routing (CIDR) per cui annullare la validità del contenuto. Vedi [Rimozione cache vernice](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
    | Host back-end | Immettere il nome host completo o l&#39;indirizzo IP e la porta di ascolto del server di origine _backend_ o _vernice_, ovvero il server che fornisce il contenuto, che verrà accelerato da Vernice. In genere, si tratta del server web. Vedi [Server back-end della cache di vernice](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Porta back-end | Porta di ascolto del server di origine. |
    | Periodo di tolleranza | Determina per quanto tempo Vernice fornisce contenuti non aggiornati se il backend non risponde. Il valore predefinito è 300 secondi. |

@@ -1,9 +1,9 @@
 ---
-title: Configurazione vernice avanzata
+title: Configurazione avanzata vernice
 description: Scopri come configurare le funzioni avanzate di vernice per Adobe Commerce, inclusi i controlli di integrità, le modalità grazia e santo. Scopri le tecniche di ottimizzazione VCL.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%

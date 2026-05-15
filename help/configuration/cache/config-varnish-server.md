@@ -1,16 +1,16 @@
 ---
-title: Configurare il server web
+title: Configurare il server web per il caching di vernice
 description: Scopri come configurare il server web per l’utilizzo della memorizzazione in cache di Adobe Commerce. Scopri i requisiti di configurazione e configurazione delle porte.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Configurare il server web
+# Configurare il server web per il caching di vernice
 
 Configurare il server Web per l&#39;ascolto su una porta diversa da quella predefinita 80, in quanto Vernice risponde direttamente alle richieste HTTP in ingresso, non al server Web.
 

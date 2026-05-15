@@ -2,7 +2,7 @@
 title: Impostare la modalità operativa
 description: Scopri come impostare le modalità operative di Adobe Commerce tra sviluppatore e produzione. Scopri i comandi di cambio modalità e le implicazioni relative alla sicurezza.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -161,6 +161,6 @@ Enabled default mode.
 
 ### Esecuzione di comandi CLI da qualsiasi luogo
 
-[Esegui comandi CLI da qualsiasi luogo](../cli/config-cli.md#config-install-cli-first).
+[Esegui comandi CLI da qualsiasi luogo](../cli/config-cli.md#prerequisites).
 
 Se non hai aggiunto `<Commerce-install-directory>/bin` al tuo sistema `PATH`, puoi aspettarti un errore durante l&#39;esecuzione del comando da solo.

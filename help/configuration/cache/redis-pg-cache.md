@@ -1,28 +1,54 @@
 ---
-title: Usa Redis per la cache predefinita
-description: Scopri come configurare Redis come cache predefinita per Adobe Commerce. Scopri la configurazione della riga di comando, le opzioni di configurazione e le tecniche di convalida.
+title: Configurare Redis per Default e Page Cache
+description: Scopri come configurare Redis come backend predefinito e cache delle pagine per Adobe Commerce. Scopri i comandi CLI, le impostazioni env.php e la verifica della connessione.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
 
-# Usa Redis per la cache predefinita
+# Configurare Redis per cache predefinita e di pagina
 
-Commerce fornisce opzioni della riga di comando per configurare la pagina Redis e il caching predefinito. Sebbene sia possibile configurare il caching modificando il file `<Commerce-install-dir>app/etc/env.php`, l&#39;utilizzo della riga di comando è il metodo consigliato, in particolare per le configurazioni iniziali. La riga di comando fornisce la convalida, garantendo che la configurazione sia sintatticamente corretta.
+Commerce fornisce opzioni della riga di comando per configurare la pagina Redis e il caching predefinito. Sebbene sia possibile configurare il caching modificando il file `<Commerce-install-dir>app/etc/env.php`, la riga di comando è il metodo consigliato, in particolare per le configurazioni iniziali. La riga di comando fornisce la convalida per garantire che la configurazione sia sintatticamente corretta.
 
-È necessario [installare Redis](config-redis.md#install-redis) prima di continuare.
+**Prerequisito:**
+
+[Installare Redis](config-redis.md#install-redis) prima di continuare.
 
 >[!NOTE]
 >
 >Per le istanze Commerce in hosting su EC2, puoi utilizzare AWS ElastiCache invece di un’istanza Redis locale. Consulta [Configurare Elasticache per le istanze EC2](redis-elasticache-for-ec2.md).
 
+## Framework supportati
+
+>[!BEGINTABS]
+
+>[!TAB Cache Zend (2.4.8 e versioni precedenti)]
+
+- **Cache Zend (2.4.8 e versioni precedenti)** — Backend Redis legacy per Commerce 2.4.8 e versioni precedenti:
+   - **Back-end Redis legacy** - Utilizza il percorso completo della classe (`Magento\Framework\Cache\Backend\Redis`)
+   - **Chiavi di precaricamento** - Supporta il precaricamento delle chiavi della cache utilizzate di frequente
+   - **Script Lua** — Lua per la raccolta di oggetti inattivi
+   - **Compressione** - Supporta la compressione dei dati
+
+>[!TAB Cache Symfony (2.4.9+)]
+
+- **Cache Symfony (2.4.9+)** — A partire da Commerce 2.4.9, la cache Symfony fornisce un&#39;implementazione di memorizzazione nella cache moderna e conforme a PSR-6 per Redis con miglioramenti significativi delle prestazioni:
+   - **Pipeline Redis automatica**: consente di eseguire più operazioni in batch in singole richieste, riducendo la latenza
+   - **TagAwareAdapter** PSR-6: invalidazione efficiente della cache basata su tag con operazioni atomiche
+   - **Serializzazione ignorata**: la serializzazione binaria riduce la dimensione della voce della cache del 45% e migliora la velocità del 5-10%
+   - **Connessioni permanenti migliorate** — Pool di connessioni più stabili con una migliore gestione dei processi fork
+   - **Script Lua ottimizzati** — Esecuzione lato server combinata con pipeline per la massima efficienza
+
+>[!ENDTABS]
+
+
 ## Configurare il caching predefinito di Redis
 
-Eseguire il comando `setup:config:set` e specificare i parametri specifici del caching predefinito Redis.
+Eseguire il comando `setup:config:set` e specificare parametri specifici per il caching predefinito Redis.
 
 ```shell
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parameter>=<value>...
@@ -38,12 +64,12 @@ Con i seguenti parametri:
 | ------------------------------ | --------- | ------- | ------------- |
 | `cache-backend-redis-server` | server | Nome host completo, indirizzo IP o percorso assoluto di un socket UNIX. Il valore predefinito 127.0.0.1 indica che Redis è installato nel server Commerce. | `127.0.0.1` |
 | `cache-backend-redis-port` | porta | Porta di ascolto del server Redis | `6379` |
-| `cache-backend-redis-db` | database | Obbligatorio se si utilizza Redis sia per la cache predefinita che per quella a pagina intera. È necessario specificare il numero di database di una delle cache; l&#39;altra cache utilizza 0 per impostazione predefinita.<br><br>**Importante**: se si utilizza Redis per più di un tipo di memorizzazione nella cache, i numeri di database devono essere diversi. È consigliabile assegnare il numero predefinito del database di memorizzazione nella cache a 0, il numero del database di memorizzazione nella cache delle pagine a 1 e il numero del database di memorizzazione nella sessione a 2. | `0` |
+| `cache-backend-redis-db` | database | Obbligatorio se si utilizza Redis sia per la cache predefinita che per quella a pagina intera. Specificare il numero di database di una delle cache; l&#39;altra cache utilizza 0 per impostazione predefinita.<br><br>**Importante**: se si utilizza Redis per più di un tipo di memorizzazione nella cache, i numeri di database devono essere diversi. È consigliabile assegnare il numero predefinito del database di memorizzazione nella cache a 0, il numero del database di memorizzazione nella cache delle pagine a 1 e il numero del database di memorizzazione nella sessione a 2. | `0` |
 | `cache-backend-redis-password` | password | La configurazione di una password Redis abilita una delle funzionalità di protezione incorporate: il comando `auth`, che richiede l&#39;autenticazione dei client per accedere al database. La password è configurata direttamente nel file di configurazione di Redis: `/etc/redis/redis.conf` | |
-| `--cache-backend-redis-use-lua` | use_lua | Attiva o disattiva LUA. <br><br>**LUA**: Lua ci consente di eseguire parte della logica dell&#39;applicazione all&#39;interno di Redis, migliorando le prestazioni e garantendo la coerenza dei dati attraverso la sua esecuzione atomica. | `0` |
-| `--cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Attiva o disattiva LUA per la raccolta di oggetti inattivi. <br><br>**LUA**: Lua ci consente di eseguire parte della logica dell&#39;applicazione all&#39;interno di Redis, migliorando le prestazioni e garantendo la coerenza dei dati attraverso la sua esecuzione atomica. | `1` |
+| `cache-backend-redis-use-lua` | use_lua | Attiva o disattiva Lua. <br><br>**Lua**: Lua consente di eseguire parte della logica dell&#39;applicazione all&#39;interno di Redis, migliorando le prestazioni e garantendo la coerenza dei dati tramite l&#39;esecuzione atomica. | `0` |
+| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Attiva o disattiva Lua per la raccolta di oggetti inattivi. <br><br>**Lua**: Lua consente di eseguire parte della logica dell&#39;applicazione all&#39;interno di Redis, migliorando le prestazioni e garantendo la coerenza dei dati tramite l&#39;esecuzione atomica. | `1` |
 
-### Esempio di comando
+## Esempio di comando (cache predefinita)
 
 Nell&#39;esempio seguente viene attivato il caching predefinito Redis, l&#39;host viene impostato su `127.0.0.1` e il numero del database viene assegnato a 0. Redis utilizza i valori predefiniti per tutti gli altri parametri.
 
@@ -69,20 +95,24 @@ Con i seguenti parametri:
 | ------------------------------ | --------- | ------- | ------------- |
 | `page-cache-redis-server` | server | Nome host completo, indirizzo IP o percorso assoluto di un socket UNIX. Il valore predefinito 127.0.0.1 indica che Redis è installato nel server Commerce. | `127.0.0.1` |
 | `page-cache-redis-port` | porta | Porta di ascolto del server Redis | `6379` |
-| `page-cache-redis-db` | database | Obbligatorio se si utilizza Redis sia per la cache predefinita che per quella a pagina intera. È necessario specificare il numero di database di una delle cache; l&#39;altra cache utilizza 0 per impostazione predefinita.<br/>**Importante**: se si utilizza Redis per più di un tipo di memorizzazione nella cache, i numeri di database devono essere diversi. È consigliabile assegnare il numero predefinito del database di memorizzazione nella cache a 0, il numero del database di memorizzazione nella cache delle pagine a 1 e il numero del database di memorizzazione nella sessione a 2. | `0` |
+| `page-cache-redis-db` | database | Obbligatorio se si utilizza Redis sia per la cache predefinita che per quella a pagina intera. Specificare il numero di database di una delle cache; l&#39;altra cache utilizza 0 per impostazione predefinita.<br/>**Importante**: se si utilizza Redis per più di un tipo di memorizzazione nella cache, i numeri di database devono essere diversi. È consigliabile assegnare il numero predefinito del database di memorizzazione nella cache a 0, il numero del database di memorizzazione nella cache delle pagine a 1 e il numero del database di memorizzazione nella sessione a 2. | `0` |
 | `page-cache-redis-password` | password | La configurazione di una password Redis abilita una delle funzionalità di protezione incorporate: il comando `auth`, che richiede l&#39;autenticazione dei client per accedere al database. Configurare la password nel file di configurazione Redis: `/etc/redis/redis.conf` | |
 
-### Esempio di comando
-
-Nell&#39;esempio seguente viene attivato il caching delle pagine Redis, l&#39;host viene impostato su `127.0.0.1` e il numero del database viene assegnato a 1. Tutti gli altri parametri vengono impostati sul valore predefinito.
+L&#39;esempio che segue abilita il caching delle pagine Redis, imposta l&#39;host su `127.0.0.1` e assegna il numero di database a `1`. Tutti gli altri parametri vengono impostati sul valore predefinito.
 
 ```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
 ```
 
-## Verifica la configurazione dell’ambiente Commerce
+{{valkey-redis-cli-note}}
+
+### Verifica la configurazione dell’ambiente Commerce
 
 L&#39;esecuzione dei comandi per configurare Redis caching aggiorna la configurazione dell&#39;ambiente Commerce (`<Commerce-install-dir>app/etc/env.php`):
+
+>[!BEGINTABS]
+
+>[!TAB Cache Zend (2.4.8 e versioni precedenti)]
 
 ```php
 'cache' => [
@@ -108,15 +138,49 @@ L&#39;esecuzione dei comandi per configurare Redis caching aggiorna la configura
 ],
 ```
 
-## Configurare opzioni di caching aggiuntive
+>[!TAB Cache Symfony (2.4.9+)]
 
-Questa sezione descrive come abilitare le impostazioni di configurazione facoltative disabilitate per impostazione predefinita.
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend' => 'redis',
+            'backend_options' => [
+                'server' => '127.0.0.1',
+                'database' => '0',
+                'port' => '6379'
+            ],
+        ],
+        'page_cache' => [
+            'backend' => 'redis',
+            'backend_options' => [
+                'server' => '127.0.0.1',
+                'port' => '6379',
+                'database' => '1',
+                'compress_data' => '0'
+            ]
+        ]
+    ]
+],
+```
+
+>[!NOTE]
+>
+>A partire da Commerce 2.4.9, utilizza il tipo di back-end semplificato `'backend' => 'redis'` invece del percorso completo della classe. La cache di Symfony viene utilizzata automaticamente quando si specifica il nome semplificato.
+
+>[!ENDTABS]
+
+## Configurare opzioni di caching aggiuntive
 
 ### Funzione di precaricamento Redis
 
-Poiché Commerce memorizza i dati di configurazione nella cache Redis, possiamo precaricare i dati riutilizzati tra le pagine. Per trovare le chiavi che devono essere precaricate, analizza i dati trasferiti da Redis a Commerce. Si consiglia di precaricare i dati caricati su ogni pagina, ad esempio `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
+Poiché Commerce memorizza i dati di configurazione nella cache Redis, puoi precaricare i dati riutilizzati tra le pagine. Per trovare le chiavi che devono essere precaricate, analizza i dati trasferiti da Redis a Commerce. Adobe consiglia di precaricare i dati caricati su ogni pagina, ad esempio `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES` e `DB_IS_UP_TO_DATE`.
 
-Redis utilizza `pipeline` per comporre le richieste di caricamento. Le chiavi devono includere il prefisso del database; ad esempio, se il prefisso del database è `061_`, la chiave di precaricamento sarà simile a: `061_SYSTEM_DEFAULT`
+Redis utilizza `pipeline` per comporre le richieste di caricamento. Le chiavi devono includere il prefisso del database; ad esempio, se il prefisso del database è `061_`, la chiave di precaricamento sarà simile alla seguente: `061_SYSTEM_DEFAULT`
+
+>[!BEGINTABS]
+
+>[!TAB Cache Zend]
 
 ```php
 'cache' => [
@@ -146,7 +210,39 @@ Redis utilizza `pipeline` per comporre le richieste di caricamento. Le chiavi de
 ]
 ```
 
-Se utilizzi la funzione di precaricamento con la cache L2, non dimenticare di aggiungere il suffisso `:hash` alle chiavi, poiché la cache L2 trasferisce solo l&#39;hash dei dati, non i dati stessi:
+>[!TAB Cache Symfony]
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'id_prefix' => '061_',
+            'backend' => 'redis',
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'password' => '',
+                'compress_data' => '1',
+                'compression_lib' => '',
+                'preload_keys' => [
+                    '061_EAV_ENTITY_TYPES',
+                    '061_GLOBAL_PLUGIN_LIST',
+                    '061_DB_IS_UP_TO_DATE',
+                    '061_SYSTEM_DEFAULT',
+                ],
+            ]
+        ],
+        'page_cache' => [
+            'id_prefix' => '061_'
+        ]
+    ]
+]
+```
+
+>[!ENDTABS]
+
+Quando si utilizza la funzione di precaricamento con una cache L2, è necessario aggiungere il suffisso `:hash` alle chiavi. La cache L2 trasferisce solo l’hash dei dati, non i dati effettivi.
 
 ```php
 'preload_keys' => [
@@ -159,9 +255,7 @@ Se utilizzi la funzione di precaricamento con la cache L2, non dimenticare di ag
 
 ### Generazione parallela
 
-Eliminare l&#39;attesa dei blocchi abilitando l&#39;opzione `allow_parallel_generation`.
-
-Questa opzione è disabilitata per impostazione predefinita e Adobe consiglia di disabilitarla fino a quando non si dispone di un numero elevato di configurazioni o blocchi.
+A partire dalla versione di Commerce 2.4.0, Adobe ha introdotto l&#39;opzione `allow_parallel_generation` per gli utenti che desiderano eliminare l&#39;attesa dei blocchi. È disabilitato per impostazione predefinita e Adobe consiglia di disabilitarlo fino a quando non si dispone di configurazioni e/o blocchi eccessivi.
 
 **Per abilitare la generazione parallela**:
 
@@ -169,7 +263,11 @@ Questa opzione è disabilitata per impostazione predefinita e Adobe consiglia di
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
-Poiché questa opzione è un flag, non è possibile disattivarla con un comando. È necessario impostare manualmente il valore di configurazione su `false`:
+Poiché è un flag, non è possibile disattivarlo con un comando. Impostare manualmente il valore di configurazione su `false`:
+
+>[!BEGINTABS]
+
+>[!TAB Cache Zend]
 
 ```php
     'cache' => [
@@ -194,9 +292,210 @@ Poiché questa opzione è un flag, non è possibile disattivarla con un comando.
     ],
 ```
 
+>[!TAB Cache Symfony]
+
+```php
+    'cache' => [
+        'frontend' => [
+            'default' => [
+                'id_prefix' => 'b0b_',
+                'backend' => 'redis',
+                'backend_options' => [
+                    'server' => 'redis',
+                    'database' => '0',
+                    'port' => '6379',
+                    'serializer' => 'igbinary',
+                    'compress_data' => '1',
+                    'compression_lib' => 'gzip'
+                ]
+            ],
+            'page_cache' => [
+                'id_prefix' => 'b0b_'
+            ]
+        ],
+        'allow_parallel_generation' => false
+    ],
+```
+
+>[!ENDTABS]
+
+
+## Ottimizzazione delle prestazioni della cache di Symfony
+
+Se si utilizza Symfony Cache, è possibile ottimizzare ulteriormente le prestazioni configurando il serializzatore Igbinary, installando l&#39;estensione PHP e phpredis e abilitando connessioni persistenti.
+
+### Serializzatore igbinario
+
+Il serializzatore Igbinary migliora notevolmente le prestazioni rispetto alla serializzazione predefinita di PHP. Deve essere configurato manualmente in `app/etc/env.php`:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'serializer' => 'igbinary',  // Enable Igbinary serialization
+            ]
+        ],
+        'page_cache' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'serializer' => 'igbinary',  // Enable Igbinary for page cache too
+            ]
+        ]
+    ]
+]
+```
+
+### Installare l&#39;estensione PHP Igbinary
+
+Per utilizzare la serializzazione binaria, è necessario installare l&#39;estensione PHP Igbinary.
+
+**Utilizzo di apt (consigliato per Debian/Ubuntu)**:
+
+```bash
+sudo apt-get install php-igbinary
+sudo systemctl restart php-fpm
+php -m | grep igbinary
+```
+
+**Utilizzo di pecl (metodo alternativo)**:
+
+```bash
+sudo pecl install igbinary
+echo "extension=igbinary.so" | sudo tee /etc/php/8.3/mods-available/igbinary.ini
+sudo phpenmod igbinary
+sudo systemctl restart php-fpm
+php -m | grep igbinary
+```
+
+### Estensioni PHP Redis: phpredis vs predis
+
+Commerce 2.4.9+ include il fallback automatico tra phpredis (estensione C nativa) e Predis (libreria PHP pura). Per ottenere prestazioni ottimali, installare phpredis:
+
+**Utilizzo di apt (consigliato per Debian/Ubuntu)**:
+
+```bash
+sudo apt-get install php-redis
+sudo systemctl restart php-fpm
+php -m | grep redis
+```
+
+**Utilizzo di pecl (metodo alternativo)**:
+
+```bash
+sudo pecl install redis
+echo "extension=redis.so" | sudo tee /etc/php/8.3/mods-available/redis.ini
+sudo phpenmod redis
+sudo systemctl restart php-fpm
+php -m | grep redis
+```
+
+**Confronto delle prestazioni**:
+
+| Operazione | Predis | phpredis | Miglioramento |
+|-----------|--------|----------|-------------|
+| Memorizza GET nella cache | 1-5 ms | 0,5-2 ms | 2-3 volte più veloce |
+| Cache SET | 2-6 ms | 0,8-2,5 ms | 2-3 volte più veloce |
+| Operazioni sui tag | 10-30 ms | 3-10 ms | 3-4 volte più veloce |
+
+### Connessioni persistenti
+
+Le connessioni persistenti riutilizzano le connessioni Redis esistenti tra le richieste, fornendo operazioni della cache più veloci del 5-15%. Configura in `app/etc/env.php`:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'persistent' => '1',
+                'persistent_id' => 'cache_default',
+                'timeout' => '2.5',
+                'read_timeout' => '2.0',
+            ]
+        ],
+        'page_cache' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'persistent' => '1',
+                'persistent_id' => 'cache_fpc',
+            ]
+        ]
+    ]
+]
+```
+
+>[!IMPORTANT]
+>
+>Utilizzare un `persistent_id` univoco per ogni tipo di cache per evitare conflitti di connessione.
+
+### Configurazione ottimizzata completa
+
+Ecco una configurazione di Symfony pronta per la produzione che combina tutte le ottimizzazioni delle prestazioni:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'id_prefix' => 'b0b_',
+            'backend' => 'redis',
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'serializer' => 'igbinary',
+                'compress_data' => '1',
+                'compression_lib' => 'gzip',
+                'persistent' => '1',
+                'persistent_id' => 'cache_default',
+                'timeout' => '2.5',
+                'read_timeout' => '2.0',
+                'use_lua' => '1',
+                'use_lua_on_gc' => '1',
+                'preload_keys' => [
+                    'b0b_EAV_ENTITY_TYPES',
+                    'b0b_GLOBAL_PLUGIN_LIST',
+                    'b0b_DB_IS_UP_TO_DATE',
+                    'b0b_SYSTEM_DEFAULT',
+                ],
+            ]
+        ],
+        'page_cache' => [
+            'id_prefix' => 'b0b_',
+            'backend' => 'redis',
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'serializer' => 'igbinary',
+                'compress_data' => '0',
+                'persistent' => '1',
+                'persistent_id' => 'cache_fpc',
+            ]
+        ]
+    ],
+    'allow_parallel_generation' => false
+]
+```
+
 ## Verificare la connessione Redis
 
-Per verificare che Redis e Commerce funzionino insieme, accedete al server che esegue Redis, aprite un terminale e utilizzate il comando di monitoraggio Redis o il comando ping.
+Per verificare che Redis e Commerce funzionino correttamente:
+
+1. Accedere al server che esegue Redis e Commerce.
+1. Apri un terminale.
+1. Controllare la connessione utilizzando il comando `redis-cli monitor` o il comando `redis-cli ping`.
+
+Se i comandi vengono eseguiti correttamente, Redis è in esecuzione e può comunicare con l&#39;applicazione Commerce. In caso di esito negativo, è necessario risolvere un problema di connessione tra Redis e Commerce.
 
 ### Comando Redis Monitor
 
@@ -217,28 +516,11 @@ Output di esempio per il caching delle pagine:
 1476826133.869601 [0 127.0.0.1:52369] "hget" "zc:k:ea6_DEFAULT_CONFIG_CACHE_DEFAULT__10__235__32__1080MAGENTO2" "d"
 1476826133.872317 [0 127.0.0.1:52369] "hget" "zc:k:ea6_INITIAL_CONFIG" "d"
 1476826133.879267 [0 127.0.0.1:52369] "hget" "zc:k:ea6_GLOBAL_PRIMARY_PLUGIN_LIST" "d"
-1476826133.883312 [0 127.0.0.1:52369] "hget" "zc:k:ea6_GLOBAL__EVENT_CONFIG_CACHE" "d"
-1476826133.898431 [0 127.0.0.1:52369] "hget" "zc:k:ea6_DB_PDO_MYSQL_DDL_STAGING_UPDATE_1" "d"
-1476826133.898794 [0 127.0.0.1:52369] "hget" "zc:k:ea6_RESOLVED_STORES_D1BEFA03C79CA0B84ECC488DEA96BC68" "d"
-1476826133.905738 [0 127.0.0.1:52369] "hget" "zc:k:ea6_DEFAULT_CONFIG_CACHE_STORE_DEFAULT_10__235__32__1080MAGENTO2" "d"
-
-... more ...
-
-1476826210.634998 [0 127.0.0.1:52439] "hmset" "zc:k:ea6_MVIEW_CONFIG" "d" "a:18:{s:19:\"design_config_dummy\";a:4:{s:7:\"view_id\";s:19:\"design_config_dummy\";s:12:\"action_class\";s:39:\"Magento\\Theme\\Model\\Indexer\\Mview\\Dummy\";s:5:\"group\";s:7:\"indexer\";s:13:\"subscriptions\";a:0:{}}s:14:\"customer_dummy\";a:4:{s:7:\"view_id\";s:14:\"customer_dummy\";s:12:\"action_class\";s:42:\"Magento\\Customer\\Model\\Indexer\\Mview\\Dummy\";s:5:\"group\";s:7:\"indexer\";s:13:\"subscriptions\";a:0:{}}s:13:\"cms_page_grid\";a:4:{s:7:\"view_id\";s:13:\"cms_page_grid\";s:12:\"action_class\";s:43:\"Magento\\Catalog\\Model\\Indexer\\Category\\Flat\";s:5:\"group\";s:7:\"indexer\";s:13:\"subscriptions\";a:1:{s:8:\"cms_page\";a:3:{s:4:\"name\";s:8:\"cms_page\";s:6:\"column\";s:7:\"page_id\";s:18:\"subscription_model\";N;}}}s:21:\"catalog_category_flat\";a:4:{s:7:\"view_id\";s:21:\"catalog_category_flat\";s:12:\"action_class\";s:43:\"Magento\\Catalog\\Model\\Indexer\\Category\\Flat\";s:5:\"group\";s:7:\"indexer\";s:13:\"subscriptions\";a:6:{s:23:\"catalog_category_entity\";a:3:{s:4:\"name\";s:23:\"catalog_category_entity\";s:6:\"column\";s:9:\"entity_id\";s:18:\"subscription_model\";N;}s:31:\"catalog_category_entity_decimal\";a:3:{s:4:\"name\";s:31:\"catalog_category_entity_decimal\";s:6:\"column\";s:9:\"entity_id\";s:18:\"subscription_model\";s:71:\"Magento\\CatalogStaging\\Model\\Mview\\View\\Category\\Attribute\\Subscription\";}s:27:\"catalog_category_entity_int\";a:3:{s:4:\"name\";s:27:\"catalog_category_entity_int\";s:6:\"column\";s:9:\"entity_id\";s:18:\"subscription_model\";s:71:\"Magento\\CatalogStaging\\Model\\Mview\\View\\Category\\Attribute\\Subscription\";}s:28:\"catalog_category_entity_text\";a:3:{s:4:\"name\";s:28:\"catalog_category_entity_text\";s:6:\"column\";s:9:\"entity_id\";s:18:\"subscription_model\";s:71:\"Magento\\CatalogStaging\\Model\\Mview\\View\\Category\\Attribute\\Subscription\";}s:31:\"catalog_category_entity_varchar\";a:3:{s:4:\"name\";s:31:\"catalog_category_entity_varchar\";s:6:\"column\";s:9:\"entity_id\";s:18:\"subscription_model\";s:71:\"Magento\\CatalogStaging\\Model\\Mview\\View\\Category\\Attribute\\Subscription\";}s:32:\"catalog_category_entity_datetime\";a:3:{s:4:\"name\";s:32:\"catalog_category_entity_datetime\";s:6:\"column\";s:9:\"entity_id\";s:18:\"subscription_model\";s:71:\"Magento\\CatalogStaging\\Model\\Mview\\View\\Category\\Attribute\\Subscription\";}}}s:24:\"catalog_category_product\";a:4:{s:7:\"view_id\";s:24:\"catalog_category_product\";s:12:\"action_class\";s:46:\"Magento\\Catalog\\Model\\Indexer\\Category\\Product\";s:5:\"group\";s:7:\"indexer\";s:13:\"subscriptions\";a:2:{s:23:\"catalog_category_entity\";a:3:{s:4:\"name\";s:23:\"catalog_category_entity\";s:6:\"column\"
-
-... more ...
+...
 ```
 
-### Ridisattiva comando ping
+Se entrambi i comandi vengono eseguiti, Redis viene configurato correttamente.
 
-```shell
-redis-cli ping
-```
+### Controllare i dati compressi
 
-Risposta prevista: `PONG`
-
-Se entrambi i comandi sono riusciti, Redis viene configurato correttamente.
-
-### Analisi dei dati compressi
-
-Per verificare i dati compressi di Session e Page Cache, [RESP.app](https://flathub.org/apps/details/app.resp.RESP) supporta la decompressione automatica di Commerce 2 Session e Page Cache e visualizza i dati di sessione PHP in un formato leggibile.
+Per verificare i dati di sessione compressi e la cache delle pagine, utilizzare lo strumento [RESP.app](https://flathub.org/apps/details/app.resp.RESP). Supporta la decompressione automatica dei dati della cache di pagina e della sessione di Commerce 2 e visualizza i dati della sessione PHP in un formato leggibile.

@@ -3,9 +3,9 @@ title: bin/magento (Adobe Commerce on-premise 2.4.9-beta1)
 description: Scopri tutti i comandi, gli argomenti e le opzioni disponibili per lo strumento da riga di comando Adobe Commerce bin/magento.
 mini-toc-levels: 1
 recommendations: noDisplay, noCatalog
-source-git-commit: 2657c83d5467e603a681521886e80592e3b335aa
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
-source-wordcount: '40'
+source-wordcount: '47'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Questo riferimento documenta la versione **2.4.9-beta1** di Adobe Commerce
-> CLI locale.
+> Questo riferimento documenta la versione **2.4.9-beta1** di Adobe Commerce> CLI locale.
 
 {{$include /help/_includes/templated/reference/cli/commerce-on-premises-beta.md}}
 
-<!-- Last updated from includes: 2026-03-19 11:29:47 -->
+<!-- Last updated from includes: 2026-04-24 18:20:11 -->

@@ -2,9 +2,9 @@
 title: Modalità di applicazione
 description: L'applicazione Commerce può funzionare in modalità diverse a seconda delle esigenze. Visualizzare un elenco dettagliato delle modalità di applicazione disponibili.
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: c415c3427f513255b9d4ebe1d24ba4024df21928
+source-git-commit: b1cfa656e3393bd47fb2c1557ff75db3ec6c6a67
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Consulta [Impostare la modalità operativa](../cli/set-mode.md) per scoprire com
 
 A causa del file system di sola lettura, esiste una restrizione rigida alla modifica delle modalità in ambienti cloud remoti e non può essere ignorato dal supporto Adobe Commerce. Non tentare di modificare le modalità modificando il file `app/etc/env.php` perché il pacchetto `ece-tools` sovrascrive il file in base a più origini di configurazione.
 
-Adobe Commerce su infrastruttura cloud esegue automaticamente l&#39;applicazione in modalità _manutenzione_ durante una distribuzione, che disconnette il sito fino al completamento della distribuzione. In caso contrario, l&#39;applicazione rimane in modalità _produzione_. Consulta [Processo di distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=it#deploy-phase) nella _guida di Commerce sull&#39;infrastruttura cloud_.
+Adobe Commerce su infrastruttura cloud esegue automaticamente l&#39;applicazione in modalità _manutenzione_ durante una distribuzione, che disconnette il sito fino al completamento della distribuzione. In caso contrario, l&#39;applicazione rimane in modalità _produzione_. Consulta [Processo di distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) nella _guida di Commerce sull&#39;infrastruttura cloud_.
 
 Se utilizzi Cloud Docker per Commerce come strumento di sviluppo, puoi distribuire il progetto di infrastruttura cloud in un ambiente Docker in modalità _sviluppatore_, ma le prestazioni sono più lente a causa di operazioni aggiuntive di sincronizzazione dei file. Consulta [Distribuire l&#39;ambiente Docker](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) nella _guida di Cloud Docker per Commerce_.
 
@@ -64,7 +64,7 @@ In modalità sviluppatore:
 
 La modalità _produzione_ è la migliore per distribuire l&#39;applicazione Commerce in un sistema di produzione. Dopo aver ottimizzato l&#39;ambiente del server, ad esempio il database e il server Web, è necessario eseguire lo strumento di distribuzione [file di visualizzazione statica](../cli/static-view-file-deployment.md) per scrivere file di visualizzazione statica nella directory `pub/static`. Questo migliora le prestazioni fornendo tutti i file statici necessari durante la distribuzione anziché costringere l’applicazione Commerce a individuare e copiare dinamicamente (materializzare) i file statici su richiesta durante il runtime.
 
-Alcuni campi, come le sezioni di configurazione del sistema Avanzate e Sviluppatori nell’Admin, non sono disponibili in modalità di produzione. Ad esempio, _non è possibile_ abilitare o disabilitare i tipi di cache utilizzando l&#39;amministratore. È possibile abilitare e disabilitare i tipi di cache _only_ utilizzando la [riga di comando](../cli/manage-cache.md#config-cli-subcommands-cache-en).
+Alcuni campi, come le sezioni di configurazione del sistema Avanzate e Sviluppatori nell’Admin, non sono disponibili in modalità di produzione. Ad esempio, _non è possibile_ abilitare o disabilitare i tipi di cache utilizzando l&#39;amministratore. È possibile abilitare e disabilitare i tipi di cache _only_ utilizzando la [riga di comando](../cli/manage-cache.md#enable-or-disable-cache-types).
 
 In modalità di produzione:
 
@@ -78,7 +78,7 @@ La modalità _manutenzione_ limita o impedisce l&#39;accesso a un sito durante m
 
 Puoi creare una [pagina di manutenzione personalizzata](../../upgrade/troubleshooting/maintenance-mode-options.md), abilitare e disabilitare manualmente la modalità di manutenzione e configurare la modalità di manutenzione in modo da consentire ai visitatori di indirizzi IP autorizzati di visualizzare l&#39;archivio normalmente. Vedere [attivare e disattivare la modalità di manutenzione](../../installation/tutorials/maintenance-mode.md) nella _Guida all&#39;installazione_.
 
-Se utilizzi Commerce su un’infrastruttura cloud, l’applicazione Commerce viene eseguita in modalità di manutenzione durante la fase di distribuzione. Al termine della distribuzione, l’applicazione Commerce torna in esecuzione in modalità di produzione. Consulta [Hook di distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=it#phase-5%3A-deployment-hooks) nella _guida di Commerce sull&#39;infrastruttura cloud_.
+Se utilizzi Commerce su un’infrastruttura cloud, l’applicazione Commerce viene eseguita in modalità di manutenzione durante la fase di distribuzione. Al termine della distribuzione, l’applicazione Commerce torna in esecuzione in modalità di produzione. Consulta [Hook di distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) nella _guida di Commerce sull&#39;infrastruttura cloud_.
 
 In modalità di manutenzione:
 
