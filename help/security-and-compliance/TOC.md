@@ -23,4 +23,4 @@ ht-degree: 1%
 - Riferimento {#reference}
    - [Informazioni personali del cliente (versione 2.x)](privacy/data-m2.md)
    - [Informazioni personali del cliente (versione 1.x)](privacy/data-m1.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
