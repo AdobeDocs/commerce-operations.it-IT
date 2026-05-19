@@ -73,7 +73,7 @@ Ora le API convalidano correttamente l’input e restituiscono un errore 400 per
 
 _AC-6419 - [Problema GitHub](https://github.com/magento/magento2/issues/35934) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Errore interno del server nell&#39;endpoint API `/V1/order/{orderId}/ship`
+#### Errore interno del server nell&#39;endpoint API `/V1/order/&lbrace;orderId&rbrace;/ship`
 
 Il sistema ora corregge l&#39;errore del server interno nell&#39;endpoint API `/V1/order/{orderId}/ship` e restituisce un errore 400 poiché la richiesta non è valida.
 
