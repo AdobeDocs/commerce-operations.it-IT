@@ -2,9 +2,8 @@
 title: Libreria JavaScript di Adobe Privacy
 description: Scopri come utilizzare gli strumenti personalizzati per accedere ed eliminare le informazioni personali dei clienti raccolte da Adobe Commerce.
 hide: true
-hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%

@@ -2,7 +2,7 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: bf7216db7919b3f62e66cd7c27c0db023b2b6441
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '9953'
 ht-degree: 0%
@@ -27,11 +27,11 @@ ht-degree: 0%
    - [Avvisi](site-wide-analysis-tool/alerts.md)
    - [Patch](site-wide-analysis-tool/patches.md)
 - MAIUSC {#caps-tool}
-   - [Introduzione](caps-tool/intro.md)
-   - [Accesso](caps-tool/access.md)
-   - [Flusso di lavoro](caps-tool/workflow.md)
-   - [Best practice](caps-tool/best-practices.md)
-   - [Risoluzione dei problemi](caps-tool/troubleshooting.md)
+   - {hide-from-toc}[Introduzione](caps-tool/intro.md)
+   - {hide-from-toc}[Accesso](caps-tool/access.md)
+   - {hide-from-toc}[Flusso di lavoro](caps-tool/workflow.md)
+   - {hide-from-toc}[Best practice](caps-tool/best-practices.md)
+   - {hide-from-toc}[Risoluzione dei problemi](caps-tool/troubleshooting.md)
 - Avvisi gestiti su Adobe Commerce {#managed-alerts-for-adobe-commerce}
    - [Avvisi gestiti su Adobe Commerce: [!DNL Redis] avviso di memoria critica](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Avvisi gestiti per Adobe Commerce: avviso di disco](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
