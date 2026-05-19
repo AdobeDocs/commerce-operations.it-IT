@@ -2,9 +2,9 @@
 title: Riferimento per le informazioni personali del cliente (versione 1.x)
 description: Scopri i mapping di entità di database e flussi di dati per le informazioni personali dei clienti in Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ L&#39;utente può immettere le informazioni relative al cliente, all&#39;indiriz
 
 Commerce carica le informazioni del cliente quando effettua l’accesso e visualizza diverse pagine o estrazioni.
 
-![Punti di accesso ai dati front-end](../../assets/security-compliance/frontend-data-access-points.svg)
+![Punti di accesso ai dati front-end](../../assets/security-compliance/frontend-data-access-points.png)
 
 ### Punti di immissione dati back-end
 
@@ -46,7 +46,7 @@ Per creare un cliente o un ordine, un commerciante può immettere le informazion
 
 Commerce carica le informazioni sul cliente quando un commerciante visualizza diversi tipi di griglie, fa clic su una griglia per visualizzare informazioni dettagliate ed esegue varie altre attività.
 
-![Punti di accesso ai dati back-end](../../assets/security-compliance/backend-data-access-points.svg)
+![Punti di accesso ai dati back-end](../../assets/security-compliance/backend-data-access-points.png)
 
 ## Entità di database
 

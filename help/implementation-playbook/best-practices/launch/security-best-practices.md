@@ -3,9 +3,9 @@ title: Proteggere il sito e l'infrastruttura Commerce
 description: Mantenere la sicurezza implementando le best practice per la sicurezza durante la configurazione e l’aggiornamento delle installazioni di Adobe Commerce.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '2173'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobe considera le seguenti raccomandazioni come della massima priorità per tut
 
 ![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Abilita l&#39;autenticazione a due fattori per l&#39;amministratore e tutte le connessioni SSH**
 
-- [Sicurezza per l&#39;amministratore di Commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html?lang=it)
+- [Sicurezza per l’amministratore di Commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
 
 - [Connessioni SSH sicure](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html?lang=it) (infrastruttura cloud)
 
@@ -111,7 +111,7 @@ Nell&#39;ambito di un piano di disaster recovery, Adobe consiglia vivamente ai c
 
 - [Backup e disaster recovery](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=it#backup-and-disaster-recovery)
 
-- [Archivia la gestione della configurazione per Adobe Commerce nell&#39;infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=it)
+- [Gestione della configurazione dello store per Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=it)
 
 **Adobe Commerce distribuito nei locali**
 
@@ -145,7 +145,7 @@ Negli attacchi più comuni, il codice dannoso viene iniettato nell&#39;intestazi
 
 Gli skimmer di carte di credito lato client sono un tipo di malware che incorpora il codice nel contenuto del sito web di un commerciante che può essere eseguito nel browser di un utente come mostrato nella figura seguente.
 
-![Flusso di dati per attacchi malware destinati a siti e-commerce](../../../assets/playbooks/malware-data-flow.svg)
+![Flusso di dati per attacchi malware destinati a siti e-commerce](../../../assets/playbooks/malware-data-flow.png)
 
 Quando si verificano determinate azioni, ad esempio l’invio di un modulo o la modifica di un valore di campo, lo skimmer serializza i dati e li invia agli endpoint di terze parti. Questi endpoint sono in genere altri siti web compromessi che fungono da relè per l’invio dei dati alla destinazione finale.
 
