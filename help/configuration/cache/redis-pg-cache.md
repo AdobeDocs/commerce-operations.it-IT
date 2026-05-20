@@ -3,9 +3,9 @@ title: Configurare Redis per Default e Page Cache
 description: Scopri come configurare Redis come backend predefinito e cache delle pagine per Adobe Commerce. Scopri i comandi CLI, le impostazioni env.php e la verifica della connessione.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: d82061ad2fa4676bd8fa71a9d34a954444eb0f54
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -66,8 +66,19 @@ Con i seguenti parametri:
 | `cache-backend-redis-port` | porta | Porta di ascolto del server Redis | `6379` |
 | `cache-backend-redis-db` | database | Obbligatorio se si utilizza Redis sia per la cache predefinita che per quella a pagina intera. Specificare il numero di database di una delle cache; l&#39;altra cache utilizza 0 per impostazione predefinita.<br><br>**Importante**: se si utilizza Redis per più di un tipo di memorizzazione nella cache, i numeri di database devono essere diversi. È consigliabile assegnare il numero predefinito del database di memorizzazione nella cache a 0, il numero del database di memorizzazione nella cache delle pagine a 1 e il numero del database di memorizzazione nella sessione a 2. | `0` |
 | `cache-backend-redis-password` | password | La configurazione di una password Redis abilita una delle funzionalità di protezione incorporate: il comando `auth`, che richiede l&#39;autenticazione dei client per accedere al database. La password è configurata direttamente nel file di configurazione di Redis: `/etc/redis/redis.conf` | |
-| `cache-backend-redis-use-lua` | use_lua | Attiva o disattiva Lua. <br><br>**Lua**: Lua consente di eseguire parte della logica dell&#39;applicazione all&#39;interno di Redis, migliorando le prestazioni e garantendo la coerenza dei dati tramite l&#39;esecuzione atomica. | `0` |
-| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Attiva o disattiva Lua per la raccolta di oggetti inattivi. <br><br>**Lua**: Lua consente di eseguire parte della logica dell&#39;applicazione all&#39;interno di Redis, migliorando le prestazioni e garantendo la coerenza dei dati tramite l&#39;esecuzione atomica. | `1` |
+| `cache-backend-redis-use-lua` | use_lua | Attiva o disattiva gli script Lua per tutte le operazioni Redis. <br><br>**Impostazione predefinita: mantieni alle `0`.** La modalità Lua è disabilitata per impostazione predefinita per evitare regressioni delle prestazioni note e problemi di perdita della cache di GraphQL introdotti dalla libreria Redis in bundle (1.17.x) quando Lua è stato abilitato. | `0` |
+| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Abilitare o disabilitare gli script Lua per la raccolta di oggetti inattivi (il processo cron `backend_clean_cache`). <br><br>**Impostazione predefinita: mantieni alle `1`.** Abilitato intenzionalmente per garantire la pulizia del set di tag atomici durante la GC. Senza di esso, può verificarsi una situazione di tipo &quot;race condition&quot; quando il cron `backend_clean_cache` viene eseguito contemporaneamente a un&#39;operazione di salvataggio della cache, lasciando le voci della cache senza un record corrispondente nell&#39;indice dei tag della cache. Questo causa un errore improvviso di invalidazione basata su tag: ad esempio, l’aggiornamento del prezzo di un prodotto potrebbe non invalidare la cache del prodotto, richiedendo invece uno scaricamento completo della cache. | `1` |
+
+### Modalità Lua
+
+Se abilitata, la modalità Lua raggruppa più operazioni Redis (scritture cache, aggiornamenti dei tag, Garbage Collection) in un unico script atomico eseguito lato server tramite `EVALSHA`. Questo impedisce l’interfoliazione da richieste simultanee, ad esempio, garantendo che una voce della cache e la relativa appartenenza ai tag siano scritte insieme.
+
+>[!WARNING]
+>
+>Non modificare i valori predefiniti per `use_lua` e `use_lua_on_gc` senza comprendere le implicazioni per la versione di Adobe Commerce:
+>
+>- **`use_lua`**: l&#39;abilitazione di questa proprietà in Adobe Commerce 2.4.7 o 2.4.8 (libreria `colinmollenhour/cache-backend-redis` 1.17.1) può causare il danneggiamento della cache e problemi di mancato funzionamento della cache di GraphQL.
+>- **`use_lua_on_gc`**: la disabilitazione di questa proprietà in Adobe Commerce 2.4.8 rimuove la protezione atomica durante la raccolta di oggetti inattivi e può causare un errore silenzioso di invalidazione della cache basata su tag, che richiede il ripristino di uno scaricamento completo della cache.
 
 ## Esempio di comando (cache predefinita)
 
