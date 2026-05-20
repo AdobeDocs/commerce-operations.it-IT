@@ -1,5 +1,5 @@
 ---
-source-git-commit: 3bee7acf020881743923dabc1d93b6001324bb4d
+source-git-commit: c040c9a3f184f0a39f778e7f0f2417dcbfbfeba1
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Se fai parte della community Adobe e desideri creare un nuovo articolo o inviare
 
 ### Modifiche sostanziali da parte dei dipendenti Adobe
 
-Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione Adobe Experience Cloud ed è tuo compito creare o contribuire ad articoli tecnici, devi utilizzare l&#39;archivio privato all&#39;indirizzo `https://git.corp.adobe.com/AdobeDocs`.
+Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione Adobe Experience Cloud ed è tuo compito creare o contribuire ad articoli tecnici, devi utilizzare l&#39;archivio privato all&#39;indirizzo `https://github.com/Adobe-Enterprise-Docs`.
 
 ## Strumenti e configurazione
 
@@ -82,4 +82,3 @@ Questo archivio utilizza le attività di rastremazione fornite dal gem `adobe-co
 cd _jekyll
 bundle exec rake --tasks
 ```
-
