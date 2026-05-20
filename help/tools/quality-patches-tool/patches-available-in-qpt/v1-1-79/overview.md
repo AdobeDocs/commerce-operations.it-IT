@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a8666ceccfe78536a624c67227692c98a521f555
+source-git-commit: 19f0697ee47fcd7e3228d9e44010b45c3799a182
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -19,7 +19,7 @@ QPT v1.1.79 include le seguenti patch:
 1. **ACP2E-4402**: è stato risolto il problema che impediva l&#39;aggiunta dei prodotti creati come disabilitati ai [!UICONTROL Target Rule] risultati correlati dopo l&#39;abilitazione.
 1. **ACP2E-4505**: è stato risolto il problema che consentiva di salvare una categoria con dati non aggiornati da una scheda del browser duplicata, creando una dipendenza circolare.
 1. **ACP2E-4531**: è stato corretto il problema per cui la modifica della chiave URL di una pagina CMS non comporta l&#39;aggiornamento dell&#39;URL gerarchico della pagina.
-1. **ACP2E-4601**: è stato risolto il problema che poteva causare un funzionamento inefficiente dell&#39;elaborazione delle transazioni di pagamento in determinate condizioni.
+1. **[ACP2E-4601](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)**: è stato risolto il problema che poteva causare un funzionamento inefficiente dell&#39;elaborazione delle transazioni di pagamento in determinate condizioni.
 1. **ACP2E-4603**: è stato risolto il problema che causava la mancata modifica delle righe dell&#39;indice delle autorizzazioni esistenti durante l&#39;esecuzione della reindicizzazione del prodotto [!UICONTROL Catalog Permissions], impedendo che le autorizzazioni per le categorie aggiornate si riflettessero in modo affidabile sui prodotti.
 1. **ACP2E-4706**: è stato risolto il problema che causava il salto dei prodotti non abilitati nell&#39;ambito [!UICONTROL Admin] da parte dell&#39;indicizzatore [!UICONTROL Target Rule].
 1. **ACP2E-4720**: è stato risolto il problema che impediva la corretta applicazione o rimozione della spedizione gratuita per i prodotti bundle con regole di sconto sul carrello.
