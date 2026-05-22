@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8b631aabebcc37a793d8dda60af0c9194c269e36
+source-git-commit: d90419967a22835efff29ff609caea342a86a438
 workflow-type: tm+mt
-source-wordcount: '2623'
+source-wordcount: '2686'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 0%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 22 maggio 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>10933 Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">note sulla versione di Adobe Commerce 2.4.9</a> e <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/magento-open-source/2-4-9">note sulla versione di Magento Open Source 2.4.9</a>: è stata chiarita la correzione di <code class="language-plaintext highlighter-rouge">setup:di:compile</code> AC, è stata rimossa la correzione annullata di AC-14519 e sono stati corretti i conteggi dei problemi risolti.<br /><em>Credito: <a href="https://github.com/hostep">hostep</a></em></p>
+</td>
+      <td>
+        Feedback tecnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e5a69a282839a393d6eb873af9938208706af50">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.79 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737">AC-10737: il comando Bin/Magento setup:db:status non riconosce il tipo di dati JSON</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9aad978f42697f74ebd7c8f401e45b4780bd5038">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 20 maggio 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.79 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601">ACP2E-4601: Salvataggio di una transazione di autorizzazione del pagamento con riferimento autonomo parent_id e attivazione di un loop/OOM infinito</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3fe9730b1954a07d9ef4a405ee75fcde9511e09d">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Aggiornamento di <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/lifecycle-policy">Criteri del ciclo di vita del software</a> con date di applicazione dell'aggiornamento della versione cloud, definizioni dei periodi di supporto (incluso il periodo transitorio di sola sicurezza), una tabella di fine del supporto estesa per le versioni 2.4.4-2.4.9, indicazioni PCI PHP e percorsi per la migrazione ad Adobe Commerce as a Cloud Service o l'aggiornamento su PaaS.</p>
+</td>
+      <td>
+        Aggiornamento principale
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cd0f27ae6a8dcec9b25af15386d8350c22d2fb95">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 13 maggio 2026
 
@@ -497,72 +557,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Tecnico, feedback
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96e5b397a2ffee8fadaf638e721799b40d320d3">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 19 marzo 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.76 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69319">ACSD-69319: i prezzi dei bundle non venivano indicizzati correttamente quando i prodotti secondari avevano scorte in origini personalizzate</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7646d46e37385cf0a2bfbee6de82410ca54629a1">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 18 marzo 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.76 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69086">ACSD-69086: l'installazione non riesce in MariaDB 10.11 a causa di un controllo della versione del database non supportato</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/016d24d990492d009677c218b253ae88c21634e6">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 17 marzo 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.76 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69331">ACSD-69331: i creatori di contenuto nella raccolta multimediale non potevano creare cartelle con la sola autorizzazione <code class="language-plaintext highlighter-rouge">create_folder</code>. Dopo la correzione, possono creare le cartelle come previsto</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/40a14de0a67a0c373dcbb497f1893a98322435b3">commit</a></td>
     </tr>
   </tbody>
 </table>
