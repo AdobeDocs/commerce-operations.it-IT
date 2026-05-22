@@ -1,7 +1,7 @@
 ---
-source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
+source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '36741'
+source-wordcount: '36655'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Problemi risolti nella versione v2.4.9
 
-Sono stati risolti 667 problemi nel codice core di Adobe Commerce 2.4.9. Di seguito è descritto un sottoinsieme dei problemi risolti inclusi in questa versione.
+Sono stati risolti 666 problemi nel codice core di Adobe Commerce 2.4.9. Di seguito è descritto un sottoinsieme dei problemi risolti inclusi in questa versione.
 
 ### API
 
@@ -73,7 +73,7 @@ Ora le API convalidano correttamente l’input e restituiscono un errore 400 per
 
 _AC-6419 - [Problema GitHub](https://github.com/magento/magento2/issues/35934) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Errore interno del server nell&#39;endpoint API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Errore interno del server nell&#39;endpoint API `/V1/order/{orderId}/ship`
 
 Il sistema ora corregge l&#39;errore del server interno nell&#39;endpoint API `/V1/order/{orderId}/ship` e restituisce un errore 400 poiché la richiesta non è valida.
 
@@ -2095,7 +2095,7 @@ _AC-15336 - [Contributo codice GitHub](https://github.com/magento/magento2/commi
 
 #### Compilazione del codice del modulo disabilitato
 
-Questo escape di richiesta pull ha disabilitato i moduli prima della compilazione del codice.
+È stato modificato il comportamento di `setup:di:compile` in modo da non compilare più il codice per i moduli disabilitati.
 
 _AC-10933 - [Problema GitHub](https://github.com/magento/magento2/issues/38241) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/39723)_
 
@@ -2214,15 +2214,6 @@ In precedenza, il raggiungimento del valore massimo per la colonna version_id ne
 AC-14424
 
 _AC-14424 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/7bdafaa2)_
-
-#### Magento 2.4.8 utilizza pacchetti di sviluppo che non seguono il controllo delle versioni semantiche
-
-Magento 2.4.8 richiede versioni di sviluppo di pdependent/pdependent e phpmd/phpmd (3.x-dev) per la compatibilità con PHP 8.4.
-Queste versioni di sviluppo sono in conflitto con gli strumenti di terze parti che si aspettano pacchetti compatibili con SemVer, impedendo alcuni aggiornamenti.
-Una soluzione alternativa temporanea consiste nell’assegnare un alias alle versioni di sviluppo in compositore.json (ad esempio, &quot;3.x-dev as 3.99.0&quot;), consentendo la compatibilità e soddisfacendo al contempo il controllo delle versioni semantiche.
-Questo assicura il supporto di PHP 8.4 ed evita conflitti fino a quando non saranno disponibili versioni stabili.
-
-_AC-14519 - [Problema GitHub](https://github.com/magento/magento2/issues/39796)_
 
 #### Dopo aver scaricato l&#39;etichetta di spedizione possiamo vedere alcuni importo di spedizione che non corrispondeva con il prezzo di spedizione e di imballaggio.
 
@@ -4167,7 +4158,7 @@ _ACP2E-4226_
 
 #### Impossibile spostarsi tra siti Web nell&#39;anteprima di aggiornamento pianificazione
 
-Prima di questa correzione, l’anteprima dell’aggiornamento pianificato si interromperebbe quando si tenta di visualizzare in anteprima il contenuto per gli archivi con domini personalizzati. Dopo questa correzione, i domini store personalizzati possono essere visualizzati in anteprima così come sono e spostati all’interno dell’iframe di anteprima. La correzione riguarda prodotti, categorie, pagine CMS e blocchi CMS e supporta i collegamenti di navigazione tramite `{{store url}}` tag di markup, come documentato in [Variabili Adobe Commerce e tag di markup](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/variables/markup-tags).
+Prima di questa correzione, l’anteprima dell’aggiornamento pianificato si interromperebbe quando si tenta di visualizzare in anteprima il contenuto per gli archivi con domini personalizzati. Dopo questa correzione, i domini store personalizzati possono essere visualizzati in anteprima così come sono e spostati all’interno dell’iframe di anteprima. La correzione riguarda prodotti, categorie, pagine CMS e blocchi CMS e supporta i collegamenti di navigazione tramite `{{store url}}` tag di markup, come documentato in [Variabili Adobe Commerce e tag di markup](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
