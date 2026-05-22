@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 19f0697ee47fcd7e3228d9e44010b45c3799a182
+source-git-commit: 535c5a6de142008bccd2d5883a9b680c77914264
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,6 @@ QPT v1.1.79 include le seguenti patch:
 1. **ACP2E-4475**: è stato risolto il problema che impediva alla pagina di elenco dei prodotti di filtrare e ordinare i prodotti del bundle esaurito in base al prezzo quando l&#39;opzione **[!UICONTROL Display Out of Stock Products]** è abilitata.
 1. **ACP2E-4110**: è stato risolto il problema che causava la visualizzazione di importi non corretti in PDP e PLP in una valuta non predefinita da parte dei prodotti bundle con un prezzo speciale.
 1. **AC-10698**: risolve il problema relativo all&#39;invio della valuta a livello di tutti gli ordini anziché associarla a singoli ordini. I prezzi e i totali delle transazioni vengono ora inviati per ordine a [!DNL Google Tag], migliorando la precisione del tracciamento dei dati di e-commerce.
-1. **AC-10737**: è stato corretto un problema a causa del quale il comando `bin/magento setup:db:status` non riconosceva il tipo di dati JSON.
+1. **[AC-10737](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)**: è stato corretto un problema a causa del quale il comando `bin/magento setup:db:status` non riconosceva il tipo di dati JSON.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
