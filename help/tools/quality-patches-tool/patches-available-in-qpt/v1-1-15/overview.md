@@ -5,9 +5,9 @@ feature: Tools and External Services
 role: Admin
 exl-id: f30a9554-cacf-4406-b6b4-a43d680597bc
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ QPT v1.1.15 include le seguenti patch:
 1. **MDVA-38559**: è stato corretto l&#39;errore */V1/customers/search API* per i clienti con più sottoscrizioni.
 1. **MDVA-40896**: corregge l&#39;errore *Errore: TypeError: l&#39;argomento 3 passato all&#39;errore Magento* nell&#39;API di massa del prodotto asincrono.
 1. **MDVA-40961**: è stato risolto il problema che impediva l&#39;aggiunta di un elemento aggiuntivo al carrello se la quantità minima dell&#39;elemento era già nel carrello.
-1. **MDVA-43718**: correzioni *Il consumatore non è autorizzato ad accedere a %resources.Errore* visualizzato quando si accede a un catalogo condiviso da un&#39;integrazione personalizzata.
+1. **MDVA-43718**: correzioni *Il consumatore non è autorizzato ad accedere a %resources.* errore visualizzato quando si accede a un catalogo condiviso da un’integrazione personalizzata.
 1. **MDVA-44533**: risolve il problema relativo all&#39;applicazione errata dello sconto a un prodotto secondario del bundle.
-1. **MDVA-44660**: è stato risolto il problema che impediva l&#39;utilizzo del carattere accento grave ``` ` ``` per il nome e il cognome di un cliente.
+1. **MDVA-44660**: è stato risolto il problema che impediva l&#39;utilizzo del carattere di accento grave (\`) per il nome e il cognome di un cliente.
 1. **MDVA-44887**: corregge *Errore di sintassi non rilevato: errore &#39;const&#39;* del token imprevisto nel pannello di amministrazione.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
