@@ -3,7 +3,7 @@ title: Note sulla versione
 description: Scopri le patch disponibili per Adobe Commerce e i problemi che risolvono.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 5b81bd7baa4b00a9100c3e01a20a2b0189b85f92
+source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
 workflow-type: tm+mt
 source-wordcount: '30379'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=it#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
+>Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
 
 >[!INFO]
 >
@@ -745,7 +745,7 @@ ht-degree: 0%
 * **ACSD-51792** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.6) - Corregge il problema per cui una pagina non ha l&#39;evento di impression quando [!DNL Google Tag Manager] 4 è abilitato.
 * **ACSD-51471** (per Adobe Commerce >=2.4.3 &lt;2.4.7) - Corregge il problema per cui un utente amministratore non può salvare un aggiornamento pianificato per un prodotto in bundle che utilizza un prodotto semplice con un aggiornamento pianificato.
 * **ACSD-51700** (per Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.7) - Corregge l&#39;errore che si verifica quando si passa da una visualizzazione archivio a una pagina di modifica prodotto scaricabile nell&#39;amministratore.
-* **ACSD-51120** (per Adobe Commerce >=2.3.7 &lt;2.4.3) - Corregge il problema per cui la cache delle richieste di GraphQL GET non viene cancellata per le pagine CMS che contengono blocchi di CMS aggiornati tramite un aggiornamento di staging.
+* **ACSD-51120** (per Adobe Commerce >=2.3.7 &lt;2.4.3) - Corregge il problema per cui la cache delle richieste GraphQL GET non viene cancellata per le pagine CMS che contengono blocchi CMS aggiornati tramite un aggiornamento di staging.
 * **ACSD-51240** (per Adobe Commerce >=2.4.4 &lt;2.4.6) - Corregge il problema di mancanza del file caricato se la registrazione viene effettuata tramite il modulo di registrazione della società.
 * **ACSD-51907** (per Adobe Commerce >=2.4.2 &lt;2.4.3) - Corregge il problema per cui un utente amministratore con restrizioni non può creare una nota di credito con un rimborso offline.
 * **ACSD-52148** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.4) - Corregge il problema che causa l&#39;errore occasionale dell&#39;[!DNL Google V3 reCAPTCHA] accesso amministratore.
@@ -938,7 +938,7 @@ ht-degree: 0%
 * **ACSD-44851** (*per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6*) - Risolve il problema che impediva l&#39;apertura o l&#39;espansione di una categoria con sottocategorie.
 * **ACSD-46815** (*per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.6*) - Corregge il problema se la richiesta della struttura delle categorie è limitata a 20 categorie.
 * **ACSD-45675** (*per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6*) - Corregge il problema se l&#39;esportazione del prodotto utilizza nomi di categoria dell&#39;ambito *Visualizzazione archivio predefinita*.
-* **ACSD-46869** (*per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6*) - Corregge il problema se un prodotto configurabile in un carrello non viene aggiornato tramite una richiesta *API REST PUT* senza modificare la quantità del prodotto.
+* **ACSD-46869** (*per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6*) - Corregge il problema se un prodotto configurabile in un carrello non viene aggiornato tramite una richiesta *PUT REST API* senza modificare la quantità del prodotto.
 * **MDVA-42768-V2** (*per Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.3*) - Corregge il problema per cui nel prodotto configurabile viene visualizzato il prezzo regolare come *0* quando *Visualizzazione esaurita* è *Sì*.
 * Patch aggiornate: MDVA-44562, ACSD-46213, MDVA-41305, MDVA-38346, MDVA-13203.
 * Patch obsoleta: MDVA-42768.
@@ -991,7 +991,7 @@ ht-degree: 0%
 * **MDVA-40961** (*per Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.4*) - Corregge il problema che impedisce l&#39;aggiunta di un elemento al carrello se la quantità minima dell&#39;elemento è già nel carrello.
 * **MDVA-44887** (*per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.5*) - Corregge *Errore di sintassi non rilevato: errore &#39;const&#39;* del token imprevisto nel pannello di amministrazione.
 * **MDVA-43718** (*per Adobe Commerce e Magento Open Source >=2.3.0 &lt;2.4.5*) - Correzioni *Il consumatore non è autorizzato ad accedere a %resources.* errore visualizzato quando si accede a un catalogo condiviso da un’integrazione personalizzata.
-* **MDVA-44660** (*per Adobe Commerce e Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - Corregge il problema per cui non è possibile utilizzare il carattere accento grave ``` ` ``` per il nome e il cognome di un cliente.
+* **MDVA-44660** (*per Adobe Commerce e Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - Corregge il problema per cui non è possibile utilizzare il carattere di accento grave (\`) per il nome e il cognome di un cliente.
 * **MDVA-40896** (*per Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.4*) - Corregge *Errore: TypeError: Errore 3 passato a Magento* nell&#39;API di massa del prodotto asincrono.
 * **MDVA-38559** (*per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.3*) - Corregge l&#39;errore */V1/customers/search API* per i clienti con più abbonamenti.
 * **MDVA-44533** (*per Adobe Commerce e Magento Open Source >=2.3.1 &lt;2.4.4*) - Corregge il problema relativo all&#39;applicazione errata dello sconto a un prodotto secondario del bundle.
@@ -1373,7 +1373,7 @@ Correzioni minori per le versioni patch
 * **MDVA-31242** (*per Adobe Commerce >=2.3.0 &lt;2.4.1 con estensione B2B*) - Corregge il problema di visualizzazione del segno di valuta errato nella griglia della nota di credito.
 * **MDVA-31295** (*per Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corregge il problema per cui i punti premio non vengono calcolati al completamento di un ordine parziale e gli elementi vengono tassati.
 * **MDVA-30112** (*per Adobe Commerce >=2.3.4 &lt;2.4.2*) - Corregge il problema per cui se il numero di ordini supera il valore *bunch-size*, Adobe Commerce considera incoerenze gli ordini con stato *pending*.
-* **MDVA-31150** (*per Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corregge il problema per cui i saldi delle carte di credito e delle carte regalo del negozio non vengono restituiti dalla chiamata API Rest fattura GET, quando la fattura è stata registrata dalla chiamata API Rest e l&#39;ordine è stato parzialmente pagato dai conti carte di credito e carte regalo del negozio.
+* **MDVA-31150** (*per Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corregge il problema per cui i saldi delle carte di credito e delle carte regalo del negozio non vengono restituiti dalla chiamata API Rest fattura GET, quando la fattura è stata registrata dalla chiamata API Rest e l&#39;ordine è stato parzialmente pagato dai conti carte di credito e gift card del negozio.
 * **MDVA-30963** (*per Adobe Commerce >=2.3.2 &lt;2.4.2*) - Corregge il problema per cui i risultati del filtro dei prodotti impostati in modo da contenere solo i valori specificati per l&#39;ambito *Tutte le visualizzazioni archivio* nell&#39;amministratore, includono i prodotti con valori sovrascritti a livello di visualizzazione archivio.
 * **MDVA-29954** (*per Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0 || 2.4.2 con estensione B2B*) - Corregge il problema per cui le *nuove richieste di registrazione società* e *ti hanno collegato a una società* e-mail vengono inviate dall&#39;indirizzo errato.
 * **MDVA-28357** (*per Adobe Commerce >=2.3.2 &lt;2.3.6 || >=2.4.0 &lt;2.4.1*) - Sostituisce l&#39;analizzatore standard con un analizzatore personalizzato con un tokenizzatore di parole chiave per il campo SKU nell&#39;indice [!DNL ElasticSearch] per far funzionare le query di ricerca con caratteri jolly con SKU contenenti un trattino (&quot;-&quot;).

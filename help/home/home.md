@@ -2,7 +2,7 @@
 title: Home Guide operative
 description: Scopri l’amministrazione e i concetti operativi dei sistemi Adobe Commerce. Consulta le guide complete per la pianificazione, la configurazione e la manutenzione dell’implementazione di Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: b5eececa27457bf83bad01654ad6e9811b8011ad
+source-git-commit: 75c28c839ee5e6405550df0149ef4196f7e15a1c
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 6%
@@ -102,4 +102,4 @@ Utilizza questa raccolta di guide per scoprire concetti, processi, strumenti e b
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-05-22 13:09:11 -->
+<!-- Last updated from includes: 2026-05-22 22:24:34 -->
