@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: cfac00d94a7ac89c2a36aa122a18f89e5f77f630
+source-git-commit: 09abc74b48c1ac07a3553aed37fcb0c80e3bbefe
 workflow-type: tm+mt
-source-wordcount: '9992'
+source-wordcount: '10033'
 ht-degree: 0%
 
 ---
@@ -994,8 +994,10 @@ ht-degree: 0%
          - [ACP2E-4419: le gift card non vengono applicate correttamente al momento del pagamento dopo la convalida reCAPTCHA v2 sulla vetrina](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4411: i prezzi dei prodotti del bundle mostrano valori di valuta e imposta non corretti tra la pagina dettagli prodotto e il carrello in un&#39;impostazione multi-valuta](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
+         - [ACP2E-4110: i prezzi dei prodotti del bundle con **[!UICONTROL Special Price]** differiscono tra PDP/PLP e il carrello in una valuta non predefinita](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
          - [ACP2E-4603: la reindicizzazione del prodotto delle autorizzazioni del catalogo lascia righe di indice delle autorizzazioni non aggiornate e deadlock MySQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
-         - [AC-10737: il comando `bin/magento setup:db:status` non riconosce il tipo di dati JSON](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
+         - [AC-10737: il comando `/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md1` non riconosce il tipo di dati JSON](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
          - [ACP2E-4601: Salvataggio di un&#39;operazione di autorizzazione di pagamento con riferimento autonomo parent_id e attivazione di un loop/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
    - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Riferimento per gli strumenti della riga di comando {#cli-reference}
