@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: cfac00d94a7ac89c2a36aa122a18f89e5f77f630
+source-git-commit: 09abc74b48c1ac07a3553aed37fcb0c80e3bbefe
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
@@ -23,9 +23,9 @@ QPT v1.1.79 include le seguenti patch:
 1. **[ACP2E-4601](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)**: è stato risolto il problema che poteva causare un funzionamento inefficiente dell&#39;elaborazione delle transazioni di pagamento in determinate condizioni.
 1. **ACP2E-4706**: è stato risolto il problema che causava il salto dei prodotti non abilitati nell&#39;ambito [!UICONTROL Admin] da parte dell&#39;indicizzatore [!UICONTROL Target Rule].
 1. **ACP2E-4720**: è stato risolto il problema che impediva la corretta applicazione o rimozione della spedizione gratuita per i prodotti bundle con regole di sconto sul carrello.
-1. **ACP2E-4411**: è stato risolto il problema che causava la visualizzazione del prezzo errato per un prodotto bundle nella pagina del carrello e nel mini-carrello per gli store a più valute.
+1. **[ACP2E-4411](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)**: è stato risolto il problema che causava la visualizzazione del prezzo errato per un prodotto bundle nella pagina del carrello e nel mini-carrello per gli store a più valute.
 1. **ACP2E-4475**: è stato risolto il problema che impediva alla pagina di elenco dei prodotti di filtrare e ordinare i prodotti del bundle esaurito in base al prezzo quando l&#39;opzione **[!UICONTROL Display Out of Stock Products]** è abilitata.
-1. **ACP2E-4110**: è stato risolto il problema che causava la visualizzazione di importi non corretti in PDP e PLP in una valuta non predefinita da parte dei prodotti bundle con un prezzo speciale.
+1. **[ACP2E-4110](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)**: è stato risolto il problema che causava la visualizzazione di importi non corretti nel PDP e nel PLP in una valuta non predefinita da parte dei prodotti bundle con **[!UICONTROL Special Price]**.
 1. **AC-10698**: risolve il problema relativo all&#39;invio della valuta a livello di tutti gli ordini anziché associarla a singoli ordini. I prezzi e i totali delle transazioni vengono ora inviati per ordine a [!DNL Google Tag], migliorando la precisione del tracciamento dei dati di e-commerce.
 1. **[AC-10737](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)**: è stato corretto un problema a causa del quale il comando `bin/magento setup:db:status` non riconosceva il tipo di dati JSON.
 
