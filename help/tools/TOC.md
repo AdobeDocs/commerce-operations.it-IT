@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 09abc74b48c1ac07a3553aed37fcb0c80e3bbefe
+source-git-commit: 36e8242f67e80504118e36574cfe4d3b799b849c
 workflow-type: tm+mt
-source-wordcount: '10033'
+source-wordcount: '10059'
 ht-degree: 0%
 
 ---
@@ -994,6 +994,8 @@ ht-degree: 0%
          - [ACP2E-4419: le gift card non vengono applicate correttamente al momento del pagamento dopo la convalida reCAPTCHA v2 sulla vetrina](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [AC-10698: I prezzi e i totali delle transazioni non vengono inviati a Google Tag](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
+         - [ACP2E-4475: l’ordine o il filtro in base al prezzo non funziona per i prodotti di aggregazione esauriti](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
          - [ACP2E-4411: i prezzi dei prodotti del bundle mostrano valori di valuta e imposta non corretti tra la pagina dettagli prodotto e il carrello in un&#39;impostazione multi-valuta](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
          - [ACP2E-4110: i prezzi dei prodotti del bundle con **[!UICONTROL Special Price]** differiscono tra PDP/PLP e il carrello in una valuta non predefinita](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
          - [ACP2E-4603: la reindicizzazione del prodotto delle autorizzazioni del catalogo lascia righe di indice delle autorizzazioni non aggiornate e deadlock MySQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
