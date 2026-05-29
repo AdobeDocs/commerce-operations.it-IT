@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f19aeff354345c1635c7f692671c24118551a707
+source-git-commit: a6ba029b8bfe0fc3cfe8bd18074145d603ad31ec
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -22,7 +22,7 @@ QPT v1.1.79 include le seguenti patch:
 1. **[ACP2E-4603](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)**: è stato risolto il problema che causava la mancata modifica delle righe dell&#39;indice delle autorizzazioni esistenti durante l&#39;esecuzione della reindicizzazione del prodotto [!UICONTROL Catalog Permissions], impedendo che le autorizzazioni per le categorie aggiornate si riflettessero in modo affidabile sui prodotti.
 1. **[ACP2E-4601](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)**: è stato risolto il problema che poteva causare un funzionamento inefficiente dell&#39;elaborazione delle transazioni di pagamento in determinate condizioni.
 1. **ACP2E-4706**: è stato risolto il problema che causava il salto dei prodotti non abilitati nell&#39;ambito [!UICONTROL Admin] da parte dell&#39;indicizzatore [!UICONTROL Target Rule].
-1. **ACP2E-4720**: è stato risolto il problema che impediva la corretta applicazione o rimozione della spedizione gratuita per i prodotti bundle con regole di sconto sul carrello.
+1. **[ACP2E-4720](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)**: è stato risolto il problema che impediva la corretta applicazione o rimozione della spedizione gratuita per i prodotti bundle con regole di sconto sul carrello.
 1. **ACP2E-4411**: è stato risolto il problema che causava la visualizzazione del prezzo errato per un prodotto bundle nella pagina del carrello e nel mini-carrello per gli store a più valute.
 1. **[ACP2E-4475](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)**: è stato risolto il problema che impediva alla pagina di elenco dei prodotti di filtrare e ordinare i prodotti del bundle esaurito in base al prezzo quando l&#39;opzione [!UICONTROL Display Out of Stock Products] è abilitata.
 1. **ACP2E-4110**: è stato risolto il problema che causava la visualizzazione di importi non corretti in PDP e PLP in una valuta non predefinita da parte dei prodotti bundle con un prezzo speciale.
