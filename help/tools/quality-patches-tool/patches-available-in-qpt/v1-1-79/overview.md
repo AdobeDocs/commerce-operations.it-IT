@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a6ba029b8bfe0fc3cfe8bd18074145d603ad31ec
+source-git-commit: 661d74d8766365353b3f906e08c60f9505114f52
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 QPT v1.1.79 include le seguenti patch:
 1. **ACP2E-4402**: è stato risolto il problema che impediva l&#39;aggiunta dei prodotti creati come disabilitati ai [!UICONTROL Target Rule] risultati correlati dopo l&#39;abilitazione.
 1. **ACP2E-4505**: è stato risolto il problema che consentiva di salvare una categoria con dati non aggiornati da una scheda del browser duplicata, creando una dipendenza circolare.
+1. **[ACP2E-4531](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531.md)**: è stato corretto il problema per cui la modifica della chiave URL di una pagina CMS non comporta l&#39;aggiornamento dell&#39;URL gerarchico della pagina.
 1. **ACP2E-4531**: è stato corretto il problema per cui la modifica della chiave URL di una pagina CMS non comporta l&#39;aggiornamento dell&#39;URL gerarchico della pagina.
 1. **[ACP2E-4603](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)**: è stato risolto il problema che causava la mancata modifica delle righe dell&#39;indice delle autorizzazioni esistenti durante l&#39;esecuzione della reindicizzazione del prodotto [!UICONTROL Catalog Permissions], impedendo che le autorizzazioni per le categorie aggiornate si riflettessero in modo affidabile sui prodotti.
 1. **[ACP2E-4601](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)**: è stato risolto il problema che poteva causare un funzionamento inefficiente dell&#39;elaborazione delle transazioni di pagamento in determinate condizioni.
