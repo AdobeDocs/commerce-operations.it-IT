@@ -2,9 +2,9 @@
 title: Requisiti di sistema
 description: Scopri le dipendenze software e i requisiti di sistema per Adobe Commerce. Consulta Configurazioni testate per la compatibilità con l’ambiente di implementazione.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: f5d0b6943b1b5ca41967c61842b73734ed41f26f
+source-git-commit: dc0a70a11f332dabf8f09e528c355f2bcb7910bc
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1249'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,9 @@ Il modello [Commerce on Cloud](https://github.com/magento/magento-cloud) fornisc
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
+**<sup>1</sup>Compatibilità tra MariaDB 12.3 e Adobe Commerce 2.4.9**
+La compatibilità tra MariaDB 12.3 e Adobe Commerce 2.4.9 verrà confermata a seguito della versione ufficiale di MariaDB 12.3, prevista nel periodo maggio-giugno.
+
 Per la configurazione predefinita, i servizi e le versioni sono definiti nel [file `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
 Per ulteriori dettagli, consulta [Configurare i servizi](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) nella guida *Commerce su infrastruttura cloud*.
 
@@ -62,10 +65,6 @@ Tutti i clienti Adobe Commerce on-premise che eseguono le versioni 2.4.6, 2.4.5 
 è consigliabile migrare l’infrastruttura di ricerca a una versione compatibile di OpenSearch.
 
 >[!ENDTABS]
-
->[!AVAILABILITY]
->
-><sup>1</sup> La compatibilità tra MariaDB 12.3 e Adobe Commerce 2.4.9 verrà confermata dopo la versione ufficiale di MariaDB 12.3, prevista nel periodo maggio-giugno.
 
 ## Requisiti di sistema per le versioni precedenti di Commerce
 
@@ -225,4 +224,4 @@ Per Adobe Commerce on Cloud, consulta [Configurare Xdebug](https://experiencelea
 >
 >Si è verificato un problema noto con `xdebug` che può influire sulle installazioni di Adobe Commerce o sull&#39;accesso alla vetrina o all&#39;amministratore dopo l&#39;installazione. Vedere [Problema noto che riguarda l&#39;installazione di `xdebug`](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) nella _Knowledge Base del supporto Commerce_.
 
-<!-- Last updated from includes: 2026-05-13 16:20:40 -->
+<!-- Last updated from includes: 2026-06-01 11:19:57 -->

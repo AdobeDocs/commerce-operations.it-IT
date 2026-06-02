@@ -2,9 +2,9 @@
 title: Implementazione dell’aggiornamento
 description: Scopri le diverse fasi di implementazione dell’aggiornamento per i progetti Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 3c54a3c429a3dadc826bffcb91f99a5a3a31b42c
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '856'
 ht-degree: 1%
 
 ---
@@ -42,23 +42,23 @@ Di seguito sono riportati gli elementi che è possibile includere in un&#39;anal
 
   | Servizio | Versione corrente | Esegui l’aggiornamento a | Note |
   |-----------------|-----------------|------------|----------------------------------------------------------|
-  | PHP | 7,4 | 8,1 |                                                          |
-  | Redis | 6,0 | 6,2 |                                                          |
-  | [!DNL RabbitMQ] | 3,8 | 3,9 | Attualmente non in uso, ma è consigliabile utilizzarlo |
-  | MariaDB (Cloud) | 10,4 | 10,6 |                                                          |
-  | MySQL | 8,0 | -/-/ |                                                          |
-  | Compositore | 1.9.2. | 2,2 |                                                          |
-  | Elasticsearch | 7,10 | 7,17 |                                                          |
+  | PHP | 7,4 | 8.5 |                                                          |
+  | Valkey | 8.0 | 9 |                                                          |
+  | [!DNL RabbitMQ] | 3.8 | 4.3 | Attualmente non in uso, ma è consigliabile utilizzarlo |
+  | MariaDB (Cloud) | 10,4 | 12.3 |                                                          |
+  | MySQL | 8,0 | N/D |                                                          |
+  | Compositore | 1.9.2 | 2.9 |                                                          |
+  | OpenSearch | 1 | 3 |                                                          |
 
 - **Estensioni e moduli di terze parti**: utilizza questo modello di tabella per comprendere lo stato delle estensioni e delle personalizzazioni, in modo da poter prendere decisioni strategiche e definire azioni. Si tratta di un’opportunità per sostituire eventuali estensioni native per Adobe Commerce, al fine di ridurre al minimo la complessità del progetto. Utilizzare il comando `bin/magento module:status` per visualizzare un elenco di moduli ed estensioni.
 
-  | N. | Estensione/<br>nome modulo | Pacchetto Compositore | Fornitore | Versione corrente | Funzionalità | Compatibile con la versione più recente di <br>Commerce? | Problemi | Nativa di Commerce? | Azione | Note |
+  | # | Estensione/<br>nome modulo | Pacchetto Compositore | Fornitore | Versione corrente | Funzionalità | Compatibile con la versione più recente di <br>Commerce? | Problemi | Nativa di Commerce? | Azione | Note |
   |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
   | 1 | Nome e collegamento dell’estensione | extension/<br>extensionx-magento-2 | Nome fornitore | Versione installata | Requisiti aziendali | Sì/No | Elencare i problemi identificati relativi a questa estensione | Sì/No | Mantieni/Sostituisci/<br>Rimuovi |       |
 
 - **Moduli personalizzati**: simile alla tabella dei moduli di terze parti, questo modello consente di tenere traccia e comprendere lo stato e le azioni necessarie per l&#39;aggiornamento dei moduli personalizzati.
 
-  | N. | Nome modulo | Funzionalità | Obbligatorio | Nativa di Commerce? | Azione | Note |
+  | # | Nome modulo | Funzionalità | Obbligatorio | Nativa di Commerce? | Azione | Note |
   |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
   | 1 | Nome modulo | Requisiti aziendali | Sì/No | Sì/No | Mantieni/Sostituisci/Rimuovi |       |
 
