@@ -1,7 +1,7 @@
 ---
-source-git-commit: 96a30744d05e5220b60a6a56a9d64d92e1dfd9ce
+source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2046'
 ht-degree: 3%
 
 ---
@@ -275,6 +275,7 @@ Il supporto regolare per la riga di rilascio 2.4.6 termina l’11 agosto 2026.
 
 Il supporto regolare per la riga di rilascio 2.4.5 è terminato il 12 agosto 2025.
 Il supporto esteso per la riga di rilascio 2.4.5 termina l’11 agosto 2026.
+Il provisioning di ulteriori correzioni di sicurezza per la riga di rilascio 2.4.5 termina a maggio 2027.
 
 <table>
   <thead>
@@ -399,6 +400,7 @@ Il supporto esteso per la riga di rilascio 2.4.5 termina l’11 agosto 2026.
 
 Il supporto regolare per la riga di rilascio 2.4.4 è terminato il 12 aprile 2025.
 Il supporto esteso per la riga di rilascio 2.4.4 è terminato il 14 aprile 2026.
+Il provisioning di ulteriori correzioni di sicurezza per la riga di versione 2.4.4 termina a maggio 2027.
 
 <table>
   <thead>

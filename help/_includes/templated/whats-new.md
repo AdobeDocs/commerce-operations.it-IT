@@ -1,7 +1,7 @@
 ---
-source-git-commit: eca5c109548e0d92435b3dca90a905ef2efaa504
+source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
 workflow-type: tm+mt
-source-wordcount: '3357'
+source-wordcount: '3282'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.78 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513: le immagini CAPTCHA scadute non vengono rimosse dal sistema</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.78 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513: le immagini CAPTCHA scadute non vengono rimosse dal sistema</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -39,7 +39,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0a726754a6e171a60a07ccedf76db7505f19706a">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.79 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505: dipendenza circolare delle categorie dal salvataggio di una categoria con dati non aggiornati in una scheda del browser duplicata</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.79 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505: dipendenza circolare delle categorie dal salvataggio di una categoria con dati non aggiornati in una scheda del browser duplicata</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -77,7 +77,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.79 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720: le regole del prezzo del carrello di spedizione gratuito non vengono reimpostate per i prodotti bundle a prezzo fisso con articoli di spedizione separati</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.79 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720: le regole del prezzo del carrello di spedizione gratuito non vengono reimpostate per i prodotti bundle a prezzo fisso con articoli di spedizione separati</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -107,7 +107,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.78 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528">ACP2E-4528: la convalida della città dell'indirizzo del cliente comporta il mal funzionamento delle barre (/) e caratteri non validi come !, ", # e ?</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.78 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528">ACP2E-4528: la convalida della città dell'indirizzo del cliente comporta il mal funzionamento delle barre (/) e caratteri non validi come !, ", # e ?</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -145,7 +145,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0133d7598293f529b285737c6ef51613dc5bd826">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.79 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475">ACP2E-4475: l'ordine o il filtro in base al prezzo non funziona per i prodotti del bundle esauriti</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.79 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475">ACP2E-4475: l'ordine o il filtro in base al prezzo non funziona per i prodotti del bundle esauriti</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -153,7 +153,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2728ac1f484659b1db69b537640e3a5da8f965a7">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.79 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603">ACP2E-4603: la reindicizzazione del prodotto delle autorizzazioni del catalogo lascia righe di indice delle autorizzazioni non aggiornate e deadlock MySQL</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.79 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603">ACP2E-4603: la reindicizzazione del prodotto delle autorizzazioni del catalogo lascia righe di indice delle autorizzazioni non aggiornate e deadlock MySQL</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -161,7 +161,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e8f56414b758832c77e7f2f93009df527f506c5b">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.79 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698">AC-10698: i prezzi delle transazioni e i totali non vengono inviati a Google Tag</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.79 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698">AC-10698: i prezzi delle transazioni e i totali non vengono inviati a Google Tag</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -265,7 +265,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata corretta la compatibilità di Valkey LTS con la versione 8.1 nelle versioni <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5 delle patch di sicurezza</a>, <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6 delle patch di sicurezza</a> e <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8 delle patch di sicurezza</a> argomenti, in modo che la guida del back-end della cache corrisponda a quella supportata da Valkey su Adobe Commerce nell'infrastruttura cloud.<br /><em>Risolve il problema <a href="https://github.com/AdobeDocs/commerce-operations.it-IT/issues/177">#177</a>.</em></p>
+      <td><p>È stata corretta la compatibilità di Valkey LTS con la versione 8.1 nelle versioni <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5 delle patch di sicurezza</a>, <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6 delle patch di sicurezza</a> e <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8 delle patch di sicurezza</a> argomenti, in modo che la guida del back-end della cache corrisponda a quella supportata da Valkey su Adobe Commerce nell'infrastruttura cloud.<br /><em>Risolve il problema <a href="https://github.com/AdobeDocs/commerce-operations.en/issues/177">#177</a>.</em></p>
 </td>
       <td>
         Tecnico, feedback, note sulla versione
@@ -687,28 +687,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Aggiornamento principale
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a9f3594a0ccf4326b0541a4f2b07fdf49cde7148">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 3 aprile 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Sono state aggiunte istruzioni per eseguire correttamente l'override delle directory della cache L2 predefinite di Adobe Commerce in <code>env.php</code> per garantire che i file della cache vengano memorizzati nella posizione desiderata ed evitare la suddivisione delle directory della cache e errori di segmentazione di GlusterFS. Consulta la guida aggiornata in <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">Best practice per la configurazione dei servizi Redis e Valkey</a>.</p>
-</td>
-      <td>
-        Tecnico, feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c3030226d7832b17c82be375431795cba44d72f9">commit</a></td>
     </tr>
   </tbody>
 </table>
