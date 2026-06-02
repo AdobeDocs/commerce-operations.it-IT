@@ -1,6 +1,6 @@
 ---
 title: 'B2B-2598: aggiunge la funzionalità di caching per storeConfig, currency, country, countries, availableStores GraphQl query'
-description: Applica la patch B2B-2598 per aggiungere la funzionalità di caching alle query GraphQl storeConfig, currency, country, countries e availableStores.
+description: Applica la patch B2B-2598 per aggiungere la funzionalità di caching alle query GraphQl "storeConfig", "currency", "country", "countries" e "availableStores".
 feature: B2B, GraphQL, Cache
 role: Admin
 type: Troubleshooting
@@ -23,9 +23,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 industry_v2:
   - id: aad1e361-483a-40cf-9a88-144325515074
-source-git-commit: 891f738f4a3db4e361984d11585f3679068c8ced
+source-git-commit: 17c3f587a16209876a9713881eff0034d872581e
 workflow-type: tm+mt
-source-wordcount: 458
+source-wordcount: 457
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ La patch B2B-2598 aggiunge la funzionalità di caching alle query GraphQl `store
 
 ## Problema
 
-Non è possibile memorizzare nella cache le query di GraphQL `availableStores`, `countries`, `country`, `currency`, `storeConfig` e `customAttributeMetadata`.
+Le query GraphQL `availableStores`, `countries`, `country`, `currency`, `storeConfig` e `customAttributeMetadata` non sono memorizzabili nella cache.
 
 <u>Prerequisiti</u>:
 
@@ -67,15 +67,15 @@ Dopo aver applicato la patch, esegui i passaggi seguenti per assicurarti che la 
 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
-* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool]
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud
 
 ## Lettura correlata
 
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
-* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
-* [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto
+* [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool]
 
 
-Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella guida di [!DNL Quality Patches Tool].
+Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella guida di [!DNL Quality Patches Tool]
