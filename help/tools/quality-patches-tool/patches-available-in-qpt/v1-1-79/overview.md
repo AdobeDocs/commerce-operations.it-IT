@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 84b504e8609dd6fda161f202323b06bd84d29960
+source-git-commit: 9de5006ef5231f1009e3b6b44a365e151d56e998
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in [!DNL Quality Patches Tool] (QPT) v1.1.79.
 
 QPT v1.1.79 include le seguenti patch:
-1. **ACP2E-4402**: è stato risolto il problema che impediva l&#39;aggiunta dei prodotti creati come disabilitati ai [!UICONTROL Target Rule] risultati correlati dopo l&#39;abilitazione.
-1. **[ACP2E-4505](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)**: è stato risolto il problema che consentiva di salvare una categoria con dati non aggiornati da una scheda del browser duplicata, creando una dipendenza circolare.
-1. **[ACP2E-4531](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531.md)**: è stato corretto il problema per cui la modifica della chiave URL di una pagina CMS non comporta l&#39;aggiornamento dell&#39;URL gerarchico della pagina.
-1. **[ACP2E-4603](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)**: è stato risolto il problema che causava la mancata modifica delle righe dell&#39;indice delle autorizzazioni esistenti durante l&#39;esecuzione della reindicizzazione del prodotto [!UICONTROL Catalog Permissions], impedendo che le autorizzazioni per le categorie aggiornate si riflettessero in modo affidabile sui prodotti.
-1. **[ACP2E-4601](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)**: è stato risolto il problema che poteva causare un funzionamento inefficiente dell&#39;elaborazione delle transazioni di pagamento in determinate condizioni.
+1. **ACP2E-4402**: è stato corretto il problema per cui i prodotti creati come disabilitati non venivano aggiunti nuovamente ai risultati delle regole di destinazione correlate dopo l&#39;abilitazione.
+1. **ACP2E-4505**: è stato risolto il problema che consentiva di salvare una categoria con dati non aggiornati da una scheda del browser duplicata, creando una dipendenza circolare.
+1. **ACP2E-4531**: è stato corretto il problema per cui la modifica della chiave URL di una pagina CMS non comporta l&#39;aggiornamento dell&#39;URL gerarchico della pagina.
+1. **ACP2E-4601**: è stato risolto il problema che poteva causare un funzionamento inefficiente dell&#39;elaborazione delle transazioni di pagamento in determinate condizioni.
+1. **ACP2E-4603**: è stato risolto il problema che causava la mancata modifica delle righe dell&#39;indice delle autorizzazioni esistenti durante l&#39;esecuzione della reindicizzazione del prodotto [!UICONTROL Catalog Permissions], impedendo che le autorizzazioni per le categorie aggiornate si riflettessero in modo affidabile sui prodotti.
 1. **ACP2E-4706**: è stato risolto il problema che causava il salto dei prodotti non abilitati nell&#39;ambito [!UICONTROL Admin] da parte dell&#39;indicizzatore [!UICONTROL Target Rule].
 1. **[ACP2E-4720](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)**: è stato risolto il problema che impediva la corretta applicazione o rimozione della spedizione gratuita per i prodotti bundle con regole di sconto sul carrello.
 1. **ACP2E-4411**: è stato risolto il problema che causava la visualizzazione del prezzo errato per un prodotto bundle nella pagina del carrello e nel mini-carrello per gli store a più valute.
