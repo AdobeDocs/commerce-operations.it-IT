@@ -4,9 +4,9 @@ description: Scopri le versioni beta di Adobe Commerce e come partecipare.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: cc99a5518bc5f21b93f83f9afb354242547d6a3c
+source-git-commit: 3411fb1d4c89bd4dd576f58b98dcf19ddafa00bf
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1574'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,8 @@ I programmi Beta per [soluzioni dei prodotti Adobe Commerce](https://experiencel
 
 >[!IMPORTANT]
 >
->**Dichiarazione di non responsabilità legale**<br/>
->I rilasci di Beta includono funzioni prerelease e codice che può contenere difetti e vengono forniti &quot;COSÌ COM’È&quot; senza alcuna garanzia. Adobe ha la sola discrezione di decidere se rendere le versioni beta generalmente disponibili. Adobe non ha alcun obbligo di mantenere, correggere, aggiornare, modificare, modificare, supportare (tramite i servizi di supporto Adobe o in altro modo) o di fornire tali versioni beta entro una data specifica. Se una versione beta diventa generalmente disponibile, può essere soggetta a termini e condizioni aggiuntivi, comprese le tariffe applicabili. Le versioni Beta sono soggette a modifiche senza preavviso, inclusa la loro interruzione. Si consiglia ai clienti di prestare attenzione e di non fare affidamento in alcun modo sul funzionamento o sulle prestazioni ininterrotti o privi di errori delle versioni beta.  Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del cliente.
+>**Dichiarazione di non responsabilità**<br/>
+>I rilasci di Beta includono funzioni prerelease e codice che possono contenere difetti e vengono forniti &quot;COSÌ COM&#39;È&quot; senza alcuna garanzia. Adobe ha la sola discrezione di decidere se rendere le versioni beta generalmente disponibili. Adobe non ha alcun obbligo di mantenere, correggere, aggiornare, modificare, modificare, supportare (tramite i servizi di supporto Adobe o in altro modo) o di fornire tali versioni beta entro una data specifica. Se una versione beta diventa generalmente disponibile, può essere soggetta a termini e condizioni aggiuntivi, comprese le tariffe applicabili. Le versioni Beta sono soggette a modifiche senza preavviso, inclusa la loro interruzione. Si consiglia ai clienti di prestare attenzione e di non fare affidamento in alcun modo sul funzionamento o sulle prestazioni ininterrotti o privi di errori delle versioni beta.  Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del cliente.
 
 ## Vantaggi della partecipazione
 
@@ -93,21 +93,6 @@ Il merchandising per categoria Adobe Commerce Optimizer consente ai commercianti
 Per ulteriori informazioni, consulta [merchandising tra categorie](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add).
 
 Per condividere il tuo feedback durante l&#39;utilizzo di questa funzione beta, invia un&#39;e-mail a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
-
-### Ricerca semantica: esperienze di acquisto più intelligenti e basate sul contesto (Private Beta)
-
-[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."}
-
-La ricerca semantica è una tecnologia di ricerca e-commerce che comprende il *significato* dietro una query di un acquirente, non solo le parole esatte. A differenza della ricerca tradizionale basata su parole chiave, che spesso ha esito negativo quando le query includono termini non familiari o errati, questo approccio basato sull’intelligenza artificiale interpreta l’intento utilizzando l’elaborazione del linguaggio naturale (NLP) e il contesto per fornire risultati più rilevanti.
-
-Questa tecnologia risolve un importante limite della ricerca tradizionale: pagine a zero risultati che si verificano quando gli acquirenti usano parole che non esistono nel catalogo. Utilizzando tecniche basate sull’intelligenza artificiale, mappa le query utente e i dati dei prodotti in uno spazio semantico condiviso. Ad esempio, il sistema riconosce che &quot;scarpe da corsa&quot; e &quot;scarpe da jogging&quot; si riferiscono allo stesso tipo di prodotto, consentendo:
-
-- Riconoscimento sinonimi
-- Rilevanza contestuale
-- Gestione intelligente di query vaghe, errate o composte
-- Comprensione del linguaggio naturale e conversazionale
-
-Per richiedere un invito al programma beta, invia un&#39;e-mail a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). Il team Adobe risponderà con i passaggi successivi e i requisiti di idoneità.
 
 ### Servizio di applicazione di patch per l&#39;automazione cloud (Private Beta)
 
