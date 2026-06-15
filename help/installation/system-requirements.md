@@ -2,9 +2,9 @@
 title: Requisiti di sistema
 description: Scopri le dipendenze software e i requisiti di sistema per Adobe Commerce. Consulta Configurazioni testate per la compatibilità con l’ambiente di implementazione.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
+source-git-commit: 4ffbd0ab5109fb242d3d83c8f6c19c58d1bcb822
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Nelle tabelle seguenti sono riepilogati i requisiti di sistema per l’ultima ve
 
 >[!TAB Commerce sul cloud]
 
-Il modello [Commerce on Cloud](https://github.com/magento/magento-cloud) fornisce una configurazione predefinita per i servizi compatibili con una versione specifica di Commerce.
+Il modello [Commerce on Cloud](https://github.com/magento/magento-cloud) fornisce una configurazione predefinita per i servizi compatibili con la versione più recente di Commerce per ogni riga di rilascio.
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
