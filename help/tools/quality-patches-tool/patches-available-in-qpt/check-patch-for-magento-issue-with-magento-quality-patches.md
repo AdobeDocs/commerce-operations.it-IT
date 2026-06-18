@@ -5,9 +5,9 @@ feature: Tools and External Services
 role: Admin
 exl-id: 4d651c3c-95ad-4b53-bf77-92758acb795d
 type: Troubleshooting
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Questo articolo fornisce una panoramica dello strumento Quality Patches (QPT) e 
 * Adobe Commerce on-premise, tutte le [versioni supportate](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 * Adobe Commerce sull&#39;infrastruttura cloud, tutte le [versioni supportate](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
-## Che cosa sono le patch di qualità
+## Cos’è lo strumento Patch di qualità
 
 Lo [strumento Patch di qualità](https://github.com/magento/quality-patches) (QPT) è costituito da singole patch sviluppate da Adobe e dalla community Magento Open Source.
 

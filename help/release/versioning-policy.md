@@ -2,9 +2,9 @@
 title: Criterio di rilascio
 description: Scopri i tipi di versioni di Adobe Commerce, il controllo delle versioni di marketing e dei moduli, le versioni di patch e sicurezza, i beta, gli hotfix e i criteri di rilascio generali.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Gli hotfix sono patch che contengono problemi di sicurezza ad alto impatto o cor
 
 ## Singola patch
 
-Le singole patch contengono correzioni di qualità a basso impatto per un problema specifico. Queste correzioni vengono applicate alle versioni secondarie supportate di Adobe Commerce. Adobe rilascia singole patch in base alle esigenze per Adobe Commerce in conformità con [Criteri del ciclo di vita del software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Vengono consegnati tramite lo strumento [Patch di qualità](../tools/quality-patches-tool/usage.md).
+Le singole patch contengono correzioni di qualità a basso impatto per un problema specifico. Queste correzioni vengono applicate alle versioni secondarie supportate di Adobe Commerce. Adobe rilascia le singole patch necessarie per Adobe Commerce in conformità con i [criteri del ciclo di vita del software](lifecycle-policy.md). Per informazioni legali, vedere [Adobe Commerce Software Lifecycle Policy (PDF)](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Vengono consegnati tramite lo strumento [Patch di qualità](../tools/quality-patches-tool/usage.md).
 
 >[!NOTE]
 >

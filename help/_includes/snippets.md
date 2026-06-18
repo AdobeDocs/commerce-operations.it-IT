@@ -1,7 +1,7 @@
 ---
-source-git-commit: d22f1c660ba2b6bdc507fa8ba728e0a4269bef8d
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 ## Patch di sicurezza per il supporto esteso {#extended-support}
 
->[!NOTE]
->
->Le patch di sicurezza per il supporto esteso per la versione 2.4.5 sono disponibili solo per i clienti Adobe Commerce. Queste patch non sono disponibili per la base di codice di Magento Open Source. Consulta [Supporto esteso](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## Solo Commerce {#commerce-only}
 

@@ -2,9 +2,9 @@
 title: Note sulla versione della patch di sicurezza di Adobe Commerce 2.4.6
 description: Scopri le correzioni di bug di sicurezza, i miglioramenti della sicurezza e altri aggiornamenti relativi alla sicurezza inclusi nelle versioni delle patch di sicurezza per Adobe Commerce 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 95333e271e6f7a8e782d6a40b754fe29ac280414
+source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2398'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,15 @@ ht-degree: 0%
 >
 >MySQL 8.0 raggiungerà la fine del supporto (EOS) a partire dal 30 aprile 2026.
 >
->Dopo questa data, Adobe Commerce 2.4.6 non fornirà compatibilità o>supporto per qualsiasi versione di MySQL rilasciata dopo MySQL 8.0. Adobe non>convalida o fornisce supporto per le versioni principali di MySQL più recenti in questo Adobe>Riga di rilascio Commerce.
+>Dopo questa data, Adobe Commerce 2.4.6 non fornirà compatibilità o >supporto per le versioni MySQL rilasciate dopo MySQL 8.0. Adobe non>convalida o fornirà supporto per le versioni principali di MySQL più recenti in questa versione di Adobe>Commerce.
 >
->Tutti i clienti Adobe Commerce on-premise che eseguono le versioni 2.4.6 di sono>è stato consigliato di migrare i server di database a una versione compatibile di MariaDB.
+>A tutti i clienti Adobe Commerce on-premise che eseguono le versioni 2.4.6 viene consigliato di > migrare i propri server di database a una versione MariaDB compatibile.
+>
+>I clienti di Adobe Commerce on Cloud devono mantenere le dipendenze della piattaforma dalle versioni supportate. Vedi [Dipendenze piattaforma](../../lifecycle-policy.md#platform-dependencies) nel criterio del ciclo di vita.
+>
+>Adobe Commerce 2.4.6 si trova in [supporto esteso](../../lifecycle-policy.md#extended-support) fino al **30 agosto 2027**, seguito da un [periodo transitorio di sola sicurezza](../../lifecycle-policy.md#security-only-transitional-period) fino al **31 maggio 2028**. Queste disposizioni sono disponibili solo per i clienti Adobe Commerce. Non estendono il supporto per dipendenze di terze parti come MySQL.
+>
+>Se esegui Adobe Commerce su Cloud, devi eseguire l&#39;aggiornamento a una versione supportata o eseguire la migrazione a [!DNL Adobe Commerce as a Cloud Service] prima del **1 giugno 2028** [data di applicazione dell&#39;aggiornamento della versione](../../version-upgrade-enforcement-policy.md). Per informazioni sulle date dell&#39;intero ciclo di vita, vedere la tabella [date di fine del supporto](../../lifecycle-policy.md#end-of-support-dates).
 
 ## 2.4.6-p15
 

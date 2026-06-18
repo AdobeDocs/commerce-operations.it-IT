@@ -2,9 +2,9 @@
 title: Modello operativo e sicurezza con responsabilità condivisa
 description: Scopri le responsabilità di sicurezza di ogni parte coinvolta nel progetto di infrastruttura cloud di Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 4e5477a247b272dc17863a84bd3b9a55bf36d688
+source-git-commit: 7dcd7f79417df28402a29e1e52d99eb288e8c6b9
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3253'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,13 @@ I commercianti sono responsabili di quanto segue:
 * Ottenimento della certificazione PCI se richiesto dal servizio di elaborazione dei pagamenti dell&#39;esercente
 * Reazione e risposta agli incidenti di sicurezza
 * Mantenere tutte le dipendenze di terze parti, i servizi Platform e le estensioni dei servizi Adobe Commerce su versioni attivamente supportate. Adobe non fornisce supporto o assistenza per la sicurezza delle distribuzioni che eseguono versioni di dipendenza non supportate. Per le versioni supportate, vedere [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=it) e la [Matrice di disponibilità del prodotto](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability).
+
+>[!NOTE]
+>
+>Vedi anche:
+>
+>* [Criteri del ciclo di vita del software](../release/lifecycle-policy.md): date di fine del supporto, supporto esteso e disposizioni transitorie per la sola protezione
+>* [Criterio di applicazione dell&#39;aggiornamento della versione cloud](../release/version-upgrade-enforcement-policy.md) — date di applicazione e azioni richieste
 
 {{supported-versions-only}}
 
@@ -813,8 +820,6 @@ I commercianti sono responsabili della sincronizzazione dei dati tra ambienti di
 | Configurazione della sincronizzazione dei dati MBI con Adobe Commerce Cloud Pro<br> (configurazione del database di Adobe Commerce Cloud) | R |   |
 
 {style="table-layout:auto"}
-
-{{supported-versions-only}}
 
 #### Consigli di prodotto
 
