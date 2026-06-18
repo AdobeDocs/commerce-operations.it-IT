@@ -1,8 +1,8 @@
 ---
 title: Criterio di applicazione aggiornamento versione cloud
 description: 'Scopri l’applicazione dell’aggiornamento della versione per Adobe Commerce su Cloud: perché Adobe applica aggiornamenti, date di applicazione, disattivazione e azioni richieste. Consulta la sezione sui criteri del ciclo di vita per le disposizioni transitorie e i percorsi di migrazione.'
-nudge: true
-source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
+nudge: false
+source-git-commit: 797f067de451c8b1b4d735e82de66a3fd9b56563
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
