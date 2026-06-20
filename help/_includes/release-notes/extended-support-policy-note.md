@@ -16,4 +16,4 @@ ht-degree: 0%
 >Vedi anche:
 >
 >- [Criteri del ciclo di vita del software](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/lifecycle-policy): date di fine del supporto, supporto esteso e disposizioni transitorie per la sola protezione
->- [Criterio di applicazione dell&#39;aggiornamento della versione cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy) — date di applicazione e azioni richieste
+>- [Criterio di applicazione dell&#39;aggiornamento della versione cloud](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy) — date di applicazione e azioni richieste
