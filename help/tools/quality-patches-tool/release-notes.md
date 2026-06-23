@@ -5,16 +5,12 @@ exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
 autotag-review: '2026-05-29T17:40:45.034Z'
 TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: f1cae5b4ad3d75dbc7f83b7687a4614f678263cd
 workflow-type: tm+mt
-source-wordcount: 30977
+source-wordcount: 31322
 ht-degree: 0%
 
 ---
@@ -25,11 +21,26 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=it#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
+>Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
 
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per Magento Open Source, consulta le [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.81 {#v1-1-81}
+
+* **ACP2E-4300** (per Adobe Commerce >=2.4.5 &lt;2.4.9) - Corregge il problema per cui la modifica di un gruppo di clienti nell&#39;amministratore non comporta l&#39;aggiornamento delle autorizzazioni del catalogo nello storefront, rendendo il catalogo e il carrello equivalenti alle autorizzazioni obsolete.
+* **ACP2E-4401** (per Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Risolve il problema per cui l&#39;anteprima dell&#39;aggiornamento pianificato del collegamento alla home page con prodotti configurabili viene reindirizzata alla pagina di manutenzione invece di visualizzare l&#39;elenco dei prodotti.
+* **ACP2E-4395** (per Adobe Commerce >=2.4.5 &lt;2.4.9) - Corregge il problema per cui la creazione del prodotto API gift card non visualizza un errore se non vengono specificati importi per l&#39;ambito globale.
+* **ACP2E-4468** (per Adobe Commerce >=2.4.8 &lt;2.4.9) - Corregge il problema per cui gli utenti amministratori con autorizzazioni di ambito sito Web non possono modificare il contenuto del banner.
+* **ACP2E-4630** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.9) - Corregge il problema relativo alla sovrapposizione di nomi di prodotti lunghi con opzioni personalizzate tra colonne o elementi adiacenti in PDF di fatturazione, spedizione, nota di credito e restituzione di più pagine dopo l&#39;interruzione della pagina, rendendo illeggibili gli elementi riga.
+* **ACP2E-4680** (per Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Corregge il problema che causa la scomparsa dei prodotti non vendibili o eliminati dai preventivi negoziabili finalizzati.
+* **ACP2E-4709** (per Adobe Commerce >=2.4.7 &lt;2.4.9) - Corregge il problema se le pagine CMS non vengono salvate quando si utilizza Page Builder.
+* **ACP2E-4786** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.10): è stato risolto il problema che impediva l&#39;esportazione dei prodotti per la scrittura dei file quando è configurato l&#39;archivio remoto AWS S3, a causa di una risoluzione errata del percorso nel driver di archiviazione.
+* **ACP2E-4801** (per Adobe Commerce, B2B >=1.4.2 &lt;1.5.3) - Corregge il problema per cui l&#39;aggiornamento delle quantità delle opzioni di prodotto del bundle tramite il pulsante Configura in un preventivo negoziabile dell&#39;amministratore non viene applicato e le modifiche vengono ignorate.
+* **ACP2E-4815** (per Adobe Commerce e Magento Open Source >=2.4.6-p15 &lt;2.4.7 || >=2.4.7-p1 &lt;2.4.9) - Corregge diversi problemi di GraphQL che causavano eccezioni PHP nei registri, la corretta associazione degli ordini con gli account cliente creati dopo l&#39;ordine tramite GraphQL e l&#39;allineamento delle risposte con le specifiche GraphQL su HTTP.
+* Versioni aggiornate: **ACSD-64212**, **ACSD-64523**, **ACSD-67347**
+* Sostituzione delle patch: **ACSD-67941**, **ACSD-64212**, **ACSD-68925**
 
 ## v1.1.80 {#v1-1-80}
 
