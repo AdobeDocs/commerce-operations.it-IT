@@ -3,16 +3,26 @@ title: Configurare Redis per Default e Page Cache
 description: Scopri come configurare Redis come backend predefinito e cache delle pagine per Adobe Commerce. Scopri i comandi CLI, le impostazioni env.php e la verifica della connessione.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: d82061ad2fa4676bd8fa71a9d34a954444eb0f54
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
+autotag-review: '2026-06-22T21:55:53.227Z'
+TQID: 'https://experienceleague.adobe.com/2KjWE19ud32PUdvJQWNWkK338ysaa5vt0mA4EyyP66I'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: 1485
 ht-degree: 0%
 
 ---
 
 # Configurare Redis per cache predefinita e di pagina
 
-Commerce fornisce opzioni della riga di comando per configurare la pagina Redis e il caching predefinito. Sebbene sia possibile configurare il caching modificando il file `<Commerce-install-dir>app/etc/env.php`, la riga di comando è il metodo consigliato, in particolare per le configurazioni iniziali. La riga di comando fornisce la convalida per garantire che la configurazione sia sintatticamente corretta.
+{{cloud-cache-config}}
+
+Commerce fornisce opzioni della riga di comando per configurare la pagina Redis e il caching predefinito. Sebbene sia possibile configurare il caching modificando il file `<Commerce-install-dir>app/etc/env.php`, l&#39;utilizzo della riga di comando è il metodo consigliato, in particolare per le configurazioni iniziali. La riga di comando fornisce la convalida, garantendo che la configurazione sia sintatticamente corretta.
 
 **Prerequisito:**
 
@@ -410,7 +420,7 @@ php -m | grep redis
 
 | Operazione | Predis | phpredis | Miglioramento |
 |-----------|--------|----------|-------------|
-| Memorizza GET nella cache | 1-5 ms | 0,5-2 ms | 2-3 volte più veloce |
+| Cache GET | 1-5 ms | 0,5-2 ms | 2-3 volte più veloce |
 | Cache SET | 2-6 ms | 0,8-2,5 ms | 2-3 volte più veloce |
 | Operazioni sui tag | 10-30 ms | 3-10 ms | 3-4 volte più veloce |
 

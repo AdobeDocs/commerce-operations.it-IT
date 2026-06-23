@@ -1,56 +1,85 @@
 ---
-title: Configurare il server web per il caching di vernice
+title: Configurare nginx per il caching di vernice
 description: Scopri come configurare il server web per l’utilizzo della memorizzazione in cache di Adobe Commerce. Scopri i requisiti di configurazione e configurazione delle porte.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
+autotag-review: '2026-06-22T21:49:41.837Z'
+TQID: 'https://experienceleague.adobe.com/0vOg86gRkST8CZGhdIESzhld63HQ5IUlO4go-Hgw9Xs'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: c8faa589c9e9d1dbc01863d90aad5f91b11c0140
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: 806
 ht-degree: 0%
 
 ---
 
-# Configurare il server web per il caching di vernice
+# Configurare nginx per il caching di vernice {#configure-web-server-for-varnish-caching}
 
-Configurare il server Web per l&#39;ascolto su una porta diversa da quella predefinita 80, in quanto Vernice risponde direttamente alle richieste HTTP in ingresso, non al server Web.
+Quando si utilizza Varnish come cache a pagina intera davanti ad Adobe Commerce, solitamente ascolta la porta HTTP pubblica e inoltra le richieste a nginx su una porta backend non predefinita come 8080. Aggiorna la configurazione del sito nginx per il server di origine Commerce in modo che ascolti la porta back-end utilizzata da Vernice.
+
+{{varnish-config-cloud}}
 
 Le sezioni seguenti utilizzano la porta 8080 come esempio.
 
-**Per modificare la porta di ascolto di Apache 2.4**:
+**Modificare la porta di ascolto nginx per il server di origine Commerce**:
 
-1. Apri `/etc/httpd/conf/httpd.conf` in un editor di testo.
-1. Individuare la direttiva `Listen`.
-1. Modificare il valore della porta di ascolto in `8080`. È possibile utilizzare qualsiasi porta di ascolto disponibile.
-1. Salvare le modifiche apportate a `httpd.conf` e uscire dall&#39;editor di testo.
+1. Apri la configurazione del sito nginx per il server di origine Adobe Commerce in un editor di testo.
+
+La posizione dipende dal sistema operativo e dal layout di navigazione. Ad esempio, Ubuntu utilizza spesso un file in `/etc/nginx/sites-available/`.
+
+1. Nel blocco `server` per il sito Commerce, modificare la direttiva `listen` dalla porta HTTP pubblica alla porta back-end che verrà utilizzata da Varnish per raggiungere nginx.
+
+   Ad esempio, modifica
+
+   ```conf
+   server {
+       listen 80;
+       server_name example.com;
+       root /var/www/html/magento2;
+       include /var/www/html/magento2/nginx.conf.sample;
+   }
+   ```
+
+   a:
+
+   ```conf
+   server {
+       listen 8080;
+       server_name example.com;
+       root /var/www/html/magento2;
+       include /var/www/html/magento2/nginx.conf.sample;
+   }
+   ```
+
+1. Salva il file.
+
+1. Verifica la configurazione dell’indice:
+
+   ```shell
+   nginx -t
+   ```
+
+1. Inginx di riavvio:
+
+   ```shell
+   systemctl restart nginx
+   ```
 
 ## Modificare la configurazione del sistema di vernice
 
-Per modificare la configurazione del sistema di vernice:
+Dopo aver aggiornato nginx per l’ascolto sulla porta back-end, configura Varish per inoltrare le richieste a tale host e porta. Ad esempio:
 
-1. In qualità di utente con privilegi di `root`, apri il file di configurazione Vanish in un editor di testo:
-
-   - CentOS 6: `/etc/sysconfig/varnish`
-   - CentOS 7: `/etc/varnish/varnish.params`
-   - Debian: `/etc/default/varnish`
-   - Ubuntu: `/etc/default/varnish`
-
-1. Impostare la porta di ascolto Vernice su 80:
-
-   ```conf
-   VARNISH_LISTEN_PORT=80
-   ```
-
-   Per la vernice 4.x, assicurarsi che DAEMON_OPTS contenga la porta di ascolto corretta per il parametro `-a` (anche se VARNISH_LISTEN_PORT è impostato sul valore corretto):
-
-   ```conf
-   DAEMON_OPTS="-a :80 \
-      -T localhost:6082 \
-      -f /etc/varnish/default.vcl \
-      -S /etc/varnish/secret \
-      -s malloc,256m"
-   ```
-
-1. Salvate le modifiche nel file di configurazione Vernice e uscite dall&#39;editor di testo.
+```conf
+backend default {
+    .host = "192.0.2.55";
+    .port = "8080";
+}
+```
 
 ### Modificare la VCL di default
 
@@ -80,7 +109,7 @@ Per configurare la vernice in modo minimo:
 
 1. Sostituire il valore di `.port` con la porta di ascolto del server Web (8080 in questo esempio).
 
-   Esempio: Apache è installato nell&#39;host 192.0.2.55 e Apache è in ascolto sulla porta 8080:
+   Esempio: nginx è installato sull&#39;host 192.0.2.55 e in ascolto sulla porta 8080:
 
    ```conf
    backend default {
@@ -91,7 +120,7 @@ Per configurare la vernice in modo minimo:
 
    >[!INFO]
    >
-   >Se Vernice e Apache sono in esecuzione sullo stesso host, Adobe consiglia di utilizzare un indirizzo IP o un nome host e non `localhost`.
+   >Se Vernice e Inginx sono in esecuzione sullo stesso host, Adobe consiglia di utilizzare un indirizzo IP o un nome host e non `localhost`.
 
 1. Salvare le modifiche apportate a `default.vcl` e uscire dall&#39;editor di testo.
 
@@ -162,11 +191,11 @@ Cerca in particolare il seguente output:
 ```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
-tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
+tcp        0      0 :::8080                     :::*                        LISTEN      26822/nginx
 tcp        0      0 ::1:48509                   :::*                        LISTEN      32604/varnishd
 ```
 
-Il precedente mostra la Vernice che corre sulla porta 80 e l&#39;Apache che sulla porta 8080.
+Il precedente mostra la Vernice in esecuzione sulla porta 80 e la nginx in esecuzione sulla porta 8080.
 
 Se l&#39;output per `varnishd` non viene visualizzato, verificare che Vernice sia in esecuzione.
 

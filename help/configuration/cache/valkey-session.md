@@ -3,9 +3,17 @@ title: Configurare Valkey per l'archiviazione della sessione
 description: Scopri come configurare Valkey per l’archiviazione delle sessioni in Adobe Commerce. Scopri la configurazione CLI, i parametri di sessione e le tecniche di verifica della connessione.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
+autotag-review: '2026-06-22T21:59:49.664Z'
+TQID: 'https://experienceleague.adobe.com/Cc9-5afIU1qJ0-4gxtUWo4tRFPtTMD3l1uzpyNBX7p0'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: 976
 ht-degree: 1%
 
 ---
@@ -13,11 +21,15 @@ ht-degree: 1%
 
 # Configurare Valkey per l&#39;archiviazione della sessione
 
+{{cloud-cache-config}}
+
+Commerce fornisce opzioni della riga di comando per configurare l’archiviazione della sessione Valkey. Sebbene sia possibile configurare l&#39;archiviazione della sessione modificando il file `<Commerce-install-dir>/app/etc/env.php`, l&#39;utilizzo della riga di comando è il metodo consigliato, in particolare per le configurazioni iniziali. La riga di comando fornisce la convalida, garantendo che la configurazione sia sintatticamente corretta.
+
 >[!IMPORTANT]
 >
->È necessario [installare Valkey](config-valkey.md#install-valkey) prima di continuare.
+>Prima di poter configurare l&#39;archiviazione della sessione, è necessario che sia installato [Valkey](config-valkey.md#install-valkey).
 
-Adobe Commerce fornisce opzioni della riga di comando per configurare l’archiviazione della sessione Valkey.
+## Configurare l’archiviazione della sessione Valkey
 
 Eseguire il comando `setup:config:set` e specificare i parametri specifici di Valkey.
 
@@ -28,7 +40,6 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 - `--session-save=valkey` abilita l&#39;archiviazione della sessione Valkey. Se questa funzione è già abilitata, ometti questo parametro.
 
 - `--session-save-valkey-<parameter_name>=<parameter_value>` è un elenco di coppie parametro/valore che configurano l&#39;archiviazione della sessione:
-
 
 >[!NOTE]
 >
