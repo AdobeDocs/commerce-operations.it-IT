@@ -3,7 +3,7 @@ title: Firma di contenuti statici e annullamento della validità della cache del
 description: Scopri come funziona la firma dei contenuti statici in Adobe Commerce per invalidare la cache del browser per le risorse statiche. Scopri come abilitare e configurare questa funzione.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on-premise e on-cloud."
+badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on-premise e on-cloud."
 autotag-review: '2026-06-22T21:48:08.334Z'
 TQID: 'https://experienceleague.adobe.com/vagWBVnjIS7tjnwVE5Dk56VDmPtbPgjsNVLBHSlOc-s'
 product_v2:
@@ -51,7 +51,7 @@ In questo modo viene modificato l’URL dei file statici e viene forzato il brow
 
 Commerce abilita questa funzione per impostazione predefinita; Adobe consiglia di mantenerla abilitata per evitare problemi relativi ai browser che utilizzano vecchie risorse statiche.
 
-La configurazione per la firma del contenuto statico è in [**[!UICONTROL Stores]**> Impostazioni > Configurazione >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
+La configurazione per la firma del contenuto statico è in [**[!UICONTROL Stores]**> Impostazioni > Configurazione >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
 - **Solo locale**: questa configurazione è disponibile se il sito è **non** in [Modalità di produzione](../bootstrap/application-modes.md#production-mode).
 - **Cloud**: questa configurazione è nascosta perché la modalità di produzione è rigorosamente applicata; è quindi necessario utilizzare la riga di comando come illustrato di seguito.
