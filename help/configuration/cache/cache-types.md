@@ -3,9 +3,22 @@ title: Configura front-end cache
 description: Scopri come definire i front-end della cache e associarli ai tipi di cache in Adobe Commerce. Scopri la sintassi di configurazione per env.php e di.xml.
 feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
-source-git-commit: de613310ad701dd594a6ee8fcd973aa2c3769870
+product_v2:
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ae31702797c8754a719e5a5eb39a3924e723c87a
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: 454
 ht-degree: 0%
 
 ---
@@ -15,6 +28,8 @@ ht-degree: 0%
 Un front-end della cache è un’interfaccia tra Commerce e il back-end di archiviazione della cache. È possibile definire più front-end, ciascuno con impostazioni di back-end diverse, quindi assegnare tipi di [cache](../cli/manage-cache.md#clean-and-flush-cache-types) specifici a ogni front-end.
 
 Questa funzione è utile quando si desidera utilizzare back-end o configurazioni di cache diversi per tipi diversi di dati memorizzati nella cache. Ad esempio, potrebbe essere necessario memorizzare `full_page` nella cache di un database Redis dedicato mentre si utilizza un database separato per la memorizzazione nella cache di `default`.
+
+{{cloud-cache-config}}
 
 ## Usa front-end predefinito
 
@@ -99,4 +114,4 @@ Se omesso, verrà utilizzato [Magento\Framework\Cache\Core](https://github.com/m
 >
 >La moderna implementazione della cache di Symfony offre prestazioni migliori grazie alla conformità PSR-6, alla serializzazione Igbinary, alla compressione Gzip, agli script Lua e alle connessioni persistenti.
 
-Consulta la [documentazione Laminas](https://docs.laminas.dev/) per le opzioni basate su Zend o le guide moderne di Symfony Cache per [Redis](redis-pg-cache.md) e [Valkey](valkey-pg-cache.md).
+Consulta la [documentazione Laminas](https://docs.laminas.dev/) per le opzioni basate su Zend. Per la configurazione della cache di Symfony, vedi gli articoli [Redis](redis-pg-cache.md) e [Valkey](valkey-pg-cache.md) in questa documentazione.

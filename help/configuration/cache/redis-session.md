@@ -3,21 +3,38 @@ title: Configurare Redis per l’archiviazione della sessione
 description: Scopri come configurare Redis per l’archiviazione delle sessioni in Adobe Commerce. Scopri la configurazione CLI, i parametri di sessione e le tecniche di verifica della connessione.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
+autotag-review: '2026-06-22T21:56:59.687Z'
+TQID: 'https://experienceleague.adobe.com/deiikp11GlXtMJFkhT7DhgguCYFkplQgr2fYm8MMN7I'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: 859
 ht-degree: 1%
 
 ---
 
 # Configurare Redis per l’archiviazione della sessione
 
->[!IMPORTANT]
->
->È necessario [installare Redis](config-redis.md#install-redis) prima di continuare.
-
+{{cloud-cache-config}}
 
 Commerce ora fornisce opzioni della riga di comando per configurare l’archiviazione della sessione Redis. Nelle versioni precedenti, hai modificato il file `<Commerce install dir>app/etc/env.php`. La riga di comando fornisce la convalida ed è il metodo di configurazione consigliato, ma è comunque possibile modificare il file `env.php`.
+
+>[!IMPORTANT]
+>
+>Prima di configurare l&#39;archiviazione sessione, è necessario che sia installato [Redis](config-redis.md#install-redis).
 
 Eseguire il comando `setup:config:set` e specificare i parametri specifici Redis.
 

@@ -1,11 +1,23 @@
 ---
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: f08c48c7e39c506a71bf9e13d0adc06315013d69
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---
 # Snippet
+
+## Nota sulla configurazione della cache di Commerce on Cloud con riferimento {#cloud-cache-config}
+
+>[!NOTE]
+>
+>Per i progetti Adobe Commerce on Cloud, consulta [Best practice per la configurazione del servizio Redis e Valkey](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) per le istruzioni sulla configurazione della cache.
+
+## Nota di configurazione di Commerce on Cloud Varnish con riferimento {#varnish-config-cloud}
+
+>[!NOTE]
+>
+>Se il progetto Commerce è distribuito sul cloud, la memorizzazione nella cache di pagine intere utilizza [Fastly](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/cdn/fastly) invece di Varnish. Gli argomenti trattati in questa sezione si applicano solo alle installazioni locali.
 
 ## Supporto della versione del servizio Adobe {#supported-versions-only}
 
