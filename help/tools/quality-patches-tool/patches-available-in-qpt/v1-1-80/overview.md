@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 3eff1670dd536175d4905d386027674431831ae8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: dace5fedf8e247c3391a8ffae1b2050f3e37367e
 workflow-type: tm+mt
-source-wordcount: 409
+source-wordcount: 410
 ht-degree: 0%
 
 ---
@@ -33,7 +28,7 @@ QPT v1.1.80 include le seguenti patch:
 1. **ACP2E-4488**: è stato risolto il problema che rallenta il salvataggio o la modifica dei prodotti in [!UICONTROL Admin] per i prodotti con set di attributi di grandi dimensioni.
 1. **ACP2E-4493**: è stato risolto il problema che causava la visualizzazione di uno stato dell&#39;ordine errato nella griglia di Archivio ordini di vendita quando l&#39;indicizzazione asincrona era abilitata.
 1. **ACP2E-4496**: è stato risolto il problema che causava il deterioramento delle prestazioni durante l&#39;esecuzione del processo cron di Analytics, con conseguente miglioramento delle prestazioni complessive del sistema.
-1. **ACP2E-4533**: è stato risolto il problema che impediva il caricamento delle immagini segnaposto in Storefront quando nell&#39;URL è incluso un codice store.
+1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: è stato risolto il problema che impediva il caricamento delle immagini segnaposto nella vetrina quando nell&#39;URL è incluso un codice store.
 1. **ACP2E-4552**: è stato risolto il problema che impediva la restituzione dello stato della società nella risposta di GraphQL.
 1. **ACP2E-4610**: è stato risolto il problema relativo ai problemi di prestazioni del processo cron `sales_clean_quotes`.
 1. **ACP2E-4615**: è stato risolto il problema che impediva il rimborso degli ordini online con l&#39;errore PayPal che indicava, *Il gateway PayPal rifiuta la richiesta. Errore interno.*.
