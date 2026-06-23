@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 7e0a7479cd988b678c95b0ee9ec4c5371d0a62d9
+source-git-commit: bcdc7ec2789358b58f137d622ddbf250acf28c2c
 workflow-type: tm+mt
-source-wordcount: '10150'
+source-wordcount: '10160'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: Salvataggio di un&#39;operazione di autorizzazione di pagamento con riferimento autonomo parent_id e attivazione di un loop/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4156: [!DNL REST] La convalida dell&#39;indirizzo di spedizione API ignora la configurazione dell&#39;attributo Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
    - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Riferimento per gli strumenti della riga di comando {#cli-reference}
    - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
@@ -1059,4 +1060,4 @@ ht-degree: 0%
    - Risorse {#resources}
       - [Risoluzione dei problemi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=it)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
