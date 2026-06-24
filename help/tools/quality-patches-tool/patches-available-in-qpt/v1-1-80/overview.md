@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 08101f36665d77f807386f261d39dee1e379a8b1
+source-git-commit: 016a56af24e8e4ff127c54713e5fa45ab9fca826
 workflow-type: tm+mt
-source-wordcount: 465
+source-wordcount: 470
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 QPT v1.1.80 include le seguenti patch:
 
 1. **ACP2E-4239**: è stato corretto il problema a causa del quale i filtri della griglia di amministrazione che utilizzano gli attributi di data restituiscono risultati non corretti a causa di differenze di fuso orario tra la data selezionata, i valori UTC archiviati e il fuso orario dell&#39;archivio configurato.
-1. **ACP2E-4472**: è stato risolto il problema relativo alla creazione di virgolette Null durante il flusso **[!UICONTROL Login as Customer]**.
+1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)**: è stato risolto il problema relativo alla creazione di un record di virgolette null nella tabella del database `quote` durante il flusso **[!UICONTROL Login as Customer]**.
 1. **ACP2E-4481**: è stato risolto il problema che impediva il ricalcolo corretto della vendibilità del prodotto bundle dopo l&#39;annullamento di un ordine.
 1. **ACP2E-4488**: è stato risolto il problema che rallenta il salvataggio o la modifica dei prodotti in [!UICONTROL Admin] per i prodotti con set di attributi di grandi dimensioni.
 1. **ACP2E-4493**: è stato risolto il problema che causava la visualizzazione di uno stato dell&#39;ordine errato nella griglia di Archivio ordini di vendita quando l&#39;indicizzazione asincrona era abilitata.
