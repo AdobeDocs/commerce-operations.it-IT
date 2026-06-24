@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: dace5fedf8e247c3391a8ffae1b2050f3e37367e
+source-git-commit: 08101f36665d77f807386f261d39dee1e379a8b1
 workflow-type: tm+mt
-source-wordcount: 410
+source-wordcount: 465
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ QPT v1.1.80 include le seguenti patch:
 1. **ACP2E-4615**: è stato risolto il problema che impediva il rimborso degli ordini online con l&#39;errore PayPal che indicava, *Il gateway PayPal rifiuta la richiesta. Errore interno.*.
 1. **ACP2E-4626**: è stato risolto il problema che causava la richiesta e l&#39;esecuzione di alcuni file JavaScript di Storefront due volte, causando caricamenti duplicati intermittenti e un comportamento instabile.
 1. **ACP2E-4653**: è stato risolto il problema che impediva l&#39;esposizione dell&#39;ambito dell&#39;attributo condizione **[!UICONTROL Cart Price Rule]** per **[!UICONTROL Category (Parent Only)]** e **[!UICONTROL Category (Children Only)]** durante il recupero o l&#39;aggiornamento delle regole tramite l&#39;API REST.
+1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**: è stato risolto il problema che causava la visualizzazione di un solo valore numerico non elaborato nella sezione **[!UICONTROL Additional Information]** o **[!UICONTROL More Information]** senza l&#39;unità di misura configurata (libbre o kg) da parte dell&#39;attributo Weight della pagina di prodotto della vetrina.
+1. **ACP2E-4156**: è stato risolto il problema per cui la convalida degli indirizzi di spedizione nell&#39;API REST non è conforme alla configurazione degli attributi definita in [!UICONTROL Admin].
 1. **ACP2E-4808**: è stato risolto il problema che causava la visualizzazione di un solo valore numerico non elaborato nella sezione **[!UICONTROL Additional Information]** o **[!UICONTROL More Information]** senza l&#39;unità di misura configurata (libbre o kg) da parte dell&#39;attributo Weight della pagina di prodotto della vetrina.
 1. **[ACP2E-4156](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)**: è stato risolto il problema per cui la convalida degli indirizzi di spedizione nell&#39;API [!DNL REST] non è conforme alla configurazione degli attributi definita in Admin.
 1. **ACP2E-4813**: è stato risolto il problema relativo alla mancata disponibilità dei metodi di spedizione USPS al momento del pagamento e all&#39;errata stima della spedizione per alcuni prodotti, inclusi gli ordini suddivisi in più pacchetti.
