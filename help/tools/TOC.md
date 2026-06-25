@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 016a56af24e8e4ff127c54713e5fa45ab9fca826
+source-git-commit: f1c04fe69abdcdbb425d4488e3095baa2debc274
 workflow-type: tm+mt
-source-wordcount: '10196'
+source-wordcount: '10206'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: Salvataggio di un&#39;operazione di autorizzazione di pagamento con riferimento autonomo parent_id e attivazione di un loop/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4653: condizioni dell&#39;ambito della categoria della regola del prezzo del carrello mancanti dall&#39;API  [!DNL REST] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
          - [ACP2E-4472: offerta nulla creata utilizzando il flusso Login as Customer (Accesso come cliente)](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
          - [ACP2E-4808: visualizzazioni del peso del prodotto senza unità di misura sul vetrina](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533: impossibile caricare le immagini segnaposto nella vetrina se l&#39;URL include il codice dello store](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
