@@ -3,9 +3,9 @@ title: Regole sul ciclo di vita del software
 description: Scopri le date chiave per la fine del supporto software per le versioni di Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: 5846c83cd31e3d253a5ae0b0064b860e5c7af286
+source-git-commit: ed2757282c079ea7399d4df92000f346aecfbdd8
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1376'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Adobe non fornisce correzioni di sicurezza e di qualità per servizi di terze pa
 
 Il periodo di supporto standard di tre anni dalla data di disponibilità generale (General Availability, GA). Il supporto standard include correzioni di qualità, patch di sicurezza e supporto Adobe Commerce on-call completo.
 
-- **Correzioni di qualità** - I clienti possono accedere alle correzioni di qualità contattando [il supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) o tramite [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) self-service.
+- **Correzioni di qualità** - I clienti possono accedere alle correzioni di qualità contattando [il supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) o tramite [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) self-service.
 
 - **Correzioni di sicurezza** - Adobe fornisce correzioni di sicurezza tramite patch di sicurezza cumulative e [file di patch di sicurezza isolati](versioning-policy.md#isolated-security-patch-file) non cumulativi per il periodo di supporto di tre anni.
 
@@ -171,6 +171,10 @@ L’utilizzo di una versione di Commerce supportata richiede anche dipendenze di
 
 L’utente è responsabile della gestione di tutte le dipendenze di terze parti e dei servizi di piattaforma sulle versioni attivamente supportate. Consulta [Requisiti di sistema](../installation/system-requirements.md) per l&#39;elenco completo delle tecnologie di terze parti testate e supportate.
 
+>[!IMPORTANT]
+>
+>L’esecuzione di versioni di dipendenza non supportate può causare una vulnerabilità di sicurezza nell’istanza Cloud che Adobe non è in grado di risolvere. In questi casi, Adobe si riserva il diritto di applicare un aggiornamento della dipendenza software interessata o di disattivare l’istanza se un aggiornamento non è possibile, indipendentemente dallo stato di supporto della versione di Adobe Commerce.
+
 ## Fine del ciclo di vita PHP e conformità PCI
 
 È tua responsabilità monitorare lo stato di supporto delle versioni PHP utilizzate negli ambienti.
@@ -201,7 +205,7 @@ Se ti trovi in una versione che si avvicina o che è scaduta le date di fine del
 - Puoi accedere alle funzionalità più recenti di Adobe: merchandising basato sull’intelligenza artificiale, architettura della vetrina componibile e integrazioni native di Adobe Experience Cloud.
 - Vengono eliminati i cicli di aggiornamento ricorrenti.
 
-Contatta il team del tuo account Adobe per iniziare una valutazione della migrazione. Per una panoramica del prodotto, consulta [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/it/docs/commerce/cloud-service/overview).
+Contatta il team del tuo account Adobe per iniziare una valutazione della migrazione. Per una panoramica del prodotto, consulta [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview).
 
 ### Percorso alternativo: aggiornamento a una versione supportata di Adobe Commerce su cloud o on-premise
 
