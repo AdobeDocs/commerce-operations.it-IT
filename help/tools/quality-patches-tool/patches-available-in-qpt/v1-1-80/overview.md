@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 1816dfaa5145de416decf64482ed81ee82c7448d
+source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
 workflow-type: tm+mt
-source-wordcount: 463
+source-wordcount: 541
 ht-degree: 0%
 
 ---
@@ -39,6 +39,9 @@ QPT v1.1.80 include le seguenti patch:
 1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: è stato risolto il problema che impediva il caricamento delle immagini segnaposto nella vetrina quando nell&#39;URL è incluso un codice store.
 1. **ACP2E-4610**: è stato risolto il problema relativo ai problemi di prestazioni del processo cron `sales_clean_quotes`.
 1. **ACP2E-4615**: è stato risolto il problema che impediva il rimborso degli ordini online con l&#39;errore PayPal che indicava, *Il gateway PayPal rifiuta la richiesta. Errore interno.*.
+1. **[ACP2E-4626](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)**: è stato risolto il problema che causava la richiesta e l&#39;esecuzione di alcuni file JavaScript di Storefront due volte, causando caricamenti duplicati intermittenti e un comportamento instabile.
+1. **ACP2E-4653**: è stato risolto il problema che impediva l&#39;esposizione dell&#39;ambito dell&#39;attributo condizione **[!UICONTROL Cart Price Rule]** per **[!UICONTROL Category (Parent Only)]** e **[!UICONTROL Category (Children Only)]** durante il recupero o l&#39;aggiornamento delle regole tramite l&#39;API REST.
+1. **ACP2E-4808**: è stato risolto il problema che causava la visualizzazione di un solo valore numerico non elaborato nella sezione **[!UICONTROL Additional Information]** o **[!UICONTROL More Information]** senza l&#39;unità di misura configurata (libbre o kg) da parte dell&#39;attributo Weight della pagina di prodotto della vetrina.
 1. **ACP2E-4626**: è stato risolto il problema che causava la richiesta e l&#39;esecuzione di alcuni file JavaScript di Storefront due volte, causando caricamenti duplicati intermittenti e un comportamento instabile.
 1. **[ACP2E-4653](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)**: è stato risolto il problema che impediva l&#39;esposizione dell&#39;ambito dell&#39;attributo condizione prezzo carrello per **[!UICONTROL Category (Parent Only)]** e **[!UICONTROL Category (Children Only)]** durante il recupero o l&#39;aggiornamento delle regole tramite l&#39;API [!DNL REST].
 1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**: è stato risolto il problema che causava la visualizzazione di un solo valore numerico non elaborato nella sezione **[!UICONTROL Additional Information]** o **[!UICONTROL More Information]** senza l&#39;unità di misura configurata (libbre o kg) da parte dell&#39;attributo Weight della pagina di prodotto della vetrina.
