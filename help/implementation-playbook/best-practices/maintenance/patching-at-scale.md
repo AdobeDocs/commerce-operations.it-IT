@@ -7,7 +7,7 @@ badge: label="Intervento di Tony Evers, Sr. Technical Architect, Adobe" type="In
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
 source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -365,12 +365,12 @@ Come per Adobe Commerce sull&#39;infrastruttura cloud, questo articolo presuppon
 
 In questo modo è possibile gestire centralmente tutte le patch per tutte le installazioni e garantire al meglio la sicurezza e la stabilità degli store Adobe Commerce. Per controllare lo stato della patch, utilizzare i metodi seguenti:
 
-- [Progetti infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it#view-available-patches-and-status)
+- [Progetti di infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it#view-available-patches-and-status)
 - [Progetti on-premise](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Esempi di codice
 
 - [Patch centralizzate in Magento Open Source](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
-- [Patch centralizzate in Adobe Commerce sull&#39;infrastruttura cloud](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
-- [Plug-in del Compositore patch centralizzato](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
-- [Componente patch centralizzato](https://github.com/AntonEvers/centralized-patcher)
+- [Patch centralizzate in Adobe Commerce su infrastruttura cloud](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
+- [Plug-in Compositore patcher centralizzato](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
+- [Componente patcher centralizzato](https://github.com/AntonEvers/centralized-patcher)
