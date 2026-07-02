@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Utilizza questo elenco di controllo durante le conversazioni annuali e trimestra
 
 ▢ Monitorare il sito per individuare eventuali problemi: prestazioni, elaborazione degli ordini, analisi e altri.
 
-▢ Eseguire un&#39;analisi di sicurezza di Adobe Commerce [&#128279;](https://account.magento.com/scanner/dashboard/) o un&#39;altra analisi di terze parti ed esaminare potenziali vulnerabilità di sicurezza.
+▢ Eseguire un&#39;analisi di sicurezza di Adobe Commerce [](https://account.magento.com/scanner/dashboard/) o un&#39;altra analisi di terze parti ed esaminare potenziali vulnerabilità di sicurezza.
 
 ▢ Esegui una retrospettiva con tutte le parti interessate e documenta cosa è andato bene e cosa non è successo e come migliorare.
 
