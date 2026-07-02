@@ -2,9 +2,9 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: b5c22a88e9eb9c4e8122a853deee34a9521c263c
+source-git-commit: 82ff85d4d1e1f86d5640a9dcdaa565b01e928091
 workflow-type: tm+mt
-source-wordcount: '10303'
+source-wordcount: '10316'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: Salvataggio di un&#39;operazione di autorizzazione di pagamento con riferimento autonomo parent_id e attivazione di un loop/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4239: i filtri di data Admin Grid non restituiscono alcun risultato a causa di una mancata corrispondenza del fuso orario](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)
          - [ACP2E-4481: la vendibilità del prodotto del bundle non viene ricalcolata correttamente dopo l&#39;annullamento dell&#39;ordine](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)
          - [ACSD-53502: **[!UICONTROL Add to Cart]** non riesce a intermittenza in iOS [!DNL Safari] a causa della ricorsione dello script New Relic](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
          - [ACP2E-4813: metodi di spedizione USPS non disponibili o non corretti per ordini con più pacchetti](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)

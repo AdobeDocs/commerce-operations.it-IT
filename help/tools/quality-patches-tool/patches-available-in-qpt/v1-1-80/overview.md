@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: b5c22a88e9eb9c4e8122a853deee34a9521c263c
+source-git-commit: 82ff85d4d1e1f86d5640a9dcdaa565b01e928091
 workflow-type: tm+mt
-source-wordcount: 594
+source-wordcount: 593
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 
 QPT v1.1.80 include le seguenti patch:
 
-1. **ACP2E-4239**: è stato corretto il problema a causa del quale i filtri della griglia di amministrazione che utilizzano gli attributi di data restituiscono risultati non corretti a causa di differenze di fuso orario tra la data selezionata, i valori UTC archiviati e il fuso orario dell&#39;archivio configurato.
+1. **[ACP2E-4239](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)**: è stato risolto il problema che impediva ai filtri della griglia di amministrazione che utilizzano gli attributi di data di restituire risultati a causa di una mancata corrispondenza del fuso orario tra la data selezionata, i valori [!DNL UTC] memorizzati e il fuso orario dell&#39;archivio configurato.
 1. **[ACP2E-4481](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)**: è stato risolto il problema che causava il ricalcolo errato della vendita del prodotto bundle dopo l&#39;annullamento dell&#39;ordine.
 1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)**: è stato risolto il problema relativo alla creazione di un record di virgolette null nella tabella del database `quote` durante il flusso **[!UICONTROL Login as Customer]**.
 1. **[ACP2E-4488](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)**: è stato risolto il problema che rallenta il salvataggio o la modifica dei prodotti in Admin per i prodotti con set di attributi di grandi dimensioni.
