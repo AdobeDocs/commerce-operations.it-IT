@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
+source-git-commit: 15314bbcb5c2bdccf92901235f7d07e1770955d9
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1111'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Per i progetti Adobe Commerce on Cloud, consulta [Best practice per la configurazione del servizio Redis e Valkey](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) per le istruzioni sulla configurazione della cache. La cache Redis non è supportata per Adobe Commerce 2.4.9 o versioni di patch successive a 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 e attraverso le righe di rilascio 2.4.8-p5. Utilizza Valkey per la configurazione della cache quando Redis non è supportato. Consulta [Requisiti di sistema](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/system-requirements) per i servizi di cache supportati per versione.
+>Per i progetti Adobe Commerce on Cloud, consulta [Best practice per la configurazione del servizio Redis e Valkey](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) per le istruzioni sulla configurazione della cache. La cache Redis non è supportata per Adobe Commerce 2.4.9 o versioni di patch successive a 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 e 2.4.8-p5. Utilizza Valkey per la configurazione della cache quando Redis non è supportato. Consulta [Requisiti di sistema](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/system-requirements) per i servizi di cache supportati per versione.
 
 ## Nota di configurazione di Commerce on Cloud Varnish con riferimento {#varnish-config-cloud}
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >Adobe fornisce supporto solo per le distribuzioni che eseguono versioni supportate di tutte le dipendenze e i servizi. Questo vale per:
 >
->* **Servizi Platform** (inclusi ma non limitati a PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ e Nginx): i commercianti devono utilizzare versioni compatibili con la versione Adobe Commerce implementata. Consulta [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
+>* **Servizi Platform** (inclusi ma non limitati a PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ e Nginx): i commercianti devono utilizzare versioni compatibili con la versione Adobe Commerce implementata. Consulta [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=it).
 >* **Estensioni dei servizi Commerce** (inclusi ma non limitati a Live Search, Product Recommendations e Payment Services): è supportata solo l&#39;ultima versione rilasciata.
 >* **Estensioni personalizzate e integrazioni di terze parti**: gli esercenti sono responsabili di garantire che rimangano nelle versioni supportate dal fornitore.
 >
