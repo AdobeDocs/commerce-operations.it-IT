@@ -5,21 +5,14 @@ feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
 autotag-review: '2026-06-22T20:28:12.484Z'
 TQID: 'https://experienceleague.adobe.com/oDoZ1o2IWXsDTo84XQygWZYVmfVHWbk-CuqaU47laU4'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 589
+source-wordcount: 593
 ht-degree: 0%
 
 ---
@@ -32,7 +25,7 @@ Questa guida spiega come funziona ogni livello di caching e mostra come configur
 
 ## Memorizzazione in cache dei front-end
 
-Un front-end della cache è un’interfaccia tra Commerce e il back-end di archiviazione della cache. È possibile definire più front-end, ciascuno con impostazioni di back-end diverse, quindi assegnare tipi di [cache](../cli/manage-cache.md#clean-and-flush-cache-types) specifici a ogni front-end.  Per informazioni dettagliate sulla configurazione, vedere [Configurare i front-end della cache](cache-types.md).
+Un front-end della cache è un’interfaccia tra Commerce e il back-end di archiviazione della cache. È possibile definire più front-end, ciascuno con impostazioni di back-end diverse, quindi assegnare tipi di [cache](../cli/manage-cache.md#clean-and-flush-cache-types) specifici a ogni front-end. Per informazioni sulla configurazione, vedere [Configurare i tipi e i front-end della cache](cache-types.md).
 
 ## Memorizzazione in cache dei backend
 
@@ -40,7 +33,7 @@ Il back-end della cache è il meccanismo di archiviazione sottostante per i dati
 
 ## Memorizzazione in cache di tutta la pagina con vernice
 
-[La cache di vernice](config-varnish.md) è un acceleratore HTTP che memorizza nella cache pagine intere. Per gli ambienti di produzione on-premise, Adobe consiglia vivamente Varnish perché è molto più veloce della cache integrata a pagina intera. In ambienti Commerce on Cloud viene utilizzato [Fastly](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/cdn/fastly) per il caching a pagina intera anziché Vernice.
+[La cache di vernice](config-varnish.md) è un acceleratore HTTP che memorizza nella cache pagine intere. Per gli ambienti di produzione on-premise, Adobe consiglia vivamente Varnish perché è molto più veloce della cache integrata a pagina intera. In ambienti Commerce on Cloud viene utilizzato [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) per il caching a pagina intera anziché Vernice.
 
 >[!NOTE]
 >
@@ -74,7 +67,7 @@ Per il mapping front-end-to-type e la sintassi di configurazione della cache:
 
 Per maggiori dettagli, consulta:
 
-- [Configurare i front-end della cache](cache-types.md) - Associare un front-end della cache a tipi di cache specifici
+- [Configurare tipi e front-end della cache](cache-types.md) - Associare un front-end della cache a tipi di cache specifici
 - [Opzioni back-end cache](cache-options.md)—Riferimento opzione back-end
 
 **Adobe Commerce su Cloud**—Configura il caching con `CACHE_CONFIGURATION` in `.magento.env.yaml`. Consulta [Best practice per la configurazione del servizio Redis e Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).
