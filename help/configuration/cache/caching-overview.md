@@ -40,7 +40,7 @@ Il back-end della cache è il meccanismo di archiviazione sottostante per i dati
 
 ## Memorizzazione in cache di tutta la pagina con vernice
 
-[La cache di vernice](config-varnish.md) è un acceleratore HTTP che memorizza nella cache pagine intere. Per gli ambienti di produzione on-premise, Adobe consiglia vivamente Varnish perché è molto più veloce della cache integrata a pagina intera. In ambienti Commerce on Cloud viene utilizzato [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) per il caching a pagina intera anziché Vernice.
+[La cache di vernice](config-varnish.md) è un acceleratore HTTP che memorizza nella cache pagine intere. Per gli ambienti di produzione on-premise, Adobe consiglia vivamente Varnish perché è molto più veloce della cache integrata a pagina intera. In ambienti Commerce on Cloud viene utilizzato [Fastly](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/cdn/fastly) per il caching a pagina intera anziché Vernice.
 
 >[!NOTE]
 >
