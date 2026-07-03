@@ -21,9 +21,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 1485
+source-wordcount: 1261
 ht-degree: 0%
 
 ---
@@ -42,29 +42,13 @@ Commerce fornisce opzioni della riga di comando per configurare la pagina Redis 
 >
 >Per le istanze Commerce in hosting su EC2, puoi utilizzare AWS ElastiCache invece di un’istanza Redis locale. Consulta [Configurare Elasticache per le istanze EC2](redis-elasticache-for-ec2.md).
 
-## Framework supportati
+## Implementazioni della cache Redis
 
->[!BEGINTABS]
+Adobe Commerce ha utilizzato le seguenti implementazioni di back-end della cache Redis:
 
->[!TAB Cache Zend (2.4.8 e versioni precedenti)]
-
-- **Cache Zend (2.4.8 e versioni precedenti)** — Backend Redis legacy per Commerce 2.4.8 e versioni precedenti:
-   - **Back-end Redis legacy** - Utilizza il percorso completo della classe (`Magento\Framework\Cache\Backend\Redis`)
-   - **Chiavi di precaricamento** - Supporta il precaricamento delle chiavi della cache utilizzate di frequente
-   - **Script Lua** — Lua per la raccolta di oggetti inattivi
-   - **Compressione** - Supporta la compressione dei dati
-
->[!TAB Cache Symfony (2.4.9+)]
-
-- **Cache Symfony (2.4.9+)** — A partire da Commerce 2.4.9, la cache Symfony fornisce un&#39;implementazione di memorizzazione nella cache moderna e conforme a PSR-6 per Redis con miglioramenti significativi delle prestazioni:
-   - **Pipeline Redis automatica**: consente di eseguire più operazioni in batch in singole richieste, riducendo la latenza
-   - **TagAwareAdapter** PSR-6: invalidazione efficiente della cache basata su tag con operazioni atomiche
-   - **Serializzazione ignorata**: la serializzazione binaria riduce la dimensione della voce della cache del 45% e migliora la velocità del 5-10%
-   - **Connessioni permanenti migliorate** — Pool di connessioni più stabili con una migliore gestione dei processi fork
-   - **Script Lua ottimizzati** — Esecuzione lato server combinata con pipeline per la massima efficienza
-
->[!ENDTABS]
-
+- **Back-end Redis legacy** (`Cm_Cache_Backend_Redis`) - Implementazione obsoleta utilizzata in configurazioni Redis precedenti.
+- **Redis backend** (`Magento\Framework\Cache\Backend\Redis`) - Backend utilizzato dalla configurazione della riga di comando in questo argomento per la cache predefinita e delle pagine.
+- **Back-end cache L2** (`Magento\Framework\Cache\Backend\RemoteSynchronizedCache`) - Implementazione della cache a due livelli che utilizza Redis come back-end remoto e archiviazione della cache dei file locale per sincronizzare i dati della cache tra nodi. Vedi [Configurazione della cache a due livelli](level-two-cache.md).
 
 ## Configurare il caching predefinito di Redis
 
@@ -74,18 +58,20 @@ Eseguire il comando `setup:config:set` e specificare parametri specifici per il 
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parameter>=<value>...
 ```
 
-Con i seguenti parametri:
+I parametri comuni includono:
 
 - `--cache-backend=redis` abilita il caching predefinito di Redis. Se questa funzione è già stata abilitata, ometti questo parametro.
 
 - `--cache-backend-redis-<parameter>=<value>` è un elenco di coppie chiave-valore che configurano il caching predefinito:
 
 | Parametro della riga di comando | Valore | Significato | Valore predefinito |
-| ------------------------------ | --------- | ------- | ------------- |
+| --- | --- | --- | --- |
 | `cache-backend-redis-server` | server | Nome host completo, indirizzo IP o percorso assoluto di un socket UNIX. Il valore predefinito 127.0.0.1 indica che Redis è installato nel server Commerce. | `127.0.0.1` |
 | `cache-backend-redis-port` | porta | Porta di ascolto del server Redis | `6379` |
 | `cache-backend-redis-db` | database | Obbligatorio se si utilizza Redis sia per la cache predefinita che per quella a pagina intera. Specificare il numero di database di una delle cache; l&#39;altra cache utilizza 0 per impostazione predefinita.<br><br>**Importante**: se si utilizza Redis per più di un tipo di memorizzazione nella cache, i numeri di database devono essere diversi. È consigliabile assegnare il numero predefinito del database di memorizzazione nella cache a 0, il numero del database di memorizzazione nella cache delle pagine a 1 e il numero del database di memorizzazione nella sessione a 2. | `0` |
 | `cache-backend-redis-password` | password | La configurazione di una password Redis abilita una delle funzionalità di protezione incorporate: il comando `auth`, che richiede l&#39;autenticazione dei client per accedere al database. La password è configurata direttamente nel file di configurazione di Redis: `/etc/redis/redis.conf` | |
+| `cache-backend-redis-compress-data` | compress_data | Impostare su `0` per disabilitare la compressione. | `1` |
+| `cache-backend-redis-compression-lib` | compression_lib | Libreria di compressione da utilizzare. I valori supportati sono `snappy`, `lzf`, `l4z`, `zstd` e `gzip`. Lascia vuoto per determinare automaticamente. | |
 | `cache-backend-redis-use-lua` | use_lua | Attiva o disattiva gli script Lua per tutte le operazioni Redis. <br><br>**Impostazione predefinita: mantieni alle `0`.** La modalità Lua è disabilitata per impostazione predefinita per evitare regressioni delle prestazioni note e problemi di perdita della cache di GraphQL introdotti dalla libreria Redis in bundle (1.17.x) quando Lua è stato abilitato. | `0` |
 | `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Abilitare o disabilitare gli script Lua per la raccolta di oggetti inattivi (il processo cron `backend_clean_cache`). <br><br>**Impostazione predefinita: mantieni alle `1`.** Abilitato intenzionalmente per garantire la pulizia del set di tag atomici durante la GC. Senza di esso, può verificarsi una situazione di tipo &quot;race condition&quot; quando il cron `backend_clean_cache` viene eseguito contemporaneamente a un&#39;operazione di salvataggio della cache, lasciando le voci della cache senza un record corrispondente nell&#39;indice dei tag della cache. Questo causa un errore improvviso di invalidazione basata su tag: ad esempio, l’aggiornamento del prezzo di un prodotto potrebbe non invalidare la cache del prodotto, richiedendo invece uno scaricamento completo della cache. | `1` |
 
@@ -116,18 +102,20 @@ Per configurare il caching delle pagine Redis in Commerce, eseguire il comando `
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
 ```
 
-Con i seguenti parametri:
+I parametri comuni includono:
 
 - `--page-cache=redis` abilita il caching delle pagine Redis. Se questa funzione è già stata abilitata, ometti questo parametro.
 
 - `--page-cache-redis-<parameter>=<value>` è un elenco di coppie chiave-valore che configurano il caching delle pagine:
 
 | Parametro della riga di comando | Valore | Significato | Valore predefinito |
-| ------------------------------ | --------- | ------- | ------------- |
+| --- | --- | --- | --- |
 | `page-cache-redis-server` | server | Nome host completo, indirizzo IP o percorso assoluto di un socket UNIX. Il valore predefinito 127.0.0.1 indica che Redis è installato nel server Commerce. | `127.0.0.1` |
 | `page-cache-redis-port` | porta | Porta di ascolto del server Redis | `6379` |
 | `page-cache-redis-db` | database | Obbligatorio se si utilizza Redis sia per la cache predefinita che per quella a pagina intera. Specificare il numero di database di una delle cache; l&#39;altra cache utilizza 0 per impostazione predefinita.<br/>**Importante**: se si utilizza Redis per più di un tipo di memorizzazione nella cache, i numeri di database devono essere diversi. È consigliabile assegnare il numero predefinito del database di memorizzazione nella cache a 0, il numero del database di memorizzazione nella cache delle pagine a 1 e il numero del database di memorizzazione nella sessione a 2. | `0` |
 | `page-cache-redis-password` | password | La configurazione di una password Redis abilita una delle funzionalità di protezione incorporate: il comando `auth`, che richiede l&#39;autenticazione dei client per accedere al database. Configurare la password nel file di configurazione Redis: `/etc/redis/redis.conf` | |
+| `page-cache-redis-compress-data` | compress_data | Impostare su `1` per comprimere la cache di pagina intera. Utilizza `0` per disabilitare la compressione. | `0` |
+| `page-cache-redis-compression-lib` | compression_lib | Libreria di compressione da utilizzare. I valori supportati sono `snappy`, `lzf`, `l4z`, `zstd` e `gzip`. Lascia vuoto per determinare automaticamente. | |
 
 L&#39;esempio che segue abilita il caching delle pagine Redis, imposta l&#39;host su `127.0.0.1` e assegna il numero di database a `1`. Tutti gli altri parametri vengono impostati sul valore predefinito.
 
@@ -141,10 +129,6 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.
 
 L&#39;esecuzione dei comandi per configurare Redis caching aggiorna la configurazione dell&#39;ambiente Commerce (`<Commerce-install-dir>app/etc/env.php`):
 
->[!BEGINTABS]
-
->[!TAB Cache Zend (2.4.8 e versioni precedenti)]
-
 ```php
 'cache' => [
     'frontend' => [
@@ -168,38 +152,6 @@ L&#39;esecuzione dei comandi per configurare Redis caching aggiorna la configura
     ]
 ],
 ```
-
->[!TAB Cache Symfony (2.4.9+)]
-
-```php
-'cache' => [
-    'frontend' => [
-        'default' => [
-            'backend' => 'redis',
-            'backend_options' => [
-                'server' => '127.0.0.1',
-                'database' => '0',
-                'port' => '6379'
-            ],
-        ],
-        'page_cache' => [
-            'backend' => 'redis',
-            'backend_options' => [
-                'server' => '127.0.0.1',
-                'port' => '6379',
-                'database' => '1',
-                'compress_data' => '0'
-            ]
-        ]
-    ]
-],
-```
-
->[!NOTE]
->
->A partire da Commerce 2.4.9, utilizza il tipo di back-end semplificato `'backend' => 'redis'` invece del percorso completo della classe. La cache di Symfony viene utilizzata automaticamente quando si specifica il nome semplificato.
-
->[!ENDTABS]
 
 ## Configurare opzioni di caching aggiuntive
 
@@ -209,10 +161,6 @@ Poiché Commerce memorizza i dati di configurazione nella cache Redis, puoi prec
 
 Redis utilizza `pipeline` per comporre le richieste di caricamento. Le chiavi devono includere il prefisso del database; ad esempio, se il prefisso del database è `061_`, la chiave di precaricamento sarà simile alla seguente: `061_SYSTEM_DEFAULT`
 
->[!BEGINTABS]
-
->[!TAB Cache Zend]
-
 ```php
 'cache' => [
     'frontend' => [
@@ -240,38 +188,6 @@ Redis utilizza `pipeline` per comporre le richieste di caricamento. Le chiavi de
     ]
 ]
 ```
-
->[!TAB Cache Symfony]
-
-```php
-'cache' => [
-    'frontend' => [
-        'default' => [
-            'id_prefix' => '061_',
-            'backend' => 'redis',
-            'backend_options' => [
-                'server' => 'redis',
-                'database' => '0',
-                'port' => '6379',
-                'password' => '',
-                'compress_data' => '1',
-                'compression_lib' => '',
-                'preload_keys' => [
-                    '061_EAV_ENTITY_TYPES',
-                    '061_GLOBAL_PLUGIN_LIST',
-                    '061_DB_IS_UP_TO_DATE',
-                    '061_SYSTEM_DEFAULT',
-                ],
-            ]
-        ],
-        'page_cache' => [
-            'id_prefix' => '061_'
-        ]
-    ]
-]
-```
-
->[!ENDTABS]
 
 Quando si utilizza la funzione di precaricamento con una cache L2, è necessario aggiungere il suffisso `:hash` alle chiavi. La cache L2 trasferisce solo l’hash dei dati, non i dati effettivi.
 
@@ -296,10 +212,6 @@ bin/magento setup:config:set --allow-parallel-generation
 
 Poiché è un flag, non è possibile disattivarlo con un comando. Impostare manualmente il valore di configurazione su `false`:
 
->[!BEGINTABS]
-
->[!TAB Cache Zend]
-
 ```php
     'cache' => [
         'frontend' => [
@@ -323,92 +235,13 @@ Poiché è un flag, non è possibile disattivarlo con un comando. Impostare manu
     ],
 ```
 
->[!TAB Cache Symfony]
+### Estensione PHP Redis
 
-```php
-    'cache' => [
-        'frontend' => [
-            'default' => [
-                'id_prefix' => 'b0b_',
-                'backend' => 'redis',
-                'backend_options' => [
-                    'server' => 'redis',
-                    'database' => '0',
-                    'port' => '6379',
-                    'serializer' => 'igbinary',
-                    'compress_data' => '1',
-                    'compression_lib' => 'gzip'
-                ]
-            ],
-            'page_cache' => [
-                'id_prefix' => 'b0b_'
-            ]
-        ],
-        'allow_parallel_generation' => false
-    ],
-```
+Utilizzare l&#39;estensione PHP Redis nativa (`phpredis`) quando supportata dall&#39;ambiente:
 
->[!ENDTABS]
+#### Usa apt
 
-
-## Ottimizzazione delle prestazioni della cache di Symfony
-
-Se si utilizza Symfony Cache, è possibile ottimizzare ulteriormente le prestazioni configurando il serializzatore Igbinary, installando l&#39;estensione PHP e phpredis e abilitando connessioni persistenti.
-
-### Serializzatore igbinario
-
-Il serializzatore Igbinary migliora notevolmente le prestazioni rispetto alla serializzazione predefinita di PHP. Deve essere configurato manualmente in `app/etc/env.php`:
-
-```php
-'cache' => [
-    'frontend' => [
-        'default' => [
-            'backend_options' => [
-                'server' => 'redis',
-                'database' => '0',
-                'port' => '6379',
-                'serializer' => 'igbinary',  // Enable Igbinary serialization
-            ]
-        ],
-        'page_cache' => [
-            'backend_options' => [
-                'server' => 'redis',
-                'database' => '1',
-                'port' => '6379',
-                'serializer' => 'igbinary',  // Enable Igbinary for page cache too
-            ]
-        ]
-    ]
-]
-```
-
-### Installare l&#39;estensione PHP Igbinary
-
-Per utilizzare la serializzazione binaria, è necessario installare l&#39;estensione PHP Igbinary.
-
-**Utilizzo di apt (consigliato per Debian/Ubuntu)**:
-
-```bash
-sudo apt-get install php-igbinary
-sudo systemctl restart php-fpm
-php -m | grep igbinary
-```
-
-**Utilizzo di pecl (metodo alternativo)**:
-
-```bash
-sudo pecl install igbinary
-echo "extension=igbinary.so" | sudo tee /etc/php/8.3/mods-available/igbinary.ini
-sudo phpenmod igbinary
-sudo systemctl restart php-fpm
-php -m | grep igbinary
-```
-
-### Estensioni PHP Redis: phpredis vs predis
-
-Commerce 2.4.9+ include il fallback automatico tra phpredis (estensione C nativa) e Predis (libreria PHP pura). Per ottenere prestazioni ottimali, installare phpredis:
-
-**Utilizzo di apt (consigliato per Debian/Ubuntu)**:
+Per Debian o Ubuntu, usa `apt`:
 
 ```bash
 sudo apt-get install php-redis
@@ -416,106 +249,16 @@ sudo systemctl restart php-fpm
 php -m | grep redis
 ```
 
-**Utilizzo di pecl (metodo alternativo)**:
+#### Usa pecl
+
+In alternativa, utilizzare `pecl`:
 
 ```bash
 sudo pecl install redis
-echo "extension=redis.so" | sudo tee /etc/php/8.3/mods-available/redis.ini
+echo "extension=redis.so" | sudo tee /etc/php/<version>/mods-available/redis.ini
 sudo phpenmod redis
 sudo systemctl restart php-fpm
 php -m | grep redis
-```
-
-**Confronto delle prestazioni**:
-
-| Operazione | Predis | phpredis | Miglioramento |
-|-----------|--------|----------|-------------|
-| Cache GET | 1-5 ms | 0,5-2 ms | 2-3 volte più veloce |
-| Cache SET | 2-6 ms | 0,8-2,5 ms | 2-3 volte più veloce |
-| Operazioni sui tag | 10-30 ms | 3-10 ms | 3-4 volte più veloce |
-
-### Connessioni persistenti
-
-Le connessioni persistenti riutilizzano le connessioni Redis esistenti tra le richieste, fornendo operazioni della cache più veloci del 5-15%. Configura in `app/etc/env.php`:
-
-```php
-'cache' => [
-    'frontend' => [
-        'default' => [
-            'backend_options' => [
-                'server' => 'redis',
-                'database' => '0',
-                'port' => '6379',
-                'persistent' => '1',
-                'persistent_id' => 'cache_default',
-                'timeout' => '2.5',
-                'read_timeout' => '2.0',
-            ]
-        ],
-        'page_cache' => [
-            'backend_options' => [
-                'server' => 'redis',
-                'database' => '1',
-                'port' => '6379',
-                'persistent' => '1',
-                'persistent_id' => 'cache_fpc',
-            ]
-        ]
-    ]
-]
-```
-
->[!IMPORTANT]
->
->Utilizzare un `persistent_id` univoco per ogni tipo di cache per evitare conflitti di connessione.
-
-### Configurazione ottimizzata completa
-
-Ecco una configurazione di Symfony pronta per la produzione che combina tutte le ottimizzazioni delle prestazioni:
-
-```php
-'cache' => [
-    'frontend' => [
-        'default' => [
-            'id_prefix' => 'b0b_',
-            'backend' => 'redis',
-            'backend_options' => [
-                'server' => 'redis',
-                'database' => '0',
-                'port' => '6379',
-                'serializer' => 'igbinary',
-                'compress_data' => '1',
-                'compression_lib' => 'gzip',
-                'persistent' => '1',
-                'persistent_id' => 'cache_default',
-                'timeout' => '2.5',
-                'read_timeout' => '2.0',
-                'use_lua' => '1',
-                'use_lua_on_gc' => '1',
-                'preload_keys' => [
-                    'b0b_EAV_ENTITY_TYPES',
-                    'b0b_GLOBAL_PLUGIN_LIST',
-                    'b0b_DB_IS_UP_TO_DATE',
-                    'b0b_SYSTEM_DEFAULT',
-                ],
-            ]
-        ],
-        'page_cache' => [
-            'id_prefix' => 'b0b_',
-            'backend' => 'redis',
-            'backend_options' => [
-                'server' => 'redis',
-                'database' => '1',
-                'port' => '6379',
-                'serializer' => 'igbinary',
-                'compress_data' => '0',
-                'persistent' => '1',
-                'persistent_id' => 'cache_fpc',
-            ]
-        ]
-    ],
-    'allow_parallel_generation' => false
-]
 ```
 
 ## Verificare la connessione Redis

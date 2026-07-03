@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 589
+source-wordcount: 593
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Questa guida spiega come funziona ogni livello di caching e mostra come configur
 
 ## Memorizzazione in cache dei front-end
 
-Un front-end della cache è un’interfaccia tra Commerce e il back-end di archiviazione della cache. È possibile definire più front-end, ciascuno con impostazioni di back-end diverse, quindi assegnare tipi di [cache](../cli/manage-cache.md#clean-and-flush-cache-types) specifici a ogni front-end.  Per informazioni dettagliate sulla configurazione, vedere [Configurare i front-end della cache](cache-types.md).
+Un front-end della cache è un’interfaccia tra Commerce e il back-end di archiviazione della cache. È possibile definire più front-end, ciascuno con impostazioni di back-end diverse, quindi assegnare tipi di [cache](../cli/manage-cache.md#clean-and-flush-cache-types) specifici a ogni front-end. Per informazioni sulla configurazione, vedere [Configurare i tipi e i front-end della cache](cache-types.md).
 
 ## Memorizzazione in cache dei backend
 
@@ -74,7 +74,7 @@ Per il mapping front-end-to-type e la sintassi di configurazione della cache:
 
 Per maggiori dettagli, consulta:
 
-- [Configurare i front-end della cache](cache-types.md) - Associare un front-end della cache a tipi di cache specifici
+- [Configurare tipi e front-end della cache](cache-types.md) - Associare un front-end della cache a tipi di cache specifici
 - [Opzioni back-end cache](cache-options.md)—Riferimento opzione back-end
 
 **Adobe Commerce su Cloud**—Configura il caching con `CACHE_CONFIGURATION` in `.magento.env.yaml`. Consulta [Best practice per la configurazione del servizio Redis e Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).

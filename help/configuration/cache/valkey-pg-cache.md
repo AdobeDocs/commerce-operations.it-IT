@@ -21,9 +21,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 1281
+source-wordcount: 1315
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ ht-degree: 0%
 # Configura Valkey per cache predefinita e di pagina
 
 Commerce fornisce opzioni della riga di comando per configurare l’impostazione predefinita di Valkey e il caching delle pagine. Sebbene sia possibile configurare il caching modificando il file `<Commerce-install-dir>app/etc/env.php`, l&#39;utilizzo della riga di comando è il metodo consigliato, in particolare per le configurazioni iniziali. La riga di comando fornisce la convalida, garantendo che la configurazione sia sintatticamente corretta.
+
+>[!IMPORTANT]
+>
+>Valkey è richiesto per la configurazione della cache per Adobe Commerce 2.4.9 e le versioni delle patch successive a 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 e 2.4.8-p4. Consulta [Requisiti di sistema](../../installation/system-requirements.md) per i servizi di cache supportati per versione.
 
 {{cloud-cache-config}}
 

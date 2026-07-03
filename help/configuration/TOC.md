@@ -2,10 +2,10 @@
 user-guide-title: Guida alla configurazione
 user-guide-description: Configura le funzioni e i servizi dell’applicazione Adobe Commerce.
 feature: Configuration
-source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 1%
+source-wordcount: '401'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 1%
       + [Utilizzo delle variabili di ambiente](deployment/example-environment-variables.md)
 + Cache {#cache}
    + [Panoramica sulla memorizzazione in cache](cache/caching-overview.md)
-   + [Configurare i front-end della cache](cache/cache-types.md)
+   + [Configurare tipi e front-end della cache](cache/cache-types.md)
    + [Opzioni di back-end della cache](cache/cache-options.md)
    + [Configurazione cache L2](cache/level-two-cache.md)
    + Redis {#redis}
