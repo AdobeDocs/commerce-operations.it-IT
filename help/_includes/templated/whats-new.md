@@ -23,7 +23,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615: i rimborsi degli ordini online PayPal non riescono e viene visualizzato l'errore "Il gateway PayPal rifiuta la richiesta. Errore interno."</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615: i rimborsi degli ordini online PayPal non riescono e viene visualizzato l'errore "Il gateway PayPal rifiuta la richiesta. Errore interno."</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -47,7 +47,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55fad95c3110f8150097f410115d89299b9e681b">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813: metodi di spedizione USPS non disponibili o non corretti per ordini con più pacchetti</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813: metodi di spedizione USPS non disponibili o non corretti per ordini con più pacchetti</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -55,7 +55,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/94b45f953d8a91814fa7359369f976e0cbd94a36">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610: esecuzione lenta del cron sales_clean_quotes</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610: esecuzione lenta del cron sales_clean_quotes</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
