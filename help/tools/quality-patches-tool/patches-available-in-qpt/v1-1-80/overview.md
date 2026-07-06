@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 82ff85d4d1e1f86d5640a9dcdaa565b01e928091
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
 workflow-type: tm+mt
 source-wordcount: 593
 ht-degree: 0%
@@ -27,11 +22,11 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 
 QPT v1.1.80 include le seguenti patch:
 
+1. **[ACP2E-4493](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493.md)**: è stato risolto il problema che causava la visualizzazione di uno stato dell&#39;ordine errato nella griglia di Archivio ordini di vendita quando l&#39;indicizzazione asincrona era abilitata.
 1. **[ACP2E-4239](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)**: è stato risolto il problema che impediva ai filtri della griglia di amministrazione che utilizzano gli attributi di data di restituire risultati a causa di una mancata corrispondenza del fuso orario tra la data selezionata, i valori [!DNL UTC] memorizzati e il fuso orario dell&#39;archivio configurato.
 1. **[ACP2E-4481](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)**: è stato risolto il problema che causava il ricalcolo errato della vendita del prodotto bundle dopo l&#39;annullamento dell&#39;ordine.
 1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)**: è stato risolto il problema relativo alla creazione di un record di virgolette null nella tabella del database `quote` durante il flusso **[!UICONTROL Login as Customer]**.
 1. **[ACP2E-4488](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)**: è stato risolto il problema che rallenta il salvataggio o la modifica dei prodotti in Admin per i prodotti con set di attributi di grandi dimensioni.
-1. **ACP2E-4493**: è stato risolto il problema che causava la visualizzazione di uno stato dell&#39;ordine errato nella griglia di Archivio ordini di vendita quando l&#39;indicizzazione asincrona era abilitata.
 1. **ACP2E-4496**: è stato risolto il problema che causava il deterioramento delle prestazioni durante l&#39;esecuzione del processo cron di Analytics, con conseguente miglioramento delle prestazioni complessive del sistema.
 1. **ACP2E-4533**: è stato risolto il problema che impediva il caricamento delle immagini segnaposto in Storefront quando nell&#39;URL è incluso un codice store.
 1. **ACP2E-4552**: è stato risolto il problema che impediva la restituzione dello stato della società nella risposta di GraphQL.
