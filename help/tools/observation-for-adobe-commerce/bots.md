@@ -5,7 +5,7 @@ exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: '1951'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Questa scheda contiene informazioni che spiegano come identificare se e cosa [!D
 
 ## Panoramica di alto livello di [!DNL bots]:
 
-* [!DNL bot] è un componente software che esegue attività automatizzate ripetitive. Con l&#39;evoluzione dell&#39;intelligenza artificiale e dell&#39;apprendimento automatico, le attività, i metodi e le interazioni di [!DNL bots] stanno cambiando. Ci sono *buoni* [!DNL bots] che offrono vantaggi ai siti eseguendo la ricerca per indicizzazione e aggiungendoli ai motori di ricerca Internet. In questo modo gli utenti di Internet vengono guidati al sito attraverso i risultati dei motori di ricerca. Un *buono* [!DNL bot] rispetta in genere i limiti inseriti in [!DNL bot] da un file `robots.txt` o le impostazioni in una console del motore di ricerca. I limiti possono limitare l&#39;accesso al sito o a parti del sito.
+* [!DNL bot] è un componente software che esegue attività automatizzate ripetitive. Con l&#39;evoluzione dell&#39;intelligenza artificiale e dell&#39;apprendimento automatico, le attività, i metodi e le interazioni di [!DNL bots] stanno cambiando. Ci sono *buoni* [!DNL bots] che favoriscono i siti scansionando e aggiungendo i siti ai motori di ricerca Internet. In questo modo gli utenti di Internet vengono guidati al sito attraverso i risultati dei motori di ricerca. Un *buono* [!DNL bot] rispetta in genere i limiti inseriti in [!DNL bot] da un file `robots.txt` o le impostazioni in una console del motore di ricerca. I limiti possono limitare l&#39;accesso al sito o a parti del sito.
 * [!DNL bots] dannoso ignora il file `robots.txt` o potrebbe contraffare un [!DNL bot] valido tramite il campo dell&#39;agente utente della richiesta dei dati della richiesta HTTP. Alcune operazioni che possono essere eseguite da [!DNL bots]:
    * Aggiungi il carico a un sito per negare l’accesso al sito agli utenti legittimi.
    * Eliminare e riutilizzare i contenuti senza autorizzazione.
