@@ -68,7 +68,7 @@ Se si verifica un picco di errori sugli indirizzi IP durante l’instabilità o 
 
 ## [!UICONTROL Table - IPs that do not identify as bots]
 
-![Tabella - IP che non si identificano come bot con errori di stato HTTP durante il periodo di tempo selezionato Come bloccare il traffico da bot a livello Fastly O gestire i bot tramite il file robots.txt Best practice per i robot Adobe Commerce.txt ](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
+![Tabella - IP che non si identificano come bot con errori di stato HTTP durante il periodo di tempo selezionato Come bloccare il traffico da bot a livello Fastly O gestire i bot tramite il file robots.txt Best practice per i robot Adobe Commerce.txt &#x200B;](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
 
 La tabella **[!UICONTROL Table - IPs that do not identify as bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** mostrerà le richieste IP con codici di stato http diversi da 200 che NON si autoidentificano come [!DNL bots] nel campo dell&#39;agente utente della richiesta. Questi indirizzi IP potrebbero essere indirizzi IP dannosi, soprattutto se il conteggio è elevato per il periodo di tempo selezionato.
 
@@ -82,7 +82,7 @@ Quando gli indirizzi IP generano una frequenza elevata di errori, chiedi cosa st
 
 ## [!UICONTROL Show 5XX status distribution]
 
-![Mostra distribuzione dello stato 5XX tra gli indirizzi IP (primi 200 indirizzi) Come bloccare il traffico da bot a livello Fastly O gestire i bot tramite il file robots.txt Best practice per i robot Adobe Commerce.txt ](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
+![Mostra distribuzione dello stato 5XX tra gli indirizzi IP (primi 200 indirizzi) Come bloccare il traffico da bot a livello Fastly O gestire i bot tramite il file robots.txt Best practice per i robot Adobe Commerce.txt &#x200B;](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
 
 Il frame **[!UICONTROL Show 5XX status distribution across IP addresses (top 200 addresses) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** è potente. Mostra gli indirizzi IP che hanno codici di stato http 5XX durante il periodo di tempo selezionato. Se un indirizzo IP effettua un elevato volume di richieste e il sito è interessato al punto tale da non essere in grado di gestire il traffico, gli indirizzi IP che effettuano la frequenza più elevata di richieste avranno in genere il maggior volume di errori. I codici di stato http 5XX indicano in genere un sito che ha difficoltà a rispondere alle richieste.
 
@@ -138,7 +138,7 @@ Il frame **[!UICONTROL Blocked Bot name / IP addresses (in Fastly) during select
 
 ## [!UICONTROL Blocked non-Bot name / IP addresses (in Fastly)]
 
-![Nome non-bot/indirizzi IP bloccati (in Fastly) durante il periodo di tempo selezionato. Questo grafico visualizza il traffico non-bot e gli IP che hanno restituito il codice di stato HTTP 403 non consentito ](../../assets/tools/observation-for-adobe-commerce/blocked-non-bot-name-ip-addresses.png)
+![Nome non-bot/indirizzi IP bloccati (in Fastly) durante il periodo di tempo selezionato. Questo grafico visualizza il traffico non-bot e gli IP che hanno restituito il codice di stato HTTP 403 non consentito &#x200B;](../../assets/tools/observation-for-adobe-commerce/blocked-non-bot-name-ip-addresses.png)
 
 Il frame **[!UICONTROL Blocked non-Bot name / IP addresses (in Fastly) during selected time period graph displays non-bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]** mostra gli indirizzi IP che non si identificano come [!DNL bot] che sono stati bloccati tramite [!DNL Fastly].
 
