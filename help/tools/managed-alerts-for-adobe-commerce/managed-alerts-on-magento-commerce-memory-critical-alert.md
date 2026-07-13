@@ -6,7 +6,7 @@ role: Admin
 exl-id: 90047f6e-d90a-4980-9700-84c44f2b8494
 source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1149'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Per identificare e risolvere la causa, seguire la procedura riportata di seguito
 
 1. Utilizzare la pagina Infrastruttura di [[!DNL New Relic] APM](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/) per identificare i principali processi che richiedono molta memoria. Per i passaggi, fare riferimento alla pagina [[!DNL New Relic] Host di monitoraggio dell&#39;infrastruttura: scheda Processi](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes):
    * Se servizi come [!DNL Redis], MySQL o PHP sono le origini principali del consumo di memoria, provare a eseguire le operazioni seguenti:
-1. Verifica di disporre delle versioni più recenti. Le versioni più recenti possono a volte correggere le perdite di memoria. Se non utilizzi la versione più recente, puoi procedere con l’aggiornamento. Per i passaggi, consulta [Change Services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=it) nella Guida di Commerce su Cloud.
+1. Verifica di utilizzare le versioni più recenti. Le versioni più recenti possono a volte correggere le perdite di memoria. Se non utilizzi la versione più recente, puoi procedere con l’aggiornamento. Per i passaggi, consulta [Change Services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=it) nella Guida di Commerce su Cloud.
 1. Se il problema con il servizio non è correlato alla versione, provare a eseguire le operazioni seguenti:
 1. **MySQL**: verificare la presenza di problemi quali query con esecuzione prolungata, chiavi primarie non definite e indici duplicati. Per i passaggi, fai riferimento a [Problemi più comuni relativi al database in Adobe Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=it) nel playbook di implementazione di Commerce.
 1. **[!DNL Redis]**: se [!DNL Redis] è una delle principali fonti di consumo di memoria, [invia un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
