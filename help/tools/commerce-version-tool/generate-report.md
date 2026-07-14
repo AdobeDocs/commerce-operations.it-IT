@@ -2,16 +2,10 @@
 title: Generare un rapporto di stato patch
 description: Scopri come utilizzare  [!DNL Commerce Version Tool]  per generare rapporti sullo stato delle patch di Adobe Commerce in formato JSON o CSV.
 TQID: 'https://experienceleague.adobe.com/-lC-20YMpbTM3tTZjbBO5zD5gb9n7cRah5Ycy8wQoyw'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: eafe79321da03f4778dd9e1b290141ef082a5eaf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: cb0391ae368b53a795535f3adb636628a339b963
 workflow-type: tm+mt
 source-wordcount: 590
 ht-degree: 2%
@@ -40,13 +34,13 @@ Lo strumento [!DNL CVT] controlla `COMPOSER_AUTH`, il progetto Adobe Commerce `a
 Dalla directory principale del progetto Adobe Commerce, esegui:
 
 ```bash
-vendor/bin/patch-status
+php vendor/bin/patch-status
 ```
 
 Per verificare un&#39;altra installazione di Adobe Commerce, utilizzare l&#39;opzione `--root`:
 
 ```bash
-vendor/bin/patch-status --root=/path/to/commerce
+php vendor/bin/patch-status --root=/path/to/commerce
 ```
 
 ## Opzioni di comando
@@ -68,7 +62,7 @@ JSON è il formato di output predefinito. L’output CSV è supportato per scann
 L’esempio seguente mostra l’output JSON predefinito.
 
 ```bash
-vendor/bin/patch-status
+php vendor/bin/patch-status
 ```
 
 ```json
@@ -100,7 +94,7 @@ vendor/bin/patch-status
 Per generare l&#39;output CSV, utilizzare l&#39;opzione `--format=csv`:
 
 ```bash
-vendor/bin/patch-status --format=csv
+php vendor/bin/patch-status --format=csv
 ```
 
 L’output CSV produce una riga per CVE ed è adatto per fogli di calcolo, scanner, dashboard e strumenti di conformità.
