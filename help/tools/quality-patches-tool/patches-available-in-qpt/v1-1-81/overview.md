@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: aeb532d2e065787e1b23781a50808031e5a5d4ce
+source-git-commit: 1a09e8ebb4fdee8b8ab500e5a4f8105fd33774d8
 workflow-type: tm+mt
-source-wordcount: 271
+source-wordcount: 272
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 
 QPT v1.1.81 include le seguenti patch:
 
-1. **ACP2E-4300**: è stato corretto il problema per cui la modifica di un gruppo di clienti in [!UICONTROL Admin] non comporta l&#39;aggiornamento delle autorizzazioni del catalogo nello storefront, in quanto il catalogo e il carrello riflettono le autorizzazioni non aggiornate.
+1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)**: è stato corretto il problema per cui la modifica di un gruppo di clienti nell&#39;amministratore non comporta l&#39;aggiornamento delle autorizzazioni del catalogo nella vetrina, in quanto il catalogo e il carrello riflettono le autorizzazioni non aggiornate.
 1. **ACP2E-4401**: è stato risolto il problema per cui il collegamento [!UICONTROL Scheduled Update Preview] della home page con prodotti configurabili viene reindirizzato alla pagina di manutenzione anziché visualizzare l&#39;elenco dei prodotti.
 1. **ACP2E-4395**: la creazione di prodotti API Giftcard ora visualizzerà un errore se non vengono specificati importi per l&#39;ambito globale.
 1. **ACP2E-4468**: è stato risolto il problema che impediva a [!UICONTROL Admin] utenti con autorizzazioni di ambito sito Web di modificare il contenuto del banner.

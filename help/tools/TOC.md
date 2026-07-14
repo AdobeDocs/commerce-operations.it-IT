@@ -2,9 +2,11 @@
 user-guide-title: Strumenti
 user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe Commerce, il loro utilizzo, il processo di installazione e come ottenere l’accesso.
 feature: Configuration
-source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
+nduge: true
+color: red
+source-git-commit: 79b40bed0a39ad7dd0632a8004d568892227be09
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10355'
 ht-degree: 0%
 
 ---
@@ -26,6 +28,11 @@ ht-degree: 0%
    - [Estensioni](site-wide-analysis-tool/extensions.md)
    - [Avvisi](site-wide-analysis-tool/alerts.md)
    - [Patch](site-wide-analysis-tool/patches.md)
+- [!DNL Commerce Version Tool] {#commerce-version-tool}
+   - [Introduzione](commerce-version-tool/intro.md)
+   - [Generare un rapporto sullo stato delle patch](commerce-version-tool/generate-report.md)
+   - [Risoluzione dei problemi](commerce-version-tool/troubleshooting.md)
+   - [Note sulla versione](commerce-version-tool/release-notes.md)
 - MAIUSC {#caps-tool}
    - {hide-from-toc}[Introduzione](caps-tool/intro.md)
    - {hide-from-toc}[Accesso](caps-tool/access.md)
@@ -1026,6 +1033,7 @@ ht-degree: 0%
          - [ACP2E-4156: [!DNL REST] La convalida dell&#39;indirizzo di spedizione API ignora la configurazione dell&#39;attributo Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4300: le autorizzazioni del catalogo Storefront non vengono aggiornate dopo la modifica del gruppo di clienti Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
    - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Riferimento per gli strumenti della riga di comando {#cli-reference}
    - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
