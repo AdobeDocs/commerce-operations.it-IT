@@ -7,7 +7,7 @@ feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
 source-git-commit: d884d434e696a911de626dc76983468556cf451f
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,9 @@ Uno strumento che puoi usare per i test di stress è GTmetrix. Misura la prepara
 
 Ulteriori informazioni sulla preparazione di progetti Commerce per periodi con traffico elevato:
 
-- [Preparazione per le festività](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=it)
-- [Analisi acquisti festivi](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=it)
-- [Aumento capacità di picco](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=it)
+- [Preparazione alle festività](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=it)
+- [Analisi acquisti per festività](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=it)
+- [Aumento capacità di sovratensione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=it)
 
 ### Test di carico
 
@@ -52,7 +52,7 @@ Utilizza GTmetrix per simulare il traffico pesante e analizzare le prestazioni d
 Ulteriori informazioni sulla verifica dei progetti Adobe Commerce:
 
 - [Indicazioni per il test](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html?lang=it) (infrastruttura cloud)
-- [Test applicazione](https://developer.adobe.com/commerce/testing/guide/)
+- [Test delle applicazioni](https://developer.adobe.com/commerce/testing/guide/)
 
 ### Identificazione e risoluzione dei problemi di prestazioni
 
