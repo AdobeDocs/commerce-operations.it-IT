@@ -14,7 +14,7 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 1a09e8ebb4fdee8b8ab500e5a4f8105fd33774d8
+source-git-commit: afd48570ab4ab29b2d5946e2805b3124b0b7fe82
 workflow-type: tm+mt
 source-wordcount: 272
 ht-degree: 0%
@@ -32,7 +32,7 @@ QPT v1.1.81 include le seguenti patch:
 1. **ACP2E-4395**: la creazione di prodotti API Giftcard ora visualizzerà un errore se non vengono specificati importi per l&#39;ambito globale.
 1. **ACP2E-4468**: è stato risolto il problema che impediva a [!UICONTROL Admin] utenti con autorizzazioni di ambito sito Web di modificare il contenuto del banner.
 1. **ACP2E-4630**: è stato risolto il problema relativo alla sovrapposizione di nomi di prodotti lunghi con opzioni personalizzate tra colonne o elementi adiacenti nei PDF di tipo Fattura, Spedizione, Nota di credito e Restituzione dopo le interruzioni di pagina, rendendo illeggibili gli elementi riga.
-1. **ACP2E-4680**: è stato risolto il problema relativo alla scomparsa dei prodotti non vendibili o eliminati dai preventivi negoziabili finalizzati.
+1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**: è stato risolto il problema relativo alla scomparsa dei prodotti non vendibili o eliminati dai preventivi negoziabili finalizzati.
 1. **ACP2E-4709**: è stato risolto un problema che impediva il salvataggio delle pagine CMS quando si utilizzava Page Builder.
 1. **ACP2E-4786**: è stato risolto il problema che impediva la scrittura di file durante l&#39;esportazione di prodotti quando l&#39;archiviazione remota AWS S3 è configurata, a causa di una risoluzione errata del percorso nel driver di archiviazione.
 1. **ACP2E-4801**: è stato risolto il problema che impediva l&#39;aggiornamento delle quantità delle opzioni di prodotto nel bundle tramite il pulsante [!UICONTROL Configure] in un preventivo negoziabile di [!UICONTROL Admin] e che eliminava le modifiche.
