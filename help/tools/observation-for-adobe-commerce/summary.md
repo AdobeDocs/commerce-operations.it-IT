@@ -5,7 +5,7 @@ exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
 source-git-commit: 5a0455b61824cb1946e29dba3ff7bfd9d225b110
 workflow-type: tm+mt
-source-wordcount: '2494'
+source-wordcount: '2632'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ La scheda [!UICONTROL Summary] di [!DNL Observation for Adobe Commerce] ha lo sc
 
 ![Panoramica transazioni](../../assets/tools/transaction-overview.jpg)
 
-### [Che cos&#39;è una transazione?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,Che%20è%20a%20transaction%3F,lavoro%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20frequent,quando%20la%20response%20is%20sent)
+### [Che cos&#39;è una transazione?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
 
 &quot;In [!DNL New Relic], una transazione è definita come un&#39;unità logica di lavoro in un&#39;applicazione software. In particolare, si riferisce alle chiamate di funzione e di metodo che compongono tale unità di lavoro. Si riferisce spesso a una transazione web, che rappresenta un’attività che si verifica tra il momento in cui l’applicazione riceve una richiesta web e il momento in cui viene inviata la risposta.&quot;
 
@@ -264,7 +264,7 @@ Il frame **[!UICONTROL Database mysql-slow.log]** esegue un conteggio delle voci
 * &#39;%SLAVE synchronization: spazio non disponibile nel dispositivo%&#39;) come &#39;spazio&#39;
 * &#39;%Server avviato, Redis versione%&#39;) come &#39;serv_start&#39;
 * &#39;%Il server è ora pronto per accettare le connessioni%&#39;) come &#39;ready&#39;
-* &#39;%Connessione con master persa.%&#39;) come &#39;mstr_lost&#39;
+* &#39;%Connection with master lost.%&#39;) come &#39;mstr_lost&#39;
 * &#39;%+sdown sentinel%&#39;) come &#39;+sentinal&#39;
 * &#39;%-sdown sentinel%&#39;) come &#39;-sentinal&#39;
 * &#39;%-sdown slave%&#39;) come &#39;-slave&#39;, &#39;%+sdown slave%&#39;) come &#39;+slave&#39;
@@ -295,7 +295,7 @@ Il frame **[!UICONTROL PHP errors]** mostra il numero di errori PHP con i lavora
 **Errori e messaggi PHP:**
 
 * &#39;%worker_connections non sono sufficienti%&#39;) come &#39;worker&#39;
-* &#39;%PHP Errore irreversibile: dimensioni di memoria consentite.%&#39;) come &#39;mem_size&#39;
+* &#39;%PHP Errore irreversibile: dimensione di memoria consentita!%&#39;) come &#39;mem_size&#39;
 * &#39;%exited sul segnale 11 (SIGSEGV)%&#39;) come &#39;sig_11&#39;
 * &#39;%exited sul segnale 7 (SIGBUS)%&#39;) come &#39;sig_7&#39;
 * &#39;%increased pm.start_servers%&#39;) come &#39;pmstart_serv&#39;

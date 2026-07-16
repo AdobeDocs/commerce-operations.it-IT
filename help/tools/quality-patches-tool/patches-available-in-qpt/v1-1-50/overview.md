@@ -7,7 +7,7 @@ exl-id: 4e136531-6bd4-4294-9a5a-66d19eb136db
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ QPT v1.1.50 include le seguenti patch:
 1. **ACSD-59036**: è stata corretta un&#39;eccezione che si verifica quando si caricano i prezzi dei prodotti con limiti inferiore e superiore uguali a *$0*.
 1. **ACSD-59229**: è stato risolto il problema che causava il salvataggio delle informazioni relative al gruppo di clienti nel segmento errato a causa del valore precedente di [!UICONTROL X-Magento-Vary] nella richiesta.
 1. **ACSD-59378**: è stato corretto il problema di aggiornamento errato delle riscritture URL a livello di archivio durante l&#39;importazione.
-1. **ACSD-59514**: è stato corretto il problema a causa del quale i moduli nell&#39;area di amministrazione con [!DNL Page Builder] generavano il rendering di *[!DNL Page Builder]per 5 secondi senza rilasciare blocchi.Errore* nella console del browser dopo l&#39;invio del modulo e le modifiche non possono essere salvate.
+1. **ACSD-59514**: è stato risolto il problema che causava il rendering di *[!DNL Page Builder]da parte dei moduli nell&#39;area di amministrazione con [!DNL Page Builder] per 5 secondi senza rilasciare blocchi.* nella console del browser dopo l’invio del modulo e le modifiche non possono essere salvate.
 1. **ACSD-60303**: è stato risolto il problema che impediva l&#39;invio di un ordine dall&#39;amministratore se era abilitata la minimizzazione di HTML.
 1. **ACSD-60441**: è stato risolto il problema relativo all&#39;aggiornamento dei clienti tramite l&#39;endpoint `V1/customers REST API` quando si utilizza il token di accesso all&#39;integrazione generato dal back-end.
 

@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
 source-git-commit: 29168544e3a33b874b104f308bd53cb475ac2638
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -48,5 +48,5 @@ Per ottimizzare le prestazioni del sito, segui queste best practice per l’indi
 ## Informazioni aggiuntive
 
 - [Gestione dell’indice per gli utenti amministratori](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Gestione dell&#39;indice tramite Magento CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=it)
-- [Panoramica sull&#39;indicizzazione per sviluppatori](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [Gestione dell’indice tramite Magento CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=it)
+- [Panoramica sull’indicizzazione per sviluppatori](https://developer.adobe.com/commerce/php/development/components/indexing/)

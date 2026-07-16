@@ -4,7 +4,7 @@ description: Configura altri siti web, store e visualizzazioni dello store in Co
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Questa attività richiede di creare una categoria principale (e categorie aggiun
 
 - [Categorie](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/categories/categories)
 - [Aggiunta di siti Web](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Archivia URL](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [URL store](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/store-urls)
 - [Contenuto](https://experienceleague.adobe.com/it/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]

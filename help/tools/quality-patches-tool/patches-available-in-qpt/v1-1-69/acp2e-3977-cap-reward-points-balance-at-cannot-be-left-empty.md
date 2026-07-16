@@ -7,7 +7,7 @@ type: Troubleshooting
 exl-id: 5275911f-4f8c-4b37-af11-24ceb69406c9
 source-git-commit: 83ce590c5078d70f0414276e2f03a71bdcdad321
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Se si lascia **[!UICONTROL Cap Reward Points Balance At]** vuoto, viene generato
 
 <u>Risultati effettivi</u>:
 
-*Il saldo dei punti premio del tetto massimo non è valido. Il saldo deve essere un numero positivo o lasciato vuoto. Verifica e riprova.* errore visualizzato.
+*Il saldo dei punti premio del tetto massimo non è valido. Il saldo deve essere un numero positivo o lasciato vuoto. Verificare e riprovare.* viene visualizzato un errore.
 
 ## Applicare la patch
 
