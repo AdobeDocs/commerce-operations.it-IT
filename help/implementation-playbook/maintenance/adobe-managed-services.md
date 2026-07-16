@@ -5,7 +5,7 @@ exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -388,7 +388,7 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
 
 Lo stack di sicurezza Adobe per Managed Services crea la sicurezza in a ogni livello utilizzando l’automazione e la coerenza per ridurre gli errori umani. I team di sviluppo e operativi ereditano automaticamente i controlli di sicurezza da diversi livelli dello stack.
 
-I partner della piattaforma, come Amazon Web Services e Microsoft Azure, garantiscono la massima copertura di sicurezza durante l&#39;applicazione delle personalizzazioni della piattaforma, mentre il team Managed Services di Adobe fornisce servizi di sicurezza principali, come conformità, registrazione, autenticazione, scansione e monitoraggio, protezione del server e configurazione sicura delle applicazioni. Per ulteriori informazioni, vedere [Sicurezza Adobe Commerce](https://business.adobe.com/it/products/magento/secure-ecommerce.html).
+I partner della piattaforma, come Amazon Web Services e Microsoft Azure, garantiscono la massima copertura di sicurezza quando si applicano personalizzazioni della piattaforma, mentre il team Managed Services di Adobe fornisce servizi di sicurezza di base, come conformità, registrazione, autenticazione, scansione e monitoraggio, sicurezza del server e configurazione sicura delle applicazioni. Per ulteriori informazioni, vedere [Sicurezza Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html).
 
 Il diagramma seguente mostra lo stack della tecnologia di sicurezza Adobe Managed Services:
 
@@ -437,7 +437,7 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
     <td>Aggiornamento dei servizi dell'infrastruttura<br />[MariaDB, Redis, Open Search e Rabbit MQ] (Gestione temporanea e produzione)</td>
     <td></td>
     <td></td>
-    <td>Proprietario<br />CSE coordina gli aggiornamenti del servizio di infrastruttura.<br />CSE pianifica l'evento conferenza per gli aggiornamenti.<br />Il CSE fornisce assistenza per la migrazione dei dati dalla produzione alla gestione temporanea.</td>
+    <td>Proprietario<br />CSE coordina gli aggiornamenti del servizio di infrastruttura.<br />Il CSE pianifica l'evento della conferenza per gli aggiornamenti.<br />Il CSE fornisce assistenza per la migrazione dei dati dalla produzione alla gestione temporanea.</td>
   </tr>
   <tr>
     <td>Aggiornare la base di codice e le personalizzazioni di Commerce; ricompilazione e refactoring del codice</td>
@@ -456,7 +456,7 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
     <td>Eseguire test di prestazioni e sicurezza</td>
     <td>Collaboratore</td>
     <td>Proprietario</td>
-    <td>Collaboratore<br />CSE fornisce assistenza per il test di carico monitorando le prestazioni dell'applicazione e dell'infrastruttura.<br />Il CSE fornisce assistenza per la configurazione dello strumento di analisi della sicurezza di Commerce.</td>
+    <td>Collaboratore<br />CSE fornisce assistenza per il test di carico monitorando le prestazioni dell'applicazione e dell'infrastruttura.<br />CSE fornisce assistenza per la configurazione dello strumento Commerce Security Scan.</td>
   </tr>
   <tr>
     <td>Test di accettazione utente sullo staging</td>

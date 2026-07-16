@@ -7,7 +7,7 @@ exl-id: 61f8a517-1a50-4d51-b576-38ae29a7ca32
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ QPT v1.1.13 include le seguenti patch:
 1. **MDVA-42046**: è stato risolto il problema relativo all&#39;assegnazione di un valore non corretto a un attributo di prodotto con un campo di input della data durante l&#39;aggiornamento di un prodotto.
 1. **MDVA-42283**: è stato risolto il problema che impediva il corretto funzionamento del formato data-ora nella griglia dell&#39;ordine di amministrazione per le impostazioni locali francesi.
 1. **MDVA-42969**: è stato risolto il problema per cui la regola prodotto correlata funziona solo quando Segmento cliente è impostato su *All*.
-1. **MDVA-43451**: è stato risolto il problema che impediva di trovare l&#39;archivio richiesto *. Verifica l’archivio e riprova.* viene visualizzato durante la configurazione di un catalogo condiviso per un sito Web specifico.
+1. **MDVA-43451**: è stato risolto il problema che impediva di trovare l&#39;archivio richiesto *. Verificare l&#39;archivio e riprovare.* viene visualizzato durante la configurazione di un catalogo condiviso per un sito Web specifico.
 1. **MDVA-43491**: è stato risolto il problema che impediva l&#39;aggiornamento dell&#39;etichetta dell&#39;immagine di base durante l&#39;importazione di prodotti per un sito Web multi-store.
 1. **MDVA-43601**: è stato risolto il problema relativo ai trigger mancanti dopo la reindicizzazione completa.
 1. **MDVA-43824**: è stato risolto il problema che si verificava quando veniva visualizzato un errore durante l&#39;annullamento di ordini con uno sconto.

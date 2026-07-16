@@ -6,7 +6,7 @@ badge: label="Contributo di David Lambauer" type="Informative" url="https://gith
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2748'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Un tag `<field>` può avere i seguenti valori per l&#39;attributo `type=""`:
 | `select` | Menu a discesa Normal, potrebbe essere necessario un `source_model` personalizzato. Utilizzato anche per `Yes/No` selezioni. Vedi `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` per un esempio. |
 | `multiselect` | Come `select`, ma sono valide più opzioni. |
 | `button` | Pulsante che attiva un evento immediato. Richiede un modello front-end personalizzato per definire il testo del pulsante e l’azione. Vedi `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` per un esempio. |
-| `obscure` | Un campo di testo con il valore crittografato e visualizzato come `**&#x200B;**`. Se si modifica il tipo utilizzando &quot;Ispect Element&quot; nel browser, il valore non viene visualizzato. |
+| `obscure` | Un campo di testo con il valore crittografato e visualizzato come `****`. Se si modifica il tipo utilizzando &quot;Ispect Element&quot; nel browser, il valore non viene visualizzato. |
 | `password` | Come `obscure`, tranne per il fatto che il valore nascosto non è crittografato e la modifica forzata del tipo tramite &quot;Ispect Element&quot; nel browser non rivela il valore. |
 | `file` | Consente di caricare un file per l’elaborazione. |
 | `label` | Visualizza un&#39;etichetta anziché un campo modificabile. Utilizzare questo tipo quando un campo è modificabile solo su ambiti specifici, ad esempio solo a livello di visualizzazione archivio. |
@@ -391,7 +391,7 @@ Sono disponibili le seguenti regole di convalida:
 | `no-whitespace` | Non consente spazi vuoti. |
 | `phoneUK` | Consente un numero di telefono (Regno Unito). |
 | `phoneUS` | Consente un numero di telefono (Stati Uniti). |
-| `required-entry` | Non consente un valore vuoto (convalida equivalente a `validate-no-empty`).<br>Messaggio di errore di convalida: &quot;Questo campo è obbligatorio&quot;. |
+| `required-entry` | Non consente un valore vuoto (convalida equivalente a `validate-no-empty`).<br>Messaggio di errore di convalida: &quot;Campo obbligatorio&quot;. |
 | `time` | Consente un&#39;ora valida nel formato 24 ore, tra 00:00 e 23:59. Ad esempio `15`, `15:05` o `15:05:48`. |
 | `time12h` | Consente un orario valido in formato 12 ore, tra le 12:00 e le 11:59:59 pm. Ad esempio `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | Consente 7 o più caratteri, sia numerici che alfabetici. |
