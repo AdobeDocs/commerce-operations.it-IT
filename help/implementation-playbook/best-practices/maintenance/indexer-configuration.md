@@ -35,7 +35,7 @@ La presenza di un archivio di grandi dimensioni con più amministratori che lavo
 Per ottimizzare le prestazioni del sito, segui queste best practice per l’indicizzazione:
 
 - Rivedi la configurazione dell’indice.
-- Impostare gli indicizzatori su _[!UICONTROL Update on Schedule]_per i siti di grandi dimensioni e i siti con aggiornamenti frequenti e traffico elevato. Consulta [Gestione indice](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+- Impostare gli indicizzatori su _[!UICONTROL Update on Schedule]_&#x200B;per i siti di grandi dimensioni e i siti con aggiornamenti frequenti e traffico elevato. Consulta [Gestione indice](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Segui le [best practice per le prestazioni](../../../performance/configuration.md) per la gestione degli indici.
 
 >[!IMPORTANT]
