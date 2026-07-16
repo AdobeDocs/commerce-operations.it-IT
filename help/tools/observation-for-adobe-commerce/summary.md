@@ -3,9 +3,9 @@ title: Scheda [!UICONTROL Summary]
 description: Scopri la scheda [!UICONTROL Summary] di [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 5a0455b61824cb1946e29dba3ff7bfd9d225b110
+source-git-commit: 818c25db0442f5288191ee414b7e2ab07c4cbedf
 workflow-type: tm+mt
-source-wordcount: '2632'
+source-wordcount: '2636'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,9 @@ La scheda [!UICONTROL Summary] di [!DNL Observation for Adobe Commerce] ha lo sc
 
 ![Panoramica transazioni](../../assets/tools/transaction-overview.jpg)
 
-### [Che cos&#39;è una transazione?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
+### Che cos&#39;è una transazione?
+
+[Che cos&#39;è una transazione?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
 
 &quot;In [!DNL New Relic], una transazione è definita come un&#39;unità logica di lavoro in un&#39;applicazione software. In particolare, si riferisce alle chiamate di funzione e di metodo che compongono tale unità di lavoro. Si riferisce spesso a una transazione web, che rappresenta un’attività che si verifica tra il momento in cui l’applicazione riceve una richiesta web e il momento in cui viene inviata la risposta.&quot;
 
@@ -58,7 +60,7 @@ Nel frame **[!UICONTROL Swap memory free in bytes]** viene visualizzata, per nod
 
 ![Percentuale CPU per host](../../assets/tools/cpu-percent-by-host.jpg)
 
-L&#39;aggregato di tutti gli ambienti e i nodi viene visualizzato nel frame **[!UICONTROL CPU % by host]**. Devi deselezionare gli ambienti non di produzione. Inoltre, tieni presente tutte le istanze in cui non sono presenti tutti i nodi per l’ambiente di produzione. Per ulteriori suggerimenti sull&#39;utilizzo intensivo di CPU, fare riferimento a [Risoluzione dei problemi relativi alle prestazioni con New Relic su Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=it).
+L&#39;aggregato di tutti gli ambienti e i nodi viene visualizzato nel frame **[!UICONTROL CPU % by host]**. Devi deselezionare gli ambienti non di produzione. Inoltre, tieni presente tutte le istanze in cui non sono presenti tutti i nodi per l’ambiente di produzione. Per ulteriori suggerimenti sull&#39;utilizzo intensivo di CPU, fare riferimento a [Risoluzione dei problemi relativi alle prestazioni con New Relic su Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -70,7 +72,7 @@ L&#39;aggregato di tutti gli ambienti e i nodi viene visualizzato nel frame **[!
 
 ![Utilizzo di CPU](../../assets/tools/cpu-usage.jpg)
 
-Se il frame **[!UICONTROL CPU Usage]** è vuoto, significa che l&#39;applicazione di infrastruttura di [!DNL New Relic] non è abilitata. Se il tuo sito è su Starter, queste informazioni non vengono visualizzate. Se il tuo sito è su Pro, apri un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it) per abilitare [!DNL New Relic Infrastructure] per il tuo sito.
+Se il frame **[!UICONTROL CPU Usage]** è vuoto, significa che l&#39;applicazione di infrastruttura di [!DNL New Relic] non è abilitata. Se il tuo sito è su Starter, queste informazioni non vengono visualizzate. Se il tuo sito è su Pro, apri un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) per abilitare [!DNL New Relic Infrastructure] per il tuo sito.
 
 ## [!UICONTROL Average Response Time]
 
@@ -384,7 +386,7 @@ Il frame **[!UICONTROL Order transactions (default?)]** cerca le transazioni `re
 * &#39;%È possibile risolvere il problema aggiornando il servizio Elasticsearch nell&#39;infrastruttura Magento Cloud alla versione%&#39; come &#39;ver_err&#39;
 * Lo stato di integrità del cluster &#39;%cluster è cambiato da \[GIALLO\] a \[ROSSO\] (motivo:%&#39; come &#39;giallo_rosso&#39;
 * &#39;%Nessuno spazio disponibile nel dispositivo%&#39; come &#39;no_space&#39;
-* &#39;% Impossibile eseguire &lbrack;SearchRequest&lbrace;searchType=%&#39; come &#39;failed_query&#39;
+* &#39;% Impossibile eseguire [SearchRequest{searchType=%&#39; come &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 
