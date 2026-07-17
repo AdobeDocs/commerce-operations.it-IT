@@ -3,9 +3,9 @@ title: Scheda [!UICONTROL Summary]
 description: Scopri la scheda [!UICONTROL Summary] di [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 5a0455b61824cb1946e29dba3ff7bfd9d225b110
+source-git-commit: 818c25db0442f5288191ee414b7e2ab07c4cbedf
 workflow-type: tm+mt
-source-wordcount: '2632'
+source-wordcount: '2636'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,9 @@ La scheda [!UICONTROL Summary] di [!DNL Observation for Adobe Commerce] ha lo sc
 
 ![Panoramica transazioni](../../assets/tools/transaction-overview.jpg)
 
-### [Che cos&#39;è una transazione?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
+### Che cos&#39;è una transazione?
+
+[Che cos&#39;è una transazione?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
 
 &quot;In [!DNL New Relic], una transazione è definita come un&#39;unità logica di lavoro in un&#39;applicazione software. In particolare, si riferisce alle chiamate di funzione e di metodo che compongono tale unità di lavoro. Si riferisce spesso a una transazione web, che rappresenta un’attività che si verifica tra il momento in cui l’applicazione riceve una richiesta web e il momento in cui viene inviata la risposta.&quot;
 
