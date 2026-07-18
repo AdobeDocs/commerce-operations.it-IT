@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5629025bd6a2fd492ac368e2680a70f9cc256339
+source-git-commit: 970dcea74edf889a6cb5abf1449d63dfe2d7d654
 workflow-type: tm+mt
-source-wordcount: '2448'
+source-wordcount: '2772'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,96 @@ ht-degree: 0%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 16 luglio 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.81 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801">ACP2E-4801: le quantità delle opzioni di prodotto del bundle non vengono aggiornate durante la riconfigurazione di un preventivo negoziabile in Admin</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/31872eee953126b52f1c13444dd46140edc879c6">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.81 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786">ACP2E-4786: l'esportazione del prodotto non riesce quando è configurato l'archivio remoto AWS S3</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b7ca2e40743aa512b0bc785e486d3e7d1c6dbefc">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 15 luglio 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.81 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630">ACP2E-4630: i nomi di prodotto lunghi si sovrappongono alle colonne adiacenti nei PDF di vendita multipagina dopo le interruzioni di pagina</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5581e6f7a507bb83a3fc0fd7229239137b15acd7">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 14 luglio 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.81 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300">ACP2E-4300: le autorizzazioni del catalogo Storefront non vengono aggiornate dopo la modifica del gruppo clienti Admin</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2c26efeb7aa734e4dcc8d0131cb82a96d35e8f32">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.81 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680">ACP2E-4680: i prodotti non vendibili scompaiono dai preventivi negoziabili finalizzati</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1448b291e70cdf515872f019028c15bd703f80fe">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Aggiunta <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/commerce-version-tool/intro">Documentazione di Commerce Version Tool</a> con disponibilità, generazione di rapporti, output JSON e CSV, risoluzione dei problemi e note sulla versione per rapporti mensili sullo stato delle patch di sicurezza di Adobe Commerce.</p>
+</td>
+      <td>
+        Nuovo argomento
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/43571d84d9a27ffa113ba4f3a8a08883602211f6">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 10 luglio 2026
 
