@@ -20,7 +20,7 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: efeccc00d057a7e7115f1b156c3d9202ab476ded
+source-git-commit: 5f20ef1b6e40728e38d06f5c9f90f72ba1eb43e0
 workflow-type: tm+mt
 source-wordcount: 764
 ht-degree: 0%
@@ -88,11 +88,11 @@ Dove:
 
 - `backend` è l&#39;implementazione della cache L2.
 - `backend_options` è la configurazione della cache L2.
-   - `remote_backend` è l&#39;implementazione della cache remota: Redis o MySQL.
-   - `remote_backend_options` è la configurazione della cache remota.
-   - `local_backend` è l&#39;implementazione della cache locale: `Cm_Cache_Backend_File`
-   - `local_backend_options` è la configurazione della cache locale.
-   - `cache_dir` è un&#39;opzione specifica della cache del file per la directory in cui è memorizzata la cache locale.
+  - `remote_backend` è l&#39;implementazione della cache remota: Redis o MySQL.
+  - `remote_backend_options` è la configurazione della cache remota.
+  - `local_backend` è l&#39;implementazione della cache locale: `Cm_Cache_Backend_File`
+  - `local_backend_options` è la configurazione della cache locale.
+  - `cache_dir` è un&#39;opzione specifica della cache del file per la directory in cui è memorizzata la cache locale.
 
 Adobe consiglia di utilizzare Redis per il caching remoto (`\Magento\Framework\Cache\Backend\Redis`) e `Cm_Cache_Backend_File` per il caching locale dei dati nella memoria condivisa, utilizzando: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
@@ -188,7 +188,7 @@ A partire da Commerce 2.4.9, è possibile utilizzare l&#39;implementazione della
 
 >[!NOTE]
 >
->Questa funzionalità è attualmente disponibile solo per i clienti di Adobe Commerce on-premise 2.4.9. Sarà abilitato per Adobe Commerce sul cloud più tardi, a luglio 2026.
+>Questa funzionalità è attualmente disponibile solo per i clienti di Adobe Commerce On Premises 2.4.9. Sarà abilitato per Adobe Commerce on Cloud più tardi, a luglio 2026.
 
 ### Vantaggi della cache L2 di Symfony
 
