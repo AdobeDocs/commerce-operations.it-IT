@@ -73,7 +73,7 @@ bundle exec rake -T [task_name]
 
 ## Includi formato file relazioni
 
-Il file `include-relationships.yml` tiene traccia delle relazioni tra i file di contenuto principale e i relativi file inclusi. Questo file viene gestito automaticamente dall&#39;attività `includes:maintain_relationships` (vedi il file README](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks/blob/main/README.md) di [adobe-comdox-exl-rake-tasks per informazioni sull&#39;utilizzo delle attività), che rileva le relazioni leggendo i file di inclusione esistenti e trovando i file principali che vi fanno riferimento.
+Il file `include-relationships.yml` tiene traccia delle relazioni tra i file di contenuto principale e i relativi file inclusi. Questo file viene gestito automaticamente dall&#39;attività `includes:maintain_relationships` (vedi il file README[&#128279;](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks/blob/main/README.md) di adobe-comdox-exl-rake-tasks per informazioni sull&#39;utilizzo delle attività), che rileva le relazioni leggendo i file di inclusione esistenti e trovando i file principali che vi fanno riferimento.
 
 **Struttura file:**
 
