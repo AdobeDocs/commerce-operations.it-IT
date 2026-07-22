@@ -1,7 +1,7 @@
 ---
-source-git-commit: 44c3c7eaf57d858b5810e6ba6f510e9fea4e1a1a
+source-git-commit: 73d9b59320fac5ad73e893e87aea1edb4bb72a06
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Se fai parte della community Adobe e desideri creare un nuovo articolo o inviare
 
 ### Modifiche sostanziali da parte dei dipendenti Adobe
 
-Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione Adobe Experience Cloud ed è tuo compito creare o contribuire ad articoli tecnici, devi utilizzare l&#39;archivio privato all&#39;indirizzo `https://github.com/Adobe-Enterprise-Docs`.
+Se sei un autore, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione Adobe Experience Cloud ed è tuo compito creare o contribuire ad articoli tecnici, devi utilizzare l&#39;archivio privato all&#39;indirizzo `https://github.com/Adobe-Enterprise-Docs`.
 
 ## Strumenti e configurazione
 
@@ -76,11 +76,14 @@ Per istruzioni dettagliate sulla configurazione, la risoluzione dei problemi e l
 
 ## Attività di rastremazione disponibili
 
-Questo archivio utilizza le attività di rastremazione fornite dal gem `adobe-comdox-exl-rake-tasks`. Per visualizzare tutte le attività disponibili, eseguire le operazioni seguenti:
+Questo archivio utilizza le attività di rastremazione fornite da
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gemma. Per visualizzare tutte le attività disponibili, eseguire le operazioni seguenti:
 
 ```bash
 cd _jekyll
 bundle exec rake --tasks
 ```
 
-
+Per le attività specifiche dell’archivio, il formato del file include relations (Includi relazioni) e la configurazione
+dettagli, vedere [`_jekyll/ReadMe.md`](_jekyll/ReadMe.md).

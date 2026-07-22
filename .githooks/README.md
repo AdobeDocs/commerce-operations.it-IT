@@ -1,7 +1,7 @@
 ---
-source-git-commit: 80617048ec259616804aab9fc21d6d3e3c5bb47c
+source-git-commit: 90e3f9cb6033c91be67947e84520d3e2537ca5d9
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,7 @@ Questa directory contiene hook di pre-commit che ottimizzano automaticamente le 
 - **Esegui`image_optim`** per comprimere e ottimizzare le immagini
 - **Riposiziona nell&#39;area intermedia le immagini ottimizzate** automaticamente
 - **Assicurarsi che tutte le immagini salvate** siano ottimizzate correttamente
+- **Controlla i file SVG in staging** rispetto a un limite di dimensioni e interrompi il commit se un SVG supera tale limite
 
 ## Vantaggi
 
@@ -87,9 +88,16 @@ Image optimization complete!
 - **PNG**: da utilizzare per le schermate e gli elementi dell&#39;interfaccia utente (verranno ottimizzati automaticamente)
 - **JPEG**: utilizza per le foto (verrà ottimizzato automaticamente)
 - **GIF**: utilizza per le animazioni (verrà ottimizzato automaticamente)
-- **SVG**: da utilizzare per icone ed elementi grafici semplici (non elaborati da hook, commit così com&#39;è)
+- **SVG**: utilizza per icone e grafica semplice (non ottimizzata, ma verificata in base a un limite di dimensioni; il commit non riesce se il limite viene superato)
 
-Gli hook di pre-commit ottimizzano automaticamente le immagini PNG, JPEG e GIF durante il commit.
+Gli hook di pre-commit ottimizzano automaticamente le immagini PNG, JPEG e GIF durante il commit e controllano gli SVG in staging rispetto a un limite di dimensioni (140 KB).
+
+Se un SVG in staging supera il limite, il commit viene interrotto. Converti in PNG:
+
+```bash
+cd _jekyll
+bundle exec rake images:svg_to_png path=path/to/image.svg
+```
 
 ## Ottimizzazione manuale
 
@@ -107,7 +115,7 @@ Gli hook utilizzano il file di configurazione `_jekyll/.image_optim.yml` per per
 - **PNG**: usa `advpng`, `optipng` e `pngquant`
 - **JPEG**: usa `jhead`, `jpegoptim` e `jpegtran`
 - **GIF**: Usa `gifsicle`
-- **SVG**: non elaborato (escluso dal rilevamento per mantenere grafica vettoriale e animazioni)
+- **SVG**: non ottimizzato (escluso da `image_optim` per mantenere grafica vettoriale e animazioni), ma controllato rispetto a un limite di dimensioni di 140 KB
 
 ## Risoluzione dei problemi
 
@@ -123,6 +131,12 @@ Gli hook utilizzano il file di configurazione `_jekyll/.image_optim.yml` per per
 - Verifica che la Gem `adobe-comdox-exl-rake-tasks` sia installata (fornisce `image_optim`)
 - Rivedi il file di configurazione `.image_optim.yml`
 
+### SVG supera il limite di dimensioni
+
+- Il commit viene interrotto se un SVG di staging supera i 140 KB
+- Converti SVG in PNG: `cd _jekyll && bundle exec rake images:svg_to_png path=path/to/image.svg`
+- Posiziona quindi il file PNG al posto di SVG e conferma nuovamente
+
 ### Problemi relativi alle prestazioni
 
 - Regola conteggio thread in `_jekyll/.image_optim.yml`
@@ -132,16 +146,17 @@ Gli hook utilizzano il file di configurazione `_jekyll/.image_optim.yml` per per
 
 1. **Trigger pre-commit**: quando si esegue `git commit`, l&#39;hook viene eseguito automaticamente
 2. **Rilevamento immagini**: analizza i file di staging per le estensioni di immagini
-3. **Ottimizzazione**: esegue `image_optim` su ogni immagine pubblicata in staging
+3. **Ottimizzazione**: esegue `image_optim` su ogni PNG, JPEG o GIF gestito
 4. **Nuova gestione temporanea**: aggiunge automaticamente le immagini ottimizzate all&#39;area di gestione temporanea
-5. **Il commit procede**: se l&#39;ottimizzazione viene eseguita correttamente, il commit continua normalmente
+5. **Controllo dimensioni SVG**: verifica ogni SVG in staging rispetto al limite di dimensioni di 140 KB
+6. **Il commit procede**: se l&#39;ottimizzazione ha esito positivo e nessun SVG supera il limite di dimensioni, il commit continua normalmente. In caso contrario, il commit viene interrotto
 
 ## Formati immagine supportati
 
 - **PNG** (`.png`) - Compressione senza perdita di dati e perdita di dati
 - **JPEG** (`.jpg`, `.jpeg`) - Compressione con perdita di dati con pulizia metadati
 - **GIF** (`.gif`) - Animazione e ottimizzazione statica
-- **SVG** (`.svg`) - Non elaborato dagli hook (conferma così com&#39;è per mantenere la qualità)
+- **SVG** (`.svg`) - Non ottimizzato (commit così com&#39;è per mantenere la qualità), ma controllato rispetto a un limite di dimensioni di 140 KB; il commit viene interrotto se il limite viene superato
 
 ## Best practice
 
