@@ -2,7 +2,7 @@
 title: Criterio di rilascio
 description: Scopri i tipi di versioni di Adobe Commerce, il controllo delle versioni di marketing e dei moduli, le versioni di patch e sicurezza, i beta, gli hotfix e i criteri di rilascio generali.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 48fc318078cbf1800522aeb43d8927b72727e7ed
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -16,9 +16,9 @@ Adobe Commerce utilizza [il controllo delle versioni semantiche](https://semver.
 - **Versione principale**—2
 - **Versione secondaria**—2.4
 - **Versione di PATCH**—2.4.8
-   - **Versione patch di sicurezza**—2.4.8-p1
-      - Correzione di bug di sicurezza
-      - Miglioramento della sicurezza
+  - **Versione patch di sicurezza**—2.4.8-p1
+    - Correzione di bug di sicurezza
+    - Miglioramento della sicurezza
 - **Versione patch di ALPHA**—2.4.8-alpha1
 - **Versione patch BETA**—2.4.8-beta1
 - **Estensibilità, infrastruttura e servizi**
@@ -81,4 +81,4 @@ Le singole patch contengono correzioni di qualità a basso impatto per un proble
 
 Creato da personale non Adobe per risolvere un problema o modificare il codice Adobe Commerce per vari motivi.
 
-<!-- Last updated from includes: 2026-04-20 10:12:04 -->
+<!-- Last updated from includes: 2026-06-16 17:36:23 -->

@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: c6a5714275fc7f36688b4aaabffadb90a346e61a
+source-git-commit: f28140efde87efac04d64121ecbc603dbe87e6b6
 workflow-type: tm+mt
-source-wordcount: '10449'
+source-wordcount: '10465'
 ht-degree: 0%
 
 ---
@@ -1041,6 +1041,7 @@ ht-degree: 0%
       - [ACP2E-4630: i nomi di prodotto lunghi si sovrappongono alle colonne adiacenti nei PDF di vendita di più pagine dopo le interruzioni di pagina](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
       - [ACP2E-4680: i prodotti non vendibili scompaiono dai preventivi negoziabili definitivi](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
       - [ACP2E-4300: le autorizzazioni del catalogo Storefront non vengono aggiornate dopo la modifica del gruppo di clienti Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
+      - [ACP2E-4709: le pagine CMS non vengono salvate in Page Builder quando la gerarchia delle pagine include virgolette doppie](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
   - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Riferimento per gli strumenti della riga di comando {#cli-reference}
   - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
