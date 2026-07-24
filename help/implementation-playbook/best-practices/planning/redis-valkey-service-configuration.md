@@ -10,9 +10,9 @@ topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="Commerce su Cloud" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud."
 nudge: true
-source-git-commit: 78f8259a686402045614210efe6488c5cf5cc6bd
+source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2454'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Adobe Commerce 2.4.9 e versioni successive supportano il back-end della cache `s
 
 Per utilizzare la cache `symfony_l2` per Adobe Commerce 2.4.9, completare i passaggi seguenti:
 
-- Verificare che il progetto cloud utilizzi il pacchetto di [strumenti ECE v2002.1.12](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) o versione successiva.
+- Verificare che il progetto cloud utilizzi il pacchetto di [strumenti ECE v2002.2.12](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) o versione successiva.
 
 - Impostare la variabile di distribuzione nel file `.magento.env.yaml`: `VALKEY_BACKEND`=`symfony_l2`.
 
@@ -94,11 +94,44 @@ Per utilizzare la cache `symfony_l2` per Adobe Commerce 2.4.9, completare i pass
       VALKEY_BACKEND: symfony_l2
   ```
 
-L&#39;impostazione della variabile di distribuzione `VALKEY_BACKEND` su `symfony_l2` genera automaticamente la configurazione della cache L2 completa dai dettagli della connessione al servizio Valkey, inclusi un front-end `default` e un front-end `stale_cache_enabled`, con tipi memorizzabili nella cache come `layout`, `block_html`, `full_page` e `translate` già mappati al front-end non aggiornato. Non è necessario definire `CACHE_CONFIGURATION` per utilizzare `symfony_l2`.
+L&#39;impostazione della variabile di distribuzione `VALKEY_BACKEND` su `symfony_l2` genera automaticamente la configurazione della cache L2 completa dai dettagli della connessione al servizio Valkey, inclusi un front-end `default` e un front-end `stale_cache_enabled`, con tipi memorizzabili nella cache come `layout`, `block_html`, `full_page` e `translate` già mappati al front-end non aggiornato. La definizione di `CACHE_CONFIGURATION` è facoltativa e necessaria solo se si desidera personalizzare opzioni di back-end specifiche.
+
+>[!NOTE]
+>
+>Adobe Commerce 2.4.9 include miglioramenti alla cache di Symfony L2, tra cui l&#39;archiviazione dei tag della cache, l&#39;annullamento della validità e la compressione, con la patch ACP2E-5132, la riduzione dell&#39;I/O del disco, l&#39;eliminazione delle voci di cache obsolete e la riduzione del sovraccarico di memoria e rete. Consulta [Prestazioni e affidabilità migliorate della cache L2 di Symfony](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability) nella _Guida alla configurazione di Adobe Commerce_.
+
+#### Personalizzare la configurazione della cache di Symfony L2
+
+`ece-tools` deriva automaticamente i dettagli della connessione Valkey (`server`, `port`, `database`, `serializer`, `compression_lib`, `persistent_id`) per i front-end `default` e `stale_cache_enabled`. Per personalizzare altre opzioni di back-end, ad esempio la directory della cache locale, definire `CACHE_CONFIGURATION` con `_merge: true` insieme a `VALKEY_BACKEND: symfony_l2`. I valori definiti in questo campo sostituiscono i valori predefiniti generati automaticamente corrispondenti. Qualsiasi opzione omessa continua a utilizzare i valori derivati automaticamente da `ece-tools`.
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: symfony_l2
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            remote_backend: valkey
+            local_backend: file
+            local_backend_options:
+              cache_dir: /dev/shm/magento_l1
+        stale_cache_enabled:
+          backend: symfony_l2
+          backend_options:
+            remote_backend: valkey
+            local_backend: file
+            local_backend_options:
+              cache_dir: /dev/shm/magento_l1_stale
+            use_stale_cache: true
+```
 
 >[!CAUTION]
 >
->Durante l&#39;aggiornamento della configurazione di `.magento.env.yaml`, non eseguire l&#39;override di `server` o `port` a meno che non si punti intenzionalmente a un endpoint della cache diverso dal servizio Valkey del progetto. Il pacchetto di strumenti ECE deriva automaticamente questi valori dalla relazione di servizio Valkey. Se si esegue l’override di tali parametri con un valore errato, la distribuzione non riesce e viene restituito un errore di connessione alla cache.
+>Durante la definizione di `CACHE_CONFIGURATION` per `symfony_l2`, non eseguire l&#39;override di `server` o `port` a meno che non si punti intenzionalmente a un endpoint della cache diverso dal servizio Valkey del progetto. Il pacchetto Strumenti ECE deriva automaticamente questi valori dalla relazione di servizio Valkey.
+>
+>Se si esegue l&#39;override di `server`, il relativo valore deve essere `localhost` durante la connessione al servizio Valkey del progetto. Se si specifica un valore `server` o `port` non corretto, la distribuzione non riesce e viene generato un errore di connessione alla cache.
 
 ### Dimensioni della memoria cache L2 per Adobe Commerce Cloud
 
@@ -1022,4 +1055,5 @@ Consulta i seguenti argomenti correlati:
 - [Configurare il servizio Valkey](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/service/valkey)
 - [Configurazione del servizio Redis](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/service/redis)
 - [Distribuire le variabili](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+
 
