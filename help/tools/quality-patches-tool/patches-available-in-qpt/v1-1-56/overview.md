@@ -7,7 +7,7 @@ exl-id: 6433df73-b6df-4c88-93a4-12ac1e5080ea
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 
 QPT v1.1.56 include le seguenti patch:
 
-1. JavaScript **ACSD-63244**: sono stati risolti i problemi che impediscono il corretto rendering di [!DNL Google Maps] e che impediscono il corretto rendering di *TypeError non rilevato: questo errore._each non è un errore di funzione* nella console nel pannello [!UICONTROL Admin].
+1. **ACSD-63244**: sono stati risolti i problemi in cui un errore di JavaScript impedisce il corretto rendering di [!DNL Google Maps] e in cui sono presenti molti *errori di tipo non rilevati: questo._each non è un errore di funzione* nella console nel pannello [!UICONTROL Admin].
 1. **ACSD-63242**: risolve il problema della lentezza di importazione quando si aggiungono prodotti catalogo con più di 10.000 voci.
 1. **ACSD-63062**: è stato risolto il problema che causava l&#39;applicazione di più regole di sovrapposizione quando si verificavano calcoli non corretti dello sconto sul carrello.
 1. **ACSD-62979**: è stato corretto il problema per cui l&#39;utilizzo di [!UICONTROL Store ID] errato nell&#39;intestazione di GraphQL causava un errore irreversibile di memoria.
@@ -33,6 +33,6 @@ QPT v1.1.56 include le seguenti patch:
 1. **ACSD-61805**: è stato risolto il problema che causava l&#39;esaurimento delle scorte dei prodotti nella vetrina dopo l&#39;aggiornamento dello stato dell&#39;ordine inevaso tramite [!DNL REST API].
 1. **ACSD-60811**: è stato corretto il problema per cui l&#39;aggiornamento dello stato dell&#39;ordine con un valore o un commento personalizzato è possibile solo se lo stato corrente è *[!UICONTROL Processing]* o *[!UICONTROL Fraud]*.
 1. **ACSD-62952**: è stato risolto il problema che causava la visualizzazione non corretta della data [!UICONTROL Gift Registry] nella vetrina.
-1. **ACSD-55339**: è stato risolto il problema che causava la rimozione di [!DNL SKU]0 *da parte di un prodotto* che inizia con *0* (zero), impedendo l&#39;aggiornamento del preventivo.
+1. **ACSD-55339**: è stato risolto il problema che causava la rimozione di *0* da parte di un prodotto [!DNL SKU] che inizia con *0* (zero), impedendo l&#39;aggiornamento del preventivo.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
