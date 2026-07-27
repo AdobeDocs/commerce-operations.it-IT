@@ -7,7 +7,7 @@ exl-id: c7b72b1f-2f1b-4445-b842-5847d05d5ae9
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -63,17 +63,17 @@ L&#39;applicazione di più carte regalo a un singolo ordine con spedizione multi
 
 <u>Risultati effettivi</u>:
 
-Gli importi delle gift card sono misti con un errore *&quot;Correggere il codice gift card.&quot;* durante l&#39;ordine.
+Gli importi delle gift card sono misti con un errore *&quot;Correggere il codice gift card.&quot;* al momento dell’ordine.
 
 * Primo prodotto:
 
-   * Rimuovi gift card (00GXM6SUGBLW) - $15,00
-   * Rimuovi gift card (02KB8M0H0GRD) - $0,00
+  * Rimuovi gift card (00GXM6SUGBLW) - $15,00
+  * Rimuovi gift card (02KB8M0H0GRD) - $0,00
 
 * Secondo prodotto:
 
-   * Rimuovi gift card (00GXM6SUGBLW) - $25,00
-   * Rimuovi gift card (02KB8M0H0GRD) - $ 35,00
+  * Rimuovi gift card (00GXM6SUGBLW) - $25,00
+  * Rimuovi gift card (02KB8M0H0GRD) - $ 35,00
 
 ## Applicare la patch
 
