@@ -14,7 +14,7 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 97460ce784a4c97f42b6c60ba390b2260f60b5e6
+source-git-commit: e52becee703b046f5ffb00b01ca780311d711ec8
 workflow-type: tm+mt
 source-wordcount: 485
 ht-degree: 0%
@@ -34,13 +34,13 @@ QPT v1.1.82 include le seguenti patch:
 1. **ACP2E-4682**: è stato risolto il problema che si verificava quando, visitando una pagina di Storefront che controllava lo stato dell&#39;offerta `isActive`, venivano creati record di offerta vuoti ogni volta che veniva caricata la pagina.
 1. **ACP2E-4695**: è stato risolto il problema che impediva il completamento dell&#39;indicizzatore della regola del catalogo e utilizzava una quantità eccessiva di memoria, causando instabilità ed errori di memoria insufficiente.
 1. **ACP2E-4698**: è stato risolto il problema per cui la modifica di un&#39;immagine di nuovo nel contenuto di testo di Page Builder consente di salvare un URL multimediale assoluto anziché conservare una direttiva multimediale portatile.
-1. **ACP2E-4748**: è stato risolto il problema relativo alla scadenza lenta dei punti premio nei negozi con una cronologia dei punti premio di grandi dimensioni, che causa ritardi nella scadenza dei punti premio.
+1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**: è stato risolto il problema relativo alla scadenza lenta dei punti premio nei negozi con una cronologia dei punti premio di grandi dimensioni, causando ritardi nella scadenza dei punti premio.
 1. **ACP2E-4797**: è stato risolto il problema che impediva il corretto blocco dell&#39;immissione di caratteri Unicode a 4 byte nell&#39;editor di WYSIWYG o del contenuto di Page Builder nell&#39;amministratore anche quando il database è configurato per supportare `utf8mb4`.
 1. **ACP2E-4799**: è stato risolto il problema per cui la query GraphQL `requisition_lists` restituisce un valore `total_count` che riflette solo il numero di elementi nella pagina corrente invece del numero totale di elenchi di richieste di acquisto che corrispondono ai criteri della query.
-1. **ACP2E-4805**: è stato risolto il problema che rallenta notevolmente le richieste API di pagamento per i prodotti configurabili con molti prodotti secondari quando il primo prodotto secondario vendibile viene visualizzato in ritardo nell&#39;elenco.
+1. **[ACP2E-4805](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)**: è stato risolto il problema che rallenta notevolmente le richieste API di pagamento per i prodotti configurabili con molti prodotti secondari quando il primo prodotto secondario vendibile viene visualizzato in ritardo nell&#39;elenco.
 1. **ACP2E-4840**: è stato corretto il problema a causa del quale il valore di quantità richiesto nella query GraphQL `products` restituisce *null*.
 1. **ACP2E-4870**: è stato risolto il problema per cui **[!UICONTROL Product Alerts]** notifiche e-mail ignorano le impostazioni e-mail della visualizzazione archivio.
-1. **ACP2E-4875**: è stato risolto il problema che causava la disconnessione imprevista degli utenti amministratori dalla visualizzazione di account cliente con rubriche di grandi dimensioni in Amministratore.
+1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**: è stato risolto il problema che causava la disconnessione imprevista degli utenti Admin durante la visualizzazione di account cliente con rubriche di grandi dimensioni nell&#39;amministratore.
 1. **ACP2E-4894**: è stato risolto il problema che causava il ritardo nella visualizzazione dei nuovi ordini nelle griglie di gestione degli ordini di amministrazione quando **[!UICONTROL Asynchronous Indexing]** era abilitato negli archivi di grandi volumi.
 1. **ACP2E-4981**: è stato risolto il problema per cui i caroselli di prodotti Page Builder visualizzano i prodotti in un ordine che non riflette la posizione impostata nell&#39;amministratore e includono prodotti configurabili quando i prodotti secondari corrispondenti sono visibili singolarmente.
 
