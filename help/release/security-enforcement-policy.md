@@ -2,12 +2,25 @@
 title: 'Criterio di applicazione della sicurezza: azioni necessarie e scadenze'
 description: Scopri come applicare le misure di sicurezza per le versioni di Adobe Commerce on Cloud non supportate e le dipendenze dal software, comprese scadenze, azioni richieste e rischi.
 TQID: 'https://experienceleague.adobe.com/0JX-Z-dRjsiQk5jO-LLRi-J4GWdylTh4pOfXRPOabxs'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: f2261633-201d-46c5-8a66-999e70527a83
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: f2261633-201d-46c5-8a66-999e70527a83
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Solo Adobe Commerce su Cloud" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud."
 hide: true
 source-git-commit: 93446d5be993e53e94f714a592d519a945dfbebd
@@ -43,7 +56,7 @@ Nella tabella seguente, trova la tua versione di Adobe Commerce on Cloud qui sot
 
 **Tabella 1: azioni richieste e scadenze per versione**
 
-| **Versione** | **[Azione 1:<br>Aggiorna dipendenze software di terze parti](#action-1-upgrade-third-party-software-dependencies)** | **Azione 2:<br>[Aggiorna o migra la versione di Adobe Commerce](#action-2-upgrade-to-a-supported-adobe-commerce-version)** |
+| **Versione** | **[Azione 1:<br>Aggiorna dipendenze software di terze parti](#action-1-upgrade-third-party-software-dependencies)**&#x200B; | &#x200B;** Azione 2:<br>[Aggiorna o migra la versione di Adobe Commerce](#action-2-upgrade-to-a-supported-adobe-commerce-version)** |
 | --- | --- | --- |
 | 2.4.4 o 2.4.5 | Azione richiesta entro il 30 ottobre 2026. | Azione richiesta entro il 1° giugno 2027 |
 | 2.4.6 o 2.4.7 | Azione richiesta entro il 30 ottobre 2026 o il 31 maggio 2027, a seconda del software. | Azione richiesta entro il 1° giugno 2028 |
