@@ -10,9 +10,9 @@ topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="Commerce su Cloud" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud."
 nudge: true
-source-git-commit: 5f0b6f7a04ee96b2aa650ee242e31d383bd7512b
+source-git-commit: 0c69ccdfcb3592a717b8b3a5a59762c8daeceec7
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2524'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,9 @@ L&#39;impostazione della variabile di distribuzione `VALKEY_BACKEND` su `symfony
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9 include miglioramenti alla cache di Symfony L2, tra cui l&#39;archiviazione dei tag della cache, l&#39;annullamento della validità e la compressione, con la patch ACP2E-5132, la riduzione dell&#39;I/O del disco, l&#39;eliminazione delle voci di cache obsolete e la riduzione del sovraccarico di memoria e rete. Consulta [Prestazioni e affidabilità migliorate della cache L2 di Symfony](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability.md) nella _Guida alla configurazione di Adobe Commerce_. La patch ACP2E-5132 è inclusa nelle patch cloud e applicata automaticamente tramite strumenti ece.
+>La patch ACP2E-5132 per Adobe Commerce 2.4.9 migliora le prestazioni e l&#39;affidabilità della cache L2 di Symfony, ottimizzando l&#39;archiviazione dei tag, un blocco di rigenerazione della cache non aggiornata e correzioni per appartenenze ai tag non aggiornate dopo il retagging, scritture remote ridondanti su salvataggi non modificati ed eliminazione basata sulle dimensioni L1 (`cleanup_percentage`). Ciò riduce l&#39;I/O del disco e il carico di back-end, migliorando la coerenza della cache. Consulta [Prestazioni e affidabilità migliorate della cache L2 di Symfony](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability) nella _Guida alla configurazione di Adobe Commerce_.
+>
+>La patch è inclusa nel pacchetto [Patch cloud per Commerce](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) (una dipendenza di `ece-tools`) e viene applicata automaticamente durante la distribuzione quando si esegue l&#39;aggiornamento alla versione `ece-tools` più recente. Aggiornare alla versione più recente di `ece-tools` per ricevere la patch.
 
 #### Personalizzare la configurazione della cache di Symfony L2
 
