@@ -4,13 +4,13 @@ description: Applica la patch ACSD-62146 per risolvere il problema Adobe Commerc
 feature: Customers, Checkout
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3de3de80383372d0e3bec5485fd65b9d70fe8860
+exl-id: 2a2f1afe-8a48-4beb-b78d-a894b685717d
+source-git-commit: 4e6eaf9519fd74e407c25992d367babfddf404a7
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62146: l&#39;indirizzo di fatturazione selezionato scompare nella pagina pagamento pagamento pagamento pagamento pagamento pagamento
 
@@ -28,7 +28,7 @@ La patch di ACSD-62146 risolve il problema che causa la scomparsa dell&#39;indir
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -59,7 +59,7 @@ L&#39;indirizzo di fatturazione predefinito e l&#39;indirizzo di spedizione sele
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

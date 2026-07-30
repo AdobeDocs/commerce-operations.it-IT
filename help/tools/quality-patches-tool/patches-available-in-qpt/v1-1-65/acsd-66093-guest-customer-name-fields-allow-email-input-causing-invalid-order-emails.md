@@ -28,7 +28,7 @@ La patch ACSD-66093 risolve il problema relativo all&#39;immissione degli indiri
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -46,7 +46,7 @@ La patch ACSD-66093 risolve il problema relativo all&#39;immissione degli indiri
 
 <u>Risultati previsti</u>:
 
-I messaggi di convalida devono essere visualizzati per indicare che i campi **[!UICONTROL First Name]** e **[!UICONTROL Last Name]** non sono validi, ad esempio *First Name non è valido. e Cognome non validi.* e l&#39;ordine non deve essere effettuato.
+I messaggi di convalida devono essere visualizzati per indicare che i campi **[!UICONTROL First Name]** e **[!UICONTROL Last Name]** non sono validi, ad esempio *First Name non è valido. e Cognome non valido!* e l’ordine non deve essere effettuato.
 
 <u>Risultati effettivi</u>:
 
@@ -59,7 +59,7 @@ L’e-mail di conferma dell’ordine viene inviata a tutte e tre le e-mail: test
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
