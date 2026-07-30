@@ -7,7 +7,7 @@ exl-id: 6c19773d-cb75-409f-bbd7-78d285a0252a
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Il messaggio di errore descrive informazioni mancanti o errate necessarie per l&
 
 Risultati effettivi:
 
-L&#39;indirizzo *dell&#39;errore è obbligatorio. Inserisci e riprova.* viene visualizzato.
+L&#39;indirizzo *dell&#39;errore è obbligatorio. Immettere e riprovare.* visualizzazioni.
 
 ## Applicare la patch
 

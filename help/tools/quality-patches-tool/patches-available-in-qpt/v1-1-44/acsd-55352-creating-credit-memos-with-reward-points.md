@@ -7,7 +7,7 @@ exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,13 @@ Dopo aver creato una nota di credito parziale con punti premio cliente, lo stato
 2. Vai a **[!UICONTROL Stores]** > **[!UICONTROL Other Setting]** > **[!UICONTROL Reward Exchange Rates]** > **[!UICONTROL Add New Rate]**.
 3. Aggiungi due tassi:
    * *[!UICONTROL First]*:
-      * *[!UICONTROL Direction]* = *Punti alla valuta*
-      * *[!UICONTROL Rate]* = *100*
-      * *[!UICONTROL Upper Boundary]* = *100*
+     * *[!UICONTROL Direction]* = *Punti alla valuta*
+     * *[!UICONTROL Rate]* = *100*
+     * *[!UICONTROL Upper Boundary]* = *100*
    * *[!UICONTROL Second]*:
-      * *[!UICONTROL Direction]* = *Valuta in punti*
-      * *[!UICONTROL Rate]* = *100*
-      * *[!UICONTROL Upper Boundary]* = *100*
+     * *[!UICONTROL Direction]* = *Valuta in punti*
+     * *[!UICONTROL Rate]* = *100*
+     * *[!UICONTROL Upper Boundary]* = *100*
 4. Crea un prodotto semplice con prezzo di *$100* e con *Qtà* : *100*.
 5. Crea un cliente dalla vetrina.
 6. Vai di nuovo al backend: **[!UICONTROL Customers]** > **[!UICONTROL All Customers]** > **[!UICONTROL Edit]** > **[!UICONTROL Reward Points]** > **[!UICONTROL Update Points]** > Aggiungi *100* e salva il cliente.

@@ -7,7 +7,7 @@ exl-id: 5838a740-018d-44c2-8135-54426ea08627
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ La patch ACSD-59865 risolve il problema per cui il valore *[!UICONTROL Discount 
    * Seleziona tutti i *siti Web* e i *gruppi di clienti*
    * Imposta **[!UICONTROL Priority]** = *0*
    * Vai alla sezione **[!UICONTROL Actions]**:
-      * Imposta **[!UICONTROL Apply]** = *Percentuale di sconto sul prezzo del prodotto*
-      * Imposta **[!UICONTROL Discount amount]** = *10*
-      * Imposta **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
-      * Imposta **[!UICONTROL Discount Qty Step (Buy X)]** = *0*
-      * Imposta **[!UICONTROL Discard subsequent rules]** su *No*
+     * Imposta **[!UICONTROL Apply]** = *Percentuale di sconto sul prezzo del prodotto*
+     * Imposta **[!UICONTROL Discount amount]** = *10*
+     * Imposta **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
+     * Imposta **[!UICONTROL Discount Qty Step (Buy X)]** = *0*
+     * Imposta **[!UICONTROL Discard subsequent rules]** su *No*
 1. Cancella la cache.
 1. Vai alla vetrina, aggiungi un elemento al carrello e procedi a *pagamento/carrello*.
 1. Verifica che lo sconto *10%* sia applicato al carrello.
@@ -55,10 +55,10 @@ La patch ACSD-59865 risolve il problema per cui il valore *[!UICONTROL Discount 
    * Seleziona tutti **[!UICONTROL Websites]** e **[!UICONTROL Customer Groups]**
    * Imposta **[!UICONTROL Priority]** = *2*
    * Passare alla sezione **[!UICONTROL Actions]**:
-      * Imposta **[!UICONTROL Apply]** = *Percentuale di sconto sul prezzo del prodotto*
-      * Imposta **[!UICONTROL Discount amount]** = *20*
-      * Imposta **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
-      * Imposta **[!UICONTROL Discount Qty Step (Buy X)]** = *3*
+     * Imposta **[!UICONTROL Apply]** = *Percentuale di sconto sul prezzo del prodotto*
+     * Imposta **[!UICONTROL Discount amount]** = *20*
+     * Imposta **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
+     * Imposta **[!UICONTROL Discount Qty Step (Buy X)]** = *3*
 1. Cancella la cache.
 1. Torna di nuovo alla vetrina.
 1. Aggiorna il carrello per aggiornare le regole. Verificare che lo sconto *10%* non sia più applicato.

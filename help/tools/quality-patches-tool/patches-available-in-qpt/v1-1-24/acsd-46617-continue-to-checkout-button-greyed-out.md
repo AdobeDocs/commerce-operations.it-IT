@@ -7,7 +7,7 @@ exl-id: 8e808fce-d31c-49ef-94e5-f5c89fffaa73
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -45,10 +45,10 @@ Il pulsante **[!UICONTROL Continue to Checkout]** è disattivato anche se il sub
    * [!UICONTROL Coupon Code]: *[!UICONTROL TEST (optional)]*
    * [!UICONTROL Conditions]: *[!UICONTROL Keep empty]*
    * [!UICONTROL Actions]:
-      * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
-      * &#x200B;
-        [!UICONTROL Discount Amount]: *92*
-      * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
+     * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
+     * &#x200B;
+       [!UICONTROL Discount Amount]: *92*
+     * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
 1. Crea un prodotto al prezzo di 25 $.
 1. Aggiungi il prodotto al carrello.
 1. Vai al carrello, seleziona il metodo $5 **[!UICONTROL Flat Rate shipping]** e applica il codice del coupon.

@@ -7,7 +7,7 @@ exl-id: 79fb3161-f56e-45f3-9933-cf95703f1554
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -40,12 +40,12 @@ La funzionalità del carrello persistente non riesce quando si utilizza la fines
 
    * Passa a **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** > **[!UICONTROL Checkout Options]** e imposta *[!UICONTROL Allow Guest Checkout]* su *No*.
 
-      * Fare clic su **[!UICONTROL Save Config]**.
+     * Fare clic su **[!UICONTROL Save Config]**.
 
    * Passa a **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Persistent Shopping Cart]** > **[!UICONTROL General Options]** e imposta *[!UICONTROL Enable Persistence]* su *Sì*.
    * Lascia tutte le altre impostazioni predefinite, ma cambia *[!UICONTROL Clear Persistence on Sign Out]* in *No*.
 
-      * Fare clic su **[!UICONTROL Save Config]**.
+     * Fare clic su **[!UICONTROL Save Config]**.
 
 1. Vai a **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > **[!UICONTROL Add product]** per aggiungere un prodotto semplice al catalogo.
 

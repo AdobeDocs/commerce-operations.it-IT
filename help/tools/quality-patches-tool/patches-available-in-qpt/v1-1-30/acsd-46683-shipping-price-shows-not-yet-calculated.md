@@ -7,7 +7,7 @@ exl-id: ebd79187-2835-403b-945d-80ac34d6fb9c
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -49,20 +49,20 @@ I moduli Adobe Commerce Inventory management (MSI) sono installati.
    * Priorità = 1
    * Condizioni: Subtotale uguale o maggiore di *$75*
    * Azioni:
-      * Applica a importo spedizione = Sì
-      * Ignora regole successive = No
-      * Spedizione gratuita = per spedizioni con articoli corrispondenti
+     * Applica a importo spedizione = Sì
+     * Ignora regole successive = No
+     * Spedizione gratuita = per spedizioni con articoli corrispondenti
 1. Crea un&#39;altra regola di prezzo carrello:
    * Nome = *35off*
    * Priorità = 0
    * Coupon = Coupon specifico
    * Codice coupon = 35off
    * Azioni:
-      * Applica = percentuale di sconto sul prezzo del prodotto
-      * Importo sconto = 35
-      * Applica a importo spedizione = No
-      * Ignora regole successive = Sì
-      * Spedizione gratuita = No
+     * Applica = percentuale di sconto sul prezzo del prodotto
+     * Importo sconto = 35
+     * Applica a importo spedizione = No
+     * Ignora regole successive = Sì
+     * Spedizione gratuita = No
 1. Apri la vetrina e aggiungi tre prodotti al carrello in modo che il subtotale superi $ 75.
 1. Procedi al pagamento come ospite.
 1. Nel passaggio di spedizione, selezionare **$0 - spedizione gratuita** e procedere al passaggio di pagamento.

@@ -46,7 +46,7 @@ La patch ACSD-66093 risolve il problema relativo all&#39;immissione degli indiri
 
 <u>Risultati previsti</u>:
 
-I messaggi di convalida devono essere visualizzati per indicare che i campi **[!UICONTROL First Name]** e **[!UICONTROL Last Name]** non sono validi, ad esempio *First Name non è valido. e Cognome non validi.* e l&#39;ordine non deve essere effettuato.
+I messaggi di convalida devono essere visualizzati per indicare che i campi **[!UICONTROL First Name]** e **[!UICONTROL Last Name]** non sono validi, ad esempio *First Name non è valido. e Cognome non valido!* e l’ordine non deve essere effettuato.
 
 <u>Risultati effettivi</u>:
 

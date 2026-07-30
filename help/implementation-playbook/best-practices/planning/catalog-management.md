@@ -6,7 +6,7 @@ feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1444'
 ht-degree: 0%
 
 ---
@@ -197,12 +197,12 @@ Configurare troppi SKU di prodotto può influire sulle prestazioni rallentando i
 Per ridurre il numero di prodotti (SKU), utilizza le seguenti strategie:
 
 - Riduci al minimo i moltiplicatori:
-   - Il consolidamento dei siti web riduce il moltiplicatore.
-   - Utilizza funzioni di prodotto alternative per i prezzi personalizzati al posto dei moltiplicatori di cataloghi e gruppi di clienti condivisi.
-   - Sia i gruppi di clienti che il catalogo condiviso fungono da moltiplicatori per il numero di SKU effettivi in un negozio.
+  - Il consolidamento dei siti web riduce il moltiplicatore.
+  - Utilizza funzioni di prodotto alternative per i prezzi personalizzati al posto dei moltiplicatori di cataloghi e gruppi di clienti condivisi.
+  - Sia i gruppi di clienti che il catalogo condiviso fungono da moltiplicatori per il numero di SKU effettivi in un negozio.
 - Ristrutturare il catalogo:
-   - Riduci il numero di prodotti assegnati alle categorie.
-   - Diminuisci il numero di SKU diminuendo il numero di siti web, gruppi di clienti, cataloghi condivisi, numero di prodotti o numero di opzioni di prodotto configurabili
+  - Riduci il numero di prodotti assegnati alle categorie.
+  - Diminuisci il numero di SKU diminuendo il numero di siti web, gruppi di clienti, cataloghi condivisi, numero di prodotti o numero di opzioni di prodotto configurabili
 - Puoi fornire più varianti di prodotto utilizzando opzioni personalizzate anziché creare prodotti separati.
 - Tenendo conto del fatto che una SKU effettiva potrebbe includere una serie di potenziali permutazioni dei prezzi, poiché i prezzi possono essere specificati in modo diverso per ogni negozio o gruppo di clienti.
 - Disattiva o rimuovi i componenti di sistema inutilizzati come i moduli. Consulta [Disinstallare i moduli](../../../installation/tutorials/uninstall-modules.md).
@@ -241,11 +241,11 @@ Il superamento del numero consigliato di varianti di prodotto può influire sull
 Segui queste best practice per configurare vendite e promozioni per gli articoli in un carrello:
 
 - **Regole di vendita (regole prezzo carrello)**
-   - Gestisci e rimuovi le regole non utilizzate.
-   - Aggiungi condizioni di regola rigide (come un filtro di attributi o categorie) per ottenere la corrispondenza più efficiente.
+  - Gestisci e rimuovi le regole non utilizzate.
+  - Aggiungi condizioni di regola rigide (come un filtro di attributi o categorie) per ottenere la corrispondenza più efficiente.
 - **Coupon**
-   - Rimuovere i coupon inutilizzati e scaduti.
-   - Genera solo il numero di coupon necessari per soddisfare i requisiti della campagna.
+  - Rimuovere i coupon inutilizzati e scaduti.
+  - Genera solo il numero di coupon necessari per soddisfare i requisiti della campagna.
 
 ### Prodotti e versioni interessati
 

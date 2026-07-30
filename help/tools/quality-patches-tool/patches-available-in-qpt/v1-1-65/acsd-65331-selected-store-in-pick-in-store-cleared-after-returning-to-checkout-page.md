@@ -7,7 +7,7 @@ type: Troubleshooting
 exl-id: 10aaf898-feca-4485-90f6-6b3a9ea013b2
 source-git-commit: dc5df9e918adffe8d6901478a676d9da36b33bcc
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ L&#39;archivio selezionato nell&#39;opzione **[!UICONTROL Pick In Store]** viene
 1. Configurare una chiave API [!DNL Google] valida per [!UICONTROL Google Distance Provider] passando a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Google Distance Provider]**.
 1. Vai a **[!UICONTROL Stores]** > **[!UICONTROL Sources]** > **[!UICONTROL Add New Source]** per aggiungere una nuova origine con i seguenti dettagli:
 
-   * **[!UICONTROL Latitude]**: *41,917344*
+   * **[!UICONTROL Latitude]**: *41.917344*
    * **[!UICONTROL Longitude]**: *-88.102569*
    * **[!UICONTROL Use as Pickup Location]**: *Sì*
    * **[!UICONTROL Country]**: *Stati Uniti*
