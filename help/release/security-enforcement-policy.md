@@ -21,7 +21,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-badgePaas: label="Solo Adobe Commerce su Cloud" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo alla versione 2.4.4 di Adobe Commerce on Cloud - 2.4.9"
+badgePaas: label="Solo Adobe Commerce su Cloud" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo alla versione 2.4.4 di Adobe Commerce on Cloud - 2.4.9"
 nudge: true
 source-git-commit: 85ff49e8a7dbf4ee8c2eef801bd44f45db0a21a5
 workflow-type: tm+mt
@@ -82,7 +82,7 @@ Per verificare quale versione si sta eseguendo, è necessario ricevere assistenz
 
    La versione corrente deve essere visualizzata nell’angolo in basso a destra di qualsiasi pagina Amministratore.
 
-1. Se la versione non viene visualizzata nell&#39;amministratore, utilizzare lo strumento della riga di comando [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"} per eseguire il comando version:
+1. Se la versione non viene visualizzata nell&#39;amministratore, utilizzare lo strumento della riga di comando [Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"} per eseguire il comando version:
 
    ```shell
    bin/magento --version
@@ -97,7 +97,7 @@ Per istruzioni dettagliate, consulta la documentazione di [Configurazione dei se
 
 ## Perché questo mandato di sicurezza è importante
 
-Il software che ha superato la fine del supporto del fornitore non riceve più patch di sicurezza, il che significa che non è possibile risolvere i problemi di sicurezza noti in tale software. Inoltre, in base a [Adobe Lifecycle Policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy):
+Il software che ha superato la fine del supporto del fornitore non riceve più patch di sicurezza, il che significa che non è possibile risolvere i problemi di sicurezza noti in tale software. Inoltre, in base a [Adobe Lifecycle Policy](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/lifecycle-policy):
 
 * **Le versioni 2.4.4 e 2.4.5** di Adobe Commerce ricevono ora solo correzioni di sicurezza limitate e isolate per l&#39;applicazione principale fino al 31 maggio 2027. Questo supporto limitato non include correzioni di qualità, supporto di compatibilità per le dipendenze delle applicazioni (ad esempio, PHP) o aggiornamenti delle dipendenze della piattaforma
 
@@ -136,7 +136,7 @@ A seconda del software, tutte le dipendenze software non supportate devono esser
 
 Adobe ti aiuterà ad aggiornare direttamente queste dipendenze software.
 
-* **Guida introduttiva:** Apri un [ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) elencando gli ambienti da aggiornare e le dipendenze coinvolte. Apri il ticket almeno 30 giorni prima della data di applicazione in modo che il nostro team possa pianificare il lavoro.
+* **Guida introduttiva:** Apri un [ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) elencando gli ambienti da aggiornare e le dipendenze coinvolte. Apri il ticket almeno 30 giorni prima della data di applicazione in modo che il nostro team possa pianificare il lavoro.
 
 * **Inattività:** Adobe confermerà con te la finestra prevista durante la pianificazione.
 
@@ -169,7 +169,7 @@ Per ulteriori informazioni su Adobe Commerce on Cloud versione 2.4.9 e Adobe Com
 
 | | Adobe Commerce su Cloud versione 2.4.9 | Adobe Commerce as a Cloud Service |
 | --- | --- | --- |
-| Che cos’è | L’ultima versione di Adobe Commerce con copertura totale della sicurezza, correzioni di qualità e aggiornamenti delle dipendenze dalla piattaforma. | Piattaforma commerce completamente gestita di Adobe, progettata per l&#39;innovazione continua senza sovraccarichi di upgrade. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview). |
+| Che cos’è | L’ultima versione di Adobe Commerce con copertura totale della sicurezza, correzioni di qualità e aggiornamenti delle dipendenze dalla piattaforma. | Piattaforma commerce completamente gestita di Adobe, progettata per l&#39;innovazione continua senza sovraccarichi di upgrade. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/commerce/cloud-service/overview). |
 | Consigliato per te se | Per il momento è necessario continuare a gestire l&#39;infrastruttura, gli aggiornamenti e le patch. Puoi eseguire la migrazione ad Adobe Commerce as a Cloud Service quando lo desideri. | Desideri lasciare i cicli di aggiornamento indietro per sempre, ridurre il costo totale di proprietà e ottenere automaticamente le funzionalità più recenti di Adobe, senza alcun sforzo aggiuntivo. |
 | Vantaggi chiave | Soddisfa ora i requisiti di sicurezza mantenendo la configurazione esistente. | Una vetrina fulminea e all’avanguardia, un catalogo altamente scalabile, la gestione nativa delle risorse digitali e l’intelligenza artificiale generativa integrata, il tutto su un’infrastruttura gestita da Adobe. |
 
@@ -187,16 +187,16 @@ Adobe offre strumenti e supporto per rendere la transizione più fluida possibil
 
 * **Rapporto compatibilità aggiornamento:** Adobe fornisce un rapporto dettagliato che identifica esattamente ciò che richiede l&#39;aggiornamento ad Adobe Commerce versione 2.4.9, inclusi l&#39;ambito di tempo e costi. [Genera il tuo report di compatibilità per l&#39;aggiornamento](https://supportinsights.adobe.com/commerce/tab/main).
 
-* **Aggiornamento dipendenze software:** Poiché non è possibile aggiornare direttamente le dipendenze software, [apri un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"} per consentire ad Adobe di gestire l&#39;aggiornamento. Per ulteriori dettagli, vedere [Configurare i servizi](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
+* **Aggiornamento dipendenze software:** Poiché non è possibile aggiornare direttamente le dipendenze software, [apri un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"} per consentire ad Adobe di gestire l&#39;aggiornamento. Per ulteriori dettagli, vedere [Configurare i servizi](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
 
 **Se scegli di migrare ad Adobe Commerce as a Cloud Service**
 
-Adobe fornisce strumenti che riducono i costi e i tempi di migrazione ad Adobe Commerce as a Cloud Service. Questo non ti costa nulla. Questi strumenti sono applicabili solo alla migrazione e non vengono utilizzati per l’aggiornamento di una versione in Adobe Commerce on Cloud. Consulta la [panoramica sulla migrazione](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview) per la guida completa alla migrazione, inclusi i percorsi e le fasi di migrazione.
+Adobe fornisce strumenti che riducono i costi e i tempi di migrazione ad Adobe Commerce as a Cloud Service. Questo non ti costa nulla. Questi strumenti sono applicabili solo alla migrazione e non vengono utilizzati per l’aggiornamento di una versione in Adobe Commerce on Cloud. Consulta la [panoramica sulla migrazione](https://experienceleague.adobe.com/it/docs/commerce/cloud-service/migration/overview) per la guida completa alla migrazione, inclusi i percorsi e le fasi di migrazione.
 
-* **Valutazione della migrazione:** valuta la complessità della migrazione delle personalizzazioni. Consulta la [Panoramica dello strumento di valutazione della migrazione](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/assessment).
+* **Valutazione della migrazione:** valuta la complessità della migrazione delle personalizzazioni. Consulta la [Panoramica dello strumento di valutazione della migrazione](https://experienceleague.adobe.com/it/docs/commerce/cloud-service/migration/migration-tools/assessment).
 
 * **Migrazione dati:** Lo strumento di [migrazione dati in massa e incrementale](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data) sposta i dati nel nuovo ambiente Adobe Commerce as a Cloud Service.
 
 * Gli strumenti per sviluppatori e la migrazione assistita da [AI di Adobe](https://developer.adobe.com/commerce/extensibility/developer-agent/), inclusi **[!DNL Adobe Developer App Builder]** e **[!DNL Commerce Storefront powered by Edge Delivery Services]**, aiutano ad accelerare la modernizzazione della vetrina e la ridefinizione della piattaforma delle estensioni.
 
-In caso di domande, contatta il team del tuo account, il Solution Account Manager, lo specialista del rinnovo o contatta [Servizi di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
+In caso di domande, contatta il team del tuo account, il Solution Account Manager, lo specialista del rinnovo o contatta [Servizi di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
