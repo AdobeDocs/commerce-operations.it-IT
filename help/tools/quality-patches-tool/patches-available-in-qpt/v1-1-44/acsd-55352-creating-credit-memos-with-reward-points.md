@@ -7,14 +7,14 @@ exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
 
 # ACSD-55352: Creazione di note di credito con punti premio
 
-La patch ACSD-55352 risolve il problema per cui dopo aver creato una nota di credito parziale con punti premio cliente, lo stato dell&#39;ordine diventa *chiuso* e le opzioni della nota di credito scompaiono dalla pagina dell&#39;ordine amministratore. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.44. L’ID della patch è ACSD-55352. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.
+La patch ACSD-55352 risolve il problema per cui dopo aver creato una nota di credito parziale con punti premio cliente, lo stato dell&#39;ordine diventa *chiuso* e le opzioni della nota di credito scompaiono dalla pagina dell&#39;ordine amministratore. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.44. L’ID della patch è ACSD-55352. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.
 
 ## Prodotti e versioni interessati
 
@@ -28,7 +28,7 @@ La patch ACSD-55352 risolve il problema per cui dopo aver creato una nota di cre
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -40,13 +40,13 @@ Dopo aver creato una nota di credito parziale con punti premio cliente, lo stato
 2. Vai a **[!UICONTROL Stores]** > **[!UICONTROL Other Setting]** > **[!UICONTROL Reward Exchange Rates]** > **[!UICONTROL Add New Rate]**.
 3. Aggiungi due tassi:
    * *[!UICONTROL First]*:
-      * *[!UICONTROL Direction]* = *Punti alla valuta*
-      * *[!UICONTROL Rate]* = *100*
-      * *[!UICONTROL Upper Boundary]* = *100*
+     * *[!UICONTROL Direction]* = *Punti alla valuta*
+     * *[!UICONTROL Rate]* = *100*
+     * *[!UICONTROL Upper Boundary]* = *100*
    * *[!UICONTROL Second]*:
-      * *[!UICONTROL Direction]* = *Valuta in punti*
-      * *[!UICONTROL Rate]* = *100*
-      * *[!UICONTROL Upper Boundary]* = *100*
+     * *[!UICONTROL Direction]* = *Valuta in punti*
+     * *[!UICONTROL Rate]* = *100*
+     * *[!UICONTROL Upper Boundary]* = *100*
 4. Crea un prodotto semplice con prezzo di *$100* e con *Qtà* : *100*.
 5. Crea un cliente dalla vetrina.
 6. Vai di nuovo al backend: **[!UICONTROL Customers]** > **[!UICONTROL All Customers]** > **[!UICONTROL Edit]** > **[!UICONTROL Reward Points]** > **[!UICONTROL Update Points]** > Aggiungi *100* e salva il cliente.
@@ -73,14 +73,14 @@ Dopo aver creato una nota di credito parziale con punti premio cliente, lo stato
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
-* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
+* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
 
 
-Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella guida di [!DNL Quality Patches Tool].
+Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida di [!DNL Quality Patches Tool].

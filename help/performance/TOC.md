@@ -5,8 +5,8 @@ feature: Best Practices
 topic: Administration, Commerce, Development, Performance
 source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 2%
+source-wordcount: '52'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 - [Configurazione](configuration.md)
 - [Flusso di distribuzione](deployment-flow.md)
 - Concetti avanzati {#concepts}
-   - [Configurazione avanzata](advanced-setup.md)
-   - [Avanzato [!DNL JavaScript] raggruppamento](advanced-js-bundling.md)
-   - [Server applicazioni GraphQL](application-server.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+  - [Configurazione avanzata](advanced-setup.md)
+  - [Avanzato [!DNL JavaScript] raggruppamento](advanced-js-bundling.md)
+  - [Server applicazioni GraphQL](application-server.md)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

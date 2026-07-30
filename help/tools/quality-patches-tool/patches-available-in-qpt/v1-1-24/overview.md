@@ -7,7 +7,7 @@ exl-id: 7f88a28b-f166-4c5b-8d69-239c57cc4001
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ QPT v1.1.24 include le seguenti patch:
 1. **ACSD-47004**: risolve il problema per cui l&#39;IVA non viene applicata a un indirizzo di fatturazione senza un ID IVA.
 1. **ACSD-47079**: risolve il problema che impedisce l&#39;aggiornamento dello stato delle scorte dei prodotti compositi (bundle, raggruppati e configurabili) quando lo stato delle scorte dei prodotti secondari cambia tramite REST API POST /rest/V1/inventory/source-items.
 1. **ACSD-47137**: migliora la velocità di caricamento della raccolta immagini quando la cartella pub/media è molto grande.
-1. **ACSD-47336**: Correzioni di *Si è verificato un errore.* errore durante l&#39;eliminazione delle notifiche nell&#39;amministrazione di Commerce.
+1. **ACSD-47336**: Correzioni di *Si è verificato un errore.* durante la rimozione delle notifiche in Commerce Admin.
 1. **ACSD-47559**: è stato corretto il problema per cui l&#39;area Anteprima modello e-mail non era completamente visibile.
 1. **ACSD-47803**: è stato risolto il problema che causava la visualizzazione dei campioni di prodotto configurabili esauriti come disponibili.
 1. **ACSD-47920**: è stato risolto il problema che consentiva di effettuare gli ordini tramite l&#39;API REST come utente guest anche quando *Consenti estrazione guest* è disattivato.
