@@ -2,7 +2,8 @@
 title: Criterio di rilascio
 description: Scopri i tipi di versioni di Adobe Commerce, il controllo delle versioni di marketing e dei moduli, le versioni di patch e sicurezza, i beta, gli hotfix e i criteri di rilascio generali.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
+last-update: 2026-06-18T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%

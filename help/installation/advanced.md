@@ -2,7 +2,8 @@
 title: Installazione on-premise avanzata
 description: Scopri gli scenari di installazione avanzata per le distribuzioni Adobe Commerce on-premise. Scopri configurazioni complesse e opzioni di configurazione personalizzate.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '2527'
 ht-degree: 0%
@@ -119,7 +120,7 @@ Le opzioni seguenti specificano le informazioni utente e le credenziali per l’
 
 Puoi creare l’utente amministratore durante o dopo l’installazione. Se crei l’utente durante l’installazione, sono necessarie tutte le variabili delle credenziali amministratore. Vedi [Esempi di installazioni localhost](#sample-localhost-installations).
 
-Nelle tabelle seguenti sono disponibili molti parametri di installazione, ma non tutti. Per un elenco completo, vedere [Riferimento agli strumenti della riga di comando](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+Nelle tabelle seguenti sono disponibili molti parametri di installazione, ma non tutti. Per un elenco completo, vedere [Riferimento agli strumenti della riga di comando](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nome | Valore | Obbligatorio |
 |--- |--- |--- |
@@ -246,9 +247,9 @@ L’esempio seguente installa Adobe Commerce con le seguenti opzioni:
 
 * L’amministratore dispone delle seguenti proprietà:
 
-   * Il nome e il cognome sono `Magento User`
-   * Nome utente: `admin`, password: `admin123`
-   * Indirizzo di posta elettronica: `user@example.com`
+  * Il nome e il cognome sono `Magento User`
+  * Nome utente: `admin`, password: `admin123`
+  * Indirizzo di posta elettronica: `user@example.com`
 
 * La lingua predefinita è `en_US` (inglese americano)
 * La valuta predefinita è il dollaro statunitense
@@ -314,9 +315,9 @@ L’esempio seguente installa Adobe Commerce con le seguenti opzioni:
 
 * L’amministratore dispone delle seguenti proprietà:
 
-   * Il nome e il cognome sono `Magento User`
-   * Nome utente: `admin`, password: `admin123`
-   * Indirizzo di posta elettronica: `user@example.com`
+  * Il nome e il cognome sono `Magento User`
+  * Nome utente: `admin`, password: `admin123`
+  * Indirizzo di posta elettronica: `user@example.com`
 
 * La lingua predefinita è `en_US` (inglese americano)
 * La valuta predefinita è il dollaro statunitense

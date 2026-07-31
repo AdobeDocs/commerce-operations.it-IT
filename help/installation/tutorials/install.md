@@ -2,9 +2,10 @@
 title: Installare Adobe Commerce
 description: Per installare Adobe Commerce nell’infrastruttura di tua proprietà, segui la procedura riportata di seguito.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '2281'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
@@ -212,9 +213,9 @@ L&#39;esempio seguente installa l&#39;applicazione con le opzioni seguenti:
 
 * L’amministratore dispone delle seguenti proprietà:
 
-   * Il nome e il cognome sono `Commerce User`
-   * Nome utente: `admin`, password: `admin123`
-   * Indirizzo di posta elettronica: `user@example.com`
+  * Il nome e il cognome sono `Commerce User`
+  * Nome utente: `admin`, password: `admin123`
+  * Indirizzo di posta elettronica: `user@example.com`
 
 * La lingua predefinita è `en_US` (inglese americano)
 * La valuta predefinita è il dollaro statunitense
@@ -280,9 +281,9 @@ L&#39;esempio seguente installa l&#39;applicazione con le opzioni seguenti:
 
 * L’amministratore dispone delle seguenti proprietà:
 
-   * Il nome e il cognome sono `Commerce User`
-   * Nome utente: `admin`, password: `admin123`
-   * Indirizzo di posta elettronica: `user@example.com`
+  * Il nome e il cognome sono `Commerce User`
+  * Nome utente: `admin`, password: `admin123`
+  * Indirizzo di posta elettronica: `user@example.com`
 
 * La lingua predefinita è `en_US` (inglese americano)
 * La valuta predefinita è il dollaro statunitense
