@@ -3,7 +3,8 @@ title: Configurare Apache per il motore di ricerca
 description: Per configurare un motore di ricerca con il server web Apache per le installazioni locali di Adobe Commerce, segui la procedura riportata di seguito.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 0%
@@ -130,11 +131,11 @@ Dove
 
 * `<username>` può essere:
 
-   * Configurazione di cron: l’utente del server web o un altro utente.
+  * Configurazione di cron: l’utente del server web o un altro utente.
 
   In questo esempio, utilizziamo l’utente del server web, ma la scelta dell’utente dipende da te.
 
-   * Configurazione di Elasticsearch: l&#39;utente è denominato `magento_elasticsearch` in questo esempio
+  * Configurazione di Elasticsearch: l&#39;utente è denominato `magento_elasticsearch` in questo esempio
 
 * `<password file name>` deve essere un file nascosto (inizia con `.`) e deve riflettere il nome dell&#39;utente. Per ulteriori informazioni, consulta gli esempi più avanti in questa sezione.
 

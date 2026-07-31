@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d8ad9344c866eeffeda81e45ebe7de9376905638
+source-git-commit: 989662bcb4c1a3cc50cffae1d706501409898c64
 workflow-type: tm+mt
-source-wordcount: '10538'
+source-wordcount: '10533'
 ht-degree: 0%
 
 ---
@@ -1051,7 +1051,6 @@ ht-degree: 0%
   - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Riferimento per gli strumenti della riga di comando {#cli-reference}
   - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
-  - [Adobe Commerce Beta (on-premise)](reference/commerce-on-premises-beta.md)
   - [Upgrade Compatibility Tool](reference/uct.md)
 - Osservazione per Adobe Commerce {#observation-for-adobe-commerce}
   - [Introduzione](observation-for-adobe-commerce/intro.md)

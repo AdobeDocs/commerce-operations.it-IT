@@ -23,9 +23,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Solo Adobe Commerce su Cloud" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo alla versione 2.4.4 di Adobe Commerce on Cloud - 2.4.9"
 nudge: true
-source-git-commit: 7512d5cd3fa1917c87b53e25ca69a3dc3c813727
+source-git-commit: 6ecb6002982432b8d67c122569043da55939d915
 workflow-type: tm+mt
-source-wordcount: 1985
+source-wordcount: 1981
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Continuare a eseguire la vetrina di e-commerce su software non supportato crea u
 
 ### Azione 1: aggiornamento delle dipendenze software di terze parti
 
-A seconda del software, tutte le dipendenze software non supportate devono essere aggiornate in base alle timeline condivise nella tabella seguente. Puoi visualizzare gli ambienti nella [Cloud Console](https://console.adobecommerce.com/) e controllare le versioni delle dipendenze in esecuzione utilizzando queste [istruzioni](#check-software-dependency-versions). Gli aggiornamenti delle dipendenze software sono applicabili a tutte le versioni da 2.4.4 a 2.4.9 di Adobe Commerce on Cloud.
+A seconda del software, tutte le dipendenze software non supportate devono essere aggiornate in base alle timeline condivise nella tabella seguente. Puoi visualizzare gli ambienti nella [Cloud Console](https://console.adobecommerce.com/) e controllare le versioni delle dipendenze in esecuzione utilizzando queste [istruzioni](#how-to-check-the-versions-you-are-running). Gli aggiornamenti delle dipendenze software sono applicabili a tutte le versioni da 2.4.4 a 2.4.9 di Adobe Commerce on Cloud.
 
 | Dipendenza | Versione | Deve effettuare l’aggiornamento a | Data di applicazione |
 | --- | --- | --- | --- |
@@ -136,7 +136,7 @@ A seconda del software, tutte le dipendenze software non supportate devono esser
 
 Adobe ti aiuterà ad aggiornare direttamente queste dipendenze software.
 
-* **Guida introduttiva:** Apri un [ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) elencando gli ambienti da aggiornare e le dipendenze coinvolte. Apri il ticket almeno 30 giorni prima della data di applicazione in modo che il nostro team possa pianificare il lavoro.
+* **Guida introduttiva:** Apri un [ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) elencando gli ambienti da aggiornare e le dipendenze coinvolte. Apri il ticket almeno 30 giorni prima della data di applicazione in modo che il nostro team possa pianificare il lavoro.
 
 * **Inattività:** Adobe confermerà con te la finestra prevista durante la pianificazione.
 
@@ -187,7 +187,7 @@ Adobe offre strumenti e supporto per rendere la transizione più fluida possibil
 
 * **Rapporto compatibilità aggiornamento:** Adobe fornisce un rapporto dettagliato che identifica esattamente ciò che richiede l&#39;aggiornamento ad Adobe Commerce versione 2.4.9, inclusi l&#39;ambito di tempo e costi. [Genera il tuo report di compatibilità per l&#39;aggiornamento](https://supportinsights.adobe.com/commerce/tab/main).
 
-* **Aggiornamento dipendenze software:** Poiché non è possibile aggiornare direttamente le dipendenze software, [apri un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"} per consentire ad Adobe di gestire l&#39;aggiornamento. Per ulteriori dettagli, vedere [Configurare i servizi](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
+* **Aggiornamento dipendenze software:** Poiché non è possibile aggiornare direttamente le dipendenze software, [apri un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} per consentire ad Adobe di gestire l&#39;aggiornamento. Per ulteriori dettagli, vedere [Configurare i servizi](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
 
 **Se scegli di migrare ad Adobe Commerce as a Cloud Service**
 
