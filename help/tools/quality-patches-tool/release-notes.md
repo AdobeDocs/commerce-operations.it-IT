@@ -12,9 +12,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 09557adb586946f1a7c4f94cb7675dc2aa83551d
+source-git-commit: 7e9ebf390ec8fa458b3f55dcc5bd17b962702900
 workflow-type: tm+mt
-source-wordcount: 31872
+source-wordcount: 31874
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 ## v1.1.82 {#v1-1-82}
 
 * **ACP2E-4194** (per Adobe Commerce e Magento Open Source >=2.4.7-p10 &lt;2.4.8 || >=2.4.8-p5 &lt;2.4.9) - Corregge il problema per cui le risposte di GraphQL restituiscono codici di stato HTTP errati per le richieste non valide, non autorizzate o non corrette.
-* **ACP2E-4547** (per Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Corregge il problema per cui un utente amministratore non può utilizzare &#39;Aggiungi prodotti per SKU&#39; in Admin per aggiungere prodotti dal catalogo standard a un preventivo negoziabile per una società assegnata a un gruppo di clienti non collegato a un catalogo condiviso.
+* **ACP2E-4547** (per Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Corregge il problema per cui un utente amministratore non può utilizzare &#39;Aggiungi prodotti per SKU&#39; in Admin per aggiungere prodotti dal catalogo predefinito a un ordine per una società assegnata a un gruppo di clienti che non è collegato a un catalogo condiviso.
 * **ACP2E-4593** (per Adobe Commerce >=2.4.5 &lt;2.4.10) - Corregge il problema per cui la pagina CMS visualizzata per le restrizioni del sito Web può non essere corretta nei siti Web secondari in implementazioni multi-sito.
 * **ACP2E-4682** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.10) - Risolve il problema che si verificava quando, visitando una pagina di vetrina che controllava lo stato delle quotazioni `isActive` venivano creati record delle quotazioni vuoti a ogni caricamento della pagina.
 * **ACP2E-4695** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8): è stato risolto il problema che causava un consumo eccessivo di memoria e il mancato completamento dell&#39;indicizzatore della regola del catalogo, causando instabilità ed errori di memoria insufficiente.
@@ -456,7 +456,8 @@ ht-degree: 0%
 * **ACSD-61805** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corregge il problema relativo alla disponibilità di prodotti in magazzino dopo l&#39;aggiornamento dello stato dell&#39;ordine inevaso tramite [!DNL REST API].
 * **ACSD-60811** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corregge il problema per cui l&#39;aggiornamento dello stato dell&#39;ordine con un valore personalizzato o un commento è possibile solo se lo stato corrente è *elaborazione* o *frode*.
 * **ACSD-62952** (per Adobe Commerce >=2.4.4 &lt;2.4.8) - Risolve il problema relativo alla visualizzazione non corretta della data [!UICONTROL Gift Registry] nella vetrina.
-* **ACSD-55339** (per Adobe Commerce >=2.4.4 &lt;2.4.8) - Corregge il problema per cui un prodotto [!DNL SKU] che inizia con &quot;0&quot; (zero) rimuove lo &quot;0&quot;, impedendo l&#39;aggiornamento del preventivo.**
+* **ACSD-55339** (per Adobe Commerce >=2.4.4 &lt;2.4.8) - Corregge il problema per cui un prodotto [!DNL SKU] che inizia con &quot;0&quot; (zero) rimuove lo &quot;0&quot;, impedendo l&#39;aggiornamento del preventivo.
+**
 * Patch aggiornate: **ACSD-59514**
 * Versioni aggiornate: **ACSD-60816**
 * Patch sostituite: **ACSD-59967**
@@ -976,7 +977,7 @@ ht-degree: 0%
 ## v1.1.22 {#v1-1-22}
 
 * **ACSD-47444** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.3) - Corregge l&#39;errore _Tentativo di accedere all&#39;offset dell&#39;array sul valore del tipo bool_ durante l&#39;accesso a determinati percorsi di categoria non esistenti per prodotti noti in PHP 7.4.
-* **ACSD-47332** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema se cron non riesce e viene segnalato un errore solo se l&#39;esecuzione è compresa tra 00:00 e 00:59 UTC.
+* **ACSD-47332** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema di errore cron con un errore segnalato solo quando l&#39;esecuzione è tra le 00:00 e le 00:59 UTC.
 * **ACSD-47280** (per Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Corregge il problema per cui la disattivazione della funzione di catalogo condiviso in un ambito specifico non funziona correttamente.
 * **ACSD-47106** (per Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6) - Risolve il problema che impediva il salvataggio di un valore in un nuovo attributo personalizzato nella pagina di creazione di una società.
 * Aggiornamento della patch: ACSD-45143.

@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: e52becee703b046f5ffb00b01ca780311d711ec8
+source-git-commit: 9ea2dec8843119280f9ee291a89590024ddd2973
 workflow-type: tm+mt
-source-wordcount: 485
+source-wordcount: 484
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ QPT v1.1.82 include le seguenti patch:
 
 1. **ACP2E-4815**: sono stati risolti diversi problemi di GraphQL che causavano eccezioni PHP nei registri, la corretta associazione degli ordini agli account cliente creati dopo l&#39;ordine tramite GraphQL e l&#39;allineamento delle risposte alle specifiche GraphQL su HTTP.
 1. **ACP2E-4194**: è stato corretto il problema a causa del quale le risposte GraphQL restituivano codici di stato HTTP non corretti per richieste non valide, non autorizzate o non corrette.
-1. **ACP2E-4547**: è stato risolto il problema che impediva a un utente amministratore di utilizzare **[!UICONTROL Add Products by SKU]** nell&#39;amministratore per aggiungere prodotti dal catalogo standard a un preventivo negoziabile per una società assegnata a un gruppo di clienti non collegato a un catalogo condiviso.
+1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**: è stato risolto il problema che impediva a un utente amministratore di utilizzare **[!UICONTROL Add Products By SKU]** nell&#39;amministratore per aggiungere prodotti dal catalogo predefinito a un ordine per una società assegnata a un gruppo di clienti non collegato a un catalogo condiviso.
 1. **ACP2E-4593**: è stato risolto il problema che impediva la corretta visualizzazione della pagina CMS per le restrizioni dei siti Web nei siti Web secondari nelle distribuzioni multisito.
 1. **ACP2E-4682**: è stato risolto il problema che si verificava quando, visitando una pagina di Storefront che controllava lo stato dell&#39;offerta `isActive`, venivano creati record di offerta vuoti ogni volta che veniva caricata la pagina.
 1. **ACP2E-4695**: è stato risolto il problema che impediva il completamento dell&#39;indicizzatore della regola del catalogo e utilizzava una quantità eccessiva di memoria, causando instabilità ed errori di memoria insufficiente.
