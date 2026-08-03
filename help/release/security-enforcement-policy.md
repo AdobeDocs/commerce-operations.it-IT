@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Solo Adobe Commerce su Cloud" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo alla versione 2.4.4 di Adobe Commerce on Cloud - 2.4.9"
-nudge: true
-source-git-commit: 6ecb6002982432b8d67c122569043da55939d915
+color: blue
+source-git-commit: 7cd1bf694234196313373dea6620bdf67e08e82c
 workflow-type: tm+mt
-source-wordcount: 1981
+source-wordcount: 2017
 ht-degree: 0%
 
 ---
@@ -63,6 +63,8 @@ Trova la tua versione di Adobe Commerce on Cloud qui sotto per scoprire cosa ti 
 | 2.4.8 o 2.4.9 | Richiesto entro il 30 ottobre 2026 o il 31 maggio 2027, a seconda del software. | Non obbligatorio in questo momento |
 
 **Tabella 1: azioni richieste e scadenze per versione**
+
+Se hai bisogno di un&#39;estensione della scadenza, contatta il team del tuo account o il [supporto Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
 
 ## Chi non deve intervenire
 
