@@ -1,11 +1,11 @@
 ---
 title: Panoramica del processo di aggiornamento
-description: Scopri come l’aggiornamento del progetto Adobe Commerce mantiene la vetrina sicura ed efficiente. Scopri le best practice per la pianificazione e l’esecuzione di aggiornamenti riusciti.
+description: Scopri come l’aggiornamento del progetto Adobe Commerce mantiene la tua vetrina sicura ed efficiente. Scopri le best practice per la pianificazione e l’esecuzione di aggiornamenti efficaci.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '960'
+ht-degree: 2%
 
 ---
 
@@ -43,6 +43,8 @@ La sicurezza è uno dei motivi principali per l&#39;aggiornamento, in quanto l&#
 
 - **Versioni delle patch**: includono correzioni di bug di sicurezza, prestazioni, qualità e priorità elevata.
 - **Versioni delle patch di sicurezza**: includono correzioni e miglioramenti per proteggere il sito e semplificarne l&#39;implementazione.
+
+Se utilizzi Adobe Commerce on Cloud dalla versione 2.4.4 alla versione 2.4.9, consulta la [informativa sulla sicurezza e la conformità](../release/security-enforcement-policy.md) per informazioni sulle azioni e le scadenze necessarie per garantire la sicurezza e la conformità dell&#39;ambiente.
 
 ### Prestazioni
 
