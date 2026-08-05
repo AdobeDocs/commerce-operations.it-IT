@@ -3,9 +3,9 @@ title: Regole sul ciclo di vita del software
 description: Scopri le date chiave per la fine del supporto software per le versioni di Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: ed2757282c079ea7399d4df92000f346aecfbdd8
+source-git-commit: 79afa4fa95c425dfd4bc0fd894abc24db2d1b33b
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # criteri del ciclo di vita Adobe Commerce
 
-Per semplificare la politica sul ciclo di vita di Adobe Commerce e supportare le esigenze mission-critical dei clienti, Adobe offre una finestra di supporto standard di tre anni dalla data di disponibilità generale (GA) per ogni versione e rilascia correzioni di qualità durante questo periodo. Per le date e i dettagli sulla fine del supporto software per ogni versione, vedere la tabella [Fine del supporto software](#end-of-software-support).
+Per semplificare la politica sul ciclo di vita di Adobe Commerce e supportare le esigenze mission-critical dei clienti, Adobe offre una finestra di supporto standard di tre anni dalla data di disponibilità generale (GA) per ogni versione e rilascia correzioni di qualità durante questo periodo. Per le date e i dettagli sulla fine del supporto software per ogni versione, vedere la tabella [Date di fine supporto](#end-of-support-dates).
 
 Adobe non fornisce correzioni di sicurezza e di qualità per servizi di terze parti e dipendenze software (come PHP e MySQL) che possono raggiungere la fine del ciclo di vita mentre i clienti sono nel periodo di supporto di tre anni o esteso per Adobe Commerce. Consulta [requisiti di sistema](../installation/system-requirements.md) per un elenco completo delle tecnologie di terze parti testate e supportate.
 
@@ -33,15 +33,15 @@ Adobe incoraggia i clienti ad effettuare l’aggiornamento il prima possibile. T
 
 >[!NOTE]
 >
->Adobe sta introducendo un criterio di aggiornamento della versione applicato per Adobe Commerce su Cloud. A partire dal **1 giugno 2027**, Adobe non manterrà più gli ambienti Cloud che eseguono versioni di Commerce non supportate e si riserva il diritto di disattivarli. Se esegui su Cloud, devi passare a una versione di Adobe Commerce supportata o eseguire la migrazione a [!DNL Adobe Commerce as a Cloud Service] prima della data di [fine del supporto esteso](lifecycle-policy.md#end-of-support-dates) pubblicata per la riga di rilascio. Consulta [Criteri di applicazione dell&#39;aggiornamento della versione cloud](version-upgrade-enforcement-policy.md) per le date di applicazione, le versioni interessate e ciò che accade se utilizzi una versione non supportata.
+>Adobe sta introducendo una policy di aggiornamento della versione applicata per Adobe Commerce su Cloud per aiutare ogni cliente a rimanere su una piattaforma sicura e supportata. A partire dal **1 giugno 2027**, Adobe non manterrà più gli ambienti Cloud che eseguono versioni di Commerce non supportate e si riserva il diritto di disattivarli. Se esegui su Cloud, devi passare a una versione di Adobe Commerce supportata o eseguire la migrazione a [!DNL Adobe Commerce as a Cloud Service] prima della data di [fine del supporto esteso](lifecycle-policy.md#end-of-support-dates) pubblicata per la riga di rilascio. Se utilizzi le versioni da 2.4.4 a 2.4.9, consulta l&#39;[Avviso sulla sicurezza e la conformità](security-enforcement-policy.md) per le azioni e le scadenze specifiche applicabili al tuo ambiente.
 
 ## Periodo transitorio solo titolo
 
-Un periodo transitorio una tantum e limitato nel tempo disponibile solo per le versioni 2.4.4, 2.4.5 e 2.4.6 il cui supporto esteso è terminato nel 2025 o nel 2026. Il periodo transitorio riservato alla sicurezza prevede solo alcune correzioni isolate. Non vengono fornite correzioni di qualità per Adobe Commerce. Questo periodo non equivale al supporto standard o esteso e non verrà esteso ulteriormente. Consideralo come un periodo di migrazione, non come un livello di supporto a lungo termine.
+Un periodo transitorio una tantum e limitato nel tempo disponibile solo per le versioni 2.4.4, 2.4.5 e 2.4.6 il cui supporto esteso è terminato nel 2025 o nel 2026. Il periodo transitorio riservato alla sicurezza fornisce solo correzioni di sicurezza isolate limitate (nessuna correzione di qualità).
 
 >[!IMPORTANT]
 >
->Il periodo transitorio riservato ai soli titoli costituisce un&#39;eccezione una tantum. Non verrà esteso oltre le date di pubblicazione. Considera il periodo di sola sicurezza come tempo di migrazione e non come livello di supporto a lungo termine.
+>Il periodo transitorio riservato ai soli titoli costituisce un&#39;eccezione una tantum. Non verrà esteso oltre le date di pubblicazione. Considera il periodo di sola sicurezza come tempo di migrazione e non come livello di supporto a lungo termine. Contatta il team del tuo account per aiutarti a creare un piano di migrazione.
 
 ## Date di fine del supporto
 
@@ -173,7 +173,7 @@ L’utente è responsabile della gestione di tutte le dipendenze di terze parti 
 
 >[!IMPORTANT]
 >
->L’esecuzione di versioni di dipendenza non supportate può causare una vulnerabilità di sicurezza nell’istanza Cloud che Adobe non è in grado di risolvere. In questi casi, Adobe si riserva il diritto di applicare un aggiornamento della dipendenza software interessata o di disattivare l’istanza se un aggiornamento non è possibile, indipendentemente dallo stato di supporto della versione di Adobe Commerce.
+>L’esecuzione di versioni di dipendenza non supportate può causare una vulnerabilità di sicurezza nell’istanza Cloud che Adobe non è in grado di risolvere. In questi casi, Adobe si riserva il diritto di applicare un aggiornamento della dipendenza software interessata o di disattivare l’istanza se un aggiornamento non è possibile, indipendentemente dallo stato di supporto della versione di Adobe Commerce. Consulta l&#39;[Avviso sulla sicurezza e la conformità](security-enforcement-policy.md) per informazioni sulla pianificazione di questi aggiornamenti e sul supporto disponibile durante il processo.
 
 ## Fine del ciclo di vita PHP e conformità PCI
 
