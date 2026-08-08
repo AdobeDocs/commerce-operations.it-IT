@@ -1,7 +1,7 @@
 ---
-source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
+source-git-commit: 2c9dd65bbfff402767450508d3760d0281cb3296
 workflow-type: tm+mt
-source-wordcount: '2220'
+source-wordcount: '2201'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 6 agosto 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata corretta la matrice di supporto per la versione dell'estensione B2B in <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability">Disponibilità del prodotto</a> per Adobe Commerce 2.4.6, 2.4.7 e 2.4.8.</p>
+</td>
+      <td>
+        Tecnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/50fb71aa968abf1302e86ffeb3d3b3a66b3c33d5">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 31 luglio 2026
 
@@ -635,28 +657,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Aggiornamento principale
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 8 giugno 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.79 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706">ACP2E-4706: il cron dell'indicizzatore della regola di destinazione non seleziona i prodotti abilitati solo nell'ambito della visualizzazione archivio</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f1f9890a2a2b7dbe501037ca8dbe919865012b6f">commit</a></td>
     </tr>
   </tbody>
 </table>
