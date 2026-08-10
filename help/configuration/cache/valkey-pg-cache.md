@@ -3,24 +3,14 @@ title: Configurare Valkey per Default e Page Cache
 description: Scopri come configurare Valkey come backend predefinito e cache delle pagine per Adobe Commerce. Scopri i comandi CLI, le impostazioni env.php e la verifica della connessione.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
 autotag-review: '2026-06-22T22:00:55.389Z'
 TQID: 'https://experienceleague.adobe.com/AjJ86dYGRVFuY1T73ct1Gpcf6iDbb4ewP8OiGX8otQs'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
 source-wordcount: 1315
@@ -50,19 +40,19 @@ Commerce fornisce opzioni della riga di comando per configurare l’impostazione
 >[!TAB Cache Zend (2.4.8 e versioni precedenti)]
 
 - **Cache Zend (2.4.8 e versioni precedenti)** — Backend Valkey legacy per Commerce 2.4.8 e versioni precedenti:
-   - **Backend Valkey legacy** - Utilizza il percorso completo della classe (`Magento\Framework\Cache\Backend\Valkey`)
-   - **Chiavi di precaricamento** - Supporta il precaricamento delle chiavi della cache utilizzate di frequente
-   - **Script Lua** — Lua per la raccolta di oggetti inattivi
-   - **Compressione** - Supporta la compressione dei dati
+  - **Backend Valkey legacy** - Utilizza il percorso completo della classe (`Magento\Framework\Cache\Backend\Valkey`)
+  - **Chiavi di precaricamento** - Supporta il precaricamento delle chiavi della cache utilizzate di frequente
+  - **Script Lua** — Lua per la raccolta di oggetti inattivi
+  - **Compressione** - Supporta la compressione dei dati
 
 >[!TAB Cache Symfony (2.4.9+)]
 
 - **Cache Symfony (2.4.9+)** — A partire da Commerce 2.4.9, la cache Symfony fornisce un&#39;implementazione di caching moderna e conforme a PSR-6 per Valkey, con miglioramenti significativi delle prestazioni:
-   - **Piping automatico di Valkey**: batch di più operazioni in singole richieste, riduzione della latenza
-   - **TagAwareAdapter** PSR-6: invalidazione efficiente della cache basata su tag con operazioni atomiche
-   - **Serializzazione ignorata**: la serializzazione binaria riduce la dimensione della voce della cache del 45% e migliora la velocità del 5-10%
-   - **Connessioni permanenti migliorate** — Pool di connessioni più stabili con una migliore gestione dei processi fork
-   - **Script Lua ottimizzati** — Esecuzione lato server combinata con pipeline per la massima efficienza
+  - **Piping automatico di Valkey**: batch di più operazioni in singole richieste, riduzione della latenza
+  - **TagAwareAdapter** PSR-6: invalidazione efficiente della cache basata su tag con operazioni atomiche
+  - **Serializzazione ignorata**: la serializzazione binaria riduce la dimensione della voce della cache del 45% e migliora la velocità del 5-10%
+  - **Connessioni permanenti migliorate** — Pool di connessioni più stabili con una migliore gestione dei processi fork
+  - **Script Lua ottimizzati** — Esecuzione lato server combinata con pipeline per la massima efficienza
 
 >[!ENDTABS]
 

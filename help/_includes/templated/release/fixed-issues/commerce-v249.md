@@ -1,7 +1,7 @@
 ---
 source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '36655'
+source-wordcount: '37133'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Ora le API convalidano correttamente l’input e restituiscono un errore 400 per
 
 _AC-6419 - [Problema GitHub](https://github.com/magento/magento2/issues/35934) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Errore interno del server nell&#39;endpoint API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Errore interno del server nell&#39;endpoint API `/V1/order/{orderId}/ship`
 
 Il sistema ora corregge l&#39;errore del server interno nell&#39;endpoint API `/V1/order/{orderId}/ship` e restituisce un errore 400 poiché la richiesta non è valida.
 
@@ -4003,7 +4003,7 @@ _ACP2E-4285 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 #### Errore interno del server
 
-Magento ora aggiunge correttamente i prodotti al carrello di un cliente quando si utilizza l’endpoint REST asincrono POST /rest/default/async/V1/carts/mine/items. In precedenza, questa richiesta asincrona &quot;aggiungi al carrello&quot; causava un errore interno del server e Magento registrava il seguente errore: Errore: Chiamata a un set di funzioni membro FinalPrice() su null in app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
+Magento ora aggiunge correttamente i prodotti al carrello di un cliente quando si utilizza l’endpoint REST asincrono POST /rest/default/async/V1/carts/mine/items. In precedenza, questa richiesta asincrona di &quot;aggiunta al carrello&quot; generava un errore interno del server e Magento registrava il seguente errore: Errore: Chiamata a un set di funzioni membro FinalPrice() su null in app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
 
 _AC-16344 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/8670a2b4)_
 
@@ -4158,7 +4158,7 @@ _ACP2E-4226_
 
 #### Impossibile spostarsi tra siti Web nell&#39;anteprima di aggiornamento pianificazione
 
-Prima di questa correzione, l’anteprima dell’aggiornamento pianificato si interromperebbe quando si tenta di visualizzare in anteprima il contenuto per gli archivi con domini personalizzati. Dopo questa correzione, i domini store personalizzati possono essere visualizzati in anteprima così come sono e spostati all’interno dell’iframe di anteprima. La correzione riguarda prodotti, categorie, pagine CMS e blocchi CMS e supporta i collegamenti di navigazione tramite `{{store url}}` tag di markup, come documentato in [Variabili Adobe Commerce e tag di markup](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/variables/markup-tags).
+Prima di questa correzione, l’anteprima dell’aggiornamento pianificato si interromperebbe quando si tenta di visualizzare in anteprima il contenuto per gli archivi con domini personalizzati. Dopo questa correzione, i domini store personalizzati possono essere visualizzati in anteprima così come sono e spostati all’interno dell’iframe di anteprima. La correzione riguarda prodotti, categorie, pagine CMS e blocchi CMS e supporta i collegamenti di navigazione tramite `{{store url}}` tag di markup, come documentato in [Variabili Adobe Commerce e tag di markup](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
