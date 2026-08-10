@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 989662bcb4c1a3cc50cffae1d706501409898c64
+source-git-commit: f9962ead84372461e69df158f17456d5cdf0d89e
 workflow-type: tm+mt
-source-wordcount: '10533'
+source-wordcount: '10549'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,7 @@ ht-degree: 0%
       - [ACP2E-4709: le pagine CMS non vengono salvate in Page Builder quando la gerarchia delle pagine include virgolette doppie](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4593: pagina CMS di restrizione del sito web errata servita sul sito web secondario in vetrine con più siti web](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)
       - [ACP2E-4547: l&#39;amministratore non può aggiungere un prodotto di catalogo predefinito a un preventivo quando non è assegnato al catalogo condiviso dell&#39;utente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
       - [ACP2E-4805: le richieste di pagamento rallentano per i prodotti configurabili quando il primo bambino vendibile viene visualizzato più avanti nell’elenco](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
       - [ACP2E-4748: la scadenza dei punti premio viene eseguita lentamente nei negozi con una grande cronologia dei punti premio](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
