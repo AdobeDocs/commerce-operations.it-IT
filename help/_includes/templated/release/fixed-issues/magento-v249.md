@@ -1,7 +1,7 @@
 ---
 source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '32399'
+source-wordcount: '32815'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Ora le API convalidano correttamente l’input e restituiscono un errore 400 per
 
 _AC-6419 - [Problema GitHub](https://github.com/magento/magento2/issues/35934) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Errore interno del server nell&#39;endpoint API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Errore interno del server nell&#39;endpoint API `/V1/order/{orderId}/ship`
 
 Il sistema ora corregge l&#39;errore del server interno nell&#39;endpoint API `/V1/order/{orderId}/ship` e restituisce un errore 400 poiché la richiesta non è valida.
 
@@ -3529,7 +3529,7 @@ _ACP2E-4285 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 #### Errore interno del server
 
-Magento ora aggiunge correttamente i prodotti al carrello di un cliente quando si utilizza l’endpoint REST asincrono POST /rest/default/async/V1/carts/mine/items. In precedenza, questa richiesta asincrona &quot;aggiungi al carrello&quot; causava un errore interno del server e Magento registrava il seguente errore: Errore: Chiamata a un set di funzioni membro FinalPrice() su null in app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
+Magento ora aggiunge correttamente i prodotti al carrello di un cliente quando si utilizza l’endpoint REST asincrono POST /rest/default/async/V1/carts/mine/items. In precedenza, questa richiesta asincrona di &quot;aggiunta al carrello&quot; generava un errore interno del server e Magento registrava il seguente errore: Errore: Chiamata a un set di funzioni membro FinalPrice() su null in app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
 
 _AC-16344 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/8670a2b4)_
 

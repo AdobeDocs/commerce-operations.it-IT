@@ -50,19 +50,19 @@ Commerce fornisce opzioni della riga di comando per configurare l’impostazione
 >[!TAB Cache Zend (2.4.8 e versioni precedenti)]
 
 - **Cache Zend (2.4.8 e versioni precedenti)** — Backend Valkey legacy per Commerce 2.4.8 e versioni precedenti:
-   - **Backend Valkey legacy** - Utilizza il percorso completo della classe (`Magento\Framework\Cache\Backend\Valkey`)
-   - **Chiavi di precaricamento** - Supporta il precaricamento delle chiavi della cache utilizzate di frequente
-   - **Script Lua** — Lua per la raccolta di oggetti inattivi
-   - **Compressione** - Supporta la compressione dei dati
+  - **Backend Valkey legacy** - Utilizza il percorso completo della classe (`Magento\Framework\Cache\Backend\Valkey`)
+  - **Chiavi di precaricamento** - Supporta il precaricamento delle chiavi della cache utilizzate di frequente
+  - **Script Lua** — Lua per la raccolta di oggetti inattivi
+  - **Compressione** - Supporta la compressione dei dati
 
 >[!TAB Cache Symfony (2.4.9+)]
 
 - **Cache Symfony (2.4.9+)** — A partire da Commerce 2.4.9, la cache Symfony fornisce un&#39;implementazione di caching moderna e conforme a PSR-6 per Valkey, con miglioramenti significativi delle prestazioni:
-   - **Piping automatico di Valkey**: batch di più operazioni in singole richieste, riduzione della latenza
-   - **TagAwareAdapter** PSR-6: invalidazione efficiente della cache basata su tag con operazioni atomiche
-   - **Serializzazione ignorata**: la serializzazione binaria riduce la dimensione della voce della cache del 45% e migliora la velocità del 5-10%
-   - **Connessioni permanenti migliorate** — Pool di connessioni più stabili con una migliore gestione dei processi fork
-   - **Script Lua ottimizzati** — Esecuzione lato server combinata con pipeline per la massima efficienza
+  - **Piping automatico di Valkey**: batch di più operazioni in singole richieste, riduzione della latenza
+  - **TagAwareAdapter** PSR-6: invalidazione efficiente della cache basata su tag con operazioni atomiche
+  - **Serializzazione ignorata**: la serializzazione binaria riduce la dimensione della voce della cache del 45% e migliora la velocità del 5-10%
+  - **Connessioni permanenti migliorate** — Pool di connessioni più stabili con una migliore gestione dei processi fork
+  - **Script Lua ottimizzati** — Esecuzione lato server combinata con pipeline per la massima efficienza
 
 >[!ENDTABS]
 
