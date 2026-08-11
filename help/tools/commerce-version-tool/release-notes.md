@@ -13,10 +13,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: eafe79321da03f4778dd9e1b290141ef082a5eaf
+source-git-commit: 6b3a77ca95f7de23f044e531f1639c1aee1bbcef
 workflow-type: tm+mt
-source-wordcount: 180
-ht-degree: 2%
+source-wordcount: 236
+ht-degree: 1%
 
 ---
 
@@ -24,10 +24,22 @@ ht-degree: 2%
 
 Queste note sulla versione descrivono gli aggiornamenti per [!DNL Commerce Version Tool] ([!DNL CVT]).
 
-## Versione 1.0.0 — giugno 2026 {#version-1-0-0}
+È disponibile il supporto per l’ultima versione rilasciata. Vengono fornite a titolo di riferimento le note sulla versione per le versioni precedenti.
+Gli aggiornamenti includono:
+
+![Nuove](../../assets/new.svg) nuove funzionalità
+![Correzioni](../../assets/fix.svg) correzioni e miglioramenti
+![Bug](../../assets/bug.svg) problemi noti
+
+## Versione 1.0.2 — agosto 2026 {#version-1-0-2}
 
 ### Nuove funzioni
 
+![Nuovo](../../assets/new.svg) **Supporto del Compositore `replace`**—È stato aggiunto il supporto per le installazioni che rimuovono i moduli core tramite il Compositore `replace`, con una maggiore precisione di rilevamento delle patch per tali moduli. <!-- ACSEC-527 -->
+
+## Versione 1.0.0 — giugno 2026 {#version-1-0-0}
+
+![Nuovi](../../assets/new.svg) aggiornamenti includono:
 - **Segnalazione dello stato delle patch** - Segnala quali patch di sicurezza Adobe Commerce mensili vengono applicate, mancanti o non possono essere classificate per un&#39;installazione di Adobe Commerce.
 - **Stato protezione CVE** - Esegue il mapping dei risultati della patch ai valori dello stato di protezione per CVE: `PROTECTED`, `VULNERABLE`, `UNKNOWN` e `NOT_APPLICABLE`.
 - **Supporto di più componenti** - Rileva i componenti Adobe Commerce installati da `composer.lock`, inclusi Adobe Commerce business-to-business (B2B), Adobe Commerce Page Builder, Adobe Commerce Inventory e altri componenti rappresentati nel file di registro delle patch.

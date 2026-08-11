@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 35bad8e2071ee36c0bafccf542035564aeeebc59
+source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
 workflow-type: tm+mt
-source-wordcount: '10578'
+source-wordcount: '10598'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,8 @@ ht-degree: 0%
       - [ACP2E-4709: le pagine CMS non vengono salvate in Page Builder quando la gerarchia delle pagine include virgolette doppie](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4870: le e-mail di avviso sul prodotto ignorano le impostazioni e-mail di visualizzazione archivio](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
+      - [ACP2E-4799: la query GraphQL richieste_list restituisce un valore total_count errato con paginazione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)
       - [ACP2E-4797: l’editor di WYSIWYG e Page Builder bloccano caratteri Unicode a 4 byte quando è supportato utf8mb4](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)
       - [ACP2E-4682: pagine di vetrina che contengono le virgolette di controllo èAttivo crea record di virgolette vuote](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)
       - [ACP2E-4593: pagina CMS di restrizione del sito web errata servita sul sito web secondario in vetrine con più siti web](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)
