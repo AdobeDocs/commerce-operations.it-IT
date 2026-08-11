@@ -42,15 +42,15 @@ Se si aggiunge più volte un articolo al carrello (richiesta parallela) per lo s
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
         generateCustomerToken(
             email: "customer email"
             password: "customer password"
         )
-        {
+        &lbrace;
             token
-        }
-    }
+        &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -58,9 +58,9 @@ Se si aggiunge più volte un articolo al carrello (richiesta parallela) per lo s
 
    <pre>
     <code class="language-graphql">
-    mutation{
+    mutation&lbrace;
      createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 
