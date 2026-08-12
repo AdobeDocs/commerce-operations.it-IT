@@ -14,7 +14,7 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
+source-git-commit: e8b1a5c1161eab0a0e76e1cca6a4b8b528124b45
 workflow-type: tm+mt
 source-wordcount: 488
 ht-degree: 0%
@@ -41,7 +41,7 @@ QPT v1.1.82 include le seguenti patch:
 1. **ACP2E-4840**: è stato corretto il problema a causa del quale il valore di quantità richiesto nella query GraphQL `products` restituisce *null*.
 1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)**: è stato risolto il problema per cui le notifiche e-mail di avviso sul prodotto ignorano le impostazioni e-mail della visualizzazione archivio.
 1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**: è stato risolto il problema che causava la disconnessione imprevista degli utenti Admin durante la visualizzazione di account cliente con rubriche di grandi dimensioni nell&#39;amministratore.
-1. **ACP2E-4894**: è stato risolto il problema che causava il ritardo nella visualizzazione dei nuovi ordini nelle griglie di gestione degli ordini di amministrazione quando **[!UICONTROL Asynchronous Indexing]** era abilitato negli archivi di grandi volumi.
+1. **[ACP2E-4894](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)**: è stato risolto il problema che causava il ritardo nella visualizzazione dei nuovi ordini nelle griglie di gestione degli ordini di amministrazione quando **[!UICONTROL Asynchronous Indexing]** era abilitato negli archivi di grandi volumi.
 1. **ACP2E-4981**: è stato risolto il problema per cui i caroselli di prodotti Page Builder visualizzano i prodotti in un ordine che non riflette la posizione impostata nell&#39;amministratore e includono prodotti configurabili quando i prodotti secondari corrispondenti sono visibili singolarmente.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
