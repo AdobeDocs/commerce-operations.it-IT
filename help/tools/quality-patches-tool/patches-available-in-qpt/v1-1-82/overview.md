@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: e8b1a5c1161eab0a0e76e1cca6a4b8b528124b45
+source-git-commit: 2864bda142df307248f5e29524eaf42441538f5b
 workflow-type: tm+mt
-source-wordcount: 488
+source-wordcount: 489
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ QPT v1.1.82 include le seguenti patch:
 1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**: è stato risolto il problema che impediva a un utente amministratore di utilizzare **[!UICONTROL Add Products By SKU]** nell&#39;amministratore per aggiungere prodotti dal catalogo predefinito a un ordine per una società assegnata a un gruppo di clienti non collegato a un catalogo condiviso.
 1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**: è stato risolto il problema che impediva la corretta visualizzazione della pagina CMS per le restrizioni dei siti Web nei siti Web secondari nelle distribuzioni multisito.
 1. **ACP2E-4695**: è stato risolto il problema che impediva il completamento dell&#39;indicizzatore della regola del catalogo e utilizzava una quantità eccessiva di memoria, causando instabilità ed errori di memoria insufficiente.
-1. **ACP2E-4698**: è stato risolto il problema per cui la modifica di un&#39;immagine di nuovo nel contenuto di testo di Page Builder consente di salvare un URL multimediale assoluto anziché conservare una direttiva multimediale portatile.
+1. **[ACP2E-4698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)**: è stato risolto il problema per cui la modifica di un&#39;immagine di nuovo nel contenuto di testo di Page Builder consente di salvare un URL multimediale assoluto invece di mantenere una direttiva multimediale portatile.
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**: è stato risolto il problema che impediva il corretto blocco dell&#39;immissione di caratteri Unicode a 4 byte nell&#39;editor di WYSIWYG o del contenuto di Page Builder nell&#39;amministratore anche quando il database è configurato per supportare utf8mb4.
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**: è stato risolto il problema relativo alla scadenza lenta dei punti premio nei negozi con una cronologia dei punti premio di grandi dimensioni, causando ritardi nella scadenza dei punti premio.
 1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)**: è stato risolto il problema per cui la query `requisition_lists GraphQL` restituisce un valore `total_count` che riflette solo il numero di elementi nella pagina corrente invece del numero totale di elenchi di richieste di acquisto che corrispondono ai criteri della query.

@@ -1,7 +1,7 @@
 ---
-source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
+source-git-commit: 420e4af6778d3f493e9ad4fcc4ae175446d31243
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2131'
 ht-degree: 3%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 3%
 
 ## 2.4.9
 
-Il supporto regolare per la riga di rilascio 2.4.9 termina a maggio 2029.
+Il supporto regolare per la riga di rilascio 2.4.9 termina il 31 maggio 2029.
 
 <table>
   <thead>
@@ -30,7 +30,7 @@ Il supporto regolare per la riga di rilascio 2.4.9 termina a maggio 2029.
 
 ## 2.4.8
 
-Il supporto regolare per la riga di rilascio 2.4.8 termina l’11 aprile 2028.
+Il supporto regolare per la riga di rilascio 2.4.8 termina il 31 maggio 2028.
 
 <table>
   <thead>
@@ -81,7 +81,8 @@ Il supporto regolare per la riga di rilascio 2.4.8 termina l’11 aprile 2028.
 
 ## 2.4.7
 
-Il supporto regolare per la riga di rilascio 2.4.7 termina il 9 aprile 2027.
+Il supporto regolare per la riga di rilascio 2.4.7 termina il 31 maggio 2027.
+Il supporto esteso per la riga di rilascio 2.4.7 termina il 31 maggio 2028.
 
 <table>
   <thead>
@@ -162,7 +163,9 @@ Il supporto regolare per la riga di rilascio 2.4.7 termina il 9 aprile 2027.
 
 ## 2.4.6
 
-Il supporto regolare per la riga di rilascio 2.4.6 termina l’11 agosto 2026.
+Il supporto regolare per la riga di rilascio 2.4.6 è terminato l’11 agosto 2026.
+Il supporto esteso per la riga di rilascio 2.4.6 termina il 31 agosto 2027.
+Il provisioning per ulteriori correzioni di sicurezza per la riga di rilascio 2.4.6 termina il 31 maggio 2028.
 
 <table>
   <thead>
@@ -274,8 +277,8 @@ Il supporto regolare per la riga di rilascio 2.4.6 termina l’11 agosto 2026.
 ## 2.4.5
 
 Il supporto regolare per la riga di rilascio 2.4.5 è terminato il 12 agosto 2025.
-Il supporto esteso per la riga di rilascio 2.4.5 termina l’11 agosto 2026.
-Il provisioning di ulteriori correzioni di sicurezza per la riga di rilascio 2.4.5 termina a maggio 2027.
+Il supporto esteso per la riga di rilascio 2.4.5 è terminato l’11 agosto 2026.
+Il provisioning di ulteriori correzioni di sicurezza per la riga di rilascio 2.4.5 termina il 31 maggio 2027.
 
 <table>
   <thead>
@@ -400,7 +403,7 @@ Il provisioning di ulteriori correzioni di sicurezza per la riga di rilascio 2.4
 
 Il supporto regolare per la riga di rilascio 2.4.4 è terminato il 12 aprile 2025.
 Il supporto esteso per la riga di rilascio 2.4.4 è terminato il 14 aprile 2026.
-Il provisioning di ulteriori correzioni di sicurezza per la riga di versione 2.4.4 termina a maggio 2027.
+Il provisioning di ulteriori correzioni di sicurezza per la riga di rilascio 2.4.4 termina il 31 maggio 2027.
 
 <table>
   <thead>
