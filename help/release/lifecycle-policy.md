@@ -3,7 +3,7 @@ title: Regole sul ciclo di vita del software
 description: Scopri le date chiave per la fine del supporto software per le versioni di Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: e40305c77d2900a7741f1d97e022a28c04c0630c
+source-git-commit: bde0fd61b02eaf5a962cc9b79cf39a08199e83c8
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 1%
@@ -52,8 +52,8 @@ La tabella seguente mostra l’intero ciclo di vita di ogni versione di Adobe Co
 | Adobe Commerce 2.4.9 | 12 maggio 2026 | 31 maggio 2029 | TBD | N/D | TBD |
 | Adobe Commerce 2.4.8 | 8 aprile 2025 | 31 maggio 2028 | TBD | N/D | TBD |
 | Adobe Commerce 2.4.7 | 9 aprile 2024 | 31 maggio 2027 | 31 maggio 2028 | N/D | 1 giugno 2028 |
-| Adobe Commerce 2.4.6 | 14 marzo 2023 | 11 agosto 2026 | 30 agosto 2027 | 31 maggio 2028 | 1 giugno 2028 |
-| Adobe Commerce 2.4.5 | 9 agosto 2022 | 12 agosto 2025 | 12 agosto 2026 | 31 maggio 2027 | 1 giugno 2027 |
+| Adobe Commerce 2.4.6 | 14 marzo 2023 | 11 agosto 2026 | 31 agosto 2027 | 31 maggio 2028 | 1 giugno 2028 |
+| Adobe Commerce 2.4.5 | 9 agosto 2022 | 12 agosto 2025 | 11 agosto 2026 | 31 maggio 2027 | 1 giugno 2027 |
 | Adobe Commerce 2.4.4 | 12 aprile 2022 | 12 aprile 2025 | 14 aprile 2026 | 31 maggio 2027 | 1 giugno 2027 |
 
 {style="table-layout:auto"}

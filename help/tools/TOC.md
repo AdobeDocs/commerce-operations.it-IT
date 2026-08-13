@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 2864bda142df307248f5e29524eaf42441538f5b
+source-git-commit: 3bb6679e2a5e254ef066b47816e527123ca8dcb3
 workflow-type: tm+mt
-source-wordcount: '10632'
+source-wordcount: '10658'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,8 @@ ht-degree: 0%
       - [ACP2E-4709: le pagine CMS non vengono salvate in Page Builder quando la gerarchia delle pagine include virgolette doppie](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4695: errori di memoria esaurita nell’indicizzatore della regola del catalogo causati da un utilizzo eccessivo della memoria](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)
+      - [ACP2E-4194: le richieste GraphQL con nomi di filtro sconosciuti causano i registri eccezioni PHP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194.md)
       - [ACP2E-4698: la modifica in linea del testo di Page Builder consente di salvare gli URL multimediali assoluti invece della direttiva portatile](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
       - [ACP2E-4894: i nuovi ordini vengono visualizzati nella griglia Ordini amministratore con un ritardo quando l’indicizzazione asincrona è abilitata](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)
       - [ACP2E-4870: le e-mail di avviso sul prodotto ignorano le impostazioni e-mail di visualizzazione archivio](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
