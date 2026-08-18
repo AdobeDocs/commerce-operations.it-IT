@@ -2,9 +2,9 @@
 title: Guida alle best practice di [!DNL Cloud Automation Patching Service (CAPS)]
 description: Scopri le best practice per utilizzare  [!DNL Cloud Automation Patching Service (CAPS)]  in modo efficace e sicuro
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -22,23 +22,23 @@ Le procedure consigliate seguenti sono essenziali per operazioni di patch sicure
 Prima di applicare le patch, verificare che l&#39;ambiente sia preparato correttamente:
 
 * **Account Adobe Commerce Cloud**
-   * Abbonamento Adobe Commerce Cloud attivo
-   * Licenza Adobe Commerce valida
-   * Credenziali di accesso all’archivio configurate
-   * Autorizzazioni per progetti e ambienti
+  * Abbonamento Adobe Commerce Cloud attivo
+  * Licenza Adobe Commerce valida
+  * Credenziali di accesso all’archivio configurate
+  * Autorizzazioni per progetti e ambienti
 
 * **Risorse di ambiente**
-   * Slot di ambiente disponibili per test temporanei
-   * Risorse di storage, CPU e memoria sufficienti
-   * Accesso di rete agli archivi di Adobe
-   * Ambiente padre stabile per la sincronizzazione
+  * Slot di ambiente disponibili per test temporanei
+  * Risorse di storage, CPU e memoria sufficienti
+  * Accesso di rete agli archivi di Adobe
+  * Ambiente padre stabile per la sincronizzazione
 
 * **Preparazione dell&#39;ambiente di produzione** (per l&#39;applicazione di patch di produzione)
-   * È possibile abilitare la modalità di manutenzione
-   * I processi Cron possono essere disabilitati
-   * Procedure dell’intervallo di manutenzione stabilite
-   * Documentazione delle procedure di ripristino
-   * Piano di comunicazione per le parti interessate pronto
+  * È possibile abilitare la modalità di manutenzione
+  * I processi Cron possono essere disabilitati
+  * Procedure dell’intervallo di manutenzione stabilite
+  * Documentazione delle procedure di ripristino
+  * Piano di comunicazione per le parti interessate pronto
 
 ## Best practice per l’applicazione delle patch
 
@@ -49,29 +49,29 @@ Prima di applicare le patch, verificare che l&#39;ambiente sia preparato corrett
 **Scegliere l&#39;ora corretta per l&#39;applicazione patch:**
 
 * **Periodi a traffico ridotto**
-   * Programmare le patch nelle ore di minore utilizzo
-   * Evitare di applicare patch durante eventi con traffico elevato
-   * Pianifica i potenziali tempi di inattività durante la convalida
+  * Programmare le patch nelle ore di minore utilizzo
+  * Evitare di applicare patch durante eventi con traffico elevato
+  * Pianifica i potenziali tempi di inattività durante la convalida
 
 * **Considerazioni sull&#39;ambiente di produzione**
-   * **Intervalli di manutenzione** - Pianificazione delle patch di produzione durante gli intervalli di manutenzione pianificati
-   * **Comunicazione ai clienti** - Notifica ai clienti la modalità di manutenzione e i tempi di inattività previsti
-   * **Coordinamento team** - Assicurarsi che tutti i membri del team siano a conoscenza della pianificazione della manutenzione
-   * **Preparazione rollback** - Disponi membri del team per il rollback immediato, se necessario
+  * **Intervalli di manutenzione** - Pianificazione delle patch di produzione durante gli intervalli di manutenzione pianificati
+  * **Comunicazione ai clienti** - Notifica ai clienti la modalità di manutenzione e i tempi di inattività previsti
+  * **Coordinamento team** - Assicurarsi che tutti i membri del team siano a conoscenza della pianificazione della manutenzione
+  * **Preparazione rollback** - Disponi membri del team per il rollback immediato, se necessario
 
 ### Monitoraggio e convalida
 
 **Durante le operazioni patch:**
 
 * **Monitorare l&#39;avanzamento**
-   * Controllo dello stato operativo in tempo reale
-   * Presta attenzione a eventuali avvisi o errori
-   * Non interrompere il processo una volta avviato
+  * Controllo dello stato operativo in tempo reale
+  * Presta attenzione a eventuali avvisi o errori
+  * Non interrompere il processo una volta avviato
 
 * **Convalida risultati**
-   * Test delle funzionalità critiche dopo il completamento dell&#39;applicazione
-   * Controllare le metriche delle prestazioni per verificare eventuali peggioramenti
-   * Verificare che le misure di sicurezza rimangano intatte
+  * Test delle funzionalità critiche dopo il completamento dell&#39;applicazione
+  * Controllare le metriche delle prestazioni per verificare eventuali peggioramenti
+  * Verificare che le misure di sicurezza rimangano intatte
 
 ## Best practice per la post-patch
 
@@ -82,19 +82,19 @@ Prima di applicare le patch, verificare che l&#39;ambiente sia preparato corrett
 **Dopo il completamento dell&#39;applicazione patch:**
 
 * **Test funzionali**
-   * Test di tutti i processi aziendali critici
-   * Verifica dei flussi di pagamento e di pagamento
-   * Verifica funzionalità del pannello di amministrazione
+  * Test di tutti i processi aziendali critici
+  * Verifica dei flussi di pagamento e di pagamento
+  * Verifica funzionalità del pannello di amministrazione
 
 * **Monitoraggio delle prestazioni**
-   * Monitorare i tempi di caricamento delle pagine
-   * Verifica prestazioni del database
-   * Monitora eventuali picchi di utilizzo delle risorse
+  * Monitorare i tempi di caricamento delle pagine
+  * Verifica prestazioni del database
+  * Monitora eventuali picchi di utilizzo delle risorse
 
 * **Convalida sicurezza**
-   * Verificare che le funzioni di sicurezza funzionino
-   * Verifica la presenza di nuove vulnerabilità di sicurezza
-   * Test di autenticazione e autorizzazione
+  * Verificare che le funzioni di sicurezza funzionino
+  * Verifica la presenza di nuove vulnerabilità di sicurezza
+  * Test di autenticazione e autorizzazione
 
 ## Best practice per l’ambiente di produzione
 
@@ -105,39 +105,39 @@ Prima di applicare le patch, verificare che l&#39;ambiente sia preparato corrett
 **Verifica sempre le patch prima della distribuzione di produzione:**
 
 * **Configurazione ambiente di prova**
-   * Utilizzare gli ambienti di staging o integrazione per i test
-   * Garantire il mirroring della configurazione di produzione nell&#39;ambiente di test
-   * Se possibile, esegui test con dati di tipo produzione
+  * Utilizzare gli ambienti di staging o integrazione per i test
+  * Garantire il mirroring della configurazione di produzione nell&#39;ambiente di test
+  * Se possibile, esegui test con dati di tipo produzione
 
 * **Test completi**
-   * Test di tutti i processi aziendali critici
-   * Verifica dei flussi di pagamento e di pagamento
-   * Verifica funzionalità del pannello di amministrazione
-   * Testare eventuali integrazioni personalizzate
+  * Test di tutti i processi aziendali critici
+  * Verifica dei flussi di pagamento e di pagamento
+  * Verifica funzionalità del pannello di amministrazione
+  * Testare eventuali integrazioni personalizzate
 
 * **Test delle prestazioni**
-   * Monitorare l&#39;impatto delle patch sulle prestazioni
-   * Controllare eventuali peggioramenti delle prestazioni
-   * Verificare che l&#39;utilizzo delle risorse rimanga accettabile
+  * Monitorare l&#39;impatto delle patch sulle prestazioni
+  * Controllare eventuali peggioramenti delle prestazioni
+  * Verificare che l&#39;utilizzo delle risorse rimanga accettabile
 
 ### Attenuazione dei rischi
 
 **Riduci al minimo i rischi durante l&#39;applicazione della patch di produzione:**
 
 * **Piano di comunicazione**
-   * Notifica ai clienti le finestre di manutenzione
-   * Tieni informati le parti interessate dei progressi
-   * Disponi procedure di riassegnazione pronte
+  * Notifica ai clienti le finestre di manutenzione
+  * Tieni informati le parti interessate dei progressi
+  * Disponi procedure di riassegnazione pronte
 
 * **Strategia di rollback**
-   * Come ripristinare rapidamente le patch, se necessario
-   * Disponibilità dei membri del team per una risposta immediata
-   * Procedure di ripristino documenti
+  * Come ripristinare rapidamente le patch, se necessario
+  * Disponibilità dei membri del team per una risposta immediata
+  * Procedure di ripristino documenti
 
 * **Monitoraggio e avvisi**
-   * Imposta monitoraggio per problemi post-patch
-   * Avvisi per errori critici
-   * Monitorare attentamente le metriche delle prestazioni
+  * Imposta monitoraggio per problemi post-patch
+  * Avvisi per errori critici
+  * Monitorare attentamente le metriche delle prestazioni
 
 ## Riepilogo delle best practice chiave
 
@@ -156,5 +156,6 @@ Prima di applicare le patch, verificare che l&#39;ambiente sia preparato corrett
 
 * [Introduzione CAPS](intro.md)
 * [Come accedere](access.md)
-* [Flusso di lavoro](workflow.md)
+* [Panoramica del flusso di lavoro](workflow.md)
+* [Integrazione GitHub](github-integration.md)
 * [Risoluzione dei problemi](troubleshooting.md)

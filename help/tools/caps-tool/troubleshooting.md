@@ -2,9 +2,9 @@
 title: Guida alla risoluzione dei problemi di [!DNL Cloud Automation Patching Service (CAPS)]
 description: Risoluzione dei problemi comuni e dei messaggi di errore in [!DNL Cloud Automation Patching Service (CAPS)]
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '1137'
 ht-degree: 0%
 
 ---
@@ -156,6 +156,32 @@ Se l&#39;opzione 1 non risolve il problema, procedere con l&#39;opzione 2.
 * Verifica di disporre delle autorizzazioni per la gestione dell’ambiente
 * Assicurati di disporre delle autorizzazioni di distribuzione
 
+### Errori di integrazione GitHub
+
+#### &quot;Nessuna credenziale Git disponibile per il provider github. Installa l’app GitHub CAPS per questo archivio&quot;
+
+**Quando si verifica:** Durante le operazioni di patch per i progetti connessi a GitHub
+
+**Causa:** l&#39;app GitHub [!DNL CAPS] non è installata nel repository
+
+**Soluzione:** Segui i passaggi descritti in [Configurare l&#39;integrazione GitHub per [!DNL CAPS]](github-integration.md)
+
+#### &quot;Richiesta API GitHub non riuscita&quot;
+
+**Quando si verifica:** durante le operazioni di patch per i progetti connessi a GitHub
+
+**Causa:** un problema temporaneo ha impedito a [!DNL CAPS] di connettersi a GitHub
+
+**Soluzione:** attendere alcuni minuti e riprovare. Se l&#39;errore persiste, contattare il [supporto Adobe Commerce Cloud](https://experienceleague.adobe.com/home#support)
+
+#### &quot;Ambiente non creato entro il timeout&quot; (progetto connesso a GitHub)
+
+**Quando si verifica:** Durante la creazione dell&#39;ambiente di integrazione
+
+**Causa:** L&#39;integrazione GitHub del progetto ha l&#39;opzione `fetch-branches` disabilitata, pertanto i rami temporanei [!DNL CAPS] push non vengono sincronizzati e l&#39;ambiente di integrazione non viene mai creato.
+
+**Soluzione:** Abilitare l&#39;opzione [`fetch-branches` dell&#39;integrazione](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration), quindi riprovare. Consulta [Configurare l&#39;integrazione GitHub per  [!DNL CAPS]](github-integration.md).
+
 ### Errori di risorse e quote
 
 #### &quot;Quota ambiente superata&quot;
@@ -217,9 +243,10 @@ Per informazioni tecniche più dettagliate:
 
 ### Argomenti correlati
 
-* [Documentazione di Adobe Commerce Cloud](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/overview)
-* [Guida all’installazione di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/overview)
+* [Documentazione di Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
+* [Guida all’installazione di Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 * [Introduzione CAPS](intro.md)
 * [Come accedere](access.md)
-* [Flusso di lavoro](workflow.md)
+* [Panoramica del flusso di lavoro](workflow.md)
+* [Integrazione GitHub](github-integration.md)
 * [Best practice](best-practices.md)
