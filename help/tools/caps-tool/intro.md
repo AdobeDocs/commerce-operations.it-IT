@@ -2,9 +2,9 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)]'
 description: Scopri  [!DNL Cloud Automation Patching Service (CAPS)], i suoi utilizzi, come accedervi e le best practice per l'applicazione automatica delle patch
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -18,31 +18,32 @@ Questa guida è stata progettata per i commercianti e i partner di Adobe Commerc
 ## [!DNL CAPS] argomenti
 
 * **[Come accedere](access.md)**
-* **[Flusso di lavoro](workflow.md)**
+* **[Panoramica del flusso di lavoro](workflow.md)**
+* **[Integrazione GitHub](github-integration.md)**
 * **[Best practice](best-practices.md)**
 * **[Risoluzione dei problemi](troubleshooting.md)**
 
 ## Panoramica dello strumento
 
 * **Interfaccia interfaccia utente**
-   * Disponibilità e visualizzazione dello stato delle patch in tempo reale per combinazioni specifiche di progetto e ambiente
-   * Informazioni complete sullo stato dell&#39;applicazione delle patch, con informazioni sullo stato di avanzamento, sugli errori e su qualsiasi altro messaggio rilevante
-   * [!UICONTROL Patch Management Dashboard] per:
-      * Visualizzazione delle patch disponibili
-      * Applicazione delle patch con un solo clic
-      * Ripristino delle patch applicate in precedenza
-      * Monitoraggio dello stato e dei risultati dell’operazione patch
+  * Disponibilità e visualizzazione dello stato delle patch in tempo reale per combinazioni specifiche di progetto e ambiente
+  * Informazioni complete sullo stato dell&#39;applicazione delle patch, con informazioni sullo stato di avanzamento, sugli errori e su qualsiasi altro messaggio rilevante
+  * [!UICONTROL Patch Management Dashboard] per:
+    * Visualizzazione delle patch disponibili
+    * Applicazione delle patch con un solo clic
+    * Ripristino delle patch applicate in precedenza
+    * Monitoraggio dello stato e dei risultati dell’operazione patch
 
 * **Servizio di applicazione automatica delle patch con flusso di lavoro strutturato**
-   * **Verifica preliminare** - Convalida la compatibilità della patch e la preparazione all&#39;ambiente
-   * **Applicazione di patch** - Applica o ripristina automaticamente le patch negli ambienti di integrazione
-   * **Convalida** - Esegue controlli di integrità e assicura che le funzionalità critiche non siano interessate
+  * **Verifica preliminare** - Convalida la compatibilità della patch e la preparazione all&#39;ambiente
+  * **Applicazione di patch** - Applica o ripristina automaticamente le patch negli ambienti di integrazione
+  * **Convalida** - Esegue controlli di integrità e assicura che le funzionalità critiche non siano interessate
 
 * **Funzioni di sicurezza**
-   * Crea ambienti di integrazione temporanei per il test
-   * Convalida la compatibilità della patch prima dell&#39;applicazione
-   * Fornisce il rollback automatico in caso di errori di convalida
-   * Applica le patch alla cartella `m2-hotfixes` con rimozione automatica durante la reversione
+  * Crea ambienti di integrazione temporanei per il test
+  * Convalida la compatibilità della patch prima dell&#39;applicazione
+  * Mantiene l’ambiente di destinazione invariato fino al completamento della convalida della patch nell’ambiente temporaneo
+  * Applica le patch alla cartella `m2-hotfixes` con rimozione automatica durante la reversione
 
 ## Integrazioni con Adobe Commerce Cloud
 

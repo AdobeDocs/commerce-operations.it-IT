@@ -5,7 +5,7 @@ feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
 source-git-commit: 6b3afb93770c1d976dd975a484070e0aee730a98
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ In questo argomento sono elencate le azioni da intraprendere per gestire la comp
 
 Il livello di impegno per aggiornare l’istanza di Adobe Commerce dipende da questi fattori:
 
-- **Come è stato creato il sito?** La quantità di lavoro personalizzato e il numero di moduli di terze parti installati influiscono notevolmente sulla complessità di un aggiornamento. La qualità del lavoro e dei moduli personalizzati può determinare se un aggiornamento procede senza problemi.
+- **Come hai creato il tuo sito?** La quantità di lavoro personalizzato e il numero di moduli di terze parti installati influiscono notevolmente sulla complessità di un aggiornamento. La qualità del lavoro e dei moduli personalizzati può determinare se un aggiornamento procede senza problemi.
 
-- **Verranno ignorate più versioni?** Ignorare le versioni rende il prossimo aggiornamento più complesso. L&#39;aggiornamento dalle versioni successive rende il processo più semplice e meno costoso.
+- **Verranno ignorate più versioni?** Ignorando le versioni, il prossimo aggiornamento diventa più complesso; l’aggiornamento dalle versioni successive rende il processo più semplice e conveniente.
 
-- **Che tipo di aggiornamento si sta eseguendo?** Un aggiornamento a una versione secondaria (ad esempio da 2.3.x a 2.4.0) è più esteso di un aggiornamento tra versioni patch (ad esempio da 2.4.2 a 2.4.3). Gli aggiornamenti di sicurezza sono il tipo più semplice da implementare.
+- **Che tipo di aggiornamento stai eseguendo?** Un aggiornamento a una versione secondaria (ad esempio, da 2.3.x a 2.4.0) è più esteso di un aggiornamento tra versioni patch (ad esempio, da 2.4.2 a 2.4.3). Gli aggiornamenti di sicurezza sono il tipo più semplice da implementare.
 
 ## Best practice per la pianificazione degli aggiornamenti
 
@@ -42,8 +42,8 @@ Se il progetto è live, ti consigliamo di eseguire un controllo di audit per det
 
 Dal momento in cui inizi a lavorare su un progetto, dovresti considerare in che modo i futuri aggiornamenti saranno influenzati dal lavoro corrente. Segui sempre le best practice di sviluppo di Adobe Commerce come descritto qui:
 
-- [Best practice per lo sviluppo](https://developer.adobe.com/commerce/php/best-practices/)
-- [Standard di codifica](https://developer.adobe.com/commerce/php/coding-standards/)
+- [Best practice di sviluppo](https://developer.adobe.com/commerce/php/best-practices/)
+- [Norme di codifica](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Inizia ad adottare la piattaforma Adobe Commerce Extensibility, se non lo hai già fatto. La piattaforma consente di personalizzare in modo efficiente i processi, integrare i sistemi e implementare nuove funzionalità, mantenendo al tempo stesso la possibilità di aggiornamento simile a SaaS. Le sue caratteristiche includono:
 

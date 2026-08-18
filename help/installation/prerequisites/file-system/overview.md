@@ -4,7 +4,7 @@ description: Scopri l’importanza delle autorizzazioni per il file system quand
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ Esistono due tipi di proprietari del file system:
 
   L&#39;hosting privato è utile se gestisci un server applicazioni. Ogni utente ha una responsabilità specifica:
 
-   - L&#39;_utente del server Web_ esegue l&#39;amministratore e la vetrina.
+  - L&#39;_utente del server Web_ esegue l&#39;amministratore e la vetrina.
 
-   - L&#39;_utente della riga di comando_ esegue processi cron e utilità della riga di comando.
+  - L&#39;_utente della riga di comando_ esegue processi cron e utilità della riga di comando.
 
   Entrambi gli utenti richiedono le stesse autorizzazioni per il file system, pertanto è consigliabile utilizzare un [gruppo condiviso](configure-permissions.md#set-ownership-and-permissions-for-two-users) e impostare un [`umask`](#restrict-access-with-a-umask).
 
