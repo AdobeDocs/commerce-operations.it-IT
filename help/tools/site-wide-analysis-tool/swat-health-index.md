@@ -3,7 +3,7 @@ title: Informazioni su punteggi e raccomandazioni dell’indice di integrità SW
 description: Scopri cosa significa l’Indice di integrità dello strumento di analisi a livello di sito per il tuo sito Adobe Commerce. Scopri come interpretare i punteggi e utilizzare i consigli in modo efficace.
 source-git-commit: d9b598e9399c26c8fb7c52e9f211029689343ce9
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---

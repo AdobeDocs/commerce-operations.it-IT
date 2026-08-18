@@ -5,7 +5,7 @@ feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
 source-git-commit: 6b3afb93770c1d976dd975a484070e0aee730a98
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ In questo argomento sono elencate le azioni da intraprendere per gestire la comp
 
 Il livello di impegno per aggiornare l’istanza di Adobe Commerce dipende da questi fattori:
 
-- **Come è stato creato il sito?** La quantità di lavoro personalizzato e il numero di moduli di terze parti installati influiscono notevolmente sulla complessità di un aggiornamento. La qualità del lavoro e dei moduli personalizzati può determinare se un aggiornamento procede senza problemi.
+- **Come hai creato il tuo sito?** La quantità di lavoro personalizzato e il numero di moduli di terze parti installati influiscono notevolmente sulla complessità di un aggiornamento. La qualità del lavoro e dei moduli personalizzati può determinare se un aggiornamento procede senza problemi.
 
-- **Verranno ignorate più versioni?** Ignorare le versioni rende il prossimo aggiornamento più complesso. L&#39;aggiornamento dalle versioni successive rende il processo più semplice e meno costoso.
+- **Verranno ignorate più versioni?** Ignorando le versioni, il prossimo aggiornamento diventa più complesso; l’aggiornamento dalle versioni successive rende il processo più semplice e conveniente.
 
-- **Che tipo di aggiornamento si sta eseguendo?** Un aggiornamento a una versione secondaria (ad esempio da 2.3.x a 2.4.0) è più esteso di un aggiornamento tra versioni patch (ad esempio da 2.4.2 a 2.4.3). Gli aggiornamenti di sicurezza sono il tipo più semplice da implementare.
+- **Che tipo di aggiornamento stai eseguendo?** Un aggiornamento a una versione secondaria (ad esempio, da 2.3.x a 2.4.0) è più esteso di un aggiornamento tra versioni patch (ad esempio, da 2.4.2 a 2.4.3). Gli aggiornamenti di sicurezza sono il tipo più semplice da implementare.
 
 ## Best practice per la pianificazione degli aggiornamenti
 
@@ -42,8 +42,8 @@ Se il progetto è live, ti consigliamo di eseguire un controllo di audit per det
 
 Dal momento in cui inizi a lavorare su un progetto, dovresti considerare in che modo i futuri aggiornamenti saranno influenzati dal lavoro corrente. Segui sempre le best practice di sviluppo di Adobe Commerce come descritto qui:
 
-- [Best practice per lo sviluppo](https://developer.adobe.com/commerce/php/best-practices/)
-- [Standard di codifica](https://developer.adobe.com/commerce/php/coding-standards/)
+- [Best practice di sviluppo](https://developer.adobe.com/commerce/php/best-practices/)
+- [Norme di codifica](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Inizia ad adottare la piattaforma Adobe Commerce Extensibility, se non lo hai già fatto. La piattaforma consente di personalizzare in modo efficiente i processi, integrare i sistemi e implementare nuove funzionalità, mantenendo al tempo stesso la possibilità di aggiornamento simile a SaaS. Le sue caratteristiche includono:
 
@@ -57,11 +57,11 @@ Inizia ad adottare la piattaforma Adobe Commerce Extensibility, se non lo hai gi
 
 Man mano che le funzionalità di Adobe Commerce vengono continuamente ampliate, è fondamentale che tu sviluppi l’ultima versione disponibile e definisca una strategia di aggiornamento nei piani dei tuoi progetti. In questo modo potrai rimanere sicuro, conforme e aggiornato sugli ultimi miglioramenti, consentendoti di incrementare le vendite in modo più rapido, di operare in modo più efficace e di restare al passo con la concorrenza attuale e futura.
 
-Per aiutarti a pianificare e pianificare il budget per gli aggiornamenti, devi monitorare la [pianificazione delle versioni](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/schedule). Pianifica in anticipo le attività di aggiornamento nel backlog del team. Completa questo lavoro con GA.
+Per aiutarti a pianificare e pianificare il budget per gli aggiornamenti, devi monitorare la [pianificazione delle versioni](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule). Pianifica in anticipo le attività di aggiornamento nel backlog del team. Completa questo lavoro con GA.
 
 - Utilizza la versione non definitiva per scoprire ogni nuova versione. La versione non definitiva è il codice di disponibilità generale disponibile per i commercianti Adobe Commerce e per tutti i partner due settimane prima della disponibilità generale. Se disponi di più store, utilizza la versione non definitiva sullo store di base e verifica che i moduli e i temi personalizzati siano compatibili con esso.
 
-- Consulta la [Lista di controllo del piano di aggiornamento](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist) per Adobe Commerce per aiutarti a pianificare l&#39;aggiornamento.
+- Consulta la [Lista di controllo del piano di aggiornamento](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist) per Adobe Commerce per aiutarti a pianificare l&#39;aggiornamento.
 
 - Pianificare gli aggiornamenti all&#39;inizio dell&#39;anno. È necessario registrare un budget e le risorse per completare ogni aggiornamento. Ricorda che lo sforzo di aggiornamento potrebbe variare notevolmente da un progetto all’altro. Utilizza le tue esperienze e conoscenze per creare un piano il più accurato possibile.
 
@@ -73,7 +73,7 @@ Gli aggiornamenti devono essere effettuati regolarmente e in base a un budget pr
 
 Valutare il lavoro da eseguire per l&#39;aggiornamento:
 
-- Consulta le [note sulla versione](https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/overview) per comprendere l&#39;ambito e l&#39;impatto della nuova versione.
+- Consulta le [note sulla versione](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) per comprendere l&#39;ambito e l&#39;impatto della nuova versione.
 
 - Utilizza [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) per identificare potenziali problemi che devono essere risolti nel codice personalizzato prima di tentare l&#39;aggiornamento a una versione più recente.
 
