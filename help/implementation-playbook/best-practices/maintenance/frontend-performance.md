@@ -37,5 +37,5 @@ Per verificare le prestazioni front-end dell’archivio siti web:
 ## Informazioni aggiuntive
 
 - [Gestione dell’indice per gli utenti amministratori](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Gestione dell’indice tramite CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [Gestione dell’indice tramite CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=it)
 - [Panoramica sull’indicizzazione per sviluppatori](https://developer.adobe.com/commerce/php/development/components/indexing/)
