@@ -172,7 +172,7 @@ Se l&#39;opzione 1 non risolve il problema, procedere con l&#39;opzione 2.
 
 **Causa:** un problema temporaneo ha impedito a [!DNL CAPS] di connettersi a GitHub
 
-**Soluzione:** attendere alcuni minuti e riprovare. Se l&#39;errore persiste, contattare il [supporto Adobe Commerce Cloud](https://experienceleague.adobe.com/home#support)
+**Soluzione:** attendere alcuni minuti e riprovare. Se l&#39;errore persiste, contattare il [supporto Adobe Commerce Cloud](https://experienceleague.adobe.com/home?lang=it#support)
 
 #### &quot;Ambiente non creato entro il timeout&quot; (progetto connesso a GitHub)
 
@@ -180,7 +180,7 @@ Se l&#39;opzione 1 non risolve il problema, procedere con l&#39;opzione 2.
 
 **Causa:** L&#39;integrazione GitHub del progetto ha l&#39;opzione `fetch-branches` disabilitata, pertanto i rami temporanei [!DNL CAPS] push non vengono sincronizzati e l&#39;ambiente di integrazione non viene mai creato.
 
-**Soluzione:** Abilitare l&#39;opzione [`fetch-branches` dell&#39;integrazione](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration), quindi riprovare. Consulta [Configurare l&#39;integrazione GitHub per  [!DNL CAPS]](github-integration.md).
+**Soluzione:** Abilitare l&#39;opzione [`fetch-branches` dell&#39;integrazione](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration), quindi riprovare. Consulta [Configurare l&#39;integrazione GitHub per  [!DNL CAPS]](github-integration.md).
 
 ### Errori di risorse e quote
 
@@ -243,8 +243,8 @@ Per informazioni tecniche più dettagliate:
 
 ### Argomenti correlati
 
-* [Documentazione di Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
-* [Guida all’installazione di Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+* [Documentazione di Adobe Commerce Cloud](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/overview)
+* [Guida all’installazione di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/overview)
 * [Introduzione CAPS](intro.md)
 * [Come accedere](access.md)
 * [Panoramica del flusso di lavoro](workflow.md)
