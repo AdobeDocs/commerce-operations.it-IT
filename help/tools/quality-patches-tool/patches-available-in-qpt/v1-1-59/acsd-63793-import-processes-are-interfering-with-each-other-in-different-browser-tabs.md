@@ -37,7 +37,7 @@ L’importazione di dati tramite l’interfaccia di amministrazione interferisce
 <u>Passaggi da riprodurre</u>:
 
 1. Vai a **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Import]**.
-1. Imposta **[!UICONTROL Entity Type]** su *[!UICONTROL Customers and Addresses](file singolo)*.
+1. Imposta **[!UICONTROL Entity Type]** su *[!UICONTROL Customers and Addresses] (file singolo)*.
 1. Imposta **[!UICONTROL Import Behavior]** su *[!UICONTROL Add/Update]*.
 1. Seleziona un file valido da importare.
 1. Fare clic sul pulsante **[!UICONTROL Check Data]**.
