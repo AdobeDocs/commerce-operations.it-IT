@@ -39,7 +39,7 @@ Per una panoramica dell&#39;architettura di memorizzazione nella cache di Commer
 
 >[!NOTE]
 >
->Per l&#39;infrastruttura cloud di Adobe Commerce, utilizza la [configurazione di distribuzione cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) descritta nella guida per il cloud. Non modificare `app/etc/env.php` direttamente. Gli strumenti di distribuzione generano questo file e possono sovrascrivere le modifiche manuali.
+>Per l&#39;infrastruttura cloud di Adobe Commerce, utilizza la [configurazione di distribuzione cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) descritta nella guida per il cloud. Non modificare `app/etc/env.php` direttamente. Gli strumenti di distribuzione generano questo file e possono sovrascrivere le modifiche manuali.
 
 ## Usa front-end predefinito
 

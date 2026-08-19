@@ -3,7 +3,7 @@ title: Configurazione cache L2 per l'ottimizzazione delle prestazioni
 description: Scopri come configurare la cache L2 in Adobe Commerce per ridurre il traffico di rete e migliorare le prestazioni. Scopri le opzioni di implementazione legacy e Symfony.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Premises."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Premises."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -361,7 +361,7 @@ Utilizzare l&#39;esempio seguente per configurare front-end separati per il supp
 
 >[!NOTE]
 >
->Questi miglioramenti si applicano alle distribuzioni di Adobe Commerce 2.4.9 che utilizzano `symfony_l2` e sono disponibili nella patch ACP2E-5132. Per Adobe Commerce on-premise, applichi questa patch utilizzando lo strumento Quality Patches (QPT). Per Adobe Commerce on Cloud, questa patch viene distribuita automaticamente tramite [Patch cloud per Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest).
+>Questi miglioramenti si applicano alle distribuzioni di Adobe Commerce 2.4.9 che utilizzano `symfony_l2` e sono disponibili nella patch ACP2E-5132. Per Adobe Commerce on-premise, applichi questa patch utilizzando lo strumento Quality Patches (QPT). Per Adobe Commerce on Cloud, questa patch viene distribuita automaticamente tramite [Patch cloud per Commerce](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest).
 
 Gli aggiornamenti più recenti migliorano la scalabilità della cache di Symfony L2, riducono gli I/O inutili dei file system e migliorano la coerenza e l’affidabilità della cache.
 

@@ -3,7 +3,7 @@ title: Opzioni di back-end cache e riferimento archiviazione
 description: Scopri le opzioni di back-end della cache in Adobe Commerce, tra cui file system, Redis, Valkey e archiviazione del database. Scopri approcci legacy e moderni.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
 product_v2:
@@ -31,13 +31,13 @@ ht-degree: 0%
 >
 >Questa pagina documenta la configurazione di `app/etc/env.php` locale.
 >
->Per i progetti [!DNL Adobe Commerce on Cloud], il pacchetto `ece-tools` genera la configurazione `app/etc/env.php` risultante durante la distribuzione in base alla configurazione della variabile di distribuzione in `.magento.env.yaml`. Non si modifica il file `env.php`.  Consulta [Best practice per la configurazione di Valkey e Redis Service](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) e [distribuire le variabili](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy).
+>Per i progetti [!DNL Adobe Commerce on Cloud], il pacchetto `ece-tools` genera la configurazione `app/etc/env.php` risultante durante la distribuzione in base alla configurazione della variabile di distribuzione in `.magento.env.yaml`. Non si modifica il file `env.php`.  Consulta [Best practice per la configurazione di Valkey e Redis Service](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) e [distribuire le variabili](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy).
 
 L’applicazione Commerce utilizza una cache di basso livello front-end e back-end per fornire accesso allo storage della cache. Commerce supporta diversi back-end e strategie di caching, ciascuno adatto a casi d’uso diversi. Questa pagina descrive i backend disponibili e le loro differenze.
 
 >[!NOTE]
 >
->[Varnish](config-varnish-install.md) gestisce il caching a pagina intera a livello HTTP per le distribuzioni locali. Il [Fastly Service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) lo gestisce per le distribuzioni Cloud. Nessuna delle due soluzioni utilizza il back-end della cache di basso livello.
+>[Varnish](config-varnish-install.md) gestisce il caching a pagina intera a livello HTTP per le distribuzioni locali. Il [Fastly Service](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/fastly) lo gestisce per le distribuzioni Cloud. Nessuna delle due soluzioni utilizza il back-end della cache di basso livello.
 
 ## Opzioni cache back-end
 
@@ -158,10 +158,10 @@ Il caching L2 (a due livelli) aggiunge un livello di cache locale su ciascun nod
 
 Per la configurazione locale, vedere [Configurazione cache L2](level-two-cache.md).
 
-Per i progetti Cloud, configura il caching L2 tramite le variabili di distribuzione descritte in [Distribuisci variabili](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}.
+Per i progetti Cloud, configura il caching L2 tramite le variabili di distribuzione descritte in [Distribuisci variabili](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}.
 
 #### Configurazione cache L2
 
 - Per i dettagli della configurazione di **[!DNL Adobe Commerce on-premises]**, vedere [Configurazione cache L2](level-two-cache.md).
 
-- Per **[!DNL Adobe Commerce on Cloud]**, configurare il caching L2 tramite la variabile di distribuzione appropriata anziché modificare direttamente `app/etc/env.php`. Consulta [Distribuire le variabili](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"} nella documentazione di _Adobe Commerce on Cloud_.
+- Per **[!DNL Adobe Commerce on Cloud]**, configurare il caching L2 tramite la variabile di distribuzione appropriata anziché modificare direttamente `app/etc/env.php`. Consulta [Distribuire le variabili](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"} nella documentazione di _Adobe Commerce on Cloud_.

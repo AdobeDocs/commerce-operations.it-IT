@@ -8,7 +8,7 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-badgePaas: label="Commerce su Cloud" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud."
+badgePaas: label="Commerce su Cloud" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud."
 nudge: true
 autotag-review: '2026-08-18T23:34:12.845Z'
 TQID: 'https://experienceleague.adobe.com/kYuQylZb2r7ElWP1oRJbyIt9jsZMhoO9yFpBMDlf1tw'
@@ -67,7 +67,7 @@ Redis non è supportato per la configurazione della cache in Adobe Commerce 2.4.
 
 >[!NOTE]
 >
->Verificare di utilizzare la versione più recente del pacchetto `ece-tools`. In caso contrario, [aggiorna alla versione più recente](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). È possibile controllare la versione installata nell&#39;ambiente locale utilizzando il comando CLI `composer show magento/ece-tools`.
+>Verificare di utilizzare la versione più recente del pacchetto `ece-tools`. In caso contrario, [aggiorna alla versione più recente](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). È possibile controllare la versione installata nell&#39;ambiente locale utilizzando il comando CLI `composer show magento/ece-tools`.
 
 ## Abilita connessione di replica
 
@@ -91,7 +91,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Per informazioni dettagliate sulla configurazione delle variabili di ambiente, vedere [VALKEY _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) nella _Guida all&#39;infrastruttura cloud di Commerce_.
+Per informazioni dettagliate sulla configurazione delle variabili di ambiente, vedere [VALKEY _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) nella _Guida all&#39;infrastruttura cloud di Commerce_.
 
 >[!TAB Configurazione Redis]
 
@@ -103,7 +103,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Per informazioni dettagliate sulla configurazione delle variabili di ambiente, vedere [REDIS _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) nella _Guida all&#39;infrastruttura cloud di Commerce_.
+Per informazioni dettagliate sulla configurazione delle variabili di ambiente, vedere [REDIS _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) nella _Guida all&#39;infrastruttura cloud di Commerce_.
 
 >[!ENDTABS]
 
@@ -113,7 +113,7 @@ La configurazione della cache e della sessione è indipendente. `SESSION_CONFIGU
 
 >[!IMPORTANT]
 >
->Il provisioning di un’istanza di sessione dedicata in Produzione e Staging non è self-service. Richiede l&#39;invio di un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) con i file `.magento/services.yaml` e `.magento.app.yaml` aggiornati, come descritto nel passaggio 3 seguente.
+>Il provisioning di un’istanza di sessione dedicata in Produzione e Staging non è self-service. Richiede l&#39;invio di un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) con i file `.magento/services.yaml` e `.magento.app.yaml` aggiornati, come descritto nel passaggio 3 seguente.
 
 Per eseguire il provisioning di un’istanza dedicata per le sessioni, segui i passaggi seguenti:
 
@@ -156,7 +156,7 @@ Per eseguire il provisioning di un’istanza dedicata per le sessioni, segui i p
 
 1. Richiedi una nuova istanza di Valkey dedicata alle sessioni sugli ambienti di produzione e staging.
 
-   Invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). Includere i file di configurazione `.magento/services.yaml` e `.magento.app.yaml` aggiornati.
+   Invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). Includere i file di configurazione `.magento/services.yaml` e `.magento.app.yaml` aggiornati.
 
    Questo aggiornamento non causa tempi di inattività, ma richiede una distribuzione per attivare il nuovo servizio.
 
@@ -231,7 +231,7 @@ Per eseguire il provisioning di un’istanza dedicata per le sessioni, segui i p
 
 1. Richiedi una nuova istanza Redis dedicata alle sessioni sugli ambienti di produzione e staging.
 
-   Invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). Includere i file di configurazione `.magento/services.yaml` e `.magento.app.yaml` aggiornati.
+   Invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). Includere i file di configurazione `.magento/services.yaml` e `.magento.app.yaml` aggiornati.
 
    Questo aggiornamento non causa tempi di inattività, ma richiede una distribuzione per attivare il nuovo servizio.
 
@@ -291,7 +291,7 @@ stage:
 
 ## Abilita liberazione asincrona
 
-Per abilitare `lazyfree` nell&#39;infrastruttura cloud Adobe Commerce, invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) richiedendo che la seguente configurazione Redis o Valkey venga applicata agli ambienti:
+Per abilitare `lazyfree` nell&#39;infrastruttura cloud Adobe Commerce, invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) richiedendo che la seguente configurazione Redis o Valkey venga applicata agli ambienti:
 
 ```text
 lazyfree-lazy-eviction yes
@@ -313,7 +313,7 @@ Quando `lazyfree` è abilitato, Redis o Valkey scarica il recupero della memoria
 
 ## Abilita I/O multithread
 
-Per abilitare il threading di I/O Redis sull&#39;infrastruttura cloud Adobe Commerce, invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) richiedendo la configurazione del threading di I/O seguente. Questa configurazione può migliorare il throughput scaricando le letture, le scritture e l&#39;analisi dei comandi del socket dal thread principale, al costo di un maggiore utilizzo di CPU. Convalida sotto carico e monitora gli host.
+Per abilitare il threading di I/O Redis sull&#39;infrastruttura cloud Adobe Commerce, invia un [ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) richiedendo la configurazione del threading di I/O seguente. Questa configurazione può migliorare il throughput scaricando le letture, le scritture e l&#39;analisi dei comandi del socket dal thread principale, al costo di un maggiore utilizzo di CPU. Convalida sotto carico e monitora gli host.
 
 >[!BEGINTABS]
 
@@ -417,7 +417,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Per informazioni dettagliate sulla configurazione dell&#39;ambiente, vedere [`REDIS_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
+Per informazioni dettagliate sulla configurazione dell&#39;ambiente, vedere [`REDIS_BACKEND`](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
 
 >[!ENDTABS]
 
@@ -433,7 +433,7 @@ Se stai eseguendo la migrazione di un progetto Adobe Commerce on Cloud esistente
 
 - **La compressione richiede un flag esplicito.** Se si personalizza la compressione `symfony_l2` tramite `CACHE_CONFIGURATION`, la sola impostazione di `compression_lib` non consente la compressione. È necessario impostare anche `compress_data`. Vedere [Compressione cache](#cache-compression).
 
-- **Redis non è un back-end remoto supportato per `symfony_l2`.** Esegui la migrazione a Valkey come parte di questa modifica. Vedere [Configurazione del servizio Valkey](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey).
+- **Redis non è un back-end remoto supportato per `symfony_l2`.** Esegui la migrazione a Valkey come parte di questa modifica. Vedere [Configurazione del servizio Valkey](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/service/valkey).
 
 - **La configurazione della sessione non è interessata da questa migrazione.** `SESSION_CONFIGURATION` è indipendente dal backend della cache e non deve essere modificato quando si passa a `symfony_l2`. Vedi [Istanze di sessione e cache separate](#separate-cache-and-session-instances).
 
@@ -607,7 +607,7 @@ Adobe Commerce 2.4.9 e versioni successive supportano il back-end della cache `s
 
 Per utilizzare la cache `symfony_l2` per Adobe Commerce 2.4.9, completare i passaggi seguenti:
 
-- Verificare che il progetto cloud utilizzi il pacchetto [`ece-tools` v2002.2.12](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) o versione successiva.
+- Verificare che il progetto cloud utilizzi il pacchetto [`ece-tools` v2002.2.12](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) o versione successiva.
 
 - Impostare la variabile di distribuzione nel file `.magento.env.yaml`: `VALKEY_BACKEND`=`symfony_l2`.
 
@@ -623,7 +623,7 @@ L&#39;impostazione della variabile di distribuzione `VALKEY_BACKEND` su `symfony
 >
 >La patch ACP2E-5132 per Adobe Commerce 2.4.9 migliora le prestazioni e l&#39;affidabilità della cache L2 di [!DNL Symfony] ottimizzando l&#39;archiviazione dei tag, aggiungendo un blocco di rigenerazione della cache non aggiornata e risolvendo i problemi relativi alle appartenenze ai tag non aggiornati, alle scritture remote ridondanti e all&#39;eliminazione basata sulle dimensioni L1 (`cleanup_percentage`). Ciò riduce l&#39;I/O del disco e il carico di back-end, migliorando la coerenza della cache. Consulta [Prestazioni e affidabilità migliorate della cache L2 di Symfony](/help/configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability) nella _Guida alla configurazione di Adobe Commerce_.
 >
->La patch è inclusa nel pacchetto [Patch cloud per Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) (una dipendenza di `ece-tools`) e viene applicata automaticamente durante la distribuzione quando si esegue l&#39;aggiornamento alla versione `ece-tools` più recente. Aggiornare alla versione più recente di `ece-tools` per ricevere la patch.
+>La patch è inclusa nel pacchetto [Patch cloud per Commerce](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) (una dipendenza di `ece-tools`) e viene applicata automaticamente durante la distribuzione quando si esegue l&#39;aggiornamento alla versione `ece-tools` più recente. Aggiornare alla versione più recente di `ece-tools` per ricevere la patch.
 
 #### Personalizza la configurazione della cache L2 di [!DNL Symfony]
 
@@ -995,6 +995,6 @@ stage:
 
 >[!MORELIKETHIS]
 >
->- [Configura servizio Valkey](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey)
->- [Configurazione del servizio Redis](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis)
->- [Distribuisci variabili](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+>- [Configura servizio Valkey](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/service/valkey)
+>- [Configurazione del servizio Redis](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/service/redis)
+>- [Distribuisci variabili](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)

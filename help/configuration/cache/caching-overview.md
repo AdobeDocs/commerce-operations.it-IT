@@ -56,7 +56,7 @@ Un tipo di **cache** identifica il tipo di dati da memorizzare nella cache, ad e
 Il caching HTTP a pagina intera memorizza le risposte complete a livello HTTP o CDN. Per le distribuzioni di produzione:
 
 - **Adobe Commerce on-premise**—Adobe consiglia [Vernice](config-varnish.md) per il caching a pagina intera. La vernice funziona come proxy inverso davanti al server web.
-- **Adobe Commerce sull&#39;infrastruttura cloud** utilizza [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"} per il livello di caching Edge e a pagina intera. L&#39;infrastruttura cloud non utilizza un servizio di vernice gestito separatamente.
+- **Adobe Commerce sull&#39;infrastruttura cloud** utilizza [Fastly](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"} per il livello di caching Edge e a pagina intera. L&#39;infrastruttura cloud non utilizza un servizio di vernice gestito separatamente.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Le seguenti attività di configurazione variano a seconda del tipo di distribuzi
 | Attività | On-premise | Infrastruttura cloud |
 | --- | --- | --- |
 | Back-end della cache dell&#39;applicazione | [Opzioni di back-end cache e riferimento archiviazione](cache-options.md) | [Best practice per la configurazione del servizio Valkey e Redis](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
-| caching HTTP a pagina intera | [Configura vernice](config-varnish.md) | [Panoramica dei servizi rapidi](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) |
+| caching HTTP a pagina intera | [Configura vernice](config-varnish.md) | [Panoramica dei servizi rapidi](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/fastly) |
 
 Le seguenti attività si applicano a tutti i tipi di distribuzione:
 
