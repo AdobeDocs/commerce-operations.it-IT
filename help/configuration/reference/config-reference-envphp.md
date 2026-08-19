@@ -146,7 +146,7 @@ Commerce utilizza una chiave di crittografia per proteggere le password e altri 
 ]
 ```
 
-Ulteriori informazioni sulla [chiave di crittografia](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) nella _Guida utente di Commerce_.
+Ulteriori informazioni sulla [chiave di crittografia](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/security/encryption-key) nella _Guida utente di Commerce_.
 
 ## db
 

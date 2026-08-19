@@ -17,7 +17,7 @@ Le versioni delle patch di sicurezza possono includere anche le modifiche relati
 
 Ogni versione di patch di sicurezza si basa sulla versione completa precedente della patch. Contiene le correzioni di qualità e sicurezza della versione patch precedente e le correzioni di sicurezza create tra la versione patch completa precedente e la versione patch di sicurezza.
 
-Per istruzioni su come scaricare e applicare le patch di sicurezza, vedere [Come ottenere e applicare le patch di sicurezza](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches) nella _Adobe Commerce Knowledgebase_.
+Per istruzioni su come scaricare e applicare le patch di sicurezza, vedere [Come ottenere e applicare le patch di sicurezza](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches) nella _Adobe Commerce Knowledgebase_.
 
 {{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 

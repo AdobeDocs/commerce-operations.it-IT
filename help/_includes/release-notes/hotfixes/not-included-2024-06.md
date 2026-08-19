@@ -25,22 +25,22 @@ Opzione 1:
 
    * [2.4.4-p9](/help/release/release-notes/security/2-4-4-patches.md#adobe-commerce-244-p9)
 
-1. Applica l&#39;[hotfix](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) rilasciato il 17 luglio 2024.
+1. Applica l&#39;[hotfix](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-27136) rilasciato il 17 luglio 2024.
 
-1. [Ruota](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) le chiavi di crittografia.
+1. [Ruota](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/security/encryption-key) le chiavi di crittografia.
 
 Opzione 2:
 
-1. Applica la [patch isolata](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136).
+1. Applica la [patch isolata](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-27136).
 
-1. [Ruota](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) le chiavi di crittografia.
+1. [Ruota](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/security/encryption-key) le chiavi di crittografia.
 
 **Per i clienti che hanno già applicato una patch di sicurezza rilasciata l&#39;11 giugno 2024 o la patch isolata rilasciata il 28 giugno 2024:**
 
-1. Applica l&#39;[hotfix](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) rilasciato il 17 luglio 2024.
+1. Applica l&#39;[hotfix](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-27136) rilasciato il 17 luglio 2024.
 
-1. [Ruota](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) le chiavi di crittografia.
+1. [Ruota](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/security/encryption-key) le chiavi di crittografia.
 
 **Per i clienti che hanno già 1) applicato una patch di sicurezza rilasciata l’11 giugno 2024 o 2) la patch isolata rilasciata il 28 giugno 2024 e 3) ruotato le chiavi di crittografia:**
  
-1. Applica l&#39;[hotfix](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) rilasciato il 17 luglio 2024.
+1. Applica l&#39;[hotfix](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-27136) rilasciato il 17 luglio 2024.

@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41164: impossibile salvare o modificare la società con attributi cliente personalizzati'
-description: La patch MDVA-41164 risolve il problema che impediva all'utente amministratore di salvare o modificare un'azienda con attributi cliente personalizzati di file o immagini di qualsiasi tipo. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5. L'ID della patch è MDVA-41164. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
+description: La patch MDVA-41164 risolve il problema che impediva all'utente amministratore di salvare o modificare un'azienda con attributi cliente personalizzati di file o immagini di qualsiasi tipo. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5. L'ID della patch è MDVA-41164. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: Admin Workspace, Attributes, B2B, Companies
 role: Developer
 exl-id: 9d1792e0-ba7b-444b-b1b1-771fd0e328eb
@@ -67,7 +67,7 @@ L’utente è in grado di completare la creazione dell’azienda e l’allegato 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

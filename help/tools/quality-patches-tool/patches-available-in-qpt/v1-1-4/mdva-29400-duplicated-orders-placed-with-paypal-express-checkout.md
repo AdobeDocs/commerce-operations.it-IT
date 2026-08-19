@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-29400: ordini duplicati effettuati con PayPal Express Checkout'
-description: La patch MDVA-29400 risolve il problema della creazione di ordini duplicati quando i clienti effettuano ordini con PayPal Express Checkout. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4. L'ID della patch è MDVA-29400. Il problema è stato risolto in Adobe Commerce 2.4.1.
+description: La patch MDVA-29400 risolve il problema della creazione di ordini duplicati quando i clienti effettuano ordini con PayPal Express Checkout. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4. L'ID della patch è MDVA-29400. Il problema è stato risolto in Adobe Commerce 2.4.1.
 feature: Checkout, Orders, Payments
 role: Admin
 exl-id: 6f7291d3-d554-4e4e-a55d-89ea2b9dea33
@@ -60,7 +60,7 @@ Viene visualizzato il seguente errore: *Il token di pagamento PayPal Express non
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

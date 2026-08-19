@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37364: l''attributo cliente personalizzato del tipo di data interrompe l''interfaccia utente della griglia'
-description: La patch MDVA-37364 risolve il problema relativo all'interruzione dell'interfaccia utente di Customer Grid da parte dell'attributo cliente personalizzato del tipo di data. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. L'ID della patch è MDVA-37364. Il problema è pianificato per la risoluzione in Adobe Commerce versione 2.4.4.
+description: La patch MDVA-37364 risolve il problema relativo all'interruzione dell'interfaccia utente di Customer Grid da parte dell'attributo cliente personalizzato del tipo di data. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. L'ID della patch è MDVA-37364. Il problema è pianificato per la risoluzione in Adobe Commerce versione 2.4.4.
 feature: Attributes, Cache
 role: Developer
 exl-id: 5bd64004-06c4-49fd-8e56-e2c44008ca82
@@ -61,7 +61,7 @@ L’interfaccia utente di Admin Customer Grid non funziona correttamente.
 Per applicare singole patch, utilizzare i collegamenti seguenti a seconda del tipo di distribuzione:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

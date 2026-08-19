@@ -31,7 +31,7 @@ Le azioni critiche portano all’invalidamento della cache e alle operazioni di 
 
 ## Informazioni aggiuntive
 
-- [Best practice per il caching](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [Best practice per il caching](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
 - [Contenuto privato: annullare la validità del contenuto privato](https://developer.adobe.com/commerce/php/development/cache/page/private-content#invalidate-private-content)
 - [Consigli hardware: cache](../../../performance/hardware.md#caches)
 - [Configurazione avanzata: configurazione Redis](../../../performance/advanced-setup.md#set-up-redis)

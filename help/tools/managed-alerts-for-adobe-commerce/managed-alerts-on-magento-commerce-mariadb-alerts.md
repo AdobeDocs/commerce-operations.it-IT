@@ -44,7 +44,7 @@ Riceverai un avviso gestito in [!DNL New Relic] se hai firmato fino a [Avvisi ge
 
 Se viene visualizzato un avviso critico sulle query DML, iniziare dal primo passaggio. Se viene visualizzato un avviso di avviso di query DML, iniziare dal passaggio 2.
 
-1. Controlla se è presente un ticket di supporto Adobe Commerce. Per ulteriori informazioni, consulta la nostra knowledge base [Tracciare i ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case). Il supporto potrebbe aver ricevuto un avviso di soglia [!DNL New Relic], creato un ticket e iniziato a lavorare sul problema. Se non esiste alcun ticket, creane uno. Il ticket deve contenere le seguenti informazioni:
+1. Controlla se è presente un ticket di supporto Adobe Commerce. Per ulteriori informazioni, consulta la nostra knowledge base [Tracciare i ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case). Il supporto potrebbe aver ricevuto un avviso di soglia [!DNL New Relic], creato un ticket e iniziato a lavorare sul problema. Se non esiste alcun ticket, creane uno. Il ticket deve contenere le seguenti informazioni:
    * Motivo contatto: selezionare **[!UICONTROL New Relic MariaDB alert received]**.
    * Descrizione dell&#39;avviso.
    * [[!DNL New Relic] Collegamento per incidente](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). Questo è incluso nei tuoi [Avvisi gestiti per Adobe Commerce](managed-alerts-for-magento-commerce.md).
@@ -56,4 +56,4 @@ Se viene visualizzato un avviso critico sulle query DML, iniziare dal primo pass
    1. Cerca ottimizzazioni del codice o ottimizzazioni operative:
       * Ottimizzazioni del codice: cerca di ottimizzare le query con inserimenti/aggiornamenti in blocco, riducendo al minimo l’utilizzo dell’indice o limitando il codice.
       * Ottimizzazioni operative: consente di effettuare l’offload delle modifiche dei dati che richiedono un utilizzo intensivo delle risorse per ridurre i tempi di traffico.
-      * Ulteriori ottimizzazioni: accertati di aver utilizzato l’ultima versione di ECE-Tools. Per i passaggi, consulta [Aggiornare la versione degli strumenti ece](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) nella Guida di Commerce su Cloud.
+      * Ulteriori ottimizzazioni: accertati di aver utilizzato l’ultima versione di ECE-Tools. Per i passaggi, consulta [Aggiornare la versione degli strumenti ece](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) nella Guida di Commerce su Cloud.

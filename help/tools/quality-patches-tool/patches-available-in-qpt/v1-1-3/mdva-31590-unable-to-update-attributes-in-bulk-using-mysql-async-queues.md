@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-31590: impossibile aggiornare gli attributi in blocco utilizzando le code asincrone MySQL'
-description: La patch MDVA-31590 risolve il problema che impediva agli utenti di aggiornare gli attributi in blocco utilizzando le code asincrone MySQL. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3. L'ID della patch è MDVA-31590. Il problema è stato risolto in Adobe Commerce 2.4.2.
+description: La patch MDVA-31590 risolve il problema che impediva agli utenti di aggiornare gli attributi in blocco utilizzando le code asincrone MySQL. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3. L'ID della patch è MDVA-31590. Il problema è stato risolto in Adobe Commerce 2.4.2.
 feature: Attributes, Services
 role: Admin
 exl-id: f8d1c3bd-e995-41ef-89e1-93eec6e8b1f1
@@ -71,7 +71,7 @@ Gli utenti non sono in grado di aggiornare gli attributi in blocco utilizzando M
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

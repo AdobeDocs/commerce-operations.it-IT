@@ -91,5 +91,5 @@ Dopo aver abilitato l&#39;archiviazione remota per una scheda specifica, è poss
 
 >[!INFO]
 >
->Il comando sync esegue la migrazione solo dei file nella directory `pub/media`, _not_ i file di importazione/esportazione nella directory `var`. Vedi [Importazione/esportazione pianificata](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) nella _Guida utente di Commerce 2.4_.
+>Il comando sync esegue la migrazione solo dei file nella directory `pub/media`, _not_ i file di importazione/esportazione nella directory `var`. Vedi [Importazione/esportazione pianificata](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=it) nella _Guida utente di Commerce 2.4_.
 

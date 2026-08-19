@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40619: le modifiche della gerarchia interrompono la modifica in linea della pagina CMS e generano l''errore 500'
-description: La patch MDVA-40619 risolve il problema relativo alle modifiche apportate alla gerarchia delle pagine di CMS che causano l'interruzione della modifica in linea della pagina di CMS e la generazione di "errore 500". Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5. L'ID della patch è MDVA-40619. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
+description: La patch MDVA-40619 risolve il problema relativo alle modifiche apportate alla gerarchia delle pagine di CMS che causano l'interruzione della modifica in linea della pagina di CMS e la generazione di "errore 500". Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5. L'ID della patch è MDVA-40619. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: CMS
 role: Admin
 exl-id: 148cb0a5-5a6c-4cfa-bf95-4bafc57beec6
@@ -61,7 +61,7 @@ Viene visualizzato il seguente errore:
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
