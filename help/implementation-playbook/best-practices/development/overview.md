@@ -4,9 +4,9 @@ description: Scopri le best practice di implementazione per la fase di sviluppo 
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di sv
 
 | Best practice | Descrizione |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Build e distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=it){target="_blank"} | Descrive le best practice per le fasi di build e implementazione di Adobe Commerce nei progetti di infrastruttura cloud |
+| [Build e distribuzione](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices){target="_blank"} | Descrive le best practice per le fasi di build e implementazione di Adobe Commerce nei progetti di infrastruttura cloud |
 | Debug | Eseguire il debug sistematico ed efficace del framework di Adobe Commerce |
 | [Distribuzione di contenuto statico](static-content-deployment.md) | Evita problemi con il contenuto statico che non viene visualizzato nella vetrina |
 | [Risoluzione dei problemi](troubleshooting.md) | Risoluzione dei problemi comuni di implementazione di Adobe Commerce |

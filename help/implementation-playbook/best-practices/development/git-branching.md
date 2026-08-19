@@ -4,9 +4,9 @@ description: Scopri diverse strategie di ramificazione per la gestione del codic
 feature: Best Practices
 role: Developer
 exl-id: 7d7736e8-7023-4315-9965-71866b0be5c3
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Ogni fase di sviluppo deve avere un ramo corrispondente in Git per tenere tracci
 
 >[!TIP]
 >
->I progetti Adobe Commerce su infrastrutture cloud contengono rami specifici che corrispondono a ambienti diversi. Consulta il [flusso di lavoro progetto Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=it) e il [flusso di lavoro progetto iniziale](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=it) nella _Guida a Cloud_.
+>I progetti Adobe Commerce su infrastrutture cloud contengono rami specifici che corrispondono a ambienti diversi. Consulta il [flusso di lavoro progetto Pro](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) e il [flusso di lavoro progetto iniziale](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow) nella _Guida a Cloud_.
 
 ## Strategie per i rami
 
@@ -51,6 +51,6 @@ Per ulteriori informazioni, consulta le seguenti risorse esterne:
 - [Branching dei flussi di lavoro](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
 - [Flussi di lavoro distribuiti](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
 - [Modelli per la gestione dei rami del codice sorgente](https://martinfowler.com/articles/branching-patterns.html)
-- [Modello di diramazione Git riuscito](https://nvie.com/posts/a-successful-git-branching-model/)
+- [Un modello di ramificazione Git riuscito](https://nvie.com/posts/a-successful-git-branching-model/)
 - [Flusso GitHub](https://docs.github.com/en/get-started/quickstart/github-flow)
 - [Flusso GitLab](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)

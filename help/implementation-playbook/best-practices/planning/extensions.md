@@ -4,7 +4,7 @@ description: Scopri come evitare problemi di prestazioni causati da estensioni A
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -36,5 +36,5 @@ Le estensioni (moduli) di terze parti di Adobe Commerce possono causare vari pro
 
 - [Best practice per la pianificazione degli aggiornamenti](../../../upgrade/prepare/best-practices.md)
 - Utilizzo di estensioni di terze parti con Adobe Commerce sull’infrastruttura cloud
-   - [Tecnologie e requisiti - Sviluppo e test](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [Perché eseguire completamente i test in Integration and Staging?](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+  - [Tecnologie e requisiti - Sviluppo e test](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-devtest)
+  - [Perché eseguire completamente i test in Integration and Staging?](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

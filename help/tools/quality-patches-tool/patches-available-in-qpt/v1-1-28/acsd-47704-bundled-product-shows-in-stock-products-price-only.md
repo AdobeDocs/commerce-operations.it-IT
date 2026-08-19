@@ -5,16 +5,16 @@ feature: Admin Workspace, Customer Service, Orders, Products
 role: Admin
 exl-id: 7f05ceed-869c-4d1a-91fd-0122dc98e65e
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 0%
+source-wordcount: '645'
+ht-degree: 2%
 
 ---
 
 # ACSD-47704: il pacchetto di prodotti mostra il prezzo dei soli prodotti in magazzino
 
-La patch ACSD-47704 risolve il problema in cui i prezzi dei segmenti dei clienti vengono memorizzati nella cache in modo errato tra i gruppi di clienti. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.28. L’ID della patch è ACSD-47704. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.
+La patch ACSD-47704 risolve il problema in cui i prezzi dei segmenti dei clienti vengono memorizzati nella cache in modo errato tra i gruppi di clienti. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.28. L’ID della patch è ACSD-47704. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.
 
 ## Prodotti e versioni interessati
 
@@ -28,7 +28,7 @@ La patch ACSD-47704 risolve il problema in cui i prezzi dei segmenti dei clienti
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -42,17 +42,17 @@ Il prezzo di un prodotto in bundle con Dynamic Pricing abilitato non è corretto
 1. Elementi bundle:
    * Imposta **[!UICONTROL Ship bundle items]** su **[!UICONTROL Together]**
    * Seleziona **[!UICONTROL Add Option]**
-      * **[!UICONTROL Title]** = o1
-      * **[!UICONTROL Input type]** = **[!UICONTROL Dropdown]**
-      * Casella di controllo Contrassegna come obbligatorio
-      * Aggiungi qualsiasi prodotto semplice disponibile; ad esempio, Joust Duffle Bag SKU 24-MB01. Prima di aggiungere il prodotto, annota il suo prezzo - $ 34
+     * **[!UICONTROL Title]** = o1
+     * **[!UICONTROL Input type]** = **[!UICONTROL Dropdown]**
+     * Casella di controllo Contrassegna come obbligatorio
+     * Aggiungi qualsiasi prodotto semplice disponibile; ad esempio, Joust Duffle Bag SKU 24-MB01. Prima di aggiungere il prodotto, annota il suo prezzo - $ 34
    * Quantità predefinita: 1
    * Seleziona **[!UICONTROL Add Option]**
-      * **[!UICONTROL Option Title]** = o2
-      * **[!UICONTROL Input type]** = **[!UICONTROL Dropdown]**
-      * Casella di controllo Contrassegna come obbligatorio
-      * Aggiungi qualsiasi prodotto semplice in magazzino, diverso dal prodotto aggiunto nel passaggio precedente; ad esempio - Strive Shoulder Pack 24-MB04. Prima di aggiungere il prodotto, annota il suo prezzo - $ 32
-      * Quantità predefinita: 1
+     * **[!UICONTROL Option Title]** = o2
+     * **[!UICONTROL Input type]** = **[!UICONTROL Dropdown]**
+     * Casella di controllo Contrassegna come obbligatorio
+     * Aggiungi qualsiasi prodotto semplice in magazzino, diverso dal prodotto aggiunto nel passaggio precedente; ad esempio - Strive Shoulder Pack 24-MB04. Prima di aggiungere il prodotto, annota il suo prezzo - $ 32
+     * Quantità predefinita: 1
 1. Salva prodotto.
 1. Vai alla vetrina e trova il prodotto creato nei passaggi precedenti. Annota il suo prezzo - $66
 (66 = 32 + 34).
@@ -77,14 +77,14 @@ Il prezzo del prodotto bundle con Dynamic Pricing abilitato non viene calcolato 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
-* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
+* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
 
 
-Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella guida di [!DNL Quality Patches Tool].
+Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida di [!DNL Quality Patches Tool].

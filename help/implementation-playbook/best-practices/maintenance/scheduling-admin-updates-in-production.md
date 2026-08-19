@@ -4,7 +4,7 @@ description: Scopri le best practice per la pianificazione di aggiornamenti crit
 role: Admin, User
 feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Le azioni critiche portano all’invalidamento della cache e alle operazioni di 
 
 ## Informazioni aggiuntive
 
-- [Best practice per il caching](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
-- [Contenuto privato: annullare la validità del contenuto privato](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [Best practice per il caching](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [Contenuto privato: annullare la validità del contenuto privato](https://developer.adobe.com/commerce/php/development/cache/page/private-content#invalidate-private-content)
 - [Consigli hardware: cache](../../../performance/hardware.md#caches)
 - [Configurazione avanzata: configurazione Redis](../../../performance/advanced-setup.md#set-up-redis)

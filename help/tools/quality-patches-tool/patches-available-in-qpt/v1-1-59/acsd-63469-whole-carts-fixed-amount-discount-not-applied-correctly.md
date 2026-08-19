@@ -5,9 +5,9 @@ feature: Price Rules
 role: Admin, Developer
 exl-id: fb6dee57-281e-4165-8b70-7ff5949eb677
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ La patch ACSD-63469 risolve il problema che non consente la corretta applicazion
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -39,11 +39,11 @@ Quando più regole **[!UICONTROL Fixed amount discount for whole cart]** vengono
 1. Creare due prodotti con un prezzo di 850 e 85 dollari e impostare i prezzi speciali rispettivamente su 765 e 68 dollari.
 1. Creare due **[!UICONTROL Cart Price Rules]** come segue:
    * Regola 1
-      * **[!UICONTROL Conditions]**: per il prodotto $ 850, impostare *Qtà* su *uguale o maggiore di 2*
-      * **[!UICONTROL Actions]**: Applica **[!UICONTROL Fixed amount discount for whole cart]** di *$153*
+     * **[!UICONTROL Conditions]**: per il prodotto $ 850, impostare *Qtà* su *uguale o maggiore di 2*
+     * **[!UICONTROL Actions]**: Applica **[!UICONTROL Fixed amount discount for whole cart]** di *$153*
    * Articolo 2
-      * **[!UICONTROL Conditions]**: per il prodotto $ 85, impostare *Qtà* su *uguale o maggiore di 2*
-      * **[!UICONTROL Actions]**: Applica **[!UICONTROL Fixed amount discount for whole cart]** di *$14*
+     * **[!UICONTROL Conditions]**: per il prodotto $ 85, impostare *Qtà* su *uguale o maggiore di 2*
+     * **[!UICONTROL Actions]**: Applica **[!UICONTROL Fixed amount discount for whole cart]** di *$14*
 1. Aggiungi entrambi i prodotti al carrello, ciascuno con una quantità di 2.
 
 <u>Risultati previsti</u>:
@@ -59,7 +59,7 @@ Lo sconto applicato nel carrello è di $41.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Passaggi aggiuntivi necessari dopo l&#39;installazione della patch
 

@@ -1,5 +1,5 @@
 ---
-source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -7,9 +7,9 @@ ht-degree: 0%
 ---
 # 2.4.7 miglioramenti della sicurezza
 
-* **È stato aggiunto il supporto per l&#39;integrità della sottorisorsa (SRI)** per soddisfare i requisiti PCI 4.0 per la verifica dell&#39;integrità dello script nelle pagine di pagamento. Il supporto per l’integrità della sottorisorsa (SRI) fornisce hash di integrità per tutte le risorse JavaScript che risiedono nel file system locale. La funzione SRI predefinita viene implementata solo nelle pagine di pagamento per le aree amministratore e vetrina. Tuttavia, i commercianti possono estendere la configurazione predefinita ad altre pagine. Consulta [Integrità della sottorisorsa](https://developer.adobe.com/commerce/php/development/security/subresource-integrity/) nella _Guida per gli sviluppatori di Commerce PHP_.<!--AC-1153-->
+* **È stato aggiunto il supporto per l&#39;integrità della sottorisorsa (SRI)** per soddisfare i requisiti PCI 4.0 per la verifica dell&#39;integrità dello script nelle pagine di pagamento. Il supporto per l’integrità della sottorisorsa (SRI) fornisce hash di integrità per tutte le risorse JavaScript che risiedono nel file system locale. La funzione SRI predefinita viene implementata solo nelle pagine di pagamento per le aree amministratore e vetrina. Tuttavia, i commercianti possono estendere la configurazione predefinita ad altre pagine. Consulta [Integrità della sottorisorsa](https://developer.adobe.com/commerce/php/development/security/subresource-integrity) nella _Guida per gli sviluppatori di Commerce PHP_.<!--AC-1153-->
 
-* **Modifiche alle direttive Content Security Policy (CSP)**—Aggiornamenti alla configurazione e miglioramenti alle direttive Adobe Commerce Content Security Policy (CSP) per la conformità ai requisiti PCI 4.0. Per informazioni dettagliate, vedere [Informativa sulla sicurezza dei contenuti](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) nella _Guida per gli sviluppatori di Commerce PHP_. <!--AC-11513-->
+* **Modifiche alle direttive Content Security Policy (CSP)**—Aggiornamenti alla configurazione e miglioramenti alle direttive Adobe Commerce Content Security Policy (CSP) per la conformità ai requisiti PCI 4.0. Per informazioni dettagliate, vedere [Informativa sulla sicurezza dei contenuti](https://developer.adobe.com/commerce/php/development/security/content-security-policies) nella _Guida per gli sviluppatori di Commerce PHP_. <!--AC-11513-->
 
   * La configurazione CSP predefinita per le pagine di pagamento per le aree di amministrazione e vetrina di Commerce è ora in modalità `restrict`. Per tutte le altre pagine, la configurazione predefinita è la modalità `report-only`.  Nelle versioni precedenti alla versione 2.4.7, CSP era configurato in modalità `report-only` per tutte le pagine.
 
@@ -19,4 +19,4 @@ ht-degree: 0%
 
     >[!NOTE]
     >
-    >L&#39;aggiornamento della configurazione CSP alla modalità `restrict` potrebbe bloccare gli script in linea esistenti nelle pagine di pagamento in Admin e storefront, causando il seguente errore del browser al caricamento di una pagina: `Refused to execute inline script because it violates the following Content Security Policy directive: "script-src`. Correggi questi errori aggiornando la configurazione della whitelist per consentire gli script richiesti. Consulta [Risoluzione dei problemi](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#troubleshooting) nella _Guida per gli sviluppatori di Commerce PHP_.
+    >L&#39;aggiornamento della configurazione CSP alla modalità `restrict` potrebbe bloccare gli script in linea esistenti nelle pagine di pagamento in Admin e storefront, causando il seguente errore del browser al caricamento di una pagina: `Refused to execute inline script because it violates the following Content Security Policy directive: "script-src`. Correggi questi errori aggiornando la configurazione della whitelist per consentire gli script richiesti. Consulta [Risoluzione dei problemi](https://developer.adobe.com/commerce/php/development/security/content-security-policies#troubleshooting) nella _Guida per gli sviluppatori di Commerce PHP_.

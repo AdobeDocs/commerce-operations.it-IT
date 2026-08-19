@@ -2,9 +2,9 @@
 title: riferimento env.php
 description: Scopri i valori e le sezioni di configurazione del file env.php in Adobe Commerce. Scopri le impostazioni dell’ambiente e le opzioni di configurazione.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce utilizza una chiave di crittografia per proteggere le password e altri 
 ]
 ```
 
-Ulteriori informazioni sulla [chiave di crittografia](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/security/encryption-key) nella _Guida utente di Commerce_.
+Ulteriori informazioni sulla [chiave di crittografia](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) nella _Guida utente di Commerce_.
 
 ## db
 
@@ -211,7 +211,7 @@ Elenco dei domini scaricabili disponibili in questo nodo. È possibile aggiunger
 ]
 ```
 
-Ulteriori informazioni su [Domini scaricabili](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Ulteriori informazioni su [Domini scaricabili](/help/tools/reference/commerce-on-premises.md#downloadabledomainsadd).
 
 ## installare
 
@@ -339,7 +339,7 @@ Come altro esempio, convertiamo un percorso dell&#39;opzione di configurazione `
 >
 >Il nome della variabile deve essere in maiuscolo, ma il valore fa distinzione tra maiuscole e minuscole e deve essere mantenuto come documentato.
 
-Per ricevere il nome finale della variabile di ambiente del sistema operativo `MAGENTO_DC_`, è sufficiente utilizzare la maiuscola e il prefisso `MAGENTO_DC_X-FRAME-OPTIONS`.
+Per ricevere il nome finale della variabile di ambiente del sistema operativo `MAGENTO_DC_X-FRAME-OPTIONS`, è sufficiente utilizzare la maiuscola e il prefisso `MAGENTO_DC_`.
 
 ```shell
 export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN

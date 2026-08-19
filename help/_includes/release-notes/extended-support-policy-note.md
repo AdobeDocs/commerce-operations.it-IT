@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
@@ -15,5 +15,5 @@ ht-degree: 0%
 >
 >Vedi anche:
 >
->- [Criteri del ciclo di vita del software](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/lifecycle-policy): date di fine del supporto, supporto esteso e disposizioni transitorie per la sola protezione
->- [Criterio di applicazione dell&#39;aggiornamento della versione cloud](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy) — date di applicazione e azioni richieste
+>- [Criteri del ciclo di vita del software](/help/release/lifecycle-policy.md): date di fine del supporto, supporto esteso e disposizioni transitorie per la sola protezione
+>- [Criterio di applicazione dell&#39;aggiornamento della versione cloud](/help/release/version-upgrade-enforcement-policy.md) — date di applicazione e azioni richieste

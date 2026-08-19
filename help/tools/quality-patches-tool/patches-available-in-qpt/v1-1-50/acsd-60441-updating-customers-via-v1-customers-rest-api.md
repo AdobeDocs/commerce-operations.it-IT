@@ -5,16 +5,16 @@ feature: REST, Customers
 role: Admin, Developer
 exl-id: 3936c065-41a6-4860-8313-e054f9b23ac7
 type: Troubleshooting
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
-# ACSD-60441: errore generato dall&#39;aggiornamento dei clienti tramite l&#39;endpoint API `V1/customers` di [!DNL REST]
+# ACSD-60441: errore generato dall&#39;aggiornamento dei clienti tramite l&#39;endpoint API [!DNL REST] di `V1/customers`
 
-La patch ACSD-60441 risolve il problema per cui l&#39;aggiornamento dei clienti tramite l&#39;API `V1/customers` [!DNL REST] quando si utilizza il token di accesso all&#39;integrazione generato dal back-end causa un errore. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.50. L’ID della patch è ACSD-60441. Questo problema è pianificato per la risoluzione in Adobe Commerce 2.4.8.
+La patch ACSD-60441 risolve il problema per cui l&#39;aggiornamento dei clienti tramite l&#39;API `V1/customers` [!DNL REST] quando si utilizza il token di accesso all&#39;integrazione generato dal back-end causa un errore. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.50. L’ID della patch è ACSD-60441. Questo problema è pianificato per la risoluzione in Adobe Commerce 2.4.8.
 
 ## Prodotti e versioni interessati
 
@@ -28,11 +28,11 @@ La patch ACSD-60441 risolve il problema per cui l&#39;aggiornamento dei clienti 
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
-Errore durante l&#39;aggiornamento dei clienti tramite l&#39;endpoint API `V1/customers` di [!DNL REST] quando si utilizza il token di accesso all&#39;integrazione generato dal backend.
+Errore durante l&#39;aggiornamento dei clienti tramite l&#39;endpoint API [!DNL REST] di `V1/customers` quando si utilizza il token di accesso all&#39;integrazione generato dal backend.
 
 <u>Passaggi da riprodurre</u>:
 
@@ -69,14 +69,14 @@ Viene visualizzato il seguente errore:
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
-* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
+* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
 
 
-Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella guida di [!DNL Quality Patches Tool].
+Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida di [!DNL Quality Patches Tool].
