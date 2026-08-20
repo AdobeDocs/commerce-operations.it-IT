@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41399: impossibile accedere a Gestisci carrello se un cliente aggiunge un prodotto alla lista dei desideri'
-description: La patch MDVA-41399 risolve il problema che impedisce agli utenti amministratori di accedere alla pagina Gestisci carrello se un cliente aggiunge un prodotto alla lista dei desideri. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6. L'ID della patch è MDVA-41399. Il problema è stato risolto in Adobe Commerce 2.4.2.
+description: La patch MDVA-41399 risolve il problema che impedisce agli utenti amministratori di accedere alla pagina Gestisci carrello se un cliente aggiunge un prodotto alla lista dei desideri. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6. L'ID della patch è MDVA-41399. Il problema è stato risolto in Adobe Commerce 2.4.2.
 feature: Orders, Products, Shopping Cart
 role: Admin
 exl-id: 81a128b5-0c38-4f8f-b297-1f264952d431
@@ -59,7 +59,7 @@ L&#39;utente amministratore riceve un messaggio di errore: *Si è verificato un 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

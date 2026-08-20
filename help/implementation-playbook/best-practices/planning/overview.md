@@ -46,7 +46,7 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di pi
     <td>Correggi ed evita i cinque problemi di configurazione più comuni per i siti Adobe Commerce.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">Memorizzazione in cache</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=it">Memorizzazione in cache</a></td>
     <td>Utilizza gli strumenti di gestione della cache per migliorare le prestazioni del sito.</td>
   </tr>
   <tr>
@@ -76,7 +76,7 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di pi
     <td colspan="2"><em>Configurazione servizi</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Configura Fastly</a></td>
+    <td><a href="https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Configura Fastly</a></td>
     <td>Configura i servizi Fastly per il progetto di infrastruttura cloud Adobe Commerce on.</td>
   </tr>
   <tr>

@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41046: prodotti semplici con opzioni personalizzate non disponibili per l''assegnazione'
-description: La patch MDVA-41046 risolve il problema, in cui non sono disponibili prodotti semplici con opzioni personalizzate da assegnare a un prodotto configurabile o raggruppato. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5. L'ID della patch è MDVA-41046. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
+description: La patch MDVA-41046 risolve il problema, in cui non sono disponibili prodotti semplici con opzioni personalizzate da assegnare a un prodotto configurabile o raggruppato. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5. L'ID della patch è MDVA-41046. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: Products
 role: Developer
 exl-id: 7fd7a9db-f834-4aea-a9d7-6e9535c037c8
@@ -58,7 +58,7 @@ La sezione Configurazione è vuota.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

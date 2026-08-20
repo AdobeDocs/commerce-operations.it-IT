@@ -21,7 +21,7 @@ La cache Redis non è supportata per Adobe Commerce 2.4.9 o versioni di patch su
 
 >[!NOTE]
 >
->Se il progetto Commerce è distribuito sul cloud, la memorizzazione nella cache di pagine intere utilizza [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) invece di Varnish. Gli argomenti trattati in questa sezione si applicano solo alle installazioni locali.
+>Se il progetto Commerce è distribuito sul cloud, la memorizzazione nella cache di pagine intere utilizza [Fastly](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/fastly) invece di Varnish. Gli argomenti trattati in questa sezione si applicano solo alle installazioni locali.
 
 ## Supporto della versione del servizio Adobe {#supported-versions-only}
 
@@ -29,7 +29,7 @@ La cache Redis non è supportata per Adobe Commerce 2.4.9 o versioni di patch su
 >
 >Adobe fornisce supporto solo per le distribuzioni che eseguono versioni supportate di tutte le dipendenze e i servizi. Questo vale per:
 >
->* **Servizi Platform** (inclusi ma non limitati a PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ e Nginx): i commercianti devono utilizzare versioni compatibili con la versione Adobe Commerce implementata. Consulta [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
+>* **Servizi Platform** (inclusi ma non limitati a PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ e Nginx): i commercianti devono utilizzare versioni compatibili con la versione Adobe Commerce implementata. Consulta [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=it).
 >* **Estensioni dei servizi Commerce** (inclusi ma non limitati a Live Search, Product Recommendations e Payment Services): è supportata solo l&#39;ultima versione rilasciata.
 >* **Estensioni personalizzate e integrazioni di terze parti**: gli esercenti sono responsabili di garantire che rimangano nelle versioni supportate dal fornitore.
 >
@@ -65,7 +65,7 @@ La cache Redis non è supportata per Adobe Commerce 2.4.9 o versioni di patch su
 
 >[!NOTE]
 >
->Dopo aver installato questa patch di sicurezza, i commercianti B2B di Adobe Commerce devono effettuare l’aggiornamento alla versione più recente della patch di sicurezza B2B compatibile. Consulta le [note sulla versione B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
+>Dopo aver installato questa patch di sicurezza, i commercianti B2B di Adobe Commerce devono effettuare l’aggiornamento alla versione più recente della patch di sicurezza B2B compatibile. Consulta le [note sulla versione B2B](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/release-notes).
 
 ## Solo Adobe Commerce {#ee-only}
 
@@ -119,7 +119,7 @@ Prima di poter eseguire gli indicizzatori in modalità parallela, è necessario 
 
 >[!IMPORTANT]
 >
->Adobe non supporta l’applicazione di patch ufficiali fornite da Adobe utilizzando questo metodo. Utilizza il seguente metodo a proprio rischio e pericolo. Per applicare patch ufficiali, utilizzare [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Eseguire sempre test completi prima di distribuire qualsiasi patch personalizzata.
+>Adobe non supporta l’applicazione di patch ufficiali fornite da Adobe utilizzando questo metodo. Utilizza il seguente metodo a proprio rischio e pericolo. Per applicare patch ufficiali, utilizzare [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"}. Eseguire sempre test completi prima di distribuire qualsiasi patch personalizzata.
 
 ## Backport delle patch di sicurezza di ottobre 2025 {#oct-2025-backports}
 
@@ -150,7 +150,7 @@ Dopo le recenti modifiche CSP/SRI, la pagina di pagamento non carica static.min.
 
 **Hotfix**:
 
-È disponibile un hotfix. Vedere [Estrazione non riuscita quando la minimizzazione JS e il bundling sono abilitati](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) nella Knowledge Base per i dettagli della patch.
+È disponibile un hotfix. Vedere [Estrazione non riuscita quando la minimizzazione JS e il bundling sono abilitati](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-27997) nella Knowledge Base per i dettagli della patch.
 
 ## Nota su Valkey Redis CLI {#valkey-redis-cli-note}
 

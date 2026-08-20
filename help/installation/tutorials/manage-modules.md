@@ -29,7 +29,7 @@ Dove
 
 >[!NOTE]
 >
->Non puoi abilitare o disabilitare i moduli direttamente nei progetti cloud. È necessario eseguire questi comandi localmente e quindi inviare le modifiche al file `app/etc/config.php` per un ambiente. Vedi [Flusso di lavoro del progetto Pro: flusso di lavoro di distribuzione](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow).
+>Non puoi abilitare o disabilitare i moduli direttamente nei progetti cloud. È necessario eseguire questi comandi localmente e quindi inviare le modifiche al file `app/etc/config.php` per un ambiente. Vedi [Flusso di lavoro del progetto Pro: flusso di lavoro di distribuzione](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow).
 
 ## Attivazione modulo, disattivazione
 
