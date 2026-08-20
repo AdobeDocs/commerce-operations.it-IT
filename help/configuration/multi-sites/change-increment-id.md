@@ -2,9 +2,9 @@
 title: Cambia ID incremento
 description: Scopri come modificare gli ID di incremento per ordini, fatture, note di credito e altre entità di database Commerce utilizzando SQL durante l’unione o il ripristino di siti.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Potrebbe essere necessario modificare l&#39;ID incremento per le nuove entità D
 
 >[!INFO]
 >
->Puoi anche risolvere il problema del gateway di pagamento per PayPal consentendo più pagamenti per ID fattura nelle Preferenze di ricezione pagamento di PayPal. Vedi [Richiesta rifiutata dal gateway PayPal - problema fattura duplicata](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=it) nella _Knowledge Base_.
+>Puoi anche risolvere il problema del gateway di pagamento per PayPal consentendo più pagamenti per ID fattura nelle Preferenze di ricezione pagamento di PayPal. Vedi [Richiesta rifiutata dal gateway PayPal - problema fattura duplicata](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) nella _Knowledge Base_.
 
 ## Passaggi preliminari
 

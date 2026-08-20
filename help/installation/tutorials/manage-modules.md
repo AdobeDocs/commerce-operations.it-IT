@@ -2,9 +2,9 @@
 title: Abilitare o disabilitare i moduli
 description: Scopri come abilitare, disabilitare e controllare lo stato dei moduli Adobe Commerce dalla riga di comando utilizzando lo stato del modulo e le opzioni correlate.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Dove
 
 >[!NOTE]
 >
->Non puoi abilitare o disabilitare i moduli direttamente nei progetti cloud. È necessario eseguire questi comandi localmente e quindi inviare le modifiche al file `app/etc/config.php` per un ambiente. Vedi [Flusso di lavoro del progetto Pro: flusso di lavoro di distribuzione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=it#deployment-workflow).
+>Non puoi abilitare o disabilitare i moduli direttamente nei progetti cloud. È necessario eseguire questi comandi localmente e quindi inviare le modifiche al file `app/etc/config.php` per un ambiente. Vedi [Flusso di lavoro del progetto Pro: flusso di lavoro di distribuzione](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow).
 
 ## Attivazione modulo, disattivazione
 

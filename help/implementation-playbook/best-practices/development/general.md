@@ -4,7 +4,7 @@ description: Scopri le best practice generali per lo sviluppo di progetti Adobe 
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: 68dc4635df9fc411925fe0d48a578edece8895dc
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Le parole chiave &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &
 ## Controllo delle versioni
 
 Le versioni del modulo DEVONO rispettare lo standard [Controllo delle versioni semantiche 2.0.0](https://semver.org/).
-Le dipendenze nella base di codice di Adobe Commerce DEVONO seguire le [linee guida sulle dipendenze della versione del modulo](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
+Le dipendenze nella base di codice di Adobe Commerce DEVONO seguire le [linee guida sulle dipendenze della versione del modulo](https://developer.adobe.com/commerce/php/development/versioning/dependencies).
 
 ## CONTROLLO DELLE REVISIONI
 
@@ -58,7 +58,7 @@ I commit DEVONO essere accompagnati da messaggi di commit significativi.
 
 ## Sicurezza
 
-1. [FUNZIONI non sicure](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) NON DEVONO essere utilizzate.
-1. È necessario applicare [strategie di prevenzione XSS](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/).
-1. È necessario applicare [Criteri di sicurezza dei contenuti](https://developer.adobe.com/commerce/php/development/security/content-security-policies/).
+1. [FUNZIONI non sicure](https://developer.adobe.com/commerce/php/development/security/non-secure-functions) NON DEVONO essere utilizzate.
+1. È necessario applicare [strategie di prevenzione XSS](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting).
+1. È necessario applicare [Criteri di sicurezza dei contenuti](https://developer.adobe.com/commerce/php/development/security/content-security-policies).
 1. Le nuove istanze di Adobe Commerce DEVONO essere consegnate all’ultima versione di sicurezza di una versione che non ha ancora raggiunto la data di &quot;Fine delle correzioni di sicurezza&quot;. Consulta [Adobe Commerce Software Lifecycle Policy](../../../release/lifecycle-policy.md).

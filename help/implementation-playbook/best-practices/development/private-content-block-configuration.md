@@ -4,7 +4,7 @@ description: Scopri le best practice per configurare blocchi di contenuto privat
 role: Developer
 feature: Best Practices
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Quando un blocco di contenuto privato contiene la variabile `_isScopePrivate`, il blocco non è memorizzabile in cache. Poiché il blocco privato non è memorizzato in cache, Adobe Commerce deve recuperare gli stessi dati per ogni richiesta del cliente, il che aumenta il carico del server.
 
-Invece di utilizzare la variabile `_isScopePrivate` per il contenuto privato, crea un blocco e un modello per visualizzare dati indipendenti dall&#39;utente. Questi dati vengono sostituiti con dati specifici dell’utente dal componente dell’interfaccia utente di Adobe Commerce, che gestisce in modo più efficiente i dati di pre-rendering. Per istruzioni, vedere [Contenuto privato](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) in _[!DNL Commerce PHP Extensions Guide]_.
+Invece di utilizzare la variabile `_isScopePrivate` per il contenuto privato, crea un blocco e un modello per visualizzare dati indipendenti dall&#39;utente. Questi dati vengono sostituiti con dati specifici dell’utente dal componente dell’interfaccia utente di Adobe Commerce, che gestisce in modo più efficiente i dati di pre-rendering. Per istruzioni, vedere [Contenuto privato](https://developer.adobe.com/commerce/php/development/cache/page/private-content) in _[!DNL Commerce PHP Extensions Guide]_.
 
 ## Prodotti e versioni interessati
 
@@ -31,4 +31,4 @@ I siti con blocchi di contenuto privati contenenti le variabili `_isScopePrivate
 ## Informazioni aggiuntive
 
 - [Contenuto privato](../../../performance/configuration.md#client-side-optimization-settings)
-- [Blocchi privati e memorizzabili in cache](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#cacheable-and-private-blocks) in _[!DNL Commerce PHP Extensions Guide]_
+- [Blocchi privati e memorizzabili in cache](https://developer.adobe.com/commerce/php/development/cache/page/private-content#cacheable-and-private-blocks) in _[!DNL Commerce PHP Extensions Guide]_

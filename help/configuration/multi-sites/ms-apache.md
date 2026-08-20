@@ -2,9 +2,9 @@
 title: Configurare più siti web con Apache
 description: Segui questa esercitazione per configurare più siti web con Apache.
 exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Se necessario, copiare lo script del punto di ingresso `index.php` esistente per
 
   Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
 
-  Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurare più siti Web o store](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=it) nella _guida di Commerce sull&#39;infrastruttura cloud_.
+  Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurare più siti Web o store](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) nella _guida di Commerce sull&#39;infrastruttura cloud_.
 
 - Si utilizza un host virtuale per sito Web; il file di configurazione dell&#39;host virtuale è `/etc/httpd/httpd.conf`
 
@@ -28,8 +28,8 @@ Se necessario, copiare lo script del punto di ingresso `index.php` esistente per
 - Software Commerce installato in `/var/www/html/magento2`
 - Sono disponibili due siti Web diversi da quello predefinito:
 
-   - `french.mysite.mg` con codice sito Web `french` e codice visualizzazione archivio `fr`
-   - `german.mysite.mg` con codice sito Web `german` e codice visualizzazione archivio `de`
+  - `french.mysite.mg` con codice sito Web `french` e codice visualizzazione archivio `fr`
+  - `german.mysite.mg` con codice sito Web `german` e codice visualizzazione archivio `de`
 
 ## Roadmap per la configurazione di più siti web con Apache
 
@@ -110,7 +110,7 @@ A meno che il DNS non sia configurato per gli URL dei tuoi archivi, devi aggiung
 >[!INFO]
 >
 >- Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
->- Sono necessarie attività aggiuntive per configurare Adobe Commerce sull&#39;infrastruttura cloud; consulta [Configurare più siti Web o store Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=it) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
+>- Sono necessarie attività aggiuntive per configurare Adobe Commerce sull&#39;infrastruttura cloud; consulta [Configurare più siti Web o store Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
 
 ### Risoluzione dei problemi
 

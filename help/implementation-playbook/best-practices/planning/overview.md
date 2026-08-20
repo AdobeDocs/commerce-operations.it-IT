@@ -4,9 +4,9 @@ description: Scopri le best practice di implementazione per la fase di pianifica
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -46,11 +46,11 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di pi
     <td>Correggi ed evita i cinque problemi di configurazione più comuni per i siti Adobe Commerce.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=it">Memorizzazione in cache</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">Memorizzazione in cache</a></td>
     <td>Utilizza gli strumenti di gestione della cache per migliorare le prestazioni del sito.</td>
   </tr>
   <tr>
-    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">Memorizzazione in cache a pagina intera</a></td>
+    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content">Memorizzazione in cache a pagina intera</a></td>
     <td>Scopri come utilizzare i dati pubblici durante l’implementazione del caching nell’estensione Adobe Commerce.</td>
   </tr>
   <tr>
@@ -76,11 +76,11 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di pi
     <td colspan="2"><em>Configurazione servizi</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=it">Configura Fastly</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Configura Fastly</a></td>
     <td>Configura i servizi Fastly per il progetto di infrastruttura cloud Adobe Commerce on.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html?lang=it">Configurare i canali di notifica per New Relic</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic">Configurare i canali di notifica per New Relic</a></td>
     <td>Accedi al tuo dashboard di New Relic e analizza i dati del tuo progetto Adobe Commerce on cloud infrastructure.</td>
   </tr>
   <tr>

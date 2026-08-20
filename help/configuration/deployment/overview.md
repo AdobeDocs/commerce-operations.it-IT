@@ -3,9 +3,9 @@ title: Panoramica sulla distribuzione
 description: Scopri le strategie di distribuzione per l’applicazione Commerce.
 feature: Configuration, Deploy
 exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ I termini seguenti vengono utilizzati per descrivere i sistemi coinvolti nella d
 
 - **Sistema di gestione temporanea**—_Facoltativo_. Facoltativamente, puoi impostare un sistema di staging da utilizzare per il test finale di tutto il codice integrato, incluso User Acceptance Testing (UAT). Impostare un sistema di gestione temporanea nello stesso modo in cui si imposta un sistema di produzione. Ad eccezione del fatto che la gestione temporanea non è il tuo negozio live e non elabora gli ordini dei clienti, è identica alla produzione.
 
-- **Sistema di produzione**: il tuo archivio live. È necessario apportare modifiche di configurazione dirette minime qui, e sicuramente nulla che non sia stato testato su un’istanza di staging. Se possibile, apportare modifiche alla configurazione con [Patch dati](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) che sono state testate in un&#39;istanza di gestione temporanea/sviluppo.
+- **Sistema di produzione**: il tuo archivio live. È necessario apportare modifiche di configurazione dirette minime qui, e sicuramente nulla che non sia stato testato su un’istanza di staging. Se possibile, apportare modifiche alla configurazione con [Patch dati](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches) che sono state testate in un&#39;istanza di gestione temporanea/sviluppo.
 
 ## Altri metodi di distribuzione
 

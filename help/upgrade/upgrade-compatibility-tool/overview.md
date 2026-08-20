@@ -2,9 +2,9 @@
 title: Panoramica di  [!DNL Upgrade Compatibility Tool]
 description: Scopri  [!DNL Upgrade Compatibility Tool]  e come può aiutarti con il tuo progetto Adobe Commerce.
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Diagramma ![[!DNL Upgrade Compatibility Tool]](../../assets/upgrade-guide/uct-di
 
 Guarda questo video per saperne di più su [!DNL Upgrade Compatibility Tool]:
 
->[!VIDEO](https://video.tv.adobe.com/v/344384?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
 
 ## Contribuisci a migliorare [!DNL Upgrade Compatibility Tool]
 
@@ -47,13 +47,13 @@ Per connetterti con il team [!DNL Upgrade Compatibility Tool], contattaci sul ca
 
 [!DNL Upgrade Compatibility Tool] utilizza le regole definite nei nostri [Standard di codifica](https://developer.adobe.com/commerce/php/coding-standards/) per garantire che il progetto segua le best practice di Adobe Commerce e per aiutarti a migliorare ed estendere [!DNL Upgrade Compatibility Tool].
 
-Fare riferimento all&#39;argomento [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/) per ulteriori informazioni sugli standard di codifica.
+Fare riferimento all&#39;argomento [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing) per ulteriori informazioni sugli standard di codifica.
 
 ## Risorse
 
 Consulta le seguenti risorse per comprendere meglio gli aggiornamenti di Adobe Commerce:
 
 - La [guida all&#39;aggiornamento](../overview.md) fornisce una panoramica del tipico percorso di aggiornamento di Adobe Commerce e delle best practice da seguire in tale percorso.
-- Nella pagina delle [prossime versioni](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/schedule) sono incluse le date per le versioni pianificate e future.
+- Nella pagina delle [prossime versioni](/help/release/schedule.md) sono incluse le date per le versioni pianificate e future.
 - La pagina [Risorse community](https://developer.adobe.com/commerce/contributor/community/) deve essere utilizzata per avviare discussioni o per trovare ulteriori informazioni.
 - Controlla la pagina [strumenti correlati](../upgrade-compatibility-tool/related-tools.md) per trovare strumenti utili nel tuo tipico percorso di aggiornamento.

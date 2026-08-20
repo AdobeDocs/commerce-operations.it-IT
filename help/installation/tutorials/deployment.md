@@ -3,10 +3,10 @@ title: Creare o aggiornare la configurazione della distribuzione
 description: Per gestire la configurazione dell’implementazione di Adobe Commerce, segui la procedura riportata di seguito.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Nella tabella seguente vengono illustrati i significati dei parametri e dei valo
 | `--db-user` | Nome utente del proprietario dell&#39;istanza di database.<br><br>Il valore predefinito è `root`. | No |
 | `--db-password` | Password del proprietario dell&#39;istanza di database. | No |
 | `--db-prefix` | Da utilizzare solo se si installano le tabelle di database in un&#39;istanza di database in cui sono già presenti tabelle Adobe Commerce.<br><br>In tal caso, utilizzare un prefisso per identificare le tabelle per l&#39;installazione. Alcuni clienti hanno più di un’istanza di Adobe Commerce in esecuzione su un server con tutte le tabelle nello stesso database.<br><br>La lunghezza del prefisso non può superare i cinque caratteri. Deve iniziare con una lettera e può includere solo lettere, numeri e caratteri di sottolineatura.<br><br>Questa opzione consente ai clienti di condividere il server di database con più installazioni di Adobe Commerce. | No |
-| `--session-save` | Utilizzare uno dei seguenti elementi:<br><br>- `db` per archiviare i dati della sessione nel [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Scegliere l&#39;archiviazione del database se si dispone di un database cluster. In caso contrario, l&#39;archiviazione basata su file potrebbe non offrire molti vantaggi.<br><br>- `files` per archiviare i dati della sessione nel file system. L&#39;archiviazione delle sessioni basata su file è appropriata a meno che l&#39;accesso al file system non sia lento, che si disponga di un database cluster o che si desideri archiviare i dati della sessione in Redis.<br><br>- `redis` per archiviare i dati della sessione in [Utilizzare Redis per l&#39;archiviazione delle sessioni](../../configuration/cache/config-redis.md). Se utilizzi Redis per il caching predefinito o delle pagine, Redis deve essere già installato. | No |
+| `--session-save` | Utilizzare uno dei seguenti elementi:<br><br>- `db` per archiviare i dati della sessione nel [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching). Scegliere l&#39;archiviazione del database se si dispone di un database cluster. In caso contrario, l&#39;archiviazione basata su file potrebbe non offrire molti vantaggi.<br><br>- `files` per archiviare i dati della sessione nel file system. L&#39;archiviazione delle sessioni basata su file è appropriata a meno che l&#39;accesso al file system non sia lento, che si disponga di un database cluster o che si desideri archiviare i dati della sessione in Redis.<br><br>- `redis` per archiviare i dati della sessione in [Utilizzare Redis per l&#39;archiviazione delle sessioni](../../configuration/cache/config-redis.md). Se utilizzi Redis per il caching predefinito o delle pagine, Redis deve essere già installato. | No |
 | `--key` | Se ne hai uno, specifica una chiave per crittografare [dati sensibili](#sensitive-data) nel database. Se non ne hai uno, l’applicazione ne genera uno per te. | No |
 | `--db-init-statements` | Parametro di configurazione MySQL avanzato. Utilizza le istruzioni di inizializzazione del database da eseguire durante la connessione al database MySQL.<br><br>Il valore predefinito è `SET NAMES utf8;`.<br><br>Prima di impostare i valori, consulta un riferimento simile a [questo](https://dev.mysql.com/doc/refman/5.6/en/server-options.html). | No |
 | `--http-cache-hosts` | Elenco separato da virgole di host gateway cache HTTP a cui inviare richieste di eliminazione. Ad esempio, i server di vernice. Utilizza questo parametro per specificare l’host o gli host da eliminare nella stessa richiesta. (Non importa se hai solo uno o più host.)<br><br>Il formato deve essere `<hostname or ip>:<listen port>`, dove puoi omettere `<listen port>` se si tratta della porta 80. Ad esempio, `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Non separare gli host con uno spazio. | No |
