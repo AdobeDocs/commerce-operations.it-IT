@@ -5,9 +5,9 @@ feature: Reporting, Admin Workspace, Data Import/Export
 role: Admin, Developer
 exl-id: 99d77ddd-4fb3-4eda-8771-62c0e25f49d1
 type: Troubleshooting
-source-git-commit: 3469da56c15499de4ceb5313c3cc2dfde0f0771c
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ L&#39;esportazione di *[!UICONTROL Ordered Products Report]* genera l&#39;errore
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

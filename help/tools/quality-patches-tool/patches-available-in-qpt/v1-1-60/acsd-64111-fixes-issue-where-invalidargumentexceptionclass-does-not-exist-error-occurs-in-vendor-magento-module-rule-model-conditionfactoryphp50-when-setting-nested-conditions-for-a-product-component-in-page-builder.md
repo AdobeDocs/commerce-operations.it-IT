@@ -1,12 +1,13 @@
 ---
 title: 'ACSD-64111: corregge l''errore *InvalidArgumentException: Class does not exist* durante l''impostazione di condizioni nidificate per un componente Product in [!DNL Page Builder]'
+description: Applicare la patch ACSD-64111 per risolvere il problema di Adobe Commerce, a causa del quale l'aggiunta di una combinazione di condizioni a una condizione di widget Prodotti in Page Builder genera InvalidArgumentException perché la classe non esiste in vendor/magento/module-rule/Model/ConditionFactory.php.
 feature: Products, Page Builder
 role: Admin, Developer
 exl-id: dc39c65b-fb78-4105-b0e8-92a78b49adaf
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ La patch ACSD-64111 risolve il problema in cui *InvalidArgumentException: la cla
 
 **La patch è stata creata per la versione di Adobe Commerce:**
 
-* Adobe Commerce (tutti i metodi di distribuzione)  2.4.6-p8
+* Adobe Commerce (tutti i metodi di distribuzione) 2.4.6-p8
 
 **Compatibile con le versioni di Adobe Commerce:**
 
@@ -31,7 +32,7 @@ La patch ACSD-64111 risolve il problema in cui *InvalidArgumentException: la cla
 
 ## Problema
 
-Errore *InvalidArgumentException: la classe non esiste in /app/&lt;project id\>/vendor/magento/module-rule/Model/ConditionFactory.php* viene generata quando si aggiunge un *[!UICONTROL Conditions Combination]* nella condizione [!DNL Page Builder] del widget Prodotti.
+Errore *InvalidArgumentException: la classe non esiste in /app/&lt;ID progetto\>/vendor/magento/module-rule/Model/ConditionFactory.php* viene generata quando si aggiunge un *[!UICONTROL Conditions Combination]* nella condizione del widget Prodotti [!DNL Page Builder].
 
 <u>Passaggi da riprodurre</u>:
 
@@ -59,7 +60,7 @@ Nei registri viene registrata la seguente eccezione:
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 
 ## Lettura correlata

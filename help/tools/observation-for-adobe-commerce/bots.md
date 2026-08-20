@@ -3,9 +3,9 @@ title: Scheda [!UICONTROL bots]
 description: Scopri la scheda [!UICONTROL bots] di [!DNL Observation for Adobe Commerce].
 exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1952'
 ht-degree: 0%
 
 ---
@@ -18,19 +18,19 @@ Questa scheda contiene informazioni che spiegano come identificare se e cosa [!D
 
 * [!DNL bot] è un componente software che esegue attività automatizzate ripetitive. Con l&#39;evoluzione dell&#39;intelligenza artificiale e dell&#39;apprendimento automatico, le attività, i metodi e le interazioni di [!DNL bots] stanno cambiando. Ci sono *buoni* [!DNL bots] che favoriscono i siti scansionando e aggiungendo i siti ai motori di ricerca Internet. In questo modo gli utenti di Internet vengono guidati al sito attraverso i risultati dei motori di ricerca. Un *buono* [!DNL bot] rispetta in genere i limiti inseriti in [!DNL bot] da un file `robots.txt` o le impostazioni in una console del motore di ricerca. I limiti possono limitare l&#39;accesso al sito o a parti del sito.
 * [!DNL bots] dannoso ignora il file `robots.txt` o potrebbe contraffare un [!DNL bot] valido tramite il campo dell&#39;agente utente della richiesta dei dati della richiesta HTTP. Alcune operazioni che possono essere eseguite da [!DNL bots]:
-   * Aggiungi il carico a un sito per negare l’accesso al sito agli utenti legittimi.
-   * Eliminare e riutilizzare i contenuti senza autorizzazione.
-   * Registrare account falsi per inondare i servizi e-mail o gli indirizzi o reindirizzare ad altri siti ([!DNL SPAM bots]).
-   * Creare visualizzazioni false ([!DNL Viewbots]).
-   * Acquista prodotti o biglietti ([!DNL Focused bots]).
+  * Aggiungi il carico a un sito per negare l’accesso al sito agli utenti legittimi.
+  * Eliminare e riutilizzare i contenuti senza autorizzazione.
+  * Registrare account falsi per inondare i servizi e-mail o gli indirizzi o reindirizzare ad altri siti ([!DNL SPAM bots]).
+  * Creare visualizzazioni false ([!DNL Viewbots]).
+  * Acquista prodotti o biglietti ([!DNL Focused bots]).
 * Gestione di [!DNL bots]
-   * [!DNL Observation for Adobe Commerce] ha visualizzazioni del traffico [!DNL bot]:
-      * Mostra il totale delle attività di [!DNL bot] non memorizzate nella cache che visualizza il carico che un [!DNL bot] sta aggiungendo a un sito e quando si verifica tale caricamento.
-      * Mostra i [!DNL bots] che stanno generando errori. In genere, se un [!DNL bot] aggiunge un carico che causa problemi al sito, tale indirizzo IP o [!DNL bot] presenta la frequenza più elevata di errori.
-      * Vengono visualizzati i nomi [!DNL bot] (valori del campo agente utente di richiesta) e gli indirizzi IP da gestire tramite:
-         * [!DNL Fastly] (limitazione della velocità o [!DNL VCLs] che bloccano indirizzi IP, intervalli o [!DNL bots] per valore di nome).
-         * Aggiunta di informazioni [!DNL bot] valide a `robots.txt field` per limitare o limitare la velocità di accesso al sito.
-         * Gestione di [!DNL Bing] o [!DNL Google bots] tramite la console del motore di ricerca.
+  * [!DNL Observation for Adobe Commerce] ha visualizzazioni del traffico [!DNL bot]:
+    * Mostra il totale delle attività di [!DNL bot] non memorizzate nella cache che visualizza il carico che un [!DNL bot] sta aggiungendo a un sito e quando si verifica tale caricamento.
+    * Mostra i [!DNL bots] che stanno generando errori. In genere, se un [!DNL bot] aggiunge un carico che causa problemi al sito, tale indirizzo IP o [!DNL bot] presenta la frequenza più elevata di errori.
+    * Vengono visualizzati i nomi [!DNL bot] (valori del campo agente utente di richiesta) e gli indirizzi IP da gestire tramite:
+      * [!DNL Fastly] (limitazione della velocità o [!DNL VCLs] che bloccano indirizzi IP, intervalli o [!DNL bots] per valore di nome).
+      * Aggiunta di informazioni [!DNL bot] valide a `robots.txt field` per limitare o limitare la velocità di accesso al sito.
+      * Gestione di [!DNL Bing] o [!DNL Google bots] tramite la console del motore di ricerca.
 
 ## [!UICONTROL Experimental Potential Malicious Bots frame]
 
@@ -38,7 +38,7 @@ Questa scheda contiene informazioni che spiegano come identificare se e cosa [!D
 
 Il frame **[!UICONTROL Experimental Potential Malicious Bots frame]** viene eseguito su 12 query distinte e complesse. Rileva le firme di richieste IP dannose e quindi aggrega i risultati, le somme e li ordina in base al conteggio in ordine decrescente. Le query contengono una moltitudine di firme di dati di exploit CVE e altre richieste dannose. Anche quando gli exploit sono bloccati da correzioni/patch di sicurezza e non rappresentano una minaccia per il sito, la richiesta deve ancora essere gestita dal sito web. Il volume delle richieste può diventare significativo in un breve periodo di tempo. In questo frame non vengono visualizzate tutte le richieste provenienti dall’indirizzo IP, ma solo quelle con segnali che indicano che la richiesta aveva un intento sospetto.
 
-Verificare che il traffico sia sospetto e non provenga da un indirizzo [!DNL Content Distributed Network] (CDN) che potrebbe anche fornire richieste valide. Se le richieste provengono da un indirizzo IP CDN, contatta il fornitore del servizio per aiutarti a bloccare il traffico sospetto attraverso la rete. Se devi bloccare l&#39;indirizzo o l&#39;URL della richiesta, consulta [Blocca traffico dannoso per Adobe Commerce al  [!DNL Fastly] livello](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=it) nella Knowledge Base del supporto Adobe Commerce.
+Verificare che il traffico sia sospetto e non provenga da un indirizzo [!DNL Content Distributed Network] (CDN) che potrebbe anche fornire richieste valide. Se le richieste provengono da un indirizzo IP CDN, contatta il fornitore del servizio per aiutarti a bloccare il traffico sospetto attraverso la rete. Se devi bloccare l&#39;indirizzo o l&#39;URL della richiesta, consulta [Blocca traffico dannoso per Adobe Commerce al  [!DNL Fastly] livello](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) nella Knowledge Base del supporto Adobe Commerce.
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
 

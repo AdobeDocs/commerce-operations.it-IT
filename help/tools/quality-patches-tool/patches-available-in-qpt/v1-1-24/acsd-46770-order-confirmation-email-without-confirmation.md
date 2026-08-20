@@ -5,16 +5,16 @@ feature: Communications, Orders
 role: Admin
 exl-id: d25ca121-7551-417c-b598-d8ed3a3da969
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
 
 # ACSD-46770: l&#39;e-mail di conferma dell&#39;ordine viene inviata anche quando **[!UICONTROL Email Order Confirmation]** è deselezionato
 
-La patch ACSD-46770 risolve il problema che consente di effettuare ordini tramite API REST come utente guest anche quando **[!UICONTROL Email Order Confirmation]** non è selezionato. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.24. L’ID della patch è ACSD-46770. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
+La patch ACSD-46770 risolve il problema che consente di effettuare ordini tramite API REST come utente guest anche quando **[!UICONTROL Email Order Confirmation]** non è selezionato. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.24. L’ID della patch è ACSD-46770. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 
 ## Prodotti e versioni interessati
 
@@ -55,13 +55,13 @@ Un&#39;e-mail di conferma dell&#39;ordine viene inviata indipendentemente dalla 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
-* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
+* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
 
 

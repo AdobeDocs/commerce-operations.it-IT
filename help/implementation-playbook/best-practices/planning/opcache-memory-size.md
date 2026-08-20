@@ -4,9 +4,9 @@ description: Descrive come evitare il degrado delle prestazioni mediante imposta
 role: Developer
 feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 6c0a9268cb3a3b2e76f4a389846e8407f0893b4f
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '159'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Allocare almeno **2 GB** di memoria per il modulo PHP [OPcache](https://www.php.
 ## Informazioni aggiuntive
 
 * [Best practice per le prestazioni - Impostazioni PHP](../../../performance/software.md#php-settings)
-* [Configurare le opzioni PHP](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
+* [Configurare le opzioni PHP](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/app/configure-app-yaml)
 * [Best practice per il database di Adobe Commerce sull’infrastruttura cloud](database-on-cloud.md)
 * [Problemi di database più comuni in Adobe Commerce sull’infrastruttura cloud](../maintenance/resolve-database-performance-issues.md)
 * [Gli indicizzatori &quot;Update On Schedule&quot; ottimizzano le prestazioni di Adobe Commerce](../maintenance/indexer-configuration.md)

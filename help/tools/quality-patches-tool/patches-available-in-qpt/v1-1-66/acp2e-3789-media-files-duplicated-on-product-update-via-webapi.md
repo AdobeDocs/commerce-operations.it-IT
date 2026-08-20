@@ -5,9 +5,9 @@ feature: Catalog Management, Media, REST, Products, Cache
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 1eaa8ed0-fde6-47c4-9339-8f5e7bce7b19
-source-git-commit: f82dcd6c76ba3512e59275c26815b6bb89e53733
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ L&#39;aggiornamento di un prodotto tramite WebAPI con un ID file multimediali de
 
 1. Crea un prodotto e aggiungi un’immagine.
 1. Ottenere i dettagli del prodotto utilizzando l&#39;API REST in `base_url/rest/V1/products/<sku>`.
-1. Esegui una richiesta PUT per aggiornare il prodotto mantenendo `media_gallery_entrie` invariati (nome immagine e file uguali).
+1. Esegui una richiesta PUT per aggiornare il prodotto, mantenendo i `media_gallery_entrie` invariati (stesso nome immagine e file).
 1. Controllare la directory `pub/media/catalog/product/xx/yy` prima e dopo l&#39;aggiornamento.
 
 <u>Risultati previsti</u>:
@@ -54,7 +54,7 @@ L’immagine viene duplicata con un nuovo nome (ad esempio, wb04-blue-1.jpg), ca
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

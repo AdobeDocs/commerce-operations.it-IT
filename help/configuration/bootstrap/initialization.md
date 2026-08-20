@@ -3,9 +3,9 @@ title: Inizializzazione e avvio dell'applicazione
 description: Informazioni sull'inizializzazione e la logica di avvio per l'applicazione Commerce.
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Abbiamo le seguenti applicazioni del punto di ingresso (ovvero, applicazioni def
 
 [\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http) funziona come segue:
 
-1. Determina l&#39;[area applicazione](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
+1. Determina l&#39;[area applicazione](https://developer.adobe.com/commerce/php/architecture/modules/areas).
 1. Avvia il controller anteriore e i sistemi di routing per individuare ed eseguire un&#39;azione del controller.
 1. Utilizza un oggetto di risposta HTTP per restituire il risultato ottenuto dall’azione del controller.
 1. Gestione degli errori (nell’ordine di priorità seguente):

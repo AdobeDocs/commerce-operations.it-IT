@@ -2,9 +2,9 @@
 title: Come accedere a  [!DNL Site-Wide Analysis Tool]
 description: Scopri come accedere alla dashboard degli strumenti di analisi a livello di sito dal pannello di amministrazione di Adobe Commerce. Scopri le autorizzazioni utente e i requisiti dei ruoli.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: d75d8fe87b5bf5cf5cd1d5a15371a456b82f18db
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Per il ruolo personalizzato che richiede l&#39;accesso [!DNL Site-Wide Analysis 
 
 >[!NOTE]
 >
->Se si è verificato che l&#39;account utente dispone dell&#39;autorizzazione per accedere a [!DNL Site-Wide Analysis Tool] e l&#39;utente riceve un errore 403 quando tenta di accedere allo strumento da [!UICONTROL Admin], il controllo degli accessi HTTP potrebbe essere abilitato nell&#39;istanza di Adobe Commerce sull&#39;infrastruttura cloud. Il dashboard [!DNL Site-Wide Analysis Tool] NON è supportato se è abilitata l&#39;autenticazione HTTP. Per ulteriori informazioni sulla risoluzione di questo problema, consulta l&#39;[articolo di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
+>Se si è verificato che l&#39;account utente dispone dell&#39;autorizzazione per accedere a [!DNL Site-Wide Analysis Tool] e l&#39;utente riceve un errore 403 quando tenta di accedere allo strumento da [!UICONTROL Admin], il controllo degli accessi HTTP potrebbe essere abilitato nell&#39;istanza di Adobe Commerce sull&#39;infrastruttura cloud. Il dashboard [!DNL Site-Wide Analysis Tool] NON è supportato se è abilitata l&#39;autenticazione HTTP. Per ulteriori informazioni sulla risoluzione di questo problema, consulta l&#39;[articolo di supporto](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-26852).
 
 ### Passaggio 2: accedere a [!DNL Site-Wide Analysis Tool]
 

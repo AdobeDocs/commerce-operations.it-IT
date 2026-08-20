@@ -4,9 +4,9 @@ description: Se sei un cliente Adobe Commerce su infrastruttura cloud Pro plan a
 feature: Observability, Support, Tools and External Services
 role: Admin
 exl-id: 3fc4b07f-4e27-4833-97a9-cf9741ae5648
-source-git-commit: 4560e7d000ad8333c3089b8b5e8ffd25f5d31b67
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Abbiamo creato dashboard e avvisi chiave per aiutarti a capire quando il tuo sit
 
 >[!NOTE]
 >
->Se gli avvisi gestiti per i criteri di avviso di Adobe Commerce non sono disponibili, è possibile che l&#39;account sia stato creato di recente o che [!DNL New Relic] sia stato configurato di recente. Ogni martedì viene eseguito un processo per aggiungere i criteri di avviso a tali account. I criteri di avviso dovrebbero essere disponibili il giorno successivo all&#39;esecuzione del processo successivo. Se il criterio risulta ancora mancante, [invia una richiesta di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) e includi l&#39;ID progetto.
+>Se gli avvisi gestiti per i criteri di avviso di Adobe Commerce non sono disponibili, è possibile che l&#39;account sia stato creato di recente o che [!DNL New Relic] sia stato configurato di recente. Ogni martedì viene eseguito un processo per aggiungere i criteri di avviso a tali account. I criteri di avviso dovrebbero essere disponibili il giorno successivo all&#39;esecuzione del processo successivo. Se il criterio risulta ancora mancante, [invia una richiesta di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) e includi l&#39;ID progetto.
 
 Di seguito sono riportati i collegamenti agli articoli della Knowledge Base che forniscono passaggi per la risoluzione dei problemi relativi a questi avvisi:
 

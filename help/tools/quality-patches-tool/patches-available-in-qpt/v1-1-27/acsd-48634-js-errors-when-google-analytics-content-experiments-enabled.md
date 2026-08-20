@@ -5,16 +5,16 @@ feature: Catalog Management, Categories, Console, Page Content
 role: Admin
 exl-id: 99368346-157f-4283-bb8c-192a62501717
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 0%
+source-wordcount: '448'
+ht-degree: 12%
 
 ---
 
 # ACSD-48634: [!DNL JS] errori quando [!DNL Google Analytics Content Experiments] è abilitato
 
-La patch ACSD-48634 corregge [!DNL JS] errori in una pagina di aggiornamento [!DNL staging] quando [!DNL Google Analytics Content Experiments] è abilitato. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.27. L’ID della patch è ACSD-48634. Il problema è stato risolto in Adobe Commerce 2.4.7.
+La patch ACSD-48634 corregge [!DNL JS] errori in una pagina di aggiornamento [!DNL staging] quando [!DNL Google Analytics Content Experiments] è abilitato. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.27. L’ID della patch è ACSD-48634. Il problema è stato risolto in Adobe Commerce 2.4.7.
 
 ## Prodotti e versioni interessati
 
@@ -39,18 +39,18 @@ La patch ACSD-48634 corregge [!DNL JS] errori in una pagina di aggiornamento [!D
 1. In **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL All Stores]**, creare un altro sito Web, store e **[!UICONTROL Store View]**. Assicurarsi che **[!UICONTROL Store View]** sia *[!UICONTROL Enabled]*.
 1. Configura **[!DNL Configure Google Analytics]** andando in **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Google API]**:
    * Per **[!DNL Main]** e altri siti Web [!DNL scope]:
-      * **[!UICONTROL Enabled]**: *[!UICONTROL Yes]*
-      * **[!UICONTROL Account type]**: *[!UICONTROL Google Tag Manager]*
-      * **[!UICONTROL Anonymize IP]**: *[!UICONTROL Yes]*
-      * **[!UICONTROL Enable Content Experiments]**: *[!UICONTROL Yes]*
-      * **[!UICONTROL Container Id]**: *[!UICONTROL (GTM container ID)]*
-      * **[!DNL Uncheck]** *[!UICONTROL Use Default]* per altri campi, ma non modificarli.
+     * **[!UICONTROL Enabled]**: *[!UICONTROL Yes]*
+     * **[!UICONTROL Account type]**: *[!UICONTROL Google Tag Manager]*
+     * **[!UICONTROL Anonymize IP]**: *[!UICONTROL Yes]*
+     * **[!UICONTROL Enable Content Experiments]**: *[!UICONTROL Yes]*
+     * **[!UICONTROL Container Id]**: *[!UICONTROL (GTM container ID)]*
+     * **[!DNL Uncheck]** *[!UICONTROL Use Default]* per altri campi, ma non modificarli.
    * Per **[!DNL Default Config]** [!DNL scope]:
-      * **[!UICONTROL Enabled]**: *[!UICONTROL Yes]*
-      * **[!UICONTROL Account type]**: *[!UICONTROL Universal Analytics]*
-      * **[!UICONTROL Account Number]**: *[!UICONTROL (Universal Analytics account number)]*
-      * **[!UICONTROL Anonymize IP]**: *[!UICONTROL Yes]*
-      * **[!UICONTROL Enable Content Experiments]**: *[!UICONTROL Yes]*
+     * **[!UICONTROL Enabled]**: *[!UICONTROL Yes]*
+     * **[!UICONTROL Account type]**: *[!UICONTROL Universal Analytics]*
+     * **[!UICONTROL Account Number]**: *[!UICONTROL (Universal Analytics account number)]*
+     * **[!UICONTROL Anonymize IP]**: *[!UICONTROL Yes]*
+     * **[!UICONTROL Enable Content Experiments]**: *[!UICONTROL Yes]*
 1. Disabilitare **[!DNL Configure Google Analytics]** su **[!DNL Default Config]** [!DNL scope] modificando **[!UICONTROL Enable]** da *[!UICONTROL Yes]* a *[!UICONTROL No]*. Assicurati di non cambiare altro!
 1. Vai a **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 1. Crea e modifica qualsiasi **[!UICONTROL category]** e aggiungi un aggiornamento pianificato:
@@ -70,13 +70,13 @@ Nessun errore [!DNL JS] e le modifiche all&#39;aggiornamento [!DNL staging] sono
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
-* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
+* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
 
 

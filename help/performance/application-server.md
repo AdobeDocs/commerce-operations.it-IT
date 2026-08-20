@@ -2,9 +2,9 @@
 title: Server applicazioni GraphQL
 description: Informazioni su graphql application server in Adobe Commerce. Scopri le linee guida per l’implementazione e le strategie di ottimizzazione.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2467'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server consente ad Adobe Commerce di mantenere lo stato tra le richieste API di Commerce GraphQL. GraphQL Application Server, basato sull&#39;estensione Swoole, funziona come un processo con thread di lavoro che gestiscono l&#39;elaborazione delle richieste. Mantenendo uno stato di applicazione avviato tra le richieste API di GraphQL, GraphQL Application Server migliora la gestione delle richieste e le prestazioni complessive del prodotto. Le richieste API diventano notevolmente più efficienti.
 
-GraphQL Application Server è disponibile solo per Adobe Commerce. Non è disponibile per Magento Open Source. Per i progetti Cloud Pro, è necessario [inviare un ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) per abilitare il server applicazioni GraphQL.
+GraphQL Application Server è disponibile solo per Adobe Commerce. Non è disponibile per Magento Open Source. Per i progetti Cloud Pro, è necessario [inviare un ticket di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) per abilitare il server applicazioni GraphQL.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Il modulo `ApplicationServer` (`Magento/ApplicationServer/`) abilita GraphQL App
 Dopo aver attivato la funzionalità Application Server nel progetto Pro, completare i passaggi seguenti prima di distribuire GraphQL Application Server:
 
 1. Distribuisci Adobe Commerce sull&#39;infrastruttura cloud utilizzando il modello cloud del ramo [2.4.7-appserver](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
-1. Assicurati che tutte le personalizzazioni ed estensioni di Commerce siano [compatibili](https://developer.adobe.com/commerce/php/development/components/app-server/) con GraphQL Application Server.
+1. Assicurati che tutte le personalizzazioni ed estensioni di Commerce siano [compatibili](https://developer.adobe.com/commerce/php/development/components/app-server) con GraphQL Application Server.
 1. Clona il progetto Commerce Cloud.
 1. Se necessario, regola le impostazioni nel file application-server/nginx.conf.sample.
 1. Aggiungere un commento alla sezione &#39;web&#39; attiva nel file `project_root/.magento.app.yaml`.
@@ -432,7 +432,7 @@ GraphQL Application Server aggiunge l&#39;intestazione di risposta `X-Backend` c
 
 ### Conferma compatibilità di estensione e personalizzazione
 
-Gli sviluppatori e i commercianti delle estensioni devono verificare innanzitutto che il codice di estensione e personalizzazione sia conforme alle linee guida descritte in _[Linee guida tecniche](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)_.
+Gli sviluppatori e i commercianti delle estensioni devono verificare innanzitutto che il codice di estensione e personalizzazione sia conforme alle linee guida descritte in _[Linee guida tecniche](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines)_.
 
 Considera queste linee guida durante la valutazione del codice:
 

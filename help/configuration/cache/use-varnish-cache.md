@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: 405
+source-wordcount: 392
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ Dopo aver installato e configurato Vernice per funzionare con Commerce, le segue
 
   Ad esempio, tutte le operazioni eseguite nell’amministratore in:
 
-   - **ARCHIVI** > **Impostazioni** > **Configurazione** > GENERALE > **Generale**
-   - **ARCHIVI** > **Impostazioni** > **Configurazione** > GENERALE > **Impostazione valuta**
-   - **ARCHIVI** > **Impostazioni** > **Configurazione** > GENERALE > **Indirizzi e-mail archivio**
+  - **ARCHIVI** > **Impostazioni** > **Configurazione** > GENERALE > **Generale**
+  - **ARCHIVI** > **Impostazioni** > **Configurazione** > GENERALE > **Impostazione valuta**
+  - **ARCHIVI** > **Impostazioni** > **Configurazione** > GENERALE > **Indirizzi e-mail archivio**
 
   Quando Commerce rileva tale modifica, viene visualizzato un messaggio che ti informa di aggiornare la cache.
 
@@ -61,7 +61,7 @@ Dopo aver installato e configurato Vernice per funzionare con Commerce, le segue
 
 ## Configura Commerce per eliminare la vernice
 
-Commerce elimina gli host Varnish dopo aver configurato gli host Varnish utilizzando il comando [`magento setup:config:set`](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
+Commerce elimina gli host Varnish dopo aver configurato gli host Varnish utilizzando il comando [`magento setup:config:set`](/help/tools/reference/commerce-on-premises.md#setupconfigset).
 
 È possibile utilizzare il parametro facoltativo `--http-cache-hosts` per specificare un elenco separato da virgole di host e porte di ascolto di Microsoft. Configurare tutti gli host Vernice, indipendentemente dal fatto che ne siano presenti uno o più. (Non separare gli host con uno spazio).
 

@@ -1,16 +1,16 @@
 ---
 title: 'ACSD-65983: si verifica un errore durante la riconfigurazione dell’offerta di prodotto in bundle in Admin'
-description: Applicare la patch ACSD-65983 per risolvere il problema di Adobe Commerce che si verifica quando si tenta di configurare un prodotto bundle nella schermata [!UICONTROL Sales] > [!UICONTROL Quotes] > [!UICONTROL Edit] sul backend.
+description: Applica la patch ACSD-65983 per risolvere il problema di Adobe Commerce, se viene visualizzato un errore durante il tentativo di configurare un prodotto bundle nella schermata [!UICONTROL Sales] > [!UICONTROL Quotes] > [!UICONTROL Edit] sul backend.
 feature: B2B, Quotes
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8a8f2b273bcbcf135677ad7ca289398bf660e02e
+exl-id: d03d09bc-a444-486f-ad6b-fddbbf795d8a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65983: si verifica un errore durante la riconfigurazione dell’offerta di prodotto in bundle in Admin
 
@@ -62,7 +62,7 @@ Viene visualizzato il messaggio di errore:
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool]
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud
 
 ## Lettura correlata
 

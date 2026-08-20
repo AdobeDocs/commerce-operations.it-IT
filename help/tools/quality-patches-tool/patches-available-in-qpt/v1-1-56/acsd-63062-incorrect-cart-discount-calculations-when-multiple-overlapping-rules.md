@@ -5,10 +5,10 @@ feature: Price Rules
 role: Admin, Developer
 exl-id: c4a93063-b640-444e-ba0e-552dd8d1895b
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 0%
+source-wordcount: '406'
+ht-degree: 1%
 
 ---
 
@@ -47,29 +47,29 @@ Quando si applicano più regole di sovrapposizione, si verificano calcoli di sco
 
    * Regola 1:
 
-      * *[!UICONTROL Priority]*: 100
-      * Scheda *[!UICONTROL Conditions]*: usa prodotto simple2 ($280) se la quantità totale è uguale o maggiore di 3
-      * Scheda *[!UICONTROL Actions]*: SKU semplice2
-      * *[!UICONTROL Fixed Amount Discount]*: $80
+     * *[!UICONTROL Priority]*: 100
+     * Scheda *[!UICONTROL Conditions]*: usa prodotto simple2 ($280) se la quantità totale è uguale o maggiore di 3
+     * Scheda *[!UICONTROL Actions]*: SKU semplice2
+     * *[!UICONTROL Fixed Amount Discount]*: $80
 
    * Regola 2:
 
-      * *[!UICONTROL Priority]*: 200
-      * Scheda *[!UICONTROL Actions]*: SKU semplice2
-      * *[!UICONTROL Percentage of Product Price Discount]*: 20%
+     * *[!UICONTROL Priority]*: 200
+     * Scheda *[!UICONTROL Actions]*: SKU semplice2
+     * *[!UICONTROL Percentage of Product Price Discount]*: 20%
 
    * Regola 3:
 
-      * *[!UICONTROL Priority]*: 300
-      * Scheda *[!UICONTROL Conditions]*: il subtotale è uguale o maggiore di $1000
-      * *[!UICONTROL Fixed Amount Discount]* per l&#39;intero carrello: $100
+     * *[!UICONTROL Priority]*: 300
+     * Scheda *[!UICONTROL Conditions]*: il subtotale è uguale o maggiore di $1000
+     * *[!UICONTROL Fixed Amount Discount]* per l&#39;intero carrello: $100
 
    * Regola 4:
 
-      * *[!UICONTROL Priority]*: 400
-      * Scheda *[!UICONTROL Conditions]*: usa prodotto simple1 ($1080) se la quantità totale è uguale o maggiore di 2
-      * Scheda *[!UICONTROL Actions]*: lo SKU è semplice1
-      * *[!UICONTROL Fixed Amount Discount]* per l&#39;intero carrello: $960
+     * *[!UICONTROL Priority]*: 400
+     * Scheda *[!UICONTROL Conditions]*: usa prodotto simple1 ($1080) se la quantità totale è uguale o maggiore di 2
+     * Scheda *[!UICONTROL Actions]*: lo SKU è semplice1
+     * *[!UICONTROL Fixed Amount Discount]* per l&#39;intero carrello: $960
 
 1. Vai alla vetrina e aggiungi al carrello i seguenti prodotti con la quantità specificata:
 
@@ -92,7 +92,7 @@ Lo sconto applicato è $1525,33.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 
 ## Lettura correlata

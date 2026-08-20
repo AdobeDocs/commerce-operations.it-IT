@@ -5,16 +5,16 @@ feature: Admin Workspace, Orders
 role: Admin
 exl-id: b10653ef-c4b1-40df-8bfe-7da755db621b
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 0%
+source-wordcount: '519'
+ht-degree: 4%
 
 ---
 
 # ACSD-49179: il rapporto Ordini mostra importi non corretti per negozi diversi
 
-La patch di ACSD-49179 risolve il problema relativo alla visualizzazione di importi non corretti nel rapporto Ordini in caso di valute diverse per negozi diversi. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.28. L’ID della patch è ACSD-49179. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.
+La patch di ACSD-49179 risolve il problema relativo alla visualizzazione di importi non corretti nel rapporto Ordini in caso di valute diverse per negozi diversi. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.28. L’ID della patch è ACSD-49179. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.
 
 ## Prodotti e versioni interessati
 
@@ -40,17 +40,17 @@ Il rapporto Ordini mostra gli importi errati in caso di valute diverse per negoz
 1. Crea una visualizzazione aggiuntiva per sito Web, store e store.
 1. Vai a **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL General]** > **[!UICONTROL Currency Setup]** > **[!UICONTROL Currency Options]** e imposta:
    * Configurazione predefinita:
-      * Valuta di base: USD
-      * Valuta di visualizzazione predefinita: USD
-      * Valute consentite: EUR, USD e THB (Baht thailandese)
+     * Valuta di base: USD
+     * Valuta di visualizzazione predefinita: USD
+     * Valute consentite: EUR, USD e THB (Baht thailandese)
    * Sito Web principale:
-      * Valuta di base: EUR
-      * Valuta di visualizzazione predefinita: EUR
-      * Valute consentite: EUR
+     * Valuta di base: EUR
+     * Valuta di visualizzazione predefinita: EUR
+     * Valute consentite: EUR
    * Nuovo sito Web aggiuntivo:
-      * Valuta di base: THB (Baht tailandese)
-      * Valuta di visualizzazione predefinita: THB (Thai Baht)
-      * Valute consentite: THB (Baht thailandese)
+     * Valuta di base: THB (Baht tailandese)
+     * Valuta di visualizzazione predefinita: THB (Thai Baht)
+     * Valute consentite: THB (Baht thailandese)
 1. Vai a **[!UICONTROL Stores]** > **[!UICONTROL Currency]** > **[!UICONTROL Currency Rates]** e imposta i tassi di conversione vuoti per THB (imposta i tassi su 1.0000).
 1. Crea un prodotto, assegnalo a entrambi i siti web e ordina il prodotto nel sito web aggiuntivo creato in precedenza.
 1. Assicurarsi che l&#39;ordine sia nello stato *Elaborazione* (fatturarlo).
@@ -77,13 +77,13 @@ Il totale è zero.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
-* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
+* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
 
 

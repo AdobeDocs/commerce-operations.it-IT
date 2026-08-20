@@ -4,13 +4,13 @@ description: Applica la patch ACP2E-3767 per risolvere il problema di Adobe Comm
 feature: Products, Catalog Management
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f39442925d9cc82087af9e84d91137a0fcd0ec14
+exl-id: 8c0645e3-47ab-4604-a9db-b070c3779e78
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3767: dopo il salvataggio di un prodotto bundle, viene nuovamente visualizzata l’ultima opzione bundle
 
@@ -63,7 +63,7 @@ Non è possibile rimuovere l’ultima opzione bundle in un prodotto bundle.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

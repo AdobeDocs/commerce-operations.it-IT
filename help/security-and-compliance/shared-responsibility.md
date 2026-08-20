@@ -2,9 +2,9 @@
 title: Modello operativo e sicurezza con responsabilità condivisa
 description: Scopri le responsabilità di sicurezza di ogni parte coinvolta nel progetto di infrastruttura cloud di Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '3270'
+source-wordcount: '3252'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ I commercianti sono responsabili di quanto segue:
 * Garanzia di uno sviluppo sicuro delle applicazioni
 * Ottenimento della certificazione PCI se richiesto dal servizio di elaborazione dei pagamenti dell&#39;esercente
 * Reazione e risposta agli incidenti di sicurezza
-* Mantenere tutte le dipendenze di terze parti, i servizi Platform e le estensioni dei servizi Adobe Commerce su versioni attivamente supportate. Adobe non fornisce supporto o assistenza per la sicurezza delle distribuzioni che eseguono versioni di dipendenza non supportate. Per le versioni supportate, vedere [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=it) e la [Matrice di disponibilità del prodotto](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability).
+* Mantenere tutte le dipendenze di terze parti, i servizi Platform e le estensioni dei servizi Adobe Commerce su versioni attivamente supportate. Adobe non fornisce supporto o assistenza per la sicurezza delle distribuzioni che eseguono versioni di dipendenza non supportate. Per le versioni supportate, vedere [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=it) e la [Matrice di disponibilità del prodotto](/help/release/product-availability.md).
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ L’esercente è responsabile del rispetto delle best practice di sicurezza per 
   * Estensioni di Adobe Commerce Services
   * Tutte le estensioni di terze parti e le integrazioni personalizzate
 
-  Adobe non fornisce supporto per le distribuzioni che eseguono versioni non supportate. Per le versioni supportate, vedere [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=it) e la [Matrice di disponibilità del prodotto](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability).
+  Adobe non fornisce supporto per le distribuzioni che eseguono versioni non supportate. Per le versioni supportate, vedere [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=it) e la [Matrice di disponibilità del prodotto](/help/release/product-availability.md).
 
 ## Responsabilità del fornitore di servizi cloud
 

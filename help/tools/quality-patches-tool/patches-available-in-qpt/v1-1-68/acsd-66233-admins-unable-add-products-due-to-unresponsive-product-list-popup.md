@@ -5,9 +5,9 @@ feature: Inventory, Merchandising
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 2e01e62d-b6f9-4aa5-9040-7908aa83d422
-source-git-commit: a1241f709fc1b7128d1d267c54586c60dadab436
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ La finestra a comparsa viene caricata indefinitamente e non viene visualizzato l
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

@@ -16,9 +16,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: 379
+source-wordcount: 380
 ht-degree: 0%
 
 ---
@@ -98,4 +98,4 @@ Assicurarsi che la directory `<magento_root>/var/page_cache` sia vuota:
 
 >[!TIP]
 >
->Se si verificano 503 errori (recupero back-end non riuscito), vedere [Risoluzione dei problemi relativi agli errori 503 (servizio non disponibile)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=it) nel _Centro assistenza Adobe Commerce_.
+>Se si verificano 503 errori (recupero back-end non riuscito), vedere [Risoluzione dei problemi relativi agli errori 503 (servizio non disponibile)](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors) nel _Centro assistenza Adobe Commerce_.
