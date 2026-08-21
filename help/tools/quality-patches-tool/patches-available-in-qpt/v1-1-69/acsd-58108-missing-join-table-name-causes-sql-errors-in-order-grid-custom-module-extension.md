@@ -36,12 +36,12 @@ Il nome della tabella di join mancante nella tabella di recupero originale causa
 
 <u>Passaggi da riprodurre</u>:
 
-01. Installa un’istanza di sviluppo 2.4.
-02. Crea un nuovo ordine.
-03. Installare un modulo personalizzato con un&#39;estensione SQL.
-04. Passa a **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
-05. Applica il filtro **[!UICONTROL Purchase Date]** e attendi il risultato.
-06. Applica filtro **[!UICONTROL Product SKU]**.
+&#x200B;01. Installa un’istanza di sviluppo 2.4.
+&#x200B;02. Crea un nuovo ordine.
+&#x200B;03. Installare un modulo personalizzato con un&#39;estensione SQL.
+&#x200B;04. Passa a **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
+&#x200B;05. Applica il filtro **[!UICONTROL Purchase Date]** e attendi il risultato.
+&#x200B;06. Applica filtro **[!UICONTROL Product SKU]**.
 
 <u>Risultati previsti</u>:
 
