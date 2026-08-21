@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-33606: errore durante il salvataggio della pagina CMS assegnata alla gerarchia'
-description: La patch di MDVA-33606 risolve il problema relativo all'errore *Unique constraint viola found* (Violazione di vincolo univoca trovata) durante il salvataggio di una pagina CMS assegnata alla struttura gerarchica. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3. L'ID della patch è MDVA-33606. Il problema è stato risolto in Adobe Commerce 2.4.3.
+description: La patch di MDVA-33606 risolve il problema relativo all'errore *Unique constraint viola found* (Violazione di vincolo univoca trovata) durante il salvataggio di una pagina CMS assegnata alla struttura gerarchica. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3. L'ID della patch è MDVA-33606. Il problema è stato risolto in Adobe Commerce 2.4.3.
 feature: CMS
 role: Admin
 exl-id: 19aaa13f-7ee6-49bc-b1d9-c288dc93b951
@@ -64,7 +64,7 @@ Viene visualizzato il seguente errore: *È stata rilevata una violazione di vinc
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

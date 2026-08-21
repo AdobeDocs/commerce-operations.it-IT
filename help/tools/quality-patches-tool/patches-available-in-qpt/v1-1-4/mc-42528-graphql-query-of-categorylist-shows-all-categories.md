@@ -1,6 +1,6 @@
 ---
 title: 'MC-42528: la query GraphQL di categoryList mostra tutte le categorie'
-description: La patch MC-42528 risolve il problema per cui la query GraphQL di "categoryList" restituisce sia le categorie assegnate che quelle non assegnate quando la categoria di navigazione di una particolare categoria è impostata su "Deny". Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4. L’ID della patch è MC-42528. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
+description: La patch MC-42528 risolve il problema per cui la query GraphQL di "categoryList" restituisce sia le categorie assegnate che quelle non assegnate quando la categoria di navigazione di una particolare categoria è impostata su "Deny". Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4. L’ID della patch è MC-42528. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: Catalog Management, Categories, GraphQL, Customer Service
 role: Admin
 exl-id: 0611a7ff-9d55-4d95-9d4e-9ce1d9096bb6
@@ -56,7 +56,7 @@ Tutte le categorie vengono visualizzate nella risposta indipendentemente dalle a
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

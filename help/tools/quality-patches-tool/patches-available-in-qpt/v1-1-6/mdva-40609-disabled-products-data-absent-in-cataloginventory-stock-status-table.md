@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40609: dati dei prodotti disabilitati assenti nella tabella cataloginventory_stock_status'
-description: La patch MDVA-40609 risolve il problema per cui i dati dei prodotti disabilitati non vengono visualizzati nella tabella di indice "cataloginventory_stock_status", causando la visualizzazione di quantità di prodotti errate. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6. L'ID della patch è MDVA-40609. Il problema è stato risolto in Adobe Commerce 2.4.3.
+description: La patch MDVA-40609 risolve il problema per cui i dati dei prodotti disabilitati non vengono visualizzati nella tabella di indice "cataloginventory_stock_status", causando la visualizzazione di quantità di prodotti errate. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6. L'ID della patch è MDVA-40609. Il problema è stato risolto in Adobe Commerce 2.4.3.
 feature: Catalog Management, Inventory, Orders, Products
 role: Admin
 exl-id: e207ee55-b6ce-4065-bae1-2be89dcf5092
@@ -61,7 +61,7 @@ Un titolo ha valore zero.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

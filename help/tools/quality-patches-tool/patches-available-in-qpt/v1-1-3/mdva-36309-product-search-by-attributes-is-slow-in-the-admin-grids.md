@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-36309: la ricerca di prodotti per attributi è lenta nelle griglie di amministrazione'
-description: La patch MDVA-36309 risolve il problema relativo al rallentamento della ricerca di prodotti per attributi nelle griglie di amministrazione. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3. L'ID della patch è MDVA-36309. Il problema è stato risolto in Adobe Commerce 2.4.3.
+description: La patch MDVA-36309 risolve il problema relativo al rallentamento della ricerca di prodotti per attributi nelle griglie di amministrazione. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3. L'ID della patch è MDVA-36309. Il problema è stato risolto in Adobe Commerce 2.4.3.
 feature: Admin Workspace, Attributes, Products, Search
 role: Admin
 exl-id: fe23f129-15b4-4239-a699-4776587cc4b8
@@ -51,7 +51,7 @@ La ricerca richiede molto tempo.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
