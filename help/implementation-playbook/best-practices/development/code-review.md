@@ -4,7 +4,7 @@ description: Scopri le best practice per la revisione del codice nella fase di s
 feature: Best Practices
 role: Developer
 exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Inoltre, considera i seguenti punti quando implementi i processi di revisione de
 
 Lo stile può essere testato automaticamente eseguendo l&#39;ispezione PhpStorm (vedi sotto).
 
-Assicurati di configurare [PHPMD e PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) e di eseguire lo strumento [Coding Standard](https://github.com/magento/magento-coding-standard) dalla CLI (anche di seguito). Esiste una sovrapposizione, ma entrambi dispongono di test univoci.
+Assicurati di configurare [PHPMD e PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection) e di eseguire lo strumento [Coding Standard](https://github.com/magento/magento-coding-standard) dalla CLI (anche di seguito). Esiste una sovrapposizione, ma entrambi dispongono di test univoci.
 
 ### Convenzione e struttura
 

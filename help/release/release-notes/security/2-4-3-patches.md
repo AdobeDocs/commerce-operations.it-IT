@@ -2,8 +2,8 @@
 title: Note sulla versione per le patch di sicurezza di Adobe Commerce 2.4.3
 description: Scopri le correzioni di bug di sicurezza, i miglioramenti della sicurezza e altri aggiornamenti relativi alla sicurezza inclusi nelle versioni delle patch di sicurezza per Adobe Commerce 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-last-update: 2026-05-12T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 La versione di sicurezza Adobe Commerce 2.4.3-p3 fornisce correzioni di sicurezza per le vulnerabilità identificate nelle versioni precedenti della versione 2.4.3. Questa versione include anche miglioramenti di sicurezza che migliorano la conformità alle più recenti best practice per la sicurezza.
 
-Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB22-38](https://helpx.adobe.com/it/security/products/magento/apsb22-38.html).
+Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
 
 ### Applica AC-3022.patch per continuare a offrire DHL come vettore di spedizione
 
@@ -36,7 +36,7 @@ DHL ha introdotto lo schema versione 6.2 e dichiarerà obsoleto lo schema versio
 
 La versione di sicurezza Adobe Commerce 2.4.3-p2 fornisce correzioni di bug di sicurezza per le vulnerabilità identificate nelle versioni precedenti. Questa versione include anche miglioramenti di sicurezza che migliorano la conformità alle più recenti best practice per la sicurezza.
 
-Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB22-13](https://helpx.adobe.com/it/security/products/magento/apsb22-13.html).  La versione patch risolve anche la vulnerabilità gestita da `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` e `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
+Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  La versione patch risolve anche la vulnerabilità gestita da `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` e `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
 
 
 ### Applica AC-3022.patch per continuare a offrire DHL come vettore di spedizione
@@ -47,7 +47,7 @@ DHL ha introdotto lo schema versione 6.2 e dichiarerà obsoleto lo schema versio
 
 * L’utilizzo della variabile e-mail è stato dichiarato obsoleto nella versione 2.3.4 come parte di una mitigazione del rischio sulla sicurezza in favore di una sintassi della variabile più rigida. Questo comportamento legacy è stato completamente rimosso in questa versione come continuazione della riduzione dei rischi per la sicurezza.
 
-  Di conseguenza, i modelli e-mail o newsletter che funzionavano nelle versioni precedenti potrebbero non funzionare correttamente dopo l’aggiornamento ad Adobe Commerce 2.4.3-p2. I modelli interessati includono sostituzioni amministratore, temi, temi secondari e modelli da moduli personalizzati o estensioni di terze parti. La distribuzione potrebbe essere ancora interessata anche dopo l&#39;utilizzo dello [strumento di compatibilità per l&#39;aggiornamento](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=it) per correggere gli utilizzi obsoleti. Per informazioni sui potenziali effetti e le linee guida per la migrazione dei modelli interessati, vedere [Migrazione dei modelli di posta elettronica personalizzati](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration).
+  Di conseguenza, i modelli e-mail o newsletter che funzionavano nelle versioni precedenti potrebbero non funzionare correttamente dopo l’aggiornamento ad Adobe Commerce 2.4.3-p2. I modelli interessati includono sostituzioni amministratore, temi, temi secondari e modelli da moduli personalizzati o estensioni di terze parti. La distribuzione potrebbe essere ancora interessata anche dopo l&#39;utilizzo dello [strumento di compatibilità per l&#39;aggiornamento](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) per correggere gli utilizzi obsoleti. Per informazioni sui potenziali effetti e le linee guida per la migrazione dei modelli interessati, vedere [Migrazione dei modelli di posta elettronica personalizzati](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration).
 
 * I token di accesso OAuth e i token di reimpostazione della password ora sono crittografati quando sono memorizzati nel database. <!-- AC-520 1323-->
 
@@ -55,9 +55,9 @@ DHL ha introdotto lo schema versione 6.2 e dichiarerà obsoleto lo schema versio
 
 * Swagger è ora disabilitato per impostazione predefinita quando Adobe Commerce è in modalità di produzione. <!-- AC-1450-->
 
-* Gli sviluppatori possono ora configurare il limite di dimensione per gli array accettati dagli endpoint RESTful di Adobe Commerce in base agli endpoint. Vedi [Sicurezza API](https://developer.adobe.com/commerce/webapi/get-started/api-security/). <!-- AC-465-->
+* Gli sviluppatori possono ora configurare il limite di dimensione per gli array accettati dagli endpoint RESTful di Adobe Commerce in base agli endpoint. Vedi [Sicurezza API](https://developer.adobe.com/commerce/webapi/get-started/api-security). <!-- AC-465-->
 
-* Sono stati aggiunti meccanismi per limitare le dimensioni e il numero di risorse che un utente può richiedere tramite un’API web a livello di sistema e per ignorare i valori predefiniti nei singoli moduli. Questo miglioramento risolve il problema risolto da `MC-43048__set_rate_limits__2.4.3.patch`. Vedi [Sicurezza API](https://developer.adobe.com/commerce/webapi/get-started/api-security/). <!-- AC-1120-->
+* Sono stati aggiunti meccanismi per limitare le dimensioni e il numero di risorse che un utente può richiedere tramite un’API web a livello di sistema e per ignorare i valori predefiniti nei singoli moduli. Questo miglioramento risolve il problema risolto da `MC-43048__set_rate_limits__2.4.3.patch`. Vedi [Sicurezza API](https://developer.adobe.com/commerce/webapi/get-started/api-security). <!-- AC-1120-->
 
 
 ## 2.4.3-p1
@@ -65,7 +65,7 @@ DHL ha introdotto lo schema versione 6.2 e dichiarerà obsoleto lo schema versio
 La versione di sicurezza Adobe Commerce 2.4.3-p1 fornisce correzioni di bug di sicurezza per le vulnerabilità identificate nella versione precedente (Adobe Commerce 2.4.3 e Magento Open Source 2.4.3). Questa versione include anche miglioramenti di sicurezza che migliorano la conformità alle più recenti best practice per la sicurezza.
 
 
-Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB21-86](https://helpx.adobe.com/it/security/products/magento/apsb21-86.html). La versione della patch fornisce anche correzioni di bug per le estensioni sviluppate dal fornitore [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=it), [Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html) e [Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html).
+Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). La versione della patch fornisce anche correzioni di bug per le estensioni sviluppate dal fornitore [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html) e [Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html).
 
 ### Applica AC-3022.patch per continuare a offrire DHL come vettore di spedizione
 
@@ -81,7 +81,7 @@ Questa versione include il seguente hotfix e tutti gli hotfix rilasciati per la 
 
 **ID sessione rimossi dal database**. Questa modifica al codice può causare modifiche non significative se i commercianti dispongono di personalizzazioni o estensioni installate che utilizzano gli ID di sessione non elaborati memorizzati nel database. <!-- MC-40976-->
 
-**Accesso amministratore limitato alle cartelle di Media Gallery**. Le autorizzazioni predefinite di Media Gallery consentono ora solo le operazioni di directory (visualizzazione, caricamento, eliminazione e creazione) che sono esplicitamente consentite dalla configurazione. Gli utenti amministratori non possono più accedere alle risorse multimediali tramite Media Gallery caricate all&#39;esterno delle directory `catalog/category` o `wysiwyg`. Gli amministratori che desiderano accedere alle risorse multimediali devono spostarle in una cartella consentita in modo esplicito o modificare le impostazioni di configurazione. Vedere [Modifica autorizzazioni cartella Catalogo multimediale](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
+**Accesso amministratore limitato alle cartelle di Media Gallery**. Le autorizzazioni predefinite di Media Gallery consentono ora solo le operazioni di directory (visualizzazione, caricamento, eliminazione e creazione) che sono esplicitamente consentite dalla configurazione. Gli utenti amministratori non possono più accedere alle risorse multimediali tramite Media Gallery caricate all&#39;esterno delle directory `catalog/category` o `wysiwyg`. Gli amministratori che desiderano accedere alle risorse multimediali devono spostarle in una cartella consentita in modo esplicito o modificare le impostazioni di configurazione. Vedere [Modifica autorizzazioni cartella Catalogo multimediale](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions). <!-- B2B-1897-->
 
 **Limiti ridotti alla complessità delle query GraphQL**. La complessità massima delle query consentita per GraphQL è stata ridotta per evitare attacchi Denial of Service (DOS). Vedere [Configurazione della sicurezza di GraphQL](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/). <!-- PWA-1700-->
 

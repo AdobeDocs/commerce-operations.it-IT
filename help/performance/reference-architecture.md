@@ -2,7 +2,7 @@
 title: Architettura di riferimento
 description: Scopri l’architettura di riferimento in Adobe Commerce. Scopri le linee guida per l’implementazione e le strategie di ottimizzazione.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Questo argomento descrive una configurazione consigliata generica per le istanze di Adobe Commerce che utilizzano server semplici ospitati fisicamente in un centro dati (non virtualizzato) in cui le risorse non vengono condivise con altri utenti. Il provider di hosting, soprattutto se è specializzato nell&#39;hosting ad alte prestazioni di Commerce, potrebbe consigliare una configurazione diversa che sia ugualmente o più efficace per le tue esigenze.
 
-Per Adobe Commerce sugli ambienti dell&#39;infrastruttura cloud, consulta [Architettura Starter](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
+Per Adobe Commerce sugli ambienti dell&#39;infrastruttura cloud, consulta [Architettura Starter](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-architecture).
 
 ## [!DNL Commerce] Diagramma dell&#39;architettura di riferimento
 

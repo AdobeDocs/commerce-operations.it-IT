@@ -2,7 +2,7 @@
 title: Gestire le estensioni di terze parti
 description: Segui questi passaggi per installare, abilitare, aggiornare e disinstallare le estensioni Adobe Commerce.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Le estensioni includono:
 - Temi (cambia l’aspetto della vetrina e dell’amministratore)
 - Pacchetti di lingua (localizza la vetrina e Amministratore)
 
-Questo argomento spiega come utilizzare l&#39;interfaccia della riga di comando per gestire le estensioni di terze parti acquistate da Commerce Marketplace per _progetti locali_. Per i progetti di infrastruttura cloud, consulta [Gestione estensioni](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+Questo argomento spiega come utilizzare l&#39;interfaccia della riga di comando per gestire le estensioni di terze parti acquistate da Commerce Marketplace per _progetti locali_. Per i progetti di infrastruttura cloud, consulta [Gestione estensioni](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions).
 
 È possibile utilizzare la stessa procedura per installare l&#39;estensione _any_; tutto ciò che serve è il nome e la versione del Compositore dell&#39;estensione. Per trovarlo, aprire il file `composer.json` dell&#39;estensione e prendere nota dei valori per `"name"` e `"version"`.
 

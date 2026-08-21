@@ -4,7 +4,7 @@ description: Scopri i consigli per la configurazione dei limiti del carrello e d
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 0%
@@ -100,7 +100,7 @@ Rimuovere i set di attributi di prodotto inutilizzati utilizzando MySQL.
 
 #### Verifica la configurazione del set di attributi
 
-1. [Connessione al database del sito](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
+1. [Connessione al database del sito](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Trovare il numero di set di attributi utilizzando MySQL
 
@@ -179,7 +179,7 @@ La visualizzazione di un numero eccessivo di prodotti per pagina può influire s
 
 Se hai troppi prodotti in una categoria, aggiorna la configurazione del catalogo della vetrina per disabilitare l&#39;opzione su **Consenti tutti i prodotti per pagina**.
 
-Dopo aver disabilitato questa opzione, Adobe Commerce utilizza i controlli di paginazione della vetrina per gestire il numero di prodotti visualizzati nei componenti della vetrina. Per istruzioni, vedere [Configurare i controlli di impaginazione](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=it#configure-the-pagination-controls).
+Dopo aver disabilitato questa opzione, Adobe Commerce utilizza i controlli di paginazione della vetrina per gestire il numero di prodotti visualizzati nei componenti della vetrina. Per istruzioni, vedere [Configurare i controlli di impaginazione](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Limiti SKU prodotto
 

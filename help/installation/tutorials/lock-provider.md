@@ -2,8 +2,8 @@
 title: Configurare il provider di blocchi
 description: Segui questi passaggi per evitare che i processi e i gruppi cron duplicati vengano eseguiti nell’implementazione di Adobe Commerce.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Configurare un provider di blocchi per impedire l&#39;avvio di processi cron e g
 
 Per impostazione predefinita, Adobe Commerce utilizza il database per salvare i blocchi. Se sui tuoi server sono presenti più nodi, ti consigliamo di utilizzare Zookeeper come provider di blocchi.
 
-Se esegui Adobe Commerce su un’infrastruttura cloud, non è necessario configurare le impostazioni del provider di blocchi. L&#39;applicazione configura il provider di blocco file per i progetti Pro durante il processo di provisioning. Vedi [Variabili cloud](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
+Se esegui Adobe Commerce su un’infrastruttura cloud, non è necessario configurare le impostazioni del provider di blocchi. L&#39;applicazione configura il provider di blocco file per i progetti Pro durante il processo di provisioning. Vedi [Variabili cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud).
 
 ### Utilizzo dei comandi
 

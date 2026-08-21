@@ -4,13 +4,13 @@ description: Applica la patch ACSD-58108 per risolvere il problema Adobe Commerc
 feature: Orders, System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 26009fee51fb81e2517ad09319bac1190d127564
+exl-id: 1195e1c3-575c-48d6-8a10-c300f9bbb84a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58108: si verificano errori SQL nell’estensione del modulo personalizzato della griglia dell’ordine a causa di un nome di tabella di join mancante
 
@@ -28,7 +28,7 @@ La patch ACSD-58108 risolve il problema relativo a un nome di tabella di join ma
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -36,12 +36,12 @@ Il nome della tabella di join mancante nella tabella di recupero originale causa
 
 <u>Passaggi da riprodurre</u>:
 
-&#x200B;01. Installa un’istanza di sviluppo 2.4.
-&#x200B;02. Crea un nuovo ordine.
-&#x200B;03. Installare un modulo personalizzato con un&#39;estensione SQL.
-&#x200B;04. Passa a **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
-&#x200B;05. Applica il filtro **[!UICONTROL Purchase Date]** e attendi il risultato.
-&#x200B;06. Applica filtro **[!UICONTROL Product SKU]**.
+01. Installa un’istanza di sviluppo 2.4.
+02. Crea un nuovo ordine.
+03. Installare un modulo personalizzato con un&#39;estensione SQL.
+04. Passa a **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
+05. Applica il filtro **[!UICONTROL Purchase Date]** e attendi il risultato.
+06. Applica filtro **[!UICONTROL Product SKU]**.
 
 <u>Risultati previsti</u>:
 
@@ -56,7 +56,7 @@ Si verifica un errore durante l’applicazione di filtri nella griglia dell’or
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
