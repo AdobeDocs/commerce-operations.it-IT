@@ -3,9 +3,9 @@ title: Fase di avvio dell’implementazione
 description: Scopri le best practice di implementazione per la fase di avvio dei progetti Adobe Commerce.
 exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
-source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '181'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di la
 | [Proteggere il sito e l&#39;infrastruttura Commerce](security-best-practices.md) | Rafforzare la sicurezza delle installazioni Commerce per proteggere la vetrina, l&#39;amministratore, l&#39;infrastruttura e i dati Commerce da accessi non autorizzati e attacchi informatici. |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=it) | Configura Google reCAPTCHA per l’accesso come amministratore e varie azioni in vetrina avviate da clienti registrati. |
 | [Configura crawler Web](robots-txt.md) | Trasmetti ai crawler web le istruzioni relative al tuo sito Adobe Commerce. |
-| [Verifica la configurazione della sicurezza](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=it) | Esamina le voci dell’elenco di controllo prima di avviare un sito Adobe Commerce sull’infrastruttura cloud. |
+| [Verifica la configurazione della sicurezza](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/launch/checklist) | Esamina le voci dell’elenco di controllo prima di avviare un sito Adobe Commerce sull’infrastruttura cloud. |
 
 ## Monitoraggio delle prestazioni
 

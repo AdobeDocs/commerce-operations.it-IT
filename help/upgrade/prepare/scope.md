@@ -2,23 +2,23 @@
 title: Comprendere l’ambito dell’aggiornamento
 description: Scopri le modifiche non compatibili con le versioni precedenti di una versione che potrebbero influire sui moduli personalizzati di Adobe Commerce o sulle estensioni di terze parti.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
 
 # Comprendere l&#39;ambito dell&#39;aggiornamento
 
-Consulta le [note sulla versione](https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/overview) per comprendere l&#39;ambito di una versione, inclusi miglioramenti, correzioni di bug e problemi noti che potrebbero interessare moduli di terze parti e personalizzati.
+Consulta le [note sulla versione](/help/release/release-notes/overview.md) per comprendere l&#39;ambito di una versione, inclusi miglioramenti, correzioni di bug e problemi noti che potrebbero interessare moduli di terze parti e personalizzati.
 
 ## Modifiche non compatibili con le versioni precedenti
 
 Le versioni di Adobe Commerce possono contenere modifiche non compatibili con le versioni precedenti. Consulta la documentazione sulle modifiche non compatibili con le versioni precedenti. Vedi quanto segue:
 
 - **[Elementi di rilievo della modifica principale](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)**: modifiche che hanno un impatto importante e richiedono una spiegazione dettagliata e istruzioni speciali per garantire che i moduli di terze parti continuino a funzionare.
-- **[Riferimento modifica minore](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)**—Documentazione di riferimento generata dalla base di codice che descrive modifiche minori a classi, appartenenza API, database, iniezione di dipendenza, interfacce, layout, sistema e XSD.
+- **[Riferimento modifica minore](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference)**—Documentazione di riferimento generata dalla base di codice che descrive modifiche minori a classi, appartenenza API, database, iniezione di dipendenza, interfacce, layout, sistema e XSD.
 
 ## Estensioni di terze parti
 
@@ -26,7 +26,7 @@ I nuovi criteri di compatibilità di Adobe Commerce Marketplace garantiscono che
 
 ## Moduli personalizzati
 
-Tutti i moduli personalizzati devono essere verificati rispetto alla versione di destinazione a cui stai cercando di effettuare l’aggiornamento. Si tratta del processo di aggiornamento più dispendioso in termini di tempo e risorse. Durante la valutazione dei moduli personalizzati, è necessario cercare modifiche non compatibili con le versioni precedenti e tenere conto delle nuove pratiche, ad esempio la scomposizione del controller. Per ulteriori informazioni, consulta le [note sulla versione](https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/overview). Inoltre, assicurati di seguire le [best practice](https://developer.adobe.com/commerce/php/best-practices/extensions/) per lo sviluppo dei moduli.
+Tutti i moduli personalizzati devono essere verificati rispetto alla versione di destinazione a cui stai cercando di effettuare l’aggiornamento. Si tratta del processo di aggiornamento più dispendioso in termini di tempo e risorse. Durante la valutazione dei moduli personalizzati, è necessario cercare modifiche non compatibili con le versioni precedenti e tenere conto delle nuove pratiche, ad esempio la scomposizione del controller. Per ulteriori informazioni, consulta le [note sulla versione](/help/release/release-notes/overview.md). Inoltre, assicurati di seguire le [best practice](https://developer.adobe.com/commerce/php/best-practices/extensions/) per lo sviluppo dei moduli.
 
 ## [!DNL Upgrade Compatibility Tool]
 

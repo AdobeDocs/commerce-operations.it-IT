@@ -2,9 +2,9 @@
 title: Eseguire un aggiornamento
 description: Per aggiornare le distribuzioni locali di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->- Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Aggiornare Commerce versione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=it) nella Guida al cloud.
+>- Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Aggiornare Commerce versione](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version) nella Guida al cloud.
 >- Non utilizzare questo metodo per eseguire l’aggiornamento se hai clonato l’archivio GitHub. Consulta [Aggiornare un&#39;installazione basata su Git](../developer/git-installs.md).
 
 Le istruzioni seguenti spiegano come eseguire l’aggiornamento utilizzando Gestione pacchetti Compositore. Adobe Commerce 2.4.2 ha introdotto il supporto per Composer 2. Se si sta tentando di eseguire l&#39;aggiornamento da &lt;2.4.1, è necessario prima eseguire l&#39;aggiornamento a una versione compatibile con Composer 2 (ad esempio, 2.4.2) utilizzando Composer 1 _prima di_ eseguire l&#39;aggiornamento a Composer 2 per gli aggiornamenti >2.4.2. Inoltre, devi eseguire una [versione supportata](../../installation/system-requirements.md) di PHP.
@@ -35,7 +35,8 @@ Devi completare i [prerequisiti per l&#39;aggiornamento](../prepare/prerequisite
 >[!IMPORTANT]
 >
 >Adobe Commerce versione 2.4.6-p13 non include il pacchetto `magento/inventory-composer-installer`, necessario per un aggiornamento senza problemi da versioni precedenti non compatibili con le versioni precedenti.<br>
->Se si esegue l&#39;aggiornamento da 2.3 a 2.4.6-p13, eseguire il comando seguente per installare il pacchetto `magento/inventory-composer-installer` prima dell&#39;aggiornamento:>`composer require magento/inventory-composer-installer`
+>Se si esegue l&#39;aggiornamento da 2.3 a 2.4.6-p13, eseguire il comando seguente per installare il pacchetto `magento/inventory-composer-installer` prima dell&#39;aggiornamento:
+>`composer require magento/inventory-composer-installer`
 
 ## Gestire i pacchetti
 

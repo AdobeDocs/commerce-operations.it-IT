@@ -2,9 +2,9 @@
 title: Gestire gli indicizzatori
 description: Scopri come visualizzare e gestire gli indicizzatori Adobe Commerce utilizzando gli strumenti della riga di comando. Scopri i comandi dell’indicizzatore, il controllo dello stato e le tecniche di reindicizzazione.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 2c221ccf793a0b469fc6984b443699c30a6064ce
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -269,7 +269,7 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 e versioni successive**: l&#39;indicizzatore [!DNL Customer Grid] supporta sia la modalità [!UICONTROL Update on Save] che la modalità [!UICONTROL Update by Schedule]. Impostazione predefinita: [!UICONTROL Update by Schedule].
 >
->Consulta [Best practice per la configurazione dell&#39;indicizzatore](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) nella _Playbook di implementazione_.
+>Consulta [Best practice per la configurazione dell&#39;indicizzatore](/help/implementation-playbook/best-practices/maintenance/indexer-configuration.md) nella _Playbook di implementazione_.
 
 >[!INFO]
 >

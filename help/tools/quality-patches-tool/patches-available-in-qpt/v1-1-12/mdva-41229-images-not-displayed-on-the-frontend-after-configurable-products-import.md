@@ -5,16 +5,16 @@ feature: Data Import/Export, Configuration, Products
 role: Admin
 exl-id: 894fdc5b-545c-4ed8-ae1b-573d1d8d3cd6
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '712'
 ht-degree: 2%
 
 ---
 
 # MDVA-41229: le immagini disponibili nel back-end non vengono visualizzate nel front-end dopo l’importazione di prodotti configurabili
 
-La patch MDVA-41229 risolve il problema per cui le immagini disponibili sul back-end non vengono visualizzate sul front-end dopo l’importazione di prodotti configurabili. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L&#39;ID della patch è MDVA-41229. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+La patch MDVA-41229 risolve il problema per cui le immagini disponibili sul back-end non vengono visualizzate sul front-end dopo l’importazione di prodotti configurabili. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.12. L&#39;ID della patch è MDVA-41229. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 
 ## Prodotti e versioni interessati
 
@@ -28,7 +28,7 @@ La patch MDVA-41229 risolve il problema per cui le immagini disponibili sul back
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni dello strumento Patch di qualità. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni dello strumento Patch di qualità. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -40,50 +40,50 @@ Le immagini disponibili sul backend non vengono visualizzate sul front-end dopo 
 1. Aggiungi un attributo personalizzato andando in **Archivi** > **Attributi** > **Prodotto** > **Aggiungi nuovo attributo** con le impostazioni seguenti:
 
    * Proprietà:
-      * Proprietà attributo:
+     * Proprietà attributo:
 
-         * Etichetta predefinita: Imposta dimensione
-         * Tipo di input del catalogo per il proprietario del negozio: campione di testo
-         * Valori richiesti: no
-         * Aggiorna immagine anteprima prodotto: sì
+       * Etichetta predefinita: Imposta dimensione
+       * Tipo di input del catalogo per il proprietario del negozio: campione di testo
+       * Valori richiesti: no
+       * Aggiorna immagine anteprima prodotto: sì
 
-      * Gestisci campione (valori dell&#39;attributo):
+     * Gestisci campione (valori dell&#39;attributo):
 
-        | È predefinito | Campione amministratore | Descrizione amministratore | Campione visualizzazione store predefinito | Descrizione predefinita vista store |
-        |---|---|---|---|---|
-        | no | 4 | 4 | 4 | 4 |
-        | no | 24 | 24 | 24 | 24 |
-        | no | 30 | 30 | 30 | 30 |
-        | no | 60 | 60 | 60 | 60 |
-        | no | 68 | 68 | 68 | 68 |
+       | È predefinito | Campione amministratore | Descrizione amministratore | Campione visualizzazione store predefinito | Descrizione predefinita vista store |
+       |---|---|---|---|---|
+       | no | 4 | 4 | 4 | 4 |
+       | no | 24 | 24 | 24 | 24 |
+       | no | 30 | 30 | 30 | 30 |
+       | no | 60 | 60 | 60 | 60 |
+       | no | 68 | 68 | 68 | 68 |
 
-      * Proprietà attributi avanzate:
+     * Proprietà attributi avanzate:
 
-         * Codice attributo: set_size
-         * Ambito: globale
-         * Valore univoco: No
-         * Convalida input per proprietario archivio: nessuna
-         * Opzioni Aggiungi a colonna: No
-         * Usa in opzioni filtro: No
+       * Codice attributo: set_size
+       * Ambito: globale
+       * Valore univoco: No
+       * Convalida input per proprietario archivio: nessuna
+       * Opzioni Aggiungi a colonna: No
+       * Usa in opzioni filtro: No
 
    * Gestisci etichette:
 
-      * Gestione titoli (dimensioni, colore, ecc.)
+     * Gestione titoli (dimensioni, colore, ecc.)
 
-         * Visualizzazione store predefinita: Imposta dimensione
+       * Visualizzazione store predefinita: Imposta dimensione
 
    * Proprietà vetrina:
 
-      * Usa nella ricerca: Sì
-      * Peso ricerca: 1
-      * Visibile in Ricerca avanzata: no
-      * Confrontabile su Storefront: sì
-      * Usa in navigazione a livelli: filtrabile (con risultati)
-      * Usa in navigazione a livelli dei risultati di ricerca: Sì
-      * Usa per condizioni regola promozionale: no
-      * Visibile sulle pagine del catalogo in Storefront: sì
-      * Utilizzato nell’elenco dei prodotti: sì
-      * Utilizzato per l’ordinamento nell’elenco dei prodotti: no
+     * Usa nella ricerca: Sì
+     * Peso ricerca: 1
+     * Visibile in Ricerca avanzata: no
+     * Confrontabile su Storefront: sì
+     * Usa in navigazione a livelli: filtrabile (con risultati)
+     * Usa in navigazione a livelli dei risultati di ricerca: Sì
+     * Usa per condizioni regola promozionale: no
+     * Visibile sulle pagine del catalogo in Storefront: sì
+     * Utilizzato nell’elenco dei prodotti: sì
+     * Utilizzato per l’ordinamento nell’elenco dei prodotti: no
 
 1. Aggiungi questo attributo al set di attributi predefinito nel gruppo Dettagli prodotto (**Archivi** > **Attributi** > **Set di attributi**).
 1. Scarica le immagini impostate nella cartella var all’interno della directory principale di Adobe Commerce.
@@ -91,22 +91,22 @@ Le immagini disponibili sul backend non vengono visualizzate sul front-end dopo 
 
    * Importa impostazioni:
 
-      * Tipo di entità: prodotti
+     * Tipo di entità: prodotti
 
    * Comportamento importazione:
 
-      * Comportamento di importazione: Aggiungi/Aggiorna
-      * Strategia di convalida: arresto in caso di errore
-      * Conteggio errori consentiti: 1
-      * Separatore campi: `;`
-      * Separatore di più valori: `,`
-      * Costante valore attributo: EMPTYVALUE
-      * Campi allegati: deselezionato
+     * Comportamento di importazione: Aggiungi/Aggiorna
+     * Strategia di convalida: arresto in caso di errore
+     * Conteggio errori consentiti: 1
+     * Separatore campi: `;`
+     * Separatore di più valori: `,`
+     * Costante valore attributo: EMPTYVALUE
+     * Campi allegati: deselezionato
 
    * File da importare:
 
-      * Selezionate il file da importare
-      * Directory file immagini: lasciate vuoto
+     * Selezionate il file da importare
+     * Directory file immagini: lasciate vuoto
 
 1. Vai alla vetrina per `/product-set.html` pagina e passa tra diverse dimensioni di set. Per Set Size 24, non ci sarà alcuna galleria.
 
@@ -123,13 +123,13 @@ Non ci sono gallerie per i prodotti.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
 Per ulteriori informazioni sullo strumento Patch di qualità, vedere:
 
-* [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
+* [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando lo strumento Patch di qualità](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!DNL Quality Patches Tool].
 
 Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella guida di [!DNL Quality Patches Tool].
