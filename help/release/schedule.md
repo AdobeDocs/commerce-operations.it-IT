@@ -2,9 +2,9 @@
 title: Pianificazione rilascio patch
 description: Scopri quando Adobe prevede di annunciare il rilascio di nuove patch e correzioni di sicurezza per Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 0f46bdfd0afbca07e0d60e995ee9426f5408671d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '402'
 ht-degree: 4%
 
 ---
@@ -51,4 +51,4 @@ Adobe notifica ai clienti le nuove versioni delle patch tramite i seguenti canal
 
 >[!NOTE]
 >
-> Per le date di rilascio di ogni versione secondaria, patch e di sicurezza e per le date di fine del supporto regolare, vedere [Versioni rilasciate](https://experienceleague.adobe.com/it/docs/commerce-operations/release/versions).
+> Per le date di rilascio di ogni versione secondaria, patch e di sicurezza e per le date di fine del supporto regolare, vedere [Versioni rilasciate](/help/release/versions.md).

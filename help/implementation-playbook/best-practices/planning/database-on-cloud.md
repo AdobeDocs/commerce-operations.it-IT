@@ -4,7 +4,7 @@ description: Scopri come configurare le impostazioni di database e applicazioni 
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### Cambia il motore di archiviazione in InnoDB
 
-Nel file `db_schema.xml` che dichiara la tabella, impostare il valore dell&#39;attributo `engine` per il nodo `table` corrispondente su `innodb`. Per maggiori informazioni, consulta [Configurare lo schema dichiarativo > nodo della tabella](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) nella documentazione per gli sviluppatori.
+Nel file `db_schema.xml` che dichiara la tabella, impostare il valore dell&#39;attributo `engine` per il nodo `table` corrispondente su `innodb`. Per maggiori informazioni, consulta [Configurare lo schema dichiarativo > nodo della tabella](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration) nella documentazione per gli sviluppatori.
 
 Lo schema dichiarativo è stato introdotto in Adobe Commerce sulla versione 2.3 dell’infrastruttura cloud.
 
@@ -59,9 +59,9 @@ Per determinare quale motore di ricerca è attualmente in uso, eseguire il coman
 
 Per le istruzioni di configurazione, consulta la Guida per gli sviluppatori per Adobe Commerce sul cloud:
 
-- [Configurare il servizio OpenSearch](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [Configurare il servizio OpenSearch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
 
-- [Configurare il servizio Elasticsearch](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [Configurare il servizio Elasticsearch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
 
 ## Evita trigger personalizzati
 
@@ -76,7 +76,7 @@ Per informazioni sulle alternative all&#39;utilizzo di trigger personalizzati, v
 
 ## Aggiorna [!DNL ECE-Tools] alla versione 2002.0.21 o successiva {#ece-tools-version}
 
-Per evitare potenziali problemi con deadlock cron, aggiorna ECE-Tools alla versione 2002.0.21 o successiva. Per istruzioni, consulta [Aggiornare `ece-tools` versione](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) nella documentazione per gli sviluppatori.
+Per evitare potenziali problemi con deadlock cron, aggiorna ECE-Tools alla versione 2002.0.21 o successiva. Per istruzioni, consulta [Aggiornare `ece-tools` versione](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) nella documentazione per gli sviluppatori.
 
 ## Cambia la modalità di indicizzazione in modo sicuro
 

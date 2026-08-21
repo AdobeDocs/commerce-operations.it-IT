@@ -4,13 +4,13 @@ description: Applica la patch ACSD-67264 per risolvere i problemi di layout risc
 feature: Page Content, Products
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 9b6794366ba552d86cdfc6a3d6f699c307fcd8f6
+exl-id: 783271ba-176c-4542-8dd8-82bc029ea453
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-67264: layout delle pagine dei prodotti in bundle e scaricabili non coerenti tra i dispositivi
 
@@ -54,7 +54,7 @@ Viene eseguito il rendering del PDP del prodotto bundle con spazi casuali.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool]
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud
 
 ## Lettura correlata
 

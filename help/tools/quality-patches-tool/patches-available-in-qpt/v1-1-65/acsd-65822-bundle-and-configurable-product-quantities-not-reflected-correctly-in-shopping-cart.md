@@ -4,9 +4,9 @@ description: Applica la patch ACSD-65822 per risolvere il problema di Adobe Comm
 feature: Admin Workspace, Checkout, Orders
 role: Admin, Developer
 exl-id: 6740b5a6-8710-458c-abe4-03d2a8a694c5
-source-git-commit: 7e9598e3ac0558706ef98ca81c19d27c37f7e860
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ La quantità dell&#39;articolo del bundle viene visualizzata come 0.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

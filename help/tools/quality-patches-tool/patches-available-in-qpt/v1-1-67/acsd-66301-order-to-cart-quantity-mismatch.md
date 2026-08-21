@@ -5,9 +5,9 @@ feature: Orders, Products
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 61e0e491-b2dc-4ae0-807e-2ae80d17f9c2
-source-git-commit: 1e56c38713344b117ca3882861ced35e602b3239
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Prodotto aggiunto al carrello con la quantità precedente = *5*.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

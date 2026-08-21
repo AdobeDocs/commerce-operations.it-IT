@@ -1,7 +1,7 @@
 ---
-source-git-commit: d8197ca0e1028cb50fae0415843c80ac68e49566
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1077'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Per i progetti Adobe Commerce on Cloud, consulta [Best practice per la configurazione del servizio Redis e Valkey](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) per le istruzioni sulla configurazione della cache.
+>Per i progetti Adobe Commerce on Cloud, consulta [Best practice per la configurazione del servizio Redis e Valkey](/help/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) per le istruzioni sulla configurazione della cache.
 
 ## Supporto cache Redis {#redis-cache-support}
 
@@ -21,7 +21,7 @@ La cache Redis non è supportata per Adobe Commerce 2.4.9 o versioni di patch su
 
 >[!NOTE]
 >
->Se il progetto Commerce è distribuito sul cloud, la memorizzazione nella cache di pagine intere utilizza [Fastly](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/cdn/fastly) invece di Varnish. Gli argomenti trattati in questa sezione si applicano solo alle installazioni locali.
+>Se il progetto Commerce è distribuito sul cloud, la memorizzazione nella cache di pagine intere utilizza [Fastly](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/fastly) invece di Varnish. Gli argomenti trattati in questa sezione si applicano solo alle installazioni locali.
 
 ## Supporto della versione del servizio Adobe {#supported-versions-only}
 
@@ -35,7 +35,7 @@ La cache Redis non è supportata per Adobe Commerce 2.4.9 o versioni di patch su
 >
 >L’esecuzione di versioni non supportate può esporre il tuo archivio a vulnerabilità di sicurezza e Adobe non può fornire patch di sicurezza per le dipendenze non più gestite dai loro fornitori.
 >
->Per l&#39;elenco completo delle versioni supportate, vedere la [Matrice di disponibilità del prodotto](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability).
+>Per l&#39;elenco completo delle versioni supportate, vedere la [Matrice di disponibilità del prodotto](/help/release/product-availability.md).
 
 ## Patch di sicurezza per il supporto esteso {#extended-support}
 
@@ -85,7 +85,7 @@ La cache Redis non è supportata per Adobe Commerce 2.4.9 o versioni di patch su
 
 >[!NOTE]
 >
->Le versioni di Adobe Commerce possono contenere modifiche non compatibili con le versioni precedenti (BIC). Per rivedere le modifiche non compatibili con le versioni precedenti, vedere [Riferimento BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). I principali problemi non compatibili con le versioni precedenti sono descritti in [Elementi di rilievo BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Non tutte le versioni introducono i principali BIC.
+>Le versioni di Adobe Commerce possono contenere modifiche non compatibili con le versioni precedenti (BIC). Per rivedere le modifiche non compatibili con le versioni precedenti, vedere [Riferimento BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference). I principali problemi non compatibili con le versioni precedenti sono descritti in [Elementi di rilievo BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Non tutte le versioni introducono i principali BIC.
 
 ## Dichiarazione di non responsabilità Alpha {#alpha}
 
@@ -133,7 +133,7 @@ Prima di poter eseguire gli indicizzatori in modalità parallela, è necessario 
 
 * **Aggiunto supporto per il protocollo Apache ActiveMQ Artemis STOMP**
 
-  È stato aggiunto il supporto per il gestore di messaggi open source ActiveMQ Artemis tramite il protocollo STOMP (Simple Text Oriented Messaging Protocol). Fornisce un sistema di messaggistica affidabile e scalabile, offrendo flessibilità per le integrazioni basate su STOMP. Vedi [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) nella *Guida alla configurazione di Commerce*.
+  È stato aggiunto il supporto per il gestore di messaggi open source ActiveMQ Artemis tramite il protocollo STOMP (Simple Text Oriented Messaging Protocol). Fornisce un sistema di messaggistica affidabile e scalabile, offrendo flessibilità per le integrazioni basate su STOMP. Vedi [Apache ActiveMQ Artemis](/help/configuration/queues/message-queue-framework.md#apache-activemq-artemis-stomp) nella *Guida alla configurazione di Commerce*.
 
 ## Impossibile caricare static.min.js e mixins.min.js nella pagina di estrazione {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 

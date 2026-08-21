@@ -4,9 +4,9 @@ description: Scopri le versioni beta di Adobe Commerce e come partecipare.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: bf0f269900468870a1da7b5360548d49e009097c
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,8 @@ I programmi Beta per [soluzioni dei prodotti Adobe Commerce](https://experiencel
 
 >[!IMPORTANT]
 >
->**Dichiarazione di non responsabilità**<br/>
->I rilasci di Beta includono funzioni prerelease e codice che possono contenere difetti e vengono forniti &quot;COSÌ COM&#39;È&quot; senza alcuna garanzia. Adobe ha la sola discrezione di decidere se rendere le versioni beta generalmente disponibili. Adobe non ha alcun obbligo di mantenere, correggere, aggiornare, modificare, modificare, supportare (tramite i servizi di supporto Adobe o in altro modo) o di fornire tali versioni beta entro una data specifica. Se una versione beta diventa generalmente disponibile, può essere soggetta a termini e condizioni aggiuntivi, comprese le tariffe applicabili. Le versioni Beta sono soggette a modifiche senza preavviso, inclusa la loro interruzione. Si consiglia ai clienti di prestare attenzione e di non fare affidamento in alcun modo sul funzionamento o sulle prestazioni ininterrotti o privi di errori delle versioni beta.  Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del cliente.
+>**Dichiarazione di non responsabilità legale**<br/>
+>I rilasci di Beta includono funzioni prerelease e codice che può contenere difetti e vengono forniti &quot;COSÌ COM’È&quot; senza alcuna garanzia. Adobe ha la sola discrezione di decidere se rendere le versioni beta generalmente disponibili. Adobe non ha alcun obbligo di mantenere, correggere, aggiornare, modificare, modificare, supportare (tramite i servizi di supporto Adobe o in altro modo) o di fornire tali versioni beta entro una data specifica. Se una versione beta diventa generalmente disponibile, può essere soggetta a termini e condizioni aggiuntivi, comprese le tariffe applicabili. Le versioni Beta sono soggette a modifiche senza preavviso, inclusa la loro interruzione. Si consiglia ai clienti di prestare attenzione e di non fare affidamento in alcun modo sul funzionamento o sulle prestazioni ininterrotti o privi di errori delle versioni beta.  Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del cliente.
 
 ## Vantaggi della partecipazione
 
@@ -73,7 +73,7 @@ Per condividere il tuo feedback durante l&#39;utilizzo di questa funzione beta, 
 
 Il [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automatizza il processo di applicazione di patch di sicurezza isolate agli ambienti [Adobe Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/overview).
 
-A ottobre 2025, la versione beta del Cloud Automation Patching Service verrà aggiunta alla [dashboard dello strumento di analisi a livello di sito](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Questo servizio supporta gli amministratori di progetto Commerce con un flusso di lavoro di applicazione delle patch semplificato che include:
+A ottobre 2025, la versione beta del Cloud Automation Patching Service verrà aggiunta alla [dashboard dello strumento di analisi a livello di sito](/help/tools/site-wide-analysis-tool/dashboard.md). Questo servizio supporta gli amministratori di progetto Commerce con un flusso di lavoro di applicazione delle patch semplificato che include:
 
 - Installazione automatica delle patch
 - Ripristino rollback

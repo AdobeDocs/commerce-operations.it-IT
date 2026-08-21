@@ -2,7 +2,7 @@
 title: Configurazione avanzata
 description: Scopri come configurare in modo avanzato Adobe Commerce. Scopri le istruzioni dettagliate e i requisiti di configurazione.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Se ad esempio si esegue un profilo simile a B2B Medium, è possibile sostituire 
 
 Un numero elevato di SKU di prodotto, siti web, gruppi di clienti o cataloghi condivisi influirà sul tempo di esecuzione degli indicizzatori Prezzo prodotto e Regola catalogo. Questo perché, per impostazione predefinita, tutti i siti web vengono assegnati a tutti i gruppi di clienti (cataloghi condivisi).
 
-Per ridurre il tempo di indicizzazione, è possibile [escludere alcuni siti Web dai gruppi di clienti (cataloghi condivisi)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
+Per ridurre il tempo di indicizzazione, è possibile [escludere alcuni siti Web dai gruppi di clienti (cataloghi condivisi)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization#customer-group-limitations-by-websites).
 
 ## Configurazione Redis
 
@@ -92,7 +92,7 @@ bin/magento setup:db-schema:add-slave
 
 Questo comando esegue le modifiche di configurazione ma non configura la replica stessa. Questo dovrebbe essere fatto manualmente.
 
-Dopo aver diviso il database master e aver impostato i database slave, [!DNL Commerce] regola automaticamente le connessioni a un database specifico, prendendo decisioni in base al tipo di richiesta (POST, PUT, GET, ecc.) e alla risorsa dati. Se [!DNL Commerce] o le relative estensioni eseguono operazioni di scrittura su una richiesta di GET, la connessione viene automaticamente cambiata da slave a database master. Funziona allo stesso modo con i database master: non appena si utilizza una tabella relativa all&#39;estrazione, il sistema reindirizza tutte le query a un database specifico. Nel frattempo, tutte le query relative al catalogo verranno inviate al database principale.
+Dopo aver diviso il database master e aver impostato i database slave, [!DNL Commerce] regola automaticamente le connessioni a un database specifico, prendendo decisioni in base al tipo di richiesta (POST, PUT, GET e così via) e alla risorsa dati. Se [!DNL Commerce] o le relative estensioni eseguono operazioni di scrittura su una richiesta GET, il sistema cambia automaticamente la connessione da slave a database master. Funziona allo stesso modo con i database master: non appena si utilizza una tabella relativa all&#39;estrazione, il sistema reindirizza tutte le query a un database specifico. Nel frattempo, tutte le query relative al catalogo verranno inviate al database principale.
 
 Per ulteriori dettagli sulla configurazione e sui vantaggi di una configurazione con più elementi principali e slave, vedere
 [Soluzione per le prestazioni del database diviso](../configuration/storage/multi-master.md).

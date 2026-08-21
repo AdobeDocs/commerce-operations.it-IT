@@ -3,9 +3,9 @@ title: Rispondere a un problema di sicurezza
 description: Gestire gli incidenti di sicurezza seguendo le best practice per rispondere e risolvere i problemi di sicurezza che influiscono sulla disponibilità e sulle prestazioni del sito.
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,18 @@ Nel caso sfortunato di un compromesso tra siti, ecco alcune raccomandazioni chia
 - Coinvolgi l’integratore di sistemi e il personale addetto alla sicurezza per condurre indagini e riparare i danni.
 
 - Determinare l&#39;ambito dell&#39;attacco:
-   - È stato effettuato l&#39;accesso alle informazioni sulla carta di credito?
-   - Quali informazioni sono state rubate?
-   - Quanto tempo è trascorso dal compromesso?
-   - Le informazioni erano crittografate?
+  - È stato effettuato l&#39;accesso alle informazioni sulla carta di credito?
+  - Quali informazioni sono state rubate?
+  - Quanto tempo è trascorso dal compromesso?
+  - Le informazioni erano crittografate?
 
 - Cercare di trovare il vettore di attacco per determinare quando e come il sito è stato compromesso, esaminando i file di registro del server e le modifiche ai file.
 
-   - In alcune circostanze, potrebbe essere consigliabile cancellare e reinstallare tutto o, nel caso di hosting virtuale, creare una nuova istanza. I malware potrebbero essere nascosti in una posizione insospettata in attesa di essere ripristinati da soli.
+  - In alcune circostanze, potrebbe essere consigliabile cancellare e reinstallare tutto o, nel caso di hosting virtuale, creare una nuova istanza. I malware potrebbero essere nascosti in una posizione insospettata in attesa di essere ripristinati da soli.
 
-   - Rimuovi tutti i file non necessari. Quindi, reinstallare i file richiesti da un&#39;origine nota e pulita. È possibile, ad esempio, reinstallare utilizzando i file del sistema di controllo delle versioni o i file di distribuzione originali di Adobe.
+  - Rimuovi tutti i file non necessari. Quindi, reinstallare i file richiesti da un&#39;origine nota e pulita. È possibile, ad esempio, reinstallare utilizzando i file del sistema di controllo delle versioni o i file di distribuzione originali di Adobe.
 
-   - Reimposta tutte le credenziali, inclusi database, accesso ai file, integrazioni di pagamento e spedizione, servizi Web e accesso amministratore. Reimposta inoltre tutte le chiavi e gli account di integrazione e API che potrebbero essere utilizzati per attaccare il sistema.
+  - Reimposta tutte le credenziali, inclusi database, accesso ai file, integrazioni di pagamento e spedizione, servizi Web e accesso amministratore. Reimposta inoltre tutte le chiavi e gli account di integrazione e API che potrebbero essere utilizzati per attaccare il sistema.
 
 ## Analizzare un problema
 
@@ -73,13 +73,13 @@ Il primo passo dell&#39;analisi degli incidenti consiste nel raccogliere quante 
 
   Utilizza la scheda **Sicurezza** nello strumento per ottenere una chiara visualizzazione dei potenziali problemi di sicurezza per aiutare a identificare le cause principali e mantenere le prestazioni dei siti ottimali.
 
-- Analizza i registri con [Registri New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=it)
+- Analizza i registri con [Registri New Relic](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)
 
-  I progetti Adobe Commerce su infrastruttura cloud Pro includono il servizio [Registri New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=it). Il servizio è preconfigurato per aggregare tutti i dati di registro dagli ambienti di staging e produzione per visualizzarli in un dashboard di gestione dei registri centralizzato in cui è possibile cercare e visualizzare i dati aggregati.
+  I progetti Adobe Commerce su infrastruttura cloud Pro includono il servizio [Registri New Relic](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management). Il servizio è preconfigurato per aggregare tutti i dati di registro dagli ambienti di staging e produzione per visualizzarli in un dashboard di gestione dei registri centralizzato in cui è possibile cercare e visualizzare i dati aggregati.
 
   Per altri progetti Commerce, puoi impostare e utilizzare il servizio [Registri New Relic](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) per completare le seguenti attività:
-   - Utilizza [query New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) per cercare dati di registro aggregati.
-   - Visualizzare i dati di registro tramite l’applicazione Registri di New Relic.
+  - Utilizza [query New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) per cercare dati di registro aggregati.
+  - Visualizzare i dati di registro tramite l’applicazione Registri di New Relic.
 
 ## Controlla account, codice e database
 
@@ -93,9 +93,9 @@ Continuare a monitorare attentamente il sito dopo l&#39;incidente poiché molti 
 
 - [Rivedi impostazioni di sicurezza amministratore](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=it)—Verifica che le impostazioni di sicurezza amministratore seguano le best practice di sicurezza.
 
-- [Verifica account utente per Adobe Commerce su progetti di infrastruttura cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=it): rimuovi account vecchi, inutilizzati o sospetti e ruota le password per tutti gli utenti amministratori di progetti cloud. Verifica che le impostazioni di sicurezza dell’account siano configurate correttamente.
+- [Verifica account utente per Adobe Commerce su progetti di infrastruttura cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/project/user-access): rimuovi account vecchi, inutilizzati o sospetti e ruota le password per tutti gli utenti amministratori di progetti cloud. Verifica che le impostazioni di sicurezza dell’account siano configurate correttamente.
 
-- [Verifica chiavi SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=it) per Adobe Commerce sull&#39;infrastruttura cloud: verifica, elimina e ruota chiavi SSH.
+- [Verifica chiavi SSH](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/secure-connections) per Adobe Commerce sull&#39;infrastruttura cloud: verifica, elimina e ruota chiavi SSH.
 
 ### Codice di audit
 

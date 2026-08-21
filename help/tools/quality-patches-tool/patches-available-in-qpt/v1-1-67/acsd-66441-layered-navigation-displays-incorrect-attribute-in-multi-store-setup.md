@@ -5,9 +5,9 @@ feature: Catalog Management, Search
 role: Admin, Developer
 type: Troubleshooting
 exl-id: d61c6b9e-bbcf-4285-b97b-b1fee67048e5
-source-git-commit: 515e6d1f00c910455a2ffddf70c4a450184e7e81
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ In Navigazione a livelli vengono visualizzate le opzioni (dimensioni) degli attr
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

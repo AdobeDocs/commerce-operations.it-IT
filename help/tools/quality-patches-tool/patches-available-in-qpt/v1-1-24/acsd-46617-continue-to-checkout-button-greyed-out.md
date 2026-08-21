@@ -5,16 +5,16 @@ feature: Checkout, Orders
 role: Admin
 exl-id: 8e808fce-d31c-49ef-94e5-f5c89fffaa73
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 0%
+source-wordcount: '483'
+ht-degree: 6%
 
 ---
 
 # ACSD-46617: pulsante &quot;[!UICONTROL Continue to Checkout]&quot; disabilitato quando il subtotale è maggiore di &quot;[!UICONTROL Minimum Order Amount]&quot;
 
-Questa patch ACSD-46617 risolve il problema in cui il pulsante **[!UICONTROL Continue to Checkout]** è disattivato anche se il subtotale è maggiore dell&#39;importo dell&#39;ordine minimo configurato. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.24. L’ID della patch è ACSD-46617. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
+Questa patch ACSD-46617 risolve il problema in cui il pulsante **[!UICONTROL Continue to Checkout]** è disattivato anche se il subtotale è maggiore dell&#39;importo dell&#39;ordine minimo configurato. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.24. L’ID della patch è ACSD-46617. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 
 ## Prodotti e versioni interessati
 
@@ -39,7 +39,7 @@ Il pulsante **[!UICONTROL Continue to Checkout]** è disattivato anche se il sub
 1. Vai a Adobe Commerce Admin > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Minimum Order Amount]** e imposta quanto segue:
    * [!UICONTROL Enable]: *[!UICONTROL Yes]*
    * &#x200B;
-     [!UICONTROL Minimum Amount]: *2*
+     [!UICONTROL Minimum Amount]&#x200B;: *2*
 
 1. Crea un [!UICONTROL Cart Price Rule].
    * [!UICONTROL Coupon Code]: *[!UICONTROL TEST (optional)]*
@@ -47,7 +47,7 @@ Il pulsante **[!UICONTROL Continue to Checkout]** è disattivato anche se il sub
    * [!UICONTROL Actions]:
      * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
      * &#x200B;
-       [!UICONTROL Discount Amount]: *92*
+       [!UICONTROL Discount Amount]&#x200B;: *92*
      * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
 1. Crea un prodotto al prezzo di 25 $.
 1. Aggiungi il prodotto al carrello.
@@ -69,13 +69,13 @@ Non c&#39;è alcun errore relativo all&#39;importo minimo dell&#39;ordine in qua
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
 Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 
-* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) nella Knowledge Base di supporto.
+* [[!DNL Quality Patches Tool] rilasciato: nuovo strumento per la gestione automatica delle patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
 
 

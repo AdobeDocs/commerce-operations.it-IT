@@ -4,9 +4,9 @@ description: Scopri come utilizzare lo strumento Quality Patches per applicare e
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -62,18 +62,18 @@ Adobe Commerce 2.3.5.
 La tabella di stato include:
 
 - **Tipo**:
-   - `Optional` — Tutte le patch del pacchetto [!DNL Quality Patches Tool] e del pacchetto [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=it) sono facoltative per le installazioni di Adobe Commerce.
-   - `Deprecated` — Adobe ha dichiarato obsoleta la singola patch. Se ha applicato la patch, si consiglia di ripristinarla. L’operazione di ripristino rimuove anche la patch dalla tabella di stato.
+  - `Optional` — Tutte le patch del pacchetto [!DNL Quality Patches Tool] e del pacchetto [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) sono facoltative per le installazioni di Adobe Commerce.
+  - `Deprecated` — Adobe ha dichiarato obsoleta la singola patch. Se ha applicato la patch, si consiglia di ripristinarla. L’operazione di ripristino rimuove anche la patch dalla tabella di stato.
 
 - **Stato**:
-   - `Applied` - La patch è stata applicata.
-   - `Not applied` - La patch non è stata applicata.
-   - `N/A` - Impossibile definire lo stato della patch a causa di conflitti.
+  - `Applied` - La patch è stata applicata.
+  - `Not applied` - La patch non è stata applicata.
+  - `N/A` - Impossibile definire lo stato della patch a causa di conflitti.
 
 - **Dettagli**:
-   - `Affected components` — Elenco dei moduli interessati.
-   - `Required patches` — Elenco di patch che devono essere applicate affinché una patch indicata funzioni correttamente (dipendenze).
-   - `Recommended replacement` — La patch che si consiglia di sostituire con una patch obsoleta.
+  - `Affected components` — Elenco dei moduli interessati.
+  - `Required patches` — Elenco di patch che devono essere applicate affinché una patch indicata funzioni correttamente (dipendenze).
+  - `Recommended replacement` — La patch che si consiglia di sostituire con una patch obsoleta.
 
 >[!INFO]
 >
