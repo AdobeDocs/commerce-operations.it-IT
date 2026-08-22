@@ -217,7 +217,7 @@ Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe
 
 Questa versione include i seguenti elementi di rilievo:
 
-* **Aggiorna [impostazioni di password monouso (OTP)](https://experienceleague.adobe.com/en/docs/commerce-admin/config/security/2fa) per Google Authenticator**-Questo aggiornamento è necessario per risolvere un errore introdotto da una [modifica non compatibile con le versioni precedenti](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) nella versione 2.4.7. La descrizione del campo **[!UICONTROL OTP Window]** fornisce ora una spiegazione accurata dell&#39;impostazione e il valore predefinito è stato modificato da `1` a `29`.
+* **Aggiorna [impostazioni di password monouso (OTP)](https://experienceleague.adobe.com/it/docs/commerce-admin/config/security/2fa) per Google Authenticator**-Questo aggiornamento è necessario per risolvere un errore introdotto da una [modifica non compatibile con le versioni precedenti](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) nella versione 2.4.7. La descrizione del campo **[!UICONTROL OTP Window]** fornisce ora una spiegazione accurata dell&#39;impostazione e il valore predefinito è stato modificato da `1` a `29`.
 
 * **Compatibilità della versione B2B** - Per la compatibilità con Commerce versione 2.4.7-p1, i commercianti con estensione Adobe Commerce B2B devono eseguire l&#39;aggiornamento alla versione [B2B versione 1.4.2-p1](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
 
