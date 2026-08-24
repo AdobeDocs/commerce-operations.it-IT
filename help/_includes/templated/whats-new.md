@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
+source-git-commit: 9f9c38163d91b655bf44cac81875dab59ee2c77d
 workflow-type: tm+mt
-source-wordcount: '2690'
-ht-degree: 1%
+source-wordcount: '2845'
+ht-degree: 0%
 
 ---
 # Nuovo modello
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 19 agosto 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiornata la documentazione sulla memorizzazione nella cache di Commerce con indicazioni più chiare on-premise rispetto a quelle sul cloud e nuove linee guida sulla migrazione per passare a Valkey con la cache L2 di Symfony:<br />- Aggiornate <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cache/caching-overview">Panoramica sulla memorizzazione nella cache e opzioni di configurazione</a>.<br />- Aggiornate <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cache/cache-types">Configurare tipi e front-end della cache</a>.<br />- Aggiornate <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cache/cache-options">Opzioni di back-end della cache e riferimento di archiviazione</a>.<br />- Aggiornate <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cache/level-two-cache">Configurazione della cache L2 per l'ottimizzazione delle prestazioni</a> con indicazioni per la migrazione dalla cache L2 di Symfony.<br /> Procedure per la configurazione del servizio Valkey e Redis</a> con passaggi di migrazione specifici per Cloud a Valkey con cache L2 di Symfony.<code>RemoteSynchronizedCache</code><a href="https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration"></p>
+</td>
+      <td>
+        Aggiornamento principale
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 14 agosto 2026
 
