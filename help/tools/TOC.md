@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: e1ac67f8533c6a9f7948e982c3ddbd79f4e02855
 workflow-type: tm+mt
-source-wordcount: '10678'
+source-wordcount: '10694'
 ht-degree: 0%
 
 ---
@@ -1046,6 +1046,7 @@ ht-degree: 0%
       - [ACP2E-4709: le pagine CMS non vengono salvate in Page Builder quando la gerarchia delle pagine include virgolette doppie](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4840: la query prodotti GraphQL restituisce quantità null per i prodotti in magazzino nelle scorte di magazzino personalizzate](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)
       - [ACP2E-4695: errori di memoria esaurita nell’indicizzatore della regola del catalogo causati da un utilizzo eccessivo della memoria](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)
       - [ACP2E-4194: le richieste GraphQL con nomi di filtro sconosciuti causano i registri eccezioni PHP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194.md)
       - [ACP2E-4698: la modifica in linea del testo di Page Builder consente di salvare gli URL multimediali assoluti invece della direttiva portatile](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
@@ -1106,6 +1107,6 @@ ht-degree: 0%
     - [Dati che richiedono la migrazione manuale](data-migration-tool/migrate-data/manual.md)
     - [Passaggi di migrazione post-dati](data-migration-tool/migrate-data/post-migration.md)
   - Risorse {#resources}
-    - [Risoluzione dei problemi](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
+    - [Risoluzione dei problemi](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
