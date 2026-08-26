@@ -35,7 +35,7 @@ Se nell&#39;interfaccia utente di [!DNL Patching Automation] non è presente alc
 
 ## Accesso a [!DNL Patching Automation]
 
-[!DNL Patching Automation] è disponibile come scheda nel dashboard [!DNL Site-Wide Analysis Tool]. Puoi accedervi dal tuo pannello di amministrazione andando in **Rapporti** > **Informazioni di sistema** > **Strumento di analisi a livello di sito** nella barra laterale di amministrazione. Consulta [Come accedere allo strumento di analisi a livello di sito](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) per i prerequisiti e la configurazione delle autorizzazioni.
+[!DNL Patching Automation] è disponibile come scheda nel dashboard [!DNL Site-Wide Analysis Tool]. Puoi accedervi dal tuo pannello di amministrazione andando in **Rapporti** > **Informazioni di sistema** > **Strumento di analisi a livello di sito** nella barra laterale di amministrazione. Consulta [Come accedere allo strumento di analisi a livello di sito](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/site-wide-analysis-tool/access) per i prerequisiti e la configurazione delle autorizzazioni.
 
 Una volta nella dashboard:
 
