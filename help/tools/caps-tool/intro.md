@@ -1,21 +1,21 @@
 ---
-title: '[!DNL Cloud Automation Patching Service (CAPS)]'
-description: Scopri  [!DNL Cloud Automation Patching Service (CAPS)], i suoi utilizzi, come accedervi e le best practice per l'applicazione automatica delle patch
+title: '[!DNL Adobe Commerce Patching Automation]'
+description: Scopri  [!DNL Adobe Commerce Patching Automation], i suoi utilizzi, come accedervi e le best practice per l'applicazione automatica delle patch
 hide: true
-source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
+source-git-commit: f70924d6f0d1777104c59f3f9e776360308abceb
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
 
-# [!DNL Cloud Automation Patching Service (CAPS)]
+# [!DNL Adobe Commerce Patching Automation]
 
-[!DNL Cloud Automation Patching Service] ([!DNL CAPS]) è uno strumento che automatizza il processo di applicazione e ripristino delle patch per gli ambienti Adobe Commerce on Cloud. Offre agli amministratori di progetti Commerce un flusso di lavoro semplificato per applicare e ripristinare le patch, che include verifiche di integrità e convalida integrate per garantire la stabilità e la sicurezza degli ambienti Cloud.
+[!DNL Adobe Commerce Patching Automation] è uno strumento che automatizza il processo di applicazione e ripristino delle patch per gli ambienti Adobe Commerce on Cloud. Offre agli amministratori di progetti Commerce un flusso di lavoro semplificato per applicare e ripristinare le patch. La convalida e i controlli di integrità integrati contribuiscono a garantire la stabilità e la sicurezza degli ambienti Cloud.
 
 Questa guida è stata progettata per i commercianti e i partner di Adobe Commerce Cloud che desiderano semplificare il processo di applicazione delle patch, ridurre il rischio di problemi correlati alle patch, migliorare la sicurezza e la stabilità dell’ambiente e automatizzare le operazioni di routine delle patch.
 
-## [!DNL CAPS] argomenti
+## [!DNL Patching Automation] argomenti
 
 * **[Come accedere](access.md)**
 * **[Panoramica del flusso di lavoro](workflow.md)**
@@ -37,27 +37,26 @@ Questa guida è stata progettata per i commercianti e i partner di Adobe Commerc
 * **Servizio di applicazione automatica delle patch con flusso di lavoro strutturato**
   * **Verifica preliminare** - Convalida la compatibilità della patch e la preparazione all&#39;ambiente
   * **Applicazione di patch** - Applica o ripristina automaticamente le patch negli ambienti di integrazione
-  * **Convalida** - Esegue controlli di integrità e assicura che le funzionalità critiche non siano interessate
+  * **Convalida** - Esegue un controllo di integrità per confermare l&#39;avvio dell&#39;applicazione e che le connessioni al database e alla cache sono raggiungibili
 
 * **Funzioni di sicurezza**
-  * Crea ambienti di integrazione temporanei per il test
   * Convalida la compatibilità della patch prima dell&#39;applicazione
-  * Mantiene l’ambiente di destinazione invariato fino al completamento della convalida della patch nell’ambiente temporaneo
+  * Applica prima la patch in un ambiente di integrazione temporaneo, confermando che viene distribuita correttamente e superando un controllo di integrità, prima di unirla nell’ambiente di destinazione, quindi esegue un controllo di integrità finale subito dopo la distribuzione.
   * Applica le patch alla cartella `m2-hotfixes` con rimozione automatica durante la reversione
 
 ## Integrazioni con Adobe Commerce Cloud
 
-[!DNL CAPS] è completamente integrato con l&#39;infrastruttura Adobe Commerce Cloud e funziona perfettamente con gli ambienti cloud esistenti. Sfrutta le funzioni native per il cloud per prestazioni ottimali, fornisce funzioni dettagliate di registrazione e monitoraggio e si integra con gli strumenti di supporto di Adobe Commerce Cloud.
+[!DNL Patching Automation] è completamente integrato con l&#39;infrastruttura Adobe Commerce Cloud e funziona perfettamente con gli ambienti cloud esistenti. Sfrutta le funzioni native per il cloud per prestazioni ottimali, fornisce funzioni dettagliate di registrazione e monitoraggio e si integra con gli strumenti di supporto di Adobe Commerce Cloud.
 
 ## Tutorial video
 
-Scopri Adobe Cloud Automated Patching Service e come questo strumento aiuta gli utenti a trovare e applicare rapidamente le patch di sicurezza. Il video seguente illustra come accedervi tramite la dashboard SWAT, scegliere il progetto e l’ambiente e applicare le patch con un clic.
+Scopri [!DNL Adobe Commerce Patching Automation] e come questo strumento consente agli utenti di trovare e applicare rapidamente le patch di sicurezza. Il video seguente illustra come accedervi tramite il dashboard dello strumento di analisi a livello di sito (SWAT), scegliere il progetto e l’ambiente e applicare le patch con un clic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3476255/?captions=ita&learn=on&enablevpops)
 
 ## Casi d’uso comuni
 
 * **Patch di sicurezza** - Applicazione rapida degli aggiornamenti di sicurezza critici
-* **Rollback delle patch** - Ripristino sicuro delle patch problematiche applicate tramite [!DNL CAPS]
+* **Rollback delle patch** - Ripristino sicuro delle patch problematiche applicate tramite il servizio
 * **Conformità in materia di sicurezza** - Mantenimento degli standard di sicurezza con l&#39;applicazione automatica delle patch
-* **Stabilità operativa** - Garantire la stabilità dell&#39;ambiente tramite la convalida automatica
+* **Stabilità operativa** - Conferma l&#39;avvio dell&#39;applicazione e supera un controllo di integrità dopo ogni operazione patch

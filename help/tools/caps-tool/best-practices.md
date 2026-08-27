@@ -1,17 +1,17 @@
 ---
-title: Guida alle best practice di [!DNL Cloud Automation Patching Service (CAPS)]
-description: Scopri le best practice per utilizzare  [!DNL Cloud Automation Patching Service (CAPS)]  in modo efficace e sicuro
+title: Guida alle best practice di [!DNL Adobe Commerce Patching Automation]
+description: Scopri come utilizzare  [!DNL Adobe Commerce Patching Automation]  per pianificare, convalidare e applicare le patch in modo sicuro, riducendo al minimo i rischi di distribuzione e le interruzioni dei servizi.
 hide: true
-source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
-# Guida alle best practice di [!DNL Cloud Automation Patching Service (CAPS)]
+# Guida alle best practice di [!DNL Adobe Commerce Patching Automation]
 
-Le procedure consigliate seguenti sono essenziali per operazioni di patch sicure e corrette con [!DNL Cloud Automation Patching Service] ([!DNL CAPS]). Questa guida fornisce procedure ottimali complete per operazioni patch efficaci, gestione dell&#39;ambiente ed eccellenza operativa.
+Le procedure consigliate seguenti sono essenziali per il corretto funzionamento e la sicurezza delle operazioni di patch con [!DNL Adobe Commerce Patching Automation]. Questa guida fornisce procedure ottimali complete per operazioni patch efficaci, gestione dell&#39;ambiente ed eccellenza operativa.
 
 ## Best practice pre-patch
 
@@ -24,21 +24,21 @@ Prima di applicare le patch, verificare che l&#39;ambiente sia preparato corrett
 * **Account Adobe Commerce Cloud**
   * Abbonamento Adobe Commerce Cloud attivo
   * Licenza Adobe Commerce valida
-  * Credenziali di accesso all’archivio configurate
+  * [Chiavi di autenticazione compositore](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configurate per accedere all&#39;archivio Adobe Commerce
   * Autorizzazioni per progetti e ambienti
 
 * **Risorse di ambiente**
-  * Slot di ambiente disponibili per test temporanei
+  * Il progetto è in grado di creare un ambiente di integrazione attivo aggiuntivo per l&#39;operazione patch. Per informazioni sui limiti dell&#39;ambiente attivo, vedere [Gestione dei rami con Cloud Console](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/project/console-branches).
   * Risorse di storage, CPU e memoria sufficienti
   * Accesso di rete agli archivi di Adobe
   * Ambiente padre stabile per la sincronizzazione
 
 * **Preparazione dell&#39;ambiente di produzione** (per l&#39;applicazione di patch di produzione)
-  * È possibile abilitare la modalità di manutenzione
-  * I processi Cron possono essere disabilitati
-  * Procedure dell’intervallo di manutenzione stabilite
-  * Documentazione delle procedure di ripristino
-  * Piano di comunicazione per le parti interessate pronto
+  * Abilita modalità di manutenzione
+  * Disabilita processi Cron
+  * Stabilire le procedure della finestra di manutenzione
+  * Procedure di ripristino documenti
+  * Preparare il piano di comunicazione per le parti interessate
 
 ## Best practice per l’applicazione delle patch
 
@@ -141,7 +141,7 @@ Prima di applicare le patch, verificare che l&#39;ambiente sia preparato corrett
 
 ## Riepilogo delle best practice chiave
 
-### Best practice critiche per il successo di [!DNL CAPS]
+### Best practice critiche per il successo di [!DNL Patching Automation]
 
 * Esegui sempre il test in pre-produzione prima di applicare patch agli ambienti di produzione
 * Attiva la modalità di manutenzione e disattiva i processi cron per le operazioni patch di produzione
@@ -154,7 +154,7 @@ Prima di applicare le patch, verificare che l&#39;ambiente sia preparato corrett
 
 ## Argomenti correlati
 
-* [Introduzione CAPS](intro.md)
+* [Introduzione all’automazione dell’applicazione di patch](intro.md)
 * [Come accedere](access.md)
 * [Panoramica del flusso di lavoro](workflow.md)
 * [Integrazione GitHub](github-integration.md)
