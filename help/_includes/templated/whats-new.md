@@ -1,8 +1,8 @@
 ---
-source-git-commit: 9f9c38163d91b655bf44cac81875dab59ee2c77d
+source-git-commit: 3d85f2181ca7d234ceb181583533b25884b12fe1
 workflow-type: tm+mt
-source-wordcount: '2845'
-ht-degree: 0%
+source-wordcount: '2047'
+ht-degree: 1%
 
 ---
 # Nuovo modello
@@ -10,6 +10,28 @@ ht-degree: 0%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 26 agosto 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.82 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840">ACP2E-4840: la query prodotti GraphQL restituisce una quantità nulla per i prodotti in magazzino nelle scorte di magazzino personalizzate</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edfc38af34925749c5acb36d2c0bcfc5d16a577a">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 19 agosto 2026
 
@@ -567,218 +589,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Nuovo argomento, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2fdbf6a4fd4924947a2cb2a508e067b8bb0d694c">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2 luglio 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239">ACP2E-4239: I filtri di data griglia di amministrazione non restituiscono alcun risultato a causa di una mancata corrispondenza del fuso orario</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/58f157a5f863973df723a6bce5844883f2aa12f4">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 29 giugno 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481">ACP2E-4481: Vendibilità del prodotto del bundle ricalcolata in modo errato dopo l'annullamento dell'ordine</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ccea0456268862ba11e77ef16318bc8b2d76b0b1">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 26 giugno 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615: i rimborsi degli ordini online PayPal non riescono e viene visualizzato l'errore "Il gateway PayPal rifiuta la richiesta. Errore interno."</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/056f30558d8d9f3e218f589e2819ec5d8d6274e3">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502">ACSD-53502: l'aggiunta al carrello non riesce in modo intermittente in iOS Safari a causa della ricorsione dello script New Relic</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/95cfe4554c4501fa9526e0c8b0c039cf99228207">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626">ACP2E-4626: i file JavaScript di Storefront vengono caricati due volte, causando caricamenti duplicati e un comportamento instabile</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55fad95c3110f8150097f410115d89299b9e681b">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813: metodi di spedizione USPS non disponibili o non corretti per ordini con più pacchetti</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/94b45f953d8a91814fa7359369f976e0cbd94a36">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610: esecuzione lenta del cron sales_clean_quotes</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a7e34f7858dd74cf1c4702dfc877a793094ad042">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 25 giugno 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488">ACP2E-4488: Salvataggio/modifica lento del prodotto Admin per set di attributi di grandi dimensioni</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ac57acc5c527f1c7cc7dbd3198f23e75f08fe207">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496">ACP2E-4496: il processo cron di Analytics riduce le prestazioni durante l'esecuzione</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0b7826459c116ef03a34f0a01e5db235294c3cb1">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552">ACP2E-4552: la risposta di GraphQL non restituisce lo stato della società</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6988b8b17bd1f2161e8fd8c7dd128a75c0023de8">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 24 giugno 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808">ACP2E-4808: il peso del prodotto viene visualizzato senza unità di misura su Storefront</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/538221930434b21b92d587fd889e556564a0a45c">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta la descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472">ACP2E-4472: virgolette nulle create utilizzando il flusso "Accedi come cliente"</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/49b49560901525aa9e635eb0ea6542339270cabf">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653">ACP2E-4653: condizioni dell'ambito della categoria Regola prezzo carrello mancanti dall'API REST</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f6f4ed205def1cc5f9932857d75222015683fd08">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 23 giugno 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Negli argomenti relativi alla configurazione della cache nella <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cache/caching-overview">Guida alla configurazione</a> sono stati chiariti gli ambiti cloud rispetto a quelli locali e sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">best practice per la configurazione del servizio Redis e Valkey</a> per le distribuzioni cloud di Commerce.</p>
-</td>
-      <td>
-        Feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5d8876789a01e0e27cedfb67e0dd8b3dbc4543f7">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156">ACP2E-4156: la convalida degli indirizzi di spedizione REST API ignora la configurazione degli attributi Admin</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/897bbc5b6624dfe17deac6ca878669a5245c34ea">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.80 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533">ACP2E-4533: Impossibile caricare le immagini segnaposto in Storefront quando l'URL include il codice archivio</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eb7012dd29323ae70a19c7b37ab82dac5215c705">commit</a></td>
     </tr>
   </tbody>
 </table>
