@@ -4,9 +4,9 @@ description: Scopri le versioni beta di Adobe Commerce e come partecipare.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: ba69e06096892027bd50485eaf69cef94b40d6ce
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,23 @@ L’accesso anticipato alle funzioni sviluppate da Adobe offre a clienti e partn
 ## Programmi Beta correnti
 
 Per un elenco dei programmi beta attivi, consulta le sezioni seguenti.
+
+### Classificazione attributi (Public Beta) {#attribute-ranking-public-beta}
+
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."}
+
+Le regole di merchandising [!DNL Adobe Commerce Optimizer] ora supportano la **classificazione attributi**, che applica automaticamente un&#39;azione **Incremento**, **Buio** o **Nascondi** ai prodotti che soddisfano una o più condizioni di attributi, ad esempio marchio, categoria o produttore, senza richiedere la selezione di SKU individuale. La classificazione degli attributi viene visualizzata nell’editor delle regole insieme alla classificazione intelligente e alla classificazione manuale. Utilizzala con **tutti gli elenchi prodotti**, **regole categoria** e **regole ricerca**.
+
+**Vantaggi chiave**
+
+- Scala il merchandising su cataloghi di grandi dimensioni eseguendo il targeting dei valori degli attributi invece dei singoli SKU.
+- Potenzia, seppellisci o nascondi ogni prodotto corrispondente con una singola regola, ad esempio promuovendo un intero marchio o eliminando un colore discontinuo.
+- Combina condizioni di attributo con classificazione intelligente: i prodotti corrispondenti hanno priorità e i prodotti senza corrispondenza continuano a essere ordinati in base alla strategia di classificazione.
+- Imposta la forza di incremento o sotterramento per condizione per mettere a punto il modo in cui la regola influisce sui prodotti corrispondenti.
+
+Per ulteriori informazioni, consulta [Classificazione attributi](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking) nella guida delle regole di merchandising.
+
+Per condividere feedback su questa funzionalità beta, invia un&#39;e-mail a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
 ### Corrispondenza ricerca e classificazione (Private Beta)
 
