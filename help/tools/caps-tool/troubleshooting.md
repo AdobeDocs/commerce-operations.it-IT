@@ -178,7 +178,7 @@ Per la maggior parte degli ambienti, la seguente timeline descrive la durata del
 
 **Causa:** un problema temporaneo ha impedito la connessione del servizio a GitHub
 
-**Soluzione:** attendere alcuni minuti e riprovare. Se l&#39;errore persiste, contattare il [supporto Adobe Commerce Cloud](https://experienceleague.adobe.com/home#support)
+**Soluzione:** attendere alcuni minuti e riprovare. Se l&#39;errore persiste, contattare il [supporto Adobe Commerce Cloud](https://experienceleague.adobe.com/home?lang=it#support)
 
 #### &quot;Ambiente non creato entro il timeout&quot; (progetto connesso a GitHub)
 
@@ -186,7 +186,7 @@ Per la maggior parte degli ambienti, la seguente timeline descrive la durata del
 
 **Causa:** L&#39;integrazione GitHub del progetto ha l&#39;opzione `fetch-branches` disabilitata. Di conseguenza, i rami temporanei inviati dal servizio non vengono sincronizzati e l’ambiente di integrazione non viene mai creato.
 
-**Soluzione:** Abilitare l&#39;opzione [`fetch-branches` dell&#39;integrazione](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration), quindi riprovare. Consulta [Configurare l&#39;integrazione GitHub per  [!DNL Patching Automation]](github-integration.md).
+**Soluzione:** Abilitare l&#39;opzione [`fetch-branches` dell&#39;integrazione](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration), quindi riprovare. Consulta [Configurare l&#39;integrazione GitHub per  [!DNL Patching Automation]](github-integration.md).
 
 ### Errori di attivazione dell’ambiente
 
@@ -199,8 +199,8 @@ Per la maggior parte degli ambienti, la seguente timeline descrive la durata del
 **Se i dettagli indicano pacchetti Compositore o Adobe Commerce:**
 
 * Accedi a [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login) (o richiedi al proprietario dell&#39;account di farlo) e verifica che il tuo account abbia accesso alla base di codice di Commerce Enterprise.
-* Verifica che le chiavi di autenticazione pubblica e privata del Compositore del progetto siano corrette. Vedi [Chiavi di autenticazione](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Verifica che il pacchetto denominato nel messaggio di errore sia disponibile per la versione di Commerce in uso. Consulta [Pacchetti Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
+* Verifica che le chiavi di autenticazione pubblica e privata del Compositore del progetto siano corrette. Vedi [Chiavi di autenticazione](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Verifica che il pacchetto denominato nel messaggio di errore sia disponibile per la versione di Commerce in uso. Consulta [Pacchetti Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/release/packages/adobe-commerce).
 
 **Se i dettagli indicano gli slot o le risorse dell&#39;ambiente:**
 
@@ -246,7 +246,7 @@ Per informazioni tecniche più dettagliate:
 
 ### Argomenti correlati
 
-* [Documentazione di Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+* [Documentazione di Adobe Commerce Cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/overview)
 * [Guida all’installazione di Adobe Commerce](/help/installation/overview.md)
 * [Introduzione all’automazione dell’applicazione di patch](intro.md)
 * [Come accedere](access.md)
