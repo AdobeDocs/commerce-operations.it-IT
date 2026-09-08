@@ -7,7 +7,7 @@ exl-id: ce2ee50b-246a-43b7-b520-d7a42749e0ee
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,6 @@ QPT v1.1.36 include le seguenti patch:
 1. **ACSD-52736**: è stato risolto il problema che impediva il funzionamento previsto di un [!UICONTROL Cart Price Rule] che includeva i requisiti per la quantità di prodotto configurabile.
 1. **ACSD-47875**: è stato risolto il problema che impediva agli utenti amministratori di aggiungere un prodotto al carrello di un cliente dall&#39;amministratore per un determinato ambito di visualizzazione archivio con gestione inventario.
 1. **ACSD-53176**: è stato corretto il problema per cui *[!UICONTROL Related Product Rule]* con condizione *[!UICONTROL is one of]* non corrisponde ai prodotti.
-1. **ACSD-51666**: è stato corretto l&#39;errore: *La sessione è scaduta. Accedere di nuovo.* che si verifica dopo che un cliente ha tentato di accedere.
+1. **ACSD-51666**: è stato corretto l&#39;errore: *La sessione è scaduta. Accedere di nuovo.* questo accade dopo che un cliente tenta di accedere.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
