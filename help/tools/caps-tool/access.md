@@ -1,8 +1,7 @@
 ---
 title: Come accedere a  [!DNL Adobe Commerce Patching Automation]
 description: Scopri come accedere a e utilizzare  [!DNL Adobe Commerce Patching Automation]
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 1%

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-65195: La mutazione GraphQL &grave;createCompany&grave; restituisce un errore per un paese senza un’area geografica richiesta'
+title: 'ACSD-65195: La mutazione GraphQL `createCompany` restituisce un errore per un paese senza un’area geografica richiesta'
 description: Applica la patch ACSD-65195 per risolvere il problema di Adobe Commerce, in cui la mutazione GraphQL "createCompany" genera un errore per i paesi che non richiedono un’area geografica.
 feature: B2B, Companies, GraphQL
 role: Admin, Developer
@@ -7,7 +7,7 @@ exl-id: b9eed00c-26f2-47fe-b1a0-6b020527f0c1
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---

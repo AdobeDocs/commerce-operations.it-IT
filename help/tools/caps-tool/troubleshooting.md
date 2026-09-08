@@ -1,8 +1,7 @@
 ---
 title: Guida alla risoluzione dei problemi di [!DNL Adobe Commerce Patching Automation]
 description: Risoluzione dei problemi comuni e dei messaggi di errore in [!DNL Adobe Commerce Patching Automation]
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 0%

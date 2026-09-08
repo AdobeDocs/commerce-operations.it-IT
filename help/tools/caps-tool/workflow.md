@@ -1,8 +1,7 @@
 ---
 title: Panoramica del flusso di lavoro [!DNL Adobe Commerce Patching Automation]
 description: Scopri il processo del flusso di lavoro  [!DNL Adobe Commerce Patching Automation] , inclusa la terminologia, le fasi del flusso di lavoro e le operazioni per la gestione automatizzata delle patch.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
