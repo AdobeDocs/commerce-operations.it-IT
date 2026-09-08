@@ -1,9 +1,9 @@
 ---
 title: Come accedere a  [!DNL Adobe Commerce Patching Automation]
 description: Scopri come accedere a e utilizzare  [!DNL Adobe Commerce Patching Automation]
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: e7e2cb120377e73f2a6f80edcacfcf644b48be84
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 Se nell&#39;interfaccia utente di [!DNL Patching Automation] non è presente alcun progetto, richiedere l&#39;accesso alla persona appropriata:
 
 * Contatta il proprietario dell’account o l’amministratore del progetto
-* Ti assegneranno il ruolo appropriato tramite Cloud Console
+* Possono assegnarti il ruolo appropriato tramite Cloud Console
 * Una volta ottenuto l’accesso, puoi accedere alla Cloud Console per utilizzare il servizio
 
 >[!NOTE]
@@ -34,7 +34,7 @@ Se nell&#39;interfaccia utente di [!DNL Patching Automation] non è presente alc
 
 ## Accesso a [!DNL Patching Automation]
 
-[!DNL Patching Automation] è disponibile come scheda nel dashboard [!DNL Site-Wide Analysis Tool]. Puoi accedervi dal tuo pannello di amministrazione andando in **Rapporti** > **Informazioni di sistema** > **Strumento di analisi a livello di sito** nella barra laterale di amministrazione. Consulta [Come accedere allo strumento di analisi a livello di sito](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/site-wide-analysis-tool/access) per i prerequisiti e la configurazione delle autorizzazioni.
+[!DNL Patching Automation] è disponibile come scheda nel dashboard [!DNL Site-Wide Analysis Tool]. Puoi accedervi dal tuo pannello di amministrazione andando in **Rapporti** > **Informazioni di sistema** > **Strumento di analisi a livello di sito** nella barra laterale di amministrazione. Consulta [Come accedere allo strumento di analisi a livello di sito](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) per i prerequisiti e la configurazione delle autorizzazioni.
 
 Una volta nella dashboard:
 

@@ -1,9 +1,9 @@
 ---
 title: Configurare l'integrazione GitHub per  [!DNL Adobe Commerce Patching Automation]
 description: Scopri come installare l’app GitHub  [!DNL Adobe Commerce Patching Automation]  per abilitare le operazioni patch per i progetti Adobe Commerce Cloud connessi a GitHub.
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: bc614967131d4458e004a06baa94bbe9261c4cee
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -11,12 +11,12 @@ ht-degree: 0%
 
 # Configurare l&#39;integrazione GitHub per [!DNL Patching Automation]
 
-Se il progetto Adobe Commerce Cloud è connesso a un archivio GitHub, è necessario installare l&#39;app GitHub [!DNL Patching Automation] prima di poter utilizzare il servizio per applicare o ripristinare le patch. L’app concede al servizio l’accesso necessario per apportare modifiche all’archivio per tuo conto.
+Se il progetto Adobe Commerce Cloud è connesso a un archivio GitHub, è necessario installare l&#39;app GitHub [!DNL Patching Automation] prima di poter utilizzare il servizio per applicare o ripristinare le patch. L’app concede al servizio l’accesso necessario per apportare modifiche all’archivio.
 
 ## Prerequisiti
 
 * Un abbonamento Adobe Commerce Cloud attivo
-* Integrazione [GitHub](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github) già configurata per il progetto Adobe Commerce Cloud, con opzione [`fetch-branches` abilitata](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration). [!DNL Patching Automation] crea e invia rami temporanei dell&#39;integrazione dell&#39;ambiente, pertanto le operazioni di patch non riescono a creare l&#39;ambiente quando questa opzione è disabilitata.
+* Integrazione [GitHub](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github) già configurata per il progetto Adobe Commerce Cloud, con opzione [`fetch-branches` abilitata](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration). [!DNL Patching Automation] crea e invia rami temporanei dell&#39;integrazione dell&#39;ambiente, pertanto le operazioni di patch non riescono a creare l&#39;ambiente quando questa opzione è disabilitata.
 * Un archivio ospitato su [!DNL github.com]. Le integrazioni GitHub configurate con un dominio personalizzato non sono supportate.
 * Accesso del proprietario o dell’amministratore all’organizzazione o all’archivio GitHub
 
@@ -38,7 +38,7 @@ L&#39;interfaccia utente di [!DNL Patching Automation] mostra lo stato corrente 
 
 * **[!UICONTROL Refresh]** / **[!UICONTROL Refresh status]** - Controlla nuovamente lo stato della connessione senza apportare modifiche.
 * **[!UICONTROL Reinstall]** - Indica se l&#39;installazione non è più valida (ad esempio, se è stata sospesa o se l&#39;archivio connesso al progetto Cloud è stato modificato). Avvia lo stesso flusso di installazione descritto in precedenza.
-* **[!UICONTROL Unlink GitHub App]** - Rimuove la connessione salvata di [!DNL Patching Automation] all&#39;app GitHub. **not** disinstalla l&#39;app dall&#39;archivio GitHub. Per rimuovere completamente l&#39;accesso, vedi la sezione Disinstalla di seguito.
+* **[!UICONTROL Unlink GitHub App]** - Rimuove la connessione salvata di [!DNL Patching Automation] all&#39;app GitHub. Questa azione **non** disinstalla l&#39;app dall&#39;archivio GitHub. Per rimuovere completamente l&#39;accesso, vedi la sezione Disinstalla di seguito.
 
 ## Disinstalla l&#39;app GitHub [!DNL Patching Automation]
 
@@ -52,7 +52,7 @@ Se non desideri più che il servizio acceda al tuo archivio:
 
 >[!WARNING]
 >
->Se al momento della disinstallazione dell’app GitHub sono ancora in corso operazioni di applicazione o ripristino, tali operazioni potrebbero non riuscire. Dopo aver disinstallato l’app, gli utenti non possono avviare nuove operazioni perché i pulsanti di azione non sono più attivi.
+>Se al momento della disinstallazione dell’app GitHub sono ancora in corso operazioni di applicazione o ripristino, tali operazioni potrebbero non riuscire. Dopo la disinstallazione dell’app, gli utenti non possono avviare nuove operazioni perché i pulsanti di azione non sono più attivi.
 
 ## Argomenti correlati
 

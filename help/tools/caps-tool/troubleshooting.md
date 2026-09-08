@@ -1,9 +1,9 @@
 ---
 title: Guida alla risoluzione dei problemi di [!DNL Adobe Commerce Patching Automation]
 description: Risoluzione dei problemi comuni e dei messaggi di errore in [!DNL Adobe Commerce Patching Automation]
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: f2b9ba118bfe4982a67ec5041141e5ee7548fc4d
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Quando si utilizza [!DNL Patching Automation] per operazioni patch, è possibile
 
 ### Durata delle operazioni patch
 
-Per la maggior parte degli ambienti, la seguente timeline descrive quanto tempo devono richiedere le operazioni patch, ma potrebbe richiedere più tempo a seconda delle dimensioni e della complessità dell’ambiente:
+Per la maggior parte degli ambienti, la seguente timeline descrive la durata delle operazioni patch, ma può richiedere più tempo a seconda delle dimensioni e della complessità dell’ambiente:
 
 * **Pre-elaborazione:** 2-5 minuti
 * **Applicazione della patch:** 5-15 minuti
@@ -42,7 +42,7 @@ Per la maggior parte degli ambienti, la seguente timeline descrive quanto tempo 
 
 >[!WARNING]
 >
->Una volta iniziata l’operazione patch, questa deve poter essere completata. Il sistema include procedure di pulizia che vengono eseguite anche in caso di errore delle operazioni. L’interruzione del processo potrebbe lasciare l’ambiente in uno stato incoerente.
+>Una volta iniziata l’operazione patch, questa deve poter essere completata. Il sistema include procedure di pulizia che vengono eseguite anche in caso di errore delle operazioni. L’interruzione del processo può lasciare l’ambiente in uno stato incoerente.
 
 ## Messaggi di successo comuni
 
@@ -56,7 +56,7 @@ Per la maggior parte degli ambienti, la seguente timeline descrive quanto tempo 
 
 >[!NOTE]
 >
->Non tutti gli errori possibili sono elencati di seguito. Un errore non elencato durante il controllo preliminare viene visualizzato come il generico &quot;Errore durante il controllo preliminare&quot;; un errore non elencato durante la convalida viene visualizzato come il generico &quot;Errore durante la post-elaborazione&quot; — contatta il supporto con il testo esatto dell’errore in entrambi i modi. Durante l’applicazione della patch, un errore imprevisto mostra il messaggio di errore sottostante non elaborato direttamente anziché un fallback generico.
+>Non tutti gli errori possibili sono elencati di seguito. Gli errori non elencati durante il controllo preliminare o la convalida vengono visualizzati come errori generici. Contatta il supporto tecnico con il testo esatto dell’errore. Durante l’applicazione della patch, un errore imprevisto mostra il messaggio di errore sottostante non elaborato direttamente anziché un fallback generico.
 
 ### Errori di preparazione all’ambiente
 
@@ -113,7 +113,7 @@ Per la maggior parte degli ambienti, la seguente timeline descrive quanto tempo 
 
 **Soluzioni:**
 
-* Attendi alcuni minuti e controlla di nuovo lo stato dell’ambiente. Questo problema spesso si risolve da solo
+* Attendi alcuni minuti e controlla di nuovo lo stato dell’ambiente. Questo problema spesso si risolve automaticamente
 * Se dopo alcuni minuti gli ambienti non corrispondono, contatta il supporto Adobe.
 
 #### &quot;Impossibile creare il processo di patch nell’ambiente di produzione quando cron è abilitato e la modalità di manutenzione è disabilitata. Abilita la modalità di manutenzione e disabilita i processi cron prima di applicare le patch.&quot;
@@ -131,7 +131,7 @@ Per la maggior parte degli ambienti, la seguente timeline descrive quanto tempo 
 
 >[!IMPORTANT]
 >
-> [!DNL Patching Automation] non abilita automaticamente la modalità di manutenzione o disabilita i processi cron, che devono essere eseguiti esternamente da te
+> [!DNL Patching Automation] non abilita automaticamente la modalità di manutenzione o disabilita i processi cron. Completare queste procedure manualmente.
 
 #### &quot;L’operazione di patch è stata completata, ma il controllo dello stato dell’ambiente non è riuscito. Questo indica potenziali problemi relativi alla distribuzione. Controlla lo stato dell’ambiente e prendi in considerazione di ripristinare la modifica.&quot;
 
@@ -141,11 +141,11 @@ Per la maggior parte degli ambienti, la seguente timeline descrive quanto tempo 
 
 **Soluzioni:**
 
-* Test della vetrina e dei flussi di lavoro critici di pagamento e amministrazione per verificare se i clienti sono effettivamente interessati
+* Test della vetrina e dei flussi di lavoro critici di pagamento e amministrazione per verificare se i clienti sono interessati
 * Nella console Cloud, controlla lo stato dell&#39;ambiente ed esamina i registri dell&#39;applicazione e della distribuzione nel feed **Attività** dei progetti. Cercare gli errori associati all&#39;operazione o alla distribuzione della patch.
-* Attiva una ridistribuzione manuale per determinare se l’errore di verifica dello stato è stato causato da un problema transitorio di distribuzione o infrastruttura.
-* Se il problema persiste, ripristinare la patch. Se la patch è gestita da [!DNL Patching Automation] e l&#39;operazione è disponibile, selezionare [!UICONTROL Revert]. Se la patch è una patch personalizzata nella directory `m2-hotfixes`, eliminare il file di patch dall&#39;archivio del progetto. Esegui il commit e invia la modifica, quindi ridistribuisci l’ambiente.
-* Se il problema persiste, contatta il supporto Adobe.Includi le seguenti informazioni nella richiesta di supporto: ID progetto di supporto, ID ambiente e questo messaggio esatto: l’ultima operazione non è stata completata correttamente, pertanto potrebbe essere necessario confermare lo stato dell’ambiente.
+* Attivare una ridistribuzione manuale per determinare se un problema di distribuzione o infrastruttura transitorio ha causato l&#39;errore di verifica dello stato.
+* Se il problema persiste, ripristinare la patch. Se [!DNL Patching Automation] gestisce la patch e l&#39;operazione è disponibile, selezionare [!UICONTROL Revert]. Se la patch è una patch personalizzata nella directory `m2-hotfixes`, eliminare il file di patch dall&#39;archivio del progetto. Esegui il commit e invia la modifica, quindi ridistribuisci l’ambiente.
+* Se il problema persiste, contatta il supporto Adobe. Includi le seguenti informazioni nella richiesta di supporto: ID progetto di supporto, ID ambiente e questo messaggio esatto: l’ultima operazione non è stata completata correttamente, pertanto il supporto deve confermare lo stato dell’ambiente.
 
 ### Errori di autenticazione e accesso
 
@@ -178,7 +178,7 @@ Per la maggior parte degli ambienti, la seguente timeline descrive quanto tempo 
 
 **Causa:** un problema temporaneo ha impedito la connessione del servizio a GitHub
 
-**Soluzione:** attendere alcuni minuti e riprovare. Se l&#39;errore persiste, contattare il [supporto Adobe Commerce Cloud](https://experienceleague.adobe.com/home?lang=it#support)
+**Soluzione:** attendere alcuni minuti e riprovare. Se l&#39;errore persiste, contattare il [supporto Adobe Commerce Cloud](https://experienceleague.adobe.com/home#support)
 
 #### &quot;Ambiente non creato entro il timeout&quot; (progetto connesso a GitHub)
 
@@ -186,7 +186,7 @@ Per la maggior parte degli ambienti, la seguente timeline descrive quanto tempo 
 
 **Causa:** L&#39;integrazione GitHub del progetto ha l&#39;opzione `fetch-branches` disabilitata. Di conseguenza, i rami temporanei inviati dal servizio non vengono sincronizzati e l’ambiente di integrazione non viene mai creato.
 
-**Soluzione:** Abilitare l&#39;opzione [`fetch-branches` dell&#39;integrazione](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration), quindi riprovare. Consulta [Configurare l&#39;integrazione GitHub per  [!DNL Patching Automation]](github-integration.md).
+**Soluzione:** Abilitare l&#39;opzione [`fetch-branches` dell&#39;integrazione](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration), quindi riprovare. Consulta [Configurare l&#39;integrazione GitHub per  [!DNL Patching Automation]](github-integration.md).
 
 ### Errori di attivazione dell’ambiente
 
@@ -198,18 +198,16 @@ Per la maggior parte degli ambienti, la seguente timeline descrive quanto tempo 
 
 **Se i dettagli indicano pacchetti Compositore o Adobe Commerce:**
 
-* Accedi a [https://account.magento.com/](https://account.magento.com/) (o richiedi al proprietario dell&#39;account di farlo) e verifica che il tuo account abbia accesso alla base di codice di Commerce Enterprise.
-* Verificare che la coppia di chiavi pubblica/privata del Compositore del progetto sia corretta. Vedere [Chiavi di autenticazione](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Accedi a [https://account.magento.com/](https://account.magento.com/) (o chiedi al proprietario dell&#39;account di farlo) e conferma che il tuo account abbia accesso alla base di codice di Commerce Enterprise.
-* Verifica che le chiavi di autenticazione pubblica e privata del Compositore del progetto siano corrette. Vedi [Chiavi di autenticazione](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Verifica che il pacchetto denominato nel messaggio di errore sia disponibile per la versione di Commerce in uso. Consulta [Pacchetti Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/release/packages/adobe-commerce).
+* Accedi a [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login) (o richiedi al proprietario dell&#39;account di farlo) e verifica che il tuo account abbia accesso alla base di codice di Commerce Enterprise.
+* Verifica che le chiavi di autenticazione pubblica e privata del Compositore del progetto siano corrette. Vedi [Chiavi di autenticazione](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Verifica che il pacchetto denominato nel messaggio di errore sia disponibile per la versione di Commerce in uso. Consulta [Pacchetti Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
 
 **Se i dettagli indicano gli slot o le risorse dell&#39;ambiente:**
 
-* Nella console Cloud, apri la panoramica del progetto e controlla gli ambienti e i relativi stati. Disattivare o eliminare eventuali ambienti di integrazione inutilizzati: seleziona l’ambiente. Vai a **[!UICONTROL Settings]>[!UICONTROL General]**. Imposta lo stato dell’ambiente su inattivo.
+* Nella console Cloud, apri la panoramica del progetto e controlla gli ambienti e i relativi stati. Disattivare o eliminare eventuali ambienti di integrazione inutilizzati: seleziona l’ambiente. Vai a **[!UICONTROL Settings]>[!UICONTROL General]**. Per disattivare l’ambiente, imposta lo stato su inattivo.
 
   In alternativa, utilizzare CLI: `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>`
-* Verifica che il progetto disponga di risorse sufficienti, ad esempio spazio su disco.
+* Verificare che il progetto disponga di risorse sufficienti, ad esempio spazio su disco.
 * Verificare che l&#39;ambiente padre sia stabile (nessuna distribuzione attiva) al momento dell&#39;operazione.
 * Se hai la necessità di aumentare il limite dell’ambiente, contatta il supporto Adobe.
 
@@ -248,7 +246,7 @@ Per informazioni tecniche più dettagliate:
 
 ### Argomenti correlati
 
-* [Documentazione di Adobe Commerce Cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/overview)
+* [Documentazione di Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
 * [Guida all’installazione di Adobe Commerce](/help/installation/overview.md)
 * [Introduzione all’automazione dell’applicazione di patch](intro.md)
 * [Come accedere](access.md)

@@ -1,7 +1,7 @@
 ---
 title: Panoramica del flusso di lavoro [!DNL Adobe Commerce Patching Automation]
 description: Scopri il processo del flusso di lavoro  [!DNL Adobe Commerce Patching Automation] , inclusa la terminologia, le fasi del flusso di lavoro e le operazioni per la gestione automatizzata delle patch.
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: a56211744d35006924bd4ffd35c76ddb77118ed4
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
@@ -63,7 +63,7 @@ La fase di verifica preliminare verifica che la patch possa essere applicata in 
 
 ### Fase 2: applicazione di patch
 
-La fase di applicazione delle patch applica o ripristina la patch in un ambiente di integrazione temporaneo. Durante questa fase, il servizio crea un ambiente di integrazione temporaneo per applicare in modo sicuro la patch, confermarne la corretta distribuzione e verificare che superi un controllo di integrità, prima di apportare qualsiasi modifica all’ambiente effettivo.
+La fase di applicazione delle patch applica o ripristina la patch in un ambiente di integrazione temporaneo. Durante questa fase, il servizio crea un ambiente di integrazione temporaneo per applicare la patch in modo sicuro, confermarne la corretta distribuzione e verificare che superi un controllo di integrità, prima di apportare qualsiasi modifica all’ambiente effettivo.
 
 Questo approccio fornisce:
 
@@ -73,25 +73,25 @@ Questo approccio fornisce:
 
 #### Fase 2a: creazione di un ambiente di integrazione
 
-**Creazione ramo** - [!DNL Patching Automation] crea un ramo dell&#39;ambiente di integrazione temporaneo denominato `{target-environment}-CAPS-{patch-id}`
+**Creazione ramo** — [!DNL Patching Automation] crea un ramo dell&#39;ambiente di integrazione temporaneo denominato `{target-environment}-CAPS-{patch-id}`
 
-**Configurazione dell&#39;ambiente** - L&#39;ambiente di integrazione viene creato come elemento secondario dell&#39;ambiente di destinazione
+**Configurazione dell&#39;ambiente**: l&#39;ambiente di integrazione viene creato come elemento secondario dell&#39;ambiente di destinazione
 
-**Sincronizzazione del codice** - L&#39;ambiente di integrazione eredita lo stato esatto del codice dell&#39;ambiente di destinazione (stessa base di codice)
+**Sincronizzazione del codice**: l&#39;ambiente di integrazione eredita lo stato esatto del codice dell&#39;ambiente di destinazione (stessa base di codice)
 
-**Nessuna clonazione dei dati** - L&#39;ambiente di integrazione non riceve una copia dei dati dell&#39;ambiente di destinazione (database, supporto o altro contenuto archiviato). Per applicare e verificare la patch viene utilizzata solo la base di codice
+**Nessuna clonazione dei dati**. L&#39;ambiente di integrazione non riceve una copia dei dati dell&#39;ambiente di destinazione (database, supporto o altro contenuto archiviato). Per applicare e verificare la patch viene utilizzata solo la base di codice
 
-**Fabbisogni di risorse** - La capacità di archiviazione totale del progetto Cloud è definita nel contratto. (Controllare tramite la pagina dell&#39;account o `magento-cloud subscription:info`). L&#39;allocazione del disco di ogni ambiente è configurata separatamente tramite la proprietà `disk` in `.magento.app.yaml`/`.magento/services.yaml`. Per ulteriori dettagli, vedere [Gestione spazio su disco](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space). Se un&#39;operazione di patch non riesce a causa di limiti di archiviazione, controllare l&#39;utilizzo del disco (`magento-cloud db:size` / `magento-cloud mount:size`) dell&#39;ambiente di integrazione rispetto all&#39;allocazione configurata.
+**Fabbisogni di risorse**: la capacità di archiviazione totale del progetto Cloud è definita nel contratto. (Controllare tramite la pagina dell&#39;account o `magento-cloud subscription:info`). L&#39;allocazione del disco di ogni ambiente è configurata separatamente tramite la proprietà `disk` in `.magento.app.yaml`/`.magento/services.yaml`. Per ulteriori dettagli, vedere [Gestione spazio su disco](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space). Se un&#39;operazione di patch non riesce a causa di limiti di archiviazione, controllare l&#39;utilizzo del disco (`magento-cloud db:size` / `magento-cloud mount:size`) dell&#39;ambiente di integrazione rispetto all&#39;allocazione configurata.
 
 #### Fase 2b: applicazione patch nell’ambiente di integrazione
 
-**Test di sicurezza** - La patch viene applicata all&#39;ambiente di integrazione, non direttamente all&#39;ambiente di destinazione
+**Test di sicurezza**: la patch viene applicata all&#39;ambiente di integrazione, non direttamente all&#39;ambiente di destinazione
 
-**Gestione file** - I file di patch vengono inseriti nella cartella `m2-hotfixes`
+**Gestione file** — I file di patch vengono inseriti nella cartella `m2-hotfixes`
 
-**Operazioni Git** - Le modifiche vengono applicate e inviate al ramo dell&#39;ambiente di integrazione
+**Operazioni Git** — Le modifiche vengono applicate e inviate al ramo dell&#39;ambiente di integrazione
 
-**Attivazione ambiente** - L&#39;ambiente di integrazione è attivato per distribuire il codice con patch
+**Attivazione ambiente** — L&#39;ambiente di integrazione è attivato per distribuire il codice con patch
 
 **Verifica stato** - Dopo l&#39;attivazione, [!DNL Patching Automation] conferma quanto segue prima di procedere all&#39;unione: l&#39;ambiente di integrazione è stato distribuito correttamente ed è integro, l&#39;applicazione viene avviata e le connessioni al database e alla cache sono raggiungibili.
 
@@ -103,15 +103,15 @@ Questo approccio fornisce:
 
 **Controllo sincronizzazione** - Prima dell&#39;unione, il servizio conferma che l&#39;ambiente di integrazione è ancora attivo, sincronizzato con l&#39;ambiente di destinazione e integro. Se la destinazione è stata modificata durante l&#39;applicazione della patch, l&#39;operazione si arresta qui anziché unire
 
-**Estrazione dell&#39;ambiente** - Il servizio estrae l&#39;ambiente di destinazione localmente
+**Estrazione dell&#39;ambiente**: il servizio estrae l&#39;ambiente di destinazione localmente
 
-**Operazione di unione** - Il ramo dell&#39;ambiente di integrazione è unito all&#39;ambiente di destinazione
+**Operazione di unione** - Il ramo dell&#39;ambiente di integrazione viene unito all&#39;ambiente di destinazione
 
 **Gestione dei conflitti** - Se si verifica un conflitto di unione, l&#39;operazione non riesce e viene segnalata come errore. L&#39;operazione non viene risolta automaticamente
 
-**Distribuzione** - Le modifiche unite vengono distribuite nell&#39;ambiente di destinazione
+**Distribuzione**: le modifiche unite vengono distribuite nell&#39;ambiente di destinazione
 
-**Verifica** - Il servizio verifica che l&#39;unione sia avvenuta correttamente e che gli ambienti siano sincronizzati
+**Verifica** - Il servizio verifica che l&#39;unione sia stata eseguita correttamente e che gli ambienti siano sincronizzati
 
 ### Ciclo di vita dell’ambiente di integrazione
 
