@@ -1,8 +1,7 @@
 ---
 title: Panoramica del flusso di lavoro [!DNL Adobe Commerce Patching Automation]
 description: Scopri il processo del flusso di lavoro  [!DNL Adobe Commerce Patching Automation] , inclusa la terminologia, le fasi del flusso di lavoro e le operazioni per la gestione automatizzata delle patch.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
@@ -82,7 +81,7 @@ Questo approccio fornisce:
 
 **Nessuna clonazione dei dati** - L&#39;ambiente di integrazione non riceve una copia dei dati dell&#39;ambiente di destinazione (database, supporto o altro contenuto archiviato). Per applicare e verificare la patch viene utilizzata solo la base di codice
 
-**Fabbisogni di risorse** - La capacità di archiviazione totale del progetto Cloud è definita nel contratto. (Controllare tramite la pagina dell&#39;account o `magento-cloud subscription:info`). L&#39;allocazione del disco di ogni ambiente è configurata separatamente tramite la proprietà `disk` in `.magento.app.yaml`/`.magento/services.yaml`. Per ulteriori dettagli, vedere [Gestione spazio su disco](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space). Se un&#39;operazione di patch non riesce a causa di limiti di archiviazione, controllare l&#39;utilizzo del disco (`magento-cloud db:size` / `magento-cloud mount:size`) dell&#39;ambiente di integrazione rispetto all&#39;allocazione configurata.
+**Fabbisogni di risorse** - La capacità di archiviazione totale del progetto Cloud è definita nel contratto. (Controllare tramite la pagina dell&#39;account o `magento-cloud subscription:info`). L&#39;allocazione del disco di ogni ambiente è configurata separatamente tramite la proprietà `disk` in `.magento.app.yaml`/`.magento/services.yaml`. Per ulteriori dettagli, vedere [Gestione spazio su disco](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space). Se un&#39;operazione di patch non riesce a causa di limiti di archiviazione, controllare l&#39;utilizzo del disco (`magento-cloud db:size` / `magento-cloud mount:size`) dell&#39;ambiente di integrazione rispetto all&#39;allocazione configurata.
 
 #### Fase 2b: applicazione patch nell’ambiente di integrazione
 
