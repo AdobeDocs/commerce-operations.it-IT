@@ -4,9 +4,9 @@ description: Scopri le versioni beta di Adobe Commerce e come partecipare.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 041a0c42c83cbab28eac6562c67ce9169c07aa02
+source-git-commit: efdc4734b5c0db8efc0c83bef41e7ccaafd9b6af
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1490'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 I programmi Beta per [soluzioni dei prodotti Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions) consentono ai commercianti di accedere alle funzioni e al codice prerelease, fornire feedback e guidare il futuro di Adobe Commerce. Esistono due tipi di programmi beta:
 
 - Beta pubblico: un programma beta pubblico è disponibile per tutti i clienti e i partner Adobe Commerce
-- Private Beta: per partecipare a un programma beta privato potrebbe essere necessaria un’approvazione basata su criteri di qualificazione
+- Private Beta: per partecipare a un programma beta privato è necessaria l’approvazione in base ai criteri di qualificazione
 
 >[!IMPORTANT]
 >
@@ -35,14 +35,14 @@ Per un elenco dei programmi beta attivi, consulta le sezioni seguenti.
 
 [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."}
 
-Le regole di merchandising [!DNL Adobe Commerce Optimizer] ora supportano la **classificazione attributi**, che applica automaticamente un&#39;azione **Incremento**, **Buio** o **Nascondi** ai prodotti che soddisfano una o più condizioni di attributi, ad esempio marchio, categoria o produttore, senza richiedere la selezione di SKU individuale. La classificazione degli attributi viene visualizzata nell’editor delle regole insieme alla classificazione intelligente e alla classificazione manuale. Utilizzala con **tutti gli elenchi prodotti**, **regole categoria** e **regole ricerca**.
+Le regole di merchandising [!DNL Adobe Commerce Optimizer] ora supportano la **classificazione degli attributi**, che applica automaticamente un&#39;azione **Incremento**, **Buio** o **Nascondi** ai prodotti che soddisfano le condizioni degli attributi, ad esempio marchio, categoria o produttore, senza richiedere la selezione di SKU individuale. La classificazione degli attributi viene visualizzata nell’editor delle regole insieme alla classificazione intelligente e alla classificazione manuale. Utilizzala con **tutti gli elenchi prodotti**, **regole categoria** e **regole ricerca**.
 
 **Vantaggi chiave**
 
 - Scala il merchandising su cataloghi di grandi dimensioni eseguendo il targeting dei valori degli attributi invece dei singoli SKU.
 - Potenzia, seppellisci o nascondi ogni prodotto corrispondente con una singola regola, ad esempio promuovendo un intero marchio o eliminando un colore discontinuo.
-- Combina condizioni di attributo con classificazione intelligente: i prodotti corrispondenti hanno priorità e i prodotti senza corrispondenza continuano a essere ordinati in base alla strategia di classificazione.
-- Imposta la forza di incremento o sotterramento per condizione per mettere a punto il modo in cui la regola influisce sui prodotti corrispondenti.
+- Combina condizioni di attributo con classificazione intelligente: i prodotti corrispondenti hanno priorità e la tua strategia di classificazione continua a ordinare prodotti senza corrispondenza.
+- Imposta la forza di incremento o sotterramento per condizione per ottimizzare il modo in cui la regola influisce sui prodotti corrispondenti.
 
 Per ulteriori informazioni, consulta [Classificazione attributi](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking) nella guida delle regole di merchandising.
 
@@ -50,7 +50,7 @@ Per condividere feedback su questa funzionalità beta, invia un&#39;e-mail a [co
 
 ### Corrispondenza ricerca e classificazione (Private Beta)
 
-Adobe sta migliorando il modo in cui l&#39;individuazione del prodotto classifica i risultati della ricerca per [!DNL Live Search] in [!DNL Adobe Commerce] e per [!DNL Adobe Commerce Optimizer]. L&#39;aggiornamento assegna priorità a **corrispondenze esatte e simili a frasi**, quindi a **tutti i termini di query vengono visualizzati nello stesso attributo ricercabile** e infine a **corrispondenze tra campi diversi** (incluso il comportamento che supporta suggerimenti di tipo completamento automatico). Questo modello su più livelli consente alle query ad alto intento di far emergere per prime i prodotti più rilevanti, restituendo al contempo alternative utili.
+Adobe sta migliorando il modo in cui l&#39;individuazione del prodotto classifica i risultati della ricerca per [!DNL Live Search] in [!DNL Adobe Commerce] e per [!DNL Adobe Commerce Optimizer]. L&#39;aggiornamento assegna priorità a **corrispondenze esatte e simili a frasi**, quindi a **tutti i termini di query vengono visualizzati nello stesso attributo ricercabile** e infine a **corrispondenze tra campi diversi** (incluso il comportamento che supporta suggerimenti di tipo completamento automatico). Questo modello su più livelli consente alle query ad alto intento di visualizzare prima i prodotti più rilevanti, pur restituendo alternative utili.
 
 Lo stesso modello di rilevanza interagisce con **pesi di ricerca**, **classificazione intelligente**, **sinonimi** e **regole merchandising** (pin, boost, bury). Gli storefront tedeschi possono utilizzare **decomponunding** per le parole composte, con lo stesso approccio di priorità generale.
 
@@ -63,7 +63,7 @@ Lo stesso modello di rilevanza interagisce con **pesi di ricerca**, **classifica
 
 Ulteriori informazioni sulla strategia di corrispondenza e classificazione delle ricerche in [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/it/docs/commerce/optimizer/manage-results/search-relevance-matching) e [Live Search (PaaS)](https://experienceleague.adobe.com/it/docs/commerce/live-search/live-search-admin/search-relevance-matching).
 
-Per richiedere un invito per questa versione beta privata, invia un&#39;e-mail a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). Il team Adobe risponderà con i passaggi successivi e i requisiti di idoneità.
+Per richiedere un invito per questa versione beta privata, invia un&#39;e-mail a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). Il team di Adobe risponde ai passaggi successivi e ai requisiti di idoneità.
 
 ### Filtri prezzi consigli (Public Beta) {#recommendation-price-filters-public-beta}
 
