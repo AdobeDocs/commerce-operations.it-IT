@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1459bd6961b08d778d43a87b380e23c3041c89bb
+source-git-commit: 526e20111bfbdf299b18c39879ccbffc1550b22a
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 1%
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 8 settembre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce Patching Automation è ora generalmente disponibile. Per ulteriori informazioni, consulta la <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/caps-tool/intro">documentazione</a>.</p>
+</td>
+      <td>
+        Aggiornamento principale, nuovo argomento
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a88bfea449616c0b79c5bd3380bec74c68687052">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 26 agosto 2026
 
@@ -545,28 +567,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Nuovo argomento
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/43571d84d9a27ffa113ba4f3a8a08883602211f6">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 luglio 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Aggiunta <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview">Panoramica: Strumento Patch di qualità (QPT) v1.1.81</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2cc434ac8efd0d9344140ad07f2f68d2d48b1fb4">commit</a></td>
     </tr>
   </tbody>
 </table>
