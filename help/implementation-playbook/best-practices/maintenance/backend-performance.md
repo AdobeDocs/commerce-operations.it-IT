@@ -39,7 +39,7 @@ Uno strumento che puoi usare per i test di stress è GTmetrix. Misura la prepara
 
 Ulteriori informazioni sulla preparazione di progetti Commerce per periodi con traffico elevato:
 
-- [Preparazione alle festività](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
+- [Preparazione alle festività](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=it)
 - [Analisi acquisti per festività](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=it)
 - [Aumento capacità di sovratensione](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/holiday-surge-capacity-requests-for-magento-commerce-cloud)
 

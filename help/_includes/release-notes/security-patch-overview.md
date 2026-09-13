@@ -27,5 +27,5 @@ I file di patch di sicurezza isolati sono file di patch indipendenti e non cumul
 
 Per applicare un file di patch di sicurezza isolato, i clienti devono utilizzare l&#39;ultima versione di patch di sicurezza (l&#39;ultima versione -p) per la propria riga di rilascio supportata, in quanto i file di patch di sicurezza isolati vengono testati esclusivamente in base a tale versione.
 
-Per trovare gli ultimi aggiornamenti per la sicurezza disponibili per Adobe Commerce, visita il [Centro sicurezza PC](https://helpx.adobe.com/security/products/magento.html).
+Per trovare gli ultimi aggiornamenti per la sicurezza disponibili per Adobe Commerce, visita il [Centro sicurezza PC](https://helpx.adobe.com/it/security/products/magento.html).
 
