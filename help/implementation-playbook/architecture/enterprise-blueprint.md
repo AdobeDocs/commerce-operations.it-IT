@@ -48,7 +48,7 @@ Adobe Commerce si integra con tutte le soluzioni Experience Cloud per fornire [e
 >Per ulteriori informazioni, consulta le risorse seguenti:
 >
 >- [Blueprint per esperienze digitali](https://experienceleague.adobe.com/it/docs/blueprints-learn/architecture/overview) per ulteriori dettagli tecnici.
->- Consulta [Personalizzazione della customer experience](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
+>- Consulta [Personalizzazione della customer experience](https://experienceleague.adobe.com/it/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Integrazione con sistemi di terze parti
@@ -70,7 +70,7 @@ Adobe fornisce i seguenti strumenti per sviluppatori per creare integrazioni e p
 
 >[!NOTE]
 >
->Vedi [L&#39;approccio moderno: estensibilità effettiva in Adobe Commerce](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
+>Vedi [L&#39;approccio moderno: estensibilità effettiva in Adobe Commerce](https://experienceleague.adobe.com/it/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
 
 ## Servizi di vetrina
 
