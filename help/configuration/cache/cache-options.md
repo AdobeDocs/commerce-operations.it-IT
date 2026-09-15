@@ -1,43 +1,48 @@
 ---
 title: Opzioni di back-end cache e riferimento archiviazione
-description: Scopri le opzioni di back-end della cache in Adobe Commerce, tra cui file system, Redis, Valkey e archiviazione del database. Scopri approcci legacy e moderni.
+description: Scopri le opzioni di back-end della cache in Adobe Commerce, tra cui file system, Redis, Valkey e archiviazione del database. Scopri le opzioni basate su Zend (RemoteSynchronizedCache) e Symfony Cache.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 8c5dc151b00fd73e939c32fdc083fb0e8fc41dc8
+    internal-label: Implementation
+source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
 workflow-type: tm+mt
-source-wordcount: 761
+source-wordcount: '572'
 ht-degree: 0%
-
 ---
-
 # Opzioni di back-end della cache e riferimento archiviazione
 
 >[!NOTE]
 >
 >Questa pagina documenta la configurazione di `app/etc/env.php` locale.
 >
->Per i progetti [!DNL Adobe Commerce on Cloud], il pacchetto `ece-tools` genera la configurazione `app/etc/env.php` risultante durante la distribuzione in base alla configurazione della variabile di distribuzione in `.magento.env.yaml`. Non si modifica il file `env.php`.  Consulta [Best practice per la configurazione di Valkey e Redis Service](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) e [distribuire le variabili](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy).
+>Per i progetti [!DNL Adobe Commerce on Cloud], il pacchetto `ece-tools` genera la configurazione `app/etc/env.php` risultante durante la distribuzione in base alla configurazione della variabile di distribuzione in `.magento.env.yaml`. Non si modifica il file `env.php`.  Consulta [Best practice per la configurazione di Valkey e Redis Service](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) e [distribuire le variabili](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy).
 
 L’applicazione Commerce utilizza una cache di basso livello front-end e back-end per fornire accesso allo storage della cache. Commerce supporta diversi back-end e strategie di caching, ciascuno adatto a casi d’uso diversi. Questa pagina descrive i backend disponibili e le loro differenze.
 
 >[!NOTE]
 >
->[Varnish](config-varnish-install.md) gestisce il caching a pagina intera a livello HTTP per le distribuzioni locali. Il [Fastly Service](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/fastly) lo gestisce per le distribuzioni Cloud. Nessuna delle due soluzioni utilizza il back-end della cache di basso livello.
+>[Varnish](config-varnish-install.md) gestisce il caching a pagina intera a livello HTTP per le distribuzioni locali. Il [Fastly Service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) lo gestisce per le distribuzioni Cloud. Nessuna delle due soluzioni utilizza il back-end della cache di basso livello.
 
 ## Opzioni cache back-end
 
@@ -60,29 +65,27 @@ Commerce supporta il backend diretto della cache e il caching L2. Un back-end di
 
 ### Back-end della cache diretta
 
-I seguenti esempi PHP configurano il back-end della cache in `<Commerce-install-dir>/app/etc/env.php`. Non abilitano il caching L2.
+Nella tabella seguente vengono riepilogati i valori di configurazione del back-end della cache per `<Commerce-install-dir>/app/etc/env.php`. Non abilita il caching L2.
 
-| Versione Commerce | Implementazione | Back-end | Valore di configurazione |
-| ---------------- | -------------- | ------- | ------------------- |
-| 2.4.8 e versioni precedenti, se supportato | Legacy | File system (predefinito) | Nessuna configurazione richiesta |
-| 2.4.8 e versioni precedenti, se supportato | Legacy | Redis | `Magento\Framework\Cache\Backend\Redis` |
-| 2.4.8 e versioni precedenti, se supportato | Legacy | Valkey | `Magento\Framework\Cache\Backend\Valkey` |
-| 2.4.9 e versioni successive, oltre ai backport supportati | Cache Symfony moderna | File system (predefinito) | `file` |
-| 2.4.9 e versioni successive, oltre ai backport supportati | Cache Symfony moderna | Valkey | `valkey` |
+| Versione Commerce | Back-end | Valore di configurazione |
+| ---------------- | ------- | -------------------- |
+| 2.4.8 e versioni precedenti, se supportato | file | Impostazione predefinita. Nessuna configurazione richiesta |
+| 2.4.8 e versioni precedenti, se supportato | Redis | `Magento\Framework\Cache\Backend\Redis` |
+| 2.4.8 e versioni precedenti, se supportato | Valkey | `Magento\Framework\Cache\Backend\Valkey` |
+| 2.4.9 e versioni successive, oltre ai backport supportati | file | `file` |
+| 2.4.9 e versioni successive, oltre ai backport supportati | Valkey | `valkey` |
 
 Per informazioni esatte sul supporto a livello di patch, vedere [Requisiti di sistema](../../installation/system-requirements.md).
 
->[!NOTE]
->
->L&#39;implementazione moderna accetta il nome del tipo `redis`, ma Redis non è un servizio cache ufficialmente supportato in cui è richiesto Valkey. Utilizza invece `valkey`.
+>[!TAB Cache basata su Zend (versione 2.4.8 e precedenti)]
 
-#### Esempi legacy di back-end basati su Zend
+#### Esempi di back-end
 
 Per le distribuzioni locali, negli esempi seguenti vengono configurati i back-end della cache diretta in `<Commerce-install-dir>/app/etc/env.php`. Non abilitano il caching L2. Non utilizzare questi esempi per le distribuzioni [!DNL Adobe Commerce on Cloud], che utilizzano il pacchetto `ece-tools` per generare la configurazione `app/etc/env.php` risultante durante la distribuzione.
 
 >[!BEGINTABS]
 
->[!TAB Redis back-end legacy]
+>[!TAB Redis]
 
 Utilizza il nome completo della classe Redis solo nelle versioni in cui è supportato Redis:
 
@@ -101,32 +104,7 @@ Utilizza il nome completo della classe Redis solo nelle versioni in cui è suppo
 ],
 ```
 
->[!TAB Valkey back-end legacy]
-
-Utilizza il nome completo della classe Valkey nelle versioni che supportano il back-end Valkey legacy:
-
-```php?start_inline=1
-'cache' => [
-    'frontend' => [
-        'default' => [
-            'backend' => 'Magento\\Framework\\Cache\\Backend\\Valkey',
-            'backend_options' => [
-                'server' => '127.0.0.1',
-                'database' => '0',
-                'port' => '6379',
-            ],
-        ],
-    ],
-],
-```
-
->[!ENDTABS]
-
-#### Backend moderno della cache di Symfony
-
-Il back-end diretto predefinito è il file system. Per utilizzare Valkey con l&#39;implementazione moderna, utilizzare il tipo di back-end `valkey` semplificato.
-
-L’esempio di configurazione seguente è corretto per Adobe Commerce 2.4.9 e versioni successive e per i backport supportati in cui è supportato Valkey, quando si configura il caching diretto predefinito con la moderna implementazione della cache di Symfony.
+>[!TAB Chiave Valvola]
 
 ```php?start_inline=1
 'cache' => [
@@ -143,25 +121,14 @@ L’esempio di configurazione seguente è corretto per Adobe Commerce 2.4.9 e ve
 ],
 ```
 
->[!TIP]
->
->L’implementazione della cache di Symfony supporta funzioni di prestazioni facoltative quali serializzazione binaria, compressione, script Lua e connessioni persistenti. Per ulteriori dettagli, vedere [Configurare Valkey per Default e Page Cache](valkey-pg-cache.md).
+>[!ENDTABS]
 
-### Implementazioni cache L2
+## Memorizzazione nella cache L2
 
-Il caching L2 (a due livelli) aggiunge un livello di cache locale su ciascun nodo web davanti allo storage della cache remota condivisa, riducendo il traffico di rete tra Commerce e la cache remota.
+Il caching L2 (a due livelli) aggiunge un livello di cache locale su ciascun nodo web davanti allo storage della cache remota condivisa, riducendo il traffico di rete tra Commerce e la cache remota. Per le opzioni di implementazione, il supporto delle versioni e i passaggi di configurazione, vedere [Configurazione cache L2](level-two-cache.md).
 
-| Versione Commerce | Implementazione L2 | Back-end remoto |
-| ---------------- | ------------------ | --------------- |
-| Prima della versione 2.4.9, se supportato | CacheSincronizzataRemota | Redis o Valkey, a seconda della versione di Commerce e della matrice di supporto a livello di patch |
-| 2.4.9 e versioni successive | symfony_l2 | Valkey |
+Per i progetti Cloud, configura il caching L2 tramite le variabili di distribuzione descritte in [Distribuisci variabili](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}.
 
-Per la configurazione locale, vedere [Configurazione cache L2](level-two-cache.md).
-
-Per i progetti Cloud, configura il caching L2 tramite le variabili di distribuzione descritte in [Distribuisci variabili](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}.
-
-#### Configurazione cache L2
-
-- Per i dettagli della configurazione di **[!DNL Adobe Commerce on-premises]**, vedere [Configurazione cache L2](level-two-cache.md).
-
-- Per **[!DNL Adobe Commerce on Cloud]**, configurare il caching L2 tramite la variabile di distribuzione appropriata anziché modificare direttamente `app/etc/env.php`. Consulta [Distribuire le variabili](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"} nella documentazione di _Adobe Commerce on Cloud_.
+- [Usa Redis per la cache predefinita](redis-pg-cache.md)
+- [Usa Valkey per la cache predefinita](valkey-pg-cache.md)
+- [Configurazione cache L2](level-two-cache.md)

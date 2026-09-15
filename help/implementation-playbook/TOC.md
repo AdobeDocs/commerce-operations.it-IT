@@ -3,20 +3,18 @@ user-guide-title: Playbook di implementazione
 user-guide-description: Scopri le strategie per la pianificazione e l’implementazione di un sito Adobe Commerce di successo.
 mini-toc-levels: 3
 nudge: true
-source-git-commit: 9343b1fb2832ea0865614e8fb58e5283a72c990d
+source-git-commit: d891254482ae9d0fa5b154f56de83a4a483feef7
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 14%
-
 ---
-
 
 # Playbook di implementazione {#implementation-playbook}
 
 - [Panoramica](overview.md)
 - Architettura e integrazioni {#architecture}
   - [Riferimento Enterprise](architecture/enterprise-blueprint.md)
-- Manutenzione e supporto {#maintenance}
+- Manutenzione e supporto {#maintenance-and-support}
   - [Panoramica](maintenance/overview.md)
   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Best practice {#best-practices}
@@ -49,7 +47,7 @@ ht-degree: 14%
     - [Blocchi di contenuto privato](best-practices/development/private-content-block-configuration.md)
     - [Distribuzione di contenuti statici](best-practices/development/static-content-deployment.md)
     - [Modifica delle tabelle di database](best-practices/development/modifying-core-and-third-party-tables.md)
-    - [Modifica del codice principale e di terze parti](best-practices/development/modifying-core-and-third-party-code.md)
+    - [Modifica del codice core e di terze parti](best-practices/development/modifying-core-and-third-party-code.md)
   - Launch {#launch}
     - [Panoramica](best-practices/launch/overview.md)
     - [Configurare crawler web](best-practices/launch/robots-txt.md)
@@ -69,4 +67,4 @@ ht-degree: 14%
     - [Elenco di controllo per l’aggiornamento](best-practices/maintenance/upgrade-checklist.md)
     - [Prerequisiti per l&#39;aggiornamento di MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Glossario](glossary.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
