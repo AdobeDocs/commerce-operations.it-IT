@@ -8,26 +8,34 @@ autotag-review: '2026-06-22T22:00:55.389Z'
 TQID: 'https://experienceleague.adobe.com/AjJ86dYGRVFuY1T73ct1Gpcf6iDbb4ewP8OiGX8otQs'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
+    internal-label: Security
+source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
 workflow-type: tm+mt
-source-wordcount: 1315
+source-wordcount: '1309'
 ht-degree: 0%
-
 ---
-
 
 # Configura Valkey per cache predefinita e di pagina
 
@@ -49,15 +57,15 @@ Commerce fornisce opzioni della riga di comando per configurare l’impostazione
 
 >[!TAB Cache Zend (2.4.8 e versioni precedenti)]
 
-- **Cache Zend (2.4.8 e versioni precedenti)** — Backend Valkey legacy per Commerce 2.4.8 e versioni precedenti:
-  - **Backend Valkey legacy** - Utilizza il percorso completo della classe (`Magento\Framework\Cache\Backend\Valkey`)
+- **Cache Zend (2.4.8 e versioni precedenti)** — Backend Valkey per Commerce 2.4.8 e versioni precedenti:
+  - **Back-end Valkey basato su Zend** - Utilizza il percorso completo della classe (`Magento\Framework\Cache\Backend\Valkey`)
   - **Chiavi di precaricamento** - Supporta il precaricamento delle chiavi della cache utilizzate di frequente
   - **Script Lua** — Lua per la raccolta di oggetti inattivi
   - **Compressione** - Supporta la compressione dei dati
 
 >[!TAB Cache Symfony (2.4.9+)]
 
-- **Cache Symfony (2.4.9+)** — A partire da Commerce 2.4.9, la cache Symfony fornisce un&#39;implementazione di caching moderna e conforme a PSR-6 per Valkey, con miglioramenti significativi delle prestazioni:
+- **Cache Symfony (2.4.9+)** — A partire da Commerce 2.4.9, la cache Symfony fornisce un&#39;implementazione di caching conforme a PSR-6 per Valkey con miglioramenti significativi delle prestazioni:
   - **Piping automatico di Valkey**: batch di più operazioni in singole richieste, riduzione della latenza
   - **TagAwareAdapter** PSR-6: invalidazione efficiente della cache basata su tag con operazioni atomiche
   - **Serializzazione ignorata**: la serializzazione binaria riduce la dimensione della voce della cache del 45% e migliora la velocità del 5-10%
@@ -279,7 +287,7 @@ Quando si utilizza la funzione di precaricamento con una cache L2, è necessario
 
 ### Generazione parallela
 
-A partire dalla versione di Commerce 2.4.0, Adobe ha introdotto l&#39;opzione `allow_parallel_generation` per gli utenti che desiderano eliminare l&#39;attesa dei blocchi. È disabilitato per impostazione predefinita e Adobe consiglia di disabilitarlo fino a quando non si dispone di configurazioni e/o blocchi eccessivi.
+Adobe Commerce fornisce l&#39;opzione `allow_parallel_generation` per gli utenti che desiderano eliminare l&#39;attesa dei blocchi. È disabilitato per impostazione predefinita e Adobe consiglia di disabilitarlo fino a quando non si dispone di configurazioni e/o blocchi eccessivi.
 
 **Per abilitare la generazione parallela**:
 

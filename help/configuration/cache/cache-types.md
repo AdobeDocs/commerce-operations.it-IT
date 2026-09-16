@@ -5,24 +5,30 @@ feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
 product_v2:
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 3652976a8db3d0bb19ff9cd06adb3a7736c89539
+    internal-label: Implementation
+source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: '471'
 ht-degree: 0%
-
 ---
-
 # Configurare tipi e front-end della cache
 
 Una cache front-end connette i tipi di cache di Commerce all&#39;archiviazione della cache. È possibile definire più front-end e assegnare tipi di cache specifici a ciascun front-end.
@@ -95,11 +101,22 @@ La configurazione `type` mappa un tipo di cache a un front-end:
 ],
 ```
 
-In questo esempio, Commerce assegna il tipo di cache `full_page` al front-end `page_cache`. Il front-end determina quale configurazione back-end memorizza quel tipo di cache.
+Dove:
+
+- `<frontend_type>`: tipo di cache front-end di basso livello. Specificare un nome di classe compatibile con `Zend_Cache_Core`.
+Se omesso, verrà utilizzato [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php).
+
+- `<frontend_option>`, `<frontend_option_value>` - Nome e valore delle opzioni passate dal framework Commerce come array associativo alla cache front-end durante la creazione.
+
+- `<backend_type>`: tipo di cache di back-end di basso livello. Puoi specificare:
+  - **Cache Symfony (2.4.9+, consigliata)**: nomi semplificati come `valkey` o `file`
+  - **Basato su Zend**: nome completo della classe compatibile con `Zend_Cache_Backend` che implementa `Zend_Cache_Backend_Interface`
+
+- `<backend_option>`, `<backend_option_value>`: nome e valore delle opzioni passate dal framework Commerce come array associativo alla cache back-end durante la creazione.
 
 >[!NOTE]
 >
->La chiave `full_page` rappresenta un tipo di cache dell&#39;applicazione Commerce. Il caching HTTP a pagina intera tramite Vernice o Fastly è un livello di caching separato. Consulta [Panoramica sulla memorizzazione in cache e opzioni di configurazione](caching-overview.md).
+>Per i formati dei valori back-end, ad esempio i nomi di classe basati su Zend e i nomi semplificati della cache di Symfony come `valkey` o `file`, vedere [Opzioni back-end della cache](cache-options.md).
 
 >[!MORELIKETHIS]
 >
