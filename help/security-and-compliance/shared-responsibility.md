@@ -2,13 +2,11 @@
 title: Modello operativo e sicurezza con responsabilità condivisa
 description: Scopri le responsabilità di sicurezza di ogni parte coinvolta nel progetto di infrastruttura cloud di Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3242'
 ht-degree: 0%
-
 ---
-
 # Responsabilità condivisa sicurezza e modello operativo
 
 Adobe Commerce sull’infrastruttura cloud è un’offerta PaaS (Platform-as-a-Service) che si basa su un modello operativo e di sicurezza con responsabilità condivisa. Adobe, l’esercente, il provider di servizi cloud e il provider di rete per la distribuzione di contenuti (CDN) condividono queste responsabilità. Ciascuna parte ha la responsabilità distinta di proteggere e gestire l’applicazione Adobe Commerce e il codice specifico del commerciante e le estensioni implementate sull’infrastruttura cloud.
@@ -31,14 +29,13 @@ I commercianti sono responsabili di quanto segue:
 * Garanzia di uno sviluppo sicuro delle applicazioni
 * Ottenimento della certificazione PCI se richiesto dal servizio di elaborazione dei pagamenti dell&#39;esercente
 * Reazione e risposta agli incidenti di sicurezza
-* Mantenere tutte le dipendenze di terze parti, i servizi Platform e le estensioni dei servizi Adobe Commerce su versioni attivamente supportate. Adobe non fornisce supporto o assistenza per la sicurezza delle distribuzioni che eseguono versioni di dipendenza non supportate. Per le versioni supportate, vedere [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=it) e la [Matrice di disponibilità del prodotto](/help/release/product-availability.md).
+* Mantenere tutte le dipendenze di terze parti, i servizi Platform e le estensioni dei servizi Adobe Commerce su versioni attivamente supportate. Adobe non fornisce supporto o assistenza per la sicurezza delle distribuzioni che eseguono versioni di dipendenza non supportate. Per le versioni supportate, vedere [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) e la [Matrice di disponibilità del prodotto](/help/release/product-availability.md).
 
 >[!NOTE]
 >
 >Vedi anche:
 >
 >* [Criteri del ciclo di vita del software](../release/lifecycle-policy.md): date di fine del supporto, supporto esteso e disposizioni transitorie per la sola protezione
->* [Criterio di applicazione dell&#39;aggiornamento della versione cloud](../release/version-upgrade-enforcement-policy.md) — date di applicazione e azioni richieste
 >* [Avviso di sicurezza e conformità](../release/security-enforcement-policy.md) — azioni richieste e scadenze per le versioni da 2.4.4 a 2.4.9 di Adobe Commerce on Cloud
 
 {{supported-versions-only}}
@@ -104,7 +101,7 @@ L’esercente è responsabile del rispetto delle best practice di sicurezza per 
   * Estensioni di Adobe Commerce Services
   * Tutte le estensioni di terze parti e le integrazioni personalizzate
 
-  Adobe non fornisce supporto per le distribuzioni che eseguono versioni non supportate. Per le versioni supportate, vedere [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=it) e la [Matrice di disponibilità del prodotto](/help/release/product-availability.md).
+  Adobe non fornisce supporto per le distribuzioni che eseguono versioni non supportate. Per le versioni supportate, vedere [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) e la [Matrice di disponibilità del prodotto](/help/release/product-availability.md).
 
 ## Responsabilità del fornitore di servizi cloud
 

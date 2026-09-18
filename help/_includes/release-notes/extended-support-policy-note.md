@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '86'
 ht-degree: 0%
-
 ---
 # Nota sui criteri di supporto esteso
 
@@ -16,4 +15,4 @@ ht-degree: 0%
 >Vedi anche:
 >
 >- [Criteri del ciclo di vita del software](/help/release/lifecycle-policy.md): date di fine del supporto, supporto esteso e disposizioni transitorie per la sola protezione
->- [Criterio di applicazione dell&#39;aggiornamento della versione cloud](/help/release/version-upgrade-enforcement-policy.md) — date di applicazione e azioni richieste
+>- [Azioni e scadenze necessarie per proteggere gli ambienti Commerce](/help/release/security-enforcement-policy.md): date di applicazione e azioni richieste
