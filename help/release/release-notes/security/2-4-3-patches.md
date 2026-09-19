@@ -2,14 +2,12 @@
 title: Note sulla versione per le patch di sicurezza di Adobe Commerce 2.4.3
 description: Scopri le correzioni di bug di sicurezza, i miglioramenti della sicurezza e altri aggiornamenti relativi alla sicurezza inclusi nelle versioni delle patch di sicurezza per Adobe Commerce 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 0%
-
 ---
-
 
 # Note sulla versione per le patch di sicurezza di Adobe Commerce 2.4.3
 
@@ -89,4 +87,4 @@ Questa versione include il seguente hotfix e tutti gli hotfix rilasciati per la 
 
 L&#39;espressione di origine non supportata `unsafe-inline` è stata rimossa dalla direttiva Content Security Policy `frame-ancestors`. [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

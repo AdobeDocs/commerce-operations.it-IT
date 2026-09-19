@@ -2,14 +2,12 @@
 title: Requisiti di sistema
 description: Scopri le dipendenze software e i requisiti di sistema per Adobe Commerce. Consulta Configurazioni testate per la compatibilità con l’ambiente di implementazione.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-last-update: 2026-08-11T00:00:00Z
-source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
+last-update: 2026-08-11
+source-git-commit: 0e218207eb48d6c93139bd05215f5804b21ee216
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 0%
-
 ---
-
 # Requisiti di sistema
 
 Le informazioni seguenti riepilogano le dipendenze software e i servizi testati per Adobe Commerce.
@@ -74,7 +72,7 @@ Nelle tabelle seguenti sono elencati i requisiti di sistema per le versioni di A
 >
 >Adobe Commerce 2.4.6 si trova in [supporto esteso](../release/lifecycle-policy.md#extended-support) fino al **30 agosto 2027**, seguito da un [periodo transitorio di sola sicurezza](../release/lifecycle-policy.md#security-only-transitional-period) fino al **31 maggio 2028**. Queste disposizioni sono disponibili solo per i clienti Adobe Commerce. Non estendono il supporto per dipendenze di terze parti come MySQL.
 >
->Se esegui Adobe Commerce su Cloud, devi eseguire l&#39;aggiornamento a una versione supportata o eseguire la migrazione a [!DNL Adobe Commerce as a Cloud Service] prima del **1 giugno 2028** [data di applicazione dell&#39;aggiornamento della versione](../release/version-upgrade-enforcement-policy.md). Per informazioni sulle date dell&#39;intero ciclo di vita, vedere la tabella [date di fine del supporto](../release/lifecycle-policy.md#end-of-support-dates).
+>Se esegui Adobe Commerce su Cloud, devi eseguire l&#39;aggiornamento a una versione supportata o eseguire la migrazione a [!DNL Adobe Commerce as a Cloud Service] prima del **1 giugno 2028** [requisiti e scadenze di sicurezza](../release/security-enforcement-policy.md). Per informazioni sulle date dell&#39;intero ciclo di vita, vedere la tabella [date di fine del supporto](../release/lifecycle-policy.md#end-of-support-dates).
 >
 >La tabella viene compressa per ridurre al minimo la lunghezza dell&#39;articolo. Seleziona l’intestazione per espanderla.
 

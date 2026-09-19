@@ -2,14 +2,12 @@
 title: Note sulla versione della patch di sicurezza di Adobe Commerce 2.4.5
 description: Scopri le correzioni di bug di sicurezza, i miglioramenti della sicurezza e altri aggiornamenti relativi alla sicurezza inclusi nelle versioni delle patch di sicurezza per Adobe Commerce 2.4.5.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2007'
 ht-degree: 0%
-
 ---
-
 
 # Note sulla versione per le patch di sicurezza di Adobe Commerce 2.4.5
 
@@ -285,4 +283,4 @@ Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe
 
 Una delle correzioni di bug di sicurezza includeva la creazione di una nuova impostazione di configurazione. L&#39;impostazione di configurazione [!UICONTROL **Richiedi conferma e-mail se l&#39;indirizzo e-mail è stato modificato**] consente agli amministratori di richiedere conferma e-mail quando un utente amministratore modifica il proprio indirizzo e-mail. <!-- AC-6292-->
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

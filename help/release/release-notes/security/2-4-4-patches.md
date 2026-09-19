@@ -2,14 +2,12 @@
 title: Note sulla versione della patch di sicurezza di Adobe Commerce 2.4.4
 description: Scopri le correzioni di bug di sicurezza, i miglioramenti della sicurezza e altri aggiornamenti relativi alla sicurezza inclusi nelle versioni delle patch di sicurezza per Adobe Commerce 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2160'
 ht-degree: 0%
-
 ---
-
 
 # Note sulla versione per le patch di sicurezza di Adobe Commerce 2.4.4
 
@@ -268,4 +266,4 @@ Miglioramenti di sicurezza per questa versione migliorano la conformità con le 
 
 **Problema**: i commercianti possono notare avvisi di downgrade della versione del pacchetto durante un aggiornamento da Adobe Commerce 2.4.4 a Adobe Commerce 2.4.4-p1. Questi messaggi possono essere ignorati. La discrepanza nelle versioni dei pacchetti deriva da anomalie durante la generazione dei pacchetti. Nessuna funzionalità del prodotto interessata. Per informazioni sugli scenari interessati e sulle soluzioni alternative, vedere l&#39;articolo della Knowledge Base [Pacchetti sottoposti a downgrade dopo l&#39;aggiornamento da 2.4.4 a 2.4.4-p1](https://support.magento.com/hc/en-us/articles/8214752983949).
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

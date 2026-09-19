@@ -3,14 +3,12 @@ title: Regole sul ciclo di vita del software
 description: Scopri le date chiave per la fine del supporto software per le versioni di Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
-
 ---
-
 
 # criteri del ciclo di vita Adobe Commerce
 
@@ -206,3 +204,5 @@ Contatta il team del tuo account Adobe per iniziare una valutazione della migraz
 Se non riesci a eseguire immediatamente la migrazione a [!DNL Adobe Commerce as a Cloud Service], puoi eseguire l&#39;aggiornamento all&#39;ultima versione di Adobe Commerce on Cloud attualmente supportata. In questo modo puoi passare a uno stack di infrastruttura moderno completamente supportato, preservando al contempo il modello di distribuzione Commerce on Cloud esistente.
 
 Si noti che questo percorso non elimina gli obblighi di aggiornamento futuri. I clienti con implementazioni di Adobe Commerce on Cloud devono continuare l’aggiornamento man mano che le righe della versione raggiungono le date di applicazione dell’aggiornamento della versione.
+
+<!-- Last updated from includes: 2026-09-17 13:05:40 -->

@@ -2,14 +2,12 @@
 title: Note sulla versione della patch di sicurezza di Adobe Commerce 2.4.8
 description: Scopri le correzioni di bug di sicurezza, i miglioramenti della sicurezza e altri aggiornamenti relativi alla sicurezza inclusi nelle versioni delle patch di sicurezza per Adobe Commerce 2.4.8.
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
-
 ---
-
 # Note sulla versione per le patch di sicurezza di Adobe Commerce 2.4.8
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
@@ -86,7 +84,7 @@ Questa versione include i seguenti elementi di rilievo:
 
 * Correzione per ACP2E-3874: la risposta REST API per i dettagli dell&#39;ordine ora contiene valori corretti per gli attributi `base_row_total` e `row_total` nel caso in cui siano stati ordinati più elementi uguali.
 
-* Correzione per AC-15446: è stato corretto un errore in `Magento\Framework\Mail\EmailMessage` in cui `getBodyText()` tentava di chiamare un metodo `getTextBody()` inesistente in `Symfony\Component\Mime\Message`, garantendo la compatibilità con Magento 2.4.8-p2 e `magento/framework` 103.0.8-p2.
+* Correzione per AC-15446: è stato corretto un errore in `Magento\Framework\Mail\EmailMessage` in cui `getBodyText()` tentava di chiamare un metodo `getTextBody()` inesistente su `Symfony\Component\Mime\Message`, garantendo la compatibilità con Magento 2.4.8-p2 e `magento/framework` 103.0.8-p2.
 
 {{oct-2025-backports}}
 
@@ -136,4 +134,4 @@ Le correzioni per CVE-2025-47110 e VULN-31547 sono disponibili anche come patch 
 
 >[!ENDSHADEBOX]
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->
