@@ -31,7 +31,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.5-p17 è una [versione di sicurezza del supporto esteso](../../lifecycle-policy.md#security-only-transitional-period) che fornisce correzioni di bug di sicurezza per le vulnerabilità identificate nelle versioni precedenti della versione 2.4.5.
 
-Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
+Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB26-49](https://helpx.adobe.com/it/security/products/magento/apsb26-49.html).
 
 {{b2b-patches}}
 
