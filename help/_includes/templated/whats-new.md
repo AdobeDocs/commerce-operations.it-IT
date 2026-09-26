@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
+source-git-commit: 076f76112159204c0f23d3ddfbb606e274c406eb
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1538'
 ht-degree: 1%
 ---
 # Nuovo modello
@@ -9,6 +9,50 @@ ht-degree: 1%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 18 settembre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stato aggiunto <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/monthly-isolated-security-patches">Criterio mensile per l'applicazione di patch di sicurezza isolate</a>, che spiega come Adobe Commerce distribuisce le correzioni CVE mirate e isolate il martedì della patch tra le versioni complete delle patch di sicurezza e come applicarle e verificarle.</p>
+</td>
+      <td>
+        Nuovo argomento
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 15 settembre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata corretta la guida alla configurazione del servizio <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis/Valkey</a> per chiarire che le variabili di distribuzione <code>VALKEY_BACKEND</code> e <code>REDIS_BACKEND</code> non determinano quale servizio cache viene effettivamente utilizzato da Adobe Commerce e che <code>VALKEY_USE_SLAVE_CONNECTION</code>/<code>REDIS_USE_SLAVE_CONNECTION</code> deve corrispondere al servizio effettivamente disponibile nell'ambiente.</p>
+</td>
+      <td>
+        Tecnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 8 settembre 2026
 
@@ -380,102 +424,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Nuovo argomento, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3174f84e0a8c64aaed50cc075a9287bc011778ef">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 27 luglio 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Aggiunta <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview">Panoramica: Strumento Patch di qualità (QPT) v1.1.82</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ddfb8e85d015b8ab675a3af56cf5d2bb72e535c4">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 23 luglio 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Aggiornamento di <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/system-requirements">Requisiti di sistema</a> con dettagli sul supporto della versione di MariaDB Cloud per Adobe Commerce 2.4.9 (12.3 consigliato, 11.8 supportato).</p>
-</td>
-      <td>
-        Tecnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eaf47339d87d296799367f699f9322c14e6ee780">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 22 luglio 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>L'argomento <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/system-requirements">Requisiti di sistema</a> è stato aggiornato con le versioni più recenti di Commerce on Cloud Service, incluso un aggiornamento di RabbitMQ 4.3 e la compatibilità confermata con MariaDB 12.3.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6607852ba3221a1120f3c88007c106ed9704dcec">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 21 luglio 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.81 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401">ACP2E-4401: Anteprima aggiornamento pianificato della home page con prodotti configurabili reindirizzati alla pagina manutenzione</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/41aac13f73ff0836f93b8ec30a709bd89fa34a94">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.81 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468">ACP2E-4468: gli utenti amministratori con ambito sito Web non possono salvare blocchi dinamici in Page Builder</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f5fbe594284c05aaa9b2461e3628a3444229efb6">commit</a></td>
     </tr>
   </tbody>
 </table>
