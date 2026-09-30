@@ -2,14 +2,12 @@
 title: Esempio di utilizzo di una configurazione condivisa
 description: Vedi un esempio di come modificare le impostazioni in un sistema di sviluppo con un file di configurazione condiviso.
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
-
 ---
-
 # Esempio di utilizzo di una configurazione condivisa
 
 In questo esempio viene illustrato come modificare le impostazioni seguenti nel sistema di sviluppo, aggiornare il file di configurazione condiviso `config.php` nel sistema di build e implementare le stesse impostazioni nel sistema di produzione:
@@ -87,8 +85,8 @@ L’ultimo passaggio del processo consiste nell’aggiornare il sistema di produ
 
    ![Opzioni di configurazione non modificabili nell&#39;amministratore](../../assets/configuration/split-deploy-not-editable.png)
 
->[!INFO]
->
->Per modificare un&#39;impostazione bloccata nell&#39;amministratore, utilizzare il comando [`magento config:set --lock`](../cli/set-configuration-values.md).
+   >[!INFO]
+   >
+   >Per modificare un&#39;impostazione bloccata nell&#39;amministratore, utilizzare il comando [`magento config:set --lock`](../cli/set-configuration-values.md).
 
 <!-- Last updated from includes: 2026-04-17 13:49:36 -->
