@@ -6,11 +6,9 @@ badge: label="Contributo di Atish Goswami" type="Informative" url="https://githu
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '198'
 ht-degree: 0%
-
 ---
-
 # Configurare il profiler del database
 
 Il profiler del database di Commerce visualizza tutte le query implementate in una pagina, incluso il tempo per ogni query e i parametri applicati.
