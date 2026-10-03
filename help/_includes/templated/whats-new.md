@@ -1,7 +1,7 @@
 ---
-source-git-commit: 076f76112159204c0f23d3ddfbb606e274c406eb
+source-git-commit: 206f502c41b53c822cca42957d7705184f18c0ab
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1282'
 ht-degree: 1%
 ---
 # Nuovo modello
@@ -9,6 +9,28 @@ ht-degree: 1%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 2 ottobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Aggiunta <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview">Panoramica: Strumento Patch di qualità (QPT) v1.1.83</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/266c8529352dac198568dca4676aebd88ce50fc1">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 18 settembre 2026
 
@@ -342,88 +364,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Tecnico
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/50fb71aa968abf1302e86ffeb3d3b3a66b3c33d5">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 31 luglio 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.82 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547">ACP2E-4547: l'amministratore non può aggiungere un prodotto di catalogo predefinito a un preventivo quando non è assegnato al catalogo condiviso dell'utente</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6d0313c01e979d3d4bd3e781e2f0e9c336bbd8c5">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 30 luglio 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Aggiunto <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/security-enforcement-policy">Criterio di sicurezza: azioni e scadenze richieste</a> per i clienti Adobe Commerce on Cloud per spiegare requisiti, tempistiche e istruzioni per l'aggiornamento delle distribuzioni Adobe Commerce on Cloud che eseguono versioni non supportate o dipendenze software di terze parti.</p>
-</td>
-      <td>
-        Nuovo argomento
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b7649aae1f8cab020c1081db2b2363bca22adfed">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 28 luglio 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.82 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805">ACP2E-4805: Le richieste di pagamento rallentano per i prodotti configurabili quando il primo figlio vendibile viene visualizzato più avanti nell'elenco</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1b5fb4826f6599d7b7609dedfeb545f29454ba4d">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.82 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748">ACP2E-4748: la scadenza dei punti premio viene eseguita lentamente sugli store con una cronologia dei punti premio di grandi dimensioni</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/30fe149f9743ceca7f40374246b4fc9b9503c590">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.82 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875">ACP2E-4875: gli utenti amministratori si sono disconnessi all'apertura di account cliente con rubriche di grandi dimensioni</a>.</p>
-</td>
-      <td>
-        Nuovo argomento, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3174f84e0a8c64aaed50cc075a9287bc011778ef">commit</a></td>
     </tr>
   </tbody>
 </table>

@@ -4,13 +4,11 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: 9c17eea494812648e488f181d025e0eb78eda0ff
 workflow-type: tm+mt
-source-wordcount: '10695'
+source-wordcount: '10699'
 ht-degree: 0%
-
 ---
-
 
 # Strumenti {#tools}
 
@@ -1060,6 +1058,8 @@ ht-degree: 0%
       - [ACP2E-4805: le richieste di pagamento rallentano per i prodotti configurabili quando il primo bambino vendibile viene visualizzato più avanti nell’elenco](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
       - [ACP2E-4748: la scadenza dei punti premio viene eseguita lentamente nei negozi con una grande cronologia dei punti premio](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
       - [ACP2E-4875: gli utenti amministratori si disconnettono quando aprono account cliente con grandi rubriche](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
+    - v1.1.83 {#v1-1-83}
+      - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
   - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Riferimento per gli strumenti della riga di comando {#cli-reference}
   - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
