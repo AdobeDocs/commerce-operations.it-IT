@@ -1,17 +1,15 @@
 ---
 title: 'Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.53'
-description: Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in  [!DNL Quality Patches Tool] (QPT) v1.1.53.
+description: Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in [!DNL Quality Patches Tool] (QPT) v1.1.53.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 4e7c8d45-dc0c-4182-8cd0-727b28294d58
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '243'
 ht-degree: 0%
-
 ---
-
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.53
 
 Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in [!DNL Quality Patches Tool] (QPT) v1.1.53.
