@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 6fedf98a6936fe842230003e0c2d52598bcf999d
+source-git-commit: 58221418f5aca814cda2d72a1cd83099bbb53a0c
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '519'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -22,7 +22,7 @@ QPT v1.1.83 include le seguenti patch:
 1. **ACP2E-4838**: è stato risolto il problema che impediva a un utente amministratore con autorizzazioni limitate di eliminare clienti dalla griglia Clienti.
 1. **ACP2E-4877**: è stato risolto il problema che impediva la modifica degli ordini effettuati con **[!UICONTROL Payment on Account]** in Admin mentre si trovava nello stato *Pending*.
 1. **ACP2E-4908**: è stato risolto il problema che causava un eccessivo utilizzo di memoria da parte di cataloghi di grandi dimensioni in Redis o Valkey, poiché venivano create voci cache di layout separate per ogni prodotto in ogni visualizzazione dello store.
-1. **AC-12854**: è stato corretto il problema che si verificava quando riordinando un ordine nell&#39;amministratore si creava un nuovo numero di ordine con un suffisso *-1* invece di assegnare il successivo numero di ordine sequenziale.
+1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**: è stato corretto il problema che si verificava quando riordinando un ordine nell&#39;amministratore si creava un nuovo numero di ordine con un suffisso `-1` invece di assegnare il numero di ordine sequenziale successivo.
 1. **ACP2E-4977**: è stato risolto il problema per cui i totali complessivi delle fatture e delle note di accredito per i prodotti configurabili non includono **[!UICONTROL Fixed Product Tax]** (FPT), con conseguente totale inferiore al totale dell&#39;ordine.
 1. **AC-16530**: è stato risolto il problema che impediva al carrello di riflettere in modo coerente gli aggiornamenti pianificati alle regole dei prezzi del catalogo.
 1. **AC-11389**: risolve il problema relativo al calcolo errato di sconti, imposte e totali ordini in alcuni scenari di arrotondamento.
