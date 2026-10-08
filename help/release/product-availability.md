@@ -2,8 +2,8 @@
 title: Disponibilità del prodotto
 description: Scopri le funzioni di Adobe Commerce attualmente supportate e verificane la compatibilità con specifiche versioni di Adobe Commerce.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-last-update: 2026-09-29
-source-git-commit: 13db44c2d05cb8f7d0a25ca51c649a2478d61731
+last-update: 2026-10-07
+source-git-commit: 7fd542f814c8620f332339b7c08076613d116dce
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -30,7 +30,7 @@ La tabella seguente mostra il supporto delle versioni per ogni estensione rispet
 
 ## Servizi Commerce
 
-[I servizi Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=it) sono una suite di funzionalità ospitate da Adobe che forniscono funzionalità affidabili e tempi di risposta rapidi, insieme all&#39;istanza Commerce.
+[I servizi Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) sono una suite di funzionalità ospitate da Adobe che forniscono funzionalità affidabili e tempi di risposta rapidi, insieme all&#39;istanza Commerce.
 
 Si consiglia ai commercianti di utilizzare la versione più recente di un servizio per garantire la massima stabilità e funzionalità. La documentazione descrive la versione attualmente rilasciata.
 
