@@ -52,4 +52,4 @@ Commercianti e partner che desiderano ottimizzare le prestazioni del proprio sit
 
 Guarda questo video per saperne di più su [!DNL Observation for Adobe Commerce]:
 
->[!VIDEO](https://video.tv.adobe.com/v/344444?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3410748?captions=ita&quality=12)
