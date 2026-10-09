@@ -86,7 +86,7 @@ L&#39;aggregato di tutti gli ambienti e i nodi viene visualizzato nel frame **[!
 
 ![Utilizzo di CPU](../../assets/tools/cpu-usage.jpg)
 
-Se il frame **[!UICONTROL CPU Usage]** è vuoto, significa che l&#39;applicazione di infrastruttura di [!DNL New Relic] non è abilitata. Se il tuo sito è su Starter, queste informazioni non vengono visualizzate. Se il tuo sito è su Pro, apri un [ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) per abilitare [!DNL New Relic Infrastructure] per il tuo sito.
+Se il frame **[!UICONTROL CPU Usage]** è vuoto, significa che l&#39;applicazione di infrastruttura di [!DNL New Relic] non è abilitata. Se il tuo sito è su Starter, queste informazioni non vengono visualizzate. Se il tuo sito è su Pro, apri un [ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) per abilitare [!DNL New Relic Infrastructure] per il tuo sito.
 
 ## [!UICONTROL Average Response Time]
 

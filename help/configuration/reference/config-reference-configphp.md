@@ -43,7 +43,7 @@ Contiene un array di moduli e i relativi stati. Se il modulo è abilitato, il va
 ]
 ```
 
-Ulteriori informazioni sui [moduli](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
+Ulteriori informazioni sui [moduli](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=it).
 
 ## ambiti
 
@@ -91,7 +91,7 @@ Contiene un array di valori di configurazione dell&#39;ambito. Ha i seguenti sot
 ]
 ```
 
-Ulteriori informazioni su [ambiti Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
+Ulteriori informazioni su [ambiti Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it#scope-settings).
 
 ## sistema
 

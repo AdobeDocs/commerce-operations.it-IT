@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43824: azione di annullamento dell''ordine non riuscita. Errore: "L''elemento non è stato annullato"'
-description: 'La patch MDVA-43824 risolve il problema relativo all''errore di annullamento dell''ordine: *Non è stato annullato l''elemento*. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13. L''ID della patch è MDVA-43824. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.'
+description: 'La patch MDVA-43824 risolve il problema relativo all''errore di annullamento dell''ordine: *Non è stato annullato l''elemento*. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13. L''ID della patch è MDVA-43824. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.'
 feature: Orders
 role: Admin
 exl-id: 8c2d15a0-2f53-4583-bdf2-86746f61160f
@@ -80,4 +80,4 @@ Per ulteriori informazioni sullo strumento Patch di qualità, vedere:
 * [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando lo strumento Patch di qualità](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!DNL Quality Patches Tool].
 
-Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida di [!DNL Quality Patches Tool].
+Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella guida di [!DNL Quality Patches Tool].

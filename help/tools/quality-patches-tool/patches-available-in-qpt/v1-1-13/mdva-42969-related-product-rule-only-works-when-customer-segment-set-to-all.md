@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-42969: la regola di prodotto correlata funziona solo quando il segmento del cliente è impostato su tutti'
-description: La patch MDVA-42969 risolve il problema relativo al funzionamento della regola prodotto correlata solo quando il segmento cliente è impostato su all. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13. L'ID della patch è MDVA-42969. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-42969 risolve il problema relativo al funzionamento della regola prodotto correlata solo quando il segmento cliente è impostato su all. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13. L'ID della patch è MDVA-42969. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Customer Service, Marketing Tools, Products
 role: Admin
 exl-id: 121da040-4541-468a-aeaf-cf98094e1918

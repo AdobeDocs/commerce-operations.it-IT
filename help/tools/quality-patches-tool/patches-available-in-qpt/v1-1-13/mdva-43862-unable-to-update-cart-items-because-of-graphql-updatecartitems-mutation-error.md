@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43862: impossibile aggiornare gli elementi del carrello a causa di un errore di mutazione di GraphQL UpdateCartItems'
-description: La patch MDVA-43862 risolve il problema che impedisce al cliente di aggiornare gli elementi del carrello a causa di un errore di mutazione di GraphQL UpdateCartItems. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13. L'ID della patch è MDVA-43862. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-43862 risolve il problema che impedisce al cliente di aggiornare gli elementi del carrello a causa di un errore di mutazione di GraphQL UpdateCartItems. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13. L'ID della patch è MDVA-43862. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: GraphQL, Orders, Shopping Cart
 role: Admin
 exl-id: d8a2579f-58f5-4407-8006-d58794a84b1f

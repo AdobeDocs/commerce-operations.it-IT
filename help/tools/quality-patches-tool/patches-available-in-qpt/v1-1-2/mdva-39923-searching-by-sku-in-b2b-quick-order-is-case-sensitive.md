@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-39923: la funzionalità di ricerca per SKU nella gestione degli ordini rapidi B2B distingue tra maiuscole e minuscole'
-description: La patch MDVA-39923 risolve il problema relativo all'errore che si verifica quando i clienti cercano l'ordine in base allo SKU nella funzionalità di ordinamento rapido B2B utilizzando un caso diverso da quello con cui viene salvato il nome. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. L'ID della patch è MDVA-39923. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
+description: La patch MDVA-39923 risolve il problema relativo all'errore che si verifica quando i clienti cercano l'ordine in base allo SKU nella funzionalità di ordinamento rapido B2B utilizzando un caso diverso da quello con cui viene salvato il nome. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. L'ID della patch è MDVA-39923. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: B2B, Catalog Management, Orders, Search
 role: Admin
 exl-id: 9bed5615-b398-42f5-8313-ae2acca59155

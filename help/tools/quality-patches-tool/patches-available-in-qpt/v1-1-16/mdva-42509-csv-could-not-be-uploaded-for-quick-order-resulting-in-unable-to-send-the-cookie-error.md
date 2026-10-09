@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-42509: impossibile caricare il file CSV per l’ordine rapido. Errore "Impossibile inviare il cookie"'
-description: La patch MDVA-42509 risolve il problema che impediva il caricamento di un file CSV per l'ordine rapido, causando l'errore *Impossibile inviare il cookie*. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.16. L'ID della patch è MDVA-42509. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-42509 risolve il problema che impediva il caricamento di un file CSV per l'ordine rapido, causando l'errore *Impossibile inviare il cookie*. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.16. L'ID della patch è MDVA-42509. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: B2B, Orders
 role: Admin
 exl-id: 6319931b-9cf1-4004-b302-737863c53ff8

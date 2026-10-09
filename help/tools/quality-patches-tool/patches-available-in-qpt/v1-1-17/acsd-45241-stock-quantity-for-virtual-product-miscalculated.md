@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-45241: calcolo errato della quantità di scorte del prodotto virtuale'
-description: La patch ACSD-45241 risolve il problema relativo al calcolo errato della quantità di scorte del prodotto virtuale dopo la creazione di una nota di credito. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.17. L’ID della patch è ACSD-45241. Il problema è stato risolto in Adobe Commerce 2.4.4.
+description: La patch ACSD-45241 risolve il problema relativo al calcolo errato della quantità di scorte del prodotto virtuale dopo la creazione di una nota di credito. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.17. L’ID della patch è ACSD-45241. Il problema è stato risolto in Adobe Commerce 2.4.4.
 feature: Orders, Products
 role: Admin
 exl-id: 447a84f0-aab4-4bb1-9f06-c056c006cd69

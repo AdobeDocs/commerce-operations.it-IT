@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-34948: rallentamento del sito web'
-description: La patch di MDVA-34948 Adobe Commerce risolve il problema del rallentamento del sito Web. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1. L'ID della patch è MDVA-34948. Il problema è stato risolto nella versione 2.4.1 di Adobe Commerce.
+description: La patch di MDVA-34948 Adobe Commerce risolve il problema del rallentamento del sito Web. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1. L'ID della patch è MDVA-34948. Il problema è stato risolto nella versione 2.4.1 di Adobe Commerce.
 feature: Observability, Configuration
 role: Admin
 exl-id: 3c2a2d44-7d60-42da-a0a3-785fb61d571e
@@ -67,7 +67,7 @@ Più query di `GET_LOCK` si bloccano per un massimo di 10 secondi ciascuna.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

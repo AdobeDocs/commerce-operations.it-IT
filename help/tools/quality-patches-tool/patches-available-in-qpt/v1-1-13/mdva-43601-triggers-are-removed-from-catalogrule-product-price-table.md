@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43601: i trigger vengono rimossi dalla tabella "catalogrule_product_price" dopo la reindicizzazione completa'
-description: La patch MDVA-43601 risolve il problema in cui i trigger vengono rimossi dalla tabella "catalogrule_product_price" dopo una reindicizzazione completa di "catalogrule_rule" o "catalogrule_product". Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13. L'ID della patch è MDVA-43601. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-43601 risolve il problema in cui i trigger vengono rimossi dalla tabella "catalogrule_product_price" dopo una reindicizzazione completa di "catalogrule_rule" o "catalogrule_product". Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13. L'ID della patch è MDVA-43601. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Catalog Management, Orders, Products
 role: Admin
 exl-id: b9580806-ac35-4c86-8eee-c9f16d654171

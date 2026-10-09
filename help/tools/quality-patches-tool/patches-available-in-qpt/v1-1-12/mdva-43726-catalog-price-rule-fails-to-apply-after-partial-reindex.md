@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43726: la regola del prezzo di catalogo non viene applicata dopo la reindicizzazione parziale'
-description: La patch MDVA-43726 risolve il problema che impedisce l'applicazione della regola del prezzo di catalogo basata sulla corrispondenza degli attributi a livello di archivio dopo la reindicizzazione parziale. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-43726. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-43726 risolve il problema che impedisce l'applicazione della regola del prezzo di catalogo basata sulla corrispondenza degli attributi a livello di archivio dopo la reindicizzazione parziale. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-43726. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Catalog Management, Categories, Orders, Price Rules
 role: Admin
 exl-id: db536749-eb89-4bb5-9c69-f448f74497b8

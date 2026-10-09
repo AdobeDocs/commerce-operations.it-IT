@@ -2,7 +2,7 @@
 title: Installare Apache per le distribuzioni locali
 description: Scopri come installare e configurare Apache per le distribuzioni Adobe Commerce on-premise. Abilita i moduli richiesti, le riscritture e le impostazioni ".htaccess".
 feature: Install, Configuration
-badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
+badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047

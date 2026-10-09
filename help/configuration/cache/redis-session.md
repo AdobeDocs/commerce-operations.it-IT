@@ -3,7 +3,7 @@ title: Configurare Redis per l’archiviazione della sessione
 description: Scopri come configurare Redis per l’archiviazione delle sessioni in Adobe Commerce. Scopri la configurazione CLI, i parametri di sessione e le tecniche di verifica della connessione.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
 autotag-review: '2026-06-22T21:56:59.687Z'
 TQID: 'https://experienceleague.adobe.com/deiikp11GlXtMJFkhT7DhgguCYFkplQgr2fYm8MMN7I'
 product_v2:

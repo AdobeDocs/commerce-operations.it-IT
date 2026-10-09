@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-42790: gli attributi del prezzo del prodotto non possono essere aggiornati per siti Web specifici tramite API REST'
-description: La patch MDVA-42790 risolve il problema che impediva agli utenti di aggiornare gli attributi del prezzo del prodotto per siti web specifici tramite API REST. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11. L'ID della patch è MDVA-42790. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-42790 risolve il problema che impediva agli utenti di aggiornare gli attributi del prezzo del prodotto per siti web specifici tramite API REST. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11. L'ID della patch è MDVA-42790. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: REST, Attributes, Orders, Products
 role: Admin
 exl-id: bb8dc764-d2d5-4e00-884a-2b4c1a567f58
@@ -93,7 +93,7 @@ Il prezzo speciale non viene aggiornato per il prodotto nel pacchetto quando il 
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

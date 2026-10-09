@@ -54,7 +54,7 @@ La richiesta [!DNL GraphQL] non restituisce [!UICONTROL Requisition Lists].
 <u>Passaggi da riprodurre</u>:
 
 1. Vai a **Store** > **Impostazioni** > **Configurazione** > **Generale** > **Caratteristiche B2B** e abilita **[!UICONTROL Requisition List]**.
-1. Accedi come cliente e aggiungi un prodotto a [[!UICONTROL Requisition List]](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
+1. Accedi come cliente e aggiungi un prodotto a [[!UICONTROL Requisition List]](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
 1. Crea un [[!UICONTROL Customer Token]](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/).
 
    <pre>

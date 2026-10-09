@@ -3,7 +3,7 @@ title: Configurare Redis per Default e Page Cache
 description: Scopri come configurare Redis come backend predefinito e cache delle pagine per Adobe Commerce. Scopri i comandi CLI, le impostazioni env.php e la verifica della connessione.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
 autotag-review: '2026-06-22T21:55:53.227Z'
 TQID: 'https://experienceleague.adobe.com/2KjWE19ud32PUdvJQWNWkK338ysaa5vt0mA4EyyP66I'
 product_v2:

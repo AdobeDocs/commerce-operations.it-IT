@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-45255: pagina del report Eccezione per l''utente amministratore con restrizioni scorte limitate'
-description: La patch ACSD-45255 risolve il problema che causa un’eccezione nella pagina Report scorte ridotte per un utente amministratore con restrizioni. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18. L’ID della patch è ACSD-45255. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
+description: La patch ACSD-45255 risolve il problema che causa un’eccezione nella pagina Report scorte ridotte per un utente amministratore con restrizioni. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18. L’ID della patch è ACSD-45255. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: bf7e0893-e4a7-4184-a223-02ceef7a30d9
@@ -77,7 +77,7 @@ TypeError: Argument 1 passed to Magento\InventoryLowQuantityNotification\Model\R
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

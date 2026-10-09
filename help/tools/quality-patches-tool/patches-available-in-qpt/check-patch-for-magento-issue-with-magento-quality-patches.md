@@ -68,9 +68,9 @@ Per informazioni dettagliate su come installare e utilizzare il QPT per l&#39;ap
 
 ### Come installare e utilizzare QPT per Adobe Commerce sull’infrastruttura cloud
 
-Consulta [Cloud for Adobe Commerce > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella documentazione per gli sviluppatori per informazioni dettagliate su come installare e utilizzare QPT per applicare e ripristinare le patch su Adobe Commerce nell&#39;infrastruttura cloud.
+Consulta [Cloud for Adobe Commerce > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella documentazione per gli sviluppatori per informazioni dettagliate su come installare e utilizzare QPT per applicare e ripristinare le patch su Adobe Commerce nell&#39;infrastruttura cloud.
 
 ## Lettura correlata
 
 * [Note sulla versione dello strumento Patch di qualità](/help/tools/quality-patches-tool/release-notes.md) nella documentazione per gli sviluppatori.
-* [Applicare le patch del compositore fornite da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) nella Knowledge Base di supporto.
+* [Applicare le patch del compositore fornite da Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) nella Knowledge Base di supporto.

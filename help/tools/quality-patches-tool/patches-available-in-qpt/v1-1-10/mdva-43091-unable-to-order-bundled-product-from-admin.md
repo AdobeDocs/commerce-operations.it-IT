@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43091: impossibile ordinare il prodotto in bundle dall''amministratore'
-description: La patch MDVA-43091 risolve il problema che impediva agli utenti di ordinare il prodotto in bundle dall'amministratore Commerce. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10. L'ID della patch è MDVA-43091. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
+description: La patch MDVA-43091 risolve il problema che impediva agli utenti di ordinare il prodotto in bundle dall'amministratore Commerce. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10. L'ID della patch è MDVA-43091. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: Admin Workspace, Orders, Products
 role: Admin
 exl-id: d2812f97-107c-4db9-93cc-7004344fcc95
@@ -74,7 +74,7 @@ L&#39;utente amministratore riceve il seguente errore: *Impossibile utilizzare l
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

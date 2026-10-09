@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43102: quantità di vendita non aggiornata correttamente'
-description: La patch MDVA-43102 risolve il problema che causa l'aggiornamento non corretto della quantità vendibile quando viene effettuato un rimborso tramite API REST. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14. L'ID della patch è MDVA-43102. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-43102 risolve il problema che causa l'aggiornamento non corretto della quantità vendibile quando viene effettuato un rimborso tramite API REST. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14. L'ID della patch è MDVA-43102. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Variables
 role: Admin
 exl-id: 6a10f586-bbde-4252-9b8e-9b2b712f0fb3

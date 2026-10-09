@@ -54,7 +54,7 @@ Per ulteriori informazioni, vedere l&#39;immagine seguente:
 
 Adobe notifica ai clienti le nuove versioni delle patch tramite i seguenti canali:
 
-- [Bollettini sulla sicurezza e avvisi di Adobe](https://helpx.adobe.com/security/security-bulletin.html#magento)
+- [Bollettini sulla sicurezza e avvisi di Adobe](https://helpx.adobe.com/it/security/security-bulletin.html#magento)
 - E-mail
 - Avvisi interni al prodotto
 

@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-42046: valore non corretto assegnato per l''attributo di prodotto'
-description: La patch di MDVA-42046 risolve il problema relativo all'assegnazione di un valore non corretto per l'attributo product durante l'aggiornamento di un prodotto con un campo di immissione data. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13. L'ID della patch è MDVA-42046. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch di MDVA-42046 risolve il problema relativo all'assegnazione di un valore non corretto per l'attributo product durante l'aggiornamento di un prodotto con un campo di immissione data. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13. L'ID della patch è MDVA-42046. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Attributes, Products
 role: Admin
 exl-id: ff5903ff-70b3-4274-a8a1-450c2fde9750
@@ -71,7 +71,7 @@ Sia &quot;Imposta prodotto come nuovo da data&quot; che &quot;Imposta prodotto c
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

@@ -3,7 +3,7 @@ title: Configurare nginx per il caching di vernice
 description: Scopri come configurare il server web per l’utilizzo della memorizzazione in cache di Adobe Commerce. Scopri i requisiti di configurazione e configurazione delle porte.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
 autotag-review: '2026-06-22T21:49:41.837Z'
 TQID: 'https://experienceleague.adobe.com/0vOg86gRkST8CZGhdIESzhld63HQ5IUlO4go-Hgw9Xs'
 product_v2:

@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-44703: i totali degli ordini nel rapporto Ordini non vengono calcolati correttamente'
-description: La patch MDVA-44703 risolve il problema relativo al calcolo errato dei totali degli ordini nel rapporto Ordini per l'utente amministratore con restrizioni. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.16. L'ID della patch è MDVA-44703. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
+description: La patch MDVA-44703 risolve il problema relativo al calcolo errato dei totali degli ordini nel rapporto Ordini per l'utente amministratore con restrizioni. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.16. L'ID della patch è MDVA-44703. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 feature: Orders
 role: Admin
 exl-id: bdd38ba6-f282-4026-8f65-b76543859123

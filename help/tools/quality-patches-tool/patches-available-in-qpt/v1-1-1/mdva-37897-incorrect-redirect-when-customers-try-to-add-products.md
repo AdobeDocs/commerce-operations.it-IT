@@ -64,7 +64,7 @@ Ti reindirizzano alla pagina dell’elenco dei prodotti.
 Per applicare singole patch, utilizzare i collegamenti seguenti a seconda del tipo di distribuzione:
 
 * Adobe Commerce on-premise: [Guida all&#39;aggiornamento software > Applicazione di patch](/help/tools/quality-patches-tool/usage.md) nella documentazione per gli sviluppatori.
-* Adobe Commerce sulla nostra infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella documentazione per gli sviluppatori.
+* Adobe Commerce sulla nostra infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella documentazione per gli sviluppatori.
 
 ## Lettura correlata
 
@@ -73,4 +73,4 @@ Per ulteriori informazioni sulle patch di qualità per Adobe Commerce, consulta:
 * [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando lo strumento Patch di qualità](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!DNL Quality Patches Tool].
 
-Per informazioni sulle altre patch disponibili in QPT, consulta la sezione [Patch disponibili in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
+Per informazioni sulle altre patch disponibili in QPT, consulta la sezione [Patch disponibili in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it).

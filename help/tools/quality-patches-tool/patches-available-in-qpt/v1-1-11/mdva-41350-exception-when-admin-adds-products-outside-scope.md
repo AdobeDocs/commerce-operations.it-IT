@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41350: eccezione quando l''amministratore aggiunge prodotti al di fuori del proprio accesso'
-description: La patch di MDVA-41350 risolve il problema che causa un errore di eccezione anziché una notifica di accesso limitato quando un utente amministratore aggiunge un prodotto nell'ordine tramite SKU che non è accessibile. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11. L'ID della patch è MDVA-41350. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch di MDVA-41350 risolve il problema che causa un errore di eccezione anziché una notifica di accesso limitato quando un utente amministratore aggiunge un prodotto nell'ordine tramite SKU che non è accessibile. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11. L'ID della patch è MDVA-41350. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Admin Workspace, Products
 role: Admin
 exl-id: 4dc5ee5c-bd93-42e1-9c63-93ffb8e5f21c
