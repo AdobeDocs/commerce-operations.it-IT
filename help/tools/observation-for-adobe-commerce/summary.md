@@ -1,15 +1,29 @@
 ---
 title: Scheda [!UICONTROL Summary]
-description: Scopri la scheda [!UICONTROL Summary] di [!DNL Observation for Adobe Commerce].
+description: Informazioni sulla scheda [!UICONTROL Summary] di [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2640'
 ht-degree: 0%
-
 ---
-
 # Scheda [!UICONTROL Summary]
 
 La scheda [!UICONTROL Summary] di [!DNL Observation for Adobe Commerce] ha lo scopo di visualizzare rapidamente alcuni dei problemi riscontrati da Sites per aiutarti a risolvere automaticamente o identificare potenziali cause principali dei problemi del sito. Le schede aggiuntive forniscono informazioni più approfondite sui servizi dei componenti, sul database, sull&#39;infrastruttura e sugli stati dei processi.
@@ -60,7 +74,7 @@ Nel frame **[!UICONTROL Swap memory free in bytes]** viene visualizzata, per nod
 
 ![Percentuale CPU per host](../../assets/tools/cpu-percent-by-host.jpg)
 
-L&#39;aggregato di tutti gli ambienti e i nodi viene visualizzato nel frame **[!UICONTROL CPU % by host]**. Devi deselezionare gli ambienti non di produzione. Inoltre, tieni presente tutte le istanze in cui non sono presenti tutti i nodi per l’ambiente di produzione. Per ulteriori suggerimenti sull&#39;utilizzo intensivo di CPU, fare riferimento a [Risoluzione dei problemi relativi alle prestazioni con New Relic su Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=it).
+L&#39;aggregato di tutti gli ambienti e i nodi viene visualizzato nel frame **[!UICONTROL CPU % by host]**. Devi deselezionare gli ambienti non di produzione. Inoltre, tieni presente tutte le istanze in cui non sono presenti tutti i nodi per l’ambiente di produzione. Per ulteriori suggerimenti sull&#39;utilizzo intensivo di CPU, fare riferimento a [Risoluzione dei problemi relativi alle prestazioni con New Relic su Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -383,7 +397,7 @@ Il frame **[!UICONTROL Order transactions (default?)]** cerca le transazioni `re
 * &#39;%all shards failed%&#39; come &#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39; come &#39;no_alive_nodes&#39;
 * &#39;%PHP Errore irreversibile: errore non rilevato: parametri errati per Elasticsearch%&#39; come &#39;error_param&#39;
-* &#39;%È possibile risolvere il problema aggiornando il servizio Elasticsearch nell&#39;infrastruttura Magento Cloud alla versione%&#39; come &#39;ver_err&#39;
+* &quot;%È possibile risolvere il problema aggiornando il servizio Elasticsearch nell’infrastruttura cloud di Magento alla versione%&quot; come &quot;ver_err&quot;
 * Lo stato di integrità del cluster &#39;%cluster è cambiato da \[GIALLO\] a \[ROSSO\] (motivo:%&#39; come &#39;giallo_rosso&#39;
 * &#39;%Nessuno spazio disponibile nel dispositivo%&#39; come &#39;no_space&#39;
 * &#39;% Impossibile eseguire &lbrack;SearchRequest&lbrace;searchType=%&#39; come &#39;failed_query&#39;

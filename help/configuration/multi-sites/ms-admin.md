@@ -2,13 +2,22 @@
 title: Configurare più siti web, store e visualizzazioni dello store in Admin
 description: Configura altri siti web, store e visualizzazioni dello store in Commerce Admin.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
-
 ---
-
 # Configurare più visualizzazioni in Amministrazione
 
 Questa attività richiede di creare una categoria principale (e categorie aggiuntive, se desiderato) per ogni archivio. Le attività descritte in questo argomento consentono di impostare più archivi. Per ulteriori informazioni, vedere le risorse seguenti nella Guida utente di Commerce:

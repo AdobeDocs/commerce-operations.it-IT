@@ -3,13 +3,27 @@ title: File di configurazione per la distribuzione
 description: Scopri come funzionano i file di configurazione per l’implementazione dell’applicazione Adobe Commerce. Scopri le best practice per la gestione della configurazione condivisa e specifica per il sistema.
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
-
 ---
-
 # File di configurazione per la distribuzione
 
 Adobe Commerce fornisce file di configurazione che consentono di personalizzare facilmente un componente e creare tipi di configurazione per estendere le funzionalità predefinite. Il processo di configurazione della distribuzione consiste nella configurazione condivisa e specifica del sistema per l’installazione. La configurazione della distribuzione di Commerce è suddivisa tra [`app/etc/config.php`](../reference/config-reference-configphp.md) e [`app/etc/env.php`](../reference/config-reference-envphp.md).

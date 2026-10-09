@@ -5,13 +5,27 @@ feature: Customers, Shipping/Delivery
 role: Admin, Developer
 exl-id: 47682daf-9117-45f1-ab09-a66c13132ff3
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 22bad240-8308-569b-a9d5-578f1ff890ca
+    internal-label: Customers
+  - id: 04d3134c-2afb-5bd7-ac14-e19fa935e848
+    internal-label: Shipping/Delivery
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
-
 ---
-
 # ACSD-61667: migliora le prestazioni di inventario per la creazione di spedizioni
 
 La patch ACSD-61667 risolve il problema che impedisce al commerciante di spedire l&#39;ordine quando l&#39;archivio di prelievo [[!DNL Inventory Management for Commerce]](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/introduction) (precedentemente MSI) è abilitato con più origini. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.53. L’ID della patch è ACSD-61667. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.

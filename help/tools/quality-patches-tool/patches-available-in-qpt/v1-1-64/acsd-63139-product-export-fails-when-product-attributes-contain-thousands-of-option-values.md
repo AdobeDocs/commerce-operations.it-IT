@@ -5,13 +5,25 @@ feature: Data Import/Export
 role: Admin, Developer
 exl-id: 785907dc-aa3f-49e2-bd52-c3afe4393456
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
-
 ---
-
 # ACSD-63139: l’esportazione del prodotto non riesce quando gli attributi del prodotto contengono migliaia di valori di opzione
 
 La patch ACSD-63139 risolve il problema se l’esportazione del prodotto non riesce quando gli attributi del prodotto contengono migliaia di valori di opzione. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64. L’ID della patch è ACSD-63139. Questo problema è pianificato per la risoluzione in Adobe Commerce 2.4.8.
@@ -38,9 +50,9 @@ L’esportazione del prodotto ha esito negativo quando gli attributi del prodott
 
 1. Installa Adobe Commerce con il modulo B2B.
 1. Importa un dump di database di grandi dimensioni con:
-   &#x200B;- circa 7.000 prodotti
-   &#x200B;- circa 450 attributi di prodotto
-   &#x200B;- Alcuni attributi con più di 100 opzioni
+   - circa 7.000 prodotti
+   - circa 450 attributi di prodotto
+   - Alcuni attributi con più di 100 opzioni
 1. Eseguire il comando seguente per installare cron (se non è già installato):
 
    ```shell

@@ -1,17 +1,29 @@
 ---
 title: 'ACSD-45071: origine predefinita aggiunta al prodotto durante l''importazione'
-description: La patch ACSD-45071 risolve il problema relativo all'aggiunta dell'origine predefinita al prodotto durante l'importazione. Questa patch è disponibile quando [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.21 è installato. L’ID della patch è ACSD-45071. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
+description: La patch ACSD-45071 risolve il problema relativo all'aggiunta dell'origine predefinita al prodotto durante l'importazione. Questa patch è disponibile quando [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.21 è installato. L’ID della patch è ACSD-45071. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 feature: Data Import/Export, Products
 role: Admin
 exl-id: d28cbfb1-ad6b-4ccf-a877-6db763cea61b
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
-
 ---
-
 # ACSD-45071: origine predefinita aggiunta al prodotto durante l&#39;importazione
 
 La patch ACSD-45071 risolve il problema relativo all&#39;aggiunta dell&#39;origine predefinita al prodotto durante l&#39;importazione. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.21. L’ID della patch è ACSD-45071. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
@@ -54,7 +66,7 @@ L&#39;origine predefinita viene assegnata al prodotto dopo l&#39;importazione co
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

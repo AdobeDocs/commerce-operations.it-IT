@@ -1,17 +1,30 @@
 ---
 title: 'MDVA-41628: gli utenti amministratori con restrizioni hanno accesso a nuove risorse'
-description: La patch MDVA-41628 risolve il problema che consente agli utenti amministratori con restrizioni di accedere alle nuove risorse quando vengono aggiunti nuovi moduli. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-41628. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-41628 risolve il problema che consente agli utenti amministratori con restrizioni di accedere alle nuove risorse quando vengono aggiunti nuovi moduli. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-41628. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Admin Workspace
 role: Admin
 exl-id: 774a4329-fa1f-4cca-aa97-1b8ef03c11d1
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
-
 ---
-
 # MDVA-41628: gli utenti amministratori con restrizioni hanno accesso a nuove risorse
 
 La patch MDVA-41628 risolve il problema che consente agli utenti amministratori con restrizioni di accedere alle nuove risorse quando vengono aggiunti nuovi moduli. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.12. L&#39;ID della patch è MDVA-41628. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
@@ -54,7 +67,7 @@ L’utente amministratore con restrizioni può accedere alle nuove voci di menu,
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

@@ -1,18 +1,27 @@
 ---
 title: Migra modifiche
-description: Scopri come eseguire la migrazione solo dei dati che sono stati modificati dopo l'ultima migrazione di Magento 1 con  [!DNL Data Migration Tool].
+description: Scopri come eseguire la migrazione solo dei dati che sono stati modificati dopo l’ultima migrazione dei dati di Magento 1 con [!DNL Data Migration Tool].
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
-
 ---
-
 # Migra modifiche
 
-Lo strumento di migrazione incrementale installa tabelle deltalog (con prefisso `m2_cl_*`) e trigger (per il rilevamento delle modifiche) nel database di Magento 1 durante la [migrazione dei dati](data.md). Queste tabelle di dialogo dettagliate e i trigger sono essenziali per garantire la migrazione solo delle modifiche apportate in Magento 1 dall&#39;ultima migrazione dei dati. Queste modifiche sono:
+Lo strumento di migrazione incrementale installa tabelle deltalog (con prefisso `m2_cl_*`) e trigger (per il rilevamento delle modifiche) nel database Magento 1 durante la [migrazione dei dati](data.md). Queste tabelle di dialogo e questi trigger sono essenziali per garantire che esegui la migrazione solo delle modifiche apportate in Magento 1 dall’ultima migrazione dei dati. Queste modifiche sono:
 
 * Dati aggiunti dai clienti tramite vetrina (ordini creati, recensioni e modifiche nei profili dei clienti)
 
@@ -53,7 +62,7 @@ Dove:
 
 ## Eseguire la migrazione dei dati creati da estensioni di terze parti
 
-Nella modalità `Delta`, [!DNL Data Migration Tool] esegue la migrazione dei dati creati solo dai moduli di Magento e non è responsabile del codice o delle estensioni create da sviluppatori di terze parti. Se queste estensioni hanno creato dati nel database storefront e il commerciante desidera che tali dati siano in Magento 2, è necessario creare e modificare di conseguenza i file di configurazione di [!DNL Data Migration Tool].
+Nella modalità `Delta`, [!DNL Data Migration Tool] esegue la migrazione dei dati creati solo dai moduli di Magento e non è responsabile del codice o delle estensioni create da sviluppatori di terze parti. Se queste estensioni hanno creato dati nel database storefront e il commerciante desidera che questi dati siano presenti in Magento 2, i file di configurazione di [!DNL Data Migration Tool] devono essere creati e modificati di conseguenza.
 
 Se un’estensione dispone di tabelle proprie e devi tenere traccia delle modifiche per la migrazione delta, effettua le seguenti operazioni:
 

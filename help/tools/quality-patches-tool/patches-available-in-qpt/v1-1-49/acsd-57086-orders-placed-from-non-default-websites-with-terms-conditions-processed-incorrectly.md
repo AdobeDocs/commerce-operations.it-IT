@@ -5,13 +5,25 @@ feature: Orders
 role: Admin, Developer
 exl-id: d9f2ef50-12c4-4a2d-b140-dfd0e8948fd3
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 2%
-
 ---
-
 # ACSD-57086: gli ordini provenienti da siti Web non predefiniti con termini e condizioni abilitati vengono elaborati in modo errato
 
 La patch ACSD-57086 risolve il problema che causa l&#39;elaborazione errata degli ordini provenienti da siti Web non predefiniti con termini e condizioni abilitati. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.49. L’ID della patch è ACSD-57086. Tieni presente che questo problema è stato risolto in Adobe Commerce 2.4.7.

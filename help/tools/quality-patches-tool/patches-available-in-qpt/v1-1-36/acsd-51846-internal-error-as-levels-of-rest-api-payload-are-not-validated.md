@@ -1,17 +1,30 @@
 ---
-title: 'ACSD-51846: errore interno perché  [!DNL REST API] i livelli di payload non sono convalidati'
-description: Applica la patch ACSD-51846 per risolvere il problema Adobe Commerce in cui si verifica un "Errore interno" poiché non tutti i livelli del payload  [!DNL REST API]  sono convalidati.
+title: 'ACSD-51846: errore interno perché i livelli di payload [!DNL REST API] non sono convalidati'
+description: Applicare la patch ACSD-51846 per risolvere il problema di Adobe Commerce in cui si verifica un "Errore interno" poiché non tutti i livelli del payload [!DNL REST API] sono convalidati.
 feature: REST
 role: Developer
 exl-id: 436b075c-d9df-4bf2-94a2-52f2e66e8a4c
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '366'
 ht-degree: 0%
-
 ---
-
 # ACSD-51846: errore interno perché i livelli di payload [!DNL REST API] non sono convalidati
 
 La patch ACSD-51846 risolve il problema relativo a un &quot;Errore interno&quot;, in quanto non tutti i livelli del payload [!DNL REST API] sono convalidati. Questa patch è disponibile quando è installato [!DNL Quality Patches Tool (QPT)] 1.1.36. L’ID della patch è ACSD-51846. Il problema è stato risolto in Adobe Commerce 2.4.7.

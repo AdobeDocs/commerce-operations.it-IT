@@ -4,13 +4,20 @@ description: Applica la patch ACSD-56760 per risolvere il problema di Adobe Comm
 role: Admin
 exl-id: 2d75164e-c463-4e1a-aa6f-f420dbe0aaeb
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
-
 ---
-
 # ACSD-56760: l’utente amministratore è limitato a un sito web specifico e non può ordinare o aggiungere nuovi prodotti
 
 La patch ACSD-56760 risolve il problema per cui l’utente amministratore, limitato a un sito web specifico e impossibilitato a ordinare o aggiungere nuovi prodotti all’interno di una categoria, nel caso in cui il web store abbia la propria categoria principale. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.47. L’ID della patch è ACSD-56760. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.8-beta1.

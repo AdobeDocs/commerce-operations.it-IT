@@ -3,13 +3,27 @@ title: Consigli software
 description: Scopri i requisiti software e i consigli per Adobe Commerce. Scopri le versioni supportate e le best practice di configurazione per la produzione.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1488'
 ht-degree: 0%
-
 ---
-
 # Consigli software
 
 È necessario il seguente software per le istanze di produzione di [!DNL Commerce]:
@@ -151,7 +165,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-Quando ottimizzi l’allocazione di memoria per opcache, prendi in considerazione le dimensioni della base di codice di Magento e di tutte le estensioni. Il team delle prestazioni di Magento utilizza i valori dell’esempio precedente per il test, perché fornisce spazio sufficiente in opcache per il numero medio di estensioni installate.
+Quando ottimizzi l’allocazione di memoria per opcache, prendi in considerazione le dimensioni della base di codice di Magento e di tutte le estensioni. Il team delle prestazioni di Magento utilizza i valori dell’esempio precedente per i test perché fornisce spazio sufficiente in opcache per il numero medio di estensioni installate.
 
 Se la memoria del computer è insufficiente e non sono installate molte estensioni o personalizzazioni, utilizzare le impostazioni seguenti per ottenere un risultato simile:
 
@@ -202,7 +216,7 @@ Le versioni recenti di [!DNL MySQL] includono molti miglioramenti delle prestazi
 
 ## [!DNL Varnish]
 
-Magento consiglia vivamente di utilizzare [!DNL Varnish] come server cache a pagina intera per il tuo archivio. Il modulo PageCache è ancora presente nel codebase, ma deve essere utilizzato solo a scopo di sviluppo. Non deve essere usato insieme o al posto di [!DNL Varnish].
+Magento consiglia vivamente di utilizzare [!DNL Varnish] come server di cache a pagina intera per il tuo archivio. Il modulo PageCache è ancora presente nel codebase, ma deve essere utilizzato solo a scopo di sviluppo. Non deve essere usato insieme o al posto di [!DNL Varnish].
 
 Installa [!DNL Varnish] in un server separato di fronte al livello Web. Deve accettare tutte le richieste in arrivo e fornire copie delle pagine memorizzate nella cache. Per consentire a [!DNL Varnish] di funzionare in modo efficace con le pagine protette, è possibile inserire un proxy di terminazione SSL davanti a [!DNL Varnish]. Nginx può essere utilizzato per questo scopo.
 
@@ -255,7 +269,7 @@ Riavvia il server [!DNL Varnish] per eseguire il flushing delle risorse memorizz
 
 ## Memorizzazione in cache e server di sessione
 
-Magento offre diverse opzioni per memorizzare la cache e i dati di sessione, tra cui Redis, Memcache, file system e database. Alcune di queste opzioni sono discusse di seguito.
+Magento offre diverse opzioni per memorizzare la cache e i dati della sessione, tra cui Redis, Memcache, file system e database. Alcune di queste opzioni sono discusse di seguito.
 
 ### Configurazione di un singolo nodo web
 

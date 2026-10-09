@@ -1,25 +1,34 @@
 ---
-title: Configura  [!DNL Data Migration Tool]
-description: Scopri i due metodi per configurare  [!DNL Data Migration Tool]  per trasferire dati tra Magento 1 e Magento 2.
+title: Configura [!DNL Data Migration Tool]
+description: Scopri i due metodi per configurare [!DNL Data Migration Tool] per trasferire dati tra Magento 1 e Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '826'
 ht-degree: 0%
-
 ---
-
 # Configura [!DNL Data Migration Tool]
 
 Dopo aver installato [!DNL Data Migration Tool], la directory seguente contiene i file di mapping e di configurazione:
 
 * Magento Open Source:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: configurazione e script per la migrazione da Magento Open Source 1 a Magento Open Source 2
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: configurazione e script per la migrazione da Magento Open Source 1 a Magento Open Source 2
 
 * Adobe Commerce:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: configurazione e script per la migrazione da Magento Open Source 1 ad Adobe Commerce 2
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: configurazione e script per la migrazione da Adobe Commerce 1 ad Adobe Commerce 2
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: configurazione e script per la migrazione da Magento Open Source 1 ad Adobe Commerce 2
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: configurazione e script per la migrazione da Adobe Commerce 1 ad Adobe Commerce 2
 
 Le directory precedenti contengono sottodirectory per ogni versione supportata.
 
@@ -35,9 +44,9 @@ Se si prevede di eseguire [!DNL Data Migration Tool] solo localmente, è possibi
 
 ### Configurare la migrazione in un modulo separato
 
-Prima di eseguire la migrazione dei dati, è necessario creare un modulo di Magento 2.
+Prima di eseguire la migrazione dei dati, è necessario creare un modulo Magento 2.
 
-1. Creare un modulo di Magento 2.
+1. Crea un modulo Magento 2.
 
    * `<your Magento 2 install dir>/app/code/Vendor/Migration/composer.json`
 
@@ -106,7 +115,7 @@ Prima di eseguire la migrazione dei dati, è necessario creare un modulo di Mage
 
 1. Nel file `config.xml` è necessario impostare i dettagli di accesso ai database M1 e M2 e alla chiave di crittografia.
 
-1. Se nell&#39;archivio M1 sono presenti modifiche personalizzate, è necessario mappare il resto dei file di configurazione alle personalizzazioni dell&#39;archivio Magento 1. Vedi [Operazioni con i file di configurazione e mappatura](#work-with-configuration-and-mapping-files).
+1. Se nell’archivio M1 sono presenti modifiche personalizzate, è necessario mappare gli altri file di configurazione alle personalizzazioni dell’archivio Magento 1. Vedi [Operazioni con i file di configurazione e mappatura](#work-with-configuration-and-mapping-files).
 
 ### Configura migrazione nella cartella `vendor`
 
@@ -152,7 +161,7 @@ Per configurare [!DNL Data Migration Tool] per la migrazione:
    * Porta personalizzata del database: `port=<port>`
    * Prefisso tabella: `<source_prefix>`, `<dest_prefix>`
 
-   Se ad esempio il nome utente del proprietario del database è `root` con password `pass` e si utilizza il prefisso `magento1` nel database di Magento 1, utilizzare quanto segue in `config.xml`:
+   Ad esempio, se il nome utente del proprietario del database è `root` con password `pass` e si utilizza il prefisso `magento1` nel database Magento 1, utilizzare quanto segue in `config.xml`:
 
    ```xml
    <source>
@@ -190,7 +199,7 @@ Ad esempio:
 
 ## Utilizzare i file di configurazione e mappatura
 
-[!DNL Data Migration Tool] utilizza *file di mapping* per consentire l&#39;esecuzione di mapping di database personalizzati tra i database di Magento 1 e Magento 2, inclusi:
+[!DNL Data Migration Tool] utilizza *file di mapping* per consentire l&#39;esecuzione di mapping di database personalizzati tra i database Magento 1 e Magento 2, inclusi:
 
 * Modifica dei nomi delle tabelle
 
@@ -200,7 +209,7 @@ Ad esempio:
 
 * Adattare il trasferimento dei dati di un campo al formato Magento 2
 
-I file di mapping per le versioni di Magento supportate si trovano nelle sottodirectory di `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
+I file di mappatura per le versioni di Magento supportate si trovano nelle sottodirectory di `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
 
 Per utilizzare i file di mappatura:
 
@@ -219,7 +228,7 @@ Anche se si utilizza il file `map.xml.dist` nella maggior parte dei casi, nella 
 | Nome file di mappatura | Descrizione |
 | --- | --- |
 | `class-map.xml.dist` | Dizionario delle mappature di classi tra Magento 1 e Magento 2 |
-| `config.xml.dist` | File di configurazione principale che specifica le configurazioni del database di Magento 1 e Magento 2, la configurazione dei passaggi e i collegamenti ai file di mappatura |
+| `config.xml.dist` | File di configurazione principale che specifica le configurazioni del database Magento 1 e Magento 2, la configurazione dei passaggi e i collegamenti ai file di mappatura |
 | *Solo Adobe Commerce*. `customer-attr-document-groups.xml.dist` | Elenco di tabelle utilizzate nel passaggio Attributi cliente personalizzati. |
 | *Solo Adobe Commerce*. `customer-attr-map.xml.dist` | File di mappa utilizzato nel passaggio Attributi del cliente personalizzati. |
 | `deltalog.xml.dist` | Contiene l&#39;elenco delle tabelle necessarie per l&#39;impostazione delle routine di database. |

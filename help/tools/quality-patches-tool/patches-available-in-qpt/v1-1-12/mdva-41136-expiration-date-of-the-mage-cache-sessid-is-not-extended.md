@@ -1,17 +1,30 @@
 ---
 title: 'MDVA-41136: la data di scadenza di mage-cache-sessid non è estesa'
-description: La patch MDVA-41136 risolve il problema per cui la data di scadenza del cookie "mage-cache-sessid" non viene estesa, causando la pulizia dei dati del cliente. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-41136. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-41136 risolve il problema per cui la data di scadenza del cookie "mage-cache-sessid" non viene estesa, causando la pulizia dei dati del cliente. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-41136. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Cache
 role: Admin
 exl-id: f9fbbbdb-b440-4e94-a5b0-c03cdad9f010
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
-
 ---
-
 # MDVA-41136: la data di scadenza di mage-cache-sessid non è estesa
 
 La patch MDVA-41136 risolve il problema che impedisce l&#39;estensione della data di scadenza del cookie `mage-cache-sessid`, causando la pulizia dei dati del cliente. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.12. L&#39;ID della patch è MDVA-41136. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.

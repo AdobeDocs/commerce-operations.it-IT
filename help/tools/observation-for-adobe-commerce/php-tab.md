@@ -1,15 +1,29 @@
 ---
 title: Scheda [!UICONTROL PHP]
-description: Scopri la scheda [!UICONTROL PHP] di [!DNL Observation for Adobe Commerce].
+description: Informazioni sulla scheda [!UICONTROL PHP] di [!DNL Observation for Adobe Commerce].
 exl-id: 0989a7f5-75b0-4fb5-ac5e-2618603bf548
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '560'
 ht-degree: 0%
-
 ---
-
 # Scheda [!UICONTROL PHP]
 
 La scheda **PHP** mostra i problemi del processo PHP per fornire un&#39;analisi più approfondita dei problemi PHP.
@@ -45,7 +59,7 @@ Il frame **[!UICONTROL PHP CPU Utilization]** mostra la percentuale di utilizzo 
 Il frame **[!UICONTROL PHP Process states]** mostra gli stati del processo PHP nell&#39;arco temporale selezionato. Viene visualizzato quando i processi PHP terminano e si riavviano. Attenzione ai processi PHP terminati che non mostrano riavvii.
 
 * &#39;%NOTICE: terminazione in corso...%&#39;) come &#39;php_term&#39;
-* &#39;% AVVISO: uscita, arrivederci!%&#39;) come &#39;php_exit&#39;
+* &#39;% AVVISO: uscita, bye-bye!%&#39;) come &#39;php_exit&#39;
 * &#39;% AVVISO: fpm è in esecuzione, pid%&#39;) come &#39;fpm_start&#39;
 * &#39;%NOTICE: pronto per gestire le connessioni%&#39;) come &#39;php_ready&#39;
 
@@ -56,7 +70,7 @@ Il frame **[!UICONTROL PHP Process states]** mostra gli stati del processo PHP n
 Il frame **[!UICONTROL PHP Errors]** mostra il numero di errori del processo di lavoro PHP nell&#39;intervallo di tempo selezionato. I messaggi di errore analizzati e visualizzati includono:
 
 * &#39;%worker_connections non sono sufficienti%&#39;) come &#39;worker&#39;
-* &#39;%PHP Errore irreversibile: dimensioni di memoria consentite.%&#39;) come &#39;mem_size&#39;
+* &#39;%PHP Errore irreversibile: dimensione di memoria consentita!%&#39;) come &#39;mem_size&#39;
 * &#39;%exited sul segnale 11 (SIGSEGV)%&#39;) come &#39;sig_11&#39;
 * &#39;%exited sul segnale 7 (SIGBUS)%&#39;) come &#39;sig_7&#39;
 * &#39;%increased pm.start_servers%&#39;) come &#39;pmstart_serv&#39;

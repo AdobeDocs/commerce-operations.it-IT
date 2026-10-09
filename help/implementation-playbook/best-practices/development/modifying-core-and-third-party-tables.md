@@ -3,15 +3,25 @@ title: Procedure consigliate per la modifica delle tabelle di database
 description: Scopri come e quando modificare le tabelle di database di Adobe Commerce e di terze parti.
 role: Developer
 feature: Best Practices
-last-substantial-update: 2022-11-15T00:00:00Z
+last-substantial-update: 2022-11-15T00:00:00.000Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1591'
 ht-degree: 0%
-
 ---
-
 # Procedure consigliate per la modifica delle tabelle di database
 
 In questo articolo vengono fornite le procedure consigliate per la modifica delle tabelle di database create da [!DNL Adobe Commerce] o da moduli di terze parti. Scopri quando e come modificare efficacemente le tabelle per garantire la redditività a lungo termine e la stabilità della piattaforma commerce.
@@ -36,7 +46,7 @@ Questa situazione richiederebbe la migrazione del database a un server, che offr
 
 Un’altra opzione correlata per mantenere i dati esterni al commercio, ma consentendoti di utilizzarli in tempo reale, sarebbe quella di sfruttare altri strumenti, come GraphQL mesh. Questa opzione combina diverse origini di dati e le restituisce come una singola risposta.
 
-È ad esempio possibile `stitch` raggruppare i vecchi ordini provenienti da un database esterno, ad esempio il vecchio sito Magento 1 disattivato. Quindi, utilizzando GraphQL mesh, mostrale come parte della cronologia degli ordini dei clienti. Questi vecchi ordini possono essere combinati con quelli dell&#39;ambiente [!DNL Adobe Commerce] corrente.
+Ad esempio, è possibile `stitch` raggruppare i vecchi ordini da un database esterno, ad esempio il vecchio sito Magento 1 disattivato. Quindi, utilizzando GraphQL mesh, mostrale come parte della cronologia degli ordini dei clienti. Questi vecchi ordini possono essere combinati con quelli dell&#39;ambiente [!DNL Adobe Commerce] corrente.
 
 Per ulteriori informazioni sull&#39;utilizzo di API mesh con GraphQL, vedere [Informazioni su API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}) e [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 

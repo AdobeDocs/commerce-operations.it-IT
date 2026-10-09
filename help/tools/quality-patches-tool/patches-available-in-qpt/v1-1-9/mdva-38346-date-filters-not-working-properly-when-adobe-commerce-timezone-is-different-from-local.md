@@ -5,13 +5,23 @@ feature: Configuration
 role: Admin
 exl-id: 6ed909be-81da-4e06-97c7-4eab8be2ddd2
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
-
 ---
-
 # MDVA-38346: i filtri data non funzionano quando il fuso orario di Adobe Commerce è diverso da quello locale
 
 La patch MDVA-38346 risolve il problema relativo al malfunzionamento dei filtri di data quando il fuso orario di Adobe Commerce è diverso da quello dell’ambiente locale. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.9. L&#39;ID della patch è MDVA-38346. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.

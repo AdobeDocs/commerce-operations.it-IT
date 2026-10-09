@@ -1,20 +1,29 @@
 ---
-title: Personalizza  [!DNL Data Migration Tool]
-description: Scopri come personalizzare  [!DNL Data Migration Tool] per trasferire i dati creati dalle estensioni tra Magento 1 e Magento 2.
+title: Personalizza [!DNL Data Migration Tool]
+description: Scopri come personalizzare [!DNL Data Migration Tool] per trasferire i dati creati dalle estensioni tra Magento 1 e Magento 2.
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 topic: Commerce, Migration
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '844'
 ht-degree: 0%
-
 ---
-
 # Configura [!DNL Data Migration Tool]
 
-A volte il formato e la struttura dei dati creati da [estensioni](https://commercemarketplace.adobe.com//extensions.html) o codice personalizzato sono diversi tra Magento 1 e Magento 2. Utilizzare i punti di estensione all&#39;interno di [!DNL Data Migration Tool] per migrare questi dati. Se il formato e la struttura dei dati sono identici, lo strumento può eseguire automaticamente la migrazione dei dati senza l’intervento dell’utente.
+A volte il formato e la struttura dei dati creati dalle [estensioni](https://commercemarketplace.adobe.com//extensions.html) o dal codice personalizzato sono diversi tra Magento 1 e Magento 2. Utilizzare i punti di estensione all&#39;interno di [!DNL Data Migration Tool] per migrare questi dati. Se il formato e la struttura dei dati sono identici, lo strumento può eseguire automaticamente la migrazione dei dati senza l’intervento dell’utente.
 
-Durante la migrazione, il [passaggio mappa](technical-specification.md#map-step) analizza e confronta tutte le tabelle di Magento 1 e Magento 2, incluse quelle create dalle estensioni. Se le tabelle sono le stesse, lo strumento migra automaticamente i dati. Se le tabelle sono diverse, lo strumento termina e invia una notifica all&#39;utente.
+Durante la migrazione, [Map Step](technical-specification.md#map-step) analizza e confronta tutte le tabelle di Magento 1 e Magento 2, comprese quelle create dalle estensioni. Se le tabelle sono le stesse, lo strumento migra automaticamente i dati. Se le tabelle sono diverse, lo strumento termina e invia una notifica all&#39;utente.
 
 >[!NOTE]
 >
@@ -28,7 +37,7 @@ Nella maggior parte dei casi, il [passaggio mappa](technical-specification.md#ma
 - Modificare i nomi di tabelle o campi con regole di mappatura
 - Trasforma i formati di dati con gestori esistenti o personalizzati
 
-Di seguito è riportato un esempio di utilizzo di regole di mappatura e di un gestore. In questo esempio viene utilizzata un&#39;ipotetica estensione di Magento 1 denominata &quot;GreatBlog&quot;, che è stata migliorata per Magento 2.
+Di seguito è riportato un esempio di utilizzo di regole di mappatura e di un gestore. In questo esempio viene utilizzata un’ipotetica estensione di Magento 1 denominata &quot;GreatBlog&quot;, che è stata migliorata per Magento 2.
 
 ```xml
 <source>
@@ -72,13 +81,13 @@ Di seguito è riportato un esempio di utilizzo di regole di mappatura e di un ge
 ```
 
 - Non eseguire la migrazione dei dati non necessari dalla tabella indice `great_blog_index`.
-- La tabella `great_blog_publication` è stata rinominata `great_blog_post` in Magento 2, pertanto i dati vengono migrati nella nuova tabella.
-   - Il campo `summary` è stato rinominato in `title`, pertanto i dati vengono migrati nel nuovo campo.
-   - Il campo `priority` è stato rimosso e non esiste più in Magento 2.
-   - Il formato dei dati nel campo `body` è stato modificato e deve essere elaborato dal gestore personalizzato: `\Migration\Handler\GreatBlog\NewFormat`.
+- La tabella `great_blog_publication` è stata rinominata `great_blog_post` in Magento 2, quindi i dati vengono migrati nella nuova tabella.
+  - Il campo `summary` è stato rinominato in `title`, pertanto i dati vengono migrati nel nuovo campo.
+  - Il campo `priority` è stato rimosso e non esiste più in Magento 2.
+  - Il formato dei dati nel campo `body` è stato modificato e deve essere elaborato dal gestore personalizzato: `\Migration\Handler\GreatBlog\NewFormat`.
 - È stata sviluppata una nuova funzione di valutazione per l’estensione &quot;GreatBlog&quot; in Magento 2.
-   - Nuova tabella `great_blog_rating` creata.
-   - È stato creato un nuovo campo `great_blog_post.rating`.
+  - Nuova tabella `great_blog_rating` creata.
+  - È stato creato un nuovo campo `great_blog_post.rating`.
 
 ### Estendere la mappatura in altri passaggi
 

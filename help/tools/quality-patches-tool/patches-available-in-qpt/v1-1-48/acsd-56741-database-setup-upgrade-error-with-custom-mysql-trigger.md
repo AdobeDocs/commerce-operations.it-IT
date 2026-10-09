@@ -1,17 +1,29 @@
 ---
 title: 'ACSD-56741: Risoluzione dei problemi di installazione del database con trigger MySQL personalizzati'
-description: Applica la patch ACSD-56741 per risolvere il problema di Adobe Commerce, dove un messaggio di errore *Tentativo di accedere all’offset dell’array sul valore di tipo null* viene visualizzato durante "setup:upgrade" a causa di un trigger MySQL personalizzato nel database non correlato all’indicizzazione e  [!DNL MView].
+description: Applica la patch ACSD-56741 per risolvere il problema di Adobe Commerce, dove viene visualizzato un messaggio di errore *Tentativo di accedere all’offset dell’array con valore di tipo null* durante "setup:upgrade" a causa di un trigger MySQL personalizzato nel database non correlato all’indicizzazione e a [!DNL MView].
 feature: Install
 role: Admin, Developer
 exl-id: 93a1c75f-8a45-49df-9fa4-6ba1234c822d
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
-
 ---
-
 # ACSD-56741: Risoluzione dei problemi di installazione del database con trigger MySQL personalizzati
 
 La patch ACSD-56741 risolve il problema che causava la visualizzazione di un messaggio di errore *Il tentativo di accedere all&#39;offset dell&#39;array sul valore di tipo null* durante `setup:upgrade` a causa di un trigger MySQL personalizzato nel database non correlato all&#39;indicizzazione e [!DNL MView]. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.48. L’ID della patch è ACSD-56741. Il problema è pianificato per essere risolto in Adobe Commerce 2.5.0

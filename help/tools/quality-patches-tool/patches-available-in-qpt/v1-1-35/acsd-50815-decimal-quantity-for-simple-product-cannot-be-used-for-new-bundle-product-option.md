@@ -5,13 +5,23 @@ feature: Products
 role: Admin
 exl-id: 5cd69abe-bd88-497d-9696-804c787b73ef
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
-
 ---
-
 # ACSD-50815: la quantità decimale per il prodotto semplice non può essere utilizzata per la nuova opzione di prodotto in bundle
 
 La patch ACSD-50815 risolve il problema che impediva l’utilizzo della quantità decimale per un prodotto semplice per una nuova opzione di prodotto in bundle. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.35. L’ID della patch è ACSD-50815. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.

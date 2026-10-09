@@ -5,18 +5,31 @@ feature: REST
 role: Admin
 exl-id: 1ca78717-2144-4410-a398-764864ee182f
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
-
 ---
-
 # ACSD-50368: il valore group_id dei clienti viene ignorato quando un cliente viene creato tramite API REST asincrona o API REST in blocco asincrona
 
 >[!NOTE]
 >
->La patch ACSD-50368 è parzialmente obsoleta, in quanto questo problema viene risolto dalla patch di sicurezza obbligatoria [APSB25-08](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-27149) per le versioni successive alla versione 2.4.4.
+>La patch ACSD-50368 è parzialmente obsoleta, in quanto questo problema viene risolto dalla patch di sicurezza obbligatoria [APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149) per le versioni successive alla versione 2.4.4.
 
 La patch ACSD-50368 risolve il problema per cui il valore group_id dei clienti viene ignorato quando un cliente viene creato tramite API REST asincrona o API REST asincrona in blocco. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.33. L’ID della patch è ACSD-50368. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.
 
@@ -126,7 +139,7 @@ Il valore group_id è impostato sul valore predefinito 1 per il nuovo cliente.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

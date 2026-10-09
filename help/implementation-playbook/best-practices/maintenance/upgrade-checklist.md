@@ -4,13 +4,23 @@ description: Scopri come creare e utilizzare un elenco di controllo per l’aggi
 role: Leader
 feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
-
 ---
-
 # Best practice per l’aggiornamento dell’elenco di controllo
 
 Utilizza questo elenco di controllo durante le conversazioni annuali e trimestrali con il team eCommerce. Molte aziende lavorano con budget e roadmap annuali. È fondamentale, durante queste discussioni annuali, parlare dello stato di salute, della direzione e della strategia di aggiornamento della piattaforma per l’anno, insieme a come si inserisce negli obiettivi generali e nei KPI dell’azienda. Durante le conversazioni trimestrali, assicurati che il piano annuale creato sia ancora in linea con la situazione corrente o pivot in caso contrario. L’obiettivo di questo elenco di controllo del piano di aggiornamento è aiutarti a pianificare e pianificare gli aggiornamenti di Adobe Commerce per garantire un processo di aggiornamento di successo durante l’anno. Questa checklist deve essere utilizzata dai seguenti tipi di pubblico per la pianificazione annuale e la revisione trimestrale:

@@ -1,17 +1,34 @@
 ---
-title: 'ACSD-55566: la mutazione [!UICONTROL mergeCart] non riesce e viene restituito un errore interno del server nella  [!DNL GraphQL]  risposta'
-description: Applica la patch ACSD-55566 per risolvere il problema di Adobe Commerce in cui la mutazione "mergeCart" non riesce e genera un errore interno del server nella risposta  [!DNL GraphQL]  durante l'unione dei carrelli di origine e di destinazione che hanno gli stessi elementi del bundle.
+title: 'ACSD-55566: la mutazione [!UICONTROL mergeCart] non riesce con errore interno del server nella risposta [!DNL GraphQL]'
+description: Applica la patch ACSD-55566 per risolvere il problema di Adobe Commerce in cui la mutazione "mergeCart" non riesce e genera un errore interno del server nella risposta [!DNL GraphQL] durante l'unione dei carrelli di origine e di destinazione che hanno gli stessi elementi del bundle.
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
 exl-id: 84c6fbb9-73b3-4197-aff3-49743f0ebb2c
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: df8eaa0e-dd74-553a-8ad5-28129f8e8d3d
+    internal-label: Shopping Cart
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '451'
 ht-degree: 0%
-
 ---
-
 # ACSD-55566: la mutazione `mergeCart` non riesce con errore interno del server nella risposta [!DNL GraphQL]
 
 La patch ACSD-55566 risolve il problema se la mutazione `mergeCart` non riesce e nella risposta [!DNL GraphQL] viene restituito un errore interno del server. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.48. L’ID della patch è ACSD-55566. Il problema è pianificato per essere risolto in Adobe Commerce 2.5.0.

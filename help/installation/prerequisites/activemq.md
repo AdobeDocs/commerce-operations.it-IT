@@ -1,13 +1,22 @@
 ---
 title: Gestore messaggi (ActiveMQ Artemis)
 description: Segui questi passaggi per installare e configurare Apache ActiveMQ Artemis message broker per le installazioni locali di Adobe Commerce.
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '938'
 ht-degree: 0%
-
 ---
-
 # Gestore messaggi (ActiveMQ Artemis)
 
 Adobe Commerce supporta anche il broker di messaggi open source ActiveMQ Artemis tramite il protocollo STOMP (Simple Text Oriented Messaging Protocol). Fornisce un sistema di messaggistica affidabile e scalabile, offrendo flessibilità per le integrazioni basate su STOMP.
@@ -99,7 +108,7 @@ docker rm artemis
 Una volta che il contenitore Docker è in esecuzione, puoi accedere a:
 
 - **Console Web**: http://localhost:8161/console (credenziali predefinite: artemis/artemis)
-- **Porta STOMP**: localhost:61613 (per la connessione Adobe Commerce)
+- **Porta STOMP**: localhost:61613 (per connessione Adobe Commerce)
 
 >[!NOTE]
 >

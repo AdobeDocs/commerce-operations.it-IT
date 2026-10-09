@@ -4,13 +4,34 @@ description: In questo articolo vengono descritti i passaggi di risoluzione dei 
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 exl-id: 8629ab18-5eef-4d76-9cf8-88fe2d3439df
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 0%
-
 ---
-
 # Avvisi gestiti su Adobe Commerce: avviso critico CPU
 
 In questo articolo vengono descritti i passaggi di risoluzione dei problemi quando si riceve un avviso critico di CPU per Adobe Commerce in [!DNL New Relic]. È necessaria un&#39;azione immediata per risolvere il problema. L’avviso avrà un aspetto simile al seguente, a seconda del canale di notifica dell’avviso selezionato.
@@ -59,6 +80,6 @@ Controlla se è presente il ticket di supporto Adobe Commerce. Per i passaggi, c
 1. Se identifichi l’origine, SSH nell’ambiente per approfondire l’analisi. Per i passaggi, consulta [SSH nel tuo ambiente](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/secure-connections) nella Guida di Commerce su Cloud.
 1. Se hai ancora difficoltà a identificare l’origine:
    * Esamina le tendenze recenti per identificare i problemi relativi alle recenti implementazioni del codice o modifiche alla configurazione (ad esempio, nuovi gruppi di clienti e modifiche di grandi dimensioni al catalogo). È consigliabile verificare negli ultimi sette giorni di attività le correlazioni presenti nelle distribuzioni o nelle modifiche del codice.
-   * Valutare la possibilità di verificare e disabilitare i cataloghi flat. Per i passaggi, consultare [Crons con prestazioni lente e esecuzione lenta](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons) nella Knowledge Base del supporto Commerce.
-   * Se sospetti di avere un attacco DDoS, prova a bloccare il traffico da bot. Per ulteriori informazioni, vedere [Come bloccare il traffico dannoso per Adobe Commerce sull&#39;infrastruttura cloud al livello Fastly](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) nella Knowledge Base di supporto Commerce.
+   * Valutare la possibilità di verificare e disabilitare i cataloghi flat. Per i passaggi, consultare [Crons con prestazioni lente e esecuzione lenta](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons) nella Knowledge Base del supporto Commerce.
+   * Se sospetti di avere un attacco DDoS, prova a bloccare il traffico da bot. Per ulteriori informazioni, vedere [Come bloccare il traffico dannoso per Adobe Commerce sull&#39;infrastruttura cloud al livello Fastly](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) nella Knowledge Base di supporto Commerce.
 1. Se il problema sembra temporaneo, esegui passaggi di mitigazione quali un upsize o imposta il sito in modalità di manutenzione. Per ulteriori informazioni, vedere [Come richiedere il ridimensionamento temporaneo](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) nella Knowledge Base del supporto tecnico Commerce e [Attivare o disattivare la modalità di manutenzione](/help/installation/tutorials/maintenance-mode.md) nella Guida all&#39;installazione di Commerce. Se l’upsize ripristina le normali operazioni del sito, è consigliabile richiedere un upsize permanente (contatta il team dell’account Adobe) o provare a riprodurre il problema nella gestione temporanea dedicata eseguendo un test di carico e ottimizzando le query o il codice che riduce la pressione sui servizi. Per i passaggi, consulta [Test di carico e stress](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/test/staging-and-production#load-and-stress-testing) in Commerce on Cloud Guide.

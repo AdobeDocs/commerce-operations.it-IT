@@ -2,13 +2,22 @@
 title: Riferimento a processo cron personalizzato e gruppo cron
 description: Scopri come personalizzare gli utenti con Gruppi cron e schede cronologiche in Adobe Commerce. Scopri la configurazione del modulo personalizzato e l’attività pianificata.
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '549'
 ht-degree: 0%
-
 ---
-
 # Personalizzazione del riferimento crons
 
 Questo argomento consente di impostare le schede cronologiche e facoltativamente i gruppi cron per i moduli personalizzati. Se il modulo personalizzato deve pianificare le attività periodicamente, è necessario impostare una scheda cronologica per tale modulo. Una _crontab_ è una configurazione di processo cron.
@@ -149,4 +158,4 @@ Per disabilitare il processo cron `visitor_clean`, creare un modulo personalizza
 ...
 ```
 
-Ora il processo cron `visitor_clean` è stato impostato per essere eseguito alle 00:00 del 30 febbraio, in una data che non si verificherà mai.
+Ora, il processo cron `visitor_clean` è stato impostato per essere eseguito alle 00:00 del 30 febbraio, in una data che non si verificherà mai.

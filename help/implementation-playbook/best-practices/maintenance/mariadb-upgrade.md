@@ -4,13 +4,23 @@ description: Scopri come preparare il database di Adobe Commerce per aggiornare 
 role: Developer
 feature: Best Practices
 exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '863'
 ht-degree: 0%
-
 ---
-
 
 # Prerequisiti per l&#39;aggiornamento di MariaDB
 
@@ -51,7 +61,7 @@ SELECT CONCAT( 'ALTER TABLE `', COALESCE(TABLE_NAME), '`', ' MODIFY ', '`', COAL
 
 ## Adobe Commerce 2.3.5
 
-L&#39;aggiornamento del servizio MariaDB sull&#39;infrastruttura cloud dalla versione 10.0 o 10.2 alla versione 10.3, 10.4 o 10.5. La versione 10.3 o successiva di MariaDB richiede che il database utilizzi il formato di riga dinamico e Adobe Commerce richiede l&#39;utilizzo del motore di archiviazione InnoDB per le tabelle. Questo articolo spiega come aggiornare il database per soddisfare i requisiti MariaDB.
+Aggiornamento del servizio MariaDB sull’infrastruttura cloud dalla versione 10.0 o 10.2 alla versione 10.3, 10.4 o 10.5. MariaDB versione 10.3 e successive richiedono che il database utilizzi il formato di riga dinamico della tabella e Adobe Commerce richiede l’utilizzo del motore di archiviazione InnoDB per le tabelle. Questo articolo spiega come aggiornare il database per soddisfare i requisiti MariaDB.
 
 Dopo aver preparato il database, invia un ticket di supporto Adobe Commerce per aggiornare la versione del servizio MariaDB nell’infrastruttura cloud prima di procedere con il processo di aggiornamento di Adobe Commerce.
 

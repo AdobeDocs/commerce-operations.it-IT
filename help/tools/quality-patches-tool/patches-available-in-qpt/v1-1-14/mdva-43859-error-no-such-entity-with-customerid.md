@@ -1,17 +1,30 @@
 ---
 title: 'MDVA-43859: errore "Nessuna entità di questo tipo con customerId =" registrato al momento dell''accesso del cliente eliminato'
-description: La patch di MDVA-43859 risolve il problema relativo all'errore *Nessuna entità con customerId =* viene registrata quando un cliente eliminato tenta di accedere. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14. L'ID della patch è MDVA-43859. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch di MDVA-43859 risolve il problema relativo all'errore *Nessuna entità con customerId =* viene registrata quando un cliente eliminato tenta di accedere. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14. L'ID della patch è MDVA-43859. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Variables
 role: Admin
 exl-id: b8451b08-978a-44a2-8664-4369e832423b
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+subfeature_v2:
+  - id: 2191e157-828a-5358-ad69-ebcaa8402915
+    internal-label: Variables
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
-
 ---
-
 # MDVA-43859: errore &quot;Nessuna entità di questo tipo con customerId =&quot; registrato al momento dell&#39;accesso del cliente eliminato
 
 La patch di MDVA-43859 risolve il problema relativo all&#39;errore *Nessuna entità con customerId =* viene registrata quando un cliente eliminato tenta di accedere. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.14. L&#39;ID della patch è MDVA-43859. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.

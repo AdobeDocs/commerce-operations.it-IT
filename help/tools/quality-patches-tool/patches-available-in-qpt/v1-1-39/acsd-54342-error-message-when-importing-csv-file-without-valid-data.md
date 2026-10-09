@@ -5,13 +5,25 @@ feature: Roles/Permissions
 role: Admin, Developer
 exl-id: 34324a18-45af-462b-a6e6-6b6a02d4d331
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
-
 ---
-
 # ACSD-54342: messaggio di errore durante l’importazione di un file CSV senza dati validi
 
 La patch ACSD-54342 risolve il problema relativo alla visualizzazione di un messaggio di errore non corretto durante l&#39;importazione di un file CSV senza dati validi. Questa patch è disponibile quando è installato [!DNL Quality Patches Tool (QPT)] 1.1.39. L’ID della patch è ACSD-54342. Il problema è pianificato per la risoluzione in Adobe Commerce 2.4.7.

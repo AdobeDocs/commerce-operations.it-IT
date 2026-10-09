@@ -1,14 +1,23 @@
 ---
 title: Riferimento per le informazioni personali del cliente (versione 1.x)
-description: Scopri i mapping di entità di database e flussi di dati per le informazioni personali dei clienti in Magento 1.x.
+description: Scopri le mappature di entità di flussi di dati e database per le informazioni personali dei clienti in Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 0%
-
 ---
-
 # Riferimento per le informazioni personali del cliente (versione 1.x)
 
 >[!NOTE]
@@ -54,7 +63,7 @@ Magento 1 memorizza le informazioni sui clienti in tabelle di clienti, vendite e
 
 ### Dati dei clienti
 
-Magento 1 archivia le informazioni sui clienti nelle tabelle `customer_entity` e `customer_address_entity`. Entrambe queste tabelle hanno diverse tabelle di riferimento che possono contenere attributi cliente personalizzati.
+Magento 1 memorizza le informazioni sui clienti nelle tabelle `customer_entity` e `customer_address_entity`. Entrambe queste tabelle hanno diverse tabelle di riferimento che possono contenere attributi cliente personalizzati.
 
 #### `customer_entity` e tabelle di riferimento
 

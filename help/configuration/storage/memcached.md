@@ -3,13 +3,32 @@ title: Usa memcached per l’archiviazione della sessione
 description: Scopri come configurare Adobe Commerce per l’utilizzo di memcached per l’archiviazione delle sessioni in env.php e quando preferire Redis o Varnish per altri livelli di memorizzazione in cache.
 feature: Configuration, Cache, Storage
 exl-id: 24077929-e732-4579-8d7d-717a4902fc64
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
-
 ---
-
 # Usa memcached per l’archiviazione della sessione
 
 Memcached è un sistema di caching di memoria distribuito per scopi generici. Viene spesso utilizzato per velocizzare i siti web dinamici basati su database memorizzando nella cache dati e oggetti nella RAM per ridurre il numero di volte in cui è necessario leggere un’origine dati esterna (ad esempio un database o un’API).

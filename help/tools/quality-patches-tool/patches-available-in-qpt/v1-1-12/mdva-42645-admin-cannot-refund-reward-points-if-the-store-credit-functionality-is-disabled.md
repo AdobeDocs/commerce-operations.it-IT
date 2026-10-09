@@ -1,17 +1,36 @@
 ---
 title: 'MDVA-42645: l''amministratore non può rimborsare i punti premio per il credito dell''archivio disabilitato'
-description: La patch MDVA-42645 risolve il problema per cui l'amministratore non può rimborsare i punti premio se la funzionalità di credito all'archivio è disabilitata. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-42645. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-42645 risolve il problema per cui l'amministratore non può rimborsare i punti premio se la funzionalità di credito all'archivio è disabilitata. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-42645. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Admin Workspace, Orders, Rewards, Returns
 role: Admin
 exl-id: 8053fcc7-d30c-424a-9494-df6e8630b095
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 4069cee6-4dc8-5a83-81de-232af6a7c9e9
+    internal-label: Rewards
+  - id: ac07462c-732c-5c1c-947b-4ce533b4fcfb
+    internal-label: Returns
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
-
 ---
-
 # MDVA-42645: l&#39;amministratore non può rimborsare i punti premio per il credito dell&#39;archivio disabilitato
 
 La patch MDVA-42645 risolve il problema per cui l&#39;amministratore non può rimborsare i punti premio se la funzionalità di credito all&#39;archivio è disabilitata. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.12. L&#39;ID della patch è MDVA-42645. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.

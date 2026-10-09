@@ -1,16 +1,30 @@
 ---
-title: Installa  [!DNL Data Migration Tool]
-description: Scopri come installare  [!DNL Data Migration Tool] per trasferire dati tra Magento 1 e Magento 2.
+title: Installa [!DNL Data Migration Tool]
+description: Scopri come installare [!DNL Data Migration Tool] per trasferire i dati tra Magento 1 e Magento 2.
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '389'
 ht-degree: 0%
-
 ---
-
 # Installa [!DNL Data Migration Tool]
 
 >[!INFO]
@@ -29,7 +43,7 @@ Utilizza uno dei seguenti metodi per verificare la versione di Magento in uso:
 
 ### Metapacchetto del compositore
 
-Se il software Magento è stato scaricato utilizzando un metapacchetto Compositore, immettere il comando seguente:
+Se hai scaricato il software Magento utilizzando un metapacchetto Compositore, immetti il comando seguente:
 
 ```shell
 php <magento_root>/bin/magento --version
@@ -70,7 +84,7 @@ Prima dell’installazione, assicurati di disporre di:
 
 ### Installa da `repo.magento.com`
 
-Per installare [!DNL Data Migration Tool], è necessario aggiornare `composer.json` nella directory di installazione radice di Magento per specificare il percorso del pacchetto [!DNL Data Migration Tool].
+Per installare [!DNL Data Migration Tool], è necessario aggiornare `composer.json` nella directory di installazione principale di Magento per specificare il percorso del pacchetto [!DNL Data Migration Tool].
 
 1. Accedi al server applicazioni come [proprietario del file system](../../installation/prerequisites/file-system/overview.md) o passa a tale proprietario.
 1. Passare alla directory radice dell&#39;applicazione.

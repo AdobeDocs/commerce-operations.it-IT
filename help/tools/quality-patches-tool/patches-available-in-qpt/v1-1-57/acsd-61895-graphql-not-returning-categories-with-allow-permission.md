@@ -1,17 +1,38 @@
 ---
-title: 'ACSD-61895: [!DNL GraphQL] la query delle categorie non riesce per il catalogo condiviso privato con visualizzazione limitata'
-description: Applica la patch ACSD-61895 per risolvere il problema di Adobe Commerce per cui [!DNL GraphQL] le risposte per i clienti guest (utilizzando un catalogo condiviso pubblico con tutte le categorie consentite) non restituivano alcuna categoria durante la creazione di un catalogo condiviso privato con restrizioni per le stesse categorie.
+title: 'ACSD-61895: la query di categorie [!DNL GraphQL] non riesce per un catalogo condiviso privato con visualizzazione limitata'
+description: Applicare la patch ACSD-61895 per risolvere il problema di Adobe Commerce per cui [!DNL GraphQL] risposte per i clienti guest (utilizzando un catalogo condiviso pubblico con tutte le categorie consentite) non restituivano alcuna categoria quando è stato creato un catalogo condiviso privato con restrizioni per le stesse categorie.
 feature: Categories, GraphQL, Roles/Permissions
 role: Admin, Developer
 exl-id: ef986fa6-e8bc-4322-80f2-fa0c5d5e8d40
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '564'
 ht-degree: 0%
-
 ---
-
 # ACSD-61895: query [!DNL GraphQL] `categories` non riuscita per catalogo condiviso privato con visualizzazione limitata
 
 La patch ACSD-61895 risolve il problema per cui [!DNL GraphQL] risposte per i clienti guest (utilizzando un catalogo condiviso pubblico con tutte le categorie consentite) non restituivano alcuna categoria quando veniva creato un catalogo condiviso privato con restrizioni per le stesse categorie.

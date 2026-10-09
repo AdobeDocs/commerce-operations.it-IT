@@ -2,13 +2,22 @@
 title: Dettagli tecnici
 description: Scopri i dettagli tecnici della distribuzione della pipeline, i tipi di configurazioni e i flussi di lavoro consigliati.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1282'
 ht-degree: 0%
-
 ---
-
 # Dettagli tecnici
 
 Questo argomento illustra i dettagli tecnici dell’implementazione della pipeline in Commerce 2.2 e versioni successive. I miglioramenti possono essere suddivisi nelle seguenti aree:
@@ -69,16 +78,16 @@ Durante la modalità di produzione, l’amministratore mostra il seguente compor
 - Non è possibile abilitare o disabilitare i tipi di cache nell’amministratore
 - Le impostazioni per gli sviluppatori non sono disponibili (**Archivi** > Impostazioni > **Configurazione** > Avanzate > **Sviluppatore**), tra cui:
 
-   - Minimizzare CSS, JavaScript e HTML
-   - Unisci CSS e JavaScript
-   - Compilazione LESS lato server o lato client
-   - Traduzioni in linea
-   - Come descritto in precedenza, qualsiasi impostazione di configurazione in `config.php` o `env.php` è bloccata e non può essere modificata nell&#39;amministratore.
-   - È possibile modificare le impostazioni locali dell&#39;amministratore solo nelle lingue utilizzate dai temi distribuiti
+  - Minimizzare CSS, JavaScript e HTML
+  - Unisci CSS e JavaScript
+  - Compilazione LESS lato server o lato client
+  - Traduzioni in linea
+  - Come descritto in precedenza, qualsiasi impostazione di configurazione in `config.php` o `env.php` è bloccata e non può essere modificata nell&#39;amministratore.
+  - È possibile modificare le impostazioni locali dell&#39;amministratore solo nelle lingue utilizzate dai temi distribuiti
 
-     Nella figura seguente viene illustrato un esempio dell&#39;elenco **Impostazioni account** > **Impostazioni internazionali interfaccia** dell&#39;amministratore che mostra solo due impostazioni internazionali distribuite:
+    Nella figura seguente viene illustrato un esempio dell&#39;elenco **Impostazioni account** > **Impostazioni internazionali interfaccia** dell&#39;amministratore che mostra solo due impostazioni internazionali distribuite:
 
-     ![È possibile modificare le impostazioni locali dell&#39;amministratore solo nelle impostazioni locali distribuite](../../assets/configuration/split-deploy-admin-locale.png)
+    ![È possibile modificare le impostazioni locali dell&#39;amministratore solo nelle impostazioni locali distribuite](../../assets/configuration/split-deploy-admin-locale.png)
 
 - Non è possibile modificare le configurazioni locali per alcun ambito utilizzando Admin.
 

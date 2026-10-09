@@ -1,14 +1,23 @@
 ---
 title: '[!DNL Upgrade Compatibility Tool] messaggi di errore'
-description: Ulteriori informazioni sui messaggi di errore che si verificano quando si utilizza  [!DNL Upgrade Compatibility Tool]  nel progetto Adobe Commerce.
+description: Ulteriori informazioni sui messaggi di errore rilevati durante l'utilizzo di [!DNL Upgrade Compatibility Tool] nel progetto Adobe Commerce.
 exl-id: fe4a17a9-a807-4315-b3cd-e35f34e39f6d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '4151'
+source-wordcount: '4152'
 ht-degree: 4%
-
 ---
-
 # [!DNL Upgrade Compatibility Tool] messaggi di errore
 
 {{commerce-only}}
@@ -61,7 +70,7 @@ Gli errori critici vengono generati quando il codice personalizzato fa riferimen
 | 5002 | Il tag PHP di apertura deve essere il primo contenuto del file | Assicurati che nel file non sia presente alcun contenuto prima del tag di apertura PHP. |
 | 5003 | La funzione è diventata obsoleta | Utilizza un sostituto suggerito nel messaggio di errore. Se il messaggio non suggerisce una sostituzione, è necessario un esame approfondito per selezionare una funzione o un’implementazione alternativa. |
 | 5005 | Errore di sintassi PHP | Il codice deve essere aggiornato per rispettare gli standard di sintassi PHP. |
-| 5072 | Possibile violazione della progettazione di Magento 2. È stata rilevata una tipica costruzione Magento 1.x | Aggiornamento della costruzione agli standard Magento 2. |
+| 5072 | Possibile violazione del design di Magento 2. È stata rilevata una tipica costruzione Magento 1.x | Aggiornamento della costruzione agli standard Magento 2. |
 | 5076 | Impossibile utilizzare nello spazio dei nomi perché è riservato a partire da PHP 7 | Sostituisci la parola riservata nello spazio dei nomi con una parola chiave non riservata. |
 | 5077 | Impossibile utilizzare come nome di classe perché è riservato a partire da PHP 7 | Sostituire il nome della classe riservata con un nome non riservato. |
 

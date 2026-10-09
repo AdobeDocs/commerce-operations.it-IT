@@ -4,13 +4,27 @@ description: Scopri come il file system.xml gestisce la configurazione delle app
 feature: Configuration, System
 badge: label="Contributo di David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2748'
+source-wordcount: '2751'
 ht-degree: 0%
-
 ---
-
 # riferimento system.xml
 
 Il file `system.xml` consente di gestire la configurazione del sistema Commerce. Utilizzare questo argomento come riferimento generale per il file `system.xml`. Il file `system.xml` si trova in `etc/adminhtml/system.xml` in una determinata estensione di Commerce 2.
@@ -392,7 +406,7 @@ Sono disponibili le seguenti regole di convalida:
 | `phoneUK` | Consente un numero di telefono (Regno Unito). |
 | `phoneUS` | Consente un numero di telefono (Stati Uniti). |
 | `required-entry` | Non consente un valore vuoto (convalida equivalente a `validate-no-empty`).<br>Messaggio di errore di convalida: &quot;Campo obbligatorio&quot;. |
-| `time` | Consente un&#39;ora valida nel formato 24 ore, tra 00:00 e 23:59. Ad esempio `15`, `15:05` o `15:05:48`. |
+| `time` | Consente un orario valido nel formato 24 ore, tra le 00:00 e le 23:59. Ad esempio `15`, `15:05` o `15:05:48`. |
 | `time12h` | Consente un orario valido in formato 12 ore, tra le 12:00 e le 11:59:59 pm. Ad esempio `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | Consente 7 o più caratteri, sia numerici che alfabetici. |
 | `validate-alphanum-with-spaces` | Consente l&#39;uso di lettere (a-z o A-Z), numeri (0-9) o solo spazi. |

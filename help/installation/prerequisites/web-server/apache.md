@@ -4,13 +4,27 @@ description: Scopri come installare e configurare Apache per le distribuzioni Ad
 feature: Install, Configuration
 badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 0%
-
 ---
-
 # Installare Apache per le distribuzioni locali {#apache}
 
 Questa guida illustra come installare Apache per le distribuzioni Adobe Commerce on-premise e configurare le impostazioni Apache richieste da Commerce. Include i requisiti Apache condivisi e le procedure specifiche per il sistema operativo per Ubuntu e CentOS. Adobe consiglia di seguire le istruzioni di configurazione fornite in questa guida per preservare sia la funzionalità che la sicurezza dell’applicazione Commerce.
@@ -103,8 +117,8 @@ Server built: <build-date>
 ```
 
 - Se Apache è installato *not*, vedi:
-   - [Installare o aggiornare Apache su Ubuntu](#installing-or-upgrading-apache-on-ubuntu)
-   - [Installare Apache su CentOS](#installing-apache-on-centos)
+  - [Installare o aggiornare Apache su Ubuntu](#installing-or-upgrading-apache-on-ubuntu)
+  - [Installare Apache su CentOS](#installing-apache-on-centos)
 
 ## Installare o aggiornare Apache su Ubuntu {#installing-or-upgrading-apache-on-ubuntu}
 

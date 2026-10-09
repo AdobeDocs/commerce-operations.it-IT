@@ -5,13 +5,23 @@ feature: Marketing Tools
 role: Admin
 exl-id: 8260c6ac-3ca2-4361-9e36-a8a58468fa95
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
-
 ---
-
 # ACSD-53176: la regola prodotto con condizione `is one of` non corrisponde
 
 La patch ACSD-53176 risolve il problema che causa il funzionamento errato della condizione `is one of` della regola prodotto correlata per **Prodotti da abbinare**. Questa patch è disponibile quando è installato [!DNL Quality Patches Tool (QPT)] 1.1.36. L’ID della patch è ACSD-53176. Il problema è stato risolto in Adobe Commerce 2.4.7.
