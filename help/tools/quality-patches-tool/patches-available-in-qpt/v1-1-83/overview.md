@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 758cab5d4002ddba607dadb3c4b44553adf8d8ba
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '517'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -46,9 +46,9 @@ QPT v1.1.83 include le seguenti patch:
 1. **ACP2E-4998**: è stato risolto il problema che impediva l&#39;aggiornamento degli SKU validi a causa della mancata riuscita della richiesta REST API `POST /V1/products/tier-prices` per l&#39;intera richiesta.
 1. **ACP2E-5015**: è stato risolto il problema che consentiva di rimuovere accidentalmente i prodotti e i prezzi assegnati quando i dati del catalogo richiesti non erano disponibili durante il salvataggio di un catalogo condiviso nell&#39;amministratore.
 1. **AC-14940**: è stato risolto il problema che impediva l&#39;invio dell&#39;e-mail di reimpostazione della password in alcuni casi correlati allo store facendo clic su **[!UICONTROL Reset Password]** per un account cliente nell&#39;amministratore.
-1. **ACP2E-5101**: è stato risolto il problema che impediva l&#39;installazione del modulo B2B se gli indicizzatori erano impostati su **[!UICONTROL Update on Schedule]**.
+1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: è stato risolto il problema che impediva l&#39;installazione del modulo B2B se gli indicizzatori erano impostati su **[!UICONTROL Update by Schedule]**.
 1. **ACP2E-5205**: risolve il problema quando il caricamento della categoria richiede molto tempo o causa un timeout quando sono coinvolte numerose categorie e prodotti. Inoltre, il conteggio dei prodotti viene ora visualizzato correttamente per ogni foglia di categoria.
 1. **ACP2E-3211**: è stato risolto il problema per cui l&#39;aggiunta dello stesso prodotto al carrello contemporaneamente nella vetrina crea elementi separati nel carrello per lo stesso SKU anziché combinarli in un singolo elemento.
-1. **ACP2E-5223**: è stato risolto il problema per cui l&#39;indice delle autorizzazioni del catalogo include siti Web esclusi da un gruppo di clienti.
+1. **[ACP2E-5223](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)**: è stato risolto il problema per cui l&#39;indice **[!UICONTROL Catalog Permissions]** include siti Web esclusi da un gruppo di clienti.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
