@@ -2,7 +2,7 @@
 title: Note sulla versione della patch di sicurezza
 description: Consulta le note sulla versione delle patch di sicurezza di Adobe Commerce per conoscere le versioni supportate, inclusi miglioramenti della sicurezza, correzioni e i contenuti di ogni versione patch.
 exl-id: a3d78211-41ff-4df2-ad29-21465c096027
-last-update: 2026-09-18T00:00:00.000Z
+last-update: 2026-09-18
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
