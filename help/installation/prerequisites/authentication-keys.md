@@ -2,13 +2,22 @@
 title: Ottieni le chiavi di autenticazione
 description: Segui questi passaggi per recuperare le credenziali di accesso ai pacchetti di Adobe Commerce Composer su repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%
-
 ---
-
 # Ottieni le chiavi di autenticazione
 
 L&#39;archivio `repo.magento.com` è il luogo in cui sono archiviati i pacchetti Adobe Commerce e Compositore di terze parti e richiede l&#39;autenticazione. Utilizza il tuo account Commerce Marketplace per generare una coppia di *chiavi di autenticazione* di 32 caratteri per accedere all&#39;archivio.
@@ -17,16 +26,16 @@ Per accedere ai pacchetti Adobe Commerce, devi utilizzare le chiavi associate a 
 
 >[!TIP]
 >
->Se riscontri [errori](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-25968) o non vedi la sezione [!UICONTROL Access Keys] nella scheda Marketplace, potresti non disporre dell&#39;autorizzazione per accedere al pacchetto o il diritto di accesso è scaduto a causa di una fattura in sospeso sul tuo account.
+>Se riscontri [errori](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25968) o non vedi la sezione [!UICONTROL Access Keys] nella scheda Marketplace, potresti non disporre dell&#39;autorizzazione per accedere al pacchetto o il diritto di accesso è scaduto a causa di una fattura in sospeso sul tuo account.
 >
 >* Se si è la persona di contatto principale dell&#39;account, verificare che non siano presenti fatture in sospeso nell&#39;elenco dell&#39;account.
->* Se le chiavi fornite dal contatto principale non funzionano e non sono presenti fatture in sospeso nell&#39;account, il contatto principale deve contattare il [supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) per assistenza.
+>* Se le chiavi fornite dal contatto principale non funzionano e non sono presenti fatture in sospeso nell&#39;account, il contatto principale deve contattare il [supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) per assistenza.
 
 Per creare le chiavi di autenticazione:
 
 >[!NOTE]
 >
->A partire da agosto 2022, il proprietario dell’account deve disporre di un Adobe ID e assicurarsi che sia collegato al proprio account Commerce. Se il proprietario dell&#39;account non dispone di un Adobe ID, deve crearne uno e collegarlo al proprio account Commerce prima di generare le chiavi di autenticazione: [Crea e accedi al tuo account Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
+>A partire da agosto 2022, il proprietario dell’account deve disporre di un Adobe ID e assicurarsi che sia collegato al proprio account Commerce. Se il proprietario dell&#39;account non dispone di un Adobe ID, deve crearne uno e collegarlo al proprio account Commerce prima di generare le chiavi di autenticazione: [Crea e accedi al tuo account Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
 
 1. Accedi a [Commerce Marketplace](https://commercemarketplace.adobe.com/). Se non hai un account, fai clic su **Registra**.
 

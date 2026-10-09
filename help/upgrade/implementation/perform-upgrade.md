@@ -2,13 +2,22 @@
 title: Eseguire un aggiornamento
 description: Per aggiornare le distribuzioni locali di Adobe Commerce, segui la procedura riportata di seguito.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
-
 ---
-
 
 # Eseguire un aggiornamento
 
@@ -19,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->- Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Aggiornare Commerce versione](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version) nella Guida al cloud.
+>- Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Aggiornare Commerce versione](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version) nella Guida al cloud.
 >- Non utilizzare questo metodo per eseguire l’aggiornamento se hai clonato l’archivio GitHub. Consulta [Aggiornare un&#39;installazione basata su Git](../developer/git-installs.md).
 
 Le istruzioni seguenti spiegano come eseguire l’aggiornamento utilizzando Gestione pacchetti Compositore. Adobe Commerce 2.4.2 ha introdotto il supporto per Composer 2. Se si sta tentando di eseguire l&#39;aggiornamento da &lt;2.4.1, è necessario prima eseguire l&#39;aggiornamento a una versione compatibile con Composer 2 (ad esempio, 2.4.2) utilizzando Composer 1 _prima di_ eseguire l&#39;aggiornamento a Composer 2 per gli aggiornamenti >2.4.2. Inoltre, devi eseguire una [versione supportata](../../installation/system-requirements.md) di PHP.
@@ -240,7 +249,7 @@ Per verificare se l’aggiornamento è stato eseguito correttamente, apri l’UR
 
 Se l&#39;applicazione non riesce con un errore `We're sorry, an error has occurred while generating this email.`:
 
-1. Reimposta la proprietà e le autorizzazioni del file system [&#128279;](../../installation/prerequisites/file-system/configure-permissions.md) come utente con privilegi `root`.
+1. Reimposta la proprietà e le autorizzazioni del file system [](../../installation/prerequisites/file-system/configure-permissions.md) come utente con privilegi `root`.
 1. Cancella le directory seguenti:
    - `var/cache/`
    - `var/page_cache/`

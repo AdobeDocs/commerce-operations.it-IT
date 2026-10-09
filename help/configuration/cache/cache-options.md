@@ -3,7 +3,7 @@ title: Opzioni di back-end cache e riferimento archiviazione
 description: Scopri le opzioni di back-end della cache in Adobe Commerce, tra cui file system, Redis, Valkey e archiviazione del database. Scopri le opzioni basate su Zend (RemoteSynchronizedCache) e Symfony Cache.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti locali di Adobe Commerce."
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
 product_v2:
@@ -14,6 +14,11 @@ product_v2:
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -22,10 +27,12 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 0%
@@ -36,13 +43,13 @@ ht-degree: 0%
 >
 >Questa pagina documenta la configurazione di `app/etc/env.php` locale.
 >
->Per i progetti [!DNL Adobe Commerce on Cloud], il pacchetto `ece-tools` genera la configurazione `app/etc/env.php` risultante durante la distribuzione in base alla configurazione della variabile di distribuzione in `.magento.env.yaml`. Non si modifica il file `env.php`.  Consulta [Best practice per la configurazione di Valkey e Redis Service](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) e [distribuire le variabili](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy).
+>Per i progetti [!DNL Adobe Commerce on Cloud], il pacchetto `ece-tools` genera la configurazione `app/etc/env.php` risultante durante la distribuzione in base alla configurazione della variabile di distribuzione in `.magento.env.yaml`. Non si modifica il file `env.php`.  Consulta [Best practice per la configurazione di Valkey e Redis Service](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) e [distribuire le variabili](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy).
 
 L’applicazione Commerce utilizza una cache di basso livello front-end e back-end per fornire accesso allo storage della cache. Commerce supporta diversi back-end e strategie di caching, ciascuno adatto a casi d’uso diversi. Questa pagina descrive i backend disponibili e le loro differenze.
 
 >[!NOTE]
 >
->[Varnish](config-varnish-install.md) gestisce il caching a pagina intera a livello HTTP per le distribuzioni locali. Il [Fastly Service](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/fastly) lo gestisce per le distribuzioni Cloud. Nessuna delle due soluzioni utilizza il back-end della cache di basso livello.
+>[Varnish](config-varnish-install.md) gestisce il caching a pagina intera a livello HTTP per le distribuzioni locali. Il [Fastly Service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) lo gestisce per le distribuzioni Cloud. Nessuna delle due soluzioni utilizza il back-end della cache di basso livello.
 
 ## Opzioni cache back-end
 
@@ -127,7 +134,7 @@ Utilizza il nome completo della classe Redis solo nelle versioni in cui è suppo
 
 Il caching L2 (a due livelli) aggiunge un livello di cache locale su ciascun nodo web davanti allo storage della cache remota condivisa, riducendo il traffico di rete tra Commerce e la cache remota. Per le opzioni di implementazione, il supporto delle versioni e i passaggi di configurazione, vedere [Configurazione cache L2](level-two-cache.md).
 
-Per i progetti Cloud, configura il caching L2 tramite le variabili di distribuzione descritte in [Distribuisci variabili](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}.
+Per i progetti Cloud, configura il caching L2 tramite le variabili di distribuzione descritte in [Distribuisci variabili](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}.
 
 - [Usa Redis per la cache predefinita](redis-pg-cache.md)
 - [Usa Valkey per la cache predefinita](valkey-pg-cache.md)

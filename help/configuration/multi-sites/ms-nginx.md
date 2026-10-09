@@ -2,13 +2,22 @@
 title: Configurare più siti Web con Nginx
 description: Segui questo tutorial per configurare più siti web con Nginx.
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
-
 ---
-
 # Configurare più siti Web con Nginx
 
 Si presuppone che:
@@ -17,7 +26,7 @@ Si presuppone che:
 
   Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
 
-  Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurare più siti Web o store](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) nella _guida di Commerce sull&#39;infrastruttura cloud_.
+  Sono necessarie attività aggiuntive per configurare l’infrastruttura cloud di Adobe Commerce. Dopo aver completato le attività descritte in questo argomento, vedere [Configurare più siti Web o store](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) nella _guida di Commerce sull&#39;infrastruttura cloud_.
 
 - Accettare più domini in un file host virtuale o utilizzare un host virtuale per sito Web. I file di configurazione host virtuale si trovano in `/etc/nginx/sites-available`.
 - Utilizza `nginx.conf.sample` fornito da Commerce con le sole modifiche descritte in questa esercitazione.
@@ -280,7 +289,7 @@ A meno che il DNS non sia configurato per gli URL dei tuoi archivi, devi aggiung
 >[!INFO]
 >
 >- Potrebbero essere necessarie attività aggiuntive per distribuire più siti web in un ambiente ospitato; per ulteriori informazioni, rivolgiti al provider di hosting.
->- Sono necessarie attività aggiuntive per configurare Adobe Commerce sull&#39;infrastruttura cloud; consulta [Configurare più siti Web o store Cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
+>- Sono necessarie attività aggiuntive per configurare Adobe Commerce sull&#39;infrastruttura cloud; consulta [Configurare più siti Web o store Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) nella _Guida di Commerce sull&#39;infrastruttura cloud_.
 
 ### Risoluzione dei problemi
 

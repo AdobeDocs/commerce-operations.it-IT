@@ -3,13 +3,27 @@ title: Autorizzazioni di accesso ai file system
 description: Come impostare il proprietario o i proprietari del file system dell'applicazione Commerce per un sistema di sviluppo e produzione.
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 0%
-
 ---
-
 # Autorizzazioni di accesso ai file system
 
 Questa sezione illustra come impostare il proprietario o i proprietari del file system Commerce per un sistema di sviluppo e produzione. Prima di continuare, esaminare i concetti descritti in [Panoramica sulla proprietà e sulle autorizzazioni del file system](../../installation/prerequisites/file-system/overview.md).
@@ -24,9 +38,9 @@ Nelle sezioni seguenti vengono descritti i requisiti per uno o due proprietari d
 
   Sono invece disponibili utenti separati:
 
-   - L’utente del server web, che esegue l’amministrazione e la vetrina.
+  - L’utente del server web, che esegue l’amministrazione e la vetrina.
 
-   - Un _utente della riga di comando_, che è un account utente locale che è possibile utilizzare per accedere al server. Questo utente esegue i processi cron di Commerce e le utilità della riga di comando.
+  - Un _utente della riga di comando_, che è un account utente locale che è possibile utilizzare per accedere al server. Questo utente esegue i processi cron di Commerce e le utilità della riga di comando.
 
 ## Proprietà del file system di produzione per l&#39;hosting condiviso (un utente)
 

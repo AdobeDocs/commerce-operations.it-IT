@@ -2,13 +2,22 @@
 title: riferimento config.php
 description: Scopri i valori del file config.php e le sezioni per la configurazione di Adobe Commerce. Scopri moduli, ambiti, impostazioni di sistema e best practice per la distribuzione.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 1%
-
+ht-degree: 2%
 ---
-
 # riferimento config.php
 
 Il file `config.php` contiene le sezioni seguenti:
@@ -34,7 +43,7 @@ Contiene un array di moduli e i relativi stati. Se il modulo è abilitato, il va
 ]
 ```
 
-Ulteriori informazioni sui [moduli](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=it).
+Ulteriori informazioni sui [moduli](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
 
 ## ambiti
 
@@ -82,7 +91,7 @@ Contiene un array di valori di configurazione dell&#39;ambito. Ha i seguenti sot
 ]
 ```
 
-Ulteriori informazioni su [ambiti Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it#scope-settings).
+Ulteriori informazioni su [ambiti Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
 
 ## sistema
 

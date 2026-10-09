@@ -3,13 +3,22 @@ title: Dati che richiedono la migrazione manuale
 description: Scopri i dati che devono essere migrati manualmente durante una migrazione di dati da Magento 1 a Magento 2 e come farlo.
 exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '289'
 ht-degree: 0%
-
 ---
-
 # Dati che richiedono la migrazione manuale
 
 È necessario eseguire la migrazione manuale di quattro tipi di dati:
@@ -30,12 +39,12 @@ Questa sezione illustra come eseguire manualmente la migrazione dei file multime
 
 >[!WARNING]
 >
->Il metodo di archiviazione dei supporti di database è obsoleto a partire dalla versione 2.4.3 di Magento.
+>Il metodo di archiviazione dei supporti del database è diventato obsoleto a partire dalla versione 2.4.3 di Magento.
 
 
-Questa sezione è valida per *solo* se i file multimediali vengono archiviati nel database di Magento. Questo passaggio deve essere eseguito prima della [migrazione dei dati](data.md):
+Questa sezione è valida per *solo* se archivi file multimediali nel database di Magento. Questo passaggio deve essere eseguito prima della [migrazione dei dati](data.md):
 
-1. Accedere al pannello di amministrazione di Magento 1 come amministratore.
+1. Accedi al pannello di amministrazione di Magento 1 come amministratore.
 
 1. Fare clic su **Sistema** > **Configurazione** > AVANZATE > **Sistema**.
 
@@ -51,7 +60,7 @@ Quindi, ripeti gli stessi passaggi nel pannello di amministrazione di Magento 2.
 
 Tutti i file multimediali (immagini per prodotti, categorie, editor di WYSIWYG e così via) devono essere copiati manualmente da `<your Magento 1 install dir>/media` a `<your Magento 2 install dir>/pub/media`.
 
-Tuttavia, *non* copiare i file `.htaccess` presenti nella cartella `media` di Magento 1. Magento 2 ha un proprio `.htaccess` che deve essere mantenuto.
+Tuttavia, *non* copia i file `.htaccess` presenti nella cartella `media` di Magento 1. Magento 2 ha un proprio `.htaccess` che deve essere mantenuto.
 
 ## Progettazione vetrina
 

@@ -1,13 +1,22 @@
 ---
-title: Come accedere a  [!DNL Adobe Commerce Patching Automation]
-description: Scopri come accedere a e utilizzare  [!DNL Adobe Commerce Patching Automation]
-source-git-commit: e7e2cb120377e73f2a6f80edcacfcf644b48be84
+title: Come accedere a [!DNL Adobe Commerce Patching Automation]
+description: Scopri come accedere e utilizzare [!DNL Adobe Commerce Patching Automation]
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 1%
-
 ---
-
 # Come accedere a [!DNL Adobe Commerce Patching Automation]
 
 ## Prerequisiti
@@ -34,7 +43,7 @@ Se nell&#39;interfaccia utente di [!DNL Patching Automation] non è presente alc
 
 ## Accesso a [!DNL Patching Automation]
 
-[!DNL Patching Automation] è disponibile come scheda nel dashboard [!DNL Site-Wide Analysis Tool]. Puoi accedervi dal tuo pannello di amministrazione andando in **Rapporti** > **Informazioni di sistema** > **Strumento di analisi a livello di sito** nella barra laterale di amministrazione. Consulta [Come accedere allo strumento di analisi a livello di sito](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/site-wide-analysis-tool/access) per i prerequisiti e la configurazione delle autorizzazioni.
+[!DNL Patching Automation] è disponibile come scheda nel dashboard [!DNL Site-Wide Analysis Tool]. Puoi accedervi dal tuo pannello di amministrazione andando in **Rapporti** > **Informazioni di sistema** > **Strumento di analisi a livello di sito** nella barra laterale di amministrazione. Consulta [Come accedere allo strumento di analisi a livello di sito](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) per i prerequisiti e la configurazione delle autorizzazioni.
 
 Una volta nella dashboard:
 

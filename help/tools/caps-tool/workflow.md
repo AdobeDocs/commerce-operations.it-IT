@@ -1,13 +1,22 @@
 ---
 title: Panoramica del flusso di lavoro [!DNL Adobe Commerce Patching Automation]
-description: Scopri il processo del flusso di lavoro  [!DNL Adobe Commerce Patching Automation] , inclusa la terminologia, le fasi del flusso di lavoro e le operazioni per la gestione automatizzata delle patch.
-source-git-commit: a56211744d35006924bd4ffd35c76ddb77118ed4
+description: Informazioni sul processo del flusso di lavoro [!DNL Adobe Commerce Patching Automation], inclusa la terminologia, le fasi del flusso di lavoro e le operazioni per la gestione automatizzata delle patch.
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1128'
 ht-degree: 0%
-
 ---
-
 # Panoramica del flusso di lavoro [!DNL Adobe Commerce Patching Automation]
 
 In questo argomento viene fornita una panoramica di alto livello sul funzionamento delle operazioni patch con [!DNL Adobe Commerce Patching Automation].
@@ -81,7 +90,7 @@ Questo approccio fornisce:
 
 **Nessuna clonazione dei dati**. L&#39;ambiente di integrazione non riceve una copia dei dati dell&#39;ambiente di destinazione (database, supporto o altro contenuto archiviato). Per applicare e verificare la patch viene utilizzata solo la base di codice
 
-**Fabbisogni di risorse**: la capacità di archiviazione totale del progetto Cloud è definita nel contratto. (Controllare tramite la pagina dell&#39;account o `magento-cloud subscription:info`). L&#39;allocazione del disco di ogni ambiente è configurata separatamente tramite la proprietà `disk` in `.magento.app.yaml`/`.magento/services.yaml`. Per ulteriori dettagli, vedere [Gestione spazio su disco](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space). Se un&#39;operazione di patch non riesce a causa di limiti di archiviazione, controllare l&#39;utilizzo del disco (`magento-cloud db:size` / `magento-cloud mount:size`) dell&#39;ambiente di integrazione rispetto all&#39;allocazione configurata.
+**Fabbisogni di risorse**: la capacità di archiviazione totale del progetto Cloud è definita nel contratto. (Controllare tramite la pagina dell&#39;account o `magento-cloud subscription:info`). L&#39;allocazione del disco di ogni ambiente è configurata separatamente tramite la proprietà `disk` in `.magento.app.yaml`/`.magento/services.yaml`. Per ulteriori dettagli, vedere [Gestione spazio su disco](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space). Se un&#39;operazione di patch non riesce a causa di limiti di archiviazione, controllare l&#39;utilizzo del disco (`magento-cloud db:size` / `magento-cloud mount:size`) dell&#39;ambiente di integrazione rispetto all&#39;allocazione configurata.
 
 #### Fase 2b: applicazione patch nell’ambiente di integrazione
 

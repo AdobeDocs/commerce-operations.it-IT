@@ -2,16 +2,25 @@
 title: Opzioni della modalità di manutenzione per l’aggiornamento
 description: Crea una pagina personalizzata per la modalità di manutenzione che i clienti possono visualizzare nella vetrina di Adobe Commerce durante l’esecuzione di un aggiornamento.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
-
 ---
-
 # Opzioni della modalità di manutenzione per l’aggiornamento
 
-In questo argomento viene illustrato come creare una pagina di manutenzione personalizzata da visualizzare agli utenti durante l&#39;aggiornamento dell&#39;applicazione Magento. La creazione di una pagina personalizzata è facoltativa ma consigliata perché il sito è accessibile durante parte dell’aggiornamento.
+Questo argomento illustra come creare una pagina di manutenzione personalizzata da visualizzare agli utenti durante l’aggiornamento dell’applicazione Magento. La creazione di una pagina personalizzata è facoltativa ma consigliata perché il sito è accessibile durante parte dell’aggiornamento.
 
 La creazione di una pagina personalizzata a cui reindirizzare gli utenti impedisce l’accesso al sito e informa gli utenti che il sito è in fase di manutenzione.
 
@@ -68,7 +77,7 @@ Per reindirizzare il traffico a una pagina di manutenzione personalizzata:
    - Reindirizza tutto il traffico alla pagina di manutenzione
    - Inserire nell&#39;elenco Consentiti determinati IP in modo che un amministratore possa aggiornare il software Magento.
 
-   L&#39;esempio seguente 192.0.2.110.
+   L&#39;esempio seguente inserisce nell&#39;elenco Consentiti 192.0.2.110.
 
    Aggiungi quanto segue alla fine del file di configurazione Apache:
 
@@ -107,7 +116,7 @@ Per reindirizzare il traffico a una pagina di manutenzione personalizzata:
 1. Utilizza un editor di testo per aprire il file di configurazione nginx che contiene il blocco server.
 1. Aggiungere quanto segue al blocco del server (`server` viene visualizzato solo per chiarezza; non aggiungere un secondo blocco del server).
 
-   I seguenti inseriscono nell&#39;elenco Consentiti l&#39;indirizzo IP 192.0.2.110 e 192.0.2.115 in un sistema in cui è installato Magento in `/var/www/html/magento2`:
+   I seguenti di installazione di inseriscono nell&#39;elenco Consentiti l’indirizzo IP 192.0.2.110 e 192.0.2.115 in un sistema in cui è installato Magento in `/var/www/html/magento2`:
 
    ```conf
    server {

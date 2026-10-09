@@ -1,14 +1,23 @@
 ---
-title: Panoramica di  [!DNL Upgrade Compatibility Tool]
-description: Scopri  [!DNL Upgrade Compatibility Tool]  e come può aiutarti con il tuo progetto Adobe Commerce.
+title: Panoramica di [!DNL Upgrade Compatibility Tool]
+description: Scopri [!DNL Upgrade Compatibility Tool] e come può essere utile per il tuo progetto Adobe Commerce.
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '349'
 ht-degree: 0%
-
 ---
-
 # Panoramica della guida
 
 {{commerce-only}}
@@ -25,7 +34,7 @@ Questa guida è destinata agli amministratori e ai tecnici del software di Adobe
 
 - Come strumento [interfaccia della riga di comando](../upgrade-compatibility-tool/run.md) autonomo. Per l&#39;elenco completo dei comandi disponibili, vedere il riferimento [`bin/uct`](../../tools/reference/uct.md).
 - Integrazione di [!DNL Upgrade Compatibility Tool] con [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
-- Configurazione di esecuzione all&#39;interno del [plug-in Magento PHPStorm](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
+- Configurazione di esecuzione nel plug-in [PHPStorm di Magento](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
 ## Flusso di lavoro
 
@@ -37,7 +46,7 @@ Diagramma ![[!DNL Upgrade Compatibility Tool]](../../assets/upgrade-guide/uct-di
 
 Guarda questo video per saperne di più su [!DNL Upgrade Compatibility Tool]:
 
->[!VIDEO](https://video.tv.adobe.com/v/344384?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
 
 ## Contribuisci a migliorare [!DNL Upgrade Compatibility Tool]
 

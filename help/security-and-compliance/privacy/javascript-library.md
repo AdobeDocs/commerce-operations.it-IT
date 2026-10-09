@@ -2,13 +2,22 @@
 title: Libreria JavaScript per la privacy
 description: Scopri come utilizzare gli strumenti personalizzati per accedere ed eliminare le informazioni personali dei clienti raccolte da Adobe Commerce.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '287'
 ht-degree: 0%
-
 ---
-
 <!-- TODO: Remove this topic and redirect to the adobe-privacy-javascript-library.md when the Adobe privacy library has been integrated with Commerce. -->
 
 # Libreria JavaScript per la privacy
@@ -21,7 +30,7 @@ Questa libreria fornisce un set di funzioni per creare richieste di dati sulla p
 
 >[!NOTE]
 >
->Se la modalità di restrizione dei cookie [è abilitata](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=it), Commerce non raccoglie i dati comportamentali fino al consenso dell&#39;acquirente. Se la modalità di restrizione dei cookie [!UICONTROL **Modalità**] è disabilitata, Commerce raccoglie i dati comportamentali per impostazione predefinita.
+>Se la modalità di restrizione dei cookie [è abilitata](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html), Commerce non raccoglie i dati comportamentali fino al consenso dell&#39;acquirente. Se la modalità di restrizione dei cookie [!UICONTROL **Modalità**] è disabilitata, Commerce raccoglie i dati comportamentali per impostazione predefinita.
 
 ## Installazione
 

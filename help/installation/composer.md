@@ -2,13 +2,22 @@
 title: Installazione rapida on-premise
 description: Scopri come installare Adobe Commerce nella tua infrastruttura utilizzando Composer. Scopri i passaggi rapidi e i requisiti di configurazione.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 0%
-
 ---
-
 # Installazione rapida on-premise
 
 Le istruzioni presenti in questa pagina descrivono come installare Adobe Commerce su un’infrastruttura con hosting autonomo. Per informazioni sull&#39;aggiornamento di un&#39;installazione esistente, vedere la [_Guida all&#39;aggiornamento_](../upgrade/overview.md).
@@ -93,7 +102,7 @@ Per ottenere il metapacchetto Adobe Commerce:
 
    >[!NOTE]
    >
-   > Se si utilizza un file Composer `[auth.json](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/authentication-keys)` o una variabile di ambiente configurata con le chiavi di autenticazione di Commerce, non viene richiesto di immettere le chiavi di autenticazione.
+   > Se si utilizza un file Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)` o una variabile di ambiente configurata con le chiavi di autenticazione di Commerce, non viene richiesto di immettere le chiavi di autenticazione.
 
    Se si verificano errori, ad esempio `Could not find package...` o `...no matching package found`, verificare che il comando non contenga errori di battitura. Se riscontri ancora errori, potresti non essere autorizzato a scaricare Adobe Commerce. Contatta il [Supporto Adobe Commerce](https://support.magento.com/hc/en-us) per assistenza.
 

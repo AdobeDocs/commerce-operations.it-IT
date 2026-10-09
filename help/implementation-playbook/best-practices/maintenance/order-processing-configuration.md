@@ -4,20 +4,32 @@ description: Scopri le best practice di configurazione per migliorare le prestaz
 role: Admin, User
 feature: Best Practices
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
-
 ---
-
 # Best practice di configurazione per l’elaborazione degli ordini
 
 Con l&#39;aumento del volume degli ordini nei siti Commerce, è possibile ottimizzare le prestazioni di pagamento e l&#39;elaborazione degli ordini abilitando le seguenti opzioni di configurazione dello store:
 
 - **[!UICONTROL Asynchronous indexing]** - Abilitare questa opzione per evitare blocchi del database e rallentamenti dell&#39;elaborazione che possono verificarsi quando un numero elevato di ordini viene effettuato contemporaneamente.
 - **[!UICONTROL Asynchronous email notifications]** - Abilitare questa opzione per velocizzare le prestazioni di estrazione inviando le notifiche e-mail di estrazione e di elaborazione dell&#39;ordine a intervalli definiti anziché inviarle immediatamente.
-- **[!UICONTROL Enable Archiving]** - Abilitare questa opzione per migliorare le prestazioni di ordini, fatture, spedizioni e note di accredito e mantenere l&#39;area di lavoro libera da informazioni non necessarie, in modo da poter concentrarsi sulle attività correnti. Vedi [Abilita archiviazione](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+- **[!UICONTROL Enable Archiving]** - Abilitare questa opzione per migliorare le prestazioni di ordini, fatture, spedizioni e note di accredito e mantenere l&#39;area di lavoro libera da informazioni non necessarie, in modo da poter concentrarsi sulle attività correnti. Vedi [Abilita archiviazione](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ## Prodotti e versioni interessati
 
@@ -30,7 +42,7 @@ Con l&#39;aumento del volume degli ordini nei siti Commerce, è possibile ottimi
 
 I passaggi per abilitare l’elaborazione asincrona dell’ordine dipendono dalla modalità di distribuzione:
 
-- Per Adobe Commerce su infrastrutture cloud e siti locali in modalità di produzione, utilizza il seguente comando Magento CLI per abilitare l’indicizzazione asincrona:
+- Per Adobe Commerce su infrastrutture cloud e siti locali in modalità di produzione, utilizza il seguente comando CLI di Magento per abilitare l’indicizzazione asincrona:
 
   ```php
   php bin/magento config:set dev/grid/async_indexing 1
@@ -38,7 +50,7 @@ I passaggi per abilitare l’elaborazione asincrona dell’ordine dipendono dall
 
 - Per i siti Adobe Commerce locali in modalità predefinita o Produzione, abilita l’indicizzazione asincrona aggiornando la configurazione delle Impostazioni griglia in Amministratore.
 
-  Vedi [Abilitare gli aggiornamenti pianificati della griglia e la reindicizzazione](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html?lang=it#enable-scheduled-grid-updates-and-reindexing)
+  Vedi [Abilitare gli aggiornamenti pianificati della griglia e la reindicizzazione](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
 
   >[!WARNING]
   >

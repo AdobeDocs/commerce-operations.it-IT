@@ -1,13 +1,22 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]'
-description: Scopri  [!DNL Adobe Commerce Patching Automation], i suoi utilizzi, come accedervi e le best practice per l'applicazione automatica delle patch
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+description: Scopri [!DNL Adobe Commerce Patching Automation], i suoi utilizzi, come accedervi e le best practice per l'applicazione automatica delle patch
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Commerce Patching Automation]
 
 [!DNL Adobe Commerce Patching Automation] è uno strumento che automatizza il processo di applicazione e ripristino delle patch per gli ambienti Adobe Commerce on Cloud. Offre agli amministratori di progetti Commerce un flusso di lavoro semplificato per applicare e ripristinare le patch. La convalida e i controlli di integrità integrati contribuiscono a garantire la stabilità e la sicurezza degli ambienti Cloud.
@@ -51,7 +60,7 @@ Questa guida è stata progettata per i commercianti e i partner di Adobe Commerc
 
 Scopri [!DNL Adobe Commerce Patching Automation] e come questo strumento consente agli utenti di trovare e applicare rapidamente le patch di sicurezza. Il video seguente illustra come accedervi tramite il dashboard dello strumento di analisi a livello di sito (SWAT), scegliere il progetto e l’ambiente e applicare le patch con un clic.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476255/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## Casi d’uso comuni
 

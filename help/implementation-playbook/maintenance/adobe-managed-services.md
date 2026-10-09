@@ -3,13 +3,25 @@ title: Adobe Managed Services
 description: Scopri in che modo Adobe Managed Services può supportare e mantenere l’implementazione di Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Managed Services
 
@@ -28,12 +40,12 @@ Adobe Managed Services offre vantaggi chiave rispetto alle implementazioni cloud
 - **Obiettivi di livello di servizio migliorati (SLT)**: tempi di risposta più rapidi rispetto al supporto Adobe Commerce standard.
 - **SLA (Service Level Agreement) migliorati**: livello di applicazione del 99,9% che i clienti Adobe Commerce regolari su infrastrutture cloud raggiungono con il 99,99% del livello di infrastruttura.
 - **Designated Cloud Expertise**: Managed Services fornisce ai clienti un Customer Success Engineer (CSE) dedicato che funge da esperto di applicazioni e infrastrutture cloud. Il CSE collabora con i clienti e i loro partner fornendo loro best practice e indicazioni per accelerare il time-to-market, tra cui:
-   - Guida e supporto durante il processo di onboarding
-   - Gestione del provisioning e della configurazione della piattaforma
-   - Consigli sui principi dell’architettura per integrazioni e personalizzazioni
-   - Gestione degli incidenti e Business Continuity
-   - Supporto degli eventi tramite pianificazione, esecuzione e monitoraggio
-   - Supporto e competenze cloud (ottimizzazione proattiva, reporting e best practice)
+  - Guida e supporto durante il processo di onboarding
+  - Gestione del provisioning e della configurazione della piattaforma
+  - Consigli sui principi dell’architettura per integrazioni e personalizzazioni
+  - Gestione degli incidenti e Business Continuity
+  - Supporto degli eventi tramite pianificazione, esecuzione e monitoraggio
+  - Supporto e competenze cloud (ottimizzazione proattiva, reporting e best practice)
 
 Per un confronto più dettagliato dei principali vantaggi offerti da Managed Services, consulta la tabella seguente:
 
@@ -388,7 +400,7 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
 
 Lo stack di sicurezza Adobe per Managed Services crea la sicurezza in a ogni livello utilizzando l’automazione e la coerenza per ridurre gli errori umani. I team di sviluppo e operativi ereditano automaticamente i controlli di sicurezza da diversi livelli dello stack.
 
-I partner della piattaforma, come Amazon Web Services e Microsoft Azure, garantiscono la massima copertura di sicurezza quando si applicano personalizzazioni della piattaforma, mentre il team Managed Services di Adobe fornisce servizi di sicurezza di base, come conformità, registrazione, autenticazione, scansione e monitoraggio, sicurezza del server e configurazione sicura delle applicazioni. Per ulteriori informazioni, vedere [Sicurezza Adobe Commerce](https://business.adobe.com/it/products/magento/secure-ecommerce.html).
+I partner della piattaforma, come Amazon Web Services e Microsoft Azure, garantiscono la massima copertura di sicurezza quando si applicano personalizzazioni della piattaforma, mentre il team Managed Services di Adobe fornisce servizi di sicurezza di base, come conformità, registrazione, autenticazione, scansione e monitoraggio, sicurezza del server e configurazione sicura delle applicazioni. Per ulteriori informazioni, vedere [Sicurezza Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html).
 
 Il diagramma seguente mostra lo stack della tecnologia di sicurezza Adobe Managed Services:
 

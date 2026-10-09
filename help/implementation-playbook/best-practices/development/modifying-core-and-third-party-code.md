@@ -5,13 +5,23 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2023-12-8
 exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1767'
 ht-degree: 0%
-
 ---
-
 # Best practice per modificare o ignorare il codice PHP di base e di terze parti
 
 Questo documento descrive le best practice da seguire quando si rende necessario modificare la funzionalità, il risultato o l’input di un codice che non è stato creato o che non è stato controllato direttamente. In altre parole, codice core e codice di terze parti. Questo documento si concentra principalmente sul codice PHP back-end.
@@ -104,7 +114,7 @@ Le preferenze sono un modo ingordo per modificare il codice e devono essere util
 
 ### Osservatore
 
-Un osservatore è il concetto di listener di eventi, presente in molte applicazioni, piattaforme, librerie e linguaggi di codifica. Il concetto non è univoco per la piattaforma Adobe Commerce. Gli osservatori sono stati inseriti nella piattaforma fin dai tempi di Magento 1 e sono considerati una scelta primaria di come modificare il codice di base e il codice di terze parti. 
+Un osservatore è il concetto di listener di eventi, presente in molte applicazioni, piattaforme, librerie e linguaggi di codifica. Il concetto non è univoco per la piattaforma Adobe Commerce. Gli osservatori sono stati inseriti nella piattaforma fin dai tempi di Magento 1 e sono considerati la scelta principale per la modifica del codice di base e del codice di terze parti. 
 
 La base di codice core e qualsiasi modulo di terze parti possono inviare un evento in un luogo scelto nel codice. L&#39;osservatore, dichiarato in un file `events.xml` e in ascolto dell&#39;evento inviato per nome, può lavorare a livello globale o essere vincolato a qualsiasi &quot;area&quot; di Adobe Commerce, ad esempio `frontend`, `adminhtml`, `graphql`, `webapi_rest` e `crontab`.
 

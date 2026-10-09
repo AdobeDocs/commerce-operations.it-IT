@@ -2,13 +2,22 @@
 title: Lettura consigliata per gli aggiornamenti
 description: Consulta la documentazione consigliata per pianificare l’aggiornamento di Adobe Commerce.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 2%
-
 ---
-
 # Lettura consigliata per la pianificazione dell&#39;aggiornamento
 
 Continua a conoscere gli aggiornamenti di Adobe Commerce utilizzando le risorse presenti in questa pagina.
@@ -21,17 +30,17 @@ Continua a conoscere gli aggiornamenti di Adobe Commerce utilizzando le risorse 
           <ul>
             <li><a href="https://blog.adobe.com/">Blog di Adobe</a></li>
             <li><a href="https://blog.adobe.com/">Blog per sviluppatori di Adobe</a></li>
-            <li><a href="https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/overview">Centro assistenza Adobe</a></li>
-            <li><a href="https://helpx.adobe.com/it/security/security-bulletin.html">Bollettino sulla sicurezza di Adobe</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview">Centro assistenza Adobe</a></li>
+            <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Bollettino sulla sicurezza di Adobe</a></li>
             <li><a href="https://developer.adobe.com/commerce/">Adobe Commerce sul sito Adobe Developer</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=it">Note sulla versione di Adobe Commerce su cloud o on-premise</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Note sulla versione di Adobe Commerce su cloud o on-premise</a></li>
             <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Portale per i partner delle soluzioni</a></li>
           </ul>
         </td>
       <td><strong>Strumenti</strong>
         <p>Sfoglia gli strumenti progettati per semplificare la ricerca e l’utilizzo del software Adobe Commerce.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/uct-phpstorm">Plug-in PhpStorm di Upgrade Compatibility Tool</a> (video)</li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/uct-phpstorm">Plug-in PhpStorm di Upgrade Compatibility Tool</a> (video)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Upgrade Compatibility Tool</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool canale Slack</a></li>
             <li><a href="../../tools/quality-patches-tool/usage.md">Strumento Patch di qualità</a></li>
@@ -42,9 +51,9 @@ Continua a conoscere gli aggiornamenti di Adobe Commerce utilizzando le risorse 
       <td><strong>Calendari e criteri</strong>
         <p>Rivedi i dettagli sulle versioni e i criteri di Adobe Commerce.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-eos-policy-faq">Domande frequenti sulla fine del supporto del software Adobe Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-eos-policy-faq">Domande frequenti sulla fine del supporto del software Adobe Commerce</a></li>
             <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements">Criterio Commerce Marketplace</a></li>
-            <li><a href="https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy">Domande frequenti sulla nuova strategia di rilascio di Adobe Commerce, sulle politiche del ciclo di vita aggiornate e sul supporto esteso</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy">Domande frequenti sulla nuova strategia di rilascio di Adobe Commerce, sulle politiche del ciclo di vita aggiornate e sul supporto esteso</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">Ciclo di vita</a></li>
             <li><a href="../../release/schedule.md">Pianificazione della versione</a></li>
             <li><a href="../../release/versioning-policy.md">Tipi di rilascio</a></li>
@@ -65,8 +74,8 @@ Continua a conoscere gli aggiornamenti di Adobe Commerce utilizzando le risorse 
         <p>Proteggi la vetrina e assicurati un funzionamento efficiente. Preparati per l’aggiornamento ad Adobe Commerce consultando l’ampia documentazione tecnica di Adobe.</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">Percorsi di aggiornamento consigliati</a></li>
-            <li><a href="https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/2-4-upgrade-workshop">2.4 Registrazione del workshop di aggiornamento tecnico</a></li>
-            <li><a href="https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release">Accesso alle pre-release</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/2-4-upgrade-workshop">2.4 Registrazione del workshop di aggiornamento tecnico</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release">Accesso alle pre-release</a></li>
             <li><a href="../../release/beta.md">Panoramica delle versioni di Beta</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy">Sviluppo incompatibile con le versioni precedenti</a></li>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Modifiche non compatibili con le versioni precedenti</a></li>

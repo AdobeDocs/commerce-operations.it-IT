@@ -4,13 +4,25 @@ description: Scopri i consigli per la configurazione dei limiti del carrello e d
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 0%
-
 ---
-
 # Best practice per la gestione del catalogo
 
 Le best practice per la gestione dei cataloghi qui descritte riguardano una serie di problemi, tra cui (ma non sono limitate a):
@@ -100,7 +112,7 @@ Rimuovere i set di attributi di prodotto inutilizzati utilizzando MySQL.
 
 #### Verifica la configurazione del set di attributi
 
-1. [Connessione al database del sito](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database).
+1. [Connessione al database del sito](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Trovare il numero di set di attributi utilizzando MySQL
 
@@ -179,7 +191,7 @@ La visualizzazione di un numero eccessivo di prodotti per pagina può influire s
 
 Se hai troppi prodotti in una categoria, aggiorna la configurazione del catalogo della vetrina per disabilitare l&#39;opzione su **Consenti tutti i prodotti per pagina**.
 
-Dopo aver disabilitato questa opzione, Adobe Commerce utilizza i controlli di paginazione della vetrina per gestire il numero di prodotti visualizzati nei componenti della vetrina. Per istruzioni, vedere [Configurare i controlli di impaginazione](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=it#configure-the-pagination-controls).
+Dopo aver disabilitato questa opzione, Adobe Commerce utilizza i controlli di paginazione della vetrina per gestire il numero di prodotti visualizzati nei componenti della vetrina. Per istruzioni, vedere [Configurare i controlli di impaginazione](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Limiti SKU prodotto
 

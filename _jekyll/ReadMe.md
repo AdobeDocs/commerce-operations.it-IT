@@ -1,10 +1,21 @@
 ---
-source-git-commit: 90e3f9cb6033c91be67947e84520d3e2537ca5d9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
-
 ---
+
 # Panoramica
 
 Questo progetto utilizza le attività Rake per automatizzare parti del flusso di lavoro della documentazione. La maggior parte delle attività sono condivise tra gli archivi documenti di ExL Commerce e provengono dal gem [`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks). Di seguito sono riportate alcune attività specifiche di questo archivio.
@@ -73,7 +84,7 @@ bundle exec rake -T [task_name]
 
 ## Includi formato file relazioni
 
-Il file `include-relationships.yml` tiene traccia delle relazioni tra i file di contenuto principale e i relativi file inclusi. Questo file viene gestito automaticamente dall&#39;attività `includes:maintain_relationships` (vedi il file README[&#128279;](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks/blob/main/README.md) di adobe-comdox-exl-rake-tasks per informazioni sull&#39;utilizzo delle attività), che rileva le relazioni leggendo i file di inclusione esistenti e trovando i file principali che vi fanno riferimento.
+Il file `include-relationships.yml` tiene traccia delle relazioni tra i file di contenuto principale e i relativi file inclusi. Questo file viene gestito automaticamente dall&#39;attività `includes:maintain_relationships` (vedi il file README](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks/blob/main/README.md) di [adobe-comdox-exl-rake-tasks per informazioni sull&#39;utilizzo delle attività), che rileva le relazioni leggendo i file di inclusione esistenti e trovando i file principali che vi fanno riferimento.
 
 **Struttura file:**
 

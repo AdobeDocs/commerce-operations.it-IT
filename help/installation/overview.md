@@ -2,13 +2,22 @@
 title: Panoramica sull'installazione locale
 description: Scopri il processo di installazione locale per Adobe Commerce. Scopri i requisiti del server, i passaggi di configurazione e le best practice per l’implementazione.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 3%
-
 ---
-
 
 # Panoramica sull&#39;installazione locale
 
@@ -20,7 +29,7 @@ Questa pagina fornisce una panoramica dell’installazione di Adobe Commerce sul
 >
 >Per procedere correttamente, devi disporre di conoscenze tecniche intermedie e di accesso al server.
 
-L&#39;installazione crea un archivio Adobe Commerce completamente funzionante con una [vetrina per il cliente](https://experienceleague.adobe.com/it/docs/commerce-admin/start/storefront/storefront) e un [pannello amministrativo](https://experienceleague.adobe.com/it/docs/commerce-admin/start/admin/admin). Prima di iniziare il processo, è necessario disporre delle credenziali del database, delle informazioni sul dominio e delle chiavi di autenticazione.
+L&#39;installazione crea un archivio Adobe Commerce completamente funzionante con una [vetrina per il cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) e un [pannello amministrativo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Prima di iniziare il processo, è necessario disporre delle credenziali del database, delle informazioni sul dominio e delle chiavi di autenticazione.
 
 ## Responsabilità del commerciante
 
@@ -33,7 +42,7 @@ Con Adobe Commerce on-premise, è possibile ospitare e gestire la propria infras
 Le aziende hanno il pieno controllo dell&#39;ambiente, consentendo una maggiore personalizzazione e flessibilità, ma sono responsabili di garantire le prestazioni, la sicurezza e la scalabilità dell&#39;infrastruttura. Ad esempio, sei responsabile di quanto segue:
 
 - Progettazione, implementazione, configurazione, manutenzione, risoluzione dei problemi e test delle prestazioni di tutti i sistemi Adobe Commerce locali.
-   - Server, sistema operativo, database, [!DNL PHP], ricerca, memorizzazione nella cache, cache a pagina intera e rete di distribuzione dei contenuti. I temi comuni possono includere [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] e qualsiasi [!DNL CDN] utilizzato.
+  - Server, sistema operativo, database, [!DNL PHP], ricerca, memorizzazione nella cache, cache a pagina intera e rete di distribuzione dei contenuti. I temi comuni possono includere [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] e qualsiasi [!DNL CDN] utilizzato.
 - Pianificazione della capacità, scalabilità automatica, clustering, backup, disaster recovery
 - Tutti i dati relativi a prodotti e clienti, progettazione, configurazione e configurazione, manutenzione di applicazioni e database, distribuzione del codice, aggiornamenti delle versioni e applicazione di patch
 - Monitoraggio e avvisi tramite APM/registrazione/avvisi (ad esempio, [!DNL New Relic], [!DNL Datadog], [!DNL ELK])

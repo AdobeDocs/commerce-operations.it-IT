@@ -1,16 +1,31 @@
 ---
 title: 'Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.72'
-description: Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in  [!DNL Quality Patches Tool] (QPT) v1.1.72.
+description: Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in [!DNL Quality Patches Tool] (QPT) v1.1.72.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '276'
 ht-degree: 0%
-
 ---
-
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.72
 
 Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti dalle patch disponibili in [!DNL Quality Patches Tool] (QPT) v1.1.72.
@@ -18,9 +33,9 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 QPT v1.1.72 include le seguenti patch:
 
 1. **ACSD-66807**: la tabella `report_viewed_product_index` mostra un conteggio errato delle visualizzazioni delle pagine dei prodotti.
-1. **ACSD-67187**: gli utenti amministratori limitati a siti Web non predefiniti visualizzano l&#39;errore, *&quot;*Crea almeno un catalogo condiviso pubblico per continuare* e non può accedere al pulsante **[!UICONTROL Add New Company]** nella griglia dell&#39;azienda.
+1. **ACSD-67187**: gli utenti amministratori limitati a siti Web non predefiniti visualizzano l&#39;errore, *&quot;* Crea almeno un catalogo condiviso pubblico per continuare* e non può accedere al pulsante **[!UICONTROL Add New Company]** nella griglia dell&#39;azienda.
 1. **ACSD-67383**: errore durante l&#39;accesso come cliente con due account amministratore società nella stessa sessione.
-1. **ACSD-67424**: il valore `updated_at` nella risposta API `GET /carts/search` di [!DNL REST] non corrisponde al valore visualizzato in **[!UICONTROL Admin panel]** quando si utilizzano le virgolette negoziabili.
+1. **ACSD-67424**: il valore `updated_at` nella risposta API [!DNL REST] di `GET /carts/search` non corrisponde al valore visualizzato in **[!UICONTROL Admin panel]** quando si utilizzano le virgolette negoziabili.
 1. **ACSD-67518**: il reporting avanzato genera righe di intestazione duplicate quando il conteggio delle righe supera le dimensioni del batch.
 1. **ACSD-67639**: la creazione di una nota di credito non riesce per i prodotti bundle con **[!UICONTROL Dynamic Price]** impostato su *No*.
 1. **ACSD-67696**: `media_gallery` voci non vengono restituite nel nodo del prodotto Cart GraphQL dopo uno scaricamento della cache.

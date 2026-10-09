@@ -1,17 +1,31 @@
 ---
 title: 'ACSD-45143: la mutazione setShippingAddressesOnCart non imposta il codice di regione numerico come ''region'''
-description: La patch ACSD-45143 risolve il problema per cui la mutazione setShippingAddressesOnCart non consente di impostare il codice di regione numerico come "region". Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.17. L’ID della patch è ACSD-45143. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
+description: La patch ACSD-45143 risolve il problema per cui la mutazione setShippingAddressesOnCart non consente di impostare il codice di regione numerico come "region". Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.17. L’ID della patch è ACSD-45143. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 feature: Orders, Shipping/Delivery, Shopping Cart
 role: Admin
 exl-id: c7d9d1f2-4731-406f-93bd-036f0fe75b1d
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 04d3134c-2afb-5bd7-ac14-e19fa935e848
+    internal-label: Shipping/Delivery
+  - id: df8eaa0e-dd74-553a-8ad5-28129f8e8d3d
+    internal-label: Shopping Cart
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
-
 ---
-
 # ACSD-45143: la mutazione setShippingAddressesOnCart non imposta il codice di regione numerico come &#39;region&#39;
 
 La patch ACSD-45143 risolve il problema per cui la mutazione setShippingAddressesOnCart non consente di impostare il codice di regione numerico come &quot;region&quot;. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.17. L’ID della patch è ACSD-45143. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
@@ -40,9 +54,9 @@ La mutazione setShippingAddressesOnCart non consente di impostare il codice di a
 
    <pre>
     <code class="language-graphql">
-    mutation &lbrace;
+    mutation {
       createEmptyCart
-    &rbrace;
+    }
     </code>
     </pre>
 
@@ -50,12 +64,12 @@ La mutazione setShippingAddressesOnCart non consente di impostare il codice di a
 
    <pre>
     <code class="language-graphql">
-    mutation ($cartId: String!) &lbrace;
+    mutation ($cartId: String!) {
       setShippingAddressesOnCart(
-        input: &lbrace;
+        input: {
           cart_id: $cartId
-          shipping_addresses: &lbrace;
-            address: &lbrace;
+          shipping_addresses: {
+            address: {
               firstname: "Tomek"
               lastname: "Nowak"
               company: "Company Name"
@@ -66,31 +80,31 @@ La mutazione setShippingAddressesOnCart non consente di impostare il codice di a
               country_code: "FR"
               telephone: "123-456-0000"
               save_in_address_book: false
-            &rbrace;
-          &rbrace;
-        &rbrace;
-        ) &lbrace;
-          cart &lbrace;
-            shipping_addresses &lbrace;
+            }
+          }
+        }
+        ) {
+          cart {
+            shipping_addresses {
               firstname
               lastname
               company
               street
               city
-              region &lbrace;
+              region {
                 code
                 label
-              &rbrace;
+              }
               postcode
               telephone
-              country &lbrace;
+              country {
                 code
                 label
-              &rbrace;
-            &rbrace;
-          &rbrace;
-        &rbrace;
-      &rbrace;
+              }
+            }
+          }
+        }
+      }
       </code>
       </pre>
 
@@ -108,35 +122,35 @@ Il codice di regione viene modificato in 47.
 
 <pre>
 <code class="language-graphql">
-&lbrace;
-  "data": &lbrace;
-    "setShippingAddressesOnCart": &lbrace;
-      "cart": &lbrace;
-        "shipping_addresses": &lbrack;
-        &lbrace;
+{
+  "data": {
+    "setShippingAddressesOnCart": {
+      "cart": {
+        "shipping_addresses": [
+        {
           "firstname": "Tomek",
           "lastname": "Nowak",
           "company": "Company Name",
-          "street": &lbrack;
+          "street": [
           "234 Rue de Rivoli"
-          &rbrack;,
+          ],
           "city": "Lille",
-          "region": &lbrace;
+          "region": {
             "code": "47",
             "label": "Lot-et-Garonne"
-            &rbrace;,
+            },
             "postcode": "59800",
             "telephone": "123-456-0000",
-            "country": &lbrace;
+            "country": {
               "code": "FR",
               "label": "FR"
-            &rbrace;
-          &rbrace;
-        &rbrack;
-      &rbrace;
-    &rbrace;
-  &rbrace;
-&rbrace;
+            }
+          }
+        ]
+      }
+    }
+  }
+}
 </code>
 </pre>
 
@@ -145,7 +159,7 @@ Il codice di regione viene modificato in 47.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
@@ -154,4 +168,4 @@ Per ulteriori informazioni sullo strumento Patch di qualità, vedere:
 * [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando lo strumento Patch di qualità](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!DNL Quality Patches Tool].
 
-Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella guida di [!DNL Quality Patches Tool].
+Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida di [!DNL Quality Patches Tool].

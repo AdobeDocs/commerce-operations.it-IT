@@ -1,18 +1,27 @@
 ---
 title: Follow-up sulla migrazione dei dati
-description: Scopri come verificare che la migrazione dei dati da Magento 1 a Magento 2 sia stata eseguita correttamente e che tutte le funzionalità funzionino come previsto.
+description: Scopri come verificare che la migrazione dei dati da Magento 1 a Magento 2 sia avvenuta correttamente e che tutte le funzionalità funzionino come previsto.
 exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '315'
 ht-degree: 0%
-
 ---
-
 # Follow-up sulla migrazione dei dati
 
-Alcuni comportamenti e logiche di Magento 1 sono stati implementati in modo diverso in Magento 2. [!DNL Data Migration Tool] se ne occupa. Ci sono alcuni aspetti relativi alla migrazione di cui dovresti essere a conoscenza e a volte devi adottare misure minori per garantire il corretto funzionamento di alcune funzionalità dopo la migrazione.
+Alcuni comportamenti e logiche di Magento 1 sono stati implementati diversamente in Magento 2. [!DNL Data Migration Tool] se ne occupa. Ci sono alcuni aspetti relativi alla migrazione di cui dovresti essere a conoscenza e a volte devi adottare misure minori per garantire il corretto funzionamento di alcune funzionalità dopo la migrazione.
 
 ## Informazioni
 
@@ -38,7 +47,7 @@ Dopo la migrazione, i segmenti dei clienti devono essere salvati nuovamente dal 
 
 Lo strumento non esegue la migrazione delle impostazioni del fuso orario, pertanto devi configurare manualmente il fuso orario dopo la migrazione in **Archivi** > **Configurazione** > **Opzioni internazionali** > **Fuso orario**.
 
-Per impostazione predefinita, Magento memorizza i dati temporali nel fuso UTC-0 nel database e li visualizza in base alle impostazioni correnti del fuso orario. Se i dati temporali sono già stati salvati nel database in una zona diversa da UTC-0, è necessario convertire l&#39;ora esistente in UTC-0 utilizzando il gestore [!DNL Data Migration Tool] di `\Migration\Handler\Timezone`.
+Per impostazione predefinita, Magento memorizza i dati temporali nel fuso orario UTC-0 nel database e li visualizza in base alle impostazioni correnti del fuso orario. Se i dati temporali sono già stati salvati nel database in una zona diversa da UTC-0, è necessario convertire l&#39;ora esistente in UTC-0 utilizzando il gestore `\Migration\Handler\Timezone` di [!DNL Data Migration Tool].
 
 Nell’esempio seguente, Magento 1 risparmia erroneamente tempo nella zona UTC-7 del database (ad esempio, a causa di un’estensione di terze parti errata). Per convertire correttamente l’ora di creazione dell’account cliente nella zona UTC-0 al momento della migrazione, effettua le seguenti operazioni:
 

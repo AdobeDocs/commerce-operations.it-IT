@@ -2,13 +2,22 @@
 title: Configurazione del sistema di sviluppo
 description: Scopri come impostare un sistema di sviluppo per l’applicazione Commerce.
 exl-id: 242e9a38-2eb2-4090-8f59-3fd588f7ad3a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%
-
 ---
-
 # Configurazione del sistema di sviluppo
 
 È possibile disporre di un numero qualsiasi di sistemi di sviluppo, purché sia soddisfatta la seguente condizione:
@@ -19,10 +28,10 @@ ht-degree: 0%
 - Ha la proprietà del file system e le autorizzazioni impostate come descritto in [Prerequisiti per i sistemi di sviluppo, compilazione e produzione](../deployment/technical-details.md).
 - Assicurarsi che tutti i seguenti elementi siano _esclusi_ dal controllo del codice sorgente:
 
-   - Directory `vendor` (e sottodirectory)
-   - Directory `generated` (e sottodirectory)
-   - Directory `pub/static` (e sottodirectory)
-   - `app/etc/env.php` file
+  - Directory `vendor` (e sottodirectory)
+  - Directory `generated` (e sottodirectory)
+  - Directory `pub/static` (e sottodirectory)
+  - `app/etc/env.php` file
 
 - Assicurarsi che `app/etc/config.php` sia _incluso_ nel controllo del codice sorgente
 

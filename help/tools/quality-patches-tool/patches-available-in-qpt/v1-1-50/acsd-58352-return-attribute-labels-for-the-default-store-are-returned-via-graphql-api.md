@@ -1,17 +1,34 @@
 ---
-title: 'ACSD-58352: le etichette degli attributi restituiti per l''archivio predefinito vengono restituite tramite [!DNL GraphQL] API'
-description: Applica la patch ACSD-58352 per risolvere il problema di Adobe Commerce per cui le etichette degli attributi restituiti per l'archivio predefinito vengono restituite tramite API [!DNL GraphQL] quando nell'intestazione della richiesta è specificata una visualizzazione archivio non predefinita.
+title: 'ACSD-58352: le etichette degli attributi restituiti per l''archivio predefinito vengono restituite tramite l''API [!DNL GraphQL]'
+description: Applicare la patch ACSD-58352 per risolvere il problema di Adobe Commerce per cui le etichette degli attributi restituiti per l'archivio predefinito vengono restituite tramite l'API [!DNL GraphQL] quando nell'intestazione della richiesta è specificata una visualizzazione archivio non predefinita.
 feature: GraphQL, Returns
 role: Admin, Developer
 exl-id: e513039e-42cd-4dac-963b-3068ba8bf7ee
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ac07462c-732c-5c1c-947b-4ce533b4fcfb
+    internal-label: Returns
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '417'
 ht-degree: 0%
-
 ---
-
 # ACSD-58352: le etichette degli attributi restituiti per l&#39;archivio predefinito vengono restituite tramite l&#39;API [!DNL GraphQL]
 
 La patch ACSD-58352 risolve il problema per cui le etichette degli attributi restituiti per l&#39;archivio predefinito vengono restituite tramite l&#39;API [!DNL GraphQL] quando nell&#39;intestazione della richiesta è specificata una visualizzazione archivio non predefinita. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.50. L’ID della patch è ACSD-58352. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.8.
@@ -28,7 +45,7 @@ La patch ACSD-58352 risolve il problema per cui le etichette degli attributi res
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -75,7 +92,7 @@ Le etichette di ritorno nella risposta [!DNL GraphQL] sono per il [!UICONTROL St
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
@@ -85,4 +102,4 @@ Per ulteriori informazioni su [!DNL Quality Patches Tool], vedere:
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!UICONTROL Quality Patches Tool].
 
 
-Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella guida di [!DNL Quality Patches Tool].
+Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida di [!DNL Quality Patches Tool].

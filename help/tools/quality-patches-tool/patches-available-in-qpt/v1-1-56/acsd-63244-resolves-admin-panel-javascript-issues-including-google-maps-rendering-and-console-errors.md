@@ -1,17 +1,32 @@
 ---
-title: 'ACSD-63244: risoluzione dei problemi di JavaScript del pannello di amministrazione, inclusi  [!DNL Google Maps]  errori di rendering e console'
-description: La patch ACSD-63244 risolve i diversi problemi di JavaScript nel pannello di amministrazione, inclusi i problemi con il rendering di  [!DNL Google Maps] e gli errori ricorrenti di 'TipoErrore non rilevato questo._each non è una funzione` nella console del browser.
+title: 'ACSD-63244: risoluzione dei problemi di JavaScript del pannello di amministrazione, inclusi [!DNL Google Maps] errori di rendering e console'
+description: La patch ACSD-63244 risolve i diversi problemi di JavaScript nel pannello di amministrazione, inclusi i problemi con il rendering di [!DNL Google Maps] e gli errori ricorrenti di 'Uncatch TypeError this._each non è una funzione' nella console del browser.
 feature: Admin Workspace
 role: Admin, Developer
 exl-id: 1985c845-219e-4af4-8f70-62dd57722494
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '341'
 ht-degree: 0%
-
 ---
-
 # ACSD-63244: risoluzione dei problemi di JavaScript del pannello di amministrazione, inclusi [!DNL Google Maps] errori di rendering e console
 
 La patch ACSD-63244 risolve i diversi problemi di JavaScript nel pannello di amministrazione, inclusi i problemi relativi al rendering di [!DNL Google Maps] e gli errori ricorrenti di `Uncaught TypeError: this._each is not a function` nella console del browser. Questa patch è disponibile con [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56. L’ID della patch è ACSD-63244. Il problema era pianificato per essere risolto in Adobe Commerce 2.4.8.
@@ -28,7 +43,7 @@ Adobe Commerce (tutti i metodi di implementazione) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -63,7 +78,7 @@ Uncaught TypeError: this._each is not a function
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

@@ -3,20 +3,36 @@ title: Archiviazione remota per Commerce su infrastruttura cloud
 description: Consulta le linee guida per la configurazione dell’archiviazione remota per Adobe Commerce sull’infrastruttura cloud.
 feature: Configuration, Cloud, Storage
 exl-id: da352466-13f2-42e4-a589-3b0a89728467
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
-
 ---
-
 # Configurare l’archiviazione remota per l’infrastruttura Commerce on Cloud
 
 A partire dal pacchetto `ece-tools` 2002.1.5, è possibile utilizzare una variabile di ambiente per abilitare il modulo Archiviazione remota. Tuttavia, il modulo Archiviazione remota dispone del supporto di _limited_ in Adobe Commerce sull&#39;infrastruttura cloud. Adobe non è in grado di risolvere completamente i problemi relativi al servizio adattatore di archiviazione di terze parti.
 
 ## Variabile di ambiente
 
-La variabile `REMOTE_STORAGE` viene utilizzata durante la [fase di distribuzione](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/deploy/process) di un progetto di infrastruttura cloud.
+La variabile `REMOTE_STORAGE` viene utilizzata durante la [fase di distribuzione](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process) di un progetto di infrastruttura cloud.
 
 ### `REMOTE_STORAGE`
 
@@ -40,7 +56,7 @@ stage:
 
 ### Imposta variabile con Cloud CLI
 
-Impostare la variabile `REMOTE_STORAGE` come [variabile a livello di ambiente](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/variable-levels) in modo che i file non vengano condivisi tra gli ambienti di produzione, gestione temporanea e integrazione. L&#39;impostazione delle variabili a livello di ambiente offre la flessibilità di utilizzare solo lo storage remoto in determinati ambienti, ad esempio escludendo l&#39;utilizzo dell&#39;ambiente di integrazione dello storage remoto.
+Impostare la variabile `REMOTE_STORAGE` come [variabile a livello di ambiente](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels) in modo che i file non vengano condivisi tra gli ambienti di produzione, gestione temporanea e integrazione. L&#39;impostazione delle variabili a livello di ambiente offre la flessibilità di utilizzare solo lo storage remoto in determinati ambienti, ad esempio escludendo l&#39;utilizzo dell&#39;ambiente di integrazione dello storage remoto.
 
 **Per aggiungere la variabile di archiviazione remota utilizzando Cloud CLI**:
 
@@ -89,7 +105,7 @@ In alternativa, è possibile utilizzare Project Web Interface per aggiungere la 
 
 ### Usa autenticazione facoltativa
 
-`key` e `secret` sono facoltativi. Quando si crea la variabile, è possibile nascondere `key` e `secret` selezionando l&#39;opzione `sensitive`. Con questa impostazione, i valori non sono visibili nell’interfaccia web. Vedi [Visibilità variabile](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility) nella _guida di Commerce sull&#39;infrastruttura cloud_.
+`key` e `secret` sono facoltativi. Quando si crea la variabile, è possibile nascondere `key` e `secret` selezionando l&#39;opzione `sensitive`. Con questa impostazione, i valori non sono visibili nell’interfaccia web. Vedi [Visibilità variabile](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility) nella _guida di Commerce sull&#39;infrastruttura cloud_.
 
 Se desideri utilizzare un metodo di autenticazione diverso, ometti `key` e `secret` dalla configurazione JSON,. Configura il metodo di autenticazione alternativo e verifica che il server sia autorizzato per il bucket S3.
 
@@ -111,7 +127,7 @@ bin/magento remote-storage:sync
 
 Se scegli di utilizzare la soluzione di archiviazione remota con un progetto di infrastruttura cloud Adobe Commerce on, utilizza la [guida di Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) nella documentazione di _Fastly_ per garantire il funzionamento di Fastly Image Optimization con AWS S3.
 
-Preparati con le tue [credenziali fastly](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration#get-fastly-credentials). Nei progetti Pro, utilizzare SSH per connettersi al server e ottenere le credenziali Fastly dal file `/mnt/shared/fastly_tokens.txt`. Gli ambienti di staging e produzione dispongono di credenziali univoche. È necessario ottenere le credenziali per ogni ambiente.
+Preparati con le tue [credenziali fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration#get-fastly-credentials). Nei progetti Pro, utilizzare SSH per connettersi al server e ottenere le credenziali Fastly dal file `/mnt/shared/fastly_tokens.txt`. Gli ambienti di staging e produzione dispongono di credenziali univoche. È necessario ottenere le credenziali per ogni ambiente.
 
 Continua a configurare l’archiviazione remota per i progetti cloud con le seguenti attività:
 

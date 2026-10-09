@@ -5,13 +5,27 @@ badge: label="Contribuito da objectsource" type="Informative" url="https://objec
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 0%
-
 ---
-
 # Best practice per ottimizzare le prestazioni del back-end
 
 Questo argomento illustra le best practice per l’analisi e l’ottimizzazione delle prestazioni back-end dei siti Adobe Commerce, con particolare attenzione all’ottimizzazione e al test dei database. Gli sviluppatori possono utilizzare queste informazioni per analizzare il contesto univoco di ciascun progetto Commerce e identificare le opportunità per ottimizzare la configurazione e le operazioni back-end al fine di migliorare le prestazioni del sito.
@@ -39,9 +53,9 @@ Uno strumento che puoi usare per i test di stress è GTmetrix. Misura la prepara
 
 Ulteriori informazioni sulla preparazione di progetti Commerce per periodi con traffico elevato:
 
-- [Preparazione alle festività](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=it)
-- [Analisi acquisti per festività](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=it)
-- [Aumento capacità di sovratensione](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/holiday-surge-capacity-requests-for-magento-commerce-cloud)
+- [Preparazione alle festività](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
+- [Analisi acquisti per festività](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
+- [Aumento capacità di sovratensione](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/holiday-surge-capacity-requests-for-magento-commerce-cloud)
 
 ### Test di carico
 
@@ -51,12 +65,12 @@ Utilizza GTmetrix per simulare il traffico pesante e analizzare le prestazioni d
 
 Ulteriori informazioni sulla verifica dei progetti Adobe Commerce:
 
-- [Indicazioni per il test](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/test/guidance) (infrastruttura cloud)
+- [Indicazioni per il test](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/guidance) (infrastruttura cloud)
 - [Test delle applicazioni](https://developer.adobe.com/commerce/testing/guide/)
 
 ### Identificazione e risoluzione dei problemi di prestazioni
 
-Affronta i problemi di prestazioni utilizzando vari strumenti come New Relic e Observation for Adobe Commerce per rilevare i colli di bottiglia e ottimizzare i siti Commerce in modo efficace. [New Relic](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) è incluso in Adobe Commerce sull&#39;infrastruttura cloud e [Observation for Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) è incluso sia per le distribuzioni cloud che per quelle locali.
+Affronta i problemi di prestazioni utilizzando vari strumenti come New Relic e Observation for Adobe Commerce per rilevare i colli di bottiglia e ottimizzare i siti Commerce in modo efficace. [New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) è incluso in Adobe Commerce sull&#39;infrastruttura cloud e [Observation for Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) è incluso sia per le distribuzioni cloud che per quelle locali.
 
 Utilizzare questi strumenti per analizzare le prestazioni del sito e identificare i problemi di prestazioni relativi a:
 
@@ -69,7 +83,7 @@ Ad esempio, puoi esaminare attentamente le transazioni concentrandoti sui dettag
 
 Ulteriori informazioni sulla gestione delle prestazioni del sito:
 
-- [Monitoraggio delle prestazioni](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/monitor/performance) (infrastruttura cloud)
+- [Monitoraggio delle prestazioni](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) (infrastruttura cloud)
 - [Best practice di configurazione](/help/performance/configuration.md)
 - [Osservazione per Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md)
 
@@ -81,7 +95,7 @@ Affrontare i problemi di prestazioni di MySQL implementando il clustering del da
 
 I siti web a traffico elevato spesso si trovano a dover affrontare colli di bottiglia del database, principalmente causati dalla dipendenza da un singolo server MySQL. È possibile risolvere questi colli di bottiglia implementando il clustering del database, un&#39;architettura distribuita che migliora le prestazioni e garantisce un&#39;elevata disponibilità.
 
-Il clustering del database riduce al minimo l&#39;impatto dei problemi correlati al database durante i periodi di picco del traffico consentendo a più nodi Web di connettersi a più server MySQL. Utilizza strumenti come Galera Cluster per configurare il clustering del database per i siti Commerce. Il cluster Galera è incluso in [progetti Adobe Commerce distribuiti nell&#39;infrastruttura cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/architecture/pro-architecture).
+Il clustering del database riduce al minimo l&#39;impatto dei problemi correlati al database durante i periodi di picco del traffico consentendo a più nodi Web di connettersi a più server MySQL. Utilizza strumenti come Galera Cluster per configurare il clustering del database per i siti Commerce. Il cluster Galera è incluso in [progetti Adobe Commerce distribuiti nell&#39;infrastruttura cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture).
 
 #### Ottimizzazione delle query MySQL
 
@@ -93,10 +107,10 @@ Per ottimizzare le prestazioni del server MySQL e ridurre al minimo i colli di b
 
 Ulteriori informazioni sulla configurazione e l&#39;ottimizzazione di MySQL:
 
-- [Procedure consigliate per la configurazione del database](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=it)
-- [Replica lenta per la replica di Galera DB](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html?lang=it)
+- [Procedure consigliate per la configurazione del database](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+- [Replica lenta per la replica di Galera DB](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html)
 - [Linee guida generali di MySQL](/help/installation/prerequisites/database/mysql.md)
-- [Memorizzazione in cache delle query MySQL](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html?lang=it)
+- [Memorizzazione in cache delle query MySQL](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html)
 
 ## Gestire i processi cron in modo efficace: prestazioni e tempi
 
@@ -110,7 +124,7 @@ Inoltre, puoi utilizzare Osservazione per Adobe Commerce per visualizzare gli in
 
 Ulteriori informazioni sull’implementazione di Adobe Commerce cron:
 
-- [Cron (attività pianificate)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=it) nella _Guida utente di Commerce Admin Systems_
-- [Configurazione dell&#39;applicazione - proprietà crons](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) (infrastruttura cloud)
-- [Configurare ed eseguire crons](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) (in locale)
-- [Osservazione per Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=it) (vedere le schede [!UICONTROL Cron] e [!UICONTROL MySQL]).
+- [Cron (attività pianificate)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) nella _Guida utente di Commerce Admin Systems_
+- [Configurazione dell&#39;applicazione - proprietà crons](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) (infrastruttura cloud)
+- [Configurare ed eseguire crons](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) (in locale)
+- [Osservazione per Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) (vedere le schede [!UICONTROL Cron] e [!UICONTROL MySQL]).

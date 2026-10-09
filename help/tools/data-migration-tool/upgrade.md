@@ -1,15 +1,24 @@
 ---
-title: Aggiorna  [!DNL Data Migration Tool]
-description: Scopri come aggiornare  [!DNL Data Migration Tool] per trasferire dati tra Magento 1 e Magento 2.
+title: Aggiorna [!DNL Data Migration Tool]
+description: Scopri come aggiornare [!DNL Data Migration Tool] per trasferire i dati tra Magento 1 e Magento 2.
 exl-id: c0d56d1d-b15b-437f-be72-74282dbe85c1
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '235'
 ht-degree: 0%
-
 ---
-
 # Aggiorna [!DNL Data Migration Tool]
 
 Per verificare che le versioni dell&#39;installazione corrente di Magento 2 e di [!DNL Data Migration Tool] corrispondano esattamente, potrebbe essere necessario aggiornare lo strumento.
@@ -24,7 +33,7 @@ Prima di aggiornare [!DNL Data Migration Tool], è necessario:
 
 * Verificare che la versione [!DNL Data Migration Tool] corrisponda alla versione dell&#39;applicazione Magento
 
-### Aggiornare il software Magento
+### Aggiornamento del software Magento
 
 Se non lo hai già fatto, [aggiorna il software Magento](../../upgrade/overview.md).
 
@@ -32,7 +41,7 @@ Se non lo hai già fatto, [aggiorna il software Magento](../../upgrade/overview.
 
 Prima di aggiornare [!DNL Data Migration Tool], eseguire il backup almeno della directory `vendor/magento/data-migration-tool`. Durante l’aggiornamento, poteva essere eliminato e sostituito dal codice aggiornato.
 
-È inoltre possibile eseguire il backup dell&#39;intera base di codice e del database di Magento utilizzando il comando seguente:
+Puoi anche eseguire il backup dell’intera base di codice e del database di Magento utilizzando il seguente comando:
 
 ```shell
 php <magento_root>/bin/magento setup:backup --code --db

@@ -1,17 +1,34 @@
 ---
 title: 'MDVA-42341: la query GraphQL "categoryList" non filtra i risultati'
-description: La patch MDVA-42341 risolve il problema per cui la query GraphQL "categoryList" non filtra i risultati se una richiesta ha l'intestazione Store. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.8. L'ID della patch è MDVA-42341. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
+description: La patch MDVA-42341 risolve il problema per cui la query GraphQL "categoryList" non filtra i risultati se una richiesta ha l'intestazione Store. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.8. L'ID della patch è MDVA-42341. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: GraphQL, Categories
 role: Admin
 exl-id: 56b81385-6db0-4e62-8e2b-bccfc9e0a581
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%
-
 ---
-
 # MDVA-42341: la query GraphQL &quot;categoryList&quot; non filtra i risultati
 
 La patch MDVA-42341 risolve il problema per cui la query GraphQL &quot;categoryList&quot; non filtra i risultati se una richiesta ha l&#39;intestazione Store. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.8. L&#39;ID della patch è MDVA-42341. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
@@ -43,19 +60,19 @@ La query GraphQL &quot;categoryList&quot; non filtra i risultati se una richiest
 
 <pre>
 <code class="language-graphql">
-&lbrace;
-  categoryList(filters: {name: {match: "category1"}&#x200B;}) &lbrace;
+{
+  categoryList(filters: {name: {match: "category1"}}) {
     uid
     level
     name
-    breadcrumbs &lbrace;
+    breadcrumbs {
       category_uid
       category_name
       category_level
       category_url_key
-    &rbrace;
-  &rbrace;
-&rbrace;
+    }
+  }
+}
 </code>
 </pre>
 
@@ -72,7 +89,7 @@ Le categorie della categoria principale predefinita sono disponibili nei risulta
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
@@ -81,4 +98,4 @@ Per ulteriori informazioni sullo strumento Patch di qualità, vedere:
 * [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando lo strumento Patch di qualità](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!DNL Quality Patches Tool].
 
-Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella guida di [!DNL Quality Patches Tool].
+Per informazioni sulle altre patch disponibili in QPT, fare riferimento a [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella guida di [!DNL Quality Patches Tool].

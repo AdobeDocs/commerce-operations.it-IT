@@ -3,13 +3,40 @@ title: Architettura di riferimento aziendale
 description: Scopri come implementare Adobe Commerce utilizzando la più recente tecnologia di e-commerce componibile di Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
-
 ---
-
 # Architettura di riferimento aziendale Adobe Commerce
 
 Adobe Commerce è la piattaforma basata sull’esperienza che associa in modo univoco flessibilità tecnica e facilità d’uso, il tutto al servizio della creazione di esperienze eccezionali che producono risultati aziendali.
@@ -26,29 +53,29 @@ Il diagramma seguente illustra il flusso di dati tra Adobe Commerce e tutte le s
 
 ## Cloud Foundation
 
-[Adobe Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/overview) è la base dell&#39;implementazione di Commerce. Fornisce una piattaforma di hosting automatizzata [secure](../../security-and-compliance/shared-responsibility.md) con un approccio self-service per la creazione, la distribuzione, il monitoraggio e la gestione dell&#39;applicazione Commerce in un ambiente nativo per il cloud.
+[Adobe Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) è la base dell&#39;implementazione di Commerce. Fornisce una piattaforma di hosting automatizzata [secure](../../security-and-compliance/shared-responsibility.md) con un approccio self-service per la creazione, la distribuzione, il monitoraggio e la gestione dell&#39;applicazione Commerce in un ambiente nativo per il cloud.
 
 Consulta i seguenti dettagli tecnici di cloud foundation:
 
-- [**Architettura scalata**](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)—Capacità regolata automaticamente per mantenere prestazioni stabili e prevedibili
-- [**Ambienti multipli**](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/architecture/pro-architecture) - È stato eseguito il preprovisioning con PHP, MySQL (MariaDB), Redis, RabbitMQ e tecnologie dei motori di ricerca supportate per sviluppare, testare e distribuire il sito
-- [**Gestione della configurazione**](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/overview): file di configurazione dell&#39;ambiente personalizzabili e interfaccia della riga di comando (CLI) per gestire le impostazioni dell&#39;applicazione, le route, le azioni di generazione e distribuzione e le notifiche.
-- [**Flusso di lavoro basato su Git**](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow): compilazione e distribuzione automatiche dopo il push delle modifiche al codice per lo sviluppo rapido e la distribuzione continua
-- [**Osservabilità integrata**](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/monitor/performance): strumenti che combinano i dati di registro provenienti da più origini per gestire le prestazioni del sito e diagnosticare i problemi
+- [**Architettura scalata**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)—Capacità regolata automaticamente per mantenere prestazioni stabili e prevedibili
+- [**Ambienti multipli**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture) - È stato eseguito il preprovisioning con PHP, MySQL (MariaDB), Redis, RabbitMQ e tecnologie dei motori di ricerca supportate per sviluppare, testare e distribuire il sito
+- [**Gestione della configurazione**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/overview): file di configurazione dell&#39;ambiente personalizzabili e interfaccia della riga di comando (CLI) per gestire le impostazioni dell&#39;applicazione, le route, le azioni di generazione e distribuzione e le notifiche.
+- [**Flusso di lavoro basato su Git**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow): compilazione e distribuzione automatiche dopo il push delle modifiche al codice per lo sviluppo rapido e la distribuzione continua
+- [**Osservabilità integrata**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance): strumenti che combinano i dati di registro provenienti da più origini per gestire le prestazioni del sito e diagnosticare i problemi
 - [**Copertura API completa**](https://developer.adobe.com/commerce/webapi/get-started/)—[API GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) e [REST](https://developer.adobe.com/commerce/webapi/rest) per l&#39;integrazione dell&#39;applicazione Commerce di base con sistemi di terze parti e l&#39;estensione delle funzionalità di Commerce
 
 ## Integrazione con Experience Cloud
 
-Adobe Commerce si integra con tutte le soluzioni Experience Cloud per fornire [esperienze di e-commerce personalizzate su larga scala](https://experienceleague.adobe.com/it/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+Adobe Commerce si integra con tutte le soluzioni Experience Cloud per fornire [esperienze di e-commerce personalizzate su larga scala](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
-[Connessione dati](https://experienceleague.adobe.com/it/docs/commerce/data-connection/overview) consente di ottenere informazioni sul comportamento d&#39;acquisto dei tuoi acquirenti, in modo da poter creare esperienze d&#39;acquisto personalizzate su tutti i canali con altri prodotti Adobe Digital Experience.
+[Connessione dati](https://experienceleague.adobe.com/en/docs/commerce/data-connection/overview) consente di ottenere informazioni sul comportamento d&#39;acquisto dei tuoi acquirenti, in modo da poter creare esperienze d&#39;acquisto personalizzate su tutti i canali con altri prodotti Adobe Digital Experience.
 
 >[!NOTE]
 >
 >Per ulteriori informazioni, consulta le risorse seguenti:
 >
->- [Blueprint per esperienze digitali](https://experienceleague.adobe.com/it/docs/blueprints-learn/architecture/overview) per ulteriori dettagli tecnici.
->- Consulta [Personalizzazione della customer experience](https://experienceleague.adobe.com/it/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
+>- [Blueprint per esperienze digitali](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) per ulteriori dettagli tecnici.
+>- Consulta [Personalizzazione della customer experience](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Integrazione con sistemi di terze parti
@@ -70,20 +97,20 @@ Adobe fornisce i seguenti strumenti per sviluppatori per creare integrazioni e p
 
 >[!NOTE]
 >
->Vedi [L&#39;approccio moderno: estensibilità effettiva in Adobe Commerce](https://experienceleague.adobe.com/it/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
+>Vedi [L&#39;approccio moderno: estensibilità effettiva in Adobe Commerce](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
 
 ## Servizi di vetrina
 
 Adobe offre una ricca gamma di servizi di merchandizing intelligenti e componibili per aiutarti a supportare i tuoi obiettivi aziendali chiave. Questi servizi forniscono anche API fondamentali per ottimizzare le prestazioni su larga scala.
 
-- [Live Search](https://experienceleague.adobe.com/it/docs/commerce/live-search/overview) - Fornisci risultati più intelligenti, più veloci e rilevanti per gli acquirenti con questo strumento di ricerca basato sull&#39;intelligenza artificiale.
-- [Consigli di prodotto](https://experienceleague.adobe.com/it/docs/commerce/product-recommendations/overview): aggiungi consigli basati sull&#39;intelligenza artificiale in base al comportamento degli acquirenti, alle tendenze popolari, alla somiglianza dei prodotti e altro ancora.
-- [Catalog Service](https://experienceleague.adobe.com/it/docs/commerce/catalog-service/guide-overview) - Offri ai tuoi clienti un&#39;esperienza di prodotto ottimizzata migliorando le prestazioni, la scalabilità e le conversioni.
-- [Servizi di pagamento](https://experienceleague.adobe.com/it/docs/commerce/payment-services/guide-overview)—Aumenta la soddisfazione dei clienti offrendo diversi metodi di pagamento, incluse le rate di pagamento senza interessi e un&#39;unica vista per l&#39;elaborazione dei pagamenti, gli ordini e le fatture.
+- [Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview) - Fornisci risultati più intelligenti, più veloci e rilevanti per gli acquirenti con questo strumento di ricerca basato sull&#39;intelligenza artificiale.
+- [Consigli di prodotto](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/overview): aggiungi consigli basati sull&#39;intelligenza artificiale in base al comportamento degli acquirenti, alle tendenze popolari, alla somiglianza dei prodotti e altro ancora.
+- [Catalog Service](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview) - Offri ai tuoi clienti un&#39;esperienza di prodotto ottimizzata migliorando le prestazioni, la scalabilità e le conversioni.
+- [Servizi di pagamento](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview)—Aumenta la soddisfazione dei clienti offrendo diversi metodi di pagamento, incluse le rate di pagamento senza interessi e un&#39;unica vista per l&#39;elaborazione dei pagamenti, gli ordini e le fatture.
 
 ## Vetrina headless
 
 L’e-commerce headless è l’e-commerce API-first. Adobe Commerce è completamente headless con un’architettura separata che fornisce tutti i servizi e i dati commerce tramite un livello API GraphQL. Questa architettura consente ai team di sviluppare i front-end in modo indipendente dall’applicazione principale, fornendo la flessibilità necessaria per creare e testare rapidamente nuovi punti di contatto con le tecnologie emergenti.
 
-Adobe fornisce una moderna tecnologia di vetrina headless che include gli stessi vantaggi e le stesse funzionalità offerte da [Edge Delivery Services](https://www.aem.live/home) con authoring basato su documenti, un&#39;architettura basata sulle prestazioni e una sperimentazione nativa preconfigurata. Sfrutta la scalabilità e le prestazioni dei [servizi storefront](#storefront-services) di Adobe Commerce e la flessibilità e la comodità dei [componenti di destinazione](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it) per fornire funzionalità di e-commerce.
+Adobe fornisce una moderna tecnologia di vetrina headless che include gli stessi vantaggi e le stesse funzionalità offerte da [Edge Delivery Services](https://www.aem.live/home) con authoring basato su documenti, un&#39;architettura basata sulle prestazioni e una sperimentazione nativa preconfigurata. Sfrutta la scalabilità e le prestazioni dei [servizi storefront](#storefront-services) di Adobe Commerce e la flessibilità e la comodità dei [componenti di destinazione](https://experienceleague.adobe.com/developer/commerce/storefront/) per fornire funzionalità di e-commerce.
 

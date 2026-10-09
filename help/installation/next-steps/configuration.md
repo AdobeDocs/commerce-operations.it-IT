@@ -3,13 +3,27 @@ title: Configurare l’applicazione
 description: Scopri la configurazione post-installazione richiesta per le distribuzioni Adobe Commerce on-premise.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
-
 ---
-
 # Configurare l’applicazione
 
 Ora che hai completato l’installazione di Adobe Commerce, devi configurarlo. In questo argomento vengono fornite alcune impostazioni di configurazione consigliate.
@@ -27,7 +41,7 @@ Per ulteriori informazioni su cron, tra cui come rimuovere un crontab ed eseguir
 Dopo l&#39;installazione, si consiglia quanto segue:
 
 * Assicurati che la proprietà e le autorizzazioni del file siano impostate [correttamente](../prerequisites/file-system/configure-permissions.md)
-* È consigliabile [modificare l&#39;URI di amministrazione predefinito &#x200B;](../tutorials/admin-uri.md) da `admin` a qualcos&#39;altro
+* È consigliabile [modificare l&#39;URI di amministrazione predefinito ](../tutorials/admin-uri.md) da `admin` a qualcos&#39;altro
 * Verificare che l&#39;intestazione HTTP [`X-Frame-Option`](../../configuration/security/xframe-options.md) sia impostata correttamente.
 * Prendi precauzioni contro il cross-site scripting (XSS) [proteggendo i modelli](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)
 
@@ -65,7 +79,7 @@ Per ulteriori informazioni, consulta una delle seguenti sezioni:
 >
 >* Gli ambienti Starter non dispongono della rotazione del registro.
 >
->* Non è possibile configurare la rotazione dei registri negli ambienti di integrazione Pro. Devi implementare una soluzione/script personalizzato e [configurare il cron](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) per eseguire lo script in base alle esigenze.
+>* Non è possibile configurare la rotazione dei registri negli ambienti di integrazione Pro. Devi implementare una soluzione/script personalizzato e [configurare il cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) per eseguire lo script in base alle esigenze.
 
 ### Imposta le regole iptables per consentire a vari servizi di comunicare
 

@@ -1,17 +1,29 @@
 ---
 title: 'MDVA-37234: l''aggiunta di più elementi al carrello crea un elemento riga duplicato'
-description: La patch MDVA-37234 risolve il problema che, quando si aggiunge più volte un elemento al carrello (richiesta parallela) per lo stesso SKU, viene creato un elemento riga duplicato per lo stesso ID carrello. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3. L'ID della patch è MDVA-37234. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
+description: La patch MDVA-37234 risolve il problema che, quando si aggiunge più volte un elemento al carrello (richiesta parallela) per lo stesso SKU, viene creato un elemento riga duplicato per lo stesso ID carrello. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3. L'ID della patch è MDVA-37234. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: Orders, Shopping Cart
 role: Admin
 exl-id: d4e9fca1-7fba-4a33-9c5e-c9695cbfc61c
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: df8eaa0e-dd74-553a-8ad5-28129f8e8d3d
+    internal-label: Shopping Cart
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 0%
-
 ---
-
 # MDVA-37234: l&#39;aggiunta di più elementi al carrello crea un elemento riga duplicato
 
 La patch MDVA-37234 risolve il problema che, quando si aggiunge più volte un elemento al carrello (richiesta parallela) per lo stesso SKU, viene creato un elemento riga duplicato per lo stesso ID carrello. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.3. L&#39;ID della patch è MDVA-37234. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
@@ -42,15 +54,15 @@ Se si aggiunge più volte un articolo al carrello (richiesta parallela) per lo s
 
    <pre>
     <code class="language-graphql">
-    mutation &lbrace;
+    mutation {
         generateCustomerToken(
             email: "customer email"
             password: "customer password"
         )
-        &lbrace;
+        {
             token
-        &rbrace;
-    &rbrace;
+        }
+    }
     </code>
     </pre>
 
@@ -58,9 +70,9 @@ Se si aggiunge più volte un articolo al carrello (richiesta parallela) per lo s
 
    <pre>
     <code class="language-graphql">
-    mutation&lbrace;
+    mutation{
      createEmptyCart
-    &rbrace;
+    }
     </code>
     </pre>
 
@@ -85,7 +97,7 @@ Nel carrello vengono create due righe separate per lo stesso prodotto.
 Per applicare singole patch, utilizzare i collegamenti seguenti a seconda del tipo di distribuzione:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 
@@ -94,4 +106,4 @@ Per ulteriori informazioni sulle patch di qualità per Adobe Commerce, consulta:
 * [È stato rilasciato lo strumento di gestione delle patch di qualità: un nuovo strumento per la gestione automatica delle patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) nella Knowledge Base di supporto.
 * [Verifica se la patch è disponibile per il problema di Adobe Commerce utilizzando lo strumento Patch di qualità](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) nella guida di [!DNL Quality Patches Tool].
 
-Per informazioni sulle altre patch disponibili in QPT, consulta la sezione [Patch disponibili in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it).
+Per informazioni sulle altre patch disponibili in QPT, consulta la sezione [Patch disponibili in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).

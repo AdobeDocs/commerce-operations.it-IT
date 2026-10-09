@@ -2,13 +2,22 @@
 title: Ottieni il software Adobe Commerce
 description: Scopri come ottenere il software Adobe Commerce utilizzando Composer, verificare la compatibilità dell’estensione e scegliere la distribuzione giusta per l’installazione.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # Ottieni il software Adobe Commerce
 
 Sei tra i 240.000 commercianti in tutto il mondo che hanno dato fiducia al nostro software di eCommerce. Sono state raccolte alcune informazioni per aiutarti a iniziare con l’installazione.
@@ -21,7 +30,7 @@ Verifica la disponibilità e la compatibilità delle estensioni create da Adobe 
 >
 >Le basi di codice di Adobe Commerce ora sono distribuite esclusivamente tramite Composer a causa di modifiche delle policy. Utilizza Composer per scaricare una qualsiasi delle versioni di Adobe Commerce elencate, in quanto la base di codice non è più disponibile nella sezione Download.
 >
->Per ulteriori informazioni, consulta [Impossibile accedere all&#39;istruzione di fatturazione e scaricare il codebase su Adobe Commerce nell&#39;infrastruttura cloud](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-26611)
+>Per ulteriori informazioni, consulta [Impossibile accedere all&#39;istruzione di fatturazione e scaricare il codebase su Adobe Commerce nell&#39;infrastruttura cloud](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 Per informazioni introduttive sull’installazione di Adobe Commerce, consulta la tabella seguente.
 

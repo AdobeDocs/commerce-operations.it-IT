@@ -3,13 +3,25 @@ title: Panoramica sulla manutenzione e sul supporto
 description: Manutenzione e supporto appropriati per l’implementazione di Adobe Commerce appena avviata.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '531'
 ht-degree: 0%
-
 ---
-
 # Panoramica sulla manutenzione e sul supporto
 
 I consumatori hanno già a portata di mano più opzioni che mai. Senza una carenza di marchi in lizza per l&#39;attenzione, non puoi dare ai consumatori nessuna ragione per guardare i tuoi concorrenti. Come abbiamo visto, la lealtà e la pazienza con i consumatori sono magre. Non ci vuole molto perché abbandonino il tuo marchio e avere una scarsa esperienza di e-commerce è un modo semplice per loro di arrendersi.
@@ -33,5 +45,5 @@ Il diagramma seguente mostra le fasi e le attività da includere in un risultato
 Identificare il modello di supporto appropriato per l’azienda al fine di continuare a migliorare e ottimizzare la piattaforma e le pratiche commerciali nel loro complesso è un passaggio fondamentale per mantenere tutto il duro lavoro svolto durante il processo di implementazione. Grazie a un piano di supporto continuo completo, il sito di e-commerce può soddisfare le aspettative dei clienti e continuare a raggiungere i tuoi obiettivi.
 
 Durante l’implementazione di Adobe Commerce, è fondamentale considerare cosa includere nella strategia di manutenzione e supporto.
-La licenza di Adobe Commerce prevede l’assistenza di esperti. Per ulteriori informazioni sul supporto Expert e sui piani di supporto Adobe, consulta [Piani di supporto Adobe](https://business.adobe.com/it/customers/consulting-services/premier-support.html).
+La licenza di Adobe Commerce prevede l’assistenza di esperti. Per ulteriori informazioni sul supporto Expert e sui piani di supporto Adobe, consulta [Piani di supporto Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
 Oltre ai piani di supporto di Adobe, sono disponibili i termini di supporto legacy di Magento. Per capire quali servizi di supporto sono applicabili al tuo caso, consulta il tuo contratto per vedere quale contratto di supporto hai o rivolgiti al team del tuo account Adobe.

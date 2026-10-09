@@ -2,13 +2,22 @@
 title: Implementazione dell’aggiornamento
 description: Scopri le diverse fasi di implementazione dell’aggiornamento per i progetti Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
-
 ---
-
 # Implementazione dell’aggiornamento
 
 L’implementazione dell’aggiornamento consiste in cinque fasi:
@@ -88,4 +97,4 @@ Infine, rivolgiti al tuo team per determinare le lezioni apprese e le insidie. Q
 
 Dopo l’avvio del sito, assicurati di controllare i dati di analisi, la console Google Search e altre risorse per verificare che non vi siano problemi imprevisti e che tutto funzioni come previsto.
 
-È sempre una buona idea monitorare le prestazioni attraverso strumenti di monitoraggio ben progettati. Esistono molti strumenti e strumenti per monitorare le prestazioni del sito, quindi assicurati di sceglierne uno che sia adatto alla tua organizzazione. È consigliabile che i clienti Adobe Commerce che utilizzano il sistema di gestione dell&#39;infrastruttura cloud utilizzino servizi quali [New Relic](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) per monitorare le prestazioni del sito.
+È sempre una buona idea monitorare le prestazioni attraverso strumenti di monitoraggio ben progettati. Esistono molti strumenti e strumenti per monitorare le prestazioni del sito, quindi assicurati di sceglierne uno che sia adatto alla tua organizzazione. È consigliabile che i clienti Adobe Commerce che utilizzano il sistema di gestione dell&#39;infrastruttura cloud utilizzino servizi quali [New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) per monitorare le prestazioni del sito.

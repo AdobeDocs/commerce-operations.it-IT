@@ -1,24 +1,41 @@
 ---
 title: Avvisi gestiti per Adobe Commerce
-description: Se sei un cliente Adobe Commerce su infrastruttura cloud Pro plan architecture, puoi utilizzare avvisi gestiti per comprendere lo stato del sito. Se sei un cliente Adobe Commerce su infrastruttura cloud con architettura di piano Starter, riceverai solo avvisi per  [!DNL Apdex]  e condizioni relative al tasso di errore.
+description: Se sei un cliente Adobe Commerce su infrastruttura cloud Pro plan architecture, puoi utilizzare avvisi gestiti per comprendere lo stato del sito. Se sei un cliente Adobe Commerce su infrastruttura cloud con architettura di piano Starter, riceverai solo avvisi per [!DNL Apdex] e condizioni relative al tasso di errore.
 feature: Observability, Support, Tools and External Services
 role: Admin
 exl-id: 3fc4b07f-4e27-4833-97a9-cf9741ae5648
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '591'
 ht-degree: 0%
-
 ---
-
 # Avvisi gestiti per Adobe Commerce
 
 
-Abbiamo creato dashboard e avvisi chiave per aiutarti a capire quando il tuo sito sta raggiungendo i livelli di storage critici e [!DNL Apdex] (soddisfazione degli utenti per i tempi di risposta di applicazioni e servizi). Questo può aiutarti a intraprendere azioni prima di notare tempi di risposta lenti o un’interruzione. Potrai risolvere i problemi relativi agli avvisi con gli articoli elencati di seguito. Prima di poter utilizzare gli avvisi, imposta i canali di notifica. Fare riferimento a [[!DNL New Relic] Configurare i canali di notifica](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) nella Guida di Commerce su Cloud.
+Abbiamo creato dashboard e avvisi chiave per aiutarti a capire quando il tuo sito sta raggiungendo i livelli di storage critici e [!DNL Apdex] (soddisfazione degli utenti per i tempi di risposta di applicazioni e servizi). Questo può aiutarti a intraprendere azioni prima di notare tempi di risposta lenti o un’interruzione. Potrai risolvere i problemi relativi agli avvisi con gli articoli elencati di seguito. Prima di poter utilizzare gli avvisi, imposta i canali di notifica. Fare riferimento a [[!DNL New Relic] Configurare i canali di notifica](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) nella Guida di Commerce su Cloud.
 
 >[!NOTE]
 >
->Se gli avvisi gestiti per i criteri di avviso di Adobe Commerce non sono disponibili, è possibile che l&#39;account sia stato creato di recente o che [!DNL New Relic] sia stato configurato di recente. Ogni martedì viene eseguito un processo per aggiungere i criteri di avviso a tali account. I criteri di avviso dovrebbero essere disponibili il giorno successivo all&#39;esecuzione del processo successivo. Se il criterio risulta ancora mancante, [invia una richiesta di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) e includi l&#39;ID progetto.
+>Se gli avvisi gestiti per i criteri di avviso di Adobe Commerce non sono disponibili, è possibile che l&#39;account sia stato creato di recente o che [!DNL New Relic] sia stato configurato di recente. Ogni martedì viene eseguito un processo per aggiungere i criteri di avviso a tali account. I criteri di avviso dovrebbero essere disponibili il giorno successivo all&#39;esecuzione del processo successivo. Se il criterio risulta ancora mancante, [invia una richiesta di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) e includi l&#39;ID progetto.
 
 Di seguito sono riportati i collegamenti agli articoli della Knowledge Base che forniscono passaggi per la risoluzione dei problemi relativi a questi avvisi:
 
@@ -54,4 +71,4 @@ Di seguito sono riportati i collegamenti agli articoli della Knowledge Base che 
 
 ## Verifica soglie di avviso impostate per gli avvisi gestiti
 
-Puoi rivedere le soglie di avviso configurate per gli avvisi gestiti dal tuo account New Relic. Per istruzioni, vedere [Monitorare le prestazioni con avvisi gestiti](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts).
+Puoi rivedere le soglie di avviso configurate per gli avvisi gestiti dal tuo account New Relic. Per istruzioni, vedere [Monitorare le prestazioni con avvisi gestiti](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts).

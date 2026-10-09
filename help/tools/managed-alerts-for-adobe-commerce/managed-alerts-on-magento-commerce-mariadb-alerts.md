@@ -4,13 +4,34 @@ description: In questo articolo vengono illustrati i passaggi per la risoluzione
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin
 exl-id: d85af2e1-090c-4ad7-a898-3a3c4a5efe3b
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
-
 ---
-
 # Avvisi gestiti su Adobe Commerce: avvisi MariaDB
 
 In questo articolo vengono illustrati i passaggi per la risoluzione dei problemi quando si ricevono gli avvisi MariaDB per Adobe Commerce in [!DNL New Relic]. Gli avvisi MariaDB monitorano il caricamento elevato delle query e le query DML (Data Manipulation Language) eccessive. Entrambe possono comportare una riduzione dell’esperienza utente o addirittura tempi di inattività. Puoi ricevere due tipi di avvisi:
@@ -44,7 +65,7 @@ Riceverai un avviso gestito in [!DNL New Relic] se hai firmato fino a [Avvisi ge
 
 Se viene visualizzato un avviso critico sulle query DML, iniziare dal primo passaggio. Se viene visualizzato un avviso di avviso di query DML, iniziare dal passaggio 2.
 
-1. Controlla se è presente un ticket di supporto Adobe Commerce. Per ulteriori informazioni, consulta la nostra knowledge base [Tracciare i ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case). Il supporto potrebbe aver ricevuto un avviso di soglia [!DNL New Relic], creato un ticket e iniziato a lavorare sul problema. Se non esiste alcun ticket, creane uno. Il ticket deve contenere le seguenti informazioni:
+1. Controlla se è presente un ticket di supporto Adobe Commerce. Per ulteriori informazioni, consulta la nostra knowledge base [Tracciare i ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case). Il supporto potrebbe aver ricevuto un avviso di soglia [!DNL New Relic], creato un ticket e iniziato a lavorare sul problema. Se non esiste alcun ticket, creane uno. Il ticket deve contenere le seguenti informazioni:
    * Motivo contatto: selezionare **[!UICONTROL New Relic MariaDB alert received]**.
    * Descrizione dell&#39;avviso.
    * [[!DNL New Relic] Collegamento per incidente](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). Questo è incluso nei tuoi [Avvisi gestiti per Adobe Commerce](managed-alerts-for-magento-commerce.md).
@@ -56,4 +77,4 @@ Se viene visualizzato un avviso critico sulle query DML, iniziare dal primo pass
    1. Cerca ottimizzazioni del codice o ottimizzazioni operative:
       * Ottimizzazioni del codice: cerca di ottimizzare le query con inserimenti/aggiornamenti in blocco, riducendo al minimo l’utilizzo dell’indice o limitando il codice.
       * Ottimizzazioni operative: consente di effettuare l’offload delle modifiche dei dati che richiedono un utilizzo intensivo delle risorse per ridurre i tempi di traffico.
-      * Ulteriori ottimizzazioni: accertati di aver utilizzato l’ultima versione di ECE-Tools. Per i passaggi, consulta [Aggiornare la versione degli strumenti ece](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) nella Guida di Commerce su Cloud.
+      * Ulteriori ottimizzazioni: accertati di aver utilizzato l’ultima versione di ECE-Tools. Per i passaggi, consulta [Aggiornare la versione degli strumenti ece](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) nella Guida di Commerce su Cloud.

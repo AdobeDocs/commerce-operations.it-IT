@@ -1,17 +1,40 @@
 ---
-title: 'ACSD-64813: la rimozione dell''assegnazione delle categorie nel catalogo condiviso  [!DNL B2B]  tramite REST API è lenta'
-description: Applica la patch ACSD-64813 per risolvere il problema di Adobe Commerce, a causa del quale la rimozione dell'assegnazione di categorie in un catalogo condiviso  [!DNL B2B]  tramite l'API REST è lenta.
+title: 'ACSD-64813: la rimozione dell''assegnazione delle categorie nel catalogo condiviso [!DNL B2B] tramite API REST è lenta'
+description: Applicare la patch ACSD-64813 per risolvere il problema di Adobe Commerce che rallenta la rimozione delle categorie da un catalogo condiviso [!DNL B2B] tramite l'API REST.
 feature: B2B, REST, Categories
 role: Admin, Developer
 type: Troubleshooting
 exl-id: e6fd89c2-d3c0-462f-b328-7a80b456d96d
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '398'
 ht-degree: 0%
-
 ---
-
 # ACSD-64813: la rimozione dell&#39;assegnazione delle categorie nel catalogo condiviso [!DNL B2B] tramite API REST è lenta
 
 La patch ACSD-64813 risolve il problema relativo al rallentamento della rimozione delle categorie da un catalogo condiviso [!DNL B2B] tramite l&#39;API REST. Questa patch è disponibile quando è installato [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65. L’ID della patch è ACSD-64813. Questo problema è pianificato per la risoluzione in Adobe Commerce 2.4.9.
@@ -28,7 +51,7 @@ La patch ACSD-64813 risolve il problema relativo al rallentamento della rimozion
 
 >[!NOTE]
 >
->La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
+>La patch potrebbe diventare applicabile ad altre versioni con le nuove versioni di [!DNL Quality Patches Tool]. Per verificare se la patch è compatibile con la versione di Adobe Commerce in uso, aggiornare il pacchetto `magento/quality-patches` alla versione più recente e verificare la compatibilità nella pagina [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilizza l’ID patch come parola chiave di ricerca per individuare la patch.
 
 ## Problema
 
@@ -38,7 +61,7 @@ La rimozione dell&#39;assegnazione di categorie in un catalogo condiviso [!DNL B
 
 1. Abilita **[!UICONTROL B2B]**, **[!UICONTROL Company]** e **[!UICONTROL Shared Catalog]**.
 1. Genera 30.000 prodotti attivi in magazzino.
-1. Crea un [catalogo condiviso personalizzato](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) e assegna a esso tutti i prodotti.
+1. Crea un [catalogo condiviso personalizzato](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) e assegna a esso tutti i prodotti.
 1. Crea una nuova categoria nella categoria principale predefinita e assegna ad essa alcuni prodotti.
 1. Utilizzare il token di amministrazione per chiamare l&#39;endpoint REST API `rest/all/V1/sharedCatalog/<shared_catalog_id>/assignCategories` con il nuovo ID categoria.
 
@@ -75,7 +98,7 @@ L’esecuzione richiede circa 30 minuti o restituisce un errore di timeout.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

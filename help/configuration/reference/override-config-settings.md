@@ -2,13 +2,22 @@
 title: Ignora impostazioni di configurazione
 description: Scopri come utilizzare le variabili di ambiente per ignorare le impostazioni di configurazione di Adobe Commerce. Scopri le best practice per la gestione della configurazione e l’implementazione.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%
-
 ---
-
 # Ignora impostazioni di configurazione
 
 Questo argomento illustra come derivare il nome di una variabile di ambiente conoscendo un percorso di configurazione. Puoi sovrascrivere le impostazioni di configurazione di Adobe Commerce utilizzando le variabili di ambiente. Ad esempio, puoi sovrascrivere il valore dell’URL live di un elaboratore di pagamenti sul sistema di produzione.
@@ -17,7 +26,7 @@ Questo argomento illustra come derivare il nome di una variabile di ambiente con
 
 >[!TIP]
 >
->Consulta l&#39;argomento [Configurare gli ambienti](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-intro) nella _guida di Commerce sull&#39;infrastruttura cloud_.
+>Consulta l&#39;argomento [Configurare gli ambienti](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-intro) nella _guida di Commerce sull&#39;infrastruttura cloud_.
 
 ## Variabili di ambiente
 
@@ -62,8 +71,8 @@ Il formato generale dei nomi delle variabili delle impostazioni di sistema è il
   Per ulteriori informazioni sugli ambiti, consulta:
 
   - [Passaggio 1: trovare il valore di ambito della visualizzazione del sito Web o dello store](#step-1-find-the-website-or-store-view-scope-value)
-  - [Argomento della Guida utente di Commerce sull’ambito](https://experienceleague.adobe.com/it/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-  - [Riferimento rapido ambito](https://experienceleague.adobe.com/it/docs/commerce-admin/config/scope-change#scope-quick-reference)
+  - [Argomento della Guida utente di Commerce sull’ambito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+  - [Riferimento rapido ambito](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` è il percorso di configurazione con due caratteri di sottolineatura al posto di `/`. Per ulteriori informazioni, vedere [Passaggio 2: impostazione delle variabili di sistema](#step-2-set-global-website-or-store-view-variables).
 
@@ -253,6 +262,6 @@ Un esempio dettagliato viene visualizzato in [Impostare i valori di configurazio
 >
 >- Per utilizzare i valori impostati nell&#39;array `$_ENV`, è necessario impostare `variables_order = "EGPCS"`(Environment, Get, Post, Cookie e Server) nel file `php.ini`. Per informazioni dettagliate, vedere la [documentazione PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Per Adobe Commerce su infrastruttura cloud, se si tenta di ignorare le impostazioni di configurazione utilizzando [Project Web Interface](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/project/overview#configure-the-project), è necessario anteporre al nome della variabile `env:`. Ad esempio:
+>- Per Adobe Commerce su infrastruttura cloud, se si tenta di ignorare le impostazioni di configurazione utilizzando [Project Web Interface](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#configure-the-project), è necessario anteporre al nome della variabile `env:`. Ad esempio:
 >
 >![Esempio di variabile di ambiente](../../assets/configuration/cloud-console-envvariable.png)
