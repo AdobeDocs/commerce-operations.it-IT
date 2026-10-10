@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-38728: la modifica della visibilità del prodotto crea la riscrittura dell''URL per il sito Web principale'
-description: La patch MDVA-38728 risolve il problema relativo alla modifica della visibilità del secondo sito Web in modo da creare un URL riscritto per il sito Web principale. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10. L'ID della patch è MDVA-38728. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-38728 risolve il problema relativo alla modifica della visibilità del secondo sito Web in modo da creare un URL riscritto per il sito Web principale. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10. L'ID della patch è MDVA-38728. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Products
 role: Admin
 exl-id: c9dfa386-6327-43b6-a977-a29178c64b89

@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-36021: gli utenti ricevono un messaggio di errore all''apertura dei dettagli dell''ordine'
-description: La patch MDVA-36021 risolve il problema relativo al messaggio di errore *Call to a member function getId()* durante il tentativo di aprire i dettagli dell'ordine. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1. L'ID della patch è MDVA-36021. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
+description: La patch MDVA-36021 risolve il problema relativo al messaggio di errore *Call to a member function getId()* durante il tentativo di aprire i dettagli dell'ordine. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1. L'ID della patch è MDVA-36021. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin
 exl-id: 737479fe-f363-4974-9c58-7ed9cd113fdb

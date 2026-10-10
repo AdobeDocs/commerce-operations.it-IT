@@ -34,7 +34,7 @@ La tabella seguente fornisce note sulla versione e informazioni importanti per A
 
 >[!TIP]
 >
->- Se hai poca esperienza con Adobe Commerce, consulta gli argomenti [architettura aziendale](../../implementation-playbook/architecture/enterprise-blueprint.md) e [informazioni su Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) per ottenere l&#39;orientamento.
+>- Se hai poca esperienza con Adobe Commerce, consulta gli argomenti [architettura aziendale](../../implementation-playbook/architecture/enterprise-blueprint.md) e [informazioni su Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/start/about) per ottenere l&#39;orientamento.
 >- Per informazioni sugli aggiornamenti, vedere [letture consigliate](../../upgrade/resources/recommended-reading.md).
 
 <table>

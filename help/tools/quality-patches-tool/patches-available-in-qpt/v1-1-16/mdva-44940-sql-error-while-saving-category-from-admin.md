@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-44940: errore SQL durante il salvataggio della categoria dall''amministratore'
-description: La patch MDVA-44940 risolve il problema che si verifica in caso di errore SQL durante il salvataggio di una categoria dall'amministratore. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.16. L'ID della patch è MDVA-44940. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
+description: La patch MDVA-44940 risolve il problema che si verifica in caso di errore SQL durante il salvataggio di una categoria dall'amministratore. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.16. L'ID della patch è MDVA-44940. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 feature: Admin Workspace, Categories, Sales Channels
 role: Admin
 exl-id: de4384f1-a75d-4726-810f-6560a7c57b82
@@ -77,7 +77,7 @@ Si è verificato il seguente errore: *Si è verificato un errore durante il salv
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

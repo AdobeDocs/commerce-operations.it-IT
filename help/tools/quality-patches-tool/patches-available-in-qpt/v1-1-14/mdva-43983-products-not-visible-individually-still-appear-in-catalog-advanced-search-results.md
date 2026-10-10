@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43983: i prodotti impostati come "Not Visible Individually" (Non visibile singolarmente) vengono visualizzati nei risultati della ricerca'
-description: La patch di MDVA-43983 risolve il problema relativo alla visualizzazione dei prodotti impostati come "Non visibili singolarmente" nei risultati della ricerca avanzata del catalogo. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14. L'ID della patch è MDVA-43983. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch di MDVA-43983 risolve il problema relativo alla visualizzazione dei prodotti impostati come "Non visibili singolarmente" nei risultati della ricerca avanzata del catalogo. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14. L'ID della patch è MDVA-43983. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Catalog Management, Products, Search
 role: Admin
 exl-id: d494d263-016b-43fd-aa87-0d74eadc4a6a
@@ -76,7 +76,7 @@ I prodotti impostati come &quot;Non visibile singolarmente&quot; vengono visuali
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

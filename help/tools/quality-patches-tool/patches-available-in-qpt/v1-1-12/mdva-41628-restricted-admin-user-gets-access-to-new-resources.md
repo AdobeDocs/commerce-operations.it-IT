@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41628: gli utenti amministratori con restrizioni hanno accesso a nuove risorse'
-description: La patch MDVA-41628 risolve il problema che consente agli utenti amministratori con restrizioni di accedere alle nuove risorse quando vengono aggiunti nuovi moduli. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-41628. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-41628 risolve il problema che consente agli utenti amministratori con restrizioni di accedere alle nuove risorse quando vengono aggiunti nuovi moduli. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-41628. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Admin Workspace
 role: Admin
 exl-id: 774a4329-fa1f-4cca-aa97-1b8ef03c11d1
@@ -67,7 +67,7 @@ L’utente amministratore con restrizioni può accedere alle nuove voci di menu,
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

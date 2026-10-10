@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43232: l’ordinamento dei prodotti nel merchandiser visivo in base al prezzo speciale in alto (o in basso) causa un errore'
-description: La patch di MDVA-43232 risolve il problema relativo all'ordinamento dei prodotti in visual merchandiser in base al prezzo speciale in alto (o in basso), causando un errore durante il salvataggio della categoria. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-43232. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch di MDVA-43232 risolve il problema relativo all'ordinamento dei prodotti in visual merchandiser in base al prezzo speciale in alto (o in basso), causando un errore durante il salvataggio della categoria. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-43232. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Categories, Merchandising, Orders, Personalization, Products
 role: Admin
 exl-id: c977bec8-f99c-4799-abce-26aad49b77e8

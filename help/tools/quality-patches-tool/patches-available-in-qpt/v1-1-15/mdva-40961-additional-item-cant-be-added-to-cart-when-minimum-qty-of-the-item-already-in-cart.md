@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40961: impossibile aggiungere al carrello un elemento aggiuntivo quando la quantità minima di elemento è già nel carrello'
-description: La patch MDVA-40961 risolve il problema che impedisce l'aggiunta di un articolo al carrello quando la quantità minima dell'articolo è già nel carrello. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15. L'ID della patch è MDVA-40961. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch MDVA-40961 risolve il problema che impedisce l'aggiunta di un articolo al carrello quando la quantità minima dell'articolo è già nel carrello. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15. L'ID della patch è MDVA-40961. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Orders, Shopping Cart
 role: Admin
 exl-id: b5191919-062d-4ddd-84e2-a4801501724d
