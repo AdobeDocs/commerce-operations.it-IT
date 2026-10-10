@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-38852: l''inventario del catalogo blocca le tabelle riducendo le prestazioni'
-description: La patch di MDVA-38852 risolve il problema relativo all'inventario del catalogo che blocca le tabelle per gli aggiornamenti, riducendo in modo significativo le prestazioni quando vengono inoltrati diversi ordini paralleli. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. L'ID della patch è MDVA-38852. Il problema è stato risolto in Adobe Commerce 2.3.6.
+description: La patch di MDVA-38852 risolve il problema relativo all'inventario del catalogo che blocca le tabelle per gli aggiornamenti, riducendo in modo significativo le prestazioni quando vengono inoltrati diversi ordini paralleli. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. L'ID della patch è MDVA-38852. Il problema è stato risolto in Adobe Commerce 2.3.6.
 feature: Catalog Management, Inventory, Orders
 role: Admin
 exl-id: ce93130b-8d96-47b8-96c6-da5988b34ae0
@@ -73,7 +73,7 @@ INSERT INTO `quote_payment` (`quote_id`, `method`, `additional_information`) VAL
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

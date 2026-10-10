@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->La patch ACSD-46192 è parzialmente obsoleta, in quanto il problema è stato risolto dalla patch di sicurezza obbligatoria [APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149).
+>La patch ACSD-46192 è parzialmente obsoleta, in quanto il problema è stato risolto dalla patch di sicurezza obbligatoria [APSB25-08](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-27149).
 
 La patch ACSD-46192 risolve il problema con l&#39;endpoint `async/bulk/V1/configurable-products/bySku/options`. Questa patch è disponibile quando è installato [QPT (Quality Patches Tool)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.19. L’ID della patch è ACSD-46192. Il problema è stato risolto in Adobe Commerce 2.4.5.
 

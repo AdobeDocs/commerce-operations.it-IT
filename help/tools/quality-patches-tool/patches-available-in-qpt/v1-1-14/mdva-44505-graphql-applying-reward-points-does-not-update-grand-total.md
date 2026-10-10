@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-44505: la query GraphQL per l''applicazione dei punti premio al carrello non aggiorna il totale complessivo'
-description: La patch MDVA-44505 risolve il problema per cui la query GraphQL per un carrello che applica punti premio non considera i punti premio e restituisce un totale complessivo errato. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14. L'ID della patch è MDVA-44505. Il problema è stato risolto in Adobe Commerce 2.4.3.
+description: La patch MDVA-44505 risolve il problema per cui la query GraphQL per un carrello che applica punti premio non considera i punti premio e restituisce un totale complessivo errato. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14. L'ID della patch è MDVA-44505. Il problema è stato risolto in Adobe Commerce 2.4.3.
 feature: GraphQL, Orders, Rewards, Shopping Cart
 role: Admin
 exl-id: 543698d8-8963-4bf7-af82-11c2498e882e

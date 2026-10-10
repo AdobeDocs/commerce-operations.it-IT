@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-45071: origine predefinita aggiunta al prodotto durante l''importazione'
-description: La patch ACSD-45071 risolve il problema relativo all'aggiunta dell'origine predefinita al prodotto durante l'importazione. Questa patch è disponibile quando [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.21 è installato. L’ID della patch è ACSD-45071. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
+description: La patch ACSD-45071 risolve il problema relativo all'aggiunta dell'origine predefinita al prodotto durante l'importazione. Questa patch è disponibile quando [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.21 è installato. L’ID della patch è ACSD-45071. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 feature: Data Import/Export, Products
 role: Admin
 exl-id: d28cbfb1-ad6b-4ccf-a877-6db763cea61b
@@ -66,7 +66,7 @@ L&#39;origine predefinita viene assegnata al prodotto dopo l&#39;importazione co
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

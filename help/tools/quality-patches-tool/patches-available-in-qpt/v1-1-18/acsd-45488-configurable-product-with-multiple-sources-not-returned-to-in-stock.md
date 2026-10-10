@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-45488: prodotto configurabile con più origini non restituito automaticamente in magazzino'
-description: La patch ACSD-45488 risolve il problema se un prodotto configurabile con più sorgenti non viene restituito automaticamente in magazzino. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18. L’ID della patch è ACSD-45488. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
+description: La patch ACSD-45488 risolve il problema se un prodotto configurabile con più sorgenti non viene restituito automaticamente in magazzino. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18. L’ID della patch è ACSD-45488. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 feature: Configuration, Orders, Products, Returns
 role: Admin
 exl-id: 53f34e8e-00bd-4386-bebf-b15882e36da1
@@ -74,7 +74,7 @@ Lo stato stock del prodotto configurabile non viene aggiornato a *in stock* quan
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

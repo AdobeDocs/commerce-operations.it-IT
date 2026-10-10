@@ -56,7 +56,7 @@ Lo strumento ha lo scopo di consentire l’utilizzo autonomo di patch per proble
 
 ## Patch disponibili nello strumento Patch di qualità
 
-Per un elenco delle patch disponibili, consultare [Strumento Patch di qualità](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella documentazione per gli sviluppatori.
+Per un elenco delle patch disponibili, consultare [Strumento Patch di qualità](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella documentazione per gli sviluppatori.
 
 ## Come installare e utilizzare lo strumento Quality Patches
 

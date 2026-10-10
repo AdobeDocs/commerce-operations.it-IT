@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-44562: ID archivio per gli elementi dell''offerta sostituito dall''ID archivio predefinito'
-description: La patch MDVA-44562 risolve il problema per cui l'ID archivio predefinito sostituisce l'ID archivio per gli elementi di preventivo per le richieste GraphQL. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.16. L'ID della patch è MDVA-44562. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
+description: La patch MDVA-44562 risolve il problema per cui l'ID archivio predefinito sostituisce l'ID archivio per gli elementi di preventivo per le richieste GraphQL. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.16. L'ID della patch è MDVA-44562. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.6.
 feature: Quotes
 role: Admin
 exl-id: 007a82f7-4bc9-4a51-8b18-05f6c0867ea7

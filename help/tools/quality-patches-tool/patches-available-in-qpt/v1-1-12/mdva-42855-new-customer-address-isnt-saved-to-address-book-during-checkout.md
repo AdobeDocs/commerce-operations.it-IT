@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-42855: il nuovo indirizzo del cliente non viene salvato nella rubrica durante il pagamento '
-description: La patch di MDVA-42855 risolve il problema che impedisce il salvataggio del nuovo indirizzo del cliente nella rubrica durante il pagamento. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-42855. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
+description: La patch di MDVA-42855 risolve il problema che impedisce il salvataggio del nuovo indirizzo del cliente nella rubrica durante il pagamento. Questa patch è disponibile quando è installato [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. L'ID della patch è MDVA-42855. Il problema è pianificato per essere risolto in Adobe Commerce 2.4.5.
 feature: Checkout, Orders, Shipping/Delivery
 role: Admin
 exl-id: 924b8f57-1fec-4e62-bf0e-1f9cafa75cab
@@ -71,7 +71,7 @@ Il nuovo indirizzo di spedizione non viene salvato nella rubrica.
 Per applicare singole patch, utilizzare i collegamenti seguenti, a seconda del metodo di distribuzione utilizzato:
 
 * Adobe Commerce o Magento Open Source on-premise: [[!DNL Quality Patches Tool] > Utilizzo](/help/tools/quality-patches-tool/usage.md) nella guida di [!DNL Quality Patches Tool].
-* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
+* Adobe Commerce su infrastruttura cloud: [Aggiornamenti e patch > Applica patch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) nella guida Commerce su infrastruttura cloud.
 
 ## Lettura correlata
 

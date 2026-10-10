@@ -187,7 +187,7 @@ Per la maggior parte degli ambienti, la seguente timeline descrive la durata del
 
 **Causa:** un problema temporaneo ha impedito la connessione del servizio a GitHub
 
-**Soluzione:** attendere alcuni minuti e riprovare. Se l&#39;errore persiste, contattare il [supporto Adobe Commerce Cloud](https://experienceleague.adobe.com/home#support)
+**Soluzione:** attendere alcuni minuti e riprovare. Se l&#39;errore persiste, contattare il [supporto Adobe Commerce Cloud](https://experienceleague.adobe.com/home?lang=it#support)
 
 #### &quot;Ambiente non creato entro il timeout&quot; (progetto connesso a GitHub)
 
