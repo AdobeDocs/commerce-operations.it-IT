@@ -15,7 +15,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Adobe non fornisce correzioni di sicurezza e di qualità per servizi di terze pa
 
 Il periodo di supporto standard di tre anni dalla data di disponibilità generale (General Availability, GA). Il supporto standard include correzioni di qualità, patch di sicurezza e supporto Adobe Commerce on-call completo.
 
-- **Correzioni di qualità** - I clienti possono accedere alle correzioni di qualità contattando [il supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) o tramite [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) self-service.
+- **Correzioni di qualità** - I clienti possono accedere alle correzioni di qualità contattando [il supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) o tramite [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) self-service.
 
 - **Correzioni di sicurezza** - Adobe fornisce correzioni di sicurezza tramite patch di sicurezza cumulative e [file di patch di sicurezza isolati](versioning-policy.md#isolated-security-patch-file) non cumulativi per il periodo di supporto di tre anni.
 
@@ -208,7 +208,7 @@ Se ti trovi in una versione che si avvicina o che è scaduta le date di fine del
 - Puoi accedere alle funzionalità più recenti di Adobe: merchandising basato sull’intelligenza artificiale, architettura della vetrina componibile e integrazioni native di Adobe Experience Cloud.
 - Vengono eliminati i cicli di aggiornamento ricorrenti.
 
-Contatta il team del tuo account Adobe per iniziare una valutazione della migrazione. Per una panoramica del prodotto, consulta [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/it/docs/commerce/cloud-service/overview).
+Contatta il team del tuo account Adobe per iniziare una valutazione della migrazione. Per una panoramica del prodotto, consulta [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview).
 
 ### Percorso alternativo: aggiornamento a una versione supportata di Adobe Commerce su cloud o on-premise
 
@@ -216,4 +216,4 @@ Se non riesci a eseguire immediatamente la migrazione a [!DNL Adobe Commerce as 
 
 Si noti che questo percorso non elimina gli obblighi di aggiornamento futuri. I clienti con implementazioni di Adobe Commerce on Cloud devono continuare l’aggiornamento man mano che le righe della versione raggiungono le date di applicazione dell’aggiornamento della versione.
 
-<!-- Last updated from includes: 2026-09-17 13:05:40 -->
+<!-- Last updated from includes: 2026-09-17 14:58:18 -->
