@@ -1,9 +1,8 @@
 ---
-source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
-source-wordcount: '27999'
+source-wordcount: '31312'
 ht-degree: 0%
-
 ---
 # Problemi risolti in Adobe Commerce (v2.4.8)
 
@@ -33,7 +32,7 @@ _AC-3223 - [Problema GitHub](https://github.com/magento/magento2/issues/35577) -
 
 #### API REST che mostra gli ordini da un altro sito web. 
 
-Il sistema ora supporta l’accesso autorizzato dell’ambito per i token di amministrazione dell’API REST e gli endpoint Magento_Sales, garantendo che l’API REST visualizzi solo gli ordini a cui l’amministratore ha accesso. In precedenza, l’API REST visualizzava gli ordini da tutti i siti web, indipendentemente dal sito web assegnato dall’utente amministratore.
+Il sistema ora supporta l’accesso autorizzato agli ambiti per i token di amministrazione dell’API REST e gli endpoint Magento_Sales, garantendo che l’API REST visualizzi solo gli ordini a cui l’amministratore ha accesso. In precedenza, l’API REST visualizzava gli ordini da tutti i siti web, indipendentemente dal sito web assegnato dall’utente amministratore.
 
 _ACP2E-2703_
 
@@ -172,7 +171,7 @@ Il sistema ora consente di impostare i campi &quot;Login as Customer opt-in chec
 
 _AC-13000 - [Problema GitHub](https://github.com/magento/magento2/issues/32329) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/32359)_
 
-#### La home page dell’interfaccia utente front-end nel menu a discesa del profilo non è presente.(in modo intermittente)
+#### La home page dell’interfaccia utente front-end nel menu a discesa del profilo non è presente (in modo intermittente).
 
 Nessuna descrizione disponibile.
 
@@ -303,7 +302,7 @@ _AC-13768_
 
 #### Non è presente alcun asterisco rosso per il campo del numero di telefono obbligatorio
 
-In precedenza l&#39;asterisco rosso non veniva visualizzato per il numero di telefono, ma  numero di telefono obbligatorio. Che è ora un asterisco rosso fisso può essere visto sul numero di telefono come un campo obbligatorio.
+In precedenza l’asterisco rosso non veniva visualizzato per il numero di telefono, ma il numero di telefono era obbligatorio. Che è ora un asterisco rosso fisso può essere visto sul numero di telefono come un campo obbligatorio.
 
 _AC-13850 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/c699c206)_
 
@@ -399,7 +398,7 @@ _ACP2E-3149 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 #### COD non disponibile per i paesi specifici consentiti
 
-Ora Cash on delivery è disponibile per i paesi specifici consentiti ogni volta che è richiesto e   AC-3216 funziona come previsto.
+Ora Cash on delivery è disponibile per i paesi specifici consentiti ogni volta che è necessario e AC-3216 funziona come previsto.
 
 _ACP2E-3171 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/6f4805f8)_
 
@@ -421,7 +420,7 @@ In precedenza, il pulsante Reimposta non funzionava nella pagina Aggiungi/Modifi
 
 _ACP2E-3364 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/5184c067)_
 
-#### Rilevamento errato e errori CORS nel routing degli URL dell’amministratore di Magento
+#### Rilevamento errato e errori CORS nell’indirizzamento degli URL dell’amministratore di Magento
 
 Dopo la correzione, se il dominio amministratore personalizzato è un sottodominio del dominio principale, l’amministratore è accessibile solo dal sottodominio configurato.
 
@@ -453,7 +452,7 @@ _ACP2E-3457 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 #### Richiesta di modifiche aggiuntive per completare completamente la correzione ACP2E-3375
 
-&quot;-
+&#39;-
 
 _ACP2E-3459 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/d50f6b5d)_
 
@@ -485,7 +484,7 @@ _ACP2E-3559 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 #### L’accesso B2B come intestazione del cliente presenta ancora il marchio Magento
 
-In precedenza, l’intestazione della vetrina mostra &quot;Ora sei connesso come &lt;nome cliente> a &lt;nome negozio>&quot; con il branding Magento. Che è ora fisso e l’intestazione viene visualizzata con il branding ADOBE.
+In precedenza, l’intestazione della vetrina mostra &quot;Ora sei connesso come &lt;nome cliente> a &lt;nome negozio>&quot; con il branding di Magento. Che è ora fisso e l’intestazione viene visualizzata con il branding ADOBE.
 
 _AC-13628 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/96dec499)_
 
@@ -515,7 +514,7 @@ _ACP2E-3169 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 ### Interfaccia utente amministratore, Spedizione
 
-#### Il conteggio dei codici coupon non viene aggiornato nel   &quot;Tempo utilizzato&quot; nella scheda Gestisci codici coupon se un ordine viene effettuato con la spedizione multipla.
+#### Il conteggio dei codici coupon non viene aggiornato nella colonna &quot;Tempo utilizzato&quot; della scheda Gestisci codici coupon se un ordine viene effettuato con la spedizione multipla.
 
 In precedenza, quando un ordine veniva effettuato con la spedizione multipla, il conteggio del codice coupon non veniva aggiornato nella colonna &quot;Tempo utilizzato&quot; della scheda Gestisci codici coupon. Ora, il conteggio corretto viene visualizzato in entrambi i &quot;Tempo utilizzato&quot; che riflettono i valori desiderati con la spedizione multipla.
 
@@ -752,7 +751,7 @@ Il sistema visualizza ora un solo messaggio di errore di convalida quando si fa 
 
 _AC-10826 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/3ea26621)_
 
-#### Eccezione Magento generata in alcuni casi di test correlati all’ordine
+#### Eccezione di Magento generata in alcuni casi di test correlati all’ordine
 
 Il sistema ora gestisce correttamente il passaggio &quot;sendGuestPaymentInformation&quot; in vari casi di test, impedendo la generazione di eccezioni Magento. In precedenza, queste eccezioni si verificavano a causa di un metodo di pagamento null, causando errori in diversi casi di test.
 
@@ -778,7 +777,7 @@ Il sistema ora omette correttamente l&#39;indirizzo di spedizione e il metodo di
 
 _AC-11641 - [Problema GitHub](https://github.com/magento/magento2/issues/32781) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/32511)_
 
-#### Accesso a Magento 2 all&#39;interno del pagamento con il cliente esistente dare l&#39;errore della console nel browser Firefox
+#### L’accesso a Magento 2 all’interno del pagamento con il cliente esistente restituisce l’errore della console nel browser Firefox
 
 Il sistema ora consente agli utenti di accedere durante il processo di pagamento senza incontrare errori della console nel browser Firefox. In precedenza, se si tentava di accedere come cliente esistente durante il check-out, si verificava un errore della console in Firefox.
 
@@ -880,7 +879,7 @@ Il sistema ora elabora correttamente più richieste parallele per aggiungere lo 
 
 _ACP2E-2664 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/f89a447e)_
 
-#### Problema con l’ordine dal registro regali di Magento 2.4.4 Enterprise/Commerce
+#### Problema con l’ordine da Magento 2.4.4 Enterprise/Commerce Gift Registry
 
 È stato risolto il problema che impediva l&#39;acquisto di un prodotto da un registro regali, consentendo l&#39;inserimento di ordini e l&#39;aggiornamento appropriato del registro regali. In precedenza, si verificava un errore durante il tentativo di effettuare un ordine da un registro regali, che impediva il completamento dell&#39;acquisto.
 
@@ -958,7 +957,7 @@ Nella pagina Pagamento cassa viene mantenuto l&#39;indirizzo di fatturazione sel
 
 _ACP2E-3405_
 
-#### Prodotto gift card | Unione carrello: unione di gift card in corso
+#### Prodotto gift card | Unione carrello: unione delle gift card
 
 I prodotti Giftcard ora vengono uniti correttamente nel carrello
 
@@ -1225,7 +1224,7 @@ In precedenza, l’architettura multisito con valute e gruppi di clienti diversi
 
 _ACP2E-2905 - [Problema GitHub](https://github.com/magento/magento2/issues/38506) - [Contributo codice GitHub](https://github.com/magento/magento2/commit/a4fbf702)_
 
-#### dynamic-rows.js:658 TypeError non rilevato: dataRecord.slice durante la modifica di prodotti bundle
+#### dynamic-rows.js:658 Tipo non rilevatoErrore: dataRecord.slice durante la modifica di prodotti bundle
 
 Nella console del browser non è presente alcun errore JavaScript durante l’eliminazione dell’opzione dal prodotto bundle.
 
@@ -1497,7 +1496,7 @@ Dopo la correzione, è possibile creare un&#39;istanza della classe Magento\Cata
 
 _ACP2E-3345 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/1366ae5e)_
 
-#### [Il problema di CLOUD] con i prodotti non è visibile in FrontEnd dopo il salvataggio in Magento Admin
+#### [Il problema di CLOUD] con i prodotti non è visibile in Front End dopo il salvataggio in Magento Admin
 
 Dopo la correzione i prodotti configurabili che hanno prodotti secondari con nomi lunghi non verranno persi nella vetrina.
 
@@ -1805,7 +1804,7 @@ Se viene creata una preferenza per una classe che non esiste o che è specificam
 
 _AC-11592 - [Problema GitHub](https://github.com/magento/magento2/issues/38517) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/33161)_
 
-#### Magento sta tentando di modificare la proprietà di sola lettura nel metodo __wakeup di LoggerProxy
+#### Magento sta tentando di modificare una proprietà di sola lettura nel metodo __wakeup di LoggerProxy
 
 Il sistema ora consente di modificare le proprietà di sola lettura precedenti nel metodo di riattivazione __LoggerProxy, garantendo un funzionamento senza forzare gli utenti a utilizzare una soluzione alternativa. In precedenza, si verificavano problemi se si tentava di riassegnare il valore di una proprietà di sola lettura nel metodo di riattivazione __LoggerProxy.
 
@@ -1997,7 +1996,7 @@ Il sistema ora rispetta lo standard di codifica rimuovendo il tag `@author` non 
 
 _AC-8356 - [Problema GitHub](https://github.com/magento/magento2/issues/37250) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/37000)_
 
-#### Lo spazio nella sintassi editorconfig interrompe la regola per `[&lbrace;composer,auth&rbrace;.json]`
+#### Lo spazio nella sintassi editorconfig interrompe la regola per `[{composer,auth}.json]`
 
 Il sistema ora applica correttamente un rientro a 4 spazi ai file compositore e auth.json, in seguito a una correzione di un errore di sintassi nell&#39;editor config. In precedenza, a causa di uno spazio nella sintassi editorconfig, questi file non venivano formattati correttamente con un rientro a 2 spazi.
 
@@ -2015,7 +2014,7 @@ Il sistema ora aggiunge più colori all&#39;output di alcuni comandi CLI (Comman
 
 _AC-8984 - [Problema GitHub](https://github.com/magento/magento2/issues/29335) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/29298)_
 
-#### L&#39;aggiornamento di Magento reimposta General/region/state_required quando viene aggiunto un nuovo paese con lo stato o l&#39;area geografica richiesti.
+#### L’aggiornamento di Magento reimposta general/region/state_required quando viene aggiunto un nuovo paese con lo stato o l’area geografica richiesti.
 
 Il sistema ora aggiunge il paese modificato alla configurazione &quot;general/region/state_required&quot; solo quando viene aggiunto un nuovo paese con stati required, evitando interruzioni del codice personalizzato che presuppongono la disabilitazione della regione. In precedenza, l’aggiunta di un nuovo paese con stati obbligatori reimpostava la configurazione &quot;general/region/state_required&quot; sui paesi predefiniti con uno stato obbligatorio, potenzialmente interrompendo il negozio.
 
@@ -2093,7 +2092,7 @@ La modalità LUA è ora abilitata per impostazione predefinita per il Garbage Co
 
 _ACP2E-3537 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/a52ff98f)_
 
-#### Valore Magento_DC_INDEXER__USE_APPLICATION_LOCK ignorato
+#### Valore MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK ignorato
 
 Dopo la correzione, una variabile ENV impostata su &quot;false&quot; verrà trattata come bool false, non come stringa &#39;false&#39;.
 
@@ -2155,7 +2154,7 @@ Il problema è stato risolto dopo l’applicazione del controllo durante la rich
 
 _ACP2E-2653 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### La chiamata dei prodotti GraphQL contenente il filtro prezzi `&lbrace;from:"0"&rbrace;` non restituisce alcun risultato
+#### La chiamata dei prodotti GraphQL contenente il filtro prezzi `{from:"0"}` non restituisce alcun risultato
 
 In precedenza, la ricerca di prodotti graphql con filtro per prezzi zero non restituiva alcun risultato a causa di un’eccezione generata. Ora la ricerca restituisce i risultati come previsto.
 
@@ -2278,7 +2277,7 @@ _LYNX-486_
 
 _LYNX-488_
 
-#### La miniatura del prodotto raggruppato deve essere visualizzata in base alla configurazione     .
+#### La miniatura del prodotto raggruppato deve essere visualizzata in base alla configurazione.
 
 È stato risolto il problema per garantire che la miniatura del prodotto raggruppato venga visualizzata in base alle impostazioni di configurazione
 
@@ -2366,7 +2365,7 @@ _LYNX-772_
 
 #### La mutazione MergeCart genera un’eccezione quando i carrelli di origine e di destinazione hanno gli stessi elementi bundle
 
-&quot;-
+&#39;-
 
 _ACP2E-2607 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/c971859e) - [Contributo codice GitHub](https://github.com/magento/inventory/commit/db0620da)_
 
@@ -2404,7 +2403,7 @@ _ACP2E-948 - [Contributo codice GitHub](https://github.com/magento/magento2/comm
 
 #### Test di integrazione Magento\GraphQl\App\GraphQlCustomerMutationsTest.php non riuscito
 
-&quot;-
+&#39;-
 
 _ACP2E-3363 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/a4cf5e62)_
 
@@ -2494,7 +2493,7 @@ _ACP2E-3476 - [Contributo codice GitHub](https://github.com/magento/magento2/com
 
 ### Installazione e amministrazione
 
-#### L&#39;aggiornamento di Magento non riesce con MariaDB 11.4 + 2.4.8-beta1
+#### L’aggiornamento di Magento non riesce con MariaDB 11.4 + 2.4.8-beta1
 
 L’aggiornamento dovrebbe avvenire senza alcun errore.
 
@@ -2995,7 +2994,7 @@ _LYNX-758_
 
 #### Le chiamate GraphQL con il metodo OPTIONS restituiscono il codice di risposta 500 quando è installato il pacchetto di compatibilità adobe-commerce/storefront
 
-È stato risolto un problema a causa del quale le chiamate di GraphQL eseguite con il metodo OPTIONS restituivano un errore interno del server 500 quando era installato il pacchetto di compatibilità adobe-commerce/storefront-compatibility. L’endpoint ora restituisce correttamente una risposta 200/204 come previsto.
+È stato risolto un problema a causa del quale le chiamate di GraphQL effettuate utilizzando il metodo OPTIONS restituivano un errore interno del server 500 quando era installato il pacchetto di compatibilità adobe-commerce/storefront-compatibility. L’endpoint ora restituisce correttamente una risposta 200/204 come previsto.
 
 _LYNX-778_
 
@@ -3105,7 +3104,7 @@ _AC-12176 - [Problema GitHub](https://github.com/magento/magento2/issues/38799) 
 
 #### Supporto per CommandLoaderInterface di Symfony in Magento CLI
 
-Questa modifica riduce i tempi di inizializzazione dell&#39;app Magento CLI consentendo l&#39;inizializzazione differita dei comandi fino al momento in cui sono necessari.
+Questa modifica riduce i tempi di inizializzazione dell’app CLI di Magento consentendo l’inizializzazione differita dei comandi fino a quando non sono necessari.
 
 _AC-13471 - [Problema GitHub](https://github.com/magento/magento2/issues/29266) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/29355)_
 
@@ -3182,7 +3181,7 @@ Il sistema ora rimuove correttamente una variabile di riferimento sconosciuta in
 
 _AC-13173 - [Problema GitHub](https://github.com/magento/magento2/issues/38961) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/38940)_
 
-#### [Problema] è stato corretto il bundle danneggiato e il layout delle pagine di prodotto scaricabili in Magento >= 2.4.7
+#### [Problema]: è stato corretto il bundle interrotto e il layout delle pagine di prodotto scaricabili in Magento >= 2.4.7
 
 Il layout per le pagine di prodotti bundle e scaricabili è stato corretto, garantendo una visualizzazione coerente e corretta su tutti i dispositivi. In precedenza, in queste pagine si verificavano problemi di layout a causa di una ridisposizione del blocco multimediale di informazioni sul prodotto.
 
@@ -3256,13 +3255,13 @@ _ACP2E-3331_
 
 _ACP2E-3332 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/581b7ef1)_
 
-#### [L&#39;aggiornamento del Magento CLOUD] ha fatto sì che i coupon distinguessero tra maiuscole e minuscole
+#### [L&#39;aggiornamento di CLOUD] Magento ha fatto sì che i coupon distinguessero tra maiuscole e minuscole
 
 Prima della correzione era necessario digitare il codice del coupon esattamente come era stato configurato prendendo in considerazione maiuscole o minuscole. Ora il coupon viene convalidato nel backend indipendentemente dalla configurazione del codice in maiuscolo o in minuscolo.
 
 _ACP2E-3342_
 
-#### Regole del carrello &quot;Sconto importo fisso per intero carrello&quot;  L&#39;azione applica gli sconti in modo errato
+#### Regole del carrello &quot;Sconto importo fisso per l&#39;intero carrello&quot; L&#39;azione applica gli sconti in modo errato
 
 I codici coupon verranno convalidati correttamente, indipendentemente dalla maiuscola o dalla minuscola, se utilizzati per la creazione degli ordini dall’area di amministrazione. In precedenza, il codice del coupon non veniva convalidato se non corrispondeva esattamente alla lettera maiuscola del codice della regola del carrello configurato.
 
@@ -3573,7 +3572,7 @@ _AC-13848 - [Contributo codice GitHub](https://github.com/magento/magento2/commi
 
 #### [Errore interno] di applicazione della correzione non visualizzato durante l&#39;esecuzione o nei registri
 
-&quot;-
+&#39;-
 
 _ACP2E-3334 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/d4de4726)_
 
@@ -3669,7 +3668,7 @@ Il sistema ora implementa correttamente la libreria effect-drop.js, garantendo i
 
 _ACP2E-3061 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/35b1b1da)_
 
-#### Intestazione sito | Caratteri speciali che interrompono la sezione Benvenuti cliente
+#### Intestazione sito | Caratteri speciali che interrompono la sezione di benvenuto del cliente
 
 Dopo la correzione, i caratteri speciali vengono visualizzati correttamente nella sezione di benvenuto del cliente.
 

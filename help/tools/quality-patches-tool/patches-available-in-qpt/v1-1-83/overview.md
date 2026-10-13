@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 758cab5d4002ddba607dadb3c4b44553adf8d8ba
+source-git-commit: 09eedab06d326baa0d4155274266dc3ef5356589
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '515'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -35,7 +35,7 @@ QPT v1.1.83 include le seguenti patch:
 1. **AC-17975**: sono stati risolti diversi problemi di compatibilità PHP 8.5 che interessano i flussi di lavoro di amministrazione, l&#39;autenticazione di checkout, l&#39;elaborazione CAPTCHA, la gestione delle categorie, le pagine di configurazione e le operazioni della riga di comando in alcuni ambienti PHP.
 1. **AC-18128**: è stato risolto il problema che causava la visualizzazione di date di calendario non corrette nelle impostazioni internazionali non inglesi da parte di date di ordini e timestamp di commenti di ordini restituiti da GraphQL.
 1. **AC-18096**: è stato risolto il problema che causava la restituzione delle date in un formato diverso da quello delle versioni precedenti da parte dei campi di tipo Vendite GraphQL, con il ripristino del formato di data da separato da barre (`/`) a separato da trattini (`-`).
-1. **ACP2E-4639**: è stato risolto il problema relativo all&#39;errata ortografia del tipo di elementi dell&#39;elenco richieste nello schema di GraphQL, mentre il campo degli elementi meno recenti e il tipo `RequistionListItems` rimangono disponibili ma sono obsoleti.
+1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: è stato risolto il problema relativo all&#39;errata ortografia del tipo di elementi dell&#39;elenco richieste nello schema di GraphQL. Il campo `items` e il tipo `RequistionListItems` precedenti rimangono disponibili ma sono obsoleti.
 1. **ACP2E-4838**: è stato risolto il problema che impediva a un utente amministratore con autorizzazioni limitate di eliminare clienti dalla griglia Clienti.
 1. **ACP2E-4877**: è stato risolto il problema che impediva la modifica degli ordini effettuati con **[!UICONTROL Payment on Account]** in Admin mentre si trovava nello stato *Pending*.
 1. **ACP2E-4908**: è stato risolto il problema che causava un eccessivo utilizzo di memoria da parte di cataloghi di grandi dimensioni in Redis o Valkey, poiché venivano create voci cache di layout separate per ogni prodotto in ogni visualizzazione dello store.

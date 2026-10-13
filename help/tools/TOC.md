@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 758cab5d4002ddba607dadb3c4b44553adf8d8ba
+source-git-commit: 09eedab06d326baa0d4155274266dc3ef5356589
 workflow-type: tm+mt
-source-wordcount: '10740'
+source-wordcount: '10752'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,7 @@ ht-degree: 0%
       - [ACP2E-4875: gli utenti amministratori si disconnettono quando aprono account cliente con grandi rubriche](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-4639: tipo di voci dell’elenco delle richieste di acquisto errato nello schema di Adobe Commerce GraphQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)
       - [ACP2E-5223: l’indice delle autorizzazioni del catalogo include i siti web esclusi dai gruppi di clienti](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)
       - [ACP2E-5101: l&#39;installazione di Adobe Commerce B2B non riesce quando gli indicizzatori utilizzano Aggiorna per pianificazione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)
       - [AC-12854: Il riordinamento amministratore utilizza il numero di ordine originale con un suffisso -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
