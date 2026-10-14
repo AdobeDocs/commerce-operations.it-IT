@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 09eedab06d326baa0d4155274266dc3ef5356589
+source-git-commit: 6a3ffddee54d8f9f04e8f72a0d2708baa5c1f37a
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '513'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -43,7 +43,7 @@ QPT v1.1.83 include le seguenti patch:
 1. **ACP2E-4977**: è stato risolto il problema per cui i totali complessivi delle fatture e delle note di accredito per i prodotti configurabili non includono **[!UICONTROL Fixed Product Tax]** (FPT), con conseguente totale inferiore al totale dell&#39;ordine.
 1. **AC-16530**: è stato risolto il problema che impediva al carrello di riflettere in modo coerente gli aggiornamenti pianificati alle regole dei prezzi del catalogo.
 1. **AC-11389**: risolve il problema relativo al calcolo errato di sconti, imposte e totali ordini in alcuni scenari di arrotondamento.
-1. **ACP2E-4998**: è stato risolto il problema che impediva l&#39;aggiornamento degli SKU validi a causa della mancata riuscita della richiesta REST API `POST /V1/products/tier-prices` per l&#39;intera richiesta.
+1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: è stato risolto il problema che impediva l&#39;aggiornamento degli SKU validi a causa del quale la richiesta REST API `POST /V1/products/tier-prices` non riusciva completamente se non esisteva uno SKU nel payload.
 1. **ACP2E-5015**: è stato risolto il problema che consentiva di rimuovere accidentalmente i prodotti e i prezzi assegnati quando i dati del catalogo richiesti non erano disponibili durante il salvataggio di un catalogo condiviso nell&#39;amministratore.
 1. **AC-14940**: è stato risolto il problema che impediva l&#39;invio dell&#39;e-mail di reimpostazione della password in alcuni casi correlati allo store facendo clic su **[!UICONTROL Reset Password]** per un account cliente nell&#39;amministratore.
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: è stato risolto il problema che impediva l&#39;installazione del modulo B2B se gli indicizzatori erano impostati su **[!UICONTROL Update by Schedule]**.
