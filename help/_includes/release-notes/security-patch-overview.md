@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '379'
 ht-degree: 0%
-
 ---
 # Informazioni sulle versioni delle patch di sicurezza di Adobe Commerce
 
@@ -17,7 +16,7 @@ Le versioni delle patch di sicurezza possono includere anche le modifiche relati
 
 Ogni versione di patch di sicurezza si basa sulla versione completa precedente della patch. Contiene le correzioni di qualità e sicurezza della versione patch precedente e le correzioni di sicurezza create tra la versione patch completa precedente e la versione patch di sicurezza.
 
-Per istruzioni su come scaricare e applicare le patch di sicurezza, vedere [Come ottenere e applicare le patch di sicurezza](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches) nella _Adobe Commerce Knowledgebase_.
+Per istruzioni su come scaricare e applicare le patch di sicurezza, vedere [Come ottenere e applicare le patch di sicurezza](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches) nella _Adobe Commerce Knowledgebase_.
 
 {{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
@@ -27,5 +26,4 @@ I file di patch di sicurezza isolati sono file di patch indipendenti e non cumul
 
 Per applicare un file di patch di sicurezza isolato, i clienti devono utilizzare l&#39;ultima versione di patch di sicurezza (l&#39;ultima versione -p) per la propria riga di rilascio supportata, in quanto i file di patch di sicurezza isolati vengono testati esclusivamente in base a tale versione.
 
-Per trovare gli ultimi aggiornamenti per la sicurezza disponibili per Adobe Commerce, visita il [Centro sicurezza PC](https://helpx.adobe.com/it/security/products/magento.html).
-
+Consulta [Bollettini sulla sicurezza e avvisi di Adobe](https://www.adobe.com/trust/security/bulletins-and-advisories.html) per trovare gli ultimi aggiornamenti sulla sicurezza disponibili per Adobe Commerce.
