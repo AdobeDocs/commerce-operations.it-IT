@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 09eedab06d326baa0d4155274266dc3ef5356589
+source-git-commit: 42ccea80dbbf503f58ba7d63d4731687b3c310a8
 workflow-type: tm+mt
-source-wordcount: '10752'
+source-wordcount: '10776'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,8 @@ ht-degree: 0%
       - [ACP2E-4875: gli utenti amministratori si disconnettono quando aprono account cliente con grandi rubriche](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-4838: l’utente amministratore con restrizioni non può eliminare i clienti da un sito web consentito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)
+      - [ACP2E-4998: lo SKU mancante impedisce gli aggiornamenti dei prezzi per i prodotti validi nel livello bulk](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)
       - [ACP2E-4639: tipo di voci dell’elenco delle richieste di acquisto errato nello schema di Adobe Commerce GraphQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)
       - [ACP2E-5223: l’indice delle autorizzazioni del catalogo include i siti web esclusi dai gruppi di clienti](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)
       - [ACP2E-5101: l&#39;installazione di Adobe Commerce B2B non riesce quando gli indicizzatori utilizzano Aggiorna per pianificazione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)

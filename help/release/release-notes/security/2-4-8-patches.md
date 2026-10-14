@@ -14,9 +14,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '781'
 ht-degree: 0%
 ---
 # Note sulla versione per le patch di sicurezza di Adobe Commerce 2.4.8
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 La versione di sicurezza Adobe Commerce 2.4.8-p5 fornisce correzioni di bug di sicurezza per le vulnerabilità identificate nelle versioni precedenti della versione 2.4.8.
 
-Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB26-49](https://helpx.adobe.com/it/security/products/magento/apsb26-49.html).
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 

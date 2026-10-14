@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1188'
 ht-degree: 0%
-
 ---
 # Snippet
 
@@ -39,7 +38,20 @@ La cache Redis non è supportata per Adobe Commerce 2.4.9 o versioni di patch su
 
 ## Patch di sicurezza per il supporto esteso {#extended-support}
 
-{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
+>[!NOTE]
+>
+>**Supporto esteso** le patch di sicurezza sono disponibili solo per i clienti Adobe Commerce. Non sono disponibili per la base di codice di Magento Open Source.
+>
+>**Adobe Commerce on Cloud (righe di rilascio 2.4.4-2.4.6)** — Effettua l&#39;aggiornamento a una versione supportata o effettua la migrazione a [!DNL Adobe Commerce as a Cloud Service] prima della data di applicazione dell&#39;aggiornamento della versione. Le disposizioni sul supporto transitorio non sostituiscono l’applicazione dell’aggiornamento cloud.
+>
+>Vedi anche:
+>
+>- [Criteri del ciclo di vita del software](/help/release/lifecycle-policy.md): date di fine del supporto, supporto esteso e disposizioni transitorie per la sola protezione
+>- [Azioni e scadenze necessarie per proteggere gli ambienti Commerce](/help/release/security-enforcement-policy.md): date di applicazione e azioni richieste
+
+## Bollettino sulla sicurezza di Adobe APSB26-49 {#security-bulletin-apsb26-49}
+
+Per informazioni aggiornate sulle correzioni dei bug di sicurezza, vedere [Adobe Security Bulletin APSB26-49](https://www.adobe.com/trust/security/products/commerce/apsb26-49.html).
 
 ## Solo Commerce {#commerce-only}
 
