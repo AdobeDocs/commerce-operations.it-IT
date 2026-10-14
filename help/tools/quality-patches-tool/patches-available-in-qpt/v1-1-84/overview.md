@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 4fcf88b6e7e67204ac07a82d756c068ac715d120
+source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '555'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -41,7 +41,7 @@ QPT v1.1.84 include le seguenti patch:
 1. **ACP2E-5041**: è stato risolto il problema che causava la visualizzazione del prezzo regolare da parte della vetrina al posto di **[!UICONTROL Special Price]** al termine dell&#39;aggiornamento in seguito al salvataggio di un prodotto durante un aggiornamento pianificato.
 1. **ACP2E-5059**: è stato risolto il problema che causava la ricezione di e-mail di conferma dell&#39;ordine duplicate da parte dei clienti per lo stesso ordine.
 1. **ACP2E-5122**: è stato risolto il problema che causava la registrazione errata degli errori gestiti dalle richieste GraphQL per il carrello come errori dell&#39;applicazione nei registri eccezioni.
-1. **ACP2E-5143**: è stato risolto il problema che determinava il rendering del contenuto completo della pagina CMS da parte della query di route di GraphQL quando venivano richiesti solo i metadati di routing, aumentando le query di database per le pagine CMS che contengono widget di Page Builder.
+1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: è stato risolto il problema che determinava il rendering del contenuto completo della pagina CMS da parte della query GraphQL `route` quando veniva richiesto solo il routing dei metadati, aumentando il numero di query di database per le pagine CMS che contengono widget di Page Builder.
 1. **ACP2E-5183**: è stato risolto il problema che impediva la distribuzione di contenuto statico in PHP 8.5 durante la compilazione di un file `LESS` che utilizza la direttiva `@magento_import`.
 1. **ACP2E-5242**: è stato risolto il problema che impediva la ricerca della disponibilità del prodotto durante l&#39;aggiunta di elementi al carrello.
 1. **ACP2E-5263**: è stato risolto il problema che consentiva di interrompere l&#39;esportazione dei prodotti in un file CSV prima dell&#39;inclusione di tutti i prodotti, creando un file incompleto.
