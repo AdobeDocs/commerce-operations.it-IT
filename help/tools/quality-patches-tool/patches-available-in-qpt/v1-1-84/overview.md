@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 4fcf88b6e7e67204ac07a82d756c068ac715d120
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '553'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -46,7 +46,7 @@ QPT v1.1.84 include le seguenti patch:
 1. **ACP2E-5242**: è stato risolto il problema che impediva la ricerca della disponibilità del prodotto durante l&#39;aggiunta di elementi al carrello.
 1. **ACP2E-5263**: è stato risolto il problema che consentiva di interrompere l&#39;esportazione dei prodotti in un file CSV prima dell&#39;inclusione di tutti i prodotti, creando un file incompleto.
 1. **ACP2E-5034**: è stato risolto il problema che causava il ripristino errato dei totali in *zero* durante il ricalcolo di un preventivo dopo aver selezionato un metodo di spedizione, lo scarto degli aggiornamenti alle quantità di opzioni prodotto nel bundle effettuati tramite l&#39;azione **[!UICONTROL Configure]** in Amministrazione e non rifletteva correttamente gli sconti a livello di articolo applicati ai prodotti del bundle prezzi dinamici nei subtotali del preventivo.
-1. **ACP2E-4741**: è stato risolto il problema che causava la scomparsa di un prodotto dalla vetrina dopo il salvataggio di un prodotto collegato come [!UICONTROL Related Product], [!UICONTROL Up-Sell] o Cross-Sell mentre erano in uso scorte non predefinite e origini.
+1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**: è stato risolto il problema che causava la scomparsa di un prodotto dal Negozio dopo il salvataggio di un prodotto collegato come Prodotto correlato, Vendita al rialzo o Vendita incrociata mentre erano in uso un magazzino e un&#39;origine non predefiniti.
 1. **ACP2E-5079**: è stato risolto il problema per cui la valutazione di un segmento di clienti assegnato a più siti Web restituisce i clienti corrispondenti solo dal primo sito Web quando gli account dei clienti sono condivisi a livello globale.
 1. **ACP2E-5127**: è stato corretto il problema per cui la modifica di un account società nel pannello di amministrazione con impostazioni locali non predefinite reimposta **[!UICONTROL Credit Limit]** su *zero*.
 1. **AC-15494**: è stato corretto il problema per cui la query prodotti restituisce nomi di prodotti con caratteri speciali con escape di HTML invece dei caratteri originali.
