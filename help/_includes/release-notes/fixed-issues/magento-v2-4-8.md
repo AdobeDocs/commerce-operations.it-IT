@@ -30,7 +30,7 @@ _AC-11673 - [Contributo codice GitHub](https://github.com/magento/magento2/commi
 
 _AC-11911 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/7cabfb46)_
 
-#### Aggiunta compatibilità con MySQL 8.4 LTS per Magento CE
+#### Aggiunta della compatibilità con MySQL 8.4 LTS per Magento CE
 
 Nessuna descrizione disponibile.
 
@@ -793,7 +793,7 @@ Il sistema ora omette correttamente l&#39;indirizzo di spedizione e il metodo di
 
 _AC-11641 - [Problema GitHub](https://github.com/magento/magento2/issues/32781) - [Contributo codice GitHub](https://github.com/magento/magento2/pull/32511)_
 
-#### L’accesso a Magento 2 all’interno del pagamento con il cliente esistente restituisce l’errore della console nel browser Firefox
+#### Accesso a Magento 2 all&#39;interno del pagamento con il cliente esistente dare l&#39;errore della console nel browser Firefox
 
 Il sistema ora consente agli utenti di accedere durante il processo di pagamento senza incontrare errori della console nel browser Firefox. In precedenza, se si tentava di accedere come cliente esistente durante il check-out, si verificava un errore della console in Firefox.
 
@@ -1451,7 +1451,7 @@ Dopo la correzione, è possibile creare un&#39;istanza della classe Magento\Cata
 
 _ACP2E-3345 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/1366ae5e)_
 
-#### [Il problema di CLOUD] con i prodotti non è visibile in Front End dopo il salvataggio in Magento Admin
+#### [Il problema di CLOUD] con i prodotti non è visibile in FrontEnd dopo il salvataggio in Magento Admin
 
 Dopo la correzione i prodotti configurabili che hanno prodotti secondari con nomi lunghi non verranno persi nella vetrina.
 
