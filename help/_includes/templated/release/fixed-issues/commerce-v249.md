@@ -3,7 +3,6 @@ source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
 source-wordcount: '37133'
 ht-degree: 0%
-
 ---
 # Problemi risolti in Adobe Commerce (v2.4.9)
 
@@ -715,7 +714,7 @@ _ACP2E-4698 - [Contributo codice GitHub](https://github.com/magento/magento2-pag
 
 #### L’accesso B2B come intestazione del cliente presenta ancora il marchio Magento
 
-In precedenza, l’intestazione della vetrina mostra &quot;Ora sei connesso come &lt;nome cliente> a &lt;nome negozio>&quot; con il branding Magento. Che è ora fisso e l’intestazione viene visualizzata con il branding ADOBE.
+In precedenza, l’intestazione della vetrina mostra &quot;Ora sei connesso come &lt;nome cliente> a &lt;nome negozio>&quot; con il branding di Magento. Che è ora fisso e l’intestazione viene visualizzata con il branding ADOBE.
 
 _AC-14361 - [Contributo codice GitHub](https://github.com/magento/magento2/commit/fadcfa8b)_
 

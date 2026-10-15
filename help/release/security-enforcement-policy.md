@@ -35,9 +35,9 @@ level_v2:
     internal-label: Experienced
 badgePaas: label="Solo Adobe Commerce su Cloud 2.4.4 - 2.4.9" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo alle versioni da 2.4.4 a 2.4.9 di Adobe Commerce on Cloud"
 nudge: true
-source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
+source-git-commit: 5cfbac0f93bc8f82c1af04057c0d9ac3b1f3abb4
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2181'
 ht-degree: 0%
 ---
 
@@ -74,7 +74,7 @@ Per proteggere l’ambiente di e-commerce e ridurre i rischi, tutti i clienti di
 
 1. Una versione protetta e supportata di Adobe Commerce on Cloud. Le versioni completamente supportate includono 2.4.8, 2.4.9 o l’ultima versione disponibile. Consulta la documentazione di [Lifecycle policy](/help/release/lifecycle-policy.md).
 
-Segui le linee guida riportate di seguito per verificare se è necessario intervenire per proteggere l’ambiente Adobe Commerce su Cloud. Gli ambienti che non soddisfano i requisiti di sicurezza entro le scadenze indicate nella tabella 1 seguente avranno traffico in entrata sospeso, disconnettendo la vetrina. Se hai dubbi sul rispetto della scadenza, contatta il team del tuo account o il [supporto Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) il prima possibile.
+Segui le linee guida riportate di seguito per verificare se è necessario intervenire per proteggere l’ambiente Adobe Commerce su Cloud. Gli ambienti che non soddisfano i requisiti di sicurezza entro le scadenze indicate nella tabella 1 seguente possono avere accesso come amministratore sospeso, mentre la vetrina rimane online e/o traffico in entrata sospeso, disconnettendo la vetrina. Se hai dubbi sul rispetto della scadenza, contatta il team del tuo account o il [supporto Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) il prima possibile.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ La tabella seguente consente di confrontare le opzioni e determinare il percorso
 
 Adobe si impegna a supportarti durante l’esecuzione dei passaggi necessari per adottare una versione supportata di software di terze parti, effettuare l’aggiornamento alla versione più recente di Adobe Commerce su Cloud o effettuare la migrazione ad Adobe Commerce as a Cloud Service.  Se hai dubbi sul rispetto della scadenza e hai bisogno di una breve proroga, contatta il team del tuo account o il [supporto Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) il prima possibile.
 
-Se un ambiente non soddisfa i requisiti di sicurezza entro le date di applicazione condivise in precedenza, Adobe sarà costretta a intraprendere azioni appropriate per mantenere la sicurezza della piattaforma Adobe Commerce e dei suoi clienti. Ciò include la sospensione del traffico verso l’infrastruttura interessata e di conseguenza la vetrina Commerce non sarà più in linea.
+Se un ambiente non soddisfa i requisiti di sicurezza entro le date di applicazione condivise in precedenza, Adobe sarà costretta a intraprendere azioni appropriate per mantenere la sicurezza della piattaforma Adobe Commerce e dei suoi clienti. Ad esempio, può essere necessario sospendere l’accesso all’amministratore Adobe Commerce per tutti gli utenti dell’ambiente interessato, mentre la vetrina rimane online, e/o sospendere il traffico verso l’infrastruttura interessata, in modo che la vetrina Commerce non sia più in linea.
 
 Se un ambiente continua a non essere conforme dopo la sospensione del traffico, Adobe può terminare i servizi cloud, avviando il processo di disattivazione. Con la disattivazione, tutti i dati e le risorse all’interno dell’ambiente di e-commerce in hosting, incluse tutte le istanze, gli ambienti e i rami, verranno eliminati definitivamente e non potranno essere ripristinati.
 
