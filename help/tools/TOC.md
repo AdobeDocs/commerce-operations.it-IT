@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: a844e4f16c931370aa77a3b92ac770f6221b60d0
+source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
 workflow-type: tm+mt
-source-wordcount: '10898'
+source-wordcount: '10911'
 ht-degree: 0%
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 0%
   - [Avvisi gestiti per Adobe Commerce: avviso di CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Strumento Patch di qualità {#quality-patches-tool}
   - [[!DNL Quality Patches Tool]: strumento self-service per patch di qualità](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-  - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it){target="_blank"}
+  - [[!DNL Quality Patches Tool]: Cerca patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
   - [Utilizzo](quality-patches-tool/usage.md)
   - [Note sulla versione](quality-patches-tool/release-notes.md)
   - Patch disponibili nello strumento Patch di qualità {#patches-available-in-qpt}
@@ -1060,6 +1060,7 @@ ht-degree: 0%
       - [ACP2E-4875: gli utenti amministratori si disconnettono quando aprono account cliente con grandi rubriche](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-4977: i totali delle fatture di prodotto e delle note di credito configurabili escludono l&#39;imposta fissa sul prodotto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
       - [AC-11389: I totali dell’ordine variano in base all’ordine in cui i prodotti vengono aggiunti al carrello](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)
       - [ACP2E-4877: pulsante Modifica mancante per il pagamento in sospeso sugli ordini conto in Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)
       - [AC-14940: L’e-mail di reimpostazione della password non viene inviata dopo l’eliminazione della vista Store di un cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)
@@ -1124,6 +1125,6 @@ ht-degree: 0%
     - [Dati che richiedono la migrazione manuale](data-migration-tool/migrate-data/manual.md)
     - [Passaggi di migrazione post-dati](data-migration-tool/migrate-data/post-migration.md)
   - Risorse {#resources}
-    - [Risoluzione dei problemi](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
+    - [Risoluzione dei problemi](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=it)
+- [Torna alle guide operative](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
