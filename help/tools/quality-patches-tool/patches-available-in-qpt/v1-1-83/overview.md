@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a844e4f16c931370aa77a3b92ac770f6221b60d0
+source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '523'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -39,8 +39,8 @@ QPT v1.1.83 include le seguenti patch:
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**: è stato risolto il problema che impediva a un utente amministratore con autorizzazioni limitate di eliminare clienti dalla griglia Clienti.
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: è stato risolto il problema relativo all&#39;errata ortografia del tipo di elementi dell&#39;elenco richieste nello schema di GraphQL. Il campo `items` e il tipo `RequistionListItems` precedenti rimangono disponibili ma sono obsoleti.
 1. **ACP2E-4908**: è stato risolto il problema che causava un eccessivo utilizzo di memoria da parte di cataloghi di grandi dimensioni in Redis o Valkey, poiché venivano create voci cache di layout separate per ogni prodotto in ogni visualizzazione dello store.
+1. **[ACP2E-4977](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)**: è stato risolto il problema per cui i totali complessivi delle fatture e delle note di accredito per i prodotti configurabili non includono l&#39;FPT (Fixed Product Tax), che si traduce in totali inferiori al totale dell&#39;ordine.
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**: è stato corretto il problema che si verificava quando riordinando un ordine nell&#39;amministratore si creava un nuovo numero di ordine con un suffisso `-1` invece di assegnare il numero di ordine sequenziale successivo.
-1. **ACP2E-4977**: è stato risolto il problema per cui i totali complessivi delle fatture e delle note di accredito per i prodotti configurabili non includono **[!UICONTROL Fixed Product Tax]** (FPT), con conseguente totale inferiore al totale dell&#39;ordine.
 1. **AC-16530**: è stato risolto il problema che impediva al carrello di riflettere in modo coerente gli aggiornamenti pianificati alle regole dei prezzi del catalogo.
 1. **[AC-11389](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)**: risolve il problema relativo al calcolo errato di sconti, imposte e totali ordini in alcuni scenari di arrotondamento.
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**: è stato risolto il problema che consentiva di rimuovere accidentalmente i prodotti e i prezzi assegnati quando i dati del catalogo richiesti non erano disponibili durante il salvataggio di un catalogo condiviso nell&#39;amministratore.
