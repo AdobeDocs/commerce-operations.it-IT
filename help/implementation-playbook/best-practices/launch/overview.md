@@ -38,7 +38,7 @@ Le sezioni seguenti includono informazioni sulle best practice per la fase di la
 
 | Best practice | Descrizione |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Servizio di notifica sulla sicurezza di Adobe](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Iscriviti alle notifiche di sicurezza di Adobe. |
+| [Servizio di notifica sulla sicurezza di Adobe](https://www.adobe.com/it/subscription/adbeSecurityNotifications.html) | Iscriviti alle notifiche di sicurezza di Adobe. |
 | [Proteggere il sito e l&#39;infrastruttura Commerce](security-best-practices.md) | Rafforzare la sicurezza delle installazioni Commerce per proteggere la vetrina, l&#39;amministratore, l&#39;infrastruttura e i dati Commerce da accessi non autorizzati e attacchi informatici. |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=it) | Configura Google reCAPTCHA per l’accesso come amministratore e varie azioni in vetrina avviate da clienti registrati. |
 | [Configura crawler Web](robots-txt.md) | Trasmetti ai crawler web le istruzioni relative al tuo sito Adobe Commerce. |

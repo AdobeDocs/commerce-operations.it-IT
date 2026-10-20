@@ -25,7 +25,7 @@ Questa sezione contiene informazioni su sicurezza, privacy e conformità alle no
 ## Sicurezza
 
 - [Sicurezza del prodotto Adobe](https://helpx.adobe.com/it/security.html): scopri le ultime patch, gli aggiornamenti di sicurezza e le best practice per Adobe Commerce.
-- [Centro affidabilità Adobe](https://www.adobe.com/trust.html): accedi alle ultime informazioni disponibili sull&#39;integrità operativa, la sicurezza, la privacy e la conformità di tutti i servizi cloud Adobe.
+- [Centro affidabilità Adobe](https://www.adobe.com/it/trust.html): accedi alle ultime informazioni disponibili sull&#39;integrità operativa, la sicurezza, la privacy e la conformità di tutti i servizi cloud Adobe.
 - [Strumento di analisi a livello di sito](../tools/site-wide-analysis-tool/dashboard.md): visualizza informazioni sulla sicurezza semplificate sul tuo sito Adobe Commerce, incluse scansioni di sicurezza, servizi di fine del ciclo di vita e raccomandazioni sulla sicurezza.
 - [Avviso sulla sicurezza e la conformità](../release/security-enforcement-policy.md): scopri le azioni e le scadenze necessarie affinché Adobe Commerce su Cloud versioni da 2.4.4 a 2.4.9 rimanga sicuro e conforme.
 
