@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
+source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -32,15 +32,15 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 
 QPT v1.1.84 include le seguenti patch:
 
-1. **ACP2E-4913**: è stato risolto il problema relativo alle operazioni di spedizione e fatturazione non riuscite a causa di un deadlock.
+1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: è stato risolto il problema che causava errori permanenti nella spedizione e nella creazione della fattura REST API dopo un deadlock del database.
 1. **ACP2E-5005**: è stato risolto il problema che si verificava se la quantità di un&#39;opzione di prodotto bundle in un preventivo negoziabile tornava al valore precedente quando il prodotto bundle veniva riconfigurato in Amministrazione e la quantità veniva modificata.
 1. **ACP2E-5009**: è stato risolto il problema che impediva la corretta migrazione dei dati da Magento Open Source ad Adobe Commerce delle modifiche di progettazione pianificate per la categoria e degli aggiornamenti pianificati per il prodotto **[!UICONTROL Special Price]**. Alcuni aggiornamenti pianificati risultavano mancanti o ignorati durante la migrazione e ne migliorava le prestazioni.
-1. **ACP2E-5017**: è stato risolto il problema che si verificava se l&#39;esecuzione di una query sul ruolo del cliente tramite GraphQL restituiva un *errore interno del server* quando il cliente non era assegnato a una società.
+1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: è stato risolto il problema che si verificava se l&#39;esecuzione di una query sul cliente `role` tramite GraphQL restituiva *Errore interno del server* quando il cliente non era assegnato a una società.
 1. **ACP2E-5027**: è stato risolto il problema che causava il blocco degli indicizzatori in un loop e il mancato completamento della reindicizzazione quando il blocco dei file era abilitato.
 1. **ACP2E-5029**: è stato risolto il problema per cui le modifiche alle regole dei prezzi di catalogo non vengono visualizzate in **[!DNL Live Search]** finché non viene eseguita una risincronizzazione manuale.
 1. **ACP2E-5041**: è stato risolto il problema che causava la visualizzazione del prezzo regolare da parte della vetrina al posto di **[!UICONTROL Special Price]** al termine dell&#39;aggiornamento in seguito al salvataggio di un prodotto durante un aggiornamento pianificato.
-1. **ACP2E-5059**: è stato risolto il problema che causava la ricezione di e-mail di conferma dell&#39;ordine duplicate da parte dei clienti per lo stesso ordine.
-1. **ACP2E-5122**: è stato risolto il problema che causava la registrazione errata degli errori gestiti dalle richieste GraphQL per il carrello come errori dell&#39;applicazione nei registri eccezioni.
+1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**: è stato risolto il problema che causava la ricezione di e-mail di conferma dell&#39;ordine duplicate da parte dei clienti per lo stesso ordine.
+1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**: è stato risolto il problema che causava la registrazione errata degli errori gestiti dalle richieste GraphQL per il carrello come errori dell&#39;applicazione nei registri eccezioni.
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: è stato risolto il problema che determinava il rendering del contenuto completo della pagina CMS da parte della query GraphQL `route` quando veniva richiesto solo il routing dei metadati, aumentando il numero di query di database per le pagine CMS che contengono widget di Page Builder.
 1. **ACP2E-5183**: è stato risolto il problema che impediva la distribuzione di contenuto statico in PHP 8.5 durante la compilazione di un file `LESS` che utilizza la direttiva `@magento_import`.
 1. **ACP2E-5242**: è stato risolto il problema che impediva la ricerca della disponibilità del prodotto durante l&#39;aggiunta di elementi al carrello.
