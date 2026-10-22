@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ea739d12f02672cf585925b90860bca3b44de02a
+source-git-commit: 9d7a2fd125245848466442b66f53fd9b0476da4e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -34,7 +34,7 @@ QPT v1.1.84 include le seguenti patch:
 
 1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)**: è stato risolto il problema che si verificava se la quantità di un&#39;opzione di prodotto bundle in un preventivo negoziabile tornava al valore precedente quando il prodotto bundle veniva riconfigurato in Amministrazione e la quantità veniva modificata.
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: è stato risolto il problema che causava errori permanenti nella spedizione e nella creazione della fattura REST API dopo un deadlock del database.
-1. **ACP2E-5009**: è stato risolto il problema che impediva la corretta migrazione dei dati da Magento Open Source ad Adobe Commerce delle modifiche di progettazione pianificate per la categoria e degli aggiornamenti pianificati per il prodotto **[!UICONTROL Special Price]**. Alcuni aggiornamenti pianificati risultavano mancanti o ignorati durante la migrazione e ne migliorava le prestazioni.
+1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: è stato risolto il problema che impediva la corretta migrazione dei dati da Magento Open Source ad Adobe Commerce delle modifiche di progettazione pianificate per la categoria e degli aggiornamenti pianificati per il prodotto **[!UICONTROL Special Price]**. Alcuni aggiornamenti pianificati risultavano mancanti o ignorati durante la migrazione e ne migliorava le prestazioni.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: è stato risolto il problema che si verificava se l&#39;esecuzione di una query sul cliente `role` tramite GraphQL restituiva *Errore interno del server* quando il cliente non era assegnato a una società.
 1. **ACP2E-5027**: è stato risolto il problema che causava il blocco degli indicizzatori in un loop e il mancato completamento della reindicizzazione quando il blocco dei file era abilitato.
 1. **ACP2E-5029**: è stato risolto il problema per cui le modifiche alle regole dei prezzi di catalogo non vengono visualizzate in **[!DNL Live Search]** finché non viene eseguita una risincronizzazione manuale.
