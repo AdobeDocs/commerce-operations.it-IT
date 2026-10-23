@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 422a6e38f4e2298baa02090ee71d4f0fdfc95e3b
+source-git-commit: 4ed8f5ee3aefe44d3139421a178ca6834a2815f6
 workflow-type: tm+mt
-source-wordcount: '10990'
+source-wordcount: '11012'
 ht-degree: 0%
 ---
 
@@ -1076,6 +1076,8 @@ ht-degree: 0%
       - [AC-12854: Il riordinamento amministratore utilizza il numero di ordine originale con un suffisso -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5009: la migrazione della gestione temporanea dei contenuti crea aggiornamenti non validi e rallenta l&#39;installazione:upgrade](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)
+      - [ACP2E-5005: le quantità dei prodotti del bundle non vengono aggiornate nei preventivi negoziabili dell&#39;amministratore](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)
       - [ACP2E-5127: il salvataggio di una società con impostazioni locali non inglesi di amministrazione reimposta il limite di credito su zero](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)
       - [ACP2E-5079: i segmenti del cliente corrispondono solo al primo sito web con condivisione globale degli account](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)
       - [ACP2E-5059: i processi cron simultanei inviano e-mail di conferma ordini duplicate](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)
