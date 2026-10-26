@@ -1,7 +1,7 @@
 ---
-source-git-commit: 42acba2c908566207c9cbdd3b1c5b849366f9d32
+source-git-commit: e402a703aa2b493618d866ba001273d4f3b21bc6
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1830'
 ht-degree: 1%
 ---
 # Nuovo modello
@@ -9,6 +9,180 @@ ht-degree: 1%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 23 ottobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263">ACP2E-5263: l'esportazione CSV del prodotto si interrompe anticipatamente e omette i prodotti</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b9382dc0f240bcebddcb833940f6074854949964">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 22 ottobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta la descrizione dettagliata della correzione QPT 1.1.84 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127">ACP2E-5127: il salvataggio di una società con impostazioni locali di amministrazione non inglesi reimposta il limite di credito su zero</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/67377f54c43f6dc50cb33aafbd003d4b365cbaf5">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005">ACP2E-5005: le quantità dei prodotti del bundle non vengono aggiornate nei preventivi negoziabili amministratore</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d6fa3a2ebb8591baad26251a7e0adde24b7adab6">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009">ACP2E-5009: La migrazione della gestione temporanea dei contenuti crea aggiornamenti non validi e rallenta l'installazione:aggiornamento</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9ee0ee2a0dd1f55f4b49b6023d69f61065387d49">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 21 ottobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079">ACP2E-5079: i segmenti del cliente corrispondono solo al primo sito Web con condivisione account globale</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b243d218091c48dc97f2ff7ffa3e79325aa889c5">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 20 ottobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913">ACP2E-4913: la spedizione API REST e la creazione della fattura non vengono ritentate dopo un deadlock del database</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf4c32b6c0780b2f6f8dbccd27f4d7bba3579520">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017">ACP2E-5017: la query del ruolo cliente GraphQL non riesce per i clienti senza una società</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a5cc23e2d9c50215402b7454267cfe7a3c3201cd">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122">ACP2E-5122: gli errori del carrello GraphQL gestiti non vengono scritti correttamente nel registro eccezioni</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ba9e8ab95a6e8f079953f6de8906512f64ade22f">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059">ACP2E-5059: i processi cron simultanei inviano e-mail di conferma dell'ordine duplicate</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7e234cf6acf7fa74f7f5eff0e39f606123dcc485">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 19 ottobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940">AC-14940: l'e-mail di reimpostazione della password non viene inviata dopo l'eliminazione della visualizzazione archivio di un cliente</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7ab75a56bd8ca9bc9bcc96dc21678c99711b6ef3">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione di QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389">AC-11389: i totali dell'ordine variano in base all'aggiunta dei prodotti al carrello</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3e45719183a23e37a98a94aca955b902f5e795ed">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877">ACP2E-4877: il pulsante Modifica non è presente per il pagamento in sospeso degli ordini di acconto in Admin</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/620de17746347e5cb352b2c9f6a345bd5b41accb">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977">ACP2E-4977: i totali delle fatture di prodotto e delle note di credito configurabili escludono l'imposta fissa sul prodotto</a>.</p>
+</td>
+      <td>
+        Nuovo argomento, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd42ed03b4661e13c24dd3ce8df29375ae1c9e32">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 16 ottobre 2026
 
@@ -22,7 +196,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015: il salvataggio del catalogo condiviso rimuove le assegnazioni dei prodotti e i prezzi dopo un errore di lettura della sessione</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015: il salvataggio del catalogo condiviso rimuove le assegnazioni dei prodotti e i prezzi dopo un errore di lettura della sessione</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -30,7 +204,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5277785149087405dfe01a3e059d7f617869fbf2">commit</a></td>
     </tr>
     <tr>
-      <td><p>Aggiunta descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211: Le richieste parallele di componenti aggiuntivi al carrello creano elementi separati per lo stesso SKU</a>.</p>
+      <td><p>Aggiunta descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211: Le richieste parallele di componenti aggiuntivi al carrello creano elementi separati per lo stesso SKU</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -52,7 +226,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998">ACP2E-4998: lo SKU mancante impedisce l'aggiornamento del prezzo di massa per i prodotti validi</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998">ACP2E-4998: lo SKU mancante impedisce l'aggiornamento del prezzo di massa per i prodotti validi</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -60,7 +234,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c881ed90036eae94fc5ecb5a86bfab6a8343f9f1">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838">ACP2E-4838: l'utente con restrizioni Admin non può eliminare i clienti da un sito Web consentito</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838">ACP2E-4838: l'utente con restrizioni Admin non può eliminare i clienti da un sito Web consentito</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -68,7 +242,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/828758f6d2a65776578db16ab18a35fa20383e39">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741">ACP2E-4741: il salvataggio di un prodotto collegato nasconde un altro prodotto dalla vetrina con scorte personalizzate</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741">ACP2E-4741: il salvataggio di un prodotto collegato nasconde un altro prodotto dalla vetrina con scorte personalizzate</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -76,7 +250,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e826183cf7e720ab4ab8e824f2bb6c8cd27e3477">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143">ACP2E-5143: la query di route GraphQL esegue il rendering del contenuto della pagina CMS non richiesto</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143">ACP2E-5143: la query di route GraphQL esegue il rendering del contenuto della pagina CMS non richiesto</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -84,7 +258,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/30dceea6191f7cdd9e00a23ba71de49806295ef5">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128">AC-18128: le date dell'ordine e le marche temporali dei commenti di GraphQL non sono corrette per le lingue diverse dall'inglese</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128">AC-18128: le date dell'ordine e le marche temporali dei commenti di GraphQL non sono corrette per le lingue diverse dall'inglese</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -92,7 +266,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9573db54f723502aed37dd91f58091bf1cdb7510">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096">AC-18096: i campi data di Sales GraphQL restituiscono un formato localizzato errato</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096">AC-18096: i campi data di Sales GraphQL restituiscono un formato localizzato errato</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -114,7 +288,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta la documentazione per la versione 2.4.10-alpha1:<br />- Aggiunte <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">note sulla versione di Adobe Commerce</a> con dettagli sulla versione e problemi risolti.<br />- Aggiunte <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/magento-open-source/2-4-10">note sulla versione di Magento Open Source</a> con dettagli sulla versione e problemi risolti.<br />- Aggiornati <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/system-requirements">requisiti di sistema</a> con tabelle di dipendenza separate per cloud e locali per 2.4.10-alpha.<br />- Aggiornato il <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/cli-reference/uct">riferimento CLI UCT</a> alla versione 3.0.28.</p>
+      <td><p>È stata aggiunta la documentazione per la versione 2.4.10-alpha1:<br />- Aggiunte <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">note sulla versione di Adobe Commerce</a> con dettagli sulla versione e problemi risolti.<br />- Aggiunte <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-10">note sulla versione di Magento Open Source</a> con dettagli sulla versione e problemi risolti.<br />- Aggiornati <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">requisiti di sistema</a> con tabelle di dipendenza separate per cloud e locali per 2.4.10-alpha.<br />- Aggiornato il <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">riferimento CLI UCT</a> alla versione 3.0.28.</p>
 </td>
       <td>
         Aggiornamento principale, nuovo argomento, note sulla versione
@@ -122,7 +296,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/78a34dc069a30b72a1e0baff36085a2458a05983">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta la versione 2.4.10-alpha1 all'argomento <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/versions">Versioni rilasciate</a>.</p>
+      <td><p>È stata aggiunta la versione 2.4.10-alpha1 all'argomento <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">Versioni rilasciate</a>.</p>
 </td>
       <td>
         Note sulla versione
@@ -130,7 +304,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b045cf0b6bd0e74da1cfbaafe6b5493934f31039">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639">ACP2E-4639: tipo di elementi dell'elenco richieste di acquisto errato nello schema Adobe Commerce GraphQL</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639">ACP2E-4639: tipo di elementi dell'elenco richieste di acquisto errato nello schema Adobe Commerce GraphQL</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -152,7 +326,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101">ACP2E-5101: l'installazione di Adobe Commerce B2B non riesce quando gli indicizzatori utilizzano Update by Schedule</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101">ACP2E-5101: l'installazione di Adobe Commerce B2B non riesce quando gli indicizzatori utilizzano Update by Schedule</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -160,7 +334,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aae0dcd4753bf36df994a76e1311057fce65e32a">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223">ACP2E-5223: l'indice delle autorizzazioni del catalogo include siti Web esclusi dai gruppi di clienti</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223">ACP2E-5223: l'indice delle autorizzazioni del catalogo include siti Web esclusi dai gruppi di clienti</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -182,7 +356,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854">AC-12854: il riordinamento Amministratore utilizza il numero di ordine originale con un suffisso -1</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854">AC-12854: il riordinamento Amministratore utilizza il numero di ordine originale con un suffisso -1</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -204,7 +378,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Aggiunta <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview">Panoramica: Strumento Patch di qualità (QPT) v1.1.84</a>.</p>
+      <td><p>Aggiunta <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview">Panoramica: Strumento Patch di qualità (QPT) v1.1.84</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -226,7 +400,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Aggiunta <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview">Panoramica: Strumento Patch di qualità (QPT) v1.1.83</a>.</p>
+      <td><p>Aggiunta <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview">Panoramica: Strumento Patch di qualità (QPT) v1.1.83</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
@@ -248,7 +422,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stato aggiunto <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/monthly-isolated-security-patches">Criterio mensile per l'applicazione di patch di sicurezza isolate</a>, che spiega come Adobe Commerce distribuisce le correzioni CVE mirate e isolate il martedì della patch tra le versioni complete delle patch di sicurezza e come applicarle e verificarle.</p>
+      <td><p>È stato aggiunto <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/monthly-isolated-security-patches">Criterio mensile per l'applicazione di patch di sicurezza isolate</a>, che spiega come Adobe Commerce distribuisce le correzioni CVE mirate e isolate il martedì della patch tra le versioni complete delle patch di sicurezza e come applicarle e verificarle.</p>
 </td>
       <td>
         Nuovo argomento
@@ -270,7 +444,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata corretta la guida alla configurazione del servizio <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis/Valkey</a> per chiarire che le variabili di distribuzione <code>VALKEY_BACKEND</code> e <code>REDIS_BACKEND</code> non determinano quale servizio cache viene effettivamente utilizzato da Adobe Commerce e che <code>VALKEY_USE_SLAVE_CONNECTION</code>/<code>REDIS_USE_SLAVE_CONNECTION</code> deve corrispondere al servizio effettivamente disponibile nell'ambiente.</p>
+      <td><p>È stata corretta la guida alla configurazione del servizio <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis/Valkey</a> per chiarire che le variabili di distribuzione <code>VALKEY_BACKEND</code> e <code>REDIS_BACKEND</code> non determinano quale servizio cache viene effettivamente utilizzato da Adobe Commerce e che <code>VALKEY_USE_SLAVE_CONNECTION</code>/<code>REDIS_USE_SLAVE_CONNECTION</code> deve corrispondere al servizio effettivamente disponibile nell'ambiente.</p>
 </td>
       <td>
         Tecnico
@@ -292,7 +466,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce Patching Automation è ora generalmente disponibile. Per ulteriori informazioni, consulta la <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/caps-tool/intro">documentazione</a>.</p>
+      <td><p>Adobe Commerce Patching Automation è ora generalmente disponibile. Per ulteriori informazioni, consulta la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro">documentazione</a>.</p>
 </td>
       <td>
         Aggiornamento principale, nuovo argomento
@@ -314,34 +488,12 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.82 per <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840">ACP2E-4840: la query prodotti GraphQL restituisce una quantità nulla per i prodotti in magazzino nelle scorte di magazzino personalizzate</a>.</p>
+      <td><p>È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.82 per <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840">ACP2E-4840: la query prodotti GraphQL restituisce una quantità nulla per i prodotti in magazzino nelle scorte di magazzino personalizzate</a>.</p>
 </td>
       <td>
         Nuovo argomento, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edfc38af34925749c5acb36d2c0bcfc5d16a577a">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 19 agosto 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiornata la documentazione sulla memorizzazione nella cache di Commerce con indicazioni più chiare on-premise rispetto a quelle sul cloud e nuove linee guida sulla migrazione per passare a Valkey con la cache L2 di Symfony:<br />- Aggiornate <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cache/caching-overview">Panoramica sulla memorizzazione nella cache e opzioni di configurazione</a>.<br />- Aggiornate <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cache/cache-types">Configurare tipi e front-end della cache</a>.<br />- Aggiornate <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cache/cache-options">Opzioni di back-end della cache e riferimento di archiviazione</a>.<br />- Aggiornate <a href="https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cache/level-two-cache">Configurazione della cache L2 per l'ottimizzazione delle prestazioni</a> con indicazioni per la migrazione dalla cache L2 di Symfony.<br /> Procedure per la configurazione del servizio Valkey e Redis</a> con passaggi di migrazione specifici per Cloud a Valkey con cache L2 di Symfony.<code>RemoteSynchronizedCache</code><a href="https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration"></p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">commit</a></td>
     </tr>
   </tbody>
 </table>
