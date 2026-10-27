@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: b9ce2de42db0056d16d8df5e650231ae2b013653
+source-git-commit: e3fec5eba866e1d0ae4c7285667f41b289edf21b
 workflow-type: tm+mt
-source-wordcount: '11022'
+source-wordcount: '11035'
 ht-degree: 0%
 ---
 
@@ -1076,6 +1076,7 @@ ht-degree: 0%
       - [AC-12854: Il riordinamento amministratore utilizza il numero di ordine originale con un suffisso -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5027: gli indicizzatori non vengono completati quando il blocco dell&#39;applicazione utilizza il provider di blocco file](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)
       - [ACP2E-5263: l’esportazione CSV del prodotto si interrompe anticipatamente e omette i prodotti](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)
       - [ACP2E-5009: la migrazione della gestione temporanea dei contenuti crea aggiornamenti non validi e rallenta l&#39;installazione:upgrade](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)
       - [ACP2E-5005: le quantità dei prodotti del bundle non vengono aggiornate nei preventivi negoziabili dell&#39;amministratore](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)
