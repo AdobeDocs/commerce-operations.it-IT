@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 5c33cd529bff9208d640cec3c4068f578a9e376c
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '276'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.75
@@ -36,7 +36,7 @@ QPT v1.1.75 include le seguenti patch:
 1. **ACSD-68451**: risolve un problema per più siti Web in cui un amministratore di società effettua l&#39;accesso a un sito Web, crea una società non correlata in un altro sito Web, ma è erroneamente collegato a tale società non correlata.
 1. **ACSD-68517**: è stato corretto un errore di reinvio del modulo in **[!UICONTROL Catalog]** e **[!UICONTROL Catalog Search]** pagine.
 1. **ACSD-68490**: pulsante **[!UICONTROL Add New Attribute]** visibile all&#39;amministratore con restrizioni durante la creazione del prodotto configurabile.
-1. **ACSD-68573**: le autorizzazioni per le categorie non sono state applicate agli elementi della lista dei desideri del cliente. La visualizzazione e l&#39;impaginazione nella vetrina Web e in [!DNL GraphQL] non sono corrette.
+1. **ACSD-68573**: è stato risolto il problema che impediva la corretta applicazione delle autorizzazioni di categoria agli elementi della lista dei desideri del cliente. Dopo la correzione, le voci dell’elenco dei desideri vengono visualizzate e impaginate correttamente sia nel web che in GraphQL.
 1. **ACSD-68615**: è stato risolto il problema che causava la visualizzazione di un&#39;eccezione da parte di CLI della compensazione della prenotazione di magazzino se la combinazione elaborata aveva un ID ordine mancante.
 1. **ACSD-68793**: è stato corretto un problema a causa del quale prodotti validi venivano rifiutati in modo errato durante l&#39;assegnazione a un catalogo condiviso.
 1. **ACSD-68925**: è stato corretto un problema a causa del quale le risposte per le richieste GraphQL ora sono allineate con le specifiche GraphQL su HTTP. Viene restituito un codice di risposta 4XX quando la richiesta non può essere analizzata, non è autorizzata o riscontra un problema generale se la richiesta viene analizzata.

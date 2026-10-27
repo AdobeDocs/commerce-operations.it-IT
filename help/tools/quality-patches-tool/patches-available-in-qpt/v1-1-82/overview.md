@@ -32,9 +32,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 889cab9f0f353242319e1feaa090e74819f53027
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.82
@@ -61,9 +61,9 @@ QPT v1.1.82 include le seguenti patch:
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**: è stato risolto il problema che impediva il corretto blocco dell&#39;immissione di caratteri Unicode a 4 byte nell&#39;editor di WYSIWYG o del contenuto di Page Builder nell&#39;amministratore anche quando il database è configurato per supportare utf8mb4.
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**: è stato risolto il problema relativo alla scadenza lenta dei punti premio nei negozi con una cronologia dei punti premio di grandi dimensioni, causando ritardi nella scadenza dei punti premio.
 1. **[ACP2E-4840](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)**: è stato corretto il problema per cui il valore della quantità richiesto nella query GraphQL `products` restituisce null.
-1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)**: è stato risolto il problema per cui la query `requisition_lists GraphQL` restituisce un valore `total_count` che riflette solo il numero di elementi nella pagina corrente invece del numero totale di elenchi di richieste di acquisto che corrispondono ai criteri della query.
+1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)**: è stato risolto il problema per cui la query GraphQL `requisition_lists` restituisce un valore `total_count` che riflette solo il numero di elementi nella pagina corrente invece del numero totale di elenchi di richieste di acquisto che corrispondono ai criteri della query.
 1. **[ACP2E-4805](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)**: è stato risolto il problema che rallenta notevolmente le richieste API di pagamento per i prodotti configurabili con molti prodotti secondari quando il primo prodotto secondario vendibile viene visualizzato in ritardo nell&#39;elenco.
-1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)**: è stato risolto il problema per cui le notifiche e-mail di avviso sul prodotto ignorano le impostazioni e-mail della visualizzazione archivio.
+1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)**: è stato risolto il problema che impediva alle notifiche e-mail degli avvisi di prodotto di ignorare le impostazioni e-mail della visualizzazione archivio.
 1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**: è stato risolto il problema che causava la disconnessione imprevista degli utenti Admin durante la visualizzazione di account cliente con rubriche di grandi dimensioni nell&#39;amministratore.
 1. **[ACP2E-4894](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)**: è stato risolto il problema che causava il ritardo nella visualizzazione dei nuovi ordini nelle griglie di gestione degli ordini di amministrazione quando **[!UICONTROL Asynchronous Indexing]** era abilitato negli archivi di grandi volumi.
 1. **ACP2E-4981**: è stato risolto il problema per cui i caroselli di prodotti Page Builder visualizzano i prodotti in un ordine che non riflette la posizione impostata nell&#39;amministratore e includono prodotti configurabili quando i prodotti secondari corrispondenti sono visibili singolarmente.
