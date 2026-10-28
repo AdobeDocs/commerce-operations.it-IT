@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 18665c27761a52d631bdb62f282a4153de3f9950
+source-git-commit: 04e36db108c59bd9be2431a5b1a9ee86891b6268
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '549'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -44,13 +44,11 @@ QPT v1.1.84 include le seguenti patch:
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: è stato risolto il problema che determinava il rendering del contenuto della pagina CMS completa da parte della query GraphQL `route` quando veniva richiesto solo il routing dei metadati, aumentando le query del database per le pagine CMS che contengono [!DNL Page Builder] widget.
 1. **ACP2E-5183**: è stato risolto il problema che impediva la distribuzione di contenuto statico in PHP 8.5 durante la compilazione di un file `LESS` che utilizza la direttiva `@magento_import`.
 1. **[ACP2E-5242](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)**: è stato risolto il problema che impediva la ricerca della disponibilità del prodotto durante l&#39;aggiunta di elementi al carrello.
-1. **ACP2E-5263**: è stato risolto il problema che consentiva di interrompere l&#39;esportazione dei prodotti in un file CSV prima dell&#39;inclusione di tutti i prodotti, creando un file incompleto.
-1. **ACP2E-5242**: è stato risolto il problema che impediva la ricerca della disponibilità del prodotto durante l&#39;aggiunta di elementi al carrello.
 1. **[ACP2E-5263](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)**: è stato risolto il problema che consentiva di interrompere l&#39;esportazione dei prodotti in un file CSV prima dell&#39;inclusione di tutti i prodotti, creando un file incompleto.
 1. **ACP2E-5034**: è stato risolto il problema che causava il ripristino errato dei totali in *zero* durante il ricalcolo di un preventivo dopo aver selezionato un metodo di spedizione, lo scarto degli aggiornamenti alle quantità di opzioni prodotto nel bundle effettuati tramite l&#39;azione **[!UICONTROL Configure]** in Amministrazione e non rifletteva correttamente gli sconti a livello di articolo applicati ai prodotti del bundle prezzi dinamici nei subtotali del preventivo.
+1. **[AC-15494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)**: è stato corretto il problema per cui la query prodotti restituisce nomi di prodotti con caratteri speciali con escape di HTML invece dei caratteri originali.
 1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**: è stato risolto il problema che causava la scomparsa di un prodotto dal Negozio dopo il salvataggio di un prodotto collegato come Prodotto correlato, Vendita al rialzo o Vendita incrociata mentre erano in uso un magazzino e un&#39;origine non predefiniti.
 1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)**: è stato risolto il problema che causava la reimpostazione di **[!UICONTROL Credit Limit]** in `0` dell&#39;account di una società in Admin con impostazioni locali non predefinite.
 1. **[ACP2E-5079](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)**: è stato risolto il problema per cui la valutazione di un segmento di clienti assegnato a più siti Web restituisce i clienti corrispondenti solo dal primo sito Web quando gli account dei clienti sono condivisi a livello globale.
-1. **AC-15494**: è stato corretto il problema per cui la query prodotti restituisce nomi di prodotti con caratteri speciali con escape di HTML invece dei caratteri originali.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
