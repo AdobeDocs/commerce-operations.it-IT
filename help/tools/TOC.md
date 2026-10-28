@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d83b72ab0780e56af7cf7732de2bfe8de7d7b9c5
+source-git-commit: 04e36db108c59bd9be2431a5b1a9ee86891b6268
 workflow-type: tm+mt
-source-wordcount: '11051'
+source-wordcount: '11061'
 ht-degree: 0%
 ---
 
@@ -1076,6 +1076,7 @@ ht-degree: 0%
       - [AC-12854: Il riordinamento amministratore utilizza il numero di ordine originale con un suffisso -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [AC-15494: la query prodotti GraphQL restituisce nomi di prodotto con escape HTML](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
       - [ACP2E-5242: GraphQL utilizza l’ID store come ID sito web durante le richieste di aggiunta al carrello](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
       - [ACP2E-5027: gli indicizzatori non vengono completati quando il blocco dell&#39;applicazione utilizza il provider di blocco file](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)
       - [ACP2E-5263: l’esportazione CSV del prodotto si interrompe anticipatamente e omette i prodotti](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)
