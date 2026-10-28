@@ -32,9 +32,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 4e0c8bca6f53821914bf40481eb0cee7ededa411
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '270'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.81
@@ -46,9 +46,7 @@ QPT v1.1.81 include le seguenti patch:
 
 1. **[ACP2E-4401](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)**: è stato risolto il problema che causava il reindirizzamento di [!UICONTROL Scheduled Update Preview] del collegamento [!UICONTROL Home Page] con prodotti configurabili a [!UICONTROL maintenance page] invece di visualizzare l&#39;elenco dei prodotti.
 1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)**: è stato corretto il problema per cui la modifica di un gruppo di clienti nell&#39;amministratore non comporta l&#39;aggiornamento delle autorizzazioni del catalogo nella vetrina, in quanto il catalogo e il carrello riflettono le autorizzazioni non aggiornate.
-1. **ACP2E-4401**: è stato risolto il problema per cui il collegamento [!UICONTROL Scheduled Update Preview] della home page con prodotti configurabili viene reindirizzato alla pagina di manutenzione anziché visualizzare l&#39;elenco dei prodotti.
 1. **[ACP2E-4395](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)**: la creazione di prodotti API Giftcard ora visualizzerà un errore se non vengono specificati importi per l&#39;ambito globale.
-1. **ACP2E-4468**: è stato risolto il problema che impediva a [!UICONTROL Admin] utenti con autorizzazioni di ambito sito Web di modificare il contenuto del banner.
 1. **[ACP2E-4468](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)**: è stato risolto il problema che impediva agli utenti amministratori con autorizzazioni di ambito sito Web di modificare il contenuto del banner.
 1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**: è stato risolto il problema relativo alla sovrapposizione di nomi di prodotti lunghi con opzioni personalizzate tra colonne o elementi adiacenti nei PDF di tipo Fattura, Spedizione, Nota di credito e Restituzione dopo le interruzioni di pagina, rendendo illeggibili gli elementi riga.
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**: è stato risolto il problema relativo alla scomparsa dei prodotti non vendibili o eliminati dai preventivi negoziabili finalizzati.
