@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
 workflow-type: tm+mt
-source-wordcount: '33143'
+source-wordcount: '33534'
 ht-degree: 0%
 ---
 # Note sulla versione
@@ -29,11 +29,28 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=it#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=it) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
+>Per istruzioni sull&#39;applicazione di patch ai progetti Adobe Commerce, consulta [Applicare patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches). Vedere [[!DNL Quality Patches Tool]: Cercare le patch](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) nella Guida all&#39;aggiornamento software per esaminare l&#39;elenco completo delle patch rilasciate.
 
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per Magento Open Source, consulta le [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.85 {#v1-1-85}
+
+* **ACP2E-4929** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.10) - Corregge il problema per cui le etichette degli attributi sulla [!UICONTROL Compare Products] pagina visualizzano le traduzioni da una diversa visualizzazione archivio invece che dalla visualizzazione archivio corrente.
+* **ACP2E-5075** (per Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.10) - Corregge il problema relativo alla mancata applicazione di uno sconto a tutti gli elementi figlio di un prodotto bundle a prezzo dinamico quando la regola corrisponde solo al prodotto padre del bundle a causa di una regola di prezzo del carrello a importo fisso con una condizione di categoria.
+* **ACP2E-5077** (per Adobe Commerce e Magento Open Source >=2.4.7-p7 &lt;2.4.10) - Corregge il problema per cui le query `customerCart` GraphQL o le richieste `POST /V1/carts/mine REST` creano carrelli attivi duplicati per i clienti che non dispongono già di un carrello attivo.
+* **ACP2E-5088** (per Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.10) - Corregge il problema di cancellazione del carrello permanente di un cliente alla scadenza della sessione.
+* **ACP2E-3991** (per Adobe Commerce >=2.4.7 &lt;2.4.9) - Corregge il problema per cui l&#39;indirizzo IP del client non viene determinato correttamente.
+* **ACP2E-5092** (per Adobe Commerce, B2B >=1.3.4 &lt;1.5.4) - Corregge il problema per cui la pagina [!UICONTROL Company Profile] e la pagina Admin [!UICONTROL Customer Edit] visualizzano un errore quando un indirizzo società salvato senza un&#39;area geografica viene aggiunto successivamente al relativo paese.
+* **ACP2E-5124** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.10) - Corregge il problema se il pulsante [!UICONTROL Import] rimane disponibile nei risultati di convalida dopo un errore di convalida quando [!UICONTROL Validation Strategy] è impostato su *Interrompi in caso di errore*.
+* **AC-17456** (per Adobe Commerce e Magento Open Source >=2.4.9 &lt;2.4.10) - Corregge il problema per cui la modifica dell&#39;ambito *[!UICONTROL Global]* nella pagina [!UICONTROL Design Configuration] del pannello di amministrazione restituisce un errore *HTTP 500* in PHP 8.4 e 8.5.
+* **ACP2E-5212** (per Adobe Commerce, B2B >=1.3.4 &lt;1.5.4) - Risolve il problema per cui [!UICONTROL Quick Order] accetta file non CSV rinominati con un&#39;estensione `.csv`.
+* **ACP2E-5300** (per Adobe Commerce e Magento Open Source >=2.4.9 &lt;2.4.10) - Corregge il problema relativo alla ricerca di più numeri di ordine separati da spazi o virgole nella griglia [!UICONTROL Orders] del Pannello di amministrazione senza ordini corrispondenti.
+* **ACP2E-5354** (per Adobe Commerce, B2B >=1.5.3 &lt;1.5.4) - Corregge il problema se l&#39;aggiornamento di un cliente tramite l&#39;API REST fa apparire più volte un cliente associato a un account aziendale nella griglia [!UICONTROL Customers] dell&#39;amministratore.
+* **ACP2E-5208** (per Adobe Commerce, B2B >=1.5.1 &lt;1.5.4) - Risolve il problema relativo al ricaricamento della sezione [!UICONTROL Requisition List] in ogni navigazione delle pagine di Storefront, anche quando non sono state apportate modifiche.
+* Versioni aggiornate: **ACP2E-4894**
+* Patch sostituite: **ACP2E-4626**
 
 ## v1.1.84 {#v1-1-84}
 
