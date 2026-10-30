@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 04e36db108c59bd9be2431a5b1a9ee86891b6268
+source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
 workflow-type: tm+mt
-source-wordcount: '11061'
+source-wordcount: '11091'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,8 @@ ht-degree: 0%
       - [ACP2E-4875: gli utenti amministratori si disconnettono quando aprono account cliente con grandi rubriche](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [AC-17975: I problemi di compatibilità con PHP 8.5 influiscono sui comandi CLI, sulla modifica delle categorie, sulla configurazione della progettazione e sull&#39;accesso del cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)
+      - [AC-16530: Il carrello mostra prezzi non coerenti dopo un aggiornamento della regola del prezzo di catalogo pianificato](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)
       - [ACP2E-4977: i totali delle fatture di prodotto e delle note di credito configurabili escludono l&#39;imposta fissa sul prodotto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
       - [AC-11389: I totali dell’ordine variano in base all’ordine in cui i prodotti vengono aggiunti al carrello](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)
       - [ACP2E-4877: pulsante Modifica mancante per il pagamento in sospeso sugli ordini conto in Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)

@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 5c33cd529bff9208d640cec3c4068f578a9e376c
+source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -32,21 +32,21 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 
 QPT v1.1.83 include le seguenti patch:
 
-1. **AC-17975**: sono stati risolti diversi problemi di compatibilità PHP 8.5 che interessano i flussi di lavoro di amministrazione, l&#39;autenticazione di checkout, l&#39;elaborazione CAPTCHA, la gestione delle categorie, le pagine di configurazione e le operazioni della riga di comando in alcuni ambienti PHP.
+1. **[AC-17975](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)**: è stato risolto il problema che causava errori nei comandi CLI, nella modifica delle categorie, nella configurazione della progettazione e nell&#39;accesso del cliente AJAX in Adobe Commerce 2.4.9 quando veniva utilizzato PHP 8.5.
 1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**: è stato risolto il problema che impediva la modifica in Admin degli ordini effettuati tramite Payment on Account quando lo stato era *Pending*.
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: è stato risolto il problema che causava la restituzione delle date in un formato diverso da quello delle versioni precedenti da parte dei campi delle date di Sales GraphQL, con il ripristino del formato della data da (/) a (-) con separazione da trattino.
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: è stato risolto il problema che causava la visualizzazione di date di ordine e timestamp dei commenti dell&#39;ordine restituiti da GraphQL con date di calendario non corrette in impostazioni internazionali non inglesi.
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**: è stato risolto il problema che impediva a un utente amministratore con autorizzazioni limitate di eliminare clienti dalla griglia Clienti.
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: è stato risolto il problema relativo all&#39;errata ortografia del tipo di elementi dell&#39;elenco richieste nello schema di GraphQL. Il campo `items` e il tipo `RequistionListItems` precedenti rimangono disponibili ma sono obsoleti.
 1. **ACP2E-4908**: è stato risolto il problema che causava un eccessivo utilizzo di memoria da parte di cataloghi di grandi dimensioni in Redis o Valkey, poiché venivano create voci cache di layout separate per ogni prodotto in ogni visualizzazione dello store.
+1. **[AC-16530](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)**: è stato risolto il problema che impediva al carrello di riflettere in modo coerente gli aggiornamenti pianificati alle regole dei prezzi del catalogo.
 1. **[ACP2E-4977](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)**: è stato risolto il problema per cui i totali complessivi delle fatture e delle note di accredito per i prodotti configurabili non includono l&#39;FPT (Fixed Product Tax), che si traduce in totali inferiori al totale dell&#39;ordine.
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**: è stato corretto il problema che si verificava quando riordinando un ordine nell&#39;amministratore si creava un nuovo numero di ordine con un suffisso `-1` invece di assegnare il numero di ordine sequenziale successivo.
-1. **AC-16530**: è stato risolto il problema che impediva al carrello di riflettere in modo coerente gli aggiornamenti pianificati alle regole dei prezzi del catalogo.
 1. **[AC-11389](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)**: risolve il problema relativo al calcolo errato di sconti, imposte e totali ordini in alcuni scenari di arrotondamento.
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**: è stato risolto il problema che consentiva di rimuovere accidentalmente i prodotti e i prezzi assegnati quando i dati del catalogo richiesti non erano disponibili durante il salvataggio di un catalogo condiviso nell&#39;amministratore.
 1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: è stato risolto il problema che impediva l&#39;aggiornamento degli SKU validi a causa della mancata riuscita della richiesta REST API `POST /V1/products/tier-prices` per l&#39;intera richiesta.
 1. **[AC-14940](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)**: è stato risolto il problema per cui se si fa clic su [!UICONTROL Reset Password] per un account cliente nell&#39;amministratore, l&#39;e-mail di reimpostazione della password non viene inviata in alcuni casi correlati allo store.
-1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: è stato risolto il problema che impediva l&#39;installazione del modulo B2B se gli indicizzatori erano impostati su **[!UICONTROL Update by Schedule]**.
+1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: è stato risolto il problema che impediva l&#39;installazione del modulo B2B se gli indicizzatori erano impostati su **[!UICONTROL Update on Schedule]**.
 1. **ACP2E-5205**: risolve il problema quando il caricamento della categoria richiede molto tempo o causa un timeout quando sono coinvolte numerose categorie e prodotti. Inoltre, il conteggio dei prodotti viene ora visualizzato correttamente per ogni foglia di categoria.
 1. **[ACP2E-3211](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)**: è stato risolto il problema per cui l&#39;aggiunta dello stesso prodotto al carrello contemporaneamente nello Storefront crea elementi separati nel carrello per lo stesso SKU anziché combinarli in un singolo elemento.
 1. **[ACP2E-5223](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)**: è stato risolto il problema per cui l&#39;indice **[!UICONTROL Catalog Permissions]** include siti Web esclusi da un gruppo di clienti.
