@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d864a5fb8d9093a14575f017e7b66a19219d503f
+source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '525'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -32,7 +32,7 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 
 QPT v1.1.83 include le seguenti patch:
 
-1. **AC-17975**: sono stati risolti diversi problemi di compatibilità PHP 8.5 che interessano i flussi di lavoro di amministrazione, l&#39;autenticazione di checkout, l&#39;elaborazione CAPTCHA, la gestione delle categorie, le pagine di configurazione e le operazioni della riga di comando in alcuni ambienti PHP.
+1. **[AC-17975](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)**: è stato risolto il problema che causava errori nei comandi CLI, nella modifica delle categorie, nella configurazione della progettazione e nell&#39;accesso del cliente AJAX in Adobe Commerce 2.4.9 quando veniva utilizzato PHP 8.5.
 1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**: è stato risolto il problema che impediva la modifica in Admin degli ordini effettuati tramite Payment on Account quando lo stato era *Pending*.
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: è stato risolto il problema che causava la restituzione delle date in un formato diverso da quello delle versioni precedenti da parte dei campi delle date di Sales GraphQL, con il ripristino del formato della data da (/) a (-) con separazione da trattino.
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: è stato risolto il problema che causava la visualizzazione di date di ordine e timestamp dei commenti dell&#39;ordine restituiti da GraphQL con date di calendario non corrette in impostazioni internazionali non inglesi.
