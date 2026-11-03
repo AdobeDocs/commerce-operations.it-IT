@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a6400a85be93c8576f5bb2866f4f5107acb5ec1d
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '420'
 ht-degree: 0%
 ---
 # Impostare la modalità operativa
@@ -135,6 +135,10 @@ Enabled production mode.
 ```
 
 ### Passa alla modalità sviluppatore
+
+>[!NOTE]
+>
+>La modalità Sviluppatore non è supportata nell’ambiente Adobe Commerce Cloud e il supporto Adobe Commerce non è in grado di facilitare la modifica della modalità dell’applicazione.
 
 Quando si passa dalla modalità di produzione alla modalità sviluppatore, è necessario cancellare le classi generate e le entità Object Manager come i proxy per evitare errori imprevisti. Dopo aver eseguito questa operazione, è possibile modificare le modalità. Procedi come segue:
 
