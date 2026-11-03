@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
+source-git-commit: a376b03617703097396bef92f8174bfe1da34c52
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '524'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -32,13 +32,13 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 
 QPT v1.1.83 include le seguenti patch:
 
+1. **[ACP2E-4908](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908.md)**: è stato risolto il problema che poteva causare un eccessivo utilizzo di memoria da parte di cataloghi di grandi dimensioni in [!DNL Valkey] (o [!DNL Redis]) perché venivano create voci separate della cache di layout per ogni prodotto in ogni visualizzazione archivio.
 1. **[AC-17975](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)**: è stato risolto il problema che causava errori nei comandi CLI, nella modifica delle categorie, nella configurazione della progettazione e nell&#39;accesso del cliente AJAX in Adobe Commerce 2.4.9 quando veniva utilizzato PHP 8.5.
 1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**: è stato risolto il problema che impediva la modifica in Admin degli ordini effettuati tramite Payment on Account quando lo stato era *Pending*.
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: è stato risolto il problema che causava la restituzione delle date in un formato diverso da quello delle versioni precedenti da parte dei campi delle date di Sales GraphQL, con il ripristino del formato della data da (/) a (-) con separazione da trattino.
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: è stato risolto il problema che causava la visualizzazione di date di ordine e timestamp dei commenti dell&#39;ordine restituiti da GraphQL con date di calendario non corrette in impostazioni internazionali non inglesi.
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**: è stato risolto il problema che impediva a un utente amministratore con autorizzazioni limitate di eliminare clienti dalla griglia Clienti.
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: è stato risolto il problema relativo all&#39;errata ortografia del tipo di elementi dell&#39;elenco richieste nello schema di GraphQL. Il campo `items` e il tipo `RequistionListItems` precedenti rimangono disponibili ma sono obsoleti.
-1. **ACP2E-4908**: è stato risolto il problema che causava un eccessivo utilizzo di memoria da parte di cataloghi di grandi dimensioni in Redis o Valkey, poiché venivano create voci cache di layout separate per ogni prodotto in ogni visualizzazione dello store.
 1. **[AC-16530](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)**: è stato risolto il problema che impediva al carrello di riflettere in modo coerente gli aggiornamenti pianificati alle regole dei prezzi del catalogo.
 1. **[ACP2E-4977](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)**: è stato risolto il problema per cui i totali complessivi delle fatture e delle note di accredito per i prodotti configurabili non includono l&#39;FPT (Fixed Product Tax), che si traduce in totali inferiori al totale dell&#39;ordine.
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**: è stato corretto il problema che si verificava quando riordinando un ordine nell&#39;amministratore si creava un nuovo numero di ordine con un suffisso `-1` invece di assegnare il numero di ordine sequenziale successivo.
