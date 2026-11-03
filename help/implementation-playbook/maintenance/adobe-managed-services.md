@@ -6,6 +6,8 @@ feature: Services
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: da76473c-f99b-5ad0-9b14-896aed473f8a
     internal-label: Services
@@ -17,9 +19,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+badgePaas: label="Commerce su Cloud" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud."
+source-git-commit: f1894f3a95e38f64affff0769e80557fe0b4a4d7
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1201'
 ht-degree: 0%
 ---
 
@@ -400,7 +403,7 @@ Adobe fornisce una serie di servizi correlati a provisioning, sviluppo, staging 
 
 Lo stack di sicurezza Adobe per Managed Services crea la sicurezza in a ogni livello utilizzando l’automazione e la coerenza per ridurre gli errori umani. I team di sviluppo e operativi ereditano automaticamente i controlli di sicurezza da diversi livelli dello stack.
 
-I partner della piattaforma, come Amazon Web Services e Microsoft Azure, garantiscono la massima copertura di sicurezza quando si applicano personalizzazioni della piattaforma, mentre il team Managed Services di Adobe fornisce servizi di sicurezza di base, come conformità, registrazione, autenticazione, scansione e monitoraggio, sicurezza del server e configurazione sicura delle applicazioni. Per ulteriori informazioni, vedere [Sicurezza Adobe Commerce](https://business.adobe.com/it/products/magento/secure-ecommerce.html).
+I partner della piattaforma, come Amazon Web Services e Microsoft Azure, garantiscono la massima copertura di sicurezza quando si applicano personalizzazioni della piattaforma, mentre il team Managed Services di Adobe fornisce servizi di sicurezza di base, come conformità, registrazione, autenticazione, scansione e monitoraggio, sicurezza del server e configurazione sicura delle applicazioni. Per ulteriori informazioni, vedere [Sicurezza Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html).
 
 Il diagramma seguente mostra lo stack della tecnologia di sicurezza Adobe Managed Services:
 
