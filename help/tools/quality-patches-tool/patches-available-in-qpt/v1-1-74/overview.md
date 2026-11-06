@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 49785473e0154e72e675b54f9d8119460c53bd8c
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '154'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.74
@@ -34,7 +34,7 @@ QPT v1.1.74 include le seguenti patch:
 
 1. **ACSD-68636**: è stato risolto il problema che impediva la corretta visualizzazione del nome del proprietario del negozio nelle intestazioni delle e-mail delle gift card per le fatture generate da un altro negozio.
 1. **ACSD-68430**: è stato risolto il problema che impediva il salvataggio di un cliente o di un indirizzo se i dati includevano opzioni di attributo eliminate dalla configurazione dell&#39;attributo.
-1. **ACSD-68499**: la mutazione di GraphQL `updateCartItems` restituisce *success* per quantità superiori alle scorte disponibili.
+1. **ACSD-68499**: è stato risolto il problema per cui la mutazione GraphQL `updateCartItems` restituiva una risposta di successo durante l&#39;aggiornamento di quantità che superavano le scorte disponibili, causando quantità e totali gonfiati.
 1. **ACSD-68810**: è stato risolto il problema a causa del quale un ordine veniva assegnato a un cliente appena creato su un sito Web diverso nonostante la configurazione di **[!UICONTROL Customer Account Sharing]**.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.

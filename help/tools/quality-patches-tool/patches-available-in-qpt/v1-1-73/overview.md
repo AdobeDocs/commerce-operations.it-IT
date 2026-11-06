@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 316b2f5efb35b6500a702ec1754a87da881ba961
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '195'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.73
@@ -36,8 +36,8 @@ QPT v1.1.73 include le seguenti patch:
 1. **ACSD-67908**: è stato risolto il problema che impediva la corretta unione dei file JS nelle impostazioni multi-store.
 1. **ACSD-68190**: è stato risolto il problema che impediva l&#39;applicazione degli sconti, impediva la corretta visualizzazione degli sconti applicati nella risposta alla visualizzazione del carrello di GraphQL e la rimozione degli sconti non cedolari in seguito alla rimozione di uno sconto cedolare.
 1. **ACSD-68206**: è stato corretto l&#39;errore che si verificava quando si utilizzava il server applicazioni GraphQL con la funzionalità **[!UICONTROL Rate Limiting]** con l&#39;estensione PHP [!DNL Redis] installata.
-1. **ACSD-68356**: la query del carrello [!DNL GraphQL] restituisce un importo di sconto errato per le virgolette virtuali.
-1. **ACSD-68391**: autorizzazioni relative alla categoria non applicate in **[!UICONTROL Quick Order]** e **[!UICONTROL Requisition Lists]**.
-1. **ACSD-68400**: la quantità della gift card virtuale non viene riflessa in modo accurato in **[!UICONTROL Inventory reservation table]**.
+1. **ACSD-68356**: è stato risolto il problema a causa del quale una query del carrello [!DNL GraphQL] restituiva un importo di sconto errato per i preventivi virtuali.
+1. **ACSD-68391**: è stato corretto il problema a causa del quale le autorizzazioni relative alla categoria non venivano applicate correttamente in **[!UICONTROL Quick Order]** e **[!UICONTROL Requisition Lists]**.
+1. **ACSD-68400**: è stato risolto un problema a causa del quale la quantità di gift card virtuale non veniva riportata in modo preciso in **[!UICONTROL Inventory reservation table]**.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
