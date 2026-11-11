@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: c60a79bd95f2378541498961025c3ba838d15358
+source-git-commit: 25d545e300a0a32f982a41c7d3d82b3ed5daf5ef
 workflow-type: tm+mt
-source-wordcount: '11139'
+source-wordcount: '11153'
 ht-degree: 0%
 ---
 
@@ -1080,6 +1080,7 @@ ht-degree: 0%
       - [AC-12854: Il riordinamento amministratore utilizza il numero di ordine originale con un suffisso -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5034: gli sconti sugli articoli B2B non riducono i subtotali del bundle a prezzo dinamico nei preventivi negoziabili](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034.md)
       - [ACP2E-5041: il salvataggio di un modulo di prodotto non aggiornato scade dopo un aggiornamento pianificato](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)
       - [ACP2E-5183: la distribuzione di contenuto statico non riesce in PHP 8.5 con `@magento_import`](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)
       - [AC-15494: la query prodotti GraphQL restituisce nomi di prodotto con escape HTML](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
