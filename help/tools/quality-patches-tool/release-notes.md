@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
+source-git-commit: b386ae4fb7b26db8498fb78d1a354c3267a862ca
 workflow-type: tm+mt
-source-wordcount: '33534'
+source-wordcount: '34318'
 ht-degree: 0%
 ---
 # Note sulla versione
@@ -34,6 +34,35 @@ ht-degree: 0%
 >[!INFO]
 >
 >Per informazioni su [!DNL quality patches] creato dalla community per Magento Open Source, consulta le [note sulla versione](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.86 {#v1-1-86}
+
+* **ACP2E-3094** (per Adobe Commerce >=2.4.5 &lt;2.4.8) - Corregge il problema per cui la visualizzazione o la modifica di [!UICONTROL Category Permissions] per una categoria con molte autorizzazioni può causare la mancata risposta del browser.
+* **ACP2E-5046** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.10) - Corregge il problema per cui l&#39;aggiornamento della pagina durante la creazione di un ordine nell&#39;amministratore aggiunge più volte lo stesso SKU.
+* **ACP2E-5050** (per Adobe Commerce >=2.4.6 &lt;2.4.10) - Corregge il problema per cui la visualizzazione o il salvataggio di un RMA nell&#39;amministratore non comporta la visualizzazione del numero RMA nel report [!UICONTROL Action Logs].
+* **ACP2E-5057** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corregge il problema in cui le query GraphQL per i prodotti bundle restituiscono i prezzi delle opzioni del bundle globali anziché i prezzi specifici del sito Web quando [!UICONTROL Catalog Price Scope] è impostato su *Sito Web*.
+* **ACP2E-5061** (per Adobe Commerce >=2.4.5 &lt;2.4.10) - Corregge il problema per cui una regola di merchandising per le categorie non può combinare le condizioni `AND` con una condizione che corrisponde a uno qualsiasi dei diversi valori.
+* **ACP2E-5071** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.10) - Corregge il problema per cui il messaggio di disponibilità delle scorte non viene sempre visualizzato nella pagina del prodotto quando il carrello contiene già la quantità totale disponibile.
+* **ACP2E-5094** (per Adobe Commerce e Magento Open Source >=2.4.6-p3 &lt;2.4.7 || >=2.4.8 &lt;2.4.10) - Corregge il problema di rallentamento del caricamento delle pagine quando viene impostata una `MAGENTO_DC_*` variabile di ambiente.
+* **ACP2E-5118** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.10): è stato risolto il problema che impediva il rendering dell&#39;anteprima di Page Builder se la cache [!UICONTROL Translations] era disabilitata.
+* **ACP2E-5134** (per Adobe Commerce >=2.4.6 &lt;2.4.10) - Corregge il problema se la rimozione di un prodotto incluso in un bundle dal [!UICONTROL Shared Catalog] di un&#39;azienda lascia il prodotto nel carrello e causa un errore nel carrello e durante il pagamento.
+* **ACP2E-5146** (per Adobe Commerce, B2B >=1.3.4 &lt;1.5.4) - Corregge il problema per cui un utente amministratore limitato a siti Web specifici non può eliminare clienti quando un cliente su un altro sito Web ha lo stesso ID dell&#39;utente amministratore.
+* **ACP2E-5176** (per Adobe Commerce >=2.4.7 &lt;2.4.10) - Corregge il problema per cui gli eventi di e-commerce inviati a [!DNL Google Analytics] da 4 a [!DNL Google Tag Manager] utilizzano il formato [!DNL Universal Analytics] e omettono diversi eventi di checkout.
+* **ACP2E-5185** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.10) - Corregge il problema per cui se si sposta una categoria nella struttura ad albero delle categorie, viene visualizzato l&#39;errore *Si è verificato un errore di spostamento della categoria* oppure il completamento richiede alcuni minuti se l&#39;archivio contiene numerose riscritture di URL.
+* **ACP2E-4191** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.9) - Corregge il problema per cui alcune richieste REST API entrano in un ciclo infinito quando la cache dei tipi e degli attributi EAV è disabilitata.
+* **ACP2E-4973** (per Adobe Commerce e Magento Open Source >=2.4.8-p1 &lt;2.4.9) - Corregge il problema per cui il passaggio da [!UICONTROL In-Store Delivery] a un altro metodo di consegna non cancella l&#39;indirizzo dell&#39;archivio associato dal carrello.
+* **ACP2E-5221** (per Adobe Commerce, B2B >=1.5.3 &lt;1.5.4) - Corregge il problema per cui l&#39;indicizzatore [!UICONTROL Catalog Product Permissions] richiede molto più tempo se [!UICONTROL Quick Order] è abilitato in installazioni con molti store e gruppi di clienti.
+* **ACP2E-5245** (per Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Risolve il problema per cui un cliente appena registrato che utilizza lo stesso indirizzo per la spedizione e la fatturazione al primo ordine vede tale indirizzo elencato due volte durante il successivo pagamento.
+* **ACP2E-5248** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.10) - Corregge il problema per cui gli utenti Admin senza l&#39;[!UICONTROL Edit Product Status] autorizzazione visualizzano *null come offset array* errore di deprecazione all&#39;apertura della pagina [!UICONTROL Add Product] su PHP 8.5.
+* **ACP2E-5254** (per Adobe Commerce, B2B >=1.5.2 &lt;1.5.4) - Corregge il problema per cui i prodotti aggiunti a un elenco di richieste di acquisto non vengono visualizzati quando un cliente apre l&#39;elenco finché la cache non viene cancellata.
+* **ACP2E-5268** (per Adobe Commerce e Magento Open Source >=2.4.9 &lt;2.4.10) - Corregge il problema se la creazione di un prodotto configurabile non riesce quando [!UICONTROL Enable Frontend Resize] è impostato su *No*.
+* **ACP2E-3752** (per Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.9) - Corregge il problema per cui l&#39;elaborazione dell&#39;importazione dei prodotti genera l&#39;errore *Chiave di array non definita &quot;apply_to&quot;* quando vengono create molte operazioni di importazione dei prodotti.
+* **ACP2E-5280** (per Adobe Commerce >=2.4.9 &lt;2.4.10) - Corregge il problema relativo a un errore riscontrato dai clienti durante l&#39;accesso se [!UICONTROL Category Permissions] è abilitato.
+* **ACP2E-5295** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.10) - Corregge il problema relativo alla mancata reindicizzazione del prezzo del prodotto parallelo con l&#39;errore *Fail in child process* quando viene eseguito dopo l&#39;indicizzatore [!UICONTROL Inventory] nello stesso processo.
+* **ACP2E-5298** (per Adobe Commerce >=2.4.5 &lt;2.4.10) - Corregge il problema per cui gli utenti amministratori con accesso in sola visualizzazione alle regole di prezzo del carrello possono generare o eliminare codici coupon.
+* **ACP2E-5333** (per Adobe Commerce >=2.4.5 &lt;2.4.10) - Corregge il problema se l&#39;aggiornamento di un segmento del cliente con una condizione [!UICONTROL Total Number of Orders] che utilizza l&#39;operatore `is not` e un valore di uno o più non riesce e viene restituito l&#39;errore *Operatore sconosciuto specificato.*.
+* **ACP2E-5425** (per Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.8) - Corregge il problema per cui i clienti ricevono e-mail di conferma dell&#39;ordine duplicate per lo stesso ordine.
+* Versioni aggiornate: **ACSD-63578**
 
 ## v1.1.85 {#v1-1-85}
 
