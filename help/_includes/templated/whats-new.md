@@ -1,7 +1,7 @@
 ---
-source-git-commit: 114e203ce1226139cf2d31b758329ccd8a00205c
+source-git-commit: 9e7338e0be69b83b92210b6299d92cc688681f8d
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2227'
 ht-degree: 0%
 ---
 # Nuovo modello
@@ -12,6 +12,9 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Gli aggior
 
 | Descrizione | Tipo | Data/origine |
 | --- | --- | --- |
+| Sono state pubblicate le [note sulla versione](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=it) per il rilascio del pacchetto 1.1.86 Quality Patches Tool (QPT). | Qpt | [13 novembre 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/6a84f2ebcbbf8041bbe783b53eab5500a4b0acc2) |
+| È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per [ACP2E-5041: il salvataggio di un modulo di prodotto non aggiornato comporta la scadenza del prezzo speciale dopo un aggiornamento pianificato](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041). | Nuovo argomento, qpt | [11 novembre 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/d2b8ba35c866be25a0fbbebceeb9a7c68ba37293) |
+| È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per [ACP2E-5034: gli sconti per elementi B2B non riducono i subtotali del bundle a prezzo dinamico nei preventivi negoziabili](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034). | Nuovo argomento, qpt | [11 novembre 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/974c6238c0e0008eaa36851449de97218bfca949) |
 | È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per [ACP2E-5205: i cataloghi di grandi dimensioni causano un caricamento e timeout lenti delle categorie in Admin](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205). | Nuovo argomento, qpt | [5 novembre 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/39e85100b07e742c5d21708af62fd1da3462226b) |
 | È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.83 per [ACP2E-4908: i cataloghi di grandi dimensioni causano un utilizzo eccessivo della memoria Redis o Valkey](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908). | Nuovo argomento, qpt | [2 novembre 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/a0924456f529fcc4378c65e81eacfdd6711ae1ca) |
 | È stata aggiunta una descrizione dettagliata della correzione QPT 1.1.84 per [ACP2E-5183: la distribuzione di contenuto statico non riesce in PHP 8.5 con @magento_import](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183). | Nuovo argomento, qpt | [2 novembre 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/3a5e0c4cc2f879416a8e8bc544cc709ef4db3c32) |
