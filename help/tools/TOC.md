@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 25d545e300a0a32f982a41c7d3d82b3ed5daf5ef
+source-git-commit: 8e93fbc0f771dd2b4ca1a5049ef8dd15f947cd82
 workflow-type: tm+mt
-source-wordcount: '11153'
+source-wordcount: '11157'
 ht-degree: 0%
 ---
 
@@ -1097,6 +1097,8 @@ ht-degree: 0%
       - [ACP2E-5017: la query del ruolo cliente GraphQL non riesce per i clienti senza un’azienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)
       - [ACP2E-5143: la query di route GraphQL esegue il rendering del contenuto della pagina CMS non richiesto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
       - [ACP2E-4741: il salvataggio di un prodotto collegato nasconde un altro prodotto dalla vetrina con scorte personalizzate](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
+    - v1.1.85 {#v1-1-85}
+      - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
   - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Riferimento per gli strumenti della riga di comando {#cli-reference}
   - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
