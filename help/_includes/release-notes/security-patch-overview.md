@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
+source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '338'
 ht-degree: 0%
 ---
 # Informazioni sulle versioni delle patch di sicurezza di Adobe Commerce
@@ -16,7 +16,6 @@ Le versioni delle patch di sicurezza possono includere anche le modifiche relati
 
 Ogni versione di patch di sicurezza si basa sulla versione completa precedente della patch. Contiene le correzioni di qualità e sicurezza della versione patch precedente e le correzioni di sicurezza create tra la versione patch completa precedente e la versione patch di sicurezza.
 
-Per istruzioni su come scaricare e applicare le patch di sicurezza, vedere [Come ottenere e applicare le patch di sicurezza](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches) nella _Adobe Commerce Knowledgebase_.
 
 {{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 

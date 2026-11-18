@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '942'
 ht-degree: 2%
 ---
 # Panoramica del processo di aggiornamento
@@ -29,13 +29,13 @@ La guida fornisce una panoramica del tipico percorso di aggiornamento di Adobe C
 Il pubblico di destinazione di questa guida include:
 
 - **Responsabili e-commerce e direttori tecnici**: comprendere il percorso di aggiornamento, l&#39;importanza dell&#39;aggiornamento regolare e come pianificare e preparare al meglio un aggiornamento.
-- **Team operativi e di sviluppo**: scopri i passaggi tecnici necessari per eseguire l&#39;aggiornamento all&#39;ultima versione di Adobe Commerce e gli strumenti disponibili che rendono il processo più semplice, veloce e conveniente.
+- **Operazioni e team di sviluppo**: scopri i passaggi tecnici necessari per eseguire l&#39;aggiornamento all&#39;ultima versione di Adobe Commerce e gli strumenti disponibili per rendere il processo più semplice, veloce e conveniente.
 
 ## Spiegazione del processo di aggiornamento
 
 Uno dei motivi per cui hai scelto Adobe Commerce probabilmente include:
 
-- Ampia gamma di funzioni pronte all’uso
+- Set di funzioni standard ampio
 - Funzioni SaaS offerte separatamente dal codice core
 - Solida offerta di estensioni Marketplace
 - Possibilità unica di offrire una flessibilità infinita per personalizzare il sito in base alle esigenze aziendali e dei clienti
@@ -51,9 +51,9 @@ L’aggiornamento consente alla tua azienda di rimanere agile nel settore dell�
 La sicurezza è uno dei motivi principali per l&#39;aggiornamento, in quanto l&#39;83% degli incidenti di sicurezza si verifica su software obsoleto. Secondo [IBM](https://www.ibm.com/reports/data-breach), il costo medio di una violazione di dati è di 3,86 milioni di dollari, molto superiore al costo necessario per mitigare questo rischio con l&#39;aggiornamento. Adobe offre due modi per proteggere il tuo negozio durante tutto l’anno:
 
 - **Versioni delle patch**: includono correzioni di bug di sicurezza, prestazioni, qualità e priorità elevata.
-- **Versioni delle patch di sicurezza**: includono correzioni e miglioramenti per proteggere il sito e semplificarne l&#39;implementazione.
+- **[Versioni delle patch di sicurezza](implementation/perform-upgrade.md#example---security-patch)**—Includi correzioni e miglioramenti per mantenere il sito sicuro.
 
-Se utilizzi Adobe Commerce on Cloud dalla versione 2.4.4 alla versione 2.4.9, consulta la [informativa sulla sicurezza e la conformità](../release/security-enforcement-policy.md) per informazioni sulle azioni e le scadenze necessarie per garantire la sicurezza e la conformità dell&#39;ambiente.
+Se utilizzi Adobe Commerce su Cloud dalla versione 2.4.4 alla versione 2.4.9, consulta l&#39;[Avviso sulla sicurezza e la conformità](../release/security-enforcement-policy.md) per informazioni sulle azioni e le scadenze necessarie per garantire la sicurezza e la conformità dell&#39;ambiente.
 
 ### Prestazioni
 
@@ -63,7 +63,7 @@ Le prestazioni sono un altro motivo fondamentale per l&#39;aggiornamento. In bas
 
 Spesso il ritardo o il differimento degli aggiornamenti della piattaforma si riduce al costo immediato. Tuttavia, il costo reale dell&#39;esecuzione di una versione obsoleta di qualsiasi software è molto maggiore e può avere un impatto duraturo su un&#39;azienda.
 
-Può sembrare inaspettato, ma eseguire aggiornamenti regolari della piattaforma richiede uno sforzo complessivo inferiore rispetto all’esecuzione di aggiornamenti non frequenti a causa dell’entità del debito tecnico accumulato derivante dal ritardo. Adobe ha recentemente lavorato con un partner che ha un commerciante al dettaglio che effettuava gli aggiornamenti con scarsa frequenza e incoerenza (annualmente o più a lungo). Trasformando il loro approccio agli aggiornamenti e seguendo un percorso di aggiornamento regolare consigliato da Adobe nel corso di 12 mesi, il partner è stato in grado di risparmiare al cliente quattro settimane di tempo di sviluppo cumulativo, impegno e costi associati. Questi costi potrebbero quindi essere riorientati verso iniziative che stimolino la crescita aziendale.
+Può sembrare inaspettato, ma eseguire aggiornamenti regolari della piattaforma richiede uno sforzo complessivo inferiore rispetto all’esecuzione di aggiornamenti non frequenti a causa dell’entità del debito tecnico accumulato derivante dal ritardo. Adobe ha recentemente lavorato con un partner che ha un commerciante al dettaglio che effettuava gli aggiornamenti con scarsa frequenza e incoerenza (annualmente o più a lungo). Trasformando il loro approccio di aggiornamento e seguendo un percorso di aggiornamento regolare consigliato da Adobe per 12 mesi, il partner ha risparmiato al cliente quattro settimane di tempo di sviluppo, impegno e costi, consentendo loro di reindirizzare questi costi ad altre iniziative strategiche.
 
 Quando gli aggiornamenti vengono eseguiti regolarmente, le modifiche sono incrementali e il corrispondente sforzo di aggiornamento riflette questo aspetto. Quando gli aggiornamenti della piattaforma vengono differiti per un periodo prolungato, possono diventare un processo molto più coinvolto. Inoltre, le estensioni utilizzate da [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com//) e altre integrazioni di terze parti potrebbero essere interessate. Infine, il tempo necessario per analizzare, pianificare ed eseguire un aggiornamento ritardato viene esteso, il che aggiunge sforzi e costi evitabili.
 
@@ -76,4 +76,4 @@ Alcuni dei fattori generali che influiscono sul livello di impegno necessario pe
 | Numero di integrazioni con terze parti (OMS, ERP) | La tua strategia di test |
 | Codifica in base alle best practice |                                                              |
 
-La crescita continua nello spazio del commercio digitale ha esercitato una maggiore pressione sulle imprese affinché si evolvessero più rapidamente, più spesso e in modo imprevedibile. La mancata capacità di tenere il passo con il comportamento di acquisto dei clienti ha spianato la strada anche ai marchi più grandi e affermati. Devi essere in grado di fornire esperienze solide e personalizzate in tutti i punti di contatto, senza interruzioni di prestazioni e tempo di attività. Devi essere in grado di innovare più rapidamente, senza limiti, per stare al passo con la concorrenza globale. Con l&#39;upgrade, potrai garantire il futuro della tua azienda e configurarti per soddisfare le esigenze dinamiche dei clienti.
+La crescita continua nello spazio del commercio digitale ha esercitato una maggiore pressione sulle imprese affinché si evolvessero più rapidamente, più spesso e in modo imprevedibile. La mancata capacità di tenere il passo con il comportamento di acquisto dei clienti ha spianato la strada anche ai marchi più grandi e affermati. Devi essere in grado di fornire esperienze solide e personalizzate in tutti i punti di contatto, senza interruzioni di prestazioni e tempo di attività. Devi essere in grado di innovare più rapidamente, senza limiti, per stare al passo con la concorrenza globale. Con l&#39;upgrade, la vostra azienda si prepara a soddisfare le esigenze future e a soddisfare le esigenze di un cliente dinamico.

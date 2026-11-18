@@ -20,9 +20,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2228'
 ht-degree: 0%
 ---
 # Supporto e manutenzione post-lancio per Adobe Commerce
@@ -88,8 +88,6 @@ Per mantenere un monitoraggio regolare della sicurezza in Adobe Commerce Cloud, 
 
 - **Analisi della sicurezza**: utilizza lo strumento di analisi della sicurezza di Adobe per monitorare le vulnerabilità note e il malware nei siti Commerce. Questo strumento fornisce avvisi per potenziali rischi per la sicurezza e problemi di conformità.
 
-- **Manutenzione regolare delle patch e degli aggiornamenti**: applica le patch e gli aggiornamenti di sicurezza di Adobe non appena diventano disponibili. L’aggiornamento alla versione più recente di Adobe Commerce garantisce le più recenti difese contro le minacce.
-
 - **Controllo e monitoraggio dei registri**: utilizza strumenti come Registri di New Relic (disponibili per progetti Pro) per centralizzare e analizzare i registri di sicurezza dagli ambienti di staging e produzione, migliorando la visibilità di potenziali problemi e violazioni di sicurezza.
 
 - **Gestione degli account e degli accessi**: controlla regolarmente gli account utente e amministratore per rimuovere eventuali account non autorizzati o obsoleti. Rafforzare i controlli di accesso con l’autenticazione a più fattori (MFA) per gli utenti amministratori.
@@ -122,13 +120,13 @@ Per monitorare la registrazione degli errori in Adobe Commerce Cloud, Adobe forn
 
 #### Patch e aggiornamenti di sicurezza
 
-Per restare aggiornati e garantire la sicurezza del sistema Adobe Commerce Cloud, ecco alcune best practice per il monitoraggio di patch e aggiornamenti di sicurezza:
+Per mantenere aggiornata e sicura l’installazione di Adobe Commerce, utilizza le seguenti procedure:
 
 - **Iscriviti agli avvisi di sicurezza di Adobe Commerce**: resta informato sulle vulnerabilità di sicurezza [registrandoti per ricevere le notifiche da Adobe](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/security/security).
 
 - **Controlla le note sulla versione**: controlla regolarmente [le note sulla versione della patch di sicurezza](/help/release/release-notes/security/overview.md), contrassegnate con &quot;-pN&quot; per le versioni (ad esempio, 2.3.5-p1), e contengono correzioni e miglioramenti critici.
 
-- **Applica le patch di sicurezza immediatamente**: Applica le patch di sicurezza non appena sono disponibili. Ciò include l’aggiornamento alle versioni più recenti o l’applicazione di file patch specifici.
+- **Applica le patch di sicurezza immediatamente**: installa gli aggiornamenti di sicurezza non appena diventano disponibili. Per i singoli file di patch, vedere [Come applicare una patch del compositore fornita da Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) nella _Guida al supporto e agli strumenti di Adobe_.
 
 - **Usa patch cloud**: per Adobe Commerce Cloud, le patch di sicurezza possono essere raggruppate nella suite di strumenti cloud. Aggiorna la suite o la versione Commerce per ricevere queste correzioni.
 
@@ -136,7 +134,7 @@ Per restare aggiornati e garantire la sicurezza del sistema Adobe Commerce Cloud
 
 >[!TIP]
 >
->Per ulteriori dettagli e istruzioni dettagliate sull&#39;applicazione delle patch e sulla gestione della sicurezza, vedere [note sulla versione delle patch di sicurezza](../../../release/release-notes/security/overview.md) e [Come applicare le patch di sicurezza](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches). È inoltre necessario esaminare i [report dello strumento di analisi a livello di sito](/help/tools/site-wide-analysis-tool/access.md).
+>Esaminare i [report dello strumento di analisi a livello di sito](/help/tools/site-wide-analysis-tool/access.md) per identificare i problemi che richiedono un&#39;analisi.
 
 #### Conformità PCI
 
@@ -146,9 +144,9 @@ Per garantire la conformità PCI in Adobe Commerce Cloud, segui queste best prac
 
 - **Utilizza protocolli di trasmissione sicuri**: trasmette sempre i dati di pagamento tramite protocolli sicuri come TLS, con crittografia e corretta gestione delle chiavi.
 
-- **Utilizzo di Web Application Firewall (WAF)**: il servizio WAF con tecnologia Fastly consente di soddisfare i requisiti PCI DSS 6.6 e di proteggere da vulnerabilità comuni bloccando il traffico dannoso prima che raggiunga il sito. Ulteriori informazioni [qui](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md) e [qui](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service).
+- **Utilizzare il firewall dell&#39;applicazione Web (WAF)**: per informazioni sul supporto dei requisiti PCI DSS 6.6, vedere [monitoraggio regolare della sicurezza](#regular-security-monitoring) e il [servizio Fastly WAF](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service).
 
-- **Limita l&#39;accesso**: assicurati che solo il personale autorizzato abbia accesso ai dati di pagamento sensibili e [applica il controllo dell&#39;accesso per ridurre il rischio di esposizione](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md).
+- **Limita l&#39;accesso**: limita l&#39;accesso ai dati di pagamento sensibili. Per le procedure di gestione degli account e degli accessi, vedere [monitoraggio regolare della sicurezza](#regular-security-monitoring).
 
 - **Analisi della sicurezza regolare**: esegui analisi ASV PCI regolari e [monitora l&#39;ambiente](/help/security-and-compliance/shared-responsibility.md) per risolvere potenziali vulnerabilità.
 

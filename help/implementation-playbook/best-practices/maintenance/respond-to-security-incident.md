@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1300'
 ht-degree: 0%
 ---
 # Best practice per rispondere a un problema di sicurezza
@@ -47,7 +47,7 @@ Se sospetti che il progetto Adobe Commerce su infrastruttura cloud sia interessa
 - Controlla l&#39;accesso a tutti gli account utente amministratore
 - Abilita controlli avanzati di autenticazione a più fattori (MFA)
 - Mantenere i registri critici
-- Controlla gli aggiornamenti di sicurezza per la tua versione di Adobe Commerce.
+- Rivedi le [note sulla versione della patch di sicurezza](../../../release/release-notes/security/overview.md) per la tua versione di Adobe Commerce e applica le patch di sicurezza richieste.
 
 Ulteriori raccomandazioni sono descritte di seguito.
 

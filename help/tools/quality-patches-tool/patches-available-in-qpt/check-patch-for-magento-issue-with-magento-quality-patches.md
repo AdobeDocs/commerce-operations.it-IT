@@ -20,9 +20,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '445'
 ht-degree: 0%
 ---
 # Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches
@@ -73,4 +73,4 @@ Consulta [Cloud for Adobe Commerce > Applica patch](https://experienceleague.ado
 ## Lettura correlata
 
 * [Note sulla versione dello strumento Patch di qualità](/help/tools/quality-patches-tool/release-notes.md) nella documentazione per gli sviluppatori.
-* [Applicare le patch del compositore fornite da Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) nella Knowledge Base di supporto.
+* [Come applicare le patch del compositore fornite da Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) nella _Guida al supporto e agli strumenti di Adobe_.
