@@ -10,9 +10,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 63e52c8451f368e2d2a36096fc11c7ead62ee94e
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '704'
 ht-degree: 0%
 ---
 
@@ -41,6 +41,66 @@ bundle exec rake whatsnew_bp
 ```sh
 bundle exec rake whatsnew_bp since="jul 4"
 ```
+
+### `whatsnew_consolidated`
+
+Consolida le nuove tabelle pubblicate dai progetti di documentazione di Commerce configurati in `help/_includes/automated/whatsnew/consolidated.md`.
+
+```sh
+bundle exec rake whatsnew_consolidated
+```
+
+Configurare i progetti in `whatsnew_consolidated.projects` in [`_config.yml`](_config.yml). Ogni voce richiede un nome di repository, un titolo di progetto e un URL assoluto di un sito Web HTTP(S):
+
+```yaml
+whatsnew_consolidated:
+  projects:
+    - repo: commerce-operations.en
+      title: Adobe Commerce operational guides
+      website: https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home
+    - repo: commerce-webapi
+      title: Adobe Commerce web APIs
+      website: https://developer.adobe.com/commerce/webapi/
+    - repo: commerce.en
+      title: Adobe Commerce
+      website: https://experienceleague.adobe.com/en/docs/commerce
+```
+
+Spostare le voci per modificare l&#39;ordine delle sezioni. È possibile inserire liberamente i progetti da entrambe le piattaforme. I nomi dell&#39;archivio che terminano con `.en` utilizzano il percorso di origine ExL, `help/_includes/templated/whats-new.md`. Tutti gli altri archivi utilizzano il percorso di origine DevSite, `src/pages/_includes/templated/whats-new.md`.
+
+L&#39;attività recupera `main` file pubblici dall&#39;organizzazione GitHub `AdobeDocs`. Ogni titolo del progetto viene visualizzato come un titolo di testo normale e ogni tabella viene introdotta con una frase che collega il titolo del progetto alla home page della documentazione configurata in `website` come origine degli aggiornamenti. In vengono utilizzate `Description | Type | Date/source` intestazioni di tabella. Solo per i progetti DevSite, i tag con escape `\<br/\>` diventano `<br/>`. In caso contrario, le righe del corpo, i duplicati, i collegamenti e l’ordine delle righe di origine rimangono invariati. Ogni origine definisce il proprio periodo di tempo.
+
+I progetti con un messaggio di mancato aggiornamento riconosciuto vengono omessi. Se per ogni progetto non è presente alcuna voce, il messaggio di inclusione contiene un messaggio generale di nessun aggiornamento. In caso di errori di configurazione, recupero, analisi o scrittura, l’attività non riesce senza sostituire un’inclusione esistente.
+
+L&#39;attività non pianifica la generazione o l&#39;aggiornamento di pagine che consumano.
+
+La suite di test mirati include test del punto di ingresso Rake che caricano il Rakefile `_jekyll` ed eseguono tramite Bundler. Installa prima il bundle Bundler e `_jekyll`:
+
+```sh
+cd _jekyll && bundle install
+```
+
+Quindi esegui i test dalla directory principale dell’archivio:
+
+```sh
+ruby _jekyll/test/consolidated_whatsnew_test.rb
+```
+
+### `whatsnew_feedback`
+
+Crea `help/_includes/automated/whatsnew/consolidated-feedback.md` filtrando l&#39;inclusione locale `help/_includes/automated/whatsnew/consolidated.md` esistente.
+
+```sh
+bundle exec rake whatsnew_feedback
+```
+
+L&#39;attività corrisponde a `Feedback` come valore Type completo e separato da virgole, ignorando la distinzione tra maiuscole e minuscole e lo spazio vuoto circostante. Sono inclusi tipi combinati come `Feedback, technical`. Le menzioni nelle descrizioni, nei collegamenti di origine o nei nomi dei tipi parziali non sono idonee.
+
+Le righe corrispondenti, i duplicati, le intestazioni di progetto in testo normale, le frasi di origine, se presenti, e l&#39;ordine dei progetti e delle righe rimangono invariati. I progetti senza voci corrispondenti vengono omessi. Se nulla corrisponde, l’output contiene un messaggio generale di nessun feedback.
+
+L&#39;input deve esistere già. Eseguire `bundle exec rake whatsnew_consolidated` separatamente quando si desidera aggiornarlo. L’attività di feedback non recupera il contenuto remoto, non legge la configurazione del progetto e non rigenera il relativo input.
+
+L’input mancante o non valido non riesce l’attività senza sostituire un’inclusione filtrata esistente. Il file di input non viene mai modificato e l’output filtrato viene pubblicato atomicamente.
 
 ### `get_released_versions`
 
@@ -84,7 +144,7 @@ bundle exec rake -T [task_name]
 
 ## Includi formato file relazioni
 
-Il file `include-relationships.yml` tiene traccia delle relazioni tra i file di contenuto principale e i relativi file inclusi. Questo file viene gestito automaticamente dall&#39;attività `includes:maintain_relationships` (vedi il file README[&#128279;](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks/blob/main/README.md) di adobe-comdox-exl-rake-tasks per informazioni sull&#39;utilizzo delle attività), che rileva le relazioni leggendo i file di inclusione esistenti e trovando i file principali che vi fanno riferimento.
+Il file `include-relationships.yml` tiene traccia delle relazioni tra i file di contenuto principale e i relativi file inclusi. Questo file viene gestito automaticamente dall&#39;attività `includes:maintain_relationships` (vedi il file README](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks/blob/main/README.md) di [adobe-comdox-exl-rake-tasks per informazioni sull&#39;utilizzo delle attività), che rileva le relazioni leggendo i file di inclusione esistenti e trovando i file principali che vi fanno riferimento.
 
 **Struttura file:**
 
