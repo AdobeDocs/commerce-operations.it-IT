@@ -18,4 +18,4 @@ Ulteriori informazioni sulle versioni delle patch di sicurezza:
 
 * [Panoramica sulle versioni delle patch di sicurezza di Adobe Commerce](/help/release/release-notes/security/overview.md#about-security-patch-releases)
 * Per istruzioni sull&#39;aggiornamento a una versione della patch di sicurezza, vedere l&#39;[esempio di aggiornamento della patch di sicurezza](/help/upgrade/implementation/perform-upgrade.md#example---security-patch).
-* Per applicare singoli file di patch di sicurezza, vedere [Come applicare una patch del compositore fornita da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) nella _Guida al supporto e agli strumenti di Adobe_.
+* Per applicare singoli file di patch di sicurezza, vedere [Come applicare una patch del compositore fornita da Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) nella _Guida al supporto e agli strumenti di Adobe_.
