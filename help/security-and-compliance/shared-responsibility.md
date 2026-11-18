@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3286'
 ht-degree: 0%
 ---
 # Responsabilità condivisa sicurezza e modello operativo
@@ -40,7 +40,7 @@ I commercianti sono responsabili di quanto segue:
 * Garanzia di uno sviluppo sicuro delle applicazioni
 * Ottenimento della certificazione PCI se richiesto dal servizio di elaborazione dei pagamenti dell&#39;esercente
 * Reazione e risposta agli incidenti di sicurezza
-* Mantenere tutte le dipendenze di terze parti, i servizi Platform e le estensioni dei servizi Adobe Commerce su versioni attivamente supportate. Adobe non fornisce supporto o assistenza per la sicurezza delle distribuzioni che eseguono versioni di dipendenza non supportate. Per le versioni supportate, vedere [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=it) e la [Matrice di disponibilità del prodotto](/help/release/product-availability.md).
+* Mantenere tutte le dipendenze di terze parti, i servizi Platform e le estensioni dei servizi Adobe Commerce su versioni attivamente supportate. Adobe non fornisce supporto o assistenza per la sicurezza delle distribuzioni che eseguono versioni di dipendenza non supportate. Per le versioni supportate, vedere [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) e la [Matrice di disponibilità del prodotto](/help/release/product-availability.md).
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Adobe garantisce inoltre la disponibilità dell&#39;infrastruttura del commercia
 L’esercente è responsabile del rispetto delle best practice di sicurezza per l’istanza personalizzata della soluzione Adobe Commerce su infrastruttura cloud:
 
 * Aggiunta all’archivio dei file di configurazione dell’infrastruttura cloud di Adobe Commerce on
-* Applicazione di patch di sicurezza e di altro tipo alla soluzione personalizzata Adobe Commerce on cloud infrastructure subito dopo il rilascio da parte di Adobe
+* Applicazione di patch di sicurezza e di altro tipo alla soluzione personalizzata Adobe Commerce on cloud infrastructure subito dopo il rilascio da parte di Adobe. Per i singoli file delle patch di sicurezza, vedere [Come applicare una patch del compositore fornita da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) nella _Guida al supporto e agli strumenti di Adobe_.
 * Applicazione di patch di sicurezza e di altro tipo a tutte le estensioni personalizzate e al codice subito dopo il rilascio da parte del fornitore
 * Creazione, distribuzione e test di file VCL di vernice personalizzati
 * Progettazione, definizione di temi, installazione, integrazione e protezione della soluzione personalizzata Adobe Commerce on cloud infrastructure, incluse tutte le estensioni e il codice personalizzati
@@ -112,7 +112,7 @@ L’esercente è responsabile del rispetto delle best practice di sicurezza per 
   * Estensioni di Adobe Commerce Services
   * Tutte le estensioni di terze parti e le integrazioni personalizzate
 
-  Adobe non fornisce supporto per le distribuzioni che eseguono versioni non supportate. Per le versioni supportate, vedere [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=it) e la [Matrice di disponibilità del prodotto](/help/release/product-availability.md).
+  Adobe non fornisce supporto per le distribuzioni che eseguono versioni non supportate. Per le versioni supportate, vedere [Requisiti di sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) e la [Matrice di disponibilità del prodotto](/help/release/product-availability.md).
 
 ## Responsabilità del fornitore di servizi cloud
 
@@ -979,4 +979,3 @@ La raccolta di eventi Storefront determina la qualità dei consigli di prodotto 
 | Monitoraggio dell’utilizzo di vCPU rispetto ai limiti | R |   |
 
 {style="table-layout:auto"}
-
