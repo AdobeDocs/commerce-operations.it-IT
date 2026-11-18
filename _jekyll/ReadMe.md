@@ -57,13 +57,13 @@ whatsnew_consolidated:
   projects:
     - repo: commerce-operations.en
       title: Adobe Commerce operational guides
-      website: https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home
+      website: https://experienceleague.adobe.com/it/docs/commerce-operations/operational-guides/home
     - repo: commerce-webapi
       title: Adobe Commerce web APIs
       website: https://developer.adobe.com/commerce/webapi/
     - repo: commerce.en
       title: Adobe Commerce
-      website: https://experienceleague.adobe.com/en/docs/commerce
+      website: https://experienceleague.adobe.com/it/docs/commerce
 ```
 
 Spostare le voci per modificare l&#39;ordine delle sezioni. È possibile inserire liberamente i progetti da entrambe le piattaforme. I nomi dell&#39;archivio che terminano con `.en` utilizzano il percorso di origine ExL, `help/_includes/templated/whats-new.md`. Tutti gli altri archivi utilizzano il percorso di origine DevSite, `src/pages/_includes/templated/whats-new.md`.
