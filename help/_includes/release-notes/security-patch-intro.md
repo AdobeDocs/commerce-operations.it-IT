@@ -1,7 +1,7 @@
 ---
-source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
+source-git-commit: 1b4787319702489477756682d2dad0da86b28942
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '160'
 ht-degree: 0%
 ---
 # Introduzione alle note sulla versione della patch di sicurezza
@@ -19,3 +19,7 @@ Ulteriori informazioni sulle versioni delle patch di sicurezza:
 * [Panoramica sulle versioni delle patch di sicurezza di Adobe Commerce](/help/release/release-notes/security/overview.md#about-security-patch-releases)
 * Per istruzioni sull&#39;aggiornamento a una versione della patch di sicurezza, vedere l&#39;[esempio di aggiornamento della patch di sicurezza](/help/upgrade/implementation/perform-upgrade.md#example---security-patch).
 * Per applicare singoli file di patch di sicurezza, vedere [Come applicare una patch del compositore fornita da Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) nella _Guida al supporto e agli strumenti di Adobe_.
+
+>[!NOTE]
+>
+>Per informazioni sulla compatibilità con le dipendenze di terze parti, fare riferimento a [Requisiti di sistema](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/system-requirements).
