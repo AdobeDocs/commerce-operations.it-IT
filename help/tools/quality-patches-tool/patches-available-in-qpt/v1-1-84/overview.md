@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d8a15da2f255c5cac40003ea677e49c5d288d36d
+source-git-commit: fba29b291ef0f9319c560507cf5aa1608a05c481
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '659'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -35,10 +35,10 @@ QPT v1.1.84 include le seguenti patch:
 1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)**: è stato risolto il problema che si verificava se la quantità di un&#39;opzione di prodotto bundle in un preventivo negoziabile tornava al valore precedente quando il prodotto bundle veniva riconfigurato in Amministrazione e la quantità veniva modificata.
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: è stato risolto il problema relativo alle operazioni di spedizione e fatturazione non riuscite a causa di un deadlock.
 1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: è stato risolto il problema che impediva la corretta migrazione dei dati da Magento Open Source ad Adobe Commerce delle modifiche di progettazione pianificate per la categoria e degli aggiornamenti pianificati per il prodotto **[!UICONTROL Special Price]**. Alcuni aggiornamenti pianificati risultavano mancanti o ignorati durante la migrazione e ne migliorava le prestazioni.
-1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: è stato risolto il problema che si verificava se l&#39;esecuzione di una query sul cliente `role` tramite GraphQL restituiva *Errore interno del server* quando il cliente non era assegnato a una società.
+1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: è stato corretto il problema per cui l&#39;esecuzione di una query sul cliente `role` tramite GraphQL restituisce *Errore interno del server* quando il cliente non è assegnato a una società.
 1. **[ACP2E-5029](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5029.md)**: è stato risolto il problema che impediva la visualizzazione delle modifiche alle regole del prezzo di catalogo in **[!DNL Live Search]** finché non viene eseguita una risincronizzazione manuale.
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: è stato risolto il problema che causava il blocco degli indicizzatori in un loop e il mancato completamento della reindicizzazione quando il blocco dei file era abilitato.
-1. **ACP2E-5041**: è stato risolto il problema che causava la visualizzazione del prezzo regolare da parte della vetrina al posto di **[!UICONTROL Special Price]** al termine dell&#39;aggiornamento in seguito al salvataggio di un prodotto durante un aggiornamento pianificato.
+1. **[ACP2E-5041](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)**: è stato risolto il problema che causava la visualizzazione del prezzo regolare da parte della vetrina al posto di **[!UICONTROL Special Price]** al termine dell&#39;aggiornamento in seguito al salvataggio di un prodotto durante un aggiornamento pianificato.
 1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: è stato risolto il problema che impediva la corretta migrazione dei dati da Magento Open Source ad Adobe Commerce delle modifiche di progettazione pianificate per la categoria e degli aggiornamenti pianificati per il prodotto **[!UICONTROL Special Price]**. Alcuni aggiornamenti pianificati risultavano mancanti o ignorati durante la migrazione e ne migliorava le prestazioni.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: è stato corretto il problema per cui l&#39;esecuzione di una query sul cliente `role` tramite GraphQL restituisce *Errore interno del server* quando il cliente non è assegnato a una società.
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: è stato risolto il problema che causava il blocco degli indicizzatori in un loop e il mancato completamento della reindicizzazione quando il blocco dei file era abilitato.
