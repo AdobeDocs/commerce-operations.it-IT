@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d8a15da2f255c5cac40003ea677e49c5d288d36d
+source-git-commit: c6b7cbe24fcac793bb906349bb653f9c05161ddf
 workflow-type: tm+mt
-source-wordcount: '11174'
+source-wordcount: '11190'
 ht-degree: 0%
 ---
 
@@ -1102,6 +1102,7 @@ ht-degree: 0%
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
     - v1.1.86 {#v1-1-86}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5050: la visualizzazione o il salvataggio di RMA in Admin non mostra il numero di RMA nel rapporto Action Logs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)
   - [Verifica la patch per il problema Adobe Commerce con lo strumento Quality Patches](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Riferimento per gli strumenti della riga di comando {#cli-reference}
   - [Adobe Commerce (on-premise)](reference/commerce-on-premises.md)
