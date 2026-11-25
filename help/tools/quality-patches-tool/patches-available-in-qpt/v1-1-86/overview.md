@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 86872648c372158143f5bbe707ba7a3f15552bc3
+source-git-commit: 8070923142c6b28c5e34d47200d2f8995aae5dcb
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 0%
@@ -23,7 +23,7 @@ QPT v1.1.86 include le seguenti patch:
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**: è stato risolto il problema che impediva a una regola di merchandising di categoria di combinare le condizioni AND con una condizione che corrispondesse a uno qualsiasi dei diversi valori.
 1. **ACP2E-5071**: è stato risolto il problema che impediva la visualizzazione del messaggio di disponibilità delle scorte nella pagina del prodotto quando il carrello contiene già la quantità totale disponibile.
 1. **ACP2E-5094**: è stato risolto il problema che rallenta notevolmente il caricamento delle pagine quando viene impostata una variabile di ambiente `MAGENTO_DC_*`.
-1. **ACP2E-5118**: è stato risolto il problema che impediva il rendering dell&#39;anteprima di [!DNL Page Builder] quando la cache di **[!UICONTROL Translations]** era disabilitata.
+1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**: è stato risolto il problema che impediva il rendering dell&#39;anteprima di [!DNL Page Builder] quando la cache di **[!UICONTROL Translations]** era disabilitata.
 1. **ACP2E-5134**: è stato risolto il problema che causava la rimozione del prodotto componente di un bundle da [!UICONTROL Shared Catalog] di un&#39;azienda e l&#39;uscita del prodotto dal carrello, causando un errore nel carrello e durante il pagamento.
 1. **ACP2E-5146**: è stato risolto il problema per cui un utente amministratore limitato a siti Web specifici non può eliminare clienti quando un cliente su un altro sito Web ha lo stesso ID dell&#39;utente amministratore.
 1. **ACP2E-5176**: è stato risolto il problema per cui gli eventi di e-commerce inviati a [!DNL Google Analytics 4] tramite [!DNL Google Tag Manager] utilizzano il formato [!DNL Universal Analytics] e omettono diversi eventi di estrazione.
