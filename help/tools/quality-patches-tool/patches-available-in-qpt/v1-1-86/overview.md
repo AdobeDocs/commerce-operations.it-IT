@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
+source-git-commit: 22769f702de10db88f28a5d4218a4f4c5d91cf0a
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '639'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -29,13 +29,13 @@ QPT v1.1.86 include le seguenti patch:
 1. **ACP2E-5176**: è stato risolto il problema per cui gli eventi di e-commerce inviati a [!DNL Google Analytics 4] tramite [!DNL Google Tag Manager] utilizzano il formato [!DNL Universal Analytics] e omettono diversi eventi di estrazione.
 1. **ACP2E-5185**: è stato risolto il problema che causava la visualizzazione dell&#39;errore `There was a category move error` durante lo spostamento di una categoria nell&#39;albero delle categorie oppure il completamento dell&#39;operazione richiedeva diversi minuti quando l&#39;archivio aveva molti URL riscritti.
 1. **ACP2E-4191**: è stato risolto il problema relativo a determinate richieste REST API che immettono un ciclo infinito quando la cache **[!UICONTROL EAV types and attributes]** è disabilitata.
-1. **ACP2E-4973**: è stato risolto il problema che impediva la cancellazione dell&#39;indirizzo dell&#39;archivio associato dal carrello passando da **[!UICONTROL In-Store Delivery]** a un altro metodo di consegna.
+1. **[ACP2E-4973](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)**: è stato corretto il problema per cui il passaggio dalla consegna in-store a un altro metodo di consegna non comporta la cancellazione dell&#39;indirizzo dell&#39;archivio associato dal carrello.
 1. **ACP2E-5221**: è stato risolto il problema per cui l&#39;indicizzatore **[!UICONTROL Catalog Product Permissions]** richiede molto più tempo se **[!UICONTROL Quick Order]** è abilitato in installazioni con molti store e gruppi di clienti.
-1. **ACP2E-5245**: è stato risolto il problema che si verificava quando un cliente appena registrato che utilizzava lo stesso indirizzo per la spedizione e la fatturazione al primo ordine visualizzava l&#39;indirizzo elencato due volte durante il successivo pagamento.
+1. **[ACP2E-5245](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)**: è stato risolto il problema che si verificava quando un cliente appena registrato che utilizzava lo stesso indirizzo per la spedizione e la fatturazione al primo ordine visualizzava l&#39;indirizzo elencato due volte durante il successivo pagamento.
 1. **ACP2E-5248**: è stato risolto il problema per cui gli utenti amministratori senza l&#39;autorizzazione **[!UICONTROL Edit Product Status]** visualizzano l&#39;errore di deprecazione `null as array offset` all&#39;apertura della pagina **[!UICONTROL Add Product]** il [!DNL PHP] 8.5.
 1. **ACP2E-5254**: è stato risolto il problema che impediva la visualizzazione dei prodotti aggiunti a un elenco di richieste di acquisto quando un cliente apre l&#39;elenco fino a quando la cache non viene cancellata.
 1. **ACP2E-5268**: è stato risolto il problema che impediva la creazione di un prodotto configurabile se **[!UICONTROL Enable Frontend Resize]** è impostato su **[!UICONTROL No]**.
-1. **ACP2E-3752**: è stato corretto il problema a causa del quale l&#39;elaborazione dell&#39;importazione dei prodotti generava l&#39;errore `Undefined array key "apply_to"` quando venivano create molte operazioni di importazione dei prodotti.
+1. **[ACP2E-3752](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)**: è stato risolto il problema che causava la generazione dell&#39;errore *Avviso: chiave di matrice &quot;apply_to&quot;* non definita durante la creazione di numerose operazioni di importazione dei prodotti.
 1. **ACP2E-5280**: è stato risolto il problema che si verificava se i clienti riscontravano un errore durante l&#39;accesso mentre **[!UICONTROL Category Permissions]** era abilitato.
 1. **ACP2E-5295**: è stato risolto il problema che impediva la reindicizzazione del prezzo del prodotto parallelo con l&#39;errore `Fail in child process` quando viene eseguito dopo l&#39;indicizzatore **[!UICONTROL Inventory]** nello stesso processo.
 1. **ACP2E-5298**: è stato risolto il problema che consentiva agli utenti amministratori con accesso in sola visualizzazione alle regole di prezzo del carrello di generare o eliminare codici coupon.

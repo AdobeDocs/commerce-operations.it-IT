@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '11262'
+source-wordcount: '11345'
 ht-degree: 0%
 ---
 
@@ -1100,8 +1100,13 @@ ht-degree: 0%
       - [ACP2E-4741: il salvataggio di un prodotto collegato nasconde un altro prodotto dalla vetrina con scorte personalizzate](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - v1.1.85 {#v1-1-85}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+      - [ACP2E-3991: l&#39;indirizzo IP del client non è determinato correttamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)
+      - [ACP2E-4929: Le etichette degli attributi nella pagina Confronta prodotti visualizzano le traduzioni da una diversa visualizzazione store invece di quella corrente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5245: il nuovo cliente utilizza lo stesso indirizzo per la spedizione e la fatturazione per il primo ordine vede l&#39;indirizzo elencato due volte al momento del pagamento](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
+      - [ACP2E-3752: l’importazione di prodotti genera un errore di chiave array non definita quando vengono eseguite molte operazioni di importazione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
+      - [ACP2E-4973: il passaggio dalla consegna in-store a un altro metodo di consegna non cancella l’indirizzo del negozio dal carrello](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
       - [ACP2E-5134: la rimozione del prodotto in bundle dal catalogo condiviso lascia il bundle nel carrello e causa errori al momento del pagamento](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
       - [ACP2E-5118: l’anteprima di Page Builder non viene riprodotta quando la cache delle traduzioni è disabilitata](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
       - [ACP2E-5061: la regola di merchandising per la categoria non può combinare le condizioni AND con una condizione che corrisponde a diversi valori](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)

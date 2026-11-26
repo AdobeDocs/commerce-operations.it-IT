@@ -49,9 +49,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d61208c23f1d1fe38664a838149ba51958eddac
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '353'
 ht-degree: 0%
 ---
 
@@ -61,11 +61,11 @@ Questa sottosezione fornisce una descrizione dettagliata dei problemi risolti da
 
 QPT v1.1.85 include le seguenti patch:
 
-1. **ACP2E-4929**: è stato risolto il problema per cui le etichette degli attributi nella pagina **[!UICONTROL Compare Products]** visualizzano le traduzioni da una visualizzazione archivio diversa anziché dalla visualizzazione archivio corrente.
+1. **[ACP2E-4929](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)**: è stato risolto il problema per cui le etichette degli attributi nella pagina Confronta prodotti visualizzano le traduzioni da una visualizzazione diversa dello store anziché dalla visualizzazione dello store corrente.
 1. **ACP2E-5075**: è stato risolto il problema che causava l&#39;applicazione errata di uno sconto a tutti gli elementi figlio di un prodotto bundle a prezzo dinamico quando la regola corrispondeva solo al prodotto padre del bundle da parte di una regola a prezzo fisso del carrello con una condizione di categoria.
 1. **ACP2E-5077**: è stato risolto il problema che causava la creazione di carrelli attivi duplicati da parte di `customerCart` query GraphQL simultanee o `POST /V1/carts/mine` richieste REST per clienti che non avevano già un carrello attivo.
 1. **ACP2E-5088**: è stato risolto il problema che causava la cancellazione del carrello permanente di un cliente alla scadenza della sessione.
-1. **ACP2E-3991**: è stato risolto il problema che impediva la corretta determinazione dell&#39;indirizzo IP del client.
+1. **[ACP2E-3991](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)**: è stato risolto il problema che impediva la corretta determinazione dell&#39;indirizzo IP del client.
 1. **ACP2E-5092**: è stato risolto il problema che causava la visualizzazione di un errore nella pagina **[!UICONTROL Company Profile]** e nella pagina Modifica cliente amministratore quando un indirizzo aziendale salvato senza un&#39;area geografica veniva aggiunto al paese.
 1. **ACP2E-5124**: è stato risolto il problema per cui il pulsante **[!UICONTROL Import]** rimane disponibile nei risultati di convalida dopo la convalida non riesce quando **[!UICONTROL Validation Strategy]** è impostato su **[!UICONTROL Stop on Error]**.
 1. **AC-17456**: è stato corretto il problema per cui la modifica dell&#39;ambito **[!UICONTROL Global]** nella pagina **[!UICONTROL Design Configuration]** del pannello di amministrazione restituisce un errore *HTTP 500* in PHP 8.4 e 8.5.
