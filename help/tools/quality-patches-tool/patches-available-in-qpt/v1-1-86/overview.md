@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 22769f702de10db88f28a5d4218a4f4c5d91cf0a
+source-git-commit: 29214be03aa7633cacaec058f65b7cc1d7adc4ea
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '684'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -28,6 +28,8 @@ QPT v1.1.86 include le seguenti patch:
 1. **ACP2E-5146**: è stato risolto il problema per cui un utente amministratore limitato a siti Web specifici non può eliminare clienti quando un cliente su un altro sito Web ha lo stesso ID dell&#39;utente amministratore.
 1. **ACP2E-5176**: è stato risolto il problema per cui gli eventi di e-commerce inviati a [!DNL Google Analytics 4] tramite [!DNL Google Tag Manager] utilizzano il formato [!DNL Universal Analytics] e omettono diversi eventi di estrazione.
 1. **ACP2E-5185**: è stato risolto il problema che causava la visualizzazione dell&#39;errore `There was a category move error` durante lo spostamento di una categoria nell&#39;albero delle categorie oppure il completamento dell&#39;operazione richiedeva diversi minuti quando l&#39;archivio aveva molti URL riscritti.
+1. **[ACP2E-4191](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)**: è stato risolto il problema che determinava l&#39;accesso infinito di alcune richieste REST API quando la cache dei tipi e degli attributi EAV era disabilitata.
+1. **ACP2E-4973**: è stato risolto il problema che impediva la cancellazione dell&#39;indirizzo dell&#39;archivio associato dal carrello passando da **[!UICONTROL In-Store Delivery]** a un altro metodo di consegna.
 1. **ACP2E-4191**: è stato risolto il problema relativo a determinate richieste REST API che immettono un ciclo infinito quando la cache **[!UICONTROL EAV types and attributes]** è disabilitata.
 1. **[ACP2E-4973](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)**: è stato corretto il problema per cui il passaggio dalla consegna in-store a un altro metodo di consegna non comporta la cancellazione dell&#39;indirizzo dell&#39;archivio associato dal carrello.
 1. **ACP2E-5221**: è stato risolto il problema per cui l&#39;indicizzatore **[!UICONTROL Catalog Product Permissions]** richiede molto più tempo se **[!UICONTROL Quick Order]** è abilitato in installazioni con molti store e gruppi di clienti.
