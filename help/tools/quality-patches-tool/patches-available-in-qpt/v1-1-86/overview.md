@@ -4,7 +4,7 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
+source-git-commit: 9e453ce98ac552d883469e20e65516be8ef02b4f
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%
@@ -44,6 +44,6 @@ QPT v1.1.86 include le seguenti patch:
 1. **ACP2E-5295**: è stato risolto il problema che impediva la reindicizzazione del prezzo del prodotto parallelo con l&#39;errore `Fail in child process` quando viene eseguito dopo l&#39;indicizzatore **[!UICONTROL Inventory]** nello stesso processo.
 1. **ACP2E-5298**: è stato risolto il problema che consentiva agli utenti amministratori con accesso in sola visualizzazione alle regole di prezzo del carrello di generare o eliminare codici coupon.
 1. **ACP2E-5333**: è stato risolto il problema che impediva l&#39;aggiornamento di un segmento del cliente con una condizione **[!UICONTROL Total Number of Orders]** che utilizza l&#39;operatore **[!UICONTROL is not]** e un valore di uno o più errori con errore `Unknown operator specified`.
-1. **ACP2E-5425**: è stato risolto il problema che causava la ricezione di e-mail di conferma dell&#39;ordine duplicate da parte dei clienti per lo stesso ordine.
+1. **[ACP2E-5425](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5425.md)**: è stato risolto il problema che causava la ricezione di e-mail di conferma dell&#39;ordine duplicate da parte dei clienti per lo stesso ordine.
 
 Utilizza il menu a sinistra per passare a una pagina patch specifica.
