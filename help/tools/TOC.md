@@ -4,9 +4,9 @@ user-guide-description: Scopri i diversi strumenti che puoi utilizzare con Adobe
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
+source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
 workflow-type: tm+mt
-source-wordcount: '11345'
+source-wordcount: '11399'
 ht-degree: 0%
 ---
 
@@ -1104,6 +1104,9 @@ ht-degree: 0%
       - [ACP2E-4929: Le etichette degli attributi nella pagina Confronta prodotti visualizzano le traduzioni da una diversa visualizzazione store invece di quella corrente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5071: il messaggio di indisponibilità delle scorte non viene sempre visualizzato nella pagina del prodotto quando il carrello dell’acquirente contiene la quantità disponibile completa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)
+      - [ACP2E-5176: gli eventi di e-commerce inviati a Google Analytics 4 tramite Google Tag Manager utilizzano il formato Universal Analytics e omettono gli eventi di checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)
+      - [ACP2E-4191: le richieste REST API entrano in loop infinito quando la cache di tipi e attributi EAV è disabilitata](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)
       - [ACP2E-5245: il nuovo cliente utilizza lo stesso indirizzo per la spedizione e la fatturazione per il primo ordine vede l&#39;indirizzo elencato due volte al momento del pagamento](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
       - [ACP2E-3752: l’importazione di prodotti genera un errore di chiave array non definita quando vengono eseguite molte operazioni di importazione](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
       - [ACP2E-4973: il passaggio dalla consegna in-store a un altro metodo di consegna non cancella l’indirizzo del negozio dal carrello](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
