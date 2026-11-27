@@ -4,9 +4,9 @@ description: Questa sottosezione fornisce una descrizione dettagliata dei proble
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 29214be03aa7633cacaec058f65b7cc1d7adc4ea
+source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '742'
 ht-degree: 0%
 ---
 # Panoramica: [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -20,13 +20,15 @@ QPT v1.1.86 include le seguenti patch:
 1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**: è stato risolto il problema che causava la mancata risposta del browser se si visualizzava o si modificava **[!UICONTROL Category Permissions]** per una categoria con molte autorizzazioni.
 1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**: è stato risolto il problema che impediva la visualizzazione o il salvataggio di un RMA nell&#39;amministratore per visualizzare il numero RMA nel report **[!UICONTROL Action Logs]**.
 1. **ACP2E-5057**: è stato corretto il problema per cui [!DNL GraphQL] query per i prodotti bundle restituiscono i prezzi delle opzioni del bundle globali anziché i prezzi specifici del sito Web quando **[!UICONTROL Catalog Price Scope]** è impostato su **[!UICONTROL Website]**.
+1. **ACP2E-5061**: è stato risolto il problema che impediva a una regola di merchandising per le categorie di combinare `AND` condizioni con una condizione che corrispondesse a uno qualsiasi dei diversi valori.
+1. **[ACP2E-5071](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)**: è stato risolto il problema che impediva la visualizzazione del messaggio di disponibilità delle scorte nella pagina del prodotto quando il carrello contiene già la quantità totale disponibile.
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**: è stato risolto il problema che impediva a una regola di merchandising di categoria di combinare le condizioni AND con una condizione che corrispondesse a uno qualsiasi dei diversi valori.
 1. **ACP2E-5071**: è stato risolto il problema che impediva la visualizzazione del messaggio di disponibilità delle scorte nella pagina del prodotto quando il carrello contiene già la quantità totale disponibile.
 1. **ACP2E-5094**: è stato risolto il problema che rallenta notevolmente il caricamento delle pagine quando viene impostata una variabile di ambiente `MAGENTO_DC_*`.
 1. **[ACP2E-5134](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)**: è stato risolto il problema che causava la rimozione di un prodotto incluso in un bundle dal catalogo condiviso di un&#39;azienda e causava un errore nel carrello e durante il pagamento.
 1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**: è stato risolto il problema che impediva il rendering dell&#39;anteprima di [!DNL Page Builder] quando la cache di **[!UICONTROL Translations]** era disabilitata.
 1. **ACP2E-5146**: è stato risolto il problema per cui un utente amministratore limitato a siti Web specifici non può eliminare clienti quando un cliente su un altro sito Web ha lo stesso ID dell&#39;utente amministratore.
-1. **ACP2E-5176**: è stato risolto il problema per cui gli eventi di e-commerce inviati a [!DNL Google Analytics 4] tramite [!DNL Google Tag Manager] utilizzano il formato [!DNL Universal Analytics] e omettono diversi eventi di estrazione.
+1. **[ACP2E-5176](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)**: è stato risolto il problema per cui gli eventi di e-commerce inviati a Google Analytics 4 tramite Google Tag Manager utilizzano il formato Universal Analytics e omettono diversi eventi di checkout.
 1. **ACP2E-5185**: è stato risolto il problema che causava la visualizzazione dell&#39;errore `There was a category move error` durante lo spostamento di una categoria nell&#39;albero delle categorie oppure il completamento dell&#39;operazione richiedeva diversi minuti quando l&#39;archivio aveva molti URL riscritti.
 1. **[ACP2E-4191](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)**: è stato risolto il problema che determinava l&#39;accesso infinito di alcune richieste REST API quando la cache dei tipi e degli attributi EAV era disabilitata.
 1. **ACP2E-4973**: è stato risolto il problema che impediva la cancellazione dell&#39;indirizzo dell&#39;archivio associato dal carrello passando da **[!UICONTROL In-Store Delivery]** a un altro metodo di consegna.
